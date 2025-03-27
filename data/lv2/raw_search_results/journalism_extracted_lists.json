@@ -1,0 +1,990 @@
+{
+  "level1_term": "journalism",
+  "url_verification_status": {
+    "https://grady.uga.edu/academics/journalism/": false,
+    "https://grady.uga.edu/": true,
+    "https://www.jou.ufl.edu/insights/for-journalists-considering-a-move-to-teaching/": true,
+    "https://comminfo.rutgers.edu/about/journalism-and-media-studies-department": false,
+    "https://journalism.uiowa.edu/research-areas-strength": true,
+    "https://catalog.ua.edu/graduate/communication-information-sciences/journalism-creative-media/journalism-ma/": true,
+    "https://hussman.unc.edu/grad/matr/curriculum": false,
+    "https://journalism.uark.edu/": false,
+    "https://www.ncat.edu/cahss/departments/journalism-and-mass-communication/index.php": false,
+    "https://www.journalism.cuny.edu/j-plus/": false,
+    "https://catalog.kent.edu/colleges/ci/mdj/journalism-education-ma/": true,
+    "https://journalism.ku.edu/phd-curriculum": true,
+    "https://academicbulletins.sc.edu/graduate/information-communications/journalism-mass-communications/journalism-mass-communications-phd/": false,
+    "https://journalism.uconn.edu/program-of-study/": true,
+    "https://hussman.unc.edu/": false,
+    "https://www.colorado.edu/cmci/academics/journalism/graduate-degrees/phd-journalism-studies": true,
+    "https://journalism.colostate.edu/ph-d-in-media-communication/": false,
+    "https://www.hofstra.edu/journalism-media-studies-public-relations": true,
+    "https://schieffercollege.tcu.edu/journalism/academics/areas-of-study/": true,
+    "https://journalism.columbia.edu/academics": true,
+    "https://journalism.uoregon.edu/academics/graduate-programs/media-studies-masters/courses": false,
+    "https://catalog.kent.edu/colleges/ci/mdj/": true,
+    "https://www.journalism.cuny.edu/": false,
+    "https://sjmc.txst.edu/innovative-immersive-learning/milab/milabjournal/lemke-oregon.html": true,
+    "https://catalog.sdsu.edu/preview_entity.php?catoid=10&ent_oid=1897&returnto=909": true,
+    "https://www.lehman.edu/academics/arts-humanities/journalism-media-studies/": false,
+    "https://hsjmc.umn.edu/undergraduate/majors-minors/courses-curriculum": false
+  },
+  "verified_lists_per_url": {
+    "https://grady.uga.edu/academics/journalism/": 0,
+    "https://grady.uga.edu/": 1,
+    "https://www.jou.ufl.edu/insights/for-journalists-considering-a-move-to-teaching/": 1,
+    "https://comminfo.rutgers.edu/about/journalism-and-media-studies-department": 0,
+    "https://journalism.uiowa.edu/research-areas-strength": 1,
+    "https://catalog.ua.edu/graduate/communication-information-sciences/journalism-creative-media/journalism-ma/": 2,
+    "https://hussman.unc.edu/grad/matr/curriculum": 0,
+    "https://journalism.uark.edu/": 0,
+    "https://www.ncat.edu/cahss/departments/journalism-and-mass-communication/index.php": 0,
+    "https://www.journalism.cuny.edu/j-plus/": 0,
+    "https://catalog.kent.edu/colleges/ci/mdj/journalism-education-ma/": 1,
+    "https://journalism.ku.edu/phd-curriculum": 1,
+    "https://academicbulletins.sc.edu/graduate/information-communications/journalism-mass-communications/journalism-mass-communications-phd/": 0,
+    "https://journalism.uconn.edu/program-of-study/": 1,
+    "https://hussman.unc.edu/": 0,
+    "https://www.colorado.edu/cmci/academics/journalism/graduate-degrees/phd-journalism-studies": 1,
+    "https://journalism.colostate.edu/ph-d-in-media-communication/": 0,
+    "https://www.hofstra.edu/journalism-media-studies-public-relations": 3,
+    "https://schieffercollege.tcu.edu/journalism/academics/areas-of-study/": 2,
+    "https://journalism.columbia.edu/academics": 1,
+    "https://journalism.uoregon.edu/academics/graduate-programs/media-studies-masters/courses": 0,
+    "https://catalog.kent.edu/colleges/ci/mdj/": 2,
+    "https://www.journalism.cuny.edu/": 0,
+    "https://sjmc.txst.edu/innovative-immersive-learning/milab/milabjournal/lemke-oregon.html": 1,
+    "https://catalog.sdsu.edu/preview_entity.php?catoid=10&ent_oid=1897&returnto=909": 1,
+    "https://www.lehman.edu/academics/arts-humanities/journalism-media-studies/": 0,
+    "https://hsjmc.umn.edu/undergraduate/majors-minors/courses-curriculum": 0
+  },
+  "total_lists_per_url": {
+    "https://grady.uga.edu/academics/journalism/": 1,
+    "https://grady.uga.edu/": 2,
+    "https://www.jou.ufl.edu/insights/for-journalists-considering-a-move-to-teaching/": 5,
+    "https://comminfo.rutgers.edu/about/journalism-and-media-studies-department": 2,
+    "https://journalism.uiowa.edu/research-areas-strength": 1,
+    "https://catalog.ua.edu/graduate/communication-information-sciences/journalism-creative-media/journalism-ma/": 8,
+    "https://hussman.unc.edu/grad/matr/curriculum": 2,
+    "https://journalism.uark.edu/": 1,
+    "https://www.ncat.edu/cahss/departments/journalism-and-mass-communication/index.php": 2,
+    "https://www.journalism.cuny.edu/j-plus/": 1,
+    "https://catalog.kent.edu/colleges/ci/mdj/journalism-education-ma/": 6,
+    "https://journalism.ku.edu/phd-curriculum": 4,
+    "https://academicbulletins.sc.edu/graduate/information-communications/journalism-mass-communications/journalism-mass-communications-phd/": 5,
+    "https://journalism.uconn.edu/program-of-study/": 1,
+    "https://hussman.unc.edu/": 3,
+    "https://www.colorado.edu/cmci/academics/journalism/graduate-degrees/phd-journalism-studies": 2,
+    "https://journalism.colostate.edu/ph-d-in-media-communication/": 3,
+    "https://www.hofstra.edu/journalism-media-studies-public-relations": 5,
+    "https://schieffercollege.tcu.edu/journalism/academics/areas-of-study/": 2,
+    "https://journalism.columbia.edu/academics": 3,
+    "https://journalism.uoregon.edu/academics/graduate-programs/media-studies-masters/courses": 2,
+    "https://catalog.kent.edu/colleges/ci/mdj/": 4,
+    "https://www.journalism.cuny.edu/": 1,
+    "https://sjmc.txst.edu/innovative-immersive-learning/milab/milabjournal/lemke-oregon.html": 8,
+    "https://catalog.sdsu.edu/preview_entity.php?catoid=10&ent_oid=1897&returnto=909": 2,
+    "https://www.lehman.edu/academics/arts-humanities/journalism-media-studies/": 2,
+    "https://hsjmc.umn.edu/undergraduate/majors-minors/courses-curriculum": 3
+  },
+  "verified_lists_ids": {
+    "https://grady.uga.edu/academics/journalism/": [],
+    "https://grady.uga.edu/": [
+      0
+    ],
+    "https://www.jou.ufl.edu/insights/for-journalists-considering-a-move-to-teaching/": [
+      0
+    ],
+    "https://comminfo.rutgers.edu/about/journalism-and-media-studies-department": [],
+    "https://journalism.uiowa.edu/research-areas-strength": [
+      0
+    ],
+    "https://catalog.ua.edu/graduate/communication-information-sciences/journalism-creative-media/journalism-ma/": [
+      6,
+      7
+    ],
+    "https://hussman.unc.edu/grad/matr/curriculum": [],
+    "https://journalism.uark.edu/": [],
+    "https://www.ncat.edu/cahss/departments/journalism-and-mass-communication/index.php": [],
+    "https://www.journalism.cuny.edu/j-plus/": [],
+    "https://catalog.kent.edu/colleges/ci/mdj/journalism-education-ma/": [
+      3
+    ],
+    "https://journalism.ku.edu/phd-curriculum": [
+      2
+    ],
+    "https://academicbulletins.sc.edu/graduate/information-communications/journalism-mass-communications/journalism-mass-communications-phd/": [],
+    "https://journalism.uconn.edu/program-of-study/": [
+      0
+    ],
+    "https://hussman.unc.edu/": [],
+    "https://www.colorado.edu/cmci/academics/journalism/graduate-degrees/phd-journalism-studies": [
+      0
+    ],
+    "https://journalism.colostate.edu/ph-d-in-media-communication/": [],
+    "https://www.hofstra.edu/journalism-media-studies-public-relations": [
+      0,
+      1,
+      2
+    ],
+    "https://schieffercollege.tcu.edu/journalism/academics/areas-of-study/": [
+      0,
+      1
+    ],
+    "https://journalism.columbia.edu/academics": [
+      2
+    ],
+    "https://journalism.uoregon.edu/academics/graduate-programs/media-studies-masters/courses": [],
+    "https://catalog.kent.edu/colleges/ci/mdj/": [
+      0,
+      1
+    ],
+    "https://www.journalism.cuny.edu/": [],
+    "https://sjmc.txst.edu/innovative-immersive-learning/milab/milabjournal/lemke-oregon.html": [
+      3
+    ],
+    "https://catalog.sdsu.edu/preview_entity.php?catoid=10&ent_oid=1897&returnto=909": [
+      0
+    ],
+    "https://www.lehman.edu/academics/arts-humanities/journalism-media-studies/": [],
+    "https://hsjmc.umn.edu/undergraduate/majors-minors/courses-curriculum": []
+  },
+  "num_urls": 40,
+  "num_lists": 81,
+  "url_to_lists": {
+    "https://grady.uga.edu/academics/journalism/": [
+      [
+        "form (1",
+        "7 minutes) and mid",
+        "length (7",
+        "25 minutes)."
+      ]
+    ],
+    "https://grady.uga.edu/": [
+      [
+        "Advertising",
+        "Entertainment & Media Studies",
+        "Journalism",
+        "Public Relations",
+        "M.A. Degree",
+        "M.F.A in Film, Television & Digital Media",
+        "Low-Residency M.F.A. in Narrative Media Writing",
+        "Ph.D. Degree Program",
+        "Casey Bruce-White",
+        "Yan Jin",
+        "Michael Waldron",
+        "Sophie Ralph",
+        "Jonina Bullock",
+        "Nick Selgrath",
+        "Kim Gebbia Chappell",
+        "Denetra Walker",
+        "Booker T. Mattison",
+        "Roy Wood Jr. set to host of the 85th Annual Peabody Awards",
+        "AdPR faculty and graduate students receive honors at AAA Conference",
+        "Profiles of Tenacity: Forest Dynes",
+        "Grady Fellowship Profile: Eric Baker",
+        "EMST students, faculty win 2025 BEA Awards",
+        "Grady College faculty member explores the future of dubbing",
+        "Dawg Day of Giving",
+        "Cox Institute Dinner",
+        "TEDxUGA 2025 \u2013 Destination",
+        "Backlight",
+        "Dawgs with the Dean Spring 2025",
+        "A Conversation with Doug Herzog"
+      ],
+      [
+        "form (1",
+        "7 minutes) and mid",
+        "length (7",
+        "25 minutes)."
+      ]
+    ],
+    "https://www.jou.ufl.edu/insights/for-journalists-considering-a-move-to-teaching/": [
+      [
+        "Journalism",
+        "Journalism Studies",
+        "Journal of Broadcasting & Electronic Media",
+        "Journalism Practice",
+        "New Media & Society"
+      ],
+      [
+        "What You Need to Know Before You Start",
+        "College of Journalism and Communications",
+        "Resources",
+        "Academics",
+        "Admissions"
+      ],
+      [
+        "Salary",
+        "Education Requirements",
+        "Workload",
+        "Common Terms in Academic Job Ads",
+        "Job Listings",
+        "Copyleft"
+      ],
+      [
+        "month vs. 12",
+        "month:\u00a0Some academic appointments are 12",
+        "month (such as department chair). Some schools have 10",
+        "month appointments. Most have nine",
+        "month appointments, and a nine",
+        "month teaching job is full",
+        "time. The three months off are yours to do as you like."
+      ],
+      [
+        "professional",
+        "resources/nca",
+        "career",
+        "center"
+      ]
+    ],
+    "https://comminfo.rutgers.edu/about/journalism-and-media-studies-department": [
+      [
+        "Journalism and Media Studies\u00a0Major",
+        "BA-MCM Joint Degree",
+        "Digital Media Specialization in the Master of Communication and Media Program",
+        "Ph.D. program in Communication, Information, and Media, Media Studies Concentration"
+      ],
+      [
+        "Brooklyne Gipson\n\n\n\nAssistant Professor of Journalism and Media Studies",
+        "Celeste Wagner\n\n\n\nAssistant Professor of Journalism and Media Studies",
+        "Alyse Shorland\n\n\n\nAssistant Teaching Professor of Journalism and Media Studies",
+        "Gina Marcello\n\n\n\nAssociate Teaching Professor of Journalism and Media Studies"
+      ]
+    ],
+    "https://journalism.uiowa.edu/research-areas-strength": [
+      [
+        "Site Main Navigation",
+        "Breadcrumb",
+        "Critical and Cultural Studies",
+        "Digital Media",
+        "Global Media",
+        "Health Communication",
+        "Journalism Studies",
+        "Sports Media",
+        "School of Journalism and Mass Communication",
+        "Social Media",
+        "Footer primary"
+      ]
+    ],
+    "https://catalog.ua.edu/graduate/communication-information-sciences/journalism-creative-media/journalism-ma/": [
+      [
+        "Applications accepted year-round",
+        "Fall semester admission prioritized, but spring admission may be considered.",
+        "Priority deadline for applicants interested in funding: January 31",
+        "Priority deadline for completed applications: March 31"
+      ],
+      [
+        "Deadlines (note that earlier applications are given priority for funding)",
+        "Community Journalism Concentration",
+        "The following applies to students pursuing a master's degree under Plan I (Thesis):",
+        "Colleges and Schools",
+        "Administration",
+        "Resources",
+        "Safety"
+      ],
+      [
+        "Plan I, Master's Thesis",
+        "Required Courses",
+        "JCM\u00a0500",
+        "MC\u00a0551 or",
+        "CIS\u00a0605",
+        "MC\u00a0550 or",
+        "CIS\u00a0609",
+        "JCM\u00a0562 or",
+        "JCM\u00a0522 or",
+        "JCM\u00a0520 or",
+        "MC\u00a0526",
+        "JCM\u00a0563",
+        "JCM\u00a0599",
+        "Electives 2, 3",
+        "JCM\u00a0512",
+        "JCM\u00a0517",
+        "JCM\u00a0520",
+        "JCM\u00a0522",
+        "JCM\u00a0528",
+        "JCM\u00a0533",
+        "JCM\u00a0536",
+        "JCM\u00a0542",
+        "JCM\u00a0545",
+        "JCM\u00a0548",
+        "JCM\u00a0555",
+        "JCM\u00a0590",
+        "Total Hours"
+      ],
+      [
+        "Plan II, Master's Project",
+        "Required Courses",
+        "JCM\u00a0500",
+        "JCM\u00a0552 or",
+        "MC\u00a0550",
+        "JCM\u00a0562",
+        "JCM\u00a0597",
+        "JCM\u00a0555 or",
+        "JCM\u00a0553 or",
+        "MC\u00a0551",
+        "JCM\u00a0563",
+        "Electives",
+        "JCM\u00a0512",
+        "JCM\u00a0517",
+        "JCM\u00a0520",
+        "JCM\u00a0522",
+        "JCM\u00a0528",
+        "JCM\u00a0533",
+        "JCM\u00a0536",
+        "JCM\u00a0542",
+        "JCM\u00a0545",
+        "JCM\u00a0548",
+        "JCM\u00a0555",
+        "JCM\u00a0590",
+        "General Elective",
+        "Total Hours"
+      ],
+      [
+        "Code and Title",
+        "Concentration Requirements",
+        "JCM\u00a0501",
+        "JCM\u00a0511",
+        "JCM\u00a0502",
+        "JCM\u00a0572",
+        "Total Hours"
+      ],
+      [
+        "Code and Title",
+        "Concentration Requirements",
+        "JCM\u00a0517",
+        "MC\u00a0531",
+        "MC\u00a0564",
+        "JCM\u00a0535",
+        "Total Hours"
+      ],
+      [
+        "campus option A: Community Journalism Concentration (COM",
+        "J): Our award",
+        "winning, one",
+        "on curriculum relies heavily on experiential learning, rather than a thesis. It includes a May",
+        "through"
+      ],
+      [
+        "winning, one",
+        "on curriculum relies heavily on experiential learning, rather than a thesis. It includes a May",
+        "through"
+      ]
+    ],
+    "https://hussman.unc.edu/grad/matr/curriculum": [
+      [
+        "MEJO 703:\u00a0Mass Communication Research Methods",
+        "MEJO 705:\u00a0Theories of Mass Communication",
+        "MEJO 740:\u00a0Media Law",
+        "MEJO 900:\u00a0Independent Study"
+      ],
+      [
+        "Media processes and production\n                +",
+        "Legal and regulatory issues in communication\n                +",
+        "Media uses and effects\n                +",
+        "Health communication\n                +",
+        "Political, social and strategic communication\n                +",
+        "Other courses",
+        "Thesis"
+      ]
+    ],
+    "https://journalism.uark.edu/": [
+      [
+        "Welcome to the School of Journalism & Strategic Media",
+        "DEGREE PROGRAMS",
+        "MICROCERTIFICATES",
+        "SJSM NEWS",
+        "IN THE KNOW"
+      ]
+    ],
+    "https://www.ncat.edu/cahss/departments/journalism-and-mass-communication/index.php": [
+      [
+        "College of Arts, Humanities and Social Sciences",
+        "Academic Departments",
+        "Journalism and Mass Communication"
+      ],
+      [
+        "Skip To Main Site Navigation",
+        "Skip to Content",
+        "Skip To Left Navigation",
+        "Skip To Footer"
+      ]
+    ],
+    "https://www.journalism.cuny.edu/j-plus/": [
+      [
+        "Artificial Intelligence",
+        "Product Management",
+        "High School Journalism",
+        "Custom Programs",
+        "Past Programs",
+        "Footer Secondary Navigation"
+      ]
+    ],
+    "https://catalog.kent.edu/colleges/ci/mdj/journalism-education-ma/": [
+      [
+        "Bachelor's degree from an accredited college or university",
+        "Minimum 2.750 undergraduate GPA on a 4.000-point scale",
+        "Official transcript(s)",
+        "R\u00e9sum\u00e9 or vitae",
+        "Goal statement",
+        "Two letters of recommendation",
+        "Minimum 71 TOEFL iBT score",
+        "Minimum 6.0 IELTS score",
+        "Minimum 50 PTE score",
+        "Minimum 100 DET score"
+      ],
+      [
+        "Minimum 71 TOEFL iBT score",
+        "Minimum 6.0 IELTS score",
+        "Minimum 50 PTE score",
+        "Minimum 100 DET score"
+      ],
+      [
+        "Fall Semester\n\nApplication deadline: March 15",
+        "Application deadline: March 15",
+        "Spring Semester\n\nApplication deadline: November 15",
+        "Application deadline: November 15",
+        "Summer Term\n\nApplication deadline: March 15",
+        "Application deadline: March 15"
+      ],
+      [
+        "Recognize and advocate for the importance of journalism education to the future of journalism.",
+        "Employ best practices in journalism education.",
+        "Articulate the role of media in a democratic society.",
+        "Demonstrate fundamental journalism skills through the production of media content.",
+        "Analyze and engage with the dynamics of the changing contemporary media environment.",
+        "Discuss the fundamentals of media literacy and relate them to the context of journalism education."
+      ],
+      [
+        "Program Delivery",
+        "Examples of Possible Careers and Salaries*",
+        "Admission Requirements",
+        "Application Deadlines",
+        "Program Requirements",
+        "Graduation Requirements",
+        "Program Learning Outcomes",
+        "Full Description",
+        "Why Kent State University",
+        "University Catalog",
+        "Print Options"
+      ],
+      [
+        "Major Requirements",
+        "MDJ\u00a060011",
+        "MDJ\u00a060012",
+        "MDJ\u00a060701",
+        "MDJ\u00a061001",
+        "MDJ\u00a066011",
+        "MDJ\u00a067067",
+        "Major Electives, choose from the following:   1",
+        "MDJ\u00a067075",
+        "MDJ\u00a067087",
+        "LIS\u00a060030",
+        "LIS\u00a060510",
+        "LIS\u00a060511",
+        "LIS\u00a060512",
+        "LIS\u00a060617",
+        "LIS\u00a060630",
+        "LIS\u00a060652",
+        "LIS\u00a061095",
+        "UX\u00a060504",
+        "Minimum Total Credit Hours:"
+      ]
+    ],
+    "https://journalism.ku.edu/phd-curriculum": [
+      [
+        "Ph.D. Admission",
+        "Ph.D. Academic Deadlines",
+        "Final Steps to Graduate",
+        "Graduate Handbook"
+      ],
+      [
+        "Program Overview",
+        "Explore the Doctoral Program",
+        "Questions?",
+        "Ph.D. Requirements",
+        "Funding Support",
+        "Possible Ph.D. Concentration Areas",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Explore the Ph.D. Program"
+      ],
+      [
+        "Psychology",
+        "Health Communication",
+        "Women's Studies",
+        "Education",
+        "Communication Studies",
+        "Business (2 credit hours)",
+        "Film and Media Studies",
+        "Political Science"
+      ],
+      [
+        "hour core journalism courses and a one four",
+        "hour statistics class with a lab), a one",
+        "hour pro",
+        "seminar (JMC 901) each fall semester, a 12"
+      ]
+    ],
+    "https://academicbulletins.sc.edu/graduate/information-communications/journalism-mass-communications/journalism-mass-communications-phd/": [
+      [
+        "2025-2026 Edition",
+        "Learning Outcomes",
+        "Admissions Requirements",
+        "Degree Requirements (57 Post-Master\u2019s Degree Hours)",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools",
+        "Print Options"
+      ],
+      [
+        "Qualifying Examination",
+        "Course Requirements (57 Hours)",
+        "Comprehensive Examination",
+        "Residency Requirement",
+        "Dissertation Defense"
+      ],
+      [
+        "Basic Doctoral Core (15 Hours)",
+        "Mass Communication Electives (21Hours)1",
+        "Courses in Another Field of Study (9 Hours)1",
+        "Dissertation Preparation (12 Hours minimum)"
+      ],
+      [
+        "Course",
+        "JOUR\u00a0801",
+        "JOUR\u00a0803",
+        "JOUR\u00a0805",
+        "JOUR\u00a0807",
+        "JOUR\u00a0808",
+        "Total Credit Hours"
+      ],
+      [
+        "Course",
+        "JOUR\u00a0899",
+        "Total Credit Hours"
+      ]
+    ],
+    "https://journalism.uconn.edu/program-of-study/": [
+      [
+        "Required Courses",
+        "Second major",
+        "Diversity",
+        "Links"
+      ]
+    ],
+    "https://hussman.unc.edu/": [
+      [
+        "Explore Our School",
+        "Teaching skills to succeed in the new media environment",
+        "Explore our centers",
+        "Prepare Our Students. Support Our Faculty and Staff."
+      ],
+      [
+        "White House News Photographers Association Awards",
+        "Black Twitter: Talking Back and Transforming Television",
+        "Noar honored with prestigious health communication scholar award",
+        "Responsible Innovation Begins with Responsible Innovators",
+        "UNC Hussman\u2019s GiveUNC Challenges",
+        "Portfolio pieces that range from hard-hitting investigative journalism to creative storytelling",
+        "Center for innovation and sustainability in local media",
+        "Center for Media Law and Policy",
+        "Center for Information, Technology, and Public Life",
+        "Communicating for Health Impact Lab",
+        "UNC Blue Sky Innovations at Reese Lab",
+        "Center for innovation and sustainability in local media",
+        "Center for Media Law and Policy",
+        "Center for Information, Technology, and Public Life",
+        "Communicating for Health Impact Lab",
+        "UNC Blue Sky Innovations at Reese Lab"
+      ],
+      [
+        "\u2013 Annie Godwin Cauthren '04",
+        "Marketing Manager & Board Member",
+        "The Tarrytown and Sleepy Hollow Farmer's Market"
+      ]
+    ],
+    "https://www.colorado.edu/cmci/academics/journalism/graduate-degrees/phd-journalism-studies": [
+      [
+        "Advertising, Public Relations and Media Design",
+        "Communication",
+        "Critical Media Practices",
+        "Information Science",
+        "Intermedia Art, Writing and Performance (PhD)",
+        "Our Mission",
+        "100 Years of Journalism",
+        "Undergraduate Programs",
+        "Graduate ProgramsMA: JournalismPhD: Journalism Studies",
+        "MA: Journalism",
+        "PhD: Journalism Studies",
+        "Department Accreditation",
+        "Faculty Publications/Works",
+        "Our Graduate Students",
+        "The Feldman Award",
+        "The Nakkula Award",
+        "Minor: Journalism",
+        "Media Studies",
+        "CMCI Certificates",
+        "CMCI Minors",
+        "Communication & Society Residence Academic Program",
+        "CMCI in D.C.",
+        "Graduation with Honors in CMCI"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "YouTube",
+        "LinkedIn"
+      ]
+    ],
+    "https://journalism.colostate.edu/ph-d-in-media-communication/": [
+      [
+        "University of Oklahoma",
+        "University of North Carolina at Chapel Hill",
+        "South Dakota State University",
+        "University of the Fraser Valley",
+        "Grand Valley State University",
+        "University of Colorado, Colorado Springs"
+      ],
+      [
+        "Undergraduate",
+        "Graduate",
+        "Thomas Gallegos",
+        "Katie Abrams"
+      ],
+      [
+        "Katie Abrams",
+        "970-491-5315",
+        "katie.abrams@colostate.edu"
+      ]
+    ],
+    "https://www.hofstra.edu/journalism-media-studies-public-relations": [
+      [
+        "Journalism",
+        "Mass Media Studies",
+        "Podcasting and Audio Storytelling",
+        "Public Relations and Strategic Communication",
+        "Sports Media"
+      ],
+      [
+        "Immersive Media",
+        "Integrated Media",
+        "Journalism",
+        "Mass Media Studies",
+        "Public Relations and Strategic Communication"
+      ],
+      [
+        "Undergraduate Programs",
+        "Minors",
+        "Journalism",
+        "Public Relations and Strategic Communication",
+        "At Hofstra",
+        "Your Future",
+        "Directory",
+        "Facilities",
+        "Student Productions",
+        "Student Organizations",
+        "Mission Statement",
+        "Mission Statement",
+        "Goals & Objectives",
+        "Department Goals and Objectives",
+        "Our Offices",
+        "Department Chair",
+        "Student Profiles"
+      ],
+      [
+        "Objectives:",
+        "Goal 2. Students will demonstrate the ability to think critically, creatively and independently.",
+        "Objectives:",
+        "Objectives:",
+        "Objectives:",
+        "Objectives:",
+        "Objectives:",
+        "Objectives:",
+        "Objectives:"
+      ],
+      [
+        "Friday: 9 a.m.",
+        "5 p.m.",
+        "4 p.m."
+      ]
+    ],
+    "https://schieffercollege.tcu.edu/journalism/academics/areas-of-study/": [
+      [
+        "Major (BA, BS)",
+        "Minor",
+        "Assessment Plan"
+      ],
+      [
+        "In this Assessment Plan students are expected to develop competencies in the following areas:",
+        "Part 1: Media Writing (64 Grammar and AP Style questions).",
+        "Part 2: Law and Ethics of Mass Communication (12 questions).",
+        "Part 3: Introduction to Journalism (12 questions on Theory and Concepts).",
+        "Part 4: Diversity & the Media (12 questions on DEI in relation to the media).",
+        "Adopted 2018"
+      ]
+    ],
+    "https://journalism.columbia.edu/academics": [
+      [
+        "Main navigation expanded",
+        "You are here:",
+        "Academics",
+        "Degree programs that meet the needs of\njournalists \u2013 in every stage of their career.",
+        "Degree Programs",
+        "M.S. Data",
+        "Dual Degrees",
+        "Ph.D.",
+        "Compare Programs",
+        "Master of Science (M.S.)",
+        "M.S. Data Journalism",
+        "Master of Arts (M.A.)",
+        "Areas of Study",
+        "Columbia Journalism Classes",
+        "Course Spotlights",
+        "Knight-Bagehot Fellowship",
+        "Spencer Fellowship",
+        "Follow Us"
+      ],
+      [
+        "Degree Programs",
+        "Compare Degrees",
+        "Areas of Study",
+        "Explore Classes",
+        "Knight-Bagehot",
+        "Spencer"
+      ],
+      [
+        "DOCUMENTARY",
+        "INVESTIGATIVE",
+        "AUDIO",
+        "BUSINESS",
+        "ARTS & CULTURE",
+        "POLITICS",
+        "SCIENCE"
+      ]
+    ],
+    "https://journalism.uoregon.edu/academics/graduate-programs/media-studies-masters/courses": [
+      [
+        "Search this site",
+        "Journalism and Communication",
+        "Main navigation",
+        "Core Courses",
+        "Thesis or Terminal Project",
+        "Additional Courses",
+        "Questions?",
+        "Communication and Media Studies Master's Program",
+        "Graduate Program Inquiries",
+        "Program Director"
+      ],
+      [
+        "Courses vary by term, and not all of these classes may be available every term or every year.",
+        "JCOM 601 Research: Topic 1\u20136 creditsRepeatable for maximum of 16 credits when topics change.",
+        "JCOM 604 Internship: Topic 1\u20136 creditsRepeatable for maximum of 12 credits.",
+        "JCOM 605 Reading: Topic 1\u201312 creditsRepeatable when topics change.",
+        "JCOM 607 Seminar: Topic 1\u20135 creditsRepeatable when topics change.",
+        "JCOM 608 Workshop: Topic 1\u20136 creditsRepeatable for maximum of 16 credits when topics change.",
+        "Need some guidance? Here are a few options:",
+        "Request More Information"
+      ]
+    ],
+    "https://catalog.kent.edu/colleges/ci/mdj/": [
+      [
+        "Advertising - B.S.",
+        "Digital Media Production - B.S.",
+        "Journalism - B.S.",
+        "Public Relations - B.S."
+      ],
+      [
+        "Advertising",
+        "Digital Media Production",
+        "Fashion Media",
+        "Journalism",
+        "Photojournalism",
+        "Public Relations"
+      ],
+      [
+        "Armour, Luke L. (2012), Senior Lecturer, M.A., University of Akron, 2006",
+        "Bailey, Evan B. (2003), Professor, M.A., Kent State University, 2009",
+        "Bobkowski, Piotr S. (2023), Professor, Ph.D., University of North Carolina-Chapel Hill, 2010, 2010",
+        "Butler-Wall, Karisa  (2019), Assistant Professor, Ph.D., University of Minnesota-Twin Cities, 2016",
+        "Canfora, Roseann C. (2001), Assistant Professor, Ph.D., Kent State University, 2001",
+        "Conley, Tara  (2022), Assistant Professor",
+        "Cooper, Kathryn  (2022), Assistant Professor, Ph.D., The Ohio State University , 2018",
+        "Ewing, Michele E. (2002), Professor, M.A., Kent State University, 1989",
+        "Foster, David A. (2005), Associate Professor, M.A., Kent State University, 2014",
+        "Hallgren, Scott W. (2016), Associate Professor, M.Mus., Seattle Film Institute, 2015",
+        "Hoak, Gretchen J. (2015), Associate Professor, Ph.D., Kent State University, 2008",
+        "Jackson, Michael A. (2022), Lecturer, M.S., University of Southern California, 1981",
+        "Knoblock, Christopher  (2019), Lecturer, B.A., William Paterson University, 1986",
+        "Lambert, Cheryl Ann  (2016), Associate Professor, Ph.D., University of Tennessee, 2008",
+        "Marino, Jacqueline A. (1990), Professor, M.A., The Johns Hopkins University, 2002",
+        "McKenney, Mitchell J. (2001), Associate Professor, M.B.A., Kent State University, 2008",
+        "Metzgar, Emily T. (2020), Professor",
+        "Moore, Stefanie A. (2001), Professor, M.S., Kent State University, 2007",
+        "Nenque, Andrea  R. (2023), Assistant Professor, Ph.D., University of North Carolina-Chapel Hil, 2023",
+        "Reynolds, Amy L. (2015), Professor",
+        "Roberts, Timothy A. (2003), Senior Lecturer, M.A., Kent State University, 2010",
+        "Rolnick-Fox, Rebecca M. (2017), Associate Professor, M.F.A., University of Southern California, 2000",
+        "Stewart, Mizell  (2023), Lecturer, M.S., Northern Kentucky University, 2015",
+        "Tang, Tang  (2018), Professor, Ph.D., Ohio University , 2008",
+        "Wasbotten, Thor L. (2012), Professor, M.S., University of Oregon, 1995",
+        "White, Dana  (2018), Associate Professor, M.F.A., University of California, Riverside, 2015"
+      ],
+      [
+        "Undergraduate Programs",
+        "Minors",
+        "Graduate Programs",
+        "Graduate Certificates",
+        "School of Media and Journalism Faculty",
+        "Media and Journalism (MDJ)",
+        "Why Kent State University",
+        "University Catalog",
+        "Print Options"
+      ]
+    ],
+    "https://www.journalism.cuny.edu/": [
+      [
+        "Launchpad for award-winning journalism",
+        "Explore TheNewmark J-School",
+        "Latest News",
+        "Footer Secondary Navigation"
+      ]
+    ],
+    "https://sjmc.txst.edu/innovative-immersive-learning/milab/milabjournal/lemke-oregon.html": [
+      [
+        "Oregon Is On Fire:\u00a0\u00a0 \u00a0\u00a0Teaching Social Media in the Journalism Curriculum During COVID-19",
+        "School of Journalism and Mass Communication",
+        "More from SJMC",
+        "Get Involved"
+      ],
+      [
+        "Beginning of video dialog content",
+        "Close Video",
+        "Previous Video\nNext Video",
+        "End of video dialog content"
+      ],
+      [
+        "increase",
+        "instagram",
+        "engagement"
+      ],
+      [
+        "oregon",
+        "areas",
+        "under",
+        "evacuation",
+        "right",
+        "now/283",
+        "f7d1ff0b",
+        "7e5dc7a4a864"
+      ],
+      [
+        "protest",
+        "racial",
+        "justice",
+        "oregon",
+        "black",
+        "lives",
+        "matter/"
+      ],
+      [
+        "response",
+        "common",
+        "criticismsarticle."
+      ],
+      [
+        "School staff. (2016, April 25). Tow",
+        "knight",
+        "center",
+        "releases",
+        "report",
+        "superpowers",
+        "journalists",
+        "today/"
+      ],
+      [
+        "19. Tech Trends 65, 576",
+        "588. https://doi.org/10.1007/s11528",
+        "00587"
+      ]
+    ],
+    "https://catalog.sdsu.edu/preview_entity.php?catoid=10&ent_oid=1897&returnto=909": [
+      [
+        "Communication, Specialization in Mass Communication and Media Studies, M.A.",
+        "Digital and Social Media Studies Minor",
+        "International Media Certificate",
+        "Journalism, B.A. in Liberal Arts and Sciences",
+        "Journalism, Emphasis in Advertising, B.A. in Liberal Arts and Sciences",
+        "Journalism, Emphasis in Media Studies, B.A. in Liberal Arts and Sciences",
+        "Journalism, Emphasis in Public Relations, B.A. in Liberal Arts and Sciences",
+        "Mass Communication, M.A."
+      ],
+      [
+        "MAIL: tnorthup@sdsu.edu",
+        "class work with internships and service",
+        "photocopies are acceptable);",
+        "these letters are strongly encouraged;",
+        "Track Faculty:",
+        "Champaign)",
+        "2018, Lecturer in Journalism and Media Studies",
+        "2013, Professor of Journalism and Media Studies",
+        "1994, Professor of Journalism",
+        "1999, Professor of Communication",
+        "2014, Professor of Journalism and Media Studies",
+        "2013, Professor of Journalism and Media Studies",
+        "2014, Professor of Journalism and Media Studies",
+        "2001, Executive Assistant to the President; Professor of Communication",
+        "2017, Lecturer in Journalism and Media Studies",
+        "1992, Professor of Journalism",
+        "2006, Assistant Professor of Communication",
+        "1980 and 1987",
+        "2013, Professor of Journalism and Media Studies"
+      ]
+    ],
+    "https://www.lehman.edu/academics/arts-humanities/journalism-media-studies/": [
+      [
+        "The Bronx Journal",
+        "Internships",
+        "View the Photo Gallery",
+        "Program for Professional Communications (PPC)"
+      ],
+      [
+        "Advising",
+        "Award-Winning Multimedia Productions",
+        "Internships"
+      ]
+    ],
+    "https://hsjmc.umn.edu/undergraduate/majors-minors/courses-curriculum": [
+      [
+        "Provide hands-on training",
+        "Develop practical skills",
+        "Reserved for Journalism and Strategic Communication majors only"
+      ],
+      [
+        "Courses & Curriculum",
+        "Professional skills courses",
+        "Context courses",
+        "Explore our Majors",
+        "Have Questions?"
+      ],
+      [
+        "Preparatory Course",
+        "Core Courses",
+        "Professional (Skills) Courses",
+        "Professional (Skills) Courses By Interest Area",
+        "Preparatory Course",
+        "Core Courses",
+        "Professional (Skills) Courses",
+        "Professional (Skills) Courses By Interest Area",
+        "For Students, Faculty, and Staff"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:44:01"
+}

@@ -1,0 +1,1042 @@
+{
+  "level1_term": "information science",
+  "url_verification_status": {
+    "https://infosci.arizona.edu/research-faculty/research-areas": false,
+    "https://ed.buffalo.edu/information.html": false,
+    "https://seis.ucla.edu/academics/department-of-information-studies/": false,
+    "http://ischool.illinois.edu/degrees-programs/courses": true,
+    "https://www.colorado.edu/cmci/infoscience": true,
+    "https://comminfo.rutgers.edu/about/library-and-information-science-department": false,
+    "https://cis.ua.edu/departments/slis/": true,
+    "https://morgridge.du.edu/academic-programs/library-information-science": true,
+    "https://www.albany.edu/graduate-bulletin/information-science-courses.php": false,
+    "https://ischool.umd.edu/academics/phd-information-studies/": false,
+    "https://cehd.missouri.edu/degree/information-science-learning-technologies-phd/": true,
+    "https://ils.indiana.edu/programs/phd-information-science/index.html": true,
+    "https://ischool.utexas.edu/programs/msis": false,
+    "https://informationscience.unt.edu/programs/phd/about.html": false,
+    "https://www.colorado.edu/academics/grad-information-science": true,
+    "https://www.rit.edu/study/computing-and-information-sciences-phd": true,
+    "https://www.si.umich.edu/student-experience/what-information-science": true,
+    "https://seis.ucla.edu/academics/department-of-information-studies/master-of-library-information-science-mlis/": false,
+    "https://www.simmons.edu/graduate/academic-programs/graduate-and-certificate-programs/library-and-information-science-phd": true,
+    "https://infosci.cornell.edu/": false,
+    "https://ischool.sjsu.edu/master-library-and-information-science": false,
+    "https://nps.edu/web/is": false,
+    "https://www.lsu.edu/chse/sis/index.php": false,
+    "https://ischool.umd.edu/": false,
+    "https://www.temple.edu/academics/degree-programs/information-science-and-technology-major-st-ist-bs": false,
+    "https://cis.ua.edu/doctoral-program/": true,
+    "https://www.albany.edu/cehc/programs/phd-information-science": true
+  },
+  "verified_lists_per_url": {
+    "https://infosci.arizona.edu/research-faculty/research-areas": 0,
+    "https://ed.buffalo.edu/information.html": 0,
+    "https://seis.ucla.edu/academics/department-of-information-studies/": 0,
+    "http://ischool.illinois.edu/degrees-programs/courses": 3,
+    "https://www.colorado.edu/cmci/infoscience": 1,
+    "https://comminfo.rutgers.edu/about/library-and-information-science-department": 0,
+    "https://cis.ua.edu/departments/slis/": 1,
+    "https://morgridge.du.edu/academic-programs/library-information-science": 1,
+    "https://www.albany.edu/graduate-bulletin/information-science-courses.php": 0,
+    "https://ischool.umd.edu/academics/phd-information-studies/": 0,
+    "https://cehd.missouri.edu/degree/information-science-learning-technologies-phd/": 1,
+    "https://ils.indiana.edu/programs/phd-information-science/index.html": 1,
+    "https://ischool.utexas.edu/programs/msis": 0,
+    "https://informationscience.unt.edu/programs/phd/about.html": 0,
+    "https://www.colorado.edu/academics/grad-information-science": 2,
+    "https://www.rit.edu/study/computing-and-information-sciences-phd": 1,
+    "https://www.si.umich.edu/student-experience/what-information-science": 1,
+    "https://seis.ucla.edu/academics/department-of-information-studies/master-of-library-information-science-mlis/": 0,
+    "https://www.simmons.edu/graduate/academic-programs/graduate-and-certificate-programs/library-and-information-science-phd": 1,
+    "https://infosci.cornell.edu/": 0,
+    "https://ischool.sjsu.edu/master-library-and-information-science": 0,
+    "https://nps.edu/web/is": 0,
+    "https://www.lsu.edu/chse/sis/index.php": 0,
+    "https://ischool.umd.edu/": 0,
+    "https://www.temple.edu/academics/degree-programs/information-science-and-technology-major-st-ist-bs": 0,
+    "https://cis.ua.edu/doctoral-program/": 3,
+    "https://www.albany.edu/cehc/programs/phd-information-science": 1
+  },
+  "total_lists_per_url": {
+    "https://infosci.arizona.edu/research-faculty/research-areas": 1,
+    "https://ed.buffalo.edu/information.html": 2,
+    "https://seis.ucla.edu/academics/department-of-information-studies/": 2,
+    "http://ischool.illinois.edu/degrees-programs/courses": 14,
+    "https://www.colorado.edu/cmci/infoscience": 3,
+    "https://comminfo.rutgers.edu/about/library-and-information-science-department": 1,
+    "https://cis.ua.edu/departments/slis/": 7,
+    "https://morgridge.du.edu/academic-programs/library-information-science": 1,
+    "https://www.albany.edu/graduate-bulletin/information-science-courses.php": 1,
+    "https://ischool.umd.edu/academics/phd-information-studies/": 2,
+    "https://cehd.missouri.edu/degree/information-science-learning-technologies-phd/": 3,
+    "https://ils.indiana.edu/programs/phd-information-science/index.html": 2,
+    "https://ischool.utexas.edu/programs/msis": 3,
+    "https://informationscience.unt.edu/programs/phd/about.html": 5,
+    "https://www.colorado.edu/academics/grad-information-science": 4,
+    "https://www.rit.edu/study/computing-and-information-sciences-phd": 1,
+    "https://www.si.umich.edu/student-experience/what-information-science": 2,
+    "https://seis.ucla.edu/academics/department-of-information-studies/master-of-library-information-science-mlis/": 4,
+    "https://www.simmons.edu/graduate/academic-programs/graduate-and-certificate-programs/library-and-information-science-phd": 3,
+    "https://infosci.cornell.edu/": 1,
+    "https://ischool.sjsu.edu/master-library-and-information-science": 2,
+    "https://nps.edu/web/is": 5,
+    "https://www.lsu.edu/chse/sis/index.php": 3,
+    "https://ischool.umd.edu/": 4,
+    "https://www.temple.edu/academics/degree-programs/information-science-and-technology-major-st-ist-bs": 3,
+    "https://cis.ua.edu/doctoral-program/": 4,
+    "https://www.albany.edu/cehc/programs/phd-information-science": 22
+  },
+  "verified_lists_ids": {
+    "https://infosci.arizona.edu/research-faculty/research-areas": [],
+    "https://ed.buffalo.edu/information.html": [],
+    "https://seis.ucla.edu/academics/department-of-information-studies/": [],
+    "http://ischool.illinois.edu/degrees-programs/courses": [
+      3,
+      5,
+      12
+    ],
+    "https://www.colorado.edu/cmci/infoscience": [
+      1
+    ],
+    "https://comminfo.rutgers.edu/about/library-and-information-science-department": [],
+    "https://cis.ua.edu/departments/slis/": [
+      4
+    ],
+    "https://morgridge.du.edu/academic-programs/library-information-science": [
+      0
+    ],
+    "https://www.albany.edu/graduate-bulletin/information-science-courses.php": [],
+    "https://ischool.umd.edu/academics/phd-information-studies/": [],
+    "https://cehd.missouri.edu/degree/information-science-learning-technologies-phd/": [
+      2
+    ],
+    "https://ils.indiana.edu/programs/phd-information-science/index.html": [
+      0
+    ],
+    "https://ischool.utexas.edu/programs/msis": [],
+    "https://informationscience.unt.edu/programs/phd/about.html": [],
+    "https://www.colorado.edu/academics/grad-information-science": [
+      2,
+      3
+    ],
+    "https://www.rit.edu/study/computing-and-information-sciences-phd": [
+      0
+    ],
+    "https://www.si.umich.edu/student-experience/what-information-science": [
+      0
+    ],
+    "https://seis.ucla.edu/academics/department-of-information-studies/master-of-library-information-science-mlis/": [],
+    "https://www.simmons.edu/graduate/academic-programs/graduate-and-certificate-programs/library-and-information-science-phd": [
+      0
+    ],
+    "https://infosci.cornell.edu/": [],
+    "https://ischool.sjsu.edu/master-library-and-information-science": [],
+    "https://nps.edu/web/is": [],
+    "https://www.lsu.edu/chse/sis/index.php": [],
+    "https://ischool.umd.edu/": [],
+    "https://www.temple.edu/academics/degree-programs/information-science-and-technology-major-st-ist-bs": [],
+    "https://cis.ua.edu/doctoral-program/": [
+      1,
+      2,
+      3
+    ],
+    "https://www.albany.edu/cehc/programs/phd-information-science": [
+      0
+    ]
+  },
+  "num_urls": 39,
+  "num_lists": 105,
+  "url_to_lists": {
+    "https://infosci.arizona.edu/research-faculty/research-areas": [
+      [
+        "Artificial Intelligence & Machine Learning",
+        "Communication & Society",
+        "Cultural Heritage, Humanities & Archives",
+        "Data Management, Analysis & Visualization",
+        "Environmental, Health & Biological Sciences",
+        "Gaming & Virtual Worlds",
+        "Human-Computer Interaction / Human-Centered Computing",
+        "Policy & Ethics",
+        "Social Sciences & Behavior"
+      ]
+    ],
+    "https://ed.buffalo.edu/information.html": [
+      [
+        "Who We Become",
+        "Available Funding",
+        "Proudly Accredited",
+        "Programs in Our Department",
+        "Doctoral Degrees",
+        "Master\u2019s Degrees",
+        "Combined Degrees",
+        "Advanced Certificates",
+        "Online Learning",
+        "Courses",
+        "Research That Makes a Difference",
+        "Work Alongside Experts",
+        "Department Resources"
+      ],
+      [
+        "Chair\u2019s Message",
+        "Mission and Goals",
+        "Graduate Student Association",
+        "ALA Accreditation"
+      ]
+    ],
+    "https://seis.ucla.edu/academics/department-of-information-studies/": [
+      [
+        "Professor",
+        "Assistant Professor",
+        "Associate Professor"
+      ],
+      [
+        "Michelle Caswell\nProfessor",
+        "Thuy Vo Dang\nAssistant Professor",
+        "Gregory Leazer\nAssociate Professor"
+      ]
+    ],
+    "http://ischool.illinois.edu/degrees-programs/courses": [
+      [
+        "199 EE -\u00a0iSchool Exploration, Engagement, and Development",
+        "199 ICL -\u00a0Introduction to Command Line Tools",
+        "199 SHG -\u00a0Social History\u00a0of Games & Gaming"
+      ],
+      [
+        "Experience in creating static Web sites using HTML and CSS",
+        "Experience in Python programming (IS 430 or equivalent)",
+        "Experience in creating dynamic Web sites using tools like PHP is helpful but not required.",
+        "Experience in using relational databases is helpful but not required."
+      ],
+      [
+        "490 LP -\u00a0Libraries and the\u00a0Politics of Memory",
+        "490 PS -\u00a0Professional Skills in Information Science",
+        "490 SLP -\u00a0Professional Skills in School Librarianship",
+        "490 SM -\u00a0Social Media and Global Change"
+      ],
+      [
+        "497 DA - Database Administration & Scaling",
+        "497 DSA - Data Science and AI in Society",
+        "497 IM - Interdisciplinary Methods in Research Computing",
+        "497 MD - Market Analytics for Info Prof"
+      ],
+      [
+        "563 AAB -\u00a0African American Intellectual History, Bibliography, and Librarianship",
+        "563 AP - Adult Popular Literature",
+        "563 CL - Reviewing Children's Literature",
+        "563 CR - Comics: Advising Readers",
+        "563 DH - History of Digital Humanities",
+        "563 FL -\u00a0Fantasy Literature and Media for Youth",
+        "563 RYL - Religion in Youth Literature",
+        "563 SJ - Social Justice in Youth Literature",
+        "563 SS - Library Resources for Spanish Speakers"
+      ],
+      [
+        "573 AB -\u00a0Introduction to Artists Books",
+        "573 CA - Community Archives",
+        "573 CH - Introduction to Cultural Heritage Collections",
+        "573 DCA - Documentation, Collection, and Appraisal of Records",
+        "573 ED - Exhibit Design and Installation",
+        "573 ER - E-Resources Management",
+        "573 PM -\u00a0Preservation Museum Artifacts",
+        "573 SC - Collection Development for Special Collections"
+      ],
+      [
+        "578 CC -\u00a0Critical Approach to Children's\u00a0Literature",
+        "578 DH -\u00a0Intro to Digital Humanities",
+        "578 QM -\u00a0Qualitative Methods"
+      ],
+      [
+        "581 DCE - Digital Citizenship and Ethics",
+        "581 EY - Educational Technology and Youth",
+        "581 IL - Inquiry-Based Learning",
+        "581 ISM -\u00a0Instructional Strategies for Media Literacy",
+        "581 ML - Foundations of Media Literacy"
+      ],
+      [
+        "582 AL - Academic Librarianship",
+        "582 IL - International Librarianship",
+        "582 LL - Law Librarianship",
+        "582 LLM -\u00a0Legal Issues for Library\u00a0and Information Managers",
+        "582 LSW - Library Social Work",
+        "582 MD -\u00a0Make-Design-Learn in Libraries",
+        "582 PL -\u00a0Prison Librarianship",
+        "582 RB - Rare Books and Special Collections",
+        "582 SCL - Social Crisis and Librarianship",
+        "582 SSL - Social Science Librarianship",
+        "582 TL - Theological Librarianship"
+      ],
+      [
+        "583 BB - Bookbinding History, Principles, and Practices",
+        "583 BL - BookLab: Print to Programming",
+        "583 BP - The Book as Physical Object",
+        "583 HB - History of the Book",
+        "583 MM - Medieval Manuscripts",
+        "583 PB -\u00a0Print Culture & Material Book"
+      ],
+      [
+        "592 GW - Grant Writing for Libraries",
+        "592 PL - Public Librarianship",
+        "592 SLC -\u00a0State Libraries and Consortia"
+      ],
+      [
+        "593 AA - Archival Arrangement and Description",
+        "593 AV - AV Materials in\u00a0Libraries and Archives",
+        "593 MA - Museum Archives",
+        "593 PCC - Preservation and Conservation for Collections Care",
+        "593 TS\u00a0- Technical Services Functions"
+      ],
+      [
+        "597 CL -\u00a0Command Line Tools",
+        "597 CS - Culture At Scale: A Seminar",
+        "597 DM - Open Data Mashups",
+        "597 DS - Data Structures & Algorithms",
+        "597 HCD - Human Centered Data Science",
+        "597 LLM - Large Language Models",
+        "597 MLC - Machine Learning Cloud",
+        "597 PD - Practical Health Data Analytics",
+        "597 PR - Programming & Quality in Data Analytics",
+        "597 PY - Python Standard Library",
+        "597 RDA -\u00a0Responsible Data Science & Artificial Intelligence",
+        "597 RIB -\u00a0Research Impact Bibliometrics",
+        "597 TML - Trustworthy Machine Learning"
+      ],
+      [
+        "Undergraduate",
+        "Graduate",
+        "MSIM Core Courses",
+        "MSLIS Core Courses",
+        "PhD in IS Core Courses"
+      ]
+    ],
+    "https://www.colorado.edu/cmci/infoscience": [
+      [
+        "Business analyst",
+        "Data scientist",
+        "Game designer",
+        "Information policy specialist",
+        "Interaction designer",
+        "Project manager"
+      ],
+      [
+        "Social media strategist",
+        "Software developer",
+        "Systems analyst",
+        "Tech journalist",
+        "User experience designer",
+        "Visualization designer"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "YouTube",
+        "LinkedIn"
+      ]
+    ],
+    "https://comminfo.rutgers.edu/about/library-and-information-science-department": [
+      [
+        "People And Community",
+        "Data, Information And Knowledge",
+        "Technologies, Systems And Networks",
+        "Empowerment, Engagement And Action"
+      ]
+    ],
+    "https://cis.ua.edu/departments/slis/": [
+      [
+        "SLIS Alum Honored with Librarian Appreciation Award",
+        "SLIS Professors Chosen for Children\u2019s Award Committees",
+        "Associate Professor Wins Richard Wall Memorial Award"
+      ],
+      [
+        "Summer \u201925",
+        "Fall \u201925",
+        "Spring \u201925"
+      ],
+      [
+        "SLIS Scholarship Application",
+        "Assistantships and Scholarships",
+        "American Library Association Scholarships",
+        "UA Online Scholarships",
+        "Graduate School Scholarships"
+      ],
+      [
+        "Volume 9",
+        "Volume 8",
+        "Volume 7",
+        "Volume 6",
+        "Volume 5",
+        "Volume 4",
+        "Volume 3",
+        "Volume 2",
+        "Volume 1"
+      ],
+      [
+        "SLIS Vision",
+        "SLIS Mission",
+        "SLIS Values",
+        "Master\u2019s Programs",
+        "Doctoral Program",
+        "Social Justice and Inclusion Advocacy",
+        "Book and Publishing Studies",
+        "Undergraduate Programs",
+        "Faculty & Staff",
+        "Advising",
+        "Funding",
+        "Get Involved",
+        "Crimson Review of Children\u2019s and Young Adult Literature",
+        "Book Bonanza for the Black Belt",
+        "Student Organizations",
+        "Alumni",
+        "History",
+        "SLIS Renewals",
+        "SLIS Listservs",
+        "Connect"
+      ],
+      [
+        "Course Schedule",
+        "SLIS PhD Concentrations",
+        "SLIS-A",
+        "SLIS-J",
+        "SLIS-L",
+        "SLIS-S",
+        "Doctoral Program"
+      ],
+      [
+        "Semester",
+        "Spring 2025",
+        "Fall 2025",
+        "Summer 2025"
+      ]
+    ],
+    "https://morgridge.du.edu/academic-programs/library-information-science": [
+      [
+        "Our Programs",
+        "On-Campus",
+        "Online"
+      ]
+    ],
+    "https://www.albany.edu/graduate-bulletin/information-science-courses.php": [
+      [
+        "based and machine",
+        "based perspective. The second part of the course focuses on annotation",
+        "based or machine"
+      ]
+    ],
+    "https://ischool.umd.edu/academics/phd-information-studies/": [
+      [
+        "#3 in USA \u2013 UMD as a Public University",
+        "#7 in USA \u2013 UMD as a University for Entrepreneurship",
+        "#10 in USA \u2013 UMD \u2013 Public Institution for Patents Awarded (IPO Assoc)",
+        "#10 in USA \u2013 UMD \u2013\u00a0Public Institution for Research Spending (NSF Survey)"
+      ],
+      [
+        "Mar 28",
+        "Friday, March 28, 2025 - 12:00 pm - 1:00 pm",
+        "OTTRS Speaker Series: \u201cReimagining leadership: Evolving prototypes in virtual work\u201d"
+      ]
+    ],
+    "https://cehd.missouri.edu/degree/information-science-learning-technologies-phd/": [
+      [
+        "Engineering education",
+        "Educational gaming and simulation",
+        "Information organization, access, and dissemination",
+        "Information seeking and use",
+        "Interactive learning environments including VR, embodied and augmented learning",
+        "Learner-centered design, interface design, instructional design",
+        "Libraries, archives, museums, and other cultural heritage institutions",
+        "Reading, gaming, and other immersive experiences",
+        "User eXperience (UX) and Human computer interaction (HCI)"
+      ],
+      [
+        "Ph.D. admissions prerequisites: Master\u2019s Degree and above, TOEFL/ IELTS (if applicable)",
+        "Entry Term: Fall",
+        "Course Requirements: 72 hours minimum (can transfer in up to 30 hours Master\u2019s coursework)",
+        "Typical Course Load: Fall, 3 courses (9 credit hours); Spring, 3 courses (9 credit hours)",
+        "Online courses advising aid",
+        "Culminating Experience: traditional dissertation or 3-article dissertation"
+      ],
+      [
+        "Overview",
+        "Forms & Downloads",
+        "Fast Facts",
+        "Resources",
+        "Apply",
+        "How to Apply",
+        "Interviews",
+        "Admission Decisions",
+        "Amy Adam",
+        "Breanne Meyer",
+        "Rose Marra",
+        "Denice Adkins",
+        "Jason Alston",
+        "Jenny Bossaller",
+        "Beth Brendler",
+        "Sarah Buchanan",
+        "Hyerim Cho",
+        "Cindy Dudenhoffer",
+        "Noah Glaser",
+        "Joi L. Moore",
+        "Heather Moulaison-Sandy",
+        "Danielle Oprean",
+        "Laura Ridenour",
+        "Xinhao Xu"
+      ]
+    ],
+    "https://ils.indiana.edu/programs/phd-information-science/index.html": [
+      [
+        "Archives",
+        "Biodiversity information and culture",
+        "Computer-mediated communication",
+        "Critical information and library science",
+        "Cultural analytics",
+        "Cultural heritage informatics",
+        "Data and text mining",
+        "Digital and computational humanities",
+        "Digital curation",
+        "Digital libraries",
+        "Documentation",
+        "eScience",
+        "Gender and technology",
+        "History of the book, readership, and publishing",
+        "Knowledge organization (KO), including classification, ontologies, and metadata",
+        "Knowledge sharing",
+        "Libraries",
+        "Online communities",
+        "Philosophy of information and information ethics",
+        "Records management",
+        "Social informatics",
+        "Social media mining",
+        "Technology and diversity",
+        "Text encoding and digital editions"
+      ],
+      [
+        "2024-25 bulletin",
+        "2023-24 bulletin",
+        "2022\u201323 bulletin"
+      ]
+    ],
+    "https://ischool.utexas.edu/programs/msis": [
+      [
+        "Endorsement of Specialization",
+        "Dual Degree Programs",
+        "CRA and CRM Certifications",
+        "Portfolio Programs"
+      ],
+      [
+        "Header Menu",
+        "Breadcrumb",
+        "Master of Science in Information Studies (MSIS)",
+        "Upcoming Info Sessions",
+        "Why the iSchool?",
+        "Tailored Program Options",
+        "Footer menu"
+      ],
+      [
+        "Endorsement of Specialization",
+        "Dual Degree Programs",
+        "Portfolio Programs",
+        "Academic Advising"
+      ]
+    ],
+    "https://informationscience.unt.edu/programs/phd/about.html": [
+      [
+        "Constructing a substantial yet flexible and customized program of study",
+        "Maintaining a culture of open dissemination of ideas",
+        "Maximizing participation in the intellectual life of the school and field",
+        "Building a community with regular interaction among faculty and students"
+      ],
+      [
+        "Data Science\u00a0Concentration\u00a0(developed and offered jointly with UNT)",
+        "Journalism Concentration\u00a0(developed and offered jointly with UNT Mayborn School of Journalism)",
+        "Knowledge Management Concentration",
+        "Linguistics Concentration\u00a0(developed and offered jointly with UNT Department of Linguistics)"
+      ],
+      [
+        "driven problems and exploring data",
+        "driven methodology in\u00a0evidence",
+        "based"
+      ],
+      [
+        "ISDOC",
+        "L mailing list.\u00a0To subscribe to the",
+        "ISDOC",
+        "L YourFirstName YourLastName\""
+      ],
+      [
+        "ISDOC",
+        "L mailing list.\u00a0To",
+        "ISDOC"
+      ]
+    ],
+    "https://www.colorado.edu/academics/grad-information-science": [
+      [
+        "Can be completed in 2 years",
+        "Can choose between thesis and nonthesis options",
+        "Up to 7 courses can count toward PhD curriculum requirements"
+      ],
+      [
+        "Can be completed in 5 years",
+        "Requires a minimum of 30 course credit hours",
+        "Requires a minimum of 30 thesis credit hours"
+      ],
+      [
+        "Collaboration",
+        "Algorithmic Fairness",
+        "Data Science and Analytics",
+        "Ethics and Policy",
+        "Design and Human-Computer Interaction",
+        "Learning",
+        "Social Computing"
+      ],
+      [
+        "Business & Industry Collaborations",
+        "Diversity, Equity & Inclusion",
+        "Free Speech",
+        "Innovation & Entrepreneurship",
+        "Public & Outreach Programs",
+        "Sustainability",
+        "Understand Your Cost of Attendance"
+      ]
+    ],
+    "https://www.rit.edu/study/computing-and-information-sciences-phd": [
+      [
+        "Infrastructure",
+        "Interaction",
+        "Informatics",
+        "Computing",
+        "Domain applications",
+        "Dissertation and Research",
+        "Assessments",
+        "English Language Test Scores",
+        "Prerequisites"
+      ]
+    ],
+    "https://www.si.umich.edu/student-experience/what-information-science": [
+      [
+        "Information technology",
+        "Data analysis",
+        "Cybersecurity",
+        "Database administration",
+        "User experience design",
+        "Web development",
+        "Business intelligence",
+        "Project management",
+        "Library and information science",
+        "Technical writing and editing."
+      ],
+      [
+        "Technology companies (e.g. software development, data analytics)",
+        "Consulting firms",
+        "Government agencies",
+        "Financial institutions",
+        "Healthcare organizations",
+        "Information management companies",
+        "Non-profits",
+        "Libraries and archives",
+        "Higher education institutions",
+        "Media and publishing companies."
+      ]
+    ],
+    "https://seis.ucla.edu/academics/department-of-information-studies/master-of-library-information-science-mlis/": [
+      [
+        "Face-to-face classroom instruction",
+        "A wide choice of specializations and course offerings",
+        "Internship opportunities",
+        "Individual advisors",
+        "Mentoring programs",
+        "Teamwork experience",
+        "Support for student participation in professional organizations"
+      ],
+      [
+        "Fowler Museum",
+        "UCLA College Library",
+        "UCLA Digital Collections Services",
+        "UCLA Ethnomusicology Archive",
+        "UCLA Film and Television Archive",
+        "UCLA Special Collections"
+      ],
+      [
+        "Program Overview",
+        "Program Specializations",
+        "MLIS Internship Program",
+        "Internship Sites",
+        "MLIS Core Curriculum"
+      ],
+      [
+        "Ramesh Srinivasan\nProfessor",
+        "Miriam Posner\nAssistant Professor",
+        "Cindy Anh Nguyen\nAssistant Professor"
+      ]
+    ],
+    "https://www.simmons.edu/graduate/academic-programs/graduate-and-certificate-programs/library-and-information-science-phd": [
+      [
+        "One of the following:",
+        "Below is a listing of the required courses:",
+        "Program Attributes",
+        "Areas of Study",
+        "Student Learning Outcomes",
+        "Adam Kriesberg",
+        "Amy Pattee",
+        "Daniel Joudrey",
+        "Mei Zhang",
+        "Katherine Wisser",
+        "Laura Saunders",
+        "Lisa Hussey",
+        "Kyong Eun Oh",
+        "Melanie Kimball",
+        "Naresh Agarwal",
+        "Peter Botticelli",
+        "Rebecca Stallworth",
+        "Rhiannon Bettivia",
+        "Sanda Erdelez",
+        "Don Simmons",
+        "Heather Hole",
+        "Library and Information Science Doctoral Student Named New Director of Truro Public Library",
+        "Doctoral Candidate Named Acting Director of Institute of Museum and Library Services",
+        "Library and Information Science PhD Student Named Acting Director of IMLS",
+        "Simmons School of Library and Information Science Student Empowers LGBTQIA+ Community",
+        "Dr. Brenda Mitchell-Powell '75 '08MS '15PhD Publishes Breakthrough Book on Civil Rights History",
+        "Graduate",
+        "Resources"
+      ],
+      [
+        "DEDU652",
+        "DEDU653",
+        "SW654"
+      ],
+      [
+        "LIS620",
+        "LIS621",
+        "LIS642",
+        "HPED531",
+        "LIS699"
+      ]
+    ],
+    "https://infosci.cornell.edu/": [
+      [
+        "Medical students use AI to practice communication skills",
+        "SplatOverflow enables remote hardware troubleshooting",
+        "AI ring tracks spelled words in American Sign Language",
+        "Thought Summit: LLMs and Society",
+        "A campus without precedent."
+      ]
+    ],
+    "https://ischool.sjsu.edu/master-library-and-information-science": [
+      [
+        "Learn with the Best",
+        "Customized Curriculum",
+        "Internship Opportunities",
+        "Convenient 100% Online Learning",
+        "Program Requirements",
+        "Coursera Career Academy",
+        "Learn More",
+        "MLIS Program Accreditation"
+      ],
+      [
+        "E-mail or username: *",
+        "Password: *",
+        "Remember me",
+        "Request new password"
+      ]
+    ],
+    "https://nps.edu/web/is": [
+      [
+        "Dr. Paul Shigley, NIWC-PAC",
+        "Dr. Maj Benjamin Pimentel",
+        "Connect with Us"
+      ],
+      [
+        "Mar 25, 2025\nSpring Quarter New Student Orientation",
+        "Mar 28, 2025\nWinter Quarter Commencement Ceremony",
+        "Apr 1, 2025 to Apr 30, 2025\nMeyer Month at NPS",
+        "May 5, 2025 to May 8, 2025\nSpring Naval AI Summit at NPS"
+      ],
+      [
+        "NPS Recognizes Latest Cohort of Summer Quarter Graduates",
+        "September 27, 2024",
+        "| MC2 Andrew Langholf"
+      ],
+      [
+        "17th President of National Defense University Honors NPS Winter Quarter Graduates",
+        "March 29, 2024",
+        "| MC2 Andrew Langholf"
+      ],
+      [
+        "NPS President, WEST Panelists Emphasize Education, Innovation As Paths to Decision Advantage",
+        "February 15, 2024",
+        "| Lt. Cmdr. Ed Early"
+      ]
+    ],
+    "https://www.lsu.edu/chse/sis/index.php": [
+      [
+        "Connecting Yesterday, Today, & Tomorrow",
+        "SIS Online",
+        "LSU Online",
+        "IMLS Funds Climate Change Project",
+        "Remembering Dr. Yejun Wu",
+        "SIS Alumna Named to 2024 Movers & Shakers",
+        "Recent SIS News",
+        "SIS Organizational Membership",
+        "Video Modal"
+      ],
+      [
+        "Quick Links",
+        "Dr. Benoit leads climate change research team",
+        "December 20, 2024",
+        "October 24, 2024",
+        "October 10, 2024",
+        "August 6, 2024",
+        "May 7, 2024",
+        "April 30, 2024",
+        "October 10, 2023",
+        "January 31, 2023",
+        "September 5, 2022"
+      ],
+      [
+        "Football",
+        "Things to Do on Campus",
+        "How Much is Tuition?"
+      ]
+    ],
+    "https://ischool.umd.edu/": [
+      [
+        "Feb 18",
+        "Tuesday, February 18, 2025 - 12:00 pm  To: Friday, March 28, 2025 - 2:00 pm",
+        "Azure AI Developer Hackathon, Sponsored by Microsoft [External]"
+      ],
+      [
+        "Feb 24",
+        "Monday, February 24, 2025 - 12:00 am  To: Wednesday, March 26, 2025 - 11:00 pm",
+        "Smith Analytics Consortium, 6th Annual Datathon"
+      ],
+      [
+        "Mar 11",
+        "Tuesday, March 11, 2025 - 1:30 pm  To: Thursday, May 8, 2025 - 12:00 am",
+        "Meta Horizon Creator Competition: Mobile Genre Showdown [External]"
+      ],
+      [
+        "Mar 24",
+        "Monday, March 24, 2025 - 2:00 pm  To: Wednesday, April 30, 2025 - 7:00 pm",
+        "Agentforce Virtual Hackathon, Sponsored by Salesforce [External]"
+      ]
+    ],
+    "https://www.temple.edu/academics/degree-programs/information-science-and-technology-major-st-ist-bs": [
+      [
+        "programming languages;",
+        "working with computer graphics, databases and web technologies; and",
+        "understanding operating systems and system architectures, such as distributed and network systems."
+      ],
+      [
+        "Choosing between the BA and BS",
+        "Classes & Curriculum",
+        "Related Graduate Degrees",
+        "Related Graduate Certificates",
+        "Tuition & Fees"
+      ],
+      [
+        "or part",
+        "time), in",
+        "state or out"
+      ]
+    ],
+    "https://cis.ua.edu/doctoral-program/": [
+      [
+        "Graduate application form\nGraduate School application",
+        "Statement of Purpose\nSOP guidelines",
+        "Writing sample\nWriting sample guidelines",
+        "Three academic references*"
+      ],
+      [
+        "Advertising & Public Relations",
+        "Book and Publishing Studies",
+        "Health Communication",
+        "Interpersonal Communication",
+        "Media Processes and Effects",
+        "Rhetoric and Political Discourse",
+        "Social Justice and Inclusion Advocacy",
+        "Online PhD",
+        "Expedited Admission Track",
+        "Scholastic Requirements",
+        "Comprehensive Exams",
+        "Residency Requirement",
+        "Academic Advisors",
+        "Dissertation Committees",
+        "Dissertation",
+        "Final Exam"
+      ],
+      [
+        "CIS 603: Quantitative Research Methods",
+        "CIS 604: Mass Communication Theory",
+        "CIS 605: Cultural and Critical Theory",
+        "CIS 608: Qualitative Research Methods",
+        "CIS 610: Foundations of Doctoral Study C&IS",
+        "CIS 650: Community-engaged Research",
+        "CIS 650: Emergent Media Topic",
+        "CIS 650: Political Communication Topic OR CIS  673: Political Communication",
+        "CIS 662: Mediated Interpersonal Communication",
+        "CIS 665: Seminar on Communication Message Analysis",
+        "CIS 668: Social Justice & Inclusion Advocacy",
+        "CIS 671: Public Opinion",
+        "CIS 681: Advanced Quantitative Methods",
+        "CIS 683: Advanced Topics in Media Processes & Effects"
+      ],
+      [
+        "CIS 603: Quantitative Research Methods",
+        "CIS 608: Qualitative Research Methods",
+        "CIS 610: Foundations of Doctoral Studies C&IS",
+        "CIS 650: Health Communication Topic OR CIS 659/664/670",
+        "CIS 652: Seminar on Cultural Critical Rhetorical Study",
+        "CIS 667: Persuasive Communication",
+        "CIS 669: Seminar on Visual Communication",
+        "CIS 680: Seminar on Media Processes & Effects",
+        "CIS 681: Advanced Quantitative Methods",
+        "CIS 682: Seminar on Advertising & Public Relations",
+        "CIS 684: Advanced Topics in Advertising & Public Relations"
+      ]
+    ],
+    "https://www.albany.edu/cehc/programs/phd-information-science": [
+      [
+        "Python",
+        "Data Visualization",
+        "One additional approved option"
+      ],
+      [
+        "Transcripts from all schools attended",
+        "Three letters of recommendation",
+        "Resume",
+        "Statement of Goals"
+      ],
+      [
+        "Rukhsana Ahmed",
+        "Professor",
+        "College of Arts and Sciences; Department of Communication",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Peter Brandon",
+        "Professor",
+        "College of Arts and Sciences; Department of Sociology",
+        "[email\u00a0protected]",
+        "Peter Brandon - CV9.23 MB"
+      ],
+      [
+        "Alexander Buyantuev",
+        "Associate Professor and Program Director - Geography MA",
+        "College of Arts and Sciences; Department of Geography, Planning, and Sustainability",
+        "[email\u00a0protected]",
+        "Alexander Buyantuev - CV178.52 KB"
+      ],
+      [
+        "Suraj Commuri",
+        "Associate Professor and Chair, Marketing",
+        "Massry School of Business",
+        "[email\u00a0protected]",
+        "Suraj Commuri - CV56.13 KB"
+      ],
+      [
+        "J. Ramon Gil-Garcia",
+        "Professor",
+        "[email\u00a0protected]",
+        "J. Ramon Gil-Garcia - CV1.13 MB"
+      ],
+      [
+        "Matthew C. Ingram",
+        "Interim Senior Executive Director of the School of Criminal Justice, Associate Professor",
+        "[email\u00a0protected]",
+        "Matthew C. Ingram - CV208.75 KB"
+      ],
+      [
+        "Shiguo Jiang",
+        "Associate Professor and Program Director - Geography BA",
+        "College of Arts and Sciences; Department of Geography, Planning, and Sustainability",
+        "[email\u00a0protected]",
+        "Spatial Analysis Laboratory",
+        "Shiguo Jiang - CV330.73 KB"
+      ],
+      [
+        "Rey Koslowski",
+        "Professor, Director of the Master of International Affairs Program",
+        "[email\u00a0protected]",
+        "Rey Koslowski - CV279.81 KB"
+      ],
+      [
+        "Archana Krishnan",
+        "Associate Professor",
+        "College of Arts and Sciences; Department of Communication",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Catherine T. Lawson",
+        "Associate Professor and Program Director - Masters of Regional Planning",
+        "College of Arts and Sciences; Department of Geography, Planning, and Sustainability",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Luis Felipe Luna-Reyes",
+        "Chair of Public Administration and Policy, Professor",
+        "[email\u00a0protected]",
+        "Luis Felipe Luna-Reyes - CV412.63 KB"
+      ],
+      [
+        "Erika Martin",
+        "Professor",
+        "[email\u00a0protected]",
+        "Erika Martin - CV404.15 KB"
+      ],
+      [
+        "Peter Shea",
+        "Professor",
+        "School of Education; Department of Educational Theory & Practice",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Amber Silver",
+        "Associate Professor",
+        "[email\u00a0protected]",
+        "Amber Silver - CV372.22 KB"
+      ],
+      [
+        "Piotr Szpunar",
+        "Associate Professor, Honors Program Coordinator",
+        "Department of Communication",
+        "[email\u00a0protected]",
+        "Piotr Szpunar - CV217.13 KB"
+      ],
+      [
+        "Kinsun Tam",
+        "Associate Professor, Accounting and Law",
+        "Massry School of Business",
+        "[email\u00a0protected]",
+        "Kinsun Tam - CV131.7 KB"
+      ],
+      [
+        "Raymond K. Van Ness",
+        "Associate Professor of Practice, Management",
+        "Massry School of Business",
+        "[email\u00a0protected]",
+        "vanness.pdf247.3 KB"
+      ],
+      [
+        "Kevin Williams",
+        "Interim Dean, Massry School of Business, Professor and Collins Fellow",
+        "Massry School of Business; Department of Psychology",
+        "[email\u00a0protected]",
+        "Kevin Williams - CV309.5 KB"
+      ],
+      [
+        "Kevin Williams",
+        "Interim Dean, Massry School of Business, Professor and Collins Fellow",
+        "Massry School of Business; Department of Psychology",
+        "[email\u00a0protected]",
+        "Kevin Williams - CV309.5 KB"
+      ],
+      [
+        "Departmental Assistantship Consideration",
+        "Fall: January 15Spring: Not AvailableSummer: Not Available",
+        "No Departmental Assistantship Consideration",
+        "Fall: January 15Spring: Not AvailableSummer: Not Available"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:31:44"
+}

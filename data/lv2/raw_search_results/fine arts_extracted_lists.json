@@ -1,0 +1,1546 @@
+{
+  "level1_term": "fine arts",
+  "url_verification_status": {
+    "https://catalog.ucsd.edu/courses/VIS.html": true,
+    "https://catalog.sdsu.edu/preview_program.php?catoid=10&poid=10211&returnto=909": true,
+    "https://hs-articulation.ucop.edu/guide/a-g-subject-requirements/f-visual-performing-arts/": false,
+    "https://www.sdcity.edu/academics/schools-programs/arts-humanities-comms/fineart/index.aspx": true,
+    "https://www.fullerton.edu/arts/art/": false,
+    "https://art.tcnj.edu/academics/bfa-majors/fine-art-specialization/": true,
+    "https://roski.usc.edu/": false,
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": false,
+    "https://www.oxy.edu/academics/areas-study/art-art-history": false,
+    "https://calarts.edu/": false,
+    "https://finearts.utexas.edu/": false,
+    "https://www.bu.edu/cfa/academics/degrees-programs/art-education/": true,
+    "https://www.cca.edu/fine-arts/mfa-fine-arts/": true,
+    "https://www.finearts.utah.edu/": false,
+    "https://ifa.nyu.edu/academics/index.htm": false,
+    "https://www.hofstra.edu/undergraduate/fine-arts-education.html": false,
+    "https://finearts.unm.edu/": false,
+    "https://www.kean.edu/academics/programs/fine-arts-ma": true,
+    "https://catalog.upenn.edu/undergraduate/programs/fine-arts-ba/": false,
+    "https://www.cla.purdue.edu/academic/vpa/ad/mfa/index.html": true,
+    "https://www.saic.edu/": true,
+    "https://art.asu.edu/": false,
+    "https://www.ccsdetroit.edu/academics/undergraduate-programs/art-education/": true,
+    "https://www.winthrop.edu/cvpa/fine-arts/": true,
+    "https://extendedstudies.ucsd.edu/": false,
+    "https://www.temple.edu/academics/degree-programs/art-education-major-ta-arte-bsed": false,
+    "https://vpa.syr.edu/academics/art/programs/studio-arts-mfa/": true,
+    "https://www.laguardia.edu/majors/fine-arts/": true,
+    "https://carta.fiu.edu/arts/degree-programs-and-deadlines/undergraduate/bachelor-of-science-in-art-education/": false,
+    "https://smfa.tufts.edu/graduate/areas-study": true
+  },
+  "verified_lists_per_url": {
+    "https://catalog.ucsd.edu/courses/VIS.html": 2,
+    "https://catalog.sdsu.edu/preview_program.php?catoid=10&poid=10211&returnto=909": 1,
+    "https://hs-articulation.ucop.edu/guide/a-g-subject-requirements/f-visual-performing-arts/": 0,
+    "https://www.sdcity.edu/academics/schools-programs/arts-humanities-comms/fineart/index.aspx": 3,
+    "https://www.fullerton.edu/arts/art/": 0,
+    "https://art.tcnj.edu/academics/bfa-majors/fine-art-specialization/": 6,
+    "https://roski.usc.edu/": 0,
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": 0,
+    "https://www.oxy.edu/academics/areas-study/art-art-history": 0,
+    "https://calarts.edu/": 0,
+    "https://finearts.utexas.edu/": 0,
+    "https://www.bu.edu/cfa/academics/degrees-programs/art-education/": 2,
+    "https://www.cca.edu/fine-arts/mfa-fine-arts/": 6,
+    "https://www.finearts.utah.edu/": 0,
+    "https://ifa.nyu.edu/academics/index.htm": 0,
+    "https://www.hofstra.edu/undergraduate/fine-arts-education.html": 0,
+    "https://finearts.unm.edu/": 0,
+    "https://www.kean.edu/academics/programs/fine-arts-ma": 3,
+    "https://catalog.upenn.edu/undergraduate/programs/fine-arts-ba/": 0,
+    "https://www.cla.purdue.edu/academic/vpa/ad/mfa/index.html": 1,
+    "https://www.saic.edu/": 2,
+    "https://art.asu.edu/": 0,
+    "https://www.ccsdetroit.edu/academics/undergraduate-programs/art-education/": 3,
+    "https://www.winthrop.edu/cvpa/fine-arts/": 8,
+    "https://extendedstudies.ucsd.edu/": 0,
+    "https://www.temple.edu/academics/degree-programs/art-education-major-ta-arte-bsed": 0,
+    "https://vpa.syr.edu/academics/art/programs/studio-arts-mfa/": 1,
+    "https://www.laguardia.edu/majors/fine-arts/": 5,
+    "https://carta.fiu.edu/arts/degree-programs-and-deadlines/undergraduate/bachelor-of-science-in-art-education/": 0,
+    "https://smfa.tufts.edu/graduate/areas-study": 1
+  },
+  "total_lists_per_url": {
+    "https://catalog.ucsd.edu/courses/VIS.html": 8,
+    "https://catalog.sdsu.edu/preview_program.php?catoid=10&poid=10211&returnto=909": 6,
+    "https://hs-articulation.ucop.edu/guide/a-g-subject-requirements/f-visual-performing-arts/": 1,
+    "https://www.sdcity.edu/academics/schools-programs/arts-humanities-comms/fineart/index.aspx": 5,
+    "https://www.fullerton.edu/arts/art/": 4,
+    "https://art.tcnj.edu/academics/bfa-majors/fine-art-specialization/": 18,
+    "https://roski.usc.edu/": 2,
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": 1,
+    "https://www.oxy.edu/academics/areas-study/art-art-history": 3,
+    "https://calarts.edu/": 8,
+    "https://finearts.utexas.edu/": 12,
+    "https://www.bu.edu/cfa/academics/degrees-programs/art-education/": 3,
+    "https://www.cca.edu/fine-arts/mfa-fine-arts/": 12,
+    "https://www.finearts.utah.edu/": 3,
+    "https://ifa.nyu.edu/academics/index.htm": 1,
+    "https://www.hofstra.edu/undergraduate/fine-arts-education.html": 2,
+    "https://finearts.unm.edu/": 5,
+    "https://www.kean.edu/academics/programs/fine-arts-ma": 5,
+    "https://catalog.upenn.edu/undergraduate/programs/fine-arts-ba/": 1,
+    "https://www.cla.purdue.edu/academic/vpa/ad/mfa/index.html": 2,
+    "https://www.saic.edu/": 6,
+    "https://art.asu.edu/": 1,
+    "https://www.ccsdetroit.edu/academics/undergraduate-programs/art-education/": 10,
+    "https://www.winthrop.edu/cvpa/fine-arts/": 11,
+    "https://extendedstudies.ucsd.edu/": 2,
+    "https://www.temple.edu/academics/degree-programs/art-education-major-ta-arte-bsed": 4,
+    "https://vpa.syr.edu/academics/art/programs/studio-arts-mfa/": 1,
+    "https://www.laguardia.edu/majors/fine-arts/": 12,
+    "https://carta.fiu.edu/arts/degree-programs-and-deadlines/undergraduate/bachelor-of-science-in-art-education/": 9,
+    "https://smfa.tufts.edu/graduate/areas-study": 2
+  },
+  "verified_lists_ids": {
+    "https://catalog.ucsd.edu/courses/VIS.html": [
+      0,
+      1
+    ],
+    "https://catalog.sdsu.edu/preview_program.php?catoid=10&poid=10211&returnto=909": [
+      5
+    ],
+    "https://hs-articulation.ucop.edu/guide/a-g-subject-requirements/f-visual-performing-arts/": [],
+    "https://www.sdcity.edu/academics/schools-programs/arts-humanities-comms/fineart/index.aspx": [
+      0,
+      2,
+      3
+    ],
+    "https://www.fullerton.edu/arts/art/": [],
+    "https://art.tcnj.edu/academics/bfa-majors/fine-art-specialization/": [
+      1,
+      5,
+      9,
+      10,
+      11,
+      12
+    ],
+    "https://roski.usc.edu/": [],
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": [],
+    "https://www.oxy.edu/academics/areas-study/art-art-history": [],
+    "https://calarts.edu/": [],
+    "https://finearts.utexas.edu/": [],
+    "https://www.bu.edu/cfa/academics/degrees-programs/art-education/": [
+      1,
+      2
+    ],
+    "https://www.cca.edu/fine-arts/mfa-fine-arts/": [
+      2,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "https://www.finearts.utah.edu/": [],
+    "https://ifa.nyu.edu/academics/index.htm": [],
+    "https://www.hofstra.edu/undergraduate/fine-arts-education.html": [],
+    "https://finearts.unm.edu/": [],
+    "https://www.kean.edu/academics/programs/fine-arts-ma": [
+      0,
+      3,
+      4
+    ],
+    "https://catalog.upenn.edu/undergraduate/programs/fine-arts-ba/": [],
+    "https://www.cla.purdue.edu/academic/vpa/ad/mfa/index.html": [
+      0
+    ],
+    "https://www.saic.edu/": [
+      0,
+      2
+    ],
+    "https://art.asu.edu/": [],
+    "https://www.ccsdetroit.edu/academics/undergraduate-programs/art-education/": [
+      4,
+      7,
+      9
+    ],
+    "https://www.winthrop.edu/cvpa/fine-arts/": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "https://extendedstudies.ucsd.edu/": [],
+    "https://www.temple.edu/academics/degree-programs/art-education-major-ta-arte-bsed": [],
+    "https://vpa.syr.edu/academics/art/programs/studio-arts-mfa/": [
+      0
+    ],
+    "https://www.laguardia.edu/majors/fine-arts/": [
+      1,
+      2,
+      3,
+      10,
+      11
+    ],
+    "https://carta.fiu.edu/arts/degree-programs-and-deadlines/undergraduate/bachelor-of-science-in-art-education/": [],
+    "https://smfa.tufts.edu/graduate/areas-study": [
+      1
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 160,
+  "url_to_lists": {
+    "https://catalog.ucsd.edu/courses/VIS.html": [
+      [
+        "Courses",
+        "Lower Division",
+        "Upper Division",
+        "Graduate"
+      ],
+      [
+        "Core Seminars",
+        "Art Practice/Theory",
+        "History/Theory/Criticism",
+        "Categories/Constructs",
+        "Theories/New Visions",
+        "Times/Terrains",
+        "Other"
+      ],
+      [
+        "J. Grandville, the Pre",
+        "Raphaelites, and the Impressionists. Prerequisites: upper",
+        "division standing."
+      ],
+      [
+        "century artists. In Duchamp\u2019s four",
+        "dimensional perspective, the ideas of art",
+        "century avant"
+      ],
+      [
+        "nineteenth century to the mid",
+        "twentieth century. Prerequisites: upper",
+        "division standing."
+      ],
+      [
+        "and process",
+        "based digital media art making. Contemporary and historical works across time",
+        "and process"
+      ],
+      [
+        "cross",
+        "cultural and ethnic exchange",
+        "division standing."
+      ],
+      [
+        "synchronized sounds and final mixed",
+        "track. Two production",
+        "course limitation. Prerequisites: VIS 174. Open to media majors and film production minors."
+      ]
+    ],
+    "https://catalog.sdsu.edu/preview_program.php?catoid=10&poid=10211&returnto=909": [
+      [
+        "ART 612\u00a0-\u00a0Graduate Interdisciplinary Critique Seminar Units: 3",
+        "ART 694\u00a0-\u00a0Art and Design Theory and Criticism I Units: 3",
+        "ART 760\u00a0-\u00a0Art and Design Theory and Criticism II Units: 3",
+        "ART 791\u00a0-\u00a0Seminar in Professional Practice of Art and Design Units: 3",
+        "ART 792A\u00a0-\u00a0Pedagogy of Art and Design Units: 3"
+      ],
+      [
+        "ART 506\u00a0-\u00a0Contemporary Issues Units: 3",
+        "ART 547\u00a0-\u00a0The Modern Built Environment Units: 3",
+        "ART 557\u00a0-\u00a0Nineteenth Century European Art Units: 3",
+        "ART 558\u00a0-\u00a0Twentieth Century European Art to 1945 Units: 3",
+        "ART 559\u00a0-\u00a0Twentieth Century European and American Art Since 1945 Units: 3",
+        "ART 560\u00a0-\u00a0History of American Art Units: 3",
+        "ART 564\u00a0-\u00a0Art of China Units: 3",
+        "ART 565\u00a0-\u00a0Art of Japan Units: 3",
+        "ART 568\u00a0-\u00a0Art of Ancient Greece and Rome Units: 3",
+        "ART 570\u00a0-\u00a0African American Art History Units: 3",
+        "ART 571B\u00a0-\u00a0Contemporary Art of Latin America Units: 3",
+        "ART 573A\u00a0-\u00a0Italian Art of the Fourteenth and Fifteenth Centuries Units: 3",
+        "ART 573B\u00a0-\u00a0Italian Art in the Sixteenth Century Units: 3",
+        "ART 575\u00a0-\u00a0European Art from 1600 to 1750 Units: 3",
+        "ART 576\u00a0-\u00a0History of Global Performance Art Units: 3",
+        "ART 577\u00a0-\u00a0History of Architecture Units: 3",
+        "ART 578\u00a0-\u00a0Seminar in History of Museums and Exhibitions Units: 3",
+        "ART 593\u00a0-\u00a0History and Methodology of Art History Units: 3"
+      ],
+      [
+        "Admission to the Degree Curriculum",
+        "Advancement to Candidacy",
+        "Required Core Courses (15 units)",
+        "Areas of Focus and Related Art and Design Courses (33 units)",
+        "Art History, Criticism, and Aesthetics Courses (6 units)",
+        "Course Outside the School of Art and Design (3 units)",
+        "Thesis Exhibition and Report (3 units)",
+        "Transfer Credit, Residency, and GPA"
+      ],
+      [
+        "unit graduate program which includes a minimum of 36 units of ART courses at the 600",
+        "and 700",
+        "level. The additional 24 units must be at the 500",
+        ", 600",
+        ", or 700",
+        "level. All graduate students must complete the following five core courses."
+      ],
+      [
+        ", 600",
+        ", or 700",
+        "unit course."
+      ],
+      [
+        ", 600",
+        ", or 700",
+        "level course offered by another SDSU department or school."
+      ]
+    ],
+    "https://hs-articulation.ucop.edu/guide/a-g-subject-requirements/f-visual-performing-arts/": [
+      [
+        "Visual & Performing Arts",
+        "Course Criteria & Guidance",
+        "Course Content Guidelines",
+        "Skills Guidelines",
+        "Honors Course Criteria & Guidance",
+        "Core Competencies"
+      ]
+    ],
+    "https://www.sdcity.edu/academics/schools-programs/arts-humanities-comms/fineart/index.aspx": [
+      [
+        "Courses in ceramics, sculpture, painting, drawing, design, art history and entrepreneurship",
+        "Beautiful\u00a0spacious art facilities including a large gallery and sculpture garden",
+        "Guest artists and craftsmen to participate in master classes and workshops"
+      ],
+      [
+        "Art critic",
+        "Art dealer",
+        "Educator",
+        "Historian",
+        "Arts administrator",
+        "Advertising specialist",
+        "Ceramicist",
+        "Community or computer artist",
+        "Computer graphics illustrator",
+        "Computer publishing",
+        "Design consulting",
+        "Display designer",
+        "Gallery director",
+        "Graphic artist",
+        "Illustrator",
+        "Muralist",
+        "Painter",
+        "Printmaker",
+        "Sculptor",
+        "Visual information specialist"
+      ],
+      [
+        "Apparel Design and Merchandising",
+        "Art Education",
+        "Art History",
+        "Creative Arts/Studies",
+        "Design",
+        "Industrial Arts",
+        "Interior Design",
+        "Multimedia",
+        "Photography",
+        "Studio Art",
+        "Textiles"
+      ],
+      [
+        "Create an artwork and analyze design principles and elements.",
+        "Plan and create artwork addressing contemporary issues.",
+        "Evaluate artworks within the historical and cultural context of art.",
+        "Utilize and explain specific methods, tools, and materials pertinent to each process.",
+        "Create an artist's portfolio that can be used to further your artistic goals."
+      ],
+      [
+        "Terri Hughes-Oelrich",
+        "Wayne Hulgin",
+        "Anna Delgado",
+        "Cynthia Lyons-Dailard"
+      ]
+    ],
+    "https://www.fullerton.edu/arts/art/": [
+      [
+        "Top 50 Nationally (#30)",
+        "Top 20 in California (#10)",
+        "Top 50 Nationally for Animation related BFA (#24)"
+      ],
+      [
+        "F. tomaselli, Laguna museum",
+        "See \"Fred Tomaselli Second Nature\" at the Laguna Art Musem Through February 2",
+        "More info on \"FRED TOMASELLI: SECOND NATURE\""
+      ],
+      [
+        "SCREENGRAB, SHOUTOUT L.A.",
+        "Artist/ Educator/ Alum Tan Jazz Mont Featured in Culture Blog Shoutout L.A.",
+        "READ \"Meet Tan Jazz Mont | Artist-Professor-Badass\"",
+        "SEE \"ONE OF YOUR GIRLS OR YOUR HOMIES: TAN JAZZ MONT\""
+      ],
+      [
+        "J. orser, \"notamuse\" (still)",
+        "Prof. Julie Orser Featured in Group Show at CTRL Galleryin L.A.'s Chinatown",
+        "ONLINE EXHIBITION ANNOUNCEMENT"
+      ]
+    ],
+    "https://art.tcnj.edu/academics/bfa-majors/fine-art-specialization/": [
+      [
+        "Alex Cheung",
+        "Jessica Hargwood",
+        "Jessica Cavanaugh",
+        "Brielle Jussen",
+        "Arielle Fouks",
+        "Andrew Dean",
+        "Elizabeth Lefkowich",
+        "Maggie Pugliese"
+      ],
+      [
+        "Art Commissions",
+        "Art Therapy",
+        "Computer Visual Imaging",
+        "Conservation and Restoration",
+        "Drawing and Painting",
+        "Exhibition Installation",
+        "Experimental Illustration",
+        "Gallery Curation",
+        "Mural Painting",
+        "Photography and Imaging",
+        "Production Design",
+        "Sculpture and Public Art",
+        "Storyboard Art",
+        "Teaching and Art Education",
+        "Video, Film and Sound Editing"
+      ],
+      [
+        "AAV 211/Drawing II",
+        "AAV 214/Printmaking I",
+        "AAV 215/Painting I",
+        "AAV 370/Topics in Art (with appropriate topic)"
+      ],
+      [
+        "AAV 216/Fiber Arts",
+        "AAV 217/Ceramics",
+        "AAV 218/Book Arts",
+        "AAV 231/Studio Lighting",
+        "AAV 255/Web I",
+        "AAV 370/Topics in Art (with appropriate topic)"
+      ],
+      [
+        "AAV 314/Printmaking II",
+        "AAV 315/Painting II",
+        "AAV 311/Drawing III",
+        "AAV 313/Sculpture II",
+        "AAV 330/Photo III: Image and Narrative",
+        "AAV 331/Advanced Projects in Photography and Video",
+        "AAV 342/Installations and Performance",
+        "AAV3XX/Video II",
+        "AAV 370/Topics in Art (with appropriate topic)"
+      ],
+      [
+        "AAV 318/Theory & Practice in Fine Art",
+        "AAV 461/Professional Practice",
+        "AAV 412/Senior Thesis in Fine Art"
+      ],
+      [
+        "Fine Art Core 1\u00a0\u2013 1 course unit",
+        "Fine Art Core 2\u00a0\u2013 1 course unit",
+        "Art History\u00a0\u2013 1 course unit",
+        "College Core \u2013 1 course unit"
+      ],
+      [
+        "Fine Art Core 3\u00a0\u2013 1 course unit",
+        "Advanced 1 \u2013 1 course unit",
+        "Art History\u00a0\u2013 1 course unit",
+        "College Core \u2013 1 course unit",
+        "Sophomore Review\u00a0\u2013 0 course unit"
+      ],
+      [
+        "Fine Art Core 4 \u2013 1 course unit",
+        "Advanced 2 \u2013 1 course unit",
+        "Art History\u00a0\u2013 1 course unit",
+        "College Core \u2013 1 course unit"
+      ],
+      [
+        "AAV 318/Theory & Practice in Fine Art \u2013 1 course unit",
+        "Advanced 3 \u2013 1 course unit",
+        "Art History\u00a0\u2013 1 course unit",
+        "College Core \u2013 1 course unit"
+      ],
+      [
+        "AAV 461/Professional Practice \u2013 1 course unit",
+        "Fine Art Core 5 \u2013 1 course unit",
+        "Elective\u00a0\u2013 1 course unit",
+        "Elective\u00a0\u2013 1 course unit"
+      ],
+      [
+        "AAV 412/Senior Thesis in Fine Art \u2013 1 course unit",
+        "Studio Elective \u2013 1 course unit",
+        "Elective\u00a0\u2013 1 course unit",
+        "Elective\u00a0\u2013 1 course unit"
+      ],
+      [
+        "Courses",
+        "Possible career options for Fine Art students include:",
+        "Specialization Requirements",
+        "Fine Art\u00a0Recommended Program of Study",
+        "Campus",
+        "Programs",
+        "Schools"
+      ],
+      [
+        "Fine Art Core (5 course units)",
+        "Advanced Requirements (3 course units)",
+        "Studio Elective (1 course unit)",
+        "Capstone (3 course units)",
+        "Second Year",
+        "Third Year",
+        "Fourth Year"
+      ],
+      [
+        "Choose 5 courses and no more than two out of any one area:",
+        "2-D and Image-based",
+        "Technology-based",
+        "Spatially-Oriented",
+        "Time-based"
+      ],
+      [
+        "First Semester",
+        "Second Semester",
+        "Total for year: 8 Course Units"
+      ],
+      [
+        "First Semester",
+        "Second Semester",
+        "Total for year: 8 Course Units"
+      ],
+      [
+        "First Semester",
+        "Second Semester",
+        "Total for year: 8 Course Units"
+      ]
+    ],
+    "https://roski.usc.edu/": [
+      [
+        "Suggested Searches",
+        "Undergraduate Programs",
+        "Graduate Programs",
+        "Special Opportunities",
+        "2025 Annual Student Exhibition Submissions Open",
+        "e-flux Film Series Features Patty Chang",
+        "Joyce Lee Exhibition Covered by USC Annenberg Media",
+        "Young Joon Kwak Included in Hyperallergic Spring 2025 New York Art Guide"
+      ],
+      [
+        "Life on Campus",
+        "Living in SoCal",
+        "The LA Arts Scene"
+      ]
+    ],
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": [
+      [
+        "based learning, design",
+        "thinking and maker",
+        "centered learning to develop maker"
+      ]
+    ],
+    "https://www.oxy.edu/academics/areas-study/art-art-history": [
+      [
+        "Ph.D., art history, Princeton University",
+        "Senior Vice President, Disney Imagineering",
+        "Engineering Manager, New Relic, Inc",
+        "Graduate Teaching Assistant, Yale University",
+        "Founder and Director, 323 Projects",
+        "Creative Writing Instructor, UCLA",
+        "Senior Associate, Gensler",
+        "Founding Director, Landscape Futures Lab",
+        "Artist, K.H. Davis Studio",
+        "Follow Oxy:"
+      ],
+      [
+        "Mckenzie Locke",
+        "Art History major; Los Angeles, CA",
+        "More from Mckenzie"
+      ],
+      [
+        "Artist, K.H. Davis Studio",
+        "Kenturah Davis\n            \n\n\n \n\n        2002",
+        "Artist website"
+      ]
+    ],
+    "https://calarts.edu/": [
+      [
+        "Critical Studies",
+        "Dance",
+        "Film/Video",
+        "Music",
+        "Theater"
+      ],
+      [
+        "California Institute of the Arts",
+        "Explore our schools:",
+        "CalArts is a multi-disciplinary community of artists",
+        "Here on our campus, pedagogy meets pixie dust.",
+        "The CalArts student experience",
+        "Events",
+        "CalArts beyond campus",
+        "Join our creative community",
+        "California Institute of the Arts",
+        "Connect with us"
+      ],
+      [
+        "The CalArts Way",
+        "Programs of Study",
+        "CalArts Schools",
+        "Academic Resources",
+        "Beyond Campus",
+        "Why CalArts?",
+        "Admissions",
+        "Tuition",
+        "Financial Aid",
+        "Visits and Events",
+        "Career Services",
+        "Campus Life",
+        "Student Services",
+        "Giving",
+        "Alumni",
+        "Institute",
+        "Academics",
+        "Admissions & Aid",
+        "Life at CalArts",
+        "Academics",
+        "Admissions & Aid",
+        "Life at CalArts",
+        "REDCAT Presents Ravi Coltrane in Special Evening of Jazz",
+        "Gail Rebhan Retrospective Travels to California Museum of Photography",
+        "Julius Eastman and Arthur Russell - World of Echo",
+        "J Carlie Thesis",
+        "Hard-Boiled Wonderland",
+        "Roy and Edna Disney CalArts Theater (REDCAT)",
+        "Extended Studies at CalArts",
+        "Community Arts Partnership (CAP)",
+        "Campus Safety"
+      ],
+      [
+        "Top 5",
+        "Fine Arts Schools",
+        "Top 5 Fine Arts Schools"
+      ],
+      [
+        "Top 25",
+        "Best art and design university in the world",
+        "Top 25 Best art and design university in the world"
+      ],
+      [
+        "Julius Eastman and Arthur Russell - World of Echo",
+        "Exhibition\u00a0/\nREDCAT",
+        "Opening Reception: March 15 at 7 PMBorrowing its title from Arthur Russell\u2019s 1986 album\u2026",
+        "Sat, Mar 15 / 12:00 PM - Sun, May 4 / 6:00 PM",
+        "REDCAT"
+      ],
+      [
+        "J Carlie Thesis",
+        "Exhibition\u00a0/\nSchool of Art",
+        "Sat, Mar 22 / 8:00 AM - Sat, Mar 29 / 11:55 PM",
+        "CalArts Campus"
+      ],
+      [
+        "Hard-Boiled Wonderland",
+        "Exhibition\u00a0/\nSchool of Film/Video",
+        "A video installation that lasts for four days. Reception on 3/27 from 7-9:30pm.",
+        "Tue, Mar 25 / 1:00 PM - Fri, Mar 28 / 9:30 PM",
+        "CalArts Campus"
+      ]
+    ],
+    "https://finearts.utexas.edu/": [
+      [
+        "Department of Art and Art History",
+        "Sarah and Ernest Butler School of Music",
+        "Department of Theatre and Dance",
+        "School of Design and Creative Technologies",
+        "UTeach Fine Arts",
+        "Center for Creative Economies",
+        "Programs and Research Centers",
+        "Landmarks Public Art Program",
+        "Texas Performing Arts"
+      ],
+      [
+        "Info For\u2026",
+        "Header Menu",
+        "Info For\u2026",
+        "Fine Arts: By the Numbers",
+        "What We Offer",
+        "Events",
+        "Arts Next Magazine",
+        "Charting Our Future Course",
+        "Footer menu"
+      ],
+      [
+        "Three Fine Arts staff members honored with President\u2019s Outstanding Staff Awards",
+        "Professor Robin D. Moore honored with College of Fine Arts Distinguished Teaching Award for 2024",
+        "Hamilton",
+        "Shuyi Xie, collaborative piano",
+        "The Surface of Things: A History of Photography from the Swahili Coast",
+        "Alexandra Dorantes, soprano",
+        "Wind Symphony",
+        "Les Arts Florissants & Th\u00e9otime Langlois",
+        "Nikos Warren, baritone",
+        "Boris Berman, piano"
+      ],
+      [
+        "Shuyi Xie, collaborative piano\n\nEvent Status\nScheduled\n\n March 25, 7\n\n to 8 p.m.\nMRH 2.614",
+        "Alexandra Dorantes, soprano\n\nEvent Status\nScheduled\n\n March 26, 6\n\n to 7 p.m.\nRecital Studio",
+        "Wind Symphony\n\nEvent Status\nScheduled\n\n March 26, 7:30 p.m.\nBates Recital HallStream",
+        "Nikos Warren, baritone\n\nEvent Status\nScheduled\n\n March 27, 6\n\n to 7 p.m.\nJessen Auditorium",
+        "Boris Berman, piano\n\nEvent Status\nScheduled\n\n March 27, 7:30 p.m.\nRecital Studio, MRH 2.608"
+      ],
+      [
+        "Hamilton",
+        "Event Status\nScheduled",
+        "March 25\n\n to April 6",
+        "Bass Concert Hall",
+        "Buy Tickets",
+        "Tickets on sale November 14, 2024, 10:00 am"
+      ],
+      [
+        "Shuyi Xie, collaborative piano",
+        "Event Status\nScheduled",
+        "March 25, 7\n\n to 8 p.m.",
+        "MRH 2.614"
+      ],
+      [
+        "The Surface of Things: A History of Photography from the Swahili Coast",
+        "Event Status\nScheduled",
+        "March 26, 5 p.m.",
+        "DFA 2.204"
+      ],
+      [
+        "Alexandra Dorantes, soprano",
+        "Event Status\nScheduled",
+        "March 26, 6\n\n to 7 p.m.",
+        "Recital Studio"
+      ],
+      [
+        "Wind Symphony",
+        "Event Status\nScheduled",
+        "March 26, 7:30 p.m.",
+        "Bates Recital Hall",
+        "Stream"
+      ],
+      [
+        "Les Arts Florissants & Th\u00e9otime Langlois",
+        "Event Status\nScheduled",
+        "March 27",
+        "Bates Recital Hall",
+        "Buy Tickets",
+        "Tickets on sale July 1, 2024, 12:00 am"
+      ],
+      [
+        "Nikos Warren, baritone",
+        "Event Status\nScheduled",
+        "March 27, 6\n\n to 7 p.m.",
+        "Jessen Auditorium"
+      ],
+      [
+        "Boris Berman, piano",
+        "Event Status\nScheduled",
+        "March 27, 7:30 p.m.",
+        "Recital Studio, MRH 2.608"
+      ]
+    ],
+    "https://www.bu.edu/cfa/academics/degrees-programs/art-education/": [
+      [
+        "Felice Amato\nAssistant Professor of Art, Art Education",
+        "R\u00e9becca Bourgault\nAssociate Professor of Art, Art Education; Chair of Art Education",
+        "Diana Hampe\nLecturer in Art, Art Education",
+        "Nicole Pond\nLecturer in Art, Art Education",
+        "Jana Silver\nArt Education Field Work Coordinator"
+      ],
+      [
+        "Arts & Education",
+        "Interdisciplinary Art",
+        "Public Art"
+      ],
+      [
+        "Resources for:",
+        "Art Education",
+        "Some of Our Grads",
+        "BFA Art Education",
+        "BFA/MA (4+1) Art Education with Initial License",
+        "Online MA Art Education",
+        "MA Art Education with Initial License",
+        "MA Art Education",
+        "Meet Art Education Assistant Professor, Felice Amato",
+        "Related Work",
+        "Degrees & Programs",
+        "Related News",
+        "Related Events",
+        "Foundation Drawing: The Legacy of John Wilson",
+        "Foundation Drawing: The Legacy of John Wilson, Reception",
+        "Boston University Bands Spring Jazz Concert",
+        "Foundation Drawing: The Legacy of John Wilson",
+        "Foundation Drawing: The Legacy of John Wilson",
+        "STAMP: Bachelorette",
+        "Foundation Drawing: The Legacy of John Wilson",
+        "STAMP: Bachelorette",
+        "Art Education"
+      ]
+    ],
+    "https://www.cca.edu/fine-arts/mfa-fine-arts/": [
+      [
+        "Undergraduate",
+        "Transfer",
+        "Graduate",
+        "Pre-College"
+      ],
+      [
+        "Undergraduate",
+        "Transfer",
+        "Graduate",
+        "Pre-College"
+      ],
+      [
+        "Model-making shop",
+        "Photography studios and darkrooms",
+        "Foam room",
+        "Alternative materials shop",
+        "Printmaking and bookbinding equipment",
+        "Metalworking shop",
+        "Letterpress studio",
+        "Woodworking shop",
+        "Digital fabrication tools",
+        "Foundry and forge",
+        "Materials reuse center",
+        "Cement and plaster studio"
+      ],
+      [
+        "Visual artist",
+        "Writer and critic",
+        "Curator",
+        "Photographer",
+        "Filmmaker",
+        "Educator",
+        "Community activist",
+        "Researcher",
+        "Arts administrator"
+      ],
+      [
+        "Images (up to 5 MB each)",
+        "Videos (up to 250 MB each)",
+        "Audio (up to 30 MB each)",
+        "PDFs (up to 10 MB each)",
+        "Links to media from YouTube, Vimeo, and SoundCloud are also acceptable"
+      ],
+      [
+        "Study in the culturally diverse Bay Area",
+        "A flexible option for busy professionals",
+        "Tailor your course of study",
+        "Collaborate with visiting artists",
+        "Make socially engaged art",
+        "CCA\u2019s resources at your fingertips",
+        "Additional resources for making",
+        "Faculty stories",
+        "MFA\n                            \n                            Fine Arts",
+        "Potential career paths",
+        "Start your application",
+        "MFA Fine Arts application requirements"
+      ],
+      [
+        "Year 1: Fall Semester",
+        "Year 1: Spring Semester",
+        "Year 2: Fall Semester",
+        "Year 2: Spring Semester",
+        "Graduate Admissions",
+        "Hello there!"
+      ],
+      [
+        "Specialize in aluminum, brass, copper, steel, and wire in the Metal Shop",
+        "Access sensors, motors, and digital fabrication materials in the Hybrid Lab",
+        "Check out audio gear, DSLRs, GoPros, lighting kits, and more from the San Francisco Media Center"
+      ],
+      [
+        "Individual Studio Critique",
+        "Dialogues and Practices I",
+        "Contemporary Art History and Theory",
+        "Fine Arts Seminar or Grad-Wide Elective"
+      ],
+      [
+        "Individual Studio Critique",
+        "History and Theory Elective",
+        "Dialogues and Practices II",
+        "Fine Arts Seminar or Grad-Wide Elective"
+      ],
+      [
+        "Individual Studio Critique",
+        "Exhibitions Seminar 1",
+        "Thesis Seminar",
+        "Fine Arts Seminar or Grad-Wide Elective"
+      ],
+      [
+        "Individual Studio Critique",
+        "Exhibitions Seminar 2",
+        "Fine Arts Seminar or Grad-Wide Elective",
+        "Fine Arts Seminar or Grad-Wide Elective"
+      ]
+    ],
+    "https://www.finearts.utah.edu/": [
+      [
+        "Invert colors",
+        "Monochrome",
+        "Dark contrast",
+        "Light contrast",
+        "Low saturation",
+        "High saturation",
+        "Highlight links",
+        "Highlight headings",
+        "Screen reader",
+        "Read mode",
+        "Content scaling\n\n100%",
+        "Font size\n\n100%",
+        "Line height\n\n100%",
+        "Letter spacing\n\n100%"
+      ],
+      [
+        "Find your voice. Fuel your passion. Ignite your future.",
+        "The Finer Points",
+        "Art in Action"
+      ],
+      [
+        "Specialization and Teaching",
+        "Spotlight",
+        "Arts Research",
+        "Interdisciplinary",
+        "Creative Culture",
+        "Nature"
+      ]
+    ],
+    "https://ifa.nyu.edu/academics/index.htm": [
+      [
+        "Academics",
+        "Degree Requirements",
+        "Special Programs",
+        "Course Descriptions",
+        "Financing Graduate Study",
+        "Accessibility"
+      ]
+    ],
+    "https://www.hofstra.edu/undergraduate/fine-arts-education.html": [
+      [
+        "State-of-the art-computer labs",
+        "Fully equipped wood, metal and welding shops, as well as carving and plaster studios",
+        "A well-equipped ceramics studio",
+        "Painting, drawing, sculpture, and new media, graphic design and industrial design studios",
+        "A professional-level photography studio where students engage in the latest digital technologies"
+      ],
+      [
+        "Exhibition Opportunities",
+        "Hofstra University Museum of Art",
+        "Meet Program Director Susan Goetz Zwirn",
+        "Drawing For Teachers",
+        "Exhibit for Alum's Class",
+        "Finding Zen in Art Class",
+        "Talent on Display",
+        "Teaching STEAM with DoodleBots",
+        "Art Education in a Time of Upheaval"
+      ]
+    ],
+    "https://finearts.unm.edu/": [
+      [
+        "Stories from the HeART of the Arts in New Mexico",
+        "Announcing Tamarind Institute\u2019s Felsen/Johnson Memorial Scholarship",
+        "UNM Theatre and Dance Hosts Dance Historian and Scholar Clare Croft March 7th",
+        "THE STRATEGIC PLAN"
+      ],
+      [
+        "THE STRATEGIC PLAN\nFOR THE UNM COLLEGE OF FINE ARTS",
+        "THE HEART OF THE ARTS IN NEW MEXICO",
+        "EXPLORE TODAY!"
+      ],
+      [
+        "Composed by Mark Adamo; lyrics in English.",
+        "Directed by Dr. Olga Perez Flora; conducted by Dr. Kristin Ditlow.",
+        "April 3-5 7:30pm, April 6 2:00pm.",
+        "Tickets available at unmtickets.com."
+      ],
+      [
+        "Top 8 in the nation in Photography",
+        "The only place in the US to earn a concentration in Flamenco",
+        "The only college at UNM with a fund dedicated to studying abroad",
+        "64% of CFA grads find jobs before or within 4 months of graduation"
+      ],
+      [
+        "The top state for fine artists",
+        "The #3 State for actors",
+        "The #15 State for Musicians",
+        "NEA Ranks"
+      ]
+    ],
+    "https://www.kean.edu/academics/programs/fine-arts-ma": [
+      [
+        "Enhance your artistic skills, and techniques and conceptual thinking as an artist and/or educator",
+        "Study the philosophical\u00a0and psychological underpinnings of\u00a0art and artistic expression",
+        "Gain new insights, inspiration and perspective as an artist and fine arts educator",
+        "Work, interact and share ideas with other professional artists and art educators",
+        "Enrich your\u00a0professional profile, and\u00a0 fuel your creative intelligence and expressive voice."
+      ],
+      [
+        "Special Education (M.A.)",
+        "Educational Administration (M.A.)",
+        "Bilingual/Bicultural Education (M.A.)"
+      ],
+      [
+        "Art educators",
+        "Museum educators",
+        "Professional artists or writers",
+        "Fine arts supervisors",
+        "Artisans in a variety of visual arts fields",
+        "Jewelry designers",
+        "Studio artists",
+        "Community arts coordinators",
+        "Private art school owners and instructors",
+        "College artists-in-residence"
+      ],
+      [
+        "Kean University",
+        "Global CTA",
+        "Main navigation",
+        "Global CTA",
+        "What You Learn",
+        "Other programs you might be interested in",
+        "Cougars Climb Higher",
+        "After Kean",
+        "Want to Know More?",
+        "Social",
+        "Footer Utility"
+      ],
+      [
+        "M.A. in Fine Arts, Studio",
+        "M.A. in Fine Arts, Supervision Certification Option",
+        "M.A. in Fine Arts, Teaching Certification Option"
+      ]
+    ],
+    "https://catalog.upenn.edu/undergraduate/programs/fine-arts-ba/": [
+      [
+        "Home/",
+        "Undergraduate\u00a0Catalog/",
+        "School\u00a0of\u00a0Arts\u00a0&\u00a0Sciences/",
+        "Majors/",
+        "Fine Arts, BA"
+      ]
+    ],
+    "https://www.cla.purdue.edu/academic/vpa/ad/mfa/index.html": [
+      [
+        "Studio Arts MFA Course List",
+        "Industrial/Interaction Design MFA Course List",
+        "Interior Design MFA Course List",
+        "Visual Communication Design MFA Course List",
+        "Six Semester Schedule",
+        "Electronic Plan of Study (A+D program deadlines and requirements)",
+        "Electronic Plan of Study (Graduate School Student Instructions)"
+      ],
+      [
+        "Coursework",
+        "Plans of Study",
+        "Thesis exhibition",
+        "Formal Thesis Option",
+        "Facilities and Resources",
+        "Career Opportunities",
+        "Featured Student Works",
+        "Communication",
+        "Campus",
+        "CLA Resources",
+        "People"
+      ]
+    ],
+    "https://www.saic.edu/": [
+      [
+        "ARTBASH and Pre-Registration Day: April 5 + 6",
+        "Freshman and Transfer Final Deadline: April 15",
+        "Kids' Summer Camps and Teen Program Registration is Open",
+        "#2 Fine Arts Program in the U.S.",
+        "This Issue",
+        "Illuminating Thailand",
+        "L.A. Duet",
+        "Study Abroad",
+        "What Is This?",
+        "Fall 2024 Magazine",
+        "The Other Side",
+        "Angel Otero Defies Definition",
+        "Tess Shoshana",
+        "Leo Dai",
+        "Antane Phillips",
+        "Spring 2025 Undergraduate Exhibition",
+        "Trinh T. Minh-ha Lecture",
+        "Early College Program Summer Institute Priority Deadline: April 1",
+        "Wickedly Successful: Alum John Marquis Talks BAFTA and Oscar Nominations",
+        "SAIC Community Members Anna Martine Whitehead & X Named 2025 USA Fellows",
+        "Alum Jeffrey Gibson\u2019s Venice Biennale Show Going to The Broad"
+      ],
+      [
+        "Explore Our Programs:",
+        "Undergraduate",
+        "Graduate"
+      ],
+      [
+        "Fall 2024 Magazine",
+        "The Other Side",
+        "Angel Otero Defies Definition"
+      ],
+      [
+        "Spring 2025 Undergraduate Exhibition",
+        "April 04 - April 12",
+        "SAIC Galleries Street Level, SAIC Galleries Lower Level 1, SAIC Galleries Lower Level 2"
+      ],
+      [
+        "Trinh T. Minh-ha Lecture",
+        "March 25",
+        "Fullerton Hall, Art Institute of Chicago"
+      ],
+      [
+        "Alums\n\n\n\nWickedly Successful: Alum John Marquis Talks BAFTA and Oscar Nominations",
+        "Alums\n\n\n\nSAIC Community Members Anna Martine Whitehead & X Named 2025 USA Fellows",
+        "Alums\n\n\n\nAlum Jeffrey Gibson\u2019s Venice Biennale Show Going to The Broad"
+      ]
+    ],
+    "https://art.asu.edu/": [
+      [
+        "Why the School of Art is right for you",
+        "Areas of study",
+        "Add creativity to your schedule"
+      ]
+    ],
+    "https://www.ccsdetroit.edu/academics/undergraduate-programs/art-education/": [
+      [
+        "Define the contributing factors to discrimination in American schools from 1600 to 2000.",
+        "Defend the historical importance of art in the history of education.",
+        "Compare and contrast traditional & progressive philosophies.",
+        "Evaluate contributions to art education from historical to contemporary theories.",
+        "Reflect on and discuss how policy is formed at local, state, and federal levels.",
+        "Design and produce SEO quality visual art responses to course content.",
+        "Observe, evaluate, respond to real-time teaching & learning via field placements."
+      ],
+      [
+        "Develop and implement an integrative lesson plan in association with state literacy standards.",
+        "Conduct assessment for authentic instruction.",
+        "Develop assessment tools.",
+        "Use technology for presentations and instruction tutoring."
+      ],
+      [
+        "Articulate decision-making regarding classroom management.",
+        "Communicate classroom related teaching and learning concepts through weekly discussions.",
+        "Synthesize classroom learning theories through practice in the Directed Teaching experience.",
+        "Construct and articulate a reality-based teaching viewpoint."
+      ],
+      [
+        "Program Learning Outcomes (PLOs)",
+        "Art Education Mission Statement",
+        "Our Philosophy",
+        "At a glance",
+        "Education Foundations & Human Development",
+        "Elementary and Secondary Art Teaching",
+        "Reading and Language Arts Methods",
+        "Directed Teaching and Professional Seminar",
+        "Amy Darby '19",
+        "Brenna Potter '21",
+        "Cody Murphy '17"
+      ],
+      [
+        "Placement Rate",
+        "DAE 200: Education Foundations: History and Philosophy of Education",
+        "DAE 250: Human Development, Creativity and Visual Learning",
+        "DAE 315: Elementary Art Teaching: Methods, Materials and Content Area Literacy",
+        "DAE 250: Human Development, Creativity and Visual Learning",
+        "DAE 407: Reading and Language Arts Methods",
+        "DAE 510: Directed Teaching",
+        "DAE 520: Professional Seminar",
+        "Additional Links",
+        "Address"
+      ],
+      [
+        "K-12 Art Teacher",
+        "Community Arts Program Director",
+        "Community Arts Gallery Director",
+        "Museum Educator"
+      ],
+      [
+        "Amy Darby '19\t\t\t\t\n\nArt Educator, Birmingham Public Schools",
+        "Brenna Potter '21\t\t\t\t\n\nArt Teacher, Madison Elementary",
+        "Cody Murphy '17\t\t\t\t\n\nEducator, Shanghai Normal University"
+      ],
+      [
+        "based LQ",
+        "on teaching experience at our onsite, art",
+        "and design",
+        "based charter school, University Prep: Art & Design",
+        "as well as others throughout Metro Detroit",
+        "prepares graduates to teach in Michigan and across the United States."
+      ],
+      [
+        "Degree Teacher Certification Program OptionIf you have already earned a 4",
+        "year degree in art and design and are seeking additional K",
+        "12 Art Education Certification, you can enroll in our 27",
+        "degree Application Requirements."
+      ],
+      [
+        "on teaching experience at our onsite, art",
+        "and design",
+        "based charter school, University Prep: Art & Design",
+        "as well as others throughout Metro Detroit."
+      ]
+    ],
+    "https://www.winthrop.edu/cvpa/fine-arts/": [
+      [
+        "Ceramics",
+        "Bachelor of Fine Arts (B.F.A.) degree with a concentration in Ceramics",
+        "Explore More"
+      ],
+      [
+        "Drawing",
+        "Bachelor of Fine Arts (B.F.A.) degree with a concentration in Drawing",
+        "Explore More"
+      ],
+      [
+        "Expanded Media",
+        "Bachelor of Fine Arts (B.F.A.) degree with a concentration in Expanded Media",
+        "Explore More"
+      ],
+      [
+        "Painting",
+        "The Bachelor of Fine Arts (B.F.A.) degree with a concentration in Painting",
+        "Explore More"
+      ],
+      [
+        "Photography",
+        "The Bachelor of Fine Arts (B.F.A.) degree with a concentration in Photography",
+        "Explore More"
+      ],
+      [
+        "Sculpture",
+        "The Bachelor of Fine Arts (B.F.A.) degree with a concentration in Sculpture",
+        "Explore More"
+      ],
+      [
+        "Studio Arts",
+        "The Bachelor of Fine Arts (B.F.A.) degree in Studio Arts.",
+        "Explore More"
+      ],
+      [
+        "Master of Fine Arts",
+        "The M.F.A. program at Winthrop University is a 2 year, full-time studio art program.",
+        "Explore More"
+      ],
+      [
+        "Friday  |  10 a.m.",
+        "5 p.m., Saturday  |  10 a.m.",
+        "4 p.m.Closed for university holidays and during installation."
+      ],
+      [
+        "05.10Rutledge Gallery & Elizabeth Dunlap Patrick GalleryOpening Reception: April 17, 5:30 p.m.",
+        "Friday  |  10 a.m.",
+        "5 p.m., Saturday  |  10 a.m.",
+        "4 p.m.Closed for university holidays and during installation."
+      ],
+      [
+        "Friday  |  10 a.m.",
+        "5 p.m., Saturday  |  10 a.m.",
+        "4 p.m.Closed for university holidays and during installation."
+      ]
+    ],
+    "https://extendedstudies.ucsd.edu/": [
+      [
+        "Enrich Your Life, Expand Your Opportunities and Advance your career.",
+        "Educational Programs",
+        "Programs For Youth",
+        "Course Catalog",
+        "Upcoming Events",
+        "Latest Articles",
+        "How To Become a Medical Writer",
+        "Event Safety Management: A Guide to Prioritizing Protection in Every Event Plan",
+        "Expanding Learning Opportunities: UC San Diego Extended Studies and the San Diego County Office of E",
+        "How to Celebrate Women\u2019s History Month with UC San Diego Extended Studies",
+        "How Artificial Intelligence is Transforming Professional Development",
+        "Copyediting vs. Technical Writing and Communication: Choosing the Right Career Path",
+        "Timothy Thomas Jr. - One Student\u2019s Career Change Journey to Becoming a Substance Use Disorder Counse",
+        "How To Celebrate Black History Month with UC San Diego Extended Studies",
+        "7 Top Essential Skills in San Diego",
+        "When Classrooms Get Contentious: Techniques for Managing Challenging Conversations in Schools"
+      ],
+      [
+        "All Courses and Certificates",
+        "All Educational Programs",
+        "Corporate Education & Custom Training",
+        "International Programs at UC San Diego",
+        "Osher Lifelong Learning Institute",
+        "Occupational Safety and Health (OSHA)"
+      ]
+    ],
+    "https://www.temple.edu/academics/degree-programs/art-education-major-ta-arte-bsed": [
+      [
+        "Adolescent Development for Educators",
+        "Art in Elementary & Secondary School*",
+        "Effective Instructional Strategies for Young Children with Disabilities*",
+        "Inclusive Art Education K-12 Students in the Art Room",
+        "Introduction to Special Education\u00a0Principles and Practice for Teaching English Learners*",
+        "Science & Art of Teaching*",
+        "Socio-Cultural Foundations of Education in the U.S."
+      ],
+      [
+        "National Architectural Accrediting Board\u00a0(Master of Architecture)",
+        "Planning Accreditation Board\u00a0(Master of Science in City and Regional Planning)",
+        "International Facilities Management Association\u00a0(Bachelor of Science in Facilities Management)"
+      ],
+      [
+        "Foundations",
+        "Community Arts Practices Program",
+        "in2Art Program",
+        "Classes & Curriculum",
+        "Minor in Art History",
+        "Related Graduate Degrees",
+        "Related Graduate Certificates",
+        "Tuition & Fees"
+      ],
+      [
+        "or part",
+        "time), in",
+        "state or out"
+      ]
+    ],
+    "https://vpa.syr.edu/academics/art/programs/studio-arts-mfa/": [
+      [
+        "Ceramics",
+        "Drawing",
+        "Painting",
+        "Print Media and Graphic Art",
+        "Sculpture",
+        "Interdisciplinary Practice"
+      ]
+    ],
+    "https://www.laguardia.edu/majors/fine-arts/": [
+      [
+        "Building a network of creative/ talented individuals?",
+        "Teaching art at the Elementary, Secondary, or College level?",
+        "Working in art-related institutions such as museums, galleries, or artist studios?",
+        "Starting your own business?",
+        "Learning to curate an exhibit from beginning to end?",
+        "Learning how to appraise a work of art?",
+        "Illustrating your own comic/ graphic novel?"
+      ],
+      [
+        "Technical skills in 2D (drawing, painting) and 3D mediums (sculpture, 3D design).",
+        "Color theory.",
+        "Analyze artmaking and artists in a global, historical, and contemporary context.",
+        "Business aspects of art, art/market: how to organize an exhibit, write an artist\u2019s statement.",
+        "Creating both an art portfolio and a digital portfolio for professional presentation/job placement.",
+        "Leadership, teamwork, and how to work with a diverse population of clients."
+      ],
+      [
+        "Architectural Assistant",
+        "Interior Design Assistant",
+        "Art Technician",
+        "Art Teaching Assistant",
+        "Art Handler",
+        "Graphic Designer",
+        "Illustrator",
+        "Gallery or Museum Curator",
+        "Art Director",
+        "Art Teacher (Elementary)",
+        "Set Designer",
+        "Forensic Artist",
+        "Fashion Designer",
+        "Art Professor",
+        "Art Historian",
+        "Art Conservator",
+        "Art Therapist"
+      ],
+      [
+        "School of Visual Arts (SVA) \u2013 BFA in Fine Arts",
+        "Queens College \u2013 BFA Studio Art/BFA Graphic Design",
+        "Hunter College \u2013 BA/BFA Studio Art",
+        "Brooklyn \u2013 BFA Studio Art",
+        "City College \u2013 BA/BFA Electronic Design & Multimedia",
+        "Fashion Institute of Technology \u2013 BFA Studio Art/BFA Fashion Design",
+        "Purchase \u2013 BFA in Studio Art",
+        "Pratt \u2013 BFA Studio Art",
+        "Art Institute of Chicago \u2013 BFA Studio Art",
+        "Pennsylvania Academy of the Fine Arts (PAFA) \u2013 BA/BFA Fine Arts",
+        "New York Institute of Art & Design \u2013 BFA Interior Design"
+      ],
+      [
+        "MAT107 Mathematics and the Modern World",
+        "MAT123 Modern Problem Solving (Depending on placement)",
+        "MAT115 College Algebra and Trigonometry",
+        "MAT117 Algebra and Trigonometry (Depending on placement)",
+        "MAT120 Elementary Statistics",
+        "MAT119 Statistics with Elementary Algebra (Depending on placement)"
+      ],
+      [
+        "SCB101 Topics in Biological Sciences",
+        "SCC101 Topics in Chemistry",
+        "SCP101 Topics in Physics",
+        "SCP105 Life in the Universe",
+        "SCP140 Topics in Astronomy"
+      ],
+      [
+        "World Cultures and Global Issues",
+        "US Experience in its Diversity",
+        "Creative Expression",
+        "Individual and Society",
+        "Scientific World"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "Youtube",
+        "Linkedin",
+        "Flickr"
+      ],
+      [
+        "Facebook-f",
+        "Instagram",
+        "Youtube",
+        "Linkedin",
+        "Flickr"
+      ],
+      [
+        "Facebook-f",
+        "Instagram",
+        "Twitter",
+        "Youtube",
+        "Linkedin",
+        "Flickr"
+      ],
+      [
+        "Courses",
+        "Fine Arts: 21 Credits",
+        "FAF101 First Year Seminar for Fine Arts",
+        "HUA103 Beginning Drawing",
+        "HUA104 Introduction to Design",
+        "HUA165 Art History: Prehistoric Through Gothic",
+        "HUA166 Art History: Renaissance Through Modern",
+        "HUA180 Life Drawing",
+        "HUA289 Art and Design Seminar",
+        "Select one of the following courses: 3 Credits",
+        "HUA106 Three-Dimensional Design",
+        "HUA110 Beginning Painting",
+        "HUA115 Color Theory",
+        "HUA120 Beginning Sculpture",
+        "HUA130 Beginning Photography",
+        "HUA150 Beginning Printmaking",
+        "HUA185 Illustration",
+        "Select one of the following courses: 3 Credits",
+        "HUA203 Intermediate Drawing",
+        "HUA210 Intermediate Painting",
+        "HUA220 Intermediate Sculpture",
+        "HUA285 Graphic Narrative",
+        "Select one of the following courses: 3 Credits",
+        "HUA196 Latin American Art History",
+        "HUA200 Art of the Twentieth Century",
+        "HUN195 Art in New York: A Museum/Gallery Seminar",
+        "HUA202 History of Photography",
+        "HUA215 Art of the Renaissance in Italy",
+        "HUA216 Art of Africa, Oceania and Pre-Columbian America",
+        "HUC150 The Art of Film",
+        "HUP107 The Philosophy of Art",
+        "HUA294 Experiential Learning"
+      ],
+      [
+        "BFA in Fine Arts",
+        "BFA Studio Art/BFA Graphic Design",
+        "BA/BFA Studio Art",
+        "BFA Studio Art",
+        "BA/BFA Electronic Design & Multimedia",
+        "BFA Studio Art/BFA Fashion Design",
+        "BFA in Studio Art",
+        "BFA Studio Art",
+        "BFA Studio Art",
+        "Animation/ Architecture/ Art Education/ Art History/ Fashion Design/ Furniture Design/ Illustration",
+        "BA/BFA Fine Arts",
+        "BFA Interior Design"
+      ]
+    ],
+    "https://carta.fiu.edu/arts/degree-programs-and-deadlines/undergraduate/bachelor-of-science-in-art-education/": [
+      [
+        "ART 1201C 2D Design",
+        "ART 1203C 3D Design",
+        "ART 2300C Beginning Drawing",
+        "ART 2330C Beginning Figure Drawing"
+      ],
+      [
+        "Design II, 3D",
+        "Figure drawing",
+        "Color, color composition",
+        "Intermediate drawing",
+        "Observational",
+        "All courses except ARHX050 and ARHX051 require a \u201cC\u201d or higher."
+      ],
+      [
+        "Academic Standards",
+        "Explore FIU",
+        "Tools & Resources",
+        "Tools & Resources"
+      ],
+      [
+        "Bachelor of Science in Art Education",
+        "crodri",
+        "2025-03-12T18:59:42+00:00"
+      ],
+      [
+        "FIU Course(s)",
+        "EDF 1005",
+        "ARH 2050",
+        "ARH 2051",
+        "ART 1201C",
+        "ART 1203C",
+        "ART 2300C",
+        "ART 2330C"
+      ],
+      [
+        "Lower-Division Preparation",
+        "EDF 1005 Introduction to Education*",
+        "ARH 2050 Art History Survey I",
+        "ARH 2051 Art History Survey II",
+        "ART 1201C 2-D Design",
+        "ART 1203C 3-D Design",
+        "ART 2300C Beginning Drawing",
+        "ART 2330C Beginning Figure Drawing"
+      ],
+      [
+        "Subject Matter Specialization",
+        "ARH 4470 Contemporary Art \u2013 GL",
+        "Art History Electives",
+        "ART 3402C Intermediate Printmaking or PGY 3410C Intermediate Photography",
+        "ART 3710C Intermediate Sculpture or ART 3760C Intermediate Ceramics",
+        "Studio Electives",
+        "ART Studio Abroad or Advisor Approved Electives"
+      ],
+      [
+        "Professional Education",
+        "EDP 3004 Educational Psychology",
+        "RED 4325 Subject Area Reading",
+        "TSL 4324 ESOL Issues and Strategies for Content Teachers \u2013 GL",
+        "ARE 4316 Special Teaching Lab Art K-5",
+        "ARE 4341 Special Teaching Lab Art 6-12",
+        "ARE 4940 Student Teaching"
+      ],
+      [
+        "7000 | Monday",
+        "Friday: 9am",
+        "6pmOneStop Live Chat and FAQ | Chat Hours: Monday",
+        "Friday: 9am",
+        "5pm Financial Aid:  305"
+      ]
+    ],
+    "https://smfa.tufts.edu/graduate/areas-study": [
+      [
+        "Audience Menu",
+        "Breadcrumb",
+        "administrative offices",
+        "academic programs"
+      ],
+      [
+        "depth instruction in traditional printmaking techniques",
+        "relief, intaglio, lithography, and screen",
+        "printing",
+        "as well as a variety of contemporary hybrid approaches."
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:01:28"
+}

@@ -1,0 +1,916 @@
+{
+  "level1_term": "sport management",
+  "url_verification_status": {
+    "https://annescollege.fsu.edu/sm": true,
+    "https://tl.ehe.osu.edu/academics/curriculum/sport-management-phd": true,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/sport-management": true,
+    "https://www.kines.umich.edu/academics/sport-management/undergraduate": false,
+    "https://education.utexas.edu/departments/kinesiology-health-education/khe-programs/sport-management/": false,
+    "http://hhp.ufl.edu/academics/phd/spm-phd/": false,
+    "https://coe.uga.edu/academics/concentrations/sport-management/": true,
+    "https://kin.umn.edu/undergraduate/sports-management-bs": true,
+    "https://courses.syracuse.edu/undergraduate/majors/sport-management-bs/": true,
+    "https://www.troy.edu/academics/academic-programs/graduate/sport-management-phd.html": true,
+    "https://www.kines.umich.edu/academics/sport-management": true,
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGHHU/SPM_BSSP/": true,
+    "https://www.sps.nyu.edu/homepage/academics/bachelors-degrees/bs-in-sports-management.html": true,
+    "https://www.wvu.edu/academics/programs/sport-management-bs": true,
+    "https://www.elon.edu/u/academics/communications/sport-management/": false,
+    "https://catalog.drexel.edu/coursedescriptions/quarter/grad/smt/": false,
+    "https://coe.uga.edu/academics/degrees/bsed-sport-management/": true,
+    "https://www.stjohns.edu/academics/programs/sport-management-master-professional-studies": true
+  },
+  "verified_lists_per_url": {
+    "https://annescollege.fsu.edu/sm": 2,
+    "https://tl.ehe.osu.edu/academics/curriculum/sport-management-phd": 1,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/sport-management": 1,
+    "https://www.kines.umich.edu/academics/sport-management/undergraduate": 0,
+    "https://education.utexas.edu/departments/kinesiology-health-education/khe-programs/sport-management/": 0,
+    "http://hhp.ufl.edu/academics/phd/spm-phd/": 0,
+    "https://coe.uga.edu/academics/concentrations/sport-management/": 2,
+    "https://kin.umn.edu/undergraduate/sports-management-bs": 3,
+    "https://courses.syracuse.edu/undergraduate/majors/sport-management-bs/": 2,
+    "https://www.troy.edu/academics/academic-programs/graduate/sport-management-phd.html": 1,
+    "https://www.kines.umich.edu/academics/sport-management": 1,
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGHHU/SPM_BSSP/": 2,
+    "https://www.sps.nyu.edu/homepage/academics/bachelors-degrees/bs-in-sports-management.html": 1,
+    "https://www.wvu.edu/academics/programs/sport-management-bs": 2,
+    "https://www.elon.edu/u/academics/communications/sport-management/": 0,
+    "https://catalog.drexel.edu/coursedescriptions/quarter/grad/smt/": 0,
+    "https://coe.uga.edu/academics/degrees/bsed-sport-management/": 2,
+    "https://www.stjohns.edu/academics/programs/sport-management-master-professional-studies": 2
+  },
+  "total_lists_per_url": {
+    "https://annescollege.fsu.edu/sm": 2,
+    "https://tl.ehe.osu.edu/academics/curriculum/sport-management-phd": 5,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/sport-management": 6,
+    "https://www.kines.umich.edu/academics/sport-management/undergraduate": 2,
+    "https://education.utexas.edu/departments/kinesiology-health-education/khe-programs/sport-management/": 3,
+    "http://hhp.ufl.edu/academics/phd/spm-phd/": 6,
+    "https://coe.uga.edu/academics/concentrations/sport-management/": 4,
+    "https://kin.umn.edu/undergraduate/sports-management-bs": 10,
+    "https://courses.syracuse.edu/undergraduate/majors/sport-management-bs/": 11,
+    "https://www.troy.edu/academics/academic-programs/graduate/sport-management-phd.html": 1,
+    "https://www.kines.umich.edu/academics/sport-management": 7,
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGHHU/SPM_BSSP/": 7,
+    "https://www.sps.nyu.edu/homepage/academics/bachelors-degrees/bs-in-sports-management.html": 4,
+    "https://www.wvu.edu/academics/programs/sport-management-bs": 15,
+    "https://www.elon.edu/u/academics/communications/sport-management/": 2,
+    "https://catalog.drexel.edu/coursedescriptions/quarter/grad/smt/": 2,
+    "https://coe.uga.edu/academics/degrees/bsed-sport-management/": 5,
+    "https://www.stjohns.edu/academics/programs/sport-management-master-professional-studies": 6
+  },
+  "verified_lists_ids": {
+    "https://annescollege.fsu.edu/sm": [
+      0,
+      1
+    ],
+    "https://tl.ehe.osu.edu/academics/curriculum/sport-management-phd": [
+      2
+    ],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/sport-management": [
+      1
+    ],
+    "https://www.kines.umich.edu/academics/sport-management/undergraduate": [],
+    "https://education.utexas.edu/departments/kinesiology-health-education/khe-programs/sport-management/": [],
+    "http://hhp.ufl.edu/academics/phd/spm-phd/": [],
+    "https://coe.uga.edu/academics/concentrations/sport-management/": [
+      0,
+      1
+    ],
+    "https://kin.umn.edu/undergraduate/sports-management-bs": [
+      1,
+      5,
+      6
+    ],
+    "https://courses.syracuse.edu/undergraduate/majors/sport-management-bs/": [
+      8,
+      9
+    ],
+    "https://www.troy.edu/academics/academic-programs/graduate/sport-management-phd.html": [
+      0
+    ],
+    "https://www.kines.umich.edu/academics/sport-management": [
+      0
+    ],
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGHHU/SPM_BSSP/": [
+      0,
+      5
+    ],
+    "https://www.sps.nyu.edu/homepage/academics/bachelors-degrees/bs-in-sports-management.html": [
+      1
+    ],
+    "https://www.wvu.edu/academics/programs/sport-management-bs": [
+      1,
+      5
+    ],
+    "https://www.elon.edu/u/academics/communications/sport-management/": [],
+    "https://catalog.drexel.edu/coursedescriptions/quarter/grad/smt/": [],
+    "https://coe.uga.edu/academics/degrees/bsed-sport-management/": [
+      1,
+      3
+    ],
+    "https://www.stjohns.edu/academics/programs/sport-management-master-professional-studies": [
+      1,
+      2
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 98,
+  "url_to_lists": {
+    "https://annescollege.fsu.edu/sm": [
+      [
+        "Legal & Policy Issues in Sport",
+        "Sport Economics/Finance",
+        "Sport Marketing",
+        "Sport Media & Culture Studies"
+      ],
+      [
+        "Main Navigation",
+        "Social Media",
+        "Footer",
+        "Legal"
+      ]
+    ],
+    "https://tl.ehe.osu.edu/academics/curriculum/sport-management-phd": [
+      [
+        "KNHES 6892 Foundations of Scientific Writing in Kinesiology\u00a0(3)",
+        "KNPE 7860 The Art of College Teaching within the Human Sciences (3)",
+        "KNPE 8865 Social Justice in Kinesiology (3)"
+      ],
+      [
+        "ESQREM 6641 Introduction to Educational Statistics (4)",
+        "ESQREM 6661 Introduction to Educational Measurement (3)",
+        "ESQREM 7627 Sampling Designs and Survey Research Methods (3)",
+        "ESQREM 7631 Applied Evaluation Design (3)",
+        "ESQREM 7635 Advanced Research Methods (3)",
+        "ESQREM 7643 Categorical Data Analysis (3)",
+        "ESQREM 7648 GLM I: Introduction to Regression and ANOVA\u00a0(4)",
+        "ESQREM 7651 Regression Analysis (3)",
+        "ESQREM 7661 Instrument Construction (3)",
+        "ESQREM 8648 Multivariate Analysis (3)",
+        "ESQREM 8657 Factor and Cluster Analyses (3)",
+        "ESQREM 8658 Applied Multilevel Data Analysis (3)",
+        "ESQREM 8659 Structural Equation Modeling (3)",
+        "ESQREM 8674 Scaling and Item Response Theory (3)",
+        "KNHES 6891 Kinesiology Graduate Core Course I (3)"
+      ],
+      [
+        "KNSISM 6807 Sport Law (3)",
+        "KNSISM 6809 Sport Marketing (3)",
+        "KNSISM 7897 Colloquium in Sport Management (12; repeatable)",
+        "KNSISM 7906 Understanding Sport Consumers: Theoretical Perspectives (3)",
+        "KNSISM 8951 Theoretical Approaches to Sport Organizations (6; repeatable)"
+      ],
+      [
+        "Ohio State nav bar",
+        "Secondary menu",
+        "Breadcrumb",
+        "Mobile Menu",
+        "Core Requirements (9 hours)",
+        "Research Core (choose three, minimum 9 hours)",
+        "Specialization Requirements (27 hours)",
+        "Flexibility Requirement (6 hours)",
+        "Exit Requirement (6 hours)"
+      ],
+      [
+        "Quantitative",
+        "Qualitative",
+        "Single Subject",
+        "Required Courses",
+        "Alternate\u00a0Courses (Electives)"
+      ]
+    ],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/sport-management": [
+      [
+        "General Bulletins",
+        "Graduate Departments",
+        "Graduate Department of Sport Management"
+      ],
+      [
+        "Main navigation Pulldown",
+        "Main navigation Pulldown",
+        "2024-2025 GRADUATE BULLETIN",
+        "Graduate Department of\u00a0Sport Management",
+        "Sport Management",
+        "Admissions",
+        "Definition of Prefixes",
+        "Graduate Courses",
+        "Looking for something else?"
+      ],
+      [
+        "College of Education, Health, and Human Sciences",
+        "Combined Bachelors/Master's Pathway",
+        "Master's Program",
+        "Doctoral Program",
+        "Graduate Bulletin",
+        "Undergraduate Bulletin",
+        "Mailing Address",
+        "Hours"
+      ],
+      [
+        "Graduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "Undergraduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "thesis track MS program consists of thirty",
+        "six credit hours; a thirty",
+        "hour thesis",
+        "level work."
+      ]
+    ],
+    "https://www.kines.umich.edu/academics/sport-management/undergraduate": [
+      [
+        "School Bulletin",
+        "SM BA Degree",
+        "Dual Degree: BBA/SM"
+      ],
+      [
+        "Sample SM Course Offerings",
+        "SM Record Sheets",
+        "Sample 4-Year Curriculum",
+        "Record Sheets",
+        "Sample 5-Year Curriculum"
+      ]
+    ],
+    "https://education.utexas.edu/departments/kinesiology-health-education/khe-programs/sport-management/": [
+      [
+        "Master of Education (M.Ed.) \u2013 On-Campus",
+        "Master of Science (M.S.) \u2013 On-Campus",
+        "Master of Education (M.Ed.) \u2013 Online"
+      ],
+      [
+        "Thomas M Hunt",
+        "Associate Professor",
+        "Examines the intersection of sport and international political history."
+      ],
+      [
+        "Emalee Nelson",
+        "Assistant Professor of Instruction",
+        "sport, American history, women's history"
+      ]
+    ],
+    "http://hhp.ufl.edu/academics/phd/spm-phd/": [
+      [
+        "Dr. Yonghwan Chang",
+        "Dr. Dan Connaughton",
+        "Dr. Molly Harry",
+        "Dr. Jasamine Hill",
+        "Dr. Gidon Jakar",
+        "Dr. Kyriaki Kaplanidou",
+        "Dr. Yong Jae Ko",
+        "Dr. Christopher McLeod",
+        "Dr. Christine Wegner"
+      ],
+      [
+        "Competitive TOEFL scores (if applicable)",
+        "At least three letters of recommendation",
+        "Statement of Purpose",
+        "Compatibility of the applicant\u2019s background and interests with those of an available advisor"
+      ],
+      [
+        "Core: 15 credits",
+        "Research: 27 credits",
+        "Statistics: 9 credits",
+        "Outside Concentration: 9 credits"
+      ],
+      [
+        "Obtain a 3.0 GPA overall and in major courses.",
+        "Register for the minimum requirements.",
+        "Resolve any financial or academic holds.",
+        "Graduation Checklist"
+      ],
+      [
+        "Curriculum",
+        "Course Planning",
+        "Transfer of Credit",
+        "Research Courses",
+        "Qualifying Examinations",
+        "Admission to Candidacy",
+        "Dissertation Proposal",
+        "Final Semester Registration",
+        "Dissertation and Final Examination",
+        "Graduation Requirements",
+        "Clear Prior",
+        "Leave of Absence",
+        "SPM PhD Program Forms"
+      ],
+      [
+        "1. The academic record of the student (all grades B- or higher with a minimum",
+        "2. Passing a qualifying examination",
+        "3. A supervisory committee approved dissertation topic",
+        "4. The supervisory committee\u2019s opinion on overall readiness of the candidacy"
+      ]
+    ],
+    "https://coe.uga.edu/academics/concentrations/sport-management/": [
+      [
+        "Marketing and Consumer Behavior",
+        "Economics",
+        "Finance",
+        "Research and Analytics",
+        "Legal and Ethical Issues",
+        "Organizational Behavior",
+        "Sales and Strategy",
+        "Sport Policy and Governance",
+        "Risk Management"
+      ],
+      [
+        "Sport Economics and Policy",
+        "Sport Marketing",
+        "Sport Event Management",
+        "Managing the Legal Aspects of Sport",
+        "Social Aspects of Sport",
+        "Sport Finance",
+        "Sport Policy and Governance",
+        "Philosophy and Ethics in Sport",
+        "Sport Organizational Behavior",
+        "Introduction to Sports Analytics"
+      ],
+      [
+        "Double DawgsCombined Bachelor's and Master's Degrees",
+        "Bachelor of Science in Education (BSEd)",
+        "Minors",
+        "Master of Science (MS)",
+        "Doctor of Philosophy (PhD)",
+        "Sample SM Course Offerings",
+        "Recruit Sport Management Interns"
+      ],
+      [
+        "Thomas Alexander Baker\nProfessor",
+        "Jaime Caperton\nAcademic Advisor",
+        "Jepkorir Rose Chepyator-Thomson\nProfessor",
+        "Clay Collins\nAssistant Professor",
+        "Brody Couch\nSport Management Academic Support Specialist",
+        "Lauren Flowers\nSenior Academic Advisor",
+        "Becca Leopkey\nAssociate Professor",
+        "Grace Little\nAcademic Advisor II",
+        "Teresa McClure\nAcademic Advisor",
+        "Steven Salaga\nAssociate Professor",
+        "David Schmidt\nInstructor",
+        "Michael Slonaker\nInstructor",
+        "Julian Williams\nCo-Director",
+        "James Jianhui Zhang\nProfessor"
+      ]
+    ],
+    "https://kin.umn.edu/undergraduate/sports-management-bs": [
+      [
+        "Account management",
+        "Community relations",
+        "Facilities management",
+        "Recreation director",
+        "Sales and marketing"
+      ],
+      [
+        "SMGT 3111 - Sports Facility and Event Management",
+        "SMGT 3143 - Organization and Management of Sport",
+        "SMGT 3421 - Business of Sport",
+        "SMGT 3501 - Sport in a Diverse Society",
+        "SMGT 3601 - Ethics and Values in Sport",
+        "SMGT 3631 - Sport Marketing",
+        "SMGT 3861 - Sport Law",
+        "SMGT 3826 - Research Methods in Sport Management",
+        "SMGT 3881W - Senior Seminar in Sport Management",
+        "SMGT 3996 - Practicum: The Sport Experience"
+      ],
+      [
+        "SMGT 3632 - Sports Sales and Fundraising",
+        "SMGT 3141 Contemporary Esport Management",
+        "KIN 5321 - International Sport: The Impact of the Olympic Games",
+        "KIN 5461 - Issues in the Sports Industry",
+        "ACCT 2051 - Introduction to financial reporting",
+        "OLPD 4401 - E-marketing",
+        "COMM 3201 - Introduction to Electronic Media Production",
+        "ABUS 4022W - Management in Organizations"
+      ],
+      [
+        "Pickleball",
+        "Soccer",
+        "Tennis",
+        "Marathon training",
+        "Scuba and skin diving",
+        "Self defense"
+      ],
+      [
+        "Game day experience",
+        "Membership services",
+        "Facility management",
+        "Equipment manager",
+        "Event planning",
+        "Ticket sales",
+        "Community recreation"
+      ],
+      [
+        "Sport Management Association",
+        "Sport Analytics Club",
+        "Sports Law Association",
+        "Ad Club"
+      ],
+      [
+        "Sport management",
+        "Curriculum and coursework",
+        "Student experiences and support",
+        "School of Kinesiology"
+      ],
+      [
+        "Sample plan",
+        "Inside the classroom",
+        "Outside the classroom",
+        "Quote from Amanda Rodriguez",
+        "Quote from Marlo Mosley",
+        "Quote from Tristen Ruesch",
+        "For Students, Faculty, and Staff"
+      ],
+      [
+        "Core courses",
+        "Focus electives",
+        "Physical activity courses"
+      ],
+      [
+        "Directed study",
+        "Field experience",
+        "Student organizations",
+        "Study abroad"
+      ]
+    ],
+    "https://courses.syracuse.edu/undergraduate/majors/sport-management-bs/": [
+      [
+        "WRT 105\u00a0-\u00a0WRT 105 - Studio 1: Practices of Academic Writing",
+        "WRT 205\u00a0-\u00a0WRT 205 - Studio 2: Critical Research and Writing",
+        "WRT 307\u00a0-\u00a0Advanced Writing Studio: Professional Writing",
+        "CRS 325\u00a0-\u00a0Presentational Speaking"
+      ],
+      [
+        "MAT 221\u00a0-\u00a0Elementary Probability and Statistics I",
+        "MAT 284\u00a0-\u00a0Business Calculus",
+        "MAX 201\u00a0-\u00a0Quantitative Methods for the Social Sciences"
+      ],
+      [
+        "ECN 101\u00a0-\u00a0Introductory Microeconomics",
+        "ECN 102\u00a0-\u00a0Introductory Macroeconomics",
+        "Social Science elective (6 credits)"
+      ],
+      [
+        "SPM 201\u00a0-\u00a0Professional Development in Sport Management",
+        "SPM 205\u00a0-\u00a0Principles and Contemporary Issues in Sport Management",
+        "SPM 215\u00a0-\u00a0Principles of Sales in Sport",
+        "SPM 225\u00a0-\u00a0Managing the Sport Organization",
+        "SPM 245\u00a0-\u00a0Race, Gender, and Diversity in Sport Organizations",
+        "SPM 325\u00a0-\u00a0Sport Communications",
+        "SPM 345\u00a0-\u00a0Technology in Sport Management",
+        "SPM 365\u00a0-\u00a0Sport Economics",
+        "SPM 395\u00a0-\u00a0Psycho-Social Issues of Sport",
+        "SPM 415\u00a0-\u00a0Sport Law",
+        "SPM 444\u00a0-\u00a0Sports Marketing Management",
+        "SPM 455\u00a0-\u00a0Senior Sport Management Capstone"
+      ],
+      [
+        "Course Catalog",
+        "Student Learning Outcomes",
+        "Program Requirements",
+        "Total Credits: 125"
+      ],
+      [
+        "Description",
+        "Intra University Transfer",
+        "Communication Skills (12 credits)",
+        "Quantitative Skills (11 credits)",
+        "Natural Science (4 credits)",
+        "Foreign Language/Humanities Requirement (12 credits)",
+        "Social Science Division (12 credits)",
+        "Additional Liberal Arts Courses (6 credits)",
+        "University Requirement (1 credit)",
+        "General Skills (6 credits)",
+        "Program Requirements (43 credits)",
+        "Sport Management Degree Requirements"
+      ],
+      [
+        "Gina Pauline, Undergraduate Program Director",
+        "402 MacNaughton Hall\n315-443-2630\ngapaulin@syr.edu",
+        "Description",
+        "The application is available on the Department of Sport Management website."
+      ],
+      [
+        "402 MacNaughton Hall",
+        "315-443-2630",
+        "gapaulin@syr.edu"
+      ],
+      [
+        "1. Explain, discuss, and analyze core areas of sport management.",
+        "3. Demonstrate the ability to use sport management concepts in written and oral communication.",
+        "4. Classify technology appropriate for use in the sport industry.",
+        "5. Develop critical thinking and problem-solving skills necessary for careers in the sport industry.",
+        "6. Integrate\u00a0the knowledge and skills learned in the core content areas to professional settings."
+      ],
+      [
+        "Natural Science (4 credits)Natural Science (must include a lab) (4 credits)",
+        "Additional Liberal Arts Courses (6 credits)",
+        "General Skills (6 credits)ACC 201\u00a0-\u00a0Essentials of AccountingFIN 301\u00a0-\u00a0Essentials of Finance"
+      ],
+      [
+        "Syracuse University",
+        "2024-2025 Undergraduate Course Catalog",
+        "All catalogs \u00a9 2025 Syracuse University. Powered by Modern Campus Catalog\u2122."
+      ]
+    ],
+    "https://www.troy.edu/academics/academic-programs/graduate/sport-management-phd.html": [
+      [
+        "Sport marketing",
+        "Consumer behavior in sports",
+        "Sport pedagogy",
+        "Organizational behavior",
+        "Sport ethics",
+        "Sporting event management",
+        "Sports wagering",
+        "Sportsmanship",
+        "Legal aspects of sport",
+        "Sport analytics",
+        "Global sport",
+        "Disability sport"
+      ]
+    ],
+    "https://www.kines.umich.edu/academics/sport-management": [
+      [
+        "Utility",
+        "Site Search",
+        "Main navigation",
+        "Main navigation",
+        "Degrees",
+        "Social"
+      ],
+      [
+        "rgb(0,39,76)",
+        "rgb(254,254,255)",
+        "rgb(255,203,5)"
+      ],
+      [
+        "SoK Spotlights",
+        "Lindsey LaForest (SM '19)",
+        "Lecturer at SoK and associate attorney at Dawda, Mann, Mulcahy & Sadler"
+      ],
+      [
+        "SoK Spotlights",
+        "Jon Paley (SM '95)",
+        "The Vault NYC managing partner and SoK's \u201cEvery Move Matters\u201d campaign committee chair"
+      ],
+      [
+        "69%\nEmployed Full-Time\nUndergraduate Class of 2022; 90% reporting (110 graduates)",
+        "24%\nContinuing Education",
+        "7%\nEmployed Part-Time / Internship / Service"
+      ],
+      [
+        "research-court-lines\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCenter for Race & Ethnicity in Sport",
+        "rgb(255,203,5)",
+        "rgb(19,21,22)",
+        "rgb(0,39,76)"
+      ],
+      [
+        "rgb(254,254,255)",
+        "rgb(19,21,22)",
+        "rgb(0,39,76)"
+      ]
+    ],
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGHHU/SPM_BSSP/": [
+      [
+        "Combination Degrees",
+        "Sport and Entertainment Law and Risk Management Certificate",
+        "Sport Management",
+        "Sport Management Certificate",
+        "Sport Management UF Online"
+      ],
+      [
+        "Complete 2 additional critical-tracking course",
+        "2.2 GPA required for all critical-tracking courses",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Complete 1 additional critical-tracking course",
+        "2.2 GPA required for all critical-tracking courses",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Complete all 6 critical-tracking course",
+        "2.2 GPA required for all critical-tracking courses",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Catalog",
+        "Semester 1",
+        "Semester 2",
+        "Semester 3",
+        "Semester 4",
+        "Semester 5",
+        "Semester 6",
+        "Semester 7",
+        "Semester 8",
+        "Before Graduating Students Must",
+        "Students in the Major Will Learn to",
+        "Assessment Types",
+        "Resources",
+        "Helpful Links",
+        "Connect",
+        "Print Options"
+      ],
+      [
+        "Curriculum",
+        "Content",
+        "Critical Thinking",
+        "Communication"
+      ],
+      [
+        "Courses",
+        "SPM\u00a02000",
+        "SPM\u00a03012",
+        "SPM\u00a03306",
+        "SPM\u00a04154",
+        "SPM\u00a04515",
+        "SPM\u00a04723",
+        "SPM\u00a04940"
+      ]
+    ],
+    "https://www.sps.nyu.edu/homepage/academics/bachelors-degrees/bs-in-sports-management.html": [
+      [
+        "NYU SPS Home",
+        "Academics",
+        "Bachelors Degrees",
+        "BS in Sport Management"
+      ],
+      [
+        "National Sport",
+        "Mandalay Pictures",
+        "National Women's Hockey League",
+        "NY Red Bulls",
+        "NYCFC"
+      ],
+      [
+        "Passion FC",
+        "PGA/LPGA",
+        "Playbook & NYC Sports",
+        "Street Soccer USA",
+        "United States Tennis Association",
+        "Vayner Sports",
+        "Wasserman",
+        "WNBA Players Association"
+      ],
+      [
+        "Degree Advantage",
+        "Curriculum and Degree Requirements",
+        "Who Should Earn the BS in Sport Management?",
+        "Matthew Kovitz \u201820",
+        "Internships and Job Opportunities",
+        "FREQUENTLY ASKED QUESTIONS"
+      ]
+    ],
+    "https://www.wvu.edu/academics/programs/sport-management-bs": [
+      [
+        "Coursework",
+        "Popular Courses",
+        "Enhance Your Degree",
+        "Plan of Study"
+      ],
+      [
+        "African Sport Management Association",
+        "Latin American Association for Sport Management",
+        "North American Society for Sport Management",
+        "North American Society for the Sociology of Sport",
+        "Sport Marketing Association"
+      ],
+      [
+        "Gaining Opportunity for Athletic Leadership",
+        "Adventure",
+        "Air Force ROTC",
+        "Army ROTC",
+        "Global",
+        "Honors",
+        "True Colors Community"
+      ],
+      [
+        "Career Profiles",
+        "How We Prepare You",
+        "Graduate School Options"
+      ],
+      [
+        "East Jefferson YMCA, Metairie, LA: Board of Governors Member \u2013 Board Chair",
+        "NCAA Accelerating Academic Success Program (AASP) Selection Committee Member",
+        "Williamson (WV) High School Athletic Hall of Fame Member"
+      ],
+      [
+        "Intro",
+        "SM 137:Sport Event Management",
+        "SM 287:Contemporary Issues in Sport Management",
+        "SM 370:Sport Finance and Economics",
+        "SM 375:Sport in the Global Market",
+        "SM 485:Management of Sport Organizations",
+        "SM 486:Sport Marketing and Sales",
+        "Accelerated Program",
+        "Honors",
+        "General and Operations Managers",
+        "Marketing Managers",
+        "Public Relations Managers",
+        "Compliance Managers",
+        "Recreation and Fitness Studies Teachers, Postsecondary",
+        "Coaches and Scouts",
+        "Umpires, Referees and Other Sports Officials",
+        "Public Relations Specialists",
+        "Where our grads are studying and working",
+        "Further your education",
+        "Gonzalo Bravo",
+        "Patrick O. Hairston",
+        "Cindy Lee",
+        "Gary J. Lhotsky",
+        "Justin Wartella",
+        "Joni Williamson",
+        "Request Info",
+        "Visit",
+        "Apply"
+      ],
+      [
+        "Tuition and Fees",
+        "Scholarships",
+        "Net Price Calculator",
+        "Ways to Save"
+      ],
+      [
+        "Has a Bright Outlook",
+        "Median Salary:  $101,280",
+        "Explore Career"
+      ],
+      [
+        "Has a Bright Outlook",
+        "Median Salary:  $157,620",
+        "Explore Career"
+      ],
+      [
+        "Has a Bright Outlook",
+        "Median Salary:  $134,760",
+        "Explore Career"
+      ],
+      [
+        "May require a Graduate Degree",
+        "Median Salary:  $75,770",
+        "Explore Career"
+      ],
+      [
+        "Has a Bright Outlook",
+        "Median Salary:  $45,910",
+        "Possible job titles include: Baseball Coach, Basketball Coach, Coach, Football Coach.",
+        "Explore Career"
+      ],
+      [
+        "Has a Bright Outlook",
+        "Median Salary:  $35,820",
+        "Explore Career"
+      ],
+      [
+        "Has a Bright Outlook",
+        "Median Salary:  $66,750",
+        "Explore Career"
+      ],
+      [
+        "and boost your credentials",
+        "with our four",
+        "year Accelerated Bachelor\u2019s/Master\u2019s Degree Program."
+      ]
+    ],
+    "https://www.elon.edu/u/academics/communications/sport-management/": [
+      [
+        "What is Sport Management?\nFind out at Elon University",
+        "Why Study Sport Management at Elon?",
+        "Studying Sport Management at Elon University"
+      ],
+      [
+        "Sport Management B.S.",
+        "Sport Management Minor",
+        "Mission Statement",
+        "Department Chair"
+      ]
+    ],
+    "https://catalog.drexel.edu/coursedescriptions/quarter/grad/smt/": [
+      [
+        "Colleges and Schools",
+        "Majors",
+        "Minors",
+        "Graduate Programs",
+        "Certificate Programs",
+        "Archive"
+      ],
+      [
+        "Term Master Schedule WebTMS",
+        "All Course Descriptions",
+        "Co-op",
+        "Advising",
+        "Admissions",
+        "Tuition & Fees"
+      ]
+    ],
+    "https://coe.uga.edu/academics/degrees/bsed-sport-management/": [
+      [
+        "Professional sport teams",
+        "College athletic departments",
+        "Sport marketing and public relations firms",
+        "Sports agencies",
+        "Health and fitness facilities"
+      ],
+      [
+        "Sport Economics and Policy",
+        "Sport Marketing",
+        "Sport Event Management",
+        "Managing the Legal Aspects of Sport",
+        "Social Aspects of Sport",
+        "Sport Finance",
+        "Sport Policy and Governance",
+        "Philosophy and Ethics in Sport",
+        "Sport Organizational Behavior",
+        "Introduction to Sports Analytics",
+        "Sport Sales, Fundraising, and Revenue Generation"
+      ],
+      [
+        "39 hours of required coursework covering the foundations listed above",
+        "12 hours of major-related electives",
+        "6 hours of general electives",
+        "At least 3 practicum hours, with the possibility for 3 more through elective choices"
+      ],
+      [
+        "Communication and public relations",
+        "Entertainment Law",
+        "Journalism and media",
+        "Kinesiology",
+        "Sports management history and issues including diversity and gender",
+        "Business (Marketing, Finance, Management, MSIT, Entrepreneurship)"
+      ],
+      [
+        "2024 Four",
+        "Year Plan (PDF)",
+        "2025 Four",
+        "Year Plan (PDF)"
+      ]
+    ],
+    "https://www.stjohns.edu/academics/programs/sport-management-master-professional-studies": [
+      [
+        "Academics",
+        "Majors and Programs of Study",
+        "Sport Management, Master of Professional Studies"
+      ],
+      [
+        "Social/Psychological Aspects of Sport",
+        "Sport Science: Coaching for Optimal Performance",
+        "Sport Science: Techniques and Analysis",
+        "Event & Venue Administration: International Perspectives",
+        "Sport Marketing: International Perspectives",
+        "Power, Politics, and International Sport Governance"
+      ],
+      [
+        "Event & Venue Administration: International Perspectives",
+        "Sport Marketing: International Perspectives",
+        "Power, Politics, and International Sport Governance"
+      ],
+      [
+        "COURSE # (Old/New)",
+        "SPG\u00a0 301/601",
+        "SPG\u00a0 302/602",
+        "SPG\u00a0 304/603",
+        "SPG\u00a0 305/604",
+        "SPG\u00a0 306/605",
+        "SPG\u00a0 401/606",
+        "SPG\u00a0 312/901"
+      ],
+      [
+        "COURSE # (Old/New)",
+        "SPG\u00a0 307/721",
+        "SPG\u00a0 308/722",
+        "SPG\u00a0 309/723",
+        "SPG\u00a0 310/731",
+        "SPG\u00a0 311/732",
+        "SPG\u00a0 313/733",
+        "SPG\u00a0 314/751",
+        "SPG\u00a0 315/752",
+        "SPG\u00a0 316/753",
+        "SPG\u00a0 318/754",
+        "SPG\u00a0 317/755",
+        "SPG\u00a0 319/756",
+        "SPG\u00a0 402/791",
+        "SPG\u00a0 403/792",
+        "SPG\u00a0 502/871",
+        "SPG\u00a0 503/872",
+        "SPG\u00a0 404/899"
+      ],
+      [
+        "Degree Type",
+        "Area of Interest",
+        "Associated Colleges or Schools",
+        "Program Location",
+        "Required Credit Hours"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 21:04:04"
+}

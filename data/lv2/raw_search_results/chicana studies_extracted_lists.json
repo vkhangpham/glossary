@@ -1,0 +1,860 @@
+{
+  "level1_term": "chicana studies",
+  "url_verification_status": {
+    "https://chi.ucdavis.edu/courses": false,
+    "https://ccsre.stanford.edu/academic-programs/chicanao-latinao-studies-program": false,
+    "https://aztlan.sdsu.edu/undergraduate/courses": false,
+    "https://chi.ucdavis.edu/": true,
+    "https://catalog.sjsu.edu/preview_program.php?catoid=15&poid=9469": false,
+    "https://catalog.fullerton.edu/preview_entity.php?catoid=75&ent_oid=8673&returnto=9873": false,
+    "https://www.chicst.ucsb.edu/graduate": false,
+    "https://aztlan.sdsu.edu/": false,
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-chicana-and-chicano-studies-7-2-2-2-2-2-2/": false,
+    "https://ascas.unm.edu/academics/department/chicana-chicano-studies.html": false,
+    "https://hss.fullerton.edu/chicano/academics/": false,
+    "https://catalog.miracosta.edu/disciplines/ccs/": false,
+    "https://www.csudh.edu/chicano/program/": true,
+    "https://ecatalog.calstatela.edu/preview_degree_planner.php?catoid=11&poid=3565&returnto=738&print": false,
+    "https://www.arizona.edu/degree-search/majors/gender-women-s-studies-chicana-and-latina-studies-emphasis": false,
+    "https://www.utep.edu/liberalarts/chicano/student-resources/why-chicano-studies.html": false,
+    "https://socialsciences.fresnostate.edu/clas/degrees/classes.html": false,
+    "https://www.pitzer.edu/chicanao-latina-o-transnational-studies": false
+  },
+  "verified_lists_per_url": {
+    "https://chi.ucdavis.edu/courses": 0,
+    "https://ccsre.stanford.edu/academic-programs/chicanao-latinao-studies-program": 0,
+    "https://aztlan.sdsu.edu/undergraduate/courses": 0,
+    "https://chi.ucdavis.edu/": 1,
+    "https://catalog.sjsu.edu/preview_program.php?catoid=15&poid=9469": 0,
+    "https://catalog.fullerton.edu/preview_entity.php?catoid=75&ent_oid=8673&returnto=9873": 0,
+    "https://www.chicst.ucsb.edu/graduate": 0,
+    "https://aztlan.sdsu.edu/": 0,
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-chicana-and-chicano-studies-7-2-2-2-2-2-2/": 0,
+    "https://ascas.unm.edu/academics/department/chicana-chicano-studies.html": 0,
+    "https://hss.fullerton.edu/chicano/academics/": 0,
+    "https://catalog.miracosta.edu/disciplines/ccs/": 0,
+    "https://www.csudh.edu/chicano/program/": 1,
+    "https://ecatalog.calstatela.edu/preview_degree_planner.php?catoid=11&poid=3565&returnto=738&print": 0,
+    "https://www.arizona.edu/degree-search/majors/gender-women-s-studies-chicana-and-latina-studies-emphasis": 0,
+    "https://www.utep.edu/liberalarts/chicano/student-resources/why-chicano-studies.html": 0,
+    "https://socialsciences.fresnostate.edu/clas/degrees/classes.html": 0,
+    "https://www.pitzer.edu/chicanao-latina-o-transnational-studies": 0
+  },
+  "total_lists_per_url": {
+    "https://chi.ucdavis.edu/courses": 7,
+    "https://ccsre.stanford.edu/academic-programs/chicanao-latinao-studies-program": 43,
+    "https://aztlan.sdsu.edu/undergraduate/courses": 5,
+    "https://chi.ucdavis.edu/": 2,
+    "https://catalog.sjsu.edu/preview_program.php?catoid=15&poid=9469": 12,
+    "https://catalog.fullerton.edu/preview_entity.php?catoid=75&ent_oid=8673&returnto=9873": 4,
+    "https://www.chicst.ucsb.edu/graduate": 5,
+    "https://aztlan.sdsu.edu/": 1,
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-chicana-and-chicano-studies-7-2-2-2-2-2-2/": 2,
+    "https://ascas.unm.edu/academics/department/chicana-chicano-studies.html": 5,
+    "https://hss.fullerton.edu/chicano/academics/": 1,
+    "https://catalog.miracosta.edu/disciplines/ccs/": 3,
+    "https://www.csudh.edu/chicano/program/": 1,
+    "https://ecatalog.calstatela.edu/preview_degree_planner.php?catoid=11&poid=3565&returnto=738&print": 3,
+    "https://www.arizona.edu/degree-search/majors/gender-women-s-studies-chicana-and-latina-studies-emphasis": 1,
+    "https://www.utep.edu/liberalarts/chicano/student-resources/why-chicano-studies.html": 1,
+    "https://socialsciences.fresnostate.edu/clas/degrees/classes.html": 2,
+    "https://www.pitzer.edu/chicanao-latina-o-transnational-studies": 2
+  },
+  "verified_lists_ids": {
+    "https://chi.ucdavis.edu/courses": [],
+    "https://ccsre.stanford.edu/academic-programs/chicanao-latinao-studies-program": [],
+    "https://aztlan.sdsu.edu/undergraduate/courses": [],
+    "https://chi.ucdavis.edu/": [
+      0
+    ],
+    "https://catalog.sjsu.edu/preview_program.php?catoid=15&poid=9469": [],
+    "https://catalog.fullerton.edu/preview_entity.php?catoid=75&ent_oid=8673&returnto=9873": [],
+    "https://www.chicst.ucsb.edu/graduate": [],
+    "https://aztlan.sdsu.edu/": [],
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-chicana-and-chicano-studies-7-2-2-2-2-2-2/": [],
+    "https://ascas.unm.edu/academics/department/chicana-chicano-studies.html": [],
+    "https://hss.fullerton.edu/chicano/academics/": [],
+    "https://catalog.miracosta.edu/disciplines/ccs/": [],
+    "https://www.csudh.edu/chicano/program/": [
+      0
+    ],
+    "https://ecatalog.calstatela.edu/preview_degree_planner.php?catoid=11&poid=3565&returnto=738&print": [],
+    "https://www.arizona.edu/degree-search/majors/gender-women-s-studies-chicana-and-latina-studies-emphasis": [],
+    "https://www.utep.edu/liberalarts/chicano/student-resources/why-chicano-studies.html": [],
+    "https://socialsciences.fresnostate.edu/clas/degrees/classes.html": [],
+    "https://www.pitzer.edu/chicanao-latina-o-transnational-studies": []
+  },
+  "num_urls": 40,
+  "num_lists": 100,
+  "url_to_lists": {
+    "https://chi.ucdavis.edu/courses": [
+      [
+        "Main navigation (extended config)",
+        "Welcome to the Department of Chicana/o Studies!",
+        "Course Descriptions"
+      ],
+      [
+        "Introduction to Chicana/o Studies\u00a0(4)Lecture",
+        "3 hour(s); Discussion",
+        "1 hour(s).\u00a0Analysis of the situation of the Chicana/o (Mexican"
+      ],
+      [
+        "Chicana and Chicano Representation in Cinema\u00a0(4)Lecture",
+        "3 hour(s); Discussion",
+        "1 hour(s); Film Viewing",
+        "2 hour(s).\u00a0Introductory"
+      ],
+      [
+        "Chicana/ Chicano Theoretical Perspective\u00a0(4)Lecture/Discussion",
+        "representation, and socio",
+        "cultural developments in the Chicana/o community.\u00a0GE credit:\u00a0ACGH,\u00a0DD,\u00a0SS,\u00a0WC,\u00a0WE."
+      ],
+      [
+        "Chicana/o Feminist Theoretical Understandings of K",
+        "20 Educational Disparities\u00a0(4)Lecture/Discussion",
+        "3 hour(s); Fieldwork.\u00a0Examination of educational disparities of the K",
+        "making."
+      ],
+      [
+        "United States",
+        "Mexican Border Relations\u00a0(4)Lecture",
+        "3 hour(s); Term Paper.\u00a0Prerequisite(s):\u00a0Upper division standing.\u00a0Theories of U.S."
+      ],
+      [
+        "Transforming Violence: Healing our Relations\u00a0Seminar",
+        "honoring and care",
+        "centered sacred relations through decolonizing, indigenous, and spirit",
+        "centered traditions and cosmologies."
+      ]
+    ],
+    "https://ccsre.stanford.edu/academic-programs/chicanao-latinao-studies-program": [
+      [
+        "CSRE101A: Indigeneity and Colonialism",
+        "CSRE101B: Institutions and Inequities",
+        "CSRE101C: Resistance and Liberation"
+      ],
+      [
+        "CSRE100: Intro to Comparative Studies in Race & Ethnicity",
+        "CHILATST100: Introduction to Latinx Studies",
+        "At least 4 additional Chicana/o-Latina/o Studies courses (20 units minimum)"
+      ],
+      [
+        "Academic Programs",
+        "Upcoming Events",
+        "Spotlight",
+        "Statement Reaffirming CCSRE\u2019s Academic Mission",
+        "Degree Requirements",
+        "Talk to a Peer Advisor",
+        "How to Declare",
+        "Affiliated Faculty",
+        "Alfredo J. Artiles",
+        "Asad L. Asad",
+        "H\u00e9ctor Hoyos",
+        "Tom\u00e1s Jim\u00e9nez",
+        "Ram\u00f3n Antonio Mart\u00ednez",
+        "Ana Raquel Minian",
+        "Paula M. L. Moya",
+        "Amado Padilla",
+        "Pedro A. Regalado",
+        "Jos\u00e9 David Sald\u00edvar",
+        "Ram\u00f3n  Sald\u00edvar",
+        "Rose Salseda",
+        "Emeriti Faculty",
+        "Albert Camarillo",
+        "Current Courses",
+        "Autumn Courses",
+        "Winter Courses",
+        "Spring Courses",
+        "Summer Courses",
+        "Quick Links",
+        "Support CCSRE",
+        "Connect with Us",
+        "Center for Comparative Studies in Race & Ethnicity"
+      ],
+      [
+        "1 Introductory course",
+        "1 Major Core Course",
+        "2 Comparative Core courses offering a foundation in race studies",
+        "1 Methodology course in a discipline of your choosing",
+        "1 Community-Engaged Learning course or preapproved project",
+        "1 Capstone course",
+        "Electives:"
+      ],
+      [
+        "Spotlight - Announcements",
+        "Statement Reaffirming CCSRE\u2019s Academic Mission",
+        "Dear CCSRE Community,"
+      ],
+      [
+        "Alfredo J. Artiles\n\n\n      Graduate School of Education",
+        "Asad L. Asad\n\n\n      Sociology",
+        "H\u00e9ctor Hoyos\n\n\n      Iberian and Latin American Cultures",
+        "Tom\u00e1s Jim\u00e9nez\n\n\n      Sociology",
+        "Ram\u00f3n Antonio Mart\u00ednez\n\n\n      Graduate School of Education",
+        "Ana Raquel Minian\n\n\n      History",
+        "Paula M. L. Moya\n\n\n      English",
+        "Amado Padilla\n\n\n      Graduate School of Education",
+        "Pedro A. Regalado\n\n\n      History",
+        "Jos\u00e9 David Sald\u00edvar\n\n\n      Comparative Literature",
+        "Ram\u00f3n  Sald\u00edvar\n\n\n      English",
+        "Rose Salseda\n\n\n      Art & Art History"
+      ],
+      [
+        "Title",
+        "Instructor",
+        "Quarter",
+        "Day, Time, Location"
+      ],
+      [
+        "CHILATST 1SI\nEnglish Language Learner Coaching and Curriculum Development",
+        "Miano, A. (PI)",
+        "2024 - 2025\nAutumn",
+        "Tuesday\n6:00 PM\n7:20 PM"
+      ],
+      [
+        "Tuesday",
+        "6:00 PM",
+        "7:20 PM"
+      ],
+      [
+        "CHILATST 77N\nInk and Resistance: Unraveling Latin American Narratives (COMPLIT 77N, ILAC 77N)",
+        "Pieck, R. (PI)",
+        "2024 - 2025\nAutumn",
+        "Tuesday Thursday\n12:00 PM\n1:20 PM"
+      ],
+      [
+        "Tuesday Thursday",
+        "12:00 PM",
+        "1:20 PM"
+      ],
+      [
+        "CHILATST 100\nIntroduction to Latinx Studies",
+        "Ramirez, M. (PI)",
+        "2024 - 2025\nAutumn",
+        "Monday Wednesday\n10:30 AM\n12:20 PM"
+      ],
+      [
+        "Monday Wednesday",
+        "10:30 AM",
+        "12:20 PM"
+      ],
+      [
+        "CHILATST 141\nLatinx Literature (ENGLISH 141)",
+        "Quintero, A. (PI)",
+        "2024 - 2025\nAutumn",
+        "Tuesday Thursday\n12:00 PM\n1:20 PM"
+      ],
+      [
+        "Tuesday Thursday",
+        "12:00 PM",
+        "1:20 PM"
+      ],
+      [
+        "CHILATST 173\nMexican Migration to the United States (AMSTUD 73, AMSTUD 173, HISTORY 73, HISTORY 173)",
+        "Minian Andjel, A. (PI)Panuco-Mercado, G. (TA)",
+        "2024 - 2025\nAutumn",
+        "Tuesday Thursday\n10:30 AM\n11:50 AM"
+      ],
+      [
+        "Tuesday Thursday",
+        "10:30 AM",
+        "11:50 AM"
+      ],
+      [
+        "CHILATST 271B\nUS Latinx History (AMSTUD 271B, HISTORY 271B)",
+        "Regalado, P. (PI)",
+        "2024 - 2025\nAutumn",
+        "Wednesday\n10:30 AM\n1:20 PM"
+      ],
+      [
+        "Wednesday",
+        "10:30 AM",
+        "1:20 PM"
+      ],
+      [
+        "CHILATST 338\nLatinx Art Beyond Museum Walls (ARTHIST 438)",
+        "Salseda, R. (PI)",
+        "2024 - 2025\nAutumn",
+        "Thursday\n1:30 PM\n4:20 PM"
+      ],
+      [
+        "Thursday",
+        "1:30 PM",
+        "4:20 PM"
+      ],
+      [
+        "Title",
+        "Instructor",
+        "Quarter",
+        "Day, Time, Location"
+      ],
+      [
+        "CHILATST 1SI\nEnglish Language Learner Coaching and Curriculum Development",
+        "Miano, A. (PI)",
+        "2024 - 2025\nWinter",
+        "Tuesday\n6:30 PM\n7:50 PM"
+      ],
+      [
+        "Tuesday",
+        "6:30 PM",
+        "7:50 PM"
+      ],
+      [
+        "CHILATST 19N\nThe Immigrant Experience in Everyday Life (CSRE 19N, SOC 19N)",
+        "Jimenez, T. (PI)",
+        "2024 - 2025\nWinter",
+        "Monday Wednesday\n9:30 AM\n11:20 AM"
+      ],
+      [
+        "Monday Wednesday",
+        "9:30 AM",
+        "11:20 AM"
+      ],
+      [
+        "CHILATST 130\nLatinx Geographies",
+        "Ramirez, M. (PI)",
+        "2024 - 2025\nWinter",
+        "Wednesday\n1:30 PM\n4:20 PM"
+      ],
+      [
+        "Wednesday",
+        "1:30 PM",
+        "4:20 PM"
+      ],
+      [
+        "Fishkin, S. (PI)",
+        "2024 - 2025\nWinter",
+        "Tuesday Thursday\n12:00 PM\n1:20 PM"
+      ],
+      [
+        "Tuesday Thursday",
+        "12:00 PM",
+        "1:20 PM"
+      ],
+      [
+        "Title",
+        "Instructor",
+        "Quarter",
+        "Day, Time, Location"
+      ],
+      [
+        "CHILATST 2SI\nIsthmian Imaginaries: (Re)Orienting Central America",
+        "Ramirez, M. (PI)",
+        "2024 - 2025\nSpring",
+        "Tuesday\n1:30 PM\n2:50 PM"
+      ],
+      [
+        "Tuesday",
+        "1:30 PM",
+        "2:50 PM"
+      ],
+      [
+        "CHILATST 113\nCrimmigration 101 (ASNAMST 111)",
+        "Dinh, T. (PI)Ramirez, M. (PI)",
+        "2024 - 2025\nSpring",
+        "Tuesday\n10:30 AM\n11:50 AM"
+      ],
+      [
+        "Tuesday",
+        "10:30 AM",
+        "11:50 AM"
+      ],
+      [
+        "CHILATST 132\nAnticolonial Feminisms",
+        "Ramirez, M. (PI)",
+        "2024 - 2025\nSpring",
+        "Thursday\n1:30 PM\n4:20 PM"
+      ],
+      [
+        "Thursday",
+        "1:30 PM",
+        "4:20 PM"
+      ],
+      [
+        "CHILATST 193B\nPeer Counseling in the Chicano/Latino Community (EDUC 193B)",
+        "Martinez, A. (PI)",
+        "2024 - 2025\nSpring",
+        "Monday\n4:30 PM\n5:20 PM"
+      ],
+      [
+        "Monday",
+        "4:30 PM",
+        "5:20 PM"
+      ],
+      [
+        "Alpert, J. (PI)",
+        "2024 - 2025\nSpring",
+        "Wednesday\n3:00 PM\n5:50 PM"
+      ],
+      [
+        "Wednesday",
+        "3:00 PM",
+        "5:50 PM"
+      ],
+      [
+        "Salseda, R. (PI)",
+        "2024 - 2025\nSpring",
+        "Thursday\n1:30 PM\n4:20 PM"
+      ],
+      [
+        "Thursday",
+        "1:30 PM",
+        "4:20 PM"
+      ]
+    ],
+    "https://aztlan.sdsu.edu/undergraduate/courses": [
+      [
+        "Lower Division",
+        "Upper Division",
+        "Important Links",
+        "Undergraduate Adviser"
+      ],
+      [
+        "301. Political Economy of the Chicano People (",
+        "3)Prerequisite: Completion of the General Education requirement in Foundations of Learning",
+        "110.\u00a0Political and economic roots of the oppression and exploitation of Chicana/o/xs from"
+      ],
+      [
+        "Mexican cultural heritage and US industrial",
+        "capitalist",
+        "cultural social science methodology."
+      ],
+      [
+        "375. US/Mexico Border History (",
+        "3)Prerequisite: Completion of the General Education requirement in Foundations of Learning",
+        "110.\u00a0Historical problems and movements in the US-Mexican border region, in particular those"
+      ],
+      [
+        "380. US/Mexico Borderlands Folklore (",
+        "3)Prerequisite: Completion of the General Education requirement in Foundations of Learning",
+        "110.\u00a0Border folklore, its complexities and dynamics via myths, rituals, legends, sayings,"
+      ]
+    ],
+    "https://chi.ucdavis.edu/": [
+      [
+        "We are hiring -- apply to be an Academic Community Counselor today!",
+        "Book Talk - New Chicana/o/x Studies Professor Maga\u00f1a",
+        "S\u00ed Se Puede Academic Success Institute",
+        "People",
+        "People",
+        "Program",
+        "Academics",
+        "Why Study",
+        "Why Study Chicana/o Studies"
+      ],
+      [
+        "Welcome to the Department of Chicana and Chicano Studies!",
+        "Welcome to the Department of Chicana and Chicano Studies!",
+        "Welcome to the Department of Chicana and Chicano Studies!",
+        "Welcome to the Department of Chicana and Chicano Studies!"
+      ]
+    ],
+    "https://catalog.sjsu.edu/preview_program.php?catoid=15&poid=9469": [
+      [
+        "CCS 125\u00a0-\u00a0Chicana/o Community Studies 3 unit(s)",
+        "CCS 135\u00a0-\u00a0Contemporary Chicana/o Issues 3 unit(s)",
+        "CCS 150\u00a0-\u00a0Research Methods 3 unit(s)",
+        "CCS 151\u00a0-\u00a0Theory in Chicana/o Studies 3 unit(s)",
+        "CCS 190\u00a0-\u00a0Chicana and Chicano Studies Capstone 3 unit(s)"
+      ],
+      [
+        "CCS 144\u00a0-\u00a0Chicana/o Literature 3 unit(s)",
+        "CCS 145\u00a0-\u00a0Chicana/o Folklife and Popular Culture 3 unit(s)",
+        "CCS 147\u00a0-\u00a0Music in Mexican America 3 unit(s)",
+        "CCS 152\u00a0-\u00a0The Story of Chicano Spanish 3 unit(s)",
+        "CCS 170\u00a0-\u00a0Chicana/Chicano Film 3 unit(s)"
+      ],
+      [
+        "CCS 115\u00a0-\u00a0Chicana/o Families 3 unit(s)",
+        "CCS 127\u00a0-\u00a0Chicanas/os and the Criminal Justice System 3 unit(s)",
+        "CCS 185\u00a0-\u00a0Teaching in a Diverse Society 3 unit(s)"
+      ],
+      [
+        "CCS 105\u00a0-\u00a0Chicanos: United States/Mexico Relations 3 unit(s)",
+        "CCS 120\u00a0-\u00a0Political Economy and Chicana/o Communities 3 unit(s)",
+        "CCS 175\u00a0-\u00a0Human Migrations: Global Reach 3 unit(s)"
+      ],
+      [
+        "University Requirements",
+        "Core Lower Division General Education (30 units)",
+        "Upper Division General Education (9 units)",
+        "American Institutions (6 units)",
+        "Physical Education (2 units)",
+        "Graduation Writing Assessment Requirement (3 units)",
+        "Major Requirements (40 units)",
+        "University Electives (30 units)",
+        "Total Units Required (120 units)"
+      ],
+      [
+        "Colleges",
+        "Resources",
+        "Chicana and Chicano Studies (6 units)",
+        "Lower Division Core (4 units)",
+        "Upper Division Core (15 units)",
+        "Additional Upper Division Courses (21 units)"
+      ],
+      [
+        "Cultural and Creative Expression",
+        "Institutions and Community Engagement",
+        "Transnationalism and Global Relations"
+      ],
+      [
+        "2024-2025 Academic Catalog",
+        "My Favorites",
+        "University Graduation Requirements",
+        "Major Requirements",
+        "University Electives",
+        "Total"
+      ],
+      [
+        "2024-2025 Academic Catalog",
+        "My Favorites",
+        "University Graduation Requirements",
+        "Major Requirements",
+        "University Electives",
+        "Total"
+      ],
+      [
+        "University Graduation Requirements",
+        "Major Requirements",
+        "University Electives",
+        "Total"
+      ],
+      [
+        "University Graduation Requirements",
+        "Major Requirements",
+        "University Electives",
+        "Total"
+      ],
+      [
+        "University Graduation Requirements",
+        "Major Requirements",
+        "University Electives",
+        "Total"
+      ]
+    ],
+    "https://catalog.fullerton.edu/preview_entity.php?catoid=75&ent_oid=8673&returnto=9873": [
+      [
+        "Master of Science in Education - Bilingual/Bicultural Concentration",
+        "Master of Arts in History - Chicana/Chicano Studies Concentration",
+        "Master of Arts in Spanish - Chicana/Chicano Studies Concentration"
+      ],
+      [
+        "CHIC 101 - Introduction to Ethnic Studies (3)",
+        "CHIC 102 - Communication Skills (3)",
+        "CHIC 105 - Introduction to U.S.-Central American Studies (3)",
+        "CHIC 106 - Introduction to Chicano Studies (3)",
+        "CHIC 190 - Survey of American History with Emphasis on Ethnic Minorities (3)",
+        "CHIC 201 - Chicana and Chicano Environmentalisms (3)",
+        "CHIC 220 - Chicana/o Identities (3)",
+        "CHIC 250 - Introduction to Multi-Ethnic Literatures of the U.S. (3)",
+        "CHIC 302 - Ancient Mexican Culture (3)",
+        "CHIC 303 - Chicano/Mexican Cultures (3)",
+        "CHIC 304 - Music of Mexico (3)",
+        "CHIC 305 - Chicana/o Families (3)",
+        "CHIC 306 - Barrio Studies (3)",
+        "CHIC 307 - Research and Writing in Ethnic Studies (3)",
+        "CHIC 313 - La Chicana (3)",
+        "CHIC 315 - Chicano/Latino Theatre (3)",
+        "CHIC 316 - The Chicano Music Experience (3)",
+        "CHIC 321 - Latina/o Intercultural Communication (3)",
+        "CHIC 325 - Chicana and Chicano Education (3)",
+        "CHIC 326 - Undocumented Youth in Education (3)",
+        "CHIC 330 - The Evolution of Mexican Literature (3)",
+        "CHIC 331 - The Chicano Child (3)",
+        "CHIC 332 - The Chicano Adolescent (3)",
+        "CHIC 333 - Mexican Literature Since 1940 (3)",
+        "CHIC 336 - Latin American Literature (3)",
+        "CHIC 337 - Contemporary Chicana/o Literature (3)",
+        "CHIC 338 - Barrios and Health (3)",
+        "CHIC 340 - Mexican/Chicano Intellectual Thought (3)",
+        "CHIC 345 - History of the Chicano (3)",
+        "CHIC 350 - Mexican Life and Culture (3)",
+        "CHIC 353 - Mexico Since 1906 (3)",
+        "CHIC 367 - Religion in Latino/a Life (3)",
+        "CHIC 369 - Border Cinema (3)",
+        "CHIC 450 - Seminar in Contemporary Chicana/o Issues (3)",
+        "CHIC 459 - Art History of the Ancient Americas (3)",
+        "CHIC 460 - The Chicano and Politics (3)",
+        "CHIC 462 - Latin American Art History: 1400 - Present (3)",
+        "CHIC 471 - Obesity, Policy and Hispanic Communities (3)",
+        "CHIC 477C - American Immigration History (3)",
+        "CHIC 480 - Chicanas/os and Immigrants (3)",
+        "CHIC 496 - Student to Student Tutorial (1-3)",
+        "CHIC 499 - Independent Study (1-3)",
+        "CHIC 500 - Chicana/Chicano Studies Paradigms and Traditions (3)",
+        "CHIC 599 - Independent Graduate Research (1-3)"
+      ],
+      [
+        "Additional Resources",
+        "Introduction",
+        "Degree Description",
+        "Learning Goals and Student Learning Outcomes",
+        "Graduate Study",
+        "Programs and Courses Offered",
+        "Programs",
+        "Courses"
+      ],
+      [
+        "centered teaching/mentoring, research and service that focuses on Chicana/o",
+        "and Latina/o",
+        "origin communities.",
+        "Bilingual/Bicultural Concentration",
+        "Chicana/Chicano Studies Concentration",
+        "Chicana/Chicano Studies Concentration"
+      ]
+    ],
+    "https://www.chicst.ucsb.edu/graduate": [
+      [
+        "Foreign Language",
+        "Teaching Experience",
+        "M.A. Comprehensive Exam (Late Summer)"
+      ],
+      [
+        "Main menu",
+        "Chicana and Chicano Studies Graduate Program",
+        "Degree Timeline",
+        "Graduate Advising",
+        "Graduate Student Campus Resources",
+        "Graduate Menu"
+      ],
+      [
+        "History and Narrativity",
+        "Cultural Production",
+        "Social Processes",
+        "Graduate Program Faculty Chair",
+        "Graduate Program Advisor",
+        "Career and Professional Development",
+        "Diversity and Inclusion",
+        "TA Resources"
+      ],
+      [
+        "D. In\u00e9s Casillas",
+        "casillas@ucsb.edu",
+        "Graduate Program Advisor\n\nKynedi Verrett\nkynediverrett@ucsb.edu",
+        "Main Office Hours:",
+        "Monday through Friday",
+        "9:00 AM - 12:00 PM and 1:00 PM - 4:00 PM"
+      ],
+      [
+        "Year 1",
+        "Year 2",
+        "Year 3",
+        "Year 4",
+        "Year 5-7",
+        "Year 7"
+      ]
+    ],
+    "https://aztlan.sdsu.edu/": [
+      [
+        "Major: CCS",
+        "Minors: CCS & Border Std.",
+        "Certificate Program",
+        "Graduate Program"
+      ]
+    ],
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-chicana-and-chicano-studies-7-2-2-2-2-2-2/": [
+      [
+        "Graduate Degrees",
+        "Master\u2019s Degree",
+        "Doctoral Degree"
+      ],
+      [
+        "unit requirement. One 500",
+        "series course (up to four units) may be applied toward the 40",
+        "unit requirement"
+      ]
+    ],
+    "https://ascas.unm.edu/academics/department/chicana-chicano-studies.html": [
+      [
+        "ASCAS Home",
+        "Academics",
+        "Departments & Programs",
+        "Chicana & Chicano Studies"
+      ],
+      [
+        "B.A. Chicana and Chicano Studies - Cultural Studies",
+        "B.A. Chicana and Chicano Studies - Intersectional Politics and Social Movements",
+        "B.A. Chicana and Chicano Studies - Transnational Perspectives"
+      ],
+      [
+        "Africana Studies",
+        "American Studies",
+        "Anthropology (Biological, Evolutionary, Forensic, Cultural) and Archaeology",
+        "Biochemistry",
+        "Biology",
+        "Chemistry & Chemical Biology",
+        "Chicana & Chicano Studies",
+        "Communication & Journalism",
+        "Earth & Planetary Sciences (Geological, Environmental, and Atmospheric Sciences)",
+        "Economics",
+        "English (Literature, Rhetoric, and Writing)",
+        "Geography & Environmental Studies",
+        "Health, Medicine & Human Values (BA/MD Program)",
+        "History",
+        "International Studies",
+        "Latin American Studies",
+        "Linguistics (includes American Sign Language and Navajo Language)",
+        "Mathematics & Statistics",
+        "Medieval Studies",
+        "Museum Studies",
+        "Native American Studies",
+        "Peace Studies",
+        "Philosophy and English-Philosophy",
+        "Physics & Astrophysics",
+        "Political Science",
+        "Pre-Law",
+        "Pre-Medicine",
+        "Psychology",
+        "Public Administration",
+        "Race & Social Justice",
+        "Religious Studies",
+        "Sociology & Criminology",
+        "Spanish & Portuguese",
+        "Speech & Hearing Sciences",
+        "Sustainability Studies",
+        "Women, Gender, and Sexuality Studies"
+      ],
+      [
+        "UNM on Facebook",
+        "UNM on Instagram",
+        "UNM on Twitter",
+        "UNM on YouTube"
+      ],
+      [
+        "Degrees:",
+        "Minors:",
+        "Online Degree Options:",
+        "Certificates Available:",
+        "Shared Undergraduate/Graduate Credit Programs Available:"
+      ]
+    ],
+    "https://hss.fullerton.edu/chicano/academics/": [
+      [
+        "Elementary Bilingual/Bicultural Education Concentration",
+        "Masters of Arts\u00a0 in History - Chicana/Chicano Studies",
+        "Masters of Arts in Spanish - Chicana/Chicano Studies Concentration"
+      ]
+    ],
+    "https://catalog.miracosta.edu/disciplines/ccs/": [
+      [
+        "2024-2025 Edition",
+        "Academic and Career Pathway",
+        "Courses",
+        "Campus Locations",
+        "Print Options"
+      ],
+      [
+        "Popular Resources",
+        "Explore",
+        "Compliance",
+        "Administrative",
+        "Follow Us"
+      ],
+      [
+        "certificate",
+        "programs/social",
+        "behavioral",
+        "sciences/sociology/index.html"
+      ]
+    ],
+    "https://www.csudh.edu/chicano/program/": [
+      [
+        "Program Description",
+        "Preparing for Chicana and Chicano Studies",
+        "Program Learning Outcomes"
+      ]
+    ],
+    "https://ecatalog.calstatela.edu/preview_degree_planner.php?catoid=11&poid=3565&returnto=738&print": [
+      [
+        "Option I: General Program (48 units)",
+        "Theme Clusters",
+        "Theme Clusters",
+        "Theme Clusters"
+      ],
+      [
+        "Lower Division Required Courses (6 units)",
+        "Lower Division Electives (9 units)",
+        "Upper Division Required Courses (15 units)",
+        "Upper Division Electives (18 units)",
+        "Popular Culture and Chicana/o Latina/o Literature",
+        "Social Policy",
+        "Politics and History",
+        "(120 units, of which 48 units are in the major)",
+        "Popular Culture and Chicana/o Latina/o Literature",
+        "Social Policy",
+        "Politics and History",
+        "Directed Electives (12 units)",
+        "Lower Division Required Courses (6 units)",
+        "Lower Division Electives (9 units)",
+        "Upper Division Required Courses (15 units)",
+        "Upper Division Electives (18 units)",
+        "Popular Culture and Chicana/o Latina/o Literature",
+        "Social Policy",
+        "Politics and History",
+        "Directed Electives (12 units)",
+        "Elective (0-1 unit)",
+        "Credential (32-41 units)",
+        "Preliminary Admission to a Teaching Credential Program",
+        "Teaching Credential Preparation",
+        "Select one of the following:"
+      ],
+      [
+        "Junior standing",
+        "Completion of Charter College of Education application materials, including any \u00a0fees",
+        "A minimum grade point average of 2.67 in all undergraduate coursework attempted",
+        "Official transcripts from all colleges attended",
+        "Proof of a negative TB test current within the last 12 months",
+        "Proficiency with technology",
+        "Strong and supportive letters of recommendation",
+        "A well written and meaningful Philosophy of Education Statement",
+        "Background clearance from the California Commission on Teacher Credentialing",
+        "Proof that all sections of the Multiple Subject CBEST examination have been \u00a0attempted"
+      ]
+    ],
+    "https://www.arizona.edu/degree-search/majors/gender-women-s-studies-chicana-and-latina-studies-emphasis": [
+      [
+        "Main navigation",
+        "Footer - Main",
+        "Information For",
+        "Topics",
+        "Resources",
+        "Connect"
+      ]
+    ],
+    "https://www.utep.edu/liberalarts/chicano/student-resources/why-chicano-studies.html": [
+      [
+        "College of Liberal Arts",
+        "Student Resources",
+        "Connect With Us",
+        "THE UNIVERSITY OF TEXAS AT EL PASO"
+      ]
+    ],
+    "https://socialsciences.fresnostate.edu/clas/degrees/classes.html": [
+      [
+        "1910).",
+        "century Mexican",
+        "American and Chicano"
+      ],
+      [
+        "readiness Category",
+        "Columbian period",
+        "systems, and their symbols are analyzed;"
+      ]
+    ],
+    "https://www.pitzer.edu/chicanao-latina-o-transnational-studies": [
+      [
+        "Border and Transnational Studies;",
+        "Education: Social Justice, Formation, and Critical Pedagogy;",
+        "Literature, Art, and Representation; and",
+        "Politics, Social Movements, and Labor."
+      ],
+      [
+        "Skip to main site navigation",
+        "Skip to main site navigation",
+        "Skip to main content"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 17:53:23"
+}

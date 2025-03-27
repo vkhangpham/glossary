@@ -1,0 +1,132 @@
+{
+  "arts": {
+    "term": "arts",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "arts",
+      "length": 4,
+      "has_letters": true
+    }
+  },
+  "business": {
+    "term": "business",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "business",
+      "length": 8,
+      "has_letters": true
+    }
+  },
+  "education": {
+    "term": "education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "education",
+      "length": 9,
+      "has_letters": true
+    }
+  },
+  "engineering": {
+    "term": "engineering",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "engineering",
+      "length": 11,
+      "has_letters": true
+    }
+  },
+  "health sciences": {
+    "term": "health sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "health sciences",
+      "length": 15,
+      "has_letters": true
+    }
+  },
+  "humanities": {
+    "term": "humanities",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "humanities",
+      "length": 10,
+      "has_letters": true
+    }
+  },
+  "law": {
+    "term": "law",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "law",
+      "length": 3,
+      "has_letters": true
+    }
+  },
+  "management": {
+    "term": "management",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "management",
+      "length": 10,
+      "has_letters": true
+    }
+  },
+  "medicine": {
+    "term": "medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "medicine",
+      "length": 8,
+      "has_letters": true
+    }
+  },
+  "natural sciences": {
+    "term": "natural sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "natural sciences",
+      "length": 16,
+      "has_letters": true
+    }
+  },
+  "nursing": {
+    "term": "nursing",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "nursing",
+      "length": 7,
+      "has_letters": true
+    }
+  },
+  "public health": {
+    "term": "public health",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "public health",
+      "length": 13,
+      "has_letters": true
+    }
+  },
+  "social sciences": {
+    "term": "social sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "social sciences",
+      "length": 15,
+      "has_letters": true
+    }
+  }
+}

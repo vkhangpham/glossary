@@ -1,0 +1,1218 @@
+{
+  "arts": {
+    "term": "arts",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 7,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Art",
+          "title": "Art",
+          "score": 4.06,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_arts",
+          "title": "The arts",
+          "score": 3.98,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Visual_arts",
+          "title": "Visual arts",
+          "score": 3.65,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/ARTS",
+          "title": "ARTS",
+          "score": 2.86,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://www.arts.gov/",
+          "title": "National Endowment for the Arts Home Page | National ...",
+          "score": 0.88,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.wikiart.org/",
+          "title": "WikiArt.org - Visual Art Encyclopedia",
+          "score": 0.48,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.mfa.org/",
+          "title": "Museum of Fine Arts Boston | Boston's Art Museum",
+          "score": 0.48,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The_arts",
+          "title": "The arts",
+          "score": 3.98,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Art",
+          "title": "Art",
+          "score": 4.06,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Visual_arts",
+          "title": "Visual arts",
+          "score": 3.65,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/ARTS",
+          "title": "ARTS",
+          "score": 2.86,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "business": {
+    "term": "business",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 7,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Business-to-business",
+          "title": "Business-to-business",
+          "score": 3.74,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Business",
+          "title": "Business",
+          "score": 2.79,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Business",
+          "title": "Business - Simple English Wikipedia, the free encyclopedia",
+          "score": 2.51,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://www.sba.gov/",
+          "title": "Small Business Administration",
+          "score": 1.31,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.businessinsider.com/",
+          "title": "Business Insider - Latest News in Tech, Markets, Economy ...",
+          "score": 0.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.quora.com/How-can-I-add-my-business-to-Wikipedia",
+          "title": "How can I add my business to Wikipedia?",
+          "score": 0.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2021/12/03/tips-for-getting-your-business-on-wikipedia/",
+          "title": "Tips For Getting Your Business On Wikipedia",
+          "score": 0.08,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Business",
+          "title": "Business",
+          "score": 2.79,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Business",
+          "title": "Business - Simple English Wikipedia, the free encyclopedia",
+          "score": 2.51,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Business-to-business",
+          "title": "Business-to-business",
+          "score": 3.74,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "education": {
+    "term": "education",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 9,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Education",
+          "title": "Education",
+          "score": 4.32,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Education",
+          "title": "Education - Simple English Wikipedia, the free encyclopedia",
+          "score": 4.31,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Education_in_the_United_States",
+          "title": "Education in the United States",
+          "score": 1.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.ed.gov/",
+          "title": "Home | U.S. Department of Education",
+          "score": 0.88,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-initiates-reduction-force",
+          "title": "U.S. Department of Education Initiates Reduction in Force",
+          "score": 0.88,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://dashboard.wikiedu.org/",
+          "title": "Wiki Education Dashboard",
+          "score": 0.94,
+          "relevance_score": 0.54
+        },
+        {
+          "url": "https://www.edweek.org/",
+          "title": "Education Week - K-12 education news and information",
+          "score": 0.48,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://wikiedu.org/",
+          "title": "Wiki Education – Wiki Education engages students and ...",
+          "score": 0.48,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.education.com/",
+          "title": "Education.com | #1 Educational Site for Pre-K to 8th Grade",
+          "score": 0.08,
+          "relevance_score": 0.53
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Education",
+          "title": "Education",
+          "score": 4.32,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Education",
+          "title": "Education - Simple English Wikipedia, the free encyclopedia",
+          "score": 4.31,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "engineering": {
+    "term": "engineering",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 9,
+      "verified_sources": [
+        {
+          "url": "https://simple.wikipedia.org/wiki/Engineering",
+          "title": "Engineering - Simple English Wikipedia, the free ...",
+          "score": 3.82,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Engineering",
+          "title": "Engineering",
+          "score": 3.1,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Engineer",
+          "title": "Engineer",
+          "score": 3.16,
+          "relevance_score": 0.92
+        },
+        {
+          "url": "https://www.twi-global.com/technical-knowledge/faqs/what-is-engineering",
+          "title": "What is Engineering? (Definition and Types) - TWI",
+          "score": 2.6,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.britannica.com/technology/engineering",
+          "title": "Engineering | Definition, History, Functions, & Facts",
+          "score": 2.56,
+          "relevance_score": 0.99
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://www.bls.gov/ooh/architecture-and-engineering/",
+          "title": "Architecture and Engineering Occupations",
+          "score": 1.45,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Engineering",
+          "title": "Category:Engineering",
+          "score": 1.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://engineering.fandom.com/wiki/Engineering_Wiki",
+          "title": "Engineering Wiki | Engineering | Fandom",
+          "score": 0.79,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.engineering.com/",
+          "title": "Engineering.com",
+          "score": 0.08,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Engineering",
+          "title": "Engineering",
+          "score": 3.1,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.twi-global.com/technical-knowledge/faqs/what-is-engineering",
+          "title": "What is Engineering? (Definition and Types) - TWI",
+          "score": 2.6,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Engineering",
+          "title": "Engineering - Simple English Wikipedia, the free ...",
+          "score": 3.82,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.britannica.com/technology/engineering",
+          "title": "Engineering | Definition, History, Functions, & Facts",
+          "score": 2.56,
+          "relevance_score": 0.99
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Engineer",
+          "title": "Engineer",
+          "score": 3.16,
+          "relevance_score": 0.92
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "health sciences": {
+    "term": "health sciences",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 8,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Outline_of_health_sciences",
+          "title": "Outline of health sciences",
+          "score": 3.01,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.bridgeport.edu/news/what-is-health-science/",
+          "title": "What is a Health Science Degree?",
+          "score": 2.7,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://flex.wisconsin.edu/stories-news/what-can-you-do-with-a-health-sciences-degree/",
+          "title": "What Can You Do With a Health Sciences Degree?",
+          "score": 2.64,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Health_Sciences_Online",
+          "title": "Health Sciences Online",
+          "score": 2.51,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://www.scuhs.edu/",
+          "title": "Southern California University of Health Sciences",
+          "score": 1.93,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/?title=Health_Sciences&redirect=no",
+          "title": "Health Sciences",
+          "score": 1.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://hsls.libguides.com/Wikipedia",
+          "title": "Wikipedia in the Health Sciences: Home",
+          "score": 1.36,
+          "relevance_score": 0.55
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Health_sciences",
+          "title": "Category:Health sciences",
+          "score": 1.08,
+          "relevance_score": 0.68
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Outline_of_health_sciences",
+          "title": "Outline of health sciences",
+          "score": 3.01,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://flex.wisconsin.edu/stories-news/what-can-you-do-with-a-health-sciences-degree/",
+          "title": "What Can You Do With a Health Sciences Degree?",
+          "score": 2.64,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.bridgeport.edu/news/what-is-health-science/",
+          "title": "What is a Health Science Degree?",
+          "score": 2.7,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Health_Sciences_Online",
+          "title": "Health Sciences Online",
+          "score": 2.51,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "humanities": {
+    "term": "humanities",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 9,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Humanities",
+          "title": "Humanities",
+          "score": 3.88,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Humanities",
+          "title": "Category:Humanities",
+          "score": 3.16,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Digital_humanities",
+          "title": "Digital humanities",
+          "score": 3.16,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/History_of_Humanities",
+          "title": "History of Humanities",
+          "score": 3.02,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://clep.collegeboard.org/clep-exams/humanities",
+          "title": "Humanities Exam - CLEP - College Board",
+          "score": 2.98,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Humanities,_arts,_and_social_sciences",
+          "title": "Humanities, arts, and social sciences",
+          "score": 2.96,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.britannica.com/topic/humanities",
+          "title": "Humanities | Description, History, Meaning, & Facts",
+          "score": 2.77,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://www.neh.gov/",
+          "title": "National Endowment for the Humanities",
+          "score": 0.88,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://hechingerreport.org/saving-the-field-and-the-world-how-humanities-programs-are-trying-to-rebound/",
+          "title": "How some universities are trying to revive the humanities",
+          "score": 0.48,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Humanities",
+          "title": "Humanities",
+          "score": 3.88,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.britannica.com/topic/humanities",
+          "title": "Humanities | Description, History, Meaning, & Facts",
+          "score": 2.77,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://clep.collegeboard.org/clep-exams/humanities",
+          "title": "Humanities Exam - CLEP - College Board",
+          "score": 2.98,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Humanities",
+          "title": "Category:Humanities",
+          "score": 3.16,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Humanities,_arts,_and_social_sciences",
+          "title": "Humanities, arts, and social sciences",
+          "score": 2.96,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/History_of_Humanities",
+          "title": "History of Humanities",
+          "score": 3.02,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Digital_humanities",
+          "title": "Digital humanities",
+          "score": 3.16,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "law": {
+    "term": "law",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 9,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rule_of_law",
+          "title": "Rule of law",
+          "score": 4.84,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Law",
+          "title": "Law - Simple English Wikipedia, the free encyclopedia",
+          "score": 4.45,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Law",
+          "title": "Law",
+          "score": 4.05,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Portal:Law",
+          "title": "Portal:Law",
+          "score": 3.99,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.usa.gov/laws-and-regulations",
+          "title": "Federal laws and regulations",
+          "score": 2.62,
+          "relevance_score": 0.8
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://www.merriam-webster.com/dictionary/law",
+          "title": "LAW Definition & Meaning",
+          "score": 1.63,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Law",
+          "title": "Category:Law",
+          "score": 1.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.lsac.org/",
+          "title": "LSAC: The Law School Admission Council",
+          "score": 0.48,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.law.com/",
+          "title": "Law.com | The Premier Source for Global Legal News ...",
+          "score": 0.08,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Law",
+          "title": "Law",
+          "score": 4.05,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Law",
+          "title": "Law - Simple English Wikipedia, the free encyclopedia",
+          "score": 4.45,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Portal:Law",
+          "title": "Portal:Law",
+          "score": 3.99,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Rule_of_law",
+          "title": "Rule of law",
+          "score": 4.84,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.usa.gov/laws-and-regulations",
+          "title": "Federal laws and regulations",
+          "score": 2.62,
+          "relevance_score": 0.8
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "management": {
+    "term": "management",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 8,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Outline_of_business_management",
+          "title": "Outline of business management",
+          "score": 3.51,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Management",
+          "title": "Management",
+          "score": 3.22,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.coursera.org/articles/management",
+          "title": "What Is Management? Styles, Functions, Skills, and Careers",
+          "score": 2.87,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Management_style",
+          "title": "Management style",
+          "score": 2.5,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Management_(disambiguation)",
+          "title": "Management (disambiguation)",
+          "score": 2.22,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Management_(film)",
+          "title": "Management (film)",
+          "score": 1.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/management",
+          "title": "MANAGEMENT | definition in the Cambridge English Dictionary",
+          "score": 1.01,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://management.nyc/",
+          "title": "Management",
+          "score": 0.08,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Management",
+          "title": "Management",
+          "score": 3.22,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.coursera.org/articles/management",
+          "title": "What Is Management? Styles, Functions, Skills, and Careers",
+          "score": 2.87,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Management_style",
+          "title": "Management style",
+          "score": 2.5,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Outline_of_business_management",
+          "title": "Outline of business management",
+          "score": 3.51,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "medicine": {
+    "term": "medicine",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 9,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Medicine",
+          "title": "Medicine",
+          "score": 3.84,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Medicine",
+          "title": "Category:Medicine",
+          "score": 3.26,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Medication",
+          "title": "Medication",
+          "score": 4.19,
+          "relevance_score": 0.62
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Medicine",
+          "title": "WikiProject Medicine",
+          "score": 2.36,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.britannica.com/science/medicine",
+          "title": "Medicine | Definition, Fields, Research, & Facts",
+          "score": 1.86,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/medicine",
+          "title": "MEDICINE Definition & Meaning",
+          "score": 2.22,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://medlineplus.gov/",
+          "title": "MedlinePlus - Health Information from the National Library of ...",
+          "score": 2.21,
+          "relevance_score": 0.4
+        },
+        {
+          "url": "https://www.nlm.nih.gov/",
+          "title": "National Library of Medicine - National Institutes of Health",
+          "score": 0.88,
+          "relevance_score": 0.53
+        },
+        {
+          "url": "https://journals.lww.com/md-journal/pages/default.aspx",
+          "title": "Medicine - Journal Logo",
+          "score": 0.08,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Medicine",
+          "title": "Medicine",
+          "score": 3.84,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Medicine",
+          "title": "Category:Medicine",
+          "score": 3.26,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Medication",
+          "title": "Medication",
+          "score": 4.19,
+          "relevance_score": 0.62
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "natural sciences": {
+    "term": "natural sciences",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 7,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Natural_science",
+          "title": "Natural science",
+          "score": 4.2,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.uopeople.edu/blog/what-is-natural-science-5-definitions/",
+          "title": "What Is Natural Science? 5 Definitions",
+          "score": 4.19,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Natural_sciences",
+          "title": "Category:Natural sciences",
+          "score": 3.08,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:Contents/Natural_and_physical_sciences",
+          "title": "Wikipedia:Contents/Natural and physical sciences",
+          "score": 3.06,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://psychology.fandom.com/wiki/Natural_science",
+          "title": "Natural science | Psychology Wiki - Fandom",
+          "score": 3.02,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Natural_sciences",
+          "title": "Natural sciences",
+          "score": 3.21,
+          "relevance_score": 0.89
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://naturalsciences.rice.edu/",
+          "title": "Wiess School of Natural Sciences | Rice University",
+          "score": 1.08,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Natural_science",
+          "title": "Natural science",
+          "score": 4.2,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://psychology.fandom.com/wiki/Natural_science",
+          "title": "Natural science | Psychology Wiki - Fandom",
+          "score": 3.02,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Natural_sciences",
+          "title": "Category:Natural sciences",
+          "score": 3.08,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:Contents/Natural_and_physical_sciences",
+          "title": "Wikipedia:Contents/Natural and physical sciences",
+          "score": 3.06,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.uopeople.edu/blog/what-is-natural-science-5-definitions/",
+          "title": "What Is Natural Science? 5 Definitions",
+          "score": 4.19,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Natural_sciences",
+          "title": "Natural sciences",
+          "score": 3.21,
+          "relevance_score": 0.89
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "nursing": {
+    "term": "nursing",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 9,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nursing_degrees_in_the_United_States",
+          "title": "Nursing degrees in the United States",
+          "score": 3.72,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Bachelor_of_Science_in_Nursing",
+          "title": "Bachelor of Science in Nursing",
+          "score": 3.56,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Nursing",
+          "title": "Nursing",
+          "score": 3.28,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.nursingworld.org/practice-policy/workforce/what-is-nursing/",
+          "title": "What is Nursing? Your Questions Answered | ANA",
+          "score": 2.54,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/nurse/",
+          "title": "Nurse - Explore Health Care Careers",
+          "score": 3.79,
+          "relevance_score": 0.33
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Nurse",
+          "title": "Nurse - Simple English Wikipedia, the free encyclopedia",
+          "score": 3.55,
+          "relevance_score": 0.11
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Nursing",
+          "title": "Category:Nursing",
+          "score": 1.08,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://www.bls.gov/ooh/healthcare/registered-nurses.htm",
+          "title": "Registered Nurses : Occupational Outlook Handbook",
+          "score": 2.26,
+          "relevance_score": 0.17
+        },
+        {
+          "url": "https://www.nursingworld.org/",
+          "title": "American Nurses Association: American Nurses Enterprise",
+          "score": 0.48,
+          "relevance_score": 0.39
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nursing",
+          "title": "Nursing",
+          "score": 3.28,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.nursingworld.org/practice-policy/workforce/what-is-nursing/",
+          "title": "What is Nursing? Your Questions Answered | ANA",
+          "score": 2.54,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Nursing_degrees_in_the_United_States",
+          "title": "Nursing degrees in the United States",
+          "score": 3.72,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Bachelor_of_Science_in_Nursing",
+          "title": "Bachelor of Science in Nursing",
+          "score": 3.56,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/nurse/",
+          "title": "Nurse - Explore Health Care Careers",
+          "score": 3.79,
+          "relevance_score": 0.33
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "public health": {
+    "term": "public health",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 8,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Public_health",
+          "title": "Public health",
+          "score": 4.05,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Public_health_journal",
+          "title": "Public health journal",
+          "score": 3.78,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Public_health",
+          "title": "Public health",
+          "score": 3.43,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.cdcfoundation.org/what-public-health",
+          "title": "What is Public Health?",
+          "score": 3.38,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Outline_of_public_health",
+          "title": "Outline of public health",
+          "score": 3.09,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.apha.org/what-is-public-health",
+          "title": "What is public health?",
+          "score": 2.68,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "http://www.publichealth.lacounty.gov/",
+          "title": "Department of Public Health",
+          "score": 0.88,
+          "relevance_score": 0.8
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Public_health",
+          "title": "Category:Public health",
+          "score": 1.08,
+          "relevance_score": 0.55
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Public_health",
+          "title": "Public health",
+          "score": 4.05,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Public_health",
+          "title": "Public health",
+          "score": 3.43,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Public_health_journal",
+          "title": "Public health journal",
+          "score": 3.78,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Outline_of_public_health",
+          "title": "Outline of public health",
+          "score": 3.09,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.apha.org/what-is-public-health",
+          "title": "What is public health?",
+          "score": 2.68,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.cdcfoundation.org/what-public-health",
+          "title": "What is Public Health?",
+          "score": 3.38,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  },
+  "social sciences": {
+    "term": "social sciences",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 9,
+      "verified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Social_science",
+          "title": "Social science",
+          "score": 3.47,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Encyclopaedia_of_the_Social_Sciences",
+          "title": "Encyclopaedia of the Social Sciences",
+          "score": 3.44,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:Contents/Society_and_social_sciences",
+          "title": "Society and social sciences - Wikipedia's contents",
+          "score": 3.4,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Social_sciences",
+          "title": "Category:Social sciences",
+          "score": 3.37,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://acss.org.uk/what-is-social-science/",
+          "title": "What is Social Science?",
+          "score": 2.57,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.investopedia.com/terms/s/social-science.asp",
+          "title": "Social Science: What It Is and the 5 Major Branches",
+          "score": 2.56,
+          "relevance_score": 1.0
+        }
+      ],
+      "unverified_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Social_Science_%26_Medicine",
+          "title": "Social Science & Medicine",
+          "score": 2.46,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://bigfuture.collegeboard.org/explore-careers/majors/social-sciences",
+          "title": "Social Sciences Majors and Degrees - BigFuture",
+          "score": 2.23,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.mdpi.com/journal/socsci",
+          "title": "Social Sciences | An Open Access Journal from MDPI",
+          "score": 0.08,
+          "relevance_score": 0.8
+        }
+      ],
+      "relevant_sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Social_science",
+          "title": "Social science",
+          "score": 3.47,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://acss.org.uk/what-is-social-science/",
+          "title": "What is Social Science?",
+          "score": 2.57,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://www.investopedia.com/terms/s/social-science.asp",
+          "title": "Social Science: What It Is and the 5 Major Branches",
+          "score": 2.56,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Social_sciences",
+          "title": "Category:Social sciences",
+          "score": 3.37,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Encyclopaedia_of_the_Social_Sciences",
+          "title": "Encyclopaedia of the Social Sciences",
+          "score": 3.44,
+          "relevance_score": 1.0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wikipedia:Contents/Society_and_social_sciences",
+          "title": "Society and social sciences - Wikipedia's contents",
+          "score": 3.4,
+          "relevance_score": 1.0
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 1.0
+    }
+  }
+}

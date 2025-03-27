@@ -1,0 +1,1910 @@
+{
+  "level1_term": "geography",
+  "url_verification_status": {
+    "https://socialsciences.uoregon.edu/geography/research": true,
+    "https://geography.ecu.edu/research/research-areas/": true,
+    "https://www.geo.txst.edu/currentstudents/labs.html": true,
+    "https://socialsciences.uoregon.edu/geography": false,
+    "https://geography.washington.edu/graduate-research-areas": true,
+    "https://www.depts.ttu.edu/geosciences/geog/": true,
+    "https://liberalarts.utexas.edu/geography/graduate-program/": false,
+    "https://science.du.edu/geography": true,
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department": true,
+    "https://www.unr.edu/geography/graduate": true,
+    "https://geography.columbian.gwu.edu/research": true,
+    "https://ges.umbc.edu/": true,
+    "https://geography.indiana.edu/index.html": false,
+    "https://www.geog.ucsb.edu/academics/graduate/courses": false,
+    "https://www.geog.psu.edu/": true,
+    "https://geography-sustainability-community-urban.uconn.edu/courses/geography/course/GEOG/5000": false,
+    "https://www.gradcollege.txst.edu/programs/geo-phd.html": false,
+    "https://www.cod.edu/academics/programs/geography/": false,
+    "https://www.ohio.edu/cas/geography/research": true,
+    "https://geog.ufl.edu/programs/grad/": true,
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-geography-7-3-2-2-2-2-2/": false,
+    "https://courses.syracuse.edu/graduate/programs/geography-phd": true,
+    "https://geography.ucdavis.edu/programold": true,
+    "https://ggis.illinois.edu/": true,
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department/graduate-studies": false,
+    "https://www.udel.edu/apply/undergraduate-admissions/major-finder/geography-education/": true,
+    "https://mycatalog.txstate.edu/courses/geo/": true,
+    "https://www.salemstate.edu/academics/college-arts-and-sciences/geography-and-sustainability": true,
+    "https://www.albany.edu/undergraduate-bulletin/department-geography-planning.php": true
+  },
+  "verified_lists_per_url": {
+    "https://socialsciences.uoregon.edu/geography/research": 2,
+    "https://geography.ecu.edu/research/research-areas/": 1,
+    "https://www.geo.txst.edu/currentstudents/labs.html": 1,
+    "https://socialsciences.uoregon.edu/geography": 0,
+    "https://geography.washington.edu/graduate-research-areas": 4,
+    "https://www.depts.ttu.edu/geosciences/geog/": 1,
+    "https://liberalarts.utexas.edu/geography/graduate-program/": 0,
+    "https://science.du.edu/geography": 1,
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department": 3,
+    "https://www.unr.edu/geography/graduate": 1,
+    "https://geography.columbian.gwu.edu/research": 2,
+    "https://ges.umbc.edu/": 3,
+    "https://geography.indiana.edu/index.html": 0,
+    "https://www.geog.ucsb.edu/academics/graduate/courses": 0,
+    "https://www.geog.psu.edu/": 1,
+    "https://geography-sustainability-community-urban.uconn.edu/courses/geography/course/GEOG/5000": 0,
+    "https://www.gradcollege.txst.edu/programs/geo-phd.html": 0,
+    "https://www.cod.edu/academics/programs/geography/": 0,
+    "https://www.ohio.edu/cas/geography/research": 1,
+    "https://geog.ufl.edu/programs/grad/": 1,
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-geography-7-3-2-2-2-2-2/": 0,
+    "https://courses.syracuse.edu/graduate/programs/geography-phd": 1,
+    "https://geography.ucdavis.edu/programold": 2,
+    "https://ggis.illinois.edu/": 1,
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department/graduate-studies": 0,
+    "https://www.udel.edu/apply/undergraduate-admissions/major-finder/geography-education/": 3,
+    "https://mycatalog.txstate.edu/courses/geo/": 1,
+    "https://www.salemstate.edu/academics/college-arts-and-sciences/geography-and-sustainability": 1,
+    "https://www.albany.edu/undergraduate-bulletin/department-geography-planning.php": 5
+  },
+  "total_lists_per_url": {
+    "https://socialsciences.uoregon.edu/geography/research": 5,
+    "https://geography.ecu.edu/research/research-areas/": 6,
+    "https://www.geo.txst.edu/currentstudents/labs.html": 4,
+    "https://socialsciences.uoregon.edu/geography": 7,
+    "https://geography.washington.edu/graduate-research-areas": 4,
+    "https://www.depts.ttu.edu/geosciences/geog/": 1,
+    "https://liberalarts.utexas.edu/geography/graduate-program/": 5,
+    "https://science.du.edu/geography": 2,
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department": 7,
+    "https://www.unr.edu/geography/graduate": 2,
+    "https://geography.columbian.gwu.edu/research": 8,
+    "https://ges.umbc.edu/": 3,
+    "https://geography.indiana.edu/index.html": 3,
+    "https://www.geog.ucsb.edu/academics/graduate/courses": 2,
+    "https://www.geog.psu.edu/": 2,
+    "https://geography-sustainability-community-urban.uconn.edu/courses/geography/course/GEOG/5000": 2,
+    "https://www.gradcollege.txst.edu/programs/geo-phd.html": 5,
+    "https://www.cod.edu/academics/programs/geography/": 1,
+    "https://www.ohio.edu/cas/geography/research": 1,
+    "https://geog.ufl.edu/programs/grad/": 1,
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-geography-7-3-2-2-2-2-2/": 1,
+    "https://courses.syracuse.edu/graduate/programs/geography-phd": 8,
+    "https://geography.ucdavis.edu/programold": 5,
+    "https://ggis.illinois.edu/": 1,
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department/graduate-studies": 3,
+    "https://www.udel.edu/apply/undergraduate-admissions/major-finder/geography-education/": 10,
+    "https://mycatalog.txstate.edu/courses/geo/": 121,
+    "https://www.salemstate.edu/academics/college-arts-and-sciences/geography-and-sustainability": 2,
+    "https://www.albany.edu/undergraduate-bulletin/department-geography-planning.php": 6
+  },
+  "verified_lists_ids": {
+    "https://socialsciences.uoregon.edu/geography/research": [
+      0,
+      1
+    ],
+    "https://geography.ecu.edu/research/research-areas/": [
+      0
+    ],
+    "https://www.geo.txst.edu/currentstudents/labs.html": [
+      0
+    ],
+    "https://socialsciences.uoregon.edu/geography": [],
+    "https://geography.washington.edu/graduate-research-areas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://www.depts.ttu.edu/geosciences/geog/": [
+      0
+    ],
+    "https://liberalarts.utexas.edu/geography/graduate-program/": [],
+    "https://science.du.edu/geography": [
+      1
+    ],
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department": [
+      1,
+      3,
+      5
+    ],
+    "https://www.unr.edu/geography/graduate": [
+      0
+    ],
+    "https://geography.columbian.gwu.edu/research": [
+      6,
+      7
+    ],
+    "https://ges.umbc.edu/": [
+      0,
+      1,
+      2
+    ],
+    "https://geography.indiana.edu/index.html": [],
+    "https://www.geog.ucsb.edu/academics/graduate/courses": [],
+    "https://www.geog.psu.edu/": [
+      1
+    ],
+    "https://geography-sustainability-community-urban.uconn.edu/courses/geography/course/GEOG/5000": [],
+    "https://www.gradcollege.txst.edu/programs/geo-phd.html": [],
+    "https://www.cod.edu/academics/programs/geography/": [],
+    "https://www.ohio.edu/cas/geography/research": [
+      0
+    ],
+    "https://geog.ufl.edu/programs/grad/": [
+      0
+    ],
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-geography-7-3-2-2-2-2-2/": [],
+    "https://courses.syracuse.edu/graduate/programs/geography-phd": [
+      5
+    ],
+    "https://geography.ucdavis.edu/programold": [
+      0,
+      1
+    ],
+    "https://ggis.illinois.edu/": [
+      0
+    ],
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department/graduate-studies": [],
+    "https://www.udel.edu/apply/undergraduate-admissions/major-finder/geography-education/": [
+      0,
+      1,
+      5
+    ],
+    "https://mycatalog.txstate.edu/courses/geo/": [
+      24
+    ],
+    "https://www.salemstate.edu/academics/college-arts-and-sciences/geography-and-sustainability": [
+      1
+    ],
+    "https://www.albany.edu/undergraduate-bulletin/department-geography-planning.php": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 228,
+  "url_to_lists": {
+    "https://socialsciences.uoregon.edu/geography/research": [
+      [
+        "Global environmental change",
+        "Public health and spatial modeling",
+        "Political ecology and environmental justice",
+        "Border politics and national sovereignty",
+        "Sustainability and human-nature coupled systems"
+      ],
+      [
+        "Globalization and economic development",
+        "Visualizations for climate change science and communication",
+        "Surface hydrology and the cryosphere",
+        "Vegetation response to climate change",
+        "Quaternary paleoecology and paleoclimatology",
+        "Human-glacier-hydrology interactions"
+      ],
+      [
+        "Spatial cognition, computation and complexity (S3C)",
+        "Paleoecology and environmental change",
+        "Terrestrial Ecosystem Ecology and Landscape Lab",
+        "Society, Technology, Environment"
+      ],
+      [
+        "People, Identity and Place Lab",
+        "The UO Glacier Lab",
+        "Critical Race Lab",
+        "Science, Environment, and Society Lab"
+      ],
+      [
+        "Studying the Impact of Volcanic Eruption at Crater Lake",
+        "Exploring How NGOs Affect Eldercare in Beijing and Shanghai",
+        "Social SciencesCollege of Arts and Sciences"
+      ]
+    ],
+    "https://geography.ecu.edu/research/research-areas/": [
+      [
+        "Resources",
+        "Climate Dynamics & Impacts",
+        "Coastal & Hydrological Environments",
+        "Coastal Development Risks, Hazards, & Resilience",
+        "Remote Sensing & GIS",
+        "Social & Environmental Justice"
+      ],
+      [
+        "Beth Bee\nbeeb@ecu.edu",
+        "Rosana Ferreira\nferreira@ecu.edu",
+        "Anuradha Mukherji\nmukherjia@ecu.edu",
+        "Jeff Popke\npopkee@ecu.edu",
+        "Tom Rickenbach\nrickenbacht@ecu.edu",
+        "Hong-Bing Su\nsuh@ecu.edu"
+      ],
+      [
+        "Rosana Ferreira\nferreira@ecu.edu",
+        "Rob Howard\nhowardro@ecu.edu",
+        "Scott Lecce\nlecces@ecu.edu",
+        "Tom Rickenbach\nrickenbacht@ecu.edu",
+        "Hannah Sirianni\nsiriannih21@ecu.edu"
+      ],
+      [
+        "Beth Bee\nbeeb@ecu.edu",
+        "Scott Lecce\nlecces@ecu.edu",
+        "Anuradha Mukherji\nmukherjia@ecu.edu",
+        "Jeff Popke\npopkee@ecu.edu",
+        "Andrea Presotto\npresottoa24@ecu.edu",
+        "Steven Richter\nrichters22@ecu.edu",
+        "Hannah Sirianni\nsiriannih21@ecu.edu"
+      ],
+      [
+        "Rob Howard\nhowardro@ecu.edu",
+        "Andrea Presotto\npresottoa24@ecu.edu",
+        "Steven Richter\nrichters22@ecu.edu",
+        "Hannah Sirianni\nsiriannih21@ecu.edu",
+        "Scott Wade\nwades@ecu.edu"
+      ],
+      [
+        "Beth Bee\nbeeb@ecu.edu",
+        "Misun Hur\nhurmi@ecu.edu",
+        "Anuradha Mukherji\nmukherjia@ecu.edu",
+        "Jeff Popke\npopkee@ecu.edu"
+      ]
+    ],
+    "https://www.geo.txst.edu/currentstudents/labs.html": [
+      [
+        "Open Lab Hours - Spring 2025",
+        "Department of Geography and Environmental Studies",
+        "Resources"
+      ],
+      [
+        "Lab120\n        \n\n          (PDF, 91.1KB)",
+        "Lab121\n        \n\n          (PDF, 91KB)",
+        "Lab122\n        \n\n          (PDF, 25.1KB)",
+        "Lab123\n        \n\n          (PDF, 91.3KB)"
+      ],
+      [
+        "Beginning of video dialog content",
+        "Close Video",
+        "Previous Video\nNext Video",
+        "End of video dialog content"
+      ],
+      [
+        "access environment for safe storage of human subject data, as per IRB requirements (key",
+        "based access to physical storage, dedicated password",
+        "protected workstation for digital records storage)."
+      ]
+    ],
+    "https://socialsciences.uoregon.edu/geography": [
+      [
+        "Cartographer at National Geographic",
+        "Head of development and fundraising at a nonprofit",
+        "Independent drone operator",
+        "Data analyst for the U.S. Census",
+        "GIS analyst for utility company"
+      ],
+      [
+        "Search this site",
+        "Social Sciences",
+        "Department Navigation",
+        "Geography Commencement",
+        "Vision",
+        "Mission",
+        "What you can do with a degree in Geography",
+        "How the Department of Geography Launches Your Career",
+        "Our Degree Programs",
+        "Learn from Experts in the Field",
+        "Get Real-world Experience",
+        "Scholarships & Funding",
+        "Academic Support",
+        "Geography News and Events"
+      ],
+      [
+        "Undergraduate Degrees",
+        "Bachelor of Arts or Science in Geography",
+        "Bachelor of Arts or Science in Spatial Data Science and Technology",
+        "Minor in Geography",
+        "Minor in Climate Studies"
+      ],
+      [
+        "Graduate Degrees",
+        "Master of Arts or Science in Geography",
+        "PhD in Geography"
+      ],
+      [
+        "Department of History Coffee Hour",
+        "Apr 1",
+        "McKenzie Hall"
+      ],
+      [
+        "Department of History Coffee Hour",
+        "Apr 8",
+        "McKenzie Hall"
+      ],
+      [
+        "Creative Writing Program Presents: Screening of RULE BREAKERS and Q&A",
+        "Apr 8",
+        "Erb Memorial Union (EMU)"
+      ]
+    ],
+    "https://geography.washington.edu/graduate-research-areas": [
+      [
+        "globalization",
+        "neoliberalism",
+        "cross-border regionalism",
+        "location theory",
+        "labor markets and labor migration (including migrant worker mistreatment and rights)",
+        "resource distribution",
+        "technological change",
+        "the relationship between geoeconomics and geopolitics",
+        "the economic lessons of the global justice movement"
+      ],
+      [
+        "analytical cartography",
+        "geographic information representation",
+        "map error analysis",
+        "social construction of GIS technology",
+        "spatial database design",
+        "data management approaches and systems configurations",
+        "urban applications",
+        "geographic knowledge structures",
+        "transportation",
+        "environmental analysis",
+        "natural resources",
+        "user cognition and user interface design",
+        "sustainability science",
+        "spatial model coupling to GIS",
+        "collaborative spatial decision making."
+      ],
+      [
+        "cultural and political ecology",
+        "health and the environment",
+        "global environmental modeling and GIS methods and applications"
+      ],
+      [
+        "Quick links",
+        "Main menu",
+        "You are here",
+        "Critical Development and Global Health",
+        "Economic Geography",
+        "Geographic Information Systems",
+        "Society and Environment",
+        "Urban, Social and Political Geography"
+      ]
+    ],
+    "https://www.depts.ttu.edu/geosciences/geog/": [
+      [
+        "Physical Geography",
+        "Human Geography",
+        "Environmental Science",
+        "GIScience and Technology"
+      ]
+    ],
+    "https://liberalarts.utexas.edu/geography/graduate-program/": [
+      [
+        "Effectively communicate geographical ideas and content through written, oral, and graphical media.",
+        "Attain a high level of competence in classroom teaching and public speaking.",
+        "Understand the ethical dimensions of a professional career."
+      ],
+      [
+        "A Distinguished Trajectory",
+        "Intellectual and Social Environment: Austin and the University of Texas",
+        "PROFESSIONAL DEVELOPMENT",
+        "Research Grant Proposals",
+        "Getting Permission for Sensitive Human Subjects Research",
+        "Publications",
+        "Teaching Excellence",
+        "Grades",
+        "Service",
+        "Annual Report on Progress and Updating of Files",
+        "Program Objectives",
+        "Program Outcomes",
+        "Initial Advising",
+        "Remedial Work",
+        "Supervising Committee",
+        "Degree Options",
+        "Program of Work",
+        "Continuous Registration Requirement",
+        "Candidacy and Graduation",
+        "Program Objectives",
+        "Program Outcomes",
+        "Initial Advising",
+        "Remedial Work",
+        "Supervising Committee",
+        "Language Requirement",
+        "Methods Requirement",
+        "Program of Work",
+        "Leave of Absence prior to Advancement to Candidacy",
+        "Written and Oral Exams for Candidacy",
+        "Advancement to Candidacy",
+        "Continuous Registration Requirement",
+        "Graduation Timeline after Advancement to Candidacy",
+        "Applying for Admission",
+        "Deadlines",
+        "Application Procedures",
+        "Overview",
+        "Graduate Teaching Assistantships",
+        "Awards for New Students Applying to the Graduate Program",
+        "Awards for Continuing Students"
+      ],
+      [
+        "Colloquia",
+        "Professional Meetings",
+        "Language Option:",
+        "For the Graduate School",
+        "For The Department of Geography and the Environment",
+        "Applying for Additional Teaching Assistantships",
+        "University Fellowships",
+        "Recruiting Fellowships",
+        "Harrington Doctoral Fellows",
+        "Research Internships",
+        "University Fellowships",
+        "One-Year Continuing Fellowship",
+        "Bruton Fellowship",
+        "Harrington Dissertation Fellows",
+        "Research Assistantships",
+        "Assistant Instructor (AI) Positions",
+        "Veselka Fellowships",
+        "Professional Development Awards: Attendance at Meetings"
+      ],
+      [
+        "Each student should, during the course of his or her tenure in the master\u2019s program;",
+        "A master\u2019s degree in Geography can be obtained in one of two ways:",
+        "Language or Methods Requirement",
+        "Methods Option:"
+      ],
+      [
+        "year, two",
+        "year, or three",
+        "year award. In the case of a multi"
+      ]
+    ],
+    "https://science.du.edu/geography": [
+      [
+        "Broadening our Understanding of Dynamic Earth Systems",
+        "Enter the growing field of geospatial data solutions.",
+        "Start Your Application"
+      ],
+      [
+        "eye view of the stories told by human populations and their ecosystems. To do that, we employ state",
+        ", environmental",
+        "and human",
+        "environment",
+        "related challenges."
+      ]
+    ],
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department": [
+      [
+        "Undergraduate Studies",
+        "Graduate Studies",
+        "A Capital Experience",
+        "Applied and Scholarly Research",
+        "Geography and the Environment in Action"
+      ],
+      [
+        "There's a world of possibilities waiting for you.",
+        "Syracuse, N.Y. - A Learning Laboratory",
+        "Community Geography",
+        "Environment and Society",
+        "GIS and Geospatial Technologies",
+        "Historical Geography and Geohumanities",
+        "Geography and the Environment Events"
+      ],
+      [
+        "April 4, 2025",
+        "April 9, 2025",
+        "April 24, 2025"
+      ],
+      [
+        "Geography, B.A.",
+        "Minor in geography",
+        "Minor in environment and society"
+      ],
+      [
+        "Geography, M.A.",
+        "Geography, Ph.D.",
+        "Joint degree program with the master of public administration (M.P.A.)",
+        "Certificate of Advanced Study in GIS and spatial analysis (concurrent with graduate studies)"
+      ],
+      [
+        "Research",
+        "Jan 27, 2025",
+        "Plural Climate Storylines to Foster Just Urban Futures",
+        "Climate Change,                                             Urban Issues"
+      ],
+      [
+        "Geography and the Environment Department",
+        "144 Eggers Hall",
+        "geography@syr.edu",
+        "315.443.2605"
+      ]
+    ],
+    "https://www.unr.edu/geography/graduate": [
+      [
+        "Hydrologic modeling",
+        "Urban and economic geography",
+        "Cultural and historical geography",
+        "Political geography and geopolitics",
+        "Qualitative methods",
+        "Human-Environment relations and political ecology",
+        "Urban and regional planning",
+        "GIS and geotechnologies",
+        "Climatology",
+        "Biogeography, wildlife, and landscape ecology",
+        "Natural resource management and conflict",
+        "Conservation science and planning",
+        "Paleoclimatology"
+      ],
+      [
+        "A graduate admission application form, including fees",
+        "An official copy of GRE scores (optional)",
+        "Official college transcripts",
+        "A statement of purpose and goals",
+        "Three letters of recommendation"
+      ]
+    ],
+    "https://geography.columbian.gwu.edu/research": [
+      [
+        "Moses Kansanga",
+        "Aman Luthra",
+        "Michael Mann",
+        "Kelsey Nyland",
+        "Nikolay Shiklomanov",
+        "Dmitry Streletskiy"
+      ],
+      [
+        "Mona Atia",
+        "Ryan Engstrom",
+        "Brendan Hurley",
+        "Michael Mann"
+      ],
+      [
+        "Mona Atia",
+        "Lisa Benton-Short",
+        "Elizabeth Chacko",
+        "Declan Cullen",
+        "Moses Kansanga",
+        "Vera Kuklina",
+        "Aman Luthra",
+        "Marie Price",
+        "David Rain",
+        "Marya Rozanova-Smith"
+      ],
+      [
+        "Moses Kansangra",
+        "Vera Kuklina",
+        "Aman Luthra",
+        "Kelsey Nyland",
+        "Nikolay Shiklomanov",
+        "Dmitry Streletskiy"
+      ],
+      [
+        "Mona Atia",
+        "Lisa Benton-Short",
+        "Declan Cullen",
+        "Ryan Engstrom",
+        "Moses Kansanga",
+        "Melissa Keeley",
+        "Aman Luthra",
+        "Michael Mann",
+        "David Rain",
+        "Nikolay Shiklomanov"
+      ],
+      [
+        "Mona Atia",
+        "Lisa Benton-Short",
+        "Elizabeth Chacko",
+        "Declan\u00a0Cullen",
+        "Ryan Engstrom",
+        "Melissa Keeley",
+        "Vera Kuklina",
+        "Aman Luthra",
+        "Marie Price",
+        "David Rain",
+        "Nikolay Shiklomanov",
+        "Dmitry Streletskiy"
+      ],
+      [
+        "Climate and Environmental Change",
+        "Geospatial Science and Applications",
+        "Global Equity and Social Justice",
+        "Human-Environmental Systems",
+        "Sustainability",
+        "Urbanization and Migration",
+        "Center for Urban & Environmental Research",
+        "Circumpolar Active Layer Monitoring",
+        "Arctic PIRE",
+        "Spatial Analysis Lab"
+      ],
+      [
+        "Center for Urban & Environmental Research",
+        "Circumpolar Active Layer Monitoring",
+        "Arctic PIRE",
+        "Spatial Analysis Lab"
+      ]
+    ],
+    "https://ges.umbc.edu/": [
+      [
+        "Urban Systems Track",
+        "Global Sustainability Track",
+        "Watershed Science Track",
+        "Ecology & Conservation Track",
+        "Earth & Atmospheric Science Track",
+        "Conservation & Environmental Management Track"
+      ],
+      [
+        "Urban Systems Track",
+        "Global Sustainability Track",
+        "Cities, Economies, & Development Track",
+        "Environment, Society, & Health Track",
+        "Conservation & Environmental Management Track"
+      ],
+      [
+        "B.S. in Environmental Science & Geography",
+        "B.A. in Geography & Environmental Studies",
+        "Minor in Geography",
+        "Minor in Environmental Science",
+        "Certificate in GIScience (GIS)"
+      ]
+    ],
+    "https://geography.indiana.edu/index.html": [
+      [
+        "Twitter",
+        "Facebook",
+        "Pinterest"
+      ],
+      [
+        "Geography B.A.",
+        "Geography B.S.",
+        "Minor + Certificate",
+        "Advising",
+        "Honors Program",
+        "Forms"
+      ],
+      [
+        "Food + Agriculture+",
+        "GIS + Remote Sensing+",
+        "Water Resources+"
+      ]
+    ],
+    "https://www.geog.ucsb.edu/academics/graduate/courses": [
+      [
+        "Course Catalog",
+        "GauchoSpace",
+        "Office of the Registrar"
+      ],
+      [
+        "Main navigation",
+        "Graduate menu",
+        "Geography Core Courses",
+        "Course Descriptions",
+        "Independent Study Courses",
+        "Related Links",
+        "Support Services",
+        "Website"
+      ]
+    ],
+    "https://www.geog.psu.edu/": [
+      [
+        "Penn State GeoGraphics Lab to host inaugural Community Mapping Day",
+        "Geography Coffee Hour lecture to feature Sophie Webber on climate finance",
+        "ICDS director named chair of American Geophysical Union annual meeting committee",
+        "Karl Zimmerer name distinguished professor for 2025",
+        "Penn State Climate Consortium awards 5 workshops focused on climate solutions",
+        "Four Penn State faculty members named American Association of Geographers fellows",
+        "Microplastics increasing in freshwater, directly related to plastic production",
+        "NIH grant for new tool development to help assess obesity-related behaviors"
+      ],
+      [
+        "Environmental Change and Prediction",
+        "Food Security and Human Health",
+        "Geospatial Big Data Analytics",
+        "Justice, Ethics, and Diversity",
+        "Population, Environment, and Governance",
+        "Spatial Modeling and Remote Sensing"
+      ]
+    ],
+    "https://geography-sustainability-community-urban.uconn.edu/courses/geography/course/GEOG/5000": [
+      [
+        "Academic Year 2024-2025",
+        "Areas of Study",
+        "Academic Programs"
+      ],
+      [
+        "3.00 credits",
+        "Prerequisites: None.",
+        "Grading Basis: Graded"
+      ]
+    ],
+    "https://www.gradcollege.txst.edu/programs/geo-phd.html": [
+      [
+        "Completed\u00a0online\u00a0application",
+        "$55 nonrefundable application feeOR",
+        "$90 nonrefundable application fee for applications with international credentials",
+        "a copy of an official transcript from\u00a0each institution\u00a0where course credit was granted",
+        "minimum 3.5 GPA in all completed graduate course work",
+        "completion of a master's thesis or demonstrated evidence of scholarly research and writing",
+        "GRE\u00a0not required",
+        "official TOEFL iBT scores required with a 78 overall",
+        "official PTE scores required with a 52 overall",
+        "minimum individual module scores of 6.0",
+        "official Duolingo Scores required with a 110 overall",
+        "official TOEFL Essentials scores required with an 8.5 overall",
+        "resume/CV"
+      ],
+      [
+        "official TOEFL iBT scores required with a 78 overall",
+        "official PTE scores required with a 52 overall",
+        "minimum individual module scores of 6.0",
+        "official Duolingo Scores required with a 110 overall",
+        "official TOEFL Essentials scores required with an 8.5 overall"
+      ],
+      [
+        "Application Decisions",
+        "International Applicants",
+        "Reapplication Process"
+      ],
+      [
+        "Beginning of video dialog content",
+        "Close Video",
+        "Previous Video\nNext Video",
+        "End of video dialog content"
+      ],
+      [
+        "Deadlines",
+        "DeadlinesFall   - Priority",
+        "DeadlinesFall   - Standard"
+      ]
+    ],
+    "https://www.cod.edu/academics/programs/geography/": [
+      [
+        "Determine Your Path",
+        "COD Stories",
+        "COD Stories",
+        "COD Stories",
+        "Get Started Today",
+        "Where You Can Transfer",
+        "Why Choose Geography?",
+        "Career Information",
+        "Frequently Asked Questions",
+        "Admissions",
+        "Tuition & Scholarships",
+        "Student Life"
+      ]
+    ],
+    "https://www.ohio.edu/cas/geography/research": [
+      [
+        "Info for:",
+        "Log In",
+        "Locations",
+        "Connect",
+        "Site-specific navigation",
+        "Info for:",
+        "Log In",
+        "Locations",
+        "Connect",
+        "Breadcrumb",
+        "Site-specific navigation",
+        "Geography",
+        "College of Arts and Sciences",
+        "Explore",
+        "Resources",
+        "Locations"
+      ]
+    ],
+    "https://geog.ufl.edu/programs/grad/": [
+      [
+        "Graduate Program",
+        "Links",
+        "People",
+        "Focus Areas",
+        "Stay Connected"
+      ]
+    ],
+    "https://grad.ucla.edu/graduate-program-requirements/program-requirements-for-geography-7-3-2-2-2-2-2/": [
+      [
+        "Graduate Degrees",
+        "Master\u2019s Degree",
+        "Doctoral Degree"
+      ]
+    ],
+    "https://courses.syracuse.edu/graduate/programs/geography-phd": [
+      [
+        "GEO 573\u00a0-\u00a0The Geography of Capital 3 credit(s)",
+        "GEO 606\u00a0-\u00a0Development and Sustainability 3 credit(s)",
+        "GEO 622\u00a0-\u00a0Water: Environment, Society and Politics 3 credit(s)",
+        "GEO 700\u00a0-\u00a0Selected Topics 1-6 credit(s)",
+        "GEO 755\u00a0-\u00a0Seminar in Political Ecology 3 credit(s)",
+        "GEO 758\u00a0-\u00a0GIS-based Geostatistical Methods and Applications 3 credit(s)",
+        "GEO 810\u00a0-\u00a0Political Geography Seminar 3 credit(s)"
+      ],
+      [
+        "GEO 610\u00a0-\u00a0Qualitative Methods in Geography 3 credit(s)",
+        "GEO 676\u00a0-\u00a0Advanced GIS Analysis and Applications 3 credit(s)",
+        "GEO 681\u00a0-\u00a0Cartographic Design 3 credit(s)",
+        "GEO 682\u00a0-\u00a0Environmental Remote Sensing 3-4 credit(s)",
+        "GEO 683\u00a0-\u00a0Geographic Information Systems 3-4 credit(s)",
+        "GEO 684\u00a0-\u00a0GIS for Urban Environments 3 credit(s)",
+        "GEO 685\u00a0-\u00a0Community Geography 3 credit(s)",
+        "GEO 686\u00a0-\u00a0Quantitative Geographic Analysis 3 credit(s)",
+        "GEO 687\u00a0-\u00a0Environmental Geostatistics 3 credit(s)",
+        "GEO 688\u00a0-\u00a0Geographic Information and Society 3 credit(s)"
+      ],
+      [
+        "GEO 573\u00a0-\u00a0The Geography of Capital 3 credit(s)",
+        "GEO 606\u00a0-\u00a0Development and Sustainability 3 credit(s)",
+        "GEO 622\u00a0-\u00a0Water: Environment, Society and Politics 3 credit(s)",
+        "GEO 700\u00a0-\u00a0Selected Topics 1-6 credit(s)",
+        "GEO 755\u00a0-\u00a0Seminar in Political Ecology 3 credit(s)",
+        "GEO 758\u00a0-\u00a0GIS-based Geostatistical Methods and Applications 3 credit(s)",
+        "GEO 810\u00a0-\u00a0Political Geography Seminar 3 credit(s)"
+      ],
+      [
+        "GEO 605\u00a0-\u00a0Writing Geography 3 credit(s)",
+        "GEO 610\u00a0-\u00a0Qualitative Methods in Geography 3 credit(s)",
+        "GEO 676\u00a0-\u00a0Advanced GIS Analysis and Applications 3 credit(s)",
+        "GEO 681\u00a0-\u00a0Cartographic Design 3 credit(s)",
+        "GEO 682\u00a0-\u00a0Environmental Remote Sensing 3-4 credit(s)",
+        "GEO 683\u00a0-\u00a0Geographic Information Systems 3-4 credit(s)",
+        "GEO 684\u00a0-\u00a0GIS for Urban Environments 3 credit(s)",
+        "GEO 685\u00a0-\u00a0Community Geography 3 credit(s)",
+        "GEO 686\u00a0-\u00a0Quantitative Geographic Analysis 3 credit(s)",
+        "GEO 687\u00a0-\u00a0Environmental Geostatistics 3 credit(s)",
+        "GEO 688\u00a0-\u00a0Geographic Information and Society 3 credit(s)"
+      ],
+      [
+        "Course Catalog",
+        "Student Learning Outcomes",
+        "Program Requirements",
+        "Required Courses (6 credits)",
+        "Specific Course Requirements (9 credits)",
+        "OPTION A",
+        "OPTION B",
+        "Graduate Coursework (45 Credits)",
+        "Dissertation (12 Credits)"
+      ],
+      [
+        "Seminar",
+        "Methods",
+        "Seminar",
+        "Methods"
+      ],
+      [
+        "OPTION BOne Seminar (700 or above) and two spatial methods/techniques courses:",
+        "Graduate Coursework (45 Credits) at the 600 level or above.",
+        "Dissertation (12 Credits)"
+      ],
+      [
+        "Syracuse University",
+        "2024-2025 Graduate Course Catalog",
+        "All catalogs \u00a9 2025 Syracuse University. Powered by Modern Campus Catalog\u2122."
+      ]
+    ],
+    "https://geography.ucdavis.edu/programold": [
+      [
+        "Geographical field methods",
+        "Geographical theory",
+        "Cartography",
+        "Remote sensing",
+        "Statistics",
+        "Geographic information systems (GIS)"
+      ],
+      [
+        "Environmental Sciences",
+        "Methods, Models, and GIS",
+        "Nature and Society",
+        "People, Place, and Region"
+      ],
+      [
+        "Degrees",
+        "Entrance Requirements",
+        "Curriculum",
+        "Advising",
+        "Graduate Advisors",
+        "Financial Support",
+        "GGG Executive Committee",
+        "Business Meetings of the GGG",
+        "HELP!",
+        "Graduate Student Handbook and QE Guidance Memo"
+      ],
+      [
+        "Students may be required to take additional courses or readings to overcome any deficiencies.",
+        "Financial Aid.",
+        "QE Guidance Memo",
+        "Here are some more Online Resources"
+      ],
+      [
+        "Study.\u00a0The Geography Graduate Group has a limited number of 25% time work",
+        "study positions each year. Eligibility for these grants is related to individual income. Work",
+        "study GSR appointment includes full remission of in",
+        "state fees for the quarter the appointment is held. Deadlines and procedures for applying for work",
+        "study are available from the Graduate Program Coordinator."
+      ]
+    ],
+    "https://ggis.illinois.edu/": [
+      [
+        "represents the latest innovative development in the fast",
+        "growing field of geospatial data science. Join us remotely and earn a graduate",
+        "level certificate or M.S. degree in CyberGIS and Geospatial Data Science at Illinois!"
+      ]
+    ],
+    "https://www.maxwell.syr.edu/academics/geography-and-the-environment-department/graduate-studies": [
+      [
+        "Academics  >",
+        "Geography and the Environment Department  >",
+        "Graduate Studies"
+      ],
+      [
+        "Community Geography Graduate Assistantship",
+        "Graduate Assistantships",
+        "University Fellowship",
+        "Watson Assistantship",
+        "Summer Research Awards"
+      ],
+      [
+        "Geography and the Environment Department",
+        "144 Eggers Hall",
+        "geography@syr.edu",
+        "315.443.2605"
+      ]
+    ],
+    "https://www.udel.edu/apply/undergraduate-admissions/major-finder/geography-education/": [
+      [
+        "History and political science",
+        "Educational psychology",
+        "Instructional design",
+        "Physical geography",
+        "Human geography"
+      ],
+      [
+        "Geography",
+        "Geography Education",
+        "Educational Leadership",
+        "Educational Technology"
+      ],
+      [
+        "Filter by College",
+        "Filter by Subject",
+        "Sample curriculum",
+        "Go Global at UD",
+        "Ready to become a Blue Hen?"
+      ],
+      [
+        "Apply Now\n\t\t\t\n\t\t\t\t>",
+        "Study Abroad\n\t\t\t\n\t\t\t\t>",
+        "EXPLORE",
+        "ACADEMICS",
+        "SERVICES",
+        "CONNECT"
+      ],
+      [
+        "BRING CHILDREN THE WORLD",
+        "AREAS OF STUDY",
+        "CAREER OPTIONS",
+        "GRADUATE PROGRAMS",
+        "Get Involved",
+        "FRESHMAN",
+        "SOPHOMORE",
+        "JUNIOR",
+        "SENIOR",
+        "This major is eligible for the following program:"
+      ],
+      [
+        "Agriculture_and_Animal_Sciences",
+        "Art_and_Music",
+        "Business",
+        "Education",
+        "Engineering",
+        "Environmental_Sciences",
+        "Global_Studies",
+        "Health_Sciences",
+        "Language_Literature_and_Culture",
+        "Natural_Sciences",
+        "Politics_Policy_and_Government",
+        "Science",
+        "Social_Sciences",
+        "Technology",
+        "Undeclared"
+      ],
+      [
+        "ECON101",
+        "ENGL110",
+        "GEOG101/111",
+        "GEOG102",
+        "GEOG106",
+        "GEOG203",
+        "UNIV101"
+      ],
+      [
+        "ECON103",
+        "GEOG2XX",
+        "GEOG271",
+        "GEOG372",
+        "HIST104",
+        "HIST206",
+        "POSC150"
+      ],
+      [
+        "EDUC414",
+        "EDUC419",
+        "EDUC413",
+        "GEOG3XX",
+        "HIST493"
+      ],
+      [
+        "EDUC400",
+        "EDUC420",
+        "GEOG445",
+        "HIST493"
+      ]
+    ],
+    "https://mycatalog.txstate.edu/courses/geo/": [
+      [
+        "BobCatMail",
+        "CatsWeb",
+        "Canvas",
+        "More Tools \n\nSAP Portal\nPay Tuition\nOnline Toolkit\nePortfolio\nCatalogs\nShuttle Tracker",
+        "SAP Portal",
+        "Pay Tuition",
+        "Online Toolkit",
+        "ePortfolio",
+        "Catalogs",
+        "Shuttle Tracker"
+      ],
+      [
+        "GEO\u00a01105. Meteorology Laboratory.",
+        "1 Credit Hour. \n0 Lecture Contact Hours. \n2 Lab Contact Hours.",
+        "Grade Mode: Standard Letter",
+        "TCCN: GEOL 1147"
+      ],
+      [
+        "GEO\u00a01305. Meteorology.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Life & Phys Sciences Core 030",
+        "Grade Mode: Standard Letter",
+        "TCCN: GEOL 1347"
+      ],
+      [
+        "GEO\u00a01309. Introduction to Cultural Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter",
+        "TCCN: GEOG 1302"
+      ],
+      [
+        "GEO\u00a01310. World Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Soc & Behav Sciences Core 080|Multicultural Perspective|Multicultural Content",
+        "Grade Mode: Standard Letter",
+        "TCCN: GEOG 1303"
+      ],
+      [
+        "GEO\u00a02410. Introduction to Physical Geography.",
+        "4 Credit Hours. \n3 Lecture Contact Hours. \n2 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a02427. Management and Implementation of GIS.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03307. Geography of Europe.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03308. Latin America.",
+        "A regional survey of the physical and cultural geography of Latin America. (MULT).",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03309. United States and Canada.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03320. Community and Regional Planning.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03321. Energy Resource Management.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03328. Geography of North Africa and the Middle East.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03329. Geography of Texas.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03332. Geography of South and Southeast Asia.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03333. Geography of East Asia.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03351. Health Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03353. American Ethnic Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03416. Remote Sensing and Earth Observation.",
+        "4 Credit Hours. \n3 Lecture Contact Hours. \n2 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03426. Advanced GIS.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a03434. Water Resources.",
+        "4 Credit Hours. \n3 Lecture Contact Hours. \n2 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04190. Independent Study.",
+        "1 Credit Hour. \n1 Lecture Contact Hour. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04290. Independent Study.",
+        "2 Credit Hours. \n2 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04306. Geography of the Southwest.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04309. Cultural and Political Ecology.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04310. Regional Field Studies.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04313. Environmental Management.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04314. River Basin Management.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04321. Cities and Urban Design.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04322. Interpretive Environmental Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04328. Geography of the Russian Realm.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04331. Geography of Food and Agriculture.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04340. Fundamental Themes in Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04356. Urban Infrastructure Management.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04380. Internship in Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04390. Independent Study.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04393A. Environmental Compliance.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04393B. Business Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04393E. Race, Class, and the American City.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04393F. Geographies of the Holocaust and Genocide.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04393G. Geographic Elements of Environmental Law.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04411. Advanced Cartographic Design.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04412. Digital Image Processing and Machine Learning.",
+        "4 Credit Hours. \n3 Lecture Contact Hours. \n2 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04417. Digital Terrain Modeling.",
+        "4 Credit Hours. \n3 Lecture Contact Hours. \n2 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04427. GIS Consulting Practicum.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a04430. Field Methods.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required|Writing Intensive",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05190. Independent Study.",
+        "1 Credit Hour. \n1 Lecture Contact Hour. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05199B. Thesis.",
+        "1 Credit Hour. \n1 Lecture Contact Hour. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a05290. Independent Study.",
+        "2 Credit Hours. \n2 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05299B. Thesis.",
+        "2 Credit Hours. \n2 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a05308. Regional Field Studies.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05312. Managing Urbanization.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05315. Geographic Analysis of Global Issues.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05316. Applied Physical Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05317. Seminar in Applied Human Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05318. Environment Problems of the U.S.-Mexico Border.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05349. Population Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05350. Practicum in Teaching Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Graduate Assistantship|Exclude from Graduate GPA",
+        "Grade Mode: Leveling/Assistantships"
+      ],
+      [
+        "GEO\u00a05360. Seminar in Planning Problems.",
+        "A critical and in-depth examination of several problem areas currently facing the planner.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05370. Seminar in Applied Physical Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05371. Seminar in Geographic Education.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05380. Internship.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a05390. Independent Study.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05393B. Biogeography in Mountain Environments.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05393D. Water Resource Planning.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05393E. Geomorphology in the Anthropocene.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05393H. Professional Development in Geographic Education.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05393I. Geography and the Social Studies.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05393K. Advanced Web Cartography and Data Visualization.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05395. Problems in Applied Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05399B. Thesis.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a05415. Geographic Applications of Remote Sensing.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05417. Advanced Cartographic Design.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05430. Field Methods.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a05599B. Thesis.",
+        "5 Credit Hours. \n5 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a05999B. Thesis.",
+        "9 Credit Hours. \n9 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07190. Independent Study.",
+        "1 Credit Hour. \n1 Lecture Contact Hour. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07199A. Dissertation.",
+        "1 Credit Hour. \n1 Lecture Contact Hour. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07199B. Dissertation.",
+        "1 Credit Hour. \n1 Lecture Contact Hour. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07199C. Dissertation.",
+        "1 Credit Hour. \n1 Lecture Contact Hour. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07290. Independent Study.",
+        "2 Credit Hours. \n2 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07299A. Dissertation.",
+        "2 Credit Hours. \n2 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07299B. Dissertation.",
+        "2 Credit Hours. \n2 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07299C. Dissertation.",
+        "2 Credit Hours. \n2 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07302. Nature and Philosophy of Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07308. Advanced Regional Field Studies.",
+        "3 Credit Hours. \n1 Lecture Contact Hour. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07341. Urban Environment.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07342. Theories and Methods in Geographic Education.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07345. Contemporary Topics in Geographic Education.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07349. Population Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Multicultural Content",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07350. Practicum in Teaching Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Graduate Assistantship|Exclude from Graduate GPA",
+        "Grade Mode: Leveling/Assistantships"
+      ],
+      [
+        "GEO\u00a07370. Advanced Seminar in Environmental Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07371. Advanced Seminar in Geographic Education.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07390. Independent Study.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393B. Biogeography in Mountain Environments.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393C. Managing Urbanization.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393D. International Migration.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Multicultural Content|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393E. Geography of Land Mangagement.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393F. Gender and Development.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Multicultural Content|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393G. Political Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Multicultural Content|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393J. Soil and Society.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393K. Biogeomorphology.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393M. Global Climate Change.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393N. Rivers and Society.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393P. Advanced Seminar in Human Geography.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07393Q. Geomorphology in the Anthropocene.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing|Topics",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07399A. Dissertation.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07399B. Dissertation.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07399C. Dissertation.",
+        "3 Credit Hours. \n3 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07415. Geographic Applications of Remote Sensing.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07430. Field Methods.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07447. Spatial Graphics in Geographic Education.",
+        "4 Credit Hours. \n2 Lecture Contact Hours. \n4 Lab Contact Hours.",
+        "Course Attribute(s): Lab Required",
+        "Grade Mode: Standard Letter"
+      ],
+      [
+        "GEO\u00a07599A. Dissertation.",
+        "5 Credit Hours. \n5 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07599B. Dissertation.",
+        "5 Credit Hours. \n5 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07599C. Dissertation.",
+        "5 Credit Hours. \n5 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07699A. Dissertation.",
+        "6 Credit Hours. \n6 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07699B. Dissertation.",
+        "6 Credit Hours. \n6 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07699C. Dissertation.",
+        "6 Credit Hours. \n6 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07999A. Dissertation.",
+        "9 Credit Hours. \n9 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07999B. Dissertation.",
+        "9 Credit Hours. \n9 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ],
+      [
+        "GEO\u00a07999C. Dissertation.",
+        "9 Credit Hours. \n9 Lecture Contact Hours. \n0 Lab Contact Hours.",
+        "Course Attribute(s): Exclude from 3-peat Processing",
+        "Grade Mode: Credit/No Credit"
+      ]
+    ],
+    "https://www.salemstate.edu/academics/college-arts-and-sciences/geography-and-sustainability": [
+      [
+        "User account menu",
+        "Suggested Searches",
+        "Admissions Office",
+        "Breadcrumb",
+        "Geography and Sustainability",
+        "Testimonial",
+        "Degree Programs",
+        "Joey Wolongevicz '22",
+        "Shoshana Heerter '21",
+        "Brendan Lewis '18",
+        "Mark Piandes '18",
+        "News and Events",
+        "Get Connected"
+      ],
+      [
+        "Opportunities in Geography and Sustainability",
+        "Undergraduate Degrees and Concentrations",
+        "Minors",
+        "Graduate Degrees",
+        "Certificates and Licensure Programs",
+        "Environmental Sustainability",
+        "Environmental Sustainability + GIS Certificate",
+        "Cartography + GIS",
+        "Geo-Information Science",
+        "Student Opportunities",
+        "Modeling the Effects of Sea-Level Rise on Local Conservation",
+        "Salem State Awarded $57,000 for Divesting from Fossil Fuels",
+        "Sustainability at Salem State",
+        "Events",
+        "Geography and Sustainability"
+      ]
+    ],
+    "https://www.albany.edu/undergraduate-bulletin/department-geography-planning.php": [
+      [
+        "A GOG 101\u00a0Introduction to the Physical\u00a0Environment",
+        "A\u00a0GOG 102 Introduction to Human Geography",
+        "A GOG\u00a0106 (= A USP\u00a0106) Introduction to Geospatial Technologies",
+        "Capstone Experience: A GOG 493 Geographic Thought"
+      ],
+      [
+        "A GOG 125 (= A USP 125) The American City",
+        "A GOG 160 (= A EAC 160) China: People and Places",
+        "A GOG 200 Cultural Geography",
+        "A GOG 220 (= A USP 220) Introductory Urban Geography",
+        "A GOG 225 (= A GLO 225 & A USP 225) World Cities: Geographies of Globalization",
+        "A GOG 227 (= A GLO 227) World Regions and Global Markets",
+        "T GOG 244 Global Population Debates",
+        "A GOG 250 Geography of Latin America",
+        "A GOG 270 (= A AFS 270) Geography of Africa",
+        "A GOG 307 (= A USP 307) Geospatial Applications of Drones",
+        "A GOG 325 (= A GLO/A USP 325) Global Urbanism and Culture",
+        "A GOG 364Y (= A GLO 364Y & A USP 364Y) India: Development Debates",
+        "A GOG 366 (= A GLO 366) India: Field Study of Development Issues",
+        "A GOG 375 (= A USP 375) Methods of Urban Analysis",
+        "A GOG 405 Topics in Human Geography",
+        "A GOG 440\u00a0Global Politics, Space and Place",
+        "A GOG 480 (= A USP 480) Advanced Urban Geography",
+        "A GOG 490 (= A GLO 420) Human Dimensions of Global Change",
+        "A USP 475 Urban Design"
+      ],
+      [
+        "A GOG 201\u00a0Environmental Analysis",
+        "A GOG 304 Climatology",
+        "A GOG 307 (= A USP 307) Geospatial Applications of Drones",
+        "A GOG 330 (= A USP 330)\u00a0Principles of Environmental Management",
+        "A GOG 404 Topics in Physical Geography",
+        "A GOG 424 Landscape Ecology",
+        "A GOG 430 (= A USP 430) Environmental Planning",
+        "A GOG 431 Climate Change",
+        "A GOG 433Y (= A USP 433) Urban Ecology",
+        "A GOG 460 (= A USP 460) People, Place, and Power"
+      ],
+      [
+        "A USP 125",
+        "A USP 201",
+        "A USP 220",
+        "A USP 225",
+        "One Methods course from A USP 307, 375, 414, 452, 456, 457"
+      ],
+      [
+        "Faculty",
+        "Degree Requirements for the Major in Geography",
+        "Honors Program",
+        "Combined B.A./M.A. Program",
+        "Bachelor of Arts in Urban Studies and Planning",
+        "Degree Requirements for the Major in Urban Studies and Planning"
+      ],
+      [
+        "Assistant ProfessorJared Enriquez, Ph.D., Cornell University",
+        "LecturerDavid Banks, Ph.D., Rensselaer Polytechnic Institute",
+        "Adjuncts (estimated): 18Teaching Assistants (estimated): 2",
+        "Careers",
+        "A\u00a0minimum of 36 credits with at least 24 credits at or above 300 level,\u00a0including:",
+        "Core Courses:",
+        "12 credits",
+        "Elective courses:",
+        "24 credits",
+        "Human Geography",
+        "Environmental Geography",
+        "Geographic Information Science",
+        "General Education requirement:",
+        "Students must complete a minimum of 42 credits as follows:",
+        "A\u00a0minimum of 36 credits including:",
+        "Core courses:",
+        "15 credits",
+        "Community engagement:",
+        "3 credits chosen from A USP\u00a0474 or\u00a0490",
+        "Capstone course:",
+        "3 credits from A USP 475",
+        "Elective courses:",
+        "15 credits in Urban Studies and Planning at or above the 300 level to include",
+        "All A GOG courses that are cross listed\u00a0with A USP courses are approved substitutes."
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:11:51"
+}

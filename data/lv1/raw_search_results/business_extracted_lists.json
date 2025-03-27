@@ -1,0 +1,2607 @@
+{
+  "level0_term": "business",
+  "url_verification_status": {
+    "https://business.ucf.edu/faculty/academic-departments-and-schools-2-1/": true,
+    "https://business.fiu.edu/academics/departments/": true,
+    "https://charleston.edu/school-business/about/departments.php": true,
+    "https://www.ncat.edu/cobe/academic-departments/index.php": true,
+    "https://www.csulb.edu/college-of-business/departments-and-programs": true,
+    "https://business.fsu.edu/": true,
+    "http://www.ou.edu/price.html": false,
+    "https://giesbusiness.illinois.edu/faculty-research/academic-departments": false,
+    "https://harbert.auburn.edu/about/academic-departments/index.html": true,
+    "https://www.cmich.edu/academics/colleges/college-business-administration/departments-schools": true,
+    "https://biz.colostate.edu/": true,
+    "https://www.lamar.edu/business/index.html": true,
+    "https://www.unlv.edu/business/departments": true,
+    "https://www.jsu.edu/business/index.html": false,
+    "http://www.subr.edu/business": true,
+    "https://www.bsu.edu/academics/collegesanddepartments/mcob": true,
+    "https://business.unl.edu/": true,
+    "https://business.ucf.edu/": true,
+    "http://www.msstate.edu/academics/college-of-business": true,
+    "https://harbert.auburn.edu/index.html": true,
+    "https://www.georgiasouthern.edu/colleges/parker-business": true,
+    "https://www.wcu.edu/learn/departments-schools-colleges/cob/index.aspx": true,
+    "https://www.csustan.edu/cba": true,
+    "https://www.csus.edu/college/business-administration/": false,
+    "https://www.unr.edu/business": true,
+    "https://www.csulb.edu/academic-affairs/colleges-departments": true,
+    "https://www.fgcu.edu/cob/": true,
+    "https://www.bgsu.edu/business.html": true,
+    "https://www.jsums.edu/business/": false,
+    "https://www.ohio.edu/business/": true,
+    "https://www.kennesaw.edu/coles/index.php": true,
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": true,
+    "https://www.coastal.edu/business/": false,
+    "https://www.sfasu.edu/cob": true,
+    "https://www.sjsu.edu/academics/colleges-and-departments.php": true
+  },
+  "verified_lists_per_url": {
+    "https://business.ucf.edu/faculty/academic-departments-and-schools-2-1/": 1,
+    "https://business.fiu.edu/academics/departments/": 1,
+    "https://charleston.edu/school-business/about/departments.php": 1,
+    "https://www.ncat.edu/cobe/academic-departments/index.php": 1,
+    "https://www.csulb.edu/college-of-business/departments-and-programs": 3,
+    "https://business.fsu.edu/": 4,
+    "http://www.ou.edu/price.html": 0,
+    "https://giesbusiness.illinois.edu/faculty-research/academic-departments": 0,
+    "https://harbert.auburn.edu/about/academic-departments/index.html": 2,
+    "https://www.cmich.edu/academics/colleges/college-business-administration/departments-schools": 1,
+    "https://biz.colostate.edu/": 4,
+    "https://www.lamar.edu/business/index.html": 1,
+    "https://www.unlv.edu/business/departments": 2,
+    "https://www.jsu.edu/business/index.html": 0,
+    "http://www.subr.edu/business": 2,
+    "https://www.bsu.edu/academics/collegesanddepartments/mcob": 2,
+    "https://business.unl.edu/": 4,
+    "https://business.ucf.edu/": 4,
+    "http://www.msstate.edu/academics/college-of-business": 1,
+    "https://harbert.auburn.edu/index.html": 9,
+    "https://www.georgiasouthern.edu/colleges/parker-business": 1,
+    "https://www.wcu.edu/learn/departments-schools-colleges/cob/index.aspx": 8,
+    "https://www.csustan.edu/cba": 1,
+    "https://www.csus.edu/college/business-administration/": 0,
+    "https://www.unr.edu/business": 2,
+    "https://www.csulb.edu/academic-affairs/colleges-departments": 3,
+    "https://www.fgcu.edu/cob/": 1,
+    "https://www.bgsu.edu/business.html": 28,
+    "https://www.jsums.edu/business/": 0,
+    "https://www.ohio.edu/business/": 2,
+    "https://www.kennesaw.edu/coles/index.php": 1,
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": 11,
+    "https://www.coastal.edu/business/": 0,
+    "https://www.sfasu.edu/cob": 1,
+    "https://www.sjsu.edu/academics/colleges-and-departments.php": 2
+  },
+  "total_lists_per_url": {
+    "https://business.ucf.edu/faculty/academic-departments-and-schools-2-1/": 1,
+    "https://business.fiu.edu/academics/departments/": 2,
+    "https://charleston.edu/school-business/about/departments.php": 1,
+    "https://www.ncat.edu/cobe/academic-departments/index.php": 2,
+    "https://www.csulb.edu/college-of-business/departments-and-programs": 3,
+    "https://business.fsu.edu/": 13,
+    "http://www.ou.edu/price.html": 5,
+    "https://giesbusiness.illinois.edu/faculty-research/academic-departments": 1,
+    "https://harbert.auburn.edu/about/academic-departments/index.html": 3,
+    "https://www.cmich.edu/academics/colleges/college-business-administration/departments-schools": 1,
+    "https://biz.colostate.edu/": 17,
+    "https://www.lamar.edu/business/index.html": 2,
+    "https://www.unlv.edu/business/departments": 3,
+    "https://www.jsu.edu/business/index.html": 2,
+    "http://www.subr.edu/business": 3,
+    "https://www.bsu.edu/academics/collegesanddepartments/mcob": 7,
+    "https://business.unl.edu/": 8,
+    "https://business.ucf.edu/": 7,
+    "http://www.msstate.edu/academics/college-of-business": 3,
+    "https://harbert.auburn.edu/index.html": 18,
+    "https://www.georgiasouthern.edu/colleges/parker-business": 5,
+    "https://www.wcu.edu/learn/departments-schools-colleges/cob/index.aspx": 11,
+    "https://www.csustan.edu/cba": 4,
+    "https://www.csus.edu/college/business-administration/": 7,
+    "https://www.unr.edu/business": 3,
+    "https://www.csulb.edu/academic-affairs/colleges-departments": 10,
+    "https://www.fgcu.edu/cob/": 6,
+    "https://www.bgsu.edu/business.html": 33,
+    "https://www.jsums.edu/business/": 5,
+    "https://www.ohio.edu/business/": 6,
+    "https://www.kennesaw.edu/coles/index.php": 12,
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": 31,
+    "https://www.coastal.edu/business/": 5,
+    "https://www.sfasu.edu/cob": 5,
+    "https://www.sjsu.edu/academics/colleges-and-departments.php": 17
+  },
+  "verified_lists_ids": {
+    "https://business.ucf.edu/faculty/academic-departments-and-schools-2-1/": [
+      0
+    ],
+    "https://business.fiu.edu/academics/departments/": [
+      0
+    ],
+    "https://charleston.edu/school-business/about/departments.php": [
+      0
+    ],
+    "https://www.ncat.edu/cobe/academic-departments/index.php": [
+      0
+    ],
+    "https://www.csulb.edu/college-of-business/departments-and-programs": [
+      0,
+      1,
+      2
+    ],
+    "https://business.fsu.edu/": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "http://www.ou.edu/price.html": [],
+    "https://giesbusiness.illinois.edu/faculty-research/academic-departments": [],
+    "https://harbert.auburn.edu/about/academic-departments/index.html": [
+      0,
+      1
+    ],
+    "https://www.cmich.edu/academics/colleges/college-business-administration/departments-schools": [
+      0
+    ],
+    "https://biz.colostate.edu/": [
+      1,
+      2,
+      10,
+      12
+    ],
+    "https://www.lamar.edu/business/index.html": [
+      1
+    ],
+    "https://www.unlv.edu/business/departments": [
+      0,
+      1
+    ],
+    "https://www.jsu.edu/business/index.html": [],
+    "http://www.subr.edu/business": [
+      1,
+      2
+    ],
+    "https://www.bsu.edu/academics/collegesanddepartments/mcob": [
+      3,
+      4
+    ],
+    "https://business.unl.edu/": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://business.ucf.edu/": [
+      0,
+      2,
+      3,
+      6
+    ],
+    "http://www.msstate.edu/academics/college-of-business": [
+      2
+    ],
+    "https://harbert.auburn.edu/index.html": [
+      0,
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "https://www.georgiasouthern.edu/colleges/parker-business": [
+      3
+    ],
+    "https://www.wcu.edu/learn/departments-schools-colleges/cob/index.aspx": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "https://www.csustan.edu/cba": [
+      1
+    ],
+    "https://www.csus.edu/college/business-administration/": [],
+    "https://www.unr.edu/business": [
+      1,
+      2
+    ],
+    "https://www.csulb.edu/academic-affairs/colleges-departments": [
+      1,
+      5,
+      8
+    ],
+    "https://www.fgcu.edu/cob/": [
+      3
+    ],
+    "https://www.bgsu.edu/business.html": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "https://www.jsums.edu/business/": [],
+    "https://www.ohio.edu/business/": [
+      0,
+      1
+    ],
+    "https://www.kennesaw.edu/coles/index.php": [
+      6
+    ],
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": [
+      1,
+      7,
+      16,
+      17,
+      20,
+      21,
+      23,
+      24,
+      27,
+      28,
+      29
+    ],
+    "https://www.coastal.edu/business/": [],
+    "https://www.sfasu.edu/cob": [
+      0
+    ],
+    "https://www.sjsu.edu/academics/colleges-and-departments.php": [
+      0,
+      14
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 262,
+  "url_to_lists": {
+    "https://business.ucf.edu/faculty/academic-departments-and-schools-2-1/": [
+      [
+        "Kenneth G. Dixon School of Accounting",
+        "Department of Economics",
+        "Department of Finance\n& Dr. P. Phillips School of Real Estate",
+        "Department of Integrated Business",
+        "Department of Management",
+        "Department of Marketing",
+        "Sport Business Management",
+        "College of Business",
+        "Connect"
+      ]
+    ],
+    "https://business.fiu.edu/academics/departments/": [
+      [
+        "Finance",
+        "Global Leadership and Management",
+        "Information Systems and Business Analytics",
+        "International Business",
+        "Marketing and Logistics",
+        "School of Accounting",
+        "School of Real Estate"
+      ],
+      [
+        "Connect",
+        "Explore FIU",
+        "Tools & Resources"
+      ]
+    ],
+    "https://charleston.edu/school-business/about/departments.php": [
+      [
+        "Accounting and Business Law",
+        "Economics",
+        "Finance",
+        "Hospitality and tourism management",
+        "Management and Marketing",
+        "Supply Chain and Information Management"
+      ]
+    ],
+    "https://www.ncat.edu/cobe/academic-departments/index.php": [
+      [
+        "Accounting and Finance",
+        "Business Information Systems and Analytics",
+        "Economics",
+        "Management",
+        "Marketing and Supply Chain Management"
+      ],
+      [
+        "Skip To Main Site Navigation",
+        "Skip to Content",
+        "Skip To Footer"
+      ]
+    ],
+    "https://www.csulb.edu/college-of-business/departments-and-programs": [
+      [
+        "Accountancy",
+        "Finance",
+        "Human Resource Management",
+        "Management",
+        "Information Systems",
+        "International Business",
+        "Marketing",
+        "Supply Chain Management"
+      ],
+      [
+        "Finance",
+        "Management Information Systems",
+        "International Business",
+        "Human Resources Management",
+        "Marketing",
+        "Entrepreneurship"
+      ],
+      [
+        "Utility Menu",
+        "Academics",
+        "Alumni",
+        "Campus Life",
+        "Divisions",
+        "Resources",
+        "Bachelor of Science in Business Administration",
+        "Minors",
+        "Honors Track",
+        "Services",
+        "Colleges",
+        "Additional Resources"
+      ]
+    ],
+    "https://business.fsu.edu/": [
+      [
+        "Accounting",
+        "Finance",
+        "Human Resource Management",
+        "Management",
+        "Management Information Systems",
+        "Marketing",
+        "Professional Sales",
+        "Real Estate",
+        "Risk Management/Insurance"
+      ],
+      [
+        "BS-Accounting/Master of Accounting (BS/MAcc)",
+        "BS-Finance/Master of Business Administration (BS-FIN/MBA)",
+        "BS-Finance/MS-Finance (BS/MSF)",
+        "BS-Human Resource Management/Master of Business Administration (BS-HRM/MBA)",
+        "BS-Management Information Systems/Master of Business Administration (BS-MIS/MBA)",
+        "BS-Management Information Systems/MS-Management Information Systems (BS/MS-MIS)",
+        "BS-Marketing/Master of Business Administration (BS-MAR/MBA)",
+        "BS-Real Estate/Master of Business Administration (BS-RE/MBA)",
+        "BS-Real Estate/MS-Finance (BS-RE/MSF)",
+        "BS-Risk Management/Insurance/Master of Business Administration (BS-RMI/MBA)",
+        "BS-Risk Management/Insurance/MS-Risk Management and Insurance (BS/MS-RMI)"
+      ],
+      [
+        "Accounting (MAcc)",
+        "Business Administration (MBA)",
+        "Business Analytics\u00a0(MS-BA)",
+        "Finance (MSF)",
+        "Management Information Systems (MS-MIS)",
+        "Risk Management and\u00a0Insurance (MS-RMI)"
+      ],
+      [
+        "Accelerated, Full-Time MBA",
+        "Accelerated, Evening MBA",
+        "Part-time, Evening MBA",
+        "Online, Part-time MBA"
+      ],
+      [
+        "Accounting",
+        "Finance",
+        "Management Information Systems",
+        "Marketing",
+        "Organizational Behavior and\u00a0Human Resources",
+        "Risk Management and\u00a0Insurance",
+        "Strategy"
+      ],
+      [
+        "Undergraduate Majors",
+        "Combined Pathways",
+        "Master's Degrees",
+        "MBA Program",
+        "Ph.D. Program",
+        "Pagination"
+      ],
+      [
+        "9\nUndergraduate Majors",
+        "6\nMaster's Degrees",
+        "7\nPh.D. Majors"
+      ],
+      [
+        "#4\nDr. William T. Hold/The Alliance's Program in Risk Management & Insurance \u2013 Undergraduate",
+        "#4\nReal Estate \u2013 Undergraduate",
+        "#6\nOnline Graduate Business for Military Veterans",
+        "#8\nOnline MBA Marketing Specialty"
+      ],
+      [
+        "#8\nOnline Master's Degree in Management\r\nInformation Systems (MS-MIS)",
+        "#8\nOnline Master's Degree in Risk Management\r\nand Insurance (MS-RMI)",
+        "#13\nOnline MBA for Military Veterans",
+        "#16\nOnline MBA"
+      ],
+      [
+        "Collegewide",
+        "February 26, 2025",
+        "Former Aer Lingus CEO emphasizes \u2018value in keeping things simple\u2019"
+      ],
+      [
+        "Collegewide",
+        "February 25, 2025",
+        "College mourns passing of major benefactor, widow of longest-serving dean"
+      ],
+      [
+        "Alumni",
+        "February 24, 2025",
+        "College mourns loss of Alumni Hall of Fame member, creator of Hardwick Teaching Awards"
+      ],
+      [
+        "Collegewide",
+        "February 21, 2025",
+        "Bruning Speaker Series: \u2018Come work for us a little while\u2019"
+      ]
+    ],
+    "http://www.ou.edu/price.html": [
+      [
+        "There's Only One Price College",
+        "Get a Future-Focused Education",
+        "Your MBA, Your Way",
+        "Strengthen Your Network",
+        "A Nexus of Knowledge",
+        "PRICE BY THE NUMBERS",
+        "Price in the News"
+      ],
+      [
+        "BBA in Management Information Systems",
+        "Energy Graduate Program",
+        "Global University Entrepreneurship Research Productivity",
+        "ROI for MBA programs in the nation",
+        "Top Affordable Accelerated Executive MBA Online Program"
+      ],
+      [
+        "Get a Future-Focused Education",
+        "Explore Undergrad Programs",
+        "Explore Graduate Programs"
+      ],
+      [
+        "Strengthen Your Network",
+        "Hire OU Grads",
+        "Give to Price"
+      ],
+      [
+        "#1\nBBA in Management Information Systems",
+        "Best Value Schools",
+        "#1\nEnergy Graduate Program",
+        "Oil and Gas Investor",
+        "#2\nGlobal University Entrepreneurship Research Productivity",
+        "TCU Global"
+      ]
+    ],
+    "https://giesbusiness.illinois.edu/faculty-research/academic-departments": [
+      [
+        "Department of Accountancy",
+        "Department of Business Administration",
+        "Department of Finance"
+      ]
+    ],
+    "https://harbert.auburn.edu/about/academic-departments/index.html": [
+      [
+        "Search form",
+        "School of Accountancy",
+        "Department of Business Analytics and Information Systems",
+        "Department of Finance",
+        "Department of Management and Entrepreneurship",
+        "Department of Marketing",
+        "Department of Supply Chain Management",
+        "Get in Touch",
+        "Quick Links:",
+        "Information for:"
+      ],
+      [
+        "People",
+        "Programs",
+        "Events",
+        "Ready to Inspire Business?"
+      ],
+      [
+        "Degrees & Programs",
+        "Faculty & Staff",
+        "Career Development",
+        "Recruiters & Industry"
+      ]
+    ],
+    "https://www.cmich.edu/academics/colleges/college-business-administration/departments-schools": [
+      [
+        "Business Information Systems Department",
+        "Economics",
+        "Entrepreneurship Department",
+        "Finance and Law",
+        "Department of Management",
+        "Marketing, Hospitality, and Logistics",
+        "The Philip L. Kintzele School of Accounting"
+      ]
+    ],
+    "https://biz.colostate.edu/": [
+      [
+        "Undergraduate Programs",
+        "Graduate and MBA Programs",
+        "Graduate Certificates",
+        "Undergraduate Programs",
+        "Graduate and MBA Programs",
+        "Graduate Certificates",
+        "Connecting action-oriented leaders to the principles of people, planet, profit and purpose.",
+        "Global Recognition, Expert-Led Programs",
+        "The Future of Responsible Business",
+        "Shaping Leaders for Purpose and Impact",
+        "U.S. News & World Report Rankings Cement CSU College of Business Online Programs Among Top in Nation",
+        "Business Day 2025",
+        "2024: College of Business by the numbers",
+        "Events",
+        "Application Dates",
+        "Prospective Student Information Sessions",
+        "Business for a Better World"
+      ],
+      [
+        "Bachelor of Science in Business Administration",
+        "Accelerated Business Degree",
+        "AUCC Courses",
+        "Accelerated Master's Programs",
+        "Business Minors",
+        "Undergraduate Certificates",
+        "Business for a Better World Undergraduate Research Fellows Program",
+        "Master of Business Administration",
+        "MBA - Three Ways to Learn",
+        "Online MBA",
+        "Online MBA - Mosaic",
+        "Evening MBA - on Campus or Online",
+        "Impact MBA",
+        "Master of Accountancy",
+        "Master of Computer Information Systems",
+        "Master of Finance",
+        "Graduate Certificates",
+        "International Business Experience",
+        "Dual Degree"
+      ],
+      [
+        "Applied Finance",
+        "Applied Investments",
+        "Business Application Development",
+        "Business Information Systems",
+        "Business Intelligence",
+        "Business Management",
+        "Corporate Finance",
+        "Cybersecurity",
+        "Entrepreneurship and Innovation",
+        "Global Supply Chain Management",
+        "IT Project Management",
+        "Marketing Management",
+        "Organizational Leadership",
+        "Sustainable Business"
+      ],
+      [
+        "Feb01\n\nOpen to All\nFree VITA Tax Preparation\n\nMultiple Days",
+        "Feb12\n\nOpen to All\nEntrepreneurial Eats\n\nMultiple Days",
+        "Apr01\n\nOpen to All\nJust In Time Job & Internship Fair - Spring 2025\n\nMultiple Days",
+        "Apr02\n\nOpen to All\nA Conversation with Sharon K. Gillenwater\n\n12:00 PM - 1:00 PM MST",
+        "Apr11\n\nOpen to All\nSherman Miller Case Competition\n\nMultiple Days",
+        "Apr15\n\nOpen to All\nVenture Rams Business Showcase 2025\n\n4:45 PM - 6:30 PM MST",
+        "Apr29\n\nOpen to Accounting Students, Faculty, Alumni\nAccounting Awards Banquet\n\n5:30 PM - 7:30 PM MST"
+      ],
+      [
+        "Open to All",
+        "Free VITA Tax Preparation",
+        "Multiple Days"
+      ],
+      [
+        "Open to All",
+        "Entrepreneurial Eats",
+        "Multiple Days"
+      ],
+      [
+        "Open to All",
+        "Just In Time Job & Internship Fair - Spring 2025",
+        "Multiple Days"
+      ],
+      [
+        "Open to All",
+        "A Conversation with Sharon K. Gillenwater",
+        "12:00 PM - 1:00 PM MST"
+      ],
+      [
+        "Open to All",
+        "Sherman Miller Case Competition",
+        "Multiple Days"
+      ],
+      [
+        "Open to All",
+        "Venture Rams Business Showcase 2025",
+        "4:45 PM - 6:30 PM MST"
+      ],
+      [
+        "Open to Undergraduate Business Majors and Minors",
+        "CORE Business Challenge",
+        "1:00 PM - 4:00 PM MST"
+      ],
+      [
+        "Open to All",
+        "Everitt Real Estate Center Annual Event in Partnership with ULI",
+        "3:30 PM - 5:30 PM MST"
+      ],
+      [
+        "Online MBA | Summer Session Applications\n\nApril 01, 2025",
+        "Impact MBA & Master of Finance | International Applications\n\nMay 01, 2025",
+        "Impact MBA & Master of Finance | Applications\n\nMay 01, 2025",
+        "Impact MBA | International Applications\n\nMay 01, 2025",
+        "Evening MBA | International Applications\n\nMay 01, 2025",
+        "Master of Accountancy | Fall International Applications\n\nMay 01, 2025",
+        "Master of Finance | International Applications\n\nMay 01, 2025",
+        "On-Campus Master of Computer Information Systems | Fall International Applications\n\nMay 01, 2025"
+      ],
+      [
+        "Online MBA Informational Webinar\n\nApril 03, 202503:00 PM - 03:45 PM MST",
+        "Online MBA Informational Webinar\n\nApril 17, 202510:00 AM - 10:45 AM MST",
+        "Online MBA Informational Webinar\n\nApril 30, 202511:00 AM - 11:45 AM MST"
+      ],
+      [
+        "Business & Brews - MBA Programs",
+        "April 17, 202504:00 PM - 06:00 PM MST",
+        "Odell Brewing Company 800 East Lincoln Avenue Fort Collins, CO 80524"
+      ],
+      [
+        "Coffee and Conversations | MBA Programs",
+        "April 24, 202509:00 AM - 11:00 AM MST",
+        "Pablo's Coffee - 6th Avenue - 630 East 6th Avenue Denver, CO 80203"
+      ],
+      [
+        "Coffee and Conversations | MBA Programs",
+        "May 08, 202508:00 AM - 11:00 AM MST",
+        "Lima Coffee Roasters - Midtown Coffee Shop & Roastery 4229 South Mason Street Fort Collins, CO 80525"
+      ]
+    ],
+    "https://www.lamar.edu/business/index.html": [
+      [
+        "Business Degree Programs",
+        "Departments",
+        "Center for Student Success",
+        "Code of Ethics",
+        "College of Business News"
+      ],
+      [
+        "School of Accounting, Finance and Economics",
+        "Department of Management, Marketing and General Business",
+        "Department of Information Systems",
+        "Reese Construction Management",
+        "Online programs earn national recognition from Affordable Degree Guide",
+        "Lamar University achieves R2 research classification",
+        "Smith-Hutson Scholars Program transforms futures at LU",
+        "Entrepreneurship program ranked #2 for affordability",
+        "LU alum, bp America president Orlando Alvarez kicks off College of Business speaker series",
+        "Lamar University recognized nationally, statewide in University HQ rankings"
+      ]
+    ],
+    "https://www.unlv.edu/business/departments": [
+      [
+        "Business",
+        "Breadcrumb",
+        "Departments"
+      ],
+      [
+        "Quick Links",
+        "Accounting",
+        "Economics",
+        "Finance",
+        "Management, Entrepreneurship, and Technology",
+        "Marketing and International Business"
+      ],
+      [
+        "Bookstore\n\nBookstore",
+        "Calendar\n\nCalendar",
+        "Campus Maps\n\nCampus\u00a0Maps",
+        "Degrees\n\nDegrees",
+        "Libraries\n\nLibraries",
+        "MyUNLV\n\nMyUNLV",
+        "News Center\n\nNews Center",
+        "RebelCard\n\nRebelCard",
+        "Rebelmail\n\nRebelmail",
+        "Social Media\n\nSocial Media",
+        "UNLV Mail\n\nUNLV Mail",
+        "WebCampus\n\nWebCampus"
+      ]
+    ],
+    "https://www.jsu.edu/business/index.html": [
+      [
+        "A growing network of businesses and alumni who have employed our graduates",
+        "Internship programs that allow students to gain practical experience in their chosen field",
+        "Jacksonville State University Ranks #12 Best Online MBA AACSB by\u00a0Get Educated"
+      ],
+      [
+        "Skip to Main Site Navigation",
+        "Skip to Content",
+        "Skip to Footer"
+      ]
+    ],
+    "http://www.subr.edu/business": [
+      [
+        "Message from the Dean",
+        "About the College of Business",
+        "College of Business Toolkit",
+        "Administrative Staff",
+        "Accounting, Finance & Economics",
+        "Management and Marketing",
+        "Masters of Business Administration",
+        "Online Programs dropdown\n\nMBA Online Program\nGraduate Certificate in Supply Chain Management",
+        "MBA Online Program",
+        "Graduate Certificate in Supply Chain Management",
+        "Call for Papers",
+        "Current Issue",
+        "Editorial Board",
+        "College of Business E-Journal Archives",
+        "Members",
+        "Golf Tournament",
+        "Mentorship Program",
+        "Mentors",
+        "Responsibilities of Mentors & Mentees",
+        "Job Postings for Students",
+        "Gala on the Bluff",
+        "Schedule of Events",
+        "Summer Business institute",
+        "University Center for Economic Development",
+        "Summer Business Institute",
+        "Helpful Links and Forms",
+        "Contact Us"
+      ],
+      [
+        "Master of Business Administration",
+        "JD MBA Program",
+        "Master of Business Administration (Online)"
+      ],
+      [
+        "Department of Accounting, Finance and Economics",
+        "Department of Management and Marketing",
+        "MBA Program",
+        "Certification",
+        "Southern University and A&M College"
+      ]
+    ],
+    "https://www.bsu.edu/academics/collegesanddepartments/mcob": [
+      [
+        "Prospective Students",
+        "Current Students",
+        "Faculty / Staff",
+        "Alumni",
+        "Parents"
+      ],
+      [
+        "Ball State University",
+        "Our Departments",
+        "What Miller College has to Offer",
+        "Scholarships and Financial Aid",
+        "Stay Involved With Us",
+        "We're Here to Help"
+      ],
+      [
+        "Activities and Opportunities",
+        "Professional Development",
+        "Nationally Recognized MBA",
+        "Keep Exploring Miller College",
+        "Connect with Us"
+      ],
+      [
+        "Management",
+        "Marketing",
+        "Information Systems and Operations Management",
+        "Finance and Insurance"
+      ],
+      [
+        "Accounting",
+        "Economics",
+        "Applied Business Studies"
+      ],
+      [
+        "Mar26\n\n\nJens Molbak Lecture",
+        "Apr03\n\n\nInnovation Fest",
+        "Apr04\n\n\nMiller College of Business Spring Carnival"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "YouTube",
+        "LinkedIn"
+      ]
+    ],
+    "https://business.unl.edu/": [
+      [
+        "Accounting",
+        "Actuarial Science",
+        "Agribusiness",
+        "Business Administration",
+        "Business Analytics",
+        "Business and Law",
+        "Economics",
+        "Finance\n\nBanking and Risk Management\nInvestments",
+        "Banking and Risk Management",
+        "Investments"
+      ],
+      [
+        "International Business",
+        "Clifton Builders",
+        "Entrepreneurship and Innovation",
+        "Human Resource Management",
+        "Leadership in Organizations",
+        "Marketing",
+        "Supply Chain Management"
+      ],
+      [
+        "Clifton Builders",
+        "Entrepreneurship and Innovation",
+        "Human Resource Management",
+        "Leadership in Organizations"
+      ],
+      [
+        "Search Form",
+        "Current Student Priority Registration for Fall Begins March 24",
+        "2024 Nebraska Business Magazine",
+        "College of Business",
+        "Campus Links",
+        "Policies & Reports"
+      ],
+      [
+        "Academic Programs",
+        "Future Huskers",
+        "Our Commitment to Inclusive Excellence",
+        "Nebraska Business News",
+        "Internship Showcase",
+        "#1Best value in the U.S. for online MBA",
+        "#30 Public Undergraduate Business Program",
+        "1 of 17Founding Members",
+        "Support Your College of Business",
+        "Related Links"
+      ],
+      [
+        "Time to Start Something\nCurrent Student Priority Registration for Fall Begins March 24",
+        "Meet With an Academic Advisor",
+        "Business Courses Offered by Semester",
+        "Future Undergraduates"
+      ],
+      [
+        "Master's Programs",
+        "PH.D.Programs",
+        "Certificate Programs",
+        "Executive and Professional Development"
+      ],
+      [
+        "Branch Builds His Nebraska Legacy Through Entrepreneurship\nRead More",
+        "Honors Academy Teams Sweep Washburn Leadership Challenge\nRead More",
+        "Krieger Ready to Spread Smiles Thanks to Scholarship Support\nRead More"
+      ]
+    ],
+    "https://business.ucf.edu/": [
+      [
+        "Master of Sport Business Management (MSBM)",
+        "Master of Science in Accounting",
+        "Master of Science in FinTech",
+        "Ph.D. in Business Administration",
+        "MS in Management \u2013 Integrated Business",
+        "Professional MS in Management \u2013 Human Resources Track",
+        "Professional MS in Real Estate"
+      ],
+      [
+        "Evening MBA",
+        "Executive MBA",
+        "Professional MBA \u2013 Full-Time",
+        "Professional MBA \u2013 Part-Time"
+      ],
+      [
+        "Business of Hip-Hop Innovation & Creative Industries \u2013 Undergraduate Certificate",
+        "Entrepreneurship Certificate",
+        "FinTech \u2013 Undergraduate Certificate",
+        "Undergraduate Sport Business Minor: The Minor That\u2019s Major"
+      ],
+      [
+        "Accounting",
+        "Economics",
+        "Finance",
+        "Integrated Business",
+        "Management",
+        "Marketing",
+        "Real Estate"
+      ],
+      [
+        "Student Experience",
+        "Student Ambassadors",
+        "Undergraduate Programs",
+        "Professional Selling Program",
+        "Graduate & MBA Programs",
+        "Graduate Admissions",
+        "Office of Professional Development",
+        "Scholarships",
+        "Study Abroad",
+        "Thomas L. Keon Testing Center",
+        "Behavioral Lab",
+        "Bloomberg Professional Service"
+      ],
+      [
+        "Business School for the 21st Century",
+        "Not Your Average Business School",
+        "Upcoming Events",
+        "Why UCF College of Business?",
+        "Business Programs",
+        "College of Business",
+        "Connect"
+      ],
+      [
+        "Relevant",
+        "Engaging",
+        "Inspiring",
+        "Graduate Programs",
+        "UCF MBA",
+        "Minors & Certificate Programs",
+        "Undergraduate Programs",
+        "Student Information"
+      ]
+    ],
+    "http://www.msstate.edu/academics/college-of-business": [
+      [
+        "114 McCool Hall",
+        "40 Old Main",
+        "P.O. Box 5288",
+        "Campus Mail Stop: 9588"
+      ],
+      [
+        "Educating Students in Core Business Disciplines",
+        "College Quick Links",
+        "Find the College on Social Media",
+        "Departments and Units",
+        "Recent College News",
+        "MSU Spring Startup Summit accepting entries",
+        "Community engagement projects recognized at MSU with annual awards"
+      ],
+      [
+        "Adkerson School of Accountancy",
+        "Department of Finance and Economics",
+        "Department of Management and Information Systems",
+        "Department of Marketing, Quantitative Analysis and Business Law",
+        "College of Business"
+      ]
+    ],
+    "https://harbert.auburn.edu/index.html": [
+      [
+        "Accountancy",
+        "Business Administration",
+        "Business Analytics",
+        "Finance",
+        "Information Systems Management",
+        "Management",
+        "Marketing",
+        "Supply Chain Management"
+      ],
+      [
+        "Full-time MBA",
+        "Online MBA",
+        "Executive MBA",
+        "Physicians Executive MBA"
+      ],
+      [
+        "Master of Accountancy",
+        "Master of Real Estate Development",
+        "Master of Science in Finance",
+        "Master of Science in Information Systems",
+        "Master of Science in Supply Chain Management"
+      ],
+      [
+        "Executive MBA",
+        "Physicians Executive MBA",
+        "Master of Real Estate Development"
+      ],
+      [
+        "Business Analytics",
+        "Corporate Finance",
+        "Entrepreneurship",
+        "Financial Institutions & Markets",
+        "Human Resource &/or Organizational Behavior",
+        "Information Systems Management",
+        "Investments",
+        "Strategic Management",
+        "Supply Chain Management Systems"
+      ],
+      [
+        "Undergraduate Certificate in Accountancy",
+        "Graduate Certificate in Accountancy",
+        "Graduate Certificate in Business Analytics",
+        "Graduate Certificate in\u00a0Cybersecurity Management",
+        "Graduate Certificate in\u00a0Management Information Systems",
+        "Graduate Certificate in Supply Chain Management Innovation",
+        "Graduate Certificate in Supply Chain Operations",
+        "Graduate Certificate in Supply Chain Planning"
+      ],
+      [
+        "BSBA Online - Degree Completer",
+        "BSBA in Accountancy Online- Second Degree",
+        "Accountancy Bridge Online",
+        "Master of Accountancy Online",
+        "Master of Science in Finance Online",
+        "Master of Science in Information Systems Online",
+        "Master of Science in Supply Chain Management Online",
+        "Online MBA"
+      ],
+      [
+        "Start Here!",
+        "Study Abroad",
+        "Student Organizations",
+        "Competitions",
+        "Entrepreneurship",
+        "Career Fairs",
+        "Mentorship",
+        "Internships"
+      ],
+      [
+        "Search form",
+        "Find Your Program:",
+        "The Harbert College of Business is the place to be.",
+        "Experience beyond the classroom.",
+        "Our research is changing business.",
+        "Our graduates are ready for any challenge.",
+        "Get in Touch",
+        "Quick Links:",
+        "Information for:"
+      ],
+      [
+        "People",
+        "Programs",
+        "Events",
+        "Undergraduate",
+        "MBA Programs",
+        "Specialized Masters",
+        "Executive Programs",
+        "PhD Programs",
+        "Certificate Programs",
+        "Online Programs",
+        "Welcome to Harbert!",
+        "Harbert Global",
+        "Join a Club or Organization",
+        "Compete and Showcase Your Knowledge",
+        "An Entrepreneurship Education",
+        "Start Your Career",
+        "Helping You Navigate Life's Journey.",
+        "Course Credited Internships",
+        "Take your next step."
+      ],
+      [
+        "Degrees & Programs",
+        "Faculty & Staff",
+        "Career Development",
+        "Recruiters & Industry"
+      ],
+      [
+        "Undergraduate",
+        "MBA Programs",
+        "Specialized Masters",
+        "Executive",
+        "Certificates",
+        "Online"
+      ],
+      [
+        "Harbert College of Business graduates are job-ready, day-one.",
+        "Online Undergraduate Programs",
+        "Minors in Business",
+        "Study Abroad",
+        "See Majors"
+      ],
+      [
+        "We offer multiple delivery methods to fit your schedule.",
+        "Which MBA is right for Me?",
+        "Dual Degree Options",
+        "See MBA Programs"
+      ],
+      [
+        "Our programs advance knowledge, creativity, and critical thinking.",
+        "Online Programs",
+        "See Specialized Masters"
+      ],
+      [
+        "We offer undergraduate and graduate certificates.",
+        "Online\u00a0Programs",
+        "See Certificate Programs"
+      ],
+      [
+        "We prepare you for\u00a0the world of business and give you the tools to succeed.",
+        "Career Development",
+        "Recruit & Partner"
+      ],
+      [
+        "14\nCareer Coaches + Program Champions",
+        "300\nAlumni Mentors",
+        "400+\nCorporate partners on campus each year"
+      ]
+    ],
+    "https://www.georgiasouthern.edu/colleges/parker-business": [
+      [
+        "Research That Matters",
+        "The Southern Center for Logistics and Intermodal Transportation",
+        "Center for Sales Excellence",
+        "Corporate Partnerships",
+        "Parker Business Scholars",
+        "Experiential Learning & Student Engagement",
+        "Exchange Semester Abroad",
+        "Eagles on Wall Street",
+        "Eagles on Pennsylvania Avenue"
+      ],
+      [
+        "Advising",
+        "Honors",
+        "Scholarships",
+        "Internships",
+        "Experiential Learning & Student Engagement",
+        "Exchange Semester Abroad",
+        "Eagles on Pennsylvania Avenue",
+        "Eagles on Wall Street",
+        "Student Organizations",
+        "Business Scholars Program",
+        "Career Services Center",
+        "Military & Veteran Services"
+      ],
+      [
+        "In This Section Menu",
+        "Preparing You to Soar Into Leadership from Day One",
+        "Our Impact",
+        "Meet Our Faculty",
+        "Explore Our Programs",
+        "Research, Service and Engagement",
+        "Departments",
+        "Student Success and Support",
+        "Take the Next Step"
+      ],
+      [
+        "School of Accountancy",
+        "Economics",
+        "Finance",
+        "Information Systems and Analytics",
+        "Logistics and Supply Chain Management",
+        "Management",
+        "Marketing"
+      ],
+      [
+        "Of Students",
+        "Average Salary After Graduation",
+        "Of Business Schools in the World"
+      ]
+    ],
+    "https://www.wcu.edu/learn/departments-schools-colleges/cob/index.aspx": [
+      [
+        "Academic Programs & Support",
+        "Departments, Schools & Colleges",
+        "College of Business"
+      ],
+      [
+        "Accounting",
+        "Business Administration and Law",
+        "Computer Information Systems",
+        "Economic Analysis",
+        "Entrepreneurship",
+        "Finance",
+        "Hospitality and Tourism Management",
+        "Management",
+        "Sales and Marketing",
+        "Sport Management"
+      ],
+      [
+        "Accounting",
+        "Business Administration and Law",
+        "Computer Information Systems",
+        "Economic Analysis",
+        "Entrepreneurship",
+        "Finance",
+        "Hospitality and Tourism Management",
+        "Management",
+        "Sales and Marketing",
+        "Sport Management"
+      ],
+      [
+        "Master of Accountancy",
+        "Master of Business Administration",
+        "Master of Entrepreneurship in Innovation Leadership and Entrepreneurship",
+        "Master of Project Management",
+        "Graduate Certificate in Project Management",
+        "Master of Sport Management"
+      ],
+      [
+        "Master of Accountancy",
+        "Master of Business Administration",
+        "Master of Entrepreneurship in Innovation Leadership and Entrepreneurship",
+        "Master of Project Management",
+        "Graduate Certificate in Project Management",
+        "Master of Sport Management"
+      ],
+      [
+        "B.S.B.A. in Innovation Leadership and Entrepreneurship",
+        "B.S.B.A. in Business Administration and Law",
+        "B.S.B.A. in Finance (Financial Planning Concentration)",
+        "B.S.B.A. in Management",
+        "B.S.B.A. in Marketing",
+        "Master of Innovation Leadership and Entrepreneurship",
+        "Master of Project Management",
+        "Master of\u00a0 Sport Management"
+      ],
+      [
+        "B.S.B.A. in Innovation Leadership and Entrepreneurship",
+        "B.S.B.A. in Business Administration and Law",
+        "B.S.B.A. in Finance (Financial Planning Concentration)",
+        "B.S.B.A. in Management",
+        "B.S.B.A. in Marketing",
+        "Master of Innovation Leadership and Entrepreneurship",
+        "Master of Project Management",
+        "Master of\u00a0 Sport Management"
+      ],
+      [
+        "College of Business",
+        "WCU alumnus Julian Manrique shines as law school grad, attorney",
+        "Undergraduate Degrees",
+        "Graduate Degrees",
+        "Online Degrees",
+        "College of Business Spotlights",
+        "Justin Pace to lead WCU School of Accounting, Finance, Info Systems, Business Law",
+        "Young alumni spotlight: Speyer reaching for the stars as systems engineer",
+        "Discover More"
+      ],
+      [
+        "College of Business",
+        "Connect With Us",
+        "Explore WCU",
+        "Small Business and Technology Development Center",
+        "Corporation for Entrepreneurship and Innovation",
+        "Center for the Study of Free Enterprise",
+        "Outreach and Engagement",
+        "Scholarships and Awards",
+        "Accreditation Information",
+        "Ideas With Impact",
+        "Quick Links",
+        "Faculty & Staff Resources",
+        "Student Resources",
+        "Family Resources",
+        "Community Resources"
+      ],
+      [
+        "Get the Latest",
+        "Venues",
+        "Partner with Us",
+        "Student Resources",
+        "Campus Resources",
+        "Campus Location",
+        "Find People"
+      ],
+      [
+        "Small Business and Technology Development Center",
+        "Corporation for Entrepreneurship and Innovation",
+        "Center for the Study of Free Enterprise",
+        "Outreach and Engagement",
+        "Scholarships and Awards",
+        "Accreditation Information",
+        "Ideas With Impact"
+      ]
+    ],
+    "https://www.csustan.edu/cba": [
+      [
+        "LinkedIn",
+        "Facebook",
+        "Instagram"
+      ],
+      [
+        "Primary navigation",
+        "Main navigation",
+        "Quick Links",
+        "Utility",
+        "Breadcrumb",
+        "College of Business Administration",
+        "Accreditation",
+        "Quick Links",
+        "Footer Short Nav",
+        "Main navigation",
+        "Footer menu"
+      ],
+      [
+        "(209) 667-3288",
+        "Demergasso-Bava Hall, DBH202",
+        "LinkedInFacebookInstagram",
+        "College of Business Administration"
+      ],
+      [
+        "BQSAT Test Dates",
+        "Student Achievement & Success Data",
+        "Faculty Success",
+        "Title IX",
+        "University Catalog",
+        "Program Learning Outcomes"
+      ]
+    ],
+    "https://www.csus.edu/college/business-administration/": [
+      [
+        "Undergraduate",
+        "Graduate",
+        "Business Honors Program",
+        "Meet Us",
+        "Faculty Office Hours"
+      ],
+      [
+        "Dean's Honor List",
+        "Dean's Digest",
+        "Strategic Plan"
+      ],
+      [
+        "Advisory Council",
+        "Centers & Programs",
+        "For Employers",
+        "Alumni & Friends",
+        "Give to the College of Business"
+      ],
+      [
+        "Connect with the College of Business",
+        "Business Advising (Drop In & Appointments)",
+        "Add/Drop Business Courses",
+        "Office of Student Engagement"
+      ],
+      [
+        "Primary Navigation",
+        "Welcome to the College of Business at Sacramento State",
+        "Explore the College of Business",
+        "Academic Calendar",
+        "Departments",
+        "Connect With The College of Business"
+      ],
+      [
+        "Explore",
+        "Business Resources",
+        "Find Us",
+        "Meet Us",
+        "Follow Us",
+        "Campus-Wide Social Media Navigation",
+        "Compliance Links"
+      ],
+      [
+        "Tahoe 1010",
+        "Tahoe 1030",
+        "Fri. 8 a.m.",
+        "5 p.m."
+      ]
+    ],
+    "https://www.unr.edu/business": [
+      [
+        "Degrees & programs",
+        "Departments & disciplines",
+        "Advising center",
+        "Career guidance"
+      ],
+      [
+        "Quicklinks",
+        "Search",
+        "Building a legacy of globally competitive leaders.",
+        "Building a network throughout the state and globally.",
+        "AACSB accredits the best business schools in the world."
+      ],
+      [
+        "Business resources and centers",
+        "International business",
+        "Initiatives"
+      ]
+    ],
+    "https://www.csulb.edu/academic-affairs/colleges-departments": [
+      [
+        "Bob Conservatory School of Music",
+        "Dance",
+        "Design",
+        "Film and Electronic Arts",
+        "School of Art",
+        "Theatre Arts"
+      ],
+      [
+        "Accountancy",
+        "Finance",
+        "Human Resource Management",
+        "Information Systems",
+        "International Business",
+        "Legal Business Studies",
+        "Management",
+        "Marketing",
+        "Supply Chain Management"
+      ],
+      [
+        "Advanced Studies in Education and Counseling",
+        "Educational Leadership",
+        "Liberal Studies",
+        "Teacher Education"
+      ],
+      [
+        "Biomedical Engineering",
+        "Chemical Engineering",
+        "Civil Engineering\u00a0& Construction Management",
+        "Computer Engineering & Computer Science",
+        "Electrical Engineering",
+        "Mechanical & Aerospace Engineering"
+      ],
+      [
+        "Family and Consumer Sciences",
+        "Health Care Administration",
+        "Health Science",
+        "Kinesiology",
+        "School of Nursing",
+        "Physical Therapy",
+        "Public Policy and Administration",
+        "Recreation and Leisure Studies",
+        "School of Criminology, Criminal Justice and Emergency Management",
+        "School of Nursing",
+        "School of Social Work",
+        "Speech-Language Pathology"
+      ],
+      [
+        "Africana Studies",
+        "American Indian Studies",
+        "American Studies",
+        "Anthropology",
+        "Asian and Asian American Studies",
+        "Chicano & Latino Studies",
+        "Classics",
+        "Communication Studies",
+        "Comparative World Literature",
+        "Economics",
+        "English",
+        "Environmental Science and Policy",
+        "Geography",
+        "History",
+        "Human Development",
+        "International Studies",
+        "Jewish Studies",
+        "Journalism and Public Relations",
+        "Latin America Studies",
+        "Legal Studies",
+        "Linguistics",
+        "Philosophy",
+        "Political Science",
+        "Psychology",
+        "Religious Studies",
+        "Romance, German, Russian Languages, and Literatures",
+        "Sociology",
+        "Women's, Gender, and Sexuality Studies"
+      ],
+      [
+        "Biological Sciences",
+        "Chemistry and Biochemistry",
+        "Earth Science",
+        "Environmental Science and Policy",
+        "Mathematics and Statistics",
+        "Physics and Astronomy",
+        "Science Education"
+      ],
+      [
+        "Certifications",
+        "Online bachelor's degrees",
+        "Online master\u2019s degrees",
+        "Personal Enrichment",
+        "Professional Designation",
+        "Professional Development",
+        "University Credit"
+      ],
+      [
+        "Utility Menu",
+        "Academics",
+        "Alumni",
+        "Campus Life",
+        "Divisions",
+        "Resources",
+        "College of the Arts (COTA)",
+        "College of Business (COB)",
+        "College of Education (CED)",
+        "College of Engineering (COE)",
+        "College of Health & Human Services (CHHS)",
+        "College of Liberal Arts (CLA)",
+        "College of Natural Sciences & Mathematics (CNSM)",
+        "College of Professional and Continuing Education (CPaCE)",
+        "University Library",
+        "Services",
+        "Colleges",
+        "Additional Resources"
+      ],
+      [
+        "Programs:",
+        "Programs:",
+        "Programs:",
+        "Programs:",
+        "Programs:",
+        "Programs:",
+        "Programs:",
+        "Programs:"
+      ]
+    ],
+    "https://www.fgcu.edu/cob/": [
+      [
+        "College of Arts & Sciences",
+        "College of Education",
+        "Honors College",
+        "Lutgert College of Business",
+        "Marieb College of Health & Human Services",
+        "U.A. Whitaker College of Engineering"
+      ],
+      [
+        "Bower School of Music & the Arts",
+        "Daveler & Kauanui School of Entrepreneurship",
+        "School of Nursing",
+        "School of Resort & Hospitality Management",
+        "The Water School"
+      ],
+      [
+        "Alumni",
+        "Athletics",
+        "Give to FGCU",
+        "Watch/Listen to WGCU",
+        "Work at FGCU"
+      ],
+      [
+        "Business Degrees Designed to Help Students Succeed",
+        "Our Focus is Your Future",
+        "Student & Professional Organizations",
+        "Resources",
+        "Institutes & Initiatives",
+        "Study Abroad",
+        "Support the LCOB",
+        "Our Business is Your Success",
+        "Our Accreditation",
+        "Experience FGCU"
+      ],
+      [
+        "Advising",
+        "Internships",
+        "Beta Gamma Sigma Honor Society",
+        "Study Abroad"
+      ],
+      [
+        "CP\u00ae) and SHRM Senior Certified Professional (SHRM",
+        "CP or SHRM",
+        "SCP certifications,\u201d said Alex Alonso, SHRM",
+        "edge, industry"
+      ]
+    ],
+    "https://www.bgsu.edu/business.html": [
+      [
+        "Paul J. Hooker Center for Entrepreneurial Leadership",
+        "Insurance and Risk Management Institute",
+        "Supply Chain Management Institute"
+      ],
+      [
+        "Allen W. and Carol M.Schmidthorst College of Business",
+        "A nationally ranked leader in business education",
+        "A 21st century learning environment",
+        "Find your passion \u2013 explore our programs",
+        "Business is better at BGSU",
+        "#13 best public business school in\nacademic experience in the U.S.\n\u2013 Poets&Quants, 2023",
+        "Success starts at Schmidthorst",
+        "Employer Partnerships and\nCareer Success",
+        "$61k median starting salary for our business students\n(higher than the national average)",
+        "Events"
+      ],
+      [
+        "Majors & Programs",
+        "Internships & Careers",
+        "Why BGSU Business",
+        "Reach Out To Us"
+      ],
+      [
+        "Minor Minor",
+        "Bachelors Bachelors",
+        "Masters Masters",
+        "Doctorate Doctorate",
+        "Online Online"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "mMinor Available",
+        "BBachelors Available",
+        "CCertificate/Endorsement Available",
+        "MMasters Available",
+        "DDoctorate Available",
+        "OOffered Online",
+        "FAvailable at Firelands Campus"
+      ],
+      [
+        "Explore Internships & Co-ops",
+        "Career Design & Connections",
+        "Join The Business District"
+      ],
+      [
+        "just like the generations of alumni who came before them",
+        "humble and hungry, ready to make a difference. Ready to create a better future",
+        "for themselves, for their families, for their communities, for us all."
+      ]
+    ],
+    "https://www.jsums.edu/business/": [
+      [
+        "Welcome To The College of Business",
+        "Quality Education",
+        "Supporting Women in Business",
+        "College Of Business"
+      ],
+      [
+        "1,597",
+        "Explore Our Programs",
+        "Undergraduate Programs",
+        "Graduate Programs",
+        "Departments",
+        "Location"
+      ],
+      [
+        "Internal Resources",
+        "CARES ACT",
+        "Thee Portal",
+        "Create/Reset NET ID Password"
+      ],
+      [
+        "Internal Resources",
+        "CARES ACT",
+        "Thee Portal",
+        "Create/Reset NET ID Password"
+      ],
+      [
+        "1,597Bachelor degrees awarded in 2020.",
+        "#7ranked HBCU byCollege Consensus.",
+        "51Kalumni worldwide."
+      ]
+    ],
+    "https://www.ohio.edu/business/": [
+      [
+        "Accounting (BBA)",
+        "Business (BSB)\n Online or Regional Campus Major",
+        "Business Analytics (BBA)",
+        "Business Economics (BBA)",
+        "Business Pre-Law (BBA)",
+        "Entrepreneurship (BBA)",
+        "Finance (BBA)",
+        "International Business (BBA)",
+        "Management & Strategic Leadership (BBA)",
+        "Management Information Systems (BBA)",
+        "Marketing (BBA)",
+        "Sport Management (BSM)"
+      ],
+      [
+        "Master of Accountancy and Analytics (MAcc)",
+        "Master of Business Administration (MBA)",
+        "Master of Business Analytics (MBAn)",
+        "Master of Science in Management (MSM)",
+        "Sports Administration Masters Programs"
+      ],
+      [
+        "#15\n    \n\nBest public business school \u2014Bloomberg Businessweek",
+        "Top 34\n    \n\nBest online MBA \u2014Poets & Quants",
+        "93%\n    \n\nof May '22 grads experienced positive outcomes within 6 months of graduating",
+        "$54k\n    \n\nAverage starting salary for May 2022 graduates",
+        "#2\n    \n\nranked MBA in the state"
+      ],
+      [
+        "7th Annual OHIO Music Industry Summit",
+        "Wednesday, March 26",
+        "All Day",
+        "Baker University Center"
+      ],
+      [
+        "7th Annual OHIO Music Industry Summit",
+        "Thursday, March 27",
+        "All Day",
+        "Baker University Center"
+      ],
+      [
+        "Econ Seminar",
+        "Friday, March 28",
+        "3:00 PM \u2014 4:30 PM",
+        "Bentley Hall"
+      ]
+    ],
+    "https://www.kennesaw.edu/coles/index.php": [
+      [
+        "Current Students",
+        "Online Only Students",
+        "Faculty & Staff",
+        "Parents & Family",
+        "Alumni & Friends",
+        "Community & Business"
+      ],
+      [
+        "Current Students",
+        "Online Only Students",
+        "Faculty & Staff",
+        "Parents & Family",
+        "Alumni & Friends",
+        "Community & Business"
+      ],
+      [
+        "Academic Advising",
+        "Knack Tutoring",
+        "Internship/Co-op Advising"
+      ],
+      [
+        "Aspiring Community Entrepreneurs Program",
+        "Family Enterprise Center",
+        "Robin & Doug Shore Entrepreneurship & Innovation Center",
+        "Small Business Development Center"
+      ],
+      [
+        "Donate",
+        "Hire a Student / Graduate",
+        "Partnership Opportunities"
+      ],
+      [
+        "CEO Magazine Ranks Kennesaw State Executive MBA Top Program in Georgia, No. 10 in the World",
+        "Kennesaw State business student finds research niche in virtual reality",
+        "Third Annual MITS Event Showcases Creativity with Braves Collaboration",
+        "7 ways KSU's fintech master's program is shaping the future of digital payments"
+      ],
+      [
+        "Architecture & Construction Management",
+        "Business",
+        "Computing & Software Engineering",
+        "Cybersecurity",
+        "Education",
+        "Engineering & Engineering Technology",
+        "Graduate",
+        "Honors",
+        "Humanities & Social Sciences",
+        "Health & Human Services",
+        "International Programs",
+        "Online Programs",
+        "Professional Education",
+        "Science & Mathematics"
+      ],
+      [
+        "Current Students",
+        "Online Only Students",
+        "Faculty & Staff",
+        "Parents & Family",
+        "Alumni & Friends",
+        "Community & Business"
+      ],
+      [
+        "Libraries",
+        "Housing",
+        "Financial Aid",
+        "Degrees, Majors & Programs",
+        "Registrar",
+        "Job Opportunities"
+      ],
+      [
+        "Campus Security",
+        "Global Education",
+        "Sustainability",
+        "Accessibility"
+      ],
+      [
+        "Welcome to the Michael J. Coles College of Business",
+        "Find Your Degree",
+        "FIND YOUR INTEREST"
+      ],
+      [
+        "Follow KSU",
+        "470-KSU-INFO (470-578-4636)",
+        "\u00a9 2025 Kennesaw State University. All Rights Reserved."
+      ]
+    ],
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": [
+      [
+        "Home/",
+        "Undergraduate\u00a0Catalog/",
+        "Colleges\u00a0&\u00a0Departments/",
+        "College of Business Administration"
+      ],
+      [
+        "Introduction",
+        "Accreditation",
+        "Semester Hour Requirement",
+        "General and Basic Course Requirements",
+        "Business Course Requirements",
+        "Other Course Requirements",
+        "Other Requirements",
+        "Academic Load",
+        "Academic Notice and Dismissal Rules",
+        "Change of Course Schedule\u2014Dropping Courses",
+        "Change of Major/Declaring a Major",
+        "Class Attendance",
+        "Closed Courses",
+        "College Level Examination Program (CLEP)",
+        "Course Prerequisites",
+        "Credit/No Credit Option",
+        "Double Major, Double Degrees, and Second Bachelor\u2019s Degree",
+        "Graduate-Level Courses for Undergraduate Credit",
+        "Independent Study",
+        "Petition Procedure",
+        "Proficiency Examinations",
+        "Required Advising for Registration Approval",
+        "Repeat Policy for Standard Graded Courses",
+        "Transferring",
+        "Minors for CBA Students",
+        "Minors for Non-CBA Students",
+        "Advising Policy",
+        "Required Advising",
+        "Policies to Ensure Academic Progress",
+        "College Honors",
+        "Dean\u2019s List",
+        "Department Honors",
+        "Undergraduate Programs",
+        "Business Career Center",
+        "Academic Options",
+        "Honor Code",
+        "Student Organizations and Co-Curricular Opportunities",
+        "Sample Business Major Curriculum for First Year Students"
+      ],
+      [
+        "Semester Hour Requirement",
+        "General and Basic Course Requirements",
+        "Business Course Requirements",
+        "Other Course Requirements",
+        "Other Requirements"
+      ],
+      [
+        "Academic Load",
+        "Academic Notice and Dismissal Rules",
+        "Change of Course Schedule\u2014Dropping Courses",
+        "Change of Major/Declaring a Major",
+        "Class Attendance",
+        "Closed Courses",
+        "College Level Examination Program (CLEP)",
+        "Course Prerequisites",
+        "Credit/No Credit Option",
+        "Double Major, Double Degrees, and Second Bachelor\u2019s Degree",
+        "Graduate-Level Courses for Undergraduate Credit",
+        "Independent Study",
+        "Petition Procedure",
+        "Proficiency Examinations",
+        "Required Advising for Registration Approval",
+        "Repeat Policy for Standard Graded Courses",
+        "Transferring"
+      ],
+      [
+        "Advising Policy",
+        "Required Advising",
+        "Policies to Ensure Academic Progress"
+      ],
+      [
+        "College Honors",
+        "Dean\u2019s List",
+        "Department Honors"
+      ],
+      [
+        "Undergraduate Programs",
+        "Business Career Center",
+        "Academic Options",
+        "Honor Code"
+      ],
+      [
+        "accounting",
+        "entrepreneurship",
+        "finance",
+        "human resource management",
+        "information and decision sciences",
+        "management",
+        "marketing",
+        "real estate studies"
+      ],
+      [
+        "Placing into 103-level foreign language course (or higher) at UIC via the UIC Placement Exam",
+        "Showing proof of having earned the Illinois State Seal of Biliteracy",
+        "Earning an 8/12 on the New York University Proficiency Test (at student\u2019s expense)"
+      ],
+      [
+        "Placing into 103-level foreign language course (or higher) at UIC via the UIC Placement Exam",
+        "Showing proof of having earned the Illinois State Seal of Biliteracy",
+        "Earning an 8/12 on the New York University Proficiency Test (at student\u2019s expense)"
+      ],
+      [
+        "Analyzing the Natural World",
+        "Understanding the Individual and Society",
+        "Understanding the Past",
+        "Understanding the Creative Arts",
+        "Exploring World Cultures",
+        "Understanding U.S. Society"
+      ],
+      [
+        "all courses taken at the University of Illinois Chicago",
+        "all courses (UIC and transfer) counted toward the degree and",
+        "in the major."
+      ],
+      [
+        "The college will initiate course exclusions, and only in consultation with the evaluated student.",
+        "This policy only applies to undergraduate degree-seeking students.",
+        "All courses taken and all grades will remain on the official transcript.",
+        "Grades earned from institutions other than UIC cannot be excluded."
+      ],
+      [
+        "Students must enroll in a math or statistics course each semester until the sequence is completed.",
+        "ENGL\u00a0160\u00a0and\u00a0ENGL\u00a0161\u00a0should be completed by the end of the first year.",
+        "ECON\u00a0120\u00a0should be completed during the first year."
+      ],
+      [
+        "Complete the degree requirements.",
+        "Earn a minimum of 60 semester hours of credit at UIC.",
+        "Achieve a minimum UIC cumulative grade point average of 3.50."
+      ],
+      [
+        "Distinction:\u00a0Overall cumulative GPA of 3.25 and major GPA of 3.25",
+        "High Distinction:\u00a0Overall cumulative GPA of 3.50 and major GPA of 3.50",
+        "Highest Distinction:\u00a0Overall cumulative GPA of 3.75 and major GPA of 3.75"
+      ],
+      [
+        "2024-2025 Undergraduate Catalog",
+        "Introduction",
+        "Accreditation",
+        "Degree Requirements",
+        "College Policies",
+        "Minors",
+        "Academic Advising",
+        "Academic Honors",
+        "Special Programs and Opportunities",
+        "Student Organizations and Co-Curricular Opportunities",
+        "Sample Business Major Curriculum for First Year Students",
+        "Print Options"
+      ],
+      [
+        "Semester Hour Requirement",
+        "General and Basic Course Requirements",
+        "Business Course Requirements",
+        "Other Course Requirements",
+        "Other Requirements",
+        "Academic Load",
+        "Academic Notice and Dismissal Rules",
+        "Change of Course Schedule\u2014Dropping Courses",
+        "Change of Major/Declaring a Major",
+        "Class Attendance",
+        "Closed Courses",
+        "College Level Examination Program (CLEP)",
+        "Course Prerequisites",
+        "Credit/No Credit Option",
+        "Double Major, Double Degrees, and Second Bachelor\u2019s Degree",
+        "Graduate-Level Courses for Undergraduate Credit",
+        "Independent Study",
+        "Petition Procedure",
+        "Proficiency Examinations",
+        "Required Advising for Registration Approval",
+        "Repeat Policy for Standard Graded Courses",
+        "Transferring",
+        "Minors for CBA Students",
+        "Minors for Non-CBA Students",
+        "Advising Policy",
+        "Required Advising",
+        "Policies to Ensure Academic Progress",
+        "College Honors",
+        "Dean\u2019s List",
+        "Department Honors",
+        "Undergraduate Programs",
+        "Business Career Center",
+        "Academic Options",
+        "Honor Code"
+      ],
+      [
+        "University General Education Requirements",
+        "Electives",
+        "Business Administration Course Requirements",
+        "Foreign Language Requirement",
+        "General Education Core",
+        "General Education Proficiencies\u2014University Writing Requirement",
+        "Mathematics Requirements",
+        "Coursework Limitations",
+        "Grade Point Average (GPA) Requirement",
+        "Graduation Declaration/Filing to Graduate/Degree Completion",
+        "Enrollment Residence Requirement",
+        "Ethics Requirement",
+        "Assessment Requirement",
+        "Computer Requirement",
+        "Term Notice Rules",
+        "Academic Notice Rules",
+        "Dismissal Rulesa",
+        "Double Major",
+        "Dual Degrees",
+        "Second Bachelor\u2019s Degree",
+        "Undergraduate Grade Point Average Recalculation/Grade Exclusion Policy",
+        "Intercollege Transfer Students",
+        "Before Applying",
+        "Transfer Students from Other Colleges and Universities"
+      ],
+      [
+        "Send Page to Printer\n\n\nPrint this page.",
+        "Download Page (PDF)The PDF will include all information unique to this page.",
+        "Download PDF of the entire 2024-2025 Undergraduate CatalogAll pages in the Undergraduate Catalog."
+      ],
+      [
+        "Major",
+        "Accounting",
+        "Entrepreneurship",
+        "Finance",
+        "Human Resource Management",
+        "Information and Decision Sciences",
+        "Management",
+        "Marketing",
+        "Real Estate",
+        "BBA Degree Completion Program (Online or Campus)a"
+      ],
+      [
+        "Required Courses",
+        "Business Administration Professional Development",
+        "BA\u00a0100",
+        "BA\u00a0101",
+        "BA\u00a0220",
+        "BA\u00a0320",
+        "BA\u00a0420",
+        "English",
+        "ENGL\u00a0160",
+        "ENGL\u00a0161",
+        "Mathematics",
+        "Select one of the following Tracks:",
+        "Track I c",
+        "MATH\u00a0125",
+        "MATH\u00a0165",
+        "Track II c",
+        "MATH\u00a0160",
+        "MATH\u00a0165",
+        "Economics",
+        "ECON\u00a0120",
+        "ECON\u00a0121",
+        "Communication",
+        "COMM\u00a0100",
+        "BA\u00a0395",
+        "Total Hours"
+      ],
+      [
+        "Subject Area",
+        "Analyzing the Natural World course a",
+        "Exploring World Cultures course",
+        "Understanding the Creative Arts course",
+        "Understanding the Individual and Society course b",
+        "Understanding the Past course",
+        "Understanding U.S. Society course c"
+      ],
+      [
+        "Business Core\u2014Required Courses a",
+        "Accounting",
+        "ACTG\u00a0210",
+        "ACTG\u00a0211",
+        "Business Administration",
+        "BA\u00a0200",
+        "Finance",
+        "FIN\u00a0300",
+        "Information and Decision Sciences",
+        "IDS\u00a0200",
+        "IDS\u00a0270",
+        "IDS\u00a0355",
+        "Management",
+        "MGMT\u00a0340",
+        "MGMT\u00a0350",
+        "Marketing",
+        "MKTG\u00a0360",
+        "Total Hours"
+      ],
+      [
+        "Business Core\u2014Selective Courses",
+        "Advanced Quantitative Skills f",
+        "Select one of the following: c",
+        "ECON\u00a0300",
+        "FIN\u00a0330",
+        "IDS\u00a0371",
+        "MKTG\u00a0462",
+        "ACTG\u00a0392",
+        "Global Business Perspective",
+        "Select one of the following: d",
+        "ACTG\u00a0484",
+        "ECON\u00a0333",
+        "ENTR\u00a0435",
+        "FIN\u00a0442",
+        "MGMT\u00a0460",
+        "MKTG\u00a0469",
+        "Integrative Course\u2014Competitive Strategy",
+        "Select one of the following: e",
+        "ACTG\u00a0495",
+        "IDS\u00a0495",
+        "MGMT\u00a0495",
+        "Total Hours"
+      ],
+      [
+        "The Major and Business Electives",
+        "Select a major from the following areas:",
+        "Total Hours"
+      ],
+      [
+        "Courses",
+        "BA\u00a0101",
+        "BA\u00a0289",
+        "Courses offered under the English Language and Support for Internationals (ELSI) subject",
+        "Music skills courses",
+        "Some Kinesiology courses, please check with an academic advisor"
+      ],
+      [
+        "Courses",
+        "ENGL\u00a0160",
+        "ENGL\u00a0161",
+        "COMM\u00a0100",
+        "ECON\u00a0120",
+        "ECON\u00a0121",
+        "MATH\u00a0125",
+        "MATH\u00a0160",
+        "MATH\u00a0165",
+        "MATH\u00a0180",
+        "MATH\u00a0181",
+        "\u2022 Business Core courses",
+        "\u2022 Major business courses",
+        "\u2022 Business elective courses",
+        "\u2022 Any accounting courses",
+        "\u2022 Minor courses"
+      ],
+      [
+        "Minor",
+        "Accountinga",
+        "Business Analyticsa",
+        "Entrepreneurshipa",
+        "Financea",
+        "Human Resource Managementa",
+        "International Business",
+        "Leadershipa",
+        "Management Information Systemsa",
+        "Marketinga",
+        "Professional Sales and Relationship Managementa",
+        "Real Estatea",
+        "Supply Chain and Operations Managementa"
+      ],
+      [
+        "Minor",
+        "Accounting",
+        "Business Administration",
+        "Business Analytics",
+        "Entrepreneurship",
+        "Finance",
+        "Human Resource Management",
+        "Leadership",
+        "Management Information Systems",
+        "Professional Sales and Relationship Management",
+        "Real Estate",
+        "Supply Chain and Operations Management"
+      ],
+      [
+        "semester",
+        "semester",
+        "curricular programming."
+      ]
+    ],
+    "https://www.coastal.edu/business/": [
+      [
+        "Welcome to the Wall College of Business",
+        "Wall College Fast Facts",
+        "Explore the Wall College of Business",
+        "Enroll or Apply today!",
+        "Follow us on Social Media"
+      ],
+      [
+        "Dean's Office",
+        "Academic Programs and Departments",
+        "Student Resources",
+        "Community Engagement",
+        "Wall College Faculty and Staff",
+        "Give to the Wall College",
+        "Instagram",
+        "Facebook",
+        "Linkedin"
+      ],
+      [
+        "21\n\nPrograms",
+        "3000\r\n                    +\r\n                \nCurrently enrolled",
+        "11000\r\n                    +\r\n                \nAlumni"
+      ],
+      [
+        "Dean's Office",
+        "Academic Programs and Departments",
+        "Student Resources",
+        "Community Engagement",
+        "Wall College Faculty and Staff",
+        "Give to the Wall College"
+      ],
+      [
+        "Instagram",
+        "Facebook",
+        "Linkedin"
+      ]
+    ],
+    "https://www.sfasu.edu/cob": [
+      [
+        "School of Accountancy",
+        "Business Communication & Legal Studies",
+        "Economics & Finance",
+        "Management & Marketing"
+      ],
+      [
+        "CONTACT US\n936.468.3101",
+        "CONNECT WITH US\n\n\n\n\n\nFind us on Instagram\n\n\n\n\n\nFind us on Twitter\n\n\n\n\n\nFind us on Facebook",
+        "Find us on Instagram",
+        "Find us on Twitter",
+        "Find us on Facebook"
+      ],
+      [
+        "Find us on Instagram",
+        "Find us on Twitter",
+        "Find us on Facebook"
+      ],
+      [
+        "Degree Programs",
+        "Academics",
+        "Rusche Facts",
+        "Transformative Experiences",
+        "Notable Alumni"
+      ],
+      [
+        "$375,000scholarshipsawarded annuallyJune 2024",
+        "$1 millionstock portfoliomanaged bybusiness studentsJune 2024",
+        "AACSB accreditationachieved by only6% of business colleges worldwideJune 2024"
+      ]
+    ],
+    "https://www.sjsu.edu/academics/colleges-and-departments.php": [
+      [
+        "Accounting and Finance",
+        "School of Information Systems and Technology",
+        "Marketing and Business Analytics",
+        "Hospitality, Tourism, and Event Management"
+      ],
+      [
+        "School of Management",
+        "School of Global Innovation and Leadership",
+        "Lucas Graduate School of Business"
+      ],
+      [
+        "Child and Adolescent Development",
+        "Communicative Disorders and Sciences",
+        "Counselor Education",
+        "Educational Leadership"
+      ],
+      [
+        "Teacher Education",
+        "Special Education",
+        "Ed.D Leadership Program"
+      ],
+      [
+        "Aerospace Engineering",
+        "Aviation and Technology",
+        "Biomedical Engineering",
+        "Chemical and Materials Engineering",
+        "Civil and Environmental Engineering",
+        "Computer Engineering"
+      ],
+      [
+        "Electrical Engineering",
+        "Engineering Extended Studies",
+        "Interdisciplinary Engineering",
+        "Industrial and Systems Engineering",
+        "Mechanical Engineering"
+      ],
+      [
+        "Aerospace Studies (Air Force ROTC)",
+        "Audiology",
+        "Public Health and Recreation",
+        "Kinesiology",
+        "Military Science (Army ROTC)"
+      ],
+      [
+        "School of Nursing",
+        "Nutrition, Food Science and Packaging",
+        "Occupational Therapy",
+        "School of Social Work"
+      ],
+      [
+        "Art and Art History",
+        "Design",
+        "English and Comparative Literature",
+        "Humanities",
+        "School of Journalism and Mass Communications"
+      ],
+      [
+        "Linguistics and Language Development",
+        "Music",
+        "Philosophy",
+        "Film, Theatre, and Dance",
+        "World Languages and Literatures"
+      ],
+      [
+        "Academic Programs",
+        "Open University",
+        "Professional Development",
+        "Summer Session",
+        "Winter Session"
+      ],
+      [
+        "International Gateways",
+        "International Student and Scholar Services",
+        "International Recruitment and Partnerships",
+        "International House",
+        "Study Abroad and Away"
+      ],
+      [
+        "Biological Sciences",
+        "Chemistry",
+        "Computer Science",
+        "Geology",
+        "Mathematics and Statistics"
+      ],
+      [
+        "Meteorology and Climate Science",
+        "Moss Landing Marine Labs",
+        "Physics and Astronomy",
+        "Science Education"
+      ],
+      [
+        "African American Studies",
+        "Anthropology",
+        "Chicana and Chicano Studies",
+        "Communication Studies",
+        "Economics",
+        "Environmental Studies"
+      ],
+      [
+        "History",
+        "Justice Studies",
+        "Political Science",
+        "Psychology",
+        "Sociology and Interdisciplinary Social Sciences",
+        "Urban and Regional Planning"
+      ],
+      [
+        "looking",
+        "oriented and user",
+        "focused"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 10:41:03"
+}

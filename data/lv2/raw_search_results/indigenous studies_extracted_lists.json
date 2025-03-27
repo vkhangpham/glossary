@@ -1,0 +1,855 @@
+{
+  "level1_term": "indigenous studies",
+  "url_verification_status": {
+    "https://socialsciences.uoregon.edu/native-studies": false,
+    "https://socialsciences.uoregon.edu/ethnic-studies": true,
+    "https://cals.cornell.edu/american-indian-indigenous-studies/academics-research/aiis-courses": false,
+    "https://caiis.uw.edu/": false,
+    "https://ais.washington.edu/": false,
+    "https://subjectguides.lib.neu.edu/c.php?g=1328891&p=9784353": false,
+    "https://native-american.dartmouth.edu/undergraduate/courses": true,
+    "https://www.wvc.edu/academics/AIIS/index.html": true,
+    "https://www.uidaho.edu/class/martin-institute/students-alumni/indigenous": false,
+    "https://artsci.washington.edu/academics/social-sciences/american-indian-studies/fact-sheet": true,
+    "https://www.brown.edu/undergraduate-programs/critical-native-american-and-indigenous-studies-ab": true,
+    "https://social-critical-inquiry.uconn.edu/courses/native-american-and-indigenous-studies/": true,
+    "https://www.northwestern.edu/native-american-and-indigenous-peoples/people/cnair.html": false,
+    "https://native-american.dartmouth.edu/undergraduate": true,
+    "https://morris.umn.edu/academics/native-american-and-indigenous-studies": false,
+    "https://www.hampshire.edu/academics/areas-of-study/native-american-and-indigenous-studies": true,
+    "https://cals.cornell.edu/american-indian-indigenous-studies": false,
+    "https://indigenous.princeton.edu/about": false,
+    "https://health.lehigh.edu/research-partnerships/research-centers-and-institutes/institute-indigenous-studies": false,
+    "https://artsandsciences.syracuse.edu/degree-programs/native-american-and-indigenous-studies-minor/": false,
+    "https://cola.unh.edu/global-racial-social-inequality-lab/program/minor/native-american-indigenous-studies": true
+  },
+  "verified_lists_per_url": {
+    "https://socialsciences.uoregon.edu/native-studies": 0,
+    "https://socialsciences.uoregon.edu/ethnic-studies": 1,
+    "https://cals.cornell.edu/american-indian-indigenous-studies/academics-research/aiis-courses": 0,
+    "https://caiis.uw.edu/": 0,
+    "https://ais.washington.edu/": 0,
+    "https://subjectguides.lib.neu.edu/c.php?g=1328891&p=9784353": 0,
+    "https://native-american.dartmouth.edu/undergraduate/courses": 1,
+    "https://www.wvc.edu/academics/AIIS/index.html": 1,
+    "https://www.uidaho.edu/class/martin-institute/students-alumni/indigenous": 0,
+    "https://artsci.washington.edu/academics/social-sciences/american-indian-studies/fact-sheet": 1,
+    "https://www.brown.edu/undergraduate-programs/critical-native-american-and-indigenous-studies-ab": 1,
+    "https://social-critical-inquiry.uconn.edu/courses/native-american-and-indigenous-studies/": 1,
+    "https://www.northwestern.edu/native-american-and-indigenous-peoples/people/cnair.html": 0,
+    "https://native-american.dartmouth.edu/undergraduate": 1,
+    "https://morris.umn.edu/academics/native-american-and-indigenous-studies": 0,
+    "https://www.hampshire.edu/academics/areas-of-study/native-american-and-indigenous-studies": 1,
+    "https://cals.cornell.edu/american-indian-indigenous-studies": 0,
+    "https://indigenous.princeton.edu/about": 0,
+    "https://health.lehigh.edu/research-partnerships/research-centers-and-institutes/institute-indigenous-studies": 0,
+    "https://artsandsciences.syracuse.edu/degree-programs/native-american-and-indigenous-studies-minor/": 0,
+    "https://cola.unh.edu/global-racial-social-inequality-lab/program/minor/native-american-indigenous-studies": 1
+  },
+  "total_lists_per_url": {
+    "https://socialsciences.uoregon.edu/native-studies": 3,
+    "https://socialsciences.uoregon.edu/ethnic-studies": 8,
+    "https://cals.cornell.edu/american-indian-indigenous-studies/academics-research/aiis-courses": 3,
+    "https://caiis.uw.edu/": 2,
+    "https://ais.washington.edu/": 2,
+    "https://subjectguides.lib.neu.edu/c.php?g=1328891&p=9784353": 3,
+    "https://native-american.dartmouth.edu/undergraduate/courses": 5,
+    "https://www.wvc.edu/academics/AIIS/index.html": 2,
+    "https://www.uidaho.edu/class/martin-institute/students-alumni/indigenous": 3,
+    "https://artsci.washington.edu/academics/social-sciences/american-indian-studies/fact-sheet": 6,
+    "https://www.brown.edu/undergraduate-programs/critical-native-american-and-indigenous-studies-ab": 2,
+    "https://social-critical-inquiry.uconn.edu/courses/native-american-and-indigenous-studies/": 1,
+    "https://www.northwestern.edu/native-american-and-indigenous-peoples/people/cnair.html": 1,
+    "https://native-american.dartmouth.edu/undergraduate": 2,
+    "https://morris.umn.edu/academics/native-american-and-indigenous-studies": 2,
+    "https://www.hampshire.edu/academics/areas-of-study/native-american-and-indigenous-studies": 3,
+    "https://cals.cornell.edu/american-indian-indigenous-studies": 5,
+    "https://indigenous.princeton.edu/about": 2,
+    "https://health.lehigh.edu/research-partnerships/research-centers-and-institutes/institute-indigenous-studies": 2,
+    "https://artsandsciences.syracuse.edu/degree-programs/native-american-and-indigenous-studies-minor/": 10,
+    "https://cola.unh.edu/global-racial-social-inequality-lab/program/minor/native-american-indigenous-studies": 14
+  },
+  "verified_lists_ids": {
+    "https://socialsciences.uoregon.edu/native-studies": [],
+    "https://socialsciences.uoregon.edu/ethnic-studies": [
+      4
+    ],
+    "https://cals.cornell.edu/american-indian-indigenous-studies/academics-research/aiis-courses": [],
+    "https://caiis.uw.edu/": [],
+    "https://ais.washington.edu/": [],
+    "https://subjectguides.lib.neu.edu/c.php?g=1328891&p=9784353": [],
+    "https://native-american.dartmouth.edu/undergraduate/courses": [
+      3
+    ],
+    "https://www.wvc.edu/academics/AIIS/index.html": [
+      1
+    ],
+    "https://www.uidaho.edu/class/martin-institute/students-alumni/indigenous": [],
+    "https://artsci.washington.edu/academics/social-sciences/american-indian-studies/fact-sheet": [
+      0
+    ],
+    "https://www.brown.edu/undergraduate-programs/critical-native-american-and-indigenous-studies-ab": [
+      0
+    ],
+    "https://social-critical-inquiry.uconn.edu/courses/native-american-and-indigenous-studies/": [
+      0
+    ],
+    "https://www.northwestern.edu/native-american-and-indigenous-peoples/people/cnair.html": [],
+    "https://native-american.dartmouth.edu/undergraduate": [
+      0
+    ],
+    "https://morris.umn.edu/academics/native-american-and-indigenous-studies": [],
+    "https://www.hampshire.edu/academics/areas-of-study/native-american-and-indigenous-studies": [
+      2
+    ],
+    "https://cals.cornell.edu/american-indian-indigenous-studies": [],
+    "https://indigenous.princeton.edu/about": [],
+    "https://health.lehigh.edu/research-partnerships/research-centers-and-institutes/institute-indigenous-studies": [],
+    "https://artsandsciences.syracuse.edu/degree-programs/native-american-and-indigenous-studies-minor/": [],
+    "https://cola.unh.edu/global-racial-social-inequality-lab/program/minor/native-american-indigenous-studies": [
+      0
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 81,
+  "url_to_lists": {
+    "https://socialsciences.uoregon.edu/native-studies": [
+      [
+        "Sapsik'\u02b7a\u0142\u00e1\u00a0Teacher Education Program",
+        "Northwest Indian Language Institute\u200b\u200b\u200b\u200b\u200b\u200b",
+        "Pacific Northwest Tribal Climate Change Project",
+        "Honoring Tribal Legacies",
+        "Indigenous Pre-College Academy (IPCA)",
+        "Lane Community College Longhouse",
+        "Chinuk Wawa Program at Lane Community College",
+        "Other Resources and Native Faculty/Staff Contacts",
+        "Honoring Native Peoples and Lands",
+        "Museum of Natural and Cultural History"
+      ],
+      [
+        "Search this site",
+        "Social Sciences",
+        "Department Navigation",
+        "Major Requirements",
+        "Minor Requirements",
+        "Native American and Indigenous Studies Advisory Council",
+        "Territorial Acknowledgment",
+        "NAIS in the News"
+      ],
+      [
+        "Paiute Tribes, Fallon Paiute",
+        "Shoshone Tribe, Fort Bidwell Indian Tribe, Fort McDermitt Paiute",
+        "Sparks Indian Colony, Roaring Creek Rancheria, Shoalwater Bay Tribe, Shoshone",
+        "Bannock Tribes, Smith River Rancheria, Summit Lake Paiute Tribe, Susanville Rancheria, Tolowa"
+      ]
+    ],
+    "https://socialsciences.uoregon.edu/ethnic-studies": [
+      [
+        "Teachers",
+        "Tribal council members",
+        "Professors, educational administrators",
+        "Nonprofit directors",
+        "Organizers",
+        "Media producers",
+        "Social workers",
+        "Lawyers"
+      ],
+      [
+        "Search this site",
+        "Social Sciences",
+        "Department Navigation",
+        "Our Degree Programs",
+        "What You Can Do with a Degree from the Department of Indigenous, Race, and Ethnic Studies",
+        "Affiliated Programs",
+        "How IRES Can Enrich Your Career",
+        "Learn from Experts in the Field",
+        "Get Real-World Experience",
+        "Our History",
+        "Scholarships and Funding",
+        "Academic Support",
+        "Honoring Native Peoples and Lands",
+        "Indigenous, Race, and Ethnic Studies News and Events"
+      ],
+      [
+        "Undergraduate Degrees",
+        "BA or BS in Ethnic Studies",
+        "Minor in Ethnic Studies"
+      ],
+      [
+        "Graduate Degrees",
+        "Graduate Certificate in Indigenous, Race, and Ethnic Studies",
+        "PhD in Indigenous, Race, and Ethnic Studies"
+      ],
+      [
+        "Native American and Indigenous Studies",
+        "Black Studies",
+        "Latinx Studies"
+      ],
+      [
+        "Department of History Coffee Hour",
+        "Apr 1",
+        "McKenzie Hall"
+      ],
+      [
+        "Department of History Coffee Hour",
+        "Apr 8",
+        "McKenzie Hall"
+      ],
+      [
+        "Creative Writing Program Presents: Screening of RULE BREAKERS and Q&A",
+        "Apr 8",
+        "Erb Memorial Union (EMU)"
+      ]
+    ],
+    "https://cals.cornell.edu/american-indian-indigenous-studies/academics-research/aiis-courses": [
+      [
+        "Fall 2024",
+        "Spring 2024",
+        "Fall 2023",
+        "Spring 2023",
+        "Fall 2022",
+        "Spring 2022",
+        "Fall 2021",
+        "Spring 2021",
+        "Fall 2020",
+        "Spring 2020",
+        "Fall 2019",
+        "Spring 2019",
+        "Fall 2018",
+        "Spring 2018",
+        "Fall 2017",
+        "Spring 2017",
+        "Fall 2016"
+      ],
+      [
+        "Explore the AIIS courses offered this semester",
+        "AIIS 1110/AMST 1601: Indigenous Issues in Global Perspectives",
+        "AIIS/AMST/ANTHR/ARKEO 2720: From The Swampy Land: Indigenous People of the Ithaca Area",
+        "Courses with Indigenous content"
+      ],
+      [
+        "CHERO 1120: Beginning Cherokee II",
+        "QUECH 1210: Elementary Quechua I",
+        "ANTHR 4755: Indigenous Erasure and Resurfacing"
+      ]
+    ],
+    "https://caiis.uw.edu/": [
+      [
+        "Summer Institute in Indigenous Humanities",
+        "CAIIS Launches the First UW Canoe Family",
+        "Pedagogy Summit 2022",
+        "Indigenous Studies Symposium",
+        "Upcoming Events",
+        "Upcoming events",
+        "Stay Connected",
+        "Center for American Indian and Indigenous Studies",
+        "Funding Organizations and University Partners"
+      ],
+      [
+        "CAIIS Launches the First UW Canoe Family\n\n\t\t\t\t\t\t\t\t\t\tMay 6, 2022",
+        "Pedagogy Summit 2022\n\n\t\t\t\t\t\t\t\t\t\tMarch 22, 2022",
+        "Indigenous Studies Symposium\n\n\t\t\t\t\t\t\t\t\t\tMarch 9, 2022"
+      ]
+    ],
+    "https://ais.washington.edu/": [
+      [
+        "Major in American Indian Studies",
+        "Minor in American Indian Studies",
+        "Minor in Oceania and Pacific Islander Studies",
+        "Certificate in Business Essentials of Tribal Gaming & Hospitality Management",
+        "Graduate Certificate in American Indian Studies"
+      ],
+      [
+        "Indigenous Walking Tour",
+        "Jean Dennison, Final Projects AIS 102",
+        "Jean Dennison, Vital Relations: How the Osage Nation Moves Indigenous Nationhood into the Future",
+        "Charlotte Cot\u00e9, A Drum in One Hand, a Sockeye in the Other",
+        "Christopher B. Teuton, Cherokee Earth Dwellers",
+        "Alexandra \"Sasha\" Harmon, Reclaiming the Reservation"
+      ]
+    ],
+    "https://subjectguides.lib.neu.edu/c.php?g=1328891&p=9784353": [
+      [
+        "Get Started",
+        "Find Articles and Archives",
+        "Find Books and Media",
+        "Cite Sources",
+        "For Faculty and Instructors"
+      ],
+      [
+        "Green Paper",
+        "Grey Literature",
+        "Journal"
+      ],
+      [
+        "Boston",
+        "Arlington",
+        "Burlington",
+        "Charlotte",
+        "London",
+        "Miami",
+        "Nahant",
+        "Oakland",
+        "Portland",
+        "Seattle",
+        "Silicon Valley",
+        "Toronto",
+        "Vancouver"
+      ]
+    ],
+    "https://native-american.dartmouth.edu/undergraduate/courses": [
+      [
+        "NAIS 25\u00a0Indian Country Today-9L- Duthu",
+        "NAIS 30.08 Contemporary Native American and Indigenous Art-3A-Powell",
+        "LING 11.06/NAIS 40 Language Revitalization -11- Whaley (SOC, CI)"
+      ],
+      [
+        "NAIS 8\u00a0Perspectives in Native American Studies-10A-Hooley",
+        "NAIS009/HIST9.08 Settler Colonialsm - -Musselwhite",
+        "NAIS 18/ENVS 18 Indigenous Environmental Studies-2A- Ferguson",
+        "HIST 96.08/NAIS 81.03 Pen and Ink Witchcraft: Native American History Through Treaties-10A-Calloway",
+        "NAIS 85, 86, 87 Independent Study, Research, Honors Thesis (permission required) - Arrange"
+      ],
+      [
+        "NAIS 8 Perspectives in Native American Studies-10A-Hooley",
+        "NAIS 30.30 Indigenous Reproductive Justice\u00a0-2A- Lucero",
+        "NAIS 30.28/ANTH 50.34\u00a0 Peoples of Oceania -12 -Ferguson",
+        "NAIS 35/ENGL 32 Native American Literature\u00a0-10-\u00a0Taylor",
+        "NAIS 50/ GOVT 69 Federal Indian Law\u00a0-10A-Duthu",
+        "NAIS 81.06/ ENGL xx Fictions of Indigeneity -11-Taylor",
+        "NAIS 85, 86, 87 Independent Study, Research, Honors Thesis (permission required) - Arrange"
+      ],
+      [
+        "Native American and Indigenous Studies",
+        "Main menu",
+        "Search form",
+        "Course Details",
+        "Summer 2023",
+        "FAll 2023",
+        "Winter 2024",
+        "Spring 2024",
+        "Main menu"
+      ],
+      [
+        "Admissions",
+        "Academics",
+        "Campus Life",
+        "Share",
+        "My DartmouthClick to Open",
+        "Find it FastClick to Open",
+        "ResourcesClick to Open",
+        "Connect With Us"
+      ]
+    ],
+    "https://www.wvc.edu/academics/AIIS/index.html": [
+      [
+        "25Live Room/Event Scheduling",
+        "Brand Identity",
+        "Business Office",
+        "Commons",
+        "ctcLink",
+        "Employee Email",
+        "Faculty & Staff Directory",
+        "Human Resources",
+        "IT Help Desk",
+        "Purchasing",
+        "Work Order",
+        "WVC Zoom"
+      ],
+      [
+        "government relationship with the Confederated Tribes of the Colville",
+        "cultural",
+        "Indigenous communities through higher education cross",
+        "cultural",
+        "cultural understanding."
+      ]
+    ],
+    "https://www.uidaho.edu/class/martin-institute/students-alumni/indigenous": [
+      [
+        "Martin Scholars program",
+        "Martin Institute",
+        "International Studies program",
+        "Ashley Kerr profile",
+        "Department of Modern Languages and Cultures"
+      ],
+      [
+        "Virtual Tour",
+        "Explore",
+        "More Resources",
+        "Take Action",
+        "Title IX",
+        "Get Involved",
+        "Resources",
+        "Top Links",
+        "Upcoming Events",
+        "Stay Connected",
+        "Resources",
+        "More Resources",
+        "Benefits and Services",
+        "Get Involved",
+        "Stay Connected",
+        "SlateConnect",
+        "Common Tools",
+        "Resources",
+        "Services",
+        "Topic Areas",
+        "Resources",
+        "Moscow",
+        "Moscow"
+      ],
+      [
+        "Alma Deli\u0107",
+        "close\n\n\n\n\n                    Alma Deli\u0107",
+        "Ashley Kerr",
+        "close\n\n\n\n\n                    Ashley Kerr"
+      ]
+    ],
+    "https://artsci.washington.edu/academics/social-sciences/american-indian-studies/fact-sheet": [
+      [
+        "AIS 103 The Indigenous Pacific Northwest",
+        "AIS 170: American Indian Art and Aesthetics",
+        "AIS 209: The Unsettling of the Red Continent: American Indian History to 1815",
+        "AIS 314/315/316: Southern Lushootseed Language and Culture",
+        "AIS 335: American Indians and the Law",
+        "AIS 377: Contemporary American Indian Literature",
+        "AIS 379: Powwow: Traditions and Innovation",
+        "AIS 380 Indigenous Food Sovereignty",
+        "AIS 385: Indigenous Ecologies and Climate Change",
+        "AIS 480: Indigenous Resistance and Resurgence Movements in the United States, Canada, and Mexico"
+      ],
+      [
+        "Jessica Bissett Perea (Dena\u2019ina)",
+        "Jean Dennison (Osage)",
+        "Dian Million (Tanana Athabascan)",
+        "Joshua L. Reid (Snohomish)"
+      ],
+      [
+        "Chadwick Allen (Chickasaw)",
+        "Kathryn Bunn-Marcuse",
+        "Mar\u00eda\u00a0Elena Garc\u00eda",
+        "Sara L. Gonzalez",
+        "Sven Haakanson (Aluutiq)",
+        "Clarita Lefthand-Begay (Navajo)",
+        "Tony Lucero",
+        "Myra Parker (Mandan-Hidatsa-Cree)",
+        "John-Carlos Perea (Mescalero Apache, Irish, Chicano, German)"
+      ],
+      [
+        "Alexandra Harmon",
+        "Daniel Hart",
+        "Cheryl Metoyer (Cherokee)",
+        "Luana Ross (Salish)",
+        "Gary Witherspoon"
+      ],
+      [
+        "Cherokee Earth Dwellers: Stories and Teachings of the Natural World",
+        "Colonial Entanglement: Constituting a Twenty-First-Century Osage Nation",
+        "The Sea is My Country: The Maritime World of the Makahs",
+        "Deep Waters: The Textual Continuum in American Indian Literature",
+        "Cherokee Stories of the Turtle Island Liars\u2019 Club",
+        "Therapeutic Nations: Healing in an Age of Indigenous Human Rights",
+        "Indians in the Making",
+        "Spirits of Our Whaling Ancestors: Revitalizing Makah and Nuu-chah-nulth Traditions",
+        "Vital Relations: How the Osage Nation Moves Indigenous Nationhood into the Future"
+      ],
+      [
+        "Winter 2025",
+        "2 Professors",
+        "4 Associate Professors",
+        "2 Assistant Professors",
+        "1 Assistant Teaching Professor",
+        "1 Lecturer",
+        "9 Adjunct Faculty",
+        "5 Emeritus Faculty"
+      ]
+    ],
+    "https://www.brown.edu/undergraduate-programs/critical-native-american-and-indigenous-studies-ab": [
+      [
+        "American Studies",
+        "Anthropology",
+        "Environmental Studies",
+        "Ethnic Studies",
+        "Hispanic Studies",
+        "History",
+        "International and Public Affairs",
+        "Latin American and Caribbean Studies",
+        "Public Health"
+      ],
+      [
+        "Secondary Navigation Navigation",
+        "Site Navigation",
+        "Related Academic Areas",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Social Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation",
+        "Mobile Secondary Navigation Navigation"
+      ]
+    ],
+    "https://social-critical-inquiry.uconn.edu/courses/native-american-and-indigenous-studies/": [
+      [
+        "AMST/ENGL 1201-01: Introduction to American Studies \u2014 April Anson",
+        "AMST/ENGL 3265W-01: American Studies Methods: Land \u2014 April Anson",
+        "ANTH 1001W: Anthropology Through Film \u2014 Bruno Seraphin",
+        "ANTH 1010E: Global Climate Change and Human Societies \u2014 Bruno Seraphin",
+        "ANTH 2511: Anthropology of Museums (part of the NAIS minor) \u2014 Nathan Acebo",
+        "ANTH 3021: Contemporary Latin America \u2014 Joshua Mayer",
+        "ANTH/AFRA 3155: Anthropology of the African Diaspora \u2014 Joshua Mayer",
+        "ENGL 3623: Studies in Literature and Culture: Indigenous Horror, TH 2:00-3:15 \u2013 Kali Simmons",
+        "GEOG 3010: Indigenous Geographies in Abya Yala and Turtle Island (The Americas) \u2014 Alexandra Lami\u00f1a",
+        "POLS 5010: Theory and Politics of the University \u2014 Sandy Grande",
+        "WGSS 2124: Gender and Globalization \u2014 Alexandra Lami\u00f1a",
+        "WGGS 3998: Variable Topics: Introduction to Native American and Indigenous Studies \u2014 Chris Newell"
+      ]
+    ],
+    "https://www.northwestern.edu/native-american-and-indigenous-peoples/people/cnair.html": [
+      [
+        "History of Indigenous Studies Research Initiative",
+        "Native American & Indigenous Initiatives",
+        "Connect",
+        "Northwestern Resources"
+      ]
+    ],
+    "https://native-american.dartmouth.edu/undergraduate": [
+      [
+        "Native American and Indigenous Studies",
+        "Main menu",
+        "Search form",
+        "Native American and Indigenous Studies Today",
+        "Our Scholarly Community",
+        "NAS and NAIS History",
+        "Main menu"
+      ],
+      [
+        "Admissions",
+        "Academics",
+        "Campus Life",
+        "Share",
+        "My DartmouthClick to Open",
+        "Find it FastClick to Open",
+        "ResourcesClick to Open",
+        "Connect With Us"
+      ]
+    ],
+    "https://morris.umn.edu/academics/native-american-and-indigenous-studies": [
+      [
+        "James Cotter\n\nProfessor, Geology",
+        "Gabe Desrosiers\n\nLecturer, Native American and Indigenous Studies",
+        "Benjam\u00edn Narv\u00e1ez\n\nAssociate Professor, History"
+      ],
+      [
+        "Associate Professor, English",
+        "Discipline Coordinator, English",
+        "Discipline Coordinator, Native American and Indigenous Studies"
+      ]
+    ],
+    "https://www.hampshire.edu/academics/areas-of-study/native-american-and-indigenous-studies": [
+      [
+        "Challenging the Narrative with Global South Perspectives",
+        "Treaty Law: A History of Relationships",
+        "Decolonizing Nature",
+        "Community-based Indigenous Language Revitalization",
+        "Material Heritage of Palestine",
+        "The Removal of Indian Tribes in Southeast United States, 18th and 19th Centuries",
+        "Nutrition and Type II Diabetes in the White Mountain Apache",
+        "Double-Edged Sovereignty: The Paradox of Federal Indian Law",
+        "Bone Pathologies in the Ancient Black Mesa Anasazi",
+        "Robbing Culture: New Age Appropriation of Native American Spiritual Practices",
+        "Hopi and Zuni Childbirth Practices"
+      ],
+      [
+        "Indigenous and Decolonizing Education",
+        "Indigenous and Decolonizing\u00a0Pedagogy",
+        "Decolonial Undergrounds: Indigenous Sovereignty and Self-Determination through Subculture",
+        "Education for Liberation: Decolonizing Teaching and Learning",
+        "Global South Perspectives on Indigenous Liberation",
+        "Settler Nation: Race, Immigration, and U.S. Politics",
+        "U.S. Imperialism and Hawai'i"
+      ],
+      [
+        "History of Turtle Island: Introduction to Native North America (Mount Holyoke College)",
+        "Indigenous and Decolonial Ecologies (Mount Holyoke College)",
+        "Native American Activism in the Northeast (UMass)",
+        "Native American and Indigenous Studies and the Environment (Smith College)",
+        "Native American Literature (UMass)",
+        "Native New England (Smith College)",
+        "Rethinking Pocahontas: An Introduction to Native American Studies (Amherst College)",
+        "When Corn Mother Meets King Corn: Cultural Studies of the Americas (Amherst College)"
+      ]
+    ],
+    "https://cals.cornell.edu/american-indian-indigenous-studies": [
+      [
+        "American Indian and Indigenous Studies Program",
+        "Cornell Botanic Gardens",
+        "Biological and Environmental Engineering"
+      ],
+      [
+        "Undergraduate Minor",
+        "Graduate Minor",
+        "AIIS Courses",
+        "AIIS Faculty"
+      ],
+      [
+        "AIIS Undergraduate Minor",
+        "AIIS Graduate Minor",
+        "Current AIIS Courses"
+      ],
+      [
+        "SeminarNovember 12, 2024",
+        "AIISP Soup'er Series with Leonardo Santamaria Montero",
+        "November 12, 2024"
+      ],
+      [
+        "Seminar",
+        "October 29, 2024",
+        "AIISP Soup'er Series - Traditional Graffiti with Brandon Lazore"
+      ]
+    ],
+    "https://indigenous.princeton.edu/about": [
+      [
+        "Jessica Lambert (Class of 2022, Choctaw Nation)",
+        "Isabel Lockhart (Ph.D. \u201922, Department of English)",
+        "Sarah Malone (Department of English)",
+        "Sarah Rivett (Professor of English and American Studies)",
+        "Keely Toledo (Class of 2022, Navajo Nation)"
+      ],
+      [
+        "Main Menu",
+        "Search",
+        "Native American and Indigenous Studies Initiative at Princeton (NAISIP)",
+        "Site Credits",
+        "Footer"
+      ]
+    ],
+    "https://health.lehigh.edu/research-partnerships/research-centers-and-institutes/institute-indigenous-studies": [
+      [
+        "Prevention and treatment of tobacco addiction",
+        "Mental health and addiction",
+        "Environment and health",
+        "Obesity, weight loss, and diabetes",
+        "Maternal-child health",
+        "Youth suicide prevention",
+        "Infant and child speech and language acquisition",
+        "Reservation youth college prep",
+        "COVID-19",
+        "Contemporary Indigenous identity",
+        "Grant writing and research training programs for Native community members",
+        "Cultural education programs for non-Natives"
+      ],
+      [
+        "Lehigh College of Health",
+        "Lehigh Campus",
+        "Resources",
+        "Policies and Reports"
+      ]
+    ],
+    "https://artsandsciences.syracuse.edu/degree-programs/native-american-and-indigenous-studies-minor/": [
+      [
+        "Scott ManningStevens [Akwesasne Mohawk]",
+        "Percy  Abrams  [Onondaga Nation]",
+        "Philip P. Arnold",
+        "Hayley Marama Cavino  [Ng\u0101ti Whitikaupeka, Ng\u0101ti P\u016bkenga (Maori), Aotearoa/New Zealand]",
+        "Melissa  Chipman  [Cherokee descent]",
+        "PJ  DiPietro",
+        "Mariaelena  Huambachano  [Quechua, Peru]",
+        "Robin  Kimmerer  [Citizen Potawatomi Nation]",
+        "Heather  Law Pezzarossi",
+        "Aaron  Luedtke  [Suquamish descent]",
+        "Ethan  Madarieta",
+        "Dana M. Olwan",
+        "Guido  Pezzarossi",
+        "Chie  Sakakibara  [Ry\u016bky\u016ban descent, Japan]",
+        "Sascha  Scott",
+        "Adam  Singerman",
+        "Scott Manning Stevens  [Akwesasne Mohawk]",
+        "Sally Roesch Wagner"
+      ],
+      [
+        "Professor",
+        "pparnold@syr.edu",
+        "315.443.3861"
+      ],
+      [
+        "Assistant Professor: Arctic Paleoecology & Paleoclimate",
+        "mlchipma@syr.edu",
+        "315.443.2489"
+      ],
+      [
+        "Associate Professor",
+        "pjdipiet@syr.edu",
+        "315.443.3707"
+      ],
+      [
+        "Assistant Professor",
+        "mhuambac@syr.edu",
+        "315.443.3861"
+      ],
+      [
+        "Distinguished Teaching Professor, Environmental and Forest Biology",
+        "rkimmer@esf.com",
+        "315.470.6785"
+      ],
+      [
+        "Associate Professor and Director of Graduate Studies",
+        "dmolwan@syr.edu",
+        "315.443.3707"
+      ],
+      [
+        "Associate Professor and Interim Director of Native American and Indigenous Studies",
+        "gpezzaro@syr.edu",
+        "315.443.1359"
+      ],
+      [
+        "Associate Professor, Geography and the Environment",
+        "csakakib@syr.edu",
+        "315.443.3679"
+      ],
+      [
+        "Associate Professor",
+        "sscott04@syr.edu",
+        "315.443.5033"
+      ]
+    ],
+    "https://cola.unh.edu/global-racial-social-inequality-lab/program/minor/native-american-indigenous-studies": [
+      [
+        "Business",
+        "Education",
+        "Federal agencies and services",
+        "Government and law",
+        "Healthcare",
+        "Museums",
+        "Nonprofits and advocacy",
+        "Sciences"
+      ],
+      [
+        "Buddhism and Culture (ANTH/SOC)",
+        "Tibetan Culture and Society (ANTH/SOC",
+        "Guizhou Field Study (ANTH/WLL, 200-level, l credit)"
+      ],
+      [
+        "Gender and Society in North Africa and Beyond",
+        "North African Cultural Identities",
+        "Internship/Social Action Seminar",
+        "Islam In Morocco And North Africa (English-taught)",
+        "Arab Media and Issues of Politics and Culture"
+      ],
+      [
+        "History of Indigenous Cultures in Peru",
+        "Indigenous Peoples in Motion: Changes, Resistance, and Globalization",
+        "Quechua",
+        "Research Methods and Ethics",
+        "Independent Study Project"
+      ],
+      [
+        "Contemporary Senegalese Society and Culture",
+        "Intercultural Communication and Leadership (English)",
+        "Environment and Development in Senegal and Sub-Saharan Africa (English)",
+        "Public Health Issues and Challenges in West Africa"
+      ],
+      [
+        "Kiswahili",
+        "Field Research Seminar",
+        "Pre-History, Myths, Legends, and Beliefs of East Africa",
+        "Contemporary Educational Issues in East Africa",
+        "Gender and Development",
+        "History of East Africa",
+        "Poverty Analysis for Socio-economic Development"
+      ],
+      [
+        "Anthropology of the Himalayas",
+        "Ethnography of Bhutan",
+        "Anthropology of Identity",
+        "Anthropology of Gender",
+        "Kinship and Family",
+        "ASC201: Anthropology of Globalization",
+        "ASC301: Anthropology of Development",
+        "ASC303: Applied Anthropology",
+        "ASC304: Contemporary Issues in Anthropology",
+        "ATH101: Ecological Anthropology",
+        "ATH102: Medical Anthropology",
+        "ATH203: History and Theory of Anthropology",
+        "ATH204: Political Anthropology",
+        "ATH305: Anthropology of Religion and Rituals"
+      ],
+      [
+        "Dawnland Voices 2.0, Indigenous Writing from New England and the Northeast",
+        "Indigenous NH Collaborative Collective",
+        "UNH Sidore Lecture Series 2020-21, \"Honoring the Mother of All People\"",
+        "\"People of the Dawnland\" at Strawbery Banke Museum, Portsmouth, NH"
+      ],
+      [
+        "Dawnland Voices 2.0, Indigenous Writing from New England and the Northeast",
+        "Indigenous NH Collaborative Collective",
+        "UNH Sidore Lecture Series 2020-21, \"Honoring the Mother of All People\"",
+        "\"People of the Dawnland\" at Strawbery Banke Museum, Portsmouth, NH"
+      ],
+      [
+        "Commonly Searched Items:",
+        "Why study Native American and Indigenous studies at UNH?",
+        "Potential career areas",
+        "Program Description",
+        "Requirements for the Program"
+      ],
+      [
+        "Find Courses",
+        "View Course Catalog",
+        "Spring 2022 Minor Course Electives",
+        "Spring 2023 Minor Course List"
+      ],
+      [
+        "Thailand-TEAN-Chang Mai; CIEE Khon Kaeo",
+        "Morocco - IES & CIEE. Courses offered:",
+        "New Zealand - Otago. Courses offered:",
+        "Peru - SIT: Indigenous Peoples and Globalization. Courses offered:",
+        "Senegal -CIEE. Courses offered:",
+        "Tanzania-CIEE. Courses offered:",
+        "Bhutan -API at Royal Thimphu College with internship. Courses offered:"
+      ],
+      [
+        "Requirements",
+        "NAIS\u00a0400",
+        "Select one of the following options:",
+        "Option A:",
+        "Select four elective courses from the approved list below",
+        "Option B:",
+        "Select three elective courses from the approved list below 2",
+        "Total Credits"
+      ],
+      [
+        "Approved Electives",
+        "AMST\u00a0444C",
+        "ANTH\u00a0412",
+        "ANTH\u00a0500",
+        "ANTH\u00a0501",
+        "ANTH\u00a0513",
+        "ANTH\u00a0514",
+        "ANTH\u00a0#597",
+        "ANTH\u00a0620",
+        "ANTH\u00a0785",
+        "BIOL\u00a0408",
+        "ENGL\u00a0440A",
+        "ENGL\u00a0550",
+        "ENGL\u00a0#729",
+        "ENGL\u00a0#739",
+        "HIST\u00a0405",
+        "HIST\u00a0511",
+        "HIST\u00a0532",
+        "HIST\u00a0595",
+        "HIST\u00a0600",
+        "HIST\u00a0603",
+        "HIST\u00a0632",
+        "MARI\u00a0705",
+        "MUSI\u00a0515",
+        "NR\u00a0660",
+        "NR\u00a0795",
+        "OUT\u00a0515",
+        "PSYC\u00a0581",
+        "PSYC\u00a0791W",
+        "SPAN\u00a0526",
+        "WS\u00a0505"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:28:45"
+}

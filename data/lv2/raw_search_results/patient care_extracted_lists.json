@@ -1,0 +1,867 @@
+{
+  "level1_term": "patient care",
+  "url_verification_status": {
+    "https://postgraduateeducation.hms.harvard.edu/certificate-programs/training-teachers": false,
+    "https://ctsi.med.nyu.edu/certificate-training-programs/": false,
+    "https://med.umn.edu/patientcare": true,
+    "https://medicine.tamu.edu/degrees/edhp.html": false,
+    "https://medicine.tufts.edu/academics/medicine/curriculum": false,
+    "https://medresearch.umich.edu/office-research/education-training": false,
+    "https://www.med.upenn.edu/student/curriculum/": true,
+    "https://medschool.ucla.edu/research/training-and-career-development-0": false,
+    "https://meded.hms.harvard.edu/teaching-tools": false,
+    "https://medicine.ouhsc.edu/faculty-staff/academy-of-teaching-scholars": false,
+    "https://www.unmc.edu/nursing/research/research-pillars/teaching-learning.html": false,
+    "https://medicine.duke.edu/divisions/general-internal-medicine/research": true,
+    "https://pharmacy.utexas.edu/research-practice/college-divisions/health-outcomes/research-teaching": true,
+    "https://catalog.uthscsa.edu/generalinformation/healthsciencecenter/researchandteaching/": false,
+    "https://case.edu/nursing/research/research-areas": false,
+    "https://www.uthsc.edu/graduate-health-sciences/programs/ihop.php": true,
+    "https://nursing.iu.edu/research/areas-research-excellence/index.html": true,
+    "https://www.public-health.uiowa.edu/hmp-phd-research-interest-area/": false,
+    "https://nau.edu/college-health-human-services/research/": false,
+    "https://health.usf.edu/": false,
+    "https://chpe.usuhs.edu/home": false,
+    "https://ttuhscep.edu/elpaso/TECHS/default.aspx": false,
+    "https://alumni.uth.tmc.edu/psp/alumni/APPLYUTH/CS_20/e/?url=http%3A%2F%2Fwww.mdanderson.org%2Feducation-and-research%2Feducation-and-training%2Findex.html&FolderPath=PORTAL_ROOT_OBJECT.NUI_STRUCTURE_CONTENT.PORTAL_GROUPLETS.UT_CS_NVF_ALUMNI_FLD_PGS.UT_NVC_SCHOOLS_MDANDRSN&IsFolder=false&IgnoreParamTempl=FolderPath%2CIsFolder": false,
+    "https://med.miami.edu/departments/medicine/divisions/hospital-medicine/education": false,
+    "https://medicine.missouri.edu/offices-programs/education": false,
+    "https://pediatrics.duke.edu/research/research-training-and-support/research-training/duke-center-advancement-child-health-catch/curriculum": true,
+    "https://www.westga.edu/uwgonline/course_details.php?course=PHED-7665": false,
+    "https://www.augusta.edu/faculty-affairs/effort.php": true,
+    "https://www.med.unc.edu/": false,
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": false,
+    "https://www.ohsu.edu/": false,
+    "https://med.miami.edu/departments/medicine/divisions/general-internal-medicine/research": true
+  },
+  "verified_lists_per_url": {
+    "https://postgraduateeducation.hms.harvard.edu/certificate-programs/training-teachers": 0,
+    "https://ctsi.med.nyu.edu/certificate-training-programs/": 0,
+    "https://med.umn.edu/patientcare": 1,
+    "https://medicine.tamu.edu/degrees/edhp.html": 0,
+    "https://medicine.tufts.edu/academics/medicine/curriculum": 0,
+    "https://medresearch.umich.edu/office-research/education-training": 0,
+    "https://www.med.upenn.edu/student/curriculum/": 1,
+    "https://medschool.ucla.edu/research/training-and-career-development-0": 0,
+    "https://meded.hms.harvard.edu/teaching-tools": 0,
+    "https://medicine.ouhsc.edu/faculty-staff/academy-of-teaching-scholars": 0,
+    "https://www.unmc.edu/nursing/research/research-pillars/teaching-learning.html": 0,
+    "https://medicine.duke.edu/divisions/general-internal-medicine/research": 3,
+    "https://pharmacy.utexas.edu/research-practice/college-divisions/health-outcomes/research-teaching": 3,
+    "https://catalog.uthscsa.edu/generalinformation/healthsciencecenter/researchandteaching/": 0,
+    "https://case.edu/nursing/research/research-areas": 0,
+    "https://www.uthsc.edu/graduate-health-sciences/programs/ihop.php": 1,
+    "https://nursing.iu.edu/research/areas-research-excellence/index.html": 1,
+    "https://www.public-health.uiowa.edu/hmp-phd-research-interest-area/": 0,
+    "https://nau.edu/college-health-human-services/research/": 0,
+    "https://health.usf.edu/": 0,
+    "https://chpe.usuhs.edu/home": 0,
+    "https://ttuhscep.edu/elpaso/TECHS/default.aspx": 0,
+    "https://alumni.uth.tmc.edu/psp/alumni/APPLYUTH/CS_20/e/?url=http%3A%2F%2Fwww.mdanderson.org%2Feducation-and-research%2Feducation-and-training%2Findex.html&FolderPath=PORTAL_ROOT_OBJECT.NUI_STRUCTURE_CONTENT.PORTAL_GROUPLETS.UT_CS_NVF_ALUMNI_FLD_PGS.UT_NVC_SCHOOLS_MDANDRSN&IsFolder=false&IgnoreParamTempl=FolderPath%2CIsFolder": 0,
+    "https://med.miami.edu/departments/medicine/divisions/hospital-medicine/education": 0,
+    "https://medicine.missouri.edu/offices-programs/education": 0,
+    "https://pediatrics.duke.edu/research/research-training-and-support/research-training/duke-center-advancement-child-health-catch/curriculum": 1,
+    "https://www.westga.edu/uwgonline/course_details.php?course=PHED-7665": 0,
+    "https://www.augusta.edu/faculty-affairs/effort.php": 8,
+    "https://www.med.unc.edu/": 0,
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": 0,
+    "https://www.ohsu.edu/": 0,
+    "https://med.miami.edu/departments/medicine/divisions/general-internal-medicine/research": 2
+  },
+  "total_lists_per_url": {
+    "https://postgraduateeducation.hms.harvard.edu/certificate-programs/training-teachers": 1,
+    "https://ctsi.med.nyu.edu/certificate-training-programs/": 1,
+    "https://med.umn.edu/patientcare": 2,
+    "https://medicine.tamu.edu/degrees/edhp.html": 2,
+    "https://medicine.tufts.edu/academics/medicine/curriculum": 4,
+    "https://medresearch.umich.edu/office-research/education-training": 1,
+    "https://www.med.upenn.edu/student/curriculum/": 3,
+    "https://medschool.ucla.edu/research/training-and-career-development-0": 1,
+    "https://meded.hms.harvard.edu/teaching-tools": 1,
+    "https://medicine.ouhsc.edu/faculty-staff/academy-of-teaching-scholars": 3,
+    "https://www.unmc.edu/nursing/research/research-pillars/teaching-learning.html": 2,
+    "https://medicine.duke.edu/divisions/general-internal-medicine/research": 8,
+    "https://pharmacy.utexas.edu/research-practice/college-divisions/health-outcomes/research-teaching": 8,
+    "https://catalog.uthscsa.edu/generalinformation/healthsciencecenter/researchandteaching/": 1,
+    "https://case.edu/nursing/research/research-areas": 1,
+    "https://www.uthsc.edu/graduate-health-sciences/programs/ihop.php": 3,
+    "https://nursing.iu.edu/research/areas-research-excellence/index.html": 1,
+    "https://www.public-health.uiowa.edu/hmp-phd-research-interest-area/": 2,
+    "https://nau.edu/college-health-human-services/research/": 2,
+    "https://health.usf.edu/": 2,
+    "https://chpe.usuhs.edu/home": 1,
+    "https://ttuhscep.edu/elpaso/TECHS/default.aspx": 1,
+    "https://alumni.uth.tmc.edu/psp/alumni/APPLYUTH/CS_20/e/?url=http%3A%2F%2Fwww.mdanderson.org%2Feducation-and-research%2Feducation-and-training%2Findex.html&FolderPath=PORTAL_ROOT_OBJECT.NUI_STRUCTURE_CONTENT.PORTAL_GROUPLETS.UT_CS_NVF_ALUMNI_FLD_PGS.UT_NVC_SCHOOLS_MDANDRSN&IsFolder=false&IgnoreParamTempl=FolderPath%2CIsFolder": 1,
+    "https://med.miami.edu/departments/medicine/divisions/hospital-medicine/education": 2,
+    "https://medicine.missouri.edu/offices-programs/education": 4,
+    "https://pediatrics.duke.edu/research/research-training-and-support/research-training/duke-center-advancement-child-health-catch/curriculum": 2,
+    "https://www.westga.edu/uwgonline/course_details.php?course=PHED-7665": 2,
+    "https://www.augusta.edu/faculty-affairs/effort.php": 15,
+    "https://www.med.unc.edu/": 2,
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": 2,
+    "https://www.ohsu.edu/": 1,
+    "https://med.miami.edu/departments/medicine/divisions/general-internal-medicine/research": 2
+  },
+  "verified_lists_ids": {
+    "https://postgraduateeducation.hms.harvard.edu/certificate-programs/training-teachers": [],
+    "https://ctsi.med.nyu.edu/certificate-training-programs/": [],
+    "https://med.umn.edu/patientcare": [
+      1
+    ],
+    "https://medicine.tamu.edu/degrees/edhp.html": [],
+    "https://medicine.tufts.edu/academics/medicine/curriculum": [],
+    "https://medresearch.umich.edu/office-research/education-training": [],
+    "https://www.med.upenn.edu/student/curriculum/": [
+      1
+    ],
+    "https://medschool.ucla.edu/research/training-and-career-development-0": [],
+    "https://meded.hms.harvard.edu/teaching-tools": [],
+    "https://medicine.ouhsc.edu/faculty-staff/academy-of-teaching-scholars": [],
+    "https://www.unmc.edu/nursing/research/research-pillars/teaching-learning.html": [],
+    "https://medicine.duke.edu/divisions/general-internal-medicine/research": [
+      2,
+      5,
+      7
+    ],
+    "https://pharmacy.utexas.edu/research-practice/college-divisions/health-outcomes/research-teaching": [
+      1,
+      2,
+      3
+    ],
+    "https://catalog.uthscsa.edu/generalinformation/healthsciencecenter/researchandteaching/": [],
+    "https://case.edu/nursing/research/research-areas": [],
+    "https://www.uthsc.edu/graduate-health-sciences/programs/ihop.php": [
+      2
+    ],
+    "https://nursing.iu.edu/research/areas-research-excellence/index.html": [
+      0
+    ],
+    "https://www.public-health.uiowa.edu/hmp-phd-research-interest-area/": [],
+    "https://nau.edu/college-health-human-services/research/": [],
+    "https://health.usf.edu/": [],
+    "https://chpe.usuhs.edu/home": [],
+    "https://ttuhscep.edu/elpaso/TECHS/default.aspx": [],
+    "https://alumni.uth.tmc.edu/psp/alumni/APPLYUTH/CS_20/e/?url=http%3A%2F%2Fwww.mdanderson.org%2Feducation-and-research%2Feducation-and-training%2Findex.html&FolderPath=PORTAL_ROOT_OBJECT.NUI_STRUCTURE_CONTENT.PORTAL_GROUPLETS.UT_CS_NVF_ALUMNI_FLD_PGS.UT_NVC_SCHOOLS_MDANDRSN&IsFolder=false&IgnoreParamTempl=FolderPath%2CIsFolder": [],
+    "https://med.miami.edu/departments/medicine/divisions/hospital-medicine/education": [],
+    "https://medicine.missouri.edu/offices-programs/education": [],
+    "https://pediatrics.duke.edu/research/research-training-and-support/research-training/duke-center-advancement-child-health-catch/curriculum": [
+      0
+    ],
+    "https://www.westga.edu/uwgonline/course_details.php?course=PHED-7665": [],
+    "https://www.augusta.edu/faculty-affairs/effort.php": [
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "https://www.med.unc.edu/": [],
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": [],
+    "https://www.ohsu.edu/": [],
+    "https://med.miami.edu/departments/medicine/divisions/general-internal-medicine/research": [
+      0,
+      1
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 84,
+  "url_to_lists": {
+    "https://postgraduateeducation.hms.harvard.edu/certificate-programs/training-teachers": [
+      [
+        "Upon program completion, participants will:",
+        "View\u00a0Admissions & Fees\u00a0for more information.",
+        "Workshop 1: November 6\u20138, 2025 | Live VirtualWorkshop 2: June 4\u2013June 7, 2026 |\u00a0Live Virtual",
+        "Physicians"
+      ]
+    ],
+    "https://ctsi.med.nyu.edu/certificate-training-programs/": [
+      [
+        "Von Simson, MD, program director, at\u00a0Gabrielle.Gold",
+        "VonSimson@NYULangone.org\u00a0or\u00a0212",
+        "5759."
+      ]
+    ],
+    "https://med.umn.edu/patientcare": [
+      [
+        "M Physicians Clinics",
+        "M Health Fairview Clinics",
+        "Find a Provider",
+        "Conditions & Treatments"
+      ],
+      [
+        "Breadcrumb",
+        "The Value of Academic Medicine",
+        "Stronger Together",
+        "Research & Clinical Trials",
+        "Learning opportunities"
+      ]
+    ],
+    "https://medicine.tamu.edu/degrees/edhp.html": [
+      [
+        "A list of any courses to be completed during the present semester (if applicable).",
+        "Scores of MCAT, DAT, PCAT or LSAT (only those who have not already completed a terminal degree.",
+        "Allow enough time to order transcripts from all institutions from which a degree was awarded.",
+        "Three individuals as references.",
+        "A list of any awards or honors received."
+      ],
+      [
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "Linked in",
+        "YouTube"
+      ]
+    ],
+    "https://medicine.tufts.edu/academics/medicine/curriculum": [
+      [
+        "Academic Calendars",
+        "Orientation",
+        "White Coat Ceremony",
+        "Commencement"
+      ],
+      [
+        "Global Health Overview",
+        "Summer/Fall Programs",
+        "Spring Programs",
+        "Independent Projects"
+      ],
+      [
+        "The Integrated Curriculum",
+        "Curriculum Schematic - Year 1",
+        "Curriculum Schematic - Year 2",
+        "Curriculum Schematic - Years 3 and 4",
+        "Curricular Themes",
+        "Curricular Themes",
+        "Description of Required Courses and Clerkships",
+        "Description of Required Courses and Core Clerkships",
+        "Additional Required and Optional Programs",
+        "Student-As-Teacher (SAT)",
+        "Maine Track"
+      ],
+      [
+        "Population Health and Profession of Medicine (First year, 3\u00a0weeks)",
+        "Scientific Foundations of Medicine Unit (SFM) (First year, 11 weeks)",
+        "Organ Systems",
+        "Foundations of Patient Care",
+        "Foundations of Evidence-based Medicine and Clinical Reasoning",
+        "Required Core Clerkships",
+        "Perspectives in Medicine - Patients, Populations, and Systems Threads",
+        "Community Service Learning (CSL)",
+        "Selectives (First Year, Tuesday afternoons)"
+      ]
+    ],
+    "https://medresearch.umich.edu/office-research/education-training": [
+      [
+        "Current Courses",
+        "IRBMED Seminar Series",
+        "U-MIC",
+        "Other Human Subject Research Education and/or Training (including PEERRS)"
+      ]
+    ],
+    "https://www.med.upenn.edu/student/curriculum/": [
+      [
+        "The science of medicine",
+        "The technology and practice of medicine",
+        "Professionalism and humanism"
+      ],
+      [
+        "Integrated",
+        "Innovative",
+        "Individualized",
+        "Meniscus injuries may soon be treated by customizable hydrogel",
+        "DNA-LNPs: A Safer, Longer-Lasting Gene Therapy Breakthrough",
+        "Early anti-obesity medications boost weight loss",
+        "Small incentives drive lasting seatbelt habits",
+        "Immunotherapy boosts KRAS-targeted therapy in pancreatic cancer"
+      ],
+      [
+        "PaC: Patient Care",
+        "T: Transitions) is a four",
+        "year multidisciplinary curriculum comprising three cores organized around three themes:"
+      ]
+    ],
+    "https://medschool.ucla.edu/research/training-and-career-development-0": [
+      [
+        "Learn and Train",
+        "Get Involved",
+        "Connect"
+      ]
+    ],
+    "https://meded.hms.harvard.edu/teaching-tools": [
+      [
+        "c4459eb33aea6237e015ff3d1eced73d",
+        "72cd7925dc2edbcd3f41327961f666c0",
+        "MedEd's Custom Google Search",
+        "faculty_development_diagram_6.2.21.png",
+        "Foundational Teaching Skills",
+        "Course Leadership Skills",
+        "Clinical Teaching",
+        "Classroom Teaching",
+        "Case-Based Collaborative Learning at HMS",
+        "Need HarvardKey?",
+        "CSS Styles Code",
+        "fcf2c6b74fbdd7d4cf432a1c39a278f0",
+        "5e321eb9fb379e54e4cda684d6e2b061",
+        "65407c8a7399930858024a34f85cb087"
+      ]
+    ],
+    "https://medicine.ouhsc.edu/faculty-staff/academy-of-teaching-scholars": [
+      [
+        "Recognize/reward teaching excellence and promote the value of teaching",
+        "Develop and advance the skills of College of Medicine educators",
+        "Recognize/reward teaching improvements and accomplishments",
+        "Promote educational research"
+      ],
+      [
+        "Jerry Vannatta, MD Academy of Teaching Scholars",
+        "Who can come to ATS events?",
+        "Announcements",
+        "Academy Goals",
+        "On-Demand Learning Library",
+        "Mentoring & Scholarship",
+        "Recognition & Awards",
+        "Membership & Standards",
+        "Leadership",
+        "2024 ATS Leadership"
+      ],
+      [
+        "chair Mentoring & Scholarship Committee), Dr. Jo Elle Peterson (Co",
+        "chair Mentoring & Scholarship Committee), Dr. Stephen Clayton (Co",
+        "chair Faculty Development & Education Committee), Dr. Zain Asad (Co",
+        "chair Membership & Standards Committee), Dr.\u00a0Kristina Booth (Co",
+        "Chair Recognition & Awards Committee), Dr. Darlla Duniphin (Co",
+        "chair Membership & Standards Committee)"
+      ]
+    ],
+    "https://www.unmc.edu/nursing/research/research-pillars/teaching-learning.html": [
+      [
+        "In this section",
+        "Active Teaching & Learning Projects",
+        "Grant Spotlight \u2013 Nebraska Collaborative Investment in Nurses"
+      ],
+      [
+        "uNParalleled",
+        "CAPABLE",
+        "Midwest Clinical Instruction Regional Network",
+        "Nebraska Collaborative Investment in Nurses",
+        "School-Based Health Support Pilot Program",
+        "Interprofessional Integrated Care Training Hub",
+        "Increasing Rural Mental Health NPs",
+        "Bottleneck Course Reduction",
+        "College of Nursing"
+      ]
+    ],
+    "https://medicine.duke.edu/divisions/general-internal-medicine/research": [
+      [
+        "Population-based studies",
+        "Social Determinants of Health",
+        "Individual, Family and Community Intervention Studies"
+      ],
+      [
+        "Undergraduate medical education",
+        "Graduate education",
+        "Teaching the teachers",
+        "Clinician educator career path"
+      ],
+      [
+        "Treatment and intervention outcomes",
+        "Evidence synthesis",
+        "Care delivery models"
+      ],
+      [
+        "Behavioral and mental health",
+        "Complex care models",
+        "Opioid use and addiction",
+        "Palliative care",
+        "Religion and medicine",
+        "Weight management",
+        "Women\u2019s health"
+      ],
+      [
+        "Physician-patient communication",
+        "Clinical decision-making",
+        "Medicine and religion"
+      ],
+      [
+        "Health behavior",
+        "Health communication",
+        "\u200bShared and informed decision making",
+        "Complementary and alternative medicine"
+      ],
+      [
+        "Translating science into the practice of medicine and caring for patients",
+        "Understanding how to better organize health care to meet patient and population needs",
+        "Evaluating innovations to provide the best health care to patients",
+        "Engaging patients, communities, and practices to improve health"
+      ],
+      [
+        "Care delivery models",
+        "Quality improvement and safety",
+        "Learning health systems"
+      ]
+    ],
+    "https://pharmacy.utexas.edu/research-practice/college-divisions/health-outcomes/research-teaching": [
+      [
+        "Health Disparities and Health Equity",
+        "Social Determinants of Health",
+        "Patient-Reported Outcomes"
+      ],
+      [
+        "Pharmacist Services Assessment",
+        "Innovative Models of Care Delivery and Payment",
+        "Program Implementation and Evaluation Science"
+      ],
+      [
+        "Real-World Evidence Generation",
+        "Value Assessment",
+        "Advanced Analytics and Visualization"
+      ],
+      [
+        "Health-Related Quality of Life",
+        "Health Behavior and Medication Use Process",
+        "Health Care Systems",
+        "Introduction to Epidemiology and Pharmacoepidemiology",
+        "Principles of Pharmacoeconomics"
+      ],
+      [
+        "Graduate Level Didactic Courses (2 courses for M.S., 2 more for Ph.D.)Choose from Specialty Courses",
+        "Choose from Specialty Courses",
+        "Introduction to Statistics",
+        "Experimental Design and Inferential Statistics",
+        "Correlation and Regression",
+        "Multivariate Analysis",
+        "Regression Analysis",
+        "Experimental Design and Research Methods in Health Care",
+        "Data Analysis in Health Care",
+        "Research Ethics",
+        "Advanced Research Methods (Ph.D.)",
+        "Communication Skills for Scientists (Ph.D.)",
+        "Interdisciplinary Collaboration and Career Development (Ph.D.)",
+        "Minor Area Outside of HOD (2 courses for M.S., 2 more for Ph.D.)",
+        "Research Methods outside of Health Outcomes Division (Ph.D.)",
+        "Theoretically based graduate level course outside of the Health Outcomes Division (Ph.D.)"
+      ],
+      [
+        "Introduction to Statistics",
+        "Experimental Design and Inferential Statistics",
+        "Correlation and Regression",
+        "Multivariate Analysis",
+        "Regression Analysis"
+      ],
+      [
+        "Header Menu",
+        "Breadcrumb",
+        "Health Outcomes",
+        "Footer menu"
+      ],
+      [
+        "What Starts Here Changes the World",
+        "Division Research",
+        "Division Teaching - Pharm.D.",
+        "Division Teaching - Graduate"
+      ]
+    ],
+    "https://catalog.uthscsa.edu/generalinformation/healthsciencecenter/researchandteaching/": [
+      [
+        "square",
+        "foot\u00a0ALTC features 33 ultra",
+        "modern classrooms, strategic learning spaces and a state",
+        "18. In every room, the technology and furniture design encourages active learning."
+      ]
+    ],
+    "https://case.edu/nursing/research/research-areas": [
+      [
+        "Symptom Science",
+        "Family & Community Care",
+        "Aging Across the Lifespan",
+        "Self-Management of Health and Illness",
+        "Neuroscience"
+      ]
+    ],
+    "https://www.uthsc.edu/graduate-health-sciences/programs/ihop.php": [
+      [
+        "Graduate Certificate in Healthcare Quality Improvement:",
+        "Deadline: March 15",
+        "Chair and Program Director: Simonne S. Nouer, MD, PhD\u00a0| 901.448.5189 | snouer@uthsc.edu"
+      ],
+      [
+        "based participatory",
+        "health systems, legal",
+        "benefit, medication errors, patient",
+        "giving, and economic impacts. Our unique areas"
+      ],
+      [
+        "related degree, with a grade",
+        "point average of at least",
+        "related",
+        "word minimum); a combined score (verbal and quantitative)",
+        "based/",
+        "based TOEFL or evidence of proficiency in English for students whose native"
+      ]
+    ],
+    "https://nursing.iu.edu/research/areas-research-excellence/index.html": [
+      [
+        "Serious Illness Care",
+        "Community and health systems",
+        "Quality of life and chronic condition management",
+        "Prevention and health promotion"
+      ]
+    ],
+    "https://www.public-health.uiowa.edu/hmp-phd-research-interest-area/": [
+      [
+        "Top links",
+        "Site Main Navigation",
+        "Breadcrumb",
+        "Research Interest Areas",
+        "College of Public Health",
+        "Utilities Menu",
+        "Our Values Menu",
+        "Departments Menu"
+      ],
+      [
+        "Health Economics",
+        "Health Policy",
+        "Health Management and Organization",
+        "Choosing a Research Interest Area"
+      ]
+    ],
+    "https://nau.edu/college-health-human-services/research/": [
+      [
+        "Healthcare labs, community clinics, and faculty research",
+        "Faculty research by department",
+        "Communication Sciences and Disorders",
+        "Dental Hygiene",
+        "Health Sciences",
+        "Occupational Therapy",
+        "Physical Therapy and Athletic Training",
+        "Physician Assistant Studies"
+      ],
+      [
+        "Community clinics",
+        "Hearing loss",
+        "Speech and language development",
+        "Adult neurogenic disorders",
+        "Clinical interventions and effectiveness",
+        "Project zero: Elementary-aged Children",
+        "Project zero: Women and Infants",
+        "Veterans Support Program",
+        "Journey for Underrepresented Medical Professionals",
+        "Scholarships for Disadvantaged Students (SDS)",
+        "Physical activity",
+        "Nutrition",
+        "Community-based interventions",
+        "Clinical biomechanics",
+        "Control of movement and rehabilitation after neurological disorders",
+        "Youth sport and concussion",
+        "Additional lines of research"
+      ]
+    ],
+    "https://health.usf.edu/": [
+      [
+        "Please note that Internet Explorer is incompatible with this site.",
+        "Class of 2025 medical students celebrate \u2018magical\u2019 Match Day",
+        "Doctor of Physical Therapy class of 2027 don first white coats",
+        "USF Health virologist Dr. Christian Br\u00e9chot elected a fellow of the American Academy of Microbiology"
+      ],
+      [
+        "square",
+        "foot, state",
+        "art facility featuring world",
+        "class labs, high",
+        "tech learning areas, and top"
+      ]
+    ],
+    "https://chpe.usuhs.edu/home": [
+      [
+        "GRADUATE PROGRAMS IN HPE",
+        "DISTANCE LEARNING LAB",
+        "LTCOS"
+      ]
+    ],
+    "https://ttuhscep.edu/elpaso/TECHS/default.aspx": [
+      [
+        "Welcome",
+        "Mission",
+        "Vision"
+      ]
+    ],
+    "https://alumni.uth.tmc.edu/psp/alumni/APPLYUTH/CS_20/e/?url=http%3A%2F%2Fwww.mdanderson.org%2Feducation-and-research%2Feducation-and-training%2Findex.html&FolderPath=PORTAL_ROOT_OBJECT.NUI_STRUCTURE_CONTENT.PORTAL_GROUPLETS.UT_CS_NVF_ALUMNI_FLD_PGS.UT_NVC_SCHOOLS_MDANDRSN&IsFolder=false&IgnoreParamTempl=FolderPath%2CIsFolder": [
+      [
+        "Education & Training",
+        "GME Fellowships",
+        "We offer a vast number of residency and fellowship programs in a state-of-the-art setting."
+      ]
+    ],
+    "https://med.miami.edu/departments/medicine/divisions/hospital-medicine/education": [
+      [
+        "Medicine",
+        "Hospital Medicine",
+        "Education"
+      ],
+      [
+        "University of Miami Hospital and Clinics",
+        "Education",
+        "Teaching Ward Teams",
+        "Procedure Team",
+        "Point of Care Ultrasound Course Elective",
+        "Hospital Medicine Elective"
+      ]
+    ],
+    "https://medicine.missouri.edu/offices-programs/education": [
+      [
+        "Results for \"\"",
+        "Medical Education",
+        "Master's and Doctoral Programs",
+        "Graduate Medical Education",
+        "Simulation Center",
+        "School of Medicine Class of 2025 match results revealed",
+        "Pamela Brown, PhD, awarded 2025 Kemper Fellowship for Teaching Excellence",
+        "MU celebrates reopening of the J. Otto Lottes Health Sciences Library",
+        "CALEB Project & Science Club hosts interactive CSI workshop"
+      ],
+      [
+        "Dynamic System Menu",
+        "Can't find what you're looking for?",
+        "Faculty",
+        "Dynamic Main Menu",
+        "Dynamic Main Menu",
+        "More Offices and Programs",
+        "Education Deans",
+        "Happenings at MU School of Medicine",
+        "Information",
+        "Campus",
+        "MU Health",
+        "Sign up for our monthly newsletter"
+      ],
+      [
+        "Medical Education",
+        "Master's and Doctoral Programs",
+        "Graduate Medical Education"
+      ],
+      [
+        "School of Medicine Class of 2025 match results revealed",
+        "Pamela Brown, PhD, awarded 2025 Kemper Fellowship for Teaching Excellence",
+        "MU celebrates reopening of the J. Otto Lottes Health Sciences Library",
+        "CALEB Project & Science Club hosts interactive CSI workshop"
+      ]
+    ],
+    "https://pediatrics.duke.edu/research/research-training-and-support/research-training/duke-center-advancement-child-health-catch/curriculum": [
+      [
+        "Utility",
+        "Main navigation",
+        "Utility",
+        "Research Training",
+        "Coursework and Career Development",
+        "Mentoring",
+        "Sidebar navigation - 5th level",
+        "Footer"
+      ],
+      [
+        "Writing Courses and Training",
+        "Grant Application Writing",
+        "Oral Communication",
+        "Department Faculty Development Lunch Series",
+        "Responsible Conduct of Research (RCR) Training",
+        "Training in Enhancing Rigor and Reproducibility",
+        "Training in Racial Equity",
+        "Didactic Training",
+        "Seminars/Lecture Series/Journal Clubs",
+        "Community of Scholars",
+        "Primary Research Preceptor",
+        "Department Mentoring Program",
+        "Peer Mentoring Program",
+        "LEADER Program",
+        "Community-Based Mentoring Experience"
+      ]
+    ],
+    "https://www.westga.edu/uwgonline/course_details.php?course=PHED-7665": [
+      [
+        "Description",
+        "Semesters",
+        "University of West Georgia Footer Resources"
+      ],
+      [
+        "Course Title",
+        "Analysis on Teaching in PE",
+        "Analysis on Teaching in PE"
+      ]
+    ],
+    "https://www.augusta.edu/faculty-affairs/effort.php": [
+      [
+        "Teaching classes on campus, abroad, or away",
+        "Distance education (synchronous or asynchronous)",
+        "Explaining concepts and procedures and demonstrating skills",
+        "Supervising labs/problem session, field work",
+        "Participating in activities sponsored by teaching grants"
+      ],
+      [
+        "Teaching classes on campus, abroad, or away",
+        "Distance education (synchronous or asynchronous)",
+        "Explaining concepts and procedures and demonstrating skills",
+        "Supervising labs/problem session, field work",
+        "Participating in activities sponsored by teaching grants"
+      ],
+      [
+        "Preparing and grading exams and other course assessment tools",
+        "Evaluating class presentations, projects, and research work",
+        "Assigning grades for courses",
+        "Course Director \u2013 Course specific advising"
+      ],
+      [
+        "Preparing and grading exams and other course assessment tools",
+        "Evaluating class presentations, projects, and research work",
+        "Assigning grades for courses",
+        "Course Director \u2013 Course specific advising"
+      ],
+      [
+        "Extramural Grants from governmental agencies such as NIH, HRSA, etc.",
+        "Extramural Grants from Health Foundations such as American Heart, etc.",
+        "Extramural Research Training Grants (Individual or Institutional)",
+        "Clinical Trials",
+        "Research Fellowships",
+        "Intramural Discovery Institute Awards",
+        "Intramural Bridge Funding Awards",
+        "Other evidence consistent with The Scholarship of Discovery (USG 4.7.2)"
+      ],
+      [
+        "Speeches and presentations to community and civic organizations",
+        "Consultation or collaboration with community groups",
+        "Teaching Continuing Education (CED) courses"
+      ],
+      [
+        "Speeches and presentations to community and civic organizations",
+        "Consultation or collaboration with community groups",
+        "Teaching Continuing Education (CED) courses"
+      ],
+      [
+        "President",
+        "Provost",
+        "Vice Presidents",
+        "Associate Vice Presidents",
+        "Assistant Vice Presidents",
+        "Deans",
+        "Vice Deans",
+        "Associate Deans",
+        "Assistant Deans",
+        "Department Chairs",
+        "Directors of Centers and Institutes"
+      ],
+      [
+        "TEACHING/INSTRUCTION",
+        "RESEARCH",
+        "CLINICAL",
+        "SERVICE",
+        "ADMINISTRATION"
+      ],
+      [
+        "Teaching/Instruction",
+        "Research",
+        "Clinical",
+        "Service",
+        "Administration"
+      ],
+      [
+        "Teaching/Instruction",
+        "Research",
+        "Clinical",
+        "Service",
+        "Administration"
+      ],
+      [
+        "Teaching/Instruction",
+        "Research",
+        "Clinical",
+        "Service",
+        "Administration"
+      ],
+      [
+        "Teaching/Instruction",
+        "Research",
+        "Clinical",
+        "Service",
+        "Administration"
+      ],
+      [
+        "Teaching/Instruction",
+        "Research",
+        "Clinical",
+        "Service",
+        "Administration"
+      ],
+      [
+        "Teaching/Instruction",
+        "Research",
+        "Clinical",
+        "Service",
+        "Administration"
+      ]
+    ],
+    "https://www.med.unc.edu/": [
+      [
+        "Welcome to the UNC School of Medicine",
+        "Medical Education Opportunities",
+        "Introducing New Leaders",
+        "Hear from us Our Stories",
+        "Upcoming SOM Events"
+      ],
+      [
+        "Educate Future Scientists and Providers",
+        "Develop Tomorrow\u2019s Breakthroughs Today",
+        "Lead Innovation in Quality Healthcare Delivery",
+        "Value and Develop Our People"
+      ]
+    ],
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": [
+      [
+        "Research Areas",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      [
+        "Communication Sciences and Disorders",
+        "Environmental Health Sciences",
+        "Epidemiology and Biostatistics",
+        "Exercise Science",
+        "Health Promotion, Education, and Behavior",
+        "Health Services Policy and Management"
+      ]
+    ],
+    "https://www.ohsu.edu/": [
+      [
+        "Work at OHSU",
+        "Using cannabis in pregnancy may affect baby\u2019s lung health",
+        "Study could improve care for children with hearing issues",
+        "New blood test could detect pancreatic cancer earlier",
+        "Give to OHSU"
+      ]
+    ],
+    "https://med.miami.edu/departments/medicine/divisions/general-internal-medicine/research": [
+      [
+        "results/2015/statewide",
+        "partnership",
+        "training",
+        "floridas",
+        "community",
+        "health",
+        "workers",
+        "patient"
+      ],
+      [
+        "driven decision",
+        "results/2017/national",
+        "partnership",
+        "training",
+        "community",
+        "health",
+        "workers",
+        "patient",
+        "centered"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:28:45"
+}

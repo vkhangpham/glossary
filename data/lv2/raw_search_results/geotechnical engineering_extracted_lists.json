@@ -1,0 +1,1552 @@
+{
+  "level1_term": "geotechnical engineering",
+  "url_verification_status": {
+    "https://engineering.tamu.edu/civil/research/geotechnical.html": false,
+    "https://cee.engin.umich.edu/research/infrastructure/geotechnical/": false,
+    "https://cee.engineering.ucdavis.edu/faculty-and-research/geotechnical-engineering": true,
+    "https://caee.utexas.edu/research/research-areas/geotechnical-engineering/courses": true,
+    "https://engineering.purdue.edu/CCE/Academics/Groups/Geotechnical": false,
+    "https://ccee.udel.edu/research/research-overview/geotechnical/": true,
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering-track": false,
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-engineering.aspx": true,
+    "https://www.pdx.edu/civil-environmental-engineering/geotechnical-engineering-research": true,
+    "https://ce.gatech.edu/academics/groups/geosystems": true,
+    "https://www.mccormick.northwestern.edu/civil-environmental/academics/masters/geotechnical-engineering-specialization/curriculum-requirements.html": true,
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-research.aspx": false,
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19667&returnto=4917": true,
+    "https://www.ccee.iastate.edu/research/": true,
+    "https://ceae.ku.edu/research-areas": true,
+    "https://engineering.tamu.edu/civil/academics/degrees/graduate/specialties/geotechnical.html": true,
+    "https://cee.utk.edu/research/geotechnical-and-materials-engineering/": false,
+    "https://www.ce.washington.edu/future/grad/masters/geotechnical": false,
+    "https://gradprograms.mines.edu/civil-and-environmental-engineering/": true,
+    "https://www.jsums.edu/civilengineering/geotechnical-geoenvironmental-engineering/": false,
+    "https://cee.illinois.edu/academics/areas": false,
+    "https://structures.ucsd.edu/academics/graduate-resources/ms-geotechnical-engineering": true,
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering/geotechnical-engineering-degree-requirements": true,
+    "https://catalog.mit.edu/schools/engineering/civil-environmental-engineering/": true
+  },
+  "verified_lists_per_url": {
+    "https://engineering.tamu.edu/civil/research/geotechnical.html": 0,
+    "https://cee.engin.umich.edu/research/infrastructure/geotechnical/": 0,
+    "https://cee.engineering.ucdavis.edu/faculty-and-research/geotechnical-engineering": 6,
+    "https://caee.utexas.edu/research/research-areas/geotechnical-engineering/courses": 1,
+    "https://engineering.purdue.edu/CCE/Academics/Groups/Geotechnical": 0,
+    "https://ccee.udel.edu/research/research-overview/geotechnical/": 5,
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering-track": 0,
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-engineering.aspx": 2,
+    "https://www.pdx.edu/civil-environmental-engineering/geotechnical-engineering-research": 2,
+    "https://ce.gatech.edu/academics/groups/geosystems": 2,
+    "https://www.mccormick.northwestern.edu/civil-environmental/academics/masters/geotechnical-engineering-specialization/curriculum-requirements.html": 1,
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-research.aspx": 0,
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19667&returnto=4917": 2,
+    "https://www.ccee.iastate.edu/research/": 3,
+    "https://ceae.ku.edu/research-areas": 1,
+    "https://engineering.tamu.edu/civil/academics/degrees/graduate/specialties/geotechnical.html": 2,
+    "https://cee.utk.edu/research/geotechnical-and-materials-engineering/": 0,
+    "https://www.ce.washington.edu/future/grad/masters/geotechnical": 0,
+    "https://gradprograms.mines.edu/civil-and-environmental-engineering/": 1,
+    "https://www.jsums.edu/civilengineering/geotechnical-geoenvironmental-engineering/": 0,
+    "https://cee.illinois.edu/academics/areas": 0,
+    "https://structures.ucsd.edu/academics/graduate-resources/ms-geotechnical-engineering": 1,
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering/geotechnical-engineering-degree-requirements": 2,
+    "https://catalog.mit.edu/schools/engineering/civil-environmental-engineering/": 11
+  },
+  "total_lists_per_url": {
+    "https://engineering.tamu.edu/civil/research/geotechnical.html": 1,
+    "https://cee.engin.umich.edu/research/infrastructure/geotechnical/": 1,
+    "https://cee.engineering.ucdavis.edu/faculty-and-research/geotechnical-engineering": 7,
+    "https://caee.utexas.edu/research/research-areas/geotechnical-engineering/courses": 2,
+    "https://engineering.purdue.edu/CCE/Academics/Groups/Geotechnical": 2,
+    "https://ccee.udel.edu/research/research-overview/geotechnical/": 10,
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering-track": 3,
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-engineering.aspx": 4,
+    "https://www.pdx.edu/civil-environmental-engineering/geotechnical-engineering-research": 2,
+    "https://ce.gatech.edu/academics/groups/geosystems": 4,
+    "https://www.mccormick.northwestern.edu/civil-environmental/academics/masters/geotechnical-engineering-specialization/curriculum-requirements.html": 3,
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-research.aspx": 4,
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19667&returnto=4917": 4,
+    "https://www.ccee.iastate.edu/research/": 5,
+    "https://ceae.ku.edu/research-areas": 6,
+    "https://engineering.tamu.edu/civil/academics/degrees/graduate/specialties/geotechnical.html": 4,
+    "https://cee.utk.edu/research/geotechnical-and-materials-engineering/": 3,
+    "https://www.ce.washington.edu/future/grad/masters/geotechnical": 1,
+    "https://gradprograms.mines.edu/civil-and-environmental-engineering/": 7,
+    "https://www.jsums.edu/civilengineering/geotechnical-geoenvironmental-engineering/": 2,
+    "https://cee.illinois.edu/academics/areas": 1,
+    "https://structures.ucsd.edu/academics/graduate-resources/ms-geotechnical-engineering": 5,
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering/geotechnical-engineering-degree-requirements": 6,
+    "https://catalog.mit.edu/schools/engineering/civil-environmental-engineering/": 108
+  },
+  "verified_lists_ids": {
+    "https://engineering.tamu.edu/civil/research/geotechnical.html": [],
+    "https://cee.engin.umich.edu/research/infrastructure/geotechnical/": [],
+    "https://cee.engineering.ucdavis.edu/faculty-and-research/geotechnical-engineering": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "https://caee.utexas.edu/research/research-areas/geotechnical-engineering/courses": [
+      0
+    ],
+    "https://engineering.purdue.edu/CCE/Academics/Groups/Geotechnical": [],
+    "https://ccee.udel.edu/research/research-overview/geotechnical/": [
+      0,
+      3,
+      4,
+      7,
+      8
+    ],
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering-track": [],
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-engineering.aspx": [
+      0,
+      3
+    ],
+    "https://www.pdx.edu/civil-environmental-engineering/geotechnical-engineering-research": [
+      0,
+      1
+    ],
+    "https://ce.gatech.edu/academics/groups/geosystems": [
+      0,
+      1
+    ],
+    "https://www.mccormick.northwestern.edu/civil-environmental/academics/masters/geotechnical-engineering-specialization/curriculum-requirements.html": [
+      0
+    ],
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-research.aspx": [],
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19667&returnto=4917": [
+      1,
+      2
+    ],
+    "https://www.ccee.iastate.edu/research/": [
+      0,
+      1,
+      4
+    ],
+    "https://ceae.ku.edu/research-areas": [
+      5
+    ],
+    "https://engineering.tamu.edu/civil/academics/degrees/graduate/specialties/geotechnical.html": [
+      2,
+      3
+    ],
+    "https://cee.utk.edu/research/geotechnical-and-materials-engineering/": [],
+    "https://www.ce.washington.edu/future/grad/masters/geotechnical": [],
+    "https://gradprograms.mines.edu/civil-and-environmental-engineering/": [
+      6
+    ],
+    "https://www.jsums.edu/civilengineering/geotechnical-geoenvironmental-engineering/": [],
+    "https://cee.illinois.edu/academics/areas": [],
+    "https://structures.ucsd.edu/academics/graduate-resources/ms-geotechnical-engineering": [
+      2
+    ],
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering/geotechnical-engineering-degree-requirements": [
+      3,
+      5
+    ],
+    "https://catalog.mit.edu/schools/engineering/civil-environmental-engineering/": [
+      1,
+      2,
+      5,
+      53,
+      57,
+      59,
+      65,
+      66,
+      68,
+      77,
+      80
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 195,
+  "url_to_lists": {
+    "https://engineering.tamu.edu/civil/research/geotechnical.html": [
+      [
+        "Scour at Bridges",
+        "Prediction of Meander Migration",
+        "Intelligent Compaction",
+        "Seafloor Interactions with Steel Catenary Risers",
+        "Mine Burial in Seafloor",
+        "Pavements on Expansive Soils",
+        "Performance of High Plasticity Clay Slopes"
+      ]
+    ],
+    "https://cee.engin.umich.edu/research/infrastructure/geotechnical/": [
+      [
+        "F. Est\u00e9fan T. Garcia",
+        "Roman D. Hryciw",
+        "Radoslaw L. Michalowski"
+      ]
+    ],
+    "https://cee.engineering.ucdavis.edu/faculty-and-research/geotechnical-engineering": [
+      [
+        "ECI 281A - Advanced Soil Mechanics (4 units)",
+        "ECI 281B - Engineering Geology (4 units)",
+        "ECI 292A - Geotechnical Professional Practice (1 unit)",
+        "ECI 175 - Geotechnical Earthquake Engineering (4 units)"
+      ],
+      [
+        "ECI 281C - Advanced Soil Mechanics (4 units)",
+        "ECI 292B - Geotechnical Professional Practice (1 unit)",
+        "ECI 144 - Groundwater Systems Design",
+        "ECI 201 - Introduction to Theory of Elasticity",
+        "ECI 212A - Finite Element Procedures in Applied Mechanics",
+        "ECI 282 - Pavement Design and Rehabilitation",
+        "ECI 299 - Research"
+      ],
+      [
+        "ECI 144 - Groundwater Systems Design",
+        "ECI 201 - Introduction to Theory of Elasticity",
+        "ECI 212A - Finite Element Procedures in Applied Mechanics",
+        "ECI 282 - Pavement Design and Rehabilitation",
+        "ECI 299 - Research"
+      ],
+      [
+        "ECI 286 - Advanced Foundation Design (4 units)",
+        "ECI 287 - Geotechnical Earthquake Engineering (4 units)",
+        "ECI 292C - Geotechnical Professional Practice (2 units)",
+        "ECI 212B - Finite Elements: Application to Linear and Non-Linear Structural Mechanics Problems",
+        "ECI 214 - Probabilistic Seismic Hazard Analysis and Design Ground Motions",
+        "ECI 224 - Structural Reliability Analysis",
+        "ECI 260 - Sediment Transport",
+        "ECI 299 - Research"
+      ],
+      [
+        "ECI 212B - Finite Elements: Application to Linear and Non-Linear Structural Mechanics Problems",
+        "ECI 214 - Probabilistic Seismic Hazard Analysis and Design Ground Motions",
+        "ECI 224 - Structural Reliability Analysis",
+        "ECI 260 - Sediment Transport",
+        "ECI 299 - Research"
+      ],
+      [
+        "Facilities",
+        "Degrees Offered",
+        "Typical Course Load for Professional MS",
+        "Funding",
+        "Interested? Questions?",
+        "Geotechnical Engineering Faculty",
+        "Geotechnical Engineering Faculty",
+        "Norman Abrahamson",
+        "Ross  Boulanger",
+        "Jason DeJong",
+        "Michael Gardner",
+        "John  Harvey",
+        "I.M. Idriss",
+        "Boris Jeremic",
+        "Alejandro Martinez",
+        "Somayeh Nassiri",
+        "Katerina Ziotopoulou"
+      ],
+      [
+        "We offer Masters and Doctoral degrees in geotechnics:",
+        "Master of Science Plan II (Professional MS)",
+        "Master of Science Plan I (Thesis)",
+        "Doctor of Philosophy",
+        "Fall Quarter:",
+        "Winter Quarter:",
+        "Spring Quarter:"
+      ]
+    ],
+    "https://caee.utexas.edu/research/research-areas/geotechnical-engineering/courses": [
+      [
+        "Building Energy and Environments",
+        "Construction Engineering and Project Management",
+        "Environmental and Water Resources Engineering",
+        "Geotechnical Engineering",
+        "Infrastructure Materials Engineering",
+        "Mechanics, Uncertainty and Simulation in Engineering",
+        "Ocean Engineering",
+        "Structural Engineering",
+        "Sustainable Systems",
+        "Transportation Engineering",
+        "Research Centers",
+        "Undergraduate Research Opportunities"
+      ],
+      [
+        "Undergraduate Courses",
+        "Graduate Courses",
+        "Related Courses"
+      ]
+    ],
+    "https://engineering.purdue.edu/CCE/Academics/Groups/Geotechnical": [
+      [
+        "Spotlights",
+        "G.A. Leonards Lecture and PGS Workshop",
+        "Monica Prezzi elected to DFI Educational Trust Board of Trustees",
+        "Kike Garzon-Sabogal wins poster competition at 5th International Symposium on Geomechanics",
+        "Antonio Bobet selected to join Fulbright Specialist Program",
+        "Monica Prezzi appointed Editor of ASCE's Journal of Geotechnical and Geoenvironmental Engineering",
+        "Lovell Lecture Series",
+        "Marika Santagata recognized with Charles B. Murphy Outstanding Undergraduate Teaching Award",
+        "Rodrigo Salgado receives Richard R. Torrens Award",
+        "Mohammadhasan Sasar receives Purdue Graduate School Excellence in Teaching Award",
+        "Purdue innovations enable high-quality chemical analysis beyond the lab",
+        "A celebration honoring the 100th anniversary of Professor Leonards' birthday",
+        "Eirini Christoforidou receives Geosynthetic Institute fellowship",
+        "Mohammadhasan Sasar awarded 2020 Clay Minerals Society Student Research Grant",
+        "Antonio Bobet delivers keynote lecture at rock mechanics symposium",
+        "Danielli de Melo Moura receives best poster award at rock mechanics symposium",
+        "Antonio Bobet named Edgar B. and Hedwig M. Olson Professor in Civil Engineering",
+        "Anahita Modiriasari receives Dr. Neville G.W. Cook Ph.D. Dissertation Award",
+        "Professor Emeritus Vincent Drnevich receives Outstanding Article Award"
+      ],
+      [
+        "Discover",
+        "Explore",
+        "Connect",
+        "People",
+        "Follow"
+      ]
+    ],
+    "https://ccee.udel.edu/research/research-overview/geotechnical/": [
+      [
+        "Soil and rock mechanics",
+        "Soil-structure interaction",
+        "Constitutive modeling",
+        "Computational geomechanics",
+        "Foundation and earth structures engineering",
+        "Ground improvement",
+        "Slope stability and landslide stabilization",
+        "Liquefaction of soils and earthquake engineering",
+        "Laboratory characterization of geomaterials and soil reinforcement",
+        "Environmental geotechnics"
+      ],
+      [
+        "Master\u2019s of Civil Engineering",
+        "Master\u2019s of Applied Science",
+        "PhD in Civil Engineering"
+      ],
+      [
+        "CIEG 601\u00a0\u2013 Introduction to the Finite Element Method",
+        "CIEG 622\u00a0\u2013 Earth Structures Engineering",
+        "CIEG 626\u00a0\u2013 Soil Behavior"
+      ],
+      [
+        "CIEG 605\u00a0\u2013 Intermediate Topics in Finite Element Analysis",
+        "CIEG 620\u00a0\u2013 Soil Mechanics II",
+        "CIEG 621\u00a0\u2013 Foundation Engineering",
+        "CIEG 623\u00a0\u2013 Soil Mechanics Lab",
+        "CIEG 625 \u2013 Geo-Environmental Engineering",
+        "CIEG 627\u00a0\u2013 Deep Foundations",
+        "CIEG 628\u00a0\u2013 Ground Improvement Methods",
+        "CIEG 658\u00a0\u2013 Pavement Analysis and Design",
+        "CIEG 675\u00a0\u2013 MATLAB for Engineering Analysis",
+        "CIEG 698\u00a0\u2013 Groundwater Flow and Contaminant Transport",
+        "CIEG 801\u00a0\u2013 Advanced Topics in Finite Element Analysis",
+        "CIEG 820\u00a0\u2013 Inelastic Behavior of Geomaterials",
+        "CIEG 867 \u2013 Computational Geomechanics"
+      ],
+      [
+        "What is Geotechnical Engineering?",
+        "Degrees Offered",
+        "Courses",
+        "Faculty"
+      ],
+      [
+        "Victor Kaliakin",
+        "Christopher Meehan",
+        "Zorana Mijic",
+        "Department Resources",
+        "College Resources"
+      ],
+      [
+        "Core Courses:",
+        "Suggested CIEG Electives:",
+        "Other Suggested Courses:"
+      ],
+      [
+        "Victor Kaliakin",
+        "Professor",
+        "kaliakin@udel.edu",
+        "Geotechnical"
+      ],
+      [
+        "Christopher Meehan",
+        "Professor",
+        "cmeehan@udel.edu"
+      ],
+      [
+        "Zorana Mijic",
+        "Assistant Professor",
+        "zmijic@udel.edu",
+        "Climate Change/ Adaptation, Disasters, Geotechnical, Infrastructure, Sustainability"
+      ]
+    ],
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering-track": [
+      [
+        "Bachelor of Science in Civil Engineering",
+        "Master of Science in Civil Engineering",
+        "PhD in Civil Engineering"
+      ],
+      [
+        "Main navigation",
+        "Breadcrumb",
+        "Program Overview",
+        "Related Programs",
+        "Related offerings",
+        "Benefits list",
+        "Application information & deadlines",
+        "Civil Engineering",
+        "Site footer",
+        "Global footer"
+      ],
+      [
+        "Academic programs",
+        "BS in Civil with Geotechnical Focus",
+        "MS in Civil with Geotechnical Focus",
+        "PhD in Civil with Geotechnical Focus",
+        "Info for",
+        "Academics",
+        "Utilities"
+      ]
+    ],
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-engineering.aspx": [
+      [
+        "Program Requirements",
+        "Master of Science Degree in Civil Engineering: Geotechnical Engineering Track",
+        "Master of Science Degree in Civil Engineering: Materials Engineering Track",
+        "Master of Science Degree in Civil Engineering: Pavement Engineering Track",
+        "Master of Engineering Degree",
+        "Courses Offered",
+        "Technical Electives and Other Courses"
+      ],
+      [
+        "540) Theory of Elasticity",
+        "456) Numerical Analysis",
+        "560) Finite Element Analysis",
+        "511) Applied Statistics and Regression Methods"
+      ],
+      [
+        "24 credits Track",
+        "Specific Course Requirements",
+        "12 credits of Technical Electives"
+      ],
+      [
+        "Foundation Design",
+        "Construction Engineering Materials",
+        "Geotechnical and Materials Engineering Capstone Design",
+        "Engineering Soil Characteristics",
+        "Soil Mechanics",
+        "Advanced Foundation Design",
+        "Pavement Management and Rehabilitation",
+        "Pavement Design and Analysis",
+        "Bituminous Materials and Mixtures",
+        "Concrete Materials and Properties",
+        "Colloquium",
+        "Special Topics Courses offered by Group Faculty",
+        "Geotechnical and Materials Engineering Graduate Seminar"
+      ]
+    ],
+    "https://www.pdx.edu/civil-environmental-engineering/geotechnical-engineering-research": [
+      [
+        "Faculty",
+        "Arash Khosravifar",
+        "Diane Moug",
+        "Trevor Smith"
+      ],
+      [
+        "Laboratory",
+        "Geotechnical Design Laboratory",
+        "Insitu Testing Laboratory",
+        "Soil Mechanics Laboratory"
+      ]
+    ],
+    "https://ce.gatech.edu/academics/groups/geosystems": [
+      [
+        "Bio-mediated and bio-inspired geotechnics",
+        "Energy geotechnology",
+        "Geotechnical analysis and design",
+        "Natural hazards engineering",
+        "Engineered geomaterials",
+        "Sustainable subsurface engineering",
+        "Rock mechanics and engineering",
+        "Micro-geomechanics",
+        "Subsurface characterization",
+        "Foundation Design",
+        "Earth Retaining structures",
+        "Liquefaction and ground deformation",
+        "Tailings Facilities and earth dams",
+        "Landslides and debris flows",
+        "Petroleum geomechanics",
+        "Energy recovery and waste disposal",
+        "Beneficial reuse of waste materials"
+      ],
+      [
+        "Soil Mechanics Instruction Laboratory",
+        "Damage Poromechanics Laboratory",
+        "Geoenvironmental Engineering Laboratory",
+        "Sustainable Geotechnical Systems Laboratory",
+        "In-Situ Research Laboratory",
+        "Rock and Fracture Mechanics Laboratory",
+        "Subsurface Processes Laboratory",
+        "NSF Engineering Research Center for Bio-mediated and Bio-inspired Geotechnics (CBBG)"
+      ],
+      [
+        "Susan E. Burns\n\n\n\nAssociate Chair for Finance and Administration \nDwight H. Evans Professor",
+        "J. David Frost\n\n\n\nElizabeth and Bill Higginbotham Professor \nRegents' Entrepreneur",
+        "Haiying Huang\n\n\n\nAssociate  Professor"
+      ],
+      [
+        "Associate Professor",
+        "Group Coordinator",
+        "Georgia Mining Association Early Career Professor"
+      ]
+    ],
+    "https://www.mccormick.northwestern.edu/civil-environmental/academics/masters/geotechnical-engineering-specialization/curriculum-requirements.html": [
+      [
+        "Civ_Env 450-1,\u00a03\u2013 Advanced Soil Mechanics I, III",
+        "Civ_Env 452\u2013 Unsaturated Soil Mechanics",
+        "Civ_Env 353 \u2013 Energy Geosystems and Geostructures",
+        "Civ_Env 357- Terramechanics",
+        "Civ_Env 450-2 or\u00a0Civ_Env 352\u00a0\u2013 Advanced Soil Mechanics II or Foundation Engineering",
+        "Civ_Env 458 \u2013 Soil Dynamics",
+        "Civ_Env 454\u2013Constitutive Models for Soils",
+        "Civ_Env 455\u2013 Plasticity and Limit Analysis",
+        "Civ_Env 456\u2013 Computational Geotechnics"
+      ],
+      [
+        "Engineering Home",
+        "CEE Department",
+        "Academics",
+        "Master's Program",
+        "Geotechnical Engineering Specialization",
+        "Curriculum and Requirements"
+      ],
+      [
+        "Academics",
+        "Master's Program",
+        "Geotechnical Engineering Specialization"
+      ]
+    ],
+    "https://www.cee.psu.edu/academics/graduate/research-areas/geotechnical-and-materials-research.aspx": [
+      [
+        "Principal Investigator), Memari, A. M. (Co",
+        "Principal Investigator), Baird, T. (Co",
+        "Principal Investigator), Pantano, C. G. (Co",
+        "Principal Investigator), Radlinska, A. (Co",
+        "Principal Investigator), Simpson, T. W. (Co",
+        "Principal Investigator), Tucker, C. S. (Co",
+        "Principal Investigator), Craveiro, F. (Co",
+        "Present)."
+      ],
+      [
+        "IBS Specification Modification,\u201d funded by Pennsylvania Department of Transportation, 02/20/2019",
+        "03/20/2020, total funding: $99,606. Co",
+        "PIs: Dr. Xiaofeng Liu, Dr. Patrick Fox."
+      ],
+      [
+        "Principal Investigator), Lulo, L.D. (Co",
+        "Hazard Resilient and Sustainable Building Designs,\" NSF. Total awarded: $849,189. (March 2015",
+        "February 2019)."
+      ],
+      [
+        "Principal Investigator), Fox, P. (Co",
+        "Investigator), Stoffels, S. (Co",
+        "Investigator) \u201cCenter for Integrated Asset Management of Multi"
+      ]
+    ],
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19667&returnto=4917": [
+      [
+        "M.S. degree from an accredited institution",
+        "B+ average in M.S. program coursework",
+        "Departmental approval",
+        "Demonstrated potential for excellent research work"
+      ],
+      [
+        "Accelerated and fast track construction",
+        "Application of geosynthetics in dewatering and containment",
+        "Applications of molecular biology to environmental engineering",
+        "Applied environmental microbiology",
+        "Applied surface chemistry",
+        "Aquatic chemistry",
+        "Biogeochemistry",
+        "Bioremediation",
+        "Bridge retrofit with CFRP composites",
+        "Changes in microbial communities in response to anthropogenic disturbance",
+        "Composite and hybrid systems",
+        "Construction project management",
+        "Construction safety and health",
+        "Decentralized treatment processes",
+        "Earthquake engineering",
+        "Economy of preventive maintenance of highway bridges",
+        "Environmental geostatistics",
+        "Experimental investigation of structural concrete and steel systems",
+        "FRP reinforced concrete structural systems",
+        "Geotechnical engineering",
+        "Global biogeochemical cycles",
+        "Green\u00a0materials \u00a0for contaminants removal and containment",
+        "In situ testing",
+        "Infrastructure asset management",
+        "Investigation of structural failures",
+        "Lean and green construction",
+        "Microbial fuel cell technologies",
+        "Microstructure of soil and geosynthetics",
+        "Natural and polymeric fibers in soil erosion mitigation",
+        "Natural organic matter",
+        "Non-destructive testing",
+        "Nonlinear structural theories",
+        "Numerical modeling",
+        "Potable water supply",
+        "Properties and applications of geofoams",
+        "Renewable hydrogen production",
+        "Resource recovery from wastewater",
+        "Slurry wall containment systems and movement of organics in soil/rock systems",
+        "Soil chemistry",
+        "Solid-liquid separation processes",
+        "Steel structures",
+        "Structural dynamics",
+        "Structural rehabilitation of civil infrastructure",
+        "Structural stability",
+        "Sustainable Infrastructure Systems",
+        "Tactile sensing",
+        "Transportation engineering",
+        "UAS applications",
+        "Water quality modeling"
+      ],
+      [
+        "Department Chair",
+        "Program Directors:",
+        "Faculty",
+        "Program Description",
+        "Admission Requirements",
+        "Advising",
+        "1. Qualifying Examination:",
+        "2. Candidacy Examination:",
+        "3. Dissertation Defense:"
+      ],
+      [
+        "Syracuse University",
+        "2024-2025 Graduate Course Catalog",
+        "All catalogs \u00a9 2025 Syracuse University. Powered by Modern Campus Catalog\u2122."
+      ]
+    ],
+    "https://www.ccee.iastate.edu/research/": [
+      [
+        "Construction Engineering",
+        "Environmental/Water Resources",
+        "Geotechnical/Materials Engineering"
+      ],
+      [
+        "Structural Engineering",
+        "Transportation Engineering",
+        "Transdisciplinary Infrastructure"
+      ],
+      [
+        "Portland Cement Concrete Pavement and Materials Lab",
+        "Structural Engineering Lab",
+        "Wallace W. and Julia B. Sanders Structural Lab"
+      ],
+      [
+        "Research Focus Areas",
+        "Interdepartmental Programs",
+        "Department Labs and Facilities",
+        "Computer Labs",
+        "Teaching Labs",
+        "More to Explore",
+        "Quick Links",
+        "Civil, Construction and Environmental Engineering"
+      ],
+      [
+        "Burns & McDonnell Teaching Laboratory",
+        "Tom and Ro Jellinger Laboratory",
+        "Highway Design Classroom",
+        "Joseph C. and Elizabeth A. Anderlik Teaching Laboratory",
+        "Geotechnical/Materials Teaching Laboratories"
+      ]
+    ],
+    "https://ceae.ku.edu/research-areas": [
+      [
+        "Hongyi Cai",
+        "Xu Han",
+        "Huijeong Kim",
+        "Michael Panethiere"
+      ],
+      [
+        "Chien-Ho Ko",
+        "Brian Lines",
+        "Daniel Tran"
+      ],
+      [
+        "Jie Han",
+        "Masoud Darabi",
+        "Robert Parsons"
+      ],
+      [
+        "Caroline R. Bennett",
+        "William N. Collins",
+        "Masoud Darabi",
+        "David Darwin",
+        "Andr\u00e9s Lepage",
+        "R\u00e9my Lequesne",
+        "Jian Li",
+        "Matt O'Reilly"
+      ],
+      [
+        "Amy Hansen",
+        "Justin Hutchison",
+        "Edward Peltier",
+        "Joshua Roundy",
+        "Nishit Shetty",
+        "Belinda Sturm"
+      ],
+      [
+        "Architectural Engineering",
+        "Construction Engineering and Management",
+        "Geotechnical Engineering and Materials",
+        "Structural Engineering",
+        "Environmental Engineering and Water Resources",
+        "Transportation Engineering"
+      ]
+    ],
+    "https://engineering.tamu.edu/civil/academics/degrees/graduate/specialties/geotechnical.html": [
+      [
+        "M.S. Civil Engineering: Geotechnical Engineering Specialty",
+        "M.E. Civil Engineering: Geotechnical Engineering Specialty",
+        "Ph.D. Civil Engineering: Geotechnical Engineering Specialty"
+      ],
+      [
+        "Degrees Offered",
+        "Zachry Department of Civil and Environmental Engineering",
+        "Find Us On Campus"
+      ],
+      [
+        "What is Geotechnical Engineering?",
+        "Degree Information",
+        "Master of Engineering and Master of Science (Non-Thesis)",
+        "Master of Science (Thesis)",
+        "Doctor of Philosophy"
+      ],
+      [
+        "Master of Engineering and Master of Science (Non-Thesis)",
+        "Master of Science (Thesis)",
+        "Ph.D. Geotechnical Engineering"
+      ]
+    ],
+    "https://cee.utk.edu/research/geotechnical-and-materials-engineering/": [
+      [
+        "Multi-scale mechanics of granular materials and extreme environment",
+        "Polymers, geomaterials, and composites",
+        "Sustainable materials and pavement engineering",
+        "Engineered soils research group"
+      ],
+      [
+        "Creating new soil materials \u2013\u201ctunable\u201d clay-polymer composites",
+        "Designing soil mineralogical composition",
+        "Modifying pore fluid conditions",
+        "Incorporating mechanical stabilizers",
+        "Developing an insightful understanding of micro-scale mechanics",
+        "NDE health monitoring of structures",
+        "Flow through porous media",
+        "Fiber reinforced composites",
+        "Multi-scale modeling and direct numerical simulations"
+      ],
+      [
+        "And they are able to better predict and control soil behavior by:",
+        "\u00bb Khalid Alshibli, Professor and Group Coordinator",
+        "\u00bb Baoshan Huang, Edwin G. Burdette Professor",
+        "\u00bb Angel Palomino, Assistant Professor",
+        "\u00bb Dayakar Penumadu, Fred N. Peebles Professor and IAMM Chair of Excellence"
+      ]
+    ],
+    "https://www.ce.washington.edu/future/grad/masters/geotechnical": [
+      [
+        "Ben Upsall",
+        "Katie deLaveaga Price",
+        "Connect with us:"
+      ]
+    ],
+    "https://gradprograms.mines.edu/civil-and-environmental-engineering/": [
+      [
+        "Bachelor\u2019s Degree: Required",
+        "GRE: Not Required",
+        "Letters of Recommendation: Not Required",
+        "Resume or Curriculum Vitae (CV): Required",
+        "Statement of Purpose: Required"
+      ],
+      [
+        "Bachelor\u2019s Degree: Required",
+        "GRE: Not Required",
+        "Letters of Recommendation: Required \u2013 three letters.",
+        "Resume or Curriculum Vitae (CV): Required",
+        "Statement of Purpose: Required"
+      ],
+      [
+        "Bachelor\u2019s Degree: Required",
+        "GRE: Not Required",
+        "Letters of Recommendation: Required \u2013 three letters.",
+        "Resume or Curriculum Vitae (CV): Required",
+        "Statement of Purpose: Required"
+      ],
+      [
+        "Career Outcomes",
+        "Career Types",
+        "Career Resources",
+        "Where Alumni Work"
+      ],
+      [
+        "Civil engineer",
+        "Environmental remediation engineer",
+        "Water project manager",
+        "Environmental health and safety director",
+        "Green building engineer",
+        "Air pollution control engineer"
+      ],
+      [
+        "American Waterworks Association",
+        "Bureau of Reclamation",
+        "Chevron, Newmont Mining",
+        "U.S. Geological Survey"
+      ],
+      [
+        "Master\u2019s Non-Thesis",
+        "Master\u2019s Thesis",
+        "Doctorate",
+        "Master\u2019s Non-Thesis",
+        "Master\u2019s Thesis",
+        "Resources",
+        "Visit Mines"
+      ]
+    ],
+    "https://www.jsums.edu/civilengineering/geotechnical-geoenvironmental-engineering/": [
+      [
+        "Internal Resources",
+        "CARES ACT",
+        "Thee Portal",
+        "Create/Reset NET ID Password"
+      ],
+      [
+        "Internal Resources",
+        "CARES ACT",
+        "Thee Portal",
+        "Create/Reset NET ID Password"
+      ]
+    ],
+    "https://cee.illinois.edu/academics/areas": [
+      [
+        "Computational Science and Engineering (CSE) Option",
+        "MArch + MS-CEE (structures)",
+        "MArch + MS-CEE (construction management)"
+      ]
+    ],
+    "https://structures.ucsd.edu/academics/graduate-resources/ms-geotechnical-engineering": [
+      [
+        "Requirement",
+        "Core Courses",
+        "Geotechnical Technical Electives",
+        "Other Technical Electives",
+        "Total units"
+      ],
+      [
+        "Requirement",
+        "Core Courses",
+        "Geotechnical Technical Electives",
+        "Other Technical Electives",
+        "Thesis Research",
+        "Total units"
+      ],
+      [
+        "SE 207 - Soil Dynamics",
+        "SE 222 - Geotechnical Earthquake Engineering",
+        "SE 243 - Soil-Structure Interaction",
+        "SE 244 - Numerical Methods in Geomechanics"
+      ],
+      [
+        "SE 181 - Geotechnical Engineering",
+        "SE 201A - Advanced Structural Analysis",
+        "SE 206 - Random Vibrations (Prerequisite: SE 203A)",
+        "SE 212 - Steel Design",
+        "SE 220 - Seismic Isolation and Energy Dissipation (Prerequisite: SE 201A)",
+        "SE 223 - Advanced Seismic Design of Structures",
+        "SE 235 - Wave Propagation in Elastic Media",
+        "SE 274 - Nonlinear Finite Element Methods",
+        "SE 276B - Finite Element Methods in Solid Mechanics II",
+        "SIO 225 - Physics of Earth Materials",
+        "SIO 227A - Introduction to Seismology",
+        "SIO 239 - Introduction to the Rheology of Solid Earth"
+      ],
+      [
+        "Core Courses:",
+        "Geotechnical Electives:",
+        "Other Technical Electives:"
+      ]
+    ],
+    "https://www.umass.edu/engineering/academics/geotechnical-engineering/geotechnical-engineering-degree-requirements": [
+      [
+        "CEE 620 Shear Strength and Soil Behavior\u00a0 (3 credits)",
+        "CEE 523 Ground Improvement\u00a0 (4 credits)",
+        "CEE 623 Advanced Foundation Engineering (4 credits)",
+        "CEE 527 Earthquake Engineering (4 credits)"
+      ],
+      [
+        "Geotechnical Engineering courses \u2013 usually 15 to 20 credits",
+        "1 required Geosciences course \u2013 usually 4 credits",
+        "Additional graduate level electives \u2013 usually 9 to 12 credits",
+        "Geotechnical Engineering Seminar \u2013 1 credit"
+      ],
+      [
+        "18 credit hours of graduate level coursework beyond the master's degree.",
+        "18 credit hours of dissertation credits.",
+        "One credit hour of Geotechnical Seminar",
+        "One year in residency.",
+        "Dissertation."
+      ],
+      [
+        "Main navigation",
+        "Breadcrumb",
+        "Master of Science",
+        "Master of Science Coursework Option",
+        "Doctor of Philosophy Degree",
+        "Local Navigation Links",
+        "Site footer",
+        "Global footer"
+      ],
+      [
+        "Academic programs",
+        "Info for",
+        "Academics",
+        "Utilities"
+      ],
+      [
+        "Geotechnical Engineering",
+        "24 credits of course work",
+        "1. Core Courses typically consist of:",
+        "2. Geosciences Elective:",
+        "3. Additional Electives",
+        "4. Plus Thesis and Seminar",
+        "Net Total Credits = 24(courses) + 6(thesis) + 1(seminar) = 31 credits"
+      ]
+    ],
+    "https://catalog.mit.edu/schools/engineering/civil-environmental-engineering/": [
+      [
+        "Home>",
+        "Schools>",
+        "School\u00a0of\u00a0Engineering>",
+        "Civil and Environmental Engineering"
+      ],
+      [
+        "Undergraduate Study",
+        "Graduate Study",
+        "Faculty and Teaching Staff",
+        "Research Staff",
+        "Professors Emeriti",
+        "Fundamentals",
+        "Undergraduate Laboratory Subjects",
+        "Engineering Information Systems and Computation",
+        "Engineering Analysis Methods",
+        "Engineering Systems, Economics, and Optimization",
+        "Engineering Risk Assessment and Probabilistic Analysis",
+        "Transportation",
+        "Geoenvironmental and Geotechnical Engineering",
+        "Construction Engineering and Management",
+        "Materials and Structures",
+        "Hydrodynamics and Coastal Engineering",
+        "Hydrology and Water Resource Systems",
+        "Aquatic Sciences, Water Quality Control, and Environmental Management",
+        "Special Studies"
+      ],
+      [
+        "Bachelor of Science in Engineering (Course 1-ENG)",
+        "Bachelor of Science in Climate System Science and Engineering",
+        "Minor in Civil and Environmental Systems",
+        "Minor in Civil Engineering",
+        "Minor in Environmental Engineering Science",
+        "Other Undergraduate Opportunities Research Opportunities",
+        "Admission Requirements",
+        "Master of Engineering",
+        "Master of Science in Civil and Environmental Engineering",
+        "Doctoral Degrees",
+        "Financial Assistance",
+        "Interdisciplinary Programs",
+        "Inquiries",
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Research Scientists"
+      ],
+      [
+        "A \u2013 Z",
+        "Calendar",
+        "Archive",
+        "Print"
+      ],
+      [
+        "Bachelor of Science in Engineering (Course 1-ENG)",
+        "Bachelor of Science in Climate System Science and Engineering (1-12)",
+        "Minor in Civil and Environmental Systems",
+        "Minor in Civil Engineering",
+        "Minor in Environmental Engineering Science"
+      ],
+      [
+        "Master of Engineering",
+        "Master of Science in Civil and Environmental Engineering",
+        "Doctoral Degrees"
+      ],
+      [
+        "Ali Jadbabaie, PhD",
+        "JR East Professor of Engineering",
+        "Professor of Civil and Environmental Engineering",
+        "Head, Department of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Eric J. Alm, PhD",
+        "Professor of Biological Engineering",
+        "Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Saurabh Amin, PhD",
+        "Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Cynthia Barnhart, PhD",
+        "Abraham J. Siegel Professor of Management",
+        "Professor of Civil and Environmental Engineering",
+        "Professor of Operations Research and Statistics",
+        "Provost"
+      ],
+      [
+        "Moshe E. Ben-Akiva, PhD",
+        "Edmund K. Turner Professor",
+        "Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Markus J. Buehler, PhD",
+        "Jerry McAfee (1940) Professor in Engineering",
+        "Professor of Civil and Environmental Engineering",
+        "Professor of Mechanical Engineering"
+      ],
+      [
+        "Oral Buyukozturk, PhD",
+        "George Macomber Professor in Construction Management",
+        "Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Sallie W. Chisholm, PhD",
+        "Institute Professor",
+        "Professor of Civil and Environmental Engineering",
+        "Professor of Biology"
+      ],
+      [
+        "Elfatih A. B. Eltahir, ScD",
+        "H.M. King Bhumibol Professor",
+        "Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Dara Entekhabi, PhD",
+        "Bacardi and Stockholm Water Foundation Professor",
+        "Professor of Civil and Environmental Engineering",
+        "Professor of Earth, Atmospheric and Planetary Sciences"
+      ],
+      [
+        "Patrick Jaillet, PhD",
+        "Dugald C. Jackson Professor in Electrical Engineering",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Rub\u00e9n Juanes, PhD",
+        "Professor of Civil and Environmental Engineering",
+        "Professor of Earth, Atmospheric and Planetary Sciences"
+      ],
+      [
+        "Jesse Kroll, PhD",
+        "Professor of Civil and Environmental Engineering",
+        "Professor of Chemical Engineering"
+      ],
+      [
+        "John A. Ochsendorf, PhD",
+        "Class of 1942 Professor",
+        "Professor of Architecture",
+        "Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Yossi Sheffi, PhD",
+        "Elisha Gray II Professor",
+        "Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "David Simchi-Levi, PhD",
+        "Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Andrew Whittle, PhD",
+        "Edmund K. Turner Professor",
+        "Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Jinhua Zhao, PhD",
+        "Professor of Urban Planning and Transportation",
+        "Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Xuanhe Zhao, PhD",
+        "Professor of Mechanical Engineering",
+        "Professor of Civil and Environmental Engineering",
+        "(On leave, spring)"
+      ],
+      [
+        "Tal Cohen, PhD",
+        "Associate Professor of Civil and Environmental Engineering",
+        "Associate Professor of Mechanical Engineering"
+      ],
+      [
+        "Caitlin T. Mueller, PhD",
+        "Associate Professor of Architecture",
+        "Associate Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Haruko M. Wainwright, PhD",
+        "Mitsui Career Development Professor in Contemporary Technology",
+        "Assistant Professor of Nuclear Science and Engineering",
+        "Assistant Professor of Civil and Environmental Engineering"
+      ],
+      [
+        "Cathy Wu, PhD",
+        "Assistant Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Ole S. Madsen, ScD",
+        "Donald and Martha Harleman Professor Emeritus",
+        "Professor Emeritus of Civil and Environmental Engineering"
+      ],
+      [
+        "David H. Marks, PhD",
+        "Morton and Claire Goulder Family Professor Emeritus",
+        "Professor Emeritus of Civil and Environmental Engineering"
+      ],
+      [
+        "Chiang C. Mei, PhD",
+        "Ford Professor Emeritus of Engineering",
+        "Professor Emeritus of Civil and Environmental Engineering",
+        "Professor Emeritus of Mechanical Engineering"
+      ],
+      [
+        "Fred Moavenzadeh, PhD",
+        "James Mason Crafts Professor Emeritus",
+        "Professor Emeritus of Civil and Environmental Engineering"
+      ],
+      [
+        "Amedeo R. Odoni, PhD",
+        "T. A. Wilson (1953) Professor Emeritus",
+        "Professor Emeritus of Aeronautics and Astronautics",
+        "Professor Emeritus of Civil and Environmental Engineering"
+      ],
+      [
+        "Daniel Roos, PhD",
+        "Professor Emeritus of Data, Systems, and Society",
+        "Professor Emeritus of Civil and Environmental Engineering"
+      ],
+      [
+        "Same subject as 3.094[J]Prereq: None U (Spring)2-3-4 units. HASS-S",
+        "See description under subject 3.094[J]. Enrollment limited to 24.",
+        "M. Tarkanian, A. Masic"
+      ],
+      [
+        "Same subject as 6.7920[J], IDS.140[J]Prereq: 6.3700 or permission of instructor G (Fall)4-0-8 units",
+        "See description under subject 6.7920[J].",
+        "C. Wu, M. Dahleh"
+      ],
+      [
+        "Same subject as 15.054[J], 16.71[J]Prereq: None G (Fall)3-0-9 units",
+        "See description under subject 16.71[J].",
+        "P. P. Belobaba, H. Balakrishnan, A. I. Barnett, R. J. Hansman, T. A. Kochan"
+      ],
+      [
+        "Same subject as 11.526[J]Prereq: None G (Spring)3-0-9 units",
+        "See description under subject 11.526[J].",
+        "F. Duarte"
+      ],
+      [
+        "Same subject as 15.771[J], SCM.261[J]Prereq: None G (Spring; second half of term)2-0-4 units",
+        "See description under subject SCM.261[J].",
+        "M. Jesus Saenz"
+      ],
+      [
+        "Same subject as 15.762[J], IDS.735[J]Prereq: 15.761 or SCM.260[J] G (Spring)3-0-9 units",
+        "See description under subject 15.762[J].",
+        "N. Trichakis, S. Willems"
+      ],
+      [
+        "Same subject as IDS.305[J]Prereq: Permission of instructor G (Spring; first half of term)2-0-4 units",
+        "See description under subject IDS.305[J].",
+        "D. Simchi-Levi"
+      ],
+      [
+        "Same subject as 11.345[J]Prereq: Permission of instructor G (Fall; first half of term)2-0-4 units",
+        "See description under subject 11.345[J].",
+        "S. Gronfeldt, G. Rosenzweig"
+      ],
+      [
+        "Same subject as 11.344[J]Prereq: None G (Spring; first half of term)2-0-4 units",
+        "See description under subject 11.344[J].",
+        "C. M. Gordon"
+      ],
+      [
+        "Same subject as 4.464[J]\nSubject meets with 4.401Prereq: None G (Fall)3-2-4 units",
+        "See description under subject 4.464[J].",
+        "C. Reinhart"
+      ],
+      [
+        "Same subject as 2.080[J]Prereq: 2.002 G (Fall)4-0-8 units",
+        "See description under subject 2.080[J].",
+        "T. Wierzbicki, D. Parks"
+      ],
+      [
+        "Same subject as 11.466[J], 15.657[J], IDS.437[J]Prereq: Permission of instructor G (Fall)3-0-9 units",
+        "See description under subject IDS.437[J].",
+        "N. Ashford"
+      ],
+      [
+        "Same subject as 2.834[J]\nSubject meets with 2.814Prereq: None G (Fall)3-0-9 units",
+        "See description under subject 2.834[J]. Limited to 25.",
+        "T. Gutowski"
+      ],
+      [
+        "1.020",
+        "1.022",
+        "1.041[J]",
+        "1.075",
+        "1.101",
+        "1.102",
+        "Total Units"
+      ],
+      [
+        "1.035",
+        "1.036",
+        "1.050",
+        "1.101",
+        "1.060",
+        "1.102",
+        "Total Units"
+      ],
+      [
+        "1.018[J]",
+        "1.060",
+        "1.061A",
+        "1.070A[J]",
+        "1.080",
+        "1.091",
+        "1.106",
+        "1.107",
+        "Total Units"
+      ],
+      [
+        "M component of the Communication Requirement, students must take two of the department\u2019s CI",
+        "M subjects (1.013 and either\u00a01.101/1.102\u00a0or 1.106/1.107) or take one Course 1 CI",
+        "M subject and petition the Subcommittee on the Communication Requirement to substitute one CI",
+        "M from another science or engineering field. Any outside CI"
+      ],
+      [
+        "oriented graduate program that consists of high",
+        "level, fast",
+        "level subjects, 48 units of which must be departmental subjects."
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)1",
+        "2 units"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)1",
+        "1 units"
+      ],
+      [
+        "solving skills. Subject can count toward the 6",
+        "unit discovery",
+        "focused credit limit for first",
+        "year students."
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)1",
+        "2 units"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered4",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)2",
+        "4 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "8 unitsCredit cannot also be received for 1.061A"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall; first half of term)2",
+        "3 unitsCredit cannot also be received for 1.061, 1.61"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered3",
+        "6 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "7 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)2",
+        "4 units"
+      ],
+      [
+        "2025: U (Fall)",
+        "2026: Not offered2",
+        "4 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)0",
+        "4 units"
+      ],
+      [
+        "modal data for new applications; refining commercially available sensors for new real",
+        "world applications; designing a sensor network and building data",
+        "acquisition system for use in lab experiments and/or real",
+        "world deployments; sending the data over the Internet for visualization and post"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)0",
+        "2 units. Partial Lab"
+      ],
+      [
+        "based software",
+        "scale systems. Student teams confront technically challenging problems. Introduces modern dev",
+        "ops concepts and cloud",
+        "computing, including cloud orchestration for machine learning. Also discusses cyber"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)4",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring; second half of term)2",
+        "4 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)0",
+        "4 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)4",
+        "8 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "principles methods, visualization, data analysis, numerical methods, supercomputing, data",
+        "driven algorithms). Includes interactive computational projects and cloud",
+        "based computing. Part I",
+        "Basic atomistic and multiscale methods, Part II",
+        "Interatomic potentials, Part III",
+        "Mechanical properties at multiple scales, Part IV",
+        "Materiomics."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "8 unitsCredit cannot also be received for 1.061A"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "6 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "7 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)4",
+        "8 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered4",
+        "8 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)4",
+        "8 units"
+      ],
+      [
+        "1.EPE,",
+        "2.EPE,",
+        "3.EPE,",
+        "6.EPE,",
+        "8.EPE,",
+        "10.EPE,",
+        "15.EPE,",
+        "16.EPE,",
+        "20.EPE,"
+      ],
+      [
+        "1.EPW,",
+        "2.EPW,",
+        "3.EPW,",
+        "6.EPW,",
+        "10.EPW,",
+        "16.EPW,",
+        "20.EPW,",
+        "22.EPWPrereq:"
+      ],
+      [
+        "3.UAR[J],",
+        "5.UAR[J],",
+        "11.UAR[J],",
+        "12.UAR[J],",
+        "15.UAR[J],"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:16:45"
+}

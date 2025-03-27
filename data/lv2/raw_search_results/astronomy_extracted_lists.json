@@ -1,0 +1,938 @@
+{
+  "level1_term": "astronomy",
+  "url_verification_status": {
+    "https://astro.washington.edu/teaching": false,
+    "https://astro.indiana.edu/graduate/research.html": true,
+    "https://astro.washington.edu/programs-courses": false,
+    "https://science.psu.edu/astro": false,
+    "https://astro.indiana.edu/undergraduate/courses/research-experience-courses.html": false,
+    "https://sese.asu.edu/research/focus-areas/cosmology-astronomy-astrophysics": false,
+    "https://astronomy.utexas.edu/program-overview": false,
+    "https://astro.berkeley.edu/": false,
+    "https://astronomy.yale.edu/welcome": false,
+    "https://physics.nd.edu/research/research-areas/astronomy-astrophysics/": true,
+    "https://www.vassar.edu/physics-and-astronomy": false,
+    "https://as.tufts.edu/physics/research": false,
+    "https://www.pa.ucla.edu/research.html": false,
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/physics-and-astronomy": false,
+    "https://www.utrgv.edu/cos/schools-and-departments/physics-and-astronomy/": false,
+    "https://www.ohio.edu/cas/physics-astronomy/research": false,
+    "https://astro.ucsd.edu/": false,
+    "https://www.mtholyoke.edu/directory/departments-offices-centers/astronomy": false,
+    "https://physics-astronomy.jhu.edu/graduate/": false,
+    "https://www.physics.ucr.edu/": false,
+    "https://www.calstatela.edu/nss/physics-astronomy": false,
+    "https://www.sas.rochester.edu/pas/undergraduate/special.html": false,
+    "https://astronomy.osu.edu/": false,
+    "https://academiccatalog.umd.edu/graduate/programs/astronomy-astr/": true,
+    "https://www.depts.ttu.edu/phas/Academics/Graduate_Program/Prospective_Students/Research_Areas.php": false,
+    "https://astrophysics.uchicago.edu/resources/for-faculty/": false,
+    "https://www.physicsandastronomy.pitt.edu/": false,
+    "https://sc.edu/study/colleges_schools/artsandsciences/physics_and_astronomy/": true,
+    "https://www.utoledo.edu/nsm/physast": false,
+    "https://astronomy.sdsu.edu/": false
+  },
+  "verified_lists_per_url": {
+    "https://astro.washington.edu/teaching": 0,
+    "https://astro.indiana.edu/graduate/research.html": 1,
+    "https://astro.washington.edu/programs-courses": 0,
+    "https://science.psu.edu/astro": 0,
+    "https://astro.indiana.edu/undergraduate/courses/research-experience-courses.html": 0,
+    "https://sese.asu.edu/research/focus-areas/cosmology-astronomy-astrophysics": 0,
+    "https://astronomy.utexas.edu/program-overview": 0,
+    "https://astro.berkeley.edu/": 0,
+    "https://astronomy.yale.edu/welcome": 0,
+    "https://physics.nd.edu/research/research-areas/astronomy-astrophysics/": 2,
+    "https://www.vassar.edu/physics-and-astronomy": 0,
+    "https://as.tufts.edu/physics/research": 0,
+    "https://www.pa.ucla.edu/research.html": 0,
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/physics-and-astronomy": 0,
+    "https://www.utrgv.edu/cos/schools-and-departments/physics-and-astronomy/": 0,
+    "https://www.ohio.edu/cas/physics-astronomy/research": 0,
+    "https://astro.ucsd.edu/": 0,
+    "https://www.mtholyoke.edu/directory/departments-offices-centers/astronomy": 0,
+    "https://physics-astronomy.jhu.edu/graduate/": 0,
+    "https://www.physics.ucr.edu/": 0,
+    "https://www.calstatela.edu/nss/physics-astronomy": 0,
+    "https://www.sas.rochester.edu/pas/undergraduate/special.html": 0,
+    "https://astronomy.osu.edu/": 0,
+    "https://academiccatalog.umd.edu/graduate/programs/astronomy-astr/": 1,
+    "https://www.depts.ttu.edu/phas/Academics/Graduate_Program/Prospective_Students/Research_Areas.php": 0,
+    "https://astrophysics.uchicago.edu/resources/for-faculty/": 0,
+    "https://www.physicsandastronomy.pitt.edu/": 0,
+    "https://sc.edu/study/colleges_schools/artsandsciences/physics_and_astronomy/": 1,
+    "https://www.utoledo.edu/nsm/physast": 0,
+    "https://astronomy.sdsu.edu/": 0
+  },
+  "total_lists_per_url": {
+    "https://astro.washington.edu/teaching": 1,
+    "https://astro.indiana.edu/graduate/research.html": 5,
+    "https://astro.washington.edu/programs-courses": 2,
+    "https://science.psu.edu/astro": 1,
+    "https://astro.indiana.edu/undergraduate/courses/research-experience-courses.html": 4,
+    "https://sese.asu.edu/research/focus-areas/cosmology-astronomy-astrophysics": 8,
+    "https://astronomy.utexas.edu/program-overview": 1,
+    "https://astro.berkeley.edu/": 2,
+    "https://astronomy.yale.edu/welcome": 1,
+    "https://physics.nd.edu/research/research-areas/astronomy-astrophysics/": 3,
+    "https://www.vassar.edu/physics-and-astronomy": 1,
+    "https://as.tufts.edu/physics/research": 1,
+    "https://www.pa.ucla.edu/research.html": 10,
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/physics-and-astronomy": 4,
+    "https://www.utrgv.edu/cos/schools-and-departments/physics-and-astronomy/": 3,
+    "https://www.ohio.edu/cas/physics-astronomy/research": 3,
+    "https://astro.ucsd.edu/": 1,
+    "https://www.mtholyoke.edu/directory/departments-offices-centers/astronomy": 1,
+    "https://physics-astronomy.jhu.edu/graduate/": 1,
+    "https://www.physics.ucr.edu/": 4,
+    "https://www.calstatela.edu/nss/physics-astronomy": 1,
+    "https://www.sas.rochester.edu/pas/undergraduate/special.html": 1,
+    "https://astronomy.osu.edu/": 2,
+    "https://academiccatalog.umd.edu/graduate/programs/astronomy-astr/": 6,
+    "https://www.depts.ttu.edu/phas/Academics/Graduate_Program/Prospective_Students/Research_Areas.php": 2,
+    "https://astrophysics.uchicago.edu/resources/for-faculty/": 2,
+    "https://www.physicsandastronomy.pitt.edu/": 1,
+    "https://sc.edu/study/colleges_schools/artsandsciences/physics_and_astronomy/": 3,
+    "https://www.utoledo.edu/nsm/physast": 3,
+    "https://astronomy.sdsu.edu/": 2
+  },
+  "verified_lists_ids": {
+    "https://astro.washington.edu/teaching": [],
+    "https://astro.indiana.edu/graduate/research.html": [
+      4
+    ],
+    "https://astro.washington.edu/programs-courses": [],
+    "https://science.psu.edu/astro": [],
+    "https://astro.indiana.edu/undergraduate/courses/research-experience-courses.html": [],
+    "https://sese.asu.edu/research/focus-areas/cosmology-astronomy-astrophysics": [],
+    "https://astronomy.utexas.edu/program-overview": [],
+    "https://astro.berkeley.edu/": [],
+    "https://astronomy.yale.edu/welcome": [],
+    "https://physics.nd.edu/research/research-areas/astronomy-astrophysics/": [
+      0,
+      1
+    ],
+    "https://www.vassar.edu/physics-and-astronomy": [],
+    "https://as.tufts.edu/physics/research": [],
+    "https://www.pa.ucla.edu/research.html": [],
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/physics-and-astronomy": [],
+    "https://www.utrgv.edu/cos/schools-and-departments/physics-and-astronomy/": [],
+    "https://www.ohio.edu/cas/physics-astronomy/research": [],
+    "https://astro.ucsd.edu/": [],
+    "https://www.mtholyoke.edu/directory/departments-offices-centers/astronomy": [],
+    "https://physics-astronomy.jhu.edu/graduate/": [],
+    "https://www.physics.ucr.edu/": [],
+    "https://www.calstatela.edu/nss/physics-astronomy": [],
+    "https://www.sas.rochester.edu/pas/undergraduate/special.html": [],
+    "https://astronomy.osu.edu/": [],
+    "https://academiccatalog.umd.edu/graduate/programs/astronomy-astr/": [
+      1
+    ],
+    "https://www.depts.ttu.edu/phas/Academics/Graduate_Program/Prospective_Students/Research_Areas.php": [],
+    "https://astrophysics.uchicago.edu/resources/for-faculty/": [],
+    "https://www.physicsandastronomy.pitt.edu/": [],
+    "https://sc.edu/study/colleges_schools/artsandsciences/physics_and_astronomy/": [
+      0
+    ],
+    "https://www.utoledo.edu/nsm/physast": [],
+    "https://astronomy.sdsu.edu/": []
+  },
+  "num_urls": 40,
+  "num_lists": 80,
+  "url_to_lists": {
+    "https://astro.washington.edu/teaching": [
+      [
+        "Quick links",
+        "Main menu",
+        "You are here",
+        "Resources",
+        "Resources"
+      ]
+    ],
+    "https://astro.indiana.edu/graduate/research.html": [
+      [
+        "Quick Links",
+        "Contact",
+        "Undergraduate",
+        "Graduate",
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ],
+      [
+        "Undergraduate",
+        "Graduate",
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ],
+      [
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ],
+      [
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ],
+      [
+        "Exoplanets",
+        "Stellar astrophysics",
+        "Stellar populations",
+        "Dynamics",
+        "Galaxies"
+      ]
+    ],
+    "https://astro.washington.edu/programs-courses": [
+      [
+        "Undergraduate Program",
+        "Graduate Program\u00a0and\u00a0Interdisciplinary Tracks",
+        "Postdoctoral Program",
+        "Courses"
+      ],
+      [
+        "Quick links",
+        "Main menu",
+        "You are here",
+        "Programs & Courses"
+      ]
+    ],
+    "https://science.psu.edu/astro": [
+      [
+        "Abe Falcone",
+        "Donghui Jeong",
+        "Konstantin Getman"
+      ]
+    ],
+    "https://astro.indiana.edu/undergraduate/courses/research-experience-courses.html": [
+      [
+        "Quick Links",
+        "Contact",
+        "Undergraduate",
+        "Graduate",
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ],
+      [
+        "Undergraduate",
+        "Graduate",
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ],
+      [
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ],
+      [
+        "Schedule 2021-22",
+        "Schedule 2020-21",
+        "Schedule 2019-20",
+        "Schedule 2018-19",
+        "Schedule 2017-18",
+        "Schedule 2016-17",
+        "Schedule 2015-16",
+        "Schedule 2014-15",
+        "Schedule 2013-14",
+        "Schedule 2012-13",
+        "Schedule 2011-12",
+        "Schedule 2010-11",
+        "Schedule 2022-23",
+        "Schedule 2023-24"
+      ]
+    ],
+    "https://sese.asu.edu/research/focus-areas/cosmology-astronomy-astrophysics": [
+      [
+        "Scannapieco personal website",
+        "Starrfield personal website",
+        "Timmes personal website",
+        "Young personal website"
+      ],
+      [
+        "Borthakur personal website",
+        "Bowman personal website",
+        "Butler personal website",
+        "Jacobs personal website",
+        "Noble profile",
+        "Scannapieco personal website",
+        "Timmes personal website",
+        "Van Engelen profile",
+        "Windhorst personal website"
+      ],
+      [
+        "Borthakur personal website",
+        "Bowman personal website",
+        "Butler personal website",
+        "Jacobs personal website",
+        "Noble profile",
+        "Scannapieco personal website",
+        "Van Engelen profile",
+        "Windhorst profile"
+      ],
+      [
+        "Bose personal website",
+        "Desch profile",
+        "Shock personal website",
+        "Timmes personal website",
+        "Wadhwa profile",
+        "Young personal website",
+        "Zolotov personal website"
+      ],
+      [
+        "Butler personal website",
+        "Starrfield personal website",
+        "Timmes personal website",
+        "Young personal website"
+      ],
+      [
+        "Bose personal website",
+        "Butler personal website",
+        "Desch profile",
+        "Groppi personal website",
+        "Starrfield personal website",
+        "Timmes personal website",
+        "Young personal website"
+      ],
+      [
+        "Line\u00a0personal website",
+        "Shkolnik personal website",
+        "Patience\u00a0profile"
+      ],
+      [
+        "house laboratories for state",
+        "art instrumentation, we have access to state",
+        "art facilities including world",
+        "class telescopes and instrumentation for the sub",
+        "mm, radio, infrared, and optical as well as extensive computing facilities, including in",
+        "house parallel supercomputers."
+      ]
+    ],
+    "https://astronomy.utexas.edu/program-overview": [
+      [
+        "art instrumentation for optical and infrared spectroscopy and imaging, including VIRUS",
+        "P, the integral",
+        "field spectrograph prototype of the HETDEX project, and the innovative, high",
+        "resolution, near"
+      ]
+    ],
+    "https://astro.berkeley.edu/": [
+      [
+        "The Hubble Space Telescope completes a high-resolution portrait of our galaxy\u2019s gorgeous neighbor",
+        "Astronomy Night: A Stargazing and Lecture Event!",
+        "Basic Research Lights the Way",
+        "Campbell Hall Rooftop Dome Observatory",
+        "This rocky planet around a white dwarf resembles Earth \u2014 8 billion years from now",
+        "March 12, 2025",
+        "February 20, 2025",
+        "Follow us:"
+      ],
+      [
+        "Pause12345",
+        "The Hubble Space Telescope completes a high-resolution portrait of our galaxy\u2019s gorgeous neighbor",
+        "This rocky planet around a white dwarf resembles Earth \u2014 8 billion years from now"
+      ]
+    ],
+    "https://astronomy.yale.edu/welcome": [
+      [
+        "Shows have now been added for the winter!",
+        "The current planetarium show is \u201c\u00a0Mars One Thousand One.\u201d.",
+        "Please note: If you arrive more than 5 minutes after the show starts, you may lose your spot.",
+        "Click here to check out past episodes."
+      ]
+    ],
+    "https://physics.nd.edu/research/research-areas/astronomy-astrophysics/": [
+      [
+        "Peter Garnavich -- the study of supernovae and their diversity",
+        "Lara Arielle Phillips -- the interplay between galaxies and the largest structures in the Universe.",
+        "Lauren Weiss \u2013 discovering exoplanets and measuring their fundamental properties"
+      ],
+      [
+        "Exoplanets",
+        "Stars and the Milky Way",
+        "Supernovae, Compact Objects, and Nucleosynthesis",
+        "Galaxies",
+        "Cosmology/Large Scale Structure",
+        "Gravitational Wave Astronomy",
+        "Hydrodynamical Models",
+        "Astrophysics faculty members"
+      ],
+      [
+        "Jeff Chilcote, Justin Crepp, Lauren Weiss",
+        "Tim Beers, Evan Kirby",
+        "Peter Garnavich, Evan Kirby, Grant Mathews, Rebecca Surman",
+        "Chris Howk, Nicolas Lehner",
+        "Grant Mathews, Lara Arielle Phillips",
+        "Lan Nguyen",
+        "Dinshaw Balsara",
+        "MHD video"
+      ]
+    ],
+    "https://www.vassar.edu/physics-and-astronomy": [
+      [
+        "Actions",
+        "Roles",
+        "Main navigation",
+        "Science and Tech Bring Vassar and West Point Together",
+        "Vassar\u2019s Newest Professors Hail from Burbank to Bulgaria",
+        "Colette Salyk Secures Grant from Space Telescope Science Institute (STScI)",
+        "Vassar Prof on NASA Team That Makes Discovery on How Planets Are Formed",
+        "Ed Buie II Secures Grant Award from the Space Telescope Science Institute",
+        "Ed Buie II secures ACCESS research grant"
+      ]
+    ],
+    "https://as.tufts.edu/physics/research": [
+      [
+        "Astronomy and Astrophysics",
+        "Condensed Matter",
+        "Cosmology and Relativity",
+        "High Energy Physics",
+        "Physics Education Research"
+      ]
+    ],
+    "https://www.pa.ucla.edu/research.html": [
+      [
+        "Astronomy and Astrophysics Division",
+        "Atomic-Molecular-Optical (AMO)",
+        "Hard Condensed Matter",
+        "Soft Condensed Matter",
+        "Experimental Elementary Particle Physics",
+        "Theoretical Elementary Particle Physics (TEP)",
+        "Theory of Elementary Particles, Astroparticle Physics, and Phenomenology (TEPAPP)",
+        "Nuclear Physics",
+        "Plasma and Advanced Accelerators",
+        "The Science of Teaching and Learning"
+      ],
+      [
+        "Mani L. Bhaumik Institute of Theoretical Physics",
+        "Plasma Science and Technology Institute (PSTI)",
+        "California Nanosystems Institute (CNSI)",
+        "Institute for Digital Research and Education (IDRE)"
+      ],
+      [
+        "Extrasolar Planets and Planetary Science",
+        "Astroparticle physics",
+        "Galactic Center Group"
+      ],
+      [
+        "Campbell Group",
+        "Hamilton Group",
+        "Hudson Group",
+        "Center for Quantum Science and Engineering"
+      ],
+      [
+        "Center for Biological Physics",
+        "Molecular Biophysics & Nanoscience",
+        "Putterman Lab",
+        "UCLA Coherent Imaging Group"
+      ],
+      [
+        "Dolores Bozovic focuses on problems at the interface between physics and sensory neuroscience.",
+        "Alexander Levine studies a variety of problems in the field of soft condensed matter and biophysics.",
+        "Mayank Mehta studies fundamental questions in neurophysics.",
+        "Giovanni Zocchi focuses on the physics of macromolecules such as proteins and DNA."
+      ],
+      [
+        "Basic Plasma Science Facility",
+        "Particle Beam Physics Lab",
+        "Plasma Diagnostics Group",
+        "UCLA Plasma Simulation Group"
+      ],
+      [
+        "discovered physics laws.",
+        "resolution 3D imaging of nanoscale materials and biological specimens.",
+        "linear physics of off",
+        "equilibrium motion, including sonoluminescence from molten salts, cavitation within",
+        "like materials, theory and experiment aimed at defining the intermediate model of tribo",
+        "ray emission, enhanced neutron emission from dense plasma",
+        "acoustic modes of long",
+        "lived dense plasmas.",
+        "driven subunits."
+      ],
+      [
+        "disciplinary enterprise, which intersects heavily with high",
+        "energy density science, plasma physics, ultra",
+        "fast lasers,",
+        "field/high",
+        "power technologies. Areas of study include basic plasma physics, fusion research,",
+        "plasma interactions, and advanced accelerators."
+      ],
+      [
+        "diffusive transport.",
+        "short particle beams from compact accelerators.",
+        "art simulation tools to study laser and beam interactions in high",
+        "fast, high",
+        "brightness electron beams; the application",
+        "electron lasers and inverse",
+        "Compton scattering sources based on high brightness electron beams.",
+        "energy",
+        "density plasmas, with emphasis on novel diagnostic techniques."
+      ]
+    ],
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/physics-and-astronomy": [
+      [
+        "Li Ge",
+        "Anshel Gorokhovsky",
+        "Kalani Hettiarachchilage",
+        "Anatoly Kuklov",
+        "Charles Liu",
+        "Vadim Oganesyan",
+        "William Schreiber",
+        "Alexandre Zaitsev"
+      ],
+      [
+        "January 2022",
+        "December 2021",
+        "October 2021",
+        "1. Prof. Liu was featured in CUNY TV's recent\u00a0Urban U series.",
+        "September 2021",
+        "2.\u00a0Prof. Ge organized a mini-symposium on non-Hermitian photonics. See info and sign-up link\u00a0here."
+      ],
+      [
+        "Computer Science / Engineering Science and Physics Building",
+        "1N-226",
+        "2800 Victory Boulevard, Staten Island NY 10314"
+      ],
+      [
+        "Agcaian",
+        "Beyer",
+        "Brady",
+        "Drenscko",
+        "Griffiths",
+        "Haldolaarachchige",
+        "Hettiarachchilage",
+        "Jackson",
+        "Kolkas",
+        "Kraynova",
+        "LaCurtis",
+        "Malikova",
+        "Marinelli",
+        "Marino",
+        "Poppe",
+        "Shopova",
+        "Torres",
+        "Weinstock"
+      ]
+    ],
+    "https://www.utrgv.edu/cos/schools-and-departments/physics-and-astronomy/": [
+      [
+        "Department of Physics and Astronomy Menu",
+        "Mission",
+        "Vision",
+        "Academic Programs",
+        "College of Sciences",
+        "Find us on Social Media"
+      ],
+      [
+        "Bachelor's",
+        "Master's",
+        "Doctorate",
+        "Brownsville",
+        "Edinburg",
+        "LIKE. FOLLOW. SUBSCRIBE. ADD."
+      ],
+      [
+        "Physics (BS)",
+        "Concentrations:",
+        "Physics - Teacher (BS)",
+        "Physics (MS)",
+        "Physics (MSIS)",
+        "Physics (PhD)"
+      ]
+    ],
+    "https://www.ohio.edu/cas/physics-astronomy/research": [
+      [
+        "Info for:",
+        "Log In",
+        "Locations",
+        "Connect",
+        "Site-specific navigation",
+        "Info for:",
+        "Log In",
+        "Locations",
+        "Connect",
+        "Breadcrumb",
+        "Site-specific navigation",
+        "Physics and Astronomy",
+        "College of Arts and Sciences",
+        "Faculty Research Areas",
+        "Why OHIO's Physics & Astronomy Program is Among the Best in the World",
+        "Explore",
+        "Resources",
+        "Locations"
+      ],
+      [
+        "Facebook",
+        "Twitter",
+        "Youtube",
+        "Instagram"
+      ],
+      [
+        "and space",
+        "Ray Burst Mission, Chandra and XMM X",
+        "ray Observatories, and the Cerro Tololo Inter",
+        "American Observatory."
+      ]
+    ],
+    "https://astro.ucsd.edu/": [
+      [
+        "Seeing Yourself in the Stars",
+        "8 Trailblazing Women Educators Who Paved the Way at UC San Diego",
+        "Exploring the Cosmos at the San Diego Science & Engineering Expo!"
+      ]
+    ],
+    "https://www.mtholyoke.edu/directory/departments-offices-centers/astronomy": [
+      [
+        "Resources",
+        "Upcoming Events",
+        "Five programs in one: The Five College Astronomy Department",
+        "NASA resurrects VERITAS mission to Venus",
+        "NASA capsule delivers rare sample from asteroid Bennu",
+        "Antarctic mystery solved",
+        "Department head(s)",
+        "Kerstin Nordstrom",
+        "Department and affiliated faculty",
+        "Ben Boatwright",
+        "Thomas Burbine",
+        "M. Darby Dyar",
+        "Katie Lester",
+        "Staff",
+        "Loryn Engelbrecht",
+        "Kate Lepore",
+        "Department of Astronomy",
+        "Loryn Engelbrecht"
+      ]
+    ],
+    "https://physics-astronomy.jhu.edu/graduate/": [
+      [
+        "Fellowships",
+        "Teaching and research assistantships",
+        "Resources",
+        "Graduate Policies",
+        "Department Resources",
+        "Footer",
+        "Legal Navigation"
+      ]
+    ],
+    "https://www.physics.ucr.edu/": [
+      [
+        "Frontiers of Cosmology Lecture: Friday March 14th, 5pm. Prof. Michael Turner",
+        "UCR team tests novel detector technology at particle collider",
+        "Dark Matter Helped Solve This Milky Way Mystery",
+        "How we might finally find black holes from the cosmic dawn",
+        "Physics & Astronomy Department",
+        "COLLEGE OF NATURAL &\nAGRICULTURAL SCIENCES",
+        "Related Links"
+      ],
+      [
+        "Chair's Welcome",
+        "Undergrad Program",
+        "Graduate Program",
+        "Outreach"
+      ],
+      [
+        "January 23, 2025",
+        "How we might finally find black holes from the cosmic dawn",
+        "Primordial black holes may have been born just after the Big Bang\u2014and might explain dark matter",
+        "Read More \u00bb"
+      ],
+      [
+        "astro    \n\n\n\n\n\n\n            astro-ph",
+        "AMO    \n\n\n\n\n\n\n            Atomic, Molecular, and Optical",
+        "hep-ph    \n\n\n\n\n\n\n            Particle Theory",
+        "CME    \n\n\n\n\n\n\n            Condensed Matter Experiment",
+        "CMT    \n\n\n\n\n\n\n            Condensed Matter Theory",
+        "hep-ex    \n\n\n\n\n\n\n            High-Energy Experiment",
+        "nuclear    \n\n\n\n\n\n\n            Heavy Ion & Spin Physics",
+        "bio    \n\n\n\n\n\n\n            Biophysics",
+        "PER    \n\n\n\n\n\n\n            Physics Education Research",
+        "cosmo/GR    \n\n\n\n\n\n\n            Experimental Gravity & Cosmology"
+      ]
+    ],
+    "https://www.calstatela.edu/nss/physics-astronomy": [
+      [
+        "Welcome to the Department of Physics & Astronomy",
+        "Why study physics and astronomy?",
+        "Our Academic Programs",
+        "Research Areas",
+        "Astrophysics and Planetary Sciences",
+        "Atmospheric and Molecular Physics",
+        "Condensed Matter Physics",
+        "Gravitational Waves",
+        "Nuclear Physics",
+        "Space Instrumentation"
+      ]
+    ],
+    "https://www.sas.rochester.edu/pas/undergraduate/special.html": [
+      [
+        "Special Programs",
+        "Department of Physics and Astronomy",
+        "Resources for",
+        "Helpful links",
+        "Schools & divisions",
+        "Libraries & collections",
+        "Ever better",
+        "More Rochester"
+      ]
+    ],
+    "https://astronomy.osu.edu/": [
+      [
+        "Graduate Program in Astronomy",
+        "Arne Slettebak Planetarium",
+        "Astro Coffee - Daily Brew - BYOM"
+      ],
+      [
+        "March 26, 2025\n          \n\n\n\nFOSAA Public Talk: Hearing the Stars\n\n\nFontana Laboratory, Room 1000",
+        "March 27, 2025\n          \n\n\n\nGalaxy Hour - Eric Putney\n\n\nMcPherson 4054",
+        "April 3, 2025\n          \n\n\n\nDiversity Journal Club - Topic TBD\n\n\nHybrid: McPherson 4054 and Zoom"
+      ]
+    ],
+    "https://academiccatalog.umd.edu/graduate/programs/astronomy-astr/": [
+      [
+        "Letters of Recommendation (3)",
+        "Graduate Record Examination (GRE) (optional)",
+        "GRE Subject (Physics) (optional)",
+        "CV/Resume"
+      ],
+      [
+        "Laboratory for Millimeter Wave Astronomy (LMA)",
+        "Discovery Channel Telescope (DCT)",
+        "Zwicky Transient Facility (ZTF)",
+        "PDS Small Bodies Node"
+      ],
+      [
+        "Graduate",
+        "ABSTRACT",
+        "FINANCIAL ASSISTANCE",
+        "GENERAL REQUIREMENTS",
+        "PROGRAM-SPECIFIC REQUIREMENTS",
+        "APPLICATION DEADLINES",
+        "Print Options"
+      ],
+      [
+        "Graduate Degree Program\nCollege: Computer, Mathematical, and Natural Sciences",
+        "Website:\u00a0http://www.astro.umd.edu\n\u00a0\nCourses:\u00a0 ASTR",
+        "Relationships: Physics (PHYS)"
+      ],
+      [
+        "Type of Applicant",
+        "Domestic Applicants",
+        "US Citizens and Permanent Residents",
+        "International Applicants",
+        "F (student) or J (exchange visitor) visas; A,E,G,H,I and L visas and immigrants"
+      ],
+      [
+        "Last Name",
+        "Bolatto",
+        "Diemer",
+        "Hamilton",
+        "Harrington",
+        "Harris",
+        "Kempton",
+        "Komacek",
+        "Miller",
+        "Mundy",
+        "Mushotzky",
+        "Papadopoulos",
+        "Reynolds",
+        "Richardson",
+        "Ricotti",
+        "Sunshine",
+        "Veilleux",
+        "Vogel"
+      ]
+    ],
+    "https://www.depts.ttu.edu/phas/Academics/Graduate_Program/Prospective_Students/Research_Areas.php": [
+      [
+        "Physics and Astronomy",
+        "Academics",
+        "Graduate Program",
+        "Prospective Students"
+      ],
+      [
+        "Overview",
+        "Theoretical Physics",
+        "Experimental Physics",
+        "Texas Tech University"
+      ]
+    ],
+    "https://astrophysics.uchicago.edu/resources/for-faculty/": [
+      [
+        "Assignments",
+        "Academic and Teaching Resources",
+        "Division and University Policies",
+        "Research Resources",
+        "Travel Resources",
+        "Benefits and Human Resources",
+        "Safety and Security"
+      ],
+      [
+        "Jennifer Smith jmsmith@astro.uchicago.edu",
+        "Laticia Rebeles lrebeles@uchicago.edu",
+        "Dr. Julia Brazas julia@uchicago.edu",
+        "Heather Preston",
+        "Galen Tsongas\u00a0gtsongas@uchicago.edu",
+        "Jennifer Smith jmsmith@astro.uchicago.edu"
+      ]
+    ],
+    "https://www.physicsandastronomy.pitt.edu/": [
+      [
+        "Astrophysics and Cosmology",
+        "Condensed Matter Physics",
+        "Physics Education Research",
+        "Particle Physics",
+        "Resources for Faculty",
+        "Teaching",
+        "Facilities",
+        "PITT PACC",
+        "Pittsburgh Quantum Institute",
+        "dB-SERC",
+        "Allegheny Observatory",
+        "IQ Initiative",
+        "Facilities",
+        "PITT PACC",
+        "Pittsburgh Quantum Institute",
+        "dB-SERC",
+        "Allegheny Observatory",
+        "IQ Initiative",
+        "Physics & Astronomy"
+      ]
+    ],
+    "https://sc.edu/study/colleges_schools/artsandsciences/physics_and_astronomy/": [
+      [
+        "SC.edu",
+        "Study",
+        "Colleges and Schools",
+        "Arts and Sciences",
+        "Department of Physics and Astronomy"
+      ],
+      [
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      [
+        "Our Programs",
+        "Our Research",
+        "Our People",
+        "Melton Memorial Observatory",
+        "Seminars and Colloquia"
+      ]
+    ],
+    "https://www.utoledo.edu/nsm/physast": [
+      [
+        "Physics and astronomy - study the world and the universe",
+        "Notices",
+        "Events",
+        "STAY CONNECTED"
+      ],
+      [
+        "FUELING TOMORROWS",
+        "WRIGHT CENTER FOR PHOTOVOLTAICS (PVIC)",
+        "Ritter Planetarium and Brooks Observatory",
+        "EVENTS & Outreach"
+      ],
+      [
+        "$115,000Private sector grad",
+        "$60,000Private sector undergrad",
+        "$65,000National labs",
+        "$45,000Education"
+      ]
+    ],
+    "https://astronomy.sdsu.edu/": [
+      [
+        "Photo Story: Behind the Scenes of SDSU\u2019s Best-Kept Secret",
+        "Astronomy Grad Students in the News",
+        "Schwartz Astronomical Society Observes Green Comet",
+        "MESA Program Sets Women in STEM Up for Success",
+        "Awe, Goosebumps and Huge Potential"
+      ],
+      [
+        "Department of Astronomy",
+        "Our Own Observatories",
+        "As Many Career Options as there are Galaxies in the Universe",
+        "Announcements"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 17:36:40"
+}

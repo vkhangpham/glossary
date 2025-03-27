@@ -1,0 +1,3267 @@
+{
+  "level1_term": "audiology",
+  "url_verification_status": {
+    "https://www.hunter.cuny.edu/comsc": true,
+    "https://hunter.cuny.edu/school-of-health-professions/speech-language-pathology-and-audiology/": true,
+    "https://artsandsciences.syracuse.edu/department-communication-sciences-disorders/graduate-program-overview/research-phd-audiology/": true,
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19526&print": false,
+    "https://specialeducation.tcnj.edu/programs/speech-pathology/": true,
+    "https://speech-language-hearing.uconn.edu/graduate/aud/": true,
+    "https://academiccatalog.umd.edu/undergraduate/colleges-schools/behavioral-social-sciences/hearing-speech-sciences/hearing-speech-sciences-major/": true,
+    "https://catalog.ithaca.edu/undergrad/schools/school-health-sciences-human-performance/department-speech-language-pathology-audiology/": true,
+    "https://www.umass.edu/public-health-sciences/academics/doctoral-degree-audiology": true,
+    "https://www.sbu.edu/sbucustom/majors/html/audiology-speechpathology.html": true,
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/au-d-in-audiology/": true,
+    "https://hhs.purdue.edu/graduate-programs/doctor-of-audiology-aud-program/": true,
+    "https://www.mghihp.edu/health-rehabilitation-sciences/departments-programs/communication-sciences-disorders/doctor-audiology": true,
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/": true,
+    "https://www.brooklyn.edu/academics/programs/speech-language-pathology-ms/": false,
+    "https://www.tc.columbia.edu/biobehavioral-sciences/communication-sciences-and-disorders/": true,
+    "https://hesp.umd.edu/graduate/guide-undergraduate-studies-hearing-and-speech-sciences": true,
+    "https://www.stjohns.edu/academics/programs/doctor-audiology-aud": true,
+    "https://www.shrs.pitt.edu/academics/csd/aud/": true,
+    "https://www.adelphi.edu/program/doctoral/audiology/": true,
+    "https://www.pacificu.edu/audiology-aud": true,
+    "https://hps.unt.edu/aslp/index.html": true,
+    "https://www.chhs.niu.edu/ahcd/programs/audiology/index.shtml": true,
+    "https://www.tc.columbia.edu/catalog/academics/departments/health-and-behavior-studies/deaf-and-hard-of-hearing/": true,
+    "https://bbs.utdallas.edu/departments/speech-language-and-hearing/graduate-programs/audiology-aud/": true,
+    "https://www.bsu.edu/academics/collegesanddepartments/spaa/academic-programs/doctoral-degree/aud-audiology": true,
+    "https://degrees.ecu.edu/aud/audiology/": false,
+    "https://sphs.indiana.edu/graduate/courses/index.html": true,
+    "https://www.atsu.edu/arizona-school-of-health-sciences/academics/post-professional-doctor-of-audiology": true,
+    "https://www.montclair.edu/graduate/programs-of-study/audiology-aud/": true,
+    "https://www.usf.edu/cbcs/csd/graduate/aud.aspx": true,
+    "https://calvin.edu/academics/school-health/speech-pathology-and-audiology": true,
+    "https://www.usu.edu/degrees-majors/audiology_aud": true,
+    "https://cahs.uc.edu/academic-programs/graduate-programs/audiology.html": true
+  },
+  "verified_lists_per_url": {
+    "https://www.hunter.cuny.edu/comsc": 1,
+    "https://hunter.cuny.edu/school-of-health-professions/speech-language-pathology-and-audiology/": 1,
+    "https://artsandsciences.syracuse.edu/department-communication-sciences-disorders/graduate-program-overview/research-phd-audiology/": 1,
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19526&print": 0,
+    "https://specialeducation.tcnj.edu/programs/speech-pathology/": 3,
+    "https://speech-language-hearing.uconn.edu/graduate/aud/": 8,
+    "https://academiccatalog.umd.edu/undergraduate/colleges-schools/behavioral-social-sciences/hearing-speech-sciences/hearing-speech-sciences-major/": 1,
+    "https://catalog.ithaca.edu/undergrad/schools/school-health-sciences-human-performance/department-speech-language-pathology-audiology/": 1,
+    "https://www.umass.edu/public-health-sciences/academics/doctoral-degree-audiology": 2,
+    "https://www.sbu.edu/sbucustom/majors/html/audiology-speechpathology.html": 2,
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/au-d-in-audiology/": 5,
+    "https://hhs.purdue.edu/graduate-programs/doctor-of-audiology-aud-program/": 2,
+    "https://www.mghihp.edu/health-rehabilitation-sciences/departments-programs/communication-sciences-disorders/doctor-audiology": 6,
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/": 6,
+    "https://www.brooklyn.edu/academics/programs/speech-language-pathology-ms/": 0,
+    "https://www.tc.columbia.edu/biobehavioral-sciences/communication-sciences-and-disorders/": 2,
+    "https://hesp.umd.edu/graduate/guide-undergraduate-studies-hearing-and-speech-sciences": 5,
+    "https://www.stjohns.edu/academics/programs/doctor-audiology-aud": 1,
+    "https://www.shrs.pitt.edu/academics/csd/aud/": 4,
+    "https://www.adelphi.edu/program/doctoral/audiology/": 1,
+    "https://www.pacificu.edu/audiology-aud": 1,
+    "https://hps.unt.edu/aslp/index.html": 1,
+    "https://www.chhs.niu.edu/ahcd/programs/audiology/index.shtml": 3,
+    "https://www.tc.columbia.edu/catalog/academics/departments/health-and-behavior-studies/deaf-and-hard-of-hearing/": 8,
+    "https://bbs.utdallas.edu/departments/speech-language-and-hearing/graduate-programs/audiology-aud/": 2,
+    "https://www.bsu.edu/academics/collegesanddepartments/spaa/academic-programs/doctoral-degree/aud-audiology": 9,
+    "https://degrees.ecu.edu/aud/audiology/": 0,
+    "https://sphs.indiana.edu/graduate/courses/index.html": 3,
+    "https://www.atsu.edu/arizona-school-of-health-sciences/academics/post-professional-doctor-of-audiology": 25,
+    "https://www.montclair.edu/graduate/programs-of-study/audiology-aud/": 1,
+    "https://www.usf.edu/cbcs/csd/graduate/aud.aspx": 1,
+    "https://calvin.edu/academics/school-health/speech-pathology-and-audiology": 2,
+    "https://www.usu.edu/degrees-majors/audiology_aud": 1,
+    "https://cahs.uc.edu/academic-programs/graduate-programs/audiology.html": 2
+  },
+  "total_lists_per_url": {
+    "https://www.hunter.cuny.edu/comsc": 1,
+    "https://hunter.cuny.edu/school-of-health-professions/speech-language-pathology-and-audiology/": 1,
+    "https://artsandsciences.syracuse.edu/department-communication-sciences-disorders/graduate-program-overview/research-phd-audiology/": 2,
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19526&print": 1,
+    "https://specialeducation.tcnj.edu/programs/speech-pathology/": 5,
+    "https://speech-language-hearing.uconn.edu/graduate/aud/": 11,
+    "https://academiccatalog.umd.edu/undergraduate/colleges-schools/behavioral-social-sciences/hearing-speech-sciences/hearing-speech-sciences-major/": 3,
+    "https://catalog.ithaca.edu/undergrad/schools/school-health-sciences-human-performance/department-speech-language-pathology-audiology/": 6,
+    "https://www.umass.edu/public-health-sciences/academics/doctoral-degree-audiology": 5,
+    "https://www.sbu.edu/sbucustom/majors/html/audiology-speechpathology.html": 7,
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/au-d-in-audiology/": 68,
+    "https://hhs.purdue.edu/graduate-programs/doctor-of-audiology-aud-program/": 5,
+    "https://www.mghihp.edu/health-rehabilitation-sciences/departments-programs/communication-sciences-disorders/doctor-audiology": 14,
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/": 11,
+    "https://www.brooklyn.edu/academics/programs/speech-language-pathology-ms/": 3,
+    "https://www.tc.columbia.edu/biobehavioral-sciences/communication-sciences-and-disorders/": 5,
+    "https://hesp.umd.edu/graduate/guide-undergraduate-studies-hearing-and-speech-sciences": 14,
+    "https://www.stjohns.edu/academics/programs/doctor-audiology-aud": 4,
+    "https://www.shrs.pitt.edu/academics/csd/aud/": 11,
+    "https://www.adelphi.edu/program/doctoral/audiology/": 20,
+    "https://www.pacificu.edu/audiology-aud": 11,
+    "https://hps.unt.edu/aslp/index.html": 6,
+    "https://www.chhs.niu.edu/ahcd/programs/audiology/index.shtml": 4,
+    "https://www.tc.columbia.edu/catalog/academics/departments/health-and-behavior-studies/deaf-and-hard-of-hearing/": 20,
+    "https://bbs.utdallas.edu/departments/speech-language-and-hearing/graduate-programs/audiology-aud/": 10,
+    "https://www.bsu.edu/academics/collegesanddepartments/spaa/academic-programs/doctoral-degree/aud-audiology": 12,
+    "https://degrees.ecu.edu/aud/audiology/": 3,
+    "https://sphs.indiana.edu/graduate/courses/index.html": 7,
+    "https://www.atsu.edu/arizona-school-of-health-sciences/academics/post-professional-doctor-of-audiology": 71,
+    "https://www.montclair.edu/graduate/programs-of-study/audiology-aud/": 1,
+    "https://www.usf.edu/cbcs/csd/graduate/aud.aspx": 4,
+    "https://calvin.edu/academics/school-health/speech-pathology-and-audiology": 12,
+    "https://www.usu.edu/degrees-majors/audiology_aud": 4,
+    "https://cahs.uc.edu/academic-programs/graduate-programs/audiology.html": 3
+  },
+  "verified_lists_ids": {
+    "https://www.hunter.cuny.edu/comsc": [
+      0
+    ],
+    "https://hunter.cuny.edu/school-of-health-professions/speech-language-pathology-and-audiology/": [
+      0
+    ],
+    "https://artsandsciences.syracuse.edu/department-communication-sciences-disorders/graduate-program-overview/research-phd-audiology/": [
+      0
+    ],
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19526&print": [],
+    "https://specialeducation.tcnj.edu/programs/speech-pathology/": [
+      0,
+      1,
+      4
+    ],
+    "https://speech-language-hearing.uconn.edu/graduate/aud/": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "https://academiccatalog.umd.edu/undergraduate/colleges-schools/behavioral-social-sciences/hearing-speech-sciences/hearing-speech-sciences-major/": [
+      1
+    ],
+    "https://catalog.ithaca.edu/undergrad/schools/school-health-sciences-human-performance/department-speech-language-pathology-audiology/": [
+      4
+    ],
+    "https://www.umass.edu/public-health-sciences/academics/doctoral-degree-audiology": [
+      0,
+      1
+    ],
+    "https://www.sbu.edu/sbucustom/majors/html/audiology-speechpathology.html": [
+      0,
+      3
+    ],
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/au-d-in-audiology/": [
+      0,
+      3,
+      9,
+      65,
+      66
+    ],
+    "https://hhs.purdue.edu/graduate-programs/doctor-of-audiology-aud-program/": [
+      3,
+      4
+    ],
+    "https://www.mghihp.edu/health-rehabilitation-sciences/departments-programs/communication-sciences-disorders/doctor-audiology": [
+      1,
+      4,
+      7,
+      8,
+      12,
+      13
+    ],
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/": [
+      0,
+      3,
+      6,
+      7,
+      8,
+      10
+    ],
+    "https://www.brooklyn.edu/academics/programs/speech-language-pathology-ms/": [],
+    "https://www.tc.columbia.edu/biobehavioral-sciences/communication-sciences-and-disorders/": [
+      2,
+      4
+    ],
+    "https://hesp.umd.edu/graduate/guide-undergraduate-studies-hearing-and-speech-sciences": [
+      1,
+      2,
+      4,
+      5,
+      13
+    ],
+    "https://www.stjohns.edu/academics/programs/doctor-audiology-aud": [
+      0
+    ],
+    "https://www.shrs.pitt.edu/academics/csd/aud/": [
+      1,
+      2,
+      4,
+      10
+    ],
+    "https://www.adelphi.edu/program/doctoral/audiology/": [
+      18
+    ],
+    "https://www.pacificu.edu/audiology-aud": [
+      10
+    ],
+    "https://hps.unt.edu/aslp/index.html": [
+      2
+    ],
+    "https://www.chhs.niu.edu/ahcd/programs/audiology/index.shtml": [
+      0,
+      2,
+      3
+    ],
+    "https://www.tc.columbia.edu/catalog/academics/departments/health-and-behavior-studies/deaf-and-hard-of-hearing/": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      10
+    ],
+    "https://bbs.utdallas.edu/departments/speech-language-and-hearing/graduate-programs/audiology-aud/": [
+      0,
+      8
+    ],
+    "https://www.bsu.edu/academics/collegesanddepartments/spaa/academic-programs/doctoral-degree/aud-audiology": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10,
+      11
+    ],
+    "https://degrees.ecu.edu/aud/audiology/": [],
+    "https://sphs.indiana.edu/graduate/courses/index.html": [
+      0,
+      1,
+      5
+    ],
+    "https://www.atsu.edu/arizona-school-of-health-sciences/academics/post-professional-doctor-of-audiology": [
+      2,
+      7,
+      11,
+      14,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      28,
+      30,
+      32,
+      35,
+      37,
+      39,
+      41,
+      43,
+      47,
+      49,
+      50,
+      55,
+      58,
+      61,
+      70
+    ],
+    "https://www.montclair.edu/graduate/programs-of-study/audiology-aud/": [
+      0
+    ],
+    "https://www.usf.edu/cbcs/csd/graduate/aud.aspx": [
+      3
+    ],
+    "https://calvin.edu/academics/school-health/speech-pathology-and-audiology": [
+      0,
+      1
+    ],
+    "https://www.usu.edu/degrees-majors/audiology_aud": [
+      3
+    ],
+    "https://cahs.uc.edu/academic-programs/graduate-programs/audiology.html": [
+      0,
+      2
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 365,
+  "url_to_lists": {
+    "https://www.hunter.cuny.edu/comsc": [
+      [
+        "Clinic",
+        "Career Videos",
+        "Academics",
+        "Meet Our Team"
+      ]
+    ],
+    "https://hunter.cuny.edu/school-of-health-professions/speech-language-pathology-and-audiology/": [
+      [
+        "Clinic",
+        "Career Videos",
+        "Academics",
+        "Meet Our Team"
+      ]
+    ],
+    "https://artsandsciences.syracuse.edu/department-communication-sciences-disorders/graduate-program-overview/research-phd-audiology/": [
+      [
+        "Large double-walled sound-attenuated booths",
+        "Otoacoustic Emissions",
+        "Regular and wideband acoustic immittance",
+        "64-channel Electroencephalography (EEG) to measure neural activity and event-related potentials",
+        "Clinical multi-channel evoked potential equipment",
+        "Multichannel audiometers and sound presentation systems",
+        "State-of-the-art hearing aid testing equipment",
+        "Sound field speaker systems",
+        "Pediatric behavioral audiometry"
+      ],
+      [
+        "Why get a Ph.D. in Audiology?",
+        "Why consider Syracuse University for a Ph.D.?",
+        "Is an Au.D. required prior to entering the Ph.D. program?"
+      ]
+    ],
+    "https://courses.syracuse.edu/preview_program.php?catoid=39&poid=19526&print": [
+      [
+        "2024-2025 Graduate Course Catalog\t\tSyracuse University",
+        "2024-2025 Graduate Course Catalog",
+        "All catalogs \u00a9 2025 Syracuse University. Powered by Modern Campus Catalog\u2122."
+      ]
+    ],
+    "https://specialeducation.tcnj.edu/programs/speech-pathology/": [
+      [
+        "Biological Science",
+        "Physical Science",
+        "Statistics",
+        "Social Sciences and Behavioral Sciences"
+      ],
+      [
+        "Linguistics",
+        "Deaf Studies",
+        "Psychology",
+        "World languages",
+        "African American Studies"
+      ],
+      [
+        "NSSLHA",
+        "What does it mean to get your C\u2019s, as in the CCC-SLP or CCC-A?",
+        "I\u2019ve heard that ASHA requires certain courses outside of the major. What are these?",
+        "Am I already taking these ASHA, non-SLP/A prerequisites?",
+        "How do observation hours work? Do I need them to graduate or to begin a graduate program?",
+        "I am interested in joining the major! How can I do this?",
+        "How can I put my interest in other languages to work as a future speech-language pathologist (SLPs)?",
+        "What can I minor or double major in conjunction with majoring in SLP/AUD?"
+      ],
+      [
+        "language pathologists is the Certificate of Clinical Competence (CCC), in Audiology (CCC",
+        "A) or Speech",
+        "Language Pathology (CCC",
+        "SLP). This is the gold standard for audiologists and speech",
+        "language pathologists."
+      ],
+      [
+        "content",
+        "areas",
+        "standards/"
+      ]
+    ],
+    "https://speech-language-hearing.uconn.edu/graduate/aud/": [
+      [
+        "SLHS 5351. Amplification I.",
+        "SLHS 5354. Psychological Acoustics.",
+        "SLHS 5356. Audiologic Assessment.",
+        "SLHS 5375. Anatomy & Physiology.",
+        "SLHS 5337. Clinical Practicum.",
+        "SLHS 5327. Intro to Clinical Topics in Audiology."
+      ],
+      [
+        "SLHS 5321. Otologic Bases of Hearing Loss.",
+        "SLHS 5362. Speech Perception.",
+        "SLHS 5373. Pediatric Audiology.",
+        "SLHS 6401. Amplification II.",
+        "SLHS 5337. Clinical Practicum.",
+        "SLHS 5327. Intro to Clinical Topics in Audiology."
+      ],
+      [
+        "SLHS 5322. Electrophysiology I.",
+        "SLHS 5344. Pediatric Rehabilitative Audiology.",
+        "SLHS 5337. Clinical Practicum.",
+        "SLHS 5328. Intermediate Clinical Topics in Audiology.",
+        "SLHS 5401. Research Methods.",
+        "Elective or Statistics."
+      ],
+      [
+        "SLHS 5325. Adult Aural Rehabilitation.",
+        "SLHS 5362. Speech Perception.",
+        "SLHS 5372. Central Auditory Processing.",
+        "SLHS 5400. Cochlear Implants.",
+        "SLHS 5337. Clinical Practicum.",
+        "SLHS 5328. Intermediate Clinical Topics in Audiology."
+      ],
+      [
+        "SLHS 5309. Statistics.",
+        "SLHS 5323. Professional Issues.",
+        "SLHS 5326. Geriatric Audiology.",
+        "SLHS 6319. Capstone Research.",
+        "SLHS 5337. Clinical Practicum.",
+        "SLHS 5329. Advanced Clinical Topics."
+      ],
+      [
+        "SLHS 5369. Electrophysiology II.",
+        "SLHS 6402. Hearing Conservation.",
+        "SLHS 6319. Capstone Research.",
+        "SLHS 5337. Clinical Practicum.",
+        "SLHS 5329. Advanced Clinical Topics.",
+        "SLHS 6410. Vestibular System."
+      ],
+      [
+        "Lawrence & Memorial Hospital.",
+        "Yale New Haven Hospital.",
+        "Connecticut Children\u2019s Medical Center.",
+        "Women\u2019s and Infants Hospital of Rhode Island.",
+        "UMass Memorial Hospital.",
+        "Baystate Medical Center.",
+        "VA Hospitals in RI, CT, and MA."
+      ],
+      [
+        "Readily communicate observations and findings.",
+        "Perceive the speech of clients and accurately judge its quality.",
+        "Readily comprehend language expressed in oral, graphic, and gestural forms.",
+        "Colleagues and clients consistently understand them"
+      ],
+      [
+        "Readily communicate observations and findings.",
+        "Perceive the speech of clients and accurately judge its quality.",
+        "Readily comprehend language expressed in oral, graphic, and gestural forms.",
+        "Colleagues and clients consistently understand them"
+      ],
+      [
+        "Minimum Required Coursework",
+        "Additional Coursework",
+        "Courses",
+        "Sample Course Sequence",
+        "Clinical Experiences",
+        "Off-Campus Clinical Placements",
+        "Technical Standards for Clinical Training",
+        "Undergraduate Students",
+        "Graduate Students"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301"
+      ]
+    ],
+    "https://academiccatalog.umd.edu/undergraduate/colleges-schools/behavioral-social-sciences/hearing-speech-sciences/hearing-speech-sciences-major/": [
+      [
+        "Undergraduate",
+        "Admission to the Major",
+        "Program Objectives",
+        "Program Learning Outcomes",
+        "Print Options"
+      ],
+      [
+        "Course",
+        "College Requirements",
+        "Required Courses",
+        "HESP120",
+        "HESP202",
+        "HESP300",
+        "HESP305",
+        "HESP311",
+        "HESP400",
+        "HESP403",
+        "HESP407",
+        "HESP411",
+        "Select one of the following Disorder Courses:",
+        "HESP402",
+        "HESP404",
+        "HESP406",
+        "HESP498",
+        "Select one of the following Elective Courses",
+        "HESP386",
+        "HESP388",
+        "HESP389",
+        "HESP402",
+        "HESP404",
+        "HESP406",
+        "HESP413",
+        "HESP415",
+        "HESP416",
+        "HESP417",
+        "HESP418",
+        "HESP422",
+        "HESP469",
+        "HESP498",
+        "HESP499",
+        "Additional HESP Major Requirements (These may also fulfill General Education Requirements)",
+        "PSYC100",
+        "Select one of the following Statistic courses: Fulfills FSAR General Education Requirement  2",
+        "EDMS451",
+        "PSYC200",
+        "BIOM301",
+        "PHYS102&\u00a0PHYS103",
+        "BSCI170/171 or BSCI103  OR any Biology course based on the biology of human systems 2,3",
+        "Total Credits"
+      ],
+      [
+        "\" or better. In addition, when a HESP course has a listed pre",
+        "requisite, this pre",
+        "requisite must have been completed with a grade of \"C",
+        "\" or better before registration in the subsequent course will be approved."
+      ]
+    ],
+    "https://catalog.ithaca.edu/undergrad/schools/school-health-sciences-human-performance/department-speech-language-pathology-audiology/": [
+      [
+        "classes in the major during the first year;",
+        "study abroad during the junior year, if desired;",
+        "a minor area of study (e.g., Psychology, Deaf Studies, Education Studies) if desired; and",
+        "excellent preparation for graduate school."
+      ],
+      [
+        "maintain a cumulative GPA of 2.50 or above,",
+        "complete all courses in the major (SLPA xxxxx) with a grade of C- or better, and",
+        "successfully complete at least 24 credits in any consecutive 12-month period."
+      ],
+      [
+        "Speech-Language Pathology Major \u2014 B.S.",
+        "Communication Disorders Minor",
+        "Deaf Studies Minor"
+      ],
+      [
+        "2024-2025 Edition",
+        "Special Academic Status Policy for Speech-Language Pathology\u00a0Majors",
+        "Transfer Credit",
+        "Majors & Minors",
+        "Print Options"
+      ],
+      [
+        "language pathology (SLP) as their major typically are seeking to\u00a0pursue a career in\u00a0speech",
+        "language pathology (note that a Master's degree is required to be certified as a speech",
+        "language pathologist by the American Speech",
+        "Language",
+        "and education",
+        "related fields."
+      ],
+      [
+        "or better. Corequisites: SLPA\u00a047200. This course is only open to Speech",
+        "Language Pathology majors.  (F",
+        "S, Y)"
+      ]
+    ],
+    "https://www.umass.edu/public-health-sciences/academics/doctoral-degree-audiology": [
+      [
+        "Main navigation",
+        "Breadcrumb",
+        "Improve hearing, balance, and quality of life with the doctorate in audiology.",
+        "Program Overview",
+        "Related Programs",
+        "Benefits list",
+        "Featured class",
+        "Featured faculty",
+        "Sara Mamo",
+        "Sara Mamo",
+        "Richard Freyman",
+        "Richard Freyman",
+        "Sarah Poissant",
+        "Sarah Poissant",
+        "Nathaniel Whitmal, III",
+        "Nathaniel Whitmal, III",
+        "Application information & deadlines",
+        "Speech, Language, and Hearing Sciences",
+        "Site footer",
+        "Global footer"
+      ],
+      [
+        "Academic programs",
+        "Clinical Certification and Research",
+        "In-House Clinical Training",
+        "Application Deadline",
+        "Academics",
+        "Research",
+        "The School",
+        "Info for..."
+      ],
+      [
+        "Sara Mamo",
+        "Associate Professor of Speech, Language, and Hearing Sciences",
+        "Email:\n\nsmamo [at] umass [dot] edu\n\n\n\n\n\nPhone:\n\n(413) 545-0565",
+        "Focus on age-related hearing loss, community-based aural rehabilitation, cognitive decline."
+      ],
+      [
+        "Richard Freyman",
+        "Professor of Speech, Language, and Hearing Sciences",
+        "Email:\n\nrlf [at] comdis [dot] umass [dot] edu\n\n\n\n\n\nPhone:\n\n(413) 545-0298",
+        "Focus on psychoacoustics, speech perception, binaural and spatial hearing."
+      ],
+      [
+        "campus and off",
+        "campus clinical rotations, and a capstone research project. The fourth year consists of a full",
+        "time, off",
+        "campus clinical externship."
+      ]
+    ],
+    "https://www.sbu.edu/sbucustom/majors/html/audiology-speechpathology.html": [
+      [
+        "Prevention",
+        "Screening",
+        "Assessment",
+        "Treatment",
+        "Behavioral Modification",
+        "Follow-up",
+        "Administration",
+        "Consultation",
+        "Supervision",
+        "Teaching",
+        "Research"
+      ],
+      [
+        "Schools, K-12",
+        "Universities and colleges",
+        "Hospitals",
+        "Physicians' offices",
+        "Speech, language, and hearing centers",
+        "Home healthcare offices",
+        "Nursing homes",
+        "Residential facilities",
+        "Department of Veterans Affairs",
+        "National Institutes of Health",
+        "Department of Health and Human Services",
+        "Department of Education",
+        "Armed Services",
+        "Health Maintenance Organizations",
+        "Private individual or group practice",
+        "Public health departments",
+        "Rehabilitation centers"
+      ],
+      [
+        "Department of Veterans Affairs",
+        "National Institutes of Health",
+        "Department of Health and Human Services",
+        "Department of Education",
+        "Armed Services"
+      ],
+      [
+        "Prevention",
+        "Screening",
+        "Diagnosis",
+        "Assessment",
+        "Treatment Including:\n\t\t\t\t\t\t\nDispense Hearing Aids\nFit and Program Cochlear Implants",
+        "Dispense Hearing Aids",
+        "Fit and Program Cochlear Implants",
+        "Follow-up",
+        "Administration",
+        "Supervision",
+        "Teaching",
+        "Research and Development"
+      ],
+      [
+        "Schools, K-12",
+        "Universities and colleges",
+        "Hospitals",
+        "Physicians' offices",
+        "Speech, language, and hearing centers",
+        "Private individual or group practice",
+        "Home healthcare offices",
+        "Nursing homes",
+        "Residential facilities",
+        "Rehabilitation centers",
+        "Department of Veterans Affairs",
+        "National Institutes of Health",
+        "Department of Health and Human Services",
+        "Department of Education",
+        "Armed Services",
+        "Public health departments",
+        "Health Maintenance Organizations",
+        "Health and personal care stores (hearing aid stores)",
+        "Hearing manufacturing industry"
+      ],
+      [
+        "Department of Veterans Affairs",
+        "National Institutes of Health",
+        "Department of Health and Human Services",
+        "Department of Education",
+        "Armed Services"
+      ],
+      [
+        "Doctoral degrees are becoming more crucial for clinical practice opportunities.",
+        "Most insurance companies require licensure for reimbursement of fees.",
+        "Certification is also offered through the Board of Audiology.",
+        "Doctoral degree required for university teaching and research positions."
+      ]
+    ],
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/au-d-in-audiology/": [
+      [
+        "Accessible Human-Centered Computing",
+        "Accounting",
+        "American Sign Language",
+        "Art and Media Design",
+        "Biology",
+        "Business",
+        "Chemistry",
+        "Communication Studies",
+        "Counseling",
+        "Criminal Justice",
+        "Data Science",
+        "Deaf Studies",
+        "Early Intervention Studies",
+        "Education",
+        "Educational Neuroscience",
+        "English",
+        "Hearing, Speech, and Language Sciences",
+        "History",
+        "Information Technology",
+        "International Development",
+        "Interpretation and Translation",
+        "Linguistics",
+        "Mathematics",
+        "Philosophy and Religion",
+        "Physical Education & Recreation",
+        "Psychology",
+        "Public Affairs",
+        "Public Health",
+        "Risk Management and Insurance",
+        "Sexuality and Gender Studies",
+        "Social Work",
+        "Sociology",
+        "Theatre and Dance",
+        "World Languages and Cultures"
+      ],
+      [
+        "Bachelors",
+        "B.A. in American Sign Language",
+        "B.A. in Biology",
+        "B.A. in Communication Studies",
+        "B.A. in Communication Studies for Online Degree Completion Program",
+        "B.A. in Deaf Studies",
+        "B.A. in Deaf Studies for Online Degree Completion Program",
+        "B.A. in Education with a Specialization in Early Childhood Education",
+        "B.A. in Education with a Specialization in Elementary Education",
+        "B.A. in English",
+        "B.A. in English for Online Degree Completion Program",
+        "B.A. in Government",
+        "B.A. in Government with a Specialization in Law",
+        "B.A. in History",
+        "B.A. in Interdisciplinary Spanish",
+        "B.A. in International Studies",
+        "B.A. in Mathematics",
+        "B.A. in Philosophy",
+        "B.A. in Psychology",
+        "B.A. in Psychology for Online Degree Completion Program",
+        "B.A. in Social Work (BSW)",
+        "B.A. in Sociology with a concentration in Criminology",
+        "B.A. in Theatre Arts: Production/Performance",
+        "B.S. in Accounting",
+        "B.S. in Accounting for Online Degree Completion Program",
+        "B.S. in Biology",
+        "B.S. in Business Administration",
+        "B.S. in Business Administration for Online Degree Completion Program",
+        "B.S. in Data Science",
+        "B.S. in Information Technology",
+        "B.S. in Mathematics",
+        "B.S. in Physical Education and Recreation",
+        "B.S. in Public Health",
+        "B.S. in Risk Management and Insurance",
+        "General Education",
+        "Honors Program",
+        "Mathematics and Industrial Engineering Dual Degree Program",
+        "Peace Corps Prep program",
+        "Self-Directed Major"
+      ],
+      [
+        "Masters",
+        "M.A. in Counseling: Clinical Mental Health Counseling",
+        "M.A. in Counseling: School Counseling",
+        "M.A. in Deaf Education",
+        "M.A. in Deaf Education Studies",
+        "M.A. in Deaf Studies: Cultural Studies",
+        "M.A. in Deaf Studies: Language and Human Rights",
+        "M.A. in Early Childhood Education and Deaf Education",
+        "M.A. in Early Intervention Studies",
+        "M.A. in Elementary Education and Deaf Education",
+        "M.A. in International Development",
+        "M.A. in Interpretation: Combined Interpreting Practice and Research",
+        "M.A. in Interpretation: Interpreting Research",
+        "M.A. in Linguistics",
+        "M.A. in Secondary Education and Deaf Education",
+        "M.A. in Sign Language Education",
+        "M.S. in Accessible Human-Centered Computing",
+        "M.S. in Speech-Language Pathology",
+        "Master of Public Administration",
+        "Master of Social Work (MSW)"
+      ],
+      [
+        "Doctorate",
+        "Au.D. in Audiology",
+        "Ed.D. in Transformational Leadership and Administration in Deaf Education",
+        "Ph.D. in Clinical Psychology",
+        "Ph.D. in Critical Studies in the Education of Deaf Learners",
+        "Ph.D. in Hearing, Speech, and Language Sciences",
+        "Ph.D. in Linguistics",
+        "Ph.D. in Translation and Interpreting Studies",
+        "Ph.D. Program in Educational Neuroscience (PEN)",
+        "Psy.D. in School Psychology"
+      ],
+      [
+        "Certificates",
+        "Certificate in Educating Deaf Students with Disabilities",
+        "Certificate in Early Intervention Studies",
+        "Certificate in Peer Mentor Training",
+        "Certificate in Sexuality and Gender Studies"
+      ],
+      [
+        "Online Degree Programs",
+        "B.A. in Communication Studies for Online Degree Completion Program",
+        "B.A. in Deaf Studies for Online Degree Completion Program",
+        "B.A. in English for Online Degree Completion Program",
+        "B.A. in Psychology for Online Degree Completion Program",
+        "B.S. in Accounting for Online Degree Completion Program",
+        "B.S. in Business Administration for Online Degree Completion Program",
+        "M.A. in Elementary Education and Deaf Education",
+        "M.A. in Secondary Education and Deaf Education",
+        "Master of Public Administration",
+        "Master of Social Work (MSW)",
+        "ODCP Minor in Communication Studies",
+        "ODCP Minor in Deaf Studies",
+        "ODCP Minor in Psychology",
+        "ODCP Minor in Writing",
+        "University Capstone Honors for Online Degree Completion Program"
+      ],
+      [
+        "In-Person: Friday, September 6, 2024",
+        "Graduate School Virtual Open House: Wednesday, October 2 from 12:00 noon to 2:00 p.m. ET",
+        "Virtual: Friday, October 11 from 1:00 to 2:00 p.m. ET",
+        "Graduate School Virtual Open House:\u00a0Thursday, November 7 from 5:00 to 7:00 p.m. ET",
+        "Virtual: Monday, December 16 from 2:00 to 4:00 p.m. ET"
+      ],
+      [
+        "Veterans Administration Health Systems",
+        "Kaiser Permanente",
+        "Children's Hospitals",
+        "Private Practice\n\nENT owned\nAudiologist owned",
+        "ENT owned",
+        "Audiologist owned",
+        "Pre-K through 12",
+        "College"
+      ],
+      [
+        "Veterans Administration Health Systems",
+        "Kaiser Permanente",
+        "Children's Hospitals"
+      ],
+      [
+        "Fall 2024 Visitation Days",
+        "Licensure Disclosure: Au.D. in Audiology",
+        "Au.D., Doctor of Audiology Requirements",
+        "Gallaudet AuD Program Externship Sites",
+        "Chizuko Tamaki",
+        "James McCann",
+        "Elizabeth Marcinkus",
+        "Andy Lau",
+        "Kristen Thornton",
+        "Elicia Pillion",
+        "Amy Blank"
+      ],
+      [
+        "Admissions Procedures",
+        "Virtual interviews by invitation will be held on February 12, 2025.",
+        "Program Specific Requirements",
+        "Three Letters of reference",
+        "Interview",
+        "Recommended Undergraduate Major",
+        "Speech-Language Pathology",
+        "Audiology or related discipline",
+        "Communication Sciences/Disorders",
+        "Prerequisite Coursework",
+        "Physical Science (3 hrs)",
+        "Biology (3 hrs)",
+        "Statistics/Math (3 hrs)",
+        "Behavioral/Social Science (6 hrs)",
+        "Anatomy and Physiology of Speech/Hearing Mechanisms",
+        "Phonetics/Phonology",
+        "Speech Science/Acoustics",
+        "Normal Language Development",
+        "Intro to Audiology"
+      ],
+      [
+        "Summary of Requirements",
+        "Candidacy Examination",
+        "Comprehensive Exam (Oral and MC)"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: Open to AuD major only or permission of the instructor.",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 3",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 3",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only, or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to AuD majors only or permission of the instructor",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to AuD or SLP majors only or permission of the instructor",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 3",
+        "Requisites: HSL 817",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: Open to AuD majors only or permission of the instructor.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 3",
+        "Requisites: HSL 831",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 815 and HSL 831",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 1-2",
+        "Requisites: HSL 871",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to AuD majors only or permission of the instructor.",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: American Sign Language proficiency and HSL 828.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 3",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: Open to AuD majors only or permission of the instructor.",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 817 and HSL 831",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 842",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to AuD majors only or permission of the instructor",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 872; Open to HSLS majors only or permission of the instructor or department chair",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 822",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: HSL 837",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: HSL 843",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 847",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2-6",
+        "Requisites: HSL 872, 873",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: HSL 835",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: HSL 844; 823 or 824",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 838",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2-6",
+        "Requisites: HSL 872, 873",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 3",
+        "Requisites: HSL 817 and HSL 832",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: HSL 817, HSL 833; or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to AuD majors only or permission of the instructor.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2-6",
+        "Requisites: HSL 872, 873",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1",
+        "Requisites: Open to AuD majors only or permission of the instructor.",
+        "Distribution: Doctorate, Graduate, Masters"
+      ],
+      [
+        "Credits: 1-6",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 2",
+        "Requisites: HSL 858",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1-6",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1-2",
+        "Requisites: Open to HSLS majors only, or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1-6",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "Credits: 1-6",
+        "Requisites: Open to HSLS majors only or permission of the instructor or department chair.",
+        "Distribution: Doctorate, Graduate"
+      ],
+      [
+        "SLCC 2217",
+        "Monday\n9:00 am-5:00 pm\n\n\nTuesday\n9:00 am-5:00 pm\n\n\nWednesday\n9:00 am-5:00 pm",
+        "Thursday\n9:00 am-5:00 pm\n\n\nFriday\n9:00 am-5:00 pm"
+      ],
+      [
+        "Monday\n9:00 am-5:00 pm",
+        "Tuesday\n9:00 am-5:00 pm",
+        "Wednesday\n9:00 am-5:00 pm"
+      ],
+      [
+        "Academic Year",
+        "Fall 2023-Sum 2024",
+        "Fall 2022-Sum 2023",
+        "Fall 2021-Sum 2022",
+        "3 Year Average"
+      ],
+      [
+        "Academic Year",
+        "Fall 2023-Sum 2024",
+        "Fall 2022-Sum 2023",
+        "Fall 2021-Sum 2022",
+        "3 Year Average"
+      ],
+      [
+        "Language Pathology (CAA) of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard #310, Rockville, Maryland 20850, 800",
+        "2071 or 301",
+        "5700."
+      ],
+      [
+        "Language Pathology (CAA) of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard #310, Rockville, Maryland 20850, 800",
+        "2071 or 301",
+        "5700."
+      ],
+      [
+        "time completion rate",
+        "Sum 2024",
+        "Sum 2023",
+        "Sum 2022",
+        "Excluse those that left the program for personal reasons not related to the program.",
+        "Sum 2024",
+        "Sum 2023",
+        "Sum 2022",
+        "K through 12"
+      ]
+    ],
+    "https://hhs.purdue.edu/graduate-programs/doctor-of-audiology-aud-program/": [
+      [
+        "Application submitted and fee paid",
+        "Official transcripts received from all universities granting any credit",
+        "Three letters of recommendation*",
+        "Video response to question prompt."
+      ],
+      [
+        "1 course in biological science (focus on animal or human biology)",
+        "1 course in physical sciences (focus on chemistry or physics)",
+        "1 course in behavioral/social sciences"
+      ],
+      [
+        "Alexander Francis",
+        "Elizabeth Strickland",
+        "Jane Mondul",
+        "Jennifer Simpson",
+        "Jillian Hubertz",
+        "Josh Alexander",
+        "Kelly Bailey",
+        "Malinda McPherson",
+        "Maureen Shader",
+        "Melissa Newell",
+        "Mike Heinz",
+        "Natalya Kaganovich",
+        "Ravi Krishnan",
+        "Shannon Van Hyfte"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard #310, Rockville, Maryland, 20850, 800",
+        "2071 or 301",
+        "5700."
+      ],
+      [
+        "hearing and hearing",
+        "and balance",
+        "related challenges and disorders."
+      ]
+    ],
+    "https://www.mghihp.edu/health-rehabilitation-sciences/departments-programs/communication-sciences-disorders/doctor-audiology": [
+      [
+        "CSDCAS application with application fee",
+        "Official transcripts from all colleges/universities attended",
+        "Three (3) recommendation letters",
+        "500 word Statement of Interest",
+        "MGH Institute Custom Questions"
+      ],
+      [
+        "Introduction to Communication Disorders",
+        "Anatomy and Physiology of Speech and Hearing Mechanisms",
+        "Speech-Language Acquisition",
+        "Hearing Science",
+        "Introduction to Audiology (not Hearing Science)",
+        "Biological Science Course (no lab)",
+        "Social Science Course",
+        "Physical Science Course (Physics or Chemistry are acceptable) (no lab)",
+        "Statistics Course"
+      ],
+      [
+        "apittman@mghihp.edu",
+        "(617) 643-8844",
+        "B39 - Rm227"
+      ],
+      [
+        "evenskytis@mghihp.edu",
+        "(617) 724-4147",
+        "B39 - 226"
+      ],
+      [
+        "Global Menu-CTA Buttons",
+        "Main navigation",
+        "Global Menu-CTA Buttons",
+        "Advanced Audiologic Assessment Techniques",
+        "Requirements",
+        "Upcoming Admissions Events",
+        "High-Quality Residential Program",
+        "Expert Faculty in Audiology and Hearing Health",
+        "Footer",
+        "Footer Bottom"
+      ],
+      [
+        "Quick Links",
+        "Global Menu-For You",
+        "For You",
+        "Different From Other Audiology Doctorate Programs",
+        "ASHA Certification and State Licensure",
+        "Audiology Doctoral Program requirements",
+        "Andrea  Pittman, PhD, CCC-A",
+        "Andrea  Pittman, PhD, CCC-A",
+        "Elin Roverud, AuD, PhD",
+        "Elin Roverud, AuD, PhD",
+        "Emily Jo Venskytis, AuD",
+        "Emily Jo Venskytis, AuD",
+        "Julie Arenberg, PhD, CCC-A",
+        "Julie Arenberg, PhD, CCC-A",
+        "King Chung, PhD, CCC-A",
+        "King Chung, PhD, CCC-A"
+      ],
+      [
+        "Tuition & Fees",
+        "Tuition Reduction",
+        "Financial Aid & Billing"
+      ],
+      [
+        "Professor",
+        "Doctor of Audiology (AuD) Program Director",
+        "Communication Sciences and Disorders"
+      ],
+      [
+        "Assistant Professor",
+        "Director of Clinical Education, Audiology",
+        "Communication Sciences and Disorders"
+      ],
+      [
+        "Academic Year",
+        "2025-2026",
+        "2026-2027",
+        "2027-2028"
+      ],
+      [
+        "Academic Year",
+        "2025-2026",
+        "2026-2027",
+        "2027-2028"
+      ],
+      [
+        "Academic Year",
+        "2025-2026",
+        "2026-2027",
+        "2027-2028"
+      ],
+      [
+        "Language Pathology (CAA) of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301",
+        "5700. Candidacy is a \u201cpre"
+      ],
+      [
+        "Language Pathology (CAA) of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301"
+      ]
+    ],
+    "https://gallaudet.edu/hearing-speech-and-language-sciences/": [
+      [
+        "Accessible Human-Centered Computing",
+        "Accounting",
+        "American Sign Language",
+        "Art and Media Design",
+        "Biology",
+        "Business",
+        "Chemistry",
+        "Communication Studies",
+        "Counseling",
+        "Criminal Justice",
+        "Data Science",
+        "Deaf Studies",
+        "Early Intervention Studies",
+        "Education",
+        "Educational Neuroscience",
+        "English",
+        "Hearing, Speech, and Language Sciences",
+        "History",
+        "Information Technology",
+        "International Development",
+        "Interpretation and Translation",
+        "Linguistics",
+        "Mathematics",
+        "Philosophy and Religion",
+        "Physical Education & Recreation",
+        "Psychology",
+        "Public Affairs",
+        "Public Health",
+        "Risk Management and Insurance",
+        "Sexuality and Gender Studies",
+        "Social Work",
+        "Sociology",
+        "Theatre and Dance",
+        "World Languages and Cultures"
+      ],
+      [
+        "Bachelors",
+        "B.A. in American Sign Language",
+        "B.A. in Biology",
+        "B.A. in Communication Studies",
+        "B.A. in Communication Studies for Online Degree Completion Program",
+        "B.A. in Deaf Studies",
+        "B.A. in Deaf Studies for Online Degree Completion Program",
+        "B.A. in Education with a Specialization in Early Childhood Education",
+        "B.A. in Education with a Specialization in Elementary Education",
+        "B.A. in English",
+        "B.A. in English for Online Degree Completion Program",
+        "B.A. in Government",
+        "B.A. in Government with a Specialization in Law",
+        "B.A. in History",
+        "B.A. in Interdisciplinary Spanish",
+        "B.A. in International Studies",
+        "B.A. in Mathematics",
+        "B.A. in Philosophy",
+        "B.A. in Psychology",
+        "B.A. in Psychology for Online Degree Completion Program",
+        "B.A. in Social Work (BSW)",
+        "B.A. in Sociology with a concentration in Criminology",
+        "B.A. in Theatre Arts: Production/Performance",
+        "B.S. in Accounting",
+        "B.S. in Accounting for Online Degree Completion Program",
+        "B.S. in Biology",
+        "B.S. in Business Administration",
+        "B.S. in Business Administration for Online Degree Completion Program",
+        "B.S. in Data Science",
+        "B.S. in Information Technology",
+        "B.S. in Mathematics",
+        "B.S. in Physical Education and Recreation",
+        "B.S. in Public Health",
+        "B.S. in Risk Management and Insurance",
+        "General Education",
+        "Honors Program",
+        "Mathematics and Industrial Engineering Dual Degree Program",
+        "Peace Corps Prep program",
+        "Self-Directed Major"
+      ],
+      [
+        "Masters",
+        "M.A. in Counseling: Clinical Mental Health Counseling",
+        "M.A. in Counseling: School Counseling",
+        "M.A. in Deaf Education",
+        "M.A. in Deaf Education Studies",
+        "M.A. in Deaf Studies: Cultural Studies",
+        "M.A. in Deaf Studies: Language and Human Rights",
+        "M.A. in Early Childhood Education and Deaf Education",
+        "M.A. in Early Intervention Studies",
+        "M.A. in Elementary Education and Deaf Education",
+        "M.A. in International Development",
+        "M.A. in Interpretation: Combined Interpreting Practice and Research",
+        "M.A. in Interpretation: Interpreting Research",
+        "M.A. in Linguistics",
+        "M.A. in Secondary Education and Deaf Education",
+        "M.A. in Sign Language Education",
+        "M.S. in Accessible Human-Centered Computing",
+        "M.S. in Speech-Language Pathology",
+        "Master of Public Administration",
+        "Master of Social Work (MSW)"
+      ],
+      [
+        "Doctorate",
+        "Au.D. in Audiology",
+        "Ed.D. in Transformational Leadership and Administration in Deaf Education",
+        "Ph.D. in Clinical Psychology",
+        "Ph.D. in Critical Studies in the Education of Deaf Learners",
+        "Ph.D. in Hearing, Speech, and Language Sciences",
+        "Ph.D. in Linguistics",
+        "Ph.D. in Translation and Interpreting Studies",
+        "Ph.D. Program in Educational Neuroscience (PEN)",
+        "Psy.D. in School Psychology"
+      ],
+      [
+        "Certificates",
+        "Certificate in Educating Deaf Students with Disabilities",
+        "Certificate in Early Intervention Studies",
+        "Certificate in Peer Mentor Training",
+        "Certificate in Sexuality and Gender Studies"
+      ],
+      [
+        "Online Degree Programs",
+        "B.A. in Communication Studies for Online Degree Completion Program",
+        "B.A. in Deaf Studies for Online Degree Completion Program",
+        "B.A. in English for Online Degree Completion Program",
+        "B.A. in Psychology for Online Degree Completion Program",
+        "B.S. in Accounting for Online Degree Completion Program",
+        "B.S. in Business Administration for Online Degree Completion Program",
+        "M.A. in Elementary Education and Deaf Education",
+        "M.A. in Secondary Education and Deaf Education",
+        "Master of Public Administration",
+        "Master of Social Work (MSW)",
+        "ODCP Minor in Communication Studies",
+        "ODCP Minor in Deaf Studies",
+        "ODCP Minor in Psychology",
+        "ODCP Minor in Writing",
+        "University Capstone Honors for Online Degree Completion Program"
+      ],
+      [
+        "B/B Aural Rehabilitation Lab - Claire Bernstein and Diane Brewer",
+        "Developmental Neurolinguistic and Cognition (DNC) Lab - Karen Garrido-Nag",
+        "Electrophysiology of Language Foundations - Jared Carter",
+        "Signed Language Development, Disorders, and Deprivation (SL3D) Lab - James McCann",
+        "Multicultural Research Lab - Ishara Ramkissoon",
+        "Prosody in Language Understanding, Speech, and Hearing (PLUSH) Lab - Kara Hawthorne",
+        "Vestibular and Balance Lab - Chizuko Tamaki"
+      ],
+      [
+        "Bernstein/Brewer Aural Rehabilitation Lab (B/Bar Lab)",
+        "Developmental Neurolinguistic and Cognition (DNC) Lab",
+        "Electrophysiology of Language Foundations",
+        "Multicultural Research Lab",
+        "Prosody in Language Understanding, Speech, and Hearing (PLUSH) Lab",
+        "Signed Language Development, Disorders, and Deprivation (SL3D) Lab",
+        "Vestibular and Balance Lab",
+        "Deaf/Hard of Hearing Technology Rehabilitation Engineering Research Center (RERC)"
+      ],
+      [
+        "Au.D. in Audiology",
+        "M.S. in Speech-Language Pathology",
+        "Ph.D. in Hearing, Speech, and Language Sciences",
+        "Hearing, Speech, and Language Sciences Post-Baccalaureate Courses"
+      ],
+      [
+        "Sign language intervention in a deaf child with specific language impairment",
+        "Spatial Navigation Abilities in Deaf Older Adults With and Without Vestibular Impairment",
+        "Auditory Cortical Deactivation in American Sign Language Users During Word Production",
+        "Vocal Emotional Detection in Cochlear Implant Users",
+        "Deaf Cochlear Implant Users\u2019 Perspectives on Successful Device Outcome Measures",
+        "Electrophysiological Differences in Autism Spectrum Disorder",
+        "Does Absent Vestibular Function Mitigate Virtual Reality Simulator Sickness?",
+        "Effect of Preference for Handedness on Direction of Subjective Visual Vertical Tilt",
+        "What information is provided to families of newly identified deaf/hard of hearing children?",
+        "Exploring Language Exposure\u2019s Relationship to Neurobiological Linguistic Outcomes in d/Deaf Infants",
+        "Prosody in Speech-Language Pathology"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301",
+        "5700."
+      ]
+    ],
+    "https://www.brooklyn.edu/academics/programs/speech-language-pathology-ms/": [
+      [
+        "Columbia University",
+        "New York Center for Infants and Toddlers, Inc.",
+        "New York City Department of Education"
+      ],
+      [
+        "Program Description",
+        "Program Requirements (59\u201378 Credits)",
+        "Option A: Master\u2019s Degree (59\u201371 Credits)",
+        "Option B: Master\u2019s Degree With a Specialization in Early Intervention (66\u201378 Credits)",
+        "Admissions Requirements",
+        "Program Outcome Data",
+        "Meital Avivi-Reich",
+        "Sharon Beaumont-Bowman",
+        "Anne Therese Frederiksen",
+        "Akiko Fuse",
+        "Tanni Haas",
+        "Audrey Hazamy",
+        "Sharona Levy",
+        "Shuming Lu",
+        "Klara Marton",
+        "Dorothy Neave-DiToro",
+        "Jennifer Sass-Brown",
+        "Seung-Yun Yang"
+      ],
+      [
+        "Meital Avivi-Reich",
+        "Sharon Beaumont-Bowman",
+        "Anne Therese Frederiksen",
+        "Akiko Fuse",
+        "Tanni Haas",
+        "Audrey Hazamy",
+        "Sharona Levy",
+        "Shuming Lu",
+        "Klara Marton",
+        "Dorothy Neave-DiToro",
+        "Jennifer Sass-Brown",
+        "Seung-Yun Yang"
+      ]
+    ],
+    "https://www.tc.columbia.edu/biobehavioral-sciences/communication-sciences-and-disorders/": [
+      [
+        "I'm interested in the M.S. in Speech-Language Pathology",
+        "I am an SLP and am interested in the bilingual extension and advanced certificate in bilingual SLP",
+        "I'm interested in doctoral study"
+      ],
+      [
+        "Master of Science (M.S.) with initial certification (55 credits)*",
+        "Master of Science (M.S.) with initial certification and bilingual extension*\u00a0(58 credits)",
+        "Master of Science (M.S.) with professional certification\u00a0(55 credits)**",
+        "Master of Science (M.S.) without certification\u00a0(55 credits)***"
+      ],
+      [
+        "Bilingual Extension Institute (Speech Language Pathology)\nBilingual SLP Extension",
+        "Bilingual Extension Institute (Speech Language Pathology) (Online)\nBilingual SLP Extension",
+        "Doctor of Philosophy\r\n    \n\nCommunication Sciences and Disorders",
+        "Communication Sciences and Disorders",
+        "Communication Sciences and Disorders\nNY State Initial: Speech and Language Disabilities K-12",
+        "Communication Sciences and Disorders MS Professional",
+        "Communication Sciences and Disorders MS"
+      ],
+      [
+        "Communication Sciences & Disorders",
+        "Carousel",
+        "Welcome to the Communication Sciences & Disorders program",
+        "Choose Your Degree",
+        "Admissions Information"
+      ],
+      [
+        "Secondary Navigation Main",
+        "Secondary Navigation More",
+        "Speech-Language Pathology Program",
+        "Intensive Online Prerequisite Program",
+        "Develop Clinical Skills",
+        "Travel Internationally",
+        "International Learning Experiences",
+        "Amplifying the Gift of Speech",
+        "Upper Airway Dysfunction Lab",
+        "Speech Treatment Camp for Children with CP",
+        "Application Requirements",
+        "Fund Your Degree",
+        "Resources",
+        "Legal"
+      ]
+    ],
+    "https://hesp.umd.edu/graduate/guide-undergraduate-studies-hearing-and-speech-sciences": [
+      [
+        "Academic Writing with D- or higher",
+        "Fundamental Studies Math with C- or higher (MATH 111, 115, 220, 140) or STAT 100",
+        "1 required GEN ED or CORE course with D- or higher",
+        "HESP120 with C- or higher",
+        "HESP202 with C- or higher",
+        "PSYC100 with C- or higher"
+      ],
+      [
+        "Table of Contents:",
+        "Introduction",
+        "A career in Hearing and Speech",
+        "Graduate School",
+        "Academic Advising",
+        "Becoming a Hearing and Speech Major",
+        "Transfer Credit",
+        "Minors and Double Majors",
+        "Education Abroad",
+        "Information for Juniors",
+        "Information for Seniors",
+        "The Hearing and Speech Major Requirements",
+        "Required Supporting Course Work",
+        "Allied/Related Fields",
+        "Minimum Grade Requirements in HESP",
+        "Repeat Policy",
+        "Pass/Fail Policy",
+        "HESP Minor",
+        "Summer Courses",
+        "Taking HESP Graduate Courses",
+        "Consortium of Universities of the Washington Metropolitan Area",
+        "Departmental Honors in Hearing and Speech Sciences",
+        "Departmental Activities and Programs",
+        "HESP Course Descriptions"
+      ],
+      [
+        "Introduction",
+        "A Career in HESP",
+        "Graduate School",
+        "Academic Advising",
+        "Becoming a HESP Major"
+      ],
+      [
+        "Required HESP Courses\n(10 Courses)",
+        "Credits: 30",
+        "Total Credits: 49"
+      ],
+      [
+        "Course",
+        "HESP 120",
+        "HESP 202",
+        "HESP 300",
+        "HESP 305",
+        "HESP 311",
+        "HESP 400",
+        "HESP 403",
+        "HESP 407",
+        "HESP 411",
+        "Choose one of the following",
+        "HESP 402",
+        "HESP 404",
+        "HESP 406",
+        "HESP 410"
+      ],
+      [
+        "Speech",
+        "Language",
+        "Pathology",
+        "Certification"
+      ],
+      [
+        "requisites listed for each course.PSYC 200",
+        "Statistical Methods in Psychology Prerequisite: PSYC100 and (MATH111 or MATH140 or MATH220)EDMS 451",
+        "Introduction to Educational Statistics Prerequisite: Sophomore Standing or higherBIOM 301",
+        "Introduction to Biometrics Prerequisite: MATH113 or MATH115"
+      ],
+      [
+        "Communication with Sign Language (EDSP376 or permission)",
+        "Family Theories and Patterns (Junior standing)",
+        "Children in Families (FMSC105 or PSYC100)",
+        "Family Crises and Intervention (PSYC 100)",
+        "Adult Development and Aging in Families (PSYC100; and {SOCY100 or SOCY105};"
+      ],
+      [
+        "Language and Mind",
+        "Syntax I (LING240)",
+        "Phonology I (LING240)",
+        "Philosophy of Language (PHIL170 or LING311; Also offered as PHIL 360)"
+      ],
+      [
+        "Introduction to Logic",
+        "Philosophy of Science I",
+        "Philosophy of Language (Two courses in PHIL; and PHIL170 or PHIL 370)"
+      ],
+      [
+        "Social Psychology (PSYC100)",
+        "Cross",
+        "Cultural Psychology (PSYC100)"
+      ],
+      [
+        "Physics in the Modern World",
+        "Fundamentals of Physics I (MATH112 or MATH115)",
+        "Fundamentals of Physics II (PHYS121 or equivalent)",
+        "Biological Bases of Behavior (BSCI105 and PSYC100)"
+      ],
+      [
+        "All classes must be completed with a grade of C",
+        "or better and as with HESP majors, students must obtain a grade of C",
+        "or better in a class in order to enroll in any courses that requires that class as a pre",
+        "requisite."
+      ],
+      [
+        "working",
+        "teaching",
+        "assistants)"
+      ]
+    ],
+    "https://www.stjohns.edu/academics/programs/doctor-audiology-aud": [
+      [
+        "Academics",
+        "Majors and Programs of Study",
+        "Doctor of Audiology, Au.D."
+      ],
+      [
+        "Accreditation",
+        "How to Apply",
+        "Advisement",
+        "Plan of Study",
+        "Graduation",
+        "Doctor of Audiology (AuD) Consortium Open House Schedule",
+        "Explore Affordability",
+        "Apply to St. John's"
+      ],
+      [
+        "There are no additional costs incurred as a result of this structure.",
+        "The program\u2019s accreditation period is from February 1, 2021, through January 31, 2029.",
+        "Council on Academic Accreditation in Audiology and Speech-Language Pathology"
+      ],
+      [
+        "Degree Type",
+        "Area of Interest",
+        "Associated Colleges or Schools",
+        "Program Location",
+        "Required Credit Hours"
+      ]
+    ],
+    "https://www.shrs.pitt.edu/academics/csd/aud/": [
+      [
+        "Fall - Spring - Summer",
+        "Fall - Spring",
+        "Spring",
+        "Summer"
+      ],
+      [
+        "Have Questions?",
+        "Application",
+        "Commitment and Credits",
+        "Degree",
+        "Applied Skills",
+        "EstimatedProgram\nCosts",
+        "Program\nOutcomes",
+        "Certification \nand Licensure",
+        "Accreditation",
+        "Student Handbooks",
+        "Related Programs:",
+        "Speech-Language Pathology (MA/MS)",
+        "Communication Science and Disorders (PhD)",
+        "Communication Science and Disorders, Post-Baccalaureate Year",
+        "Communication Science (BA)",
+        "Have Questions?",
+        "Related Programs:",
+        "Speech-Language Pathology (MA/MS)",
+        "Communication Science and Disorders (PhD)",
+        "Communication Science and Disorders, Post-Baccalaureate Year",
+        "Communication Science (BA)",
+        "Get More Information"
+      ],
+      [
+        "Application",
+        "Start Term \n\n\n\nFall term (August)",
+        "Application Opens \n\n\n\nJuly 15, 2024"
+      ],
+      [
+        "Commitment and Credits",
+        "Duration \n\n\n\n4 years\n(11 terms, including 3 summer terms)",
+        "Commitment \n\n\n\n\t\t\t\t\t\t\t\t\tFull-time",
+        "Credits \n\n\n\n101 minimum"
+      ],
+      [
+        "Type of Degree",
+        "Doctor of Audiology",
+        "This program prepares graduates to become an entry-level audiologist."
+      ],
+      [
+        "Speech-Language Pathology (MA/MS)",
+        "Communication Science and Disorders (PhD)",
+        "Communication Science and Disorders, Post-Baccalaureate Year",
+        "Communication Science (BA)"
+      ],
+      [
+        "Speech-Language Pathology (MA/MS)",
+        "Communication Science and Disorders (PhD)",
+        "Communication Science and Disorders, Post-Baccalaureate Year",
+        "Communication Science (BA)"
+      ],
+      [
+        "Program LevelPlease select...\nAccelerated Program\n\n\nField of StudyPlease select...\nAthletic Training",
+        "Program LevelPlease select...\nDoctorate\n\n\nField of StudyPlease select...\nRehabilitation Science PhD",
+        "Program LevelPlease select...\nMaster's Degree\n\n\nCalculated Field of Study"
+      ],
+      [
+        "Program LevelPlease select...\nDoctorate\n\n\nField of StudyPlease select...\nDoctor of Chiropractic",
+        "First Name",
+        "Last Name",
+        "Email"
+      ],
+      [
+        "I am interested in theOn-Campus programHybrid/Online program",
+        "I am interested in theMasterAccelerated",
+        "I am interested inDoctorate - Hybrid/OnlineCertificate - Hybrid/Online",
+        "Field of StudyPlease select...\nNeuromuscular Physical Therapy - Post-professional MS",
+        "ConcentrationPlease select...\n\nGraduate of a DPD program\nPost-baccalaureate entry",
+        "Start Term",
+        "Start Term",
+        "Start Term",
+        "Start Term",
+        "Start Term",
+        "Start Term",
+        "Start Term",
+        "Start Term"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301",
+        "5700."
+      ]
+    ],
+    "https://www.adelphi.edu/program/doctoral/audiology/": [
+      [
+        "Adelphi University\u2019s Hy Weinberg Center for Communication Disorders",
+        "Hofstra University\u2019s Speech-Language-Hearing Clinic",
+        "St. John\u2019s University\u2019s Speech and Hearing Center"
+      ],
+      [
+        "Adelphi University\u2019s Hy Weinberg Center for Communication Disorders",
+        "Hofstra University\u2019s Speech-Language-Hearing Clinic",
+        "St. John\u2019s University\u2019s Speech and Hearing Center"
+      ],
+      [
+        "Anguilla",
+        "Antigua",
+        "Australia",
+        "Bahamas",
+        "Barbados",
+        "Belize",
+        "Bermuda",
+        "British Virgin Islands",
+        "Canada (except Quebec/Montreal)",
+        "Cayman Islands",
+        "Dominica",
+        "Grenada",
+        "Greenland",
+        "Guyana",
+        "Jamaica",
+        "Liberia",
+        "New Zealand",
+        "St. Kitts and Nevis",
+        "St. Lucia",
+        "South Africa",
+        "Tobago",
+        "Trinidad",
+        "Turks and Cacaos Islands",
+        "United Kingdom",
+        "U.S. Virgin Islands"
+      ],
+      [
+        "Email",
+        "CLASS",
+        "Moodle",
+        "My Profile"
+      ],
+      [
+        "Apply for Aid\ufeff",
+        "Billing\ufeff",
+        "Loans\ufeff",
+        "One-Stop Student Services\ufeff",
+        "Pay Your Bill\ufeff",
+        "Refunds\ufeff",
+        "Scholarships & Grants\ufeff",
+        "Tuition & Costs\ufeff",
+        "Tuition Insurance\ufeff"
+      ],
+      [
+        "Clery Act\ufeff",
+        "Emergency Notifications\ufeff",
+        "Parking\ufeff",
+        "Report a Crime\ufeff",
+        "Shuttle Schedule\ufeff"
+      ],
+      [
+        "Behavioral Intervention Team\ufeff",
+        "Care Team\ufeff",
+        "Concerns & Resolution\ufeff",
+        "Conduct & Community Standards\ufeff",
+        "Report Harassment\ufeff",
+        "Title IX\ufeff"
+      ],
+      [
+        "Moodle",
+        "Email",
+        "CLASS",
+        "My Profile"
+      ],
+      [
+        "Alice Brown Early Learning Center (Childcare)\ufeff",
+        "Benefits & Annual Enrollment\ufeff",
+        "Collective Bargaining Agreements\ufeff",
+        "Discounts & Perks\ufeff",
+        "Employee Well-Being \ufeff\ufeff",
+        "Mindfulness Center\ufeff",
+        "Training & Professional Development \ufeff\ufeff",
+        "Working at Adelphi\ufeff"
+      ],
+      [
+        "Alice Brown Early Learning Center (Childcare)\ufeff",
+        "Benefits & Annual Enrollment\ufeff",
+        "Discounts & Perks\ufeff",
+        "Employee Well-Being\ufeff",
+        "Mindfulness Center\ufeff",
+        "Training & Professional Development\ufeff",
+        "Working at Adelphi\ufeff"
+      ],
+      [
+        "Parents & Families Info",
+        "High School Programs",
+        "Tuition & Financial Aid"
+      ],
+      [
+        "Paying a Bill\ufeff",
+        "Refunds\ufeff",
+        "Scholarships & Grants\ufeff",
+        "Student Consumer Info\ufeff"
+      ],
+      [
+        "Accessibility & Equal Access for Students\ufeff",
+        "Health Services Center\ufeff",
+        "Immunization Requirements\ufeff",
+        "Public Safety & Transportation\ufeff"
+      ],
+      [
+        "Availability of Employees\ufeff",
+        "Bookstore\ufeff",
+        "Campus Map\ufeff",
+        "Career Services\ufeff",
+        "Concerns & Resolutions\ufeff",
+        "Diversity, Equity, Inclusion & Belonging\ufeff",
+        "Parents & Families Association\ufeff",
+        "Technology\ufeff"
+      ],
+      [
+        "Discounts and Benefits",
+        "Give to Adelphi",
+        "Career Services"
+      ],
+      [
+        "Alice Brown Early Learning Center (Childcare)\ufeff",
+        "High School Programs\ufeff",
+        "Pre-College Programs\ufeff",
+        "Student Consumer Info\ufeff",
+        "Summer Camps\ufeff"
+      ],
+      [
+        "College of Professional & Continuing Studies\ufeff",
+        "Continuing Education\ufeff",
+        "Community Auditing Program\ufeff",
+        "Credit for Prior Learning\ufeff"
+      ],
+      [
+        "Breast Cancer Hotline & Support Program\ufeff",
+        "Hy Weinberg Center for Communication Disorders\ufeff",
+        "Institute for Parenting\ufeff",
+        "Mental Health Services\ufeff"
+      ],
+      [
+        "Why Earn a Doctor of Audiology (AuD)?",
+        "Why Choose Our Doctor of Audiology Program in New York on Long Island?",
+        "Doctor of Audiology Degree Program Info",
+        "Additional Audiology Degree Certification Information",
+        "Application Requirements and Deadlines for the AuD",
+        "Related Programs to Our Doctorate in Audiology",
+        "Awards & Recognition"
+      ],
+      [
+        "Adult Gerontology Primary Care Nurse Practitioner (DNP)",
+        "Communication Disorders: Speech-Language Pathology (MS)",
+        "Clinical Psychology (PhD)",
+        "Social Work (PhD)"
+      ]
+    ],
+    "https://www.pacificu.edu/audiology-aud": [
+      [
+        "Main navigation",
+        "Main menu (Mobile)",
+        "Quick links",
+        "Information for ...",
+        "Why Earn an AuD Degree?",
+        "What Can You Do With an AuD Degree?",
+        "Get Involved",
+        "Hands-On Clinical Experiences",
+        "Interprofessional Concentration",
+        "Save Your Seat",
+        "Footer Menu"
+      ],
+      [
+        "Accreditation\nCAA",
+        "Degree Type\nDoctorate",
+        "Credits\n121",
+        "Program Length\nThree years",
+        "Location\nHillsboro"
+      ],
+      [
+        "Image",
+        "Wendy D. Hanks, PhD",
+        "Profession Title\nDirector, School of Audiology",
+        "Read more about Wendy D. Hanks, PhD"
+      ],
+      [
+        "Image",
+        "David K. Brown, PhD",
+        "Profession Title\nProfessor, School of Audiology - SIMLab Director",
+        "Read more about David K. Brown, PhD"
+      ],
+      [
+        "Image",
+        "Bryan Greenaway, AuD",
+        "Profession Title\nAssistant Professor, School of Audiology",
+        "Read more about Bryan Greenaway, AuD"
+      ],
+      [
+        "Image",
+        "Briana Hester, AuD",
+        "Profession Title\nAssistant Professor, School of Audiology",
+        "Read more about Briana Hester, AuD"
+      ],
+      [
+        "Image",
+        "M. Samantha Lewis, PhD, CCC-A",
+        "Profession Title\nProfessor, School of Audiology - Academic Education Lead",
+        "Read more about M. Samantha Lewis, PhD, CCC-A"
+      ],
+      [
+        "Image",
+        "Jennifer Ratigan, AuD",
+        "Profession Title\nAssistant Professor, School of Audiology",
+        "Read more about Jennifer Ratigan, AuD"
+      ],
+      [
+        "Image",
+        "Leigh G. Schaid, AuD",
+        "Profession Title\nAssociate Professor, School of Audiology",
+        "Read more about Leigh G. Schaid, AuD"
+      ],
+      [
+        "Image",
+        "Trent Westrick, AuD",
+        "Profession Title\nAssociate Professor, School of Audiology - Internship & Externship Coordinator",
+        "Read more about Trent Westrick, AuD"
+      ],
+      [
+        "Language Pathology (CAA) of the American Speech",
+        "Language",
+        "hearing Association, 2200 Research Boulevard #310, Rockville, Maryland 20850, 800",
+        "2071 FREE or 301"
+      ]
+    ],
+    "https://hps.unt.edu/aslp/index.html": [
+      [
+        "UNT OLLI podcast featuring Dr. Katherine Alsop",
+        "2021 Outstanding Academic Department Award",
+        "UNT College of Health & Public Service",
+        "Follow Us"
+      ],
+      [
+        "Language Pathology provides the finest graduate",
+        "language pathology and audiology while maintaining",
+        "art diagnosis"
+      ],
+      [
+        "Language Pathology at the University",
+        "Language Pathology (CAA) of the American Speech",
+        "Language",
+        "Hearing Association,",
+        "2071 or 301",
+        "5700."
+      ],
+      [
+        "Language Pathology strongly supports the university's",
+        "discrimination policy. UNT Non",
+        "Discrimination Policy",
+        "It is the policy of the"
+      ],
+      [
+        "2759. TTY access: 940",
+        "8652 or 800",
+        "2989."
+      ],
+      [
+        "Language Pathology strives to provide the finest",
+        "language pathology and audiology while maintaining",
+        "professional undergraduate degree."
+      ]
+    ],
+    "https://www.chhs.niu.edu/ahcd/programs/audiology/index.shtml": [
+      [
+        "School of Allied Health and Communicative Disorders",
+        "Academics",
+        "Audiology"
+      ],
+      [
+        "Videonystagmography (VNG)",
+        "VORTEQ (for high frequency headshake and VOR)",
+        "vHIT (vestibular head impulse test)",
+        "oVEMP (ocular vestibular myogenic evoked potentials to assess utriclar function)",
+        "cVEMP (to evaluate saccular function)"
+      ],
+      [
+        "Language",
+        "ear measurement of audibility status, and outcomes assessment pre",
+        "and post",
+        "fitting."
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301",
+        "5700."
+      ]
+    ],
+    "https://www.tc.columbia.edu/catalog/academics/departments/health-and-behavior-studies/deaf-and-hard-of-hearing/": [
+      [
+        "Program Description",
+        "Degrees",
+        "Faculty",
+        "Courses"
+      ],
+      [
+        "NY State Initial: Deaf/Hard of Hearing Pre-K-12",
+        "HBSE 4070 Psychosocial and Cultural Aspects of People who are Deaf or Hard of Hearing",
+        "HBSE 4079 Language Development and Habilitation: Auditory Verbal Practice",
+        "HBSE 4300\u2013007 Practicum in Assessment and Evaluation of Individuals with Exceptionalities: DHH",
+        "HBSE 4863 Cued Speech/Language and Multisensory Reading",
+        "HBSE 4871 American Sign Language I",
+        "HBSE 4872 American Sign Language II",
+        "Development for the Deaf or Hard of hearing with Language Learning Disabilities",
+        "HBSE 4079 Language Development and Habilitation: Auditory-Verbal Practice",
+        "HBSE 4300-007 Practicum in Assessment and Evaluation of Individuals with Exceptionalities: DHH",
+        "HBSE 4863 Cued Speech/Language and Multisensory Reading",
+        "HBSE 4871 American Sign Language I",
+        "HBSE 4872 American Sign Language II",
+        "Out of program electives"
+      ],
+      [
+        "HBSE 4070 Psychosocial and Cultural Aspects of People who are Deaf or Hard of Hearing",
+        "HBSE 4079 Language Development and Habilitation: Auditory Verbal Practice",
+        "HBSE 4300\u2013007 Practicum in Assessment and Evaluation of Individuals with Exceptionalities: DHH",
+        "HBSE 4863 Cued Speech/Language and Multisensory Reading",
+        "HBSE 4871 American Sign Language I",
+        "HBSE 4872 American Sign Language II"
+      ],
+      [
+        "Development for the Deaf or Hard of hearing with Language Learning Disabilities",
+        "HBSE 4079 Language Development and Habilitation: Auditory-Verbal Practice",
+        "HBSE 4300-007 Practicum in Assessment and Evaluation of Individuals with Exceptionalities: DHH",
+        "HBSE 4863 Cued Speech/Language and Multisensory Reading",
+        "HBSE 4871 American Sign Language I",
+        "HBSE 4872 American Sign Language II",
+        "Out of program electives"
+      ],
+      [
+        "HBSE 4070 Psychosocial and Cultural Aspects of People who are Deaf or Hard of Hearing",
+        "HBSE 4073 Teaching Speech, Language, and Communication/Educational Audiology (two terms)",
+        "HBSE 4079 Language Development and Habilitation: Auditory Verbal Practice",
+        "HBSE 4300-007 Practicum in Assessment and Evaluation of Individuals with Exceptionalities: DHH",
+        "HBSE 4707 Observation and Student Teaching Deaf and Hard of Hearing (two academic terms)",
+        "HBSE 4863 Cued Speech/Language and Multisensory Reading",
+        "HBSE 4871 American Sign Language I",
+        "HBSE 4872 American Sign Language II",
+        "Area specialization courses Adolescence, Content Area (15+ points)"
+      ],
+      [
+        "HBSE 4070 Psychosocial and Cultural Aspects of People who are Deaf or Hard of Hearing",
+        "HBSE 4073 Teaching Speech, Language, and Communication/Educational Audiology (two terms)",
+        "HBSE 4079 Language Development and Habilitation: Auditory Verbal Practice",
+        "HBSE 4300-007 Practicum in Assessment and Evaluation of Individuals with Exceptionalities: DHH",
+        "HBSE 4707 Observation and Student Teaching Deaf and Hard of Hearing (two academic terms)",
+        "HBSE 4863 Cued Speech/Language and Multisensory Reading",
+        "HBSE 4871 American Sign Language I",
+        "HBSE 4872 American Sign Language II",
+        "Area specialization courses in Childhood Education (15+ points)"
+      ],
+      [
+        "HBSE 4070 Psychosocial and Cultural Aspects of People who are Deaf or Hard of Hearing",
+        "HBSE 4073 Teaching Speech, Language, and Communication/Educational Audiology (two terms)",
+        "HBSE 4079 Language Development and Habilitation: Auditory Verbal Practice",
+        "HBSE 4300-007 Practicum in Assessment and Evaluation of Individuals with Exceptionalities: DHH",
+        "HBSE 4707 Observation and Student Teaching Deaf and Hard of Hearing (two academic terms)",
+        "HBSE 4863 Cued Speech/Language and Multisensory Reading",
+        "HBSE 4871 American Sign Language I",
+        "HBSE 4872 American Sign Language II",
+        "Area specialization courses in Reading Specialist (15+ points)"
+      ],
+      [
+        "HBSE 5010 Study of the Philosophic Foundations of Special Education (3)",
+        "HBSE 6001 Research in Special Education: Group Design (3)",
+        "HBSE 6010 Advanced Study of Problems and Issues in Special Education (3)",
+        "HBSE 6031 Research in Special Education: Single Case Design (3)",
+        "HBSE 7500 Dissertation Seminar in Special Education (3)",
+        "HBSE 8907 Dissertation Advisement in Special Education: Deaf and Hard of Hearing (0)",
+        "HUDM 4122 Probability and Statistical Inference (3)",
+        "HUDM 5122 Applied Regression Analysis (3)",
+        "HUDM 5123 Linear Models (3)",
+        "HUDM 5059 Psychological Measurement (3)",
+        "HUDM 6122 Multivariate Analysis I (3)",
+        "HBSE 5907 Problems in Special Education: Deaf and Hard of Hearing (3)",
+        "HBSE 6507 Advanced Seminar in Special Education: Deaf and Hard of Hearing (3)"
+      ],
+      [
+        "HUDM 4122 Probability and Statistical Inference (3)",
+        "HUDM 5122 Applied Regression Analysis (3)",
+        "HUDM 5123 Linear Models (3)"
+      ],
+      [
+        "Visiting Faculty\nElaine Rebecca Smolen Visiting Assistant Professor",
+        "Elaine Rebecca Smolen Visiting Assistant Professor",
+        "Lecturers\nMaria C. Hartman Senior Lecturer",
+        "Maria C. Hartman Senior Lecturer",
+        "Stephanie Levine Adjunct Assistant Professor",
+        "Jennifer Lynn Montgomery Adjunct Assistant Professor",
+        "Instructors\nElizabeth Anne Rosenzweig",
+        "Elizabeth Anne Rosenzweig"
+      ],
+      [
+        "Secondary Navigation Main",
+        "Academics Menu\r\n        \nToggle Tertiary Menu",
+        "Department of Health Studies & Applied Educational Psychology",
+        "Program Description",
+        "Degrees",
+        "Faculty",
+        "Courses",
+        "Resources",
+        "Legal"
+      ],
+      [
+        "This program leads to Council on the Education of the Deaf (CED) certification.",
+        "Specialization Requirements, Deaf and Hard of Hearing:",
+        "Breadth Requirements:"
+      ],
+      [
+        "This program leads to Council on the Education of the Deaf (CED) certification.",
+        "Specialization Requirements, Deaf and Hard of Hearing:",
+        "Breadth Requirements:"
+      ],
+      [
+        "All programs noted above also lead to Council on the Education of the Deaf (CED) certification.",
+        "Specialization Requirements, Deaf and Hard of Hearing:",
+        "Breadth Requirements:"
+      ],
+      [
+        "This program leads to Council on the Education of the Deaf (CED) certification.",
+        "Specialization Requirements, Deaf and Hard of Hearing:",
+        "Breadth Requirements:"
+      ],
+      [
+        "All programs noted above also lead to Council on the Education of the Deaf (CED) certification.",
+        "Specialization Requirements, Deaf and Hard of Hearing:",
+        "Breadth Requirements:"
+      ],
+      [
+        "grade 2), Elementary Education Teacher (grade 1",
+        "6), Secondary Teacher (grades 7",
+        "12)\u00a0 in a particular subject area (English, Math, Science, or Social Studies) or Reading Specialist."
+      ],
+      [
+        "grade 2), Elementary Education Teacher (grades 1",
+        "6), Secondary Teacher (grades 7",
+        "12) in a particular subject area (English, Math, Science, or Social Studies) or Reading Specialist."
+      ],
+      [
+        "grade 2), Elementary Education Teacher (grades 1",
+        "6), Secondary Teacher (grades 7",
+        "12) in a particular subject area (English, Math, Science, or Social Studies) or Reading Specialist."
+      ],
+      [
+        "grade 2), Elementary Education Teacher (grades 1",
+        "6), Secondary Teacher (grades 7",
+        "12) in a particular subject area (English, Math, Science, or Social Studies) or Reading Specialist."
+      ]
+    ],
+    "https://bbs.utdallas.edu/departments/speech-language-and-hearing/graduate-programs/audiology-aud/": [
+      [
+        "Infant, School-Age and Adult Hearing Evaluations",
+        "Infant, School-Age and Adult Hearing Aids and Hearing Assistive Technology",
+        "Tinnitus and/or Hyperacusis Clinic",
+        "UT Pediatric Cochlear Implant Program",
+        "Callier Balance Center (pediatric and adults)",
+        "Auditory Processing Disorders",
+        "Educational Audiology",
+        "Electrophysiology Assessments",
+        "Parent-Infant, School-Age and Adult (Re)Habilitation Programs"
+      ],
+      [
+        "Parkland Hospital",
+        "Campus West",
+        "Children\u2019s Health Medical Center"
+      ],
+      [
+        "Info For",
+        "Info For",
+        "Hospital Partners:"
+      ],
+      [
+        "UT Dallas",
+        "School of Behavioral and Brain Sciences",
+        "Departments",
+        "Department of Speech, Language, and Hearing",
+        "Graduate Programs",
+        "Audiology AuD"
+      ],
+      [
+        "2023-2024",
+        "2022-2023",
+        "2021-2022"
+      ],
+      [
+        "2023-2024",
+        "2022-2023",
+        "2021-2022"
+      ],
+      [
+        "2022-2023",
+        "2020-2021",
+        "2019-2020"
+      ],
+      [
+        "required hours. Graduates of the program will meet qualifications for the American Speech",
+        "Language Hearing Association (ASHA) Certificate of Clinical Competence in Audiology (CCC",
+        "A) if they elect to complete the externship under the supervision of a state",
+        "licensed audiologist who holds current ASHA CCC"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301",
+        "5700."
+      ],
+      [
+        "on, open",
+        "impact peer",
+        "reviewed journals, write well",
+        "recognized audiology/hearing science textbooks, and earn competitive extramural funding."
+      ]
+    ],
+    "https://www.bsu.edu/academics/collegesanddepartments/spaa/academic-programs/doctoral-degree/aud-audiology": [
+      [
+        "Academics",
+        "Colleges and Departments",
+        "Speech Pathology and Audiology",
+        "Academic Programs",
+        "Doctor of Audiology (AUD)"
+      ],
+      [
+        "Health and Wellness",
+        "Doctoral",
+        "On-Campus",
+        "College of Health"
+      ],
+      [
+        "psychology",
+        "electronics",
+        "neuroanatomy",
+        "pharmacology"
+      ],
+      [
+        "newborn hearing evaluations",
+        "child hearing evaluations",
+        "adult hearing evaluations",
+        "tinnitus evaluations",
+        "auditory processing disorder evaluations",
+        "evaluation of dizziness and balance",
+        "fall risk assessment"
+      ],
+      [
+        "hearing aid evaluations/fittings",
+        "cochlear implant evaluations/fittings",
+        "ear wax removal",
+        "hearing aid/cochlear implant repairs",
+        "balance rehabilitation program",
+        "swim molds",
+        "hearing protection (for musicians, hunters, or anyone exposed to loud sounds)"
+      ],
+      [
+        "academic coursework: 73",
+        "clinical practicum experience: 18",
+        "one-year clinical externship: 9"
+      ],
+      [
+        "SPAA 562 - Neuroanatomy and Neurophysiology of Speech, Language, and Hearing",
+        "SPAA 648 - Hearing Anatomy, Physiology, and Disorders",
+        "SPAA 655 - Diagnostic Audiology",
+        "SPAA 656 - Speech Perception and Hearing Aids",
+        "SPAA 657 - Advanced Diagnostic Audiology",
+        "SPAA 660 - Otoacoustic Emissions",
+        "SPAA 650 - Pediatric Audiology",
+        "SPAA 651 - Auditory Problems and Management in Adults",
+        "SPAA 601 - Introduction to Research in Speech Pathology and Audiology",
+        "SPAA 654 - Evoked Potential Testing",
+        "SPAA 691 - Seminar in Audiology",
+        "SPAA 766 - Hearing Aids 2",
+        "SNLNG 651 - American Sign Language 1",
+        "SPAA 653 - Balance Function and Assessment",
+        "SPAA 658 - Private Practice and Related Professional Issues",
+        "SPAA 661 - Cochlear Implants",
+        "SPAA 663 - Counseling Issues in Audiologic Practice",
+        "SPAA 664 - History and Issues of the Profession of Audiology",
+        "SPAA 652 - Psychoacoustics, Instrumentation, and Calibration",
+        "SPAA 659 - Industrial and Other Audiologic Settings",
+        "SPAA 771 - Clinical Project in Audiology",
+        "SPAA 680:  Genetics of Communication Disorders",
+        "SPAA 662 - Pharmacology for Audiologists",
+        "SPAA 793 - Audiology Externship",
+        "SPAA 770 - Grand Rounds in Audiology",
+        "SPAA 749 - Audiology Practicum",
+        "SPAA 692 - Directed Study in SLP and Audiology"
+      ],
+      [
+        "Indiana Professional Licensing Agency",
+        "Certificate of Clinical Competence",
+        "State-Specific Licensure"
+      ],
+      [
+        "fitting and dispensing hearing aids",
+        "giving instructions on the use and care of hearing aids",
+        "monitoring and helping prevent noise-induced hearing loss",
+        "participation in industrial hearing conservation programs",
+        "serving as government consultants in areas such as noise abatement",
+        "newborn baby hearing screening programs"
+      ],
+      [
+        "Ball State University",
+        "What You Will Learn",
+        "What It\u2019s Like to Pursue a Doctoral Degree in Audiology at Ball State?",
+        "Diagnostic Services",
+        "Rehabilitative Services",
+        "Program Learning Outcomes",
+        "Program Requirements",
+        "Paying for Your Education",
+        "Licensing Requirements",
+        "What Can You Do with a Doctor of Audiology Degree?",
+        "Ready to Apply?",
+        "More Information"
+      ],
+      [
+        "Credits",
+        "Courses",
+        "Required Clinical Observation",
+        "Tuition and Fees",
+        "Funding Graduate Study",
+        "Department Graduate Assistantships"
+      ],
+      [
+        "Paying for Your Education\n\n\n\n\nTuition and Fees\n\n\n\n\nFunding Graduate Study",
+        "Related Programs",
+        "PhD in Human BioenergeticsPhD in Counseling Psychology"
+      ]
+    ],
+    "https://degrees.ecu.edu/aud/audiology/": [
+      [
+        "CSDI 6103\u00a0-\u00a0Research Design in Speech and Hearing",
+        "CSDI 8000\u00a0-\u00a0Methods in Clinical Audiology",
+        "CSDI 8002\u00a0-\u00a0Assessment and Management of the Vestibular System",
+        "CSDI 8003\u00a0-\u00a0Advanced Pediatric Assessment",
+        "CSDI 8005\u00a0-\u00a0Methods in Amplification",
+        "CSDI 8006\u00a0-\u00a0Auditory Processing",
+        "CSDI 8007\u00a0-\u00a0Methods in Clinical Audiology Lab",
+        "CSDI 8009\u00a0-\u00a0Psychoacoustics",
+        "CSDI 8011\u00a0-\u00a0Advanced Acoustics",
+        "CSDI 8013\u00a0-\u00a0Methods in Clinical Audiology II",
+        "CSDI 8016\u00a0-\u00a0Auditory Physiology",
+        "CSDI 8017\u00a0-\u00a0Advanced Methods in Amplification II",
+        "CSDI 8019\u00a0-\u00a0Electrophysiological Measures in Audition I",
+        "CSDI 8021\u00a0-\u00a0Aural Rehabilitation",
+        "CSDI 8026\u00a0-\u00a0Electrophysiological Measures in Audition II",
+        "CSDI 8027\u00a0-\u00a0Cochlear Implants",
+        "CSDI 8028\u00a0-\u00a0Auditory Pathologies",
+        "CSDI 8029\u00a0-\u00a0Counseling in Audiology and Speech-Language Practice",
+        "CSDI 8032\u00a0-\u00a0Hearing Conservation",
+        "CSDI 8033\u00a0-\u00a0Cochlear Implant Technology and Research",
+        "CSDI 8100\u00a0-\u00a0Advanced Audiology Methods Lab",
+        "CSDI 8102\u00a0-\u00a0Vestibular Lab",
+        "CSDI 8103\u00a0-\u00a0Electrophysiological Measures in Audition I \u2013 Laboratory",
+        "CSDI 8104\u00a0-\u00a0Electrophysiological Measures in Audition II \u2013 Laboratory",
+        "CSDI 8150\u00a0-\u00a0Audiology Licensure, Certification and Related Issues",
+        "CSDI 8234\u00a0-\u00a0Audiology Clinical Rotation",
+        "CSDI 8993\u00a0-\u00a0Clinical Residency",
+        "BIOS 7021\u00a0-\u00a0Biostatistics for Health Professionals I",
+        "COHE 6600\u00a0-\u00a0Management of Health Care Operations",
+        "CSDI 6100\u00a0-\u00a0Language Disorders",
+        "CSDI 6110\u00a0-\u00a0Brain, Language, and Aphasia",
+        "CSDI 6200\u00a0-\u00a0Multicultural Communication Disorders",
+        "CSDI 8004\u00a0-\u00a0Embryology, Genetics, and the Auditory System",
+        "CSDI 8010\u00a0-\u00a0Computer and Instrumentation Applications to Speech and Hearing Science",
+        "CSDI 8012\u00a0-\u00a0Physiological Phonetics",
+        "CSDI 8014\u00a0-\u00a0Acoustic Phonetics",
+        "CSDI 8015\u00a0-\u00a0Electronic Instrumentation and Calibration in Speech and Hearing",
+        "CSDI 8018\u00a0-\u00a0Neurolinguistics",
+        "CSDI 8020\u00a0-\u00a0Advanced Seminar in Communication Sciences",
+        "CSDI 8022\u00a0-\u00a0Advanced Seminar in Audiology",
+        "CSDI 8024\u00a0-\u00a0Advanced Electrophysiological Measures",
+        "CSDI 8030\u00a0-\u00a0Doctoral Colloquium in Communication Sciences and Disorders",
+        "CSDI 8031\u00a0-\u00a0Auditory Perception of Speech",
+        "CSDI 8040\u00a0-\u00a0Audiology Capstone I",
+        "CSDI 8041\u00a0-\u00a0Audiology Capstone II",
+        "CSDI 8234\u00a0-\u00a0Audiology Clinical Rotation",
+        "CSDI 8999\u00a0-\u00a0Predoctoral Independent Study"
+      ],
+      [
+        "CSDI 6103\u00a0-\u00a0Research Design in Speech and Hearing",
+        "CSDI 8000\u00a0-\u00a0Methods in Clinical Audiology",
+        "CSDI 8002\u00a0-\u00a0Assessment and Management of the Vestibular System",
+        "CSDI 8003\u00a0-\u00a0Advanced Pediatric Assessment",
+        "CSDI 8005\u00a0-\u00a0Methods in Amplification",
+        "CSDI 8006\u00a0-\u00a0Auditory Processing",
+        "CSDI 8007\u00a0-\u00a0Methods in Clinical Audiology Lab",
+        "CSDI 8009\u00a0-\u00a0Psychoacoustics",
+        "CSDI 8011\u00a0-\u00a0Advanced Acoustics",
+        "CSDI 8013\u00a0-\u00a0Methods in Clinical Audiology II",
+        "CSDI 8016\u00a0-\u00a0Auditory Physiology",
+        "CSDI 8017\u00a0-\u00a0Advanced Methods in Amplification II",
+        "CSDI 8019\u00a0-\u00a0Electrophysiological Measures in Audition I",
+        "CSDI 8021\u00a0-\u00a0Aural Rehabilitation",
+        "CSDI 8026\u00a0-\u00a0Electrophysiological Measures in Audition II",
+        "CSDI 8027\u00a0-\u00a0Cochlear Implants",
+        "CSDI 8028\u00a0-\u00a0Auditory Pathologies",
+        "CSDI 8029\u00a0-\u00a0Counseling in Audiology and Speech-Language Practice",
+        "CSDI 8032\u00a0-\u00a0Hearing Conservation",
+        "CSDI 8033\u00a0-\u00a0Cochlear Implant Technology and Research",
+        "CSDI 8100\u00a0-\u00a0Advanced Audiology Methods Lab",
+        "CSDI 8102\u00a0-\u00a0Vestibular Lab",
+        "CSDI 8103\u00a0-\u00a0Electrophysiological Measures in Audition I \u2013 Laboratory",
+        "CSDI 8104\u00a0-\u00a0Electrophysiological Measures in Audition II \u2013 Laboratory",
+        "CSDI 8150\u00a0-\u00a0Audiology Licensure, Certification and Related Issues"
+      ],
+      [
+        "BIOS 7021\u00a0-\u00a0Biostatistics for Health Professionals I",
+        "COHE 6600\u00a0-\u00a0Management of Health Care Operations",
+        "CSDI 6100\u00a0-\u00a0Language Disorders",
+        "CSDI 6110\u00a0-\u00a0Brain, Language, and Aphasia",
+        "CSDI 6200\u00a0-\u00a0Multicultural Communication Disorders",
+        "CSDI 8004\u00a0-\u00a0Embryology, Genetics, and the Auditory System",
+        "CSDI 8010\u00a0-\u00a0Computer and Instrumentation Applications to Speech and Hearing Science",
+        "CSDI 8012\u00a0-\u00a0Physiological Phonetics",
+        "CSDI 8014\u00a0-\u00a0Acoustic Phonetics",
+        "CSDI 8015\u00a0-\u00a0Electronic Instrumentation and Calibration in Speech and Hearing",
+        "CSDI 8018\u00a0-\u00a0Neurolinguistics",
+        "CSDI 8020\u00a0-\u00a0Advanced Seminar in Communication Sciences",
+        "CSDI 8022\u00a0-\u00a0Advanced Seminar in Audiology",
+        "CSDI 8024\u00a0-\u00a0Advanced Electrophysiological Measures",
+        "CSDI 8030\u00a0-\u00a0Doctoral Colloquium in Communication Sciences and Disorders",
+        "CSDI 8031\u00a0-\u00a0Auditory Perception of Speech",
+        "CSDI 8040\u00a0-\u00a0Audiology Capstone I",
+        "CSDI 8041\u00a0-\u00a0Audiology Capstone II",
+        "CSDI 8234\u00a0-\u00a0Audiology Clinical Rotation",
+        "CSDI 8999\u00a0-\u00a0Predoctoral Independent Study"
+      ]
+    ],
+    "https://sphs.indiana.edu/graduate/courses/index.html": [
+      [
+        "Contact",
+        "Speech Language and Hearing Sciences B.A.",
+        "Speech Language and Hearing Sciences B.S.",
+        "Minor",
+        "ASL Studies Minor",
+        "Speech-Language Pathology Certificate",
+        "Honors Program",
+        "Research Grants",
+        "Advising",
+        "Undergraduate Teaching Assistant",
+        "Speech-Language Pathology Assistant Program",
+        "Speech-Language Pathology M.A.Curriculum",
+        "Curriculum",
+        "Audiology Au.D.\nExams\nFAQs",
+        "Exams",
+        "Combined Au.D. & Ph.D.",
+        "Ph.D. Degree\nQualifying Exams\nCandidacy\nDissertation\nFAQs",
+        "Qualifying Exams",
+        "Candidacy",
+        "Dissertation",
+        "Ph.D. Double Major",
+        "Ph.D. Minor",
+        "Courses"
+      ],
+      [
+        "Speech Language and Hearing Sciences B.A.",
+        "Speech Language and Hearing Sciences B.S.",
+        "Minor",
+        "ASL Studies Minor",
+        "Speech-Language Pathology Certificate",
+        "Honors Program",
+        "Research Grants",
+        "Advising",
+        "Undergraduate Teaching Assistant",
+        "Speech-Language Pathology Assistant Program",
+        "Speech-Language Pathology M.A.Curriculum",
+        "Curriculum",
+        "Audiology Au.D.\nExams\nFAQs",
+        "Exams",
+        "Combined Au.D. & Ph.D.",
+        "Ph.D. Degree\nQualifying Exams\nCandidacy\nDissertation\nFAQs",
+        "Qualifying Exams",
+        "Candidacy",
+        "Dissertation",
+        "Ph.D. Double Major",
+        "Ph.D. Minor",
+        "Courses"
+      ],
+      [
+        "Speech Language and Hearing Sciences B.A.",
+        "Speech Language and Hearing Sciences B.S.",
+        "Minor",
+        "ASL Studies Minor",
+        "Speech-Language Pathology Certificate",
+        "Honors Program",
+        "Research Grants",
+        "Advising",
+        "Undergraduate Teaching Assistant",
+        "Speech-Language Pathology Assistant Program"
+      ],
+      [
+        "Speech-Language Pathology M.A.Curriculum",
+        "Curriculum",
+        "Audiology Au.D.\nExams\nFAQs",
+        "Exams",
+        "Combined Au.D. & Ph.D.",
+        "Ph.D. Degree\nQualifying Exams\nCandidacy\nDissertation\nFAQs",
+        "Qualifying Exams",
+        "Candidacy",
+        "Dissertation",
+        "Ph.D. Double Major",
+        "Ph.D. Minor"
+      ],
+      [
+        "Qualifying Exams",
+        "Candidacy",
+        "Dissertation"
+      ],
+      [
+        "Language Disorders in Children",
+        "Aphasia",
+        "Introduction to audiometric testing",
+        "Hearing aids",
+        "Research and Ethics in Speech, Language, and Hearing Sciences",
+        "Speech, Language and Hearing Science Seminar",
+        "Department of Speech, Language and Hearing Sciences social media channels",
+        "The College of Arts & Sciences"
+      ],
+      [
+        "Graduate courses in our department",
+        "Featured courses",
+        "Want to explore all of our classes?"
+      ]
+    ],
+    "https://www.atsu.edu/arizona-school-of-health-sciences/academics/post-professional-doctor-of-audiology": [
+      [
+        "International applicants must also review the information on admissions for international students.",
+        "A personal resume following the guidelines offered in the application packet.",
+        "Option 1 - English is your first language.",
+        "Minimum of 21 on Reading Section",
+        "Minimum of 24 on Writing Section",
+        "Minimum of 8.5 on Reading Section",
+        "Minimum of 10 on Writing Section",
+        "IELTS overall band score of 6.5"
+      ],
+      [
+        "Minimum of 21 on Reading Section",
+        "Minimum of 24 on Writing Section",
+        "Minimum of 8.5 on Reading Section",
+        "Minimum of 10 on Writing Section",
+        "IELTS overall band score of 6.5"
+      ],
+      [
+        "Clinical Audiologist",
+        "Doctor of Audiology",
+        "Audiology Director",
+        "Audiology Practice Owner",
+        "Educational Audiologist",
+        "Pediatric Audiologist",
+        "Licensed Audiologist",
+        "Clinical Director",
+        "Chief of Audiology",
+        "Audiology Faculty",
+        "Clinical Product Specialist"
+      ],
+      [
+        "PT 818: Professional Practice",
+        "PT 825: Extremity Manual Therapy",
+        "PT 826: Spinal Manual Therapy"
+      ],
+      [
+        "ATRN 7120: Evidence-Based Practice",
+        "ATRN 8160: Contemporary Issues in Athletic Training Education (co-instructor)",
+        "ATRN 8210: Qualitative Research Methodology",
+        "ATRN 9011: Analyzing the Problem",
+        "ATRN 9012: Proposing a Solution"
+      ],
+      [
+        "ATRN 6101: Advanced Clinical Practice V: Functional Movement Screening",
+        "ATRN 6201: Advanced Clinical Practice VI: Manual Therapy Techniques",
+        "ATRN 6301: Advanced Clinical Practice VII: Soft Tissue Rehabilitation Techniques",
+        "ATRN 6310: Diagnosis of Orthopaedic and Sport-Related Injuries",
+        "ATRN 6330: Foundations of Tissue Healing",
+        "ATRN 6401: Advanced Clinical Practice VIII: Professional Development",
+        "ATRN 7210: Foundations of Tissue Healing",
+        "ATRN 7410: Orthopaedic Diagnostic Evaluation",
+        "ATRN 8170: Applied Clinical Education and Mentoring (co-instructor)"
+      ],
+      [
+        "Organizational Leadership Management & Behavior",
+        "Community Assessment & Health Promotion",
+        "Clinical Practicum 1, 2, 3, and 4"
+      ],
+      [
+        "Research Methods in Healthcare",
+        "Capstone I",
+        "Capstone II",
+        "Capstone III"
+      ],
+      [
+        "Medical Writing",
+        "Quality Improvement in Healthcare",
+        "Physician Assistants in Healthcare Policy"
+      ],
+      [
+        "ATRN7330: Classification & Management TBI in Sport",
+        "ATRN7340: Assessment & Management of Complex Patients with Concussion",
+        "ATRN8140: Leadership and Professionalism in Athletic Training (co-taught with Dr. Winterstein)",
+        "ATRN9004/9014: Completing and Disseminating the Project"
+      ],
+      [
+        "ATRN 9001: Analyzing the Problem",
+        "ATRN 9002: Proposing a Solution",
+        "ATRN 9003: Implementing and Evaluating the Solution",
+        "ATRN 9004: Completing and Disseminating the Project"
+      ],
+      [
+        "Department of Audiology and Speech-Language Pathology",
+        "Course descriptions",
+        "AuD Life Moments",
+        "Related programs"
+      ],
+      [
+        "100% ONLINELEARNING",
+        "PERSONALIZEDCURRICULUM PLANS",
+        "2 AND 3-YEARTRACK OPTIONS",
+        "DIVERSE GLOBALFACULTY",
+        "GLOBAL PEER-TO-PEERCOLLABORATION",
+        "MULTIMODAL COURSE CONTENT"
+      ],
+      [
+        "2-year curriculum plan:",
+        "4 required courses/8 course options",
+        "38 credit hours",
+        "3-year curriculum plan:",
+        "8 required courses/10 course options",
+        "57 credit hours",
+        "DOWNLOAD CURRICULUM GUIDE"
+      ],
+      [
+        "AUDP 7100: Neuroscience and Neuroimaging",
+        "AUDP 8310 - Tinnitus and Hyperacusis: Theories, Evaluation and Treatment",
+        "AUDP 8400 - Global Healthcare and Audiology"
+      ],
+      [
+        "Marlene Salas-Provance, PhD, MHA, CCC-SLP",
+        "Vice Dean",
+        "READ BIO +"
+      ],
+      [
+        "Tabitha Parent-Buck, AuD",
+        "Professor and Department Chair",
+        "READ BIO +"
+      ],
+      [
+        "ericabodie@atsu.edu",
+        "Courses taught:",
+        "AUDP 8420 Otoacoustic Emissions: Scientific Foundations and Clinical Applications"
+      ],
+      [
+        "Greg Borgmeyer, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "gregoryborgmeyer@atsu.edu",
+        "Courses taught:",
+        "AUDP 8440 Occupational and Environmental Hearing Conservation"
+      ],
+      [
+        "Bettie Borton, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "bettieborton@atsu.edu",
+        "Courses taught:",
+        "AUDP 8810 Personnel Management"
+      ],
+      [
+        "Natalie Buttress, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "nataliebuttress@atsu.edu",
+        "Courses taught:",
+        "AUDP 8220 Counseling, Aural Rehabilitation and Assistive Devices"
+      ],
+      [
+        "Andrew Bzowyckyj, PharmD, BCPS, CDCES",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "andrewbzowyckyj@atsu.edu",
+        "Courses taught:",
+        "AUDP 7300 Pharmacology and Ototoxicity"
+      ],
+      [
+        "Natalie Despain, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "nataliedespain@atsu.edu",
+        "Courses taught:",
+        "AUDP 8300 Electrophysiology: Scientific Foundations and Clinical Applications"
+      ],
+      [
+        "kaelynferguson@atsu.edu",
+        "Courses taught:",
+        "AUDP 8480 Branding an Audiology Practice"
+      ],
+      [
+        "Ilia Fong, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "iliafong@atsu.edu",
+        "Courses taught:",
+        "AUDP 8500 - Pediatric Audiology: Identification through Rehabilitation"
+      ],
+      [
+        "Matt Friesen, AuD, MCISc, BSc",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "MattFriesen@atsu.edu",
+        "Courses taught:",
+        "AUDP 8200: Amplification: Assessment, Fitting and Verification"
+      ],
+      [
+        "Sara Jagger, AuD, PhD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "Krista Jung, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "kristafitzgerald@atsu.edu",
+        "Courses taught:",
+        "AUDP 7200 Pathologies of the Auditory and Vestibular System"
+      ],
+      [
+        "Kristy Knight, MS",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "kristinknight@atsu.edu",
+        "Courses taught:",
+        "AUDP 7300 Pharmacology and Ototoxicity"
+      ],
+      [
+        "Melanie Muhlestein, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "melaniemuhlestein@atsu.edu",
+        "Courses Taught:",
+        "AUDP 8600 Assessment and Management of (Central) Auditory Processing Disorders"
+      ],
+      [
+        "Mary Ormson, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "maryormson@atsu.edu",
+        "Courses taught:",
+        "AUDP 7500 Genetics and Hearing Loss\nAUDP 8400 Global Healthcare and Audiology"
+      ],
+      [
+        "Stacy Payne, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "SLPayne@atsu.edu",
+        "Courses taught:",
+        "AUDP 8210 Implantables"
+      ],
+      [
+        "Mia Pendergrass, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "Dany Pineault, AuD, Msc",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "Bettina Turnbull, AuD",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "bettinaturnbull@atsu.edu",
+        "Courses taught:",
+        "AUDP 8460 Telehealth in Audiology"
+      ],
+      [
+        "Barclay Winter, AuD, MNZAS",
+        "Adjunct Assistant Professor",
+        "READ BIO +"
+      ],
+      [
+        "barclaywinter@atsu.edu",
+        "Courses taught:",
+        "AUDP 8800 - Practice Development and Marketing"
+      ],
+      [
+        "amandazappler@atsu.edu",
+        "Courses taught:",
+        "AUDP 8700 Hearing Loss and Healthy Aging"
+      ],
+      [
+        "Teri Rorie",
+        "Program Manager",
+        "READ BIO +"
+      ],
+      [
+        "Matt Friesen, AuD\n                                            Alumnus",
+        "Jodi Greene, AuD\n                                            Alumna",
+        "Julie-Catherine Ste-Marie, M.Sc, AuD\n                                            Alumna",
+        "Natalie Buttress, AuD '21\n                                            Alumna",
+        "Signe Steers, AuD '23\n                                            Alumna"
+      ],
+      [
+        "Dr. Weber\u2019s favorite course to teach in the DMSc program is health economics.",
+        "Check out the courses taught by Dr. Weber:",
+        "See all doctorate courses >>"
+      ],
+      [
+        "ASHS). Dr. Salas",
+        "Provance received her doctorate in speech science from the University of Illinois Urbana",
+        "Provance is coauthor of the textbook Culturally Responsive Practices in Speech",
+        "Language Pathology and Orthodontics in the area of cleft lip and palate in Lima, Peru."
+      ],
+      [
+        "Vestibular System",
+        "instructor)",
+        "instructor)"
+      ],
+      [
+        "Buck, AuD, is a tenured full professor and chair of the Department of Audiology and Speech",
+        "Language Pathology at A.T. Still University",
+        "Arizona School of Health Sciences. Dr. Parent",
+        "Professional Doctor of Audiology program, AFA Balance & Hearing Institute, and Speech",
+        "Language Pathology program."
+      ],
+      [
+        "Year Program (CCE",
+        "3)AUDP 9433 Culmination Case Experience II for 3",
+        "Year Program (CCE"
+      ],
+      [
+        "Arizona School of Health Sciences (ATSU",
+        "Language",
+        "Hearing Association and is a fellow of the American Academy of Audiology."
+      ],
+      [
+        "Related Hearing Loss, Cognitive Decline and Dementia: Theories, Evaluation and Treatment",
+        "ASHS.",
+        "19 Pandemic on Mental Health and People with Hearing Problems.\u201d He also co",
+        "based stress reduction."
+      ],
+      [
+        "2020), his Advanced Studies Certificate in Vestibular Sciences and Disorders from Salus University (",
+        "2015), his Master of Clinical Science in Audiology from Western University (",
+        "2014), and his Bachelor of Science in Biology from the University of Alberta ("
+      ],
+      [
+        "Mint Hill Rd., Suite 1A Charlotte, NC 28227",
+        "still",
+        "university",
+        "health",
+        "sciences"
+      ],
+      [
+        "Professional Doctor of Audiology long",
+        "distance academic curriculum was long",
+        "building feedback along the doctoral journey.",
+        "time."
+      ],
+      [
+        "PBRN is the only practice",
+        "based research. In addition to post",
+        "professional education opportunities through the MS",
+        "AT or DAT, certified ATs are also welcome to join AT",
+        "PBRN to engage with other AT clinicians for life",
+        "long learning opportunities."
+      ],
+      [
+        "oriented or commission",
+        "related lower extremity injuries on patient",
+        "oriented outcomes such as health",
+        "related quality of life."
+      ],
+      [
+        "ASHS) and founding vice dean at ATSU\u2019s School of Osteopathic Medicine in Arizona (ATSU",
+        "SOMA), where he was also chief operating officer for ATSU",
+        "2012."
+      ],
+      [
+        "1997), chair of physician assistant studies (1997",
+        "2004), dean of the Arizona School of Health Sciences (2004",
+        "2010, 2012"
+      ],
+      [
+        "professional Doctor of Athletic Training (DAT) program, Master of Science in Athletic Training (MS",
+        "AT) program, and clinical decision",
+        "making graduate certificate."
+      ],
+      [
+        "Based Research Network. Her research has focused on the pediatric athlete with respect to sport",
+        "related concussion. Her current work is investigating the short",
+        "and long",
+        "related quality of life."
+      ],
+      [
+        "oriented and patient",
+        "centered.\u201d",
+        "Dr. Lunt"
+      ],
+      [
+        "effect diagrams, run charts, and plan",
+        "study",
+        "act cycles."
+      ]
+    ],
+    "https://www.montclair.edu/graduate/programs-of-study/audiology-aud/": [
+      [
+        "Language Pathology, of the American Speech",
+        "Language",
+        "Hearing Association."
+      ]
+    ],
+    "https://www.usf.edu/cbcs/csd/graduate/aud.aspx": [
+      [
+        "Community Scholarships",
+        "USF Scholarships",
+        "Financial Aid",
+        "Assistantship Information"
+      ],
+      [
+        "Department of Communication Sciences & Disorders",
+        "Main Navigation",
+        "Breadcrumb Navigation",
+        "Doctor of Audiology (Au.D.)"
+      ],
+      [
+        "year, full",
+        "time, 111",
+        "credit residential program offering"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association,",
+        "2071 or 301",
+        "5700."
+      ]
+    ],
+    "https://calvin.edu/academics/school-health/speech-pathology-and-audiology": [
+      [
+        "Megamenu academics card",
+        "Megamenu admissions card",
+        "Megamenu research card",
+        "Megamenu arts card",
+        "Megamenu athletics card",
+        "Megamenu life card",
+        "Frequently asked questions",
+        "Excellent outcomes",
+        "View our student handbook",
+        "Unparalleled preparation leads to booming speech pathology program at Calvin University",
+        "On-campus speech pathology clinic creates opportunities for students to make meaningful impact",
+        "How a Gap Year and Transfer Changed Everything",
+        "Jill  Bates",
+        "Soyeon  Chun",
+        "Elizabeth  Cronkrite",
+        "Erinn  Finke",
+        "Peggy  Goetz",
+        "Heather  Koole",
+        "Tiffany  Krampe",
+        "Brian M Kreisman",
+        "Elizabeth  Oommen",
+        "Lauren  Thorington",
+        "School of Health Seminar Series",
+        "School of Health Seminar Series",
+        "Get in Touch"
+      ],
+      [
+        "BA in Speech Pathology and Audiology",
+        "Certificate in Speech and Hearing Foundations",
+        "MA in Speech-Language Pathology (online)",
+        "MA in Speech-Language Pathology (Residential)",
+        "Speech Pathology and Audiology, dual degree BA-MA",
+        "Named Scholarships",
+        "Apply",
+        "Application"
+      ],
+      [
+        "BA in Speech Pathology and Audiology\n\n\n\nDelivery Mode\n\nOn Campus\n\n\n\n\n\nDegree Options\n\nMajor",
+        "MA in Speech-Language Pathology (online)\n\n\n\nDelivery Mode\n\nOnline\n\n\n\n\n\nDegree Options\n\nMA",
+        "MA in Speech-Language Pathology (Residential)\n\n\n\nDelivery Mode\n\nOn Campus\n\n\n\n\n\nDegree Options\n\nMA"
+      ],
+      [
+        "Jill  Bates\n  \n\n\nClinical Director\n 1-616-526-6715\n jill.bates@calvin.edu",
+        "Soyeon  Chun\n  \n\n\nAssistant Professor\n soyeon.chun@calvin.edu",
+        "Erinn  Finke\n  \n\n\nTeaching Fellow\n erinn.finke@calvin.edu",
+        "Peggy  Goetz\n  \n\n\nProfessor\n 1-616-526-8561\n peggy.goetz@calvin.edu",
+        "Tiffany  Krampe\n  \n\n\nClinical Assistant\n 1-616-526-6180\n tiffany.krampe@calvin.edu",
+        "Brian M Kreisman\n  \n\n\nDepartment Chair, Professor\n 1-616-526-7306\n brian.kreisman@calvin.edu",
+        "Lauren  Thorington\n  \n\n\nClinical Liaison\n 1-616-526-6270\n lauren.thorington@calvin.edu"
+      ],
+      [
+        "Clinical Director",
+        "1-616-526-6715",
+        "jill.bates@calvin.edu"
+      ],
+      [
+        "Distance Education Clinic Director",
+        "1-616-526-6260",
+        "elizabeth.cronkrite@calvin.edu"
+      ],
+      [
+        "Professor",
+        "1-616-526-8561",
+        "peggy.goetz@calvin.edu"
+      ],
+      [
+        "Graduate Program Director, Associate Professor",
+        "1-616-526-7812",
+        "heather.koole@calvin.edu"
+      ],
+      [
+        "Clinical Assistant",
+        "1-616-526-6180",
+        "tiffany.krampe@calvin.edu"
+      ],
+      [
+        "Department Chair, Professor",
+        "1-616-526-7306",
+        "brian.kreisman@calvin.edu"
+      ],
+      [
+        "Undergraduate Program Director, Professor",
+        "1-616-526-6016",
+        "beth.oommen@calvin.edu"
+      ],
+      [
+        "Clinical Liaison",
+        "1-616-526-6270",
+        "lauren.thorington@calvin.edu"
+      ]
+    ],
+    "https://www.usu.edu/degrees-majors/audiology_aud": [
+      [
+        "Hospitals",
+        "Schools",
+        "Rehabilitation centers",
+        "Nursing facilities",
+        "Home health care centers",
+        "Community centers",
+        "Private practice settings"
+      ],
+      [
+        "Complete the online application",
+        "Pay the $55 application fee",
+        "GPA: 3.0 or better for last 60 credits or 2nd bachelor's degree",
+        "Provide transcripts of all college/university credits",
+        "Provide three contacts for letters of recommendation"
+      ],
+      [
+        "REQUEST INFORMATION",
+        "ADVISING",
+        "Program Requirements\n\nLoading...",
+        "Update this page"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301"
+      ]
+    ],
+    "https://cahs.uc.edu/academic-programs/graduate-programs/audiology.html": [
+      [
+        "private practice",
+        "hospitals",
+        "physicians' offices",
+        "speech and hearing clinics",
+        "schools",
+        "educational programs",
+        "the armed services",
+        "governmental health agencies"
+      ],
+      [
+        "Why study Audiology?",
+        "Admission Requirements",
+        "Application Deadlines",
+        "UC Tools"
+      ],
+      [
+        "Language Pathology of the American Speech",
+        "Language",
+        "Hearing Association, 2200 Research Boulevard, #310, Rockville, MD 20850, 800",
+        "2071 or 301"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 17:42:04"
+}

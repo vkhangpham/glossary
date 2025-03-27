@@ -1,0 +1,1555 @@
+{
+  "level1_term": "english",
+  "url_verification_status": {
+    "https://english.uchicago.edu/graduate/teaching": false,
+    "https://english.asu.edu/academics/areas-of-study/english-education": true,
+    "https://english.jhu.edu/": false,
+    "https://english.osu.edu/graduate/ma-phd": false,
+    "https://english.as.virginia.edu/graduate-program": false,
+    "https://english.arizona.edu/maphd-english": false,
+    "https://english.uchicago.edu/graduate/overview": false,
+    "https://english.indiana.edu/undergraduate/areas-of-study/index.html": true,
+    "https://english.ucla.edu/": false,
+    "https://www.fau.edu/artsandletters/english/": false,
+    "https://www.isu.edu/english/graduate-programs/phd-in-english-and-the-teaching-of-english/": false,
+    "https://english.washington.edu/": true,
+    "https://english.rice.edu/graduate-program-overview": false,
+    "https://www.memphis.edu/english/graduate/gradcourses.php": true,
+    "https://english.fas.harvard.edu/graduate": false,
+    "https://english.princeton.edu/graduate/program": true,
+    "https://english.la.psu.edu/graduate/areas-of-specialization/": true,
+    "https://humanities.uoregon.edu/english": true,
+    "https://english.asu.edu/degree/graduate/english-education-ma": false,
+    "https://english.usu.edu/": true,
+    "https://english.fsu.edu/": true,
+    "https://www.english.uga.edu/": true,
+    "https://www.holycross.edu/academics/program/english": true,
+    "https://english.wustl.edu/": false,
+    "https://english.arizona.edu/": false,
+    "https://www.uidaho.edu/class/english": true,
+    "https://www.usd.edu/Academics/Colleges-and-Schools/college-of-arts-sciences/english": true,
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/english": false,
+    "https://english.wsu.edu/undergraduate-studies/english-teaching/": true,
+    "https://www.depts.ttu.edu/english/": true,
+    "https://english.ecu.edu/": false,
+    "https://www.artsci.uc.edu/departments/english.html": false,
+    "https://english.cornell.edu/phd-program-english-language-and-literature": false,
+    "https://cssh.northeastern.edu/english/": true,
+    "https://www.niu.edu/english/academics/graduate/index.shtml": true,
+    "https://liberalarts.temple.edu/academics/departments-and-programs/english/graduate": false
+  },
+  "verified_lists_per_url": {
+    "https://english.uchicago.edu/graduate/teaching": 0,
+    "https://english.asu.edu/academics/areas-of-study/english-education": 3,
+    "https://english.jhu.edu/": 0,
+    "https://english.osu.edu/graduate/ma-phd": 0,
+    "https://english.as.virginia.edu/graduate-program": 0,
+    "https://english.arizona.edu/maphd-english": 0,
+    "https://english.uchicago.edu/graduate/overview": 0,
+    "https://english.indiana.edu/undergraduate/areas-of-study/index.html": 1,
+    "https://english.ucla.edu/": 0,
+    "https://www.fau.edu/artsandletters/english/": 0,
+    "https://www.isu.edu/english/graduate-programs/phd-in-english-and-the-teaching-of-english/": 0,
+    "https://english.washington.edu/": 2,
+    "https://english.rice.edu/graduate-program-overview": 0,
+    "https://www.memphis.edu/english/graduate/gradcourses.php": 1,
+    "https://english.fas.harvard.edu/graduate": 0,
+    "https://english.princeton.edu/graduate/program": 2,
+    "https://english.la.psu.edu/graduate/areas-of-specialization/": 1,
+    "https://humanities.uoregon.edu/english": 1,
+    "https://english.asu.edu/degree/graduate/english-education-ma": 0,
+    "https://english.usu.edu/": 1,
+    "https://english.fsu.edu/": 1,
+    "https://www.english.uga.edu/": 3,
+    "https://www.holycross.edu/academics/program/english": 2,
+    "https://english.wustl.edu/": 0,
+    "https://english.arizona.edu/": 0,
+    "https://www.uidaho.edu/class/english": 1,
+    "https://www.usd.edu/Academics/Colleges-and-Schools/college-of-arts-sciences/english": 2,
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/english": 0,
+    "https://english.wsu.edu/undergraduate-studies/english-teaching/": 1,
+    "https://www.depts.ttu.edu/english/": 3,
+    "https://english.ecu.edu/": 0,
+    "https://www.artsci.uc.edu/departments/english.html": 0,
+    "https://english.cornell.edu/phd-program-english-language-and-literature": 0,
+    "https://cssh.northeastern.edu/english/": 2,
+    "https://www.niu.edu/english/academics/graduate/index.shtml": 2,
+    "https://liberalarts.temple.edu/academics/departments-and-programs/english/graduate": 0
+  },
+  "total_lists_per_url": {
+    "https://english.uchicago.edu/graduate/teaching": 3,
+    "https://english.asu.edu/academics/areas-of-study/english-education": 4,
+    "https://english.jhu.edu/": 2,
+    "https://english.osu.edu/graduate/ma-phd": 11,
+    "https://english.as.virginia.edu/graduate-program": 1,
+    "https://english.arizona.edu/maphd-english": 1,
+    "https://english.uchicago.edu/graduate/overview": 1,
+    "https://english.indiana.edu/undergraduate/areas-of-study/index.html": 8,
+    "https://english.ucla.edu/": 1,
+    "https://www.fau.edu/artsandletters/english/": 2,
+    "https://www.isu.edu/english/graduate-programs/phd-in-english-and-the-teaching-of-english/": 1,
+    "https://english.washington.edu/": 4,
+    "https://english.rice.edu/graduate-program-overview": 2,
+    "https://www.memphis.edu/english/graduate/gradcourses.php": 7,
+    "https://english.fas.harvard.edu/graduate": 1,
+    "https://english.princeton.edu/graduate/program": 2,
+    "https://english.la.psu.edu/graduate/areas-of-specialization/": 4,
+    "https://humanities.uoregon.edu/english": 8,
+    "https://english.asu.edu/degree/graduate/english-education-ma": 8,
+    "https://english.usu.edu/": 3,
+    "https://english.fsu.edu/": 1,
+    "https://www.english.uga.edu/": 6,
+    "https://www.holycross.edu/academics/program/english": 5,
+    "https://english.wustl.edu/": 1,
+    "https://english.arizona.edu/": 2,
+    "https://www.uidaho.edu/class/english": 8,
+    "https://www.usd.edu/Academics/Colleges-and-Schools/college-of-arts-sciences/english": 6,
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/english": 7,
+    "https://english.wsu.edu/undergraduate-studies/english-teaching/": 7,
+    "https://www.depts.ttu.edu/english/": 4,
+    "https://english.ecu.edu/": 1,
+    "https://www.artsci.uc.edu/departments/english.html": 1,
+    "https://english.cornell.edu/phd-program-english-language-and-literature": 1,
+    "https://cssh.northeastern.edu/english/": 4,
+    "https://www.niu.edu/english/academics/graduate/index.shtml": 3,
+    "https://liberalarts.temple.edu/academics/departments-and-programs/english/graduate": 11
+  },
+  "verified_lists_ids": {
+    "https://english.uchicago.edu/graduate/teaching": [],
+    "https://english.asu.edu/academics/areas-of-study/english-education": [
+      0,
+      1,
+      2
+    ],
+    "https://english.jhu.edu/": [],
+    "https://english.osu.edu/graduate/ma-phd": [],
+    "https://english.as.virginia.edu/graduate-program": [],
+    "https://english.arizona.edu/maphd-english": [],
+    "https://english.uchicago.edu/graduate/overview": [],
+    "https://english.indiana.edu/undergraduate/areas-of-study/index.html": [
+      7
+    ],
+    "https://english.ucla.edu/": [],
+    "https://www.fau.edu/artsandletters/english/": [],
+    "https://www.isu.edu/english/graduate-programs/phd-in-english-and-the-teaching-of-english/": [],
+    "https://english.washington.edu/": [
+      0,
+      1
+    ],
+    "https://english.rice.edu/graduate-program-overview": [],
+    "https://www.memphis.edu/english/graduate/gradcourses.php": [
+      0
+    ],
+    "https://english.fas.harvard.edu/graduate": [],
+    "https://english.princeton.edu/graduate/program": [
+      0,
+      1
+    ],
+    "https://english.la.psu.edu/graduate/areas-of-specialization/": [
+      0
+    ],
+    "https://humanities.uoregon.edu/english": [
+      0
+    ],
+    "https://english.asu.edu/degree/graduate/english-education-ma": [],
+    "https://english.usu.edu/": [
+      0
+    ],
+    "https://english.fsu.edu/": [
+      0
+    ],
+    "https://www.english.uga.edu/": [
+      2,
+      3,
+      4
+    ],
+    "https://www.holycross.edu/academics/program/english": [
+      0,
+      2
+    ],
+    "https://english.wustl.edu/": [],
+    "https://english.arizona.edu/": [],
+    "https://www.uidaho.edu/class/english": [
+      2
+    ],
+    "https://www.usd.edu/Academics/Colleges-and-Schools/college-of-arts-sciences/english": [
+      0,
+      4
+    ],
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/english": [],
+    "https://english.wsu.edu/undergraduate-studies/english-teaching/": [
+      4
+    ],
+    "https://www.depts.ttu.edu/english/": [
+      1,
+      2,
+      3
+    ],
+    "https://english.ecu.edu/": [],
+    "https://www.artsci.uc.edu/departments/english.html": [],
+    "https://english.cornell.edu/phd-program-english-language-and-literature": [],
+    "https://cssh.northeastern.edu/english/": [
+      1,
+      2
+    ],
+    "https://www.niu.edu/english/academics/graduate/index.shtml": [
+      0,
+      1
+    ],
+    "https://liberalarts.temple.edu/academics/departments-and-programs/english/graduate": []
+  },
+  "num_urls": 40,
+  "num_lists": 142,
+  "url_to_lists": {
+    "https://english.uchicago.edu/graduate/teaching": [
+      [
+        "An academic year stipend (and teaching remuneration)",
+        "Full tuition aid",
+        "Health insurance premium aid"
+      ],
+      [
+        "Secondary Menu",
+        "Main navigation",
+        "Secondary Menu",
+        "Teaching Opportunities in the Curriculum",
+        "Extradepartmental Teaching Opportunities",
+        "Teaching Resources"
+      ],
+      [
+        "Course Assistantships",
+        "Freestanding Lecture Courses",
+        "BA Preceptors",
+        "London Program",
+        "MAPH Preceptors",
+        "Writing Program/Common Core"
+      ]
+    ],
+    "https://english.asu.edu/academics/areas-of-study/english-education": [
+      [
+        "Academics",
+        "Areas of Study",
+        "English Education"
+      ],
+      [
+        "Degree Programs",
+        "Cross-Area Programs",
+        "Secondary Writing Studies",
+        "Young Adult Literature",
+        "For K-12 Teachers",
+        "For K-12 Youth",
+        "Academics"
+      ],
+      [
+        "English (Secondary Education) (BA)",
+        "English Education, MA",
+        "English (English Education), PhD",
+        "English (Narrative Studies), BA"
+      ],
+      [
+        "Central Arizona Writing Project",
+        "The Arizona English Teachers\u2019 Association (AETA)",
+        "YAWP Young Adult Writing Program",
+        "D\u00eda De Los Ni\u00f1os / D\u00eda De Los Libros"
+      ]
+    ],
+    "https://english.jhu.edu/": [
+      [
+        "Degrees Offered\nBA, PhD",
+        "Major\nEnglish",
+        "Minor\nEnglish"
+      ],
+      [
+        "Graduate",
+        "Undergraduate",
+        "Faculty",
+        "ELH Speaker Series \u2013 Walt Hunter",
+        "Professor Sharon Achinstein honored by the Milton Society of America",
+        "In Memoriam: Emeritus Professor Larzer Ziff",
+        "In Memoriam: Emeritus Professor Ronald Paulson",
+        "Joy of the Worm: Suicide and Pleasure in Early Modern English Literature",
+        "Heteronomy",
+        "The Poetry of the Americas: From Good Neighbors to Countercultures",
+        "Strangers in the Land: Blacks, Jews, Post-Holocaust America",
+        "Address: Department of English"
+      ]
+    ],
+    "https://english.osu.edu/graduate/ma-phd": [
+      [
+        "English 6700.01: Introduction to Graduate Study in English (three\u00a0credits)",
+        "A course in critical theory (three\u00a0credits)",
+        "Two courses to fulfill the breadth requirement (six\u00a0credits)",
+        "English 6781: Introduction to the Teaching of First-Year English (three\u00a0credits)",
+        "English 8903: Teaching College English (three\u00a0credits, repeatable)",
+        "English 6998: Research in English: Portfolio Preparation (variable credit hours)"
+      ],
+      [
+        "English 6700.01: Introduction to Graduate Study in English (three\u00a0credits)",
+        "A course in critical theory (three\u00a0credits)",
+        "Two courses to fulfill the breadth requirement (six\u00a0credits)"
+      ],
+      [
+        "English 6700: Introduction to Graduate Study in English (three\u00a0credits)",
+        "Critical theory requirement (three\u00a0credits)",
+        "Breadth requirement #1 (three\u00a0credits)",
+        "Breadth requirement #2 (three\u00a0credits)",
+        "English 6781: Introduction to the Teaching of First-Year English (three\u00a0credits)",
+        "English 8903: Teaching College English (three\u00a0credits, repeatable)",
+        "English 8996: Research in English: Candidacy Exam (variable credit hours)",
+        "English 8999: Research in English: Dissertation (variable credit hours)"
+      ],
+      [
+        "English 6700: Introduction to Graduate Study in English (three\u00a0credits)",
+        "Critical theory requirement (three\u00a0credits)",
+        "Breadth requirement #1 (three\u00a0credits)",
+        "Breadth requirement #2 (three\u00a0credits)"
+      ],
+      [
+        "Anthologies of primary and secondary works in your field.",
+        "Special issues of major journals in your field that are focused on important or emerging trends.",
+        "Conference calls for papers, which often identify major topics in your field."
+      ],
+      [
+        "State the problem that the candidate proposes to solve;",
+        "Explain the significance of the project and its relation to current scholarship in the field;",
+        "Describe the candidate's current knowledge of the subject;",
+        "Indicate the direction the candidate's\u00a0investigation will take;",
+        "Reflect the candidate's familiarity with relevant bibliographical materials and critical methods."
+      ],
+      [
+        "Ohio State navigation bar",
+        "PROGRAM REQUIREMENTS",
+        "Coursework",
+        "Critical theory requirement",
+        "Breadth requirement",
+        "Graduate workshop requirement",
+        "S/U grading guidelines",
+        "Independent study",
+        "Language Proficiency Requirements",
+        "Preparing for the Advising Meeting",
+        "Final Program of Study",
+        "Candidacy Exam Information",
+        "Dissertation",
+        "APPLICATION INFORMATION"
+      ],
+      [
+        "Critical theory requirement",
+        "Breadth requirement",
+        "Graduate workshop requirement",
+        "S/U grading guidelines",
+        "Independent study",
+        "Method #1: Multimedia computer-adaptive placement test",
+        "Method #2: Department-administered placement test",
+        "Method #3: Year of university-level language classes",
+        "Method #4: Graduate reading course",
+        "Method #5: Translation test",
+        "Method #6: Oral proficiency test",
+        "Candidacy exam",
+        "Candidacy Exam Format",
+        "Dissertation prospectus process",
+        "Dissertation prospectus content",
+        "Dissertation committee",
+        "Prospectus conference",
+        "Finalizing the dissertation manuscript",
+        "Final approval",
+        "General Information",
+        "Final Oral Exam Format",
+        "Time limits for candidacy",
+        "Application materials",
+        "English admissions process",
+        "Writing the personal statement",
+        "Selecting a writing sample"
+      ],
+      [
+        "Advising meeting",
+        "Portfolio project",
+        "Preliminary Program of Study"
+      ],
+      [
+        "General candidacy exam information",
+        "Candidacy examination committee",
+        "Candidacy exam assessment",
+        "Time limits for candidacy"
+      ],
+      [
+        "Dissertation prospectus",
+        "Dissertation",
+        "Final oral exam (dissertation defense)"
+      ]
+    ],
+    "https://english.as.virginia.edu/graduate-program": [
+      [
+        "Main menu",
+        "The Graduate Program",
+        "Main menu",
+        "Legal Links"
+      ]
+    ],
+    "https://english.arizona.edu/maphd-english": [
+      [
+        "Main navigation",
+        "Vision Statement",
+        "Interdisciplinary Environment",
+        "Graduate Student Funding",
+        "Graduate",
+        "Footer - Main",
+        "Information For",
+        "Topics",
+        "Resources",
+        "Connect"
+      ]
+    ],
+    "https://english.uchicago.edu/graduate/overview": [
+      [
+        "Secondary Menu",
+        "Main navigation",
+        "Secondary Menu",
+        "Year One Coursework",
+        "Year Two Coursework",
+        "Year Three Coursework",
+        "Year Four",
+        "Year Five",
+        "Year Six and beyond"
+      ]
+    ],
+    "https://english.indiana.edu/undergraduate/areas-of-study/index.html": [
+      [
+        "Twitter",
+        "Facebook",
+        "Instagram"
+      ],
+      [
+        "Contact",
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration",
+        "Bachelor of Arts & Master of Arts",
+        "Interdepartmental Major in AAADS & English",
+        "Minors\nMinor, English\nMinor, Creative Writing\nMinor, Communication and Public Advocacy",
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy",
+        "Other Programs & Certificates",
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings",
+        "Advising",
+        "Funding Opportunities",
+        "Honors Program",
+        "Internships",
+        "Graduate"
+      ],
+      [
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration",
+        "Bachelor of Arts & Master of Arts",
+        "Interdepartmental Major in AAADS & English",
+        "Minors\nMinor, English\nMinor, Creative Writing\nMinor, Communication and Public Advocacy",
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy",
+        "Other Programs & Certificates",
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings",
+        "Advising",
+        "Funding Opportunities",
+        "Honors Program",
+        "Internships",
+        "Graduate"
+      ],
+      [
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration",
+        "Bachelor of Arts & Master of Arts",
+        "Interdepartmental Major in AAADS & English",
+        "Minors\nMinor, English\nMinor, Creative Writing\nMinor, Communication and Public Advocacy",
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy",
+        "Other Programs & Certificates",
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings",
+        "Advising",
+        "Funding Opportunities",
+        "Honors Program",
+        "Internships"
+      ],
+      [
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration"
+      ],
+      [
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy"
+      ],
+      [
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings"
+      ],
+      [
+        "Choose the path that is right for you",
+        "Literature + Language",
+        "Creative Writing",
+        "Rhetoric, Writing, + Communication",
+        "Department of English social media channels",
+        "The College of Arts & Sciences"
+      ]
+    ],
+    "https://english.ucla.edu/": [
+      [
+        "image",
+        "image",
+        "image",
+        "image"
+      ]
+    ],
+    "https://www.fau.edu/artsandletters/english/": [
+      [
+        "03/21/2025",
+        "Summer and Fall 2025 Course Descriptions Available",
+        "Check out the extended descriptions for Summer and Fall 2025 upper-level English major courses."
+      ],
+      [
+        "03/17/2025",
+        "MFA Alum David Eileen publishes Amphigory in The Atlantic",
+        "Congratulations to MFA Alum David Eileen on publication of a poem, \"Amphigory,\" in The Atlantic."
+      ]
+    ],
+    "https://www.isu.edu/english/graduate-programs/phd-in-english-and-the-teaching-of-english/": [
+      [
+        "Curriculum, PhD in English and the Teaching of English",
+        "Recent PhD Dissertations",
+        "Job Opportunities for Doctoral Graduates"
+      ]
+    ],
+    "https://english.washington.edu/": [
+      [
+        "People",
+        "Our Programs",
+        "Courses",
+        "Giving"
+      ],
+      [
+        "Undergraduate",
+        "Writing",
+        "Study Abroad",
+        "Graduate",
+        "Teaching Endorsement",
+        "Courses"
+      ],
+      [
+        "UW Press celebrates Shawn Wong's Aiiieeeee! and a 50-year legacy of Asian American Literature",
+        "Cristina S\u00e1nchez-Mart\u00edn and Taiko Aoki-Marcial Lead Learning Through Storytelling Project",
+        "E.J. Koh Featured in UW Magazine",
+        "Remembering Professor Emeritus Colleen J. McElroy"
+      ],
+      [
+        "Cristina S\u00e1nchez-Mart\u00edn and Taiko Aoki-Marcial Lead Learning Through Storytelling ProjectMay 3, 2024",
+        "E.J. Koh Featured in UW MagazineApril 7, 2024",
+        "Remembering Professor Emeritus Colleen J. McElroyJanuary 2, 2024"
+      ]
+    ],
+    "https://english.rice.edu/graduate-program-overview": [
+      [
+        "Year 1",
+        "Year 2",
+        "Year 3",
+        "Year 4",
+        "Year 5+"
+      ],
+      [
+        "Year 1",
+        "Year 2",
+        "Year 3",
+        "Year 4",
+        "Year 5",
+        "Year 6"
+      ]
+    ],
+    "https://www.memphis.edu/english/graduate/gradcourses.php": [
+      [
+        "Applied Linguistics/TESOL Courses",
+        "Creative Writing Courses",
+        "Literary & Cultural Studies Courses",
+        "Writing, Rhetoric, & Technical Communication Courses"
+      ],
+      [
+        "Full Term Summer 2025:",
+        "Applied Linguistics:",
+        "Creative Writing:",
+        "Literary & Cultural Studies:",
+        "Writing, Rhetoric, & Technical Communication:"
+      ],
+      [
+        "Fiction Workshop | Dr. Mark Mayer | Thursdays 5:30",
+        "8:30pmIn a creative writing workshop, a community of other minds helps us to interrogate",
+        "peers with their own instincts for language, their own sensitivities to experience,",
+        "and solidarity, a shared commitment to putting this difference in service of the author\u2019s vision.",
+        "level rigor, we will invest ourselves in this process, attending not",
+        "plot momentum, emotional interrogation, character revelation,",
+        "but also to the subtle work of discerning our own textual reflexes"
+      ],
+      [
+        "Studies in American Literature: American Literature and its Publics |",
+        "4:05This course has two goals: 1) to explore how a select group of authors in the U.S.",
+        "based,",
+        "modal assignments that contribute to on",
+        "going public humanities projects. No"
+      ],
+      [
+        "Shakespeare and the Literary Imagination | Dr. Joshua Phillips | Thursdays",
+        "shirts and memes. This class will help",
+        "1800s class."
+      ],
+      [
+        "Major Authors in African American Literature: The Post",
+        "Soul Moment and",
+        "Civil Rights America, we will chronicle an impressive",
+        "soul\u201d",
+        "hop music,"
+      ],
+      [
+        "Academic Genres & Scholarly Publishing | Dr. Chloe Robertson | Wednesdays",
+        "8:30pmThis course demystifies the various genres found in academia that contribute to individual",
+        "appropriate documents."
+      ]
+    ],
+    "https://english.fas.harvard.edu/graduate": [
+      [
+        "Graduate Admissions",
+        "Program Description",
+        "Teaching Fellows",
+        "Fellowships",
+        "Resources for Graduate Students",
+        "Medieval",
+        "Renaissance",
+        "Long 18th Century & Romanticism",
+        "Long 20th Century",
+        "Theater and Performance",
+        "Race and Ethnicity",
+        "Graduate Prizes",
+        "Job Placement"
+      ]
+    ],
+    "https://english.princeton.edu/graduate/program": [
+      [
+        "Medieval and Renaissance",
+        "18th Century and 19th Century",
+        "Modern and Contemporary",
+        "Theory",
+        "Race, Ethnicity, and Postcoloniality",
+        "Gender and Sexuality"
+      ],
+      [
+        "Main Menu",
+        "Search",
+        "Section Menu",
+        "Ph.D. Program in English at Princeton",
+        "Footer"
+      ]
+    ],
+    "https://english.la.psu.edu/graduate/areas-of-specialization/": [
+      [
+        "18th-century British Literature",
+        "19th-century British Literature",
+        "African American Literature and Language",
+        "American Literature After 1900",
+        "American Literature Before 1900",
+        "Book History and Textual Studies",
+        "Contemporary Literature",
+        "Creative Writing"
+      ],
+      [
+        "Media and Digital Studies",
+        "Medieval Literature",
+        "Modernist Studies",
+        "Race and Ethnicity Studies",
+        "Renaissance",
+        "Rhetoric and Composition",
+        "Theory and Cultural Studies",
+        "Visual Culture"
+      ],
+      [
+        "Asian American Studies and Global Asias",
+        "Bioethics",
+        "Disability Studies and Disability Justice",
+        "Environmental and Blue Humanities"
+      ],
+      [
+        "Poetry and Poetics",
+        "Postcolonial, Decolonial, and Caribbean Studies",
+        "Science, Technology, and Health Humanities",
+        "Speculative Fiction and Science Fiction"
+      ]
+    ],
+    "https://humanities.uoregon.edu/english": [
+      [
+        "Search this site",
+        "Humanities",
+        "Department Navigation",
+        "What you can do with a degree in English",
+        "How English Opens the Door to Your Career",
+        "Our Degree Programs",
+        "Composition Program in the Department of English",
+        "Learn from Experts in the Field",
+        "Get Real-world Experience",
+        "Scholarships and Funding",
+        "Academic Support",
+        "Give to the English Department",
+        "What We Do With Your Gifts",
+        "English News and Events"
+      ],
+      [
+        "Undergraduate Degrees",
+        "Bachelor of Arts in English",
+        "Minor in English",
+        "Minor in Comics and Cartoon Studies",
+        "Minor in Digital Humanities",
+        "Minor in Disability Studies",
+        "Minor in Writing, Public Speaking, and Critical Reasoning"
+      ],
+      [
+        "Graduate Degrees",
+        "Master of Arts in English",
+        "PhD in Literature",
+        "Politics, Culture, and Identity Graduate Specialization"
+      ],
+      [
+        "Department of History Coffee Hour",
+        "Apr 1",
+        "McKenzie Hall"
+      ],
+      [
+        "Department of History Coffee Hour",
+        "Apr 8",
+        "McKenzie Hall"
+      ],
+      [
+        "Creative Writing Program Presents: Screening of RULE BREAKERS and Q&A",
+        "Apr 8",
+        "Erb Memorial Union (EMU)"
+      ],
+      [
+        "rising demand among employers under age 40 was for culturally literate, community",
+        "oriented, and civic",
+        "minded new colleagues",
+        "values that align strongly with our work in the English Department."
+      ],
+      [
+        "and upper",
+        "winning teachers comprised of both graduate employees (GEs) who have completed an intensive year",
+        "long training and experienced instructors from writing",
+        "related fields."
+      ]
+    ],
+    "https://english.asu.edu/degree/graduate/english-education-ma": [
+      [
+        "graduate admission application and application fee",
+        "official transcripts",
+        "statement of purpose",
+        "resume or curriculum vitae",
+        "two letters of recommendation",
+        "proof of English proficiency"
+      ],
+      [
+        "Accelerated Degree Option (4 + 1)",
+        "Degree Requirements",
+        "Admission Requirements",
+        "Flexible Degree Options",
+        "BA - English (Secondary Education)",
+        "Next Steps to attend ASU",
+        "Application Deadlines",
+        "Learning Outcomes",
+        "Career Opportunities",
+        "Global Opportunities"
+      ],
+      [
+        "Accelerated program options",
+        "BA - English (Secondary Education)",
+        "Global Experience"
+      ],
+      [
+        "Session\nModality\nDeadline\nType",
+        "Session A/C\nIn Person\nJune 15th\nFinal",
+        "Session A/C\nIn Person\nJanuary 15th\nPriority"
+      ],
+      [
+        "Session",
+        "Modality",
+        "Deadline"
+      ],
+      [
+        "Session A/C",
+        "In Person",
+        "June 15th",
+        "Final"
+      ],
+      [
+        "Session A/C",
+        "In Person",
+        "January 15th",
+        "Priority"
+      ],
+      [
+        "considered, one",
+        "to two",
+        "level academic programs."
+      ]
+    ],
+    "https://english.usu.edu/": [
+      [
+        "Search Utah State University:",
+        "Magic and Astrology: Shakespeare\u2019s Interconnected World",
+        "Alum AJ Romriell Reads from Wolf Act",
+        "Faculty Reading with Shanan Ballam and C.R. Grimmer",
+        "USU Creative Writing and Art Contest Announces 2025 Winners",
+        "English Programs",
+        "American Studies",
+        "Creative Writing",
+        "English",
+        "English Teaching",
+        "Literature",
+        "Technical Communication and Rhetoric",
+        "Folklore",
+        "Creative Writing (MA/MS in English)",
+        "Literature, Culture, and Composition (MA/MS in English)",
+        "MA/MS in Folklore Studies",
+        "Master of Technical Communication",
+        "Archiving and Public Programming",
+        "Digital Writing and Publication - Certificate",
+        "Composition Program",
+        "PhD in Technical Communication and Rhetoric",
+        "Program Highlight",
+        "Connect with us!",
+        "Get Involved",
+        "Digital Folklore Project",
+        "Helicon West",
+        "Internships",
+        "Sigma Tau Delta",
+        "Sink Hollow",
+        "The Bull Pen",
+        "The English Club",
+        "The Folklore Club",
+        "Connect"
+      ],
+      [
+        "Get Involved",
+        "CHaSS Events",
+        "Inclusive Excellence",
+        "Spring 2025 Course Descriptions"
+      ],
+      [
+        "thinking skills that prepare you for a career that matters.",
+        "profit institutions.",
+        "Certificate"
+      ]
+    ],
+    "https://english.fsu.edu/": [
+      [
+        "Meegan Kennedy Wins NEH Fellowship",
+        "Jimmy Kimbrell Wins NEA Fellowship",
+        "Welcome to Florida State's Department of English.",
+        "Programs",
+        "Creative Writing",
+        "Literature, Media, and Culture",
+        "Rhetoric and Composition",
+        "Editing, Writing, and Media"
+      ]
+    ],
+    "https://www.english.uga.edu/": [
+      [
+        "Mini menu",
+        "Main Menu",
+        "Slideshow",
+        "English at UGA",
+        "English at UGA",
+        "English at UGA",
+        "inclusive excellence",
+        "Featured Content",
+        "Latest News",
+        "Upcoming Events",
+        "Support English at UGA",
+        "Study abroad with us",
+        "Our Graduate Program",
+        "The Creative Writing Program"
+      ],
+      [
+        "Undergraduates: Submit your poetry for the 2025 Virginia Rucker Walter Poetry Prize!",
+        "After the World",
+        "Channette Romero",
+        "2024-2025 Blakely Poetry Competition Winner: Sihle Ntuli",
+        "Professor Chigozie Obioma named one of the 100 most  influential Africans by New African Magazine",
+        "Congratulations to the winner of the 2024-2025 SPARK Fellowship: Cooper Sunderland!",
+        "March 27 |  1\n - 2pm\nLunch and Discussion: The Unwritten Enlightenment with Dr. Nathan Gorelick",
+        "Lunch and Discussion: The Unwritten Enlightenment with Dr. Nathan Gorelick"
+      ],
+      [
+        "Literature and Cultural Studies",
+        "Writing Programs",
+        "Creative Writing"
+      ],
+      [
+        "Literature and Cultural Studies",
+        "Writing Programs",
+        "Creative Writing"
+      ],
+      [
+        "Literature and Cultural Studies",
+        "Writing Programs",
+        "Creative Writing"
+      ],
+      [
+        "Upcoming Event\nAfter the World",
+        "March 26 |  All day",
+        "Willson Center for Humanities and Arts"
+      ]
+    ],
+    "https://www.holycross.edu/academics/program/english": [
+      [
+        "Courses organized by literary theme, genre, author and historical period",
+        "Courses in poetics, literary theory and critical theory",
+        "Creative writing courses",
+        "Academic and digital writing courses"
+      ],
+      [
+        "Poetry and Poetics",
+        "Introduction to Creative Writing: Narrative",
+        "Masterpieces of American Literature",
+        "Introduction to Screenwriting",
+        "Intermediate Fiction Workshop",
+        "Thoreau: Then and Now"
+      ],
+      [
+        "You are here:",
+        "Areas of Study",
+        "Requirements",
+        "Sample Courses",
+        "Meet Your Department Chair",
+        "Opportunities",
+        "Outcomes",
+        "Related News",
+        "Social",
+        "Footer",
+        "Social",
+        "Site Menu",
+        "Secondary Menu",
+        "Main Menu",
+        "Secondary Menu",
+        "Info For Menu"
+      ],
+      [
+        "Introductory Course",
+        "Intermediate Courses",
+        "Advanced Courses",
+        "Advanced Placement",
+        "Creative Writing Program",
+        "Honors Program",
+        "Lectures and Social Events",
+        "Teacher Education Program",
+        "Sigma Tau Delta",
+        "Inside Sally Rooney and the Golden Era of Irish Women Writers",
+        "How Holy Cross Discovered Its New Superpower",
+        "Keats, Wordsworth, Byron ... and Swift?"
+      ],
+      [
+        "1800: \u00a02 courses, each from a different period among Medieval, Renaissance, and 18th",
+        "century historical periods.GROUP B",
+        "19th century: \u00a01 course from the 19th",
+        "century historical period, British or American.GROUP C",
+        "e.g. with respect to gender, ethnicity, or class.GROUP D"
+      ]
+    ],
+    "https://english.wustl.edu/": [
+      [
+        "Undergraduate Program",
+        "Graduate Studies",
+        "Our Community",
+        "Department Highlights",
+        "Concentrations in Creative Writing and Publishing",
+        "Recent News"
+      ]
+    ],
+    "https://english.arizona.edu/": [
+      [
+        "B.A. in Professional and Technical Writing",
+        "B.A. Creative Writing",
+        "B.A. English",
+        "MFA Creative Writing",
+        "M.A./Ph.D. English",
+        "M.A. Teaching English as a Second Language",
+        "M.A./Ph.D. Rhetoric, Composition, and the Teaching of English"
+      ],
+      [
+        "Professor Bojan Louis awarded 2025 United States Artist Fellowship",
+        "MFA Alumnus Awarded 2025 United States Artists Fellowship",
+        "English Shout Out to Dr. Shelley Rodrigo for her work as President of NCTE!"
+      ]
+    ],
+    "https://www.uidaho.edu/class/english": [
+      [
+        "Get Undergrad Degree",
+        "Get Graduate Degree",
+        "Make a Gift"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "LinkedIn",
+        "Twitter"
+      ],
+      [
+        "Creative Writing",
+        "Linguistics",
+        "Literature",
+        "Professional Writing"
+      ],
+      [
+        "Confluence Lab",
+        "First-Year Writing at U of I",
+        "Fugue Journal",
+        "Semester in the Wild",
+        "Writing Center"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "LinkedIn",
+        "Twitter"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "LinkedIn",
+        "Twitter"
+      ],
+      [
+        "English Department",
+        "M.F.A. in Creative Writing",
+        "English B.A./B.S.",
+        "Literary treasure hunting",
+        "Keeping watch",
+        "M.A. in English",
+        "First-Year Writing",
+        "Explore a Degree in English",
+        "Writing Center",
+        "Undergraduate Degrees",
+        "Graduate Degrees",
+        "Other Department Services",
+        "Introducing: brink Magazine",
+        "English Department",
+        "English Department"
+      ],
+      [
+        "Virtual Tour",
+        "Explore",
+        "More Resources",
+        "Take Action",
+        "Title IX",
+        "Get Involved",
+        "Resources",
+        "Top Links",
+        "Upcoming Events",
+        "Stay Connected",
+        "Resources",
+        "More Resources",
+        "Benefits and Services",
+        "Get Involved",
+        "Stay Connected",
+        "SlateConnect",
+        "Common Tools",
+        "Resources",
+        "Services",
+        "Topic Areas",
+        "Resources",
+        "Moscow",
+        "Moscow",
+        "Moscow"
+      ]
+    ],
+    "https://www.usd.edu/Academics/Colleges-and-Schools/college-of-arts-sciences/english": [
+      [
+        "Academics",
+        "Colleges & Schools",
+        "College of Arts & Sciences",
+        "Department of English"
+      ],
+      [
+        "Join our community of writers, thinkers and scholars.",
+        "Darlene Farabee",
+        "Carla Barger",
+        "duncan barlow",
+        "Lara Carlson McGoey",
+        "Prentiss Clark",
+        "Pete Dexter",
+        "John Dudley",
+        "Kenneth Green",
+        "Benjamin Hagen",
+        "Kevin Magee",
+        "Cheyenne Marco",
+        "Leah McCormack",
+        "Martin McGoey",
+        "Joseph Raiche",
+        "Lisa Ann Robertson",
+        "Michelle Rogge Gannon",
+        "Skip Willman",
+        "USD Graduate School Presents 2025 Excellence in Teaching Awards",
+        "Arts & Sciences Faculty Awarded for Teaching, Research, Service Contributions",
+        "College of Arts & Sciences Students Recognized With Awards",
+        "Small class sizes allow students to work closely with and get lots of attention from faculty.",
+        "Travel funds provide students with the resources for research trips and conferences.",
+        "Scholarships and assistantships allow students to receive education at a low cost."
+      ],
+      [
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Specialty",
+        "Astrophil Press",
+        "South Dakota Review",
+        "Vermillion Literary Project",
+        "Sigma Tau Delta",
+        "Writing Center",
+        "Grants and Research"
+      ],
+      [
+        "Related",
+        "Colleges",
+        "College Dean"
+      ],
+      [
+        "Undergraduate",
+        "Creative Writing",
+        "English",
+        "Professional Writing",
+        "Graduate",
+        "English M.A.",
+        "English Ph.D."
+      ],
+      [
+        "Lara Carlson McGoey\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tInstructor",
+        "Pete Dexter\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tWriter in Residence",
+        "Kevin Magee\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tInstructor"
+      ]
+    ],
+    "https://www.csi.cuny.edu/academics-and-research/departments-programs/english": [
+      [
+        "Literature Concentration",
+        "Writing Concentration",
+        "Linguistics Concentration",
+        "Dramatic Literature Concentration",
+        "English Minor\n\nMinor in Literature\u00a0\nMinor in Writing\nMinor in Linguistics",
+        "Minor in Literature",
+        "Minor in Writing",
+        "Minor in Linguistics",
+        "Speech Language Pathology Minor",
+        "Master of English (MA)"
+      ],
+      [
+        "Literature Concentration",
+        "Writing Concentration",
+        "Linguistics Concentration",
+        "Dramatic Literature Concentration"
+      ],
+      [
+        "Minor in Literature",
+        "Minor in Writing",
+        "Minor in Linguistics"
+      ],
+      [
+        "Fall 2024 Linguistics Courses and Description",
+        "Fall 2024 Literature Concentration Areas",
+        "Fall 2024 Literature and Writing Courses",
+        "Spring 2025 Course Offerings for Literature, Writing, and Linguistics",
+        "Fall 2025 Anticipated Course Offerings"
+      ],
+      [
+        "Alyson Bardsley",
+        "Maria Rice Bellamy",
+        "Jason Bishop",
+        "Mary Boland",
+        "Matt Brim",
+        "Rosanne Carlo",
+        "Ava Chin",
+        "Ashley Dawson",
+        "Lewis Dimmick",
+        "Maryann S Feola",
+        "Gloria Gianoulis",
+        "Katharine Goodland",
+        "Timothy Gray",
+        "Stephen Greeley",
+        "Christina Hagedorn",
+        "Tyehimba Jess",
+        "Dalia Kandiyoti",
+        "Frederick Kaufman",
+        "Cate Marvin",
+        "Melanie McNulty",
+        "Christopher Miller",
+        "Steven Monte",
+        "Janet Ng Dudley",
+        "Lee Papa",
+        "Sohomjit Ray",
+        "Simon Reader",
+        "Harry Thorne",
+        "Christina M. Tortora"
+      ],
+      [
+        "Kandiyoti, Dalia\nDepartment Scheduler\n2S-132\n718.982.4137\nDalia.kandiyoti@csi.cuny.edu",
+        "Melanie McNulty\nDirector of the Writing Center\n2S-229\n781.982.3682\nMelanie McNulty",
+        "Grasso, Fredricka\nAdministrative Assistant\n2S-218\n718.982.3640\nfredricka.grasso@csi.cuny.edu",
+        "Kathleen Passantino\nOffice Assistant\n2S-218\n718.982.3640\nKathleen.Passantino@csi.cuny.edu"
+      ],
+      [
+        "English / Modern Languages Building",
+        "Building 2S, Room  218",
+        "Willowbrook Campus"
+      ]
+    ],
+    "https://english.wsu.edu/undergraduate-studies/english-teaching/": [
+      [
+        "Engl 301: Writing and Rhetorical Conventions",
+        "Engl 302: Introduction to English Studies",
+        "Engl 368: The American Novel",
+        "Engl 371: 17th and 18th Century Transnational Literature in English",
+        "Engl 372: 19th Century Literature of the British Empire and the America",
+        "Engl 470: Literature and Culture of the American West",
+        "Engl 480: American Literature: Beginnings to 1865",
+        "Engl 481: American Literature: 1865-1940",
+        "Engl 482: American Literature: 1940-Present",
+        "Engl 370: The Making of \u201cEnglish\u201d: Literature, Language and Culture Before 1600",
+        "Engl 373: 20th and 21st Century Global Literatures in English.",
+        "Engl 366: The British Novel to 1900",
+        "Engl 419: The Twentieth Century Novel",
+        "Engl 483: Chaucer and Medieval Literature",
+        "Engl 484: English Literature of the 16th Century",
+        "Engl 485: Milton and English Literature of the 17th Century",
+        "Engl 486: English Literature of the Restoration and 18th Century",
+        "Engl 487: British Romantic Literature",
+        "Engl 488: Victorian Literature",
+        "Engl 489: 20th/21st Century British and Postcolonial Literatures",
+        "Hum 302: Humanities in the Middle Ages and Renaissance",
+        "Hum 303: Reason, Romanticism, and Revolution",
+        "Hum 304: Humanities in the Modern World",
+        "Hum 335: The Bible as Literature",
+        "Hum 338: Topics in Humanities",
+        "Hum 350: Sacred Texts and Cultures of World Religions",
+        "Hum 410: Love in the Arts",
+        "Hum 450: Representations of the Holocaust",
+        "Engl 311:\u00a0 Asian Pacific American Literature",
+        "Engl 314:\u00a0 Topics in Asian Pacific American Literature",
+        "Engl 315:\u00a0 Asian Pacific American Autobiography",
+        "Engl 317:\u00a0 Gay and Lesbian Literature",
+        "Engl 321:\u00a0 African American Literature",
+        "Engl 322:\u00a0 Topics in African American Literature",
+        "Engl 341:\u00a0 Native American Literature",
+        "Engl 345:\u00a0 Contemporary Latina/o Literatures",
+        "Engl 305: Shakespeare [to 1600]",
+        "Engl 306: Shakespeare [after 1600]"
+      ],
+      [
+        "Engl 368: The American Novel",
+        "Engl 371: 17th and 18th Century Transnational Literature in English",
+        "Engl 372: 19th Century Literature of the British Empire and the America",
+        "Engl 470: Literature and Culture of the American West",
+        "Engl 480: American Literature: Beginnings to 1865",
+        "Engl 481: American Literature: 1865-1940",
+        "Engl 482: American Literature: 1940-Present"
+      ],
+      [
+        "Engl 370: The Making of \u201cEnglish\u201d: Literature, Language and Culture Before 1600",
+        "Engl 373: 20th and 21st Century Global Literatures in English.",
+        "Engl 366: The British Novel to 1900",
+        "Engl 419: The Twentieth Century Novel",
+        "Engl 483: Chaucer and Medieval Literature",
+        "Engl 484: English Literature of the 16th Century",
+        "Engl 485: Milton and English Literature of the 17th Century",
+        "Engl 486: English Literature of the Restoration and 18th Century",
+        "Engl 487: British Romantic Literature",
+        "Engl 488: Victorian Literature",
+        "Engl 489: 20th/21st Century British and Postcolonial Literatures",
+        "Hum 302: Humanities in the Middle Ages and Renaissance",
+        "Hum 303: Reason, Romanticism, and Revolution",
+        "Hum 304: Humanities in the Modern World",
+        "Hum 335: The Bible as Literature",
+        "Hum 338: Topics in Humanities",
+        "Hum 350: Sacred Texts and Cultures of World Religions",
+        "Hum 410: Love in the Arts",
+        "Hum 450: Representations of the Holocaust"
+      ],
+      [
+        "Engl 311:\u00a0 Asian Pacific American Literature",
+        "Engl 314:\u00a0 Topics in Asian Pacific American Literature",
+        "Engl 315:\u00a0 Asian Pacific American Autobiography",
+        "Engl 317:\u00a0 Gay and Lesbian Literature",
+        "Engl 321:\u00a0 African American Literature",
+        "Engl 322:\u00a0 Topics in African American Literature",
+        "Engl 341:\u00a0 Native American Literature",
+        "Engl 345:\u00a0 Contemporary Latina/o Literatures"
+      ],
+      [
+        "Engl 326: Applied Grammar for Teachers",
+        "Engl 325: Young Adult Literature",
+        "Engl 324: Rhetoric and Composition for Teaching",
+        "Engl 323: Approaches to the Teaching of English"
+      ],
+      [
+        "English teacher",
+        "College professor",
+        "Historian",
+        "Language Instructor",
+        "Librarian",
+        "Translator",
+        "Writer"
+      ],
+      [
+        "UCORE Humanities Requirement [HUM] (1 course, 3 credit hours):",
+        "Core (5 courses, 15 credit hours):",
+        "Teaching Concentration (4 courses, 12 credit hours):",
+        "English or Humanities Electives (2 courses, 6 credit hours):",
+        "Note:"
+      ]
+    ],
+    "https://www.depts.ttu.edu/english/": [
+      [
+        "BA in English: Creative Writing",
+        "BA in English: Literature & Language",
+        "BA in English: English Teaching",
+        "BA in Writing, Design, & Technical Communication"
+      ],
+      [
+        "MA in English: Literature",
+        "MA in English: Creative Writing",
+        "MA in English: Linguistics",
+        "MA in Technical Communication"
+      ],
+      [
+        "PhD in English: Literature",
+        "PhD in English: Creative Writing",
+        "PhD in English: Linguistics",
+        "PhD in Technical Communication and Rhetoric"
+      ],
+      [
+        "Book History and Digital Humanities",
+        "Grants and Proposals",
+        "Linguistics",
+        "Teaching Technical Communication"
+      ]
+    ],
+    "https://english.ecu.edu/": [
+      [
+        "English), who presented a very interesting paper, \u201cK",
+        "Pop\u2019s Foray into Language Education: Analyzing Learn! Korean With BTS.\u201d (\u201cBTS\u201d is a popular K",
+        "Pop \u201cboy band\u201d that released a Korean language",
+        "learning app to help its global fans",
+        "the BTS Army",
+        "learn Korean language, idiom, and culture.)"
+      ]
+    ],
+    "https://www.artsci.uc.edu/departments/english.html": [
+      [
+        "Welcome",
+        "Areas of Study",
+        "UC Tools"
+      ]
+    ],
+    "https://english.cornell.edu/phd-program-english-language-and-literature": [
+      [
+        "A first-year non-teaching fellowship",
+        "Two years of teaching assistantships",
+        "A fourth-year non-teaching fellowship for the dissertation writing year",
+        "A fifth-year teaching assistantship"
+      ]
+    ],
+    "https://cssh.northeastern.edu/english/": [
+      [
+        "After Men: Modernist Adventure and the Regendering of Work\n\n\nOctober 24",
+        "A Reading and Talk with\u00a0Joan Naviyuk Kane\n\n\nNovember 14",
+        "Suresh Canagarajah\n\n\nDecember 11"
+      ],
+      [
+        "Africana Studies Program",
+        "American Sign Language & Interpreting Education",
+        "Cultures, Societies, and Global Studies",
+        "Economics",
+        "English",
+        "Global Asian Studies Program",
+        "Health, Humanities, and Society Program",
+        "History",
+        "Human Services Program",
+        "Interdisciplinary",
+        "International Affairs",
+        "Jewish Studies Program",
+        "Latinx, Latin American, and Caribbean Studies Program",
+        "Philosophy and Religion",
+        "Political Science",
+        "Politics, Philosophy, and Economics",
+        "School of Criminology and Criminal Justice",
+        "School of Public Policy and Urban Affairs",
+        "Sociology and Anthropology",
+        "Women's, Gender and Sexuality Studies Program",
+        "World Languages and Cultures",
+        "Writing Program"
+      ],
+      [
+        "Stories",
+        "Dialogues of Civilization",
+        "Led by",
+        "Led by",
+        "Led by",
+        "Led by",
+        "Welcome to the Department of English",
+        "Upcoming events",
+        "Academics",
+        "Plan your schedule today!",
+        "Schools, Departments, and Programs"
+      ],
+      [
+        "Letters of Ignatius Sancho offer window to life of black man in 18th-century London",
+        "How queer comics made their mark on history",
+        "Sarah Connell",
+        "Leah Lapszynski",
+        "Savita Maharaj",
+        "Chinma Nnadozie-Okananwa",
+        "Laura Packard",
+        "Food and Culture in Vietnam and Cambodia",
+        "Ireland, Literature and Film",
+        "Representing Israel in Law and Literature",
+        "New England and Old England: Coast, Country, City"
+      ]
+    ],
+    "https://www.niu.edu/english/academics/graduate/index.shtml": [
+      [
+        "Knowledge of literary genres and traditions.",
+        "Engaged study of issues of feminism, multiculturalism, gender identity and social justice.",
+        "Interdisciplinary research opportunities.",
+        "Opportunities to use and master technologies for writing and new media production.",
+        "Training in the teaching of English."
+      ],
+      [
+        "Literature, Film, and Culture;",
+        "Education in English Language Arts;",
+        "Writing and Rhetoric;",
+        "Literature and Rhetoric/Writing."
+      ],
+      [
+        "Admissions",
+        "M.A. Programs",
+        "Ph.D. Programs",
+        "Certificates of Graduate Study",
+        "Job Placement for English Graduate Students",
+        "Undergraduate Studies",
+        "First-Year Composition",
+        "Educator Licensure"
+      ]
+    ],
+    "https://liberalarts.temple.edu/academics/departments-and-programs/english/graduate": [
+      [
+        "Literary Aesthetics",
+        "Photography and Literature",
+        "Transatlantic Feminist Theory",
+        "Queer Poetry and Poetics",
+        "Documentary Poetics",
+        "Environmental Studies"
+      ],
+      [
+        "Joyce A. Joyce",
+        "Sue-Im Lee",
+        "Jena Osman",
+        "James Salazar",
+        "Roland L. Williams, Jr."
+      ],
+      [
+        "Talissa Ford",
+        "Carissa M. Harris",
+        "Priya Joshi",
+        "Steven Newman"
+      ],
+      [
+        "Laura McGrath",
+        "Steven Newman",
+        "Ryan Omizo"
+      ],
+      [
+        "Casarae Abdul-Ghani",
+        "Joyce A. Joyce",
+        "Sue-Im Lee",
+        "James Salazar",
+        "Roland L. Williams, Jr."
+      ],
+      [
+        "Talissa Ford",
+        "Carissa M. Harris",
+        "Joyce A. Joyce"
+      ],
+      [
+        "Priya Joshi",
+        "Jena Osman",
+        "Roland L. Williams, Jr."
+      ],
+      [
+        "Talissa Ford",
+        "Priya Joshi",
+        "Joyce A. Joyce"
+      ],
+      [
+        "American Literature  \n\n\n\u00a0Joyce A. Joyce\nSue-Im Lee\nJena Osman\nJames Salazar\nRoland L. Williams, Jr.",
+        "British Literature  \n\n\nTalissa Ford\n\u00a0Carissa M. Harris\nPriya Joshi\nSteven Newman",
+        "Caribbean Literature  \n\n\nNatalie L\u00e9ger",
+        "Composition and Rhetoric  \n\n\nRyan Omizo\nShannon Walters",
+        "Critical and Cultural Theories  \n\n\nPriya Joshi\nSteven Newman",
+        "Digital Humanities  \n\n\nLaura McGrath\nSteven Newman\nRyan Omizo",
+        "Gender and Sexuality  \n\n\nTalissa Ford\nCarissa M. Harris\nJoyce A. Joyce",
+        "Literature and Visual Studies  \n\n\nPriya Joshi\nJena Osman\nRoland L. Williams, Jr.",
+        "Poetry and Poetics  \n\n\nSteven Newman\nJena Osman",
+        "Postcolonial and Global Literature  \n\n\nTalissa Ford\nPriya Joshi\nJoyce A. Joyce"
+      ],
+      [
+        "Chair\nJames Salazar\n916 Mazur Hall\njsalazar@temple.edu",
+        "Director of Graduate Studies\nSteve Newman\nSteven.newman@temple.edu",
+        "Manager of Administration\nLaTasha Goodman\n1041 Mazur Hall\nlgoodman@temple.edu\n(215) 204-8516"
+      ],
+      [
+        "track positions,\u00a0non",
+        "tenure full",
+        "time teaching and\u00a0are working in non",
+        "time position."
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 18:46:20"
+}

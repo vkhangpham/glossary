@@ -1,0 +1,1892 @@
+{
+  "level1_term": "biomedical sciences",
+  "url_verification_status": {
+    "https://icahn.mssm.edu/education/phd/biomedical-sciences": true,
+    "https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/phd-program/phd-training-programs": true,
+    "https://icahn.mssm.edu/education/graduate": false,
+    "https://www.vagelos.columbia.edu/education/academic-programs/phds-biomedical-sciences": true,
+    "https://www.albany.edu/cihs/biomedical-sciences": true,
+    "https://www.stjohns.edu/academics/programs/biomedical-sciences-bachelor-science": false,
+    "https://catalog.qu.edu/health-sciences/biomedical-sciences/": true,
+    "https://www.albany.edu/graduate-bulletin/biomedical-sciences-courses.php": false,
+    "https://www.rockefeller.edu/education-and-training/graduate-program-in-bioscience/": false,
+    "https://health.uconn.edu/graduate-school/academics/programs/ph-d-biomedical-science/": true,
+    "https://www.gsas.cuimc.columbia.edu/phd-programs/cell-and-molecular-biology-umbrella": false,
+    "https://medicine.yale.edu/bbs/": false,
+    "https://courses.cornell.edu/preview_program.php?catoid=60&poid=30234": false,
+    "https://prod-bbsphd.drupalsites.harvard.edu/harvard-biological-biomedical-sciences-phd-program": false,
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/": false,
+    "https://gs.howard.edu/biomedical-sciences-phd": false,
+    "https://med.virginia.edu/bims/": true,
+    "https://med.psu.edu/biomedical-sciences-phd/details": true,
+    "https://medicine.osu.edu/education/phd/biomedical-sciences": false,
+    "https://www.bumc.bu.edu/gms/pibs/": false,
+    "https://health.wvu.edu/research-and-graduate-education/graduate-education/phd-programs/biomedical-sciences/": true,
+    "https://www.rit.edu/study/biomedical-sciences-bs": false,
+    "https://bulletin.temple.edu/graduate/scd/medicine/biomedical-sciences-phd/": true,
+    "https://medschool.vanderbilt.edu/biomedical-sciences/": true,
+    "https://med.psu.edu/biomedical-sciences-ms/details": true,
+    "https://www.mercy.edu/academics/programs/biology-biomedical-sciences": true,
+    "https://med.emory.edu/departments/cell-biology/education/gdbbs-courses.html": true,
+    "https://www.fau.edu/medicine/about/departments/bio-med/": false,
+    "https://www.bcm.edu/education/graduate-school-of-biomedical-sciences": false,
+    "https://www.uthsc.edu/graduate-health-sciences/ibs/": true,
+    "https://dbbs.wustl.edu/programs/": true,
+    "https://www.nccu.edu/chas/biological-biomedical-sciences": false,
+    "https://grad.rutgers.edu/academics/graduate-programs/biomedical-and-health-sciences-phd-programs": true,
+    "https://und.edu/programs/biomedical-sciences-phd/index.html": true,
+    "https://vetmedbiosci.colostate.edu/bms/": true,
+    "https://science-math.wright.edu/biomedical-sciences-phd-program/research-projects-and-faculty": false
+  },
+  "verified_lists_per_url": {
+    "https://icahn.mssm.edu/education/phd/biomedical-sciences": 4,
+    "https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/phd-program/phd-training-programs": 3,
+    "https://icahn.mssm.edu/education/graduate": 0,
+    "https://www.vagelos.columbia.edu/education/academic-programs/phds-biomedical-sciences": 1,
+    "https://www.albany.edu/cihs/biomedical-sciences": 2,
+    "https://www.stjohns.edu/academics/programs/biomedical-sciences-bachelor-science": 0,
+    "https://catalog.qu.edu/health-sciences/biomedical-sciences/": 1,
+    "https://www.albany.edu/graduate-bulletin/biomedical-sciences-courses.php": 0,
+    "https://www.rockefeller.edu/education-and-training/graduate-program-in-bioscience/": 0,
+    "https://health.uconn.edu/graduate-school/academics/programs/ph-d-biomedical-science/": 2,
+    "https://www.gsas.cuimc.columbia.edu/phd-programs/cell-and-molecular-biology-umbrella": 0,
+    "https://medicine.yale.edu/bbs/": 0,
+    "https://courses.cornell.edu/preview_program.php?catoid=60&poid=30234": 0,
+    "https://prod-bbsphd.drupalsites.harvard.edu/harvard-biological-biomedical-sciences-phd-program": 0,
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/": 0,
+    "https://gs.howard.edu/biomedical-sciences-phd": 0,
+    "https://med.virginia.edu/bims/": 4,
+    "https://med.psu.edu/biomedical-sciences-phd/details": 2,
+    "https://medicine.osu.edu/education/phd/biomedical-sciences": 0,
+    "https://www.bumc.bu.edu/gms/pibs/": 0,
+    "https://health.wvu.edu/research-and-graduate-education/graduate-education/phd-programs/biomedical-sciences/": 1,
+    "https://www.rit.edu/study/biomedical-sciences-bs": 0,
+    "https://bulletin.temple.edu/graduate/scd/medicine/biomedical-sciences-phd/": 2,
+    "https://medschool.vanderbilt.edu/biomedical-sciences/": 1,
+    "https://med.psu.edu/biomedical-sciences-ms/details": 2,
+    "https://www.mercy.edu/academics/programs/biology-biomedical-sciences": 1,
+    "https://med.emory.edu/departments/cell-biology/education/gdbbs-courses.html": 1,
+    "https://www.fau.edu/medicine/about/departments/bio-med/": 0,
+    "https://www.bcm.edu/education/graduate-school-of-biomedical-sciences": 0,
+    "https://www.uthsc.edu/graduate-health-sciences/ibs/": 1,
+    "https://dbbs.wustl.edu/programs/": 2,
+    "https://www.nccu.edu/chas/biological-biomedical-sciences": 0,
+    "https://grad.rutgers.edu/academics/graduate-programs/biomedical-and-health-sciences-phd-programs": 1,
+    "https://und.edu/programs/biomedical-sciences-phd/index.html": 1,
+    "https://vetmedbiosci.colostate.edu/bms/": 2,
+    "https://science-math.wright.edu/biomedical-sciences-phd-program/research-projects-and-faculty": 0
+  },
+  "total_lists_per_url": {
+    "https://icahn.mssm.edu/education/phd/biomedical-sciences": 6,
+    "https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/phd-program/phd-training-programs": 3,
+    "https://icahn.mssm.edu/education/graduate": 2,
+    "https://www.vagelos.columbia.edu/education/academic-programs/phds-biomedical-sciences": 1,
+    "https://www.albany.edu/cihs/biomedical-sciences": 64,
+    "https://www.stjohns.edu/academics/programs/biomedical-sciences-bachelor-science": 17,
+    "https://catalog.qu.edu/health-sciences/biomedical-sciences/": 2,
+    "https://www.albany.edu/graduate-bulletin/biomedical-sciences-courses.php": 1,
+    "https://www.rockefeller.edu/education-and-training/graduate-program-in-bioscience/": 2,
+    "https://health.uconn.edu/graduate-school/academics/programs/ph-d-biomedical-science/": 3,
+    "https://www.gsas.cuimc.columbia.edu/phd-programs/cell-and-molecular-biology-umbrella": 3,
+    "https://medicine.yale.edu/bbs/": 21,
+    "https://courses.cornell.edu/preview_program.php?catoid=60&poid=30234": 5,
+    "https://prod-bbsphd.drupalsites.harvard.edu/harvard-biological-biomedical-sciences-phd-program": 3,
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/": 2,
+    "https://gs.howard.edu/biomedical-sciences-phd": 6,
+    "https://med.virginia.edu/bims/": 5,
+    "https://med.psu.edu/biomedical-sciences-phd/details": 5,
+    "https://medicine.osu.edu/education/phd/biomedical-sciences": 3,
+    "https://www.bumc.bu.edu/gms/pibs/": 2,
+    "https://health.wvu.edu/research-and-graduate-education/graduate-education/phd-programs/biomedical-sciences/": 1,
+    "https://www.rit.edu/study/biomedical-sciences-bs": 2,
+    "https://bulletin.temple.edu/graduate/scd/medicine/biomedical-sciences-phd/": 11,
+    "https://medschool.vanderbilt.edu/biomedical-sciences/": 1,
+    "https://med.psu.edu/biomedical-sciences-ms/details": 4,
+    "https://www.mercy.edu/academics/programs/biology-biomedical-sciences": 14,
+    "https://med.emory.edu/departments/cell-biology/education/gdbbs-courses.html": 1,
+    "https://www.fau.edu/medicine/about/departments/bio-med/": 2,
+    "https://www.bcm.edu/education/graduate-school-of-biomedical-sciences": 2,
+    "https://www.uthsc.edu/graduate-health-sciences/ibs/": 1,
+    "https://dbbs.wustl.edu/programs/": 2,
+    "https://www.nccu.edu/chas/biological-biomedical-sciences": 1,
+    "https://grad.rutgers.edu/academics/graduate-programs/biomedical-and-health-sciences-phd-programs": 6,
+    "https://und.edu/programs/biomedical-sciences-phd/index.html": 2,
+    "https://vetmedbiosci.colostate.edu/bms/": 4,
+    "https://science-math.wright.edu/biomedical-sciences-phd-program/research-projects-and-faculty": 3
+  },
+  "verified_lists_ids": {
+    "https://icahn.mssm.edu/education/phd/biomedical-sciences": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/phd-program/phd-training-programs": [
+      0,
+      1,
+      2
+    ],
+    "https://icahn.mssm.edu/education/graduate": [],
+    "https://www.vagelos.columbia.edu/education/academic-programs/phds-biomedical-sciences": [
+      0
+    ],
+    "https://www.albany.edu/cihs/biomedical-sciences": [
+      46,
+      61
+    ],
+    "https://www.stjohns.edu/academics/programs/biomedical-sciences-bachelor-science": [],
+    "https://catalog.qu.edu/health-sciences/biomedical-sciences/": [
+      0
+    ],
+    "https://www.albany.edu/graduate-bulletin/biomedical-sciences-courses.php": [],
+    "https://www.rockefeller.edu/education-and-training/graduate-program-in-bioscience/": [],
+    "https://health.uconn.edu/graduate-school/academics/programs/ph-d-biomedical-science/": [
+      0,
+      1
+    ],
+    "https://www.gsas.cuimc.columbia.edu/phd-programs/cell-and-molecular-biology-umbrella": [],
+    "https://medicine.yale.edu/bbs/": [],
+    "https://courses.cornell.edu/preview_program.php?catoid=60&poid=30234": [],
+    "https://prod-bbsphd.drupalsites.harvard.edu/harvard-biological-biomedical-sciences-phd-program": [],
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/": [],
+    "https://gs.howard.edu/biomedical-sciences-phd": [],
+    "https://med.virginia.edu/bims/": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "https://med.psu.edu/biomedical-sciences-phd/details": [
+      0,
+      3
+    ],
+    "https://medicine.osu.edu/education/phd/biomedical-sciences": [],
+    "https://www.bumc.bu.edu/gms/pibs/": [],
+    "https://health.wvu.edu/research-and-graduate-education/graduate-education/phd-programs/biomedical-sciences/": [
+      0
+    ],
+    "https://www.rit.edu/study/biomedical-sciences-bs": [],
+    "https://bulletin.temple.edu/graduate/scd/medicine/biomedical-sciences-phd/": [
+      0,
+      10
+    ],
+    "https://medschool.vanderbilt.edu/biomedical-sciences/": [
+      0
+    ],
+    "https://med.psu.edu/biomedical-sciences-ms/details": [
+      0,
+      2
+    ],
+    "https://www.mercy.edu/academics/programs/biology-biomedical-sciences": [
+      2
+    ],
+    "https://med.emory.edu/departments/cell-biology/education/gdbbs-courses.html": [
+      0
+    ],
+    "https://www.fau.edu/medicine/about/departments/bio-med/": [],
+    "https://www.bcm.edu/education/graduate-school-of-biomedical-sciences": [],
+    "https://www.uthsc.edu/graduate-health-sciences/ibs/": [
+      0
+    ],
+    "https://dbbs.wustl.edu/programs/": [
+      0,
+      1
+    ],
+    "https://www.nccu.edu/chas/biological-biomedical-sciences": [],
+    "https://grad.rutgers.edu/academics/graduate-programs/biomedical-and-health-sciences-phd-programs": [
+      4
+    ],
+    "https://und.edu/programs/biomedical-sciences-phd/index.html": [
+      0
+    ],
+    "https://vetmedbiosci.colostate.edu/bms/": [
+      1,
+      2
+    ],
+    "https://science-math.wright.edu/biomedical-sciences-phd-program/research-projects-and-faculty": []
+  },
+  "num_urls": 40,
+  "num_lists": 213,
+  "url_to_lists": {
+    "https://icahn.mssm.edu/education/phd/biomedical-sciences": [
+      [
+        "Facebook Icon",
+        "LinkedIn Icon",
+        "Instagram Icon",
+        "Twitter Icon"
+      ],
+      [
+        "2024 Lab Coat Ceremony",
+        "Dean's Report 2023-2024",
+        "Virtually Tour the Graduate School",
+        "Get to Know the 2024 Matriculants to the PhD in Biomedical Sciences and Neuroscience Programs",
+        "PhD in Biomedical Sciences",
+        "Graduate School of Biomedical Sciences",
+        "Admissions Office",
+        "Explore This Section",
+        "PHD IN BIOMEDICAL SCIENCES",
+        "Multidisciplinary Training Areas",
+        "Microbiology",
+        "Immunology",
+        "Genetics and Genomic Sciences",
+        "Disease Mechanisms and Therapeutics",
+        "Development, Regeneration, and Stem Cells",
+        "Cancer Biology",
+        "AI and Emerging Technologies in Medicine",
+        "PhD in Biomedical Sciences",
+        "Our Matriculants",
+        "Resources For You",
+        "Discover the Latest"
+      ],
+      [
+        "Resources",
+        "Education",
+        "Programs",
+        "Resources",
+        "Research",
+        "Programs",
+        "Resources",
+        "Diversity",
+        "Programs",
+        "Popular Searches",
+        "Explore Topics",
+        "26 percent of PhD students in the class of 2022 were first-generation college graduates.",
+        "Our PhD matriculants last year came from 18 countries and 58 undergraduate institutions.",
+        "Last year\u2019s talented PhD matriculants published 194 journal articles and abstracts."
+      ],
+      [
+        "INFO FOR",
+        "EXPLORE",
+        "RESOURCES"
+      ],
+      [
+        "Admissions",
+        "Curriculum",
+        "Artificial Intelligence",
+        "Cancer Biology",
+        "Development, Regeneration, and Stem Cells",
+        "Disease Mechanisms and Therapeutics",
+        "Genetics and Genomics Science",
+        "Immunology",
+        "Microbiology"
+      ],
+      [
+        "Data Science Training Opportunities at Mount Sinai",
+        "Creating Heart Stem Cells",
+        "PhD in Biomedical Sciences with a focus on Cancer Biology",
+        "PhD in Biomedical Sciences with a focus in Immunology",
+        "The MD/PhD Program at Mount Sinai"
+      ]
+    ],
+    "https://med.nyu.edu/research/vilcek-institute-graduate-biomedical-sciences/phd-program/phd-training-programs": [
+      [
+        "Biochemistry and Molecular Biophysics",
+        "Biomedical Imaging & Technology",
+        "Biostatistics",
+        "Cell Biology",
+        "Computational Biomedicine",
+        "Developmental Genetics",
+        "Epidemiology",
+        "Immunology & Inflammation",
+        "Microbiology",
+        "Molecular Oncology & Tumor Immunology",
+        "Neuroscience & Physiology",
+        "Population Health",
+        "Stem Cell Biology"
+      ],
+      [
+        "Genes, Cells, and Organisms",
+        "Mechanisms of Disease",
+        "Microbiology, Immunology, and Infectious Disease",
+        "Neuroscience and Physiology",
+        "Quantitative Biology",
+        "Data, Medicine, and Health",
+        "PhD Program Course Catalog",
+        "MD/PhD Program",
+        "Our Training Faculty",
+        "Explore NYU Langone",
+        "Share by Email"
+      ],
+      [
+        "Cell Biology",
+        "Developmental Genetics",
+        "Stem Cell Biology",
+        "Molecular Oncology and Tumor Immunology",
+        "Immunology and Inflammation",
+        "Microbiology",
+        "Molecular, Cellular, and Translational Neuroscience",
+        "Systems, Cognitive, and Computational Neuroscience",
+        "Biochemistry and Molecular Biophysics",
+        "Biomedical Imaging and Technology",
+        "Computational Biomedicine",
+        "Biostatistics",
+        "Epidemiology",
+        "Population Health"
+      ]
+    ],
+    "https://icahn.mssm.edu/education/graduate": [
+      [
+        "One Gustave L. Levy Place",
+        "Box 1022",
+        "New York, \n\t\t\t\t\t\t\t\t\t\t\t\tNY\n\t\t\t\t\t\t\t\t\t\t\t\t10029",
+        "Explore Jennifer\u2019s research on brain health",
+        "Discover Varsha\u2019s work in community health",
+        "INFO FOR",
+        "EXPLORE",
+        "RESOURCES"
+      ],
+      [
+        "Financial Aid",
+        "Mistreatment Policy",
+        "Dean\u2019s Report 2023-2024"
+      ]
+    ],
+    "https://www.vagelos.columbia.edu/education/academic-programs/phds-biomedical-sciences": [
+      [
+        "Biochemistry, Molecular Biophysics and Structural Biology",
+        "Biomedical Informatics",
+        "Cancer Biology",
+        "Cell and Molecular Biology Umbrella",
+        "Cellular and Molecular Physiology & Biophysics",
+        "Genetics and Development",
+        "Microbiology and Immunology",
+        "Molecular Pharmacology and Therapeutics",
+        "Neurobiology and Behavior",
+        "Nutritional and Metabolic Biology",
+        "Pathobiology and Mechanisms of Disease",
+        "Stem Cell Biology",
+        "Systems Biology"
+      ]
+    ],
+    "https://www.albany.edu/cihs/biomedical-sciences": [
+      [
+        "Doug Conklin",
+        "Jason Herschkowitz",
+        "BK Lee",
+        "Sally Temple",
+        "JoEllen Welsh"
+      ],
+      [
+        "Sudha Chaturvedi",
+        "Denise Kay",
+        "William Lee",
+        "Kirsten St. George",
+        "Klemen Strle",
+        "Linda Styer"
+      ],
+      [
+        "Raj Agrawal",
+        "Yi-Pin Lin",
+        "Nick Mantis",
+        "Jon Paczkowski",
+        "Janice Pata",
+        "Klemen Strle",
+        "Haixin Sui"
+      ],
+      [
+        "Alex Ciota",
+        "Jan Conn",
+        "Keith Derbyshire",
+        "Pallavi Ghosh",
+        "Todd Gray",
+        "Yi-Pin Lin",
+        "Nick Mantis",
+        "Kathleen McDonough",
+        "Anil Ajha",
+        "Jon Paczkowski",
+        "Klemen Strle",
+        "Haixin Sui",
+        "Joe Wade"
+      ],
+      [
+        "Raj Agrawal",
+        "Nick Mantis",
+        "Kathleen McDonough",
+        "Anil Ojha",
+        "Jon Paczkowski",
+        "Janice Pata",
+        "Haixin Sui"
+      ],
+      [
+        "Keith Derbyshire",
+        "Doug Conklin",
+        "Pallavi Ghosh",
+        "Todd Gray",
+        "Jason Herschkowitz",
+        "BK Lee",
+        "Anil Ojha",
+        "Jon Paczkowski",
+        "Janice Pata",
+        "Klemen Strle",
+        "Joe Wade"
+      ],
+      [
+        "Department of Biomedical Sciences",
+        "Rebecca McCarthy",
+        "Administrative Manager",
+        "1 University Place\nRensselaer, NY 12144\nUnited States",
+        "Email\n[email\u00a0protected]\n\n\nPhone\n518-402-0401",
+        "Office Hours\nVirtual: Monday - Friday, 8 am-4:30 pm"
+      ],
+      [
+        "Rajendra K. Agrawal",
+        "Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]",
+        "Agrawal Wadsworth Center Page"
+      ],
+      [
+        "Nilesh Banavali",
+        "Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Alexander T. Ciota",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Douglas S. Conklin",
+        "Associate Professor",
+        "[email\u00a0protected]",
+        "The Conklin Laboratory"
+      ],
+      [
+        "Jan E. Conn",
+        "Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Keith M. Derbyshire",
+        "Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Pallavi Ghosh",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Todd Gray",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Bruce J. Herron",
+        "Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Laura D. Kramer",
+        "Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]"
+      ],
+      [
+        "William T. Lee",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Nicholas J. Mantis",
+        "Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Paul S. Masters",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Kathleen A. McDonough",
+        "Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]",
+        "McDonough Wadsworth Center Page"
+      ],
+      [
+        "Anne Messer",
+        "Emeritus Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Randall H. Morse",
+        "Emeritus Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Anil Ojha",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]",
+        "Wadsworth Bio"
+      ],
+      [
+        "Jon Paczkowski",
+        "Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Janice D. Pata",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]",
+        "Pata Wadsworth Center Page"
+      ],
+      [
+        "Haixin Sui",
+        "Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Joseph T. Wade",
+        "Chair & Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Marlene Belfort",
+        "Distinguished Professor, Senior Advisor of The RNA Institute",
+        "[email\u00a0protected]",
+        "Belfort Lab"
+      ],
+      [
+        "Michele Caggana",
+        "Clinical Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Sudha Chaturvedi",
+        "Clinical Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Kathy Chou",
+        "Clinical Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "April Davis",
+        "Clinical Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Christina Egan",
+        "Clinical Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Denise M. Kay",
+        "Clinical Assistant Professor",
+        "Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Matthew Kohn",
+        "Clinical Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Rama Ramani",
+        "Clinical Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Kirsten St. George",
+        "Clinical Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Linda Styer",
+        "Clinical Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Norma P. Tavakoli",
+        "Clinical Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "William J. Wolfgang",
+        "Clinical Associate Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Jennifer Yates",
+        "Clinical Assistant Professor",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Sally Temple",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences; The RNA Institute",
+        "[email\u00a0protected]",
+        "The Neural Stem Cell Institute"
+      ],
+      [
+        "Alicia Mendoza",
+        "PRODiG+ Fellow",
+        "College of Integrated Health Sciences; Department of Biomedical Sciences",
+        "[email\u00a0protected]"
+      ],
+      [
+        "Biomedical Sciences\nMS\n| STEM | +CGS Option |",
+        "Public Health\nMPH\n| +JD Option | +CGS Option |",
+        "Public Health\nMPH\n| +JD Option | +CGS Option |",
+        "Public Health\nMPH\n| +JD Option | +CGS Option |",
+        "Public Health\nMPH\n| +JD Option | +CGS Option |",
+        "Public Health\nMPH\n| +JD Option | +CGS Option |",
+        "Public Health\nMPH\n| +JD Option | +CGS Option |"
+      ],
+      [
+        "Graduation Year: 2004",
+        "Current Bio:",
+        "Degree and research experience prior to enrollment in the BMS program:",
+        "BMS program, mentor, and thesis topic:",
+        "PhD Mentor: Anne Messer",
+        "Thesis: Immunization and single-chain Fv intrabody gene therapies for Huntington\u2019s Disease",
+        "Preparation from BMS for current position:"
+      ],
+      [
+        "Graduation Year:",
+        "Current Bio:",
+        "Scientist, Bacterial Immunology \u2013 Infectious Diseases at Moderna.",
+        "Degree and research experience prior to enrollment in the BMS program:",
+        "BMS program, mentor, and thesis topic:",
+        "Mentor at the BMS program: Nicholas Mantis, PhD",
+        "Research focus at UAlbany: Immunology & Infectious Diseases",
+        "Thesis title: Passive immunization against invasive Salmonella enterica",
+        "Preparation from BMS for current position:"
+      ],
+      [
+        "[email\u00a0protected]",
+        "Prior degrees:",
+        "Bachelor of Science in Biology from Union College",
+        "Mentor at BMS:",
+        "How did BMS prepare you for your career?"
+      ],
+      [
+        "Borne Viruses in Hunter",
+        "Harvested White",
+        "Tailed Deer (odocoeleus virginianus), New York State"
+      ],
+      [
+        "probe biosensors reveal association of early SARS",
+        "2 total antibodies and surrogate neutralizing antibodies with mortality in COVID",
+        "19 patients"
+      ],
+      [
+        "Neutralizing, Single",
+        "Domain Antibodies that Bridge Ricin's A",
+        "B Subunit Interface"
+      ],
+      [
+        "09 A High Through",
+        "Put Test Interrogating 442 Small Non",
+        ", Intermediate",
+        "or High",
+        "Risk Disease"
+      ],
+      [
+        "acting super",
+        "enhancer IncRNAs as biomarkers to early",
+        "stage breast cancer"
+      ],
+      [
+        "Quantitative real",
+        "time PCR (RT",
+        "qPCR) Assay for the Rapid Enumeration of Live Candida auris from the Healthcare Environment"
+      ],
+      [
+        "19) Through Trends in Influenza",
+        "like Illness, Laboratory",
+        "confirmed Influenza, and COVID",
+        "19 New York State, Excluding New York City, 1 January 2020",
+        "12 April 2020"
+      ],
+      [
+        "coding RNAs in urinary exosomes to classify prostate cancer into low",
+        "grade (GG1) and higher",
+        "grade (GG2"
+      ],
+      [
+        "binding site of CspZ as a protective target against multi",
+        "strain, tick",
+        "transmitted Lyme disease"
+      ],
+      [
+        "Borne Viruses in Hunter",
+        "Harvested White",
+        "Tailed Deer (Odocoileus virginianus), New York State"
+      ],
+      [
+        "Molecule Antibiotics against a Unique tRNA",
+        "Mediated Regulation of Transcription in Gram",
+        "Positive Bacteria"
+      ],
+      [
+        "bet optimizes CD4 T",
+        "cell responses against influenza through CXCR3",
+        "dependent lung trafficking but not functional programming"
+      ],
+      [
+        "1\u00a0and\u00a0HIV",
+        "2\u00a0nucleic acid testing\u00a0for public health laboratories: worthwhile for HIV",
+        "1 but not for HIV"
+      ],
+      [
+        "time RT",
+        "funded applied research projects. These included whole",
+        "genome sequencing of influenza viruses and development of high and low",
+        "density viral microarrays for viral detection."
+      ],
+      [
+        "traditional MS student. Because I was working full",
+        "time in the Lab of Viral Diseases, I completed my course work part",
+        "time in BMS. \u00a0When I began my thesis work with Dr. Ciota, I switched and worked part",
+        "time with LVD, dedicating my full",
+        "time to thesis studies."
+      ],
+      [
+        "family and replicative DNA polymerase members of the C",
+        "resolution structure determination by X",
+        "ray crystallography."
+      ]
+    ],
+    "https://www.stjohns.edu/academics/programs/biomedical-sciences-bachelor-science": [
+      [
+        "Academics",
+        "Majors and Programs of Study",
+        "Biomedical Sciences, Bachelor of Science"
+      ],
+      [
+        "BIO 1000/1001L: Fundamentals of Biology I w/ Laboratory (4 credits)",
+        "CHE 1210/1211L/1212R:\u00a0General Chemistry I w/ Laboratory and Recitation (5 credits)",
+        "DNY 1000C:\u00a0Discover New York (3 credits)",
+        "FYW 1000C:\u00a0First Year Writing\u00a0(3 credits)",
+        "THE 1000C: Perspectives in Christianity \u00a0(3 credits)"
+      ],
+      [
+        "BIO 2000/2001L:\u00a0 Fundamentals of Biology II w/ Laboratory\u00a0(4 credits)",
+        "CHE 1220/1221L/1222R: General Chemistry II w/ Laboratory and Recitation (5 credits)",
+        "MTH 1260:\u00a0Calculus Applications for Pharmacy and Health Sciences (3 credits)",
+        "SPE 1000C:\u00a0Public Speaking for the College Student\u00a0(3 credits)",
+        "BMS 1000:\u00a0Introductory Seminar in Biomedical Sciences\u00a0(1 credit)"
+      ],
+      [
+        "CHE 2230/2231L:\u00a0Organic Chemistry 1 w/ Laboratory\u00a0(5 credits)",
+        "PHS 3103:\u00a0Human Anatomy and Physiology I (3 credits)",
+        "MTH 1250:\u00a0Statistical Applications for Pharmacy and Health Sciences (3 credits)",
+        "PHI 1000C:\u00a0Introduction to Philosophy\u00a0(3 credits)",
+        "THE 2XXX:\u00a0Theology 2xxx Series\u00a0(3 credits)"
+      ],
+      [
+        "CHE 2240/2241L:\u00a0Organic Chemistry II w/Laboratory\u00a0(5 credits)",
+        "PHS 3104:\u00a0Human Anatomy and Physiology Laboratory\u00a0(1 credit)",
+        "PHS 3105:\u00a0Human Anatomy and Physiology II\u00a0(3 credits)",
+        "PAS 2500:\u00a0Introduction to Medical Economics\u00a0(3 credits)",
+        "PHI 2200C:\u00a0Ethics\u00a0(3 credits)",
+        "HIS 1000C:\u00a0Emergence of a Global Society\u00a0(3 credits)"
+      ],
+      [
+        "PHY 1610/1611L/1612R:\u00a0College Physics I w/Laboratory and Recitation\u00a0(4 credits)",
+        "BMS 2200/2201L:\u00a0Biomedical Biochemistry w/Laboratory (4 credits)",
+        "PAS 3402:\u00a0US Healthcare Delivery\u00a0(3 credits)",
+        "ENG 1100C:\u00a0 Literature in Global Context (3 credits)"
+      ],
+      [
+        "PHY 1620/1621L/1622R:\u00a0College Physics II w/Laboratory and Recitation\u00a0(4 credits)",
+        "BMS 2400/2401l:\u00a0Medical Microbiology w/Laboratory\u00a0(4 credits)",
+        "Social Science Elective:\u00a0PSY, SOC, ANT, GVT, ECO elective\u00a0(3 credits)",
+        "PHS 3101:\u00a0Introduction to Pathology\u00a0(3 credits)"
+      ],
+      [
+        "Language Series or LAC1000C:\u00a0Language 1 of series or LAC1000\u00a0(3 credits)",
+        "THE 3XXX:\u00a0Theology 3xxx series\u00a0(3 credits)",
+        "6 credits of electives offered in the College of Pharmacy and Health Sciences (6 credits)"
+      ],
+      [
+        "Language Series or Fine Art:\u00a0Language 2 of Series or Fine Art/Music\u00a0(3 credits)",
+        "PHI 3000C:\u00a0Metaphysics\u00a0(3 credits)",
+        "6 credits of electives offered in the College of Pharmacy and Health Sciences \u00a0(6 credits)"
+      ],
+      [
+        "Main navigation",
+        "Combined B.S./M.D. Degree Program",
+        "Featured Faculty",
+        "Why Pursue Biomedical Sciences at St. John\u2019s University",
+        "Biomedical Sciences Courses",
+        "Combined B.S./M.D. Degree Program: 4+4 Pathway to Medicine",
+        "Related Programs",
+        "Take the Next Step"
+      ],
+      [
+        "Cathleen Murphy, D.C.",
+        "Cathleen A. Murphy",
+        "Vijaya L. Korlipara",
+        "Jagannath Muzumdar",
+        "First Year",
+        "Second Year",
+        "Third Year",
+        "Fourth Year",
+        "Office of Undergraduate Admission",
+        "Advantages",
+        "Admission",
+        "Requirements",
+        "How to Apply",
+        "Outcomes",
+        "Explore Affordability",
+        "Apply to St. John's"
+      ],
+      [
+        "Associate Dean for Health Sciences Programs",
+        "[email\u00a0protected]",
+        "718-990-7685",
+        "St Albert Hall Room 171"
+      ],
+      [
+        "Vijaya L. Korlipara",
+        "Professor",
+        "DepartmentPharmaceutical Sciences"
+      ],
+      [
+        "Jagannath Muzumdar",
+        "Associate Professor",
+        "DepartmentPharmacy Administration and Public Health"
+      ],
+      [
+        "Biology, Bachelor of Science",
+        "Biologists study living organisms and their relationship to the environment.",
+        "Queens Campus"
+      ],
+      [
+        "Chemistry Minor",
+        "Earn your Chemistry Minor from St. John's University!",
+        "Queens Campus"
+      ],
+      [
+        "Degree Type",
+        "Area of Interest",
+        "Associated Colleges or Schools",
+        "Program Location",
+        "Required Credit Hours"
+      ]
+    ],
+    "https://catalog.qu.edu/health-sciences/biomedical-sciences/": [
+      [
+        "Dual-Degree BS/MHS in Biomedical Sciences (concentration in Medical Sciences or Microbiology)",
+        "Dual-Degree BS in Biomedical Sciences and Master of Arts in Teaching (4+1)",
+        "Dual-Degree MS/MHS in Biomedical Sciences to Pathologists\u2019 Assistant (4+2)"
+      ],
+      [
+        "2024-2025 Edition",
+        "2024-2025 Edition",
+        "Bachelor\u2019s Degree Programs",
+        "Dual-Degree Programs",
+        "Minors",
+        "Independent Study",
+        "Quinnipiac University",
+        "Print Options"
+      ]
+    ],
+    "https://www.albany.edu/graduate-bulletin/biomedical-sciences-courses.php": [
+      [
+        "protein, protein",
+        "nucleic acid, and protein",
+        "membrane interactions will be studied in depth. Prerequisite: Undergraduate",
+        "level biochemistry course suggested."
+      ]
+    ],
+    "https://www.rockefeller.edu/education-and-training/graduate-program-in-bioscience/": [
+      [
+        "212-327-8086",
+        "phd@rockefeller.edu",
+        "212-327-8505 (fax)",
+        "View staff list"
+      ],
+      [
+        "The Rockefeller University\n1230 York Avenue, Box 177\nNew York, NY 10065",
+        "Program title: Biological SciencesProgram codes: 22043 (MS), 09328 (PhD)HEGIS code: 0401",
+        "Program title: PhysicsProgram codes: 22044 (MS), 09332 (PhD)HEGIS code: 1902"
+      ]
+    ],
+    "https://health.uconn.edu/graduate-school/academics/programs/ph-d-biomedical-science/": [
+      [
+        "Cell Biology",
+        "Genetics and Developmental Biology",
+        "Immunology",
+        "Molecular Biology and Biochemistry",
+        "Neuroscience",
+        "Skeletal Biology and Regeneration",
+        "Systems Biology"
+      ],
+      [
+        "Systems Biology",
+        "Skeletal Biology and Regeneration",
+        "Molecular Biology and Biochemistry",
+        "Immunology",
+        "Neuroscience",
+        "Cell Biology",
+        "Genetics and Developmental Biology",
+        "Introduction",
+        "Program Description",
+        "Prospective Students",
+        "Ph.D. in Biomedical Science",
+        "Areas of Concentration"
+      ],
+      [
+        "Why UConn Health?",
+        "Admissions",
+        "Degree Programs",
+        "Combined Degree and Specialty Programs",
+        "Neuroscience Seminar Series - Hui (Iris) Zhang, PhD",
+        "CAM Presentation: Dr. Pedro Mendes",
+        "Molecular Biology and Biochemistry Work in Progress Talk: Alex Radecki (Dr. O. Vargas-Rodriguez Lab)",
+        "Building Financial Credit and Dealing with Debt",
+        "Neuroscience Seminar Series - Joshua Plotkin, PhD"
+      ]
+    ],
+    "https://www.gsas.cuimc.columbia.edu/phd-programs/cell-and-molecular-biology-umbrella": [
+      [
+        "Ronald Liem, PhDProfessor of Pathology and Cell Biology\n\n\n\nrkl2@cumc.columbia.edu",
+        "Professor of Pathology and Cell Biology",
+        "rkl2@cumc.columbia.edu",
+        "Rebecca Haeusler, PhDAssociate Professor of Pathology and Cell Biology\n\n\n\nrah2130@cumc.columbia.edu",
+        "Associate Professor of Pathology and Cell Biology",
+        "rah2130@cumc.columbia.edu"
+      ],
+      [
+        "Zaia Sivo\n\n\n\n212-305-8393 \n\n\n\n\n\nns2072@cumc.columbia.edu",
+        "212-305-8393",
+        "ns2072@cumc.columbia.edu"
+      ],
+      [
+        "Ronald Liem, PhD",
+        "Rebecca Haeusler, PhD",
+        "Zaia Sivo"
+      ]
+    ],
+    "https://medicine.yale.edu/bbs/": [
+      [
+        "Scientific Seminar Series: Haifan Lin, PhD",
+        "Genetics Thesis Seminar",
+        "24-25 Microbiology Graduate Program Seminar Series: Dr. Gira Bhabha",
+        "Genetics Thesis Seminar",
+        "C&M Physiology Seminar Series: \"Glycogen Metabolism Drives The Sensory Activation of POMC Neurons\"",
+        "Genetics Thesis Seminar",
+        "Genetics Thesis Seminar",
+        "The 2025 Terry Forum: The Question Concerning AI",
+        "Radiobiology and Genome Integrity",
+        "Dept of Neuroscience Seminar Series: \"How the Synapse Forms and Functions.\"",
+        "Yale Stem Cell Center Seminar: \u201cMaking and mending the heart with neural crest cells\u201d",
+        "Hong Zhou:  \"Fishing\" and Resolving the Eukaryotic RNA-Editing Complexes",
+        "Genetics Clinical Grand Rounds:",
+        "Yale Cardiovascular Medicine Grand Rounds",
+        "Genetics Research-In-Progress (RIP)"
+      ],
+      [
+        "Organization Only",
+        "12:00 PM1:00 PM",
+        "Haifan Lin, PhD",
+        "Scientific Seminar Series: Haifan Lin, PhD",
+        "The Anlyan CenterAdd event to Calendar"
+      ],
+      [
+        "Everyone",
+        "2:00 PM3:00 PM",
+        "Mengze Helen He",
+        "Genetics Thesis Seminar"
+      ],
+      [
+        "Yale Only",
+        "12:00 PM1:00 PM",
+        "Susan Shao, Ph.D.",
+        "Brady Memorial LaboratoryAdd event to Calendar"
+      ],
+      [
+        "Yale Only",
+        "1:00 PM2:00 PM",
+        "Neil L. Kelleher, PhD",
+        "Sterling Hall of Medicine, C-WingAdd event to Calendar"
+      ],
+      [
+        "Yale Only",
+        "3:30 PM4:30 PM",
+        "Dr. Gira Bhabha",
+        "24-25 Microbiology Graduate Program Seminar Series: Dr. Gira Bhabha",
+        "Hope Memorial BuildingAdd event to Calendar"
+      ],
+      [
+        "Everyone",
+        "11:00 AM12:00 PM",
+        "Atreyo Pal",
+        "Genetics Thesis Seminar"
+      ],
+      [
+        "Yale Only",
+        "12:00 PM1:00 PM",
+        "Marc Claret",
+        "C&M Physiology Seminar Series: \"Glycogen Metabolism Drives The Sensory Activation of POMC Neurons\""
+      ],
+      [
+        "Everyone",
+        "2:00 PM3:00 PM",
+        "Zemeng Wei",
+        "Genetics Thesis Seminar"
+      ],
+      [
+        "Everyone",
+        "2:30 PM3:30 PM",
+        "Ethan Strayer",
+        "Genetics Thesis Seminar"
+      ],
+      [
+        "Everyone",
+        "4:00 PM5:30 PM",
+        "Lisa Messeri - C. Brandon Ogbunu, PhD - John Peters - Joanna Radin, PhD - Priyamvada Natarajan",
+        "The 2025 Terry Forum: The Question Concerning AI",
+        "Kline Biology TowerAdd event to Calendar"
+      ],
+      [
+        "Yale Only",
+        "11:00 AM11:15 AM",
+        "Jason Stumpff, Ph.D.",
+        "Radiobiology and Genome Integrity\u201cInvestigating CIN as a targetable vulnerability in tumor cells.\u201d",
+        "Add event to Calendar"
+      ],
+      [
+        "Everyone",
+        "2:00 PM3:00 PM",
+        "Megan Martik PhD",
+        "Yale Stem Cell Center Seminar: \u201cMaking and mending the heart with neural crest cells\u201d",
+        "Lauder HallAdd event to Calendar"
+      ],
+      [
+        "Everyone",
+        "4:00 PM5:00 PM",
+        "Hong Zhou",
+        "Hong Zhou:  \"Fishing\" and Resolving the Eukaryotic RNA-Editing Complexes",
+        "Yale Science BuildingAdd event to Calendar"
+      ],
+      [
+        "Yale Only",
+        "10:15 AM11:15 AM",
+        "Genetics Clinical Grand Rounds:",
+        "Sterling Hall of Medicine, I-Winghttps://yale.zoom.us/j/3044131702Add event to Calendar"
+      ],
+      [
+        "Yale Only",
+        "11:00 AM12:00 PM",
+        "Jean Schaffer",
+        "Brady Memorial LaboratoryAdd event to Calendar"
+      ],
+      [
+        "Everyone",
+        "11:30 AM12:30 PM",
+        "Hamideh Parhiz, PharmD, PhD"
+      ],
+      [
+        "The Anlyan Center",
+        "Password: 080122",
+        "https://yale.zoom.us/j/95111739312?pwd=aTVZZXFKYmtka0t2dm9DQWVNRTBldz09",
+        "Add event to Calendar"
+      ],
+      [
+        "Everyone",
+        "5:00 PM6:00 PM",
+        "Tor Biering-Sorensen MD, MSc, MPH, PhD"
+      ],
+      [
+        "Fitkin Memorial Pavilion Auditorium",
+        "Password: 287881",
+        "https://yale.zoom.us/j/92788166784?pwd=pariauZUTfTNThQV8aNOfRFtnwifFp.1&from=addon",
+        "Add event to Calendar"
+      ],
+      [
+        "Yale Only",
+        "12:00 PM1:00 PM",
+        "Tova Finkelstein - Ryland Mortlock",
+        "Genetics Research-In-Progress (RIP)"
+      ]
+    ],
+    "https://courses.cornell.edu/preview_program.php?catoid=60&poid=30234": [
+      [
+        "BIOMS 3110\u00a0-\u00a0Principles of Animal Physiology  (crosslisted) ** (Fall, 3 credits)",
+        "BIOMS 3160\u00a0-\u00a0Cellular Physiology  (crosslisted) (Spring, 3 credits)",
+        "BIOMS 3190\u00a0-\u00a0Laboratory in Physiology  (crosslisted) (Fall, 4 credits)",
+        "BIOMS 4130\u00a0-\u00a0Histology: The Biology of the Tissues  (crosslisted) (Spring, 3 credits)",
+        "BIOMS 4140\u00a0-\u00a0Principles of Pharmacology  (crosslisted) (Spring, 3 credits)",
+        "ANSC 4270\u00a0-\u00a0Fundamentals of Endocrinology  (crosslisted) (Fall, 3 credits)"
+      ],
+      [
+        "BIOMS 4150\u00a0-\u00a0Essential Immunology   ** (Fall, 3 credits)",
+        "BIOMI 3210\u00a0-\u00a0The Gut Microbiome   (Spring, 3 credits)",
+        "BIOMS 3310\u00a0-\u00a0General Parasitology  (crosslisted) (Spring, 2 credits)",
+        "BIOMS 4040\u00a0-\u00a0Pathogenic Bacteriology  (crosslisted) (Spring, 2-3 credits)",
+        "BIOMS 4090\u00a0-\u00a0Principles of Virology  (crosslisted) (Fall, 3 credits)",
+        "BIOMS 4310\u00a0-\u00a0Medical Parasitology  (crosslisted) (Fall, 2 credits)",
+        "BIOMS 4311\u00a0-\u00a0Paleoparasitology - Very, Very Cold Cases   (Spring, 1 credit)"
+      ],
+      [
+        "Educational Objectives:",
+        "Academic Standards:",
+        "Biomedical Sciences Required Coursework:",
+        "Elective Coursework:",
+        "How to receive credit for the Minor Program and Study in Biomedical Sciences:"
+      ],
+      [
+        "Cornell University",
+        "Courses of Study 2024-2025",
+        "HELP\nCourses of Study 2024-2025 \nBiomedical Science\nPrint-Friendly Page (opens a new window)",
+        "My Favorites",
+        "All courses of study \u00a9 2025 Cornell University. Powered by Modern Campus Catalog\u2122."
+      ],
+      [
+        "Courses of Study 2024-2025",
+        "HELP\nCourses of Study 2024-2025 \nBiomedical Science\nPrint-Friendly Page (opens a new window)",
+        "My Favorites"
+      ]
+    ],
+    "https://prod-bbsphd.drupalsites.harvard.edu/harvard-biological-biomedical-sciences-phd-program": [
+      [
+        "Welcome!",
+        "BBS Spotlight",
+        "Meet the Leadership Team",
+        "Explore Our Partners"
+      ],
+      [
+        "Former BBS Student, Cammi Valdez, Named Recipient of Presidential Award",
+        "Designing Brain-Computer Interfaces That Connect Neurons to the Digital World",
+        "Countering Cancer\u2019s Mutations",
+        "BBS Faculty Member, Gary Ruvkun, Receives Nobel Prize",
+        "Training Inventors of Future Medicines",
+        "Ann Hochschild Elected to National Academy of Sciences",
+        "Monica Colai\u00e1covo",
+        "Deirdre Duckett",
+        "Danny Gonzalez",
+        "Anne O'Shea",
+        "David Van Vactor"
+      ],
+      [
+        "Harvard Division of Medical Sciences\narrow_circle_right",
+        "Harvard Griffin Graduate School of Arts and Sciences\narrow_circle_right",
+        "Harvard Medical School\narrow_circle_right",
+        "Harvard Integrated Life Sciences\narrow_circle_right"
+      ]
+    ],
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/": [
+      [
+        "Best graduate school rankings",
+        "Guaranteed 5-year internal fellowship",
+        "See yourself here",
+        "\"I know that my work is very impactful\"",
+        "\"Collaboration is massive here\"",
+        "Collaborative research and learning environment",
+        "\"Allowed me to build my own team\"",
+        "Teaching opportunities",
+        "\"A diverse academic community\"",
+        "Unwavering commitment to student success",
+        "Application window",
+        "Catalog",
+        "Get social",
+        "Virtual visits",
+        "Campus locations",
+        "Schools",
+        "More from Mayo Clinic"
+      ],
+      [
+        "\"Collaboration is massive here\"\n1:00",
+        "\"Allowed me to build my own team\"\n1:28",
+        "\"A diverse academic community\"\n2:15"
+      ]
+    ],
+    "https://gs.howard.edu/biomedical-sciences-phd": [
+      [
+        "Online GradCAS application",
+        "Statement of purpose/ Statement of academic interest (500-1,000 words)",
+        "GRE scores not required",
+        "Official transcripts sent to GradCAS",
+        "3 letters of recommendation",
+        "Bachelor's degree from an accredited college or university\u00a0or the international equivalent",
+        "Resume or Curriculum Vitae",
+        "Autobiographical statement (500-750 words)"
+      ],
+      [
+        "GRE Verbal Reasoning: N/A",
+        "GRE Quantitative Reasoning: N/A",
+        "GRE Analytical Writing: N/A"
+      ],
+      [
+        "Biology (college-level courses, 8 semester credit hrs)",
+        "General Chemistry (college-level courses, 8 semester credit hrs)",
+        "Organic Chemistry (college-level courses, 8 semester credit hrs)",
+        "Physics (college-level courses, 8 semester credit hrs)"
+      ],
+      [
+        "Friend",
+        "Family Member",
+        "Coworker",
+        "Clergy"
+      ],
+      [
+        "Secondary Navigation",
+        "Graduate School",
+        "Main navigation",
+        "Secondary Navigation",
+        "Biomedical Sciences (Ph.D.) | Graduate",
+        "Footer Primary"
+      ],
+      [
+        "Dr. Byron Ford",
+        "Dr. Joanne Allard",
+        "Dr. Martha Davila-Garcia",
+        "Dr. Zaki Sherif",
+        "Dr. Karl Thompson",
+        "Dr. Janine Ziermann-Canabarro",
+        "Dr. Sulman Rahmat"
+      ]
+    ],
+    "https://med.virginia.edu/bims/": [
+      [
+        "facebook",
+        "twitter",
+        "instagram",
+        "linkedin"
+      ],
+      [
+        "Biochemistry",
+        "Bioinformatics & Genomics",
+        "Biophysics & Structural Biology",
+        "Biotechnology",
+        "Cancer Biology",
+        "Cancer Immunology and Immunotherapy",
+        "Cardiovascular Disease",
+        "Cell Biology"
+      ],
+      [
+        "Cellular and Molecular Metabolism",
+        "Chemistry and Physics of Living Systems",
+        "Computational Biology",
+        "Development, Stem Cells & Regeneration",
+        "Epigenetics",
+        "Experimental Pathology",
+        "Genetics",
+        "Immunology"
+      ],
+      [
+        "Infectious Diseases",
+        "Microbiology",
+        "Molecular Biology",
+        "Molecular and Systems Neurophysiology",
+        "Molecular Pharmacology",
+        "Neuroimmunology",
+        "Neuroscience",
+        "Physiological Basis of Human Disease"
+      ],
+      [
+        "9), Biomedical Engineering (",
+        "2), Biophysics and Physiology (",
+        "4), Cell Biology (",
+        "7), Experimental Pathology (",
+        "4), Microbiology (",
+        "14), and Neuroscience ("
+      ]
+    ],
+    "https://med.psu.edu/biomedical-sciences-phd/details": [
+      [
+        "BMS Program Track",
+        "Option in Biochemistry, Genetics and Genomics",
+        "Option in Cancer Biology"
+      ],
+      [
+        "Option in Cellular and Integrative Physiology",
+        "Option in Translational Therapeutics",
+        "Option in Virology & Immunology"
+      ],
+      [
+        "Tutoring a course in the first-year fall core curriculum",
+        "Teaching experience at local undergraduate colleges and universities",
+        "Participation in the Graduate School Teaching Certificate program"
+      ],
+      [
+        "Biomedical Sciences PhD Program Details",
+        "Navigation Menu",
+        "Biomedical Sciences PhD Program Details Header H2 Code",
+        "Biomedical Sciences PhD Program Details",
+        "Biomedical Sciences PhD Program Details Intro Row Copy with CTA",
+        "Biomedical Sciences PhD Program Details Basic Content",
+        "Program Overview",
+        "Curricular Tracks",
+        "Nested Applications",
+        "Biomedical Sciences Program Track Tab",
+        "Biomedical Sciences Program Track",
+        "Nested Applications",
+        "Biomedical Sciences PhD Program Details BGG Tab",
+        "Option in Biochemistry,\u00a0Genetics and Genomics",
+        "Nested Applications",
+        "Option in Cancer Biology Tab",
+        "Option in Cancer Biology",
+        "Nested Applications",
+        "Biomedical Sciences PhD Cellular and Integrative Physiology Tab",
+        "Option in Cellular and Integrative Physiology",
+        "Nested Applications",
+        "Biomedical Sciences PhD Program Details TT Tab",
+        "Option in Translational Therapeutics",
+        "Nested Applications",
+        "Biomedical Sciences PhD Program Details VIRIM Tab",
+        "Option in Virology & Immunology",
+        "Biomedical Sciences PhD Program Details Academic Enrichment H2 Code",
+        "Academic Enrichment Opportunities",
+        "Biomedical Sciences PhD Program Details Enrichment Triple Feature Boxes"
+      ],
+      [
+        "Apply Now",
+        "First Year",
+        "Second Year",
+        "Third Year and Beyond",
+        "Dual Degrees or Titles",
+        "Teaching Opportunities",
+        "Technology Development",
+        "Penn StateCollege of Medicine"
+      ]
+    ],
+    "https://medicine.osu.edu/education/phd/biomedical-sciences": [
+      [
+        "Christian Harding, PhD",
+        "Devyn Gillette, PhD",
+        "Michael Hoover, PhD",
+        "Hannah Stanley, PhD",
+        "Placing your heart in an artificial world",
+        "Beating cancer through research with patients",
+        "Harnessing the immune system to ward off diseases such as cancer and Alzheimer's",
+        "Accelerating medical research through fellowships and student engagement"
+      ],
+      [
+        "CEO and Co-Founder, VaxNewMo",
+        "Assistant Professor of Biology at Bowie State University",
+        "Research Scientist",
+        "Senior Medical Writer",
+        "Nahush Mokadam, MD",
+        "Sameek Roychowdhury, MD, PhD",
+        "Eugene Oltz, PhD",
+        "Rosa Lapalombella, PhD"
+      ],
+      [
+        "1022 Graves Hall",
+        "614-685-9140",
+        "BSGP@osumc.edu"
+      ]
+    ],
+    "https://www.bumc.bu.edu/gms/pibs/": [
+      [
+        "Completed all requirements for a baccalaureate degree",
+        "Three letters of recommendation",
+        "Structured personal statement (read here)",
+        "TOEFL: 100 with a minimum of 20 in each section",
+        "IELTS: 7.0 or higher",
+        "See this page regarding waiver eligibility"
+      ],
+      [
+        "TOEFL: 100 with a minimum of 20 in each section",
+        "IELTS: 7.0 or higher",
+        "See this page regarding waiver eligibility"
+      ]
+    ],
+    "https://health.wvu.edu/research-and-graduate-education/graduate-education/phd-programs/biomedical-sciences/": [
+      [
+        "Biochemistry and Molecular Medicine",
+        "Cancer Cell Biology",
+        "Cellular and Integrative Physiology",
+        "Clinical and Translational Science",
+        "Immunology and Microbial Pathogenesis",
+        "Neuroscience",
+        "Pathophysiology, Rehabilitation and Performance",
+        "Pharmaceutical and Pharmacological Sciences"
+      ]
+    ],
+    "https://www.rit.edu/study/biomedical-sciences-bs": [
+      [
+        "Why Study Biomedical Sciences at RIT",
+        "What is Biomedical Sciences?",
+        "RIT\u2019s Biomedical Sciences Degree Program",
+        "Biomedical Sciences Courses",
+        "What Can You Do with a Biomedical Sciences Degree?",
+        "Furthering Your Education in Biomedical Sciences",
+        "Typical Job Titles",
+        "Industries",
+        "Research Internships",
+        "National Labs Career Events and Recruiting",
+        "Cooperative Education",
+        "Biomedical Sciences, BS degree, typical course sequence",
+        "Electives",
+        "Combined Accelerated Bachelor's/Master's Degrees",
+        "Biomedical Sciences, BS degree, Health and Well-Being Management, MS degree typical course sequence",
+        "First-Year Admission",
+        "Transfer Admission",
+        "Financial Aid and Scholarships"
+      ],
+      [
+        "Careers in Biomedical Sciences",
+        "Pre-Health/Pre-Med Advising",
+        "Biomedical sciences program electives",
+        "Biomedical sciences professional electives",
+        "Emphasis Plan 1- Content Development, Implementation & Evaluation Recommended Electives",
+        "Emphasis Plan 2- Health & Well-being Program Management Recommended Electives"
+      ]
+    ],
+    "https://bulletin.temple.edu/graduate/scd/medicine/biomedical-sciences-phd/": [
+      [
+        "Cancer Biology and Genetics",
+        "Infectious Disease and Immunity",
+        "Molecular and Cellular Biosciences",
+        "Neuroscience",
+        "Organ Systems and Translational Medicine"
+      ],
+      [
+        "TOEFL iBT: 79",
+        "IELTS Academic: 6.5",
+        "PTE Academic: 53"
+      ],
+      [
+        "2024-2025 Edition",
+        "Admission Requirements and Deadlines",
+        "Program Requirements",
+        "Print Options"
+      ],
+      [
+        "LEWIS KATZ SCHOOL OF MEDICINE",
+        "Time Limit for Degree Completion:\u00a0 7 years",
+        "Full-Time/Part-Time Status: The PhD degree program is designed as a full-time day program of study."
+      ],
+      [
+        "Application Deadline:",
+        "Fall: February 15",
+        "Letters of Reference:\nNumber Required: 3",
+        "Master's Degree in Discipline/Related Discipline: A master's degree is not required."
+      ],
+      [
+        "https://medicine.temple.edu/education/biomedical-sciences-graduate-program",
+        "Biomedical Sciences Graduate Program",
+        "Lewis Katz School of Medicine at Temple University",
+        "3500 N. Broad Street, MERB 1111",
+        "Philadelphia, PA 19140",
+        "tusmgrad@temple.edu",
+        "215-707-2423",
+        "215-707-6687"
+      ],
+      [
+        "Admissions and Program Coordinators:",
+        "Dianne Soprano, PhD",
+        "Associate Dean for Graduate and MD/PhD Programs",
+        "dsoprano@temple.edu",
+        "215-707-3266"
+      ],
+      [
+        "Scott K. Shore, PhD",
+        "Associate Dean for Graduate Studies and Specialty Programs",
+        "sks@temple.edu",
+        "215-707-5072"
+      ],
+      [
+        "Core Courses 1",
+        "BMSC\u00a08101",
+        "BMSC\u00a08102",
+        "BMSC\u00a08103",
+        "BMSC\u00a08104",
+        "BMSC\u00a08201",
+        "BMSC\u00a08202",
+        "BMSC\u00a08203",
+        "BMSC\u00a08204",
+        "BMSC\u00a08401",
+        "Student Seminar and Journal Club (1 per year) 2",
+        "Basic and Advanced Concentration-Specific Electives",
+        "Research Courses 3",
+        "BMSC\u00a09994",
+        "BMSC\u00a09998",
+        "BMSC\u00a09999",
+        "Total Credit Hours"
+      ],
+      [
+        "Time/Part",
+        "Time Status: The PhD degree program is designed as a full",
+        "time day program of study."
+      ],
+      [
+        "sciences",
+        "graduate",
+        "program"
+      ]
+    ],
+    "https://medschool.vanderbilt.edu/biomedical-sciences/": [
+      [
+        "Interdisciplinary Graduate Program",
+        "Quantitative and Chemical Biology Program",
+        "Initiative for Maximizing Student Development",
+        "Biochemistry",
+        "Biological Sciences",
+        "Biomedical Informatics",
+        "Biostatistics",
+        "Cancer Biology",
+        "Cell and Developmental Biology",
+        "Chemical and Physical Biology",
+        "Epidemiology",
+        "Health Policy",
+        "Hearing and Speech Sciences",
+        "Human Genetics",
+        "Microbe-Host Interactions",
+        "Molecular Pathology and Immunology",
+        "Molecular Physiology and Biophysics",
+        "Neuroscience",
+        "Pharmacology",
+        "Giving",
+        "Student Resources",
+        "Resources"
+      ]
+    ],
+    "https://med.psu.edu/biomedical-sciences-ms/details": [
+      [
+        "BMS Program Track",
+        "Option in Biochemistry, Genetics and Genomics",
+        "Option in Cancer Biology"
+      ],
+      [
+        "Option in Cellular and Integrative Physiology",
+        "Option in Translational Therapeutics",
+        "Option in Virology & Immunology"
+      ],
+      [
+        "Biomedical Sciences MS Program Details",
+        "Navigation Menu",
+        "Biomedical Sciences MS Program Details H2 Code",
+        "Biomedical Sciences MS Program Details",
+        "Biomedical Sciences MS Details Intro Row with Copy",
+        "Biomedical Sciences MS Program Overview Basic Content",
+        "Program Overview",
+        "Curricular Tracks",
+        "Nested Applications",
+        "Biomedical Sciences Program Track Tab",
+        "Biomedical Sciences Program Track",
+        "Nested Applications",
+        "Biomedical Sciences PhD Program Details BGG Tab",
+        "Option in Biochemistry,\u00a0Genetics and Genomics",
+        "Nested Applications",
+        "Option in Cancer Biology Tab",
+        "Option in Cancer Biology",
+        "Nested Applications",
+        "Biomedical Sciences PhD Cellular and Integrative Physiology Tab",
+        "Option in Cellular and Integrative Physiology",
+        "Nested Applications",
+        "Biomedical Sciences PhD Program Details TT Tab",
+        "Option in Translational Therapeutics",
+        "Nested Applications",
+        "Biomedical Sciences PhD Program Details VIRIM Tab",
+        "Option in Virology & Immunology"
+      ],
+      [
+        "Apply Now",
+        "First Year",
+        "Second Year",
+        "Penn StateCollege of Medicine"
+      ]
+    ],
+    "https://www.mercy.edu/academics/programs/biology-biomedical-sciences": [
+      [
+        "120 Credits",
+        "School of Health and Natural Sciences",
+        "Westchester"
+      ],
+      [
+        "Academics",
+        "Programs & Degrees",
+        "Biology: Biomedical Sciences"
+      ],
+      [
+        "Neuroscience - Mechanisms of neuroprotection from oxidative stress",
+        "Genetics \u2013 Mechanisms of telomere regulation",
+        "Cell and Molecular Biology - Regulation of the assembly of synaptic contacts",
+        "Developmental Biology - Regulation of neural crest cell migration during development",
+        "Computational Biochemistry - Development of fluorescent nucleic acid bases"
+      ],
+      [
+        "2023 - 2024 B.S. Biology Biomedical Sciences Track",
+        "2022 - 2023 B.S. Biology Biomedical Sciences Track",
+        "2021- 2022 B.S. Biology Biomedical Sciences Track",
+        "2020 - 2021\u00a0B.S. Biology Biomedical Sciences Track"
+      ],
+      [
+        "MH 300",
+        "ACanger@mercy.edu",
+        "(914) 674-7280"
+      ],
+      [
+        "MH 300",
+        "ddeb@mercy.edu",
+        "(914) 888-5325"
+      ],
+      [
+        "MH 209",
+        "mdonovan@mercy.edu",
+        "(914) 674-7409"
+      ],
+      [
+        "MH 300",
+        "rhaskewlayton@mercy.edu",
+        "(914) 674-7145"
+      ],
+      [
+        "MH 300",
+        "PMinorsky@mercy.edu",
+        "(914) 674-7205"
+      ],
+      [
+        "Main Hall 300",
+        "lsarranarmogan@mercy.edu",
+        "(914) 888-5274"
+      ],
+      [
+        "MH 300",
+        "czhou1@mercy.edu",
+        "(914) 674-7873"
+      ],
+      [
+        "MH 215",
+        "smarte6@mercy.edu",
+        "(914) 888-5277"
+      ],
+      [
+        "MH 307",
+        "dzeman@mercy.edu",
+        "(914) 674-7135"
+      ],
+      [
+        "Medical School",
+        "Dental School",
+        "Physician Assistant Programs",
+        "Graduate Schools in Biological Sciences"
+      ]
+    ],
+    "https://med.emory.edu/departments/cell-biology/education/gdbbs-courses.html": [
+      [
+        "Department of Cell Biology\n     section navigation",
+        "Emory University School of Medicine",
+        "Biochemistry, Cell and Developmental Biology",
+        "Genetics and Molecular Biology",
+        "Molecular and Systems Pharmacology",
+        "Neuroscience",
+        "Information For"
+      ]
+    ],
+    "https://www.fau.edu/medicine/about/departments/bio-med/": [
+      [
+        "Charles E. Schmidt College of Medicine",
+        "Florida Atlantic University",
+        "777 Glades Road, BC-71",
+        "Boca Raton, FL 33431",
+        "(561) 297-4828"
+      ],
+      [
+        "Facebook",
+        "Twitter/X",
+        "YouTube",
+        "Instagram",
+        "Flickr",
+        "LinkedIn"
+      ]
+    ],
+    "https://www.bcm.edu/education/graduate-school-of-biomedical-sciences": [
+      [
+        "Baylor College of Medicine",
+        "Education",
+        "Graduate School of Biomedical Sciences"
+      ],
+      [
+        "First in Texas ($356 million)",
+        "20th in the nation",
+        "12 departments rank in the top 25",
+        "#1 ranked Genetics Department"
+      ]
+    ],
+    "https://www.uthsc.edu/graduate-health-sciences/ibs/": [
+      [
+        "Cancer and Developmental Biology",
+        "Genetics, Genomics and Informatics",
+        "Microbiology, Immunology, and Biochemistry",
+        "Pharmacology, Addiction Science, and Toxicology",
+        "Molecular and Translational Physiology",
+        "Neuroscience",
+        "Regenerative and Rehabilitation Sciences"
+      ]
+    ],
+    "https://dbbs.wustl.edu/programs/": [
+      [
+        "Biochemistry, Biophysics, & Structural Biology",
+        "Biomedical Informatics & Data Science",
+        "Cancer Biology",
+        "Computational & Systems Biology",
+        "Developmental, Regenerative, & Stem Cell Biology",
+        "Ecology & Evolutionary Biology",
+        "Immunology",
+        "Molecular Cell Biology",
+        "Molecular Genetics & Genomics",
+        "Molecular Microbiology & Microbial Pathogenesis",
+        "Neurosciences",
+        "Plant & Microbial Biosciences"
+      ],
+      [
+        "Biochemistry, Biophysics, & Structural Biology",
+        "Biomedical Informatics & Data Science",
+        "Cancer Biology",
+        "Computational & Systems Biology",
+        "Developmental, Regenerative, & Stem Cell Biology",
+        "Ecology & Evolutionary Biology",
+        "Immunology",
+        "Molecular Cell Biology",
+        "Molecular Genetics & Genomics",
+        "Molecular Microbiology & Microbial Pathogenesis",
+        "Neurosciences",
+        "Plant & Microbial Biosciences"
+      ]
+    ],
+    "https://www.nccu.edu/chas/biological-biomedical-sciences": [
+      [
+        "Nwosu, Veronica C",
+        "Professor of Biology",
+        "Biological and Biomedical Sciences",
+        "Mary M. Townes Science Building, Room 2242 \n [email\u00a0protected] \n 919-530-7285"
+      ]
+    ],
+    "https://grad.rutgers.edu/academics/graduate-programs/biomedical-and-health-sciences-phd-programs": [
+      [
+        "Academics",
+        "Graduate Programs",
+        "Biomedical & Health Sciences - Ph.D. Programs"
+      ],
+      [
+        "Academics",
+        "Graduate Programs",
+        "Biomedical & Health Sciences - Ph.D. Programs"
+      ],
+      [
+        "Academics",
+        "Graduate Programs",
+        "Biomedical & Health Sciences - Ph.D. Programs"
+      ],
+      [
+        "utility menu one",
+        "utility menu two",
+        "utility menu one",
+        "utility menu two",
+        "Explore Our Ph.D. Programs",
+        "footer menu first",
+        "footer menu third"
+      ],
+      [
+        "Molecular Biosciences",
+        "Biomedical Engineering",
+        "Toxicology",
+        "Neuroscience",
+        "Public Health",
+        "Exposure Science and Assessment",
+        "Nursing"
+      ],
+      [
+        "Deep knowledge of a specific field",
+        "upper",
+        "level courses, thesis work, and journal clubs"
+      ]
+    ],
+    "https://und.edu/programs/biomedical-sciences-phd/index.html": [
+      [
+        "Request Information",
+        "Why earn a Ph.D. in biomedical sciences?",
+        "UND's Biomedical Sciences Ph.D. Programs",
+        "What can you do with a biomedical sciences Ph.D.?",
+        "Biomedical Sciences Ph.D. Courses",
+        "Request Information",
+        "We use cookies on this site to enhance your user experience.",
+        "Ready to Enroll?"
+      ],
+      [
+        "Program type:",
+        "Format:",
+        "Est. time to complete:",
+        "Credit hours:"
+      ]
+    ],
+    "https://vetmedbiosci.colostate.edu/bms/": [
+      [
+        "Graduate Programs",
+        "Undergraduate Programs",
+        "Areas of Expertise",
+        "Kimberly Jeckel named CSU Best Teacher",
+        "Research Day 2025: A celebration of innovation and collaboration"
+      ],
+      [
+        "Master of Science in Biomedical Sciences",
+        "Master of Science in Biomedical Sciences\nMaster of Science in Biomedical Sciences [Thesis]",
+        "Master of Science in Biomedical Sciences\nAssisted Reproductive Technologies Specialization [1-year]",
+        "Ph.D. in Biomedical Sciences"
+      ],
+      [
+        "Neurobiology",
+        "Reproductive Biology",
+        "Cardiovascular Physiology",
+        "Anatomy and Anthropology",
+        "Infectious Diseases",
+        "Pedagogy"
+      ],
+      [
+        "Annual Outreach Activities",
+        "Brain Awareness Week",
+        "Equine Reproduction Laboratory"
+      ]
+    ],
+    "https://science-math.wright.edu/biomedical-sciences-phd-program/research-projects-and-faculty": [
+      [
+        "Integrative Biology and Toxicology",
+        "Molecular Genetics and Cell Biology",
+        "Neuroscience and Physiology",
+        "Structural and Quantitative Biology"
+      ],
+      [
+        "Biomedical Sciences Ph.D. Program",
+        "Biomedical Sciences Ph.D. Program",
+        "Biomedical Sciences Ph.D. Program",
+        "Science and Mathematics, College of"
+      ],
+      [
+        "CoSM Departments",
+        "Academics",
+        "Information For",
+        "Resources",
+        "Services"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 17:46:55"
+}

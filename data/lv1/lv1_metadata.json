@@ -1,0 +1,3301 @@
+{
+  "accountancy": {
+    "sources": [
+      "Accountancy & taxation",
+      "Dhaliwal-reidy school of accountancy",
+      "Adkerson school of accountancy",
+      "Master of accountancy and analytics (macc)"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "accounting": {
+    "sources": [
+      "Kenneth g. dixon school of accounting",
+      "Accounting (bba)",
+      "Accounting & finance department",
+      "Accounting (bs)",
+      "Accounting and business law",
+      "Bs-accounting/master of accounting (bs/macc)",
+      "Accounting and finance",
+      "The philip l. kintzele school of accounting",
+      "Accounting (macc)",
+      "Accounting, finance and economics"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "adult education": {
+    "sources": [
+      "Adult education certificate",
+      "Adult education med"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "aeronautics": {
+    "sources": [
+      "Aerospace engineering first college aeronautics program in the country.",
+      "William e. boeing department of aeronautics & astronautics"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "aerospace engineering": {
+    "sources": [
+      "Ann and h.j. smead aerospace engineering sciences",
+      "Ms in aerospace engineering and mechanics (online)",
+      "Aerospace studies program",
+      "Aerospace engineering first college aeronautics program in the country.",
+      "Phd in aerospace engineering and mechanics (primarily online)",
+      "Mechanical and aerospace engineering",
+      "William e. boeing department of aeronautics & astronautics"
+    ],
+    "parents": [
+      "engineering",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "african american studies": {
+    "sources": [
+      "Black study",
+      "African american studies",
+      "African american studies program",
+      "African american studies (bachelor’s)",
+      "African, african american and diaspora studies"
+    ],
+    "parents": [
+      "social sciences",
+      "business",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "africana studies": {
+    "sources": [
+      "Africana studies",
+      "5/7/24 department of africana and american studies",
+      "Africana and black studies",
+      "4/22/24 africana and american studies"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "american studies": {
+    "sources": [
+      "5/7/24 department of africana and american studies",
+      "4/22/24 africana and american studies"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "analytics": {
+    "sources": [
+      "Business information systems and analytics",
+      "Master of accountancy and analytics (macc)"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "anatomy": {
+    "sources": [
+      "Genetics, cell biology and anatomy",
+      "Cell systems & anatomy"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "anthropology": {
+    "sources": [
+      "Anthropology: ba; ma; minor",
+      "Cultural and natural resource management (anthropology & geography)",
+      "Anthropology undergraduate minor",
+      "Anthropology and geography",
+      "Sociology and anthropology",
+      "Sociology, anthropology and criminal justice",
+      "History & anthropology",
+      "Geography and anthropology",
+      "3/7/25 department of anthropology"
+    ],
+    "parents": [
+      "social sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "applied linguistics": {
+    "sources": [
+      "Languages, cultures & applied linguistics",
+      "Ph.d. in applied linguistics and second language acquisition",
+      "M.a. in applied linguistics & second language acquisition – advanced study"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "architectural engineering": {
+    "sources": [
+      "Civil, architectural and environmental engineering (caee)",
+      "Civil, environmental and architectural engineering",
+      "Architectural engineering, minor",
+      "Architectural engineering, bs"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "art history": {
+    "sources": [
+      "History of art",
+      "Art and art history",
+      "Art history (ba, ma)",
+      "Art, art history, film studies, digital storytelling",
+      "Art & art history"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "asian american studies": {
+    "sources": [
+      "Asian american studies",
+      "Asian american & diaspora studies asian comparative studies south asian studies"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "asian languages": {
+    "sources": [
+      "Asian and near eastern languages",
+      "B.a., asian languages and cultures",
+      "Asian languages & civilizations"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "asian law": {
+    "sources": [
+      "Asian and comparative law ll.m.",
+      "Asian law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "asian studies": {
+    "sources": [
+      "Asian studies: ba; minor",
+      "Asian and middle eastern studies",
+      "1/26/22 asian studies program"
+    ],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "astronomy": {
+    "sources": [
+      "Physics & astronomy",
+      "Physics and astronomy"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "audiology": {
+    "sources": [
+      "Communication sciences & disorders (comd)",
+      "Audiology aud",
+      "Speech-language pathology and audiology",
+      "Communication sciences and disorders"
+    ],
+    "parents": [
+      "public health",
+      "health sciences",
+      "education"
+    ],
+    "variations": []
+  },
+  "behavior analysis": {
+    "sources": [
+      "Special education and behavior analysis",
+      "Behavior analysis (psychology)"
+    ],
+    "parents": [
+      "education",
+      "arts"
+    ],
+    "variations": []
+  },
+  "behavioral health": {
+    "sources": [
+      "Behavioral health & nutrition",
+      "The department of psychology, counseling, and behavioral health",
+      "Health promotion, education, & behavior (hpeb)"
+    ],
+    "parents": [
+      "health sciences",
+      "social sciences",
+      "public health"
+    ],
+    "variations": []
+  },
+  "biochemistry": {
+    "sources": [
+      "Biochemistry & molecular genetics",
+      "Biochemistry and molecular biology",
+      "B.s., biochemistry",
+      "Chemistry and biochemistry",
+      "Biochemistry & structural biology",
+      "Biochemistry & molecular biology",
+      "Biochemistry and molecular biophysics benjamin a. garcia, phd",
+      "B.a. - biochemical and biophysical sciences (biochemistry)",
+      "Chemistry & biochemistry",
+      "B biochemistry biomedical engineering biophysics biostatistics",
+      "B.a., biochemistry"
+    ],
+    "parents": [
+      "medicine",
+      "natural sciences",
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "biological engineering": {
+    "sources": [
+      "Chemical and biological engineering",
+      "Chemical, biological, and bio engineering (cbbe)"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "biology": {
+    "sources": [
+      "Biology/dentistry preparation",
+      "M.s., biology",
+      "Biology/veterinary preparation",
+      "B.s., biology: plant biology",
+      "B.s., biology: physiology",
+      "B.a., biology",
+      "B.s., biology: ecology, evolution, and conservation",
+      "Biology/physician assistant preparation",
+      "Biology bs/mba",
+      "Biology/pharmacy preparation",
+      "Biology/physical therapy preparation",
+      "Biology/osteopathic medicine preparation",
+      "Phd, biology",
+      "Biology ba/ms in education",
+      "Dr. jennifer brigati chair, division of natural sciences, professor of biology view more",
+      "Dr. david unger associate professor of biology view more",
+      "Biology/medicine preparation",
+      "Biology/podiatry preparation",
+      "B.s., biology: general",
+      "Natural sciences & mathematics"
+    ],
+    "parents": [
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "biomedical engineering": {
+    "sources": [
+      "Biomedical engineering (masters and phd)",
+      "Biomedical engineering",
+      "Biomedical engineering uniting top programs in medicine and engineering.",
+      "B biochemistry biomedical engineering biophysics biostatistics"
+    ],
+    "parents": [
+      "health sciences",
+      "natural sciences",
+      "engineering",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "biomedical sciences": {
+    "sources": [
+      "Biomedical sciences - laboratory research and management (masters)",
+      "Biomedical sciences (phd)",
+      "Biological and biomedical sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "biostatistics": {
+    "sources": [
+      "Epidemiology/biostatistics (epid/bios)",
+      "Biostatistics (bst)",
+      "Biostatistics, epidemiology and environmental health sciences",
+      "Epidemiology & biostatistics",
+      "B biochemistry biomedical engineering biophysics biostatistics"
+    ],
+    "parents": [
+      "public health",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "black studies": {
+    "sources": [
+      "Black study",
+      "Africana and black studies"
+    ],
+    "parents": [
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "buddhist studies": {
+    "sources": [
+      "Phd, buddhist studies",
+      "M.a., buddhist studies"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "business administration": {
+    "sources": [
+      "Bs-real estate/master of business administration (bs-re/mba)",
+      "B.s.b.a. in management",
+      "Business administration (bs): operations/supply chain management",
+      "Bs-human resource management/master of business administration (bs-hrm/mba)",
+      "Business administration (bs): business analytics concentration",
+      "Bs-management information systems/master of business administration (bs-mis/mba)",
+      "Bs-marketing/master of business administration (bs-mar/mba)",
+      "Business administration (mba)",
+      "Bs-finance/master of business administration (bs-fin/mba)",
+      "Management & strategic leadership (bba)",
+      "B.s.b.a. in business administration and law",
+      "Business administration (bs)",
+      "Master of business administration (mba)",
+      "Business administration (bs): information technology concentration",
+      "Bs-risk management/insurance/master of business administration (bs-rmi/mba)"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "business analytics": {
+    "sources": [
+      "Business administration (bs): business analytics concentration",
+      "Information systems and business analytics",
+      "Marketing and business analytics",
+      "Business analytics (ms-ba)",
+      "Business analytics & technology management",
+      "Master of business analytics (mban)",
+      "Hslopez school of business analytics",
+      "Business analytics (bba)"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "business information systems": {
+    "sources": [
+      "Business information systems and analytics",
+      "Business information systems department"
+    ],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "business intelligence": {
+    "sources": [
+      "Business intelligence"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "business law": {
+    "sources": [
+      "Business of law",
+      "Business and corporate law",
+      "Marketing, quantitative analysis and business law",
+      "Corporate, business, and transactional law",
+      "Accounting and business law",
+      "Business law clinic",
+      "Ll.m. in american law ll.m. in business law ll.m. in environmental law",
+      "Business law center"
+    ],
+    "parents": [
+      "law",
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "business management": {
+    "sources": [
+      "Business management",
+      "Sport business management",
+      "Integrated business"
+    ],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "cell biology": {
+    "sources": [
+      "Genetics, cell biology and anatomy",
+      "Cell and cancer biology",
+      "Cell & developmental biology",
+      "Cell biology and physiology david w. piston, phd"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "cellular physiology": {
+    "sources": [
+      "Department of cellular & integrative physiology",
+      "Cellular and integrative physiology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "chemical engineering": {
+    "sources": [
+      "Chemical and biological engineering",
+      "Chemical engineering engineering matter to change the world.",
+      "Chemical, biological, and bio engineering (cbbe)"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "chemistry": {
+    "sources": [
+      "B.a., chemistry",
+      "Phd, chemistry",
+      "Chemistry and biochemistry",
+      "Chemistry minor",
+      "B.s., chemistry: acs certified",
+      "Chemistry & biochemistry",
+      "Natural sciences & mathematics"
+    ],
+    "parents": [
+      "natural sciences",
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "chicano studies": {
+    "sources": [
+      "Chicana/o studies",
+      "Chicana and chicano studies",
+      "Chicano-latino studies"
+    ],
+    "parents": [
+      "humanities",
+      "business",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "child development": {
+    "sources": [
+      "Child development",
+      "Early intervention",
+      "Special education and child development",
+      "Child and adolescent development",
+      "Child welfare academy"
+    ],
+    "parents": [
+      "social sciences",
+      "health sciences",
+      "education"
+    ],
+    "variations": []
+  },
+  "cinema studies": {
+    "sources": [
+      "Cinema studies & moving image arts",
+      "B.a., cinema and media studies"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "civil engineering": {
+    "sources": [
+      "Civil engineering, ms",
+      "Civil, architectural and environmental engineering (caee)",
+      "Civil engineering, ph.d.",
+      "Civil engineering & construction management",
+      "Doctor of philosophy in civil & environmental engineering",
+      "Civil, environmental and architectural engineering",
+      "Civil engineering, minor",
+      "Civil and environmental engineering",
+      "Online master's degrees in civil engineering",
+      "Civil engineering, bs"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "classics": {
+    "sources": [
+      "Classical civilization classics, greek and latin latin",
+      "Classics and general humanities"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "clinical nutrition": {
+    "sources": [
+      "Athletic training and clinical nutrition",
+      "Clinical nutrition msmsdi"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "communication": {
+    "sources": [
+      "Master of arts in communication (ma) (thesis/non-thesis)",
+      "Communication and media",
+      "Journalism and communication"
+    ],
+    "parents": [
+      "arts",
+      "education",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "communication disorders": {
+    "sources": [
+      "Speech-language pathology ms",
+      "Communication sciences & disorders (comd)",
+      "Communication sciences and disorders"
+    ],
+    "parents": [
+      "health sciences",
+      "public health",
+      "education"
+    ],
+    "variations": []
+  },
+  "community health": {
+    "sources": [
+      "Scn195 community health",
+      "Health policy and community health"
+    ],
+    "parents": [
+      "nursing",
+      "public health"
+    ],
+    "variations": []
+  },
+  "community medicine": {
+    "sources": [
+      "Family & community medicine",
+      "F family and community medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "comparative law": {
+    "sources": [
+      "Asian and comparative law ll.m.",
+      "Asian law",
+      "International and comparative law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "comparative literature": {
+    "sources": [
+      "B.a., comparative literature",
+      "Comparative literature & intercultural studies",
+      "3/3/25 comparative literature",
+      "English and comparative literature",
+      "English, comparative literature, and linguistics"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "computer engineering": {
+    "sources": [
+      "Department: Computer engineering bs",
+      "Electrical and computer engineering",
+      "Bachelor of science in computer engineering",
+      "Computer engineering & computer science",
+      "Electrical & computer engineering we are the people powering innovation.",
+      "Electrical, computer and energy engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "computer science": {
+    "sources": [
+      "Computer science (cs)",
+      "Mathematics, computer science, and digital forensics",
+      "View major computer science",
+      "Computer engineering & computer science",
+      "Computer science",
+      "Combined bachelor's/master's in computer science & engineering (bs/ms)"
+    ],
+    "parents": [
+      "engineering",
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "conservation": {
+    "sources": [
+      "B.s., biology: ecology, evolution, and conservation"
+    ],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "construction engineering": {
+    "sources": [
+      "Construction engineering, bs",
+      "Construction engineering, minor"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "construction management": {
+    "sources": [
+      "Construction management certificate",
+      "Civil engineering & construction management"
+    ],
+    "parents": [
+      "management",
+      "engineering"
+    ],
+    "variations": []
+  },
+  "corporate law": {
+    "sources": [
+      "Business and corporate law",
+      "Corporate, business, and transactional law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "counseling": {
+    "sources": [
+      "Counseling and human services",
+      "Counseling and school psychology",
+      "The department of psychology, counseling, and behavioral health",
+      "Advanced studies in education and counseling",
+      "Counseling and higher education",
+      "Educational psychology, counseling, and special education",
+      "Counseling and educational leadership",
+      "Counseling, special education and community",
+      "Clinical mental health counseling",
+      "Counseling and human development services",
+      "Educational studies in psychology, research methodology, and counseling"
+    ],
+    "parents": [
+      "arts",
+      "education",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "creative writing": {
+    "sources": [
+      "Creative writing & literary arts",
+      "English creative writing rhetoric global culture",
+      "English: literature, teaching, pre-law, and creative & professional writing",
+      "M.f.a., english: creative writing",
+      "Creative writing (ba track, mfa)"
+    ],
+    "parents": [
+      "arts",
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "criminal justice": {
+    "sources": [
+      "Criminal justice",
+      "Criminology and criminal justice",
+      "Sociology, social work and criminal justice criminal justice sociology social work",
+      "Sociology, anthropology and criminal justice",
+      "Criminal justice, social work, & sociology",
+      "The department of criminal justice",
+      "Criminal justice and criminology"
+    ],
+    "parents": [
+      "law",
+      "social sciences",
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "criminology": {
+    "sources": [
+      "Criminology and criminal justice",
+      "Sociology and criminology",
+      "Criminal justice and criminology"
+    ],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "cultural studies": {
+    "sources": [
+      "Asian studies: ba; minor",
+      "Languages and cultural studies",
+      "Black study",
+      "Ph.d. in literary & cultural studies",
+      "World languages and cultures",
+      "M.a., japanese",
+      "Alaska native studies",
+      "B.a., middle eastern studies: comparative civilizations",
+      "B.a., russian language, literature, and culture",
+      "Media and cultural studies",
+      "4/22/24 africana and american studies"
+    ],
+    "parents": [
+      "social sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "dance": {
+    "sources": [
+      "Dance (ba)",
+      "Theatre and dance (school of the arts)",
+      "3/25/25 department of theatre and dance",
+      "Theatre and dance",
+      "The artsfilm & media studiestheatre & dancevisual art"
+    ],
+    "parents": [
+      "arts",
+      "education"
+    ],
+    "variations": []
+  },
+  "data analysis": {
+    "sources": [
+      "Business analytics (bba)"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "data science": {
+    "sources": [
+      "D data science institute dermatology developmental biology",
+      "Data science",
+      "Statistics & data science"
+    ],
+    "parents": [
+      "medicine",
+      "natural sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "deaf studies": {
+    "sources": [
+      "Deaf studies and deaf education",
+      "Deaf and hard of hearing med and licensure"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "decision science": {
+    "sources": [
+      "B.s. in decision science"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "developmental biology": {
+    "sources": [
+      "B.s., biology: molecular, cellular, and develpmental",
+      "Developmental biology, edward mallinckrodt dept. of lilianna solnica-krezel, phd",
+      "D data science institute dermatology developmental biology",
+      "Cell & developmental biology"
+    ],
+    "parents": [
+      "natural sciences",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "developmental psychology": {
+    "sources": [
+      "Developmental psychology phd",
+      "Developmental psychology undergraduate minor",
+      "Developmental psychology bs / ba"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "diaspora studies": {
+    "sources": [
+      "Asian american & diaspora studies asian comparative studies south asian studies",
+      "African, african american and diaspora studies"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "dietetics": {
+    "sources": [
+      "nutrition and dietetics (bs)",
+      "Nutritional sciences",
+      "Nutrition, food, and dietetics: bs; ms; certificate; minor"
+    ],
+    "parents": [
+      "health sciences",
+      "public health",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "digital humanities": {
+    "sources": [
+      "Institute for digital research in the humanities",
+      "Digital humanities program"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "early childhood education": {
+    "sources": [
+      "Early childhood education med (licensure)",
+      "Early childhood education, b.a.",
+      "Early childhood bs",
+      "Special education, early childhood & prevention science (secp)",
+      "Special education collaborativemultiple abilitiesearly childhood spegift & talentedsevere",
+      "Early childhood education additional license"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "earth science": {
+    "sources": [
+      "B.a. - earth science",
+      "Ear 105 - earth science or"
+    ],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "ecology": {
+    "sources": [
+      "Environment, ecology and energy program (curriculum)",
+      "B.s., biology: ecology, evolution, and conservation"
+    ],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "economics": {
+    "sources": [
+      "Law and economics",
+      "B.s., economics",
+      "Philosophy, politics, and economics",
+      "Economics (bachelor’s, master’s, doctoral)",
+      "Economics department",
+      "Economics programs",
+      "Economics: ba; certificate; ma; minor",
+      "Economics (ba)",
+      "Finance and economics",
+      "Economics (bs)",
+      "Accounting, finance and economics",
+      "Economics & finance",
+      "Political science economics political science public administration (minor)",
+      "B.a., economics",
+      "Phd, economics"
+    ],
+    "parents": [
+      "law",
+      "social sciences",
+      "arts",
+      "humanities",
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "education policy": {
+    "sources": [
+      "No. 9 education policy",
+      "Education policy and leadership phd",
+      "Education policy and leadership - executive phd cohort program",
+      "Education policy studies"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "educational administration": {
+    "sources": [
+      "Education policy and leadership - executive phd cohort program",
+      "No. 5 educational administration and supervision",
+      "Teacher education and administration"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "educational leadership": {
+    "sources": [
+      "Educational leadership, research and technology",
+      "Educational leadership and policy analysis",
+      "Educational leadership and research methodology",
+      "Counseling and educational leadership",
+      "Educational and organizational leadership development",
+      "Educational leadership, evaluation and organizational development (lead)",
+      "Educational leadership, policy, and technology studies",
+      "Educational leadership, policy, and human development"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "educational policy": {
+    "sources": [
+      "Educational leadership, policy, and technology studies",
+      "Educational leadership, policy, and human development"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "educational psychology": {
+    "sources": [
+      "Educational psychology research minor",
+      "Educational psychology, counseling, and special education",
+      "No. 6 educational psychology",
+      "Educational studies in psychology, research methodology, and counseling",
+      "Applied psychology in educational and community settings minor"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "election law": {
+    "sources": [
+      "Election law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "electrical engineering": {
+    "sources": [
+      "Doctor of philosophy in electrical engineering",
+      "Master of science in electrical engineering: non-thesis option",
+      "Electrical and computer engineering",
+      "Electrical & computer engineering we are the people powering innovation.",
+      "Electrical, computer and energy engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "elementary education": {
+    "sources": [
+      "Elementary education foundations bs",
+      "No. 10 elementary and secondaryteacher education",
+      "Elementary education ma/phd",
+      "Early, elementary, middle and physical education",
+      "Elementary education (bs) – panama city campus",
+      "Elementary, middle & secondary teacher education (emsted)",
+      "Elementary education, b.a.",
+      "Curriculum & instruction elementary educationsecondary education",
+      "Elementary education (combined bs/ms pathway)",
+      "Reading and elementary education (reel)"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "emergency medicine": {
+    "sources": [
+      "Emergency medicine opeolu m. adeoye, md",
+      "E emergency medicine endocrinology and molecular medicine epidemiology & social sciences"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "english": {
+    "sources": [
+      "B.a., english: language and literature",
+      "English, literature",
+      "English: literature, teaching, pre-law, and creative & professional writing",
+      "M.f.a., english: creative writing",
+      "English department",
+      "M.a., english: teachers of english to speakers of other languages",
+      "English, comparative literature, and linguistics"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "entrepreneurship": {
+    "sources": [
+      "B.s.b.a. in innovation leadership and entrepreneurship",
+      "Entrepreneurship department",
+      "Health sciences entrepreneurship",
+      "Master of innovation leadership and entrepreneurship",
+      "Marketing and entrepreneurship",
+      "Entrepreneurship (bba)",
+      "Mendoza school of business explore the minor in innovation & entrepreneurship minor",
+      "Entrepreneurship and innovation",
+      "Marketing & entrepreneurship",
+      "Innovation and entrepreneurship",
+      "Management, innovation, and entrepreneurship",
+      "Management and entrepreneurship"
+    ],
+    "parents": [
+      "business",
+      "management",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "environmental engineering": {
+    "sources": [
+      "Civil, architectural and environmental engineering (caee)",
+      "Bachelor of science in environmental engineering",
+      "View major environmental engineering",
+      "Doctor of philosophy in civil & environmental engineering",
+      "Civil, environmental and architectural engineering",
+      "Environmental engineering, bs",
+      "Environmental engineering, ms",
+      "Civil and environmental engineering",
+      "Environmental and water resources engineering, minor"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "environmental health sciences": {
+    "sources": [
+      "Biostatistics, epidemiology and environmental health sciences"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "environmental law": {
+    "sources": [
+      "Climate, environmental, and energy law",
+      "Ll.m. in american law ll.m. in business law ll.m. in environmental law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "environmental science": {
+    "sources": [
+      "Geography & the environment",
+      "B.a. - earth science"
+    ],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "epidemiology": {
+    "sources": [
+      "Doctor of public health (drph)",
+      "Epidemiology/biostatistics (epid/bios)",
+      "Chronic disease epidemiology",
+      "Epidemiology (masters)",
+      "Public health graduate program (ms and phd)",
+      "E emergency medicine endocrinology and molecular medicine epidemiology & social sciences",
+      "Epidemiology of microbial diseases",
+      "Biostatistics, epidemiology and environmental health sciences",
+      "Epidemiology & biostatistics",
+      "Epidemiology (epi)"
+    ],
+    "parents": [
+      "public health",
+      "health sciences",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "ethnic studies": {
+    "sources": [
+      "Department: Ethnic studies program",
+      "Ethnic studies: ba; certificate; minors",
+      "Race, gender, and ethnic studies"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "event management": {
+    "sources": [
+      "Hospitality, tourism, and event management",
+      "Hospitality and tourism management"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "exercise science": {
+    "sources": [
+      "Exercise science (exsc)",
+      "Kinesiology exercise sciencephysical education",
+      "Department: Parks, recreation, exercise & sport science",
+      "Exercise science",
+      "Exercise and sport science",
+      "Exercise science, b.s.",
+      "Exercise science and sports science",
+      "Human movement science",
+      "Human performance and sport sciences"
+    ],
+    "parents": [
+      "public health",
+      "education",
+      "health sciences",
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "family medicine": {
+    "sources": [
+      "Family medicine",
+      "Family & community medicine",
+      "F family and community medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "family nurse practitioner": {
+    "sources": [
+      "Master of science in nursing family nurse practitioner and pediatric nurse practitioner",
+      "Post-master's certificate family nurse practitioner and pediatric nurse practitioner"
+    ],
+    "parents": [
+      "nursing"
+    ],
+    "variations": []
+  },
+  "family studies": {
+    "sources": [
+      "Family & consumer studies",
+      "Family, gender, and sexuality"
+    ],
+    "parents": [
+      "social sciences",
+      "law"
+    ],
+    "variations": []
+  },
+  "film studies": {
+    "sources": [
+      "Film and television studies program",
+      "Film & media studies",
+      "Art, art history, film studies, digital storytelling",
+      "Theatre and film studies",
+      "Film, theatre, and dance",
+      "The artsfilm & media studiestheatre & dancevisual art"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "finance": {
+    "sources": [
+      "Finance & dr. p. phillips school of real estate",
+      "Small business finance",
+      "Finance and law",
+      "Accounting & finance department",
+      "Applied investments",
+      "Finance (bba)",
+      "Bs-finance/master of business administration (bs-fin/mba)",
+      "Bs-finance/ms-finance (bs/msf)",
+      "Accounting and finance",
+      "Finance and economics",
+      "B.s.b.a. in finance (financial planning concentration)",
+      "Finance (msf)",
+      "Accounting, finance and economics",
+      "Bs-real estate/ms-finance (bs-re/msf)",
+      "Economics & finance",
+      "Finance and insurance",
+      "Finance banking and risk management investments"
+    ],
+    "parents": [
+      "management",
+      "law",
+      "business"
+    ],
+    "variations": []
+  },
+  "fine arts": {
+    "sources": [
+      "Performing and fine arts",
+      "Bachelor of fine arts",
+      "Fine & performing arts"
+    ],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "fluid mechanics": {
+    "sources": [
+      "Mechanical engineering, bs"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "food science": {
+    "sources": [
+      "Food and nutrition"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "francophone studies": {
+    "sources": [
+      "French & francophone studies",
+      "French, francophone & italian studies",
+      "B.a. in french and francophone studies"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "gender studies": {
+    "sources": [
+      "Women's and gender studies: bs; minor",
+      "Gender & race studies",
+      "Women's, gender, and sexuality studies",
+      "Women’s and gender studies",
+      "Family, gender, and sexuality",
+      "Gender, women’s + sexuality studies",
+      "Gender and sexuality studies",
+      "4/22/24 global gender and sexuality studies",
+      "Race, gender, and ethnic studies",
+      "Women & gender studies, b.a.",
+      "Gender & women's studies"
+    ],
+    "parents": [
+      "social sciences",
+      "arts",
+      "law",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "genetics": {
+    "sources": [
+      "Genetics, cell biology and anatomy",
+      "Genetics, james s. mcdonnell dept. of ting wang, phd"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "geography": {
+    "sources": [
+      "Geography & the environment",
+      "Geography and environment",
+      "Cultural and natural resource management (anthropology & geography)",
+      "Anthropology and geography",
+      "Geography and sustainable development",
+      "Geography (bachelor’s, master’s, doctoral)",
+      "Geography and environmental studies",
+      "Geography and the environment, b.a. & m.a.",
+      "Geography and anthropology",
+      "Geography & environmental systems"
+    ],
+    "parents": [
+      "natural sciences",
+      "humanities",
+      "arts",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "geological sciences": {
+    "sources": [
+      "B.s. - geophysics",
+      "Geological sciences"
+    ],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "geology": {
+    "sources": [
+      "B.s. - geology",
+      "B.a. - earth science"
+    ],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "geospatial science": {
+    "sources": [
+      "Intelligence studies, geospatial science, political science and history"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "geotechnical engineering": {
+    "sources": [
+      "Civil engineering, ph.d."
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "german studies": {
+    "sources": [
+      "German and russian",
+      "Slavic, german & eurasian studies"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "gerontology": {
+    "sources": [
+      "Aging studies (formerly gerontology)",
+      "Gerontology: bs; certificate; minor",
+      "Gerontology, m.s."
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "global studies": {
+    "sources": [
+      "Global studies (curriculum)",
+      "Global and international studies ( ba)"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "gynecology": {
+    "sources": [
+      "Obstetrics & gynecology",
+      "Obstetrics and gynecology dineo khabele, md"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "health behavior science": {
+    "sources": [
+      "health behavior science (bs)",
+      "• health behavior science - health and disability concentration (bs)"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "health management": {
+    "sources": [
+      "Health services policy & management (hspm)",
+      "Health policy and management (hpm)"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "health policy": {
+    "sources": [
+      "Doctor of public health (drph)",
+      "Public health graduate program (ms and phd)",
+      "Health policy and community health",
+      "Health policy and management (hpm)"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "health promotion": {
+    "sources": [
+      "Health behavior and health promotion",
+      "Kinesiology, health promotion and recreation",
+      "Health promotion, education, & behavior (hpeb)"
+    ],
+    "parents": [
+      "public health",
+      "education"
+    ],
+    "variations": []
+  },
+  "healthcare": {
+    "sources": [
+      "Master of science in nursing (msn)",
+      "Physician assistant studies",
+      "The generic nursing (bsn) program for individuals who are preparing to become a nurse."
+    ],
+    "parents": [
+      "nursing",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "hearing science": {
+    "sources": [
+      "Speech and hearing science (phd)"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "hispanic studies": {
+    "sources": [
+      "Phd, hispanic studies",
+      "B.a. in hispanic studies"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "history": {
+    "sources": [
+      "History & anthropology",
+      "Master of arts in history and political thought, history concentration (ma) (thesis/non-thesis)",
+      "6/3/24 department of history",
+      "History and philosophy history history, secondary teaching endorsement",
+      "B.a./b.s. in ethics, history and public policy (in conjunction with the department of history)",
+      "Intelligence studies, geospatial science, political science and history"
+    ],
+    "parents": [
+      "humanities",
+      "arts",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "hospitality management": {
+    "sources": [
+      "Hospitality, tourism, and event management",
+      "Hospitality and tourism management"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "human development": {
+    "sources": [
+      "Human development and organizational studies in education",
+      "Counseling and human development services",
+      "Human development and family science",
+      "Educational leadership, policy, and human development"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "human movement": {
+    "sources": [
+      "Human movement and rehabilitation sciences (ms)",
+      "Extended realities (ms) — concentration in human movement",
+      "Human movement science"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "human resource management": {
+    "sources": [
+      "Bs-human resource management/master of business administration (bs-hrm/mba)",
+      "Human resource &/or organizational behavior"
+    ],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "human rights": {
+    "sources": [
+      "Social justice and human rights",
+      "International human rights advocacy clinic"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "immunology": {
+    "sources": [
+      "Pathology, microbiology, and immunology",
+      "Microbiology, immunology & molecular genetics",
+      "Pathology and immunology eric j. huang, md, phd",
+      "Medical microbiology and immunology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "indigenous studies": {
+    "sources": [
+      "American indigenous studies",
+      "7/30/24 department of indigenous studies",
+      "Alaska native studies"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "industrial engineering": {
+    "sources": [
+      "Department: Industrial and systems engineering",
+      "View major industrial engineering",
+      "Industrial & operations engineering optimizing complex systems for the common good."
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "information science": {
+    "sources": [
+      "Information science & systems"
+    ],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "insurance": {
+    "sources": [
+      "Risk management/insurance",
+      "Risk management and insurance (ms-rmi)",
+      "Bs-risk management/insurance/ms-risk management and insurance (bs/ms-rmi)",
+      "Finance and insurance",
+      "Bs-risk management/insurance/master of business administration (bs-rmi/mba)"
+    ],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "integrated health sciences": {
+    "sources": [
+      "• integrated health sciences (bs)",
+      "• integrated health sciences - pre-occupational therapy concentration (bs)",
+      "Nutrition and integrated health sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "integrative physiology": {
+    "sources": [
+      "Department of cellular & integrative physiology",
+      "Cellular and integrative physiology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "intellectual property law": {
+    "sources": [
+      "Intellectual property/technology law",
+      "Intellectual property law and policy ll.m."
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "interdisciplinary studies": {
+    "sources": [
+      "Department: Sociology and interdisciplinary studies",
+      "Interdisciplinary liberal arts",
+      "Interdisciplinary studies - general science"
+    ],
+    "parents": [
+      "social sciences",
+      "arts",
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "international affairs": {
+    "sources": [
+      "Public and international affairs",
+      "International affairs*(bachelor’s, master’s)"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "international business": {
+    "sources": [
+      "International business and trade law",
+      "International business (bba)",
+      "International business"
+    ],
+    "parents": [
+      "law",
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "international law": {
+    "sources": [
+      "Public international law",
+      "Law of international watercourses",
+      "International and comparative law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "international relations": {
+    "sources": [
+      "Global governance",
+      "Political science and international relations (cmist)",
+      "Political science, b.a. & m.a.",
+      "International relations theory",
+      "Middle east politics"
+    ],
+    "parents": [
+      "law",
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "international studies": {
+    "sources": [
+      "Global and international studies ( ba)",
+      "International studies and global affairs"
+    ],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "italian studies": {
+    "sources": [
+      "French, francophone & italian studies",
+      "B.a., italian studies"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "japanese": {
+    "sources": [
+      "B.a., japanese",
+      "Japanese, b.a.",
+      "M.a., japanese",
+      "Phd, japanese"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "journalism": {
+    "sources": [
+      "Journalism and media communication",
+      "Journalism and communication",
+      "Journalism and mass communications"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "justice studies": {
+    "sources": [
+      "Politics, administration, and justice",
+      "Justice studies"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "k-12 education": {
+    "sources": [
+      "Middle, secondary and k-12 education (mdsk)"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "kinesiology": {
+    "sources": [
+      "Kinesiology and applied physiology",
+      "Kinesiology exercise sciencephysical education",
+      "No. 9 kinesiology andhealth education",
+      "Kinesiology, health promotion and recreation",
+      "Exercise science",
+      "Exercise science, b.s.",
+      "Kinesiology bs kinesiology bs kinesiology bs",
+      "Human movement science",
+      "Kinesiology and recreation administration"
+    ],
+    "parents": [
+      "health sciences",
+      "education",
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "language studies": {
+    "sources": [
+      "French and italian",
+      "B.a., japanese",
+      "Modern language studies website",
+      "B.a., french studies",
+      "Master of arts in language, literature and translation (ma) (thesis)",
+      "6/4/24 department of linguistics"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "latin": {
+    "sources": [
+      "Classical civilization classics, greek and latin latin",
+      "Ancient greek latin arabic"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "latin american studies": {
+    "sources": [
+      "Latino and latin american studies",
+      "Latin american studies (curriculum)",
+      "Latin american and latino/a studies program",
+      "Latin american studies, b.a."
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "latino studies": {
+    "sources": [
+      "Spanish and latino studies",
+      "Latino and latin american studies",
+      "Chicano-latino studies",
+      "Latin american and latino/a studies program"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "leadership": {
+    "sources": [
+      "Master of innovation leadership and entrepreneurship",
+      "Leadership in organizations",
+      "Education policy and leadership phd",
+      "Global innovation and leadership",
+      "Civic life and leadership",
+      "Education policy and leadership - executive phd cohort program"
+    ],
+    "parents": [
+      "business",
+      "education",
+      "management",
+      "arts"
+    ],
+    "variations": []
+  },
+  "learning technologies": {
+    "sources": [
+      "Learning technologies, design & school library media",
+      "Literacy, library science, and learning technologies"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "liberal studies": {
+    "sources": [
+      "Liberal studies",
+      "Liberal studies: ba",
+      "Liberal studies, b.a."
+    ],
+    "parents": [
+      "education",
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "library science": {
+    "sources": [
+      "Educational technology and library science",
+      "Literacy, library science, and learning technologies"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "linguistics": {
+    "sources": [
+      "Linguistics, b.a. & m.a.",
+      "French language & linguistics",
+      "Spanish and portuguese",
+      "M.a., japanese",
+      "Linguistics and language development",
+      "English, comparative literature, and linguistics",
+      "Linguistics program",
+      "6/4/24 department of linguistics"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "literacy": {
+    "sources": [
+      "Department: Literacy (online)",
+      "Literacy, language and culture",
+      "Literacy, library science, and learning technologies",
+      "Educational foundations and literacy"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "management information systems": {
+    "sources": [
+      "Bs-management information systems/ms-management information systems (bs/ms-mis)",
+      "Management information systems (ms-mis)",
+      "Bs-management information systems/master of business administration (bs-mis/mba)"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "manufacturing engineering": {
+    "sources": [
+      "View major manufacturing engineering",
+      "Manufacturing systems engineering, bs"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "marine biology": {
+    "sources": [
+      "Marine biology"
+    ],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "marine sciences": {
+    "sources": [
+      "Marine sciences",
+      "Earth, marine and environmental sciences"
+    ],
+    "parents": [
+      "arts",
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "marketing": {
+    "sources": [
+      "Management, marketing and general business",
+      "B.s.b.a. in marketing",
+      "Professional sales",
+      "Marketing and entrepreneurship",
+      "Marketing, quantitative analysis and business law",
+      "Marketing and business analytics",
+      "Bs-marketing/master of business administration (bs-mar/mba)",
+      "Sales and marketing",
+      "Marketing, hospitality, and logistics",
+      "Marketing & entrepreneurship",
+      "Marketing (bba)",
+      "Marketing management",
+      "Management and marketing",
+      "Management & marketing"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "mass communications": {
+    "sources": [
+      "Mass communications print media radio and television public relations",
+      "Journalism and mass communications"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "materials engineering": {
+    "sources": [
+      "Materials science & engineering building the materials of the future.",
+      "View major materials engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "materials science": {
+    "sources": [
+      "Mechanical engineering, bs",
+      "Materials science & engineering building the materials of the future.",
+      "Chemical engineering engineering matter to change the world.",
+      "Materials science and engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "mathematics": {
+    "sources": [
+      "Mathematics and physics",
+      "Mathematics, applied mathematics, and statistics",
+      "Mathematics, computer science, and digital forensics",
+      "Natural sciences & mathematics"
+    ],
+    "parents": [
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "mechanical engineering": {
+    "sources": [
+      "Phd in mechanical engineering (online)",
+      "Mechanical engineering, bs",
+      "Mechanical engineering, ms",
+      "Mechanical engineering (meen)",
+      "Bs in mechanical engineering (primarily online)",
+      "Paul m. rady mechanical engineering",
+      "Mechanical engineering, ph.d.",
+      "Mechanical and aerospace engineering",
+      "Accelerated master of mechanical engineering",
+      "Master of science in mechanical engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "mechanics": {
+    "sources": [
+      "Ms in aerospace engineering and mechanics (online)",
+      "Phd in aerospace engineering and mechanics (primarily online)"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "media studies": {
+    "sources": [
+      "Film & media studies",
+      "B.a., cinema and media studies",
+      "Media and cultural studies",
+      "The artsfilm & media studiestheatre & dancevisual art"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "mediation": {
+    "sources": [
+      "Alternative dispute resolution",
+      "Mediation clinic"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "medical laboratory science": {
+    "sources": [
+      "Medical laboratory science, b.s.",
+      "Medical laboratory science ms"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "microbiology": {
+    "sources": [
+      "Scb260 general microbiology",
+      "Pathology, microbiology, and immunology",
+      "Microbiology, immunology & molecular genetics",
+      "Medical microbiology and immunology"
+    ],
+    "parents": [
+      "nursing",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "middle eastern studies": {
+    "sources": [
+      "Middle eastern and islamic studies",
+      "Asian and middle eastern studies",
+      "B.a., middle eastern studies: comparative civilizations",
+      "B.a., middle eastern studies: languages and cultures",
+      "B.a., middle eastern studies: hebrew bible and ancient near east"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "middle education": {
+    "sources": [
+      "Early, elementary, middle and physical education",
+      "Elementary, middle & secondary teacher education (emsted)",
+      "Middle, secondary and k-12 education (mdsk)"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "military science": {
+    "sources": [
+      "Department: Military science program",
+      "Military science"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "modern languages": {
+    "sources": [
+      "Modern languages and literatures",
+      "Communications studies & modern languages",
+      "Modern languages, mat",
+      "Modern language studies website",
+      "Modern and classical languages and literatures",
+      "Modern languages education, b.a."
+    ],
+    "parents": [
+      "arts",
+      "humanities",
+      "education"
+    ],
+    "variations": []
+  },
+  "molecular biology": {
+    "sources": [
+      "B.s., biology: molecular, cellular, and develpmental",
+      "Biochemistry and molecular biology",
+      "Biochemistry & molecular biology"
+    ],
+    "parents": [
+      "natural sciences",
+      "medicine",
+      "arts"
+    ],
+    "variations": []
+  },
+  "molecular genetics": {
+    "sources": [
+      "Biochemistry & molecular genetics",
+      "Microbiology, immunology & molecular genetics"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "music": {
+    "sources": [
+      "Music and theatre arts",
+      "Music, music composition, music education, music history, music theory, music performance",
+      "Mary morgan moore department of music",
+      "4/22/24 music",
+      "Music, hugh hodgson school of",
+      "Bachelor of music",
+      "Music (ba)"
+    ],
+    "parents": [
+      "arts",
+      "education"
+    ],
+    "variations": []
+  },
+  "music performance": {
+    "sources": [
+      "Music, music composition, music education, music history, music theory, music performance",
+      "Music performance",
+      "Music in performance (bm)",
+      "Music with all level certification (bm)"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "neurology": {
+    "sources": [
+      "Neurology jin-moo lee, md, phd",
+      "Neurological sciences"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "neuroscience": {
+    "sources": [
+      "Neuroscience linda j. richards, phd",
+      "W wisconsin institute of neuroscience (wins)",
+      "Psychology and neuroscience",
+      "Bs in neuroscience bs in neuroscience bs in neuroscience",
+      "Neurological sciences",
+      "Neuroscience institute"
+    ],
+    "parents": [
+      "medicine",
+      "natural sciences",
+      "health sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "nursing practice": {
+    "sources": [
+      "Doctor of nursing practice (dnp)",
+      "Doctor of nursing practice — nurse anesthesia (dnp-na)",
+      "Bsn to doctor of nursing practice (bs-dnp)"
+    ],
+    "parents": [
+      "nursing"
+    ],
+    "variations": []
+  },
+  "nutrition": {
+    "sources": [
+      "nutrition and dietetics (bs)",
+      "• nutrition and medical sciences (bs)",
+      "Scl103 concepts in pharmacology and nutrition",
+      "Behavioral health & nutrition",
+      "Nutritional sciences",
+      "Food and nutrition",
+      "Health, nutrition, and food sciences",
+      "Nutrition and integrated health sciences",
+      "Nutrition, food, and dietetics: bs; ms; certificate; minor"
+    ],
+    "parents": [
+      "health sciences",
+      "nursing",
+      "public health",
+      "education",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "obstetrics": {
+    "sources": [
+      "Obstetrics & gynecology",
+      "Obstetrics and gynecology dineo khabele, md"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "occupational therapy": {
+    "sources": [
+      "Occupational science & occupational therapy",
+      "Occupational therapy",
+      "Occupational therapy otd",
+      "• integrated health sciences - pre-occupational therapy concentration (bs)"
+    ],
+    "parents": [
+      "health sciences",
+      "nursing"
+    ],
+    "variations": []
+  },
+  "oceanography": {
+    "sources": [
+      "Marine sciences",
+      "Marine biology"
+    ],
+    "parents": [
+      "arts",
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "operations management": {
+    "sources": [
+      "Business administration (bs): operations/supply chain management",
+      "Information systems and operations management",
+      "Supply chain and operations management",
+      "Healthcare system operations"
+    ],
+    "parents": [
+      "management",
+      "business",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "organizational behavior": {
+    "sources": [
+      "B.s.b.a. in management",
+      "Organizational behavior and human resources",
+      "Leadership in organizations",
+      "Organizational studies",
+      "Management and organizations",
+      "Human resource &/or organizational behavior"
+    ],
+    "parents": [
+      "business",
+      "social sciences",
+      "management"
+    ],
+    "variations": []
+  },
+  "organizational leadership": {
+    "sources": [
+      "Organizational leadership",
+      "Educational and organizational leadership development"
+    ],
+    "parents": [
+      "business",
+      "education"
+    ],
+    "variations": []
+  },
+  "otolaryngology": {
+    "sources": [
+      "Otolaryngology and communication sciences",
+      "Otolaryngology, head and neck surgery",
+      "Otolaryngology craig a. buchman, md"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "paramedicine": {
+    "sources": [
+      "Paramedicine, b.s. online degree completion",
+      "Paramedicine, b.s. with a minor in fire science"
+    ],
+    "parents": [
+      "health sciences",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "pathology": {
+    "sources": [
+      "Pathology, microbiology, and immunology",
+      "Pathology and immunology eric j. huang, md, phd"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "patient care": {
+    "sources": [
+      "Master of science in nursing (msn)",
+      "The generic nursing (bsn) program for individuals who are preparing to become a nurse."
+    ],
+    "parents": [
+      "nursing"
+    ],
+    "variations": []
+  },
+  "pediatric nurse practitioner": {
+    "sources": [
+      "Master of science in nursing family nurse practitioner and pediatric nurse practitioner",
+      "Post-master's certificate family nurse practitioner and pediatric nurse practitioner"
+    ],
+    "parents": [
+      "nursing"
+    ],
+    "variations": []
+  },
+  "performing arts": {
+    "sources": [
+      "Performing and fine arts",
+      "Dance (ba)",
+      "Theatre arts",
+      "Fine & performing arts"
+    ],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "pharmacology": {
+    "sources": [
+      "Pharmacology and experimental neuroscience",
+      "Scl103 concepts in pharmacology and nutrition",
+      "Pharmacology"
+    ],
+    "parents": [
+      "medicine",
+      "nursing",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "philosophy": {
+    "sources": [
+      "Social work - doctor of philosophy",
+      "Communication studies and philosophy",
+      "Psychology and philosophy",
+      "Philosophy, politics, and economics",
+      "Philosophy, b.a.",
+      "Political science, philosophy, & religion",
+      "Michael s. moore walgreen chair co-director, program in law and philosophy",
+      "Philosophy website",
+      "History and philosophy history history, secondary teaching endorsement",
+      "Philosophy and religious studies",
+      "B.a. in philosophy"
+    ],
+    "parents": [
+      "social sciences",
+      "humanities",
+      "law"
+    ],
+    "variations": []
+  },
+  "physical therapy": {
+    "sources": [
+      "Doctor of physical therapy program",
+      "Physical therapy",
+      "Biology/physical therapy preparation",
+      "Physical therapy gammon earhart, phd associate dean for physical therapy"
+    ],
+    "parents": [
+      "health sciences",
+      "nursing",
+      "natural sciences",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "physician assistant studies": {
+    "sources": [
+      "Physician assistant (ms)"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "physics": {
+    "sources": [
+      "Mathematics and physics",
+      "B.s., physics",
+      "M.s., physics",
+      "Physics & astronomy",
+      "Phd, physics",
+      "Natural sciences & mathematics",
+      "Physics and astronomy"
+    ],
+    "parents": [
+      "health sciences",
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "physiology": {
+    "sources": [
+      "Scb204 human anatomy and physiology ii",
+      "B.s., biology: physiology",
+      "Cell biology and physiology david w. piston, phd"
+    ],
+    "parents": [
+      "nursing",
+      "natural sciences",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "plant biology": {
+    "sources": [
+      "B.s., biology: plant biology",
+      "Plant biology"
+    ],
+    "parents": [
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "politics": {
+    "sources": [
+      "Philosophy, politics, and economics",
+      "Politics, administration, and justice"
+    ],
+    "parents": [
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "professional writing": {
+    "sources": [
+      "M.a. in professional writing",
+      "English: literature, teaching, pre-law, and creative & professional writing"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "project management": {
+    "sources": [
+      "It project management",
+      "Master of project management"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "psychiatry": {
+    "sources": [
+      "Neurosciences and psychiatry",
+      "Psychiatry eric j. lenze, md"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "psychology": {
+    "sources": [
+      "Psychology and neuroscience",
+      "Department: Psychology, b.a. & m.a.",
+      "Psychology and philosophy",
+      "The department of psychology, counseling, and behavioral health",
+      "Health psychology",
+      "Children's mental health (psychology)",
+      "Psychological sciences program in communication sciences program in psychology",
+      "Psychology: ba; certificate; ma; minor",
+      "Behavior analysis (psychology)",
+      "Social science: ba"
+    ],
+    "parents": [
+      "natural sciences",
+      "social sciences",
+      "humanities",
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "public administration": {
+    "sources": [
+      "M.p.a. in public administration",
+      "Political science economics political science public administration (minor)",
+      "Askew school of public administration and policy (master’s, doctoral)",
+      "Public administration, b.a. & m.p.a."
+    ],
+    "parents": [
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "public affairs": {
+    "sources": [
+      "Public and international affairs",
+      "Public affairs"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "public policy": {
+    "sources": [
+      "Engineering & public policy",
+      "Technology law & public policy clinic",
+      "Public policy and administration",
+      "Public policy and administration: mppa, certificate",
+      "Administrative law and public policy",
+      "B.a./b.s. in ethics, history and public policy (in conjunction with the department of history)",
+      "Askew school of public administration and policy (master’s, doctoral)"
+    ],
+    "parents": [
+      "engineering",
+      "law",
+      "arts",
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "race studies": {
+    "sources": [
+      "Gender & race studies",
+      "Race, gender, and ethnic studies"
+    ],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "real estate": {
+    "sources": [
+      "Bs-real estate/master of business administration (bs-re/mba)",
+      "Finance & dr. p. phillips school of real estate",
+      "Real estate studies",
+      "Bs-real estate/ms-finance (bs-re/msf)"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "regional planning": {
+    "sources": [
+      "Urban and regional planning",
+      "Urban and regional planning (master’s, doctoral)",
+      "City and regional planning"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "rehabilitation": {
+    "sources": [
+      "Administration, rehabilitation, and postsecondary education",
+      "Orthopedic surgery and rehabilitation",
+      "Physical medicine and rehabilitation"
+    ],
+    "parents": [
+      "education",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "religion": {
+    "sources": [
+      "Study of religion",
+      "Religion, health & human values cpehce",
+      "Political science, philosophy, & religion"
+    ],
+    "parents": [
+      "humanities",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "research methodology": {
+    "sources": [
+      "Educational leadership and research methodology",
+      "Educational studies in psychology, research methodology, and counseling"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "respiratory care": {
+    "sources": [
+      "Respiratory care ms",
+      "Bs in respiratory care bs in respiratory care bs in respiratory care"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "rhetoric": {
+    "sources": [
+      "Rhetoric & composition",
+      "English creative writing rhetoric global culture",
+      "Writing and rhetoric, program in",
+      "M.a. in rhetoric",
+      "Writing studies",
+      "Ph.d. in rhetoric"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "risk management": {
+    "sources": [
+      "Risk management/insurance",
+      "Risk management and insurance (ms-rmi)",
+      "Sport and entertainment law and risk management certificate",
+      "Bs-risk management/insurance/ms-risk management and insurance (bs/ms-rmi)",
+      "Bs-risk management/insurance/master of business administration (bs-rmi/mba)",
+      "Finance banking and risk management investments"
+    ],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "romance languages": {
+    "sources": [
+      "4/22/24 romance languages and literatures",
+      "11/19/24 department of romance languages & literatures"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "school psychology": {
+    "sources": [
+      "Special education, school psychology and early childhood studies",
+      "Counseling and school psychology"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "science education": {
+    "sources": [
+      "Fsu-teach program in secondary science or mathematics teaching",
+      "Center for science, technology, engineering, & mathematics [stem] education (cstem)",
+      "Mathematics, science, and social studies education",
+      "Science, technology, engineering, & mathematics education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "second language acquisition": {
+    "sources": [
+      "Ph.d. in applied linguistics and second language acquisition",
+      "M.a. in applied linguistics & second language acquisition – advanced study"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "secondary education": {
+    "sources": [
+      "Secondary education, mat",
+      "No. 10 elementary and secondaryteacher education",
+      "Secondary education, b.a.",
+      "Fsu-teach program in secondary science or mathematics teaching",
+      "Elementary, middle & secondary teacher education (emsted)",
+      "Middle, secondary and k-12 education (mdsk)",
+      "Curriculum & instruction elementary educationsecondary education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "sexuality studies": {
+    "sources": [
+      "Women's, gender, and sexuality studies",
+      "Family, gender, and sexuality",
+      "Gender, women’s + sexuality studies",
+      "Gender and sexuality studies",
+      "4/22/24 global gender and sexuality studies"
+    ],
+    "parents": [
+      "arts",
+      "law",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "slavic languages": {
+    "sources": [
+      "Germanic and slavic languages and literatures",
+      "M.a., slavic languages & literatures"
+    ],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "slavic studies": {
+    "sources": [
+      "Germanic & slavic studies",
+      "Slavic, german & eurasian studies"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "social justice": {
+    "sources": [
+      "Social justice law center",
+      "Social justice and human rights",
+      "Public interest and poverty law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "social work": {
+    "sources": [
+      "Social work certificate",
+      "Department: The department of social work",
+      "Social work - doctor of philosophy",
+      "Sociology, social work and criminal justice criminal justice sociology social work",
+      "Social work - master of social work",
+      "Criminal justice, social work, & sociology",
+      "Social work and child advocacy",
+      "Ba in social work ba in social work ba in social work",
+      "Child welfare academy"
+    ],
+    "parents": [
+      "health sciences",
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "sociology": {
+    "sources": [
+      "Sociology undergraduate major minor",
+      "Department: Sociology and interdisciplinary studies",
+      "Sociology department",
+      "Sociology (minor|ba|bs|phd)",
+      "Sociology and anthropology",
+      "Sociology (bachelor’s, master’s, doctoral)",
+      "Sociology, social work and criminal justice criminal justice sociology social work",
+      "Sociology and interdisciplinary social sciences",
+      "Sociology, anthropology and criminal justice",
+      "Criminal justice, social work, & sociology",
+      "Sociology and criminology",
+      "Social studies",
+      "Social science: ba"
+    ],
+    "parents": [
+      "social sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "software engineering": {
+    "sources": [
+      "View major software engineering",
+      "Bachelor of science in computer engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "spanish": {
+    "sources": [
+      "B.a., spanish",
+      "Spanish and portuguese",
+      "French italian spanish"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "special education": {
+    "sources": [
+      "Special education, school psychology and early childhood studies",
+      "No. 7 special education",
+      "Special education teaching (combined bs/ms pathway)",
+      "Special education, b.a.",
+      "Educational psychology, counseling, and special education",
+      "Communication sciences and special education",
+      "Counseling, special education and community",
+      "Early intervention",
+      "Special education, early childhood & prevention science (secp)",
+      "Special education and behavior analysis",
+      "Special education and child development",
+      "Special education (online)",
+      "Special education collaborativemultiple abilitiesearly childhood spegift & talentedsevere"
+    ],
+    "parents": [
+      "education",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "speech pathology": {
+    "sources": [
+      "Speech and language pathology",
+      "Communication sciences & disorders (comd)",
+      "Communication sciences and disorders"
+    ],
+    "parents": [
+      "nursing",
+      "public health",
+      "education"
+    ],
+    "variations": []
+  },
+  "speech science": {
+    "sources": [
+      "Speech and hearing science (phd)"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "sport management": {
+    "sources": [
+      "Sport management",
+      "Sport business management",
+      "Sport management uf online",
+      "Sport management certificate",
+      "Sport management (bsm)"
+    ],
+    "parents": [
+      "arts",
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "sport science": {
+    "sources": [
+      "Department: Parks, recreation, exercise & sport science",
+      "Center of excellence for sport science and coach education",
+      "Exercise and sport science"
+    ],
+    "parents": [
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "statistics": {
+    "sources": [
+      "Statistics and operations research",
+      "Mathematics, applied mathematics, and statistics",
+      "Statistics & data science"
+    ],
+    "parents": [
+      "natural sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "structural engineering": {
+    "sources": [
+      "Civil engineering, ph.d.",
+      "Structural engineering, minor"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "supply chain management": {
+    "sources": [
+      "Business administration (bs): operations/supply chain management",
+      "Supply chain and operations management",
+      "Supply chain and information management",
+      "Global supply chain management",
+      "Supply chain management systems"
+    ],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "sustainability": {
+    "sources": [
+      "Environment, society & sustainability"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "sustainable development": {
+    "sources": [
+      "Sustainable international development ll.m.",
+      "Geography and sustainable development"
+    ],
+    "parents": [
+      "law",
+      "arts"
+    ],
+    "variations": []
+  },
+  "systems engineering": {
+    "sources": [
+      "Department: Industrial and systems engineering",
+      "Manufacturing systems engineering, bs"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "tax law": {
+    "sources": [
+      "Tax law ll.m.",
+      "Tax law and business planning"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "teacher education": {
+    "sources": [
+      "Teacher, education, advising, and licensure(teal)",
+      "Teacher education",
+      "Elementary, middle & secondary teacher education (emsted)",
+      "Teacher education and learning sciences",
+      "Teacher education and administration"
+    ],
+    "parents": [
+      "education",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "technology education": {
+    "sources": [
+      "Center for science, technology, engineering, & mathematics [stem] education (cstem)",
+      "Science, technology, engineering, & mathematics education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "technology law": {
+    "sources": [
+      "Technology law & public policy clinic",
+      "Intellectual property/technology law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "tesol": {
+    "sources": [
+      "M.a., english: teachers of english to speakers of other languages",
+      "Certificate in teaching english to speakers of other languages (tesol), undergraduate",
+      "Tesol, m.s."
+    ],
+    "parents": [
+      "humanities",
+      "education"
+    ],
+    "variations": []
+  },
+  "theatre": {
+    "sources": [
+      "Theatre and dance (school of the arts)",
+      "Theatre & musical theatre (ba)",
+      "3/25/25 department of theatre and dance",
+      "Theatre and film studies",
+      "Theatre arts",
+      "Theatre and dance",
+      "The artsfilm & media studiestheatre & dancevisual art"
+    ],
+    "parents": [
+      "arts",
+      "education"
+    ],
+    "variations": []
+  },
+  "thermodynamics": {
+    "sources": [
+      "Mechanical engineering, bs"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "urban planning": {
+    "sources": [
+      "Urban and regional planning",
+      "Urban and regional planning (master’s, doctoral)"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "urban studies": {
+    "sources": [
+      "Urban studies major major",
+      "Urban & regional studies"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "visual art": {
+    "sources": [
+      "Visual art",
+      "The artsfilm & media studiestheatre & dancevisual art"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "wellness studies": {
+    "sources": [
+      "Minor in wellness studies",
+      "Health and wellness studies"
+    ],
+    "parents": [
+      "nursing"
+    ],
+    "variations": []
+  },
+  "women's studies": {
+    "sources": [
+      "Women's and gender studies: bs; minor",
+      "Women's, gender, and sexuality studies",
+      "Women’s and gender studies",
+      "Gender, women’s + sexuality studies",
+      "Women's studies",
+      "Gender & women's studies"
+    ],
+    "parents": [
+      "social sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "writing studies": {
+    "sources": [
+      "Literature and writing studies website",
+      "Writing studies"
+    ],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  }
+}

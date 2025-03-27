@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# my files
+cache/
+archive/
+.cursor*generate_glossary/generation/aol/

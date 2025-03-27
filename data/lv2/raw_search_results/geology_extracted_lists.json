@@ -1,0 +1,1195 @@
+{
+  "level1_term": "geology",
+  "url_verification_status": {
+    "http://catalog.csulb.edu/preview_program.php?catoid=10&poid=5359": false,
+    "https://www.oxy.edu/academics/areas-study/geology": false,
+    "https://dornsife.usc.edu/earth/research/": true,
+    "https://www.stonybrook.edu/commcms/geosciences/research/research_areas": true,
+    "https://serc.carleton.edu/NAGTWorkshops/structure/index.html": true,
+    "https://scripps.ucsd.edu/doctoral/program-areas/geosciences-gs": true,
+    "https://epsci.ucr.edu/": false,
+    "https://www.csulb.edu/earth-science/graduate-programs": true,
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2728": false,
+    "https://epsci.ucr.edu/about": true,
+    "https://climatechange.ucsd.edu/research/research-areas/geosciences-geology.html": true,
+    "https://pasadena.edu/academics/divisions/natural-sciences/areas-of-study/geology.php": true,
+    "https://courses.syracuse.edu/graduate/programs/earth-sciences-phd/": true,
+    "https://www.geo.wvu.edu/research": false,
+    "https://www.geology.pitt.edu/ta-resources": false,
+    "https://ceoas.oregonstate.edu/geology-graduate-program": true,
+    "https://mininggeologyresearch.mines.edu/teaching-and-outreach/": false,
+    "https://www.udel.edu/academics/colleges/ceoe/departments/es/": false,
+    "https://www.unr.edu/geology/graduate": true,
+    "https://www.hamilton.edu/academics/departments/geosciences": true,
+    "https://www.geol.umd.edu/graduate/graduate.php": false,
+    "https://naturalsciences.uoregon.edu/earth-sciences/research": false,
+    "https://www.boisestate.edu/earth/graduate-degrees/": false,
+    "https://careers.humboldt.edu/en-us/job/546130/lecturer-pool-in-department-of-geology-academic-year-2526": false,
+    "https://www.dickinson.edu/homepage/96/geosciences": true,
+    "https://earth.indiana.edu/research/research-areas/economic-geology/index.html": true
+  },
+  "verified_lists_per_url": {
+    "http://catalog.csulb.edu/preview_program.php?catoid=10&poid=5359": 0,
+    "https://www.oxy.edu/academics/areas-study/geology": 0,
+    "https://dornsife.usc.edu/earth/research/": 2,
+    "https://www.stonybrook.edu/commcms/geosciences/research/research_areas": 5,
+    "https://serc.carleton.edu/NAGTWorkshops/structure/index.html": 1,
+    "https://scripps.ucsd.edu/doctoral/program-areas/geosciences-gs": 7,
+    "https://epsci.ucr.edu/": 0,
+    "https://www.csulb.edu/earth-science/graduate-programs": 1,
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2728": 0,
+    "https://epsci.ucr.edu/about": 3,
+    "https://climatechange.ucsd.edu/research/research-areas/geosciences-geology.html": 3,
+    "https://pasadena.edu/academics/divisions/natural-sciences/areas-of-study/geology.php": 1,
+    "https://courses.syracuse.edu/graduate/programs/earth-sciences-phd/": 3,
+    "https://www.geo.wvu.edu/research": 0,
+    "https://www.geology.pitt.edu/ta-resources": 0,
+    "https://ceoas.oregonstate.edu/geology-graduate-program": 1,
+    "https://mininggeologyresearch.mines.edu/teaching-and-outreach/": 0,
+    "https://www.udel.edu/academics/colleges/ceoe/departments/es/": 0,
+    "https://www.unr.edu/geology/graduate": 1,
+    "https://www.hamilton.edu/academics/departments/geosciences": 1,
+    "https://www.geol.umd.edu/graduate/graduate.php": 0,
+    "https://naturalsciences.uoregon.edu/earth-sciences/research": 0,
+    "https://www.boisestate.edu/earth/graduate-degrees/": 0,
+    "https://careers.humboldt.edu/en-us/job/546130/lecturer-pool-in-department-of-geology-academic-year-2526": 0,
+    "https://www.dickinson.edu/homepage/96/geosciences": 3,
+    "https://earth.indiana.edu/research/research-areas/economic-geology/index.html": 1
+  },
+  "total_lists_per_url": {
+    "http://catalog.csulb.edu/preview_program.php?catoid=10&poid=5359": 3,
+    "https://www.oxy.edu/academics/areas-study/geology": 5,
+    "https://dornsife.usc.edu/earth/research/": 4,
+    "https://www.stonybrook.edu/commcms/geosciences/research/research_areas": 11,
+    "https://serc.carleton.edu/NAGTWorkshops/structure/index.html": 4,
+    "https://scripps.ucsd.edu/doctoral/program-areas/geosciences-gs": 12,
+    "https://epsci.ucr.edu/": 3,
+    "https://www.csulb.edu/earth-science/graduate-programs": 3,
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2728": 1,
+    "https://epsci.ucr.edu/about": 5,
+    "https://climatechange.ucsd.edu/research/research-areas/geosciences-geology.html": 4,
+    "https://pasadena.edu/academics/divisions/natural-sciences/areas-of-study/geology.php": 3,
+    "https://courses.syracuse.edu/graduate/programs/earth-sciences-phd/": 10,
+    "https://www.geo.wvu.edu/research": 1,
+    "https://www.geology.pitt.edu/ta-resources": 1,
+    "https://ceoas.oregonstate.edu/geology-graduate-program": 2,
+    "https://mininggeologyresearch.mines.edu/teaching-and-outreach/": 3,
+    "https://www.udel.edu/academics/colleges/ceoe/departments/es/": 3,
+    "https://www.unr.edu/geology/graduate": 2,
+    "https://www.hamilton.edu/academics/departments/geosciences": 3,
+    "https://www.geol.umd.edu/graduate/graduate.php": 1,
+    "https://naturalsciences.uoregon.edu/earth-sciences/research": 1,
+    "https://www.boisestate.edu/earth/graduate-degrees/": 2,
+    "https://careers.humboldt.edu/en-us/job/546130/lecturer-pool-in-department-of-geology-academic-year-2526": 3,
+    "https://www.dickinson.edu/homepage/96/geosciences": 6,
+    "https://earth.indiana.edu/research/research-areas/economic-geology/index.html": 9
+  },
+  "verified_lists_ids": {
+    "http://catalog.csulb.edu/preview_program.php?catoid=10&poid=5359": [],
+    "https://www.oxy.edu/academics/areas-study/geology": [],
+    "https://dornsife.usc.edu/earth/research/": [
+      0,
+      1
+    ],
+    "https://www.stonybrook.edu/commcms/geosciences/research/research_areas": [
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "https://serc.carleton.edu/NAGTWorkshops/structure/index.html": [
+      0
+    ],
+    "https://scripps.ucsd.edu/doctoral/program-areas/geosciences-gs": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9,
+      10
+    ],
+    "https://epsci.ucr.edu/": [],
+    "https://www.csulb.edu/earth-science/graduate-programs": [
+      1
+    ],
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2728": [],
+    "https://epsci.ucr.edu/about": [
+      0,
+      2,
+      3
+    ],
+    "https://climatechange.ucsd.edu/research/research-areas/geosciences-geology.html": [
+      0,
+      1,
+      2
+    ],
+    "https://pasadena.edu/academics/divisions/natural-sciences/areas-of-study/geology.php": [
+      0
+    ],
+    "https://courses.syracuse.edu/graduate/programs/earth-sciences-phd/": [
+      3,
+      4,
+      5
+    ],
+    "https://www.geo.wvu.edu/research": [],
+    "https://www.geology.pitt.edu/ta-resources": [],
+    "https://ceoas.oregonstate.edu/geology-graduate-program": [
+      1
+    ],
+    "https://mininggeologyresearch.mines.edu/teaching-and-outreach/": [],
+    "https://www.udel.edu/academics/colleges/ceoe/departments/es/": [],
+    "https://www.unr.edu/geology/graduate": [
+      0
+    ],
+    "https://www.hamilton.edu/academics/departments/geosciences": [
+      1
+    ],
+    "https://www.geol.umd.edu/graduate/graduate.php": [],
+    "https://naturalsciences.uoregon.edu/earth-sciences/research": [],
+    "https://www.boisestate.edu/earth/graduate-degrees/": [],
+    "https://careers.humboldt.edu/en-us/job/546130/lecturer-pool-in-department-of-geology-academic-year-2526": [],
+    "https://www.dickinson.edu/homepage/96/geosciences": [
+      0,
+      3,
+      4
+    ],
+    "https://earth.indiana.edu/research/research-areas/economic-geology/index.html": [
+      8
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 105,
+  "url_to_lists": {
+    "http://catalog.csulb.edu/preview_program.php?catoid=10&poid=5359": [
+      [
+        "Offshore Resources",
+        "Admission to the Program",
+        "Johnson-Conrey Graduate Fellowship",
+        "Initiation of Graduate Study",
+        "Advancement to Candidacy",
+        "Requirements of Graduate Academic Program",
+        "Thesis Defense",
+        "Single Subject Teaching Credential in Geosciences"
+      ],
+      [
+        "SERVICES",
+        "Colleges",
+        "Additional Resources"
+      ],
+      [
+        "SERVICES",
+        "Colleges",
+        "Additional Resources"
+      ]
+    ],
+    "https://www.oxy.edu/academics/areas-study/geology": [
+      [
+        "WSGS Director, State Geologist of Wyoming",
+        "VP Subsurface, Cyrq Energy",
+        "Principal Consultant, ERM",
+        "Asst. Professor of Geology, Portland State University",
+        "Geologist, U.S. Geological Survey",
+        "Professor of Geology, New Mexico State University",
+        "Director, Earth Science and Technology Directorate, JPL",
+        "Follow Oxy:"
+      ],
+      [
+        "Jessie Salinas",
+        "Geology major / Phoeniz, AZ",
+        "More from Jessie"
+      ],
+      [
+        "Director, Earth Science and Technology Directorate, JPL",
+        "Diane Evans\n            \n\n\n \n\n        1976",
+        "Read profile"
+      ],
+      [
+        "Darren Larsen\n\n            Department Chair",
+        "dlarsen@oxy.edu",
+        "Phone:             (323) 341-4041",
+        "Office:              HSC 220"
+      ],
+      [
+        "Cassie Balynas\n\n            Department Services Coordinator",
+        "balynas@oxy.edu",
+        "Phone:             (323) 259-2821",
+        "Office:              HSC 126"
+      ]
+    ],
+    "https://dornsife.usc.edu/earth/research/": [
+      [
+        "Climate Science",
+        "Geobiology",
+        "Geochemistry"
+      ],
+      [
+        "Geophysics",
+        "Tectonics",
+        "Projects"
+      ],
+      [
+        "Darlene Garza",
+        "213-740-6109",
+        "garzadar@usc.edu"
+      ],
+      [
+        "Professor Julien Emile-Geay",
+        "213-740-2945",
+        "julieneg@usc.edu"
+      ]
+    ],
+    "https://www.stonybrook.edu/commcms/geosciences/research/research_areas": [
+      [
+        "Programs",
+        "Course Descriptions",
+        "Course Schedules",
+        "Apply Now",
+        "Applicant FAQs"
+      ],
+      [
+        "Planetary Geology",
+        "Seismology, Tectonics, and Geophysics",
+        "Mineral and Rock Physics",
+        "Crystal Chemistry and Crystallography",
+        "Geochemistry",
+        "Petrology",
+        "Sedimentary Geology"
+      ],
+      [
+        "based research on planetary analog terrains. Particular emphasis",
+        "built mid",
+        "IR emission spectrometer, (2) a UV",
+        "visible",
+        "FTIR imaging spectrometer, (4) \u00a0a micro",
+        "Raman",
+        "FTIR spectrometer and imager, (6) a micro X",
+        "ray fluorescence",
+        "controlled environmental chamber for infrared spectral",
+        "temperature",
+        "equipped experimental petrology",
+        "infrared spectrometer for field studies, and (11) an image processing"
+      ],
+      [
+        "1) a custom-built mid-IR emission spectrometer, (",
+        "2) a UV-visible-near-IR",
+        "3) a micro-FTIR imaging spectrometer, (",
+        "4) \u00a0a micro-Raman",
+        "5) a nano-FTIR spectrometer and imager, (",
+        "6) a micro X-ray fluorescence",
+        "7) a pressure and temperature-controlled environmental chamber for infrared spectral",
+        "8) a low-temperature",
+        "9) a fully-equipped experimental petrology",
+        "10) a portable thermal hyperspectral imager, Raman spectrometer and",
+        "11) an image processing"
+      ],
+      [
+        "altered synthetic",
+        "ray amorphous sulfates; determining the mid",
+        "scale",
+        "Earth asteroid Ryugu."
+      ],
+      [
+        "pressure and high",
+        "temperature",
+        "pressure phase relations for constraining models for Earth's mantle",
+        "anvil apparatus for",
+        "ray sources at the NSLS. Complete single",
+        "crystal and powder X",
+        "ray diffraction facilities"
+      ],
+      [
+        "ray and neutron facilities.",
+        "ray diffraction, with capabilities",
+        "temperature and high",
+        "pressure studies exist. Projects emphasize crystal",
+        "II, and Center Functional Nanomaterials, CFN, provides opportunities",
+        "intensity X",
+        "ray sources. Other projects",
+        "ray absorption spectroscopy to examine local structure in minerals and neutron"
+      ],
+      [
+        "element geochemistry, aqueous",
+        "temperature aqueous systems to \u00a0 mineral",
+        "melt systems.",
+        "temperature",
+        "related studies focus on marine and continental paleoenvironments and"
+      ],
+      [
+        "inlet and elemental analysis",
+        "IRMS and EA",
+        "IRMS), \u00a0 X",
+        "ray diffraction facilities,",
+        "state nuclear magnetic resonance (NMR) spectrometers, and two synthesis and"
+      ],
+      [
+        "ocean ridge basalt,",
+        "ocean ridge",
+        "poor apatite for structural"
+      ],
+      [
+        "rock interactions. A",
+        "MS and TIMS mass spectrometry lab, a light stable isotope lab, a",
+        "ray diffraction facilities, and a variety of facilities"
+      ]
+    ],
+    "https://serc.carleton.edu/NAGTWorkshops/structure/index.html": [
+      [
+        "Structure and Tectonics on Mars",
+        "Field Labs",
+        "Earthscope in the Northern Rockies"
+      ],
+      [
+        "2024 Structural Geology and Tectonics Forum, Western Washington University, June 24-27",
+        "2022 Structural Geology and Tectonics Forum, Bowdoin College, June 22-24",
+        "2018 Structural Geology and Tectonics Forum, Arizona State University, January 4-7",
+        "2016 Structural Geology and Tectonics Forum, Sonoma State University, August 1-3"
+      ],
+      [
+        "Related Links",
+        "1. Set goals",
+        "2. Consider assessment options",
+        "3. Select pedagogies and specific teaching activities",
+        "Selected Pedagogical Approaches",
+        "Resource Collections",
+        "Special Topics",
+        "Reuse"
+      ],
+      [
+        "Course Design & Pedagogy",
+        "Resource Collections",
+        "Special Topics",
+        "Workshops & Events",
+        "Get Involved"
+      ]
+    ],
+    "https://scripps.ucsd.edu/doctoral/program-areas/geosciences-gs": [
+      [
+        "The origin and evolution of the ocean-atmosphere system, global climate, and biosphere",
+        "Geology, geochemistry, and geophysics of oceanic crustal rocks and near-shore environments",
+        "Tectonic and structural evolution of the oceans, plate margins, and back-arc basins",
+        "The role of fluids in the crust",
+        "Chemistry of rare gases and stable and radiogenic isotopes in active volcanoes and magmatism",
+        "Cosmochemistry",
+        "The use of natural nuclear processes for understanding physical and chemical processes in the Earth",
+        "Paleomagnetic applications in geology and geophysics",
+        "Interaction of humans with their natural environment"
+      ],
+      [
+        "Interaction of volcanism and plate reorganization in the oceans.",
+        "Geochemistry and rheology of the continental lithosphere.",
+        "Geology and tectonics of Western North America."
+      ],
+      [
+        "SIOG 240. Marine Geology (4 units)",
+        "SIOG\u00a0251. Whole Earth Geochemistry (4 units)",
+        "SIOG 252A. Introduction to Isotope Geochemistry (4 units)",
+        "SIO 105. Stratigraphy and Sedimentology (4 units)",
+        "SIO 160. Introduction to Tectonics (4 units)",
+        "SIO 170. Introduction to Volcanology (4 units)",
+        "SIOC 201. Geological Record of Climate Change (4 units)",
+        "SIOG 244. Shape and Structure of the Ocean Floor (4 units)",
+        "SIOG 253. Interactions of Oceanic Plates and the California Margin (4 units)",
+        "SIO\u00a0103. Introduction to Geophysics (4 units)",
+        "SIOG\u00a0234. Geodynamics (4 units)",
+        "SIOG\u00a0247. Rock Magnetism and\u00a0Paleomagnetism\u00a0(4 units)"
+      ],
+      [
+        "SIO 105. Stratigraphy and Sedimentology (4 units)",
+        "SIO 160. Introduction to Tectonics (4 units)",
+        "SIO 170. Introduction to Volcanology (4 units)",
+        "SIOC 201. Geological Record of Climate Change (4 units)",
+        "SIOG 244. Shape and Structure of the Ocean Floor (4 units)",
+        "SIOG 253. Interactions of Oceanic Plates and the California Margin (4 units)"
+      ],
+      [
+        "SIO\u00a0103. Introduction to Geophysics (4 units)",
+        "SIOG\u00a0234. Geodynamics (4 units)",
+        "SIOG\u00a0247. Rock Magnetism and\u00a0Paleomagnetism\u00a0(4 units)"
+      ],
+      [
+        "SIOG 233. Introduction to Computers at SIO (4 units)",
+        "SIOC 221B. Analysis for Physical Oceanographic Data (4 units)",
+        "SIOC 210. Physical Oceanography (4 units)",
+        "SIOG 260. Marine Chemistry (4 units)",
+        "SIOB 280. Biological Oceanography (4 units)"
+      ],
+      [
+        "Sarah Aarons, isotopic geochemistry, paleoclimate, Earth surface processes",
+        "Andreas Andersson",
+        "Tomas Capaldi, sedimentary processes and tectonics and structural geology",
+        "Christopher Charles",
+        "Emily Chin",
+        "Catherine\u00a0Constable",
+        "James Day, volcanology, petrology, geochemistry and cosmochemistry",
+        "Neal Driscoll",
+        "Jeffrey Gee, geomagnetism, paleomagnetism",
+        "Margo Odlum, tectonics, structural geology, thermochronology",
+        "Richard Norris",
+        "Ross Parnell-Turner",
+        "Isabel Rivera-Collazo",
+        "Dave Stegman",
+        "Lisa Tauxe, paleomagnetism",
+        "Vashan Wright, granular physics, Martian geophysics, reflection seismology."
+      ],
+      [
+        "Required course work:",
+        "Elective course work:",
+        "EDUCATION",
+        "Courses",
+        "Doctoral Programs",
+        "Master's Programs",
+        "Master of Advanced Studies",
+        "Undergraduate Education",
+        "Information for Current Graduate Students",
+        "Research Internships",
+        "Fall 2024 Info Sessions",
+        "Sign Up For Explorations Now"
+      ],
+      [
+        "Emily Chin |\u00a0e8chin@ucsd.edu",
+        "Igneous and Metamorphic Petrology, Geochemistry, Tectonics, Geology.",
+        "Projects could include"
+      ],
+      [
+        "James Day | jmdday@ucsd.edu",
+        "Volcanology, Petrology, Geochemistry and Cosmochemistry.",
+        "Projects could include:"
+      ],
+      [
+        "Vashan Wright | vwright@ucsd.edu",
+        "Granular Physics, Martian Geophysics, Reflection Seismology.",
+        "Projects may include:"
+      ],
+      [
+        "1) Academic preparation, (",
+        "2) Scholarly potential, (",
+        "3) Potential relative to opportunities, (",
+        "4) Diversity, Equity and Inclusion contributions, (",
+        "5) Alignment with the SIO Program, (",
+        "6) Self Appraisal, ("
+      ]
+    ],
+    "https://epsci.ucr.edu/": [
+      [
+        "Geology for a Major",
+        "Explore the Possibilities",
+        "Undergraduate Programs"
+      ],
+      [
+        "Outreach",
+        "Reaching out to the Community",
+        "Education Outreach Program (GEOP)"
+      ],
+      [
+        "June 27, 2023",
+        "Brounce Lab Sales & Service Rates",
+        "A New Sales & Service fund has been established on behalf of Dr. MaryJo Brounce",
+        "Read More \u00bb"
+      ]
+    ],
+    "https://www.csulb.edu/earth-science/graduate-programs": [
+      [
+        "Concept Introduced in ERTH 500",
+        "Concept Introduced in ERTH 500",
+        "Evaluated in ERTH 695, ERTH 537, and Advancement Proposal",
+        "Concept Introduced in ERTH 500",
+        "Evaluated in ERTH 697, Advancement Proposal and Thesis",
+        "Concept Introduced in ERTH 500",
+        "Evaluated in ERTH 697, Advancement Proposal and Thesis",
+        "Concept Introduced in ERTH 500",
+        "Evaluated in ERTH 697 and Thesis",
+        "Evaluated in Thesis",
+        "Concept Introduced in ERTH 500"
+      ],
+      [
+        "Utility Menu",
+        "Academics",
+        "Alumni",
+        "Campus Life",
+        "Divisions",
+        "Resources",
+        "Master of Science in Geology",
+        "Application Process and Deadlines",
+        "Johnson-Conrey Fellowship",
+        "Master's Student Learning Outcomes",
+        "Graduate Advisor",
+        "Resources",
+        "Thesis and Dissertation Office",
+        "Services",
+        "Colleges",
+        "Additional Resources"
+      ],
+      [
+        "CNSM Commencement 2025",
+        "Checklist",
+        "Submission",
+        "Eligibility",
+        "Applying",
+        "Teaching Assistantships"
+      ]
+    ],
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2728": [
+      [
+        "EES 200\u00a0-\u00a0Introduction to Scientific Writing and Presenting Units: 3",
+        "EES 201\u00a0-\u00a0Geoscience Writing and Thesis Proposal Design Units: 3",
+        "EES 299\u00a0-\u00a0Thesis Units: 2-6"
+      ]
+    ],
+    "https://epsci.ucr.edu/about": [
+      [
+        "Investigations of Venus and Mars, including their atmospheric evolution",
+        "Detection of exoplanets and studying exoplanet demographics",
+        "Orbital dynamics and stability",
+        "Studying solar planets as exoplanet analogs",
+        "Modeling exoplanetary atmospheres and interiors",
+        "Quantifying factors that influence planetary habitability",
+        "Detection of biosignatures in planetary atmospheres",
+        "Paleoecology of evolutionary radiations: Neoproterozoic/Cambrian, Ordovician, Tertiary",
+        "Biogeochemistry of ancient and modern environments",
+        "Early Paleozoic, Tertiary, and Recent biogeography",
+        "Deposition and geochemical control of organic-rich rocks",
+        "Precision in biostratigraphic and lithostratigraphic correlation",
+        "Fire ecology",
+        "Stratigraphic and geochemical record of the biosphere in the Neoproterozoic and Cambrian",
+        "Evolution of developmental mechanisms",
+        "Temporal resolution in the stratigraphic record",
+        "Evolutionary paleoecology",
+        "Observational, experimental, and numerical studies of faulting",
+        "Neotectonics and structural geology",
+        "Petrology, geochemistry, geothermics",
+        "Volcanology",
+        "Remote Sensing",
+        "Deciphering the record of climate change in the Sierra Nevada's",
+        "Understanding global and regional drivers for climate change",
+        "Isotopic studies of modern glacial lakes, Quaternary lake cores and alpine soils",
+        "Sedimentology\u00a0and stratigraphy of Cenozoic through ancient glacial deposits"
+      ],
+      [
+        "Investigations of Venus and Mars, including their atmospheric evolution",
+        "Detection of exoplanets and studying exoplanet demographics",
+        "Orbital dynamics and stability",
+        "Studying solar planets as exoplanet analogs",
+        "Modeling exoplanetary atmospheres and interiors",
+        "Quantifying factors that influence planetary habitability",
+        "Detection of biosignatures in planetary atmospheres"
+      ],
+      [
+        "Paleoecology of evolutionary radiations: Neoproterozoic/Cambrian, Ordovician, Tertiary",
+        "Biogeochemistry of ancient and modern environments",
+        "Early Paleozoic, Tertiary, and Recent biogeography",
+        "Deposition and geochemical control of organic-rich rocks",
+        "Precision in biostratigraphic and lithostratigraphic correlation",
+        "Fire ecology",
+        "Stratigraphic and geochemical record of the biosphere in the Neoproterozoic and Cambrian",
+        "Evolution of developmental mechanisms",
+        "Temporal resolution in the stratigraphic record",
+        "Evolutionary paleoecology"
+      ],
+      [
+        "Observational, experimental, and numerical studies of faulting",
+        "Neotectonics and structural geology",
+        "Petrology, geochemistry, geothermics",
+        "Volcanology",
+        "Remote Sensing"
+      ],
+      [
+        "Deciphering the record of climate change in the Sierra Nevada's",
+        "Understanding global and regional drivers for climate change",
+        "Isotopic studies of modern glacial lakes, Quaternary lake cores and alpine soils",
+        "Sedimentology\u00a0and stratigraphy of Cenozoic through ancient glacial deposits"
+      ]
+    ],
+    "https://climatechange.ucsd.edu/research/research-areas/geosciences-geology.html": [
+      [
+        "Climate Science and Impacts",
+        "Adaptation and Solutions",
+        "Policy",
+        "Climate Justice",
+        "Research Areas",
+        "Research Centers and Featured Initiatives",
+        "Action",
+        "Academics  \n\nDegree Programs",
+        "Degree Programs",
+        "Resources"
+      ],
+      [
+        "SIO 16 - Geology of the National Parks - Jeffrey Gee",
+        "A Scientist's Life in 99 Seconds: Geologist Jane Willenbring",
+        "A Scientist's Life in 99 Seconds: Glaciologist Helen Amanda Fricker"
+      ],
+      [
+        "Scripps Polar Center",
+        "Geodynamics",
+        "Geomagnetism, Paleomagnetism",
+        "Geomorphology",
+        "Instrumentation and Observational Networks",
+        "Isotopic Geochemistry",
+        "Marine Geology and Geophysics",
+        "Past Climate Change",
+        "ANZA Network",
+        "Geological Collections",
+        "Geological Data Center (GDC)",
+        "Paleomagnetic Laboratory",
+        "Scripps Orbit and Permanent Array Center (OPAC)",
+        "US Array",
+        "Neal Driscoll",
+        "Helen Amanda Fricker",
+        "Jeffrey Gee",
+        "Jeffrey Severinghaus",
+        "Jane Willenbring",
+        "Graduate",
+        "Undergraduate Major",
+        "Undergraduate Minor"
+      ],
+      [
+        "Professor, Geology and Geophysics",
+        "Professor, Geophysics",
+        "Professor, Scripps Institution of Oceanography",
+        "Associate Professor, Geosciences; Director, Scripps Cosmogenic Isotope Laboratory"
+      ]
+    ],
+    "https://pasadena.edu/academics/divisions/natural-sciences/areas-of-study/geology.php": [
+      [
+        "Geologist",
+        "Geochemist",
+        "Geophysicist",
+        "Hydrologist",
+        "Meteorologist",
+        "Paleontologist",
+        "Seismologist",
+        "Sonographer"
+      ],
+      [
+        "GEOL 001 PHYSICAL GEOLOGY",
+        "GEOL 001F PHYSICAL GEOLOGY FIELD STUDIES",
+        "GEOL 002 HISTORICAL GEOLOGY",
+        "GEOL 002F HISTORICAL GEOLOGY FIELD STUDIES",
+        "GEOL 003 EARTH AND SPACE SCIENCE",
+        "GEOL 003F EARTH AND SPACE SCIENCE FIELD LABORATORY",
+        "GEOL 004 GEOLOGY OF CALIFORNIA",
+        "GEOL 005 GEOLOGIC MAPS",
+        "GEOL 006 MINERALOGY",
+        "GEOL 008 PETROLOGY",
+        "GEOL 012 PHYSICAL OCEANOGRAPHY",
+        "GEOL 012F PHYSICAL OCEANOGRAPHY FIELD STUDIES GEOL",
+        "012L PHYSICAL OCEANOGRAPHY LABORATORY",
+        "GEOL 016 INTRODUCTION TO PLANETARY SCIENCE",
+        "GEOL 020 INDEPENDENT STUDY",
+        "GEOL 021 HISTORY OF LIFE",
+        "GEOL 021L HISTORY OF LIFE LABORATORY",
+        "GEOL 022 THE AGE OF DINOSAURS",
+        "GEOL 023 NATURAL DISASTERS",
+        "GEOL 024 SCIENCE OF ATMOSPHERE",
+        "GEOL 030A-M GEOLOGICAL FIELD INVESTIGATION",
+        "GEOL 040 GEOLOGICAL FIELD LABORATORY"
+      ],
+      [
+        "Martha House",
+        "Elizabeth Nagy",
+        "Ling O'Connor",
+        "Michael Vendrasco",
+        "Bryan Wilbur",
+        "Hassan Boroon",
+        "Douglas Given",
+        "Sonjia Leyva",
+        "Paula Mateo Fernandez Caso",
+        "Debra De La O"
+      ]
+    ],
+    "https://courses.syracuse.edu/graduate/programs/earth-sciences-phd/": [
+      [
+        "Practicum and Communication (4 credits)",
+        "EAR 616\u00a0-\u00a0Practicum in Earth and Environmental Scientific Communication 2 credit(s)",
+        "AND\nApproved Foundations of Geoscience course\nAND\nApproved Professional Development Course"
+      ],
+      [
+        "EAR 602\u00a0-\u00a0Numerical Methods in Geosciences 3 credit(s)",
+        "EAR 609\u00a0-\u00a0Environmental Data Science 3 credit(s)",
+        "Other numerical/coding course approved by the graduate advisory committee"
+      ],
+      [
+        "EAR 610\u00a0-\u00a0Applications of GIS in the Earth Sciences 3 credit(s)",
+        "EAR 617\u00a0-\u00a0Geochemistry 3 credit(s)",
+        "EAR 622\u00a0-\u00a0Applications of Electron Probe Microanalysis 3 credit(s)",
+        "EAR 623\u00a0-\u00a0Stable Isotope Geochemistry 3 credit(s)"
+      ],
+      [
+        "EAR 603\u00a0-\u00a0Geomorphology 3 credit(s)",
+        "EAR 608\u00a0-\u00a0Sedimentary Basin Analysis 3 credit(s)",
+        "EAR 618\u00a0-\u00a0Petrology 4 credit(s)",
+        "EAR 631\u00a0-\u00a0Plate Tectonics 3 credit(s)",
+        "Other relevant course approved by the graduate advisory committee"
+      ],
+      [
+        "EAR 607\u00a0-\u00a0Climate Change and Human Origins 3 credit(s)",
+        "EAR 614\u00a0-\u00a0The Holocene: Climate and Environmental Change 3 credit(s)",
+        "EAR 615\u00a0-\u00a0Introduction to Climate Dynamics 3 credit(s)",
+        "EAR 629\u00a0-\u00a0Topics in Paleobiology 3 credit(s)",
+        "EAR 655\u00a0-\u00a0Geochemical Patterns in the History of Earth and Life 3 credit(s)",
+        "Other relevant course approved by the graduate advisory committee"
+      ],
+      [
+        "EAR 601\u00a0-\u00a0Hydrogeology 3 credit(s)",
+        "EAR 603\u00a0-\u00a0Geomorphology 3 credit(s)",
+        "EAR 619\u00a0-\u00a0Environmental Aqueous Geochemistry 3 credit(s)",
+        "EAR 620\u00a0-\u00a0Contaminant Hydrogeology 3 credit(s)",
+        "Other relevant course approved by the graduate advisory committee",
+        "EAR 665\u00a0-\u00a0Groundwater Modeling 3 credit(s)"
+      ],
+      [
+        "Course Catalog",
+        "Student Learning Outcomes",
+        "Degree Programs",
+        "Ph.D. in Earth Sciences",
+        "Graduate Awards",
+        "Facilities"
+      ],
+      [
+        "1 Numerical Skills lectures course: (3 credits)",
+        "Discipline-Specific Seminar Course (2 credits)",
+        "1 cross-disciplinary* course in the Earth System Sciences: (3 credits)",
+        "2 courses chosen from 2 of the 3 department disciplinary areas: (6-7 credits)",
+        "Graduate Teaching Assistantships:",
+        "Graduate Research Assistantships:",
+        "Syracuse University Graduate Fellowships:",
+        "Department Research Support:"
+      ],
+      [
+        "Syracuse University",
+        "2024-2025 Graduate Course Catalog",
+        "All catalogs \u00a9 2025 Syracuse University. Powered by Modern Campus Catalog\u2122."
+      ],
+      [
+        "equipped laboratories and graduate student offices. The department houses state",
+        "art workstation",
+        "based seismic data processing, GIS, and image",
+        "processing facilities; first",
+        "class laboratory space for clean and ultra",
+        "clean geochemistry.\u00a0 The department hosts two regional user facilities",
+        "penetrating radar and resistivity systems, and a 384",
+        "core computing cluster. The department also has a range of sample preparation facilities."
+      ]
+    ],
+    "https://www.geo.wvu.edu/research": [
+      [
+        "Interdisciplinary Collaborations",
+        "Industry Partnerships",
+        "Community Service and Outreach",
+        "West Virginia GIS Technical Center",
+        "Center for Resilient Communities",
+        "Red Map, Blue Map\u00a0With Kenneth C. Martis",
+        "Mapping a Legacy\u00a0with Gregory Elmes",
+        "Caving Culturally with Mar\u00eda P\u00e9rez"
+      ]
+    ],
+    "https://www.geology.pitt.edu/ta-resources": [
+      [
+        "Pitt-CIRTL certification:",
+        "Pitt\u2019s Center for Teaching and Learning:",
+        "Practicum on University Teaching (FACDEV2200);"
+      ]
+    ],
+    "https://ceoas.oregonstate.edu/geology-graduate-program": [
+      [
+        "For the traditional Geology track, see Geology Graduate Program Application Instructions.",
+        "For the integrated track, see the Ocean, Earth, and Atmospheric Sciences Graduate Major page.",
+        "Geology graduate program flyer",
+        "OSU Catalog"
+      ],
+      [
+        "Geochemistry",
+        "Hydrology and Hydrogeology",
+        "Structural geology",
+        "Geomorphology",
+        "Geophysics",
+        "Igneous petrology",
+        "Neotonics",
+        "Paleoclimate",
+        "Volcanology",
+        "Mineral deposit geology",
+        "Marine Geology"
+      ]
+    ],
+    "https://mininggeologyresearch.mines.edu/teaching-and-outreach/": [
+      [
+        "GEOL/MNGN 310: Earth Materials",
+        "GEOL/MNGN 311: Mining Geology",
+        "MNGN 528: Graduate Mining Geology (field and modeling-based versions)"
+      ],
+      [
+        "GEGN 403: Mineral Exploration Design",
+        "GEOL 520: New Developments in Mineral Exploration",
+        "GEOL 528: Reflected Light and Electron Microscopy",
+        "GEOL 598: Geology and Ore Deposits of Northern Nevada",
+        "Environmental Chemistry (Regis University)",
+        "Environmental Science (Regis University)",
+        "Introductory Geology (Regis University"
+      ],
+      [
+        "Attention K-12 Teachers",
+        "CURRENT TEACHING",
+        "Our Team"
+      ]
+    ],
+    "https://www.udel.edu/academics/colleges/ceoe/departments/es/": [
+      [
+        "Academic Programs",
+        "Rocks and wind",
+        "Water Science & Policy Ph.D.",
+        "News and events"
+      ],
+      [
+        "Facebook",
+        "Twitter (X)",
+        "Instagram",
+        "Departments",
+        "EXPLORE",
+        "ACADEMICS",
+        "SERVICES",
+        "CONNECT"
+      ],
+      [
+        "UNDERGRAD PROGRAMS",
+        "MASTER'S PROGRAMS",
+        "PH.D. PROGRAMS",
+        "Find CEOE on social media"
+      ]
+    ],
+    "https://www.unr.edu/geology/graduate": [
+      [
+        "Earthquakes and neotectonics",
+        "Geodesy",
+        "Geologic hazards",
+        "Geomorphology",
+        "Geophysical exploration",
+        "Global change",
+        "Igneous petrology and volcanology",
+        "Metamorphic geochemistry",
+        "Mineral exploration and ore genesis",
+        "Paleomagnetism",
+        "Paleoseismology",
+        "Planetary geology",
+        "Quaternary sciences",
+        "Regional geology",
+        "remote sensing",
+        "Seismology and seismic hazards"
+      ],
+      [
+        "Dedicated faculty",
+        "Rich outdoor environment",
+        "Facilities & instruments",
+        "Potential areas of specialization within the program include:"
+      ]
+    ],
+    "https://www.hamilton.edu/academics/departments/geosciences": [
+      [
+        "Professional Geologist, Geosyntec Consultants",
+        "Geohazards Program Manager, Colorado Department of Transportation",
+        "Science Curriculum Development for Visiting K-12 Field Trips, Moab Museum, Utah",
+        "Water and Natural Resources Attorney, Somach, Simmons, and Dunn",
+        "Post-doctoral Researcher, USGS Hawaii Volcano Observatory",
+        "Field Instructor, Voyageur Outward Bound School",
+        "Rockies Geologic Operations Manager, Occidental Petroleum",
+        "Agricultural Science Teacher, Madison Central Schools",
+        "Mineral Commodity Specialist, U.S. Geological Survey",
+        "Uniformed Services University of the Health Sciences, pursuing an Md.",
+        "Principal Resource Geologist, Newmont Australia",
+        "Professor of Marine Geology, University of North Carolina at Chapel Hill",
+        "Senior Associate for Acquisitions, Prime Group, San Francisco",
+        "Captain, U.S. Marine Corps"
+      ],
+      [
+        "Utility",
+        "You are here:",
+        "Geosciences",
+        "A Sampling of Courses",
+        "Meet Our Faculty",
+        "Faces & Spaces",
+        "Careers After Hamilton",
+        "Explore Hamilton Stories",
+        "Social",
+        "Social",
+        "Footer",
+        "Site Menu",
+        "Secondary",
+        "Actions",
+        "Support",
+        "Audience",
+        "Site Search"
+      ],
+      [
+        "Students Will Learn To:",
+        "Advanced Hydrogeology and the Environment",
+        "Explore these select courses:",
+        "Principles of Geoscience: Earth Resources and the Environment",
+        "Paleoenvironmental Reconstruction: Applications of Sedimentology and Stratigraphy",
+        "Drones and Phones: Seminar on New Tools for Geologic Field Work and Data Collection",
+        "Meteorology",
+        "Field Studies in the Desert Southwest",
+        "Mike McCormick\n\n\n\ufeff",
+        "Emily Baker\n\n\n\ufeff",
+        "Catherine Beck\n\n\n\ufeff",
+        "Shreya Kanakiya\n\n\n\ufeff",
+        "Kris Kusnerik\n\n\n\ufeff",
+        "Nicolas Roberts\n\n\n\ufeff"
+      ]
+    ],
+    "https://www.geol.umd.edu/graduate/graduate.php": [
+      [
+        "GEOL 100/10 -Physical Geology and laboratory",
+        "GEOL 120/10 - Environmental Geology and laboratory",
+        "CHEM 131/2 - Chemistry I - Fundamentals of General Chemistry and laboratory",
+        "CHEM 135/6 - Chemistry for Engineers and laboratory",
+        "MATH 140 - Calculus I",
+        "MATH 141 - Calculus II",
+        "PHYS 161/74 - General Physics: Mechanics and Particle Dynamics and Laboratory",
+        "PHYS 171/4 - Introductory Physics: Mechanics and Relativity and Laboratory"
+      ]
+    ],
+    "https://naturalsciences.uoregon.edu/earth-sciences/research": [
+      [
+        "Volcanology, Petrology, and Geochemistry",
+        "Geophysics and Geomechanics",
+        "Stratigraphy, Structure, and Surface Processes",
+        "Paleontology"
+      ]
+    ],
+    "https://www.boisestate.edu/earth/graduate-degrees/": [
+      [
+        "Boise Global Navigation",
+        "Department of Geosciences",
+        "GEOSCIENCES",
+        "Secondary Navigation"
+      ],
+      [
+        "GEOSCIENCES",
+        "GEOSADMIN@BOISESTATE.EDU",
+        "(208) 426-6139",
+        "ENVIRONMENTAL RESEARCH BUILDING 1160, MS1535"
+      ]
+    ],
+    "https://careers.humboldt.edu/en-us/job/546130/lecturer-pool-in-department-of-geology-academic-year-2526": [
+      [
+        "Lecturer Pool in Department of Geology (Academic Year 25/26)",
+        "The Department",
+        "Lecturer Qualifications",
+        "Search results",
+        "Current opportunities"
+      ],
+      [
+        "Courses/Areas of Specialization",
+        "Work type",
+        "Locations",
+        "Categories"
+      ],
+      [
+        "Department of Geology Temporary Faculty Pool",
+        "Find out what our amazing graduates are doing now!",
+        "Salary: Dependent on qualifications and experience.",
+        "Lecturer A\u00a0$5,507 - $6,677",
+        "Lecturer B\u00a0$6,221 - $13,224",
+        "Lecturer C\u00a0$6,825 - $14,523"
+      ]
+    ],
+    "https://www.dickinson.edu/homepage/96/geosciences": [
+      [
+        "Earth Sciences",
+        "@dsonearthsci",
+        "@dsonearthsci"
+      ],
+      [
+        "Mastery Charter School",
+        "Rodale Institute",
+        "Arid Lands Institute",
+        "Matrix New World Engineering, Inc",
+        "Dickinson College",
+        "Christchurch School",
+        "Global Indemnity Group",
+        "National Academy of Sciences"
+      ],
+      [
+        "University of Wyoming",
+        "Clemson University",
+        "Syracuse\u00a0University",
+        "Dartmouth College",
+        "University of Michigan",
+        "University of Arizona",
+        "Northeastern University",
+        "South Dakota School of Mines",
+        "University of Ottawa",
+        "Rutgers University"
+      ],
+      [
+        "Dickinson College / Alliance for Aquatic Resource Monitoring (ALLARM)",
+        "Dickinson College / Center for Sustainability Education",
+        "Dickinson College Department of Earth Sciences",
+        "Global Change Institute, University of Queensland",
+        "Little Red Hen CSA",
+        "Middlesex County Utilities Authority",
+        "NH LAKES",
+        "NSF-STEP",
+        "Pennsylvania Department of Environmental Protection",
+        "University of Arizona Department of Geosciences",
+        "Women for a Healthy Environment"
+      ],
+      [
+        "Chair",
+        "Department coordinator",
+        "Phone",
+        "Social Media",
+        "Location",
+        "Dickinson to Host Special Lecture on the Importance of Geosciences",
+        "The Art of Problem-Solving: Connections, Liberal Arts Create Paths to Success in Consulting",
+        "A Knight\u2019s Tale: Unraveling the Mystery of America\u2019s Oldest Tombstone",
+        "The Geosciences: Look No Further Than Everywhere",
+        "Love and Technology: Charlie Craig \u201965, P\u201989",
+        "Arctic & Alpine Climate Change Program Heats Up"
+      ],
+      [
+        "Skip To Content",
+        "Skip To Menu",
+        "Skip To Footer",
+        "Search this site\n\n\n\nDickinson College\n\n\nRequest Info\nVisit\nApply\nAlumni\nGive\n\n\n\nSearch this site"
+      ]
+    ],
+    "https://earth.indiana.edu/research/research-areas/economic-geology/index.html": [
+      [
+        "Twitter",
+        "Facebook",
+        "Instagram",
+        "YouTube"
+      ],
+      [
+        "Contact",
+        "Atmospheric Science B.S.",
+        "Atmospheric Science Minor",
+        "Atmospheric Science Certificate",
+        "Climate Change Science Minor",
+        "Earth & Atmospheric Sciences B.A.",
+        "Earth Science B.S.",
+        "Earth Science B.S./M.S.",
+        "Earth & Atmospheric Sciences Minor",
+        "Environmental Geosciences B.S.",
+        "Environmental Sciences B.S.",
+        "Honors Program",
+        "IU Resources",
+        "Fields of Study",
+        "Courses\nSpring Courses\nFall Courses\nSummer\nComprehensive Undergraduate Course List",
+        "Spring Courses",
+        "Fall Courses",
+        "Summer",
+        "Comprehensive Undergraduate Course List",
+        "Ph.D. Geological Sciences",
+        "Ph.D. Geological Sciences-Atmospheric Sciences",
+        "M.S. Geological Sciences",
+        "M.S. Geological Sciences-Atmospheric Sciences",
+        "Graduate Student HandbookHandbook Archive",
+        "Handbook Archive",
+        "Courses\nSpring Courses\nFall Courses\nComprehensive Graduate Course List",
+        "Spring Courses",
+        "Fall Courses",
+        "Comprehensive Graduate Course List",
+        "Employment Resources",
+        "Professional Organizations",
+        "IU Resources",
+        "Grant Sources",
+        "Forms"
+      ],
+      [
+        "Atmospheric Science B.S.",
+        "Atmospheric Science Minor",
+        "Atmospheric Science Certificate",
+        "Climate Change Science Minor",
+        "Earth & Atmospheric Sciences B.A.",
+        "Earth Science B.S.",
+        "Earth Science B.S./M.S.",
+        "Earth & Atmospheric Sciences Minor",
+        "Environmental Geosciences B.S.",
+        "Environmental Sciences B.S.",
+        "Honors Program",
+        "IU Resources",
+        "Fields of Study",
+        "Courses\nSpring Courses\nFall Courses\nSummer\nComprehensive Undergraduate Course List",
+        "Spring Courses",
+        "Fall Courses",
+        "Summer",
+        "Comprehensive Undergraduate Course List",
+        "Ph.D. Geological Sciences",
+        "Ph.D. Geological Sciences-Atmospheric Sciences",
+        "M.S. Geological Sciences",
+        "M.S. Geological Sciences-Atmospheric Sciences",
+        "Graduate Student HandbookHandbook Archive",
+        "Handbook Archive",
+        "Courses\nSpring Courses\nFall Courses\nComprehensive Graduate Course List",
+        "Spring Courses",
+        "Fall Courses",
+        "Comprehensive Graduate Course List",
+        "Employment Resources",
+        "Professional Organizations",
+        "IU Resources",
+        "Grant Sources",
+        "Forms"
+      ],
+      [
+        "Atmospheric Science B.S.",
+        "Atmospheric Science Minor",
+        "Atmospheric Science Certificate",
+        "Climate Change Science Minor",
+        "Earth & Atmospheric Sciences B.A.",
+        "Earth Science B.S.",
+        "Earth Science B.S./M.S.",
+        "Earth & Atmospheric Sciences Minor",
+        "Environmental Geosciences B.S.",
+        "Environmental Sciences B.S.",
+        "Honors Program",
+        "IU Resources",
+        "Fields of Study",
+        "Courses\nSpring Courses\nFall Courses\nSummer\nComprehensive Undergraduate Course List",
+        "Spring Courses",
+        "Fall Courses",
+        "Summer",
+        "Comprehensive Undergraduate Course List"
+      ],
+      [
+        "Spring Courses",
+        "Fall Courses",
+        "Summer",
+        "Comprehensive Undergraduate Course List"
+      ],
+      [
+        "Ph.D. Geological Sciences",
+        "Ph.D. Geological Sciences-Atmospheric Sciences",
+        "M.S. Geological Sciences",
+        "M.S. Geological Sciences-Atmospheric Sciences",
+        "Graduate Student HandbookHandbook Archive",
+        "Handbook Archive",
+        "Courses\nSpring Courses\nFall Courses\nComprehensive Graduate Course List",
+        "Spring Courses",
+        "Fall Courses",
+        "Comprehensive Graduate Course List",
+        "Employment Resources",
+        "Professional Organizations",
+        "IU Resources"
+      ],
+      [
+        "Ph.D. Geological Sciences",
+        "Ph.D. Geological Sciences-Atmospheric Sciences",
+        "M.S. Geological Sciences",
+        "M.S. Geological Sciences-Atmospheric Sciences"
+      ],
+      [
+        "Spring Courses",
+        "Fall Courses",
+        "Comprehensive Graduate Course List"
+      ],
+      [
+        "Economic Geology",
+        "Department of Earth and Atmospheric Sciences social media channels",
+        "The College of Arts & Sciences"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:11:24"
+}

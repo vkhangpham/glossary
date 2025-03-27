@@ -1,0 +1,2427 @@
+{
+  "level1_term": "computer engineering",
+  "url_verification_status": {
+    "https://www.ece.cornell.edu/ece/research/strategic-research-areas": true,
+    "https://www.ece.ucsd.edu/faculty-research/ece-research-areas": true,
+    "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/": true,
+    "https://www.mccormick.northwestern.edu/electrical-computer/research/areas/computer-engineering.html": false,
+    "https://engineering.jhu.edu/ece/research/": true,
+    "https://ece.umd.edu/research": true,
+    "https://www.ece.ucsd.edu/graduate/research-areas": true,
+    "https://www.ece.cmu.edu/research/index.html": true,
+    "https://engineering.purdue.edu/ECE/Research/Areas": true,
+    "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering": true,
+    "https://www.ece.rutgers.edu/": false,
+    "https://ece.osu.edu/directory/research-areas": true,
+    "https://ece.gatech.edu/research/overview": true,
+    "https://www.mtu.edu/ece/research/focus/": true,
+    "https://www.ece.uw.edu/research/": true,
+    "https://engineering.dartmouth.edu/areas/electrical-computer": true,
+    "https://catalog.mit.edu/schools/engineering/electrical-engineering-computer-science/": true,
+    "https://www.ece.cornell.edu/ece": true,
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": true,
+    "https://engineering.wisc.edu/departments/electrical-computer-engineering/research/": true,
+    "https://www.morgan.edu/soe/ece": false,
+    "https://www.rit.edu/study/electrical-and-computer-engineering-phd": false
+  },
+  "verified_lists_per_url": {
+    "https://www.ece.cornell.edu/ece/research/strategic-research-areas": 7,
+    "https://www.ece.ucsd.edu/faculty-research/ece-research-areas": 1,
+    "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/": 2,
+    "https://www.mccormick.northwestern.edu/electrical-computer/research/areas/computer-engineering.html": 0,
+    "https://engineering.jhu.edu/ece/research/": 1,
+    "https://ece.umd.edu/research": 1,
+    "https://www.ece.ucsd.edu/graduate/research-areas": 1,
+    "https://www.ece.cmu.edu/research/index.html": 3,
+    "https://engineering.purdue.edu/ECE/Research/Areas": 2,
+    "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering": 1,
+    "https://www.ece.rutgers.edu/": 0,
+    "https://ece.osu.edu/directory/research-areas": 5,
+    "https://ece.gatech.edu/research/overview": 1,
+    "https://www.mtu.edu/ece/research/focus/": 2,
+    "https://www.ece.uw.edu/research/": 1,
+    "https://engineering.dartmouth.edu/areas/electrical-computer": 1,
+    "https://catalog.mit.edu/schools/engineering/electrical-engineering-computer-science/": 13,
+    "https://www.ece.cornell.edu/ece": 1,
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": 11,
+    "https://engineering.wisc.edu/departments/electrical-computer-engineering/research/": 1,
+    "https://www.morgan.edu/soe/ece": 0,
+    "https://www.rit.edu/study/electrical-and-computer-engineering-phd": 0
+  },
+  "total_lists_per_url": {
+    "https://www.ece.cornell.edu/ece/research/strategic-research-areas": 7,
+    "https://www.ece.ucsd.edu/faculty-research/ece-research-areas": 1,
+    "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/": 3,
+    "https://www.mccormick.northwestern.edu/electrical-computer/research/areas/computer-engineering.html": 2,
+    "https://engineering.jhu.edu/ece/research/": 2,
+    "https://ece.umd.edu/research": 2,
+    "https://www.ece.ucsd.edu/graduate/research-areas": 1,
+    "https://www.ece.cmu.edu/research/index.html": 3,
+    "https://engineering.purdue.edu/ECE/Research/Areas": 3,
+    "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering": 1,
+    "https://www.ece.rutgers.edu/": 3,
+    "https://ece.osu.edu/directory/research-areas": 32,
+    "https://ece.gatech.edu/research/overview": 1,
+    "https://www.mtu.edu/ece/research/focus/": 2,
+    "https://www.ece.uw.edu/research/": 6,
+    "https://engineering.dartmouth.edu/areas/electrical-computer": 1,
+    "https://catalog.mit.edu/schools/engineering/electrical-engineering-computer-science/": 213,
+    "https://www.ece.cornell.edu/ece": 1,
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": 28,
+    "https://engineering.wisc.edu/departments/electrical-computer-engineering/research/": 1,
+    "https://www.morgan.edu/soe/ece": 4,
+    "https://www.rit.edu/study/electrical-and-computer-engineering-phd": 1
+  },
+  "verified_lists_ids": {
+    "https://www.ece.cornell.edu/ece/research/strategic-research-areas": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "https://www.ece.ucsd.edu/faculty-research/ece-research-areas": [
+      0
+    ],
+    "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/": [
+      0,
+      1
+    ],
+    "https://www.mccormick.northwestern.edu/electrical-computer/research/areas/computer-engineering.html": [],
+    "https://engineering.jhu.edu/ece/research/": [
+      0
+    ],
+    "https://ece.umd.edu/research": [
+      0
+    ],
+    "https://www.ece.ucsd.edu/graduate/research-areas": [
+      0
+    ],
+    "https://www.ece.cmu.edu/research/index.html": [
+      0,
+      1,
+      2
+    ],
+    "https://engineering.purdue.edu/ECE/Research/Areas": [
+      0,
+      1
+    ],
+    "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering": [
+      0
+    ],
+    "https://www.ece.rutgers.edu/": [],
+    "https://ece.osu.edu/directory/research-areas": [
+      0,
+      2,
+      6,
+      26,
+      31
+    ],
+    "https://ece.gatech.edu/research/overview": [
+      0
+    ],
+    "https://www.mtu.edu/ece/research/focus/": [
+      0,
+      1
+    ],
+    "https://www.ece.uw.edu/research/": [
+      0
+    ],
+    "https://engineering.dartmouth.edu/areas/electrical-computer": [
+      0
+    ],
+    "https://catalog.mit.edu/schools/engineering/electrical-engineering-computer-science/": [
+      2,
+      3,
+      5,
+      6,
+      150,
+      157,
+      164,
+      167,
+      168,
+      178,
+      183,
+      185,
+      190
+    ],
+    "https://www.ece.cornell.edu/ece": [
+      0
+    ],
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      18,
+      20,
+      21,
+      24,
+      25,
+      26
+    ],
+    "https://engineering.wisc.edu/departments/electrical-computer-engineering/research/": [
+      0
+    ],
+    "https://www.morgan.edu/soe/ece": [],
+    "https://www.rit.edu/study/electrical-and-computer-engineering-phd": []
+  },
+  "num_urls": 40,
+  "num_lists": 318,
+  "url_to_lists": {
+    "https://www.ece.cornell.edu/ece/research/strategic-research-areas": [
+      [
+        "Algorithms",
+        "Artificial Intelligence",
+        "Complex Systems, Network Science and Computation",
+        "Computer Architecture",
+        "Computer Engineering",
+        "Computer Systems",
+        "Data Mining",
+        "Energy and the Environment",
+        "Rapid Prototyping",
+        "Robotics and Autonomy",
+        "Scientific Computing",
+        "Security",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning"
+      ],
+      [
+        "Artificial Intelligence",
+        "Computer Systems",
+        "Integrated Circuits",
+        "Power Electronics",
+        "Robotics\u00a0and Autonomy",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Systems and Networking"
+      ],
+      [
+        "Artificial Intelligence",
+        "Biotechnology",
+        "Complex Systems, Network Science and Computation",
+        "Computational Science and Engineering",
+        "Energy Systems",
+        "Energy and the Environment",
+        "Image Analysis",
+        "Information Theory and Communications",
+        "Information, Networks, and Decision Systems",
+        "Optimization",
+        "Remote Sensing",
+        "Scientific Computing",
+        "Security",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning",
+        "Systems and Networking"
+      ],
+      [
+        "Advanced Materials Processing",
+        "Astrophysics, Fusion and Plasma Physics",
+        "High Energy Density, Plasma Physics and Electromagnetics",
+        "Integrated Circuits",
+        "Materials Synthesis and Processing",
+        "Microfluidics and Microsystems",
+        "Nanotechnology",
+        "Photonics and Optoelectronics",
+        "Physical Electronics, Devices, and Plasma Science",
+        "Semiconductor Physics and Devices",
+        "Sensors and Actuators",
+        "Solid State, Electronics, Optoelectronics and MEMs"
+      ],
+      [
+        "Circuits and Electronic Systems",
+        "Computer Architecture",
+        "Computer Engineering",
+        "Computer Systems",
+        "Information Theory and Communications",
+        "Integrated Circuits",
+        "Micro Nano Systems",
+        "Optical Physics and Quantum Information Science",
+        "Power Electronics",
+        "Semiconductor Physics and Devices",
+        "Systems and Networking"
+      ],
+      [
+        "Algorithms",
+        "Bio-Electrical Engineering",
+        "Biomedical Imaging and Instrumentation",
+        "Biotechnology",
+        "Complex Systems, Network Science and Technology",
+        "Computer-Aided Diagnosis",
+        "Image Analysis",
+        "Microfluidics and Microsystems",
+        "Nanobio Applications",
+        "Nanotechnology",
+        "Neuroscience",
+        "Remote Sensing",
+        "Scientific Computing",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning"
+      ],
+      [
+        "Computer Engineering",
+        "Robotics and Autonomy",
+        "Information, Networks, and Decision Systems",
+        "Physical Electronics, Devices, and Plasma Science",
+        "Circuits and Electronic Systems",
+        "Bio-Electrical Engineering",
+        "Connect with us"
+      ]
+    ],
+    "https://www.ece.ucsd.edu/faculty-research/ece-research-areas": [
+      [
+        "Main Navigation",
+        "Applied Electromagnetics",
+        "Applied Ocean Sciences",
+        "Applied Physics- Electronic Devices & Materials",
+        "Communication Theory & Systems",
+        "Computer Engineering (Impacted)",
+        "Electronic Circuits & Systems (Impacted)",
+        "Intelligent Systems, Robotics & Control (Impacted)",
+        "Machine Learning & Data Science (Impacted)",
+        "Medical Devices & Systems",
+        "Medical Imaging",
+        "Nanoscale Devices & Systems",
+        "Photonics",
+        "Signal & Image Processing",
+        "Faculty & Research",
+        "Information",
+        "Quicklinks",
+        "Stay Connected"
+      ]
+    ],
+    "https://engineering.vanderbilt.edu/departments/electrical-computer-engineering/": [
+      [
+        "Photonics, Electronics and Nanotechnology",
+        "Robotics",
+        "Medical Imaging, Devices, and Systems",
+        "Cyber-Physical Systems",
+        "Applied and Translational Artificial Intelligence",
+        "Space and Defense Systems"
+      ],
+      [
+        "Institute for Space and Defense Electronics",
+        "Institute for Software Integrated Systems",
+        "Vanderbilt Institute for Surgery and Engineering",
+        "Vanderbilt Institute of Nanoscale Science and Engineering",
+        "Data Science Institute",
+        "Vanderbilt Lab for Immersive AI Translation"
+      ],
+      [
+        "Benoit Dawant, Chair (Interim)",
+        "Tim Holman, Director of Undergraduate Studies",
+        "Alan Peters, Director of Graduate Studies",
+        "Jack Noble, Director of Graduate Recruiting",
+        "Department Administration Staff"
+      ]
+    ],
+    "https://www.mccormick.northwestern.edu/electrical-computer/research/areas/computer-engineering.html": [
+      [
+        "Nivedita\u00a0Arora",
+        "Simone\u00a0Campanoni",
+        "Alok\u00a0Choudhary",
+        "Peter\u00a0Dinda",
+        "Jie\u00a0Gu",
+        "Nikos\u00a0Hardavellas",
+        "Josiah\u00a0Hester",
+        "Russell\u00a0Joseph",
+        "Seda\u00a0Ogrenci",
+        "Stephen\u00a0Xia",
+        "Hai\u00a0Zhou",
+        "Qi\u00a0Zhu",
+        "Nabil\u00a0Alshurafa",
+        "Yan\u00a0Chen",
+        "Branden\u00a0Ghena",
+        "Alan\u00a0Sahakian",
+        "Wei-keng\u00a0Liao",
+        "Ankit\u00a0Agrawal"
+      ],
+      [
+        "Allen K. and Johnnie Cordell Breed Junior Professor of Design",
+        "Assistant Professor of Electrical and Computer Engineering",
+        "Assistant Professor of Computer Science"
+      ]
+    ],
+    "https://engineering.jhu.edu/ece/research/": [
+      [
+        "Acoustics, Language and Speech Processing",
+        "Artificial Intelligence and Data Science",
+        "Computer Engineering and Microelectronics",
+        "Control, Networks and Systems",
+        "Image Processing and Analysis",
+        "Language and Speech Processing",
+        "Solid State Electronics and Photonics",
+        "Sustainable Energy",
+        "Photonics and Optoelectronics"
+      ],
+      [
+        "Secondary Navigation",
+        "Info For Navigation",
+        "Utility Navigation",
+        "Site Navigation",
+        "Info For Navigation",
+        "You are here:",
+        "Research Navigation",
+        "Research Areas",
+        "Among our research activities...",
+        "Stay Connected",
+        "Department of Electrical and Computer Engineering",
+        "Footer Navigation",
+        "Legal Navigation",
+        "Site Menu",
+        "Site Navigation",
+        "Utility Navigation",
+        "Secondary Navigation"
+      ]
+    ],
+    "https://ece.umd.edu/research": [
+      [
+        "Interdisciplinary, experiential, entrepreneurial, innovative",
+        "Department Research Areas",
+        "Communications, Networking, and Information Theory (CNIT)",
+        "Signal Processing and Machine Learning (SPML)",
+        "Control, Robotics, Autonomy, and Learning (CRAL)",
+        "Computer Architecture (CMAR)",
+        "Embedded and Cyber Physical Systems (ECPS)",
+        "Cybersecurity and Cyberprivacy (CYSP)",
+        "Quantum Technologies (QUTE)",
+        "Applied Physics and Electromagnetics (APHE)",
+        "Optics and Photonics (OPTP)",
+        "Electronic Materials and Devices (ELMD)",
+        "Power Electronics, Solid State Circuits, and Bioelectronics (PECB)"
+      ],
+      [
+        "power and high",
+        "frequency devices, solid",
+        "state circuits encompassing a broad spectrum of analog and digital integrated circuits, and bio",
+        "generation solutions."
+      ]
+    ],
+    "https://www.ece.ucsd.edu/graduate/research-areas": [
+      [
+        "Main Navigation",
+        "Applied Electromagnetics EC92",
+        "Applied Ocean Sciences EC75",
+        "Applied Physics- Electronic Devices & Materials EC76",
+        "Communication Theory & Systems EC77",
+        "Computer Engineering (Impacted) EC79",
+        "Electronic Circuits & Systems (Impacted) EC78",
+        "Intelligent Systems, Robotics & Control (Impacted) EC80",
+        "Machine Learning & Data Science (Impacted) EC93",
+        "Medical Devices & Systems EC90",
+        "Medical Imaging EC95",
+        "Nanoscale Devices & Systems EC86",
+        "Photonics EC81",
+        "Signal & Image Processing EC82",
+        "Graduate",
+        "Information",
+        "Quicklinks",
+        "Stay Connected"
+      ]
+    ],
+    "https://www.ece.cmu.edu/research/index.html": [
+      [
+        "Energy",
+        "Health care & quality of life",
+        "Mobile systems",
+        "Smart infrastructure"
+      ],
+      [
+        "Nanotechnology",
+        "Storage systems",
+        "Intelligent physical systems",
+        "Data/network science",
+        "Secure systems"
+      ],
+      [
+        "College of Engineering",
+        "Application domains",
+        "Systems & technologies",
+        "Theoretical & technological foundations"
+      ]
+    ],
+    "https://engineering.purdue.edu/ECE/Research/Areas": [
+      [
+        "Automatic Control",
+        "Communications, Networking, Signal & Image Processing",
+        "Computer Engineering",
+        "Fields and Optics",
+        "Microelectronics & Nanotechnology",
+        "Schweitzer Power and Energy Systems",
+        "VLSI and Circuit Design"
+      ],
+      [
+        "Discover",
+        "Explore",
+        "Connect",
+        "People",
+        "Follow"
+      ],
+      [
+        "aided synthesis, field programmable gate arrays (FPGAs), and design of low",
+        "design, low",
+        "power datapath synthesis, and smart power SiC integrated circuits.",
+        "performance workstations, integrated circuit testers, and commercial computer",
+        "aided design software. The laboratory is used for designing low"
+      ]
+    ],
+    "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering": [
+      [
+        "NYU Computer Architecture Day 2024: A Convergence of Minds and Innovations",
+        "Weijie Wang took high honors in an international wireless challenge",
+        "Zhong-Ping Jiang Elected to European Academy of Sciences and Arts for Interdisciplinary Leadership"
+      ]
+    ],
+    "https://www.ece.rutgers.edu/": [
+      [
+        "Colloquium",
+        "ECE Colloquium - Dr. Francesco Restuccia, Northeastern University",
+        "Wednesday, April 09, 2025, 10:20 a.m.-11:40 a.m."
+      ],
+      [
+        "Colloquium",
+        "ECE Colloquium - Dr. Jack Dongarra, University of Tennessee, Knoxville",
+        "Wednesday, April 16, 2025, 10:20 a.m.-11:40 a.m."
+      ],
+      [
+        "Community",
+        "ECE Capstone Expo 2025",
+        "Wednesday, April 23, 2025, 11:00 a.m.-4:00 p.m. | Piscataway"
+      ]
+    ],
+    "https://ece.osu.edu/directory/research-areas": [
+      [
+        "Main navigation",
+        "Agarwal, Anant",
+        "Anderson, Betty Lise",
+        "Arafin, Shamsul",
+        "Berger, Paul R.",
+        "Berger-Wolf, Tanya",
+        "Bibyk, Steven",
+        "Brillson, Leonard",
+        "Brocanelli, Marco",
+        "Chapman, Gregg",
+        "Chowdhury, Enam",
+        "Clymer, Bradley",
+        "Coifman, Benjamin",
+        "Ekici, Eylem",
+        "Ertin, Emre",
+        "Eryilmaz, Atilla",
+        "Eryilmaz, Irem",
+        "Fayed, Ayman",
+        "Fiorentini, Lisa",
+        "Goswami, Debdipta",
+        "Grassman, Tyler",
+        "Gupta, Abhishek",
+        "Illindala, Mahesh",
+        "Johnson, Joel",
+        "Kassas, Zak",
+        "Department ofElectrical & Computer Engineering",
+        "Quick Links",
+        "Connect"
+      ],
+      [
+        "Agarwal, Anant",
+        "Professor, Electrical and Computer Engineering",
+        "Faculty\nPower & Energy\nNanotechnology and Devices\nSolid State Electronics and Photonics",
+        "agarwal.334@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Faculty",
+        "Power & Energy",
+        "Nanotechnology and Devices",
+        "Solid State Electronics and Photonics"
+      ],
+      [
+        "Anderson, Betty Lise",
+        "Faculty\nNanotechnology and Devices\nSolid State Electronics and Photonics",
+        "(614) 292-1323",
+        "anderson.67@osu.edu",
+        "205 Dreese Laboratories"
+      ],
+      [
+        "Arafin, Shamsul",
+        "Assistant Professor, Electrical and Computer Engineering",
+        "Faculty\nNanotechnology and Devices\nSolid State Electronics and Photonics",
+        "(614) 247-2992",
+        "arafin.1@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Berger, Paul R.",
+        "Professor, Electrical and Computer Engineering",
+        "Faculty\nNanotechnology and Devices\nSolid State Electronics and Photonics\nPower & Energy",
+        "(614) 247-6235",
+        "berger.143@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Faculty",
+        "Nanotechnology and Devices",
+        "Solid State Electronics and Photonics",
+        "Power & Energy"
+      ],
+      [
+        "Berger-Wolf, Tanya",
+        "Faculty\nComputer Networks and Communication",
+        "berger-wolf.1@osu.edu",
+        "Pomerene Hall"
+      ],
+      [
+        "Academic Director, Academic Affairs Administration",
+        "Professor, Computer Science and Engineering",
+        "Professor, Evolution Ecology and Organismal Biology",
+        "Professor, Electrical and Computer Engineering"
+      ],
+      [
+        "Bibyk, Steven",
+        "Associate Professor, Electrical and Computer Engineering",
+        "Faculty\nComputer Networks and Communication\nCircuits",
+        "(614) 292-1300",
+        "bibyk.1@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Brillson, Leonard",
+        "Faculty\nNanotechnology and Devices\nSolid State Electronics and Photonics",
+        "(614) 292-8015",
+        "brillson.1@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Professor, Electrical and Computer Engineering",
+        "Professor & CMR Scholar, Physics Administration",
+        "Professor, Physics"
+      ],
+      [
+        "Brocanelli, Marco",
+        "Assistant Professor, Electrical and Computer Engineering",
+        "Computer Networks and Communication\nFaculty",
+        "brocanelli.1@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Chapman, Gregg",
+        "Professional Practice Assistant Professor, Electrical and Computer Engineering",
+        "Faculty\nCircuits",
+        "(614) 292-2572",
+        "chapman.415@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Chowdhury, Enam",
+        "Faculty\nSolid State Electronics and Photonics",
+        "(614) 292-4286",
+        "chowdhury.24@osu.edu",
+        "Fontana Laboratories"
+      ],
+      [
+        "Assistant Professor, Materials Science and Engineering",
+        "Assistant Professor, Electrical and Computer Engineering",
+        "Assistant Professor, Physics"
+      ],
+      [
+        "Clymer, Bradley",
+        "Associate Professor, Electrical and Computer Engineering",
+        "Faculty\nSystems (Control, Signal Processing and Computer Vision)",
+        "(614) 292-3477",
+        "clymer.1@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Coifman, Benjamin",
+        "Faculty\nSystems (Control, Signal Processing and Computer Vision)",
+        "(614) 292-4282",
+        "coifman.1@osu.edu",
+        "Hitchcock Hall"
+      ],
+      [
+        "Ekici, Eylem",
+        "Faculty\nComputer Networks and Communication",
+        "(614) 292-0495",
+        "ekici.2@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Ertin, Emre",
+        "Associate Professor, Electrical and Computer Engineering",
+        "Faculty\nElectromagnetics\nSystems (Control, Signal Processing and Computer Vision)",
+        "(614) 688-3928",
+        "ertin.1@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Eryilmaz, Atilla",
+        "Professor, Electrical and Computer Engineering",
+        "Faculty\nComputer Networks and Communication",
+        "(614) 292-7464",
+        "eryilmaz.2@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Eryilmaz, Irem",
+        "Professional Practice Assistant Professor, Electrical and Computer Engineering",
+        "Faculty\nComputer Networks and Communication",
+        "eryilmaz.4@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Fayed, Ayman",
+        "Professor, Electrical and Computer Engineering",
+        "Faculty\nCircuits",
+        "(614) 247-4793",
+        "fayed.1@osu.edu",
+        "Caldwell Laboratory"
+      ],
+      [
+        "Fiorentini, Lisa",
+        "Professor, Electrical and Computer Engineering",
+        "Faculty\nSystems (Control, Signal Processing and Computer Vision)",
+        "fiorentini.2@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Goswami, Debdipta",
+        "Faculty\nSystems (Control, Signal Processing and Computer Vision)",
+        "goswami.78@osu.edu",
+        "E0510 Scott Laboratory"
+      ],
+      [
+        "Grassman, Tyler",
+        "Nanotechnology and Devices\nPower & Energy\nFaculty\nSolid State Electronics and Photonics",
+        "(614) 688-1704",
+        "grassman.5@osu.edu",
+        "4012 Fontana Laboratories"
+      ],
+      [
+        "Nanotechnology and Devices",
+        "Power & Energy",
+        "Faculty",
+        "Solid State Electronics and Photonics"
+      ],
+      [
+        "Gupta, Abhishek",
+        "Associate Professor, Electrical and Computer Engineering",
+        "Faculty\nSystems (Control, Signal Processing and Computer Vision)",
+        "gupta.706@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Illindala, Mahesh",
+        "Associate Professor, Electrical and Computer Engineering",
+        "Faculty\nPower & Energy",
+        "illindala.1@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Johnson, Joel",
+        "Faculty\nElectromagnetics",
+        "(614) 292-1593",
+        "johnson.1374@osu.edu",
+        "Dreese Laboratories"
+      ],
+      [
+        "Kassas, Zak",
+        "(614) 247-6306",
+        "kassas.2@osu.edu",
+        "420 Dreese Laboratories"
+      ],
+      [
+        "Faculty",
+        "Systems (Control, Signal Processing and Computer Vision)",
+        "Computer Networks and Communication",
+        "Electromagnetics"
+      ]
+    ],
+    "https://ece.gatech.edu/research/overview": [
+      [
+        "College of Engineering",
+        "ECE JUMP Centers",
+        "ECE Research Group & Lab Spotlight: OLIVES",
+        "Georgia Institute of Technology"
+      ]
+    ],
+    "https://www.mtu.edu/ece/research/focus/": [
+      [
+        "Engineering",
+        "Electrical and Computer Engineering",
+        "Focus"
+      ],
+      [
+        "Signals and Systems",
+        "Computer Engineering",
+        "Electro Physics",
+        "Power and Energy",
+        "Research Resources",
+        "Admissions",
+        "Study and Live",
+        "Campus Info",
+        "Policies and Safety",
+        "Electrical and Computer Engineering"
+      ]
+    ],
+    "https://www.ece.uw.edu/research/": [
+      [
+        "Biosystems",
+        "Computing and Networking",
+        "Data Science",
+        "Electronic, Photonic, and Integrated Quantum Systems (EPIQS)",
+        "Power and Energy Systems",
+        "Robotics and Controls"
+      ],
+      [
+        "UW Molecular Engineering Materials Center",
+        "Center for Neurotechnology",
+        "UW Biofabrication Center (now a part of the Institute for Protein Design)",
+        "Center on Satellite Multimedia and Connected Vehicles",
+        "ADVANCE Center for Institutional Change",
+        "Center for Design of Analog-Digital Integrated Circuits",
+        "Center for Synthetic Biology",
+        "Institute for Nano-Engineered Systems",
+        "National Nanotechnology Coordinated Infrastructure",
+        "Washington Nanofabrication Facility",
+        "Intel Science and Technology Center for Pervasive Computing",
+        "Industrial Assessment Center"
+      ],
+      [
+        "14/16nm ASIC Design",
+        "Heterogeneous Tiled Microprocessors",
+        "Dark Silicon",
+        "Bitcoin Mining",
+        "Open Source Hardware",
+        "ASIC Clouds",
+        "Stroke neurorehabilitation using optogenetic stimulation in non-human primates",
+        "Multi-modal large-scale optogenetic interface for non-human primates"
+      ],
+      [
+        "Interactive System Design Laboratory",
+        "Microelectromechanical Systems Lab",
+        "Networked Control Systems Laboratory",
+        "Design, Test and Reliability Research Laboratory",
+        "Restorative Technologies Laboratory",
+        "NERD LAB: NEURAL ENGINEERING AND REHABILITATION DESIGN",
+        "Transformation, Interpretation and Analysis of Language (TIAL)",
+        "Nanotechnology Modeling Laboratory"
+      ],
+      [
+        "Helpful Links",
+        "The 2025 International Conference on Machine Learning: Q&A with Professor Maryam Fazel",
+        "Serena Eley \u2014 studying superconductivity, magnetism, and disorder in quantum materials",
+        "Brain-machine interface pioneer Amy Orsborn named 2025 Sloan Research Fellow",
+        "A camera that can identify objects at the speed of light",
+        "Niveditha Kalavakonda \u2014 building an intelligent robot to assist surgeons",
+        "The Integrator 2024\u20132025",
+        "Be boundless"
+      ],
+      [
+        "University of Washington",
+        "Be boundless",
+        "\u00a9 2025 University of Washington  |  Seattle, WA"
+      ]
+    ],
+    "https://engineering.dartmouth.edu/areas/electrical-computer": [
+      [
+        "Computing systems and controls",
+        "Electronic materials and devices",
+        "Photonics and optics",
+        "Power electronics",
+        "Space science and engineering"
+      ]
+    ],
+    "https://catalog.mit.edu/schools/engineering/electrical-engineering-computer-science/": [
+      [
+        "Home>",
+        "Schools>",
+        "School\u00a0of\u00a0Engineering>",
+        "Electrical Engineering and Computer Science"
+      ],
+      [
+        "Breadth through introductory courses in numerical analysis, simulation, and optimization",
+        "Depth in the student\u2019s chosen field",
+        "Multidisciplinary aspects of computation",
+        "Hands-on experience through projects, assignments, and a master's thesis"
+      ],
+      [
+        "Undergraduate Study",
+        "Graduate Study",
+        "Faculty and Teaching Staff",
+        "Research Staff",
+        "Professors Emeriti",
+        "Programming & Software Engineering",
+        "Programming Languages",
+        "Theoretical Computer Science",
+        "Security & Cryptography",
+        "Computer Systems",
+        "Computer Architecture",
+        "Circuits & Applications",
+        "Energy",
+        "Electromagnetics, Photonics, and Quantum",
+        "Nanoelectronics & Nanotechnology",
+        "Signal Processing",
+        "Control",
+        "Optimization & Engineering Mathematics",
+        "Communications",
+        "Probability & Statistics",
+        "Inference",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Robotics",
+        "Graphics",
+        "Human-Computer Interaction & Society",
+        "Computational Biology",
+        "Biomedical & Health",
+        "Vision",
+        "Natural Language Processing & Speech",
+        "Cross-cutting EECS Subjects",
+        "Gordon Engineering Leadership Program",
+        "EECS & Beyond",
+        "Independent Activities Period",
+        "Non-classroom & Career",
+        "Special Subjects",
+        "Common Ground for Computing Education"
+      ],
+      [
+        "Bachelor of Science in Computer Science and Engineering (Course 6-3)",
+        "Bachelor of Science in Artificial Intelligence and Decision Making (Course 6-4)",
+        "Bachelor of Science in Electrical Engineering with Computing (Course 6-5)",
+        "Bachelor of Science in Computer Science and Molecular Biology (Course 6-7)",
+        "Bachelor of Science in Computation and Cognition (Course 6-9)",
+        "Bachelor of Science in Computer Science, Economics, and Data Science (Course 6-14)",
+        "Bachelor of Science in Urban Science and Planning with Computer Science (Course 11-6)",
+        "Minor in Computer Science",
+        "Inquiries",
+        "Master of Engineering",
+        "Master of Computer Science, Economics, and Data Science (Course 6-14P)",
+        "Predoctoral and Doctoral Programs",
+        "Financial Support",
+        "Inquiries",
+        "Interdisciplinary Programs",
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Professors of the Practice",
+        "Adjunct Professors",
+        "Senior Lecturers",
+        "Lecturers",
+        "Technical Instructors",
+        "Visiting Scholars"
+      ],
+      [
+        "A \u2013 Z",
+        "Calendar",
+        "Archive",
+        "Print"
+      ],
+      [
+        "Minor in Computer Science",
+        "Bachelor of Science in Computer Science and Engineering (Course 6-3)",
+        "Bachelor of Science in Artificial Intelligence and Decision Making (Course 6-4)",
+        "Bachelor of Science in Electrical Engineering with Computing (Course 6-5)",
+        "Bachelor of Science in Computer Science and Molecular Biology (Course 6-7)",
+        "Bachelor of Science in Computation and Cognition (Course 6-9)",
+        "Bachelor of Science in Computer Science, Economics, and Data Science (Course 6-14)",
+        "Bachelor of Science in Urban Science and Planning with Computer Science (Course 11-6)"
+      ],
+      [
+        "Master of Engineering in Electrical Engineering and Computer Science (Course 6-P)",
+        "Master of Engineering Thesis Program with Industry (Course 6-A)",
+        "Master of Engineering in Computer Science and Molecular Biology (Course 6-7P)",
+        "Master of Engineering in Computation and Cognition (Course 6-9P)",
+        "Master of Computer Science, Economics, and Data Science (Course 6-14P)",
+        "Master of Science in Electrical Engineering and Computer Science",
+        "Electrical Engineer or Engineer in Computer Science",
+        "Doctor of Philosophy or Doctor of Science"
+      ],
+      [
+        "Asuman E. Ozdaglar, PhD",
+        "MathWorks Professor of Electrical Engineering and Computer Science",
+        "Head, Department of Electrical Engineering and Computer Science",
+        "Professor of Electrical Engineering",
+        "Deputy Dean of Academics, MIT Schwarzman College of Computing",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Antonio Torralba, PhD",
+        "Delta Electronics Professor",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Joel Voldman, PhD",
+        "William R. Brody (1965) Professor",
+        "Professor of Electrical Engineering",
+        "Faculty Head, Electrical Engineering, Department of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Harold Abelson, PhD",
+        "Class of 1992 Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "(On leave, spring)"
+      ],
+      [
+        "Elfar Adalsteinsson, PhD",
+        "Eaton-Peabody Professor",
+        "Professor of Electrical Engineering",
+        "Core Faculty, Institute for Medical Engineering and Science",
+        "(On leave)"
+      ],
+      [
+        "Akintunde I. Akinwande, PhD",
+        "Thomas and Gerd Perkins Professor of Electrical Engineering and Computer Science",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Hari Balakrishnan, PhD",
+        "Fujitsu Professor in Electrical Engineering and Computer Science",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Marc A. Baldo, PhD",
+        "Dugald C. Jackson Professor in Electrical Engineering",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Regina Barzilay, PhD",
+        "School of Engineering Distinguished Professor for AI and Health",
+        "Professor of Electrical Engineering and Computer Science",
+        "(On leave, fall)"
+      ],
+      [
+        "Karl K. Berggren, PhD",
+        "Joseph F. and Nancy P. Keithley Professor in Electrical Engineering",
+        "Professor of Electrical Engineering",
+        "(On leave)"
+      ],
+      [
+        "Duane S. Boning, PhD",
+        "Clarence J. LeBel Professor in Electrical Engineering and Computer Science",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Vladimir Bulovi\u0107, PhD",
+        "Fariborz Maseeh (1990) Professor of Emerging Technology",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Anantha P. Chandrakasan, PhD",
+        "Vannevar Bush Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Dean, School of Engineering"
+      ],
+      [
+        "Adam Chlipala, PhD",
+        "Professor of Electrical Engineering and Computer Science",
+        "(On leave, fall)"
+      ],
+      [
+        "Isaac Chuang, PhD",
+        "Professor of Electrical Engineering",
+        "Professor of Physics"
+      ],
+      [
+        "Munther A. Dahleh, PhD",
+        "William A. Coolidge Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Konstantinos Daskalakis, PhD",
+        "Armen Avanessians (1982) Professor",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Jes\u00fas A. del Alamo, PhD",
+        "Donner Professor of Science",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Srinivas Devadas, PhD",
+        "Edwin Sibley Webster Professor",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Frederic Durand, PhD",
+        "Amar Bose Professor of Computing",
+        "Professor of Computer Science and Engineering"
+      ],
+      [
+        "Dennis M. Freeman, PhD",
+        "Henry Ellis Warren (1894) Professor",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "James G. Fujimoto, PhD",
+        "Elihu Thomson Professor in Electrical Engineering",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Polina Golland, PhD",
+        "Sunlin (1966) and Priscilla Chou Professor",
+        "Professor of Computer Science and Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "W. Eric L. Grimson, PhD",
+        "Bernard M. Gordon Professor in Medical Engineering",
+        "Professor of Computer Science and Engineering",
+        "Chancellor for Academic Advancement"
+      ],
+      [
+        "John V. Guttag, PhD",
+        "Dugald C. Jackson Professor in Electrical Engineering",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Jongyoon Han, PhD",
+        "Professor of Electrical Engineering",
+        "Professor of Biological Engineering"
+      ],
+      [
+        "Qing Hu, PhD",
+        "Distinguished Professor in Electrical Engineering and Computer Science",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Daniel Huttenlocher, PhD",
+        "Henry Ellis Warren (1894) Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Dean, MIT Schwarzman College of Computing"
+      ],
+      [
+        "Piotr Indyk, PhD",
+        "Thomas D. and Virginia W. Cabot Professor",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Tommi S. Jaakkola, PhD",
+        "Thomas M. Siebel Distinguished Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society",
+        "(On leave, spring)"
+      ],
+      [
+        "Daniel Jackson, PhD",
+        "Professor of Computer Science and Engineering",
+        "(On leave)"
+      ],
+      [
+        "Patrick Jaillet, PhD",
+        "Dugald C. Jackson Professor in Electrical Engineering",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "M. Frans Kaashoek, PhD",
+        "Charles A. Piper (1935) Professor",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Leslie P. Kaelbling, PhD",
+        "Panasonic Professor",
+        "Professor of Computer Science and Engineering"
+      ],
+      [
+        "Dina Katabi, PhD",
+        "Thuan (1990) and Nicole Pham Professor",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Jeffrey H. Lang, PhD",
+        "Vitesse Professor",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Hae-Seung Lee, PhD",
+        "Advanced Television and Signal Processing (ATSP) Professor",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Steven B. Leeb, PhD",
+        "Emanuel E. Landsman (1958) Professor",
+        "Professor of Electrical Engineering",
+        "Professor of Mechanical Engineering"
+      ],
+      [
+        "Charles E. Leiserson, PhD",
+        "Edwin Sibley Webster Professor",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Tom\u00e1s Lozano-P\u00e9rez, PhD",
+        "School of Engineering Professor of Teaching Excellence",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Samuel R. Madden, PhD",
+        "Distinguished College of Computing Professor",
+        "Professor of Computer Science and Engineering"
+      ],
+      [
+        "Aleksander Madry, PhD",
+        "Cadence Design Systems Professor",
+        "Professor of Computer Science",
+        "(On leave)"
+      ],
+      [
+        "Thomas L. Magnanti, PhD",
+        "Institute Professor",
+        "Professor of Operations Research",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Wojciech Matusik, PhD",
+        "Joan and Irwin M. (1957) Jacobs Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Mechanical Engineering",
+        "(On leave)"
+      ],
+      [
+        "Muriel M\u00e9dard, ScD",
+        "NEC Professor of Software Science and Engineering",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Alexandre Megretski, PhD",
+        "Professor of Electrical Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Robert C. Miller, PhD",
+        "Distinguished Professor in Electrical Engineering and Computer Science",
+        "Professor of Computer Science and Engineering"
+      ],
+      [
+        "Sendhil Mullainathan, PhD",
+        "Peter de Florez Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Economics"
+      ],
+      [
+        "William D. Oliver, PhD",
+        "Henry Ellis Warren (1894) Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Physics"
+      ],
+      [
+        "Tom\u00e1s Palacios, PhD",
+        "Clarence J. LeBel Professor in Electrical Engineering and Computer Science",
+        "Professor of Electrical Engineering",
+        "(On leave, spring)"
+      ],
+      [
+        "Pablo A. Parrilo, PhD",
+        "Joseph F. and Nancy P. Keithley Professor in Electrical Engineering",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Mathematics",
+        "Member, Institute for Data, Systems, and Society",
+        "(On leave)"
+      ],
+      [
+        "David J. Perreault, PhD",
+        "Ford Foundation Professor of Engineering",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Yury Polyanskiy, PhD",
+        "Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Rajeev J. Ram, PhD",
+        "Clarence J. LeBel Professor in Electrical Engineering and Computer Science",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "L. Rafael Reif, PhD",
+        "Ray and Maria Stata Professor of Electrical Engineering and Computer Science",
+        "President Emeritus"
+      ],
+      [
+        "Martin C. Rinard, PhD",
+        "Professor of Computer Science and Engineering",
+        "(On leave)"
+      ],
+      [
+        "Ronitt Rubinfeld, PhD",
+        "Edwin Sibley Webster Professor",
+        "Professor of Computer Science and Engineering"
+      ],
+      [
+        "Daniela L. Rus, PhD",
+        "Andrew (1956) and Erna Viterbi Professor",
+        "Professor of Computer Science and Engineering",
+        "Deputy Dean of Research, MIT Schwarzman College of Computing"
+      ],
+      [
+        "Devavrat Shah, PhD",
+        "Andrew (1956) and Erna Viterbi Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Armando Solar Lezama, PhD",
+        "Distinguished Professor of Computing, MIT Schwarzman College of Computing",
+        "Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "David A. Sontag, PhD",
+        "Professor of Electrical Engineering and Computer Science",
+        "Core Faculty, Institute for Medical Engineering and Science",
+        "(On leave, fall)"
+      ],
+      [
+        "Collin M. Stultz, MD, PhD",
+        "Nina T. and Robert H. Rubin Professor in Medical Engineering and Science",
+        "Professor of Electrical Engineering and Computer Science",
+        "Associate Director,  Institute for Medical Engineering and Science",
+        "Co-Director, Health Sciences and Technology Program"
+      ],
+      [
+        "Gerald Jay Sussman, PhD",
+        "Panasonic Professor",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Russell L. Tedrake, PhD",
+        "Toyota Professor",
+        "Professor of Computer Science and Engineering",
+        "Professor of Aeronautics and Astronautics",
+        "Professor of Mechanical Engineering",
+        "(On leave)"
+      ],
+      [
+        "Bruce Tidor, PhD",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Biological Engineering"
+      ],
+      [
+        "John N. Tsitsiklis, PhD",
+        "Clarence J. LeBel Professor in Electrical Engineering and Computer Science",
+        "Professor Post-Tenure of Electrical Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Caroline Uhler, PhD",
+        "Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Martin J. Wainwright, PhD",
+        "Cecil H. Green Professor in Electrical Engineering",
+        "Professor of Electrical Engineering and Computer Science",
+        "Professor of Mathematics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Jacob K. White, PhD",
+        "Cecil H. Green Professor in Electrical Engineering",
+        "Professor of Electrical Engineering"
+      ],
+      [
+        "Gregory W. Wornell, PhD",
+        "Sumitomo Electric Industries Professor in Engineering",
+        "Professor of Electrical Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Nickolai Zeldovich, PhD",
+        "Joan and Irwin M. (1957) Jacobs Professor",
+        "Professor of Electrical Engineering and Computer Science",
+        "(On leave)"
+      ],
+      [
+        "Fadel Adib, PhD",
+        "Associate Professor of Media Arts and Sciences",
+        "Associate Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Guy Bresler, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society",
+        "(On leave)"
+      ],
+      [
+        "Tamara A. Broderick, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Michael J. Carbin, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave)"
+      ],
+      [
+        "YuFeng Chen, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave, spring)"
+      ],
+      [
+        "Connor W. Coley, PhD",
+        "Class of 1957 Career Development Professor",
+        "Associate Professor of Chemical Engineering",
+        "Associate Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Mohsen Ghaffari, PhD",
+        "Steven and Renee Finn Career Development Professor",
+        "Associate Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Phillip John Isola, PhD",
+        "Class of 1948 Career Development Professor",
+        "Associate Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Stefanie Sabrina Jegelka, ScD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society",
+        "(On leave)"
+      ],
+      [
+        "Tim Kraska, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave)"
+      ],
+      [
+        "Laura D. Lewis, PhD",
+        "Athinoula A. Martinos Associate Professor",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "Core Faculty, Institute for Medical Engineering and Science"
+      ],
+      [
+        "Luqiao Liu, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave, fall)"
+      ],
+      [
+        "Stefanie Mueller, PhD",
+        "TIBCO Founders Professor",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "Associate Professor of Mechanical Engineering"
+      ],
+      [
+        "Farnaz Niroui, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave, spring)"
+      ],
+      [
+        "Julian Shun, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave)"
+      ],
+      [
+        "Justin Solomon, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave)"
+      ],
+      [
+        "Suvrit Sra, PhD",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "Member, Institute for Data, Systems, and Society",
+        "(On leave)"
+      ],
+      [
+        "Mengjia Yan, PhD",
+        "Homer A. Burnell Career Development Professor",
+        "Associate Professor of Electrical Engineering and Computer Science",
+        "(On leave, fall)"
+      ],
+      [
+        "Abigail Bodner, PhD",
+        "Assistant Professor of Earth, Atmospheric and Planetary Sciences",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Suraj Cheema, PhD",
+        "Assistant Professor of Materials Science and Engineering",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Samantha Coday, PhD",
+        "Emanuel E. Landsman (1958) Career Development Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Henry Corrigan-Gibbs, PhD",
+        "Douglas Ross (1954) Career Development Professor of Software Technology",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Priya Donti, PhD",
+        "Silverman (1968) Family Career Development Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Dylan J. Hadfield-Menell, PhD",
+        "Bonnie and Marty (1964) Tenenbaum Career Development Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Samuel B. Hopkins, PhD",
+        "Jamieson Career Development Professor in Electrical Engineering and Computer Science",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Cheng-Zhi Anna Huang, PhD",
+        "Assistant Professor of Music",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Ericmoore Jossou, PhD",
+        "John Clark Hardwick (1986) Professor",
+        "Assistant Professor of Nuclear Science and Engineering",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Yoon Kim, PhD",
+        "NBX Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science",
+        "(On leave, fall)"
+      ],
+      [
+        "Paul Pu Liang, PhD",
+        "Sony Career Development Professor of Media Arts and Sciences",
+        "Assistant Professor of Media Arts and Sciences",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Anand Venkat Natarajan, PhD",
+        "ITT Career Development Professor in Computer Technology",
+        "Assistant Professor of Electrical Engineering and Computer Science",
+        "(On leave, fall)"
+      ],
+      [
+        "Jelena Notaros, PhD",
+        "Robert J. Shillman (1974) Career Development Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Manish Raghavan, PhD",
+        "Drew Houston (2005) Career Development Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science",
+        "Assistant Professor of Information Technology",
+        "(On leave)"
+      ],
+      [
+        "Mark Rau, PhD",
+        "Assistant Professor of Music and Theater Arts",
+        "Assistant Professor of Electrical Engineering and Computer Science",
+        "(Spring)"
+      ],
+      [
+        "Nidhi Seethapathi, PhD",
+        "Middleton Career Development Assistant Professor",
+        "Assistant Professor of Brain and Cognitive Sciences",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Vincent Sitzmann, PhD",
+        "Jamieson Career Development Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Tess E. Smidt, PhD",
+        "X-Window Consortium Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Ashia Wilson, PhD",
+        "Lister Brothers (Gordon K. '30 and Donald K. '34) Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Sixian You, PhD",
+        "Alfred Henry (1929) and Jean Morrison Hayes Career Development Professor",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Dimitri A. Antoniadis, PhD",
+        "Ray and Maria Stata Professor Emeritus",
+        "Professor Emeritus of Electrical Engineering"
+      ],
+      [
+        "Arthur B. Baggeroer, ScD",
+        "Professor Emeritus of Mechanical and Ocean Engineering",
+        "Professor Emeritus of Electrical Engineering"
+      ],
+      [
+        "Clifton G. Fonstad Jr, PhD",
+        "Vitesse Professor Emeritus",
+        "Professor Emeritus of Electrical Engineering"
+      ],
+      [
+        "Alan J. Grodzinsky, ScD",
+        "Professor Emeritus of Biological Engineering",
+        "Professor Emeritus of Electrical Engineering",
+        "Professor Emeritus of Mechanical Engineering"
+      ],
+      [
+        "Erich P. Ippen, PhD",
+        "Elihu Thomson Professor Emeritus",
+        "Professor Emeritus of Physics",
+        "Professor Emeritus of Electrical Engineering"
+      ],
+      [
+        "Barbara H. Liskov, PhD",
+        "Institute Professor Emerita",
+        "Professor Emerita of Computer Science"
+      ],
+      [
+        "Albert R. Meyer, PhD",
+        "Hitachi America Professor Emeritus",
+        "Professor Emeritus of Computer Science and Engineering"
+      ],
+      [
+        "Ronald R. Parker, PhD",
+        "Professor Emeritus of Nuclear Science and Engineering",
+        "Professor Emeritus of Electrical Engineering"
+      ],
+      [
+        "Ronald L. Rivest, PhD",
+        "Institute Professor Emeritus",
+        "Professor Emeritus of Computer Science and Engineering"
+      ],
+      [
+        "Herbert Harold Sawin, PhD",
+        "Professor Emeritus of Chemical Engineering",
+        "Professor Emeritus of Electrical Engineering"
+      ],
+      [
+        "Martin A. Schmidt, PhD",
+        "Ray and Maria Stata Professor Emeritus",
+        "Professor Emeritus of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Henry Ignatius Smith, PhD",
+        "Joseph F. and Nancy P. Keithley Professor Emeritus in Electrical Engineering",
+        "Professor Emeritus of Electrical Engineering"
+      ],
+      [
+        "Thomas F. Weiss, PhD",
+        "Professor Emeritus of Electrical and Bioengineering",
+        "Professor Emeritus of Health Sciences and Technology"
+      ],
+      [
+        "Alan S. Willsky, PhD",
+        "Edwin Sibley Webster Professor Emeritus",
+        "Professor Emeritus of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Gerald L. Wilson, PhD",
+        "Vannevar Bush Professor Emeritus",
+        "Professor Emeritus of Electrical Engineering",
+        "Professor Emeritus of Mechanical Engineering"
+      ],
+      [
+        "Same subject as 18.4041[J]\nSubject meets with 18.404Prereq: 6.1200[J] or 18.200 G (Fall)4-0-8 units",
+        "See description under subject 18.4041[J].",
+        "M. Sipser"
+      ],
+      [
+        "Same subject as 18.405[J]Prereq: 18.404 G (Spring)3-0-9 units",
+        "See description under subject 18.405[J].",
+        "R. Williams"
+      ],
+      [
+        "Prereq: 6.5620[J] G (Fall)3-0-9 unitsCan be repeated for credit.",
+        "In-depth exploration of recent results in cryptography.",
+        "S. Goldwasser, Y. Kalai, S. Micali, V. Vaikuntanathan"
+      ],
+      [
+        "Same subject as 8.371[J], 18.436[J]Prereq: 18.435[J] G (Spring)3-0-9 units",
+        "See description under subject 8.371[J].",
+        "I. Chuang, A. Harrow"
+      ],
+      [
+        "Same subject as 2.830[J]Prereq: 2.008, 6.2600[J], or 6.3700 G (Fall)3-0-9 units",
+        "See description under subject 2.830[J].",
+        "D. E. Hardt, D. S. Boning"
+      ],
+      [
+        "Same subject as 2.097[J], 16.920[J]Prereq: 18.03 or 18.06 G (Fall)3-0-9 units",
+        "See description under subject 16.920[J].",
+        "J. Peraire"
+      ],
+      [
+        "Same subject as CMS.611[J]Prereq: 6.100A or CMS.301 U (Fall)3-3-6 units. HASS-A",
+        "See description under subject CMS.611[J]. Limited to 36.",
+        "P. Tan, S. Verrilli, R. Eberhardt"
+      ],
+      [
+        "Same subject as 20.405[J]\nSubject meets with 6.8721[J], 20.305[J]Prereq: None G (Fall)3-0-9 units",
+        "See description under subject 20.405[J].",
+        "R. Weiss"
+      ],
+      [
+        "Same subject as 20.305[J]\nSubject meets with 6.8720[J], 20.405[J]Prereq: None U (Fall)3-0-9 units",
+        "See description under subject 20.305[J].",
+        "R. Weiss"
+      ],
+      [
+        "Same subject as 2.795[J], 10.539[J], 20.430[J]Prereq: Permission of instructor G (Fall)3-0-9 units",
+        "See description under subject 20.430[J].",
+        "M. Bathe, A. J. Grodzinsky"
+      ],
+      [
+        "Same subject as 4.140[J], MAS.863[J]Prereq: Permission of instructor G (Fall)3-9-6 units",
+        "See description under subject MAS.863[J].",
+        "N. Gershenfeld, J. DiFrancesco, J. Lavallee, G. Darcey"
+      ],
+      [
+        "Same subject as 15.359[J]Prereq: None U (Spring)3-3-6 units",
+        "See description under subject 15.359[J].",
+        "G. Keselman"
+      ],
+      [
+        "Prereq: Permission of instructor U (IAP)Units arranged [P/D/F]Can be repeated for credit.",
+        "Covers subject matter not offered in the regular curriculum.",
+        "Consult Department"
+      ],
+      [
+        "Prereq: Permission of instructor U (IAP)Units arranged [P/D/F]Can be repeated for credit.",
+        "Covers subject matter not offered in the regular curriculum.",
+        "Consult Department"
+      ],
+      [
+        "Prereq: Permission of instructor U (IAP)Units arranged [P/D/F]Can be repeated for credit.",
+        "Covers subject matter not offered in the regular curriculum.",
+        "Consult Department"
+      ],
+      [
+        "Prereq: Permission of instructor U (IAP)Units arranged [P/D/F]Can be repeated for credit.",
+        "Covers subject matter not offered in the regular curriculum.",
+        "Consult Department"
+      ],
+      [
+        "Prereq: Permission of instructor U (IAP)Units arranged [P/D/F]Can be repeated for credit.",
+        "Covers subject matter not offered in the regular curriculum.",
+        "Consult Department"
+      ],
+      [
+        "Same subject as 24.C40[J]Prereq: None U (Fall)3-0-9 units. HASS-H",
+        "See description under subject 24.C40[J].",
+        "B. Skow, A. Solar-Lezama"
+      ],
+      [
+        "Introductory Level",
+        "Select up to 12 units of the following:",
+        "6.100A",
+        "6.100B",
+        "6.3400",
+        "6.9010",
+        "Basic Level",
+        "Select up to 63 units of the following:",
+        "6.1200[J]",
+        "6.1910",
+        "6.3700",
+        "6.3800",
+        "6.4100",
+        "18.200",
+        "18.200A",
+        "18.211",
+        "Algorithms-intensive",
+        "6.1210",
+        "Software-intensive",
+        "6.1010",
+        "Advanced Level",
+        "Select at least 12 units of the following:",
+        "6.1220[J]",
+        "6.1400[J]",
+        "6.1800",
+        "6.3730[J]",
+        "6.3900",
+        "6.4120[J]",
+        "6.4400",
+        "6.4530[J]",
+        "6.5151",
+        "6.5831",
+        "6.8301",
+        "6.8371",
+        "6.8611",
+        "6.8701",
+        "6.8711[J]",
+        "18.404",
+        "Algorithms-intensive",
+        "6.1220[J]",
+        "Software-intensive",
+        "6.1020",
+        "6.1040",
+        "6.1060",
+        "6.1100",
+        "6.1920",
+        "6.4200[J]",
+        "6.4550[J]",
+        "6.5081"
+      ],
+      [
+        "level courses in each of two specialized tracks, including computer architecture, human",
+        "computer interaction, programming tools and techniques, computer systems, or theory. 6",
+        "3 students may alternatively choose an electrical engineering track from the 6",
+        "2 degree, or an artificial intelligence and decision",
+        "making track from the 6",
+        "4 degree."
+      ],
+      [
+        "A Office, Room 38",
+        "409E, 617",
+        "4644."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: U (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "centric\" theory of fine",
+        "parameter tractability (FPT) and its characterizations, the W",
+        "hierarchy (W[1], W[2], W[P], etc.), 3",
+        "hardness, all",
+        "pairs shortest paths (APSP)"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered5",
+        "7 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "fast trees; fusion trees. Lower bounds; cell",
+        "probe model; round elimination. Dynamic graphs; link",
+        "memory and cache",
+        "oblivious data structures; B",
+        "trees; buffer trees; tree layout; ordered",
+        "file maintenance. Temporal data structures; persistence; retroactivity."
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "time pad,\u00a0block ciphers,\u00a0stream ciphers, message authentication codes), hash functions, key",
+        "exchange, public",
+        "key cryptography (encryption, digital signatures), elliptic curve cryptography,\u00a0 secret",
+        "sharing, fully homomorphic encryption, zero"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "key encryption, digital signatures, and pseudo",
+        "random number generation, as well as advanced cryptographic primitives such as zero",
+        "knowledge proofs, homomorphic encryption, and secure multiparty computation."
+      ],
+      [
+        "and small",
+        "scale power structures that stem from low",
+        "based systems such as Bitcoin. Enrollment may be limited."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "3 units"
+      ],
+      [
+        "scale digital systems using hardware description languages and high",
+        "person design project on multi",
+        "million gate FPGAs. Enrollment may be limited."
+      ],
+      [
+        "device fine",
+        "tuning. It also introduces application",
+        "on experience accelerating deep learning applications with an open",
+        "ended design project."
+      ],
+      [
+        "signal circuits in CMOS technologies. Small",
+        "signal and large",
+        "capacitor and continuous",
+        "time integrated filters. Basic and advanced A/D and D/A converters, delta"
+      ],
+      [
+        "mechanical energy conversion (motors and generators), and electrical",
+        "electrical energy conversion (DC",
+        "DC, DC"
+      ],
+      [
+        "optic and acousto",
+        "optic light modulators; photorefractive and liquid",
+        "crystal light modulation; display technologies; optical waveguides and fiber"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "optic and acousto",
+        "optic light modulators; photorefractive and liquid",
+        "crystal light modulation; spatial light modulators and displays; near",
+        "eye and projection displays, holographic and other 3",
+        "D display schemes, photodetectors; 2",
+        "D and 3",
+        "D optical storage technologies; adaptive optical systems; role of optics in next"
+      ],
+      [
+        "n junction, metal",
+        "oxide semiconductor structure, metal",
+        "semiconductor junction, MOS field",
+        "channel MOSFET device design and modern device scaling. Familiarity with MATLAB recommended."
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "length",
+        "force microscopy; optical, electron, ion, and nanoimprint lithography, templated self",
+        "off, electroplating, and ion",
+        "implant. Discusses applications in nanoelectronics, nanomaterials, and nanophotonics."
+      ],
+      [
+        "output and state",
+        "space models of linear systems driven by deterministic and random signals; time",
+        "and transform",
+        "mean square error estimation; Wiener filtering. Hypothesis testing; detection; matched filters."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "7 units"
+      ],
+      [
+        "design introduction to modeling and control of discrete",
+        "and continuous",
+        "time systems, from intuition",
+        "building analytical techniques to more computational and data",
+        "loci, lead",
+        "lag, phase margin); computational strategies (state",
+        "space, eigen",
+        "placement, LQR); and data"
+      ],
+      [
+        "design introduction to modeling and control of discrete",
+        "and continuous",
+        "time systems, from intuition",
+        "building analytical techniques to more computational and data",
+        "loci, lead",
+        "lag, phase margin); computational strategies (state",
+        "space, eigen",
+        "placement, LQR); and data"
+      ],
+      [
+        "and continuous",
+        "time, multi",
+        "input",
+        "output systems in control, related areas. Least squares and matrix perturbation problems. State"
+      ],
+      [
+        "offs. Model",
+        "based compensators; Q",
+        "parameterization; ill",
+        "posed optimization problems; dynamic augmentation; linear",
+        "quadratic optimization of controllers; H",
+        "infinity controller design; Mu",
+        "synthesis; model and compensator simplification; nonlinear effects. Computer",
+        "aided (MATLAB) design homework using models of physical processes."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "convex optimization. Focuses on both classical and cutting",
+        "edge results, including foundational topics grounded in convexity, complexity theory of first",
+        "order methods, stochastic optimization, as well as recent progress in non"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall, Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "antenna and MIMO systems; space",
+        "time codes and decoding algorithms; multiple",
+        "access techniques and multiuser detection; broadcast codes and precoding; cellular and ad",
+        "hoc network topologies; OFDM and ultrawideband systems; architectural issues."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 unitsCredit cannot also be received for 6.7480"
+      ],
+      [
+        "length and block compression; Slepian",
+        "Wolf theorem; ergodic sources and Shannon",
+        "McMillan theorem. Hypothesis testing, large deviations and I",
+        "channel problem. Rate",
+        "distortion theory, vector quantizers. Advanced topics include Gelfand",
+        "Pinsker problem, multiple access channels, broadcast channels (depending on available time)."
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 unitsCredit cannot also be received for 6.7470"
+      ],
+      [
+        "divergences, their convex duality, and variational characterizations. Covers information",
+        "processing inequalities. Methods are applied to deriving PAC",
+        "Bayes bounds, GANs, and regret inequalities in machine learning, metric and non",
+        "paced journey through a recent textbook with the same title. For a communication",
+        "focused version, consider 6.7470."
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered4",
+        "8 units"
+      ],
+      [
+        "product and junction tree algorithms; forward",
+        "backward algorithm, Kalman filtering and smoothing. Min",
+        "sum and Viterbi algorithms. Variational methods, mean",
+        "Welch and Chow"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "6 units"
+      ],
+      [
+        "free motion planning, task",
+        "motion planning, and planning under uncertainty), as well as dynamics and control (both model",
+        "based and learning"
+      ],
+      [
+        "free motion planning, task",
+        "motion planning, and planning under uncertainty), as well as dynamics and control (both model",
+        "based and learning",
+        "based. Students taking graduate version complete additional assignments."
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: U (Fall)",
+        "2026: Not offered3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)4",
+        "4 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "8 units"
+      ],
+      [
+        "1.EPE,",
+        "2.EPE,",
+        "3.EPE,",
+        "6.EPE,",
+        "8.EPE,",
+        "10.EPE,",
+        "15.EPE,",
+        "16.EPE,",
+        "20.EPE,"
+      ],
+      [
+        "1.EPW,",
+        "2.EPW,",
+        "3.EPW,",
+        "6.EPW,",
+        "10.EPW,",
+        "16.EPW,",
+        "20.EPW,",
+        "22.EPWPrereq:"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring, Summer)0",
+        "12 units"
+      ]
+    ],
+    "https://www.ece.cornell.edu/ece": [
+      [
+        "Computer Engineering",
+        "Robotics and Autonomy",
+        "Information, Networks, and Decision Systems",
+        "Physical Electronics, Devices, and Plasma Science",
+        "Circuits and Electronic Systems",
+        "Bio-Electrical Engineering"
+      ]
+    ],
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": [
+      [
+        "Electrical Engineering Degrees",
+        "Computer Science Degrees",
+        "Computer Engineering Degrees",
+        "Certificates and Online Degrees"
+      ],
+      [
+        "Embedded System Engineer",
+        "Power Electronics Designer",
+        "Semiconductor Engineer",
+        "Wireless Communication Engineer"
+      ],
+      [
+        "Artificial Intelligence Engineer",
+        "Cyber Security Specialist",
+        "Data Scientist",
+        "Data Engineer",
+        "Data Analyst",
+        "Software Engineer"
+      ],
+      [
+        "Computer Hardware Engineer",
+        "Robotics Engineer",
+        "Computer Systems Engineer/Architect",
+        "Satellite Communications Specialist"
+      ],
+      [
+        "Renewable and clean energy",
+        "Electric vehicles (land, ocean, space)",
+        "Robotics and automation",
+        "Smart phones and communication networks",
+        "Smart Grid Nanotechnology & optoelectronics"
+      ],
+      [
+        "Healthcare",
+        "E-Commerce",
+        "Energy",
+        "Cybersecurity",
+        "Information Technology",
+        "Financial Services"
+      ],
+      [
+        "Hardware Design",
+        "Communications",
+        "Defense"
+      ],
+      [
+        "Jia Di",
+        "Kevin Jin",
+        "Qinghua Li",
+        "Alex Nelson",
+        "Brajendra Panda",
+        "Dale Thompson",
+        "Xintao Wu"
+      ],
+      [
+        "Susan Gauch",
+        "Brajendra Panda",
+        "Xintao Wu",
+        "Lu Zhang"
+      ],
+      [
+        "Khoa Luu",
+        "Alex Nelson",
+        "Thi Hoang Ngan Le"
+      ],
+      [
+        "John Gauch",
+        "Khoa Luu",
+        "Ukash Nakarmi",
+        "Thi Hoang Ngan Le"
+      ],
+      [
+        "Khoa Luu",
+        "Ukash Nakarmi",
+        "Thi Hoang Ngan Le",
+        "Xintao Wu",
+        "Lu Zhang"
+      ],
+      [
+        "David Andrews",
+        "Jia Di",
+        "Miaoqing Huang",
+        "Kevin Jin",
+        "Alex Nelson",
+        "Yarui Peng"
+      ],
+      [
+        "Susan Gauch",
+        "Khoa Luu",
+        "Ukash Nakarmi",
+        "Thi Hoang Ngan Le"
+      ],
+      [
+        "Zhong Chen",
+        "Alan Mantooth",
+        "Hameed Naseem",
+        "Fisher Yu",
+        "Jeff Dix",
+        "Xiaoqing Song"
+      ],
+      [
+        "Zhong Chen",
+        "Omar Manasreh",
+        "Alan Mantooth",
+        "Roy McCann",
+        "Hameed Naseem",
+        "Fisher Yu",
+        "Yue Zhao",
+        "Morgan Ware",
+        "Xiaoqing Song"
+      ],
+      [
+        "Samir El-Ghazaly",
+        "Magda El-Shenawee",
+        "Junliang Dong"
+      ],
+      [
+        "Zhong Chen",
+        "Samir El-Ghazaly",
+        "Omar Manasreh",
+        "Alan Mantooth",
+        "Roy McCann",
+        "Hameed Naseem",
+        "Fisher Yu",
+        "Morgan Ware",
+        "Junliang Dong"
+      ],
+      [
+        "Innovative Nano/Biosensor Lab (INB Lab)",
+        "Mixed-Signal CAD Lab",
+        "Nanomaterials and Nanotube Research Laboratory (NNRL)",
+        "Optoelectronics Research Lab",
+        "Organic Devices and Electronics Lab (ODEL)",
+        "Sustainable Smart Electrical Energy Systems",
+        "Terahertz Imaging and Spectroscopy Computational Electromagnetics Group",
+        "Power Electronic Systems Laboratory at Arkansas (PESLA)",
+        "Power Switch Lab",
+        "Power Systems Control Laboratory",
+        "Intelligent Information Sensing, Processing, and Transmission Laboratory",
+        "ISLAND (Integrated Systems Lab for ANalog Design)",
+        "Photonic Integrated Circuits Lab",
+        "Yu\u2019s Group",
+        "Intelligent Information Processing Lab",
+        "Intelligent Terahertz Laboratory (iTHz-Lab)"
+      ],
+      [
+        "Association for Computing Machinery",
+        "Institute of Electrical and Electronics Engineers",
+        "CyberHogs",
+        "Girls in Tech",
+        "Trustworthy Machine Learning Reading Group"
+      ],
+      [
+        "Electrical Engineering",
+        "Computer Science",
+        "Computer Engineering",
+        "Certificates and Online Degrees",
+        "What You Can Do",
+        "Industries You Can Work In",
+        "Cybersecurity",
+        "Big Data, Data Analytics, and Blockchain",
+        "Machine Learning and Quantum Machine Learning",
+        "Computer Vision and Image Processing",
+        "Trustworthy and Responsible Artificial Intelligence",
+        "Computer System Design and High Performance Computing",
+        "Deep Learning and Natural Language Processing",
+        "Algorithmic Self-Assembly and Biomolecular Computing",
+        "Computer-Aided Design",
+        "Communications, Digital Signal Processing, and Sensor Networks",
+        "Electronics and Electronic Packaging, Analog and Mixed Signal, and Integrated Circuits",
+        "Power Systems, Power Electronics, Renewable Energy, and Control",
+        "RF and Microwave, Electromagnetics, Antennas, and Terahertz",
+        "Semiconductors, Nanotechnology, Optoelectronics, Photovoltaic, and Photonics",
+        "Research Centers & Labs",
+        "UA Power Group",
+        "Grid-Connected Advanced Power Electronics Systems",
+        "High Density Electronics Center",
+        "National Center for Reliable Electric Power Transmission",
+        "Center for Infrastructure Trustworthiness in Energy Systems",
+        "Center for Power Optimization of Electro-Thermal Systems",
+        "Arkansas Security Research and Education Institute",
+        "Institute for Nanoscience and Engineering",
+        "Electrical Engineering Research Labs",
+        "Computer Science & Computer Engineering Research Labs",
+        "Department News",
+        "Student Organizations and Clubs",
+        "Follow Us",
+        "College of Engineering"
+      ],
+      [
+        "Electrical Engineering",
+        "Computer Science",
+        "Computer Engineering",
+        "Electrical Engineering",
+        "Computer Science",
+        "Computer Engineering"
+      ],
+      [
+        "Bachelor of Science in Electrical Engineering, B.S.E.E.",
+        "4+1: Combines BS/MS in Electrical Engineering",
+        "Master of Science in Electrical Engineering, M.S.E.E. (On-campus or Online)",
+        "Doctor of Philosophy in Electrical Engineering, Ph.D."
+      ],
+      [
+        "Bachelor of Science in Computer Science, B.S.C.S.",
+        "Bachelor of Arts in Computer Science, B.A.C.S.",
+        "Master of Science in Computer Science, M.S.C.S.",
+        "Doctor of Philosophy in Computer Science, Ph.D."
+      ],
+      [
+        "Bachelor of Science in Computer Engineering, B.S.C.E.",
+        "Master of Science in Computer Engineering, M.S.C.E.",
+        "Doctor of Philosophy in Computer Engineering, Ph.D."
+      ],
+      [
+        "Cybersecurity Graduate Certificate (CSCE)",
+        "Graduate Certificate of Entrepreneurship (EE)",
+        "Graduate Certificate in Sustainability (EE)",
+        "Master of Science Engineering, M.S.E (100% Online)",
+        "Master of Science in Electrical Engineering, M.S.E.E. (On-campus or Online)"
+      ],
+      [
+        "UA Power Group",
+        "Grid-Connected Advanced Power Electronics Systems",
+        "High Density Electronics Center",
+        "National Center for Reliable Electric Power Transmission"
+      ],
+      [
+        "About Us",
+        "UAACSCE",
+        "Industry Advisory Board",
+        "EECS Handbooks"
+      ]
+    ],
+    "https://engineering.wisc.edu/departments/electrical-computer-engineering/research/": [
+      [
+        "Applied Electromagnetics, Acoustics, and Plasmas",
+        "Artificial Intelligence",
+        "Communications, Networks, Privacy, and Security",
+        "Computer Systems and Architecture",
+        "Energy Systems",
+        "Optics and Photonics",
+        "Optimization and Control",
+        "Solid-state Electronics and Quantum Technologies"
+      ]
+    ],
+    "https://www.morgan.edu/soe/ece": [
+      [
+        "Info for Morgan State University",
+        "Search Morgan State University",
+        "Dr. Michael Spencer",
+        "Dr. Deanna Bailey",
+        "Dr. Cliston L. Cole"
+      ],
+      [
+        "Master of Engineering",
+        "Doctor of Engineering",
+        "PhD Secure Embedded Systems"
+      ],
+      [
+        "Administrative Assistant:",
+        "April Lopez",
+        "ecedept@morgan.edu",
+        "443-885-3073"
+      ],
+      [
+        "Administrative Assistant:",
+        "April Lopez",
+        "ecedept@morgan.edu",
+        "443-885-3073"
+      ]
+    ],
+    "https://www.rit.edu/study/electrical-and-computer-engineering-phd": [
+      [
+        "Why Pursue an Electrical and Computer Engineering Ph.D. at RIT?",
+        "Electrical and Computer Engineering, Ph.D. degree, typical course sequence",
+        "Electives",
+        "Students are also interested in",
+        "Application Details",
+        "Cost and Financial Aid"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 18:08:39"
+}

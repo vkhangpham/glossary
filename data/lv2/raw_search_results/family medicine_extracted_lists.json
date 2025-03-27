@@ -1,0 +1,746 @@
+{
+  "level1_term": "family medicine",
+  "url_verification_status": {
+    "https://www.mayo.edu/research/departments-divisions/department-family-medicine-research/overview": false,
+    "https://medicine.umich.edu/dept/family-medicine/research": true,
+    "https://familymedicine.medicine.uiowa.edu/education/department-family-and-community-medicine-fellowships/faculty-development-fellowship-0": false,
+    "https://medschool.cuanschutz.edu/family-medicine/research-and-innovation/about": true,
+    "https://medicine.osu.edu/departments/family-medicine/research": false,
+    "https://www.jefferson.edu/academics/colleges-schools-institutes/skmc/departments/family-medicine/research.html": false,
+    "https://medicine.buffalo.edu/offices/ome/current/curriculum/coursebook/family-medicine.html": false,
+    "https://www.bcm.edu/departments/family-and-community-medicine/research": true,
+    "https://familymedicine.uw.edu/education/courses/clerkship/info-faculty/teaching-tools-and-best-practices-for-teachers/": false,
+    "https://chicago.medicine.uic.edu/family-community-medicine/fcm-research/": false,
+    "https://info.primarycare.hms.harvard.edu/harvard-home-family-medicine-faculty": false,
+    "https://med.psu.edu/fcm": false,
+    "https://fcm.ucsf.edu/research-areas": false,
+    "https://rwjms.rutgers.edu/department/family-medicine-community-health": false,
+    "https://lsom.uthscsa.edu/family-medicine/research/": false,
+    "https://www.med.unc.edu/fammed/research/protocol/": true,
+    "https://www.ohsu.edu/school-of-medicine/family-medicine/about": false,
+    "https://medicine.tufts.edu/about/departments-offices/academic-departments/family-medicine": true,
+    "https://fmch.duke.edu/about-us": false,
+    "https://medicine.wright.edu/family-medicine/research": false,
+    "https://medicine.iu.edu/family-medicine": true,
+    "https://www.fcm.arizona.edu/education/residency-program": false,
+    "https://www.augusta.edu/mcg/fammed/": false,
+    "https://chfm.ufl.edu/": true,
+    "https://www.kumc.edu/school-of-medicine/academics/departments/family-medicine-and-community-health/research.html": false,
+    "https://health.ucdavis.edu/family-medicine/research/research-faculty": false,
+    "https://www.uab.edu/medicine/home/campuses/huntsville/office-of-family-health-education-research": false
+  },
+  "verified_lists_per_url": {
+    "https://www.mayo.edu/research/departments-divisions/department-family-medicine-research/overview": 0,
+    "https://medicine.umich.edu/dept/family-medicine/research": 1,
+    "https://familymedicine.medicine.uiowa.edu/education/department-family-and-community-medicine-fellowships/faculty-development-fellowship-0": 0,
+    "https://medschool.cuanschutz.edu/family-medicine/research-and-innovation/about": 2,
+    "https://medicine.osu.edu/departments/family-medicine/research": 0,
+    "https://www.jefferson.edu/academics/colleges-schools-institutes/skmc/departments/family-medicine/research.html": 0,
+    "https://medicine.buffalo.edu/offices/ome/current/curriculum/coursebook/family-medicine.html": 0,
+    "https://www.bcm.edu/departments/family-and-community-medicine/research": 1,
+    "https://familymedicine.uw.edu/education/courses/clerkship/info-faculty/teaching-tools-and-best-practices-for-teachers/": 0,
+    "https://chicago.medicine.uic.edu/family-community-medicine/fcm-research/": 0,
+    "https://info.primarycare.hms.harvard.edu/harvard-home-family-medicine-faculty": 0,
+    "https://med.psu.edu/fcm": 0,
+    "https://fcm.ucsf.edu/research-areas": 0,
+    "https://rwjms.rutgers.edu/department/family-medicine-community-health": 0,
+    "https://lsom.uthscsa.edu/family-medicine/research/": 0,
+    "https://www.med.unc.edu/fammed/research/protocol/": 1,
+    "https://www.ohsu.edu/school-of-medicine/family-medicine/about": 0,
+    "https://medicine.tufts.edu/about/departments-offices/academic-departments/family-medicine": 1,
+    "https://fmch.duke.edu/about-us": 0,
+    "https://medicine.wright.edu/family-medicine/research": 0,
+    "https://medicine.iu.edu/family-medicine": 1,
+    "https://www.fcm.arizona.edu/education/residency-program": 0,
+    "https://www.augusta.edu/mcg/fammed/": 0,
+    "https://chfm.ufl.edu/": 1,
+    "https://www.kumc.edu/school-of-medicine/academics/departments/family-medicine-and-community-health/research.html": 0,
+    "https://health.ucdavis.edu/family-medicine/research/research-faculty": 0,
+    "https://www.uab.edu/medicine/home/campuses/huntsville/office-of-family-health-education-research": 0
+  },
+  "total_lists_per_url": {
+    "https://www.mayo.edu/research/departments-divisions/department-family-medicine-research/overview": 1,
+    "https://medicine.umich.edu/dept/family-medicine/research": 2,
+    "https://familymedicine.medicine.uiowa.edu/education/department-family-and-community-medicine-fellowships/faculty-development-fellowship-0": 5,
+    "https://medschool.cuanschutz.edu/family-medicine/research-and-innovation/about": 5,
+    "https://medicine.osu.edu/departments/family-medicine/research": 9,
+    "https://www.jefferson.edu/academics/colleges-schools-institutes/skmc/departments/family-medicine/research.html": 1,
+    "https://medicine.buffalo.edu/offices/ome/current/curriculum/coursebook/family-medicine.html": 2,
+    "https://www.bcm.edu/departments/family-and-community-medicine/research": 2,
+    "https://familymedicine.uw.edu/education/courses/clerkship/info-faculty/teaching-tools-and-best-practices-for-teachers/": 1,
+    "https://chicago.medicine.uic.edu/family-community-medicine/fcm-research/": 2,
+    "https://info.primarycare.hms.harvard.edu/harvard-home-family-medicine-faculty": 1,
+    "https://med.psu.edu/fcm": 4,
+    "https://fcm.ucsf.edu/research-areas": 2,
+    "https://rwjms.rutgers.edu/department/family-medicine-community-health": 2,
+    "https://lsom.uthscsa.edu/family-medicine/research/": 1,
+    "https://www.med.unc.edu/fammed/research/protocol/": 5,
+    "https://www.ohsu.edu/school-of-medicine/family-medicine/about": 1,
+    "https://medicine.tufts.edu/about/departments-offices/academic-departments/family-medicine": 3,
+    "https://fmch.duke.edu/about-us": 3,
+    "https://medicine.wright.edu/family-medicine/research": 1,
+    "https://medicine.iu.edu/family-medicine": 1,
+    "https://www.fcm.arizona.edu/education/residency-program": 3,
+    "https://www.augusta.edu/mcg/fammed/": 3,
+    "https://chfm.ufl.edu/": 3,
+    "https://www.kumc.edu/school-of-medicine/academics/departments/family-medicine-and-community-health/research.html": 3,
+    "https://health.ucdavis.edu/family-medicine/research/research-faculty": 1,
+    "https://www.uab.edu/medicine/home/campuses/huntsville/office-of-family-health-education-research": 1
+  },
+  "verified_lists_ids": {
+    "https://www.mayo.edu/research/departments-divisions/department-family-medicine-research/overview": [],
+    "https://medicine.umich.edu/dept/family-medicine/research": [
+      1
+    ],
+    "https://familymedicine.medicine.uiowa.edu/education/department-family-and-community-medicine-fellowships/faculty-development-fellowship-0": [],
+    "https://medschool.cuanschutz.edu/family-medicine/research-and-innovation/about": [
+      1,
+      4
+    ],
+    "https://medicine.osu.edu/departments/family-medicine/research": [],
+    "https://www.jefferson.edu/academics/colleges-schools-institutes/skmc/departments/family-medicine/research.html": [],
+    "https://medicine.buffalo.edu/offices/ome/current/curriculum/coursebook/family-medicine.html": [],
+    "https://www.bcm.edu/departments/family-and-community-medicine/research": [
+      1
+    ],
+    "https://familymedicine.uw.edu/education/courses/clerkship/info-faculty/teaching-tools-and-best-practices-for-teachers/": [],
+    "https://chicago.medicine.uic.edu/family-community-medicine/fcm-research/": [],
+    "https://info.primarycare.hms.harvard.edu/harvard-home-family-medicine-faculty": [],
+    "https://med.psu.edu/fcm": [],
+    "https://fcm.ucsf.edu/research-areas": [],
+    "https://rwjms.rutgers.edu/department/family-medicine-community-health": [],
+    "https://lsom.uthscsa.edu/family-medicine/research/": [],
+    "https://www.med.unc.edu/fammed/research/protocol/": [
+      2
+    ],
+    "https://www.ohsu.edu/school-of-medicine/family-medicine/about": [],
+    "https://medicine.tufts.edu/about/departments-offices/academic-departments/family-medicine": [
+      2
+    ],
+    "https://fmch.duke.edu/about-us": [],
+    "https://medicine.wright.edu/family-medicine/research": [],
+    "https://medicine.iu.edu/family-medicine": [
+      0
+    ],
+    "https://www.fcm.arizona.edu/education/residency-program": [],
+    "https://www.augusta.edu/mcg/fammed/": [],
+    "https://chfm.ufl.edu/": [
+      2
+    ],
+    "https://www.kumc.edu/school-of-medicine/academics/departments/family-medicine-and-community-health/research.html": [],
+    "https://health.ucdavis.edu/family-medicine/research/research-faculty": [],
+    "https://www.uab.edu/medicine/home/campuses/huntsville/office-of-family-health-education-research": []
+  },
+  "num_urls": 40,
+  "num_lists": 68,
+  "url_to_lists": {
+    "https://www.mayo.edu/research/departments-divisions/department-family-medicine-research/overview": [
+      [
+        "Department leadership",
+        "Legal Conditions and Terms",
+        "Advertising",
+        "Reprint Permissions"
+      ]
+    ],
+    "https://medicine.umich.edu/dept/family-medicine/research": [
+      [
+        "Disability Health",
+        "Global Primary Care",
+        "Integrative and Complementary Medicine"
+      ],
+      [
+        "Mixed Methods",
+        "Preventive Medicine",
+        "Reproductive and Women's Health",
+        "Anti-Racism & Health Equity"
+      ]
+    ],
+    "https://familymedicine.medicine.uiowa.edu/education/department-family-and-community-medicine-fellowships/faculty-development-fellowship-0": [
+      [
+        "Site Main Navigation",
+        "Breadcrumb",
+        "Faculty Development Fellowship: Medical Education",
+        "Main navigation",
+        "Statement of Purpose",
+        "Rationale",
+        "The Fellowship will provide the opportunity to:",
+        "Structure, Timeline and Logistics",
+        "Clinical and Academic Curriculum",
+        "Our Objectives for Training",
+        "Master in Medical Education (MME) Goals",
+        "How to Apply",
+        "Financial Support Plan",
+        "Iowa Health Care",
+        "Iowa City",
+        "Fellowship Program Director",
+        "Fellowship Coordinator",
+        "Department of Family and Community Medicine"
+      ],
+      [
+        "\u2022 Applicants must be US citizens or be H1B eligible.",
+        "\u2022 Required:",
+        "\u2022 3 letters of reference",
+        "\u2022 Interview with Fellowship Director and selected faculty members."
+      ],
+      [
+        "Expenses",
+        "PGY-4/5 Salary",
+        "Faculty Associate Benefits",
+        "Tuition and Fees/year (depending on # of credits taken)",
+        "Office Space",
+        "Professional meetings/books/course materials"
+      ],
+      [
+        "Acquire experience in classroom teaching:",
+        "Undergraduate level",
+        "Graduate level",
+        "Formal presentation level"
+      ],
+      [
+        "Develop skills in reflection on past experience (including skills of self",
+        "awareness, self",
+        "analysis, and self",
+        "evaluation) that results in the ability to generate a new perspective or plan of action."
+      ]
+    ],
+    "https://medschool.cuanschutz.edu/family-medicine/research-and-innovation/about": [
+      [
+        "Health Equity and Social Determinants of Health",
+        "Chronic Disease Management and Care Management",
+        "Substance Abuse Treatment and Management",
+        "Health Promotion and Disease Prevention"
+      ],
+      [
+        "Health Technology and Mobile Health",
+        "Behavioral and Mental Health in Primary Care",
+        "Policy and Primary Care Workforce Development"
+      ],
+      [
+        "Department of Family Medicine",
+        "Our Mission",
+        "Our Vision",
+        "Research Areas"
+      ],
+      [
+        "Tools & Resources",
+        "CU Campuses",
+        "CU Anschutz Medical Campus",
+        "School of Medicine",
+        "Family Medicine (SOM)"
+      ],
+      [
+        "Innovate",
+        "Develop",
+        "Serve"
+      ]
+    ],
+    "https://medicine.osu.edu/departments/family-medicine/research": [
+      [
+        "Enrolled Individuals With Stage 2 Cardiovascular",
+        "Kidney",
+        "Metabolic Syndrome (CKMS)I",
+        "based intervention to improve nutrition security and cardiovascular health through a food",
+        "medicine intervention in Medicaid",
+        "enrolled individuals with Stage 2 cardiovascular",
+        "kidney",
+        "metabolic syndrome."
+      ],
+      [
+        "centered Team",
+        "based Care for Adults With Type 2 Diabetes and Health Disparities (iPATH)",
+        "method, iterative, practice",
+        "relevant research focused on patient",
+        "centered, team",
+        "based, technology",
+        "designated U.S. health disparity populations."
+      ],
+      [
+        "Based Settings",
+        "up care and guideline",
+        "concordant treatment in a dynamic cohort of about 3.8 million people per year over the 2003",
+        "2019 17",
+        "year period."
+      ],
+      [
+        "I:\u00a0Dr. Timothy Adesanya",
+        "design approach to develop a heart healthy QI intervention based on patient",
+        "OH) to accelerate statewide CVD improvement and reductions in disparities"
+      ],
+      [
+        "prepared to practice in and lead transforming health care delivery systems.",
+        "I: Randy Wexler, MD",
+        "measurable levels of each AMP between the ages of <65 and \u226565.",
+        "Gene Studies of Simvastatin",
+        "Induced Myopathy in African Americans",
+        "I: Leon McDougle, MD",
+        "a large minority health disparity population.",
+        "I's: Huerta, TR; Sieck, C; Hefner, J; Hebert C",
+        "associated infections (HAIs). This five",
+        "year project is focused on central line",
+        "associated blood stream infections (CLABSIs) and catheter"
+      ],
+      [
+        "Healthy Interventions (AIM",
+        "Healthy Interventions (AIM",
+        "I: Tom Best, MD, PhD; Deborah Givens, PT, PhD; Greg Young, MS",
+        "body resistance training group for six weeks, with both pre",
+        "and post",
+        "testing of lower extremity biomechanics, performance in selected football",
+        "specific tasks and clinical strength measures.",
+        "Long Acting Opioids (PMIS).",
+        "Based Physician Education",
+        "based course and to evaluate its efficacy in a geographically diverse sample of community",
+        "based primary care physicians.",
+        "Based Approach to the Treatment of Obesity and Diabetes",
+        "I: W. Fred Miser, MD",
+        "regulation and dietary intake on weight loss compared to a standard nutrition education curriculum.",
+        "I: Doug Post, PhD",
+        "I: Milisa Rizer, MD; Albert Lai, PhD; Stuart Beatty, PharmD",
+        "monitoring of blood pressure with conveyance of this information to a care team.",
+        "2 diabetics, thereby decreasing disparities in healthcare outcomes for this population."
+      ],
+      [
+        "I:\u00a0Randy Wexler, MD",
+        "based health technologies to improve the patient",
+        "doctor relationship of elderly African Americans."
+      ],
+      [
+        "relevant, PDA",
+        "based communication tool for Appalachian breast cancer survivors undergoing chemotherapy treatment.",
+        "I's:\u00a0Mary Jo Welker, MD and Doug Post, PhD",
+        "PI:\u00a0Mary Jo Welker, MD"
+      ],
+      [
+        "I:\u00a0Tom Best, MD",
+        "based, phenotypic and bio",
+        "molecular features in heterogeneous data sets by leveraging multiple conceptual knowledge sources",
+        "ultimately supporting \"high throughput\" knowledge",
+        "driven translational science."
+      ]
+    ],
+    "https://www.jefferson.edu/academics/colleges-schools-institutes/skmc/departments/family-medicine/research.html": [
+      [
+        "Randa Sifri, MD",
+        "Amy Cunningham, PhD, MPH",
+        "Allison Casola, PhD, MPH, MCHES"
+      ]
+    ],
+    "https://medicine.buffalo.edu/offices/ome/current/curriculum/coursebook/family-medicine.html": [
+      [
+        "Course Descriptions",
+        "Jacobs School of Medicine and Biomedical Sciences",
+        "Join the School",
+        "Get Involved",
+        "Find People",
+        "UB Academic Health Center",
+        "Connect with Us",
+        "Centers and Affiliations",
+        "Education and Training",
+        "Research Facilities and Services",
+        "Health Care",
+        "Resources by Audience",
+        "Alumni and Friends",
+        "Governance",
+        "Learning Resources",
+        "Support Services",
+        "Site Tools",
+        "Jacobs School of Medicine and Biomedical Sciences"
+      ],
+      [
+        "based learning, and self",
+        "directed study. Emphasis is placed on communication and interviewing skills, the doctor",
+        "patient relationship, the bio",
+        "psycho",
+        "social"
+      ]
+    ],
+    "https://www.bcm.edu/departments/family-and-community-medicine/research": [
+      [
+        "Baylor College of Medicine",
+        "Departments",
+        "Family and Community Medicine",
+        "Research"
+      ],
+      [
+        "Primary Care",
+        "Nutrition and Metabolic Factors",
+        "Population Health",
+        "Substance Use Disorders",
+        "Tobacco Cessation"
+      ]
+    ],
+    "https://familymedicine.uw.edu/education/courses/clerkship/info-faculty/teaching-tools-and-best-practices-for-teachers/": [
+      [
+        "New Preceptor Guide",
+        "Optimizing the Educational Environment: GLEAM",
+        "Best Practices for Maintaining Clinic Flow While Teaching",
+        "5 Microskills for Teaching",
+        "Disability Resources for Students",
+        "Counseling and Wellness Services",
+        "Academic Advising"
+      ]
+    ],
+    "https://chicago.medicine.uic.edu/family-community-medicine/fcm-research/": [
+      [
+        "Cultural competence",
+        "End-of-life care",
+        "Epidemiology and management of chronic diseases (e.g. diabetes mellitus, hypertension, asthma)",
+        "Nutrition and obesity",
+        "Occupational medicine",
+        "Patient safety",
+        "Patient-centered care",
+        "Patient-physician communication",
+        "Prevention and management of STDs & HIV/AIDS",
+        "Quality care",
+        "Reducing health disparities",
+        "Reproductive health"
+      ],
+      [
+        "Activities related to medical education",
+        "Activities related to clinical and/or public health",
+        "Department of Family and Community Medicine"
+      ]
+    ],
+    "https://info.primarycare.hms.harvard.edu/harvard-home-family-medicine-faculty": [
+      [
+        "Resources",
+        "Teaching",
+        "Research",
+        "Become a Mentor",
+        "Questions?"
+      ]
+    ],
+    "https://med.psu.edu/fcm": [
+      [
+        "Family and Community Medicine Residency (Hershey, Pa.)",
+        "Family and Community Medicine Residency (Reading, Pa.)",
+        "Family and Community Medicine Residency (State College, Pa.)"
+      ],
+      [
+        "Area Health Education Center",
+        "Global Health Center",
+        "Mount Nittany Health System",
+        "Penn State Health Children's Hospital",
+        "Penn State Health Milton S. Hershey Medical Center",
+        "Penn State Health St. Joseph Medical Center",
+        "Simulation Center"
+      ],
+      [
+        "Department of Family and Community Medicine",
+        "Navigation Menu",
+        "Family and Community Medicine Mission Header",
+        "Family and Community Medicine at Penn State College of Medicine",
+        "Family and Community Medicine Welcome and CTA",
+        "Family and Community Medicine Latest News H2 Code",
+        "Nested Applications",
+        "Education in Family and Community Medicine",
+        "FCM Residency Video",
+        "Nested Applications",
+        "Research in Family and Community Medicine",
+        "Nested Applications",
+        "Clinical Care in Family and Community Medicine",
+        "Family and Community Medicine Programs Double Feature Box",
+        "Family and Community Medicine Jobs Basic Content",
+        "Jobs in Family and Community Medicine"
+      ],
+      [
+        "Partin and Espinosa Marazita recognized for Exceptional Moments in Teaching",
+        "Ruffin leaves lasting impact as family and community medicine chair",
+        "Educational Programs",
+        "Services and Affiliations",
+        "Penn StateCollege of Medicine"
+      ]
+    ],
+    "https://fcm.ucsf.edu/research-areas": [
+      [
+        "Community-Based Research and Interventions",
+        "Cross-Cultural Care and the Clinician-Patient Relationship",
+        "Global Public Health",
+        "Health Policy and Reducing Social Disparities in Health",
+        "Integrative and Psychosocial Medicine",
+        "Medical Education",
+        "Primary Care and Chronic Care Innovations",
+        "Reproductive and Children's Health"
+      ],
+      [
+        "Community-Based Research and Interventions",
+        "Cross-Cultural Care and the Clinician-Patient Relationship",
+        "Global Public Health",
+        "Health Policy and Reducing Social Disparities in Health",
+        "Integrative and Psychosocial Medicine",
+        "Medical Education",
+        "Primary Care and Chronic Care Innovations",
+        "Reproductive and Children's Health",
+        "Research"
+      ]
+    ],
+    "https://rwjms.rutgers.edu/department/family-medicine-community-health": [
+      [
+        "Enter a Search Term",
+        "Healthier Families, Stronger Communities",
+        "In the News",
+        "Academic Programs",
+        "Areas of Specialty",
+        "From Lab to Practice",
+        "Our Centers and Networks",
+        "Clinical Services",
+        "Site Footer",
+        "Connect"
+      ],
+      [
+        "EJI Excellence in Medicine Announces 2025 Award Recipients",
+        "Dean Murtha, Dr. Hudson to Receive EJI Awards",
+        "EJI Excellence in Medicine Announces 2025 Award Recipients",
+        "Academics",
+        "Administration",
+        "Resources",
+        "Follow Us"
+      ]
+    ],
+    "https://lsom.uthscsa.edu/family-medicine/research/": [
+      [
+        "Congratulations to the Winner of the\u00a0Interprofessional Education (IPE) Award!",
+        "Project:\u00a0 Healthy Choices Team Year 6: Bridging Culture and Wellness",
+        "Project Disciplines: Dentistry, Medicine, Occupational Therapy, Physical Therapy",
+        "Primary Presenter: Sawad Kazi",
+        "Mentors: Fozia Ali, MD, FAAFP; Yajaira Johnson-Esparza, PhD",
+        "Community Partner: \u00a0El Bari Community Health Center and South Texas Area Health Education Center",
+        "Project Location: San Antonio, Texas"
+      ]
+    ],
+    "https://www.med.unc.edu/fammed/research/protocol/": [
+      [
+        "Pediatric patients",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Birth \u2013 17 mo",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 18 mo \u2013 17 yr",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 18 mo- 18 yr",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 9 yr \u2013 13 yr (adolescents)",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Birth \u2013 17 yr",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Birth \u2013 18 yr",
+        "Adult patients",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 18 yr \u2013 65 yr",
+        "Elderly patients",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 65 and over"
+      ],
+      [
+        "Physicians",
+        "Research Faculty",
+        "Residents",
+        "Social Workers",
+        "Nurses (1RN + 3 LPN)",
+        "Clinical Administration",
+        "Clinical Support (Admin)",
+        "Medical Assistants"
+      ],
+      [
+        "Weight Management Program",
+        "Tobacco Treatment Program",
+        "Migrant Farmworker Program",
+        "Formerly Incarcerated Transitions Program",
+        "Preventive Medicine Residency",
+        "Family Medicine Residency",
+        "LGBTQ+ Care at Family Medicine",
+        "UNC Primary Care Sports Medicine Program"
+      ],
+      [
+        "Whitehead J, Roberts E. Primary",
+        "748. doi: 10.1007/s40266",
+        "00967",
+        "6. Epub 2022 Jul 28. PMID: 35896779; PMCID: PMC9330848."
+      ],
+      [
+        "Whitehead J, Roberts E. Primary",
+        "748. doi: 10.1007/s40266",
+        "00967",
+        "6. Epub 2022 Jul 28. PMID: 35896779; PMCID: PMC9330848."
+      ]
+    ],
+    "https://www.ohsu.edu/school-of-medicine/family-medicine/about": [
+      [
+        "year University",
+        "Based Residency focuses on preparing residents to be well",
+        "rounded, reflective, life"
+      ]
+    ],
+    "https://medicine.tufts.edu/about/departments-offices/academic-departments/family-medicine": [
+      [
+        "Academic Calendars",
+        "Orientation",
+        "White Coat Ceremony",
+        "Commencement"
+      ],
+      [
+        "Global Health Overview",
+        "Summer/Fall Programs",
+        "Spring Programs",
+        "Independent Projects"
+      ],
+      [
+        "Clinical Partners",
+        "Cambridge Health Alliance",
+        "Maine Medical Center",
+        "Greater Lawrence Family Health Center",
+        "Lynn Community Health Center",
+        "Longitudinal Family Medicine Curriculum",
+        "Year One",
+        "Year Two",
+        "Year Three",
+        "Year Four",
+        "Family Medicine Clerkship",
+        "Fellowships",
+        "Master Teacher Fellowship",
+        "Reproductive Health Care and Advocacy Fellowship",
+        "Residency",
+        "Tufts Family Medicine Residency",
+        "Tufts Residency Affiliates",
+        "Family Medicine Fund"
+      ]
+    ],
+    "https://fmch.duke.edu/about-us": [
+      [
+        "Wellness and Compassion",
+        "Respect and Integrity",
+        "Diversity and Inclusion",
+        "Community and Collaboration",
+        "Service and Learning",
+        "Enthusiasm and Curiosity",
+        "Equity and Justice",
+        "Joy and Honesty"
+      ],
+      [
+        "Utility",
+        "Main navigation",
+        "Utility",
+        "Our Mission",
+        "Our Values",
+        "By the Numbers",
+        "Education & Training",
+        "Patient Care & Community Health",
+        "Research & Scholarship",
+        "Sidebar navigation",
+        "Recent News"
+      ],
+      [
+        "from prenatal care to geriatrics",
+        "and a wide variety of procedural services. The department also operates community",
+        "and school"
+      ]
+    ],
+    "https://medicine.wright.edu/family-medicine/research": [
+      [
+        "Angie Castle, M.A.,\u00a0Instructor,\u00a0Family Medicine\nangie.castle@wright.edu",
+        "Mary Crane, M.B.A.,\u00a0Research Program Manager\nmary.crane@wright.edu",
+        "Christian O Moneke, M.Sc.,\u00a0Community Health Advocate 2 christian.moneke@wright.edu",
+        "Elizabeth Wiley, M.B.A., Global Health Specialist\u00a0\nelizabeth.wiley@wright.edu"
+      ]
+    ],
+    "https://medicine.iu.edu/family-medicine": [
+      [
+        "Family Medicine Residency at IU Health Arnett Hospital (Lafayette, IN)",
+        "Family Medicine Residency at IU Health Ball Memorial Hospital (Muncie, IN)",
+        "Family Medicine Residency at IU Health Primary Care Central Indianapolis",
+        "Family Medicine Residency at Memorial Hospital (Jasper, IN)"
+      ]
+    ],
+    "https://www.fcm.arizona.edu/education/residency-program": [
+      [
+        "WELCOME!",
+        "OUR MISSION:",
+        "PROGRAM AIMS:",
+        "MESSAGE FROM THE RESIDENCY DIRECTOR\nHow to apply"
+      ],
+      [
+        "Underserved focus in a suburban/urban setting",
+        "Longitudinal integrative medicine experience",
+        "Longitudinal robust Global Health Track"
+      ],
+      [
+        "Underserved focused with rural rotations in Arizona (20 weeks over 3 years)",
+        "Additional training in emergency adult/pediatric care in under",
+        "resourced areas",
+        "Longitudinal robust Global Health Track"
+      ]
+    ],
+    "https://www.augusta.edu/mcg/fammed/": [
+      [
+        "Augusta University",
+        "Colleges & Schools",
+        "Medical College of Georgia",
+        "Family & Community Medicine"
+      ],
+      [
+        "Family & Community Medicine",
+        "Health Sciences Campus",
+        "Faculty Office Building",
+        "706-721-4588 (Family Med Center)706-721-3159 (Chair's Office)",
+        "1120 15th Street, HB-4000Augusta, GA 30912"
+      ],
+      [
+        "Clinical PracticeClinical Practice",
+        "Patient Advisory CommitteePatient Advisory Committee",
+        "Family & Community Medicine CenterFamily & Community Medicine Center",
+        "Patient AppointmentsPatient Appointments"
+      ]
+    ],
+    "https://chfm.ufl.edu/": [
+      [
+        "Olgert Bardhi Receives 2019 Carey R. Barber, M.D. Scholarship",
+        "Dr. Jay Clugston Published in the Journal of Neurosurgery",
+        "Dr. Lisa Chacko Invited to Emerging Leaders in Health and Medicine Forum"
+      ],
+      [
+        "Our Vision",
+        "Our Mission",
+        "\ud83d\udce3Stand Up & Holler: It\u2019s Gator Nation\u2026",
+        "Primary Care Innovations Conference 2017",
+        "Community Health and Family Medicine",
+        "News In Brief",
+        "Make a Gift"
+      ],
+      [
+        "Welcome",
+        "Family Medicine Residency",
+        "Sports Medicine Fellowship",
+        "Patient Care"
+      ]
+    ],
+    "https://www.kumc.edu/school-of-medicine/academics/departments/family-medicine-and-community-health/research.html": [
+      [
+        "School of Health Professions",
+        "School of Medicine",
+        "School of Nursing"
+      ],
+      [
+        "University of Kansas",
+        "The University of Kansas Health System",
+        "The University of Kansas Cancer Center"
+      ],
+      [
+        "KU Family Medicine on Facebook",
+        "KU Family Medicine on Twitter",
+        "KU Family Medicine on Instagram"
+      ]
+    ],
+    "https://health.ucdavis.edu/family-medicine/research/research-faculty": [
+      [
+        "Alicia Agnoli M.D., M.P.H., M.H.S. (She/Her) - Associate Professor and Associate Residency Director",
+        "Joshua J. Fenton, M.D., M.P.H. (He/Him) - Professor and Vice Chair of Research",
+        "Anthony F. Jerant, M.D. (He/Him) - Professor and Department Chair",
+        "Elizabeth Magnan, M.D., Ph.D. (She/Her) - Associate Professor",
+        "Joy Melnikow, M.D., M.P.H. (She/Her) - Professor Emeritus",
+        "Adeola Oni-Orisan, M.D., Ph.D. (She/Her) \u2013 Assistant Professor",
+        "Na'amah Razon, M.D., Ph.D. (She/Her) - Assistant Professor",
+        "FOR PATIENTS",
+        "WE ARE PART OF"
+      ]
+    ],
+    "https://www.uab.edu/medicine/home/campuses/huntsville/office-of-family-health-education-research": [
+      [
+        "David L. Bramm, M.D. FAAFPRMP & HRPI Director256-551-4641",
+        "Heather CrowOFHER Director256-551-4416hnhubbs@uabmc.edu",
+        "Paula ClawsonProgram Administrator256-551-4609paulaclawson@uabmc.edu"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 18:57:24"
+}

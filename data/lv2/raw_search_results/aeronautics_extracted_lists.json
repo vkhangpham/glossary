@@ -1,0 +1,2248 @@
+{
+  "level1_term": "aeronautics",
+  "url_verification_status": {
+    "https://catalog.mit.edu/schools/engineering/aeronautics-astronautics/": true,
+    "https://aa.stanford.edu/people/research-areas": false,
+    "https://engineering.purdue.edu/AAE/research": true,
+    "https://aeroastro.mit.edu/research/": true,
+    "https://worldwide.erau.edu/colleges/aviation/department-aeronautics": true,
+    "https://aa.stanford.edu/academics-admissions/graduate-programs/masters-program": true,
+    "https://semte.engineering.asu.edu/research/aerospace-and-mechanical/": false,
+    "https://mae.ucdavis.edu/undergraduate/areas-interest-aerospace-engineering": true,
+    "https://erau.edu/degrees/bachelor/aeronautics": true,
+    "https://www.fit.edu/aeronautics/faculty-and-research/": true,
+    "https://www.aa.washington.edu/": true,
+    "https://engineering.purdue.edu/AAE": false,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering": false,
+    "https://www.lynn.edu/academics/colleges/aeronautics": true,
+    "https://engineering.nyu.edu/academics/departments/mechanical-and-aerospace-engineering": false,
+    "https://aero.umd.edu/undergraduate/degrees/bachelor-science": true,
+    "https://aerospace.illinois.edu/": false,
+    "https://www.mae.ucla.edu/": false,
+    "https://ae.gatech.edu/ae-specialty-areas": true,
+    "https://news.engineering.iastate.edu/2024/08/08/teaching-and-research-recognition-for-aerospace-engineering-graduate-students/": true,
+    "https://sc.edu/study/colleges_schools/engineering_and_computing/academics/undergraduate_programs/aerospace_engineering/": true,
+    "https://aem.eng.ua.edu/graduate/": true,
+    "https://nps.edu/web/mae": true,
+    "https://www.engr.colostate.edu/me/aerospace/": true,
+    "https://eas.uccs.edu/departments/mechanical-and-aerospace-engineering": true,
+    "https://mae.mst.edu/": true,
+    "https://mabe.utk.edu/academics/undergraduate-programs/bs-in-aerospace-engineering/": true
+  },
+  "verified_lists_per_url": {
+    "https://catalog.mit.edu/schools/engineering/aeronautics-astronautics/": 4,
+    "https://aa.stanford.edu/people/research-areas": 0,
+    "https://engineering.purdue.edu/AAE/research": 1,
+    "https://aeroastro.mit.edu/research/": 3,
+    "https://worldwide.erau.edu/colleges/aviation/department-aeronautics": 5,
+    "https://aa.stanford.edu/academics-admissions/graduate-programs/masters-program": 2,
+    "https://semte.engineering.asu.edu/research/aerospace-and-mechanical/": 0,
+    "https://mae.ucdavis.edu/undergraduate/areas-interest-aerospace-engineering": 2,
+    "https://erau.edu/degrees/bachelor/aeronautics": 2,
+    "https://www.fit.edu/aeronautics/faculty-and-research/": 5,
+    "https://www.aa.washington.edu/": 1,
+    "https://engineering.purdue.edu/AAE": 0,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering": 0,
+    "https://www.lynn.edu/academics/colleges/aeronautics": 1,
+    "https://engineering.nyu.edu/academics/departments/mechanical-and-aerospace-engineering": 0,
+    "https://aero.umd.edu/undergraduate/degrees/bachelor-science": 6,
+    "https://aerospace.illinois.edu/": 0,
+    "https://www.mae.ucla.edu/": 0,
+    "https://ae.gatech.edu/ae-specialty-areas": 2,
+    "https://news.engineering.iastate.edu/2024/08/08/teaching-and-research-recognition-for-aerospace-engineering-graduate-students/": 1,
+    "https://sc.edu/study/colleges_schools/engineering_and_computing/academics/undergraduate_programs/aerospace_engineering/": 3,
+    "https://aem.eng.ua.edu/graduate/": 2,
+    "https://nps.edu/web/mae": 1,
+    "https://www.engr.colostate.edu/me/aerospace/": 2,
+    "https://eas.uccs.edu/departments/mechanical-and-aerospace-engineering": 1,
+    "https://mae.mst.edu/": 1,
+    "https://mabe.utk.edu/academics/undergraduate-programs/bs-in-aerospace-engineering/": 1
+  },
+  "total_lists_per_url": {
+    "https://catalog.mit.edu/schools/engineering/aeronautics-astronautics/": 93,
+    "https://aa.stanford.edu/people/research-areas": 5,
+    "https://engineering.purdue.edu/AAE/research": 3,
+    "https://aeroastro.mit.edu/research/": 3,
+    "https://worldwide.erau.edu/colleges/aviation/department-aeronautics": 6,
+    "https://aa.stanford.edu/academics-admissions/graduate-programs/masters-program": 5,
+    "https://semte.engineering.asu.edu/research/aerospace-and-mechanical/": 1,
+    "https://mae.ucdavis.edu/undergraduate/areas-interest-aerospace-engineering": 3,
+    "https://erau.edu/degrees/bachelor/aeronautics": 30,
+    "https://www.fit.edu/aeronautics/faculty-and-research/": 32,
+    "https://www.aa.washington.edu/": 5,
+    "https://engineering.purdue.edu/AAE": 6,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering": 6,
+    "https://www.lynn.edu/academics/colleges/aeronautics": 1,
+    "https://engineering.nyu.edu/academics/departments/mechanical-and-aerospace-engineering": 3,
+    "https://aero.umd.edu/undergraduate/degrees/bachelor-science": 13,
+    "https://aerospace.illinois.edu/": 5,
+    "https://www.mae.ucla.edu/": 4,
+    "https://ae.gatech.edu/ae-specialty-areas": 3,
+    "https://news.engineering.iastate.edu/2024/08/08/teaching-and-research-recognition-for-aerospace-engineering-graduate-students/": 1,
+    "https://sc.edu/study/colleges_schools/engineering_and_computing/academics/undergraduate_programs/aerospace_engineering/": 6,
+    "https://aem.eng.ua.edu/graduate/": 5,
+    "https://nps.edu/web/mae": 4,
+    "https://www.engr.colostate.edu/me/aerospace/": 8,
+    "https://eas.uccs.edu/departments/mechanical-and-aerospace-engineering": 1,
+    "https://mae.mst.edu/": 4,
+    "https://mabe.utk.edu/academics/undergraduate-programs/bs-in-aerospace-engineering/": 4
+  },
+  "verified_lists_ids": {
+    "https://catalog.mit.edu/schools/engineering/aeronautics-astronautics/": [
+      1,
+      59,
+      60,
+      84
+    ],
+    "https://aa.stanford.edu/people/research-areas": [],
+    "https://engineering.purdue.edu/AAE/research": [
+      1
+    ],
+    "https://aeroastro.mit.edu/research/": [
+      0,
+      1,
+      2
+    ],
+    "https://worldwide.erau.edu/colleges/aviation/department-aeronautics": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "https://aa.stanford.edu/academics-admissions/graduate-programs/masters-program": [
+      0,
+      1
+    ],
+    "https://semte.engineering.asu.edu/research/aerospace-and-mechanical/": [],
+    "https://mae.ucdavis.edu/undergraduate/areas-interest-aerospace-engineering": [
+      0,
+      1
+    ],
+    "https://erau.edu/degrees/bachelor/aeronautics": [
+      2,
+      6
+    ],
+    "https://www.fit.edu/aeronautics/faculty-and-research/": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "https://www.aa.washington.edu/": [
+      0
+    ],
+    "https://engineering.purdue.edu/AAE": [],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering": [],
+    "https://www.lynn.edu/academics/colleges/aeronautics": [
+      0
+    ],
+    "https://engineering.nyu.edu/academics/departments/mechanical-and-aerospace-engineering": [],
+    "https://aero.umd.edu/undergraduate/degrees/bachelor-science": [
+      0,
+      3,
+      5,
+      6,
+      7,
+      11
+    ],
+    "https://aerospace.illinois.edu/": [],
+    "https://www.mae.ucla.edu/": [],
+    "https://ae.gatech.edu/ae-specialty-areas": [
+      0,
+      1
+    ],
+    "https://news.engineering.iastate.edu/2024/08/08/teaching-and-research-recognition-for-aerospace-engineering-graduate-students/": [
+      0
+    ],
+    "https://sc.edu/study/colleges_schools/engineering_and_computing/academics/undergraduate_programs/aerospace_engineering/": [
+      0,
+      1,
+      5
+    ],
+    "https://aem.eng.ua.edu/graduate/": [
+      0,
+      2
+    ],
+    "https://nps.edu/web/mae": [
+      3
+    ],
+    "https://www.engr.colostate.edu/me/aerospace/": [
+      2,
+      3
+    ],
+    "https://eas.uccs.edu/departments/mechanical-and-aerospace-engineering": [
+      0
+    ],
+    "https://mae.mst.edu/": [
+      2
+    ],
+    "https://mabe.utk.edu/academics/undergraduate-programs/bs-in-aerospace-engineering/": [
+      1
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 260,
+  "url_to_lists": {
+    "https://catalog.mit.edu/schools/engineering/aeronautics-astronautics/": [
+      [
+        "Home>",
+        "Schools>",
+        "School\u00a0of\u00a0Engineering>",
+        "Aeronautics and Astronautics"
+      ],
+      [
+        "Research Laboratories and Activities",
+        "Undergraduate Study",
+        "Graduate Study",
+        "Faculty and Teaching Staff",
+        "Research Staff",
+        "Professors Emeriti",
+        "Core Undergraduate Subjects",
+        "Mechanics and Physics of Fluids",
+        "Materials and Structures",
+        "Information and Control Engineering",
+        "Humans and Automation",
+        "Propulsion and Energy Conversion",
+        "Other Undergraduate Subjects",
+        "Flight Transportation",
+        "Aerospace Systems",
+        "Computation",
+        "Other Graduate Subjects"
+      ],
+      [
+        "A \u2013 Z",
+        "Calendar",
+        "Archive",
+        "Print"
+      ],
+      [
+        "Bachelor of Science in Aerospace Engineering (Course 16)",
+        "Bachelor of Science in Engineering (Course 16-ENG)",
+        "Double Major"
+      ],
+      [
+        "Julie A. Shah, PhD",
+        "H. N. Slater Professor in Aeronautics and Astronautics",
+        "Head, Department of Aeronautics and Astronautics"
+      ],
+      [
+        "Olivier L. de Weck, PhD",
+        "Apollo Program Professor of Astronautics and Engineering Systems",
+        "Associate Head, Department of Aeronautics and Astronautics"
+      ],
+      [
+        "Hamsa Balakrishnan, PhD",
+        "William E. Leonhard (1940) Professor",
+        "Professor of Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Kerri Cahoy, PhD",
+        "Sheila Evans Widnall (1960) Professor",
+        "Professor of Aeronautics and Astronautics",
+        "Professor of Earth, Atmospheric and Planetary Sciences"
+      ],
+      [
+        "Edward F. Crawley, ScD",
+        "Ford Foundation Professor of Engineering",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "David L. Darmofal, PhD",
+        "Jerome C. Hunsaker Professor",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Mark Drela, PhD",
+        "Terry J. Kohler Professor",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Edward M. Greitzer, PhD",
+        "H. N. Slater Professor in Aeronautics and Astronautics",
+        "(On leave, fall)"
+      ],
+      [
+        "Daniel E. Hastings, PhD",
+        "Cecil and Ida Green Professor in Education",
+        "Professor of Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Jonathan P. How, PhD",
+        "Richard Cockburn Maclaurin Professor in Aeronautics and Astronautics",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Sertac Karaman, PhD",
+        "Professor of Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Nancy G. Leveson, PhD",
+        "Jerome C. Hunsaker Professor in Aeronautics and Astronautics",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Paulo C. Lozano, PhD",
+        "M. Alem\u00e1n-Velasco Professor",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Youssef M. Marzouk, PhD",
+        "Breene M. Kerr (1951) Professor",
+        "Professor of Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society",
+        "(On leave)"
+      ],
+      [
+        "David W. Miller, ScD",
+        "Jerome C. Hunsaker Professor",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "David A. Mindell, PhD",
+        "Frances and David Dibner Professor in the History of Engineering and Manufacturing",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Eytan H. Modiano, PhD",
+        "Richard Cockburn Maclaurin Professor in Aeronautics and Astronautics",
+        "Professor of Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Jaime Peraire, PhD",
+        "H. N. Slater Professor in Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Ra\u00fal Radovitzky, PhD",
+        "Jerome C. Hunsaker Professor in Aeronautics and Astronautics",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Sara Seager, PhD",
+        "Class of 1941 Professor of Planetary Sciences",
+        "Professor of Physics",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Zoltan S. Spakovszky, PhD",
+        "T. A Wilson Professor in Aeronautics and Astronautics",
+        "Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Russell L. Tedrake, PhD",
+        "Toyota Professor",
+        "Professor of Computer Science and Engineering",
+        "Professor of Aeronautics and Astronautics",
+        "Professor of Mechanical Engineering",
+        "(On leave)"
+      ],
+      [
+        "Ian A. Waitz, PhD",
+        "Jerome C. Hunsaker Professor",
+        "Professor of Aeronautics and Astronautics",
+        "Vice Chancellor for Undergraduate and Graduate Education"
+      ],
+      [
+        "Brian L. Wardle, PhD",
+        "Apollo Program Professor",
+        "Professor of Aeronautics and Astronautics",
+        "Professor of Mechanical Engineering",
+        "(On leave)"
+      ],
+      [
+        "Brian C. Williams, PhD",
+        "Professor of Aeronautics and Astronautics",
+        "(On leave)"
+      ],
+      [
+        "Moe Z. Win, PhD",
+        "Robert R. Taylor Professor",
+        "Professor of Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Luca Carlone, PhD",
+        "Boeing Career Development Professor in Aeronautics and Astronautics",
+        "Associate Professor of Aeronautics and Astronautics",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Zachary Cordero, PhD",
+        "Esther and Harold E. Edgerton Professor",
+        "Associate Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Chuchu Fan, PhD",
+        "Leonardo Career Development Professor in Engineering",
+        "Associate Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Carmen Guerra Garc\u00eda, PhD",
+        "Charles Stark Draper Professor",
+        "Associate Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Richard Linares, PhD",
+        "Rockwell International Career Development Professor",
+        "Associate Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Lonnie Petersen, MD, PhD",
+        "Samuel A. Goldblith Professor of Applied Biology",
+        "Associate Professor of Aeronautics and Astronautics",
+        "Core Faculty, Institute for Medical Engineering and Science",
+        "(On leave, spring)"
+      ],
+      [
+        "Andreea Bobu, PhD",
+        "Boeing Career Development Professor in Aeronautics and Astronautics",
+        "Assistant Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Masha Folk, PhD",
+        "Charles Stark Draper Professor of Aeronautics and Astronautics",
+        "Assistant Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Steven Dubowsky, PhD",
+        "Professor Emeritus of Mechanical Engineering",
+        "Professor Emeritus of Aeronautics and Astronautics"
+      ],
+      [
+        "Alan H. Epstein, PhD",
+        "Richard Cockburn Maclaurin Professor Emeritus",
+        "Professor Emeritus of Aeronautics and Astronautics"
+      ],
+      [
+        "Earll M. Murman, PhD",
+        "Ford Professor of Engineering Emeritus",
+        "Professor Emeritus of Aeronautics and Astronautics"
+      ],
+      [
+        "Amedeo R. Odoni, PhD",
+        "T. A. Wilson (1953) Professor Emeritus",
+        "Professor Emeritus of Aeronautics and Astronautics",
+        "Professor Emeritus of Civil and Environmental Engineering"
+      ],
+      [
+        "Thomas B. Sheridan, ScD",
+        "Professor Emeritus of Engineering and Applied Psychology",
+        "Professor Emeritus of Aeronautics and Astronautics"
+      ],
+      [
+        "Sheila E. Widnall, ScD",
+        "Institute Professor Emerita",
+        "Professor Emerita of Aeronautics and Astronautics"
+      ],
+      [
+        "Same subject as 2.081[J]Prereq: 2.071, 2.080[J], or permission of instructor G (Spring)3-1-8 units",
+        "See description under subject 2.081[J].",
+        "T. Sapsis"
+      ],
+      [
+        "Same subject as 6.7100[J]Prereq: 6.3000 and 18.06 G (Spring)4-0-8 units",
+        "See description under subject 6.7100[J].",
+        "M. A. Dahleh, A. Megretski"
+      ],
+      [
+        "Same subject as EM.429[J], IDS.336[J]Prereq: Permission of instructor G (Spring)3-0-9 units",
+        "See description under subject IDS.336[J].",
+        "D. Rhodes"
+      ],
+      [
+        "Same subject as MAS.858[J]Prereq: None G (Fall)\nNot offered regularly; consult department3-0-9 units",
+        "See description under subject MAS.858[J]. Limited to 15.",
+        "D. Wood"
+      ],
+      [
+        "Same subject as MAS.859[J]Prereq: None G (Spring)3-0-3 units",
+        "See description under subject MAS.859[J].",
+        "D. Wood"
+      ],
+      [
+        "Same subject as 2.096[J], 6.7300[J]Prereq: 18.03 or 18.06 G (Fall)3-6-3 units",
+        "See description under subject 6.7300[J].",
+        "L. Daniel"
+      ],
+      [
+        "Same subject as 6.9280[J], 15.674[J]Prereq: Permission of instructor G (Fall, Spring)3-0-6 units",
+        "See description under subject 6.9280[J]. Enrollment limited.",
+        "D. Nino"
+      ],
+      [
+        "time mission",
+        "tolerance, verification, and validation of large",
+        "scale engineering systems are significant areas of inquiry."
+      ],
+      [
+        "designing",
+        "implementing",
+        "operating (CDIO) aerospace and related complex high",
+        "education, computer literacy, communication and teamwork skills, ethics, and",
+        "underlying all of these"
+      ],
+      [
+        "Intensive in the Major (CI",
+        "scale yet complex robot capable of real",
+        "time interaction with the natural world."
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        ", cobalt",
+        ", nickel",
+        ", refractory",
+        "and intermetallic alloys), ceramics, composites (metal",
+        ", ceramic",
+        "and carbon",
+        "temperature oxidation, corrosion, and damage problems that occur in energy and aerospace systems."
+      ],
+      [
+        "space approach to multi",
+        "input",
+        "multi",
+        "size drone. Students taking graduate version complete additional assignments."
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "directed systems; decision",
+        "theoretic programming and robust execution; state",
+        "space programming, activity and path planning; risk",
+        "bounded programming and risk",
+        "bounded planners; self",
+        "monitoring and self",
+        "diagnosing systems, and human",
+        "wide grand challenge. Enrollment may be limited."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "6 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "1.EPE,",
+        "2.EPE,",
+        "3.EPE,",
+        "6.EPE,",
+        "8.EPE,",
+        "10.EPE,",
+        "15.EPE,",
+        "16.EPE,",
+        "20.EPE,"
+      ],
+      [
+        "1.EPW,",
+        "2.EPW,",
+        "3.EPW,",
+        "6.EPW,",
+        "10.EPW,",
+        "16.EPW,",
+        "20.EPW,",
+        "22.EPWPrereq:"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "term technological, fuel",
+        "based, regulatory and operational mitigation options for aviation, and longer",
+        "term technical possibilities."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered2",
+        "6 units. Institute LAB"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)2",
+        "6 units. Institute LAB"
+      ],
+      [
+        "system designs and fabrication of full",
+        "scale prototypes. Sub",
+        "systems are integrated into a vehicle and tested. Sub"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "machine interaction, verification of safety, creating a safety culture, and management of safety",
+        "critical projects. Includes a class project involving the high",
+        "level system design and analysis of a safety",
+        "critical system. Enrollment may be limited."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "8 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "7 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)4",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)4",
+        "8 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ]
+    ],
+    "https://aa.stanford.edu/people/research-areas": [
+      [
+        "Somil Bansal\n\n\nAssistant Professor of Aeronautics and Astronautics",
+        "Simone D'Amico\n\n\nAssociate Professor of Aeronautics and Astronautics and, by courtesy, of Geophysics",
+        "Grace Gao\n\n\nAssociate Professor of Aeronautics and Astronautics",
+        "Stephen Rock\n\n\nProfessor of Aeronautics and Astronautics, Emeritus",
+        "Mac Schwager\n\n\nAssociate Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Simone D'Amico\n\n\nAssociate Professor of Aeronautics and Astronautics and, by courtesy, of Geophysics",
+        "Sigrid Elschot\n\n\nAssociate Professor of Aeronautics and Astronautics",
+        "Grace Gao\n\n\nAssociate Professor of Aeronautics and Astronautics",
+        "Kentaro Hara\n\n\nAssistant Professor of Aeronautics and Astronautics",
+        "Scott Hubbard\n\n\nUniversity Affiliate Department Aeronautics and Astronautics"
+      ],
+      [
+        "Manan Arya\n\n\nAssistant Professor of Aeronautics and Astronautics",
+        "Fu-Kuo Chang\n\n\nProfessor of Aeronautics and Astronautics",
+        "Maria Sakovsky\n\n\nAssistant Professor of Aeronautics and Astronautics"
+      ],
+      [
+        "Autonomous Systems and Controls",
+        "Cyber Safety for Transportation",
+        "Distributed Space Systems",
+        "Future Aircraft Design",
+        "Multidisciplinary Computational Aerosciences",
+        "Multifunctional Materials and Intelligent Structures",
+        "Planetary Science and Exploration",
+        "Resources",
+        "Address",
+        "Links to",
+        "Resources for"
+      ],
+      [
+        "Somil Bansal",
+        "Simone D'Amico",
+        "Grace Gao",
+        "Mykel Kochenderfer",
+        "Marco Pavone",
+        "Stephen Rock",
+        "Mac Schwager",
+        "Grace Gao",
+        "Todd Walter",
+        "Simone D'Amico",
+        "Sigrid Elschot",
+        "Anton Ermakov",
+        "Grace Gao",
+        "Kentaro Hara",
+        "Scott Hubbard",
+        "Marco Pavone",
+        "Juan Alonso",
+        "Charbel Farhat",
+        "Grace Gao",
+        "Ilan Kroo",
+        "Juan Alonso",
+        "Charbel Farhat",
+        "Kentaro Hara",
+        "Sanjiva Lele",
+        "Manan Arya",
+        "Fu-Kuo Chang",
+        "Maria Sakovsky",
+        "Debbie Senesky",
+        "Simone D'Amico",
+        "Sigrid Elschot",
+        "Anton Ermakov",
+        "Marco Pavone",
+        "Debbie Senesky"
+      ]
+    ],
+    "https://engineering.purdue.edu/AAE/research": [
+      [
+        "Industrial Advisory Council",
+        "Steering Advisory Council",
+        "Young Professionals Advisory Council",
+        "Industrial Affiliates",
+        "CoE Office of Engagement"
+      ],
+      [
+        "Aerodynamics",
+        "Aerospace Systems",
+        "Astrodynamics and Space Applications",
+        "Autonomy and Control",
+        "Propulsion",
+        "Structures and Materials"
+      ],
+      [
+        "Discover",
+        "Explore",
+        "Connect",
+        "People",
+        "Follow"
+      ]
+    ],
+    "https://aeroastro.mit.edu/research/": [
+      [
+        "Our Community",
+        "Diversity, Equity, & Inclusion",
+        "Facilities",
+        "Undergraduate Program",
+        "Graduate Program",
+        "Academics & Resources",
+        "Our Community",
+        "Undergraduate Program",
+        "Graduate Program",
+        "Academics & Resources",
+        "Autonomous Systems & Decision-Making",
+        "Computational Science & Engineering",
+        "Earth & Space Sciences",
+        "Human-System Collaboration",
+        "Systems Design & Engineering",
+        "Transportation & Exploration",
+        "Vehicle Design & Engineering",
+        "Autonomy and Embedded Robotics Accelerated (AERA) Research Group",
+        "Aerospace Computational Science & Engineering Laboratory",
+        "Aerospace Controls Lab",
+        "Aerospace Materials and Structures Lab",
+        "Aerospace Physiology Lab (APL)",
+        "Aerospace Plasma Group",
+        "ARCLab",
+        "Collaborative Learning and Autonomy Research Lab (CLEAR Lab)",
+        "Computational Turbulence Group",
+        "Communications and Networking Research Group",
+        "DINaMo Group",
+        "Design in Chaos",
+        "Engineering System Laboratory",
+        "Gas Turbine Lab",
+        "Human Systems Lab",
+        "Hypersonics Research Lab",
+        "International Center for Air Transportation",
+        "Institute for Soldier Nanotechnologies",
+        "Interactive Robotics Group",
+        "Laboratory for Aviation and the Environment",
+        "LEAN Research Group",
+        "Model-Based Embedded and Robotics Systems Group",
+        "necstlab",
+        "Reliable Autonomous Systems Lab @ MIT (REALM)",
+        "Robust Robotics Group",
+        "Small Satellite Collaborative",
+        "Space Enabled",
+        "Space Propulsion Laboratory",
+        "Space Systems Lab (SSL)",
+        "Space Telecom, Astronomy & Radiation Laboratory (STAR Lab)",
+        "SPARK Lab",
+        "Wireless Information & Network Sciences Lab",
+        "Wright Brothers Wind Tunnel"
+      ],
+      [
+        "Autonomous Systems & Decision-Making",
+        "Computational Science & Engineering",
+        "Earth & Space Sciences",
+        "Human-System Collaboration",
+        "Systems Design & Engineering",
+        "Transportation & Exploration",
+        "Vehicle Design & Engineering"
+      ],
+      [
+        "Aerospace Controls Lab \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Jonathan How",
+        "Aerospace Materials and Structures Lab\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Zachary Cordero",
+        "Aerospace Physiology Lab (APL)\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Lonnie Petersen",
+        "Aerospace Plasma Group \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Carmen Guerra-Garcia",
+        "ARCLab\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Richard Linares",
+        "Collaborative Learning and Autonomy Research Lab (CLEAR Lab)\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Andreea Bobu",
+        "Computational Turbulence Group\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Adri\u00e1n Lozano-Dur\u00e1n",
+        "Communications and Networking Research Group \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Eytan Modiano",
+        "DINaMo Group\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Hamsa Balakrishnan",
+        "Design in Chaos\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Qiqi Wang",
+        "Gas Turbine Lab \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPIs: Zolt\u00e1n Spakovszky (director), Edward Greitzer",
+        "Hypersonics Research Lab \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Wesley Harris",
+        "Institute for Soldier Nanotechnologies \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Ra\u00fal Radovitzky",
+        "Interactive Robotics Group \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Julie Shah",
+        "Laboratory for Aviation and the Environment \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Steven Barrett",
+        "LEAN Research Group\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Sertac Karaman",
+        "Model-Based Embedded and Robotics Systems Group \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Brian Williams",
+        "necstlab \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Brian Wardle",
+        "Reliable Autonomous Systems Lab @ MIT (REALM) \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Chuchu Fan",
+        "Robust Robotics Group \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Nicholas Roy",
+        "Space Enabled \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Danielle Wood",
+        "Space Propulsion Laboratory \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Paulo Lozano",
+        "Space Systems Lab (SSL)",
+        "Space Telecom, Astronomy & Radiation Laboratory (STAR Lab) \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Kerri Cahoy",
+        "SPARK Lab\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Luca Carlone",
+        "Wireless Information & Network Sciences Lab \n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Moe Win",
+        "Wright Brothers Wind Tunnel\n\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\tPI: Mark Drela"
+      ]
+    ],
+    "https://worldwide.erau.edu/colleges/aviation/department-aeronautics": [
+      [
+        "Certificate Programs",
+        "Associate's Degrees",
+        "Bachelor's Degrees",
+        "Master's Degrees",
+        "Doctoral Degrees",
+        "Non-Degree"
+      ],
+      [
+        "Daytona Beach, FL",
+        "Prescott, AZ",
+        "Worldwide",
+        "Embry-Riddle Online",
+        "Europe"
+      ],
+      [
+        "Aeronautics",
+        "Aviation Safety",
+        "Pilot Operations",
+        "Uncrewed & Autonomous Systems"
+      ],
+      [
+        "Aeronautics",
+        "Aviation Safety",
+        "Uncrewed and Autonomous Systems"
+      ],
+      [
+        "Degrees & Programs",
+        "Our Campuses",
+        "Certificate Programs",
+        "Associate Degrees",
+        "Bachelor's Degrees",
+        "Master's Degrees"
+      ],
+      [
+        "Certificate Programs \n\nAviation Maintenance Technology Part\u00a065\n\n\nUncrewed Systems Technology",
+        "Associate Degrees \n\nAeronautics\n\n\nUncrewed and Autonomous Systems",
+        "Master's Degrees \n\nAeronautics\n\n\nAviation Safety\n\n\nUncrewed and Autonomous Systems"
+      ]
+    ],
+    "https://aa.stanford.edu/academics-admissions/graduate-programs/masters-program": [
+      [
+        "Fluids: 200 (Applied Aerodynamics), 210A (Fundamentals of Compressible Flow)",
+        "Structures: 240 (Analysis of Structures)",
+        "Propulsion: 283 (Aircraft and Rocket Propulsion), 204 (Spacecraft Electric Propulsion)",
+        "Experimentation/Design Requirements (PDF)"
+      ],
+      [
+        "AA203 - Optimal and Learning-Based Control",
+        "AA212 - Advanced Feedback Control Design",
+        "AA214 - Numerical Methods for Compressible Flows",
+        "AA218 - Introduction to Symmetry Analysis",
+        "AA222 - Engineering Design Optimization",
+        "AA228/CS 238 - Decision Making under Uncertainty",
+        "AA242B - Mechanical Vibrations",
+        "AA273 -\u00a0State Estimation and Filtering for Robotic Perception",
+        "AA277 -\u00a0Multi-Robot Control and Distributed Optimization"
+      ],
+      [
+        "Main navigation",
+        "Basic courses",
+        "Mathematics courses",
+        "Technical electives",
+        "Other electives",
+        "Waivers and transfers of credit",
+        "Program proposal for master\u2019s degree",
+        "Research opportunities",
+        "Coterminal master's program",
+        "Part-time master\u2019s degree program",
+        "Degree completion",
+        "Study after the master\u2019s degree",
+        "Students (admitted for Autumn 2021-22) wishing to continue to the Ph.D. program",
+        "Resources",
+        "Address",
+        "Links to",
+        "Resources for"
+      ],
+      [
+        "Five courses in the basic areas of Aeronautics and Astronautics (one in each area)",
+        "Three courses, one each from three of the four areas below",
+        "Honors cooperative program"
+      ],
+      [
+        "MS candidates must select eight courses as follows:",
+        "University Coterminal Requirements",
+        "Course transfers are not possible after the bachelor\u2019s degree has been conferred.",
+        "Time limits for M.S. Degree:",
+        "Required Application Material"
+      ]
+    ],
+    "https://semte.engineering.asu.edu/research/aerospace-and-mechanical/": [
+      [
+        "Adaptive materials, structures and systems",
+        "Fluid and aeromechanics",
+        "Design and manufacturing",
+        "Dynamics, controls and robotics",
+        "Mechanical behavior and design of materials",
+        "Thermal and solar energy",
+        "Awards and recognitions",
+        "Assistant Professor Beomjin Kwon earns NSF CAREER Award for visualizing heat transfer",
+        "Leixin Ma awarded Early-Career Research Fellowship from National Academies",
+        "Associate Professor Kailong Jin earns NSF CAREER Award to explore polymer properties",
+        "Our faculty members"
+      ]
+    ],
+    "https://mae.ucdavis.edu/undergraduate/areas-interest-aerospace-engineering": [
+      [
+        "Aerodynamics and Fluid Mechanics.",
+        "Structural Dynamics and Aeroelasticity.",
+        "Composite Materials.",
+        "Aircraft Propulsion.",
+        "Aircraft Control.",
+        "Spacecraft Engineering."
+      ],
+      [
+        "Main navigation (extended config)",
+        "Aerodynamics and Fluid Mechanics",
+        "Aircraft Control",
+        "Aircraft Propulsion",
+        "Composite Materials",
+        "Spacecraft Engineering",
+        "Structural Dynamics and Aeroelasticity",
+        "Undergraduate"
+      ],
+      [
+        "Relevant courses: EAE 126 and EAE 127.",
+        "Relevant courses: EAE 129.",
+        "Relevant courses: EAE 138 and EAE 140.",
+        "Relevant courses: EAE 135 and MAE 237 (graduate level/technical elective).",
+        "Relevant courses: EAE 140, EAE 142, EAE 143A and EAE 198",
+        "Relevant courses: EAE 133 and EAE 135."
+      ]
+    ],
+    "https://erau.edu/degrees/bachelor/aeronautics": [
+      [
+        "ERNIE",
+        "Transcripts",
+        "Tuition",
+        "Career Services",
+        "Human Resources"
+      ],
+      [
+        "Daytona Beach, FL",
+        "Prescott, AZ",
+        "Worldwide",
+        "Embry-Riddle Online",
+        "Europe"
+      ],
+      [
+        "Certificate Programs",
+        "Associate's Degrees",
+        "Bachelor's Degrees",
+        "Master's Degrees",
+        "Doctoral Degrees",
+        "Non-Degree"
+      ],
+      [
+        "Attend a Worldwide Virtual Info Session",
+        "Discover the Department's Faculty",
+        "Explore the Fields of Study: Aviation & Space",
+        "Find Related Clubs & Organizations"
+      ],
+      [
+        "Qualification: BSc. in Aeronautics",
+        "Study Modes: Full-Time and Part-Time",
+        "Delivery: Classroom and Online (Blended)",
+        "Credits Required: 121*",
+        "Duration: 48-60 months (average with credit exemptions is 24 months)"
+      ],
+      [
+        "Popular Searches",
+        "Our Campuses",
+        "Degrees & Programs",
+        "Aeronautics Career Opportunities",
+        "DETAILS",
+        "Get Started Now:",
+        "Summary",
+        "Spotlight",
+        "Aeronautics Degree Helps Eagle Take His Air Force Career to a New Altitude",
+        "Get Started Now:",
+        "Summary",
+        "Spotlight",
+        "Aeronautics Degree Helps Eagle Take His Air Force Career to a New Altitude",
+        "Get Started Now:",
+        "Summary",
+        "Spotlight",
+        "Where Are They Now?",
+        "Get Started Now:",
+        "Degree Resources",
+        "Spotlight",
+        "Where Are They Now?",
+        "RELATED DEGREES"
+      ],
+      [
+        "Search",
+        "Daytona Beach, FL Campus",
+        "Close Details",
+        "Learn More",
+        "Daytona Beach, FL Campus",
+        "Prescott, AZ Campus",
+        "Close Details",
+        "Learn More",
+        "Prescott, AZ Campus",
+        "Worldwide & Online Campus",
+        "Close Details",
+        "Learn More",
+        "Worldwide & Online Campus",
+        "Asia Campus",
+        "Close Details",
+        "Learn More",
+        "Asia Campus",
+        "General Education",
+        "Aeronautics Core (44 Credits)",
+        "Aviation Area of Concentration (40 Credits)",
+        "Professional Development Electives (21 Credits)",
+        "Open Electives (15 Credits)",
+        "Year One",
+        "Year Two",
+        "Year Three",
+        "Year Four",
+        "Bachelor of Science in Aeronautical Science - Flight",
+        "Bachelor of Science in  Air Traffic Management",
+        "Master of Science in Aeronautics"
+      ],
+      [
+        "Application Requirements\n\n\n\n\nPartner Institution",
+        "Tuition and Cost of Attendance\n\n\n\n\nScholarships and Financial Aid",
+        "Credit Exemptions"
+      ],
+      [
+        "RELATED DEGREES\n\n\nYou may be interested in the following degrees:",
+        "Bachelor of Science in Aeronautical Science - Flight",
+        "Bachelor of Science in  Air Traffic Management",
+        "Master of Science in Aeronautics"
+      ],
+      [
+        "General Education",
+        "Communication Theory and Skills *",
+        "Lower-Level Humanities *",
+        "Lower-Level Social Sciences *",
+        "Lower or Upper-Level Humanities or Social Sciences *",
+        "Upper-Level Humanities or Social Science *",
+        "Computer Science",
+        "Mathematics (College Algebra or Higher, and MA\u00a0112 or MA\u00a0222) **",
+        "Physical and Life Sciences. One course must include a laboratory. **",
+        "Total Credits"
+      ],
+      [
+        "General Education",
+        "Aviation Area of Concentration",
+        "Select from (100-400) courses in AMS, AS, AT, CEA, CSO, CYB, FA, GEO, HSI, SF, SIM, SP, UA, WX",
+        "AS\u00a0120",
+        "or\u00a0AS\u00a0121",
+        "AS\u00a0254",
+        "AS\u00a0405",
+        "AS\u00a0474",
+        "SF\u00a0210",
+        "Program Support",
+        "ASC\u00a0101",
+        "or\u00a0UNIV\u00a0101",
+        "BA\u00a0201",
+        "or\u00a0ACC\u00a0210",
+        "Select one of the following:",
+        "EC\u00a0200",
+        "EC\u00a0210",
+        "EC\u00a0211",
+        "Professional Development Electives",
+        "Open Electives",
+        "Total Credits"
+      ],
+      [
+        "Year One",
+        "AS\u00a0120",
+        "or AS\u00a0121",
+        "UNIV\u00a0101",
+        "or ASC\u00a0101",
+        "BA\u00a0201",
+        "or ACC\u00a0210",
+        "COM\u00a0122",
+        "MA\u00a0111",
+        "MA\u00a0112",
+        "or MA\u00a0222",
+        "EC\u00a0200",
+        "or EC\u00a0210",
+        "or EC\u00a0211",
+        "SF\u00a0210",
+        "Year Two",
+        "AS\u00a0254",
+        "COM\u00a0219",
+        "COM\u00a0221",
+        "Year Three",
+        "Year Four"
+      ],
+      [
+        "Communication Theory and Skills",
+        "Computer Science/Information Technology",
+        "Mathematics",
+        "Physical and Life Sciences (Natural Sciences)",
+        "Humanities or Social Sciences",
+        "3 hours of Upper Level Humanities",
+        "3 hours of Lower-Level Social Science",
+        "3 hours of Lower-Level or Upper-Level Humanities or Social Science",
+        "3 hours of Upper-Level Humanities or Social Science",
+        "Total Credits"
+      ],
+      [
+        "Aeronautics Core",
+        "ACC\u00a0210",
+        "or\u00a0BA\u00a0201",
+        "COM\u00a0122",
+        "Economics Elective Lower-Level",
+        "General Education - Communications Elective #",
+        "General Education - Computer Science / Information Technology Elective #",
+        "General Education - Humanities Lower-Level Elective #",
+        "General Education - Natural Sciences (One course must include a laboratory) #",
+        "General Education - Social Science Lower-Level Elective #",
+        "MA\u00a0111",
+        "or\u00a0MA\u00a0140",
+        "MA\u00a0112",
+        "or\u00a0MA\u00a0222",
+        "PSY\u00a0101",
+        "PSY\u00a0350",
+        "UNIV\u00a0101"
+      ],
+      [
+        "AS\u00a0120",
+        "or\u00a0AS\u00a0121",
+        "or\u00a0AS\u00a0125",
+        "or\u00a0AS\u00a0143",
+        "AS\u00a0207",
+        "AS\u00a0405",
+        "AS\u00a0480",
+        "or\u00a0AS\u00a0410",
+        "or\u00a0AS\u00a0490"
+      ],
+      [
+        "General Education",
+        "Communication Theory and Skills",
+        "Any Communication Theory and Skills above ENGL\u00a0106",
+        "Humanities",
+        "Lower-Level Humanities (Any Lower or Upper Level Humanities)",
+        "Upper-Level Humanities (Any Upper Level Humanities)",
+        "Social Sciences",
+        "Any Social Science",
+        "Physical and Life Science",
+        "Any Physical Science/Physics",
+        "Mathematics",
+        "Any College Algebra or Higher Math Series",
+        "Computer Science",
+        "Any Computer Science",
+        "Total Credits"
+      ],
+      [
+        "Program Support",
+        "ASCI\u00a0202",
+        "ASCI\u00a0254",
+        "ASCI\u00a0404",
+        "STAT\u00a0211",
+        "MGMT\u00a0201",
+        "ACCT\u00a0210",
+        "MMIS\u00a0221",
+        "UNSY\u00a0315"
+      ],
+      [
+        "Professional Development Core",
+        "ASCI\u00a0491",
+        "SCTY\u00a0400",
+        "LGMT\u00a0420",
+        "BSAS\u00a0409"
+      ],
+      [
+        "Term 1",
+        "Term 2",
+        "Term 3",
+        "Term 4",
+        "Term 5",
+        "ASCI\u00a0202"
+      ],
+      [
+        "Term 1",
+        "ASCI\u00a0254",
+        "Term 2",
+        "MGMT\u00a0201",
+        "Term 3",
+        "ACCT\u00a0210",
+        "Term 4",
+        "MMIS\u00a0221",
+        "Term 5",
+        "STAT\u00a0211"
+      ],
+      [
+        "Term 1",
+        "UNSY\u00a0315",
+        "Term 2",
+        "Term 3",
+        "LGMT\u00a0420",
+        "Term 4",
+        "SCTY\u00a0400",
+        "Term 5"
+      ],
+      [
+        "Term 1",
+        "BSAS\u00a0409",
+        "ASCI\u00a0404",
+        "Term 2",
+        "Term 3",
+        "Term 4",
+        "Term 5",
+        "ASCI\u00a0491"
+      ],
+      [
+        "General Education Core",
+        "ENGL\u00a0123",
+        "ENGL\u00a0222",
+        "ENGL\u00a0223",
+        "HUMN\u00a0330",
+        "SOCI\u00a0210",
+        "CSCI\u00a0123",
+        "ECON\u00a0210",
+        "ECON\u00a0211",
+        "WEAX\u00a0201",
+        "PHYS\u00a0142",
+        "MATH\u00a0111",
+        "MATH\u00a0112",
+        "Total Credits"
+      ],
+      [
+        "Singapore Specific Core",
+        "UNIV\u00a0101",
+        "ASCI\u00a0185",
+        "or\u00a0ASCI\u00a0202",
+        "RSCH\u00a0202",
+        "COIN\u00a0496",
+        "or\u00a0SFTY\u00a0326",
+        "Total Credits"
+      ],
+      [
+        "Aviation Area of Concentration",
+        "SCTY\u00a0400",
+        "SFTY\u00a0440",
+        "ACCT\u00a0210",
+        "BSAS\u00a0320",
+        "Total Credits"
+      ],
+      [
+        "Program Support Core",
+        "ASCI\u00a0254",
+        "ASCI\u00a0404",
+        "STAT\u00a0211",
+        "MGMT\u00a0201",
+        "MMIS\u00a0221",
+        "ASCI\u00a0309",
+        "UNSY\u00a0315",
+        "Total Credits"
+      ],
+      [
+        "Professional Development Core",
+        "ASCI\u00a0491",
+        "LGMT\u00a0420",
+        "BSAS\u00a0409",
+        "Total Credits"
+      ],
+      [
+        "ENGL\u00a0104",
+        "ENGL\u00a0106",
+        "MATH\u00a0100",
+        "MATH\u00a0106"
+      ],
+      [
+        "quality, industry",
+        "recognized, four",
+        "year degree and flight ratings."
+      ],
+      [
+        "quality, industry",
+        "known, four",
+        "year degree and their flight ratings simultaneously, while attending classes in dynamic, aviation",
+        "related labs and facilities. Embry"
+      ]
+    ],
+    "https://www.fit.edu/aeronautics/faculty-and-research/": [
+      [
+        "Decision making and the Flight Risk Assessment Tool (FRAT)",
+        "Willingness to fly with two pilots, a single pilot, and a single pilot with Artificial Intelligence",
+        "FlyKey \u2013 An Airport Environmental Interaction Airport App",
+        "Effect of attrition of ramp agents on ground operations incidents",
+        "The relationship between airport size and ground operations incidents",
+        "Academic workload, perceived stress, and Willingness to pilot",
+        "Passenger Safety",
+        "Speech recognition system Pilot Weather Reports (PIREPs)",
+        "Unruly passenger reports before and during the mask mandate",
+        "Rate of wildlife strike reports by damage category"
+      ],
+      [
+        "Willingness to Fly with Reduced Crew and Unmanned Aircraft",
+        "Aviation Consumer Preferences",
+        "Electric\u00a0aircraft flight trajectories",
+        "Battery performance for electric aircraft",
+        "Airport noise and aviation emissions at airports",
+        "Airport noise modeling",
+        "Cross Cultural Training Knowledge Management Content Development",
+        "Pilots' job satisfaction in relation to leadership style of airline executives",
+        "Advanced/Urban Air Mobility Human Factors",
+        "Adaptive Training and Learner Engagement",
+        "Augmented Weather Interface Technology",
+        "Human\u00a0Autonomy Teaming (HAT)",
+        "Human Factors Considerations for Cybersecurity",
+        "Pilot Cognition and Decision Making with Uncertainty",
+        "Speech Recognition Interface for Submitting Pilot Reports (PIREPs)",
+        "Crew Selection for Long Duration Space Flight",
+        "Plant Growth for Long Duration Spaceflight",
+        "Safety culture and safety management systems",
+        "Weather Information Representativeness and Uncertainty Resolution for Low Altitude Operations",
+        "Aviation Risk Assessment and Accident Analysis",
+        "Helicopter Operations Weather Information Technology",
+        "Runway incursions"
+      ],
+      [
+        "Electric\u00a0aircraft flight trajectories",
+        "Battery performance for electric aircraft",
+        "Airport noise and aviation emissions at airports",
+        "Airport noise modeling"
+      ],
+      [
+        "Advanced/Urban Air Mobility Human Factors",
+        "Adaptive Training and Learner Engagement",
+        "Augmented Weather Interface Technology",
+        "Human\u00a0Autonomy Teaming (HAT)",
+        "Human Factors Considerations for Cybersecurity",
+        "Pilot Cognition and Decision Making with Uncertainty",
+        "Speech Recognition Interface for Submitting Pilot Reports (PIREPs)"
+      ],
+      [
+        "Undergraduate & Graduate\u00a0 Research",
+        "Current and Recent Projects",
+        "Advanced/Urban Air Mobility",
+        "Augmented and Virtual Reality",
+        "Aviation Consumer Perceptions",
+        "Aviation\u00a0Education and Training",
+        "Aviation Sustainability and Electric Aircraft",
+        "Aviation Management",
+        "Aviation Safety",
+        "Decision Making on the Flight Deck",
+        "Flight Deck and Unmanned Aerial Systems",
+        "Human\u00a0Factors",
+        "Human Space Flight",
+        "Project Management",
+        "Trust in Automation/Autonomy"
+      ],
+      [
+        "Carmody. K.,",
+        "Bhoomin, C.,",
+        "Namukasa, M.,",
+        "Sharma, V., Carroll, M.,",
+        "Berkel, G., &"
+      ],
+      [
+        "Chaparro Osman, M.,",
+        "Namukasa, M.,",
+        "Carmody, K.,",
+        "Chauhan, B.,"
+      ],
+      [
+        "Chauhan, B. B.,",
+        "Carmody, K.,",
+        "Namukasa, M.,",
+        "Sharma, V.,",
+        "Berkel, G.,",
+        "Adorno, Y.,"
+      ],
+      [
+        "Chauhan, B. B.,",
+        "Osman, M. C.,",
+        "Carmody, K., & Carroll, M. (2022, October 24"
+      ],
+      [
+        "Namukasa, M., Carroll, M.,",
+        "Bhoomin, C.,",
+        "Sharma, V.,"
+      ],
+      [
+        "D'Albert, J.,",
+        "Alqarni, K., Wheeler, B.E., &",
+        "Magness, A. (Summer 2022). Passengers\u2019 Willingness to Fly with Commercial Airline COVID",
+        "19 Safety Measures. Journal of Management and Engineering Integration. 15(1), 23"
+      ],
+      [
+        "Rao, N.A.,",
+        "Labonte, E., Rice, S., Carstens, D. and",
+        "162. https://doi.org/10.1504/IJAM.2019.098362"
+      ],
+      [
+        "Baugh, B. S.,",
+        "Anania, E. C., &",
+        "55. https://doi.org/10.1139/juvs"
+      ],
+      [
+        "Chaparro, M., Rebensky, S.,",
+        "Carmody, K., Mehta, R., &",
+        "587,\u00a0DOI:\u00a010.1080/10447318.2021.1890495"
+      ],
+      [
+        "Chaparro, M.,",
+        "Sharma, V.,",
+        "Ficke, C., Carroll, M., Mehta, R., Wheeler, B., &",
+        "Dayiaglo, B. (2021).\u00a0 Predicting pilot"
+      ],
+      [
+        "Namukasa, M., Carroll, M., Marraffino, M. D., Johnson, C. I., Whitmer, D. E.,",
+        "Igwe, W., &",
+        "34735"
+      ],
+      [
+        "Mahlman, J.,",
+        "Sudharsan, A.,",
+        "Chauhan, B.,",
+        "Bouran, A.,",
+        "Hunt, L., &"
+      ],
+      [
+        "D'Albert, J.,",
+        "Magness, A.,",
+        "19 Safety Measures. Journal of Management and Engineering Integration. 15(1), 23"
+      ],
+      [
+        "Bride, O.,",
+        "Craig, D., &",
+        "King, K. (2022). Examining Monthly and Annual Laser Strike Reports from 2010"
+      ],
+      [
+        "Pittorie, W.,",
+        "Hunt, L.,",
+        "Chaparro, M., &",
+        "641.\u00a0\u00a0https://doi.org/10.1080/10447318.2020.1854001"
+      ],
+      [
+        "Sanchez, P.\u00a0 (2021).\u00a0 An examination of pilot",
+        "87.\u00a0\u00a0https://doi.org/10.1027/2192",
+        "0923/a000209"
+      ],
+      [
+        "Harwin, M.S., &",
+        "25.\u00a0https://6179c4c4",
+        "06afeeb22e14.filesusr.com/ugd/f76c8e_6413c6f27d3a4ad3976ae805c283168a.pdf"
+      ],
+      [
+        "Harwin, M.,",
+        "Li, T., Splitt, M., &",
+        "Olabanji, R. (2022). Accuracy of Commercially"
+      ],
+      [
+        "Chaparro Osman, M.,",
+        "Nakushian, A.,",
+        "Human Computer Interaction International."
+      ],
+      [
+        "Dailey, G.,",
+        "Perry, O., & Carstens, D.S. (2023). Airport Ice",
+        "29. St. Petersburg, FL."
+      ],
+      [
+        "Carmody, K.,",
+        "Ficke, C.,",
+        "Nguyen, D.,",
+        "Addis, A., Rebensky, S., & Carroll, M. (2022). A qualitative analysis of trust dynamics in human"
+      ],
+      [
+        "Ficke, C.,",
+        "Addis, A.,",
+        "Nguyen, D.,"
+      ],
+      [
+        "Ficke, C.,",
+        "Carmody, K.,",
+        "Nguyen, D.,",
+        "Piasecki, I.,",
+        "Addis, A.,",
+        "Akib, M., Thayer, A. L., Wildman, J. L., & Carroll, M. (2022). Capturing trust dynamics in human"
+      ],
+      [
+        "Nguyen, D.M.,",
+        "Addis, A.,",
+        "Carmody, K.,",
+        "Ficke, C.,",
+        "Akib, M.,"
+      ],
+      [
+        "Nguyen, D.M.,",
+        "Agent Teams. Proceedings of the 3rd IEEE International Conference on Human",
+        "Machine Systems, Orlando, FL."
+      ],
+      [
+        "Pittorie, W., Rebensky, S.,",
+        "Hunt, L.,",
+        "Nakushian, A.,",
+        "163)."
+      ],
+      [
+        "Rebensky, S.,",
+        "Nguyen, D.,",
+        "Carmody, K.,"
+      ]
+    ],
+    "https://www.aa.washington.edu/": [
+      [
+        "Main menu",
+        "Eye-tracking for tailored autonomy",
+        "Skye Mceowen  wins at SciTech",
+        "Research programs",
+        "Space occupation",
+        "Stable fusion",
+        "Aerospace systems",
+        "Efficiency",
+        "Innovative forms",
+        "Remote control",
+        "The power of bacteria",
+        "Mira Tipirneni",
+        "Tipirneni is a Varanasi Fellow"
+      ],
+      [
+        "Apr\n3\nThu",
+        "1:00 pm - 2:30 pm",
+        "Guggenheim Hall (GUG) - GUG 211D"
+      ],
+      [
+        "Apr\n3\nThu",
+        "3:30 pm - 4:30 pm",
+        "Alder Hall Auditorium - Alder Hall, 1315 NE Campus Pkwy, Seattle, WA 98105"
+      ],
+      [
+        "Apr\n8\nTue",
+        "1:00 pm - 2:00 pm",
+        "Smith Hall (SMI) - Smith 304"
+      ],
+      [
+        "RELATED STORY",
+        "Mira Tipirneni is our most recent Varanasi Fellow, working on preventing aircraft rain erosion.",
+        "Read story"
+      ]
+    ],
+    "https://engineering.purdue.edu/AAE": [
+      [
+        "Industrial Advisory Council",
+        "Steering Advisory Council",
+        "Young Professionals Advisory Council",
+        "Industrial Affiliates",
+        "CoE Office of Engagement"
+      ],
+      [
+        "Discover",
+        "Explore",
+        "Connect",
+        "People",
+        "Follow"
+      ],
+      [
+        "First man on the moon",
+        "Neil Armstrong",
+        "(BSAE 1955)"
+      ],
+      [
+        "Largest academic",
+        "propulsion lab",
+        "in the world",
+        "Zucrow Labs"
+      ],
+      [
+        "MAR\n27\n\n\n\nExploring Purdue Innovates | Innovation and Entrepreneurship Discussion Series",
+        "APR\n3\n\n\n\nAAE Special Seminar: Rise of the Drones\nwith Michael J. Corso",
+        "APR\n5\n\n\n\nAmelia Earhart Aerospace Summit\nRegistration Open!",
+        "APR\n5\n\n\n\nDrone Racing - Pylon Competition at PURT"
+      ],
+      [
+        "Aerogram: 2024 / 2025",
+        "Aerogram: 2023 / 2024",
+        "Aerogram: Fall 2022 / Winter 2023"
+      ]
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering": [
+      [
+        "Ph.D.",
+        "M.S.E.",
+        "M.Eng."
+      ],
+      [
+        "Craig B. Arnold",
+        "Emily Ann Carter",
+        "Edgar Y. Choueiri",
+        "Mikko P. Haataja",
+        "Marcus N. Hultmark",
+        "Yiguang Ju",
+        "Chung K. Law",
+        "Naomi E. Leonard",
+        "Michael G. Littman",
+        "Luigi Martinelli",
+        "Michael E. Mueller",
+        "Radhika Nagpal",
+        "Clarence W. Rowley",
+        "Howard A. Stone"
+      ],
+      [
+        "Daniel J. Cohen",
+        "Luc Deike",
+        "Alexander Glaser",
+        "Kelsey B. Hatzell",
+        "Egemen Kolemen",
+        "Andrej Kosmrlj",
+        "Anirudha Majumdar",
+        "Julia Mikhailova",
+        "Daniel M. Nosenchuck"
+      ],
+      [
+        "Christine Allen-Blanchette",
+        "Ryne Beeson",
+        "Michelle H. DiBenedetto",
+        "Alison M. Ferris",
+        "Jesse D. Jenkins",
+        "Aditya Sood",
+        "Aimy Wissa"
+      ],
+      [
+        "Amir Ali Ahmadi, Oper Res and Financial Eng",
+        "Elie R. Bou-Zeid, Civil and Environmental Eng",
+        "Nathaniel J. Fisch, Astrophysical Sciences",
+        "Bruce E. Koel, Chemical and Biological Eng",
+        "David J. McComas, Vice President, PPL",
+        "David N. Spergel, Astrophysical Sciences",
+        "Salvatore Torquato, Chemistry",
+        "Claire E. White, Civil and Environmental Eng"
+      ],
+      [
+        "Program length\nPh.D. 5 years, M.S.E. 2 years, M.Eng. 1 year",
+        "Fee\n$75",
+        "GRE\nGeneral Test - not accepted",
+        "For a full list of faculty members and fellows please visit the department or program website."
+      ]
+    ],
+    "https://www.lynn.edu/academics/colleges/aeronautics": [
+      [
+        "Aviation (A.A.)",
+        "Aviation Management (B.S.)",
+        "Aviation Management (B.S.) (online division)",
+        "Aviation Management (MBA)",
+        "Aviation Operations (B.S.)",
+        "Aviation Operations (B.S.) (online division)",
+        "Professional Pilot (B.S.)",
+        "Professional Pilot (B.S.) (online division)"
+      ]
+    ],
+    "https://engineering.nyu.edu/academics/departments/mechanical-and-aerospace-engineering": [
+      [
+        "Degrees and Programs",
+        "People",
+        "Labs and Groups",
+        "Student Associations and Clubs",
+        "Academic Advising",
+        "Inclusion, Diversity, Belonging, And Equity in MAE",
+        "Available Faculty Positions",
+        "Richard Thorsen",
+        "Weiqiang Chen",
+        "Joo H. Kim",
+        "Ludovic Righetti",
+        "AI food scanner turns phone photos into nutritional analysis",
+        "First-year Tandon student contributes to prize-winning project at hackathon",
+        "How urban wildfires spread",
+        "A belt bag to aid navigation for those with sight loss",
+        "Professor Nikhil Gupta is appointed to the editorial board of a Nature journal"
+      ],
+      [
+        "From\n\nNikkei.com",
+        "From\n\nWNYC The Brian Lehrer Show",
+        "From\n\nOptometry Today"
+      ],
+      [
+        "Richard Thorsen\n\n\nAdjunct Professor, Vice President Emeritus",
+        "Joo H. Kim\n\n\nAssociate Professor; Director of Mechanical Engineering Ph.D. Program",
+        "Ludovic Righetti\n\n\nAssociate Professor"
+      ]
+    ],
+    "https://aero.umd.edu/undergraduate/degrees/bachelor-science": [
+      [
+        "Aerodynamics",
+        "Flight Dynamics and Control",
+        "Propulsion",
+        "Materials and Structures",
+        "Systems Design"
+      ],
+      [
+        "Calculus I*",
+        "Chemistry*",
+        "Introduction to Engineering",
+        "Aerospace Seminar I"
+      ],
+      [
+        "Calculus II*",
+        "Physics I*",
+        "Mechanics I",
+        "Aerospace Computing"
+      ],
+      [
+        "Calculus III",
+        "Physics II",
+        "Mechanics II",
+        "Intro to Aerospace Systems"
+      ],
+      [
+        "Linear Algebra",
+        "Differential Equations",
+        "Physics III",
+        "Thermodynamics",
+        "Aerospace Seminar II"
+      ],
+      [
+        "Aerodynamics I",
+        "Dynamics",
+        "Flight Software",
+        "Instrumentation Lab"
+      ],
+      [
+        "Structures",
+        "Control Systems",
+        "Technical Writing",
+        "Aerodynamics II",
+        "Space Flight Dynamics"
+      ],
+      [
+        "Structural Vibrations",
+        "Aircraft Dynamics/Control",
+        "Aircraft Propulsion",
+        "Aircraft Design I"
+      ],
+      [
+        "Aero Project Lab",
+        "Tech Elective",
+        "Aero Elective",
+        "Aircraft Design II"
+      ],
+      [
+        "Structural Vibrations",
+        "Space Navigation",
+        "Space Propulsion",
+        "Spacecraft Design I"
+      ],
+      [
+        "Aero Project Lab",
+        "Tech Elective",
+        "Aero Elective",
+        "Spacecraft Design II"
+      ],
+      [
+        "Aerospace Engineering",
+        "Subdisciplines",
+        "Aerospace Curriculum",
+        "Aerospace Curriculum by Year",
+        "Accreditation"
+      ],
+      [
+        "Program Guide",
+        "General Education Requirements",
+        "General Education 4-Year Plan",
+        "CORE Curriculum Sheet"
+      ]
+    ],
+    "https://aerospace.illinois.edu/": [
+      [
+        "Students create astronaut toolbox, underwater testing simulates use in space",
+        "Illinois rocket team breaks 7-year standing altitude record",
+        "A micro-scale look at how parachute textiles act under stress",
+        "NASA funds sustainable aviation collaboration between U of I and JetZero",
+        "Elevate society. Create wonder."
+      ],
+      [
+        "Our programs are ranked in the top 10 by US News and World Report Rankings (2023)",
+        "#5\nIllinois Undergraduate Engineering Program",
+        "#6\nUndergraduate Aerospace Engineering Program",
+        "#7\nGraduate Aerospace Engineering Program"
+      ],
+      [
+        "AE 590 Seminar Speaker Jason Patrick: Self-healing and Self-sensing in  Structural Composites",
+        "4:00 PM",
+        "CIF 2035"
+      ],
+      [
+        "Regional Event near Washington, DC",
+        "12:00 PM",
+        "Wildfire Tysons at Tysons Galleria"
+      ],
+      [
+        "AE 590 Seminar Speaker: Warren Dixon - Assured Autonomy for Uncertain and Data Intermittent Systems",
+        "4:00 PM",
+        "CIF 2035"
+      ]
+    ],
+    "https://www.mae.ucla.edu/": [
+      [
+        "UCLA Mechanical and Aerospace Engineering 101",
+        "UCLA Mechanical and Aerospace Engineering 101",
+        "Using AI technology for early wildfire detection",
+        "MarketWatch Guides: The Latest EV Statistics and Trends",
+        "Future L.A. Fires Could Be Prevented With Grid-Hardening Tech",
+        "Multiple Assistant Professor Positions in Mechanical and Aerospace Engineering",
+        "Jeff Eldredge selected for UCLA\u2019s 2024 Distinguished Teaching Award",
+        "Brett Lopez receives 2022-23 MAE Outstanding Faculty Teaching Award"
+      ],
+      [
+        "Featured Videos",
+        "UCLA Samueli 2021 Commencement Speaker: Megan McArthur",
+        "Veronica Santos | Tech That Gives Robots a Sense of Touch | Mission Unstoppable",
+        "UCLA Samueli\u2019s In-Flight Conversation with SpaceX Crew 2",
+        "Wear a Robot: Strike Stroke | Dr. Jacob Rosen | TEDxPaloAlto",
+        "UCLA faculty who were first-generation college grads aim to encourage, inspire"
+      ],
+      [
+        "12:00 pm",
+        "1:00 pm",
+        "design to overcome challenges for aerial robots\u201d"
+      ],
+      [
+        "12:00 pm",
+        "1:00 pm",
+        "Ghazaly \u201cDesigning Magnetic Manipulation at the Nanoscale\u201d"
+      ]
+    ],
+    "https://ae.gatech.edu/ae-specialty-areas": [
+      [
+        "Daniel Guggenheim School of Aerospace Engineering",
+        "Main navigation",
+        "gt-callout",
+        "Search"
+      ],
+      [
+        "College of Engineering",
+        "What is an Aerospace Engineering Specialty Area?",
+        "Georgia Institute of Technology"
+      ],
+      [
+        "Aeromechanics (Aerodynamics, Aeroelasticity, Structures) Area",
+        "Aircraft Flight Dynamics Area",
+        "Controls Area",
+        "Human Factors Area",
+        "Propulsion Area",
+        "Rotorcraft or Vertical Flight",
+        "Space and Entrepreneurship Area",
+        "Space and Science Area",
+        "Space and Technology\u00a0Area",
+        "Spacecraft Dynamics Area"
+      ]
+    ],
+    "https://news.engineering.iastate.edu/2024/08/08/teaching-and-research-recognition-for-aerospace-engineering-graduate-students/": [
+      [
+        "Aerospace Engineering",
+        "College of Engineering",
+        "Iowa State University",
+        "Iowa State University College of Engineering",
+        "Research"
+      ]
+    ],
+    "https://sc.edu/study/colleges_schools/engineering_and_computing/academics/undergraduate_programs/aerospace_engineering/": [
+      [
+        "SC.edu",
+        "Study",
+        "Colleges and Schools",
+        "Molinaroli College of Engineering and Computing",
+        "Academics",
+        "Undergraduate Programs",
+        "B.S. and Minor Degrees"
+      ],
+      [
+        "Computer Aided Design",
+        "Statics and Solid Mechanics",
+        "Applied Numerical Methods",
+        "Dynamics and Vibrations",
+        "Aerospace Structures",
+        "Aerodynamics",
+        "Energy Power and Propulsion",
+        "Aerospace Systems",
+        "Aerospace Laboratories",
+        "Flight and Orbital Mechanics",
+        "Flight Dynamics and Control",
+        "Thermodynamic Fundamentals",
+        "Engineering Materials",
+        "Manufacturing Processes",
+        "Aerospace Engineering Design"
+      ],
+      [
+        "American Institute of Aeronautics and Astronautics (AIAA)",
+        "Society for the Advancement of Material and Process Engineering (SAMPE)",
+        "Society of Manufacturing Engineers (SME)"
+      ],
+      [
+        "Aerospace Engineering Undergraduate Program",
+        "New aerospace engineering program satisfying major need in South Carolina",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      [
+        "Why study aerospace engineering?",
+        "Curriculum",
+        "Electives and Specializations",
+        "Capstone Design",
+        "Extracurriculars"
+      ],
+      [
+        "world projects to develop a solution",
+        "based analysis and synthesis",
+        "based"
+      ]
+    ],
+    "https://aem.eng.ua.edu/graduate/": [
+      [
+        "Degrees",
+        "AEM Graduate Courses",
+        "Graduate Admissions",
+        "Graduate Funding Opportunities",
+        "Graduate School Resources"
+      ],
+      [
+        "statement of purpose",
+        "college and university transcripts",
+        "three letters of recommendation (only two letters for\u00a0AMP\u00a0applicants)"
+      ],
+      [
+        "Degrees",
+        "Graduate Admissions",
+        "Graduate Funding Opportunities",
+        "Graduate School Resources"
+      ],
+      [
+        "Prospective Students",
+        "Scholastic Requirements",
+        "Degree Requirements",
+        "Graduate School Deadlines"
+      ],
+      [
+        "MSAEM",
+        "Fall \u2013 June 30",
+        "Spring \u2013 November 30",
+        "Summer \u2013 March 31",
+        "International students without visas will require earlier submissions."
+      ]
+    ],
+    "https://nps.edu/web/mae": [
+      [
+        "Master of Science in Mechanical Engineering",
+        "Master of Science in Astronautical Engineering",
+        "DL Degree & Certificate Options"
+      ],
+      [
+        "Mar 25, 2025\nSpring Quarter New Student Orientation",
+        "Mar 28, 2025\nWinter Quarter Commencement Ceremony",
+        "Apr 1, 2025 to Apr 30, 2025\nMeyer Month at NPS",
+        "May 5, 2025 to May 8, 2025\nSpring Naval AI Summit at NPS",
+        "May 12, 2025 to May 16, 2025\nJIFX 25-3: Command, Control, & Countermeasures"
+      ],
+      [
+        "NPS Recognizes Latest Cohort of Summer Quarter Graduates",
+        "September 27, 2024",
+        "| MC2 Andrew Langholf"
+      ],
+      [
+        "NPS, CAMRE Dedicate New Advanced Manufacturing Center",
+        "April 03, 2024",
+        "| Lt. Cmdr. Ed Early"
+      ]
+    ],
+    "https://www.engr.colostate.edu/me/aerospace/": [
+      [
+        "Ball Aerospace: Early September",
+        "Boeing: September \u2013 November",
+        "General Dynamics: Rotating",
+        "Lockheed Martin: September",
+        "Northrup Grumman: Fall"
+      ],
+      [
+        "Raytheon Technologies: Rotating",
+        "Sierra Nevada Corporation: September",
+        "United Launch Alliance: September",
+        "Woodward: Rotating"
+      ],
+      [
+        "in space.",
+        "UNDERGRADUATE",
+        "GRADUATE",
+        "Major Research Disciplines",
+        "Facilities",
+        "Danelle Lazcano-Concelman",
+        "Engineering alumna reflects on her role with NASA\u2019s Artemis I Mission",
+        "STUDENT SUCCESS STORIES",
+        "Seth Thompson",
+        "Mechanical engineering, a newborn baby, and the race to space \u2013 perspective from a graduate student.",
+        "Caitlin Robinson",
+        "Silver Medal Award winner shifts from graduation to space exploration.",
+        "CSU Rocket Team - Ram Rocketry",
+        "American Institute of Aeronautics and Astronautics (AIAA)",
+        "Students for the Exploration and Discovery of Space (SEDS)",
+        "NASA Space Grant Program"
+      ],
+      [
+        "Undergraduate Concentration in Aerospace Engineering",
+        "M.E. Master of Engineering, Aerospace Engineering Specialization",
+        "M.S. Mechanical Engineering with Master's Thesis in Aerospace Engineering",
+        "Graduate Certificate",
+        "Undergraduate Academic Advising Team",
+        "Fluid Flow",
+        "Propulsion",
+        "Materials and Manufacturing",
+        "Resources",
+        "Departments and Programs"
+      ],
+      [
+        "Todd Bandhauer",
+        "Ciprian Dumitrache",
+        "Doug Fankell",
+        "Kaka Ma"
+      ],
+      [
+        "David Prawel",
+        "Don Radford",
+        "Walter Thompson",
+        "Karen Thorsett-Hill"
+      ],
+      [
+        "John D. Williams",
+        "Bret Windom",
+        "Azer P. Yalin"
+      ],
+      [
+        "Aerospace Propulsion and Diagnostics Laboratory",
+        "Center for Laser Sensing and Diagnostics",
+        "Chemical Energy Conversion Laboratory"
+      ]
+    ],
+    "https://eas.uccs.edu/departments/mechanical-and-aerospace-engineering": [
+      [
+        "Quick Links:",
+        "Tools:",
+        "Resources For:",
+        "Main Navigation",
+        "Department of Mechanical and Aerospace Engineering",
+        "Breadcrumb",
+        "Department of Mechanical and Aerospace Engineering",
+        "Table of Contents",
+        "Message from the Department Chair",
+        "Research & Academics",
+        "Undergraduate Programs",
+        "Graduate Programs",
+        "Additional Resources",
+        "INFORMATION",
+        "RESOURCES",
+        "COMMUNICATION",
+        "Additional Links",
+        "Legal and More"
+      ]
+    ],
+    "https://mae.mst.edu/": [
+      [
+        "Rolla, MO",
+        "(573) 341-4661",
+        "mae@mst.edu"
+      ],
+      [
+        "mae@mst.edu",
+        "(573) 341-4661",
+        "Rolla, MO"
+      ],
+      [
+        "Advanced Manufacturing",
+        "Aerospace",
+        "Biomedical Engineering",
+        "Control Systems, Machine Learning and Robotics",
+        "Energy",
+        "Materials and Structures",
+        "Micro/Nano Systems"
+      ],
+      [
+        "Facebook",
+        "Twitter",
+        "Linked In",
+        "Youtube",
+        "Instagram"
+      ]
+    ],
+    "https://mabe.utk.edu/academics/undergraduate-programs/bs-in-aerospace-engineering/": [
+      [
+        "Maintain an overall GPA of 3.4.",
+        "Complete two upper-division honors courses in aerospace engineering (AE 347, AE 377).",
+        "Satisfy the Breadth Requirements for the Cook Grand Challenge Honors Program."
+      ],
+      [
+        "Mechanical, Aerospace and Biomedical Engineering",
+        "Curriculum",
+        "Honors Concentration",
+        "Five-Year BS/MS Aerospace Engineering Program"
+      ],
+      [
+        "Term 1",
+        "CHEM 120* or\u00a0CHEM 128*",
+        "EF 105",
+        "EF 151* or\u00a0EF 157*",
+        "1ENGL 101* or\u00a0ENGL 118*",
+        "MATH 132* or 141* or MATH 147*",
+        "Term 2",
+        "EF 152* or\u00a0EF 158*",
+        "ENGL 102*",
+        "MATH 142* or\u00a0MATH 148*",
+        "MATH 200",
+        "ME 202",
+        "2Social Sciences Elective*",
+        "Term 3",
+        "MATH 241 OR MATH 247",
+        "ME 231, AE 201",
+        "PHYS 231*",
+        "Arts and Humanities Elective*",
+        "Cultures and Civilizations Electives*",
+        "Term 4",
+        "2Arts and Humanities Electives*",
+        "EF 230",
+        "MATH 231 or MATH 237",
+        "ME 321",
+        "AE 210*",
+        "ECON 201 or ECON 207",
+        "Term 5",
+        "AE 341\u00a0or\u00a0AE 347,\u00a0AE 370\u00a0or\u00a0AE 377",
+        "ECE 301",
+        "ME 331,\u00a0ME 391\u00a0or\u00a0ME 397",
+        "Term 6",
+        "AE 363,\u00a0AE 345,\u00a0AE 351",
+        "ME 363\u00a0or\u00a0ME 367;\u00a0ME 344",
+        "Term 7",
+        "AE 422",
+        "AE 424",
+        "AE 425",
+        "AE 450",
+        "3Departmental Elective",
+        "Term 8",
+        "AE 449*,\u00a0AE 429",
+        "2Cultures and Civilizations Elective*",
+        "3Departmental Electives",
+        "TOTAL"
+      ],
+      [
+        "Meets University General Education Requirement.",
+        "will complete their first year composition requirement by choosing ENGL 102",
+        ", a sophomore literature course in the English Department, or ENGL 355"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 17:29:49"
+}

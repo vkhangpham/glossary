@@ -1,0 +1,2134 @@
+{
+  "level1_term": "classics",
+  "url_verification_status": {
+    "https://classics.cornell.edu/areas-research": false,
+    "https://classics.unc.edu/": false,
+    "https://classics.stanford.edu/node/616/fields-study": true,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/classics": false,
+    "https://classics.fsu.edu/": false,
+    "https://classics.uchicago.edu/graduate/program": false,
+    "https://liberalarts.tulane.edu/classical-studies": true,
+    "https://classics.cornell.edu/": false,
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics-teaching-licensure": false,
+    "https://www.hamilton.edu/academics/departments/classics": true,
+    "https://www.gc.cuny.edu/classics/curriculum-and-degree-information/phd-classics": true,
+    "https://classics.wustl.edu/graduate": false,
+    "https://www.colorado.edu/classics/graduate": true,
+    "https://classics.brown.edu/academics/graduate": false,
+    "https://www.holycross.edu/academics/program/classics": true,
+    "https://classicalstudies.duke.edu/": false,
+    "https://mcl.as.uky.edu/classics": true,
+    "https://www.classics.uga.edu/": false,
+    "https://classics.indiana.edu/index.html": false,
+    "https://classics.umd.edu/academic-programs/graduate": false,
+    "https://classics.ku.edu/": false,
+    "https://classics.ufl.edu/programs/graduate/phd/": false,
+    "https://www.bc.edu/bc-web/schools/morrissey/departments/classics.html": false,
+    "https://classics.richmond.edu/": false,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/classics": false,
+    "https://www.haverford.edu/classics/courses": true,
+    "https://catalog.unc.edu/graduate/schools-departments/classics/": true,
+    "https://hdl.library.upenn.edu/1017/2905": false,
+    "https://www.depts.ttu.edu/classic_modern/classics/grad/lacuclassicsgradrequirements.php": true,
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics": false,
+    "https://www.ohio.edu/cas/classics": true,
+    "https://www.vanderbilt.edu/AnS/Classics/grads.html": false
+  },
+  "verified_lists_per_url": {
+    "https://classics.cornell.edu/areas-research": 0,
+    "https://classics.unc.edu/": 0,
+    "https://classics.stanford.edu/node/616/fields-study": 1,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/classics": 0,
+    "https://classics.fsu.edu/": 0,
+    "https://classics.uchicago.edu/graduate/program": 0,
+    "https://liberalarts.tulane.edu/classical-studies": 4,
+    "https://classics.cornell.edu/": 0,
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics-teaching-licensure": 0,
+    "https://www.hamilton.edu/academics/departments/classics": 2,
+    "https://www.gc.cuny.edu/classics/curriculum-and-degree-information/phd-classics": 1,
+    "https://classics.wustl.edu/graduate": 0,
+    "https://www.colorado.edu/classics/graduate": 2,
+    "https://classics.brown.edu/academics/graduate": 0,
+    "https://www.holycross.edu/academics/program/classics": 1,
+    "https://classicalstudies.duke.edu/": 0,
+    "https://mcl.as.uky.edu/classics": 1,
+    "https://www.classics.uga.edu/": 0,
+    "https://classics.indiana.edu/index.html": 0,
+    "https://classics.umd.edu/academic-programs/graduate": 0,
+    "https://classics.ku.edu/": 0,
+    "https://classics.ufl.edu/programs/graduate/phd/": 0,
+    "https://www.bc.edu/bc-web/schools/morrissey/departments/classics.html": 0,
+    "https://classics.richmond.edu/": 0,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/classics": 0,
+    "https://www.haverford.edu/classics/courses": 1,
+    "https://catalog.unc.edu/graduate/schools-departments/classics/": 155,
+    "https://hdl.library.upenn.edu/1017/2905": 0,
+    "https://www.depts.ttu.edu/classic_modern/classics/grad/lacuclassicsgradrequirements.php": 1,
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics": 0,
+    "https://www.ohio.edu/cas/classics": 1,
+    "https://www.vanderbilt.edu/AnS/Classics/grads.html": 0
+  },
+  "total_lists_per_url": {
+    "https://classics.cornell.edu/areas-research": 1,
+    "https://classics.unc.edu/": 1,
+    "https://classics.stanford.edu/node/616/fields-study": 1,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/classics": 5,
+    "https://classics.fsu.edu/": 1,
+    "https://classics.uchicago.edu/graduate/program": 1,
+    "https://liberalarts.tulane.edu/classical-studies": 8,
+    "https://classics.cornell.edu/": 3,
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics-teaching-licensure": 1,
+    "https://www.hamilton.edu/academics/departments/classics": 4,
+    "https://www.gc.cuny.edu/classics/curriculum-and-degree-information/phd-classics": 8,
+    "https://classics.wustl.edu/graduate": 1,
+    "https://www.colorado.edu/classics/graduate": 3,
+    "https://classics.brown.edu/academics/graduate": 1,
+    "https://www.holycross.edu/academics/program/classics": 2,
+    "https://classicalstudies.duke.edu/": 1,
+    "https://mcl.as.uky.edu/classics": 3,
+    "https://www.classics.uga.edu/": 3,
+    "https://classics.indiana.edu/index.html": 5,
+    "https://classics.umd.edu/academic-programs/graduate": 1,
+    "https://classics.ku.edu/": 1,
+    "https://classics.ufl.edu/programs/graduate/phd/": 10,
+    "https://www.bc.edu/bc-web/schools/morrissey/departments/classics.html": 8,
+    "https://classics.richmond.edu/": 4,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/classics": 13,
+    "https://www.haverford.edu/classics/courses": 1,
+    "https://catalog.unc.edu/graduate/schools-departments/classics/": 168,
+    "https://hdl.library.upenn.edu/1017/2905": 1,
+    "https://www.depts.ttu.edu/classic_modern/classics/grad/lacuclassicsgradrequirements.php": 2,
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics": 1,
+    "https://www.ohio.edu/cas/classics": 2,
+    "https://www.vanderbilt.edu/AnS/Classics/grads.html": 1
+  },
+  "verified_lists_ids": {
+    "https://classics.cornell.edu/areas-research": [],
+    "https://classics.unc.edu/": [],
+    "https://classics.stanford.edu/node/616/fields-study": [
+      0
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/classics": [],
+    "https://classics.fsu.edu/": [],
+    "https://classics.uchicago.edu/graduate/program": [],
+    "https://liberalarts.tulane.edu/classical-studies": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "https://classics.cornell.edu/": [],
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics-teaching-licensure": [],
+    "https://www.hamilton.edu/academics/departments/classics": [
+      0,
+      2
+    ],
+    "https://www.gc.cuny.edu/classics/curriculum-and-degree-information/phd-classics": [
+      2
+    ],
+    "https://classics.wustl.edu/graduate": [],
+    "https://www.colorado.edu/classics/graduate": [
+      0,
+      2
+    ],
+    "https://classics.brown.edu/academics/graduate": [],
+    "https://www.holycross.edu/academics/program/classics": [
+      1
+    ],
+    "https://classicalstudies.duke.edu/": [],
+    "https://mcl.as.uky.edu/classics": [
+      2
+    ],
+    "https://www.classics.uga.edu/": [],
+    "https://classics.indiana.edu/index.html": [],
+    "https://classics.umd.edu/academic-programs/graduate": [],
+    "https://classics.ku.edu/": [],
+    "https://classics.ufl.edu/programs/graduate/phd/": [],
+    "https://www.bc.edu/bc-web/schools/morrissey/departments/classics.html": [],
+    "https://classics.richmond.edu/": [],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/classics": [],
+    "https://www.haverford.edu/classics/courses": [
+      0
+    ],
+    "https://catalog.unc.edu/graduate/schools-departments/classics/": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      51,
+      52,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164
+    ],
+    "https://hdl.library.upenn.edu/1017/2905": [],
+    "https://www.depts.ttu.edu/classic_modern/classics/grad/lacuclassicsgradrequirements.php": [
+      1
+    ],
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics": [],
+    "https://www.ohio.edu/cas/classics": [
+      1
+    ],
+    "https://www.vanderbilt.edu/AnS/Classics/grads.html": []
+  },
+  "num_urls": 40,
+  "num_lists": 266,
+  "url_to_lists": {
+    "https://classics.cornell.edu/areas-research": [
+      [
+        "Classical Literature and Historical Linguistics",
+        "Ancient Religions",
+        "Ancient Philosophy",
+        "Text and Objects"
+      ]
+    ],
+    "https://classics.unc.edu/": [
+      [
+        "Working Group in Diversity, Equity, Inclusion, and Black Lives Matter",
+        "Statement on Inclusivity and Non-Discrimination",
+        "Statement on Anti-Black Racism"
+      ]
+    ],
+    "https://classics.stanford.edu/node/616/fields-study": [
+      [
+        "Academics",
+        "Ancient History",
+        "Language and Literature",
+        "Classical Archaeology",
+        "Have Questions Along the Way?",
+        "Back To Top Block",
+        "Quick Links",
+        "People",
+        "Connect with Us"
+      ]
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/classics": [
+      [
+        "Chair\n\n\n                    Barbara Graziosi",
+        "Barbara Graziosi",
+        "Director of Graduate Studies\n\n\n                    Dan-El Padilla Peralta",
+        "Dan-El Padilla Peralta",
+        "Director of Undergraduate Studies\n\n\n                    Andrew M. Feldherr",
+        "Andrew M. Feldherr",
+        "Yelena Baraz",
+        "Joshua H. Billings",
+        "Marc Domingo Gygax",
+        "Andrew M. Feldherr",
+        "Harriet I. Flower",
+        "Michael A. Flower",
+        "Barbara Graziosi",
+        "Johannes Haubold",
+        "Brooke A. Holmes",
+        "Dan-El Padilla Peralta",
+        "Emmanuel C. Bourbouhakis",
+        "Mirjam E. Kotwick",
+        "Daniela E. Mairhofer",
+        "Caroline Cheung",
+        "Peter Kelly",
+        "Jesse Lundquist",
+        "Katerina Stergiopoulou",
+        "Associated Faculty\n\n\n                    Melissa Lane, Politics",
+        "Melissa Lane, Politics",
+        "University Lecturer\n\n\n                    Ilaria Marchesi",
+        "Ilaria Marchesi",
+        "Senior Lecturer\n\n\n                    Melissa Haynes",
+        "Melissa Haynes",
+        "Lecturer\n\n\n                    Janet E. Kay",
+        "Janet E. Kay"
+      ],
+      [
+        "Yelena Baraz",
+        "Joshua H. Billings",
+        "Marc Domingo Gygax",
+        "Andrew M. Feldherr",
+        "Harriet I. Flower",
+        "Michael A. Flower",
+        "Barbara Graziosi",
+        "Johannes Haubold",
+        "Brooke A. Holmes",
+        "Dan-El Padilla Peralta"
+      ],
+      [
+        "Emmanuel C. Bourbouhakis",
+        "Mirjam E. Kotwick",
+        "Daniela E. Mairhofer"
+      ],
+      [
+        "Caroline Cheung",
+        "Peter Kelly",
+        "Jesse Lundquist",
+        "Katerina Stergiopoulou"
+      ],
+      [
+        "Program length\n5 years",
+        "Fee\n$75",
+        "GRE\nGeneral Test - optional/not required",
+        "For a full list of faculty members and fellows please visit the department or program website."
+      ]
+    ],
+    "https://classics.fsu.edu/": [
+      [
+        "RESEARCH AT FSU",
+        "UNDERGRADUATE COURSES",
+        "GRADUATE COURSES",
+        "GRADUATE APPLICATION FAQ"
+      ]
+    ],
+    "https://classics.uchicago.edu/graduate/program": [
+      [
+        "Secondary Menu",
+        "Main navigation",
+        "Secondary Menu",
+        "PhD Program",
+        "Dual-degree and Joint PhD Programs"
+      ]
+    ],
+    "https://liberalarts.tulane.edu/classical-studies": [
+      [
+        "210 C Joseph Merrick Jones Hall",
+        "New Orleans, LA 70118",
+        "504-865-5719",
+        "classics@tulane.edu"
+      ],
+      [
+        "Department of Classical Studies",
+        "Undergraduate Program",
+        "Graduate Program",
+        "New Faculty Publications"
+      ],
+      [
+        "Archaeologist offers a new look at ancient Rome",
+        "Connecting the past, present, self and community through the humanities and service learning",
+        "Three professors receive prestigious ACLS fellowships",
+        "Archaeological sciences course gears up for big year"
+      ],
+      [
+        "March 31, 2025\nPublic lecture: Humans: A Monstrous History \n5:00 - 6:00pm",
+        "April 02, 2025\nClassics-Shaw Lecture \n5:00 - 6:00pm",
+        "April 23, 2025\nMary Beard-Classics-Georges Lecture \n6:30 - 7:30pm",
+        "April 26, 2025\nClassics Colloquium \n10:30am - 12:30pm"
+      ],
+      [
+        "March 31, 2025",
+        "Public lecture: Humans: A Monstrous History",
+        "5:00 - 6:00pm"
+      ],
+      [
+        "April 02, 2025",
+        "Classics-Shaw Lecture",
+        "5:00 - 6:00pm"
+      ],
+      [
+        "April 23, 2025",
+        "Mary Beard-Classics-Georges Lecture",
+        "6:30 - 7:30pm"
+      ],
+      [
+        "April 26, 2025",
+        "Classics Colloquium",
+        "10:30am - 12:30pm"
+      ]
+    ],
+    "https://classics.cornell.edu/": [
+      [
+        "Pucci Prize and Ahl Prize",
+        "Slaves of God: Augustine and Other Romans on Religion and Politics",
+        "Classics Speaker Series: Craig Williams",
+        "News from Classics",
+        "Historian Barry Strauss wins 2025 Bradley Prize",
+        "War, love and loyalty: The \u2018Iliad\u2019 in Ithaca on March 12-13",
+        "Experts call for 'accountability' before restoring Syria heritage sites",
+        "Frederick Ahl, innovative classics scholar, dies at 83",
+        "GUEST ROOM | Classics is the Best Subject to Address Our Current Age - The Cornell Daily Sun",
+        "New Klarman Fellows to join the College of Arts and Sciences",
+        "Manning honored for contributions to archaeology",
+        "Conference considers medicine from historical standpoint"
+      ],
+      [
+        "Apr\n            \n\n              16",
+        "Wednesday",
+        "04:30 PM"
+      ],
+      [
+        "Apr\n            \n\n              25",
+        "Friday",
+        "04:30 PM"
+      ]
+    ],
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics-teaching-licensure": [
+      [
+        "Program Requirements and Policies",
+        "Course Requirements",
+        "Exams",
+        "Program Objectives",
+        "Student Resources"
+      ]
+    ],
+    "https://www.hamilton.edu/academics/departments/classics": [
+      [
+        "Analyze sources, whether textual or material, in their social and historical contexts",
+        "Demonstrate comprehension of texts written in the target language (Ancient Greek or Latin)",
+        "Compose original scholarly arguments using appropriate research methods and types of evidence",
+        "Critically engage with the discipline's history",
+        "Productively juxtapose the classical past with modernity"
+      ],
+      [
+        "Latin Teacher, Wellesley Middle School",
+        "Assistant Professor of Classics, University of Southern Maine",
+        "Attorney",
+        "Principal Dancer, Kansas City Ballet",
+        "President, Breckinridge Capital Advisors",
+        "Manager, Books & Manuscript Dept., Sotheby\u2019s",
+        "Marketing Director, Hewlett Packard Co.",
+        "Veterinarian"
+      ],
+      [
+        "Utility",
+        "You are here:",
+        "Classics",
+        "A Sampling of Courses",
+        "Meet Our Faculty",
+        "Faces & Spaces",
+        "Careers After Hamilton",
+        "Explore Hamilton Stories",
+        "Social",
+        "Social",
+        "Footer",
+        "Site Menu",
+        "Secondary",
+        "Actions",
+        "Support",
+        "Audience",
+        "Site Search"
+      ],
+      [
+        "Students Will Learn To:",
+        "Pompeii",
+        "Explore these select courses:",
+        "Elementary Latin I",
+        "History of Ancient Western Philosophy",
+        "Martyrdom in Antiquity",
+        "Jesse Weiner\n\n\n\ufeff",
+        "Anna Accettola\n\n\n\ufeff",
+        "Anne Feltovich\n\n\n\ufeff",
+        "Amy Koenig\n\n\n\ufeff",
+        "Ian Mills\n\n\n\ufeff",
+        "Martin Shedd\n\n\n\ufeff",
+        "Serena Witzke\n\n\n\ufeff"
+      ]
+    ],
+    "https://www.gc.cuny.edu/classics/curriculum-and-degree-information/phd-classics": [
+      [
+        "Course Requirements",
+        "Modern Language Requirements",
+        "Examination Requirements",
+        "Dissertation Requirements"
+      ],
+      [
+        "The First Examination (written exams)",
+        "The Second Examination (written and oral exams)",
+        "The Dissertation (including oral dissertation defense)"
+      ],
+      [
+        "Secret Knowledge in the Ancient World: Acquisition and Concealment (2022)",
+        "Honor and Shame in Classical Antiquity (2020)",
+        "Xenoi: Hospitality and Xenophobia in the Graeco-Roman World (2019)",
+        "Sing, Muse, Literary, Theorical, and Historical Approaches to Music in Classical Antiquity (2018)",
+        "Through Their Words: Poetics, Aesthetics and Literary Theory in the Graeco-Roman World (2016)",
+        "Looking at the Stage: New Perspectives on Greek and Roman Performance (2015)",
+        "Dynamics of Friendship in the Graeco-Roman World (2014)",
+        "Beyond Words: Translation and the Classical World (2013)",
+        "Classica Africana: The African and African American Presence in the Classical Tradition (2012)",
+        "Spes et Ratio Studiorum: Education in the Classical World (2011)",
+        "Living on the Edge (2010)",
+        "Call It Peace (2009)",
+        "Profanum Vulgus (2008)"
+      ],
+      [
+        "Greek Rhetoric and Stylistics\u00a0(3 credits)",
+        "Latin Rhetoric and Stylistics\u00a0(3 credits)",
+        "Proseminar in Classics\u00a0(3 credits)"
+      ],
+      [
+        "Greek poetry, 8-6th\u00a0cen. BCE",
+        "Greek poetry, 5th\u00a0cen. BCE",
+        "Greek prose, any period",
+        "Latin poetry, Republican",
+        "Latin poetry, Augustan",
+        "Latin prose, any period",
+        "Greek or Roman history or archaeology"
+      ],
+      [
+        "Greek history, 2 courses",
+        "Roman history, 2 courses",
+        "Greek poetry, any period",
+        "Latin poetry, any period",
+        "Greek prose, any period, preferably a historical author",
+        "Latin prose, any period, preferably a historical author"
+      ],
+      [
+        "Path to Degree",
+        "En-Route Degree Options for Ph.D. Students",
+        "Learning Goals",
+        "Course Requirements",
+        "Modern Language Requirements",
+        "Examination Requirements",
+        "Dissertation Requirements",
+        "We believe that knowledge is a public good"
+      ],
+      [
+        "Greek literature\nGreek history\nGreek art and archaeology\nGreek philosophy",
+        "Latin literature\nRoman history\nRoman art and archaeology",
+        "Second Exam FAQs"
+      ]
+    ],
+    "https://classics.wustl.edu/graduate": [
+      [
+        "100% full tuition scholarship",
+        "$10,000 annual stipend",
+        "90% health fee subsidy (includes health, dental and wellness fees)"
+      ]
+    ],
+    "https://www.colorado.edu/classics/graduate": [
+      [
+        "Greek or Latin",
+        "Classical Art\u00a0& Archaeology",
+        "Classical Antiquity",
+        "Teaching of Latin"
+      ],
+      [
+        "Graduate Degrees in Classics",
+        "Graduate Advising",
+        "Graduate Exams",
+        "Funding",
+        "Prospective Students",
+        "Grievance Procedures",
+        "Statement on Graduate Social Justice, Equity, Diversity and Inclusion",
+        "PhD Alumni and Dissertations (1994-2024)"
+      ],
+      [
+        "Search",
+        "M.A. Tracks",
+        "Ph.D. Track",
+        "Department of Classics"
+      ]
+    ],
+    "https://classics.brown.edu/academics/graduate": [
+      [
+        "Secondary Navigation Navigation",
+        "Site Navigation",
+        "Breadcrumb",
+        "Sub Navigation",
+        "Ph.D. in Classics",
+        "Master of Arts in Classics",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation",
+        "Mobile Secondary Navigation Navigation"
+      ]
+    ],
+    "https://www.holycross.edu/academics/program/classics": [
+      [
+        "At least 3 CLAS Courses, with one being CLAS 100: Opening Classics",
+        "At least 3 courses in any one language offered by the Classics Department",
+        "At least 2 courses in any other one language offered by the Classics Department",
+        "At least one of the 11 courses above must be CLAS 201, GREK 301, or LATN 301"
+      ],
+      [
+        "You are here:",
+        "Areas of Study",
+        "Meet Your Department Chair",
+        "Requirements",
+        "Opportunities",
+        "Related News",
+        "Social",
+        "Footer",
+        "Social",
+        "Site Menu",
+        "Secondary Menu",
+        "Main Menu",
+        "Secondary Menu",
+        "Info For Menu"
+      ]
+    ],
+    "https://classicalstudies.duke.edu/": [
+      [
+        "Secondary Menu",
+        "Main navigation",
+        "Events",
+        "Why Study the Classics at Duke?",
+        "Undergraduate Program",
+        "Graduate Program",
+        "Recent Faculty Books",
+        "Department of Classical Studies",
+        "Undergraduate",
+        "Graduate",
+        "Stay Connected"
+      ]
+    ],
+    "https://mcl.as.uky.edu/classics": [
+      [
+        "Spring 2025 undergraduate courses",
+        "Spring 2025 graduate courses",
+        "Spring 2025 online courses"
+      ],
+      [
+        "MCLLC Chair -\u00a0Jeffrey Peters\u00a0(jnp@uky.edu)",
+        "MCLLC Associate Chair -\u00a0Harald H\u00f6busch\u00a0(hhoebu@uky.edu)",
+        "MCLLC Director of Undergraduate Studies - Julie Human\u00a0(julie.human@uky.edu)",
+        "MCLLC Director of Graduate Studies - Milena Minkova (mmink2@uky.edu)"
+      ],
+      [
+        "Degree Programs",
+        "Classics Directory",
+        "Student Organizations",
+        "Education Abroad",
+        "Placement Procedure",
+        "Course Offerings",
+        "Mentoring",
+        "Multimedia/Links/Resources",
+        "Scholarships, Fellowships and Awards",
+        "Teaching Assistants",
+        "Ancient Greek",
+        "Latin",
+        "Classical Civilization",
+        "Conventiculum Latinum",
+        "Feature Events",
+        "Online Courses"
+      ]
+    ],
+    "https://www.classics.uga.edu/": [
+      [
+        "Mini menu",
+        "Main Menu",
+        "Slideshow",
+        "UGA Classics",
+        "UGA CLASSICS",
+        "UGA CLASSICS",
+        "Featured Content",
+        "Latest News",
+        "Upcoming Events",
+        "Undergraduate Programs"
+      ],
+      [
+        "Upcoming Event\nFerdia Lennon, Reading and Conversation",
+        "March 27 | 5:30\n - 7:30pm",
+        "Peabody Hall 115"
+      ],
+      [
+        "Ph.D. 1974 Yale University, Linguistics",
+        "M.A. 1972 Yale University, Linguistics",
+        "M.Phil. 1971 Yale University, Linguistics",
+        "B.A. 1968 Case Western Reserve University",
+        "Comparative Grammar of Greek and\u2026 read more about this person"
+      ]
+    ],
+    "https://classics.indiana.edu/index.html": [
+      [
+        "Contact",
+        "Classical Civilization B.A.",
+        "Latin and Greek B.A.",
+        "Minors",
+        "Honors ProgramHonors Thesis Guidelines",
+        "Honors Thesis Guidelines",
+        "Tutoring",
+        "Classical Studies M.A.",
+        "Classical Studies M.A.T.",
+        "Classical Studies Ph.D.\nCandidacy\nDissertation",
+        "Candidacy",
+        "Dissertation",
+        "Ph.D. Minor",
+        "Courses"
+      ],
+      [
+        "Classical Civilization B.A.",
+        "Latin and Greek B.A.",
+        "Minors",
+        "Honors ProgramHonors Thesis Guidelines",
+        "Honors Thesis Guidelines",
+        "Tutoring",
+        "Classical Studies M.A.",
+        "Classical Studies M.A.T.",
+        "Classical Studies Ph.D.\nCandidacy\nDissertation",
+        "Candidacy",
+        "Dissertation",
+        "Ph.D. Minor",
+        "Courses"
+      ],
+      [
+        "Classical Civilization B.A.",
+        "Latin and Greek B.A.",
+        "Minors",
+        "Honors ProgramHonors Thesis Guidelines",
+        "Honors Thesis Guidelines",
+        "Tutoring"
+      ],
+      [
+        "Classical Studies M.A.",
+        "Classical Studies M.A.T.",
+        "Classical Studies Ph.D.\nCandidacy\nDissertation",
+        "Candidacy",
+        "Dissertation",
+        "Ph.D. Minor"
+      ],
+      [
+        "Diverse & Engaging Courses",
+        "Get First-Hand Experience",
+        "Gain Transferable Skills",
+        "Ready to Take the Next Step?"
+      ]
+    ],
+    "https://classics.umd.edu/academic-programs/graduate": [
+      [
+        "Primary Header Navigation",
+        "Secondary Header Navigation",
+        "Primary Footer Navigation",
+        "Secondary Footer Navigation"
+      ]
+    ],
+    "https://classics.ku.edu/": [
+      [
+        "Major in Classics",
+        "Minor in Classical Antiquity or Classical Languages",
+        "Combined BA/MA in Classics"
+      ]
+    ],
+    "https://classics.ufl.edu/programs/graduate/phd/": [
+      [
+        "Ph.D. in Classical Studies\n(Traditional, Full-Time, On-Campus)",
+        "Ph.D. in Latin and Roman Studies\n(Distance Option 1)",
+        "Ph.D. in Classical Civilization\u00a0\n(Distance Option 2)"
+      ],
+      [
+        "Comprehensive Reading Examination in Classical Greek",
+        "Comprehensive Reading Examination in Classical Latin",
+        "Comprehensive Examination in the History of Classical Greek Literature in its Historical Context",
+        "Comprehensive Examination in the History of Classical Latin Literature in its Historical Context",
+        "Special Author or Topic",
+        "Modern Language Proficiency (German)",
+        "Modern Language Proficiency (French, or with approval, Italian or Modern Greek)"
+      ],
+      [
+        "Five seminars in Classics (15 hours)",
+        "Latin prose composition (3 hours)",
+        "Elective course work at the 5000-6000 level (9 hours)",
+        "Proficiency in German; proficiency in Italian or French",
+        "Supervised teaching or pedagogy (3 hours)"
+      ],
+      [
+        "Written examinations (as specified below)",
+        "Comprehensive oral examination and prospectus defense",
+        "Dissertation",
+        "Public defense of the dissertation"
+      ],
+      [
+        "Five seminars in Classics (15 hours), three of which must be in Latin",
+        "Elective course work at the 5000-6000 level (12 hours)",
+        "Proficiency in German; proficiency in Italian or French",
+        "Supervised teaching or pedagogy (3 hours)"
+      ],
+      [
+        "Written examinations (as specified below)",
+        "Comprehensive oral examination and prospectus defense",
+        "Dissertation",
+        "Public defense of the dissertation"
+      ],
+      [
+        "Ph.D. Degrees",
+        "People",
+        "Academics",
+        "Stay Connected"
+      ],
+      [
+        "1. Ph.D. in Classical Studies",
+        "Assistantships and Fellowships",
+        "2. Ph.D. in Latin and Roman Studies (Distance Learning Option 1)",
+        "3. Ph.D. in Classical Civilization (Distance Learning Option 2)",
+        "Graduate Program",
+        "GRADUATE COORDINATOR",
+        "INFORMATION FOR PROSPECTIVE STUDENTS"
+      ],
+      [
+        "REQUIREMENTS:",
+        "Requirements",
+        "Requirements"
+      ],
+      [
+        "The Department of Classics offers three programs leading to the PhD degree:",
+        "Sixty hours total beyond the MA. The sixty hours include:",
+        "Details can be found in the PhD in Classical Studies Handbook.",
+        "Sixty hours total beyond the MA. Thirty of the sixty hours must cover:",
+        "Sixty hours total beyond the MA. Thirty of the sixty hours must cover"
+      ]
+    ],
+    "https://www.bc.edu/bc-web/schools/morrissey/departments/classics.html": [
+      [
+        "Welcome to the Classical Studies Department",
+        "What is Classical Studies?",
+        "Facts & Figures",
+        "Our Programs",
+        "BC's Classics Community",
+        "Where do our graduates work?",
+        "Our Faculty",
+        "Faculty Publications"
+      ],
+      [
+        "Undergraduate",
+        "Graduate",
+        "Join the Club"
+      ],
+      [
+        "Resources",
+        "University of Texas at Austin",
+        "Huntsville Hospital",
+        "Boston College High School",
+        "Taipei American School, Taiwan",
+        "Weston High School",
+        "Bishop Fenwick High School",
+        "British Museum",
+        "Harvard Pilgrim Health Care",
+        "Warby Parker",
+        "Cumulus Media",
+        "Bilingual English Development & Assessment Program, Spain",
+        "Upstate Interactive",
+        "Follow Us"
+      ],
+      [
+        "46\n\u00a0Different courses taught",
+        "4\nCore areas fulfilled by Classics courses",
+        "3rd\nFastest growing major in MCAS",
+        "40\nStudents enrolled as majors"
+      ],
+      [
+        "Professor of Classics",
+        "Chair, OB/GYN Dept.",
+        "Chair, Dept. of Classical Languages",
+        "Latin and Greek Teacher"
+      ],
+      [
+        "Latin Teacher",
+        "Religion Teacher",
+        "Product Manager, Digital & Publishing Dept.",
+        "Government Affairs Specialist"
+      ],
+      [
+        "Supervisor",
+        "Regional Sales Manager",
+        "English Instructor",
+        "User Experience Specialist"
+      ],
+      [
+        "Classical Studies\nStokes Hall S260",
+        "617-552-3661",
+        "Facebook\nInstagram"
+      ]
+    ],
+    "https://classics.richmond.edu/": [
+      [
+        "4th Floor, Humanities Building",
+        "Hours:\u00a0During academic sessions: Mon-Fri:\u00a010 a.m.\u201312 p.m. and 1:30-4:30 p.m.or by appointment.",
+        "Closed during summer and winter breaks.",
+        "Learn More\n\n\nGallery Collection"
+      ],
+      [
+        "Apr\n03\n\n\n\nDisability and Infanticide in Ancient Greece\n\n4:30 PM - 6:00 PM",
+        "Apr\n06\n\n\n\n14th Stuart L. Wheeler Gallery of the Ancient World Lecture\n\n3:00 PM - 5:30 PM",
+        "Apr\n18\n\n\n\nA&S Honors Convocation\n\n11:00 AM - 5:00 PM",
+        "Apr\n18\n\n\n\nA&S Student Symposium\n\n1:00 PM - 5:00 PM"
+      ],
+      [
+        "Classics Research Guide",
+        "Department of Art & Art History",
+        "Department of History",
+        "Linguistics Interdisciplinary Program",
+        "Women, Gender, & Sexuality Studies\u00a0Interdisciplinary Program",
+        "University Museums",
+        "Office of Sustainability",
+        "Disabilty Services"
+      ],
+      [
+        "Fri:\u00a010 a.m.",
+        "12 p.m. and 1:30",
+        "4:30 p.m.or by appointment."
+      ]
+    ],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/classics": [
+      [
+        "General Bulletins",
+        "Graduate Departments",
+        "Graduate Department of Classics"
+      ],
+      [
+        "A Bachelor of Arts (BA) degree;",
+        "A 3.0 undergraduate grade point average (GPA) in all upper-division work;",
+        "Sufficient undergraduate work in Classics to warrant study on the graduate level."
+      ],
+      [
+        "A Bachelor of Arts (BA) or Master of Arts (MA) degree in Classics or related field;",
+        "A 3.6 GPA overall and 3.8 GPA in upper division coursework;",
+        "Well-developed writing abilities."
+      ],
+      [
+        "Main navigation Pulldown",
+        "Main navigation Pulldown",
+        "2024-2025 GRADUATE BULLETIN",
+        "Graduate Department of\u00a0Classics",
+        "Admission Requirements",
+        "Master of Arts (MA) Degree Requirements",
+        "General Requirements of all MA programs",
+        "Master of Arts (MA) with a Major in Classical Archaeology",
+        "Master of Arts (MA) with a Major in Classics (Greek and Latin)",
+        "Master of Arts (MA) in Latin",
+        "Master of Arts (MA) in Greek",
+        "Master of Arts (MA) with a Major in Classical Civilizations",
+        "Master of Arts (MA) with a Major in Ancient History",
+        "PhD with Majors in Classics or Classical Archaeology",
+        "Definition of Prefixes",
+        "Graduate Courses",
+        "Looking for something else?"
+      ],
+      [
+        "College of Arts and Sciences",
+        "Requirements (32 Semester Hours Total)",
+        "Comprehensive Examinations for Classical Archaeology",
+        "Requirements (T33 Semester Hours Total)",
+        "Requirements (T33 Semester Hours Total)",
+        "Requirements (33 Semester Hours Total)",
+        "Requirements (33 Semester Hours Total)",
+        "Requirements (33 Semester Hours Total)",
+        "Graduate Bulletin",
+        "Undergraduate Bulletin",
+        "Mailing Address",
+        "Hours"
+      ],
+      [
+        "Graduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "Undergraduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "Required Courses",
+        "CLA 5936 Proseminar",
+        "CLA 5789r Fieldwork",
+        "Seminars (usually CLA 5799)",
+        "Archaeology courses",
+        "Electives in classics",
+        "CLA 8961r Comprehensive examination",
+        "CLA 5919 MA paper"
+      ],
+      [
+        "Required Courses",
+        "CLA 5936 Proseminar",
+        "One history course",
+        "One archaeology course",
+        "Electives in classics",
+        "LNW/GRW 8966r Translation examination",
+        "CLA 5919 MA paper"
+      ],
+      [
+        "Required Courses",
+        "CLA 5936 Proseminar",
+        "Six courses at the 5000 (or 6000) level in Latin",
+        "One history course",
+        "One archaeology course",
+        "Electives in classics",
+        "LNW 8966r Translation examination",
+        "CLA 5919 MA paper"
+      ],
+      [
+        "Required Courses",
+        "CLA 5936 Proseminar",
+        "Five courses at the 5000 (or 6000) level in Greek",
+        "One history course",
+        "One archaeology course",
+        "Electives in classics",
+        "GRW 8966r Translation examination",
+        "CLA 5919 MA paper"
+      ],
+      [
+        "Required Courses",
+        "CLA 5936 Proseminar",
+        "One archaeology course",
+        "Electives in classics",
+        "CLA 5919 MA paper",
+        "CLA 8961 or GRW 8966 or LNW 8966 Comprehensive Examination"
+      ],
+      [
+        "Required Courses",
+        "Proseminar (CLA 5936)",
+        "One Archaeology course",
+        "Translation Exams in Greek or Latin",
+        "Comprehensive Exam in Ancient History",
+        "MA paper (CLA 5919)"
+      ]
+    ],
+    "https://www.haverford.edu/classics/courses": [
+      [
+        "Primary Menu",
+        "You are here",
+        "Courses",
+        "Search form",
+        "Come Say Hello",
+        "Get to Know Us",
+        "Join Our Community",
+        "Search",
+        "Welcome, friend.",
+        "Main menu"
+      ]
+    ],
+    "https://catalog.unc.edu/graduate/schools-departments/classics/": [
+      [
+        "Home/",
+        "Graduate/",
+        "Schools\u00a0and\u00a0Departments/",
+        "Classics"
+      ],
+      [
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Adjunct Professors",
+        "Professors Emeriti",
+        "Classical Archaeology - CLAR",
+        "Classics in English/Classical Civilization - CLAS",
+        "Greek - GREK",
+        "Latin - LATN",
+        "Print Options"
+      ],
+      [
+        "Advanced Undergraduate and Graduate-level Courses",
+        "Graduate-level Courses",
+        "Courses Not Requiring a Reading Knowledge of Greek and Latin",
+        "Advanced Undergraduate and Graduate-level Courses",
+        "Graduate-level Courses",
+        "Advanced Undergraduate and Graduate-level Courses",
+        "Graduate-level Courses",
+        "Advanced Undergraduate and Graduate-level Courses",
+        "Graduate-level Courses"
+      ],
+      [
+        "CLAR 411.\u00a0\u00a0Method and Theory in Classical Archaeology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 411.",
+        "Method and Theory in Classical Archaeology.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 461.\u00a0\u00a0Greek Sculpture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0461."
+      ],
+      [
+        "CLAR 461.",
+        "Greek Sculpture.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 464.\u00a0\u00a0Greek Architecture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0464."
+      ],
+      [
+        "CLAR 464.",
+        "Greek Architecture.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 465.\u00a0\u00a0Roman Architecture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: VP, NA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0465."
+      ],
+      [
+        "CLAR 465.",
+        "Roman Architecture.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 474.\u00a0\u00a0Roman Sculpture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST, RESEARCH.",
+        "Making Connections Gen Ed: VP, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0474."
+      ],
+      [
+        "CLAR 474.",
+        "Roman Sculpture.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 475.\u00a0\u00a0Provinces and Frontiers of the Roman Empire.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-KNOWING.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 475.",
+        "Provinces and Frontiers of the Roman Empire.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 476.\u00a0\u00a0Roman Painting.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: VP, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0476."
+      ],
+      [
+        "CLAR 476.",
+        "Roman Painting.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 480.\u00a0\u00a0Egypt after the Pharaohs.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 480.",
+        "Egypt after the Pharaohs.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 482.\u00a0\u00a0Art and Archaeology of Achaemenid Persia.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-POWER.",
+        "Making Connections Gen Ed: VP, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0482."
+      ],
+      [
+        "CLAR 482.",
+        "Art and Archaeology of Achaemenid Persia.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 491.\u00a0\u00a0The Archaeology of Early Greece (1200-500 BCE).\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 491.",
+        "The Archaeology of Early Greece (1200-500 BCE).",
+        "3 Credits."
+      ],
+      [
+        "CLAR 492.\u00a0\u00a0Archaeology of Greek Sanctuaries.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Requisites: Prerequisite,  Any CLAR/CLAS course at the 200-level or higher.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 492.",
+        "Archaeology of Greek Sanctuaries.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 512.\u00a0\u00a0Ancient Synagogues.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST, RESEARCH.",
+        "Making Connections Gen Ed: VP, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0512, JWST\u00a0512."
+      ],
+      [
+        "CLAR 512.",
+        "Ancient Synagogues.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 650.\u00a0\u00a0Field School in Classical Archaeology.\u00a0\u00a06 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: EE- Field Work.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 650.",
+        "Field School in Classical Archaeology.",
+        "6 Credits."
+      ],
+      [
+        "CLAR 781.\u00a0\u00a0The Archaeology of the Bronze Age Aegean.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 781.",
+        "The Archaeology of the Bronze Age Aegean.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 782.\u00a0\u00a0The Archaeology of Early Iron Age Greece and the Aegean.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 782.",
+        "The Archaeology of Early Iron Age Greece and the Aegean.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 790.\u00a0\u00a0Field Practicum in Archaeology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 790.",
+        "Field Practicum in Archaeology.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 794.\u00a0\u00a0Greek Topography.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0794."
+      ],
+      [
+        "CLAR 794.",
+        "Greek Topography.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 798.\u00a0\u00a0Roman Topography.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ARTH\u00a0798."
+      ],
+      [
+        "CLAR 798.",
+        "Roman Topography.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 812.\u00a0\u00a0Diaspora Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0812."
+      ],
+      [
+        "CLAR 812.",
+        "Diaspora Judaism.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 841.\u00a0\u00a0Special Reading in Archaeology.\u00a0\u00a03 Credits.",
+        "With permission of the department, this course may be repeated for credit.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 841.",
+        "Special Reading in Archaeology.",
+        "3 Credits."
+      ],
+      [
+        "CLAR 910.\u00a0\u00a0Seminar in Archaeology.\u00a0\u00a03 Credits.",
+        "Topics vary from year to year.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAR 910.",
+        "Seminar in Archaeology.",
+        "3 Credits."
+      ],
+      [
+        "CLAS 409.\u00a0\u00a0Greek and Roman Historians.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: LA, NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAS 409.",
+        "Greek and Roman Historians.",
+        "3 Credits."
+      ],
+      [
+        "CLAS 415.\u00a0\u00a0Roman Law.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAS 415.",
+        "Roman Law.",
+        "3 Credits."
+      ],
+      [
+        "CLAS 511.\u00a0\u00a0Grammar as a Guide to Effective Writing.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  GREK\u00a0204 or LATN\u00a0204.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAS 511.",
+        "Grammar as a Guide to Effective Writing.",
+        "1 Credits."
+      ],
+      [
+        "CLAS 691H.",
+        "Honors Course.",
+        "3 Credits."
+      ],
+      [
+        "CLAS 692H.",
+        "Honors Course.",
+        "3 Credits."
+      ],
+      [
+        "CLAS 710.\u00a0\u00a0Proseminar in Pedagogy.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAS 710.",
+        "Proseminar in Pedagogy.",
+        "1 Credits."
+      ],
+      [
+        "CLAS 711.\u00a0\u00a0Proseminar in Professional Development.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAS 711.",
+        "Proseminar in Professional Development.",
+        "1 Credits."
+      ],
+      [
+        "CLAS 747.\u00a0\u00a0Approaches to Women in Antiquity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAS 747.",
+        "Approaches to Women in Antiquity.",
+        "3 Credits."
+      ],
+      [
+        "CLAS 901.\u00a0\u00a0Seminars in Classical Studies.\u00a0\u00a03 Credits.",
+        "Graduate research seminar. Topics vary from year to year. Graduate standing.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "CLAS 901.",
+        "Seminars in Classical Studies.",
+        "3 Credits."
+      ],
+      [
+        "GREK 409.\u00a0\u00a0Greek New Testament.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0409.",
+        "Global Language: Level 6."
+      ],
+      [
+        "GREK 409.",
+        "Greek New Testament.",
+        "3 Credits."
+      ],
+      [
+        "GREK 722.\u00a0\u00a0Greek Epigraphy.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 750.\u00a0\u00a0Homer.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 753.\u00a0\u00a0Greek Lyric Poetry.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 755.\u00a0\u00a0Greek Tragedy.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 757.\u00a0\u00a0Sophocles.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 759.\u00a0\u00a0Greek Comedy.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 765.\u00a0\u00a0Thucydides.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 769.\u00a0\u00a0Demosthenes.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 771.\u00a0\u00a0Hellenistic Poetry.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "GREK 775.\u00a0\u00a0Later Greek Prose.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade."
+      ],
+      [
+        "GREK 710.\u00a0\u00a0Greek Prose Composition.\u00a0\u00a03 Credits.",
+        "Review of Attic grammar and idiom, exercises in composition, introduction to stylistics.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 710.",
+        "Greek Prose Composition.",
+        "3 Credits."
+      ],
+      [
+        "GREK 711.\u00a0\u00a0Readings in Early Greek Poetry.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 711.",
+        "Readings in Early Greek Poetry.",
+        "3 Credits."
+      ],
+      [
+        "GREK 712.\u00a0\u00a0Readings in Greek Literature of the Fifth Century.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 712.",
+        "Readings in Greek Literature of the Fifth Century.",
+        "3 Credits."
+      ],
+      [
+        "GREK 713.\u00a0\u00a0Readings in Greek Literature of the Fourth Century.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 713.",
+        "Readings in Greek Literature of the Fourth Century.",
+        "3 Credits."
+      ],
+      [
+        "GREK 722.\u00a0\u00a0Greek Epigraphy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 722.",
+        "Greek Epigraphy.",
+        "3 Credits."
+      ],
+      [
+        "GREK 744.\u00a0\u00a0An Introduction To Greek Law.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 744.",
+        "An Introduction To Greek Law.",
+        "3 Credits."
+      ],
+      [
+        "GREK 753.\u00a0\u00a0Greek Lyric Poetry.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 753.",
+        "Greek Lyric Poetry.",
+        "3 Credits."
+      ],
+      [
+        "GREK 755.\u00a0\u00a0Greek Tragedy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 755.",
+        "Greek Tragedy.",
+        "3 Credits."
+      ],
+      [
+        "GREK 757.\u00a0\u00a0Sophocles.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 757.",
+        "Sophocles.",
+        "3 Credits."
+      ],
+      [
+        "GREK 759.\u00a0\u00a0Greek Comedy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 759.",
+        "Greek Comedy.",
+        "3 Credits."
+      ],
+      [
+        "GREK 761.\u00a0\u00a0Greek Philosophical Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 761.",
+        "Greek Philosophical Literature.",
+        "3 Credits."
+      ],
+      [
+        "GREK 763.\u00a0\u00a0Greek Historical Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 763.",
+        "Greek Historical Literature.",
+        "3 Credits."
+      ],
+      [
+        "GREK 765.\u00a0\u00a0Thucydides.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 765.",
+        "Thucydides.",
+        "3 Credits."
+      ],
+      [
+        "GREK 767.\u00a0\u00a0Greek Rhetoric and Oratory.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 767.",
+        "Greek Rhetoric and Oratory.",
+        "3 Credits."
+      ],
+      [
+        "GREK 769.\u00a0\u00a0Demosthenes.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 769.",
+        "Demosthenes.",
+        "3 Credits."
+      ],
+      [
+        "GREK 771.\u00a0\u00a0Hellenistic Poetry.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 771.",
+        "Hellenistic Poetry.",
+        "3 Credits."
+      ],
+      [
+        "GREK 775.\u00a0\u00a0Later Greek Prose.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 775.",
+        "Later Greek Prose.",
+        "3 Credits."
+      ],
+      [
+        "GREK 841.\u00a0\u00a0Special Reading.\u00a0\u00a03 Credits.",
+        "With permission of the department, this course may be repeated for credit.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 841.",
+        "Special Reading.",
+        "3 Credits."
+      ],
+      [
+        "GREK 901.\u00a0\u00a0Greek Seminars.\u00a0\u00a03 Credits.",
+        "Topics vary from year to year.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "GREK 901.",
+        "Greek Seminars.",
+        "3 Credits."
+      ],
+      [
+        "LATN 601.\u00a0\u00a0Accelerated Elementary Latin.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 601.",
+        "Accelerated Elementary Latin.",
+        "3 Credits."
+      ],
+      [
+        "LATN 602.\u00a0\u00a0Accelerated Intermediate Latin.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 602.",
+        "Accelerated Intermediate Latin.",
+        "3 Credits."
+      ],
+      [
+        "LATN 722.\u00a0\u00a0Latin Epigraphy.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 723.\u00a0\u00a0Latin Paleography.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 726.\u00a0\u00a0History of Latin.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 768.\u00a0\u00a0Horace and Catallus.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 772.\u00a0\u00a0Cicero: Literary Career.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 773.\u00a0\u00a0Lucretius.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 775.\u00a0\u00a0Livy.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 776.\u00a0\u00a0Ovid.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade.",
+        "LATN 784.\u00a0\u00a0Tacitus.\u00a0\u00a03 Credits.\u00a0\u00a0Rules & Requirements\u00a0\u00a0Grading Status: Letter grade."
+      ],
+      [
+        "LATN 710.\u00a0\u00a0Introductory Latin Composition.\u00a0\u00a03 Credits.",
+        "Review of Latin grammar and idiom, exercises in composition, introduction to stylistics.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 710.",
+        "Introductory Latin Composition.",
+        "3 Credits."
+      ],
+      [
+        "LATN 711.\u00a0\u00a0Readings in Latin Literature of the Republic.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 711.",
+        "Readings in Latin Literature of the Republic.",
+        "3 Credits."
+      ],
+      [
+        "LATN 712.\u00a0\u00a0Readings in Latin Literature of the Augustan Age.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 712.",
+        "Readings in Latin Literature of the Augustan Age.",
+        "3 Credits."
+      ],
+      [
+        "LATN 713.\u00a0\u00a0Readings in Latin Literature of the Empire.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 713.",
+        "Readings in Latin Literature of the Empire.",
+        "3 Credits."
+      ],
+      [
+        "LATN 714.\u00a0\u00a0Readings in Latin Literature of Later Antiquity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 714.",
+        "Readings in Latin Literature of Later Antiquity.",
+        "3 Credits."
+      ],
+      [
+        "LATN 722.\u00a0\u00a0Latin Epigraphy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 722.",
+        "Latin Epigraphy.",
+        "3 Credits."
+      ],
+      [
+        "LATN 723.\u00a0\u00a0Latin Paleography.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 723.",
+        "Latin Paleography.",
+        "3 Credits."
+      ],
+      [
+        "LATN 724.\u00a0\u00a0Latin Textual Criticism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 724.",
+        "Latin Textual Criticism.",
+        "3 Credits."
+      ],
+      [
+        "LATN 725.\u00a0\u00a0Latin Composition and Prose Styles.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 725.",
+        "Latin Composition and Prose Styles.",
+        "3 Credits."
+      ],
+      [
+        "LATN 726.\u00a0\u00a0History of Latin.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 726.",
+        "History of Latin.",
+        "3 Credits."
+      ],
+      [
+        "LATN 730.\u00a0\u00a0Readings in Medieval Latin Literature.\u00a0\u00a03 Credits.",
+        "Survey of medieval Latin literature from its beginnings through the high Middle Ages.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 730.",
+        "Readings in Medieval Latin Literature.",
+        "3 Credits."
+      ],
+      [
+        "LATN 753.\u00a0\u00a0Fragments of Early Latin Poetry.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 753.",
+        "Fragments of Early Latin Poetry.",
+        "3 Credits."
+      ],
+      [
+        "LATN 762.\u00a0\u00a0Roman Historical Literature.\u00a0\u00a03 Credits.",
+        "Study of Sallust, Caesar, Suetonius, or the minor historians of the empire.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 762.",
+        "Roman Historical Literature.",
+        "3 Credits."
+      ],
+      [
+        "LATN 764.\u00a0\u00a0Roman Dramatic Literature.\u00a0\u00a03 Credits.",
+        "Study of the comedies of Plautus and Terence or the tragedies of Seneca.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 764.",
+        "Roman Dramatic Literature.",
+        "3 Credits."
+      ],
+      [
+        "LATN 765.\u00a0\u00a0Roman Lyric and Elegiac Poetry.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 765.",
+        "Roman Lyric and Elegiac Poetry.",
+        "3 Credits."
+      ],
+      [
+        "LATN 766.\u00a0\u00a0Roman Satire.\u00a0\u00a03 Credits.",
+        "Study of the development of satiric forms with special attention to Horace or Juvenal.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 766.",
+        "Roman Satire.",
+        "3 Credits."
+      ],
+      [
+        "LATN 767.\u00a0\u00a0Ovid and Literary Theory.\u00a0\u00a03 Credits.",
+        "Introduction to literary theory through a study of Ovid and scholarly approaches to his poetry.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 767.",
+        "Ovid and Literary Theory.",
+        "3 Credits."
+      ],
+      [
+        "LATN 768.\u00a0\u00a0Horace and Catallus.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 768.",
+        "Horace and Catallus.",
+        "3 Credits."
+      ],
+      [
+        "LATN 770.\u00a0\u00a0Topics in Medieval Latin Literature.\u00a0\u00a03 Credits.",
+        "Reading in selected medieval Latin prose and verse authors.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 770.",
+        "Topics in Medieval Latin Literature.",
+        "3 Credits."
+      ],
+      [
+        "LATN 771.\u00a0\u00a0Cicero: Political Career.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 771.",
+        "Cicero: Political Career.",
+        "3 Credits."
+      ],
+      [
+        "LATN 772.\u00a0\u00a0Cicero: Literary Career.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 772.",
+        "Cicero: Literary Career.",
+        "3 Credits."
+      ],
+      [
+        "LATN 773.\u00a0\u00a0Lucretius.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 773.",
+        "Lucretius.",
+        "3 Credits."
+      ],
+      [
+        "LATN 774.\u00a0\u00a0Vergil.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 774.",
+        "Vergil.",
+        "3 Credits."
+      ],
+      [
+        "LATN 775.\u00a0\u00a0Livy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 775.",
+        "Livy.",
+        "3 Credits."
+      ],
+      [
+        "LATN 776.\u00a0\u00a0Ovid.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 776.",
+        "Ovid.",
+        "3 Credits."
+      ],
+      [
+        "LATN 780.\u00a0\u00a0The Roman Novel.\u00a0\u00a03 Credits.",
+        "Selections from Petronius and/or Apuleius and related texts.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 780.",
+        "The Roman Novel.",
+        "3 Credits."
+      ],
+      [
+        "LATN 784.\u00a0\u00a0Tacitus.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 784.",
+        "Tacitus.",
+        "3 Credits."
+      ],
+      [
+        "LATN 841.\u00a0\u00a0Special Reading.\u00a0\u00a03 Credits.",
+        "With permission of the department, this course may be repeated for credit.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 841.",
+        "Special Reading.",
+        "3 Credits."
+      ],
+      [
+        "LATN 901.\u00a0\u00a0Latin Seminars.\u00a0\u00a03 Credits.",
+        "Topics vary from year to year.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "LATN 901.",
+        "Latin Seminars.",
+        "3 Credits."
+      ],
+      [
+        "40), Aegean Prehistory",
+        "2), Latin Poetry, Latin and Greek Literature",
+        "11), Ancient Religion, Roman Literature and Culture",
+        "26), Greek Literature"
+      ],
+      [
+        "3), Greek Historiography",
+        "24), Greek Prose, Imperial Greek Literature and Culture",
+        "7), Roman Archaeology, Ptolemaic and Roman Egypt",
+        "41), Hellenistic and Roman Art"
+      ],
+      [
+        "8), Historiography of the Early Imperial Roman Period, Tacitus",
+        "4), Classics and Humanities",
+        "35), Greek Literature",
+        "27), Greek Archaeology, Sculpture, and Topography"
+      ]
+    ],
+    "https://hdl.library.upenn.edu/1017/2905": [
+      [
+        "4th\nThe Complete University Guide 2025",
+        "4th in the UK\nfor overall research quality in REF 2021",
+        "9th in the World\nin the 2025 QS World University Rankings by Subject",
+        "3rd\nin The Times and Sunday Times Good University Guide 2025"
+      ]
+    ],
+    "https://www.depts.ttu.edu/classic_modern/classics/grad/lacuclassicsgradrequirements.php": [
+      [
+        "Classical & Modern Languages & Literatures",
+        "CMLL Classics",
+        "Graduate"
+      ],
+      [
+        "Admission",
+        "The Program",
+        "The Classics Comprehensive Oral Exam",
+        "The Classics Language Proficiency Exam",
+        "Faculty",
+        "Resources",
+        "Graduate Studies Committee",
+        "Texas Tech University"
+      ]
+    ],
+    "https://as.tufts.edu/classicalstudies/academics/graduate-programs/ma-classics": [
+      [
+        "Program Requirements and Policies",
+        "Course Requirements",
+        "Exams",
+        "Program Objectives",
+        "Course Requirements",
+        "Timeline",
+        "Exams",
+        "Coursework and Program Requirements",
+        "Exams",
+        "Student Resources"
+      ]
+    ],
+    "https://www.ohio.edu/cas/classics": [
+      [
+        "What does it mean to be human in different places and times?",
+        "What are the root factors behind the differences that characterize various cultures?",
+        "How do religious beliefs shape cultural choices?",
+        "How do different classes of people interact within a culture and why?"
+      ],
+      [
+        "Why Study Archaeology?",
+        "Why Study the Classics?",
+        "Why Study Classical Greek?",
+        "Why Study Hindi?",
+        "Why Study Latin?",
+        "Why Study Religions?",
+        "Faculty experts roundup",
+        "\u2018It's impossible not to love this job\u2019",
+        "Science Caf\u00e9 to feature Brian Collins on March 5"
+      ]
+    ],
+    "https://www.vanderbilt.edu/AnS/Classics/grads.html": [
+      [
+        "M.A.T. (Master of Arts in Teaching) Program",
+        "M.A. Program",
+        "Admission",
+        "University Fellowships"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 17:56:20"
+}

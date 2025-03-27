@@ -1,0 +1,1992 @@
+{
+  "level1_term": "music",
+  "url_verification_status": {
+    "https://music.usc.edu/departments/music-teaching-learning/": true,
+    "https://college.berklee.edu/courses/me-697": false,
+    "https://music.washington.edu/areas/music-education": false,
+    "https://www.bu.edu/academics/cfa/courses/school-of-music/": true,
+    "https://schoolofmusic.ucla.edu/academics/music/": true,
+    "https://music.umd.edu/areas-of-study/music-education": true,
+    "https://case.edu/artsci/music/academics/areas-study/music-education": true,
+    "https://music.northwestern.edu/academics/areas-of-study/music-education": true,
+    "https://catalogue.usc.edu/preview_program.php?catoid=16&poid=24904": true,
+    "https://www.udel.edu/academics/colleges/cas/units/departments/school-of-music/graduate-programs/teaching-mm/": true,
+    "https://www.tc.columbia.edu/arts-and-humanities/music-and-music-education/": true,
+    "https://college.berklee.edu/music-education": true,
+    "https://music.cornell.edu/graduate": true,
+    "https://www.esm.rochester.edu/mtl/": true,
+    "https://www.usf.edu/arts/music/academics/music-education-degrees-programs-of-study.aspx": true,
+    "https://music.utah.edu/students/programs-degrees.php": true,
+    "https://musicdancetheatre.asu.edu/degree-programs/music-learning-teaching": true,
+    "https://music.wisc.edu/areas-of-study/": true,
+    "https://music.fsu.edu/programs/music-education/": true,
+    "https://music.uchicago.edu/graduate/courses": false,
+    "https://boyer.temple.edu/academic-programs/areas-study/music-education": false,
+    "https://music.ku.edu/areas/musiceducation": true,
+    "https://sc.edu/study/colleges_schools/music/": true,
+    "https://cla.umn.edu/music/about/areas-study/music-education": true,
+    "https://www.hartford.edu/academics/schools-colleges/hartt/academics/music/music-education/graduate-studies-in-music-education.aspx": true,
+    "https://music.utexas.edu/academics/programs-study/music-human-learning": true,
+    "https://musicanddance.uoregon.edu/music-education-graduate-programs": true,
+    "https://www.rollins.edu/music/areas-of-study/": true,
+    "https://www.bgsu.edu/academics/music-education.html": true,
+    "https://www.oxy.edu/academics/areas-study/music": false,
+    "https://arts.psu.edu/academics/school-of-music": true,
+    "https://www.memphis.edu/music/academics/mused.php": true
+  },
+  "verified_lists_per_url": {
+    "https://music.usc.edu/departments/music-teaching-learning/": 2,
+    "https://college.berklee.edu/courses/me-697": 0,
+    "https://music.washington.edu/areas/music-education": 0,
+    "https://www.bu.edu/academics/cfa/courses/school-of-music/": 2,
+    "https://schoolofmusic.ucla.edu/academics/music/": 3,
+    "https://music.umd.edu/areas-of-study/music-education": 6,
+    "https://case.edu/artsci/music/academics/areas-study/music-education": 1,
+    "https://music.northwestern.edu/academics/areas-of-study/music-education": 1,
+    "https://catalogue.usc.edu/preview_program.php?catoid=16&poid=24904": 3,
+    "https://www.udel.edu/academics/colleges/cas/units/departments/school-of-music/graduate-programs/teaching-mm/": 3,
+    "https://www.tc.columbia.edu/arts-and-humanities/music-and-music-education/": 1,
+    "https://college.berklee.edu/music-education": 2,
+    "https://music.cornell.edu/graduate": 4,
+    "https://www.esm.rochester.edu/mtl/": 1,
+    "https://www.usf.edu/arts/music/academics/music-education-degrees-programs-of-study.aspx": 2,
+    "https://music.utah.edu/students/programs-degrees.php": 20,
+    "https://musicdancetheatre.asu.edu/degree-programs/music-learning-teaching": 1,
+    "https://music.wisc.edu/areas-of-study/": 7,
+    "https://music.fsu.edu/programs/music-education/": 1,
+    "https://music.uchicago.edu/graduate/courses": 0,
+    "https://boyer.temple.edu/academic-programs/areas-study/music-education": 0,
+    "https://music.ku.edu/areas/musiceducation": 2,
+    "https://sc.edu/study/colleges_schools/music/": 1,
+    "https://cla.umn.edu/music/about/areas-study/music-education": 1,
+    "https://www.hartford.edu/academics/schools-colleges/hartt/academics/music/music-education/graduate-studies-in-music-education.aspx": 4,
+    "https://music.utexas.edu/academics/programs-study/music-human-learning": 4,
+    "https://musicanddance.uoregon.edu/music-education-graduate-programs": 5,
+    "https://www.rollins.edu/music/areas-of-study/": 1,
+    "https://www.bgsu.edu/academics/music-education.html": 3,
+    "https://www.oxy.edu/academics/areas-study/music": 0,
+    "https://arts.psu.edu/academics/school-of-music": 4,
+    "https://www.memphis.edu/music/academics/mused.php": 1
+  },
+  "total_lists_per_url": {
+    "https://music.usc.edu/departments/music-teaching-learning/": 4,
+    "https://college.berklee.edu/courses/me-697": 2,
+    "https://music.washington.edu/areas/music-education": 2,
+    "https://www.bu.edu/academics/cfa/courses/school-of-music/": 5,
+    "https://schoolofmusic.ucla.edu/academics/music/": 5,
+    "https://music.umd.edu/areas-of-study/music-education": 9,
+    "https://case.edu/artsci/music/academics/areas-study/music-education": 1,
+    "https://music.northwestern.edu/academics/areas-of-study/music-education": 37,
+    "https://catalogue.usc.edu/preview_program.php?catoid=16&poid=24904": 3,
+    "https://www.udel.edu/academics/colleges/cas/units/departments/school-of-music/graduate-programs/teaching-mm/": 6,
+    "https://www.tc.columbia.edu/arts-and-humanities/music-and-music-education/": 5,
+    "https://college.berklee.edu/music-education": 3,
+    "https://music.cornell.edu/graduate": 8,
+    "https://www.esm.rochester.edu/mtl/": 2,
+    "https://www.usf.edu/arts/music/academics/music-education-degrees-programs-of-study.aspx": 7,
+    "https://music.utah.edu/students/programs-degrees.php": 43,
+    "https://musicdancetheatre.asu.edu/degree-programs/music-learning-teaching": 2,
+    "https://music.wisc.edu/areas-of-study/": 10,
+    "https://music.fsu.edu/programs/music-education/": 5,
+    "https://music.uchicago.edu/graduate/courses": 1,
+    "https://boyer.temple.edu/academic-programs/areas-study/music-education": 1,
+    "https://music.ku.edu/areas/musiceducation": 2,
+    "https://sc.edu/study/colleges_schools/music/": 3,
+    "https://cla.umn.edu/music/about/areas-study/music-education": 3,
+    "https://www.hartford.edu/academics/schools-colleges/hartt/academics/music/music-education/graduate-studies-in-music-education.aspx": 5,
+    "https://music.utexas.edu/academics/programs-study/music-human-learning": 14,
+    "https://musicanddance.uoregon.edu/music-education-graduate-programs": 7,
+    "https://www.rollins.edu/music/areas-of-study/": 1,
+    "https://www.bgsu.edu/academics/music-education.html": 8,
+    "https://www.oxy.edu/academics/areas-study/music": 2,
+    "https://arts.psu.edu/academics/school-of-music": 8,
+    "https://www.memphis.edu/music/academics/mused.php": 2
+  },
+  "verified_lists_ids": {
+    "https://music.usc.edu/departments/music-teaching-learning/": [
+      2,
+      3
+    ],
+    "https://college.berklee.edu/courses/me-697": [],
+    "https://music.washington.edu/areas/music-education": [],
+    "https://www.bu.edu/academics/cfa/courses/school-of-music/": [
+      0,
+      3
+    ],
+    "https://schoolofmusic.ucla.edu/academics/music/": [
+      0,
+      2,
+      3
+    ],
+    "https://music.umd.edu/areas-of-study/music-education": [
+      0,
+      2,
+      5,
+      6,
+      7,
+      8
+    ],
+    "https://case.edu/artsci/music/academics/areas-study/music-education": [
+      0
+    ],
+    "https://music.northwestern.edu/academics/areas-of-study/music-education": [
+      0
+    ],
+    "https://catalogue.usc.edu/preview_program.php?catoid=16&poid=24904": [
+      0,
+      1,
+      2
+    ],
+    "https://www.udel.edu/academics/colleges/cas/units/departments/school-of-music/graduate-programs/teaching-mm/": [
+      0,
+      1,
+      2
+    ],
+    "https://www.tc.columbia.edu/arts-and-humanities/music-and-music-education/": [
+      4
+    ],
+    "https://college.berklee.edu/music-education": [
+      0,
+      1
+    ],
+    "https://music.cornell.edu/graduate": [
+      0,
+      1,
+      2,
+      6
+    ],
+    "https://www.esm.rochester.edu/mtl/": [
+      1
+    ],
+    "https://www.usf.edu/arts/music/academics/music-education-degrees-programs-of-study.aspx": [
+      3,
+      4
+    ],
+    "https://music.utah.edu/students/programs-degrees.php": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      10,
+      11,
+      13,
+      16,
+      20,
+      23,
+      25,
+      27,
+      29,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "https://musicdancetheatre.asu.edu/degree-programs/music-learning-teaching": [
+      1
+    ],
+    "https://music.wisc.edu/areas-of-study/": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "https://music.fsu.edu/programs/music-education/": [
+      0
+    ],
+    "https://music.uchicago.edu/graduate/courses": [],
+    "https://boyer.temple.edu/academic-programs/areas-study/music-education": [],
+    "https://music.ku.edu/areas/musiceducation": [
+      0,
+      1
+    ],
+    "https://sc.edu/study/colleges_schools/music/": [
+      0
+    ],
+    "https://cla.umn.edu/music/about/areas-study/music-education": [
+      0
+    ],
+    "https://www.hartford.edu/academics/schools-colleges/hartt/academics/music/music-education/graduate-studies-in-music-education.aspx": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "https://music.utexas.edu/academics/programs-study/music-human-learning": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "https://musicanddance.uoregon.edu/music-education-graduate-programs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "https://www.rollins.edu/music/areas-of-study/": [
+      0
+    ],
+    "https://www.bgsu.edu/academics/music-education.html": [
+      0,
+      5,
+      7
+    ],
+    "https://www.oxy.edu/academics/areas-study/music": [],
+    "https://arts.psu.edu/academics/school-of-music": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "https://www.memphis.edu/music/academics/mused.php": [
+      1
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 216,
+  "url_to_lists": {
+    "https://music.usc.edu/departments/music-teaching-learning/": [
+      [
+        "William CoppolaMusic Teaching & Learning",
+        "Robert CutiettaMusic Teaching & Learning",
+        "Beatriz IlariMusic Teaching & Learning",
+        "Candice D. MattioMusic Teaching & Learning",
+        "Jacob VogelWinds & Percussion; Music Teaching & Learning"
+      ],
+      [
+        "Music Teaching & Learning faculty and students featured in conferences\nOctober 30, 2024",
+        "Chrysa Kovach profiled in Vanderbilt Magazine\nOctober 16, 2024",
+        "Beatriz Illari and Lynne Snyder explore AI\u2019s influence on music listening habits\nApril 8, 2024",
+        "Angelica Brooks directs choir as guest on \u201cThe Jennifer Hudson Show\u201d\nNovember 20, 2023"
+      ],
+      [
+        "Popular Music Teaching and Learning",
+        "Graduate Programs \u2013 Music Teaching and Learning",
+        "Graduate Programs \u2013 Community Music",
+        "Doctoral Programs",
+        "Community Music"
+      ],
+      [
+        "Overview",
+        "Faculty",
+        "Undergraduate Programs",
+        "Graduate & Doctoral Programs",
+        "Graduate Certificate & Artist Diplomas",
+        "Undergraduate",
+        "Graduate",
+        "Current USC Students",
+        "Resources",
+        "Campus Experience",
+        "Events",
+        "Resources",
+        "Master of Music",
+        "Master of Music",
+        "Master of Music",
+        "Doctor of Musical Arts",
+        "Music Teaching & Learning Faculty",
+        "William Coppola",
+        "Robert Cutietta",
+        "Beatriz Ilari",
+        "Candice D. Mattio",
+        "Jacob Vogel",
+        "USC Thornton Celebrates Trojan Family Weekend",
+        "Michael Abels and Kali Uchis to be Honored at USC Thornton\u2019s 2024 Commencement",
+        "A Spectacular Night at the 2024 Grammy Awards",
+        "USC Thornton School of Music"
+      ]
+    ],
+    "https://college.berklee.edu/courses/me-697": [
+      [
+        "Cecil Adderley",
+        "Libby (Elizabeth) Allison",
+        "Rhoda Bernard",
+        "Noreen Diamond Burdett",
+        "Dominick Ferrara",
+        "Brian Gellerstein",
+        "Darla  Hanley",
+        "Stefani M. Langol",
+        "Jeff Leonard",
+        "James O'Dell",
+        "Reagan G. Paras",
+        "Walter Pavasaris"
+      ],
+      [
+        "Campuses and Schools",
+        "Site Nav Menu (bcm)",
+        "Footer Menu (BCM)",
+        "Global Policy Footer Menu"
+      ]
+    ],
+    "https://music.washington.edu/areas/music-education": [
+      [
+        "J. Christopher Roberts \n Chair, Music Education; Lecturer; Director, Music Teacher Preparation",
+        "Francisco Luis Reyes \n Assistant Professor, Music Education",
+        "Patricia Shehan Campbell  \n Emeritus Professor, Music Education;  Ethnomusicology  (Retired)"
+      ],
+      [
+        "depth musical study with world",
+        "class artist",
+        "based Indian musician), Pablo Liebana",
+        "Marin (University of Valencia, Spain), Ben Hunter (Seattle"
+      ]
+    ],
+    "https://www.bu.edu/academics/cfa/courses/school-of-music/": [
+      [
+        "Schools & Colleges",
+        "Bulletin",
+        "Degree Programs",
+        "Policies",
+        "Search Academics"
+      ],
+      [
+        "School of Music\n\nAll Departments\nFine Arts\nSchool of Music\nSchool of Theatre\nSchool of Visual Arts",
+        "All Departments",
+        "Fine Arts",
+        "School of Music",
+        "School of Theatre",
+        "School of Visual Arts"
+      ],
+      [
+        "All Departments",
+        "Fine Arts",
+        "School of Music",
+        "School of Theatre",
+        "School of Visual Arts"
+      ],
+      [
+        "Critical Thinking",
+        "Historical Consciousness",
+        "Writing-Intensive Course"
+      ],
+      [
+        "Beyond the Bulletin",
+        "Terms of Use",
+        "related websites",
+        "Accreditation"
+      ]
+    ],
+    "https://schoolofmusic.ucla.edu/academics/music/": [
+      [
+        "Conducting",
+        "Graduate study and training in choral, orchestral, or wind conducting",
+        "MM/DMA"
+      ],
+      [
+        "Music Composition",
+        "Mentorship in the creation and realization of music for concerts, opera, and visual media",
+        "BA MA/PhD"
+      ],
+      [
+        "Conducting",
+        "Graduate study and training in choral, orchestral, or wind conducting",
+        "MM/DMA"
+      ],
+      [
+        "MA / PhD",
+        "Minor",
+        "Iranian Music Minor"
+      ],
+      [
+        "Music Composition",
+        "Mentorship in the creation and realization of music for concerts, opera, and visual media",
+        "BA MA / PhD"
+      ]
+    ],
+    "https://music.umd.edu/areas-of-study/music-education": [
+      [
+        "Primary Header Navigation",
+        "Secondary Header Navigation",
+        "The Programs",
+        "Undergraduate",
+        "Graduate",
+        "Teacher Professional Development",
+        "Music Education Division Coordinator",
+        "Our Faculty",
+        "Curriculum",
+        "Primary Footer Navigation",
+        "Secondary Footer Navigation"
+      ],
+      [
+        "Degrees Offered",
+        "Stephanie\n                \n                                       Prichard",
+        "Allison\n                \n                                       Durbin",
+        "Kenneth\n                \n                                       Elpus",
+        "Robin\n                \n                                       Giebelhausen",
+        "Mike\n                \n                                       Hewitt",
+        "B.M.E. (Choral/General)",
+        "B.M.E. (Instrumental)",
+        "Ph.D."
+      ],
+      [
+        "Master of Music & Master of Arts",
+        "Coursework for both master's degrees includes three categories of study:",
+        "Doctorate"
+      ],
+      [
+        "Stephanie\n                \n                                       Prichard",
+        "Associate Professor & Division Coordinator, Music Education \n  Instrumental Music Education",
+        "(301) 405-5508"
+      ],
+      [
+        "Mike\n                \n                                       Hewitt",
+        "Professor, Music Education \n  Instrumental Music Education",
+        "(301)405-5504"
+      ],
+      [
+        "Course",
+        "Lessons",
+        "Large Ensembles",
+        "Class Piano/Voice/Guitar",
+        "Diction",
+        "Music Theory",
+        "Music History",
+        "Conducting",
+        "Music Education",
+        "Education",
+        "Student Teaching",
+        "General Education"
+      ],
+      [
+        "Course",
+        "Lessons",
+        "Large Ensembles",
+        "Class Piano",
+        "Music Theory",
+        "Music History",
+        "Conducting",
+        "Music Education",
+        "Education",
+        "Student Teaching",
+        "General Education"
+      ],
+      [
+        "Course",
+        "Research Methods",
+        "Foundation of Music Education",
+        "Music Education Electives",
+        "Music Theory",
+        "Music History",
+        "Electives",
+        "Final Project"
+      ],
+      [
+        "Course",
+        "Music Education Seminars",
+        "Colloquium",
+        "Quantitative Reasoning/Statistics",
+        "Advanced Research Methods",
+        "Cognate",
+        "Academic Electives",
+        "Dissertation Research"
+      ]
+    ],
+    "https://case.edu/artsci/music/academics/areas-study/music-education": [
+      [
+        "Academics",
+        "areas study",
+        "Music Education"
+      ]
+    ],
+    "https://music.northwestern.edu/academics/areas-of-study/music-education": [
+      [
+        "Christopher Guzman, piano",
+        "Karen Kan-Walsh and Julian Kwok, piano",
+        "Samuel and Elinor Thaviu String Competition",
+        "Master of Music: Music Education",
+        "Pursuing Multiple Master\u2019s Degrees"
+      ],
+      [
+        "Sarah BartolomeCoordinator; Associate Professor sarah.bartolome@northwestern.edu See Full Bio",
+        "Jennifer BlackwellAssistant Professor jennifer.blackwell@northwestern.edu See Full Bio",
+        "Clayton DahmLecturer clayton.dahm@northwestern.edu See Full Bio",
+        "Steven MorrisonProfessor steven.morrison@northwestern.edu See Full Bio"
+      ],
+      [
+        "Sarah Bartolome",
+        "Coordinator; Associate Professor",
+        "sarah.bartolome@northwestern.edu",
+        "See Full Bio"
+      ],
+      [
+        "Jennifer Blackwell",
+        "Assistant Professor",
+        "jennifer.blackwell@northwestern.edu",
+        "See Full Bio"
+      ],
+      [
+        "Clayton Dahm",
+        "Lecturer",
+        "clayton.dahm@northwestern.edu",
+        "See Full Bio"
+      ],
+      [
+        "Steven Morrison",
+        "Professor",
+        "steven.morrison@northwestern.edu",
+        "See Full Bio"
+      ],
+      [
+        "Diego Pinto",
+        "Lecturer",
+        "diego.pinto@northwestern.edu",
+        "See Full Bio"
+      ],
+      [
+        "Miguel Garcia",
+        "PhD Candidate",
+        "See Full Bio"
+      ],
+      [
+        "Miguel Garcia",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Alexandra Gilbert Rudy",
+        "1st Year PhD",
+        "See Full Bio"
+      ],
+      [
+        "Alexandra Gilbert Rudy",
+        "Close",
+        "1st Year PhD"
+      ],
+      [
+        "Stephanie Gregoire",
+        "PhD Candidate",
+        "See Full Bio"
+      ],
+      [
+        "Stephanie Gregoire",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Huilin Guan",
+        "2nd year PhD",
+        "See Full Bio"
+      ],
+      [
+        "Huilin Guan",
+        "Close",
+        "2nd year PhD"
+      ],
+      [
+        "Miguel Garcia",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Alexandra Gilbert Rudy",
+        "Close",
+        "1st Year PhD"
+      ],
+      [
+        "Stephanie Gregoire",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Huilin Guan",
+        "Close",
+        "2nd year PhD"
+      ],
+      [
+        "Aaron Himes",
+        "PhD Candidate",
+        "See Full Bio"
+      ],
+      [
+        "Aaron Himes",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Carlye Latas McGregor",
+        "1st year PhD",
+        "See Full Bio"
+      ],
+      [
+        "Carlye Latas McGregor",
+        "Close",
+        "1st year PhD"
+      ],
+      [
+        "Jeremy Rowland",
+        "PhD Candidate",
+        "See Full Bio"
+      ],
+      [
+        "Jeremy Rowland",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Myriaha Seavello",
+        "2nd Year PhD",
+        "See Full Bio"
+      ],
+      [
+        "Myriaha Seavello",
+        "Close",
+        "2nd Year PhD"
+      ],
+      [
+        "Aaron Himes",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Carlye Latas McGregor",
+        "Close",
+        "1st year PhD"
+      ],
+      [
+        "Jeremy Rowland",
+        "Close",
+        "PhD Candidate"
+      ],
+      [
+        "Myriaha Seavello",
+        "Close",
+        "2nd Year PhD"
+      ],
+      [
+        "Victoria Smith",
+        "4th Year PhD",
+        "See Full Bio"
+      ],
+      [
+        "Victoria Smith",
+        "Close",
+        "4th Year PhD"
+      ],
+      [
+        "Melanie Stapleton",
+        "3rd Year PhD",
+        "See Full Bio"
+      ],
+      [
+        "Melanie Stapleton",
+        "Close",
+        "3rd Year PhD"
+      ],
+      [
+        "Victoria Smith",
+        "Close",
+        "4th Year PhD"
+      ],
+      [
+        "Melanie Stapleton",
+        "Close",
+        "3rd Year PhD"
+      ]
+    ],
+    "https://catalogue.usc.edu/preview_program.php?catoid=16&poid=24904": [
+      [
+        "MTAL 517 Teaching and Learning Popular Songwriting Units: 2",
+        "MTAL 518 Teaching and Learning Music Technology Units: 2",
+        "MTAL 520 Coaching the Popular Music Ensemble Units: 2",
+        "MTAL 521 Coaching the Popular Music Vocalist Units: 2"
+      ],
+      [
+        "MPVA 438 Foundations of Vocology Units: 2",
+        "MPVA 541 Advanced Vocology Units: 2",
+        "MTAL 477 Cultural Diversity in Music Teaching and Learning Units: 2",
+        "MTAL 502 Sociological Foundations of Music Teaching and Learning Units: 3",
+        "MTAL 503 Philosophical and Advocacy Issues in Music Teaching and Learning Units: 3",
+        "MTAL 504 Psychological Foundations of Music Units: 3",
+        "MTAL 517 Teaching and Learning Popular Songwriting Units: 2 ***",
+        "MTAL 518 Teaching and Learning Music Technology Units: 2 ***",
+        "MTAL 520 Coaching the Popular Music Ensemble Units: 2 ***",
+        "MTAL 521 Coaching the Popular Music Vocalist Units: 2 ***",
+        "MTAL 535 Community Engagement Through Music Units: 2",
+        "MTAL 576 Using Technology in the Classroom Units: 2",
+        "MTAL 607 Foundations of Community Music Units: 2",
+        "MTAL 608 Creative Thinking in Music Units: 3",
+        "MTAL 615 Assessment and Reflective Practice Units: 2",
+        "MTAL 653 World Music Pedagogy Units: 2",
+        "MUJZ 443 Jazz Pedagogy Units: 2",
+        "MUSC 475 Musician\u2019s Health and Wellness Units: 2"
+      ],
+      [
+        "Program Intensive Courses (11 units)",
+        "Music Elective Courses (minimum of 13 units)**",
+        "Applied Music (4 units)**",
+        "Capstone and Comprehensive Review (2 units)"
+      ]
+    ],
+    "https://www.udel.edu/academics/colleges/cas/units/departments/school-of-music/graduate-programs/teaching-mm/": [
+      [
+        "From Inception to Proficiency: A Choral Program Designed for the Culture of Malawi, Africa",
+        "Exploring Gender and the Lived Experiences and Singers in a Treble Choir: An Instrumental Case Study",
+        "Identity Development in Former Music Educators",
+        "Secondary Music Teachers' Self-Efficacy in Teaching Songwriting",
+        "Life Preparedness for Music Majors: An Approach to Life and Career Readiness",
+        "Facilitating Songwriting With Second-, Third-, and Fourth-grade Students",
+        "Improvisation in the Beginning Choral Rehearsal",
+        "Examining the Perspectives of Three Influential Feminist Music Education Scholars\u200b"
+      ],
+      [
+        "Questions?",
+        "Courses",
+        "Culminating Projects",
+        "Teaching Assistantships",
+        "Duane Cottrell",
+        "Yael Haislip",
+        "Heidi Lucas",
+        "Jenny Neff",
+        "Aimee Pearsall",
+        "RESOURCES",
+        "Connect"
+      ],
+      [
+        "Associate Professor of Choral Music",
+        "dco@udel.edu",
+        "Office:\u00a0\n307 Amy E. du Pont Music Building",
+        "Faculty Profile"
+      ],
+      [
+        "Assistant Professor\nCoordinator of Instrumental Methods",
+        "heidilu@udel.edu",
+        "Office:\u00a0323 Amy E. duPont Music Building",
+        "Faculty Profile"
+      ],
+      [
+        "Adjunct Assistant Professor",
+        "jeneff@udel.edu",
+        "302-831-8995"
+      ],
+      [
+        "Assistant Professor of Music Education\nDirector, Concert Choir",
+        "apearsall@udel.edu",
+        "Office:\u00a0313 Amy E. du Pont Music Building",
+        "Faculty Profile"
+      ]
+    ],
+    "https://www.tc.columbia.edu/arts-and-humanities/music-and-music-education/": [
+      [
+        "M.A. in Music and Music Education with NYS Initial Teaching Certificate (40 credits)",
+        "M.A. Summer Hybrid in Music and Music Education (32 credits)",
+        "M.A. in Music and Music Education (32 credits)",
+        "Ed.M. in Music and Music Education (60 credits)"
+      ],
+      [
+        "Doctor of Education (Ed.D.) (75 credits)",
+        "Ed.D. Summer cohort (75 credits)",
+        "Doctor of Education in College Teaching (Ed.D.C.T) (75 credits)",
+        "Ed.D.C.T. Summer cohort (75 credits)"
+      ],
+      [
+        "Music and Music Education",
+        "Music and Music Education\nNY State Initial: Music Pre-K-12",
+        "Music and Music Education (Hybrid)",
+        "Music and Music Education (UNITAR)",
+        "Music and Music Education",
+        "Music and Music Education (Summer Cohort)",
+        "Music and Music Education\nNY State Initial: Music Pre-K-12",
+        "Music and Music Education",
+        "Doctor of Education\r\n    \n\nMusic and Music Education\n\nMusic and Music Education (Summer Cohort)",
+        "Music and Music Education",
+        "Music and Music Education (Summer Cohort)"
+      ],
+      [
+        "Music and Music Education",
+        "Music and Music Education\nNY State Initial: Music Pre-K-12",
+        "Music and Music Education (Hybrid)",
+        "Music and Music Education (UNITAR)"
+      ],
+      [
+        "Secondary Navigation Main",
+        "Secondary Navigation More",
+        "Find Your Fit",
+        "In Your Program",
+        "See Your Future",
+        "Apply Now for Admission",
+        "Application Requirements",
+        "Fund Your Degree",
+        "Resources",
+        "Legal"
+      ]
+    ],
+    "https://college.berklee.edu/music-education": [
+      [
+        "B.M.\n  \n\n\nBachelor of Music in Music Education\n\n\n      Four-Year Program\n    \n\n\n\n      Description",
+        "Minor in Instrument Repair\n\n\n\n\n\n\n      Description",
+        "Minor in Teaching Artistry\n\n\n\n\n\n\n      Description",
+        "M.M.\n  \n\n\nMaster of Music in Music Education \n\n\n      Two-Year Program\n    \n\n\n\n      Description"
+      ],
+      [
+        "Campuses and Schools",
+        "Site Nav Menu (bcm)",
+        "Programs",
+        "Leadership",
+        "Next Steps",
+        "Footer Menu (BCM)",
+        "Global Policy Footer Menu"
+      ],
+      [
+        "Grad. Cert.",
+        "Graduate Certificate in Music Education and Autism \n\n\n      18 Months",
+        "Description"
+      ]
+    ],
+    "https://music.cornell.edu/graduate": [
+      [
+        "1301 Music in the African Diaspora",
+        "1105 Introduction to Music Theory",
+        "1202 European Music from 1750",
+        "1312 History of Rock Music",
+        "1313 Survey of Jazz",
+        "2241 Music as a Drama: An Introduction to Opera",
+        "2260 Music of the Sixties",
+        "2270 Thinking with Music"
+      ],
+      [
+        "Piano",
+        "Choral",
+        "Orchestral"
+      ],
+      [
+        "2022 SP - Piyawat Louilarpprasert: Perform It Yourself",
+        "2022 SP - Anna Steppler: Singing from the Heart: Choral Music and the Human Experience",
+        "2021 FA - Daniel Hawkins: Music in the Making and Unmaking of Race",
+        "2021 SP - Sergio Cote Barco: Beyond the Five Lines",
+        "2021 SP - Morton Wan: Music and Money",
+        "2020 SP \u2013 Zoe Weiss: Sound and Music in England",
+        "2019 FA \u2013 Max Williams: Remixing Hip-Hop History",
+        "2019 SP \u2013 Matthew Hall: Tonal Counterpoint",
+        "2019 SP \u2013 Sergio Ospina Romero: Jazz Around the World",
+        "2018 FA \u2013 Elizabeth Lyon: Music in World Religions",
+        "2018 SP \u2013 Dietmar Friesenegger: The Soundtrack to the Last Days of Mankind: Music and the Great War",
+        "2018 SP \u2013 Jordan Musser: Popular Music and Politics from a Global Perspective",
+        "2017 FA \u2013 Aya Saiki: The Sound of Media and the Mediation of Sound",
+        "2017 FA \u2013 \u00a0Annalise Smith: Opera: Social Power, Social Myth, Social Change",
+        "2017 SP \u2013 Ryan McCullough: Musical Technologies and the Natural World",
+        "2016 FA \u2013 Anaar Desai-Stephens: Bollywood Songs and South Asian Culture",
+        "2016 FA \u2013\u00a0Mackenzie Pierce: Histories and Philosophies of Improvisation",
+        "2016 SP \u2013\u00a0Mia Tootill - Course:\u00a0The Sounds of Silent Film",
+        "2015 SP \u2013\u00a0Amit Gilutz - Course: Sounds of Protest",
+        "2014 FA \u2013\u00a0Mat Langlois - Course: Music and the Monarchy: Paris, Berlin, Vienna",
+        "2014 SP \u2013\u00a0Andrew Zhou - Course: Music and Diplomacy",
+        "2014 SP \u2013\u00a0Peter Fahey - Course: Beyond Orchestraion"
+      ],
+      [
+        "Fellowships",
+        "Graduate Fellowship Database",
+        "Loans",
+        "Don M. Randel Teaching Fellowship (see description above)"
+      ],
+      [
+        "Alvin H. Johnson AMS 50 Dissertation Fellowships",
+        "Howard Mayer Brown Fellowship",
+        "AMS travel and research grants",
+        "SEM 21st\u00a0Century Fellowship",
+        "Other SEM prizes",
+        "SMT Travel Grants"
+      ],
+      [
+        "The American Musicological Society",
+        "Society for Music Theory",
+        "Society for Ethnomusicology",
+        "American Music Center",
+        "New Music USA",
+        "Society for American Music",
+        "College Music Society",
+        "Society for Asian Music",
+        "International Association for the Study of Popular Music (IASPM-US)"
+      ],
+      [
+        "Music theory for majors",
+        "Electroacoustic Music",
+        "History courses for non-majors",
+        "First-Year Writing Seminar",
+        "Performance"
+      ],
+      [
+        "By air",
+        "By train",
+        "By bus",
+        "Taxi Service"
+      ]
+    ],
+    "https://www.esm.rochester.edu/mtl/": [
+      [
+        "Undergraduate Study",
+        "Graduate Study",
+        "Assistantships",
+        "Associations",
+        "Degrees Offered",
+        "Department Chair",
+        "Quick Links",
+        "Department Office",
+        "Apply Today!"
+      ],
+      [
+        "Music Education (MEG)",
+        "Music Education (MEV)",
+        "Music Education (MEI)",
+        "Music Education",
+        "Music Education",
+        "Music Education",
+        "Music Education",
+        "Alden Snell"
+      ]
+    ],
+    "https://www.usf.edu/arts/music/academics/music-education-degrees-programs-of-study.aspx": [
+      [
+        "Establish a global context focused on learner-centered pedagogy",
+        "Become proficient in using learner-centered skills in their classrooms",
+        "Conduct action research in their classrooms",
+        "Participate in a peer mentoring process within the program"
+      ],
+      [
+        "Jon Bassett, Professor, Florida College, Florida",
+        "Joshua Blair, Director of Bands, Plant City High School, Florida",
+        "Morgan Jolley, Assistant Professor, Ithaca College, New York",
+        "Mark Cole, Assistant Professor, Gardner-Webb University, North Carolina",
+        "Gary Compton, Fine Arts Chair, Academy at the Lakes, Florida",
+        "Wayne Gallops, Professor & Director of University Bands, Radford University, Virginia",
+        "Timothy Groulx, Assistant Professor, University of North Florida, Florida",
+        "Lisa Lehmberg, Associate Professor, University of Massachusetts, Amherst, Massachusetts",
+        "James Lindroth, Assistant Professor, Northeastern State University, Oklahoma",
+        "Marian Newsome Moorhead, String Specialist, Hillsborough County Public Schools, Florida",
+        "Rebecca Rinsema, Lecturer, Northern Arizona University, Arizona",
+        "Kathy Rolsten, Instructor, University of Toledo, Ohio",
+        "Jos\u00e9 Valentino Ruiz, Assistant Professor, Lee University, Tennessee",
+        "Cynthia Selph, Assistant Professor, Saint Leo University, Florida",
+        "Melissa Slawsky, Instructor, St. Petersburg College, Florida",
+        "Nick Stefanic, Music Technology Specialist, Pinellas County Schools, Florida",
+        "Michael Zelenak, Assistant Professor, Alabama State University, Alabama"
+      ],
+      [
+        "School of Music",
+        "Main Navigation",
+        "BS in Music Education",
+        "MA in Music Education",
+        "PhD in Music Education"
+      ],
+      [
+        "Centered Approaches in Music Education",
+        "3 creditsMUE6816 Music Perception",
+        "3 credits"
+      ],
+      [
+        "3 credits MUE7748 Creativity Conceptions",
+        "3 credits MUE7786 Qualitative Research Methods",
+        "3 credits MUE7815 Social Psychology of Music",
+        "3 credits MUE7816 Music Cognition",
+        "3 credits MUE7835 Philosophical & Historical Issues in Music Education",
+        "3 credits"
+      ],
+      [
+        "centered classroom that can have significant influence",
+        "centered",
+        "centered techniques."
+      ],
+      [
+        "Centered Approaches in Music",
+        "centered",
+        "Saturday) of intense on",
+        "campus work where you will put into",
+        "centered groups, solving musical problems",
+        "centered approaches in your own",
+        "up to this on",
+        "campus experience you will spend one week reflecting",
+        "campus expenses,"
+      ]
+    ],
+    "https://music.utah.edu/students/programs-degrees.php": [
+      [
+        "Music Technology Certificate 2023-2024",
+        "Music Entrepreneurship Certificate 2023-2024\nApplication",
+        "Application"
+      ],
+      [
+        "Minor in Music 2023-2024",
+        "Music Technology Minor 2023-2024\nApplication",
+        "Application"
+      ],
+      [
+        "Marching Band",
+        "Pep Band",
+        "Wind Ensemble",
+        "Symphonic Band",
+        "Utah Philharmonia",
+        "Utah Philharmonia Chamber Orchestra",
+        "Campus Symphony",
+        "Jazz Bands",
+        "Jazz Combos",
+        "New Music Ensemble",
+        "Early Music Ensemble"
+      ],
+      [
+        "Donn Schaefer,Brass Area Head",
+        "James Andrus",
+        "Nathan Basinger",
+        "Todd Campbell",
+        "Mark Davidson",
+        "Travis Peterson",
+        "Stephen Proser",
+        "Peyden Shelton"
+      ],
+      [
+        "BM Classical Guitar Performance 2023-2024",
+        "BM Music Education: Instrumental 2023-2024",
+        "Bachelor of Arts in Music 2023-2024",
+        "Minor in Music 2023-2024"
+      ],
+      [
+        "BM Music Composition 2023-2024",
+        "Music Technology Minor 2023-2024",
+        "Music Technology Certificate 2023-2024",
+        "MM Composition 2023-2024",
+        "PhD Composition 2023-2024"
+      ],
+      [
+        "Miguel Chuaqui, Composition Area Head",
+        "David Michael Cottle, Music Technology",
+        "Elisabet Curbelo",
+        "Igor Iachimciuc",
+        "Devin Maxwell",
+        "Jessica Rudman"
+      ],
+      [
+        "MM Choral Conducting 2023-2024",
+        "MM Instrumental Conducting 2023-2024",
+        "DMA Choral Conducting 2023-2024",
+        "DMA Instrumental Conducting 2023-2024"
+      ],
+      [
+        "Chamber Choir",
+        "A Cappella Choir",
+        "Voci Altissime",
+        "Wind Ensemble",
+        "Symphonic Band",
+        "Utah Philharmonia",
+        "Campus Symphony"
+      ],
+      [
+        "Robert Baldwin",
+        "Barlow Bradford",
+        "Jason Missal"
+      ],
+      [
+        "BM Jazz Composition 2023-2024",
+        "BM in Jazz Performance 2023-2024",
+        "Bachelor of Arts in Music 2023-2024",
+        "Minor in Music 2023-2024",
+        "MM Jazz Studies 2023-2024"
+      ],
+      [
+        "Jazz Ensemble",
+        "Jazz Repertory Ensemble",
+        "Jazz Guitar Ensembles",
+        "Jazz Combos"
+      ],
+      [
+        "Josiah Boornazian, Director of Jazz Studies",
+        "Brian Booth",
+        "Todd Campbell",
+        "Randal Clark",
+        "David Hall",
+        "David Halliday",
+        "Steven Heffner",
+        "Chris Hough",
+        "Alex Rowe",
+        "Donn Schaefer, Brass Area Head",
+        "Patrick Terry",
+        "Dan Waldis",
+        "Kelly Wallis"
+      ],
+      [
+        "BM Music Education: Instrumental 2023-2024",
+        "BM Music Education: Choral 2023-2024",
+        "MM Music Education 2023-2024",
+        "PhD Music Education 2023-2024"
+      ],
+      [
+        "Emily Mercado, Music Education Area Head",
+        "Jonathan Dillon",
+        "Olivia Tucker"
+      ],
+      [
+        "Elizabeth Craft,Musicology Area Head",
+        "Bettie Jo Basinger",
+        "Lisa Chaufty",
+        "Cathy Clayton",
+        "Jane Hatter",
+        "Catherine Mayes",
+        "Pam Jones"
+      ],
+      [
+        "Percussion Ensemble",
+        "Drumline (Marching Band)",
+        "Wind Ensemble",
+        "Symphony Band",
+        "Utah Philharmonia",
+        "Campus Symphony",
+        "Global Music Ensemble"
+      ],
+      [
+        "Michael SammonsPercussion Area Head",
+        "Keith Carrick",
+        "Danny Soulier",
+        "Kelly Wallis"
+      ],
+      [
+        "Ning Lu",
+        "Jie Lu",
+        "Vedrana Subotic",
+        "Gretchen Tanner",
+        "Viktor Valkov",
+        "Steven Vanhauwaert"
+      ],
+      [
+        "Lenora Brown",
+        "Susan Duehlmeier",
+        "Bonnie Gritton"
+      ],
+      [
+        "Utah Philharmonia",
+        "Utah Philharmonia Chamber Orchestra",
+        "Campus Symphony",
+        "String Chamber Music",
+        "New Music Ensemble",
+        "Early Music Ensemble"
+      ],
+      [
+        "Hasse Borup,String Area Head",
+        "Blanka Bednarz",
+        "Leonard Braus",
+        "Elliott Cheney",
+        "Cathy Clayton",
+        "John Eckstein",
+        "Julie Edwards",
+        "Lun Jiang",
+        "Ralph Matson",
+        "Leslie Richards",
+        "Barbara Scowcroft",
+        "Kasia Sokol-Borup",
+        "Bonnie Terry",
+        "Pegsoon Whang",
+        "David Yavornitzky"
+      ],
+      [
+        "Michael Chikinda,Music Theory Area Head",
+        "Pamela Jones",
+        "Paul Sherrill",
+        "Jessica Rudman",
+        "Matthew Durrant",
+        "Haruhito Miyagi"
+      ],
+      [
+        "Chamber Choir",
+        "A Cappella Choir",
+        "Voci Altissime",
+        "U Opera",
+        "Opera Workshop",
+        "New Music Ensemble",
+        "Early Music Ensemble"
+      ],
+      [
+        "Kirstin Ch\u00e1vez, Voice Area Coordinator",
+        "Seth Keeton",
+        "Carol Ann Allred",
+        "Robert Breault",
+        "Paul Dorgan",
+        "Lynn Maxfield",
+        "Julie Wright-Costa"
+      ],
+      [
+        "Marching Band",
+        "Pep Band",
+        "Symphonic Band",
+        "Wind Ensemble",
+        "Utah Philharmonia",
+        "Utah Philharmonia Chamber Orchestra",
+        "Campus Symphony",
+        "Jazz Ensembles",
+        "Jazz Combos",
+        "New Music Ensemble",
+        "Early Music Ensemble"
+      ],
+      [
+        "Laura Grantier, Woodwind Area Head",
+        "Jeffrey Allarydyce, visiting",
+        "Lisa Byrnes",
+        "Randal Clark",
+        "Caitlyn Moore",
+        "Jennifer Rhodes",
+        "Tiffany Sedgley",
+        "Robert Stephenson",
+        "Lori Wike"
+      ],
+      [
+        "School of Music",
+        "Main Navigation",
+        "Main Menu",
+        "Bachelor of Arts, Certificates & Minors",
+        "Brass",
+        "Classical Guitar",
+        "Composition and Music Technology",
+        "Conducting",
+        "Jazz Studies",
+        "Music Education",
+        "Musicology",
+        "Organ",
+        "Pedagogy",
+        "Percussion",
+        "Piano",
+        "Strings",
+        "Theory",
+        "Voice",
+        "Woodwinds",
+        "Bachelor of Arts, Certificates & Minors",
+        "Brass",
+        "Classical Guitar",
+        "Composition and Music Technology",
+        "Conducting",
+        "Jazz Studies",
+        "Music Education",
+        "Musicology",
+        "Organ",
+        "Percussion",
+        "Piano",
+        "Strings",
+        "Theory",
+        "Voice",
+        "Woodwinds",
+        "School of Music",
+        "Stay in Touch",
+        "Quick Links"
+      ],
+      [
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "State Teaching Licensure Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements",
+        "Curriculum Requirements"
+      ],
+      [
+        "Bachelor of Arts, Certificates & Minors",
+        "Brass",
+        "Classical Guitar",
+        "Composition and Music Technology",
+        "Conducting",
+        "Jazz Studies",
+        "Music Education",
+        "Musicology",
+        "Organ",
+        "Pedagogy",
+        "Percussion",
+        "Piano",
+        "Strings",
+        "Theory",
+        "Voice",
+        "Woodwinds"
+      ],
+      [
+        "Degrees",
+        "Certificates",
+        "Minors"
+      ],
+      [
+        "Degrees",
+        "Ensembles",
+        "Faculty",
+        "Emeritus"
+      ],
+      [
+        "Degrees",
+        "Ensembles",
+        "Faculty",
+        "Emeritus"
+      ],
+      [
+        "Degrees",
+        "Ensembles",
+        "Faculty",
+        "Emeritus"
+      ],
+      [
+        "Degrees",
+        "Ensembles",
+        "Faculty",
+        "Emeritus"
+      ],
+      [
+        "Degrees",
+        "Ensembles",
+        "Faculty",
+        "Emeritus"
+      ],
+      [
+        "The Music Technology Minor and the Music Technology Certificate are designed for",
+        "majors) and certificate (for music majors) cover all",
+        "track studio recordings, mixing and digital"
+      ],
+      [
+        "1971), the innovative Hispanic American composer Ramiro Cort\u00e9s",
+        "1984) and the electroacoustic music pioneer Vladimir Ussachevsky (1911",
+        "1990),"
+      ],
+      [
+        "on, school",
+        "based learning,",
+        "time as music educators."
+      ],
+      [
+        "service teaching experiences, culminating in a",
+        "on experiences prepare graduates to be",
+        "12 music teaching"
+      ],
+      [
+        "year, 126 credit hour emphasis consisting",
+        "year, 31",
+        "34 credit hour program consisting"
+      ],
+      [
+        "year, 36",
+        "39 credit hour program.",
+        "on experience and instruction in beginner"
+      ],
+      [
+        "tonal",
+        "supervised student teaching experience of entry",
+        "level",
+        "prepared to enter a competitive PhD program."
+      ]
+    ],
+    "https://musicdancetheatre.asu.edu/degree-programs/music-learning-teaching": [
+      [
+        "Flexible musicians",
+        "Innovative practitioners",
+        "Inquisitive thinkers",
+        "Community leaders",
+        "Equity in all"
+      ],
+      [
+        "Music (Music Learning and Teaching), PhD",
+        "Music Learning and Teaching, BMUS",
+        "Music Learning and Teaching, MM",
+        "Music Performance, Minor",
+        "Music Theatre, Minor",
+        "Music, Minor",
+        "Explore all areas of study"
+      ]
+    ],
+    "https://music.wisc.edu/areas-of-study/": [
+      [
+        "Explore your musical pathway",
+        "Areas of study",
+        "Courses open to non-music majors",
+        "Popular",
+        "Resources"
+      ],
+      [
+        "Areas of study",
+        "Brass\nComposition \nConducting",
+        "Jazz Studies\nKeyboard\nMusic Education",
+        "Music Theory\nMusicology & Ethnomusicology\nPercussion",
+        "Strings, Guitar, & Harp\nVoice & Opera\nWoodwinds"
+      ],
+      [
+        "Brass",
+        "Composition",
+        "Conducting"
+      ],
+      [
+        "Jazz Studies",
+        "Keyboard",
+        "Music Education"
+      ],
+      [
+        "Music Theory",
+        "Musicology & Ethnomusicology",
+        "Percussion"
+      ],
+      [
+        "Strings, Guitar, & Harp",
+        "Voice & Opera",
+        "Woodwinds"
+      ],
+      [
+        "Exploring of wide-range topics in music history, music theory or music education. Credits range 1-3",
+        "Some of these courses may count towards:",
+        "-L&S credit requirement\n\u2013 Humanities breadth requirement\n-Ethnic Studies requirement.",
+        "Requisites: Sophomore Standing"
+      ],
+      [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      [
+        "Counts towards the L&S credit requirement",
+        "Fulfills a Humanities breadth requirement",
+        "Fulfills Ethnic Studies requirement"
+      ],
+      [
+        "L&S credit requirement",
+        "Humanities breadth requirement",
+        "Ethnic Studies requirement."
+      ]
+    ],
+    "https://music.fsu.edu/programs/music-education/": [
+      [
+        "Bachelor of Music Education",
+        "Master of Music Education",
+        "Doctor of Philosophy in Music Education"
+      ],
+      [
+        "Associate Professor of Music Therapy",
+        "Director of Music Therapy",
+        "Coordinator of Music Education and Music Therapy"
+      ],
+      [
+        "Learn in the teacher role",
+        "We build musician teachers",
+        "Strong community",
+        "Lori Gooding",
+        "Mark Belfast",
+        "Kasia Bugaj",
+        "Rodney Dorsey",
+        "Diana Dumlavwalla",
+        "Patrick Dunnigan",
+        "Kevin Fenton",
+        "William Fredrickson",
+        "Michael Hanawalt",
+        "Ann Harrington",
+        "Steve Kelly",
+        "David Knapp",
+        "Devan L. Moore",
+        "David Plack",
+        "D. Gregory Springer",
+        "Bryan Stenson",
+        "McKenna Stenson",
+        "Kimberly VanWeelden"
+      ],
+      [
+        "Program of Study \u2013 Non-Thesis track",
+        "Program of Study \u2013 Thesis track",
+        "Program of Study \u2013 Choral (Summer)",
+        "Program of Study \u2013 Instrumental (Summer)",
+        "Path to Admission"
+      ],
+      [
+        "Career Paths",
+        "Engaged Learning",
+        "Knowledge in Practice",
+        "Graduate Placement",
+        "Statement of Philosophy",
+        "Summer Only Masters Program",
+        "Professional Organizations",
+        "Orff-Schulwerk"
+      ]
+    ],
+    "https://music.uchicago.edu/graduate/courses": [
+      [
+        "and twenty",
+        "\ufb01rst century music",
+        "making and attendant social, political and economic processes."
+      ]
+    ],
+    "https://boyer.temple.edu/academic-programs/areas-study/music-education": [
+      [
+        "Art & Architecture",
+        "Business & Management",
+        "Dentistry",
+        "Education & Human Development",
+        "Engineering",
+        "Environmental Design",
+        "Liberal Arts",
+        "Media & Communication",
+        "Medicine",
+        "Music & Dance",
+        "Pharmacy",
+        "Podiatric Medicine",
+        "Public Health",
+        "Science & Technology",
+        "Social Work",
+        "Theater, Film & Media Arts",
+        "Sport, Tourism & Hospitality Management"
+      ]
+    ],
+    "https://music.ku.edu/areas/musiceducation": [
+      [
+        "Our faculty and students",
+        "Introduction",
+        "Undergraduate BME Program",
+        "Study Music Ed at KU",
+        "Areas of Instruction in Music Education",
+        "Graduate Programs",
+        "Study Music Ed at KU",
+        "Music Education Awards & Recognition",
+        "University Awards & Recognition",
+        "Your journey in Music Education starts here"
+      ],
+      [
+        "Strings",
+        "Vocal and Choral",
+        "General Music",
+        "The Marcus E. Hahn Award",
+        "KU Annual Outstanding Music Educator Award",
+        "KU Teacher of Promise"
+      ]
+    ],
+    "https://sc.edu/study/colleges_schools/music/": [
+      [
+        "SC.edu",
+        "Study",
+        "Colleges and Schools",
+        "School of Music"
+      ],
+      [
+        "An evening of music and culinary delights.",
+        "2024-25 Centennial Events",
+        "Show off your school spirit!",
+        "Koger Center for the Arts",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      [
+        "Transforming Lives",
+        "Announcing the USC Music Teaching Artist Certificate Program",
+        "Opera at USC spreads \"musical joy and wonder\" across South Carolina",
+        "New music director/conductor of Opera at USC named",
+        "Andrew Tomlinson Senior Jazz Guitar Recital",
+        "Allwyn Edwards Junior Jazz Drum Set Recital",
+        "Broadway In Columbia presents Hadestown"
+      ]
+    ],
+    "https://cla.umn.edu/music/about/areas-study/music-education": [
+      [
+        "University Header Menu",
+        "Unit Menu",
+        "In This Section",
+        "Degrees",
+        "Music Education Faculty",
+        "Connect",
+        "Stay In Touch",
+        "Make a Gift"
+      ],
+      [
+        "Akosua Addo",
+        "Casey Clementson",
+        "Adrian Davis",
+        "Danni Gilbert",
+        "Keitha Lucas Hamann",
+        "Emily Heuschele",
+        "Brian McCullough",
+        "Shekela Wanyama",
+        "Recent Program Achievements"
+      ],
+      [
+        "Specialties",
+        "Specialties",
+        "Specialties"
+      ]
+    ],
+    "https://www.hartford.edu/academics/schools-colleges/hartt/academics/music/music-education/graduate-studies-in-music-education.aspx": [
+      [
+        "Choral Conducting (Academic Year)",
+        "Wind Band Conducting (Academic Year)",
+        "Kod\u00e1ly (Summerterm only)",
+        "Jazz Studies (Academic Year)",
+        "Pedagogy (Summerterm only)",
+        "Research (Academic Year)",
+        "Technology (Academic Year)"
+      ],
+      [
+        "Master of Music Education",
+        "Doctor of Philosophy in Music Education",
+        "Hamidreza Niknampour"
+      ],
+      [
+        "Warren  Haston",
+        "Associate Professor of Music Education; Chair of Music Education",
+        "Music Education",
+        "View Full Profile"
+      ],
+      [
+        "Joshua A. Russell",
+        "Professor of Music Education",
+        "Music Education",
+        "View Full Profile"
+      ],
+      [
+        "level weeklong workshops, \u00a0three",
+        "and six",
+        "Only Master of Music Education program by combining core courses and workshops."
+      ]
+    ],
+    "https://music.utexas.edu/academics/programs-study/music-human-learning": [
+      [
+        "Header Menu",
+        "Academics",
+        "Footer menu"
+      ],
+      [
+        "Bachelor of Music & Teacher Certification",
+        "Graduate Programs",
+        "STRING PROJECT AND PIANO PROJECT",
+        "Center for Music Learning",
+        "Music & Human Learning Faculty",
+        "Greg Cavazos",
+        "Robert A. Duke",
+        "Suzanne Pence",
+        "Laurie Scott",
+        "Amy Simmons",
+        "Justin J. West",
+        "Marjorie Yankeelov",
+        "Teaching Assistants",
+        "Laura Bock",
+        "Suzanne Charney",
+        "Jennifer McKeeman",
+        "Amy N. Melton"
+      ],
+      [
+        "Assistant Professor of Practice in Music and Human Learning",
+        "Director, Center for Music Learning",
+        "Director, Treble Chamber Choir",
+        "Associate Professor of Music and Human Learning, Choral Conducting",
+        "Associate Professor of Music and Human Learning",
+        "Director, The University of Texas String Project",
+        "Director, Musical Lives",
+        "Senior Lecturer in Music and Human Learning",
+        "Associate Professor of Music and Human Learning",
+        "Lecturer in Music and Human Learning",
+        "Teaching Assistant in Music and Human Learning",
+        "String Project Teacher, Early Childhood Education",
+        "Teaching Assistant in Music & Human Learning",
+        "Teaching Assistant in Music and Human Learning",
+        "String Project Instructor, violin",
+        "Assistant Instructor in Music & Human Learning"
+      ],
+      [
+        "Assistant Professor of Practice in Music and Human Learning",
+        "gregorio.cavazos@austin.utexas.edu",
+        "MRH 3.206"
+      ],
+      [
+        "Director, Center for Music Learning",
+        "bobduke@austin.utexas.edu",
+        "512.471.0972",
+        "MRH 2.208"
+      ],
+      [
+        "Director, Treble Chamber Choir\nAssociate Professor of Music and Human Learning, Choral Conducting",
+        "pence@austin.utexas.edu",
+        "512.471.0851",
+        "MRH 2.116D"
+      ],
+      [
+        "lascott@austin.utexas.edu",
+        "512-471-2496",
+        "MRH  3.802"
+      ],
+      [
+        "Senior Lecturer in Music and Human Learning",
+        "asimmons@austin.utexas.edu",
+        "MBE  2.204A"
+      ],
+      [
+        "Associate Professor of Music and Human Learning",
+        "justin.west@austin.utexas.edu",
+        "MRH 2.204B"
+      ],
+      [
+        "Lecturer in Music and Human Learning",
+        "myankeelov@austin.utexas.edu",
+        "512.471.7453",
+        "MRH  3.204"
+      ],
+      [
+        "Teaching Assistant in Music and Human Learning \nString Project Teacher, Early Childhood Education",
+        "laura.bock@utexas.edu",
+        "MRH 2.312"
+      ],
+      [
+        "Teaching Assistant in Music & Human Learning",
+        "suecharn@utexas.edu",
+        "MRH 2.302"
+      ],
+      [
+        "Teaching Assistant in Music and Human Learning \nString Project Instructor, violin",
+        "jen.mckeeman@utexas.edu",
+        "MRH 2.306"
+      ],
+      [
+        "Assistant Instructor in Music & Human Learning",
+        "amymelton@utexas.edu",
+        "MRH 4.13"
+      ]
+    ],
+    "https://musicanddance.uoregon.edu/music-education-graduate-programs": [
+      [
+        "Search this site",
+        "School of Music and Dance",
+        "Main navigation",
+        "Music Education Program"
+      ],
+      [
+        "Quantitative Research",
+        "History of American Music Education",
+        "Music in School and Society",
+        "Curricular Strategies",
+        "Music History"
+      ],
+      [
+        "Music Theory",
+        "Ethnomusicology",
+        "Expository Writing",
+        "Performance Studies",
+        "Ensembles"
+      ],
+      [
+        "MMus Degree Requirements",
+        "Academic Music Areas",
+        "Course Descriptions (UO Catalog)",
+        "Graduate Specializations"
+      ],
+      [
+        "Quantitative Research Methods",
+        "College Music Teaching",
+        "Psychology of Music",
+        "History of Western Music Education"
+      ],
+      [
+        "PhD Degree Requirements",
+        "Academic Music Areas",
+        "Course Descriptions (UO Catalog)",
+        "Graduate Specializations"
+      ],
+      [
+        "Graduate Advising",
+        "Scholarships and Funding",
+        "Performance Opportunities",
+        "Professional Development"
+      ]
+    ],
+    "https://www.rollins.edu/music/areas-of-study/": [
+      [
+        "Breadcrumb",
+        "Explore this Section",
+        "Composition",
+        "Conducting",
+        "Jazz/Contemporary",
+        "Music Business",
+        "Music Education",
+        "Music History",
+        "Music Technology",
+        "Music Theory",
+        "Piano",
+        "Strings",
+        "Voice",
+        "Winds/Percussion"
+      ]
+    ],
+    "https://www.bgsu.edu/academics/music-education.html": [
+      [
+        "Classroom/general music",
+        "Choral music",
+        "Instrumental (band/orchestra)"
+      ],
+      [
+        "Join organizations such as the Ohio College Music Teachers Association.",
+        "Take advantage of hundreds of annual performance opportunities.",
+        "Take on leadership roles helping to organize on-campus shows and festivals.",
+        "Volunteer with peer-to-peer teaching or at local schools as a teaching assistant.",
+        "Explore study abroad opportunities.",
+        "Participate in world music ensembles.",
+        "Apply for travel conference grants from Pro Musica.",
+        "Network with professionals in the Ohio Music Educators Association."
+      ],
+      [
+        "Join organizations such as the Ohio College Music Teachers Association.",
+        "Take advantage of hundreds of annual performance opportunities.",
+        "Take on leadership roles helping to organize on-campus shows and festivals.",
+        "Volunteer with peer-to-peer teaching or at local schools as a teaching assistant."
+      ],
+      [
+        "Explore study abroad opportunities.",
+        "Participate in world music ensembles.",
+        "Apply for travel conference grants from Pro Musica.",
+        "Network with professionals in the Ohio Music Educators Association."
+      ],
+      [
+        "Elementary school music teacher",
+        "Middle school music teacher",
+        "High school music teacher",
+        "Band teacher",
+        "Orchestra teacher",
+        "Junior and senior high school choral ensembles teacher"
+      ],
+      [
+        "Music Theory/Aural Skills",
+        "Instrumental/Vocal Techniques",
+        "Class Piano",
+        "Conducting",
+        "Applied Lessons",
+        "Performing Ensembles"
+      ],
+      [
+        "Why study\u00a0music education at BGSU in\u00a0Ohio?",
+        "Career \u2013 what can you do with a music education degree?",
+        "Curriculum"
+      ],
+      [
+        "Bachelor of Music (B.M.)",
+        "Music Education",
+        "BGSU\n\nAcademics\n\n\t\n\t\tMusic Education"
+      ]
+    ],
+    "https://www.oxy.edu/academics/areas-study/music": [
+      [
+        "President and CEO, Chicago\u2019s Ravinia Festival",
+        "Ph.D. program, historical musicology, Harvard University",
+        "Manager of Inclusion Strategy, Netflix",
+        "Film Composer",
+        "Voice Actor",
+        "President, American Musicological Society",
+        "President and CEO of Chorus America",
+        "Soprano, New Camerata Opera, New York, NY",
+        "Voice-Over Artist",
+        "Follow Oxy:"
+      ],
+      [
+        "Deior Gross",
+        "Music composition major; Minden, LA",
+        "More from Deior"
+      ]
+    ],
+    "https://arts.psu.edu/academics/school-of-music": [
+      [
+        "On this Page",
+        "Intro",
+        "Degrees",
+        "Student Experiences",
+        "Opportunities for Non-majors",
+        "Concerts & Tickets",
+        "Venues & Studios"
+      ],
+      [
+        "Forge your future",
+        "Undergraduate Degrees and Minors",
+        "Graduate Degrees and Professional Certificates",
+        "Enriching the experience!",
+        "Concert Listings & Ticket Purchase",
+        "Venues and Studios",
+        "Faculty Spotlight",
+        "Music News Highlights",
+        "School of Music alum\u2019s arts entrepreneurship podcast celebrates 200th episode",
+        "Music professor wins American Musicological Society\u2019s Noah Greenberg Award",
+        "Tacconi receives Bicentennial Medal from undergrad alma mater Williams College",
+        "Legal Statements"
+      ],
+      [
+        "Explore Our 24\u201325 Season",
+        "Connect",
+        "Administrative Inquiries",
+        "Student Resources",
+        "Jazz Performance Minor",
+        "Bachelor of Music Education",
+        "Music Performance Minor",
+        "Music Studies Minor",
+        "Music Technology Minor",
+        "Bachelor of Arts in Music",
+        "Bachelor of Music",
+        "Bachelor of Musical Arts",
+        "Music Education, PA Instructional I Certification",
+        "Master of Music Education",
+        "Doctor of Philosophy in Music Education",
+        "Master of Arts in Music (+Integrated Undergraduate/Graduate Option)",
+        "Master of Music",
+        "Piano Performance, Doctor of Musical Arts",
+        "Professional Performance Certificate in Music",
+        "Ensembles",
+        "Opportunities for Non-majors",
+        "Research",
+        "Engagement",
+        "Michael Schutz",
+        "Eisenhower Auditorium",
+        "Esber Rehearsal Hall",
+        "Music Building I and II",
+        "O. Richard Bundy Blue Band Building",
+        "Pitch Exploration Lab",
+        "Recital Hall",
+        "ROARS Recording Studios",
+        "Naomi Seidman"
+      ],
+      [
+        "Jazz Performance Minor",
+        "Bachelor of Music Education",
+        "Music Performance Minor",
+        "Music Studies Minor",
+        "Music Technology Minor",
+        "Bachelor of Arts in Music",
+        "Bachelor of Music",
+        "Bachelor of Musical Arts"
+      ],
+      [
+        "Concert Schedule",
+        "Livestream Schedule",
+        "Purchase concert tickets"
+      ],
+      [
+        "Eisenhower Auditorium",
+        "Esber Rehearsal Hall",
+        "Music Building I and II",
+        "O. Richard Bundy Blue Band Building",
+        "Pitch Exploration Lab",
+        "Recital Hall",
+        "ROARS Recording Studios"
+      ],
+      [
+        "December 13, 2024\nSchool of Music alum\u2019s arts entrepreneurship podcast celebrates 200th episode",
+        "November 19, 2024\nMusic professor wins American Musicological Society\u2019s Noah Greenberg Award",
+        "October 22, 2024\nTacconi receives Bicentennial Medal from undergrad alma mater Williams College"
+      ],
+      [
+        "25 season brochure, highlighting the amazing upcoming programming",
+        "recitals, series, festivals and more",
+        "as well as people in the School of Music."
+      ]
+    ],
+    "https://www.memphis.edu/music/academics/mused.php": [
+      [
+        "Instagram",
+        "Facebook",
+        "twitter",
+        "Youtube",
+        "LinkedIn",
+        "Vimeo"
+      ],
+      [
+        "Music",
+        "Academics",
+        "Music Education"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:19:25"
+}

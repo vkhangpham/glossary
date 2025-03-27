@@ -1,0 +1,1406 @@
+{
+  "level1_term": "food science",
+  "url_verification_status": {
+    "https://ag.purdue.edu/department/foodsci/index.html": false,
+    "https://foodscience.psu.edu/research": true,
+    "https://foodscience.tamu.edu/faculty-research/": true,
+    "https://fst.osu.edu/home": false,
+    "https://foodscience.tennessee.edu/": false,
+    "https://cals.cornell.edu/food-science/research": false,
+    "https://www.fst.vt.edu/": true,
+    "https://steinhardt.nyu.edu/departments/nutrition-and-food-studies": false,
+    "https://ag.purdue.edu/department/foodsci/who-we-are.html": true,
+    "https://www.canr.msu.edu/fshn/research": true,
+    "https://gradschool.oregonstate.edu/programs/1350/food-science-and-technology-phd-ms-minor": true,
+    "https://catalog.ncsu.edu/graduate/agriculture-life-sciences/food-science/": true,
+    "https://foodscience.unl.edu/academic-programs/": true,
+    "https://fshn.ifas.ufl.edu/current-students/graduate/ms-food-science-and-human-nutrition/": true,
+    "https://www.umass.edu/food-science/": false,
+    "https://fshn.hs.iastate.edu/graduate-students/graduate-programs/food-science-and-technology/": true,
+    "https://cals.cornell.edu/food-science": true,
+    "https://food-science.uark.edu/": false,
+    "https://www.lsu.edu/agriculture/nfs/index.php": true,
+    "https://foodscience.tamu.edu/graduate-degrees/": true,
+    "https://www.canr.msu.edu/fshn/graduate_programs/food_science_graduate_program": true,
+    "https://catalog.oregonstate.edu/college-departments/agricultural-sciences/food-science-technology/": true,
+    "https://foodscience.tennessee.edu/undergraduate-program/": false,
+    "https://fshn.ifas.ufl.edu/current-students/graduate/phd-food-science/": true,
+    "https://www.bchnhp.msstate.edu/students/foodsci.php": false,
+    "https://falk.syr.edu/food-studies/": false,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/nutrition-and-integrative-physiology": true,
+    "https://agriculture.auburn.edu/students/academics/graduate-degrees/masters-phd-food-science/": true,
+    "https://guide.wisc.edu/graduate/food-science/food-science-phd/": true,
+    "https://www.ucdavis.edu/majors/food-science": true
+  },
+  "verified_lists_per_url": {
+    "https://ag.purdue.edu/department/foodsci/index.html": 0,
+    "https://foodscience.psu.edu/research": 1,
+    "https://foodscience.tamu.edu/faculty-research/": 1,
+    "https://fst.osu.edu/home": 0,
+    "https://foodscience.tennessee.edu/": 0,
+    "https://cals.cornell.edu/food-science/research": 0,
+    "https://www.fst.vt.edu/": 1,
+    "https://steinhardt.nyu.edu/departments/nutrition-and-food-studies": 0,
+    "https://ag.purdue.edu/department/foodsci/who-we-are.html": 2,
+    "https://www.canr.msu.edu/fshn/research": 2,
+    "https://gradschool.oregonstate.edu/programs/1350/food-science-and-technology-phd-ms-minor": 2,
+    "https://catalog.ncsu.edu/graduate/agriculture-life-sciences/food-science/": 30,
+    "https://foodscience.unl.edu/academic-programs/": 1,
+    "https://fshn.ifas.ufl.edu/current-students/graduate/ms-food-science-and-human-nutrition/": 4,
+    "https://www.umass.edu/food-science/": 0,
+    "https://fshn.hs.iastate.edu/graduate-students/graduate-programs/food-science-and-technology/": 2,
+    "https://cals.cornell.edu/food-science": 3,
+    "https://food-science.uark.edu/": 0,
+    "https://www.lsu.edu/agriculture/nfs/index.php": 1,
+    "https://foodscience.tamu.edu/graduate-degrees/": 1,
+    "https://www.canr.msu.edu/fshn/graduate_programs/food_science_graduate_program": 1,
+    "https://catalog.oregonstate.edu/college-departments/agricultural-sciences/food-science-technology/": 3,
+    "https://foodscience.tennessee.edu/undergraduate-program/": 0,
+    "https://fshn.ifas.ufl.edu/current-students/graduate/phd-food-science/": 2,
+    "https://www.bchnhp.msstate.edu/students/foodsci.php": 0,
+    "https://falk.syr.edu/food-studies/": 0,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/nutrition-and-integrative-physiology": 1,
+    "https://agriculture.auburn.edu/students/academics/graduate-degrees/masters-phd-food-science/": 1,
+    "https://guide.wisc.edu/graduate/food-science/food-science-phd/": 3,
+    "https://www.ucdavis.edu/majors/food-science": 2
+  },
+  "total_lists_per_url": {
+    "https://ag.purdue.edu/department/foodsci/index.html": 1,
+    "https://foodscience.psu.edu/research": 1,
+    "https://foodscience.tamu.edu/faculty-research/": 2,
+    "https://fst.osu.edu/home": 1,
+    "https://foodscience.tennessee.edu/": 1,
+    "https://cals.cornell.edu/food-science/research": 1,
+    "https://www.fst.vt.edu/": 3,
+    "https://steinhardt.nyu.edu/departments/nutrition-and-food-studies": 2,
+    "https://ag.purdue.edu/department/foodsci/who-we-are.html": 2,
+    "https://www.canr.msu.edu/fshn/research": 2,
+    "https://gradschool.oregonstate.edu/programs/1350/food-science-and-technology-phd-ms-minor": 3,
+    "https://catalog.ncsu.edu/graduate/agriculture-life-sciences/food-science/": 58,
+    "https://foodscience.unl.edu/academic-programs/": 2,
+    "https://fshn.ifas.ufl.edu/current-students/graduate/ms-food-science-and-human-nutrition/": 5,
+    "https://www.umass.edu/food-science/": 1,
+    "https://fshn.hs.iastate.edu/graduate-students/graduate-programs/food-science-and-technology/": 4,
+    "https://cals.cornell.edu/food-science": 3,
+    "https://food-science.uark.edu/": 1,
+    "https://www.lsu.edu/agriculture/nfs/index.php": 2,
+    "https://foodscience.tamu.edu/graduate-degrees/": 3,
+    "https://www.canr.msu.edu/fshn/graduate_programs/food_science_graduate_program": 2,
+    "https://catalog.oregonstate.edu/college-departments/agricultural-sciences/food-science-technology/": 17,
+    "https://foodscience.tennessee.edu/undergraduate-program/": 3,
+    "https://fshn.ifas.ufl.edu/current-students/graduate/phd-food-science/": 5,
+    "https://www.bchnhp.msstate.edu/students/foodsci.php": 2,
+    "https://falk.syr.edu/food-studies/": 1,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/nutrition-and-integrative-physiology": 8,
+    "https://agriculture.auburn.edu/students/academics/graduate-degrees/masters-phd-food-science/": 3,
+    "https://guide.wisc.edu/graduate/food-science/food-science-phd/": 8,
+    "https://www.ucdavis.edu/majors/food-science": 5
+  },
+  "verified_lists_ids": {
+    "https://ag.purdue.edu/department/foodsci/index.html": [],
+    "https://foodscience.psu.edu/research": [
+      0
+    ],
+    "https://foodscience.tamu.edu/faculty-research/": [
+      1
+    ],
+    "https://fst.osu.edu/home": [],
+    "https://foodscience.tennessee.edu/": [],
+    "https://cals.cornell.edu/food-science/research": [],
+    "https://www.fst.vt.edu/": [
+      0
+    ],
+    "https://steinhardt.nyu.edu/departments/nutrition-and-food-studies": [],
+    "https://ag.purdue.edu/department/foodsci/who-we-are.html": [
+      0,
+      1
+    ],
+    "https://www.canr.msu.edu/fshn/research": [
+      0,
+      1
+    ],
+    "https://gradschool.oregonstate.edu/programs/1350/food-science-and-technology-phd-ms-minor": [
+      0,
+      1
+    ],
+    "https://catalog.ncsu.edu/graduate/agriculture-life-sciences/food-science/": [
+      10,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "https://foodscience.unl.edu/academic-programs/": [
+      0
+    ],
+    "https://fshn.ifas.ufl.edu/current-students/graduate/ms-food-science-and-human-nutrition/": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://www.umass.edu/food-science/": [],
+    "https://fshn.hs.iastate.edu/graduate-students/graduate-programs/food-science-and-technology/": [
+      1,
+      2
+    ],
+    "https://cals.cornell.edu/food-science": [
+      0,
+      1,
+      2
+    ],
+    "https://food-science.uark.edu/": [],
+    "https://www.lsu.edu/agriculture/nfs/index.php": [
+      0
+    ],
+    "https://foodscience.tamu.edu/graduate-degrees/": [
+      0
+    ],
+    "https://www.canr.msu.edu/fshn/graduate_programs/food_science_graduate_program": [
+      1
+    ],
+    "https://catalog.oregonstate.edu/college-departments/agricultural-sciences/food-science-technology/": [
+      0,
+      1,
+      2
+    ],
+    "https://foodscience.tennessee.edu/undergraduate-program/": [],
+    "https://fshn.ifas.ufl.edu/current-students/graduate/phd-food-science/": [
+      0,
+      1
+    ],
+    "https://www.bchnhp.msstate.edu/students/foodsci.php": [],
+    "https://falk.syr.edu/food-studies/": [],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/nutrition-and-integrative-physiology": [
+      3
+    ],
+    "https://agriculture.auburn.edu/students/academics/graduate-degrees/masters-phd-food-science/": [
+      1
+    ],
+    "https://guide.wisc.edu/graduate/food-science/food-science-phd/": [
+      1,
+      2,
+      7
+    ],
+    "https://www.ucdavis.edu/majors/food-science": [
+      0,
+      1
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 152,
+  "url_to_lists": {
+    "https://ag.purdue.edu/department/foodsci/index.html": [
+      [
+        "facebook",
+        "instagram",
+        "twitter",
+        "linkedin"
+      ]
+    ],
+    "https://foodscience.psu.edu/research": [
+      [
+        "Food Chemistry",
+        "Food Microbiology",
+        "Food Engineering, Manufacturing, and Processing",
+        "Sensory and Consumer Science",
+        "Microbial Food Safety",
+        "Sensory and Consumer Science, Food Choice, and Eating Behavior",
+        "Food-Based Solutions for Enhanced Health",
+        "Material Nature of Foods",
+        "Food Quality",
+        "Food Fermentation",
+        "Center for Plant and Mushroom Foods for Health",
+        "E. coli Reference Center",
+        "Our department actively publishes results of our research"
+      ]
+    ],
+    "https://foodscience.tamu.edu/faculty-research/": [
+      [
+        "Dr. Alex Castillo",
+        "Dr. Elsa Murano",
+        "Dr. Suresh Pillai",
+        "Dr. Mian Riaz",
+        "Dr. Steve Talcott",
+        "Dr. Susanne Talcott",
+        "Dr. Reza Ovissipour",
+        "Dr. Seockmo Ku",
+        "Dr. Giridhar Athrey",
+        "Dr. Elena Castell-Perez",
+        "Dr. Luis Cisneros-Zevallos",
+        "Dr. Kerri Gehring",
+        "Dr. Janie McClurkin Moore",
+        "Dr. Rhonda Miller",
+        "Dr. Rosana Moreira, P.E.",
+        "Dr. Wes Osburn",
+        "Dr. Bhimu Patil",
+        "Dr. Stephen B. Smith",
+        "Dr. Matthew Taylor",
+        "Dr. Sapna Chitlapilly Dass"
+      ],
+      [
+        "meat ingredients to improve the shelf",
+        "life and/or safety of red meat with emphasis on development of value",
+        "added red meat products"
+      ]
+    ],
+    "https://fst.osu.edu/home": [
+      [
+        "Ohio State scientist unlocks natural food color alternatives to Red No. 3",
+        "2024 Autumn Dean's List Announced",
+        "Pohlschneider named Drake Institute Affiliate Member"
+      ]
+    ],
+    "https://foodscience.tennessee.edu/": [
+      [
+        "UndergraduateExpand content upUndergraduate",
+        "GraduateExpand content upGraduate",
+        "ResearchExpand content upResearch",
+        "ExtensionExpand content upExtension"
+      ]
+    ],
+    "https://cals.cornell.edu/food-science/research": [
+      [
+        "based foods, including thermal and non",
+        "thermal technologies for food preservation and up",
+        "cycling byproducts to increase economic viability of farm",
+        "scale processors."
+      ]
+    ],
+    "https://www.fst.vt.edu/": [
+      [
+        "Food and Beverage Fermentation",
+        "Food Safety and Food Microbiology",
+        "Phytochemicals and Functional Foods for Health",
+        "Food Processing and Engineering",
+        "Food and Flavor Chemistry and Sensory Science",
+        "Aquaculture"
+      ],
+      [
+        "Undergraduate Program",
+        "Graduate Program",
+        "Study Abroad"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "Twitter",
+        "Threads",
+        "LinkedIn"
+      ]
+    ],
+    "https://steinhardt.nyu.edu/departments/nutrition-and-food-studies": [
+      [
+        "Programs and Degrees",
+        "Study Abroad",
+        "Undergraduate",
+        "Graduate",
+        "Admissions",
+        "Paying for Your Education",
+        "Master's",
+        "Follow Our Department!"
+      ],
+      [
+        "part series extracurricular course designed to teach graduate students the tenets of evidence",
+        "based, whole",
+        "food, plant",
+        "based nutrition for the prevention and treatment of common chronic diseases."
+      ]
+    ],
+    "https://ag.purdue.edu/department/foodsci/who-we-are.html": [
+      [
+        "Food chemistry, structure & function",
+        "Foods for health",
+        "Food safety & microbiology",
+        "Food processing & technology development"
+      ],
+      [
+        "Who We Are",
+        "Undergraduate and Graduate programs",
+        "research",
+        "extension and outreach",
+        "Vision",
+        "Mission",
+        "Values"
+      ]
+    ],
+    "https://www.canr.msu.edu/fshn/research": [
+      [
+        "Biochemical and Molecular Nutrition",
+        "Human Nutrition",
+        "Food Processing and Quality Enhancement",
+        "Food Safety and Toxicology"
+      ],
+      [
+        "Nutrition",
+        "International Development",
+        "Food Regulations",
+        "Processing Facilities",
+        "Food@MSU"
+      ]
+    ],
+    "https://gradschool.oregonstate.edu/programs/1350/food-science-and-technology-phd-ms-minor": [
+      [
+        "Flavor chemistry",
+        "Food chemistry/biochemistry",
+        "Food and health",
+        "Food microbiology/biotechnology",
+        "Sensory science",
+        "Sustainable food manufacturing"
+      ],
+      [
+        "Dairy",
+        "Enology/brewing/distilling",
+        "Seafood"
+      ],
+      [
+        "Main Audience Menu",
+        "Breadcrumb",
+        "Description",
+        "Concentrations",
+        "Campus",
+        "Links",
+        "Application process",
+        "Deadlines",
+        "Links"
+      ]
+    ],
+    "https://catalog.ncsu.edu/graduate/agriculture-life-sciences/food-science/": [
+      [
+        "A personal statement",
+        "A transcript from each university attended",
+        "Three letters of recommendation",
+        "A resume or CV",
+        "English proficiency scores (non-US citizen applicants)"
+      ],
+      [
+        "Fall:\u00a0June 25 (US); March 1 (Int)",
+        "Spring:\u00a0November 25 (US); July 15 (Int)",
+        "Summer 1:\u00a0March 25 (US); December 15 (Int)",
+        "Summer 2:\u00a0May 10 (US); December 15 (Int)"
+      ],
+      [
+        "Food Science (MR)",
+        "Food Science (MS)",
+        "Food Science (PhD)",
+        "Food Science (Minor)"
+      ],
+      [
+        "Jonathan C. Allen",
+        "Kenneth E. Anderson",
+        "Rodolphe Barrangou",
+        "Frederick Breidt",
+        "Benjamin James Chapman",
+        "Lisa Louise Dean",
+        "Mary Anne Drake",
+        "Lora Suzanne Goodell",
+        "Scott A. Hale",
+        "Gabriel Keith Harris",
+        "Hosni Moustafa Hassan",
+        "Lee-Ann Jaykus",
+        "Sophia Kathariou",
+        "Saad A. Khan",
+        "Colin David Kay",
+        "Mary Ann Lila",
+        "K. P. Sandeep",
+        "John Douglas Sheppard"
+      ],
+      [
+        "April Fogleman",
+        "Dana J. Hanson",
+        "Suzanne Dunn Johanningsmeier",
+        "Slavko Komarnytsky",
+        "Andrew Peter Neilson",
+        "Ilenys Muniz Perez-Diaz",
+        "Clinton Dale Stevenson"
+      ],
+      [
+        "Alexander Vladimirovich Chouljenko",
+        "Lynette Marie Johnston",
+        "Marvin Leonel Moncada Reyes",
+        "Deepti Arvind Salvi",
+        "Ondulla Tyvette Toomer",
+        "Minliang Yang",
+        "Haotian Zheng"
+      ],
+      [
+        "Fernanda Bottaro de Oliveira Santos",
+        "Josip Simunovic",
+        "Nicola Singletary"
+      ],
+      [
+        "Pablo Marcelo Coronel",
+        "Jack Parker Davis",
+        "Brian E. Farkas",
+        "Mario Giovanni Ferruzzi",
+        "William Ronald Aimutis Jr.",
+        "Katherine Patterson Maloney",
+        "Tawanda Muzhingi",
+        "Shengmin Sang"
+      ],
+      [
+        "College of Agriculture and Life Sciences",
+        "The Graduate School",
+        "Learning Outcomes",
+        "Graduate Salary Data",
+        "Full Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Practice/Research/Teaching Professors",
+        "Adjunct Faculty"
+      ],
+      [
+        "FS\u00a0501/NTR\u00a0401/FS\u00a0401/NTR\u00a0501\u00a0\u00a0Advanced Nutrition and Metabolism\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: (NTR\u00a0301 or NTR\u00a0415) and (CH\u00a0221 or CH\u00a0220 or CH\u00a0225)",
+        "Typically offered in Fall and Summer"
+      ],
+      [
+        "FS\u00a0501/NTR\u00a0401/FS\u00a0401/NTR\u00a0501",
+        "Advanced Nutrition and Metabolism",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0502/FS\u00a0402\u00a0\u00a0Chemistry of Food and Bioprocessed Materials\u00a0\u00a0(4 credit hours)",
+        "Prerequisite: CH\u00a0220 or 221 or 225",
+        "Typically offered in Fall only"
+      ],
+      [
+        "FS\u00a0502/FS\u00a0402",
+        "Chemistry of Food and Bioprocessed Materials",
+        "(4 credit hours)"
+      ],
+      [
+        "FS\u00a0505/MB\u00a0505/FS\u00a0405/MB\u00a0405\u00a0\u00a0Food Microbiology\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: MB 351",
+        "Typically offered in Spring only"
+      ],
+      [
+        "FS\u00a0505/MB\u00a0505/FS\u00a0405/MB\u00a0405",
+        "Food Microbiology",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0506/MB\u00a0506/FS\u00a0406/MB\u00a0406\u00a0\u00a0Food Microbiology Lab\u00a0\u00a0(1 credit hours)",
+        "Prerequisite: MB 351 and Corequisite: FS\u00a0405 or FS\u00a0505",
+        "Typically offered in Spring only"
+      ],
+      [
+        "FS\u00a0506/MB\u00a0506/FS\u00a0406/MB\u00a0406",
+        "Food Microbiology Lab",
+        "(1 credit hours)"
+      ],
+      [
+        "FS\u00a0516/FS\u00a0416",
+        "Quality Control in Food and Bioprocessing",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0520/FSA\u00a0520",
+        "Pre-Harvest Food Safety",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0521/FS\u00a0421\u00a0\u00a0Food Preservation\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: FS 231 and FS\u00a0405",
+        "Typically offered in Fall only"
+      ],
+      [
+        "FS\u00a0521/FS\u00a0421",
+        "Food Preservation",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0522\u00a0\u00a0Food Packaging\u00a0\u00a0(3 credit hours)",
+        "Typically offered in Spring only",
+        "This course is offered alternate odd years"
+      ],
+      [
+        "FS\u00a0522",
+        "Food Packaging",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0526/BEC\u00a0526/BBS\u00a0426/FS\u00a0426/BEC\u00a0426/BBS\u00a0526",
+        "Upstream Biomanufacturing Laboratory",
+        "(2 credit hours)"
+      ],
+      [
+        "FS\u00a0535/FS\u00a0435\u00a0\u00a0Food Safety Management Systems\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: FS\u00a0250",
+        "Typically offered in Spring only"
+      ],
+      [
+        "FS\u00a0535/FS\u00a0435",
+        "Food Safety Management Systems",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0540/FSA\u00a0540\u00a0\u00a0Food Safety and Public Health\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: MB 351/352",
+        "Typically offered in Spring only"
+      ],
+      [
+        "FS\u00a0540/FSA\u00a0540",
+        "Food Safety and Public Health",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0553/FS\u00a0453",
+        "Food Laws and Regulations",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0554/NTR\u00a0554\u00a0\u00a0Lactation, Milk, and Nutrition\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: ANS\u00a0230 or FS/NTR 400; BCH\u00a0451 or ZO 421",
+        "Typically offered in Spring only",
+        "This course is offered alternate even years"
+      ],
+      [
+        "FS\u00a0554/NTR\u00a0554",
+        "Lactation, Milk, and Nutrition",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0555/NTR\u00a0555\u00a0\u00a0Exercise Nutrition\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: NTR 400/500",
+        "Typically offered in Spring only",
+        "This course is offered alternate odd years"
+      ],
+      [
+        "FS\u00a0555/NTR\u00a0555",
+        "Exercise Nutrition",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0557/NTR\u00a0557",
+        "Nutraceuticals and Functional Foods",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0558/NTR\u00a0558/TOX\u00a0558\u00a0\u00a0Food Toxicology\u00a0\u00a0(3 credit hours)",
+        "Typically offered in Fall only",
+        "This course is offered alternate even years"
+      ],
+      [
+        "FS\u00a0558/NTR\u00a0558/TOX\u00a0558",
+        "Food Toxicology",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0567\u00a0\u00a0Sensory Analysis of Foods\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: Statistics 511",
+        "Typically offered in Spring only"
+      ],
+      [
+        "FS\u00a0567",
+        "Sensory Analysis of Foods",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0580/FSA\u00a0580\u00a0\u00a0Professional Development and Ethics in Food Safety\u00a0\u00a0(1 credit hours)",
+        "Prerequisite: FSA\u00a0520 or FSA\u00a0530 or FS\u00a0540",
+        "Typically offered in Spring only"
+      ],
+      [
+        "FS\u00a0580/FSA\u00a0580",
+        "Professional Development and Ethics in Food Safety",
+        "(1 credit hours)"
+      ],
+      [
+        "FS\u00a0591\u00a0\u00a0Special Problems In Food Science\u00a0\u00a0(1-6 credit hours)",
+        "Prerequisite: Graduate standing or Senior standing",
+        "Typically offered in Fall, Spring, and Summer"
+      ],
+      [
+        "FS\u00a0591",
+        "Special Problems In Food Science",
+        "(1-6 credit hours)"
+      ],
+      [
+        "FS\u00a0620\u00a0\u00a0Special Problems In Food Science\u00a0\u00a0(1-6 credit hours)",
+        "Prerequisite: Graduate standing or Senior standing",
+        "Typically offered in Fall, Spring, and Summer"
+      ],
+      [
+        "FS\u00a0620",
+        "Special Problems In Food Science",
+        "(1-6 credit hours)"
+      ],
+      [
+        "FS\u00a0685",
+        "Master's Supervised Teaching",
+        "(1-3 credit hours)"
+      ],
+      [
+        "FS\u00a0690",
+        "Master's Examination",
+        "(1-9 credit hours)"
+      ],
+      [
+        "FS\u00a0699",
+        "Master's Thesis Preparation",
+        "(1-9 credit hours)"
+      ],
+      [
+        "FS\u00a0725/MB\u00a0725\u00a0\u00a0Fermentation Microbiology\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: BCH\u00a0451, MB 351",
+        "Typically offered in Spring only",
+        "This course is offered alternate years"
+      ],
+      [
+        "FS\u00a0725/MB\u00a0725",
+        "Fermentation Microbiology",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0741\u00a0\u00a0Thermal Processing of Foods\u00a0\u00a0(3 credit hours)",
+        "Prerequisite: FS 231",
+        "Typically offered in Spring only",
+        "This course is offered alternate odd years"
+      ],
+      [
+        "FS\u00a0741",
+        "Thermal Processing of Foods",
+        "(3 credit hours)"
+      ],
+      [
+        "FS\u00a0780",
+        "Seminar In Food Science",
+        "(1 credit hours)"
+      ],
+      [
+        "FS\u00a0791",
+        "Special Problems in Food Science",
+        "(1-6 credit hours)"
+      ],
+      [
+        "FS\u00a0820\u00a0\u00a0Special Problems In Food Science\u00a0\u00a0(1-6 credit hours)",
+        "Prerequisite: Graduate standing or Senior standing",
+        "Typically offered in Fall, Spring, and Summer"
+      ],
+      [
+        "FS\u00a0820",
+        "Special Problems In Food Science",
+        "(1-6 credit hours)"
+      ],
+      [
+        "FS\u00a0885",
+        "Doctoral Supervised Teaching",
+        "(1-3 credit hours)"
+      ],
+      [
+        "FS\u00a0890",
+        "Doctoral Preliminary Exam",
+        "(1-9 credit hours)"
+      ],
+      [
+        "FS\u00a0899",
+        "Doctoral Dissertation Preparation",
+        "(1-9 credit hours)"
+      ]
+    ],
+    "https://foodscience.unl.edu/academic-programs/": [
+      [
+        "Food Product Development Scientist",
+        "Sensory Scientist",
+        "Food Microbiologist",
+        "Food Safety Expert",
+        "Food Chemist",
+        "Food Process Design Engineer",
+        "Quality Control Supervisor",
+        "Regulatory Affairs Specialist"
+      ],
+      [
+        "Bachelor's Degree - Food Science & Technology",
+        "M.S. and Ph.D. - Food Science and Technology",
+        "Food Safety & Defense Graduate Certificate Program"
+      ]
+    ],
+    "https://fshn.ifas.ufl.edu/current-students/graduate/ms-food-science-and-human-nutrition/": [
+      [
+        "HUN 5441: Metabolic Response to Enteral and Parenteral Nutrition",
+        "HUN 5447: Nutrition and Immunity",
+        "HUN 6245: Advanced Human Nutrition",
+        "HUN 6255: Clinical Nutrition",
+        "HUN 6301: Nutrition Aspects of Lipid Metabolism",
+        "HUN 6305: Nutritional Aspects of Carbohydrates",
+        "HUN 6321: Proteins and Amino Acids in Nutrition",
+        "HUN 6331: Vitamins in Human Nutrition",
+        "HUN 6356: Minerals in Nutrition",
+        "HUN 6812: Analytical Techniques in Nutrition Biochemistry",
+        "HUN 6938: Nutritional Sciences Seminar and Colloquium",
+        "FOS 6915: Research Planning or approved substitute",
+        "STA 6166: Statistical Methods in Research I",
+        "BCH 6206: Advanced Metabolism"
+      ],
+      [
+        "HUN 5441: Metabolic Response to Enteral and Parenteral Nutrition",
+        "HUN 5447: Nutrition and Immunity",
+        "HUN 6245: Advanced Human Nutrition",
+        "HUN 6255: Clinical Nutrition",
+        "HUN 6301: Nutrition Aspects of Lipid Metabolism",
+        "HUN 6305: Nutritional Aspects of Carbohydrates",
+        "HUN 6321: Proteins and Amino Acids in Nutrition",
+        "HUN 6331: Vitamins in Human Nutrition",
+        "HUN 6356: Minerals in Nutrition",
+        "HUN 6812: Analytical Techniques in Nutrition Biochemistry",
+        "HUN 6938: Nutritional Sciences Seminar and Colloquium",
+        "FOS 6915: Research Planning or approved substitute",
+        "STA 6166: Statistical Methods in Research I",
+        "BCH 6206: Advanced Metabolism"
+      ],
+      [
+        "HUN 5441: Metabolic Response to Enteral and Parenteral Nutrition",
+        "HUN 5447: Nutrition and Immunity",
+        "HUN 6245: Advanced Human Nutrition",
+        "HUN 6255: Clinical Nutrition",
+        "HUN 6301: Nutrition Aspects of Lipid Metabolism",
+        "HUN 6305: Nutritional Aspects of Carbohydrates",
+        "HUN 6321: Proteins and Amino Acids in Nutrition",
+        "HUN 6331: Vitamins in Human Nutrition",
+        "HUN 6356: Minerals in Nutrition",
+        "HUN 6812: Analytical Techniques in Nutrition Biochemistry"
+      ],
+      [
+        "Current Food Science and Human Nutrition graduate student?",
+        "Food Science Track",
+        "Nutritional Sciences Track",
+        "We Are Developing a Game-Changing Technique to Save Strawberries",
+        "The Threat of Enteric Viruses in Agricultural Water"
+      ],
+      [
+        "Financial Assistance\r\n\n\n\n\n\n\r\nFinancial Assistance",
+        "Graduate Admissions\r\n\n\n\n\n\n\n\r\nGraduate Admissions",
+        "Graduate Resources\r\n\n\n\n\n\n\r\nGraduate Resources",
+        "Graduate Program FAQs\r\n\n\n\n\n\n\r\nGraduate Program FAQs"
+      ]
+    ],
+    "https://www.umass.edu/food-science/": [
+      [
+        "Newsletters\n      Newsletters",
+        "Videos\n      Videos",
+        "History\n      History",
+        "Diversity, Equity, & Inclusion\n      Diversity, Equity, & Inclusion"
+      ]
+    ],
+    "https://fshn.hs.iastate.edu/graduate-students/graduate-programs/food-science-and-technology/": [
+      [
+        "Master of Science",
+        "Doctor of Philosophy and Technology",
+        "Graduate minor"
+      ],
+      [
+        "Learning Outcomes",
+        "Outcomes Assessment",
+        "Prerequisite",
+        "Program of Study (POS) Committee",
+        "Master\u2019s Thesis Option POS Committee",
+        "Doctoral POS Committee",
+        "Food Science and Technology Graduate Minor Curriculum",
+        "Related Minors",
+        "Brenda Emery"
+      ],
+      [
+        "Food Science and Technology",
+        "Food science and technology program offers these degrees:",
+        "Food Science and Technology Handbook",
+        "Graduate College Handbook",
+        "Learning Outcomes",
+        "Outcomes Assessment",
+        "Prerequisite",
+        "General Requirements",
+        "Program of Study (POS) Committee",
+        "Master\u2019s Thesis Option POS Committee",
+        "Doctoral POS Committee",
+        "Minor in Food Science and Technology",
+        "Food Science and Technology Graduate Minor Curriculum",
+        "Related Minors"
+      ],
+      [
+        "220 Mackay Hall\n2302 Osborn Drive\nAmes, IA 50011-1078",
+        "515-294-6442",
+        "fshngraduate@iastate.edu"
+      ]
+    ],
+    "https://cals.cornell.edu/food-science": [
+      [
+        "Food Science",
+        "Field Crops",
+        "Animals"
+      ],
+      [
+        "Food Science",
+        "Environment",
+        "Natural Resources"
+      ],
+      [
+        "Food Science",
+        "Plants",
+        "Horticulture"
+      ]
+    ],
+    "https://food-science.uark.edu/": [
+      [
+        "Goya\u00ae Scholarship Program",
+        "Department of Food Science",
+        "Related Sites",
+        "Updates & Social"
+      ]
+    ],
+    "https://www.lsu.edu/agriculture/nfs/index.php": [
+      [
+        "Food & Health",
+        "Food Safety and Microbiology Testing Labs",
+        "Sensory Services Lab",
+        "LSU AgCenter FOODii",
+        "Seafood Processing Demonstration Lab"
+      ],
+      [
+        "Football",
+        "Things to Do on Campus",
+        "How Much is Tuition?"
+      ]
+    ],
+    "https://foodscience.tamu.edu/graduate-degrees/": [
+      [
+        "Graduate and Professional School",
+        "Graduate and Professional Academic Forms",
+        "Important Dates and Deadlines",
+        "Thesis and Dissertation Services",
+        "Steps to Fulfill Master\u2019s Degree Requirements",
+        "Steps to Fulfill Doctoral Degree Requirements",
+        "Document Processing Submission System",
+        "Professional Development",
+        "Ombuds Services (Student Grievances)"
+      ],
+      [
+        "M.S. Food Science and Technology",
+        "M.Agr. Food Science and Technology",
+        "Ph.D. Food Science and Technology",
+        "Texas A&M Graduate and Professional School",
+        "Department and other Campus Resources",
+        "English\u00a0Language Proficiency"
+      ],
+      [
+        "Position",
+        "Food Safety, Quality, and Regulatory Associate",
+        "Business Technology Solutions Analyst",
+        "Assistant Professor",
+        "R&D Associate Scientist",
+        "Senior Food Technologist",
+        "Food Scientist",
+        "Junior Formulation Consultant"
+      ]
+    ],
+    "https://www.canr.msu.edu/fshn/graduate_programs/food_science_graduate_program": [
+      [
+        "Food Science Graduate Program",
+        "Masters Degree:",
+        "Ph.D. Degree:",
+        "Ph.D. Dual Major Graduate Program in Toxicology at MSU",
+        "Research Areas and Faculty:",
+        "Facilities",
+        "Affiliates",
+        "FSHN Forms"
+      ],
+      [
+        "To find out more about this cooperating program, call 517-353-6469, or e-mail tox@msu.edu.",
+        "Food Processing and Quality Enhancement",
+        "Food Safety and Toxicology",
+        "Food Processing and Quality Enhancement",
+        "Dr. Kirk Dolan, (517) 353-3333, dolank@msu.edu",
+        "Dr. Jongkyoo Kim, (517) 355-8415, kimjon48@msu.edu",
+        "Dr. Jeff Swada, (517) 884-5993, swadajef@msu.edu",
+        "Food Safety and Toxicology",
+        "Dr. Ahmed Abdelhamid, (517) 353-3353, abdelh30@msu.edu",
+        "Dr. Teresa Bergholz, (517) 353-3305, tmb@msu.edu",
+        "Dr. Courtney Carignan, (517) 884-2039, carigna4@msu.edu",
+        "Dr. James Pestka, (517) 353-1709, pestka@msu.edu",
+        "Dr. Felicia Wu, (517) 432-4442, fwu@msu.edu"
+      ]
+    ],
+    "https://catalog.oregonstate.edu/college-departments/agricultural-sciences/food-science-technology/": [
+      [
+        "Enology and Viticulture",
+        "Fermentation Science",
+        "Food Science"
+      ],
+      [
+        "Enology and Viticulture",
+        "Fermentation Science",
+        "Food Science"
+      ],
+      [
+        "Fermentation Science",
+        "Food Manufacturing",
+        "Food Science",
+        "Food Technology"
+      ],
+      [
+        "Major",
+        "Minors",
+        "Certificate",
+        "Major",
+        "Minor"
+      ],
+      [
+        "Attributes: HNRS \u2013 Honors Course Designator",
+        "Equivalent to: FST\u00a0399",
+        "This course is repeatable for 16 credits."
+      ],
+      [
+        "Equivalent to: MB\u00a0579",
+        "Recommended: (BB\u00a0350 or BB\u00a0450) and MB\u00a0302",
+        "Available via Ecampus"
+      ],
+      [
+        "or better or CH\u00a0231H (may be taken concurrently) with C",
+        "or better) and (CH\u00a0261 (may be taken concurrently) [C",
+        "] or CH\u00a0261H (may be taken concurrently) [C"
+      ],
+      [
+        "or better or BI\u00a0211H with D",
+        "or better or BI\u00a0212 with D",
+        "or better or BI\u00a0212H with D",
+        "or better or BI\u00a0213 with D",
+        "or better or BI\u00a0213H with D",
+        "or better or BI\u00a0221 with D",
+        "or better or BI\u00a0221H with D",
+        "or better or BI\u00a0222 with D",
+        "or better or BI\u00a0222H with D",
+        "or better or BI\u00a0223 with D",
+        "or better or BI\u00a0223H with D",
+        "or better) and (CH\u00a0121 [D",
+        "] or CH 221 [D",
+        "] or CH 221H [D",
+        "] or CH\u00a0231 [D",
+        "] or CH\u00a0231H [D"
+      ],
+      [
+        "Core Ed",
+        "Writing Intensive Curriculum (WIC); CWIC",
+        "Bacc Core, Skills, Writing Intensive Curriculum (WIC)"
+      ],
+      [
+        "or better and (WR\u00a0121 [C",
+        "] or WR\u00a0121H [C",
+        "] or WR\u00a0121Z [C",
+        "] or WR\u00a0121HZ [C",
+        "]) and (MB\u00a0302 (may be taken concurrently) [D",
+        "] or MB\u00a0302H (may be taken concurrently) [D"
+      ],
+      [
+        "or better or ST\u00a0411 with C",
+        "or better) and (ST\u00a0352 (may be taken concurrently) [D",
+        "] or ST\u00a0412 (may be taken concurrently) [D"
+      ],
+      [
+        "or better or BB\u00a0450 with D",
+        "or better or BB 450H with D",
+        "or better) and (CH\u00a0332 [C",
+        "] or CH\u00a0336 [C",
+        "]) and (MTH\u00a0228 (may be taken concurrently) [D",
+        "] or MTH\u00a0252 (may be taken concurrently) [D",
+        "] or MTH\u00a0252H (may be taken concurrently) [D"
+      ],
+      [
+        "or better or BI\u00a0221 with C",
+        "or better or BI\u00a0221H with C",
+        "or better) and CH\u00a0331 [C",
+        "] and CH\u00a0332 [C"
+      ],
+      [
+        "or better and (MB\u00a0302 [D",
+        "] or MB\u00a0302H [D",
+        "]) and (MB\u00a0303 (may be taken concurrently) [D",
+        "] or MB 303H (may be taken concurrently) [D"
+      ],
+      [
+        "or better or MTH\u00a0251 with C",
+        "or better or MTH\u00a0251H with C",
+        "or better) and (PH\u00a0201 [C",
+        "] or PH\u00a0211 [C",
+        "] or PH\u00a0211H [C",
+        "]) and FST\u00a0360 [D"
+      ],
+      [
+        "or better or BB\u00a0450 with D",
+        "or better) and (MB\u00a0302 [D",
+        "] or MB\u00a0302H [D"
+      ],
+      [
+        "or better or MTH\u00a0111Z with C",
+        "or better) and PH\u00a0201 [C",
+        "] and CH\u00a0331 [C"
+      ]
+    ],
+    "https://foodscience.tennessee.edu/undergraduate-program/": [
+      [
+        "Science Concentration",
+        "Pre-Professional Concentration",
+        "Pre-Professional Concentration 3 + 1",
+        "Five-Year BS/MS",
+        "Food Science Minor",
+        "Common Job Opportunities",
+        "Professional Associations",
+        "Resources",
+        "Alumni"
+      ],
+      [
+        "Sensory Scientist",
+        "Quality Assurance Technician",
+        "Product Development Scientist",
+        "Food Production Manager",
+        "Quality Control Scientist",
+        "Food Scientist"
+      ],
+      [
+        "Institute of Food Technologists",
+        "International Association for Food Protection",
+        "American Society for Microbiology",
+        "American Meat Science Association",
+        "American Dairy Science Association",
+        "American Oil Chemists Society",
+        "American Chemical Society",
+        "UT Chapter of Gamma Sigma Delta"
+      ]
+    ],
+    "https://fshn.ifas.ufl.edu/current-students/graduate/phd-food-science/": [
+      [
+        "Current Issues in Food Safety",
+        "Principles of Food Microbiology",
+        "Citrus Processing Technology",
+        "Current Issues in Food Regulation",
+        "Psychophysical Aspects of Foods",
+        "Advanced Food Microbiology",
+        "Advanced Food Chemistry",
+        "Flavor Chemistry and Technology",
+        "Advanced Food Processing",
+        "Industrial Food Fermentations",
+        "Proteins & Enzymes in Food Systems",
+        "Carbohydrates in Food Systems",
+        "Food Science and Technology Seminar"
+      ],
+      [
+        "Current Issues in Food Safety",
+        "Principles of Food Microbiology",
+        "Citrus Processing Technology",
+        "Current Issues in Food Regulation",
+        "Psychophysical Aspects of Foods",
+        "Advanced Food Microbiology",
+        "Advanced Food Chemistry",
+        "Flavor Chemistry and Technology",
+        "Advanced Food Processing",
+        "Industrial Food Fermentations",
+        "Proteins & Enzymes in Food Systems",
+        "Carbohydrates in Food Systems",
+        "Food Science and Technology Seminar"
+      ],
+      [
+        "Industry",
+        "Academia",
+        "Government"
+      ],
+      [
+        "Financial Assistance\r\n\n\n\n\n\n\r\nFinancial Assistance",
+        "Graduate Admissions\r\n\n\n\n\n\n\n\r\nGraduate Admissions",
+        "Graduate Resources\r\n\n\n\n\n\n\r\nGraduate Resources",
+        "Graduate Program FAQs\r\n\n\n\n\n\n\r\nGraduate Program FAQs"
+      ],
+      [
+        "Graduate Resources\r\n\n\n\n\n\n\r\nGraduate Resources",
+        "Graduate Program FAQs\r\n\n\n\n\n\n\n\r\nGraduate Program FAQs",
+        "Graduate Resources\r\n\n\n\n\n\n\r\nGraduate Resources",
+        "Graduate Program FAQs\r\n\n\n\n\n\n\r\nGraduate Program FAQs"
+      ]
+    ],
+    "https://www.bchnhp.msstate.edu/students/foodsci.php": [
+      [
+        "Consumer Safety Officer",
+        "Food Inspector",
+        "Food Law",
+        "Food Microbiologist",
+        "Food Policy Analyst",
+        "Food Scientist and Technologist",
+        "Processing/Food Engineer",
+        "Product Development Technologist",
+        "Research Scientist"
+      ],
+      [
+        "View the curriculum",
+        "Careers",
+        "Food Science Minor",
+        "Meat Science Endorsement",
+        "Transfer Guide",
+        "Internships",
+        "Scholarships",
+        "Organizations"
+      ]
+    ],
+    "https://falk.syr.edu/food-studies/": [
+      [
+        "Recipe for change: Food Studies programs at Syracuse",
+        "Super Nutritious",
+        "Trust the Process",
+        "Welcome Back!",
+        "Lunch is Served"
+      ]
+    ],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/nutrition-and-integrative-physiology": [
+      [
+        "General Bulletins",
+        "Graduate Departments",
+        "Graduate Department of Nutrition and Integrative Physiology"
+      ],
+      [
+        "Nutrition education and lifestyle modification interventions",
+        "Functional foods and Microbiome in health and disease",
+        "Effects of various exercise interventions on cardiometabolic health"
+      ],
+      [
+        "Main navigation Pulldown",
+        "Main navigation Pulldown",
+        "2024-2025 GRADUATE BULLETIN",
+        "Graduate Department of\u00a0Health, Nutrition, and Food Sciences",
+        "Research Facilities",
+        "Scholarships and Fellowships",
+        "Master of Science (MS) in Nutrition and Food Science",
+        "Master of Science (MS) in Exercise Physiology",
+        "Doctor of Philosophy (PhD) Programs",
+        "Definition of Prefixes",
+        "Graduate Courses",
+        "Looking for something else?"
+      ],
+      [
+        "College of Education, Health, and Human Sciences",
+        "Graduate Bulletin",
+        "Undergraduate Bulletin",
+        "Mailing Address",
+        "Hours"
+      ],
+      [
+        "Graduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "Undergraduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "ray absorptiometry (DXA) units used for our bone mineral density (BMD) and body",
+        "composition studies; an electrocardiography machine (ECG) for heart rhythms; and multiple",
+        "speed refrigerated centrifuge, texture analyzer, and a micro",
+        "computed tomography 3D scanner (micro",
+        "CT) for bone analysis."
+      ],
+      [
+        "situ and in",
+        "vivo muscle function in rodents, RT",
+        "PCR, Western blotting, immunohistochemistry, and other biochemistry lab techniques."
+      ]
+    ],
+    "https://agriculture.auburn.edu/students/academics/graduate-degrees/masters-phd-food-science/": [
+      [
+        "GRA M.S.: $18,000 and Ph.D.: $21,000 per year.",
+        "GRA receives a full tuition waiver.",
+        "Salaries are paid in accordance with the budget policies and payroll procedures of the university."
+      ],
+      [
+        "Effectively communicate research findings to a broad audience in written or oral formats.",
+        "Demonstrate food science knowledge commensurate with the doctoral level.",
+        "Possess\u00a0an understanding of the scientific process.",
+        "Solve food science-related problems.",
+        "Demonstrate an understanding of experimental design.",
+        "Statistically analyze and interpret data as well as draw valid conclusions."
+      ],
+      [
+        "DOCTOR OF PHILOSOPHY (PH.D.)",
+        "LEARNING OUTCOMES",
+        "CURRICULUM & REQUIREMENTS",
+        "Master of Science (M.S.)",
+        "LEARNING OUTCOMES",
+        "CURRICULUM & REQUIREMENTS",
+        "Master of Agriculture\u00a0(M.Ag.)",
+        "LEARNING OUTCOMES",
+        "CURRICULUM & REQUIREMENTS"
+      ]
+    ],
+    "https://guide.wisc.edu/graduate/food-science/food-science-phd/": [
+      [
+        "Develops breadth through competencies in minor field(s) of study.",
+        "Fosters ethical and professional conduct.",
+        "Communicates complex ideas in a succinct and understandable manner to diverse audiences.",
+        "Develops mentoring and teaching skills."
+      ],
+      [
+        "Overview",
+        "Admissions",
+        "Funding",
+        "Requirements",
+        "Policies",
+        "Professional Development",
+        "Learning Outcomes",
+        "People"
+      ],
+      [
+        "Admissions",
+        "Funding",
+        "Minimum Graduate School Requirements",
+        "Major Requirements",
+        "Graduate School Policies",
+        "Major-Specific Policies",
+        "Professional Development",
+        "Learning Outcomes",
+        "People"
+      ],
+      [
+        "Graduate School Resources",
+        "Program Resources",
+        "Mode of Instruction",
+        "Curricular Requirements",
+        "Required Courses",
+        "Prior Coursework",
+        "Probation",
+        "Advisor / Committee",
+        "Credits Per Term Allowed",
+        "Time Limits",
+        "Grievances and Appeals",
+        "Other",
+        "Graduate School Resources",
+        "Faculty",
+        "Resources",
+        "Quick Links",
+        "Madison, WI",
+        "Ask Bucky",
+        "Social Media"
+      ],
+      [
+        "Mode of Instruction Definitions",
+        "Graduate Credits Earned at Other Institutions",
+        "Undergraduate Credits Earned at Other Institutions or UW-Madison",
+        "Credits Earned as a University Special Student at UW\u2013Madison",
+        "College of Agricultural and Life Sciences: Grievance Policy"
+      ],
+      [
+        "Requirements",
+        "Fall Deadline",
+        "Spring Deadline",
+        "Summer Deadline",
+        "GRE (Graduate Record Examinations)",
+        "English Proficiency Test",
+        "Other Test(s) (e.g., GMAT, MCAT)",
+        "Letters of Recommendation Required"
+      ],
+      [
+        "Requirements",
+        "Minimum Credit Requirement",
+        "Minimum Residence Credit Requirement",
+        "Minimum Graduate Coursework Requirement",
+        "Overall Graduate GPA Requirement",
+        "Other Grade Requirements",
+        "Assessments and Examinations",
+        "Language Requirements",
+        "Graduate School Breadth Requirements"
+      ],
+      [
+        "Teaching Practicum",
+        "FOOD\u00a0SCI\u00a0799",
+        "Graduate Seminar",
+        "PhD students must enroll in seminar (1 credit) each semester they are enrolled in the program.",
+        "FOOD\u00a0SCI\u00a0900",
+        "Food Science Coursework",
+        "Students must complete two of the following courses:",
+        "FOOD\u00a0SCI\u00a0725",
+        "FOOD\u00a0SCI/\u200bAN\u00a0SCI\u00a0\u00a0711",
+        "FOOD\u00a0SCI\u00a0611",
+        "Statistics",
+        "Students must complete one of the following options:",
+        "F&W\u00a0ECOL/\u200bSTAT\u00a0\u00a0571",
+        "STAT/\u200bF&W\u00a0ECOL\u00a0\u00a0572",
+        "Research Ethics and Responsibility",
+        "Students must complete one of the following courses:",
+        "PATH\u00a0755",
+        "SURG\u00a0SCI\u00a0812",
+        "Scientific Writing",
+        "Students must complete one of the following courses:",
+        "LSC\u00a0430",
+        "LSC\u00a0560",
+        "Breadth",
+        "Electives",
+        "Total Credits"
+      ]
+    ],
+    "https://www.ucdavis.edu/majors/food-science": [
+      [
+        "Brewmaster",
+        "Chemist",
+        "Food Production/Supply Chain Manager",
+        "Food Safety Specialist",
+        "Microbiologist",
+        "Process Development Engineer",
+        "Product Development Scientist",
+        "Quality Assurance Specialist",
+        "Sales/Purchasing Representative",
+        "Sensory Scientist"
+      ],
+      [
+        "Chemistry",
+        "Microbiology",
+        "Food engineering",
+        "Sensory evaluation",
+        "Food and agriculture business",
+        "Health"
+      ],
+      [
+        "Ghirardelli Chocolate Company",
+        "Impossible Foods",
+        "California Olive Ranch",
+        "Anheuser-Busch InBev",
+        "Smithfield Foods"
+      ],
+      [
+        "College of Agricultural and Environmental Sciences",
+        "Major \n Graduate program",
+        "Bachelor of Science",
+        "Contact Information\n\n\n\nDepartment Website\nDepartment website\n\n\n\nDepartment advisor"
+      ],
+      [
+        "Primary Image\n \n\n\n\n\n\nNutrition Science",
+        "Primary Image\n \n\n\n\n\n\nSustainable Agriculture and Food Systems",
+        "Primary Image\n \n\n\n\n\n\nApplied Chemistry"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:04:18"
+}

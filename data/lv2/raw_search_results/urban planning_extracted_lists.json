@@ -1,0 +1,3950 @@
+{
+  "level1_term": "urban planning",
+  "url_verification_status": {
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning": true,
+    "https://ssa.ccny.cuny.edu/programs-centers/graduate-programs/m-urban-planning/": true,
+    "https://www.arch.columbia.edu/programs/10-m-s-urban-planning": true,
+    "https://www.pratt.edu/architecture/graduate-center-for-planning-and-the-environment/urban-and-community-planning-ms/": true,
+    "https://catalog.mit.edu/schools/architecture-planning/urban-studies-planning/": true,
+    "https://www.arch.columbia.edu/programs/11-ph-d-in-urban-planning": true,
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning/curriculum": true,
+    "https://bloustein.rutgers.edu/graduate/uppd/": true,
+    "https://www.gsd.harvard.edu/urban-planning-design/": true,
+    "https://aap.cornell.edu/academics/crp": false,
+    "https://dusp.mit.edu/home": true,
+    "https://as.tufts.edu/uep/": true,
+    "https://www.design.upenn.edu/city-regional-planning/graduate/graduate-city-and-regional-planning-programs": true,
+    "https://www.gsd.harvard.edu/urban-planning-design/master-in-urban-planning/areas-of-concentration/": true,
+    "https://www.arch.virginia.edu/programs/urban-environmental-planning": false,
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=12&poid=5156&returnto=720": true,
+    "https://www.trincoll.edu/graduate-studies/urban-planning/": true,
+    "https://catalogue.uci.edu/schoolofsocialecology/departmentofurbanplanningandpublicpolicy/": true,
+    "https://education.umd.edu/academics/programs/doctoral/teaching-and-learning-policy-and-leadership-urban-education": false,
+    "https://as.tufts.edu/uep/academics/courses": true,
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=2&poid=624&returnto=70": true,
+    "https://catalog.unc.edu/graduate/schools-departments/city-regional-planning/": true,
+    "https://sites.uw.edu/urbdpphd/currrent-students/phase-ii-courses/": true,
+    "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/": false,
+    "https://catalog.ucsd.edu/courses/USP.html": true,
+    "https://architectureandplanning.ucdenver.edu/academics/urban-and-regional-planning/murp": true,
+    "https://www.newschool.edu/milano/public-urban-policy-ms/": false,
+    "https://luskin.ucla.edu/urban-planning": false,
+    "https://www.arch.tamu.edu/academics/graduate-programs/ph-d-in-urban-regional-sciences/": true,
+    "https://capla.arizona.edu/academics/master-science-urban-planning/curriculum-concentrations-courses": true,
+    "https://dcp.ufl.edu/urp/academics/campus_programs/": false,
+    "https://w2.csun.edu/social-behavioral-sciences/urban-studies-planning": false,
+    "https://priceschool.usc.edu/academics/doctoral/ph-d-in-urban-planning-and-development-dupd/": true,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/urban-regional-planning": true,
+    "https://www.ohio.edu/cas/geography/undergraduate/urban-planning-sustainability": false
+  },
+  "verified_lists_per_url": {
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning": 6,
+    "https://ssa.ccny.cuny.edu/programs-centers/graduate-programs/m-urban-planning/": 3,
+    "https://www.arch.columbia.edu/programs/10-m-s-urban-planning": 1,
+    "https://www.pratt.edu/architecture/graduate-center-for-planning-and-the-environment/urban-and-community-planning-ms/": 1,
+    "https://catalog.mit.edu/schools/architecture-planning/urban-studies-planning/": 4,
+    "https://www.arch.columbia.edu/programs/11-ph-d-in-urban-planning": 1,
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning/curriculum": 6,
+    "https://bloustein.rutgers.edu/graduate/uppd/": 2,
+    "https://www.gsd.harvard.edu/urban-planning-design/": 1,
+    "https://aap.cornell.edu/academics/crp": 0,
+    "https://dusp.mit.edu/home": 4,
+    "https://as.tufts.edu/uep/": 1,
+    "https://www.design.upenn.edu/city-regional-planning/graduate/graduate-city-and-regional-planning-programs": 1,
+    "https://www.gsd.harvard.edu/urban-planning-design/master-in-urban-planning/areas-of-concentration/": 2,
+    "https://www.arch.virginia.edu/programs/urban-environmental-planning": 0,
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=12&poid=5156&returnto=720": 1,
+    "https://www.trincoll.edu/graduate-studies/urban-planning/": 4,
+    "https://catalogue.uci.edu/schoolofsocialecology/departmentofurbanplanningandpublicpolicy/": 1,
+    "https://education.umd.edu/academics/programs/doctoral/teaching-and-learning-policy-and-leadership-urban-education": 0,
+    "https://as.tufts.edu/uep/academics/courses": 1,
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=2&poid=624&returnto=70": 1,
+    "https://catalog.unc.edu/graduate/schools-departments/city-regional-planning/": 149,
+    "https://sites.uw.edu/urbdpphd/currrent-students/phase-ii-courses/": 2,
+    "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/": 0,
+    "https://catalog.ucsd.edu/courses/USP.html": 1,
+    "https://architectureandplanning.ucdenver.edu/academics/urban-and-regional-planning/murp": 8,
+    "https://www.newschool.edu/milano/public-urban-policy-ms/": 0,
+    "https://luskin.ucla.edu/urban-planning": 0,
+    "https://www.arch.tamu.edu/academics/graduate-programs/ph-d-in-urban-regional-sciences/": 1,
+    "https://capla.arizona.edu/academics/master-science-urban-planning/curriculum-concentrations-courses": 2,
+    "https://dcp.ufl.edu/urp/academics/campus_programs/": 0,
+    "https://w2.csun.edu/social-behavioral-sciences/urban-studies-planning": 0,
+    "https://priceschool.usc.edu/academics/doctoral/ph-d-in-urban-planning-and-development-dupd/": 2,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/urban-regional-planning": 4,
+    "https://www.ohio.edu/cas/geography/undergraduate/urban-planning-sustainability": 0
+  },
+  "total_lists_per_url": {
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning": 10,
+    "https://ssa.ccny.cuny.edu/programs-centers/graduate-programs/m-urban-planning/": 7,
+    "https://www.arch.columbia.edu/programs/10-m-s-urban-planning": 11,
+    "https://www.pratt.edu/architecture/graduate-center-for-planning-and-the-environment/urban-and-community-planning-ms/": 8,
+    "https://catalog.mit.edu/schools/architecture-planning/urban-studies-planning/": 110,
+    "https://www.arch.columbia.edu/programs/11-ph-d-in-urban-planning": 8,
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning/curriculum": 8,
+    "https://bloustein.rutgers.edu/graduate/uppd/": 8,
+    "https://www.gsd.harvard.edu/urban-planning-design/": 2,
+    "https://aap.cornell.edu/academics/crp": 2,
+    "https://dusp.mit.edu/home": 4,
+    "https://as.tufts.edu/uep/": 2,
+    "https://www.design.upenn.edu/city-regional-planning/graduate/graduate-city-and-regional-planning-programs": 1,
+    "https://www.gsd.harvard.edu/urban-planning-design/master-in-urban-planning/areas-of-concentration/": 2,
+    "https://www.arch.virginia.edu/programs/urban-environmental-planning": 2,
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=12&poid=5156&returnto=720": 4,
+    "https://www.trincoll.edu/graduate-studies/urban-planning/": 6,
+    "https://catalogue.uci.edu/schoolofsocialecology/departmentofurbanplanningandpublicpolicy/": 46,
+    "https://education.umd.edu/academics/programs/doctoral/teaching-and-learning-policy-and-leadership-urban-education": 5,
+    "https://as.tufts.edu/uep/academics/courses": 6,
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=2&poid=624&returnto=70": 4,
+    "https://catalog.unc.edu/graduate/schools-departments/city-regional-planning/": 170,
+    "https://sites.uw.edu/urbdpphd/currrent-students/phase-ii-courses/": 2,
+    "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/": 1,
+    "https://catalog.ucsd.edu/courses/USP.html": 2,
+    "https://architectureandplanning.ucdenver.edu/academics/urban-and-regional-planning/murp": 24,
+    "https://www.newschool.edu/milano/public-urban-policy-ms/": 1,
+    "https://luskin.ucla.edu/urban-planning": 2,
+    "https://www.arch.tamu.edu/academics/graduate-programs/ph-d-in-urban-regional-sciences/": 8,
+    "https://capla.arizona.edu/academics/master-science-urban-planning/curriculum-concentrations-courses": 2,
+    "https://dcp.ufl.edu/urp/academics/campus_programs/": 4,
+    "https://w2.csun.edu/social-behavioral-sciences/urban-studies-planning": 1,
+    "https://priceschool.usc.edu/academics/doctoral/ph-d-in-urban-planning-and-development-dupd/": 4,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/urban-regional-planning": 11,
+    "https://www.ohio.edu/cas/geography/undergraduate/urban-planning-sustainability": 7
+  },
+  "verified_lists_ids": {
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "https://ssa.ccny.cuny.edu/programs-centers/graduate-programs/m-urban-planning/": [
+      0,
+      3,
+      5
+    ],
+    "https://www.arch.columbia.edu/programs/10-m-s-urban-planning": [
+      10
+    ],
+    "https://www.pratt.edu/architecture/graduate-center-for-planning-and-the-environment/urban-and-community-planning-ms/": [
+      6
+    ],
+    "https://catalog.mit.edu/schools/architecture-planning/urban-studies-planning/": [
+      2,
+      4,
+      24,
+      45
+    ],
+    "https://www.arch.columbia.edu/programs/11-ph-d-in-urban-planning": [
+      7
+    ],
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning/curriculum": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "https://bloustein.rutgers.edu/graduate/uppd/": [
+      0,
+      7
+    ],
+    "https://www.gsd.harvard.edu/urban-planning-design/": [
+      0
+    ],
+    "https://aap.cornell.edu/academics/crp": [],
+    "https://dusp.mit.edu/home": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://as.tufts.edu/uep/": [
+      0
+    ],
+    "https://www.design.upenn.edu/city-regional-planning/graduate/graduate-city-and-regional-planning-programs": [
+      0
+    ],
+    "https://www.gsd.harvard.edu/urban-planning-design/master-in-urban-planning/areas-of-concentration/": [
+      0,
+      1
+    ],
+    "https://www.arch.virginia.edu/programs/urban-environmental-planning": [],
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=12&poid=5156&returnto=720": [
+      1
+    ],
+    "https://www.trincoll.edu/graduate-studies/urban-planning/": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://catalogue.uci.edu/schoolofsocialecology/departmentofurbanplanningandpublicpolicy/": [
+      7
+    ],
+    "https://education.umd.edu/academics/programs/doctoral/teaching-and-learning-policy-and-leadership-urban-education": [],
+    "https://as.tufts.edu/uep/academics/courses": [
+      1
+    ],
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=2&poid=624&returnto=70": [
+      1
+    ],
+    "https://catalog.unc.edu/graduate/schools-departments/city-regional-planning/": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89,
+      90,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      158,
+      159,
+      160,
+      162,
+      163,
+      164,
+      167,
+      168
+    ],
+    "https://sites.uw.edu/urbdpphd/currrent-students/phase-ii-courses/": [
+      0,
+      1
+    ],
+    "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/": [],
+    "https://catalog.ucsd.edu/courses/USP.html": [
+      0
+    ],
+    "https://architectureandplanning.ucdenver.edu/academics/urban-and-regional-planning/murp": [
+      2,
+      3,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "https://www.newschool.edu/milano/public-urban-policy-ms/": [],
+    "https://luskin.ucla.edu/urban-planning": [],
+    "https://www.arch.tamu.edu/academics/graduate-programs/ph-d-in-urban-regional-sciences/": [
+      0
+    ],
+    "https://capla.arizona.edu/academics/master-science-urban-planning/curriculum-concentrations-courses": [
+      0,
+      1
+    ],
+    "https://dcp.ufl.edu/urp/academics/campus_programs/": [],
+    "https://w2.csun.edu/social-behavioral-sciences/urban-studies-planning": [],
+    "https://priceschool.usc.edu/academics/doctoral/ph-d-in-urban-planning-and-development-dupd/": [
+      0,
+      2
+    ],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/urban-regional-planning": [
+      2,
+      3,
+      4,
+      10
+    ],
+    "https://www.ohio.edu/cas/geography/undergraduate/urban-planning-sustainability": []
+  },
+  "num_urls": 40,
+  "num_lists": 495,
+  "url_to_lists": {
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning": [
+      [
+        "Urban Planner",
+        "Land Use Planner",
+        "Transportation Planner",
+        "Environmental Planner",
+        "Emergency Management Professional",
+        "Recovery Program Manager",
+        "Research and Data Analyst",
+        "Advocacy Director"
+      ],
+      [
+        "Sustainability Coordinator",
+        "Community Development Planner",
+        "Urban Redevelopment Manager",
+        "Community Lender",
+        "Public Works Director",
+        "Senior Project Manager",
+        "Director of Economic Development Policy",
+        "Capital Planning and Budget Analyst"
+      ],
+      [
+        "Federal Direct Unsubsidized Loans",
+        "Federal Grad/Professional Plus Loans",
+        "Federal Work Study"
+      ],
+      [
+        "Program Overview",
+        "Unlock Your Potential With a Master\u2019s in Urban Planning",
+        "Skills You'll Gain With an NYU Urban Planning Degree",
+        "What Our Graduates Say",
+        "Why Choose NYU Wagner?",
+        "Convenience & Flexibility",
+        "Distinguished Faculty",
+        "Hands-On Experience",
+        "NYC as Your Classroom",
+        "Tangible Career Outcomes",
+        "Curriculum Overview",
+        "Capstone",
+        "Electives",
+        "Professional Experience Requirement",
+        "Meet Our Faculty",
+        "How to Apply",
+        "Tuition & Financial Aid",
+        "Tuition & Fees",
+        "Per-Credit Tuition Costs (2024-2025)",
+        "PER-SEMESTER TUITION COSTS (2024-2025)",
+        "Estimated Annual Living Expenses (Combined Fall/Spring)",
+        "ESTIMATED TOTAL",
+        "$41,236",
+        "Federal Financial Aid and Student Loans",
+        "Frequently Asked Questions",
+        "Degree Programs"
+      ],
+      [
+        "Degree Core Requirements",
+        "Specialization Requirements",
+        "Additional Requirements",
+        "Tuition per point/credit",
+        "$2,395",
+        "$2,395",
+        "$2,395",
+        "6 credits",
+        "$14,370",
+        "9 credits",
+        "$21,555",
+        "12 credits",
+        "$28,740",
+        "Housing",
+        "$23,588",
+        "$6,450",
+        "Books",
+        "$1,510",
+        "Transportation",
+        "$2,342",
+        "Personal Expenses",
+        "$3,000",
+        "Student Basic Health Insurance**",
+        "$4,346",
+        "Federal Student Loans",
+        "Private Loan Programs"
+      ],
+      [
+        "Program Overview Why Wagner? Curriculum Overview Faculty How to Apply Tuition and Fees FAQs",
+        "Financial Management\n\n\n\n\n\n\nLearn to manage budgets and resources for large-scale urban projects.",
+        "Spatial Analysis\n\n\n\n\n\n\nUse GIS and spatial data to analyze and solve urban planning problems.",
+        "Market Analysis\n\n\n\n\n\n\nAssess market trends and economic factors that impact urban development.",
+        "Additional Requirements",
+        "Frequently Asked Questions"
+      ],
+      [
+        "Credits",
+        "6 credits",
+        "9 credits",
+        "12 credits"
+      ],
+      [
+        "Expense type*",
+        "Expense type*",
+        "Estimated cost",
+        "Housing",
+        "Books",
+        "Transportation",
+        "Personal Expenses",
+        "Student Basic Health Insurance**",
+        "ESTIMATED TOTAL"
+      ],
+      [
+        "a unique blend that distinguishes beautiful designs from real",
+        "world impact",
+        "within and beyond New York City\u2019s vibrant and diverse neighborhoods."
+      ],
+      [
+        "GP.1011, Statistical MethodsCORE",
+        "GP.1018, MicroeconomicsCORE",
+        "GP.1020, Management and LeadershipCORE",
+        "GP.1021, Financial ManagementURPL",
+        "GP.1603, Urban Planning: Methods and PracticeURPL",
+        "GP.2660, History and Theory of Planning"
+      ]
+    ],
+    "https://ssa.ccny.cuny.edu/programs-centers/graduate-programs/m-urban-planning/": [
+      [
+        "Urban Design Capstone Symposium",
+        "\"Thermodynamic City\" by Carlos Rueda, Zhenhao Huang, and Sara Abousaid",
+        "Urban Design studio",
+        "\"The New Urban Ecology\" by Samantha Guiford and Anshuman Khandelwal",
+        "UD Final Review"
+      ],
+      [
+        "CCNY Instagram",
+        "CCNY Facebook",
+        "CCNY LinkedIn",
+        "CCNY YouTube"
+      ],
+      [
+        "Urban Design, Master of Urban Planning (MUP)",
+        "Participatory Urbanism",
+        "Multiple Futures",
+        "The Right and Wrongs to the City",
+        "Architecture & Technologies in detail",
+        "SSA students win Recipe for a Room competition creating rooms for the displaced",
+        "Spitzer Students Selected as NYC Community Planning Fellows",
+        "Gift to the Spitzer School of Architecture Establishes New Scholarship",
+        "Amy Ho B Arch \u201924 Named a Great Grad",
+        "Seaside Prize honors Prof. June Williamson for rethinking suburbia",
+        "Prof. Laura Wainer earns Urban Design Forum Global Exchange Fellowship",
+        "Professor; Director of Graduate Urban Design Program",
+        "Associate Professor",
+        "Visiting Professor",
+        "Dean, Historian, Licensed Architect",
+        "Adjunct Professor",
+        "Chair, Associate Professor",
+        "Professor; Director, Master of Architecture and MS Architecture Programs"
+      ],
+      [
+        "UD 61001: Urban Design Lab I - 6 credits",
+        "UD 61100: Urban Design Seminar I - 3 credits",
+        "UD 61510: Topics in Urban Histories and Theories - 3 credits",
+        "UD 61520: Topics in Urban Ecologies and Technologies - 3 credits",
+        "UD 62001: Urban Design Lab II - 6 credits",
+        "UD 62100: Urban Design Seminar II - 3 credits",
+        "UD 61530: Topics in Socially Situated Practices - 3 credits",
+        "UD 61510: Topics in Urban Histories and Theories - 3 credits",
+        "UD 73000: Urban Design Lab III / Capstone - 6 credits",
+        "UD 73100: Urban Design Seminar III / Capstone - 3 credits",
+        "UD 61520: Topics in Urban Ecologies and Technologies - 3 credits",
+        "Urbanism Elective - 3 credits"
+      ],
+      [
+        "Fall Term 1",
+        "Spring Term 2",
+        "Fall Term 3"
+      ],
+      [
+        "STEM DESIGNATION",
+        "TOTAL PROGRAM CREDITS: 45",
+        "Per-semester courseload: 15 credits",
+        "ELIGIBILITY",
+        "HOW TO APPLY"
+      ],
+      [
+        "aided design applications for crafting and analyzing both three",
+        "dimensional constructed environments and two",
+        "dimensional graphic communication and design."
+      ]
+    ],
+    "https://www.arch.columbia.edu/programs/10-m-s-urban-planning": [
+      [
+        "People",
+        "M.S. in Urban Planning and Master of Architecture",
+        "M.S. in Urban Planning and M.S. in Historic Preservation",
+        "M.S. in Urban Planning and M.S. in Real Estate Development",
+        "M.S. in Urban Planning and M.S. Computational Design Practices",
+        "M.S. in Urban Planning and Business",
+        "M.S. in Urban Planning and International Affairs",
+        "M.S. in Urban Planning and Law",
+        "M.S. in Urban Planning and Social Work",
+        "M.S. in Urban Planning and Public Health"
+      ],
+      [
+        "Candice Ji, Nikolas Michael, Sabina Sethi Unni",
+        "Fall 2022 - Urban Design For Planners",
+        "Jeffrey Shumaker"
+      ],
+      [
+        "Kirthi Balakrishnan, Lizzie Lee",
+        "Fall 2022 - Mobility Workshop",
+        "Anthony Vanky"
+      ],
+      [
+        "Jaron Kaplan, Dhwani Laddha, Sharon Mathews",
+        "Spring 2024 - Advanced GIS",
+        "Leah Meisterlin"
+      ],
+      [
+        "Weiping Wu, Professor and Program Director",
+        "Douglas Woodward, Associate Director, Professional Development and Practice",
+        "Kian Goldman, Assistant Director"
+      ],
+      [
+        "Mar 29,  6:30pm\nAlumni Connections in Denver\nEDGE Restaurant & Bar",
+        "Apr 1,  1:15pm\nSonali Dhanpal\nWare Lounge (Avery 600)",
+        "Apr 8,  1:15pm\nKevin Lujan Lee + Josh Campbell \nWare Lounge (Avery 600)",
+        "Apr 15,  1:15pm\nJamie Wang\nWare Lounge (Avery 600)",
+        "Apr 22,  1:15pm\nGabriella Carolini\nWare Lounge (Avery 600)"
+      ],
+      [
+        "Apr 1,  1:15pm",
+        "Sonali Dhanpal",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Apr 8,  1:15pm",
+        "Kevin Lujan Lee + Josh Campbell",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Apr 15,  1:15pm",
+        "Jamie Wang",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Apr 22,  1:15pm",
+        "Gabriella Carolini",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Course",
+        "6927\u20111",
+        "A4585\u20111",
+        "Pla4010",
+        "Pla4050",
+        "Pla6065",
+        "PLA6102\u20111",
+        "PLA6104\u20111",
+        "Pla6108\u20111",
+        "Pla6113",
+        "Pla6121\u20111",
+        "Pla6232\u20111",
+        "PLA6613\u20111",
+        "PLA6617",
+        "PLA6645\u20111",
+        "PLA6647\u20111",
+        "Pla6700\u20111",
+        "PLA6773\u20111",
+        "Pla6827\u20111",
+        "Pla6911\u20111",
+        "Pla6911\u20112",
+        "Pla6911\u20113",
+        "Pla6911\u20114",
+        "Pla6911\u20115",
+        "Pla6919\u20111",
+        "Pla6926\u20111",
+        "A4890\u20111",
+        "A6961\u201117",
+        "A6963\u201115",
+        "4323\u20111",
+        "A4861\u20111",
+        "A4063\u20111",
+        "A4312",
+        "A4407\u20111",
+        "PLA6036\u20111",
+        "6423\u20111",
+        "A4325\u20111"
+      ]
+    ],
+    "https://www.pratt.edu/architecture/graduate-center-for-planning-and-the-environment/urban-and-community-planning-ms/": [
+      [
+        "School of Architecture>",
+        "Graduate Center for Planning and the Environment>",
+        "Urban and Community Planning, MS"
+      ],
+      [
+        "Matt Ladd, 2022, is now the Real Estate Project Manager at St. Nick\u2019s Alliance",
+        "Ethan Schwimmer, 2022, is now an Associate Consultant-Transportation Planner at WSP USA",
+        "Yuri Chang, 2022, is now a Director at Karp Strategies",
+        "Carl Shumate, 2022, is now the Assistant District Manager at Manhattan Community Board 3",
+        "Amron Lee, 2022, is now a Project Associate at Hester Street",
+        "Shweta Iyer, 2022, is now an Analyst \u2013 Policy and Stakeholder Engagement at Karp Strategies",
+        "Leanna Molnar, 2023, is now an Emergency Management Analyst at NYU Langone Health",
+        "Kieran Micka-Malloy, 2023, is now the Energy Advisor at the Pratt Center for Community Development",
+        "Shelby Ketchum, 2023, is now the Inflation Reduction Act Specialist at Seattle City Light",
+        "Suzanne Goldberg, 2023, is now a Planner at BFJ Planning",
+        "Lindsey Cassone, 2023, is now an Environmental Planner at VHB",
+        "Sophia Hull, 2023, is now an Environmental Planner at Hudson County Division of Planning"
+      ],
+      [
+        "Community of Practice",
+        "Internships and Experiential Learning",
+        "Study Abroad",
+        "Learning Resources",
+        "Take a look at where recent graduates work:",
+        "Success Stories",
+        "Upcoming Information Sessions",
+        "Social media",
+        "From the Catalog",
+        "Brooklyn Campus",
+        "Manhattan Campus",
+        "Pratt Munson"
+      ],
+      [
+        "All times ET",
+        "Tuesday, February 11th 10am-12pm (Virtual)",
+        "See also: @prattgcpe on Instagram"
+      ],
+      [
+        "Urban and Community Planning, MS\n\n\n\n                  Page",
+        "Urban and Community Planning, MS\n\n\n\n                  Page",
+        "Urban and Community Planning, MS\n\n\n\n                  Page",
+        "Shaping a Positive Future for NYC\n\n\n\n                  Article",
+        "Amplifying an Unsung Site of Queer History on Staten Island\n\n\n\n                  Article",
+        "Pratt Summer Abroad: Dispatch from Tokyo II\n\n\n\n                  Article",
+        "With Ahmad Shaibani, MS City and Regional Planning \u201917\n\n\n\n                  Prattfolio Story",
+        "Scenes from Trips Abroad\n\n\n\n                  Article"
+      ],
+      [
+        "Chair\nEve Baron PhD\n718.687.5641\nebaron@pratt.edu",
+        "Assistant to the Chair\nDevona Stewart",
+        "Office\n718.399.4340\nwww.pratt.edu/planning",
+        "Faculty Bios\nwww.pratt.edu/city-and-regional-planning/faculty-and-staff"
+      ],
+      [
+        "Start Term",
+        "Credits",
+        "Duration",
+        "Courses",
+        "School and Department"
+      ],
+      [
+        "based plan for a just transition",
+        "inspired, green re",
+        "industrialization of the Sunset Park, Brooklyn waterfront; and to create innovative, asset",
+        "based, racially",
+        "just recommendations to address wealth and income gaps in rapidly"
+      ]
+    ],
+    "https://catalog.mit.edu/schools/architecture-planning/urban-studies-planning/": [
+      [
+        "Home>",
+        "Schools>",
+        "School\u00a0of\u00a0Architecture\u00a0and\u00a0Planning>",
+        "Urban Studies and Planning"
+      ],
+      [
+        "Undergraduate Study",
+        "Graduate Study",
+        "Interdisciplinary Programs",
+        "Inquiries",
+        "Faculty and Teaching Staff",
+        "Professors Emeriti",
+        "Introductory Subjects",
+        "Specialized Subjects",
+        "Laboratories",
+        "Tutorials, Fieldwork, and Internships",
+        "Master's Core Subjects",
+        "Department-wide Subjects",
+        "Program Group Subjects",
+        "Tutorials, Research, and Fieldwork Subjects"
+      ],
+      [
+        "Bachelor of Science in Planning (Course 11)",
+        "Urban Science and Planning with Computer Science (Course 11-6)",
+        "Five-Year SB-MCP Option",
+        "Minor in Urban Studies and Planning",
+        "Minor in International Development",
+        "Minor in Public Policy",
+        "HASS Concentrations",
+        "Master in City Planning",
+        "Simultaneous Master's Degrees in City Planning and Architecture",
+        "Simultaneous Master's Degrees in City Planning and Transportation",
+        "Simultaneous Master's Degrees in City Planning and Real Estate Development",
+        "Master of Science in Urban Studies and Planning",
+        "Doctor of Philosophy",
+        "Graduate Programs in Transportation",
+        "Environmental Planning Certificate",
+        "Urban Design Certificate",
+        "Nondegree Programs",
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Professors of the Practice",
+        "Associate Professors of the Practice",
+        "Senior Lecturers",
+        "Lecturers",
+        "Visiting Lecturers"
+      ],
+      [
+        "A \u2013 Z",
+        "Calendar",
+        "Archive",
+        "Print"
+      ],
+      [
+        "Bachelor of Science in Planning (Course 11)",
+        "Urban Science and Planning with Computer Science (Course 11-6)",
+        "Five-Year SB-MCP Option",
+        "Minor in Urban Studies and Planning",
+        "Minor in International Development",
+        "Minor in Public Policy",
+        "HASS Concentrations"
+      ],
+      [
+        "Master in City Planning",
+        "Simultaneous Master's Degrees in City Planning and Architecture",
+        "Simultaneous Master's Degrees in City Planning and Transportation",
+        "Simultaneous Master's Degrees in City Planning and Real Estate Development",
+        "Master of Science in Urban Studies and Planning",
+        "Doctor of Philosophy",
+        "Graduate Programs in Transportation",
+        "Environmental Planning Certificate",
+        "Urban Design Certificate",
+        "Nondegree Programs"
+      ],
+      [
+        "P. Christopher Zegras, PhD",
+        "Professor of Urban Planning and Transportation",
+        "Head, Department of Urban Studies and Planning"
+      ],
+      [
+        "Eran Ben-Joseph, PhD",
+        "Class of 1922 Professor",
+        "Professor of Landscape Architecture and Urban Planning"
+      ],
+      [
+        "Nicholas de Monchaux, MArch",
+        "Professor of Architecture",
+        "Professor of Urban Studies and Planning",
+        "Head, Department of Architecture"
+      ],
+      [
+        "Amy K. Glasmeier, PhD",
+        "Class of 1922 Professor",
+        "Professor of Economic Geography and Regional Planning"
+      ],
+      [
+        "Erica C. James, PhD",
+        "Professor of Medical Anthropology and Urban Studies",
+        "Professor of Anthropology"
+      ],
+      [
+        "Eric Klopfer, PhD",
+        "Professor of Comparative Media Studies",
+        "Professor of Education",
+        "(On leave)"
+      ],
+      [
+        "Janelle Knox-Hayes, PhD",
+        "Professor of Economic Geography and Planning",
+        "(On leave, spring)"
+      ],
+      [
+        "Jennifer S. Light, PhD",
+        "Bern Dibner Professor of the History of Science and Technology",
+        "Professor of Urban Studies and Planning"
+      ],
+      [
+        "Bishwapriya Sanyal, PhD",
+        "Ford International Professor",
+        "Professor of International Development and Planning"
+      ],
+      [
+        "Hashim Sarkis, PhD",
+        "Professor of Architecture",
+        "Professor of Urban Planning",
+        "Dean, School of Architecture and Planning"
+      ],
+      [
+        "Anne Whiston Spirn, PhD",
+        "Cecil and Ida Green Distinguished Professor",
+        "Professor of Planning",
+        "Professor of Landscape Architecture",
+        "(On leave)"
+      ],
+      [
+        "Lawrence E. Susskind, PhD",
+        "Ford Professor in Urban Studies",
+        "Professor of Urban and Environmental Planning"
+      ],
+      [
+        "Lawrence Vale, DPhil",
+        "Ford International Professor in Urban Studies",
+        "Professor of Urban Design and Planning"
+      ],
+      [
+        "Jinhua Zhao, PhD",
+        "Professor of Urban Planning and Transportation",
+        "Professor of Civil and Environmental Engineering",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Siqi Zheng, PhD",
+        "Samuel Tak Lee Professor",
+        "Professor of Urban and Real Estate Sustainability"
+      ],
+      [
+        "David Hsu, PhD",
+        "Associate Professor of Urban and Environmental Planning",
+        "(On leave, fall)"
+      ],
+      [
+        "Jason Jackson, PhD",
+        "Associate Professor of Political Economy and Urban Planning",
+        "(On leave)"
+      ],
+      [
+        "Albert Saiz, PhD",
+        "Daniel Rose Professor",
+        "Associate Professor of Urban Economics and Real Estate"
+      ],
+      [
+        "Andres Sevtsuk, PhD",
+        "Charles and Ann Spaulding Career Development Professor",
+        "Associate Professor of Urban Science and Planning"
+      ],
+      [
+        "Sarah E. Williams, MCP",
+        "Norman B. and Muriel Leventhal Professor",
+        "Associate Professor of Information Technologies and Urban Planning",
+        "Member, Institute for Data, Systems, and Society"
+      ],
+      [
+        "Karilyn Crockett, PhD",
+        "Ford Career Development Professor",
+        "Assistant Professor of History and Urban Planning"
+      ],
+      [
+        "Delia Wendel, PhD",
+        "Charles and Ann Spaulding Career Development Professor",
+        "Assistant Professor  of International Development and Urban Planning"
+      ],
+      [
+        "Robert M. Fogelson, PhD",
+        "Professor Emeritus of Urban Studies",
+        "Professor Emeritus of History"
+      ],
+      [
+        "Langley C. Keyes Jr, PhD",
+        "Ford International Professor Emeritus",
+        "Professor Emeritus of City and Regional Planning"
+      ],
+      [
+        "Frank Levy, PhD",
+        "Daniel Rose Professor Emeritus",
+        "Professor Emeritus of Urban Economics"
+      ],
+      [
+        "Paul Osterman, PhD",
+        "Nanyang Technological University Professor Emeritus",
+        "Professor Emeritus of Human Resources and Management",
+        "Professor Emeritus of Urban Studies and Planning"
+      ],
+      [
+        "Ad\u00e8le Naud\u00e9 Santos, MArch, MCP, MAUD",
+        "Professor Emerita of Architecture",
+        "Professor Emerita of Urban Planning"
+      ],
+      [
+        "James Wescoat, PhD",
+        "Aga Khan Professor Emeritus",
+        "Professor Emeritus of Urban Studies and Planning"
+      ],
+      [
+        "William C. Wheaton, PhD",
+        "Professor Emeritus of Urban Studies and Planning",
+        "Professor Emeritus of Economics"
+      ],
+      [
+        "Same subject as CMS.586[J]Prereq: None U (Fall)3-6-3 units. HASS-S; CI-H",
+        "See description under subject CMS.586[J]. Limited to 25.",
+        "E. Klopfer"
+      ],
+      [
+        "Same subject as CMS.587[J]Prereq: None U (Spring)3-6-3 units. HASS-S; CI-H",
+        "See description under subject CMS.587[J]. Limited to 25.",
+        "E. Klopfer"
+      ],
+      [
+        "Same subject as CMS.591[J]Prereq: None. Coreq: CMS.586[J] U (Fall)3-0-9 units. HASS-S",
+        "See description under subject CMS.591[J]. Limited to 15; preference to juniors and seniors.",
+        "G. Schwanbeck"
+      ],
+      [
+        "Same subject as CMS.592[J]Prereq: CMS.591[J] U (IAP)3-0-9 units",
+        "See description under subject CMS.592[J].",
+        "G. Schwanbeck"
+      ],
+      [
+        "Same subject as CMS.593[J]Prereq: CMS.592[J] U (Spring)3-0-9 units. HASS-S",
+        "See description under subject CMS.593[J].",
+        "G. Schwanbeck"
+      ],
+      [
+        "Same subject as 21H.220[J]Prereq: None U (Spring)3-0-9 units. HASS-H",
+        "See description under subject 21H.220[J].",
+        "C. Wilder"
+      ],
+      [
+        "Same subject as 4.228[J]Prereq: Permission of instructor G (Fall)Units arranged",
+        "See description under subject 4.228[J]. Limited to 25.",
+        "Consult R. Ghosn"
+      ],
+      [
+        "Same subject as 1.813[J], 15.657[J], IDS.437[J]Prereq: Permission of instructor G (Fall)3-0-9 units",
+        "See description under subject IDS.437[J].",
+        "N. Ashford"
+      ],
+      [
+        "Same subject as 15.679[J]Prereq: None G (Spring)3-1-5 units",
+        "See description under subject 15.679[J].",
+        "L. Hafrey, C. McDowell"
+      ],
+      [
+        "Prereq: None G (Summer)Units arranged [P/D/F]Can be repeated for credit.",
+        "Practical application of planning techniques over the summer with prior arrangement.",
+        "S. Wellford"
+      ],
+      [
+        "Requirements",
+        "11.001[J]",
+        "11.002[J]",
+        "Electives",
+        "Select four Course 11 elective subjects 1",
+        "Total Units"
+      ],
+      [
+        "Tier I: Introduction to International Development Theories and Practice",
+        "Select two of the following:",
+        "11.005",
+        "11.025[J]",
+        "11.140",
+        "Tier II: Specialized Topics in International Development",
+        "Select four of the following (in consultation with the minor advisor):",
+        "11.002[J]",
+        "11.027",
+        "11.144",
+        "11.147",
+        "11.164[J]",
+        "11.165",
+        "11.166",
+        "EC.715",
+        "Total Units"
+      ],
+      [
+        "Education Concentration Subjects",
+        "11.129[J]",
+        "11.130[J]",
+        "11.131[J]",
+        "Core Subjects",
+        "11.124[J]",
+        "11.125[J]"
+      ],
+      [
+        "11.200",
+        "11.201",
+        "11.202",
+        "11.203",
+        "11.205",
+        "11.220",
+        "11.222",
+        "11.328[J]",
+        "At least one core practicum subject, selected from an approved list, during the two-year program"
+      ],
+      [
+        "6 program provides numerous opportunities for field",
+        "based problem",
+        "solving experience through labs, UROP assignments and client"
+      ],
+      [
+        "year program from Sandra Wellford, undergraduate administrator, Room 7",
+        "346A, 617",
+        "9403."
+      ],
+      [
+        "solving, multidisciplinarity, and an understanding of institutions at various levels",
+        "from the local to the global",
+        "as the keys to solving today\u2019s problems in emerging countries."
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: U (Fall)",
+        "2026: Not offered3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered2",
+        "7 units. HASS",
+        "H; CI"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)1",
+        "2 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)4",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)2",
+        "5 units. HASS",
+        "H; CI"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "6 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "6 units"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: U (Fall)",
+        "2026: Not offered2",
+        "10 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "9 units. HASS"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)0",
+        "4 units"
+      ],
+      [
+        "1.UAR[J],",
+        "3.UAR[J],",
+        "5.UAR[J],",
+        "12.UAR[J],",
+        "15.UAR[J],"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)2",
+        "5 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "6 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered2",
+        "10 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring; second half of term)2",
+        "4 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)0",
+        "4 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "depth research workshop on pressing socio",
+        "economic and environmental design issue of our time, includes discussion and practices with real",
+        "grounded, design",
+        "year basis."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall; first half of term)3",
+        "3 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)4",
+        "8 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered4",
+        "11 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "6 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered2",
+        "10 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Fall)",
+        "2026: Not offered2",
+        "10 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall; first half of term)2",
+        "2 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ]
+    ],
+    "https://www.arch.columbia.edu/programs/11-ph-d-in-urban-planning": [
+      [
+        "Hiba Bou Akar",
+        "Hugo Sarmiento",
+        "Weiping Wu",
+        "Anthony Vanky",
+        "Tom Slater, Program Director"
+      ],
+      [
+        "Apr 1,  1:15pm\nSonali Dhanpal\nWare Lounge (Avery 600)",
+        "Apr 1,  6:30pm\nPhD in Urban Planning Lecture: Libby Porter\nAvery 114",
+        "Apr 8,  1:15pm\nKevin Lujan Lee + Josh Campbell \nWare Lounge (Avery 600)",
+        "Apr 15,  1:15pm\nJamie Wang\nWare Lounge (Avery 600)",
+        "Apr 22,  1:15pm\nGabriella Carolini\nWare Lounge (Avery 600)",
+        "Show More"
+      ],
+      [
+        "Apr 1,  1:15pm",
+        "Sonali Dhanpal",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Apr 1,  6:30pm",
+        "PhD in Urban Planning Lecture: Libby Porter",
+        "Avery 114"
+      ],
+      [
+        "Apr 8,  1:15pm",
+        "Kevin Lujan Lee + Josh Campbell",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Apr 15,  1:15pm",
+        "Jamie Wang",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Apr 22,  1:15pm",
+        "Gabriella Carolini",
+        "Ware Lounge (Avery 600)"
+      ],
+      [
+        "Course",
+        "PLA6805\u20111",
+        "Pla8901\u20111",
+        "Pla8903\u20111",
+        "Pla8929\u20111",
+        "6423\u20111",
+        "A4325\u20111"
+      ]
+    ],
+    "https://wagner.nyu.edu/education/degrees/master-urban-planning/curriculum": [
+      [
+        "Public Policy and Planning in New York",
+        "Climate Economics",
+        "Environmental Infrastructure for Sustainable Cities",
+        "Planning for Emergencies and Disasters",
+        "Water Sourcing and Climate Change",
+        "Topics in Urban Design"
+      ],
+      [
+        "Government Agencies: How Plans, Policies and Projects are Put into Action",
+        "Program Development and Management for International Organizations",
+        "Immigration Politics and Policy -- Past and Present",
+        "Constructing National Development Strategies",
+        "Financing Local Government in Developing Countries",
+        "Planning for Emergencies and Disasters",
+        "Water Sourcing and Climate Change"
+      ],
+      [
+        "\u200b\u200bDebt Financing and Management for Public Organizations",
+        "Cost-Benefit Analysis",
+        "Public Policy and Planning in New York",
+        "Transportation, Land Use, and Urban Form",
+        "Urban Transportation Planning",
+        "Topics in Urban Design",
+        "Topics in Urban Studies"
+      ],
+      [
+        "Advanced Data Analytics and Evidence Building",
+        "Geographic Information Systems",
+        "Data Visualization and Storytelling",
+        "Large Scale Data Analysis I",
+        "Large Scale Data Analysis II",
+        "Introduction to Database Design, Management, and Security",
+        "R Coding for Public Policy",
+        "Python Coding for Public Policy",
+        "Advanced GIS: Interactive Web Mapping and Spatial Data Visualization"
+      ],
+      [
+        "Cities",
+        "Communication Skills",
+        "Data Science and Data Management",
+        "Education",
+        "Environment and Climate Change",
+        "Global Action",
+        "Health Policy and Management",
+        "Inequality, Race, Poverty",
+        "Program Evaluation",
+        "Nonprofit and Government Organizations",
+        "Philanthropy and Fundraising",
+        "Social Justice and Democracy",
+        "Transportation"
+      ],
+      [
+        "TOTAL CREDITS REQUIRED: 45",
+        "I. degree CORE (18\u00a0credits)",
+        "II. SPECIALIZATION REQUIREMENTS (9 credits)",
+        "III. ELECTIVES: Program-recommended AND SCHOOL-WIDE FOCUS AREAS (15 CREDITS)",
+        "Environmental Planning",
+        "Global Perspectives",
+        "Housing and Economic Development",
+        "Transportation and Infrastructure",
+        "Urban Analytics",
+        "School-wide",
+        "IV. CAPSTONE (3 Credits)",
+        "V. PROFESSIONAL EXPERIENCE REQUIREMENT",
+        "Master of Urban Planning"
+      ],
+      [
+        "Statistical Methods || Microeconomics",
+        "Management and Leadership\u00a0 || Financial Management",
+        "Urban Planning: Methods and Practice\u00a0 ||\u00a0\u00a0History and Theory of Planning"
+      ],
+      [
+        "City and community planning",
+        "Data Analysis, Mapping, and Spatial Analysis",
+        "Land Use Law",
+        "Urban Economics"
+      ]
+    ],
+    "https://bloustein.rutgers.edu/graduate/uppd/": [
+      [
+        "Master of City and Regional Planning (MCRP)",
+        "Master of City and Regional Studies (MCRS)",
+        "Joint and Dual Degrees (MPP, MPI, JD, MBA, MIP, MS, BA/BS)",
+        "Community Development and Housing",
+        "Design and Development / Redevelopment",
+        "Environmental Planning",
+        "International Development",
+        "Transportation Policy and Planning",
+        "Urban Informatics",
+        "Transportation Studies",
+        "Geospatial Information Science",
+        "Historic Preservation",
+        "Human Dimensions of Environmental Change",
+        "Real Estate Development and Redevelopment",
+        "Climate Change Risk and Resilience",
+        "Energy",
+        "Urban Planning",
+        "Public Policy",
+        "Public and Urban Informatics",
+        "Student Projects",
+        "Learning Goals",
+        "By the Numbers",
+        "Graduate U.S. Urban Planning Program",
+        "Employed or Pursuing Higher Education",
+        "Average Salary"
+      ],
+      [
+        "Mi Shih, Ph.D., Program",
+        "Hooshang Amirahmadi, Ph.D.",
+        "Clinton J. Andrews, Ph.D.",
+        "Juan Ayala, MArch",
+        "Bernadette V. Baird-Zars, Ph.D.",
+        "James DeFilippis, Ph.D.",
+        "Barbara Faga, Ph.D.",
+        "Carmelo Ignaccolo, Ph.D.",
+        "Radha Jagannathan, Ph.D.",
+        "David Listokin, Ph.D.",
+        "Kathe Newman, Ph.D.",
+        "Robert B. Noland, Ph.D.",
+        "Will Payne, Ph.D.",
+        "Ronald Quincy, Ph.D.",
+        "Kelcie Ralph, Ph.D.",
+        "Andrea Restrepo-Mieth, Ph.D.",
+        "Hal Salzman, Ph.D.",
+        "Eric Seymour, Ph.D.",
+        "Michael Smart, Ph.D.",
+        "Piyushimita (Vonu) Thakuriah, Ph.D.",
+        "Wenwen Zhang, Ph.D."
+      ],
+      [
+        "Richard K. Brail, PhD",
+        "Robert W. Burchell, Ph.D.",
+        "Michael R. Greenberg, Ph.D.",
+        "Henry A. Coleman, Ph.D.",
+        "Briavel Holcomb, Ph.D.",
+        "Robert W. Lake , Ph.D.",
+        "Tony Nelessen, M.S.Arch.",
+        "Frank J. Popper, Ph.D.",
+        "John Pucher, Ph.D.",
+        "Meredeth Turshen, D. Phil",
+        "Salah El-Shakhs, PhD",
+        "Lyna Wiggins, Ph.D."
+      ],
+      [
+        "Robert Kopp, Ph.D.",
+        "Jane E. Miller, Ph.D.",
+        "Karen O\u2019Neill",
+        "Cymie Payne",
+        "Julia Sass Rubin, Ph.D., MBA",
+        "Jim Samuel, Ph.D., MBA"
+      ],
+      [
+        "Leah Apgar",
+        "Robert Ashmun",
+        "Charles Brown",
+        "William Cesanek",
+        "Tom Dallessio",
+        "Stephanie DiPetrillo",
+        "Heather Fenyk",
+        "Christiana Foglio",
+        "Robert Freudenberg",
+        "Daniel Greenhouse",
+        "Jack Heide",
+        "Jeanne Herb",
+        "Nadia Mian",
+        "Matthew Palm",
+        "MaryAnn Sorensen Allacci",
+        "Gregory Stankiewicz",
+        "Christopher Stienon",
+        "Anne Strauss-Wieder",
+        "Matthew Woodmansee",
+        "Leigh Ann Von Hagen"
+      ],
+      [
+        "Master of City and Regional Planning (MCRP)",
+        "Master of City and Regional Studies (MCRS)",
+        "Joint and Dual Degrees (MPP, MPI, JD, MBA, MIP, MS, BA/BS)"
+      ],
+      [
+        "Transportation Studies",
+        "Geospatial Information Science",
+        "Historic Preservation",
+        "Human Dimensions of Environmental Change"
+      ],
+      [
+        "Real Estate Development and Redevelopment",
+        "Climate Change Risk and Resilience",
+        "Energy\n\nThis certificate is being reworked in Fall 2024. More information coming soon.",
+        "Urban Planning"
+      ]
+    ],
+    "https://www.gsd.harvard.edu/urban-planning-design/": [
+      [
+        "Academics",
+        "People",
+        "Resources",
+        "Explore",
+        "Degree Programs",
+        "MUP Master in Urban Planning",
+        "MRE Master in Real Estate",
+        "MUP and MLA/MArch/MDES/MPA/MPP/JD/MPH Concurrent and Joint Degrees",
+        "Inside Urban Planning and Design",
+        "Inside Urban Planning and Design"
+      ],
+      [
+        "Degree Programs",
+        "Inside Urban Planning and Design",
+        "Inside Urban Planning and Design"
+      ]
+    ],
+    "https://aap.cornell.edu/academics/crp": [
+      [
+        "Urban and Regional Studies (B.S. URS)",
+        "Four-year, undergraduate Bachelor of Science in Urban and Regional Studies",
+        "Regional\u00a0Planning (M.R.P)",
+        "Two-year, professional, accredited Master of Regional Planning",
+        "Regional Science (M.S. RS)",
+        "Two-year Master of Science in Regional Science",
+        "Historic Preservation Planning (M.A. HPP)",
+        "Two-year Master of Arts in Historic Preservation Planning"
+      ],
+      [
+        "City and Regional Planning (Ph.D. CRP)",
+        "Doctoral degree\u00a0in City and Regional Planning",
+        "Regional Science (Ph.D. RS)",
+        "Doctoral degree\u00a0in Regional Science",
+        "Landscape Architecture (M.R.P. / M.L.A.)",
+        "Dual master's degree in Regional Planning and Landscape Architecture",
+        "Real Estate (M.R.P. / M.P.S. RE)",
+        "Dual master's degree in Regional Planning and Real Estate"
+      ]
+    ],
+    "https://dusp.mit.edu/home": [
+      [
+        "Main navigation",
+        "User account menu",
+        "Impact",
+        "Mission",
+        "How we are enhancing multi-racial democratic governance",
+        "How we are tackling the climate crisis...",
+        "How we are striving to achieve racial justice...",
+        "How we are closing the wealth gap...",
+        "Events",
+        "Footer"
+      ],
+      [
+        "City Design and Development",
+        "Real Estate",
+        "Urban Science",
+        "Environmental Policy + Planning",
+        "Housing, Community + Economic Development",
+        "International Development",
+        "Mobility"
+      ],
+      [
+        "City Design and Development",
+        "Environmental Policy + Planning",
+        "International Development",
+        "Mobility"
+      ],
+      [
+        "City Design and Development",
+        "Racially Just Research Initiative",
+        "Real Estate",
+        "Urban Science",
+        "Environmental Policy + Planning",
+        "Housing, Community + Economic Development",
+        "International Development",
+        "Mobility"
+      ]
+    ],
+    "https://as.tufts.edu/uep/": [
+      [
+        "Welcome to the Department of Urban and Environmental Policy and Planning at Tufts University",
+        "Degree Programs",
+        "Course Offerings",
+        "Research",
+        "Field Projects",
+        "Welcome",
+        "Visit and Connect",
+        "Courses",
+        "What is Happiness?",
+        "Wildfires and the Costs of Living in Precarious Environments",
+        "How to Balance Profit and Responsible Real Estate Development",
+        "When the Goal Is Impact, Investors Can\u2019t Just Consider Rate of Return"
+      ],
+      [
+        "MA in Urban and Environmental Policy and Planning",
+        "Master of Public Policy",
+        "MS in Environmental Policy and Planning",
+        "MS in Environmental Economics and Urban Planning",
+        "MS in Environmental Engineering Policy and Planning",
+        "MS in Sustainability",
+        "Dual Degree Programs",
+        "Fifth-Year Master\u2019s Degree Program: BA/BS and MA in UEP or MS in EPP",
+        "Fifth-Year Master\u2019s Degree Program: BA/BS and MS in Sustainability",
+        "Minor in Urban Studies",
+        "Certificate in Community Environmental Studies",
+        "Certificate in Geographic Information Science",
+        "Certificate in Spatial Data Analytics",
+        "Certificate in Management of Community Organizations",
+        "Certificate in Impact and Sustainable Investing",
+        "Certificate in Program and Organization Evaluation"
+      ]
+    ],
+    "https://www.design.upenn.edu/city-regional-planning/graduate/graduate-city-and-regional-planning-programs": [
+      [
+        "Header Mini Menu",
+        "1 Primary Dept Mega Menu",
+        "Mega Menu",
+        "Get the latest Weitzman news in your Inbox",
+        "Breadcrumb",
+        "1 Main navigation",
+        "Master of City Planning (MCP) Requirements",
+        "MCP Concentrations",
+        "Housing, Community and Economic Development (HCED)",
+        "Land Use-Environmental Planning (LU-EP)",
+        "Public Private Development (PPD)",
+        "Smart Cities",
+        "Sustainable Transportation and Infrastructure Planning (STIP)",
+        "Urban Design (UD)",
+        "Self-Designed Concentration",
+        "Dual Degrees",
+        "Downloads",
+        "Get the latest Weitzman news in your Inbox",
+        "1 Primary Dept Mega Menu"
+      ]
+    ],
+    "https://www.gsd.harvard.edu/urban-planning-design/master-in-urban-planning/areas-of-concentration/": [
+      [
+        "Environment, Climate, and Health",
+        "Housing, Community, and Economic Development",
+        "International and Comparative Planning",
+        "Real Estate and Urban Development",
+        "Transportation and Infrastructure",
+        "Urban Analytics",
+        "Urban Design"
+      ],
+      [
+        "Academics",
+        "People",
+        "Resources",
+        "Explore",
+        "Environment, Climate, and Health",
+        "Housing, Community, and Economic Development",
+        "International and Comparative Planning",
+        "Real Estate and Urban Development",
+        "Transportation and Infrastructure",
+        "Urban Analytics",
+        "Urban Design"
+      ]
+    ],
+    "https://www.arch.virginia.edu/programs/urban-environmental-planning": [
+      [
+        "BUEP (Bachelor of Urban + Environmental Planning)",
+        "MUEP (Master of Urban + Environmental Planning)",
+        "PhD in the Constructed Environment"
+      ],
+      [
+        "Why Become a Planner?",
+        "Why UVA Urban and Environmental Planning?",
+        "Commitment to Inclusion + Equity",
+        "Key Facts*",
+        "Excellence in Teaching and Research",
+        "Interdisciplinary Opportunities",
+        "Why Study Planning in Charlottesville?",
+        "Urban + Environmental Planning Department Chair"
+      ]
+    ],
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=12&poid=5156&returnto=720": [
+      [
+        "URP 617SEM\u00a0-\u00a0Urban Planng Resrch Design Credits: 3",
+        "URP 675SEM\u00a0-\u00a0Special Topics Credits: 3",
+        "URP 676SEM\u00a0-\u00a0Special Topics Credits: 3"
+      ],
+      [
+        "Curriculum",
+        "Total Credit Hours: 72",
+        "Instruction Method",
+        "Full/Part Time Options",
+        "Credits Required",
+        "Time-To-Degree",
+        "Application Fee",
+        "Admissions Tests",
+        "SED Statement"
+      ],
+      [
+        "Basic Courses (24 credits)",
+        "Theory Stream (6 credits)",
+        "Methods Stream (9 credits)",
+        "Content Stream (15 Credits)",
+        "Minor Stream (6 credits)",
+        "Doctoral Seminar (3 credits)"
+      ],
+      [
+        "Total Credit Hours: 72",
+        "Instruction Method In Person\u00a0(100 percent of courses offered in person)",
+        "Full/Part Time Options Full Time",
+        "Credits Required 72 Hours",
+        "Time-To-Degree 4 to 5+ Years",
+        "Application Fee N/A",
+        "Admissions Tests N/A"
+      ]
+    ],
+    "https://www.trincoll.edu/graduate-studies/urban-planning/": [
+      [
+        "Introduction to Urban Planning",
+        "Global Cities",
+        "Leadership in the Policy Arena",
+        "Public Management"
+      ],
+      [
+        "Meds, Eds, Slot Machines, and Stadiums",
+        "Equity and Racial Justice in Planning\u00a01 practicum course:",
+        "Urban Research Practicum",
+        "Public Policy Practicum1 methods course:",
+        "Urban GIS Quantitative Analysis and Spatial Statistics for Planners",
+        "Qualitative Methods for Planners1 global studio:",
+        "Urban Planning Global Studio"
+      ],
+      [
+        "Community Development Strategies",
+        "Meds, Eds, Slot Machines, and Stadiums",
+        "Affordable Housing Policies",
+        "Real Estate Development and Planning",
+        "Urban Planning Law"
+      ],
+      [
+        "Land Use and Environmental Planning",
+        "Architecture and Urban Planning on the Swahili Coast",
+        "Comparative Planning Perspectives",
+        "Reshaping Global Urbanization",
+        "Urban Planning Law"
+      ],
+      [
+        "Next Step: Start Your Application",
+        "The Curriculum",
+        "Local Appearance by Liz Cheney Generates Conversation on \u2018Bridging Divides\u2019",
+        "Trinity College to Offer State\u2019s First Master\u2019s in Urban Planning"
+      ],
+      [
+        "Master of Arts in Urban Studies Requirements",
+        "Core Courses",
+        "Required Courses (Samples)",
+        "Concentration Courses\n(Samples)",
+        "Capstone Course"
+      ]
+    ],
+    "https://catalogue.uci.edu/schoolofsocialecology/departmentofurbanplanningandpublicpolicy/": [
+      [
+        "Environmental Science and Policy, B.A.",
+        "Master of Public Policy",
+        "Master of Urban and Regional Planning",
+        "Urban and Environmental Planning and Policy, Ph.D.",
+        "Urban and Regional Planning, Minor",
+        "Urban Studies, B.A.",
+        "Urban Studies, Minor"
+      ],
+      [
+        "Maura Allaire",
+        "Ph.D. University of North Carolina at Chapel Hill",
+        "Assistant Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Victoria Basolo",
+        "Ph.D. University of North Carolina at Chapel Hill",
+        "Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Scott A. Bollens",
+        "Ph.D. University of North Carolina at Chapel Hill",
+        "Warmington Chair in the Social Ecology of Peace and International Cooperation and",
+        "Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Kenneth S. Chew",
+        "Ph.D. University of California, Berkeley",
+        "Professor of Teaching Emeritus",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Ross F. Conner",
+        "Ph.D. Northwestern University",
+        "Professor Emeritus",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "David L. Feldman",
+        "Ph.D. University of Missouri-Columbia",
+        "Professor",
+        "of Urban Planning and Public Policy",
+        "; Political Science"
+      ],
+      [
+        "Martha S. Feldman",
+        "Ph.D. Stanford University",
+        "Johnson Chair in Civic Governance and Public Management and",
+        "Distinguished Professor",
+        "of Urban Planning and Public Policy",
+        "; Paul Merage School of Business; Sociology"
+      ],
+      [
+        "Ajay Garde",
+        "Ph.D. University of Southern California",
+        "Associate Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Jessica Garrison",
+        "Ph.D. Massachusetts Institute of Technology",
+        "Assistant Professor of Teaching",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Douglas Houston",
+        "Ph.D. University of California, Los Angeles",
+        "Associate Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Helen Ingram",
+        "Ph.D. Columbia University",
+        "Former Warmington Chair in the Social Ecology of Peace and International Cooperation and",
+        "Professor Emerita",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Hun Kim",
+        "Ph.D. University of California, Berkeley",
+        "Assistant Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Jae Hong Kim",
+        "Ph.D. University of Illinois at Urbana-Champaign",
+        "Associate Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Mukul Kumar",
+        "Ph.D. University of California, Berkeley",
+        "Assistant Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Nicholas J. Marantz",
+        "Ph.D. Massachusetts Institute of Technology, J.D. Harvard Law School",
+        "Associate Professor",
+        "of Urban Planning and Public Policy",
+        "; School of Law"
+      ],
+      [
+        "Richard Matthew",
+        "Ph.D. Princeton University",
+        "Professor",
+        "of Urban Planning and Public Policy",
+        "; Political Science"
+      ],
+      [
+        "Sanjoy Mazumdar",
+        "Ph.D. Massachusetts Institute of Technology",
+        "Professor Emeritus",
+        "of Urban Planning and Public Policy",
+        "; Religious Studies"
+      ],
+      [
+        "Michael M\u00e9ndez",
+        "Ph.D. University of California, Berkeley",
+        "Assistant Professor",
+        "of Urban Planning and Public Policy",
+        "; Chicano/Latino Studies"
+      ],
+      [
+        "Walter J. Nicholls",
+        "Ph.D. University of California, Los Angeles",
+        "Chair and",
+        "Professor",
+        "of Urban Planning and Public Policy",
+        "; Sociology"
+      ],
+      [
+        "Virginia Parks",
+        "Ph.D. University of California, Los Angeles",
+        "Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Seth D. Pipkin",
+        "Ph.D. Massachusetts Institute of Technology",
+        "Vice Chair and",
+        "Associate Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Mar\u00eda G. Rend\u00f3n",
+        "Ph.D. Harvard University",
+        "Associate Professor",
+        "of Urban Planning and Public Policy",
+        "; Sociology"
+      ],
+      [
+        "L. Alejandra Reyes, R.C.",
+        "Ph.D. University of Texas at Austin",
+        "Assistant Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Avipsa Roy",
+        "Ph.D. Arizona State University",
+        "Assistant Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Daniel Stokols",
+        "Ph.D. University of North Carolina at Chapel Hill",
+        "Professor Emeritus",
+        "of Urban Planning and Public Policy",
+        "; Psychological Science; Religious Studies"
+      ],
+      [
+        "Luis Suarez-Villa",
+        "Ph.D. Cornell University",
+        "Professor Emeritus",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Rodolfo D. Torres",
+        "Ph.D. Claremont Graduate University",
+        "Professor Emeritus",
+        "of Urban Planning and Public Policy",
+        "; Political Science"
+      ],
+      [
+        "N\u00edcola Ulibarr\u00ed",
+        "Ph.D. Stanford University",
+        "Assistant Professor",
+        "of Urban Planning and Public Policy"
+      ],
+      [
+        "Karna Wong",
+        "Ph.D. University of California, Los Angeles",
+        "Assistant Professor of Teaching",
+        "of Urban Planning and Public Policy",
+        "; Asian American Studies"
+      ],
+      [
+        "Graeme T. Boushey",
+        "Ph.D. University of Washington",
+        "Associate Professor",
+        "of Political Science",
+        "; Urban Planning and Public Policy"
+      ],
+      [
+        "Tim-Allen Bruckner",
+        "M.P.H., Ph.D. University of California, Berkeley",
+        "Professor",
+        "of Health, Society, and Behavior",
+        "; Urban Planning and Public Policy"
+      ],
+      [
+        "Jan K. Brueckner",
+        "Ph.D. Stanford University",
+        "Distinguished Professor",
+        "of Economics",
+        "; Urban Planning and Public Policy"
+      ],
+      [
+        "Damon Clark",
+        "Ph.D. Oxford University",
+        "Associate Professor",
+        "of Economics",
+        "; Urban Planning and Public Policy"
+      ],
+      [
+        "N. Edward Coulson",
+        "Ph.D. University of California, San Diego",
+        "Professor",
+        "of Paul Merage School of Business",
+        "; Economics; Urban Planning and Public Policy"
+      ],
+      [
+        "Joseph DiMento",
+        "Ph.D. University of Michigan",
+        "Distinguished Professor",
+        "of Law",
+        "; Criminology, Law and Society; Paul Merage School of Business; Urban Planning and Public Policy"
+      ],
+      [
+        "Richard D. McCleary",
+        "Ph.D. Northwestern University",
+        "Professor",
+        "of Criminology, Law and Society",
+        "; Urban Planning and Public Policy",
+        "(criminal justice, research methodology, statistics)"
+      ],
+      [
+        "Michael G. McNally",
+        "Ph.D. University of California, Irvine",
+        "Professor",
+        "of Civil and Environmental Engineering",
+        "; Urban Planning and Public Policy",
+        "(travel behavior, transportation systems analysis)"
+      ],
+      [
+        "David S. Meyer",
+        "Ph.D. Boston University",
+        "Professor",
+        "of Sociology",
+        "; Political Science; Urban Planning and Public Policy",
+        "(social movements, public policy, peace and war, social justice)"
+      ],
+      [
+        "Sylvia Nam",
+        "Ph.D. University of California, Berkeley",
+        "Assistant Professor",
+        "of Anthropology",
+        "; Biological Chemistry; Urban Planning and Public Policy",
+        "(urban studies, property, transnational expertise, Southeast Asia)"
+      ],
+      [
+        "Brett F. Sanders",
+        "Ph.D. University of Michigan",
+        "Professor",
+        "of Civil and Environmental Engineering",
+        "; Urban Planning and Public Policy"
+      ],
+      [
+        "Jean-Daniel M. Saphores",
+        "Ph.D. Cornell University",
+        "Department Chair and",
+        "Professor",
+        "of Civil and Environmental Engineering",
+        "; Economics; Urban Planning and Public Policy"
+      ],
+      [
+        "David A. Smith",
+        "Ph.D. University of North Carolina at Chapel Hill",
+        "Professor",
+        "of Sociology",
+        "; Urban Planning and Public Policy"
+      ],
+      [
+        "George E. Tita",
+        "Ph.D. Carnegie Mellon University",
+        "Professor",
+        "of Criminology, Law and Society",
+        "; Urban Planning and Public Policy",
+        "(criminology, community context of violence, urban youth gangs, homicide studies)"
+      ],
+      [
+        "Linda Trinh V\u00f5",
+        "Ph.D. University of California, San Diego",
+        "Professor",
+        "of Asian American Studies",
+        "; Sociology; Urban Planning and Public Policy",
+        "(race and ethnic relations, immigrants and refugees, gender relations, community and urban studies)"
+      ],
+      [
+        "Dissertation research with Urban Planning and Public Policy faculty.",
+        "Prerequisite: Advancement to candidacy.",
+        "Grading Option: Satisfactory/unsatisfactory only.",
+        "Repeatability: May be repeated for credit unlimited times."
+      ]
+    ],
+    "https://education.umd.edu/academics/programs/doctoral/teaching-and-learning-policy-and-leadership-urban-education": [
+      [
+        "TLPL 675: Embracing Diversity in Classroom Communities",
+        "TLPL 774: Urban Education",
+        "TLPL 788E: Professional Seminar in Urban Education",
+        "TLPL 788G: Critical Race Theory",
+        "TLPL 788N: School Exclusion: \u00a0Policy, Practice and Prevention",
+        "TLPL 788U: Race, Whiteness, and Identity"
+      ],
+      [
+        "Main navigation",
+        "Secondary Menu",
+        "Social Media",
+        "Footer",
+        "Social Media"
+      ],
+      [
+        "Leadership and Policy",
+        "Teaching and Learning, Policy and Leadership - Urban Education Specialization, Ph.D.",
+        "Doctor of Philosophy"
+      ],
+      [
+        "Tara Brown\n\n  \n\n          Associate Professor",
+        "Claudia Galindo\n\n  \n\n          Professor",
+        "Rossina Zamora Liu\n\n  \n\n          Assistant Professor"
+      ],
+      [
+        "Tara Brown, Associate Professor",
+        "For Program Questions",
+        "tmbrown@umd.edu"
+      ]
+    ],
+    "https://as.tufts.edu/uep/academics/courses": [
+      [
+        "Core Courses",
+        "Electives in Urban and Environmental Policy and Planning",
+        "Directed Studies",
+        "Thesis/Capstone",
+        "Master's Degree Continuation",
+        "Internship",
+        "Undergraduate Only Courses"
+      ],
+      [
+        "Core Courses",
+        "Electives",
+        "Directed Studies",
+        "Thesis/Capstone",
+        "Master's Degree Continuation",
+        "Internship",
+        "Undergraduate Only Courses"
+      ],
+      [
+        "01/0232",
+        "listed as GIS 0101",
+        "A and ENV 0107",
+        "A in the Summer Term. No Prerequisites."
+      ],
+      [
+        "01/PHIL 0191",
+        "04/CVS 0210",
+        "benefit analysis, equity and risk management, status of \"rights\" of non",
+        "economic value of wilderness and sacred lands."
+      ],
+      [
+        "as well as patterns of disenfranchisement from decision",
+        "making. Students will then examine emerging community",
+        "driven municipal",
+        "and neighborhood",
+        "owned energy utilities, and justice"
+      ],
+      [
+        "01/CSHD 0186",
+        "01/SOC 0094",
+        "14 Homelessness in America. (3 Credits) This multi",
+        "disciplinary course explores the complex and inter"
+      ]
+    ],
+    "https://catalogs.buffalo.edu/preview_program.php?catoid=2&poid=624&returnto=70": [
+      [
+        "URP 617SEM\u00a0-\u00a0Urban Planng Resrch Design Credits: 3",
+        "URP 675SEM\u00a0-\u00a0Special Topics Credits: 3",
+        "URP 676SEM\u00a0-\u00a0Special Topics Credits: 3"
+      ],
+      [
+        "Curriculum",
+        "Total Credit Hours: 72",
+        "Instruction Method",
+        "Full/Part Time Options",
+        "Credits Required",
+        "Time-To-Degree",
+        "Application Fee",
+        "Admissions Tests**",
+        "SED Statement"
+      ],
+      [
+        "Basic Courses (24 credits)",
+        "Theory Stream (6 credits)",
+        "Methods Stream (9 credits)",
+        "Content Stream (15 Credits)",
+        "Minor Stream (6 credits)",
+        "Doctoral Seminar"
+      ],
+      [
+        "Total Credit Hours: 72",
+        "Instruction Method In Person\u00a0(100 percent of courses offered in person)",
+        "Full/Part Time Options Full Time",
+        "Credits Required 72 Hours",
+        "Time-To-Degree 4 to 5+ Years",
+        "Application Fee N/A",
+        "Admissions Tests** GRE"
+      ]
+    ],
+    "https://catalog.unc.edu/graduate/schools-departments/city-regional-planning/": [
+      [
+        "Home/",
+        "Graduate/",
+        "Schools\u00a0and\u00a0Departments/",
+        "City and Regional Planning"
+      ],
+      [
+        "Master's Committee",
+        "Master's Written Exam or Approved Substitute",
+        "Residence Credit",
+        "Thesis Substitute",
+        "Exit Survey"
+      ],
+      [
+        "The Professional Master's Degree Program",
+        "The Doctoral Program",
+        "City and Regional Planning, Master's Program (M.C.R.P.)",
+        "Dual-Degree Programs",
+        "City and Regional Planning, Doctoral Program (Ph.D.)",
+        "Research Programs in Urban and Regional Studies",
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Adjunct Professors",
+        "Associated Faculty",
+        "Professors Emeriti",
+        "Print Options"
+      ],
+      [
+        "Course Requirements",
+        "Specialization Areas",
+        "Milestones",
+        "General Electives",
+        "Summary of Course Requirements",
+        "Master's Project",
+        "Bachelor (Any Major at UNC) + M.C.R.P.",
+        "Master of Environmental Management\u00a0 at Duke + M.C.R.P.",
+        "Law (J.D.) + M.C.R.P.",
+        "Business (M.B.A.) + M.C.R.P.",
+        "Public Administration (M.P.A.) + M.C.R.P.",
+        "Public Health (M.P.H.) + M.C.R.P.",
+        "Landscape Architecture at North Carolina State University + M.C.R.P.",
+        "Course Requirements",
+        "Milestones",
+        "Advanced Undergraduate and Graduate-level Courses",
+        "Graduate-level Courses"
+      ],
+      [
+        "PLAN 420.\u00a0\u00a0Community Design and Green Architecture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENEC\u00a0420."
+      ],
+      [
+        "PLAN 420.",
+        "Community Design and Green Architecture.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 428.\u00a0\u00a0Global Cities: Space, Power, and Identity in the Built Environment.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-VALUES, RESEARCH.",
+        "Making Connections Gen Ed: SS, GL.",
+        "Repeat Rules: May be repeated for credit. 6 total credits. 2 total completions.",
+        "Grading Status: Letter grade.",
+        "Same as: GEOG\u00a0428."
+      ],
+      [
+        "PLAN 428.",
+        "Global Cities: Space, Power, and Identity in the Built Environment.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 491.\u00a0\u00a0Introduction to GIS.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: GEOG\u00a0491."
+      ],
+      [
+        "PLAN 491.",
+        "Introduction to GIS.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 526.\u00a0\u00a0Principles of Public Finance for Public Policy and Planning.\u00a0\u00a01.5 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 526.",
+        "Principles of Public Finance for Public Policy and Planning.",
+        "1.5 Credits."
+      ],
+      [
+        "PLAN 539.\u00a0\u00a0Understanding and Planning for Freight Flows.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 539.",
+        "Understanding and Planning for Freight Flows.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 547.\u00a0\u00a0Energy, Transportation, and Land Use.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENEC\u00a0547."
+      ],
+      [
+        "PLAN 547.",
+        "Energy, Transportation, and Land Use.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 548.\u00a0\u00a0Sustainable Energy Systems.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENEC\u00a0548, ENVR\u00a0548."
+      ],
+      [
+        "PLAN 548.",
+        "Sustainable Energy Systems.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 550.\u00a0\u00a0Evolution of the American City.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 550.",
+        "Evolution of the American City.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 554.\u00a0\u00a0Planning in Practice Speaker Series.\u00a0\u00a01.5 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 6 total credits. 4 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 554.",
+        "Planning in Practice Speaker Series.",
+        "1.5 Credits."
+      ],
+      [
+        "PLAN 562.\u00a0\u00a0Seminar on The Ethics and Politics of New Urban Analytics.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 562.",
+        "Seminar on The Ethics and Politics of New Urban Analytics.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 573.\u00a0\u00a0We're Everywhere: The Life of LGBTQ+ Spaces in the US.\u00a0\u00a01.5 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 573.",
+        "We're Everywhere: The Life of LGBTQ+ Spaces in the US.",
+        "1.5 Credits."
+      ],
+      [
+        "PLAN 574.\u00a0\u00a0Political Economy of Poverty and Inequality.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: GLBL\u00a0574."
+      ],
+      [
+        "PLAN 574.",
+        "Political Economy of Poverty and Inequality.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 575.\u00a0\u00a0Real Estate Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-INTERN.",
+        "Making Connections Gen Ed: EE- Field Work.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 575.",
+        "Real Estate Development.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 576.\u00a0\u00a0Urbanism in the Global South.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL.",
+        "Grading Status: Letter grade.",
+        "Same as: AAAD\u00a0492."
+      ],
+      [
+        "PLAN 576.",
+        "Urbanism in the Global South.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 590.\u00a0\u00a0Special Topics Seminar.\u00a0\u00a01-9 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 590.",
+        "Special Topics Seminar.",
+        "1-9 Credits."
+      ],
+      [
+        "PLAN 591.\u00a0\u00a0Applied Issues in Geographic Information Systems.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  GEOG\u00a0370 or 491.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 596.\u00a0\u00a0Independent Study.\u00a0\u00a01-9 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 596.",
+        "Independent Study.",
+        "1-9 Credits."
+      ],
+      [
+        "PLAN 634.\u00a0\u00a0International Transportation Planning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 634.",
+        "International Transportation Planning.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 635.\u00a0\u00a0Energy Modeling for Environment and Public Health.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENVR\u00a0635, ENEC\u00a0635."
+      ],
+      [
+        "PLAN 635.",
+        "Energy Modeling for Environment and Public Health.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 636.\u00a0\u00a0Urban Transportation Planning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 636.",
+        "Urban Transportation Planning.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 637.\u00a0\u00a0Public Transportation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 637.",
+        "Public Transportation.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 638.\u00a0\u00a0Pedestrian and Bike Transportation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 638.",
+        "Pedestrian and Bike Transportation.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 639.\u00a0\u00a0Complete, Safe, Equitable Streets.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-INTERN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 639.",
+        "Complete, Safe, Equitable Streets.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 640.\u00a0\u00a0Roadways for a Safer Future.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-INTERN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 640.",
+        "Roadways for a Safer Future.",
+        "1 Credits."
+      ],
+      [
+        "PLAN 641.\u00a0\u00a0Watershed Planning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENEC\u00a0641."
+      ],
+      [
+        "PLAN 641.",
+        "Watershed Planning.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 647.\u00a0\u00a0Coastal Management Policy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-NATSCI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 647.",
+        "Coastal Management Policy.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 652.\u00a0\u00a0Site Planning and Urban Design.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 652.",
+        "Site Planning and Urban Design.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 655.\u00a0\u00a0Planning for Natural Hazards and Climate Risk.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 655.",
+        "Planning for Natural Hazards and Climate Risk.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 656.\u00a0\u00a0Climate Change Impacts and Adaptation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-NATSCI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 656.",
+        "Climate Change Impacts and Adaptation.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 662.\u00a0\u00a0Gender Issues in Planning and Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0662."
+      ],
+      [
+        "PLAN 662.",
+        "Gender Issues in Planning and Development.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 663.\u00a0\u00a0Diversity and Inequality in Cities.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 663.",
+        "Diversity and Inequality in Cities.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 670.\u00a0\u00a0Planning Equitable Economies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 670.",
+        "Planning Equitable Economies.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 671.\u00a0\u00a0Development Planning Techniques.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 671.",
+        "Development Planning Techniques.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 672.\u00a0\u00a0Urban Data Analytics.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 672.",
+        "Urban Data Analytics.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 677.\u00a0\u00a0Perspectives on Economic Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 677.",
+        "Perspectives on Economic Development.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 685.\u00a0\u00a0Water and Sanitation Planning and Policy in Less Developed Countries.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENVR\u00a0685."
+      ],
+      [
+        "PLAN 685.",
+        "Water and Sanitation Planning and Policy in Less Developed Countries.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 687.\u00a0\u00a0International Development and Social Change.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 687.",
+        "International Development and Social Change.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 691H.",
+        "Honors Seminar in Urban and Regional Studies.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 704.\u00a0\u00a0Theory of Planning I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 704.",
+        "Theory of Planning I.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 710.\u00a0\u00a0Microeconomics for Planning and Public Policy Analysis.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 710.",
+        "Microeconomics for Planning and Public Policy Analysis.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 714.\u00a0\u00a0Urban Spatial Structure.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 714.",
+        "Urban Spatial Structure.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 715.\u00a0\u00a0Introduction to GIS for Urban Planners.\u00a0\u00a01.5 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 715.",
+        "Introduction to GIS for Urban Planners.",
+        "1.5 Credits."
+      ],
+      [
+        "PLAN 720.\u00a0\u00a0Planning Methods.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 720.",
+        "Planning Methods.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 721.\u00a0\u00a0Advanced Planning Methods.\u00a0\u00a01.5 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 721.",
+        "Advanced Planning Methods.",
+        "1.5 Credits."
+      ],
+      [
+        "PLAN 722.\u00a0\u00a0Systems Thinking and Modeling for Planners.\u00a0\u00a01.5 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 722.",
+        "Systems Thinking and Modeling for Planners.",
+        "1.5 Credits."
+      ],
+      [
+        "PLAN 724.\u00a0\u00a0Introduction to Law for Planners.\u00a0\u00a03 Credits.",
+        "Governmental institutions, real property, constitutional law, land use law, and environmental law.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 724.",
+        "Introduction to Law for Planners.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 725.\u00a0\u00a0Development Dispute Resolution.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 725.",
+        "Development Dispute Resolution.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 727.\u00a0\u00a0COMMUNITY ENGAGEMENT.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 727.",
+        "COMMUNITY ENGAGEMENT.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 730.\u00a0\u00a0Data Collection Methods.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: SOCI\u00a0760, POLI\u00a0860."
+      ],
+      [
+        "PLAN 730.",
+        "Data Collection Methods.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 731.\u00a0\u00a0Questionnaire Design.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: SOCI\u00a0761, POLI\u00a0861."
+      ],
+      [
+        "PLAN 731.",
+        "Questionnaire Design.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 735.\u00a0\u00a0Community Revitalization Applied.\u00a0\u00a04.5 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 9 total credits. 2 total completions.",
+        "Grading Status: Letter grade.",
+        "Same as: PUBA\u00a0735."
+      ],
+      [
+        "PLAN 735.",
+        "Community Revitalization Applied.",
+        "4.5 Credits."
+      ],
+      [
+        "PLAN 738.\u00a0\u00a0Transportation Policy and Planning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 738.",
+        "Transportation Policy and Planning.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 739.\u00a0\u00a0Transportation Planning Models.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 739.",
+        "Transportation Planning Models.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 740.\u00a0\u00a0Land Use and Environmental Policy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 740.",
+        "Land Use and Environmental Policy.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 741.\u00a0\u00a0Land Use and Environmental Planning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 741.",
+        "Land Use and Environmental Planning.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 744.\u00a0\u00a0Development and Environmental Management.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 744.",
+        "Development and Environmental Management.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 745.\u00a0\u00a0Development Impact Assessment.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 745.",
+        "Development Impact Assessment.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 752.\u00a0\u00a0Project and Site Planning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 752.",
+        "Project and Site Planning.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 754.\u00a0\u00a0Natural Hazards Resilience Speaker Series.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 754.",
+        "Natural Hazards Resilience Speaker Series.",
+        "1 Credits."
+      ],
+      [
+        "PLAN 757.\u00a0\u00a0Planning for Historical Preservation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 757.",
+        "Planning for Historical Preservation.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 762.\u00a0\u00a0Central City Revitalization.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 762.",
+        "Central City Revitalization.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 763.\u00a0\u00a0Urban Neighborhood Revitalization.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 763.",
+        "Urban Neighborhood Revitalization.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 764.\u00a0\u00a0Community Development & Revitalization Techniques.\u00a0\u00a04.5 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 9 total credits. 2 total completions.",
+        "Grading Status: Letter grade.",
+        "Same as: PUBA\u00a0734."
+      ],
+      [
+        "PLAN 764.",
+        "Community Development & Revitalization Techniques.",
+        "4.5 Credits."
+      ],
+      [
+        "PLAN 765.\u00a0\u00a0Real Estate Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 765.",
+        "Real Estate Development.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 767.\u00a0\u00a0Diversity and Inequalities in Cities.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 767.",
+        "Diversity and Inequalities in Cities.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 773.\u00a0\u00a0Economic Development Seminar.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 773.",
+        "Economic Development Seminar.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 776.\u00a0\u00a0Development Finance.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 776.",
+        "Development Finance.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 781.\u00a0\u00a0Water Resources Planning and Policy Analysis.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENVR\u00a0781."
+      ],
+      [
+        "PLAN 781.",
+        "Water Resources Planning and Policy Analysis.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 785.\u00a0\u00a0Public Investment Theory.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  PLAN\u00a0710.",
+        "Grading Status: Letter grade.",
+        "Same as: ENVR\u00a0785."
+      ],
+      [
+        "PLAN 785.",
+        "Public Investment Theory.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 786.\u00a0\u00a0Environmental Quality Management.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ENVR\u00a0786."
+      ],
+      [
+        "PLAN 786.",
+        "Environmental Quality Management.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 787.\u00a0\u00a0Applied Environmental Finance: How to Pay for Environmental Services.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: PUBA\u00a0787, ENVR\u00a0787."
+      ],
+      [
+        "PLAN 787.",
+        "Applied Environmental Finance: How to Pay for Environmental Services.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 788.\u00a0\u00a0Advanced Economic Analysis for Public Policy I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: PLCY\u00a0888."
+      ],
+      [
+        "PLAN 788.",
+        "Advanced Economic Analysis for Public Policy I.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 789.\u00a0\u00a0Advanced Economic Analysis for Public Policy II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  PLCY\u00a0888.",
+        "Grading Status: Letter grade.",
+        "Same as: PLCY\u00a0889."
+      ],
+      [
+        "PLAN 789.",
+        "Advanced Economic Analysis for Public Policy II.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 793.\u00a0\u00a0Planning Seminar.\u00a0\u00a01-15 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 15 total credits. 15 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 793.",
+        "Planning Seminar.",
+        "1-15 Credits."
+      ],
+      [
+        "PLAN 801.\u00a0\u00a0Design of Policy-Oriented Research.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: PLCY\u00a0801."
+      ],
+      [
+        "PLAN 802.\u00a0\u00a0Advanced Seminar in Research Design: Data, Methods, and Evaluation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: PLCY\u00a0802."
+      ],
+      [
+        "PLAN 805.\u00a0\u00a0Theory of Planning II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 805.",
+        "Theory of Planning II.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 823.\u00a0\u00a0Planning Workshop.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 823.",
+        "Planning Workshop.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 890.\u00a0\u00a0Special Topics in Planning and Urbanism.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 890.",
+        "Special Topics in Planning and Urbanism.",
+        "1-3 Credits."
+      ],
+      [
+        "PLAN 891.\u00a0\u00a0Special Topics in Planning and Urbanism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 891.",
+        "Special Topics in Planning and Urbanism.",
+        "3 Credits."
+      ],
+      [
+        "PLAN 896.\u00a0\u00a0Independent Study.\u00a0\u00a01-15 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 896.",
+        "Independent Study.",
+        "1-15 Credits."
+      ],
+      [
+        "PLAN 911.\u00a0\u00a0Ph.D. Research Seminar.\u00a0\u00a01-15 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "PLAN 992.\u00a0\u00a0Master's (Non-Thesis).\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit."
+      ],
+      [
+        "PLAN 992.",
+        "Master's (Non-Thesis).",
+        "3 Credits."
+      ],
+      [
+        "Associate Director of Graduate Programs",
+        "Sandra Lazo de la Vega",
+        "sandral@unc.edu"
+      ],
+      [
+        "Director of the Ph.D. Program",
+        "Todd BenDor",
+        "bendor@unc.edu"
+      ],
+      [
+        "Core Courses",
+        "PLAN\u00a0704",
+        "PLAN\u00a0710",
+        "PLAN\u00a0714",
+        "PLAN\u00a0720",
+        "PLAN\u00a0724",
+        "PLAN\u00a0715",
+        "Electives",
+        "16.5 total credit hours required",
+        "Specialization",
+        "12 total credit hours required per the student's selected specialization area.",
+        "Thesis/Substitute or Dissertation",
+        "PLAN\u00a0823",
+        "PLAN\u00a0992",
+        "Minimum Hours"
+      ],
+      [
+        "Column 1",
+        "Requirement",
+        "Planning Theory",
+        "GIS for Planners",
+        "Urban Spatial Structure",
+        "Economic Theory",
+        "Planning Methods",
+        "Problem-Solving Workshop",
+        "Area of Specialization",
+        "Elective/Supporting Courses",
+        "Masters Project"
+      ],
+      [
+        "making, and professional skills necessary to conceptualize and implement high",
+        "quality community engagement activities. It is a hands",
+        "on, skill",
+        "building course with a focus on project design and inclusive presentation."
+      ]
+    ],
+    "https://sites.uw.edu/urbdpphd/currrent-students/phase-ii-courses/": [
+      [
+        "Course",
+        "ARCH 561",
+        "CET 511",
+        "CET 561",
+        "CET 583",
+        "CET 589",
+        "INSC 581",
+        "POL S 505",
+        "POL S 509",
+        "POL S 522",
+        "POL S 574",
+        "PPM 506",
+        "PPM 508",
+        "PPM 510",
+        "PUBPOL 564",
+        "PUBPOL 565",
+        "PUBPOL 597",
+        "RE 564",
+        "RE 565",
+        "SEFS 567",
+        "SEFS 571/PUBPOL 592",
+        "URBDP 524",
+        "URBDP 532",
+        "URBDP 534",
+        "URBDP 538",
+        "URBDP 560/PUBPOL 560",
+        "URBDP 566",
+        "URBDP 567",
+        "URBDP 573",
+        "URBDP 578/RE 550",
+        "URBDP 596",
+        "URBDP 598"
+      ],
+      [
+        "Course",
+        "BIOST 529 / CS&SS 529 / STAT 529",
+        "CET 512",
+        "CET 593",
+        "COM 511",
+        "COM 513",
+        "COM 527",
+        "CS&SS 510",
+        "CS&SS 512",
+        "CS&SS 526 / SOC 529",
+        "CS&SS 536",
+        "CS&SS 544",
+        "CS&SS 560",
+        "CS&SS 564/STAT 564",
+        "CS&SS 566  / STAT 566",
+        "CS&SS 567",
+        "CS&SS 589",
+        "CS&SS 594",
+        "ECON 500",
+        "ECON 501",
+        "ECON 508",
+        "EDPSY 588",
+        "ENVH 577 / PUBPOL 589",
+        "ENVH 593",
+        "EPI 511",
+        "EPI 538",
+        "GEOG 526",
+        "HSTRY 596/597",
+        "PUBPOL 526",
+        "SEFS 502",
+        "SOC 526",
+        "SOC WL 585/586",
+        "STAT 512",
+        "STAT 513",
+        "URBDP 522"
+      ]
+    ],
+    "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/": [
+      [
+        "Formal Dual Degree Programs",
+        "M.U.R.P. + M.Arch",
+        "M.U.R.P. + M.U.D.",
+        "M.U.R.P. + M.B.A.",
+        "M.U.R.P. + J.D.",
+        "M.U.R.P. + SEAS",
+        "Common Student-Initiated Dual Degrees",
+        "M.U.R.P. + Landscape Architecture",
+        "M.U.R.P. + Public Health",
+        "M.U.R.P. + Public Policy",
+        "M.U.R.P. + School of Information",
+        "M.U.R.P. + Social Work",
+        "Taubman College of Architecture and Urban Planning"
+      ]
+    ],
+    "https://catalog.ucsd.edu/courses/USP.html": [
+      [
+        "Courses",
+        "Lower Division",
+        "Upper Division",
+        "Graduate"
+      ],
+      [
+        "awareness and self",
+        "care. Prerequisites: upper",
+        "division standing or consent of instructor."
+      ]
+    ],
+    "https://architectureandplanning.ucdenver.edu/academics/urban-and-regional-planning/murp": [
+      [
+        "Program Requirements",
+        "GPA Requirements and Grading Policy",
+        "Core Course Substitution",
+        "Advanced Standing Credit Waiver"
+      ],
+      [
+        "Determine if they will be working\u00a0independently or as part of a small group,",
+        "Identify their Capstone client and project topic, and",
+        "Begin preparing a detailed\u00a0project prospectus (work plan, schedule, methodology, and deliverables)."
+      ],
+      [
+        "The local, regional and national political influences that shape projects and districts",
+        "The physical site constraints and opportunities that shape projects and districts",
+        "The importance of leveraging resources and creating viable public/private partnerships"
+      ],
+      [
+        "Environmental Planning",
+        "Physical Planning and Urban Design",
+        "Healthy Communities Planning"
+      ],
+      [
+        "Where We Work",
+        "Where can a CU Denver MURP degree take you?",
+        "We have compiled a list of where many of our alumni work around the U.S. and their job titles.",
+        "Discover what you can do with a Master of Urban and Regional Planning from CU Denver."
+      ],
+      [
+        "Instructor: Manish Shirgaokar",
+        "Syllabus:\u00a0URPL 6250 GIS Syllabus Fall 2021",
+        "3 Credit Elective Course (Lecture/Lab)",
+        "Image Credit: Adison Petti, MURP Student"
+      ],
+      [
+        "Instructor: Manish Shirgaokar",
+        "Syllabus:\u00a0URPL 6560 Transit, Pedestrian, Bicycle Syllabus Fall 2021",
+        "Photo Credit: Adam Copolla"
+      ],
+      [
+        "Instructors: Marilee Utter and Brad Segal",
+        "Syllabus: URPL 6355 Urban Redevelopment Strategies Syllabus Spring 2022",
+        "Topics to be explored include:"
+      ],
+      [
+        "Instructor: Dr. Manish Shirgaokar",
+        "Syllabus: URPL 6555 Transportation, Land Use, and the Environment Syllabus Spring 2021",
+        "Term Paper Sample: URPL 6225 Term Paper Sample"
+      ],
+      [
+        "Applied Geography / Geospatial Sciences (MA-AGGS)",
+        "Architecture (M ARCH)",
+        "Business Administration (MBA)",
+        "Engineering Transportation Systems (MENG)",
+        "Historic Preservation (MSHP)*",
+        "Law (JD)",
+        "Landscape Architecture (MLA)*",
+        "Public Administration (MPA)",
+        "Public Health (MPH)",
+        "Urban Design (MUD)*",
+        "*Programs located within the College of Architecture and Planning"
+      ],
+      [
+        "Carrie\n\nMakarewicz\nPhD\n\n\n\nAssociate Professor & Department Chair",
+        "Jennifer\n\nSteffel Johnson\nPhD\n\n\n\nAssistant Professor CTT & Associate Chair",
+        "Roxy\n\nNew\n\n\n\nSenior Course Coordinator & Graduate Academic Advisor for MURP, MUD, MLA, MSHP, & PhD",
+        "Jodi\n\nStock\n\n\n\nManager of Graduate Admissions and Recruitment"
+      ],
+      [
+        "Course #",
+        "URPL 5000",
+        "URPL 5010",
+        "URPL 5020",
+        "URPL 5030",
+        "URPL 5040",
+        "URPL 5050",
+        "URPL 5060",
+        "URPL 5070",
+        "URPL 6000",
+        "Student's choice of ONE of the following 6-credit courses:",
+        "URPL 6900",
+        "URPL 6920 AND 6925"
+      ],
+      [
+        "Course #",
+        "URPL 6250",
+        "URPL 6260",
+        "URPL 6230",
+        "URBN 6575",
+        "URPL 6455"
+      ],
+      [
+        "Course #",
+        "URPL 5000",
+        "URPL 5010",
+        "URPL 5030",
+        "URPL 5070"
+      ],
+      [
+        "Course #",
+        "URPL 5040",
+        "URPL 5050",
+        "URPL 5060"
+      ],
+      [
+        "Course #",
+        "URPL 6000",
+        "URPL 5020",
+        "Student's Choice of ONE of the following 6-credit courses:",
+        "URPL 6900",
+        "URPL 6920 and URPL 6925"
+      ],
+      [
+        "Introductory Electives",
+        "URPL 6555Transportation, Land Use, and Environment",
+        "URPL 6560Transit, Pedestrian, and Bicycle Planning"
+      ],
+      [
+        "Introductory Electives",
+        "URPL 6400Community Development",
+        "URPL 6650International Development Planning"
+      ],
+      [
+        "Introductory Electives",
+        "URPL 6200Land Development Regulations",
+        "URPL 6355Urban Redevelopment Strategies"
+      ],
+      [
+        "Introductory Electives",
+        "URPL 6500Environmental Planning and Management",
+        "URPL 6555Transportation, Land Use, and Environment"
+      ],
+      [
+        "Introductory Electives",
+        "URPL 6350City Design Fundamentals",
+        "URPL 6200Land Development Regulations"
+      ],
+      [
+        "Introductory Electives",
+        "URPL 6300Community/Environmental Health Planning",
+        "URPL 6400Community Development"
+      ],
+      [
+        "3.70 points\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0B+\u00a0 \u00a0 \u00a0 \u00a0 3.30 pointsB\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a03.00 points\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0B",
+        "2.70 points\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0C+\u00a0 \u00a0 \u00a0 \u00a0 2.30 pointsC\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a02.00 points\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0C",
+        "1.70 points\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0D+\u00a0 \u00a0 \u00a0 \u00a0 1.30 pointsD\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 1.00 points\u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0D",
+        "0.70 points\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 F\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a00.00 points"
+      ],
+      [
+        ") are offered by other programs within the College or University but are cross",
+        "listed with a URPL course number as approved MURP courses. Courses with a double asterisk (",
+        ") are approved as advanced skills/methods electives."
+      ]
+    ],
+    "https://www.newschool.edu/milano/public-urban-policy-ms/": [
+      [
+        "Undergraduates",
+        "Undergraduate Adult Learners",
+        "Graduates"
+      ]
+    ],
+    "https://luskin.ucla.edu/urban-planning": [
+      [
+        "Nolan Gray",
+        "Jacqueline Waggoner",
+        "Ananya Roy",
+        "Spring Career and Internship Fair",
+        "Lunch and Learn with JCI Worldwide",
+        "LGBTQ+ Equality and the 2025 Landscape",
+        "Campus Resources",
+        "Follow"
+      ],
+      [
+        "MASTER OF URBAN AND REGIONAL PLANNING",
+        "MASTER OF REAL ESTATE DEVELOPMENT",
+        "Ph.D.\u00a0DEGREE",
+        "CONCURRENT DEGREE PROGRAMS",
+        "DUAL DEGREE PROGRAM",
+        "UNDERGRADUATE PROGRAMS",
+        "CERTIFICATE PROGRAMS",
+        "VISITOR PROGRAMS"
+      ]
+    ],
+    "https://www.arch.tamu.edu/academics/graduate-programs/ph-d-in-urban-regional-sciences/": [
+      [
+        "Environmental hazards and disasters",
+        "Sustainability",
+        "Housing and community development",
+        "Health and wellbeing",
+        "Transportation"
+      ],
+      [
+        "Detailed research interests that align with those of our faculty.",
+        "Competitive undergraduate and masters GPA from high quality universities.",
+        "TOEFL scores that are competitive.",
+        "GRE scores are not required but are accepted as additional evidence of scholarly excellence."
+      ],
+      [
+        "Transcripts from all colleges or universities you have attended",
+        "Required English language test scores (TOEFL) The GRE is not required.",
+        "R\u00e9sum\u00e9 or Curriculum Vitae"
+      ],
+      [
+        "Meet Our Students",
+        "Featured Courses",
+        "Helpful Resources",
+        "Academics",
+        "For You"
+      ],
+      [
+        "Marccus Hendricks",
+        "Associate Professor",
+        "University of Maryland",
+        "Zihihan Tao",
+        "Assistant Professor",
+        "University of Illinois",
+        "Fayola Jacobs",
+        "Assistant Professor",
+        "University of Minnesota",
+        "Joy Semien",
+        "Chief of Staff",
+        "Environmental Protection Agency (EPA) Region 6",
+        "Jiaxin Du",
+        "Assistant Professor",
+        "Grand Valley State University",
+        "Jennifer Blanks",
+        "Geospatial Data Analyst",
+        "Chandler Wilkins",
+        "Program Manager",
+        "The Urban Institute"
+      ],
+      [
+        "Haotian Zhong",
+        "Assistant Professor",
+        "Renmin University, China",
+        "Bo Yang",
+        "Professor",
+        "University of Arizona",
+        "Sungmin Lee",
+        "Assistant Professor",
+        "Texas A&M University",
+        "Donghwan Gu",
+        "Research Scientist",
+        "National Institute of Standards & Technology",
+        "Nicolas Norboge",
+        "Principal Transportation Finance Analyst",
+        "NC Office of State Budget & Management",
+        "Sinan Zhong",
+        "Assistant Professor",
+        "Texas A&M University",
+        "Jennifer Evans Crawley",
+        "President",
+        "University of Texas at Arlington"
+      ],
+      [
+        "Hazard Reduction & Recovery Center",
+        "Center for Health Systems and Design",
+        "Institute for Sustainable Communities",
+        "Center for Infrastructure Renewal"
+      ],
+      [
+        "Center for Housing and Urban Development",
+        "Center for Heritage Conservation",
+        "Texas A&M Transportation Institute",
+        "Institute of Data Science"
+      ]
+    ],
+    "https://capla.arizona.edu/academics/master-science-urban-planning/curriculum-concentrations-courses": [
+      [
+        "Main navigation",
+        "Curriculum",
+        "Concentration Areas",
+        "MS Urban Planning Dual Degrees",
+        "Accelerated Master\u2019s Program",
+        "Courses",
+        "Accreditation",
+        "Graduate Student Handbook",
+        "Ready to shape a more resilient future?",
+        "Academic Programs",
+        "Footer - Main",
+        "Information For",
+        "Programs",
+        "Resources",
+        "Connect"
+      ],
+      [
+        "CURRICULUM: YEAR 1",
+        "FALL 1",
+        "SPRING 1",
+        "CURRICULUM: YEAR 2",
+        "FALL 2",
+        "SPRING 2",
+        "ENVIRONMENTAL PLANNING",
+        "HERITAGE CONSERVATION",
+        "REAL ESTATE & URBAN DEVELOPMENT",
+        "URBAN TRANSPORTATION PLANNING",
+        "MBA/MS Urban Planning Dual Degree",
+        "MRED/MS Urban Planning Dual Degree",
+        "MS Urban Planning/MS in Water, Society and Policy Dual Degree",
+        "PLG 501A Planning Theory and Practice",
+        "PLG 507 Survey of Responsible Real Estate Development",
+        "PLG 508 Climate Action Planning",
+        "PLG 509 Due Diligence and Entitlements",
+        "PLG 512 Comprehensive Planning and Land Use Controls",
+        "PLG 514 Methods in Planning",
+        "ENVS 550 Green Infrastructure",
+        "PLG 560 Land Use Planning Law",
+        "PLG 564 Preservation Planning Issues",
+        "PLG 568 Urban Transportation Planning",
+        "PLG 569 Transportation and Land Use",
+        "PLG 572 Land Use Planning Analysis",
+        "PLG 573 Transportation and Society",
+        "PLG 576 The Land Development Process",
+        "PLG 558 Geodesign Studio",
+        "PLG 597Q Public Participation and Dispute Resolution",
+        "PLG 597S Sustainable Urban Development and Design",
+        "PLG 597V Affordable Housing and Community Development",
+        "PLG 599-002 Low Income Housing Challenge (Independent Study)",
+        "PLG 625 Market Analysis for Responsible Real Estate Development",
+        "PLG 611 Projects in Regional Planning"
+      ]
+    ],
+    "https://dcp.ufl.edu/urp/academics/campus_programs/": [
+      [
+        "Department of Urban and Regional Planning",
+        "Department of Urban and Regional Planning",
+        "Campus Master of Urban and Regional Planning (MURP) Degree Program",
+        "Department of Urban and Regional Planning",
+        "Helpful Links"
+      ],
+      [
+        "Areas of Specialization",
+        "Undergraduate Minor",
+        "Graduate Minor",
+        "Certificates & Concentrations",
+        "Concurrent Degrees"
+      ],
+      [
+        "Four semesters of study, with a professional internship",
+        "Fifty",
+        "two credit hours"
+      ],
+      [
+        "6000, and include undergraduate",
+        ", graduate",
+        ", and doctoral",
+        "level course offerings."
+      ]
+    ],
+    "https://w2.csun.edu/social-behavioral-sciences/urban-studies-planning": [
+      [
+        "Major in Urban Studies and Planning",
+        "Minor in Urban Studies and Planning",
+        "Master of Urban Planning",
+        "Department Announcements",
+        "Latest News",
+        "Department Office",
+        "Department Chair"
+      ]
+    ],
+    "https://priceschool.usc.edu/academics/doctoral/ph-d-in-urban-planning-and-development-dupd/": [
+      [
+        "Arts, culture, and community development",
+        "Climate change and sustainability",
+        "Data science and spatial analysis",
+        "Demography",
+        "Housing",
+        "Land use and urban design",
+        "Planning theory and social justice",
+        "Real Estate",
+        "Transportation and Mobility"
+      ],
+      [
+        "Doctoral and Ph.D. Programs",
+        "Request Information",
+        "Request Information",
+        "Create new knowledge for vibrant urban life.",
+        "Why choose Price?",
+        "Explore",
+        "Financial Aid",
+        "Fields of Study",
+        "In this section:"
+      ],
+      [
+        "A Research Hub",
+        "Funding",
+        "Career Launching",
+        "Life in Los Angeles",
+        "Attend an Info Session",
+        "USC Price ranked No. 1 in urban planning research citations",
+        "UPD Curriculum",
+        "UPD Learning Objectives",
+        "Ph.D. Admissions",
+        "Ph.D. Funding",
+        "Select First Year Placements",
+        "Media",
+        "Resources",
+        "Policies"
+      ],
+      [
+        "UPD Curriculum",
+        "UPD Learning Objectives",
+        "Ph.D. Admissions",
+        "Ph.D. Funding",
+        "Select First Year Placements"
+      ]
+    ],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/urban-regional-planning": [
+      [
+        "General Bulletins",
+        "Graduate Departments",
+        "Graduate Department of Urban and Regional Planning"
+      ],
+      [
+        "Core curriculum: 15 credit hours",
+        "Methods for policy and planning decisions: nine credit hours",
+        "Collaborative and participatory methods: three credit hours",
+        "Elected specialty area: nine credit hours",
+        "Electives: nine credit hours",
+        "Capstone requirement: three to six credit hours"
+      ],
+      [
+        "Environmental Planning",
+        "Neighborhood Planning and Community Design",
+        "Planning for Developing Areas",
+        "Real Estate and Economic Development",
+        "Transportation Planning"
+      ],
+      [
+        "Main navigation Pulldown",
+        "Main navigation Pulldown",
+        "2024-2025 GRADUATE BULLETIN",
+        "Graduate Department of\u00a0Urban and Regional Planning",
+        "The Field of Planning",
+        "The Department of Urban and Regional Planning",
+        "Master's Program",
+        "Joint Law and Planning Graduate Pathway",
+        "Joint Planning and Public Administration Graduate Pathway",
+        "Joint Planning and International Affairs Graduate Pathway",
+        "Joint Planning and Public Health Graduate Pathway",
+        "Joint Planning and Demography Graduate Pathway",
+        "Joint Planning and Demography Graduate Pathway",
+        "International Exchange Programs",
+        "Pre-Doctoral Program",
+        "Doctoral Program",
+        "Admissions",
+        "Definition of Prefix",
+        "Graduate Courses",
+        "Looking for something else?"
+      ],
+      [
+        "College of Social Sciences and Public Policy",
+        "Core Curriculum",
+        "Methods for Policy and Planning",
+        "Collaborative and Participatory Methods",
+        "Specializations",
+        "Internship",
+        "Capstone Requirement",
+        "Prerequisites for Doctoral Study",
+        "Program Statement",
+        "Coursework",
+        "Preliminary Examination",
+        "Dissertation",
+        "Planning Theory and Practice",
+        "Planning Methods",
+        "Urban Growth Process",
+        "Planning for Developing Areas",
+        "Environmental Planning",
+        "Real Estate and Economic Development Planning",
+        "Transportation Planning",
+        "Neighborhood Planning and Community Design",
+        "Other Graduate Courses",
+        "Graduate Bulletin",
+        "Undergraduate Bulletin",
+        "Mailing Address",
+        "Hours"
+      ],
+      [
+        "Graduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "Undergraduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "based), 213 (computer",
+        "based), or 80 (Internet",
+        "4240 U.S.A."
+      ],
+      [
+        "projection techniques, to economic",
+        "base analysis and economic",
+        "projection methods, as well as to methods for preparing a land",
+        "use plan. Students are required to use these methods in preparing a demographic, economic, and land",
+        "use analysis for a Florida county and subcounty area."
+      ],
+      [
+        "representation skills required for communicating solutions to planning and urban",
+        "based illustrations of physical",
+        "planning solutions to urban design and policy",
+        "based questions."
+      ],
+      [
+        "5424. Sustainable Development Planning in the Americas (",
+        "1) environmental philosophies that have influenced the movement;",
+        "2) North American approaches to planning for sustainable development; and"
+      ]
+    ],
+    "https://www.ohio.edu/cas/geography/undergraduate/urban-planning-sustainability": [
+      [
+        "GEOG 1100 - Physical Geography Credit Hours: 4.0 (C or better grade required)",
+        "GEOG 1200 - Human Geography Credit Hours: 3.0 (C or better grade required)",
+        "GEOG 2680 - Introduction to GIS and Mapping Sciences Credit Hours: 4.0 (C or better grade required)",
+        "GEOG 2710 - Introduction to Statistics in Geography Credit Hours: 3.0 (C- or better grade required)",
+        "GEOG 4800 - Senior Seminar in Geography Credit Hours: 3.0"
+      ],
+      [
+        "GEOG 3300 - Geography of Europe Credit Hours: 3.0",
+        "GEOG 3310 - Geography of Africa Credit Hours: 3.0",
+        "GEOG 3330 - Appalachia: Land and People Credit Hours: 3.0",
+        "GEOG 3340 - Historical Geography of the United States Credit Hours: 3.0",
+        "GEOG 3350 - Geography of Latin America Credit Hours: 3.0",
+        "GEOG 3380 - Geography of Asia Credit Hours: 3.0"
+      ],
+      [
+        "GEOG 3600 - Cartography I\u00a0Credit Hours:\u00a04",
+        "GEOG 3650 - Air Photo Interpretation\u00a0Credit Hours:\u00a03",
+        "GEOG 4660 - Principles of Remote Sensing\u00a0Credit Hours:\u00a04",
+        "GEOG 4710 - Quantitative Methods in Geography\u00a0Credit Hours:\u00a03",
+        "GEOG 4712 - Field Methods in Geography\u00a0Credit Hours:\u00a03",
+        "GEOG 4730 - Principles of GIS\u00a0Credit Hours:\u00a04"
+      ],
+      [
+        "GEOG 3260 - Urban Geography Credit Hours: 3.0",
+        "GEOG 2500 - Planning and the City Credit Hours: 3.0",
+        "GEOG 4520 - Environmental and Sustainability Planning Credit Hours: 3.0",
+        "GEOG 4560 - The Just and Sustainable City Credit Hours: 3.0"
+      ],
+      [
+        "GEOG 3210 - Population Geography Credit Hours: 3.0",
+        "GEOG 3250 - Political Geography Credit Hours: 3.0",
+        "GEOG 3270 - Social Geographies Credit Hours: 3.0",
+        "GEOG 3290 - World Economic Geography Credit Hours: 3.0",
+        "GEOG 3580 - Environmental Hazards Credit Hours: 3.0",
+        "GEOG 4550 - History of Planning Credit Hours: 3.0"
+      ],
+      [
+        "ECON 3200 - Labor Economics Credit Hours: 3.0",
+        "ECON 4250 - Government and Economic Policy Credit Hours: 3.0",
+        "HIST 3112 - United States in Urban History Credit Hours: 3.0",
+        "POLS 3200 - Urban Politics Credit Hours: 3.0",
+        "POLS 4840 - The Politics of Sustainability Credit Hours: 3.0",
+        "SOC 4240 - Urban Sociology Credit Hours: 3.0",
+        "SW 2601 - Social Welfare Overview and Trends Credit Hours: 3.0",
+        "SW 3602 - Social Welfare Policy Credit Hours: 3.0"
+      ],
+      [
+        "Careers and Graduate School",
+        "University-wide Graduation Requirements",
+        "College-Level Requirements for the College of Arts & Sciences",
+        "Geography \u2013 Urban Planning Major",
+        "Geography Foundations",
+        "Geography Regional Course",
+        "Geography Technique/Method Courses",
+        "Program Requirements",
+        "Core Requirements",
+        "Recommended Courses"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 21:23:33"
+}

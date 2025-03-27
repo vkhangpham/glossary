@@ -1,0 +1,1924 @@
+{
+    "metadata": {
+        "total_input_count": 332,
+        "pre_filtered_count": 332,
+        "single_word_count": 103,
+        "multi_word_count": 229,
+        "verified_single_word_count": 81,
+        "unverified_single_word_count": 22,
+        "total_verified_count": 310,
+        "normalized_output_count": 310,
+        "provider": "openai",
+        "batch_size": 10,
+        "cooldown_period": 1,
+        "cooldown_frequency": 10,
+        "max_retries": 3
+    },
+    "verification_results": {
+        "French": {
+            "is_verified": false,
+            "departments": [
+                "French and italian",
+                "French & italian",
+                "French italian spanish"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:25"
+        },
+        "Greek": {
+            "is_verified": false,
+            "departments": [
+                "Classical civilization classics, greek and latin latin"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:26"
+        },
+        "Italian": {
+            "is_verified": false,
+            "departments": [
+                "French and italian",
+                "French & italian",
+                "French italian spanish"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:26"
+        },
+        "Japanese": {
+            "is_verified": true,
+            "departments": [
+                "B.a., japanese",
+                "Japanese, b.a.",
+                "M.a., japanese"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:27"
+        },
+        "Latin": {
+            "is_verified": true,
+            "departments": [
+                "Classical civilization classics, greek and latin latin"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:28"
+        },
+        "TESOL": {
+            "is_verified": true,
+            "departments": [
+                "M.a., english: teachers of english to speakers of other languages",
+                "Teaching english to speakers of other languages (tesol)",
+                "Certificate in teaching english to speakers of other languages (tesol), undergraduate"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:29"
+        },
+        "accountancy": {
+            "is_verified": true,
+            "departments": [
+                "Accountancy & taxation",
+                "Adkerson school of accountancy",
+                "Master of accountancy and analytics (macc)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:30"
+        },
+        "accounting": {
+            "is_verified": true,
+            "departments": [
+                "Kenneth g. dixon school of accounting",
+                "Accounting (bba)",
+                "Accounting & finance department",
+                "Accounting (bs)",
+                "Accounting and business law",
+                "Bs-accounting/master of accounting (bs/macc)",
+                "Accounting and finance",
+                "The philip l. kintzele school of accounting",
+                "Accounting (macc)",
+                "Accounting, finance and economics"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:31"
+        },
+        "administration": {
+            "is_verified": false,
+            "departments": [
+                "Administration, rehabilitation, and postsecondary education",
+                "Public policy and administration",
+                "Public policy and administration: mppa, certificate",
+                "Politics, administration, and justice",
+                "Lifelong education, administration, and policy"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:32"
+        },
+        "aeronautics": {
+            "is_verified": true,
+            "departments": [
+                "Aerospace engineering first college aeronautics program in the country.",
+                "William e. boeing department of aeronautics & astronautics"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:33"
+        },
+        "analytics": {
+            "is_verified": true,
+            "departments": [
+                "Business information systems and analytics",
+                "Master of accountancy and analytics (macc)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:33"
+        },
+        "anatomy": {
+            "is_verified": true,
+            "departments": [
+                "Genetics, cell biology and anatomy",
+                "Cell systems & anatomy"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:34"
+        },
+        "anthropology": {
+            "is_verified": true,
+            "departments": [
+                "Anthropology: ba; ma; minor",
+                "Cultural and natural resource management (anthropology & geography)",
+                "Anthropology undergraduate minor",
+                "Anthropology and geography",
+                "Sociology and anthropology",
+                "Sociology, anthropology and criminal justice",
+                "History & anthropology",
+                "Geography and anthropology",
+                "3/7/25 department of anthropology"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:35"
+        },
+        "art": {
+            "is_verified": true,
+            "departments": [
+                "Art & design",
+                "Art and art history",
+                "Art and design",
+                "Art (ba)",
+                "Art, art history, film studies, digital storytelling",
+                "3/24/25 department of art",
+                "Art & art history",
+                "Art, lamar dodd school of"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:36"
+        },
+        "astronomy": {
+            "is_verified": true,
+            "departments": [
+                "Physics & astronomy",
+                "Physics and astronomy"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:37"
+        },
+        "audiology": {
+            "is_verified": true,
+            "departments": [
+                "Communication sciences & disorders (comd)",
+                "Audiology aud",
+                "Speech-language pathology and audiology",
+                "Communication sciences and disorders"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:37"
+        },
+        "biochemistry": {
+            "is_verified": true,
+            "departments": [
+                "Biochemistry & molecular genetics",
+                "Biochemistry and molecular biology",
+                "B.s., biochemistry",
+                "Chemistry and biochemistry",
+                "Biochemistry & structural biology",
+                "Biochemistry & molecular biology",
+                "Biochemistry and molecular biophysics benjamin a. garcia, phd",
+                "B.a. - biochemical and biophysical sciences (biochemistry)",
+                "Chemistry & biochemistry",
+                "B biochemistry biomedical engineering biophysics biostatistics",
+                "B.a., biochemistry"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:38"
+        },
+        "biology": {
+            "is_verified": true,
+            "departments": [
+                "Biology/dentistry preparation",
+                "M.s., biology",
+                "Biology/veterinary preparation",
+                "B.s., biology: plant biology",
+                "B.s., biology: physiology",
+                "B.a., biology",
+                "B.s., biology: ecology, evolution, and conservation",
+                "Biology/physician assistant preparation",
+                "Biology bs/mba",
+                "Biology/pharmacy preparation",
+                "Biology/physical therapy preparation",
+                "Biology/osteopathic medicine preparation",
+                "Phd, biology",
+                "Biology ba/ms in education",
+                "Dr. david unger associate professor of biology view more",
+                "Biology/medicine preparation",
+                "Biology/podiatry preparation",
+                "B.s., biology: general",
+                "Dr. drew crain professor of biology view more"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:39"
+        },
+        "biostatistics": {
+            "is_verified": true,
+            "departments": [
+                "Epidemiology/biostatistics (epid/bios)",
+                "Biostatistics (bst)",
+                "Biostatistics, epidemiology and environmental health sciences",
+                "Epidemiology & biostatistics",
+                "B biochemistry biomedical engineering biophysics biostatistics"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:41"
+        },
+        "business": {
+            "is_verified": false,
+            "departments": [
+                "Management, marketing and general business",
+                "Business and law"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:41"
+        },
+        "chemistry": {
+            "is_verified": true,
+            "departments": [
+                "B.a., chemistry",
+                "Phd, chemistry",
+                "Chemistry and biochemistry",
+                "Chemistry minor",
+                "B.s., chemistry: acs certified",
+                "Chemistry & biochemistry"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:42"
+        },
+        "classics": {
+            "is_verified": true,
+            "departments": [
+                "Classical civilization classics, greek and latin latin",
+                "Classics and general humanities"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:43"
+        },
+        "communication": {
+            "is_verified": true,
+            "departments": [
+                "Master of arts in communication (ma) (thesis/non-thesis)",
+                "Communication and media",
+                "Journalism and communication"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:44"
+        },
+        "conservation": {
+            "is_verified": true,
+            "departments": [
+                "B.s., biology: ecology, evolution, and conservation",
+                "Animal wellbeing & conservation"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:45"
+        },
+        "counseling": {
+            "is_verified": true,
+            "departments": [
+                "Counseling and human services",
+                "Counseling and school psychology",
+                "The department of psychology, counseling, and behavioral health",
+                "Advanced studies in education and counseling",
+                "Counseling and higher education",
+                "Educational psychology, counseling, and special education",
+                "Counseling and educational leadership",
+                "Counseling, special education and community",
+                "Clinical mental health counseling",
+                "Counseling and human development services",
+                "Educational studies in psychology, research methodology, and counseling"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:46"
+        },
+        "criminology": {
+            "is_verified": true,
+            "departments": [
+                "Criminology and criminal justice",
+                "Sociology and criminology",
+                "Criminal justice and criminology"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:46"
+        },
+        "culture": {
+            "is_verified": false,
+            "departments": [
+                "Literacy, language and culture",
+                "Culture and teaching phd"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:47"
+        },
+        "curriculum": {
+            "is_verified": false,
+            "departments": [
+                "Curriculm and instruction",
+                "Info nights: master in education, curriculum and instruction",
+                "Curriculum & instruction elementary educationsecondary education"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:48"
+        },
+        "dance": {
+            "is_verified": true,
+            "departments": [
+                "Performing and fine arts",
+                "Dance (ba)",
+                "Theatre and dance (school of the arts)",
+                "3/25/25 department of theatre and dance",
+                "Theatre and dance",
+                "The artsfilm & media studiestheatre & dancevisual art"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:49"
+        },
+        "design": {
+            "is_verified": false,
+            "departments": [
+                "Art & design",
+                "Art and design",
+                "Learning technologies, design & school library media"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:50"
+        },
+        "dietetics": {
+            "is_verified": true,
+            "departments": [
+                "• nutrition and dietetics (bs)",
+                "Nutrition, food, and dietetics: bs; ms; certificate; minor"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:51"
+        },
+        "ecology": {
+            "is_verified": true,
+            "departments": [
+                "Environment, ecology and energy program (curriculum)",
+                "M.s., biology",
+                "B.s., biology: ecology, evolution, and conservation"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:53"
+        },
+        "economics": {
+            "is_verified": true,
+            "departments": [
+                "Law and economics",
+                "B.s., economics",
+                "Philosophy, politics, and economics",
+                "Economics (bachelor’s, master’s, doctoral)",
+                "Economics department",
+                "Economics programs",
+                "Economics: ba; certificate; ma; minor",
+                "Economics (ba)",
+                "Finance and economics",
+                "Economics (bs)",
+                "Accounting, finance and economics",
+                "Economics & finance",
+                "Political science economics political science public administration (minor)",
+                "B.a., economics",
+                "Phd, economics"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:54"
+        },
+        "education": {
+            "is_verified": true,
+            "departments": [
+                "Advanced studies in education and counseling",
+                "Biology ba/ms in education",
+                "Human development and organizational studies in education",
+                "Education (minor)",
+                "Info nights: master in education, curriculum and instruction",
+                "Education honors program"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:54"
+        },
+        "engineering": {
+            "is_verified": true,
+            "departments": [
+                "Engineering & public policy",
+                "Physical and environmental sciences, and engineering",
+                "Biomedical engineering uniting top programs in medicine and engineering.",
+                "Computational data science and engineering (cdse)",
+                "Materials science and engineering",
+                "Combined bachelor's/master's in computer science & engineering (bs/ms)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:56"
+        },
+        "english": {
+            "is_verified": true,
+            "departments": [
+                "B.a., english: language and literature",
+                "English department"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:56"
+        },
+        "entrepreneurship": {
+            "is_verified": true,
+            "departments": [
+                "B.s.b.a. in innovation leadership and entrepreneurship",
+                "Entrepreneurship department",
+                "Health sciences entrepreneurship",
+                "Master of innovation leadership and entrepreneurship",
+                "Marketing and entrepreneurship",
+                "Entrepreneurship (bba)",
+                "Mendoza school of business explore the minor in innovation & entrepreneurship minor",
+                "Entrepreneurship and innovation",
+                "Marketing & entrepreneurship",
+                "Innovation and entrepreneurship",
+                "Management, innovation, and entrepreneurship",
+                "Management and entrepreneurship"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:57"
+        },
+        "environment": {
+            "is_verified": false,
+            "departments": [
+                "Environment, ecology and energy program (curriculum)",
+                "Geography and environment",
+                "Environment & society (bachelor’s)",
+                "Geography and the environment, b.a. & m.a.",
+                "Society, environment, and health equity"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:10:58"
+        },
+        "epidemiology": {
+            "is_verified": true,
+            "departments": [
+                "Doctor of public health (drph)",
+                "Epidemiology/biostatistics (epid/bios)",
+                "Chronic disease epidemiology",
+                "Epidemiology (masters)",
+                "Public health graduate program (ms and phd)",
+                "E emergency medicine endocrinology and molecular medicine epidemiology & social sciences",
+                "Epidemiology of microbial diseases",
+                "Biostatistics, epidemiology and environmental health sciences",
+                "Epidemiology & biostatistics",
+                "Epidemiology (epi)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:00"
+        },
+        "finance": {
+            "is_verified": true,
+            "departments": [
+                "Finance & dr. p. phillips school of real estate",
+                "Small business finance",
+                "Finance and law",
+                "Accounting & finance department",
+                "Applied investments",
+                "Finance (bba)",
+                "Bs-finance/master of business administration (bs-fin/mba)",
+                "Bs-finance/ms-finance (bs/msf)",
+                "Accounting and finance",
+                "Finance and economics",
+                "B.s.b.a. in finance (financial planning concentration)",
+                "Finance (msf)",
+                "Accounting, finance and economics",
+                "Bs-real estate/ms-finance (bs-re/msf)",
+                "Economics & finance",
+                "Finance and insurance",
+                "Finance banking and risk management investments"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:01"
+        },
+        "genetics": {
+            "is_verified": true,
+            "departments": [
+                "Genetics, cell biology and anatomy",
+                "Genetics, james s. mcdonnell dept. of ting wang, phd"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:02"
+        },
+        "geography": {
+            "is_verified": true,
+            "departments": [
+                "Geography & the environment",
+                "Geography and environment",
+                "Cultural and natural resource management (anthropology & geography)",
+                "Anthropology and geography",
+                "Geography and sustainable development",
+                "Geography (bachelor’s, master’s, doctoral)",
+                "Geography and environmental studies",
+                "Geography and the environment, b.a. & m.a.",
+                "Geography and anthropology",
+                "Geography & environmental systems"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:06"
+        },
+        "geology": {
+            "is_verified": true,
+            "departments": [
+                "B.s. - geology",
+                "B.a. - earth science"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:07"
+        },
+        "gerontology": {
+            "is_verified": true,
+            "departments": [
+                "Aging studies (formerly gerontology)",
+                "Gerontology: bs; certificate; minor",
+                "Gerontology, m.s."
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:08"
+        },
+        "gynecology": {
+            "is_verified": true,
+            "departments": [
+                "Obstetrics & gynecology",
+                "Obstetrics and gynecology dineo khabele, md"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:08"
+        },
+        "health": {
+            "is_verified": false,
+            "departments": [
+                "Health, humanities and society",
+                "Religion, health & human values cpehce",
+                "• health behavior science - health and disability concentration (bs)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:09"
+        },
+        "healthcare": {
+            "is_verified": true,
+            "departments": [
+                "Master of science in nursing (msn)",
+                "Physician assistant studies",
+                "The generic nursing (bsn) program for individuals who are preparing to become a nurse."
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:10"
+        },
+        "history": {
+            "is_verified": true,
+            "departments": [
+                "History & anthropology",
+                "Master of arts in history and political thought, history concentration (ma) (thesis/non-thesis)",
+                "6/3/24 department of history",
+                "History and philosophy history history, secondary teaching endorsement",
+                "B.a./b.s. in ethics, history and public policy (in conjunction with the department of history)",
+                "Intelligence studies, geospatial science, political science and history"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:11"
+        },
+        "humanities": {
+            "is_verified": true,
+            "departments": [
+                "Health, humanities and society",
+                "Classics and general humanities"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:11"
+        },
+        "immunology": {
+            "is_verified": true,
+            "departments": [
+                "Pathology, microbiology, and immunology",
+                "Microbiology, immunology & molecular genetics",
+                "Pathology and immunology eric j. huang, md, phd",
+                "Medical microbiology and immunology"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:12"
+        },
+        "innovation": {
+            "is_verified": false,
+            "departments": [
+                "Master of innovation leadership and entrepreneurship",
+                "Global innovation and leadership",
+                "Mendoza school of business explore the minor in innovation & entrepreneurship minor",
+                "Entrepreneurship and innovation",
+                "Innovation and entrepreneurship",
+                "Management, innovation, and entrepreneurship",
+                "Integrated innovation institute"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:14"
+        },
+        "instruction": {
+            "is_verified": false,
+            "departments": [
+                "Curriculm and instruction",
+                "Info nights: master in education, curriculum and instruction",
+                "Curriculum & instruction elementary educationsecondary education"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:15"
+        },
+        "insurance": {
+            "is_verified": true,
+            "departments": [
+                "Risk management/insurance",
+                "Risk management and insurance (ms-rmi)",
+                "Bs-risk management/insurance/ms-risk management and insurance (bs/ms-rmi)",
+                "Finance and insurance",
+                "Bs-risk management/insurance/master of business administration (bs-rmi/mba)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:16"
+        },
+        "investments": {
+            "is_verified": false,
+            "departments": [
+                "Applied investments",
+                "Finance banking and risk management investments"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:17"
+        },
+        "journalism": {
+            "is_verified": true,
+            "departments": [
+                "Journalism and media communication",
+                "Journalism and communication",
+                "Journalism and mass communications"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:17"
+        },
+        "kinesiology": {
+            "is_verified": true,
+            "departments": [
+                "Kinesiology and applied physiology",
+                "Kinesiology exercise sciencephysical education",
+                "No. 9 kinesiology andhealth education",
+                "Kinesiology, health promotion and recreation",
+                "Exercise science",
+                "Exercise science, b.s.",
+                "Kinesiology bs kinesiology bs kinesiology bs",
+                "Human movement science",
+                "Kinesiology and recreation administration"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:18"
+        },
+        "language": {
+            "is_verified": false,
+            "departments": [
+                "B.a., english: language and literature",
+                "Literacy, language and culture"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:19"
+        },
+        "law": {
+            "is_verified": true,
+            "departments": [
+                "Law and economics",
+                "General law ll.m.",
+                "Robin b. kar professor of law and professor of philosophy",
+                "Kenworthey bilz professor of law",
+                "Ph.d. in law program",
+                "Social justice law center",
+                "Political science and law",
+                "Finance and law",
+                "Law and technology",
+                "Michael s. moore walgreen chair co-director, program in law and philosophy",
+                "Spangenberg center for law, technology & the arts",
+                "B.s.b.a. in business administration and law",
+                "Tax law ll.m.",
+                "Business and law"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:20"
+        },
+        "leadership": {
+            "is_verified": true,
+            "departments": [
+                "Master of innovation leadership and entrepreneurship",
+                "Leadership in organizations",
+                "Education policy and leadership phd",
+                "Global innovation and leadership",
+                "Civic life and leadership",
+                "Education policy and leadership - executive phd cohort program"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:20"
+        },
+        "learning": {
+            "is_verified": false,
+            "departments": [
+                "Teaching and learning (online)",
+                "Department: Teaching and learning, ed.s.",
+                "Teaching, learning and community engagement"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:21"
+        },
+        "licensure": {
+            "is_verified": false,
+            "departments": [
+                "Deaf and hard of hearing med and licensure",
+                "Teacher, education, advising, and licensure(teal)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:22"
+        },
+        "linguistics": {
+            "is_verified": true,
+            "departments": [
+                "French and italian",
+                "Linguistics, b.a. & m.a.",
+                "B.a., japanese",
+                "French language & linguistics",
+                "Spanish and portuguese",
+                "M.a., japanese",
+                "Linguistics and language development",
+                "English, comparative literature, and linguistics",
+                "Linguistics program",
+                "6/4/24 department of linguistics"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:23"
+        },
+        "literacy": {
+            "is_verified": true,
+            "departments": [
+                "Department: Literacy (online)",
+                "Literacy, language and culture",
+                "Literacy, library science, and learning technologies",
+                "Educational foundations and literacy"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:24"
+        },
+        "literature": {
+            "is_verified": false,
+            "departments": [
+                "B.a., english: language and literature",
+                "French and italian",
+                "Comparative arts & letters",
+                "Romance studies",
+                "English, literature",
+                "English: literature, teaching, pre-law, and creative & professional writing",
+                "B.a., japanese",
+                "Literature and writing studies website",
+                "B.a., french studies",
+                "Master of arts in language, literature and translation (ma) (thesis)",
+                "B.a., global literary studies",
+                "M.a., french studies",
+                "Hispanic languages and literature",
+                "Creative writing (ba track, mfa)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:24"
+        },
+        "management": {
+            "is_verified": true,
+            "departments": [
+                "Master of science in management (msm)",
+                "Management, marketing and general business",
+                "B.s.b.a. in management",
+                "B.s. in policy and management",
+                "Mendoza school of business explore the management and organization faculty",
+                "Biomedical sciences - laboratory research and management (masters)",
+                "Management & strategic leadership (bba)",
+                "Integrated business",
+                "Marketing management",
+                "Management and marketing",
+                "Management and organizations",
+                "Mendoza school of business phd in management",
+                "Management & marketing",
+                "Emergency medical services management certificate",
+                "Management, innovation, and entrepreneurship",
+                "Management and entrepreneurship"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:25"
+        },
+        "marketing": {
+            "is_verified": true,
+            "departments": [
+                "Management, marketing and general business",
+                "B.s.b.a. in marketing",
+                "Marketing and entrepreneurship",
+                "Marketing, quantitative analysis and business law",
+                "Marketing and business analytics",
+                "Bs-marketing/master of business administration (bs-mar/mba)",
+                "Sales and marketing",
+                "Marketing, hospitality, and logistics",
+                "Marketing & entrepreneurship",
+                "Marketing (bba)",
+                "Marketing management",
+                "Management and marketing",
+                "Management & marketing"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:26"
+        },
+        "mathematics": {
+            "is_verified": true,
+            "departments": [
+                "Mathematics and physics",
+                "Mathematics, applied mathematics, and statistics",
+                "Mathematics, computer science, and digital forensics",
+                "Natural sciences & mathematics"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:27"
+        },
+        "mechanics": {
+            "is_verified": true,
+            "departments": [
+                "Ms in aerospace engineering and mechanics (online)",
+                "Phd in aerospace engineering and mechanics (primarily online)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:28"
+        },
+        "mediation": {
+            "is_verified": true,
+            "departments": [
+                "Alternative dispute resolution",
+                "Mediation clinic"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:29"
+        },
+        "medicine": {
+            "is_verified": true,
+            "departments": [
+                "Anesthesiology michael s. avidan, mbbch",
+                "Biomedical engineering uniting top programs in medicine and engineering.",
+                "Medicine, john t. milliken dept. of victoria j. fraser, md",
+                "Biology/medicine preparation"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:30"
+        },
+        "microbiology": {
+            "is_verified": true,
+            "departments": [
+                "Scb260 general microbiology",
+                "Pathology, microbiology, and immunology",
+                "Microbiology, immunology & molecular genetics"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:30"
+        },
+        "music": {
+            "is_verified": true,
+            "departments": [
+                "Music and theatre arts",
+                "Performing and fine arts",
+                "Music, music composition, music education, music history, music theory, music performance",
+                "Mary morgan moore department of music",
+                "4/22/24 music",
+                "Music, hugh hodgson school of",
+                "Bachelor of music",
+                "Music (ba)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:31"
+        },
+        "neurology": {
+            "is_verified": true,
+            "departments": [
+                "Neurology jin-moo lee, md, phd",
+                "Neurological sciences"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:33"
+        },
+        "neuroscience": {
+            "is_verified": true,
+            "departments": [
+                "Neuroscience linda j. richards, phd",
+                "W wisconsin institute of neuroscience (wins)",
+                "Psychology and neuroscience",
+                "Bs in neuroscience bs in neuroscience bs in neuroscience",
+                "Neurological sciences",
+                "Neuroscience institute"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:33"
+        },
+        "nursing": {
+            "is_verified": true,
+            "departments": [
+                "Bachelor of nursing (bsn)",
+                "Lsc-north harris health professions building nursing department",
+                "Bachelor of science in nursing generic traditional and accelerated program, and rn-bs program.",
+                "Breiner school of nursing",
+                "Lsc-montgomery nursing department",
+                "Doctor of philosophy in nursing (phd)",
+                "Direct-entry nursing (ms)",
+                "Master of science in nursing (msn)",
+                "Nursing non-traditional/accelerated transfer program",
+                "Accelerated bsn in nursing — burlington, ma",
+                "Master of science in nursing family nurse practitioner and pediatric nurse practitioner",
+                "Nursing bs nursing bs nursing bs",
+                "Scr270 parent-child health nursing",
+                "Lsc-kingwood nursing department",
+                "The generic nursing (bsn) program for individuals who are preparing to become a nurse."
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:34"
+        },
+        "nutrition": {
+            "is_verified": true,
+            "departments": [
+                "• nutrition and dietetics (bs)",
+                "• nutrition and medical sciences (bs)",
+                "Scl103 concepts in pharmacology and nutrition",
+                "Behavioral health & nutrition",
+                "Nutritional sciences",
+                "Food and nutrition",
+                "Health, nutrition, and food sciences",
+                "Nutrition and integrated health sciences",
+                "Nutrition, food, and dietetics: bs; ms; certificate; minor"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:35"
+        },
+        "obstetrics": {
+            "is_verified": true,
+            "departments": [
+                "Obstetrics & gynecology",
+                "Obstetrics and gynecology dineo khabele, md"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:36"
+        },
+        "oceanography": {
+            "is_verified": true,
+            "departments": [
+                "Marine sciences",
+                "Marine biology"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:36"
+        },
+        "organization": {
+            "is_verified": false,
+            "departments": [
+                "Mendoza school of business explore the management and organization faculty"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:37"
+        },
+        "otolaryngology": {
+            "is_verified": true,
+            "departments": [
+                "Otolaryngology and communication sciences",
+                "Otolaryngology, head and neck surgery",
+                "Otolaryngology craig a. buchman, md"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:38"
+        },
+        "paramedicine": {
+            "is_verified": true,
+            "departments": [
+                "Paramedicine, b.s. online degree completion",
+                "Paramedicine, b.s. with a minor in fire science (lee college)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:39"
+        },
+        "pathology": {
+            "is_verified": true,
+            "departments": [
+                "Pathology, microbiology, and immunology",
+                "Pathology and immunology eric j. huang, md, phd"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:40"
+        },
+        "pharmacology": {
+            "is_verified": true,
+            "departments": [
+                "Pharmacology and experimental neuroscience",
+                "Scl103 concepts in pharmacology and nutrition",
+                "Pharmacology"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:41"
+        },
+        "philosophy": {
+            "is_verified": true,
+            "departments": [
+                "Robin b. kar professor of law and professor of philosophy",
+                "Social work - doctor of philosophy",
+                "Communication studies and philosophy",
+                "Psychology and philosophy",
+                "Philosophy, politics, and economics",
+                "Philosophy, b.a.",
+                "Political science, philosophy, & religion",
+                "Michael s. moore walgreen chair co-director, program in law and philosophy",
+                "Philosophy website",
+                "History and philosophy history history, secondary teaching endorsement",
+                "Philosophy and religious studies",
+                "B.a. in philosophy"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:42"
+        },
+        "physics": {
+            "is_verified": true,
+            "departments": [
+                "Mathematics and physics",
+                "B.s., physics",
+                "M.s., physics",
+                "Physics & astronomy",
+                "Phd, physics",
+                "Physics and astronomy"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:42"
+        },
+        "physiology": {
+            "is_verified": true,
+            "departments": [
+                "Scb204 human anatomy and physiology ii",
+                "B.s., biology: physiology",
+                "Cell biology and physiology david w. piston, phd"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:43"
+        },
+        "policy": {
+            "is_verified": false,
+            "departments": [
+                "B.s. in policy and management",
+                "Intellectual property law and policy ll.m.",
+                "Telecommunications law and policy",
+                "Lifelong education, administration, and policy"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:44"
+        },
+        "politics": {
+            "is_verified": true,
+            "departments": [
+                "Philosophy, politics, and economics",
+                "Politics, administration, and justice"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:45"
+        },
+        "psychiatry": {
+            "is_verified": true,
+            "departments": [
+                "Neurosciences and psychiatry",
+                "Psychiatry eric j. lenze, md"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:46"
+        },
+        "psychology": {
+            "is_verified": true,
+            "departments": [
+                "Psychology and neuroscience",
+                "Department: Psychology, b.a. & m.a.",
+                "Psychology and philosophy",
+                "The department of psychology, counseling, and behavioral health",
+                "Health psychology",
+                "Children's mental health (psychology)",
+                "Psychological sciences program in communication sciences program in psychology",
+                "Psychology: ba; certificate; ma; minor",
+                "Behavior analysis (psychology)"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:47"
+        },
+        "rehabilitation": {
+            "is_verified": true,
+            "departments": [
+                "Administration, rehabilitation, and postsecondary education",
+                "Orthopedic surgery and rehabilitation",
+                "Physical medicine and rehabilitation"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:48"
+        },
+        "religion": {
+            "is_verified": true,
+            "departments": [
+                "Study of religion",
+                "Religion, health & human values cpehce",
+                "Political science, philosophy, & religion"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:48"
+        },
+        "rhetoric": {
+            "is_verified": true,
+            "departments": [
+                "Rhetoric & composition",
+                "English creative writing rhetoric global culture",
+                "Writing and rhetoric, program in",
+                "M.a. in rhetoric",
+                "Writing studies",
+                "Ph.d. in rhetoric"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:49"
+        },
+        "society": {
+            "is_verified": false,
+            "departments": [
+                "Engineering leadership and society",
+                "Health, humanities and society",
+                "Environment & society (bachelor’s)",
+                "Society, environment, and health equity"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:50"
+        },
+        "sociology": {
+            "is_verified": true,
+            "departments": [
+                "Sociology undergraduate major minor",
+                "Department: Sociology and interdisciplinary studies",
+                "Sociology department",
+                "Sociology (minor|ba|bs|phd)",
+                "Sociology and anthropology",
+                "Sociology (bachelor’s, master’s, doctoral)",
+                "Sociology, social work and criminal justice criminal justice sociology social work",
+                "Sociology and interdisciplinary social sciences",
+                "Sociology, anthropology and criminal justice",
+                "Criminal justice, social work, & sociology",
+                "Environment, society & sustainability",
+                "Sociology and criminology"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:52"
+        },
+        "spanish": {
+            "is_verified": true,
+            "departments": [
+                "B.a., spanish"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:53"
+        },
+        "statistics": {
+            "is_verified": true,
+            "departments": [
+                "Statistics and operations research",
+                "Mathematics, applied mathematics, and statistics",
+                "Statistics & data science"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:54"
+        },
+        "sustainability": {
+            "is_verified": true,
+            "departments": [
+                "Environment, society & sustainability",
+                "Sustainable business"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:54"
+        },
+        "taxation": {
+            "is_verified": true,
+            "departments": [
+                "Accountancy & taxation",
+                "Ip taxation"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:55"
+        },
+        "teaching": {
+            "is_verified": false,
+            "departments": [
+                "English: literature, teaching, pre-law, and creative & professional writing",
+                "Teaching and learning (online)",
+                "Department: Teaching and learning, ed.s.",
+                "Special education teaching (combined bs/ms pathway)",
+                "Culture and teaching phd",
+                "Teaching, learning and community engagement",
+                "Certificate in teaching english to speakers of other languages (tesol), undergraduate",
+                "Mathematics teaching, b.s."
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:56"
+        },
+        "technology": {
+            "is_verified": false,
+            "departments": [
+                "Educational leadership, research and technology",
+                "Intellectual property and technology",
+                "Law and technology",
+                "Spangenberg center for law, technology & the arts",
+                "Information systems and technology",
+                "M.s., applied chemical science and technology"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:57"
+        },
+        "theatre": {
+            "is_verified": true,
+            "departments": [
+                "Theatre and dance (school of the arts)",
+                "Theatre & musical theatre (ba)",
+                "3/25/25 department of theatre and dance",
+                "Theatre and film studies",
+                "Theatre arts",
+                "Theatre and dance",
+                "The artsfilm & media studiestheatre & dancevisual art"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:58"
+        },
+        "thermodynamics": {
+            "is_verified": true,
+            "departments": [
+                "Phd in mechanical engineering (online)",
+                "Mechanical engineering, bs"
+            ],
+            "provider": "openai",
+            "timestamp": "2025-03-26 11:11:59"
+        }
+    },
+    "verified_single_words": [
+        "Japanese",
+        "Latin",
+        "TESOL",
+        "accountancy",
+        "accounting",
+        "aeronautics",
+        "analytics",
+        "anatomy",
+        "anthropology",
+        "art",
+        "astronomy",
+        "audiology",
+        "biochemistry",
+        "biology",
+        "biostatistics",
+        "chemistry",
+        "classics",
+        "communication",
+        "conservation",
+        "counseling",
+        "criminology",
+        "dance",
+        "dietetics",
+        "ecology",
+        "economics",
+        "education",
+        "engineering",
+        "english",
+        "entrepreneurship",
+        "epidemiology",
+        "finance",
+        "genetics",
+        "geography",
+        "geology",
+        "gerontology",
+        "gynecology",
+        "healthcare",
+        "history",
+        "humanities",
+        "immunology",
+        "insurance",
+        "journalism",
+        "kinesiology",
+        "law",
+        "leadership",
+        "linguistics",
+        "literacy",
+        "management",
+        "marketing",
+        "mathematics",
+        "mechanics",
+        "mediation",
+        "medicine",
+        "microbiology",
+        "music",
+        "neurology",
+        "neuroscience",
+        "nursing",
+        "nutrition",
+        "obstetrics",
+        "oceanography",
+        "otolaryngology",
+        "paramedicine",
+        "pathology",
+        "pharmacology",
+        "philosophy",
+        "physics",
+        "physiology",
+        "politics",
+        "psychiatry",
+        "psychology",
+        "rehabilitation",
+        "religion",
+        "rhetoric",
+        "sociology",
+        "spanish",
+        "statistics",
+        "sustainability",
+        "taxation",
+        "theatre",
+        "thermodynamics"
+    ],
+    "unverified_keywords": [
+        "French",
+        "Greek",
+        "Italian",
+        "administration",
+        "business",
+        "culture",
+        "curriculum",
+        "design",
+        "environment",
+        "health",
+        "innovation",
+        "instruction",
+        "investments",
+        "language",
+        "learning",
+        "licensure",
+        "literature",
+        "organization",
+        "policy",
+        "society",
+        "teaching",
+        "technology"
+    ],
+    "multi_word_keywords": [
+        "African American studies",
+        "Africana studies",
+        "Asian American studies",
+        "Asian languages",
+        "Asian law",
+        "Asian studies",
+        "Black studies",
+        "Chicana studies",
+        "Chicano studies",
+        "German studies",
+        "Italian studies",
+        "Judaic studies",
+        "K-12 education",
+        "Latino studies",
+        "Slavic languages",
+        "Slavic studies",
+        "Spanish studies",
+        "accelerated nursing programs",
+        "adult education",
+        "aerospace engineering",
+        "american studies",
+        "applied linguistics",
+        "architectural engineering",
+        "art education",
+        "art history",
+        "art theory",
+        "behavior analysis",
+        "behavioral health",
+        "biological engineering",
+        "biological science",
+        "biomedical engineering",
+        "biomedical sciences",
+        "buddhist studies",
+        "business administration",
+        "business analytics",
+        "business information systems",
+        "business intelligence",
+        "business law",
+        "business management",
+        "business studies",
+        "cell biology",
+        "cellular biology",
+        "cellular physiology",
+        "chemical engineering",
+        "child development",
+        "cinema studies",
+        "civil engineering",
+        "clinical nutrition",
+        "communication disorders",
+        "communication sciences",
+        "communication studies",
+        "community health",
+        "community medicine",
+        "comparative law",
+        "comparative literature",
+        "computer engineering",
+        "computer science",
+        "construction engineering",
+        "construction management",
+        "corporate law",
+        "creative writing",
+        "criminal justice",
+        "cultural studies",
+        "data analysis",
+        "data science",
+        "deaf studies",
+        "decision science",
+        "developmental biology",
+        "developmental psychology",
+        "diaspora studies",
+        "digital humanities",
+        "early childhood education",
+        "earth science",
+        "education policy",
+        "educational administration",
+        "educational leadership",
+        "educational policy",
+        "educational psychology",
+        "educational technology",
+        "election law",
+        "electrical engineering",
+        "elementary education",
+        "emergency medicine",
+        "engineering education",
+        "environmental engineering",
+        "environmental health sciences",
+        "environmental law",
+        "environmental science",
+        "environmental studies",
+        "ethnic studies",
+        "event management",
+        "exercise science",
+        "family medicine",
+        "family nurse practitioner",
+        "family science",
+        "family studies",
+        "film studies",
+        "fine arts",
+        "fluid mechanics",
+        "food science",
+        "francophone studies",
+        "french studies",
+        "gender studies",
+        "geological sciences",
+        "geospatial science",
+        "geotechnical engineering",
+        "global studies",
+        "health behavior science",
+        "health education",
+        "health management",
+        "health policy",
+        "health promotion",
+        "health sciences",
+        "health studies",
+        "hearing science",
+        "hispanic studies",
+        "hospitality management",
+        "human development",
+        "human movement",
+        "human resource management",
+        "human rights",
+        "indigenous studies",
+        "industrial engineering",
+        "information science",
+        "information systems",
+        "information technology",
+        "integrated health sciences",
+        "integrative physiology",
+        "intellectual property law",
+        "interdisciplinary studies",
+        "international affairs",
+        "international business",
+        "international law",
+        "international relations",
+        "international studies",
+        "japanese studies",
+        "justice studies",
+        "language education",
+        "language sciences",
+        "language studies",
+        "latin american studies",
+        "learning technologies",
+        "legal studies",
+        "liberal studies",
+        "library science",
+        "literacy education",
+        "management information systems",
+        "manufacturing engineering",
+        "marine biology",
+        "marine sciences",
+        "mass communications",
+        "materials engineering",
+        "materials science",
+        "mathematics education",
+        "mechanical engineering",
+        "media studies",
+        "medical education",
+        "medical laboratory science",
+        "medical sciences",
+        "middle eastern studies",
+        "middle education",
+        "military science",
+        "modern languages",
+        "molecular biology",
+        "molecular genetics",
+        "music education",
+        "music performance",
+        "music theory",
+        "natural sciences",
+        "nursing practice",
+        "occupational therapy",
+        "operations management",
+        "organizational behavior",
+        "organizational leadership",
+        "patient care",
+        "pediatric nurse practitioner",
+        "performing arts",
+        "physical education",
+        "physical sciences",
+        "physical therapy",
+        "physician assistant studies",
+        "plant biology",
+        "political science",
+        "professional sales",
+        "professional writing",
+        "project management",
+        "psychological sciences",
+        "public administration",
+        "public affairs",
+        "public health",
+        "public policy",
+        "race studies",
+        "real estate",
+        "regional planning",
+        "religious studies",
+        "research methodology",
+        "respiratory care",
+        "risk management",
+        "romance languages",
+        "school psychology",
+        "science education",
+        "second language acquisition",
+        "secondary education",
+        "sexuality studies",
+        "social justice",
+        "social science",
+        "social science education",
+        "social work",
+        "software engineering",
+        "special education",
+        "speech pathology",
+        "speech science",
+        "speech-language pathology",
+        "sport management",
+        "sport science",
+        "structural engineering",
+        "supply chain management",
+        "sustainable development",
+        "systems engineering",
+        "tax law",
+        "teacher education",
+        "technology education",
+        "technology law",
+        "urban planning",
+        "urban studies",
+        "visual art",
+        "wellness studies",
+        "women's studies",
+        "writing studies"
+    ],
+    "final_keywords": [
+        "Japanese",
+        "Latin",
+        "TESOL",
+        "accountancy",
+        "accounting",
+        "aeronautics",
+        "analytics",
+        "anatomy",
+        "anthropology",
+        "art",
+        "astronomy",
+        "audiology",
+        "biochemistry",
+        "biology",
+        "biostatistics",
+        "chemistry",
+        "classics",
+        "communication",
+        "conservation",
+        "counseling",
+        "criminology",
+        "dance",
+        "dietetics",
+        "ecology",
+        "economics",
+        "education",
+        "engineering",
+        "english",
+        "entrepreneurship",
+        "epidemiology",
+        "finance",
+        "genetics",
+        "geography",
+        "geology",
+        "gerontology",
+        "gynecology",
+        "healthcare",
+        "history",
+        "humanities",
+        "immunology",
+        "insurance",
+        "journalism",
+        "kinesiology",
+        "law",
+        "leadership",
+        "linguistics",
+        "literacy",
+        "management",
+        "marketing",
+        "mathematics",
+        "mechanics",
+        "mediation",
+        "medicine",
+        "microbiology",
+        "music",
+        "neurology",
+        "neuroscience",
+        "nursing",
+        "nutrition",
+        "obstetrics",
+        "oceanography",
+        "otolaryngology",
+        "paramedicine",
+        "pathology",
+        "pharmacology",
+        "philosophy",
+        "physics",
+        "physiology",
+        "politics",
+        "psychiatry",
+        "psychology",
+        "rehabilitation",
+        "religion",
+        "rhetoric",
+        "sociology",
+        "spanish",
+        "statistics",
+        "sustainability",
+        "taxation",
+        "theatre",
+        "thermodynamics",
+        "African American studies",
+        "Africana studies",
+        "Asian American studies",
+        "Asian languages",
+        "Asian law",
+        "Asian studies",
+        "Black studies",
+        "Chicana studies",
+        "Chicano studies",
+        "German studies",
+        "Italian studies",
+        "Judaic studies",
+        "K-12 education",
+        "Latino studies",
+        "Slavic languages",
+        "Slavic studies",
+        "Spanish studies",
+        "accelerated nursing programs",
+        "adult education",
+        "aerospace engineering",
+        "american studies",
+        "applied linguistics",
+        "architectural engineering",
+        "art education",
+        "art history",
+        "art theory",
+        "behavior analysis",
+        "behavioral health",
+        "biological engineering",
+        "biological science",
+        "biomedical engineering",
+        "biomedical sciences",
+        "buddhist studies",
+        "business administration",
+        "business analytics",
+        "business information systems",
+        "business intelligence",
+        "business law",
+        "business management",
+        "business studies",
+        "cell biology",
+        "cellular biology",
+        "cellular physiology",
+        "chemical engineering",
+        "child development",
+        "cinema studies",
+        "civil engineering",
+        "clinical nutrition",
+        "communication disorders",
+        "communication sciences",
+        "communication studies",
+        "community health",
+        "community medicine",
+        "comparative law",
+        "comparative literature",
+        "computer engineering",
+        "computer science",
+        "construction engineering",
+        "construction management",
+        "corporate law",
+        "creative writing",
+        "criminal justice",
+        "cultural studies",
+        "data analysis",
+        "data science",
+        "deaf studies",
+        "decision science",
+        "developmental biology",
+        "developmental psychology",
+        "diaspora studies",
+        "digital humanities",
+        "early childhood education",
+        "earth science",
+        "education policy",
+        "educational administration",
+        "educational leadership",
+        "educational policy",
+        "educational psychology",
+        "educational technology",
+        "election law",
+        "electrical engineering",
+        "elementary education",
+        "emergency medicine",
+        "engineering education",
+        "environmental engineering",
+        "environmental health sciences",
+        "environmental law",
+        "environmental science",
+        "environmental studies",
+        "ethnic studies",
+        "event management",
+        "exercise science",
+        "family medicine",
+        "family nurse practitioner",
+        "family science",
+        "family studies",
+        "film studies",
+        "fine arts",
+        "fluid mechanics",
+        "food science",
+        "francophone studies",
+        "french studies",
+        "gender studies",
+        "geological sciences",
+        "geospatial science",
+        "geotechnical engineering",
+        "global studies",
+        "health behavior science",
+        "health education",
+        "health management",
+        "health policy",
+        "health promotion",
+        "health sciences",
+        "health studies",
+        "hearing science",
+        "hispanic studies",
+        "hospitality management",
+        "human development",
+        "human movement",
+        "human resource management",
+        "human rights",
+        "indigenous studies",
+        "industrial engineering",
+        "information science",
+        "information systems",
+        "information technology",
+        "integrated health sciences",
+        "integrative physiology",
+        "intellectual property law",
+        "interdisciplinary studies",
+        "international affairs",
+        "international business",
+        "international law",
+        "international relations",
+        "international studies",
+        "japanese studies",
+        "justice studies",
+        "language education",
+        "language sciences",
+        "language studies",
+        "latin american studies",
+        "learning technologies",
+        "legal studies",
+        "liberal studies",
+        "library science",
+        "literacy education",
+        "management information systems",
+        "manufacturing engineering",
+        "marine biology",
+        "marine sciences",
+        "mass communications",
+        "materials engineering",
+        "materials science",
+        "mathematics education",
+        "mechanical engineering",
+        "media studies",
+        "medical education",
+        "medical laboratory science",
+        "medical sciences",
+        "middle eastern studies",
+        "middle education",
+        "military science",
+        "modern languages",
+        "molecular biology",
+        "molecular genetics",
+        "music education",
+        "music performance",
+        "music theory",
+        "natural sciences",
+        "nursing practice",
+        "occupational therapy",
+        "operations management",
+        "organizational behavior",
+        "organizational leadership",
+        "patient care",
+        "pediatric nurse practitioner",
+        "performing arts",
+        "physical education",
+        "physical sciences",
+        "physical therapy",
+        "physician assistant studies",
+        "plant biology",
+        "political science",
+        "professional sales",
+        "professional writing",
+        "project management",
+        "psychological sciences",
+        "public administration",
+        "public affairs",
+        "public health",
+        "public policy",
+        "race studies",
+        "real estate",
+        "regional planning",
+        "religious studies",
+        "research methodology",
+        "respiratory care",
+        "risk management",
+        "romance languages",
+        "school psychology",
+        "science education",
+        "second language acquisition",
+        "secondary education",
+        "sexuality studies",
+        "social justice",
+        "social science",
+        "social science education",
+        "social work",
+        "software engineering",
+        "special education",
+        "speech pathology",
+        "speech science",
+        "speech-language pathology",
+        "sport management",
+        "sport science",
+        "structural engineering",
+        "supply chain management",
+        "sustainable development",
+        "systems engineering",
+        "tax law",
+        "teacher education",
+        "technology education",
+        "technology law",
+        "urban planning",
+        "urban studies",
+        "visual art",
+        "wellness studies",
+        "women's studies",
+        "writing studies"
+    ]
+}

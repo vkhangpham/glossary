@@ -1,0 +1,2267 @@
+{
+  "level1_term": "slavic studies",
+  "url_verification_status": {
+    "https://slavic-studies.brown.edu/": false,
+    "https://graduateprograms.brown.edu/graduate-program/slavic-studies-phd": false,
+    "https://gns.wisc.edu/slavic-graduate-program/": false,
+    "https://slavic.osu.edu/about-us": false,
+    "https://slavic.indiana.edu/": false,
+    "https://slavic.fas.harvard.edu/pages/academics": true,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/slavic-languages-and-literatures": true,
+    "https://dlcl.stanford.edu/departments/slavic-languages-and-literatures/slavic-languages-and-literatures-graduate-program": false,
+    "https://russian.arizona.edu/graduate/current-students/course-descriptions": false,
+    "https://lsa.umich.edu/slavic/graduate-students.html": false,
+    "https://slavic.columbia.edu/content/slavic-studies": false,
+    "https://slavic.northwestern.edu/": true,
+    "https://slavic.yale.edu/welcome": false,
+    "https://dornsife.usc.edu/sll/": true,
+    "https://slavic.uchicago.edu/graduate/prospective-students": false,
+    "https://slaviclanguages.georgetown.edu/courses/": true,
+    "https://slavic.washington.edu/graduate-programs": false,
+    "https://www.slavic.pitt.edu/graduate": false,
+    "https://russian.arizona.edu/": false,
+    "https://slavic.northwestern.edu/graduate/": true,
+    "https://slavic.indiana.edu/graduate/phd.html": true,
+    "https://discovery.berkeley.edu/getting-started/major-maps/slavic-languages-literatures": true,
+    "https://liberalarts.utexas.edu/slavic/graduate-program/": true,
+    "https://slaviceurasian.duke.edu/graduate/professional-development": true,
+    "https://slavic.yale.edu/graduate/phd-requirements": false,
+    "https://slavic.washington.edu/independent-studies": false,
+    "https://catalog.ku.edu/liberal-arts-sciences/slavic-languages-literature/": true,
+    "https://lsa.umich.edu/slavic/graduate-students/faqs.html": false,
+    "https://dornsife.usc.edu/sll/graduate/": false,
+    "https://slavic.ucla.edu/graduate-courses/": false,
+    "https://german.la.psu.edu/": true
+  },
+  "verified_lists_per_url": {
+    "https://slavic-studies.brown.edu/": 0,
+    "https://graduateprograms.brown.edu/graduate-program/slavic-studies-phd": 0,
+    "https://gns.wisc.edu/slavic-graduate-program/": 0,
+    "https://slavic.osu.edu/about-us": 0,
+    "https://slavic.indiana.edu/": 0,
+    "https://slavic.fas.harvard.edu/pages/academics": 1,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/slavic-languages-and-literatures": 1,
+    "https://dlcl.stanford.edu/departments/slavic-languages-and-literatures/slavic-languages-and-literatures-graduate-program": 0,
+    "https://russian.arizona.edu/graduate/current-students/course-descriptions": 0,
+    "https://lsa.umich.edu/slavic/graduate-students.html": 0,
+    "https://slavic.columbia.edu/content/slavic-studies": 0,
+    "https://slavic.northwestern.edu/": 1,
+    "https://slavic.yale.edu/welcome": 0,
+    "https://dornsife.usc.edu/sll/": 1,
+    "https://slavic.uchicago.edu/graduate/prospective-students": 0,
+    "https://slaviclanguages.georgetown.edu/courses/": 1,
+    "https://slavic.washington.edu/graduate-programs": 0,
+    "https://www.slavic.pitt.edu/graduate": 0,
+    "https://russian.arizona.edu/": 0,
+    "https://slavic.northwestern.edu/graduate/": 1,
+    "https://slavic.indiana.edu/graduate/phd.html": 1,
+    "https://discovery.berkeley.edu/getting-started/major-maps/slavic-languages-literatures": 1,
+    "https://liberalarts.utexas.edu/slavic/graduate-program/": 1,
+    "https://slaviceurasian.duke.edu/graduate/professional-development": 1,
+    "https://slavic.yale.edu/graduate/phd-requirements": 0,
+    "https://slavic.washington.edu/independent-studies": 0,
+    "https://catalog.ku.edu/liberal-arts-sciences/slavic-languages-literature/": 155,
+    "https://lsa.umich.edu/slavic/graduate-students/faqs.html": 0,
+    "https://dornsife.usc.edu/sll/graduate/": 0,
+    "https://slavic.ucla.edu/graduate-courses/": 0,
+    "https://german.la.psu.edu/": 2
+  },
+  "total_lists_per_url": {
+    "https://slavic-studies.brown.edu/": 1,
+    "https://graduateprograms.brown.edu/graduate-program/slavic-studies-phd": 6,
+    "https://gns.wisc.edu/slavic-graduate-program/": 10,
+    "https://slavic.osu.edu/about-us": 2,
+    "https://slavic.indiana.edu/": 3,
+    "https://slavic.fas.harvard.edu/pages/academics": 1,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/slavic-languages-and-literatures": 6,
+    "https://dlcl.stanford.edu/departments/slavic-languages-and-literatures/slavic-languages-and-literatures-graduate-program": 1,
+    "https://russian.arizona.edu/graduate/current-students/course-descriptions": 1,
+    "https://lsa.umich.edu/slavic/graduate-students.html": 3,
+    "https://slavic.columbia.edu/content/slavic-studies": 3,
+    "https://slavic.northwestern.edu/": 3,
+    "https://slavic.yale.edu/welcome": 1,
+    "https://dornsife.usc.edu/sll/": 6,
+    "https://slavic.uchicago.edu/graduate/prospective-students": 1,
+    "https://slaviclanguages.georgetown.edu/courses/": 2,
+    "https://slavic.washington.edu/graduate-programs": 2,
+    "https://www.slavic.pitt.edu/graduate": 1,
+    "https://russian.arizona.edu/": 1,
+    "https://slavic.northwestern.edu/graduate/": 1,
+    "https://slavic.indiana.edu/graduate/phd.html": 5,
+    "https://discovery.berkeley.edu/getting-started/major-maps/slavic-languages-literatures": 9,
+    "https://liberalarts.utexas.edu/slavic/graduate-program/": 4,
+    "https://slaviceurasian.duke.edu/graduate/professional-development": 2,
+    "https://slavic.yale.edu/graduate/phd-requirements": 3,
+    "https://slavic.washington.edu/independent-studies": 2,
+    "https://catalog.ku.edu/liberal-arts-sciences/slavic-languages-literature/": 200,
+    "https://lsa.umich.edu/slavic/graduate-students/faqs.html": 3,
+    "https://dornsife.usc.edu/sll/graduate/": 8,
+    "https://slavic.ucla.edu/graduate-courses/": 1,
+    "https://german.la.psu.edu/": 4
+  },
+  "verified_lists_ids": {
+    "https://slavic-studies.brown.edu/": [],
+    "https://graduateprograms.brown.edu/graduate-program/slavic-studies-phd": [],
+    "https://gns.wisc.edu/slavic-graduate-program/": [],
+    "https://slavic.osu.edu/about-us": [],
+    "https://slavic.indiana.edu/": [],
+    "https://slavic.fas.harvard.edu/pages/academics": [
+      0
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/slavic-languages-and-literatures": [
+      4
+    ],
+    "https://dlcl.stanford.edu/departments/slavic-languages-and-literatures/slavic-languages-and-literatures-graduate-program": [],
+    "https://russian.arizona.edu/graduate/current-students/course-descriptions": [],
+    "https://lsa.umich.edu/slavic/graduate-students.html": [],
+    "https://slavic.columbia.edu/content/slavic-studies": [],
+    "https://slavic.northwestern.edu/": [
+      0
+    ],
+    "https://slavic.yale.edu/welcome": [],
+    "https://dornsife.usc.edu/sll/": [
+      1
+    ],
+    "https://slavic.uchicago.edu/graduate/prospective-students": [],
+    "https://slaviclanguages.georgetown.edu/courses/": [
+      0
+    ],
+    "https://slavic.washington.edu/graduate-programs": [],
+    "https://www.slavic.pitt.edu/graduate": [],
+    "https://russian.arizona.edu/": [],
+    "https://slavic.northwestern.edu/graduate/": [
+      0
+    ],
+    "https://slavic.indiana.edu/graduate/phd.html": [
+      3
+    ],
+    "https://discovery.berkeley.edu/getting-started/major-maps/slavic-languages-literatures": [
+      7
+    ],
+    "https://liberalarts.utexas.edu/slavic/graduate-program/": [
+      1
+    ],
+    "https://slaviceurasian.duke.edu/graduate/professional-development": [
+      0
+    ],
+    "https://slavic.yale.edu/graduate/phd-requirements": [],
+    "https://slavic.washington.edu/independent-studies": [],
+    "https://catalog.ku.edu/liberal-arts-sciences/slavic-languages-literature/": [
+      1,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      17,
+      18,
+      20,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      74,
+      75,
+      76,
+      77,
+      78,
+      83,
+      84,
+      85,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      99,
+      100,
+      106,
+      107,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      121,
+      122,
+      123,
+      124,
+      125,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      194,
+      195,
+      196,
+      197
+    ],
+    "https://lsa.umich.edu/slavic/graduate-students/faqs.html": [],
+    "https://dornsife.usc.edu/sll/graduate/": [],
+    "https://slavic.ucla.edu/graduate-courses/": [],
+    "https://german.la.psu.edu/": [
+      0,
+      1
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 296,
+  "url_to_lists": {
+    "https://slavic-studies.brown.edu/": [
+      [
+        "Site Navigation",
+        "Undergraduate Concentration",
+        "Graduate Studies",
+        "Study Abroad",
+        "Connect With Us",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation"
+      ]
+    ],
+    "https://graduateprograms.brown.edu/graduate-program/slavic-studies-phd": [
+      [
+        "Application Information",
+        "Completion Requirements",
+        "Alumni Careers",
+        "Leadership",
+        "Resources",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation"
+      ],
+      [
+        "Additional Resources",
+        "Application Requirements",
+        "Dates/Deadlines",
+        "Department of Slavic Languages",
+        "Slavic Studies"
+      ],
+      [
+        "GRE Subject:",
+        "GRE General:",
+        "Writing Sample:",
+        "Additional Requirements:",
+        "Application Deadline",
+        "Mailing Address"
+      ],
+      [
+        "GRE Subject:\n  Not Required",
+        "GRE General:\n  Not required",
+        "Writing Sample:\n  Required (in English \u2013 12-15 pages)"
+      ],
+      [
+        "Department Chair",
+        "Svetlana Evdokimova",
+        "svetlana_evdokimova@brown.edu"
+      ],
+      [
+        "Director of Graduate Studies",
+        "Michal Oklot",
+        "michal_oklot@brown.edu"
+      ]
+    ],
+    "https://gns.wisc.edu/slavic-graduate-program/": [
+      [
+        "Nine credits for the PhD minor",
+        "Passing grades on all six Foundation examinations in Russian literature",
+        "Demonstrated Russian language proficiency in all modalities",
+        "Submission of a capstone portfolio",
+        "Submission and defense of a dissertation proposal",
+        "Submission and defense of the PhD dissertation."
+      ],
+      [
+        "The Graduate School \u2013 https://grad.wisc.edu/",
+        "McBurney Disability Resource Center \u2013 https://mcburney.wisc.edu/",
+        "Employee Assistance Office \u2013 https://eao.wisc.edu/",
+        "Ombuds Office \u2013 https://ombuds.wisc.edu/",
+        "University Health Services \u2013 https://www.uhs.wisc.edu/"
+      ],
+      [
+        "The Graduate School \u2013 https://grad.wisc.edu/",
+        "McBurney Disability Resource Center \u2013 https://mcburney.wisc.edu/",
+        "Employee Assistance Office \u2013 https://eao.wisc.edu/",
+        "Ombuds Office \u2013 https://ombuds.wisc.edu/",
+        "University Health Services \u2013 https://www.uhs.wisc.edu/"
+      ],
+      [
+        "Foundation Courses and Exams (700-level)",
+        "Required Professional Courses (800-level)",
+        "Seminars (900-level)",
+        "Recent seminars in the Slavic Department include:",
+        "Examples schedules illustrating a student\u2019s progress through the entire program are available here."
+      ],
+      [
+        "GNS GRIEVANCE PROCEDURES & REPORTING MISCONDUCT AND CRIME",
+        "Grievance Procedures",
+        "Procedures for proper accounting of student grievances:",
+        "Reporting Misconduct And Crime",
+        "Research Misconduct Reporting",
+        "Academic Misconduct Reporting",
+        "Sexual Assault Reporting",
+        "Child Abuse Reporting",
+        "Reporting and Response to Incidents of Bias/Hate"
+      ],
+      [
+        "through fourth",
+        "semester Russian language",
+        "and occasionally in Polish and Bosnian, Croatian, or Serbian as well",
+        "and in our two"
+      ],
+      [
+        "third time or more receive out",
+        "state tuition remission as well as a remission of in",
+        "or 2nd",
+        "year Russian under the supervision of a language program coordinator or for intensive",
+        "year classes in Serbo"
+      ],
+      [
+        "Century Literature [2 cr.]",
+        "1840s) [3 cr.]",
+        "1890s) [3 cr.]",
+        "1920s) [3 cr.]",
+        "Soviet Periods (~1930s",
+        "present) [3 cr.]"
+      ],
+      [
+        "to three",
+        "credit advanced",
+        "level courses on literature. At least one three"
+      ],
+      [
+        "assault",
+        "dating",
+        "domestic",
+        "violence/"
+      ]
+    ],
+    "https://slavic.osu.edu/about-us": [
+      [
+        "Ohio State navigation bar",
+        "Scholarship",
+        "Teaching and Advising",
+        "Outreach"
+      ],
+      [
+        "5th year), Polish (1st",
+        "2nd year), Romanian (1st",
+        "2nd year), and Bosnian/Croatian/Serbian (1st"
+      ]
+    ],
+    "https://slavic.indiana.edu/": [
+      [
+        "Contact",
+        "Slavic and East European Languages and Cultures B.A.",
+        "Slavic and East European Languages and Cultures Minor",
+        "Slavic Cinema Minor",
+        "Graduate\nMaster\u2019s Degrees \nPh.D. Degree",
+        "Master\u2019s Degrees",
+        "Ph.D. Degree",
+        "Courses"
+      ],
+      [
+        "Slavic and East European Languages and Cultures B.A.",
+        "Slavic and East European Languages and Cultures Minor",
+        "Slavic Cinema Minor",
+        "Graduate\nMaster\u2019s Degrees \nPh.D. Degree",
+        "Master\u2019s Degrees",
+        "Ph.D. Degree",
+        "Courses"
+      ],
+      [
+        "Slavic and East European Languages and Cultures B.A.",
+        "Slavic and East European Languages and Cultures Minor",
+        "Slavic Cinema Minor"
+      ]
+    ],
+    "https://slavic.fas.harvard.edu/pages/academics": [
+      [
+        "Undergraduate Program",
+        "Graduate Program",
+        "Language Program",
+        "Study Abroad",
+        "Undergraduate Concentrators\u2019 Handbook",
+        "Graduate Program Admission Requirements",
+        "Director of Undergraduate Studies",
+        "Director of Graduate Studies",
+        "Director of the Language Program"
+      ]
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/slavic-languages-and-literatures": [
+      [
+        "Chair\n\n\n                    Ilya Vinitsky",
+        "Ilya Vinitsky",
+        "Director of Graduate Studies\n\n\n                    Michael A. Wachtel",
+        "Michael A. Wachtel",
+        "Director of Undergraduate Studies\n\n\n                    Elena Fratto",
+        "Elena Fratto",
+        "Ellen B. Chances",
+        "Yuri Leving",
+        "Simon A. Morrison",
+        "Serguei A. Oushakine",
+        "Ilya Vinitsky",
+        "Michael A. Wachtel",
+        "Associate Professor\n\n\n                    Elena Fratto",
+        "Elena Fratto",
+        "Lecturer with Rank of Professor\n\n\n                    Oleg Lekmanov",
+        "Oleg Lekmanov",
+        "Ksana Blank",
+        "Svetlana Korshunova",
+        "Mark R. Pettus",
+        "Margaret H. Beissinger",
+        "Ana Cohle",
+        "Eva E. Faraghi",
+        "Tamara Gundorova",
+        "Laura E. Matthews",
+        "Lidia Tripiccione"
+      ],
+      [
+        "Ellen B. Chances",
+        "Yuri Leving",
+        "Simon A. Morrison",
+        "Serguei A. Oushakine",
+        "Ilya Vinitsky",
+        "Michael A. Wachtel"
+      ],
+      [
+        "Ksana Blank",
+        "Svetlana Korshunova",
+        "Mark R. Pettus"
+      ],
+      [
+        "Margaret H. Beissinger",
+        "Ana Cohle",
+        "Eva E. Faraghi",
+        "Tamara Gundorova",
+        "Laura E. Matthews",
+        "Lidia Tripiccione"
+      ],
+      [
+        "Program Offerings:",
+        "Director of Graduate Studies:",
+        "Graduate Program Administrator:",
+        "Additional departmental requirements",
+        "Courses",
+        "Language(s)",
+        "General exam",
+        "Qualifying for the M.A.",
+        "Teaching",
+        "Post-Generals requirements",
+        "Dissertation and FPO",
+        "Chair",
+        "Director of Graduate Studies",
+        "Director of Undergraduate Studies",
+        "Professor",
+        "Associate Professor",
+        "Lecturer with Rank of Professor",
+        "Senior Lecturer",
+        "Lecturer",
+        "RUS 549 - Russian for Academic Purposes I",
+        "RUS 550 - Russian for Academic Purposes II",
+        "SLA 511 - Critical Approaches to Literature:  Russian Contributions",
+        "SLA 512 - The Evolution of Russian Poetic Form",
+        "SLA 514 - Pushkin",
+        "SLA 516 - 19th-Century Master Novelists",
+        "SLA 518 - Major Russian Poets and Poetic Movements",
+        "SLA 528 - The Poetics of Space",
+        "SLA 529 - Seminar on Andrei Bitov\n                                  (also RES 529)",
+        "SLA 535 - Methods of Teaching Slavic",
+        "SLA 561 - Proseminar in Slavic",
+        "SLA 599 - Slavic Dissertation Colloquium"
+      ],
+      [
+        "Program length\n5 years",
+        "Fee\n$75",
+        "GRE\nGeneral Test - optional/not required",
+        "For a full list of faculty members and fellows please visit the department or program website."
+      ]
+    ],
+    "https://dlcl.stanford.edu/departments/slavic-languages-and-literatures/slavic-languages-and-literatures-graduate-program": [
+      [
+        "Master of Arts in Slavic Languages and Literatures",
+        "Doctor of Philosophy in Slavic Languages and Literatures",
+        "Doctor of Philosophy Minor in Slavic Languages and Literatures"
+      ]
+    ],
+    "https://russian.arizona.edu/graduate/current-students/course-descriptions": [
+      [
+        "COH Smartmenu",
+        "coh smartmenu",
+        "Footer - Social Media"
+      ]
+    ],
+    "https://lsa.umich.edu/slavic/graduate-students.html": [
+      [
+        "DEPARTMENTS & UNITS",
+        "MAJORS AND MINORS",
+        "LSA COURSE GUIDE",
+        "LSA GATEWAY"
+      ],
+      [
+        "Student Resources",
+        "Courses",
+        "Academic Advising",
+        "Majors and Minors",
+        "Departments and Units",
+        "Global Studies",
+        "LSA Opportunity Hub"
+      ],
+      [
+        "Facebook",
+        "Twitter",
+        "Youtube"
+      ]
+    ],
+    "https://slavic.columbia.edu/content/slavic-studies": [
+      [
+        "Main navigation expanded",
+        "You are here:",
+        "SLAVIC STUDIES",
+        "Department Chair",
+        "Director of Graduate Studies",
+        "Director of Undergraduate Studies",
+        "Placement Officer",
+        "Russian Language Program Director",
+        "Director of Academic Administration & Finance",
+        "Administrative Assistant",
+        "Phone",
+        "Follow Us"
+      ],
+      [
+        "DEGREE REQUIREMENTS",
+        "Course List",
+        "\u00b7\u00a0\u00a0\u00a0\u00a0 Two relevant courses in Russian, East/Central European or Eurasian history.",
+        "NOTES:"
+      ],
+      [
+        "through third",
+        "year Russian, Bosnian",
+        "Croatian",
+        "Serbian, Czech, Polish, or Ukrainian) or the equivalent."
+      ]
+    ],
+    "https://slavic.northwestern.edu/": [
+      [
+        "Undergraduate",
+        "Graduate",
+        "Courses"
+      ],
+      [
+        "Pete Wang, Aliyah Salihah Moad, Ernie Kaye, Julia Marshall, Graham Yarden,\u00a0and\u00a0Enrique Sheils",
+        "Julian Jarmula",
+        "Joanna Soltys and Austin Benedetto"
+      ],
+      [
+        "Congratulations to our outstanding graduate students",
+        "Daniel Lee",
+        "Ryan Serrano",
+        "Nadia Vinogradova",
+        "Elena Poiata",
+        "Adam Willson on the receipt of a\u00a0scholarship to Middlebury's language program."
+      ]
+    ],
+    "https://slavic.yale.edu/welcome": [
+      [
+        "Department Statement on the Anniversary of Russia\u2019s Invasion of Ukraine",
+        "Department Statement on Russia\u2019s Invasion of Ukraine",
+        "For information about ways to help Ukraine, see the list compiled by Prof. Timothy Snyder",
+        "\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014"
+      ]
+    ],
+    "https://dornsife.usc.edu/sll/": [
+      [
+        "What are you looking for?",
+        "Welcome",
+        "New and Noteworthy",
+        "Statement Against Russian Military Assault on Ukraine",
+        "Major in Central European Studies",
+        "Your Major & Minor",
+        "Featured Faculty",
+        "Connect with us on social media!"
+      ],
+      [
+        "Suggested Search",
+        "New and Noteworthy",
+        "Undergraduate",
+        "Graduate",
+        "Faculty",
+        "Dr. Kelsey Rubin-Detlev",
+        "Dr. Chloe Papadopoulos",
+        "Department Office",
+        "Department Director of Undergraduate Program",
+        "Department Director of Graduate Program"
+      ],
+      [
+        "Voices of Freedom, Voices of War in Ukraine",
+        "Congratulations to Prof. Rubin-Detlev on receiving an NEH grant!",
+        "Newly minted PhDs in Slavic Languages & Literatures, Summer 2024",
+        "Congratulations to Prof. Evgeny Dengub on receiving a 2023 AATSEEL book award!",
+        "New Book by Prof. Thomas Seifrid"
+      ],
+      [
+        "Department Office\n\nDeborah Russo\n\n\n(213) 740-2735\n\n\nslavic@usc.edu",
+        "Department Director of Undergraduate Program\n\nProf. Evgeny Dengub\n\n\n(213) 740-0000\n\n\ndengub@usc.edu",
+        "Department Director of Graduate Program\n\nProf. Kelsey Rubin-Detlev\n\n\nrubindet@usc.edu"
+      ],
+      [
+        "Deborah Russo",
+        "(213) 740-2735",
+        "slavic@usc.edu"
+      ],
+      [
+        "Prof. Evgeny Dengub",
+        "(213) 740-0000",
+        "dengub@usc.edu"
+      ]
+    ],
+    "https://slavic.uchicago.edu/graduate/prospective-students": [
+      [
+        "Time to Degree",
+        "Courses per Quarter",
+        "Size of Cohort",
+        "Degree Milestones",
+        "Teaching Requirements",
+        "Outcomes"
+      ]
+    ],
+    "https://slaviclanguages.georgetown.edu/courses/": [
+      [
+        "Upcoming Slavic Department Courses",
+        "Literature & Culture",
+        "Polish",
+        "Russian",
+        "Ukrainian",
+        "Past and Future Slavic Department Courses"
+      ],
+      [
+        "(Fall 2025)",
+        "RUSS 1115: Russia A-Z I",
+        "RUSS 4352 / WGST 3352: Woman with a Movie Camera",
+        "RUSS 4385: Nabokov: Style & Scandal",
+        "RUSS 4391 / ARTH 3841: The Art of Protest",
+        "RUSS 4463: Dostoevsky",
+        "RUSS 4485: Chekhov: Prose & Drama",
+        "Courses in Polish",
+        "Courses in Russian",
+        "Courses in Ukrainian",
+        "Literature & Culture"
+      ]
+    ],
+    "https://slavic.washington.edu/graduate-programs": [
+      [
+        "Quick links",
+        "Main menu",
+        "You are here",
+        "Graduate Program Advising",
+        "Programs & Courses",
+        "Our Programs"
+      ],
+      [
+        "Master of Arts Program\nDescriptions and requirements, including coursework and exams",
+        "Doctoral Program\nDescriptions and requirements, including coursework and exams",
+        "How to Apply\nAdmission prerequisites, application materials, application instructions, and deadlines",
+        "UW Graduate School"
+      ]
+    ],
+    "https://www.slavic.pitt.edu/graduate": [
+      [
+        "Requirements",
+        "Advisor",
+        "Independent Study",
+        "Transfer and Credit Policies",
+        "Teaching Assistantships & Other Awards",
+        "Examinations",
+        "Dissertation",
+        "Associations & Conferences",
+        "Academic Integrity"
+      ]
+    ],
+    "https://russian.arizona.edu/": [
+      [
+        "Choose Russian and\u00a0Slavic Studies for the...",
+        "Degrees and programs available",
+        "AZ-AATSEEL 2025",
+        "Ukrainian Taster Course with the Critical Languages Program!",
+        "Dr. Liudmila Klimanova is promoted to Associate Professor with Tenure"
+      ]
+    ],
+    "https://slavic.northwestern.edu/graduate/": [
+      [
+        "Graduate",
+        "Graduate Program",
+        "Facebook for Polish Language Program"
+      ]
+    ],
+    "https://slavic.indiana.edu/graduate/phd.html": [
+      [
+        "Contact",
+        "Slavic and East European Languages and Cultures B.A.",
+        "Slavic and East European Languages and Cultures Minor",
+        "Slavic Cinema Minor",
+        "Graduate\nMaster\u2019s Degrees \nPh.D. Degree",
+        "Master\u2019s Degrees",
+        "Ph.D. Degree",
+        "Courses"
+      ],
+      [
+        "Slavic and East European Languages and Cultures B.A.",
+        "Slavic and East European Languages and Cultures Minor",
+        "Slavic Cinema Minor",
+        "Graduate\nMaster\u2019s Degrees \nPh.D. Degree",
+        "Master\u2019s Degrees",
+        "Ph.D. Degree",
+        "Courses"
+      ],
+      [
+        "Slavic and East European Languages and Cultures B.A.",
+        "Slavic and East European Languages and Cultures Minor",
+        "Slavic Cinema Minor"
+      ],
+      [
+        "Doctoral program",
+        "Languages + Cultures",
+        "Bosnian, Croatian, Serbian",
+        "Ukrainian",
+        "Czech",
+        "Polish",
+        "Russian",
+        "Interested in applying to IU Slavic and East European Languages and Cultures?"
+      ],
+      [
+        "Czech+",
+        "Polish+",
+        "Russian+"
+      ]
+    ],
+    "https://discovery.berkeley.edu/getting-started/major-maps/slavic-languages-literatures": [
+      [
+        "Attorney",
+        "Aviator, US Navy",
+        "Computational Linguist",
+        "Cybersecurity",
+        "Digital News Producer",
+        "English Teaching Assistant",
+        "Journalist",
+        "Legislative Staffer",
+        "Literacy Specialist",
+        "Software Engineer",
+        "Trade Analyst",
+        "Taxonomist",
+        "Writer"
+      ],
+      [
+        "Comparative Literature",
+        "European History, Politics, and Society",
+        "History",
+        "International Relations",
+        "Linguistics",
+        "Russian Literature",
+        "Political Science and Government"
+      ],
+      [
+        "Meet with your major and college advisor to discuss your academic plans.",
+        "Continue exploring with a Sophomore Seminar or Big Ideas course.",
+        "Look into study abroad; see resources from the Slavic Department.",
+        "Enrich your studies with a course thread, certificate, or minor such as Armenian Studies.",
+        "Complete all lower division prerequisites for your major track and\u00a0declare the major."
+      ],
+      [
+        "Finish all upper division requirements and electives.",
+        "Receive thesis guidance in the Townsend Center Honors Thesis Workshop.",
+        "Complete any remaining degree requirements and prepare for graduation.",
+        "Join the Dobro Slovo National Slavic Honors Society."
+      ],
+      [
+        "Keep working on language sequence and upper division requirements for your major track.",
+        "Explore new interests in a Changemaker or DeCal course.",
+        "Look into study abroad; see resources from the Slavic Department.",
+        "Enrich your studies with a course thread, certificate, or minor such as Armenian Studies.",
+        "Consider applying to the Slavic Honors Program; look into the Haas Scholars and SURF programs."
+      ],
+      [
+        "Finish all upper division requirements and electives.",
+        "Complete any remaining degree requirements and prepare for graduation.",
+        "Join the Dobro Slovo National Slavic Honors Society."
+      ],
+      [
+        "Art History",
+        "Comparative Literature",
+        "Film and Media",
+        "German",
+        "Global Studies",
+        "Jewish Studies",
+        "Medieval Studies"
+      ],
+      [
+        "Highlights",
+        "Curriculum",
+        "Study Options",
+        "Declaring the Major",
+        "Employment",
+        "Graduate Study",
+        "Alexandra, class of 2021",
+        "First Year",
+        "Second Year",
+        "Third Year",
+        "Fourth Year",
+        "Summer Options",
+        "First Semester",
+        "Second Semester",
+        "Third Semester",
+        "Fourth Semester",
+        "Summer Options",
+        "Undergraduate Advising",
+        "Related Programs"
+      ],
+      [
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "Plan Your Studies",
+        "Engage Outside the Classroom",
+        "Pursue Your Career Goals",
+        "JUMP TO:"
+      ]
+    ],
+    "https://liberalarts.utexas.edu/slavic/graduate-program/": [
+      [
+        "Public Affairs",
+        "Global Policy",
+        "Media Studies",
+        "Business"
+      ],
+      [
+        "M.A. Program in Russian, East European, and Eurasian Studies",
+        "Program Highlights",
+        "Dual-Degree Graduate Programs",
+        "Graduate Portfolio Program in Russian, East European, and Eurasian Studies"
+      ],
+      [
+        "Applications Now Closed",
+        "Get in Touch!",
+        "Card Block Headline",
+        "Card Block Headline",
+        "Card Block Headline",
+        "Card Block Headline",
+        "Card Block Headline",
+        "Card Block Headline",
+        "Card Block Headline",
+        "J.D./MA Dual-Degree with CREEES",
+        "MGPS & MPAff Dual-Degrees with CREEES",
+        "MBA Dual-Degree with CREEES",
+        "Master of Public Affairs/Master of Arts in Russian, East European and Eurasian Studies",
+        "Master of Global Policy Studies/Master of Arts in Russian, East European and Eurasian Studies",
+        "Master of Arts in Media Studies/Master of Arts in Russian, East European and Eurasian Studies",
+        "J.D. Law/Master of Arts in Russian, East European and Eurasian Studies",
+        "Master of Business Administration/Master of Russian, East European and Eurasian Studies"
+      ],
+      [
+        "J.D./MA Dual-Degree with CREEES",
+        "MGPS & MPAff Dual-Degrees with CREEES",
+        "MBA Dual-Degree with CREEES",
+        "Photo Credit."
+      ]
+    ],
+    "https://slaviceurasian.duke.edu/graduate/professional-development": [
+      [
+        "Secondary Menu",
+        "Main navigation",
+        "Sidebar Navigation",
+        "Slavic & Eurasian Studies",
+        "Undergraduate",
+        "Language Programs",
+        "Graduate Programs",
+        "Stay Connected"
+      ],
+      [
+        "Academic Study and Job Listings",
+        "Academic Administration",
+        "Foreign Development/Exchange Nonprofits",
+        "Global Health and Social Service",
+        "Government Jobs",
+        "Journalism/Publishing/Digital Media",
+        "Teaching Opportunities and Programs",
+        "Translation"
+      ]
+    ],
+    "https://slavic.yale.edu/graduate/phd-requirements": [
+      [
+        "Slavic Languages and Literatures",
+        "Language Competency and Expectations",
+        "Course Requirements",
+        "Teaching Fellowships",
+        "Minor Field Portfolio",
+        "Qualifying Paper",
+        "The Comprehensive Examination and the Departmental Reading List",
+        "The Qualifying Examination",
+        "The Pre-Prospectus Colloquium",
+        "The Prospectus Presentation",
+        "Admission to Candidacy and the M.Phil. Degree",
+        "The First Chapter Talk",
+        "Professional Development"
+      ],
+      [
+        "Ph.D. Requirements in Slavic and Eurasian Literatures and Cultures",
+        "Minimum of one course on Slavic literature or culture before the eighteenth century",
+        "Minimum of one course on eighteenth-century Slavic literature or culture",
+        "Minimum of two courses on nineteenth-century Slavic literature or culture",
+        "Minimum of two courses on twentieth-century Slavic literature or culture",
+        "Minimum of one course on twenty-first-century Slavic literature or culture"
+      ],
+      [
+        "1) a second language or literature; (",
+        "2) visual culture or one of the other arts; (",
+        "3) a topic in intellectual history or a specific interdisciplinary approach; or ("
+      ]
+    ],
+    "https://slavic.washington.edu/independent-studies": [
+      [
+        "Quick links",
+        "Main menu",
+        "You are here",
+        "Am I eligible\u00a0for an independent study?",
+        "Who can supervise an independent study?",
+        "How do I\u00a0apply for an independent study?",
+        "How much work is involved in an independent study? How many credits is it worth?",
+        "Programs & Courses",
+        "Our Programs"
+      ],
+      [
+        "2 books to be read, 3",
+        "5 pages to be written. 2 credits = 3",
+        "4 books, 6",
+        "8 pages; 3 credits = 5",
+        "6 books, 9",
+        "upon syllabus and reading list, and arrange how often to meet during the quarter."
+      ]
+    ],
+    "https://catalog.ku.edu/liberal-arts-sciences/slavic-languages-literature/": [
+      [
+        "a competitive academic year (9 month) salary",
+        "a 100% tuition waiver for all courses at KU",
+        "payment of up to 3 hours of student fees",
+        "optional University-subsidized group health insurance"
+      ],
+      [
+        "Undergraduate Programs",
+        "Graduate Programs",
+        "Department of Slavic, German, and Eurasian Studies",
+        "Department of Slavic, German, and Eurasian Studies",
+        "Department of Slavic, German, and Eurasian Studies",
+        "Print Options"
+      ],
+      [
+        "Placement",
+        "Retroactive Credit",
+        "Courses for Nonmajors",
+        "Master of Arts",
+        "Doctor of Philosophy",
+        "Departmental Funding",
+        "Additional Funding",
+        "Graduate Non-Degree Seeking Status",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses",
+        "Courses"
+      ],
+      [
+        "BCRS 104.",
+        "Elementary Bosnian/Croatian/Serbian I.",
+        "5 Credits."
+      ],
+      [
+        "BCRS 105.",
+        "Elementary Bosnian/Croatian/Serbian I, Honors.",
+        "5 Credits."
+      ],
+      [
+        "BCRS 108.",
+        "Elementary Bosnian/Croatian/Serbian II.",
+        "5 Credits."
+      ],
+      [
+        "BCRS 109.",
+        "Elementary Bosnian/Croatian/Serbian II, Honors.",
+        "5 Credits."
+      ],
+      [
+        "BCRS 150.",
+        "Beginning Bosnian/Croatian/Serbian I.",
+        "3 Credits."
+      ],
+      [
+        "BCRS 204.",
+        "Intermediate Bosnian/Croatian/Serbian I.",
+        "3 Credits.",
+        "F3 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "BCRS 205.",
+        "Intermediate Bosnian/Croatian/Serbian I, Honors.",
+        "3 Credits.",
+        "F3 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "BCRS 208.",
+        "Intermediate Bosnian/Croatian/Serbian II.",
+        "3 Credits.",
+        "F4 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "BCRS 209.",
+        "Intermediate Bosnian/Croatian/Serbian II, Honors.",
+        "3 Credits.",
+        "F4 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "BCRS 380.",
+        "Intensive Croatian.",
+        "6 Credits."
+      ],
+      [
+        "BCRS 508.",
+        "Advanced Bosnian/Croatian/Serbian II.",
+        "3 Credits."
+      ],
+      [
+        "BCRS 675.",
+        "Readings in Bosnian/Croatian/Serbian.",
+        "1-6 Credits."
+      ],
+      [
+        "CZCH 104.",
+        "Elementary Czech I.",
+        "5 Credits."
+      ],
+      [
+        "CZCH 108.",
+        "Elementary Czech II.",
+        "5 Credits."
+      ],
+      [
+        "CZCH 204.",
+        "Intermediate Czech I.",
+        "3 Credits."
+      ],
+      [
+        "CZCH 208.",
+        "Intermediate Czech II.",
+        "3 Credits."
+      ],
+      [
+        "CZCH 675.",
+        "Readings in Czech.",
+        "1-6 Credits."
+      ],
+      [
+        "GERM 100.",
+        "German Reading Course I.",
+        "3 Credits."
+      ],
+      [
+        "GERM 101.",
+        "German Reading Course II.",
+        "3 Credits."
+      ],
+      [
+        "GERM 104.",
+        "Elementary German I.",
+        "5 Credits.",
+        "F1 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 108.",
+        "Elementary German II.",
+        "5 Credits.",
+        "F2 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 111.",
+        "Introduction to German I.",
+        "3 Credits."
+      ],
+      [
+        "GERM 112.",
+        "Introduction to German II.",
+        "3 Credits."
+      ],
+      [
+        "GERM 124.",
+        "German Cinema in Context.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 125.",
+        "German Cinema in Context (Honors).",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 130.",
+        "Global Issues in Germany.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 145.",
+        "Fairy Tales from the Brothers Grimm to Disney and Beyond.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nAH"
+      ],
+      [
+        "GERM 177.",
+        "First Year Seminar:  _____.",
+        "3 Credits."
+      ],
+      [
+        "GERM 201.",
+        "Intermediate German I.",
+        "3 Credits.",
+        "F3 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 202.",
+        "Intermediate German II.",
+        "3 Credits.",
+        "F4 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 220.",
+        "Study Abroad Topics in the German Language.",
+        "1-5 Credits."
+      ],
+      [
+        "GERM 222.",
+        "Study Abroad Topics in German Studies:  _____.",
+        "1-3 Credits."
+      ],
+      [
+        "GERM 233.",
+        "Introduction to German Conversation.",
+        "3 Credits."
+      ],
+      [
+        "GERM 240.",
+        "Introduction to Translation and Translation Theory.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 250.",
+        "Migrants and New Media in 21st-century Germany.",
+        "3 Credits."
+      ],
+      [
+        "GERM 301.",
+        "High Intermediate German I.",
+        "3 Credits.",
+        "FP \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 302.",
+        "High Intermediate German II.",
+        "3 Credits.",
+        "FP \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 315.",
+        "Magic, Murder, Monsters: German Literature and the Modern Era.",
+        "3 Credits."
+      ],
+      [
+        "GERM 320.",
+        "Border Crossings in German Culture.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "GERM 322.",
+        "Study Abroad Topics in German Studies:  _____.",
+        "1-5 Credits."
+      ],
+      [
+        "GERM 330.",
+        "Topics in:  _____.",
+        "3 Credits."
+      ],
+      [
+        "GERM 333.",
+        "German Conversation and Idioms.",
+        "3 Credits."
+      ],
+      [
+        "GERM 336.",
+        "The German Transatlantic Experience.",
+        "3 Credits.",
+        "AE41\n\n\n\n\nUSC"
+      ],
+      [
+        "GERM 341.",
+        "Hitler and Nazi Germany.",
+        "3 Credits.",
+        "AE51\n\n\n\n\nAH"
+      ],
+      [
+        "GERM 350.",
+        "Studies in German Language, History, and Culture.",
+        "3 Credits."
+      ],
+      [
+        "GERM 353.",
+        "German Conversation.",
+        "3 Credits."
+      ],
+      [
+        "GERM 362.",
+        "German and Germany in Global Business Culture I.",
+        "3 Credits."
+      ],
+      [
+        "GERM 370.",
+        "German Studies Topics:  _____.",
+        "3 Credits."
+      ],
+      [
+        "GERM 375.",
+        "Topics in Film of German-Speaking Europe:  _____.",
+        "3 Credits."
+      ],
+      [
+        "GERM 396.",
+        "Hitler and Nazi Germany, Honors.",
+        "3 Credits.",
+        "AE51\n\n\n\n\nAH"
+      ],
+      [
+        "GERM 400.",
+        "Introduction to German Literary Masterpieces.",
+        "3 Credits."
+      ],
+      [
+        "GERM 401.",
+        "Advanced German I.",
+        "3 Credits."
+      ],
+      [
+        "GERM 402.",
+        "Advanced German II.",
+        "3 Credits."
+      ],
+      [
+        "GERM 411.",
+        "German Culture 1150-1750.",
+        "3 Credits.",
+        "FP \n\n\nAE61"
+      ],
+      [
+        "GERM 453.",
+        "Investigation and Conference:  _____.",
+        "1-3 Credits."
+      ],
+      [
+        "GERM 475.",
+        "Topics in German Studies:  _____.",
+        "3 Credits."
+      ],
+      [
+        "GERM 501.",
+        "Advanced German III.",
+        "3 Credits."
+      ],
+      [
+        "GERM 560.",
+        "Structure of the German Language.",
+        "3 Credits."
+      ],
+      [
+        "GERM 579.",
+        "Investigation and Conference:  _____.",
+        "1-3 Credits.",
+        "FP \n\n\nAE61"
+      ],
+      [
+        "GERM 580.",
+        "Senior Capstone Course:  Topics in German Studies.",
+        "3 Credits.",
+        "FP \n\n\nAE61"
+      ],
+      [
+        "PCS 120.",
+        "Introduction to Peace and Conflict Studies.",
+        "3 Credits.",
+        "GE11\n\n\n\n\nAH"
+      ],
+      [
+        "PCS 329.",
+        "History of War and Peace.",
+        "3 Credits."
+      ],
+      [
+        "PCS 350.",
+        "Study Abroad in Topics in Peace and Conflict Studies:  _____.",
+        "1-5 Credits."
+      ],
+      [
+        "PCS 375.",
+        "The Refugee Experience: Stories of Statelessness and Citizenship.",
+        "3 Credits."
+      ],
+      [
+        "PCS 555.",
+        "Topics in Peace and Conflict Studies:  _____.",
+        "3 Credits."
+      ],
+      [
+        "PCS 560.",
+        "Directed Study in Peace and Conflict Studies.",
+        "1-3 Credits."
+      ],
+      [
+        "PCS 565.",
+        "The Literature of Human Rights.",
+        "3 Credits."
+      ],
+      [
+        "PCS 650.",
+        "Senior Seminar in Peace and Conflict Studies.",
+        "3 Credits."
+      ],
+      [
+        "PCS 801.",
+        "Peace and Conflict Studies:  Texts and Methods.",
+        "3 Credits."
+      ],
+      [
+        "PERS 110.",
+        "Elementary Iranian/Dari/Tajik Persian I.",
+        "5 Credits."
+      ],
+      [
+        "PERS 120.",
+        "Elementary Iranian/Dari/Tajik Persian II.",
+        "5 Credits."
+      ],
+      [
+        "PERS 210.",
+        "Intermediate Iranian/Dari/Tajik Persian I.",
+        "3 Credits."
+      ],
+      [
+        "PERS 220.",
+        "Intermediate Iranian/Dari/Tajik Persian II.",
+        "3 Credits."
+      ],
+      [
+        "PERS 310.",
+        "Advanced Iranian/Dari/Tajik Persian I.",
+        "3 Credits."
+      ],
+      [
+        "PERS 320.",
+        "Advanced Iranian/Dari/Tajik Persian II.",
+        "3 Credits."
+      ],
+      [
+        "PERS 593.",
+        "Directed Study in Persian Culture and Literature:  _____.",
+        "1-3 Credits."
+      ],
+      [
+        "PLSH 104.",
+        "Elementary Polish I.",
+        "5 Credits."
+      ],
+      [
+        "PLSH 105.",
+        "Elementary Polish, Honors.",
+        "5 Credits."
+      ],
+      [
+        "PLSH 108.",
+        "Elementary Polish II.",
+        "5 Credits."
+      ],
+      [
+        "PLSH 109.",
+        "Elementary Polish II, Honors.",
+        "5 Credits."
+      ],
+      [
+        "PLSH 204.",
+        "Intermediate Polish I.",
+        "3 Credits.",
+        "F3 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "PLSH 208.",
+        "Intermediate Polish II.",
+        "3 Credits.",
+        "F4 \n\n\nAE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "PLSH 508.",
+        "Advanced Polish II.",
+        "3 Credits."
+      ],
+      [
+        "PLSH 675.",
+        "Readings in Polish Language and Literature.",
+        "1-6 Credits."
+      ],
+      [
+        "REES 110.",
+        "Understanding Russia and Eastern Europe.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "REES 111.",
+        "Understanding Russia and Eastern Europe, Honors.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "REES 177.",
+        "First Year Seminar:  _____.",
+        "3 Credits."
+      ],
+      [
+        "REES 220.",
+        "Societies and Cultures of Eurasia.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "REES 221.",
+        "Societies and Cultures of Eurasia, Honors.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "REES 310.",
+        "Understanding Russia and Eastern Europe.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "REES 311.",
+        "Understanding Russia and Eastern Europe, Honors.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "REES 480.",
+        "Topics in Russian and East European Studies:  ____.",
+        "1-3 Credits."
+      ],
+      [
+        "REES 510.",
+        "Understanding Central Asia.",
+        "3 Credits."
+      ],
+      [
+        "REES 704.",
+        "Russian Orthodoxy in Historical Perspective.",
+        "3 Credits."
+      ],
+      [
+        "REES 710.",
+        "Understanding Central Asia.",
+        "3 Credits."
+      ],
+      [
+        "REES 799.",
+        "Directed Readings in Russian and East European Studies.",
+        "1-5 Credits."
+      ],
+      [
+        "REES 895.",
+        "Special Problems in Area Studies:  _____.",
+        "3 Credits."
+      ],
+      [
+        "REES 898.",
+        "Seminar in Russian and East European Studies.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 104.",
+        "Elementary Russian I.",
+        "5 Credits."
+      ],
+      [
+        "RUSS 105.",
+        "Elementary Russian I, Honors.",
+        "5 Credits."
+      ],
+      [
+        "RUSS 108.",
+        "Elementary Russian II.",
+        "5 Credits."
+      ],
+      [
+        "RUSS 109.",
+        "Elementary Russian II, Honors.",
+        "5 Credits."
+      ],
+      [
+        "RUSS 110.",
+        "Intensive Elementary Russian.",
+        "10 Credits.",
+        "F1/F2"
+      ],
+      [
+        "RUSS 150.",
+        "Beginning Russian I.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 152.",
+        "Beginning Russian II.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 204.",
+        "Intermediate Russian I.",
+        "5 Credits."
+      ],
+      [
+        "RUSS 208.",
+        "Intermediate Russian II.",
+        "5 Credits."
+      ],
+      [
+        "RUSS 212.",
+        "Second Year Russian I.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 216.",
+        "Second Year Russian II.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 250.",
+        "Continuing Russian I.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 252.",
+        "Continuing Russian II.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 504.",
+        "Advanced Russian I.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 508.",
+        "Advanced Russian II.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 512.",
+        "Russian for the Professions I.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 516.",
+        "Russian for the Professions II.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 522.",
+        "Problems in Translating Russian into English I.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 550.",
+        "Advanced Conversation, Composition, and Grammar in Russia:  Summer Program.",
+        "6 Credits."
+      ],
+      [
+        "RUSS 675.",
+        "Readings in Russian.",
+        "1-6 Credits."
+      ],
+      [
+        "RUSS 700.",
+        "Classics of Russian Culture.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 704.",
+        "Contemporary Russian Culture.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 712.",
+        "Introduction to Russian Literature.",
+        "3 Credits."
+      ],
+      [
+        "RUSS 716.",
+        "Stylistics.",
+        "3 Credits."
+      ],
+      [
+        "SLAV AH.",
+        "Arts and Humanities.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 101.",
+        "Introduction to Slovene.",
+        "1 Credits."
+      ],
+      [
+        "SLAV 104.",
+        "Elementary Slavic Language I:  _____.",
+        "5 Credits."
+      ],
+      [
+        "SLAV 140.",
+        "Understanding Russia.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 141.",
+        "Understanding Russia, Honors.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 144.",
+        "Survey of Russian Literature in Translation.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 145.",
+        "Survey of Russian Literature in Translation, Honors.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 148.",
+        "Introduction to Slavic Folklore.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 149.",
+        "Introduction to Slavic Folklore, Honors.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 152.",
+        "Robots, Rockets, Radios: Progress and Technology in 20th-Century Slavic Literatures.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 177.",
+        "First Year Seminar:  _____.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 205.",
+        "Muslim Lives: Politics, Culture, and Society.",
+        "3 Credits.",
+        "AE51\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 230.",
+        "The Vampire in Literature, Film, and Television.",
+        "3 Credits.",
+        "AE51\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 250.",
+        "Introduction to Translation and Translation Theory.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 310.",
+        "Modern Turkey:  Culture and Society.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 316.",
+        "The Peoples and Cultures of Southeastern Europe Through Film.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 317.",
+        "The Peoples and Cultures of Southeastern Europe Through Film, Honors.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 320.",
+        "Graphic Novels as Memory.",
+        "3 Credits.",
+        "GE21\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 330.",
+        "Russian Business Culture.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 340.",
+        "The Language Landscape of Eastern Europe.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 341.",
+        "The Language Landscape of Eastern Europe, Honors.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "SLAV 370.",
+        "War and Violence Russian Literature and Film.",
+        "3 Credits.",
+        "GE3H\n\n\n\n\nAH"
+      ],
+      [
+        "SLAV 379.",
+        "Topics in:  _____.",
+        "1-3 Credits."
+      ],
+      [
+        "SLAV 495.",
+        "Senior Capstone Seminar.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 499.",
+        "Honors Thesis.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 508.",
+        "South Slavic Literature and Civilization.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 516.",
+        "Love, Lust and Liberty: Polish and Czech Film Adaptations.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 522.",
+        "The Grammatical Categories of Russian:  Linguistic Units, Functions and Meanings.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 532.",
+        "Dostoevsky.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 534.",
+        "Tolstoy.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 540.",
+        "The Language Landscape of Eastern Europe.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 550.",
+        "The Russian Novel in the Age of Realism.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 558.",
+        "Readings in Slovene.",
+        "1-6 Credits."
+      ],
+      [
+        "SLAV 564.",
+        "The Woman Question in Nineteenth-Century Russian Literature.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 570.",
+        "War and Violence Russian Literature and Film.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 572.",
+        "Russian and East European Science Fiction.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 600.",
+        "Biography of a City:  _____.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 626.",
+        "The Cultural Impact of Ottoman Empire on the South Slavs.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 630.",
+        "Slavic Folklore.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 664.",
+        "Soviet Russian Literature:  1930-1990.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 668.",
+        "Nabokov.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 675.",
+        "Readings in Slavic Studies (English).",
+        "1-3 Credits."
+      ],
+      [
+        "SLAV 678.",
+        "Readings in Slavic Linguistics.",
+        "1-6 Credits."
+      ],
+      [
+        "SLAV 679.",
+        "Topics in:  _____.",
+        "1-6 Credits."
+      ],
+      [
+        "SLAV 706.",
+        "Masterworks of Polish and Czech Literature.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 710.",
+        "Introduction to Slavic Languages and Linguistics.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 722.",
+        "The Grammatical Categories of Russian:  Linguistic Units, Functions and Meanings.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 732.",
+        "Dostoevsky.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 734.",
+        "Tolstoy.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 748.",
+        "Old Church Slavic.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 754.",
+        "Seminar in Slavic Verbal Aspect.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 760.",
+        "The Russian Novel in the Age of Realism.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 762.",
+        "Russian Theatre and Drama from Stanislavski and Chekhov to the Present.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 764.",
+        "The Woman Question in Nineteenth-Century Russian Literature.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 772.",
+        "Russian and East European Science Fiction.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 804.",
+        "Comparative Slavic Linguistics.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 824.",
+        "Proseminar in Methods of Teaching Slavic Languages I.",
+        "1-3 Credits."
+      ],
+      [
+        "SLAV 899.",
+        "Ph.D. Seminar Slavic Linguistics.",
+        "3 Credits."
+      ],
+      [
+        "SLAV 999.",
+        "Dissertation.",
+        "1-9 Credits."
+      ],
+      [
+        "TURK 104.",
+        "Elementary Turkish I.",
+        "5 Credits."
+      ],
+      [
+        "TURK 108.",
+        "Elementary Turkish II.",
+        "5 Credits."
+      ],
+      [
+        "TURK 204.",
+        "Intermediate Turkish I.",
+        "3 Credits."
+      ],
+      [
+        "TURK 208.",
+        "Intermediate Turkish II.",
+        "3 Credits."
+      ],
+      [
+        "TURK 310.",
+        "Modern Turkey: Culture and Society.",
+        "3 Credits.",
+        "AE42\n\n\n\n\nGLBC"
+      ],
+      [
+        "TURK 314.",
+        "Turkish Culture Through Film and Literature.",
+        "3 Credits."
+      ],
+      [
+        "TURK 514.",
+        "Turkish Culture Through Film and Literature.",
+        "3 Credits."
+      ],
+      [
+        "TURK 675.",
+        "Readings in Turkish:  _____.",
+        "3 Credits."
+      ],
+      [
+        "UKRA 104.",
+        "Elementary Ukrainian I.",
+        "5 Credits."
+      ],
+      [
+        "UKRA 108.",
+        "Elementary Ukrainian II.",
+        "5 Credits."
+      ],
+      [
+        "UKRA 204.",
+        "Intermediate Ukrainian I.",
+        "3 Credits."
+      ],
+      [
+        "UKRA 208.",
+        "Intermediate Ukrainian II.",
+        "3 Credits."
+      ],
+      [
+        "UKRA 504.",
+        "Advanced Ukrainian I.",
+        "3 Credits."
+      ],
+      [
+        "UKRA 508.",
+        "Advanced Ukrainian II.",
+        "3 Credits."
+      ],
+      [
+        "UKRA 675.",
+        "Readings in Ukrainian Language.",
+        "1-6 Credits."
+      ],
+      [
+        "enrollment, seminar course for first",
+        "Year Seminar topics are coordinated and approved by the Office of First",
+        "Year Experience.  Prerequisite:  First",
+        "time freshman status."
+      ]
+    ],
+    "https://lsa.umich.edu/slavic/graduate-students/faqs.html": [
+      [
+        "DEPARTMENTS & UNITS",
+        "MAJORS AND MINORS",
+        "LSA COURSE GUIDE",
+        "LSA GATEWAY"
+      ],
+      [
+        "Student Resources",
+        "Courses",
+        "Academic Advising",
+        "Majors and Minors",
+        "Departments and Units",
+        "Global Studies",
+        "LSA Opportunity Hub"
+      ],
+      [
+        "Facebook",
+        "Twitter",
+        "Youtube"
+      ]
+    ],
+    "https://dornsife.usc.edu/sll/graduate/": [
+      [
+        "What are you looking for?",
+        "Advanced Degrees in Slavic Languages and Literatures",
+        "M.A. in Slavic Languages and Literatures",
+        "Ph.D. in Slavic Languages and Literatures",
+        "Elective Graduate Certificates",
+        "Connect with us on social media!",
+        "Check Out Our Newsletter \u201c\u041f\u0435\u0440\u0443\u043d\u044a\u201d"
+      ],
+      [
+        "Suggested Search",
+        "Certificate in Gender Studies",
+        "Certificate in Visual Studies",
+        "Certificate in Jewish Studies",
+        "Certificate in Religious Studies",
+        "Certificate in Translation Studies",
+        "Certificate in Science and Technology Studies",
+        "Department Office",
+        "Department Director of Undergraduate Program",
+        "Department Director of Graduate Program",
+        "Voices of Freedom, Voices of War in Ukraine",
+        "Newly minted PhDs in Slavic Languages & Literatures, Summer 2024",
+        "Congratulations to Prof. Rubin-Detlev on receiving an NEH grant!"
+      ],
+      [
+        "Required courses for the M.A.",
+        "SLL 500 Topics in Advanced Russian (2 x 4 = 8 total units)",
+        "501 Proseminar in Russian Literature (3 units)",
+        "532 18th Century Russian Literature (3 units)",
+        "546 The Russian Novel (3 units)"
+      ],
+      [
+        "Required Courses for the Ph.D.",
+        "In addition to the courses required for the M.A. listed below, students must take:",
+        "545 19th Century Russian Poetry\u00a0\u00a0(3 units)",
+        "550 Russian Modernism (3 units)",
+        "555 Soviet Literature I (1917-1953) (3 units)",
+        "Two of:",
+        "SLL 650 Seminar in Russian Literature (3 units)",
+        "SLL 660 Seminar in a Single Author or Work (3 units)",
+        "SLL 665 Seminar in Russian Culture and the Arts (3 units)",
+        "Additional Requirements for the Ph.D.",
+        "1. Demonstrate proficiency in spoken and written Russian",
+        "3. Pass the qualifying examination, which must be taken after all course work has been completed;",
+        "4. Complete and successfully defend a dissertation.",
+        "5. For complete information on degree requirements, see the university catalogue."
+      ],
+      [
+        "Department Office\n\nDeborah Russo\n\n\n(213) 740-2735\n\n\nslavic@usc.edu",
+        "Department Director of Undergraduate Program\n\nProf. Evgeny Dengub\n\n\n(213) 740-0000\n\n\ndengub@usc.edu",
+        "Department Director of Graduate Program\n\nProf. Kelsey Rubin-Detlev\n\n\nrubindet@usc.edu"
+      ],
+      [
+        "Deborah Russo",
+        "(213) 740-2735",
+        "slavic@usc.edu"
+      ],
+      [
+        "Prof. Evgeny Dengub",
+        "(213) 740-0000",
+        "dengub@usc.edu"
+      ],
+      [
+        "Voices of Freedom, Voices of War in Ukraine",
+        "Newly minted PhDs in Slavic Languages & Literatures, Summer 2024",
+        "Congratulations to Prof. Rubin-Detlev on receiving an NEH grant!"
+      ]
+    ],
+    "https://slavic.ucla.edu/graduate-courses/": [
+      [
+        "RUSSN 212B - 19th-Century Russian Literature: Age of Realism",
+        "RUSSN C224D - Studies in Russian Literature: Dostoevsky",
+        "RUSSN C277 - Studies in Russian Literature: Nabokov",
+        "SLAVC 230B - Topics in Comparative Slavic Literature: Classicism through Romanticism",
+        "SLAVC 495B - Effective Strategies for Teaching Russian",
+        "SLAVC 596 - Directed Individual Study or Research",
+        "SLAVC 597 - Preparation for MA Comprehensive Examination or PhD Qualifying Examinations",
+        "SLAVC 599 - Research for PhD Dissertation"
+      ]
+    ],
+    "https://german.la.psu.edu/": [
+      [
+        "GERMAN",
+        "RUSSIAN",
+        "UKRAINIAN"
+      ],
+      [
+        "GERMAN",
+        "RUSSIAN",
+        "UKRAINIAN"
+      ],
+      [
+        "German Day",
+        "April 2, 2025",
+        "9:00 a.m.\u20135:00 p.m.",
+        "HUB-Robeson Center"
+      ],
+      [
+        "German Awards Ceremony",
+        "April 21, 2025",
+        "3:30 p.m.\u20135:30 p.m.",
+        "Garden Room, 130 Pasquerilla Spiritual Center"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:57:17"
+}

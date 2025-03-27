@@ -1,0 +1,5760 @@
+{
+  "level1_term": "religion",
+  "url_verification_status": {
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/religion": false,
+    "https://religiousstudies.as.virginia.edu/areas-study": true,
+    "https://religiousstudies.yale.edu/academics/fields-studylists-courses": true,
+    "https://religious-studies.brown.edu/": true,
+    "https://artsandsciences.syracuse.edu/degree-programs/phd-religion/": true,
+    "https://religion.emory.edu/": false,
+    "https://lps.uncg.edu/religious-studies/": true,
+    "https://religiousstudies.indiana.edu/index.html": true,
+    "https://catalog.unc.edu/undergraduate/departments/religious-studies/": true,
+    "https://religion.rutgers.edu/academics/graduate/program-information": false,
+    "https://liberalarts.du.edu/religious-studies": true,
+    "https://www.scu.edu/cas/religious-studies/": false,
+    "https://www.bu.edu/religion/academics/graduate-program/": false,
+    "https://www.stjohns.edu/offices-departments/theology-and-religious-studies": true,
+    "https://www.samford.edu/arts-and-sciences/biblical-and-religious-studies/": true,
+    "https://religion.illinois.edu/": false,
+    "https://www.oxy.edu/academics/areas-study/religious-studies": false,
+    "https://religiousstudies.yale.edu/academics/graduate-program": true,
+    "https://www.religion.ucsb.edu/academics/graduate/": true,
+    "https://www.berea.edu/academics/departments-programs/studies-of-religion-and-spirituality/": false,
+    "http://collegecatalog.uchicago.edu/thecollege/religiousstudies/": true,
+    "https://www.hamilton.edu/academics/departments/religious-studies": true,
+    "https://religion.columbia.edu/": false,
+    "https://www.westmont.edu/religious-studies": true,
+    "https://languages.utah.edu/undergraduate/majors-and-minors/religious-studies.php": true,
+    "https://grad.rutgers.edu/academics/programs/religious-studies": true,
+    "http://coursecatalog.syr.edu/preview_program.php?catoid=39&poid=19580&returnto=4917": true,
+    "https://www.holycross.edu/academics/program/religious-studies": true,
+    "https://religion.ufl.edu/graduate-studies/": false
+  },
+  "verified_lists_per_url": {
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/religion": 0,
+    "https://religiousstudies.as.virginia.edu/areas-study": 2,
+    "https://religiousstudies.yale.edu/academics/fields-studylists-courses": 2,
+    "https://religious-studies.brown.edu/": 1,
+    "https://artsandsciences.syracuse.edu/degree-programs/phd-religion/": 1,
+    "https://religion.emory.edu/": 0,
+    "https://lps.uncg.edu/religious-studies/": 2,
+    "https://religiousstudies.indiana.edu/index.html": 2,
+    "https://catalog.unc.edu/undergraduate/departments/religious-studies/": 568,
+    "https://religion.rutgers.edu/academics/graduate/program-information": 0,
+    "https://liberalarts.du.edu/religious-studies": 1,
+    "https://www.scu.edu/cas/religious-studies/": 0,
+    "https://www.bu.edu/religion/academics/graduate-program/": 0,
+    "https://www.stjohns.edu/offices-departments/theology-and-religious-studies": 27,
+    "https://www.samford.edu/arts-and-sciences/biblical-and-religious-studies/": 2,
+    "https://religion.illinois.edu/": 0,
+    "https://www.oxy.edu/academics/areas-study/religious-studies": 0,
+    "https://religiousstudies.yale.edu/academics/graduate-program": 1,
+    "https://www.religion.ucsb.edu/academics/graduate/": 1,
+    "https://www.berea.edu/academics/departments-programs/studies-of-religion-and-spirituality/": 0,
+    "http://collegecatalog.uchicago.edu/thecollege/religiousstudies/": 5,
+    "https://www.hamilton.edu/academics/departments/religious-studies": 2,
+    "https://religion.columbia.edu/": 0,
+    "https://www.westmont.edu/religious-studies": 1,
+    "https://languages.utah.edu/undergraduate/majors-and-minors/religious-studies.php": 4,
+    "https://grad.rutgers.edu/academics/programs/religious-studies": 1,
+    "http://coursecatalog.syr.edu/preview_program.php?catoid=39&poid=19580&returnto=4917": 1,
+    "https://www.holycross.edu/academics/program/religious-studies": 5,
+    "https://religion.ufl.edu/graduate-studies/": 0
+  },
+  "total_lists_per_url": {
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/religion": 6,
+    "https://religiousstudies.as.virginia.edu/areas-study": 2,
+    "https://religiousstudies.yale.edu/academics/fields-studylists-courses": 2,
+    "https://religious-studies.brown.edu/": 1,
+    "https://artsandsciences.syracuse.edu/degree-programs/phd-religion/": 2,
+    "https://religion.emory.edu/": 2,
+    "https://lps.uncg.edu/religious-studies/": 8,
+    "https://religiousstudies.indiana.edu/index.html": 5,
+    "https://catalog.unc.edu/undergraduate/departments/religious-studies/": 574,
+    "https://religion.rutgers.edu/academics/graduate/program-information": 2,
+    "https://liberalarts.du.edu/religious-studies": 4,
+    "https://www.scu.edu/cas/religious-studies/": 2,
+    "https://www.bu.edu/religion/academics/graduate-program/": 1,
+    "https://www.stjohns.edu/offices-departments/theology-and-religious-studies": 29,
+    "https://www.samford.edu/arts-and-sciences/biblical-and-religious-studies/": 6,
+    "https://religion.illinois.edu/": 2,
+    "https://www.oxy.edu/academics/areas-study/religious-studies": 2,
+    "https://religiousstudies.yale.edu/academics/graduate-program": 1,
+    "https://www.religion.ucsb.edu/academics/graduate/": 4,
+    "https://www.berea.edu/academics/departments-programs/studies-of-religion-and-spirituality/": 3,
+    "http://collegecatalog.uchicago.edu/thecollege/religiousstudies/": 21,
+    "https://www.hamilton.edu/academics/departments/religious-studies": 4,
+    "https://religion.columbia.edu/": 2,
+    "https://www.westmont.edu/religious-studies": 5,
+    "https://languages.utah.edu/undergraduate/majors-and-minors/religious-studies.php": 34,
+    "https://grad.rutgers.edu/academics/programs/religious-studies": 2,
+    "http://coursecatalog.syr.edu/preview_program.php?catoid=39&poid=19580&returnto=4917": 2,
+    "https://www.holycross.edu/academics/program/religious-studies": 5,
+    "https://religion.ufl.edu/graduate-studies/": 1
+  },
+  "verified_lists_ids": {
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/religion": [],
+    "https://religiousstudies.as.virginia.edu/areas-study": [
+      0,
+      1
+    ],
+    "https://religiousstudies.yale.edu/academics/fields-studylists-courses": [
+      0,
+      1
+    ],
+    "https://religious-studies.brown.edu/": [
+      0
+    ],
+    "https://artsandsciences.syracuse.edu/degree-programs/phd-religion/": [
+      0
+    ],
+    "https://religion.emory.edu/": [],
+    "https://lps.uncg.edu/religious-studies/": [
+      0,
+      1
+    ],
+    "https://religiousstudies.indiana.edu/index.html": [
+      0,
+      1
+    ],
+    "https://catalog.unc.edu/undergraduate/departments/religious-studies/": [
+      0,
+      1,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      494,
+      495,
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550,
+      551,
+      552,
+      553,
+      554,
+      555,
+      556,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      564,
+      565,
+      566,
+      567,
+      568,
+      569,
+      570,
+      571
+    ],
+    "https://religion.rutgers.edu/academics/graduate/program-information": [],
+    "https://liberalarts.du.edu/religious-studies": [
+      0
+    ],
+    "https://www.scu.edu/cas/religious-studies/": [],
+    "https://www.bu.edu/religion/academics/graduate-program/": [],
+    "https://www.stjohns.edu/offices-departments/theology-and-religious-studies": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "https://www.samford.edu/arts-and-sciences/biblical-and-religious-studies/": [
+      1,
+      3
+    ],
+    "https://religion.illinois.edu/": [],
+    "https://www.oxy.edu/academics/areas-study/religious-studies": [],
+    "https://religiousstudies.yale.edu/academics/graduate-program": [
+      0
+    ],
+    "https://www.religion.ucsb.edu/academics/graduate/": [
+      0
+    ],
+    "https://www.berea.edu/academics/departments-programs/studies-of-religion-and-spirituality/": [],
+    "http://collegecatalog.uchicago.edu/thecollege/religiousstudies/": [
+      0,
+      2,
+      8,
+      9,
+      10
+    ],
+    "https://www.hamilton.edu/academics/departments/religious-studies": [
+      0,
+      2
+    ],
+    "https://religion.columbia.edu/": [],
+    "https://www.westmont.edu/religious-studies": [
+      4
+    ],
+    "https://languages.utah.edu/undergraduate/majors-and-minors/religious-studies.php": [
+      0,
+      4,
+      5,
+      31
+    ],
+    "https://grad.rutgers.edu/academics/programs/religious-studies": [
+      0
+    ],
+    "http://coursecatalog.syr.edu/preview_program.php?catoid=39&poid=19580&returnto=4917": [
+      0
+    ],
+    "https://www.holycross.edu/academics/program/religious-studies": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "https://religion.ufl.edu/graduate-studies/": []
+  },
+  "num_urls": 40,
+  "num_lists": 734,
+  "url_to_lists": {
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/religion": [
+      [
+        "Chair\n\n\n                    Judith Weisenfeld",
+        "Judith Weisenfeld",
+        "Director of Graduate Studies\n\n\n                    Eric S. Gregory",
+        "Eric S. Gregory",
+        "Director of Undergraduate Studies\n\n\n                    Bryan D. Lowe",
+        "Bryan D. Lowe",
+        "Leora F. Batnitzky",
+        "Wallace D. Best",
+        "Andrew Chignell",
+        "Jonathan C. Gold",
+        "Eric S. Gregory",
+        "AnneMarie Luijendijk",
+        "Elaine H. Pagels",
+        "Stephen F. Teiser",
+        "Judith Weisenfeld",
+        "Muhammad Q. Zaman",
+        "Bryan D. Lowe",
+        "Shaun E. Marmon",
+        "Seth A. Perry",
+        "Garry Sparks",
+        "Moulie Vidas",
+        "Gabriel M. Citron",
+        "Liane M. Feldman",
+        "Yedidah Koren",
+        "Tehseen Thaver",
+        "Nicole M. Turner",
+        "Lecturer with Rank of Professor\n\n\n                    Sofia Torallas Tovar",
+        "Sofia Torallas Tovar",
+        "Tenzin Bhuchung",
+        "Stephen R. Di Trolio",
+        "Mark J. Edwards",
+        "Matthew S. Green",
+        "Rebekah J. Haigh",
+        "Jenny Wiley Legath",
+        "Joseph A. Luigs",
+        "Lauren K. McCormick",
+        "Austen D. McDougal",
+        "Kaitlynn C. Merckling",
+        "Emily S. Pruszinski",
+        "Suzanne C. van Geuns",
+        "Visiting Associate Professor\n\n\n                    Akiko Walley",
+        "Akiko Walley"
+      ],
+      [
+        "Leora F. Batnitzky",
+        "Wallace D. Best",
+        "Andrew Chignell",
+        "Jonathan C. Gold",
+        "Eric S. Gregory",
+        "AnneMarie Luijendijk",
+        "Elaine H. Pagels",
+        "Stephen F. Teiser",
+        "Judith Weisenfeld",
+        "Muhammad Q. Zaman"
+      ],
+      [
+        "Bryan D. Lowe",
+        "Shaun E. Marmon",
+        "Seth A. Perry",
+        "Garry Sparks",
+        "Moulie Vidas"
+      ],
+      [
+        "Gabriel M. Citron",
+        "Liane M. Feldman",
+        "Yedidah Koren",
+        "Tehseen Thaver",
+        "Nicole M. Turner"
+      ],
+      [
+        "Tenzin Bhuchung",
+        "Stephen R. Di Trolio",
+        "Mark J. Edwards",
+        "Matthew S. Green",
+        "Rebekah J. Haigh",
+        "Jenny Wiley Legath",
+        "Joseph A. Luigs",
+        "Lauren K. McCormick",
+        "Austen D. McDougal",
+        "Kaitlynn C. Merckling",
+        "Emily S. Pruszinski",
+        "Suzanne C. van Geuns"
+      ],
+      [
+        "Program length\n5 years",
+        "Fee\n$75",
+        "GRE\nGeneral Test - not accepted",
+        "For a full list of faculty members and fellows please visit the department or program website."
+      ]
+    ],
+    "https://religiousstudies.as.virginia.edu/areas-study": [
+      [
+        "Why Religious Studies",
+        "Major\n\n\nConcentrations\n\n\nDistinguished Majors Program (DMP)",
+        "Concentrations",
+        "Distinguished Majors Program (DMP)",
+        "Minor",
+        "Masters Promotion Program",
+        "How to Declare",
+        "Peer Advisors",
+        "Career Mentoring Network"
+      ],
+      [
+        "African and African Diaspora Religions",
+        "American Religions",
+        "Buddhist Modernities",
+        "Buddhist Studies",
+        "Christian Theological Perspectives",
+        "Comparative Scripture, Interpretation, and Practice",
+        "Hinduism",
+        "Islamic Studies",
+        "Judaism",
+        "Judaism and Christianity in Antiquity",
+        "Modern and Contemporary Religious Thought",
+        "Religion, Literature, and Culture",
+        "Religious Ethics",
+        "South and Southeast Asian Religions",
+        "The Study of Religion"
+      ]
+    ],
+    "https://religiousstudies.yale.edu/academics/fields-studylists-courses": [
+      [
+        "Religious Studies",
+        "You are here",
+        "Graduate Program"
+      ],
+      [
+        "American Religious History",
+        "Asian Religions",
+        "Early Mediterranean and West Asian Religions (EMWAR)",
+        "Islamic Studies",
+        "Jewish Studies",
+        "Old Testament/Hebrew Bible",
+        "Philosophy of Religion",
+        "Religion and Modernity",
+        "Religious Ethics",
+        "Theology"
+      ]
+    ],
+    "https://religious-studies.brown.edu/": [
+      [
+        "Secondary Navigation Navigation",
+        "Site Navigation",
+        "Academics",
+        "Undergraduate",
+        "Graduate",
+        "Recent News",
+        "Additional Information",
+        "Latest events, news and other happenings",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation",
+        "Mobile Secondary Navigation Navigation"
+      ]
+    ],
+    "https://artsandsciences.syracuse.edu/degree-programs/phd-religion/": [
+      [
+        "African American",
+        "American",
+        "Buddhist",
+        "Christian",
+        "East Asian",
+        "Hindu",
+        "Indigenous",
+        "Jewish",
+        "Middle Eastern",
+        "Muslim",
+        "South Asian"
+      ],
+      [
+        "Three (3) letters of recommendation",
+        "Writing Sample of not more than 20 pages.",
+        "GRE scores are waived until further notice*",
+        "TOEFL scores (for applicants whose first language is not English)"
+      ]
+    ],
+    "https://religion.emory.edu/": [
+      [
+        "Slide 1: Spring 2025 Course Offerings",
+        "Slide 2: Spring 2025 Course Offerings",
+        "Slide 3: Spring 2025 Course Offerings",
+        "Slide 4: REL 354-Pam-Hall-Birdwatching"
+      ],
+      [
+        "Undergraduate Program",
+        "Graduate Program",
+        "COURSE CATALOGCourse Descriptions",
+        "Instagram",
+        "Facebook",
+        "Resources"
+      ]
+    ],
+    "https://lps.uncg.edu/religious-studies/": [
+      [
+        "History and Thought of Major World Religious Traditions",
+        "Comparative Religions: Interreligious Dialogue between Various World Religious Traditions",
+        "Hermeneutics of Sacred Text",
+        "Study of Sacred Languages (Hebrew, Greek, Arabic)",
+        "Exploration of Career Paths for Religious Vocations"
+      ],
+      [
+        "History of a Religious Tradition",
+        "Exploration of Religious Vocations",
+        "Public Speaking in a Religious Context"
+      ],
+      [
+        "Clergy",
+        "Hospital Chaplains",
+        "Military Chaplains",
+        "College Chaplains",
+        "Religious Educators",
+        "Non-ordained Ministry (e.g., youth leaders, community organizers)"
+      ],
+      [
+        "17th-18th century British and American thinkers, leaders, and citizens",
+        "Revolutionary War and Constitutional issues related to religion",
+        "19th century American transcendentalist thinkers",
+        "20th century pragmatist thinkers",
+        "Jewish thinkers and life",
+        "Franz Rosenzweig"
+      ],
+      [
+        "Facebook",
+        "Twitter",
+        "LinkedIn",
+        "Print Friendly"
+      ],
+      [
+        "Pre-Divinity Track",
+        "Muntazir Ali",
+        "Gregory Grieve",
+        "David C. McDuffie",
+        "Ashlee Andrews",
+        "Dana Logan",
+        "John Borchert",
+        "Spring 2025 Course Offerings",
+        "Fall 2024 Course Offerings",
+        "Spring 2024 Course Offerings",
+        "Request More Information"
+      ],
+      [
+        "Alyssa GabbayAssociate Professorabgabbay@uncg.edu",
+        "Derek KruegerProfessord_kruege@uncg.edu",
+        "Charles OrzechProfessor Emerituscdorzech@uncg.edu",
+        "Eugene RogersProfessorefrogers@uncg.edu",
+        "Mary K. WakemanProfessor Emerita"
+      ],
+      [
+        "November 25, 2024\nSpring 2025 Course Offerings",
+        "August 15, 2024\nFall 2024 Course Offerings",
+        "November 3, 2023\nSpring 2024 Course Offerings"
+      ]
+    ],
+    "https://religiousstudies.indiana.edu/index.html": [
+      [
+        "Contact",
+        "Undergraduate\nReligious Studies B.A.\nMinor",
+        "Religious Studies B.A.",
+        "Minor",
+        "Graduate\nReligious Studies M.A.\nReligious Studies Ph.D.\nPh.D. Minor",
+        "Religious Studies M.A.",
+        "Religious Studies Ph.D.",
+        "Ph.D. Minor",
+        "Courses"
+      ],
+      [
+        "Undergraduate\nReligious Studies B.A.\nMinor",
+        "Religious Studies B.A.",
+        "Minor",
+        "Graduate\nReligious Studies M.A.\nReligious Studies Ph.D.\nPh.D. Minor",
+        "Religious Studies M.A.",
+        "Religious Studies Ph.D.",
+        "Ph.D. Minor",
+        "Courses"
+      ],
+      [
+        "Religious Studies M.A.",
+        "Religious Studies Ph.D.",
+        "Ph.D. Minor"
+      ],
+      [
+        "Center for Religion and the Human Presents",
+        "A Modern Form of the Sacred",
+        "URSA Spring Symposium",
+        "Bridging history and tradition in rural Bengal",
+        "Cheers to Prof. Sullivan",
+        "Interpretations of Religion",
+        "Decker Presents in Tokyo",
+        "Bible in Pop Culture",
+        "Incoming freshmen",
+        "Current IU students",
+        "Prospective graduate students",
+        "Department of Religious Studies social media channels",
+        "The College of Arts & Sciences"
+      ],
+      [
+        "Mar\n27\n\n\nAfrican Studies Colloquium: Afro-Cuban Music\n\n4:30 p.m.\u20146 p.m.",
+        "Mar\n28\n\n\nURSA Symposium\n\n3 p.m.\u20146 p.m.",
+        "Mar\n29\n\n\nURSA Symposium (online)\n\n10 a.m.\u201412:30 p.m."
+      ]
+    ],
+    "https://catalog.unc.edu/undergraduate/departments/religious-studies/": [
+      [
+        "Home/",
+        "Undergraduate/",
+        "Departments/",
+        "Religious Studies"
+      ],
+      [
+        "Islamic and Middle Eastern Studies Minor",
+        "Jewish Studies Minor",
+        "Religious Studies Minor",
+        "Study of Christianity and Culture Minor"
+      ],
+      [
+        "Introduction",
+        "Advising",
+        "Graduate School and Career Opportunities",
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Adjunct Professors",
+        "Adjunct Associate Professors",
+        "Adjunct Assistant Professor",
+        "Professors Emeriti",
+        "RELI\u2013Religious Studies",
+        "JWST\u2013Jewish Studies",
+        "Print Options"
+      ],
+      [
+        "Undergraduate-level Courses",
+        "Advanced Undergraduate and Graduate-level Courses",
+        "Undergraduate-level Courses",
+        "Advanced Undergraduate and Graduate-level Courses"
+      ],
+      [
+        "Majors",
+        "Minors",
+        "Graduate Programs"
+      ],
+      [
+        "RELI 60.\u00a0\u00a0First-Year Seminar: Religion and Racism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: SS, CI, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 60.",
+        "First-Year Seminar: Religion and Racism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 61.\u00a0\u00a0First-Year Seminar: Religion, Magic, and Science.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-KNOWING or FC-POWER.",
+        "Making Connections Gen Ed: HS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 61.",
+        "First-Year Seminar: Religion, Magic, and Science.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 62.",
+        "First-Year Seminar: A History of Heresy: Christian Dissent from the Gnostics to the Pentecostals.",
+        "3 Credits."
+      ],
+      [
+        "RELI 63.\u00a0\u00a0First-Year Seminar: The Archaeology of Qumran and the Dead Sea Scrolls.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 63.",
+        "First-Year Seminar: The Archaeology of Qumran and the Dead Sea Scrolls.",
+        "3 Credits."
+      ],
+      [
+        "RELI 64.\u00a0\u00a0First-Year Seminar: Reintroducing Islam.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-GLOBAL or FC-KNOWING.",
+        "Making Connections Gen Ed: PH, BN, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 64.",
+        "First-Year Seminar: Reintroducing Islam.",
+        "3 Credits."
+      ],
+      [
+        "RELI 65.\u00a0\u00a0First-Year Seminar: Myth, Philosophy, and Science in the Ancient World.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 65.",
+        "First-Year Seminar: Myth, Philosophy, and Science in the Ancient World.",
+        "3 Credits."
+      ],
+      [
+        "RELI 66.\u00a0\u00a0First-Year Seminar: Buddhism in America: From the Buddha to the Beastie Boys.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 66.",
+        "First-Year Seminar: Buddhism in America: From the Buddha to the Beastie Boys.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-KNOWING or FC-VALUES, RESEARCH.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 67.",
+        "First-Year Seminar: Nature/Culture/Self-Identity: Religion in the Construction of Social Life.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 68.",
+        "FYS: Charisma in Religion, Science, and Poetry Studies in the Entrepreneurial Imagination.",
+        "3 Credits."
+      ],
+      [
+        "RELI 69.\u00a0\u00a0First-Year Seminar: Gender and Sexuality in Contemporary Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 69.",
+        "First-Year Seminar: Gender and Sexuality in Contemporary Judaism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 70.\u00a0\u00a0First-Year Seminar: Jesus in Scholarship and Film.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 70.",
+        "First-Year Seminar: Jesus in Scholarship and Film.",
+        "3 Credits."
+      ],
+      [
+        "RELI 71.\u00a0\u00a0First-Year Seminar: The Spirit of Capitalism.\u00a0\u00a03 Credits.",
+        "Examines scholarly work on the overlap of religion and capitalism.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 71.",
+        "First-Year Seminar: The Spirit of Capitalism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 72.\u00a0\u00a0First-Year Seminar: Apocalypse Now? Messianic Movements in America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 72.",
+        "First-Year Seminar: Apocalypse Now? Messianic Movements in America.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-KNOWING.",
+        "Making Connections Gen Ed: LA, BN, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 73.",
+        "First-Year Seminar: From Dragons to Pokemon: Animals in Japanese Myth, Folklore, and Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 74.\u00a0\u00a0First-Year Seminar: Person, Time, and Religious Conduct.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 74.",
+        "First-Year Seminar: Person, Time, and Religious Conduct.",
+        "3 Credits."
+      ],
+      [
+        "RELI 75.\u00a0\u00a0First-Year Seminar: Sacrifice and Surrender.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 75.",
+        "First-Year Seminar: Sacrifice and Surrender.",
+        "3 Credits."
+      ],
+      [
+        "RELI 76.\u00a0\u00a0First-Year Seminar: Money and Morality: Divining Value in Social Life.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 76.",
+        "First-Year Seminar: Money and Morality: Divining Value in Social Life.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-GLOBAL or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 77.",
+        "First-Year Seminar: Martyrs and Warriors: Religion and the Problem of Violence.",
+        "3 Credits."
+      ],
+      [
+        "RELI 78.\u00a0\u00a0First-Year Seminar: Reading the Bible: Now and Then.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-AESTH or FC-KNOWING.",
+        "Making Connections Gen Ed: LA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 78.",
+        "First-Year Seminar: Reading the Bible: Now and Then.",
+        "3 Credits."
+      ],
+      [
+        "RELI 79.\u00a0\u00a0First-Year Seminar: Human Animals in Religion and Ethics.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 79.",
+        "First-Year Seminar: Human Animals in Religion and Ethics.",
+        "3 Credits."
+      ],
+      [
+        "RELI 80.\u00a0\u00a0First-Year Seminar: Religion and Writing in the Ancient World.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 80.",
+        "First-Year Seminar: Religion and Writing in the Ancient World.",
+        "3 Credits."
+      ],
+      [
+        "RELI 85.\u00a0\u00a0First-Year Seminar: Sex, Marriage, and Family in Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 85.",
+        "First-Year Seminar: Sex, Marriage, and Family in Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 87.\u00a0\u00a0First-Year Seminar: Confessions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-AESTH or FC-KNOWING.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 87.",
+        "First-Year Seminar: Confessions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 88.\u00a0\u00a0First-Year Seminar: Religion and Society in Historical Novels.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Making Connections Gen Ed: LA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 88.",
+        "First-Year Seminar: Religion and Society in Historical Novels.",
+        "3 Credits."
+      ],
+      [
+        "RELI 89.\u00a0\u00a0First-Year Seminar: Special Topics.\u00a0\u00a03 Credits.",
+        "Special topics course.  Content will vary each semester. Honors version available.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 89.",
+        "First-Year Seminar: Special Topics.",
+        "3 Credits."
+      ],
+      [
+        "RELI 101.\u00a0\u00a0Introduction to Religious Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 101.",
+        "Introduction to Religious Studies.",
+        "3 Credits."
+      ],
+      [
+        "RELI 102.\u00a0\u00a0World Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 102.",
+        "World Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 103.\u00a0\u00a0Introduction to the Hebrew Bible/Old Testament Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0103."
+      ],
+      [
+        "RELI 103.",
+        "Introduction to the Hebrew Bible/Old Testament Literature.",
+        "3 Credits."
+      ],
+      [
+        "RELI 104.\u00a0\u00a0Introduction to the New Testament.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 104.",
+        "Introduction to the New Testament.",
+        "3 Credits."
+      ],
+      [
+        "RELI 105.\u00a0\u00a0Religions of the Greco-Roman World.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 105.",
+        "Religions of the Greco-Roman World.",
+        "3 Credits."
+      ],
+      [
+        "RELI 106.\u00a0\u00a0Judaism in the Time of Jesus.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0106."
+      ],
+      [
+        "RELI 106.",
+        "Judaism in the Time of Jesus.",
+        "3 Credits."
+      ],
+      [
+        "RELI 107.\u00a0\u00a0Introduction to Modern Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0107."
+      ],
+      [
+        "RELI 107.",
+        "Introduction to Modern Judaism.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-VALUES.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 108.",
+        "Classic Jewish Texts: From Bible and Dead Sea Scrolls to Kabbalah and Hassidism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 109.\u00a0\u00a0History and Culture of Ancient Israel.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 109.",
+        "History and Culture of Ancient Israel.",
+        "3 Credits."
+      ],
+      [
+        "RELI 110.\u00a0\u00a0The Archaeology of Palestine in the New Testament Period.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: CLAR\u00a0110, JWST\u00a0110."
+      ],
+      [
+        "RELI 110.",
+        "The Archaeology of Palestine in the New Testament Period.",
+        "3 Credits."
+      ],
+      [
+        "RELI 114.\u00a0\u00a0Early Christian Worship, Ritual, and Bodies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 114.",
+        "Early Christian Worship, Ritual, and Bodies.",
+        "3 Credits."
+      ],
+      [
+        "RELI 117.\u00a0\u00a0Culture of the Ancient Near East.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 117.",
+        "Culture of the Ancient Near East.",
+        "3 Credits."
+      ],
+      [
+        "RELI 121.\u00a0\u00a0Introduction to Religion and Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 121.",
+        "Introduction to Religion and Culture.",
+        "3 Credits."
+      ],
+      [
+        "RELI 122.\u00a0\u00a0Introduction to Philosophical Approaches to Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 122.",
+        "Introduction to Philosophical Approaches to Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 123.\u00a0\u00a0Introduction to Jewish Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: HS, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0100."
+      ],
+      [
+        "RELI 123.",
+        "Introduction to Jewish Studies.",
+        "3 Credits."
+      ],
+      [
+        "RELI 125.\u00a0\u00a0Heaven and Hell.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: PH, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 125.",
+        "Heaven and Hell.",
+        "3 Credits."
+      ],
+      [
+        "RELI 126.\u00a0\u00a0Reason, Faith, and God: Philosophy of Western Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: PHIL\u00a0134."
+      ],
+      [
+        "RELI 126.",
+        "Reason, Faith, and God: Philosophy of Western Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 127.\u00a0\u00a0The Claims of Science and Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 127.",
+        "The Claims of Science and Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 130.\u00a0\u00a0Religion and Popular Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 130.",
+        "Religion and Popular Culture.",
+        "3 Credits."
+      ],
+      [
+        "RELI 132.\u00a0\u00a0Religion and Global Justice.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-VALUES.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 132.",
+        "Religion and Global Justice.",
+        "3 Credits."
+      ],
+      [
+        "RELI 134.\u00a0\u00a0Introduction to Religious Ethics.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 134.",
+        "Introduction to Religious Ethics.",
+        "3 Credits."
+      ],
+      [
+        "RELI 135.\u00a0\u00a0Religion, Ethics, and Technology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 135.",
+        "Religion, Ethics, and Technology.",
+        "3 Credits."
+      ],
+      [
+        "RELI 138.\u00a0\u00a0Religious Freedom.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: PH, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 138.",
+        "Religious Freedom.",
+        "3 Credits."
+      ],
+      [
+        "RELI 140.\u00a0\u00a0Religion in America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, NA, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 140.",
+        "Religion in America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 141.\u00a0\u00a0African American Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 141.",
+        "African American Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 142.\u00a0\u00a0Catholicism in America.\u00a0\u00a03 Credits.",
+        "An introduction to Roman Catholicism in the United States.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 142.",
+        "Catholicism in America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 143.\u00a0\u00a0Judaism in Our Time.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0143."
+      ],
+      [
+        "RELI 143.",
+        "Judaism in Our Time.",
+        "3 Credits."
+      ],
+      [
+        "RELI 151.\u00a0\u00a0Religion in Latin America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 151.",
+        "Religion in Latin America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 161.\u00a0\u00a0Introduction to the History of Christian Traditions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 161.",
+        "Introduction to the History of Christian Traditions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 162.\u00a0\u00a0Catholicism Today: An Introduction to the Contemporary Catholic Church.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: HS, BN, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 162.",
+        "Catholicism Today: An Introduction to the Contemporary Catholic Church.",
+        "3 Credits."
+      ],
+      [
+        "RELI 163.\u00a0\u00a0Critical Issues in Western Religious Thought.\u00a0\u00a03 Credits.",
+        "A consideration of major questions concerning religion in modern culture.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-VALUES.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 163.",
+        "Critical Issues in Western Religious Thought.",
+        "3 Credits."
+      ],
+      [
+        "RELI 164.\u00a0\u00a0Heresy and Inquisition: Religion, Ethics, Marginalization.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 164.",
+        "Heresy and Inquisition: Religion, Ethics, Marginalization.",
+        "3 Credits."
+      ],
+      [
+        "RELI 165.\u00a0\u00a0Mysticism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 165.",
+        "Mysticism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 166.\u00a0\u00a0Ideals, Cultures, and Rituals of the University.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 166.",
+        "Ideals, Cultures, and Rituals of the University.",
+        "3 Credits."
+      ],
+      [
+        "RELI 167.\u00a0\u00a0Global Christianity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: HS, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 167.",
+        "Global Christianity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 180.\u00a0\u00a0Introduction to Islamic Civilization.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0180."
+      ],
+      [
+        "RELI 180.",
+        "Introduction to Islamic Civilization.",
+        "3 Credits."
+      ],
+      [
+        "RELI 181.\u00a0\u00a0Modern Muslim Societies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0181."
+      ],
+      [
+        "RELI 181.",
+        "Modern Muslim Societies.",
+        "3 Credits."
+      ],
+      [
+        "RELI 183.\u00a0\u00a0Asian Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-KNOWING.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0183."
+      ],
+      [
+        "RELI 183.",
+        "Asian Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 184.\u00a0\u00a0East Asian Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 184.",
+        "East Asian Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 185.\u00a0\u00a0Women/Gender/Islam.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 185.",
+        "Women/Gender/Islam.",
+        "3 Credits."
+      ],
+      [
+        "RELI 196.\u00a0\u00a0Independent Study.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 6 total credits. 2 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 196.",
+        "Independent Study.",
+        "3 Credits."
+      ],
+      [
+        "RELI 201.\u00a0\u00a0Ancient Biblical Interpretation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-KNOWING.",
+        "Making Connections Gen Ed: LA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 201.",
+        "Ancient Biblical Interpretation.",
+        "3 Credits."
+      ],
+      [
+        "RELI 205.\u00a0\u00a0Sacrifice in the Ancient World.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-KNOWING.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 205.",
+        "Sacrifice in the Ancient World.",
+        "3 Credits."
+      ],
+      [
+        "RELI 206.\u00a0\u00a0Prophecy and Divination in Ancient Israel and Judah.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0206."
+      ],
+      [
+        "RELI 206.",
+        "Prophecy and Divination in Ancient Israel and Judah.",
+        "3 Credits."
+      ],
+      [
+        "RELI 207.\u00a0\u00a0Jesus in the Early Christian Gospels.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: PH, NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 207.",
+        "Jesus in the Early Christian Gospels.",
+        "3 Credits."
+      ],
+      [
+        "RELI 208.\u00a0\u00a0The Birth of Christianity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: HS, NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 208.",
+        "The Birth of Christianity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 209.\u00a0\u00a0Varieties of Early Christianity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: HS, NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 209.",
+        "Varieties of Early Christianity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 211.\u00a0\u00a0Classical Hebrew I:  A Linguistic Introduction to the Hebrew Bible.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0211."
+      ],
+      [
+        "RELI 211.",
+        "Classical Hebrew I:  A Linguistic Introduction to the Hebrew Bible.",
+        "3 Credits."
+      ],
+      [
+        "RELI 212.\u00a0\u00a0Classical Hebrew II: A Linguistic Introduction to the Hebrew Bible.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: LA, BN.",
+        "Requisites: Prerequisite,  RELI\u00a0211.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0212."
+      ],
+      [
+        "RELI 212.",
+        "Classical Hebrew II: A Linguistic Introduction to the Hebrew Bible.",
+        "3 Credits."
+      ],
+      [
+        "RELI 215.\u00a0\u00a0Eastern Christian Cultures: Middle East, Asia, Africa, and Eastern Europe.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 215.",
+        "Eastern Christian Cultures: Middle East, Asia, Africa, and Eastern Europe.",
+        "3 Credits."
+      ],
+      [
+        "RELI 217.\u00a0\u00a0Gnosticism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 217.",
+        "Gnosticism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 218.\u00a0\u00a0Christianity and Islam in the Middle Ages.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, GL, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a0218."
+      ],
+      [
+        "RELI 218.",
+        "Christianity and Islam in the Middle Ages.",
+        "3 Credits."
+      ],
+      [
+        "RELI 220.\u00a0\u00a0Religion and Medicine.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-VALUES.",
+        "Making Connections Gen Ed: PH, CI, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 220.",
+        "Religion and Medicine.",
+        "3 Credits."
+      ],
+      [
+        "RELI 222.\u00a0\u00a0Modern Western Religious Thought.\u00a0\u00a03 Credits.",
+        "Representative themes and approaches in the work of modern Western religious thinkers.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 222.",
+        "Modern Western Religious Thought.",
+        "3 Credits."
+      ],
+      [
+        "RELI 224.\u00a0\u00a0Modern Jewish Thought.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0224."
+      ],
+      [
+        "RELI 224.",
+        "Modern Jewish Thought.",
+        "3 Credits."
+      ],
+      [
+        "RELI 225.\u00a0\u00a0Christian Cultures.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 225.",
+        "Christian Cultures.",
+        "3 Credits."
+      ],
+      [
+        "RELI 226.\u00a0\u00a0Human Animals in Religion and Ethics.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 226.",
+        "Human Animals in Religion and Ethics.",
+        "3 Credits."
+      ],
+      [
+        "RELI 227.\u00a0\u00a0Luther and the Bible.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: GERM\u00a0227."
+      ],
+      [
+        "RELI 227.",
+        "Luther and the Bible.",
+        "3 Credits."
+      ],
+      [
+        "RELI 230.\u00a0\u00a0Judaism and Popular Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0230."
+      ],
+      [
+        "RELI 230.",
+        "Judaism and Popular Culture.",
+        "3 Credits."
+      ],
+      [
+        "RELI 232.\u00a0\u00a0Shrines and Pilgrimages.\u00a0\u00a03 Credits.",
+        "An introduction to the study of shrines and pilgrimage in multiple cultural contexts.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 232.",
+        "Shrines and Pilgrimages.",
+        "3 Credits."
+      ],
+      [
+        "RELI 233.\u00a0\u00a0Religion and Violence.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-VALUES.",
+        "Making Connections Gen Ed: HS, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 233.",
+        "Religion and Violence.",
+        "3 Credits."
+      ],
+      [
+        "RELI 235.\u00a0\u00a0Place, Space, and Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-KNOWING.",
+        "Making Connections Gen Ed: VP.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 235.",
+        "Place, Space, and Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 236.\u00a0\u00a0Religious Things.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-CREATE.",
+        "Making Connections Gen Ed: VP, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 236.",
+        "Religious Things.",
+        "3 Credits."
+      ],
+      [
+        "RELI 239.\u00a0\u00a0German Culture and the Jewish Question.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, GL, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a0270, CMPL\u00a0270, JWST\u00a0239."
+      ],
+      [
+        "RELI 239.",
+        "German Culture and the Jewish Question.",
+        "3 Credits."
+      ],
+      [
+        "RELI 240.\u00a0\u00a0Religion, Literature, and the Arts in America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: LA, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 240.",
+        "Religion, Literature, and the Arts in America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 241.\u00a0\u00a0Messianic Movements in American History.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 241.",
+        "Messianic Movements in American History.",
+        "3 Credits."
+      ],
+      [
+        "RELI 242.\u00a0\u00a0New Religious Movements in America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: SS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 242.",
+        "New Religious Movements in America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 243.\u00a0\u00a0Introduction to American Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0243."
+      ],
+      [
+        "RELI 243.",
+        "Introduction to American Judaism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 244.\u00a0\u00a0Gender and Sexuality in Western Christianity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0244."
+      ],
+      [
+        "RELI 244.",
+        "Gender and Sexuality in Western Christianity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 245.\u00a0\u00a0Latina/o Religions in the United States-Mexico Borderlands.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 245.",
+        "Latina/o Religions in the United States-Mexico Borderlands.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Making Connections Gen Ed: SS, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 246.",
+        "Supernatural Encounters: Zombies, Vampires, Demons, and the Occult in the Americas.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 247.",
+        "Uncertain Truths: Conspiracy Theories, Aliens, and Secret Societies in America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 248.\u00a0\u00a0Introduction to American Islam.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: SS, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 248.",
+        "Introduction to American Islam.",
+        "3 Credits."
+      ],
+      [
+        "RELI 263.\u00a0\u00a0Gender and Religion in Premodern Europe.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0263."
+      ],
+      [
+        "RELI 263.",
+        "Gender and Religion in Premodern Europe.",
+        "3 Credits."
+      ],
+      [
+        "RELI 266.\u00a0\u00a0Medieval and Renaissance Christian Cultures.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 266.",
+        "Medieval and Renaissance Christian Cultures.",
+        "3 Credits."
+      ],
+      [
+        "RELI 270.\u00a0\u00a0Religion in Western Europe.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: EURO\u00a0270."
+      ],
+      [
+        "RELI 270.",
+        "Religion in Western Europe.",
+        "3 Credits."
+      ],
+      [
+        "RELI 279.\u00a0\u00a0Islamic Law, Ethics, and Practice.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-KNOWING.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0279."
+      ],
+      [
+        "RELI 279.",
+        "Islamic Law, Ethics, and Practice.",
+        "3 Credits."
+      ],
+      [
+        "RELI 280.\u00a0\u00a0Hindu Gods and Goddesses.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0280."
+      ],
+      [
+        "RELI 280.",
+        "Hindu Gods and Goddesses.",
+        "3 Credits."
+      ],
+      [
+        "RELI 283.\u00a0\u00a0The Buddhist Tradition: India, Nepal, and Tibet.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0300."
+      ],
+      [
+        "RELI 283.",
+        "The Buddhist Tradition: India, Nepal, and Tibet.",
+        "3 Credits."
+      ],
+      [
+        "RELI 284.\u00a0\u00a0The Buddhist Tradition: East Asia.\u00a0\u00a03 Credits.",
+        "An examination of the development of Buddhism after its importation to East Asia.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0284."
+      ],
+      [
+        "RELI 284.",
+        "The Buddhist Tradition: East Asia.",
+        "3 Credits."
+      ],
+      [
+        "RELI 285.\u00a0\u00a0The Buddhist Tradition: Southeast Asia and Sri Lanka.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: BN, CI.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0285."
+      ],
+      [
+        "RELI 285.",
+        "The Buddhist Tradition: Southeast Asia and Sri Lanka.",
+        "3 Credits."
+      ],
+      [
+        "RELI 286.\u00a0\u00a0Premodern Japanese Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0301."
+      ],
+      [
+        "RELI 286.",
+        "Premodern Japanese Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 287.\u00a0\u00a0Modern Japanese Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: SS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0302."
+      ],
+      [
+        "RELI 287.",
+        "Modern Japanese Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 288.\u00a0\u00a0Chinese Religions.\u00a0\u00a03 Credits.",
+        "Historical introduction to Chinese religions: Confucianism, Daoism, Buddhism, and folk religion.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0303."
+      ],
+      [
+        "RELI 288.",
+        "Chinese Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 289.\u00a0\u00a0Muhammad and the Qur'an.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 289.",
+        "Muhammad and the Qur'an.",
+        "3 Credits."
+      ],
+      [
+        "RELI 314.\u00a0\u00a0Memory and the Historical Jesus.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 314.",
+        "Memory and the Historical Jesus.",
+        "3 Credits."
+      ],
+      [
+        "RELI 315.\u00a0\u00a0Religious Frauds: Lies, Forgeries, and Fake News.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 322.\u00a0\u00a0Theories of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 322.",
+        "Theories of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 323.\u00a0\u00a0Social Theory and Cultural Diversity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 323.",
+        "Social Theory and Cultural Diversity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 324.\u00a0\u00a0Religion and the Human: Interrogating Individuality.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES, RESEARCH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 324.",
+        "Religion and the Human: Interrogating Individuality.",
+        "3 Credits."
+      ],
+      [
+        "RELI 325.\u00a0\u00a0Religion, Magic, and Science.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 325.",
+        "Religion, Magic, and Science.",
+        "3 Credits."
+      ],
+      [
+        "RELI 332.\u00a0\u00a0The Protestant Tradition.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 332.",
+        "The Protestant Tradition.",
+        "3 Credits."
+      ],
+      [
+        "RELI 338.\u00a0\u00a0Religion in American Law.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 338.",
+        "Religion in American Law.",
+        "3 Credits."
+      ],
+      [
+        "RELI 340.\u00a0\u00a0Liberal Tradition in American Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 340.",
+        "Liberal Tradition in American Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 342.\u00a0\u00a0African-American Religious Experience.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: ANTH\u00a0342, FOLK\u00a0342."
+      ],
+      [
+        "RELI 342.",
+        "African-American Religious Experience.",
+        "3 Credits."
+      ],
+      [
+        "RELI 343.\u00a0\u00a0Religion in Modern Israel.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Making Connections Gen Ed: SS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0343."
+      ],
+      [
+        "RELI 343.",
+        "Religion in Modern Israel.",
+        "3 Credits."
+      ],
+      [
+        "RELI 345.\u00a0\u00a0Black Atlantic Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 345.",
+        "Black Atlantic Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 350.\u00a0\u00a0Islamic and Jewish Legal Systems.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 350.",
+        "Islamic and Jewish Legal Systems.",
+        "3 Credits."
+      ],
+      [
+        "RELI 352.\u00a0\u00a0Anthropology of Christianity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-KNOWING.",
+        "Making Connections Gen Ed: GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 352.",
+        "Anthropology of Christianity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 362.\u00a0\u00a0Mary in the Christian Tradition.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0362."
+      ],
+      [
+        "RELI 362.",
+        "Mary in the Christian Tradition.",
+        "3 Credits."
+      ],
+      [
+        "RELI 365.\u00a0\u00a0Studies in Christian Theologies and Theologians.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 365.",
+        "Studies in Christian Theologies and Theologians.",
+        "3 Credits."
+      ],
+      [
+        "RELI 366.\u00a0\u00a0Medieval Religious Texts.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 366.",
+        "Medieval Religious Texts.",
+        "3 Credits."
+      ],
+      [
+        "RELI 367.\u00a0\u00a0The Art of Devotion in Medieval and Early Modern Europe.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: VP, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 367.",
+        "The Art of Devotion in Medieval and Early Modern Europe.",
+        "3 Credits."
+      ],
+      [
+        "RELI 368.\u00a0\u00a0Race, Sexuality, and Disability in the History of Western Christianity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0370."
+      ],
+      [
+        "RELI 368.",
+        "Race, Sexuality, and Disability in the History of Western Christianity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 371.\u00a0\u00a0Women Mystics.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0371."
+      ],
+      [
+        "RELI 371.",
+        "Women Mystics.",
+        "3 Credits."
+      ],
+      [
+        "RELI 375.\u00a0\u00a0Archaeology of Cult.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: CLAR\u00a0375."
+      ],
+      [
+        "RELI 375.",
+        "Archaeology of Cult.",
+        "3 Credits."
+      ],
+      [
+        "RELI 381.\u00a0\u00a0Religions of South Asia.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0381."
+      ],
+      [
+        "RELI 381.",
+        "Religions of South Asia.",
+        "3 Credits."
+      ],
+      [
+        "RELI 382.",
+        "The Story of Rama in Indian Culture--Experiential.",
+        "3 Credits."
+      ],
+      [
+        "RELI 383.\u00a0\u00a0The Mahabharata: Remembered and Reimagined--Experiential.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: LA, BN, EE- Performing Arts.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0383."
+      ],
+      [
+        "RELI 383.",
+        "The Mahabharata: Remembered and Reimagined--Experiential.",
+        "3 Credits."
+      ],
+      [
+        "RELI 384.\u00a0\u00a0Religion and Globalization in Southeast Asia.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0384."
+      ],
+      [
+        "RELI 384.",
+        "Religion and Globalization in Southeast Asia.",
+        "3 Credits."
+      ],
+      [
+        "RELI 385.\u00a0\u00a0Modern Muslims and the Qur'an.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 385.",
+        "Modern Muslims and the Qur'an.",
+        "3 Credits."
+      ],
+      [
+        "RELI 386.\u00a0\u00a0Dance and Embodied Knowledge in the Indian Context.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: VP, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0386, COMM\u00a0386."
+      ],
+      [
+        "RELI 386.",
+        "Dance and Embodied Knowledge in the Indian Context.",
+        "3 Credits."
+      ],
+      [
+        "RELI 387.",
+        "Disciplining the Body and Mind: The Martial Arts of East Asia in Religion, History, and Culture.",
+        "3 Credits."
+      ],
+      [
+        "RELI 390.\u00a0\u00a0Topics in the Study of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 390.",
+        "Topics in the Study of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 401.\u00a0\u00a0Introductory Biblical Hebrew I.\u00a0\u00a03 Credits.",
+        "The first part of a two-semester introduction to the grammar of biblical Hebrew.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: FL.",
+        "Grading Status: Letter grade.",
+        "Global Language: Level 1."
+      ],
+      [
+        "RELI 401.",
+        "Introductory Biblical Hebrew I.",
+        "3 Credits."
+      ],
+      [
+        "RELI 402.\u00a0\u00a0Introductory Biblical Hebrew II.\u00a0\u00a03 Credits.",
+        "The second part of a two-semester introduction to the grammar of biblical Hebrew.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: FL.",
+        "Grading Status: Letter grade.",
+        "Global Language: Level 2."
+      ],
+      [
+        "RELI 402.",
+        "Introductory Biblical Hebrew II.",
+        "3 Credits."
+      ],
+      [
+        "RELI 403.\u00a0\u00a0Intermediate Classical Hebrew I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0GLBL-LANG.",
+        "Making Connections Gen Ed: FL.",
+        "Grading Status: Letter grade.",
+        "Global Language: Level 3."
+      ],
+      [
+        "RELI 403.",
+        "Intermediate Classical Hebrew I.",
+        "3 Credits."
+      ],
+      [
+        "RELI 404.\u00a0\u00a0Intermediate Classical Hebrew II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: FL.",
+        "Grading Status: Letter grade.",
+        "Global Language: Level 4."
+      ],
+      [
+        "RELI 404.",
+        "Intermediate Classical Hebrew II.",
+        "3 Credits."
+      ],
+      [
+        "RELI 409.\u00a0\u00a0Greek New Testament.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: GREK\u00a0409.",
+        "Global Language: Level 6."
+      ],
+      [
+        "RELI 409.",
+        "Greek New Testament.",
+        "3 Credits."
+      ],
+      [
+        "RELI 410.\u00a0\u00a0Aramaic/Rabbinic Hebrew.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 410.",
+        "Aramaic/Rabbinic Hebrew.",
+        "3 Credits."
+      ],
+      [
+        "RELI 411.\u00a0\u00a0Advanced Akkadian.\u00a0\u00a03 Credits.",
+        "Readings in literary, epistolary, and juridical texts.",
+        "Rules & Requirements",
+        "Requisites: Prerequisites,  RELI\u00a0403 and 404.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 411.",
+        "Advanced Akkadian.",
+        "3 Credits."
+      ],
+      [
+        "RELI 412.\u00a0\u00a0Ugaritic.\u00a0\u00a03 Credits.",
+        "Readings in the alphabetic texts of Ras Shamra and a study of the elements of Ugaritic grammar.",
+        "Rules & Requirements",
+        "Requisites: Prerequisites,  RELI\u00a0403 and 404.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 412.",
+        "Ugaritic.",
+        "3 Credits."
+      ],
+      [
+        "RELI 413.\u00a0\u00a0Biblical Coptic and Early Egyptian Monasticism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 413.",
+        "Biblical Coptic and Early Egyptian Monasticism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 414.\u00a0\u00a0Syriac.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 414.",
+        "Syriac.",
+        "3 Credits."
+      ],
+      [
+        "RELI 415.\u00a0\u00a0Teaching the Bible in Public Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES, COMMBEYOND.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 415.",
+        "Teaching the Bible in Public Education.",
+        "3 Credits."
+      ],
+      [
+        "RELI 420.\u00a0\u00a0Post-Holocaust Ethics and Theology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0420."
+      ],
+      [
+        "RELI 421.\u00a0\u00a0Religion and Science.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 421.",
+        "Religion and Science.",
+        "3 Credits."
+      ],
+      [
+        "RELI 423.\u00a0\u00a0Ethnicity, Race, and Religion in America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 423.",
+        "Ethnicity, Race, and Religion in America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 424.\u00a0\u00a0Gender Theory and the Study of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0424."
+      ],
+      [
+        "RELI 424.",
+        "Gender Theory and the Study of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 425.\u00a0\u00a0Psychology of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 425.",
+        "Psychology of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 426.\u00a0\u00a0The Sacrifice of Abraham.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 426.",
+        "The Sacrifice of Abraham.",
+        "3 Credits."
+      ],
+      [
+        "RELI 427.\u00a0\u00a0Spirit Possession and Mediumship.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-KNOWING.",
+        "Making Connections Gen Ed: SS, BN.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 427.",
+        "Spirit Possession and Mediumship.",
+        "3 Credits."
+      ],
+      [
+        "RELI 428.\u00a0\u00a0Religion and Anthropology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade.",
+        "Same as: ANTH\u00a0428, FOLK\u00a0428."
+      ],
+      [
+        "RELI 428.",
+        "Religion and Anthropology.",
+        "3 Credits."
+      ],
+      [
+        "RELI 429.\u00a0\u00a0Religion and Society.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0RESEARCH.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade.",
+        "Same as: SOCI\u00a0429."
+      ],
+      [
+        "RELI 429.",
+        "Religion and Society.",
+        "3 Credits."
+      ],
+      [
+        "RELI 430.\u00a0\u00a0Dimensions of Evil.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 430.",
+        "Dimensions of Evil.",
+        "3 Credits."
+      ],
+      [
+        "RELI 438.\u00a0\u00a0Religion, Nature, and Environment.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 438.",
+        "Religion, Nature, and Environment.",
+        "3 Credits."
+      ],
+      [
+        "RELI 441.\u00a0\u00a0Religion in Early America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 441.",
+        "Religion in Early America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 442.\u00a0\u00a0History of Religion in America since 1865.\u00a0\u00a03 Credits.",
+        "An examination of primary sources in the history of American religion since the Civil War.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 442.",
+        "History of Religion in America since 1865.",
+        "3 Credits."
+      ],
+      [
+        "RELI 443.\u00a0\u00a0Evangelicalism in Contemporary America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 443.",
+        "Evangelicalism in Contemporary America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 444.\u00a0\u00a0Gender and Sexuality in Contemporary Judaism.\u00a0\u00a03 Credits.",
+        "The seminar examines the developments in gender roles and in sexuality in contemporary Judaism.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: CI, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0444, WGST\u00a0448."
+      ],
+      [
+        "RELI 444.",
+        "Gender and Sexuality in Contemporary Judaism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 445.\u00a0\u00a0Asian Religions in America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: GL, US.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0445."
+      ],
+      [
+        "RELI 445.",
+        "Asian Religions in America.",
+        "3 Credits."
+      ],
+      [
+        "RELI 446.\u00a0\u00a0Christian-Jewish Relations throughout the Ages.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 446.",
+        "Christian-Jewish Relations throughout the Ages.",
+        "3 Credits."
+      ],
+      [
+        "RELI 448.\u00a0\u00a0Native and Christian: Indigenous Engagements with Christianity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 448.",
+        "Native and Christian: Indigenous Engagements with Christianity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 450.\u00a0\u00a0Sexuality in Jewish Tradition and History.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0450."
+      ],
+      [
+        "RELI 450.",
+        "Sexuality in Jewish Tradition and History.",
+        "3 Credits."
+      ],
+      [
+        "RELI 452.\u00a0\u00a0Documenting Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 452.",
+        "Documenting Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 454.\u00a0\u00a0The Reformation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0454."
+      ],
+      [
+        "RELI 465.\u00a0\u00a0Monotheistic Mysticism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 465.",
+        "Monotheistic Mysticism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 474.\u00a0\u00a0Buddhist Meditation, Mindfulness, and Modernity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: PH, EE- Field Work.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 474.",
+        "Buddhist Meditation, Mindfulness, and Modernity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 480.\u00a0\u00a0Modern Muslim Literatures.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-VALUES.",
+        "Making Connections Gen Ed: LA, BN, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 480.",
+        "Modern Muslim Literatures.",
+        "3 Credits."
+      ],
+      [
+        "RELI 481.\u00a0\u00a0Religion, Fundamentalism, and Nationalism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-VALUES.",
+        "Making Connections Gen Ed: SS, BN, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: PWAD\u00a0481."
+      ],
+      [
+        "RELI 481.",
+        "Religion, Fundamentalism, and Nationalism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 482.\u00a0\u00a0Sex, Gender, and Religion in South Asia.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0482, WGST\u00a0482."
+      ],
+      [
+        "RELI 482.",
+        "Sex, Gender, and Religion in South Asia.",
+        "3 Credits."
+      ],
+      [
+        "RELI 485.\u00a0\u00a0Gender and Sexuality in Islam.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER, RESEARCH.",
+        "Making Connections Gen Ed: BN, CI.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0485."
+      ],
+      [
+        "RELI 485.",
+        "Gender and Sexuality in Islam.",
+        "3 Credits."
+      ],
+      [
+        "RELI 486.\u00a0\u00a0Islam and Feminism/Islamic Feminism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0486."
+      ],
+      [
+        "RELI 486.",
+        "Islam and Feminism/Islamic Feminism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 487.\u00a0\u00a0Mountains, Pilgrimage, and Sacred Places in Japan.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: BN, CI.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0487."
+      ],
+      [
+        "RELI 487.",
+        "Mountains, Pilgrimage, and Sacred Places in Japan.",
+        "3 Credits."
+      ],
+      [
+        "RELI 488.\u00a0\u00a0Shinto in Japanese History.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: BN, CI, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0488."
+      ],
+      [
+        "RELI 488.",
+        "Shinto in Japanese History.",
+        "3 Credits."
+      ],
+      [
+        "RELI 489.\u00a0\u00a0Animals in Japanese Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-KNOWING.",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0489."
+      ],
+      [
+        "RELI 489.",
+        "Animals in Japanese Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 501.\u00a0\u00a0The History of the Bible in Modern Study.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 501.",
+        "The History of the Bible in Modern Study.",
+        "3 Credits."
+      ],
+      [
+        "RELI 502.\u00a0\u00a0Myths and Epics of the Ancient Near East.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: LA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: FOLK\u00a0502."
+      ],
+      [
+        "RELI 502.",
+        "Myths and Epics of the Ancient Near East.",
+        "3 Credits."
+      ],
+      [
+        "RELI 503.\u00a0\u00a0Exploring the Dead Sea Scrolls.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES, RESEARCH.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0503."
+      ],
+      [
+        "RELI 503.",
+        "Exploring the Dead Sea Scrolls.",
+        "3 Credits."
+      ],
+      [
+        "RELI 504.\u00a0\u00a0Readings in Hebrew Bible.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 504.",
+        "Readings in Hebrew Bible.",
+        "3 Credits."
+      ],
+      [
+        "RELI 512.\u00a0\u00a0Ancient Synagogues.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST, RESEARCH.",
+        "Making Connections Gen Ed: VP, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: CLAR\u00a0512, JWST\u00a0512."
+      ],
+      [
+        "RELI 512.",
+        "Ancient Synagogues.",
+        "3 Credits."
+      ],
+      [
+        "RELI 515.\u00a0\u00a0Cultural Histories of the New Testament.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST, RESEARCH.",
+        "Making Connections Gen Ed: LA, WB.",
+        "Repeat Rules: May be repeated for credit. 9 total credits. 3 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 515.",
+        "Cultural Histories of the New Testament.",
+        "3 Credits."
+      ],
+      [
+        "RELI 522.\u00a0\u00a019th-Century Critiques of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 522.",
+        "19th-Century Critiques of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 524.\u00a0\u00a0Ethnographic Approaches to Contemporary Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 524.",
+        "Ethnographic Approaches to Contemporary Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 525.\u00a0\u00a0Seminar in Religion and Literature.\u00a0\u00a03 Credits.",
+        "Seminar topic varies.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 525.",
+        "Seminar in Religion and Literature.",
+        "3 Credits."
+      ],
+      [
+        "RELI 527.\u00a0\u00a0Religious Metaphor and Symbol.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-KNOWING.",
+        "Making Connections Gen Ed: PH, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 527.",
+        "Religious Metaphor and Symbol.",
+        "3 Credits."
+      ],
+      [
+        "RELI 528.\u00a0\u00a0Rituals and Rhetorics of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 528.",
+        "Rituals and Rhetorics of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 530.\u00a0\u00a0Genealogies of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: PH, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 530.",
+        "Genealogies of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 533.\u00a0\u00a0Women, Gender, and Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER, RESEARCH.",
+        "Making Connections Gen Ed: HS, CI.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0533, WGST\u00a0533."
+      ],
+      [
+        "RELI 533.",
+        "Women, Gender, and Judaism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 540.\u00a0\u00a0Mormonism and the American Experience.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 540.",
+        "Mormonism and the American Experience.",
+        "3 Credits."
+      ],
+      [
+        "RELI 541.\u00a0\u00a0Evangelicalism from a Global Perspective.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL, RESEARCH.",
+        "Making Connections Gen Ed: SS, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 541.",
+        "Evangelicalism from a Global Perspective.",
+        "3 Credits."
+      ],
+      [
+        "RELI 542.\u00a0\u00a0Religion and the Counterculture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 542.",
+        "Religion and the Counterculture.",
+        "3 Credits."
+      ],
+      [
+        "RELI 564.\u00a0\u00a0Religion, Race, and Inquisition in the Spanish Empire.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: GL, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0564."
+      ],
+      [
+        "RELI 564.",
+        "Religion, Race, and Inquisition in the Spanish Empire.",
+        "3 Credits."
+      ],
+      [
+        "RELI 565.\u00a0\u00a0Medieval Jews and the Bible.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 565.",
+        "Medieval Jews and the Bible.",
+        "3 Credits."
+      ],
+      [
+        "RELI 566.\u00a0\u00a0Islamic and Jewish Legal Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 566.",
+        "Islamic and Jewish Legal Literature.",
+        "3 Credits."
+      ],
+      [
+        "RELI 569.\u00a0\u00a0Interfaith Marriages and Intimacy in World Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 569.",
+        "Interfaith Marriages and Intimacy in World Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 574.\u00a0\u00a0Chinese World Views.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ANTH\u00a0574, ASIA\u00a0574."
+      ],
+      [
+        "RELI 580.\u00a0\u00a0African American Islam.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES, RESEARCH.",
+        "Making Connections Gen Ed: HS, GL, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 580.",
+        "African American Islam.",
+        "3 Credits."
+      ],
+      [
+        "RELI 581.\u00a0\u00a0Sufism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0581."
+      ],
+      [
+        "RELI 581.",
+        "Sufism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 582.\u00a0\u00a0Islam and Islamic Art in South Asia.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0582."
+      ],
+      [
+        "RELI 582.",
+        "Islam and Islamic Art in South Asia.",
+        "3 Credits."
+      ],
+      [
+        "RELI 583.\u00a0\u00a0Religion and Culture in Iran, 1500-Present.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0583."
+      ],
+      [
+        "RELI 583.",
+        "Religion and Culture in Iran, 1500-Present.",
+        "3 Credits."
+      ],
+      [
+        "RELI 584.\u00a0\u00a0The Qur'an as Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0584."
+      ],
+      [
+        "RELI 584.",
+        "The Qur'an as Literature.",
+        "3 Credits."
+      ],
+      [
+        "RELI 585.\u00a0\u00a0Religion and Culture of Turkey.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 585.",
+        "Religion and Culture of Turkey.",
+        "3 Credits."
+      ],
+      [
+        "RELI 586.\u00a0\u00a0Women and Gender in Japanese Religions.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: SS, BN, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 586.",
+        "Women and Gender in Japanese Religions.",
+        "3 Credits."
+      ],
+      [
+        "RELI 587.\u00a0\u00a0Islam and Sexual Diversity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0587."
+      ],
+      [
+        "RELI 587.",
+        "Islam and Sexual Diversity.",
+        "3 Credits."
+      ],
+      [
+        "RELI 590.\u00a0\u00a0Topics in the Study of Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 590.",
+        "Topics in the Study of Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 592.\u00a0\u00a0Religious Conflict and Literature in India.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: HNUR\u00a0592."
+      ],
+      [
+        "RELI 592.",
+        "Religious Conflict and Literature in India.",
+        "3 Credits."
+      ],
+      [
+        "RELI 602.\u00a0\u00a0What Is Scripture? Formations of the Hebrew Bible/Old Testament Canon.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: LA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: JWST\u00a0602."
+      ],
+      [
+        "RELI 603.\u00a0\u00a0The Bible and Its Translation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 603.",
+        "The Bible and Its Translation.",
+        "3 Credits."
+      ],
+      [
+        "RELI 607.\u00a0\u00a0Problems in Early Christian Literature and History.\u00a0\u00a03 Credits.",
+        "Honors version available.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: NA, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 607.",
+        "Problems in Early Christian Literature and History.",
+        "3 Credits."
+      ],
+      [
+        "RELI 608.\u00a0\u00a0The Messiah and the Apocalypse.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 608.",
+        "The Messiah and the Apocalypse.",
+        "3 Credits."
+      ],
+      [
+        "RELI 609.\u00a0\u00a0Christianity and Greco-Roman Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 609.",
+        "Christianity and Greco-Roman Culture.",
+        "3 Credits."
+      ],
+      [
+        "RELI 614.\u00a0\u00a0The Cult of Saints: Narratives, Materialities, Practices.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST, RESEARCH.",
+        "Making Connections Gen Ed: HS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 614.",
+        "The Cult of Saints: Narratives, Materialities, Practices.",
+        "3 Credits."
+      ],
+      [
+        "RELI 617.\u00a0\u00a0Death and Afterlife in the Ancient World.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: PH, WB.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 617.",
+        "Death and Afterlife in the Ancient World.",
+        "3 Credits."
+      ],
+      [
+        "RELI 620.\u00a0\u00a0Feminism and Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 620.",
+        "Feminism and Religion.",
+        "3 Credits."
+      ],
+      [
+        "RELI 662.\u00a0\u00a0Advanced Seminar in Contemporary Catholicism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 662.",
+        "Advanced Seminar in Contemporary Catholicism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 665.\u00a0\u00a0Body and Suffering in Christian Mysticism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: NA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0664."
+      ],
+      [
+        "RELI 665.",
+        "Body and Suffering in Christian Mysticism.",
+        "3 Credits."
+      ],
+      [
+        "RELI 681.\u00a0\u00a0Readings in Islamicate Literatures.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 6 total credits. 2 total completions.",
+        "Grading Status: Letter grade.",
+        "Same as: ARAB\u00a0681, ASIA\u00a0681."
+      ],
+      [
+        "RELI 681.",
+        "Readings in Islamicate Literatures.",
+        "3 Credits."
+      ],
+      [
+        "RELI 688.\u00a0\u00a0Observation and Interpretation of Religious Action.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, EE- Mentored Research.",
+        "Grading Status: Letter grade.",
+        "Same as: ANTH\u00a0688, FOLK\u00a0688."
+      ],
+      [
+        "RELI 688.",
+        "Observation and Interpretation of Religious Action.",
+        "3 Credits."
+      ],
+      [
+        "RELI 691H.",
+        "Honors in Religious Studies.",
+        "3 Credits."
+      ],
+      [
+        "RELI 692H.",
+        "Honors in Religious Studies.",
+        "3 Credits."
+      ],
+      [
+        "RELI 696.\u00a0\u00a0Independent Study.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 696.",
+        "Independent Study.",
+        "3 Credits."
+      ],
+      [
+        "RELI 697.\u00a0\u00a0Capstone: Undergraduate Seminar.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "RELI 697.",
+        "Capstone: Undergraduate Seminar.",
+        "3 Credits."
+      ],
+      [
+        "JWST 56.\u00a0\u00a0First-Year Seminar: Germans, Jews, and the History of Anti-Semitism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: HS, CI, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a056."
+      ],
+      [
+        "JWST 56.",
+        "First-Year Seminar: Germans, Jews, and the History of Anti-Semitism.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: BN.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a060."
+      ],
+      [
+        "JWST 60.",
+        "First-Year Seminar: Israeli Culture and Society: Collective Memories and Fragmented Identities.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR, FC-AESTH or FC-PAST.",
+        "Grading Status: Letter grade.",
+        "Same as: ROML\u00a070."
+      ],
+      [
+        "JWST 70.",
+        "First-Year Seminar: Jewish Spain: History and Culture Across the Hispanic World.",
+        "3 Credits."
+      ],
+      [
+        "JWST 89.\u00a0\u00a0First-Year Seminar: Special Topics.\u00a0\u00a03 Credits.",
+        "Special topics course. Content will vary by each semester.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "JWST 89.",
+        "First-Year Seminar: Special Topics.",
+        "3 Credits."
+      ],
+      [
+        "JWST 100.\u00a0\u00a0Introduction to Jewish Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: HS, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0123."
+      ],
+      [
+        "JWST 100.",
+        "Introduction to Jewish Studies.",
+        "3 Credits."
+      ],
+      [
+        "JWST 101.\u00a0\u00a0Elementary Modern Hebrew I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: FL.",
+        "Grading Status: Letter grade.",
+        "Same as: HEBR\u00a0101.",
+        "Global Language: Level 1."
+      ],
+      [
+        "JWST 101.",
+        "Elementary Modern Hebrew I.",
+        "3 Credits."
+      ],
+      [
+        "JWST 102.\u00a0\u00a0Elementary Modern Hebrew II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: FL.",
+        "Requisites: Prerequisite,  HEBR\u00a0101.",
+        "Grading Status: Letter grade.",
+        "Same as: HEBR\u00a0102.",
+        "Global Language: Level 2."
+      ],
+      [
+        "JWST 102.",
+        "Elementary Modern Hebrew II.",
+        "3 Credits."
+      ],
+      [
+        "JWST 103.\u00a0\u00a0Introduction to the Hebrew Bible/Old Testament Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0103."
+      ],
+      [
+        "JWST 103.",
+        "Introduction to the Hebrew Bible/Old Testament Literature.",
+        "3 Credits."
+      ],
+      [
+        "JWST 106.\u00a0\u00a0Judaism in the Time of Jesus.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0106."
+      ],
+      [
+        "JWST 106.",
+        "Judaism in the Time of Jesus.",
+        "3 Credits."
+      ],
+      [
+        "JWST 107.\u00a0\u00a0Introduction to Modern Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0107."
+      ],
+      [
+        "JWST 107.",
+        "Introduction to Modern Judaism.",
+        "3 Credits."
+      ],
+      [
+        "JWST 110.\u00a0\u00a0The Archaeology of Palestine in the New Testament Period.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0110, CLAR\u00a0110."
+      ],
+      [
+        "JWST 110.",
+        "The Archaeology of Palestine in the New Testament Period.",
+        "3 Credits."
+      ],
+      [
+        "JWST 143.\u00a0\u00a0Judaism in Our Time.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0143."
+      ],
+      [
+        "JWST 143.",
+        "Judaism in Our Time.",
+        "3 Credits."
+      ],
+      [
+        "JWST 153.\u00a0\u00a0From the Bible to Broadway: Jewish History to Modern Times.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0153."
+      ],
+      [
+        "JWST 153.",
+        "From the Bible to Broadway: Jewish History to Modern Times.",
+        "3 Credits."
+      ],
+      [
+        "JWST 203.\u00a0\u00a0Intermediate Modern Hebrew I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0GLBL-LANG.",
+        "Making Connections Gen Ed: FL.",
+        "Requisites: Prerequisite,  HEBR\u00a0102.",
+        "Grading Status: Letter grade.",
+        "Same as: HEBR\u00a0203.",
+        "Global Language: Level 3."
+      ],
+      [
+        "JWST 203.",
+        "Intermediate Modern Hebrew I.",
+        "3 Credits."
+      ],
+      [
+        "JWST 204.\u00a0\u00a0Intermediate Modern Hebrew II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: FL.",
+        "Requisites: Prerequisite,  HEBR\u00a0203.",
+        "Grading Status: Letter grade.",
+        "Same as: HEBR\u00a0204.",
+        "Global Language: Level 4."
+      ],
+      [
+        "JWST 204.",
+        "Intermediate Modern Hebrew II.",
+        "3 Credits."
+      ],
+      [
+        "JWST 206.\u00a0\u00a0Prophecy and Divination in Ancient Israel and Judah.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0206."
+      ],
+      [
+        "JWST 206.",
+        "Prophecy and Divination in Ancient Israel and Judah.",
+        "3 Credits."
+      ],
+      [
+        "JWST 211.\u00a0\u00a0Classical Hebrew I:  A Linguistic Introduction to the Hebrew Bible.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0211."
+      ],
+      [
+        "JWST 211.",
+        "Classical Hebrew I:  A Linguistic Introduction to the Hebrew Bible.",
+        "3 Credits."
+      ],
+      [
+        "JWST 212.\u00a0\u00a0Classical Hebrew II: A Linguistic Introduction to the Hebrew Bible.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: LA, BN.",
+        "Requisites: Prerequisite,  RELI\u00a0211.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0212."
+      ],
+      [
+        "JWST 212.",
+        "Classical Hebrew II: A Linguistic Introduction to the Hebrew Bible.",
+        "3 Credits."
+      ],
+      [
+        "JWST 224.\u00a0\u00a0Modern Jewish Thought.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0224."
+      ],
+      [
+        "JWST 224.",
+        "Modern Jewish Thought.",
+        "3 Credits."
+      ],
+      [
+        "JWST 225.\u00a0\u00a0Popular and Pious: Early Modern Jewish Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES.",
+        "Making Connections Gen Ed: LA, NA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a0225."
+      ],
+      [
+        "JWST 225.",
+        "Popular and Pious: Early Modern Jewish Literature.",
+        "3 Credits."
+      ],
+      [
+        "JWST 230.\u00a0\u00a0Judaism and Popular Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0230."
+      ],
+      [
+        "JWST 230.",
+        "Judaism and Popular Culture.",
+        "3 Credits."
+      ],
+      [
+        "JWST 235.\u00a0\u00a0Israeli Cinema: Gender, Nation, and Ethnicity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH.",
+        "Making Connections Gen Ed: VP, BN, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0235, PWAD\u00a0235."
+      ],
+      [
+        "JWST 235.",
+        "Israeli Cinema: Gender, Nation, and Ethnicity.",
+        "3 Credits."
+      ],
+      [
+        "JWST 239.\u00a0\u00a0German Culture and the Jewish Question.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, GL, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a0270, CMPL\u00a0270, RELI\u00a0239."
+      ],
+      [
+        "JWST 239.",
+        "German Culture and the Jewish Question.",
+        "3 Credits."
+      ],
+      [
+        "JWST 243.\u00a0\u00a0Introduction to American Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0243."
+      ],
+      [
+        "JWST 243.",
+        "Introduction to American Judaism.",
+        "3 Credits."
+      ],
+      [
+        "JWST 251.\u00a0\u00a0The Jewish American Experience.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Grading Status: Letter grade.",
+        "Same as: AMST\u00a0251."
+      ],
+      [
+        "JWST 251.",
+        "The Jewish American Experience.",
+        "3 Credits."
+      ],
+      [
+        "JWST 253.\u00a0\u00a0A Social History of Jewish Women in America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: HS, NA, US.",
+        "Grading Status: Letter grade.",
+        "Same as: AMST\u00a0253, WGST\u00a0253."
+      ],
+      [
+        "JWST 253.",
+        "A Social History of Jewish Women in America.",
+        "3 Credits."
+      ],
+      [
+        "JWST 262.\u00a0\u00a0History of the Holocaust: The Destruction of the European Jews.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: HS, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0262, PWAD\u00a0262."
+      ],
+      [
+        "JWST 262.",
+        "History of the Holocaust: The Destruction of the European Jews.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a0268."
+      ],
+      [
+        "JWST 269.\u00a0\u00a0Springtime for Hitler: Jews on Stage from Shakespeare to Mel Brooks.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: VP, CI, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a0269, CMPL\u00a0269."
+      ],
+      [
+        "JWST 269.",
+        "Springtime for Hitler: Jews on Stage from Shakespeare to Mel Brooks.",
+        "3 Credits."
+      ],
+      [
+        "JWST 274.\u00a0\u00a0Representing the Holocaust: Mediating Trauma in Art and Theory.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-KNOWING.",
+        "Grading Status: Letter grade.",
+        "Same as: GERM\u00a0274."
+      ],
+      [
+        "JWST 274.",
+        "Representing the Holocaust: Mediating Trauma in Art and Theory.",
+        "3 Credits."
+      ],
+      [
+        "JWST 289.\u00a0\u00a0Jewish American Literature and Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH.",
+        "Grading Status: Letter grade.",
+        "Same as: AMST\u00a0289, ENGL\u00a0289."
+      ],
+      [
+        "JWST 289.",
+        "Jewish American Literature and Culture.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Requisites: Prerequisite,  HEBR\u00a0204.",
+        "Grading Status: Letter grade.",
+        "Same as: HEBR\u00a0305.",
+        "Global Language: Level 5."
+      ],
+      [
+        "JWST 305.",
+        "Advanced Composition and Conversation: Immigration, Ethnicities, and Religious Traditions.",
+        "3 Credits."
+      ],
+      [
+        "JWST 306.\u00a0\u00a0Advanced Composition and Conversation: Zionism and the Hebrew Language.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Requisites: Prerequisite,  HEBR\u00a0204.",
+        "Grading Status: Letter grade.",
+        "Same as: HEBR\u00a0306.",
+        "Global Language: Level 6."
+      ],
+      [
+        "JWST 306.",
+        "Advanced Composition and Conversation: Zionism and the Hebrew Language.",
+        "3 Credits."
+      ],
+      [
+        "JWST 308.\u00a0\u00a0The Renaissance and the Jews.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0308."
+      ],
+      [
+        "JWST 308.",
+        "The Renaissance and the Jews.",
+        "3 Credits."
+      ],
+      [
+        "JWST 311.\u00a0\u00a0Ghettos and Shtetls? Urban Life in East European Jewish History.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0311."
+      ],
+      [
+        "JWST 311.",
+        "Ghettos and Shtetls? Urban Life in East European Jewish History.",
+        "3 Credits."
+      ],
+      [
+        "JWST 330.\u00a0\u00a0Jesus and the Jews: From the Bible to the Big Screen.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0330."
+      ],
+      [
+        "JWST 330.",
+        "Jesus and the Jews: From the Bible to the Big Screen.",
+        "3 Credits."
+      ],
+      [
+        "JWST 343.\u00a0\u00a0Religion in Modern Israel.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Making Connections Gen Ed: SS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0343."
+      ],
+      [
+        "JWST 343.",
+        "Religion in Modern Israel.",
+        "3 Credits."
+      ],
+      [
+        "JWST 358.\u00a0\u00a0Religion and Tradition in Israeli Cinema, TV, and Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER, RESEARCH.",
+        "Making Connections Gen Ed: LA, BN, CI.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0358."
+      ],
+      [
+        "JWST 358.",
+        "Religion and Tradition in Israeli Cinema, TV, and Literature.",
+        "3 Credits."
+      ],
+      [
+        "JWST 360.\u00a0\u00a0The Jewish Writer in American Life.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, NA, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "JWST 360.",
+        "The Jewish Writer in American Life.",
+        "3 Credits."
+      ],
+      [
+        "JWST 390.\u00a0\u00a0Special Topics in Jewish Studies.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "JWST 390.",
+        "Special Topics in Jewish Studies.",
+        "1 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: PLSH\u00a0412."
+      ],
+      [
+        "JWST 412.",
+        "From Communism to Capitalism: 20th- and 21st-Century Polish Literature and Culture.",
+        "3 Credits."
+      ],
+      [
+        "JWST 420.\u00a0\u00a0Post-Holocaust Ethics and Theology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER or FC-VALUES.",
+        "Making Connections Gen Ed: PH, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0420."
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0425, PWAD\u00a0425."
+      ],
+      [
+        "JWST 425.",
+        "Beyond Hostilities: Israeli-Palestinian Exchanges and Partnerships in Film, Literature, and Music.",
+        "3 Credits."
+      ],
+      [
+        "JWST 436.\u00a0\u00a0Language, Exile, and Homeland in Zionist Thought and Practice.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0436."
+      ],
+      [
+        "JWST 444.\u00a0\u00a0Gender and Sexuality in Contemporary Judaism.\u00a0\u00a03 Credits.",
+        "The seminar examines the developments in gender roles and in sexuality in contemporary Judaism.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: CI, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0444, WGST\u00a0448."
+      ],
+      [
+        "JWST 444.",
+        "Gender and Sexuality in Contemporary Judaism.",
+        "3 Credits."
+      ],
+      [
+        "JWST 462.\u00a0\u00a0The Arab-Jews: Culture, Community, and Coexistence.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-POWER.",
+        "Making Connections Gen Ed: BN, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: ASIA\u00a0462, PWAD\u00a0462."
+      ],
+      [
+        "JWST 462.",
+        "The Arab-Jews: Culture, Community, and Coexistence.",
+        "3 Credits."
+      ],
+      [
+        "JWST 464.\u00a0\u00a0Imagined Jews: Jewish Themes in Polish and Russian Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: SLAV\u00a0464."
+      ],
+      [
+        "JWST 464.",
+        "Imagined Jews: Jewish Themes in Polish and Russian Literature.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, BN, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: GSLL\u00a0465, PWAD\u00a0465."
+      ],
+      [
+        "JWST 465.",
+        "Literature of Atrocity: The Gulag and the Holocaust in the Soviet Union and Eastern Europe.",
+        "3 Credits."
+      ],
+      [
+        "JWST 469.\u00a0\u00a0Coming to America: The Slavic Immigrant Experience in Literature.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, GL.",
+        "Grading Status: Letter grade.",
+        "Same as: SLAV\u00a0469."
+      ],
+      [
+        "JWST 469.",
+        "Coming to America: The Slavic Immigrant Experience in Literature.",
+        "3 Credits."
+      ],
+      [
+        "JWST 472.\u00a0\u00a0Traditions in Transition: Jewish Folklore and Ethnography.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-KNOWING, RESEARCH.",
+        "Making Connections Gen Ed: VP, EE- Field Work, US.",
+        "Grading Status: Letter grade.",
+        "Same as: FOLK\u00a0472."
+      ],
+      [
+        "JWST 472.",
+        "Traditions in Transition: Jewish Folklore and Ethnography.",
+        "3 Credits."
+      ],
+      [
+        "JWST 476.\u00a0\u00a0Religion and Ethnicity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0476."
+      ],
+      [
+        "JWST 476.",
+        "Religion and Ethnicity.",
+        "3 Credits."
+      ],
+      [
+        "JWST 480.\u00a0\u00a0Russian-Soviet Jewish Culture: Lofty Dreams and Stark Realities.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST.",
+        "Making Connections Gen Ed: LA, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: RUSS\u00a0480."
+      ],
+      [
+        "JWST 480.",
+        "Russian-Soviet Jewish Culture: Lofty Dreams and Stark Realities.",
+        "3 Credits."
+      ],
+      [
+        "JWST 481.\u00a0\u00a0Jewish Belonging/s: The Material Culture of Jewish Experience.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-CREATE, RESEARCH.",
+        "Making Connections Gen Ed: VP, EE- Field Work, US.",
+        "Grading Status: Letter grade.",
+        "Same as: FOLK\u00a0481."
+      ],
+      [
+        "JWST 481.",
+        "Jewish Belonging/s: The Material Culture of Jewish Experience.",
+        "3 Credits."
+      ],
+      [
+        "Rules & Requirements",
+        "Making Connections Gen Ed: HS, BN.",
+        "Grading Status: Letter grade.",
+        "Same as: HIST\u00a0485."
+      ],
+      [
+        "JWST 485.",
+        "From Fiddler on the Roof to the Holocaust: East European and Soviet Jewish History.",
+        "3 Credits."
+      ],
+      [
+        "JWST 486.\u00a0\u00a0The Jewish South: Race, Region, and Religion.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-POWER.",
+        "Making Connections Gen Ed: HS, CI, US.",
+        "Grading Status: Letter grade.",
+        "Same as: AMST\u00a0486."
+      ],
+      [
+        "JWST 486.",
+        "The Jewish South: Race, Region, and Religion.",
+        "3 Credits."
+      ],
+      [
+        "JWST 503.\u00a0\u00a0Exploring the Dead Sea Scrolls.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST or FC-VALUES, RESEARCH.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0503."
+      ],
+      [
+        "JWST 503.",
+        "Exploring the Dead Sea Scrolls.",
+        "3 Credits."
+      ],
+      [
+        "JWST 512.\u00a0\u00a0Ancient Synagogues.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-GLOBAL or FC-PAST, RESEARCH.",
+        "Making Connections Gen Ed: VP, BN, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0512, CLAR\u00a0512."
+      ],
+      [
+        "JWST 512.",
+        "Ancient Synagogues.",
+        "3 Credits."
+      ],
+      [
+        "JWST 533.\u00a0\u00a0Women, Gender, and Judaism.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER, RESEARCH.",
+        "Making Connections Gen Ed: HS, CI.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0533, WGST\u00a0533."
+      ],
+      [
+        "JWST 533.",
+        "Women, Gender, and Judaism.",
+        "3 Credits."
+      ],
+      [
+        "JWST 556.\u00a0\u00a0Language Remains: Exploring the German-Jewish Dialogue.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-POWER.",
+        "Making Connections Gen Ed: LA, NA.",
+        "Grading Status: Letter grade.",
+        "Same as: GERM\u00a0556."
+      ],
+      [
+        "JWST 556.",
+        "Language Remains: Exploring the German-Jewish Dialogue.",
+        "3 Credits."
+      ],
+      [
+        "JWST 602.\u00a0\u00a0What Is Scripture? Formations of the Hebrew Bible/Old Testament Canon.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-PAST.",
+        "Making Connections Gen Ed: LA, WB.",
+        "Grading Status: Letter grade.",
+        "Same as: RELI\u00a0602."
+      ],
+      [
+        "JWST 640.\u00a0\u00a0Topics in Hispanic Jewish Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: SPAN\u00a0640."
+      ],
+      [
+        "JWST 640.",
+        "Topics in Hispanic Jewish Studies.",
+        "3 Credits."
+      ],
+      [
+        "JWST 697.\u00a0\u00a0Capstone Course:  Themes and Methodologies in Jewish Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: CI.",
+        "Repeat Rules: May be repeated for credit. 6 total credits. 2 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "JWST 697.",
+        "Capstone Course:  Themes and Methodologies in Jewish Studies.",
+        "3 Credits."
+      ],
+      [
+        "Department of Religious Studies",
+        "Visit Program Website",
+        "125 Carolina Hall, CB# 3225",
+        "(919) 962-5666"
+      ],
+      [
+        "Director of Undergraduate Studies",
+        "Brandon Bayne",
+        "bayne@unc.edu"
+      ]
+    ],
+    "https://religion.rutgers.edu/academics/graduate/program-information": [
+      [
+        "MA Program",
+        "Connect with Rutgers",
+        "Explore SAS",
+        "Notices"
+      ],
+      [
+        "1. M.A. in Religious Studies",
+        "2. Certificate Programs",
+        "3. Dual Degree B.A./M.A. (4+1) Program"
+      ]
+    ],
+    "https://liberalarts.du.edu/religious-studies": [
+      [
+        "Religious Studies Graduate Certificate",
+        "World Religions Specialized Graduate Certificate",
+        "Religion & International Affairs Graduate Certificate"
+      ],
+      [
+        "Programs in Religious Studies",
+        "Career Development",
+        "Featured Courses"
+      ],
+      [
+        "Undergraduates",
+        "Graduates",
+        "General Inquiries",
+        "Undergraduates",
+        "Graduates",
+        "Undergraduates",
+        "Graduates",
+        "Undergraduates",
+        "MA Students",
+        "Global MA Program",
+        "Joint PhD Students",
+        "Graduate Certificates",
+        "Explore Our Graduate Certificates",
+        "RLGS 3760 Globalization and Religion: Theory and Methods",
+        "RLGS 3694 Religion in the Virtual Space: A Critical Theory Approach",
+        "RLGS 3500 Islam"
+      ],
+      [
+        "Programs in Religious Studies",
+        "Career Development",
+        "Featured Courses"
+      ]
+    ],
+    "https://www.scu.edu/cas/religious-studies/": [
+      [
+        "Associate Professor",
+        "James B. Bennett",
+        "American Religious History"
+      ],
+      [
+        "Academic Department Manager",
+        "Vicky Gonzalez",
+        "408-554-4547 | Kenna Hall 323F"
+      ]
+    ],
+    "https://www.bu.edu/religion/academics/graduate-program/": [
+      [
+        "Who We Are",
+        "Interdisciplinary Approaches",
+        "Our Vision"
+      ]
+    ],
+    "https://www.stjohns.edu/offices-departments/theology-and-religious-studies": [
+      [
+        "THE 1000C Perspectives on Christianity: A Catholic Approach",
+        "School of Education: THE 2200 The Mystery of Triune God",
+        "THE 2200 The Mystery of Triune God",
+        "THE 2205 Jesus in Christian Faith",
+        "THE 2210 Perspectives on the Church",
+        "THE 2215 Christian Worship and Sacraments",
+        "THE 2300 Introduction to Christian Ethics",
+        "THE 2320 Introduction to Catholic Social Teaching",
+        "THE 2400 Christian Spirituality and Mysticism",
+        "THE 2501; 2502 History of Christian Theology I; II",
+        "College of Pharmacy and Health Sciences: Any 2000-level Theology and Religious Studies course",
+        "College of Professional Studies: THE 2300 Introduction to Christian Ethics",
+        "School of Education: THE 3400 Spirituality of the Educator",
+        "The Peter J. Tobin College of Business: THE 3305 Moral Theology of the Marketplace",
+        "College of Pharmacy and Health Sciences: THE 3300 Moral Theology of Healthcare",
+        "College of Professional Studies: Any 3000-level Theology and Religious Studies course"
+      ],
+      [
+        "School of Education: THE 2200 The Mystery of Triune God",
+        "THE 2200 The Mystery of Triune God",
+        "THE 2205 Jesus in Christian Faith",
+        "THE 2210 Perspectives on the Church",
+        "THE 2215 Christian Worship and Sacraments",
+        "THE 2300 Introduction to Christian Ethics",
+        "THE 2320 Introduction to Catholic Social Teaching",
+        "THE 2400 Christian Spirituality and Mysticism",
+        "THE 2501; 2502 History of Christian Theology I; II",
+        "College of Pharmacy and Health Sciences: Any 2000-level Theology and Religious Studies course",
+        "College of Professional Studies: THE 2300 Introduction to Christian Ethics"
+      ],
+      [
+        "THE 2200 The Mystery of Triune God",
+        "THE 2205 Jesus in Christian Faith",
+        "THE 2210 Perspectives on the Church",
+        "THE 2215 Christian Worship and Sacraments",
+        "THE 2300 Introduction to Christian Ethics",
+        "THE 2320 Introduction to Catholic Social Teaching",
+        "THE 2400 Christian Spirituality and Mysticism",
+        "THE 2501; 2502 History of Christian Theology I; II"
+      ],
+      [
+        "School of Education: THE 3400 Spirituality of the Educator",
+        "The Peter J. Tobin College of Business: THE 3305 Moral Theology of the Marketplace",
+        "College of Pharmacy and Health Sciences: THE 3300 Moral Theology of Healthcare",
+        "College of Professional Studies: Any 3000-level Theology and Religious Studies course"
+      ],
+      [
+        "THE 2700 Introduction to Eastern Orthodoxy",
+        "THE 2710 Introduction to Protestantism",
+        "THE 2810 Introduction to World Religions",
+        "THE 2820 Introduction to Judaism",
+        "THE 2830 Introduction to Hinduism",
+        "THE 2840 Introduction to Buddhism",
+        "THE 2850 Introduction to Islam"
+      ],
+      [
+        "THE 1000C Perspectives on Christianity: A Catholic Approach",
+        "School of Education: THE 2200 The Mystery of Triune God",
+        "THE 2200 The Mystery of Triune God",
+        "THE 2205 Jesus in Christian Faith",
+        "THE 2210 Perspectives on the Church",
+        "THE 2215 Christian Worship and Sacraments",
+        "THE 2300 Introduction to Christian Ethics",
+        "THE 2320 Introduction to Catholic Social Teaching",
+        "THE 2400 Christian Spirituality and Mysticism",
+        "THE 2501; 2502 History of Christian Theology I; II",
+        "College of Pharmacy and Health Sciences: Any 2000-level Theology and Religious Studies course",
+        "College of Professional Studies: THE 2300 Introduction to Christian Ethics",
+        "School of Education: THE 3400 Spirituality of the Educator",
+        "The Peter J. Tobin College of Business: THE 3305 Theological Ethics of the Marketplace",
+        "College of Pharmacy and Health Sciences: THE 3300 Theological Ethics and Ecology",
+        "College of Professional Studies: Any 3000-level Theology and Religious Studies course"
+      ],
+      [
+        "School of Education: THE 2200 The Mystery of Triune God",
+        "THE 2200 The Mystery of Triune God",
+        "THE 2205 Jesus in Christian Faith",
+        "THE 2210 Perspectives on the Church",
+        "THE 2215 Christian Worship and Sacraments",
+        "THE 2300 Introduction to Christian Ethics",
+        "THE 2320 Introduction to Catholic Social Teaching",
+        "THE 2400 Christian Spirituality and Mysticism",
+        "THE 2501; 2502 History of Christian Theology I; II",
+        "College of Pharmacy and Health Sciences: Any 2000-level Theology and Religious Studies course",
+        "College of Professional Studies: THE 2300 Introduction to Christian Ethics"
+      ],
+      [
+        "THE 2200 The Mystery of Triune God",
+        "THE 2205 Jesus in Christian Faith",
+        "THE 2210 Perspectives on the Church",
+        "THE 2215 Christian Worship and Sacraments",
+        "THE 2300 Introduction to Christian Ethics",
+        "THE 2320 Introduction to Catholic Social Teaching",
+        "THE 2400 Christian Spirituality and Mysticism",
+        "THE 2501; 2502 History of Christian Theology I; II"
+      ],
+      [
+        "School of Education: THE 3400 Spirituality of the Educator",
+        "The Peter J. Tobin College of Business: THE 3305 Theological Ethics of the Marketplace",
+        "College of Pharmacy and Health Sciences: THE 3300 Theological Ethics and Ecology",
+        "College of Professional Studies: Any 3000-level Theology and Religious Studies course"
+      ],
+      [
+        "Interfaith Studies",
+        "Theology and Religious Studies",
+        "Catholic Studies (Interdisciplinary Minor)",
+        "Social Justice: Theory and Practice in the Vincentian Tradition (Interdisciplinary Minor)",
+        "Meghan J. Clark",
+        "Francis D. Connolly-Weinert",
+        "Jeremy V. Cruz",
+        "Teresa Delgado, Ph.D.",
+        "Michael Dempsey",
+        "Christopher D. Denny",
+        "John J. Fitzgerald",
+        "Rev. Patrick Flanagan, C.M.",
+        "David W. Haddorff",
+        "Joann Heaney-Hunter",
+        "Erin Kidd",
+        "Mark Kiley",
+        "Paul D. Molnar",
+        "Habibeh Rahim",
+        "Robert (Bobby) J. Rivera",
+        "Rev. Jean-Pierre Ruiz",
+        "Matthew Lewis Sutton",
+        "Christopher P. Vogt",
+        "Michele Watkins"
+      ],
+      [
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department",
+        "Department"
+      ],
+      [
+        "Meghan J. Clark",
+        "Professor, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Chair",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Francis D. Connolly-Weinert",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Jeremy V. Cruz",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Teresa Delgado, Ph.D.",
+        "Dean and Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Michael Dempsey",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Christopher D. Denny",
+        "Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "John J. Fitzgerald",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Rev. Patrick Flanagan, C.M.",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "David W. Haddorff",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Joann Heaney-Hunter",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Erin Kidd",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Mark Kiley",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Paul D. Molnar",
+        "Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Habibeh Rahim",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Robert (Bobby) J. Rivera",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Matthew Lewis Sutton",
+        "Associate Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Christopher P. Vogt",
+        "Professor",
+        "DepartmentTheology and Religious Studies"
+      ],
+      [
+        "Michele Watkins",
+        "Assistant Professor, Theology",
+        "DepartmentTheology and Religious Studies"
+      ]
+    ],
+    "https://www.samford.edu/arts-and-sciences/biblical-and-religious-studies/": [
+      [
+        "Angola",
+        "Australia",
+        "Austria",
+        "Brazil",
+        "Canada",
+        "Czech Republic",
+        "El Salvador",
+        "England",
+        "France",
+        "Greece",
+        "India",
+        "Israel",
+        "Italy",
+        "Kenya",
+        "Malaysia",
+        "Namibia",
+        "Netherlands",
+        "Philippines",
+        "Portugal",
+        "Russia",
+        "Scotland",
+        "South Africa",
+        "South Korea",
+        "Switzerland",
+        "Thailand",
+        "Turkey",
+        "Vatican City",
+        "Vietnam",
+        "Wales"
+      ],
+      [
+        "Asbury Theological Seminary",
+        "Beeson Divinity School (Samford University)",
+        "Candler School of Theology (Emory University)",
+        "Duke Divinity School (Duke University)",
+        "Fuller Theological Seminary",
+        "George W. Truett Theological Seminary (Baylor University)",
+        "Gordon-Conwell Theological Seminary",
+        "McAfee School of Theology (Mercer University)",
+        "Midwestern Baptist Theological Seminary",
+        "New Orleans Baptist Theological Seminary",
+        "Oxford University",
+        "Princeton Theological Seminary",
+        "The Seattle School of Theology and Psychology",
+        "Southeastern Baptist Theological Seminary",
+        "The Southern Baptist Theological Seminary",
+        "The University of Aberdeen",
+        "The University of Alabama at Birmingham",
+        "Wake Forest University and Wake Forest University School of Divinity",
+        "Wesley Theological Seminary",
+        "Yale Divinity School"
+      ],
+      [
+        "Dig Deeper, Go Farther!",
+        "Prepare for Your Calling",
+        "Mission and Values",
+        "Faculty Engagement in Mission and Ministry",
+        "Seminary and Graduate School Placement",
+        "Academic Programs",
+        "Undergraduate Majors",
+        "Concentrations",
+        "Scholars Program",
+        "Undergraduate Minors",
+        "Biblical & Religious Studies Scholarships",
+        "Theta Alpha Kappa Honor Society",
+        "Awards"
+      ],
+      [
+        "Biblical Studies",
+        "Christian and Religious Studies",
+        "Ministry Leadership Concentration",
+        "Preministerial Scholars",
+        "Biblical Studies",
+        "Ministry and Missions",
+        "Religion",
+        "Theology and Ethics",
+        "Science and Religion",
+        "Alabama Baptist Foundation Scholarships",
+        "Guffin Memorial Scholarship",
+        "Julius and Martha Avery Fund",
+        "Jim and Ann Bruner Endowed Scholarship",
+        "The Dr. James Barnette Endowed Scholarship",
+        "Michael & Laura Duduit Scholarship",
+        "John & Lillian Holcomb Scholarship",
+        "The Hull Scholarship for Lay Leaders",
+        "Ova Nigg Memorial Scholarship",
+        "Roland Riggins Endowed Scholarship",
+        "W.T. Edwards Endowed Scholarship",
+        "John & Jessica Loftis Scholarship",
+        "Philip Lynn Payne Ministerial Scholarship",
+        "Hubert Fisher Memorial Scholarship",
+        "Elmore Scholarship",
+        "Claude E. Matthews Scholarship",
+        "Patillo Scholarship Fund",
+        "Dr. Sigurd F. Bryan Scholarship",
+        "Abrams Scholarship",
+        "Herschel H. Hobbs Scholarship",
+        "Brookwood Baptist \u2013 Gray Scholarship",
+        "Duel M Wilson Scholarship",
+        "Bee Talford Jones Family Scholarship",
+        "Wallace Howard Cook Scholarship",
+        "Madeline Dix Reeves Scholarship",
+        "Herman Ross Arnold Award",
+        "Community of Scholars Award",
+        "Cowley Award",
+        "Vernon Davison Award",
+        "Samford Sunday Award",
+        "Talley-Windsor Award",
+        "Carlton F. Whirley Award"
+      ],
+      [
+        "Chair, Department of Biblical and Religious Studies\nAdam Winn awinn@samford.edu",
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "Alumni Facebook Group"
+      ],
+      [
+        "Chair, Department of Biblical and Religious Studies",
+        "Adam Winn",
+        "awinn@samford.edu"
+      ]
+    ],
+    "https://religion.illinois.edu/": [
+      [
+        "Highlighted Courses",
+        "REL 495 - Material Janism (Spring 2025) TR 12:30-1:50 B Term: Starts 3/24",
+        "REL 495: Sacred Art of India (Spring 2025) MWF 12:00-12:50 Term B Starts 3/24",
+        "REL 344 - Jewish Intellectual History (Spring 20205) M/W 3:00-5:30 PM - B term: starts March 17 2025",
+        "REL 419 - Jesus and Judaism (Fall 2024  T/TH 3:00-5:30: Meets 10/21/24-12/11/24)",
+        "REL 535- Historiography of Religion in America (Fall, 2024 Wednesdays 3-5:30 PM)",
+        "AFRO 345/REL333 - Becoming Martin and Malcolm (Fall 2024 T/TH 12:30-1:50 PM)",
+        "REL 494 - Complicity, Responsibility, and Structural Injustice (Fall 2024, Mondays 3:00-5:00)",
+        "REL 495 Introduction to Jainism (Fall 2024, T/TH 12:30-1:50 starts 10/22/24)",
+        "REL 350 South Asian Goddesses (Fall 2024 M,W, F 12:00-12:50  starts 10/22/24)",
+        "REL 199 -  Becoming Martin and Malcolm (Spring 2024, T/TH 3:30-4:50 PM)",
+        "REL 511 - Crime, Punishment, and Redemption in America (Spring 2024 Mondays 3-5:30)",
+        "REL 335 - Religion in Contemporary America (Spring 2024, T/TH 11:00-12:20)",
+        "Department of Religion News",
+        "Calendar",
+        "Additional links"
+      ],
+      [
+        "penal system in the United States is a complex web of mutually rein",
+        "forcing institutions, practices, & moral val",
+        "cial practices we enact and the institutions we build & maintain."
+      ]
+    ],
+    "https://www.oxy.edu/academics/areas-study/religious-studies": [
+      [
+        "Ph.D. program, Religious Studies, UC-Santa Barbara",
+        "MD program, Albert Einstein Medical School",
+        "Student Support Specialist, Folsom Lake College",
+        "Editor-in-Chief and Co-founder, Empty Quarter Press",
+        "Ph.D. program, Harvard Divinity School",
+        "Senior Copywriter, CVS Health",
+        "GIS Analyst, Environmental Science Associates",
+        "Fulbright Scholar, Brazil",
+        "Master's program, Historic Preservation, University of Pennsylvania",
+        "Follow Oxy:"
+      ],
+      [
+        "Joshua Abeyta",
+        "Religious studies major; Santa Fe, NM",
+        "More from Joshua"
+      ]
+    ],
+    "https://religiousstudies.yale.edu/academics/graduate-program": [
+      [
+        "Religious Studies",
+        "You are here",
+        "Graduate Program"
+      ]
+    ],
+    "https://www.religion.ucsb.edu/academics/graduate/": [
+      [
+        "Buddhist Studies",
+        "Christian Traditions",
+        "East Asian Studies",
+        "Islamic Studies",
+        "Jewish Studies",
+        "Mediterranean and West Asian Religions",
+        "Native American and Indigenous Religions",
+        "Philosophy and Religion",
+        "Religion and Culture",
+        "Religions of North America",
+        "South Asian Religions"
+      ],
+      [
+        "UCSB Capps Center",
+        "@cappsucsb",
+        "16 Jan"
+      ],
+      [
+        "UCSB Capps Center",
+        "@cappsucsb",
+        "4 Feb"
+      ],
+      [
+        "UCSB Capps Center",
+        "@cappsucsb",
+        "4 Feb"
+      ]
+    ],
+    "https://www.berea.edu/academics/departments-programs/studies-of-religion-and-spirituality/": [
+      [
+        "Educational Goals and Objectivesarrow_right",
+        "Endowed Professorshipsarrow_right",
+        "Essaysarrow_right",
+        "Forum on Religions, Spirituality and Culturearrow_right",
+        "Faculty & Staffarrow_right",
+        "Majors and Minors (REL)arrow_right",
+        "Departmental Courses",
+        "Course Sequencing Table"
+      ],
+      [
+        "Educational Goals and Objectivesarrow_right",
+        "Endowed Professorshipsarrow_right",
+        "Essaysarrow_right",
+        "Forum on Religions, Spirituality and Culturearrow_right"
+      ],
+      [
+        "Berea.eduarrow_forward",
+        "Academicsarrow_forward",
+        "Departments & Programsarrow_forward",
+        "Studies of Religion and Spirituality"
+      ]
+    ],
+    "http://collegecatalog.uchicago.edu/thecollege/religiousstudies/": [
+      [
+        "Home >",
+        "The\u00a0College\u00a0Catalog\u00a02024-2025 >",
+        "Programs\u00a0of\u00a0Study >",
+        "Religious Studies"
+      ],
+      [
+        "Facebook",
+        "Twitter",
+        "YouTube",
+        "Flickr",
+        "Tumblr"
+      ],
+      [
+        "Program of Study",
+        "Program Requirements",
+        "Grading",
+        "Honors",
+        "Summary of Requirements",
+        "Minor Program in Religious Studies",
+        "Religious Studies Courses"
+      ],
+      [
+        "Introductory Course Requirement",
+        "Course Distribution",
+        "Senior Seminar and BA Paper",
+        "Regular Track",
+        "Research Track",
+        "Sample Program",
+        "Listhost"
+      ],
+      [
+        "The University of Chicago",
+        "\u00a9 2024-2025 The University of Chicago",
+        "Facebook\nTwitter\nYouTube\nFlickr\nTumblr"
+      ],
+      [
+        "RLST\u00a010100",
+        "One introductory-level (\"Gateway\") course",
+        "At least two courses in three major areas (Historical, Constructive, Cultural Studies)",
+        "Seven additional courses in Religious Studies",
+        "Total Units"
+      ],
+      [
+        "RLST\u00a010100",
+        "One introductory-level (\"Gateway\") course",
+        "At least two courses in three major areas (Historical, Constructive, Cultural Studies)",
+        "Seven additional courses in Religious Studies",
+        "RLST\u00a029800",
+        "RLST\u00a029900",
+        "Total Units"
+      ],
+      [
+        "RLST\u00a010100",
+        "RLST\u00a011004",
+        "RLST\u00a022701",
+        "RLST\u00a026311",
+        "RLST\u00a027602",
+        "RLST\u00a028705",
+        "Total Units"
+      ],
+      [
+        "program",
+        "religious",
+        "studies"
+      ],
+      [
+        "depth investigation of the plagues in Egypt as presented at length in Exodus 7",
+        "critical and tradition",
+        "historical issues in these texts. All texts will be read in their original languages."
+      ],
+      [
+        "/intra",
+        "ancient, medieval, modern, post",
+        "modern",
+        "to impersonate in class discussions."
+      ],
+      [
+        "arising, non",
+        "self, Emptiness, consciousness",
+        "only, Buddha",
+        "nature and original enlightenment, and the methods of realization (doctrinal, non",
+        "doctrinal, and indeed anti"
+      ],
+      [
+        "deception, with the goal of helping participants understand why the very idea of self",
+        "deception seems paradoxical, even as it also seems to be a ubiquitous phenomenon. Self",
+        "deception is possible?\" as a religious and theological question that invites to think about self",
+        "deception functions in the lives of religious adherents."
+      ],
+      [
+        "1956) and Jaws (",
+        "1975) to The Dark Knight (",
+        "2008) and Black Panther ("
+      ],
+      [
+        "prior",
+        "knowledge",
+        "20th Century can be reconciled with decolonial and post",
+        "colonial perspectives."
+      ],
+      [
+        "and sometimes react against them. This course will focus on one example of religious",
+        "cultural",
+        "philosophical adaptation and change through a study of the medieval translation of Arabic and Judeo",
+        "Arabic works into Hebrew during the 12th",
+        "in all its forms",
+        "during the high middle ages."
+      ],
+      [
+        "the thick of chattel slavery, mercantile capitalism, and colonial violence",
+        "to investigate literary productions by racialized others dispersed in and by the so",
+        "and sometimes for",
+        "the imperial core. Through in"
+      ],
+      [
+        "realism, fantasy, sci",
+        "state, the secular, economy, and more to unearth the myth",
+        "making inherent in processes of world",
+        "building, as well as in narrative. We will see ghosts in court, hallucinating nation",
+        "states, dead narrators, animated"
+      ],
+      [
+        "that they involve, indeed, essentially different kinds of rationality",
+        "and twenty",
+        "first",
+        "century thinkers, drawing on a range of philosophical and religious perspectives",
+        "those, for example, of the Anglo"
+      ],
+      [
+        "style conspiracy beliefs irrational or false on their face? Can liberal",
+        "status\" subjects using un",
+        "curated archives. No prior acquaintance with conspiracy",
+        "oriented materials required."
+      ],
+      [
+        "colonial literature, such as Amadou Bamba, Haj Umar Tal, Usman Dan Fodio, Emir Abdelkader al",
+        "Jaza'iri, Abdul Karim al",
+        "Khattabi, and Ahmad al",
+        "colonial resistance. No Arabic required."
+      ]
+    ],
+    "https://www.hamilton.edu/academics/departments/religious-studies": [
+      [
+        "Examine different approaches to the academic study of religious traditions",
+        "Analyze diverse sets of evidence including both primary and secondary sources",
+        "Critically analyze the category of \u201creligion\u201d",
+        "Communicate clearly, coherently, and effectively"
+      ],
+      [
+        "Financial Advisor, Morgan Stanley Wealth Management",
+        "Brand Coordinator, Legendary Entertainment",
+        "Upper School Dean of Students, American School of Madrid",
+        "Rabbinical Student, Hebrew Union College",
+        "Director of Development, The Chamber Orchestra of Philadelphia",
+        "Gerontologist, Gateway Adult Center",
+        "Director of Youth & Education Justice, Children\u2019s Defense Fund-NY",
+        "Clinical Social Worker, Morris Foundation"
+      ],
+      [
+        "Utility",
+        "You are here:",
+        "Religious Studies",
+        "A Sampling of Courses",
+        "Meet Our Faculty",
+        "Careers After Hamilton",
+        "Explore Hamilton Stories",
+        "Social",
+        "Social",
+        "Footer",
+        "Site Menu",
+        "Secondary",
+        "Actions",
+        "Support",
+        "Audience",
+        "Site Search"
+      ],
+      [
+        "Students Will Learn To:",
+        "Religion and Media",
+        "Explore these select courses:",
+        "Americanism, Ballots, and Consumption: The ABCs of American Religion",
+        "Memory, Tradition, and Contemporary Native American Issues",
+        "Martyrdom in Antiquity",
+        "Quincy Newell\n\n\n\ufeff",
+        "Ian Mills\n\n\n\ufeff",
+        "S. Brent Rodriguez-Plate\n\n\n\ufeff",
+        "Jeffrey McArn\n\n\n\ufeff"
+      ]
+    ],
+    "https://religion.columbia.edu/": [
+      [
+        "80 Claremont Ave, Room 101",
+        "12:15 PM - 1:45 PM",
+        "Event time is displayed in your time zone."
+      ],
+      [
+        "80 Claremont Ave, Room 101",
+        "12:15 PM - 1:45 PM",
+        "Event time is displayed in your time zone."
+      ]
+    ],
+    "https://www.westmont.edu/religious-studies": [
+      [
+        "Core course: RS 119, Early and Medieval Christianity",
+        "Core course: RS 159, Missiology",
+        "Elective: RS 116, The Apocalypse"
+      ],
+      [
+        "Required Core Classes       \n\n(28 units)",
+        "First Year",
+        "Second Year",
+        "Third Year",
+        "Fourth Year"
+      ],
+      [
+        "Business (especially international business)",
+        "Christian counseling, clinical counseling, spiritual direction",
+        "Foreign and domestic missions",
+        "Journalism and the arts",
+        "Marketing and management",
+        "Medicine (including physical therapy), medical missions",
+        "Music, sacred music, worship leadership",
+        "Nonprofit organizations, NGOs, Peace Corps",
+        "Pastoring, youth ministry",
+        "Publishing",
+        "Social work, occupational therapy",
+        "Teaching (secondary school, undergraduate, postgraduate)"
+      ],
+      [
+        "Hermeneutical competence",
+        "Theological judgment",
+        "Ecclesial engagement"
+      ],
+      [
+        "RS 119, Early and Medieval Christianity",
+        "RS 120, Reformation and Modern Christianity",
+        "RS 142, World Religions",
+        "RS 159, Missiology",
+        "RS 180, Senior Seminar",
+        "One Old Testament course: RS 101, 102, 106, 108, 124, 154",
+        "One New Testament course: RS 110, 111, 113, 114, 116",
+        "Plus 20 units of Elective Courses",
+        "Religious Studies Minor (20 units)",
+        "One of: RS 119, 120, or 151",
+        "16 additional elective units",
+        "Biblical Languages Minor (20 units)",
+        "GRK 001, 002, 101, 102, 151",
+        "HB 001,002"
+      ]
+    ],
+    "https://languages.utah.edu/undergraduate/majors-and-minors/religious-studies.php": [
+      [
+        "Major",
+        "Minor",
+        "Approved Courses",
+        "Career",
+        "Opportunities",
+        "Faculty"
+      ],
+      [
+        "Swarthmore College",
+        "Vanderbilt University",
+        "University of Washington"
+      ],
+      [
+        "Peace and Conflict Studies at the University of Utah",
+        "Tanenbaum Institute in New York City",
+        "Center for World Religions, Diplomacy and Conflict Resolution at George Mason University"
+      ],
+      [
+        "Department of World Languages & Cultures",
+        "Main Navigation",
+        "Main Menu",
+        "Religious Studies\u00a0Program",
+        "Religious Studies\u00a0Minor",
+        "Approved Courses",
+        "Department of World Languages & Cultures",
+        "Stay in Touch",
+        "Support"
+      ],
+      [
+        "College of Humanities",
+        "Eligible classes include (but are not limited to):",
+        "Religious Studies\u00a0Major (BA)",
+        "Fall 2024",
+        "Spring 2025",
+        "Summer 2025",
+        "Fall 2023",
+        "Spring 2024",
+        "Summer 2024",
+        "Fall 2023",
+        "Summer 2023",
+        "Spring 2023",
+        "Fall 2022",
+        "Career Opportunities - Why Study Religion?",
+        "Student Opportunities",
+        "Faculty",
+        "CLCS 3670: War Narratives: Israel & the U.S.",
+        "ENGL 5030: Studies in Poetry",
+        "ENGL 5930: Theories of Race / Ethnicity / Nation",
+        "HEBR 3880: Introduction to Biblical Hebrew Culture",
+        "HEBR 4900: Introduction to the Hebrew Bible/Old Testament",
+        "HEBR 3210: Introduction to Judaism",
+        "HEBR/CLCS 3700: Holocaust and Remembrance",
+        "HEBR 4300: Contemporary Culture of the Jewish/Israeli World",
+        "LANG 2900: Modern Hebrew Conversation",
+        "Anthropology",
+        "Cultural Studies",
+        "History",
+        "Middle East Studies",
+        "Political Science",
+        "Anthropology",
+        "Cultural Studies",
+        "Communication",
+        "Ethnic Studies Program",
+        "History",
+        "Philosophy",
+        "Political Science"
+      ],
+      [
+        "Aziz Atiya Comparative Religion Research Awards",
+        "Jewish Studies",
+        "Coptic\u00a0Studies",
+        "Western Christianity",
+        "Islamic Studies",
+        "Religion and Conflict"
+      ],
+      [
+        "2024 - 2025",
+        "2023 - 2024",
+        "2022 - 2023"
+      ],
+      [
+        "CLCV 1550: Classical Mythology",
+        "MID E/HEBR 3880: The Jewish Experience",
+        "PHIL 3640: World Religions",
+        "Electives",
+        "ARTH 3250: Baroque Art Europe",
+        "CHIN 4900:\u00a0Introduction to Chinese Religions: from Antiquity to 1800",
+        "HIST 4400/MID E 4510: Introduction to Islam",
+        "HIST 4410: Arabian Days Caliphates",
+        "HINDI 4610: Suberversive Indian/Pakistani Film",
+        "MID E 2780: Religiosity in ME/USA",
+        "PHIL 3012: Christianity/Judaism in Literature & Philosophy",
+        "PHIL 4140: Classical Chinese Philosophy",
+        "SOC 3440: Sociology of Religion"
+      ],
+      [
+        "PHIL 2640\u00a0-\u00a0090\u00a0World Religions",
+        "RELS 3620\u00a0-\u00a0001\u00a0Thinking about Religion",
+        "CLCS 4900\u00a0-\u00a0001 /PERS 4880\u00a0 God, Love, and Mysticism",
+        "CL CV 1550 - Classical Mythology",
+        "RELS 3710\u00a0-\u00a0001\u00a0Who is Jesus?",
+        "Electives",
+        "ARTH 3150\u00a0-\u00a0090\u00a0Medieval Art",
+        "ARTH 3250\u00a0-\u00a0001\u00a0Baroque Art Europe",
+        "ANTH 3127\u00a0-\u00a0090\u00a0Peoples of Europe",
+        "CLCV 4900- Cleopatra: Life & After",
+        "ENGL\u00a05700-\u00a0001\u00a0Studies In Medieval Lit",
+        "ETHNC 4850\u00a0-\u00a0002\u00a0Race, Gndr, & Religion",
+        "HIST 3910\u00a0-\u00a0009\u00a0Britain & the Book",
+        "HIST 3545\u00a0-\u00a0001\u00a0Ancient India",
+        "HIST 4660\u00a0-\u00a0001 History Of Utah",
+        "PHIL 3820\u00a0-\u00a0001\u00a0Meaning of Life",
+        "SOC 3440\u00a0-\u00a0090\u00a0Sociology of Religion (online)"
+      ],
+      [
+        "CLCV 1550: Classical Mythology",
+        "MID E/HEBR 3880: The Jewish Experience",
+        "PHIL 3640: World Religions",
+        "Electives",
+        "ARTH 3250: Baroque Art Europe",
+        "CHIN 4900:\u00a0Introduction to Chinese Religions: from Antiquity to 1800",
+        "HIST 4400/MID E 4510: Introduction to Islam",
+        "HIST 4410: Arabian Days Caliphates",
+        "HINDI 4610: Suberversive Indian/Pakistani Film",
+        "MID E 2780: Religiosity in ME/USA",
+        "PHIL 3012: Christianity/Judaism in Literature & Philosophy",
+        "PHIL 4140: Classical Chinese Philosophy",
+        "SOC 3440: Sociology of Religion"
+      ],
+      [
+        "CL CV 1550 Classical Mythology",
+        "RELS 3620 Thinking About Religion",
+        "Electives",
+        "ARTH 3160 - 001 Islamic Art and Arch ANTH 3127 - 090 Peoples of Europe ANTH 3321 - 001 Classic Maya",
+        "CL CV 4580 - 001 Ancient Divination",
+        "CLCS 4970 Visions of Islam"
+      ],
+      [
+        "CLCV 1550: Classical Mythology",
+        "MID E/HEBR 3880: The Jewish Experience",
+        "PHIL 3640: World Religions",
+        "Electives",
+        "ARTH 3250: Baroque Art Europe",
+        "CHIN 4900:\u00a0Introduction to Chinese Religions: from Antiquity to 1800",
+        "HIST 4400/MID E 4510: Introduction to Islam",
+        "HIST 4410: Arabian Days Caliphates",
+        "HINDI 4610: Suberversive Indian/Pakistani Film",
+        "MID E 2780: Religiosity in ME/USA",
+        "PHIL 3012: Christianity/Judaism in Literature & Philosophy",
+        "PHIL 4140: Classical Chinese Philosophy",
+        "SOC 3440: Sociology of Religion"
+      ],
+      [
+        "HIST 4120: Christianity in the Modern World",
+        "MID E 3753: Anthropological Archaeology of Ancient Egypt",
+        "PHIL 3640: World Religions"
+      ],
+      [
+        "ARTH 3060: Arts of Buddhism",
+        "ARTH 3150: Medieval Art",
+        "ANTH 3127:\u00a0Peoples of Europe",
+        "HIST 3045:\u00a0Late Medieval England",
+        "HIST 3398: History of the Middle East 1798-1914",
+        "HIST 4400/ MIDE 4510:\u00a0Introduction to Islam",
+        "HIST 4660: \u00a0History\u00a0Of\u00a0Utah",
+        "HONOR 2810-001: Evil",
+        "HONOR 2810-001: Gods & Monsters",
+        "MIDE 3880: Religion and Fashion in the Middle East",
+        "PHIL 1002: Intro God, Faith, Reason",
+        "PHIL 3012: The Problem of Evil",
+        "PHIL 3820: Meaning of Life",
+        "PHIL 3900: Modern Christian Thought",
+        "THEA 3001:\u00a0001 Zen, Eastern Theatre"
+      ],
+      [
+        "ARTH 3180-001: Islamic Art",
+        "CLCV 1550-001: Classical Mythology",
+        "CLCS 4900-002 / PERS 4880-002: Gold, Love, & Mysticism",
+        "ENGL 3030-001: Bible As Literature",
+        "ENGL 5721-001: John Milton",
+        "ETHNC 4730-001: Race, Religion, Spirituality",
+        "MID E 2780-090: Religiosity in ME/USA",
+        "PHIL 3012-004: Problem of Evil",
+        "PHIL 3110-001: Survey of Medieval Philosophy",
+        "PHIL 3600-001: Phil of Religion",
+        "SOC 3440-090: Sociology of Religion",
+        "HIST 3400: History of the Middle East",
+        "HINDI 4610: Subversive Indian/Pakistani film",
+        "ARAB 4880: Classical Arabic (need at least 1st\u00a0year Arabic to register)",
+        "HIST 3005/MIDE 3500: Ancient Empires"
+      ],
+      [
+        "Why Study Religion?",
+        "The Top Five Reasons to Study Religion",
+        "The Value of Teaching Religious Literacy"
+      ],
+      [
+        "John Wynne\nReligious Studies Program DirectorAssociate Professor\njohn.wynne@utah.edu(801) 581-8384",
+        "Th\u00e9r\u00e8se De Raedt\nProfessor\ntherese.de-raedt@utah.edu(801) 587-7766",
+        "Christine Everaert\nAssociate Professor\nchristine.everaert@utah.edu(801) 581-8381",
+        "Christopher Lewis\nAssociate Professor\nchristopher.t.lewis@utah.edu(801) 581-4604",
+        "Brandon Peterson\nAssistant Professor\nbrandon.peterson@utah.edu(801) 585-7292"
+      ],
+      [
+        "John Wynne",
+        "Religious Studies Program DirectorAssociate Professor",
+        "john.wynne@utah.edu(801) 581-8384"
+      ],
+      [
+        "Th\u00e9r\u00e8se De Raedt",
+        "Professor",
+        "therese.de-raedt@utah.edu(801) 587-7766"
+      ],
+      [
+        "Christine Everaert",
+        "Associate Professor",
+        "christine.everaert@utah.edu(801) 581-8381"
+      ],
+      [
+        "Christopher Lewis",
+        "Associate Professor",
+        "christopher.t.lewis@utah.edu(801) 581-4604"
+      ],
+      [
+        "Brandon Peterson",
+        "Assistant Professor",
+        "brandon.peterson@utah.edu(801) 585-7292"
+      ],
+      [
+        "Soheila Amirsoleimani\u00a0\nAssociate Professor\nsoheila.amirsoleimani@utah.edu(801) 585-3011",
+        "Nathan Devir\nProfessor\nnathan.devir@utah.edu(801) 585-3000",
+        "Mujeeb M. A. Khan\nAssisstant Professor\nmujeeb.khan@utah.edu(801) 585-3005",
+        "Joseph Metz\nAssociate Professor\njoseph.metz@utah.edu(801) 581-7620",
+        "Margaret Toscano\nAssociate Professor\nmargaret.toscano@utah.edu(801) 581-4768"
+      ],
+      [
+        "Soheila Amirsoleimani",
+        "Associate Professor",
+        "soheila.amirsoleimani@utah.edu(801) 585-3011"
+      ],
+      [
+        "Nathan Devir",
+        "Professor",
+        "nathan.devir@utah.edu(801) 585-3000"
+      ],
+      [
+        "Mujeeb M. A. Khan",
+        "Assisstant Professor",
+        "mujeeb.khan@utah.edu(801) 585-3005"
+      ],
+      [
+        "Joseph Metz",
+        "Associate Professor",
+        "joseph.metz@utah.edu(801) 581-7620"
+      ],
+      [
+        "Margaret Toscano",
+        "Associate Professor",
+        "margaret.toscano@utah.edu(801) 581-4768"
+      ],
+      [
+        "division transfer courses from Salt Lake Community College (SLCC) may be",
+        "division transfer course from",
+        "advising@utah.edu for details."
+      ],
+      [
+        "001 Islamic Art and Arch ANTH 3127",
+        "090 Peoples of Europe ANTH 3321",
+        "001 Classic Maya"
+      ],
+      [
+        "Hinduism & Islam in IndiaCLCS 4900",
+        "002 God, Love, and Mysticism ETHNC 4730",
+        "001 Race, Religion, Spirituality HIST 3400",
+        "001 Middle East Since 1914 HIST 3545",
+        "001 Ancient India HIST 3560",
+        "001 Modern India HIST 3910/MID E 4158",
+        "Trends in Modern Islam"
+      ],
+      [
+        "Religion & Identity in Early Modern Britain\u00a0HIST 4490 /MID E 4549",
+        "Jews of the Islamic World HIST 4660",
+        "001 History Of Utah MID E 3880",
+        "090 Religion & Fashion in Mid East PHIL 3012",
+        "001 The Problem of Evil PHIL 3820",
+        "001 Meaning of Life SOC 3440",
+        "090 Sociology of Religion (Online)"
+      ],
+      [
+        "Semitism; ethnic and cultural diversity within the",
+        "Christian dialogue. Jewish Studies course offerings",
+        "cultural dialogues where we can meet each other and break down biases, stereotypes,"
+      ],
+      [
+        "biblical textual sources, from ancient times to the present day. Questions of",
+        "Semitism,",
+        "Holocaust Judeo",
+        "Christian dialogue."
+      ]
+    ],
+    "https://grad.rutgers.edu/academics/programs/religious-studies": [
+      [
+        "M.A. (Master of Arts)",
+        "Certificate",
+        "4+1 B.A./M.A."
+      ],
+      [
+        "utility menu one",
+        "utility menu two",
+        "utility menu one",
+        "utility menu two",
+        "Program Description",
+        "Admission Deadlines",
+        "footer menu first",
+        "footer menu third"
+      ]
+    ],
+    "http://coursecatalog.syr.edu/preview_program.php?catoid=39&poid=19580&returnto=4917": [
+      [
+        "African American",
+        "American",
+        "Buddhist",
+        "Christian",
+        "East Asian",
+        "Hindu",
+        "Indigenous (the Americas)",
+        "Jewish",
+        "Middle Eastern",
+        "Muslim",
+        "South Asian"
+      ],
+      [
+        "Syracuse University",
+        "2024-2025 Graduate Course Catalog",
+        "All catalogs \u00a9 2025 Syracuse University. Powered by Modern Campus Catalog\u2122."
+      ]
+    ],
+    "https://www.holycross.edu/academics/program/religious-studies": [
+      [
+        "World Religions",
+        "Theology",
+        "Sacred Texts",
+        "Religious Ethics"
+      ],
+      [
+        "Mary in Christian Theology",
+        "Race and Religion",
+        "Saints and Sinners Around the World",
+        "Theological Perspectives on Medical Ethics",
+        "Holocaust: Confronting Evil",
+        "Introduction to Global Catholicism"
+      ],
+      [
+        "You are here:",
+        "Areas of Study",
+        "Requirements",
+        "Major Requirements",
+        "Minor Requirements",
+        "Subject Areas",
+        "Meet Your Department Chair",
+        "Sample Courses",
+        "Opportunities",
+        "In the News",
+        "Social",
+        "Footer",
+        "Social",
+        "Site Menu",
+        "Secondary Menu",
+        "Main Menu",
+        "Secondary Menu",
+        "Info For Menu"
+      ],
+      [
+        "For sophomores, juniors and seniors",
+        "For first-year students",
+        "Sacred Texts",
+        "World Religions",
+        "Theology",
+        "Ethics",
+        "Second Religious Tradition Courses",
+        "Theta Alpha Kappa Honor Society",
+        "The Rev. William F. Hartigan Medal",
+        "The Dr. Vincent J. Forde Memorial Award",
+        "Following a Fall of Significant Announcements, What\u2019s Next for the Church?",
+        "How St. Ignatius Is Still Offering Hope 500 Years After His Conversion"
+      ],
+      [
+        "01 Political TheologyRELS 299",
+        "S01 Christian AutobiographyRELS 299",
+        "S05 \u00a0(De)Colonial Catholicisms in Latin AmericaRELS 299",
+        "S06 \u00a0Who is my neighbor? Catholicism, Genocide & Rwanda\u00a0RELS 299",
+        "S08 Black Feminist & Womanist Theology\u00a0RELS 299",
+        "S09 Prisons, Policing & ProvidenceRELS 299",
+        "S10 Deaf Catholicism: History, Theology, and LiturgyRELS 299",
+        "S11 Theology of Religions"
+      ]
+    ],
+    "https://religion.ufl.edu/graduate-studies/": [
+      [
+        "Graduate Studies",
+        "Important Notice",
+        "Links",
+        "Resources",
+        "Websites",
+        "Stay Connected"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:48:53"
+}

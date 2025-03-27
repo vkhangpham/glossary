@@ -1,0 +1,888 @@
+{
+  "level1_term": "physics",
+  "url_verification_status": {
+    "https://www.gc.cuny.edu/physics/research-areas": true,
+    "https://physics.cornell.edu/research/physics-education-research": true,
+    "https://physics.duke.edu/research/research-areas": false,
+    "https://physics.cornell.edu/research": true,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/physics": false,
+    "https://umdphysics.umd.edu/research/research-areas/physics-education-research.html": true,
+    "https://physics.brown.edu/": false,
+    "https://physics.mit.edu/": false,
+    "https://cst.temple.edu/department-physics/graduate-program/graduate-courses": true,
+    "https://physics.tcnj.edu/research/overview-of-research/": false,
+    "https://physics.osu.edu/grad/prospective-students-0/research-department-physics/physics-education": false,
+    "https://phys.washington.edu/fields/physics-education": false,
+    "https://www.physics.harvard.edu/academics/grad": false,
+    "https://cst.temple.edu/department-physics": false,
+    "https://www.wesleyan.edu/admission/academics/splashpages/phys.html": false,
+    "https://physics.osu.edu/research/physics-education-research": false,
+    "https://physics.mines.edu/undergraduate/education-development/": false,
+    "https://cos.northeastern.edu/physics/": true,
+    "https://www.physics.wisc.edu/": true,
+    "https://www.holycross.edu/academics/program/physics": true,
+    "https://www.hamilton.edu/academics/departments/physics": true,
+    "http://catalog.illinois.edu/graduate/engineering/teaching-physics-ms/": false,
+    "https://physics-astronomy.jhu.edu/graduate/": false
+  },
+  "verified_lists_per_url": {
+    "https://www.gc.cuny.edu/physics/research-areas": 1,
+    "https://physics.cornell.edu/research/physics-education-research": 1,
+    "https://physics.duke.edu/research/research-areas": 0,
+    "https://physics.cornell.edu/research": 1,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/physics": 0,
+    "https://umdphysics.umd.edu/research/research-areas/physics-education-research.html": 1,
+    "https://physics.brown.edu/": 0,
+    "https://physics.mit.edu/": 0,
+    "https://cst.temple.edu/department-physics/graduate-program/graduate-courses": 1,
+    "https://physics.tcnj.edu/research/overview-of-research/": 0,
+    "https://physics.osu.edu/grad/prospective-students-0/research-department-physics/physics-education": 0,
+    "https://phys.washington.edu/fields/physics-education": 0,
+    "https://www.physics.harvard.edu/academics/grad": 0,
+    "https://cst.temple.edu/department-physics": 0,
+    "https://www.wesleyan.edu/admission/academics/splashpages/phys.html": 0,
+    "https://physics.osu.edu/research/physics-education-research": 0,
+    "https://physics.mines.edu/undergraduate/education-development/": 0,
+    "https://cos.northeastern.edu/physics/": 27,
+    "https://www.physics.wisc.edu/": 2,
+    "https://www.holycross.edu/academics/program/physics": 1,
+    "https://www.hamilton.edu/academics/departments/physics": 2,
+    "http://catalog.illinois.edu/graduate/engineering/teaching-physics-ms/": 0,
+    "https://physics-astronomy.jhu.edu/graduate/": 0
+  },
+  "total_lists_per_url": {
+    "https://www.gc.cuny.edu/physics/research-areas": 1,
+    "https://physics.cornell.edu/research/physics-education-research": 1,
+    "https://physics.duke.edu/research/research-areas": 1,
+    "https://physics.cornell.edu/research": 1,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/physics": 6,
+    "https://umdphysics.umd.edu/research/research-areas/physics-education-research.html": 1,
+    "https://physics.brown.edu/": 4,
+    "https://physics.mit.edu/": 2,
+    "https://cst.temple.edu/department-physics/graduate-program/graduate-courses": 1,
+    "https://physics.tcnj.edu/research/overview-of-research/": 2,
+    "https://physics.osu.edu/grad/prospective-students-0/research-department-physics/physics-education": 1,
+    "https://phys.washington.edu/fields/physics-education": 2,
+    "https://www.physics.harvard.edu/academics/grad": 1,
+    "https://cst.temple.edu/department-physics": 1,
+    "https://www.wesleyan.edu/admission/academics/splashpages/phys.html": 2,
+    "https://physics.osu.edu/research/physics-education-research": 2,
+    "https://physics.mines.edu/undergraduate/education-development/": 1,
+    "https://cos.northeastern.edu/physics/": 31,
+    "https://www.physics.wisc.edu/": 7,
+    "https://www.holycross.edu/academics/program/physics": 3,
+    "https://www.hamilton.edu/academics/departments/physics": 4,
+    "http://catalog.illinois.edu/graduate/engineering/teaching-physics-ms/": 1,
+    "https://physics-astronomy.jhu.edu/graduate/": 1
+  },
+  "verified_lists_ids": {
+    "https://www.gc.cuny.edu/physics/research-areas": [
+      0
+    ],
+    "https://physics.cornell.edu/research/physics-education-research": [
+      0
+    ],
+    "https://physics.duke.edu/research/research-areas": [],
+    "https://physics.cornell.edu/research": [
+      0
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/physics": [],
+    "https://umdphysics.umd.edu/research/research-areas/physics-education-research.html": [
+      0
+    ],
+    "https://physics.brown.edu/": [],
+    "https://physics.mit.edu/": [],
+    "https://cst.temple.edu/department-physics/graduate-program/graduate-courses": [
+      0
+    ],
+    "https://physics.tcnj.edu/research/overview-of-research/": [],
+    "https://physics.osu.edu/grad/prospective-students-0/research-department-physics/physics-education": [],
+    "https://phys.washington.edu/fields/physics-education": [],
+    "https://www.physics.harvard.edu/academics/grad": [],
+    "https://cst.temple.edu/department-physics": [],
+    "https://www.wesleyan.edu/admission/academics/splashpages/phys.html": [],
+    "https://physics.osu.edu/research/physics-education-research": [],
+    "https://physics.mines.edu/undergraduate/education-development/": [],
+    "https://cos.northeastern.edu/physics/": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "https://www.physics.wisc.edu/": [
+      0,
+      1
+    ],
+    "https://www.holycross.edu/academics/program/physics": [
+      0
+    ],
+    "https://www.hamilton.edu/academics/departments/physics": [
+      2,
+      3
+    ],
+    "http://catalog.illinois.edu/graduate/engineering/teaching-physics-ms/": [],
+    "https://physics-astronomy.jhu.edu/graduate/": []
+  },
+  "num_urls": 40,
+  "num_lists": 77,
+  "url_to_lists": {
+    "https://www.gc.cuny.edu/physics/research-areas": [
+      [
+        "Astrophysics and astronomy",
+        "Atomic, molecular, and optical physics",
+        "Biophysics",
+        "Computational and statistical physics",
+        "Fluid Dynamics",
+        "Elementary particles, high-energy physics, string theory, relativity, and nuclear physics",
+        "Materials science, solid state, condensed matter and low temperature physics",
+        "Mathematical physics",
+        "Photonics, optoelectronics, plasmonics and quantum optics",
+        "Soft condensed matter, and random systems",
+        "Chemical physics",
+        "Quantum computing and information",
+        "Physics education",
+        "Environmental physics",
+        "Physics and society"
+      ]
+    ],
+    "https://physics.cornell.edu/research/physics-education-research": [
+      [
+        "Natasha Holmes\n    \n\n      Ann S. Bowers Associate Professor",
+        "Accelerator Physics",
+        "Astrophysics, General Relativity and Cosmology",
+        "Biological Physics",
+        "Experimental Condensed Matter Physics",
+        "Experimental Elementary Particle Physics",
+        "Physics Education Research",
+        "Theoretical Condensed-Matter Physics",
+        "Theoretical Elementary Particle Physics"
+      ]
+    ],
+    "https://physics.duke.edu/research/research-areas": [
+      [
+        "Secondary Menu",
+        "Main navigation",
+        "Department of Physics",
+        "Academic Degrees",
+        "Undergraduates",
+        "Graduate Students",
+        "Stay Connected"
+      ]
+    ],
+    "https://physics.cornell.edu/research": [
+      [
+        "Accelerator Physics",
+        "Astrophysics, General Relativity and Cosmology",
+        "Biological Physics",
+        "Experimental Condensed Matter Physics",
+        "Experimental Elementary Particle Physics",
+        "Physics Education Research",
+        "Theoretical Condensed-Matter Physics",
+        "Theoretical Elementary Particle Physics"
+      ]
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/physics": [
+      [
+        "Dmitry Abanin",
+        "Michael Aizenman",
+        "Robert H. Austin",
+        "Waseem S. Bakr",
+        "Bogdan A. Bernevig",
+        "William Bialek",
+        "Jo Dunkley",
+        "Cristiano Galbiati",
+        "Simone Giombi",
+        "Thomas Gregor",
+        "Frederick D. Haldane",
+        "M. Zahid Hasan",
+        "David A. Huse",
+        "William C. Jones",
+        "Igor R. Klebanov",
+        "Mariangela Lisanti",
+        "Daniel R. Marlow",
+        "James D. Olsen",
+        "Nai Phuan Ong",
+        "Lyman A. Page",
+        "Frans Pretorius",
+        "Silviu S. Pufu",
+        "Michael V. Romalis",
+        "Shinsei Ryu",
+        "Peter Schiffer",
+        "Joshua W. Shaevitz",
+        "Suzanne T. Staggs",
+        "Paul J. Steinhardt",
+        "Christopher G. Tully",
+        "Herman L. Verlinde",
+        "Ali Yazdani"
+      ],
+      [
+        "Saptarshi Chaudhuri",
+        "Lawrence W. Cheuk",
+        "Biao Lian",
+        "Isobel R. Ojalvo",
+        "Gautam Reddy",
+        "Sanfeng Wu"
+      ],
+      [
+        "Ravindra N. Bhatt, Electrical & Comp Engineering",
+        "Roberto Car, Chemistry",
+        "Mihalis Dafermos, Mathematics",
+        "Andrew A. Houck, Electrical & Comp Engineering",
+        "Leslie M. Schoop, Chemistry",
+        "Mansour Shayegan, Electrical & Comp Engineering",
+        "David N. Spergel, Astrophysical Sciences",
+        "David W. Tank, Princeton Neuroscience Inst",
+        "Jeffrey D. Thompson, Electrical & Comp Engineering",
+        "Salvatore Torquato, Chemistry",
+        "Ned S. Wingreen, Molecular Biology",
+        "Nathalie P. de Leon, Electrical & Comp Engineering"
+      ],
+      [
+        "Steven J. Benton",
+        "Katie Copenhagen",
+        "Justin G. DeZoort",
+        "Aurelien A. Fraisse",
+        "Shafayat Hossain",
+        "Norman C. Jarosik",
+        "Shengkai Li",
+        "Alejandro Martinez-Calvo",
+        "Sebastian Mizera",
+        "Katharine Moran",
+        "Jason L. Puchalla",
+        "Gautam Satishchandran",
+        "Zimo Sun",
+        "Andi Tan",
+        "LaNell Williams"
+      ],
+      [
+        "Stephen L. Adler",
+        "Nima Arkani-Hamed",
+        "Juan M. Maldacena",
+        "Nathan Seiberg"
+      ],
+      [
+        "Program length\n5 years",
+        "Fee\n$75",
+        "GRE\nGeneral Test - optional/not required; Subject Test in Physics - optional/not required",
+        "For a full list of faculty members and fellows please visit the department or program website."
+      ]
+    ],
+    "https://umdphysics.umd.edu/research/research-areas/physics-education-research.html": [
+      [
+        "Elby, Andrew",
+        "Turpen, Chandra",
+        "Chandra Turpen Wins 2018 Women of Influence Award",
+        "Edward \u201cJoe\u201d Redish 75th Birthday Celebration & Golden Jubilee",
+        "Redish to be Awarded 2013 Oersted Medal",
+        "Professor Redish on NPR's All Things Considered",
+        "Professor Redish Interviewed for Radio Documentary, \"Don't Lecture Me\"",
+        "UMD-PERG Cited as Exemplary Research Group in Science's Education Forum Section",
+        "3M Geo",
+        "Biophysics"
+      ]
+    ],
+    "https://physics.brown.edu/": [
+      [
+        "Site Navigation",
+        "Dynamic research and innovations that impact our daily lives.",
+        "What's New",
+        "Visit us on social media",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation"
+      ],
+      [
+        "Physics Fundamentals Announces the First Annual Astrophotography Contest",
+        "Episode 9 of Physics Fundamentals, \"The Physics of Radio Waves\" with Jonathan Pober",
+        "New report co-written by APS President-elect Brad Marston: The daunting physics of carbon removal",
+        "The 2025 Simons Puerto Rico Winter School for Computational Physics",
+        "Brown astronomers create new technique to eliminate signals disrupting sensitive radio telescopes",
+        "Special seminar featuring Simons Foundation President David Spergel",
+        "Physics Colloquium Featuring Kimani Toussaint, Brown Engineering",
+        "Brad Marston's work featured in New Scientist",
+        "New Faculty News: Assistant Professor Aaron Hui discusses his research",
+        "Department of Physics at Brown University"
+      ],
+      [
+        "Special seminar featuring Simons Foundation President David Spergel",
+        "February 10, 2025\n\n\n\nRead Article",
+        "Open details for Special seminar featuring Simons Foundation President David Spergel"
+      ],
+      [
+        "Facebook",
+        "Youtube",
+        "Instagram",
+        "Linkedin"
+      ]
+    ],
+    "https://physics.mit.edu/": [
+      [
+        "Graduate Program",
+        "Undergraduate Program",
+        "Diversity & Inclusion",
+        "Scroll"
+      ],
+      [
+        "Undergraduate",
+        "Graduate",
+        "Pappalardo Fellowships in Physics",
+        "MIT scientists engineer starfish cells to shape-shift in response to light",
+        "Device enables direct communication among multiple quantum processors",
+        "Professor Emeritus Lee Grodzins, pioneer in nuclear physics, dies at 98"
+      ]
+    ],
+    "https://cst.temple.edu/department-physics/graduate-program/graduate-courses": [
+      [
+        "PHYS 5000. Topical Seminar. 3 Credit Hours.",
+        "PHYS 5001. Introduction to Quantum Computing. 3 Credit Hours.",
+        "PHYS 5002. Physics Research and Ethics. 1 Credit Hour.",
+        "PHYS 5101. Analytical Mechanics. 3 Credit Hours.",
+        "PHYS 5301. Electromagnetic Theory. 3 Credit Hours.",
+        "PHYS 5302. Advanced Electromagnetic Theory. 3 Credit Hours.",
+        "PHYS 5501. Mathematical Physics. 3 Credit Hours.",
+        "PHYS 5502. Computational and Mathematical Physics. 3 Credit Hours.",
+        "PHYS 5701. Quantum Mechanics I. 3 Credit Hours.",
+        "PHYS 5702. Quantum Mechanics II. 3 Credit Hours.",
+        "PHYS 8001. Practicum Teaching of Physics. 1 Credit Hour.",
+        "PHYS 8004. Problems in Experimental Physics. 1 to 6 Credit Hour.",
+        "PHYS 8005. Problems in Theoretical Physics. 1 to 6 Credit Hour.",
+        "PHYS 8020. Topical Seminar I. 3 Credit Hours.",
+        "PHYS 8030. Topical Seminar II. 3 Credit Hours.",
+        "PHYS 8050. Physics Seminar. 0 Credit Hours.",
+        "PHYS 8102. Statistical Mechanics. 3 Credit Hours.",
+        "PHYS 8701. Quantum Field Theory. 3 Credit Hours.",
+        "PHYS 8702. Solid State Physics. 3 Credit Hours.",
+        "PHYS 8703. Nuclear and Elementary Particle Physics. 3 Credit Hours.",
+        "PHYS 8704. Many Electron Theory. 3 Credit Hours.",
+        "PHYS 8705. Advanced Topics in Nuclear and Particle Physics. 3 Credit Hours.",
+        "PHYS 8985. Teach in Higher Ed: Phys. 2 Credit Hours.",
+        "PHYS 9991. Master's Research Projects. 1 to 6 Credit Hour.",
+        "PHYS 9994. Preliminary Examination Preparation. 1 to 6 Credit Hour.",
+        "PHYS 9995. Capstone Project. 1 to 6 Credit Hour.",
+        "PHYS 9996. Master's Thesis Research. 1 to 6 Credit Hour.",
+        "PHYS 9998. Pre-Dissertation Research / Elevation to Candidacy. 1 to 6 Credit Hour.",
+        "PHYS 9999. Dissertation Research. 1 to 6 Credit Hour."
+      ]
+    ],
+    "https://physics.tcnj.edu/research/overview-of-research/": [
+      [
+        "Campus",
+        "Programs",
+        "Schools"
+      ],
+      [
+        "609.771.2569",
+        "physics@tcnj.edu",
+        "Department Office"
+      ]
+    ],
+    "https://physics.osu.edu/grad/prospective-students-0/research-department-physics/physics-education": [
+      [
+        "Contact info",
+        "PhD, University of Maryland, 1999",
+        "Cognitive and computational models\u00a0of learning process",
+        "Biologically plausible neural network\u00a0models of cognition",
+        "Model based education assessment\u00a0theory and technology",
+        "Experimental and theoretical methods for\u00a0modeling group learning",
+        "Meta-cognitive factors in learning",
+        "Education technology and curriculum for\u00a0in-class polling and web instruction"
+      ]
+    ],
+    "https://phys.washington.edu/fields/physics-education": [
+      [
+        "Novel observations in mixed reality (NOMR)",
+        "Physics Inventory of Quantitative Literacy (PIQL)",
+        "Physics Invention Tasks",
+        "Summer institute for in-service teachers"
+      ],
+      [
+        "Suzanne White Brahmia \n Associate Professor",
+        "Paula R. L. Heron \n Professor",
+        "Donna Messina \n Associate Teaching Professor",
+        "Peter S. Shaffer \n Professor"
+      ]
+    ],
+    "https://www.physics.harvard.edu/academics/grad": [
+      [
+        "Department of Astronomy",
+        "Department of Chemistry",
+        "Department of Mathematics",
+        "John A. Paulson School of Engineering and Applied Sciences (SEAS)",
+        "Biophysics Program",
+        "Molecules, Cells and Organisms Program (MCO)"
+      ]
+    ],
+    "https://cst.temple.edu/department-physics": [
+      [
+        "Graduate programs",
+        "Professional Science Master's, Master's or PhD",
+        "Graduate programs"
+      ]
+    ],
+    "https://www.wesleyan.edu/admission/academics/splashpages/phys.html": [
+      [
+        "BA/MA Program",
+        "Computer Science",
+        "Engineering"
+      ],
+      [
+        "Minor Requirements",
+        "AT A GLANCE",
+        "Research Labs",
+        "Women in Science",
+        "Molecular Biophysics Retreat",
+        "Did you know?",
+        "Resources",
+        "Maps & Directions",
+        "Connect with Us"
+      ]
+    ],
+    "https://physics.osu.edu/research/physics-education-research": [
+      [
+        "Lei Bao, Professor",
+        "Jackie Chini, Associate Professor",
+        "Contact Info",
+        "Geraldine Cochran, Associate Professor",
+        "Andrew Heckler,\u00a0Professor and Vice Chair for Administration",
+        "Chris Orban, Associate Professor (Ohio State Marion branch)"
+      ],
+      [
+        "Contact Info",
+        "Professional Work",
+        "Lab Group",
+        "Professional Website"
+      ]
+    ],
+    "https://physics.mines.edu/undergraduate/education-development/": [
+      [
+        "Studio Physics",
+        "Technology-Based Interactive Engagement",
+        "Additional Projects"
+      ]
+    ],
+    "https://cos.northeastern.edu/physics/": [
+      [
+        "UNDERGRADUATE",
+        "COMBINED MAJORS",
+        "MINORS",
+        "GRADUATE",
+        "GRADUATE CERTIFICATES"
+      ],
+      [
+        "Everything (In Theory)",
+        "Belonging & Equity",
+        "People",
+        "Baris Altunkaynak",
+        "George Alverson",
+        "Tsuguo Aramaki",
+        "Petros Argyres",
+        "Ahmed Atef",
+        "Prasad Bandarkar",
+        "Arun Bansil",
+        "Ning Bao",
+        "Albert-Laszlo Barabasi",
+        "Emanuela Barberis",
+        "Northeastern\u2019s Physics Program",
+        "Northeastern\u2019s Physics Program",
+        "Faculty Research Areas",
+        "Co-op Experiences",
+        "PreMed & PreHealth",
+        "Events",
+        "In the Media"
+      ],
+      [
+        "UNDERGRADUATE",
+        "COMBINED MAJORS",
+        "MINORS",
+        "GRADUATE",
+        "GRADUATE CERTIFICATES"
+      ],
+      [
+        "Behavioral Neuroscience",
+        "Biochemistry",
+        "Bioinformatics",
+        "Biology",
+        "Biotechnology",
+        "Cell & Molecular Biology",
+        "Chemistry and Chemical Biology",
+        "Linguistics",
+        "Marine and Environmental Sciences",
+        "Mathematics",
+        "Network Science Program",
+        "Physics",
+        "PreMed and PreHealth",
+        "Psychology",
+        "Uncategorized"
+      ],
+      [
+        "Baris Altunkaynak",
+        "Associate Teaching Professor and IPL Supervisor",
+        "Physics"
+      ],
+      [
+        "George Alverson",
+        "Emeritus Associate Professor",
+        "Physics"
+      ],
+      [
+        "Tsuguo Aramaki",
+        "Assistant Professor",
+        "Physics"
+      ],
+      [
+        "Petros Argyres",
+        "Emeritus",
+        "Physics"
+      ],
+      [
+        "Ahmed Atef",
+        "Assistant Teaching Professor",
+        "Physics"
+      ],
+      [
+        "Arun Bansil",
+        "University Distinguished Professor",
+        "Physics"
+      ],
+      [
+        "Ning Bao",
+        "Assistant Professor",
+        "Mathematics, Physics"
+      ],
+      [
+        "Albert-Laszlo Barabasi",
+        "Dodge Professor, University Distinguished Professor",
+        "Network Science Program, Physics; Khoury College of Computer Sciences"
+      ],
+      [
+        "Network Science Program",
+        "Physics",
+        "Khoury College of Computer Sciences"
+      ],
+      [
+        "Emanuela Barberis",
+        "Professor",
+        "Physics"
+      ],
+      [
+        "Members:",
+        "Tsuguo Aramaki | Dark matter searches, gamma-ray observations | Website",
+        "Jonathan Blazek | Cosmology and galaxy surveys | Website",
+        "Dacheng Lin | Time-domain high-energy astrophysics | Website",
+        "Jacqueline McCleary | Galaxy clusters and weak gravitational lensing"
+      ],
+      [
+        "Members:",
+        "Paul Champion | Quantum biology, proton tunneling, ultrafast protein dynamics and coherence| Website",
+        "Maijia Liao | Cytoskeletons in Neurons, Advanced Imaging Methods, Physics of Living Matter | Website",
+        "Bryan Spring | Cancer photomedicine, biophysical microscopy, laser microsurgery | Website",
+        "Srinivas (Sri) Sridhar | Quantitative MRI, Drug Delivery, Neurovisual Science| Website",
+        "Paul Stevenson | Quantum sensing, nanoscale biophysics, membrane dynamics | Website",
+        "Vivek Venkatachalam | Physics of brains and behavior| Website",
+        "Meni Wanunu | Nanoscale biophysics, nanopores, optics | Website"
+      ],
+      [
+        "Members:",
+        "Alberto de la Torre Duran | Quantum materials | Website",
+        "Don Heiman | Topological Materials, MBE Films, AFM Spintronics | Website",
+        "Nathan Israeloff | Polymer glass aging, non-equilibrium measurements, fluctuation\u2013dissipation",
+        "Swastik Kar | Graphene, 2D Boron Nitride, h-BCN, Carbon Nanotubes, Topological Insulators | Website",
+        "Sergey Kravchenko | Metal-insulator transition, Wigner crystallization, Flat-band materials",
+        "Latika Menon | TiO2 nanotubes, Carbon nanotubes, GaN nanowires",
+        "Srinivas (Sri) Sridhar | Quantitative MRI, Drug Delivery, Neurovisual Science| Website",
+        "Paul Stevenson | Quantum sensors, quantum communication, nanoscale biophysics| Website",
+        "Meni Wanunu | Nanoscale biophysics, nanopores, optics | Website",
+        "Mingzhong Wu | Topological quantum materials, magnetic thin films, spintronics, magnonics | Website"
+      ],
+      [
+        "Members:",
+        "Emanuela Barberis\u00a0| CMS experiment",
+        "Johan Bonilla Castro\u00a0| CMS experiment",
+        "Toyoko Orimoto\u00a0| CMS experiment",
+        "Louise Skinnari\u00a0| CMS experiment",
+        "Darien Wood\u00a0| CMS experiment"
+      ],
+      [
+        "Members:",
+        "Max Bi \u00a0| Mechanics of cellular assemblies | Website",
+        "Michele Di Pierro| Physical genetics| Website",
+        "Alain Karma\u00a0| Cardiac nonlinear dynamics | Website",
+        "Herbie Levine\u00a0| Cancer and immune system dynamics |\u00a0Website",
+        "Armen Stepanyants | Neurogeometry and brain function |\u00a0Website",
+        "Paul Whitford\u00a0| Computational molecular biophysics |\u00a0Website"
+      ],
+      [
+        "Members:",
+        "Arun Bansil\u00a0| First principles studies oftopological materials and optical spectroscopy",
+        "Hai-Ping Cheng| Theory, modeling, and simulation of multi-scale physics and systems",
+        "Gregory Fiete\u00a0| Topology, magnetism, and quantum materials out-of-equilibrium | Website",
+        "Alain Karma | Pattern formation and nonequilibrium phenomena in materials",
+        "Yizhi You | Quantum Fields and Entangled Qubits in Correlated Systems | Website"
+      ],
+      [
+        "Members:",
+        "Ning Bao | Holography, Quantum Information Theory | Website",
+        "James Halverson | AI, String Theory, Mathematics, String Phenomenology | Website",
+        "Sarah Harrison| Quantum Field Theory, String Theory, Mathematics | Website",
+        "Pran Nath | Supergravity, Particle Physics, Cosmology",
+        "Brent Nelson | AI, Cosmology, String Phenomenology",
+        "Fabian Ruehle | AI, String Theory, Mathematics, String Phenomenology | Website",
+        "Tomasz Taylor | Holography, Scattering Amplitudes"
+      ],
+      [
+        "Physics",
+        "Fruit and alcohol? Chocolate and cheese? The surprising science of food pairing",
+        "August 27, 2024"
+      ],
+      [
+        "Albert-L\u00e1szl\u00f3 Barab\u00e1si",
+        "Physics",
+        "August 6, 2024"
+      ],
+      [
+        "Jacqueline McCleary",
+        "Physics",
+        "Could galaxy cluster collisions be used as dark matter detectors?",
+        "August 1, 2024"
+      ],
+      [
+        "Jacqueline McCleary",
+        "Physics",
+        "Climate change is messing with time more than previously thought, scientists find",
+        "July 15, 2024"
+      ],
+      [
+        "Fabian Ruehle",
+        "Physics",
+        "Does String Theory actually describe the world? AI may be able to tell",
+        "May 27, 2024"
+      ],
+      [
+        "Jonathan Blazek",
+        "Physics",
+        "Total solar eclipse 2024 highlights: Rare phenomenon darkens North America\u2019s skies",
+        "April 9, 2024"
+      ],
+      [
+        "Jonathan Blazek",
+        "Physics",
+        "Solar eclipse map shows path of totality for 2024 event",
+        "April 8, 2024"
+      ],
+      [
+        "Albert-Laszlo Barabasi",
+        "Physics",
+        "8 So-Called \u2018Health Foods\u2019 That Aren\u2019t As Healthy As You Thought",
+        "March 26, 2024"
+      ],
+      [
+        "Jonathan Blazek",
+        "Physics",
+        "Once-in-a-Lifetime Nova Outburst to Add \u2018New\u2019 Star to Sky This Year",
+        "March 20, 2024"
+      ],
+      [
+        "edge research into the nature of the universe, including dark energy, large",
+        "and ground",
+        "and space",
+        "based observatories to carry out multi",
+        "messenger study of high",
+        "Newton, and HST)."
+      ]
+    ],
+    "https://www.physics.wisc.edu/": [
+      [
+        "Matt Otten part of project to develop novel quantum sensorMarch 24, 2025",
+        "NOvA study sets tighter limit on sterile neutrinosFebruary 26, 2025",
+        "Highlights from APS DPPFebruary 18, 2025",
+        "Welcome, Prof. Jakob Moritz!January 29, 2025",
+        "All Physics News \nMore"
+      ],
+      [
+        "Matt Otten part of project to develop novel quantum sensor",
+        "NOvA study sets tighter limit on sterile neutrinos",
+        "Highlights from APS DPP",
+        "Welcome, Prof. Jakob Moritz!",
+        "uwmadphysics",
+        "How many languages are spoken in the CMS experiment? Shivani Lomte shares her expertise in Marathi",
+        "Dan Hooper featured in Quanta article at the final parsec problem",
+        "Halzen featured in APS story on neutrino detector experiments",
+        "uwmadphysics"
+      ],
+      [
+        "Spring recessWed, Mar 26, 12:00am - 12:00am",
+        "Spring recessThu, Mar 27, 12:00am - 12:00am",
+        "Spring recessFri, Mar 28, 12:00am - 12:00am",
+        "Spring recessSat, Mar 29, 12:00am - 12:00am",
+        "Spring recessSun, Mar 30, 12:00am - 12:00am"
+      ],
+      [
+        "Spring into physics this break!\n\nSprings are every",
+        "Did you catch the lunar eclipse last night? Did yo",
+        "Get ready for the total lunar eclipse tonight with",
+        "Neutrinos have always been difficult to study beca"
+      ],
+      [
+        "Spring into physics this break!\n\nSprings are every",
+        "Did you catch the lunar eclipse last night? Did yo",
+        "Get ready for the total lunar eclipse tonight with",
+        "Neutrinos have always been difficult to study beca"
+      ],
+      [
+        "running hands",
+        "on science museum in North America (the Ingersoll Physics Museum), one of the longest",
+        "running science demonstration shows (The Wonders of Physics), and the first MS in Physics",
+        "Quantum Computing program in the country."
+      ],
+      [
+        "Madison occupies the ancestral lands of the Ho",
+        "Chunk, a place their nation has called Teejop since time immemorial. In an 1832 treaty, the Ho",
+        "Chunk from Wisconsin. We commemorate the resiliency of the Ho",
+        "Chunk Nation, along with the eleven other First Nations of Wisconsin."
+      ]
+    ],
+    "https://www.holycross.edu/academics/program/physics": [
+      [
+        "Experimental Electronics",
+        "Introductory Physics 1: Mechanics, Fluids and Waves",
+        "Modern Physics",
+        "Modern Physics Lab",
+        "Classical Mechanics",
+        "Experimental Optics",
+        "Quantum Computing",
+        "Introduction To Astrophysics"
+      ],
+      [
+        "You are here:",
+        "Areas of Study",
+        "Requirements",
+        "Sample Courses",
+        "Meet Your Department Chair",
+        "Opportunities",
+        "Holy Cross and Worcester Polytechnic Institute To Develop Dual Degree Programs",
+        "Holy Cross Professor, Students Publish Wormhole Data in Respected Physics Journal",
+        "Social",
+        "Footer",
+        "Social",
+        "Site Menu",
+        "Secondary Menu",
+        "Main Menu",
+        "Secondary Menu",
+        "Info For Menu"
+      ],
+      [
+        "Majors",
+        "Minors",
+        "Summer Research Program",
+        "Women in Physics",
+        "Graduate Engineering Programs",
+        "Workshop Tutors",
+        "Teacher Education Program",
+        "Navy ROTC With a Physics Major",
+        "Nugent Gold Medal"
+      ]
+    ],
+    "https://www.hamilton.edu/academics/departments/physics": [
+      [
+        "Exhibit broad understanding in foundational physics",
+        "Use foundational physics to analyze a diverse set of complex problems",
+        "Demonstrate skills for experimental physics",
+        "Demonstrate skills in technical communication"
+      ],
+      [
+        "Optical Physicist, NASA Headquarters",
+        "Mechanical Engineer, U.S. Navy",
+        "Professor of Physics, University of Michigan",
+        "Materials Science Engineer, United Technologies Carrier Corp.",
+        "Associate Editor, McGraw-Hill",
+        "Engineer, General Motors",
+        "Senior Scientist, Lawrence Berkeley National Laboratory",
+        "Director, Global Financial Systems, Foster Wheeler Corp.",
+        "Physics Teacher, Natick Public Schools"
+      ],
+      [
+        "Utility",
+        "You are here:",
+        "Physics",
+        "A Sampling of Courses",
+        "Meet Our Faculty",
+        "Faces & Spaces",
+        "Careers After Hamilton",
+        "Explore Hamilton Stories",
+        "Social",
+        "Social",
+        "Footer",
+        "Site Menu",
+        "Secondary",
+        "Actions",
+        "Support",
+        "Audience",
+        "Site Search"
+      ],
+      [
+        "Students Will Learn To:",
+        "Introduction to Astronomy",
+        "Explore these select courses:",
+        "Physics and Art",
+        "The Mechanical Universe",
+        "Quantum Physics",
+        "General Relativity",
+        "Electromagnetic Theory",
+        "Gordon Jones\n\n\n\ufeff",
+        "Katherine Brown (Jones-Smith)\n\n\n\ufeff",
+        "Charles Collett\n\n\n\ufeff",
+        "Viva Horowitz\n\n\n\ufeff",
+        "Amani Jayakody",
+        "Adam Lark\n\n\n\ufeff",
+        "Seth Major\n\n\n\ufeff",
+        "Megan Marshall Smith\n\n\n\ufeff",
+        "Peter\u2019s Observatory"
+      ]
+    ],
+    "http://catalog.illinois.edu/graduate/engineering/teaching-physics-ms/": [
+      [
+        "Requirement",
+        "Other Requirements and Conditions may overlap",
+        "A minimum 16 PHYS credit hours, with 8 at the 500 level.",
+        "A minimum of 12 500-level credit hours applied toward the degree.",
+        "Minimum GPA:"
+      ]
+    ],
+    "https://physics-astronomy.jhu.edu/graduate/": [
+      [
+        "Fellowships",
+        "Teaching and research assistantships",
+        "Resources",
+        "Graduate Policies",
+        "Department Resources",
+        "Footer",
+        "Legal Navigation"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:35:06"
+}

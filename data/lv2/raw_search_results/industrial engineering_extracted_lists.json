@@ -1,0 +1,1983 @@
+{
+  "level1_term": "industrial engineering",
+  "url_verification_status": {
+    "https://www.mccormick.northwestern.edu/industrial/research/research-areas/": true,
+    "https://mie.uic.edu/about/ie/": false,
+    "https://www.mccormick.northwestern.edu/industrial/academics/phd/curriculum-focus-areas.html": true,
+    "https://www.niu.edu/ceet/academics/industrial-and-systems-engineering/index.shtml": true,
+    "https://engineering.purdue.edu/IE/Research": true,
+    "https://www.niu.edu/mkrishna/teaching/index.shtml": true,
+    "http://catalog.illinois.edu/graduate/engineering/industrial-engineering-phd/": true,
+    "https://guide.wisc.edu/graduate/industrial-systems-engineering/industrial-engineering-ms/industrial-engineering-research-ms/": true,
+    "https://engineering.wisc.edu/programs/degrees/industrial-engineering-research-ms/": true,
+    "https://engineering.purdue.edu/IE/academics/graduate": false,
+    "https://guide.berkeley.edu/graduate/degree-programs/industrial-engineering/": false,
+    "https://www.clemson.edu/cecas/departments/ie/research/": true,
+    "https://www.ime.psu.edu/research/index.aspx": true,
+    "https://umdearborn.edu/cecs/departments/industrial-and-manufacturing-systems-engineering": true,
+    "https://www.utoledo.edu/programs/grad/industrial-engineering": true,
+    "https://tickle.utk.edu/ise/": true,
+    "https://ieor.columbia.edu/": true,
+    "https://soe.rutgers.edu/academics/majors-and-areas-study/industrial-and-systems-engineering": true,
+    "https://engineering.nyu.edu/academics/programs/industrial-engineering-ms": true,
+    "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/": true,
+    "https://industrial-engineering.uark.edu/": true,
+    "https://engineering.tamu.edu/industrial/academics/degrees/graduate/ms-ie.html": true,
+    "https://iems.ucf.edu/research/areas-of-research/": true,
+    "https://catalog.utexas.edu/graduate/areas-of-study/engineering/operations-research-industrial-engineering/": true,
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/industrialandsystemsengineering/": true,
+    "https://engineering.louisville.edu/academics/areasofstudy/industrialengineering/": true,
+    "https://www.umass.edu/engineering/mechanical-and-industrial-engineering": true,
+    "https://cse.umn.edu/isye/phd-curriculum": true,
+    "https://scai.engineering.asu.edu/graduate-industrial-engineering/": false
+  },
+  "verified_lists_per_url": {
+    "https://www.mccormick.northwestern.edu/industrial/research/research-areas/": 3,
+    "https://mie.uic.edu/about/ie/": 0,
+    "https://www.mccormick.northwestern.edu/industrial/academics/phd/curriculum-focus-areas.html": 5,
+    "https://www.niu.edu/ceet/academics/industrial-and-systems-engineering/index.shtml": 2,
+    "https://engineering.purdue.edu/IE/Research": 2,
+    "https://www.niu.edu/mkrishna/teaching/index.shtml": 1,
+    "http://catalog.illinois.edu/graduate/engineering/industrial-engineering-phd/": 3,
+    "https://guide.wisc.edu/graduate/industrial-systems-engineering/industrial-engineering-ms/industrial-engineering-research-ms/": 4,
+    "https://engineering.wisc.edu/programs/degrees/industrial-engineering-research-ms/": 1,
+    "https://engineering.purdue.edu/IE/academics/graduate": 0,
+    "https://guide.berkeley.edu/graduate/degree-programs/industrial-engineering/": 0,
+    "https://www.clemson.edu/cecas/departments/ie/research/": 2,
+    "https://www.ime.psu.edu/research/index.aspx": 2,
+    "https://umdearborn.edu/cecs/departments/industrial-and-manufacturing-systems-engineering": 1,
+    "https://www.utoledo.edu/programs/grad/industrial-engineering": 3,
+    "https://tickle.utk.edu/ise/": 1,
+    "https://ieor.columbia.edu/": 1,
+    "https://soe.rutgers.edu/academics/majors-and-areas-study/industrial-and-systems-engineering": 3,
+    "https://engineering.nyu.edu/academics/programs/industrial-engineering-ms": 2,
+    "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/": 1,
+    "https://industrial-engineering.uark.edu/": 2,
+    "https://engineering.tamu.edu/industrial/academics/degrees/graduate/ms-ie.html": 1,
+    "https://iems.ucf.edu/research/areas-of-research/": 2,
+    "https://catalog.utexas.edu/graduate/areas-of-study/engineering/operations-research-industrial-engineering/": 2,
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/industrialandsystemsengineering/": 4,
+    "https://engineering.louisville.edu/academics/areasofstudy/industrialengineering/": 2,
+    "https://www.umass.edu/engineering/mechanical-and-industrial-engineering": 2,
+    "https://cse.umn.edu/isye/phd-curriculum": 1,
+    "https://scai.engineering.asu.edu/graduate-industrial-engineering/": 0
+  },
+  "total_lists_per_url": {
+    "https://www.mccormick.northwestern.edu/industrial/research/research-areas/": 4,
+    "https://mie.uic.edu/about/ie/": 1,
+    "https://www.mccormick.northwestern.edu/industrial/academics/phd/curriculum-focus-areas.html": 8,
+    "https://www.niu.edu/ceet/academics/industrial-and-systems-engineering/index.shtml": 5,
+    "https://engineering.purdue.edu/IE/Research": 3,
+    "https://www.niu.edu/mkrishna/teaching/index.shtml": 4,
+    "http://catalog.illinois.edu/graduate/engineering/industrial-engineering-phd/": 5,
+    "https://guide.wisc.edu/graduate/industrial-systems-engineering/industrial-engineering-ms/industrial-engineering-research-ms/": 16,
+    "https://engineering.wisc.edu/programs/degrees/industrial-engineering-research-ms/": 13,
+    "https://engineering.purdue.edu/IE/academics/graduate": 2,
+    "https://guide.berkeley.edu/graduate/degree-programs/industrial-engineering/": 48,
+    "https://www.clemson.edu/cecas/departments/ie/research/": 3,
+    "https://www.ime.psu.edu/research/index.aspx": 6,
+    "https://umdearborn.edu/cecs/departments/industrial-and-manufacturing-systems-engineering": 4,
+    "https://www.utoledo.edu/programs/grad/industrial-engineering": 6,
+    "https://tickle.utk.edu/ise/": 1,
+    "https://ieor.columbia.edu/": 2,
+    "https://soe.rutgers.edu/academics/majors-and-areas-study/industrial-and-systems-engineering": 3,
+    "https://engineering.nyu.edu/academics/programs/industrial-engineering-ms": 8,
+    "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/": 1,
+    "https://industrial-engineering.uark.edu/": 12,
+    "https://engineering.tamu.edu/industrial/academics/degrees/graduate/ms-ie.html": 1,
+    "https://iems.ucf.edu/research/areas-of-research/": 2,
+    "https://catalog.utexas.edu/graduate/areas-of-study/engineering/operations-research-industrial-engineering/": 3,
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/industrialandsystemsengineering/": 8,
+    "https://engineering.louisville.edu/academics/areasofstudy/industrialengineering/": 6,
+    "https://www.umass.edu/engineering/mechanical-and-industrial-engineering": 5,
+    "https://cse.umn.edu/isye/phd-curriculum": 2,
+    "https://scai.engineering.asu.edu/graduate-industrial-engineering/": 6
+  },
+  "verified_lists_ids": {
+    "https://www.mccormick.northwestern.edu/industrial/research/research-areas/": [
+      0,
+      1,
+      2
+    ],
+    "https://mie.uic.edu/about/ie/": [],
+    "https://www.mccormick.northwestern.edu/industrial/academics/phd/curriculum-focus-areas.html": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "https://www.niu.edu/ceet/academics/industrial-and-systems-engineering/index.shtml": [
+      0,
+      3
+    ],
+    "https://engineering.purdue.edu/IE/Research": [
+      1,
+      2
+    ],
+    "https://www.niu.edu/mkrishna/teaching/index.shtml": [
+      1
+    ],
+    "http://catalog.illinois.edu/graduate/engineering/industrial-engineering-phd/": [
+      0,
+      2,
+      4
+    ],
+    "https://guide.wisc.edu/graduate/industrial-systems-engineering/industrial-engineering-ms/industrial-engineering-research-ms/": [
+      3,
+      4,
+      6,
+      7
+    ],
+    "https://engineering.wisc.edu/programs/degrees/industrial-engineering-research-ms/": [
+      3
+    ],
+    "https://engineering.purdue.edu/IE/academics/graduate": [],
+    "https://guide.berkeley.edu/graduate/degree-programs/industrial-engineering/": [],
+    "https://www.clemson.edu/cecas/departments/ie/research/": [
+      1,
+      2
+    ],
+    "https://www.ime.psu.edu/research/index.aspx": [
+      4,
+      5
+    ],
+    "https://umdearborn.edu/cecs/departments/industrial-and-manufacturing-systems-engineering": [
+      2
+    ],
+    "https://www.utoledo.edu/programs/grad/industrial-engineering": [
+      0,
+      4,
+      5
+    ],
+    "https://tickle.utk.edu/ise/": [
+      0
+    ],
+    "https://ieor.columbia.edu/": [
+      0
+    ],
+    "https://soe.rutgers.edu/academics/majors-and-areas-study/industrial-and-systems-engineering": [
+      0,
+      1,
+      2
+    ],
+    "https://engineering.nyu.edu/academics/programs/industrial-engineering-ms": [
+      0,
+      2
+    ],
+    "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/": [
+      0
+    ],
+    "https://industrial-engineering.uark.edu/": [
+      0,
+      7
+    ],
+    "https://engineering.tamu.edu/industrial/academics/degrees/graduate/ms-ie.html": [
+      0
+    ],
+    "https://iems.ucf.edu/research/areas-of-research/": [
+      0,
+      1
+    ],
+    "https://catalog.utexas.edu/graduate/areas-of-study/engineering/operations-research-industrial-engineering/": [
+      0,
+      2
+    ],
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/industrialandsystemsengineering/": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "https://engineering.louisville.edu/academics/areasofstudy/industrialengineering/": [
+      1,
+      3
+    ],
+    "https://www.umass.edu/engineering/mechanical-and-industrial-engineering": [
+      0,
+      4
+    ],
+    "https://cse.umn.edu/isye/phd-curriculum": [
+      0
+    ],
+    "https://scai.engineering.asu.edu/graduate-industrial-engineering/": []
+  },
+  "num_urls": 40,
+  "num_lists": 188,
+  "url_to_lists": {
+    "https://www.mccormick.northwestern.edu/industrial/research/research-areas/": [
+      [
+        "Applied Statistics & Statistical Learning",
+        "Financial Engineering",
+        "Healthcare Engineering",
+        "Optimization",
+        "Computational Social Science",
+        "Logistics & Operations",
+        "Stochastic Analysis & Simulation"
+      ],
+      [
+        "Applied Statistics & Statistical Learning",
+        "Financial Engineering",
+        "Healthcare Engineering",
+        "Optimization",
+        "Computational Social Science",
+        "Logistics & Operations",
+        "Stochastic Analysis & Simulation"
+      ],
+      [
+        "Applied Statistics & Statistical Learning",
+        "Healthcare Engineering",
+        "Optimization",
+        "COMPUTATIONAL SOCIAL SCIENCE",
+        "Logistics and Operations",
+        "Stochastic Analysis & Simulation"
+      ],
+      [
+        "Jump to a Section",
+        "Return to Top",
+        "Return to Top",
+        "Return to Top",
+        "Return to Top",
+        "Return to Top"
+      ]
+    ],
+    "https://mie.uic.edu/about/ie/": [
+      [
+        "People Icon\n\n\n \nUndergraduate (BS)",
+        "User icon\n\n\n\n\n\n\nMaster's (MS)",
+        "Graduate icon\n\n\n\n\n\n\n\n\nDoctoral (PhD)"
+      ]
+    ],
+    "https://www.mccormick.northwestern.edu/industrial/academics/phd/curriculum-focus-areas.html": [
+      [
+        "Core Curriculum",
+        "Advanced Study",
+        "Majors and Minors",
+        "Candidacy Exam",
+        "Dissertation",
+        "Teaching Requirement",
+        "Graduate Program Handbook"
+      ],
+      [
+        "IEMS 401 Applied Mathematical Statistics",
+        "IEMS 450-1 Mathematical Optimization I",
+        "IEMS 460-1 Stochastic Processes I",
+        "IEMS 450-2 Mathematical Optimization II",
+        "IEMS 460-2 Stochastic Processes II",
+        "IEMS 435 Stochastic Simulation",
+        "IEMS 488 Economics and Decision Analysis",
+        "IEMS 402 Statistical Learning"
+      ],
+      [
+        "Mathematics",
+        "Economics",
+        "Engineering",
+        "Management",
+        "Social sciences"
+      ],
+      [
+        "IEMS 441 Social Network Analysis",
+        "IEMS 473 Financial Engineering",
+        "IEMS 481 Logistics",
+        "IEMS 482 Operations",
+        "IEMS 485 Healthcare Engineering",
+        "OPNS 521 Foundations of Operations Management",
+        "OPNS 524 Empirical Methods in Operations Management"
+      ],
+      [
+        "Analytics (minor only)",
+        "Stochastic Analysis & Simulation",
+        "Optimization",
+        "Financial Engineering",
+        "Logistics & Operations",
+        "Healthcare Engineering",
+        "Applied Statistics & Statistical Learning",
+        "Management Science"
+      ],
+      [
+        "Engineering Home",
+        "IEMS Department",
+        "Academics",
+        "PhD Program",
+        "Curriculum & Focus Areas"
+      ],
+      [
+        "Core Curriculum",
+        "Advanced Study",
+        "Majors and Minors",
+        "Candidacy Exam",
+        "Dissertation",
+        "Teaching Requirement",
+        "Graduate Program Handbook"
+      ],
+      [
+        "Jump to a Section",
+        "View the Curriculum Planning Worksheet for the PhD Degree",
+        "Return to Top",
+        "Return to Top",
+        "Return to Top",
+        "(i)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \u00a0Performance in Core Courses",
+        "(ii)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \u00a0Performance in the Oral Exam",
+        "Evaluation",
+        "MS Degree Conferral",
+        "Return to Top",
+        "Return to Top",
+        "Return to Top",
+        "Return to Top"
+      ]
+    ],
+    "https://www.niu.edu/ceet/academics/industrial-and-systems-engineering/index.shtml": [
+      [
+        "College of Engineering and Engineering Technology",
+        "Academic Departments and Programs",
+        "Industrial and Systems Engineering"
+      ],
+      [
+        "Mission, Objective and Outcomes",
+        "Accreditation",
+        "Enrollment and Degree Data"
+      ],
+      [
+        "Mission, Objective and Outcomes",
+        "Accreditation",
+        "Enrollment and Degree Data"
+      ],
+      [
+        "Health systems engineering emphasis",
+        "Manufacturing systems emphasis",
+        "Engineering management emphasis"
+      ],
+      [
+        "Shi-Jie (Gary) Chen, Ph.D.",
+        "Ehsan Asoudegi, Ph.D.",
+        "James Bailey, J.D.",
+        "Niechen Chen, Ph.D.",
+        "Joseph Cross, M.S.",
+        "Purushothaman (Purush) Damodaran, Ph.D.",
+        "Omar A. Ghrayeb, Ph.D.",
+        "Jaejin Hwang, Ph.D.",
+        "Tracy Mereness",
+        "Reinaldo J. Moraga, Ph.D.",
+        "Krishnamurthi Murali, Ph.D.",
+        "Chang Soo (CS) Nam",
+        "Christine Nguyen, Ph.D.",
+        "Ziteng Wang, Ph.D.",
+        "Jake Young, M.S."
+      ]
+    ],
+    "https://engineering.purdue.edu/IE/Research": [
+      [
+        "Discover",
+        "Explore",
+        "Connect",
+        "People",
+        "Follow"
+      ],
+      [
+        "Digital Twin - Industrial Operations",
+        "Energy & Sustainability",
+        "Space",
+        "IE Computes",
+        "21st Century Human Development"
+      ],
+      [
+        "Human Factors",
+        "Manufacturing",
+        "Production Systems",
+        "Operations Research"
+      ]
+    ],
+    "https://www.niu.edu/mkrishna/teaching/index.shtml": [
+      [
+        "INEN420 Operations Research, Department of Industrial Engineering.",
+        "CPSC606 Software Engineering, Department of Computer Science.",
+        "CPSC608 Database Systems, Department of Computer Science.",
+        "CPSC689 Software Quality Assurance, Department of Computer Science.",
+        "INEN625 Simulation Methods and Applications, Department of Industrial Engineering."
+      ],
+      [
+        "ISYE442 Engineering Project Management, Department of Industrial Engineering (developed).",
+        "ISYE453 Product Design and Development, Department of Industrial Engineering (proposed).",
+        "ISYE595 Graduate Seminar, Department of Industrial Engineering (proposed)."
+      ],
+      [
+        "Teaching Interests",
+        "Frequently Taught Courses",
+        "Teaching Experience",
+        "New Courses Developed/Proposed",
+        "NIU Links"
+      ],
+      [
+        "Northern Illinois University",
+        "Texas A&M University",
+        "Northern Illinois University",
+        "Texas A&M University"
+      ]
+    ],
+    "http://catalog.illinois.edu/graduate/engineering/industrial-engineering-phd/": [
+      [
+        "computer-aided design",
+        "data analytics",
+        "optimization",
+        "design systems",
+        "manufacturing systems",
+        "nondestructive testing and evaluation",
+        "system dynamics and simulation",
+        "control",
+        "robotics",
+        "real-time decision making",
+        "reliability engineering",
+        "financial engineering",
+        "operations research",
+        "management science",
+        "biomechanics",
+        "human factors",
+        "supply chain logistics"
+      ],
+      [
+        "IE\u00a0599",
+        "IE\u00a0590",
+        "400/500-level IE Courses",
+        "Total Hours"
+      ],
+      [
+        "Requirement",
+        "Minimum GPA:",
+        "Minimum 500-level credit hours applied toward the degree:",
+        "Independent study/project design courses do not count toward 500-level requirement.",
+        "Ph.D. exam and dissertation requirements:",
+        "Qualifying exam",
+        "Preliminary exam",
+        "Final exam or dissertation defense",
+        "Dissertation deposit"
+      ],
+      [
+        "IE\u00a0599",
+        "IE\u00a0590",
+        "400/500-level IE Courses",
+        "Electives in consultation with advisor",
+        "Total Hours"
+      ],
+      [
+        "Requirement",
+        "Minimum GPA:",
+        "Minimum 500-level credit hours applied toward the degree:",
+        "Independent study/project design do not count toward 500-level requirement.",
+        "Ph.D. exam and dissertation requirements:",
+        "Qualifying exam",
+        "Preliminary exam",
+        "Final exam or dissertation defense",
+        "Dissertation deposit"
+      ]
+    ],
+    "https://guide.wisc.edu/graduate/industrial-systems-engineering/industrial-engineering-ms/industrial-engineering-research-ms/": [
+      [
+        "Applicants must first meet all of the requirements of the Graduate School.",
+        "Bachelor's degree or equivalent",
+        "Mathematical Statistics course (for example STAT\u00a0312)",
+        "Computer Programming course"
+      ],
+      [
+        "Bachelor's degree or equivalent",
+        "Mathematical Statistics course (for example STAT\u00a0312)",
+        "Computer Programming course"
+      ],
+      [
+        "Admissions",
+        "Funding",
+        "Minimum Graduate School Requirements",
+        "Named Option Requirements",
+        "Graduate School Policies",
+        "Named Option-Specific Policies",
+        "Professional Development",
+        "People"
+      ],
+      [
+        "Application Requirements",
+        "Application Steps",
+        "Questions",
+        "Graduate School Resources",
+        "Program Resources",
+        "Additional Resources",
+        "Mode of Instruction",
+        "Curricular Requirements",
+        "Required Courses",
+        "Prior Coursework",
+        "Probation",
+        "Advisor / Committee",
+        "Credits Per Term Allowed",
+        "Time Limits",
+        "Grievances and Appeals",
+        "Other",
+        "Graduate School Resources",
+        "Program Resources",
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Teaching Professors",
+        "Teaching Faculty",
+        "Lecturers",
+        "Undergraduate Advisors",
+        "Graduate Program Coordinator",
+        "Resources",
+        "Quick Links",
+        "Madison, WI",
+        "Ask Bucky",
+        "Social Media"
+      ],
+      [
+        "Graduate Assistantships",
+        "Financial Assistance",
+        "Federal Loans",
+        "Mode of Instruction Definitions",
+        "Operations Research, Optimization, and Analytics1",
+        "Health Systems Engineering1",
+        "Human Factors and Ergonomics1",
+        "Advanced Manufacturing and Industrial AI1",
+        "Graduate Credits Earned at Other Institutions",
+        "Undergraduate Credits Earned at Other Institutions or UW-Madison",
+        "Credits Earned as a University Special student at UW\u2013Madison",
+        "Grievance Procedures: Industrial and Systems Engineering",
+        "The Individual Development Plan",
+        "Engineering Career Services",
+        "UW Writing Center"
+      ],
+      [
+        "Doug Wiegmann\nShiyu Zhou (Chair)",
+        "Alberto Del Pia\nTony McDonald\nGabriel Zayas-Cab\u00e1n",
+        "Amanda Smith",
+        "Terry Mann",
+        "Jamie Utphall",
+        "Pam Peterson",
+        "See also Industrial and Systems Engineering Faculty Directory."
+      ],
+      [
+        "Requirements",
+        "Fall Deadline",
+        "Spring Deadline",
+        "Summer Deadline",
+        "GRE (Graduate Record Examinations)",
+        "English Proficiency Test",
+        "Other Test(s) (e.g., GMAT, MCAT)",
+        "Letters of Recommendation Required"
+      ],
+      [
+        "Requirements",
+        "Minimum Credit Requirement",
+        "Minimum Residence Credit Requirement",
+        "Minimum Graduate Coursework Requirement",
+        "Overall Graduate GPA Requirement",
+        "Other Grade Requirements",
+        "Assessments and Examinations",
+        "Language Requirements"
+      ],
+      [
+        "I SY E courses 1",
+        "I\u00a0SY\u00a0E\u00a0790",
+        "or\u00a0I\u00a0SY\u00a0E\u00a0890",
+        "Electives with advisor approval",
+        "Total Credits"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E\u00a0516",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bE\u00a0C\u00a0E\u00a0\u00a0524",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bMATH/\u200bSTAT\u00a0\u00a0525",
+        "I\u00a0SY\u00a0E\u00a0620",
+        "I\u00a0SY\u00a0E\u00a0624"
+      ],
+      [
+        "Other Suggested Courses",
+        "I\u00a0SY\u00a0E\u00a0412",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bMATH\u00a0\u00a0425",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0512",
+        "I\u00a0SY\u00a0E\u00a0517",
+        "I\u00a0SY\u00a0E\u00a0575",
+        "I\u00a0SY\u00a0E\u00a0603",
+        "I\u00a0SY\u00a0E\u00a0612",
+        "I\u00a0SY\u00a0E\u00a0604",
+        "I\u00a0SY\u00a0E/\u200bMATH/\u200bOTM/\u200bSTAT\u00a0\u00a0632",
+        "I\u00a0SY\u00a0E\u00a0645"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E\u00a0417",
+        "I\u00a0SY\u00a0E\u00a0517",
+        "I\u00a0SY\u00a0E\u00a0606",
+        "I\u00a0SY\u00a0E/\u200bPOP\u00a0HLTH\u00a0\u00a0703"
+      ],
+      [
+        "Other Suggested Courses",
+        "I\u00a0SY\u00a0E\u00a0412",
+        "I\u00a0SY\u00a0E\u00a0515",
+        "I\u00a0SY\u00a0E\u00a0516",
+        "I\u00a0SY\u00a0E\u00a0575",
+        "I\u00a0SY\u00a0E/\u200bPHARMACY\u00a0\u00a0608",
+        "I\u00a0SY\u00a0E\u00a0601",
+        "I\u00a0SY\u00a0E\u00a0602",
+        "I\u00a0SY\u00a0E\u00a0603",
+        "I\u00a0SY\u00a0E\u00a0615",
+        "I\u00a0SY\u00a0E/\u200bB\u00a0M\u00a0I\u00a0\u00a0617",
+        "I\u00a0SY\u00a0E\u00a0620",
+        "I\u00a0SY\u00a0E\u00a0624",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0643",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0H\u00a0R\u00a0\u00a0729",
+        "I\u00a0SY\u00a0E\u00a0555",
+        "I\u00a0SY\u00a0E/\u200bPOP\u00a0HLTH\u00a0\u00a0875",
+        "B\u00a0M\u00a0I/\u200bCOMP\u00a0SCI\u00a0\u00a0576",
+        "B\u00a0M\u00a0I\u00a0773",
+        "B\u00a0M\u00a0I/\u200bCOMP\u00a0SCI\u00a0\u00a0776",
+        "OTM\u00a0753",
+        "ED\u00a0PSYCH\u00a0711",
+        "NURSING\u00a0761",
+        "POP\u00a0HLTH/\u200bSOC\u00a0\u00a0797",
+        "POP\u00a0HLTH\u00a0876",
+        "PSYCH\u00a0610",
+        "PSYCH\u00a0710",
+        "STAT/\u200bF&W\u00a0ECOL\u00a0\u00a0571",
+        "STAT/\u200bB\u00a0M\u00a0I\u00a0\u00a0641"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bDS\u00a0\u00a0518",
+        "I\u00a0SY\u00a0E/\u200bPSYCH\u00a0\u00a0549",
+        "I\u00a0SY\u00a0E\u00a0552",
+        "I\u00a0SY\u00a0E\u00a0555",
+        "I\u00a0SY\u00a0E\u00a0562",
+        "I\u00a0SY\u00a0E/\u200bB\u00a0M\u00a0E\u00a0\u00a0564",
+        "I\u00a0SY\u00a0E\u00a0601",
+        "I\u00a0SY\u00a0E\u00a0602",
+        "I\u00a0SY\u00a0E/\u200bB\u00a0M\u00a0E\u00a0\u00a0662",
+        "I\u00a0SY\u00a0E\u00a0699",
+        "I\u00a0SY\u00a0E/\u200bPSYCH\u00a0\u00a0854",
+        "I\u00a0SY\u00a0E/\u200bPSYCH\u00a0\u00a0859",
+        "I\u00a0SY\u00a0E\u00a0961",
+        "CIV\u00a0ENGR\u00a0679"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E\u00a0412",
+        "I\u00a0SY\u00a0E\u00a0415",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0510",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0512",
+        "I\u00a0SY\u00a0E\u00a0515",
+        "I\u00a0SY\u00a0E\u00a0575",
+        "I\u00a0SY\u00a0E\u00a0601",
+        "I\u00a0SY\u00a0E\u00a0603",
+        "I\u00a0SY\u00a0E\u00a0604",
+        "I\u00a0SY\u00a0E\u00a0605",
+        "I\u00a0SY\u00a0E\u00a0612",
+        "I\u00a0SY\u00a0E\u00a0615",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0641",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0643",
+        "I\u00a0SY\u00a0E\u00a0645",
+        "STAT/\u200bM\u00a0E\u00a0\u00a0424"
+      ],
+      [
+        "content/uploads/sites/86/2017/03/IE",
+        "Employer",
+        "Recruitment",
+        "18.pdf"
+      ]
+    ],
+    "https://engineering.wisc.edu/programs/degrees/industrial-engineering-research-ms/": [
+      [
+        "Applicants must first meet all of the requirements of the Graduate School.",
+        "Bachelor\u2019s degree or equivalent",
+        "Mathematical Statistics course (for example STAT\u00a0312)",
+        "Computer Programming course"
+      ],
+      [
+        "Bachelor\u2019s degree or equivalent",
+        "Mathematical Statistics course (for example STAT\u00a0312)",
+        "Computer Programming course"
+      ],
+      [
+        "Industrial and systems engineering department",
+        "Admissions",
+        "Tuition",
+        "Funding",
+        "Minimum graduate school requirements",
+        "Curricular Requirements",
+        "Required Courses",
+        "Touched by cancer, Liu trains artificial intelligence to uncover the genes behind disease",
+        "New country, abundant resources, aptitude for research help undergrad build confidence",
+        "Could neurostimulation help fatigued first responders?",
+        "Become a Badger Engineer"
+      ],
+      [
+        "Application Requirements",
+        "Application Steps",
+        "Questions",
+        "Graduate School Resources",
+        "Program Resources",
+        "Additional Resources",
+        "Operations Research, Optimization, and Analytics1",
+        "Health Systems Engineering1",
+        "Human Factors and Ergonomics1",
+        "Advanced Manufacturing and Industrial AI1"
+      ],
+      [
+        "Fall Deadline",
+        "Spring Deadline",
+        "Summer Deadline",
+        "GRE (Graduate Record Examinations)",
+        "English Proficiency Test",
+        "Other Test(s) (e.g., GMAT, MCAT)",
+        "Letters of Recommendation Required"
+      ],
+      [
+        "Minimum Credit Requirement",
+        "Minimum Residence Credit Requirement",
+        "Minimum Graduate Coursework Requirement",
+        "Overall Graduate GPA Requirement",
+        "Other Grade Requirements",
+        "Assessments and Examinations",
+        "Language Requirements"
+      ],
+      [
+        "I SY E courses 1",
+        "I\u00a0SY\u00a0E\u00a0790",
+        "or\u00a0I\u00a0SY\u00a0E\u00a0890",
+        "Electives with advisor approval",
+        "Total Credits"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E\u00a0516",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bE\u00a0C\u00a0E\u00a0\u00a0524",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bMATH/\u200bSTAT\u00a0\u00a0525",
+        "I\u00a0SY\u00a0E\u00a0620",
+        "I\u00a0SY\u00a0E\u00a0624"
+      ],
+      [
+        "Other Suggested Courses",
+        "I\u00a0SY\u00a0E\u00a0412",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bMATH\u00a0\u00a0425",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0512",
+        "I\u00a0SY\u00a0E\u00a0517",
+        "I\u00a0SY\u00a0E\u00a0575",
+        "I\u00a0SY\u00a0E\u00a0603",
+        "I\u00a0SY\u00a0E\u00a0612",
+        "I\u00a0SY\u00a0E\u00a0604",
+        "I\u00a0SY\u00a0E/\u200bMATH/\u200bOTM/\u200bSTAT\u00a0\u00a0632",
+        "I\u00a0SY\u00a0E\u00a0645"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E\u00a0417",
+        "I\u00a0SY\u00a0E\u00a0517",
+        "I\u00a0SY\u00a0E\u00a0606",
+        "I\u00a0SY\u00a0E/\u200bPOP\u00a0HLTH\u00a0\u00a0703"
+      ],
+      [
+        "Other Suggested Courses",
+        "I\u00a0SY\u00a0E\u00a0412",
+        "I\u00a0SY\u00a0E\u00a0515",
+        "I\u00a0SY\u00a0E\u00a0516",
+        "I\u00a0SY\u00a0E\u00a0575",
+        "I\u00a0SY\u00a0E/\u200bPHARMACY\u00a0\u00a0608",
+        "I\u00a0SY\u00a0E\u00a0601",
+        "I\u00a0SY\u00a0E\u00a0602",
+        "I\u00a0SY\u00a0E\u00a0603",
+        "I\u00a0SY\u00a0E\u00a0615",
+        "I\u00a0SY\u00a0E/\u200bB\u00a0M\u00a0I\u00a0\u00a0617",
+        "I\u00a0SY\u00a0E\u00a0620",
+        "I\u00a0SY\u00a0E\u00a0624",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0643",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0H\u00a0R\u00a0\u00a0729",
+        "I\u00a0SY\u00a0E\u00a0555",
+        "I\u00a0SY\u00a0E/\u200bPOP\u00a0HLTH\u00a0\u00a0875",
+        "B\u00a0M\u00a0I/\u200bCOMP\u00a0SCI\u00a0\u00a0576",
+        "B\u00a0M\u00a0I\u00a0773",
+        "B\u00a0M\u00a0I/\u200bCOMP\u00a0SCI\u00a0\u00a0776",
+        "OTM\u00a0753",
+        "ED\u00a0PSYCH\u00a0711",
+        "NURSING\u00a0761",
+        "POP\u00a0HLTH/\u200bSOC\u00a0\u00a0797",
+        "POP\u00a0HLTH\u00a0876",
+        "PSYCH\u00a0610",
+        "PSYCH\u00a0710",
+        "STAT/\u200bF&W\u00a0ECOL\u00a0\u00a0571",
+        "STAT/\u200bB\u00a0M\u00a0I\u00a0\u00a0641"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E/\u200bCOMP\u00a0SCI/\u200bDS\u00a0\u00a0518",
+        "I\u00a0SY\u00a0E/\u200bPSYCH\u00a0\u00a0549",
+        "I\u00a0SY\u00a0E\u00a0552",
+        "I\u00a0SY\u00a0E\u00a0555",
+        "I\u00a0SY\u00a0E\u00a0562",
+        "I\u00a0SY\u00a0E/\u200bB\u00a0M\u00a0E\u00a0\u00a0564",
+        "I\u00a0SY\u00a0E\u00a0601",
+        "I\u00a0SY\u00a0E\u00a0602",
+        "I\u00a0SY\u00a0E/\u200bB\u00a0M\u00a0E\u00a0\u00a0662",
+        "I\u00a0SY\u00a0E\u00a0699",
+        "I\u00a0SY\u00a0E/\u200bPSYCH\u00a0\u00a0854",
+        "I\u00a0SY\u00a0E/\u200bPSYCH\u00a0\u00a0859",
+        "I\u00a0SY\u00a0E\u00a0961",
+        "CIV\u00a0ENGR\u00a0679"
+      ],
+      [
+        "Highly Recommended Courses",
+        "I\u00a0SY\u00a0E\u00a0412",
+        "I\u00a0SY\u00a0E\u00a0415",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0510",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0512",
+        "I\u00a0SY\u00a0E\u00a0515",
+        "I\u00a0SY\u00a0E\u00a0575",
+        "I\u00a0SY\u00a0E\u00a0601",
+        "I\u00a0SY\u00a0E\u00a0603",
+        "I\u00a0SY\u00a0E\u00a0604",
+        "I\u00a0SY\u00a0E\u00a0605",
+        "I\u00a0SY\u00a0E\u00a0612",
+        "I\u00a0SY\u00a0E\u00a0615",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0641",
+        "I\u00a0SY\u00a0E/\u200bM\u00a0E\u00a0\u00a0643",
+        "I\u00a0SY\u00a0E\u00a0645",
+        "STAT/\u200bM\u00a0E\u00a0\u00a0424"
+      ]
+    ],
+    "https://engineering.purdue.edu/IE/academics/graduate": [
+      [
+        "Discover",
+        "Explore",
+        "Connect",
+        "People",
+        "Follow"
+      ],
+      [
+        "Professional Masters",
+        "Online",
+        "Non-Thesis Masters",
+        "Traditional Masters"
+      ]
+    ],
+    "https://guide.berkeley.edu/graduate/degree-programs/industrial-engineering/": [
+      [
+        "Admissions",
+        "Doctoral Degree Requirements",
+        "Master's Degree Requirements (MS)",
+        "Master's Degree Requirements (MEng)",
+        "Master's Degree Requirements (MAnalytics)",
+        "Courses",
+        "Reach Further",
+        "Welcome from the Chancellor",
+        "UC Berkeley and Student Life",
+        "Academic Policies",
+        "Registration & Enrollment",
+        "Tuition, Fees & Financial Aid",
+        "Print Options"
+      ],
+      [
+        "Normative Time to Advancement",
+        "Normative Time in Candidacy",
+        "Total Normative Time",
+        "Doctoral Entrance Exam",
+        "Curriculum",
+        "Foreign Language(s)",
+        "Qualifying Examination (QE)",
+        "Advancement",
+        "Teaching Opportunities",
+        "Workshops",
+        "Department Chair, Program Director of the Master of Analytics",
+        "Head Graduate Advisor, IEOR MS & PhD",
+        "Head Graduate Advisor, IEOR MEng",
+        "IEOR Graduate Student Services",
+        "IEOR Admissions"
+      ],
+      [
+        "Please visit the IEOR Graduate Student Handbook for the most current information.",
+        "Total normative time to advancement is two to two and a half years.",
+        "Step I:\u00a0This process normally takes one year (to take the entrance exam).",
+        "Total normative time in candidacy is about three years.",
+        "Total normative time is four to five\u00a0years or eight to eleven semesters.",
+        "The entrance examination consists of three parts:",
+        "All required courses for the doctoral entrance examination must be taken for a letter grade.",
+        "In addition to English, the program does not require another language."
+      ],
+      [
+        "Please visit the IEOR Graduate Student Handbook for the most current information.",
+        "Minimum number of units to complete degree: 25 semester units",
+        "Technical Electives (must be taken for a letter grade):",
+        "Leadership Courses (must be taken for a letter grade):",
+        "Capstone Project Courses (must be taken for a letter grade):"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Aswani, Grigas, Pirutinsky"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Goldberg"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Leachman"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Adler, Oren, Ross"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Guo"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Guo"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Alper Atamturk"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: El Ghaoui",
+        "Also listed as: EL\u00a0ENG\u00a0C227C"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Udwani"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Schruben, Guo, Lim"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Sidhu"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Aswani, Grigas"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Udwani"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Kaminsky"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Kaminsky"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Shen, Chen"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Shen"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Shen",
+        "Also listed as: CIV\u00a0ENG\u00a0C258"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Udwani"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Aswani"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Lavaei"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Ross, Schruben, Shanthikumar"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Adler, Oren"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Adler, Oren"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Righter"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Righter"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Atamturk"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Aswani"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Adler, Hochbaum"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Dreyfus"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructor: Hochbaum"
+      ],
+      [
+        "Additional Details",
+        "Subject/Course Level: Industrial Engin and Oper Research/Graduate",
+        "Grading: Letter grade.",
+        "Instructors: Fleming, Lee"
+      ],
+      [
+        "Additional Details",
+        "Grading: Offered for satisfactory/unsatisfactory grade only.",
+        "Instructor: Goldberg"
+      ],
+      [
+        "Alper Atamturk",
+        "4143 Etcheverry Hall",
+        "atamturk@berkeley.edu"
+      ],
+      [
+        "Rhonda Righter",
+        "4187 Etcheverry Hall",
+        "rrighter@berkeley.edu"
+      ],
+      [
+        "Ilan Adler",
+        "4183 Etcheverry Hall",
+        "ilan@berkeley.edu"
+      ],
+      [
+        "IND\u00a0ENG\u00a0262A",
+        "IND\u00a0ENG\u00a0263A",
+        "IND\u00a0ENG\u00a0298",
+        "Group A: Optimization: Select a minimum of one of the following:",
+        "IND\u00a0ENG\u00a0262B",
+        "IND\u00a0ENG\u00a0264",
+        "IND\u00a0ENG\u00a0266",
+        "IND\u00a0ENG\u00a0269",
+        "Group B : Stochastic Modeling: Select a minimum of one of the following:",
+        "IND\u00a0ENG\u00a0222",
+        "IND\u00a0ENG\u00a0231",
+        "IND\u00a0ENG\u00a0261",
+        "IND\u00a0ENG\u00a0263B",
+        "IND\u00a0ENG\u00a0267",
+        "Group C: Modeling and Applied Operations Research: Select a minimum of two of the following: 1",
+        "IND\u00a0ENG\u00a0220",
+        "IND\u00a0ENG\u00a0221",
+        "IND\u00a0ENG\u00a0223",
+        "IND\u00a0ENG\u00a0250",
+        "IND\u00a0ENG\u00a0251",
+        "IND\u00a0ENG\u00a0253",
+        "IND\u00a0ENG\u00a0254",
+        "IND\u00a0ENG\u00a0255",
+        "IND\u00a0ENG\u00a0256"
+      ],
+      [
+        "Optimization courses",
+        "IND\u00a0ENG\u00a0160",
+        "IND\u00a0ENG\u00a0162",
+        "IND\u00a0ENG\u00a0169",
+        "IND\u00a0ENG\u00a0262A",
+        "IND\u00a0ENG\u00a0262B",
+        "IND\u00a0ENG\u00a0264",
+        "IND\u00a0ENG\u00a0266",
+        "IND\u00a0ENG\u00a0268",
+        "IND\u00a0ENG\u00a0269"
+      ],
+      [
+        "Stochastic Models courses",
+        "IND\u00a0ENG\u00a0165",
+        "IND\u00a0ENG\u00a0166",
+        "IND\u00a0ENG\u00a0173",
+        "IND\u00a0ENG\u00a0174",
+        "IND\u00a0ENG\u00a0222",
+        "IND\u00a0ENG\u00a0231",
+        "IND\u00a0ENG\u00a0263A",
+        "IND\u00a0ENG\u00a0263B",
+        "IND\u00a0ENG\u00a0265",
+        "IND\u00a0ENG\u00a0267"
+      ],
+      [
+        "Modeling courses",
+        "IND\u00a0ENG\u00a0145",
+        "IND\u00a0ENG\u00a0150",
+        "IND\u00a0ENG\u00a0153",
+        "IND\u00a0ENG\u00a0156",
+        "IND\u00a0ENG\u00a0215",
+        "IND\u00a0ENG\u00a0220",
+        "IND\u00a0ENG\u00a0221",
+        "IND\u00a0ENG\u00a0223",
+        "IND\u00a0ENG\u00a0230",
+        "IND\u00a0ENG\u00a0245",
+        "IND\u00a0ENG\u00a0250",
+        "IND\u00a0ENG\u00a0251",
+        "IND\u00a0ENG\u00a0252",
+        "IND\u00a0ENG\u00a0253",
+        "IND\u00a0ENG\u00a0254",
+        "IND\u00a0ENG\u00a0255",
+        "IND\u00a0ENG\u00a0256",
+        "IND\u00a0ENG\u00a0290"
+      ],
+      [
+        "ENGIN\u00a0270A",
+        "ENGIN\u00a0270B",
+        "ENGIN\u00a0270C",
+        "ENGIN\u00a0295",
+        "ENGIN\u00a0270K"
+      ],
+      [
+        "Core Analytical Methods Courses",
+        "IND\u00a0ENG\u00a0215",
+        "IND\u00a0ENG\u00a0240",
+        "IND\u00a0ENG\u00a0241",
+        "IND\u00a0ENG\u00a0242A",
+        "IND\u00a0ENG\u00a0243"
+      ],
+      [
+        "on experience in end",
+        "end analytics development from",
+        "learn, Bokeh, and relevant optimization and simulation software."
+      ],
+      [
+        "40 hours of independent study per week8 weeks",
+        "40 hours of independent study per week10 weeks",
+        "40 hours of independent study per week"
+      ]
+    ],
+    "https://www.clemson.edu/cecas/departments/ie/research/": [
+      [
+        "Students Overview",
+        "Advising",
+        "Awards",
+        "Clubs & Resources"
+      ],
+      [
+        "Clemson University",
+        "Industrial Engineering",
+        "Colleges",
+        "Academic Resources",
+        "Outside the Classroom",
+        "Applying to Clemson",
+        "Academic Opportunities",
+        "Financial Aid",
+        "Join Your Clemson Family",
+        "Services On Campus",
+        "Get Involved",
+        "Research Opportunities",
+        "Public Service and Agriculture",
+        "Innovation and Economic Development",
+        "For Tigers",
+        "Campus Resources",
+        "Campus Leadership",
+        "IE Research",
+        "Research News"
+      ],
+      [
+        "Colleges",
+        "Academic Resources",
+        "Outside the Classroom",
+        "Applying to Clemson",
+        "Academic Opportunities",
+        "Financial Aid",
+        "Join Your Clemson Family",
+        "Services On Campus",
+        "Get Involved",
+        "Research Opportunities",
+        "Public Service and Agriculture",
+        "Innovation and Economic Development",
+        "For Tigers",
+        "Campus Resources",
+        "Campus Leadership",
+        "Policy",
+        "Copyright \u00a9 2025",
+        "Resources"
+      ]
+    ],
+    "https://www.ime.psu.edu/research/index.aspx": [
+      [
+        "Christopher Dancy",
+        "Scarlett Miller",
+        "Ling Rothrock",
+        "Yiqi Zhang"
+      ],
+      [
+        "Saurabh Basu",
+        "Edward De Meter",
+        "Sanjay Joshi",
+        "Ilya Kovalenko",
+        "Soundar Kumara",
+        "Jingjing Li",
+        "Vittal Prabhu",
+        "Timothy Simpson",
+        "Robert Voigt",
+        "Hui Yang"
+      ],
+      [
+        "Serhat Aybat",
+        "Enrique del Castillo",
+        "Prakash Chakraborty",
+        "Qiushi Chen",
+        "Terry Friesz",
+        "Catherine Harmonosky",
+        "Soundar Kumara",
+        "Uday Shanbhag",
+        "Anirudh Subramanyam",
+        "Jose Ventura"
+      ],
+      [
+        "Prakash Chakraborty",
+        "Qiushi Chen",
+        "Terry Friesz",
+        "Catherine Harmonosky",
+        "Soundar Kumara",
+        "Vittal Prabhu",
+        "Anirudh Subramanyam",
+        "Jose Ventura",
+        "Hui Yang"
+      ],
+      [
+        "Additive Manufacturing",
+        "Big Data Analytics",
+        "Energy Systems",
+        "Health Care Engineering",
+        "Service Enterprise Engineering",
+        "Smart Manufacturing"
+      ],
+      [
+        "Human Factors/Ergonomics",
+        "Manufacturing",
+        "Operations Research",
+        "Operations, Services, and Analytics"
+      ]
+    ],
+    "https://umdearborn.edu/cecs/departments/industrial-and-manufacturing-systems-engineering": [
+      [
+        "Monday, 8:30 am \u2013 5:00 pm",
+        "Tuesday, 8:30 am \u2013 5:00 pm",
+        "Wednesday, 8:30 am \u2013 5:00 pm"
+      ],
+      [
+        "Breadcrumb",
+        "In this section",
+        "How to Reach us",
+        "Department Staff",
+        "Shan Bao",
+        "Shelly Harris",
+        "Joey Woods",
+        "Advisory Board",
+        "Meet our advisory board members",
+        "Industrial and Manufacturing Systems Engineering",
+        "IMSE News and Announcements",
+        "How can we make driver assist features play nice together?",
+        "Planning for EV infrastructure is complicated. Here\u2019s a better way to do it.",
+        "The challenges with younger drivers and autonomous vehicles",
+        "Class of Fall 2024: CECS graduate Dania Ammar"
+      ],
+      [
+        "Ken AtilganVolkswagen Group of America",
+        "David BlanckTenneco",
+        "John ColeParkwood Engineering Development Corporation",
+        "Dorian DavisNational Science Foundation",
+        "Ali GunalBlue Cross Blue Shield of Michigan",
+        "John K\u00a0LennemanToyota",
+        "Abe SalloumGeneral Electric",
+        "John ShutkoFord Motor Company",
+        "Bandaru\u00a0KrishnaFCA",
+        "Peter SwansonFANUC Robotics America",
+        "Lucy YoungHenry Ford Health System",
+        "Bruno Lombard",
+        "Denso",
+        "Shanshan Qiu",
+        "Deloitte"
+      ],
+      [
+        "time, research",
+        "based Ph.D. degree in Industrial and Systems Engineering. This fully",
+        "funded Ph.D. program of the Rackham Graduate School of the University of Michigan",
+        "Ann Arbor is located, administered, and offered by UM",
+        "Dearborn."
+      ]
+    ],
+    "https://www.utoledo.edu/programs/grad/industrial-engineering": [
+      [
+        "Thermal science",
+        "Solid mechanics",
+        "Manufacturing and industrial engineering"
+      ],
+      [
+        "3D printers",
+        "Tests to explore properties of materials and their performance under cycling loads",
+        "Testing of smart materials,\u00a0including shape memory alloys",
+        "A high-speed wind\u00a0tunnel",
+        "One of the most powerful high-speed Linux HPC Clusters in Ohio"
+      ],
+      [
+        "3D printers",
+        "Tests to explore properties of materials and their performance under cycling loads",
+        "Testing of smart materials,\u00a0including shape memory alloys",
+        "A high-speed wind\u00a0tunnel",
+        "One of the most powerful high-speed Linux HPC Clusters in Ohio"
+      ],
+      [
+        "6 American Society of Mechanical Engineering\u00a0Fellows",
+        "One\u00a0Fellow of the American Ceramic Society",
+        "Book authors, journal editors and conference chairs",
+        "3 Distinguished University Professors, UToledo\u2019s highest faculty award",
+        "5 UToledo Outstanding Teacher\u00a0awardees"
+      ],
+      [
+        "Thermal science",
+        "Solid mechanics",
+        "Manufacturing and industrial engineering"
+      ],
+      [
+        "Optimization",
+        "Probability and statistics",
+        "Solving challenging problems",
+        "Operations research",
+        "Sustainability"
+      ]
+    ],
+    "https://tickle.utk.edu/ise/": [
+      [
+        "Academics",
+        "Degree Programs",
+        "Undergraduate",
+        "Studies",
+        "Graduate",
+        "Studies",
+        "Useful Links",
+        "Get to Know Us",
+        "To Strengthen Your System, Empower Your People",
+        "Li Wins Best Paper Award",
+        "ISE Alum Benefitted from UT Support System",
+        "Check the Stats"
+      ]
+    ],
+    "https://ieor.columbia.edu/": [
+      [
+        "Financial Engineering & Risk Management",
+        "Machine Learning & Analytics",
+        "Optimization",
+        "Operations",
+        "Stochastic Modeling and Simulation"
+      ],
+      [
+        "Management Science and Engineering (MS&E)",
+        "Business Analytics (MSBA)",
+        "Financial Engineering (MSFE)",
+        "Operations Research (MSOR)",
+        "Industrial Engineering (MSIE)"
+      ]
+    ],
+    "https://soe.rutgers.edu/academics/majors-and-areas-study/industrial-and-systems-engineering": [
+      [
+        "Academics",
+        "Majors and Areas of Study",
+        "Industrial and Systems Engineering"
+      ],
+      [
+        "Quality engineer",
+        "Project manager",
+        "Production engineer",
+        "Consultant",
+        "Process engineer",
+        "Reliability engineer",
+        "Operations manager",
+        "Supply chain analyst",
+        "Financial systems analyst",
+        "Data scientist"
+      ],
+      [
+        "Bachelor of Science Degree",
+        "Bachelor of Science/Master of Science Dual Degree",
+        "Bachelor of Science/Master of Engineering Dual Degree",
+        "Master of Science",
+        "Online Master of Engineering in Industrial and Systems Engineering",
+        "Doctoral Degree"
+      ]
+    ],
+    "https://engineering.nyu.edu/academics/programs/industrial-engineering-ms": [
+      [
+        "IE-GY 6113 - Quality Control & Improvement",
+        "IE-GY 6213 - Facility Planning & Design",
+        "IE-GY 6823 - Factory Simulation",
+        "IE-GY 6283 - Operations Research: Probability and Stochastic Models",
+        "IE-GY 6203 - Project Planning and Control",
+        "IE-GY 6473 - Strategic Change Management",
+        "MN-GY 7893- Production Science"
+      ],
+      [
+        "MG-GY 6103 Management Science",
+        "MG-GY 6303 Operations Management",
+        "MG-GY 6343 Human Capital Engineering and Analytics",
+        "MG-GY 8653 New Product Development",
+        "MG-GY 8653 Managing Technological Change and Innovation",
+        "MG-GY 8413 Business Analytics",
+        "MG-GY 8233 Quality Management/Six Sigma",
+        "MY-GY 6463 Supply Chain Management"
+      ],
+      [
+        "IE-GY 6113 - Quality Control & Improvement",
+        "IE-GY 6213 - Facility Planning & Design",
+        "IE-GY 6823 - Factory Simulation",
+        "MN-GY 7893 - Production Science"
+      ],
+      [
+        "MG-GY 6103 Management Science",
+        "MG-GY 6303 Operations Management",
+        "MG-GY 6343 Human Capital Engineering and Analytics",
+        "MG-GY 8653 New Product Development",
+        "MG-GY 8653 Managing Technological Change and Innovation",
+        "MG-GY 8413 Business Analytics",
+        "MG-GY 8233 Quality Control & Improvement",
+        "MG-GY 6463 Supply Chain Management"
+      ],
+      [
+        "Tom Mazzone",
+        "Brian Bikram",
+        "Nick Corrigan"
+      ],
+      [
+        "Elective tracks include:",
+        "Curriculum (Fall 2024 Admits) - 30 Credits",
+        "Curriculum (those admitted prior to Fall 2024) - 30 Credits"
+      ],
+      [
+        "Core Courses (12 Credits)",
+        "Please select four courses from the list below:",
+        "Industrial Engineering (IE) Electives (9 Credits)",
+        "Free Elective Courses (6 Credits)",
+        "Capstone (3 Credits)",
+        "This course should be taken in your last semester:",
+        "IE-GY 9503 Industrial Engineering Capstone"
+      ],
+      [
+        "Core Courses (12 Credits)",
+        "Please Select 4 from the list below:",
+        "Industrial Engineering (IE) Electives (9 Credits)",
+        "Free Elective Courses (9 Credits)"
+      ]
+    ],
+    "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/": [
+      [
+        "Advanced Manufacturing",
+        "Human Factors & Ergonomics",
+        "Operations Research & Analytics",
+        "Systems Engineering & Engineering Management"
+      ]
+    ],
+    "https://industrial-engineering.uark.edu/": [
+      [
+        "Industrial Engineer",
+        "Quality Engineer",
+        "Operations Analyst",
+        "Project Manager",
+        "Data Scientist",
+        "Consultant",
+        "Supply Chain Manager",
+        "Operations Manager",
+        "Logisticians",
+        "Operations Research Analyst",
+        "Health Services Manager",
+        "Engineering Manager",
+        "Systems Engineer"
+      ],
+      [
+        "Amazon",
+        "Google",
+        "American Airlines",
+        "J.B. Hunt Transport",
+        "ArcBest",
+        "John Deere",
+        "Boeing",
+        "Lockheed Martin",
+        "Mastercard",
+        "PepsiCo",
+        "Phillips 66",
+        "Disney",
+        "Sam's Club",
+        "FedEx",
+        "Texas Instruments",
+        "Frito-Lay",
+        "Walmart",
+        "General Motors"
+      ],
+      [
+        "Justin Chimka",
+        "Chase Rainwater",
+        "Manuel D. Rossetti",
+        "Karl Schubert",
+        "Haoming Shen",
+        "Shengfan Zhang"
+      ],
+      [
+        "Justin Chimka",
+        "Rob Curry",
+        "Burak Eksioglu",
+        "Sandra Eksioglu",
+        "John English",
+        "Haitao Liao",
+        "Ed Pohl",
+        "Kelly Sullivan"
+      ],
+      [
+        "Justin Chimka",
+        "Rob Curry",
+        "Burak Eksioglu",
+        "Sandra Eksioglu",
+        "Ashlea Milburn",
+        "Heather Nachtmann",
+        "Chase Rainwater",
+        "Manuel Rossetti",
+        "Kelly Sullivan",
+        "Shengfan Zhang"
+      ],
+      [
+        "Ashlea Milburn",
+        "Heather Nachtmann",
+        "Shengfan Zhang"
+      ],
+      [
+        "Heather Nachtmann",
+        "Kim LaScola Needy",
+        "Greg Parnell",
+        "Ed Pohl"
+      ],
+      [
+        "ReliaSoft Alliance Laboratory\nReliability and Intelligent Systems Engineering Laboratory",
+        "ReliaSoft Alliance Laboratory",
+        "Reliability and Intelligent Systems Engineering Laboratory"
+      ],
+      [
+        "Degrees Offered",
+        "Career Outlook",
+        "Research Areas",
+        "Explore More"
+      ],
+      [
+        "Bachelor of Science in Industrial Engineering and Operations Analytics, B.S.I.E.O.A.",
+        "Master of Science in Industrial Engineering, M.S.I.E.",
+        "Doctor of Philosophy, Ph.D."
+      ],
+      [
+        "Master of Science in Operations Management, M.S.O.M. (100% Online or Hybrid)",
+        "Master of Science in Engineering Management, M.S.E.M. (100% Online)",
+        "Master of Science in Operations Analytics, M.S.O.A. (100% Online)",
+        "Master of Science Engineering, M.S.E. (100% Online)"
+      ],
+      [
+        "ineg@uark.edu",
+        "479-575-3156",
+        "4207 Bell Engineering Center"
+      ]
+    ],
+    "https://engineering.tamu.edu/industrial/academics/degrees/graduate/ms-ie.html": [
+      [
+        "Master of Science in Industrial Engineering, Data Science",
+        "Master of Science in Industrial Engineering, Manufacturing",
+        "Master of Science in Industrial Engineering, Health and Human Systems Engineering",
+        "Master of Science in Industrial Engineering, Operations Research"
+      ]
+    ],
+    "https://iems.ucf.edu/research/areas-of-research/": [
+      [
+        "Organizations and Technology Management",
+        "Production and Operations Management",
+        "Project and Quality Management",
+        "Purchasing and Supply Management",
+        "Decision and Risk Analysis"
+      ],
+      [
+        "Human-System Integration and Ergonomics",
+        "Operations Research",
+        "Production, Supply Chain and Service Engineering",
+        "Modeling and Simulation",
+        "Engineering Management"
+      ]
+    ],
+    "https://catalog.utexas.edu/graduate/areas-of-study/engineering/operations-research-industrial-engineering/": [
+      [
+        "General Information",
+        "Undergraduate",
+        "Graduate",
+        "Medical",
+        "Search Courses",
+        "Glossary",
+        "Archives",
+        "Print Options"
+      ],
+      [
+        "Master of Science in Engineering\nDoctor of Philosophy",
+        "E-mail: orie@me.utexas.edu",
+        "Degree Requirements"
+      ],
+      [
+        "program/areas",
+        "study/operations",
+        "research",
+        "industrial",
+        "engineering"
+      ]
+    ],
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/industrialandsystemsengineering/": [
+      [
+        "Using the Catalog",
+        "Programs and Majors",
+        "Mission, Vision and Values",
+        "The Principles of our Equitable Community",
+        "Academic Calendar",
+        "Information of General Interest",
+        "University Resources",
+        "Undergraduate Studies",
+        "Graduate Study and Research",
+        "College of Arts &\u200b Sciences",
+        "College of Business",
+        "College of Education",
+        "College of Health",
+        "Applied Science",
+        "Arts-\u200bEngineering",
+        "Bioengineering",
+        "Chemical and Biomolecular Engineering",
+        "Civil and Environmental Engineering",
+        "Civil and Environmental Engineering and Earth and Environmental Sciences",
+        "Computer Engineering",
+        "Computer Science and Engineering",
+        "Cooperative Graduate Education",
+        "Data Science",
+        "Electrical Engineering and Engineering Physics",
+        "Electrical and Computer Engineering",
+        "Energy Systems Engineering",
+        "Engineering",
+        "Industrial and Systems Engineering",
+        "Management Science and Engineering",
+        "Materials Science and Engineering",
+        "Mechanical Engineering and Mechanics",
+        "Interdisciplinary and Inter-\u200bCollege Undergraduate Study",
+        "Interdisciplinary Graduate Study and Research",
+        "An Overview from Past and Present",
+        "Administration and Staff",
+        "Previous Editions"
+      ],
+      [
+        "Catalog Home",
+        "A-Z Index",
+        "Catalog Contents",
+        "Course Listing",
+        "Print Options"
+      ],
+      [
+        "Catalog\u00a0Home >",
+        "Courses,\u00a0Programs\u00a0and\u00a0Curricula >",
+        "P.C.\u00a0Rossin\u00a0College\u00a0of\u00a0Engineering\u00a0and\u00a0Applied\u00a0Science >",
+        "Industrial and Systems Engineering"
+      ],
+      [
+        "Convex Analysis & Mathematical Optimization",
+        "Stochastic Models & Statistical Learning",
+        "Continuous & Discrete Optimization",
+        "Optimization Methods in Machine Learning",
+        "Machine Learning & Data Mining",
+        "Reinforcement Learning & Dynamic Programming"
+      ],
+      [
+        "B.S. in Industrial & Systems Engineering",
+        "Career Opportunities",
+        "Information Systems Career Opportunities",
+        "ISE Curriculum",
+        "Program Educational Objectives",
+        "Specifically, these general objectives can be met by graduates that",
+        "3.\u00a0 an ability to communicate effectively with a range of audiences",
+        "7.\u00a0 an ability to acquire and apply new knowledge as needed, using appropriate learning strategies",
+        "ISE Major Requirements",
+        "The ISE degree requires a minimum of 130 credit hours.",
+        "=============================================",
+        "Notes:",
+        "Special Opportunities for ISE students",
+        "The following special opportunities are available to majors in industrial and systems engineering:",
+        "Technical Minor in Engineering Leadership",
+        "Technical Minor in Manufacturing Systems Engineering"
+      ],
+      [
+        "Graduate Programs",
+        "Additional information on all of our graduate programs can be found below.",
+        "M.S. in Industrial and Systems Engineering",
+        "M.Eng. in Industrial and Systems Engineering",
+        "M.S. in Management Science and Engineering",
+        "See separate catalog listing under Management Science and Engineering.",
+        "M.Eng. in Management Science and Engineering",
+        "See separate catalog listing under Management Science and Engineering.",
+        "M.S. in Optimization (OPT)",
+        "M.S. in Industrial Engineering and Operations Research (IEOR)",
+        "M.S. in Health Systems Engineering",
+        "M.S. in Financial Engineering",
+        "Ph.D. in Industrial and Systems Engineering"
+      ],
+      [
+        "Sophomore",
+        "ISE\u00a0111",
+        "ISE\u00a0112",
+        "ISE\u00a0131",
+        "ISE\u00a0132",
+        "MATH\u00a0023",
+        "Engineering Elective3",
+        "CSE\u00a0003",
+        "Junior",
+        "ISE\u00a0230 or  240",
+        "ISE\u00a0224",
+        "HSS Electives1",
+        "Engineering Elective3",
+        "Senior",
+        "ISE\u00a0251",
+        "ISE Technical Electives2",
+        "Free Elective",
+        "HSS Elective1",
+        "Total Credits: 93-103"
+      ],
+      [
+        "direction methods, first",
+        "order constrained convex optimization methods, and second",
+        "order methods."
+      ]
+    ],
+    "https://engineering.louisville.edu/academics/areasofstudy/industrialengineering/": [
+      [
+        "Want to be employable anywhere you go?",
+        "Want to be a manager or C-level administrator?",
+        "Want to improve the lives of people?"
+      ],
+      [
+        "Facility layout",
+        "Inventory analysis",
+        "Logistics and distribution",
+        "Material handling systems",
+        "Operations research",
+        "Production planning and scheduling"
+      ],
+      [
+        "Explore Our Degree Offerings",
+        "Bachelor's Degree",
+        "Master's Degrees",
+        "Doctoral Degree"
+      ],
+      [
+        "Degrees Available: Undergraduate, Graduate, Doctorate",
+        "What Do You Want to Do in Life?",
+        "If your answer to any of the above questions is YES, then you want to be an INDUSTRIAL ENGINEER.",
+        "IE is #1 on the list of \u201c10 Fastest Growing Engineering Jobs in the USA (Until 2032)\u201d",
+        "What You\u2019ll Study"
+      ],
+      [
+        "world, hands",
+        "on work experience during three semesters in our Co",
+        "Op Program."
+      ],
+      [
+        "related organizations. This 30",
+        "credit program can be completed on",
+        "campus or 100% online, and has course, project, and thesis options."
+      ]
+    ],
+    "https://www.umass.edu/engineering/mechanical-and-industrial-engineering": [
+      [
+        "Academic programs",
+        "Undergraduate",
+        "Graduate",
+        "Join us on social media!",
+        "UMass Amherst Nurse-Engineer Team Honored for Inventing IV Pole Designed to Improve Patient Safety",
+        "MIE\u2019s Georges Chebly Wins a \u201cFinish Strong Honors Thesis Award\u201d from Commonwealth Honors College",
+        "Spring Career Fairs for Engineering Majors",
+        "Info for",
+        "Academics",
+        "Utilities"
+      ],
+      [
+        "Registration for MIE Majors",
+        "Curriculum for BS in Mechanical Engineering",
+        "Curriculum for BS in Industrial Engineering",
+        "Tech electives for BS in IE",
+        "Tech electives for BS in MIE",
+        "Senior Capstone Design",
+        "Academic Support Resources",
+        "MIE Innovation Shop"
+      ],
+      [
+        "Bachelor of Science in Industrial Engineering",
+        "Bachelor of Science in Mechanical Engineering",
+        "Engineering Management Minor",
+        "Materials Engineering Undergraduate Certificate"
+      ],
+      [
+        "4+1 Accelerated Master's Degree in Industrial Engineering and Operations Research",
+        "4+1 Accelerated Master\u2019s degree in Engineering Management",
+        "4+1 Accelerated Master\u2019s Degree in Manufacturing Engineering",
+        "4+1 Accelerated Master\u2019s Degree in Mechanical Engineering",
+        "Graduate Certificate in Decision Analytics",
+        "Graduate Certificate in Engineering Project Management and Leadership",
+        "Graduate Certificate in Wind Power Engineering",
+        "Master of Science in Engineering Management",
+        "Master of Science in Industrial Engineering and Operations Research",
+        "Master of Science in Manufacturing Engineering",
+        "Master of Science in Materials Science and Engineering",
+        "Master of Science in Mechanical Engineering",
+        "PhD in Industrial Engineering and Operations Research",
+        "PhD in Materials Science and Engineering",
+        "PhD in Mechanical Engineering"
+      ],
+      [
+        "Advanced manufacturing and supply chain management",
+        "AI, autonomy, and robotics",
+        "Energy, environment, and water",
+        "Healthcare and biomedicine",
+        "Materials and nanotechnology",
+        "Pervasive sensing and communications",
+        "Smart communities and infrastructure"
+      ]
+    ],
+    "https://cse.umn.edu/isye/phd-curriculum": [
+      [
+        "Breadcrumb",
+        "Ph.D. Curriculum",
+        "1st Year Fall Semester",
+        "1st Year Spring Semester",
+        "2nd\u00a0Year Fall Semester",
+        "2nd\u00a0Year Spring Semester",
+        "Faculty Advisors and Program Timeline",
+        "Alison Chen",
+        "Hamidreza Badri",
+        "Xiang Gao",
+        "Xiaobo Li",
+        "Take Advantage of the Twin Cities",
+        "Ready to apply?",
+        "Questions?",
+        "Department of Industrial and Systems Engineering"
+      ],
+      [
+        "Core Courses for ISyE Ph.D Students",
+        "+\nIE 8521\u2014Optimization",
+        "+\nIE 8532\u2014Stochastic Processes and Queueing Systems",
+        "+\nIE 8554\u2014Advanced Production and Inventory Systems",
+        "+\nIndustrial and Systems Engineering",
+        "+\nComputer Science",
+        "+\nMathematics",
+        "+\nStatistics",
+        "+\nApplied Economics",
+        "+\nPublic Health",
+        "For Students, Faculty, and Staff"
+      ]
+    ],
+    "https://scai.engineering.asu.edu/graduate-industrial-engineering/": [
+      [
+        "2024-2025",
+        "2023-2024",
+        "2022-2023",
+        "2021-2022",
+        "2020-2021",
+        "IE Course Lists & Check Sheet",
+        "IE MS Faculty List",
+        "Older Handbooks"
+      ],
+      [
+        "Industrial Engineering MS Handbook - 2024-2025\nIndustrial Engineering PhD Handbook - 2024-2025",
+        "Industrial Engineering MS Handbook 2022-2023\nIndustrial Engineering PhD Handbook 2022-2023",
+        "MS Handbook 2021-2022PhD Handbook 2021-2022",
+        "MS Handbook 2020-2021PhD Handbook 2020-2021",
+        "Industrial Engineering MS Faculty Endorsements"
+      ],
+      [
+        "Industrial Engineering MS Handbook 2023-2024 Addendum - Edited IE Area Course requirement",
+        "Industrial Engineering MS Handbook - 2023-2024",
+        "Industrial Engineering PhD Handbook - 2023-2024"
+      ],
+      [
+        "Concentration Areas of IE Graduate Courses",
+        "IE MS Check Sheet (Prior to Fall 2025)",
+        "IE MS Check Sheet (Fall 2025 & Later)"
+      ],
+      [
+        "MS Handbook\u00a02019-2020Ph.D. Handbook\u00a02019-2020",
+        "MS Handbook\u00a02017-2018PhD Handbook\u00a02017-2018",
+        "MS Handbook\u00a02016-2017PhD Handbook\u00a02016-2017",
+        "MS Handbook\u00a02015-2016PhD Handbook 2015-2016",
+        "MS Handbook\u00a0 2014-2015PhD Handbook\u00a0\u00a02014-2015PhD Handbook \u00a02014-2015 (revised January 2015)"
+      ],
+      [
+        "2015PhD Handbook\u00a0\u00a02014",
+        "2015PhD Handbook \u00a02014",
+        "2015 (revised January 2015)"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:33:35"
+}

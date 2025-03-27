@@ -1,0 +1,1173 @@
+{
+  "level1_term": "public health",
+  "url_verification_status": {
+    "https://hsph.harvard.edu/office/educational-programs/": true,
+    "https://medicine.tufts.edu/research/research-areas/public-health-research": false,
+    "https://hhs.purdue.edu/undergraduate-majors/public-health/": true,
+    "https://med.psu.edu/phs": true,
+    "https://health.uconn.edu/public-health-sciences/education-and-training/": true,
+    "https://sph.rutgers.edu/": false,
+    "https://sph.brown.edu/": true,
+    "https://publichealth.jhu.edu/academics/mph": true,
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": false,
+    "https://bouve.northeastern.edu/academics/school-of-community-health-and-behavioral-sciences/public-health-and-health-sciences/": true,
+    "https://falk.syr.edu/public-health/": false,
+    "https://publichealth.arizona.edu/research/research-excellence-and-expertise": true,
+    "https://sph.emory.edu/academics/courses/bshe-courses/index.html": true,
+    "https://www.unr.edu/public-health": false,
+    "https://hsph.harvard.edu/degrees-and-programs/": true,
+    "https://www.bu.edu/sph/": true,
+    "https://www.unthsc.edu/college-of-public-health/": true,
+    "https://publichealth.jhu.edu/academics/drph": true,
+    "https://publichealth.cornell.edu/": true,
+    "https://uthscsa.edu/public-health/": false,
+    "https://healthsciences.missouri.edu/public-health/": true,
+    "https://hhs.purdue.edu/public-health/": false,
+    "https://www.sph.umn.edu/": false,
+    "https://www.wiu.edu/graduate_studies/programs_of_study/health_profile.php": true,
+    "https://brownschool.washu.edu/academics/phd-in-public-health-sciences/phd-in-public-health-sciences-curriculum/": true,
+    "https://publichealth.uic.edu/": false,
+    "https://www.bu.edu/sph/education/degrees-and-programs/": true,
+    "https://www.memphis.edu/publichealth/academics/degrees-programs.php": true,
+    "https://www.belmont.edu/academics/majors-programs/public-health/": true,
+    "https://www.publichealth.pitt.edu/hpm": false,
+    "https://sph.tulane.edu/": false
+  },
+  "verified_lists_per_url": {
+    "https://hsph.harvard.edu/office/educational-programs/": 1,
+    "https://medicine.tufts.edu/research/research-areas/public-health-research": 0,
+    "https://hhs.purdue.edu/undergraduate-majors/public-health/": 2,
+    "https://med.psu.edu/phs": 1,
+    "https://health.uconn.edu/public-health-sciences/education-and-training/": 3,
+    "https://sph.rutgers.edu/": 0,
+    "https://sph.brown.edu/": 2,
+    "https://publichealth.jhu.edu/academics/mph": 2,
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": 0,
+    "https://bouve.northeastern.edu/academics/school-of-community-health-and-behavioral-sciences/public-health-and-health-sciences/": 2,
+    "https://falk.syr.edu/public-health/": 0,
+    "https://publichealth.arizona.edu/research/research-excellence-and-expertise": 1,
+    "https://sph.emory.edu/academics/courses/bshe-courses/index.html": 2,
+    "https://www.unr.edu/public-health": 0,
+    "https://hsph.harvard.edu/degrees-and-programs/": 1,
+    "https://www.bu.edu/sph/": 2,
+    "https://www.unthsc.edu/college-of-public-health/": 1,
+    "https://publichealth.jhu.edu/academics/drph": 3,
+    "https://publichealth.cornell.edu/": 2,
+    "https://uthscsa.edu/public-health/": 0,
+    "https://healthsciences.missouri.edu/public-health/": 2,
+    "https://hhs.purdue.edu/public-health/": 0,
+    "https://www.sph.umn.edu/": 0,
+    "https://www.wiu.edu/graduate_studies/programs_of_study/health_profile.php": 5,
+    "https://brownschool.washu.edu/academics/phd-in-public-health-sciences/phd-in-public-health-sciences-curriculum/": 3,
+    "https://publichealth.uic.edu/": 0,
+    "https://www.bu.edu/sph/education/degrees-and-programs/": 1,
+    "https://www.memphis.edu/publichealth/academics/degrees-programs.php": 5,
+    "https://www.belmont.edu/academics/majors-programs/public-health/": 1,
+    "https://www.publichealth.pitt.edu/hpm": 0,
+    "https://sph.tulane.edu/": 0
+  },
+  "total_lists_per_url": {
+    "https://hsph.harvard.edu/office/educational-programs/": 2,
+    "https://medicine.tufts.edu/research/research-areas/public-health-research": 2,
+    "https://hhs.purdue.edu/undergraduate-majors/public-health/": 3,
+    "https://med.psu.edu/phs": 2,
+    "https://health.uconn.edu/public-health-sciences/education-and-training/": 3,
+    "https://sph.rutgers.edu/": 4,
+    "https://sph.brown.edu/": 3,
+    "https://publichealth.jhu.edu/academics/mph": 8,
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": 2,
+    "https://bouve.northeastern.edu/academics/school-of-community-health-and-behavioral-sciences/public-health-and-health-sciences/": 4,
+    "https://falk.syr.edu/public-health/": 1,
+    "https://publichealth.arizona.edu/research/research-excellence-and-expertise": 1,
+    "https://sph.emory.edu/academics/courses/bshe-courses/index.html": 2,
+    "https://www.unr.edu/public-health": 2,
+    "https://hsph.harvard.edu/degrees-and-programs/": 2,
+    "https://www.bu.edu/sph/": 3,
+    "https://www.unthsc.edu/college-of-public-health/": 2,
+    "https://publichealth.jhu.edu/academics/drph": 7,
+    "https://publichealth.cornell.edu/": 2,
+    "https://uthscsa.edu/public-health/": 2,
+    "https://healthsciences.missouri.edu/public-health/": 4,
+    "https://hhs.purdue.edu/public-health/": 2,
+    "https://www.sph.umn.edu/": 2,
+    "https://www.wiu.edu/graduate_studies/programs_of_study/health_profile.php": 11,
+    "https://brownschool.washu.edu/academics/phd-in-public-health-sciences/phd-in-public-health-sciences-curriculum/": 7,
+    "https://publichealth.uic.edu/": 2,
+    "https://www.bu.edu/sph/education/degrees-and-programs/": 2,
+    "https://www.memphis.edu/publichealth/academics/degrees-programs.php": 7,
+    "https://www.belmont.edu/academics/majors-programs/public-health/": 2,
+    "https://www.publichealth.pitt.edu/hpm": 1,
+    "https://sph.tulane.edu/": 1
+  },
+  "verified_lists_ids": {
+    "https://hsph.harvard.edu/office/educational-programs/": [
+      1
+    ],
+    "https://medicine.tufts.edu/research/research-areas/public-health-research": [],
+    "https://hhs.purdue.edu/undergraduate-majors/public-health/": [
+      0,
+      1
+    ],
+    "https://med.psu.edu/phs": [
+      0
+    ],
+    "https://health.uconn.edu/public-health-sciences/education-and-training/": [
+      0,
+      1,
+      2
+    ],
+    "https://sph.rutgers.edu/": [],
+    "https://sph.brown.edu/": [
+      0,
+      1
+    ],
+    "https://publichealth.jhu.edu/academics/mph": [
+      1,
+      2
+    ],
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": [],
+    "https://bouve.northeastern.edu/academics/school-of-community-health-and-behavioral-sciences/public-health-and-health-sciences/": [
+      0,
+      2
+    ],
+    "https://falk.syr.edu/public-health/": [],
+    "https://publichealth.arizona.edu/research/research-excellence-and-expertise": [
+      0
+    ],
+    "https://sph.emory.edu/academics/courses/bshe-courses/index.html": [
+      0,
+      1
+    ],
+    "https://www.unr.edu/public-health": [],
+    "https://hsph.harvard.edu/degrees-and-programs/": [
+      0
+    ],
+    "https://www.bu.edu/sph/": [
+      0,
+      2
+    ],
+    "https://www.unthsc.edu/college-of-public-health/": [
+      0
+    ],
+    "https://publichealth.jhu.edu/academics/drph": [
+      0,
+      2,
+      5
+    ],
+    "https://publichealth.cornell.edu/": [
+      0,
+      1
+    ],
+    "https://uthscsa.edu/public-health/": [],
+    "https://healthsciences.missouri.edu/public-health/": [
+      2,
+      3
+    ],
+    "https://hhs.purdue.edu/public-health/": [],
+    "https://www.sph.umn.edu/": [],
+    "https://www.wiu.edu/graduate_studies/programs_of_study/health_profile.php": [
+      0,
+      1,
+      2,
+      4,
+      10
+    ],
+    "https://brownschool.washu.edu/academics/phd-in-public-health-sciences/phd-in-public-health-sciences-curriculum/": [
+      1,
+      2,
+      3
+    ],
+    "https://publichealth.uic.edu/": [],
+    "https://www.bu.edu/sph/education/degrees-and-programs/": [
+      0
+    ],
+    "https://www.memphis.edu/publichealth/academics/degrees-programs.php": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "https://www.belmont.edu/academics/majors-programs/public-health/": [
+      0
+    ],
+    "https://www.publichealth.pitt.edu/hpm": [],
+    "https://sph.tulane.edu/": []
+  },
+  "num_urls": 40,
+  "num_lists": 98,
+  "url_to_lists": {
+    "https://hsph.harvard.edu/office/educational-programs/": [
+      [
+        "Resources for teaching and course development",
+        "Field practice, community engaged learning, and public health leadership opportunities",
+        "Educational policy, School-wide assessments, and accreditation",
+        "Unleash your potential at Harvard Chan School.",
+        "Public health insights in your inbox."
+      ],
+      [
+        "Master of Public Health",
+        "Doctor of Public Health",
+        "Summer Session for Public Health Studies"
+      ]
+    ],
+    "https://medicine.tufts.edu/research/research-areas/public-health-research": [
+      [
+        "Academic Calendars",
+        "Orientation",
+        "White Coat Ceremony",
+        "Commencement"
+      ],
+      [
+        "Global Health Overview",
+        "Summer/Fall Programs",
+        "Spring Programs",
+        "Independent Projects"
+      ]
+    ],
+    "https://hhs.purdue.edu/undergraduate-majors/public-health/": [
+      [
+        "Chronic disease health educator",
+        "Community health worker",
+        "Health coach for a worksite or community center",
+        "Health communications specialist",
+        "Health education specialist",
+        "Health informatics specialist",
+        "Healthcare navigator",
+        "Infection disease outbreak investigator",
+        "Outreach specialist",
+        "Public health management analyst",
+        "Quality improvement analyst",
+        "Research analyst",
+        "Worksite wellness director"
+      ],
+      [
+        "Purdue 5-year accelerated Master of Public Health (MPH)",
+        "Purdue Department of Public Health MPH Degree",
+        "Purdue Department of Public Health MS/PhD Degree",
+        "Purdue Department of Public Health Master of Health Administration (online)",
+        "Healthcare administration",
+        "Health communication",
+        "Nursing",
+        "Medicine",
+        "Nutrition science",
+        "Occupational health",
+        "Physician assistant",
+        "Statistics"
+      ],
+      [
+        "Career Opportunities",
+        "Potential Areas of Advanced Study",
+        "Learning Experiences"
+      ]
+    ],
+    "https://med.psu.edu/phs": [
+      [
+        "All Public Health Graduate Programs",
+        "DrPH Doctor of Public Health Program",
+        "Epidemiology PhD Program",
+        "MD/MPH Program",
+        "JD/MPH and JD/DrPH Programs",
+        "Public Health MPH",
+        "Clinical Research MS",
+        "Biostatistics PhD",
+        "Homeland Security - Public Health Preparedness MPS",
+        "Certificate Programs",
+        "Summer and Youth Programs",
+        "Postdoctoral Studies"
+      ],
+      [
+        "Public Health Professionals Panel\n\nMar 26, 2025 4:30 PM EDT\nZoom",
+        "The Craft of Scientific Presentations\n\nApr 9, 2025 9:30 AM EDT\nZoom",
+        "The Craft of Scientific Writing\n\nApr 11, 2025 9:30 AM EDT\nZoom",
+        "Negotiating Job Offers\n\nApr 15, 2025 12:00 PM EDT\nZoom",
+        "Annual Virtual NIH Career Symposium\n\nMay 19, 2025 12:00 AM EDT\nVirtual"
+      ]
+    ],
+    "https://health.uconn.edu/public-health-sciences/education-and-training/": [
+      [
+        "Certificate of Interdisciplinary Disability Studies in Public Health",
+        "Certificate in Foundations of Public Health",
+        "Certificate in Social Determinants of Health and Disparities"
+      ],
+      [
+        "Education and Training",
+        "Did You Know?",
+        "Certificate in Foundations of Public Health"
+      ],
+      [
+        "Undergraduate Medical and Dental Education",
+        "Undergraduate Public Health Education",
+        "Program in Applied Public Health Sciences",
+        "Training"
+      ]
+    ],
+    "https://sph.rutgers.edu/": [
+      [
+        "Master of Public Health (MPH) (15 concentrations available)",
+        "MPH - Option for Clinicians",
+        "Online MPH (Global Public Health)",
+        "Accelerated Bachlor's/MPH",
+        "Master of Science (MS) (STEM)"
+      ],
+      [
+        "Enter a Search Term",
+        "Become a Public Health Leader",
+        "What kind of study are you looking for?",
+        "CEPH-accredited MPH programs",
+        "Earn your degree from anywhere",
+        "Our Departments",
+        "Leaders in the Field",
+        "Let's Connect",
+        "Keep Up with Us",
+        "Site Footer",
+        "Departments",
+        "Quick Links",
+        "Rutgers University Resources"
+      ],
+      [
+        "Biostatistics and Epidemiology",
+        "Environmental and Occupational Health and Justice",
+        "Health Behavior, Society and Policy",
+        "Urban-Global Public Health",
+        "Tuberculosis: The World\u2019s Leading Cause of Infectious Disease Death",
+        "How a First-Generation Student\u2019s Public Health Journey Led Her to a Crown"
+      ],
+      [
+        "What kind of study are you looking for?",
+        "Certificates\n\n\n\n\n\n\n\n\n\n\n\n\n            Start Over",
+        "Dual Degrees and Programs\n\n\n\n\n\n\n\n\n\n\n\n\n            Start Over"
+      ]
+    ],
+    "https://sph.brown.edu/": [
+      [
+        "Secondary Navigation Navigation",
+        "Site Navigation",
+        "Learn Public Health by Doing Public Health",
+        "News From SPH",
+        "In the News",
+        "Programs",
+        "Why Study Public Health at Brown?",
+        "Straight from the Source",
+        "Groundbreaking Research",
+        "Real World Impact",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Social Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation",
+        "Mobile Secondary Navigation Navigation"
+      ],
+      [
+        "Avoidable deaths are on the rise in the United States, yet falling in many peer nations",
+        "Brown\u2019s Hassenfeld Institute leader to chair U.S. Preventive Services Task Force",
+        "Preparation in an age of pandemics",
+        "Meet Jennifer Sacheck",
+        "Is red wine a healthier choice than white wine?  Uncorking the cancer risks",
+        "The moment everything changed",
+        "Drug Overdoses Are on the Decline, in Charts",
+        "Opinion: Five things Trump must do to combat bird flu",
+        "Measles Is Back. And a Lot More People Are at Risk",
+        "Master\u2019s",
+        "Master of Public Health",
+        "Accelerated MPH for Clinicians",
+        "Online Master of Public Health",
+        "Master of Science in Biostatistics",
+        "Online Master of Science in Biostatistics",
+        "Doctoral",
+        "Health Services Research",
+        "Biostatistics",
+        "Behavioral & Social Health Sciences",
+        "Epidemiology",
+        "Dual Degrees",
+        "MPH / MPA",
+        "Five Year Undergraduate / MPH",
+        "5th Year Master of Arts (A.M.) in Biostatistics",
+        "Pandemic Preparedness",
+        "Harm Reduction",
+        "Information Disorders"
+      ],
+      [
+        "March 20, 2025\n\n  Wall Street Journal\n\n\n\nDrug Overdoses Are on the Decline, in Charts",
+        "Fatalities from drugs including fentanyl are down from recent peaks.\n\n\nRead Article",
+        "Open details for Drug Overdoses Are on the Decline, in Charts"
+      ]
+    ],
+    "https://publichealth.jhu.edu/academics/mph": [
+      [
+        "Executive Director",
+        "Grants Officer, Global Development",
+        "Clinical Research Associate",
+        "Health Policy Analyst",
+        "Consultant",
+        "Hospital Quality Manager",
+        "EIS/CDC Officer",
+        "Evaluation Associate",
+        "Medical Officer",
+        "Postdoctoral Fellow",
+        "Resident Physician",
+        "Global Product Strategy Senior Manager",
+        "Opioids Program Manager"
+      ],
+      [
+        "Aging and Public Health",
+        "Child and Adolescent Health",
+        "Epidemiologic and Biostatistical Methods for Public Health and Clinical Research",
+        "Food, Nutrition and Health",
+        "Food Systems",
+        "Global Environmental Sustainability and Health",
+        "Health Leadership and Management",
+        "Health Systems and Policy",
+        "Humanitarian Health",
+        "Infectious Diseases",
+        "Social and Behavioral Sciences in Public Health",
+        "Women's and Reproductive Health"
+      ],
+      [
+        "Master of Science in Public Health (MSPH), Offered by Health Policy and Management",
+        "Master of Science in Public Health (MSPH), Offered by Epidemiology",
+        "Master of Applied Science in Population Health Management"
+      ],
+      [
+        "Subnav static",
+        "Breadcrumb",
+        "Master of Public Health Program Highlights",
+        "Our MPH program and MPH/MBA dual degree program are now STEM-designated",
+        "What Can You Do With an MPH?",
+        "Curriculum for the Master of Public Health",
+        "Concentrations",
+        "Admissions Requirements",
+        "Marie Diener-West, PhD '84,",
+        "Tuition and Funding",
+        "Compare Programs",
+        "Support Our Program",
+        "Footer social",
+        "Footer menu primary",
+        "Footer menu secondary",
+        "Footer menu extra"
+      ],
+      [
+        "250-270",
+        "Sample Job Titles",
+        "50/50",
+        "Prior Work Experience",
+        "Prior Coursework",
+        "Standardized Test Scores"
+      ],
+      [
+        "80\n\n\ntotal credits",
+        "50/50\n\n\nbreakdown of core courses to elective",
+        "100\n\n\nhours practicum experience",
+        "1\n\n\ncapstone project"
+      ],
+      [
+        "Questions about the program? We're happy to help.",
+        "Program ChairMarie Diener-West, PhD",
+        "Senior Program ManagerPaul Whong",
+        "MPH Office410-955-1291mphprog@jhu.edu"
+      ],
+      [
+        "Time or Part",
+        "Time | 11 months",
+        "4 years"
+      ]
+    ],
+    "https://sc.edu/study/colleges_schools/public_health/research/research_areas/index.php": [
+      [
+        "Research Areas",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      [
+        "Communication Sciences and Disorders",
+        "Environmental Health Sciences",
+        "Epidemiology and Biostatistics",
+        "Exercise Science",
+        "Health Promotion, Education, and Behavior",
+        "Health Services Policy and Management"
+      ]
+    ],
+    "https://bouve.northeastern.edu/academics/school-of-community-health-and-behavioral-sciences/public-health-and-health-sciences/": [
+      [
+        "Explain public health history, philosophy and values.",
+        "Explain how globalization affects global burdens of disease.",
+        "Identify the core functions of public health and the 10 Essential Services*.",
+        "Explain the critical importance of evidence in advancing public health knowledge.",
+        "Explain effects of environmental factors on a population\u2019s health.",
+        "Explain biological and genetic factors that affect a population\u2019s health.",
+        "Explain behavioral and psychological factors that affect a population\u2019s health."
+      ],
+      [
+        "Outcomes",
+        "Outcomes",
+        "Outcomes"
+      ],
+      [
+        "Doctoral",
+        "Graduate",
+        "Undergraduate"
+      ],
+      [
+        "on through exciting co",
+        "op placements, mostly in the Greater Boston area",
+        "a hub of public health and clinical activity."
+      ]
+    ],
+    "https://falk.syr.edu/public-health/": [
+      [
+        "Major League Partnership",
+        "Examining Inequities",
+        "Agent of Change",
+        "Voices of Service"
+      ]
+    ],
+    "https://publichealth.arizona.edu/research/research-excellence-and-expertise": [
+      [
+        "Aging",
+        "Biostatistics",
+        "Border Health",
+        "Cancer",
+        "Cardiovascual Health",
+        "COVID-19",
+        "Disease and Injury Prevention",
+        "Disease Management",
+        "Diabetes",
+        "Environmental Health",
+        "Epidemiology",
+        "Genetics",
+        "Global Health",
+        "Health Disparities",
+        "Health of Children and Families",
+        "Hispanic Health",
+        "Indigenous Health",
+        "Infectious Disease",
+        "Integrative Medicine",
+        "LGBTQ+ Health",
+        "Mental Health",
+        "Nutrition and Diet",
+        "Obesity",
+        "Occupational Health",
+        "One Health",
+        "Public Health and Emergency Preparedness",
+        "Public Health Policy",
+        "Respiratory Disease",
+        "Rural Health",
+        "Substance Use",
+        "Water Quality",
+        "Women's Health",
+        "Climate Change & Health",
+        "Indigenous Health",
+        "Global Health",
+        "Mental Health & Substance Use",
+        "Health Innovations & Digital Epidemiology"
+      ]
+    ],
+    "https://sph.emory.edu/academics/courses/bshe-courses/index.html": [
+      [
+        "People",
+        "Quick Links",
+        "Undergraduate",
+        "Community",
+        "Graduate",
+        "Libraries",
+        "Library Tools",
+        "Resources",
+        "Resources"
+      ],
+      [
+        "3) Program Planning in Health PromotionPrerequisites: BSHE",
+        "1) social-ecological and behavioral determinants of a health problem or issue;",
+        "3) theories or approaches to guide strategies or activities to employ in a health program; and"
+      ]
+    ],
+    "https://www.unr.edu/public-health": [
+      [
+        "Eating Recovery at William J. Raggio Building",
+        "02:00 PM",
+        "Health, Safety, and Wellness"
+      ],
+      [
+        "Education, Healthcare, & Helping Professions Networking Mixer at Learning Resource Center",
+        "04:00 PM",
+        "Career"
+      ]
+    ],
+    "https://hsph.harvard.edu/degrees-and-programs/": [
+      [
+        "Degree Programs",
+        "Non-Degree Programs",
+        "Public health insights in your inbox."
+      ],
+      [
+        "Degree Program Finder",
+        "Master\u2019s Degrees",
+        "Doctoral Degrees",
+        "Joint and Combined Degrees",
+        "Interdisciplinary Concentrations",
+        "Executive and Continuing Education",
+        "Fellowships and Special Programs",
+        "Undergraduate and High School Programs"
+      ]
+    ],
+    "https://www.bu.edu/sph/": [
+      [
+        "Professor Tracks the Many US Pregnancy-Related Deaths.",
+        "Biostatistics",
+        "Community Health Sciences",
+        "Environmental Health",
+        "Epidemiology",
+        "Global Health",
+        "Health Law, Policy & Management",
+        "Also See",
+        "Resources"
+      ],
+      [
+        "Tracking Anticipated Deaths from USAID Funding Cuts",
+        "Think. Teach. Do. Awards Spotlight Stellar Staff",
+        "Tracking Anticipated Deaths from USAID Funding Cuts",
+        "Think. Teach. Do. Awards Spotlight Stellar Staff",
+        "Professor Tracks the Many US Pregnancy-Related Deaths",
+        "New Database Collects Laws  Governing Minors\u2019 Legal Capacity to Consent to Sexual Health Services",
+        "SPH Selects Winners of Dean\u2019s Innovation Challenge",
+        "Why Trimming Medicaid Would Be Hard",
+        "Medicaid Expansion Does Not Lead to Overuse of Prescription Opioids",
+        "COVID-19 in 2025: \u2018A Constant Threat, but a Manageable One\u2019",
+        "COVID-19, Five Years Later",
+        "\u201cRemember Every One\u201d: Memorializing the More Than 1 Million Lives Lost to COVID-19 in the US",
+        "Teaching as a Team: Improving Core Course Delivery"
+      ],
+      [
+        "Biostatistics",
+        "Community Health Sciences",
+        "Environmental Health",
+        "Epidemiology",
+        "Global Health",
+        "Health Law, Policy & Management"
+      ]
+    ],
+    "https://www.unthsc.edu/college-of-public-health/": [
+      [
+        "Master of Public Health, concentration in Epidemiology",
+        "Master of Public Health, concentration in Biostatistics & Data Science",
+        "Master of Public Health, concentration in Maternal & Child Health",
+        "Master of Public Health, concentration in Public Health Leadership (campus and online options)",
+        "Master of Health Administration (campus and online options)",
+        "Master of Science in Public Health Sciences",
+        "Doctor of Philosophy in Public Health Sciences",
+        "Dual Degree Options for HSC Students (DO, PA & PharmD)",
+        "Graduate certificates",
+        "Non-degree programs",
+        "Community Health Worker Training Center"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "Twitter",
+        "Linkedln"
+      ]
+    ],
+    "https://publichealth.jhu.edu/academics/drph": [
+      [
+        "Tenure Track Faculty",
+        "Environmental Health Engineer",
+        "Public Health Flight Commander",
+        "Emergency Preparedness Specialist",
+        "Senior Bio-surveillance Specialist",
+        "Senior Policy Advisor & Staff Director",
+        "President & CEO, Medical System",
+        "Federal Data Strategy Analyst",
+        "Chief Data Scientist",
+        "VP Organizational Excellence & Quality",
+        "Nurse Manager",
+        "Chief Impact & Equity Officer",
+        "City Police Chief",
+        "Senior Counsel for Elder Justice",
+        "COO & Deputy Health Commissioner",
+        "Lead, Population Health Informatics",
+        "Director of Patient Safety",
+        "Assistant VP Care Transformation, Medical System",
+        "Consultant",
+        "Director, Epidemiology Intelligence Unit, Ministry of Health",
+        "Humanitarian Director",
+        "Deputy Country Director"
+      ],
+      [
+        "Seattle & King County Public Health",
+        "Southern Nevada Health District",
+        "Nebraska Dept. of HHS",
+        "Texas Department of State Health Health Services",
+        "Philadelphia Department of Public Health",
+        "NYC Department of Mental Health & Mental Hygiene",
+        "National Academy of Sciences",
+        "American Academy of Pediatrics",
+        "Children's National Hospital",
+        "St. Jude's Children's Research Hospital",
+        "Brigham & Women's Hospital",
+        "Johns Hopkins Hospital",
+        "MedStar Health",
+        "Cedars-Sinai Medical Center",
+        "Fred Hutchinson Cancer Research Center",
+        "Memorial Sloan Kettering Cancer Center",
+        "Universities: Johns Hopkins, Columbia, Case Western\u00a0 Reserve, Georgia State, Wisconsin, New Mexico",
+        "Merck",
+        "Kaiser Permanente",
+        "EPA, CDC, NIH, FDA, HHS",
+        "Indian Health Service",
+        "Cheyenne Regional Health System",
+        "Pew Charitable Trusts",
+        "United Way of Rhode Island",
+        "Durham VA Health Care Center",
+        "Army Research Laboratory",
+        "Dover Air Force Base",
+        "USAID, WHO, World Bank, UN",
+        "Medicins Sans Frontiers",
+        "Ministry of Health: Kuwait, Thailand",
+        "International Planned Parenthood Federation"
+      ],
+      [
+        "Healthcare Management & Leadership",
+        "Health Policy",
+        "Public Health Informatics",
+        "Quality & Patient Safety"
+      ],
+      [
+        "Subnav static",
+        "Breadcrumb",
+        "Doctor of Public Health Program Highlights",
+        "What Can You Do With a DrPH?",
+        "Where Can You Work With a DrPH?",
+        "Curriculum for the Doctor of Public Health",
+        "Concentrations & Tracks",
+        "Admissions Requirements",
+        "Mark J. Bittle, DrPH, MBA",
+        "Renee M. Johnson, PhD, MPH",
+        "Tuition and Funding",
+        "Support Our Program",
+        "Footer social",
+        "Footer menu primary",
+        "Footer menu secondary",
+        "Footer menu extra"
+      ],
+      [
+        "11 \n\n\nconcentrations & tracks",
+        "57 \n\n\nmin. credits of course work",
+        "7\n\n\nmin. credits for proposal & thesis",
+        "1 \n\n\npracticum & dissertation"
+      ],
+      [
+        "Customized Program of Study",
+        "Environmental Health Concentration (2 tracks available)",
+        "Global Health: Policy & Evaluation Concentration",
+        "Health Equity & Social Justice Concentration",
+        "Health Policy & Management Concentration (4 tracks available)",
+        "Implementation Science Concentration",
+        "Women's & Reproductive Health Concentration"
+      ],
+      [
+        "Questions about the program? We're happy to help.",
+        "Katie Cruit, MS\nDrPH Program Manager",
+        "Madison Nuzzo, BS\nDrPH Administrative Coordinator",
+        "Sheryl Flythe, BS\nProgram Adviser",
+        "Janet Carn, M.Ed.\nProgram Adviser",
+        "Ashley Conroy-Tabrizi, MAT\nProgram Adviser",
+        "BSPH-DRPH@jhu.edu"
+      ]
+    ],
+    "https://publichealth.cornell.edu/": [
+      [
+        "Public Health",
+        "Master of Public Health Program",
+        "Check Out Our Public Health Magazine",
+        "Our Alumni in Action",
+        "Now Offering 4 Concentrations",
+        "Master of Public Health Program",
+        "Check Out Our Public Health Magazine",
+        "Our Alumni in Action",
+        "Now Offering 4 Concentrations",
+        "Working Together to Change the World",
+        "Our Curriculum",
+        "Follow Us",
+        "Cornell Public Health"
+      ],
+      [
+        "Emergency Preparedness & Management",
+        "Environment, Climate & Health",
+        "Food Systems & Health",
+        "Infectious Disease Epidemiology"
+      ]
+    ],
+    "https://uthscsa.edu/public-health/": [
+      [
+        "Service Desk",
+        "Password Reset",
+        "Tech Zone (Computer Store)"
+      ],
+      [
+        "What is Public Health?",
+        "Innovative Academics",
+        "Careers in Public Health",
+        "School of Public Health San Antonio"
+      ]
+    ],
+    "https://healthsciences.missouri.edu/public-health/": [
+      [
+        "Certificates overview  chevron_right",
+        "Public health  chevron_right",
+        "Epidemiology  chevron_right",
+        "Public health communication  chevron_right"
+      ],
+      [
+        "Public health minor  chevron_right",
+        "Public health and gender certificate  chevron_right",
+        "Natural environment and health certificate  chevron_right"
+      ],
+      [
+        "Public Health",
+        "Our mission",
+        "What is public health?",
+        "Make the most of your degree",
+        "Make a lasting impact"
+      ],
+      [
+        "Degrees",
+        "Graduate certificates",
+        "Undergraduate minors and certificates",
+        "For current students"
+      ]
+    ],
+    "https://hhs.purdue.edu/public-health/": [
+      [
+        "Public Health Graduate Program (MS and PhD)",
+        "Master of Public Health Graduate Program (MPH)",
+        "Master of Public Health (online MPH)",
+        "Master of Health Administration (online MHA)"
+      ],
+      [
+        "Online Certificates",
+        "\u2022 Healthcare Leadership Graduate Certificate (online)",
+        "\u2022 Healthcare Operations Graduate Certificate (online)",
+        "\u2022 Healthcare Quality Improvement Graduate Certificate (online)",
+        "Learn More About HHS Online Programs"
+      ]
+    ],
+    "https://www.sph.umn.edu/": [
+      [
+        "1.Health is a human right",
+        "2.Upstream action saves lives",
+        "3.Different perspectives make us stronger",
+        "4.Our future depends on education",
+        "5.Bigger imaginations yield better results"
+      ],
+      [
+        "Mar\t\t\n\n\t\t\t26\t\t\n\n\n\n\n\n\n\n\n2:00 pm - 3:00 pm  CDT  \n\n\n\n\t\tResearch Day Poster Prep session",
+        "Mar\t\t\n\n\t\t\t27\t\t\n\n\n\n\n\n\n\n\n4:00 pm - 6:00 pm  CDT  \n\n\n\n\t\tHealth Equity Trivia Night",
+        "Mar\t\t\n\n\t\t\t31\t\t\n\n\n\n\n\n\n\n\n12:00 pm - 1:30 pm  CDT  \n\n\n\n\t\tCHAI Speaker Series: Aging & Disability",
+        "Apr\t\t\n\n\t\t\t1\t\t\n\n\n\n\n\n\n\n\n11:00 am - 12:00 pm  CDT  \n\n\n\n\t\t3 Minute Thesis Practice Session"
+      ]
+    ],
+    "https://www.wiu.edu/graduate_studies/programs_of_study/health_profile.php": [
+      [
+        "Your potential. Our purpose.",
+        "Macomb",
+        "Quad Cities",
+        "Online"
+      ],
+      [
+        "Your potential. Our purpose.",
+        "Macomb",
+        "Quad Cities",
+        "Online",
+        "APPLY NOW"
+      ],
+      [
+        "Community Health Education Specialist",
+        "Epidemiologist",
+        "Public Health Advisor",
+        "Public Health Specialist",
+        "Health Promotion Program Coordinator",
+        "Injury Prevention Specialist",
+        "Community Health Worker",
+        "Biostatistician",
+        "Hazardous Waste Inspector",
+        "Health Physicist",
+        "Emergency Preparedness Specialist",
+        "Program Evaluator",
+        "Local Health Department Administrator",
+        "Area Agency on Aging Administrator",
+        "International Programs Manager"
+      ],
+      [
+        "Currently enrolled: 96",
+        "International: 78",
+        "Minority: 10",
+        "Students with Assistantships: 19"
+      ],
+      [
+        "Ask a Librarian / Get Help",
+        "Branches & Units",
+        "Catalog",
+        "Databases",
+        "Services"
+      ],
+      [
+        "Office of Public Safety",
+        "Emergency Alert System",
+        "Timely Warnings",
+        "Mental Health Resources",
+        "Campus Crime Stats",
+        "Risk Management & Emergency Preparedness",
+        "Environmental Health, Safety and Sustainability"
+      ],
+      [
+        "Computer Labs",
+        "Electronic Classrooms",
+        "Password Assistance",
+        "Technology Support Center",
+        "University Technology"
+      ],
+      [
+        "University Printing & Mailing Center",
+        "Design and Publications",
+        "Marketing",
+        "University Television",
+        "Photography & Design Production",
+        "Higher Education Act"
+      ],
+      [
+        "Budget",
+        "Business and Financial Services",
+        "Equal Opportunity and Access",
+        "Human Resources",
+        "Purchasing"
+      ],
+      [
+        "Find an Employee or Student",
+        "Find an Office",
+        "Deans & Directors",
+        "University Administration"
+      ],
+      [
+        "Public Health",
+        "News & Events",
+        "Libraries",
+        "Campus Safety",
+        "Technology Resources",
+        "University Communications & Marketing",
+        "Policies & Procedures",
+        "Finance and Administration",
+        "Campus Directory",
+        "Connect with us:"
+      ]
+    ],
+    "https://brownschool.washu.edu/academics/phd-in-public-health-sciences/phd-in-public-health-sciences-curriculum/": [
+      [
+        "Core PHS courses (9 credits)",
+        "Core Statistical Analysis courses (6 credits)",
+        "Additional Statistical Analysis courses (9 credits)",
+        "Research Methods (6 credits)",
+        "Social/Health Science (9 credits)",
+        "Professional Development Seminar (2 credits)",
+        "Research Practica (6 credits)",
+        "Teaching Practica (3 credits)"
+      ],
+      [
+        "Structural Equation Modeling (3 credits)",
+        "Social Network Analysis (3 credits)",
+        "Applied Machine Learning Using Health Data (3 credits)",
+        "Applied Deep Learning Using Health Data (3 credits)",
+        "Multilevel and Longitudinal Modeling (3 credits)",
+        "Qualitative Research Methods (3 credits)",
+        "Propensity Score Analysis (3 credits)",
+        "Survival Analysis (3 credits)",
+        "Foundations of Data Analysis (3 credits)",
+        "Categorical Analysis (3 credits)",
+        "Mixed-Methods in the Social Sciences (3 credits)"
+      ],
+      [
+        "Social Network Analysis (3 credits)",
+        "Community-Based System Dynamics (3 credits)",
+        "Translating Epidemiology into Policy (3 credits)",
+        "Methods, Metrics, and Measures for Dissemination and Implementation Research (3 credits)",
+        "Introduction to Dissemination and Implementation Science (3 credits)",
+        "Developing and Evaluating Implementation Strategies in Health and Social Services (3 credits)",
+        "Dissemination and Implementation Science (3 credits)",
+        "Systems Thinking in Health (3 credits)",
+        "System Dynamics Simulation for Strategic Design (3 credits)",
+        "Applied Linear Regression Analysis (3 credits)",
+        "Introduction to Agent-Based Modeling (3 credits)",
+        "Independent Study",
+        "Other substantive courses as offered, inside or outside of the Brown School"
+      ],
+      [
+        "Social Network Analysis (3 credits)",
+        "Community Based System Dynamics (3 credits)",
+        "Quantitative Methods for Health Policy Analysis (3 credits)",
+        "Developing and Evaluating Implementation Strategies in Health and Social Services (3 credits)",
+        "Systems Thinking in Health (3 credits)",
+        "Mixed Methods Research: Foundations & Applications (3 credits)",
+        "Introduction to Agent-based modeling (3 credits)",
+        "Foundations of Geographic Information Systems (GIS) for the Applied Social Sciences (3 credits)",
+        "Applied Qualitative and Participatory Methods (3 credits)",
+        "Mental and Behavior Health Epidemiology (3 credits)",
+        "Health Economics (3 credits)",
+        "Quantitative Methods for Health Policy Analysis (3 credits)",
+        "Using Administrative Data for Health Services Research (3 credits)",
+        "Systematic Review and Meta-Analysis (3 credits)",
+        "TPS: Health & Place: Spatial Thinking & Applied Methods (3 credits)",
+        "Randomized Clinical Trials (3 credits)",
+        "Advanced Policy Analysis: Policy Impact Assessment (3 credits)",
+        "Benefit-Cost Analysis (3 credits)"
+      ],
+      [
+        "Practicum in Teaching I (1 credit)",
+        "Practicum in Teaching II (1 credit)",
+        "Practicum in Teaching III (1 credit)"
+      ],
+      [
+        "Years 1 & 2",
+        "Years 3 & 4",
+        "Years 4+"
+      ],
+      [
+        "Check out our\u00a0FAQs\u00a0to find out about the application process, student resources, and more!",
+        "Public health required core courses (9 credits)",
+        "Core statistical analysis courses (6 credits)",
+        "Additional statistical analysis courses (choose three; 9 credits)",
+        "Substantive and/or theoretical electives (9 credits)",
+        "Research methods in public health science (choose two; 6 credits)",
+        "Research practica (6 credits)",
+        "Teaching practica (3 credits)",
+        "Professional development (2 credits) #",
+        "Area statement individualized course of study (3 credits) #",
+        "Notes:",
+        "Graduation Requirements"
+      ]
+    ],
+    "https://publichealth.uic.edu/": [
+      [
+        "Undergraduate Programs",
+        "Master of Public Health Programs",
+        "Master of Science Programs",
+        "Master of Healthcare Administration Programs",
+        "PhD Programs",
+        "DrPH in Leadership Program"
+      ],
+      [
+        "Chicago schools and pollution",
+        "Southwest side brownfields",
+        "Children's environmental health center",
+        "Climate change resilience center",
+        "Chemicals, pollution & pregnancy conference"
+      ]
+    ],
+    "https://www.bu.edu/sph/education/degrees-and-programs/": [
+      [
+        "Degrees & Programs.",
+        "Master of Public Health (MPH)",
+        "Master of Public Health (MPH) Online",
+        "Master of Science (MS) Programs",
+        "Doctor of Philosophy (PhD)",
+        "Doctor of Public Health (DrPH)",
+        "Dual Degree Programs",
+        "Part-Time Public Health Graduate Programs",
+        "Undergraduate Programs in Public Health",
+        "Virtual Non-Credit Options",
+        "Also See",
+        "Resources"
+      ],
+      [
+        "world public health challenges.",
+        "level leadership positions.",
+        "Time Public Health Graduate Programs",
+        "campus MPH or MS degree and switch between full",
+        "time and part",
+        "time status to earn a degree on your schedule.",
+        "Credit Options",
+        "degree student."
+      ]
+    ],
+    "https://www.memphis.edu/publichealth/academics/degrees-programs.php": [
+      [
+        "Undergraduate Programs",
+        "Graduate Programs",
+        "Health Care Interpreter Course"
+      ],
+      [
+        "Masters Programs",
+        "Doctoral Programs",
+        "Graduate Certificates"
+      ],
+      [
+        "School of Public Health",
+        "Academic Affairs",
+        "Degrees and Programs"
+      ],
+      [
+        "Bachelor of Science in Public Health (BSPH)",
+        "Minor in Public Health",
+        "Minor in Population Health Informatics",
+        "High School Dual Enrollment",
+        "Accelerated Bachelor to Master of Public Health (ABM)"
+      ],
+      [
+        "Master of Health Administration (Campus Track)",
+        "Master of Health Administration (Executive Track Online)",
+        "Master of Public Health (MPH) with concentration in Epidemiology",
+        "Master of Public Health (MPH) with concentration in Biostatistics",
+        "Master of Public Health (MPH) with concentration in Social and Behavioral Sciences",
+        "Master of Public Health (MPH) with concentration Urban Health",
+        "Master of Public Health (MPH), Generalist track",
+        "Master of Science (MS) in Biostatistics with concentration in Biostatistics",
+        "MHA/ MBA Dual Degree"
+      ],
+      [
+        "PhD in Epidemiology and Biostatistics with concentration in Epidemiology",
+        "PhD in Epidemiology and Biostatistics with concentration in Biostatistics",
+        "PhD in Social and Behavioral Sciences"
+      ],
+      [
+        "Graduate Certificate in Health Systems Leadership",
+        "Graduate Certificate in Health Analytics",
+        "Graduate Certificate in Population Health",
+        "Graduate Certificate in Population Health Informatics"
+      ]
+    ],
+    "https://www.belmont.edu/academics/majors-programs/public-health/": [
+      [
+        "Epidemiology",
+        "Biostatistics and informatics",
+        "Communications",
+        "Community health",
+        "Health education and promotion",
+        "Environmental health",
+        "Global health",
+        "Health policy",
+        "Health care administration",
+        "Social and behavioral health"
+      ],
+      [
+        "BELL core requirements: 51 hours",
+        "Major requirements: 48 hours",
+        "Major fieldwork: 9 hours",
+        "General electives: 20 hours"
+      ]
+    ],
+    "https://www.publichealth.pitt.edu/hpm": [
+      [
+        "Slide 1",
+        "Slide 2",
+        "Slide 3"
+      ]
+    ],
+    "https://sph.tulane.edu/": [
+      [
+        "EMAIL",
+        "Canvas/MY Tulane",
+        "Gibson",
+        "SPHTM Intranet"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:42:07"
+}

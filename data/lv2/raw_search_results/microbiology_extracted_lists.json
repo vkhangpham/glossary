@@ -1,0 +1,984 @@
+{
+  "level1_term": "microbiology",
+  "url_verification_status": {
+    "https://medicine.iu.edu/microbiology-immunology/education": false,
+    "https://microbiology.oregonstate.edu/research": true,
+    "https://cals.cornell.edu/microbiology": true,
+    "https://microimmuno.stanford.edu/": false,
+    "https://molbio.princeton.edu/research-areas/microbiology-virology-immunology": false,
+    "https://mib.uga.edu/teaching-requirement": false,
+    "https://www.clemson.edu/science/academics/departments/biosci/academics/grad-micro.html": true,
+    "https://cbmg.umd.edu/research/areas/microbiology-microbial-pathogenesis-immunology": false,
+    "https://microbiology.medicine.uiowa.edu/research": true,
+    "https://microbiology.columbia.edu/": false,
+    "https://guide.wisc.edu/graduate/bacteriology/microbiology-phd/": false,
+    "https://sc.edu/study/colleges_schools/medicine/research/basic_science_departments/pathology_microbiology_and_immunology/index.php": true,
+    "https://catalog.ncsu.edu/undergraduate/sciences/biological-sciences/microbiology-bs-microbial-research/": false,
+    "https://www.bio.tamu.edu/graduate-micro/": false,
+    "https://www.sdstate.edu/biology-microbiology": true,
+    "https://chicago.medicine.uic.edu/microbiology/": false,
+    "https://vetmedbiosci.colostate.edu/mip/prime/": false,
+    "https://medicine.uky.edu/sites/graduate/microbiology-immunology-molecular-genetics-research": false,
+    "https://www.slu.edu/medicine/medical-education/graduate-programs/biomedical-sciences/molecular-microbiology-immunology/index.php": true,
+    "https://sols.asu.edu/degree/graduate/microbiology-phd": true,
+    "https://microcell.ufl.edu/graduate-program/": true,
+    "https://gsbs.tufts.edu/academics/basic-science-phd-programs/molecular-microbiology": false,
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/course-descriptions": false,
+    "https://cals.cornell.edu/microbiology/academics/graduate": true,
+    "https://medicine.uams.edu/mbim/graduate-program/": false
+  },
+  "verified_lists_per_url": {
+    "https://medicine.iu.edu/microbiology-immunology/education": 0,
+    "https://microbiology.oregonstate.edu/research": 1,
+    "https://cals.cornell.edu/microbiology": 1,
+    "https://microimmuno.stanford.edu/": 0,
+    "https://molbio.princeton.edu/research-areas/microbiology-virology-immunology": 0,
+    "https://mib.uga.edu/teaching-requirement": 0,
+    "https://www.clemson.edu/science/academics/departments/biosci/academics/grad-micro.html": 3,
+    "https://cbmg.umd.edu/research/areas/microbiology-microbial-pathogenesis-immunology": 0,
+    "https://microbiology.medicine.uiowa.edu/research": 1,
+    "https://microbiology.columbia.edu/": 0,
+    "https://guide.wisc.edu/graduate/bacteriology/microbiology-phd/": 0,
+    "https://sc.edu/study/colleges_schools/medicine/research/basic_science_departments/pathology_microbiology_and_immunology/index.php": 1,
+    "https://catalog.ncsu.edu/undergraduate/sciences/biological-sciences/microbiology-bs-microbial-research/": 0,
+    "https://www.bio.tamu.edu/graduate-micro/": 0,
+    "https://www.sdstate.edu/biology-microbiology": 1,
+    "https://chicago.medicine.uic.edu/microbiology/": 0,
+    "https://vetmedbiosci.colostate.edu/mip/prime/": 0,
+    "https://medicine.uky.edu/sites/graduate/microbiology-immunology-molecular-genetics-research": 0,
+    "https://www.slu.edu/medicine/medical-education/graduate-programs/biomedical-sciences/molecular-microbiology-immunology/index.php": 1,
+    "https://sols.asu.edu/degree/graduate/microbiology-phd": 1,
+    "https://microcell.ufl.edu/graduate-program/": 2,
+    "https://gsbs.tufts.edu/academics/basic-science-phd-programs/molecular-microbiology": 0,
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/course-descriptions": 0,
+    "https://cals.cornell.edu/microbiology/academics/graduate": 1,
+    "https://medicine.uams.edu/mbim/graduate-program/": 0
+  },
+  "total_lists_per_url": {
+    "https://medicine.iu.edu/microbiology-immunology/education": 1,
+    "https://microbiology.oregonstate.edu/research": 1,
+    "https://cals.cornell.edu/microbiology": 2,
+    "https://microimmuno.stanford.edu/": 1,
+    "https://molbio.princeton.edu/research-areas/microbiology-virology-immunology": 1,
+    "https://mib.uga.edu/teaching-requirement": 2,
+    "https://www.clemson.edu/science/academics/departments/biosci/academics/grad-micro.html": 6,
+    "https://cbmg.umd.edu/research/areas/microbiology-microbial-pathogenesis-immunology": 2,
+    "https://microbiology.medicine.uiowa.edu/research": 1,
+    "https://microbiology.columbia.edu/": 5,
+    "https://guide.wisc.edu/graduate/bacteriology/microbiology-phd/": 11,
+    "https://sc.edu/study/colleges_schools/medicine/research/basic_science_departments/pathology_microbiology_and_immunology/index.php": 7,
+    "https://catalog.ncsu.edu/undergraduate/sciences/biological-sciences/microbiology-bs-microbial-research/": 4,
+    "https://www.bio.tamu.edu/graduate-micro/": 8,
+    "https://www.sdstate.edu/biology-microbiology": 6,
+    "https://chicago.medicine.uic.edu/microbiology/": 1,
+    "https://vetmedbiosci.colostate.edu/mip/prime/": 5,
+    "https://medicine.uky.edu/sites/graduate/microbiology-immunology-molecular-genetics-research": 2,
+    "https://www.slu.edu/medicine/medical-education/graduate-programs/biomedical-sciences/molecular-microbiology-immunology/index.php": 1,
+    "https://sols.asu.edu/degree/graduate/microbiology-phd": 5,
+    "https://microcell.ufl.edu/graduate-program/": 7,
+    "https://gsbs.tufts.edu/academics/basic-science-phd-programs/molecular-microbiology": 1,
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/course-descriptions": 3,
+    "https://cals.cornell.edu/microbiology/academics/graduate": 2,
+    "https://medicine.uams.edu/mbim/graduate-program/": 1
+  },
+  "verified_lists_ids": {
+    "https://medicine.iu.edu/microbiology-immunology/education": [],
+    "https://microbiology.oregonstate.edu/research": [
+      0
+    ],
+    "https://cals.cornell.edu/microbiology": [
+      0
+    ],
+    "https://microimmuno.stanford.edu/": [],
+    "https://molbio.princeton.edu/research-areas/microbiology-virology-immunology": [],
+    "https://mib.uga.edu/teaching-requirement": [],
+    "https://www.clemson.edu/science/academics/departments/biosci/academics/grad-micro.html": [
+      0,
+      1,
+      2
+    ],
+    "https://cbmg.umd.edu/research/areas/microbiology-microbial-pathogenesis-immunology": [],
+    "https://microbiology.medicine.uiowa.edu/research": [
+      0
+    ],
+    "https://microbiology.columbia.edu/": [],
+    "https://guide.wisc.edu/graduate/bacteriology/microbiology-phd/": [],
+    "https://sc.edu/study/colleges_schools/medicine/research/basic_science_departments/pathology_microbiology_and_immunology/index.php": [
+      0
+    ],
+    "https://catalog.ncsu.edu/undergraduate/sciences/biological-sciences/microbiology-bs-microbial-research/": [],
+    "https://www.bio.tamu.edu/graduate-micro/": [],
+    "https://www.sdstate.edu/biology-microbiology": [
+      1
+    ],
+    "https://chicago.medicine.uic.edu/microbiology/": [],
+    "https://vetmedbiosci.colostate.edu/mip/prime/": [],
+    "https://medicine.uky.edu/sites/graduate/microbiology-immunology-molecular-genetics-research": [],
+    "https://www.slu.edu/medicine/medical-education/graduate-programs/biomedical-sciences/molecular-microbiology-immunology/index.php": [
+      0
+    ],
+    "https://sols.asu.edu/degree/graduate/microbiology-phd": [
+      2
+    ],
+    "https://microcell.ufl.edu/graduate-program/": [
+      2,
+      3
+    ],
+    "https://gsbs.tufts.edu/academics/basic-science-phd-programs/molecular-microbiology": [],
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/course-descriptions": [],
+    "https://cals.cornell.edu/microbiology/academics/graduate": [
+      1
+    ],
+    "https://medicine.uams.edu/mbim/graduate-program/": []
+  },
+  "num_urls": 40,
+  "num_lists": 86,
+  "url_to_lists": {
+    "https://medicine.iu.edu/microbiology-immunology/education": [
+      [
+        "Graduate Degree Programs",
+        "Postdoctoral Study",
+        "MD Education",
+        "Social media"
+      ]
+    ],
+    "https://microbiology.oregonstate.edu/research": [
+      [
+        "Applied microbiology",
+        "Aquatic microbiology and ecology",
+        "Cellular metabolism and interaction"
+      ]
+    ],
+    "https://cals.cornell.edu/microbiology": [
+      [
+        "Microbiology",
+        "Evolution",
+        "Genetics"
+      ],
+      [
+        "Cornell AgriTech",
+        "Cornell University Agricultural Experiment Station",
+        "Agriculture Sciences Major"
+      ]
+    ],
+    "https://microimmuno.stanford.edu/": [
+      [
+        "courtesy of  David Relman",
+        "courtesy of Denise Monack",
+        "courtesy of Leigh Baxt and Upinder Singh",
+        "courtesy of Stefan Oliver, Wah Chiu and Ann Arvin",
+        "courtesy of Helen Blau",
+        "courtesy of David Relman",
+        "courtesy of Helen Blau",
+        "courtesy of Mark Davis",
+        "courtesy of Helen Blau",
+        "courtesy of Stella Sun, Li-av Segev-Zarko, Wah Chiu and John Boothroyd"
+      ]
+    ],
+    "https://molbio.princeton.edu/research-areas/microbiology-virology-immunology": [
+      [
+        "Bonnie L. Bassler",
+        "John F. Brooks II",
+        "Ileana M. Cristea",
+        "Mohamed S. Donia",
+        "Zemer Gitai",
+        "Martin Jonikas",
+        "Ai Ing Lim",
+        "Lydia Lynch",
+        "Kai Mesa",
+        "Cameron A. Myhrvold",
+        "Alexander Ploss",
+        "Thomas J. Silhavy",
+        "A.J. te Velthuis"
+      ]
+    ],
+    "https://mib.uga.edu/teaching-requirement": [
+      [
+        "Mini Menu",
+        "Main menu",
+        "Slideshow",
+        "Support Microbiology at UGA"
+      ],
+      [
+        "Teaching Requirements",
+        "Choosing when to teach",
+        "Required courses and meetings associated with teaching assistantships",
+        "Teaching Exemption (Other than Professional Development)"
+      ]
+    ],
+    "https://www.clemson.edu/science/academics/departments/biosci/academics/grad-micro.html": [
+      [
+        "Research Overview",
+        "Microbiology",
+        "Molecular",
+        "Toxicology"
+      ],
+      [
+        "Genetics, physiology and metabolism.",
+        "Pathogenic microbiology.",
+        "Environmental and ecological microbiology.",
+        "Technology.",
+        "Bioinformatics, genomics and statistics."
+      ],
+      [
+        "Genetics, physiology and metabolism.",
+        "Pathogenic microbiology.",
+        "Environmental and ecological microbiology.",
+        "Technology.",
+        "Bioinformatics, genomics and statistics."
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "Twitter",
+        "LinkedIn"
+      ],
+      [
+        "Clemson University",
+        "Biological Sciences",
+        "Colleges",
+        "Academic Resources",
+        "Outside the Classroom",
+        "Applying to Clemson",
+        "Academic Opportunities",
+        "Financial Aid",
+        "Join Your Clemson Family",
+        "Services On Campus",
+        "Get Involved",
+        "Research Opportunities",
+        "Public Service and Agriculture",
+        "Innovation and Economic Development",
+        "For Tigers",
+        "Campus Resources",
+        "Campus Leadership",
+        "Academics",
+        "Program Overview",
+        "Plans of Study"
+      ],
+      [
+        "Colleges",
+        "Academic Resources",
+        "Outside the Classroom",
+        "Applying to Clemson",
+        "Academic Opportunities",
+        "Financial Aid",
+        "Join Your Clemson Family",
+        "Services On Campus",
+        "Get Involved",
+        "Research Opportunities",
+        "Public Service and Agriculture",
+        "Innovation and Economic Development",
+        "For Tigers",
+        "Campus Resources",
+        "Campus Leadership",
+        "Master of Science",
+        "Doctorate",
+        "Policy",
+        "Copyright \u00a9 2025",
+        "Resources"
+      ]
+    ],
+    "https://cbmg.umd.edu/research/areas/microbiology-microbial-pathogenesis-immunology": [
+      [
+        "CBMG688D: Cell Biology I, Structure and Function",
+        "CBMG688E: Cell Biology II, Signal Transduction",
+        "CBMG688F: Genetics I, Gene Expression",
+        "CBMG688I: Genetics II",
+        "CBMG688W: Techniques in Microscopy",
+        "CBMG688J: Immunology and Host Defense",
+        "CBMG688L: Microbial Pathogenesis",
+        "CBMG688M: Microbial Genetics",
+        "CBMG688X: Virology Program Course",
+        "CBMG688B: Bioethics",
+        "Current Journal Clubs: Protein Translation; Host-Pathogen Interactions; Virology"
+      ],
+      [
+        "Norma Andrews\n\n\nProfessor",
+        "Volker Briken\n\n\nProfessor",
+        "Charles F. Delwiche\n\n\nProfessor",
+        "Jeffrey DeStefano\n\n\nProfessor",
+        "Najib M. El-Sayed\n\n\nProfessor",
+        "Norberto Gonzalez-Juarbe\n\n\nAssistant Professor",
+        "Brantley Hall\n\n\nAssistant Professor",
+        "Vincent Lee\n\n\nProfessor",
+        "Roy Mariuzza\n\n\nProfessor",
+        "Kevin McIver\n\n\nProfessor\nDepartment Chair",
+        "David Mosser\n\n\nProfessor",
+        "Anne Simon\n\n\nProfessor",
+        "Wenxia Song\n\n\nProfessor",
+        "Daniel Stein\n\n\nProfessor",
+        "David Straney\n\n\nAssociate Professor\nAssociate Chair for Undergraduate Programs",
+        "Wade Winkler\n\n\nProfessor"
+      ]
+    ],
+    "https://microbiology.medicine.uiowa.edu/research": [
+      [
+        "Site Main Navigation",
+        "Breadcrumb",
+        "Research",
+        "Main navigation",
+        "Areas of Focus",
+        "Departmental Equipment",
+        "Training Grants",
+        "Research Lab Resources",
+        "Department of Microbiology and Immunology",
+        "Social Media"
+      ]
+    ],
+    "https://microbiology.columbia.edu/": [
+      [
+        "WEDNESDAY SEMINAR",
+        "FRIDAY SEMINAR",
+        "AWARDS"
+      ],
+      [
+        "Apr 24, 2025\n\n\n\n12:00\u202fPM \u2013 1:00\u202fPM12:00 \u2013 13:0012:00\u202fPM \u2013 1:00\u202fPM",
+        "Paul Lehner, M.D., Ph.D. (University of Cambridge)",
+        "Apr 24, 2025\n\n\n\n12:00\u202fPM \u2013 1:00\u202fPM12:00 \u2013 13:0012:00\u202fPM \u2013 1:00\u202fPM",
+        "Apr 24, 2025\n\n\n\n12:00\u202fPM \u2013 1:00\u202fPM12:00 \u2013 13:0012:00\u202fPM \u2013 1:00\u202fPM"
+      ],
+      [
+        "Mar 28, 2025\n\n\n\n3:30\u202fPM \u2013 4:30\u202fPM15:30 \u2013 16:303:30\u202fPM \u2013 4:30\u202fPM",
+        "Eric Whisenant (Basu Lab) and Xianwei Chen (Ding Lab)",
+        "Mar 28, 2025\n\n\n\n3:30\u202fPM \u2013 4:30\u202fPM15:30 \u2013 16:303:30\u202fPM \u2013 4:30\u202fPM",
+        "Mar 28, 2025\n\n\n\n3:30\u202fPM \u2013 4:30\u202fPM15:30 \u2013 16:303:30\u202fPM \u2013 4:30\u202fPM"
+      ],
+      [
+        "Jun 18, 2024",
+        "Jun 18, 2024",
+        "Jun 18, 2024"
+      ],
+      [
+        "May 16, 2024",
+        "May 16, 2024",
+        "May 16, 2024"
+      ]
+    ],
+    "https://guide.wisc.edu/graduate/bacteriology/microbiology-phd/": [
+      [
+        "Genetics: One semester. Such as: MICROBIO\u00a0470,\u00a0GENETICS\u00a0466, or (GENETICS\u00a0467 and GENETICS\u00a0468)",
+        "Biochemistry: One semester. Such as: BIOCHEM\u00a0501, (BIOCHEM\u00a0507 and BIOCHEM\u00a0508)",
+        "Physics: One semester. Such as: (PHYSICS\u00a0104, PHYSICS\u00a0202, or PHYSICS\u00a0208)"
+      ],
+      [
+        "Gain a broad understanding of the microbiology principles that underlie all biological processes.",
+        "Articulate, discuss and define limits to the theory and knowledge in microbiology.",
+        "Communicates complex ideas in a clear and understandable matter.",
+        "Foster professional and ethical conduct in the sciences.",
+        "Ethical design of experimental protocols.",
+        "Reproducibility of experimental results.",
+        "Professional behavior in industrial, government and academic settings.",
+        "Develop teaching and mentoring skills in both lecture and laboratory settings."
+      ],
+      [
+        "Overview",
+        "Admissions",
+        "Funding",
+        "Requirements",
+        "Policies",
+        "Professional Development",
+        "Learning Outcomes",
+        "People"
+      ],
+      [
+        "Double Degree",
+        "Admissions",
+        "Funding",
+        "Minimum Graduate School Requirements",
+        "Major Requirements",
+        "Graduate School Policies",
+        "Professional Development",
+        "Learning Outcomes",
+        "People"
+      ],
+      [
+        "Program Application Materials",
+        "Course Prerequisites",
+        "Graduate School Resources",
+        "Program Resources",
+        "Mode of Instruction",
+        "Curricular Requirements",
+        "Required Courses",
+        "Major-Specific Policies",
+        "Prior Coursework",
+        "Probation",
+        "Advisor / Committee",
+        "Credits Per Term Allowed",
+        "Time Limits",
+        "Grievances and Appeals",
+        "Other",
+        "Graduate School Resources",
+        "Program Resources",
+        "Resources",
+        "Quick Links",
+        "Madison, WI",
+        "Ask Bucky",
+        "Social Media"
+      ],
+      [
+        "Mode of Instruction Definitions",
+        "Rotation Requirement",
+        "Professional Development Requirement",
+        "Options for completing Professional Development requirement:",
+        "Teaching Practicum Requirement",
+        "Graduate Credits Earned at Other Institutions",
+        "Undergraduate Credits Earned at Other Institutions or UW-Madison",
+        "Credits Earned as a University Special student at UW-Madison",
+        "College of Agricultural and Life Sciences: Grievance Policy"
+      ],
+      [
+        "Refer to the Graduate School: Transfer Credits for Prior Coursework policy.",
+        "Refer to the Graduate School: Probation policy.",
+        "15 credits",
+        "Refer to the Graduate School: Time Limits policy.",
+        "These resources may be helpful in addressing your concerns:"
+      ],
+      [
+        "Requirements",
+        "Fall Deadline",
+        "Spring Deadline",
+        "Summer Deadline",
+        "GRE (Graduate Record Examinations)",
+        "English Proficiency Test",
+        "Other Test(s) (e.g., GMAT, MCAT)",
+        "Letters of Recommendation Required"
+      ],
+      [
+        "Requirements",
+        "Minimum Credit Requirement",
+        "Minimum Residence Credit Requirement",
+        "Minimum Graduate Coursework Requirement",
+        "Overall Graduate GPA Requirement",
+        "Other Grade Requirements",
+        "Assessments and Examinations",
+        "Language Requirements",
+        "Graduate School Breadth Requirement"
+      ],
+      [
+        "Required Courses",
+        "MICROBIO\u00a0810",
+        "MICROBIO\u00a0811",
+        "At least three courses must come from the following list:",
+        "GENETICS/\u200bBIOCHEM/\u200bMD\u00a0GENET\u00a0\u00a0620",
+        "GENETICS\u00a0885",
+        "MICROBIO\u00a0526",
+        "MICROBIO\u00a0607",
+        "MICROBIO/\u200bBIOCHEM/\u200bGENETICS\u00a0\u00a0612",
+        "MICROBIO\u00a0657",
+        "MICROBIO\u00a0710",
+        "MICROBIO/\u200bBMOLCHEM\u00a0\u00a0668",
+        "MICROBIO\u00a0875",
+        "M\u00a0M\u00a0&\u00a0I/\u200bPATH-BIO\u00a0\u00a0528",
+        "M\u00a0M\u00a0&\u00a0I\u00a0740",
+        "ONCOLOGY/\u200bM\u00a0M\u00a0&\u00a0I/\u200bPL\u00a0PATH\u00a0\u00a0640",
+        "PL\u00a0PATH/\u200bBOTANY/\u200bGENETICS/\u200bM\u00a0M\u00a0&\u00a0I\u00a0\u00a0655",
+        "Seminar Requirement 1",
+        "MICROBIO\u00a0731",
+        "or\u00a0M\u00a0M\u00a0&\u00a0I\u00a0901",
+        "Breadth",
+        "Research Credits",
+        "M\u00a0M\u00a0&\u00a0I\u00a0990",
+        "or\u00a0MICROBIO\u00a0990",
+        "Total Credits"
+      ],
+      [
+        "microbe symbioses, plant",
+        "microbial interactions, animal",
+        "microbial interactions, microbe",
+        "microbe interactions; and virology, including host",
+        "virus interactions. Dissertation research emphasizes creative and innovative problem"
+      ]
+    ],
+    "https://sc.edu/study/colleges_schools/medicine/research/basic_science_departments/pathology_microbiology_and_immunology/index.php": [
+      [
+        "SC.edu",
+        "Study",
+        "Colleges and Schools",
+        "School of Medicine Columbia",
+        "Research",
+        "Basic Science Departments",
+        "Pathology, Microbiology and Immunology"
+      ],
+      [
+        "the components of the immune system and their functions.",
+        "interactions between immune system components.",
+        "immune system dysregulation and consequences.",
+        "immune response during health and disease."
+      ],
+      [
+        "Mitzi Nagarkatti- Effect of microbiome in inflammatory diseases such as colitis, obesity and cancer.",
+        "Angela Murphy \u2013 Role of macrophage-induced inflammation in colon cancer.",
+        "Carole Oskeritzian \u2013 Targeting skin inflammation in atopic dermatitis.",
+        "Narendra Singh \u2013 Role of aryl hydrocarbon receptor in lupus, MS and diabetes."
+      ],
+      [
+        "Angela Murphy \u2013 Effect of exercise in obesity and metabolic disorders.",
+        "Reilly Enos \u2013 Cellular and molecular mechanisms in induction of obesity and metabolic syndrome.",
+        "Prakash Nagarkatti - Cannabinoid receptor antagonists in the treatment of obesity.",
+        "Mitzi Nagarkatti - Gut microbiome in obesity.",
+        "Kandy Velazquez \u2013 Role of exercise and obesity in muscle wasting disorders."
+      ],
+      [
+        "Swapan Ray \u2013 Use of chemoimmunotherapy in treatment of glioblastoma and neuroblastoma.",
+        "Angela Murphy",
+        "Prakash Nagarkatti - Epigenetic regulation colon cancer by plant products.",
+        "loulia Chatzistamou \u2013 Molecular mechanism underlying carcinogenesis.",
+        "Deepak Bhere \u2013 H. pylori induced carcinogenesis.",
+        "Kandy Velazquez \u2013 Characterization of spontaneous pain in colorectal cancer."
+      ],
+      [
+        "Pathology, Microbiology and Immunology",
+        "A Message From Our Chair",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      [
+        "art cores such as the Flow Cytometry and Sorting.",
+        "edge equipment and technology for Advanced",
+        "Omics (Genomics, Epigenomics, Transcriptomics and Microbiome technology)",
+        "hand."
+      ]
+    ],
+    "https://catalog.ncsu.edu/undergraduate/sciences/biological-sciences/microbiology-bs-microbial-research/": [
+      [
+        "Biochemist",
+        "Biologist",
+        "Biology Professor",
+        "Biomedical Engineer",
+        "Biophysicist",
+        "Dermatologist (MD)",
+        "Epidemiologists",
+        "Family Practitioner (MD)",
+        "Food & Drug Inspector",
+        "Food Technologist",
+        "Forensic Science Technicians",
+        "General Internists (MD)",
+        "Geneticist",
+        "Gynecologist (MD)",
+        "Medical Technologist",
+        "Microbiologist",
+        "Obstetrician (MD)",
+        "Pathologist (MD)",
+        "Pediatrician (MD)",
+        "Pharmacologist",
+        "Sales Representative (Chemicals & Drugs)",
+        "Surgeons (MD)",
+        "Surgical Assistants",
+        "Toxicologist",
+        "Water Pollution Control Inspector"
+      ],
+      [
+        "Plan Requirements",
+        "Semester Sequence",
+        "Career Opportunities",
+        "Print Options"
+      ],
+      [
+        "College of Sciences",
+        "Learning Outcomes",
+        "Salary Data",
+        "Change Major or Minor",
+        "Laboratory Elective",
+        "Career Titles"
+      ],
+      [
+        "BBS/BEC 426",
+        "BCH\u00a0452",
+        "BEC\u00a0436",
+        "BEC\u00a0440",
+        "BEC\u00a0441",
+        "BEC\u00a0462",
+        "BEC\u00a0463",
+        "BEC\u00a0475",
+        "BEC\u00a0480",
+        "BEC\u00a0483",
+        "BEC\u00a0485",
+        "BEC\u00a0488",
+        "BEC\u00a0495",
+        "BEC\u00a0497",
+        "BIT\u00a0402",
+        "BIT\u00a0410",
+        "BIT\u00a0462",
+        "BIT\u00a0463",
+        "BIT\u00a0464",
+        "BIT\u00a0465",
+        "BIT\u00a0466",
+        "BIT\u00a0467",
+        "BIT\u00a0468",
+        "BIT\u00a0471",
+        "BIT\u00a0473",
+        "BIT\u00a0474",
+        "BIT\u00a0476",
+        "BIT\u00a0477",
+        "BIT\u00a0478",
+        "BIT\u00a0479",
+        "BIT\u00a0480",
+        "BIT\u00a0481",
+        "BIT\u00a0492",
+        "BIT\u00a0493",
+        "BIT\u00a0495",
+        "BME\u00a0483",
+        "CHE\u00a0462",
+        "CHE\u00a0463",
+        "CHE\u00a0488",
+        "FS\u00a0426",
+        "GN\u00a0312",
+        "MB\u00a0360",
+        "MB\u00a0420",
+        "PB\u00a0481",
+        "PO\u00a0466"
+      ]
+    ],
+    "https://www.bio.tamu.edu/graduate-micro/": [
+      [
+        "Graduate Microbiology M.S. Program",
+        "McKensie Daugherty",
+        "2025-03-03T21:14:16+00:00"
+      ],
+      [
+        "DEGREE PLAN",
+        "NON-THESIS OPTION",
+        "THESIS OPTION"
+      ],
+      [
+        "Course",
+        "BIOL 613",
+        "BIOL 622",
+        "BIOL 651",
+        "BIOL 681",
+        "BIOL 697"
+      ],
+      [
+        "Course",
+        "BIOL 606",
+        "BIOL 650",
+        "BIOL 661",
+        "BIOL 681"
+      ],
+      [
+        "Course",
+        "BIOL 613",
+        "BIOL 683",
+        "BIOL 681",
+        "BIOL 691",
+        "BIOL 697"
+      ],
+      [
+        "Course",
+        "BIOL 606",
+        "BIOL 609",
+        "BIOL 696",
+        "BIOL 691"
+      ],
+      [
+        "Course",
+        "BIOL 651",
+        "BIOL 622",
+        "BIOL 681",
+        "BIOL 691"
+      ],
+      [
+        "Course",
+        "BIOL 681",
+        "BIOL 661",
+        "BIOL 691"
+      ]
+    ],
+    "https://www.sdstate.edu/biology-microbiology": [
+      [
+        "Facebook",
+        "Twitter",
+        "Instagram"
+      ],
+      [
+        "Biology Specialization",
+        "Microbiology Specialization",
+        "Molecular Biology Specialization"
+      ],
+      [
+        "Facebook",
+        "X.com",
+        "Instagram"
+      ],
+      [
+        "section-department-of-biology-an",
+        "Breadcrumb",
+        "section-department-of-biology-an"
+      ],
+      [
+        "Undergraduate Degrees",
+        "Graduate Degrees",
+        "Minors"
+      ],
+      [
+        "Pre-Medicine",
+        "Pre-Athletic Training",
+        "Pre-Chiropractic",
+        "Pre-Dental",
+        "Pre-Mortuary Science",
+        "Pre-Occupational Therapy",
+        "Pre-Optometry",
+        "Pre-Physical Therapy",
+        "Pre-Physician Assistant",
+        "Pre-Veterinary Medicine"
+      ]
+    ],
+    "https://chicago.medicine.uic.edu/microbiology/": [
+      [
+        "viral, anti",
+        "bacterial and anti",
+        "cancer therapeutics and vaccines, using state"
+      ]
+    ],
+    "https://vetmedbiosci.colostate.edu/mip/prime/": [
+      [
+        "Current Grants",
+        "Publications",
+        "Presentations",
+        "Textbooks",
+        "Members",
+        "Department Resources",
+        "College Resources",
+        "Academic Departments"
+      ],
+      [
+        "Grace Borlee Lab",
+        "Kelp Lab",
+        "Mehaffy Lab",
+        "Suchman Lab"
+      ],
+      [
+        "Suchman E, Writing Learning Outcomes. Washington State University. (Invited Talk)",
+        "Suchman E, Creating effective assessments. Washington State University. (Invited Talk)",
+        "Suchman E, What\u2019s new in Teaching? Rocky Mountain Virology. CSU Mountain Campus.",
+        "Suchman E, 3D models of antigens and epitopes for teaching. ASMCUE, Denver CO.",
+        "Suchman E, 3D models of antigens and epitopes for teaching. RTA Meeting, Fort Collins CO.",
+        "Suchman E, Regional Teaching Academy\u2019s teaching evaluation process. RTA Meeting, Fort Collins CO.",
+        "Suchman E, Writing effective assessments. Speaker. TITL Summer Workshop, CSU.",
+        "Suchman E, Evaluating Teaching effectiveness. College of Agricultural Sciences, CSU. (Invited Talk)"
+      ],
+      [
+        "2028)\u00a0 CDC Rockies and High Plains Vector",
+        "Borne Diseases Center, co",
+        "PIs: Brian Foy (CSU) and Natalie Marzec (CDPHE), Co",
+        "Is: Rebekah Kading (CSU), Elizabeth Hemming",
+        "Schroeder (CSU), Greg Ebel (CSU), Nicole Kelp (CSU), Karla Saavedra"
+      ],
+      [
+        "level inter",
+        "disciplinary microbiology CUREs increase student\u2019s scientific self",
+        "efficacy, scientific identity, and self",
+        "assessed skills. J Microbiol Biol Educ. e0014023."
+      ]
+    ],
+    "https://medicine.uky.edu/sites/graduate/microbiology-immunology-molecular-genetics-research": [
+      [
+        "Biomedical Education",
+        "College of Medicine",
+        "Resources"
+      ],
+      [
+        "Departments and Centers",
+        "Education",
+        "Dean's Welcome",
+        "Basic Science Departments",
+        "Clinical Departments",
+        "Centers",
+        "Office of Biomedical Education",
+        "Office Of Biomedical Education"
+      ]
+    ],
+    "https://www.slu.edu/medicine/medical-education/graduate-programs/biomedical-sciences/molecular-microbiology-immunology/index.php": [
+      [
+        "Department of Molecular Microbiology and Immunology",
+        "A Letter from the Chair",
+        "Richard DiPaolo, Ph.D.",
+        "Explore this Section",
+        "Faculty Researchers",
+        "Ph.D. Program",
+        "SLU Medicine Next Steps",
+        "Higher purpose. Greater good."
+      ]
+    ],
+    "https://sols.asu.edu/degree/graduate/microbiology-phd": [
+      [
+        "ASU School of Life Sciences",
+        "ASU Ira A. Fulton Schools of Engineering",
+        "ASU The Biodesign Institute",
+        "ASU School of Sustainable Engineering and the Built Environment",
+        "ASU School for Energy, Material and Transport Engineering"
+      ],
+      [
+        "St. Joseph\u2019s Hospital and Medical Center/Barrow Neurological Institute",
+        "Carl T. Hayden Veteran's Administration Medical Center",
+        "Mayo Clinic in Arizona",
+        "Translational Genomics Research Institute",
+        "University of Arizona College of Medicine-Phoenix",
+        "Phoenix Children\u2019s Hospital"
+      ],
+      [
+        "MIC 791 Seminar: Virology Journal Club",
+        "MIC 598 \u00a0Special Topics: Immun: Molecular and Cell Foundations",
+        "MIC 598 Special Topics: Advanced Immunology",
+        "MCB 791 \u00a0Seminar: Molecular Virology Journal Club",
+        "BIO 611 Topics Resp Conduct Research: Emerging Technologies Life Science",
+        "MIC 598: Immunology: Molecular & Cellular Foundations",
+        "MIC 598: General Virology",
+        "MIC 598: Advanced Immunology",
+        "MIC 598: Bacterial Diversity and Systematics",
+        "MIC 598: Novel Models for Host-Microbe Interactions",
+        "MIC 598: Bioinformatic Analysis of High-throughput DNA Data",
+        "MIC 598: Bacterial Pathogenesis",
+        "MIC 598: Geomicrobiology",
+        "MIC 598: Microbial Ecology and Evolution",
+        "MIC 598: Viromics"
+      ],
+      [
+        "Session",
+        "Modality",
+        "Deadline"
+      ],
+      [
+        "Session A/C",
+        "In Person",
+        "November 15th",
+        "Final"
+      ]
+    ],
+    "https://microcell.ufl.edu/graduate-program/": [
+      [
+        "BSC 6459 Fundamentals of Bioinformatics (Fall and Spring) \u2014 3 Credits",
+        "MCB 5205 Microbiology of Human Pathogens (Fall and Spring) \u2014 3 Credits",
+        "MCB 5252 Microbiology, Immunology, and Immunotherapeutics (Spring, Summer A) \u2014 4 Credits",
+        "MCB 5270 Antimicrobial Resistance (Fall and Spring) \u2014 3 credits",
+        "MCB 5505 General Virology (Fall and Spring) \u2014 3 Credits",
+        "MCB 5705 Astrobiology (Spring) \u2014 3 credits",
+        "MCB 6151 Prokaryotic Diversity (Summer C) \u2014 3 Credits",
+        "MCB 6407 Prokaryotic Cell Structure and Function (Fall) \u2014 3 credits",
+        "MCB 6424 Probiotics (Spring) \u2014 3 credits",
+        "MCB 6656 Environmental Microbiology (Fall) \u2014 3 credits",
+        "MCB 6670C The Microbiome (Spring) \u2014 3 credits",
+        "MCB 6781 Extremophiles (Fall) \u2014 3 Credits",
+        "MCB 6905 Experimental Microbiology (Fall, Spring, Summer A/C) \u2014 credits vary",
+        "MCB 6930 Seminar (Fall, Spring) \u2014 1 Credit",
+        "MCB 6937 Advanced Molecular Genetics (Fall) \u2014 3 credits",
+        "MCB 6937 Basic Biology of Microorganisms (Fall, Spring, Summer A) \u2014 3 credits",
+        "MCB 6937 Careers for Impact (Fall, Spring, Summer A) \u2014 1 credit",
+        "MCB 6937 Foundations in Molecular Genetics (Spring) \u2014 3 credits",
+        "MCB 6937 Human Genomics (Fall) \u2014 3 Credits",
+        "MCB 6937 Innovation Project Management (Fall, Spring, Summer A) \u2014 1 credit",
+        "MCB 6937 Post-translational Modifications in Microbiology (Summer C) \u2014 2 credits",
+        "MCB 6937 R for Life Sciences (Fall and Summer C) \u2014 3 credits",
+        "MCB 6940 Supervised Teaching (Fall, Spring, Summer A/C) \u2014 credits vary",
+        "MCB 7922 Journal Colloquy (Fall, Spring, Summer C) \u2014 1 Credit",
+        "MCB 7979 Advanced Research (Fall, Spring, Summer A/C) \u2014 credits vary",
+        "MCB 7980 Research for Doctoral Dissertation (Fall, Spring, Summer A/C) \u2014 credits vary",
+        "PCB 5235 Immunology (Spring) \u2014 3 Credits"
+      ],
+      [
+        "MCB 6317 Molecular Biology of Gene Expression (Fall) \u2014 1 Credit",
+        "MCB 6318 Comparative Microbial Genomics (Spring) \u2014 2 Credits",
+        "MCB 6355 Microbial/Host Defense (Spring) \u2014 1 Credit",
+        "MCB 6417 Microbial Metabolism and Energetics (Fall) \u2014 1 Credit",
+        "MCB 6457 Metabolic Regulation (Spring) \u2014 1 Credit",
+        "MCB 6772 Advanced Topics in Cell Biology (Spring) \u2014 1 Credit",
+        "MCB 6937 Methods to Study Prokaryotic Transcriptional Regulation (Spring) 1 Credit"
+      ],
+      [
+        "Ph.D. Degree Program",
+        "Online Master of Science (MS-non thesis) Degree Program",
+        "General Admissions and Application Information",
+        "Distance Ph.D. Program"
+      ],
+      [
+        "Ph.D. program",
+        "Online M.S. program (contact mcsadvising@ifas.ufl.edu)",
+        "Environmental Microbiology graduate certificate program",
+        "Microbiome and Health graduate certificate program"
+      ],
+      [
+        "Course Syllabi",
+        "Graduate Student Handbook: MCS Graduate Handbook",
+        "Guides to creating a CV, Resume, and Personal Statement\n\nNew Cap CV\nNew Cap Resume\nNew Cap Statement",
+        "New Cap CV",
+        "New Cap Resume",
+        "New Cap Statement"
+      ],
+      [
+        "New Cap CV",
+        "New Cap Resume",
+        "New Cap Statement"
+      ],
+      [
+        "UF Schedule of Courses",
+        "UF Graduate School Course Catalog",
+        "MS Final Exam Rubric",
+        "Tools to Improve Scientific Writing"
+      ]
+    ],
+    "https://gsbs.tufts.edu/academics/basic-science-phd-programs/molecular-microbiology": [
+      [
+        "SEPTEMBER",
+        "5.5-6 YEARS",
+        "FULL TUITION",
+        "$43,000",
+        "DEI in Micro",
+        "Molecular Microbiology Activities"
+      ]
+    ],
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/course-descriptions": [
+      [
+        "MS Program\n\n\n\nMS Program Requirements",
+        "MS Program Requirements",
+        "PhD Program\n\n\n\nPhD Program Requirements\n\n\n\n\nMacNeal Dissertation Award",
+        "PhD Program Requirements",
+        "MacNeal Dissertation Award",
+        "Training Programs",
+        "M&I | HME Dual Degree",
+        "Course Descriptions",
+        "Student Life"
+      ],
+      [
+        "celled protozoa, multi",
+        "Transmitted Helminths, and Dracunculiasis (Guinea Worm Disease). This course is cross",
+        "listed as INTMED 460. Fall term only."
+      ],
+      [
+        "Cell and B",
+        "Cell Responses, Immune Effector Mechanisms (including cellular and antibody",
+        "based online resources directly linked to textbook, including chapter",
+        "section of both the basic and clinical sciences. This course is cross",
+        "listed as INTMED 440. Winter term."
+      ]
+    ],
+    "https://cals.cornell.edu/microbiology/academics/graduate": [
+      [
+        "BIOMI 6200 Core Concepts in Molecular Bacteriology \u00a0(Spring, 3 credits)",
+        "BIOMI 7100\u00a0Fundamentals of Environmental Microbiology (Fall, 3 credits)",
+        "BIOMI 7970 Scientific Communication Skills\u00a0\u00a0(Fall, 1 credit\u00a0per semester)",
+        "BIOMI 7990 Microbiology Seminar Series \u00a0(Fall/Spring, 1\u00a0credit)"
+      ],
+      [
+        "Application form",
+        "Academic statement of purpose",
+        "Personal statement",
+        "Resume",
+        "Transcripts",
+        "Three letters of recommendation",
+        "Students are\u00a0NOT required\u00a0to hold a M.S. degree prior to applying for the Ph.D. program",
+        "Microbiology Applications do not\u00a0require GRE scores (general or subject tests)."
+      ]
+    ],
+    "https://medicine.uams.edu/mbim/graduate-program/": [
+      [
+        "Philosophy and Objectives",
+        "Concentration in Immunology",
+        "Concentration in Microbial Pathogenesis",
+        "Courses Offered",
+        "Graduate Students"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:13:24"
+}

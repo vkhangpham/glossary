@@ -1,0 +1,649 @@
+{
+  "level1_term": "business information systems",
+  "url_verification_status": {
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Business-Information-Technology.aspx": true,
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Information-Systems.aspx": true,
+    "https://www.cob.niu.edu/academics/omis/ms/index.shtml": true,
+    "https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/ioms-dept/academic-programs-courses/phd-programs/phd-information-systems": true,
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": true,
+    "https://business.vcu.edu/academics/information-systems/phd-in-business-with-a-concentration-in-information-systems/": false,
+    "https://eller.arizona.edu/programs/undergraduate/professional-development/majors/mis": false,
+    "https://www.bu.edu/questrom/faculty/academic-departments/information-systems/": true
+  },
+  "verified_lists_per_url": {
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Business-Information-Technology.aspx": 2,
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Information-Systems.aspx": 2,
+    "https://www.cob.niu.edu/academics/omis/ms/index.shtml": 2,
+    "https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/ioms-dept/academic-programs-courses/phd-programs/phd-information-systems": 1,
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": 12,
+    "https://business.vcu.edu/academics/information-systems/phd-in-business-with-a-concentration-in-information-systems/": 0,
+    "https://eller.arizona.edu/programs/undergraduate/professional-development/majors/mis": 0,
+    "https://www.bu.edu/questrom/faculty/academic-departments/information-systems/": 2
+  },
+  "total_lists_per_url": {
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Business-Information-Technology.aspx": 7,
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Information-Systems.aspx": 6,
+    "https://www.cob.niu.edu/academics/omis/ms/index.shtml": 5,
+    "https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/ioms-dept/academic-programs-courses/phd-programs/phd-information-systems": 3,
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": 25,
+    "https://business.vcu.edu/academics/information-systems/phd-in-business-with-a-concentration-in-information-systems/": 1,
+    "https://eller.arizona.edu/programs/undergraduate/professional-development/majors/mis": 1,
+    "https://www.bu.edu/questrom/faculty/academic-departments/information-systems/": 2
+  },
+  "verified_lists_ids": {
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Business-Information-Technology.aspx": [
+      0,
+      3
+    ],
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Information-Systems.aspx": [
+      0,
+      3
+    ],
+    "https://www.cob.niu.edu/academics/omis/ms/index.shtml": [
+      0,
+      1
+    ],
+    "https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/ioms-dept/academic-programs-courses/phd-programs/phd-information-systems": [
+      0
+    ],
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": [
+      0,
+      1,
+      7,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      21,
+      22,
+      23
+    ],
+    "https://business.vcu.edu/academics/information-systems/phd-in-business-with-a-concentration-in-information-systems/": [],
+    "https://eller.arizona.edu/programs/undergraduate/professional-development/majors/mis": [],
+    "https://www.bu.edu/questrom/faculty/academic-departments/information-systems/": [
+      0,
+      1
+    ]
+  },
+  "num_urls": 13,
+  "num_lists": 50,
+  "url_to_lists": {
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Business-Information-Technology.aspx": [
+      [
+        "Cinematic Arts",
+        "Computing",
+        "Design"
+      ],
+      [
+        "Log In",
+        "MyCDM",
+        "Campus Connect"
+      ],
+      [
+        "Academic Resources",
+        "Academic Calendar",
+        "Exam Schedule",
+        "OneDePaul"
+      ],
+      [
+        "Cinematic Arts",
+        "Computing",
+        "Design"
+      ],
+      [
+        "Course Catalog",
+        "Course Schedule",
+        "Course Syllabi",
+        "Academic Calendar",
+        "Exam Schedule"
+      ],
+      [
+        "Business Analyst",
+        "IT Project Manager",
+        "Product Manager",
+        "Director of Information Systems and Technology",
+        "IT Manager"
+      ],
+      [
+        "Enrollment Quarter",
+        "Winter",
+        "Spring",
+        "Summer"
+      ]
+    ],
+    "https://www.cdm.depaul.edu/academics/Pages/MS-in-Information-Systems.aspx": [
+      [
+        "Cinematic Arts",
+        "Computing",
+        "Design"
+      ],
+      [
+        "Log In",
+        "MyCDM",
+        "Campus Connect"
+      ],
+      [
+        "Academic Resources",
+        "Academic Calendar",
+        "Exam Schedule",
+        "OneDePaul"
+      ],
+      [
+        "Cinematic Arts",
+        "Computing",
+        "Design"
+      ],
+      [
+        "Course Catalog",
+        "Course Schedule",
+        "Course Syllabi",
+        "Academic Calendar",
+        "Exam Schedule"
+      ],
+      [
+        "Enrollment Quarter",
+        "Winter",
+        "Spring",
+        "Summer"
+      ]
+    ],
+    "https://www.cob.niu.edu/academics/omis/ms/index.shtml": [
+      [
+        "Big data",
+        "Database management",
+        "Data mining",
+        "Business analytics",
+        "Business intelligence",
+        "Data modeling",
+        "Business enterprise computing",
+        "Networking and telecommunications",
+        "Project management",
+        "Internet and web computing",
+        "Systems analysis and design",
+        "Enterprise resource planning",
+        "Social media analytics"
+      ],
+      [
+        "Systems analyst",
+        "Business analytics",
+        "Project manager",
+        "Consultant",
+        "Technical support",
+        "IT specialist",
+        "Database specialist/administrator",
+        "Information security manager",
+        "End-user support",
+        "Business intelligence analyst",
+        "Application developer",
+        "Network analyst/administrator"
+      ],
+      [
+        "Abbott",
+        "Abbvie",
+        "Accenture",
+        "Allstate",
+        "Caterpillar",
+        "McKesson",
+        "True Value",
+        "Ideosity",
+        "Molex",
+        "JP Morgan Chase",
+        "McDonald\u2019s Corporation",
+        "SAP Inc.",
+        "TransUnion",
+        "Sears Holdings",
+        "Target",
+        "State Farm"
+      ],
+      [
+        "SAP and SAS Course Integration",
+        "Professional Internships",
+        "Department Scholarships/Assistantships",
+        "Meet the Firm Night",
+        "STEM Program"
+      ],
+      [
+        "University",
+        "Illinois State University",
+        "DePaul University",
+        "U. of Illinois at Chicago",
+        "U. of Illinois at Urbana-Champaign"
+      ]
+    ],
+    "https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/ioms-dept/academic-programs-courses/phd-programs/phd-information-systems": [
+      [
+        "A programming requirement, may be satisfied in a variety of ways",
+        "Honors Analysis of Algorithms",
+        "Artificial Intelligence",
+        "Optimization",
+        "Database Systems",
+        "Machine Learning/Data Mining",
+        "Other courses based on student's interest",
+        "Research apprenticeship"
+      ],
+      [
+        "Mathematical Methods for Economists",
+        "Econometrics",
+        "Game Theory",
+        "Research apprenticeship"
+      ],
+      [
+        "Audience Menu",
+        "Header",
+        "Header",
+        "Audience",
+        "Section Menu",
+        "Section Menu",
+        "Breadcrumb",
+        "Academic Programs & Courses",
+        "Doctoral Program in Information Systems",
+        "Footer Menu",
+        "Footer Menu #2",
+        "Footer social"
+      ]
+    ],
+    "https://catalog.uic.edu/ucat/colleges-depts/business-administration/": [
+      [
+        "Home/",
+        "Undergraduate\u00a0Catalog/",
+        "Colleges\u00a0&\u00a0Departments/",
+        "College of Business Administration"
+      ],
+      [
+        "Introduction",
+        "Accreditation",
+        "Semester Hour Requirement",
+        "General and Basic Course Requirements",
+        "Business Course Requirements",
+        "Other Course Requirements",
+        "Other Requirements",
+        "Academic Load",
+        "Academic Notice and Dismissal Rules",
+        "Change of Course Schedule\u2014Dropping Courses",
+        "Change of Major/Declaring a Major",
+        "Class Attendance",
+        "Closed Courses",
+        "College Level Examination Program (CLEP)",
+        "Course Prerequisites",
+        "Credit/No Credit Option",
+        "Double Major, Double Degrees, and Second Bachelor\u2019s Degree",
+        "Graduate-Level Courses for Undergraduate Credit",
+        "Independent Study",
+        "Petition Procedure",
+        "Proficiency Examinations",
+        "Required Advising for Registration Approval",
+        "Repeat Policy for Standard Graded Courses",
+        "Transferring",
+        "Minors for CBA Students",
+        "Minors for Non-CBA Students",
+        "Advising Policy",
+        "Required Advising",
+        "Policies to Ensure Academic Progress",
+        "College Honors",
+        "Dean\u2019s List",
+        "Department Honors",
+        "Undergraduate Programs",
+        "Business Career Center",
+        "Academic Options",
+        "Honor Code",
+        "Student Organizations and Co-Curricular Opportunities",
+        "Sample Business Major Curriculum for First Year Students"
+      ],
+      [
+        "Semester Hour Requirement",
+        "General and Basic Course Requirements",
+        "Business Course Requirements",
+        "Other Course Requirements",
+        "Other Requirements"
+      ],
+      [
+        "Academic Load",
+        "Academic Notice and Dismissal Rules",
+        "Change of Course Schedule\u2014Dropping Courses",
+        "Change of Major/Declaring a Major",
+        "Class Attendance",
+        "Closed Courses",
+        "College Level Examination Program (CLEP)",
+        "Course Prerequisites",
+        "Credit/No Credit Option",
+        "Double Major, Double Degrees, and Second Bachelor\u2019s Degree",
+        "Graduate-Level Courses for Undergraduate Credit",
+        "Independent Study",
+        "Petition Procedure",
+        "Proficiency Examinations",
+        "Required Advising for Registration Approval",
+        "Repeat Policy for Standard Graded Courses",
+        "Transferring"
+      ],
+      [
+        "Advising Policy",
+        "Required Advising",
+        "Policies to Ensure Academic Progress"
+      ],
+      [
+        "College Honors",
+        "Dean\u2019s List",
+        "Department Honors"
+      ],
+      [
+        "Undergraduate Programs",
+        "Business Career Center",
+        "Academic Options",
+        "Honor Code"
+      ],
+      [
+        "accounting",
+        "entrepreneurship",
+        "finance",
+        "human resource management",
+        "information and decision sciences",
+        "management",
+        "marketing",
+        "real estate studies"
+      ],
+      [
+        "Analyzing the Natural World",
+        "Understanding the Individual and Society",
+        "Understanding the Past",
+        "Understanding the Creative Arts",
+        "Exploring World Cultures",
+        "Understanding U.S. Society"
+      ],
+      [
+        "all courses taken at the University of Illinois Chicago",
+        "all courses (UIC and transfer) counted toward the degree and",
+        "in the major."
+      ],
+      [
+        "Complete the degree requirements.",
+        "Earn a minimum of 60 semester hours of credit at UIC.",
+        "Achieve a minimum UIC cumulative grade point average of 3.50."
+      ],
+      [
+        "Distinction:\u00a0Overall cumulative GPA of 3.25 and major GPA of 3.25",
+        "High Distinction:\u00a0Overall cumulative GPA of 3.50 and major GPA of 3.50",
+        "Highest Distinction:\u00a0Overall cumulative GPA of 3.75 and major GPA of 3.75"
+      ],
+      [
+        "2024-2025 Undergraduate Catalog",
+        "Introduction",
+        "Accreditation",
+        "Degree Requirements",
+        "College Policies",
+        "Minors",
+        "Academic Advising",
+        "Academic Honors",
+        "Special Programs and Opportunities",
+        "Student Organizations and Co-Curricular Opportunities",
+        "Sample Business Major Curriculum for First Year Students",
+        "Print Options"
+      ],
+      [
+        "Semester Hour Requirement",
+        "General and Basic Course Requirements",
+        "Business Course Requirements",
+        "Other Course Requirements",
+        "Other Requirements",
+        "Academic Load",
+        "Academic Notice and Dismissal Rules",
+        "Change of Course Schedule\u2014Dropping Courses",
+        "Change of Major/Declaring a Major",
+        "Class Attendance",
+        "Closed Courses",
+        "College Level Examination Program (CLEP)",
+        "Course Prerequisites",
+        "Credit/No Credit Option",
+        "Double Major, Double Degrees, and Second Bachelor\u2019s Degree",
+        "Graduate-Level Courses for Undergraduate Credit",
+        "Independent Study",
+        "Petition Procedure",
+        "Proficiency Examinations",
+        "Required Advising for Registration Approval",
+        "Repeat Policy for Standard Graded Courses",
+        "Transferring",
+        "Minors for CBA Students",
+        "Minors for Non-CBA Students",
+        "Advising Policy",
+        "Required Advising",
+        "Policies to Ensure Academic Progress",
+        "College Honors",
+        "Dean\u2019s List",
+        "Department Honors",
+        "Undergraduate Programs",
+        "Business Career Center",
+        "Academic Options",
+        "Honor Code"
+      ],
+      [
+        "University General Education Requirements",
+        "Electives",
+        "Business Administration Course Requirements",
+        "Foreign Language Requirement",
+        "General Education Core",
+        "General Education Proficiencies\u2014University Writing Requirement",
+        "Mathematics Requirements",
+        "Coursework Limitations",
+        "Grade Point Average (GPA) Requirement",
+        "Graduation Declaration/Filing to Graduate/Degree Completion",
+        "Enrollment Residence Requirement",
+        "Ethics Requirement",
+        "Assessment Requirement",
+        "Computer Requirement",
+        "Term Notice Rules",
+        "Academic Notice Rules",
+        "Dismissal Rulesa",
+        "Double Major",
+        "Dual Degrees",
+        "Second Bachelor\u2019s Degree",
+        "Undergraduate Grade Point Average Recalculation/Grade Exclusion Policy",
+        "Intercollege Transfer Students",
+        "Before Applying",
+        "Transfer Students from Other Colleges and Universities"
+      ],
+      [
+        "Major",
+        "Accounting",
+        "Entrepreneurship",
+        "Finance",
+        "Human Resource Management",
+        "Information and Decision Sciences",
+        "Management",
+        "Marketing",
+        "Real Estate",
+        "BBA Degree Completion Program (Online or Campus)a"
+      ],
+      [
+        "Required Courses",
+        "Business Administration Professional Development",
+        "BA\u00a0100",
+        "BA\u00a0101",
+        "BA\u00a0220",
+        "BA\u00a0320",
+        "BA\u00a0420",
+        "English",
+        "ENGL\u00a0160",
+        "ENGL\u00a0161",
+        "Mathematics",
+        "Select one of the following Tracks:",
+        "Track I c",
+        "MATH\u00a0125",
+        "MATH\u00a0165",
+        "Track II c",
+        "MATH\u00a0160",
+        "MATH\u00a0165",
+        "Economics",
+        "ECON\u00a0120",
+        "ECON\u00a0121",
+        "Communication",
+        "COMM\u00a0100",
+        "BA\u00a0395",
+        "Total Hours"
+      ],
+      [
+        "Subject Area",
+        "Analyzing the Natural World course a",
+        "Exploring World Cultures course",
+        "Understanding the Creative Arts course",
+        "Understanding the Individual and Society course b",
+        "Understanding the Past course",
+        "Understanding U.S. Society course c"
+      ],
+      [
+        "Business Core\u2014Required Courses a",
+        "Accounting",
+        "ACTG\u00a0210",
+        "ACTG\u00a0211",
+        "Business Administration",
+        "BA\u00a0200",
+        "Finance",
+        "FIN\u00a0300",
+        "Information and Decision Sciences",
+        "IDS\u00a0200",
+        "IDS\u00a0270",
+        "IDS\u00a0355",
+        "Management",
+        "MGMT\u00a0340",
+        "MGMT\u00a0350",
+        "Marketing",
+        "MKTG\u00a0360",
+        "Total Hours"
+      ],
+      [
+        "Business Core\u2014Selective Courses",
+        "Advanced Quantitative Skills f",
+        "Select one of the following: c",
+        "ECON\u00a0300",
+        "FIN\u00a0330",
+        "IDS\u00a0371",
+        "MKTG\u00a0462",
+        "ACTG\u00a0392",
+        "Global Business Perspective",
+        "Select one of the following: d",
+        "ACTG\u00a0484",
+        "ECON\u00a0333",
+        "ENTR\u00a0435",
+        "FIN\u00a0442",
+        "MGMT\u00a0460",
+        "MKTG\u00a0469",
+        "Integrative Course\u2014Competitive Strategy",
+        "Select one of the following: e",
+        "ACTG\u00a0495",
+        "IDS\u00a0495",
+        "MGMT\u00a0495",
+        "Total Hours"
+      ],
+      [
+        "Courses",
+        "BA\u00a0101",
+        "BA\u00a0289",
+        "Courses offered under the English Language and Support for Internationals (ELSI) subject",
+        "Music skills courses",
+        "Some Kinesiology courses, please check with an academic advisor"
+      ],
+      [
+        "Courses",
+        "ENGL\u00a0160",
+        "ENGL\u00a0161",
+        "COMM\u00a0100",
+        "ECON\u00a0120",
+        "ECON\u00a0121",
+        "MATH\u00a0125",
+        "MATH\u00a0160",
+        "MATH\u00a0165",
+        "MATH\u00a0180",
+        "MATH\u00a0181",
+        "\u2022 Business Core courses",
+        "\u2022 Major business courses",
+        "\u2022 Business elective courses",
+        "\u2022 Any accounting courses",
+        "\u2022 Minor courses"
+      ],
+      [
+        "Minor",
+        "Accountinga",
+        "Business Analyticsa",
+        "Entrepreneurshipa",
+        "Financea",
+        "Human Resource Managementa",
+        "International Business",
+        "Leadershipa",
+        "Management Information Systemsa",
+        "Marketinga",
+        "Professional Sales and Relationship Managementa",
+        "Real Estatea",
+        "Supply Chain and Operations Managementa"
+      ],
+      [
+        "Minor",
+        "Accounting",
+        "Business Administration",
+        "Business Analytics",
+        "Entrepreneurship",
+        "Finance",
+        "Human Resource Management",
+        "Leadership",
+        "Management Information Systems",
+        "Professional Sales and Relationship Management",
+        "Real Estate",
+        "Supply Chain and Operations Management"
+      ],
+      [
+        "semester",
+        "semester",
+        "curricular programming."
+      ]
+    ],
+    "https://business.vcu.edu/academics/information-systems/phd-in-business-with-a-concentration-in-information-systems/": [
+      [
+        "University of Connecticut",
+        "Claremont Graduate University",
+        "University of San Francisco",
+        "University of South Carolina",
+        "West Texas A&M University"
+      ]
+    ],
+    "https://eller.arizona.edu/programs/undergraduate/professional-development/majors/mis": [
+      [
+        "Main navigation",
+        "Degree Requirements",
+        "Other Preparation",
+        "Career Opportunities",
+        "Salaries",
+        "Recruitment Opportunities",
+        "Eller and UArizona Resources",
+        "Main navigation",
+        "Footer - Main",
+        "Information For",
+        "Programs",
+        "Schools and Departments",
+        "Resources",
+        "Connect"
+      ]
+    ],
+    "https://www.bu.edu/questrom/faculty/academic-departments/information-systems/": [
+      [
+        "Machine learning",
+        "Network effects",
+        "Reputation systems",
+        "Social networks",
+        "Reputation systems and online reviews",
+        "Business platforms and ecosystems",
+        "Effects of IT on labor, productivity",
+        "Corporate social responsibility"
+      ],
+      [
+        "Big data",
+        "Computational social science",
+        "Artificial intelligence",
+        "Fair allocation",
+        "Fintech",
+        "Healthcare information systems",
+        "Market and mechanism design",
+        "Preference learning and personalization"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 17:47:29"
+}

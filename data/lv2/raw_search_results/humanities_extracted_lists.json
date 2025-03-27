@@ -1,0 +1,789 @@
+{
+  "level1_term": "humanities",
+  "url_verification_status": {
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": false,
+    "https://www.tc.columbia.edu/arts-and-humanities/english-education/courses/": false,
+    "https://www.citytech.cuny.edu/humanities/": true,
+    "https://gradschool.princeton.edu/academics/courses-research-teaching/teaching/collaborative-teaching-initiative-humanities-and": false,
+    "https://www.princeton.edu/academics/areas-of-study/humanities": true,
+    "https://www1.villanova.edu/university/liberal-arts-sciences/programs/humanities.html": false,
+    "https://catalog.mit.edu/schools/humanities-arts-social-sciences/": false,
+    "https://digitalhumanities.fas.harvard.edu/resources/learning-digital-methods/": false,
+    "https://hss.tcnj.edu/academics/teacher-education-programs/": false,
+    "https://humanities.georgetown.edu/news/humanities-teaching-as-leadership-training-a-study-to-practice-faculty-development-workshop-series/": false,
+    "https://www.amherst.edu/academiclife/provost_dean_faculty/teaching-advising-curriculum/research-tutorials-in-the-humanities-and-humanistic-social-sciences-": false,
+    "https://www.simmons.edu/academics/colleges-schools-departments/ifill/department-humanities": true,
+    "https://www.umass.edu/humanities-arts/research/research-areas": false,
+    "https://www.nyit.edu/academics/arts-and-sciences/humanities/": true,
+    "https://www.humanities.uci.edu/teaching": false,
+    "https://chss.rowan.edu/": false,
+    "https://steinhardt.nyu.edu/departments/applied-statistics-social-science-and-humanities/courses": false,
+    "https://dreshercenter.umbc.edu/inclusion-imperative/humanities-teaching-labs/": false,
+    "https://events.uri.edu/group/center_for_the_humanities": false,
+    "https://digitalhumanities.barnard.edu/students-and-faculty": false,
+    "https://news.asu.edu/20240229-arts-humanities-and-education-generative-ai-humanities-classroom": true,
+    "https://www.brooklyn.edu/hss/": true,
+    "https://humanities.uchicago.edu/about/division-humanities-teaching-fellows": false,
+    "https://hri.illinois.edu/fellowships-research-support/humanities-research-lab": false
+  },
+  "verified_lists_per_url": {
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": 0,
+    "https://www.tc.columbia.edu/arts-and-humanities/english-education/courses/": 0,
+    "https://www.citytech.cuny.edu/humanities/": 2,
+    "https://gradschool.princeton.edu/academics/courses-research-teaching/teaching/collaborative-teaching-initiative-humanities-and": 0,
+    "https://www.princeton.edu/academics/areas-of-study/humanities": 1,
+    "https://www1.villanova.edu/university/liberal-arts-sciences/programs/humanities.html": 0,
+    "https://catalog.mit.edu/schools/humanities-arts-social-sciences/": 0,
+    "https://digitalhumanities.fas.harvard.edu/resources/learning-digital-methods/": 0,
+    "https://hss.tcnj.edu/academics/teacher-education-programs/": 0,
+    "https://humanities.georgetown.edu/news/humanities-teaching-as-leadership-training-a-study-to-practice-faculty-development-workshop-series/": 0,
+    "https://www.amherst.edu/academiclife/provost_dean_faculty/teaching-advising-curriculum/research-tutorials-in-the-humanities-and-humanistic-social-sciences-": 0,
+    "https://www.simmons.edu/academics/colleges-schools-departments/ifill/department-humanities": 1,
+    "https://www.umass.edu/humanities-arts/research/research-areas": 0,
+    "https://www.nyit.edu/academics/arts-and-sciences/humanities/": 1,
+    "https://www.humanities.uci.edu/teaching": 0,
+    "https://chss.rowan.edu/": 0,
+    "https://steinhardt.nyu.edu/departments/applied-statistics-social-science-and-humanities/courses": 0,
+    "https://dreshercenter.umbc.edu/inclusion-imperative/humanities-teaching-labs/": 0,
+    "https://events.uri.edu/group/center_for_the_humanities": 0,
+    "https://digitalhumanities.barnard.edu/students-and-faculty": 0,
+    "https://news.asu.edu/20240229-arts-humanities-and-education-generative-ai-humanities-classroom": 4,
+    "https://www.brooklyn.edu/hss/": 2,
+    "https://humanities.uchicago.edu/about/division-humanities-teaching-fellows": 0,
+    "https://hri.illinois.edu/fellowships-research-support/humanities-research-lab": 0
+  },
+  "total_lists_per_url": {
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": 1,
+    "https://www.tc.columbia.edu/arts-and-humanities/english-education/courses/": 1,
+    "https://www.citytech.cuny.edu/humanities/": 3,
+    "https://gradschool.princeton.edu/academics/courses-research-teaching/teaching/collaborative-teaching-initiative-humanities-and": 1,
+    "https://www.princeton.edu/academics/areas-of-study/humanities": 1,
+    "https://www1.villanova.edu/university/liberal-arts-sciences/programs/humanities.html": 2,
+    "https://catalog.mit.edu/schools/humanities-arts-social-sciences/": 4,
+    "https://digitalhumanities.fas.harvard.edu/resources/learning-digital-methods/": 1,
+    "https://hss.tcnj.edu/academics/teacher-education-programs/": 3,
+    "https://humanities.georgetown.edu/news/humanities-teaching-as-leadership-training-a-study-to-practice-faculty-development-workshop-series/": 2,
+    "https://www.amherst.edu/academiclife/provost_dean_faculty/teaching-advising-curriculum/research-tutorials-in-the-humanities-and-humanistic-social-sciences-": 1,
+    "https://www.simmons.edu/academics/colleges-schools-departments/ifill/department-humanities": 5,
+    "https://www.umass.edu/humanities-arts/research/research-areas": 2,
+    "https://www.nyit.edu/academics/arts-and-sciences/humanities/": 3,
+    "https://www.humanities.uci.edu/teaching": 1,
+    "https://chss.rowan.edu/": 2,
+    "https://steinhardt.nyu.edu/departments/applied-statistics-social-science-and-humanities/courses": 1,
+    "https://dreshercenter.umbc.edu/inclusion-imperative/humanities-teaching-labs/": 1,
+    "https://events.uri.edu/group/center_for_the_humanities": 10,
+    "https://digitalhumanities.barnard.edu/students-and-faculty": 2,
+    "https://news.asu.edu/20240229-arts-humanities-and-education-generative-ai-humanities-classroom": 7,
+    "https://www.brooklyn.edu/hss/": 7,
+    "https://humanities.uchicago.edu/about/division-humanities-teaching-fellows": 3,
+    "https://hri.illinois.edu/fellowships-research-support/humanities-research-lab": 1
+  },
+  "verified_lists_ids": {
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": [],
+    "https://www.tc.columbia.edu/arts-and-humanities/english-education/courses/": [],
+    "https://www.citytech.cuny.edu/humanities/": [
+      0,
+      1
+    ],
+    "https://gradschool.princeton.edu/academics/courses-research-teaching/teaching/collaborative-teaching-initiative-humanities-and": [],
+    "https://www.princeton.edu/academics/areas-of-study/humanities": [
+      0
+    ],
+    "https://www1.villanova.edu/university/liberal-arts-sciences/programs/humanities.html": [],
+    "https://catalog.mit.edu/schools/humanities-arts-social-sciences/": [],
+    "https://digitalhumanities.fas.harvard.edu/resources/learning-digital-methods/": [],
+    "https://hss.tcnj.edu/academics/teacher-education-programs/": [],
+    "https://humanities.georgetown.edu/news/humanities-teaching-as-leadership-training-a-study-to-practice-faculty-development-workshop-series/": [],
+    "https://www.amherst.edu/academiclife/provost_dean_faculty/teaching-advising-curriculum/research-tutorials-in-the-humanities-and-humanistic-social-sciences-": [],
+    "https://www.simmons.edu/academics/colleges-schools-departments/ifill/department-humanities": [
+      1
+    ],
+    "https://www.umass.edu/humanities-arts/research/research-areas": [],
+    "https://www.nyit.edu/academics/arts-and-sciences/humanities/": [
+      1
+    ],
+    "https://www.humanities.uci.edu/teaching": [],
+    "https://chss.rowan.edu/": [],
+    "https://steinhardt.nyu.edu/departments/applied-statistics-social-science-and-humanities/courses": [],
+    "https://dreshercenter.umbc.edu/inclusion-imperative/humanities-teaching-labs/": [],
+    "https://events.uri.edu/group/center_for_the_humanities": [],
+    "https://digitalhumanities.barnard.edu/students-and-faculty": [],
+    "https://news.asu.edu/20240229-arts-humanities-and-education-generative-ai-humanities-classroom": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "https://www.brooklyn.edu/hss/": [
+      3,
+      4
+    ],
+    "https://humanities.uchicago.edu/about/division-humanities-teaching-fellows": [],
+    "https://hri.illinois.edu/fellowships-research-support/humanities-research-lab": []
+  },
+  "num_urls": 40,
+  "num_lists": 65,
+  "url_to_lists": {
+    "https://www.tc.columbia.edu/arts-and-humanities/art-and-art-education/courses/": [
+      [
+        "based learning, design",
+        "thinking and maker",
+        "centered learning to develop maker"
+      ]
+    ],
+    "https://www.tc.columbia.edu/arts-and-humanities/english-education/courses/": [
+      [
+        "Secondary Navigation Main",
+        "Secondary Navigation More",
+        "A&HE 4050 Literature and Teaching",
+        "A&HE 4051 Critical Approaches to Literature",
+        "A&HE 4052 Adolescent Literature",
+        "A&HE 4053 Cultural Perspectives and Literature",
+        "A&HE 4057 English Methods",
+        "A&HE 4058 Teaching of Reading",
+        "A&HE 4100 Teaching Drama and Theater",
+        "A&HE 4151 Teaching of Writing",
+        "A&HE 4152 Literacies and Technologies in the Secondary English Classroom",
+        "A&HE 4156 Writing: Nonfiction",
+        "A&HE 4550 Teaching of Poetry",
+        "A&HE 4551 Teaching of Shakespeare",
+        "A&HE 4556 Research Seminar for InSTEP",
+        "A&HE 4557 Seminar in the Teaching of English",
+        "A&HE 4561 Teaching Narrative and Story",
+        "A&HE 4750 Supervised Teaching of English",
+        "A&HE 4751 Fieldwork and Observation in Secondary English",
+        "A&HE 4904 Independent Study in Teaching English",
+        "A&HE 5149 Research Writing: Genres, Techniques, and Connections",
+        "A&HE 5150 Research in Practice",
+        "A&HE 5151 Perspectives on \"Popular\" Texts in English Classrooms",
+        "A&HE 5154 Rhetoric and Teaching",
+        "A&HE 5204 Fieldwork in Teaching English",
+        "A&HE 5504 Research Paper: Teaching of English",
+        "A&HE 5510 Foundational Texts I",
+        "A&HE 5514 Literature and Literary Study: Milton",
+        "A&HE 5518 Teaching English in Diverse Social/Cultural Contexts",
+        "A&HE 5590 Master's Seminar",
+        "A&HE 6011 Politics of Teaching English: Foundations of Critical Whiteness Pedagogies",
+        "A&HE 6015 College Teaching of English",
+        "A&HE 6151 Narrative Research in English Education",
+        "A&HE 6152 Advanced Narrative Research in English Education",
+        "A&HE 6204 Advanced Fieldwork in Teaching English",
+        "A&HE 6404 Internship in College Teaching of English",
+        "A&HE 6450 Internship in Teaching English",
+        "A&HE 6504 Doctoral Seminar:  Experiments with Multimodal Genres of Scholarly Communication",
+        "A&HE 6514 Postmodern Textual Theories",
+        "A&HE 6904 Research and Independent Study",
+        "A&HE 7504 Dissertation Seminar: Teaching of English",
+        "A&HE 8904 Dissertation Advisement in Teaching English",
+        "Resources",
+        "Legal"
+      ]
+    ],
+    "https://www.citytech.cuny.edu/humanities/": [
+      [
+        "Academics",
+        "School of Arts & Sciences",
+        "Departments",
+        "Humanities"
+      ],
+      [
+        "Art History",
+        "Communication",
+        "World Languages",
+        "Music",
+        "Theatre"
+      ],
+      [
+        "Welcome to the Department of Humanities",
+        "Our courses fulll general education requirements and, in some cases, degree requirements as well.",
+        "Department permission for World Languages classes"
+      ]
+    ],
+    "https://gradschool.princeton.edu/academics/courses-research-teaching/teaching/collaborative-teaching-initiative-humanities-and": [
+      [
+        "Main Menu",
+        "Search",
+        "Section Menu",
+        "Co-instructional Model",
+        "Calls for Proposals",
+        "TA Appointments",
+        "Footer"
+      ]
+    ],
+    "https://www.princeton.edu/academics/areas-of-study/humanities": [
+      [
+        "Humanities\nHumanitiesEngineeringNatural SciencesSocial Sciences",
+        "Humanities",
+        "Engineering",
+        "Natural Sciences",
+        "Social Sciences"
+      ]
+    ],
+    "https://www1.villanova.edu/university/liberal-arts-sciences/programs/humanities.html": [
+      [
+        "Why Humanities",
+        "Why Humanities",
+        "Our Curriculum",
+        "Our Curriculum",
+        "FOLLOW THE HUMANITIES DEPARTMENT",
+        "FALL 2025 HUMANITIES CLASSES",
+        "TWENTIETH ANNIVERSARY HUMANITIES LECTURE",
+        "CONVIVIUM 2024",
+        "AUGUSTINIAN PILGRIMS"
+      ],
+      [
+        "MAIN MENU",
+        "IN THIS SECTION",
+        "UNDERGRADUATE PROGRAMS",
+        "Department of Humanities"
+      ]
+    ],
+    "https://catalog.mit.edu/schools/humanities-arts-social-sciences/": [
+      [
+        "Research and Innovation",
+        "Interdisciplinary Programs",
+        "Global Citizens",
+        "A Brief History of SHASS",
+        "Degrees Offered in the School of Humanities, Arts, and Social Sciences",
+        "Office of the Dean"
+      ],
+      [
+        "Anthropology (Course 21A)",
+        "Comparative Media Studies/Writing (Course CMS and Course 21W)",
+        "Computer Science, Economics, and Data Science (Course 6-14)",
+        "Economics (Course 14)",
+        "Global Languages (Course 21G)",
+        "History (Course 21H)",
+        "Humanities (Course 21) 2",
+        "Linguistics and Philosophy (Course 24)",
+        "Literature (Course 21L)",
+        "Music and Theater Arts (Course 21M)",
+        "Political Science (Course 17)",
+        "Science, Technology, and Society (STS)",
+        "Admissions",
+        "School Professor"
+      ],
+      [
+        "A \u2013 Z",
+        "Calendar",
+        "Archive",
+        "Print"
+      ],
+      [
+        "Agust\u00edn Rayo, PhD\nProfessor of Philosophy\nDean, School of Humanities, Arts, and Social Sciences",
+        "Sean DeBoer, MBA\nAssistant Dean for Finance and Administration",
+        "Tracie Jones, MEd\nAssistant Dean for Diversity, Equity, and Inclusion",
+        "Anne Marie Michel, MA\nAssistant Dean for Development",
+        "Erminia Piccinonno, BA\nAssistant Dean for Human Resources and Administration",
+        "Michael Brindley, BA\nDirector of Communications",
+        "Bruno Perreau, PhD\nCynthia L. Reed Professor of French Studies and Language"
+      ]
+    ],
+    "https://digitalhumanities.fas.harvard.edu/resources/learning-digital-methods/": [
+      [
+        "Resources",
+        "Harvard",
+        "External"
+      ]
+    ],
+    "https://hss.tcnj.edu/academics/teacher-education-programs/": [
+      [
+        "School of Education",
+        "African American Studies Major",
+        "English Major",
+        "History Major",
+        "Psychology Major",
+        "Sociology Major",
+        "Spanish Major",
+        "Women\u2019s, Gender, & Sexuality Studies Major"
+      ],
+      [
+        "More Info",
+        "Secondary Education Programs",
+        "Primary and Special Education Programs",
+        "Campus",
+        "Programs",
+        "Schools"
+      ],
+      [
+        "12 system, building on TCNJ\u2019s 150",
+        "year track record, as the first",
+        "ever teacher training school in New Jersey, of preparing exemplary teachers for the classroom."
+      ]
+    ],
+    "https://humanities.georgetown.edu/news/humanities-teaching-as-leadership-training-a-study-to-practice-faculty-development-workshop-series/": [
+      [
+        "February 3, 4-5:30pm ET: Opening Session: How is Humanities Teaching Leadership Training?",
+        "February 10, 4-5:30pm ET: Track Workshop 1",
+        "February 17, 4-5:30pm ET: Track Workshop 2",
+        "April 7, 4-5:30pm ET: Closing Session: Presentation of New Materials"
+      ],
+      [
+        "Creativity and Leadership (Richard Giarusso)",
+        "Humanities, Leadership Development, and Racial Justice (Irene Morrison-Moncure)",
+        "Leadership Development and Graduate Humanities Education (Christine Tulley)",
+        "Richard Giarusso",
+        "Irene Morrison-Moncure",
+        "Christine Tulley",
+        "Mallory Monaco Caterine (C\u201907)"
+      ]
+    ],
+    "https://www.amherst.edu/academiclife/provost_dean_faculty/teaching-advising-curriculum/research-tutorials-in-the-humanities-and-humanistic-social-sciences-": [
+      [
+        "Consistent Navigation",
+        "Main Navigation",
+        "Breadcrumb",
+        "Section Navigation",
+        "Sub Navigation",
+        "Research Tutorials in the Humanities and \u201cHumanistic\u201d Social Sciences",
+        "Social Links",
+        "More Navigation",
+        "Gateways",
+        "Directories",
+        "Tools & Resources"
+      ]
+    ],
+    "https://www.simmons.edu/academics/colleges-schools-departments/ifill/department-humanities": [
+      [
+        "Academics",
+        "The Gwen Ifill School of Media, Humanities and Social Sciences",
+        "Department of Humanities"
+      ],
+      [
+        "Applied SpanishBA, Minor\n\n\n\nBA\nMinor",
+        "Minor",
+        "ArtMinor\n\n\n\nMinor",
+        "Minor",
+        "Arts AdministrationMinor\n\n\n\nMinor",
+        "Minor",
+        "French and Francophone StudiesMinor\n\n\n\nMinor",
+        "Minor",
+        "Gender HistoryMinor\n\n\n\nMinor",
+        "Minor",
+        "Health HumanitiesMinor\n\n\n\nMinor",
+        "Minor",
+        "HistoryBA, Minor\n\n\n\nBA\nMinor",
+        "Minor",
+        "HumanitiesBA\n\n\n\nBA",
+        "LiteratureBA\n\n\n\nBA",
+        "Literature and WritingMinor\n\n\n\nMinor",
+        "Minor",
+        "Migration StudiesMinor\n\n\n\nMinor",
+        "Minor",
+        "PhilosophyMinor\n\n\n\nMinor",
+        "Minor",
+        "Public HistoryMinor\n\n\n\nMinor",
+        "Minor",
+        "WritingBA\n\n\n\nBA"
+      ],
+      [
+        "Children's LiteratureMA\n\n\n\nMA",
+        "Children's Literature + Children's Literature: Writing for ChildrenMA, MFA\n\n\n\nMA\nMFA",
+        "Children's Literature + Library Services to ChildrenMA, MS\n\n\n\nMA\nMS",
+        "Children's Literature + TeachingMA, MAT\n\n\n\nMA\nMAT",
+        "Children's Literature: Writing for ChildrenMFA\n\n\n\nMFA",
+        "History (MA)MA\n\n\n\nMA",
+        "Library and Information Science: Archives Management + HistoryMA, MS\n\n\n\nMA\nMS",
+        "Teaching + HistoryMA, MAT\n\n\n\nMA\nMAT"
+      ],
+      [
+        "Wanda Torres Gregory",
+        "Richard Balzano",
+        "Renee Bergland",
+        "Steve Berry",
+        "Danisa Bonacic",
+        "Diane Grossman",
+        "Alister Inglis",
+        "Colleen Kiely",
+        "Sarah Leonard",
+        "Yunxin Li",
+        "Cathryn Mercier",
+        "Helen Popinchalk",
+        "Farooz Rather",
+        "Patrick Sylvain",
+        "Shelley Isaacson",
+        "Katherine Magyarody"
+      ],
+      [
+        "Richard Balzano\n\nAssistant Teaching Professor",
+        "Renee Bergland\n\nProfessor",
+        "Steve Berry\n\nAssociate Professor",
+        "Danisa Bonacic\n\nAssociate Professor",
+        "Diane Grossman\n\nProfessor",
+        "Alister Inglis\n\nProfessor",
+        "Colleen Kiely\n\nProfessor",
+        "Sarah Leonard\n\nAssociate Professor and Graduate History Program Director",
+        "Yunxin Li\n\nAssistant Professor",
+        "Cathryn Mercier\n\nProfessor and Graduate Program Director of Children's Literature",
+        "Farooz Rather\n\nAssociate Professor of Practice",
+        "Patrick Sylvain\n\nAssistant Professor"
+      ]
+    ],
+    "https://www.umass.edu/humanities-arts/research/research-areas": [
+      [
+        "Main navigation",
+        "Breadcrumb",
+        "Filters",
+        "Data Sciences in Humanities and Arts",
+        "Democracy, Dissent, and Truth",
+        "Environmental Humanities",
+        "Humanities of Health and Well Being",
+        "Race, Racism, and Social Justice",
+        "World Histories and Cultures",
+        "Site footer",
+        "Global footer"
+      ],
+      [
+        "Academics",
+        "Research",
+        "The School",
+        "Info for..."
+      ]
+    ],
+    "https://www.nyit.edu/academics/arts-and-sciences/humanities/": [
+      [
+        "Interdisciplinary Studies, B.A., B.S., B.P.S.",
+        "Technical Writing Certificate",
+        "Accelerated Dual Degrees (B.A., B.S., B.P.T. to M.B.A. or M.A.T.]"
+      ],
+      [
+        "Civic Engagement Minor",
+        "Equity and Innovation Minor",
+        "Literature and Culture Minor",
+        "Medical Humanities Minor",
+        "Technical and Professional Communication Minor"
+      ],
+      [
+        "Explore",
+        "Degrees & Certificates",
+        "Minors",
+        "Alumni Voices",
+        "College News",
+        "Keep Exploring",
+        "Connect",
+        "Academics",
+        "Resources"
+      ]
+    ],
+    "https://www.humanities.uci.edu/teaching": [
+      [
+        "Fall 2023 Pedagogical Fellow: McKenna Middleton (Spanish)",
+        "Fall 2022 Pedagogical Fellows: Louise McCune (English), Nathan Allison (English)",
+        "Fall 2021 Pedagogical Fellow: Franziska Tsufim (English)"
+      ]
+    ],
+    "https://chss.rowan.edu/": [
+      [
+        "Breaking conceptual, disciplinary, and social boundaries",
+        "Creating, expanding, and sharing knowledge",
+        "Tackling local and global challenges to benefit our changing\u00a0world"
+      ],
+      [
+        "Breaking Boundaries. Creating Knowledge.",
+        "EXPLORE YOUR OPTIONS",
+        "Departments & Programs",
+        "Centers & Institutes",
+        "CHSS MATTERS",
+        "Reverent remembrance: Conference on Holocaust memorial books brings international scholars to Rowan",
+        "Rowan degree programs recognized in national studies",
+        "CHSS on Rowan's Blog",
+        "CHSS in Rowan Today"
+      ]
+    ],
+    "https://steinhardt.nyu.edu/departments/applied-statistics-social-science-and-humanities/courses": [
+      [
+        "Programs and Degrees",
+        "Study Abroad",
+        "Undergraduate",
+        "Graduate",
+        "Admissions",
+        "Paying for Your Education",
+        "Master's"
+      ]
+    ],
+    "https://dreshercenter.umbc.edu/inclusion-imperative/humanities-teaching-labs/": [
+      [
+        "Call for Applications",
+        "2018-2019 HTLabs:",
+        "2017-2018 HTLabs:"
+      ]
+    ],
+    "https://events.uri.edu/group/center_for_the_humanities": [
+      [
+        "Democracy and Populist Rage in Recent American History with Jefferson Cowie (Vanderbilt University)",
+        "Libraries at the End of the World with Emily Drabinski (Queens College, City University of NY)",
+        "Ozempic is the First Posthuman Drug with Darren Medeiros (Philosophy)",
+        "The Politics of Safety: The Black Freedom Struggle with Shannon King (Fairfield University)",
+        "Where Can We Go From Here? with Eric Gottesman (George Washington University)",
+        "Converting to the Cult of the Sentence with Jordan Scott (English)",
+        "University of Rhode Island"
+      ],
+      [
+        "Places",
+        "Events",
+        "Groups",
+        "Departments"
+      ],
+      [
+        "Interests",
+        "Academic / Advising",
+        "Arts, Humanities and Social Sciences"
+      ],
+      [
+        "Thu, Apr 3, 2025 4pm to 5pm",
+        "Higgins Welcome Center, Hope Room",
+        "Stream Available",
+        "Free and open to the public"
+      ],
+      [
+        "Wed, Apr 9, 2025 1pm to 2pm",
+        "Swan Hall, Hoffman Room",
+        "Stream Available",
+        "Free and open to the public"
+      ],
+      [
+        "Wed, Mar 19, 2025 4pm to 5pm",
+        "Robert L. Carothers Library & Learning Commons, Galanti Lounge",
+        "Stream Available",
+        "Free and open to the public"
+      ],
+      [
+        "Wed, Mar 5, 2025 1pm to 2pm",
+        "Swan Hall, Hoffman Room",
+        "Stream Available",
+        "Free and open to the public"
+      ],
+      [
+        "Thu, Feb 27, 2025 5pm to 6pm",
+        "Robert L. Carothers Library & Learning Commons, Galanti Lounge",
+        "Stream Available",
+        "Free and open to the public"
+      ],
+      [
+        "Thu, Feb 13, 2025 5pm to 6pm",
+        "Robert L. Carothers Library & Learning Commons, Galanti Lounge",
+        "Stream Available",
+        "Free and open to the public"
+      ],
+      [
+        "Wed, Feb 5, 2025 1pm to 2pm",
+        "Swan Hall, Hoffman Room",
+        "Free and open to the public"
+      ]
+    ],
+    "https://digitalhumanities.barnard.edu/students-and-faculty": [
+      [
+        "Site Footer",
+        "Departments",
+        "Teaching & Learning Centers"
+      ],
+      [
+        "History and Context",
+        "Fall 2018",
+        "Spring 2019"
+      ]
+    ],
+    "https://news.asu.edu/20240229-arts-humanities-and-education-generative-ai-humanities-classroom": [
+      [
+        "More Arts, humanities and education",
+        "Award-winning playwright shares her scriptwriting process with ASU students",
+        "Exceeding great expectations in downtown Mesa",
+        "Upcoming exhibition brings experimental art and more to the West Valley campus"
+      ],
+      [
+        "Toward AI literacy",
+        "Business communication gets a reboot",
+        "Integration, fall 2024 and beyond",
+        "FMS 360: Media Genres \u2014 Sci-Fi Cinema (Technology, Genre and Culture)",
+        "CTE 110: Introduction to Culture, Technology and Environment",
+        "ENG 101: First-Year Composition",
+        "ENG 307: Writing Science Fiction",
+        "ENG 205: Introduction to Writing, Rhetorics and Literacies",
+        "FMS 394: AI and Society",
+        "Learn more",
+        "Pagination",
+        "Pagination"
+      ],
+      [
+        "Arts, humanities and education",
+        "Generative AI in the humanities classroomPlus 6 fall 2024 ASU English classes that reckon with it",
+        "Image by Mohamed Hassan/PxHere"
+      ],
+      [
+        "Artificial intelligence",
+        "Creative writing",
+        "Grants / Awards",
+        "Learning Enterprise",
+        "Literature",
+        "School of International Letters and Cultures",
+        "SDG 04 Quality Education",
+        "SDG 09 Industry, Innovation and Infrastructure",
+        "SDG 10 Reduced Inequalities",
+        "SDG 11 Sustainable Cities and Communities",
+        "SDG 12 Responsible Consumption and Production",
+        "SDG 13 Climate Action",
+        "SDG 16 Peace, Justice and Strong Institutions",
+        "Writing and rhetorics",
+        "Campus student",
+        "Faculty",
+        "Business",
+        "Tempe campus",
+        "Arts, humanities and education",
+        "English",
+        "Online student",
+        "Environment",
+        "Prospective student",
+        "Transfer student",
+        "Humanities",
+        "Online",
+        "International",
+        "Announcements",
+        "Department of English",
+        "Ethics",
+        "Sustainability",
+        "Technology",
+        "Student",
+        "Employee",
+        "Humanities Institute",
+        "Research",
+        "ASU Online",
+        "The College of Liberal Arts and Sciences",
+        "Lincoln Center for Applied Ethics",
+        "Enterprise Technology"
+      ],
+      [
+        "Exceeding great expectations in downtown Mesa",
+        "Read this story",
+        "Education Community involvement Arts and Entertainment Community partnerships University"
+      ],
+      [
+        "Education",
+        "Community involvement",
+        "Arts and Entertainment",
+        "Community partnerships",
+        "University"
+      ],
+      [
+        "Upcoming exhibition brings experimental art and more to the West Valley campus",
+        "Read this story",
+        "Arts Humanities Arts and Entertainment"
+      ]
+    ],
+    "https://www.brooklyn.edu/hss/": [
+      [
+        "American Museum of Natural History",
+        "ARTNews",
+        "The Corcoran Group",
+        "HarperCollins Publishers",
+        "McGraw Hill",
+        "Mount Sinai Health System",
+        "New York Center for Infants and Toddlers, Inc.",
+        "New York City Department of Education",
+        "New York City Teaching Fellows",
+        "New York Genealogical and Biographical Society",
+        "New York University",
+        "NYU Langone Health",
+        "Sanctuary for Families",
+        "SANS Institute",
+        "United Nations",
+        "University of Hawaii",
+        "Yavneh Academy of Dallas"
+      ],
+      [
+        "Go Far. Go to Brooklyn.",
+        "Academic Departments",
+        "Interdisciplinary Programs",
+        "Degrees",
+        "Voices of our Community",
+        "Meet Our Faculty",
+        "Resources",
+        "All In for Your Success",
+        "Internships and Employers",
+        "Academic Resources",
+        "Go Further",
+        "Featured News",
+        "Events",
+        "Brooklyn. All in."
+      ],
+      [
+        "School of Humanities and Social Sciences",
+        "Philip Napoli",
+        "Rebecca Schlissel",
+        "Jennifer Matisi",
+        "Social Media",
+        "Info For",
+        "Quick Links",
+        "Our Schools",
+        "Follow Us"
+      ],
+      [
+        "Africana Studies",
+        "Classics",
+        "Communication Arts, Sciences, and Disorders",
+        "English",
+        "History",
+        "Judaic Studies",
+        "Modern Languages and Literatures",
+        "Philosophy",
+        "Political Science",
+        "Puerto Rican and Latinx Studies",
+        "Sociology"
+      ],
+      [
+        "American Studies",
+        "Caribbean Studies",
+        "Children and Youth Studies",
+        "Communication",
+        "Linguistics",
+        "Studies in Religion",
+        "Urban Sustainability",
+        "Women\u2019s and Gender Studies"
+      ],
+      [
+        "Apr\n1\n\n\n\nWelcome Ceremony, Hess Week 2025",
+        "Apr\n2\n\n\n\nHistory and the Courts",
+        "Apr\n2\n\n\n\nThe Role of the Courts in Our Democracy"
+      ],
+      [
+        "3238 Boylan Hall\nP: 718.951.3136\nF: 718.951.4132",
+        "Dean, School of Humanities and Social Sciences\nE: SHSSdean@brooklyn.cuny.edu",
+        "Executive Assistant to the Dean\nE: Rebeccas@brooklyn.cuny.edu",
+        "Administrative Executive Coordinator\nE: jennifer.matisi@brooklyn.cuny.edu",
+        "Linktree\nBluesky\nFacebook\nInstagram\nLinkedIn\nThreads\nTikTok"
+      ]
+    ],
+    "https://humanities.uchicago.edu/about/division-humanities-teaching-fellows": [
+      [
+        "sponsored violence as akin to occult practices in 20th",
+        "and 21st",
+        "century literature and film."
+      ],
+      [
+        "2022), the Young Writers\u2019 Essay Award (Fondo de Cultura Econ\u00f3mica,",
+        "2016), and has been shortlisted for the Latin American Literature Today Literary Essay Award (",
+        "2023), and the Nuevas Plumas Prize ("
+      ],
+      [
+        "2015),\u00a0El verano de los peces muertos\u00a0(",
+        "2018),\u00a0Veteranos de la guerra del d\u00eda\u00a0(",
+        "2018),\u00a0El vello \u00e1lmico\u00a0(",
+        "2019),\u00a0La breve luz de nuestros d\u00edas\u00a0(",
+        "2020),\u00a0Satisfaction\u00a0(",
+        "2021), and\u00a0Match\u00a0("
+      ]
+    ],
+    "https://hri.illinois.edu/fellowships-research-support/humanities-research-lab": [
+      [
+        "Main navigation",
+        "Application Deadline Date",
+        "Eligibility",
+        "Terms",
+        "Application Guidelines",
+        "Application Deadline Details",
+        "Selection Criteria",
+        "Notification"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:28:47"
+}

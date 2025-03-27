@@ -1,0 +1,2925 @@
+{
+  "level1_term": "educational psychology",
+  "url_verification_status": {
+    "https://edpsych.umn.edu/": true,
+    "https://catalog.ku.edu/education/psychology-research/": true,
+    "https://epsy.tamu.edu/": true,
+    "https://annescollege.fsu.edu/academics/department-educational-psychology-learning-systems": true,
+    "https://catalog.utexas.edu/general-information/coursesatoz/edp/": true,
+    "https://education.arizona.edu/educational-psychology": false,
+    "https://ed.psu.edu/academics/departments/department-educational-psychology-counseling-and-special-education/educational-psychology": false,
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGEDU/EDS_BA/EDS_BA02/": true,
+    "https://ed-psych.utah.edu/": true,
+    "https://catalog.utsa.edu/graduate/educationhumandevelopment/educationalpsychology/": true,
+    "https://education.purdue.edu/graduate-students/prospective-students/graduate-programs/educational-psychology/": true,
+    "https://guide.wisc.edu/graduate/educational-psychology/educational-psychology-ms/educational-psychology-research-ms/": true,
+    "https://www.washington.edu/students/crscat/edpsy.html": false,
+    "https://catalog.ua.edu/graduate/education/educational-studies-psychology-research-methodology-counseling/courses/": true,
+    "https://edpsych.umn.edu/academics": true,
+    "https://coe.uga.edu/directory/educational-psychology/": true,
+    "https://edp.soe.baylor.edu/": true,
+    "https://ww2.georgiasouthern.edu/coe/epr/courses/educational-psychology-courses/": true,
+    "https://sc.edu/study/colleges_schools/education/study/areas/educational_psychology_research/": true,
+    "https://education.msu.edu/cepse/epet/": true,
+    "https://www.gc.cuny.edu/educational-psychology": true,
+    "https://liberalarts.vt.edu/departments-and-schools/school-of-education/academic-programs/educational-psychology-program/about-phd.html": true,
+    "https://ehe.osu.edu/graduate/educational-psychology": false,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/educational-psychology-and-learning-systems": true,
+    "https://www.depts.ttu.edu/education/graduate/psychology-and-leadership/educational_psychology_phd.php": false,
+    "https://www.tc.columbia.edu/counseling-and-clinical-psychology/clinical/degrees--requirements/psychology-in-education-general-track-ma/": true,
+    "https://education.ua.edu/department/educational-studies-in-psychology-research-methodology-and-counseling/": true,
+    "https://manoa.hawaii.edu/catalog/schools-colleges/education/edep/": true,
+    "https://catalog.memphis.edu/preview_program.php?catoid=9&poid=2172&returnto=219": false,
+    "https://ed-psych.utah.edu/grad-programs/reading-literacy-med/course/": true,
+    "https://www.albany.edu/education/programs/phd-educational-psychology": true,
+    "https://www.bsu.edu/academics/collegesanddepartments/online/academic-programs/masters/mainedpsych": true,
+    "https://catalog.utk.edu/preview_program.php?catoid=33&poid=16101": true,
+    "https://education.ucr.edu/masters/educational-psychology": true,
+    "https://academicbulletins.sc.edu/graduate/education/educational-developmental-science/educational-psychology-research-phd/": true
+  },
+  "verified_lists_per_url": {
+    "https://edpsych.umn.edu/": 1,
+    "https://catalog.ku.edu/education/psychology-research/": 66,
+    "https://epsy.tamu.edu/": 1,
+    "https://annescollege.fsu.edu/academics/department-educational-psychology-learning-systems": 2,
+    "https://catalog.utexas.edu/general-information/coursesatoz/edp/": 1,
+    "https://education.arizona.edu/educational-psychology": 0,
+    "https://ed.psu.edu/academics/departments/department-educational-psychology-counseling-and-special-education/educational-psychology": 0,
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGEDU/EDS_BA/EDS_BA02/": 1,
+    "https://ed-psych.utah.edu/": 1,
+    "https://catalog.utsa.edu/graduate/educationhumandevelopment/educationalpsychology/": 5,
+    "https://education.purdue.edu/graduate-students/prospective-students/graduate-programs/educational-psychology/": 4,
+    "https://guide.wisc.edu/graduate/educational-psychology/educational-psychology-ms/educational-psychology-research-ms/": 4,
+    "https://www.washington.edu/students/crscat/edpsy.html": 0,
+    "https://catalog.ua.edu/graduate/education/educational-studies-psychology-research-methodology-counseling/courses/": 2,
+    "https://edpsych.umn.edu/academics": 4,
+    "https://coe.uga.edu/directory/educational-psychology/": 1,
+    "https://edp.soe.baylor.edu/": 2,
+    "https://ww2.georgiasouthern.edu/coe/epr/courses/educational-psychology-courses/": 1,
+    "https://sc.edu/study/colleges_schools/education/study/areas/educational_psychology_research/": 4,
+    "https://education.msu.edu/cepse/epet/": 1,
+    "https://www.gc.cuny.edu/educational-psychology": 1,
+    "https://liberalarts.vt.edu/departments-and-schools/school-of-education/academic-programs/educational-psychology-program/about-phd.html": 4,
+    "https://ehe.osu.edu/graduate/educational-psychology": 0,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/educational-psychology-and-learning-systems": 4,
+    "https://www.depts.ttu.edu/education/graduate/psychology-and-leadership/educational_psychology_phd.php": 0,
+    "https://www.tc.columbia.edu/counseling-and-clinical-psychology/clinical/degrees--requirements/psychology-in-education-general-track-ma/": 2,
+    "https://education.ua.edu/department/educational-studies-in-psychology-research-methodology-and-counseling/": 1,
+    "https://manoa.hawaii.edu/catalog/schools-colleges/education/edep/": 1,
+    "https://catalog.memphis.edu/preview_program.php?catoid=9&poid=2172&returnto=219": 0,
+    "https://ed-psych.utah.edu/grad-programs/reading-literacy-med/course/": 4,
+    "https://www.albany.edu/education/programs/phd-educational-psychology": 2,
+    "https://www.bsu.edu/academics/collegesanddepartments/online/academic-programs/masters/mainedpsych": 15,
+    "https://catalog.utk.edu/preview_program.php?catoid=33&poid=16101": 1,
+    "https://education.ucr.edu/masters/educational-psychology": 1,
+    "https://academicbulletins.sc.edu/graduate/education/educational-developmental-science/educational-psychology-research-phd/": 1
+  },
+  "total_lists_per_url": {
+    "https://edpsych.umn.edu/": 2,
+    "https://catalog.ku.edu/education/psychology-research/": 86,
+    "https://epsy.tamu.edu/": 2,
+    "https://annescollege.fsu.edu/academics/department-educational-psychology-learning-systems": 3,
+    "https://catalog.utexas.edu/general-information/coursesatoz/edp/": 5,
+    "https://education.arizona.edu/educational-psychology": 1,
+    "https://ed.psu.edu/academics/departments/department-educational-psychology-counseling-and-special-education/educational-psychology": 2,
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGEDU/EDS_BA/EDS_BA02/": 14,
+    "https://ed-psych.utah.edu/": 5,
+    "https://catalog.utsa.edu/graduate/educationhumandevelopment/educationalpsychology/": 17,
+    "https://education.purdue.edu/graduate-students/prospective-students/graduate-programs/educational-psychology/": 9,
+    "https://guide.wisc.edu/graduate/educational-psychology/educational-psychology-ms/educational-psychology-research-ms/": 11,
+    "https://www.washington.edu/students/crscat/edpsy.html": 2,
+    "https://catalog.ua.edu/graduate/education/educational-studies-psychology-research-methodology-counseling/courses/": 31,
+    "https://edpsych.umn.edu/academics": 4,
+    "https://coe.uga.edu/directory/educational-psychology/": 4,
+    "https://edp.soe.baylor.edu/": 2,
+    "https://ww2.georgiasouthern.edu/coe/epr/courses/educational-psychology-courses/": 1,
+    "https://sc.edu/study/colleges_schools/education/study/areas/educational_psychology_research/": 7,
+    "https://education.msu.edu/cepse/epet/": 3,
+    "https://www.gc.cuny.edu/educational-psychology": 2,
+    "https://liberalarts.vt.edu/departments-and-schools/school-of-education/academic-programs/educational-psychology-program/about-phd.html": 12,
+    "https://ehe.osu.edu/graduate/educational-psychology": 8,
+    "https://registrar.fsu.edu/bulletin/graduate-departments/educational-psychology-and-learning-systems": 8,
+    "https://www.depts.ttu.edu/education/graduate/psychology-and-leadership/educational_psychology_phd.php": 3,
+    "https://www.tc.columbia.edu/counseling-and-clinical-psychology/clinical/degrees--requirements/psychology-in-education-general-track-ma/": 5,
+    "https://education.ua.edu/department/educational-studies-in-psychology-research-methodology-and-counseling/": 1,
+    "https://manoa.hawaii.edu/catalog/schools-colleges/education/edep/": 2,
+    "https://catalog.memphis.edu/preview_program.php?catoid=9&poid=2172&returnto=219": 5,
+    "https://ed-psych.utah.edu/grad-programs/reading-literacy-med/course/": 4,
+    "https://www.albany.edu/education/programs/phd-educational-psychology": 5,
+    "https://www.bsu.edu/academics/collegesanddepartments/online/academic-programs/masters/mainedpsych": 24,
+    "https://catalog.utk.edu/preview_program.php?catoid=33&poid=16101": 18,
+    "https://education.ucr.edu/masters/educational-psychology": 3,
+    "https://academicbulletins.sc.edu/graduate/education/educational-developmental-science/educational-psychology-research-phd/": 8
+  },
+  "verified_lists_ids": {
+    "https://edpsych.umn.edu/": [
+      1
+    ],
+    "https://catalog.ku.edu/education/psychology-research/": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      57,
+      61,
+      62,
+      63,
+      64,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "https://epsy.tamu.edu/": [
+      0
+    ],
+    "https://annescollege.fsu.edu/academics/department-educational-psychology-learning-systems": [
+      0,
+      1
+    ],
+    "https://catalog.utexas.edu/general-information/coursesatoz/edp/": [
+      0
+    ],
+    "https://education.arizona.edu/educational-psychology": [],
+    "https://ed.psu.edu/academics/departments/department-educational-psychology-counseling-and-special-education/educational-psychology": [],
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGEDU/EDS_BA/EDS_BA02/": [
+      7
+    ],
+    "https://ed-psych.utah.edu/": [
+      2
+    ],
+    "https://catalog.utsa.edu/graduate/educationhumandevelopment/educationalpsychology/": [
+      3,
+      4,
+      5,
+      6,
+      16
+    ],
+    "https://education.purdue.edu/graduate-students/prospective-students/graduate-programs/educational-psychology/": [
+      0,
+      3,
+      6,
+      8
+    ],
+    "https://guide.wisc.edu/graduate/educational-psychology/educational-psychology-ms/educational-psychology-research-ms/": [
+      1,
+      2,
+      9,
+      10
+    ],
+    "https://www.washington.edu/students/crscat/edpsy.html": [],
+    "https://catalog.ua.edu/graduate/education/educational-studies-psychology-research-methodology-counseling/courses/": [
+      0,
+      28
+    ],
+    "https://edpsych.umn.edu/academics": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://coe.uga.edu/directory/educational-psychology/": [
+      0
+    ],
+    "https://edp.soe.baylor.edu/": [
+      0,
+      1
+    ],
+    "https://ww2.georgiasouthern.edu/coe/epr/courses/educational-psychology-courses/": [
+      0
+    ],
+    "https://sc.edu/study/colleges_schools/education/study/areas/educational_psychology_research/": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "https://education.msu.edu/cepse/epet/": [
+      2
+    ],
+    "https://www.gc.cuny.edu/educational-psychology": [
+      1
+    ],
+    "https://liberalarts.vt.edu/departments-and-schools/school-of-education/academic-programs/educational-psychology-program/about-phd.html": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "https://ehe.osu.edu/graduate/educational-psychology": [],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/educational-psychology-and-learning-systems": [
+      1,
+      2,
+      4,
+      7
+    ],
+    "https://www.depts.ttu.edu/education/graduate/psychology-and-leadership/educational_psychology_phd.php": [],
+    "https://www.tc.columbia.edu/counseling-and-clinical-psychology/clinical/degrees--requirements/psychology-in-education-general-track-ma/": [
+      2,
+      4
+    ],
+    "https://education.ua.edu/department/educational-studies-in-psychology-research-methodology-and-counseling/": [
+      0
+    ],
+    "https://manoa.hawaii.edu/catalog/schools-colleges/education/edep/": [
+      0
+    ],
+    "https://catalog.memphis.edu/preview_program.php?catoid=9&poid=2172&returnto=219": [],
+    "https://ed-psych.utah.edu/grad-programs/reading-literacy-med/course/": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://www.albany.edu/education/programs/phd-educational-psychology": [
+      0,
+      1
+    ],
+    "https://www.bsu.edu/academics/collegesanddepartments/online/academic-programs/masters/mainedpsych": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20
+    ],
+    "https://catalog.utk.edu/preview_program.php?catoid=33&poid=16101": [
+      17
+    ],
+    "https://education.ucr.edu/masters/educational-psychology": [
+      1
+    ],
+    "https://academicbulletins.sc.edu/graduate/education/educational-developmental-science/educational-psychology-research-phd/": [
+      0
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 319,
+  "url_to_lists": {
+    "https://edpsych.umn.edu/": [
+      [
+        "Helping people learn and grow",
+        "Learn with us: Programs and degrees",
+        "Questions?",
+        "Ed Psych Student Research Day 2025   Ed Psych Student Research Day 2025",
+        "In memoriam: James \"Jim\" Turnure   In memoriam: James \"Jim\" Turnure",
+        "Dr. M.Y. Savana Bak featured in MURAJ article   Dr. M.Y. Savana Bak featured in MURAJ article",
+        "Caitlin Mills co-founds AugmentED   Caitlin Mills co-founds AugmentED",
+        "For Students, Faculty, and Staff"
+      ],
+      [
+        "Graduate programs",
+        "Undergraduate programs",
+        "Certificates"
+      ]
+    ],
+    "https://catalog.ku.edu/education/psychology-research/": [
+      [
+        "Educational Psychology Graduate Programs",
+        "School of Education & Human Sciences",
+        "School of Education & Human Sciences",
+        "Educational Psychology",
+        "Print Options"
+      ],
+      [
+        "EPSY SBS.",
+        "Social and Behavioral Sciences.",
+        "3 Credits.",
+        "GE3S\n\n\n\n\nSBS"
+      ],
+      [
+        "EPSY 305.",
+        "Development and Learning of the Child.",
+        "3 Credits.",
+        "GE3S\n\n\n\n\nSWT\n\n\n\n\nSBS"
+      ],
+      [
+        "EPSY 306.",
+        "Development and Learning of the Adolescent.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 310.",
+        "Career and Life Planning.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 320.",
+        "Basics of Classroom Assessment.",
+        "1 Credits."
+      ],
+      [
+        "EPSY 385.",
+        "Psychological Aspects of Exercise.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 450.",
+        "Introduction to Counseling Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 458.",
+        "Advanced Sport & Exercise Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 460.",
+        "Practicum in Sport and Exercise Psychology.",
+        "1-3 Credits."
+      ],
+      [
+        "EPSY 497.",
+        "Independent Study.",
+        "1-2 Credits."
+      ],
+      [
+        "EPSY 520.",
+        "Classroom Assessment.",
+        "2 Credits."
+      ],
+      [
+        "EPSY 575.",
+        "Internship Exploration.",
+        "1-5 Credits."
+      ],
+      [
+        "EPSY 580.",
+        "Positive Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 598.",
+        "Special Course:  _____.",
+        "1-5 Credits."
+      ],
+      [
+        "EPSY 705.",
+        "Human Development through the Lifespan.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 710.",
+        "Introduction to Statistical Analysis.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 711.",
+        "Lab for Introduction to Statistical Analysis.",
+        "1 Credits."
+      ],
+      [
+        "EPSY 725.",
+        "Educational Measurement.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 742.",
+        "Counseling Theory and Techniques.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 760.",
+        "Ethics, Law, and Professional Issues in School Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 765.",
+        "Mental Health in the Classroom.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 766.",
+        "Positive Psychology in the Classroom.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 767.",
+        "Social Emotional Learning.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 770.",
+        "Developmental Psychopathology:  Diagnosis, Intervention, and Prevention.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 798.",
+        "Special Course:  _____.",
+        "1-5 Credits."
+      ],
+      [
+        "EPSY 800.",
+        "Development during Youth and Adulthood.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 802.",
+        "Child Development.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 803.",
+        "Using R for Data Analysis.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 805.",
+        "Cognitive Assessment.",
+        "4 Credits."
+      ],
+      [
+        "EPSY 810.",
+        "Regression and ANOVA: General Linear Models.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 812.",
+        "Meta-Analysis.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 814.",
+        "Nonparametric Statistics.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 816.",
+        "Evaluating School Programs.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 818.",
+        "Social Development.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 822.",
+        "Educational Scales, Questionnaires, and Sampling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 825.",
+        "Positive Psychotherapy and Strength-Based Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 830.",
+        "Individual and Group Assessment.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 835.",
+        "Clinical Techniques in Academic Assessment and Intervention.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 836.",
+        "Behavioral & Systems Neuroscience in Education.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 837.",
+        "The Neuroscience of Motivation and Emotional Behaviors.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 838.",
+        "Neurodevelopment of Executive Function.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 841.",
+        "Center for Psychoeducational Services Practicum.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 842.",
+        "Counseling Practicum (Elementary, Secondary, Counseling Psychology).",
+        "3-6 Credits."
+      ],
+      [
+        "EPSY 844.",
+        "Theory of Group Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 845.",
+        "Substance Abuse Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 846.",
+        "Career Development.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 855.",
+        "Psychoeducational Clinic I:  Assessment, Consultation, and Intervention.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 860.",
+        "Assessment of Behavior Problems and Personality.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 865.",
+        "Psychoeducational Clinic 2:  Assessment, Consultation, and Intervention.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 871.",
+        "Crisis and Disaster Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 875.",
+        "Understanding Cultural & Individual Differences in Professional Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 880.",
+        "Ethical and Legal Issues in Psychology and Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 882.",
+        "History and Systems of Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 888.",
+        "Evidence Based Practice in Counseling Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 890.",
+        "Diagnosis and Psychopathology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 895.",
+        "Field Experience in:  _____.",
+        "1-5 Credits."
+      ],
+      [
+        "EPSY 896.",
+        "Seminar in:  _____.",
+        "1-3 Credits."
+      ],
+      [
+        "EPSY 897.",
+        "Independent Study.",
+        "1-4 Credits."
+      ],
+      [
+        "EPSY 898.",
+        "Master's Project.",
+        "1-4 Credits."
+      ],
+      [
+        "EPSY 899.",
+        "Master's Thesis.",
+        "1-6 Credits."
+      ],
+      [
+        "EPSY 905.",
+        "Fundamentals of Multivariate Modeling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 906.",
+        "Latent Trait Measurement and Structural Equation Models.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 910.",
+        "Practicum in School Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 911.",
+        "Advanced Practicum in School Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 918.",
+        "Seminar in Current Issues in Counseling Psychology.",
+        "1 Credits."
+      ],
+      [
+        "EPSY 921.",
+        "Advanced Measurement Theory and Practice.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 922.",
+        "Introduction to Item Response Theory.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 923.",
+        "Advanced Theory and Applications of Item Response Theory.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 926.",
+        "Hierarchical Linear Modeling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 930.",
+        "Applied Longitudinal Analysis.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 939.",
+        "Grant Writing for Social Scientists.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 945.",
+        "Clinical Supervision and Consultation.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 948.",
+        "Advanced Practicum I.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 949.",
+        "Advanced Practicum II.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 951.",
+        "Psychodiagnostic Assessment.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 954.",
+        "Vocational Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 956.",
+        "Theory of Couples and Family Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 965.",
+        "Foundations of Psychoeducational Consultation.",
+        "3 Credits."
+      ],
+      [
+        "EPSY 990.",
+        "Internship in Counseling Psychology.",
+        "1 Credits."
+      ],
+      [
+        "EPSY 991.",
+        "Ed.S. Internship.",
+        "1-2 Credits."
+      ],
+      [
+        "EPSY 992.",
+        "Ph.D. Internship in School Psychology.",
+        "1-2 Credits."
+      ],
+      [
+        "EPSY 995.",
+        "Field Experience in:  _____.",
+        "1-5 Credits."
+      ],
+      [
+        "EPSY 996.",
+        "College Teaching Experience in:  _____.",
+        "1-5 Credits."
+      ],
+      [
+        "EPSY 997.",
+        "Individual Study.",
+        "1-4 Credits."
+      ],
+      [
+        "EPSY 999.",
+        "Doctoral Dissertation.",
+        "1-15 Credits."
+      ]
+    ],
+    "https://epsy.tamu.edu/": [
+      [
+        "How to Apply",
+        "Program Areas to choose from",
+        "Educational Psychology, US News & World Report 2023",
+        "Number of Online Courses Available",
+        "Educational Psychology Programs",
+        "UNDERGRADUATE STUDIES",
+        "Undergraduate Studies",
+        "Graduate Programs",
+        "Graduate Programs",
+        "ONLINE EDUCATION",
+        "Online Education",
+        "Certificates",
+        "Certificates",
+        "Program Areas to choose from",
+        "Educational Psychology, US News & World Report 2023",
+        "Number of Online Courses Available",
+        "Educational Psychology Programs",
+        "UNDERGRADUATE STUDIES",
+        "Undergraduate Studies",
+        "Graduate Programs",
+        "Graduate Programs",
+        "ONLINE EDUCATION",
+        "Online Education",
+        "Certificates",
+        "Certificates",
+        "Connect with us",
+        "Resources",
+        "Programs"
+      ],
+      [
+        "Master\u2019s\u00a0\u2192\nDoctoral \u2192",
+        "Bachelor\u2019s \u2192\nOnline \u2192",
+        "Certificates \u2192"
+      ]
+    ],
+    "https://annescollege.fsu.edu/academics/department-educational-psychology-learning-systems": [
+      [
+        "Athletic Coaching (MS)",
+        "Career Counseling (MS/EdS)",
+        "Clinical Mental Health Counseling (MS/EdS)",
+        "Counseling Psychology and School Psychology (PhD)",
+        "Educational Psychology: Learning & Cognition (MS, PhD)",
+        "Instructional Systems & Learning Technologies (MS, EdD, PhD)",
+        "Measurement & Statistics (MS, PhD)",
+        "School Counseling (MS/EdS)",
+        "School Psychology (MS/EdS)",
+        "Sport Psychology (MS, PhD)"
+      ],
+      [
+        "Athletic Coaching",
+        "College Teaching",
+        "Human Performance Technology",
+        "Instructional Design and Technology",
+        "Measurement and Statistics",
+        "Online Teaching and Learning"
+      ],
+      [
+        "Main Navigation",
+        "Social Media",
+        "Footer",
+        "Legal"
+      ]
+    ],
+    "https://catalog.utexas.edu/general-information/coursesatoz/edp/": [
+      [
+        "General Information",
+        "Undergraduate",
+        "Graduate",
+        "Medical",
+        "Search Courses",
+        "Glossary",
+        "Archives",
+        "Print Options"
+      ],
+      [
+        "Lower-Division Courses",
+        "Upper-Division Courses",
+        "Graduate Courses",
+        "Professional Courses"
+      ],
+      [
+        "grade basis only.",
+        "grade basis only.",
+        "grade basis only. Additional prerequisite: Educational Psychology 383C (Topic 4) or 483C (Topic 4)",
+        "grade basis only.",
+        "based social/emotional assessment, including conducting and interpreting evidence",
+        "grade basis only. Additional prerequisite: Educational Psychology 383C (Topic 30) or the equivalent.",
+        "grade basis only.",
+        "grade basis only."
+      ],
+      [
+        "Behavioral Assessment and Intervention) may not both be counted.",
+        "being across academic, social",
+        "emotional, and health domains."
+      ],
+      [
+        "grade basis only.",
+        "grade basis only.",
+        "grade basis only.",
+        "grade basis only.",
+        "being in post",
+        "grade basis only.",
+        "grade basis only."
+      ]
+    ],
+    "https://education.arizona.edu/educational-psychology": [
+      [
+        "Main navigation",
+        "Academic Units",
+        "Social Media"
+      ]
+    ],
+    "https://ed.psu.edu/academics/departments/department-educational-psychology-counseling-and-special-education/educational-psychology": [
+      [
+        "Collaboration with faculty mentors on research initiatives and projects",
+        "Coursework in fundamental knowledge and skills",
+        "Advanced seminars and colloquia in specialized areas",
+        "Professional development seminar"
+      ],
+      [
+        "Utility menu",
+        "Main menu",
+        "Search Penn State College of Education",
+        "Welcome to the Educational Psychology program at Penn State!",
+        "EDPSY",
+        "Get Started"
+      ]
+    ],
+    "https://catalog.ufl.edu/UGRD/colleges-schools/UGEDU/EDS_BA/EDS_BA02/": [
+      [
+        "College: Education",
+        "Degree:\u00a0Bachelor of Arts",
+        "Credits for Degree:\u00a0120"
+      ],
+      [
+        "Education Sciences",
+        "Education Sciences UF Online",
+        "Education Studies Minor",
+        "Educational Technology Minor",
+        "Educational Technology Minor UF Online",
+        "Elementary Education | Grades K-6",
+        "Florida Teaching Minor",
+        "UFTeach | Mathematics, Science, or Computer Science Minor"
+      ],
+      [
+        "Complete 1 of 3 critical-tracking courses: EDF\u00a01005,\u00a0EDF\u00a02085,\u00a0EME\u00a02040",
+        "2.33 GPA required for all critical-tracking courses",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Complete 2 of 3 critical-tracking courses",
+        "2.33 GPA required for all critical-tracking courses",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Complete 3 of 3 critical-tracking courses",
+        "2.33 GPA required for all critical-tracking courses",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Complete 1 core course: EDF\u00a03210,\u00a0EDF\u00a03604, EDF\u00a03423,\u00a0EEX\u00a02000,\u00a0EME\u00a03813",
+        "2.33 GPA required for all critical-tracking courses",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Complete 4 core courses: EDF\u00a03210,\u00a0EDF\u00a03604, EDF\u00a03423,\u00a0EEX\u00a02000,\u00a0EME\u00a03813",
+        "Complete 2 specialization courses: EDF\u00a03112, EDF\u00a04430, EDF\u00a04140, EDF\u00a04440, EDF\u00a04470",
+        "2.0 UF GPA required"
+      ],
+      [
+        "Catalog",
+        "Coursework for the Major",
+        "SEMESTER 1",
+        "SEMESTER 2",
+        "SEMESTER 3",
+        "SEMESTER 4",
+        "SEMESTER 5",
+        "SEMESTER 6",
+        "SEMESTER 7",
+        "SEMESTER 8",
+        "Before Graduating Students Must",
+        "Students in the Major Will Learn to",
+        "Assessment Types",
+        "Resources",
+        "Helpful Links",
+        "Connect",
+        "Print Options"
+      ],
+      [
+        "Curriculum",
+        "Content",
+        "Critical Thinking",
+        "Communication"
+      ],
+      [
+        "EDF\u00a01005",
+        "EDF\u00a02085",
+        "EME\u00a02040"
+      ],
+      [
+        "EDF\u00a03210",
+        "EDF\u00a03604",
+        "EDF\u00a03423",
+        "EEX\u00a02000",
+        "EME\u00a03813"
+      ],
+      [
+        "EDF\u00a03112",
+        "EDF\u00a04140",
+        "EDF\u00a04430",
+        "EDF\u00a04440",
+        "EDF\u00a04470"
+      ],
+      [
+        "EDG\u00a02021",
+        "EDG\u00a04931",
+        "EDG\u00a04078"
+      ],
+      [
+        "Courses",
+        "EDF\u00a03604",
+        "EDF\u00a03210",
+        "EEX\u00a02000",
+        "EDF\u00a04430",
+        "EME\u00a03813",
+        "EEX\u00a04810",
+        "EDF\u00a04440",
+        "EME\u00a04010",
+        "EDF\u00a03609",
+        "EDG\u00a02021",
+        "EDG\u00a04078",
+        "EDG\u00a04931"
+      ]
+    ],
+    "https://ed-psych.utah.edu/": [
+      [
+        "Understand the social, emotional, and cognitive aspects of human development and learning",
+        "Gain real-world experience through supervised field placements",
+        "Graduate with endless career possibilities!"
+      ],
+      [
+        "Dr. Tracy Dobie Awarded Grant to Advance Math & Science Education Equity",
+        "Ashley Coombs Wins Student of the Year Award",
+        "Dr. Anne Cook Awarded Fellowship\nDr. Anne Cook Awarded Fellowship",
+        "Drs. Son and Zummo Awarded LEARNT Grants\nDrs. Son and Zummo Awarded LEARNT Grants"
+      ],
+      [
+        "Department of Educational Psychology",
+        "Main Navigation",
+        "Main Menu",
+        "New Undergraduate Major in Education Psychology",
+        "News & Announcements",
+        "Programs",
+        "Educational Psychology",
+        "Resources",
+        "Quick Links"
+      ],
+      [
+        "College of Education",
+        "Dr. Tracy Dobie Awarded Grant to Advance Math & Science Education Equity",
+        "Ashley Coombs Wins Student of the Year Award",
+        "Dr. Anne Cook Awarded Fellowship",
+        "Drs. Son and Zummo Awarded LEARNT Grants"
+      ],
+      [
+        "based resources for pre",
+        "professionals and professionals in the fields of",
+        "professionals and professionals",
+        "based",
+        "states (Colorado, Montana, North"
+      ]
+    ],
+    "https://catalog.utsa.edu/graduate/educationhumandevelopment/educationalpsychology/": [
+      [
+        "\u00bb ASAP",
+        "\u00bb Blackboard",
+        "\u00bb Staff Webmail",
+        "\u00bb Libraries"
+      ],
+      [
+        "\u00bb Main",
+        "\u00bb Downtown",
+        "\u00bb Hemisfair Park"
+      ],
+      [
+        "Catalog >",
+        "Graduate\u00a0Catalog >",
+        "College\u00a0of\u00a0Education\u00a0and\u00a0Human\u00a0Development >",
+        "Department of Educational Psychology"
+      ],
+      [
+        "M.A. in Applied Educational Psychology",
+        "M.A. in School Psychology",
+        "M.S. in Behavior Analysis",
+        "Ph.D. in School Psychology"
+      ],
+      [
+        "Mission Statement",
+        "Criminal History Policy and Acknowledgement",
+        "Master of Arts Degree in Applied Educational Psychology",
+        "Master of Arts Degree in School Psychology",
+        "Master of Science Degree in Behavior Analysis",
+        "Doctor of Philosophy Degree in School Psychology",
+        "Graduate Certificate in Applied Behavior Analysis",
+        "Graduate Certificate in Language Acquisition and Bilingual Psychoeducational Assessment",
+        "Graduate Certificate in Program Evaluation and Applied Research"
+      ],
+      [
+        "Criminal History Policy and Acknowledgement",
+        "Concentration in Learning, Motivation, and Development",
+        "Concentration in Program Evaluation and Applied Research",
+        "Criminal History Policy and Acknowledgement",
+        "Criminal History Policy and Acknowledgement",
+        "Master of Science in Behavior Analysis Concentrations",
+        "Criminal History Policy and Acknowledgement",
+        "Academic Standing"
+      ],
+      [
+        "Criminal History Policy and Acknowledgement",
+        "Requirements for completion include:",
+        "All applicants must meet/fulfill the following departmental requirements:",
+        "Requirements for completion of Certificate program include:"
+      ],
+      [
+        "A. 24 semester credit hours of required courses:",
+        "EDP\u00a05003",
+        "EDP\u00a05033",
+        "EDP\u00a05053",
+        "EDP\u00a05303",
+        "EDP\u00a05603",
+        "EDP\u00a06103",
+        "EDP\u00a06203",
+        "B. 12 semester credit hours of elective coursework",
+        "Total Credit Hours"
+      ],
+      [
+        "A. 27 semester credit hours of required courses:",
+        "EDP\u00a05003",
+        "EDP\u00a05033",
+        "EDP\u00a05053",
+        "EDP\u00a05303",
+        "EDP\u00a05603",
+        "EDP\u00a06103",
+        "EDP\u00a06203",
+        "EDP\u00a06303",
+        "EDP\u00a06333",
+        "B. Select three from the following:",
+        "EDP\u00a06413",
+        "EDP\u00a07103",
+        "EDP\u00a07203",
+        "EDP\u00a07633",
+        "EDP\u00a07643",
+        "ILT\u00a07743",
+        "EDP\u00a06983",
+        "Total Credit Hours"
+      ],
+      [
+        "66 semester credit hours of required courses:",
+        "EDP\u00a05003",
+        "EDP\u00a05033",
+        "EDP\u00a05603",
+        "EDP\u00a05303",
+        "EDP\u00a06033",
+        "EDP\u00a06103",
+        "EDP\u00a06203",
+        "EDP\u00a06213",
+        "EDP\u00a06233",
+        "EDP\u00a06243",
+        "EDP\u00a06253",
+        "EDP\u00a06263",
+        "EDP\u00a06293",
+        "EDP\u00a06343",
+        "EDP\u00a06643",
+        "EDP\u00a06703",
+        "EDP\u00a06733",
+        "EDP\u00a06833",
+        "EDP\u00a06943",
+        "SPE\u00a05403",
+        "Total Credit Hours"
+      ],
+      [
+        "A. 33 semester credit hours of required courses:",
+        "EDP\u00a05003",
+        "EDP\u00a05043",
+        "EDP\u00a05503",
+        "EDP\u00a05633",
+        "EDP\u00a05643",
+        "EDP\u00a05783",
+        "EDP\u00a06223",
+        "EDP\u00a06263",
+        "EDP\u00a06403",
+        "EDP\u00a06443",
+        "B. 3 semester credit hours of electives from the following courses:",
+        "EDP\u00a05033",
+        "EDP\u00a05493",
+        "EDP\u00a05603",
+        "EDP\u00a06983",
+        "Total Credit Hours"
+      ],
+      [
+        "A. 33 semester credit hours of required courses:",
+        "EDP\u00a05003",
+        "EDP\u00a05043",
+        "EDP\u00a05493",
+        "EDP\u00a05503",
+        "EDP\u00a05633",
+        "EDP\u00a05643",
+        "EDP\u00a06223",
+        "EDP\u00a06263",
+        "EDP\u00a06403",
+        "EDP\u00a06443",
+        "B. 3 semester credit hours of electives:",
+        "Total Credit Hours"
+      ],
+      [
+        "A. General Core Courses",
+        "EDP\u00a05003",
+        "EDP\u00a05033",
+        "EDP\u00a05303",
+        "EDP\u00a05603",
+        "EDP\u00a06033",
+        "EDP\u00a06103",
+        "EDP\u00a06203",
+        "EDP\u00a06213",
+        "EDP\u00a06233",
+        "EDP\u00a06243",
+        "EDP\u00a06253",
+        "EDP\u00a06263",
+        "EDP\u00a06293",
+        "EDP\u00a06343",
+        "EDP\u00a06413",
+        "EDP\u00a06643",
+        "EDP\u00a06703",
+        "EDP\u00a06733",
+        "EDP\u00a06833",
+        "EDP\u00a07033",
+        "EDP\u00a07043",
+        "EDP\u00a07103",
+        "EDP\u00a07213",
+        "EDP\u00a07943",
+        "PSY\u00a07103",
+        "PSY\u00a07123",
+        "SPE\u00a05403",
+        "B. Specialization",
+        "C. Dissertation",
+        "Repeat courses below for up to 9 hours total.",
+        "EDP\u00a07991",
+        "EDP\u00a07993",
+        "Total Credit Hours"
+      ],
+      [
+        "A. 9 semester credit hours of required courses:",
+        "EDP\u00a06223",
+        "EDP\u00a06263",
+        "EDP\u00a05503",
+        "B.  6 semester credit hours - Students choose from either Block A OR Block B",
+        "BLOCK A",
+        "EDP\u00a06833",
+        "EDP\u00a06293",
+        "BLOCK B",
+        "EDP\u00a05633",
+        "EDP\u00a05643",
+        "Total Credit Hours"
+      ],
+      [
+        "A. EDP Required Courses:",
+        "EDP\u00a06273",
+        "EDP\u00a06733",
+        "EDP\u00a06833",
+        "B. BBL Required Courses:",
+        "BBL\u00a05053",
+        "ESL\u00a05013",
+        "or\u00a0BBL\u00a07133",
+        "Total Credit Hours"
+      ],
+      [
+        "A.  Two prerequisite foundational courses:",
+        "EDP\u00a06103",
+        "EDP\u00a06203",
+        "Other coursework deemed comparable and approved by the Department of Educational Psychology",
+        "B. Two advanced courses in one of the three tracks below:",
+        "1.  Program Evaluation",
+        "EDP\u00a06413",
+        "EDP\u00a06303",
+        "2.  Applied Quantitative Research",
+        "EDP\u00a06413",
+        "or\u00a0EDP\u00a07103",
+        "EDP\u00a07203",
+        "or\u00a0EDP\u00a07633",
+        "For both EDP\u00a07203 and EDP\u00a07633 prerequisite of either EDP\u00a06413 or EDP\u00a07103",
+        "3. Applied Mixed Methods Research",
+        "EDP\u00a07643",
+        "ILT\u00a07743",
+        "C. Applied Practicum Experience",
+        "EDP\u00a06333",
+        "Total Credit Hours"
+      ],
+      [
+        "degree",
+        "semester",
+        "credit"
+      ]
+    ],
+    "https://education.purdue.edu/graduate-students/prospective-students/graduate-programs/educational-psychology/": [
+      [
+        "Centers and Institutes\nAckerman Center\nCATALYST\nCLEAR\nGERI\nSerious Games",
+        "Ackerman Center",
+        "CATALYST",
+        "CLEAR",
+        "Serious Games",
+        "CnI Online Fac",
+        "Curriculum Studies",
+        "Education for Work and Community",
+        "Elementary Education",
+        "English Education",
+        "English Language Learning",
+        "Learning Design and Technology",
+        "Literacy and Language Education",
+        "Mathematics Education",
+        "Science Education",
+        "Social Studies Education",
+        "Applied Behavior Analysis",
+        "Counseling and Development",
+        "Educational Leadership and Policy Studies",
+        "Educational Psychology and Research Methodology",
+        "Gifted Education",
+        "Special Education"
+      ],
+      [
+        "Ackerman Center",
+        "CATALYST",
+        "CLEAR",
+        "Serious Games"
+      ],
+      [
+        "CnI Online Fac",
+        "Curriculum Studies",
+        "Education for Work and Community",
+        "Elementary Education",
+        "English Education",
+        "English Language Learning",
+        "Learning Design and Technology",
+        "Literacy and Language Education",
+        "Mathematics Education",
+        "Science Education",
+        "Social Studies Education"
+      ],
+      [
+        "Applied Behavior Analysis",
+        "Counseling and Development",
+        "Educational Leadership and Policy Studies",
+        "Educational Psychology and Research Methodology",
+        "Gifted Education",
+        "Special Education"
+      ],
+      [
+        "Overview",
+        "Our Faculty",
+        "Hua Hua Chang",
+        "Brenda Downing",
+        "Qi (Helen) Huang",
+        "Yingying Jiang",
+        "Elizabeth Kraatz",
+        "Chantal Levesque-Bristol",
+        "Yukiko Maeda",
+        "P. Youli Mantzicopoulos-James",
+        "F. Richard Olenchak",
+        "Helen Patrick",
+        "Toni Kempler Rogat",
+        "Ala Samarapungavan",
+        "Anne Traynor",
+        "F. Richard Olenchak",
+        "Similar Programs"
+      ],
+      [
+        "F. Richard Olenchak",
+        "Professor",
+        "Educational Psychology; Higher Education; Gifted, Creative and TalentedEducational Studies"
+      ],
+      [
+        "Categories:",
+        "Centers and Institutes",
+        "Educational Leadership and Policy Studies",
+        "Educational Psychology and Research Methodology",
+        "Educational Studies",
+        "Gifted Creative Talented Certificate Online Faculty",
+        "Gifted Education",
+        "Higher Education Administration"
+      ],
+      [
+        "F. Richard Olenchak",
+        "Professor",
+        "Educational Psychology; Higher Education; Gifted, Creative and TalentedEducational Studies"
+      ],
+      [
+        "Categories:",
+        "Centers and Institutes",
+        "Educational Leadership and Policy Studies",
+        "Educational Psychology and Research Methodology",
+        "Educational Studies",
+        "Gifted Creative Talented Certificate Online Faculty",
+        "Gifted Education",
+        "Higher Education Administration"
+      ]
+    ],
+    "https://guide.wisc.edu/graduate/educational-psychology/educational-psychology-ms/educational-psychology-research-ms/": [
+      [
+        "Areas of Specialization",
+        "Admissions",
+        "Funding",
+        "Minimum Graduate School Requirements",
+        "Named Option Requirements",
+        "Graduate School Policies",
+        "Named Option-Specific Policies",
+        "Professional Development",
+        "People"
+      ],
+      [
+        "Human Development",
+        "Learning Sciences",
+        "Quantitative Methods",
+        "MS Degree Programs in Educational Psychology with Special Emphases",
+        "Graduate School Resources",
+        "Program Resources",
+        "Mode of Instruction",
+        "Curricular Requirements",
+        "Required Courses",
+        "Prior Coursework",
+        "Probation",
+        "Advisor / Committee",
+        "Credits Per Term Allowed",
+        "Time Limits",
+        "Grievances and Appeals",
+        "Other",
+        "Graduate School Resources",
+        "Faculty",
+        "Resources",
+        "Quick Links",
+        "Madison, WI",
+        "Ask Bucky",
+        "Social Media"
+      ],
+      [
+        "Mode of Instruction Definitions",
+        "Human Development Pathway1",
+        "Learning Sciences Pathway1",
+        "Quantitative Methods Pathway1",
+        "Graduate Credits Earned at Other Institutions",
+        "Undergraduate Credits Earned at Other Institutions or UW-Madison",
+        "Credits Earned as a University Special Student at UW\u2013Madison",
+        "School of Education Grievance Policy and Procedures"
+      ],
+      [
+        "This is a named option within the Educational Psychology MS.",
+        "Professors: Bellmore, Enright, Hubbard, Matthews, Short, Starr, Vlach",
+        "Professors: Bell, Karumbaiah, Nathan, Puntambekar, Shaffer, Zhang (Fall 2024)",
+        "Professors: Bolt, Kaplan, Kim, Pustejovsky, Wollack"
+      ],
+      [
+        "On This PageMinimum Graduate School RequirementsNamed Option Requirements",
+        "Face-to-Face: Courses typically meet during weekdays on the UW-Madison Campus.",
+        "The Quantitative Area of the Department of Educational Psychology is divided into two subareas:",
+        "The requirements in each of these subareas are listed below."
+      ],
+      [
+        "Requirements",
+        "Fall Deadline",
+        "Spring Deadline",
+        "Summer Deadline",
+        "GRE (Graduate Record Examinations)",
+        "English Proficiency Test",
+        "Other Test(s) (e.g., GMAT, MCAT)",
+        "Letters of Recommendation Required"
+      ],
+      [
+        "Requirements",
+        "Minimum Credit Requirement",
+        "Minimum Residence Credit Requirement",
+        "Minimum Graduate Coursework Requirement",
+        "Overall Graduate GPA Requirement",
+        "Other Grade Requirements",
+        "Assessments and Examinations",
+        "Language Requirements"
+      ],
+      [
+        "ED\u00a0PSYCH\u00a0709",
+        "ED\u00a0PSYCH\u00a0710",
+        "ED\u00a0PSYCH\u00a0712",
+        "ED\u00a0PSYCH\u00a0720",
+        "ED\u00a0PSYCH\u00a0721",
+        "ED\u00a0PSYCH\u00a0760",
+        "ED\u00a0PSYCH\u00a0761",
+        "Human Development Area Course",
+        "Select one of the following:",
+        "ED\u00a0PSYCH\u00a0711",
+        "ED\u00a0PSYCH/\u200bCOUN\u00a0PSY\u00a0\u00a0723",
+        "ED\u00a0PSYCH/\u200bHDFS\u00a0\u00a0725",
+        "ED\u00a0PSYCH\u00a0921",
+        "ED\u00a0PSYCH\u00a0925",
+        "Elective credits approved by Human Development faculty 2",
+        "Master's Thesis",
+        "Total Credits"
+      ],
+      [
+        "ED\u00a0PSYCH\u00a0709",
+        "ED\u00a0PSYCH\u00a0710",
+        "ED\u00a0PSYCH\u00a0712",
+        "ED\u00a0PSYCH\u00a0795",
+        "ED\u00a0PSYCH\u00a0796",
+        "ED\u00a0PSYCH\u00a0711",
+        "ED\u00a0PSYCH\u00a0711",
+        "One class (3 credits) in qualitative methods.",
+        "One additional class (3 credits) in the Learning Sciences area. 3",
+        "Elective credits approved by Learning Sciences faculty.",
+        "Major Area Paper",
+        "Total Credits"
+      ],
+      [
+        "ED\u00a0PSYCH\u00a0709",
+        "ED\u00a0PSYCH\u00a0710",
+        "ED\u00a0PSYCH\u00a0712",
+        "ED\u00a0PSYCH\u00a0760",
+        "ED\u00a0PSYCH\u00a0761",
+        "ED\u00a0PSYCH\u00a0762",
+        "ED\u00a0PSYCH\u00a0763",
+        "ED\u00a0PSYCH\u00a0771",
+        "ED\u00a0PSYCH\u00a0773",
+        "ED\u00a0PSYCH\u00a0871",
+        "ED\u00a0PSYCH\u00a0960",
+        "ED\u00a0PSYCH\u00a0963",
+        "ED\u00a0PSYCH\u00a0964",
+        "ED\u00a0PSYCH\u00a0965",
+        "ED\u00a0PSYCH\u00a0971",
+        "Elective credits approved by Quantitative Methods  faculty",
+        "Master's Thesis",
+        "Total Credits"
+      ],
+      [
+        "ED\u00a0PSYCH\u00a0709",
+        "ED\u00a0PSYCH\u00a0710",
+        "ED\u00a0PSYCH\u00a0712",
+        "ED\u00a0PSYCH\u00a0760",
+        "ED\u00a0PSYCH\u00a0761",
+        "ED\u00a0PSYCH\u00a0771",
+        "Four courses in the quantitative area (options below or other chosen in consultation with advisor)",
+        "ED\u00a0PSYCH\u00a0762",
+        "ED\u00a0PSYCH\u00a0763",
+        "ED\u00a0PSYCH\u00a0871",
+        "ED\u00a0PSYCH\u00a0960",
+        "ED\u00a0PSYCH\u00a0963",
+        "ED\u00a0PSYCH\u00a0964",
+        "ED\u00a0PSYCH\u00a0965",
+        "ED\u00a0PSYCH\u00a0971",
+        "ED\u00a0PSYCH\u00a0773",
+        "Elective credits approved by Quantitative Methods  faculty",
+        "Master's Thesis",
+        "Total Credits"
+      ]
+    ],
+    "https://www.washington.edu/students/crscat/edpsy.html": [
+      [
+        "Winter Quarter 2025",
+        "Spring Quarter 2025",
+        "Summer Quarter 2025"
+      ],
+      [
+        "compliance, and ethics. Example designs include block",
+        "randomized, cluster",
+        "randomized, cohort",
+        "sequential, step"
+      ]
+    ],
+    "https://catalog.ua.edu/graduate/education/educational-studies-psychology-research-methodology-counseling/courses/": [
+      [
+        "2024-25 Graduate Catalog",
+        "Counselor Education Courses",
+        "Educational Psychology Courses",
+        "Educational Research Courses",
+        "School Psychology Courses",
+        "Print Options"
+      ],
+      [
+        "Colleges and Schools",
+        "Administration",
+        "Resources",
+        "Safety"
+      ],
+      [
+        "Practicum Counseling II",
+        "Supervised practice in counseling. Offered fall and spring semesters.",
+        "Prerequisite(s): BCE\u00a0512 and BCE\u00a0514"
+      ],
+      [
+        "Prerequisite(s):",
+        "BCE\u00a0512",
+        "BCE\u00a0514"
+      ],
+      [
+        "Prerequisite(s):",
+        "BCE\u00a0516",
+        "BCE\u00a0512"
+      ],
+      [
+        "Prerequisite(s):",
+        "BCE\u00a0512",
+        "BCE\u00a0514"
+      ],
+      [
+        "Prerequisite(s):",
+        "BCE\u00a0615",
+        "BCE\u00a0616"
+      ],
+      [
+        "Readings In Educ Psych",
+        "An advanced seminar covering special topics in Educational Psychology.",
+        "Special Topics Course"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0631",
+        "BER\u00a0630"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0630",
+        "BER\u00a0631",
+        "BER\u00a0632"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0639",
+        "BER\u00a0640"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0639"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0639",
+        "BER\u00a0640"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0642",
+        "BER\u00a0643"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0642",
+        "BER\u00a0643",
+        "BER\u00a0646"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0558"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0631"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0631"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0639",
+        "BER\u00a0640"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0640",
+        "BER\u00a0639"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0639",
+        "BER\u00a0640"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0631"
+      ],
+      [
+        "Prerequisite(s):",
+        "BER\u00a0540",
+        "BER\u00a0631"
+      ],
+      [
+        "Readings In Educ Res",
+        "Offered fall and spring semesters and in summer school.",
+        "Special Topics Course"
+      ],
+      [
+        "Prerequisite(s):",
+        "BSP\u00a0521",
+        "BSP\u00a0523"
+      ],
+      [
+        "Advanced School-Based Practicum",
+        "Prerequisite(s): BSP\u00a0501, BSP\u00a0580, BSP\u00a0632",
+        "Prerequisite(s) with concurrency: BSP\u00a0633"
+      ],
+      [
+        "Prerequisite(s):",
+        "BSP\u00a0501",
+        "BSP\u00a0580",
+        "BSP\u00a0632"
+      ],
+      [
+        "Prerequisite(s):",
+        "BSP\u00a0580",
+        "BSP\u00a0683"
+      ],
+      [
+        "sample z",
+        "and t",
+        "tests; independent and dependent sample t",
+        "tests; correlations; and chi",
+        "square and simple regressions are included."
+      ],
+      [
+        "variable scenario. Topics covered include: one",
+        "way ANOVA, two",
+        "way ANOVA, repeated measures ANOVA and multiple regression."
+      ],
+      [
+        "treatment interaction, study",
+        "skills training, self",
+        "regulation and monitoring, peer"
+      ]
+    ],
+    "https://edpsych.umn.edu/academics": [
+      [
+        "Welcome to the Department of Educational Psychology!",
+        "Graduate programs",
+        "Undergraduate programs",
+        "Certificates",
+        "Department of Educational Psychology"
+      ],
+      [
+        "Counselor education MA",
+        "Psychological Foundations of Education MA and PhD",
+        "Quantitative methods in education MA and PhD",
+        "School psychology MA with specialist certificate and PhD",
+        "Special education MEd/teaching licensures, MA, and PhD",
+        "Graduate minors",
+        "Graduate minor in educational psychology",
+        "Special education minor for master's students",
+        "Bachelor's of science in special education",
+        "Bachelor's of science with academic and behavioral strategist (ABS) teaching licensure",
+        "Bachelor\u2019s of Science (BS) with Early Childhood Special Education (ECSE) licensure",
+        "Bachelor\u2019s of science: Foundations of special education for schools and society",
+        "Undergraduate minors",
+        "Minor in applied psychology in educational and community settings",
+        "Educational psychology research minor",
+        "Undergraduate classes",
+        "Online autism spectrum disorder certificate",
+        "Talent development and gifted education certificate",
+        "Learning sciences post baccalaureate certificate",
+        "Disability policy and services certificate",
+        "For Students, Faculty, and Staff"
+      ],
+      [
+        "Counselor education MA",
+        "Psychological Foundations of Education MA and PhD",
+        "Quantitative methods in education MA and PhD",
+        "School psychology MA with specialist certificate and PhD",
+        "Special education MEd/teaching licensures, MA, and PhD"
+      ],
+      [
+        "Bachelor's of science with ABS teaching licensure",
+        "Bachelor\u2019s of Science (BS) with Early Childhood Special Education (ECSE) licensure",
+        "Bachelor\u2019s of science: Foundations of special education for schools and society"
+      ]
+    ],
+    "https://coe.uga.edu/directory/educational-psychology/": [
+      [
+        "Assessment and remediation of children\u2019s reading difficulty",
+        "Sex differences in mathematics strategies",
+        "Underrepresented populations in gifted education",
+        "Creativity",
+        "Reading comprehension and vocabulary development",
+        "Diagnostic classification models",
+        "Preschool intervention for children living in poverty",
+        "Design of student-centered learning environments",
+        "Dropout prevention"
+      ],
+      [
+        "Denis Dumas",
+        "Sycarah Fisher",
+        "Shiyu Wang"
+      ],
+      [
+        "Double DawgsCombined Bachelor's and Master's Degrees",
+        "Minors",
+        "MEd/EdS Professional Programs",
+        "Master of Education (MEd)",
+        "Master of Arts (MA)",
+        "Educational Specialist (EdS)",
+        "Doctor of Philosophy (PhD)",
+        "Certificate Programs",
+        "Endorsement/Certificate Programs",
+        "Association of School Psychologists (ASP)",
+        "Graduate Researchers in Educational Psychology"
+      ],
+      [
+        "Anna AbrahamE. Paul Torrance Professor",
+        "Scott P. ArdoinProfessor",
+        "Kadir BaharAssociate Professor",
+        "Michael M. BargerAssistant Professor",
+        "Kristen BubProfessor",
+        "Caroline Calhoun-KingStudent Affairs Professional II",
+        "Louis CastenellDean Emeritus",
+        "Allan S. CohenProfessor Emeritus",
+        "Stephen E. CramerSenior Academic Professional Emeritus",
+        "Bonnie CramondProfessor Emeritus",
+        "Jessica CrookAdministrative Specialist I",
+        "Denis DumasAssociate Professor",
+        "George EngelhardProfessor",
+        "Amanda E. FersterSenior Lecturer",
+        "Logan FiorellaAssociate Professor",
+        "Sycarah FisherAssociate Professor and Graduate Coordinator",
+        "Shawn M. GlynnJosiah Meigs Distinguished Teaching Professor, Emeritus",
+        "Tarek Cy GranthamProfessor",
+        "Erin E. HamelAssistant Professor",
+        "Ashley Johnson HarrisonAssociate Professor and Program Coordinator",
+        "Meg Easom HinesSenior Lecturer",
+        "Seock-Ho KimOmer Clyde and Elizabeth Parr Aderhold Professor in Research Methodology",
+        "Michele LeaseProfessor",
+        "Jennifer H. LindstromAdjunct Professor",
+        "Zhenqiu (Laura) LuAssociate Professor",
+        "Matthew MadisonAssistant Professor",
+        "Sakhavat MammadovAssociate Professor , and GCE Program Coordinator",
+        "Amedee Marchand MartellaAssistant Professor",
+        "Roy P. MartinProfessor Emeritus",
+        "Stacey M Neuharth-PritchettProfessor",
+        "Chitra PidapartiClinical Associate Professor",
+        "Amy L. ReschlyProfessor and Department Head",
+        "Paula J. SchwanenflugelProfessor Emeritus",
+        "Zuchao \"William\" ShenAssistant Professor",
+        "Sekita D StroudBusiness Manager I",
+        "Shiyu WangAssociate Professor"
+      ]
+    ],
+    "https://edp.soe.baylor.edu/": [
+      [
+        "Areas of Study",
+        "Programs",
+        "Educational Psychology"
+      ],
+      [
+        "BSEd\nAll-Level Special Education",
+        "BSEd\nGifted and Talented Supplemental",
+        "MSEd\nEducational Psychology (General, GT)",
+        "MSEd\nEducational Psychology (ABA)",
+        "EdS Waco\nSchool Psychology (Waco Campus)",
+        "EdS Dallas\nSchool Psychology (Dallas campus)",
+        "PhD Waco\nSchool Psychology",
+        "PhD\nEducational Psychology (ABA, GT, Quant, Special Education)"
+      ]
+    ],
+    "https://ww2.georgiasouthern.edu/coe/epr/courses/educational-psychology-courses/": [
+      [
+        "College of Education",
+        "Educational Psychology and Research",
+        "Courses",
+        "Educational Psychology Courses"
+      ]
+    ],
+    "https://sc.edu/study/colleges_schools/education/study/areas/educational_psychology_research/": [
+      [
+        "SC.edu",
+        "Study",
+        "Colleges and Schools",
+        "Colleges and Schools",
+        "College of Education",
+        "Study",
+        "Areas of Study",
+        "Educational Psychology and Research"
+      ],
+      [
+        "Peer Relations",
+        "Teacher Attunement",
+        "Bullying and Victimization",
+        "Motivation and Engagement",
+        "Role of Emotion in Learning",
+        "Rural Education",
+        "Cognitive Control Skills",
+        "Development of Self-regulation"
+      ],
+      [
+        "Survey Design",
+        "Structural Equation Modeling",
+        "Assessment",
+        "Program Evaluation",
+        "Statistical Power Analysis",
+        "Hierarchical Linear Modeling",
+        "Nonparametric Statistics",
+        "Ethics Issues in Assessment"
+      ],
+      [
+        "Baylor University",
+        "College Entrance Exam Board",
+        "Children\u2019s Law Center",
+        "Educational Testing Service",
+        "Georgia Southern University",
+        "Michigan Department of Education",
+        "Newberry University",
+        "OIED, NASA Headquarters",
+        "Old Dominion University",
+        "Richland School District 1, 2"
+      ],
+      [
+        "SC Department of Education",
+        "Western Carolina University",
+        "Winthrop University",
+        "University of Missouri - Kansas City",
+        "University of North Georgia",
+        "University of Virginia",
+        "University of Texas \u2013 Austin",
+        "Wingate University",
+        "Zayed University - United Arab Emirates"
+      ],
+      [
+        "Educational Psychology and Research",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      [
+        "Our Faculty",
+        "Matthew J. Irvin, Ph.D.",
+        "Melissa Duffy, Ph.D.",
+        "Gregory Trevors, Ph.D.",
+        "Robbie Ross, Ph.D.",
+        "Mollly Dawes, Ph.D."
+      ]
+    ],
+    "https://education.msu.edu/cepse/epet/": [
+      [
+        "Fri.Apr.42025Education Policy Speaker Series10:30 am - 12:00 pm252 Erickson Hall",
+        "Fri.Apr.42025Academic Freedom and Free Speech Learning Community10:00 am - 12:00 pm300 Bessey Hall",
+        "Fri.Apr.42025Community-Engaged Scholarship Write-In9:00 am - 12:00 pm"
+      ],
+      [
+        "RELATED",
+        "RELATED",
+        "RELATED",
+        "RELATED",
+        "YOU\u2019RE WELCOME AT MSU",
+        "Students develop expertise in Ed Psych, Ed Tech, or the intersection of these emphasis areas",
+        "One program, two different modes",
+        "Academic Programs",
+        "People",
+        "What's New",
+        "Academic Departments",
+        "Resources",
+        "In The College",
+        "Connect"
+      ],
+      [
+        "EDUCATIONAL PSYCHOLOGY",
+        "EDUCATIONAL TECHNOLOGY",
+        "ON-CAMPUS MODE",
+        "ONLINE MODE"
+      ]
+    ],
+    "https://www.gc.cuny.edu/educational-psychology": [
+      [
+        "Degree Offered",
+        "Admissions Deadlines",
+        "More in Educational Psychology",
+        "In Memoriam: Distinguished Professor Emeritus Barry J. Zimmerman",
+        "Brain Training 2.0: Grad Sees Promise in a Mind-Controlled Video Game to Improve Attention",
+        "CUNY a Top Influencer of Oldest Regional Psychological Association With 16th President",
+        "Three CUNY Campus Heads Are Graduate Center Alumni",
+        "Joan M.  Lucariello",
+        "Kelvin Wallace"
+      ],
+      [
+        "Educational Psychology",
+        "edpsych@gc.cuny.edu",
+        "+1 212-817-8285\nRoom 3204",
+        "Facebook"
+      ]
+    ],
+    "https://liberalarts.vt.edu/departments-and-schools/school-of-education/academic-programs/educational-psychology-program/about-phd.html": [
+      [
+        "EDEP 5114: Learning and Cognition",
+        "EDEP 5184: Sociocultural Influences on Learning and Instruction",
+        "EDEP 6114: Cognitive Processes and Educational Practice",
+        "EDEP 6224: Constructivism and Education",
+        "EDEP 6444: Motivation and Cognition"
+      ],
+      [
+        "EDCI 5104: Schooling in American Society",
+        "EDCI 5784: Educational Philosophy and Technology",
+        "EDCI 6024: Analysis of Education Concepts"
+      ],
+      [
+        "Note: There are many possibilities, these are just a few; check the course schedule for others.",
+        "EDIT 5164: Design for Learning",
+        "EDCI 5284: Disability & Society (can count as foundations course)",
+        "EDCI 5284: Universal Access, Disability & Technology",
+        "EDIT 5774 Learning Theories for Instructional Design",
+        "EDCI 5774: Classroom & Behavior Management",
+        "EDCI 5774: Human Growth and Development (online)",
+        "EDCI 5784: Educational Philosophy and Technology",
+        "EDCI 5784 Leadership to Improve Instructional Capacity (contact Bonnie Billingsley)",
+        "EDCI 5814: STEM Education Pedagogy",
+        "EDCI 6034: Education and Anthropology",
+        "EDCI 6054: Academic Writing for Qualitative Educational Research",
+        "PSYC 5344: Cognitive Psychology",
+        "PSYC 5534: Developmental Psychology",
+        "PSYC 5544: Cognitive Development",
+        "PSYC 5554: Social Development",
+        "GRAD 5104: Preparing for the Future Professoriate"
+      ],
+      [
+        "Concentration / Applied Studies",
+        "Research",
+        "Foundations",
+        "Cognate",
+        "EDEP 5114: Learning and Cognition",
+        "EDEP 5184: Sociocultural Influences on Learning and Instruction",
+        "EDEP 6114: Cognitive Processes",
+        "EDEP 6224: Constructivism and Education",
+        "EDEP 6444: Motivation and Cognition",
+        "EDEP 6644: College Teaching"
+      ],
+      [
+        "EDEP 5114: Learning and Cognition",
+        "EDEP 5184: Sociocultural Influences on Learning and Instruction",
+        "EDEP 6114: Cognitive Processes",
+        "EDEP 6224: Constructivism and Education",
+        "EDEP 6444: Motivation and Cognition",
+        "EDEP 6644: College Teaching"
+      ],
+      [
+        "Credit Hour(s):\u00a03",
+        "Lecture Hour(s):\u00a03",
+        "Level:\u00a0Graduate",
+        "Instruction Type(s):\u00a0Lecture, Online Lecture",
+        "Prerequisite(s):",
+        "Corequisite(s):"
+      ],
+      [
+        "Credit Hour(s):\u00a03",
+        "Lecture Hour(s):\u00a03",
+        "Level:\u00a0Graduate",
+        "Instruction Type(s):\u00a0Lecture, Online Lecture",
+        "Prerequisite(s):",
+        "Corequisite(s):"
+      ],
+      [
+        "Credit Hour(s):\u00a03",
+        "Lecture Hour(s):\u00a03",
+        "Level:\u00a0Graduate",
+        "Instruction Type(s):\u00a0Lecture, Online Lecture",
+        "Prerequisite(s):",
+        "Corequisite(s):"
+      ],
+      [
+        "Credit Hour(s):\u00a03",
+        "Lecture Hour(s):\u00a03",
+        "Level:\u00a0Graduate",
+        "Instruction Type(s):\u00a0Lecture, Online Lecture",
+        "Prerequisite(s):",
+        "Corequisite(s):"
+      ],
+      [
+        "Credit Hour(s):\u00a03",
+        "Lecture Hour(s):\u00a03",
+        "Level:\u00a0Graduate",
+        "Instruction Type(s):\u00a0Lecture, Online Lecture",
+        "Prerequisite(s):",
+        "Corequisite(s):"
+      ],
+      [
+        "Credit Hour(s):\u00a03",
+        "Lecture Hour(s):\u00a03",
+        "Level:\u00a0Graduate",
+        "Instruction Type(s):\u00a0Lecture, Online Lecture",
+        "Prerequisite(s):",
+        "Corequisite(s):"
+      ],
+      [
+        "Brett Jones, Professor and Program Leader",
+        "Peter Doolittle, Professor",
+        "Marcus Johnson, Professor"
+      ]
+    ],
+    "https://ehe.osu.edu/graduate/educational-psychology": [
+      [
+        "Image\n \n\n\n\n\n\n\nLaura Justice\nCCEC Executive Director; EHE Distinguished Professor\njustice.57@osu.edu",
+        "Image\n \n\n\n\n\n\n\nEric Anderman\nProfessor\nanderman.1@osu.edu",
+        "Image\n \n\n\n\n\n\n\nMichael Glassman\n\u202fProfessor\nglassman.13@osu.edu",
+        "Image\n \n\n\n\n\n\n\nTzu-Jung Lin\nProfessor\nlin.1653@osu.edu",
+        "Image\n \n\n\n\n\n\n\nChristopher Wolters\nProfessor\nwolters.21@osu.edu",
+        "Image\n \n\n\n\n\n\n\nShirley L. Yu\nAssociate Professor\nyu.1349@osu.edu"
+      ],
+      [
+        "Image",
+        "Laura Justice",
+        "CCEC Executive Director; EHE Distinguished Professor",
+        "justice.57@osu.edu"
+      ],
+      [
+        "Image",
+        "Jerome D'Agostino",
+        "Professor, Section Head for Educational Psychology and QREM",
+        "dagostino.22@osu.edu"
+      ],
+      [
+        "Image",
+        "Eric Anderman",
+        "Professor",
+        "anderman.1@osu.edu"
+      ],
+      [
+        "Image",
+        "Michael Glassman",
+        "Professor",
+        "glassman.13@osu.edu"
+      ],
+      [
+        "Image",
+        "Tzu-Jung Lin",
+        "Professor",
+        "lin.1653@osu.edu"
+      ],
+      [
+        "Image",
+        "Christopher Wolters",
+        "Professor",
+        "wolters.21@osu.edu"
+      ],
+      [
+        "Image",
+        "Shirley L. Yu",
+        "Associate Professor",
+        "yu.1349@osu.edu"
+      ]
+    ],
+    "https://registrar.fsu.edu/bulletin/graduate-departments/educational-psychology-and-learning-systems": [
+      [
+        "General Bulletins",
+        "Graduate Departments",
+        "Graduate Department of Educational Psychology and Learning Systems"
+      ],
+      [
+        "Educational Psychology\n\nLearning and Cognition M, S, D\nSport Psychology M, D",
+        "Learning and Cognition M, S, D",
+        "Sport Psychology M, D",
+        "Instructional Systems and Learning Technologies M, S, D",
+        "Learning Design and Performance Technology D",
+        "Measurement and Statistics M, S, D",
+        "Combined Program in Counseling Psychology and School Psychology D",
+        "Career Counseling M/S",
+        "Clinical-Mental Health Counseling M/S",
+        "School Counseling M/S",
+        "School Psychology M/S",
+        "Certificate in College Teaching",
+        "Certificate in Human Performance Technology",
+        "Certificate in Measurement and Statistics",
+        "Certificate in Instructional Design and Technology",
+        "Certificate in Online Teaching and Learning"
+      ],
+      [
+        "Career Counseling M/S",
+        "Clinical-Mental Health Counseling M/S",
+        "School Counseling M/S",
+        "School Psychology M/S"
+      ],
+      [
+        "A bachelor's degree from an accredited institution.",
+        "A statement of purpose explaining career goals and aspirations",
+        "A professional r\u00e9sum\u00e9"
+      ],
+      [
+        "Main navigation Pulldown",
+        "Main navigation Pulldown",
+        "2024-2025 GRADUATE BULLETIN",
+        "Graduate Department of\u00a0Educational Psychology and Learning Systems",
+        "Educational Psychology",
+        "Instructional Systems & Learning Technologies",
+        "Exam Policies",
+        "Measurement and Statistics",
+        "Counseling Psychology and Human Systems",
+        "Counseling and Human Systems",
+        "Admission Requirements",
+        "Definition of Prefixes",
+        "Graduate Courses",
+        "Looking for something else?"
+      ],
+      [
+        "Graduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "Undergraduate Bulletin",
+        "Policies & Information",
+        "Colleges",
+        "Departments & Programs",
+        "Bulletin PDF"
+      ],
+      [
+        "institutes/human",
+        "services",
+        "center"
+      ]
+    ],
+    "https://www.depts.ttu.edu/education/graduate/psychology-and-leadership/educational_psychology_phd.php": [
+      [
+        "Delivery: Face-to-Face or Hybrid",
+        "Hours to Completion: 91",
+        "Now accepting applications for: All Semesters",
+        "Maximum Transfer Hours: 30"
+      ],
+      [
+        "Program Overview",
+        "Standards",
+        "Degrees Offered",
+        "Career Opportunities With This Degree",
+        "Application Materials",
+        "Required Supplemental Application Materials",
+        "Application Process",
+        "GRE Scores",
+        "Semester in which the program can be started",
+        "Estimated Hours to Completion",
+        "Allowable Transfer Hours",
+        "Financial Aid",
+        "Deadlines",
+        "Tuition & Fees",
+        "Faculty",
+        "Texas Tech University"
+      ],
+      [
+        "campus or hybrid program, with some coursework offered online;",
+        "intensive sessions; and in summer",
+        "intensive sessions to accommodate working"
+      ]
+    ],
+    "https://www.tc.columbia.edu/counseling-and-clinical-psychology/clinical/degrees--requirements/psychology-in-education-general-track-ma/": [
+      [
+        "Child & Family (Bodnar)",
+        "Clinical Psychology & Technology (Nitzburg)",
+        "Community Psychology & Integrated Health Services (Rosa)",
+        "Forensic Psychology (Mantell)",
+        "Global Mental Health & Trauma (Verdeli & Bonnano)",
+        "Neuropsychology (Waxman)",
+        "Psychotherapy (Farber)",
+        "Research Methods (Richardson)",
+        "Sexuality, Women & Gender (Athan)",
+        "Spirituality & Mind/Body Practices (Miller)"
+      ],
+      [
+        "Secondary Navigation Main",
+        "Secondary Navigation More",
+        "M.A. Menu\r\n        \nToggle Tertiary Menu",
+        "Admission Information",
+        "Requirements from the TC Catalog (AY 2024-2025)",
+        "Resources",
+        "Legal"
+      ],
+      [
+        "Master of Arts",
+        "Application Deadlines",
+        "Application Requirements"
+      ],
+      [
+        "The Curriculum:",
+        "18 credits in Psychology in Education (within CCPX) 9 credits of Breadth (outside CCPX)",
+        "9 credits of Electives (Any graduate program at Columbia University)",
+        "Integrative Project (Independent research project)",
+        "The Integrative Project"
+      ],
+      [
+        "Entry Term Available",
+        "Spring",
+        "Summer"
+      ]
+    ],
+    "https://education.ua.edu/department/educational-studies-in-psychology-research-methodology-and-counseling/": [
+      [
+        "COUSELOR EDUCATION",
+        "EDUCATIONAL RESEARCH",
+        "SCHOOL PSYCHOLOGY",
+        "EDUCATIONAL PSYCHOLOGY",
+        "EDUCATIONAL NEUROSCIENCE"
+      ]
+    ],
+    "https://manoa.hawaii.edu/catalog/schools-colleges/education/edep/": [
+      [
+        "College of Education",
+        "Undergraduate Programs",
+        "Graduate Programs",
+        "Other Programs, Research Units, Student Organizations, and Honors and Scholarships",
+        "Curriculum Studies",
+        "Educational Administration",
+        "Educational Foundations",
+        "Educational Psychology",
+        "Kinesiology and Rehabilitation Science",
+        "Learning Design and Technology",
+        "Special Education",
+        "School of Teacher Education"
+      ],
+      [
+        "Faculty",
+        "The Academic Program",
+        "Graduate Study",
+        "2024-2025 General Catalog"
+      ]
+    ],
+    "https://catalog.memphis.edu/preview_program.php?catoid=9&poid=2172&returnto=219": [
+      [
+        "EDPR 8541\u00a0-\u00a0Stat Meth App Ed I **",
+        "EDPR 8542\u00a0-\u00a0Stat Meth App Ed II **",
+        "EDPR 8561\u00a0-\u00a0Qualitative Mthds Educ **",
+        "and at least 3 credits of supervised research (EDPR 8081\u00a0)"
+      ],
+      [
+        "EDPR 8121\u00a0-\u00a0Learning & Cognition",
+        "EDPR 8149\u00a0-\u00a0Sem Cognitive Processes",
+        "EDPR 8150\u00a0-\u00a0Motivation",
+        "EDPR 8151\u00a0-\u00a0Individual Differences"
+      ],
+      [
+        "EDPR 8112\u00a0-\u00a0Adol Psyc Appld Educ",
+        "EDPR 8113\u00a0-\u00a0Midlife/Adult Developmt",
+        "EDPR 8114\u00a0-\u00a0Psychology Of Aging",
+        "EDPR 8116\u00a0-\u00a0Chldhd Dvlpmnt in Digital Age",
+        "EDPR 8131\u00a0-\u00a0Cultural Diverse Stdnts",
+        "EDPR 8161\u00a0-\u00a0Moral Dvlpmnt & Educ"
+      ],
+      [
+        "Credit Hours:",
+        "Core Competency:",
+        "Core (24 credits):",
+        "Concentration in Educational Psychology or Educational Research (15 credits):",
+        "Electives to be taken outside of the major (3 credits)",
+        "Comprehensive Examination:",
+        "Dissertation and Final Defense (12 credits-EDPR 9000):"
+      ],
+      [
+        "Credit Hours:A minimum of 54 hours of graduate credit beyond the master\u2019s degree.",
+        "Core (24 credits):",
+        "Electives to be taken outside of the major (3 credits)"
+      ]
+    ],
+    "https://ed-psych.utah.edu/grad-programs/reading-literacy-med/course/": [
+      [
+        "Department of Educational Psychology",
+        "Main Navigation",
+        "Main Menu",
+        "Coursework",
+        "Educational Psychology",
+        "Resources",
+        "Quick Links"
+      ],
+      [
+        "Click here for a projected course offering.",
+        "Required Core Courses (30 credits)",
+        "ED PS 6712 Understanding Educational Research in Literacy",
+        "ED PS 6714 Comprehension Theory & Instruction",
+        "ED PS 6631 Assessment & Intervention of Reading Difficulties",
+        "ED PS 6711 Foundations of Literacy",
+        "ED PS 6126 Content Area Literacy",
+        "ED PS 6713 Literacy Acquisition Theory & Instruction",
+        "ED PS 6124 Children\u2019s and Young Adult Literature in the Schools",
+        "ED PS 6130 Writing Theory & Instruction",
+        "ED PS 6840 Vocabulary Theory & Instruction",
+        "ED PS 6728 Literacy Education Comprehensive Review and Exam Preparation",
+        "Elective Course (3 credits):",
+        "Suggested Electives through the EDPS Department:",
+        "ED PS 6950 Special Topics Summer Seminars (3 credits)",
+        "ED PS 6718 Language and Literacy Development of Young Children (3 credits)",
+        "ED PS 6300 Introduction to Measurement (3 credits)",
+        "ED PS 6010 Introduction to Educational Statistics (3 credits)",
+        "Suggested Electives through the University of Utah Reading Clinic (UURC):",
+        "EDU 6853-040 Tier II Reading Intervention Next Steps Small Group (3 credits)",
+        "Suggested Electives through other College of Education Departments:",
+        "SPED 6610 Introduction to Research Design (3 credits)",
+        "Offered during most Summer semesters.",
+        "ELP 6250 Leadership for School Improvement (3 credits)",
+        "Offered during most semesters.",
+        "ELP 6110 Evidence-Based Decision Making",
+        "Offered most Spring semesters.",
+        "COMPREHENSIVE EXAM",
+        "Course Sequencing",
+        "COURSE SCHEDULE",
+        "Sample Schedule 1: Starting at Odd Year",
+        "Sample Schedule 2: Starting at Even Year"
+      ],
+      [
+        "Spring",
+        "Summer",
+        "Spring",
+        "Summer"
+      ],
+      [
+        "Spring",
+        "Summer",
+        "Spring",
+        "Summer"
+      ]
+    ],
+    "https://www.albany.edu/education/programs/phd-educational-psychology": [
+      [
+        "Development",
+        "Learning",
+        "Individual Differences and Special Education",
+        "Research Methods",
+        "Measurement and Evaluation",
+        "Statistics"
+      ],
+      [
+        "Advanced Educational Psychology: Learning and Instruction",
+        "Advanced Developmental Psychology",
+        "Statistical Methods II",
+        "Educational and Psychological Measurement",
+        "Educational Research and Design",
+        "Scholarly Writing"
+      ],
+      [
+        "Transcripts\u00a0from all schools attended",
+        "Three letters of recommendation",
+        "Statement of goals",
+        "Optional: Official GRE scores"
+      ],
+      [
+        "Departmental Assistantship Consideration",
+        "Fall: January 15\nSpring: Not Available\nSummer: Not Available",
+        "No Departmental Assistantship Consideration",
+        "Fall: January 15\nSpring: Not Available\nSummer: Not Available"
+      ],
+      [
+        "Africana Studies CGS",
+        "Community College Leadership CGS",
+        "Demography CGS",
+        "Educational Psychology and Methodology MS",
+        "Educational Research CAS",
+        "International Education Management CGS"
+      ]
+    ],
+    "https://www.bsu.edu/academics/collegesanddepartments/online/academic-programs/masters/mainedpsych": [
+      [
+        "Social Sciences",
+        "Health and Wellness",
+        "Education",
+        "Master's",
+        "Online",
+        "Teachers College"
+      ],
+      [
+        "Delivery: 100% Online",
+        "Major Credits: 30",
+        "Four specializations and customizable option",
+        "No GRE Required",
+        "Nationally ranked by U.S. News"
+      ],
+      [
+        "EDPS 603 Psychology of Human Development (3 credits)",
+        "EDPS 627 Child Development (3 credits)",
+        "EDPS 628 Adolescent Development (3 credits)",
+        "EDPS 629 Adult Development and Aging (3 credits)"
+      ],
+      [
+        "Applied Behavior Analysis",
+        "Gifted and Talented",
+        "Human Development",
+        "Institutional Research",
+        "Neuropsychology for Teaching and Learning",
+        "Customizable Specialization"
+      ],
+      [
+        "SPCE 600 Education of Exceptional Children (3 credits)",
+        "SPCE 604 Applied Behavior Analysis for Teachers (3 credits)",
+        "SPCE 609 Introduction to Applied Behavior Analysis (3 credits)",
+        "SPCE 610 Behavior Consultation (3 credits)",
+        "SPCE 611 Advanced Applied Behavior Analysis (3 credits)",
+        "SPCE 619 Ethics in Behavior Analysis (3 credits)",
+        "SPCE 630 Research Methods for Behavior Analysis (3 credits)",
+        "SPCE 632 Introduction to Emotional and Behavioral Disorders (3 credits)",
+        "SPCE 634 Educating Students with Emotional and Behavioral Disorders (3 credits)",
+        "SPCE 635 Advanced Studies in Emotional and Behavioral Disorders (3 credits) ."
+      ],
+      [
+        "EDPS 604 Social and Emotional Development (3 credits)",
+        "EDPS 607 Global Perspectives on Child Development (3 credits)",
+        "EDPS 627 Child Development (3 credits)",
+        "EDPS 628 Adolescent Development (3 credits)",
+        "EDPS 629 Adult Development and Aging (3 credits)"
+      ],
+      [
+        "EDHI 610 Issues in Higher Education (3 credits)",
+        "EDST 650 Introduction to Qualitative Research (3 credits)",
+        "EDPS 642 Analysis of Variance (3 credits)",
+        "EDPS 644 Coding and Analyzing Qualitative Data (3 credits)",
+        "EDPS 741 Applied Regression Analysis (3 credits)"
+      ],
+      [
+        "the basics of brain-behavior relationships",
+        "the neurobiology of language acquisition and development",
+        "advanced topics in neurological disorders and brain dysfunction",
+        "common brain disorders in adults and children"
+      ],
+      [
+        "EDPS 655 Child Neurodevelopment (3 credits) \u2013 offered in the Spring",
+        "EDPS 665 Concepts of Developmental Psycholinguistics (3 credits) \u2013 offered in the Summer",
+        "EDPS 753 Advanced Topics in Neuropsychology (3 credits) \u2013 offered in the Summer"
+      ],
+      [
+        "EDPS 604 EDPS 604 Social and Emotional Development (3 credits)",
+        "EDPS 607 Global Perspectives on Child Development (3 credits)",
+        "EDPS 627 Child Development (3 credits)",
+        "EDPS 628 Adolescent Development (3 credits)",
+        "EDPS 629 Adult Development and Aging (3 credits)"
+      ],
+      [
+        "EDAC 631 Adult and Community Education",
+        "EDAC 655 Continuing Education for Professionals",
+        "EDPS 629 Adult Development and Aging"
+      ],
+      [
+        "EDMU 660 Multicultural and Multiethnic Education in American Schools",
+        "EDMU 670 Social and Cultural Minorities in American Education",
+        "EDHI 612 Women, Gender, and Education"
+      ],
+      [
+        "ECFY 630 School, Family, and Community Partnerships",
+        "ECFY 640 Introduction to Early Childhood Education",
+        "ECFY 651 Educational Programs for Young Children"
+      ],
+      [
+        "EDPS 520: Introduction to the G/T Child",
+        "EDPS 611: Development of Creative Thinking",
+        "EDPS 621: Identification & Evaluation of G/T Children",
+        "EDPS 623: Investigating the Social & Emotional Needs of Gifted Students",
+        "EDPS 625: Models and Strategies for Gifted Learners",
+        "EDPS 627: Child Development",
+        "EDPS 628: Adolescent Development",
+        "EDPS 629: Adult Development",
+        "EDPS 642: Intermediate Statistics",
+        "EDPS 649: Fundamentals of Neuropsychology",
+        "EDPS 649 Fundamentals of Neuropsychology",
+        "EDPS 649 Fundamentals of Neuropsychology",
+        "EDPS 649 Fundamentals of Neuropsychology",
+        "EDPS 655: Child Neurodevelopment",
+        "EDPS 665: Concepts of Developmental Psycholinguistics",
+        "EDPS 753: Advanced Topics in Neuropsychology",
+        "EDPS 740: Categorical Data Analysis",
+        "EDPS 741: Applied Regression Analysis for the Social Sciences",
+        "EDPS 742: Multivariate Statistical Techniques",
+        "EDPS 743: Introduction to Factor Analysis",
+        "EDPS 744: Seminar in Research Methodology",
+        "EDPS 746: Theory of Measurement"
+      ],
+      [
+        "EDEL 655 Principles of Differentiation in the Elementary Classroom",
+        "EDRD 610 The Teaching of Reading in the Elementary School",
+        "EDPS 627 Child Development"
+      ],
+      [
+        "EDPS 629 Adult Development and Aging",
+        "EDPS 790 Practicum in Educational Psychology",
+        "EDST 671 Evaluation of Educational Programs",
+        "EDST 697 The Grant Process and Research"
+      ],
+      [
+        "EDCU 630 The Junior High and Middle School Curriculum",
+        "EDJH 512 Instructional Strategies and Approaches to in Junior High and Middle Schools",
+        "EDJH 534 Classroom Management: Practical Approaches to Improving Student Behavior",
+        "EDPS 627 Child Development",
+        "EDCU 620 The Secondary School Cur",
+        "EDSE 695 Dynamics of the Secondary School Classroom"
+      ],
+      [
+        "SPCE 600: Education of Exceptional Children",
+        "SPCE 609 Introduction to Applied Behavior Analysis",
+        "SPCE 610 Behavior Consultation",
+        "SPCE 611 Advanced Applied Behavior Analysis",
+        "SPCE 619 Ethics in Behavior Analysis",
+        "SPCE 680 Introduction to Persons with Autism Spectrum Disorders",
+        "SPCE 682 Interventions and Treatments for Persons with Autism",
+        "SPCE 683 Field-Based Experience in Autism",
+        "SPCE 689 Verbal Behavior"
+      ],
+      [
+        "Federal Employees Pay In-State Tuition",
+        "Electives and Specializations (12 Credits)",
+        "Federal Employees Pay In-State Tuition",
+        "How Online Learning Works",
+        "Tuition and Fees",
+        "Funding Your Education",
+        "Students from Other States"
+      ],
+      [
+        "Quick Facts",
+        "Not a License Program",
+        "Learning and Motivation (Two Courses)",
+        "Research and Statistics (Two Courses)",
+        "Human Development (Choose one course)",
+        "Applied Behavior Analysis Specialization (12 credits)",
+        "Gifted and Talented Specialization (12 credits)",
+        "Human Development Specialization (12 credits)",
+        "Neuropsychology for Teaching and Learning Specialization (12 credits)"
+      ],
+      [
+        "This 12-credit, all-online, graduate-level certificate program covers:",
+        "Neuropsychology for Teaching and Learning Specialization (3 credits):",
+        "Electives (choose a 9-credit course from below):",
+        "Choose Two Courses:",
+        "Choose One Course:",
+        "The course sequence takes three semesters and one summer to complete."
+      ],
+      [
+        "How Online Learning Works",
+        "Tuition and Fees",
+        "Funding Your Education"
+      ],
+      [
+        "Online Master of Science in Health Science",
+        "Master of Arts in Education in Elementary Education | Online",
+        "Master's in Educational Administration and Supervision | Online",
+        "Find more..."
+      ],
+      [
+        "credit, all",
+        "online, graduate",
+        "level certificate program covers:"
+      ]
+    ],
+    "https://catalog.utk.edu/preview_program.php?catoid=33&poid=16101": [
+      [
+        "Admission to the Concentration will be based on",
+        "GRE scores,",
+        "grade point average at all collegiate levels,",
+        "statement of career goals, and",
+        "professional references.",
+        "Admission to the Concentration will be based on",
+        "Grade point average at all collegiate levels",
+        "Statement of career goals",
+        "Letter of introduction and curriculum vita",
+        "At least 2 professional references",
+        "GRE scores"
+      ],
+      [
+        "Admission to the Concentration will be based on",
+        "GRE scores,",
+        "grade point average at all collegiate levels,",
+        "statement of career goals, and",
+        "professional references."
+      ],
+      [
+        "Admission to the Concentration will be based on",
+        "Grade point average at all collegiate levels",
+        "Statement of career goals",
+        "Letter of introduction and curriculum vita",
+        "At least 2 professional references",
+        "GRE scores"
+      ],
+      [
+        "EDPY 520",
+        "EDPY 521",
+        "EDPY 522",
+        "EDPY 523",
+        "EDPY 525",
+        "EDPY 529",
+        "EDPY 539",
+        "Advanced Core Courses (13 credit hours)\r\n\t\n EDPY 601\u00a0\u00a0\n EDPY 625\u00a0\u00a0\n EDPY 622\u00a0\u00a0\n EDPY 630",
+        "EDPY 601",
+        "EDPY 625",
+        "EDPY 622",
+        "EDPY 630",
+        "Dissertation (24 credit hours)\r\n\t\nEDPY 600\u00a0\u200b\u200b\u200b",
+        "EDPY 600\u00a0\u200b\u200b\u200b"
+      ],
+      [
+        "EDPY 520",
+        "EDPY 521",
+        "EDPY 522",
+        "EDPY 523",
+        "EDPY 525",
+        "EDPY 529",
+        "EDPY 539"
+      ],
+      [
+        "EDPY 601",
+        "EDPY 625",
+        "EDPY 622",
+        "EDPY 630"
+      ],
+      [
+        "EDPY 601\u00a0\u00a0(1 credit hour)",
+        "EDPY 655\u00a0\u00a0(5 credit hours)",
+        "EDPY 668\u00a0\u00a0(3 credit hours)",
+        "EDPY 517",
+        "EDPY 515",
+        "EDPY 636",
+        "EDPY 516",
+        "LEES 671",
+        "LEES 604",
+        "CSE 607",
+        "Must Complete the following two research courses\r\n\t\t\n EDPY 682\u00a0\u00a0\n EDPY 559",
+        "EDPY 682",
+        "EDPY 559",
+        "EDPY 577",
+        "EDPY 677",
+        "EDPY 678",
+        "EDPY 505\u00a0*",
+        "SPED 603\u00a0*",
+        "Dissertation (24 credit hours)"
+      ],
+      [
+        "EDPY 601\u00a0\u00a0(1 credit hour)",
+        "EDPY 655\u00a0\u00a0(5 credit hours)",
+        "EDPY 668\u00a0\u00a0(3 credit hours)"
+      ],
+      [
+        "EDPY 517",
+        "EDPY 515",
+        "EDPY 636",
+        "EDPY 516",
+        "LEES 671",
+        "LEES 604",
+        "CSE 607"
+      ],
+      [
+        "Must Complete the following two research courses\r\n\t\t\n EDPY 682\u00a0\u00a0\n EDPY 559",
+        "EDPY 682",
+        "EDPY 559",
+        "EDPY 577",
+        "EDPY 677",
+        "EDPY 678",
+        "EDPY 505\u00a0*",
+        "SPED 603\u00a0*"
+      ],
+      [
+        "EDPY 577",
+        "EDPY 677",
+        "EDPY 678",
+        "EDPY 505\u00a0*",
+        "SPED 603\u00a0*"
+      ],
+      [
+        "ESM Core (15 credit hours)\r\n\t\n EDPY 533\u00a0\u00a0\n EDPY 534\u00a0\u00a0\n EDPY 577\u00a0\u00a0\n EDPY 677\u00a0\u00a0\n EDPY 581",
+        "EDPY 533",
+        "EDPY 534",
+        "EDPY 577",
+        "EDPY 677",
+        "EDPY 581",
+        "Advanced ESM Core (12 credit hours)\r\n\t\n EDPY 651\u00a0\u00a0\n EDPY 678\u00a0\u00a0\n EDPY 680\u00a0\u00a0\n EDPY 667",
+        "EDPY 651",
+        "EDPY 678",
+        "EDPY 680",
+        "EDPY 667",
+        "EDPY 583",
+        "EDPY 559",
+        "EDPY 682",
+        "6 credit hours of approved research electives selected in consultation with the major advisor",
+        "Applied Professional Experience (15 credit hours)\r\n\t\nEDPY 601\u00a0\u00a0\nEDPY 660\u00a0\u00a0\nEDPY 670",
+        "EDPY 601",
+        "EDPY 660",
+        "EDPY 670",
+        "Electives (9 credit hours) selected in consultation with the major advisor"
+      ],
+      [
+        "EDPY 533",
+        "EDPY 534",
+        "EDPY 577",
+        "EDPY 677",
+        "EDPY 581"
+      ],
+      [
+        "EDPY 651",
+        "EDPY 678",
+        "EDPY 680",
+        "EDPY 667"
+      ],
+      [
+        "EDPY 583",
+        "EDPY 559",
+        "EDPY 682",
+        "6 credit hours of approved research electives selected in consultation with the major advisor"
+      ],
+      [
+        "EDPY 601",
+        "EDPY 660",
+        "EDPY 670"
+      ],
+      [
+        "Credit Hours Required",
+        "Required Courses",
+        "Additional Course Requirements",
+        "Non-Course Requirements",
+        "Credit Hours Required",
+        "Required Courses",
+        "Non-Course Requirements",
+        "Credit Hours Required",
+        "Required Courses",
+        "Non-Course Requirements"
+      ],
+      [
+        "Adult Learning",
+        "Applied Educational Psychology",
+        "Evaluation, Statistics, and Methodology",
+        "Knoxville Campus",
+        "85 graduate credit hours",
+        "72 graduate credit hours beyond a master\u2019s degree",
+        "EDPY 600",
+        "Minimum of 90 graduate credit hours beyond the baccalaureate degree"
+      ]
+    ],
+    "https://education.ucr.edu/masters/educational-psychology": [
+      [
+        "Start Term: Fall only",
+        "Program Length: Approximately 1-2 years, can be earned at your own pace",
+        "Units: 36-unit minimum/9 classes",
+        "Instruction: In-person on Riverside campus.",
+        "Schedule: Each class meets once a week 4-7pm (Monday-Thursday)"
+      ],
+      [
+        "Cognition",
+        "Quantitative methods",
+        "STEM teaching and learning",
+        "Teacher and school evaluation and improvement"
+      ],
+      [
+        "Educational Researcher",
+        "University Professor",
+        "Educational Psychologist",
+        "School Improvement Facilitator",
+        "Science Content Specialist",
+        "Assessment Technician"
+      ]
+    ],
+    "https://academicbulletins.sc.edu/graduate/education/educational-developmental-science/educational-psychology-research-phd/": [
+      [
+        "2025-2026 Edition",
+        "Program Description",
+        "Learning Outcomes",
+        "Admission",
+        "Degree Requirements (60 Hours)",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools",
+        "Print Options"
+      ],
+      [
+        "Minimum hours required:",
+        "A grade of B or higher is required for core courses.",
+        "9 hours of related electives as approved by advisor and program of study committee.",
+        "Students are required to enroll in EDRM\u00a0899 while working on the dissertation."
+      ],
+      [
+        "Course",
+        "EDPY\u00a0704",
+        "EDRM\u00a0710",
+        "EDRM\u00a0711",
+        "EDRM\u00a0718",
+        "EDRM\u00a0728",
+        "Total Credit Hours"
+      ],
+      [
+        "Course",
+        "EDPY\u00a0741",
+        "EDPY\u00a0751",
+        "EDPY\u00a0752",
+        "EDPY\u00a0785",
+        "Select two of the following:",
+        "EDPY\u00a0705",
+        "EDPY\u00a0706",
+        "EDPY\u00a0707",
+        "EDPY\u00a0708",
+        "Total Credit Hours"
+      ],
+      [
+        "Course",
+        "EDRM\u00a0712",
+        "EDRM\u00a0789",
+        "EDRM\u00a0810",
+        "EDRM\u00a0812",
+        "EDRM\u00a0816",
+        "EDRM\u00a0828",
+        "Total Credit Hours"
+      ],
+      [
+        "Course",
+        "Select 6 hours from the following:",
+        "EDPY\u00a0805",
+        "EDPY\u00a0835",
+        "EDPY\u00a0873",
+        "EDRM\u00a0889",
+        "EDRM\u00a0878",
+        "Total Credit Hours"
+      ],
+      [
+        "Course",
+        "Measurement Focus- 9 hours from:",
+        "EDRM\u00a0723",
+        "EDRM\u00a0724",
+        "EDRM\u00a0789",
+        "EDRM\u00a0828",
+        "Quantitative Focus- 9 hours from:",
+        "EDRM\u00a0712",
+        "EDRM\u00a0810",
+        "EDRM\u00a0812",
+        "EDRM\u00a0816",
+        "Qualitative Focus- 9 hours from:",
+        "EDFI\u00a0731",
+        "EDFI\u00a0833",
+        "EDRM\u00a0715",
+        "Total Credit Hours"
+      ],
+      [
+        "Course",
+        "Educational Research students are encouraged to take EDPY/EDRM electives selected from:",
+        "EDPY\u00a0705",
+        "EDPY\u00a0706",
+        "EDPY\u00a0707",
+        "EDPY\u00a0708",
+        "EDPY\u00a0741",
+        "EDPY\u00a0751",
+        "EDPY\u00a0752",
+        "EDPY\u00a0785",
+        "EDPY\u00a0805",
+        "EDPY\u00a0835",
+        "EDPY\u00a0873",
+        "EDRM\u00a0715",
+        "EDRM\u00a0889",
+        "EDRM\u00a0878"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 18:42:15"
+}

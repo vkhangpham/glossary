@@ -1,0 +1,1314 @@
+{
+  "level1_term": "software engineering",
+  "url_verification_status": {
+    "https://se-phd.isri.cmu.edu/Student%20Resources/curriculum.html": true,
+    "https://se-phd.isri.cmu.edu/research/index.html": true,
+    "https://drexel.edu/cci/research/research-areas/programming-systems-and-software-engineering/": true,
+    "https://lcsee.statler.wvu.edu/research": true,
+    "https://cse.ucsd.edu/research": true,
+    "https://cs.utdallas.edu/research/research-areas/": true,
+    "https://engineering.nyu.edu/academics/departments/computer-science-and-engineering": false,
+    "https://www.cs.usc.edu/research/research-areas-labs/": true,
+    "https://www.eecs.mit.edu/research/computer-science/": true,
+    "https://scai.engineering.asu.edu/graduate-program-software-engineering/": true,
+    "https://www.rit.edu/study/software-engineering-ms": false,
+    "https://www.sjsu.edu/cmpe/index.php": true,
+    "https://egr.vcu.edu/departments/computer/": true,
+    "https://engineering.ucsc.edu/departments/computer-science-and-engineering/": true,
+    "https://engineering.vanderbilt.edu/departments/computer-science/": true,
+    "https://cse.umn.edu/cs/research-areas": true,
+    "https://www.uwb.edu/stem/graduate/mscsse": false,
+    "https://www.cs.washington.edu/academics/undergraduate/career-resources/cs-teaching/": false,
+    "https://engineering.buffalo.edu/computer-science-engineering.html": false,
+    "https://computerscience.uchicago.edu/": true,
+    "https://www.scu.edu/engineering/academic-programs/department-of-computer-engineering/": true,
+    "https://www.cs.purdue.edu/research/index.html": true,
+    "https://engineering.msu.edu/about/departments/cse/research": true,
+    "https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science": true,
+    "https://ece.duke.edu/academics/masters/study-tracks/": true,
+    "https://www.slu.edu/science-and-engineering/academics/graduate-programs/software-engineering-ms.php": false,
+    "https://www.sjsu.edu/cs/faculty/research.php": true,
+    "https://wwwcp.umes.edu/cset/": true,
+    "https://engineering.tufts.edu/departments/computer-science": true,
+    "https://www.wlu.edu/computer-science-department": false,
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": true,
+    "https://www.millersville.edu/computerscience/": false
+  },
+  "verified_lists_per_url": {
+    "https://se-phd.isri.cmu.edu/Student%20Resources/curriculum.html": 5,
+    "https://se-phd.isri.cmu.edu/research/index.html": 1,
+    "https://drexel.edu/cci/research/research-areas/programming-systems-and-software-engineering/": 1,
+    "https://lcsee.statler.wvu.edu/research": 2,
+    "https://cse.ucsd.edu/research": 1,
+    "https://cs.utdallas.edu/research/research-areas/": 2,
+    "https://engineering.nyu.edu/academics/departments/computer-science-and-engineering": 0,
+    "https://www.cs.usc.edu/research/research-areas-labs/": 3,
+    "https://www.eecs.mit.edu/research/computer-science/": 2,
+    "https://scai.engineering.asu.edu/graduate-program-software-engineering/": 1,
+    "https://www.rit.edu/study/software-engineering-ms": 0,
+    "https://www.sjsu.edu/cmpe/index.php": 3,
+    "https://egr.vcu.edu/departments/computer/": 2,
+    "https://engineering.ucsc.edu/departments/computer-science-and-engineering/": 1,
+    "https://engineering.vanderbilt.edu/departments/computer-science/": 1,
+    "https://cse.umn.edu/cs/research-areas": 1,
+    "https://www.uwb.edu/stem/graduate/mscsse": 0,
+    "https://www.cs.washington.edu/academics/undergraduate/career-resources/cs-teaching/": 0,
+    "https://engineering.buffalo.edu/computer-science-engineering.html": 0,
+    "https://computerscience.uchicago.edu/": 1,
+    "https://www.scu.edu/engineering/academic-programs/department-of-computer-engineering/": 1,
+    "https://www.cs.purdue.edu/research/index.html": 3,
+    "https://engineering.msu.edu/about/departments/cse/research": 1,
+    "https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science": 3,
+    "https://ece.duke.edu/academics/masters/study-tracks/": 1,
+    "https://www.slu.edu/science-and-engineering/academics/graduate-programs/software-engineering-ms.php": 0,
+    "https://www.sjsu.edu/cs/faculty/research.php": 2,
+    "https://wwwcp.umes.edu/cset/": 1,
+    "https://engineering.tufts.edu/departments/computer-science": 1,
+    "https://www.wlu.edu/computer-science-department": 0,
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": 8,
+    "https://www.millersville.edu/computerscience/": 0
+  },
+  "total_lists_per_url": {
+    "https://se-phd.isri.cmu.edu/Student%20Resources/curriculum.html": 8,
+    "https://se-phd.isri.cmu.edu/research/index.html": 3,
+    "https://drexel.edu/cci/research/research-areas/programming-systems-and-software-engineering/": 1,
+    "https://lcsee.statler.wvu.edu/research": 13,
+    "https://cse.ucsd.edu/research": 1,
+    "https://cs.utdallas.edu/research/research-areas/": 4,
+    "https://engineering.nyu.edu/academics/departments/computer-science-and-engineering": 2,
+    "https://www.cs.usc.edu/research/research-areas-labs/": 3,
+    "https://www.eecs.mit.edu/research/computer-science/": 3,
+    "https://scai.engineering.asu.edu/graduate-program-software-engineering/": 4,
+    "https://www.rit.edu/study/software-engineering-ms": 2,
+    "https://www.sjsu.edu/cmpe/index.php": 6,
+    "https://egr.vcu.edu/departments/computer/": 3,
+    "https://engineering.ucsc.edu/departments/computer-science-and-engineering/": 1,
+    "https://engineering.vanderbilt.edu/departments/computer-science/": 3,
+    "https://cse.umn.edu/cs/research-areas": 1,
+    "https://www.uwb.edu/stem/graduate/mscsse": 1,
+    "https://www.cs.washington.edu/academics/undergraduate/career-resources/cs-teaching/": 5,
+    "https://engineering.buffalo.edu/computer-science-engineering.html": 1,
+    "https://computerscience.uchicago.edu/": 1,
+    "https://www.scu.edu/engineering/academic-programs/department-of-computer-engineering/": 2,
+    "https://www.cs.purdue.edu/research/index.html": 3,
+    "https://engineering.msu.edu/about/departments/cse/research": 1,
+    "https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science": 4,
+    "https://ece.duke.edu/academics/masters/study-tracks/": 1,
+    "https://www.slu.edu/science-and-engineering/academics/graduate-programs/software-engineering-ms.php": 5,
+    "https://www.sjsu.edu/cs/faculty/research.php": 3,
+    "https://wwwcp.umes.edu/cset/": 1,
+    "https://engineering.tufts.edu/departments/computer-science": 1,
+    "https://www.wlu.edu/computer-science-department": 2,
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": 28,
+    "https://www.millersville.edu/computerscience/": 5
+  },
+  "verified_lists_ids": {
+    "https://se-phd.isri.cmu.edu/Student%20Resources/curriculum.html": [
+      0,
+      4,
+      5,
+      6,
+      7
+    ],
+    "https://se-phd.isri.cmu.edu/research/index.html": [
+      1
+    ],
+    "https://drexel.edu/cci/research/research-areas/programming-systems-and-software-engineering/": [
+      0
+    ],
+    "https://lcsee.statler.wvu.edu/research": [
+      11,
+      12
+    ],
+    "https://cse.ucsd.edu/research": [
+      0
+    ],
+    "https://cs.utdallas.edu/research/research-areas/": [
+      0,
+      3
+    ],
+    "https://engineering.nyu.edu/academics/departments/computer-science-and-engineering": [],
+    "https://www.cs.usc.edu/research/research-areas-labs/": [
+      0,
+      1,
+      2
+    ],
+    "https://www.eecs.mit.edu/research/computer-science/": [
+      0,
+      2
+    ],
+    "https://scai.engineering.asu.edu/graduate-program-software-engineering/": [
+      2
+    ],
+    "https://www.rit.edu/study/software-engineering-ms": [],
+    "https://www.sjsu.edu/cmpe/index.php": [
+      1,
+      3,
+      5
+    ],
+    "https://egr.vcu.edu/departments/computer/": [
+      0,
+      1
+    ],
+    "https://engineering.ucsc.edu/departments/computer-science-and-engineering/": [
+      0
+    ],
+    "https://engineering.vanderbilt.edu/departments/computer-science/": [
+      0
+    ],
+    "https://cse.umn.edu/cs/research-areas": [
+      0
+    ],
+    "https://www.uwb.edu/stem/graduate/mscsse": [],
+    "https://www.cs.washington.edu/academics/undergraduate/career-resources/cs-teaching/": [],
+    "https://engineering.buffalo.edu/computer-science-engineering.html": [],
+    "https://computerscience.uchicago.edu/": [
+      0
+    ],
+    "https://www.scu.edu/engineering/academic-programs/department-of-computer-engineering/": [
+      0
+    ],
+    "https://www.cs.purdue.edu/research/index.html": [
+      0,
+      1,
+      2
+    ],
+    "https://engineering.msu.edu/about/departments/cse/research": [
+      0
+    ],
+    "https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science": [
+      0,
+      2,
+      3
+    ],
+    "https://ece.duke.edu/academics/masters/study-tracks/": [
+      0
+    ],
+    "https://www.slu.edu/science-and-engineering/academics/graduate-programs/software-engineering-ms.php": [],
+    "https://www.sjsu.edu/cs/faculty/research.php": [
+      0,
+      1
+    ],
+    "https://wwwcp.umes.edu/cset/": [
+      0
+    ],
+    "https://engineering.tufts.edu/departments/computer-science": [
+      0
+    ],
+    "https://www.wlu.edu/computer-science-department": [],
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": [
+      0,
+      2,
+      5,
+      6,
+      20,
+      21,
+      25,
+      26
+    ],
+    "https://www.millersville.edu/computerscience/": []
+  },
+  "num_urls": 40,
+  "num_lists": 122,
+  "url_to_lists": {
+    "https://se-phd.isri.cmu.edu/Student%20Resources/curriculum.html": [
+      [
+        "SYM: Symbolic mathematical modeling and analysis",
+        "BEH: Human-focused empirical research",
+        "ENG: Design and engineering of software systems",
+        "SOC: The interaction of software with larger issues in society, business, or public policy."
+      ],
+      [
+        "10-701 Machine Learning (Ph.D.-level)",
+        "11-727 Computational Semantics for NLP",
+        "15-811 Verifying Complex Systems",
+        "15-812 Programming Language Semantics",
+        "15-814 Type Systems for Programming Languages",
+        "17-819 Program Analysis",
+        "17-751 Models of Software Systems",
+        "80-610 Formal Logic"
+      ],
+      [
+        "10-701 Machine Learning (Ph.D.-level)",
+        "11-727 Computational Semantics for NLP",
+        "15-811 Verifying Complex Systems",
+        "15-812 Programming Language Semantics",
+        "15-814 Type Systems for Programming Languages",
+        "17-819 Program Analysis",
+        "17-751 Models of Software Systems",
+        "80-610 Formal Logic"
+      ],
+      [
+        "10-701 Machine Learning (Ph.D.-level)",
+        "11-727 Computational Semantics for NLP",
+        "15-811 Verifying Complex Systems",
+        "15-812 Programming Language Semantics",
+        "15-814 Type Systems for Programming Languages",
+        "17-819 Program Analysis",
+        "17-751 Models of Software Systems",
+        "80-610 Formal Logic"
+      ],
+      [
+        "05-830 Advanced User Interface Software",
+        "15-712 Advanced Operating Systems and Distributed Systems",
+        "15-821 Mobile and Pervasive Computing",
+        "15-829 Programmable Networks",
+        "16-867 Principles of Human-Robot Interaction",
+        "17-755 Architectures for Software Systems",
+        "17-752 Methods: Deciding What to Design",
+        "18-730 Introduction to Computer Security",
+        "18-732 Secure Software Systems",
+        "18-749 Building Reliable Distributed Systems",
+        "15-745 Optimizing Compilers for Modern Architectures"
+      ],
+      [
+        "05-830 Advanced User Interface Software",
+        "15-712 Advanced Operating Systems and Distributed Systems",
+        "15-821 Mobile and Pervasive Computing",
+        "15-829 Programmable Networks",
+        "16-867 Principles of Human-Robot Interaction",
+        "17-755 Architectures for Software Systems",
+        "17-752 Methods: Deciding What to Design",
+        "18-730 Introduction to Computer Security",
+        "18-732 Secure Software Systems",
+        "18-749 Building Reliable Distributed Systems",
+        "15-745 Optimizing Compilers for Modern Architectures"
+      ],
+      [
+        "05-830 Advanced User Interface Software",
+        "15-712 Advanced Operating Systems and Distributed Systems",
+        "15-821 Mobile and Pervasive Computing",
+        "15-829 Programmable Networks",
+        "16-867 Principles of Human-Robot Interaction",
+        "17-755 Architectures for Software Systems",
+        "17-752 Methods: Deciding What to Design",
+        "18-730 Introduction to Computer Security",
+        "18-732 Secure Software Systems",
+        "18-749 Building Reliable Distributed Systems",
+        "15-745 Optimizing Compilers for Modern Architectures"
+      ],
+      [
+        "05-830 Advanced User Interface Software",
+        "05-899D Human Aspects of Software Development",
+        "15-816 Modal Logic",
+        "15-817 Introduction to Model Checking",
+        "15-819O Program Analysis",
+        "15-892 Foundations of Electronic Marketplaces",
+        "17-711 Socio-Technical Ecosystems",
+        "17-732 Emerging Programming Paradigms",
+        "17-762 Law of Computer Technology",
+        "17-807 Research Writing For Software Engineers",
+        "99-452 Language and Culture for Teaching"
+      ]
+    ],
+    "https://se-phd.isri.cmu.edu/research/index.html": [
+      [
+        "Software Organization and Properties",
+        "Software Notations and Tools",
+        "Software Creation and Management"
+      ],
+      [
+        "Software and Societal Systems Department",
+        "Architecture & Design",
+        "APIs & Frameworks",
+        "Autonomous Systems",
+        "Distributed Systems",
+        "Requirements",
+        "Security and Privacy",
+        "Analysis & Assurance",
+        "Developer Tools",
+        "Languages",
+        "Software Data Analysis",
+        "Organizations"
+      ],
+      [
+        "Protection/Security",
+        "Related Self",
+        "Adaptation    Modeling and Analysis of Cross",
+        "Layer Security Attacks"
+      ]
+    ],
+    "https://drexel.edu/cci/research/research-areas/programming-systems-and-software-engineering/": [
+      [
+        "Hyung Wook Choi: Semantic shifts and evolution, version control",
+        "David Grethlein: Time Series Data Mining, Driving Simulators, Player Modeling",
+        "Ismail Kuru: Logic, Systems, Programming Language Theory",
+        "Jason Lefever: Software Refactoring, Code LLMs"
+      ]
+    ],
+    "https://lcsee.statler.wvu.edu/research": [
+      [
+        "Donald Adjeroh",
+        "Jeremy Dawson",
+        "Gianfranco Doretto",
+        "Nima Karimian",
+        "Natalia Schmid",
+        "Matthew Valenti"
+      ],
+      [
+        "Donald Adjeroh",
+        "Gianfranco Doretto",
+        "Ramana Reddy"
+      ],
+      [
+        "Gianfranco Doretto",
+        "Amr El-Wakeel",
+        "Yu Gu",
+        "Roy Nutter Jr.",
+        "Ramana Reddy",
+        "Brian Woerner"
+      ],
+      [
+        "Donald Adjeroh",
+        "Tom Devine",
+        "Gianfranco Doretto",
+        "Katerina Goseva-Popstojanova",
+        "Don McLaughlin",
+        "Brian Powell",
+        "K. Subramani"
+      ],
+      [
+        "Tom Devine",
+        "Dale Dzielski",
+        "Katerina Goseva-Popstojanova",
+        "Nima Karimian",
+        "David Krovich",
+        "Roy Nutter Jr.",
+        "Sara Tehranipoor"
+      ],
+      [
+        "Kevin Bandura",
+        "Jeremy Dawson",
+        "Parviz Famouri",
+        "David Graham",
+        "Yuxin Liu"
+      ],
+      [
+        "Muhammad Choudhry",
+        "Parviz Famouri",
+        "Sarika Khushalani-Solanki",
+        "Jignesh Solanki",
+        "Anurag Srivastava"
+      ],
+      [
+        "Kevin Bandura",
+        "Katerina Goseva-Popstojanova",
+        "Natalia Schmid"
+      ],
+      [
+        "Hany Ammar",
+        "Tom Devine",
+        "Dale Dzielski",
+        "Katerina Goseva-Popstojanova"
+      ],
+      [
+        "Donald Adjeroh",
+        "Tom Devine",
+        "K. Subramani",
+        "Piotr Wojciechowski"
+      ],
+      [
+        "David Graham",
+        "Mohamed Hefeida",
+        "Natalia Schmid",
+        "Matthew Valenti",
+        "Brian Woerner"
+      ],
+      [
+        "Research Areas",
+        "Lane Department of Computer Science and Electrical Engineering",
+        "Benjamin M. Statler College of Engineering and Mineral Resources",
+        "Connect With Us"
+      ],
+      [
+        "AI, Biometrics/Computer Vision",
+        "AI and Health",
+        "AI, Robotics and Autonomous Vehicles",
+        "Big Data and Visualization",
+        "Cybersecurity and Computer Forensics",
+        "Nanotechnology/Electronics",
+        "Power and Energy Systems",
+        "Radio and Astronomy",
+        "Software Engineering",
+        "Theoretical Computer Science",
+        "Wireless Communications and  Sensor Networks"
+      ]
+    ],
+    "https://cse.ucsd.edu/research": [
+      [
+        "Algorithms, Complexity and Cryptography (Theory group)",
+        "Artificial Intelligence",
+        "Bioinformatics",
+        "Computer Architecture and Compilers",
+        "Computing Education Research",
+        "Databases and Information Management",
+        "Embedded Systems & Software",
+        "Human-Computer Interaction / The Design Lab",
+        "Programming Systems",
+        "Robotics",
+        "Security and Cryptography",
+        "Software Engineering",
+        "Systems and Networking",
+        "Ubiquitous Computing and eXtended Intelligence",
+        "Visual Computing (Computer Graphics and Computer Vision)",
+        "VLSI/CAD (Computer-Aided Design)",
+        "Extended Reality (XR) Lab"
+      ]
+    ],
+    "https://cs.utdallas.edu/research/research-areas/": [
+      [
+        "Skip to Main Content.",
+        "Skip to Main Navigation.",
+        "Skip to Main Footer."
+      ],
+      [
+        "Professor Murat Kantarcioglu and Latifur Khan were named IEEE Fellows.",
+        "Professor B. Prabhakaran was named Editor in Chief of the IEEE Multimedia Journal.",
+        "Professor Shiyi Wei received Distinguished Paper Award at USENIX 2022.",
+        "UT Dallas CS Researchers Apply Power of AI To Forecast Energy Supply, Demand."
+      ],
+      [
+        "Open Source Projects",
+        "Department Software",
+        "Research Focus Areas",
+        "Institutes and Centers",
+        "Reports"
+      ],
+      [
+        "Erik Jonsson School of Engineering and Computer Science",
+        "research",
+        "education",
+        "people",
+        "industry",
+        "community",
+        "ARTIFICIAL INTELLIGENCE / MACHINE LEARNING",
+        "NETWORKS",
+        "COMPUTING THEORY",
+        "COMPUTER SYSTEMS",
+        "CYBER SECURITY",
+        "SOFTWARE ENGINEERING",
+        "ERIK JONSSON SCHOOL OF ENGINEERING AND COMPUTER SCIENCE"
+      ]
+    ],
+    "https://engineering.nyu.edu/academics/departments/computer-science-and-engineering": [
+      [
+        "From\n\nTechstrong Unplugged",
+        "From\n\nLifeboat Foundation",
+        "From\n\nCNN"
+      ],
+      [
+        "Degrees and Programs",
+        "Labs and Centers",
+        "People\n\n\n\nComputer Science and Engineering"
+      ]
+    ],
+    "https://www.cs.usc.edu/research/research-areas-labs/": [
+      [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics and HCI"
+      ],
+      [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics, HCI"
+      ],
+      [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics, HCI"
+      ]
+    ],
+    "https://www.eecs.mit.edu/research/computer-science/": [
+      [
+        "AI for Healthcare and Life Sciences",
+        "Artificial Intelligence and Machine Learning",
+        "Communications Systems",
+        "Computational Fabrication and Manufacturing",
+        "Computer Architecture",
+        "Educational Technology",
+        "Graphics and Vision",
+        "Human-Computer Interaction",
+        "Programming Languages and Software Engineering",
+        "Quantum Computing, Communication, and Sensing",
+        "Robotics",
+        "Security and Cryptography",
+        "Systems and Networking",
+        "Theory of Computation",
+        "Device enables direct communication among multiple quantum processors",
+        "AI tool generates high-quality images faster than state-of-the-art approaches",
+        "3D printing approach strings together dynamic objects for you",
+        "Security scheme could protect sensitive data during cloud computation",
+        "Department of EECS announces 2025 promotions and appointments",
+        "Doctoral Thesis: Generative Diffusion Models towards De Novo Protein Design",
+        "Doctoral thesis: Generalization Under Distribution Shift",
+        "Can Wu \u2013 Think Big! Emerging Large-Area Electronics for Large Scale System Integration",
+        "Jason Ma \u2013 Internet\u00a0Supervision\u00a0for Robot Learning",
+        "Jason Wu \u2013 From Agent to Optimization: User Interface Understanding and Generation",
+        "Harry Zhou \u2013 Architecting Fault-Tolerant Quantum Computers for Today and Tomorrow"
+      ],
+      [
+        "Things devices with ultra",
+        "power consumption to high",
+        "performance servers and datacenters that power planet",
+        "scale online services. We design both general"
+      ],
+      [
+        "cutting techniques for security, from theoretical cryptography and programming",
+        "language ideas, to low",
+        "level hardware and operating",
+        "systems security, to overall system designs and empirical bug"
+      ]
+    ],
+    "https://scai.engineering.asu.edu/graduate-program-software-engineering/": [
+      [
+        "2024-2025",
+        "2023-2024",
+        "2022-2023",
+        "2021-2022",
+        "2020-2021",
+        "SER Course Lists & Check Sheets",
+        "SER MS Faculty List",
+        "Older Handbooks"
+      ],
+      [
+        "Software Engineering MS Handbook 2024-2025",
+        "Software Engineering MS Handbook - 2023-2024",
+        "MS Handbook 2022-2023",
+        "MS Handbook 2021-2022",
+        "MS Handbook 2020-2021MS Handbook 2020-2021 Addendum",
+        "Software Engineering MS Faculty Endorsements"
+      ],
+      [
+        "400-Level Course List",
+        "500-Level Course List",
+        "SER MS Check Sheet",
+        "SER (Cybersecurity) MS Check Sheet",
+        "SER (Data Science) MS Check Sheet"
+      ],
+      [
+        "MS Handbook\u00a02019-2020",
+        "M.S. Handbook\u00a02018-2019",
+        "M.S. Handbook\u00a02017-2018",
+        "M.S. Handbook\u00a02016-2017",
+        "M.S. Handbook\u00a02015-2016"
+      ]
+    ],
+    "https://www.rit.edu/study/software-engineering-ms": [
+      [
+        "Why Pursue an MS in Software Engineering at RIT?",
+        "RIT\u2019s Master\u2019s in Software Engineering",
+        "Software Engineering Courses",
+        "Typical Job Titles",
+        "Cooperative Education",
+        "Software Engineering (thesis option), MS degree, typical course sequence",
+        "Software engineering (capstone option), MS degree, typical course sequence",
+        "Students are also interested in",
+        "Application Details",
+        "Cost and Financial Aid",
+        "Additional Information"
+      ],
+      [
+        "Capstone Project or Thesis",
+        "English Language Test Scores",
+        "Bridge Courses"
+      ]
+    ],
+    "https://www.sjsu.edu/cmpe/index.php": [
+      [
+        "Announcements",
+        "Enrollment Data",
+        "Why Join Us"
+      ],
+      [
+        "B.S. in Computer Engineering",
+        "B.S. in Software Engineering",
+        "M.S. in Computer Engineering",
+        "M.S. in Software Engineering",
+        "M.S. in Artificial Intelligence",
+        "Cybersecurity Foundations Certificate Program",
+        "Courses"
+      ],
+      [
+        "Undergraduate Advising",
+        "Graduate Advising",
+        "Admission",
+        "Frequently Asked Questions"
+      ],
+      [
+        "Navigation",
+        "Computer Engineering",
+        "Footer"
+      ],
+      [
+        "Visit Office",
+        "Make a Gift",
+        "Colleges",
+        "Resources"
+      ],
+      [
+        "4150Fax: 408",
+        "4153Email: frontdesk",
+        "computer",
+        "engineering@sjsu.edu"
+      ]
+    ],
+    "https://egr.vcu.edu/departments/computer/": [
+      [
+        "Artificial intelligence",
+        "Cybersecurity",
+        "Data science",
+        "High-performance data mining",
+        "Machine learning",
+        "Software engineering"
+      ],
+      [
+        "College of Engineering",
+        "Computer science academic programs",
+        "Earn a master's degree in less time",
+        "Faculty Research",
+        "State-of-the-art-facilities",
+        "Computer science leadership"
+      ],
+      [
+        "Undergraduate degree programs",
+        "Graduate M.S. degree programs",
+        "Graduate Ph.D. degree programs",
+        "Certificates & Badges"
+      ]
+    ],
+    "https://engineering.ucsc.edu/departments/computer-science-and-engineering/": [
+      [
+        "Software Engineer/Developer",
+        "Hardware Engineer/Developer",
+        "Network Engineer",
+        "Web Developer",
+        "Mobile App Developer",
+        "AI/ML Engineer",
+        "UX Designer",
+        "Systems Architect",
+        "Cybersecurity Engineer"
+      ]
+    ],
+    "https://engineering.vanderbilt.edu/departments/computer-science/": [
+      [
+        "Software and Systems Engineering",
+        "Graphics",
+        "Security and Fault Tolerance",
+        "Cyber-Physical Systems",
+        "Medical Image Processing",
+        "Artificial Intelligence"
+      ],
+      [
+        "Institute for Software Integrated Systems",
+        "City Innovation through the Vanderbilt initiative for Infrastructure Connectivity",
+        "Institute for Surgery and Engineering",
+        "Frist Center for Autism & Innovation"
+      ],
+      [
+        "Jonathan Sprinkle, Chair",
+        "Graham Hemingway, Director of Undergraduate Studies",
+        "Ipek Oguz, Director of Graduate Recruitment",
+        "Abhishek Dubey, Director of Graduate Studies (MS)",
+        "Taylor Johnson, Director of Graduate Studies (PhD)",
+        "Department Administration Staff"
+      ]
+    ],
+    "https://cse.umn.edu/cs/research-areas": [
+      [
+        "Breadcrumb",
+        "Computing Education",
+        "Computing Foundations",
+        "Computing Systems",
+        "Data Science and Machine Learning",
+        "Human-Centered Computing",
+        "Robotics and Artificial Intelligence",
+        "CS&E Department Portal\u00a0Website Change FormSubmit CS&E News"
+      ]
+    ],
+    "https://www.uwb.edu/stem/graduate/mscsse": [
+      [
+        "46-49 credit curriculum",
+        "Part- or full-time enrollment",
+        "Evening classes designed for working professionals",
+        "Research opportunities with faculty"
+      ]
+    ],
+    "https://www.cs.washington.edu/academics/undergraduate/career-resources/cs-teaching/": [
+      [
+        "EDUC 251: Seeking Educational Equity and Diversity",
+        "EDC&I 351: Teaching as a Profession",
+        "E E 406: Teaching Engineering"
+      ],
+      [
+        "Center for Learning and Undergraduate Enrichment\u00a0(CLUE)",
+        "Engineering Academic Center\u00a0(EAC)",
+        "Instructional Center\u00a0(IC)",
+        "Riverways Education Partnerships\u00a0educational practicums"
+      ],
+      [
+        "CSE Ambassadors Program",
+        "DawgBytes K-12 Outreach Program",
+        "Society of Women Engineers (SWE) Community Outreach"
+      ],
+      [
+        "Popular Links",
+        "Coursework",
+        "Teaching Opportunities",
+        "Education-related Opportunities",
+        "Teaching as a Career",
+        "Teaching Resources"
+      ],
+      [
+        "Teaching Opportunities",
+        "Education-Related",
+        "Teaching as a Career",
+        "Teaching Resources"
+      ]
+    ],
+    "https://engineering.buffalo.edu/computer-science-engineering.html": [
+      [
+        "Our brand",
+        "new, state",
+        "art departmental headquarters."
+      ]
+    ],
+    "https://computerscience.uchicago.edu/": [
+      [
+        "AI & Machine Learning",
+        "Computing Education",
+        "Data & Databases",
+        "Human Computer Interaction",
+        "Programming Languages",
+        "Scientific & High Performance Computing",
+        "Security & Privacy",
+        "Systems, Architecture & Networking",
+        "Theory",
+        "Visual Computing"
+      ]
+    ],
+    "https://www.scu.edu/engineering/academic-programs/department-of-computer-engineering/": [
+      [
+        "School of Engineering",
+        "Academic Programs",
+        "Department of Computer Science and Engineering"
+      ],
+      [
+        "Recent Awards",
+        "Special Dean's Recognition Award:\u00a0Ruth Davis",
+        "Teaching Excellence Award:\u00a0Angela Musurlian",
+        "Researcher of the Year Award: Ying Liu",
+        "Adjunct Lecturer of the Year Award: Alka Jarvis"
+      ]
+    ],
+    "https://www.cs.purdue.edu/research/index.html": [
+      [
+        "Artificial Intelligence, Machine Learning, and Natural Language Processing",
+        "Bioinformatics and Computational Biology",
+        "Computer Architecture",
+        "Computational Science and Engineering",
+        "Databases and Data Mining",
+        "Distributed Systems",
+        "Graphics, Visualization, and Geometric Modeling",
+        "Human-Computer Interaction",
+        "Information Security and Assurance",
+        "Networking and Operating Systems",
+        "Programming Languages and Compilers",
+        "Robotics and Computer Vision",
+        "Software Engineering",
+        "Theory of Computing, Algorithms, and Quantum Computing"
+      ],
+      [
+        "Communication",
+        "Campus",
+        "Department Resources",
+        "More Department Resources"
+      ],
+      [
+        "AI-powered tool for cybersecurity earns ACM CCS Distinguished Paper Award",
+        "Peng named ACM Distinguished Member",
+        "One Health: A \u2018digital twin\u2019 model for predicting cancer outcomes"
+      ]
+    ],
+    "https://engineering.msu.edu/about/departments/cse/research": [
+      [
+        "Biometrics",
+        "Image processing",
+        "Machine learning",
+        "Software engineering",
+        "Formal methods",
+        "Mobile computing",
+        "Distributed systems",
+        "Computer networking",
+        "Multimedia technologies",
+        "Natural language processing",
+        "Data mining",
+        "Genetic algorithms"
+      ]
+    ],
+    "https://www.csulb.edu/college-of-engineering/computer-engineering-computer-science": [
+      [
+        "Bachelor's of Science in Applied Data Science\u00a0(now enrolling for Fall 2025)",
+        "Bachelor's of Science in Computer Science",
+        "Bachelor's of Science in Computer Engineering",
+        "Master's of Science in Computer Science",
+        "PhD in\u00a0Engineering and Computational Mathematics",
+        "Minor in Computer Science or Cyber Security Applications"
+      ],
+      [
+        "Admissions",
+        "Registration",
+        "Schedule of Classes",
+        "Steps to Switching Majors",
+        "Academic Advisors",
+        "University Undergraduate Advising",
+        "University Library",
+        "Learning Center",
+        "Writing Requirement",
+        "Steps to Graduate",
+        "Career Development Center",
+        "Open University",
+        "IT Help Desk"
+      ],
+      [
+        "Utility Menu",
+        "Academics",
+        "Alumni",
+        "Campus Life",
+        "Divisions",
+        "Resources",
+        "Chair's Welcome",
+        "Mission",
+        "Programs",
+        "Department News",
+        "Helpful Links",
+        "Services",
+        "Colleges",
+        "Additional Resources"
+      ],
+      [
+        "Image",
+        "Image",
+        "Image"
+      ]
+    ],
+    "https://ece.duke.edu/academics/masters/study-tracks/": [
+      [
+        "Customize your Duke degree.",
+        "Software Engineering",
+        "Computer Hardware Engineering",
+        "Machine Learning & Big Data",
+        "Quantum Software & Hardware",
+        "Semiconductor Technology",
+        "Ready to join us?"
+      ]
+    ],
+    "https://www.slu.edu/science-and-engineering/academics/graduate-programs/software-engineering-ms.php": [
+      [
+        "Application completion",
+        "Transcript(s)",
+        "One letter of recommendation is required; two more are optional",
+        "R\u00e9sum\u00e9",
+        "Statement of professional goals",
+        "GRE general scores recommended"
+      ],
+      [
+        "Demonstrate\u00a0English Language Proficiency",
+        "Courses taken and/or lectures attended",
+        "Practical laboratory work",
+        "The maximum and minimum grades attainable",
+        "The grades earned or the results of all end-of-term examinations",
+        "Any honors or degrees received."
+      ],
+      [
+        "Courses taken and/or lectures attended",
+        "Practical laboratory work",
+        "The maximum and minimum grades attainable",
+        "The grades earned or the results of all end-of-term examinations",
+        "Any honors or degrees received."
+      ],
+      [
+        "CSCI\u00a05030",
+        "CSCI\u00a05050",
+        "CSCI\u00a05300",
+        "CSCI\u00a05960",
+        "CSCI 5301-5399",
+        "General Electives",
+        "Select an additional three CSCI courses numbered 5090-5930.  \u2020",
+        "Total Credits"
+      ],
+      [
+        "Year One",
+        "CSCI\u00a05030",
+        "CSCI\u00a05050",
+        "Software Engineering Elective",
+        "Spring",
+        "CSCI\u00a05300",
+        "Software Engineering Elective",
+        "General Elective",
+        "Year Two",
+        "Software Engineering Elective",
+        "General Elective",
+        "Spring",
+        "CSCI\u00a05960",
+        "General Elective"
+      ]
+    ],
+    "https://www.sjsu.edu/cs/faculty/research.php": [
+      [
+        "Department of Computer Science on Facebook",
+        "Department of Computer Science on Twitter",
+        "Department of Computer Science on LinkedIn",
+        "Department of Computer Science on Instagram",
+        "Department of Computer Science on YouTube",
+        "Department of Computer Science on Snapchat"
+      ],
+      [
+        "Algorithms and Theory of Computation",
+        "Big Data",
+        "Bioinformatics",
+        "Computational Oceanography",
+        "Computer Science Education",
+        "Computer Vision",
+        "Cyber Physical Systems",
+        "Distributed Networks and Cloud Systems",
+        "Evolutionary Computation",
+        "Human-Computer Interaction",
+        "Information Security",
+        "Machine Learning and Artificial Intelligence (AI)",
+        "Mobile Wireless Networks",
+        "Programming Languages",
+        "Software and Web Engineering",
+        "Storage",
+        "Ubiquitous & Pervasive Computing",
+        "Department of Computer Science",
+        "Footer"
+      ],
+      [
+        "0249Monday to Friday 9:00 AM",
+        "4:00 PM(Lunch hours 12:30 PM",
+        "1:30 PM)"
+      ]
+    ],
+    "https://wwwcp.umes.edu/cset/": [
+      [
+        "Welcome to the Department of Computer Science and Engineering Technology (CSET)",
+        "Office:\u00a02032 EASC",
+        "Undergraduate Degree Programs",
+        "Graduate Degree Programs",
+        "computer science news"
+      ]
+    ],
+    "https://engineering.tufts.edu/departments/computer-science": [
+      [
+        "Breadcrumb",
+        "Computer Science",
+        "Artificial Intelligence",
+        "Bioengineering - Bioinformatics",
+        "Cognitive Science",
+        "Computer Engineering",
+        "Cybersecurity and Public Policy",
+        "Data Science",
+        "Human-Robot Interaction",
+        "Software Systems Development",
+        "Academic Departments",
+        "Strategic Research Areas",
+        "Centers"
+      ]
+    ],
+    "https://www.wlu.edu/computer-science-department": [
+      [
+        "Bachelor of Science Giorgio Louis Antonacci",
+        "Bachelor of Arts Mohammed Danish Bokhari",
+        "Bachelor of \u2026"
+      ],
+      [
+        "Bachelor of Science Giorgio Louis Antonacci",
+        "Bachelor of Arts Mohammed Danish Bokhari",
+        "Bachelor of \u2026"
+      ]
+    ],
+    "https://engineering.uark.edu/electrical-engineering-computer-science/": [
+      [
+        "Electrical Engineering Degrees",
+        "Computer Science Degrees",
+        "Computer Engineering Degrees",
+        "Certificates and Online Degrees"
+      ],
+      [
+        "Embedded System Engineer",
+        "Power Electronics Designer",
+        "Semiconductor Engineer",
+        "Wireless Communication Engineer"
+      ],
+      [
+        "Artificial Intelligence Engineer",
+        "Cyber Security Specialist",
+        "Data Scientist",
+        "Data Engineer",
+        "Data Analyst",
+        "Software Engineer"
+      ],
+      [
+        "Computer Hardware Engineer",
+        "Robotics Engineer",
+        "Computer Systems Engineer/Architect",
+        "Satellite Communications Specialist"
+      ],
+      [
+        "Renewable and clean energy",
+        "Electric vehicles (land, ocean, space)",
+        "Robotics and automation",
+        "Smart phones and communication networks",
+        "Smart Grid Nanotechnology & optoelectronics"
+      ],
+      [
+        "Healthcare",
+        "E-Commerce",
+        "Energy",
+        "Cybersecurity",
+        "Information Technology",
+        "Financial Services"
+      ],
+      [
+        "Hardware Design",
+        "Communications",
+        "Defense"
+      ],
+      [
+        "Jia Di",
+        "Kevin Jin",
+        "Qinghua Li",
+        "Alex Nelson",
+        "Brajendra Panda",
+        "Dale Thompson",
+        "Xintao Wu"
+      ],
+      [
+        "Susan Gauch",
+        "Brajendra Panda",
+        "Xintao Wu",
+        "Lu Zhang"
+      ],
+      [
+        "Khoa Luu",
+        "Alex Nelson",
+        "Thi Hoang Ngan Le"
+      ],
+      [
+        "John Gauch",
+        "Khoa Luu",
+        "Ukash Nakarmi",
+        "Thi Hoang Ngan Le"
+      ],
+      [
+        "Khoa Luu",
+        "Ukash Nakarmi",
+        "Thi Hoang Ngan Le",
+        "Xintao Wu",
+        "Lu Zhang"
+      ],
+      [
+        "David Andrews",
+        "Jia Di",
+        "Miaoqing Huang",
+        "Kevin Jin",
+        "Alex Nelson",
+        "Yarui Peng"
+      ],
+      [
+        "Susan Gauch",
+        "Khoa Luu",
+        "Ukash Nakarmi",
+        "Thi Hoang Ngan Le"
+      ],
+      [
+        "Zhong Chen",
+        "Alan Mantooth",
+        "Hameed Naseem",
+        "Fisher Yu",
+        "Jeff Dix",
+        "Xiaoqing Song"
+      ],
+      [
+        "Zhong Chen",
+        "Omar Manasreh",
+        "Alan Mantooth",
+        "Roy McCann",
+        "Hameed Naseem",
+        "Fisher Yu",
+        "Yue Zhao",
+        "Morgan Ware",
+        "Xiaoqing Song"
+      ],
+      [
+        "Samir El-Ghazaly",
+        "Magda El-Shenawee",
+        "Junliang Dong"
+      ],
+      [
+        "Zhong Chen",
+        "Samir El-Ghazaly",
+        "Omar Manasreh",
+        "Alan Mantooth",
+        "Roy McCann",
+        "Hameed Naseem",
+        "Fisher Yu",
+        "Morgan Ware",
+        "Junliang Dong"
+      ],
+      [
+        "Innovative Nano/Biosensor Lab (INB Lab)",
+        "Mixed-Signal CAD Lab",
+        "Nanomaterials and Nanotube Research Laboratory (NNRL)",
+        "Optoelectronics Research Lab",
+        "Organic Devices and Electronics Lab (ODEL)",
+        "Sustainable Smart Electrical Energy Systems",
+        "Terahertz Imaging and Spectroscopy Computational Electromagnetics Group",
+        "Power Electronic Systems Laboratory at Arkansas (PESLA)",
+        "Power Switch Lab",
+        "Power Systems Control Laboratory",
+        "Intelligent Information Sensing, Processing, and Transmission Laboratory",
+        "ISLAND (Integrated Systems Lab for ANalog Design)",
+        "Photonic Integrated Circuits Lab",
+        "Yu\u2019s Group",
+        "Intelligent Information Processing Lab",
+        "Intelligent Terahertz Laboratory (iTHz-Lab)"
+      ],
+      [
+        "Association for Computing Machinery",
+        "Institute of Electrical and Electronics Engineers",
+        "CyberHogs",
+        "Girls in Tech",
+        "Trustworthy Machine Learning Reading Group"
+      ],
+      [
+        "Electrical Engineering",
+        "Computer Science",
+        "Computer Engineering",
+        "Certificates and Online Degrees",
+        "What You Can Do",
+        "Industries You Can Work In",
+        "Cybersecurity",
+        "Big Data, Data Analytics, and Blockchain",
+        "Machine Learning and Quantum Machine Learning",
+        "Computer Vision and Image Processing",
+        "Trustworthy and Responsible Artificial Intelligence",
+        "Computer System Design and High Performance Computing",
+        "Deep Learning and Natural Language Processing",
+        "Algorithmic Self-Assembly and Biomolecular Computing",
+        "Computer-Aided Design",
+        "Communications, Digital Signal Processing, and Sensor Networks",
+        "Electronics and Electronic Packaging, Analog and Mixed Signal, and Integrated Circuits",
+        "Power Systems, Power Electronics, Renewable Energy, and Control",
+        "RF and Microwave, Electromagnetics, Antennas, and Terahertz",
+        "Semiconductors, Nanotechnology, Optoelectronics, Photovoltaic, and Photonics",
+        "Research Centers & Labs",
+        "UA Power Group",
+        "Grid-Connected Advanced Power Electronics Systems",
+        "High Density Electronics Center",
+        "National Center for Reliable Electric Power Transmission",
+        "Center for Infrastructure Trustworthiness in Energy Systems",
+        "Center for Power Optimization of Electro-Thermal Systems",
+        "Arkansas Security Research and Education Institute",
+        "Institute for Nanoscience and Engineering",
+        "Electrical Engineering Research Labs",
+        "Computer Science & Computer Engineering Research Labs",
+        "Department News",
+        "Student Organizations and Clubs",
+        "Follow Us",
+        "College of Engineering"
+      ],
+      [
+        "Electrical Engineering",
+        "Computer Science",
+        "Computer Engineering",
+        "Electrical Engineering",
+        "Computer Science",
+        "Computer Engineering"
+      ],
+      [
+        "Bachelor of Science in Electrical Engineering, B.S.E.E.",
+        "4+1: Combines BS/MS in Electrical Engineering",
+        "Master of Science in Electrical Engineering, M.S.E.E. (On-campus or Online)",
+        "Doctor of Philosophy in Electrical Engineering, Ph.D."
+      ],
+      [
+        "Bachelor of Science in Computer Science, B.S.C.S.",
+        "Bachelor of Arts in Computer Science, B.A.C.S.",
+        "Master of Science in Computer Science, M.S.C.S.",
+        "Doctor of Philosophy in Computer Science, Ph.D."
+      ],
+      [
+        "Bachelor of Science in Computer Engineering, B.S.C.E.",
+        "Master of Science in Computer Engineering, M.S.C.E.",
+        "Doctor of Philosophy in Computer Engineering, Ph.D."
+      ],
+      [
+        "Cybersecurity Graduate Certificate (CSCE)",
+        "Graduate Certificate of Entrepreneurship (EE)",
+        "Graduate Certificate in Sustainability (EE)",
+        "Master of Science Engineering, M.S.E (100% Online)",
+        "Master of Science in Electrical Engineering, M.S.E.E. (On-campus or Online)"
+      ],
+      [
+        "UA Power Group",
+        "Grid-Connected Advanced Power Electronics Systems",
+        "High Density Electronics Center",
+        "National Center for Reliable Electric Power Transmission"
+      ],
+      [
+        "About Us",
+        "UAACSCE",
+        "Industry Advisory Board",
+        "EECS Handbooks"
+      ]
+    ],
+    "https://www.millersville.edu/computerscience/": [
+      [
+        "Welcome!",
+        "COMPUTER SCIENCE SYMPOSIUM",
+        "Tutoring Spring 2025",
+        "Introducing the CS Department Discord Community!",
+        "Setting Up Development Environments",
+        "MU@PACISE 2023",
+        "Millersville Computer Science Goes to CPOSC",
+        "CCSC Eastern's 40th Annual Regional Conference",
+        "The 2024 icpc mid-atlantic usa regional contest",
+        "Computer Science Alumni",
+        "Congratulations 2024 Graduates!",
+        "Quick Links",
+        "Events"
+      ],
+      [
+        "Softball vs East Stroudsburg",
+        "Baseball vs Shippensburg (DH)",
+        "Softball vs Bloomsburg",
+        "STEM Career Carnival Returns",
+        "Remembrance and Reflection: Ville\u2019s 40th Holocaust Conference",
+        "Millersville University Explores AI"
+      ],
+      [
+        "Zoom Tutoring",
+        "By Course:",
+        "By Day:"
+      ],
+      [
+        "Day (Time)",
+        "Monday (5PM-8PM)",
+        "Tuesday (5:30PM-8PM)",
+        "Wednesday (5PM-8PM)",
+        "Thursday (5:00PM-8PM)"
+      ],
+      [
+        "come, first",
+        "serve basis. They will also be available through Zoom, Meeting ID:\u00a0959",
+        "3862 and Discord."
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 21:01:37"
+}

@@ -1,0 +1,4555 @@
+{
+  "level1_term": "k-12 education",
+  "url_verification_status": {
+    "https://www.gse.harvard.edu/professional-education/k-12-programs": false,
+    "https://steinhardt.nyu.edu/departments/teaching-and-learning": true,
+    "https://rsp.uni.edu/irb-manual-research-schools": false,
+    "https://www.gse.upenn.edu/academics/programs/teaching-learning-leadership-masters": false,
+    "https://www.tc.columbia.edu/curriculum-and-teaching/": true,
+    "https://case.fiu.edu/tl/": true,
+    "https://bulletin.wustl.edu/undergrad/artsci/majors/k-12teachereducation-ba/": false,
+    "https://catalogue.uci.edu/allcourses/educ/": true,
+    "https://catalog.unc.edu/courses/educ/": true,
+    "https://www.unf.edu/catalog/colleges/coehs/Teaching-Learning-and-Curriculum.html": true,
+    "https://catalog.umt.edu/courses/edu/": true
+  },
+  "verified_lists_per_url": {
+    "https://www.gse.harvard.edu/professional-education/k-12-programs": 0,
+    "https://steinhardt.nyu.edu/departments/teaching-and-learning": 3,
+    "https://rsp.uni.edu/irb-manual-research-schools": 0,
+    "https://www.gse.upenn.edu/academics/programs/teaching-learning-leadership-masters": 0,
+    "https://www.tc.columbia.edu/curriculum-and-teaching/": 1,
+    "https://case.fiu.edu/tl/": 3,
+    "https://bulletin.wustl.edu/undergrad/artsci/majors/k-12teachereducation-ba/": 0,
+    "https://catalogue.uci.edu/allcourses/educ/": 3,
+    "https://catalog.unc.edu/courses/educ/": 583,
+    "https://www.unf.edu/catalog/colleges/coehs/Teaching-Learning-and-Curriculum.html": 6,
+    "https://catalog.umt.edu/courses/edu/": 2
+  },
+  "total_lists_per_url": {
+    "https://www.gse.harvard.edu/professional-education/k-12-programs": 1,
+    "https://steinhardt.nyu.edu/departments/teaching-and-learning": 3,
+    "https://rsp.uni.edu/irb-manual-research-schools": 2,
+    "https://www.gse.upenn.edu/academics/programs/teaching-learning-leadership-masters": 11,
+    "https://www.tc.columbia.edu/curriculum-and-teaching/": 2,
+    "https://case.fiu.edu/tl/": 6,
+    "https://bulletin.wustl.edu/undergrad/artsci/majors/k-12teachereducation-ba/": 8,
+    "https://catalogue.uci.edu/allcourses/educ/": 9,
+    "https://catalog.unc.edu/courses/educ/": 652,
+    "https://www.unf.edu/catalog/colleges/coehs/Teaching-Learning-and-Curriculum.html": 9,
+    "https://catalog.umt.edu/courses/edu/": 2
+  },
+  "verified_lists_ids": {
+    "https://www.gse.harvard.edu/professional-education/k-12-programs": [],
+    "https://steinhardt.nyu.edu/departments/teaching-and-learning": [
+      0,
+      1,
+      2
+    ],
+    "https://rsp.uni.edu/irb-manual-research-schools": [],
+    "https://www.gse.upenn.edu/academics/programs/teaching-learning-leadership-masters": [],
+    "https://www.tc.columbia.edu/curriculum-and-teaching/": [
+      1
+    ],
+    "https://case.fiu.edu/tl/": [
+      0,
+      2,
+      3
+    ],
+    "https://bulletin.wustl.edu/undergrad/artsci/majors/k-12teachereducation-ba/": [],
+    "https://catalogue.uci.edu/allcourses/educ/": [
+      6,
+      7,
+      8
+    ],
+    "https://catalog.unc.edu/courses/educ/": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13,
+      14,
+      15,
+      17,
+      19,
+      20,
+      21,
+      23,
+      25,
+      27,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      91,
+      93,
+      94,
+      95,
+      96,
+      97,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      113,
+      115,
+      116,
+      117,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      167,
+      168,
+      169,
+      170,
+      171,
+      173,
+      174,
+      175,
+      177,
+      179,
+      181,
+      182,
+      183,
+      184,
+      185,
+      187,
+      189,
+      191,
+      193,
+      194,
+      195,
+      197,
+      199,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      232,
+      234,
+      235,
+      236,
+      237,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      292,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      316,
+      317,
+      318,
+      320,
+      321,
+      322,
+      323,
+      324,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      346,
+      347,
+      348,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      453,
+      455,
+      456,
+      457,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470,
+      471,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      481,
+      483,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      494,
+      495,
+      496,
+      498,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550,
+      551,
+      553,
+      555,
+      556,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      564,
+      565,
+      567,
+      568,
+      569,
+      570,
+      571,
+      572,
+      573,
+      575,
+      577,
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      595,
+      596,
+      597,
+      599,
+      600,
+      601,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      619,
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649
+    ],
+    "https://www.unf.edu/catalog/colleges/coehs/Teaching-Learning-and-Curriculum.html": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "https://catalog.umt.edu/courses/edu/": [
+      0,
+      1
+    ]
+  },
+  "num_urls": 13,
+  "num_lists": 705,
+  "url_to_lists": {
+    "https://www.gse.harvard.edu/professional-education/k-12-programs": [
+      [
+        "Degrees & Programs",
+        "Admissions & Aid",
+        "Ideas & Impact",
+        "Faculty",
+        "Community & Culture",
+        "Professional Development",
+        "Data Wise Portfolio",
+        "Teacher Programs",
+        "The Principals' Center",
+        "Filter by",
+        "Filters",
+        "Universal Design for Learning: Apply",
+        "Leadership Entry: Empowering Schools and Communities",
+        "System Wise Leadership Institute",
+        "Data Wise Coach Certification",
+        "Managing Evidence: A CAEL Module",
+        "The B.R.A.V.E. Institute: Giving Voice to Your Values",
+        "School Turnaround Leaders",
+        "Data Wise: Educators Collaborating So Each Student Thrives",
+        "Mental Health in Schools: Building Systems of Care"
+      ]
+    ],
+    "https://steinhardt.nyu.edu/departments/teaching-and-learning": [
+      [
+        "Develop your teaching skills and build your expertise in your content area",
+        "Observe and train in global education systems",
+        "Engage with urban schools and communities",
+        "Learn how to promote equity and inclusion in the classroom",
+        "Bring digital technology into real-world learning spaces"
+      ],
+      [
+        "Search NYU Steinhardt",
+        "Site Main navigation",
+        "Browse Programs",
+        "Breadcrumb",
+        "Secondary Navigation",
+        "Programs",
+        "Bilingual Education",
+        "Childhood Education",
+        "Computer Science Education",
+        "Early Childhood Education",
+        "English Education",
+        "Environmental Conservation Education",
+        "Literacy Education",
+        "Math Education",
+        "Science Education",
+        "Social Studies Education",
+        "Special Education",
+        "Teaching English to Speakers of Other Languages (TESOL)",
+        "World Language Education",
+        "2024 Dorothy Height Distinguished Alumni Award Honoree: Yolanda Sealey-Ruiz (PhD \u201905, BA \u201990)",
+        "Teaching and Learning Student Amanda Najib Wins Palestine Book Award",
+        "Steinhardt Alum Pamela D\u2019Andrea Mart\u00ednez Wins NYU Outstanding Dissertation Award",
+        "Footer menu",
+        "Follow NYU Steinhardt"
+      ],
+      [
+        "Programs and Degrees",
+        "Study Abroad",
+        "Undergraduate",
+        "Graduate",
+        "Admissions",
+        "Paying for Your Education",
+        "Master's"
+      ]
+    ],
+    "https://rsp.uni.edu/irb-manual-research-schools": [
+      [
+        "Facebook",
+        "X/Twitter",
+        "Youtube",
+        "LinkedIn",
+        "Instagram"
+      ],
+      [
+        "Studies Considered Normal Educational Practice",
+        "Studies NOT Considered Normal Educational Practice",
+        "Parent Permission in Classroom Studies involving Normal Activities",
+        "Child Assent in Classroom Studies involving Normal Activities",
+        "Audio and Video Recording",
+        "Letters of Cooperation",
+        "FERPA"
+      ]
+    ],
+    "https://www.gse.upenn.edu/academics/programs/teaching-learning-leadership-masters": [
+      [
+        "Associate Director of Online Learning, University of Pennsylvania",
+        "Co-founder, Zuable.com",
+        "Curriculum Manager, Moving Traditions"
+      ],
+      [
+        "Learning Sciences and Technologies M.S.Ed.",
+        "Teaching, Learning, and Teacher Education Ed.D.",
+        "Teaching, Learning, and Teacher Education Ph.D.",
+        "Urban Teaching Apprenticeship Program M.S.Ed.",
+        "Urban Teaching Residency Program M.S.Ed."
+      ],
+      [
+        "Application deadlineRolling admission",
+        "Entry term(s)Fall",
+        "Course requirements10 courses (7 required, 3 elective)",
+        "Typical course loadFall: 3-4 courses; Spring: 3-4 courses; Summer: 2 courses",
+        "Culminating experienceMaster\u2019s Capstone Project",
+        "ScheduleFull-TimePart-Time"
+      ],
+      [
+        "Ed Brockenbrough \n Associate Professor \n Ph.D., University of Pennsylvania",
+        "Caroline B. Ebby \n Senior Lecturer \n Ph.D., University of Pennsylvania",
+        "Sarah Schneider Kavanagh \n Associate Professor \n Ph.D., University of Washington",
+        "Abby Reisman \n Associate Professor \n Ph.D., Stanford University",
+        "Janine Remillard \n Professor \n Ph.D., Michigan State University"
+      ],
+      [
+        "Ed Brockenbrough",
+        "Associate Professor",
+        "Ph.D., University of Pennsylvania"
+      ],
+      [
+        "Caroline B. Ebby",
+        "Senior Lecturer",
+        "Ph.D., University of Pennsylvania"
+      ],
+      [
+        "Sarah Schneider Kavanagh",
+        "Associate Professor",
+        "Ph.D., University of Washington"
+      ],
+      [
+        "Abby Reisman",
+        "Associate Professor",
+        "Ph.D., Stanford University"
+      ],
+      [
+        "Janine Remillard",
+        "Professor",
+        "Ph.D., Michigan State University"
+      ],
+      [
+        "Ryan S. BakerProfessorPh.D., Carnegie Mellon University",
+        "Bodong ChenAssociate ProfessorPh.D., University of Toronto",
+        "Matthew DuvallLecturerPh.D., Drexel University",
+        "Zachary HerrmannAdjunct Assistant ProfessorEd.L.D., Harvard University",
+        "Charlotte E. Jacobs Director, Independent School Teaching ResidencyPh.D., University of Pennsylvania",
+        "Yasmin B. KafaiLori and Michael Milken President\u2019s Distinguished ProfessorEd.D., Harvard University",
+        "Andrea M. KaneProfessor of Practice, Education LeadershipPh.D., Northcentral University",
+        "Rand QuinnAssociate ProfessorPh.D., Stanford University",
+        "Sharon M. RavitchProfessor of PracticePh.D., University of Pennsylvania",
+        "Susan A. YoonGraduate School of Education Presidential ProfessorPh.D., University of Toronto"
+      ],
+      [
+        "such as classrooms",
+        "to out",
+        "school environments and international sites. With grant"
+      ]
+    ],
+    "https://www.tc.columbia.edu/curriculum-and-teaching/": [
+      [
+        "Curriculum & Teaching",
+        "Carousel",
+        "Welcome to the Department of Curriculum & Teaching",
+        "Department Programs",
+        "Our Stories"
+      ],
+      [
+        "Secondary Navigation Main",
+        "Secondary Navigation More",
+        "Educating the Influencers of Tomorrow",
+        "Early Childhood Education",
+        "Elementary Inclusive Education",
+        "Secondary Inclusive Education",
+        "Gifted Education",
+        "Literacy Specialist",
+        "Professional Certification in Elementary or Secondary Education",
+        "Curriculum & Teaching",
+        "Interdepartmental Doctoral Specialization in Teacher Education",
+        "Resources",
+        "Legal"
+      ]
+    ],
+    "https://case.fiu.edu/tl/": [
+      [
+        "Undergraduate",
+        "Graduate",
+        "Certificates"
+      ],
+      [
+        "Online BS in Early Childhood Education: Early Childhood Development Major",
+        "Kinesiology ProgramBS in Sport and Exercise Science",
+        "BS in Sport and Exercise Science"
+      ],
+      [
+        "Online MS in Curriculum and Instruction: Curriculum Development",
+        "Online MS in Curriculum and Instruction: Elementary Education",
+        "MS in Early Childhood Education",
+        "Teaching English to Speakers of Other Languages (TESOL) Track",
+        "Online MS in Foreign Language Education Teaching in Challenging Contexts (TiCC) Major",
+        "MS in Reading/Literacy Education",
+        "MS in Special EducationOnline MS in Special Education: Autism Endorsement",
+        "Online MS in Special Education: Autism Endorsement",
+        "Kinesiology ProgramMS in Kinesiology and Exercise SciencePhD in Teaching and Learning: Kinesiology",
+        "MS in Kinesiology and Exercise Science",
+        "PhD in Teaching and Learning: Kinesiology",
+        "EdS in Teaching and Learning",
+        "PhD in Teaching and Learning"
+      ],
+      [
+        "Graduate Certificate in Grades K-5 Mathematics Teaching",
+        "Graduate Certificate in Grades 6-12 Mathematics Teaching",
+        "Graduate Certificate Program in Teaching English to Speakers of Other Languages (TESOL)"
+      ],
+      [
+        "Graduation Catalog",
+        "Teaching and Learning Resources",
+        "Teaching and Learning Opportunities",
+        "Flexible Space Reservations"
+      ],
+      [
+        "Guiding Statement",
+        "Degrees & Programs",
+        "Get Support",
+        "Education Honor Society",
+        "Events",
+        "Connect",
+        "Explore FIU",
+        "Tools & Resources"
+      ]
+    ],
+    "https://bulletin.wustl.edu/undergrad/artsci/majors/k-12teachereducation-ba/": [
+      [
+        "Hold a minimum grade point average of 3.0 in the content area",
+        "Achieved a passing score on the required Missouri certification exam(s)",
+        "Maintained a minimum content area GPA of 3.0",
+        "Earned a grade of B or higher in required fieldwork or Education course work"
+      ],
+      [
+        "Achieved a passing score on the required Missouri certification exam(s)",
+        "Maintained a minimum content area GPA of 3.0",
+        "Earned a grade of B or higher in required fieldwork or Education course work"
+      ],
+      [
+        "IES Abroad Amsterdam Semester Program in Amsterdam, Netherlands",
+        "Trinity College Dublin with IES Abroad in Dublin, Ireland",
+        "University of Auckland with IES Abroad in Auckland, New Zealand",
+        "University of Sydney in Sydney, Australia"
+      ],
+      [
+        "Required Courses",
+        "Additional Requirements for Teacher Education Majors",
+        "Honors Program",
+        "Transfer Credit",
+        "Study Abroad",
+        "Title II",
+        "Office of the University Registrar",
+        "Additional Resources"
+      ],
+      [
+        "\u200bEducational Studies Majors and Minors",
+        "Teacher Education Majors",
+        "Preapproved Study Abroad Sites"
+      ],
+      [
+        "Educ\u00a0301C",
+        "or\u00a0Educ\u00a0453B",
+        "or\u00a0Educ\u00a0459F",
+        "or\u00a0Educ\u00a0481W"
+      ],
+      [
+        "Educ\u00a0313B",
+        "Educ\u00a04052",
+        "Educ\u00a04053",
+        "Educ\u00a0408",
+        "Educ\u00a04843"
+      ],
+      [
+        "For ALL content areas",
+        "Educ\u00a04000",
+        "For World Language content area, grades K-12",
+        "Educ\u00a0400L",
+        "For Art content area, grades K-12",
+        "Educ\u00a0400A",
+        "Educ\u00a05007",
+        "For Dance content area, grades K-12",
+        "Educ\u00a0400D"
+      ]
+    ],
+    "https://catalogue.uci.edu/allcourses/educ/": [
+      [
+        "Overlaps with SOCECOL\u00a010.",
+        "Restriction: Education Sciences Majors have first consideration for enrollment.",
+        "(III)"
+      ],
+      [
+        "Prerequisite: EDUC\u00a010 or SOCECOL\u00a010",
+        "Overlaps with SOCECOL\u00a013.",
+        "Restriction: Education Sciences Majors have first consideration for enrollment."
+      ],
+      [
+        "Grading Option: Pass/no pass only.",
+        "Repeatability: May be taken for credit 3 times.",
+        "Restriction: Education Sciences Majors have first consideration for enrollment."
+      ],
+      [
+        "Prerequisite: Must be able to communicate in Spanish.",
+        "Grading Option: Pass/no pass only.",
+        "Restriction: Education Sciences Majors have first consideration for enrollment."
+      ],
+      [
+        "Limited to teaching assistants.",
+        "Grading Option: Satisfactory/unsatisfactory only.",
+        "Repeatability: May be repeated for credit unlimited times."
+      ],
+      [
+        "sponsored Certificate in After",
+        "approved after",
+        "school program."
+      ],
+      [
+        "based course focused on observing adolescents in out",
+        "school contexts to examine adolescent learning and development in a range of contexts, how out",
+        "school contexts motivate learning and development, and consider the implications for teaching."
+      ],
+      [
+        "based evaluations and quantitative research in education. Includes sampling, coding open",
+        "a district",
+        "based evaluation and a national survey",
+        "using SPPS."
+      ],
+      [
+        "based. Creating a child",
+        "centered, language",
+        "rich program to meet needs of children in multicultural/multilingual settings."
+      ]
+    ],
+    "https://catalog.unc.edu/courses/educ/": [
+      [
+        "Catalog\u00a0Course Search",
+        "Course Numbering\u00a0Guide",
+        "Scheduled Classes",
+        "Historical Course Record"
+      ],
+      [
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 65.",
+        "First-Year Seminar: School Daze: What's School Got to do with Getting an Education?.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 89.\u00a0\u00a0First-Year Seminar: Special Topics.\u00a0\u00a03 Credits.",
+        "Course content will vary each semester.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-SEMINAR.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 89.",
+        "First-Year Seminar: Special Topics.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 101.\u00a0\u00a0First Year Thriving.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 101.",
+        "First Year Thriving.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 111.\u00a0\u00a0Career Exploration.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 111.",
+        "Career Exploration.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 121.\u00a0\u00a0Tutoring in the Schools I.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 121.",
+        "Tutoring in the Schools I.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 122.\u00a0\u00a0Tutoring in the Schools II.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 122.",
+        "Tutoring in the Schools II.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 140.\u00a0\u00a0Sources of Strength Leadership.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 140.",
+        "Sources of Strength Leadership.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 149.\u00a0\u00a0Experiential Education and Civic Identity.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: EE- Field Work.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 149.",
+        "Experiential Education and Civic Identity.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 150.\u00a0\u00a0The Science of Learning (Intensive).\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 150.",
+        "The Science of Learning (Intensive).",
+        "1 Credits."
+      ],
+      [
+        "EDUC 181.\u00a0\u00a0Introduction to Human Development and Family Science.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-LAUNCH (only designated sections), FC-KNOWING.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 181.",
+        "Introduction to Human Development and Family Science.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 190.\u00a0\u00a0Special Topics in Education.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 190.",
+        "Special Topics in Education.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 221.\u00a0\u00a0Tutoring in the Schools III.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 221.",
+        "Tutoring in the Schools III.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 222.\u00a0\u00a0Tutoring in the Schools IV.\u00a0\u00a01 Credits.",
+        "Focuses on the relationship among arts, creativity, and education.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 222.",
+        "Tutoring in the Schools IV.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 230.\u00a0\u00a0Thriving After the First Year: Accessing High Impact Opportunities.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 230.",
+        "Thriving After the First Year: Accessing High Impact Opportunities.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 231.\u00a0\u00a0The Science of Well-Being.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: SS, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 231.",
+        "The Science of Well-Being.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 240.\u00a0\u00a0Introduction to Educational Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 240.",
+        "Introduction to Educational Studies.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 250.\u00a0\u00a0Risk and Resiliency: Challenges and Opportunities in Education.\u00a0\u00a04 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 250.",
+        "Risk and Resiliency: Challenges and Opportunities in Education.",
+        "4 Credits."
+      ],
+      [
+        "EDUC 257.\u00a0\u00a0Inquiry and Data Applications.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 257.",
+        "Inquiry and Data Applications.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 301.\u00a0\u00a0Junior Transfer Seminar - Thriving in Transition.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, EE- Field Work.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 301.",
+        "Junior Transfer Seminar - Thriving in Transition.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 307.\u00a0\u00a0Mathematics in Elementary Schools.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 307.",
+        "Mathematics in Elementary Schools.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 309.\u00a0\u00a0Foundations of Leadership.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FY-LAUNCH (only designated sections).",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 309.",
+        "Foundations of Leadership.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 311.\u00a0\u00a0Life-Career Design.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 311.",
+        "Life-Career Design.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 316.\u00a0\u00a0Advanced Leadership Development Seminar.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 316.",
+        "Advanced Leadership Development Seminar.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 317.\u00a0\u00a0Dynamics of Effective Leadership.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Pass/Fail."
+      ],
+      [
+        "EDUC 317.",
+        "Dynamics of Effective Leadership.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 318.",
+        "Peer Leadership in the University Environment.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 320.",
+        "Navigating Education in Borderlands.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 325.\u00a0\u00a0Introduction to Counseling and Coaching.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0COMMBEYOND.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 325.",
+        "Introduction to Counseling and Coaching.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 330.\u00a0\u00a0The Science of Learning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 330.",
+        "The Science of Learning.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 349.\u00a0\u00a0Adulting.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 349.",
+        "Adulting.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 357.\u00a0\u00a0Organizational and Community Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 357.",
+        "Organizational and Community Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 375.\u00a0\u00a0Identity and Sexuality.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Making Connections Gen Ed: US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 375.",
+        "Identity and Sexuality.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 387.\u00a0\u00a0Peer Tutoring.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-SERVICE.",
+        "Making Connections Gen Ed: EE- Service Learning.",
+        "Grading Status: Pass/Fail."
+      ],
+      [
+        "EDUC 387.",
+        "Peer Tutoring.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 390.\u00a0\u00a0Special Topics in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 390.",
+        "Special Topics in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 400.\u00a0\u00a0Autism in Our Communities: An Interdisciplinary Perspective.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-SERVICE.",
+        "Making Connections Gen Ed: EE- Service Learning.",
+        "Grading Status: Letter grade.",
+        "Same as: SPHS\u00a0400."
+      ],
+      [
+        "EDUC 400.",
+        "Autism in Our Communities: An Interdisciplinary Perspective.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 401.\u00a0\u00a0Childhood Development: Prenatal Birth to Age 12.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 401.",
+        "Childhood Development: Prenatal Birth to Age 12.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 402.\u00a0\u00a0Models of Early Childhood Service Delivery.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 402.",
+        "Models of Early Childhood Service Delivery.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 403.\u00a0\u00a0Individuals, Families, and Communities in Diverse Contexts.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 403.",
+        "Individuals, Families, and Communities in Diverse Contexts.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 404.\u00a0\u00a0Infant/Toddler Assessment and Intervention.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0401.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 404.",
+        "Infant/Toddler Assessment and Intervention.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 405.\u00a0\u00a0Parenting and Family Life Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 405.",
+        "Parenting and Family Life Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 410.\u00a0\u00a0Families and Communities in Diverse Contexts for Youth.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 410.",
+        "Families and Communities in Diverse Contexts for Youth.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 411.\u00a0\u00a0Making Liberal Arts \"Work\".\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING, HI-INTERN.",
+        "Making Connections Gen Ed: SS, EE- Field Work.",
+        "Repeat Rules: May be repeated for credit. 6 total credits. 2 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 411.",
+        "Making Liberal Arts \"Work\".",
+        "3 Credits."
+      ],
+      [
+        "EDUC 413.\u00a0\u00a0Language and Literacy Learning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 413.",
+        "Language and Literacy Learning.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 415.\u00a0\u00a0Schooling of Immigrant Children.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 415.",
+        "Schooling of Immigrant Children.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 416.\u00a0\u00a0Curriculum Integration: Science, Math, and Technology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 416.",
+        "Curriculum Integration: Science, Math, and Technology.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 418.\u00a0\u00a0Ethics of Care for the Hospitalized Child and Family.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-VALUES.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 418.",
+        "Ethics of Care for the Hospitalized Child and Family.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 421.\u00a0\u00a0Community Organizations and Children I.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 421.",
+        "Community Organizations and Children I.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 422.\u00a0\u00a0Community Organizations and Children II.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0421.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 422.",
+        "Community Organizations and Children II.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 461I.\u00a0\u00a0Exploring Social Determinants of Health Across Populations.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-SERVICE.",
+        "Grading Status: Letter grade.",
+        "Same as: NURS\u00a0461I."
+      ],
+      [
+        "EDUC 461I.",
+        "Exploring Social Determinants of Health Across Populations.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 464.\u00a0\u00a0Teaching Profession.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 464.",
+        "Teaching Profession.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 465.\u00a0\u00a0Introduction to Teaching.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 465.",
+        "Introduction to Teaching.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 466.\u00a0\u00a0Planning for Teaching in the Middle Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 466.",
+        "Planning for Teaching in the Middle Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 469.\u00a0\u00a0Developing Skills for Teaching.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: EE- Field Work.",
+        "Requisites: Prerequisites,  EDUC\u00a0465 and 466.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 469.",
+        "Developing Skills for Teaching.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 470.\u00a0\u00a0Therapeutic Value of Play.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 470.",
+        "Therapeutic Value of Play.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 472.\u00a0\u00a0System Improvement and Implementation at Scale.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0257.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 472.",
+        "System Improvement and Implementation at Scale.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 475.\u00a0\u00a0Child and Family Health.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 475.",
+        "Child and Family Health.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 480.\u00a0\u00a0Resource Management for Individuals and Families.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 480.",
+        "Resource Management for Individuals and Families.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 493.\u00a0\u00a0Practicum.\u00a0\u00a01-6 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: EE- Field Work.",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 493.",
+        "Practicum.",
+        "1-6 Credits."
+      ],
+      [
+        "EDUC 496.\u00a0\u00a0Independent Study.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 496.",
+        "Independent Study.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 501.\u00a0\u00a0Adolescent and Adulthood Development: A Cross-Cultural.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 501.",
+        "Adolescent and Adulthood Development: A Cross-Cultural.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 503.\u00a0\u00a0Leadership Seminar.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 503.",
+        "Leadership Seminar.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 504.\u00a0\u00a0Learning in the Modern World.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 504.",
+        "Learning in the Modern World.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 505.\u00a0\u00a0Leadership in Educational/Nonprofit Settings.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 505.",
+        "Leadership in Educational/Nonprofit Settings.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 506.\u00a0\u00a0Politics, Policymaking, and America's Schools.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 506.",
+        "Politics, Policymaking, and America's Schools.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 507.\u00a0\u00a0Arts, Education, and Social Change.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH.",
+        "Making Connections Gen Ed: VP.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 507.",
+        "Arts, Education, and Social Change.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 508.\u00a0\u00a0Equity, Leadership, and You.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-VALUES.",
+        "Making Connections Gen Ed: SS, GL.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 508.",
+        "Equity, Leadership, and You.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 509.\u00a0\u00a0Helping Youth Thrive in K-12 Schools.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 509.",
+        "Helping Youth Thrive in K-12 Schools.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 510.\u00a0\u00a0Latinx Experience in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Making Connections Gen Ed: HS, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 510.",
+        "Latinx Experience in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 512.\u00a0\u00a0Critical Examination of Racism and Education: African American Case Example.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 512.",
+        "Critical Examination of Racism and Education: African American Case Example.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 513.\u00a0\u00a0Methods for Teaching in the Elementary School.\u00a0\u00a03-9 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 513.",
+        "Methods for Teaching in the Elementary School.",
+        "3-9 Credits."
+      ],
+      [
+        "EDUC 515.\u00a0\u00a0The Arts as Integrative Teaching.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 515.",
+        "The Arts as Integrative Teaching.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 516.\u00a0\u00a0Introduction to the Education of Exceptional Learners.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 516.",
+        "Introduction to the Education of Exceptional Learners.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 517.\u00a0\u00a0Educational Partnership Through Program Evaluation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0RESEARCH.",
+        "Making Connections Gen Ed: EE- Field Work.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 517.",
+        "Educational Partnership Through Program Evaluation.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 518.\u00a0\u00a0Exploring Public Pedagogies through Popular Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH.",
+        "Making Connections Gen Ed: LA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 518.",
+        "Exploring Public Pedagogies through Popular Culture.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 519.\u00a0\u00a0Senior Seminar.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0593.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 519.",
+        "Senior Seminar.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 520.\u00a0\u00a0Early Language and Literacy Learning-Birth to Third Grade.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 520.",
+        "Early Language and Literacy Learning-Birth to Third Grade.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 521.\u00a0\u00a0Schools, Cultures, and Communities I: Youth.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 521.",
+        "Schools, Cultures, and Communities I: Youth.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 522.\u00a0\u00a0Schools, Cultures, and Communities II: Schools.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 522.",
+        "Schools, Cultures, and Communities II: Schools.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 523.\u00a0\u00a0Teaching Early Mathematics-Birth to Third Grade.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 523.",
+        "Teaching Early Mathematics-Birth to Third Grade.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 524.\u00a0\u00a0Learning on the Edge: Theories of Experiential Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: EE- Field Work.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 524.",
+        "Learning on the Edge: Theories of Experiential Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 526.\u00a0\u00a0Ethics and Education: From Global Problems to Classroom Dilemmas.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-VALUES.",
+        "Making Connections Gen Ed: PH, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 526.",
+        "Ethics and Education: From Global Problems to Classroom Dilemmas.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 527.\u00a0\u00a0Screen Education: Representations of Education in Popular Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 527.",
+        "Screen Education: Representations of Education in Popular Culture.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 528.\u00a0\u00a0Exceptionality Across the Life Span.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 528.",
+        "Exceptionality Across the Life Span.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 529.\u00a0\u00a0Education in American Society.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-PAST.",
+        "Making Connections Gen Ed: HS, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 529.",
+        "Education in American Society.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 531.\u00a0\u00a0Effective Teaching: First Steps.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 531.",
+        "Effective Teaching: First Steps.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 532.\u00a0\u00a0Human Development and Learning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING.",
+        "Making Connections Gen Ed: SS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 532.",
+        "Human Development and Learning.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 533.\u00a0\u00a0Social Justice in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Making Connections Gen Ed: SS, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 533.",
+        "Social Justice in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 534.\u00a0\u00a0Effective Teaching: Assessment.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 534.",
+        "Effective Teaching: Assessment.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 535.\u00a0\u00a0Teachers and Schools.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 535.",
+        "Teachers and Schools.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 540.\u00a0\u00a0Mathematics Teaching.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 540.",
+        "Mathematics Teaching.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 541.\u00a0\u00a0Mathematics Problems for Instruction.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 541.",
+        "Mathematics Problems for Instruction.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 542.\u00a0\u00a0Planning for Mathematics Instruction.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 542.",
+        "Planning for Mathematics Instruction.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 543.\u00a0\u00a0Higher Education in the US.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 543.",
+        "Higher Education in the US.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 546.\u00a0\u00a0Experiential Education in International Contexts.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 546.",
+        "Experiential Education in International Contexts.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 550.\u00a0\u00a0Science Teaching.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 550.",
+        "Science Teaching.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 551.\u00a0\u00a0Designing Science Tasks.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0550.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 551.",
+        "Designing Science Tasks.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 552.\u00a0\u00a0Improving Science Instruction.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0551.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 552.",
+        "Improving Science Instruction.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 555.\u00a0\u00a0Constructive Coaching I: Starting Out Right.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 555.",
+        "Constructive Coaching I: Starting Out Right.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 556.\u00a0\u00a0Constructive Coaching II: Effective Management of Student Behavior.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0555.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 557.\u00a0\u00a0Constructive Coaching III: Helping Students Learn.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0556.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 560.\u00a0\u00a0Second Language Teaching.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 560.",
+        "Second Language Teaching.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 561.\u00a0\u00a0Designing Second Language Tasks.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 561.",
+        "Designing Second Language Tasks.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 562.\u00a0\u00a0Improving Second Language Instruction.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 562.",
+        "Improving Second Language Instruction.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 563.\u00a0\u00a0Teaching Language Arts in the Middle Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 563.",
+        "Teaching Language Arts in the Middle Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 564.\u00a0\u00a0Teaching Social Studies in the Middle Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 564.",
+        "Teaching Social Studies in the Middle Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 565.\u00a0\u00a0Teaching Science in the Middle Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 565.",
+        "Teaching Science in the Middle Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 566.\u00a0\u00a0Teaching Math in the Middle Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 566.",
+        "Teaching Math in the Middle Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 567.\u00a0\u00a0Children's Literature in Elementary and Middle Schools.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-AESTH or FC-CREATE, COMMBEYOND.",
+        "Making Connections Gen Ed: LA, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 567.",
+        "Children's Literature in Elementary and Middle Schools.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 568.\u00a0\u00a0Seminar on Teaching.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisites,  EDUC\u00a0465, 466, and 469; corequisite, EDUC\u00a0593.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 568.",
+        "Seminar on Teaching.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 570.\u00a0\u00a0History of American Higher Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-PAST.",
+        "Making Connections Gen Ed: HS.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 570.",
+        "History of American Higher Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 571.\u00a0\u00a0The Maker Movement and Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-CREATE.",
+        "Making Connections Gen Ed: SS, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 571.",
+        "The Maker Movement and Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 572.\u00a0\u00a0Psychology of Creativity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-CREATE.",
+        "Making Connections Gen Ed: SS, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 572.",
+        "Psychology of Creativity.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 573.\u00a0\u00a0Reading the World: Paulo Freire, Local History, and Public Pedagogy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: SS, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 573.",
+        "Reading the World: Paulo Freire, Local History, and Public Pedagogy.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 574.\u00a0\u00a0Representations of Education in Documentaries.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: LA, CI.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 574.",
+        "Representations of Education in Documentaries.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 575.\u00a0\u00a0Nurturing Latinx Identity Formation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER.",
+        "Making Connections Gen Ed: US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 576.\u00a0\u00a0LatinxEd Internship.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-KNOWING or FC-POWER, HI-SERVICE.",
+        "Making Connections Gen Ed: EE- Service Learning, US.",
+        "Requisites: Prerequisite,  EDUC\u00a0575.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 576.",
+        "LatinxEd Internship.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 583.\u00a0\u00a0Career and Professional Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-SERVICE.",
+        "Requisites: Prerequisite,  EDUC\u00a0408.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 583.",
+        "Career and Professional Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 585.\u00a0\u00a0Activating Human and Organizational Leadership Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0309.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 585.",
+        "Activating Human and Organizational Leadership Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 590.\u00a0\u00a0Special Topics in Education.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 590.",
+        "Special Topics in Education.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 591.\u00a0\u00a0Seminar in Academic Mentoring in Education.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-LEARNTA.",
+        "Making Connections Gen Ed: EE - Undergraduate Learning Assistant, ULA.",
+        "Repeat Rules: May be repeated for credit. 3 total credits. 3 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 591.",
+        "Seminar in Academic Mentoring in Education.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 593.\u00a0\u00a0Internship/Student Teaching.\u00a0\u00a01-12 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-INTERN.",
+        "Making Connections Gen Ed: EE- Academic Internship.",
+        "Grading Status: Pass/Fail."
+      ],
+      [
+        "EDUC 595.\u00a0\u00a0Introduction to Exceptional Children.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 595.",
+        "Introduction to Exceptional Children.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 601.\u00a0\u00a0Education Workshops.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 601.",
+        "Education Workshops.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 605.\u00a0\u00a0Family Systems and Policy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 605.",
+        "Family Systems and Policy.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 611.\u00a0\u00a0Black Families in Social and Contemporary Contexts.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0FC-POWER.",
+        "Making Connections Gen Ed: SS, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 611.",
+        "Black Families in Social and Contemporary Contexts.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 614.\u00a0\u00a0Innovative and Engaging Teaching.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 614.",
+        "Innovative and Engaging Teaching.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 615.\u00a0\u00a0Schools and Community Collaboration.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: EE- Field Work, US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 615.",
+        "Schools and Community Collaboration.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 616.\u00a0\u00a0Teaching Early English Language Arts.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 616.",
+        "Teaching Early English Language Arts.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 617.\u00a0\u00a0Teaching in the Middle School.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-SERVICE.",
+        "Making Connections Gen Ed: SS, EE- Service Learning.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 617.",
+        "Teaching in the Middle School.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 626.\u00a0\u00a0Pedagogical English Grammar for ESL Teachers.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 626.",
+        "Pedagogical English Grammar for ESL Teachers.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 627.\u00a0\u00a0Pedagogical Linguistics for ESL Teachers.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 627.",
+        "Pedagogical Linguistics for ESL Teachers.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 628.\u00a0\u00a0Teaching English Language Learners.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: US.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 628.",
+        "Teaching English Language Learners.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 629.\u00a0\u00a0Language Minority Students: Issues for Practitioners.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: ANTH\u00a0629."
+      ],
+      [
+        "EDUC 672.\u00a0\u00a0UNC Teaching Fellows: Community of Learners.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 6 total credits. 6 total completions.",
+        "Grading Status: Pass/Fail."
+      ],
+      [
+        "EDUC 672.",
+        "UNC Teaching Fellows: Community of Learners.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 685.\u00a0\u00a0Teaching Mathematics in the Elementary Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 685.",
+        "Teaching Mathematics in the Elementary Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 686.\u00a0\u00a0Teaching Science in the Elementary Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 686.",
+        "Teaching Science in the Elementary Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 687.\u00a0\u00a0Teaching Social Studies in the Elementary Grades.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 687.",
+        "Teaching Social Studies in the Elementary Grades.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 688.\u00a0\u00a0Teaching Intermediate English Language Arts, Grades 3-6.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 688.",
+        "Teaching Intermediate English Language Arts, Grades 3-6.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 689.\u00a0\u00a0Foundations of Special Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 689.",
+        "Foundations of Special Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 691H.",
+        "Honors Seminar in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 694H.",
+        "Honors Thesis in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 695.\u00a0\u00a0Human and Organizational Leadership Development Capstone.\u00a0\u00a09 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-INTERN.",
+        "Making Connections Gen Ed: EE- Academic Internship, EE- Service Learning.",
+        "Requisites: Prerequisites,  EDUC\u00a0257, EDUC\u00a0309, EDUC\u00a0357, EDUC\u00a0505, EDUC\u00a0508, and EDUC\u00a0585.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 695.",
+        "Human and Organizational Leadership Development Capstone.",
+        "9 Credits."
+      ],
+      [
+        "EDUC 697.\u00a0\u00a0Education Minor Capstone Course.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Making Connections Gen Ed: EE- Mentored Research.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 697.",
+        "Education Minor Capstone Course.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 698.\u00a0\u00a0Internship in Human Development and Family Science.\u00a0\u00a03-9 Credits.",
+        "Rules & Requirements",
+        "IDEAs in Action Gen Ed:\u00a0HI-INTERN.",
+        "Making Connections Gen Ed: EE- Academic Internship, EE- Service Learning.",
+        "Requisites: Prerequisites,   EDUC\u00a0181, 408, and 583.",
+        "Repeat Rules: May be repeated for credit. 9 total credits. 3 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 698.",
+        "Internship in Human Development and Family Science.",
+        "3-9 Credits."
+      ],
+      [
+        "EDUC 699.\u00a0\u00a0Teaching the Science of Literacy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 699.",
+        "Teaching the Science of Literacy.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 702.\u00a0\u00a0Introduction to Strengths-Based School Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 702.",
+        "Introduction to Strengths-Based School Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 703.\u00a0\u00a0Theories and Techniques of Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 703.",
+        "Theories and Techniques of Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 704.\u00a0\u00a0Promoting Career Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 704.",
+        "Promoting Career Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 705.\u00a0\u00a0Internship in School Counseling and Consultation.\u00a0\u00a03-9 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 12 total credits. 4 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 705.",
+        "Internship in School Counseling and Consultation.",
+        "3-9 Credits."
+      ],
+      [
+        "EDUC 706.\u00a0\u00a0Collaboration and Leadership in School Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 706.",
+        "Collaboration and Leadership in School Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 707.\u00a0\u00a0Promoting Cultural Competence and Social Justice in School Counseling.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 707.",
+        "Promoting Cultural Competence and Social Justice in School Counseling.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 708.\u00a0\u00a0School Consultation Methods.\u00a0\u00a03-12 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 12 total credits. 4 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 708.",
+        "School Consultation Methods.",
+        "3-12 Credits."
+      ],
+      [
+        "EDUC 709.\u00a0\u00a0Seminar in Applied Investigations.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 709.",
+        "Seminar in Applied Investigations.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 710.\u00a0\u00a0Introductory Statistical Methods.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 710.",
+        "Introductory Statistical Methods.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 711.\u00a0\u00a0Promoting Academic Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 711.",
+        "Promoting Academic Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 712.\u00a0\u00a0Prepracticum in School Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 712.",
+        "Prepracticum in School Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 713.\u00a0\u00a0Tests and Measurements.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0702.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 713.",
+        "Tests and Measurements.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 714.\u00a0\u00a0Group Counseling and Guidance.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 714.",
+        "Group Counseling and Guidance.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 715.\u00a0\u00a0Girlhood,  Culture,  and  Curriculum.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 715.",
+        "Girlhood,  Culture,  and  Curriculum.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 716.\u00a0\u00a0Technology across the Curriculum.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 716.",
+        "Technology across the Curriculum.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 718.\u00a0\u00a0Psychological Assessment and Intervention I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 718.",
+        "Psychological Assessment and Intervention I.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 719.\u00a0\u00a0Psychological Advanced Assessment and Intervention II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 719.",
+        "Psychological Advanced Assessment and Intervention II.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 720.\u00a0\u00a0Seminar in Professional School Psychology.\u00a0\u00a02-3 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 720.",
+        "Seminar in Professional School Psychology.",
+        "2-3 Credits."
+      ],
+      [
+        "EDUC 721.\u00a0\u00a0Externship in School Psychology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 721.",
+        "Externship in School Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 722.\u00a0\u00a0Master's Internship in School Psychology.\u00a0\u00a01-6 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0721; Permission of the instructor.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 722.",
+        "Master's Internship in School Psychology.",
+        "1-6 Credits."
+      ],
+      [
+        "EDUC 724.\u00a0\u00a0Parent and Community Engagement for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 724.",
+        "Parent and Community Engagement for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 725.\u00a0\u00a0Supervisory Practice for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 725.",
+        "Supervisory Practice for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 726.\u00a0\u00a0Capstone Preparation.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 726.",
+        "Capstone Preparation.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 727.\u00a0\u00a0The Social Context of Educational Leadership.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 727.",
+        "The Social Context of Educational Leadership.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 728.\u00a0\u00a0Practicum in ESL II/Foreign Languages.\u00a0\u00a03 Credits.",
+        "Provides an internship to teach ESL/FL under the supervision of an experienced ESL teacher.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 728.",
+        "Practicum in ESL II/Foreign Languages.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 729.\u00a0\u00a0Culture and Politics in Second Language Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 729.",
+        "Culture and Politics in Second Language Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 730.\u00a0\u00a0Curriculum Leadership for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 730.",
+        "Curriculum Leadership for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 731.\u00a0\u00a0Organizational Management for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 731.",
+        "Organizational Management for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 732.\u00a0\u00a0Group Dynamics for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 732.",
+        "Group Dynamics for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 733.\u00a0\u00a0Advanced ESL Methods and Strategies for Humanities.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0628.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 733.",
+        "Advanced ESL Methods and Strategies for Humanities.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 734.\u00a0\u00a0Planning in Educational Organizations.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 734.",
+        "Planning in Educational Organizations.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 735.\u00a0\u00a0Seminar on Internship I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 735.",
+        "Seminar on Internship I.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 736.\u00a0\u00a0Seminar and Supervised Internship in Educational Administration I.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 736.",
+        "Seminar and Supervised Internship in Educational Administration I.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 737.\u00a0\u00a0Seminar on Internship II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 737.",
+        "Seminar on Internship II.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 738.\u00a0\u00a0Seminar and Supervised Internship in Educational Administration II.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0834.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 738.",
+        "Seminar and Supervised Internship in Educational Administration II.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 739.\u00a0\u00a0Global Child: Development and Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 739.",
+        "Global Child: Development and Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 740.\u00a0\u00a0Cultural Leadership for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 740.",
+        "Cultural Leadership for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 742.\u00a0\u00a0Law for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 742.",
+        "Law for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 744.\u00a0\u00a0Assessment Techniques for ESL/EC Teachers.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0628.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 744.",
+        "Assessment Techniques for ESL/EC Teachers.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 745.\u00a0\u00a0Contexts of Education II.\u00a0\u00a02 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0759.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 745.",
+        "Contexts of Education II.",
+        "2 Credits."
+      ],
+      [
+        "EDUC 747.\u00a0\u00a0Methods and Materials for Teaching Secondary/K-12 Subjects II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 747.",
+        "Methods and Materials for Teaching Secondary/K-12 Subjects II.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 748.\u00a0\u00a0Advanced Leadership.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 748.",
+        "Advanced Leadership.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 749.\u00a0\u00a0Advanced Exploration of Families, Schools and Communities.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 749.",
+        "Advanced Exploration of Families, Schools and Communities.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 750.\u00a0\u00a0Empowerment Strategies for the School Executive.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 750.",
+        "Empowerment Strategies for the School Executive.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 751.\u00a0\u00a0Introduction to Teaching Diverse Learners.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 751.",
+        "Introduction to Teaching Diverse Learners.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 753.\u00a0\u00a0Introduction to Curriculum.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 753.",
+        "Introduction to Curriculum.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 754.\u00a0\u00a0Teaching, Teachers and Teacher Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 754.",
+        "Teaching, Teachers and Teacher Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 755.\u00a0\u00a0Classroom Assessment.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 755.",
+        "Classroom Assessment.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 756.\u00a0\u00a0Principles and Methods in Parent Education and Involvement.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 756.",
+        "Principles and Methods in Parent Education and Involvement.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 757.\u00a0\u00a0College Teaching.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 757.",
+        "College Teaching.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 758.\u00a0\u00a0Immigration and Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 758.",
+        "Immigration and Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 759.\u00a0\u00a0Teacher Leadership for a Diverse Society.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 759.",
+        "Teacher Leadership for a Diverse Society.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 760.\u00a0\u00a0Methods and Materials for Teaching Secondary/K-12 Subjects I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 760.",
+        "Methods and Materials for Teaching Secondary/K-12 Subjects I.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 761.\u00a0\u00a0Design of Emerging Technologies for Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 761.",
+        "Design of Emerging Technologies for Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 762.\u00a0\u00a0Child Development and Disability.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 762.",
+        "Child Development and Disability.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 763.\u00a0\u00a0Biological Bases of Children's Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 763.",
+        "Biological Bases of Children's Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 764.\u00a0\u00a0Current Issues in Literacy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 764.",
+        "Current Issues in Literacy.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 765.\u00a0\u00a0Global Child: Development and Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 765.",
+        "Global Child: Development and Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 766.\u00a0\u00a0Practicum in School Counseling.\u00a0\u00a01-9 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 766.",
+        "Practicum in School Counseling.",
+        "1-9 Credits."
+      ],
+      [
+        "EDUC 767.\u00a0\u00a0Educational Innovation and Technology, Integrative Seminar I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 767.",
+        "Educational Innovation and Technology, Integrative Seminar I.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 768.\u00a0\u00a0Education in Latin America.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: LTAM\u00a0768."
+      ],
+      [
+        "EDUC 768.",
+        "Education in Latin America.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 769.\u00a0\u00a0Schooling of Latinos.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: LTAM\u00a0767."
+      ],
+      [
+        "EDUC 769.",
+        "Schooling of Latinos.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 770.\u00a0\u00a0Multicultural Ways of Knowing.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 770.",
+        "Multicultural Ways of Knowing.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 771.\u00a0\u00a0Seminar in Social Foundations of Education.\u00a0\u00a01 Credits.",
+        "Explores topics in the social and philosophical context of American public education.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 771.",
+        "Seminar in Social Foundations of Education.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 772.\u00a0\u00a0Educational Sociology.\u00a0\u00a03 Credits.",
+        "Applies sociological theory and research to problems of concern to educators.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 772.",
+        "Educational Sociology.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 773.\u00a0\u00a0Social Change and Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 773.",
+        "Social Change and Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 774.\u00a0\u00a0Social and Educational History of the United States.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 774.",
+        "Social and Educational History of the United States.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 775.\u00a0\u00a0Introduction to Ethics and Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 775.",
+        "Introduction to Ethics and Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 776.\u00a0\u00a0Gender, Race, and Class Issues in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0776."
+      ],
+      [
+        "EDUC 776.",
+        "Gender, Race, and Class Issues in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 777.\u00a0\u00a0Gender, Policy, and Leadership in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade.",
+        "Same as: WGST\u00a0777."
+      ],
+      [
+        "EDUC 777.",
+        "Gender, Policy, and Leadership in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 778.\u00a0\u00a0Teaching English to Speakers of Other Languages.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 778.",
+        "Teaching English to Speakers of Other Languages.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 779.\u00a0\u00a0Contemporary Philosophies of Democratic Schooling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 779.",
+        "Contemporary Philosophies of Democratic Schooling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 780.\u00a0\u00a0Grammar & Applied Linguistics for ESL Teachers.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0628.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 780.",
+        "Grammar & Applied Linguistics for ESL Teachers.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 782.\u00a0\u00a0Psychology of Learning in the School.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 782.",
+        "Psychology of Learning in the School.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 783.\u00a0\u00a0Advanced ESL Methods and Strategies for STEM.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0628.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 783.",
+        "Advanced ESL Methods and Strategies for STEM.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 784.\u00a0\u00a0Intermediate Statistical Methods.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 784.",
+        "Intermediate Statistical Methods.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 785.\u00a0\u00a0Program Evaluation in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0710 or permission of the instructor.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 785.",
+        "Program Evaluation in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 786.\u00a0\u00a0Problems in Educational Psychology.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 786.",
+        "Problems in Educational Psychology.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 787.\u00a0\u00a0Problems in Educational Measurement.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 787.",
+        "Problems in Educational Measurement.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 788.\u00a0\u00a0Instructional Theories.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0744.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 788.",
+        "Instructional Theories.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 789.\u00a0\u00a0Educational Innovation and Technology, Integrative Seminar II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 789.",
+        "Educational Innovation and Technology, Integrative Seminar II.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 790.\u00a0\u00a0Special Topics in Education - Graduate.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 790.",
+        "Special Topics in Education - Graduate.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 791.\u00a0\u00a0Providing Specially Designed Instruction.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 791.",
+        "Providing Specially Designed Instruction.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 792.\u00a0\u00a0Research on Technology.\u00a0\u00a03 Credits.",
+        "Explores and discusses the application of emerging technologies in education.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 793.",
+        "High-Leveraged Practices in Special Education with a Focus on Literacy Instruction.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 794.",
+        "High-Leveraged Practices in Special Education with a Focus on Mathematics Instruction.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 795.\u00a0\u00a0Learning Analytics.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 795.",
+        "Learning Analytics.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 796B.\u00a0\u00a0Independent Study Doctoral Level.\u00a0\u00a01-12 Credits.",
+        "Independent study at the doctoral level.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 796B.",
+        "Independent Study Doctoral Level.",
+        "1-12 Credits."
+      ],
+      [
+        "EDUC 796A.\u00a0\u00a0Independent Study Master's Level.\u00a0\u00a01-12 Credits.",
+        "Permission of the instructor.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 796A.",
+        "Independent Study Master's Level.",
+        "1-12 Credits."
+      ],
+      [
+        "EDUC 797.\u00a0\u00a0Collaboration with Families and Other Professionals.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 797.",
+        "Collaboration with Families and Other Professionals.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 798.\u00a0\u00a0Master's Internship in Learning Disabilities Education.\u00a0\u00a01-12 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 12 total credits. 12 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 798.",
+        "Master's Internship in Learning Disabilities Education.",
+        "1-12 Credits."
+      ],
+      [
+        "EDUC 800.\u00a0\u00a0Diversity in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 800.",
+        "Diversity in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 801.\u00a0\u00a0Advanced Seminar in Sociocultural Diversity Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 801.",
+        "Advanced Seminar in Sociocultural Diversity Studies.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 803.\u00a0\u00a0Proseminar in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 803.",
+        "Proseminar in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 804.\u00a0\u00a0Seminar in Culture, Curriculum, and Change.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 804.",
+        "Seminar in Culture, Curriculum, and Change.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 805A.\u00a0\u00a0Professional Seminar I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 805A.",
+        "Professional Seminar I.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 806.\u00a0\u00a0Seminar in Applied Developmental Sciences and Special Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 806.",
+        "Seminar in Applied Developmental Sciences and Special Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 807.\u00a0\u00a0Social Studies and Arts.\u00a0\u00a01-9 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 807.",
+        "Social Studies and Arts.",
+        "1-9 Credits."
+      ],
+      [
+        "EDUC 808.\u00a0\u00a0Foundations of Clinical Mental Health Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 808.",
+        "Foundations of Clinical Mental Health Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 809.\u00a0\u00a0Problems in Special Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 809.",
+        "Problems in Special Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 810.\u00a0\u00a0Psychology of Career Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 810.",
+        "Psychology of Career Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 811.\u00a0\u00a0Problems in School Counseling.\u00a0\u00a01-21 Credits.",
+        "Provides students the opportunity for directed study in school counseling.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 811.",
+        "Problems in School Counseling.",
+        "1-21 Credits."
+      ],
+      [
+        "EDUC 812.\u00a0\u00a0Doctoral Practicum in School Counseling.\u00a0\u00a01-21 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 812.",
+        "Doctoral Practicum in School Counseling.",
+        "1-21 Credits."
+      ],
+      [
+        "EDUC 813.\u00a0\u00a0Doctoral Internship in School Counseling.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 813.",
+        "Doctoral Internship in School Counseling.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 814.\u00a0\u00a0Supervision and Teaching in School Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 814.",
+        "Supervision and Teaching in School Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 815.\u00a0\u00a0Doctoral Seminar in School Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 815.",
+        "Doctoral Seminar in School Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 817.\u00a0\u00a0Introduction to Educational Research.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 818.\u00a0\u00a0School Psychology Intervention and Assessment III.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 818.",
+        "School Psychology Intervention and Assessment III.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 819.\u00a0\u00a0School Psychology Intervention and Assessment IV.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 819.",
+        "School Psychology Intervention and Assessment IV.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 820.\u00a0\u00a0Doctoral Seminar in Professional School Psychology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 820.",
+        "Doctoral Seminar in Professional School Psychology.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 821.\u00a0\u00a0Doctoral Externship in School Psychology.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 821.",
+        "Doctoral Externship in School Psychology.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 822.\u00a0\u00a0Doctoral Internship in School Psychology.\u00a0\u00a01-6 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0821.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 822.",
+        "Doctoral Internship in School Psychology.",
+        "1-6 Credits."
+      ],
+      [
+        "EDUC 823.\u00a0\u00a0Policy Development in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 823.",
+        "Policy Development in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 825.\u00a0\u00a0Development and Learning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit. 9 total credits. 3 total completions.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 825.",
+        "Development and Learning.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 826.\u00a0\u00a0Seminar in Mental Health and School-Based Counseling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 826.",
+        "Seminar in Mental Health and School-Based Counseling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 827.\u00a0\u00a0Human Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 827.",
+        "Human Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 828.\u00a0\u00a0Educational Measurement and Evaluation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 828.",
+        "Educational Measurement and Evaluation.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 829.\u00a0\u00a0Applied Measurement Theory for Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 829.",
+        "Applied Measurement Theory for Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 831.\u00a0\u00a0School Law: Justice and Equity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 831.",
+        "School Law: Justice and Equity.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 832.\u00a0\u00a0Politics of Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 832.",
+        "Politics of Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 833.\u00a0\u00a0Development and Systems Leadership.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 833.",
+        "Development and Systems Leadership.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 834.\u00a0\u00a0Organizational Behavior and Theory in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 834.",
+        "Organizational Behavior and Theory in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 835.\u00a0\u00a0Instructional Leadership for Supervision, Curriculum, and Technology.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 835.",
+        "Instructional Leadership for Supervision, Curriculum, and Technology.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 836.\u00a0\u00a0School Finance and Economic Equity.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 836.",
+        "School Finance and Economic Equity.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 838.\u00a0\u00a0School Governance.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 838.",
+        "School Governance.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 839.\u00a0\u00a0The Excellent School Seminar I.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 839.",
+        "The Excellent School Seminar I.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 840.\u00a0\u00a0Advanced Leadership Theories.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisites,  EDUC\u00a0727, 750, 832, and 834.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 840.",
+        "Advanced Leadership Theories.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 841.\u00a0\u00a0Development of a Research Proposal.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisites,  EDUC\u00a0727, 832, and 834.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 842.\u00a0\u00a0The Excellent School Seminar II.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 842.",
+        "The Excellent School Seminar II.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 843.\u00a0\u00a0Seminar in Educational Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 843.",
+        "Seminar in Educational Studies.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 844.\u00a0\u00a0Advanced Seminar and Supervised Internship in Educational Administration.\u00a0\u00a01-6 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 844.",
+        "Advanced Seminar and Supervised Internship in Educational Administration.",
+        "1-6 Credits."
+      ],
+      [
+        "EDUC 845.\u00a0\u00a0Instructional Strategies for Teaching and Learning in Digital Contexts.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 845.",
+        "Instructional Strategies for Teaching and Learning in Digital Contexts.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 846.\u00a0\u00a0Personalized and Adaptive Learning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 846.",
+        "Personalized and Adaptive Learning.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 850.\u00a0\u00a0Change Leadership and Systems Improvement.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 850.",
+        "Change Leadership and Systems Improvement.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 851.\u00a0\u00a0Curriculum Theory.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 851.",
+        "Curriculum Theory.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 852.\u00a0\u00a0Instructional Systems Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 852.",
+        "Instructional Systems Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 853.\u00a0\u00a0Supervision and Instruction.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 853.",
+        "Supervision and Instruction.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 854.\u00a0\u00a0Seminar in Curriculum and Instruction.\u00a0\u00a03 Credits.",
+        "Review and interpretation of existing research in the area of curriculum and instruction.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 854.",
+        "Seminar in Curriculum and Instruction.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 855.\u00a0\u00a0Problems in Curriculum and Instruction.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 855.",
+        "Problems in Curriculum and Instruction.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 856.\u00a0\u00a0Practicum in Curriculum and Instruction.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 856.",
+        "Practicum in Curriculum and Instruction.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 858.\u00a0\u00a0Foundations of Inquiry - Quantitative.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 858.",
+        "Foundations of Inquiry - Quantitative.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 859.\u00a0\u00a0Foundations of Inquiry - Qualitative.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 859.",
+        "Foundations of Inquiry - Qualitative.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 861.\u00a0\u00a0Seminar in Special Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 861.",
+        "Seminar in Special Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 862.\u00a0\u00a0Teaching and Personnel Development.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 862.",
+        "Teaching and Personnel Development.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 864.\u00a0\u00a0Families, Schools, and Child Development: Successful Intervention Strategies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 864.",
+        "Families, Schools, and Child Development: Successful Intervention Strategies.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 865.\u00a0\u00a0College Teaching Internship.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 865.",
+        "College Teaching Internship.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 866.\u00a0\u00a0Policy to Practice.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 866.",
+        "Policy to Practice.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 868.\u00a0\u00a0Advanced Qualitative Analysis and Interpretation.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 868.",
+        "Advanced Qualitative Analysis and Interpretation.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 871.\u00a0\u00a0Seminar in Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 871.",
+        "Seminar in Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 873.\u00a0\u00a0Problems in the Philosophical Foundations of Education.\u00a0\u00a03-21 Credits.",
+        "Provides an opportunity for advanced doctoral students to do independent study under supervision.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0779.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 873.",
+        "Problems in the Philosophical Foundations of Education.",
+        "3-21 Credits."
+      ],
+      [
+        "EDUC 874.\u00a0\u00a0Problems in the Sociological Foundations of Education.\u00a0\u00a03-21 Credits.",
+        "Provides an opportunity for advanced doctoral students to do independent study under supervision.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0772.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 874.",
+        "Problems in the Sociological Foundations of Education.",
+        "3-21 Credits."
+      ],
+      [
+        "EDUC 876.\u00a0\u00a0Histories of School and Schooling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 876.",
+        "Histories of School and Schooling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 877.\u00a0\u00a0Critical Multicultural Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 877.",
+        "Critical Multicultural Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 878.\u00a0\u00a0Seminar in Educational Studies.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 878.",
+        "Seminar in Educational Studies.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 881.\u00a0\u00a0Seminar in Human Development and Individual Differences.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 881.",
+        "Seminar in Human Development and Individual Differences.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 882.\u00a0\u00a0Seminar in Human Learning and Cognition.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 882.",
+        "Seminar in Human Learning and Cognition.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 883.\u00a0\u00a0Case Study Methods.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 883.",
+        "Case Study Methods.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 884.\u00a0\u00a0Statistical Analysis of Educational Data III.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisites,  EDUC\u00a0710 and 784.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 884.",
+        "Statistical Analysis of Educational Data III.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 885.\u00a0\u00a0Secondary Data Analysis.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 885.",
+        "Secondary Data Analysis.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 887.\u00a0\u00a0Teacher Education Seminar for MAT Supervisors.\u00a0\u00a01 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0754 highly recommended but not required.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 887.",
+        "Teacher Education Seminar for MAT Supervisors.",
+        "1 Credits."
+      ],
+      [
+        "EDUC 888.\u00a0\u00a0Introduction to Structural Modeling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 888.",
+        "Introduction to Structural Modeling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 890.\u00a0\u00a0Special Topics in Education.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 890.",
+        "Special Topics in Education.",
+        "1-3 Credits."
+      ],
+      [
+        "EDUC 891.\u00a0\u00a0Educational Policy Doctoral Seminar.\u00a0\u00a03 Credits.",
+        "Provides for seminar treatment of appropriate topics related to education policy.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 891.",
+        "Educational Policy Doctoral Seminar.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 892.\u00a0\u00a0Seminar in Educational Studies.\u00a0\u00a03-6 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 892.",
+        "Seminar in Educational Studies.",
+        "3-6 Credits."
+      ],
+      [
+        "EDUC 893.\u00a0\u00a0Foundations of Leadership.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 893.",
+        "Foundations of Leadership.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 894.\u00a0\u00a0Item Response Theory.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0784 or PSYC\u00a0831.",
+        "Grading Status: Letter grade.",
+        "Same as: PSYC\u00a0894."
+      ],
+      [
+        "EDUC 894.",
+        "Item Response Theory.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 902.\u00a0\u00a0Sociology of School Improvement.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 902.",
+        "Sociology of School Improvement.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 904.\u00a0\u00a0Exploring Representations of Education in Popular Culture.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 904.",
+        "Exploring Representations of Education in Popular Culture.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 905.\u00a0\u00a0Leading Organizations to Equitable Practice.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 905.",
+        "Leading Organizations to Equitable Practice.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 906.\u00a0\u00a0Education of African Americans.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 906.",
+        "Education of African Americans.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 909.\u00a0\u00a0Applied Quantitative Methods in Curriculum and Teacher Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 909.",
+        "Applied Quantitative Methods in Curriculum and Teacher Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 913.\u00a0\u00a0Language, Identity, and Power.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 913.",
+        "Language, Identity, and Power.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 915.\u00a0\u00a0Introduction to Learning Sciences.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 915.",
+        "Introduction to Learning Sciences.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 918.\u00a0\u00a0Introduction to Cognitive Science and Sociocultural Perspectives on Learning.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 918.",
+        "Introduction to Cognitive Science and Sociocultural Perspectives on Learning.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 919.\u00a0\u00a0Design of Technology-Enhanced Learning Environments.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Requisites: Prerequisite,  EDUC\u00a0824 or equivalent.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 919.",
+        "Design of Technology-Enhanced Learning Environments.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 930.\u00a0\u00a0Economics of Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 930.",
+        "Economics of Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 931.\u00a0\u00a0School Law and Public Policy.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 931.",
+        "School Law and Public Policy.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 935.\u00a0\u00a0Multilevel Modeling.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 935.",
+        "Multilevel Modeling.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 945.\u00a0\u00a0Intellectual Histories of Educational Thought.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 945.",
+        "Intellectual Histories of Educational Thought.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 947.\u00a0\u00a0Diversity in Teacher Education.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 947.",
+        "Diversity in Teacher Education.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 949.\u00a0\u00a0Institutional Logics of Curriculum and Teaching.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 949.",
+        "Institutional Logics of Curriculum and Teaching.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 950A.\u00a0\u00a0Advanced Curriculum in the Humanities.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 950A.",
+        "Advanced Curriculum in the Humanities.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 954.\u00a0\u00a0Leading Organizations to Equitable Practice.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 954.",
+        "Leading Organizations to Equitable Practice.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 956.\u00a0\u00a0Applied Quantitative Methods.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 956.",
+        "Applied Quantitative Methods.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 973.\u00a0\u00a0Schooling Experiences of Men of Color.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 973.",
+        "Schooling Experiences of Men of Color.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 974.\u00a0\u00a0Critical Social Theory.\u00a0\u00a03 Credits.",
+        "Rules & Requirements",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 974.",
+        "Critical Social Theory.",
+        "3 Credits."
+      ],
+      [
+        "EDUC 990.\u00a0\u00a0Supervised Research.\u00a0\u00a01-3 Credits.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit; may be repeated in the same term for different topics.",
+        "Grading Status: Letter grade."
+      ],
+      [
+        "EDUC 992.\u00a0\u00a0Master's (Non-Thesis).\u00a0\u00a03 Credits.",
+        "Focuses on the development of a master's project or a major paper other than a thesis.",
+        "Rules & Requirements",
+        "Repeat Rules: May be repeated for credit."
+      ],
+      [
+        "EDUC 992.",
+        "Master's (Non-Thesis).",
+        "3 Credits."
+      ],
+      [
+        "awareness and self",
+        "advocacy to maximize their potential and envision multiple pathways for further education and life",
+        "work balance. Sophomores, juniors, and seniors only."
+      ],
+      [
+        "on and behind",
+        "scenes experience in serving LatinxEd and its youth",
+        "serving initiatives and programs. Service"
+      ]
+    ],
+    "https://www.unf.edu/catalog/colleges/coehs/Teaching-Learning-and-Curriculum.html": [
+      [
+        "Undergraduate Programs",
+        "Graduate Programs",
+        "Certificate Programs",
+        "Minor Programs",
+        "Faculty"
+      ],
+      [
+        "Early Childhood Development (does not lead to teacher licensure)",
+        "PreK-Primary Licensure (leads to age 3 to grade 3 teacher certification)",
+        "Elementary Education (K-6) Program",
+        "Biology Education (6-12) Program",
+        "Chemistry Education (6-12) Program",
+        "English Education (6-12) Program",
+        "Mathematics Education (6-12) Program",
+        "Middle School Education: Mathematics and Science Program",
+        "Physics Education (6-12) Program",
+        "Social Studies Education (6-12) Program",
+        "Exceptional Student Education (K-12) Program",
+        "Deaf Education (K-12) Program"
+      ],
+      [
+        "Advanced Secondary Education",
+        "Early Childhood Education",
+        "Early Childhood Educational Leadership",
+        "Elementary STEM",
+        "Reading and Advanced Literacy",
+        "Master of Arts in Teaching (Elementary Education)",
+        "Biology Education (6-12)",
+        "Chemistry Education (6-12)",
+        "English/Language Arts Education (6-12)",
+        "Mathematics Education (6-12)",
+        "Middle School Education: Mathematics and Science (5-9)",
+        "Physics Education (6-12)",
+        "Social Studies Education (6-12)",
+        "Master of Arts in Teaching (Exceptional Student Education)"
+      ],
+      [
+        "Advanced Secondary Education",
+        "Early Childhood Education",
+        "Early Childhood Educational Leadership",
+        "Elementary STEM",
+        "Reading and Advanced Literacy"
+      ],
+      [
+        "Biology Education (6-12)",
+        "Chemistry Education (6-12)",
+        "English/Language Arts Education (6-12)",
+        "Mathematics Education (6-12)",
+        "Middle School Education: Mathematics and Science (5-9)",
+        "Physics Education (6-12)",
+        "Social Studies Education (6-12)"
+      ],
+      [
+        "Graduate Certificate in Early Childhood Education",
+        "The Whole Child Graduate Certificate",
+        "Graduate Certificate for Professionals and Students",
+        "Graduate Certificate in Elementary STEM Education",
+        "Graduate Certificate in Advanced Literacy Practices for Engaging Learners",
+        "Graduate Certificate in Teaching Diverse Learners",
+        "Graduate Certificate in Teacher Inquiry",
+        "Graduate Certificate in Advanced Secondary Instruction",
+        "Post Baccalaureate Certificate in Deaf Education"
+      ],
+      [
+        "Early Childhood Education",
+        "Professional Education",
+        "TESOL",
+        "Deaf Education"
+      ],
+      [
+        "Mission",
+        "Programs",
+        "Programs of Study",
+        "Department of Childhood Teaching, Learning and Curriculum Faculty",
+        "UNDERGRADUATE",
+        "GRADUATE"
+      ],
+      [
+        "College Overview",
+        "Contact Information",
+        "Academic Advising",
+        "Academic Policies",
+        "Degree Requirements",
+        "Majors",
+        "Certificates",
+        "Minors",
+        "Academic Policies",
+        "Degree Requirements",
+        "Degrees",
+        "Certificates"
+      ]
+    ],
+    "https://catalog.umt.edu/courses/edu/": [
+      [
+        "12 student performance to determine teaching effectiveness. Includes on",
+        "campus and/or on",
+        "line planning, conducting, and analyzing classroom practice. Level: Undergraduate",
+        "Graduate"
+      ],
+      [
+        "12 Mathematics 3 cr. Offered autumn.  Methods for teaching mathematics in grades 5",
+        "12 Business Subjects: 4 cr. Offered autumn.  Methods for teaching business subjects in grades 5",
+        "12 focusing on content",
+        "based curricula.  Computer Science 5",
+        "12 school systems. This course presents best practices in pedagogy for teaching and assessing 5",
+        "12 students in computer science.  Level: Undergraduate",
+        "Graduate"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:49:46"
+}

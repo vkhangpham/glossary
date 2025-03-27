@@ -1,0 +1,615 @@
+{
+  "level1_term": "neurology",
+  "url_verification_status": {
+    "https://medresearch.umich.edu/departments/neurology/education": true,
+    "https://med.stanford.edu/neurology/education.html": false,
+    "https://med.nyu.edu/departments-institutes/neurology/research/": true,
+    "https://www.neurology.pitt.edu/training": false,
+    "https://neurology.duke.edu/education/residency-program/research-training-and-leadership": true,
+    "https://medicine.yale.edu/neurology/research/": true,
+    "https://neurology.uw.edu/education/residency/optional-tracks/": false,
+    "https://www.neurology.northwestern.edu/education/residents/didactic-curriculum.html": false,
+    "https://neurology.duke.edu/research": false,
+    "https://www.pediatrics.pitt.edu/education/residencies/child-neurology-residency/key-elements/teaching-program": true,
+    "https://medschool.cuanschutz.edu/neurology": true,
+    "https://med.nyu.edu/departments-institutes/neurology/education": false,
+    "https://medicine.ouhsc.edu/academic-departments/neurology/education-training": false,
+    "https://www.urmc.rochester.edu/neurology/education-training": false,
+    "https://med.umn.edu/neurology/education-training/medical-students": false,
+    "https://www.uab.edu/medicine/neurology/education/fellowships/movement/education-teaching": false,
+    "https://neurology.uchicago.edu/research-landing-page": true,
+    "https://www.neurology.columbia.edu/research": true,
+    "https://neurology.wisc.edu/": false
+  },
+  "verified_lists_per_url": {
+    "https://medresearch.umich.edu/departments/neurology/education": 2,
+    "https://med.stanford.edu/neurology/education.html": 0,
+    "https://med.nyu.edu/departments-institutes/neurology/research/": 1,
+    "https://www.neurology.pitt.edu/training": 0,
+    "https://neurology.duke.edu/education/residency-program/research-training-and-leadership": 1,
+    "https://medicine.yale.edu/neurology/research/": 1,
+    "https://neurology.uw.edu/education/residency/optional-tracks/": 0,
+    "https://www.neurology.northwestern.edu/education/residents/didactic-curriculum.html": 0,
+    "https://neurology.duke.edu/research": 0,
+    "https://www.pediatrics.pitt.edu/education/residencies/child-neurology-residency/key-elements/teaching-program": 1,
+    "https://medschool.cuanschutz.edu/neurology": 1,
+    "https://med.nyu.edu/departments-institutes/neurology/education": 0,
+    "https://medicine.ouhsc.edu/academic-departments/neurology/education-training": 0,
+    "https://www.urmc.rochester.edu/neurology/education-training": 0,
+    "https://med.umn.edu/neurology/education-training/medical-students": 0,
+    "https://www.uab.edu/medicine/neurology/education/fellowships/movement/education-teaching": 0,
+    "https://neurology.uchicago.edu/research-landing-page": 4,
+    "https://www.neurology.columbia.edu/research": 1,
+    "https://neurology.wisc.edu/": 0
+  },
+  "total_lists_per_url": {
+    "https://medresearch.umich.edu/departments/neurology/education": 5,
+    "https://med.stanford.edu/neurology/education.html": 1,
+    "https://med.nyu.edu/departments-institutes/neurology/research/": 2,
+    "https://www.neurology.pitt.edu/training": 2,
+    "https://neurology.duke.edu/education/residency-program/research-training-and-leadership": 7,
+    "https://medicine.yale.edu/neurology/research/": 2,
+    "https://neurology.uw.edu/education/residency/optional-tracks/": 4,
+    "https://www.neurology.northwestern.edu/education/residents/didactic-curriculum.html": 1,
+    "https://neurology.duke.edu/research": 1,
+    "https://www.pediatrics.pitt.edu/education/residencies/child-neurology-residency/key-elements/teaching-program": 3,
+    "https://medschool.cuanschutz.edu/neurology": 4,
+    "https://med.nyu.edu/departments-institutes/neurology/education": 2,
+    "https://medicine.ouhsc.edu/academic-departments/neurology/education-training": 2,
+    "https://www.urmc.rochester.edu/neurology/education-training": 1,
+    "https://med.umn.edu/neurology/education-training/medical-students": 1,
+    "https://www.uab.edu/medicine/neurology/education/fellowships/movement/education-teaching": 2,
+    "https://neurology.uchicago.edu/research-landing-page": 7,
+    "https://www.neurology.columbia.edu/research": 1,
+    "https://neurology.wisc.edu/": 1
+  },
+  "verified_lists_ids": {
+    "https://medresearch.umich.edu/departments/neurology/education": [
+      0,
+      2
+    ],
+    "https://med.stanford.edu/neurology/education.html": [],
+    "https://med.nyu.edu/departments-institutes/neurology/research/": [
+      0
+    ],
+    "https://www.neurology.pitt.edu/training": [],
+    "https://neurology.duke.edu/education/residency-program/research-training-and-leadership": [
+      1
+    ],
+    "https://medicine.yale.edu/neurology/research/": [
+      1
+    ],
+    "https://neurology.uw.edu/education/residency/optional-tracks/": [],
+    "https://www.neurology.northwestern.edu/education/residents/didactic-curriculum.html": [],
+    "https://neurology.duke.edu/research": [],
+    "https://www.pediatrics.pitt.edu/education/residencies/child-neurology-residency/key-elements/teaching-program": [
+      0
+    ],
+    "https://medschool.cuanschutz.edu/neurology": [
+      1
+    ],
+    "https://med.nyu.edu/departments-institutes/neurology/education": [],
+    "https://medicine.ouhsc.edu/academic-departments/neurology/education-training": [],
+    "https://www.urmc.rochester.edu/neurology/education-training": [],
+    "https://med.umn.edu/neurology/education-training/medical-students": [],
+    "https://www.uab.edu/medicine/neurology/education/fellowships/movement/education-teaching": [],
+    "https://neurology.uchicago.edu/research-landing-page": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "https://www.neurology.columbia.edu/research": [
+      0
+    ],
+    "https://neurology.wisc.edu/": []
+  },
+  "num_urls": 40,
+  "num_lists": 49,
+  "url_to_lists": {
+    "https://medresearch.umich.edu/departments/neurology/education": [
+      [
+        "Medical Student Programs",
+        "Message from the Program Director",
+        "Apply",
+        "Clinical Rotations",
+        "Preliminary Year",
+        "Educational Opportunities",
+        "Residency Diversity, Equity & Inclusion",
+        "Resident Wellness",
+        "Resident Alumni",
+        "Epilepsy | Clinical Neurophysiology",
+        "Headache Medicine",
+        "Movement Disorders",
+        "Multiple Sclerosis & Clinical Neuroimmunology",
+        "Neuro-Oncology",
+        "Neuromuscular",
+        "Sleep Medicine",
+        "Sports Neurology",
+        "Vascular Neurology | Stroke",
+        "Clinical Neuroscientist Training Program\n\n\n\nCurrent & Past Awardees",
+        "Current & Past Awardees",
+        "Clinical & Basic Neuroscience Training",
+        "Facilities & Spaces"
+      ],
+      [
+        "Message from the Program Director",
+        "Apply",
+        "Clinical Rotations",
+        "Preliminary Year",
+        "Educational Opportunities",
+        "Residency Diversity, Equity & Inclusion",
+        "Resident Wellness",
+        "Resident Alumni"
+      ],
+      [
+        "Epilepsy | Clinical Neurophysiology",
+        "Headache Medicine",
+        "Movement Disorders",
+        "Multiple Sclerosis & Clinical Neuroimmunology",
+        "Neuro-Oncology",
+        "Neuromuscular",
+        "Sleep Medicine",
+        "Sports Neurology",
+        "Vascular Neurology | Stroke"
+      ],
+      [
+        "Clinical Neuroscientist Training Program\n\n\n\nCurrent & Past Awardees",
+        "Current & Past Awardees",
+        "Clinical & Basic Neuroscience Training"
+      ],
+      [
+        "accredited, and headache, neuro",
+        "oncology, and neurocritical care fellowships are UCNS",
+        "accredited."
+      ]
+    ],
+    "https://med.stanford.edu/neurology/education.html": [
+      [
+        "represented. Certain areas are unique strengths, including our Neurology",
+        "based\u00a0neuro",
+        "oncology group\u00a0and our neuro",
+        "autonomic program.\u00a0 Stanford boasts a world",
+        "graduate training in the clinical neurosciences."
+      ]
+    ],
+    "https://med.nyu.edu/departments-institutes/neurology/research/": [
+      [
+        "autonomic disorders",
+        "child neurology",
+        "cognitive neurology",
+        "epilepsy",
+        "headache",
+        "intraoperative monitoring",
+        "movement disorders",
+        "multiple sclerosis",
+        "neurocritical care",
+        "neurogenetics",
+        "neuromuscular medicine",
+        "neuro-ophthalmology",
+        "neuropsychology",
+        "stroke"
+      ],
+      [
+        "80\nongoing clinical trials in neurology",
+        "$41.5M\nin new and continuing grant funding",
+        "29\nresident presentations at local and national scientific meetings"
+      ]
+    ],
+    "https://www.neurology.pitt.edu/training": [
+      [
+        "Didactic Conferences",
+        "Diversity, Equity and Inclusion (DEI) Lectures",
+        "Noon Didactic Conference",
+        "Neuroradiology lectures",
+        "Noon Report",
+        "Neurology Grand Rounds",
+        "Subspecialty Conferences",
+        "Wellness Lectures"
+      ],
+      [
+        "year (PGY 1",
+        "4) residency training program or a three",
+        "year (PGY 2"
+      ]
+    ],
+    "https://neurology.duke.edu/education/residency-program/research-training-and-leadership": [
+      [
+        "Journal Club",
+        "Evidence Based Neurology",
+        "Neuro-ICU Conference"
+      ],
+      [
+        "Neuromuscular Conference",
+        "Clinical Neurophysiology Conference",
+        "Pediatric Neurology Conference"
+      ],
+      [
+        "Grand Rounds",
+        "Stroke Conference",
+        "Behavioral Neurology Conference",
+        "Neuro-oncology Conference."
+      ],
+      [
+        "Adult learning theory and active learning strategies",
+        "Effective lecturing and delivering engaging presentations",
+        "Providing constructive feedback and remediation",
+        "Promoting diversity, equity, and inclusion in education",
+        "Teaching with technology and optimizing AI tools",
+        "Career planning for education leadership roles"
+      ],
+      [
+        "Utility",
+        "Main navigation",
+        "Utility",
+        "Sidebar navigation"
+      ],
+      [
+        "PGY-2 residents:",
+        "PGY-3 residents:",
+        "PGY-4 residents:"
+      ],
+      [
+        "2 residents and larger groups as PGY",
+        "4 residents. Residents are also heavily involved in the day",
+        "3 and PGY",
+        "4 residents take the lead in selecting topics for conferences."
+      ]
+    ],
+    "https://medicine.yale.edu/neurology/research/": [
+      [
+        "Biederer Lab",
+        "Blumenfeld Lab",
+        "Cafferty LabFunctional Neuroplasticity",
+        "Chandra Lab",
+        "de Havenon Lab",
+        "Falcone Lab",
+        "Fredericks Lab",
+        "Grutzendler Lab",
+        "Gunasekara Lab",
+        "Hafler Lab",
+        "Kim Lab",
+        "Krishnakumar Lab",
+        "Longbrake Lab",
+        "Magid-Bernstein Lab",
+        "McAlpine Lab",
+        "Mishra Lab",
+        "Navaratnam Lab",
+        "O'Connor Lab",
+        "Petersen Lab",
+        "Pitt Lab",
+        "Rangaraju Lab",
+        "Roy Lab",
+        "Sansing Lab",
+        "Spudich Lab",
+        "Strittmatter Lab",
+        "Sumida Lab",
+        "Tinaz Lab",
+        "Zhang Lab"
+      ],
+      [
+        "Primary Care Neurology and Headache Medicine",
+        "Neurological Infections and Global Neurology",
+        "Movement Disorders - Parkinson\u2019s Disease & Essential Tremor",
+        "Neurocritical Care and Emergency Neurology",
+        "Neurodegenerative Disorders - Dementia/Alzheimer's Disease",
+        "Neuro-Immunology - Multiple Sclerosis Center",
+        "Yale MDA-ALS/Motor Neuron Disease Clinic",
+        "Neuro-Oncology - Brain Tumor Center",
+        "Epilepsy and EEG",
+        "Vascular Neurology - Stroke Center",
+        "West Haven VA Medical Center"
+      ]
+    ],
+    "https://neurology.uw.edu/education/residency/optional-tracks/": [
+      [
+        "Practice through experiential learning in multiple teaching settings",
+        "Improve specific teaching skills \u2013 both content and delivery",
+        "Benefit from guided professional development with paired mentorship",
+        "Learn the requirements to successfully advance as faculty on Clin-Ed Track",
+        "Develop a Teaching Portfolio that can be maintained throughout future career",
+        "Promote scholarship with longitudinal education projects"
+      ],
+      [
+        "Residents as Teachers",
+        "Professional Development",
+        "Longitudinal Scholarly Project"
+      ],
+      [
+        "Designed to prepare residents for a career with emphasis in clinical education.",
+        "Residents submit applications during Month of Learning, at the end of their intern year.",
+        "Clinician Educator Track (CET) is built on three foundational components:",
+        "Selected weekly teaching opportunities during Education elective.",
+        "Purpose:",
+        "What the program includes:"
+      ],
+      [
+        "VA IM Morning ReportTuesday",
+        "Neuro Noon Conference, N1 didacticsWednesday",
+        "Neurology Lecture Series, HMC bedside teaching, VA IM Chief of MedicineThursday",
+        "PM MS4 Clerkship didactics, N2/N3 didacticsFriday",
+        "VA IM Morning Report, PM MS2 MBB small groups (October)"
+      ]
+    ],
+    "https://www.neurology.northwestern.edu/education/residents/didactic-curriculum.html": [
+      [
+        "Curriculum Highlights",
+        "Clinical Neurophysiology Rotation",
+        "Evidence-Based Medicine Curriculum",
+        "July Curriculum & Boot Camp",
+        "Neuroanatomy",
+        "Teaching Conferences",
+        "Quality Improvement",
+        "Business of Medicine",
+        "\"How to Teach\" Curriculum",
+        "Quick Links"
+      ]
+    ],
+    "https://neurology.duke.edu/research": [
+      [
+        "Utility",
+        "Main navigation",
+        "Utility",
+        "Research at Duke Neurology",
+        "Recent Neurology Publications"
+      ]
+    ],
+    "https://www.pediatrics.pitt.edu/education/residencies/child-neurology-residency/key-elements/teaching-program": [
+      [
+        "Education",
+        "Residencies",
+        "Child Neurology Residency",
+        "Key Elements"
+      ],
+      [
+        "Office of the Chair",
+        "Our Affiliated Hospitals",
+        "Pitt Academic Resources"
+      ],
+      [
+        "ophthalmology, neuro",
+        "otology, neuropathology, neuro",
+        "Critical Care."
+      ]
+    ],
+    "https://medschool.cuanschutz.edu/neurology": [
+      [
+        "Department of Neurology",
+        "Welcome to the Department of Neurology",
+        "Welcome to the Department of Neurology",
+        "Letter from the Chairman",
+        "Neurology News"
+      ],
+      [
+        "Tools & Resources",
+        "CU Campuses",
+        "CU Anschutz Medical Campus",
+        "School of Medicine",
+        "Patient Information",
+        "Neurology Residency Program",
+        "Neurology Fellowship Program",
+        "Neurology Basic Science Research",
+        "Neurology Clinical Research",
+        "Neurology Grand Rounds",
+        "Kenneth L. Tyler, MD, welcomes you to the Department of Neurology",
+        "Neurology Subspecialties",
+        "Consultative Neurology",
+        "CU Alzheimer's and Cognition Center",
+        "Epilepsy/Neuro-Diagnostics",
+        "Epilepsy/NES (Non-Epileptic Seizures)",
+        "Headache/Pain Medicine",
+        "Movement Disorders",
+        "Neuro-Behavior/Memory Disorders",
+        "Neuro-Immunology/Multiple Sclerosis",
+        "Neuro-Infectious Disease",
+        "Neuro-Muscular Medicine",
+        "Neuro-Oncology",
+        "Neuro-Ophthalmology",
+        "Neuro-Palliative Care",
+        "Neuro-Vascular/Stroke",
+        "CU First in U.S. to Offer New Deep Brain Stimulation Treatment for Parkinson\u2019s Disease Patients",
+        "Measles Cases Are on the Rise \u2212 Here\u2019s How to Make Sure You\u2019re Protected",
+        "FDA Oks First Adaptive DBS System for Parkinson\u2019s Disease",
+        "Neurology (SOM)"
+      ],
+      [
+        "Neurology Clinic - University of Colorado Hospital",
+        "Phone:\u00a0 720-848-2080",
+        "Neurology Administration",
+        "E-Mail:\u00a0 Neurology-Administrative@ucdenver.edu",
+        "Webmaster"
+      ],
+      [
+        "DiagnosticsEpilepsy/NES (Non",
+        "Epileptic Seizures)Headache/Pain MedicineMovement Disorders Neuro",
+        "Behavior/Memory DisordersNeuro",
+        "Immunology/Multiple SclerosisNeuro",
+        "Infectious DiseaseNeuro",
+        "Muscular MedicineNeuro",
+        "OncologyNeuro",
+        "OphthalmologyNeuro",
+        "Palliative CareNeuro",
+        "Vascular/Stroke"
+      ]
+    ],
+    "https://med.nyu.edu/departments-institutes/neurology/education": [
+      [
+        "Steven L. Galetta, MD",
+        "Laura J. Balcer, MD, MSCE",
+        "Koto Ishida, MD",
+        "Arielle M. Kurzweil, MD",
+        "Robert W. Charlson, MD",
+        "Alexandra Kvernland, MD",
+        "Nada G. Abou-Fayssal, MD",
+        "Elina Zakin, MD",
+        "Margot Collier, MHA",
+        "Eridiz Diaz",
+        "Meredith Marsini, MA",
+        "Emmanuel Rosario",
+        "Kimberly Kaloroumakis, MS",
+        "Neurology Residency Training",
+        "Neurology Fellowships",
+        "Life at NYU Grossman School of Medicine",
+        "Diversity and Inclusion",
+        "Follow Us on Twitter",
+        "Follow Us on Instagram",
+        "Explore NYU Langone",
+        "Share by Email"
+      ],
+      [
+        "Margot Collier, MHA\n\n\n\nAdministrative Manager, Department of Neurology\nMargot.Collier@NYULangone.org",
+        "Emmanuel Rosario\n\n\n\nResidency Coordinator, Brooklyn\nEmmanuel.Rosario@NYULangone.org",
+        "Kimberly Kaloroumakis, MS\n\n\n\nFellowship Program Coordinator\nKimberly.Kaloroumakis@NYULangone.org"
+      ]
+    ],
+    "https://medicine.ouhsc.edu/academic-departments/neurology/education-training": [
+      [
+        "2014 \u2013 David Lee Gordon \u2013 Consortium of Neurology Clerkship Directors Teaching Award",
+        "2014 \u2013 Anthony J. Vaughn \u2013 A.B. Baker Teacher Recognition Award",
+        "2015 \u2013 Aaron K. Farrow \u2013 A.B. Baker Teacher Recognition Award",
+        "2022\u00a0\u2013\u00a0Ahmad Al-Awwad \u2013\u00a0A.B. Baker Teacher Recognition Award"
+      ],
+      [
+        "OU College of Medicine",
+        "American Academy of Neurology",
+        "American Neurological Association"
+      ]
+    ],
+    "https://www.urmc.rochester.edu/neurology/education-training": [
+      [
+        "Neurology Residency Program",
+        "Pediatric Neurology Residency",
+        "Fellowship Programs"
+      ]
+    ],
+    "https://med.umn.edu/neurology/education-training/medical-students": [
+      [
+        "NEUR 7120\u00a0- Neurology Research",
+        "NEUR 7520\u00a0- Pediatric Neurology",
+        "NEUR 7565\u00a0- Neurology Subspecialties",
+        "NEUR 7599\u00a0- Acting Intern Rotation",
+        "NEUR 7600\u00a0- Epilepsy Diagnosis and Treatment"
+      ]
+    ],
+    "https://www.uab.edu/medicine/neurology/education/fellowships/movement/education-teaching": [
+      [
+        "MS2 Neuroscience Course small group preceptors",
+        "MS3 noon conference and physical exam teaching sessions",
+        "Neurology resident noon conferences",
+        "Staffing the Neurology Resident Cooper Green clinic."
+      ],
+      [
+        "MS2 Neuroscience Course small group preceptors",
+        "MS3 noon conference and physical exam teaching sessions",
+        "Neurology resident noon conferences",
+        "Staffing the Neurology Resident Cooper Green clinic."
+      ]
+    ],
+    "https://neurology.uchicago.edu/research-landing-page": [
+      [
+        "Underlying neuronal mechanisms in epilepsy (synchrony, recruitment, oscillation, weak coupling);",
+        "Relationships between neuronal activity at different scales (neuron, network, brain);",
+        "Monitoring of the nervous system in the intensive care environment (EEG, evoked potential)"
+      ],
+      [
+        "The Neurological Complications of Acute Liver Failure",
+        "Brain Swelling from Large Hemispheric Infarctions",
+        "Management of Patients with Intracerebral Hemorrhage",
+        "Neurological Prognostication, Brain Death and Neuroethics",
+        "Cerebrovascular Research Projects",
+        "Brain Death",
+        "Anoxic Encephalopathy",
+        "Penetrating Brain Injury",
+        "Blood Pressure in Stroke",
+        "Intracranial Pressure (ICP) Physiology",
+        "Imaging"
+      ],
+      [
+        "Alzheimer's Disease",
+        "Amyotrophic Lateral Sclerosis (ALS)",
+        "Multiple Sclerosis",
+        "Neural Plasticity & Neuro-Repair",
+        "Parkinson's Disease",
+        "Peripheral Neuropathy",
+        "Prion Disease",
+        "Spinocerebellar Ataxia & Ion Channel Disorders"
+      ],
+      [
+        "Delineation of genes important for peripheral nerve development and degeneration (Brian Popko, PhD);",
+        "Pathogenetic mechanisms in inflammatory neuropathies and myasthenia (Betty Soliven, MD);",
+        "Congenital myasthenia and channelopathies (Christopher Gomez, MD PhD)."
+      ],
+      [
+        "Lectures on neuromuscular diseases and electromyography",
+        "Monthly Neuromuscular Pathology Conference",
+        "Teaching in the neuromuscular clinics",
+        "Annual EMG self assessment examination",
+        "Neurobiology of Disease Course",
+        "Neuromuscular Vignettes:https://voices.uchicago.edu/neuromuscularcasevignettes1/",
+        "Presentations: link to recent bootcamp and Neuromuscular conference presentations"
+      ],
+      [
+        "Overview:",
+        "Neurophysiology Laboratory Testing:",
+        "Basic Research:",
+        "Basic research on Neuromuscular Diseases at The University of Chicago includes:",
+        "Clinical Research & trials:",
+        "PI-initiated studies:",
+        "Clinical trials (ongoing):",
+        "PI: Betty Soliven, MD",
+        "Sponsor: Alexion Pharma",
+        "Study coordinator: Usman Alvi",
+        "Status: \u00a0enrollment to be started soon",
+        "Upcoming clinical trials:",
+        "PI: Kourosh Rezania, MD",
+        "Sponsor: UCB Biopharma SPRL",
+        "Study coordinator: Usman Alvi",
+        "Status: pending",
+        "Closed Clinical Trials:",
+        "Effects of Oral levosimendan (ODM-109) on respiratory function in patients with ALS",
+        "PI: Kourosh Rezania, MD",
+        "Sponsor: Orion Pharma",
+        "Study coordinator: Usman Alvi",
+        "in patients with ALS",
+        "Status: enrollment stopped",
+        "Teaching Activities:",
+        "The neuromuscular educational program consists of:",
+        "Meet the Neuromuscular Team",
+        "Useful Links:",
+        "ALSA Chicago Chapter website: http://webchicago.alsa.org/site/PageServer?pagename=CHI_homepage",
+        "Make a Gift",
+        "Please mail donations to:",
+        "The University of Chicago",
+        "Gift Administration and Business Data",
+        "5235 S. Harper Court, 4th Floor",
+        "Chicago, IL 60615",
+        "You may also make an online gift via our secure site:",
+        "https://givetomedicine.uchicago.edu/give/ways-to-give",
+        "For questions about giving, please contact:\nPhone: 773.702.6565",
+        "University of Chicago is a non-profit organization and gifts are tax deductible."
+      ],
+      [
+        "Blind, Placebo",
+        "Controlled, Multicenter Study to Evaluate the Safety and Efficacy of Ravulizumab in Complement",
+        "Inhibitor",
+        "Na\u00efve Adult Patients With Generalized Myasthenia Gravis."
+      ]
+    ],
+    "https://www.neurology.columbia.edu/research": [
+      [
+        "Clinical Trials",
+        "Learn about the clinical trials currently available through the Department of Neurology at CUIMC",
+        "Clinical Trials",
+        "Clinical Trials"
+      ]
+    ],
+    "https://neurology.wisc.edu/": [
+      [
+        "MAKE A GIFT",
+        "RESIDENCY PROGRAM",
+        "GRAND ROUNDS"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:21:50"
+}

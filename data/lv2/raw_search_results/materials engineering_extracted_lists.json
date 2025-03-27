@@ -1,0 +1,1671 @@
+{
+  "level1_term": "materials engineering",
+  "url_verification_status": {
+    "https://www.mccormick.northwestern.edu/materials-science/": true,
+    "https://matse.illinois.edu/": false,
+    "https://engineering.purdue.edu/MSE/research/areas": true,
+    "https://www.mse.cornell.edu/mse/research/research-topics": true,
+    "https://catalog.mit.edu/schools/engineering/materials-science-engineering/": true,
+    "https://mse.osu.edu/research": true,
+    "https://www.mse.iastate.edu/research/focus-areas/": true,
+    "https://guide.wisc.edu/graduate/materials-science-engineering/materials-science-engineering-ms/": false,
+    "https://dmse.mit.edu/": false,
+    "https://seas.harvard.edu/materials-science-mechanical-engineering": true,
+    "https://matse.illinois.edu/admissions/graduate": false,
+    "https://engineering.jhu.edu/materials/": false,
+    "https://imse.washu.edu/graduate-program/index.html": true,
+    "https://mse.engin.umich.edu/graduate": true,
+    "https://mse.engineering.arizona.edu/about-us": false,
+    "https://www.lsu.edu/eng/academics/graduate-programs/engrsci/mse.php": true,
+    "https://catalog.uic.edu/gcat/colleges-schools/engineering/mate/": false,
+    "https://mse.ufl.edu/academics/graduate/": false,
+    "https://engineering.dartmouth.edu/areas/materials-science": true,
+    "https://coe.gatech.edu/schools/materials-science-and-engineering": true,
+    "https://www.mse.iastate.edu/research/": false,
+    "https://tickle.utk.edu/mse/": true,
+    "https://mseg.udel.edu/": true,
+    "https://mse.stanford.edu/academics-admissions/doctoral-program": true,
+    "https://graduate.baylor.edu/materialsphd": false,
+    "https://mse.engr.uconn.edu/": true,
+    "https://www.rit.edu/study/materials-science-and-engineering-ms": false,
+    "https://www.clemson.edu/mse/": true,
+    "https://mse.rutgers.edu/": true,
+    "https://catalog.ucsd.edu/curric/MATS.html": false,
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/materialsscienceandengineering/": true,
+    "https://www.uky.edu/academics/masters-doctoral/pigman-college-engineering/materials-science-engineering-graduate": true
+  },
+  "verified_lists_per_url": {
+    "https://www.mccormick.northwestern.edu/materials-science/": 1,
+    "https://matse.illinois.edu/": 0,
+    "https://engineering.purdue.edu/MSE/research/areas": 2,
+    "https://www.mse.cornell.edu/mse/research/research-topics": 4,
+    "https://catalog.mit.edu/schools/engineering/materials-science-engineering/": 4,
+    "https://mse.osu.edu/research": 3,
+    "https://www.mse.iastate.edu/research/focus-areas/": 1,
+    "https://guide.wisc.edu/graduate/materials-science-engineering/materials-science-engineering-ms/": 0,
+    "https://dmse.mit.edu/": 0,
+    "https://seas.harvard.edu/materials-science-mechanical-engineering": 3,
+    "https://matse.illinois.edu/admissions/graduate": 0,
+    "https://engineering.jhu.edu/materials/": 0,
+    "https://imse.washu.edu/graduate-program/index.html": 3,
+    "https://mse.engin.umich.edu/graduate": 2,
+    "https://mse.engineering.arizona.edu/about-us": 0,
+    "https://www.lsu.edu/eng/academics/graduate-programs/engrsci/mse.php": 6,
+    "https://catalog.uic.edu/gcat/colleges-schools/engineering/mate/": 0,
+    "https://mse.ufl.edu/academics/graduate/": 0,
+    "https://engineering.dartmouth.edu/areas/materials-science": 1,
+    "https://coe.gatech.edu/schools/materials-science-and-engineering": 4,
+    "https://www.mse.iastate.edu/research/": 0,
+    "https://tickle.utk.edu/mse/": 1,
+    "https://mseg.udel.edu/": 1,
+    "https://mse.stanford.edu/academics-admissions/doctoral-program": 1,
+    "https://graduate.baylor.edu/materialsphd": 0,
+    "https://mse.engr.uconn.edu/": 1,
+    "https://www.rit.edu/study/materials-science-and-engineering-ms": 0,
+    "https://www.clemson.edu/mse/": 2,
+    "https://mse.rutgers.edu/": 1,
+    "https://catalog.ucsd.edu/curric/MATS.html": 0,
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/materialsscienceandengineering/": 7,
+    "https://www.uky.edu/academics/masters-doctoral/pigman-college-engineering/materials-science-engineering-graduate": 1
+  },
+  "total_lists_per_url": {
+    "https://www.mccormick.northwestern.edu/materials-science/": 3,
+    "https://matse.illinois.edu/": 1,
+    "https://engineering.purdue.edu/MSE/research/areas": 2,
+    "https://www.mse.cornell.edu/mse/research/research-topics": 6,
+    "https://catalog.mit.edu/schools/engineering/materials-science-engineering/": 63,
+    "https://mse.osu.edu/research": 4,
+    "https://www.mse.iastate.edu/research/focus-areas/": 1,
+    "https://guide.wisc.edu/graduate/materials-science-engineering/materials-science-engineering-ms/": 6,
+    "https://dmse.mit.edu/": 3,
+    "https://seas.harvard.edu/materials-science-mechanical-engineering": 4,
+    "https://matse.illinois.edu/admissions/graduate": 8,
+    "https://engineering.jhu.edu/materials/": 1,
+    "https://imse.washu.edu/graduate-program/index.html": 7,
+    "https://mse.engin.umich.edu/graduate": 5,
+    "https://mse.engineering.arizona.edu/about-us": 1,
+    "https://www.lsu.edu/eng/academics/graduate-programs/engrsci/mse.php": 9,
+    "https://catalog.uic.edu/gcat/colleges-schools/engineering/mate/": 1,
+    "https://mse.ufl.edu/academics/graduate/": 3,
+    "https://engineering.dartmouth.edu/areas/materials-science": 2,
+    "https://coe.gatech.edu/schools/materials-science-and-engineering": 4,
+    "https://www.mse.iastate.edu/research/": 1,
+    "https://tickle.utk.edu/mse/": 1,
+    "https://mseg.udel.edu/": 2,
+    "https://mse.stanford.edu/academics-admissions/doctoral-program": 1,
+    "https://graduate.baylor.edu/materialsphd": 1,
+    "https://mse.engr.uconn.edu/": 1,
+    "https://www.rit.edu/study/materials-science-and-engineering-ms": 1,
+    "https://www.clemson.edu/mse/": 4,
+    "https://mse.rutgers.edu/": 1,
+    "https://catalog.ucsd.edu/curric/MATS.html": 2,
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/materialsscienceandengineering/": 11,
+    "https://www.uky.edu/academics/masters-doctoral/pigman-college-engineering/materials-science-engineering-graduate": 5
+  },
+  "verified_lists_ids": {
+    "https://www.mccormick.northwestern.edu/materials-science/": [
+      0
+    ],
+    "https://matse.illinois.edu/": [],
+    "https://engineering.purdue.edu/MSE/research/areas": [
+      0,
+      1
+    ],
+    "https://www.mse.cornell.edu/mse/research/research-topics": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://catalog.mit.edu/schools/engineering/materials-science-engineering/": [
+      0,
+      34,
+      43,
+      47
+    ],
+    "https://mse.osu.edu/research": [
+      0,
+      1,
+      3
+    ],
+    "https://www.mse.iastate.edu/research/focus-areas/": [
+      0
+    ],
+    "https://guide.wisc.edu/graduate/materials-science-engineering/materials-science-engineering-ms/": [],
+    "https://dmse.mit.edu/": [],
+    "https://seas.harvard.edu/materials-science-mechanical-engineering": [
+      0,
+      1,
+      2
+    ],
+    "https://matse.illinois.edu/admissions/graduate": [],
+    "https://engineering.jhu.edu/materials/": [],
+    "https://imse.washu.edu/graduate-program/index.html": [
+      1,
+      2,
+      3
+    ],
+    "https://mse.engin.umich.edu/graduate": [
+      1,
+      4
+    ],
+    "https://mse.engineering.arizona.edu/about-us": [],
+    "https://www.lsu.edu/eng/academics/graduate-programs/engrsci/mse.php": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "https://catalog.uic.edu/gcat/colleges-schools/engineering/mate/": [],
+    "https://mse.ufl.edu/academics/graduate/": [],
+    "https://engineering.dartmouth.edu/areas/materials-science": [
+      0
+    ],
+    "https://coe.gatech.edu/schools/materials-science-and-engineering": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://www.mse.iastate.edu/research/": [],
+    "https://tickle.utk.edu/mse/": [
+      0
+    ],
+    "https://mseg.udel.edu/": [
+      1
+    ],
+    "https://mse.stanford.edu/academics-admissions/doctoral-program": [
+      0
+    ],
+    "https://graduate.baylor.edu/materialsphd": [],
+    "https://mse.engr.uconn.edu/": [
+      0
+    ],
+    "https://www.rit.edu/study/materials-science-and-engineering-ms": [],
+    "https://www.clemson.edu/mse/": [
+      1,
+      3
+    ],
+    "https://mse.rutgers.edu/": [
+      0
+    ],
+    "https://catalog.ucsd.edu/curric/MATS.html": [],
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/materialsscienceandengineering/": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      9,
+      10
+    ],
+    "https://www.uky.edu/academics/masters-doctoral/pigman-college-engineering/materials-science-engineering-graduate": [
+      1
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 165,
+  "url_to_lists": {
+    "https://www.mccormick.northwestern.edu/materials-science/": [
+      [
+        "national academy memberships",
+        "highly cited researchers",
+        "ranked graduate program in the United States",
+        "affiliated research centers and institutes",
+        "Scientific Studies in the Arts",
+        "Biomaterials",
+        "Ceramics",
+        "Composites",
+        "Energy",
+        "Magnetic Materials",
+        "Materials for Electronics and Photonics",
+        "Materials Synthesis & Processing",
+        "Materials Theory, Computation, and Design",
+        "Metals",
+        "Nanomaterials",
+        "Polymers",
+        "Self-Assembly",
+        "Surfaces and Interfaces",
+        "Undergraduate",
+        "Graduate",
+        "Affiliated",
+        "Envisioning Engineering\u2019s Future",
+        "Discover Our Whole-Brain Engineering Philosophy"
+      ],
+      [
+        "Bachelor of Science in Materials Science",
+        "Combined BS/MS Degree Program",
+        "Minor in Materials Science",
+        "Explore special programs in this department and across McCormick"
+      ],
+      [
+        "Joint Master of Science in Mechanical Engineering and Materials Science & Engineering",
+        "Master of Science in Materials Science and Engineering",
+        "PhD in Materials Science and Engineering",
+        "PhD students may also enroll in these additional programs:"
+      ]
+    ],
+    "https://matse.illinois.edu/": [
+      [
+        "Hard Materials Seminar",
+        "100 Materials Science and Engineering Building, 1304 W. Green Street",
+        "4:00 PM"
+      ]
+    ],
+    "https://engineering.purdue.edu/MSE/research/areas": [
+      [
+        "Polymer Interfacial Mechanics - Davis Research Group",
+        "Dynamic Mechanical Behavior of Materials",
+        "Microstructural Design of Rechargeable Lithium-Ion Batteries",
+        "Micromechanical Deformation & Characterization\u00a0of Materials",
+        "Predictive modeling of materials",
+        "Structure-Property Relationships of Soft Materials and Complex Fluids",
+        "Polymer and Surface Science in the - Youngblood Group",
+        "Nanometalgroup \u2013Xinghang Zhang"
+      ],
+      [
+        "Batteries by Design",
+        "Microstructural Control in Microelectronics",
+        "Microstructural Development in Metal-Ceramic Systems Containing a Liquid Phase",
+        "Texture and Anisotropy in Ceramics",
+        "Diffusion in Multicomponent, Multiphase Systems (M. Dayananda)",
+        "High Temperature Materials",
+        "Polymer and Surface Chemistry of Biomaterials and Nanomaterials (J. P. Youngblood)",
+        "Hydrothermal Processing of Ceramic Powders and Thin Films (E. B. Slamovich)",
+        "FRG: Domain Orientation and Anisotropy in Poled Piezoelectrics (Drs. Bowman, King and Slamovich)",
+        "Ceramics Materials (J. Blendell)",
+        "Investigation of Bactericidal Polymers by Bioluminescent Reporter Pathogen Detection",
+        "Oil-Repellent Hydrophilic Surfaces for Self-Cleaning Anti-Fog Applications",
+        "Polymer Surface Modification using Aminopropyltriethoxysilane",
+        "Biocompatibility of Novel Bactericidal Polymers",
+        "Bi2Te3 Nanowire Array/Epoxy Composites for Thermoelectric Power Generators"
+      ]
+    ],
+    "https://www.mse.cornell.edu/mse/research/research-topics": [
+      [
+        "Energy Systems",
+        "Advanced Materials Processing",
+        "Materials Synthesis and Processing",
+        "Nanotechnology",
+        "Nonlinear Dynamics",
+        "Polymers and Soft Matter",
+        "Semiconductor Physics and Devices"
+      ],
+      [
+        "Computational Mechanics",
+        "Computational Solid Mechanics",
+        "Condensed Matter and Material Science",
+        "Nanotechnology",
+        "Semiconductor Physics and Devices",
+        "Surface Science"
+      ],
+      [
+        "Biomedical Engineering",
+        "Biomechanics and Mechanobiology",
+        "Biomedical Imaging and Instrumentation",
+        "Biotechnology",
+        "Drug Delivery and Nanomedicine",
+        "Mechanics of Biological Materials",
+        "Nanobio Applications",
+        "Nanotechnology",
+        "Polymers and Soft Matter"
+      ],
+      [
+        "Energy Systems",
+        "Advanced Materials Processing",
+        "Materials Synthesis and Processing",
+        "Nanotechnology",
+        "Nonlinear Dynamics",
+        "Polymers and Soft Matter",
+        "Semiconductor Physics and Devices"
+      ],
+      [
+        "Energy Production and Storage",
+        "Electronics & Photonics",
+        "Bioinspired Materials and Systems",
+        "Green Technologies",
+        "Connect with us"
+      ],
+      [
+        "vitro and in",
+        "vivo imaging (C",
+        "Dots, FRET), as well as biomaterials for tissue engineering and drug delivery."
+      ]
+    ],
+    "https://catalog.mit.edu/schools/engineering/materials-science-engineering/": [
+      [
+        "Home>",
+        "Schools>",
+        "School\u00a0of\u00a0Engineering>",
+        "Materials Science and Engineering"
+      ],
+      [
+        "A \u2013 Z",
+        "Calendar",
+        "Archive",
+        "Print"
+      ],
+      [
+        "Bachelor of Science in Materials Science and Engineering (Course 3)",
+        "Minor in Materials Science and Engineering",
+        "Minor in Archaeology and Materials"
+      ],
+      [
+        "Polina Olegovna Anikeeva, PhD",
+        "Matoula S. Salapatas Professor of Materials Science and Engineering",
+        "Professor of Brain and Cognitive Sciences",
+        "Head, Department of Materials Science and Engineering"
+      ],
+      [
+        "Robert Macfarlane, PhD",
+        "Associate Professor of Materials Science and Engineering",
+        "Associate Head, Department of Materials Science and Engineering",
+        "(On leave, fall)"
+      ],
+      [
+        "C. Cem Ta\u015fan, PhD",
+        "POSCO Professor of Materials Science",
+        "Associate Professor of Materials Science and Engineering",
+        "Associate Head, Department of Materials Science and Engineering",
+        "(On leave, fall)"
+      ],
+      [
+        "Geoffrey Stephen Beach, PhD",
+        "Toyota Professor of Materials Science and Engineering",
+        "Professor of Materials Science and Engineering",
+        "(On leave, spring)"
+      ],
+      [
+        "Angela M. Belcher, PhD",
+        "James Mason Crafts Professor",
+        "Professor of Biological Engineering",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "W. Craig Carter, PhD",
+        "Toyota Professor of Materials Science and Engineering",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "Yet-Ming Chiang, ScD",
+        "Kyocera Professor",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "Michael J. Cima, PhD",
+        "David H. Koch Professor in Engineering",
+        "Professor of Materials Science and Engineering",
+        "(On leave, fall)"
+      ],
+      [
+        "Yoel Fink, PhD",
+        "Professor of Materials Science and Engineering",
+        "(On leave)"
+      ],
+      [
+        "Eugene A. Fitzgerald, PhD",
+        "Merton C. Flemings (1951) SMA Professor",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "Jeffrey C. Grossman, PhD",
+        "Morton and Claire Goulder and Family Professor in Environmental Systems",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "Juejun Hu, PhD",
+        "Elliott Professor of Materials Science and Engineering",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "Ju Li, PhD",
+        "Battelle Energy Alliance Professor of Nuclear Science and Engineering",
+        "Professor of Materials Science and Engineering",
+        "(On leave)"
+      ],
+      [
+        "Christine Ortiz, PhD",
+        "Morris Cohen Professor of Materials Science and Engineering",
+        "(On leave, fall)"
+      ],
+      [
+        "Caroline A. Ross, PhD",
+        "Ford Professor of Engineering",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "Yang Shao-Horn, PhD",
+        "JR East Professor of Engineering",
+        "Professor of Mechanical Engineering",
+        "Professor of Materials Science and Engineering",
+        "(On leave)"
+      ],
+      [
+        "Bilge Yildiz, PhD",
+        "Breene M. Kerr (1951) Professor",
+        "Professor of Nuclear Science and Engineering",
+        "Professor of Materials Science and Engineering"
+      ],
+      [
+        "Rafael G\u00f3mez-Bombarelli, PhD",
+        "Cheah Associate Professor of Materials Science and Engineering",
+        "(On leave, fall)"
+      ],
+      [
+        "Jeehwan Kim, PhD",
+        "Associate Professor of Mechanical Engineering",
+        "Associate Professor of Materials Science and Engineering"
+      ],
+      [
+        "Suraj Cheema, PhD",
+        "Assistant Professor of Materials Science and Engineering",
+        "Assistant Professor of Electrical Engineering and Computer Science"
+      ],
+      [
+        "Gregory M. Olson, ScD",
+        "Thermo-Calc Professor of the Practice",
+        "Professor of the Practice of Materials Science and Engineering"
+      ],
+      [
+        "Ronald G. Ballinger, ScD",
+        "Professor Emeritus of Nuclear Science and Engineering",
+        "Professor Emeritus of Materials Science and Engineering"
+      ],
+      [
+        "Linn W. Hobbs, DPhil",
+        "Professor Emeritus of Materials Science and Engineering",
+        "Professor Emeritus of Nuclear Science and Engineering"
+      ],
+      [
+        "Ronald M. Latanision, PhD",
+        "Professor Emeritus of Materials Science and Engineering",
+        "Professor Emeritus of Nuclear Science and Engineering"
+      ],
+      [
+        "Sidney Yip, PhD",
+        "Professor Emeritus of Nuclear Science and Engineering",
+        "Professor Emeritus of Materials Science and Engineering"
+      ],
+      [
+        "Same subject as 2.912[J], 15.373[J]Prereq: None U (Spring)3-0-9 units",
+        "See description under subject 15.373[J].",
+        "S. Stern, E. Fitzgerald"
+      ],
+      [
+        "Same subject as 22.75[J]Prereq: 3.20, 3.21, or permission of instructor G (Spring)3-0-9 units",
+        "See description under subject 22.75[J].",
+        "B. Yildiz"
+      ],
+      [
+        "Same subject as 6.6500[J]Prereq: 3.42 or 6.2500 G (Fall)4-0-8 units",
+        "See description under subject 6.6500[J].",
+        "J. A. del Alamo, H. L. Tuller"
+      ],
+      [
+        "Same subject as 10.960[J]Prereq: None G (Fall, Spring)2-0-0 unitsCan be repeated for credit.",
+        "See description under subject 10.960[J].",
+        "A. Alexander-Katz, R. E. Cohen, D. Irvine"
+      ],
+      [
+        "Required Subjects",
+        "3.986[J]",
+        "3.985[J]",
+        "Select two other HASS electives from among the following:",
+        "3.094[J]",
+        "3.982",
+        "3.983",
+        "3.987",
+        "3.993",
+        "Total Units"
+      ],
+      [
+        "Required Subjects",
+        "3.010",
+        "3.020",
+        "Core Subjects (Select 2)",
+        "3.013",
+        "3.023",
+        "3.030",
+        "3.033",
+        "3.044",
+        "3.042",
+        "Restricted Electives (Select 2)",
+        "Select 2 subjects from the list of Restricted Electives in Course 3/3-A.",
+        "Total Units"
+      ],
+      [
+        "Required Subjects",
+        "3.010",
+        "3.020",
+        "3.030",
+        "3.985[J]",
+        "3.986[J]",
+        "Elective",
+        "Select one of the following: 1",
+        "3.981",
+        "3.982",
+        "3.983",
+        "3.987",
+        "3.990",
+        "3.993",
+        "Total Units"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: U (Fall)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Spring)2",
+        "4 units. HASS"
+      ],
+      [
+        "working techniques such as hand forging and CNC machining. The project",
+        "based curriculum begins with art criticism of Cambridge",
+        "lab projects hone criticism and analysis skills. Limited to 6."
+      ],
+      [
+        "matter",
+        "property relationships, and charge transport. Device structures include organic thin",
+        "film transistors (OTFTs), organic light",
+        "emitting diodes (OLEDs), and organic photovoltaics (OPVs)."
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Spring)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "principles approaches. Density",
+        "functional theory and the total",
+        "graining approaches and mesoscale models."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: G (Spring)",
+        "2026: Not offered3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)4",
+        "8 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)2",
+        "1 unitsCan be repeated for credit."
+      ],
+      [
+        "2025: Not offered",
+        "2026: G (Fall)3",
+        "9 units"
+      ],
+      [
+        "2025: Not offered",
+        "2026: U (Fall)3",
+        "6 units. HASS"
+      ],
+      [
+        "2025: U (Spring)",
+        "2026: Not offered3",
+        "9 units. HASS"
+      ],
+      [
+        "1.EPE,",
+        "2.EPE,",
+        "3.EPE,",
+        "6.EPE,",
+        "8.EPE,",
+        "10.EPE,",
+        "15.EPE,",
+        "16.EPE,",
+        "20.EPE,"
+      ],
+      [
+        "1.EPW,",
+        "2.EPW,",
+        "3.EPW,",
+        "6.EPW,",
+        "10.EPW,",
+        "16.EPW,",
+        "20.EPW,",
+        "22.EPWPrereq:"
+      ],
+      [
+        "1.UAR[J],",
+        "5.UAR[J],",
+        "11.UAR[J],",
+        "12.UAR[J],",
+        "15.UAR[J],"
+      ]
+    ],
+    "https://mse.osu.edu/research": [
+      [
+        "Biomaterials",
+        "Ceramic Science and Engineering",
+        "Characterization and Microscopy",
+        "Computational Materials Science and Engineering",
+        "Corrosion",
+        "Electronic, Photonic, and Magnetic Materials",
+        "Energy Materials",
+        "Mechanical Properties of Materials",
+        "Metallic Materials",
+        "Polymers",
+        "Processing and Manufacturing",
+        "Sensor materials and technologies",
+        "Welding Engineering"
+      ],
+      [
+        "Faculty directory",
+        "Undergraduate education",
+        "Graduate education",
+        "Centers, labs, collarations"
+      ],
+      [
+        "Edison Joining Technology Center",
+        "Fontana Laboratories Phase I (opened 2021)",
+        "MacQuigg Laboratory (under construction)",
+        "Watts Hall (under construction)",
+        "Center for Electron Microscopy and Analysis",
+        "Fontana Laboratories Phase II (opening 2025)"
+      ],
+      [
+        "Secondary navigation",
+        "Main navigation",
+        "Breadcrumb",
+        "Link List",
+        "double-arrow\nResearch area descriptions",
+        "Biomaterials",
+        "Ceramic Science and Engineering",
+        "Characterization and Microscopy",
+        "Computational Materials Science and Engineering",
+        "Corrosion",
+        "Electronic, Photonic, and Magnetic Materials",
+        "Energy Materials",
+        "Mechanical properties of materials",
+        "Metallic Materials",
+        "Polymers",
+        "Processing and manufacturing",
+        "Sensor materials and technologies",
+        "Welding engineering",
+        "Research information",
+        "double-arrow\nDepartment of Materials Science and Engineering Locations",
+        "Department ofMaterials Science and Engineering",
+        "Follow us.",
+        "Connect"
+      ]
+    ],
+    "https://www.mse.iastate.edu/research/focus-areas/": [
+      [
+        "Biomaterials",
+        "Ceramics",
+        "Metals",
+        "Polymers",
+        "Quick Links",
+        "Department of Materials Science and Engineering"
+      ]
+    ],
+    "https://guide.wisc.edu/graduate/materials-science-engineering/materials-science-engineering-ms/": [
+      [
+        "Minimum Graduate School Requirements",
+        "Major Requirements",
+        "Named Options"
+      ],
+      [
+        "Overview",
+        "Admissions",
+        "Funding",
+        "Requirements",
+        "Policies",
+        "Professional Development",
+        "Learning Outcomes",
+        "People"
+      ],
+      [
+        "Admissions",
+        "Funding",
+        "Minimum Graduate School Requirements",
+        "Major Requirements",
+        "Named Options",
+        "Policies",
+        "Professional Development",
+        "Learning Outcomes",
+        "People"
+      ],
+      [
+        "Graduate School Resources",
+        "Program Resources",
+        "Curricular Requirements",
+        "Required Courses",
+        "Materials Science and Engineering: Materials Engineering, MS",
+        "Materials Science and Engineering: Research, MS",
+        "Graduate School Resources",
+        "Professors",
+        "Associate Professors",
+        "Assistant Professors",
+        "Assistant Teaching Professors",
+        "Resources",
+        "Quick Links",
+        "Madison, WI",
+        "Ask Bucky",
+        "Social Media"
+      ],
+      [
+        "Jiamian Hu, Jason Kawasaki and Yuan Ping",
+        "Dawei Feng, Sebastian Kube, Fang Liu, Hyunseok Oh, Daniel Rhodes, and Jun Xiao",
+        "Franklin Hobbs",
+        "See also\u00a0Materials Science and Engineering Faculty Directory."
+      ],
+      [
+        "Requirements",
+        "Minimum Credit Requirement",
+        "Minimum Residence Credit Requirement",
+        "Minimum Graduate Coursework Requirement",
+        "Overall Graduate GPA Requirement",
+        "Other Grade Requirements",
+        "Assessments and Examinations",
+        "Language Requirements"
+      ]
+    ],
+    "https://dmse.mit.edu/": [
+      [
+        "Our Material World",
+        "Published Research",
+        "What we did",
+        "Why we did it",
+        "Why it matters"
+      ],
+      [
+        "Featured Impact Story",
+        "Breaking ground with green cement",
+        "See all Impact Stories"
+      ],
+      [
+        "Computing and Data Science",
+        "Energy and the Environment",
+        "Health and Medicine",
+        "Transportation and Infrastructure",
+        "Manufacturing"
+      ]
+    ],
+    "https://seas.harvard.edu/materials-science-mechanical-engineering": [
+      [
+        "Fluid Mechanics",
+        "Materials",
+        "Robotics and Control",
+        "Soft Matter",
+        "Solid Mechanics",
+        "Surface and Interface Science"
+      ],
+      [
+        "Undergraduate",
+        "Bachelor of Arts (A.B.)in Materials Science and Mechanical Engineering",
+        "Bachelor of Science (S.B.)in Mechanical Engineering",
+        "Bachelor of Arts (AB)/Master of Science (A.B./S.M.)",
+        "Graduate",
+        "Doctor of Philosophy (Ph.D.)\u00a0in Materials Science and Mechanical Engineering"
+      ],
+      [
+        "Joost J. Vlassak\n\n\n\n\nArea Chair for Materials Science and Mechanical Engineering",
+        "Frans A. Spaepen\n\n\n\n\nDirector of Undergraduate Studies",
+        "Seymur Hasanov\n\n\n\n\nAssistant Director of Undergraduate Studies in Mechanical Engineering",
+        "Jenny Mileski\n\n\n\n\nDirector for Academic Operations",
+        "Douglas Woodhouse\n\n\n\n\nAdministrative Coordinator for Academic Operations",
+        "Scott E Parsons\n\n\n\n\nDirector of Faculty Support and Administration",
+        "Robert J. Wood\n\n\n\n\nDirector of Graduate Studies for Materials Science and Mechanical Engineering"
+      ],
+      [
+        "Feb 3, 2025",
+        "Nozzle shape, print parameters tune liquid crystal elastomer morphing",
+        "Materials,                     Materials Science & Mechanical Engineering"
+      ]
+    ],
+    "https://matse.illinois.edu/admissions/graduate": [
+      [
+        "44% academia",
+        "38% industry",
+        "18% national/international laboratory"
+      ],
+      [
+        "Intel",
+        "Lam Research Corporation",
+        "Apple",
+        "Applied Materials",
+        "Dow Chemical Company",
+        "Genentech",
+        "Honeywell Aerospace",
+        "PPG Industries",
+        "S&C Electric Company",
+        "Solvay",
+        "Spirit\u00a0AeroSystems",
+        "Thermo Fisher Scientific"
+      ],
+      [
+        "Argonne National Laboratory",
+        "Lawrence Berkeley\u00a0Natioanl Laboratory",
+        "Los\u00a0Alamos National Laboratory",
+        "National Institute of Standards and Technology (NIST)",
+        "Oak Ridge National Laboratory",
+        "Pacific Northwest National Laboratory",
+        "Fritz Haber\u00a0Institute\u00c2\u00a0of the\u00c2\u00a0Max Planck Society",
+        "International Institute for Carbon Neutral Energy Research",
+        "Korea Institute of Science and Technology",
+        "Stanford\u00a0Synchrotron Radiation Lightsource"
+      ],
+      [
+        "Colorado School of Mines",
+        "Cornell University",
+        "Harvard University",
+        "Massachusetts Institute of Technology",
+        "Northwestern University",
+        "Princeton University",
+        "Stanford University",
+        "The Ohio State University",
+        "University of California",
+        "University of Florida",
+        "University of Maryland, College Park",
+        "University Of Michigan",
+        "University of Minnesota-Twin Cities",
+        "University of Pittsburgh",
+        "University of Wisconsin-Madison"
+      ],
+      [
+        "69% industry",
+        "19% academia",
+        "10% other",
+        "2% national laboratory"
+      ],
+      [
+        "Intel",
+        "Alcon",
+        "Amazon Web Services",
+        "Arcanum Alloys",
+        "BASF Corporation",
+        "Bell\u00a0Textron",
+        "Boston Children's Hospital",
+        "Brilliant Light Power",
+        "Consolidated Precision Products",
+        "Corning",
+        "Creative Thermal Solutions",
+        "CTLGroup",
+        "Grand Prairie Independent School District",
+        "Hyland Software",
+        "IM Flash Technologies",
+        "Johnson Health Tech",
+        "KBRwyle",
+        "KeaneTech",
+        "Kettering University",
+        "KLA Corporation",
+        "Lockheed Martin",
+        "Los\u00a0Alamos National Laboratory",
+        "Micron Japan",
+        "Micron Technology",
+        "Navistar",
+        "Parker\u00a0Hannifin",
+        "Pennsylvania State University",
+        "Schneider Electric",
+        "TMEIC",
+        "WH International Casting",
+        "Wilana Chemical",
+        "Wolverine Advanced Materials",
+        "Xerion",
+        "Yahoo"
+      ],
+      [
+        "Federal Institute for Materials Research and Testing",
+        "IMDEA Materials Institute",
+        "Johns Hopkins University",
+        "Pennsylvania State University",
+        "Rice University",
+        "University of California",
+        "University of Illinois Urbana-Champaign",
+        "University of Maryland, College Park",
+        "University of Michigan",
+        "University of Pennsylvania",
+        "University of Wisconsin-Madison"
+      ],
+      [
+        "Degree Programs",
+        "Ph.D. in MatSE",
+        "M.S. in MatSE",
+        "Pursue your passion.",
+        "Advance Your Materials Career."
+      ]
+    ],
+    "https://engineering.jhu.edu/materials/": [
+      [
+        "Secondary Navigation",
+        "Info For Navigation",
+        "Utility Navigation",
+        "Site Navigation",
+        "Info For Navigation",
+        "Program Highlights",
+        "A Focus on Research",
+        "Vivien Thomas Scholars Initiative",
+        "Related News",
+        "Professor and HEMI Director Tim Rupert Named a TMS Brimacombe Medalist",
+        "Machine Learning Helps Predict Efficient Lipid Nanoparticle Design",
+        "Engineers \u2018hijack\u2019 natural cell process to deliver large drug molecules",
+        "Stay Connected",
+        "Department of Materials Science & Engineering",
+        "Footer Navigation",
+        "Legal Navigation",
+        "Site Menu",
+        "Site Navigation",
+        "Utility Navigation",
+        "Secondary Navigation"
+      ]
+    ],
+    "https://imse.washu.edu/graduate-program/index.html": [
+      [
+        "American Association for University Woman (AAUW)",
+        "American Indian Graduate Center (AIGC)",
+        "Department of Energy Computational Science Graduate Fellowship",
+        "Department of Energy Science Graduate Fellowship Program",
+        "Dolores Zohrab Liebmann Fund",
+        "The Hertz Foundation",
+        "Josephine de Karman Fellowship Trust",
+        "NASA Graduate Student Researchers Project",
+        "NASA Office of Education Infrastructure Division (OEID) Launchpad",
+        "National Academies of Sciences, Engineering and Medicine (NASEM)",
+        "National Defense Science & Engineering Graduate Fellowship",
+        "National G.E.M. Consortium",
+        "National Science Foundation Graduate Research Fellowship Program",
+        "Paul & Daisy Soros Fellowship for New Americans",
+        "Science, Mathematics, and Research for Transformation (SMART), National Defense Education Program"
+      ],
+      [
+        "MEMS 5610, Quantitative Materials Science & Engineering (3 units)",
+        "MEMS 5619, Thermodynamics of Materials or EECE 502, Advanced Thermodynamics in EECE (3 units)",
+        "MEMS 5620, Kinetics of Materials",
+        "IMSE 500, First Year Research Rotation (6 units)"
+      ],
+      [
+        "Quantitative Materials Science & Engineering (MEMS 5610)",
+        "IMSE First Year Research Rotation (IMSE 500)",
+        "Thermodynamics of Materials (MEMS 5619) or Advanced Thermodynamics in EECE (EECE 502)",
+        "Solid-State and Materials Chemistry\u00a0(Chem 5620) or Elective",
+        "IMSE Graduate Seminar (IMSE 501)"
+      ],
+      [
+        "Kinetics of Materials (MEMS 5620)",
+        "Solid State Physics (Physics 5072) or Elective",
+        "Elective",
+        "IMSE First-Year Research Rotation (IMSE 500)",
+        "IMSE Graduate Seminar (IMSE 501)"
+      ],
+      [
+        "\"Traditional\" Mentored Teaching Experience (MTE)",
+        "\u201cOutreach\u201d Mentored Teaching Experience",
+        "Fall semester (12 credits)",
+        "Spring semester (12 credits)",
+        "Summer",
+        "Years 2 and beyond",
+        "Resources"
+      ],
+      [
+        "The Ann W. and Spencer T. Olin \u2013 Chancellor\u2019s Fellowship",
+        "Dean's International Fellowship",
+        "Additional Internal Fellowship & Award Opportunities"
+      ],
+      [
+        "Program Requirements for Candidates Entering the Program Fall 2023",
+        "Program Requirements for Candidates Entering the Program Fall 2022",
+        "Program Requirements for Candidates Entering the Program Fall 2021",
+        "Program Requirements for Candidates Entering the Program Fall 2020",
+        "Program Requirements for Candidates Entering the Program Fall 2019",
+        "Program Requirements for Candidates Entering the Program Fall 2018",
+        "Program Requirements for Candidates Entering the Program Fall 2017",
+        "Program Requirements\u00a0for Candidates Entering the Program Fall 2016",
+        "Program Requirements for Candidates Entering the Program Fall 2015",
+        "Program Requirements for Candidates Entering the Program Fall 2014"
+      ]
+    ],
+    "https://mse.engin.umich.edu/graduate": [
+      [
+        "Overview",
+        "Major",
+        "Minor",
+        "Considering the MSE Major?"
+      ],
+      [
+        "Overview",
+        "Hanawalt XMAL",
+        "Equipment Booking",
+        "Centers"
+      ],
+      [
+        "Right item 1",
+        "Right item 2",
+        "Right item 3"
+      ],
+      [
+        "Dow Corning",
+        "Ford Motor Co.",
+        "General Electric",
+        "General Motors",
+        "Semiconductor Research Corp.",
+        "Toyota"
+      ],
+      [
+        "Skip to Main Content",
+        "Materials Science & Engineering",
+        "Right item 1\nRight item 2\nRight item 3"
+      ]
+    ],
+    "https://mse.engineering.arizona.edu/about-us": [
+      [
+        "The MSE Student Experience",
+        "Creative and Resourceful Academics",
+        "Local Impact, Global Partnerships",
+        "Fast Facts"
+      ]
+    ],
+    "https://www.lsu.edu/eng/academics/graduate-programs/engrsci/mse.php": [
+      [
+        "Biological Engineering",
+        "Chemistry",
+        "Chemical Engineering",
+        "Civil and Environmental Engineering",
+        "Electrical Engineering",
+        "Industrial Engineering",
+        "Mechanical Engineering",
+        "Petroleum Engineering",
+        "Physics"
+      ],
+      [
+        "Material Processing, Characterization, and Functional Properties",
+        "Biomedical Materials",
+        "Computational Simulation and Visualization of Material Behavior"
+      ],
+      [
+        "12 credit hours in Core Courses",
+        "9 credit hours in Properties and Characterization Courses",
+        "9 credit hours in Modeling and Simulation / Synthesis and Processing Courses",
+        "18 credit hours Other Technical Elective Courses"
+      ],
+      [
+        "6 credit hours in Core Courses",
+        "6 credit hours in Properties and Characterization Courses",
+        "6 credit hours in Modeling and Simulation / Synthesis and Processing Courses"
+      ],
+      [
+        "Vision",
+        "Mission",
+        "Goals",
+        "Description",
+        "Course Requirements",
+        "Admission Requirements",
+        "Eligible Courses in Material Science and Engineering",
+        "Video Modal"
+      ],
+      [
+        "Ph.D. 54 credit hours (with a BS degree)",
+        "MS 24 credit hours \u2013 thesis option (with a BS degree)",
+        "Modeling and Simulation",
+        "Core Courses",
+        "Synthesis and Processing",
+        "Properties and Characterization",
+        "Specific Materials"
+      ],
+      [
+        "Polymers",
+        "Catalytic",
+        "Microelectronic",
+        "Metals",
+        "Materials of Construction",
+        "Materials Related Courses"
+      ],
+      [
+        "Football",
+        "Things to Do on Campus",
+        "How Much is Tuition?"
+      ],
+      [
+        "oriented",
+        "disciplinary flexibility reflecting the multi",
+        "faceted",
+        "disciplinary courses"
+      ]
+    ],
+    "https://catalog.uic.edu/gcat/colleges-schools/engineering/mate/": [
+      [
+        "Home/",
+        "Graduate\u00a0and\u00a0Professional\u00a0Catalog/",
+        "Colleges\u00a0&\u00a0Schools/",
+        "College\u00a0of\u00a0Engineering/",
+        "Materials Engineering"
+      ]
+    ],
+    "https://mse.ufl.edu/academics/graduate/": [
+      [
+        "Resources",
+        "UF Resources",
+        "Website"
+      ],
+      [
+        "Graduate Degree Programs",
+        "Program Objectives",
+        "Additional Graduate Degree options"
+      ],
+      [
+        "M.S. Materials Science and Engineering (thesis and non-thesis)",
+        "M.S. Nuclear Engineering Sciences (thesis and non-thesis)",
+        "Ph.D. Materials Science and Engineering",
+        "Ph.D. Nuclear Engineering Sciences"
+      ]
+    ],
+    "https://engineering.dartmouth.edu/areas/materials-science": [
+      [
+        "Mechanical behavior of structural materials",
+        "Properties of functional materials",
+        "Biomaterials",
+        "Energy materials",
+        "Microfabrication",
+        "Computational materials science and modeling"
+      ],
+      [
+        "led study published in Joule presents an entirely new stable, earth",
+        "abundant, high",
+        "performance material for solar absorbers",
+        "the central part of a solar cell that turns light into electricity."
+      ]
+    ],
+    "https://coe.gatech.edu/schools/materials-science-and-engineering": [
+      [
+        "BS: Materials Science and Engineering",
+        "BS / MS: Materials Science and Engineering (5 Year)",
+        "Certificate Programs in Biomaterials, Composites, Nanomaterials"
+      ],
+      [
+        "BS / MS: Materials Science and Engineering (5 Year)",
+        "MS: Bioengineering",
+        "MS: Materials Science and Engineering",
+        "MS: Materials Science and Engineering",
+        "PhD: Bioengineering",
+        "PhD: Materials Science and Engineering"
+      ],
+      [
+        "Biomolecular Solids",
+        "Metals",
+        "Ceramics",
+        "Nanostructures",
+        "Composites",
+        "Polymers",
+        "Fibers",
+        "Textiles"
+      ],
+      [
+        "College of Engineering",
+        "Main navigation",
+        "Search",
+        "School of Materials Science and Engineering",
+        "Undergrad Degree Programs",
+        "Graduate Degree Programs",
+        "Research Areas",
+        "College Resources"
+      ]
+    ],
+    "https://www.mse.iastate.edu/research/": [
+      [
+        "Focus Areas",
+        "Centers and Laboratories",
+        "Equipment Training & Cost",
+        "Projects and Publications",
+        "Theses and Dissertations",
+        "Fee For Service Equipment Items",
+        "More to Explore",
+        "Quick Links",
+        "Department of Materials Science and Engineering"
+      ]
+    ],
+    "https://tickle.utk.edu/mse/": [
+      [
+        "Academics",
+        "Degree Programs",
+        "Undergraduate",
+        "Studies",
+        "Graduate",
+        "Studies",
+        "Helpful Links",
+        "Get to Know Us",
+        "UT Hosts Worldwide Microscopy Hackathon",
+        "MSE Students Win Prizes at CAMM Poster Night",
+        "Gilmer Receives Two Manufacturing Grants",
+        "Visit Campus",
+        "Discover Knoxville"
+      ]
+    ],
+    "https://mseg.udel.edu/": [
+      [
+        "Bachelor\u2019s Degree in Materials Science and Engineering",
+        "Minors in Materials Science and Nanoscale materials",
+        "Graduate Programs",
+        "M.S. Requirements",
+        "PhD Requirements"
+      ],
+      [
+        "Electronic Materials",
+        "Inorganic-Organic Hybrid Materials",
+        "Self-Assembly of Materials",
+        "Thin Film Materials",
+        "Materials Characterization",
+        "Polymers and Composites",
+        "Biological and Biomedical Materials",
+        "Photovoltaics",
+        "Photonic Materials",
+        "Nanomaterials"
+      ]
+    ],
+    "https://mse.stanford.edu/academics-admissions/doctoral-program": [
+      [
+        "Courses",
+        "Core Courses1",
+        "MATSCI 211:\u00a0Thermodynamics and Phase Equilibria",
+        "MATSCI 212:\u00a0Rate Processes in Materials",
+        "MATSCI 213:\u00a0Defects and Disorder in Materials",
+        "MATSCI 214:\u00a0Structure and Symmetry",
+        "MATSCI 215:\u00a0Quantum Mechanics for Materials Science",
+        "Eight Elective Graduate Technical Courses2",
+        "Materials Science Colloquia3",
+        "MATSCI 230: Materials Science Colloquium (Autumn)",
+        "MATSCI 230: Materials Science Colloquium (Winter)",
+        "MATSCI 230: Materials Science Colloquium (Spring)",
+        "Research",
+        "75 Units of MATSCI 300: PhD Research",
+        "Flex Units4",
+        "MATSCI 231: Materials Science Research Advising (Finding Your Advisor) (Autumn)",
+        "MATSCI 232:\u00a0Ethics and Broader Impacts in Materials Science (Spring)",
+        "10 Units of Residency5"
+      ]
+    ],
+    "https://graduate.baylor.edu/materialsphd": [
+      [
+        "Application Deadlines",
+        "PhD Program Requirements",
+        "MS Program Requirements - coming soon",
+        "Apply Now!"
+      ]
+    ],
+    "https://mse.engr.uconn.edu/": [
+      [
+        "Science1_500",
+        "Microchip production factory.B.S.E. (ABET accredited)\nMSE minor\nM.S., MEng., Ph.D.\nDegrees Offered",
+        "SeminarroomStudents98 Undergraduate Students\n79 Graduate Students",
+        "UndergradLab"
+      ]
+    ],
+    "https://www.rit.edu/study/materials-science-and-engineering-ms": [
+      [
+        "Why Pursue a Master's Degree in Materials Science and Engineering at RIT?",
+        "Why Study Materials Science and Materials Engineering?",
+        "RIT\u2019s MS in Materials Science and Engineering",
+        "Materials Science and Engineering MS Courses",
+        "Typical Job Titles",
+        "Cooperative Education and Internships",
+        "National Labs Career Events and Recruiting",
+        "Materials Science and Engineering (thesis option), MS degree, typical course sequence",
+        "Materials Science and Engineering (project option), MS degree, typical course sequence",
+        "Electives",
+        "Students are also interested in",
+        "Application Details",
+        "Cost and Financial Aid"
+      ]
+    ],
+    "https://www.clemson.edu/mse/": [
+      [
+        "Aerospace",
+        "Automotive",
+        "Consulting",
+        "Environmental Protection",
+        "Manufacturing",
+        "Pharmaceuticals",
+        "Product Development",
+        "Public Health and Safety",
+        "Research and Development",
+        "Telecommunications"
+      ],
+      [
+        "Clemson University",
+        "Materials Science and Engineering",
+        "Colleges",
+        "Academic Resources",
+        "Outside the Classroom",
+        "Applying to Clemson",
+        "Academic Opportunities",
+        "Financial Aid",
+        "Join Your Clemson Family",
+        "Services On Campus",
+        "Get Involved",
+        "Research Opportunities",
+        "Public Service and Agriculture",
+        "Innovation and Economic Development",
+        "For Tigers",
+        "Campus Resources",
+        "Campus Leadership",
+        "Innovation",
+        "Materials Science in the News",
+        "Global Impact",
+        "Grand Challenges",
+        "Career Outlook",
+        "Academic Exploration | Inspiring Research"
+      ],
+      [
+        "Colleges",
+        "Academic Resources",
+        "Outside the Classroom",
+        "Applying to Clemson",
+        "Academic Opportunities",
+        "Financial Aid",
+        "Join Your Clemson Family",
+        "Services On Campus",
+        "Get Involved",
+        "Research Opportunities",
+        "Public Service and Agriculture",
+        "Innovation and Economic Development",
+        "For Tigers",
+        "Campus Resources",
+        "Campus Leadership",
+        "Find Your Path",
+        "Materials Science and Engineering Academics",
+        "Revolutionize Medical Procedures",
+        "Faculty Excellence",
+        "Policy",
+        "Copyright \u00a9 2025",
+        "Resources"
+      ],
+      [
+        "Colloquium Series",
+        "MSE Organizations",
+        "Research Centers",
+        "Awards"
+      ]
+    ],
+    "https://mse.rutgers.edu/": [
+      [
+        "Glass, Ceramics, and Hard Materials",
+        "Sustainable Materials",
+        "Batteries, Energy Storage, and Solar Energy Devices",
+        "Materials for Photonics and Electronics",
+        "Multiscale Theory and Modeling",
+        "Biomaterials",
+        "A Perfect Pairing: Winemaking and Engineering",
+        "Thomas Nosker, Inventor of Recycled Plastic Lumber, Receives Highest Honor for His Work",
+        "MSE Distinguished Professor Stephen Garofalini Recipient of the 2024 George W. Morey Award",
+        "Academics",
+        "Learn More",
+        "Notices",
+        "Follow Us"
+      ]
+    ],
+    "https://catalog.ucsd.edu/curric/MATS.html": [
+      [
+        "The Graduate Program",
+        "Master\u2019s Degree Program",
+        "The PhD Program"
+      ],
+      [
+        "Thrust 1: Biomaterials, Soft Robotics, and Biomedical Devices",
+        "Thrust 2: Computational and Data Driven Design",
+        "Thrust 3: Extreme Properties and Environments",
+        "Thrust 4: Quantum, Electronic, and Photonic Materials",
+        "Thrust 5: Sustainability and Energy",
+        "Master\u2019s Plan I\u2014Thesis Defense",
+        "Master\u2019s Plan II\u2014Comprehensive Examination"
+      ]
+    ],
+    "https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/materialsscienceandengineering/": [
+      [
+        "Using the Catalog",
+        "Programs and Majors",
+        "Mission, Vision and Values",
+        "The Principles of our Equitable Community",
+        "Academic Calendar",
+        "Information of General Interest",
+        "University Resources",
+        "Undergraduate Studies",
+        "Graduate Study and Research",
+        "College of Arts &\u200b Sciences",
+        "College of Business",
+        "College of Education",
+        "College of Health",
+        "Applied Science",
+        "Arts-\u200bEngineering",
+        "Bioengineering",
+        "Chemical and Biomolecular Engineering",
+        "Civil and Environmental Engineering",
+        "Civil and Environmental Engineering and Earth and Environmental Sciences",
+        "Computer Engineering",
+        "Computer Science and Engineering",
+        "Cooperative Graduate Education",
+        "Data Science",
+        "Electrical Engineering and Engineering Physics",
+        "Electrical and Computer Engineering",
+        "Energy Systems Engineering",
+        "Engineering",
+        "Industrial and Systems Engineering",
+        "Management Science and Engineering",
+        "Materials Science and Engineering",
+        "Mechanical Engineering and Mechanics",
+        "Interdisciplinary and Inter-\u200bCollege Undergraduate Study",
+        "Interdisciplinary Graduate Study and Research",
+        "An Overview from Past and Present",
+        "Administration and Staff",
+        "Previous Editions"
+      ],
+      [
+        "Catalog Home",
+        "A-Z Index",
+        "Catalog Contents",
+        "Course Listing",
+        "Print Options"
+      ],
+      [
+        "Catalog\u00a0Home >",
+        "Courses,\u00a0Programs\u00a0and\u00a0Curricula >",
+        "P.C.\u00a0Rossin\u00a0College\u00a0of\u00a0Engineering\u00a0and\u00a0Applied\u00a0Science >",
+        "Materials Science and Engineering"
+      ],
+      [
+        "B.S. in Materials Science and Engineering",
+        "Minor in Materials Science and Engineering",
+        "Minor in Nanotechnology",
+        "Educational Mission",
+        "PROGRAM EDUCATIONAL OBJECTIVES",
+        "Student Outcomes",
+        "Major Requirements",
+        "For Graduate Students",
+        "Special Programs and Opportunities",
+        "Print Options"
+      ],
+      [
+        "Metals Processing and Performance",
+        "Ceramics and Glass Processing and Properties",
+        "Electronic and Photonic Materials",
+        "Polymer Modification, Processing and Characterization",
+        "Biomaterials",
+        "Electron Microscopy and Microstructural Characterization"
+      ],
+      [
+        "MAT\u00a0355",
+        "One course on crystallography and band theory",
+        "Additional electives",
+        "Total Credits"
+      ],
+      [
+        "First Year",
+        "First Semester",
+        "MATH\u00a0021",
+        "WRT\u00a0001",
+        "ENGR\u00a0005",
+        "ENGR\u00a0010",
+        "CHM\u00a00301",
+        "Second Year",
+        "First Semester",
+        "MAT\u00a00332",
+        "MAT\u00a0010",
+        "MATH\u00a0023",
+        "PHY\u00a0021",
+        "PHY\u00a0022",
+        "Free Elective",
+        "Third Year",
+        "First Semester",
+        "MAT\u00a0020",
+        "MAT\u00a0216",
+        "MAT\u00a0101",
+        "MATH\u00a0205",
+        "MECH\u00a0003",
+        "Select one of the following:",
+        "ECO\u00a0001",
+        "Humanities or Social Science Elective",
+        "Fourth Year",
+        "First Semester",
+        "MAT\u00a0252",
+        "Engineering Science Elective",
+        "Approved Elective",
+        "Humanities or Social Science Elective",
+        "MAT\u00a0212",
+        "Total Credits: 132"
+      ],
+      [
+        "Industrial Option",
+        "MAT\u00a0327",
+        "MAT\u00a0329",
+        "Research Option",
+        "MAT\u00a0340",
+        "MAT\u00a0341"
+      ],
+      [
+        "ray diffraction and fluorescence, x",
+        "ray microanalysis, electron",
+        "loss spectrometry, extended x",
+        "ray absorption and electron energy loss fine structure."
+      ],
+      [
+        "property",
+        "function relationships related to biocompatibility and bioactivity; nano",
+        "to macro",
+        "scale characterization; material"
+      ],
+      [
+        "property",
+        "function relationships related to biocompatibility and bioactivity; nano",
+        "to macro",
+        "scale characterization; material",
+        "based study. Credit will not be given for both MAT\u00a0311 and MAT\u00a0411."
+      ]
+    ],
+    "https://www.uky.edu/academics/masters-doctoral/pigman-college-engineering/materials-science-engineering-graduate": [
+      [
+        "Home \u00a0 /",
+        "Registrar \u00a0 /",
+        "Programs \u00a0 /",
+        "Materials Science & Engineering - Graduate"
+      ],
+      [
+        "Ceramics",
+        "Electronic Materials",
+        "Metals and Alloys",
+        "Micro-Materials",
+        "Nanomaterials",
+        "Polymers and Composites",
+        "Surfaces and Interfaces",
+        "Thin Films"
+      ],
+      [
+        "Masters Degree",
+        "Doctoral Degree",
+        "Admission & Application Requirements",
+        "Imagine Your Future"
+      ],
+      [
+        "Median Salary",
+        "$104,100",
+        "per year in 2023"
+      ],
+      [
+        "Aerospace Engineering - Graduate",
+        "Computer Engineering - Graduate",
+        "Data Science - Graduate",
+        "Manufacturing Systems Engineering (Masters) - Online",
+        "Mining Engineering - Graduate",
+        "Mechanical Engineering - Graduate",
+        "Manufacturing Systems Engineering - Graduate",
+        "Electrical Engineering - Graduate",
+        "Computer Science - Graduate",
+        "Civil Engineering - Graduate",
+        "Chemical Engineering - Graduate",
+        "Biomedical Engineering - Graduate"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:06:04"
+}

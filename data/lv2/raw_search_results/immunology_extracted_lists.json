@@ -1,0 +1,527 @@
+{
+  "level1_term": "immunology",
+  "url_verification_status": {
+    "https://chicago.medicine.uic.edu/microbiology/": false,
+    "https://medicine.iu.edu/microbiology-immunology/education": true,
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/tracks/immunology/": false,
+    "https://www.feinberg.northwestern.edu/sites/microbiology-immunology/research/training-grants/immunology-and-molecular-pathogenesis.html": false,
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/dept-resources-new/teaching-resources/teacher-training-program/scientific-teaching-workshop": false,
+    "https://www.unmc.edu/gradstudies/programs/igpbs/immunology-pathology-infectious-diseases/research-areas.html": true,
+    "https://cancer.dartmouth.edu/scientists-researchers/training-program-immunology": false,
+    "https://gradschool.weill.cornell.edu/programs/immunology-microbial-pathogenesis": true,
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/phd-program": true,
+    "https://vetmedbiosci.colostate.edu/mip/prime/": false,
+    "https://medicine.osu.edu/departments/mii/education": false,
+    "https://www.umassmed.edu/gsbs/academics/phd-biomedical-sciences/immunology-and-microbiology-program/": true,
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/grad-train": false,
+    "https://gs.howard.edu/academics/degree-programs/microbiology-immunology-research-track-details": true
+  },
+  "verified_lists_per_url": {
+    "https://chicago.medicine.uic.edu/microbiology/": 0,
+    "https://medicine.iu.edu/microbiology-immunology/education": 1,
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/tracks/immunology/": 0,
+    "https://www.feinberg.northwestern.edu/sites/microbiology-immunology/research/training-grants/immunology-and-molecular-pathogenesis.html": 0,
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/dept-resources-new/teaching-resources/teacher-training-program/scientific-teaching-workshop": 0,
+    "https://www.unmc.edu/gradstudies/programs/igpbs/immunology-pathology-infectious-diseases/research-areas.html": 4,
+    "https://cancer.dartmouth.edu/scientists-researchers/training-program-immunology": 0,
+    "https://gradschool.weill.cornell.edu/programs/immunology-microbial-pathogenesis": 2,
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/phd-program": 2,
+    "https://vetmedbiosci.colostate.edu/mip/prime/": 0,
+    "https://medicine.osu.edu/departments/mii/education": 0,
+    "https://www.umassmed.edu/gsbs/academics/phd-biomedical-sciences/immunology-and-microbiology-program/": 3,
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/grad-train": 0,
+    "https://gs.howard.edu/academics/degree-programs/microbiology-immunology-research-track-details": 2
+  },
+  "total_lists_per_url": {
+    "https://chicago.medicine.uic.edu/microbiology/": 1,
+    "https://medicine.iu.edu/microbiology-immunology/education": 1,
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/tracks/immunology/": 2,
+    "https://www.feinberg.northwestern.edu/sites/microbiology-immunology/research/training-grants/immunology-and-molecular-pathogenesis.html": 5,
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/dept-resources-new/teaching-resources/teacher-training-program/scientific-teaching-workshop": 2,
+    "https://www.unmc.edu/gradstudies/programs/igpbs/immunology-pathology-infectious-diseases/research-areas.html": 5,
+    "https://cancer.dartmouth.edu/scientists-researchers/training-program-immunology": 1,
+    "https://gradschool.weill.cornell.edu/programs/immunology-microbial-pathogenesis": 5,
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/phd-program": 2,
+    "https://vetmedbiosci.colostate.edu/mip/prime/": 5,
+    "https://medicine.osu.edu/departments/mii/education": 1,
+    "https://www.umassmed.edu/gsbs/academics/phd-biomedical-sciences/immunology-and-microbiology-program/": 7,
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/grad-train": 1,
+    "https://gs.howard.edu/academics/degree-programs/microbiology-immunology-research-track-details": 4
+  },
+  "verified_lists_ids": {
+    "https://chicago.medicine.uic.edu/microbiology/": [],
+    "https://medicine.iu.edu/microbiology-immunology/education": [
+      0
+    ],
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/tracks/immunology/": [],
+    "https://www.feinberg.northwestern.edu/sites/microbiology-immunology/research/training-grants/immunology-and-molecular-pathogenesis.html": [],
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/dept-resources-new/teaching-resources/teacher-training-program/scientific-teaching-workshop": [],
+    "https://www.unmc.edu/gradstudies/programs/igpbs/immunology-pathology-infectious-diseases/research-areas.html": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "https://cancer.dartmouth.edu/scientists-researchers/training-program-immunology": [],
+    "https://gradschool.weill.cornell.edu/programs/immunology-microbial-pathogenesis": [
+      0,
+      4
+    ],
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/phd-program": [
+      0,
+      1
+    ],
+    "https://vetmedbiosci.colostate.edu/mip/prime/": [],
+    "https://medicine.osu.edu/departments/mii/education": [],
+    "https://www.umassmed.edu/gsbs/academics/phd-biomedical-sciences/immunology-and-microbiology-program/": [
+      0,
+      1,
+      2
+    ],
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/grad-train": [],
+    "https://gs.howard.edu/academics/degree-programs/microbiology-immunology-research-track-details": [
+      0,
+      2
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 42,
+  "url_to_lists": {
+    "https://chicago.medicine.uic.edu/microbiology/": [
+      [
+        "viral, anti",
+        "bacterial and anti",
+        "cancer therapeutics and vaccines, using state"
+      ]
+    ],
+    "https://medicine.iu.edu/microbiology-immunology/education": [
+      [
+        "Graduate Degree Programs",
+        "Postdoctoral Study",
+        "MD Education",
+        "Social media"
+      ]
+    ],
+    "https://college.mayo.edu/academics/biomedical-research-training/phd-program/tracks/immunology/": [
+      [
+        "Year 1",
+        "Year 2",
+        "Year 3",
+        "Years 4-5+"
+      ],
+      [
+        "Academics",
+        "Biomedical Research Training",
+        "Ph.D. Program",
+        "Tracks"
+      ]
+    ],
+    "https://www.feinberg.northwestern.edu/sites/microbiology-immunology/research/training-grants/immunology-and-molecular-pathogenesis.html": [
+      [
+        "Edward Thorp, PhD, Professor of Pathology (Experimental Pathology) and Pediatrics",
+        "Nicholas Cianciotto, PhD, Professor of Microbiology-Immunology",
+        "Eva Gottwein, PhD, Associate Professor of\u00a0Microbiology-Immunology",
+        "Pablo Penaloza-MacMaster, PhD, Associate\u00a0Professor of\u00a0Microbiology-Immunology",
+        "Chyung-Ru Wang, PhD,\u00a0Professor of Microbiology-Immunology"
+      ],
+      [
+        "Blake Everett, Prindle Lab",
+        "Caroline Herrnreiter, PhD, Sumagin Lab",
+        "Cristina Vaca, D\u2019Aquila Lab",
+        "Estefany Guzman, Hultquist Lab",
+        "Kathleen Nicholson, PhD, Seifert Lab",
+        "Madeleine Vessely, Bachta Lab"
+      ],
+      [
+        "Luisa Iruela-Arispe, PhD, Professor of\u00a0Cell & Developmental Biology",
+        "Kelly Bachta, MD, PhD, Assistant Professor of\u00a0Medicine (Infectious Diseases)",
+        "Jaehyuk Choi, MD, PhD, Associate Professor of Dermatology and Biochemistry and Molecular Genetics",
+        "Nicholas Cianciotto, PhD, Professor of Microbiology-Immunology",
+        "Richard D'Aquila, MD, Professor of Medicine (Infectious Diseases)",
+        "Stephanie Eisenbarth, MD, PhD, Professor of Medicine (Allergy and Immunology) and Pathology",
+        "Deyu Fang, PhD, Professor of Pathology (Experimental Pathology)",
+        "Eva Gottwein, PhD, Associate Professor of Microbiology-Immunology",
+        "Alan Hauser, MD, PhD, Professor of Microbiology-Immunology and Medicine (Infectious Diseases)",
+        "Judd Hultquist, PhD, Assistant Professor of Medicine (Infectious Diseases)",
+        "Laimonis Laimins, PhD, Professor of Microbiology-Immunology",
+        "Catalina Lee Chang, PhD, Assistant Professor of Neurological Surgery",
+        "Jennie Lin, MD, Assistant Professor of Medicine (Nephrology and Hypertension)",
+        "Richard Longnecker, PhD, Professor of Microbiology-Immunology",
+        "Ramon Lorenzo Redondo, PhD, Assistant Professor of Medicine (Infectious Diseases)",
+        "Booki Min, PhD, Professor of Microbiology-Immunology",
+        "William Muller, MD, PhD, Professor of Pathology (Experimental Pathology) and Pathology (Autopsy)",
+        "Mojgan Naghavi, PhD, Professor of Microbiology-Immunology",
+        "Pablo Penaloza-MacMaster, PhD, Associate Professor of Microbiology-Immunology",
+        "Harris Perlman, PhD, Professor of Medicine (Rheumatology)",
+        "Murali Prakriya, PhD, Professor of Pharmacology and Medicine (Allergy and Immunology)",
+        "Anne Rowley, MD, Professor of Pediatrics (Infectious Diseases) and Microbiology-Immunology",
+        "Karla Satchell, PhD, Professor of Microbiology-Immunology",
+        "Evan Scott, PhD, Associate Professor of Biomedical Engineering and Microbiology-Immunology",
+        "Hank Seifert, PhD, Professor of Microbiology-Immunology",
+        "Gregory Smith, PhD, Professor of Microbiology-Immunology",
+        "Ronen Sumagin, PhD, Associate Professor of Pathology (Experimental Pathology)",
+        "Edward Thorp, PhD, Associate Professor of Pathology (Experimental Pathology) and Pediatrics",
+        "Derek Walsh, PhD, Professor of Microbiology-Immunology",
+        "Chyung-Ru Wang, PhD, Professor of Microbiology-Immunology",
+        "Deborah Winter, PhD, Professor of Medicine (Rheumatology)",
+        "Jennifer Wu, PhD, Professor of Urology and Microbiology-Immunology",
+        "Mee-Ngan F. Yap, PhD, Associate Professor of Microbiology-Immunology",
+        "Bin Zhang, MD, PhD, Professor of Medicine (Hematology/Oncology) and Microbiology-Immunology"
+      ],
+      [
+        "Grace Anne Dohnalek",
+        "Laura Egger",
+        "Cynthia Naugles",
+        "Pamela Carpentier, PhD"
+      ],
+      [
+        "Director",
+        "Co-Director",
+        "Executive Committee",
+        "Current Trainees",
+        "Preceptors",
+        "Administrative Support"
+      ]
+    ],
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/dept-resources-new/teaching-resources/teacher-training-program/scientific-teaching-workshop": [
+      [
+        "Tools & Resources",
+        "CU Campuses",
+        "CU Anschutz Medical Campus",
+        "School of Medicine",
+        "Immunology Microbiology (SOM)"
+      ],
+      [
+        "Day 1. Overview of Scientific Teaching and Course Design",
+        "Day 2. Teaching Strategies and Tools",
+        "Day 3. Communication and Technology",
+        "Day 4. Assessment",
+        "Day 5. Implementation",
+        "Scientific Teaching Workshop: 3:00-5:00pm Wednesdays, April 5, 12, 19, 26, & May 3, 2023",
+        "Interested in participating?"
+      ]
+    ],
+    "https://www.unmc.edu/gradstudies/programs/igpbs/immunology-pathology-infectious-diseases/research-areas.html": [
+      [
+        "Mechanisms of host immune impairment in infectious diseases",
+        "Host-pathogen interaction",
+        "Mechanisms of autoimmune diseases",
+        "Immune aspects of lysosomal storage diseases",
+        "Metabolism and immunity",
+        "Vaccine therapy for cancers",
+        "Host- tumor interactions",
+        "Alcohol effects on innate immunity",
+        "Cytokines for adjuvant activity for vaccines",
+        "Cytokine therapy in autoimmune diseases such as diabetes",
+        "Role of inflammation in neurodegenerative diseases",
+        "Microglial/macrophage modulation of neural activity",
+        "Psychoneural regulation of the immune system",
+        "Cytokine receptor function in the CNS"
+      ],
+      [
+        "Functional genomics, lymphoma and leukemia",
+        "Pathogenesis of lymphoma, leukemia, and myeloma, initiation, development, and relapse",
+        "Targeted therapy in lymphoma and leukemia",
+        "Functional role of miRNA in lymphomagenesis",
+        "Signal transduction in lymphomagenesis",
+        "Epigenetic alterations in malignant lymphoma",
+        "Gene expression profiling and next generation sequencing studies in lymphomas"
+      ],
+      [
+        "Host/pathogen interaction and pathogenesis",
+        "Bacterial biofilm development",
+        "Microbial metabolism",
+        "Antimicrobial development",
+        "Mechanisms of HIV pathology",
+        "Enterovirus receptor interactions"
+      ],
+      [
+        "Immunology and Disease",
+        "Molecular Pathogenesis",
+        "Infectious Disease",
+        "Office of Graduate Studies"
+      ],
+      [
+        "Office of Graduate Studies",
+        "Programs",
+        "Interdisciplinary Graduate Program in Biomedical Sciences (IGPBS)",
+        "PhD in Immunology, Pathology & Infectious Disease"
+      ]
+    ],
+    "https://cancer.dartmouth.edu/scientists-researchers/training-program-immunology": [
+      [
+        "System navigation",
+        "Main navigation",
+        "Breadcrumb",
+        "Immunobiology of myeloid and lymphoid cells",
+        "Left-hand navigation",
+        "Footer navigation"
+      ]
+    ],
+    "https://gradschool.weill.cornell.edu/programs/immunology-microbial-pathogenesis": [
+      [
+        "Autoimmunity",
+        "Innate Immunity",
+        "Lymphocyte Biology",
+        "Microbial Pathogenesis",
+        "Tumor Immunology"
+      ],
+      [
+        "Gretchen Diehl",
+        "Brad Jones",
+        "Inez Rogatsky",
+        "Thelma Lopez",
+        "Brooke Fiedler",
+        "Ian Mantel",
+        "Aazam Ghelani",
+        "Amanda Chen"
+      ],
+      [
+        "Program Co-Chairs",
+        "Program Co-Directors",
+        "First-Year Advisors",
+        "Admissions to Candidacy Chair",
+        "Recruitment Chairs",
+        "Retreat Planning Committee"
+      ],
+      [
+        "Immunology & Microbial Pathogenesis",
+        "Nora Pyenson",
+        "Read Full Story..."
+      ],
+      [
+        "Autoimmunity",
+        "B cell biology",
+        "Commensal Microbiome",
+        "Inflammation",
+        "Infectious Disease",
+        "Innate Immunity",
+        "Immune Development"
+      ]
+    ],
+    "https://medresearch.umich.edu/departments/microbiology-immunology/education/phd-program": [
+      [
+        "MS Program\n\n\n\nMS Program Requirements",
+        "MS Program Requirements",
+        "PhD Program\n\n\n\nPhD Program Requirements\n\n\n\n\nMacNeal Dissertation Award",
+        "PhD Program Requirements",
+        "MacNeal Dissertation Award",
+        "Training Programs",
+        "M&I | HME Dual Degree",
+        "Course Descriptions",
+        "Student Life"
+      ],
+      [
+        "NIH training grant in Cellular Biotechnology",
+        "NIH training grant in Cancer Biology",
+        "NIH training grant in Human Genetics",
+        "NIH training grant Molecular Mechanisms of Microbial Pathogenesis",
+        "Dr. F. G. Novy fellowship",
+        "Dr. Frances W. Chin endowed fellowship",
+        "Rackham Merit fellowship",
+        "Regents' fellowship",
+        "University fellowships",
+        "Research assistantships"
+      ]
+    ],
+    "https://vetmedbiosci.colostate.edu/mip/prime/": [
+      [
+        "Current Grants",
+        "Publications",
+        "Presentations",
+        "Textbooks",
+        "Members",
+        "Department Resources",
+        "College Resources",
+        "Academic Departments"
+      ],
+      [
+        "Grace Borlee Lab",
+        "Kelp Lab",
+        "Mehaffy Lab",
+        "Suchman Lab"
+      ],
+      [
+        "Suchman E, Writing Learning Outcomes. Washington State University. (Invited Talk)",
+        "Suchman E, Creating effective assessments. Washington State University. (Invited Talk)",
+        "Suchman E, What\u2019s new in Teaching? Rocky Mountain Virology. CSU Mountain Campus.",
+        "Suchman E, 3D models of antigens and epitopes for teaching. ASMCUE, Denver CO.",
+        "Suchman E, 3D models of antigens and epitopes for teaching. RTA Meeting, Fort Collins CO.",
+        "Suchman E, Regional Teaching Academy\u2019s teaching evaluation process. RTA Meeting, Fort Collins CO.",
+        "Suchman E, Writing effective assessments. Speaker. TITL Summer Workshop, CSU.",
+        "Suchman E, Evaluating Teaching effectiveness. College of Agricultural Sciences, CSU. (Invited Talk)"
+      ],
+      [
+        "2028)\u00a0 CDC Rockies and High Plains Vector",
+        "Borne Diseases Center, co",
+        "PIs: Brian Foy (CSU) and Natalie Marzec (CDPHE), Co",
+        "Is: Rebekah Kading (CSU), Elizabeth Hemming",
+        "Schroeder (CSU), Greg Ebel (CSU), Nicole Kelp (CSU), Karla Saavedra"
+      ],
+      [
+        "level inter",
+        "disciplinary microbiology CUREs increase student\u2019s scientific self",
+        "efficacy, scientific identity, and self",
+        "assessed skills. J Microbiol Biol Educ. e0014023."
+      ]
+    ],
+    "https://medicine.osu.edu/departments/mii/education": [
+      [
+        "Leaders in transforming health.",
+        "Who We Are",
+        "Initiatives",
+        "Our Community",
+        "Master of Science in Immunology and Microbial Pathogenesis",
+        "PhD in Immunology and Immunotherapeutics",
+        "Collaborative education opportunities",
+        "Quick Links",
+        "Helpful Resources"
+      ]
+    ],
+    "https://www.umassmed.edu/gsbs/academics/phd-biomedical-sciences/immunology-and-microbiology-program/": [
+      [
+        "Innate immunity and inflammation",
+        "Host responses to infection and vaccine development",
+        "Fundamental molecular and cellular immunology",
+        "The mechanisms underlying bacterial, parasitological and viral pathogenesis",
+        "Diabetes and transplantation immunology",
+        "Autoimmunity",
+        "Systems biology of host-pathogen dynamics",
+        "Microbiome Sciences",
+        "Molecular mechanism of virus cell entry, assembly, and replication"
+      ],
+      [
+        "Viral and bacterial immunology and pathogenesis",
+        "Molecular virology",
+        "Diabetes and transplantation immunology",
+        "Molecular and cellular immunology",
+        "Vaccine development",
+        "Host response against bacterial and viral pathogens",
+        "Innate immune mechanisms",
+        "Systems biology of host-pathogen interactions",
+        "Microbiome sciences"
+      ],
+      [
+        "Training in Immunology and Microbiology\u00a0 |\u00a0 Lawrence Stern, PhD",
+        "Innate Immunity Training Program\u00a0 |\u00a0 Neal Silverman, PhD",
+        "Training in the Molecular Basis of Autoimmunity and Autoinflammation\u00a0 |\u00a0 Katherine Fitzgerald, PhD"
+      ],
+      [
+        "Sarah Cleveland, PhD candidateImmunology and Microbiology Program",
+        "PhD candidate seeks to develop first clinically approved antifungal vaccine",
+        "MD/PhD student seeks to improve health by understanding host-pathogen interactions",
+        "Nick Peterson and Samantha Tse named Ruth L. Kirschstein National Research Service Award recipients",
+        "Detection of intestinal pathogens through host surveillance of bacterial toxins",
+        "Mechanism of epigenetic inheritance in a mouse model of acute paternal stress",
+        "Pathogen sensing by nuclear hormone receptors in C. elegans intestinal epithelial cells",
+        "The Role of miR-122 in Alcoholic Liver Disease",
+        "The Role of Innate IL-17 Responses to Aspergillus fumigatus"
+      ],
+      [
+        "derived phenazine toxins by NHR",
+        "86/ HNF4\u237a, which directly activates protective anti",
+        "inflammatory and anti",
+        "infective therapies."
+      ],
+      [
+        "122 in a four",
+        "week chronic",
+        "alcohol mouse model. The role of miR",
+        "122 in ALD is unknown. Bioinformatic miRNA target prediction tools suggest Hypoxia",
+        "Inducible Factor 1",
+        "\ufffd (HIF1\ufffd) is a primary target of miR",
+        "122. HIF1\ufffd is critical to the progression of ALD. Specific Aim 1 will study the role of miR",
+        "122 in the pathogenesis of chronic alcohol",
+        "induced hepatitis. C57Bl/6 mice will be transfected using a hepatocyte",
+        "tropic adeno",
+        "associated virus serotype 8 (rAAV) vector to either knockdown or overexpress miR",
+        "122 via tough decoy (TuD) or the miR",
+        "122 respectively. Mice will be maintained on Lieber",
+        "DeCarli diet for 28 days. On day 28 mice will be withdrawn from alcohol and given 150",
+        "122. Specific Aim 2 will examine the effect of miR",
+        "122, its overexpression and knockdown, on HNF6\ufffd in a chronic",
+        "alcohol model. We will also examine if miR",
+        "induced liver injury.\u201d"
+      ],
+      [
+        "23 (IL",
+        "23) and interleukin",
+        "17 (IL",
+        "23 and IL",
+        "23 has been shown to augment IL",
+        "17 production, and in turn IL",
+        "17 elicits neutrophil recruitment. The relationship between IL",
+        "23 and IL",
+        "17 is referred to as the IL",
+        "23/IL",
+        "23 production is protective against mortality in Af infection, the survival rates of wild",
+        "type (WT) mice will be compared to a functional IL",
+        "23 knock",
+        "out strain (IL",
+        "23p19",
+        "23 is required for protection against Af (Specific Aim 1). The temporal pattern of production for IL",
+        "23 augments IL",
+        "17 production innately in response to Af, IL",
+        "17 levels will be assessed in IL",
+        "23p19",
+        "mice and WT mice. In addition, we have evidence that IL",
+        "23 and IL",
+        "17A are co",
+        "17 in protection against f infection will also be tested by monitoring the survival of IL"
+      ]
+    ],
+    "https://medschool.cuanschutz.edu/immunology-and-microbiology/grad-train": [
+      [
+        "Tools & Resources",
+        "CU Campuses",
+        "CU Anschutz Medical Campus",
+        "School of Medicine",
+        "Immunology Graduate Program",
+        "Microbiology Graduate Program",
+        "Immunology & Microbiology Track Master's Program",
+        "Immunology Microbiology (SOM)"
+      ]
+    ],
+    "https://gs.howard.edu/academics/degree-programs/microbiology-immunology-research-track-details": [
+      [
+        "Bacterial Genetics",
+        "Bacterial Gene Regulation",
+        "Bacteria-Host Interactions",
+        "RNA Based Gene Regulation",
+        "Viral Genetics",
+        "Virus \u2013 Host Interactions",
+        "Human Genetics and Genetic Variation",
+        "Cellular and Molecular Immunology",
+        "Cancer Biology",
+        "Cellular and Molecular Biology of Cancer Metastasis",
+        "Genetic epidemiology of breast cancer and prostate cancer"
+      ],
+      [
+        "Secondary Navigation",
+        "Graduate School",
+        "Main navigation",
+        "Secondary Navigation",
+        "Faculty Research Interests",
+        "Research Track Subfields",
+        "CORE COURSES",
+        "ELECTIVE COURSES",
+        "DISSERTATION",
+        "Footer Primary"
+      ],
+      [
+        "Cellular and Molecular Biology",
+        "Immunology",
+        "Microbial Genetics, Microbial Cell Biology, Microbial Pathogenesis",
+        "Virology"
+      ],
+      [
+        "MICR 300\u00a0\u00a0\u00a0\u00a0Biology of Pathogens I",
+        "MICR 303\u00a0\u00a0\u00a0\u00a0Biology of Pathogens II",
+        "MICR 304\u00a0\u00a0\u00a0\u00a0Cellular Molecular Immunology",
+        "MICR 305\u00a0\u00a0\u00a0\u00a0Cell Biology",
+        "MICR 307\u00a0\u00a0\u00a0\u00a0Virology(MICR 300 and 303 may be restructured due to changes in the 1st year)"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 19:28:22"
+}

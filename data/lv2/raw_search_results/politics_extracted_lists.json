@@ -1,0 +1,1232 @@
+{
+  "level1_term": "politics",
+  "url_verification_status": {
+    "https://www.newschool.edu/nssr/politics-courses/": false,
+    "https://www.newschool.edu/nssr/politics/": false,
+    "https://www.ccny.cuny.edu/polisci?srsltid=AfmBOoqElTDTLINmolMUqDdSUvxJyhBsRgICsxj775LLzmgZB94kYj0M": false,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/politics": false,
+    "https://polisci.columbia.edu/content/international-relations": true,
+    "https://polisci.rutgers.edu/component/content/category/104-graduate/61-graduate-program/146-graduate-areas-of-study?Itemid=300120": true,
+    "https://www.stonybrook.edu/commcms/polisci/graduate/phd/phd_program.php": true,
+    "https://www.maxwell.syr.edu/academics/political-science-department": false,
+    "https://politicalscience.columbian.gwu.edu/core-focus-areas": true,
+    "https://live-sas-www-polisci.pantheon.sas.upenn.edu/graduate": false,
+    "https://www.binghamton.edu/political-science/graduate/index.html": true,
+    "https://government.cornell.edu/graduate": true,
+    "https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/politics": false,
+    "https://www.stjohns.edu/academics/programs/government-and-politics-bachelor-arts": true,
+    "https://as.vanderbilt.edu/political-science/phd-courses/": true,
+    "https://polisci.mit.edu/graduate/fields": true,
+    "https://politicalscience.nd.edu/": true,
+    "https://polisci.osu.edu/graduate/fields-study/courses": true,
+    "https://government.cornell.edu/": true,
+    "https://www.holycross.edu/academics/program/political-science": true,
+    "https://www.hamilton.edu/academics/departments/government": true,
+    "https://www.polsci.ucsb.edu/": false,
+    "https://polisci.indiana.edu/index.html": true,
+    "https://political-science.uchicago.edu/department/department-of-political-science/department-of-political-science-homepage": false
+  },
+  "verified_lists_per_url": {
+    "https://www.newschool.edu/nssr/politics-courses/": 0,
+    "https://www.newschool.edu/nssr/politics/": 0,
+    "https://www.ccny.cuny.edu/polisci?srsltid=AfmBOoqElTDTLINmolMUqDdSUvxJyhBsRgICsxj775LLzmgZB94kYj0M": 0,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/politics": 0,
+    "https://polisci.columbia.edu/content/international-relations": 14,
+    "https://polisci.rutgers.edu/component/content/category/104-graduate/61-graduate-program/146-graduate-areas-of-study?Itemid=300120": 1,
+    "https://www.stonybrook.edu/commcms/polisci/graduate/phd/phd_program.php": 1,
+    "https://www.maxwell.syr.edu/academics/political-science-department": 0,
+    "https://politicalscience.columbian.gwu.edu/core-focus-areas": 1,
+    "https://live-sas-www-polisci.pantheon.sas.upenn.edu/graduate": 0,
+    "https://www.binghamton.edu/political-science/graduate/index.html": 1,
+    "https://government.cornell.edu/graduate": 4,
+    "https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/politics": 0,
+    "https://www.stjohns.edu/academics/programs/government-and-politics-bachelor-arts": 2,
+    "https://as.vanderbilt.edu/political-science/phd-courses/": 5,
+    "https://polisci.mit.edu/graduate/fields": 1,
+    "https://politicalscience.nd.edu/": 1,
+    "https://polisci.osu.edu/graduate/fields-study/courses": 2,
+    "https://government.cornell.edu/": 1,
+    "https://www.holycross.edu/academics/program/political-science": 3,
+    "https://www.hamilton.edu/academics/departments/government": 1,
+    "https://www.polsci.ucsb.edu/": 0,
+    "https://polisci.indiana.edu/index.html": 2,
+    "https://political-science.uchicago.edu/department/department-of-political-science/department-of-political-science-homepage": 0
+  },
+  "total_lists_per_url": {
+    "https://www.newschool.edu/nssr/politics-courses/": 1,
+    "https://www.newschool.edu/nssr/politics/": 1,
+    "https://www.ccny.cuny.edu/polisci?srsltid=AfmBOoqElTDTLINmolMUqDdSUvxJyhBsRgICsxj775LLzmgZB94kYj0M": 2,
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/politics": 6,
+    "https://polisci.columbia.edu/content/international-relations": 18,
+    "https://polisci.rutgers.edu/component/content/category/104-graduate/61-graduate-program/146-graduate-areas-of-study?Itemid=300120": 3,
+    "https://www.stonybrook.edu/commcms/polisci/graduate/phd/phd_program.php": 1,
+    "https://www.maxwell.syr.edu/academics/political-science-department": 12,
+    "https://politicalscience.columbian.gwu.edu/core-focus-areas": 18,
+    "https://live-sas-www-polisci.pantheon.sas.upenn.edu/graduate": 1,
+    "https://www.binghamton.edu/political-science/graduate/index.html": 3,
+    "https://government.cornell.edu/graduate": 6,
+    "https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/politics": 7,
+    "https://www.stjohns.edu/academics/programs/government-and-politics-bachelor-arts": 7,
+    "https://as.vanderbilt.edu/political-science/phd-courses/": 5,
+    "https://polisci.mit.edu/graduate/fields": 1,
+    "https://politicalscience.nd.edu/": 1,
+    "https://polisci.osu.edu/graduate/fields-study/courses": 3,
+    "https://government.cornell.edu/": 1,
+    "https://www.holycross.edu/academics/program/political-science": 4,
+    "https://www.hamilton.edu/academics/departments/government": 3,
+    "https://www.polsci.ucsb.edu/": 2,
+    "https://polisci.indiana.edu/index.html": 5,
+    "https://political-science.uchicago.edu/department/department-of-political-science/department-of-political-science-homepage": 2
+  },
+  "verified_lists_ids": {
+    "https://www.newschool.edu/nssr/politics-courses/": [],
+    "https://www.newschool.edu/nssr/politics/": [],
+    "https://www.ccny.cuny.edu/polisci?srsltid=AfmBOoqElTDTLINmolMUqDdSUvxJyhBsRgICsxj775LLzmgZB94kYj0M": [],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/politics": [],
+    "https://polisci.columbia.edu/content/international-relations": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "https://polisci.rutgers.edu/component/content/category/104-graduate/61-graduate-program/146-graduate-areas-of-study?Itemid=300120": [
+      2
+    ],
+    "https://www.stonybrook.edu/commcms/polisci/graduate/phd/phd_program.php": [
+      0
+    ],
+    "https://www.maxwell.syr.edu/academics/political-science-department": [],
+    "https://politicalscience.columbian.gwu.edu/core-focus-areas": [
+      12
+    ],
+    "https://live-sas-www-polisci.pantheon.sas.upenn.edu/graduate": [],
+    "https://www.binghamton.edu/political-science/graduate/index.html": [
+      1
+    ],
+    "https://government.cornell.edu/graduate": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/politics": [],
+    "https://www.stjohns.edu/academics/programs/government-and-politics-bachelor-arts": [
+      1,
+      5
+    ],
+    "https://as.vanderbilt.edu/political-science/phd-courses/": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "https://polisci.mit.edu/graduate/fields": [
+      0
+    ],
+    "https://politicalscience.nd.edu/": [
+      0
+    ],
+    "https://polisci.osu.edu/graduate/fields-study/courses": [
+      0,
+      1
+    ],
+    "https://government.cornell.edu/": [
+      0
+    ],
+    "https://www.holycross.edu/academics/program/political-science": [
+      0,
+      1,
+      2
+    ],
+    "https://www.hamilton.edu/academics/departments/government": [
+      1
+    ],
+    "https://www.polsci.ucsb.edu/": [],
+    "https://polisci.indiana.edu/index.html": [
+      0,
+      1
+    ],
+    "https://political-science.uchicago.edu/department/department-of-political-science/department-of-political-science-homepage": []
+  },
+  "num_urls": 40,
+  "num_lists": 113,
+  "url_to_lists": {
+    "https://www.newschool.edu/nssr/politics-courses/": [
+      [
+        "Undergraduates",
+        "Undergraduate Adult Learners",
+        "Graduates"
+      ]
+    ],
+    "https://www.newschool.edu/nssr/politics/": [
+      [
+        "Political Concepts: A Critical Lexicon - Graduate Conference",
+        "Undergraduates",
+        "Undergraduate Adult Learners",
+        "Graduates"
+      ]
+    ],
+    "https://www.ccny.cuny.edu/polisci?srsltid=AfmBOoqElTDTLINmolMUqDdSUvxJyhBsRgICsxj775LLzmgZB94kYj0M": [
+      [
+        "Chair,\nPolitical Science",
+        "North Academic Center, Room 4/135\n160 Convent Avenue, New York, NY\u00a0\u00a010031",
+        "e:212-650-5440\np: 212.650.5940",
+        "\u203a\u00a0Profile"
+      ],
+      [
+        "Administrative Assistant",
+        "North Academic Center,\u00a0Room 4/136\n160 Convent Avenue, New York, NY\u00a0\u00a010031",
+        "e: jroman@ccny.cuny.edu\np: 212-650-5468"
+      ]
+    ],
+    "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/politics": [
+      [
+        "Gary J. Bass",
+        "Mark R. Beissinger",
+        "Charles R. Beitz",
+        "Carles Boix",
+        "Charles M. Cameron",
+        "Rafaela M. Dancygier",
+        "Aaron L. Friedberg",
+        "Paul Frymer",
+        "Robert P. George",
+        "Matias Iaryczower",
+        "G. John Ikenberry",
+        "John Kastellec",
+        "Atul Kohli",
+        "Melissa Lane",
+        "Frances E. Lee",
+        "John B. Londregan",
+        "Stephen J. Macedo",
+        "Nolan McCarty",
+        "Tali Mendelberg",
+        "Helen V. Milner",
+        "Andrew Moravcsik",
+        "Layna Mosley",
+        "Jan-Werner M\u00fcller",
+        "Alan W. Patten",
+        "Grigore Pop-Eleches",
+        "Markus Prior",
+        "Kristopher W. Ramsay",
+        "Jacob N. Shapiro",
+        "Arthur Spirling",
+        "Roc\u00edo Titiunik",
+        "James Raymond Vreeland",
+        "Leonard Wantchekon",
+        "Ismail K. White",
+        "Jennifer A. Widner",
+        "Deborah J. Yashar"
+      ],
+      [
+        "Gregory A. Conti",
+        "Andy Guess",
+        "Jonathan F. Mummolo",
+        "LaFleur Stephens-Dougan",
+        "Rory Truex",
+        "Hye Young You"
+      ],
+      [
+        "Christopher W. Blair",
+        "German S. Gieczewski",
+        "Tanushree Goyal",
+        "Naima N. Green-Riley",
+        "Saad A. Gulzar",
+        "Gleason Judd",
+        "Nicholas Kuipers",
+        "Elizabeth R. Nugent",
+        "Temi Ogunye",
+        "Rebecca L. Perlman",
+        "Guadalupe Tu\u00f1\u00f3n",
+        "Andreas B. Wiedemann",
+        "Xu Xu",
+        "Zeyang Yu"
+      ],
+      [
+        "Christopher L. Eisgruber, President",
+        "Daniel Garber, Philosophy",
+        "Elizabeth L. Paluck, Psychology",
+        "Philip N. Pettit, Center for Human Values",
+        "Kim Lane Scheppele, Schl of Public & Int'l Affairs",
+        "Michael Smith, Philosophy",
+        "Brandon M. Stewart, Sociology"
+      ],
+      [
+        "Madeleine Armstrong",
+        "Shilo Brooks",
+        "Effrosyni Charitopoulou",
+        "Tolgahan Dilgin",
+        "Darren Geist",
+        "Marzenna James",
+        "Janet H. Madigan",
+        "Corrine M. McConnaughy",
+        "Samuel W. Mead",
+        "Adam M. Thomas",
+        "Brandon Van Dyck"
+      ],
+      [
+        "Program length\n5 years",
+        "Fee\n$75",
+        "GRE\nGeneral Test - required",
+        "For a full list of faculty members and fellows please visit the department or program website."
+      ]
+    ],
+    "https://polisci.columbia.edu/content/international-relations": [
+      [
+        "photo of Allison Jean Carnegie\n\n\nProfessors\n\n\nAllison Jean Carnegie",
+        "Professor of Political Science; Director of Graduate Studies",
+        "International Relations\nPolitical Economy"
+      ],
+      [
+        "photo of Sarah Z. Daly\n\n\nProfessors\n\n\nSarah Z. Daly",
+        "Associate Professor of Political Science",
+        "International Relations"
+      ],
+      [
+        "photo of Michael W. Doyle\n\n\nProfessors\n\n\nMichael W. Doyle",
+        "University Professor, School of International and Public Affairs",
+        "International Relations"
+      ],
+      [
+        "photo of Virginia Page Fortna\n\n\nProfessors\n\n\nVirginia Page Fortna",
+        "Harold Brown Professor of US Foreign and Security Policy",
+        "International Relations"
+      ],
+      [
+        "photo of Jeffry A. Frieden\n\n\nProfessors\n\n\nJeffry A. Frieden",
+        "Professor of International and Public Affairs and Political Science, School Intl & Public Affairs",
+        "International Relations\nPolitical Economy"
+      ],
+      [
+        "photo of Nikhar Gaikwad\n\n\nProfessors\n\n\nNikhar Gaikwad",
+        "Assistant Professor of Political Science",
+        "International Relations\nPolitical Economy"
+      ],
+      [
+        "photo of Tamar Mitts\n\n\nProfessors\n\n\nTamar Mitts",
+        "Assistant Professor of International and Public Affairs, School Intl & Public Affairs",
+        "International Relations"
+      ],
+      [
+        "photo of Andrew J. Nathan\n\n\nProfessors\n\n\nAndrew J. Nathan",
+        "Class of 1919 Professor of Political Science",
+        "Comparative Politics\nInternational Relations"
+      ],
+      [
+        "photo of Elizabeth N. Saunders\n\n\nProfessors\n\n\nElizabeth N. Saunders",
+        "Professor of Political Science",
+        "International Relations"
+      ],
+      [
+        "photo of Jack Lewis Snyder\n\n\nProfessors\n\n\nJack Lewis Snyder",
+        "Robert and Ren\u00e9e Belfer Professor of International Relations",
+        "International Relations"
+      ],
+      [
+        "photo of Calvin N. Thrall\n\n\nProfessors\n\n\nCalvin N. Thrall",
+        "Assistant Professor of Political Science",
+        "International Relations\nPolitical Economy"
+      ],
+      [
+        "photo of Tenzin Dorjee\n\n\nLecturers\n\n\nTenzin Dorjee",
+        "Lecturer in the Discipline of Political Science",
+        "International Relations\nComparative Politics"
+      ],
+      [
+        "International Relations",
+        "Comparative Politics",
+        "Political Economy"
+      ],
+      [
+        "photo of Tsveta Petrova\n\n\nLecturers\n\n\nTsveta Petrova",
+        "Lecturer in the Discipline  of Political Science",
+        "International Relations"
+      ],
+      [
+        "International Relations",
+        "Comparative Politics",
+        "Political Economy"
+      ],
+      [
+        "International Relations",
+        "Political Economy",
+        "Comparative Politics"
+      ],
+      [
+        "International Relations",
+        "Comparative Politics",
+        "Political Economy"
+      ],
+      [
+        "International Relations",
+        "Comparative Politics",
+        "Political Economy"
+      ]
+    ],
+    "https://polisci.rutgers.edu/component/content/category/104-graduate/61-graduate-program/146-graduate-areas-of-study?Itemid=300120": [
+      [
+        "Events",
+        "Undergraduate Program",
+        "UNMA Program",
+        "PhD Program"
+      ],
+      [
+        "Milton Heumann",
+        "Lisa L. Miller (American Politics, REP)",
+        "Affiliated Faculty",
+        "Nikol Alexander-Floyd (Political Science, Women and Politics)",
+        "Linda Bosniak (Rutgers School of Law)",
+        "Jeff Decker (American Studies and Political Science",
+        "16:790:605 Pro-seminar in Public Law",
+        ".16:790:650 Seminar in Law and Politics",
+        "16:790:651 Seminar in Constitutional Law",
+        "16:790:652 Philosophy of Law and Jurisprudence",
+        "16:790:653 Seminar in Doctrinal Analysis",
+        "46 16:790:654 Contemporary Constitutional Issues",
+        "16:790:655 Constitutionalism and Judicial Politics",
+        "16:790:688 Advanced Topics in Public Law",
+        "16:790 694 INDEP STUDY\u00a0PUBLIC LAW"
+      ],
+      [
+        "Kenwick, MichaelLevy, JackLindsey, SummerMidlarsky, ManusTomashevskiy, Andrey",
+        "16:790:604 Pro-seminar: Theories of International Politics",
+        "16:790:630 International Political Economy",
+        "16:790:631 Theories of War and Peace",
+        "16:790:632 Theories of Political Violence and Stability",
+        "16:790:633 American Foreign Policy",
+        "16:790:634 Foreign Policy Analysis",
+        "16:790:635 Research Seminar on War and Peace",
+        "16:790:686 Advanced Topics in International Relations",
+        "16:790:693 Independent Study in International Relations"
+      ]
+    ],
+    "https://www.stonybrook.edu/commcms/polisci/graduate/phd/phd_program.php": [
+      [
+        "GENERAL OVERVIEW",
+        "FIELDS OF STUDY",
+        "DEGREE REQUIREMENTS",
+        "COURSES"
+      ]
+    ],
+    "https://www.maxwell.syr.edu/academics/political-science-department": [
+      [
+        "Undergraduate Studies",
+        "Graduate Studies",
+        "Recent Faculty Books",
+        "Political Science in Action"
+      ],
+      [
+        "Mazaher Kaila \u201919,  L\u201922",
+        "Baobao Zhang",
+        "April 4, 2025"
+      ],
+      [
+        "Who Tells Your Story? Women and Indigenous Peoples Advocacy at the UNFCCC",
+        "Takumi Shibaike, Bi Zhao",
+        "Cambridge University Press, 2025",
+        "Climate Change, Environment, Non-governmental Organizations"
+      ],
+      [
+        "Kevin Arceneaux, Johanna Dunaway, Martin Johnson, Ryan J. Vander Wielen",
+        "Cambridge University Press, 2025",
+        "Media & Journalism, Political Parties, U.S. Elections, United States"
+      ],
+      [
+        "The Shadow Gospel: How Anti-liberal Demonology Possessed U.S. Religion, Media, and Politics",
+        "Whitney Phillips, Mark Brockway",
+        "MIT Press, 2025",
+        "Political Parties, U.S. Elections, United States"
+      ],
+      [
+        "Russian Politics: A Very Short Introduction",
+        "Brian Taylor",
+        "Oxford University Press, 2024",
+        "International Affairs, Russia, United States"
+      ],
+      [
+        "The Transformation of the Republican Party",
+        "Jeffrey M. Stonecash",
+        "Lynne Rienner Publishers, 2024",
+        "Political Parties, United States"
+      ],
+      [
+        "The Invented State: Policy Misperceptions in the American Public",
+        "Emily Thorson",
+        "Oxford University Press, 2024",
+        "Federal, Media & Journalism, State & Local"
+      ],
+      [
+        "Black Women Taught Us: An Intimate History of Black Feminism",
+        "Jenn M. Jackson",
+        "Penguin Random House, 2024",
+        "Black, Gender and Sex, Social Justice, United States"
+      ],
+      [
+        "Explaining Success in Africa: Things Don\u2019t Always Fall Apart",
+        "Erin Hern",
+        "Lynne Rienner Publishers, 2023",
+        "Africa (Sub-Saharan), Government"
+      ],
+      [
+        "The Constitution\u2019s Penman: Gouverneur Morris and the Creation of America\u2019s Basic Charter",
+        "Dennis Rasmussen",
+        "University Press of Kansas, 2023",
+        "Government, United States"
+      ],
+      [
+        "Political Science Department",
+        "100 Eggers Hall",
+        "pscadm@syr.edu",
+        "315.443.2416"
+      ]
+    ],
+    "https://politicalscience.columbian.gwu.edu/core-focus-areas": [
+      [
+        "Steven J. Balla",
+        "Brandon Bartels",
+        "Sarah A. Binder",
+        "Michael Hankinson"
+      ],
+      [
+        "Danny Hayes",
+        "Eric D. Lawrence",
+        "Forrest Maltzman",
+        "Ethan Porter",
+        "Jasmine Smith",
+        "Robert P. Stoker"
+      ],
+      [
+        "Andrew I. Thompson",
+        "Paul Wahlbeck",
+        "Julian\u00a0Wamble",
+        "Christopher Warshaw"
+      ],
+      [
+        "Celeste Arrington",
+        "Alasdair Bowie",
+        "Nathan J. Brown",
+        "Alicia Cooperman",
+        "Bruce J. Dickson",
+        "Harvey B. Feigenbaum"
+      ],
+      [
+        "Omar Garc\u00eda-Ponce",
+        "Henry E. Hale",
+        "Stephen B. Kaplan",
+        "Eric Kramon",
+        "Janet I. Lewis",
+        "Cynthia McClintock"
+      ],
+      [
+        "Michael Miller",
+        "Kimberly J. Morgan",
+        "Harris Mylonas",
+        "David Szakonyi",
+        "Emmanuel J. Teitelbaum",
+        "Sharon L. Wolchik"
+      ],
+      [
+        "Michael Barnett",
+        "Michael E. Brown",
+        "Adam Dean",
+        "Jeffrey Ding",
+        "Alexander B. Downes",
+        "Martha Finnemore"
+      ],
+      [
+        "Eric Grynaviski",
+        "Stephen B. Kaplan",
+        "James H. Lebovic",
+        "Yonatan Lupu"
+      ],
+      [
+        "Marc Lynch",
+        "Mike Mochizuki",
+        "Harris Mylonas",
+        "David Shambaugh",
+        "Rachel Tecott Metz"
+      ],
+      [
+        "Steven J. Balla",
+        "Brandon Bartels",
+        "Alicia Cooperman",
+        "Omar Garc\u00eda-Ponce"
+      ],
+      [
+        "Eric D. Lawrence",
+        "James H. Lebovic",
+        "Yonatan Lupu",
+        "Eric Kramon"
+      ],
+      [
+        "Michael Miller",
+        "Harris Mylonas",
+        "Christopher Warshaw"
+      ],
+      [
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Theory",
+        "Public Policy",
+        "Research Methods"
+      ],
+      [
+        "Steven J. Balla\nBrandon Bartels\nSarah A. Binder\nMichael Hankinson",
+        "Danny Hayes\nEric D. Lawrence\nForrest Maltzman\nEthan Porter\nJasmine Smith\nRobert P. Stoker",
+        "Andrew I. Thompson\nPaul Wahlbeck\nJulian\u00a0Wamble\nChristopher Warshaw"
+      ],
+      [
+        "Michael Barnett\nMichael E. Brown\nAdam Dean\nJeffrey Ding\nAlexander B. Downes\nMartha Finnemore",
+        "Eric Grynaviski\nStephen B. Kaplan\nJames H. Lebovic\nYonatan Lupu",
+        "Marc Lynch\nMike Mochizuki\nHarris Mylonas\nDavid Shambaugh\nRachel Tecott Metz"
+      ],
+      [
+        "Elisabeth Anker\nIngrid Creppell",
+        "Samuel Goldman\nLucia M. Rafanelli",
+        "William Winstead"
+      ],
+      [
+        "Steven J. Balla",
+        "Eric D. Lawrence",
+        "Robert P. Stoker"
+      ],
+      [
+        "Steven J. Balla\nBrandon Bartels\nAlicia Cooperman\nOmar Garc\u00eda-Ponce",
+        "Eric D. Lawrence\nJames H. Lebovic\nYonatan Lupu\nEric Kramon",
+        "Michael Miller\nHarris Mylonas\nChristopher Warshaw"
+      ]
+    ],
+    "https://live-sas-www-polisci.pantheon.sas.upenn.edu/graduate": [
+      [
+        "Alexander Weisiger, Graduate Chair",
+        "Nathalie Lacarri\u00e8re, Graduate Coordinator",
+        "Twitter: @PoliticsAtPenn"
+      ]
+    ],
+    "https://www.binghamton.edu/political-science/graduate/index.html": [
+      [
+        "international relations and foreign policy",
+        "human rights",
+        "political parties",
+        "campaigns and campaign finance"
+      ],
+      [
+        "Political Science",
+        "sakcinar@binghamton.edu",
+        "LN G92"
+      ],
+      [
+        "specific scholarships and awards,",
+        "time will receive a scholarship that covers the cost of",
+        "based fees (this does not include",
+        "funded, although funding opportunities occasionally arise."
+      ]
+    ],
+    "https://government.cornell.edu/graduate": [
+      [
+        "Introductory Probability and Statistics",
+        "Advanced Regression Analysis",
+        "Comparative Methods",
+        "Formal Theory and Modeling",
+        "Foundations of Social Sciences",
+        "Experiment and Survey Design"
+      ],
+      [
+        "Government and Public Policy",
+        "The United States Congress",
+        "Field Seminar: American Political Organizations, Institutions and Party Systems",
+        "Democratic Theory and Institutions",
+        "Political Economy of American Development",
+        "Social Movements and State Expansion in the 20th Century",
+        "American Foreign Policy",
+        "Public Opinion"
+      ],
+      [
+        "Comparative Political Ecology",
+        "Criminality and the State",
+        "Comparative Democratization",
+        "Administration of Agricultural and Rural Development",
+        "Agrarian Political Economy",
+        "Chinese Politics",
+        "Comparative Labor Movements (Europe & Latin America)",
+        "Comparative Political Economy (advanced industrial countries)",
+        "European Parties and Party Systems",
+        "Social Movements, Collective Action, and Reform",
+        "State and Economy in Comparative Perspective"
+      ],
+      [
+        "Field Seminar in International Relations",
+        "International Political Economy",
+        "International Security Politics",
+        "Ethical Issues in International Affairs",
+        "U.S. Foreign Policy in Perspective",
+        "The Politics of Transnationalism",
+        "Asian Security",
+        "International Strategy",
+        "Foreign Policy Analysis"
+      ],
+      [
+        "Secession, Intervention & Just War Theory",
+        "Modern Social Theory",
+        "American Political Thought",
+        "Contemporary Democratic Theory",
+        "Republicanism and Liberalism",
+        "The Western Political Tradition",
+        "Language and Politics"
+      ],
+      [
+        "Methodology",
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Theory"
+      ]
+    ],
+    "https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/politics": [
+      [
+        "Track in\u00a0American Ideas and Institutions",
+        "Track in\u00a0Political Economy",
+        "Track in\u00a0Quantitative and Analytical Political Science",
+        "Track in\u00a0Race and Identity"
+      ],
+      [
+        "Gary J. Bass",
+        "Mark R. Beissinger",
+        "Charles R. Beitz",
+        "Carles Boix",
+        "Charles M. Cameron",
+        "Rafaela M. Dancygier",
+        "Aaron L. Friedberg",
+        "Paul Frymer",
+        "Robert P. George",
+        "Matias Iaryczower",
+        "G. John Ikenberry",
+        "John Kastellec",
+        "Atul Kohli",
+        "Melissa Lane",
+        "Frances E. Lee",
+        "John B. Londregan",
+        "Stephen J. Macedo",
+        "Nolan McCarty",
+        "Tali Mendelberg",
+        "Helen V. Milner",
+        "Andrew Moravcsik",
+        "Layna Mosley",
+        "Jan-Werner M\u00fcller",
+        "Alan W. Patten",
+        "Grigore Pop-Eleches",
+        "Markus Prior",
+        "Kristopher W. Ramsay",
+        "Jacob N. Shapiro",
+        "Arthur Spirling",
+        "Roc\u00edo Titiunik",
+        "James Raymond Vreeland",
+        "Leonard Wantchekon",
+        "Ismail K. White",
+        "Jennifer A. Widner",
+        "Deborah J. Yashar"
+      ],
+      [
+        "Gregory A. Conti",
+        "Andy Guess",
+        "Jonathan F. Mummolo",
+        "LaFleur Stephens-Dougan",
+        "Rory Truex",
+        "Hye Young You"
+      ],
+      [
+        "Christopher W. Blair",
+        "German S. Gieczewski",
+        "Tanushree Goyal",
+        "Naima N. Green-Riley",
+        "Saad A. Gulzar",
+        "Gleason Judd",
+        "Nicholas Kuipers",
+        "Elizabeth R. Nugent",
+        "Temi Ogunye",
+        "Rebecca L. Perlman",
+        "Guadalupe Tu\u00f1\u00f3n",
+        "Andreas B. Wiedemann",
+        "Xu Xu",
+        "Zeyang Yu"
+      ],
+      [
+        "Christopher L. Eisgruber, President",
+        "Daniel Garber, Philosophy",
+        "Elizabeth L. Paluck, Psychology",
+        "Philip N. Pettit, Center for Human Values",
+        "Kim Lane Scheppele, Schl of Public & Int'l Affairs",
+        "Michael Smith, Philosophy",
+        "Brandon M. Stewart, Sociology"
+      ],
+      [
+        "Madeleine Armstrong",
+        "Shilo Brooks",
+        "Effrosyni Charitopoulou",
+        "Tolgahan Dilgin",
+        "Darren Geist",
+        "Marzenna James",
+        "Janet H. Madigan",
+        "Corrine M. McConnaughy",
+        "Samuel W. Mead",
+        "Adam M. Thomas",
+        "Brandon Van Dyck"
+      ],
+      [
+        "Course Selection",
+        "Analytical Requirement",
+        "POL 300",
+        "Cognates",
+        "Graduate Courses",
+        "Junior Year",
+        "Senior Year"
+      ]
+    ],
+    "https://www.stjohns.edu/academics/programs/government-and-politics-bachelor-arts": [
+      [
+        "Academics",
+        "Majors and Programs of Study",
+        "Government and Politics, Bachelor of Arts"
+      ],
+      [
+        "American Government",
+        "International Relations",
+        "Comparative Politics",
+        "Political Theory",
+        "Public Administration and Public Service"
+      ],
+      [
+        "Government and Politics Society",
+        "Economics and Finance Society",
+        "Alpha Zappa Delta: International sociology honor society",
+        "Omicron Delta Epsilon:\u00a0International honor society for economics"
+      ],
+      [
+        "Fred P. Cocozzelli",
+        "Major Sequence \u201436 Credits",
+        "Required",
+        "One Elective in each of the following areas:",
+        "Julia Goncalves: from around the Corner to around the World",
+        "Alumna Finds Her Path to Cybersecurity Field through the Liberal Arts",
+        "Explore Affordability",
+        "Apply to St. John's"
+      ],
+      [
+        "Associate Professor",
+        "Chair",
+        "[email\u00a0protected]",
+        "St. John Hall Room 234 A718-990-5267"
+      ],
+      [
+        "International Relations",
+        "Comparative Government",
+        "Political Theory"
+      ],
+      [
+        "Degree Type",
+        "Area of Interest",
+        "Associated Colleges or Schools",
+        "Program Location",
+        "Required Credit Hours"
+      ]
+    ],
+    "https://as.vanderbilt.edu/political-science/phd-courses/": [
+      [
+        "American institutions, with focus on the presidency, Congress, and the bureaucracy",
+        "Mass political behavior, elections, and electoral participation",
+        "The politics of race, gender, and identity"
+      ],
+      [
+        "Public opinion, elections, and democratic culture",
+        "Identity politics, inequality, and intergroup conflict",
+        "Elites and democratic institutions"
+      ],
+      [
+        "Theories of international and intranational conflict",
+        "Microfoundations of conflict processes",
+        "The economic dimensions of conflict"
+      ],
+      [
+        "American Politics",
+        "PSCI 8220: The American Presidency",
+        "PSCI 8331: Party Politics",
+        "PSCI 8332: Electoral Behavior and Public Opinion",
+        "PSCI 8334: Executive Institutions",
+        "PSCI 8334: Political Psychology",
+        "PSCI 8335: Politics of American Legislation",
+        "PSCI 8336: American Political Institutions",
+        "PSCI 8337: American Political Behavior",
+        "PSCI 8342: Race and Racism in American Politics",
+        "Comparative Politics",
+        "PSCI 8310: Studies in Comparative Politics",
+        "PSCI 8300: Comparative Political Behavior",
+        "PSCI 8314: Comparative Political Parties",
+        "PSCI 8315: Research in Latin American Politics",
+        "PSCI 8317: The Political Economy of Development",
+        "PSCI 8300: Comparative Authoritarianism",
+        "PSCI 8324: Political Violence",
+        "International Relations",
+        "PSCI 8320 Political Economy of Conflict",
+        "PSCI 8321 International Conflict",
+        "PSCI 8324 Political Violence",
+        "PSCI 8327 International Political Economy",
+        "PSCI 8328 International Security",
+        "PSCI 8301 Human Rights",
+        "PSCI 83XX Terrorism",
+        "PSCI 83XX. Civil War",
+        "Political Science Methods",
+        "PSCI 8355 Research Design",
+        "PSCI 8356 Statistics for Political Research I",
+        "PSCI 8357. Statistics for Political Research II",
+        "PSCI 8358 Topics in Political Methodology",
+        "PSCI 8359 Introduction to Formal Modeling",
+        "PSCI 8360 Topics in Formal Theory and Modeling",
+        "PSCI 8364 Formal Political Theory II: Advanced Modeling and Applications",
+        "PSCI 8362 Data Collection Methods",
+        "PSCI 8363 Survey Research Methods",
+        "PSCI 8365 Topics in Network Analysis",
+        "Political Theory",
+        "PSCI 8300 Political Theory",
+        "PSCI 8301 Human Rights",
+        "PSCI 8304 Identity Politics",
+        "PSCI 8305 Feminist Social and Political Thought",
+        "PSCI 8307 The Politics of Gender",
+        "PSCI 8308 Studies in Historical Political Thought",
+        "Reading and Research Credits",
+        "PSCI 8999 Non-Candidate Research",
+        "PSCI 9999 Candidate Research",
+        "Your Vanderbilt",
+        "Quick Links"
+      ],
+      [
+        "These two courses are:",
+        "Political Economy",
+        "PSCI 8320: Political Economy of Conflict",
+        "PSCI 8327: International Political Economy.",
+        "Conflict"
+      ]
+    ],
+    "https://polisci.mit.edu/graduate/fields": [
+      [
+        "Primary Navigation",
+        "Graduate Program",
+        "Secondary nav - Graduate",
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Models and Methods",
+        "Political Economy",
+        "Security Studies",
+        "Footer Navigation"
+      ]
+    ],
+    "https://politicalscience.nd.edu/": [
+      [
+        "Americans Vote For an Atheist?",
+        "At last, the last (wo)man responds to (her) readers and critics",
+        "Inkstick Media - What to Make of Russia-Ukraine War Negotiations",
+        "Women\u2019s History Month: A history of women in politics",
+        "Lessons from Venezuela\u2019s democratic collapse: How opposition movements can defy autocratic leaders",
+        "Welcome to Our New Administrative Coordinator",
+        "The Rooney Center is participating in the RapidPeer Program",
+        "Lecture by Ant\u00f3n Barba-Kay | Regimes of Speech: The Politics of AI and the Fate of Liberal Democracy",
+        "South Asia Group: Lecture with Nishith Prakash, Northeastern University",
+        "2025 Graduate Conference in Political Theory and Constitutional Studies"
+      ]
+    ],
+    "https://polisci.osu.edu/graduate/fields-study/courses": [
+      [
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Economy",
+        "Political Methodology",
+        "Political Psychology",
+        "Political Theory",
+        "Variable Courses"
+      ],
+      [
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Economy",
+        "Political Methodology",
+        "Political Psychology",
+        "Political Theory",
+        "Variable Courses",
+        "American Politics Courses",
+        "Comparative Politics Courses",
+        "International Relations Courses",
+        "Political Economy Courses",
+        "Political Methodology Courses",
+        "Political Psychology Courses",
+        "Political Theory Courses",
+        "Variable Courses"
+      ],
+      [
+        "7788 Box-Steffensmeier Spring 2017.docx38.76 KB",
+        "File7700 McGraw Spring 2016.docx47.09 KB",
+        "File5411 MacGilvray Spring 2017.pdf99.66 KB",
+        "File5412 MacGilvray Autumn 2017.pdf103.21 KB",
+        "File7410 Valdez Autumn 2015.pdf169.77 KB",
+        "File7499 McKean Autumn 2016.pdf155.43 KB",
+        "File7888 Robinson Spring 2017.pdf152.7 KB",
+        "File7905 Acs Spring 2018.pdf164.35 KB",
+        "File8000 Valdez Autumn 2018.pdf176.62 KB"
+      ]
+    ],
+    "https://government.cornell.edu/": [
+      [
+        "Undergraduate Program",
+        "Graduate Program",
+        "Faculty Profiles",
+        "Courses"
+      ]
+    ],
+    "https://www.holycross.edu/academics/program/political-science": [
+      [
+        "American government",
+        "Political philosophy",
+        "Comparative politics",
+        "International relations"
+      ],
+      [
+        "Principles of American Government",
+        "Introduction to Political Philosophy",
+        "Race and Ethnicity Politics",
+        "Constitutional Law: National Powers",
+        "Congress and the Legislative Process",
+        "Performing Research in Political Science",
+        "Introduction to International Relations",
+        "Latin American Politics",
+        "Islamic Political Thought",
+        "The Politics of Post-Communism",
+        "International Political Economy"
+      ],
+      [
+        "You are here:",
+        "Areas of Study",
+        "Requirements",
+        "Sample Courses",
+        "Meet Your Department Chair",
+        "Opportunities",
+        "In the News",
+        "Frequently Asked Questions",
+        "Social",
+        "Footer",
+        "Social",
+        "Site Menu",
+        "Secondary Menu",
+        "Main Menu",
+        "Secondary Menu",
+        "Info For Menu"
+      ],
+      [
+        "4 Introductory courses",
+        "Six Elective, Upper-division Courses",
+        "Honors Thesis",
+        "Honors Thesis",
+        "Charles Carroll Program",
+        "Washington Semester Program",
+        "Study Abroad",
+        "Honors Society",
+        "From 'Oppenheimer' to AI: The Dangers of Implementing Technology Without Oversight",
+        "From The Hill to the White House: How One Decision Changed Alicia Molt West's Life",
+        "The United States of Anxiety: How to Stay Engaged in Politics Without Burning Out",
+        "Can I do a minor in political science?",
+        "Can I use Study Abroad courses to help fulfill my political science major requirements?",
+        "Can I combine the Washington Semester Program with my political science major?",
+        "Can I count Advanced Placement courses toward my major requirements?",
+        "Can I count courses from other colleges or universities toward my major requirements?",
+        "Should I take the four introductory political science courses in a particular order?",
+        "Can I write a senior honors thesis in political science?"
+      ]
+    ],
+    "https://www.hamilton.edu/academics/departments/government": [
+      [
+        "Program Analyst, Department of Homeland Security",
+        "Strategic Marketing Coordinator, NBC Universal Media",
+        "Writer, Comedy Central",
+        "Coordinator for Communications & Outreach, U.S. Department of State",
+        "Orthopedic Surgeon",
+        "Advisor & Associate Counsel, Republican National Committee",
+        "Maynard-Knox Professor of Government, Hamilton College",
+        "Founder/Executive Director/President, New England Center for Children",
+        "Director, Foreign Exchange Distribution, UBS Securities LLC",
+        "President & CEO, Texas International Education Consortium",
+        "Senior Public Affairs Officer, U.S. Department of the Interior"
+      ],
+      [
+        "Utility",
+        "You are here:",
+        "Government",
+        "A Sampling of Courses",
+        "Meet Our Faculty",
+        "Faces & Spaces",
+        "Careers After Hamilton",
+        "Explore Hamilton Stories",
+        "Social",
+        "Social",
+        "Footer",
+        "Site Menu",
+        "Secondary",
+        "Actions",
+        "Support",
+        "Audience",
+        "Site Search"
+      ],
+      [
+        "Students Will Learn To:",
+        "The American Founding: Ideals and Reality",
+        "Explore these select courses:",
+        "Women and War: Feminism, Militarism and Nationalism",
+        "Survey of Constitutional Law",
+        "Free Speech Theory",
+        "Capitalism, Democracy, and the Workplace",
+        "Topics: Lobbying and Government Relations",
+        "Robert Martin\n\n\n\ufeff",
+        "Frank Anechiarico\n\n\n\ufeff",
+        "Alan Cafruny\n\n\n\ufeff",
+        "Peter Cannav\u00f2\n\n\n\ufeff",
+        "Matt Cartwright \u201983\n\n\n\ufeff",
+        "Alexsia Chan\n\n\n\ufeff",
+        "Catherine Chen\n\n\n\ufeff",
+        "Erica De Bruin\n\n\n\ufeff",
+        "Ashley Gorham\n\n\n\ufeff",
+        "Annabelle Hutchinson\n\n\n\ufeff",
+        "Kira Jumet\n\n\n\ufeff",
+        "Philip Klinkner\n\n\n\ufeff",
+        "Kenneth Leonardo\n\n\n\ufeff",
+        "Ngonidzashe Munemo",
+        "Stephen Orvis\n\n\n\ufeff",
+        "David Rivera\n\n\n\ufeff",
+        "Sharon Werning Rivera\n\n\n\ufeff",
+        "Heather Sullivan\n\n\n\ufeff",
+        "Joel Winkelman\n\n\n\ufeff",
+        "George Baker \u201974\n\n\n\ufeff",
+        "Ralph Eannace\n\n\n\ufeff",
+        "Pedram Maghsoud-Nia\n\n\n\ufeff",
+        "Frank Vlossak \u201989\n\n\n\ufeff"
+      ]
+    ],
+    "https://www.polsci.ucsb.edu/": [
+      [
+        "Main menu",
+        "Welcome to the Department of Political Science",
+        "Message From the Chair",
+        "Awards and Announcements",
+        "Events"
+      ],
+      [
+        "About the Department",
+        "Hire a Political Science Ph.D.",
+        "The Political Science Major",
+        "Graduate Study at UCSB"
+      ]
+    ],
+    "https://polisci.indiana.edu/index.html": [
+      [
+        "Contact",
+        "Political Science B.A.",
+        "Political Science & Economics B.A.",
+        "Political Science & Philosophy B.A.",
+        "Political Science B.A. & Law School J.D.",
+        "Philosophy, Political Science, and Economics Minor (PPE)",
+        "Political Science Minors",
+        "Focus Areas",
+        "Course Forms",
+        "Honors Thesis",
+        "Honors Societies",
+        "Scholarship Forms",
+        "AdvisingHow to Schedule an Appointment",
+        "How to Schedule an Appointment",
+        "Political Science Ph.D.",
+        "Political Science Outside Minor",
+        "Graduate Study Guide",
+        "Graduate Student Association",
+        "Resources",
+        "Courses"
+      ],
+      [
+        "Political Science B.A.",
+        "Political Science & Economics B.A.",
+        "Political Science & Philosophy B.A.",
+        "Political Science B.A. & Law School J.D.",
+        "Philosophy, Political Science, and Economics Minor (PPE)",
+        "Political Science Minors",
+        "Focus Areas",
+        "Course Forms",
+        "Honors Thesis",
+        "Honors Societies",
+        "Scholarship Forms",
+        "AdvisingHow to Schedule an Appointment",
+        "How to Schedule an Appointment",
+        "Political Science Ph.D.",
+        "Political Science Outside Minor",
+        "Graduate Study Guide",
+        "Graduate Student Association",
+        "Resources",
+        "Courses"
+      ],
+      [
+        "Political Science B.A.",
+        "Political Science & Economics B.A.",
+        "Political Science & Philosophy B.A.",
+        "Political Science B.A. & Law School J.D.",
+        "Philosophy, Political Science, and Economics Minor (PPE)",
+        "Political Science Minors",
+        "Focus Areas",
+        "Course Forms",
+        "Honors Thesis",
+        "Honors Societies",
+        "Scholarship Forms",
+        "AdvisingHow to Schedule an Appointment",
+        "How to Schedule an Appointment"
+      ],
+      [
+        "Political Science Ph.D.",
+        "Political Science Outside Minor",
+        "Graduate Study Guide",
+        "Graduate Student Association",
+        "Resources"
+      ],
+      [
+        "Undergraduate programs",
+        "Internship in D.C.",
+        "Graduate programs",
+        "Gain marketable skills",
+        "Diverse career paths",
+        "Job market candidates",
+        "Incoming freshmen",
+        "Current IU students",
+        "Prospective graduate students",
+        "Department of Political Science social media channels",
+        "The College of Arts & Sciences"
+      ]
+    ],
+    "https://political-science.uchicago.edu/department/department-of-political-science/department-of-political-science-homepage": [
+      [
+        "Graduate studies in the department",
+        "PhD Requirements",
+        "Graduate studies in the department"
+      ],
+      [
+        "BA program of study",
+        "Undergrad Major",
+        "BA program of study"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:38:34"
+}

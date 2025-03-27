@@ -1,0 +1,1252 @@
+{
+  "level1_term": "rhetoric",
+  "url_verification_status": {
+    "https://www.stonybrook.edu/commcms/writrhet/graduate/certificate.php": false,
+    "https://pll.harvard.edu/course/rhetoric-art-persuasive-writing-and-public-speaking": true,
+    "https://english.arizona.edu/rcte": true,
+    "https://www.stonybrook.edu/commcms/grad/academics/details.php?code=wrt&type=description&level=graduate_bulletin_data": false,
+    "https://rhetoric.berkeley.edu/home": true,
+    "https://liberalarts.utexas.edu/rhetoric/courses-in-rhetoric/graduate-courses.html": true,
+    "https://courses.syracuse.edu/graduate/programs/composition-cultural-rhetoric-phd": true,
+    "https://rhetoric.richmond.edu/academics/courses/index.html": true,
+    "https://rhetoric.sdsu.edu/academics/graduate": true,
+    "https://writing.utah.edu/": true,
+    "https://www.artsci.uc.edu/departments/english/grad/rc.html": true,
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/phd-rhetoric-and-scientific-technical-communication": false,
+    "https://cres.english.ua.edu/about-the-cres-program/cres-courses/": false,
+    "https://artsandsciences.syracuse.edu/writing-studies-rhetoric-and-composition/": true,
+    "https://www.duq.edu/academics/colleges-and-schools/liberal-arts/departments-and-centers/communication-and-rhetorical-studies/graduate-programs/phd-rhetoric.php": true,
+    "https://www.ohio.edu/cas/english/research/rhetoric-composition": false,
+    "https://www.cmu.edu/dietrich/english/academic-programs/phd-rhetoric/index.html": false,
+    "https://louisville.edu/english/graduate/ph-d-in-rhetoric-composition": true,
+    "https://english.illinois.edu/academics/undergraduate-studies/rhetoric-program": false,
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/professional-development/": true,
+    "https://english.indiana.edu/undergraduate/areas-of-study/rhetoric.html": true,
+    "https://english.la.psu.edu/faculty-staff/specializations/rhetoric-and-composition/": true,
+    "https://addran.tcu.edu/english/graduate-programs/phd-in-rhetoric-and-composition.php": true,
+    "https://rhetoric.sdsu.edu/": false,
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/ma-rhetoric-and-scientific-technical-communication": false,
+    "https://engl.iastate.edu/academics/graduate-studies/rhetoric-and-professional-communication-ph-d/": true,
+    "https://english.ccny.cuny.edu/language-writing-and-rhetoric-program/": false,
+    "https://english.utk.edu/areas-of-study/rhetoric-writing-and-linguistics/": true,
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/": true,
+    "https://cla.auburn.edu/english/programs/graduate-degrees/master-of-arts-in-english/rhetoric-and-composition/": true,
+    "https://crdm.chass.ncsu.edu/current-students/teaching-opportunities.php": true,
+    "https://www.pace.edu/program/english-writing-and-rhetoric-ba": true,
+    "https://www.hofstra.edu/writing-studies-rhetoric/about.html": false,
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2706": false,
+    "https://writing.utah.edu/graduate/index.php": true
+  },
+  "verified_lists_per_url": {
+    "https://www.stonybrook.edu/commcms/writrhet/graduate/certificate.php": 0,
+    "https://pll.harvard.edu/course/rhetoric-art-persuasive-writing-and-public-speaking": 6,
+    "https://english.arizona.edu/rcte": 1,
+    "https://www.stonybrook.edu/commcms/grad/academics/details.php?code=wrt&type=description&level=graduate_bulletin_data": 0,
+    "https://rhetoric.berkeley.edu/home": 1,
+    "https://liberalarts.utexas.edu/rhetoric/courses-in-rhetoric/graduate-courses.html": 2,
+    "https://courses.syracuse.edu/graduate/programs/composition-cultural-rhetoric-phd": 1,
+    "https://rhetoric.richmond.edu/academics/courses/index.html": 1,
+    "https://rhetoric.sdsu.edu/academics/graduate": 4,
+    "https://writing.utah.edu/": 1,
+    "https://www.artsci.uc.edu/departments/english/grad/rc.html": 1,
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/phd-rhetoric-and-scientific-technical-communication": 0,
+    "https://cres.english.ua.edu/about-the-cres-program/cres-courses/": 0,
+    "https://artsandsciences.syracuse.edu/writing-studies-rhetoric-and-composition/": 2,
+    "https://www.duq.edu/academics/colleges-and-schools/liberal-arts/departments-and-centers/communication-and-rhetorical-studies/graduate-programs/phd-rhetoric.php": 5,
+    "https://www.ohio.edu/cas/english/research/rhetoric-composition": 0,
+    "https://www.cmu.edu/dietrich/english/academic-programs/phd-rhetoric/index.html": 0,
+    "https://louisville.edu/english/graduate/ph-d-in-rhetoric-composition": 2,
+    "https://english.illinois.edu/academics/undergraduate-studies/rhetoric-program": 0,
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/professional-development/": 2,
+    "https://english.indiana.edu/undergraduate/areas-of-study/rhetoric.html": 5,
+    "https://english.la.psu.edu/faculty-staff/specializations/rhetoric-and-composition/": 2,
+    "https://addran.tcu.edu/english/graduate-programs/phd-in-rhetoric-and-composition.php": 1,
+    "https://rhetoric.sdsu.edu/": 0,
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/ma-rhetoric-and-scientific-technical-communication": 0,
+    "https://engl.iastate.edu/academics/graduate-studies/rhetoric-and-professional-communication-ph-d/": 2,
+    "https://english.ccny.cuny.edu/language-writing-and-rhetoric-program/": 0,
+    "https://english.utk.edu/areas-of-study/rhetoric-writing-and-linguistics/": 1,
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/": 3,
+    "https://cla.auburn.edu/english/programs/graduate-degrees/master-of-arts-in-english/rhetoric-and-composition/": 2,
+    "https://crdm.chass.ncsu.edu/current-students/teaching-opportunities.php": 1,
+    "https://www.pace.edu/program/english-writing-and-rhetoric-ba": 1,
+    "https://www.hofstra.edu/writing-studies-rhetoric/about.html": 0,
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2706": 0,
+    "https://writing.utah.edu/graduate/index.php": 1
+  },
+  "total_lists_per_url": {
+    "https://www.stonybrook.edu/commcms/writrhet/graduate/certificate.php": 2,
+    "https://pll.harvard.edu/course/rhetoric-art-persuasive-writing-and-public-speaking": 12,
+    "https://english.arizona.edu/rcte": 1,
+    "https://www.stonybrook.edu/commcms/grad/academics/details.php?code=wrt&type=description&level=graduate_bulletin_data": 1,
+    "https://rhetoric.berkeley.edu/home": 2,
+    "https://liberalarts.utexas.edu/rhetoric/courses-in-rhetoric/graduate-courses.html": 3,
+    "https://courses.syracuse.edu/graduate/programs/composition-cultural-rhetoric-phd": 4,
+    "https://rhetoric.richmond.edu/academics/courses/index.html": 5,
+    "https://rhetoric.sdsu.edu/academics/graduate": 6,
+    "https://writing.utah.edu/": 2,
+    "https://www.artsci.uc.edu/departments/english/grad/rc.html": 2,
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/phd-rhetoric-and-scientific-technical-communication": 3,
+    "https://cres.english.ua.edu/about-the-cres-program/cres-courses/": 2,
+    "https://artsandsciences.syracuse.edu/writing-studies-rhetoric-and-composition/": 6,
+    "https://www.duq.edu/academics/colleges-and-schools/liberal-arts/departments-and-centers/communication-and-rhetorical-studies/graduate-programs/phd-rhetoric.php": 5,
+    "https://www.ohio.edu/cas/english/research/rhetoric-composition": 2,
+    "https://www.cmu.edu/dietrich/english/academic-programs/phd-rhetoric/index.html": 2,
+    "https://louisville.edu/english/graduate/ph-d-in-rhetoric-composition": 2,
+    "https://english.illinois.edu/academics/undergraduate-studies/rhetoric-program": 1,
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/professional-development/": 2,
+    "https://english.indiana.edu/undergraduate/areas-of-study/rhetoric.html": 9,
+    "https://english.la.psu.edu/faculty-staff/specializations/rhetoric-and-composition/": 5,
+    "https://addran.tcu.edu/english/graduate-programs/phd-in-rhetoric-and-composition.php": 2,
+    "https://rhetoric.sdsu.edu/": 1,
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/ma-rhetoric-and-scientific-technical-communication": 2,
+    "https://engl.iastate.edu/academics/graduate-studies/rhetoric-and-professional-communication-ph-d/": 6,
+    "https://english.ccny.cuny.edu/language-writing-and-rhetoric-program/": 2,
+    "https://english.utk.edu/areas-of-study/rhetoric-writing-and-linguistics/": 1,
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/": 4,
+    "https://cla.auburn.edu/english/programs/graduate-degrees/master-of-arts-in-english/rhetoric-and-composition/": 7,
+    "https://crdm.chass.ncsu.edu/current-students/teaching-opportunities.php": 4,
+    "https://www.pace.edu/program/english-writing-and-rhetoric-ba": 5,
+    "https://www.hofstra.edu/writing-studies-rhetoric/about.html": 1,
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2706": 1,
+    "https://writing.utah.edu/graduate/index.php": 2
+  },
+  "verified_lists_ids": {
+    "https://www.stonybrook.edu/commcms/writrhet/graduate/certificate.php": [],
+    "https://pll.harvard.edu/course/rhetoric-art-persuasive-writing-and-public-speaking": [
+      0,
+      1,
+      4,
+      5,
+      8,
+      9
+    ],
+    "https://english.arizona.edu/rcte": [
+      0
+    ],
+    "https://www.stonybrook.edu/commcms/grad/academics/details.php?code=wrt&type=description&level=graduate_bulletin_data": [],
+    "https://rhetoric.berkeley.edu/home": [
+      0
+    ],
+    "https://liberalarts.utexas.edu/rhetoric/courses-in-rhetoric/graduate-courses.html": [
+      0,
+      1
+    ],
+    "https://courses.syracuse.edu/graduate/programs/composition-cultural-rhetoric-phd": [
+      0
+    ],
+    "https://rhetoric.richmond.edu/academics/courses/index.html": [
+      3
+    ],
+    "https://rhetoric.sdsu.edu/academics/graduate": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "https://writing.utah.edu/": [
+      0
+    ],
+    "https://www.artsci.uc.edu/departments/english/grad/rc.html": [
+      1
+    ],
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/phd-rhetoric-and-scientific-technical-communication": [],
+    "https://cres.english.ua.edu/about-the-cres-program/cres-courses/": [],
+    "https://artsandsciences.syracuse.edu/writing-studies-rhetoric-and-composition/": [
+      0,
+      1
+    ],
+    "https://www.duq.edu/academics/colleges-and-schools/liberal-arts/departments-and-centers/communication-and-rhetorical-studies/graduate-programs/phd-rhetoric.php": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "https://www.ohio.edu/cas/english/research/rhetoric-composition": [],
+    "https://www.cmu.edu/dietrich/english/academic-programs/phd-rhetoric/index.html": [],
+    "https://louisville.edu/english/graduate/ph-d-in-rhetoric-composition": [
+      0,
+      1
+    ],
+    "https://english.illinois.edu/academics/undergraduate-studies/rhetoric-program": [],
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/professional-development/": [
+      0,
+      1
+    ],
+    "https://english.indiana.edu/undergraduate/areas-of-study/rhetoric.html": [
+      0,
+      2,
+      3,
+      4,
+      7
+    ],
+    "https://english.la.psu.edu/faculty-staff/specializations/rhetoric-and-composition/": [
+      0,
+      2
+    ],
+    "https://addran.tcu.edu/english/graduate-programs/phd-in-rhetoric-and-composition.php": [
+      0
+    ],
+    "https://rhetoric.sdsu.edu/": [],
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/ma-rhetoric-and-scientific-technical-communication": [],
+    "https://engl.iastate.edu/academics/graduate-studies/rhetoric-and-professional-communication-ph-d/": [
+      4,
+      5
+    ],
+    "https://english.ccny.cuny.edu/language-writing-and-rhetoric-program/": [],
+    "https://english.utk.edu/areas-of-study/rhetoric-writing-and-linguistics/": [
+      0
+    ],
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/": [
+      0,
+      1,
+      3
+    ],
+    "https://cla.auburn.edu/english/programs/graduate-degrees/master-of-arts-in-english/rhetoric-and-composition/": [
+      0,
+      4
+    ],
+    "https://crdm.chass.ncsu.edu/current-students/teaching-opportunities.php": [
+      1
+    ],
+    "https://www.pace.edu/program/english-writing-and-rhetoric-ba": [
+      1
+    ],
+    "https://www.hofstra.edu/writing-studies-rhetoric/about.html": [],
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2706": [],
+    "https://writing.utah.edu/graduate/index.php": [
+      0
+    ]
+  },
+  "num_urls": 40,
+  "num_lists": 117,
+  "url_to_lists": {
+    "https://www.stonybrook.edu/commcms/writrhet/graduate/certificate.php": [
+      [
+        "Writing\u00a0Minors",
+        "Courses",
+        "Outcomes",
+        "Internships",
+        "RhetComp (blog)"
+      ],
+      [
+        "EGL 506 Studies in Literary Theory",
+        "EGL 509 Studies in Language and Linguistics",
+        "EGL 592 Problems in the Teaching of Writing"
+      ]
+    ],
+    "https://pll.harvard.edu/course/rhetoric-art-persuasive-writing-and-public-speaking": [
+      [
+        "When and how to employ a variety of rhetorical devices in writing and speaking",
+        "How to differentiate between argument and rhetorical technique",
+        "How to write a persuasive opinion editorial and short speech",
+        "How to evaluate the strength of an argument",
+        "How to identify logical fallacies in arguments"
+      ],
+      [
+        "Define the term \"rhetoric.\"",
+        "Articulate the importance of effective communication.",
+        "Summarize the history of rhetorical study, from the ancient Greeks to the modern-day.",
+        "Identify the parts of discourse.",
+        "Define the three modes of appeal.",
+        "Identify tropes and schemes, and explain their use in composition.",
+        "Compose an opinion editorial on a topic of your choice."
+      ],
+      [
+        "Analyze Martin Luther King, Jr.\u2019s \u201cI Have a Dream\u2026\u201d speech",
+        "Define inductive reasoning and some of its associated topics",
+        "Identify instances of inductive reasoning in writing and speech",
+        "Define deductive reasoning and some of its associated topics",
+        "Identify instances of deductive reasoning in writing and speech",
+        "Recognize and evaluate the strength of an argument's refutation",
+        "Apply the elements of rhetoric you have learned so far into the final draft of your op-ed"
+      ],
+      [
+        "Analyze Sarah Brady\u2019s Democratic National Convention Keynote Speech.",
+        "Analyze Charlton Heston\u2019s speech on the Second Amendment.",
+        "Define \u201cinductive reasoning\u201d and some of its associated topics",
+        "Identify instances of inductive reasoning in writing and speech",
+        "Define \u201cdeductive reasoning\u201d and some of its associated topics",
+        "Identify instances of deductive reasoning in writing and speech",
+        "Recognize and evaluate the strength of an argument\u2019s refutation",
+        "Apply the elements of rhetoric you have learned so far in the final draft of your op-ed"
+      ],
+      [
+        "Describe the origins of the practice of oratory.",
+        "Recognize ways in which orators tailor their writing for the spoken word.",
+        "Describe techniques for effective public speaking, both prepared and extemporaneous.",
+        "Brainstorm ideas for your own short speech."
+      ],
+      [
+        "Analyze Joseph McCarthy\u2019s \u201cEnemies Within\u201d speech.",
+        "Analyze Margaret Chase Smith\u2019s \"A Declaration of Conscience\" speech.",
+        "Identify the modes of appeal and the logical reasoning of the featured speeches.",
+        "Define for yourself the definition of \"extremist rhetoric,\" debate its use as a political tool.",
+        "Consider the moral responsibilities of those who would seek to persuade others through language."
+      ],
+      [
+        "Duration\nSeptember 11, 2024 - September 10, 2025",
+        "Price\nFree*",
+        "Modality\nOnline"
+      ],
+      [
+        "Time Commitment\n2 - 3 hours per week",
+        "Pace\nSelf-paced",
+        "Subject\n\n\nHumanities",
+        "Difficulty\n\nIntroductory",
+        "Credit\nAudit for FreeAdd a Verified Certificate for $209",
+        "Platform\nedX",
+        "Topics\n\nEnglish\nWriting\nLanguage",
+        "Associated Schools\n\n\n\n \n\n\n\nHarvard Faculty of Arts & Sciences"
+      ],
+      [
+        "English",
+        "Writing",
+        "Language"
+      ],
+      [
+        "Humanities",
+        "Online",
+        "Sikhism Through Its Scriptures",
+        "Price\nFree*\n\n\nRegistration Deadline\nAvailable now"
+      ],
+      [
+        "Data Science",
+        "Online",
+        "Digital Humanities in Practice: From Research Questions to Results",
+        "Price\nFree*\n\n\nRegistration Deadline\nAvailable now"
+      ],
+      [
+        "Art & Design",
+        "Online",
+        "Shakespeare\u2019s Merchant of Venice: Shylock",
+        "Price\nFree*\n\n\nRegistration Deadline\nAvailable now"
+      ]
+    ],
+    "https://english.arizona.edu/rcte": [
+      [
+        "Main navigation",
+        "Nationally Recognized Scholars",
+        "Action-Oriented Scholarship",
+        "Funding & Professional Development",
+        "Job Placement",
+        "Cross-Campus Collaborations",
+        "Graduate",
+        "Footer - Main",
+        "Information For",
+        "Topics",
+        "Resources",
+        "Connect"
+      ]
+    ],
+    "https://www.stonybrook.edu/commcms/grad/academics/details.php?code=wrt&type=description&level=graduate_bulletin_data": [
+      [
+        "Mission and Vision",
+        "Meet the Team",
+        "Graduate Student Advocate",
+        "Graduate Council",
+        "Graduate Awards"
+      ]
+    ],
+    "https://rhetoric.berkeley.edu/home": [
+      [
+        "Secondary navigation",
+        "Interrogating the boundaries of existing and emerging fields of knowledge",
+        "Courses and Programs",
+        "Courses",
+        "Graduate Program",
+        "Undergraduate Program",
+        "Featured News",
+        "Featured Events",
+        "Departmental Announcements",
+        "Recent Stories"
+      ],
+      [
+        "Mar 12 \n Now Hiring: Lecturer Pool",
+        "Feb 20 \n 2024 Commencement! Save the Date!",
+        "May 10 \n Welcoming the 2023 Rhetoric Ph.D. Cohort"
+      ]
+    ],
+    "https://liberalarts.utexas.edu/rhetoric/courses-in-rhetoric/graduate-courses.html": [
+      [
+        "Research Methods in Rhetoric and Writing",
+        "Rhetoric and Writing Theory",
+        "Histories of Rhetoric and Writing",
+        "Public Rhetorics",
+        "Supervised Teaching in Rhetoric and Writing"
+      ],
+      [
+        "Archives: Theories and Methods (Mark Longaker)",
+        "Cultural-Historical Activity Theory (Clay Spinuzzi)",
+        "Environmental Rhetorics (Megan Poole)",
+        "Feminism and Rhetorical Theory (Annie Hill)",
+        "Rhetoric and Aesthetics (Casey Boyle)",
+        "Rhetoric, Science, and the Human (S. Scott Graham)",
+        "Rhetorical Theory and Ethics (Diane Davis)",
+        "Storytelling as Rhetorical Criticism (Jo Hsu)",
+        "Transnational Rhetorics (Rasha Diab)"
+      ],
+      [
+        "How do rhetoric and writing studies address the intersection of rhetoric and nation (building)?",
+        "Accordion 2Panel 2. Add body text in this space.",
+        "Accordion 3Panel 3. Add body text in this space.",
+        "Accordion 4Panel 4. Add body text in this space.",
+        "Accordion 5Panel 5. Add body text in this space."
+      ]
+    ],
+    "https://courses.syracuse.edu/graduate/programs/composition-cultural-rhetoric-phd": [
+      [
+        "CCR - 601 - Introduction to Writing Studies, Rhetoric and Composition Credits / Units: 3",
+        "CCR 611\u00a0-\u00a0Composition Histories/Theories 3 credit(s)",
+        "CCR 631\u00a0-\u00a0Contemporary Rhetorics 3 credit(s)",
+        "CCR 633\u00a0-\u00a0Writing, Rhetorics and Technologies 3 credit(s)",
+        "CCR 634\u00a0-\u00a0Ancient Rhetorics 3 credit(s)",
+        "CCR 635\u00a0-\u00a0Advanced Research Practices 3 credit(s)"
+      ],
+      [
+        "CCR 636\u00a0-\u00a0Feminist Rhetoric(s) 3 credit(s)",
+        "CCR 638\u00a0-\u00a0Advanced Creative Nonfiction 3 credit(s)",
+        "CCR 651\u00a0-\u00a0Language and Literacy 3 credit(s)",
+        "CCR 711\u00a0-\u00a0Advanced Theories and Philosophies of Rhetoric 3 credit(s)",
+        "CCR 712\u00a0-\u00a0Advanced Theories and Philosophies of Composition 3 credit(s)",
+        "CCR 732\u00a0-\u00a0Advanced Studies in Writing Curriculum and Pedagogy 3 credit(s)",
+        "CCR 733\u00a0-\u00a0Rhetoric, Composition, and the Digital Humanities 3 credit(s)",
+        "CCR 744\u00a0-\u00a0African American Rhetorics 3 credit(s)",
+        "CCR 745\u00a0-\u00a0Writing Program Administration 3 credit(s)",
+        "CCR 746\u00a0-\u00a0Queer Rhetorics 3 credit(s)",
+        "CCR 747\u00a0-\u00a0Authorship Studies 3 credit(s)",
+        "CCR 751\u00a0-\u00a0Social History of Rhetoric 3 credit(s)",
+        "CCR 760\u00a0-\u00a0Advanced Studies in Composition & Cultural Rhetoric: Selected Topics 3 credit(s)"
+      ],
+      [
+        "Faculty",
+        "Admission",
+        "Core Courses: 18 Credits Required",
+        "Electives: 18 Credits Required",
+        "3 credits in doctoral readings (in preparation for qualifying examinations)",
+        "6-18 credits of dissertation",
+        "Graduate Teaching Assistantships:",
+        "Summer Teaching:"
+      ],
+      [
+        "Syracuse University",
+        "2024-2025 Graduate Course Catalog",
+        "All catalogs \u00a9 2025 Syracuse University. Powered by Modern Campus Catalog\u2122."
+      ]
+    ],
+    "https://rhetoric.richmond.edu/academics/courses/index.html": [
+      [
+        "Units: 1",
+        "Fulfills General Education Requirement(s): IF-Quantitative Data Literacy (IFQD)",
+        "Description"
+      ],
+      [
+        "Units: 1",
+        "Description",
+        "Prerequisites",
+        "RHCS 102"
+      ],
+      [
+        "Units: 1",
+        "Fulfills General Education Requirement(s): IF-Quantitative Data Literacy (IFQD)",
+        "Description",
+        "Prerequisites",
+        "RHCS 245, DSST 289, DSST 395, or AMST 201"
+      ],
+      [
+        "Units:",
+        "Description",
+        "Prerequisites",
+        "Approval by a faculty mentor"
+      ],
+      [
+        "Units: 1",
+        "Description",
+        "Prerequisites",
+        "RHCS 102, RHCS 103, RHCS 104, RHCS 105, or RHCS 106"
+      ]
+    ],
+    "https://rhetoric.sdsu.edu/academics/graduate": [
+      [
+        "RWS 600 - Reading & Writing Rhetorically (3)",
+        "RWS 601A - History of Rhetoric I (3)",
+        "RWS 602 - Modern Rhetoric and Composition Studies (3)",
+        "RWS 603 - Cultural Rhetorics (3)",
+        "RWS 640 - Research Methods in Rhetoric and Writing Studies (3)",
+        "RWS 790 - M.A. Exam Preparation (3) or\u00a0RWS 799A - Thesis or Project (3)"
+      ],
+      [
+        "RWS 600 - Reading & Writing Rhetorically (3)",
+        "RWS 601A - History of Rhetoric I (3)",
+        "RWS 602 - Modern Rhetoric and Composition Studies (3)",
+        "RWS 603 - Cultural Rhetorics (3)",
+        "RWS 640 - Research Methods in Rhetoric and Writing Studies (3)",
+        "RWS 790 - M.A. Exam Preparation (3) or\u00a0RWS 799A - Thesis or Project (3)"
+      ],
+      [
+        "RWS 600 - Reading & Writing Rhetorically (3)",
+        "RWS 601A - History of Rhetoric I (3)",
+        "RWS 602 - Modern Rhetoric and Composition Studies (3)",
+        "RWS 603 - Cultural Rhetorics (3)",
+        "RWS 640 - Research Methods in Rhetoric and Writing Studies (3)",
+        "RWS 790 - M.A. Exam Preparation (3) or\u00a0RWS 799A - Thesis or Project (3)"
+      ],
+      [
+        "112201 Rhetoric and Writing Studies: Individualized Study (MA)",
+        "112202 Rhetoric and Writing Studies: Teaching of Writing (MA)",
+        "112203 Rhetoric and Writing Studies: Tech/Prof Writing (MA)"
+      ],
+      [
+        "M.A. in Rhetoric and Writing Studies (General Program)",
+        "M.A. in Rhetoric and Writing Studies (Teaching of Writing Specialization)",
+        "M.A. in Rhetoric and Writing Studies (Professional Writing Specialization)",
+        "Thesis, Project, or Exam",
+        "Paths to Graduation",
+        "Fall Semester of Second Year",
+        "Spring Semester of Second Year",
+        "Admission Requirements",
+        "Application Deadlines",
+        "Steps to Apply",
+        "Teaching Associate (TA) Program",
+        "RWS Writing Mentors",
+        "Writing Center Tutors",
+        "Presidential Graduate Research Fellowship",
+        "RWS Travel Funds",
+        "University Graduate Student Travel Funds"
+      ],
+      [
+        "Please note that the department is Rhetoric and Writing Studies, not English.",
+        "Must be received by January 17 at 8:59 pm Pacific time.",
+        "Complete the RWS program application through Interfolio.",
+        "You will need to submit electronically:"
+      ]
+    ],
+    "https://writing.utah.edu/": [
+      [
+        "College of Humanities",
+        "COH ACCESS, BELONGING, AND COMMUNITY",
+        "Department Response to HB 261",
+        "A Response to ChatGPT",
+        "Social Media",
+        "The University Writer",
+        "Humanities Radio",
+        "Undergraduate Journal",
+        "Apr 01",
+        "Apr 04",
+        "Apr 07",
+        "Apr 07",
+        "Apr 18"
+      ],
+      [
+        "Practice for CCCCs",
+        "Spring 2025 Second Half - Last day to withdraw from classes",
+        "Fall 2025 - Registration dates begin",
+        "Summer 2025 - Open enrollment",
+        "Spring 2025 Full Term - Last day to reverse CR/NC"
+      ]
+    ],
+    "https://www.artsci.uc.edu/departments/english/grad/rc.html": [
+      [
+        "Funding Sources",
+        "Teacher Training Program",
+        "Placement After Graduation",
+        "PhD Application",
+        "Graduate School Handbook"
+      ],
+      [
+        "Professional Development Opportunities",
+        "Russel K. Durst Distinguished Lecture Series in Rhetoric & Composition",
+        "Graduate Certificate in the Teaching of\nWriting",
+        "UC Tools"
+      ]
+    ],
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/phd-rhetoric-and-scientific-technical-communication": [
+      [
+        "University Header Menu",
+        "Unit Menu",
+        "In This Section",
+        "Graduate Handbook",
+        "PhD Program Requirements",
+        "Catalog Requirements",
+        "College Resources for Graduate Students",
+        "Connect",
+        "Make a Gift"
+      ],
+      [
+        "Coursework",
+        "Preliminary Exams",
+        "Prospectus",
+        "Dissertation Defense"
+      ],
+      [
+        "Methods & Pedagogies (7 credits)",
+        "Core Areas (15 credits)",
+        "Specialty Area (9 credits)",
+        "Outside Coursework (12 credits)",
+        "Thesis Credits (24 credits)"
+      ]
+    ],
+    "https://cres.english.ua.edu/about-the-cres-program/cres-courses/": [
+      [
+        "Department of English at The University of Alabama",
+        "Main Navigation",
+        "500 level",
+        "600 level"
+      ],
+      [
+        "CRES Program",
+        "UNIVERSITY OF ALABAMA",
+        "POLICIES & HELP"
+      ]
+    ],
+    "https://artsandsciences.syracuse.edu/writing-studies-rhetoric-and-composition/": [
+      [
+        "Digital",
+        "Argumentative",
+        "Research",
+        "Civic",
+        "Science",
+        "Professional",
+        "Technical",
+        "Creative nonfiction"
+      ],
+      [
+        "Business",
+        "Education",
+        "Public relations",
+        "Publishing",
+        "Digital writing",
+        "Marketing",
+        "Public advocacy",
+        "Editing",
+        "Medicine",
+        "Humanities"
+      ],
+      [
+        "You will practice writing in categories such as:",
+        "Study abroad",
+        "The Writing Center"
+      ],
+      [
+        "2021 Intertext",
+        "2020 Intertext",
+        "2019 Intertext",
+        "2018 Intertext",
+        "2017 Intertext",
+        "2016 Intertext"
+      ],
+      [
+        "Century Cancer Rhetoric, by Lois Agnew, University Alabama Press (March 15, 2024), 200pp., ISBN",
+        "13: 978",
+        "0817321857"
+      ],
+      [
+        "64317",
+        "8 (paperback); 978",
+        "64317",
+        "5 (hardcover); 978",
+        "64317",
+        "2 (PDF)."
+      ]
+    ],
+    "https://www.duq.edu/academics/colleges-and-schools/liberal-arts/departments-and-centers/communication-and-rhetorical-studies/graduate-programs/phd-rhetoric.php": [
+      [
+        "COMM 609 Rhetorical Theory",
+        "COMM 604 Communication Ethics",
+        "COMM 659 Philosophy of Communication",
+        "COMM 611 Rhetoric & Hermeneutics"
+      ],
+      [
+        "COMM 626 Rhetoric & Philosophy of Free Speech",
+        "COMM 616 Rhetoric & Philosophy of Interpersonal/Intercultural Communication",
+        "COMM 614 Rhetoric & Philosophy of Crisis Management"
+      ],
+      [
+        "COMM 636 Rhetoric & Philosophy of Integrated Marketing Communication",
+        "COMM 617 Rhetoric & Philosophy of Organizational Communication and Leadership",
+        "COMM 605 Rhetoric & Philosophy of Public Relations and Advertising"
+      ],
+      [
+        "COMM 628 Rhetoric & Philosophy of Technology",
+        "COMM 610 Rhetoric & Philosophy of Cyberspace",
+        "COMM 618 Rhetoric & Philosophy of Humanities and the Marketplace"
+      ],
+      [
+        "Degree",
+        "School",
+        "Academic Department",
+        "Explore Affordability",
+        "Apply to Duquesne"
+      ]
+    ],
+    "https://www.ohio.edu/cas/english/research/rhetoric-composition": [
+      [
+        "Talinn Phillips",
+        "Paul Shovlin",
+        "Edmond Chang",
+        "Nitya Pandey",
+        "Manisha Sinha",
+        "Yogesh Sinha",
+        "Spencer Smith"
+      ],
+      [
+        "Facebook",
+        "Instagram",
+        "Twitter"
+      ]
+    ],
+    "https://www.cmu.edu/dietrich/english/academic-programs/phd-rhetoric/index.html": [
+      [
+        "How does power circulate in communication?",
+        "What role does/can technology play in shaping these choices?",
+        "How has the study of rhetoric and writing instruction functioned historically in the academy"
+      ],
+      [
+        "Dietrich College of Humanities and Social Sciences",
+        "Department of English",
+        "Academic Programs"
+      ]
+    ],
+    "https://louisville.edu/english/graduate/ph-d-in-rhetoric-composition": [
+      [
+        "Department of English",
+        "Coursework",
+        "Dissertation",
+        "Career & Job Placement",
+        "Funding",
+        "Teaching Opportunities",
+        "Administrative Positions",
+        "Community",
+        "More Information",
+        "Apply Now"
+      ],
+      [
+        "Graduate Studies",
+        "Undergraduate Studies",
+        "Undergraduate Advising",
+        "Honors Program",
+        "Composition Program",
+        "Creative Writing Scholarships",
+        "University Writing Center"
+      ]
+    ],
+    "https://english.illinois.edu/academics/undergraduate-studies/rhetoric-program": [
+      [
+        "Breadcrumb",
+        "Course Offerings",
+        "Additional Resources",
+        "Additional links"
+      ]
+    ],
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/professional-development/": [
+      [
+        "Intro",
+        "Program Requirements",
+        "Thesis Requirement",
+        "Graduate Teaching Assistantships",
+        "Awards",
+        "Professional Development",
+        "Forms",
+        "Apply Now"
+      ],
+      [
+        "Department",
+        "University",
+        "Field",
+        "Writing and Rhetoric",
+        "Mailing Address"
+      ]
+    ],
+    "https://english.indiana.edu/undergraduate/areas-of-study/rhetoric.html": [
+      [
+        "Undergraduate",
+        "Areas of Study",
+        "Rhetoric, Writing, & Communication"
+      ],
+      [
+        "Twitter",
+        "Facebook",
+        "Instagram"
+      ],
+      [
+        "Contact",
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration",
+        "Bachelor of Arts & Master of Arts",
+        "Interdepartmental Major in AAADS & English",
+        "Minors\nMinor, English\nMinor, Creative Writing\nMinor, Communication and Public Advocacy",
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy",
+        "Other Programs & Certificates",
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings",
+        "Advising",
+        "Funding Opportunities",
+        "Honors Program",
+        "Internships",
+        "Graduate"
+      ],
+      [
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration",
+        "Bachelor of Arts & Master of Arts",
+        "Interdepartmental Major in AAADS & English",
+        "Minors\nMinor, English\nMinor, Creative Writing\nMinor, Communication and Public Advocacy",
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy",
+        "Other Programs & Certificates",
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings",
+        "Advising",
+        "Funding Opportunities",
+        "Honors Program",
+        "Internships",
+        "Graduate"
+      ],
+      [
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration",
+        "Bachelor of Arts & Master of Arts",
+        "Interdepartmental Major in AAADS & English",
+        "Minors\nMinor, English\nMinor, Creative Writing\nMinor, Communication and Public Advocacy",
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy",
+        "Other Programs & Certificates",
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings",
+        "Advising",
+        "Funding Opportunities",
+        "Honors Program",
+        "Internships"
+      ],
+      [
+        "B.A., Creative Writing Concentration",
+        "B.A., Cultural Studies Concentration",
+        "B.A., Public and Professional Writing Concentration"
+      ],
+      [
+        "Minor, English",
+        "Minor, Creative Writing",
+        "Minor, Communication and Public Advocacy"
+      ],
+      [
+        "Fall Semester",
+        "Spring Semester",
+        "Summer Semester",
+        "Composition Courses\nComposition Requirements\nComposition Policies",
+        "Composition Requirements",
+        "Composition Policies",
+        "Undergraduate Course Permissions",
+        "Individual Readings"
+      ],
+      [
+        "Rhetoric, Writing, and Communication",
+        "Department of English social media channels",
+        "The College of Arts & Sciences"
+      ]
+    ],
+    "https://english.la.psu.edu/faculty-staff/specializations/rhetoric-and-composition/": [
+      [
+        "Histories and Historiographies of Rhetoric",
+        "Cornel West and bell hooks",
+        "Renaissance Rhetoric",
+        "Concepts of Literacy",
+        "African American Rhetoric",
+        "Rhetoric and Pragmatism",
+        "Kenneth Burke",
+        "Introduction to Rhetoric and Composition",
+        "Feminist Rhetorics",
+        "Postcritical Perspectives on Literacy Technologies",
+        "Rhetoric and Technology",
+        "English Online",
+        "Technoscience"
+      ],
+      [
+        "Suresh Canagarajah",
+        "Keith Gilyard",
+        "Debra Hawhee",
+        "Stuart A. Selber",
+        "Karrieann Soto Vega",
+        "Xiaoye You",
+        "Philip Grayson",
+        "Shannon McClellan Brooks",
+        "Sierra S. Parker",
+        "Michael Gabriel Young"
+      ],
+      [
+        "People",
+        "Areas of Specialization",
+        "Rhetoric and Composition"
+      ],
+      [
+        "Keith Gilyard",
+        "Stuart A. Selber \n\n\n\nTechnical communication, computers and composition, human-computer interaction",
+        "Karrieann Soto Vega",
+        "Xiaoye You \n\n\n\ntransnational writing studies, comparative rhetoric"
+      ],
+      [
+        "Shannon McClellan Brooks",
+        "Sierra S. Parker",
+        "Michael Gabriel Young"
+      ]
+    ],
+    "https://addran.tcu.edu/english/graduate-programs/phd-in-rhetoric-and-composition.php": [
+      [
+        "racism, anti",
+        "ableism, transnationalism, community",
+        "engagement, cultural rhetorics,"
+      ],
+      [
+        "hour course, Teaching College Composition",
+        "year and second",
+        "year writing (one course"
+      ]
+    ],
+    "https://rhetoric.sdsu.edu/": [
+      [
+        "Major",
+        "Minor",
+        "Professional Writing Certificate",
+        "Master\u2019s Program",
+        "Teaching of Writing Advanced Certificate"
+      ]
+    ],
+    "https://cla.umn.edu/writing-studies/graduate/research-programs/research-degrees/ma-rhetoric-and-scientific-technical-communication": [
+      [
+        "University Header Menu",
+        "Unit Menu",
+        "In This Section",
+        "Graduate Handbook",
+        "MA Program Requirements",
+        "Catalog Requirements",
+        "College Resources for Graduate Students",
+        "Connect",
+        "Make a Gift"
+      ],
+      [
+        "Methods & Pedagogies (7 credits)",
+        "Core Areas (12 credits)",
+        "Specialty Area (6 credits)",
+        "Outside Coursework (6 credits)",
+        "Thesis Credits (3 credits)"
+      ]
+    ],
+    "https://engl.iastate.edu/academics/graduate-studies/rhetoric-and-professional-communication-ph-d/": [
+      [
+        "Analyze, synthesize, and critique communication in a variety of organizational and public contexts.",
+        "Develop scholarship that makes a significant contribution to the field.",
+        "Develop communication that helps build a socially just society."
+      ],
+      [
+        "Display of an ability to develop a clear and cogent argument using relevant evidence in coursework",
+        "Annual reviews",
+        "Qualifying examination (i.e., portfolio assessment)",
+        "Preliminary exams (written and oral)",
+        "Completion and defense of a dissertation."
+      ],
+      [
+        "Coursework and outcomes",
+        "PhD in Rhetoric and Professional Communication Coursework (72 cr.)",
+        "Long-term course plan",
+        "Learning outcomes",
+        "Portfolio assessment and preliminary written and oral examinations",
+        "RPC Course Selections",
+        "Important information",
+        "Ready to apply?",
+        "Department of English"
+      ],
+      [
+        "Degree requirements",
+        "Portfolio assessment and preliminary written and oral examinations",
+        "Program requirements",
+        "Financial aid",
+        "Faculty and students"
+      ],
+      [
+        "TERM/COURSE NO.",
+        "Spring 2024",
+        "Fall 2024",
+        "5630A",
+        "5910E",
+        "Spring 2025",
+        "Fall 2025",
+        "5630C"
+      ],
+      [
+        "ENGL 5000 Teaching Multimodal Composition",
+        "ENGL 5040 Teaching Advanced Communication",
+        "ENGL 5060 Professional Communication Theory",
+        "SPCM 5130 Teaching Fundamentals of Public Speaking",
+        "ENGL 5420 Technical Editing and Publication Management",
+        "ENGL/SPCM 5480: Cultural and Critical Theories of Communication and Rhetoric",
+        "ENGL 5630A Research Methods: Qualitative",
+        "ENGL 5860 Visual Rhetoric in Professional Communication",
+        "ENGL 5900 Special Topics (Independent Study)",
+        "ENGL/SPCM 5920C Core Studies: Professional Communication",
+        "ENGL 6310 Administration and Organization of Multimodal Writing Programs"
+      ]
+    ],
+    "https://english.ccny.cuny.edu/language-writing-and-rhetoric-program/": [
+      [
+        "ENGL 25000 \u2013 Intro Literary Study",
+        "ENGL 28000 \u2013 Introduction to Comparative Literature",
+        "ENGL 27000 \u2013 Literatures Of Diversity"
+      ],
+      [
+        "ENGL 34200 \u2013 Advanced Grammar",
+        "EDCE 25600 \u2013 Lang-Mind-Society",
+        "EDCE 22100 \u2013 Sch Family&Community",
+        "EDCE 32300 \u2013 Emergent To Fluent Literacy",
+        "EDCE 35301 \u2013 Lng & Rd Spn Bln Ed",
+        "EDCE 35303 \u2013 Tch Rdng In Chinese",
+        "MCA 10100   \u2013 Introduction to Media Studies"
+      ]
+    ],
+    "https://english.utk.edu/areas-of-study/rhetoric-writing-and-linguistics/": [
+      [
+        "Undergraduate Studies in RWL",
+        "Graduate Studies in RWL",
+        "Applied Linguistics and ESL"
+      ]
+    ],
+    "https://cah.ucf.edu/writingrhetoric/rhetoric-and-composition-ma/": [
+      [
+        "Intro",
+        "Program Requirements",
+        "Thesis Requirement",
+        "Graduate Teaching Assistantships",
+        "Awards",
+        "Professional Development",
+        "Forms",
+        "Apply Now"
+      ],
+      [
+        "Civic and Public Writing",
+        "Cultural Rhetorics",
+        "Digital Rhetoric and Multimodal Composing",
+        "Professional and Technical Writing",
+        "Rhetoric of Health and Medicine",
+        "Sociohistoric Perspectives of Literacy and Learning",
+        "Transnational Literacy and Rhetoric",
+        "Visual and Material Rhetorics",
+        "Writing Program Administration"
+      ],
+      [
+        "Earn PhDs in top-ranked programs in Rhetoric and Composition,",
+        "Teach in a variety of contexts (high school, 2-year college, 4-year college),",
+        "Direct and coordinate writing programs and centers, and",
+        "Work in a variety of professional industries including government and nonprofit sectors."
+      ],
+      [
+        "why Rhetoric and composition at ucf",
+        "Graduate Accomplishments",
+        "Writing and Rhetoric",
+        "Mailing Address"
+      ]
+    ],
+    "https://cla.auburn.edu/english/programs/graduate-degrees/master-of-arts-in-english/rhetoric-and-composition/": [
+      [
+        "English |",
+        "Programs |",
+        "Graduate Degrees |",
+        "Master of Arts in English |",
+        "Rhetoric and Composition"
+      ],
+      [
+        "One literature or creative writing course (3)",
+        "One technical and professional communication or linguistics course (3)",
+        "One technology and culture, globalism, sustainability, or diversity course (3)",
+        "Two elective courses in English (6)",
+        "ENGL 7940: Teaching College English (2)"
+      ],
+      [
+        "An updated r\u00e9sum\u00e9 or curriculum vita.",
+        "A statement of teaching philosophy of no more than 500 words",
+        "designed document",
+        "website",
+        "grant or project proposal",
+        "conference proposal or presentation",
+        "materials relevant to future employment or graduate work"
+      ],
+      [
+        "designed document",
+        "website",
+        "grant or project proposal",
+        "conference proposal or presentation",
+        "materials relevant to future employment or graduate work"
+      ],
+      [
+        "Undergraduate",
+        "Graduate",
+        "Undergraduate",
+        "Graduate",
+        "Course Requirements (32 Hours)"
+      ],
+      [
+        "Erich Nunn",
+        "Associate Professor",
+        "Director of Graduate Studies",
+        "etn0002@auburn.edu"
+      ],
+      [
+        "Erich Nunn",
+        "Associate Professor",
+        "Director of Graduate Studies",
+        "etn0002@auburn.edu"
+      ]
+    ],
+    "https://crdm.chass.ncsu.edu/current-students/teaching-opportunities.php": [
+      [
+        "Course Work",
+        "Exams",
+        "Timeline"
+      ],
+      [
+        "Teaching",
+        "Guidelines for Choosing TA Assignments:",
+        "Scheduling",
+        "Course Management",
+        "Evaluations"
+      ],
+      [
+        "Who determines course assignments?",
+        "I have never taught before...what do I do?",
+        "Do some teaching assignments require specialized training?",
+        "how do i submit course preferences?",
+        "Can I propose a new class to teach?",
+        "Can I teach in both Communication and English?",
+        "Is summer teaching available?",
+        "are there assignments outside of the program?",
+        "How do I add students to my course?",
+        "Can I change my class location/room?",
+        "Can I change my class time?",
+        "Do I have to give a final exam?",
+        "Do I have to take attendance?",
+        "Do I request a textbook for the class that I am assigned?",
+        "Who do I talk to if I have a problem with my course?",
+        "Are there University guidelines on creating a course syllabus?",
+        "Will I get observed or evaluated?",
+        "What should I do with course evaluation numbers?"
+      ],
+      [
+        "ENG/COM 395",
+        "1. Title for the course",
+        "STS 214",
+        "More information on student teaching assignments can be found on\u00a0Policies/Teaching Assignments."
+      ]
+    ],
+    "https://www.pace.edu/program/english-writing-and-rhetoric-ba": [
+      [
+        "ENG 326E The Art of Content Creation",
+        "ENG 208: Writing in Your Profession",
+        "LIT 212U: Studies in Graphic Novels and Comics"
+      ],
+      [
+        "professional, creative, and digital writing",
+        "marketing and advertising",
+        "business consulting",
+        "communications",
+        "publishing",
+        "public relations",
+        "primary, secondary, and post-secondary education",
+        "public administration, government, and nonprofit sectors"
+      ],
+      [
+        "BA, Writing and Rhetoric / Master of Public Administration",
+        "BA, Writing and Rhetoric / MA, Communications and Digital Media",
+        "BA, Writing and Rhetoric / MST, Adolescent Education",
+        "BA, Writing and Rhetoric / MS, Publishing",
+        "BA, Writing and Rhetoric / JD, Law (6-year program)"
+      ],
+      [
+        "Enter a Search Term",
+        "A strong foundation in writing",
+        "Write Your Future",
+        "Take Courses Like\u2026",
+        "Career-Focused",
+        "Mentorship",
+        "Opportunities and Experiences",
+        "Combined and Accelerated Degrees",
+        "Success Starts Here",
+        "Site Footer"
+      ],
+      [
+        "Other Study Options",
+        "Creative Writing Minor",
+        "Literature Minor"
+      ]
+    ],
+    "https://www.hofstra.edu/writing-studies-rhetoric/about.html": [
+      [
+        "From the Chair",
+        "Mission Statement",
+        "Learning Goals and Objectives"
+      ]
+    ],
+    "https://catalog.fresnostate.edu/preview_program.php?catoid=5&poid=2706": [
+      [
+        "ENGL 205\u00a0-\u00a0Research Methods in English Studies Units: 4",
+        "ENGL 250T\u00a0-\u00a0Seminar in Literature Units: 4",
+        "ENGL 278T\u00a0-\u00a0Seminar in Rhetoric and Composition Units: 4",
+        "ENGL 280T\u00a0-\u00a0Seminar in Critical Theory Units: 4",
+        "ENGL 270\u00a0-\u00a0Seminar in Teaching Writing: Theory and Practice Units: 4",
+        "ENGL 281\u00a0-\u00a0Current Writing Theory Units: 4",
+        "Approved electives in English or other fields Units: 4",
+        "ENGL 282A\u00a0-\u00a0Practicum in the Teaching of Writing I Units: 1"
+      ]
+    ],
+    "https://writing.utah.edu/graduate/index.php": [
+      [
+        "Coloniality/Decoloniality",
+        "Comparative Cultural Rhetorics",
+        "Digital/Sonic Rhetorics",
+        "Indigenous Studies",
+        "Legal Rhetorics",
+        "Multilingualism/Translingualism",
+        "Muslim Rhetoric",
+        "Queer Studies",
+        "Research Methods",
+        "Rhetoric of Science and Technology",
+        "Two-Year College/Transfer Studies",
+        "Writing Across the Curriculum",
+        "Writing Assessment"
+      ],
+      [
+        "Department of Writing & Rhetoric Studies",
+        "Main Navigation",
+        "Main Menu",
+        "Why the University of Utah?",
+        "Frequently Asked Questions",
+        "Department of Writing & Rhetoric Studies",
+        "Stay in Touch",
+        "Support"
+      ]
+    ]
+  },
+  "timestamp": "2025-03-26 20:50:26"
+}
