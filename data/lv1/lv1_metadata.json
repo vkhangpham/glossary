@@ -1,17 +1,4 @@
 {
-  "accountancy": {
-    "sources": [
-      "Accountancy & taxation",
-      "Dhaliwal-reidy school of accountancy",
-      "Adkerson school of accountancy",
-      "Master of accountancy and analytics (macc)"
-    ],
-    "parents": [
-      "management",
-      "business"
-    ],
-    "variations": []
-  },
   "accounting": {
     "sources": [
       "Kenneth g. dixon school of accounting",
@@ -29,7 +16,10 @@
       "management",
       "business"
     ],
-    "variations": []
+    "variations": [
+      "accountancy",
+      "accounting theory"
+    ]
   },
   "adult education": {
     "sources": [
@@ -258,7 +248,9 @@
       "education",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "basic behavior analysis"
+    ]
   },
   "behavioral health": {
     "sources": [
@@ -332,7 +324,10 @@
       "natural sciences",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "biological science",
+      "biological systems"
+    ]
   },
   "biomedical engineering": {
     "sources": [
@@ -358,7 +353,9 @@
     "parents": [
       "health sciences"
     ],
-    "variations": []
+    "variations": [
+      "biomedical research"
+    ]
   },
   "biostatistics": {
     "sources": [
@@ -445,7 +442,9 @@
       "business",
       "management"
     ],
-    "variations": []
+    "variations": [
+      "management information systems"
+    ]
   },
   "business intelligence": {
     "sources": [
@@ -496,7 +495,9 @@
     "parents": [
       "medicine"
     ],
-    "variations": []
+    "variations": [
+      "cellular biology"
+    ]
   },
   "cellular physiology": {
     "sources": [
@@ -547,7 +548,10 @@
       "business",
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "chicana studies",
+      "chicana/o studies"
+    ]
   },
   "child development": {
     "sources": [
@@ -561,17 +565,6 @@
       "social sciences",
       "health sciences",
       "education"
-    ],
-    "variations": []
-  },
-  "cinema studies": {
-    "sources": [
-      "Cinema studies & moving image arts",
-      "B.a., cinema and media studies"
-    ],
-    "parents": [
-      "arts",
-      "humanities"
     ],
     "variations": []
   },
@@ -591,7 +584,10 @@
     "parents": [
       "engineering"
     ],
-    "variations": []
+    "variations": [
+      "construction engineering",
+      "civil engineering technology"
+    ]
   },
   "classics": {
     "sources": [
@@ -625,7 +621,12 @@
       "education",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "communication studies",
+      "communication sciences",
+      "communication theory",
+      "communication methods"
+    ]
   },
   "communication disorders": {
     "sources": [
@@ -649,7 +650,10 @@
       "nursing",
       "public health"
     ],
-    "variations": []
+    "variations": [
+      "community health sciences",
+      "community health education"
+    ]
   },
   "community medicine": {
     "sources": [
@@ -725,16 +729,6 @@
     ],
     "variations": []
   },
-  "construction engineering": {
-    "sources": [
-      "Construction engineering, bs",
-      "Construction engineering, minor"
-    ],
-    "parents": [
-      "engineering"
-    ],
-    "variations": []
-  },
   "construction management": {
     "sources": [
       "Construction management certificate",
@@ -775,7 +769,9 @@
       "education",
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "counseling theories"
+    ]
   },
   "creative writing": {
     "sources": [
@@ -789,24 +785,6 @@
       "arts",
       "social sciences",
       "humanities"
-    ],
-    "variations": []
-  },
-  "criminal justice": {
-    "sources": [
-      "Criminal justice",
-      "Criminology and criminal justice",
-      "Sociology, social work and criminal justice criminal justice sociology social work",
-      "Sociology, anthropology and criminal justice",
-      "Criminal justice, social work, & sociology",
-      "The department of criminal justice",
-      "Criminal justice and criminology"
-    ],
-    "parents": [
-      "law",
-      "social sciences",
-      "humanities",
-      "arts"
     ],
     "variations": []
   },
@@ -841,7 +819,9 @@
       "arts",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "cultural theory"
+    ]
   },
   "dance": {
     "sources": [
@@ -855,7 +835,9 @@
       "arts",
       "education"
     ],
-    "variations": []
+    "variations": [
+      "dance education"
+    ]
   },
   "data analysis": {
     "sources": [
@@ -864,7 +846,9 @@
     "parents": [
       "business"
     ],
-    "variations": []
+    "variations": [
+      "data analysis methods"
+    ]
   },
   "data science": {
     "sources": [
@@ -887,7 +871,9 @@
     "parents": [
       "education"
     ],
-    "variations": []
+    "variations": [
+      "deaf education"
+    ]
   },
   "decision science": {
     "sources": [
@@ -896,7 +882,10 @@
     "parents": [
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "decision theory",
+      "decision sciences"
+    ]
   },
   "developmental biology": {
     "sources": [
@@ -931,7 +920,9 @@
       "arts",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "diasporic studies"
+    ]
   },
   "dietetics": {
     "sources": [
@@ -969,7 +960,9 @@
     "parents": [
       "education"
     ],
-    "variations": []
+    "variations": [
+      "early childhood"
+    ]
   },
   "earth science": {
     "sources": [
@@ -1017,7 +1010,9 @@
       "management",
       "business"
     ],
-    "variations": []
+    "variations": [
+      "economic theory"
+    ]
   },
   "education policy": {
     "sources": [
@@ -1146,7 +1141,9 @@
       "social sciences",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "english education"
+    ]
   },
   "entrepreneurship": {
     "sources": [
@@ -1194,7 +1191,9 @@
     "parents": [
       "public health"
     ],
-    "variations": []
+    "variations": [
+      "environmental health"
+    ]
   },
   "environmental law": {
     "sources": [
@@ -1214,7 +1213,12 @@
     "parents": [
       "natural sciences"
     ],
-    "variations": []
+    "variations": [
+      "environmental systems",
+      "environment",
+      "environmental studies",
+      "environmental education"
+    ]
   },
   "epidemiology": {
     "sources": [
@@ -1236,19 +1240,6 @@
     ],
     "variations": []
   },
-  "ethnic studies": {
-    "sources": [
-      "Department: Ethnic studies program",
-      "Ethnic studies: ba; certificate; minors",
-      "Race, gender, and ethnic studies"
-    ],
-    "parents": [
-      "humanities",
-      "social sciences",
-      "arts"
-    ],
-    "variations": []
-  },
   "event management": {
     "sources": [
       "Hospitality, tourism, and event management",
@@ -1256,27 +1247,6 @@
     ],
     "parents": [
       "business"
-    ],
-    "variations": []
-  },
-  "exercise science": {
-    "sources": [
-      "Exercise science (exsc)",
-      "Kinesiology exercise sciencephysical education",
-      "Department: Parks, recreation, exercise & sport science",
-      "Exercise science",
-      "Exercise and sport science",
-      "Exercise science, b.s.",
-      "Exercise science and sports science",
-      "Human movement science",
-      "Human performance and sport sciences"
-    ],
-    "parents": [
-      "public health",
-      "education",
-      "health sciences",
-      "natural sciences",
-      "arts"
     ],
     "variations": []
   },
@@ -1310,7 +1280,9 @@
       "social sciences",
       "law"
     ],
-    "variations": []
+    "variations": [
+      "family science"
+    ]
   },
   "film studies": {
     "sources": [
@@ -1325,7 +1297,10 @@
       "arts",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "cinema studies",
+      "film theory"
+    ]
   },
   "finance": {
     "sources": [
@@ -1382,7 +1357,9 @@
     "parents": [
       "health sciences"
     ],
-    "variations": []
+    "variations": [
+      "food systems"
+    ]
   },
   "francophone studies": {
     "sources": [
@@ -1416,7 +1393,11 @@
       "law",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "women's studies",
+      "gender",
+      "gender theory"
+    ]
   },
   "genetics": {
     "sources": [
@@ -1476,7 +1457,9 @@
     "parents": [
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "geospatial technologies"
+    ]
   },
   "geotechnical engineering": {
     "sources": [
@@ -1519,7 +1502,9 @@
       "humanities",
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "global education"
+    ]
   },
   "gynecology": {
     "sources": [
@@ -1539,7 +1524,9 @@
     "parents": [
       "health sciences"
     ],
-    "variations": []
+    "variations": [
+      "health behavior"
+    ]
   },
   "health management": {
     "sources": [
@@ -1585,7 +1572,9 @@
       "nursing",
       "health sciences"
     ],
-    "variations": []
+    "variations": [
+      "healthcare systems"
+    ]
   },
   "hearing science": {
     "sources": [
@@ -1642,7 +1631,9 @@
     "parents": [
       "education"
     ],
-    "variations": []
+    "variations": [
+      "human development theories"
+    ]
   },
   "human movement": {
     "sources": [
@@ -1717,7 +1708,10 @@
     "parents": [
       "management"
     ],
-    "variations": []
+    "variations": [
+      "information technology",
+      "information systems"
+    ]
   },
   "insurance": {
     "sources": [
@@ -1741,16 +1735,6 @@
     ],
     "parents": [
       "health sciences"
-    ],
-    "variations": []
-  },
-  "integrative physiology": {
-    "sources": [
-      "Department of cellular & integrative physiology",
-      "Cellular and integrative physiology"
-    ],
-    "parents": [
-      "medicine"
     ],
     "variations": []
   },
@@ -1786,7 +1770,10 @@
       "humanities",
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "international relations",
+      "international studies"
+    ]
   },
   "international business": {
     "sources": [
@@ -1812,32 +1799,6 @@
     ],
     "variations": []
   },
-  "international relations": {
-    "sources": [
-      "Global governance",
-      "Political science and international relations (cmist)",
-      "Political science, b.a. & m.a.",
-      "International relations theory",
-      "Middle east politics"
-    ],
-    "parents": [
-      "law",
-      "social sciences",
-      "humanities"
-    ],
-    "variations": []
-  },
-  "international studies": {
-    "sources": [
-      "Global and international studies ( ba)",
-      "International studies and global affairs"
-    ],
-    "parents": [
-      "social sciences",
-      "arts"
-    ],
-    "variations": []
-  },
   "italian studies": {
     "sources": [
       "French, francophone & italian studies",
@@ -1859,7 +1820,9 @@
     "parents": [
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "japanese studies"
+    ]
   },
   "journalism": {
     "sources": [
@@ -1871,7 +1834,9 @@
       "arts",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "journalism education"
+    ]
   },
   "justice studies": {
     "sources": [
@@ -1881,7 +1846,10 @@
     "parents": [
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "criminal justice",
+      "justice"
+    ]
   },
   "k-12 education": {
     "sources": [
@@ -1924,7 +1892,12 @@
       "humanities",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "language education",
+      "language sciences",
+      "language",
+      "language science"
+    ]
   },
   "latin": {
     "sources": [
@@ -1976,7 +1949,10 @@
       "management",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "leadership theory",
+      "organizational leadership"
+    ]
   },
   "learning technologies": {
     "sources": [
@@ -1986,7 +1962,11 @@
     "parents": [
       "education"
     ],
-    "variations": []
+    "variations": [
+      "learning science",
+      "learning theories",
+      "learning"
+    ]
   },
   "liberal studies": {
     "sources": [
@@ -2038,19 +2018,9 @@
     "parents": [
       "education"
     ],
-    "variations": []
-  },
-  "management information systems": {
-    "sources": [
-      "Bs-management information systems/ms-management information systems (bs/ms-mis)",
-      "Management information systems (ms-mis)",
-      "Bs-management information systems/master of business administration (bs-mis/mba)"
-    ],
-    "parents": [
-      "management",
-      "business"
-    ],
-    "variations": []
+    "variations": [
+      "literacy education"
+    ]
   },
   "manufacturing engineering": {
     "sources": [
@@ -2080,7 +2050,9 @@
       "arts",
       "natural sciences"
     ],
-    "variations": []
+    "variations": [
+      "marine science"
+    ]
   },
   "marketing": {
     "sources": [
@@ -2103,7 +2075,9 @@
       "management",
       "business"
     ],
-    "variations": []
+    "variations": [
+      "marketing research"
+    ]
   },
   "mass communications": {
     "sources": [
@@ -2113,17 +2087,9 @@
     "parents": [
       "humanities"
     ],
-    "variations": []
-  },
-  "materials engineering": {
-    "sources": [
-      "Materials science & engineering building the materials of the future.",
-      "View major materials engineering"
-    ],
-    "parents": [
-      "engineering"
-    ],
-    "variations": []
+    "variations": [
+      "mass communication"
+    ]
   },
   "materials science": {
     "sources": [
@@ -2135,7 +2101,10 @@
     "parents": [
       "engineering"
     ],
-    "variations": []
+    "variations": [
+      "materials engineering",
+      "materials"
+    ]
   },
   "mathematics": {
     "sources": [
@@ -2148,7 +2117,9 @@
       "health sciences",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "mathematics education"
+    ]
   },
   "mechanical engineering": {
     "sources": [
@@ -2189,7 +2160,10 @@
       "arts",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "media theory",
+      "media technologies"
+    ]
   },
   "mediation": {
     "sources": [
@@ -2199,7 +2173,9 @@
     "parents": [
       "law"
     ],
-    "variations": []
+    "variations": [
+      "mediation techniques"
+    ]
   },
   "medical laboratory science": {
     "sources": [
@@ -2313,7 +2289,10 @@
       "arts",
       "education"
     ],
-    "variations": []
+    "variations": [
+      "music theory",
+      "music education"
+    ]
   },
   "music performance": {
     "sources": [
@@ -2385,7 +2364,9 @@
       "education",
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "nutrition education"
+    ]
   },
   "obstetrics": {
     "sources": [
@@ -2452,13 +2433,13 @@
     "variations": []
   },
   "organizational leadership": {
-    "sources": [
-      "Organizational leadership",
-      "Educational and organizational leadership development"
-    ],
+    "canonical_term": "leadership",
+    "sources": [],
     "parents": [
       "business",
-      "education"
+      "education",
+      "management",
+      "arts"
     ],
     "variations": []
   },
@@ -2574,7 +2555,9 @@
       "natural sciences",
       "medicine"
     ],
-    "variations": []
+    "variations": [
+      "physical therapy education"
+    ]
   },
   "physician assistant studies": {
     "sources": [
@@ -2583,7 +2566,9 @@
     "parents": [
       "health sciences"
     ],
-    "variations": []
+    "variations": [
+      "physician assistant"
+    ]
   },
   "physics": {
     "sources": [
@@ -2600,7 +2585,10 @@
       "natural sciences",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "physical sciences",
+      "physical education"
+    ]
   },
   "physiology": {
     "sources": [
@@ -2613,7 +2601,9 @@
       "natural sciences",
       "medicine"
     ],
-    "variations": []
+    "variations": [
+      "integrative physiology"
+    ]
   },
   "plant biology": {
     "sources": [
@@ -2635,7 +2625,10 @@
       "social sciences",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "political science",
+      "political theory"
+    ]
   },
   "professional writing": {
     "sources": [
@@ -2688,7 +2681,9 @@
       "health sciences",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "psychological sciences"
+    ]
   },
   "public administration": {
     "sources": [
@@ -2731,7 +2726,9 @@
       "social sciences",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "public policies"
+    ]
   },
   "race studies": {
     "sources": [
@@ -2742,7 +2739,10 @@
       "social sciences",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "ethnic studies",
+      "race"
+    ]
   },
   "real estate": {
     "sources": [
@@ -2779,7 +2779,10 @@
       "education",
       "medicine"
     ],
-    "variations": []
+    "variations": [
+      "rehabilitation sciences",
+      "rehabilitation technology"
+    ]
   },
   "religion": {
     "sources": [
@@ -2791,7 +2794,9 @@
       "humanities",
       "health sciences"
     ],
-    "variations": []
+    "variations": [
+      "religious studies"
+    ]
   },
   "research methodology": {
     "sources": [
@@ -2873,7 +2878,9 @@
     "parents": [
       "education"
     ],
-    "variations": []
+    "variations": [
+      "science methods"
+    ]
   },
   "second language acquisition": {
     "sources": [
@@ -2898,7 +2905,9 @@
     "parents": [
       "education"
     ],
-    "variations": []
+    "variations": [
+      "secondary science"
+    ]
   },
   "sexuality studies": {
     "sources": [
@@ -2987,7 +2996,9 @@
       "arts",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "sociological research"
+    ]
   },
   "software engineering": {
     "sources": [
@@ -3009,7 +3020,9 @@
       "humanities",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "spanish studies"
+    ]
   },
   "special education": {
     "sources": [
@@ -3031,7 +3044,9 @@
       "education",
       "health sciences"
     ],
-    "variations": []
+    "variations": [
+      "special studies"
+    ]
   },
   "speech pathology": {
     "sources": [
@@ -3044,7 +3059,9 @@
       "public health",
       "education"
     ],
-    "variations": []
+    "variations": [
+      "speech-language pathology"
+    ]
   },
   "speech science": {
     "sources": [
@@ -3080,7 +3097,9 @@
       "health sciences",
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "exercise science"
+    ]
   },
   "statistics": {
     "sources": [
@@ -3093,7 +3112,10 @@
       "arts",
       "humanities"
     ],
-    "variations": []
+    "variations": [
+      "statistical theory",
+      "statistical methods"
+    ]
   },
   "structural engineering": {
     "sources": [
@@ -3126,7 +3148,10 @@
     "parents": [
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "sustainability studies",
+      "sustainability science"
+    ]
   },
   "sustainable development": {
     "sources": [
@@ -3193,18 +3218,6 @@
     ],
     "variations": []
   },
-  "tesol": {
-    "sources": [
-      "M.a., english: teachers of english to speakers of other languages",
-      "Certificate in teaching english to speakers of other languages (tesol), undergraduate",
-      "Tesol, m.s."
-    ],
-    "parents": [
-      "humanities",
-      "education"
-    ],
-    "variations": []
-  },
   "theatre": {
     "sources": [
       "Theatre and dance (school of the arts)",
@@ -3249,7 +3262,11 @@
     "parents": [
       "social sciences"
     ],
-    "variations": []
+    "variations": [
+      "urban education",
+      "urban research",
+      "urban science"
+    ]
   },
   "visual art": {
     "sources": [
@@ -3259,7 +3276,9 @@
     "parents": [
       "arts"
     ],
-    "variations": []
+    "variations": [
+      "visual arts"
+    ]
   },
   "wellness studies": {
     "sources": [
@@ -3271,22 +3290,6 @@
     ],
     "variations": []
   },
-  "women's studies": {
-    "sources": [
-      "Women's and gender studies: bs; minor",
-      "Women's, gender, and sexuality studies",
-      "Women’s and gender studies",
-      "Gender, women’s + sexuality studies",
-      "Women's studies",
-      "Gender & women's studies"
-    ],
-    "parents": [
-      "social sciences",
-      "arts",
-      "humanities"
-    ],
-    "variations": []
-  },
   "writing studies": {
     "sources": [
       "Literature and writing studies website",
@@ -3294,6 +3297,941 @@
     ],
     "parents": [
       "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "biological science": {
+    "canonical_term": "biology",
+    "sources": [],
+    "parents": [
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "cellular biology": {
+    "canonical_term": "cell biology",
+    "sources": [],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "chicana studies": {
+    "canonical_term": "chicano studies",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "business",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "physical sciences": {
+    "canonical_term": "physics",
+    "sources": [],
+    "parents": [
+      "health sciences",
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "political science": {
+    "canonical_term": "politics",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "psychological sciences": {
+    "canonical_term": "psychology",
+    "sources": [],
+    "parents": [
+      "natural sciences",
+      "social sciences",
+      "humanities",
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "religious studies": {
+    "canonical_term": "religion",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "speech-language pathology": {
+    "canonical_term": "speech pathology",
+    "sources": [],
+    "parents": [
+      "nursing",
+      "public health",
+      "education"
+    ],
+    "variations": []
+  },
+  "accountancy": {
+    "canonical_term": "accounting",
+    "sources": [],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "management information systems": {
+    "canonical_term": "business information systems",
+    "sources": [],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "cinema studies": {
+    "canonical_term": "film studies",
+    "sources": [],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "construction engineering": {
+    "canonical_term": "civil engineering",
+    "sources": [],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "criminal justice": {
+    "canonical_term": "justice studies",
+    "sources": [],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "ethnic studies": {
+    "canonical_term": "race studies",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "exercise science": {
+    "canonical_term": "sport science",
+    "sources": [],
+    "parents": [
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "women's studies": {
+    "canonical_term": "gender studies",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "arts",
+      "law",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "integrative physiology": {
+    "canonical_term": "physiology",
+    "sources": [],
+    "parents": [
+      "nursing",
+      "natural sciences",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "international relations": {
+    "canonical_term": "international affairs",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "international studies": {
+    "canonical_term": "international affairs",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "materials engineering": {
+    "canonical_term": "materials science",
+    "sources": [],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "communication studies": {
+    "canonical_term": "communication",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "communication sciences": {
+    "canonical_term": "communication",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "japanese studies": {
+    "canonical_term": "japanese",
+    "sources": [],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "language education": {
+    "canonical_term": "language studies",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "language sciences": {
+    "canonical_term": "language studies",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "literacy education": {
+    "canonical_term": "literacy",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "mathematics education": {
+    "canonical_term": "mathematics",
+    "sources": [],
+    "parents": [
+      "health sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "music theory": {
+    "canonical_term": "music",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education"
+    ],
+    "variations": []
+  },
+  "music education": {
+    "canonical_term": "music",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education"
+    ],
+    "variations": []
+  },
+  "physical education": {
+    "canonical_term": "physics",
+    "sources": [],
+    "parents": [
+      "health sciences",
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "spanish studies": {
+    "canonical_term": "spanish",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "basic behavior analysis": {
+    "canonical_term": "behavior analysis",
+    "sources": [],
+    "parents": [
+      "education",
+      "arts"
+    ],
+    "variations": []
+  },
+  "chicana/o studies": {
+    "canonical_term": "chicano studies",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "business",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "diasporic studies": {
+    "canonical_term": "diaspora studies",
+    "sources": [],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "accounting theory": {
+    "canonical_term": "accounting",
+    "sources": [],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "biological systems": {
+    "canonical_term": "biology",
+    "sources": [],
+    "parents": [
+      "natural sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "biomedical research": {
+    "canonical_term": "biomedical sciences",
+    "sources": [],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "civil engineering technology": {
+    "canonical_term": "civil engineering",
+    "sources": [],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "communication theory": {
+    "canonical_term": "communication",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "communication methods": {
+    "canonical_term": "communication",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "community health sciences": {
+    "canonical_term": "community health",
+    "sources": [],
+    "parents": [
+      "nursing",
+      "public health"
+    ],
+    "variations": []
+  },
+  "community health education": {
+    "canonical_term": "community health",
+    "sources": [],
+    "parents": [
+      "nursing",
+      "public health"
+    ],
+    "variations": []
+  },
+  "counseling theories": {
+    "canonical_term": "counseling",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "cultural theory": {
+    "canonical_term": "cultural studies",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "dance education": {
+    "canonical_term": "dance",
+    "sources": [],
+    "parents": [
+      "arts",
+      "education"
+    ],
+    "variations": []
+  },
+  "data analysis methods": {
+    "canonical_term": "data analysis",
+    "sources": [],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "deaf education": {
+    "canonical_term": "deaf studies",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "decision theory": {
+    "canonical_term": "decision science",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "decision sciences": {
+    "canonical_term": "decision science",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "early childhood": {
+    "canonical_term": "early childhood education",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "economic theory": {
+    "canonical_term": "economics",
+    "sources": [],
+    "parents": [
+      "law",
+      "social sciences",
+      "arts",
+      "humanities",
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "english education": {
+    "canonical_term": "english",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "environmental systems": {
+    "canonical_term": "environmental science",
+    "sources": [],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "environment": {
+    "canonical_term": "environmental science",
+    "sources": [],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "environmental studies": {
+    "canonical_term": "environmental science",
+    "sources": [],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "environmental education": {
+    "canonical_term": "environmental science",
+    "sources": [],
+    "parents": [
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "environmental health": {
+    "canonical_term": "environmental health sciences",
+    "sources": [],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "family science": {
+    "canonical_term": "family studies",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "law"
+    ],
+    "variations": []
+  },
+  "film theory": {
+    "canonical_term": "film studies",
+    "sources": [],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "food systems": {
+    "canonical_term": "food science",
+    "sources": [],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "gender": {
+    "canonical_term": "gender studies",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "arts",
+      "law",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "gender theory": {
+    "canonical_term": "gender studies",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "arts",
+      "law",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "geospatial technologies": {
+    "canonical_term": "geospatial science",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "global education": {
+    "canonical_term": "global studies",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "health behavior": {
+    "canonical_term": "health behavior science",
+    "sources": [],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "healthcare systems": {
+    "canonical_term": "healthcare",
+    "sources": [],
+    "parents": [
+      "nursing",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "human development theories": {
+    "canonical_term": "human development",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "information technology": {
+    "canonical_term": "information science",
+    "sources": [],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "information systems": {
+    "canonical_term": "information science",
+    "sources": [],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "journalism education": {
+    "canonical_term": "journalism",
+    "sources": [],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "justice": {
+    "canonical_term": "justice studies",
+    "sources": [],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "language": {
+    "canonical_term": "language studies",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "language science": {
+    "canonical_term": "language studies",
+    "sources": [],
+    "parents": [
+      "humanities",
+      "arts"
+    ],
+    "variations": []
+  },
+  "leadership theory": {
+    "canonical_term": "leadership",
+    "sources": [],
+    "parents": [
+      "business",
+      "education",
+      "management",
+      "arts"
+    ],
+    "variations": []
+  },
+  "learning science": {
+    "canonical_term": "learning technologies",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "learning theories": {
+    "canonical_term": "learning technologies",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "learning": {
+    "canonical_term": "learning technologies",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "marine science": {
+    "canonical_term": "marine sciences",
+    "sources": [],
+    "parents": [
+      "arts",
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "marketing research": {
+    "canonical_term": "marketing",
+    "sources": [],
+    "parents": [
+      "management",
+      "business"
+    ],
+    "variations": []
+  },
+  "mass communication": {
+    "canonical_term": "mass communications",
+    "sources": [],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "materials": {
+    "canonical_term": "materials science",
+    "sources": [],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "media theory": {
+    "canonical_term": "media studies",
+    "sources": [],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "media technologies": {
+    "canonical_term": "media studies",
+    "sources": [],
+    "parents": [
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "mediation techniques": {
+    "canonical_term": "mediation",
+    "sources": [],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "nutrition education": {
+    "canonical_term": "nutrition",
+    "sources": [],
+    "parents": [
+      "health sciences",
+      "nursing",
+      "public health",
+      "education",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "physical therapy education": {
+    "canonical_term": "physical therapy",
+    "sources": [],
+    "parents": [
+      "health sciences",
+      "nursing",
+      "natural sciences",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "physician assistant": {
+    "canonical_term": "physician assistant studies",
+    "sources": [],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "political theory": {
+    "canonical_term": "politics",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "public policies": {
+    "canonical_term": "public policy",
+    "sources": [],
+    "parents": [
+      "engineering",
+      "law",
+      "arts",
+      "social sciences",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "race": {
+    "canonical_term": "race studies",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "arts"
+    ],
+    "variations": []
+  },
+  "rehabilitation sciences": {
+    "canonical_term": "rehabilitation",
+    "sources": [],
+    "parents": [
+      "education",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "rehabilitation technology": {
+    "canonical_term": "rehabilitation",
+    "sources": [],
+    "parents": [
+      "education",
+      "medicine"
+    ],
+    "variations": []
+  },
+  "science methods": {
+    "canonical_term": "science education",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "secondary science": {
+    "canonical_term": "secondary education",
+    "sources": [],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "sociological research": {
+    "canonical_term": "sociology",
+    "sources": [],
+    "parents": [
+      "social sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "special studies": {
+    "canonical_term": "special education",
+    "sources": [],
+    "parents": [
+      "education",
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "statistical theory": {
+    "canonical_term": "statistics",
+    "sources": [],
+    "parents": [
+      "natural sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "statistical methods": {
+    "canonical_term": "statistics",
+    "sources": [],
+    "parents": [
+      "natural sciences",
+      "arts",
+      "humanities"
+    ],
+    "variations": []
+  },
+  "sustainability studies": {
+    "canonical_term": "sustainability",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "sustainability science": {
+    "canonical_term": "sustainability",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "urban education": {
+    "canonical_term": "urban studies",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "urban research": {
+    "canonical_term": "urban studies",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "urban science": {
+    "canonical_term": "urban studies",
+    "sources": [],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "visual arts": {
+    "canonical_term": "visual art",
+    "sources": [],
+    "parents": [
       "arts"
     ],
     "variations": []

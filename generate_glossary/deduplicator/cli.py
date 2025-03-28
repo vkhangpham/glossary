@@ -12,10 +12,12 @@ import os
 import logging
 from pathlib import Path
 from typing import List, Dict, Any, Optional
-from concurrent.futures import ProcessPoolExecutor
+from dotenv import load_dotenv
 
 from generate_glossary.deduplicator import deduplication_modes
 from generate_glossary.utils.web_miner import WebContent
+
+load_dotenv('.env')
 
 # Default configuration
 DEFAULT_CONFIG = {

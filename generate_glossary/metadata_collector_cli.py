@@ -4,7 +4,7 @@ import argparse
 import logging
 from pathlib import Path
 
-from generate_glossary.metadata_collector import collect_metadata, find_step_file, find_final_file, find_step_metadata
+from generate_glossary.metadata_collector import collect_metadata, collect_resources, find_step_file, find_final_file, find_step_metadata
 
 # Setup logging
 logging.basicConfig(
@@ -19,6 +19,8 @@ def main():
                         help='Level number (0, 1, 2, etc.)')
     parser.add_argument('-o', '--output', type=str, default=None,
                         help='Output file path (default: data/lvX/metadata.json)')
+    parser.add_argument('-r', '--resources', action='store_true',
+                        help='Collect resources in addition to metadata')
     parser.add_argument('-v', '--verbose', action='store_true',
                         help='Enable verbose logging')
     
@@ -81,11 +83,27 @@ def main():
     else:
         logger.debug(f"Found {len(list(postprocessed_dir.glob('*.json')))} JSON files in {postprocessed_dir}")
     
+    # Check for resources file if resources option is enabled
+    if args.resources:
+        resources_file = level_dir / f'lv{args.level}_resources.json'
+        if not resources_file.exists():
+            logger.warning(f"Resources file {resources_file} does not exist")
+            logger.warning("No resources will be collected")
+        else:
+            logger.info(f"Found resources file: {resources_file}")
+    
     # Collect metadata
     logger.info(f"Collecting metadata for level {args.level}")
     try:
-        collect_metadata(args.level, args.output)
+        collect_metadata(args.level, args.verbose)
         logger.info(f"Metadata collection complete. Output saved to {args.output}")
+        
+        # Collect resources if requested
+        if args.resources:
+            logger.info(f"Collecting resources for level {args.level}")
+            collect_resources(args.level, args.verbose)
+            logger.info(f"Resources collection complete.")
+        
         return 0
     except Exception as e:
         logger.error(f"Error collecting metadata: {e}", exc_info=args.verbose)
