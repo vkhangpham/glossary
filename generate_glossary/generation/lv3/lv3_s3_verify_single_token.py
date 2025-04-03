@@ -7,29 +7,29 @@ from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
 from tqdm import tqdm
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.logger import setup_logger
-from utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
-from deduplicator.utils import normalize_text
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
+from generate_glossary.utils.logger import setup_logger
+from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Load environment variables and setup logging
 load_dotenv()
 logger = setup_logger("lv3.s3")
 
 # Get the base directory
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.getcwd()
 
 class Config:
     """Configuration for concept filtering"""
-    INPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/lv3/lv3_s2_filtered_concepts.txt")
-    OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/lv3/lv3_s3_verified_concepts.txt")
-    META_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/lv3/lv3_s1_metadata.json")
-    VALIDATION_META_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/lv3/lv3_s3_metadata.json")
+    INPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s2_filtered_concepts.txt")
+    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s3_verified_concepts.txt")
+    META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_metadata.json")
+    VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s3_metadata.json")
     BATCH_SIZE = 10
     COOLDOWN_PERIOD = 1
     COOLDOWN_FREQUENCY = 10
     MAX_RETRIES = 3
-    MAX_EXAMPLES = 5  # Maximum number of example venues to show in prompt
+    MAX_EXAMPLES = 5  # Maximum number of example conference topics to show in prompt
 
 class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
@@ -47,37 +47,39 @@ def init_llm(provider: Optional[str] = None) -> BaseLLM:
     )
 
 SYSTEM_PROMPT = """You are an expert in academic research classification with a deep understanding of research domains, 
-academic departments, scientific disciplines, and specialized fields of study.
+academic conferences, scientific journals, and specialized fields of study.
 
-Your task is to verify whether terms represent legitimate research concepts by considering.
+Your task is to verify whether terms represent legitimate research concepts frequently discussed in academic conferences 
+and journals. You should consider the context of the conferences or journal special issues where these terms appear.
 
 DO NOT accept any of the following:
-- Acronyms
+- Acronyms (unless they are widely established in the field like "AI" or "NLP")
 - Proper nouns or names
-- Informal or colloquial terms"""
+- Informal or colloquial terms
+- Generic terms without specific academic meaning (e.g., "applications", "methods", "systems" on their own)"""
 
 def build_verification_prompt(
     keyword: str,
-    venues: List[str]
+    conferences: List[str]
 ) -> str:
     """
     Build prompt for keyword verification using metadata
     
     Args:
         keyword: Keyword to verify
-        venues: List of venues where this concept appears
+        conferences: List of conferences/journals where this concept appears
         
     Returns:
         Formatted prompt for LLM
     """
-    # Take up to MAX_EXAMPLES example venues
-    example_venues = venues[:Config.MAX_EXAMPLES]
-    venues_str = "\n".join(f"- {venue}" for venue in example_venues)
+    # Take up to MAX_EXAMPLES example conferences
+    example_conferences = conferences[:Config.MAX_EXAMPLES]
+    conferences_str = "\n".join(f"- {conf}" for conf in example_conferences)
     
     return f"""Analyze whether "{keyword}" is a valid research concept based on the following evidence:
 
-Example Venues that mention this concept:
-{venues_str}
+Example Conference Topics / Journal Special Issues where this concept appears:
+{conferences_str}
 
 Return only a JSON with an is_valid boolean field:
 {{
@@ -86,7 +88,7 @@ Return only a JSON with an is_valid boolean field:
 
 def verify_keyword(
     keyword: str,
-    venues: List[str],
+    conferences: List[str],
     provider: Optional[str] = None
 ) -> bool:
     """
@@ -94,20 +96,20 @@ def verify_keyword(
     
     Args:
         keyword: Keyword to verify
-        venues: List of venues where this concept appears
+        conferences: List of conferences/journals where this concept appears
         provider: Optional LLM provider (openai or gemini)
         
     Returns:
         True if keyword is verified, False otherwise
     """
-    # Skip if no venues found
-    if not venues:
-        logger.debug(f"No venues found for keyword '{keyword}'")
+    # Skip if no conferences found
+    if not conferences:
+        logger.debug(f"No conferences found for keyword '{keyword}'")
         return False
         
     prompt = build_verification_prompt(
         keyword,
-        venues
+        conferences
     )
     
     try:
@@ -132,7 +134,7 @@ def verify_keyword(
 
 def verify_keywords_batch(
     keywords: List[str],
-    concept_venues: Dict[str, List[str]],
+    concept_conferences: Dict[str, List[str]],
     provider: Optional[str] = None,
     batch_size: int = Config.BATCH_SIZE,
     cooldown: int = Config.COOLDOWN_PERIOD,
@@ -143,7 +145,7 @@ def verify_keywords_batch(
     
     Args:
         keywords: List of keywords to verify
-        concept_venues: Dictionary mapping keywords to their venues
+        concept_conferences: Dictionary mapping keywords to their conferences/journals
         provider: Optional LLM provider (openai or gemini)
         batch_size: Number of keywords to process before cooldown
         cooldown: Cooldown period in seconds
@@ -160,11 +162,11 @@ def verify_keywords_batch(
         
         for keyword in batch:
             try:
-                venues = concept_venues.get(keyword, [])
-                is_verified = verify_keyword(keyword, venues, provider)
+                conferences = concept_conferences.get(keyword, [])
+                is_verified = verify_keyword(keyword, conferences, provider)
                 batch_results[keyword] = {
                     "is_verified": is_verified,
-                    "venues": venues,
+                    "conferences": conferences,
                     "provider": provider or Provider.OPENAI,
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }
@@ -172,7 +174,7 @@ def verify_keywords_batch(
                 logger.error(f"Failed to verify '{keyword}': {str(e)}")
                 batch_results[keyword] = {
                     "is_verified": False,
-                    "venues": [],
+                    "conferences": [],
                     "provider": provider or Provider.OPENAI,
                     "error": str(e),
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
@@ -188,20 +190,20 @@ def verify_keywords_batch(
     
     return results
 
-def get_concept_venues(metadata: Dict[str, Any]) -> Dict[str, List[str]]:
+def get_concept_conferences(metadata: Dict[str, Any]) -> Dict[str, List[str]]:
     """
-    Extract venues for each concept from metadata
+    Extract conferences for each concept from metadata
     
     Args:
         metadata: Metadata from s1
         
     Returns:
-        Dictionary mapping concepts to their venues
+        Dictionary mapping concepts to their conferences/journals
     """
-    concept_venues = {}
+    concept_conferences = {}
     
     # Get source->concepts mapping from metadata
-    source_mapping = metadata.get("source_concept_mapping", {})
+    source_mapping = metadata.get("conference_topic_concept_mapping", {})
     
     # Invert mapping from source->concepts to concept->sources
     for source, concepts in source_mapping.items():
@@ -210,12 +212,12 @@ def get_concept_venues(metadata: Dict[str, Any]) -> Dict[str, List[str]]:
             continue
             
         for concept in concepts:
-            if concept not in concept_venues:
-                concept_venues[concept] = []
-            if source not in concept_venues[concept]:
-                concept_venues[concept].append(source)
+            if concept not in concept_conferences:
+                concept_conferences[concept] = []
+            if source not in concept_conferences[concept]:
+                concept_conferences[concept].append(source)
     
-    return concept_venues
+    return concept_conferences
 
 def is_single_word(keyword: str) -> bool:
     """Check if keyword is a single word (no spaces)"""
@@ -230,18 +232,18 @@ def main():
             provider = sys.argv[2]
             logger.info(f"Using provider: {provider}")
             
-        logger.info("Starting single-word research concept verification by LLM")
+        logger.info("Starting single-word concept verification for conference/journal topics by LLM")
         
         # Read input keywords
         with open(Config.INPUT_FILE, "r", encoding='utf-8') as f:
             all_keywords = [line.strip() for line in f.readlines()]
-        logger.info(f"Read {len(all_keywords)} total research concepts")
+        logger.info(f"Read {len(all_keywords)} total concepts")
         
         # Read metadata from s1
         with open(Config.META_FILE, "r", encoding='utf-8') as f:
             metadata = json.load(f)
-        concept_venues = get_concept_venues(metadata)
-        logger.info(f"Loaded venue data for {len(concept_venues)} concepts")
+        concept_conferences = get_concept_conferences(metadata)
+        logger.info(f"Loaded conference/journal data for {len(concept_conferences)} concepts")
         
         # Filter for single-word keywords
         single_word_keywords = [kw for kw in all_keywords if is_single_word(kw)]
@@ -252,7 +254,7 @@ def main():
         # Verify single-word keywords
         verification_results = verify_keywords_batch(
             single_word_keywords,
-            concept_venues,
+            concept_conferences,
             provider=provider
         )
         logger.info(f"Completed verification of {len(verification_results)} single-word concepts")
@@ -324,7 +326,7 @@ def main():
         with open(Config.VALIDATION_META_FILE, "w", encoding='utf-8') as f:
             json.dump(metadata, f, indent=4, ensure_ascii=False)
         
-        logger.info("Research concept verification completed successfully")
+        logger.info("Conference/journal concept verification completed successfully")
         logger.info(f"Saved {len(final_keywords)} verified concepts to {Config.OUTPUT_FILE}")
         
     except Exception as e:

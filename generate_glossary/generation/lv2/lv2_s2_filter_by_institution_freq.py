@@ -27,7 +27,7 @@ class Config:
     OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_filtered_concepts.txt")
     OUTPUT_CSV_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_filtered_concepts.csv")
     VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_metadata.json")
-    TOPIC_FREQ_THRESHOLD = 2
+    TOPIC_FREQ_THRESHOLD = 1
     NUM_WORKERS = 4  # Number of parallel workers for processing
     BATCH_SIZE = 1000  # Size of batches for parallel processing
 

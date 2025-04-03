@@ -22,81 +22,80 @@ from generate_glossary.utils.llm import Provider
 from generate_glossary.utils.web_search.search import WebSearchConfig, web_search_bulk
 from generate_glossary.utils.web_search.html_fetch import HTMLFetchConfig, fetch_webpage
 from generate_glossary.utils.web_search.list_extractor import ListExtractionConfig, extract_lists_from_html, score_list
-from generate_glossary.utils.web_search.filtering import FilterConfig, filter_lists, consolidate_lists, init_llm
+from generate_glossary.utils.web_search.filtering import FilterConfig, consolidate_lists, init_llm
+from generate_glossary.utils.web_search.filtering import filter_lists as original_filter_lists
+
+# Just after imports, add a helper function for LLM output cleaning
+from generate_glossary.utils.web_search.filtering import filter_lists as original_filter_lists
 
 # Load environment variables and setup logging
 load_dotenv('.env')
-logger = setup_logger("lv2.s0")
+logger = setup_logger("lv3.s0")
 random.seed(42)
 
 # Constants
-MAX_SEARCH_RESULTS = 30
+MAX_SEARCH_RESULTS = 10
 MAX_CONCURRENT_REQUESTS = 32
-BATCH_SIZE = 100  # Process multiple level 1 terms in a single batch
+BATCH_SIZE = 100  # Process multiple level 2 terms in a single batch
 
-# Research-related keywords for enhanced filtering
-RESEARCH_KEYWORDS = [
-    "research", "study", "analysis", "theory", "methodology", "approach", 
-    "experiment", "investigation", "application", "development", "model", 
-    "framework", "technology", "technique", "method", "assessment", "evaluation",
-    "innovation", "discovery", "implementation", "design", "exploration",
-    "characterization", "measurement", "computation", "simulation", "modeling",
-    "theory", "algorithm", "system", "process", "protocol", "strategy",
-    "laboratory", "lab", "project", "program", "initiative", "paradigm",
-    "analytics", "data", "clinical", "optimization", "engineering"
+# Conference/journal-related keywords for enhanced filtering
+TOPIC_KEYWORDS = [
+    "topic", "track", "workshop", "symposium", "session", "theme", 
+    "special issue", "call for papers", "cfp", "submission", "paper", 
+    "research", "area", "program", "panel", "tutorial", "keynote",
+    "presentation", "publication", "proceedings", "accepted", "contribution",
+    "article", "manuscript", "work", "study", "investigation", "analysis",
+    "focus", "interest", "perspective", "approach", "methodology", "framework"
 ]
 
-# Anti-keywords indicating non-research text
-NON_RESEARCH_KEYWORDS = [
-    "login", "sign in", "register", "apply", "admission", "contact", 
+# Anti-keywords indicating non-topic text
+NON_TOPIC_KEYWORDS = [
+    "login", "sign in", "register", "apply", "contact", 
     "about", "home", "sitemap", "search", "privacy", "terms", "copyright",
-    "accessibility", "careers", "jobs", "employment", "staff", "faculty",
-    "directory", "phone", "email", "address", "location", "directions",
-    "map", "parking", "visit", "tour", "events", "news", "calendar",
-    "library", "bookstore", "housing", "dining", "athletics", "sports",
-    "recreation", "student", "alumni", "giving", "donate", "support",
-    "request", "form", "apply now", "learn more", "read more", "view",
+    "registration fee", "accommodation", "venue", "travel", "sponsors",
+    "deadline", "date", "schedule", "time", "location", "place", "map",
+    "committee", "chair", "organizer", "editor", "reviewer", "attendee",
     "download", "upload", "submit", "send", "share", "follow", "like",
     "tweet", "post", "comment", "subscribe", "newsletter", "blog",
     "click here", "link", "back", "next", "previous", "continue"
 ]
 
-# Research pattern matches for regex matching
-RESEARCH_PATTERNS = [
-    r"(?:research|study|analysis|investigation) (?:of|on|in) [\w\s&,'-]+",
-    r"[\w\s&,'-]+ (?:theory|methodology|approach|framework)",
-    r"[\w\s&,'-]+ (?:analysis|modeling|simulation)",
-    r"[\w\s&,'-]+ (?:development|implementation|application)",
-    r"[\w\s&,'-]+ (?:algorithm|system|technique|method)"
+# Topic pattern matches for regex matching
+TOPIC_PATTERNS = [
+    r"(?:topics|tracks|workshops|sessions) (?:of|on|in|for) [\w\s&,'-]+",
+    r"(?:special issues?|special sections?) (?:on|in|about) [\w\s&,'-]+",
+    r"(?:call for papers|cfp) (?:on|in|about) [\w\s&,'-]+",
+    r"[\w\s&,'-]+ (?:track|workshop|session|symposium|panel)",
+    r"[\w\s&,'-]+ (?:topics|papers|submissions)"
 ]
 
 class Config:
-    """Configuration for research areas extraction from level 1 terms"""
+    """Configuration for conference/journal topic extraction from level 2 terms"""
     BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-    DEFAULT_LV1_INPUT_FILE = os.path.join(BASE_DIR, "data/lv1/lv1_final.txt")
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s0_research_areas.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s0_metadata.json")
-    CACHE_DIR = os.path.join(BASE_DIR, "data/lv2/cache")
-    RAW_SEARCH_DIR = os.path.join(BASE_DIR, "data/lv2/raw_search_results")
-    DETAILED_META_DIR = os.path.join(BASE_DIR, "data/lv2/detailed_metadata")
+    DEFAULT_LV2_INPUT_FILE = os.path.join(BASE_DIR, "data/final/lv2/lv2_final.txt")
+    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_conference_topics.txt")
+    META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_metadata.json")
+    CACHE_DIR = os.path.join(BASE_DIR, "data/lv3/cache")
+    RAW_SEARCH_DIR = os.path.join(BASE_DIR, "data/lv3/raw_search_results")
+    DETAILED_META_DIR = os.path.join(BASE_DIR, "data/lv3/detailed_metadata")
 
-def read_level1_terms(input_path: str) -> List[str]:
-    """Read level 1 terms from input file"""
+def read_level2_terms(input_path: str) -> List[str]:
+    """Read level 2 terms from input file"""
     try:
         with open(input_path, "r", encoding="utf-8") as file:
             terms = [line.strip() for line in file.readlines() if line.strip()]
-        logger.info(f"Successfully read {len(terms)} level 1 terms")
+        logger.info(f"Successfully read {len(terms)} level 2 terms")
         return terms
     except Exception as e:
-        logger.error(f"Failed to read level 1 terms: {str(e)}", exc_info=True)
+        logger.error(f"Failed to read level 2 terms: {str(e)}", exc_info=True)
         raise
 
 
-def clean_research_area(item: str) -> str:
-    """Clean a research area"""
-            # Remove common prefixes like "Research on", "Studies in"
+def clean_conference_topic(item: str) -> str:
+    """Clean a conference/journal topic"""
+    # Remove common prefixes like "Topics on", "Call for papers on"
     item = item.strip()
-    item = re.sub(r'^(Research|Studies|Topics|Focus|Areas|Interests) (on|in|of) ', '', item, flags=re.IGNORECASE)
+    item = re.sub(r'^(Topics|Tracks|Workshops|Sessions|Special Issues?|Call for Papers|CFP|Areas|Themes?) (on|in|of|for|about) ', '', item, flags=re.IGNORECASE)
     # Remove trailing numbers, parenthetical info
     item = re.sub(r'\s*\(\d+\).*$', '', item)
     item = re.sub(r'\s*\d+\s*$', '', item)
@@ -107,38 +106,34 @@ def clean_research_area(item: str) -> str:
     return item
 
 
-def score_research_area_list(items: List[str], metadata: Dict[str, Any], context_term: str) -> float:
-    """Score a research area list based on various heuristics"""
+def score_conference_topic_list(items: List[str], metadata: Dict[str, Any], context_term: str) -> float:
+    """Score a conference topic list based on various heuristics"""
     # Adjust weights to prioritize content relevance over structure/size
     weights = {
-        "keyword": 0.35,      # Increased: Presence of research keywords
-        "structure": 0.05,     # Decreased: Less weight on specific HTML tag structure
-        "pattern": 0.25,      # Increased: Consistency and relevance of item naming patterns
-        "non_term": 0.25,     # Increased: Penalty for non-relevant/navigational terms
-        "consistency": 0.05,  # Decreased: General formatting consistency (less critical than content)
-        "size": 0.0,          # Removed: List size is less important if content is good
-        "html_type": 0.05     # Decreased: HTML element type less critical than content relevance
+        "keyword": 0.35,      # Presence of conference/journal keywords
+        "structure": 0.05,    # HTML tag structure
+        "pattern": 0.25,      # Consistency and relevance of item naming patterns
+        "non_term": 0.25,     # Penalty for non-relevant/navigational terms
+        "consistency": 0.05,  # General formatting consistency
+        "size": 0.0,         # List size is less important
+        "html_type": 0.05     # HTML element type
     }
     
-    # Ensure weights sum to 1 (or close enough)
+    # Ensure weights sum to 1
     total_weight = sum(weights.values())
     if abs(total_weight - 1.0) > 1e-6: 
-        # Basic normalization if they don't sum to 1
         weights = {k: v / total_weight for k, v in weights.items()}
 
-    # Use the common scoring function from list_extractor, passing the adjusted weights
-    # Note: Assumes score_list function in list_extractor accepts 'scoring_weights'
+    # Use the common scoring function from list_extractor
     try:
-        from generate_glossary.utils.web_search.list_extractor import score_list
         return score_list(
-            items=items, # Pass the cleaned items
+            items=items,
             metadata=metadata,
             context_term=context_term,
-            keywords=RESEARCH_KEYWORDS, # Use specific research keywords
+            keywords=TOPIC_KEYWORDS,
             scoring_weights=weights
         )
     except ImportError:
-        # Fallback if score_list is not available
         logger.debug("score_list function not found, using fallback metadata scoring.")
         # Simplified fallback based on metadata only
         keyword_ratio = metadata.get("keyword_ratio", 0)
@@ -149,21 +144,115 @@ def score_research_area_list(items: List[str], metadata: Dict[str, Any], context
         score = (keyword_ratio * weights["keyword"] + 
                  pattern_ratio * weights["pattern"] + 
                  (1 - non_term_ratio) * weights["non_term"] + 
-                 (1 - nav_score) * weights["structure"]) # Approximation
+                 (1 - nav_score) * weights["structure"])
         return min(max(score, 0.0), 1.0)
 
 
-async def process_level1_term(level1_term: str, provider: Optional[str] = None, session: Optional[Any] = None) -> Dict[str, Any]:
-    """Process a single level1 term to extract research areas and save detailed metadata"""
-    logger.info(f"Processing level 1 term: {level1_term}")
+def preprocess_html_content(html_content: str) -> str:
+    """
+    Remove code blocks and other problematic content from HTML before extraction
+    
+    Args:
+        html_content: Raw HTML content
+        
+    Returns:
+        Preprocessed HTML content with problematic sections removed
+    """
+    # Remove markdown code blocks
+    html_content = re.sub(r'```[\w]*\n[\s\S]*?\n```', '', html_content)
+    
+    # Remove inline code blocks
+    html_content = re.sub(r'`[^`\n]*`', '', html_content)
+    
+    # Remove script tags and their contents
+    html_content = re.sub(r'<script[^>]*>[\s\S]*?</script>', '', html_content)
+    
+    # Remove style tags and their contents
+    html_content = re.sub(r'<style[^>]*>[\s\S]*?</style>', '', html_content)
+    
+    return html_content
+
+
+# Define a wrapper function for filter_lists that handles markdown in LLM responses
+async def filter_lists(raw_lists, context_term, config, logger):
+    """
+    Wrapper around original filter_lists that handles markdown formatting in LLM responses
+    
+    Args:
+        raw_lists: Raw lists to filter
+        context_term: Context term for filtering
+        config: Filter configuration
+        logger: Logger instance
+        
+    Returns:
+        Same return values as original filter_lists but with cleaned LLM responses
+    """
+    # Run the original filter_lists function
+    final_llm_output_lists, llm_candidates, llm_results = await original_filter_lists(
+        raw_lists, context_term, config, logger
+    )
+    
+    # If LLM validation is not enabled, return original results
+    if not config.use_llm_validation:
+        return final_llm_output_lists, llm_candidates, llm_results
+    
+    # Clean LLM results to remove markdown formatting
+    cleaned_llm_results = []
+    for result in llm_results:
+        # If result is a string, clean it
+        if isinstance(result, str):
+            # Handle multiple code block formats (markdown, python, json, etc)
+            cleaned_result = result
+            
+            # Try to handle code blocks with language specified
+            if re.search(r'^```[\w]*\n', cleaned_result):
+                # Remove opening code block marker with language
+                cleaned_result = re.sub(r'^```[\w]*\n', '', cleaned_result)
+                cleaned_result = re.sub(r'\n```$', '', cleaned_result)
+            
+            # Try to handle generic code blocks
+            if re.search(r'^```\n', cleaned_result):
+                cleaned_result = re.sub(r'^```\n', '', cleaned_result)
+                cleaned_result = re.sub(r'\n```$', '', cleaned_result)
+            
+            # Check for entire text wrapped in code block without newlines
+            if re.search(r'^```[\w]*', cleaned_result):
+                cleaned_result = re.sub(r'^```[\w]*', '', cleaned_result)
+                cleaned_result = re.sub(r'```$', '', cleaned_result)
+            
+            # Handle single backtick format code
+            cleaned_result = re.sub(r'^`', '', cleaned_result)
+            cleaned_result = re.sub(r'`$', '', cleaned_result)
+            
+            # Final cleanup
+            cleaned_result = cleaned_result.strip()
+            
+            # Log what was changed for debugging
+            if cleaned_result != result:
+                logger.info(f"Cleaned markdown from LLM result: '{result[:30]}...' -> '{cleaned_result[:30]}...'")
+            
+            cleaned_llm_results.append(cleaned_result)
+        else:
+            # If result is already parsed (list or dict), keep as is
+            cleaned_llm_results.append(result)
+    
+    logger.info(f"Processed {len(cleaned_llm_results)} LLM results to handle markdown formatting")
+    
+    # Return the same structure but with cleaned results
+    return final_llm_output_lists, llm_candidates, cleaned_llm_results
+
+
+async def process_level2_term(level2_term: str, provider: Optional[str] = None, session: Optional[Any] = None) -> Dict[str, Any]:
+    """Process a single level2 term to extract conference/journal topics and save detailed metadata"""
+    logger.info(f"Processing level 2 term: {level2_term}")
     
     # Initialize structures for detailed metadata
     term_details = {
-        "level1_term": level1_term,
+        "level2_term": level2_term,
         "all_urls": [],
         "raw_extracted_lists": [],
         "llm_io_pairs": [],
-        "final_consolidated_areas": [],
+        "final_consolidated_topics": [],
         "error": None
     }
     
@@ -179,63 +268,56 @@ async def process_level1_term(level1_term: str, provider: Optional[str] = None, 
         )
         
         list_config = ListExtractionConfig(
-            keywords=RESEARCH_KEYWORDS,
-            anti_keywords=NON_RESEARCH_KEYWORDS,
-            patterns=RESEARCH_PATTERNS
+            keywords=TOPIC_KEYWORDS,
+            anti_keywords=NON_TOPIC_KEYWORDS,
+            patterns=TOPIC_PATTERNS
         )
         
         filter_config = FilterConfig(
-            scoring_fn=score_research_area_list,
-            clean_item_fn=clean_research_area,
+            scoring_fn=score_conference_topic_list,
+            clean_item_fn=clean_conference_topic,
             provider=provider,
             use_llm_validation=True,
             binary_llm_decision=False,
-            binary_system_prompt=f"""You are a highly meticulous academic research assistant focused on identifying specific research areas and courses within university departments.
+            binary_system_prompt=f"""You are a highly meticulous academic research assistant focused on identifying conference topics, journal special issues, and workshop themes.
 
-Task: Carefully analyze the provided list of items. Extract ONLY the items that represent specific, legitimate research areas, research groups, research labs, or teaching courses offered by or *highly relevant to the curriculum and research focus of* **The Department of {level1_term}**.
+Task: Carefully analyze the provided list of items. Extract ONLY the items that represent specific, legitimate conference topics, workshop themes, journal special issues, or symposium topics related to or within the field of **{level2_term}**.
 
-Input: A list of potential research areas/topics/courses/other text.
-Output: A Python-style list `[...]` containing ONLY the verified items from the input list that are specific to and directly belong to or are highly relevant to **The Department of {level1_term}**. Preserve the original phrasing.
+Input: A list of potential conference/journal topics.
+Output: A Python-style list `[...]` containing ONLY the verified items from the input list that are specific conference topics or journal special issues related to **{level2_term}**.
 
 CRITICAL Exclusion Criteria - DO NOT INCLUDE:
-1.  **Items from *clearly distinct* departments/fields:** Reject anything clearly belonging to a *significantly different academic field* (e.g., if analyzing 'English', reject 'Organic Chemistry', 'Microeconomics', 'Calculus').
-2.  **University-wide or College-wide items:** Reject general university/college programs, centers, initiatives, or resources unless they are EXPLICITLY and PRIMARILY housed within **The Department of {level1_term}**.
-3.  **Administrative/Navigational items:** Reject 'About Us', 'Contact', 'Faculty Directory', 'Admissions', 'Apply Now', 'News', 'Events', 'Home', 'Sitemap', 'Login'.
-4.  **Overly Generic Terms:** Reject vague terms like 'Research', 'Studies', 'Graduate Programs', 'Undergraduate Programs', 'Curriculum', 'Resources', 'Facilities' unless part of a specific research area name (e.g., 'Research in Network Security' is okay, just 'Research' is not).
-5.  **People/Organizations:** Reject specific faculty names, student groups, or associations.
-6.  **Non-academic Content:** Reject irrelevant text, copyright notices, addresses, etc.
+1. **Navigation/administrative items:** Reject 'Home', 'About', 'Contact', 'Registration', 'Venue', 'Important Dates', 'Committees'.
+2. **Generic terms without specific focus:** Reject vague terms like 'Research', 'Papers', 'Program' on their own without specific topic context.
+3. **People or roles:** Reject 'Keynote Speakers', 'Program Committee', 'Chairs', 'Organizers', 'Editors'.
+4. **Unrelated topics:** Reject topics clearly not related to **{level2_term}**.
+5. **Logistics:** Reject 'Registration Fee', 'Accommodation', 'Travel Information'.
 
 Guidelines:
-- Return an empty list `[]` if NO items in the input list meet the criteria for **The Department of {level1_term}**.
-- Focus on SPECIFIC research fields, sub-disciplines, labs, groups, or course titles directly associated with **The Department of {level1_term}**.
-- **Accept relevant course titles/research areas even if a prefix (e.g., 'ENG', 'LIT', 'HIST') doesn't exactly match the department name, as long as the *topic* fits within the scope of {level1_term}.** Judge based on topical relevance to **{level1_term}**.
-- Be conservative: If an item's relevance to **The Department of {level1_term}** is unclear or seems too broad, EXCLUDE it.
+- Return an empty list `[]` if NO items in the input list meet the criteria for conference/journal topics related to **{level2_term}**.
+- Accept specific research topics, paper categories, special issue themes, workshop focuses.
+- Focus on SUBJECT MATTER, not organizational structure or event logistics.
 - Output ONLY the Python-style list, with no extra text, explanation, or markdown formatting.
 
-Example 1 (Department of Biology):
-Input List: ["Molecular Biology", "Genetics", "Ecology and Evolution", "University Research Opportunities", "BIOL 101: Introduction to Biology", "Physics Department", "Contact Us", "Neuroscience Program (Interdisciplinary)", "Cell Biology Lab"]
-Output: ["Molecular Biology", "Genetics", "Ecology and Evolution", "BIOL 101: Introduction to Biology", "Cell Biology Lab"]
-
-Example 2 (Department of Cultural Studies):
-Input List: ["CUL 201 Intro to Cultural Theory", "ENG 3010 Modern Criticism", "HIST 350 Social History", "ANTH 210 Anthropology of Media", "PHYS 101 General Physics", "About the Department"]
-Output: ["CUL 201 Intro to Cultural Theory", "ENG 3010 Modern Criticism", "HIST 350 Social History", "ANTH 210 Anthropology of Media"]
-(Explanation: Includes relevant ENG, HIST, ANTH courses due to topical overlap, excludes Physics and admin item).
-
-Analyze the following list STRICTLY for **The Department of {level1_term}** and return the verified items in the specified Python list format:"""
+Example:
+Input List for "Machine Learning":
+["Home", "Reinforcement Learning Applications", "Registration", "Deep Learning for Computer Vision", "Program Committee", "Neural Network Architectures", "Important Dates", "Call for Papers", "Venue", "Machine Learning Ethics and Governance", "Contact Us"]
+Output: ["Reinforcement Learning Applications", "Deep Learning for Computer Vision", "Neural Network Architectures", "Machine Learning Ethics and Governance"]
+"""
         )
         
         # Construct search query
-        query = f"site:.edu department of {level1_term} (research areas | research topics | teaching courses)"
+        query = f"(journal of | conference on) {level2_term} (topics | call for papers | tracks | workshops | programs | events)"
         
         # Perform web search
         search_results = web_search_bulk([query], search_config, logger=logger)
         
         if not search_results or not search_results.get("data"):
-            logger.warning(f"No search results for '{level1_term}'")
+            logger.warning(f"No search results for '{level2_term}'")
             term_details["error"] = "No search results"
             # Save partial details before returning
-            save_detailed_metadata(level1_term, term_details)
-            return {"level1_term": level1_term, "research_areas": [], "count": 0, "verified": False, "num_urls": 0, "num_lists": 0}
+            save_detailed_metadata(level2_term, term_details)
+            return {"level2_term": level2_term, "conference_topics": [], "count": 0, "verified": False, "num_urls": 0, "num_lists": 0}
         
         # Extract URLs
         urls = [r.get("url") for r in search_results.get("data", [])[0].get("results", [])]
@@ -243,12 +325,12 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
         term_details["all_urls"] = urls
     
         if not urls:
-            logger.warning(f"No URLs found in search results for '{level1_term}'")
+            logger.warning(f"No URLs found in search results for '{level2_term}'")
             term_details["error"] = "No URLs found in search results"
-            save_detailed_metadata(level1_term, term_details)
-            return {"level1_term": level1_term, "research_areas": [], "count": 0, "verified": False, "num_urls": 0, "num_lists": 0}
+            save_detailed_metadata(level2_term, term_details)
+            return {"level2_term": level2_term, "conference_topics": [], "count": 0, "verified": False, "num_urls": 0, "num_lists": 0}
             
-        logger.info(f"Found {len(urls)} URLs for '{level1_term}'")
+        logger.info(f"Found {len(urls)} URLs for '{level2_term}'")
             
         # Configure semaphore for concurrent requests
         semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
@@ -273,7 +355,7 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
             ) as new_session:
                 # Fetch webpages
                 fetch_tasks = [
-                    fetch_webpage(url, new_session, semaphore, html_config, level1_term, logger) 
+                    fetch_webpage(url, new_session, semaphore, html_config, level2_term, logger) 
                     for url in urls[:MAX_SEARCH_RESULTS]
                 ]
                 
@@ -291,8 +373,11 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
                     if not html_content:
                         continue
                         
+                    # Preprocess HTML content to remove problematic sections
+                    preprocessed_html = preprocess_html_content(html_content)
+                        
                     # Extract lists from the webpage
-                    extracted_lists = extract_lists_from_html(html_content, list_config)
+                    extracted_lists = extract_lists_from_html(preprocessed_html, list_config)
             
                     if extracted_lists:
                         all_extracted_lists_raw.extend(extracted_lists) # Append raw dicts
@@ -301,7 +386,7 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
         else:
             # Use the provided session
             fetch_tasks = [
-                fetch_webpage(url, session, semaphore, html_config, level1_term, logger) 
+                fetch_webpage(url, session, semaphore, html_config, level2_term, logger) 
                 for url in urls[:MAX_SEARCH_RESULTS]
             ]
             
@@ -319,8 +404,11 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
                 if not html_content:
                     continue
                     
+                # Preprocess HTML content to remove problematic sections
+                preprocessed_html = preprocess_html_content(html_content)
+                    
                 # Extract lists from the webpage
-                extracted_lists = extract_lists_from_html(html_content, list_config)
+                extracted_lists = extract_lists_from_html(preprocessed_html, list_config)
                 
                 if extracted_lists:
                     all_extracted_lists_raw.extend(extracted_lists) # Append raw dicts
@@ -332,16 +420,16 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
 
         # Filter and validate lists
         if not all_extracted_lists_raw:
-            logger.warning(f"No lists extracted for '{level1_term}'")
+            logger.warning(f"No lists extracted for '{level2_term}'")
             term_details["error"] = "No lists extracted from fetched HTML"
-            save_detailed_metadata(level1_term, term_details)
-            return {"level1_term": level1_term, "research_areas": [], "count": 0, "verified": False, "num_urls": len(urls), "num_lists": 0}
+            save_detailed_metadata(level2_term, term_details)
+            return {"level2_term": level2_term, "conference_topics": [], "count": 0, "verified": False, "num_urls": len(urls), "num_lists": 0}
             
-        logger.info(f"Extracted a total of {len(all_extracted_lists_raw)} raw lists for '{level1_term}'. Starting filtering...")
+        logger.info(f"Extracted a total of {len(all_extracted_lists_raw)} raw lists for '{level2_term}'. Starting filtering...")
         
         # Filter lists using the shared filtering utility - Capture necessary returned values
         final_llm_output_lists, llm_candidates, llm_results = await filter_lists(
-            all_extracted_lists_raw, level1_term, filter_config, logger
+            all_extracted_lists_raw, level2_term, filter_config, logger
         )
         
         # Store intermediate results in term_details in the new format
@@ -350,7 +438,7 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
              # Ensure results align with candidates (should match length)
              num_pairs = min(len(llm_candidates), len(llm_results))
              if len(llm_candidates) != len(llm_results):
-                  logger.warning(f"Mismatch between LLM candidates ({len(llm_candidates)}) and results ({len(llm_results)}) for {level1_term}. Pairing up to {num_pairs}.")
+                  logger.warning(f"Mismatch between LLM candidates ({len(llm_candidates)}) and results ({len(llm_results)}) for {level2_term}. Pairing up to {num_pairs}.")
              
              for i in range(num_pairs):
                   # Ensure candidate has 'items' field
@@ -362,55 +450,55 @@ Analyze the following list STRICTLY for **The Department of {level1_term}** and 
                   })
         
         if not final_llm_output_lists:
-            logger.warning(f"No lists passed filtering/LLM validation for '{level1_term}'")
+            logger.warning(f"No lists passed filtering/LLM validation for '{level2_term}'")
             term_details["error"] = "No lists passed filtering/LLM validation"
-            save_detailed_metadata(level1_term, term_details)
-            return {"level1_term": level1_term, "research_areas": [], "count": 0, "verified": False, "num_urls": len(urls), "num_lists": len(all_extracted_lists_raw)}
+            save_detailed_metadata(level2_term, term_details)
+            return {"level2_term": level2_term, "conference_topics": [], "count": 0, "verified": False, "num_urls": len(urls), "num_lists": len(all_extracted_lists_raw)}
             
-        logger.info(f"After filtering/LLM, {len(final_llm_output_lists)} lists/sub-lists remain for '{level1_term}'")
+        logger.info(f"After filtering/LLM, {len(final_llm_output_lists)} lists/sub-lists remain for '{level2_term}'")
         
-        # Consolidate research areas
-        research_areas = consolidate_lists(
+        # Consolidate conference topics
+        conference_topics = consolidate_lists(
             final_llm_output_lists, 
-            level1_term, 
+            level2_term, 
             min_frequency=1,
             min_list_appearances=1,
             similarity_threshold=0.7
         )
-        term_details["final_consolidated_areas"] = research_areas
+        term_details["final_consolidated_topics"] = conference_topics
         
-        logger.info(f"Consolidated to {len(research_areas)} unique research areas for '{level1_term}'")
+        logger.info(f"Consolidated to {len(conference_topics)} unique conference topics for '{level2_term}'")
         
         # Simplified source/quality tracking
-        research_area_quality = {area: 1.0 for area in research_areas}
+        topic_quality = {topic: 1.0 for topic in conference_topics}
 
         # Save detailed metadata for this term
-        save_detailed_metadata(level1_term, term_details)
+        save_detailed_metadata(level2_term, term_details)
 
         # Return main results needed for aggregation
         return {
-            "level1_term": level1_term,
-            "research_areas": research_areas,
-            "count": len(research_areas),
+            "level2_term": level2_term,
+            "conference_topics": conference_topics,
+            "count": len(conference_topics),
             "url_sources": {}, # Simplified
-            "quality_scores": research_area_quality, # Simplified
-            "verified": len(research_areas) > 0,
+            "quality_scores": topic_quality, # Simplified
+            "verified": len(conference_topics) > 0,
             "num_urls": len(urls),
             "num_lists": len(all_extracted_lists_raw) # Report raw list count
         }
             
     except Exception as e:
-        logger.error(f"Error processing term '{level1_term}': {str(e)}", exc_info=True)
+        logger.error(f"Error processing term '{level2_term}': {str(e)}", exc_info=True)
         term_details["error"] = f"Unhandled exception: {str(e)}"
-        save_detailed_metadata(level1_term, term_details) # Attempt to save details on error
+        save_detailed_metadata(level2_term, term_details) # Attempt to save details on error
         # Return error structure
-        return {"level1_term": level1_term, "research_areas": [], "count": 0, "verified": False, "num_urls": 0, "num_lists": 0, "error": str(e)}
+        return {"level2_term": level2_term, "conference_topics": [], "count": 0, "verified": False, "num_urls": 0, "num_lists": 0, "error": str(e)}
 
-def save_detailed_metadata(level1_term: str, data: Dict[str, Any]):
-    """Saves the detailed processing metadata for a single level1 term to a JSON file."""
+def save_detailed_metadata(level2_term: str, data: Dict[str, Any]):
+    """Saves the detailed processing metadata for a single level2 term to a JSON file."""
     try:
         # Sanitize filename
-        safe_filename = re.sub(r'[\/:*?"<>|]', '_', level1_term) + "_details.json"
+        safe_filename = re.sub(r'[\/:*?"<>|]', '_', level2_term) + "_details.json"
         output_path = os.path.join(Config.DETAILED_META_DIR, safe_filename)
         
         # Ensure the directory exists
@@ -419,19 +507,19 @@ def save_detailed_metadata(level1_term: str, data: Dict[str, Any]):
         with open(output_path, "w", encoding="utf-8") as f:
             # Use default handler for non-serializable objects if any slip through (e.g., sets)
             json.dump(data, f, indent=2, default=lambda o: f"<non-serializable: {type(o).__name__}>")
-        logger.info(f"Saved detailed metadata for '{level1_term}' to {output_path}")
+        logger.info(f"Saved detailed metadata for '{level2_term}' to {output_path}")
     except Exception as e:
-        logger.error(f"Failed to save detailed metadata for '{level1_term}': {str(e)}", exc_info=True)
+        logger.error(f"Failed to save detailed metadata for '{level2_term}': {str(e)}", exc_info=True)
 
 
-async def process_level1_terms_batch(batch: List[str], provider: Optional[str] = None, session: Optional[Any] = None) -> List[Dict[str, Any]]:
-    """Process a batch of level 1 terms"""
+async def process_level2_terms_batch(batch: List[str], provider: Optional[str] = None, session: Optional[Any] = None) -> List[Dict[str, Any]]:
+    """Process a batch of level 2 terms"""
     if session:
         # If session is provided, use it for each term
-        tasks = [process_level1_term(term, provider, session) for term in batch]
+        tasks = [process_level2_term(term, provider, session) for term in batch]
     else:
         # For backward compatibility
-        tasks = [process_level1_term(term, provider) for term in batch]
+        tasks = [process_level2_term(term, provider) for term in batch]
     return await asyncio.gather(*tasks)
 
 
@@ -446,7 +534,7 @@ def ensure_dirs_exist():
     ]
     
     logger.info(f"BASE_DIR: {Config.BASE_DIR}")
-    logger.info(f"LV1_INPUT_FILE: {Config.DEFAULT_LV1_INPUT_FILE}")
+    logger.info(f"LV2_INPUT_FILE: {Config.DEFAULT_LV2_INPUT_FILE}")
     logger.info(f"OUTPUT_FILE: {Config.OUTPUT_FILE}")
     logger.info(f"META_FILE: {Config.META_FILE}")
     logger.info(f"CACHE_DIR: {Config.CACHE_DIR}")
@@ -467,11 +555,11 @@ async def main_async():
     """Async main execution function"""
     try:
         # Set up argument parser
-        parser = argparse.ArgumentParser(description="Extract research areas for level 1 terms.")
+        parser = argparse.ArgumentParser(description="Extract conference/journal topics for level 2 terms.")
         parser.add_argument("--provider", help="LLM provider (e.g., gemini, openai)")
         parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Batch size for processing terms (default: {BATCH_SIZE})")
         parser.add_argument("--max-concurrent", type=int, default=MAX_CONCURRENT_REQUESTS, help=f"Max concurrent term processing requests (default: {MAX_CONCURRENT_REQUESTS})")
-        parser.add_argument("--input-file", default=Config.DEFAULT_LV1_INPUT_FILE, help=f"Path to the input file containing level 1 terms (default: {Config.DEFAULT_LV1_INPUT_FILE})")
+        parser.add_argument("--input-file", default=Config.DEFAULT_LV2_INPUT_FILE, help=f"Path to the input file containing level 2 terms (default: {Config.DEFAULT_LV2_INPUT_FILE})")
         parser.add_argument("--append", action='store_true', help="Append results to existing output files instead of overwriting.")
         
         args = parser.parse_args()
@@ -488,20 +576,20 @@ async def main_async():
             logger.info(f"Using custom batch size: {batch_size}")
         if max_concurrent != MAX_CONCURRENT_REQUESTS:
              logger.info(f"Using custom concurrent limit: {max_concurrent}")
-        if input_file_path != Config.DEFAULT_LV1_INPUT_FILE:
+        if input_file_path != Config.DEFAULT_LV2_INPUT_FILE:
              logger.info(f"Using custom input file: {input_file_path}")
         if append_mode:
              logger.info("Append mode enabled. Results will be added to existing files.")
         
-        logger.info("Starting research areas extraction using level 1 terms")
+        logger.info("Starting conference/journal topics extraction using level 2 terms")
         
         # Create output directories
         ensure_dirs_exist()
         
-        # Read level 1 terms from the specified input file
-        level1_terms = read_level1_terms(input_file_path)
+        # Read level 2 terms from the specified input file
+        level2_terms = read_level2_terms(input_file_path)
         
-        logger.info(f"Processing {len(level1_terms)} level 1 terms from '{input_file_path}' with batch size {batch_size} and max {max_concurrent} concurrent terms")
+        logger.info(f"Processing {len(level2_terms)} level 2 terms from '{input_file_path}' with batch size {batch_size} and max {max_concurrent} concurrent terms")
         
         # Initialize aiohttp session for the entire run
         from aiohttp import ClientSession, ClientTimeout, TCPConnector, CookieJar
@@ -527,7 +615,7 @@ async def main_async():
         async def process_term_with_throttling(term):
             """Process a term with throttling to limit concurrent execution"""
             async with semaphore:
-                return await process_level1_term(term, provider, session)
+                return await process_level2_term(term, provider, session)
         
         all_results = []
         start_time = time.time()
@@ -540,9 +628,9 @@ async def main_async():
             timeout=timeout,
             raise_for_status=False
         ) as session:
-            for i in range(0, len(level1_terms), batch_size):
-                batch = level1_terms[i:i+batch_size]
-                logger.info(f"Processing batch {i//batch_size + 1}/{(len(level1_terms) + batch_size - 1)//batch_size}")
+            for i in range(0, len(level2_terms), batch_size):
+                batch = level2_terms[i:i+batch_size]
+                logger.info(f"Processing batch {i//batch_size + 1}/{(len(level2_terms) + batch_size - 1)//batch_size}")
                 
                 # Process terms in batch concurrently with throttling
                 tasks = [process_term_with_throttling(term) for term in batch]
@@ -555,8 +643,8 @@ async def main_async():
                         logger.error(f"Error processing term '{batch[j]}': {str(result)}")
                         # Add a placeholder result for failed terms
                         processed_batch_results.append({
-                            "level1_term": batch[j],
-                            "research_areas": [],
+                            "level2_term": batch[j],
+                            "conference_topics": [],
                             "count": 0,
                             "url_sources": {},
                             "quality_scores": {},
@@ -571,95 +659,95 @@ async def main_async():
                 
                 # Log progress after each batch
                 elapsed = time.time() - start_time
-                terms_processed = min(i + batch_size, len(level1_terms))
+                terms_processed = min(i + batch_size, len(level2_terms))
                 terms_per_second = terms_processed / max(1, elapsed)
-                eta_seconds = (len(level1_terms) - terms_processed) / max(0.1, terms_per_second)
+                eta_seconds = (len(level2_terms) - terms_processed) / max(0.1, terms_per_second)
                 
-                logger.info(f"Processed {terms_processed}/{len(level1_terms)} terms "
-                            f"({terms_processed/len(level1_terms)*100:.1f}%) in {elapsed:.1f}s "
+                logger.info(f"Processed {terms_processed}/{len(level2_terms)} terms "
+                            f"({terms_processed/len(level2_terms)*100:.1f}%) in {elapsed:.1f}s "
                             f"({terms_per_second:.2f} terms/s, ETA: {eta_seconds/60:.1f}m)")
                 
                 # Add a small delay between batches to avoid overloading
                 await asyncio.sleep(2)  # Increased delay to reduce pressure on resources
         
-        # Collect all research areas and prepare for saving
-        newly_found_research_areas = []
+        # Collect all conference topics and prepare for saving
+        newly_found_topics = []
         newly_verified_terms_count = 0
         newly_processed_stats = {
             "total_urls_processed": 0,
             "total_lists_found": 0,
-            "verified_research_areas_count": 0
+            "verified_topics_count": 0
         }
-        new_level1_term_result_counts = {}
-        new_level1_to_research_areas = {}
-        new_research_area_sources = {}
+        new_level2_term_result_counts = {}
+        new_level2_to_conference_topics = {}
+        new_topic_sources = {}
         
         for result in all_results:
             if result.get("error"):
-                logger.error(f"Skipping aggregation for term '{result['level1_term']}' due to processing error: {result['error']}")
+                logger.error(f"Skipping aggregation for term '{result['level2_term']}' due to processing error: {result['error']}")
                 continue
                 
-            level1_term = result["level1_term"]
-            research_areas = result["research_areas"]
+            level2_term = result["level2_term"]
+            conference_topics = result["conference_topics"]
             verified = result.get("verified", False)
             num_urls = result.get("num_urls", 0)
             num_lists = result.get("num_lists", 0)
             
             newly_processed_stats["total_urls_processed"] += num_urls
-            newly_processed_stats["total_lists_found"] += num_lists # Total raw lists found
+            newly_processed_stats["total_lists_found"] += num_lists
             
             if verified:
                 newly_verified_terms_count += 1
-                newly_processed_stats["verified_research_areas_count"] += len(research_areas)
+                newly_processed_stats["verified_topics_count"] += len(conference_topics)
                 
-                if level1_term not in new_level1_to_research_areas:
-                    new_level1_to_research_areas[level1_term] = []
-                new_level1_to_research_areas[level1_term].extend(research_areas)
-                newly_found_research_areas.extend(research_areas)
+                if level2_term not in new_level2_to_conference_topics:
+                    new_level2_to_conference_topics[level2_term] = []
+                new_level2_to_conference_topics[level2_term].extend(conference_topics)
+                newly_found_topics.extend(conference_topics)
                 
-                new_level1_term_result_counts[level1_term] = len(research_areas)
+                new_level2_term_result_counts[level2_term] = len(conference_topics)
                 
-                for area in research_areas:
-                    if area not in new_research_area_sources:
-                        new_research_area_sources[area] = []
-                    new_research_area_sources[area].append(level1_term)
+                for topic in conference_topics:
+                    if topic not in new_topic_sources:
+                        new_topic_sources[topic] = []
+                    new_topic_sources[topic].append(level2_term)
         
         logger.info(f"Consolidated results from {len(all_results)} newly processed terms.")
         logger.info(f"Found {newly_verified_terms_count} newly verified terms.")
         
         # --- File Saving Logic ---
         
-        existing_unique_areas = set()
+        existing_unique_topics = set()
         if append_mode and os.path.exists(Config.OUTPUT_FILE):
-            logger.info(f"Loading existing research areas from {Config.OUTPUT_FILE} for append mode.")
+            logger.info(f"Loading existing conference topics from {Config.OUTPUT_FILE} for append mode.")
             try:
                 with open(Config.OUTPUT_FILE, "r", encoding="utf-8") as f:
                     for line in f:
-                        existing_unique_areas.add(line.strip())
-                logger.info(f"Loaded {len(existing_unique_areas)} existing unique areas.")
+                        existing_unique_topics.add(line.strip())
+                logger.info(f"Loaded {len(existing_unique_topics)} existing unique topics.")
             except Exception as e:
                 logger.warning(f"Could not read existing output file {Config.OUTPUT_FILE}: {e}. Starting fresh.", exc_info=True)
-                existing_unique_areas = set() # Start fresh if read fails
+                existing_unique_topics = set() # Start fresh if read fails
         
-        # Add newly found unique areas
-        final_unique_areas_set = set(existing_unique_areas)
+        # Add newly found unique topics
+        final_unique_topics_set = set(existing_unique_topics)
         newly_added_count = 0
-        for area in newly_found_research_areas:
-            if area not in final_unique_areas_set:
-                final_unique_areas_set.add(area)
+        for topic in newly_found_topics:
+            if topic not in final_unique_topics_set:
+                final_unique_topics_set.add(topic)
                 newly_added_count += 1
         
-        logger.info(f"Added {newly_added_count} new unique research areas.")
+        logger.info(f"Added {newly_added_count} new unique conference topics.")
         
-        # Save global output file (unique areas)
-        final_unique_areas_list = sorted(list(final_unique_areas_set))
-        random.shuffle(final_unique_areas_list) # Keep randomization if desired
+        # Save global output file (unique topics)
+        final_unique_topics_list = sorted(list(final_unique_topics_set))
+        random.shuffle(final_unique_topics_list) # Keep randomization if desired
         
         try:
             with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
-                for area in final_unique_areas_list:
-                    f.write(f"{area}\n")
-            logger.info(f"Saved {len(final_unique_areas_list)} total unique research areas to {Config.OUTPUT_FILE}")
+                for topic in final_unique_topics_list:
+                    f.write(f"{topic}\n")
+            logger.info(f"Saved {len(final_unique_topics_list)} total unique conference topics to {Config.OUTPUT_FILE}")
         except Exception as e:
             logger.error(f"Failed to write output file {Config.OUTPUT_FILE}: {e}", exc_info=True)
 
@@ -679,42 +767,42 @@ async def main_async():
         
         # Update metadata fields
         metadata["execution_time"] = f"{time.time() - start_time:.2f} seconds (current run)" # Indicate this is for the current run
-        metadata["total_unique_research_areas"] = len(final_unique_areas_list) # Update with final count
+        metadata["total_unique_conference_topics"] = len(final_unique_topics_list) # Update with final count
         
         # Update counts and mappings, merging carefully
-        metadata["total_level1_terms_processed"] = metadata.get("total_level1_terms_processed", 0) + len(level1_terms) # Increment total processed
-        metadata["verified_level1_terms_count"] = metadata.get("verified_level1_terms_count", 0) + newly_verified_terms_count # Increment verified
+        metadata["total_level2_terms_processed"] = metadata.get("total_level2_terms_processed", 0) + len(level2_terms) # Increment total processed
+        metadata["verified_level2_terms_count"] = metadata.get("verified_level2_terms_count", 0) + newly_verified_terms_count # Increment verified
         
         # Merge result counts
-        existing_result_counts = metadata.get("level1_term_result_counts", {})
-        existing_result_counts.update(new_level1_term_result_counts) # Add/overwrite counts for newly processed terms
-        metadata["level1_term_result_counts"] = existing_result_counts
+        existing_result_counts = metadata.get("level2_term_result_counts", {})
+        existing_result_counts.update(new_level2_term_result_counts) # Add/overwrite counts for newly processed terms
+        metadata["level2_term_result_counts"] = existing_result_counts
         
-        # Merge research area mappings
-        existing_mapping = metadata.get("level1_to_research_areas_mapping", {})
-        for term, areas in new_level1_to_research_areas.items():
+        # Merge conference topic mappings
+        existing_mapping = metadata.get("level2_to_conference_topics_mapping", {})
+        for term, topics in new_level2_to_conference_topics.items():
             if term not in existing_mapping:
                 existing_mapping[term] = []
-            # Add only unique new areas for this term
-            existing_areas_set = set(existing_mapping[term])
-            for area in areas:
-                 if area not in existing_areas_set:
-                      existing_mapping[term].append(area)
-                      existing_areas_set.add(area)
-        metadata["level1_to_research_areas_mapping"] = existing_mapping
+            # Add only unique new topics for this term
+            existing_topics_set = set(existing_mapping[term])
+            for topic in topics:
+                 if topic not in existing_topics_set:
+                      existing_mapping[term].append(topic)
+                      existing_topics_set.add(topic)
+        metadata["level2_to_conference_topics_mapping"] = existing_mapping
         
-        # Merge research area sources
-        existing_sources = metadata.get("research_area_level1_sources", {})
-        for area, sources in new_research_area_sources.items():
-             if area not in existing_sources:
-                 existing_sources[area] = []
-             # Add unique new source terms for this area
-             existing_source_set = set(existing_sources[area])
+        # Merge conference topic sources
+        existing_sources = metadata.get("conference_topic_level2_sources", {})
+        for topic, sources in new_topic_sources.items():
+             if topic not in existing_sources:
+                 existing_sources[topic] = []
+             # Add unique new source terms for this topic
+             existing_source_set = set(existing_sources[topic])
              for source in sources:
                   if source not in existing_source_set:
-                       existing_sources[area].append(source)
+                       existing_sources[topic].append(source)
                        existing_source_set.add(source)
-        metadata["research_area_level1_sources"] = existing_sources
+        metadata["conference_topic_level2_sources"] = existing_sources
 
         # Update provider, concurrent, batch size if they changed (or set initially)
         metadata["provider"] = provider or metadata.get("provider", "gemini")
@@ -727,14 +815,14 @@ async def main_async():
         metadata["total_raw_lists_extracted"] = metadata.get("total_raw_lists_extracted", 0) + newly_processed_stats["total_lists_found"]
         
         # Recalculate averages based on updated totals
-        total_terms_ever_processed = metadata["total_level1_terms_processed"]
-        total_verified_ever = metadata["verified_level1_terms_count"]
-        total_verified_areas_ever = sum(len(areas) for areas in metadata["level1_to_research_areas_mapping"].values()) # More accurate way to count total verified areas
+        total_terms_ever_processed = metadata["total_level2_terms_processed"]
+        total_verified_ever = metadata["verified_level2_terms_count"]
+        total_verified_topics_ever = sum(len(topics) for topics in metadata["level2_to_conference_topics_mapping"].values()) # More accurate way to count total verified topics
 
         metadata["processing_stats"] = {
              "avg_urls_per_term": metadata["total_urls_processed"] / max(1, total_terms_ever_processed),
              "avg_raw_lists_per_term": metadata["total_raw_lists_extracted"] / max(1, total_terms_ever_processed),
-             "avg_final_areas_per_verified_term": total_verified_areas_ever / max(1, total_verified_ever)
+             "avg_final_topics_per_verified_term": total_verified_topics_ever / max(1, total_verified_ever)
          }
 
         try:
@@ -750,7 +838,7 @@ async def main_async():
         logger.error(f"An error occurred: {str(e)}", exc_info=True)
         raise
     
-    logger.info("Research areas extraction completed")
+    logger.info("Conference/journal topics extraction completed")
 
 def main():
     """Main execution function"""

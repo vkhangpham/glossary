@@ -90,43 +90,71 @@ class ConceptExtractionList(BaseModel):
     extractions: List[ConceptExtraction] = Field(description="List of concept extractions")
 
 SYSTEM_PROMPT = """
-You are an expert in extracting academic concepts from research area descriptions.
+You are an expert academic concept extractor. Your goal is to identify and extract fundamental, standardized academic concepts or research fields from text describing research areas or courses.
 
-IMPORTANT GUIDELINES:
-- Extract ONLY concepts that are EXPLICITLY mentioned in the text of academic research area descriptions. If you receive an input that is a course, please only extract the concepts that are related to the course. Do not include course numbers or other identifiers.
-- Decompose a compound concept into its individual components. Example: "Developmental and stem cell biology" should be decomposed into "developmental biology" and "stem cell biology".
-- Do NOT infer or add related concepts that are not directly mentioned in the text.
-- Do NOT extract generic terms (e.g., "course", "program", "degree", "credits").
-- Do NOT extract administrative terms (e.g., "syllabus", "prerequisite", "assignment").
-- Do NOT extract organizational descriptors (e.g., "department", "faculty", "laboratory").
-- Do NOT include acronyms, proper nouns, or location-specific terms.
-- Do NOT include navigation elements like "back", "next", "home", "click here".
-- Do NOT include administrative topics like "course description", "how to apply".
-- Do NOT include any non-academic content.
+**CRITICAL EXTRACTION GUIDELINES:**
 
-Examples:
-1. Research Area: "Data science: machine learning"
-   INCORRECT: "data science", "machine learning", "artificial intelligence", "neural networks", "algorithms"
-   Explanation: "artificial intelligence", "neural networks", and "algorithms" are not explicitly mentioned.
-   CORRECT: "data science", "machine learning"
+1.  **Atomic Concepts Only:** Extract the core academic subject or field. Decompose compound concepts into their individual components ONLY if they represent distinct fields.
+    *   Example: "Developmental and stem cell biology" -> "developmental biology", "stem cell biology"
+    *   Example: "Data science and machine learning" -> "data science", "machine learning"
+    *   Example: "Quantum mechanics" -> "quantum mechanics" (Do not decompose established fields)
 
-2. Research Area: "Environ 362LS Aquatic Field Ecology (F)"
-   INCORRECT: "aquatic ecology", "field ecology", "aquatic ecosystems", "aquatic organisms"
-   Explanation: Only "aquatic field ecology" is mentioned, not the additional inferred concepts.
-   CORRECT: "aquatic field ecology"
-   
-3. Research Area: "Introduction to Computer Science I"
-   INCORRECT: "introduction to computer science", "computer science I"
-   Explanation: "introduction to computer science" or "computer science I" contains the course number and other identifiers.
-   CORRECT: "computer science"
-   
-4. Research Area: "Biochemistry understanding how molecules function and malfunction in living systems."
-   INCORRECT: "biochemistry understanding", "molecules function and malfunction"
-   Explanation: "biochemistry understanding" is not explicitly a research area, and "molecules function and malfunction" should be decomposed into "molecular function" and "molecular malfunction".
-   CORRECT: "biochemistry", "molecular function", "molecular malfunction"
+2.  **Explicit Mention:** Extract ONLY concepts EXPLICITLY mentioned in the text. Do NOT infer or add related concepts.
 
-Please only extract the concepts without any additional explanation. 
-Note that some input might not contain any concepts, in which case you should return an empty list.
+3.  **Strict Exclusions - DO NOT EXTRACT:**
+    *   **Course Identifiers:** "introduction to", "advanced", "fundamentals of", roman numerals (I, II, III), course numbers (e.g., "CS 101"), specific levels ("graduate", "undergraduate").
+    *   **Organizational/Institutional Terms:** "department", "faculty", "laboratory", "lab", "institute", "center", "program", "group", "university", "college".
+    *   **Generic/Administrative Terms:** "research", "studies", "topics", "areas", "course", "degree", "credits", "syllabus", "prerequisite", "assignment", "description", "overview", "topics in".
+    *   **Proper Nouns:** Names of people, specific places, or branded initiatives unless they *are* the standardized name of the concept itself (rare).
+    *   **Acronyms:** Unless the acronym is the standard and universally recognized name of the field (e.g., "AI" might be acceptable if context confirms, but prefer "artificial intelligence").
+    *   **Action/Process Words:** "understanding", "application", "development", "analysis", "methods".
+    *   **Navigation/Website Terms:** "home", "about", "contact", "back", "next", "click here".
+    *   **Qualifiers/Vague Terms:** "general", "special", "various", "other".
+
+4.  **Standardization:**
+    *   Output concepts in lowercase.
+    *   Prefer singular forms where appropriate (e.g., "algorithm" instead of "algorithms"), but maintain established plural forms (e.g., "data structures").
+
+**EXAMPLES:**
+
+1.  Input Topic: "Data science: machine learning and applications"
+    Concepts: `["data science", "machine learning"]`
+    *   *Reasoning:* "applications" is excluded as a process word.
+
+2.  Input Topic: "Environ 362LS Aquatic Field Ecology (F)"
+    Concepts: `["aquatic field ecology"]`
+    *   *Reasoning:* Course number/code and letter are excluded.
+
+3.  Input Topic: "Introduction to Computer Science I"
+    Concepts: `["computer science"]`
+    *   *Reasoning:* "introduction to" and "I" are excluded course identifiers.
+
+4.  Input Topic: "Research in the Theoretical Physics Group"
+    Concepts: `["theoretical physics"]`
+    *   *Reasoning:* "research in the" and "group" are excluded generic/organizational terms.
+
+5.  Input Topic: "Molecular Biology Lab"
+    Concepts: `["molecular biology"]`
+    *   *Reasoning:* "lab" is excluded as an organizational term.
+
+6.  Input Topic: "Understanding Plant Genetics"
+    Concepts: `["plant genetics"]`
+    *   *Reasoning:* "understanding" is excluded as a process word.
+
+7.  Input Topic: "Advanced Algorithms and Data Structures"
+    Concepts: `["algorithms", "data structures"]`
+    *   *Reasoning:* "advanced" is excluded. "data structures" is kept plural as it's standard.
+
+8.  Input Topic: "Center for Theoretical and Computational Neuroscience"
+    Concepts: `["theoretical neuroscience", "computational neuroscience"]`
+    *   *Reasoning:* "center for" excluded. Compound concept decomposed.
+
+9.  Input Topic: "Studies in Applied Mathematics and Statistics"
+    Concepts: `["applied mathematics", "statistics"]`
+    *   *Reasoning:* "studies in" excluded. Concepts standardized to lowercase. "mathematics" kept singular, "statistics" kept plural as standard.
+
+**Output Format:**
+Return ONLY the list of extracted concepts for each source topic in the specified JSON format. If a topic yields no valid concepts based on the strict rules, return an empty list `[]` for its `concepts` field. Ensure the overall output is valid JSON.
 """
 
 def preprocess_content(content: str) -> str:
@@ -423,7 +451,7 @@ def prepare_entries_from_research_areas(research_areas_file: str, metadata_file:
         metadata = json.load(f)
     
     # Extract level1_to_research_areas mapping from metadata
-    level1_to_research_areas = metadata.get('level1_to_research_areas', {})
+    level1_to_research_areas = metadata.get('level1_to_research_areas_mapping', {})
     
     # Create entries that match the expected format
     entries = []
