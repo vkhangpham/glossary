@@ -10,32 +10,73 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 
 DATA_DIR = 'data'
+FINAL_DIR = os.path.join(DATA_DIR, 'final')
 
 
-def load_metadata(level: int) -> Dict[str, Dict[str, List[str]]]:
-    """Load metadata from the specified level."""
-    metadata_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_metadata.json')
+def load_metadata(level: int, verbose: bool = False) -> Dict[str, Dict[str, List[str]]]:
+    """Load metadata from the specified level.
+    
+    Prioritizes data from the final directory (data/final) created by the metadata collector.
+    Falls back to the original location only if final directory data doesn't exist.
+    """
+    # First try to load from the final directory
+    final_metadata_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_metadata.json')
+    
+    # Fall back to original location if final doesn't exist
+    original_metadata_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_metadata.json')
+    
+    # Choose the appropriate file to load
+    using_final = os.path.exists(final_metadata_file)
+    metadata_file = final_metadata_file if using_final else original_metadata_file
     
     if not os.path.exists(metadata_file):
         print(f"Metadata file not found: {metadata_file}")
         return {}
     
     with open(metadata_file, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        data = json.load(f)
+        
+    if verbose:
+        source = "final" if using_final else "original"
+        print(f"Loaded metadata for level {level} from {source} directory: {metadata_file}")
+        
+    return data
 
 
-def load_resources(level: int) -> Dict[str, List[Dict[str, Any]]]:
-    """Load resources from the specified level."""
-    # First try filtered resources, then fall back to full resources
+def load_resources(level: int, verbose: bool = False) -> Dict[str, List[Dict[str, Any]]]:
+    """Load resources from the specified level.
+    
+    Prioritizes data from the final directory (data/final) created by the metadata collector.
+    Falls back to other locations only if final directory data doesn't exist.
+    """
+    # First try final directory resources
+    final_resources_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_filtered_resources.json')
+    
+    # Then try filtered resources in original location
     filtered_resources_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_filtered_resources.json')
+    
+    # Then fall back to full resources in original location
     resources_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_resources.json')
     
-    if os.path.exists(filtered_resources_file):
+    # Try each location in order
+    if os.path.exists(final_resources_file):
+        with open(final_resources_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            if verbose:
+                print(f"Loaded resources for level {level} from final directory: {final_resources_file}")
+            return data
+    elif os.path.exists(filtered_resources_file):
         with open(filtered_resources_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
+            if verbose:
+                print(f"Loaded resources for level {level} from filtered resources: {filtered_resources_file}")
+            return data
     elif os.path.exists(resources_file):
         with open(resources_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
+            if verbose:
+                print(f"Loaded resources for level {level} from original resources: {resources_file}")
+            return data
     
     return {}
 
@@ -45,25 +86,37 @@ def build_hierarchy(output_file: str = None,
                     transfer_resources: bool = True,
                     verbose: bool = False) -> Dict[str, Any]:
     """Build a hierarchical data structure from metadata across all levels."""
+    # Check if final directory exists
+    final_dir_exists = os.path.exists(FINAL_DIR) and any(os.path.exists(os.path.join(FINAL_DIR, f'lv{level}')) for level in range(4))
+    
+    if not final_dir_exists:
+        print("\nWARNING: The data/final directory was not found or is empty.")
+        print("         This usually means that the metadata collector has not been run with promotion enabled.")
+        print("         The hierarchy will be built using the original data files, which may not have")
+        print("         the proper term promotion for consistent parent-child relationships.\n")
+        print("         Consider running: python -m generate_glossary.metadata_collector 3 -v\n")
+    else:
+        print(f"Building hierarchy using data from data/final directory")
+    
     # Load metadata from all levels
     metadata = {}
     resources = {}
     
-    for level in range(3):  # Levels 0, 1, 2
-        level_metadata = load_metadata(level)
+    for level in range(4):  # Levels 0, 1, 2, 3
+        level_metadata = load_metadata(level, verbose)
         if verbose:
             print(f"Loaded {len(level_metadata)} terms from level {level}")
         metadata[level] = level_metadata
         
         if transfer_resources:
-            level_resources = load_resources(level)
+            level_resources = load_resources(level, verbose)
             if verbose:
                 print(f"Loaded resources for {len(level_resources)} terms from level {level}")
             resources[level] = level_resources
     
     # Build the hierarchy
     hierarchy = {
-        "levels": {0: [], 1: [], 2: []},
+        "levels": {0: [], 1: [], 2: [], 3: []},  # Added level 3
         "relationships": {
             "parent_child": [],  # (parent, child, level) tuples
             "variations": []     # (term, variation) tuples
@@ -213,9 +266,9 @@ def visualize_sample(hierarchy: Dict[str, Any], output_file: str = None,
     
     # Sample some terms from each level
     sampled_terms = set()
-    for level in range(3):
+    for level in range(4):  # Sample from all 4 levels
         level_terms = hierarchy["levels"][level]
-        sample_size = min(max_nodes // 3, len(level_terms))
+        sample_size = min(max_nodes // 4, len(level_terms))  # Adjusted for 4 levels
         
         # Take sample_size random terms
         import random
@@ -254,8 +307,8 @@ def visualize_sample(hierarchy: Dict[str, Any], output_file: str = None,
     plt.figure(figsize=(15, 10))
     
     # Draw nodes by level with different colors
-    colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
-    for level in range(3):
+    colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']  # Added color for level 3
+    for level in range(4):  # Draw all 4 levels
         level_nodes = [node for node in G.nodes() if G.nodes[node].get("level", -1) == level]
         nx.draw_networkx_nodes(G, pos, nodelist=level_nodes, node_color=colors[level], 
                               node_size=100, alpha=0.8, label=f"Level {level}")
