@@ -372,9 +372,17 @@ def initialize_trafilatura_executor(max_workers: int = None):
     """Initialize the global process executor for trafilatura."""
     global trafilatura_executor
     if trafilatura_executor is None:
-        # Use a reasonable number of workers based on CPU count, but not too many
-        workers = max_workers or min(4, max(1, cpu_count() // 2))
-        trafilatura_executor = concurrent.futures.ProcessPoolExecutor(max_workers=workers)
+        try:
+            # Use a conservative number of workers - fewer is safer
+            workers = max_workers or min(4, max(1, cpu_count() // 4))
+            logger.info(f"Initializing trafilatura executor with {workers} workers")
+            trafilatura_executor = concurrent.futures.ProcessPoolExecutor(max_workers=workers)
+        except Exception as e:
+            # Fallback to even fewer workers if we encounter errors
+            fallback_workers = 1
+            logger.warning(f"Error initializing process pool with {max_workers} workers: {e}")
+            logger.warning(f"Falling back to {fallback_workers} worker")
+            trafilatura_executor = concurrent.futures.ProcessPoolExecutor(max_workers=fallback_workers)
     return trafilatura_executor
 
 async def extract_web_content(
@@ -389,7 +397,12 @@ async def extract_web_content(
     
     # Initialize the executor if not already done
     if trafilatura_executor is None:
-        trafilatura_executor = initialize_trafilatura_executor(max_workers)
+        try:
+            trafilatura_executor = initialize_trafilatura_executor(max_workers)
+        except Exception as e:
+            logger.error(f"Failed to initialize trafilatura executor: {e}")
+            # If we can't initialize the executor, fall back to in-process extraction
+            trafilatura_executor = None
     
     async with semaphore:  # Control concurrent requests
         try:
@@ -411,16 +424,24 @@ async def extract_web_content(
                 # Process with trafilatura in a shared process pool to avoid overhead
                 # of creating a new pool for each URL
                 try:
-                    loop = asyncio.get_event_loop()
-                    content = await loop.run_in_executor(
-                        trafilatura_executor, 
-                        process_content_with_trafilatura, 
-                        html_content
-                    )
-                except Exception as e:
-                    logger.warning(f"Error using process pool for trafilatura: {e}")
-                    # Fallback to in-process extraction if pool fails
-                    content = process_content_with_trafilatura(html_content)
+                    if trafilatura_executor is not None:
+                        loop = asyncio.get_event_loop()
+                        content = await loop.run_in_executor(
+                            trafilatura_executor, 
+                            process_content_with_trafilatura, 
+                            html_content
+                        )
+                    else:
+                        # Fall back to in-process extraction if executor is None
+                        content = process_content_with_trafilatura(html_content)
+                except (RuntimeError, OSError) as e:
+                    if "Thread" in str(e) and "unavailable" in str(e):
+                        # This is likely a thread creation error
+                        logger.warning(f"Thread creation error: {e}. Falling back to in-process extraction.")
+                        # Clear the executor so it will be recreated with fewer workers
+                        trafilatura_executor = None
+                        # Fall back to in-process extraction
+                        content = process_content_with_trafilatura(html_content)
 
                 # If trafilatura fails, try web_scraper as fallback
                 if not content:
@@ -845,11 +866,12 @@ async def search_web_content(
     results_by_concept = {concept: [] for concept in concepts}
     seen_urls_by_concept = {concept: set() for concept in concepts}
     
-    # Create semaphore for rate limiting - increase concurrent requests
-    semaphore = Semaphore(settings.max_concurrent_requests)
+    # Create semaphore for rate limiting - use a more conservative limit
+    semaphore = Semaphore(min(settings.max_concurrent_requests, 10))  # Cap at 10 for safety
     
-    # Initialize process pool for trafilatura
-    initialize_trafilatura_executor(settings.max_workers)
+    # Initialize process pool for trafilatura with conservative worker count
+    max_workers = min(settings.max_workers, 4)  # Cap at 4 for safety
+    initialize_trafilatura_executor(max_workers)
     
     # Initialize LLM for content processing
     llm = LLMFactory.create_llm(
@@ -864,16 +886,19 @@ async def search_web_content(
             batch_llm_processor(llm, settings.system_prompt, settings.use_cache)
         )
     
-    # Configure connection pool with higher limits
-    conn = aiohttp.TCPConnector(limit=settings.max_concurrent_requests * 2, ttl_dns_cache=300)
+    # Configure connection pool with more conservative limits
+    conn = aiohttp.TCPConnector(
+        limit=min(settings.max_concurrent_requests, 10),  # Cap at 10
+        ttl_dns_cache=300
+    )
     
     try:
         async with aiohttp.ClientSession(connector=conn) as session:
             # Use RapidAPI search if enabled
             if settings.use_rapidapi:
                 try:
-                    # Use smaller batch size (up to 50) since each term produces 2 queries
-                    batch_size = min(50, settings.batch_size)
+                    # Use smaller batch size for safety
+                    batch_size = min(30, settings.batch_size)  # Cap at 30 per batch
                     
                     # Process terms in batches
                     for i in range(0, len(concepts), batch_size):
@@ -938,12 +963,12 @@ async def search_web_content(
                                     session,
                                     semaphore,
                                     settings.show_progress,
-                                    settings.max_workers
+                                    max_workers  # Use the capped max_workers value
                                 )
                                 content_extraction_tasks.append((concept, result, task))
                             
                             # Process content extraction in parallel, but limit batch size to avoid memory issues
-                            MAX_EXTRACTION_BATCH = 20
+                            MAX_EXTRACTION_BATCH = 10  # Reduced from 20 to 10
                             
                             for j in range(0, len(content_extraction_tasks), MAX_EXTRACTION_BATCH):
                                 batch_tasks = content_extraction_tasks[j:j + MAX_EXTRACTION_BATCH]
@@ -975,24 +1000,38 @@ async def search_web_content(
                                         logger.error(f"Error extracting content for URL {result['url']}: {str(e)}")
                                         # Continue with other tasks
                                 
-                                # Now process the LLM tasks in parallel
-                                for concept, task in content_processing_tasks:
-                                    try:
-                                        web_content = await task
-                                        if web_content:
-                                            results_by_concept[concept].append(web_content)
-                                    except Exception as e:
-                                        logger.error(f"Error processing content: {str(e)}")
+                                # Now process the LLM tasks in parallel - limit concurrency further
+                                MAX_CONCURRENT_PROCESSING = 5  # Limit concurrent LLM processing
+                                for i in range(0, len(content_processing_tasks), MAX_CONCURRENT_PROCESSING):
+                                    current_batch = content_processing_tasks[i:i + MAX_CONCURRENT_PROCESSING]
+                                    
+                                    # Process this smaller batch concurrently
+                                    batch_results = await asyncio.gather(
+                                        *[task for _, task in current_batch],
+                                        return_exceptions=True
+                                    )
+                                    
+                                    # Add the results to the output dictionary
+                                    for (concept, _), result in zip(current_batch, batch_results):
+                                        if isinstance(result, Exception):
+                                            logger.error(f"Error processing content: {str(result)}")
+                                        elif result:
+                                            results_by_concept[concept].append(result)
+                                    
+                                    # Add a small delay between processing batches
+                                    await asyncio.sleep(0.5)
                                 
                                 # Free memory after each batch
                                 del batch_tasks
                                 del content_processing_tasks
                             
-                            # Add delay between batches, but shorter
-                            await asyncio.sleep(RATE_LIMIT_DELAY * 0.5)
+                            # Add longer delay between batches to avoid resource exhaustion
+                            await asyncio.sleep(RATE_LIMIT_DELAY * 2)
                             
                         except Exception as e:
                             logger.error(f"Error processing batch {i//batch_size + 1}: {str(e)}")
+                            # Add a longer delay after an error
+                            await asyncio.sleep(5)
                             # Continue with next batch
             
                 except Exception as e:

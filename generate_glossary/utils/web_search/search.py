@@ -7,8 +7,8 @@ import logging
 from typing import List, Dict, Any, Optional, Union
 
 # Constants
-MAX_SEARCH_RESULTS = 40
-MAX_RETRIES = 4
+MAX_SEARCH_RESULTS = 10
+MAX_RETRIES = 2
 RATE_LIMIT_DELAY = 1  # seconds
 
 class WebSearchConfig:

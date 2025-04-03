@@ -15,7 +15,7 @@ import logging
 import certifi
 
 # Constants
-MAX_CONCURRENT_REQUESTS = 5
+MAX_CONCURRENT_REQUESTS = 16
 MAX_RETRIES = 4
 RATE_LIMIT_DELAY = 1  # seconds
 ENCODING_FALLBACKS = ['utf-8', 'latin-1', 'windows-1252', 'iso-8859-1', 'cp1252']
@@ -534,8 +534,6 @@ async def fetch_webpage(url: str,
                             for enc in [encoding] + ENCODING_FALLBACKS:
                                 try:
                                     html_content = raw_bytes.decode(enc)
-                                    if logger:
-                                        logger.info(f"Successfully retrieved content from {url} with permissive SSL verification")
                                     # Save to cache
                                     save_to_cache(url, html_content, config, term)
                                     return html_content
@@ -554,8 +552,6 @@ async def fetch_webpage(url: str,
                 logger.debug(f"Using CloudScraper for known strict domain: {domain}")
             cloudscraper_content = await fetch_with_cloudscraper(url)
             if cloudscraper_content:
-                if logger:
-                    logger.info(f"CloudScraper successfully retrieved content from strict domain {url}")
                 # Save to cache
                 save_to_cache(url, cloudscraper_content, config, term)
                 return cloudscraper_content
@@ -584,17 +580,15 @@ async def fetch_webpage(url: str,
                 async with session.get(url, headers=headers, timeout=timeout, allow_redirects=True) as response:
                     # Check for non-200 responses
                     if response.status != 200:
+                        # Log intermediate HTTP errors as DEBUG, final as DEBUG too
+                        log_level = logging.DEBUG # Always DEBUG for these errors now
                         if response.status == 403:
                             if logger:
-                                logger.warning(f"HTTP error 403 (Forbidden) for URL: {url} (attempt {attempt+1}/{MAX_RETRIES+1})")
+                                logger.log(log_level, f"HTTP error 403 (Forbidden) for URL: {url} (attempt {attempt+1}/{MAX_RETRIES+1})")
                             # If this is the last attempt, try CloudScraper as a fallback
                             if attempt == MAX_RETRIES and CLOUDSCRAPER_AVAILABLE:
-                                if logger:
-                                    logger.info(f"Trying CloudScraper for URL: {url}")
                                 cloudscraper_content = await fetch_with_cloudscraper(url)
                                 if cloudscraper_content:
-                                    if logger:
-                                        logger.info(f"CloudScraper successfully retrieved content from {url}")
                                     # Save to cache
                                     save_to_cache(url, cloudscraper_content, config, term)
                                     return cloudscraper_content
@@ -604,8 +598,13 @@ async def fetch_webpage(url: str,
                                 continue
                         else:
                             if logger:
-                                logger.warning(f"HTTP error {response.status} for URL: {url}")
-                        return None
+                                logger.log(log_level, f"HTTP error {response.status} for URL: {url} (attempt {attempt+1}/{MAX_RETRIES+1})")
+                        
+                        # If it failed on the last attempt or was not a 403, return None after logging
+                        if attempt == MAX_RETRIES:
+                             return None
+                        else:
+                             continue # Try next attempt for non-403 errors too if retries remain
                     
                     # Detect encoding and get raw bytes
                     raw_bytes, encoding = await detect_and_decode(response)
@@ -644,14 +643,13 @@ async def fetch_webpage(url: str,
                     return html_content
                     
             except ssl.SSLError as e:
-                # This will catch all SSL related errors
+                # Log intermediate and final SSL errors as DEBUG
+                log_level = logging.DEBUG # Always DEBUG
                 if logger:
-                    logger.warning(f"SSL error for {url}: {str(e)} (attempt {attempt+1}/{MAX_RETRIES+1})")
+                    logger.log(log_level, f"SSL error for {url}: {str(e)} (attempt {attempt+1}/{MAX_RETRIES+1})")
                 
                 # If this is the last attempt, try with SSL verification disabled
                 if attempt == MAX_RETRIES:
-                    if logger:
-                        logger.info(f"Trying with SSL verification disabled for {url}")
                     try:
                         # Create a new connector with SSL verification disabled
                         ssl_context = create_custom_ssl_context(verify=False)
@@ -670,8 +668,6 @@ async def fetch_webpage(url: str,
                                 for enc in [encoding] + ENCODING_FALLBACKS:
                                     try:
                                         html_content = raw_bytes.decode(enc)
-                                        if logger:
-                                            logger.info(f"Successfully retrieved content from {url} with SSL verification disabled")
                                         # Save to cache
                                         save_to_cache(url, html_content, config, term)
                                         return html_content
@@ -690,44 +686,38 @@ async def fetch_webpage(url: str,
                     continue
                 return None
             except asyncio.TimeoutError:
+                # Log intermediate and final Timeout errors as DEBUG
+                log_level = logging.DEBUG # Always DEBUG
                 if logger:
-                    logger.warning(f"Timeout error while fetching {url} (attempt {attempt+1}/{MAX_RETRIES+1})")
+                    logger.log(log_level, f"Timeout error while fetching {url} (attempt {attempt+1}/{MAX_RETRIES+1})")
                 if attempt < MAX_RETRIES:
                     continue
                 return None
             except aiohttp.ClientConnectorError as e:
-                # Handle connection errors, which might be SSL related
+                # Log intermediate and final connection errors as DEBUG
+                log_level = logging.DEBUG # Always DEBUG
                 if logger:
-                    logger.warning(f"Connection error for {url}: {str(e)} (attempt {attempt+1}/{MAX_RETRIES+1})")
+                    logger.log(log_level, f"Connection error for {url}: {str(e)} (attempt {attempt+1}/{MAX_RETRIES+1})")
                 
-                # If we still have retries left, continue to the next attempt
                 if attempt < MAX_RETRIES:
                     continue
                 return None
             except aiohttp.ClientError as e:
+                # Log intermediate and final network errors as DEBUG
+                log_level = logging.DEBUG # Always DEBUG
                 if logger:
-                    logger.warning(f"Network error for {url}: {str(e)} (attempt {attempt+1}/{MAX_RETRIES+1})")
+                    logger.log(log_level, f"Network error for {url}: {str(e)} (attempt {attempt+1}/{MAX_RETRIES+1})")
                 if attempt < MAX_RETRIES:
                     continue
                 return None
             except Exception as e:
+                # Log unexpected errors as ERROR
                 if logger:
-                    logger.error(f"Error fetching content from {url}: {str(e)}")
+                    logger.error(f"Unexpected error fetching content from {url}: {str(e)}", exc_info=True)
                 return None
         
         # If we reach here, all attempts failed
-        # Try CloudScraper as a last resort if available
-        if CLOUDSCRAPER_AVAILABLE:
-            if logger:
-                logger.info(f"Trying CloudScraper as last resort for URL: {url}")
-            cloudscraper_content = await fetch_with_cloudscraper(url)
-            if cloudscraper_content:
-                if logger:
-                    logger.info(f"CloudScraper successfully retrieved content from {url}")
-                # Save to cache
-                save_to_cache(url, cloudscraper_content, config, term)
-                return cloudscraper_content
-                
+        # Log final overall failure as DEBUG now as well
         if logger:
-            logger.warning(f"All {MAX_RETRIES+1} attempts failed for URL: {url}")
+             logger.debug(f"All {MAX_RETRIES+1} attempts failed for URL: {url}") # Changed from WARNING to DEBUG
         return None 

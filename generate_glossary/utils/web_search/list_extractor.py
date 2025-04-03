@@ -49,7 +49,13 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
         return []
         
     extracted_lists = []
-    soup = BeautifulSoup(html_content, 'html.parser')
+    try:
+        # Initialize BeautifulSoup parser
+        soup = BeautifulSoup(html_content, 'html.parser')
+    except Exception as e:
+        # Catch potential parsing errors (like AssertionError or others from BS4)
+        logging.error(f"HTML parsing failed: {e}. Skipping list extraction for this content.", exc_info=False) # Log concisely
+        return [] # Return empty list if parsing fails
     
     # 1. Extract standard HTML lists (ul, ol)
     html_lists = soup.find_all(['ul', 'ol'])

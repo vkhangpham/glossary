@@ -2,9 +2,32 @@ import asyncio
 import json
 import re
 import time
-from typing import List, Dict, Any, Optional, Union, Callable, Tuple
+import ast # Added for safe literal evaluation
+from typing import List, Dict, Any, Optional, Union, Callable, Tuple, Set
 from collections import Counter
 import logging
+
+# NLP and Graph Libraries
+import networkx as nx
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer # Import lemmatizer
+
+# Ensure stopwords are downloaded (run once)
+try:
+    stopwords.words('english')
+except LookupError:
+    import nltk
+    nltk.download('stopwords', quiet=True)
+    nltk.download('punkt', quiet=True)
+
+try:
+    # Check/download WordNet data needed for lemmatizer
+    wnl = WordNetLemmatizer()
+    wnl.lemmatize('tests') # Try lemmatizing to trigger download check
+except LookupError:
+    import nltk
+    nltk.download('wordnet', quiet=True)
 
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
 
@@ -16,7 +39,14 @@ USE_LLM_VALIDATION = True  # Whether to use LLM validation for lists
 BINARY_LLM_DECISION = True  # Whether to use binary LLM decisions instead of scoring
 LLM_VALIDATION_BATCH_SIZE = 5  # Number of lists to validate with LLM at once
 RATE_LIMIT_DELAY = 1  # seconds between LLM calls
+MAX_LISTS_FOR_LLM = 20 # Maximum number of lists to send for LLM validation/extraction
+MIN_LISTS_FOR_LLM = 10 # Minimum number of lists to aim for sending to LLM, if available
+JACCARD_THRESHOLD = 0.15 # Lowered threshold for connecting lists
+FALLBACK_TOP_N = 5 # Number of lists to send in fallback
+FALLBACK_MIN_SCORE = 0.4 # Minimum score for a list to be considered in fallback
 
+STOPWORDS = set(stopwords.words('english'))
+LEMMATIZER = WordNetLemmatizer() # Initialize lemmatizer once
 
 class FilterConfig:
     """Configuration for list filtering"""
@@ -60,209 +90,290 @@ def init_llm(provider: Optional[str] = None) -> BaseLLM:
         
     return LLMFactory.create_llm(
         provider=provider,
-        model=GEMINI_MODELS["default"] if provider == Provider.GEMINI else OPENAI_MODELS["mini"],
+        model=GEMINI_MODELS["default"] if provider == Provider.GEMINI else OPENAI_MODELS["default"],
         temperature=0.3
     )
 
 
+def deep_clean_list(items: List[str]) -> Set[str]:
+    """Perform deeper cleaning: lowercasing, tokenizing, lemmatizing, removing stopwords."""
+    cleaned_tokens = set()
+    for item in items:
+        try:
+            # Lowercase and tokenize
+            tokens = word_tokenize(item.lower())
+            # Lemmatize, remove stopwords and non-alphanumeric tokens
+            filtered_tokens = {
+                LEMMATIZER.lemmatize(token) # Apply lemmatization
+                for token in tokens 
+                if token.isalnum() and token not in STOPWORDS # Removed length filter
+            }
+            cleaned_tokens.update(filtered_tokens)
+        except Exception as e:
+            logging.debug(f"Tokenization/cleaning error for item '{item}': {e}")
+            continue
+    # Remove empty strings that might result from lemmatization issues
+    cleaned_tokens.discard('') 
+    return cleaned_tokens
+
+
 async def filter_lists(
-    extracted_lists: List[Dict[str, Any]], 
+    extracted_lists: List[Dict[str, Any]],
     context_term: str,
     config: FilterConfig,
     logger: Optional[logging.Logger] = None
-) -> List[List[str]]:
+) -> Tuple[List[List[str]], List[Dict[str, Any]], List[List[str]]]:
     """
-    Filter extracted lists based on quality score and optionally LLM validation
-    
+    Filter lists using community detection based on shared cleaned content.
+
     Args:
         extracted_lists: List of dictionaries with items and metadata
         context_term: The related term for context
         config: Filtering configuration
         logger: Optional logger
-        
+
     Returns:
-        List of filtered lists
+        Tuple containing:
+        - final_lists: List of filtered lists (or verified sub-lists if using list extraction)
+        - llm_candidates_actual: The subset of lists sent to the LLM.
+        - llm_results_processed: The processed results from the LLM for the candidates.
     """
     if not extracted_lists:
-        return []
-    
-    # Stage 1: Apply pre-filtering to reduce lists that need LLM validation
-    pre_filtered_lists = []
+        # Return empty structures matching the new return type
+        return [], [], []
+        
+    if logger:
+        logger.info(f"Starting filtering for {context_term}. Received {len(extracted_lists)} raw lists.")
+
+    # Stage 1: Clean, Score, and Pre-filter
+    scored_cleaned_lists_raw = [] # Store potentially duplicated lists first
     
     for list_data in extracted_lists:
-        items = list_data["items"]
+        original_items = list_data["items"] # Keep original for reference if needed
         metadata = list_data.get("metadata", {})
         
-        # Skip if no items
-        if not items:
+        # Skip if no items initially
+        if not original_items:
             continue
             
-        # Score the list using the provided scoring function or fallback
-        quality_score = 0.0
-        if config.scoring_fn:
-            quality_score = config.scoring_fn(items, metadata, context_term)
-        else:
-            # Fallback scoring just based on metadata
-            keyword_ratio = metadata.get("keyword_ratio", 0)
-            pattern_ratio = metadata.get("pattern_ratio", 0)
-            non_term_ratio = metadata.get("non_term_ratio", 1)
-            nav_score = metadata.get("structure_analysis", {}).get("nav_score", 1)
-            quality_score = (keyword_ratio * 0.4 + pattern_ratio * 0.3 + (1 - non_term_ratio) * 0.2 + (1 - nav_score) * 0.1)
-        
-        # Clean items using the provided clean function
+        # Clean items first using the provided clean function
+        cleaned_items = []
         if config.clean_item_fn:
-            cleaned_items = [config.clean_item_fn(item) for item in items]
-            # Filter out empty items
+            cleaned_items = [config.clean_item_fn(item) for item in original_items]
+            # Filter out empty items after cleaning
             cleaned_items = [item for item in cleaned_items if item]
         else:
-            # Basic cleaning
-            cleaned_items = []
-            for item in items:
-                # Remove trailing numbers, parenthetical info
+            # Basic cleaning (apply if no specific function provided)
+            for item in original_items:
                 item = re.sub(r'\s*\(\d+\).*$', '', item)
                 item = re.sub(r'\s*\d+\s*$', '', item)
-                # Remove URLs
                 item = re.sub(r'http\S+', '', item)
-                # Clean whitespace
                 item = ' '.join(item.split())
-                
                 if item:
                     cleaned_items.append(item)
         
         # Skip if too few items remain after cleaning
         if len(cleaned_items) < 3:
+            if logger:
+                 logger.debug(f"Skipping list due to < 3 items after cleaning: {original_items}")
             continue
+            
+        # Now, score the *cleaned* list using the provided scoring function or fallback
+        quality_score = 0.0
+        if config.scoring_fn:
+            # Pass cleaned items to the scoring function
+            quality_score = config.scoring_fn(cleaned_items, metadata, context_term)
+        else:
+            # Fallback scoring
+            keyword_ratio = metadata.get("keyword_ratio", 0)
+            pattern_ratio = metadata.get("pattern_ratio", 0)
+            non_term_ratio = metadata.get("non_term_ratio", 1)
+            nav_score = metadata.get("structure_analysis", {}).get("nav_score", 1)
+            quality_score = (keyword_ratio * 0.4 + pattern_ratio * 0.3 + (1 - non_term_ratio) * 0.2 + (1 - nav_score) * 0.1)
+            if logger:
+                 # Change level to DEBUG as it's not a critical error
+                 logger.debug("Using fallback scoring logic. Provide config.scoring_fn for better results.")
         
-        # Store list with quality score and cleaned items
-        pre_filtered_lists.append({
-            "items": cleaned_items,
-            "original_items": items,
+        # Store list with quality score and cleaned items temporarily
+        scored_cleaned_lists_raw.append({
+            "items": cleaned_items, 
+            "original_items": original_items, 
             "metadata": metadata,
             "quality_score": quality_score
         })
+
+    # Deduplicate based on cleaned items content (order-insensitive)
+    unique_lists_content = set()
+    scored_cleaned_lists = [] # This will hold the unique lists
+    for list_entry in scored_cleaned_lists_raw:
+        # Create a unique representation (sorted tuple of items)
+        list_tuple = tuple(sorted(list_entry["items"]))
+        if list_tuple not in unique_lists_content:
+            unique_lists_content.add(list_tuple)
+            scored_cleaned_lists.append(list_entry) # Add the first occurrence
+
+    if logger:
+        logger.debug(f"Scored and cleaned {len(scored_cleaned_lists_raw)} lists.")
+        logger.info(f"Reduced to {len(scored_cleaned_lists)} unique lists after deduplication.")
+    
+    if not scored_cleaned_lists:
+        return [], [], []
+
+    # --- Community Detection Stage --- 
+
+    # 1. Deep Cleaning for community analysis
+    deep_cleaned_map = {} # index -> set of deeply cleaned tokens
+    for i, list_entry in enumerate(scored_cleaned_lists):
+        # Use the already cleaned items for deeper cleaning
+        deep_cleaned_map[i] = deep_clean_list(list_entry["items"])
+
+    # 2. Community Finding (Graph based on Jaccard Similarity of deep-cleaned tokens)
+    G = nx.Graph()
+    list_indices = list(range(len(scored_cleaned_lists)))
+    G.add_nodes_from(list_indices)
+
+    edges_added = 0
+    for i in range(len(list_indices)):
+        for j in range(i + 1, len(list_indices)):
+            idx1 = list_indices[i]
+            idx2 = list_indices[j]
+            set1 = deep_cleaned_map[idx1]
+            set2 = deep_cleaned_map[idx2]
+            
+            # Calculate Jaccard Similarity if sets are non-empty
+            if set1 and set2:
+                intersection_size = len(set1.intersection(set2))
+                union_size = len(set1.union(set2))
+                if union_size > 0:
+                    jaccard_sim = intersection_size / union_size
+                    # Add edge if similarity exceeds threshold
+                    if jaccard_sim >= JACCARD_THRESHOLD:
+                        G.add_edge(idx1, idx2)
+                        edges_added += 1
+                
+    if logger:
+        # Use the edges_added count for logging
+        logger.debug(f"Built graph with {G.number_of_nodes()} nodes and {edges_added} edges based on Jaccard similarity >= {JACCARD_THRESHOLD}.")
+
+    # Find communities (connected components)
+    raw_components = list(nx.connected_components(G))
+    # Filter for components of size > 1
+    connected_components = [list(c) for c in raw_components if len(c) > 1]
+    num_raw_components = len(raw_components)
+    num_communities = len(connected_components)
+    num_lists_in_communities = sum(len(c) for c in connected_components)
     
     if logger:
-        logger.debug(f"Pre-filtered to {len(pre_filtered_lists)} lists (from {len(extracted_lists)} original lists)")
-    
-    # Check if we're using an enhanced mode where all lists should be validated by LLM
-    force_llm_validation = config.use_llm_validation and config.binary_llm_decision
-    
-    # Stage 2: Apply filtering based on configuration
-    if force_llm_validation:
-        # When forcing LLM validation for all lists, we'll use pre-filtering 
-        # only to eliminate very low quality lists
-        candidate_lists = [l for l in pre_filtered_lists if l["quality_score"] >= config.pre_filter_threshold]
-        
-        if logger:
-            logger.debug(f"Sending {len(candidate_lists)} lists for LLM validation (forced validation mode)")
-        
-        # Get decisions from LLM for all candidate lists
-        validated_lists = []
-        
-        # Process in batches to avoid overloading the LLM API
-        for i in range(0, len(candidate_lists), config.llm_validation_batch_size):
-            batch = candidate_lists[i:i+config.llm_validation_batch_size]
-            
-            llm_decisions = await validate_lists_with_llm_binary(
-                [l["items"] for l in batch],
-                context_term,
-                config,
-                logger
-            )
-            
-            # Add only lists that are positively verified by LLM
-            for j, decision in enumerate(llm_decisions):
-                if j < len(batch):
-                    is_validated = decision.get("is_valid_list", False)
-                    if is_validated:
-                        validated_lists.append(batch[j])
-            
-            # Add a small delay between batches
-            if i + config.llm_validation_batch_size < len(candidate_lists):
-                await asyncio.sleep(RATE_LIMIT_DELAY)
-        
-        if logger:
-            logger.debug(f"LLM validated {len(validated_lists)} lists out of {len(candidate_lists)} candidates")
-        
-        return [l["items"] for l in validated_lists]
+        logger.debug(f"Found {num_raw_components} raw connected components.")
+        logger.info(f"Found {num_communities} communities (size > 1) involving {num_lists_in_communities} lists.")
+
+    llm_candidates_actual = []
+    if not connected_components:
+        logger.warning("No list communities (size > 1) found. Falling back to top-N scoring on all unique lists.")
+        # --- Refined Fallback Logic --- 
+        # Sort all unique lists by their heuristic score
+        scored_cleaned_lists.sort(key=lambda x: x.get('quality_score', 0.0), reverse=True)
+        # Filter by minimum score threshold
+        fallback_candidates_potential = [
+            l for l in scored_cleaned_lists if l.get('quality_score', 0.0) >= FALLBACK_MIN_SCORE
+        ]
+        # Select the top N lists from the filtered candidates (or fewer)
+        num_to_send = min(len(fallback_candidates_potential), FALLBACK_TOP_N)
+        llm_candidates_actual = fallback_candidates_potential[:num_to_send]
+        logger.info(f"[Fallback] Selected top {len(llm_candidates_actual)} lists (score >= {FALLBACK_MIN_SCORE}) to send to LLM.")
+        # --- End Refined Fallback Logic --- 
     else:
-        # Use the original three-stage filtering approach
-        # Sort by quality score (highest first)
-        pre_filtered_lists.sort(key=lambda x: x["quality_score"], reverse=True)
-        
-        high_quality_lists = [l for l in pre_filtered_lists if l["quality_score"] >= config.quality_threshold]
-        medium_quality_lists = [l for l in pre_filtered_lists if config.pre_filter_threshold <= l["quality_score"] < config.quality_threshold]
-        
-        if logger:
-            logger.debug(f"Found {len(high_quality_lists)} high-quality lists (score >= {config.quality_threshold})")
-            logger.debug(f"Found {len(medium_quality_lists)} medium-quality lists for potential LLM validation")
-        
-        # If we have no lists to potentially validate, just return high quality lists
-        if not medium_quality_lists:
-            return [l["items"] for l in high_quality_lists]
-        
-        # If LLM validation is disabled, use a higher threshold for the medium quality lists
-        if not config.use_llm_validation:
-            additional_lists = [l for l in medium_quality_lists if l["quality_score"] >= config.pre_filter_threshold + 0.1]
-            if logger:
-                logger.debug(f"Adding {len(additional_lists)} medium-quality lists without LLM validation")
-            return [l["items"] for l in high_quality_lists + additional_lists]
-        
-        # Stage 3: LLM validation for medium quality lists
-        # To reduce API costs, limit the number of lists for LLM validation
-        max_llm_validations = min(len(medium_quality_lists), config.llm_validation_batch_size)
-        llm_candidate_lists = medium_quality_lists[:max_llm_validations]
+        # --- Community Selection Logic --- 
+        # 3. Community Scoring
+        community_scores = []
+        for component_indices in connected_components:
+            component_lists = [scored_cleaned_lists[idx] for idx in component_indices]
+            if not component_lists: continue
+            avg_score = sum(l['quality_score'] for l in component_lists) / len(component_lists)
+            community_scores.append({
+                'score': avg_score, 
+                'lists': component_lists, 
+                'indices': component_indices # Keep track of original indices for logging
+            })
+
+        # 4. Community Selection
+        community_scores.sort(key=lambda x: x['score'], reverse=True)
         
         if logger:
-            logger.debug(f"Validating {len(llm_candidate_lists)} medium-quality lists with LLM")
+            # Log details of top few communities for debugging
+            top_communities_log = []
+            for i, comm in enumerate(community_scores[:5]): # Log top 5
+                top_communities_log.append(f"  #{i+1}: Score={comm['score']:.3f}, Size={len(comm['lists'])}, Indices={comm['indices']}")
+            logger.debug("Top 5 communities (by avg score):\n" + "\n".join(top_communities_log))
+
+        selected_lists_set = set() # Track selected list items to avoid duplicates
         
-        # Get decisions from LLM
-        validated_lists = []
-        
-        if config.binary_llm_decision:
-            llm_decisions = await validate_lists_with_llm_binary(
-                [l["items"] for l in llm_candidate_lists],
-                context_term,
-                config,
-                logger
-            )
-            
-            # Add validated lists that meet the decision threshold
-            for i, decision in enumerate(llm_decisions):
-                if i < len(llm_candidate_lists):
-                    is_validated = decision.get("is_valid_list", False)
-                    if is_validated:
-                        validated_lists.append(llm_candidate_lists[i])
-            
-            if logger:
-                logger.debug(f"LLM validated {len(validated_lists)} additional lists")
-        else:
-            # Use scoring approach
-            llm_results = await validate_lists_with_llm(
-                [l["items"] for l in llm_candidate_lists],
-                context_term,
-                config,
-                logger
-            )
-            
-            # Update scores based on LLM validation
-            for i, result in enumerate(llm_results):
-                if i < len(llm_candidate_lists):
-                    llm_candidate_lists[i]["quality_score"] = result.get("quality_score", llm_candidate_lists[i]["quality_score"])
-                    if llm_candidate_lists[i]["quality_score"] >= config.quality_threshold:
-                        validated_lists.append(llm_candidate_lists[i])
-        
-        # Combine high quality lists with validated medium quality lists
-        final_lists = high_quality_lists + validated_lists
-        
-        # Sort by quality score (highest first)
-        final_lists.sort(key=lambda x: x["quality_score"], reverse=True)
+        # First pass: Ensure minimum
+        for community in community_scores:
+            if len(llm_candidates_actual) >= MIN_LISTS_FOR_LLM:
+                break
+            for list_entry in community['lists']:
+                 # Check if list content already selected to prevent adding same list from lower ranked community
+                 list_tuple = tuple(sorted(list_entry["items"]))
+                 if list_tuple not in selected_lists_set:
+                      if len(llm_candidates_actual) < MAX_LISTS_FOR_LLM: # Still respect overall max
+                           llm_candidates_actual.append(list_entry)
+                           selected_lists_set.add(list_tuple)
+                      else:
+                           break # Stop adding if max reached
+            if len(llm_candidates_actual) >= MAX_LISTS_FOR_LLM: break
+
+        # Second pass: Add more up to max from remaining top communities
+        if len(llm_candidates_actual) < MAX_LISTS_FOR_LLM:
+            for community in community_scores:
+                if len(llm_candidates_actual) >= MAX_LISTS_FOR_LLM:
+                    break
+                for list_entry in community['lists']:
+                    list_tuple = tuple(sorted(list_entry["items"]))
+                    if list_tuple not in selected_lists_set:
+                        if len(llm_candidates_actual) < MAX_LISTS_FOR_LLM:
+                            llm_candidates_actual.append(list_entry)
+                            selected_lists_set.add(list_tuple)
+                        else:
+                            break # Stop adding if max reached
+                if len(llm_candidates_actual) >= MAX_LISTS_FOR_LLM: break
+
+        # Ensure final list count respects MAX (should be handled by checks within loops)
+        llm_candidates_actual = llm_candidates_actual[:MAX_LISTS_FOR_LLM]
         
         if logger:
-            logger.debug(f"Final filtered to {len(final_lists)} high-quality lists")
-        
-        # Return the items from final lists
-        return [l["items"] for l in final_lists]
+             logger.info(f"Selected {len(llm_candidates_actual)} lists from top communities for LLM (target {MIN_LISTS_FOR_LLM}-{MAX_LISTS_FOR_LLM}).")
+        # --- End Community Selection Logic --- 
+
+    # Stage 3: LLM Processing (Common for both community and fallback selection)
+    final_lists = []
+    llm_results_processed = []
+    
+    if not llm_candidates_actual:
+        logger.info("No candidates selected for LLM processing after filtering/community selection.")
+        return [], [], []
+
+    # Perform LLM validation/extraction on the selected subset
+    if config.binary_llm_decision: 
+        llm_decisions = await validate_lists_with_llm_binary(
+            [l["items"] for l in llm_candidates_actual], context_term, config, logger
+        )
+        llm_results_processed = llm_decisions
+        for i, decision in enumerate(llm_decisions):
+            if i < len(llm_candidates_actual) and decision.get("is_valid_list", False):
+                final_lists.append(llm_candidates_actual[i]["items"])
+        logger.info(f"LLM binary validation resulted in {len(final_lists)} verified lists.")
+    else:
+        llm_extracted_sublists = await validate_and_extract_lists_with_llm(
+             [l["items"] for l in llm_candidates_actual], context_term, config, logger
+        )
+        llm_results_processed = llm_extracted_sublists
+        for sublist in llm_extracted_sublists:
+             if sublist: 
+                 final_lists.append(sublist)
+        logger.info(f"LLM list extraction returned {len(final_lists)} non-empty verified sub-lists.")
+
+    return final_lists, llm_candidates_actual, llm_results_processed
 
 
 async def validate_lists_with_llm_binary(
@@ -544,6 +655,119 @@ Here are the lists to validate:
         await asyncio.sleep(RATE_LIMIT_DELAY)
     
     return validation_results
+
+
+async def validate_and_extract_lists_with_llm(
+    lists: List[List[str]],
+    context_term: str,
+    config: FilterConfig,
+    logger: Optional[logging.Logger] = None
+) -> List[List[str]]:
+    """
+    Validate lists using LLM and extract verified sub-lists based on the prompt.
+
+    Args:
+        lists: List of lists to validate.
+        context_term: The related term for context.
+        config: Filtering configuration (expects binary_system_prompt to be set for list extraction).
+        logger: Optional logger.
+
+    Returns:
+        List containing the verified sub-lists extracted by the LLM for each input list.
+        If an input list results in no verified items, an empty list is returned for that position.
+    """
+    if not lists or not config.use_llm_validation or config.binary_llm_decision:
+        # This function should only be called when list extraction is intended
+        if logger:
+            logger.warning("validate_and_extract_lists_with_llm called inappropriately. Check FilterConfig.")
+        return [[] for _ in lists] # Return empty lists if called incorrectly
+
+    llm = init_llm(config.provider)
+    all_extracted_sublists = []
+
+    # Ensure the prompt for list extraction is available
+    list_extraction_prompt = config.binary_system_prompt # Reusing binary_system_prompt
+    if not list_extraction_prompt:
+        if logger:
+            logger.error("LLM list extraction requires a system prompt (binary_system_prompt in FilterConfig).")
+        return [[] for _ in lists]
+
+    # Process in batches
+    for batch_start in range(0, len(lists), config.llm_validation_batch_size):
+        batch = lists[batch_start:batch_start + config.llm_validation_batch_size]
+        batch_results = [[] for _ in batch] # Initialize results for this batch
+
+        # Construct prompt for LLM - expecting a list output for each input list
+        prompt = f"Analyze the following lists. For each list, return a Python-style list containing ONLY the items that are directly relevant research areas or courses for The Department of {context_term}. Return an empty list `[]` if no items are relevant.\n\n"
+
+        list_inputs_formatted = []
+        for i, item_list in enumerate(batch):
+            # Limit item count sent to LLM if necessary, but maybe more context is better?
+            sample_items = item_list # Send all items for better context
+            list_str = f"Input List {i}:\n{json.dumps(sample_items, indent=2)}"
+            list_inputs_formatted.append(list_str)
+
+        prompt += "\n\n".join(list_inputs_formatted)
+        prompt += f"\n\nRespond ONLY with the verified lists, one per line, in Python list format. Example:\nOutput for List 0: ['Verified Item 1', 'Verified Item 2']\nOutput for List 1: []\n..."
+
+        try:
+            response = llm.infer(prompt=prompt, system_prompt=list_extraction_prompt)
+            response_text = response.text.strip()
+
+            if logger:
+                 logger.debug(f"LLM response for list extraction (Batch starting {batch_start}):\n{response_text}")
+
+            # Attempt to parse the response - expecting one line per list
+            lines = response_text.splitlines()
+            parsed_count = 0
+            for i, line in enumerate(lines):
+                if i >= len(batch): continue # Shouldn't happen if LLM follows instructions
+
+                line = line.strip()
+                # Try to find the list structure (e.g., "Output for List 0: [...]")
+                match = re.match(r".*Output for List \d+:\s*(.*)", line, re.IGNORECASE)
+                list_str = match.group(1).strip() if match else line
+
+                try:
+                    # Use ast.literal_eval for safer evaluation than eval()
+                    extracted_list = ast.literal_eval(list_str)
+                    if isinstance(extracted_list, list):
+                         # Basic validation: ensure items are strings
+                         validated_list = [str(item).strip() for item in extracted_list if isinstance(item, (str, int, float)) and str(item).strip()]
+                         batch_results[i] = validated_list
+                         parsed_count += 1
+                         if logger:
+                              logger.debug(f"  Successfully parsed list for batch index {i}: {validated_list}")
+                    else:
+                         if logger:
+                              logger.warning(f"  Could not parse line {i+1} as list (wrong type: {type(extracted_list)}): {line}")
+                except (ValueError, SyntaxError, TypeError) as e:
+                    if logger:
+                         logger.warning(f"  Could not parse line {i+1} as list (Error: {e}): {line}")
+
+            if parsed_count != len(batch) and logger:
+                 logger.warning(f"LLM list extraction: Parsed {parsed_count} lists, but expected {len(batch)} for this batch.")
+            
+            all_extracted_sublists.extend(batch_results)
+
+        except Exception as e:
+            if logger:
+                logger.error(f"Error calling LLM for list extraction (Batch starting {batch_start}): {str(e)}", exc_info=True)
+            # Add empty lists for the failed batch
+            all_extracted_sublists.extend([[] for _ in batch])
+
+        # Add delay between batches
+        if batch_start + config.llm_validation_batch_size < len(lists):
+             await asyncio.sleep(RATE_LIMIT_DELAY)
+
+    # Ensure the number of results matches the number of input lists
+    if len(all_extracted_sublists) != len(lists):
+         if logger:
+              logger.error(f"LLM list extraction mismatch: Expected {len(lists)} results, got {len(all_extracted_sublists)}. Padding with empty lists.")
+         # Pad with empty lists if necessary
+         all_extracted_sublists.extend([[] for _ in range(len(lists) - len(all_extracted_sublists))])
+
+    return all_extracted_sublists
 
 
 def consolidate_lists(all_lists: List[List[str]], 
