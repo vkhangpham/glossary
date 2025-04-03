@@ -179,3 +179,9 @@ archive/
 .cursor*generate_glossary/generation/aol/
 generate_glossary/generation/aol/
 raw_search_results/
+
+
+# large files
+*.zip
+lv2_resources.json
+lv3_resources.json
