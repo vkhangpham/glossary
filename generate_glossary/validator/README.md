@@ -1,118 +1,129 @@
-# Web Content Validation with Relevance Scoring
+# Concept Validator
 
-This module provides functionality for validating technical concepts using web content, with a focus on assessing the relevance of web content to the concept being validated.
+This module provides tools for validating technical concepts using different validation modes.
 
-## Overview
+## Features
 
-The validator module supports multiple validation modes:
+- Multiple validation modes:
+  - **Rule-based** validation (basic term structure)
+  - **Web-based** validation (content verification)
+  - **LLM-based** validation (concept verification)
+- Automatically skip terms rejected in previous levels
+- Track which level rejected each term
+- Parallel processing with progress bar
+- Customizable score thresholds
 
-1. **Rule-based validation**: Basic validation based on term structure and format
-2. **Wikipedia-based validation**: Validation using Wikipedia data
-3. **LLM-based validation**: Validation using LLM analysis
-4. **Web-based validation**: Validation using web content with relevance scoring
+## Usage
 
-## Web Content Relevance Scoring
-
-The web-based validation now includes a relevance scoring mechanism that assesses how relevant a web content is to the concept being validated. This is important because a web content might be high quality (high score) but not directly relevant to the concept.
-
-### How Relevance Scoring Works
-
-The relevance score is calculated using multiple strategies:
-
-1. **Title Relevance (50% weight)**:
-   - Exact match of term in title
-   - Fuzzy matching for term variations
-   - Word overlap between term and title
-
-2. **Snippet Relevance (30% weight)**:
-   - Exact match of term in snippet
-   - Fuzzy matching for term variations
-   - Word overlap between term and snippet
-
-3. **Content Relevance (20% weight)**:
-   - Term frequency in processed content
-   - Normalized by content length
-
-The final relevance score is a weighted combination of these components, resulting in a score between 0 and 1.
-
-### Usage
-
-When using web-based validation, you can now specify a minimum relevance score:
-
-```python
-from generate_glossary.validator import validate
-
-results = validate(
-    terms=["arts", "computer science"],
-    mode="web",
-    web_content=web_content_data,
-    min_score=0.7,  # Minimum content quality score
-    min_relevance_score=0.3  # Minimum relevance score
-)
-```
-
-From the command line:
+### Basic Usage
 
 ```bash
-python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json --min-score 0.7 --min-relevance-score 0.3 -o output
+# Validate terms using rule-based validation
+python -m generate_glossary.validator.cli terms.txt -m rule -o results/rule_valid
+
+# Validate terms using web-based validation
+python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -o results/web_valid
+
+# Validate terms using LLM-based validation
+python -m generate_glossary.validator.cli terms.txt -m llm -p gemini -o results/llm_valid
 ```
 
-### Testing Relevance Scores
+### Using Level-Based Validation
 
-You can use the `test_relevance.py` script to test relevance scoring for a specific term:
+When validating terms across multiple levels, you can use the `-l` or `--level` flag to automatically skip terms that were rejected in previous levels:
 
 ```bash
-python -m generate_glossary.validator.test_relevance "arts" web_content.json
+0# Level 1 validation
+python -m generate_glossary.validator.cli terms.txt -m rule -l 1 -o data/lv1/lv1_rule_valid
+
+# Level 2 validation (will skip terms rejected in level 0 and 1)
+python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -l 2 -o data/lv2/lv2_web_valid
+
+# Level 3 validation (will skip terms rejected in levels 0, 1 and 2)
+python -m generate_glossary.validator.cli terms.txt -m llm -p gemini -l 3 -o data/lv3/lv3_llm_valid
 ```
 
-This will display the relevance scores for each web content associated with the term "arts".
+The validator will automatically look for previous validation results in the `data/lvX/lvX*_valid.json` files for levels below the specified level.
 
-To run a full validation with relevance scoring:
+### Additional Options
 
-```bash
-python -m generate_glossary.validator.test_relevance "arts" web_content.json --validate
+```
+usage: cli.py [-h] [-m {rule,web,llm}] [-l LEVEL] [-w WEB_CONTENT] [-s MIN_SCORE]
+              [-r MIN_RELEVANCE_SCORE] [-p PROVIDER] [-o OUTPUT] [-n]
+              [--save-web-content SAVE_WEB_CONTENT] [--update-web-content]
+              terms
+
+positional arguments:
+  terms                 Term to validate or path to file containing terms (one per line)
+
+options:
+  -h, --help            show this help message and exit
+  -m {rule,web,llm}, --mode {rule,web,llm}
+                        Validation mode to use (default: rule)
+  -l LEVEL, --level LEVEL
+                        Current validation level (if specified, terms rejected in levels 1 to level-1 will be automatically skipped)
+  -w WEB_CONTENT, --web-content WEB_CONTENT
+                        Path to web content JSON file (required for web mode)
+  -s MIN_SCORE, --min-score MIN_SCORE
+                        Minimum score for web content validation (default: 0.7)
+  -r MIN_RELEVANCE_SCORE, --min-relevance-score MIN_RELEVANCE_SCORE
+                        Minimum relevance score for web content to be considered relevant to the term (default: 0.77)
+  -p PROVIDER, --provider PROVIDER
+                        LLM provider for validation (default: gemini)
+  -o OUTPUT, --output OUTPUT
+                        Base path for output files (will create .txt and .json files)
+  -n, --no-progress     Disable progress bar
+  --save-web-content SAVE_WEB_CONTENT
+                        Path to save updated web content with relevance scores (JSON file)
+  --update-web-content  Update the input web content file in-place with relevance scores (only for web mode)
 ```
 
-## Validation Result Format
+## Output Format
 
-The validation result now includes relevance information:
+The validator outputs two files:
+
+- `*.json`: Full validation results including details
+- `*.txt`: List of valid terms only
+
+### JSON Format Example
 
 ```json
 {
-  "term": "arts",
-  "is_valid": true,
-  "mode": "web",
-  "details": {
-    "num_sources": 5,
-    "verified_sources": [
-      {
-        "url": "https://en.wikipedia.org/wiki/The_arts",
-        "title": "The arts",
-        "score": 3.98,
-        "relevance_score": 0.95
-      },
-      ...
-    ],
-    "unverified_sources": [...],
-    "relevant_sources": [
-      {
-        "url": "https://en.wikipedia.org/wiki/The_arts",
-        "title": "The arts",
-        "score": 3.98,
-        "relevance_score": 0.95
-      },
-      ...
-    ],
-    "has_relevant_sources": true,
-    "highest_relevance_score": 0.95
+  "machine learning": {
+    "term": "machine learning",
+    "is_valid": true,
+    "mode": "web",
+    "details": {
+      "num_sources": 5,
+      "verified_sources": [
+        {
+          "url": "https://example.com/ml",
+          "title": "Machine Learning Basics",
+          "score": 0.92,
+          "relevance_score": 0.89
+        }
+      ],
+      "unverified_sources": [],
+      "relevant_sources": [
+        {
+          "url": "https://example.com/ml",
+          "title": "Machine Learning Basics",
+          "score": 0.92,
+          "relevance_score": 0.89
+        }
+      ],
+      "has_relevant_sources": true,
+      "highest_relevance_score": 0.89
+    }
+  },
+  "invalid term": {
+    "term": "invalid term",
+    "is_valid": false,
+    "mode": "web",
+    "details": {
+      "reason": "Rejected in level 1",
+      "level_rejected": 1
+    }
   }
 }
 ```
-
-## Configuration
-
-The default thresholds are:
-- `DEFAULT_MIN_SCORE = 0.7`: Minimum score for content quality
-- `DEFAULT_MIN_RELEVANCE_SCORE = 0.3`: Minimum score for content relevance
-
-These can be adjusted based on your specific needs. 
