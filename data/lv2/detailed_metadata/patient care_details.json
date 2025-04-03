@@ -1,0 +1,875 @@
+{
+  "level1_term": "patient care",
+  "all_urls": [
+    "https://www.bumc.bu.edu/medicine/research/research-topics/",
+    "https://fcm.ucsf.edu/research-areas",
+    "https://www.mayo.edu/research/departments-divisions/department-emergency-medicine/division-emergency-medicine-research/research/focus-areas",
+    "https://health.ucdavis.edu/cnr/Research/Research-Priorities.html",
+    "https://www.cedars-sinai.edu/health-sciences-university/research/topics.html",
+    "https://nursing.jhu.edu/faculty-research/research/projects/",
+    "https://ifh.rutgers.edu/research/",
+    "https://www.nursing.columbia.edu/research/research-areas-focus",
+    "https://chicago.medicine.uic.edu/emergency-medicine/em-research/",
+    "https://em.uw.edu/research",
+    "https://medicine.buffalo.edu/departments/family-medicine/education/residency/research/potential-research-areas.html",
+    "https://med.nyu.edu/departments-institutes/medicine/research/research-areas",
+    "https://library.fgcu.edu/healthadmin/research",
+    "https://hopkinsinfectiousdiseases.jhmi.edu/research/research-areas/",
+    "https://nursing.unc.edu/research/current-research",
+    "https://med.umn.edu/clhss/activities/patient-family-centered-research",
+    "https://hspp.sph.brown.edu/research",
+    "https://health.ucdavis.edu/family-medicine/research/",
+    "https://www.sph.umn.edu/research/projects/",
+    "https://school.wakehealth.edu/research",
+    "https://www.kumc.edu/school-of-nursing/research.html",
+    "https://mhri.rice.edu/research-areas",
+    "https://publichealth.ouhsc.edu/research",
+    "https://sph.uth.edu/research/centers/chsr/",
+    "https://www.augusta.edu/online/blog/public-health-topics-for-research",
+    "https://www.geisinger.edu/gchs/research",
+    "https://med.miami.edu/departments/medicine/divisions/general-internal-medicine/research",
+    "https://www.publichealth.pitt.edu/academics/forms-handbook/academic-handbook/graduation-information/graduate-research-topics",
+    "https://nursing.ucf.edu/research-faculty/research-areas/",
+    "https://www.jefferson.edu/academics/colleges-schools-institutes/skmc/research/research-medical-education/jefferson-scale-of-empathy/empathy-research-projects.html"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Addiction Medicine",
+        "Amyloid",
+        "Biomedical Genetics",
+        "Cancer Center",
+        "Cardiovascular Medicine",
+        "Computational Biomedicine",
+        "Endocrinology, Diabetes, and Nutrition",
+        "Gastroenterology",
+        "General Internal Medicine",
+        "Geriatrics",
+        "Hematology and Medical Oncology",
+        "Infectious Disease",
+        "Nephrology",
+        "Nutrition and Metabolism",
+        "Pulmonary, Allergy, Sleep, and Critical Care Medicine",
+        "Preventive Medicine and Epidemiology",
+        "Rheumatology",
+        "Sickle Cell",
+        "Vascular Biology",
+        "Whitaker Cardiovascular Center",
+        "Women\u2019s Health"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.047619047619047616
+      }
+    },
+    {
+      "items": [
+        "Community-Based Research and Interventions",
+        "Cross-Cultural Care and the Clinician-Patient Relationship",
+        "Global Public Health",
+        "Health Policy and Reducing Social Disparities in Health",
+        "Integrative and Psychosocial Medicine",
+        "Medical Education",
+        "Primary Care and Chronic Care Innovations",
+        "Reproductive and Children's Health"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Community-Based Research and Interventions",
+        "Cross-Cultural Care and the Clinician-Patient Relationship",
+        "Global Public Health",
+        "Health Policy and Reducing Social Disparities in Health",
+        "Integrative and Psychosocial Medicine",
+        "Medical Education",
+        "Primary Care and Chronic Care Innovations",
+        "Reproductive and Children's Health",
+        "Research"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Acute management of bone fractures and compartment syndrome",
+        "Allergic reactions and anaphylaxis",
+        "Bedbugs",
+        "Health policy",
+        "Management and diagnosis of acute respiratory illness",
+        "Management of corneal abrasion with a bandage contact lens",
+        "Management of COVID-19",
+        "Medical-legal issues",
+        "Optimization of opioid use for acute pain management",
+        "Recognition and management of geriatric clinical syndromes in the acute setting",
+        "Sexually transmitted infections",
+        "Shared decision-making and care discussions in older adults",
+        "Shared decision-making in patients with chest pain",
+        "Shared decision-making in patients with minor head injuries",
+        "Shared decision-making in pediatric patients with middle ear infections (otitis media)",
+        "Urinary tract infections",
+        "Use of droperidol (Inapsine) for acute pain management",
+        "Use of physical therapy in the emergency department",
+        "Use of technology to engage with patients with depression and suicidal ideation",
+        "Use of vitamin C, thiamine and steroids for sepsis"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.15
+      }
+    },
+    {
+      "items": [
+        "Angioedema",
+        "Emergency department operations",
+        "Emergency ultrasound applications",
+        "Prehospital emergency care",
+        "Quality improvement",
+        "Sports medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "BSHAPE Safety and Health Study for Survivors of Cumulative Trauma",
+        "Cancer Patient Navigation Study",
+        "Chicago Parent Program",
+        "Community Aging in Place: Advancing Better Living for Elders (CAPABLE)",
+        "Danger Assessment for Immigrant and Indigenous Women",
+        "It\u2019s weWomen Plus Project for Health, Safety and Empowerment",
+        "THRIVE Food is Medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.7142857142857143
+      }
+    },
+    {
+      "items": [
+        "Sarah Szanton",
+        "Nada Lukkahatai",
+        "Junxin Li",
+        "Kamila Alexander",
+        "Martha Abshire Saylor",
+        "Kelly Gleason",
+        "Susan Renda",
+        "Deborah Busch",
+        "Sarah Allgood",
+        "Tamar Rodney",
+        "Rebecca Wright",
+        "Binu Koirala",
+        "Nicole Mollenkopf"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hypertension",
+        "Cardiac arrest",
+        "Diabetes",
+        "Sickle cell disease",
+        "Ultrasound",
+        "Cancer",
+        "Healthcare worker wellness",
+        "COVID-19",
+        "Chest pain",
+        "Substance use disorders",
+        "Toxicology",
+        "Global emergency medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hypertension",
+        "Cardiac arrest",
+        "Diabetes",
+        "Sickle cell disease",
+        "Ultrasound",
+        "Cancer",
+        "Healthcare worker wellness",
+        "COVID-19",
+        "Chest pain",
+        "Substance use disorders",
+        "Toxicology",
+        "Global emergency medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hypertension",
+        "Cardiac arrest",
+        "Diabetes",
+        "Sickle cell disease",
+        "Ultrasound",
+        "Cancer",
+        "Healthcare worker wellness",
+        "COVID-19",
+        "Chest pain",
+        "Substance use disorders",
+        "Toxicology",
+        "Global emergency medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mission",
+        "Vision",
+        "Department of Emergency Medicine"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cardiac Arrest and Prehospital Care",
+        "Trauma and Hemorrhage Control",
+        "Medical Education Research",
+        "Health Care Policy and Services",
+        "Opiate Use & Substance Use Disorder",
+        "Sepsis and ARDS",
+        "International Healthcare Delivery",
+        "Environmental Health and Climate Change",
+        "Development and Evaluation of Health Systems",
+        "Point-of-Care Ultrasound (POCUS)",
+        "Novel Ultrasound Technology, Techniques, and Applications",
+        "Workplace and Provider Safety",
+        "Emergency Care Delivery and Quality of Care"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.15384615384615385,
+        "keyword_ratio": 0.23076923076923078
+      }
+    },
+    {
+      "items": [
+        "Cancer Screening (Laurene Tumiel Berhalter; Andrew Symons)",
+        "Clinical Operations (Andrea Manyon)",
+        "Community Health and Chronic Disease (Linda Kahn; Laurene Tumiel Berhalter)",
+        "Community-Based Participatory Research (David Holmes; Laurene Tumiel Berhalter)",
+        "Concussions (Michael Freitas)",
+        "Criminal Justice Involvement (Linda Kahn)",
+        "Deprescribing (Ranjit Singh)",
+        "Environmental Health (Laurene Tumiel Berhalter)",
+        "Family Medicine (David Holmes; Sangrok Oh; Ranjit Singh)",
+        "Global Health (David Holmes)",
+        "Harm Reduction (Linda Kahn)",
+        "Health Disparities (Linda Kahn; Laurene Tumiel Berhalter)",
+        "Health Workforce Development (Diana Wilkins)",
+        "Implementation Science (Linda Kahn; Ranjit Singh; Jennifer Campbell; Jill Tirabassi)",
+        "Integrated Medical/Behavioral Health (Linda Kahn)",
+        "Measuring Impact of Partnerships (Laurene Tumiel Berhalter)",
+        "Medical Anthropology (Linda Kahn)",
+        "Medical Care of Athletes (Michael Freitas)",
+        "Medical Student Education (David Holmes; Andrea Manyon; Andrew Symons)",
+        "Medication Safety (Ranjit Singh)",
+        "Non-Operative Biologic Regenerative Therapies (Michael Freitas)",
+        "Non-Operative Care of Degenerative Knee Conditions (Michael Freitas)",
+        "Opioid Overdose (Linda Kahn)",
+        "Patient Satisfaction (Laurene Tumiel Berhalter)",
+        "Patient Self-management (Linda Kahn; Laurene Tumiel Berhalter)",
+        "Patient-Centered Outcomes (Laurene Tumiel Berhalter)",
+        "Polypharmacy, Medication Safety, Ageing, Human Factors & Ergonomics (Andrew Baumgartner)",
+        "Program Evaluation (Linda Kahn; Laurene Tumiel Berhalter; Andrew Symons)",
+        "Qualitative Methods (Linda Kahn; Andrea Manyon; Jennifer Campbell)",
+        "Refugee Health (Laurene Tumiel Berhalter)",
+        "Residency/Fellowship Education (David Holmes; Andrew Symons)",
+        "Spirituality in Healthcare (David Holmes)",
+        "Substance Use Disorder and Behavioral Health (Linda Kahn; David Holmes)",
+        "Translational Research in Communities (Laurene Tumiel Berhalter)",
+        "Translational Research in Practice (Linda Kahn; Laurene Tumiel Berhalter)",
+        "Workforce Development (Ranjit Singh; Andrea Manyon; Andrew Symons)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 36,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1388888888888889,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Director's Welcome",
+        "Choosing the Right Residency",
+        "Patient Care",
+        "Department of Family Medicine",
+        "Jacobs School of Medicine and Biomedical Sciences",
+        "Education and Training",
+        "Centers and Affiliations",
+        "Find People",
+        "Resources by Audience",
+        "Alumni and Friends",
+        "Research Facilities and Services",
+        "Get Involved",
+        "Learning Resources",
+        "Support Services",
+        "Site Tools"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.06666666666666667
+      }
+    },
+    {
+      "items": [
+        "Library Catalog",
+        "Databases",
+        "Journals",
+        "Videos",
+        "Course Reserves",
+        "Course Reading Lists",
+        "ScholarsCommons"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Labs & Printing",
+        "Loanable Technology",
+        "Data Visualization Wall",
+        "Media Production Studio",
+        "Makerspace",
+        "Remote Access"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Health topic",
+        "Rehabilitation for brain injuries",
+        "Mirror therapy for brain-injured or stroke patients with partial paralysis",
+        "Health benefits of whole grains in one\u2019s diet",
+        "What are the causes of sprains in athletes?",
+        "What are the best treatments for itching (pruritus) in hospitalized patients?",
+        "Health needs of elderly residents in Charlotte County after Hurricane Charley in 2004",
+        "Does exercise improve mental health?",
+        "Pet therapy with a dog for an autistic child, age 5"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research topic",
+        "Rehabilitation for brain injuries",
+        "Health benefits of whole grains in one\u2019s diet",
+        "What are the causes of sprains in athletes?",
+        "What are the best treatments for itching (pruritus) in hospitalized patients?",
+        "Health needs of elderly residents in Charlotte County after Hurricane Charley in 2004",
+        "Does exercise improve mental health?",
+        "Pet therapy with a dog for a 5 year-old autistic child"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Antibiotic Resistance and Stewardship",
+        "Environmental Infectious Diseases",
+        "Global Health Research",
+        "Hepatitis",
+        "HIV/AIDS",
+        "Hospital Epidemiology and Infection Control",
+        "Infection and Inflammation Imaging",
+        "Malaria",
+        "Microbiology",
+        "Microbiome",
+        "Molecular Microbiology and Immunology",
+        "Pediatric Infectious Diseases",
+        "Point of Care Technology",
+        "Sexually Transmitted Diseases",
+        "Transplant and Oncology Infectious Diseases (TOID)",
+        "Tuberculosis (TB) and Nontuberculosis Mycobacteria (NTM)"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Econometrics",
+        "Survey methods",
+        "Communication analysis and sociolinguistics",
+        "Mathematical modeling/simulation methods",
+        "Implementation science"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Site Navigation",
+        "Sub Navigation",
+        "Fields of Research",
+        "Research Methods",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "ActiveGut Study",
+        "COVID-19 Model Code",
+        "Environmental Influences on Child Health Outcomes Minnesota (ECHO MN)",
+        "Equity and Quality in Long-Term Services and Supports (EQuaLS) Projects",
+        "Families and Long-Term Care",
+        "Grocery Assistance Program Study for Families",
+        "Helping American Indian People Quit Smoking",
+        "HIV/STI Intervention & Prevention Studies (HIPS)",
+        "mGlide",
+        "Minnesota Prepared",
+        "Paid Summer Research Program for Undergraduate Students",
+        "PARKS Study",
+        "Project EAT",
+        "Robert L. Kane Endowed Chair in Long-Term Care and Aging",
+        "Stand & Move at Work",
+        "The Infant Development and Environment Study (TIDES)",
+        "The Interdisciplinary Network on Rural Population Health and Aging (INRPHA)",
+        "WONDER Study",
+        "For Students, Faculty, and Staff"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.15789473684210525,
+        "length_consistency": true,
+        "pattern_ratio": 0.05263157894736842,
+        "keyword_ratio": 0.47368421052631576
+      }
+    },
+    {
+      "items": [
+        "School of Health Professions",
+        "School of Medicine",
+        "School of Nursing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "University of Kansas",
+        "The University of Kansas Health System",
+        "The University of Kansas Cancer Center"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Sustainable Supply Chains: Promoting supply chain sustainability through health-conscious practices.",
+        "Community Engagement: Collaborating with communities to improve overall health and safety.",
+        "Machine Learning for Safety: Leveraging machine learning to enhance occupational safety protocols.",
+        "Environmental Justice Advocacy: Engaging with communities to address environmental disparities."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Announcements",
+        "Publications",
+        "MEET THECENTER DIRECTOR",
+        "Community Health Needs & Asset Assessment in Partnership with Haitian Residents of Harris County",
+        "MD/MPH: Where Medicine Meets Its Match",
+        "New Study Highlights Need to Develop Assessments on the Family Food Environment",
+        "UTHealth Houston among the nation\u2019s best in research funding",
+        "Bauer Selected as a 2025 Texas Legislative Fellow",
+        "CHPPR Investigators Publish New Study on Childbirth after Cancer"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "CHSR Faculty",
+        "Lairson, David",
+        "UTSPH Site PI: Lairson, David",
+        "Damgacioglu, Haluk",
+        "Damgacioglu, Haluk",
+        "Co-leader: Ortiz, Ana Patricia (UPR)",
+        "Du, Xianglin",
+        "Du, Xianglin",
+        "Du, Xianglin",
+        "Morgan, Robert",
+        "Morgan, Robert",
+        "Swint, John",
+        "Swint, John"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "mediated HIV",
+        "1 trans",
+        "infection\""
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Econometrics",
+        "Survey methods",
+        "Communication analysis and sociolinguistics",
+        "Mathematical modeling/simulation methods",
+        "Implementation science"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "BSHAPE Safety and Health Study for Survivors of Cumulative Trauma",
+        "Cancer Patient Navigation Study",
+        "Chicago Parent Program",
+        "Community Aging in Place: Advancing Better Living for Elders (CAPABLE)",
+        "Danger Assessment for Immigrant and Indigenous Women",
+        "It\u2019s weWomen Plus Project for Health, Safety and Empowerment",
+        "THRIVE Food is Medicine"
+      ],
+      "output_list_from_llm": [
+        "Cancer Patient Navigation Study",
+        "Community Aging in Place: Advancing Better Living for Elders (CAPABLE)",
+        "It\u2019s weWomen Plus Project for Health, Safety and Empowerment"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Cancer patient navigation study",
+    "Community aging in place: advancing better living for elders (capable)",
+    "It\u2019s wewomen plus project for health, safety and empowerment"
+  ],
+  "error": null
+}

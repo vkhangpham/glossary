@@ -1,0 +1,377 @@
+{
+  "level2_term": "sexual health",
+  "all_urls": [
+    "https://www.srhm.org/call-for-papers/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10680117/",
+    "https://www.tandfonline.com/journals/wijs20",
+    "https://journals.sagepub.com/home/ssh",
+    "https://onlinelibrary.wiley.com/journal/19312393",
+    "https://www.sciencedirect.com/journal/sexual-and-reproductive-healthcare",
+    "https://link.springer.com/journal/11930/collections",
+    "https://srh.bmj.com/pages/self-care-in-srh-call-for-papers",
+    "https://www.biomedcentral.com/collections/shia",
+    "https://www.worldsexualhealth.net/international-journal-of-sexual-health-journal"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "SRHM 2025 Open Issue",
+        "SRHR in war and armed conflict",
+        "Sexual Pleasure"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Submissions",
+        "Article publishing charges, waivers and discounts",
+        "Follow us",
+        "Donate"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Manjulaa Narasimhan",
+        "Kate Gilmore",
+        "Raul Murillo",
+        "Pascale Allotey",
+        "Similar articles",
+        "Cited by other articles",
+        "Links to NCBI Databases"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Manjulaa Narasimhan",
+        "Kate Gilmore",
+        "Raul Murillo",
+        "Pascale Allotey"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Topical Collection on Sexual Technology",
+        "Topical Collection on Medical Comorbidities",
+        "Topical Collection on Male Sexual Dysfunction and Disorders",
+        "Topical Collection on Preclinical and Psychophysiology",
+        "Topical Collection on Sociocultural Issues and Epidemiology",
+        "Topical Collection on Current Controversies",
+        "Topical Collection on Male and Female Surgical Interventions",
+        "Topical Collection on Urology, Gynecology, and Endocrinology",
+        "Topical Collection on Clinical Therapeutics",
+        "Topical Collection on Female Sexual Dysfunction and Disorders",
+        "Topical Collection on Sexual Orientation and Gender Identity",
+        "Topical Collection on Variations in Orientation, Identity, Addiction, and Compulsion",
+        "Topical Collection on Integrating the Psychosocial",
+        "Journal navigation",
+        "Search",
+        "Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8125
+      }
+    },
+    {
+      "items": [
+        "Articles",
+        "For authors",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Upcoming",
+        "Closed",
+        "Articles available"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Self-management of contraception and abortion care",
+        "STI testing",
+        "Support for choice of contraception"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Understanding the impact of aging on sexual function, desire, and satisfaction",
+        "Identifying barriers to sexual healthcare access and utilization among older populations",
+        "Exploring effective interventions for promoting sexual well-being in older age",
+        "Communication about sex and sexuality in older adults"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Assistant Professor, School of Criminal Justice, Rutgers University Newark, NJ, USA",
+        "Associate Professor, Psychology Faculty, Universidad Alberto Hurtado, Santiago, Chile",
+        "Department of Sociology, University of Louisville, Louisville, KY, USA",
+        "Eppendorf, Hamburg, Germany",
+        "Independent Researcher, White River Junction, VT, USA",
+        "Assistant Professor, Coordinator Human Sexuality Group (SexLab",
+        "CPUP) University of Aveiro, Aveiro, Portugal",
+        "Assistant Professor, Department of Sociology, Nanjing University, Nanjing, China",
+        "Professor, Department of Social Work, University of Gothenburg, Gothenburg, Sweden",
+        "Director of Research, INSERM, Le Kremlin Bic\u00eatre, France",
+        "Department of Psychology, Universit\u00e9 Rouen Normandie, MONT SAINT AIGNAN Cedex, France",
+        "Wessel, PhD",
+        "Researcher, Faculty of Psychology and Education Sciences, University of Porto, Porto, Portugal",
+        "Professor, University of Ottawa, Ottawa, Canada",
+        "Starowicz, MD, PhD",
+        "Professor in Health and Society, Department of Social Work, Malm\u00f6 University, Sweden",
+        "President Pathfinder International, Watertown, MA",
+        "Executive Director, Sexuality Information and Education Council of Canada, Toronto, ON, Canada",
+        "Associate Professor, Department of Family Relations and Applied Nutrition, Guelph, Ontario, Canada",
+        "Demographer, Migration, Urbanization and Sexual Health Research, New Delhi, India",
+        "Department of Psychology, College of Science, Old Dominion University, Norfolk, VA, USA",
+        "Professor, Department of Psychology, University of New Brunswick, Fredericton, NB, Canada",
+        "Professor, Department of Psychology, University of Lisbon, Lisbon, Portugal",
+        "Lecturer, Department of Psychology, University of Arizona, Tucson, AZ, USA",
+        "Department of Psychology, University of Milano Bicocca, Milan, Italy",
+        "Knigge, PhD",
+        "Aurioles, MD, PhD",
+        "Director, Asociacion Mexicana para la Salud Sexual, A.C. (AMSSAC), Delegacion Tlalpan, Mexico",
+        "Lower Genital Tract Unit, Centro Hospitalar de S\u00e3o Jo\u00e3o Hospital Lus\u00edadas Porto, Porto, Portugal",
+        "Honorary Professor, University of Sheffield, Sheffield, UK"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.13333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Topical Collection on Sexual Technology",
+        "Topical Collection on Medical Comorbidities",
+        "Topical Collection on Male Sexual Dysfunction and Disorders",
+        "Topical Collection on Preclinical and Psychophysiology",
+        "Topical Collection on Sociocultural Issues and Epidemiology",
+        "Topical Collection on Current Controversies",
+        "Topical Collection on Male and Female Surgical Interventions",
+        "Topical Collection on Urology, Gynecology, and Endocrinology",
+        "Topical Collection on Clinical Therapeutics",
+        "Topical Collection on Female Sexual Dysfunction and Disorders",
+        "Topical Collection on Sexual Orientation and Gender Identity",
+        "Topical Collection on Variations in Orientation, Identity, Addiction, and Compulsion",
+        "Topical Collection on Integrating the Psychosocial",
+        "Journal navigation",
+        "Search",
+        "Navigation"
+      ],
+      "output_list_from_llm": [
+        "Topical Collection on Sexual Technology",
+        "Topical Collection on Male Sexual Dysfunction and Disorders",
+        "Topical Collection on Female Sexual Dysfunction and Disorders",
+        "Topical Collection on Sexual Orientation and Gender Identity",
+        "Topical Collection on Variations in Orientation, Identity, Addiction, and Compulsion"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Upcoming",
+        "Closed",
+        "Articles available"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Submissions",
+        "Article publishing charges, waivers and discounts",
+        "Follow us",
+        "Donate"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Manjulaa Narasimhan",
+        "Kate Gilmore",
+        "Raul Murillo",
+        "Pascale Allotey",
+        "Similar articles",
+        "Cited by other articles",
+        "Links to NCBI Databases"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Assistant Professor, School of Criminal Justice, Rutgers University Newark, NJ, USA",
+        "Associate Professor, Psychology Faculty, Universidad Alberto Hurtado, Santiago, Chile",
+        "Department of Sociology, University of Louisville, Louisville, KY, USA",
+        "Eppendorf, Hamburg, Germany",
+        "Independent Researcher, White River Junction, VT, USA",
+        "Assistant Professor, Coordinator Human Sexuality Group (SexLab",
+        "CPUP) University of Aveiro, Aveiro, Portugal",
+        "Assistant Professor, Department of Sociology, Nanjing University, Nanjing, China",
+        "Professor, Department of Social Work, University of Gothenburg, Gothenburg, Sweden",
+        "Director of Research, INSERM, Le Kremlin Bic\u00eatre, France",
+        "Department of Psychology, Universit\u00e9 Rouen Normandie, MONT SAINT AIGNAN Cedex, France",
+        "Wessel, PhD",
+        "Researcher, Faculty of Psychology and Education Sciences, University of Porto, Porto, Portugal",
+        "Professor, University of Ottawa, Ottawa, Canada",
+        "Starowicz, MD, PhD",
+        "Professor in Health and Society, Department of Social Work, Malm\u00f6 University, Sweden",
+        "President Pathfinder International, Watertown, MA",
+        "Executive Director, Sexuality Information and Education Council of Canada, Toronto, ON, Canada",
+        "Associate Professor, Department of Family Relations and Applied Nutrition, Guelph, Ontario, Canada",
+        "Demographer, Migration, Urbanization and Sexual Health Research, New Delhi, India",
+        "Department of Psychology, College of Science, Old Dominion University, Norfolk, VA, USA",
+        "Professor, Department of Psychology, University of New Brunswick, Fredericton, NB, Canada",
+        "Professor, Department of Psychology, University of Lisbon, Lisbon, Portugal",
+        "Lecturer, Department of Psychology, University of Arizona, Tucson, AZ, USA",
+        "Department of Psychology, University of Milano Bicocca, Milan, Italy",
+        "Knigge, PhD",
+        "Aurioles, MD, PhD",
+        "Director, Asociacion Mexicana para la Salud Sexual, A.C. (AMSSAC), Delegacion Tlalpan, Mexico",
+        "Lower Genital Tract Unit, Centro Hospitalar de S\u00e3o Jo\u00e3o Hospital Lus\u00edadas Porto, Porto, Portugal",
+        "Honorary Professor, University of Sheffield, Sheffield, UK"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Topical collection on sexual technology",
+    "Topical collection on female sexual dysfunction and disorders",
+    "Topical collection on sexual orientation and gender identity",
+    "Topical collection on variations in orientation, identity, addiction, and compulsion"
+  ],
+  "error": null
+}

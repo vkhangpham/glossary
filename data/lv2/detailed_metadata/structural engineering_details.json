@@ -1,0 +1,2713 @@
+{
+  "level1_term": "structural engineering",
+  "all_urls": [
+    "https://se.ucsd.edu/research",
+    "https://www.ce.washington.edu/research/areas/structural",
+    "https://www.cee.psu.edu/academics/graduate/research-areas/structures-research.aspx",
+    "https://www.civil.utah.edu/research/structural/",
+    "https://sem.cee.vt.edu/research.html",
+    "https://www.cee.ucla.edu/research-areas-structural/",
+    "https://cee.charlotte.edu/disciplines/structural-engineering/structural-engineering-research-projects/",
+    "https://www.cece.ucf.edu/research-areas/",
+    "https://engineering.oregonstate.edu/CCE/research/structural-research",
+    "https://www.siue.edu/engineering/civil-engineering/about/research.shtml",
+    "https://cee.rutgers.edu/research-areas",
+    "https://cee.umd.edu/research/structures-research",
+    "https://ceees.nd.edu/research/",
+    "https://cce.eng.ua.edu/research/",
+    "https://engineering.nyu.edu/academics/departments/civil-and-urban-engineering/research-areas",
+    "https://engineering.tamu.edu/civil/research/index.html",
+    "https://cme.uic.edu/graduate/doctoral-programs/gaann-extreme/extreme-research/",
+    "https://www.fit.edu/mechanical-and-civil-engineering/research-overview/civil-engineering-research/",
+    "https://cee.illinois.edu/academics/areas/structural-engineering",
+    "https://engineering.purdue.edu/CCE/Research",
+    "https://www.newhaven.edu/research/faculty-research/engineering/civil/structural.php",
+    "https://cee.stanford.edu/research-impact",
+    "https://ccee.ncsu.edu/research/",
+    "https://engineering.buffalo.edu/civil-structural-environmental/research.html",
+    "https://cee.utk.edu/research/structural-engineering/",
+    "https://engineering.usu.edu/cee/research/",
+    "https://ceae.ku.edu/research-areas",
+    "https://www.utep.edu/engineering/civil/research/research.html",
+    "https://www.engineering.cornell.edu/research-and-faculty/strategic-areas-research/additional-research-topics",
+    "https://www1.villanova.edu/university/engineering/academic-programs/departments/civil-environmental/research-facilities.html"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Earthquake Engineering",
+        "Advanced Composites and Aerospace Structural Systems",
+        "Geotechnical Engineering and Geomechanics",
+        "Structural Health Monitoring, Prognosis, and Validated Simulations",
+        "Computational Mechanics",
+        "Natural Hazards Engineering"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Large-scale Structural Research Laboratory",
+        "Structural Creep Laboratory",
+        "Structural Vibrations Laboratory",
+        "X-ray Computed Tomography Laboratory",
+        "Construction Materials Laboratory"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Helpful Links",
+        "Attaching Light Rail to a Floating Bridge",
+        "Sustainable Earthquake Resilient Buildings",
+        "Be Boundless"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research highlights",
+        "A timber triumph: Seismically resilient and sustainable",
+        "Capstone collaborations",
+        "Op-ed: Prepare wisely for earthquakes",
+        "Connect with us:"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "art models of seismic structural response, large",
+        "scale fluid",
+        "structure and soil",
+        "structure interactions, and complex computational mechanics, among other topics."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Design optimization",
+        "Structural optimization",
+        "Design under uncertainty",
+        "Decision theory and analysis",
+        "Nonlinear dynamics and control",
+        "Probabilistic analysis",
+        "Structural reliability",
+        "Uncertainty quantification",
+        "Decision making under uncertainty",
+        "Stochastic control",
+        "Optimization and inverse analysis",
+        "Computational structural mechanics",
+        "Machine learning and Artificial Intelligence",
+        "Accelerated meshfree methods for extreme deformation analysis",
+        "Stabilized nodal integration in Galerkin meshfree methods",
+        "Physics-based shock modeling",
+        "Image-based modeling of fracture in composite microstructures"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.058823529411764705,
+        "length_consistency": true,
+        "pattern_ratio": 0.4117647058823529,
+        "keyword_ratio": 0.6470588235294118
+      }
+    },
+    {
+      "items": [
+        "Hazard Resilient and Sustainable Building Designs, PI: G. Warn, Co",
+        "PIs: T. Simpson, L. Iulo. National Science Foundation, $899,189. 03/2015",
+        "09/2021."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "making under uncertainties for enhanced structural life",
+        "cycle, PI:Papakonstantinou, NSF, $500,000, 2018",
+        "2023."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "asset transportation infrastructure maintenance, rehabilitation, and improvements: Phase 2",
+        "driven decisions from continuous monitoring, co",
+        "2022."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "enabled fiscally constrained life",
+        "cycle asset management for infrastructure systems, PI:Papakonstantinou, Co",
+        "2021."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "experimental approach to three",
+        "dimensional fracture in polymer",
+        "ceramic composites, PI: M. Hillman, Co",
+        "PI: J. Du;\u00a0Funding Source: The National Science Foundation, Total awarded: $545,418, 2018"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Structural Dynamics",
+        "Earthquake & Wind Engineering",
+        "Materials Behavior",
+        "Advanced Structural Sensing"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Quantification of durability through novel experimental techniques",
+        "Modeling of environmentally-induced deformation in cementitious materials",
+        "Development of novel cementitious materials using nanometric modifiers and inclusions",
+        "Development of high-damping materials for more resilient infrastructure",
+        "Computational materials science applications to material sustainability and behavior"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.4,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Bridge Engineering Center",
+        "Computation Modeling, Materials, and Mechanics",
+        "Earthquake Engineering",
+        "Sustainable Infrastructure Materials",
+        "Thin-Walled Structures"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Bridge Engineering Center",
+        "Computation Modeling, Materials, and Mechanics",
+        "Earthquake Engineering",
+        "Sustainable Infrastructure Materials",
+        "Thin-Walled Structures"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Carbon nanofibers bridging cracks in portland cement paste",
+        "Atomic force microscopy image of calcium silicate hydrate phase of portland cement paste",
+        "Computational analysis of geometry dependent clustering of nanometer inclusions"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "no heavy machinery), scalability and adaptability, passive nature, and need for little",
+        "no maintenance through the life",
+        "Georgia Tech)"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Micromechanical and continuum elastoplastic damage mechanics",
+        "Modeling of chemically induced damage of concrete",
+        "Micromechanics of heterogeneous composites",
+        "Adaptive multiple-scale meshfree method for geomechanics and earth-moving simulation",
+        "Optimized meshless algorithms for seamless integration of CAD, simulation, and design",
+        "Meshless method for earth-moving simulation",
+        "Development of soil-wheel interaction model using an adaptive multi-scale meshfree method",
+        "Simulation of self-piercing rivets using the meshfree method",
+        "Semi analytic methods for mechanics of composite cylinders",
+        "Analysis and optimum design of piezoelectric sensor/actuator systems",
+        "Arbitrary Lagrangian-Eulerian methods for regressing solid domains",
+        "Resilient response of granular materials"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Structural Design and Testing Laboratory",
+        "Nondestructive Testing Laboratory",
+        "Reinforced Concrete Laboratory",
+        "Mechanical Vibrations Laboratory",
+        "Large-Scale Structure Test Facility",
+        "Building Earthquake Instrumentation Network",
+        "NEES Mobile Seismic Laboratory"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.7142857142857143
+      }
+    },
+    {
+      "items": [
+        "\u201cExperimental Characterization of Conventional Curtainwall Systems Subjected to Extreme Loading.\u201d",
+        "\u201cPerformance of a Nearly-Conventional Curtain Wall System Subjected to Blast Loads.\u201d",
+        "\u201cFull-Scale Blast Testing of Structures.\u201d",
+        "\u201cNumerical Predictions of Blast Loads on Structures.\u201d",
+        "\u201cBuilding Materials Reclamation Program.\u201d",
+        "\u201cRFID Cargo Container Blast Project.\u201d",
+        "\u201cStudy of Blast-Loading Effects on Transmission Structures\u201d Southern Company.",
+        "\u201cSurface Wave Soil Testing Technique for Direct Embedment Determination,\u201d EPRI.",
+        "\u201cBuilding Materials Reclamation Program,\u201d USDOE, NETL."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.4444444444444444,
+        "keyword_ratio": 0.7777777777777778
+      }
+    },
+    {
+      "items": [
+        "Blast Resistance of Curtain Walls",
+        "Testing R/C Beam with Reclaimed Aggregate",
+        "Post-Blast Damage to a Bearing Wall",
+        "Simulation of Blast Overpressures in a Room",
+        "Field Blast Testing of Structures",
+        "FE Modeling of Impact to Cable Meridian Barriers",
+        "Aerial Remote Sensing for Bridge Monitoring"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Construction project management",
+        "Green building and infrastructure systems",
+        "Sustainability",
+        "Construction automation",
+        "Simulation of construction operations"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Air quality monitoring",
+        "Coastal engineering",
+        "Wastewater treatment",
+        "Biofilm and corrosion in drinking water",
+        "Water distribution system infrastructure"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Geotechnical earthquake engineering",
+        "Behavior of soils",
+        "Sinkholes, soil erosion and sediment control",
+        "Landslide hazard assessment and mitigation",
+        "Geospatial modeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Multi-hazard assessment and design",
+        "Seismic connection",
+        "Sensing and monitoring",
+        "Hollow structural sections",
+        "Advanced materials for infrastructure repair and design"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Transportation planning",
+        "Travel behavior analysis",
+        "Pedestrian and bicycle safety",
+        "Electric vehicle integration",
+        "Sustainable mobility adoption"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Coastal flood risk",
+        "Storm surges",
+        "Sediment transport",
+        "Ecohydraulics",
+        "Groundwater and hydrologic modeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Breadcrumb",
+        "Structural Engineering Research Laboratory (Strong Floor)",
+        "Faculty",
+        "Andre R. Barbosa, Ph.D., P.E. (Portugal)",
+        "Erica Fischer",
+        "Christopher Higgins",
+        "Judy Liu",
+        "Kenny Martin",
+        "Thomas Miller",
+        "Michael Scott",
+        "Farahnaz Soleimani",
+        "Solomon Yim"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Erica Fischer\n\n  Associate Professor\n \n   erica.fischer@oregonstate.edu\n541-737-0093",
+        "Christopher Higgins\n\n  Professor\n \n   chris.higgins@oregonstate.edu\n541-737-8869",
+        "Judy Liu\n\n  Professor\n \n   judy.liu@oregonstate.edu\n(541) 737-1552",
+        "Kenny Martin\n\n  Senior Instructor II\n \n   kenny.martin@oregonstate.edu\n(541) 737-2057",
+        "Thomas Miller\n\n  Associate Professor Emeritus\n \n   Thomas.Miller@oregonstate.edu\n(541) 737-3322",
+        "Michael Scott\n\n  Professor\n \n   michael.scott@oregonstate.edu\n(541) 737-6996",
+        "Farahnaz Soleimani\n\n  Assistant Professor\n \n   farahnaz.soleimani@oregonstate.edu\n1-541-737-7168",
+        "Solomon Yim\n\n  Professor\n \n   solomon.yim@oregonstate.edu\n1-541-737-6894"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "foot high",
+        "bay facility with 12",
+        "foot high L",
+        "hydraulic test systems as well as specialized fixtures."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Environmental / Water Resource Engineering",
+        "Geotechnical Engineering",
+        "Structural Engineering",
+        "Transportation Engineering"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Enter a Search Term",
+        "Construction Engineering and Management",
+        "Geotechnical Engineering",
+        "Infrastructure Engineering",
+        "Structural Engineering and Infrastructure Materials",
+        "Transportation Engineering",
+        "Water Resources and Environmental Engineering",
+        "Research and Innovation News",
+        "Site Footer",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.7
+      }
+    },
+    {
+      "items": [
+        "Bridge performance testing",
+        "Cyber-physical approaches to design",
+        "Integrated structural health monitoring",
+        "Life expectancy analysis and life extension economics",
+        "Machine foundations",
+        "New and smart materials in structures",
+        "Nondestructive condition assessment",
+        "Risk and reliability",
+        "Resilient infrastructure and systems",
+        "Optimal design for wind loads"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.3,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Leveraging cutting-edge methods to design and build sustainable infrastructure",
+        "Centers and Labs",
+        "Faculty",
+        "Related Stories"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Wind Engineers Complete Proof of Concept for New Structural...",
+        "Bilal Ayyub Chairs ASCE Infrastructure Resilience Division",
+        "Safer Travels: How Civil Engineers are Working to Improve U.S...."
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stories / August 23, 2017\nWind Engineers Complete Proof of Concept for New Structural...",
+        "Stories / May 16, 2017\nBilal Ayyub Chairs ASCE Infrastructure Resilience Division",
+        "Stories / September 2, 2015\nSafer Travels: How Civil Engineers are Working to Improve U.S...."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research Overview",
+        "Environmental Engineering",
+        "Environmental Fluid Dynamics",
+        "Environmental Earth Sciences",
+        "Structural Engineering",
+        "Departments"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Accelerated Bridge Construction",
+        "Adaptive Building Envelope Systems",
+        "Advanced Experimental Techniques",
+        "Airport Engineering and Design",
+        "Behavior of Steel and Composite Structures",
+        "Building Information Modeling",
+        "Community Resilience",
+        "Construction Health",
+        "Cross-Laminated Timber (CLT)",
+        "Design and Behavior of Pre- and Post-Tensioned Concrete Structures",
+        "Earthquake Engineering",
+        "Forensic Investigation of Damaged Structures",
+        "Geometric Design",
+        "Infrastructure Materials Characterization",
+        "Intelligent Transportation Systems",
+        "Investigation of Corrosion in Structural Concrete",
+        "Large-Scale Testing",
+        "Living Materials for Well-Being in the Built Environment",
+        "Multi-Hazard Evaluation",
+        "Nanotechnology and its Applications in Civil Engineering Materials",
+        "Natural Hazards",
+        "Non-Destructive Testing and Evaluation",
+        "Project Risk Management",
+        "Safety Engineering",
+        "Space Structures / Extra-Terrestrial Habitats",
+        "Structural Condition Assessment",
+        "Structural Vibration Control under Extreme Loading Conditions",
+        "Transportation Operations",
+        "Transportation Planning",
+        "Transportation Safety",
+        "Ultra-High-Performance Concrete (UHPC)",
+        "Wind Engineering",
+        "Wind Hazard Engineering",
+        "Wood Structures"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 34,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08823529411764706,
+        "length_consistency": true,
+        "pattern_ratio": 0.20588235294117646,
+        "keyword_ratio": 0.5588235294117647
+      }
+    },
+    {
+      "items": [
+        "Centers and Institutes",
+        "Facilities and Equipment",
+        "Civil Engineering Specialties"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence and Data Science",
+        "Automation in Civil Infrastructure",
+        "Coastal Engineering",
+        "Construction Engineering & Management",
+        "Environmental Engineering",
+        "Future Cities",
+        "Geotechnical Engineering",
+        "Materials Engineering",
+        "Sustainable and Resilient Natural and Built Environments",
+        "Structural Engineering",
+        "Transportation Engineering",
+        "Water Resources Engineering"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Reinforced and prestressed concrete structural members and systems",
+        "Structural models and experimental methods",
+        "Evaluation of existing structures",
+        "Design codes for structural concrete"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Structural health monitoring of bridges and buildings",
+        "Post-collapse analysis of structures",
+        "Seismic monitoring of structures",
+        "Data-centric, machine-learning-based condition assessment of high-rise buildings and bridges",
+        "Nondestructive testing of concrete structures with acoustic and optical methods",
+        "Experimental fracture mechanics by laser speckle metrology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Integrating structural design and damage-detection methods",
+        "Structural health monitoring using acoustic methods, especially for bridges and pipelines",
+        "Materials characterization using linear and nonlinear ultrasonics",
+        "Structural inspection using drones",
+        "Manipulating wave propagation in solids using metamaterials",
+        "MEMS acoustic sensors"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Computational plasticity, damage and constitutive modeling for geomaterials and soft tissues",
+        "Finite elements and other computational techniques",
+        "Structural behavior of earthen structural material such as rammed earth and stabilized soil block",
+        "Rail geotechnics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "conventional materials, development of textile",
+        "reinforced concrete for structural applications and service",
+        "life prediction based on real",
+        "time structural health monitoring data."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "B.S. Degree in Civil Engineering (Structural Engineering)",
+        "M.S. Degree in Civil Engineering (Structural Engineering)",
+        "Ph.D. Degree in Civil Engineering (Structural Engineering)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "earthquake engineering and seismic risk management",
+        "steel, concrete, masonry, timber, and composite buildings and bridges",
+        "innovative structural systems and structural rehabilitation",
+        "smart materials in structures",
+        "structural dynamics and control",
+        "structural health monitoring",
+        "regional loss assessment",
+        "risk and reliability",
+        "computational solid and fluid mechanics",
+        "fluid-structure interaction",
+        "additive manufacturing and 3D printing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.36363636363636365
+      }
+    },
+    {
+      "items": [
+        "Dan Abrams\n\nProfessor Emeritus",
+        "Bassem O. Andrawes\n\nProfessor",
+        "Eun Jeong  Cha\n\nAssociate Professor",
+        "Robert Harvey Dodds, Jr\n\nProfessor Emeritus",
+        "C. Armando Duarte\n\nProfessor",
+        "Ahmed  Elbanna\n\nAssociate Professor",
+        "Amr S. Elnashai\n\nProfessor Emeritus",
+        "Larry A. Fahnestock\n\nProfessor",
+        "Douglas A. Foutch\n\nProfessor Emeritus",
+        "Paolo  Gardoni\n\nProfessor",
+        "German Gurfinkel\n\nProfessor Emeritus",
+        "Sudarshan Krishnan\n\nDepartment Affiliate",
+        "James M. LaFave\n\nProfessor",
+        "Franklin T. Lombardo\n\nAssociate Professor",
+        "Oscar  Lopez-Pamies\n\nProfessor",
+        "Arif  Masud\n\nProfessor",
+        "B. F. Spencer, Jr\n\nProfessor",
+        "Ann Sychterz\n\nAssistant Professor",
+        "Jinhui  Yan\n\nAssociate Professor",
+        "X. Shelly Zhang\n\nAssistant Professor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "America Earthquake Center, which has developed new approaches for consequence",
+        "based risk management; and the MUST",
+        "SIM Facility.\u00a0 This facility is one of the large",
+        "based simulation, and collaborative research."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Architectural Engineering",
+        "Construction Engineering",
+        "Environmental Engineering",
+        "Geomatics Engineering",
+        "Geotechnical Engineering",
+        "Hydraulic and Hydrologic Engineering",
+        "Materials Engineering",
+        "Structural Engineering",
+        "Transportation and Infrastructure Systems Engineering"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Discover",
+        "Explore",
+        "Connect",
+        "People",
+        "Follow"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Advisor:\n\t\t\t\t\t\t\t\t\t\t\tByungik Chang, Professor of Civil Engineering",
+        "Graduate Student:\n\t\t\t\t\t\t\t\t\t\t\tThanin Chanmalai",
+        "Sponsor:\n\t\t\t\t\t\t\t\t\t\t\tProvost Assistantship",
+        "Status:\n\t\t\t\t\t\t\t\t\t\t\tCompleted",
+        "Dissemination:\nhttps://doi.org/10.5267/j.esm.2021.7.001"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Advisor:\n\t\t\t\t\t\t\t\t\t\t\tByungik Chang, Professor of Civil Engineering",
+        "Graduate Student\n\t\t\t\t\t\t\t\t\t\t\tSaron G. Hagos",
+        "Sponsor:\n\t\t\t\t\t\t\t\t\t\t\tProvost Assistantship",
+        "Status:\n\t\t\t\t\t\t\t\t\t\t\tProgress"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Advisor:\n\t\t\t\t\t\t\t\t\t\t\tByungik Chang, Professor of Civil Engineering",
+        "Graduate Student\n\t\t\t\t\t\t\t\t\t\t\tChristopher Ong",
+        "Sponsor:\n\t\t\t\t\t\t\t\t\t\t\tProvost Assistantship",
+        "Status:\n\t\t\t\t\t\t\t\t\t\t\tCompleted",
+        "Dissemination:\nhttps://doi.org/10.1016/j.jweia.2020.104130"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Advisor:\n\t\t\t\t\t\t\t\t\t\t\tByungik Chang, Professor of Civil Engineering",
+        "Graduate Student\n\t\t\t\t\t\t\t\t\t\t\tOmar Morales Escudero",
+        "Sponsor:\n\t\t\t\t\t\t\t\t\t\t\tStarWind, VT",
+        "Status:\n\t\t\t\t\t\t\t\t\t\t\tCompleted",
+        "Dissemination:\n\t\t\t\t\t\t\t\t\t\t\tConfidential"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Collaborate as an Industry Affiliate",
+        "Collaborate with the Doerr School Sustainability Accelerator",
+        "Collaborate with the Doerr School's Institutes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "3/11/24 MCEER",
+        "Structural Engineering and Earthquake Simulation Laboratory (SEESL)",
+        "5/28/24 Institute of Bridge Engineering"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "1/30/23 Logistics Supply Chain Management and Intermodal Transportation",
+        "1/30/23 Adaptive, Healthcare, Humanitarian and Military Logistics",
+        "1/30/23 Sustainable Transportation Systems",
+        "3/8/23 Cyber Transportation Systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Highlights",
+        "Environmental and Water Resources Engineering",
+        "Videos",
+        "Geosystems Engineering",
+        "Videos",
+        "Structural Engineering, Mechanics and Materials",
+        "Videos",
+        "Transportation Engineering",
+        "SS ISTL Research"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Highlights",
+        "Affiliated Centers/Labs",
+        "Affiliated Centers/Labs",
+        "Affiliated Centers/Labs",
+        "Affiliated Centers/Labs"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Videos",
+        "Go to video playlist",
+        "Highlights",
+        "Affiliated Centers/Labs",
+        "9/13/24 Great Lakes Program      UB RENEW"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Videos",
+        "Affiliated Centers/Labs",
+        "SEESL"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Videos",
+        "Go to video playlist",
+        "Affiliated Centers/Labs"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "ABAQUS",
+        "Revit",
+        "SAP2000",
+        "WARP3D"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "\u00bb Mark Denavit, Assistant Professor",
+        "\u00bb John Ma, Professor",
+        "\u00bb Timothy Truster, Assistant\u00a0Professor",
+        "\u00bb Nicholas Wierschem, Assistant Professor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "High Bay Testing Facility",
+        "Machine Shop\n\n\n\n\nSaw and Coring Room\nHardened Concrete Lab",
+        "Structural Software\n\n\n\n\nABAQUS\nRISA\nRevit\nSAP2000\nWARP3D"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Hongyi Cai",
+        "Xu Han",
+        "Huijeong Kim",
+        "Michael Panethiere"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chien-Ho Ko",
+        "Brian Lines",
+        "Daniel Tran"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jie Han",
+        "Masoud Darabi",
+        "Robert Parsons"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Caroline R. Bennett",
+        "William N. Collins",
+        "Masoud Darabi",
+        "David Darwin",
+        "Andr\u00e9s Lepage",
+        "R\u00e9my Lequesne",
+        "Jian Li",
+        "Matt O'Reilly"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Amy Hansen",
+        "Justin Hutchison",
+        "Edward Peltier",
+        "Joshua Roundy",
+        "Nishit Shetty",
+        "Belinda Sturm"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Architectural Engineering",
+        "Construction Engineering and Management",
+        "Geotechnical Engineering and Materials",
+        "Structural Engineering",
+        "Environmental Engineering and Water Resources",
+        "Transportation Engineering"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Structural reliability",
+        "Nondestructive testing and evaluation",
+        "Finite Element Modeling of linear and non-linear systems",
+        "Structural dynamics",
+        "Large deformation mechanics",
+        "Response of structures under shock loading",
+        "Constitutive modeling of material response"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.2857142857142857,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Membrane Processes for Water and Wastewater Treatment",
+        "RO Concentrate Management",
+        "Water Treatment Process Optimization",
+        "Disinfection Byproduct Control",
+        "Characterization of atmospheric aerosols",
+        "Evaluation of transportation air quality impacts",
+        "Impact of traffic related air pollution on sensitive receptors",
+        "Inhalation/exhalation of atmospheric aerosols",
+        "Ambient air quality monitoring and modeling",
+        "Surface runoff chemistry as it influences surface and groundwater interaction",
+        "Release mechanisms for radioactive waste repositories",
+        "Evaporation and recovery of concentrated brine",
+        "Monitoring alternatives for disposal and decommissioned facilities"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.07692307692307693,
+        "keyword_ratio": 0.38461538461538464
+      }
+    },
+    {
+      "items": [
+        "Nondestructive Testing of Infrastructure",
+        "Advanced Laboratory Characterization of Civil Engineering Materials",
+        "Pavement and Geotechnical Field Characterization",
+        "Pavement Analysis and Design",
+        "Recycling of Civil Engineering Materials",
+        "Stabilization of Soils",
+        "Instrumentation of Infrastructure",
+        "Quality Management of Infrastructure during Construction",
+        "Numerical Modeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2222222222222222,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Operations research applications to freight transportation",
+        "Freight transportation demand analysis and forecasting",
+        "Transportation infrastructure safety and security",
+        "Supply chain and collaborative logistic modeling",
+        "Traffic simulation",
+        "Visualization for transportation planning",
+        "Public transportation planning",
+        "New intersection designs (roundabouts and diverging interchange)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.625
+      }
+    },
+    {
+      "items": [
+        "Business Center",
+        "Engineering IT Resources",
+        "Event Calendar",
+        "Questions or Concerns"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "College of Engineering",
+        "Helpful Links",
+        "Connect With Us",
+        "THE UNIVERSITY OF TEXAS AT EL PASO"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Advanced Manufacturing and Materials",
+        "Advanced Materials",
+        "Advanced Materials Processing",
+        "Aerodynamics and Aeroacoustics",
+        "Algorithms",
+        "Applied Probability",
+        "Artificial Intelligence",
+        "Atmospheric Science and\u00a0Climate",
+        "Astrophysics, Fusion and Plasma Physics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Bio-electrical Engineering",
+        "Bioengineering and Healthcare",
+        "Biogeochemistry and Climate Interactions",
+        "Biomedical Engineering",
+        "Biomechanics and Mechanobiology",
+        "Biomedical Imaging and Instrumentation",
+        "Biomolecular Engineering",
+        "Biophysics",
+        "Biotechnology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Circuits and Electronic Systems",
+        "Climate\u00a0and Paleoclimate",
+        "Cloud and Distributed Computing",
+        "Colloids and Interfacial Science",
+        "Combustion",
+        "Complex Fluids and Polymers",
+        "Computational Fluid Dynamics",
+        "Computational Mechanics",
+        "Computational Solid Mechanics",
+        "Computational Science and Engineering",
+        "Computer Aided Diagnosis",
+        "Computer Architecture",
+        "Computer Engineering",
+        "Computer Systems",
+        "Condensed Matter and Material\u00a0Physics",
+        "COVID-19\u00a0Related Research"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Data Mining",
+        "Data Science",
+        "Drug Delivery and Nanomedicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Earth and Atmospheric Science",
+        "Earth Sciences",
+        "Earth System Science",
+        "Energy, Mineral and Water Resources",
+        "Energy Systems",
+        "Engineering Education",
+        "Environmental and Water Resource Systems\u00a0Engineering",
+        "Environmental Fluid Mechanics and Hydrology",
+        "Environmental Processes"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Geochemistry,\u00a0Petrology and Volcanology",
+        "Geophysics\u00a0and Seismology",
+        "Geophysical Fluid Dynamics",
+        "Geotechnical Engineering",
+        "Graphics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Health Systems",
+        "Heat and Mass Transfer",
+        "High Energy Density, Plasma Physics and Electromagnetics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Market Design",
+        "Materials Design",
+        "Materials Synthesis and Processing",
+        "Mechanics of Biological Materials",
+        "Meteorology and Applied Climatology",
+        "Molecular and Cellular Engineering",
+        "Molecular Biotechnology",
+        "Microfluidics",
+        "Microfluidics and Microsystems",
+        "Micro Nano Systems",
+        "Multi Phase Granular Flows"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.6363636363636364
+      }
+    },
+    {
+      "items": [
+        "Nanobio Applications",
+        "Nanoscale Electronics, Photonics and Materials\u00a0Processing",
+        "Nanotechnology",
+        "Natural Hazards",
+        "Networks",
+        "Neuroscience",
+        "Nonlinear Dynamics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Ocean Sciences",
+        "Optimization",
+        "Optical Physics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Paleontology,\u00a0Sedimentary Basins and Surface Processes",
+        "Physical Electronics, Devices, and Plasma Science",
+        "Polymers and Soft Matter",
+        "Power Electronics",
+        "Programming Languages"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Rapid Prototyping",
+        "Remote Sensing",
+        "Robotics\u00a0and Autonomy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Satellite Systems",
+        "Scientific Computing",
+        "Security",
+        "Semiconductor Physics and Devices",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Solid Mechanics",
+        "Solid State, Electronics, Optoelectronics and MEMs",
+        "Space and Planetary Sciences",
+        "Space Science and Engineering",
+        "Statistics and Machine Learning",
+        "Statistical Mechanics and Molecular Simulation",
+        "Structural Engineering",
+        "Supply Chain",
+        "Surface Science",
+        "Sustainable Energy Systems",
+        "Systems and Synthetic Biology",
+        "Systems and Networking"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "Tectonics and Structural\u00a0Geology",
+        "Thermal Systems",
+        "Tissue Engineering and Biomaterials",
+        "Theory of Computation",
+        "Transportation",
+        "Transportation Systems Engineering",
+        "Turbulence"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2857142857142857,
+        "keyword_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "items": [
+        "Environmental Microbiology and Biotechnology Laboratory",
+        "Geotechnical and Geoenvironmental Engineering",
+        "Urban Rivers Group"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Richard K. Faris \u201969 CE, \u201970 MSCE Structural Engineering Teaching and Research Laboratory",
+        "Advanced Simulation and GIS Laboratory",
+        "Geology and Measurements Laboratory",
+        "Fluid Mechanics Laboratory",
+        "Soils Testing Laboratory",
+        "Environmental Laboratories"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Environmental Engineering",
+        "Geotechnical Engineering",
+        "Structural Engineering",
+        "Transportation Engineering",
+        "Water Resources Engineering",
+        "CENTER OF EXCELLENCE",
+        "FACULTY LABS",
+        "TEACHING AND RESEARCH LABS"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.875
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "B.S. Degree in Civil Engineering (Structural Engineering)",
+        "M.S. Degree in Civil Engineering (Structural Engineering)",
+        "Ph.D. Degree in Civil Engineering (Structural Engineering)"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Reinforced and prestressed concrete structural members and systems",
+        "Structural models and experimental methods",
+        "Evaluation of existing structures",
+        "Design codes for structural concrete"
+      ],
+      "output_list_from_llm": [
+        "Reinforced and prestressed concrete structural members and systems",
+        "Structural models and experimental methods",
+        "Evaluation of existing structures",
+        "Design codes for structural concrete"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Micromechanical and continuum elastoplastic damage mechanics",
+        "Modeling of chemically induced damage of concrete",
+        "Micromechanics of heterogeneous composites",
+        "Adaptive multiple-scale meshfree method for geomechanics and earth-moving simulation",
+        "Optimized meshless algorithms for seamless integration of CAD, simulation, and design",
+        "Meshless method for earth-moving simulation",
+        "Development of soil-wheel interaction model using an adaptive multi-scale meshfree method",
+        "Simulation of self-piercing rivets using the meshfree method",
+        "Semi analytic methods for mechanics of composite cylinders",
+        "Analysis and optimum design of piezoelectric sensor/actuator systems",
+        "Arbitrary Lagrangian-Eulerian methods for regressing solid domains",
+        "Resilient response of granular materials"
+      ],
+      "output_list_from_llm": [
+        "Micromechanical and continuum elastoplastic damage mechanics",
+        "Modeling of chemically induced damage of concrete",
+        "Micromechanics of heterogeneous composites",
+        "Adaptive multiple-scale meshfree method for geomechanics and earth-moving simulation",
+        "Optimized meshless algorithms for seamless integration of CAD, simulation, and design",
+        "Meshless method for earth-moving simulation",
+        "Development of soil-wheel interaction model using an adaptive multi-scale meshfree method",
+        "Simulation of self-piercing rivets using the meshfree method",
+        "Semi analytic methods for mechanics of composite cylinders",
+        "Analysis and optimum design of piezoelectric sensor/actuator systems",
+        "Arbitrary Lagrangian-Eulerian methods for regressing solid domains",
+        "Resilient response of granular materials"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "3/11/24 MCEER",
+        "Structural Engineering and Earthquake Simulation Laboratory (SEESL)",
+        "5/28/24 Institute of Bridge Engineering"
+      ],
+      "output_list_from_llm": [
+        "Structural Engineering and Earthquake Simulation Laboratory (SEESL)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "conventional materials, development of textile",
+        "reinforced concrete for structural applications and service",
+        "life prediction based on real",
+        "time structural health monitoring data."
+      ],
+      "output_list_from_llm": [
+        "reinforced concrete for structural applications and service"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Quantification of durability through novel experimental techniques",
+        "Modeling of environmentally-induced deformation in cementitious materials",
+        "Development of novel cementitious materials using nanometric modifiers and inclusions",
+        "Development of high-damping materials for more resilient infrastructure",
+        "Computational materials science applications to material sustainability and behavior"
+      ],
+      "output_list_from_llm": [
+        "Quantification of durability through novel experimental techniques",
+        "Modeling of environmentally-induced deformation in cementitious materials",
+        "Development of novel cementitious materials using nanometric modifiers and inclusions",
+        "Development of high-damping materials for more resilient infrastructure",
+        "Computational materials science applications to material sustainability and behavior"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Environmental / Water Resource Engineering",
+        "Geotechnical Engineering",
+        "Structural Engineering",
+        "Transportation Engineering"
+      ],
+      "output_list_from_llm": [
+        "Structural Engineering"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Architectural Engineering",
+        "Construction Engineering",
+        "Environmental Engineering",
+        "Geomatics Engineering",
+        "Geotechnical Engineering",
+        "Hydraulic and Hydrologic Engineering",
+        "Materials Engineering",
+        "Structural Engineering",
+        "Transportation and Infrastructure Systems Engineering"
+      ],
+      "output_list_from_llm": [
+        "Structural Engineering"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Earthquake Engineering",
+        "Advanced Composites and Aerospace Structural Systems",
+        "Geotechnical Engineering and Geomechanics",
+        "Structural Health Monitoring, Prognosis, and Validated Simulations",
+        "Computational Mechanics",
+        "Natural Hazards Engineering"
+      ],
+      "output_list_from_llm": [
+        "Earthquake Engineering",
+        "Advanced Composites and Aerospace Structural Systems",
+        "Structural Health Monitoring, Prognosis, and Validated Simulations",
+        "Computational Mechanics",
+        "Natural Hazards Engineering"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Richard K. Faris \u201969 CE, \u201970 MSCE Structural Engineering Teaching and Research Laboratory",
+        "Advanced Simulation and GIS Laboratory",
+        "Geology and Measurements Laboratory",
+        "Fluid Mechanics Laboratory",
+        "Soils Testing Laboratory",
+        "Environmental Laboratories"
+      ],
+      "output_list_from_llm": [
+        "Richard K. Faris \u201969 CE, \u201970 MSCE Structural Engineering Teaching and Research Laboratory"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Architectural Engineering",
+        "Construction Engineering and Management",
+        "Geotechnical Engineering and Materials",
+        "Structural Engineering",
+        "Environmental Engineering and Water Resources",
+        "Transportation Engineering"
+      ],
+      "output_list_from_llm": [
+        "Architectural Engineering",
+        "Construction Engineering and Management",
+        "Geotechnical Engineering and Materials",
+        "Structural Engineering"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "1/30/23 Logistics Supply Chain Management and Intermodal Transportation",
+        "1/30/23 Adaptive, Healthcare, Humanitarian and Military Logistics",
+        "1/30/23 Sustainable Transportation Systems",
+        "3/8/23 Cyber Transportation Systems"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Design optimization",
+        "Structural optimization",
+        "Design under uncertainty",
+        "Decision theory and analysis",
+        "Nonlinear dynamics and control",
+        "Probabilistic analysis",
+        "Structural reliability",
+        "Uncertainty quantification",
+        "Decision making under uncertainty",
+        "Stochastic control",
+        "Optimization and inverse analysis",
+        "Computational structural mechanics",
+        "Machine learning and Artificial Intelligence",
+        "Accelerated meshfree methods for extreme deformation analysis",
+        "Stabilized nodal integration in Galerkin meshfree methods",
+        "Physics-based shock modeling",
+        "Image-based modeling of fracture in composite microstructures"
+      ],
+      "output_list_from_llm": [
+        "Structural optimization",
+        "Design under uncertainty",
+        "Nonlinear dynamics and control",
+        "Probabilistic analysis",
+        "Structural reliability",
+        "Uncertainty quantification",
+        "Decision making under uncertainty",
+        "Computational structural mechanics",
+        "Accelerated meshfree methods for extreme deformation analysis",
+        "Stabilized nodal integration in Galerkin meshfree methods",
+        "Physics-based shock modeling",
+        "Image-based modeling of fracture in composite microstructures"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "\u201cExperimental Characterization of Conventional Curtainwall Systems Subjected to Extreme Loading.\u201d",
+        "\u201cPerformance of a Nearly-Conventional Curtain Wall System Subjected to Blast Loads.\u201d",
+        "\u201cFull-Scale Blast Testing of Structures.\u201d",
+        "\u201cNumerical Predictions of Blast Loads on Structures.\u201d",
+        "\u201cBuilding Materials Reclamation Program.\u201d",
+        "\u201cRFID Cargo Container Blast Project.\u201d",
+        "\u201cStudy of Blast-Loading Effects on Transmission Structures\u201d Southern Company.",
+        "\u201cSurface Wave Soil Testing Technique for Direct Embedment Determination,\u201d EPRI.",
+        "\u201cBuilding Materials Reclamation Program,\u201d USDOE, NETL."
+      ],
+      "output_list_from_llm": [
+        "\u201cExperimental Characterization of Conventional Curtainwall Systems Subjected to Extreme Loading.\u201d",
+        "\u201cPerformance of a Nearly-Conventional Curtain Wall System Subjected to Blast Loads.\u201d",
+        "\u201cFull-Scale Blast Testing of Structures.\u201d",
+        "\u201cNumerical Predictions of Blast Loads on Structures.\u201d",
+        "\u201cStudy of Blast-Loading Effects on Transmission Structures\u201d Southern Company."
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Collaborate as an Industry Affiliate",
+        "Collaborate with the Doerr School Sustainability Accelerator",
+        "Collaborate with the Doerr School's Institutes"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Earth and Atmospheric Science",
+        "Earth Sciences",
+        "Earth System Science",
+        "Energy, Mineral and Water Resources",
+        "Energy Systems",
+        "Engineering Education",
+        "Environmental and Water Resource Systems Engineering",
+        "Environmental Fluid Mechanics and Hydrology",
+        "Environmental Processes"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Computational plasticity, damage and constitutive modeling for geomaterials and soft tissues",
+        "Finite elements and other computational techniques",
+        "Structural behavior of earthen structural material such as rammed earth and stabilized soil block",
+        "Rail geotechnics"
+      ],
+      "output_list_from_llm": [
+        "Computational plasticity, damage and constitutive modeling for geomaterials and soft tissues",
+        "Finite elements and other computational techniques",
+        "Structural behavior of earthen structural material such as rammed earth and stabilized soil block"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Tectonics and Structural Geology",
+        "Thermal Systems",
+        "Tissue Engineering and Biomaterials",
+        "Theory of Computation",
+        "Transportation",
+        "Transportation Systems Engineering",
+        "Turbulence"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Construction project management",
+        "Green building and infrastructure systems",
+        "Sustainability",
+        "Construction automation",
+        "Simulation of construction operations"
+      ],
+      "output_list_from_llm": [
+        "Construction project management",
+        "Green building and infrastructure systems",
+        "Construction automation",
+        "Simulation of construction operations"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Geotechnical earthquake engineering",
+        "Behavior of soils",
+        "Sinkholes, soil erosion and sediment control",
+        "Landslide hazard assessment and mitigation",
+        "Geospatial modeling"
+      ],
+      "output_list_from_llm": [
+        "Geotechnical earthquake engineering",
+        "Behavior of soils",
+        "Landslide hazard assessment and mitigation"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Structural engineering and earthquake simulation laboratory (seesl)",
+    "Richard k. faris \u201969 ce, \u201970 msce structural engineering teaching and research laboratory",
+    "Reinforced and prestressed concrete structural members and systems",
+    "Structural models and experimental methods",
+    "Evaluation of existing structures",
+    "Design codes for structural concrete",
+    "Micromechanical and continuum elastoplastic damage mechanics",
+    "Modeling of chemically induced damage of concrete",
+    "Micromechanics of heterogeneous composites",
+    "Adaptive multiple-scale meshfree method for geomechanics and earth-moving simulation",
+    "Optimized meshless algorithms for seamless integration of cad, simulation, and design",
+    "Meshless method for earth-moving simulation",
+    "Development of soil-wheel interaction model using an adaptive multi-scale meshfree method",
+    "Simulation of self-piercing rivets using the meshfree method",
+    "Semi analytic methods for mechanics of composite cylinders",
+    "Analysis and optimum design of piezoelectric sensor/actuator systems",
+    "Arbitrary lagrangian-eulerian methods for regressing solid domains",
+    "Resilient response of granular materials",
+    "Reinforced concrete for structural applications and service",
+    "Quantification of durability through novel experimental techniques",
+    "Modeling of environmentally-induced deformation in cementitious materials",
+    "Development of novel cementitious materials using nanometric modifiers and inclusions",
+    "Development of high-damping materials for more resilient infrastructure",
+    "Computational materials science applications to material sustainability and behavior",
+    "Advanced composites and aerospace structural systems",
+    "Structural health monitoring, prognosis, and validated simulations",
+    "Computational mechanics",
+    "Natural hazards engineering",
+    "Architectural engineering",
+    "Construction engineering and management",
+    "Geotechnical engineering and materials",
+    "Structural optimization",
+    "Design under uncertainty",
+    "Nonlinear dynamics and control",
+    "Probabilistic analysis",
+    "Structural reliability",
+    "Uncertainty quantification",
+    "Decision making under uncertainty",
+    "Computational structural mechanics",
+    "Accelerated meshfree methods for extreme deformation analysis",
+    "Stabilized nodal integration in galerkin meshfree methods",
+    "Physics-based shock modeling",
+    "Image-based modeling of fracture in composite microstructures",
+    "\u201cexperimental characterization of conventional curtainwall systems subjected to extreme loading.\u201d",
+    "\u201cperformance of a nearly-conventional curtain wall system subjected to blast loads.\u201d",
+    "\u201cfull-scale blast testing of structures.\u201d",
+    "\u201cnumerical predictions of blast loads on structures.\u201d",
+    "\u201cstudy of blast-loading effects on transmission structures\u201d southern company.",
+    "Computational plasticity, damage and constitutive modeling for geomaterials and soft tissues",
+    "Finite elements and other computational techniques",
+    "Structural behavior of earthen structural material such as rammed earth and stabilized soil block",
+    "Construction project management",
+    "Green building and infrastructure systems",
+    "Construction automation",
+    "Simulation of construction operations",
+    "Geotechnical earthquake engineering",
+    "Behavior of soils",
+    "Landslide hazard assessment and mitigation"
+  ],
+  "error": null
+}

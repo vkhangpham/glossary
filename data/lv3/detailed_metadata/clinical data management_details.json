@@ -1,0 +1,751 @@
+{
+  "level2_term": "clinical data management",
+  "all_urls": [
+    "https://www.cdisc.org/journal-society-clinical-data-management-call-manuscripts",
+    "https://www.jscdm.org/",
+    "https://scdm.org/",
+    "https://acdmglobal.org/",
+    "https://dl.acm.org/journal/jdiq/call-for-papers",
+    "https://catalystcr.com/catalyst-flex/advances-in-clinical-research-and-data-management/",
+    "https://academic.oup.com/jamia/pages/call-for-papers",
+    "https://clinicalresearch.pharmaceuticalconferences.com/",
+    "https://www.jscdm.org/news/7/",
+    "https://scdm.org/gcdmp-chapters/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Get Certified! SCDM launched new CCDA certification aimed at entry-to mid-level CDM professionals.",
+        "Leading regulators join SCDM in ground-breaking Regulatory Council",
+        "SCDM launches new CDM industry competency framework \u2013 a game changer for the profession",
+        "SCDM\u2019s 2024 State of the CDM Industry address was the most viewed ever \u2013 catch it now on demand",
+        "Tune in CDS 101 \u2013 everything you need to know about Clinical Data Science in an on-demand webinar"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Working together to create a healthier world.",
+        "Winter Issue 2025",
+        "SCDM 2025EMEA Conference",
+        "SCDM 2025 Annual Conference",
+        "Empowering the clinical data management profession,\nSCDM leads, educates,\nand influences.",
+        "Empowering CDM professionals like never before.",
+        "Four work streams, one unique experience",
+        "Join us for our inspiring events!",
+        "SCDM 2025 India Single Day Event",
+        "SCDM 2025 EMEA Conference",
+        "SCDM 2025 Annual Conference",
+        "Be the first to know"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Manage Consent",
+        "Manage options\nManage services\nManage {vendor_count} vendors\nRead more about these purposes",
+        "Accept\nDeny\nView preferences\nSave preferences\nView preferences",
+        "{title}\n{title}\n{title}"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Manage options",
+        "Manage services",
+        "Manage {vendor_count} vendors",
+        "Read more about these purposes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "{title}",
+        "{title}",
+        "{title}"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "insights on how to be successful as a CDA in an on",
+        "demand webinar",
+        "now available on SCDM Learning Hub!"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research papers",
+        "Experience papers",
+        "Survey papers",
+        "Challenge papers",
+        "On the Horizon papers",
+        "Special Issue papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Data quality metrics and frameworks",
+        "Data profiling",
+        "Error and anomaly detection",
+        "Synthetic data and data synthesis",
+        "Data provenance",
+        "Probabilistic, incomplete and uncertain data",
+        "Big data quality"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Data preparation and wrangling",
+        "Entity matching, entity resolution, record linkage",
+        "Data fusion",
+        "Schema and ontology matching",
+        "Data repair, augmentation, and imputation",
+        "Data re-purposing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data mining",
+        "Data quality and machine learning",
+        "Data quality and generative AI",
+        "Data quality and representation learning",
+        "Intelligent systems",
+        "Automated planning and reasoning",
+        "Federated learning",
+        "Data poisoning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Data quality standardization",
+        "Responsible AI, bias and fairness",
+        "Data quality policies and standards",
+        "Legal aspects of data quality",
+        "Maturity models",
+        "Human-computer interaction",
+        "Behavioral aspects of data quality",
+        "Data privacy and access control",
+        "Security evaluation",
+        "Economics of data quality",
+        "IQ education and curriculum development"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data ecosystems",
+        "Data acquisition",
+        "Metadata management",
+        "Web data management",
+        "Semantic web and ontologies",
+        "Information extraction",
+        "Information foraging",
+        "Multimodal data integration",
+        "Knowledge graphs",
+        "Knowledge representation and reasoning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Laboratory experimentation",
+        "Healthcare and clinical data",
+        "Financial data",
+        "Social media data",
+        "Multimedia and unstructured data",
+        "Sensors and streaming data, IoT",
+        "Robotic process automation",
+        "Business process management",
+        "Process mining"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Relevance to Data and Information Quality.",
+        "Suitable grounding in theory and the current literature",
+        "Appropriate research methods",
+        "Readability and organization of the manuscript"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Title: Mandatory \"Experience:\" prefix in the title.",
+        "Page limit: 10 pages with an option of an online-only supplement.",
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Journal Topics",
+        "Article Types",
+        "Categories",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Privacy Overview",
+        "Strictly Necessary Cookies",
+        "3rd Party Cookies",
+        "Additional Cookies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Insights from the SCDM 2024 annual conference",
+        "Recently Published",
+        "Stay Informed with the Latest Insights"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Standout sessions and key takeaways",
+        "Risk-based monitoring",
+        "Clinical trial data integration",
+        "Artificial intelligence"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Keeping this cookie enabled helps us to improve our website.",
+        "Enable or Disable Cookies    Enabled Disabled",
+        "Please enable Strictly Necessary Cookies first so that we can save your preferences!"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "This website uses the following additional cookies:",
+        "(List the cookies that you are using on the website here.)",
+        "Enable or Disable Cookies    Enabled Disabled",
+        "Please enable Strictly Necessary Cookies first so that we can save your preferences!"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Get Certified! SCDM launched new CCDA certification aimed at entry-to mid-level CDM professionals.",
+        "Leading regulators join SCDM in ground-breaking Regulatory Council",
+        "SCDM launches new CDM industry competency framework \u2013 a game changer for the profession",
+        "SCDM\u2019s 2024 State of the CDM Industry address was the most viewed ever \u2013 catch it now on demand",
+        "Tune in CDS 101 \u2013 everything you need to know about Clinical Data Science in an on-demand webinar"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Explore best practices in\nClinical Data Management",
+        "The CDM profession fundamentals",
+        "Good Clinical Data Management Practices",
+        "Data Privacy",
+        "Project Management for the Clinical Data Manager",
+        "Design and Development of Data Collection Instruments",
+        "Edit Check Design Principles",
+        "Safety Data Management and Reporting",
+        "Serious Adverse Event Data Reconciliation",
+        "Training",
+        "Metrics in Clinical Data Management",
+        "Patient-Reported Outcomes",
+        "Laboratory Data Handling",
+        "Medical Coding Dictionary Management & Maintenance",
+        "Measuring Data Quality",
+        "Database Validation, Programming and Standards",
+        "Database Closure",
+        "Data Storage",
+        "External Data Transfers",
+        "Data Entry Processes",
+        "CDM Presentation at Investigator Meetings",
+        "Clinical Data Archiving",
+        "Assuring Data Quality",
+        "CRF Printing and Vendor Selection"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.041666666666666664,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Manage Consent",
+        "Manage options\nManage services\nManage {vendor_count} vendors\nRead more about these purposes",
+        "Accept\nDeny\nView preferences\nSave preferences\nView preferences",
+        "{title}\n{title}\n{title}"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Manage options",
+        "Manage services",
+        "Manage {vendor_count} vendors",
+        "Read more about these purposes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "{title}",
+        "{title}",
+        "{title}"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "insights on how to be successful as a CDA in an on",
+        "demand webinar",
+        "now available on SCDM Learning Hub!"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Research papers",
+        "Experience papers",
+        "Survey papers",
+        "Challenge papers",
+        "On the Horizon papers",
+        "Special Issue papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Journal Topics",
+        "Article Types",
+        "Categories",
+        "Connect"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Standout sessions and key takeaways",
+        "Risk-based monitoring",
+        "Clinical trial data integration",
+        "Artificial intelligence"
+      ],
+      "output_list_from_llm": [
+        "Risk-based monitoring",
+        "Clinical trial data integration"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Title: Mandatory \"Experience:\" prefix in the title.",
+        "Page limit: 10 pages with an option of an online-only supplement.",
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Risk-based monitoring",
+    "Clinical trial data integration"
+  ],
+  "error": null
+}

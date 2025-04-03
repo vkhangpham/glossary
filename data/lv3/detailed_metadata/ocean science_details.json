@@ -1,0 +1,905 @@
+{
+  "level2_term": "ocean science",
+  "all_urls": [
+    "https://agupubs.onlinelibrary.wiley.com/hub/jgr/journal/21699291/features/call-for-papers",
+    "https://link.springer.com/journal/12601/collections",
+    "https://academic.oup.com/icesjms/pages/themed-sets-open-calls",
+    "https://www.ocean-science.net/",
+    "https://pubs.acs.org/doi/10.1021/acs.est.4c10143",
+    "https://link.springer.com/journal/12601",
+    "https://www.sciencedirect.com/journal/ocean-and-coastal-management/about/call-for-papers",
+    "https://current-journal.com/",
+    "https://os.copernicus.org/articles/special_issue1276.html",
+    "https://www.nature.com/npjoceansustain/calls-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Upcoming",
+        "Closed",
+        "Articles available"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Issues",
+        "Advance articles",
+        "Editor's Choice",
+        "Food for Thought",
+        "Food for Thought: Luminaries",
+        "Food for Thought: Rising Tides",
+        "Quo Vadimus",
+        "Stories from the Front Lines",
+        "Symposium Issues",
+        "Themed Sets",
+        "Reviews",
+        "Introductions",
+        "Hidden Gems",
+        "Author Guidelines",
+        "Submission Site",
+        "Open Access",
+        "Why Publish with us?",
+        "Calls for Papers",
+        "Alerts",
+        "About ICES Journal of Marine Science",
+        "About the International Council for the Exploration of the Sea",
+        "Editorial Board",
+        "Advertising and Corporate Services",
+        "Self-Archiving Policy",
+        "Dispatch Dates",
+        "Terms and Conditions",
+        "Contact Us",
+        "Journals on Oxford Academic",
+        "Books on Oxford Academic"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 29,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2413793103448276,
+        "length_consistency": true,
+        "pattern_ratio": 0.034482758620689655,
+        "keyword_ratio": 0.1724137931034483
+      }
+    },
+    {
+      "items": [
+        "Co-Designing Science for the Ocean We Want",
+        "ICES Journal - Celebrating a century of marine science",
+        "Proceedings of the 48th Larval Fish Conference"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "7th International Billfish Symposium\u00a0- deadline 31st March, 2025",
+        "Proceedings of the 48th Larval Fish Conference",
+        "The Ten Challenges of the UN\u2019s Decade of Ocean Science for Sustainable Development",
+        "Improving conservation outcomes by reducing bycatch of long-lived species in commercial fishing gear"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "A global community",
+        "A high reputation and strong journal metrics",
+        "Publishing with a gold\u00a0open access journal",
+        "A rigorous and rapid editorial process",
+        "And more, read further\u00a0here."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Field trials of mitigation approaches.",
+        "Development of novel methods to reduce bycatch.",
+        "Assessment of sustainability of bycatch levels in specific fisheries",
+        "Incentivization programs to reduce bycatch.",
+        "Critical assessment of approaches to bycatch management."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Latest",
+        "Most Read",
+        "Most Cited"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Why should you submit to an\u00a0ICES Journal of Marine Science\u00a0Themed Set?",
+        "Call for papers \u2013 Celebrating a century of marine science",
+        "Proceedings of the 48th Larval Fish Conference",
+        "Improving conservation outcomes by reducing bycatch of long-lived species in commercial fishing gear",
+        "Co-Designing Science for the Ocean We Want"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Browse open calls for papers:",
+        "Upcoming Themed Collections:",
+        "Latest",
+        "Most Read",
+        "Most Cited"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "among others",
+        "associated with the bycatch of long",
+        "lived animals in commercial fisheries:"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "design, co",
+        "production, and co",
+        "design process and how success, failure, and impact will be measured and assessed."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal metrics",
+        "Highlight articles",
+        "Scheduled special issues",
+        "Recent papers",
+        "Notice on the current situation in Ukraine"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "07 Feb 2025",
+        "Turbulent heat flux dynamics along the Dotson and Getz ice-shelf fronts (Amundsen Sea, Antarctica)",
+        "Blandine Jacob, Bastien Y. Queste, and Marcel D. du Plessis",
+        "Short summary",
+        "Co-editor-in-chief"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "27 Jan 2025",
+        "Christoph Renkl, Eric C. J. Oliver, and Keith R. Thompson",
+        "Short summary",
+        "Co-editor-in-chief"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "31 Mar 2025",
+        "Solving dense shelf water cascading with a high-resolution ocean reanalysis",
+        "Preprint under review for OS (discussion: open, 0 comments)",
+        "Short summary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "31 Mar 2025",
+        "ENSO-Driven Variability of Deep Ocean Circulation in the Southeast Pacific",
+        "Manuel Torres-Godoy, Oscar Pizarro, Boris Dewitte, and Vera Oerder",
+        "Preprint under review for OS (discussion: open, 0 comments)",
+        "Short summary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "27 Mar 2025",
+        "Internal-wave-induced dissipation rates in the  Weddell Sea Bottom Water gravity current",
+        "Ole Pinner, Friederike Pollmann, Markus Janout, Gunnar Voet, and Torsten Kanzow",
+        "Short summary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "27 Mar 2025",
+        "Abrupt meteorological changes reverse thermohaline features in the skin layer",
+        "Preprint under review for OS (discussion: open, 0 comments)",
+        "Short summary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "atmosphere, ocean",
+        "sea ice",
+        "ice sheet and ocean",
+        "coast (land) interfaces."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "marine and aquatic education research",
+        "ocean literacy",
+        "STEM learning activities",
+        "program evaluations",
+        "science communication",
+        "marine science, aquatic science, and oceanography",
+        "marine and aquatic art",
+        "maritime history and literature",
+        "marine and aquatic education research",
+        "ocean literacy",
+        "STEM learning activities",
+        "program evaluations",
+        "science communication",
+        "marine science, aquatic science, and oceanography",
+        "marine and aquatic art",
+        "maritime history and literature"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "marine and aquatic education research",
+        "ocean literacy",
+        "STEM learning activities",
+        "program evaluations",
+        "science communication",
+        "marine science, aquatic science, and oceanography",
+        "marine and aquatic art",
+        "maritime history and literature"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "marine and aquatic education research",
+        "ocean literacy",
+        "STEM learning activities",
+        "program evaluations",
+        "science communication",
+        "marine science, aquatic science, and oceanography",
+        "marine and aquatic art",
+        "maritime history and literature"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "marine and aquatic education research",
+        "ocean literacy",
+        "STEM learning activities",
+        "program evaluations",
+        "science communication",
+        "marine science, aquatic science, and oceanography",
+        "marine and aquatic art",
+        "maritime history and literature"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Current LogGreenbergDec 11, 2024",
+        "Dive Right In With Penguins Ready to Go, Go, Go!GreenbergDec 11, 2024",
+        "Leveraging Networks to Promote Ocean LiteracyPedemonte et al.Dec 11, 2024"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Latest news",
+        "Current Issue",
+        "Announcements",
+        "Table of contents"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Call for Papers",
+        "Now Published",
+        "Call for Papers: 2024",
+        "Call for Papers: 2020-2021",
+        "Commentaries and Letters to the Editor",
+        "Activities and Program Models",
+        "Reviews of Books or Other Media"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.42857142857142855,
+        "keyword_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "items": [
+        "Topics that are encouraged for submission include (but are not limited to):",
+        "Sincerely,",
+        "Zach Greenberg",
+        "Current Editor-In-Chief"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "All papers",
+        "Final revised papers only",
+        "Preprints only"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "01 Apr 2025",
+        "An overview of the ocean data ecosystem",
+        "Maya Bloch Haimson, Yoav Lehahn, and Tomer Sagi",
+        "Preprint under review for OS (discussion: open, 0 comments)",
+        "Short summary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "29 Oct 2024",
+        "TEOS-10 and the climatic relevance of ocean\u2013atmosphere interaction",
+        "Rainer Feistel",
+        "Short summary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "20 Jun 2024",
+        "Marine data assimilation in the UK: the past, the present and the vision for the future",
+        "Revised manuscript under review for OS (discussion: final response, 5 comments)",
+        "Short summary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Explore articles by subject",
+        "Find a job",
+        "Guide to authors",
+        "Editorial policies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Pacific Tuna Fisheries Science and Global Policy Drivers",
+        "Integration of Marine Protected Areas and Maritime Spatial Planning Processes",
+        "Fisheries and Aquaculture Subsidies and Their Discontents",
+        "Ending plastic pollution",
+        "Understanding the Social-Ecological Impacts of Distant Water Fishing Fleets",
+        "Progress towards the Sustainable Development Goals",
+        "Quick links",
+        "Discover content",
+        "Publishing policies",
+        "Author & Researcher services",
+        "Libraries & institutions",
+        "Advertising & partnerships",
+        "Professional development",
+        "Regional websites"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.21428571428571427,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "All papers",
+        "Final revised papers only",
+        "Preprints only"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Call for Papers",
+        "Now Published",
+        "Call for Papers:",
+        "Call for Papers: 2020-",
+        "Commentaries and Letters to the Editor",
+        "Activities and Program Models",
+        "Reviews of Books or Other Media"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "7th International Billfish Symposium - deadline 31st March,",
+        "Proceedings of the 48th Larval Fish Conference",
+        "The Ten Challenges of the UN\u2019s Decade of Ocean Science for Sustainable Development",
+        "Improving conservation outcomes by reducing bycatch of long-lived species in commercial fishing gear"
+      ],
+      "output_list_from_llm": [
+        "7th International Billfish Symposium - deadline 31st March,",
+        "Proceedings of the 48th Larval Fish Conference",
+        "The Ten Challenges of the UN\u2019s Decade of Ocean Science for Sustainable Development",
+        "Improving conservation outcomes by reducing bycatch of long-lived species in commercial fishing gear"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Field trials of mitigation approaches.",
+        "Development of novel methods to reduce bycatch.",
+        "Assessment of sustainability of bycatch levels in specific fisheries",
+        "Incentivization programs to reduce bycatch.",
+        "Critical assessment of approaches to bycatch management."
+      ],
+      "output_list_from_llm": [
+        "Field trials of mitigation approaches.",
+        "Development of novel methods to reduce bycatch.",
+        "Assessment of sustainability of bycatch levels in specific fisheries",
+        "Incentivization programs to reduce bycatch.",
+        "Critical assessment of approaches to bycatch management."
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Browse open calls for papers:",
+        "Upcoming Themed Collections:",
+        "Latest",
+        "Most Read",
+        "Most Cited"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "The ten challenges of the un\u2019s decade of ocean science for sustainable development",
+    "7th international billfish symposium - deadline 31st march,",
+    "Proceedings of the 48th larval fish conference",
+    "Improving conservation outcomes by reducing bycatch of long-lived species in commercial fishing gear",
+    "Field trials of mitigation approaches.",
+    "Development of novel methods to reduce bycatch.",
+    "Assessment of sustainability of bycatch levels in specific fisheries",
+    "Incentivization programs to reduce bycatch.",
+    "Critical assessment of approaches to bycatch management."
+  ],
+  "error": null
+}

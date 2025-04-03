@@ -1,0 +1,951 @@
+{
+  "level2_term": "reliability engineering",
+  "all_urls": [
+    "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety/about/call-for-papers",
+    "https://issre.github.io/2024/calls_cfp-research.html",
+    "https://onlinelibrary.wiley.com/page/journal/10991638/homepage/call-for-papers",
+    "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety",
+    "https://link.springer.com/journal/10664/updates/27347036?gclid=EAIaIQobChMI0s7sgpPO5wIVGs93Ch0egwyFEAAYASAAEgI8dPD_BwE",
+    "http://www.wikicfp.com/cfp/call?conference=reliability",
+    "https://rs.ieee.org/11-conferences.html",
+    "https://manuscriptlink.com/cfp/detail/event/BBXLZPAZ71028284?v=date",
+    "https://onlinelibrary.wiley.com/page/journal/10991638/homepage/call-for-papers/si-2024-001080",
+    "https://www.eventbrite.com/e/online-site-reliability-engineering-sre-open-brainstorm-forum-tickets-866050509387"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Paper submission deadline: May 15th, 2024 (AoE)May 10th, 2024 (AoE)",
+        "Author rebuttal period: July 5th-July 8th, 2024 (AoE)",
+        "Notification to authors: July 26th, 2024 (AoE)",
+        "Camera ready papers: August 23rd, 2024 (AoE)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "REG papers: 12 pages (including references).",
+        "PER papers: 12 pages (including references).",
+        "TAR papers: 6 - 10 pages (including references)."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Reliability threats, i.e. faults (defects, bugs, etc.), errors, failures",
+        "Reliability means (fault prevention, fault removal, fault tolerance, fault forecasting)",
+        "Software testing and formal methods",
+        "Software fault localization, debugging, root-cause analysis",
+        "Reliability of autonomous systems and (self-)adaptive systems",
+        "Reliability of AI-based systems, AI for Reliability Engineering",
+        "Reliability of Large Language/Foundational Model (LLM) and LLM for software reliability",
+        "Reliability of software services and Software as a Service (SaaS)",
+        "Reliability of model-based and auto-generated software",
+        "Reliability of open-source software",
+        "Reliability of software dealing with Big Data",
+        "Reliability of model-based and auto-generated software",
+        "Reliability of green and sustainable systems",
+        "Reliability of mobile systems",
+        "Normative/regulatory/ethical spaces about software reliability",
+        "Societal aspects of software reliability"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    },
+    {
+      "items": [
+        "Submissions should be anonymous.",
+        "The first page must include the title of the paper and a maximum 200-word abstract.",
+        "Try to limit the file size to less than 15 MB."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Special issues",
+        "Important dates (AoE)",
+        "Paper Categories",
+        "Topics of Interest",
+        "Anonymizing Rules",
+        "Formatting Rules",
+        "Paper Submission",
+        "Review Process and Author Response",
+        "Best Research Paper Award",
+        "Conference Proceedings",
+        "IEEE Conference Publishing Policies",
+        "IEEE Cross Check",
+        "Research PC Chairs"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.23076923076923078,
+        "length_consistency": true,
+        "pattern_ratio": 0.07692307692307693,
+        "keyword_ratio": 0.5384615384615384
+      }
+    },
+    {
+      "items": [
+        "Reliability threats, i.e. faults (defects, bugs, etc.), errors, failures",
+        "Reliability means (fault prevention, fault removal, fault tolerance, fault forecasting)",
+        "Software testing and formal methods",
+        "Software fault localization, debugging, root-cause analysis",
+        "Reliability of autonomous systems and (self-)adaptive systems",
+        "Reliability of AI-based systems, AI for Reliability Engineering",
+        "Reliability of Large Language/Foundational Model (LLM) and LLM for software reliability",
+        "Reliability of software services and Software as a Service (SaaS)",
+        "Reliability of model-based and auto-generated software",
+        "Reliability of open-source software",
+        "Reliability of software dealing with Big Data",
+        "Reliability of model-based and auto-generated software",
+        "Reliability of green and sustainable systems",
+        "Reliability of mobile systems",
+        "Normative/regulatory/ethical spaces about software reliability",
+        "Societal aspects of software reliability"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    },
+    {
+      "items": [
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Empirical Software Engineering",
+        "An International Journal",
+        "Publishing model:\nHybrid"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "edge continuum and/or IoT) that further adds complexity and heterogeneity. This data",
+        "(hence processing",
+        ")dependent and environment",
+        "dependent uncertainty makes software",
+        "intensive systems particularly prone to exhibit (business",
+        ", mission",
+        "or safety"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "spreading learning",
+        "enabled, autonomous, cyber",
+        "physical, and distributed systems in all the relevant domains wherein such systems are used."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Reliability\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Reliability\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Reliability",
+        "(ordered by deadline)",
+        "Event",
+        "QRS 2025",
+        "Jul 16, 2025 - Jul 20, 2025",
+        "ReMoS 2025 in conjunction with ISCA  2025",
+        "Jun 21, 2025 - Jun 21, 2025",
+        "DFT  2025",
+        "Oct 21, 2025 - Oct 23, 2025",
+        "IEEE SRSE 2025",
+        "Sep 25, 2025 - Sep 28, 2025",
+        "IEEE DSC 2025",
+        "Oct 18, 2025 - Oct 20, 2025",
+        "ICITES 2025",
+        "Sep 19, 2025 - Sep 22, 2025",
+        "IEEE ICSRS 2025",
+        "Nov 26, 2025 - Nov 28, 2025",
+        "ICRE 2025",
+        "Nov 26, 2025 - Nov 28, 2025",
+        "SI_Fault_IoV_OTJ 2025",
+        "Expired CFPs",
+        "RESCUER 2025",
+        "May 29, 2025 - May 30, 2025",
+        "ISSSR 2025",
+        "Apr 12, 2025 - Apr 13, 2025",
+        "CTRQ 2025",
+        "May 18, 2025 - May 22, 2025",
+        "SafeAutonomy 2025",
+        "Apr 8, 2025 - Apr 8, 2025",
+        "ICRE 2024",
+        "Nov 20, 2024 - Nov 22, 2024",
+        "IEEE ICSRS 2024",
+        "Nov 20, 2024 - Nov 22, 2024",
+        "CQR  2024",
+        "Sep 9, 2024 - Sep 12, 2024",
+        "CFP&CFSP-DFT 2024",
+        "Oct 8, 2024 - Oct 10, 2024",
+        "FARES 2024",
+        "Jul 30, 2024 - Aug 2, 2024",
+        "APARM 2024",
+        "Aug 26, 2024 - Aug 30, 2024",
+        "WoRIE 2024",
+        "Jun 17, 2024 - Jun 18, 2024",
+        "first |\t\t\t\n\n\t\t\t\t previous \n\n\t\t\t\t| Page 1 |\n\n        \nnext\n\n\t\t\t| last"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 46,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08695652173913043,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.043478260869565216
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "QRS 2025",
+        "Jul 16, 2025 - Jul 20, 2025",
+        "ReMoS 2025 in conjunction with ISCA  2025",
+        "Jun 21, 2025 - Jun 21, 2025",
+        "DFT  2025",
+        "Oct 21, 2025 - Oct 23, 2025",
+        "IEEE SRSE 2025",
+        "Sep 25, 2025 - Sep 28, 2025",
+        "IEEE DSC 2025",
+        "Oct 18, 2025 - Oct 20, 2025",
+        "ICITES 2025",
+        "Sep 19, 2025 - Sep 22, 2025",
+        "IEEE ICSRS 2025",
+        "Nov 26, 2025 - Nov 28, 2025",
+        "ICRE 2025",
+        "Nov 26, 2025 - Nov 28, 2025",
+        "SI_Fault_IoV_OTJ 2025",
+        "Expired CFPs",
+        "RESCUER 2025",
+        "May 29, 2025 - May 30, 2025",
+        "ISSSR 2025",
+        "Apr 12, 2025 - Apr 13, 2025",
+        "CTRQ 2025",
+        "May 18, 2025 - May 22, 2025",
+        "SafeAutonomy 2025",
+        "Apr 8, 2025 - Apr 8, 2025",
+        "ICRE 2024",
+        "Nov 20, 2024 - Nov 22, 2024",
+        "IEEE ICSRS 2024",
+        "Nov 20, 2024 - Nov 22, 2024",
+        "CQR  2024",
+        "Sep 9, 2024 - Sep 12, 2024",
+        "CFP&CFSP-DFT 2024",
+        "Oct 8, 2024 - Oct 10, 2024",
+        "FARES 2024",
+        "Jul 30, 2024 - Aug 2, 2024",
+        "APARM 2024",
+        "Aug 26, 2024 - Aug 30, 2024",
+        "WoRIE 2024",
+        "Jun 17, 2024 - Jun 18, 2024"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 41,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.04878048780487805
+      }
+    },
+    {
+      "items": [
+        "IEEE.org",
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites\n\nMore Sites\n\n\nIEEE Xplore Digital Library\n\n\nIEEE Standards\n\n\nIEEE Spectrum\n\n\nMore Sites",
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Preeti Chauhan",
+        "Christian Hansen",
+        "Janet Lin",
+        "Farnoosh Naderkhani",
+        "Scott Tamashiro",
+        "W. Eric Wong",
+        "President\u00a0\u00a0\n\nJason Rupe",
+        "Jason Rupe",
+        "VP Membership\n\nScott Tamashiro",
+        "Scott Tamashiro",
+        "VP Publications\n\nJanet Lin",
+        "Janet Lin",
+        "2025 VP Technical Activities\n\nRoulin Zhou",
+        "Roulin Zhou",
+        "2025 VP Meetings and Conferences\n\nPreeti Chauhan",
+        "Preeti Chauhan",
+        "Lifetime Achievement Award\n\nAngelos Stavrou\nEd Cole",
+        "Angelos Stavrou",
+        "Ed Cole",
+        "Richard Kowalski Outstanding Service Award\n\nChristian Hansen",
+        "Christian Hansen",
+        "2024 Annual Reliability Society (Reliability Engineer of the Year )\u00a0\u00a0\n\nJanet Lin",
+        "Janet Lin",
+        "A Beta version of a new Reliability Analytics Toolkit is available for inspection. Try it!"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.041666666666666664,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.041666666666666664
+      }
+    },
+    {
+      "items": [
+        "Preeti Chauhan",
+        "Christian Hansen",
+        "Janet Lin",
+        "Farnoosh Naderkhani",
+        "Scott Tamashiro",
+        "W. Eric Wong"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "President\u00a0\u00a0\n\nJason Rupe",
+        "Jason Rupe",
+        "VP Membership\n\nScott Tamashiro",
+        "Scott Tamashiro",
+        "VP Publications\n\nJanet Lin",
+        "Janet Lin",
+        "2025 VP Technical Activities\n\nRoulin Zhou",
+        "Roulin Zhou",
+        "2025 VP Meetings and Conferences\n\nPreeti Chauhan",
+        "Preeti Chauhan"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Lifetime Achievement Award\n\nAngelos Stavrou\nEd Cole",
+        "Angelos Stavrou",
+        "Ed Cole",
+        "Richard Kowalski Outstanding Service Award\n\nChristian Hansen",
+        "Christian Hansen",
+        "2024 Annual Reliability Society (Reliability Engineer of the Year )\u00a0\u00a0\n\nJanet Lin",
+        "Janet Lin"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "From the IEEE RS Video Library",
+        "Join IEEE Reliability Society",
+        "Upcoming Events",
+        "News & Announcements"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IEEE Transactions on Reliability",
+        "IEEE Transactions on Devices and Material Reliability",
+        "IEEE Transactions on Semiconductor Manufacturing",
+        "IEEE Security and Privacy",
+        "IEEE Journal of Photovoltaics"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2025 11th International Symposium on System Security, Safety, and Reliability (ISSSR)",
+        "Guiyang, China",
+        "Apr 12, 2025 - Apr 13, 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "2025 IEEE/ACM 37th International Conference on Software Engineering Education and Training (CSEE&T)",
+        "Ottawa, Ontario Canada",
+        "Apr 27, 2025 - May 3, 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2025 IEEE International Conference on Prognostics and Health Management (ICPHM)",
+        "Denver, Colorado USA",
+        "Jun 9, 2025 - Jun 11, 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2025 25th International Conference on Software Quality, Reliability and Security (QRS)",
+        "Hangzhou, China",
+        "Jul 16, 2025 - Jul 20, 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2025 25th International Conference on Software Quality, Reliability, and Security Companion (QRS-C)",
+        "Hangzhou, China",
+        "Jul 16, 2025 - Jul 20, 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Acta Koreana (Acta Koreana)",
+        "Acta Via Serica (AVS)",
+        "Journal of Information Processing Systems (JIPS)",
+        "Journal of Internet Computing and Services (KSII - JICS)",
+        "Membrane and Water Treatment (MWT)",
+        "Wind and Structures, An International Journal (Wind and Structures)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Call for Papers",
+        "Topics of interest for submission include, but are not limited to:",
+        "Condition based maintenance",
+        "Contractor logistics theory and practice",
+        "Data collection and analysis",
+        "Emergency maintenance",
+        "Equipment management and maintenance",
+        "Experimental design for quality control",
+        "Failure of Physics",
+        "Human factors and reliability",
+        "Maintainability engineering theory and application",
+        "Maintenance engineering theory and application",
+        "Maintenance support modeling and simulation",
+        "Mechanical reliability",
+        "Mechanism reliability",
+        "Methodologies for quality control",
+        "Multidisciplinary design optimization",
+        "Network reliability\u00a0More Topics, please visit at https://www.icre.org/cfp.html"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Sunday April 6 9:30 AM",
+        "Sunday April 13 9:30 AM",
+        "Sunday April 20 9:30 AM",
+        "Sunday April 27 9:30 AM",
+        "Sunday May 4 9:30 AM",
+        "More options"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Online Events",
+        "Things To Do Online",
+        "Online Conferences",
+        "Online Science & Tech Conferences"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Use Eventbrite",
+        "Plan events",
+        "Find events",
+        "Connect with us"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "What will be the agenda?",
+        "Sample agenda are- AIOps, Availability, MTTA, MTTD, MTTR, end user satisfaction etc",
+        "Barebone structure of discussion",
+        "While agenda is fluid, topics will be fit into one of these three categories",
+        "Zoom link to join?",
+        "https://zoom.us/j/2121313131",
+        "What's happening with SRE?",
+        "Like to host a session?"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "REG papers: 12 pages (including references).",
+        "PER papers: 12 pages (including references).",
+        "TAR papers: 6 - 10 pages (including references)."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Submissions should be anonymous.",
+        "The first page must include the title of the paper and a maximum 200-word abstract.",
+        "Try to limit the file size to less than 15 MB."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "2025 11th International Symposium on System Security, Safety, and Reliability (ISSSR)",
+        "Guiyang, China",
+        "Apr 12, 2025 - Apr 13,"
+      ],
+      "output_list_from_llm": [
+        "2025 11th International Symposium on System Security, Safety, and Reliability (ISSSR)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Paper submission deadline: May 15th, 2024 (AoE)May 10th, 2024 (AoE)",
+        "Author rebuttal period: July 5th-July 8th, 2024 (AoE)",
+        "Notification to authors: July 26th, 2024 (AoE)",
+        "Camera ready papers: August 23rd, 2024 (AoE)"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Special issues",
+        "Important dates (AoE)",
+        "Paper Categories",
+        "Interest",
+        "Anonymizing Rules",
+        "Formatting Rules",
+        "Paper Submission",
+        "Review Process and Author Response",
+        "Best Research Paper Award",
+        "Conference Proceedings",
+        "IEEE Conference Publishing Policies",
+        "IEEE Cross Check",
+        "Research PC Chairs"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "2025 11th international symposium on system security, safety, and reliability (isssr)"
+  ],
+  "error": null
+}

@@ -1,0 +1,1625 @@
+{
+  "level2_term": "conservation genetics",
+  "all_urls": [
+    "https://link.springer.com/journal/10592",
+    "https://onlinelibrary.wiley.com/page/journal/20457758/homepage/call-for-papers/si-2024-000083",
+    "https://www.biomedcentral.com/collections/congen",
+    "https://conservationgenetics.org/congen2025/",
+    "http://ecoevocommunity.nature.com/posts/call-for-papers-conservation-genetics",
+    "https://link.springer.com/collections/ibaigabjha",
+    "https://www.frontiersin.org/journals/conservation-science/sections/conservation-genetics-and-genomics/about",
+    "https://www.sciencedirect.com/journal/journal-for-nature-conservation",
+    "https://www.mdpi.com/journal/genes/special_issues/Conservation_Genetics_Genomics",
+    "https://www.umt.edu/congen/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "AGRICOLA",
+        "Astrophysics Data System (ADS)",
+        "BFI List",
+        "BIOSIS",
+        "Baidu",
+        "Biological Abstracts",
+        "CAB Abstracts",
+        "CLOCKSS",
+        "CNPIEC",
+        "Chemical Abstracts Service (CAS)",
+        "Current Contents/Agriculture, Biology & Environmental Sciences",
+        "Dimensions",
+        "EBSCO",
+        "EMBiology",
+        "Engineering Village \u2013 GEOBASE",
+        "Google Scholar",
+        "Japanese Science and Technology Agency (JST)",
+        "Naver",
+        "Norwegian Register for Scientific Journals and Series",
+        "OCLC WorldCat Discovery Service",
+        "Portico",
+        "ProQuest",
+        "SCImago",
+        "SCOPUS",
+        "Science Citation Index Expanded (SCIE)",
+        "TD Net Discovery Service",
+        "Wanfang",
+        "Zoological Record"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 28,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.03571428571428571,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Latest issue",
+        "Latest articles",
+        "Journal updates",
+        "Journal information",
+        "Journal navigation",
+        "Search",
+        "Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Supporting UN Sustainable Development Goals",
+        "In Review: Preprint Service",
+        "Students & Early Career Researchers",
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Electronic ISSN",
+        "Print ISSN",
+        "Abstracted and indexed in",
+        "Copyright information"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "View \n                                        Full Text",
+        "View \n                                        PDF",
+        "View \n                                        Full Text",
+        "View \n                                        PDF",
+        "View \n                                        Full Text",
+        "View \n                                        PDF"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Identification of genomic regions associated with adaptive traits",
+        "Approaches to assess genetic diversity in fragmented or isolated populations",
+        "Tools and computational methods for monitoring invasive species",
+        "Integration of genomic data with ecological and environmental data",
+        "Studies of predator",
+        "prey relationships and symbiotic associations",
+        "Assessment of the genetic impact caused by habitat destruction and climate change on biodiversity",
+        "Conservation strategies based on genetic rescue",
+        "Species distribution models and landscape genomics to predict range contractions/expansions",
+        "Utility of forward",
+        "Combined inference from large population genomic databases"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Study design for conservation genomics projects",
+        "Overview of next-generation sequencing methods (short and long reads)",
+        "Introduction to Python and Unix",
+        "Whole genome assembly, annotation, and alignment",
+        "Read mapping and variant calling methods",
+        "Genome-wide analysis of admixture and ancestry",
+        "Estimating and visualizing genome-wide diversity",
+        "Genome-wide association studies",
+        "SNP-based analyses of genetic structure/gene flow, phytogeography",
+        "Estimation of effective population size and historical demography",
+        "Identifying signatures of selection in population genomic data sets",
+        "Constructing phylogenomic data sets and analysis",
+        "SNP-based analyses of relatedness, inbreeding, and paternity",
+        "Detecting emerging pathogens in natural populations",
+        "Environmental DNA",
+        "DNA forensics as applied to controlling illegal poaching and trade",
+        "Integration of the Artificial Intelligence (AI) into conservation genomic data analysis",
+        "Integration of genetics/genomics into conservation management plans"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Primary organizers and the local hosts:",
+        "In the past, topics have included:",
+        "Stephen J O\u2019Brien",
+        "Laurie Marker",
+        "Executive Director of Cheetah Conservation Fund, NAMIBIA \u2013 \u201cThe Global Cheetah Conservation Program\u201d",
+        "Cindy Harper",
+        "William (Bill) Murphy",
+        "Julian Fennessy",
+        "Klaus Koepfli",
+        "Harris Lewin",
+        "Shu-Jin Luo"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": false,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Global",
+        "Recent Advances in Conservation Genetics",
+        "will be offered at the Cheetah Conservation Fund Research Center, Otjiwarongo Namibia (01/5",
+        "15/2025)."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Peter Koepfli (Smithsonian",
+        "Mason School of Conservation, George Mason University, USA), and Anne Schmidt",
+        "K\u00fcntzel (Cheetah Conservation Fund, Namibia)."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "International ConGen faculty: ConGen Global",
+        "2025 will gather pre",
+        "eminent genomics and conservation science experts who have developed and applied a multi",
+        "disciplinary approach to serve as faculty."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Ashley T. Rohde",
+        "James P. Strange",
+        "Michael G. Branstetter"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ashley T. Rohde",
+        "James P. Strange",
+        "Michael G. Branstetter"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Participating journal",
+        "Conservation Genetics",
+        "Editors",
+        "Dr. Brook G. Milligan",
+        "Dr. Ashley T. Rohde",
+        "Articles",
+        "Genome-wide markers test the status of two putative species of North American bumble bees",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "The theme of the special issue will focus on two areas:",
+        "Please check out the additional submission requirements for this Special Issue.",
+        "Keep up with the latest Conservation Genetics content by signing up for Journal Alerts today!"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "apply genomics to legal conservation contexts like forensics",
+        "assess population structure and phylogeography of threatened species",
+        "assess the potential for demographic, genetic, or evolutionary rescue",
+        "assess ways to better integrate genomic datasets in conservation practice",
+        "develop genetic strategies for translocations, reintroductions, and rewilding",
+        "determine taxonomic units for conservation",
+        "evaluate emerging technologies and analytical approaches",
+        "explore ethical questions about applying genetic and genomic techniques to conservation",
+        "explore the use of genetics and genomics in citizen science and biodiversity education",
+        "identify adaptive genetic variation in captive or wild populations of conservation concern",
+        "identify impacts of global change on genetic variation of populations, species, communities",
+        "inform alternative management strategies and support adaptive management approaches",
+        "integrate data across spatial, temporal, and biological scales",
+        "integrate genomic data with other organismal, ecological, or landscape level datasets",
+        "investigate connectivity across landscapes",
+        "investigate inbreeding and inbreeding depression in wild populations",
+        "monitor genetic variation using environmental samples (eDNA)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.17647058823529413,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.11764705882352941
+      }
+    },
+    {
+      "items": [
+        "Short name Front. Conserv. Sci.",
+        "Abbreviation fcosc",
+        "Electronic ISSN 2673-611X",
+        "Impact 1.9 Impact Factor 2.6 CiteScore"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vol.\u00a016\u00a0(2025)",
+        "Vol.\u00a015\u00a0(2024)",
+        "Vol.\u00a014\u00a0(2023)",
+        "Vol.\u00a013\u00a0(2022)",
+        "Vol.\u00a012\u00a0(2021)",
+        "Vol.\u00a011\u00a0(2020)",
+        "Vol.\u00a010\u00a0(2019)",
+        "Vol.\u00a09\u00a0(2018)",
+        "Vol.\u00a08\u00a0(2017)",
+        "Vol.\u00a07\u00a0(2016)",
+        "Vol.\u00a06\u00a0(2015)",
+        "Vol.\u00a05\u00a0(2014)",
+        "Vol.\u00a04\u00a0(2013)",
+        "Vol.\u00a03\u00a0(2012)",
+        "Vol.\u00a02\u00a0(2011)",
+        "Vol.\u00a01\u00a0(2010)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "conservation genomics",
+        "cryptic species",
+        "genetic rescue",
+        "landscape genomics",
+        "de-extinction"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share This Special Issue",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers (15 papers)",
+        "Error",
+        "Editorial",
+        "Research",
+        "Review",
+        "Other",
+        "Error",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.041666666666666664,
+        "keyword_ratio": 0.2916666666666667
+      }
+    },
+    {
+      "items": [
+        "Prof.             George Amato",
+        "E-Mail",
+        "Website"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "SciProfiles",
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "SciProfiles",
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2 pages,                153 KiB",
+        "Open AccessEditorial",
+        "Conservation Genetics and Genomics",
+        "by\n                    Michael Russello, George Amato, Robert DeSalle and Michael Knapp",
+        "Genes 2020, 11(3), 318; https://doi.org/10.3390/genes11030318 - 17 Mar 2020",
+        "Cited by 10",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Michael Russello,",
+        "George Amato,",
+        "Robert DeSalle and",
+        "Michael Knapp"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "17 pages,                2470 KiB",
+        "Open AccessArticle",
+        "Population Genomics and Structure of the Critically Endangered Mariana Crow (Corvus kubaryi)",
+        "Genes 2019, 10(3), 187; https://doi.org/10.3390/genes10030187 - 1 Mar 2019",
+        "Cited by 12",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Nandadevi Cortes-Rodriguez,",
+        "Michael G. Campana,",
+        "Lainie Berry,",
+        "Sarah Faegre,",
+        "Scott R. Derrickson,",
+        "Renee Robinette Ha,",
+        "Rebecca B. Dikow,",
+        "Christian Rutz and",
+        "Robert C. Fleischer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "9 pages,                3036 KiB",
+        "Open AccessArticle",
+        "Genes 2019, 10(2), 106; https://doi.org/10.3390/genes10020106 - 31 Jan 2019",
+        "Cited by 5",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Zhenhua Dang,",
+        "Patricia A. McLenachan,",
+        "Peter J. Lockhart,",
+        "Nick Waipara,",
+        "Orhan Er,",
+        "Christy Reynolds and",
+        "Dan Blanchon"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "17 pages,                1433 KiB",
+        "Open AccessArticle",
+        "Genes 2019, 10(1), 54; https://doi.org/10.3390/genes10010054 - 16 Jan 2019",
+        "Cited by 8",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Sofiia Kolchanova,",
+        "Sergei Kliver,",
+        "Aleksei Komissarov,",
+        "Pavel Dobrinin,",
+        "Gaik Tamazian,",
+        "Kirill Grigorev,",
+        "Walter W. Wolfsberger,",
+        "Audrey J. Majeske,",
+        "Jafet Velez-Valentin,",
+        "Ricardo Valentin de la Rosa,",
+        "Joanne R. Paul-Murphy,",
+        "David Sanchez-Migallon Guzman,",
+        "Michael H. Court,",
+        "Juan L. Rodriguez-Flores,",
+        "Juan Carlos Mart\u00ednez-Cruzado and",
+        "Taras K. Oleksyk"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "15 pages,                1737 KiB",
+        "Open AccessArticle",
+        "Genes 2019, 10(1), 38; https://doi.org/10.3390/genes10010038 - 10 Jan 2019",
+        "Cited by 24",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Dehuai Luo,",
+        "Yanping Li,",
+        "Qingyuan Zhao,",
+        "Lianpeng Zhao,",
+        "Arne Ludwig and",
+        "Zuogang Peng"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "19 pages,                1986 KiB",
+        "Open AccessArticle",
+        "Genes 2019, 10(1), 9; https://doi.org/10.3390/genes10010009 - 22 Dec 2018",
+        "Cited by 51",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Graphical abstract"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Stephanie J. Galla,",
+        "Natalie J. Forsdick,",
+        "Liz Brown,",
+        "Marc P. Hoeppner,",
+        "Michael Knapp,",
+        "Richard F. Maloney,",
+        "Roger Moraga,",
+        "Anna W. Santure and",
+        "Tammy E. Steeves"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "12 pages,                2389 KiB",
+        "Open AccessArticle",
+        "Rediscovery of Red Wolf Ghost Alleles in a Canid Population Along the American Gulf Coast",
+        "Genes 2018, 9(12), 618; https://doi.org/10.3390/genes9120618 - 10 Dec 2018",
+        "Cited by 23",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Elizabeth Heppenheimer,",
+        "Kristin E. Brzeski,",
+        "Ron Wooten,",
+        "William Waddell,",
+        "Linda Y. Rutledge,",
+        "Michael J. Chamberlain,",
+        "Daniel R. Stahler,",
+        "Joseph W. Hinton and",
+        "Bridgett M. VonHoldt"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "18 pages,                1508 KiB",
+        "Open AccessArticle",
+        "Genes 2018, 9(12), 606; https://doi.org/10.3390/genes9120606 - 4 Dec 2018",
+        "Cited by 27",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Elizabeth Heppenheimer,",
+        "Ryan J. Harrigan,",
+        "Linda Y. Rutledge,",
+        "Klaus-Peter Koepfli,",
+        "Alexandra L. DeCandia,",
+        "Kristin E. Brzeski,",
+        "John F. Benson,",
+        "Tyler Wheeldon,",
+        "Brent R. Patterson,",
+        "Roland Kays,",
+        "Paul A. Hohenlohe and",
+        "Bridgett M. Von Holdt"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "15 pages,                1526 KiB",
+        "Open AccessArticle",
+        "Genes 2018, 9(12), 599; https://doi.org/10.3390/genes9120599 - 3 Dec 2018",
+        "Cited by 26",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Catarina Jesus Pinho,",
+        "B\u00e1rbara Santos,",
+        "Vanessa A. Mata,",
+        "Mariana Seguro,",
+        "Maria M. Romeiras,",
+        "Ricardo Jorge Lopes and",
+        "Raquel Vasconcelos"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "19 pages,                1945 KiB",
+        "Open AccessArticle",
+        "Genes 2018, 9(11), 544; https://doi.org/10.3390/genes9110544 - 9 Nov 2018",
+        "Cited by 8",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Claudia Mischler,",
+        "Andrew Veale,",
+        "Tracey Van Stijn,",
+        "Rudiger Brauning,",
+        "John C. McEwan,",
+        "Richard Maloney and",
+        "Bruce C. Robertson"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "18 pages,                1267 KiB",
+        "Open AccessFeature PaperArticle",
+        "Genes 2018, 9(8), 393; https://doi.org/10.3390/genes9080393 - 1 Aug 2018",
+        "Cited by 18",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Open Access",
+        "Feature Paper",
+        "Article"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Jolene T. Sutton,",
+        "Martin Helmkampf,",
+        "Cynthia C. Steiner,",
+        "M. Renee Bellinger,",
+        "Jonas Korlach,",
+        "Richard Hall,",
+        "Primo Baybayan,",
+        "Jill Muehling,",
+        "Jenny Gu,",
+        "Sarah Kingan,",
+        "Bryce M. Masuda and",
+        "Oliver A. Ryder"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "14 pages,                2700 KiB",
+        "Open AccessArticle",
+        "by\n                    Nicolas Dussex, Johanna Von Seth, Bruce C. Robertson and Love Dal\u00e9n",
+        "Genes 2018, 9(4), 220; https://doi.org/10.3390/genes9040220 - 19 Apr 2018",
+        "Cited by 27",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Graphical abstract"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Nicolas Dussex,",
+        "Johanna Von Seth,",
+        "Bruce C. Robertson and",
+        "Love Dal\u00e9n"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "9 pages,                591 KiB",
+        "Open AccessArticle",
+        "Genome Sequence of the Freshwater Yangtze Finless Porpoise",
+        "Genes 2018, 9(4), 213; https://doi.org/10.3390/genes9040213 - 16 Apr 2018",
+        "Cited by 16",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Graphical abstract"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Yuan Yuan,",
+        "Peijun Zhang,",
+        "Kun Wang,",
+        "Mingzhong Liu,",
+        "Jing Li,",
+        "Jinsong Zheng,",
+        "Ding Wang,",
+        "Wenjie Xu,",
+        "Mingli Lin,",
+        "Lijun Dong,",
+        "Chenglong Zhu,",
+        "Qiang Qiu and",
+        "Songhai Li"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "33 pages,                1447 KiB",
+        "Open AccessReview",
+        "De-Extinction",
+        "by\n                    Ben Jacob Novak",
+        "Genes 2018, 9(11), 548; https://doi.org/10.3390/genes9110548 - 13 Nov 2018",
+        "Cited by 46",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "20 pages,                928 KiB",
+        "Open AccessPerspective",
+        "Beyond Biodiversity: Can Environmental DNA (eDNA) Cut It as a Population Genetics Tool?",
+        "Genes 2019, 10(3), 192; https://doi.org/10.3390/genes10030192 - 1 Mar 2019",
+        "Cited by 149",
+        "(This article belongs to the  Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Clare I.M. Adams,",
+        "Michael Knapp,",
+        "Neil J. Gemmell,",
+        "Gert-Jan Jeunen,",
+        "Michael Bunce,",
+        "Miles D. Lamare and",
+        "Helen R. Taylor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access monthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access monthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access monthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "ConGen 2024 - Online",
+        "Cost to Attend Online",
+        "TIME ZONE",
+        "SLACK",
+        "RECORDINGS"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "The theme of the special issue will focus on two areas:",
+        "Please check out the additional submission requirements for this Special Issue.",
+        "Keep up with the latest Conservation Genetics content by signing up for Journal Alerts today!"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Open Access",
+        "Feature Paper",
+        "Article"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "9 pages, 3036 KiB",
+        "Open AccessArticle",
+        "Genes 2019,",
+        "Cited by",
+        "(This article belongs to the Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc Show Figures",
+        "Figure"
+      ],
+      "output_list_from_llm": [
+        "(This article belongs to the Special Issue Conservation Genetics and Genomics)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "17 pages, 1433 KiB",
+        "Open AccessArticle",
+        "Genes 2019,",
+        "Cited by",
+        "(This article belongs to the Special Issue Conservation Genetics and Genomics)",
+        "\u25ba\u25bc Show Figures",
+        "Figure"
+      ],
+      "output_list_from_llm": [
+        "(This article belongs to the Special Issue Conservation Genetics and Genomics)"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "(this article belongs to the special issue conservation genetics and genomics)"
+  ],
+  "error": null
+}

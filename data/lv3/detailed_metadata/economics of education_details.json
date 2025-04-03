@@ -1,0 +1,346 @@
+{
+  "level2_term": "economics of education",
+  "all_urls": [
+    "https://www.sciencedirect.com/journal/economics-of-education-review",
+    "https://res.org.uk/events/call-for-papers-developments-in-economics-education-conference/",
+    "https://www.tandfonline.com/journals/vece20",
+    "https://www.tse-fr.eu/conferences/2024-economics-education-workshop",
+    "https://journalofeconomicsteaching.org/symposium/",
+    "https://www.aeaweb.org/about-aea/committees/economic-education/academic-journals",
+    "https://www.sciencedirect.com/journal/journal-of-economic-behavior-and-organization/about/call-for-papers",
+    "http://www.aeaweb.org/forum/1324/where-can-find-list-upcoming-academic-economics-conferences",
+    "https://ijeber.com/",
+    "https://academic.oup.com/cje/pages/call_for_papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Manage Cookie Consent",
+        "Manage options Manage services Manage {vendor_count} vendors Read more about these purposes",
+        "Accept Deny View preferences Save preferences View preferences",
+        "{title} {title} {title}"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Manage options",
+        "Manage services",
+        "Manage {vendor_count} vendors",
+        "Read more about these purposes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "{title}",
+        "{title}",
+        "{title}"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Program",
+        "Registration",
+        "Call for paper",
+        "Submission",
+        "Conference venue"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "June 13, 09:00 to June 14, 2024, 17:00",
+        "A3 - TSE Building",
+        "Room\u00a0Auditorium 3 - Jean-Jacques Laffont"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Learning How to Learn: Teaching Study Skills in Introductory Economics by Irene Foster (slides)",
+        "Roll the Dice: Teaching Expected Value Using Randomly-Assigned Grades by Tom Flesher (slides)",
+        "Costs in the Short Flight by Noah Trudeau"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Introduction to The Economics Media Library by Jadrian Wooten (slides)",
+        "Principles of Macroeconomics Scavenger Hunt on the Economics Media Library by Matt Pierson (slides)",
+        "Teaching Principles of Microeconomics with the Economics Media Library by Kelsi G. Hobbs (slides)"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Please join us in-person in St. Louis, MO July 30-August 1, 2025, co-hosted with the St. Louis Fed.",
+        "Here\u2019s what sets JET SET apart:",
+        "Our conference, like our journal, is open to everyone.",
+        "We can\u2019t wait to see you at JET SET! Please join us!"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "person in St. Louis, MO July 30",
+        "August 1, 2025, co",
+        "hosted with the St. Louis Fed."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Specialized field journals",
+        "Business and management education journals with economic education content",
+        "General interest journals with economic education content",
+        "Other journals with economic education content"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "https://bit.ly/2NRASNK",
+        "https://www.annemburton.com/economics-conferences",
+        "http://bartonwillage.com/conference"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Rapid Publishing",
+        "Professional publishing practices",
+        "High level of citation",
+        "High Quality reader base",
+        "High level author support"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Title",
+        "ISSN (online)",
+        "Frequency",
+        "Publication Format",
+        "Publisher",
+        "Chief Editor",
+        "Starting Year",
+        "Language",
+        "Subject",
+        "Email Id",
+        "Address",
+        "Plagiarism Policy",
+        "Review Policy"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07692307692307693
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Program",
+        "Registration",
+        "Call for paper",
+        "Submission",
+        "Conference venue"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Specialized field journals",
+        "Business and management education journals with economic education content",
+        "General interest journals with economic education content",
+        "Other journals with economic education content"
+      ],
+      "output_list_from_llm": [
+        "Business and management education journals with economic education content",
+        "General interest journals with economic education content",
+        "Other journals with economic education content"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Learning How to Learn: Teaching Study Skills in Introductory Economics by Irene Foster (slides)",
+        "Roll the Dice: Teaching Expected Value Using Randomly-Assigned Grades by Tom Flesher (slides)",
+        "Costs in the Short Flight by Noah Trudeau"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Business and management education journals with economic education content",
+    "General interest journals with economic education content"
+  ],
+  "error": null
+}

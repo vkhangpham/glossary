@@ -1,0 +1,921 @@
+{
+  "level2_term": "human learning",
+  "all_urls": [
+    "https://www.ahrd.org/news/685424/Special-Issue-Call-for-Papers-International-Journal-of-HRD-Practice-Policy-and-Research-.htm",
+    "https://educationaldatamining.org/edm2025/call-for-papers/",
+    "https://www.isls.org/wp-content/uploads/2022/07/JLS-SI-2024-Call-for-Papers.pdf",
+    "https://thelearner.com/2025-conference/call-for-papers",
+    "https://aamas2025.org/index.php/conference/calls/call-for-papers-main-technical-track/",
+    "https://ijclr2025.pages.surrey.ac.uk/papers/index.html",
+    "https://journals.humankinetics.com/fileasset/JMLD/JMLD-CFP-DCD_IMDRC.pdf",
+    "https://www.isetl.org/ijtlhe/",
+    "https://neurips.cc/Conferences/2024/CallForPapers",
+    "https://nasenjournals.onlinelibrary.wiley.com/hub/journal/14713802/call-for-papers/si-2024-001232"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "profession",
+        "survey",
+        "2023/"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Learning resource recommendation algorithms, remedial recommendations, and learner",
+        "choice in selecting the next activity",
+        "Goal-oriented instructional sequencing",
+        "Personalized course recommendations",
+        "Peer recommendation for collaborative learning",
+        "Methodologies for evaluating educational recommender systems and sequencing algorithms"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ethical considerations in EDM",
+        "Legal and social policies to govern EDM",
+        "Developing privacy-protecting EDM algorithms and detecting learner privacy violations in",
+        "existing methods"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Developing, improving, and evaluating explainable schemes for EDM systems",
+        "Human factors that shape educational users\u2019 acceptance of EDM-based",
+        "recommendations",
+        "Educational users\u2019 trust and attitudes towards EDM technologies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Automatically assessing student knowledge",
+        "Learner knowledge gain and forgetting models in domains with complex concept structures",
+        "Modeling real-world problem-solving in open-ended domains",
+        "Causal inference of students\u2019 learning",
+        "Predicting students\u2019 future performance",
+        "Detecting cheating and academic dishonesty"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Institutional analytics",
+        "Learner profiling",
+        "Multimodal analytics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Social network analysis of student and teacher interactions",
+        "Data mining to understand how learners interact in formal and informal educational contexts",
+        "Peer-assessment modeling",
+        "Social learner modeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Theme 1: Pedagogy and Curriculum",
+        "Theme 2: Assessment and Evaluation",
+        "Theme 3: Educational Organization and Leadership",
+        "Theme 4: Early Childhood Learning",
+        "Theme 5: Learning in Higher Education",
+        "Theme 6: Adult, Community, and Professional Learning",
+        "Theme 7: Learner Diversity and Identities",
+        "Theme 8: Technologies in Learning",
+        "Theme 9: Literacies Learning",
+        "Theme 10: Science, Mathematics, and Technology Learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Special Focus",
+        "Call for Papers",
+        "Program",
+        "Format",
+        "Special Events",
+        "Registration",
+        "Emerging Scholar Awards",
+        "Hotel & Accommodations",
+        "Venue",
+        "Past Editions"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.3
+      }
+    },
+    {
+      "items": [
+        "Special Focus",
+        "Call for Papers",
+        "Program",
+        "Format",
+        "Special Events",
+        "Registration",
+        "Emerging Scholar Awards",
+        "Hotel & Accommodations",
+        "Venue",
+        "Past Editions"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.3
+      }
+    },
+    {
+      "items": [
+        "Call for Articles",
+        "Editorial Board",
+        "Awards",
+        "Publishing Ethics Guidelines",
+        "Rights & Permissions",
+        "Open Access Options",
+        "Access",
+        "Editing Services"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Become a Member",
+        "Themes",
+        "Scope & Concerns",
+        "Advisory Board",
+        "History",
+        "Our Partners",
+        "Common Ground Research Networks"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Special Focus",
+        "Scope & Concerns",
+        "Themes",
+        "Program",
+        "CGScholar Event Microsite"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Abstract submission: Oct 9, 2024",
+        "Paper submission: Oct 16, 2024",
+        "Rebuttal period: Nov 27 \u2013 Dec 4, 2024",
+        "Author notification: Dec 23, 2024",
+        "Camera-ready paper: Feb 7, 2025 Feb 21, 2025",
+        "Conference: May 19-23, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Learning and Adaptation (LEARN)",
+        "Game Theory and Economic Paradigms (GTEP)",
+        "Coordination, Organizations, Institutions, Norms, and Ethics (COINE)",
+        "Search, Optimization, Planning, and Scheduling (SOPS)",
+        "Representation, Perception, and Reasoning (RPR)",
+        "Engineering and Analysis of Multiagent Systems (EMAS)",
+        "Modeling and Simulation of Societies (SIM)",
+        "Human-Agent Interaction (HAI)",
+        "Robotics and Control (ROBOT)",
+        "Innovative Applications (IA)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Reasoning and learning under uncertainty",
+        "Supervised learning",
+        "Unsupervised and representation learning",
+        "Reinforcement learning",
+        "Multiagent learning",
+        "Evolutionary algorithms",
+        "Learning agent capabilities",
+        "Learning agent-to-agent interactions",
+        "Human-in-the-loop learning",
+        "Agency and learning in large language models (LLMs)",
+        "Learning for value alignment and RLHF",
+        "Modeling and analysis of Generative AI agents",
+        "Few-shot learning",
+        "Distributionally-robust learning",
+        "Adversarial learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.13333333333333333
+      }
+    },
+    {
+      "items": [
+        "Auctions and Mechanism Design",
+        "Bargaining and Negotiation",
+        "Behavioral Game Theory",
+        "Evolutionary Game Theory",
+        "Non-Cooperative Games: Equilibrium Concepts",
+        "Non-Cooperative Games: Computational Issues",
+        "Non-Cooperative Games: Theory and Applications",
+        "Voting and Preference Aggregation",
+        "Social Choice",
+        "Preference Aggregation and Value Alignment",
+        "Matching and Allocation",
+        "Coalition Formation",
+        "Cooperative Games"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Coordination and teamwork",
+        "Social network analysis",
+        "Norms, normative systems",
+        "Organizations and institutions",
+        "Non-strategic coalition/team formation",
+        "Communication, including using natural language",
+        "Policy, regulation, and accountability",
+        "Trust and reputation",
+        "Ethical considerations, including privacy, safety, security, transparency",
+        "Agreement Technologies: Negotiation and Argumentations",
+        "Responsible socio-technical systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Single-agent planning and scheduling",
+        "Multiagent planning and scheduling",
+        "Decentralized planning and scheduling",
+        "Planning under uncertainty",
+        "Combinatorial optimization",
+        "Constraint programming",
+        "Distributed constraint reasoning",
+        "Resource and task allocation",
+        "Non-strategic coalition formation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Computer vision",
+        "Representation learning and generative AI",
+        "Neurosymbolic approaches",
+        "Argumentation",
+        "Agent theories and models",
+        "Explainability",
+        "Logics for agent reasoning",
+        "Ontologies for agents",
+        "Reasoning about knowledge, beliefs, goals, actions, plans, and change in multiagent systems",
+        "Reasoning and problem solving in agent-based systems",
+        "Verification of agents and multiagent systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Requirements and formal specification",
+        "Architecture and modeling",
+        "Formal verification and validation",
+        "Programming models and languages",
+        "Testing, maintenance, and evolution",
+        "Concurrency, fault tolerance, robustness, reliability, performance, and scalability",
+        "Sociotechnical systems, norms, and governance",
+        "Responsibility and accountability",
+        "Interoperability, business agreements, and interaction protocols",
+        "Declarative, Logic-based, and BDI-based agents",
+        "Engineering ethical agents",
+        "Engineering MAS-based simulations",
+        "Tools and testbeds",
+        "Middleware and platforms for MAS",
+        "Engineering learning agents",
+        "Usability",
+        "Applications, including Finance, Health, Agriculture, Autonomous Vehicles and Smart-*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Analysis of agent-based simulations",
+        "Calibration methods for socio-demographic data",
+        "Agent-based models & Social Networks",
+        "Applications of agent-based simulations in social phenomena (polarization, inequality, etc.)",
+        "Emergent behavior",
+        "Engineering agent-based simulations",
+        "Interactive simulation",
+        "Modeling for agent-based simulation",
+        "Simulation of complex systems",
+        "Simulation techniques, tools and platforms",
+        "Social simulation",
+        "Validation of social simulation systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Human-agent interaction",
+        "Agent-based analysis of human interactions",
+        "Socially interactive agents",
+        "Trust and explainability in human-agent interactions",
+        "Human-robot interaction and collaboration",
+        "Social robotics and social interactions",
+        "Mixed-initiative and shared autonomy in human-agent interactions",
+        "Groups of humans and agents",
+        "Agents models and architectures for interaction with humans",
+        "Designing for human-agent interaction",
+        "Virtual humans"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Multi-robot coordination and collaboration",
+        "Robot planning",
+        "Robot learning",
+        "Explainability, trust and ethics for robots",
+        "Knowledge representation and reasoning in robotic systems",
+        "Long-term (or lifelong) autonomy for robotic systems",
+        "Mapping, localization and exploration",
+        "Robot Modeling & Simulation",
+        "Manipulation and navigation",
+        "Networked systems and distributed robotics",
+        "Robot control",
+        "Robot perception and vision",
+        "Robots in adversarial settings",
+        "Swarm and collective behavior",
+        "Execution monitoring and failure recovery for robots"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.06666666666666667,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.13333333333333333
+      }
+    },
+    {
+      "items": [
+        "Deployed or emerging applications of agent-based systems",
+        "Realistic agent-based models of human organizations",
+        "Evaluation of the cognitive capabilities of agent-based systems",
+        "Integrated applications of agent-based and other technologies",
+        "Challenges and best practices of real-world deployments of agent-based technologies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Learning and Adaptation (LEARN)",
+        "Game Theory and Economic Paradigms (GTEP)",
+        "Coordination, Organizations, Institutions, Norms, and Ethics (COINE)",
+        "Search, Optimization, Planning, and Scheduling (SOPS)",
+        "Representation, Perception, and Reasoning (RPR)",
+        "Engineering and Analysis of Multiagent Systems (EMAS)",
+        "Modeling and Simulation of (Artificial) Societies (SIM)",
+        "Human-Agent Interaction (HAI)",
+        "Robotics and Control (ROBOT)",
+        "Innovative Applications (IA)"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Theory & foundations of logical & relational learning.",
+        "Inductive methods for program synthesis or example-driven programming.",
+        "Systems and techniques that integrate neural, statistical & symbolic learning.",
+        "Systems and techniques addressing aspects of integrating learning, reasoning & optimization.",
+        "Knowledge representation and reasoning in deep neural networks.",
+        "Symbolic knowledge extraction from neural and statistical learning models.",
+        "Neural-symbolic AI.",
+        "Human-Like Computing, including Cognitive and AI aspects of perception, action and learning."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "General Information:",
+        "Main Track",
+        "Recently Published Papers Track:",
+        "Journal Special Issue:",
+        "Publication:"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.4,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "International\u00a0Journal\u00a0of Teaching\u00a0and\u00a0Learning in Higher\u00a0Education\n\n\nIJTLHE",
+        "International\u00a0Journal\u00a0of Teaching\u00a0and\u00a0Learning in Higher\u00a0Education\n\n\nIJTLHE",
+        "International\u00a0Journal\u00a0of Teaching\u00a0and\u00a0Learning in Higher\u00a0Education\n\n\nIJTLHE",
+        "International\u00a0Journal\u00a0of Teaching\u00a0and\u00a0Learning in Higher\u00a0Education\n\nIJTLHE"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Experience",
+        "Learning",
+        "Teaching",
+        "Research"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Applications (e.g., vision, language, speech and audio, Creative AI)",
+        "Evaluation (e.g., methodology, meta studies, replicability and validity, human-in-the-loop)",
+        "General machine learning (supervised, unsupervised, online, active, etc.)",
+        "Infrastructure (e.g., libraries, improved implementation and scalability, distributed solutions)",
+        "Machine learning for sciences (e.g. climate, health, life sciences, physics, social sciences)",
+        "Neuroscience and cognitive science (e.g., neural coding, brain-computer interfaces)",
+        "Optimization (e.g., convex and non-convex, stochastic, robust)",
+        "Probabilistic methods (e.g., variational inference, causal inference, Gaussian processes)",
+        "Reinforcement learning (e.g., decision and control, planning, hierarchical RL, robotics)",
+        "Theory (e.g., control theory, learning theory, algorithmic game theory)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "General Information:",
+        "Main Track",
+        "Recently Published Papers Track:",
+        "Journal Special Issue:",
+        "Publication:"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Theme 1: Pedagogy and Curriculum",
+        "Theme 2: Assessment and Evaluation",
+        "Theme 3: Educational Organization and Leadership",
+        "Theme 4: Early Childhood Learning",
+        "Theme 5: Learning in Higher Education",
+        "Theme 6: Adult, Community, and Professional Learning",
+        "Theme 7: Learner Diversity and Identities",
+        "Theme 8: Technologies in Learning",
+        "Theme 9: Literacies Learning",
+        "Theme 10: Science, Mathematics, and Technology Learning"
+      ],
+      "output_list_from_llm": [
+        "Theme 1: Pedagogy and Curriculum",
+        "Theme 2: Assessment and Evaluation",
+        "Theme 3: Educational Organization and Leadership",
+        "Theme 4: Early Childhood Learning",
+        "Theme 5: Learning in Higher Education",
+        "Theme 6: Adult, Community, and Professional Learning",
+        "Theme 7: Learner Diversity and Identities",
+        "Theme 8: Technologies in Learning",
+        "Theme 9: Literacies Learning",
+        "Theme 10: Science, Mathematics, and Technology Learning"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Special Focus",
+        "Scope & Concerns",
+        "Themes",
+        "Program",
+        "CGScholar Event Microsite"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Abstract submission: Oct 9,",
+        "Paper submission: Oct 16,",
+        "Rebuttal period: Nov 27 \u2013 Dec 4,",
+        "Author notification: Dec 23,",
+        "Camera-ready paper: Feb 7, 2025 Feb 21,",
+        "Conference: May 19-23,"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Social network analysis of student and teacher interactions",
+        "Data mining to understand how learners interact in formal and informal educational contexts",
+        "Peer-assessment modeling",
+        "Social learner modeling"
+      ],
+      "output_list_from_llm": [
+        "Social network analysis of student and teacher interactions",
+        "Data mining to understand how learners interact in formal and informal educational contexts",
+        "Peer-assessment modeling",
+        "Social learner modeling"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Theme 1: pedagogy and curriculum",
+    "Theme 2: assessment and evaluation",
+    "Theme 3: educational organization and leadership",
+    "Theme 4: early childhood learning",
+    "Theme 5: learning in higher education",
+    "Theme 6: adult, community, and professional learning",
+    "Theme 7: learner diversity and identities",
+    "Theme 8: technologies in learning",
+    "Theme 9: literacies learning",
+    "Theme 10: science, mathematics, and technology learning",
+    "Social network analysis of student and teacher interactions",
+    "Data mining to understand how learners interact in formal and informal educational contexts",
+    "Peer-assessment modeling",
+    "Social learner modeling"
+  ],
+  "error": null
+}

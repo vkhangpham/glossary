@@ -1,0 +1,978 @@
+{
+  "level1_term": "spanish",
+  "all_urls": [
+    "https://spanish.ucdavis.edu/faculty-research-interests-summary",
+    "https://www.spanport.ucsb.edu/research",
+    "https://cla.umn.edu/spanish-portuguese/research-engagement/research-specialties",
+    "https://spanport.georgetown.edu/research/",
+    "https://sppo.osu.edu/research",
+    "https://www.pomona.edu/academics/departments/romance-languages-literatures/spanish/undergraduate-research-spanish",
+    "https://spanport.washington.edu/research",
+    "https://spo.princeton.edu/front",
+    "https://www.dickinson.edu/homepage/745/spanish_and_portuguese_student-faculty_research",
+    "https://span-port.rutgers.edu/",
+    "https://libguides.library.albany.edu/spanishlanguage",
+    "https://www.mtholyoke.edu/directory/departments-offices-centers/spanish",
+    "https://libguides.colorado.edu/c.php?g=1193266&p=8728642"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Publications",
+        "Center for Portuguese Studies",
+        "Center for Catalan Studies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "University Header Menu",
+        "Unit Menu",
+        "In This Section",
+        "Iberian Studies",
+        "Latin American and Caribbean Studies",
+        "Decolonial Global Portuguese",
+        "Hispanic Linguistics",
+        "Connect",
+        "Make a Gift"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ohio State navigation bar",
+        "Kawsay Ukhunchay Andean and Amazonian Indigenous Art and Cultural Artifacts Research Collection",
+        "Language Acquisition Lab",
+        "Sociolinguistics Lab",
+        "Speech Analysis Lab",
+        "Language Acquisition Lab",
+        "Sociolinguistics Lab",
+        "Speech Analysis Lab",
+        "Journals",
+        "Alter/nativas",
+        "La cor\u00f3nica",
+        "Textos H\u00edbridos",
+        "Journals",
+        "Alter/nativas",
+        "La cor\u00f3nica",
+        "Textos H\u00edbridos",
+        "Graduate Student Annual Conferences",
+        "Faculty Research & Area Studies",
+        "Other Initiatives"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.15789473684210525,
+        "length_consistency": false,
+        "pattern_ratio": 0.10526315789473684,
+        "keyword_ratio": 0.47368421052631576
+      }
+    },
+    {
+      "items": [
+        "Studies of the Portuguese-Speaking World",
+        "Hispanic Linguistics",
+        "Iberian Studies",
+        "Latin American Cultural & Literary Studies"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Our Voices/Nuestras Voces",
+        "Popol Wuj",
+        "Public Rituals in the Portuguese Empire Project"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "The Mama and the Papa: A Look at Alejandra Pizarnik's Family Dynamics in Her Writing",
+        "What Lies Beneath: El cuento de un pueblo contra una mina en la ecolog\u00eda social de La Joya",
+        "Childhood Amidst the Ravages of War: The Voice of a Young Woman During \"La Violencia\" in Colombia",
+        "Changing Views of Church in 19th-Century Spanish Costumbrismo",
+        "Reinaldo Arenas: A Life of Poetry, Politics and Prose",
+        "El imperio pintado por s\u00ed mismo: Portraits of National and Gender Identity"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "In the Classroom",
+        "In the World",
+        "Projects"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Skip To Content",
+        "Skip To Menu",
+        "Skip To Footer",
+        "Search this site\n\n\n\nDickinson College\n\n\nRequest Info\nVisit\nApply\nAlumni\nGive\n\n\n\nSearch this site"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Giuseppe Charles Collia",
+        "Erlyn Guadalupe Garcia",
+        "Ryan Patrick Murphy",
+        "Kara Knackstedt Smith",
+        "Justina Anna Warnick"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Gabriella Maria Corcoran",
+        "Erlyn Guadalupe Garcia",
+        "Kara Knackstedt Smith",
+        "Renato Santos de Medeiros"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Audrey  Ling",
+        "Mariana  Romariz Leivas",
+        "Domenica Estefania Romo",
+        "Monica Ann Thapa"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Amanda Maria Francatto",
+        "Jonathan Brett Harper",
+        "Julia Leann Hillary"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Christopher Joseph Brokus",
+        "Ashton Elizabeth Fiucci",
+        "Wendy Lorena Gomez",
+        "Giulia Isabel Pagano",
+        "Caryn Marie Sennett",
+        "Conor Dixon White"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Jessica Abigail Ceballos",
+        "Alejandra  Chavez",
+        "Danielle Elizabeth Erickson",
+        "Gilmer W Grattan",
+        "Samantha  Holden",
+        "Kathryn Lee Hughes",
+        "Mary Katherine Naydan"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Julia Louise Coggins",
+        "Amanda Jo E Wildey",
+        "Sarah Kendrick Young"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Danielle Elizabeth Erickson",
+        "Brian Alan Reiger",
+        "Steven  Rodriguez"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Morgan Michelle Cheatham",
+        "Ursala  Neuwirth",
+        "Brynn Lauren Steblay"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Kristin Fentress Beach",
+        "Aidan Brown O'Shea",
+        "Brynn Lauren Steblay"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Alice Anne Drozdiak Earley",
+        "Thomas Bradley Elrod",
+        "Rachel Anne Warren"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Sarah Elizabeth Ackley",
+        "Alexandria Elizabeth De Aranzeta",
+        "Thomas Bradley Elrod"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Student Name",
+        "Sarah Elizabeth Ackley",
+        "Sarah Elizabeth Ackley",
+        "Timothy James Leonard"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "0583_RU_Academic.jpg",
+        "senior-ceremony-P1020350.JPG",
+        "graduation_0294.JPG",
+        "lake-spain-program-6046.JPG",
+        "2016grouppic.png",
+        "lake-spain-program-4324.JPG",
+        "SpanPort_RU_Giving_Day_2022.jpg"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Jimenez.jpg",
+        "Crowdsourcing--Miguel-Jimenez.JPG",
+        "kim.jpg",
+        "marcone.jpg",
+        "Martin-Marquez Disorientations.png",
+        "martinmarquez.jpg",
+        "narvaez.jpg",
+        "otero.jpg",
+        "schwartz1.jpg",
+        "schwartz2.jpg",
+        "Invenciones_Urbanas-_Marcy_Schwartz.jpg",
+        "schwartz3.jpg",
+        "Public_Pages-_Marcy_Schwartz-web.jpg",
+        "stephens.jpg",
+        "Dictionary_of_Latin_American_Racial_and_Ethnic_Terminology-_TStephens.jpg",
+        "Family_and_Identity-_CStevens.jpg",
+        "Aqui_and_Alla-_Camilla_Stevens-web.jpg"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "11 Mar 2025;\n08:00AM - 06:00PM\nLatin American Online Film Festival",
+        "11 Mar 2025;\n08:00AM - 06:00PM\nLatin American Online Film Festival",
+        "11 Mar 2025;\n08:00AM - 06:00PM\nLatin American Online Film Festival"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Books",
+        "Journals",
+        "Articles & Fulltext Resources",
+        "Digital Libraries",
+        "Corpus Linguistics",
+        "Audiovisual Resources"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "French",
+        "Hispanic Studies (Languages, Literatures, and Cultures)",
+        "History",
+        "Judaic Studies",
+        "Latin American, Caribbean, and U.S. Latino Studies"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Academic Excellence",
+        "BIPOC",
+        "Faculty",
+        "LGBTQIA+"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Resources",
+        "Upcoming events",
+        "Research projects",
+        "Local and global community connections",
+        "Migrants should not be vilified",
+        "Migrants risk entering the U.S. through the desert",
+        "Putting race, economy and identity into sharp focus",
+        "Department head(s)",
+        "Justin Crumbaugh",
+        "Department and affiliated faculty",
+        "Dimaris Barrios-Beltr\u00e1n",
+        "Esther Castro Cuenca",
+        "Fl\u00e1via Terra Cunha",
+        "Elena Garc\u00eda Frazier",
+        "David Hern\u00e1ndez",
+        "Antonio Illescas",
+        "Adriana Pitetta",
+        "Nieves Romero-D\u00edaz",
+        "Vanessa Rosa",
+        "Megan Saltzman",
+        "Staff",
+        "Cara Lapenas",
+        "Department of Spanish, Latinx and Latin American Studies",
+        "Cara Lapenas"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.041666666666666664
+      }
+    },
+    {
+      "items": [
+        "Dimaris Barrios-Beltr\u00e1n\n\n\nVisiting Assistant Professor in Spanish",
+        "Esther Castro Cuenca\n\n\nSenior Lecturer in Spanish\n Spanish Language Program Director",
+        "Fl\u00e1via Terra Cunha\n\n\nLanguage Instructor in Spanish",
+        "Elena Garc\u00eda Frazier\n\n\nLanguage Instructor in Spanish",
+        "Antonio Illescas\n\n\nLanguage Instructor in Spanish",
+        "Adriana Pitetta\n\n\nAssistant Professor of Spanish",
+        "Nieves Romero-D\u00edaz\n\n\nProfessor of Spanish on the Alumnae Foundation\nOn leave spring 2025",
+        "Vanessa Rosa\n\n\nAssociate Professor of Latinx Studies and Critical Race and Political Economy",
+        "Megan Saltzman\n\n\nSenior Lecturer in Spanish"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "You may choose a topic that is related to the central theme of the course and is of interest to you.",
+        "Expand on a subject that is highlighted in one of your readings.",
+        "Browse online media to gather topic ideas.",
+        "Browse background sources to gather topic ideas."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Do I have a strong opinion on a subject?",
+        "Is there a topic that interested you from your readings?",
+        "Is there a topic that keeps coming to your mind?",
+        "Did you learn of a topic that called your attention in discussions with friends?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "How is\u00a0topic\u00a0X alike or different from topic Y?",
+        "How is your contribution\u00a0different from other authors?",
+        "How is the same topic covered by different authors?",
+        "Associate your topic with another\u00a0\n\t\nHow did\u00a0a topic happen in relation to another topic?",
+        "How did\u00a0a topic happen in relation to another topic?",
+        "Explain the significance of X and how you can measure this significance",
+        "Explore possibilities or outcomes\n\t\nWhat are the consequences of X\nHow does X affect Y",
+        "What are the consequences of X",
+        "How does X affect Y",
+        "What are the recommendations\u00a0you may offer to\u00a0the issue presented in your paper?",
+        "Argue for a particular stance\n\t\nPresent opposing views and argue in favor or against a view",
+        "Present opposing views and argue in favor or against a view"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Select a geographical area: country, region, state",
+        "Select a societal group: First Nations in South America, LGBTQ, Latinxs",
+        "Select a time period: Latin American dictatorships in the 1970's and 1980's"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Enciclopedia hisp\u00e1nica",
+        "Diccionario del espa\u00f1ol medieval",
+        "Diccionario etimol\u00f3gico latino-espa\u00f1ol"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Enciclopedia de Ling\u00fc\u00edstica Hisp\u00e1nica by Javier Gutierrez-Rexach (Editor)",
+        "ISBN: 9781138941380",
+        "Publication Date: 2015-12-21"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "NOT: This operator excludes search terms. The operator NOT is useful to filter searches.",
+        "Amazon\u00eda\u00a0AND\u00a0Brasil \u00a0AND conservaci\u00f3n OR \"p\u00e9rdida ecol\u00f3gica\"",
+        "Amazonas OR\u00a0Amazon\u00eda OR selva amaz\u00f3nica",
+        "ye\u00edsmo AND Uruguay OR devoicing OR diachronic approach OR dialectology",
+        "cine argentino\u00a0AND 1930's\u00a0OR\u00a0Argentine national cinema",
+        "transnational features OR influences of jazz AND\u00a0early Brazilian film musicals",
+        "Cine ind\u00edgena AND identidad NOT M\u00e9jico",
+        "fricatizaci\u00f3n AND /r/ OR fricaci\u00f3n OR frication OR genre OR g\u00e9nero",
+        "seseo OR ceceo AND Granada\u00a0OR Sevilla OR Andalu*",
+        "variaci\u00f3n ling\u00fcistica OR linguistic variation AND pr\u00e9stamos AND cambio de c\u00f3digo"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.1
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Dimaris Barrios-Beltr\u00e1n Visiting Assistant Professor in Spanish",
+        "Esther Castro Cuenca Senior Lecturer in Spanish Spanish Language Program Director",
+        "Fl\u00e1via Terra Cunha Language Instructor in Spanish",
+        "Elena Garc\u00eda Frazier Language Instructor in Spanish",
+        "Antonio Illescas Language Instructor in Spanish",
+        "Adriana Pitetta Assistant Professor of Spanish",
+        "Nieves Romero-D\u00edaz Professor of Spanish on the Alumnae Foundation On leave spring",
+        "Vanessa Rosa Associate Professor of Latinx Studies and Critical Race and Political Economy",
+        "Megan Saltzman Senior Lecturer in Spanish"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Our Voices/Nuestras Voces",
+        "Popol Wuj",
+        "Public Rituals in the Portuguese Empire Project"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "In the Classroom",
+        "In the World",
+        "Projects"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Ohio State navigation bar",
+        "Kawsay Ukhunchay Andean and Amazonian Indigenous Art and Cultural Artifacts Research Collection",
+        "Language Acquisition Lab",
+        "Sociolinguistics Lab",
+        "Speech Analysis Lab",
+        "Language Acquisition Lab",
+        "Sociolinguistics Lab",
+        "Speech Analysis Lab",
+        "Journals",
+        "Alter/nativas",
+        "La cor\u00f3nica",
+        "Textos H\u00edbridos",
+        "Journals",
+        "Alter/nativas",
+        "La cor\u00f3nica",
+        "Textos H\u00edbridos",
+        "Graduate Student Annual Conferences",
+        "Faculty Research & Area Studies",
+        "Other Initiatives"
+      ],
+      "output_list_from_llm": [
+        "Kawsay Ukhunchay Andean and Amazonian Indigenous Art and Cultural Artifacts Research Collection",
+        "Sociolinguistics Lab",
+        "Alter/nativas",
+        "La cor\u00f3nica",
+        "Textos H\u00edbridos"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "0583_RU_Academic.jpg",
+        "senior-ceremony-P1020350.JPG",
+        "graduation_0294.JPG",
+        "lake-spain-program-6046.JPG",
+        "2016grouppic.png",
+        "lake-spain-program-4324.JPG",
+        "SpanPort_RU_Giving_Day_2022.jpg"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Kawsay ukhunchay andean and amazonian indigenous art and cultural artifacts research collection",
+    "Sociolinguistics lab",
+    "Alter/nativas",
+    "La cor\u00f3nica",
+    "Textos h\u00edbridos"
+  ],
+  "error": null
+}

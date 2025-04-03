@@ -1,0 +1,1628 @@
+{
+  "level2_term": "digital curation",
+  "all_urls": [
+    "https://ijdc.net/",
+    "https://www.dcc.ac.uk/events/idcc17/call-papers",
+    "https://www.dcc.ac.uk/events/idcc20/call-papers",
+    "https://research.com/journal/international-journal-of-digital-curation",
+    "https://scispace.com/journals/international-journal-of-digital-curation-274okrd6",
+    "https://ijdc.net/ijdc/about",
+    "https://www.dpconline.org/news/19th-international-digital-curation-conference-call-for-papers-now-open",
+    "https://researcher.life/journal/international-journal-of-digital-curation/24167",
+    "http://www.mtsr-conf.org/track/digital-humanities-digital-curation",
+    "https://libraryjuiceacademy.com/certificate/digital-curation/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Announcements",
+        "Current Issue",
+        "Latest publications",
+        "Information"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "International Data Week 2025",
+        "Research Papers",
+        "General Articles",
+        "Conference Papers",
+        "Brief Reports"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.4,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Governance principles for curating data as a public good",
+        "Data management and stewardship planning; from compliance to \u2018active DMPs\u2019",
+        "Measuring open data compliance: what metrics, and for what outputs?",
+        "Addressing copyright challenges for text and data mining",
+        "Evaluating data policy: is it delivering the outcomes we want?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Competence and capability models for open science and data science",
+        "Curriculum development and training initiatives to bridge the data and domain skills gap",
+        "Recognising data and software skills in academic and professional career development"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Managing de-identified data from analysis to archiving",
+        "Providing services for sensitive data at the institutional level",
+        "Ethical challenges of sensitive data in multi-disciplinary settings",
+        "Making sensitive data safely reusable: approaches and lessons learned"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Measuring data value for scholarly, scientific, business or social benefit",
+        "Using citizen participation to inspire reusable digital resources",
+        "Challenges in constructing community data resources and reference collections",
+        "Generic solutions for managing disciplinary metadata"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Metadata for machine actionable service catalogues and discovery",
+        "Supporting users to find data from domains unfamiliar to them",
+        "Skills and rewards in data journals and data journalism",
+        "Challenges of publishing corpora in the humanities and social sciences",
+        "Supporting researchers on data mining and data visualization"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Policy harmonisation and monitoring for a joined-up data world",
+        "Capacity development for open science skills and readiness",
+        "Reproducibility and provenance across research workflows",
+        "Sensitivity, ethical data management",
+        "Reusability of digital collections",
+        "Discoverability and data publishing",
+        "Accommodation",
+        "Birds of a Feather (BoFs)",
+        "Call for Papers",
+        "Demonstrations",
+        "News from IDCC 2017",
+        "Posters",
+        "Programme",
+        "Registration",
+        "Research & Practice Papers",
+        "Social Events",
+        "Speakers",
+        "Submission Dates",
+        "Submissions",
+        "Supporters",
+        "Workshop submissions",
+        "Workshops"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 23,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.21739130434782608,
+        "length_consistency": true,
+        "pattern_ratio": 0.13043478260869565,
+        "keyword_ratio": 0.34782608695652173
+      }
+    },
+    {
+      "items": [
+        "Participatory archiving, citizen science and radical collaboration",
+        "The people behind the data \u2013 acknowledging their role, influence and bias",
+        "Climate change and digital curation \u2013 what might our work look like in 20-50 years?",
+        "Partner and prosper \u2013 how content creators and curators should come together"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Frameworks to certify services as trustworthy and robust",
+        "Persistence: all kinds of identifiers and their role in ensuring trust",
+        "Disruptive technologies and their role in automated verification and authentication",
+        "Rethinking repositories into active research spaces and collaborative partners",
+        "In the era of fake news, how do we trust digital content and its representations in media?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Lessons learned from the review, evaluation and re-validation of curated content",
+        "Curation workflows: linkages between digital triage, preservation actions and archiving",
+        "Managing de-accession \u2013 when does content lose its value?",
+        "National and global approaches to addressing digital preservation challenges",
+        "Preservation at scale: how can we collaborate and partner on preservation?",
+        "Preservation challenges in the humanities, social sciences and cultural heritage",
+        "Long term preservation failures \u2013 lessons learnt",
+        "Open source technologies and open standards for long term preservation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Accommodation",
+        "Call for Papers",
+        "Delegate List",
+        "Digital Repository of Ireland",
+        "Dublin",
+        "Prize Winners",
+        "Our Supporters",
+        "Posters",
+        "Programme",
+        "Registration",
+        "Social events",
+        "Speakers",
+        "Submissions",
+        "Support IDCC20",
+        "Unconference",
+        "VISA information",
+        "Workshops"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.11764705882352941,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.23529411764705882
+      }
+    },
+    {
+      "items": [
+        "Social, political and cultural implications of digital curation",
+        "Trust: assessing content and containers",
+        "Data stewardship",
+        "Preservation planning",
+        "How to submit"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "World Wide Web (35.79%)",
+        "Knowledge management (21.26%)",
+        "Data science (20.84%)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The DCC Curation Lifecycle Model (153 citations)",
+        "Digital Curation for Science, Digital Libraries, and Individuals (105 citations)",
+        "Constructing Data Curation Profiles (99 citations)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sarah Jones (11 papers) absent at the last edition,",
+        "Alexander Ball (11 papers) absent at the last edition,",
+        "Matthew S. Mayernik (9 papers) published 1 paper at the last edition,",
+        "Andrew Treloar (9 papers) absent at the last edition,",
+        "Liz Lyon (9 papers) absent at the last edition."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "University of Illinois at Urbana\u2013Champaign (8 papers) absent at the last edition,",
+        "University of Edinburgh (6 papers) absent at the last edition,",
+        "University of Glasgow (5 papers) absent at the last edition,",
+        "University of Pittsburgh (5 papers) absent at the last edition,",
+        "Science and Technology Facilities Council (4 papers) absent at the last edition."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "ISSN:\n1746-8256",
+        "Publisher:",
+        "Editors-in-Chief:\n\n                                                    Kevin Ashley",
+        "Journal & Submission Website:\n\n    http://www.ijdc.net"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "James Cheney\n\nUniversity of Edinburgh\nPublications: 1",
+        "Hosagrahar V. Jagadish\n\nUniversity of Michigan\u2013Ann Arbor\nPublications: 1",
+        "David De Roure\n\nUniversity of Oxford\nPublications: 1",
+        "Andreas Rauber\n\nTU Wien\nPublications: 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Kevin Crowston\n\nSyracuse University\nPublications: 1",
+        "Bertram Lud\u00e4scher\n\nUniversity of Illinois at Urbana-Champaign\nPublications: 1",
+        "Carol Tenopir\n\nUniversity of Tennessee at Knoxville\nPublications: 1",
+        "Paolo Missier\n\nNewcastle University\nPublications: 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "How to Become a Data Scientist in 2024",
+        "How to Become a Software Developer: Step-By-Step Guide for 2024",
+        "Best Online Computer Science Degree Programs in 2024"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Database Management Careers: 2024 Guide to Career Paths, Options & Salary",
+        "How to Become a Cybersecurity Engineer: Salary, Education and Job Outlook in 2025",
+        "Best Online Master\u2019s in Computer Science Programs in 2024"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Best Online Coding Bootcamps for 2025",
+        "Computer Programming Careers: 2024 Guide to Career Paths & Salary",
+        "Automotive Technology Degree Guide: 2024 Costs, Requirements & Job Opportunities"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Best Online Data Analytics Degree Programs of 2024",
+        "Best Online Computer Programming Degree Programs in 2024",
+        "Most Affordable Master\u2019s in Computer Science Online for 2024"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Best Online Accelerated Computer Science Degree Programs in 2024",
+        "Best Online Bachelor\u2019s Degrees in Web Design: Guide to Online Programs for 2024",
+        "Is a Computer Science Degree Worth It in 2024? ROI, Cost, Career Outlook, & More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Most Affordable Online Cybersecurity Degrees in 2024",
+        "Online Master\u2019s in Computer Science Programs for Non-CS Majors in 2024",
+        "15 Best Coding Bootcamps in 2024"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Most Affordable Online Graphic Design Degrees for 2025",
+        "Best Online Computer Programming Bachelor\u2019s Degree: Guide to Online Programs for 2024",
+        "How to Become a Computer Hardware Engineer: Step-By-Step Guide for 2024"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Cost of Online MBA Programs for 2025",
+        "10 Best Accredited Non-Profit Online Universities for 2025",
+        "Fastest Online Business Administration Degree Programs for 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Best Master\u2019s in Genetics Programs for 2025",
+        "Public Relations Degree Guide: 2025 Costs, Requirements & Job Opportunities",
+        "How to Become a Licensed Counselor (LPC) in Washington for 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "How to Become a Licensed Counselor (LPC) in North Carolina for 2025",
+        "How to Become a Nutritionist in Ohio for 2025",
+        "10 Easiest DNP Programs for 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Most Affordable Online School Counseling Degrees for 2025",
+        "Most Affordable Online Exercise Science Degree Programs for 2025",
+        "Best Accelerated Accounting Degree Programs Online for 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Minnesota Psychology Licensure Requirements \u2013 How to Become a Psychologist in Minnesota for 2025",
+        "Best Online MBA Programs Under 30k for 2025",
+        "Best Online Bachelor\u2019s Degrees in Finance: Guide to Online Programs for 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Careers for Biology Majors That Pay Well for 2025",
+        "Best Shortest Online PMHNP Certificate Programs for 2025",
+        "Best Online Doctorate in Higher Education Programs for 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Most Affordable Online Accounting Degree Programs for 2025",
+        "Highest Paying Jobs for Women for 2025: Salary, Job Outlook, Duties, & Requirements",
+        "Healthcare Administration Degree Guide: 2025 Costs, Requirements & Job Opportunities"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "10, top 11",
+        "20, top 21",
+        "50, and top 51+. Only articles with a recognized affiliation are considered."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Chat with PDF",
+        "Literature Review",
+        "AI Writer",
+        "Find Topics",
+        "Paraphraser",
+        "Citation Generator",
+        "Extract Data",
+        "AI Detector",
+        "PDF to Video",
+        "Affiliate Program",
+        "iOS App",
+        "Chrome Extension",
+        "Use on ChatGPT",
+        "Contact Us"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.07142857142857142,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "\u2022Journal\u2022 ISSN: 1746-8256",
+        "University of Edinburgh",
+        "Topics:\u00a0Data curation, Digital curation, Computer science, Data management, Metadata\u00a0...read more",
+        "Trace this journalShare"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Journal Article\u202210.2218/IJDC.V3I1.48\u2022",
+        "The DCC Curation Lifecycle Model[...]",
+        "Sarah Higgins1\u2022Institutions (1)University of Edinburgh1",
+        "02 Dec\u00a02008-International Journal of Digital Curation",
+        "PDFGo to Paper",
+        "246\u00a0citationsSaveShare"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Journal Article\u202210.2218/IJDC.V1I1.2\u2022",
+        "Digital Curation for Science, Digital Libraries, and Individuals[...]",
+        "Neil Beagrie",
+        "02 Dec\u00a02008-International Journal of Digital Curation",
+        "PDFGo to Paper",
+        "177\u00a0citationsSaveShare"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Journal Article\u202210.2218/IJDC.V4I3.117\u2022",
+        "Constructing Data Curation Profiles[...]",
+        "Michael Witt, Jacob Carlson, D. Scott Brandt, Melissa H. Cragin",
+        "07 Dec\u00a02009-International Journal of Digital Curation",
+        "PDFGo to Paper",
+        "149\u00a0citationsSaveShare"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Michael Witt",
+        ", Jacob Carlson",
+        ", D. Scott Brandt",
+        ", Melissa H. Cragin"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal Article\u202210.2218/IJDC.V6I2.205\u2022",
+        "Citation and Peer Review of Data: Moving Towards Formal Data Publication[...]",
+        "Bryan Lawrence, Catherine Jones, Brian Matthews, Sam Pepler, Sarah Callaghan\u00a0 - Show less +1 more",
+        "26 Jul\u00a02011-International Journal of Digital Curation",
+        "PDFGo to Paper",
+        "141\u00a0citationsSaveShare"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Bryan Lawrence",
+        ", Catherine Jones",
+        ", Brian Matthews",
+        ", Sam Pepler",
+        ", Sarah Callaghan",
+        "- Show less +1 more"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Make an initial assessment of its validity",
+        "Acknowledge receipt of the complaint by email",
+        "For all but spurious complaints, cease access to the item that is subject to complaint",
+        "Refer the complaint to the University's Legal Advisor for comment and advice",
+        "Seek to verify your identity and authority as complainant."
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "__utma",
+        "__utmb",
+        "__utmc",
+        "__utmv",
+        "__utmz"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Registered users",
+        "Authors",
+        "Website visitors",
+        "Rights of the Individual"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "- provide results or data of use to the reader",
+        "- contribute something new to an existing debate",
+        "- provide a solution to a problem, new or existing",
+        "- impart experience or findings which assist others"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "On receipt of your complaint, the Scholarly Communications Team will:",
+        "If the Legal Advisor confirms that it does not breach any law then the item will be reinstated.",
+        "Email: edinburgh.diamond@ed.ac.uk",
+        "Please note the Library is staffed 9-5pm Monday-Friday",
+        "If you have a user account and wish to have it deleted, please email ijdc@ed.ac.uk."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Also in this section",
+        "Vacancies",
+        "New Members of the DPC"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Scope & Metrics",
+        "Journal Specification",
+        "Published Literature",
+        "Compare JournalsNew"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Degree of match",
+        "Common matching concepts",
+        "Additional journal recommendations"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Degree of match",
+        "Common matching concepts",
+        "Additional journal recommendations"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "75 Supporting",
+        "3,780 Mentioning",
+        "10 Contrasting"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "0Retractions",
+        "0Withdrawals",
+        "0Corrections",
+        "0Errata",
+        "0Expression of Concern"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Topics Covered on International Journal of Digital Curation",
+        "International Journal of Digital Curation Journal Specifications",
+        "Recently Published Papers in International Journal of Digital Curation",
+        "Compare Similar Journals with International Journal of Digital Curation",
+        "International Journal of Digital Curation Scite analysis",
+        "FAQs on International Journal of Digital Curation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Check your submission readiness",
+        "Planning to publish in International Journal of Digital Curation ?",
+        "Data Science Journal",
+        "Lecture Notes in Computer Science",
+        "Communications in Computer and Information Science",
+        "Journal of eScience Librarianship",
+        "F1000Research",
+        "DIGITAL LIBRARY PERSPECTIVES",
+        "USEFUL LINKS"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Agricultural Sciences",
+        "Anatomy",
+        "Animal Studies",
+        "Astrobiology",
+        "Biochemical",
+        "Bioinformatics",
+        "Biological Systems",
+        "Biophysical",
+        "Biotechnology",
+        "Botanical",
+        "Cancer",
+        "Cancer Research",
+        "Cell Biology",
+        "Computational Biology",
+        "Ecological"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.06666666666666667,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.06666666666666667
+      }
+    },
+    {
+      "items": [
+        "Data Science JournalView Publisher: Ubiquity Press",
+        "Lecture Notes in Computer ScienceView Publisher: Springer Nature",
+        "Communications in Computer and Information ScienceView Publisher: Springer Nature",
+        "F1000ResearchView Publisher: Taylor & Francis",
+        "DIGITAL LIBRARY PERSPECTIVESView Publisher: EMERALD GROUP PUBLISHING LTD"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "What is semantics?",
+        "Which benefits come from semantic technologies for cultural heritage?",
+        "In what ways can semantics improve Digital Humanities?",
+        "How can we combine Digital Curation and semantic technologies?",
+        "How should semantics affect the way information is presented?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Wolf-Tilo Balke, TU Braunschweig, Germany",
+        "Francesca Fallucchi, Guglielmo Marconi University, Italy",
+        "Ana Garc\u00eda-Serrano, ETSI Informatica - UNED, Spain",
+        "Elena Gonz\u00e1lez-Blanco, Universidad Nacional de Educaci\u00f3n a Distancia, Spain",
+        "Ivo Keller, TH Brandenburg, Germany",
+        "Andreas Lommatzsch, TU Berlin, Germany",
+        "Philipp Mayr, GESIS, Germany",
+        "Gabriela Ossenbach, UNED, Spain",
+        "Noemi Scarpato, San Raffaele Roma Open University, Italy",
+        "Armando Stellato, University of Rome, Tor Vergata, Italy",
+        "Andrea Turbati, University of Rome Tor Vergata, Italy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "MTSR '24",
+        "MTSR '23",
+        "MTSR '22",
+        "MTSR '21",
+        "MTSR '20",
+        "MTSR '19",
+        "MTSR '18",
+        "MTSR '17",
+        "MTSR '16",
+        "MTSR '15",
+        "MTSR '14",
+        "MTSR '13",
+        "MTSR '12",
+        "MTSR '11",
+        "MTSR '10",
+        "MTSR '09",
+        "MTSR '07",
+        "MTSR '05"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vol. TBA",
+        "Vol. 1537",
+        "Vol. 1355",
+        "Vol. 1057",
+        "Vol. 846",
+        "Vol. 755",
+        "Vol. 672",
+        "Vol. 544",
+        "Vol. 478",
+        "Vol. 390",
+        "Vol. 343",
+        "Vol. 240",
+        "Vol. 108",
+        "Vol. 46",
+        "Vol. 16",
+        "Proceedings"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    },
+    {
+      "items": [
+        "Eckert",
+        "Institute",
+        "Leibniz",
+        "Institute for international Textbook Research, Germany"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Eckert",
+        "Institute",
+        "Leibniz",
+        "Institute for international Textbook Research, Germany"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Online professional development for librarians",
+        "How it Works",
+        "Review in Catalog and Index journal",
+        "Bundle discounts",
+        "Join our Mailing List"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Digital Curation Series Bundle",
+        "Ethics and Sustainability for Digital Curation",
+        "Digital Repository Fundamentals and Design",
+        "Introduction to Digital Preservation",
+        "Metadata and Description for Digital Special Collections",
+        "Fundamentals of Digital Curation in Libraries, Archives, and Museums",
+        "Appraisal and Collection Development for Digital Special Collections"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Sarah Jones (11 papers) absent at the last edition,",
+        "Alexander Ball (11 papers) absent at the last edition,",
+        "Matthew S. Mayernik (9 papers) published 1 paper at the last edition,",
+        "Andrew Treloar (9 papers) absent at the last edition,",
+        "Liz Lyon (9 papers) absent at the last edition."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "University of Illinois at Urbana\u2013Champaign (8 papers) absent at the last edition,",
+        "University of Edinburgh (6 papers) absent at the last edition,",
+        "University of Glasgow (5 papers) absent at the last edition,",
+        "University of Pittsburgh (5 papers) absent at the last edition,",
+        "Science and Technology Facilities Council (4 papers) absent at the last edition."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Topics Covered on International Journal of Digital Curation",
+        "International Journal of Digital Curation Journal Specifications",
+        "Recently Published Papers in International Journal of Digital Curation",
+        "Compare Similar Journals with International Journal of Digital Curation",
+        "International Journal of Digital Curation Scite analysis",
+        "FAQs on International Journal of Digital Curation"
+      ],
+      "output_list_from_llm": [
+        "Topics Covered on International Journal of Digital Curation"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "James Cheney University of Edinburgh Publications:",
+        "Hosagrahar V. Jagadish University of Michigan\u2013Ann Arbor Publications:",
+        "David De Roure University of Oxford Publications:",
+        "Andreas Rauber TU Wien Publications:"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Kevin Crowston Syracuse University Publications:",
+        "Bertram Lud\u00e4scher University of Illinois at Urbana-Champaign Publications:",
+        "Carol Tenopir University of Tennessee at Knoxville Publications:",
+        "Paolo Missier Newcastle University Publications:"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Topics covered on international journal of digital curation"
+  ],
+  "error": null
+}

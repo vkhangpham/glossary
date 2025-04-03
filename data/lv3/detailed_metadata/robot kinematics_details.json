@@ -1,0 +1,3561 @@
+{
+  "level2_term": "robot kinematics",
+  "all_urls": [
+    "https://asmedigitalcollection.asme.org/IDETC-CIE/IDETC-CIE2024/volume/88414",
+    "https://www.mdpi.com/journal/robotics/special_issues/VXGEC1WKX7",
+    "https://asmejmr.org/home-new/asme-jmr-call-for-papers/",
+    "https://guides.lib.umich.edu/c.php?g=962470&p=6951518",
+    "https://www.quora.com/What-topics-should-I-select-to-submit-a-paper-based-on-robotics-and-mechatronics-in-an-upcoming-international-conference",
+    "https://onlinelibrary.wiley.com/journal/9140",
+    "https://asmedigitalcollection.asme.org/mechanismsrobotics/issue/15/6",
+    "https://www.mdpi.com/journal/machines/special_issues/7K21Q6202L",
+    "https://asmejmr.org/",
+    "https://link.springer.com/journal/10846"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Front Matter",
+        "48th Mechanisms and Robotics Conference (MR)",
+        "Mechanisms Synthesis & Analysis",
+        "Theoretical & Computational Kinematics (A.T. Yang Symposium)",
+        "Compliant Mechanisms (A. Midha Symposium)",
+        "Origami-Based Engineering Design",
+        "Motion Planning, Dynamics, and Control of Robots",
+        "Medical and Rehabilitation Robotics",
+        "Novel Mechanisms, Robots, and Applications",
+        "Soft and Continuum Mechanisms",
+        "ASME Journals",
+        "ASME Conference Proceedings",
+        "ASME eBooks",
+        "Resources",
+        "Opportunities"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.13333333333333333,
+        "keyword_ratio": 0.26666666666666666
+      }
+    },
+    {
+      "items": [
+        "Latifah Nurahmi, Vu Linh Nguyen",
+        "IDETC-CIE 2024; V007T07A001https://doi.org/10.1115/DETC2024-142830",
+        "Topics:\n\n Design \n,\n Manipulators \n,\n Reactor protection systems \n,\n Springs"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Anar Nurizada",
+        "Zhijie Lyu",
+        "Anurag Purwar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sebastian Sonntag",
+        "Vincent Br\u00fcnjes",
+        "Janosch Luttmer",
+        "Burkhard Corves",
+        "Arun Nagarajah"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chiara Lanni, Giorgio Figliolini, Luciano Tomassi",
+        "IDETC-CIE 2024; V007T07A004https://doi.org/10.1115/DETC2024-144813",
+        "Topics:\n\n Kinematics \n,\n Suspension systems"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Chiara Lanni",
+        "Giorgio Figliolini",
+        "Luciano Tomassi"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Xueting Deng, Anar Nurizada, Anurag Purwar",
+        "IDETC-CIE 2024; V007T07A005https://doi.org/10.1115/DETC2024-146416",
+        "Topics:\n\n Artificial neural networks \n,\n Machine learning"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Xueting Deng",
+        "Anar Nurizada",
+        "Anurag Purwar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zihan Yu",
+        "Qiaode Jeffrey Ge",
+        "Mark P. Langer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Estefania Hermoza Llanos",
+        "Myung-Jin Choi",
+        "Roger A. Sauer",
+        "Burkhard Corves",
+        "Mathias Huesing",
+        "Sven Klinkel",
+        "Anupam Saxena"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mitchel Skinner",
+        "Andrew Geyser",
+        "Brandon Sargent",
+        "Spencer Magleby",
+        "Larry Howell"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Patrick V. L. Piening, Marijn Nijenhuis, Ronald G. K. M. Aarts, Dannis M. Brouwer",
+        "IDETC-CIE 2024; V007T07A012https://doi.org/10.1115/DETC2024-142820",
+        "Topics:\n\n Compliant mechanisms \n,\n Kinematics \n,\n Optimization \n,\n Parallel mechanisms"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Patrick V. L. Piening",
+        "Marijn Nijenhuis",
+        "Ronald G. K. M. Aarts",
+        "Dannis M. Brouwer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Simone Serafino",
+        "Luca Bruzzone",
+        "Pietro Fanghella",
+        "Matteo Verotti"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hamid Moeenfard",
+        "Siddharth Rath",
+        "Shorya Awtar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Wilbert E. Kamphof, Marijn Nijenhuis, Jan W. Kragt, Mirka A. Lewi\u0144ska-Maresca, Dannis M. Brouwer",
+        "IDETC-CIE 2024; V007T07A015https://doi.org/10.1115/DETC2024-143642",
+        "Topics:\n\n Compliant mechanisms \n,\n Design \n,\n Hinges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Wilbert E. Kamphof",
+        "Marijn Nijenhuis",
+        "Jan W. Kragt",
+        "Mirka A. Lewi\u0144ska-Maresca",
+        "Dannis M. Brouwer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vineet K. Mohanty",
+        "Sukesh Jagannathan Ranganathan",
+        "Haris Raja Vallinayagam",
+        "Milton E. Aguirre"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Bethany Parkinson",
+        "Austin Martel",
+        "Davis Wing",
+        "Spencer Magleby"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Michael Freeman, Conor Schott, Andrew Carr, Carter Josef, Col Cook, Mohammad H. Hasan",
+        "IDETC-CIE 2024; V007T07A020https://doi.org/10.1115/DETC2024-138295",
+        "Topics:\n\n Robots"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Michael Freeman",
+        "Conor Schott",
+        "Andrew Carr",
+        "Carter Josef",
+        "Col Cook",
+        "Mohammad H. Hasan"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pritam Ojha, Shuchi Saxena, Atul Thakur",
+        "IDETC-CIE 2024; V007T07A021https://doi.org/10.1115/DETC2024-143664",
+        "Topics:\n\n Buoyancy \n,\n Origami-inspired design \n,\n Robots"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Pritam Ojha",
+        "Shuchi Saxena",
+        "Atul Thakur"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Brenon McKaelin Edralin, Nathan Coleman, Denise Halverson",
+        "IDETC-CIE 2024; V007T07A022https://doi.org/10.1115/DETC2024-143776",
+        "Topics:\n\n Circuits \n,\n Modeling"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Brenon McKaelin Edralin",
+        "Nathan Coleman",
+        "Denise Halverson"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Venkata Naren Devarakonda, Tankala Satya Sai, Bijo Sebastian",
+        "IDETC-CIE 2024; V007T07A023https://doi.org/10.1115/DETC2024-141919",
+        "Topics:\n\n Mobile robots"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Venkata Naren Devarakonda",
+        "Tankala Satya Sai",
+        "Bijo Sebastian"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kuan-Hsien Lee, Kuei-Yuan Chan",
+        "IDETC-CIE 2024; V007T07A024https://doi.org/10.1115/DETC2024-142447",
+        "Topics:\n\n Multi-robot systems \n,\n Path planning \n,\n Transportation systems"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Jabez Kit Leong",
+        "Brandon J. Lawrence",
+        "Gim Song Soh"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nicolas Gautier, Yves Guillermit, Yazid Sebsadji, Mathieu Porez, Damien Chablat",
+        "IDETC-CIE 2024; V007T07A026https://doi.org/10.1115/DETC2024-143459",
+        "Topics:\n\n Robots \n,\n Welding"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Nicolas Gautier",
+        "Yves Guillermit",
+        "Yazid Sebsadji",
+        "Mathieu Porez",
+        "Damien Chablat"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sidney L. Molnar, Jeffrey W. Herrmann",
+        "IDETC-CIE 2024; V007T07A027https://doi.org/10.1115/DETC2024-143525",
+        "Topics:\n\n Failure \n,\n Path planning \n,\n Robots \n,\n Algorithms \n,\n Navigation \n,\n Simulation"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Maitha AlQaydi",
+        "Ziqing Yu",
+        "Lei Jin",
+        "Ahmad AlAttar",
+        "Tarek Taha",
+        "Dongming Gan"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jonas G. E. Epp",
+        "Madison K. Ours",
+        "Payton A. Chaplinski",
+        "Alexander H. Pesch"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jacob Anthony, Chad Ballard, Chung-Hyun Goh, Jacob Carr, Woohyoung Jeon",
+        "IDETC-CIE 2024; V007T07A030https://doi.org/10.1115/DETC2024-143328",
+        "Topics:\n\n Control systems \n,\n Gravity (Force) \n,\n Reinforcement learning"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Jacob Anthony",
+        "Chad Ballard",
+        "Chung-Hyun Goh",
+        "Jacob Carr",
+        "Woohyoung Jeon"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abhijit Nagchaudhuri, Jesuraj Pandya, Lance Ward, Brian Butler, Jackson Cuppett, Parker Wilson",
+        "IDETC-CIE 2024; V007T07A032https://doi.org/10.1115/DETC2024-142269",
+        "Topics:\n\n Mobile robots \n,\n Precision agriculture \n,\n Robotics"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Abhijit Nagchaudhuri",
+        "Jesuraj Pandya",
+        "Lance Ward",
+        "Brian Butler",
+        "Jackson Cuppett",
+        "Parker Wilson"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Christian Kazoleas",
+        "Jiajun Zhang",
+        "Na Tan",
+        "Sichen Yuan"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Shuojie Li, Xiangxian Zeng, Chin-Hsing Kuo",
+        "IDETC-CIE 2024; V007T07A035https://doi.org/10.1115/DETC2024-143022",
+        "Topics:\n\n Design \n,\n Gravity (Force) \n,\n Magnetic fields \n,\n Magnets \n,\n Permanent magnets"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Shuojie Li",
+        "Xiangxian Zeng",
+        "Chin-Hsing Kuo"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Bikram Koirala",
+        "Guoyang Shen",
+        "Huy Canh Nguyen",
+        "Jiming Kang",
+        "Abdollah Zakeri",
+        "Venkatesh Balan",
+        "Fatima Merchant",
+        "Driss Benhaddou",
+        "Weihang Zhu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lingfeng Gao",
+        "Xiaoping Zhu",
+        "Masato Tanaka",
+        "Yuyang Song",
+        "Yuqing Zhou",
+        "Xianfeng David Gu",
+        "Shikui Chen"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jiayu Luo, Muhammad Hammad Alvi, Han Lin, Xiaotong Huang, Dongming Gan",
+        "IDETC-CIE 2024; V007T07A038https://doi.org/10.1115/DETC2024-143364",
+        "Topics:\n\n Deflection \n,\n Design \n,\n Modeling \n,\n Stiffness \n,\n Trajectories (Physics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Jiayu Luo",
+        "Muhammad Hammad Alvi",
+        "Han Lin",
+        "Xiaotong Huang",
+        "Dongming Gan"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nicola Pio Belfiore, Serena Coppola, Alessandro Muccichini, Cristiano Piroddi, Matteo Verotti",
+        "IDETC-CIE 2024; V007T07A039https://doi.org/10.1115/DETC2024-143466",
+        "Topics:\n\n Design \n,\n Microelectromechanical systems \n,\n Stability \n,\n Torque \n,\n Actuators"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Nicola Pio Belfiore",
+        "Serena Coppola",
+        "Alessandro Muccichini",
+        "Cristiano Piroddi",
+        "Matteo Verotti"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Han Wei (Kelvin) Ang, Carl A. Nelson",
+        "IDETC-CIE 2024; V007T07A040https://doi.org/10.1115/DETC2024-143628",
+        "Topics:\n\n Cables \n,\n Gravity (Force) \n,\n Modeling \n,\n Robots"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Benjamin L. Zwiener, Carl A. Nelson",
+        "IDETC-CIE 2024; V007T07A041https://doi.org/10.1115/DETC2024-143637",
+        "Topics:\n\n Compliant mechanisms \n,\n Stiffness"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Kodidasu Pranav, Kadali Mani Sankar, Atul Thakur",
+        "IDETC-CIE 2024; V007T07A042https://doi.org/10.1115/DETC2024-143646",
+        "Topics:\n\n Robots"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Kodidasu Pranav",
+        "Kadali Mani Sankar",
+        "Atul Thakur"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mason Rollans, W. Seth Nelson, Ryan Howell, Ian Monk, Denise Halverson",
+        "IDETC-CIE 2024; V007T07A043https://doi.org/10.1115/DETC2024-143723",
+        "Topics:\n\n Construction \n,\n Design \n,\n Design methodology \n,\n Mathematics"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Mason Rollans",
+        "W. Seth Nelson",
+        "Ryan Howell",
+        "Ian Monk",
+        "Denise Halverson"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zachary Ochitwa",
+        "Reza Fotouhi",
+        "Haron Obaid"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Yiyu Chen",
+        "Shengqiang Chen",
+        "Xiaopan Zhang",
+        "Dario Racano",
+        "Stavros G. Vougioukas",
+        "Quan Nguyen",
+        "Satyandra K. Gupta"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Xiangyu Wang",
+        "Siqin Dong",
+        "Krishnanand Kaipa"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Liang-Chi Chen",
+        "Jeng-Yu Chiou",
+        "Kuan-Lan Hsu",
+        "Tsung-Han Huang",
+        "Wei-Song Hung",
+        "Brijesh Patel",
+        "Po Ting Lin"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Parsa Molaei",
+        "Terrilyn A. Legier",
+        "Hunter B. Gilbert"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Close Modal",
+        "Close Modal",
+        "This Feature Is Available To Subscribers Only\nSign In or Create an Account\n\nClose Modal",
+        "Close Modal"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vol.\u00a014\u00a0(2025)",
+        "Vol.\u00a013\u00a0(2024)",
+        "Vol.\u00a012\u00a0(2023)",
+        "Vol.\u00a011\u00a0(2022)",
+        "Vol.\u00a010\u00a0(2021)",
+        "Vol.\u00a09\u00a0(2020)",
+        "Vol.\u00a08\u00a0(2019)",
+        "Vol.\u00a07\u00a0(2018)",
+        "Vol.\u00a06\u00a0(2017)",
+        "Vol.\u00a05\u00a0(2016)",
+        "Vol.\u00a04\u00a0(2015)",
+        "Vol.\u00a03\u00a0(2014)",
+        "Vol.\u00a02\u00a0(2013)",
+        "Vol.\u00a01\u00a0(2012)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Related Special Issues",
+        "Published Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.8571428571428571
+      }
+    },
+    {
+      "items": [
+        "Synthesis of mechanisms;",
+        "Theoretical and computational kinematics;",
+        "Robot modeling and simulation;",
+        "Kinematics in robot control;",
+        "Position analysis;",
+        "Mobility and singularity analysis;",
+        "Performance measures;",
+        "Accuracy analysis;",
+        "Path planning and obstacle avoidance;",
+        "Novel manipulator architectures;",
+        "Metamorphic mechanisms;",
+        "Compliant mechanism analysis and synthesis;",
+        "Micro/nano manipulator design;",
+        "Origami-based robotics;",
+        "Medical and rehabilitation robotics;",
+        "Kinematics in biological systems, humanoid robots, and humanoid subsystems;",
+        "Education in robotics."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.23529411764705882
+      }
+    },
+    {
+      "items": [
+        "mechanism synthesis",
+        "kinematic analysis",
+        "robot modeling and simulation",
+        "robot control",
+        "singularity analysis",
+        "performance measures",
+        "accuracy analysis",
+        "path planning",
+        "parallel manipulator",
+        "serial manipulator",
+        "robot design",
+        "compliant mechanism",
+        "micro/nano manipulator",
+        "origami",
+        "medical and rehabilitation robotics",
+        "biomechanics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1875
+      }
+    },
+    {
+      "items": [
+        "Kinematics and Robot Design VI, KaRD2023 in Robotics (11 articles)",
+        "Kinematics and Robot Design I, KaRD2018 in Robotics (14 articles)",
+        "Kinematics and Robot Design II, KaRD2019 in Robotics (7 articles)",
+        "Kinematics and Robot Design III, KaRD2020 in Robotics (10 articles)",
+        "Kinematics and Robot Design IV, KaRD2021 in Robotics (12 articles)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share This Special Issue",
+        "Special Issue Editor",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Related Special Issues",
+        "Published Papers (13 papers)",
+        "Error",
+        "Research",
+        "Review",
+        "Error",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 23,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.21739130434782608,
+        "length_consistency": true,
+        "pattern_ratio": 0.043478260869565216,
+        "keyword_ratio": 0.34782608695652173
+      }
+    },
+    {
+      "items": [
+        "Prof. Dr.             Raffaele Di Gregorio",
+        "E-Mail",
+        "Website"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "SciProfiles",
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Robotics: Kinematics and Robot Design I, KaRD2018",
+        "Robotics: Kinematics and Robot Design II, KaRD2019",
+        "Robotics: Kinematics and Robot Design III, KaRD2020",
+        "Robotics: Kinematics and Robot Design IV, KaRD2021",
+        "Machines: Machines, Mechanisms and Robots: Theory and Applications",
+        "Robotics: Kinematics and Robot Design VI, KaRD2023"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Scientific Committee",
+        "- Massimo Callegari, Polytechnic University of Marche (Italy)",
+        "- Juan Antonio Carretero, University of New Brunswick (Canada)",
+        "- Yan Chen, Tianjin University (China)",
+        "- Daniel Condurache, \u201cGheorghe Asachi\u201d Technical University of Ia\u0219i (Romania)",
+        "- Xilun Ding, Beijing University of Aeronautics & Astronautics (China)",
+        "- Mary Frecker, Penn State - College of Engineering (USA)",
+        "- Clement Gosselin, Laval University (Canada)",
+        "- Just Herder, TU Deft (Netherlands)",
+        "- Larry Howell, Brigham Young University (USA)",
+        "- Xianwen Kong, Heriot-Watt University (UK)",
+        "- Pierre Larochelle, South Dakota School of Mines & Technology (USA)",
+        "- Giovanni Legnani, University of Brescia (Italy)",
+        "- Haitao Liu, Tianjin University (China)",
+        "- Daniel Martins, Universidade Federal de Santa Catarina (Brazil)",
+        "- Andreas Mueller, Johannes Kepler Universit\u00e4t (Austria)",
+        "- Andrew Murray, University of Dayton (USA)",
+        "- Leila Notash, Queen's University (Canada)",
+        "- Matteo Palpacelli, Polytechnic University of Marche (Italy)",
+        "- Alba Perez, Remy Robotics, Barcelona (Spain)",
+        "- Victor Petuya, University of the Basque Country (Spain)",
+        "- Jos\u00e9 Maria Rico Martinez, Universidad de Guanajuato (Mexico)",
+        "- Nina Robson, California State University, Fullerton (USA)",
+        "- Jon M. Selig, London South Bank University (UK)",
+        "- Bruno Siciliano, University of Naples Federico II (Italy)",
+        "- Tao Sun, Tianjin University (China)",
+        "- Yukio Takeda, Tokyo Institute of Technology (Japan)",
+        "- Federico Thomas, Institute of Industrial Robotics (Spain)",
+        "- Volkert Van Der Wijk, TU Deft (Netherlands)",
+        "Dear Colleagues,",
+        "- Are able to also submit accompanying multimedia material;",
+        "- Can request the \u201cOpen Peer Review\u201d during the submission;",
+        "In short, KaRD series is an \u201cagora\u201d, where researchers efficiently exchange their experiences.",
+        "Topics of interest include (but are not limited to):",
+        "Raffaele Di GregorioGuest Editor",
+        "Manuscript Submission Information"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 36,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.027777777777777776,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "27 pages,                14012 KiB",
+        "Open AccessArticle",
+        "by\n                    Hongxi Zhu and Ulrike Thomas",
+        "Robotics 2023, 12(3), 82; https://doi.org/10.3390/robotics12030082 - 7 Jun 2023",
+        "Cited by 3",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "18 pages,                2093 KiB",
+        "Open AccessArticle",
+        "Inverse Kinematics of a Class of 6R Collaborative Robots with Non-Spherical Wrist",
+        "by\n                    Luca Carbonari, Matteo-Claudio Palpacelli and Massimo Callegari",
+        "Robotics 2023, 12(2), 36; https://doi.org/10.3390/robotics12020036 - 3 Mar 2023",
+        "Cited by 4",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Luca Carbonari,",
+        "Matteo-Claudio Palpacelli and",
+        "Massimo Callegari"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "23 pages,                9475 KiB",
+        "Open AccessArticle",
+        "Robotics 2023, 12(1), 28; https://doi.org/10.3390/robotics12010028 - 17 Feb 2023",
+        "Cited by 7",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Md. Hasibur Rahman,",
+        "Saadia Binte Alam,",
+        "Trisha Das Mou,",
+        "Mohammad Faisal Uddin and",
+        "Mahady Hasan"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "24 pages,                2109 KiB",
+        "Open AccessArticle",
+        "by\n                    Jan Reinhold, Henry Baumann and Thomas Meurer",
+        "Robotics 2023, 12(1), 7; https://doi.org/10.3390/robotics12010007 - 3 Jan 2023",
+        "Cited by 4",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Jan Reinhold,",
+        "Henry Baumann and",
+        "Thomas Meurer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "19 pages,                2263 KiB",
+        "Open AccessArticle",
+        "A Novel Gripper with Integrated Rotary Unit and Force Control for Pick and Place Applications",
+        "by\n                    Alexey M. Romanov, Ntmitrii Gyrichidi and Mikhail P. Romanov",
+        "Robotics 2022, 11(6), 155; https://doi.org/10.3390/robotics11060155 - 18 Dec 2022",
+        "Cited by 4",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Alexey M. Romanov,",
+        "Ntmitrii Gyrichidi and",
+        "Mikhail P. Romanov"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "14 pages,                5110 KiB",
+        "Open AccessArticle",
+        "by\n                    Luca Bruzzone and Shahab Edin Nodehi",
+        "Robotics 2022, 11(6), 152; https://doi.org/10.3390/robotics11060152 - 16 Dec 2022",
+        "Cited by 3",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "16 pages,                1140 KiB",
+        "Open AccessArticle",
+        "by\n                    Takashi Kusaka and Takayuki Tanaka",
+        "Robotics 2022, 11(6), 149; https://doi.org/10.3390/robotics11060149 - 9 Dec 2022",
+        "Cited by 3",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "14 pages,                2881 KiB",
+        "Open AccessArticle",
+        "by\n                    Jessica Villalobos, Irma Y. Sanchez and Fernando Martell",
+        "Robotics 2022, 11(6), 137; https://doi.org/10.3390/robotics11060137 - 29 Nov 2022",
+        "Cited by 14",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Jessica Villalobos,",
+        "Irma Y. Sanchez and",
+        "Fernando Martell"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "21 pages,                30658 KiB",
+        "Open AccessArticle",
+        "Kinematic Graph for Motion Planning of Robotic Manipulators",
+        "by\n                    Burkhard Corves and Amir Shahidi",
+        "Robotics 2022, 11(5), 105; https://doi.org/10.3390/robotics11050105 - 5 Oct 2022",
+        "Cited by 1",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "19 pages,                7792 KiB",
+        "Open AccessEditor\u2019s ChoiceArticle",
+        "Robotics 2022, 11(5), 98; https://doi.org/10.3390/robotics11050098 - 21 Sep 2022",
+        "Cited by 9",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Md Mahafuzur Rahaman Khan,",
+        "Asif Al Zubayer Swapnil,",
+        "Tanvir Ahmed,",
+        "Md Mahbubur Rahman,",
+        "Md Rasedul Islam,",
+        "Brahim Brahmi,",
+        "Raouf Fareh and",
+        "Mohammad Habibur Rahman"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "19 pages,                6621 KiB",
+        "Open AccessArticle",
+        "Collision Avoidance for Redundant 7-DOF Robots Using a Critically Damped Dynamic Approach",
+        "by\n                    Henrique Simas and Raffaele Di Gregorio",
+        "Robotics 2022, 11(5), 93; https://doi.org/10.3390/robotics11050093 - 8 Sep 2022",
+        "Cited by 3",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "28 pages,                8670 KiB",
+        "Open AccessReview",
+        "Reformulation of Theories of Kinematic Synthesis for Planar Dyads and Triads",
+        "by\n                    Sean Mather and Arthur Erdman",
+        "Robotics 2023, 12(1), 22; https://doi.org/10.3390/robotics12010022 - 1 Feb 2023",
+        "Cited by 2",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "33 pages,                12704 KiB",
+        "Open AccessEditor\u2019s ChoiceReview",
+        "Current Designs of Robotic Arm Grippers: A Comprehensive Systematic Review",
+        "Robotics 2023, 12(1), 5; https://doi.org/10.3390/robotics12010005 - 2 Jan 2023",
+        "Cited by 57",
+        "(This article belongs to the  Special Issue Kinematics and Robot Design V, KaRD2022)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Jaime Hernandez,",
+        "Md Samiul Haque Sunny,",
+        "Javier Sanjuan,",
+        "Ivan Rulik,",
+        "Md Ishrak Islam Zarif,",
+        "Sheikh Iqbal Ahamed,",
+        "Helal Uddin Ahmed and",
+        "Mohammad H Rahman"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Special Section on Design, Modeling and Control of Cable-Driven Parallel Robots",
+        "Special Issue on Selected Papers from IDETC-CIE 2023",
+        "Special Issue on Mechanisms, Transmissions, and Applications",
+        "Special Issue on Selected Papers from IDETC-CIE 2022",
+        "Joint Special Issue: Design and Control of Responsive Robots",
+        "Special Issue on Selected Papers from IDETC-CIE 2021: Published August 2022",
+        "Special Section on Mobile Robots and Unmanned Ground Vehicles: Published October 2021",
+        "Special Section on Recon\ufb01gurable Parallel Mechanisms \u2013 Published August 2021",
+        "\u00a9 2025 The Journal of Mechanisms and Robotics. All rights reserved.\""
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.7777777777777778,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Introduction",
+        "Databases + ArticlesGoogle Scholar",
+        "Google Scholar",
+        "Journals + Conferences",
+        "Books",
+        "Marketing Resources",
+        "Further Learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "ICRAIEEE Int'l Conference on Robotics & Automation",
+        "IROSInt'l Conference on Intelligent Robots and Systems",
+        "RSSRobotics: Science & Systems Conference"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The EZ Proxy Bookmarklet",
+        "Instructions for implementing bookmarklet",
+        "*note: the Proxy Bookmarklet will not work if you are connecting through the VPN"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Volume 15, Issue 6",
+        "December 2023",
+        "ISSN 1942-4302\nEISSN 1942-4310"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Extract",
+        "View articletitled, Announcing the 2022 Best Paper Award and Honorable Mentions",
+        "Open the \n\nPDF for  in another window"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Thibaut Paty",
+        "Nicolas Binaud",
+        "Hong Wang",
+        "St\u00e9phane Segonds"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mingxiang Ling",
+        "Hao Zhou",
+        "Liguo Chen"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sri Sadhan Jujjavarapu",
+        "Hemanth Manjunatha",
+        "Ehsan Tarkesh Esfahani"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jing-Shan Zhao",
+        "Song-Tao Wei",
+        "Han-Lin Sun"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abstract",
+        "View articletitled, Kinematics and Statics of a 3-<em>UPU</em> Robot in Screw Coordinates",
+        "Open the \n\nPDF for  in another window"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Jihui Li",
+        "Zhenyuan Yu",
+        "Zhiwei Zhu",
+        "Zichen Deng"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Rugui Wang",
+        "Haibo Huang",
+        "Xinpeng Li"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Fanyi Guo",
+        "Zhili Sun",
+        "Shengnan Zhang",
+        "Runan Cao",
+        "Haiyang Li"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Junwen Liang",
+        "Xianmin Zhang",
+        "Benliang Zhu",
+        "Hongchuan Zhang",
+        "Rixin Wang"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Xiaokang Xu",
+        "Liang Cheng",
+        "Yingjie Guo",
+        "Jiangxiong Li",
+        "Yinglin Ke"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ke Wu",
+        "Gang Zheng",
+        "Guimin Chen"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abstract",
+        "View articletitled, Extending Timoshenko Beam Theory for Large Deflections in Compliant Mechanisms",
+        "Open the \n\nPDF for  in another window"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Jiangbei Wang",
+        "Yuxuan Wang",
+        "Yanqiong Fei",
+        "Weidong Chen"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Yudong Zhang",
+        "Leiying He",
+        "Bo Yan",
+        "Jianneng Chen",
+        "Chuanyu Wu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jianguo Cai",
+        "Qiuyue Zhong",
+        "Xiaohui Zhang",
+        "Kexin Wang",
+        "Qian Zhang",
+        "Jian Feng"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abstract",
+        "View articletitled, Mobility and Kinematic Bifurcation Analysis of Origami Plate Structures",
+        "Open the \n\nPDF for  in another window"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Abdur Rosyid",
+        "Cesare Stefanini",
+        "Bashar El-Khasawneh"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chenkun Qi",
+        "Huayang Li",
+        "Feng Gao",
+        "Xianbao Chen",
+        "Yue Zhao",
+        "Zhijun Chen"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ruzhen Pei",
+        "Xibin Cao",
+        "Cheng Wei"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abstract",
+        "View articletitled, Design and Validation of Symmetrical Elastic Elements in Series Elastic Actuator",
+        "Open the \n\nPDF for  in another window"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Christian DeBuys",
+        "Florin C. Ghesu",
+        "Jagadeesan Jayender",
+        "Reza Langari",
+        "Young-Ho Kim"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Fujie Yu",
+        "Qilong Zhu",
+        "Yuan Chen"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zhengyu Wang",
+        "Shiyang Bao",
+        "Daoming Wang",
+        "Sen Qian",
+        "Jianxi Zhang",
+        "Mingxin Hai"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "P. Seguin",
+        "C. Preault",
+        "P. Vulliez",
+        "J. P. Gazeau"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abstract",
+        "View articletitled, Approach for Real In-Hand Dexterity Evaluation: Application to the RoBioSS Hand",
+        "Open the \n\nPDF for  in another window"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Close Modal",
+        "Close Modal",
+        "This Feature Is Available To Subscribers Only\nSign In or Create an Account\n\nClose Modal",
+        "Close Modal"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vol.\u00a013\u00a0(2025)",
+        "Vol.\u00a012\u00a0(2024)",
+        "Vol.\u00a011\u00a0(2023)",
+        "Vol.\u00a010\u00a0(2022)",
+        "Vol.\u00a09\u00a0(2021)",
+        "Vol.\u00a08\u00a0(2020)",
+        "Vol.\u00a07\u00a0(2019)",
+        "Vol.\u00a06\u00a0(2018)",
+        "Vol.\u00a05\u00a0(2017)",
+        "Vol.\u00a04\u00a0(2016)",
+        "Vol.\u00a03\u00a0(2015)",
+        "Vol.\u00a02\u00a0(2014)",
+        "Vol.\u00a01\u00a0(2013)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "Parallel and hybrid mechanisms;",
+        "Metamorphic mechanisms;",
+        "Deployable mechanisms and origami;",
+        "Compliant mechanisms;",
+        "Robotic systems in machining, manufacturing, and mining;",
+        "Mobile robots, field robots, and agricultural robots."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "kinematics and dynamics",
+        "parallel and hybrid mechanisms",
+        "metamorphic mechanisms",
+        "deployable mechanisms and origami",
+        "compliant mechanisms",
+        "applications of mechanisms and robots"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share This Special Issue",
+        "Special Issue Editor",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers (3 papers)",
+        "Error",
+        "Research",
+        "Error",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.23809523809523808,
+        "length_consistency": true,
+        "pattern_ratio": 0.047619047619047616,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Dr.             Shuofei Yang",
+        "E-Mail",
+        "Website"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "25 pages,                7569 KiB",
+        "Open AccessArticle",
+        "Virtual Prototyping of a Novel Manipulator for Efficient Laser Processing of Complex Large Parts",
+        "by\n                    Antonio Pandolfi, Sergio Ferrarini, Pietro Bilancia and Marcello Pellicciari",
+        "Machines 2025, 13(3), 176; https://doi.org/10.3390/machines13030176 - 23 Feb 2025",
+        "(This article belongs to the  Special Issue The Kinematics and Dynamics of Mechanisms and Robots)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Antonio Pandolfi,",
+        "Sergio Ferrarini,",
+        "Pietro Bilancia and",
+        "Marcello Pellicciari"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "22 pages,                15193 KiB",
+        "Open AccessArticle",
+        "First- and Second-Order Centrodes of Both Coupler Links of Stephenson III Six-Bar Mechanisms",
+        "by\n                    Giorgio Figliolini, Chiara Lanni and Luciano Tomassi",
+        "Machines 2025, 13(2), 93; https://doi.org/10.3390/machines13020093 - 24 Jan 2025",
+        "(This article belongs to the  Special Issue The Kinematics and Dynamics of Mechanisms and Robots)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Giorgio Figliolini,",
+        "Chiara Lanni and",
+        "Luciano Tomassi"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "13 pages,                1035 KiB",
+        "Open AccessArticle",
+        "A New Method for Displacement Modelling of Serial Robots Using Finite Screw",
+        "by\n                    Feiyang Xue, Zhengjun Fang, Jiahao Song, Qi Liu and Shuofei Yang",
+        "Machines 2024, 12(9), 658; https://doi.org/10.3390/machines12090658 - 20 Sep 2024",
+        "(This article belongs to the  Special Issue The Kinematics and Dynamics of Mechanisms and Robots)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Feiyang Xue,",
+        "Zhengjun Fang,",
+        "Jiahao Song,",
+        "Qi Liu and",
+        "Shuofei Yang"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access monthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access monthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access monthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Call for Papers",
+        "Digital collection",
+        "JMR YOUTUBE",
+        "Announcements",
+        "Meet the Editorial Board",
+        "SUPPORTING VIDEOS"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Special Section on Design, Modeling and Control of Cable-Driven Parallel Robots",
+        "Special Issue on Selected Papers from IDETC-CIE 2023",
+        "Special Issue on Mechanisms, Transmissions, and Applications",
+        "\u00a9 2025 The Journal of Mechanisms and Robotics. All rights reserved.\""
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.75,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Welcome",
+        "to the\nASME Journal of Mechanisms and Robotics\n companion website",
+        "READ MORE"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "ACM Digital Library",
+        "Baidu",
+        "CLOCKSS",
+        "CNPIEC",
+        "Current Contents/Engineering, Computing  and Technology",
+        "Dimensions",
+        "EBSCO",
+        "EI Compendex",
+        "Google Scholar",
+        "INSPEC",
+        "Japanese Science and Technology Agency (JST)",
+        "Naver",
+        "Norwegian Register for Scientific Journals and Series",
+        "OCLC WorldCat Discovery Service",
+        "Portico",
+        "ProQuest",
+        "SCImago",
+        "SCOPUS",
+        "Science Citation Index Expanded (SCIE)",
+        "TD Net Discovery Service",
+        "Wanfang"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.047619047619047616,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Calls for papers",
+        "Latest articles",
+        "Journal updates",
+        "Journal information",
+        "Journal navigation",
+        "Search",
+        "Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Advances in Collaborative and Autonomous Robotics",
+        "Space Robotics",
+        "Learning-based Fault Diagnosis and Fault-Tolerant Control for Autonomous Marine Vehicles",
+        "Uncertainty Informed Position Estimation Using Multi-view Cameras",
+        "JIRS Editorial, 1st Quarter 2025",
+        "Parameter Identification of a Flexible-Joint Robot Axis using Sinusoidal Position Tracking",
+        "Journal of Intelligent & Robotic Systems is now fully open access!",
+        "Call for Papers: Topic Issue on Advances in Collaborative and Autonomous Robotics",
+        "Call for Papers: Topical Issue on Space Robotics",
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.1875,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Journal of Intelligent & Robotic Systems",
+        "with a special section on Unmanned Systems",
+        "Publishing model:\nOpen access"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Electronic ISSN",
+        "Print ISSN",
+        "Abstracted and indexed in",
+        "Copyright information"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Special Section on Design, Modeling and Control of Cable-Driven Parallel Robots",
+        "Selected Papers from IDETC-CIE",
+        "Mechanisms, Transmissions, and Applications",
+        "Selected Papers from IDETC-CIE",
+        "Joint Special Issue: Design and Control of Responsive Robots",
+        "Selected Papers from IDETC-CIE 2021: Published August",
+        "Special Section on Mobile Robots and Unmanned Ground Vehicles: Published October",
+        "Special Section on Recon\ufb01gurable Parallel Mechanisms \u2013 Published August",
+        "\u00a9 2025 The Journal of Mechanisms and Robotics. All rights reserved.\""
+      ],
+      "output_list_from_llm": [
+        "Special Section on Design, Modeling and Control of Cable-Driven Parallel Robots",
+        "Mechanisms, Transmissions, and Applications",
+        "Joint Special Issue: Design and Control of Responsive Robots",
+        "Special Section on Reconfigurable Parallel Mechanisms \u2013 Published August"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Special Section on Design, Modeling and Control of Cable-Driven Parallel Robots",
+        "Selected Papers from IDETC-CIE",
+        "Mechanisms, Transmissions, and Applications",
+        "\u00a9 2025 The Journal of Mechanisms and Robotics. All rights reserved.\""
+      ],
+      "output_list_from_llm": [
+        "Special Section on Design, Modeling and Control of Cable-Driven Parallel Robots",
+        "Mechanisms, Transmissions, and Applications"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Kinematics and Robot Design VI, KaRD2023 in Robotics (11 articles)",
+        "Kinematics and Robot Design I, KaRD2018 in Robotics (14 articles)",
+        "Kinematics and Robot Design II, KaRD2019 in Robotics (7 articles)",
+        "Kinematics and Robot Design III, KaRD2020 in Robotics (10 articles)",
+        "Kinematics and Robot Design IV, KaRD2021 in Robotics (12 articles)"
+      ],
+      "output_list_from_llm": [
+        "Kinematics and Robot Design VI, KaRD2023 in Robotics (11 articles)",
+        "Kinematics and Robot Design I, KaRD2018 in Robotics (14 articles)",
+        "Kinematics and Robot Design II, KaRD2019 in Robotics (7 articles)",
+        "Kinematics and Robot Design III, KaRD2020 in Robotics (10 articles)",
+        "Kinematics and Robot Design IV, KaRD2021 in Robotics (12 articles)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Related Special Issues",
+        "Published Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Special section on design, modeling and control of cable-driven parallel robots",
+    "Mechanisms, transmissions, and applications",
+    "Joint special issue: design and control of responsive robots",
+    "Special section on reconfigurable parallel mechanisms \u2013 published august",
+    "Kinematics and robot design iii, kard2020 in robotics (10 articles)"
+  ],
+  "error": null
+}

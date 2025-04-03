@@ -1,0 +1,189 @@
+{
+  "level2_term": "qualitative data analysis",
+  "all_urls": [
+    "https://qualpage.com/2025/02/13/call-for-papers-qualitative-research-journal/",
+    "https://qualpage.com/category/call-for-papers/",
+    "https://journals.sagepub.com/page/ijq/collections/call-for-papers/index",
+    "https://www.lse.ac.uk/Methodology/Research/Call-for-papers",
+    "https://smgmt.org/information/2024-jom-special-call-for-qual-proposals/?frame=0",
+    "https://str.aom.org/discussion/jom-special-call-for-qualitative-research-proposals-1",
+    "https://www.publi.ludomedia.org/",
+    "https://tqr.nova.edu/2024/06/24/weekly-report-june-24-2024/",
+    "https://www.qualitative-research.net/index.php/fqs/announcement/view/14",
+    "https://tqr.nova.edu/2024/07/01/weekly-report-july-1-2024/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "QualPage",
+        "Already have a WordPress.com account? Log in now.",
+        "QualPage",
+        "Subscribe\n\n\n\nSubscribed",
+        "Sign up",
+        "Log in",
+        "Report this content",
+        "View site in Reader",
+        "Manage subscriptions",
+        "Collapse this bar"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "QualPage",
+        "Subscribe\n\n\n\nSubscribed",
+        "Sign up",
+        "Log in",
+        "Report this content",
+        "View site in Reader",
+        "Manage subscriptions",
+        "Collapse this bar"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Opportunity for Creative and Innovative Qualitative Manuscripts",
+        "Further Details",
+        "References"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Community",
+        "STR Discussions",
+        "View Thread"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Language",
+        "Make a Submission",
+        "Keywords",
+        "Current Issue",
+        "Information",
+        "Usage Statistics Information",
+        "Developed By"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Language\n\t\n\n\n\n\n\t\t\t\t\t\tDeutsch\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tEnglish",
+        "Make a Submission\n\t\n\n\n\t\t\tMake a Submission",
+        "Keywords",
+        "Current Issue",
+        "Information\n\n\n\n\n\t\t\t\t\t\tFor Readers\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Authors\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Librarians",
+        "Developed By\n\t\n\n\n\t\t\tOpen Journal Systems"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Opportunity for Creative and Innovative Qualitative Manuscripts",
+        "Further Details",
+        "References"
+      ],
+      "output_list_from_llm": [
+        "Opportunity for Creative and Innovative Qualitative Manuscripts"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Language Deutsch English",
+        "Make a Submission Make a Submission",
+        "Keywords",
+        "Current Issue",
+        "Information For Readers For Authors For Librarians",
+        "Developed By Open Journal Systems"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Opportunity for creative and innovative qualitative manuscripts"
+  ],
+  "error": null
+}

@@ -1,0 +1,2112 @@
+{
+  "level2_term": "linear programming",
+  "all_urls": [
+    "https://link.springer.com/journal/10107",
+    "http://ipco2024.ii.uni.wroc.pl/index.html",
+    "https://satisfiability.org/SAT25/cfp/",
+    "https://www.rairo-ro.org/component/content/article/11-news/287-call-forpapers-special-issue-on-innovative-approaches-in-decision-and-optimization-theory-and-applications-perspective-codit-2024",
+    "https://ojmo.centre-mersenne.org/",
+    "https://easychair.org/cfp/ipco2025",
+    "https://stackoverflow.com/questions/58464316/linear-programming-unique-number-of-categories",
+    "https://www.scirp.org/journal/articles?searchcode=+Linear+Programming&searchfield=keyword&page=1&skid=0",
+    "https://www.siam.org/conferences-events/",
+    "https://rsisinternational.org/journals/ijriss/articles/enhancing-understanding-of-linear-programming-concepts-through-contextual-education/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "ABS Academic Journal Quality Guide",
+        "ACM Digital Library",
+        "ANVUR",
+        "BFI List",
+        "Baidu",
+        "CLOCKSS",
+        "CNPIEC",
+        "Current Contents/Physical, Chemical and Earth Sciences",
+        "Dimensions",
+        "EBSCO",
+        "EI Compendex",
+        "Google Scholar",
+        "INIS Atomindex",
+        "Japanese Science and Technology Agency (JST)",
+        "Mathematical Reviews",
+        "Naver",
+        "OCLC WorldCat Discovery Service",
+        "Portico",
+        "ProQuest",
+        "SCImago",
+        "SCOPUS",
+        "Science Citation Index Expanded (SCIE)",
+        "TD Net Discovery Service",
+        "Wanfang",
+        "zbMATH"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Societies and partnerships",
+        "Latest issue",
+        "Latest articles",
+        "Journal updates",
+        "Journal information",
+        "Journal navigation",
+        "Search",
+        "Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "An accelerated distributed stochastic gradient method with momentum",
+        "Duality in convex stochastic optimization",
+        "Primal methods for variational inequality problems with functional constraints",
+        "Mathematical Programming: 2024 Meritorious Service Award",
+        "Mathematical Programming 2023 Meritorious Service Award",
+        "Mathematical Programming 2022 Meritorious Service Award",
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3076923076923077
+      }
+    },
+    {
+      "items": [
+        "Mathematical Programming",
+        "A Publication of the Mathematical Optimization Society",
+        "Publishing model:\nHybrid"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Electronic ISSN",
+        "Print ISSN",
+        "Abstracted and indexed in",
+        "Copyright information"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ahmad Abdi \u2022 LSE, London",
+        "Krist\u00f3f B\u00e9rczi \u2022 ELTE Budapest",
+        "Niv Buchbinder \u2022 Tel Aviv",
+        "Jaros\u0142aw Byrka \u2022 Wroc\u0142aw",
+        "Karthekeyan Chandrasekaran \u2022 UIUC",
+        "Sanjeeb Dash \u2022 IBM",
+        "Sami Davies \u2022 Berkeley",
+        "Samuel Fiorini \u2022 ULB, Brussels",
+        "Zachary Friggstad \u2022 Alberta",
+        "Swati Gupta \u2022 MIT",
+        "Sophie Huiberts \u2022 CNRS",
+        "Jon Lee \u2022 Michigan",
+        "Gonzalo Mu\u00f1oz \u2022 O\u2019Higgins",
+        "Ola Svensson \u2022  EPFL, Lausanne",
+        "Jens Vygen \u2022  Bonn (PC chair)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.06666666666666667,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Marek Adamczyk \u2022 University of Wroc\u0142aw, Poland",
+        "Marcin Bie\u0144kowski \u2022 University of Wroc\u0142aw, Poland",
+        "Martin B\u00f6hm \u2022 University of Wroc\u0142aw, Poland",
+        "Jaros\u0142aw Byrka \u2022 University of Wroc\u0142aw, Poland (local chair)",
+        "\u0141ukasz Je\u017c \u2022 University of Wroc\u0142aw, Poland"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Practical search algorithms",
+        "Knowledge compilation",
+        "Implementation-level details of SAT and SMT solving tools and SAT/SMT-based systems",
+        "Problem encodings and reformulations",
+        "Applications (including both novel applications domains and improvements to existing approaches)",
+        "Case studies and reports on scientific findings based on rigorous experimentation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Long papers (9 to 15 pages, excluding references and appendices)",
+        "Short papers (up to 8 pages, excluding references and appendices)",
+        "Tool papers (up to 8 pages, excluding references and appendices)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Abstract registration: March 20 March 24, 2025 23:59 AoE",
+        "Full paper submission: March 27 April 3, 2025 23:59 AoE",
+        "Author response: May 5-9, 2025 AoE",
+        "Notification of decisions: May 29, 2025",
+        "Camera-ready version submission: TBA.",
+        "Workshops and the Doctoral Program: August 10-11, 2024",
+        "Conference: August 12-15, 2024"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Proposal submission: March 20, 2025",
+        "Notification of decisions: March 30, 2025",
+        "Workshops: August 10-11, 2025",
+        "Main conferences: August 12-15, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Title",
+        "Scope: Workshop\u2019s theme and its relevance to CP, SAT, or both.",
+        "History (if applicable), including number of past attendees.",
+        "Duration (1/2, 1 or 2 days).",
+        "Format: Description of the workshop format, including planned activities, sessions, and duration.",
+        "Special Requirements: Any specific technical or logistical requirements for the workshop."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Providing a short description for the conference program.",
+        "Reviewing and selecting abstract (or paper) submissions.",
+        "Scheduling the presentations within the workshop."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Control engineering",
+        "Decision Making",
+        "Integer programming",
+        "Linear programming",
+        "Location and routing",
+        "Manufacturing systems",
+        "Multiple objective programming",
+        "Network design and optimization",
+        "Nonlinear programming",
+        "Performance evaluation",
+        "Robotics",
+        "Routing and scheduling in logistical",
+        "Supply chain management",
+        "Transportation problems",
+        "Industry 4.0",
+        "Energy Optimization"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3125
+      }
+    },
+    {
+      "items": [
+        "ro.org/author",
+        "information/instructions",
+        "authors"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Author",
+        "Title",
+        "References",
+        "Full text"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Author",
+        "Title",
+        "References",
+        "Keywords",
+        "Full text"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Continuous Optimization",
+        "Discrete Optimization",
+        "Optimization under Uncertainty",
+        "Computational aspects and applications"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "New articles",
+        "Grid is Good. Adaptive Refinement Algorithms for Off-the-Grid Total Variation Minimization",
+        "Connections between Robust and Bilevel Optimization",
+        "An Exponentially Converging Particle Method for the Mixed Nash Equilibrium of Continuous Games",
+        "First order algorithms for computing linear and polyhedral estimates",
+        "Short Paper - The Binary Linearization Complexity of Pseudo-Boolean Functions",
+        "Tight analyses for subgradient descent I: Lower bounds",
+        "An interior proximal gradient method for nonconvex optimization",
+        "Cardinality-constrained structured data-fitting problems"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Axel Flinth",
+        "Fr\u00e9d\u00e9ric de Gournay",
+        "Pierre Weiss"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Marc Goerigk",
+        "Jannis Kurtz",
+        "Martin Schmidt",
+        "Johannes Th\u00fcrauf"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Baptiste Goujaud",
+        "Adrien Taylor",
+        "Aymeric Dieuleveut"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vincent Roulet",
+        "Siddhartha Srinivasa",
+        "Maryam Fazel",
+        "Zaid Harchaoui"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Yannis Bekri",
+        "Anatoli Juditsky",
+        "Arkadi Nemirovski"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "J\u00e9r\u00e9my Omer",
+        "Michael Poss",
+        "Maxime Rougier"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nicholas J. A. Harvey",
+        "Chris Liaw",
+        "Sikander Randhawa"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zhenan Fan",
+        "Huang Fang",
+        "Michael P. Friedlander"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "for open scientific publishing",
+        "Member of",
+        "Developed by"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "dependence of their uncertainty sets, worst",
+        "case regret problems, and two",
+        "in particular to use both theory and algorithms from one field in the other and vice versa."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "player zero",
+        "sum games with continuous sets of pure strategies and with first",
+        "order access to the payoff function. This problem arises for example in game",
+        "theory",
+        "inspired machine learning applications, such as distributionally",
+        "robust learning. In those applications, the strategy sets are high",
+        "dimensional and thus methods based on discretisation cannot tractably return high",
+        "accuracy solutions. In this paper, we introduce and analyze a particle",
+        "Fisher",
+        "Rao gradient flow."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "ball method for convex quadratic minimization. The adaptivity crucially relies on so",
+        "called \u201cPolyak step",
+        "time convergence, instance optimality, and its worst",
+        "case convergence rates."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "efficient solution framework is proposed for the cardinality",
+        "constrained structured data",
+        "fitting problem. Dual",
+        "based atom",
+        "identification rules reveal the structure of the optimal primal solution from near",
+        "optimal primal solution given any dual",
+        "world datasets support the analysis and demonstrate the efficiency of the proposed approach."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Amitabh Basu, Johns Hopkins University, US",
+        "Deeparnab Chakrabarty, Dartmouth College, US",
+        "Friedrich Eisenbrand, EPFL, CH",
+        "Vineet Goyal, Columbia University, US",
+        "Robert Hildebrand, Virginia Tech, US",
+        "Christopher Hojny, Eindhoven University of Technology, NL",
+        "Ivana Ljubic, ESSEC Business School, FR",
+        "Nicole Megow, University of Bremen, DE (PC chair)",
+        "Ben Moseley, Carnegie Mellon University, US",
+        "Giacomo Nannicini, University of Southern California, US",
+        "Laura Sanit\u00e0, Bocconi University, IT",
+        "Chaitanya Swamy, University of Waterloo, CA",
+        "Laura Vargas Koch, University of Bonn, DE",
+        "Jos\u00e9 Verschae, Pontificia Universidad Cat\u00f3lica de Chile, CL",
+        "Angelika Wiegele, University of Klagenfurt, AT",
+        "Rico Zenklusen, ETH Zurich, CH"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "integer programming",
+        "combinatorial optimization",
+        "discrete optimization"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "What does a virus need to transmit through air between humans?",
+        "Monster-of-the-week teen/kids show from the late 1990s",
+        "Movie where a genie suggests giving everyone a ball",
+        "If an illegal move is made, can the opponent enforce that it be kept?",
+        "How can we test a code for an algorithm that is implemented for the first time?",
+        "What does the word Tr\u00e4ge mean in the English language?",
+        "I accidentally plugged headphones in the AUX IN of a digital piano",
+        "Should I spread the word about a prospective advisor who rescinded an informal post doc offer?",
+        "C++ implementation of Go inspired cancellable context",
+        "Do any parties in Denmark support preventing Greenland from becoming independent?",
+        "Brake pad dilemma",
+        "Why is each element followed by Null?",
+        "hyperref does not jump correctly to the labeled proof environment",
+        "Difference between internal energy and mechanical energy",
+        "Sun's EM fields",
+        "Can anyone name this post-apocalyptic film with two buildings?",
+        "Is there any problem with too much (or false) precision?",
+        "Did any Hebrews refuse the covenant and depart at the revelation of Sinai?",
+        "Does Hebrews 3:2 teach that God created Jesus?",
+        "\"put one drop in both eyes\"",
+        "Why don't online chess platforms allow illegal moves like OTB chess?",
+        "Is there any reason why  can't take a geography type?",
+        "Neural network to find errors in training data"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 23,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.21739130434782608,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.043478260869565216
+      }
+    },
+    {
+      "items": [
+        "3 Answers\n                                    3",
+        "Mathematical Model",
+        "Implementation",
+        "Solution",
+        "Simplification",
+        "Generalizing",
+        "Your Answer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Asked\n5 years, 5 months ago",
+        "Modified\n5 years, 5 months ago",
+        "Viewed\n                        491 times",
+        "Part of R Language Collective"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lorenzo Rossi",
+        "Lorenzo Rossi",
+        "1,48111 gold badge99 silver badges1616 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1,481",
+        "1 gold badge",
+        "9 silver badges",
+        "16 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "If we introduce a zero-one (data) matrix",
+        "and a binary variable:",
+        "we can develop a simple mathematical model:",
+        "The blue colored symbols represent data while the red ones are decision variables.",
+        "Note that the variable y[j] can be relaxed to be continuous between 0 and 1.",
+        "I use OMPR here for two reasons:",
+        "Here is the R code:",
+        "Probably the most complex part here is the calculation of the Category matrix.",
+        "The solution looks like:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Erwin Kalvelagen",
+        "Erwin Kalvelagen",
+        "16.8k22 gold badges1717 silver badges4141 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "16.8k",
+        "2 gold badges",
+        "17 silver badges",
+        "41 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vitali Avagyan",
+        "Vitali Avagyan",
+        "1,20311 gold badge88 silver badges1818 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1,203",
+        "1 gold badge",
+        "8 silver badges",
+        "18 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "G. Grothendieck",
+        "G. Grothendieck",
+        "271k1818 gold badges219219 silver badges362362 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "18 gold badges",
+        "219 silver badges",
+        "362 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Thanks for contributing an answer to Stack Overflow!",
+        "But avoid \u2026",
+        "To learn more, see our tips on writing great answers."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Start asking to get answers",
+        "Find the answer to your question by asking.",
+        "Ask question"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Explore related questions",
+        "rlinear-programming",
+        "See similar questions with these tags."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Biomedical & Life Sci.",
+        "Business & Economics",
+        "Chemistry & Materials Sci.",
+        "Computer Sci. & Commun.",
+        "Earth & Environmental Sci.",
+        "Engineering",
+        "Medicine & Healthcare",
+        "Physics & Mathematics",
+        "Social Sci. & Humanities"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Biomedical & Life Sciences",
+        "Business & Economics",
+        "Chemistry & Materials Science",
+        "Computer Science & Communications",
+        "Earth & Environmental Sciences",
+        "Engineering",
+        "Medicine & Healthcare",
+        "Physics & Mathematics",
+        "Social Sciences & Humanities"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Paper Submission",
+        "Information for Authors",
+        "Peer-Review Resources",
+        "Open Special Issues",
+        "Open Access Statement",
+        "Frequently Asked Questions"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Paper Submission",
+        "Information for Authors",
+        "Peer-Review Resources",
+        "Open Special Issues",
+        "Open Access Statement",
+        "Frequently Asked Questions"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "About SCIRP",
+        "Publication Fees",
+        "For Authors",
+        "Peer-Review Issues",
+        "Special Issues"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Service",
+        "Manuscript Tracking System",
+        "Subscription",
+        "Translation & Proofreading",
+        "Volume & Issue"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Policies",
+        "Open Access",
+        "Publication Ethics",
+        "Preservation",
+        "Retraction",
+        "Privacy Policy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Browse Subjects",
+        "Publish with us",
+        "Service",
+        "Policies"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Complete Matching",
+        "Editorial Board",
+        "Show/Hide Options",
+        "Show/Hide Options",
+        "AllTitleAbstractKeywords\n\nDOIAuthorJournalAffiliation\n\nISSNSubject"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ojop.2017.61001",
+        "4,069",
+        "Downloads",
+        "9,607",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ajor.2021.116016",
+        "Downloads",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ajor.2018.82009",
+        "1,610",
+        "Downloads",
+        "3,821",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sumon Kumar Saha",
+        "Md. Rezwan Hossain",
+        "Md. Kutub Uddin",
+        "Rabindra Nath Mondal"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ojop.2015.43010",
+        "5,634",
+        "Downloads",
+        "8,848",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ojmsi.2016.43008",
+        "3,855",
+        "Downloads",
+        "8,750",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Thais R. Salvador",
+        "Silvia M. S. Carvalho",
+        "Mayk V. Coelho"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/am.2016.717177",
+        "3,177",
+        "Downloads",
+        "9,548",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ojop.2017.64011",
+        "2,589",
+        "Downloads",
+        "5,311",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/oalib.1104641",
+        "Downloads",
+        "1,486",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Rashmi Birla",
+        "Vijay K. Agarwal",
+        "Idrees A. Khan",
+        "Vishnu Narayan Mishra"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ajor.2017.73016",
+        "1,627",
+        "Downloads",
+        "3,638",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mohammad Hadi Noori Skandari",
+        "Hamid Reza Erfanian",
+        "Ali Vahidian Kamyad"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ica.2011.22014",
+        "5,902",
+        "Downloads",
+        "9,664",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jahangir Soleimani-Damaneh",
+        "Mehrzad Hamidi",
+        "Nasrollah Sajadi"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ajor.2011.12010",
+        "8,292",
+        "Downloads",
+        "18,593",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ijg.2011.23024",
+        "15,195",
+        "Downloads",
+        "35,212",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/epe.2011.34060",
+        "5,356",
+        "Downloads",
+        "9,036",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ojapps.2012.23028",
+        "5,054",
+        "Downloads",
+        "8,260",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/am.2012.330185",
+        "6,710",
+        "Downloads",
+        "12,405",
+        "Views",
+        "Citations",
+        "This article belongs to the Special Issue on \nOptimization"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": false,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/eng.2013.55A005",
+        "6,045",
+        "Downloads",
+        "8,057",
+        "Views",
+        "Citations",
+        "This article belongs to the Special Issue on \nMathematical Problems in Engineering"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": false,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Mala Abba-Aji",
+        "Vincent Ogwagwu",
+        "Bukar Umar Musa"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ojee.2013.23018",
+        "4,371",
+        "Downloads",
+        "6,960",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ajor.2014.42007",
+        "12,307",
+        "Downloads",
+        "16,385",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Eva Selene Hern\u00e1ndez Gress",
+        "Gilberto P\u00e9rez Lechuga",
+        "Neil Hern\u00e1ndez Gress"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/ica.2014.52006",
+        "4,898",
+        "Downloads",
+        "6,493",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DOI: \r\n                                    10.4236/jssm.2015.81010",
+        "5,758",
+        "Downloads",
+        "7,110",
+        "Views",
+        "Citations"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Conference Support",
+        "Conference Guidelines",
+        "Looking for an earlier conference?"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Long papers (9 to 15 pages, excluding references and appendices)",
+        "Short papers (up to 8 pages, excluding references and appendices)",
+        "Tool papers (up to 8 pages, excluding references and appendices)"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Providing a short description for the conference program.",
+        "Reviewing and selecting abstract (or paper) submissions.",
+        "Scheduling the presentations within the workshop."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Title",
+        "Scope: Workshop\u2019s theme and its relevance to CP, SAT, or both.",
+        "History (if applicable), including number of past attendees.",
+        "Duration (1/2, 1 or 2 days).",
+        "Format: Description of the workshop format, including planned activities, sessions, and duration.",
+        "Special Requirements: Any specific technical or logistical requirements for the workshop."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Mathematical Programming",
+        "A Publication of the Mathematical Optimization Society",
+        "Publishing model: Hybrid"
+      ],
+      "output_list_from_llm": [
+        "Mathematical Programming"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Proposal submission: March 20,",
+        "Notification of decisions: March 30,",
+        "Workshops: August 10-11,",
+        "Main conferences: August 12-15,"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Mathematical programming"
+  ],
+  "error": null
+}

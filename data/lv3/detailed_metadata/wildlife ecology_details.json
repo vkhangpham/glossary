@@ -1,0 +1,767 @@
+{
+  "level2_term": "wildlife ecology",
+  "all_urls": [
+    "https://besjournals.onlinelibrary.wiley.com/hub/journal/13652745/call-for-papers",
+    "https://wildlife.onlinelibrary.wiley.com/journal/19372817",
+    "https://journals.e-palli.com/home/index.php/jwc/c4p",
+    "https://www.wildlife-biodiversity.com/",
+    "https://www.wildlifebiology.org/",
+    "https://www.mdpi.com/journal/sustainability/special_issues/88833F8K89",
+    "https://www.reddit.com/r/ecology/comments/1b774td/scientific_journals/",
+    "https://www.sciencedirect.com/journal/global-ecology-and-conservation/about/call-for-papers",
+    "https://link.springer.com/journal/10344",
+    "https://er.uwpress.org/content/call-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Original research articles",
+        "Short Communications",
+        "Reviews",
+        "Scientific Reports",
+        "Short reports"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Original Research Articles",
+        "Review Article",
+        "Short Communication",
+        "Scientific Reports",
+        "Newsletter",
+        "Make a Submission",
+        "Manuscript\u00a0Template",
+        "Information",
+        "Indexing"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "E-PalliPublishers",
+        "Engineering & Technology",
+        "Agricultural Science",
+        "Environment & Climate",
+        "Business & Economics",
+        "Arts & Social Science",
+        "Multidisciplinary",
+        "Medical Science & Others"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Newsletter\n\nSubscribe for newsletter",
+        "Make a Submission\n\t\n\n\n\t\t\tMake a Submission",
+        "Manuscript\u00a0Template\n\nManuscript\u00a0Template",
+        "Information\n\n\n\n\n\t\t\t\t\t\tFor Readers\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Authors\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Librarians",
+        "Indexing\n\nIndexed/Archived in"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Palli Publishers\u00a0\u00a0Website:\u00a0https://journals.e",
+        "palli.comEmail: jwc@e",
+        "palli.comPhone: +1 302"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Current Issue",
+        "Make a Submission",
+        "Information"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Original Article",
+        "Short communication",
+        "Review Article"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "GIS-based spatial distribution of potable water quality analysis of drinking water in District Kasur",
+        "Pre-germination Treatments and Application of Soil Amendments for Supa (Sindora supa Merr.)",
+        "Phylogeography on GIS Based Distribution of Snake Fauna from Cholistan Desert Pakistan",
+        "A seemingly unrelated bivariate probit model to estimate the non-use value of wildlife",
+        "GH and IGF1 gene variation and carcass yield characteristics in three Kurdish quail lines",
+        "Exploring the diversity and abundance of wildlife in human-dominated landscape in eastern Thailand",
+        "Pleske's Ground Jay habitat suitability modeling: implications for conservation",
+        "Diversity and molecular identification of bird species from South Punjab, Pakistan",
+        "First comprehensive study on ichthyofaunal diversity of river Khurram Khyber Pakhtunkhwa Pakistan",
+        "Emerging Technologies to Combat Poaching"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Make a Submission\n\t\n\n\n\t\t\tMake a Submission",
+        "Information\n\n\n\n\n\t\t\t\t\t\tFor Readers\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Authors\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Librarians",
+        "Keywords"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "A journal for Wildlife Research, Management and Conservation",
+        "Published by The\u00a0Nordic\u00a0Society\u00a0Oikos",
+        "Wildlife Biology",
+        "Nordic Society Oikos"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "A journal for Wildlife Research,",
+        "Management and Conservation",
+        "Read the current issue at Wiley\nImpact Factor: 1.9",
+        "ISI Citation Reports \u00a9 Ranking: 2021: 112/169\u00a0(Ecology)",
+        "Upcoming conference: www.wolvesacrossborders.com"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Vol.\u00a017\u00a0(2025)",
+        "Vol.\u00a016\u00a0(2024)",
+        "Vol.\u00a015\u00a0(2023)",
+        "Vol.\u00a014\u00a0(2022)",
+        "Vol.\u00a013\u00a0(2021)",
+        "Vol.\u00a012\u00a0(2020)",
+        "Vol.\u00a011\u00a0(2019)",
+        "Vol.\u00a010\u00a0(2018)",
+        "Vol.\u00a09\u00a0(2017)",
+        "Vol.\u00a08\u00a0(2016)",
+        "Vol.\u00a07\u00a0(2015)",
+        "Vol.\u00a06\u00a0(2014)",
+        "Vol.\u00a05\u00a0(2013)",
+        "Vol.\u00a04\u00a0(2012)",
+        "Vol.\u00a03\u00a0(2011)",
+        "Vol.\u00a02\u00a0(2010)",
+        "Vol.\u00a01\u00a0(2009)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "adaptive management of wildlife",
+        "emerging new diseases and parasites",
+        "evidence-based wildlife conservation",
+        "human\u2013wildlife conflicts",
+        "population recovery",
+        "urban wildlife conservation",
+        "wildlife genomics",
+        "wildlife in 21st-century agricultural landscapes",
+        "wildlife in conflict zones"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share This Special Issue",
+        "Special Issue Editor",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers (1 paper)",
+        "Error",
+        "Research",
+        "Error",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.23809523809523808,
+        "length_consistency": true,
+        "pattern_ratio": 0.047619047619047616,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Prof. Dr.             S\u00e1ndor Cs\u00e1nyi",
+        "E-Mail",
+        "Website"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "SciProfiles",
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "14 pages,                1208 KiB",
+        "Open AccessArticle",
+        "Human\u2013Asian Palm Civet Conflict in Malaysia",
+        "by\n                    Siti Mastura Hasan and S\u00e1ndor Cs\u00e1nyi",
+        "Sustainability 2023, 15(15), 11570; https://doi.org/10.3390/su151511570 - 26 Jul 2023",
+        "Cited by 2",
+        "(This article belongs to the  Special Issue Emerging Topics in Wildlife Ecology and Conservation)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "AGRICOLA",
+        "ANVUR",
+        "Astrophysics Data System (ADS)",
+        "BFI List",
+        "BIOSIS",
+        "Baidu",
+        "Biological Abstracts",
+        "CAB Abstracts",
+        "CLOCKSS",
+        "CNPIEC",
+        "Current Contents/Agriculture, Biology & Environmental Sciences",
+        "Dimensions",
+        "EBSCO",
+        "EMBiology",
+        "Google Scholar",
+        "Japanese Science and Technology Agency (JST)",
+        "Naver",
+        "OCLC WorldCat Discovery Service",
+        "Portico",
+        "ProQuest",
+        "SCImago",
+        "SCOPUS",
+        "Science Citation Index Expanded (SCIE)",
+        "TD Net Discovery Service",
+        "Wanfang",
+        "Zoological Record"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Calls for papers",
+        "Latest articles",
+        "Journal updates",
+        "Journal information",
+        "Journal navigation",
+        "Search",
+        "Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Dormice \u2013 Biology and Conservation",
+        "Management of Alien Game Species",
+        "A rare case of intraspecific killing by an adult garden dormouse Eliomys quercinus",
+        "Ranavirus in native amphibians from the Pyrenees National Park, France: a case study",
+        "Supporting the Sustainable Developmental Goals",
+        "Call for Papers: Management of Alien Game Species",
+        "Cover Gallery",
+        "EJWR is now pleased to consider \u201cCommentaries\u201d and \u201cPerspectives\u201d articles",
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.13333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.06666666666666667,
+        "keyword_ratio": 0.26666666666666666
+      }
+    },
+    {
+      "items": [
+        "Electronic ISSN",
+        "Print ISSN",
+        "Abstracted and indexed in",
+        "Copyright information"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Techniques and tools for planning",
+        "Site preparation",
+        "Land stewardship",
+        "Species introduction",
+        "Species control and monitoring"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "GIS/participatory GIS,",
+        "Mining",
+        "Freshwater systems",
+        "Coastal communities",
+        "Native seed supply",
+        "Arid land restoration",
+        "Coupled human-natural systems",
+        "Agricultural/old field restoration",
+        "Soils and mycorrhizae",
+        "Local ecological knowledge (LEK)",
+        "Arctic or alpine systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Original Article",
+        "Short communication",
+        "Review Article"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "14 pages, 1208 KiB",
+        "Open AccessArticle",
+        "Human\u2013Asian Palm Civet Conflict in Malaysia",
+        "by Siti Mastura Hasan and S\u00e1ndor Cs\u00e1nyi",
+        "Sustainability 2023,",
+        "Cited by",
+        "(This article belongs to the Special Issue Emerging Topics in Wildlife Ecology and Conservation)",
+        "\u25ba\u25bc Show Figures",
+        "Figure"
+      ],
+      "output_list_from_llm": [
+        "Human\u2013Asian Palm Civet Conflict in Malaysia",
+        "(This article belongs to the Special Issue Emerging Topics in Wildlife Ecology and Conservation)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Current Issue",
+        "Make a Submission",
+        "Information"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Make a Submission Make a Submission",
+        "Information For Readers For Authors For Librarians",
+        "Keywords"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "(this article belongs to the special issue emerging topics in wildlife ecology and conservation)",
+    "Human\u2013asian palm civet conflict in malaysia"
+  ],
+  "error": null
+}

@@ -1,0 +1,931 @@
+{
+  "level2_term": "major components",
+  "all_urls": [
+    "https://www.sciencedirect.com/journal/journal-of-world-business/about/call-for-papers",
+    "https://2024.emnlp.org/calls/industry_track/",
+    "https://www.ecce-europe.org/2025/authorsreviewers/call-for-papers/",
+    "https://academia.stackexchange.com/questions/18349/difference-between-conference-paper-and-journal-paper",
+    "https://aaai.org/conference/aaai/aaai-25/journal-track-call/",
+    "https://2025.ijcnn.org/authors/call-for-papers",
+    "https://www.sciencedirect.com/journal/journal-of-systems-and-software/about/call-for-papers",
+    "https://academia.stackexchange.com/questions/9514/publishing-a-conference-version-of-a-journal-paper-at-the-same-time-copyright",
+    "https://ucincinnatipress.uc.edu/conference-proceedings/",
+    "https://icis2024.aisconferences.org/submissions/call-for-papers/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Benchmarks and methods for improving the latency and efficiency of systems",
+        "Continuous maintenance and improvement of deployed systems",
+        "Efficient methods for training and inference",
+        "Enabling infrastructure for large-scale deployment",
+        "Human-in-the-Loop approaches to application development",
+        "Implementation at speed, scale or low-cost",
+        "System combination"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Best practices, lessons learned or a vision on deploying real-world applications",
+        "Case studies, from design to deployment",
+        "Description of an application or system",
+        "Design of application-relevant datasets",
+        "Development of methods under system constraints (model or data size)",
+        "Novel NLP applications"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ethics, bias, fairness and harmlessness",
+        "Interpretability",
+        "Interactive systems",
+        "Offline and online system evaluation methodologies",
+        "Online learning",
+        "Robustness"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Topics of Interest",
+        "Important Dates",
+        "Evaluation Criteria",
+        "Paper Submission",
+        "Multiple Submissions Policy",
+        "Ethics Policy",
+        "Frequently Asked Questions",
+        "Industry Track Chairs"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "world applications. We encourage submissions from both non",
+        "profit and for",
+        "profit sectors, with the understanding that the end"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "IEEE Transaction on Power Electronics",
+        "IEEE Power Electronics Letter",
+        "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+        "IEEE Power Electronics Magazine",
+        "IEEE Open Journal of Power Electronics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "IEEE Transactions on Power Electronics",
+        "IEEE Open Journal of Power Electronics",
+        "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+        "IEEE Transactions on Transportation Electrification"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Contact",
+        "info[at]ecce-europe[dot]org\u00a0(forwards to\u00a0PCO)",
+        "papers[at]ecce-europe[dot]org\u00a0(forwards to\u00a0PCO)",
+        "sponsor-exhibition[at]ecce-europe[dot]org (Thomas Harder)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Help identify this very early airplane",
+        "Abbreviations with letters over symbols",
+        "Question of whether grammar in a particular sentence is correct",
+        "How do I write all five word sentences?",
+        "Calculating the mean, not variance, reduces the degrees of freedom?",
+        "How to use \u00ab or \u00bb (other than referring to gold) in mathematics?",
+        "Housing end ferrule fused to frame, how to remove",
+        "Advanced Green's function for the classical forced harmonic oscillator",
+        "Has there been an official version of the Cerberus for D&D?",
+        "How is stim validated",
+        "How can we test a code for an algorithm that is implemented for the first time?",
+        "LEAN: Why is Classical Logic Needed to Prove this?",
+        "Charging for the use of open source software",
+        "Best way to bridge separate laminate sections across doorsills?",
+        "What's the point of rejecting direct negotiations but accepting indirect negotiations?",
+        "Can I raise the collar ties in my 1700s house roof?",
+        "Is pseudonymization using LLM considered as hashing?",
+        "Hashing security question answers for bank account portal activation",
+        "Square root defined as a positive value: why?, when? who?",
+        "KLM changed my booking to a much longer flight",
+        "How plausible is this anecdote about \"toggling in\" an operating system?",
+        "hyperref does not jump correctly to the labeled proof environment"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.13636363636363635,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "current community",
+        "your communities",
+        "more stack exchange communities"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stack Exchange Network",
+        "Linked",
+        "Related",
+        "Hot Network Questions"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "66.1k",
+        "18 gold badges",
+        "200 silver badges",
+        "311 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1,797",
+        "2 gold badges",
+        "16 silver badges",
+        "22 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "badroit",
+        "badroit",
+        "13.9k55 gold badges6464 silver badges8181 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "13.9k",
+        "5 gold badges",
+        "64 silver badges",
+        "81 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mark Meckes",
+        "Mark Meckes",
+        "3,0342020 silver badges2121 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "3,034",
+        "20 silver badges",
+        "21 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pete L. Clark",
+        "Pete L. Clark",
+        "132k2525 gold badges367367 silver badges524524 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "25 gold badges",
+        "367 silver badges",
+        "524 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Start asking to get answers",
+        "Find the answer to your question by asking.",
+        "Ask question"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Explore related questions",
+        "publicationsconference",
+        "See similar questions with these tags."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Connection to Collaborative Bridge Theme",
+        "Paper Presentation",
+        "Submission Requirements",
+        "Eligible Journals",
+        "Paper Submission",
+        "Submission Process",
+        "Selection Process",
+        "For More Information",
+        "Journal Track Chair"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cookie",
+        "cookielawinfo-checkbox-analytics",
+        "cookielawinfo-checkbox-functional",
+        "cookielawinfo-checkbox-necessary",
+        "cookielawinfo-checkbox-others",
+        "cookielawinfo-checkbox-performance",
+        "viewed_cookie_policy"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Paper Submissions Types",
+        "Virtual Participation",
+        "Guidance for IEEE Publications Regarding AI-Generated Text"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Type of Paper",
+        "Regular Paper",
+        "Special Track Paper",
+        "Special Session Paper",
+        "Position Papers",
+        "Competition Regular Paper",
+        "Competition Short Paper",
+        "Workshop Regular Paper",
+        "Workshop Short Paper",
+        "J2C Paper"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Train lighting - LED powered by vibration transducer",
+        "LEAN: Why is Classical Logic Needed to Prove this?",
+        "Only 1 of 2 solutions returned by DSolve",
+        "Will UK universities accept me for an MSc if I completed my bachelor's in physics online?",
+        "Can anyone name this post-apocalyptic film with two buildings?",
+        "Calculating the mean, not variance, reduces the degrees of freedom?",
+        "Backpropagating regularization term in variational autoencoders",
+        "Did you get it? ;)",
+        "How do you come up with how a character looks?",
+        "What does a virus need to transmit through air between humans?",
+        "Can a character with no arms/hands cast spells with Somatic/Material components?",
+        "How does PCIe know which card to use for legacy ISA I/O ports?",
+        "Help the inspector by finding a route of minimum total length",
+        "Extracting model coefficients for formula terms",
+        "What is willful blindness?",
+        "Grammar Error in Frank Herbert's Children of Dune?",
+        "Monster-of-the-week teen/kids show from the late 1990s",
+        "Is there a good reason why meat cooking times are generally quoted as linear with respect to weight?",
+        "How are these equations classified as nonlinear?",
+        "What's the point of rejecting direct negotiations but accepting indirect negotiations?",
+        "Can I remove these laptop fan parts?",
+        "Can you remove the arrows to satisfy the conditions?",
+        "Name the city. Without calling the people animals.",
+        "Why shred before LUKS disk encryption?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "current community",
+        "your communities",
+        "more stack exchange communities"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stack Exchange Network",
+        "Linked",
+        "Related",
+        "Hot Network Questions"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "3,528",
+        "3 gold badges",
+        "24 silver badges",
+        "27 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jukka Suomela",
+        "Jukka Suomela",
+        "6,59222 gold badges3030 silver badges3232 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "6,592",
+        "2 gold badges",
+        "30 silver badges",
+        "32 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Start asking to get answers",
+        "Find the answer to your question by asking.",
+        "Ask question"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "version conference paper, while the long version is under",
+        "review. I received the journal review comments, and re",
+        "sent the modifications to the journal. Meanwhile, the conference paper was accepted. But the camera",
+        "ready is not sent yet."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Books",
+        "Authors",
+        "Journals",
+        "On The Site"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Digital Platforms for Emerging Societies",
+        "Benefits of the Conference to Journal Paper Submission Cycle",
+        "Key Dates",
+        "Tracks",
+        "Panels, Professional Development Workshops and Paper-A-Thon",
+        "Best Paper Awards",
+        "Journal Publication Policy"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.7142857142857143
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Type of Paper",
+        "Regular Paper",
+        "Special Track Paper",
+        "Special Session Paper",
+        "Position Papers",
+        "Competition Regular Paper",
+        "Competition Short Paper",
+        "Workshop Regular Paper",
+        "Workshop Short Paper",
+        "J2C Paper"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Paper Submissions Types",
+        "Virtual Participation",
+        "Guidance for IEEE Publications Regarding AI-Generated Text"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "world applications. We encourage submissions from both non",
+        "profit and for",
+        "profit sectors, with the understanding that the end"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Overview",
+        "Interest",
+        "Important Dates",
+        "Evaluation Criteria",
+        "Paper Submission",
+        "Multiple Submissions Policy",
+        "Ethics Policy",
+        "Frequently Asked Questions",
+        "Industry Track Chairs"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "IEEE Transactions on Power Electronics",
+        "IEEE Open Journal of Power Electronics",
+        "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+        "IEEE Transactions on Transportation Electrification"
+      ],
+      "output_list_from_llm": [
+        "IEEE Transactions on Power Electronics",
+        "IEEE Open Journal of Power Electronics",
+        "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+        "IEEE Transactions on Transportation Electrification"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Ieee transactions on power electronics",
+    "Ieee open journal of power electronics",
+    "Ieee journal of emerging and selected topics in power electronics",
+    "Ieee transactions on transportation electrification"
+  ],
+  "error": null
+}

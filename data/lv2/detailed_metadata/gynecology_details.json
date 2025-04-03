@@ -1,0 +1,973 @@
+{
+  "level1_term": "gynecology",
+  "all_urls": [
+    "https://obgyn.stanford.edu/research.html",
+    "https://med.nyu.edu/departments-institutes/obstetrics-gynecology/research",
+    "https://www.obgyn.columbia.edu/research/research-areas",
+    "https://medicine.uams.edu/obgyn/research/research-projects/",
+    "https://www.jefferson.edu/academics/colleges-schools-institutes/skmc/departments/obstetrics-gynecology/research/areas-of-research.html",
+    "https://obgyn.uw.edu/research/research-areas",
+    "https://obgyn.wustl.edu/research/research-areas/",
+    "https://obgyn.uchicago.edu/research",
+    "https://chicago.medicine.uic.edu/obstetrics-gynecology/obgyn-research/",
+    "https://obgyn.vcu.edu/research/",
+    "https://lsom.uthscsa.edu/obgyn/research/",
+    "https://www.mgh.harvard.edu/obgyn/research",
+    "https://www.unmc.edu/obgyn/research/",
+    "https://www.bcm.edu/departments/obstetrics-and-gynecology/research",
+    "https://medschool.umich.edu/departments/obstetrics-gynecology/research",
+    "https://obgyn.smhs.gwu.edu/research",
+    "https://medicine.iu.edu/obgyn/research",
+    "https://www.obgyn.columbia.edu/research",
+    "https://medicine.uiowa.edu/obgyn/research/research-projects",
+    "https://www.med.unc.edu/obgyn/research/",
+    "https://www.feinberg.northwestern.edu/sites/obgyn/education/residency/resident-research/senior-projects.html",
+    "https://medschool.cuanschutz.edu/ob-gyn/research",
+    "https://obgyn.uw.edu/research",
+    "https://www.obgyn.wisc.edu/research",
+    "https://medicine.uams.edu/obgyn/research/",
+    "https://health.ucdavis.edu/obgyn/research/",
+    "https://obgyn.wustl.edu/research/",
+    "https://www.urmc.rochester.edu/ob-gyn/research",
+    "https://med.umn.edu/obgyn/research",
+    "https://www.utsouthwestern.edu/education/medical-school/departments/obstetrics-gynecology/divisions/gynecology/research.html"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Cesarean Health by Incision Placement (McCurdy)",
+        "Inpatient versus Outpatient Cervical Ripening (Berghella/Pierce-Williams)",
+        "Dilacheck, a Tool to Improve Cervical Assessment in Labor (Berghella/National Institute of Health)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Labor & Delivery Management",
+        "Preterm Birth Prediction & Prevention",
+        "Diabetes in Pregnancy",
+        "Preeclampsia & Hypertension",
+        "Substance Use Disorder in Pregnancy",
+        "Family Planning: Contraception & Abortion",
+        "Vaginitis & Vulvar Diseases",
+        "Abnormal Menstrual Bleeding",
+        "Pain Management & Complementary Medicine Techniques",
+        "Gynecologic Surgery Techniques",
+        "Pediatric & Adolescent Gynecology",
+        "Polycystic Ovary Syndrome (PCOS)",
+        "Infectious Disease",
+        "Uterine Fibroids",
+        "Menopause"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.13333333333333333,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Al-Hendy Laboratory",
+        "Challa Laboratory",
+        "Ci3 Research Information",
+        "Lindau Laboratory",
+        "Lengyel/Kenny Laboratory",
+        "Menopause Priority Setting Partnership",
+        "Odunsi Laboratory",
+        "Rana Preeclampsia Laboratory"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.875
+      }
+    },
+    {
+      "items": [
+        "skip to Cookie Notice",
+        "skip to Main Navigation",
+        "skip to Main Content",
+        "skip to Footer"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Maternal Obesity Linked to Sudden Infant Death (Medscape)",
+        "Toxins in Tampons: What You Need to Know (Everyday Health)",
+        "The Vaginal Microbiome is Finally Getting Recognized (The Scientist)",
+        "Brain Science and Menopause (WBUR)",
+        "COVID, Pregnancy, and Fetal Brain Delays (NPR)",
+        "Weight Gain From Discontinuing GLP-1s a Concern in Pregnancy (Medscape)",
+        "Health Inequity in Boston (NBC Boston)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "release buprenorphine (BUP",
+        "XR) to sublingual buprenorphine (BUP",
+        "XR is as effective as BUP"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "3\u2019s role in promoting an immunosuppressive environment, metastasis, and cancer stem",
+        "Galectin",
+        "3 antibody",
+        "based strategy."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "directed therapy such as antibody",
+        "drug conjugates, bispecific T",
+        "cell engagers, chimeric antigen receptor T",
+        "cells, and small molecule inhibitors. They use patient"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Baylor College of Medicine",
+        "Departments",
+        "Obstetrics and Gynecology",
+        "Research"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Dr. Enrico Barrozo",
+        "Dr. Julie Hakim",
+        "Dr. Ignatia Van den Veyver",
+        "Dr. Chandrasekhar Yallampalli"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Complex Family Planning",
+        "General Obstetrics and Gynecology",
+        "Gynecologic Oncology",
+        "Maternal-Fetal Medicine",
+        "Minimally Invasive Gynecologic Surgery",
+        "Reproductive Endocrinology and Infertility",
+        "Urogynecology and Reconstructive Pelvic Surgery",
+        "Popular Topics"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Building Blocks of Pregnancy Biobank",
+        "Indiana Center for Musculoskeletal Health",
+        "PATH4YOU",
+        "PREGMED"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Center for Women\u2019s Health Research at UNC",
+        "Maternal-Fetal Medicine Network at UNC",
+        "UNC Center for Maternal and Infant Health",
+        "COMPARE-UF",
+        "4th Trimester Project",
+        "UNC Department of Obstetrics & Gynecology",
+        "Connect With Us"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Ian Bird, PhD",
+        "Role title: \r\n                                Reproductive Sciences",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Laura Bozzuto, MD",
+        "Role title: \r\n                                Academic Specialists in Obstetrics and Gynecology",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Laura Cooney, MD",
+        "Role title: \r\n                                Reproductive Endocrinology and Infertility",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Abigail Cuter, MD, MPH",
+        "Role title: \r\n                                Academic Specialists in Ob-Gyn",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tiffany Green, PhD",
+        "Role title: \r\n                                Reproductive and Population Health",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Christine Heisler, MD, MS",
+        "Role title: \r\n                                Urogynecology and Reconstructive Pelvic Surgery",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kara Hoppe, DO, MS",
+        "Role title: \r\n                                Maternal-Fetal Medicine",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "J. Igor Iruretagoyena, MD, MS",
+        "Role title: \r\n                                Maternal-Fetal Medicine",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Laura Jacques, MD",
+        "Role title: \r\n                                Academic Specialists in Obstetrics and Gynecology",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Irene Ong, PhD",
+        "Role title: \r\n                                Reproductive Sciences",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Manish Patankar, PhD",
+        "Role title: \r\n                                Reproductive Sciences/Gynecologic Oncology",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Jon Pennycuff, MD, MSPH",
+        "Role title: \r\n                                Urogynecology and Reconstructive Pelvic Surgery",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Janine Rhoades, MD",
+        "Role title: \r\n                                Maternal-Fetal Medicine",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stephen Rose, MD",
+        "Role title: \r\n                                Gynecologic Oncology",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Katherine Sampene, MD",
+        "Role title: \r\n                                Academic Specialists in Obstetrics and Gynecology",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Dinesh Shah, MD",
+        "Role title: \r\n                                Emeritus",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Janelle N. Sobecki, MD",
+        "Role title: \r\n                                Gynecologic Oncology",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Ryan Spencer, MD",
+        "Role title: \r\n                                Gynecologic Oncology",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Katharina Stewart, MD, MS",
+        "Role title: \r\n                                Maternal-Fetal Medicine",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mar\u00eda Virumbrales-Mu\u00f1oz, PhD",
+        "Role title: \r\n                                Reproductive Sciences",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sumer Wallace, MD",
+        "Role title: \r\n                                Gynecologic Oncology",
+        "Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jing Zheng, PhD",
+        "Role title: \r\n                                Reproductive Sciences",
+        "Publications",
+        "Research Homepage"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Prenatal and Early Childhood",
+        "Reproductive Period",
+        "Menopause and Later Life",
+        "Basic Science",
+        "Faculty Development, Education, and Training",
+        "Maternal-Fetal and Perinatal Medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Timothy Dye, Ph.D., Associate Chair for Research",
+        "Cabiria Monica Barbosu, M.D., Ph.D., M.B.A.",
+        "Megan L. Falsetta, Ph.D.",
+        "David C. Foster, M.D., M.P.H.",
+        "Carrie S. Irvine, M.S.",
+        "Kyu Kwang Kim, Ph.D.",
+        "Brooke Levandowski, Ph.D., M.P.A.",
+        "Morton W. Miller, Ph.D."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Richard K. Miller, Ph.D.",
+        "Shawn P. Murphy, Ph.D.",
+        "Rogelio E. Perez\u00a0D'Gregorio, M.D., M.S.",
+        "Jay Reeder, Ph.D.",
+        "Nazifa Shinwarie, M.D.",
+        "Rakesh\u00a0Singh, Ph.D., M.Phil.",
+        "Christopher J. Stodgell, Ph.D.",
+        "Ronald W. Wood, Ph.D."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Esteban Avenda\u00f1o, M.D., M.P.H.",
+        "Emily S. Barrett, Ph.D.",
+        "Juan I. Barrios Arce, M.D.",
+        "Nancy Cardona Cordero, Dr.P.H.",
+        "Wyatte C. Hall, Ph.D.",
+        "Dongmei Li, Ph.D.",
+        "Thomas G. O'Connor, Ph.D."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tiffany Panko, M.D., M.P.H.",
+        "Jos\u00e9 G. P\u00e9rez Ramos, M.P.H., Ph.D.",
+        "Shazia Siddiqi, M.D., M.P.H.",
+        "Carmen Velez Vega, Ph.D., M.S.W.",
+        "Miriam T. Weber, Ph.D.",
+        "Maryann Wilbuer, M.D., M.P.H., M.H.S."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Al-Hendy Laboratory",
+        "Challa Laboratory",
+        "Ci3 Research Information",
+        "Lindau Laboratory",
+        "Lengyel/Kenny Laboratory",
+        "Menopause Priority Setting Partnership",
+        "Odunsi Laboratory",
+        "Rana Preeclampsia Laboratory"
+      ],
+      "output_list_from_llm": [
+        "Al-Hendy Laboratory",
+        "Challa Laboratory",
+        "Lindau Laboratory",
+        "Lengyel/Kenny Laboratory",
+        "Menopause Priority Setting Partnership",
+        "Rana Preeclampsia Laboratory"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Al-hendy laboratory",
+    "Challa laboratory",
+    "Lindau laboratory",
+    "Lengyel/kenny laboratory",
+    "Menopause priority setting partnership",
+    "Rana preeclampsia laboratory"
+  ],
+  "error": null
+}

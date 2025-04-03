@@ -1,0 +1,1681 @@
+{
+  "level1_term": "politics",
+  "all_urls": [
+    "https://www.polsci.ucsb.edu/research",
+    "https://politicalscience.stanford.edu/about/areas-research",
+    "https://polisci.uconn.edu/research/",
+    "https://www.hks.harvard.edu/faculty-research/policy-topics",
+    "https://polisci.columbia.edu/research",
+    "https://cosspp.fsu.edu/polisci/doctoral-program/research-areas/",
+    "https://wmich.edu/politics/research-topics",
+    "https://polisci.duke.edu/research/fields",
+    "https://government.cornell.edu/research",
+    "https://polisci.emory.edu/research/index.html",
+    "https://www.polisci.washington.edu/research",
+    "https://politicalscience.columbian.gwu.edu/core-focus-areas",
+    "https://cla.purdue.edu/academic/polsci/research/",
+    "https://www.newschool.edu/nssr/politics/",
+    "https://politicalscience.jhu.edu/research/",
+    "https://sc.edu/study/colleges_schools/artsandsciences/political_science/research/fields_of_inquiry/",
+    "https://spia.princeton.edu/faculty-research/research-topics",
+    "https://polisci.duke.edu/research",
+    "https://cssh.northeastern.edu/polisci/research/",
+    "https://as.vanderbilt.edu/political-science/research-overview/",
+    "https://polisci.ucsd.edu/research/index.html",
+    "https://www.newschool.edu/nssr/politics-fields-of-study/",
+    "https://spia.princeton.edu/research-topics/politics-and-governance",
+    "https://polisci.northwestern.edu/research/",
+    "https://www.bc.edu/bc-web/schools/morrissey/departments/political-science/research.html",
+    "https://dornsife.usc.edu/poir/content/",
+    "https://cla.umn.edu/polisci/undergraduate/research-opportunities",
+    "https://lsa.umich.edu/polisci/research.html",
+    "https://government.georgetown.edu/democracy-and-governance/research-and-partnerships/special-projects/",
+    "https://guides.lib.utexas.edu/db/755"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "American Presidency Project",
+        "Bren School of Environmental Science and Management",
+        "East Asia Center",
+        "Orfalea Center for Global & International Studies",
+        "Program in Latin American & Iberian Studies",
+        "UC Institute on Global Conflict and Cooperation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Main menu",
+        "Politics of Identities",
+        "Politics of the Environment",
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Theory",
+        "Methods"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Methodology",
+        "Political Theory",
+        "Academics",
+        "People",
+        "Events"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Africana Studies Institute",
+        "Asian and Asian American Studies Institute",
+        "Center for Environmental Sciences and Engineering (CESE)",
+        "CIRI Human Rights Data Project",
+        "El Instituto: Institute of Latina/o, Caribbean, and Latin American Studies",
+        "Humanities Institute",
+        "Human Rights Institute",
+        "Journal of Human Rights",
+        "Urban and Community Studies",
+        "Women's, Gender, and Sexuality Studies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Theory",
+        "Public Law",
+        "POLS Colloquium",
+        "Political Economy Workshop",
+        "Political Theory Workshop",
+        "For Students",
+        "For Alumni"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Politics",
+        "Public Finance",
+        "Business & Regulation",
+        "Democracy & Governance",
+        "Decision Making & Negotiation",
+        "Development & Economic Growth",
+        "Public Leadership & Management"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Fairness & Justice",
+        "Gender, Race & Identity",
+        "Decision Making & Negotiation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Decision Making & Negotiation",
+        "Media",
+        "Democracy & Governance"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Human Rights",
+        "Gender, Race & Identity",
+        "Fairness & Justice",
+        "Development & Economic Growth",
+        "Poverty, Inequality & Opportunity",
+        "Advocacy & Social Movements"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Main navigation Mobile",
+        "Main navigation",
+        "You are here",
+        "Featured",
+        "Research",
+        "Experts",
+        "Watch & Listen"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Nate Mackinnon MC/MPA 2014: Increasing access to education in Massachusetts",
+        "Mathieu Lef\u00e8vre MPA 2003: Learning what drives people apart and building coalitions",
+        "House to vote on budget to prevent shutdown",
+        "Energy, Climate, Growth",
+        "Technology, Policy, Jobs; Multilateralism: Geopolitics, Governance, and the Global Commons",
+        "Iris Bohnet & Siri Chilazi\u2019s \u201cMake Work Fair\u201d",
+        "Research says use vulnerability when disagreeing with others",
+        "DEI, Affirmative Action, and the Future of the Black Middle Class",
+        "If the U.S. courts can\u2019t defend the rule of law, who can?"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Trending",
+        "Trump Administration",
+        "Topics",
+        "Advocacy & Social Movements",
+        "Business & Regulation",
+        "Cities & Communities",
+        "Decision Making & Negotiation",
+        "Democracy & Governance",
+        "Development & Economic Growth",
+        "Education, Training & Labor",
+        "Environment & Energy",
+        "Fairness & Justice",
+        "Gender, Race & Identity",
+        "Globalization",
+        "Health",
+        "Human Rights",
+        "International Relations & Security",
+        "Media",
+        "Politics",
+        "Poverty, Inequality & Opportunity",
+        "Public Finance",
+        "Public Leadership & Management",
+        "Science, Technology & Data",
+        "Social Innovation & Philanthropy",
+        "Social Policy"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16
+      }
+    },
+    {
+      "items": [
+        "All Types",
+        "Featured",
+        "Research",
+        "Experts",
+        "Watch & Listen",
+        "Reset"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "American politics",
+        "Comparative politics",
+        "International relations",
+        "Political theory",
+        "Political economy",
+        "Political methodology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Find funding",
+        "Sponsored projects administration",
+        "Research compliance",
+        "Effort reporting"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Search FSU",
+        "Site Navigation",
+        "Global Navigation",
+        "American Politics",
+        "Public Policy",
+        "Behavioral Game Theory",
+        "Comparative Politics",
+        "International Relations",
+        "Sidebar",
+        "Programs and Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "A Cost-Benefit Analysis of the Office of Independent Counsel",
+        "A Study on Equitable Water Provision in Latin America",
+        "Affirmative Action: National Origin Minorities",
+        "Aid to the Health-Related Sector: The United States, Japan, and Germany",
+        "An Assessment of the Voting Rights Act of 1965",
+        "An Evaluation of International Law as Applied to Genocide from Nuremberg to the Balkans",
+        "Celebrity Influence on Political Campaigns",
+        "Children Soldiers in Africa",
+        "Development of a Constitutional Right of Privacy",
+        "Educational Outcomes in Michigan: A Lack of Focus and Context",
+        "Effectiveness of Rape Shield Laws",
+        "Globalization and the Anti-Globalization Movement",
+        "Legislative Redistricting in Illinois for 2002",
+        "Mexico, Corporate Globalization and the Media",
+        "Mexico's Changing Political Party System",
+        "Nature Within the City: The Greenway Movement and the Transformation of Urban Form",
+        "Pretextual Automobile Stops and the Fourth Amendment",
+        "Public Education and Religious Establishment",
+        "Racial Profiling in post 9/11 United States Content Regulation in Broadcasting",
+        "Religious Exercise in Public Schools: Continuing Debate",
+        "Sexual Harassment: Comparative Legal Analysis",
+        "Squatter Settlements in Post-Apartheid South Africa",
+        "Stereotypes Between American and Arab-Americans in the United States",
+        "Telecommunications Policy in China",
+        "The \"Political Question\" Doctrine and Reapportionment",
+        "The Austrian Freedom Party in 2000",
+        "The Debt Crisis in Heavily Indebted Poor Countries",
+        "The Effects of the North American Free Trade Agreement",
+        "The Equal Rights Amendment: Why Controversy Ensured its Defeat",
+        "The Evolution (and Devolution) of Affirmative Action Initiatives",
+        "The 14th Amendment and Privacy",
+        "The Influence of the Antislavery Movement, Republican Ideology, and Federalism on the 14th Amendment",
+        "The Lemon Test and the Religious Establishment Clause",
+        "The Patriot Act: Security/Rights Issues in Historical Perspective",
+        "The Supreme Court and Reproductive Rights",
+        "The Supreme Court and Sexual Preference",
+        "Title IX and Collegiate Athletic Opportunities",
+        "Truth Commissions and Civil Society",
+        "U.S.-Japanese Trade Policy: A Defense of Limited Unilateralism",
+        "Weapons of the Weak and the Chinese Occupation of Tibet",
+        "Women and Equal Pay: An Assessment of Differences in Universities",
+        "Women, Identity and Political Activism During the Allende Regime in Chile"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 42,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.11904761904761904,
+        "length_consistency": true,
+        "pattern_ratio": 0.09523809523809523,
+        "keyword_ratio": 0.21428571428571427
+      }
+    },
+    {
+      "items": [
+        "Secondary Menu",
+        "Main navigation",
+        "Sidebar Navigation",
+        "Political Science",
+        "Undergraduate",
+        "Quick Links",
+        "Graduate",
+        "Stay Connected"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Normative Political Theory and Political Philosophy (N)",
+        "Political Behavior and Identities (BI)",
+        "Political Economy (PE)",
+        "Political Institutions (PI)",
+        "Political Methodology (M)",
+        "Security, Peace\u00a0& Conflict (SPC)"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Cornell Center for Social Sciences",
+        "Roper Center",
+        "Mario Einaudi Center for International Studies",
+        "Center for the Study of Inequality",
+        "Cornell Population Center",
+        "Survey Research Institute"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "The Autocratic Middle Class: How State Dependency Reduces the Demand for Democracy\n\n\n\nBryn Rosenfeld",
+        "Protean Power: Exploring the Uncertain and Unexpected in World Politics\n\n\n\nPeter J. Katzenstein",
+        "Poetic Justice: Rereading Plato's Republic\n\n\n\nJill Frank",
+        "Damn Great Empires! William James and the Politics of Pragmatism\n\n\n\nAlexander Livingston",
+        "Equal Opportunity Peacekeeping: Women, Peace, and Security in Post-Conflict States\n\n\n\nSabrina Karim",
+        "Incarceration Nation\n\n\n\nPeter K. Enns"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Areas of Expertise",
+        "Political Science Subfields",
+        "Thematic Areas of Expertise",
+        "Political Methodology",
+        "Research"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Communication",
+        "Campus",
+        "CLA Resources",
+        "People"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Labs and Programs",
+        "Computational Social Science Lab",
+        "Court of Claims Lab",
+        "GRAIL - Governance and Responsible AI Lab",
+        "iPART - International Politics and Responsible Tech",
+        "Law and Conflict Research Lab",
+        "Parties, Polarization and Pluralism Lab",
+        "PAIR - Program on American Institutional Renewal"
+      ],
+      "metadata": {
+        "html_type": "container_section",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.875
+      }
+    },
+    {
+      "items": [
+        "Undergraduates",
+        "Undergraduate Adult Learners",
+        "Graduates"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "American Politics",
+        "Comparative Politics",
+        "Political Theory",
+        "International Relations"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Arrighi Center for Global Studies",
+        "Center for Africana Studies",
+        "Center for Economy and Society",
+        "Program in East Asian Studies",
+        "Program in International Studies",
+        "Program in Jewish Studies",
+        "Program in\u00a0Latin American, Caribbean and Latinx Studies",
+        "Racism, Immigration, and Citizenship Program",
+        "SAIS-JHU Direct Admission to Master\u2019s Program",
+        "SNF Agora Institute"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "SC.edu",
+        "Study",
+        "Colleges and Schools",
+        "Arts and Sciences",
+        "Department of Political Science",
+        "Research",
+        "Fields on Inquiry"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Fields of Inquiry",
+        "Colleges & Schools",
+        "Offices & Divisions",
+        "Tools"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "American Politics",
+        "Comparative Politics",
+        "International Relations",
+        "Political Theory",
+        "Public Law",
+        "Research",
+        "Public Policy and Public Administration",
+        "How to Apply"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Utility menu",
+        "User account menu",
+        "Header",
+        "Breadcrumb",
+        "Faculty & Research",
+        "Footer: Main",
+        "Footer: Secondary",
+        "User account menu",
+        "Main navigation",
+        "Utility menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Climate Change, Environment, Energy",
+        "Demography, Immigration",
+        "Education, Labor",
+        "Families, Children",
+        "Finance, Fiscal, and Monetary Policy",
+        "Globalization, Foreign Policy, Trade",
+        "Health",
+        "Housing, Communities, Neighborhoods",
+        "International Development",
+        "Law, Justice, Human Rights",
+        "Migration, Refugees",
+        "National Security, Intelligence, Defense",
+        "Politics and Governance",
+        "Poverty, Inequality, Opportunity",
+        "Race, Gender, Identity",
+        "Science, Technology, Innovation",
+        "Social and Behavioral Psychology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.058823529411764705,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.17647058823529413
+      }
+    },
+    {
+      "items": [
+        "Secondary Menu",
+        "Main navigation",
+        "Sidebar Navigation",
+        "Political Science",
+        "Undergraduate",
+        "Quick Links",
+        "Graduate",
+        "Stay Connected"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Daniel Aldrich, Professor of Political Science",
+        "John Portz,\u00a0Professor of Political Science and Chair of MA and PhD programs",
+        "David Rochefort, Professor of Political Science",
+        "Thomas Vicino,\u00a0Professor of Political Science"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Max Abrahms, Assistant Professor of Political Science",
+        "Daniel Aldrich, Professor of Political Science",
+        "Mai\u2019a Cross, Associate Professor of Political Science and International Affairs",
+        "Denise Garcia, Associate Professor of Political Science and International Affairs",
+        "Jennie Stephens, Dean\u2019s Professor of Sustainability Science and Policy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Core Seminar-\u00a0POLS 7207 \u2013 Seminar in International Relations",
+        "Core course- POLS 7341 \u2013 Security and Resilience Policy",
+        "POLS 7344\u2014Hard Power, Soft Power, Smart Power",
+        "POLS 7369\u2014International Security",
+        "POLS\u00a07343 to POLS\u00a07349",
+        "Other courses under advisement from the Department or Faculty Advisor"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Faculty Research Areas",
+        "American Constitutional Development",
+        "Judicial Process",
+        "Legal Globalization",
+        "Comparative Judicial Studies",
+        "Presidential Studies",
+        "International Law",
+        "Gender Equality"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "Daniel Aldrich, Professor of Political Science",
+        "John Portz,\u00a0Professor of Political Science and Chair of MA and PhD programs",
+        "David Rochefort, Professor of Political Science",
+        "Thomas Vicino,\u00a0Professor of Political Science"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "making in the United States, a cross",
+        "national and international perspective is also included. Courses in this field cover the policy",
+        "making process, policy analysis, and substantive policy areas."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Social Media and the 2020 U.S. Election",
+        "UC San Diego-KPBS Mayoral Issues Forum",
+        "In-Depth: How the Electoral College Works (from ABC10)",
+        "The Impact Third Parties Could Have (Voice of America)",
+        "Social Media and Elections, Voting by Mail, and Kanye West\u2019s Candidacy (Fulbright)",
+        "Ranked 1st",
+        "UCSD Ranked 13th",
+        "UCSD Ranked 4th",
+        "UCSD Ranked 9th",
+        "UCSD Listed at Top"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2020/in",
+        "depth",
+        "electoral",
+        "college",
+        "works"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Undergraduates",
+        "Undergraduate Adult Learners",
+        "Graduates"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "American Politics",
+        "Comparative Politics",
+        "International Politics",
+        "Political Philosophy"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "David Hopkins\nPolitical Parties and Elections; U.S. Congress; Political Behavior; Research Methods",
+        "Masha Krupenkin\nPartisan Polarization; Political Participation; Text as Data",
+        "R. Shep Melnick - Thomas P. O'Neill, Jr. Professor of American Politics\nCourts; Public Policy",
+        "Peter Skerry\nRacial and Ethnic Politics; Immigration Policy",
+        "Kathleen Bailey\nCentral Asian Politics; Russian Politics; Balkans",
+        "Ali Banuazizi\nMiddle Eastern Politics; Political Culture; Religion and Politics",
+        "Paul Christensen\nRussian Politics; Social Movements; Globalization",
+        "Kenji Hayao\nJapanese Politics; Political Leadership",
+        "Jonathan Laurence\nWestern European Politics",
+        "Jonathan Kirshner\nInternational Relations; Political Economy; Politics and Film",
+        "Robert S. Ross\nSino-American Relations; Chinese Politics",
+        "Robert Bartlett - Behrakis Professor of Hellenic Political Studies\nClassical Political Philosophy",
+        "Christopher J. Kelly\nRousseau; 18th-century Political Philosophy",
+        "Susan Meld Shell\nModern Political Theory and German Idealism; Kant; Hegel; Nietzsche; Heidegger"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.21428571428571427
+      }
+    },
+    {
+      "items": [
+        "University Header Menu",
+        "Unit Menu",
+        "In This Section",
+        "Requirements for Fellows",
+        "Recommended Qualifications for Applicants",
+        "To Apply",
+        "Connect",
+        "Make a Gift"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DURP Application Details",
+        "Eligibility Criteria",
+        "Application Suggestions",
+        "DURP Showcase"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "DEPARTMENTS & UNITS",
+        "MAJORS AND MINORS",
+        "LSA COURSE GUIDE",
+        "LSA GATEWAY"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research",
+        "American Politics",
+        "Comparative Politics",
+        "Law, Courts, and Politics",
+        "Methodology",
+        "Political Theory",
+        "World Politics"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Student Resources",
+        "Courses",
+        "Academic Advising",
+        "Majors and Minors",
+        "Departments and Units",
+        "Global Studies",
+        "LSA Opportunity Hub"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "American Politics",
+        "Comparative Politics",
+        "Law, Courts, and Politics",
+        "Methodology",
+        "Political Theory",
+        "World Politics"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "American Politics\n\n\n\n\nAmerican Politics\nMore Info",
+        "Comparative Politics\n\n\n\n\nComparative Politics\nMore Info",
+        "Law, Courts, and Politics\n\n\n\n\nLaw, Courts, and Politics\nMore Info",
+        "Methodology\n\n\n\n\nMethodology\nMore Info",
+        "Political Theory\n\n\n\n\nPolitical Theory\nMore Info",
+        "World Politics\n\n\n\n\nWorld Politics\nMore Info"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Spring 2024: Democracy, Human Rights and Governance Programming: History, Analysis and Learning",
+        "Spring 2023: Malign Foreign Electoral Interference: A Conceptual Framework and Analysis",
+        "Spring 2022: Electoral Corruption Assessment Framework: A Conceptual Approach and Case Study",
+        "Spring 2018: Media and Electoral Violence Reporting \u2013 Guidelines on Editorial Policy and Practice",
+        "Spring 2017: International Electoral Supervision Framework for Syria"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.8,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Social Media Influencers and Elections",
+        "New Democratic Initiatives: What Gaps Do They Fill?",
+        "Algeria: A Roadmap for Electoral Reform",
+        "U.S. 2018 Midterm Election Disruptions Report",
+        "At the Precipice: Accelerating the Political and Socio-Economic Reintegration of Columbia\u2019s F.A.R.C.",
+        "Transitional Electoral Framework for Syria",
+        "North Korea Electoral Scenario",
+        "Secession Referendum Framework",
+        "Electoral Violence: A Study of the 2016 United States Presidential Election"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "Military Affairs (7478)",
+        "Business (5790)",
+        "Populations (4741)",
+        "Public Safety (4285)",
+        "Warfare and Military Operations (3536)",
+        "Homeland Security (3482)",
+        "Law (3425)",
+        "Health Behaviors (2738)",
+        "Global Security (2723)",
+        "Economics (2460)",
+        "Americas (6117)",
+        "North America (5834)",
+        "United States (5655)",
+        "Europe (2816)",
+        "West Asia (1875)",
+        "Middle East (1860)",
+        "East Asia (1777)",
+        "China (1323)",
+        "Southwestern States (1133)",
+        "Pacific States (1053)",
+        "Research (23607)",
+        "Expert Insights (6513)",
+        "Commentary (5592)",
+        "Research Summary (1637)",
+        "Article (486)",
+        "Tool (260)",
+        "Video (139)",
+        "Data Viz (112)",
+        "Press (90)",
+        "Project (17)",
+        "Date\n\n\nCustom Range\n\n\n\nStart Date\n\nto\nEnd Date\n\n\nApply"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 31,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16129032258064516,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.12903225806451613
+      }
+    },
+    {
+      "items": [
+        "Military Affairs (7478)",
+        "Business (5790)",
+        "Populations (4741)",
+        "Public Safety (4285)",
+        "Warfare and Military Operations (3536)",
+        "Homeland Security (3482)",
+        "Law (3425)",
+        "Health Behaviors (2738)",
+        "Global Security (2723)",
+        "Economics (2460)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Americas (6117)",
+        "North America (5834)",
+        "United States (5655)",
+        "Europe (2816)",
+        "West Asia (1875)",
+        "Middle East (1860)",
+        "East Asia (1777)",
+        "China (1323)",
+        "Southwestern States (1133)",
+        "Pacific States (1053)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Trending",
+        "Topics",
+        "Federally Funded Research Divisions",
+        "Social and Economic Policy Divisions",
+        "International"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Spring 2024: Democracy, Human Rights and Governance Programming: History, Analysis and Learning",
+        "Spring 2023: Malign Foreign Electoral Interference: A Conceptual Framework and Analysis",
+        "Spring 2022: Electoral Corruption Assessment Framework: A Conceptual Approach and Case Study",
+        "Spring 2018: Media and Electoral Violence Reporting \u2013 Guidelines on Editorial Policy and Practice",
+        "Spring 2017: International Electoral Supervision Framework for Syria"
+      ],
+      "output_list_from_llm": [
+        "Spring 2024: Democracy, Human Rights and Governance Programming: History, Analysis and Learning",
+        "Spring 2023: Malign Foreign Electoral Interference: A Conceptual Framework and Analysis",
+        "Spring 2022: Electoral Corruption Assessment Framework: A Conceptual Approach and Case Study",
+        "Spring 2018: Media and Electoral Violence Reporting \u2013 Guidelines on Editorial Policy and Practice",
+        "Spring 2017: International Electoral Supervision Framework for Syria"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "American Politics",
+        "Comparative Politics",
+        "Law, Courts, and Politics",
+        "Methodology",
+        "Political Theory",
+        "World Politics"
+      ],
+      "output_list_from_llm": [
+        "American Politics",
+        "Comparative Politics",
+        "Law, Courts, and Politics",
+        "Methodology",
+        "Political Theory",
+        "World Politics"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "American politics",
+        "Comparative politics",
+        "International relations",
+        "Political theory",
+        "Political economy",
+        "Political methodology"
+      ],
+      "output_list_from_llm": [
+        "American politics",
+        "Comparative politics",
+        "International relations",
+        "Political theory",
+        "Political economy",
+        "Political methodology"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "American Politics American Politics More Info",
+        "Comparative Politics Comparative Politics More Info",
+        "Law, Courts, and Politics Law, Courts, and Politics More Info",
+        "Methodology Methodology More Info",
+        "Political Theory Political Theory More Info",
+        "World Politics World Politics More Info"
+      ],
+      "output_list_from_llm": [
+        "American Politics American Politics More Info",
+        "Comparative Politics Comparative Politics More Info",
+        "Law, Courts, and Politics Law, Courts, and Politics More Info",
+        "Methodology Methodology More Info",
+        "Political Theory Political Theory More Info",
+        "World Politics World Politics More Info"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "American Politics",
+        "Comparative Politics",
+        "Political Theory",
+        "International Relations"
+      ],
+      "output_list_from_llm": [
+        "American Politics",
+        "Comparative Politics",
+        "Political Theory",
+        "International Relations"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Research",
+        "American Politics",
+        "Comparative Politics",
+        "Law, Courts, and Politics",
+        "Methodology",
+        "Political Theory",
+        "World Politics"
+      ],
+      "output_list_from_llm": [
+        "American Politics",
+        "Comparative Politics",
+        "Law, Courts, and Politics",
+        "Methodology",
+        "Political Theory",
+        "World Politics"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Labs and Programs",
+        "Computational Social Science Lab",
+        "Court of Claims Lab",
+        "GRAIL - Governance and Responsible AI Lab",
+        "iPART - International Politics and Responsible Tech",
+        "Law and Conflict Research Lab",
+        "Parties, Polarization and Pluralism Lab",
+        "PAIR - Program on American Institutional Renewal"
+      ],
+      "output_list_from_llm": [
+        "Computational Social Science Lab",
+        "GRAIL - Governance and Responsible AI Lab",
+        "iPART - International Politics and Responsible Tech",
+        "Law and Conflict Research Lab",
+        "Parties, Polarization and Pluralism Lab",
+        "PAIR - Program on American Institutional Renewal"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "making in the United States, a cross",
+        "national and international perspective is also included. Courses in this field cover the policy",
+        "making process, policy analysis, and substantive policy areas."
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "American politics american politics more info",
+    "Comparative politics comparative politics more info",
+    "Law, courts, and politics law, courts, and politics more info",
+    "World politics world politics more info",
+    "Ipart - international politics and responsible tech",
+    "International relations",
+    "Spring 2024: democracy, human rights and governance programming: history, analysis and learning",
+    "Spring 2023: malign foreign electoral interference: a conceptual framework and analysis",
+    "Spring 2022: electoral corruption assessment framework: a conceptual approach and case study",
+    "Spring 2018: media and electoral violence reporting \u2013 guidelines on editorial policy and practice",
+    "Spring 2017: international electoral supervision framework for syria",
+    "Political economy",
+    "Political methodology",
+    "Methodology methodology more info",
+    "Political theory political theory more info",
+    "Computational social science lab",
+    "Grail - governance and responsible ai lab",
+    "Law and conflict research lab",
+    "Parties, polarization and pluralism lab",
+    "Pair - program on american institutional renewal"
+  ],
+  "error": null
+}

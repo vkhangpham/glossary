@@ -1,0 +1,1191 @@
+{
+  "level1_term": "otolaryngology",
+  "all_urls": [
+    "https://www.vagelos.columbia.edu/departments-centers/otolaryngology-head-and-neck-surgery/research/research-areas",
+    "https://medicine.yale.edu/surgery/otolaryngology/research/",
+    "https://med.nyu.edu/departments-institutes/otolaryngology-head-neck-surgery/research",
+    "https://med.stanford.edu/ohns/research/research-projects.html",
+    "https://www.utsouthwestern.edu/departments/otolaryngology/research/",
+    "https://medicine.osu.edu/departments/otolaryngology/research",
+    "https://icahn.mssm.edu/about/departments-offices/otolaryngology/research",
+    "https://www.rushu.rush.edu/research-rush-university/departmental-research/otorhinolaryngology-head-neck-surgery-research",
+    "https://school.wakehealth.edu/departments/otolaryngology/otolaryngology-research",
+    "https://ent.weill.cornell.edu/professionals/research-studies",
+    "https://med.virginia.edu/otolaryngology/research/",
+    "https://umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Otolaryngology/Research/Participation%20Opportunities/Current%20Projects.html",
+    "https://medicine.uams.edu/otolaryngology/research/",
+    "https://bchcmg.childrens.harvard.edu/research/departments/otolaryngology-research/research-areas",
+    "https://oto.wustl.edu/research/",
+    "https://otolaryngology.uw.edu/research-areas/",
+    "https://medicine.iu.edu/otolaryngology/research",
+    "https://otolaryngology.medicine.uiowa.edu/research",
+    "https://www.mayo.edu/research/departments-divisions/department-otorhinolaryngology/overview",
+    "https://www.mcw.edu/departments/ent-Ear-Nose-Throat/research",
+    "https://med.stanford.edu/ohns/research.html",
+    "https://drexel.edu/medicine/about/departments/otolaryngology/research/",
+    "https://surgery.uchicago.edu/education/ohns-research",
+    "https://med.umn.edu/ent/research",
+    "https://www.urmc.rochester.edu/education/graduate-medical-education/prospective-residents/otolaryngology/curriculum/research",
+    "https://www.downstate.edu/education-training/fellowship-residency-programs/otolaryngology/research/ongoing-projects.html",
+    "https://www.augusta.edu/mcg/otolaryngology/divisions/research.php",
+    "https://research.med.psu.edu/departments/otolaryngology/",
+    "https://medschool.cuanschutz.edu/otolaryngology/research",
+    "https://www.slu.edu/medicine/otolaryngology/research/index.php"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Cochlear Implant",
+        "Laryngology",
+        "Otology",
+        "Pediatric ENT Research",
+        "Sleep Apnea"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "General Otolaryngology",
+        "Head and Neck Surgery",
+        "Laryngology",
+        "Otology and Neurotology",
+        "Pediatric Otolaryngology",
+        "Rhinology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Decibel Therapeutics",
+        "Modulation of the Wnt pathway to restore inner ear function",
+        "Mouse vestibular regeneration and function",
+        "Clinician-scientist training program in otolaryngology",
+        "Designing new aminoglycosides to alleviate inner ear toxicity (co-PI with Dr. Ricci)",
+        "Pathways towards regenerating the mammalian cochlea"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Function of LOXHD1 in mechanosensory hair cells",
+        "Pathways towards regenerating the mammalian cochlea (co-I; Dr. Cheng's project)",
+        "Molecules and Mechanisms of Mammalian Hair Cell Mechanotransduction (co-I; Dr. Ricci's project)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Mouse vestibular regeneration and function (co-I; Dr. Cheng's project)",
+        "Genetic Regulation of Cochlear Development",
+        "Response of cochlear hair cells to pathological changes in the auditory system",
+        "Synaptic Specializations in Auditory Hair Cells (co-I; Dr. Ricci's project)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Mouse vestibular regeneration and function (co-I; Dr. Cheng's project)",
+        "Function of LOXHD1 in mechanosensory hair cells (co-I; Dr. Grillet's project)",
+        "Determinants of age-induced hearing loss and reversal strategies",
+        "Designing new aminoglycosides to alleviate inner ear toxicity",
+        "Synaptic Specializations in Auditory Hair Cells",
+        "Molecules and Mechanisms of Mammalian Hair Cell Mechanotransduction"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Defining the pathogenesis of otitis media",
+        "Examining language development in children with hearing loss",
+        "Understanding the underlying factors contributing to head and neck cancer",
+        "Understanding areas of postural control and vestibular-ocular mechanisms",
+        "Studying the genetics of neurofibromatosis and vestibular schwannoma",
+        "Identifying the underlying mechanisms of Meniere's disease"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Early Cancer Detection",
+        "Tracheal Transplant",
+        "Oral Microbiome and Cancer Risk",
+        "Transoral Robotic Surgery",
+        "Thyroid Cancer Etiology",
+        "Mastoidectomy Using Robotic Arm Technology",
+        "Cerebrospinal Fluid Leaks Treatment",
+        "Post-COVID-19 Laryngeal Complications",
+        "COVID-19-Associated Anosmia"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Resources",
+        "Education",
+        "Programs",
+        "Resources",
+        "Research",
+        "Programs",
+        "Resources",
+        "Diversity",
+        "Programs",
+        "Popular Searches",
+        "Explore Topics"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.36363636363636365
+      }
+    },
+    {
+      "items": [
+        "One Gustave L. Levy Place",
+        "Box 1189",
+        "New York, NY 10029",
+        "INFO FOR",
+        "EXPLORE",
+        "RESOURCES"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "and beyond it with promising startups",
+        "COVID patients with anosmia; 7",
+        "Aminolevulinic acid."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Breadcrumb",
+        "Section of Rhinology, Sinus Surgery and Skull Base Surgery",
+        "Section of Head and Neck Oncology",
+        "Section of Sleep Surgery and General Otolaryngology",
+        "Section of Laryngology",
+        "Section of Pediatric Otolaryngology",
+        "Section Otology, Neurotology and Lateral Skull Base Surgery"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Otology and neurotology.",
+        "Rhinology and sinusitis.",
+        "Pediatric otolaryngology.",
+        "Head and neck oncology.",
+        "Plastic and reconstructive facial surgery.",
+        "Laryngology."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The use of hyperbaric oxygen in sensorineural hearing loss.",
+        "Treatment of cerebrospinal fluid leaks.",
+        "The role of fluid intake after adenotonsillectomy.",
+        "Ciliary function in neonates.",
+        "Novel techniques for treatment of epistaxis.",
+        "Genetic analysis of patients with chronic sinusitis.",
+        "Novel approaches to endoscopic skull base surgery.",
+        "Outcomes after computer-assisted endoscopic sinus surgery.",
+        "The effects of sinal surgery on voice parameters."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Departments and Offices",
+        "SOM Departments",
+        "Otolaryngology - Head and Neck Surgery",
+        "Research",
+        "Participation Opportunities"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Faculty Sponsor",
+        "Jeff Carron, MD",
+        "Lana Jackson, MD",
+        "Gina Jefferson, MD",
+        "J. Randall Jordan, MD",
+        "Christopher Lee, MD",
+        "Andrea Lewis, MD",
+        "John Schweinfurth, MD",
+        "Christopher Spankovich, AuD, PhD",
+        "Douglas Vetter, PhD",
+        "Brad Walters, MD",
+        "Wu Zhou, PhD",
+        "Hong Zhu, MD, PhD"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1) fully characterize magnetic-field induced eye movements;",
+        "2) obtain high resolution imaging of labyrinth in vivo;",
+        "3) determine the relationships between nystagmus null orientation and the labyrinth geometry;",
+        "4) characterize subjective vertigo and its relationship to nystagmus;",
+        "5) imaging labyrinth and measuring nystagmus in patients with vestibular disorders; and"
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "induced Vestibular DeficitsAs an air",
+        "ocular reflex, VOR and the vestibulo",
+        "collic reflex, VCR)."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research Updates",
+        "3D Stem Cell Biology Research Group",
+        "DeVault Otologic Research Lab",
+        "Laboratory of Molecular Mechanisms of Auditory Perception and Deafness",
+        "Farlow Lab",
+        "Nelson Lab",
+        "O'Connell Lab",
+        "Ramakrishnan Lab",
+        "Yuan Lab",
+        "Investigators",
+        "Irina  Castellanos, PhD",
+        "Janice L. Farlow, MD,  PhD",
+        "Stacey L. Halum, MD",
+        "Eri  Hashino, PhD",
+        "William G. Kronenberger, PhD",
+        "Jinan  Li, PhD",
+        "Chang  Liu, PhD",
+        "Manikandan  Mayakannan, PhD",
+        "Rick F. Nelson, MD,  PhD",
+        "Thomas M. O'Connell, PhD",
+        "Rita R. Patel, PhD",
+        "David B. Pisoni, PhD",
+        "Vijay R. Ramakrishnan, MD",
+        "Yoshitomo  Ueda, MD,  PhD",
+        "Charles W. Yates, MD",
+        "Xue  Yuan, PhD",
+        "Bo  Zhao, PhD",
+        "Social media"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 28,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.10714285714285714,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.32142857142857145
+      }
+    },
+    {
+      "items": [
+        "Stacey L. Halum, MD\n\n\n\nStacey L. Halum, MD\n\nProfessor of Otolaryngology-Head & Neck Surgery",
+        "Eri  Hashino, PhD\n\n\n\nEri  Hashino, PhD\n\nRuth C. Holton Professor of Otology",
+        "Jinan  Li, PhD\n\n\n\nJinan  Li, PhD\n\nAssistant Research Professor of Otolaryngology-Head & Neck Surgery",
+        "Rita R. Patel, PhD\n\n\n\nRita R. Patel, PhD\n\nAssociate Professor, Speech & Hearing Sciences",
+        "David B. Pisoni, PhD\n\n\n\nDavid B. Pisoni, PhD\n\nDistinguished Professor",
+        "Xue  Yuan, PhD\n\n\n\nXue  Yuan, PhD\n\nAssistant Professor of Otolaryngology-Head & Neck Surgery",
+        "Bo  Zhao, PhD\n\n\n\nBo  Zhao, PhD\n\nAssociate Professor of Otolaryngology-Head & Neck Surgery"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "edge medical and surgical advances. Others use immunology",
+        "based approaches, perform whole",
+        "exome or whole",
+        "genome sequencing, and advance 3D"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Professor, Otolaryngology & Communication Sciences and Microbiology & Immunology",
+        "Assistant Professor",
+        "New Therapeutic for Reflux Disease Fund"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Walker D, Cifu A, Gluth MB. Tinnitus.\u00a0 JAMA, 315(20):2221-2, 2016",
+        "Rhinol Laryngol. 127(11):817-822. 2018",
+        "Gluth MB.\u00a0 On the relationship between Meniere\u2019s disease and endolymphatic hydrops. Otol Neurotol,",
+        "Xu L, Gluth MB.\u00a0 Malleostapedotomy: recent innovations and surgical outcomes.\u00a0 Curr Otolaryngol Rep."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Air pollution, olfaction, and cognition (Aeronose)",
+        "Aging of sensory function (National Social Life, Health, and Aging Project)",
+        "Epigenetic effects of particulate matter on the airway (Target II)"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Bloom Otopathology Laboratory:",
+        "Selected Recent Publications:",
+        "Clinical and Translational Research",
+        "Selected Recent Publications:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "There are three approaches that we employ:",
+        "Current areas of inquiry include:",
+        "Selected Publications:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Genome Integration and Quantitative Analysis of High-Risk HPV in Dysplastic Oral Cavity Lesions",
+        "Analysis of Sinus Sampling Techniques by 16S Sequencing",
+        "Omics and Head & Neck Cancer: Fishing or Catching?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Tissue Engineering Approach to Mandibular and Midface Bone Regeneration",
+        "Osseous Reconstruction via 3D Printed Scaffolds and Tissue Engineered Periosteum",
+        "Craniofacial Defect Reconstruction via 3D Printed Scaffolds and Tissue Engineered Periosteum"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "The Effects of Timing of Pressure Equalization Tube Placement on Speech Thresholds",
+        "National Trends in Airway Management for Pierre-Robin Sequence",
+        "Long-Term Hearing Outcomes and Costs in the NICU Population",
+        "Effects of NY State Hearing Screening Demonstration Project: An Update",
+        "Morphine Solution for a Codeine Problem",
+        "Risk Factors Predictive of Need for Airway Intervention in Children after Tonsillectomy",
+        "Comparison on REM-only and NREM-only OSAS in Children: Polysomnographic and Clinical Characteristics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Incidence of Synchronous Thyroid Cancer in the Setting of Head and Neck Malignancy: A Case Series",
+        "State of Free-Flap Monitoring in the U.S.",
+        "Age and the Betheda Thyroid Classification System"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Crane Lab",
+        "Gill Lab",
+        "Benoit Lab",
+        "Ovitt Lab",
+        "Holt Lab",
+        "Clinical Trials",
+        "Prospective Observational Studies",
+        "Retrospective/Chart Reviews"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "AAO-HNS clinical practice guideline on epistaxis",
+        "AAO-HNS clinical practice guideline on opioid prescribing in otolaryngology",
+        "AAO-HNS clinical practice guideline on tonsillectomy (update)",
+        "AAO-HNS clinical consensus statement on ankyloglossia",
+        "AAO-HNS clinical consensus statement on drug-induced sleep endoscopy (DICE)",
+        "AAO-HNS quality measures development program",
+        "American College of Lifestyle Medicine, expert consensus statement on nutrition"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.8571428571428571
+      }
+    },
+    {
+      "items": [
+        "Targeting eosinophils for the treatment of sinusitis.",
+        "The Impact of CXCL11 on Chronic Rhinosinusitis in Smokers.",
+        "Transcriptome sequencing of neuronal cell lines from patients with schizophrenia.",
+        "Impact of Schizophrenia Polygenic Risk on Brain Structure and Function.",
+        "Analysis of Anosmia During the COVID-19 Pandemic."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Restoration of recurrent- laryngeal-nerve function after injury in a rat model",
+        "Lifesaving impact of tracheal implants in audiogenic seizure trained mice",
+        "Post treatment PETCT in HP associated oropharyngeal cancer",
+        "Prospective chemoradiation trial in nasopharyngeal cancer- a national study."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Research Projects",
+        "Richard M. Rosenfeld, MD, MPH, MBA",
+        "Sara Abu Ghanem, MD",
+        "Ofer Azoulay, MD",
+        "Boris Bentsianov, MD",
+        "Marina Boruk, MD",
+        "Sydney Butts, MD",
+        "Natalya Chernichenkor, MD",
+        "Nira Goldstein, MD",
+        "Matthew Hanson, MD",
+        "Richard Kollmar, PhD",
+        "Ann Plum, MD",
+        "Michal Preis, MD",
+        "Krishnamurthi Sundaram, MD"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07142857142857142
+      }
+    },
+    {
+      "items": [
+        "Education & Training",
+        "Residency & Fellowship Programs",
+        "Otolaryngology",
+        "Research"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "HNS, developing clinical practice guidelines",
+        "induced sleep endoscopy,",
+        "Ghanem is spearheading a multidisciplinary",
+        "19 patients and Drs. Boruk, Tabtabai",
+        "19 patients."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Augusta University",
+        "Colleges & Schools",
+        "Medical College of Georgia",
+        "Otolaryngology - Head & Neck Surgery",
+        "Divisions | Otolaryngology",
+        "Otolaryngology Research"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Cost-effectiveness analysis\nOutcomes of treatment for head and neck cancer",
+        "Cost-effectiveness analysis",
+        "Outcomes of treatment for head and neck cancer"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "1 in complex biological fluids. We hypothesize that detection of galectin",
+        "1 by MRM or Luminex, will allow minimally",
+        "invasive detection of Papillary"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "quality product each year PGY2",
+        "PGY5.",
+        "actively seek out opportunities to become involved in active/ongoing",
+        "control",
+        "life outcomes.\u00a0 During the 3rd",
+        "month block of protected time provided for the",
+        "April."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pennsylvania Academy of Otolaryngology \u2013 Head and Neck Surgery Annual Scientific Meeting",
+        "American Head and Neck Society International Conference",
+        "American Academy of Otolaryngology \u2013 Head and Neck Surgery Annual Meeting",
+        "American Academy of Facial Plastic and Reconstructive Surgery Annual Meeting",
+        "Combined Otolaryngology Spring Meetings"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tools & Resources",
+        "CU Campuses",
+        "CU Anschutz Medical Campus",
+        "School of Medicine",
+        "Otolaryngology (SOM)"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Mouse vestibular regeneration and function (co-I; Dr. Cheng's project)",
+        "Genetic Regulation of Cochlear Development",
+        "Response of cochlear hair cells to pathological changes in the auditory system",
+        "Synaptic Specializations in Auditory Hair Cells (co-I; Dr. Ricci's project)"
+      ],
+      "output_list_from_llm": [
+        "Mouse vestibular regeneration and function (co-I; Dr. Cheng's project)",
+        "Genetic Regulation of Cochlear Development",
+        "Response of cochlear hair cells to pathological changes in the auditory system",
+        "Synaptic Specializations in Auditory Hair Cells (co-I; Dr. Ricci's project)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Genome Integration and Quantitative Analysis of High-Risk HPV in Dysplastic Oral Cavity Lesions",
+        "Analysis of Sinus Sampling Techniques by 16S Sequencing",
+        "Omics and Head & Neck Cancer: Fishing or Catching?"
+      ],
+      "output_list_from_llm": [
+        "Genome Integration and Quantitative Analysis of High-Risk HPV in Dysplastic Oral Cavity Lesions",
+        "Analysis of Sinus Sampling Techniques by 16S Sequencing",
+        "Omics and Head & Neck Cancer: Fishing or Catching?"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Cost-effectiveness analysis Outcomes of treatment for head and neck cancer",
+        "Cost-effectiveness analysis",
+        "Outcomes of treatment for head and neck cancer"
+      ],
+      "output_list_from_llm": [
+        "Cost-effectiveness analysis Outcomes of treatment for head and neck cancer",
+        "Outcomes of treatment for head and neck cancer"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "AAO-HNS clinical practice guideline on epistaxis",
+        "AAO-HNS clinical practice guideline on opioid prescribing in otolaryngology",
+        "AAO-HNS clinical practice guideline on tonsillectomy (update)",
+        "AAO-HNS clinical consensus statement on ankyloglossia",
+        "AAO-HNS clinical consensus statement on drug-induced sleep endoscopy (DICE)",
+        "AAO-HNS quality measures development program",
+        "American College of Lifestyle Medicine, expert consensus statement on nutrition"
+      ],
+      "output_list_from_llm": [
+        "AAO-HNS clinical practice guideline on epistaxis",
+        "AAO-HNS clinical practice guideline on opioid prescribing in otolaryngology",
+        "AAO-HNS clinical practice guideline on tonsillectomy (update)",
+        "AAO-HNS clinical consensus statement on ankyloglossia",
+        "AAO-HNS clinical consensus statement on drug-induced sleep endoscopy (DICE)",
+        "AAO-HNS quality measures development program"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Tissue Engineering Approach to Mandibular and Midface Bone Regeneration",
+        "Osseous Reconstruction via 3D Printed Scaffolds and Tissue Engineered Periosteum",
+        "Craniofacial Defect Reconstruction via 3D Printed Scaffolds and Tissue Engineered Periosteum"
+      ],
+      "output_list_from_llm": [
+        "Tissue Engineering Approach to Mandibular and Midface Bone Regeneration",
+        "Osseous Reconstruction via 3D Printed Scaffolds and Tissue Engineered Periosteum",
+        "Craniofacial Defect Reconstruction via 3D Printed Scaffolds and Tissue Engineered Periosteum"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Incidence of Synchronous Thyroid Cancer in the Setting of Head and Neck Malignancy: A Case Series",
+        "State of Free-Flap Monitoring in the U.S.",
+        "Age and the Betheda Thyroid Classification System"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Function of LOXHD1 in mechanosensory hair cells",
+        "Pathways towards regenerating the mammalian cochlea (co-I; Dr. Cheng's project)",
+        "Molecules and Mechanisms of Mammalian Hair Cell Mechanotransduction (co-I; Dr. Ricci's project)"
+      ],
+      "output_list_from_llm": [
+        "Function of LOXHD1 in mechanosensory hair cells",
+        "Pathways towards regenerating the mammalian cochlea (co-I; Dr. Cheng's project)",
+        "Molecules and Mechanisms of Mammalian Hair Cell Mechanotransduction (co-I; Dr. Ricci's project)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "There are three approaches that we employ:",
+        "Current areas of inquiry include:",
+        "Selected Publications:"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Aao-hns clinical practice guideline on opioid prescribing in otolaryngology",
+    "Mouse vestibular regeneration and function (co-i; dr. cheng's project)",
+    "Genetic regulation of cochlear development",
+    "Response of cochlear hair cells to pathological changes in the auditory system",
+    "Synaptic specializations in auditory hair cells (co-i; dr. ricci's project)",
+    "Genome integration and quantitative analysis of high-risk hpv in dysplastic oral cavity lesions",
+    "Analysis of sinus sampling techniques by 16s sequencing",
+    "Omics and head & neck cancer: fishing or catching?",
+    "Cost-effectiveness analysis outcomes of treatment for head and neck cancer",
+    "Aao-hns clinical practice guideline on tonsillectomy (update)",
+    "Aao-hns clinical consensus statement on ankyloglossia",
+    "Aao-hns clinical consensus statement on drug-induced sleep endoscopy (dice)",
+    "Aao-hns quality measures development program",
+    "Tissue engineering approach to mandibular and midface bone regeneration",
+    "Craniofacial defect reconstruction via 3d printed scaffolds and tissue engineered periosteum",
+    "Function of loxhd1 in mechanosensory hair cells",
+    "Pathways towards regenerating the mammalian cochlea (co-i; dr. cheng's project)",
+    "Molecules and mechanisms of mammalian hair cell mechanotransduction (co-i; dr. ricci's project)"
+  ],
+  "error": null
+}

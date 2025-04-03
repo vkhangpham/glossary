@@ -1,0 +1,1186 @@
+{
+  "level2_term": "data cleaning",
+  "all_urls": [
+    "https://dl.acm.org/journal/jdiq/call-for-papers",
+    "https://pubsonline.informs.org/page/ijds/calls-for-papers",
+    "https://mlsys.org/Conferences/2024/CallForPapers",
+    "https://kdd.org/kdd2022/cfpResearch.html",
+    "https://jds-online.org/",
+    "https://2025.sigmod.org/calls_papers_sigmod_research.shtml",
+    "https://publichealth.jhu.edu/events/2025/03/04/data-cleaning-in-r",
+    "https://www.siam.org/conferences-events/siam-conferences/sdm25/",
+    "https://data.scitevents.org/callforpapers.aspx",
+    "https://www.sciencedirect.com/journal/journal-of-controlled-release/about/call-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Research papers",
+        "Experience papers",
+        "Survey papers",
+        "Challenge papers",
+        "On the Horizon papers",
+        "Special Issue papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Data quality metrics and frameworks",
+        "Data profiling",
+        "Error and anomaly detection",
+        "Synthetic data and data synthesis",
+        "Data provenance",
+        "Probabilistic, incomplete and uncertain data",
+        "Big data quality"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Data preparation and wrangling",
+        "Entity matching, entity resolution, record linkage",
+        "Data fusion",
+        "Schema and ontology matching",
+        "Data repair, augmentation, and imputation",
+        "Data re-purposing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data mining",
+        "Data quality and machine learning",
+        "Data quality and generative AI",
+        "Data quality and representation learning",
+        "Intelligent systems",
+        "Automated planning and reasoning",
+        "Federated learning",
+        "Data poisoning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Data quality standardization",
+        "Responsible AI, bias and fairness",
+        "Data quality policies and standards",
+        "Legal aspects of data quality",
+        "Maturity models",
+        "Human-computer interaction",
+        "Behavioral aspects of data quality",
+        "Data privacy and access control",
+        "Security evaluation",
+        "Economics of data quality",
+        "IQ education and curriculum development"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data ecosystems",
+        "Data acquisition",
+        "Metadata management",
+        "Web data management",
+        "Semantic web and ontologies",
+        "Information extraction",
+        "Information foraging",
+        "Multimodal data integration",
+        "Knowledge graphs",
+        "Knowledge representation and reasoning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Laboratory experimentation",
+        "Healthcare and clinical data",
+        "Financial data",
+        "Social media data",
+        "Multimedia and unstructured data",
+        "Sensors and streaming data, IoT",
+        "Robotic process automation",
+        "Business process management",
+        "Process mining"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Relevance to Data and Information Quality.",
+        "Suitable grounding in theory and the current literature",
+        "Appropriate research methods",
+        "Readability and organization of the manuscript"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Title: Mandatory \"Experience:\" prefix in the title.",
+        "Page limit: 10 pages with an option of an online-only supplement.",
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Journal Topics",
+        "Article Types",
+        "Categories",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Efficient model training, inference, and serving",
+        "Distributed and parallel learning algorithms",
+        "Privacy and security for ML applications",
+        "Testing, debugging, and monitoring of ML applications",
+        "Fairness, interpretability, and explainability for ML applications",
+        "Data preparation and data cleaning",
+        "ML programming models and abstractions",
+        "Programming languages for machine learning",
+        "ML compilers and runtimes",
+        "Visualization of data, models, and predictions",
+        "Specialized hardware for machine learning",
+        "Hardware-efficient ML methods",
+        "Machine learning benchmarks, datasets, and tooling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.15384615384615385,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.15384615384615385
+      }
+    },
+    {
+      "items": [
+        "code that could not be included in the main nine",
+        "page manuscript may also be included in the two",
+        "template.",
+        "ready: June 9th, 2022",
+        "18, 2022"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Organization",
+        "SIGMOD PC",
+        "PODS PC",
+        "SIGMOD Industry PC",
+        "SIGMOD Demo PC",
+        "Sponsor Opportunities",
+        "ACM SIGMOD Online",
+        "Registration",
+        "Conference Venue",
+        "Accomodation",
+        "Childcare",
+        "Banquet",
+        "Travel to Berlin",
+        "Tourism",
+        "About Germany",
+        "Student Travel Grants"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Accepted Papers",
+        "Accepted Demos",
+        "Accepted Workshops",
+        "Accepted Tutorials",
+        "Accepted Panels",
+        "Accepted Industry Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Research Papers",
+        "Keynote Talk",
+        "Invited Tutorials",
+        "Awards",
+        "Gems of PODS"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Topics",
+        "Dates",
+        "Dissemination",
+        "Presentation",
+        "Review Process",
+        "Submission Guidelines"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Benchmarking, monitoring, testing, and tuning database systems",
+        "Cloud, distributed, decentralized and parallel data management",
+        "Database systems on emerging hardware",
+        "Embedded databases, IoT and Sensor networks",
+        "Storage, indexing, and physical database design",
+        "Query processing and optimization",
+        "Transaction processing",
+        "Data warehousing, OLAP, Analytics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Data models and semantics",
+        "Declarative programming languages and optimization",
+        "Spatial and temporal data management",
+        "Graphs, social networks, web data, and semantic web",
+        "Multimedia and information retrieval",
+        "Uncertain, probabilistic, and approximate databases",
+        "Streams and complex event processing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Data exploration, visualization, query languages, and user interfaces",
+        "Crowdsourced and collaborative data management",
+        "User-centric and human-in-the-loop data management",
+        "Natural language processing for databases"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data provenance and workflows",
+        "Data integration, information extraction, and schema matching",
+        "Data quality, data cleaning",
+        "Data security, privacy, and access control",
+        "Responsible data management and data fairness",
+        "Metadata Management"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Structured queries over unstructured data: images, video, natural language, etc.",
+        "Natural language queries",
+        "Machine learning methods for database engine internals",
+        "Machine learning methods for database tuning",
+        "Data management and metadata for machine learning pipelines",
+        "Knowledge base management",
+        "Data mining",
+        "Prescriptive Analytics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "justify a crucial assumption,",
+        "improve motivation of the potential benefits of the work,",
+        "clean up notation, tighten presentation,",
+        "compare against specific relevant prior work,"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Latex: sample-sigconf.tex (version 2e)",
+        "Word: Interim layout.docx",
+        "Overleaf: ACM\u2019s official 2-column template"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "An author's declared conflicts will be automatically applied to all of their submissions.",
+        "Conflicts are not declared per submission.",
+        "Conflict declaration must occur prior to paper submission."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "The PC member is a co-author of the paper.",
+        "The PC member has been a co-worker in the same company or university within the past five years.1",
+        "The PC member has been a collaborator within the past five years.2",
+        "The PC member is a relative or close personal friend of the author."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Welcome",
+        "Organization",
+        "Participant Information",
+        "Program Overview",
+        "SIGMOD Program",
+        "PODS Program",
+        "Calls For Submissions",
+        "Major Changes from Prior Years",
+        "TABLE OF CONTENTS",
+        "TOPICS",
+        "DATES",
+        "DISSEMINATION",
+        "PRESENTATION",
+        "REVIEW PROCESS",
+        "SUBMISSION GUIDELINES"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.06666666666666667,
+        "length_consistency": true,
+        "pattern_ratio": 0.06666666666666667,
+        "keyword_ratio": 0.4666666666666667
+      }
+    },
+    {
+      "items": [
+        "Submission Link",
+        "Submission Paper length",
+        "Appendix",
+        "Camera Ready Paper length",
+        "File type and size",
+        "Paper size",
+        "Format",
+        "Anonymity"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "column ACM Proceedings format:",
+        "sigconf.tex (version 2e)",
+        "column template",
+        "anonymity (see below)"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "author of the paper.",
+        "worker in the same company or university within the past five years.1",
+        "doctoral advisor, no matter how long ago.",
+        "doctoral advisor, no matter how long ago."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Breadcrumb",
+        "Related Content",
+        "Footer social",
+        "Footer menu primary",
+        "Footer menu secondary",
+        "Footer menu extra"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Faculty Spotlight: Ciprian Crainiceanu, PhD, MS",
+        "Who Decides Which Vaccines Americans Should Get and When?",
+        "Summer Institute of Biostatistics & Epidemiology Registration Now Open",
+        "Registration Open for 2025 Summer Institute in Data to Policy",
+        "Addressing Tobacco-Related Health Disparities\u2014Faculty Members Support New Surgeon General\u2019s Report"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tuesday, March 4, 2025, 12:30 p.m. - 3:00 p.m. ET",
+        "Location\n\nZoom",
+        "Online",
+        "Past Event"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Faculty Spotlight: Ciprian Crainiceanu, PhD, MS\n\n\n\nApril 02, 2025",
+        "Who Decides Which Vaccines Americans Should Get and When?\n\n\n\nMarch 24, 2025",
+        "Summer Institute of Biostatistics & Epidemiology Registration Now Open\n\n\n\nMarch 03, 2025",
+        "Registration Open for 2025 Summer Institute in Data to Policy\n\n\n\nFebruary 19, 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Advanced Machine Learning Algorithms",
+        "Natural Language Processing",
+        "Machine Learning for Large Datasets",
+        "Computer Vision",
+        "Explainable AI",
+        "AutoML & Hyperparameter Tuning",
+        "Time Series Analysis",
+        "Predictive Modeling",
+        "Pattern Recognition"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Relational vs. NoSQL Databases",
+        "Database Scalability & Performance Tuning",
+        "Distributed Databases & Sharding",
+        "Database Security & Access Control",
+        "Cloud-native Databases & Database-as-a-Service (DBaaS)",
+        "SQL vs. NewSQL: Choosing the Right Database",
+        "Data Replication & Consistency Models",
+        "In-Memory Databases & Real-Time Data Processing",
+        "Graph Databases & Complex Network Analysis",
+        "Database Migration & Integration Strategies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Advanced Data Analytics",
+        "Statistics and Exploratory Data Analysis",
+        "Unstructured Data Analytics",
+        "Web Analytics",
+        "Data Storytelling",
+        "Dashboards & BI Tools",
+        "Geospatial Analytics",
+        "Interactive Data Visualization",
+        "A/B Testing & Experimentation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Data Encryption & Anonymization",
+        "Regulatory Compliance",
+        "Threat Detection & Prevention",
+        "Identity Management & Access Control",
+        "Blockchain & Data Security",
+        "Incident Response & Forensics",
+        "Ethics of Data Collection",
+        "Data Governance Frameworks",
+        "Bias in Data",
+        "Data Ownership & Control",
+        "Data Sovereignty",
+        "Corporate Social Responsibility (CSR)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Data in Finance, Healthcare, Retail & E-commerce, Manufacturing, Marketing",
+        "Data-Driven Innovation",
+        "Scalability & Performance",
+        "Collaborative Data Science",
+        "Data for Crisis Management",
+        "Quantum Computing & Data",
+        "Edge Computing & Data",
+        "Synthetic Data",
+        "Augmented Analytics",
+        "Digital Twins",
+        "5G & Data"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "AREA 1: DATA SCIENCE & MACHINE LEARNING",
+        "AREA 2: DATABASES & DATA MANAGEMENT",
+        "AREA 3: DATA ENGINEERING, INFRASTRUCTURE AND BUSINESS APPLICATIONS",
+        "AREA 4: DATA ANALYTICS & VISUALIZATION",
+        "AREA 5: DATA PRIVACY & SECURITY, ETHICS & GOVERNANCE",
+        "AREA 6: DATA IN INDUSTRY AND EMERGING TRENDS IN DATA"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Sponsored by:",
+        "Locally Organized and Hosted by:",
+        "INSTICC is Member of:",
+        "Logistics:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "David Camacho,",
+        "Technical University of Madrid, Spain",
+        "Elena Simperl,",
+        "King's College London, United Kingdom (Cancelled)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "616 Set\u00fabal",
+        "Portugal",
+        "mail: data.secretariat@insticc.org"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Salih,",
+        "University of Pisa, Italy",
+        "Ching Chang,",
+        "CNR, Italy",
+        "Commissariat \u00e0 l'\u00e9nergie Atomique, Brazil",
+        "IPP, Portugal",
+        "Gress,",
+        "Eui Hong,",
+        "Faculty of Organizational Sciences, Serbia",
+        "University of Sfax, Tunisia",
+        "Tahar Kechadi,",
+        "Charles Lamirel,",
+        "Gonz\u00e1lez,",
+        "Prieto,",
+        "Montes e Alto Douro (UTAD), Portugal",
+        "Olivo,",
+        "Nicolae Moldovan,",
+        "CNR, Italy",
+        "Dastjerdi,",
+        "Universit\u00e9 Toulouse I, France",
+        "Quentin",
+        "Yvelines & INRIA Saclay, France",
+        "Triesdorf, Germany",
+        "Wuerttemberg Cooperative State University (DHBW), Germany",
+        "Wuerttemberg Cooperative State University Stuttgart (DHBW Stuttgart), Germany",
+        "Ruiz,",
+        "Nicolai Teodorescu,",
+        "Hsien Ting,",
+        "Mandi, Himachal Pradesh, India, Afghanistan",
+        "Universit\u00e0 di Modena e Reggio Emilia, Italy"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Research papers",
+        "Experience papers",
+        "Survey papers",
+        "Challenge papers",
+        "On the Horizon papers",
+        "Special Issue papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Accepted Papers",
+        "Accepted Demos",
+        "Accepted Workshops",
+        "Accepted Tutorials",
+        "Accepted Panels",
+        "Accepted Industry Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "An author's declared conflicts will be automatically applied to all of their submissions.",
+        "Conflicts are not declared per submission.",
+        "Conflict declaration must occur prior to paper submission."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "AREA 1: DATA SCIENCE & MACHINE LEARNING",
+        "AREA 2: DATABASES & DATA MANAGEMENT",
+        "AREA 3: DATA ENGINEERING, INFRASTRUCTURE AND BUSINESS APPLICATIONS",
+        "AREA 4: DATA ANALYTICS & VISUALIZATION",
+        "AREA 5: DATA PRIVACY & SECURITY, ETHICS & GOVERNANCE",
+        "AREA 6: DATA IN INDUSTRY AND EMERGING TRENDS IN DATA"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "justify a crucial assumption,",
+        "improve motivation of the potential benefits of the work,",
+        "clean up notation, tighten presentation,",
+        "compare against specific relevant prior work,"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

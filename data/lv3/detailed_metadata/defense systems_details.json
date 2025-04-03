@@ -1,0 +1,1306 @@
+{
+  "level2_term": "defense systems",
+  "all_urls": [
+    "https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518792/homepage/call-for-papers/si-2024-001019",
+    "https://www.aiaa.org/defense/presentations-papers/call-for-technical-briefings",
+    "https://digitalcommons.usf.edu/jss/news.html",
+    "http://raid2023.org/call.html",
+    "https://ieeesystemscouncil.org/publication/iEEE-systems-journal/call-papers-regular-issues",
+    "https://www.idf.il/%D7%90%D7%AA%D7%A8%D7%99-%D7%99%D7%97%D7%99%D7%93%D7%95%D7%AA/%D7%94%D7%9E%D7%9B%D7%9C%D7%9C%D7%94-%D7%94%D7%91%D7%99%D7%98%D7%97%D7%95%D7%A0%D7%99%D7%AA-%D7%9C%D7%91%D7%A0%D7%99%D7%99%D7%9F-%D7%94%D7%9B%D7%97/journal-of-defense-innovation-systems/",
+    "https://assets.ctfassets.net/b4d0t67iwrjs/62TviyD47WQVRWeYRNlvoi/8479a889cd60ad444eed2ec768235171/SI_CFP_Adversarial_Attack_and_Defense_for_Intelligence_Systems.pdf",
+    "https://www.inderscience.com/jhome.php?jcode=ijidss",
+    "https://www.smh-hq.org/conf/cfp.html",
+    "https://www.sciencedirect.com/journal/future-generation-computer-systems/about/call-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Hardware Design, Build, and Test Challenges and Successes",
+        "Innovative Manufacturing and Design Processes, including Digital Engineering",
+        "Low-Size, Weight, and Power (SWaP) Multifunctional Components",
+        "New Approaches to Power Generation and Management",
+        "Prototyping/Design Cycle Schedule and Cost Reduction Strategies",
+        "Other Topics in Advanced Prototypes"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Ballistic Defense Concepts and Systems",
+        "Counter-UAS Concepts and Systems",
+        "Hypersonic Defense Concepts and Systems",
+        "Missile Defense in Other Battlefield Domains",
+        "Space Development Agency Collaboration",
+        "Threat Characterization",
+        "Other Topics In Missile Defense"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Autonomous Systems",
+        "Autonomous Systems and the T&E and Safety Communities \u2013 Processes and Procedures for Certification",
+        "Applications of Commercial Best Practices to DoD",
+        "Architectures",
+        "Counter-Autonomy",
+        "Defense Against Robotic/Unmanned Systems",
+        "Edge Perception",
+        "\u201cExplainable\u201d AI \u2013 Towards Understanding the \u201cBlack Box\u201d Nature of Deep Neural Networks",
+        "Fragility in Today\u2019s ML Techniques",
+        "Future of \u201cAlgorithmic Warfare\u201d",
+        "Human-Machine Teaming",
+        "Large-Scale Data and SW Dev Frameworks for ML",
+        "Miniaturization",
+        "Payloads",
+        "Remotely piloted vehicles, UAVs",
+        "Sparse Data Machine Learning",
+        "Tactical UAVs and Spacecraft",
+        "Verification and Validation of Autonomous Systems and effects on DoD Directive 3000.09"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Cultural Change",
+        "Digital Ecosystem",
+        "Digital Engineering Design Processes and Use Cases",
+        "Digital Mission Engineering",
+        "Digital Modeling & Simulation with ML/AI and/or HPC",
+        "Digital Systems Modeling",
+        "Digital Thread",
+        "Digital Twin",
+        "Elements of Digital Engineering \u2013 Viewpoints About Aggregation of Elements",
+        "Knowledge-Based Engineering Applied to Retention and Reuse of Engineering Knowledge and Data",
+        "Model-Based Engineering \u2013 Product and Environment Digital Twin Simulations",
+        "Sensor Fusion \u2013 Cyber/physical Relationship Between Simulation and Reality",
+        "Uncertainty Quantification and Management in Digital Engineering and Digital Twins",
+        "Value of Digital Engineering \u2013 ROI Associated with Enterprise Level Digital Transformations"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Coordination of Conventional Weapons with DEWs",
+        "Counter to Swarming Attacks",
+        "Counter-RAM",
+        "Counter-Sensors/ISR",
+        "Counter-UAVs",
+        "Means to Extend the Range of DEWs",
+        "Minimizing the Environmental Impacts on DEW Effectiveness",
+        "Other Topics in Directed Energy Weapons"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Adaptive Autopilots",
+        "Alternative Position, Navigation, and Timing (PNT)",
+        "Autonomous Navigation",
+        "Feedback Control",
+        "Optimal Guidance",
+        "Sensor Fusion",
+        "Other Topics in Guidance, Navigation, Control, and Estimation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Advanced Flight Control and Trajectory Optimization",
+        "Aerothermal Modeling and Phenomenology of Hypersonic Flowfields",
+        "Ground Testing and Flight Testing of Hypersonic Systems",
+        "High Temperature Materials and Affordable Manufacturing",
+        "Hypersonic Flight Vehicle Design and System Concept Studies",
+        "Hypersonic Propulsion",
+        "Innovative Techniques for Defending Against Adversary Hypersonic System Capabilities",
+        "Seeker and Targeting Technologies for High-Speed Strike Weapons",
+        "Subsystem Development for Hypersonic Vehicles",
+        "Other Topics in High-Maneuverability and Hypersonic Systems and Technologies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Component Technology Development and Maturation",
+        "Delivery Systems",
+        "Ground Support Equipment",
+        "Launch Operations",
+        "Launch Vehicles",
+        "Offensive Capabilities and Boosters",
+        "Payloads",
+        "Ranges",
+        "Spacecraft",
+        "Space Launch (short and long range)",
+        "Space Traffic Management: Proliferation, Risk, Mitigation and Policy",
+        "Test Hardware",
+        "Other Topics in Space Access and Systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.07692307692307693,
+        "keyword_ratio": 0.07692307692307693
+      }
+    },
+    {
+      "items": [
+        "Advanced Concepts, Including Penetration Aids, Underwater Launch, & Radiation Hardening",
+        "Advanced Technology for Thermal Protection, Propulsion, Avionics, Sensors & Materials/Structures",
+        "Aging Effects, Surveillance, & Age Management",
+        "Air-Launched Ballistic Missiles",
+        "Concepts to Leverage Technologies, Design Approaches, & Infrastructure Across Weapon Systems",
+        "Design & Operational Concepts for Future Strategic Weapon Systems",
+        "Ground Test, Flight Test, & Alternative Test Methods",
+        "Land-Based Strategic Missile Systems",
+        "Modeling & Simulation Techniques for Strategic Missiles & Subsystems",
+        "Other Component Technologies for Meeting Unique Strategic Requirements",
+        "Sea-Based Nuclear Deterrent",
+        "System Enablers for Affordability for Strategic Missiles",
+        "Test & Evaluation for Strategic Missiles, Booster, Reentry & Subsystems",
+        "Underwater Launch",
+        "Weather Effects on Reentry Vehicle Performance",
+        "Other Topics in Strategic Missile Systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0625,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Additive Manufacturing and Survivability (e.g., Improved/Faster Battle-Damage Repairs)",
+        "Aerospace Survivability and the Cyberspace/Information Domain",
+        "Armor/Anti-Armor",
+        "Autonomy and Survivability (e.g. Survivability of Autonomous Agents, Adaptive Survivability)",
+        "General Survivability",
+        "Space and Space Launch Systems",
+        "Space Junk: Proliferation, Risk, Mitigation and Policy",
+        "Survivability Against Directed Energy Weapons",
+        "Survivability Game Changers: Emerging Technological Solutions That Will Revolutionize Survivability",
+        "System Safety, Protection, and Health Monitoring",
+        "Other Topics in Survivability"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Conceptual Design and Evaluation",
+        "Data Visualization and Communication",
+        "Economic and Resource Analysis",
+        "Methods and Tools for Decision Analysis",
+        "Performance and Capability Analysis",
+        "Policy Trade Studies",
+        "Risk Analysis",
+        "Other Topics in System and Decision Analysis for National Security"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.625
+      }
+    },
+    {
+      "items": [
+        "Computational M&S Test Predictions",
+        "Debris and Post-Intercept Sensor Scene Modeling and Simulation Predictions & Reconstruction",
+        "Digital/Model-Based Engineering",
+        "Distributed Architectures and Modeling Joint Operations",
+        "M&S Assessments on the Cost of Weapon System Test and Evaluation and Ops",
+        "M&S Criteria Development and Predictions",
+        "Network Communication Standards",
+        "New and Innovative Modeling Techniques for First Principle Codes (FPCs)",
+        "New M&S Codes, Models and Techniques",
+        "New M&S Employed in the Assessment of Weapon Systems",
+        "Novel Applications",
+        "Payload Integration",
+        "Propulsion Design",
+        "Risk Reduction Through Weapon System M&S",
+        "Secondary Damage Modeling, Effects and Consequences, Including Casualty Modeling",
+        "Stability and Control Prediction/Guidance and Navigation Control",
+        "Transition Modeling Prediction",
+        "Warheads/Warhead Effects",
+        "Weapon System Effectiveness M&S of Lethality for Kinetic Energy Weapons",
+        "Other System Performance, Modeling and Simulation Topics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.05,
+        "length_consistency": true,
+        "pattern_ratio": 0.05,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Advanced Materials and Manufacturing: Sensors, Embedded Diagnostics, Additive Manufacturing",
+        "Insensitive Munitions for Propulsion and Warheads: Design Approaches, Modeling, and Test Results",
+        "Modeling, and Simulation: Integration, Targeting, Weapon Effectiveness, and Lessons Learned",
+        "Propulsion and GNC: Thrust Vectoring, Pulse Motors, Controllable Solids, Sensors, Algorithms",
+        "Test: Missile Integration, Targeting Capabilities, Weapon Effectiveness, and Lessons Learned",
+        "Other Topics Relating to Tactical Missiles"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Assessments on the Cost of Weapon System Test and Evaluation",
+        "Comparison of Flight, Ground, and Computational Results",
+        "Debris and Post-Intercept Sensor Scene Results and Comparisons",
+        "Demonstrated Weapon System Effectiveness and Lethality for Kinetic Energy Weapons",
+        "Evaluation of Results, Criteria Development, and Assessment",
+        "Flight, Ground, and Computational Test Execution and Results",
+        "New Diagnostics Employed in the Assessment of Weapon Systems",
+        "New Venues and Testing Techniques",
+        "Risk Reduction Through Weapon System Test and Evaluation",
+        "Wind Tunnel, Anechoic Chamber, Directed Energy Ranges, and Other Test Types",
+        "Other Topics in Test and Evaluation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Combat Modeling, Force Level, and Mission Level Assessment",
+        "Cost and Effectiveness Assessment",
+        "Cost of Weapon System Employment and Ops",
+        "Data Acquisition and Assessment",
+        "Direct and Indirect Fire Weapon System Performance",
+        "Measured Post-Intercept and/or Impact Debris",
+        "New Employment or Assessment of Weapon Systems",
+        "Probability of Hit & Kill",
+        "Other Topics in Weapon System Operational Performance"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "AIAA SciTech Forum",
+        "AIAA AVIATION Forum",
+        "ASCEND"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "AIAA DEFENSE Forum",
+        "Presentations",
+        "Call for Technical Briefings"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Advanced Prototypes",
+        "Air and Missile Defense",
+        "Autonomy, Collaborative Engagement, Machine Intelligence, Robotic and Uncrewed Systems",
+        "Digital Engineering",
+        "Directed Energy Weapons",
+        "Guidance, Navigation, Control, and Estimation",
+        "High-Maneuverability and Hypersonic Systems and Technologies",
+        "Space Access and Space Systems",
+        "Strategic Missile Systems",
+        "Survivability",
+        "System and Decision Analysis for National Security",
+        "System Performance Modeling and Simulation",
+        "Tactical Missiles",
+        "Test and Evaluation",
+        "Weapon Systems History and Lessons Learned",
+        "Weapon System Operational Performance"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    },
+    {
+      "items": [
+        "launched hypervelocity projectiles and hypersonic boost",
+        "glide vehicles. There is interest in concepts using sustained air",
+        "breathing propulsion, rocket",
+        "speed systems."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "3, Iron Dome\u2026), Air",
+        "Air systems (Sidewinder, AMRAAM\u2026), Surface",
+        "surface missiles (Dragon, TOW, Javelin\u2026), Strategic systems (C4, D5, Minuteman, Pershing\u2026), Air"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Military Lessons Learned \u2013 Operational and strategic takeaways from the conflict.",
+        "The Future of Warfare \u2013 Emerging technologies, drone warfare, and AI applications.",
+        "The Relationship between Russia, Iran, North Korea, and China and the War in Ukraine."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Connect with JSS",
+        "Connect with GNSI",
+        "Featured book by JSS authors:",
+        "By JSS author, Dr. Russ Glenn"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Computer, network, and cloud computing security",
+        "Malware and unwanted software",
+        "Program analysis and reverse engineering",
+        "Mobile Security",
+        "Web security and privacy",
+        "Vulnerability analysis techniques",
+        "Usable security and privacy",
+        "Intrusion detection and prevention",
+        "Hardware security",
+        "Cyber physical systems security and threats against critical infrastructures",
+        "IoT security",
+        "Statistical and adversarial learning for computer security",
+        "Cyber crime and underground economies",
+        "Denial-of-Service attacks and defenses",
+        "Security measurement studies",
+        "Digital forensics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1875
+      }
+    },
+    {
+      "items": [
+        "Papers",
+        "Proceedings by ACM",
+        "Submission",
+        "Human Subjects and Ethical Considerations"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "level focused forum for application",
+        "oriented manuscripts that address complex systems and system",
+        "level and systems engineering interest."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Agent-based systems",
+        "Machine learning",
+        "Situation awareness",
+        "Reasoning models",
+        "Human/agent teams",
+        "Cognitive modelling",
+        "Experimental design",
+        "Behaviour modelling",
+        "Knowledge management",
+        "Systems of systems",
+        "Data mining"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2021 Vol.6 No.2 2020 Vol.6 No.1",
+        "2020 Vol.6 No.1",
+        "2018 Vol.5 No.42015 Vol.5 No.32014 Vol.5 No.22012 Vol.5 No.1",
+        "2015 Vol.5 No.32014 Vol.5 No.22012 Vol.5 No.1",
+        "2014 Vol.5 No.22012 Vol.5 No.1",
+        "2012 Vol.5 No.1",
+        "2011 Vol.4 No.42011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.1",
+        "2010 Vol.3 No.3/42010 Vol.3 No.1/2",
+        "2010 Vol.3 No.1/2",
+        "2009 Vol.2 No.42009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.1",
+        "Vol. 12008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2018 Vol.5 No.42015 Vol.5 No.32014 Vol.5 No.22012 Vol.5 No.1",
+        "2015 Vol.5 No.32014 Vol.5 No.22012 Vol.5 No.1",
+        "2014 Vol.5 No.22012 Vol.5 No.1",
+        "2012 Vol.5 No.1",
+        "2011 Vol.4 No.42011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.1",
+        "2010 Vol.3 No.3/42010 Vol.3 No.1/2",
+        "2010 Vol.3 No.1/2",
+        "2009 Vol.2 No.42009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.1",
+        "Vol. 12008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2018 Vol.5 No.42015 Vol.5 No.32014 Vol.5 No.22012 Vol.5 No.1",
+        "2015 Vol.5 No.32014 Vol.5 No.22012 Vol.5 No.1",
+        "2014 Vol.5 No.22012 Vol.5 No.1",
+        "2012 Vol.5 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2011 Vol.4 No.42011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.1",
+        "2010 Vol.3 No.3/42010 Vol.3 No.1/2",
+        "2010 Vol.3 No.1/2",
+        "2009 Vol.2 No.42009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.1",
+        "Vol. 12008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2011 Vol.4 No.42011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.32011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.22011 Vol.4 No.1",
+        "2011 Vol.4 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2010 Vol.3 No.3/42010 Vol.3 No.1/2",
+        "2010 Vol.3 No.1/2",
+        "2009 Vol.2 No.42009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.1",
+        "Vol. 12008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2009 Vol.2 No.42009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.1",
+        "Vol. 12008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2009 Vol.2 No.42009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.32009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.22009 Vol.2 No.1",
+        "2009 Vol.2 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vol. 12008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2008 Vol.1 No.42008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.32008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.22008 Vol.1 No.1",
+        "2008 Vol.1 No.1"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Academic OneFile (Gale)",
+        "cnpLINKer (CNPIEC)",
+        "DBLP Computer Science Bibliography",
+        "Expanded Academic ASAP (Gale)",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Info Trac (Gale)",
+        "J-Gate",
+        "ProQuest Advanced Technologies Database with Aerospace"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Agarwal, Vivek, Indian Institute of Technology-Bombay, India",
+        "Banks, Sheila B., Calculated Insight, USA",
+        "Bianchini, Monica, Universit\u00e0 degli Studi Di Siena, Italy",
+        "Boicu, Mihai, George Mason University, USA",
+        "Cook, Stephen, University of South Australia, Australia",
+        "Finn, Anthony, University of South Australia, Australia",
+        "Jarvis, Dennis, Central Queensland University, Australia",
+        "Jarvis, Jacqueline, Central Queensland University, Australia",
+        "Kalawsky, Roy S., Loughborough University, UK",
+        "Katarzyniak, Rados\u0142aw, Wroc\u0142aw University of Technology, Poland",
+        "Lambert, Dale A., Defence Science and Technology Organisation, Australia",
+        "Martin, Noel, Defence Science and Technology Organisation, Australia",
+        "Montani, Stefania, Universit\u00e0 del Piemonte Orientale, Italy",
+        "Moraitis, Pavlos, Paris Descartes University, France",
+        "Mumford, C.L., Cardiff University, UK",
+        "O'Shea, James D., Manchester Metropolitan University, UK",
+        "Ogiela, Marek R., AGH University of Krakow, Poland",
+        "Phillips-Wren, Gloria, Loyola University Maryland, USA",
+        "Scholz, Jason, Defence Science and Technology Organisation, Australia",
+        "Senthilkumar, Sukumar, Vellore Institute of Technology, India",
+        "Sharma, Dharmendra, University of Canberra, Australia",
+        "Stytz, Martin R., Institute for Defense Analyses, USA",
+        "Sunde, Jadranka, Defence Science and Technology Organisation, Australia",
+        "Swierkowski, Leszek, Defence Science and Technology Organisation, Australia",
+        "Teisseire, Maguelonne, LIRMM, France",
+        "Teodorescu, Horia-Nicolai, Technical University, Romania",
+        "Tolk, Andreas, SimIS Inc., USA",
+        "Urlings, Pierre, Defence Science and Technology Organisation, Australia",
+        "Van Der Wal, Ari\u00ebn J., Netherlands Defence Academy, Netherlands",
+        "Watada, Junzo, Waseda University, Japan",
+        "Zaidi, Abbas K., George Mason University, USA"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 31,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Publishing with Inderscience: ethical statement",
+        "Recommend to a librarian (PDF)",
+        "Feedback to Editor",
+        "Get permission to reproduce content"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Topics covered include",
+        "Browse issues",
+        "IJIDSS is indexed in:",
+        "IJIDSS is listed in:",
+        "Editor in Chief",
+        "Editorial Board Members",
+        "A few essentials for publishing in this journal",
+        "Submission process"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Objectives",
+        "Readership",
+        "Contents"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "CALL FOR PAPERS -",
+        "DEADLINE EXTENDED",
+        "smhatngphc@gmail.com",
+        "smhatmvhc@gmail.com",
+        "smhatmvhc@gmail.com",
+        "NGPHC2025@gmail.com",
+        "ngphconference.org"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "1706)15",
+        "16 May 2026, War Heritage Institute, BrusselsSince its re",
+        "bataille to gender and diversity"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Day\" page at https://www.eisenhowerlibrary.gov/public",
+        "programs/commemorate",
+        "day#ess."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "or article",
+        "length (unpublished) work to present at our monthly Zoom reading group in 2024",
+        "affiliated\u00a0scholars are always welcome."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "level focused forum for application",
+        "oriented manuscripts that address complex systems and system",
+        "level and systems engineering interest."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Conceptual Design and Evaluation",
+        "Data Visualization and Communication",
+        "Economic and Resource Analysis",
+        "Methods and Tools for Decision Analysis",
+        "Performance and Capability Analysis",
+        "Policy Trade Studies",
+        "Risk Analysis",
+        "Other Topics in System and Decision Analysis for National Security"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Papers",
+        "Proceedings by ACM",
+        "Submission",
+        "Human Subjects and Ethical Considerations"
+      ],
+      "output_list_from_llm": [
+        "Conceptual Design and Evaluation",
+        "Performance and Capability Analysis",
+        "Other Topics in System and Decision Analysis for National Security"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "or article",
+        "length (unpublished) work to present at our monthly Zoom reading group in",
+        "affiliated scholars are always welcome."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Advanced Materials and Manufacturing: Sensors, Embedded Diagnostics, Additive Manufacturing",
+        "Insensitive Munitions for Propulsion and Warheads: Design Approaches, Modeling, and Test Results",
+        "Modeling, and Simulation: Integration, Targeting, Weapon Effectiveness, and Lessons Learned",
+        "Propulsion and GNC: Thrust Vectoring, Pulse Motors, Controllable Solids, Sensors, Algorithms",
+        "Test: Missile Integration, Targeting Capabilities, Weapon Effectiveness, and Lessons Learned",
+        "Other Topics Relating to Tactical Missiles"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Conceptual design and evaluation",
+    "Performance and capability analysis",
+    "Other topics in system and decision analysis for national security"
+  ],
+  "error": null
+}

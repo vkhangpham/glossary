@@ -1,0 +1,729 @@
+{
+  "level2_term": "professional communication",
+  "all_urls": [
+    "https://mulpress.mcmaster.ca/jpc/currentcall",
+    "https://attend.ieee.org/procomm-2025/call-for-proposals-2/",
+    "https://www.comsoc.org/publications/journals/ieee-jsac/cfp",
+    "https://icc2025.ieee-icc.org/authors/call-papers",
+    "https://www.pdc-journal.com/jour/pages/view/%D1%81all_for_papers?locale=en_US",
+    "https://attend.ieee.org/procomm/call-for-participation/submission-formats/",
+    "https://academic.oup.com/joc/pages/call-for-special-issues",
+    "https://www.icahdq.org/page/CFP",
+    "https://call-for-papers.sas.upenn.edu/category/professional-topics",
+    "https://scholarworks.wmich.edu/jcp/callforpapers.html"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Peer review results communicated to authors1 May 2014",
+        "Revised manuscripts due15 June 2014",
+        "Galleys sent to authors1 July 2014",
+        "Expected publication date"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "adaptive technologies for communication,",
+        "media affordances, constraints, and transformations",
+        "new technologies for professional or team communication,",
+        "forms and functions of communication signals in professional contexts,",
+        "the roles or limitations of LLMs, GenAI, or diffusion models in research or pedagogy,",
+        "critiques and reflections on our fields, futures, and practices,",
+        "or any ideas related to meaning making!"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "\u200b\u200bPapers (Full Papers, Brief Papers, or Extended Abstracts)",
+        "Panel Proposals",
+        "Workshop Proposals",
+        "Reviewing Practices",
+        "Deadlines"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "IEEE ProComm is committed to inclusive reviewing practices. Read our reviewer statement.",
+        "IEEE Policy on AI-Generated Text",
+        "IEEE Diversity Statement",
+        "IEEE Nondiscrimination Policy"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IEEE WIE Pledge",
+        "Interested in reviewing?",
+        "Sign up here if you\u2019re interested in reviewing ProComm proposals."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "IEEE Global Menu",
+        "Main navigation dropdown",
+        "Breadcrumb",
+        "Main navigation contextual sidebar",
+        "Special Issue",
+        "Series",
+        "Footer Menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Twitter",
+        "Facebook",
+        "LinkedIn",
+        "YouTube"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Diamond Patrons",
+        "Platinum Patrons",
+        "Gold Patrons",
+        "Silver Patrons",
+        "Bronze Patrons",
+        "Exhibitors",
+        "Supporters",
+        "Destination Partner"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "TECHNICAL SYMPOSIA",
+        "COGNITIVE RADIO AND AI-ENABLED NETWORKS (CFP|EDAS)",
+        "COMMUNICATION AND INFORMATION SYSTEMS SECURITY (CFP|EDAS)",
+        "COMMUNICATION QOS, RELIABILITY AND MODELING (CFP|EDAS)",
+        "COMMUNICATIONS SOFTWARE AND MULTIMEDIA (CFP|EDAS)",
+        "COMMUNICATION THEORY (CFP|EDAS)",
+        "GREEN COMMUNICATIONS SYSTEMS AND NETWORKS (CFP|EDAS)",
+        "IOT AND SENSOR NETWORKS (CFP|EDAS)",
+        "MOBILE AND WIRELESS NETWORKS (CFP|EDAS)",
+        "NEXT-GENERATION NETWORKING AND INTERNET (CFP|EDAS)",
+        "OPTICAL NETWORKS & SYSTEMS (CFP|EDAS)",
+        "SIGNAL PROCESSING FOR COMMUNICATIONS (CFP|EDAS)",
+        "WIRELESS COMMUNICATIONS (CFP|EDAS)",
+        "SELECTED AREAS IN COMMUNICATIONS"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.9285714285714286
+      }
+    },
+    {
+      "items": [
+        "IEEE International Conference on Communications",
+        "8\u201312 June 2025 // Montreal, Canada",
+        "Communications Technologies 4Good"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Paper Submission",
+        "Acceptance Notifications",
+        "Camera Ready"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Volume 7 Issue 2 (June 2025)",
+        "Volume 7 Issue 3 (September 2025)",
+        "Volume 7 Issue 4 (December 2025)",
+        "Volume 8 Issue 1 (March 2026)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Discourse studies",
+        "Functional linguistics",
+        "Pragmatics",
+        "Semiotics",
+        "Rhetoric",
+        "Sociolinguistics",
+        "Cognitive linguistics",
+        "Stylistics",
+        "Cross-cultural communication",
+        "Cultural studies",
+        "Country studies",
+        "Second language acquisition and teaching methodology",
+        "Related fields"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07692307692307693
+      }
+    },
+    {
+      "items": [
+        "Substantial research papers and empirical studies",
+        "Discussion essays and opinion articles",
+        "Theoretical overviews",
+        "Reviews of scientific books",
+        "Reviews of scientific conferences"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "E. Myrczik",
+        "W. LIN",
+        "Z. Tan",
+        "S. Osayi",
+        "S. Shin",
+        "E. Abad",
+        "P. Gloviczki",
+        "Y. Guo",
+        "A. Paloma",
+        "C. Curle",
+        "A. Mukherjee",
+        "C. Wang",
+        "V. Bruzzone",
+        "A. Harrington",
+        "Q. Dai",
+        "P. Szczepanik",
+        "J. Mailland",
+        "D. Taussig",
+        "L. Swan-Potras",
+        "S. Ratzan",
+        "F. Khanam",
+        "B. Perez",
+        "M. Tahboub",
+        "L. Cejkova",
+        "M. Okocha",
+        "P. Kolhep",
+        "O. Oginni",
+        "E. Linnert",
+        "D. Boakye",
+        "A. Kendrick"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "28-30 May 2025",
+        "28-30 April 2025",
+        "9-12 September 2025",
+        "13-15 August 2025",
+        "28 July-8 August 2025",
+        "25-26 September 2025",
+        "29-30 October 2025",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "12 June 2025",
+        "11-12 September 2025"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "28-30 May 2025",
+        "28-30 April 2025",
+        "9-12 September 2025",
+        "13-15 August 2025",
+        "28 July-8 August 2025",
+        "25-26 September 2025",
+        "29-30 October 2025",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "PUBLICATION",
+        "12 June 2025",
+        "11-12 September 2025"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "The Art of Living: Living, Learning, and Liberal Education",
+        "SAMLA 97: CFP for \u201cTransdisciplinary Knowledge Making in Community-Engaged Pedagogy\u201d",
+        "Introducing the Privileged Logics Blog: A New Hub for Crucial Conversations",
+        "Multiple-Births in Literature",
+        "Multiple-Births in Literature",
+        "*DEADLINE EXTENDED* Care Practices at Graduate Writing Centres (MLA 2026, Toronto)",
+        "MMLA 2025 CFP: Finding Hope in Science and Fiction",
+        "Call for Chapters: The Routledge Handbook of Chinese Translation",
+        "Canadian and Qu\u00e9bec Literatures: Online Conference May 23-25",
+        "Technical and Professional Writing (MMLA 2025, Milwaukee, WI)",
+        "Pathways to PhD: Updated Advice for Graduate Students in the Humanities for 2026",
+        "Impairment Theory (Guaranteed Session MLA 2026)",
+        "IEEE AI TEST 2025",
+        "SAMLA 97: Knowledge",
+        "Engaging the Local Public Humanities in St. Louis Colloquium & Workshop",
+        "Stanford Financial Education Symposium - Call for Papers on financial education",
+        "Special Issue on Contingency, Precarity, and Jeopardy: Labor in the Space Between",
+        "Special Issue of Virginia Woolf Miscellany: Woolf and Failure",
+        "CELJ 2024 Virtual Conference:  Open Dialogues April 4\u20135, 2025, from 2-6pm ET (Live)",
+        "CFP: Feminist Visions and Struggles for a Gradeless University",
+        "The Evolving Role of AI in Language and Literature Pedagogy",
+        "Twenty-Third International Conference on New Directions in the Humanities",
+        "Call for Papers: IEEE International Conference On Quantum Software 2025",
+        "FINAL CALL: Joy to You and Me: Making Space for Joy in the Writing Classroom",
+        "Symposium at ABRALIC 2025: The Forms of Academic Work",
+        "deBlock 2025 : deBlock; Blockchain and Crypto Academic Conference"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.11538461538461539,
+        "length_consistency": true,
+        "pattern_ratio": 0.19230769230769232,
+        "keyword_ratio": 0.38461538461538464
+      }
+    },
+    {
+      "items": [
+        "The Art of Living:\u00a0Living, Learning, and Liberal Education -\u00a0October 29-31, 2025",
+        "Keynote Speaker:",
+        "Julie Reuben",
+        "Professor of the History of American Education, Harvard University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "CALL FOR BOOK CHAPTERS",
+        "Digital Technology and Language Teaching: Exploring New Frontiers in Language Education",
+        "Routledge-CRC Press-Taylor and Francis - Call for Chapters (Will be indexed in Scopus)",
+        "Important Deadlines",
+        "Abstract Submission (Approximately 150-200 words)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0:\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 April 12, 2025"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Call for Papers - IEEE AI Test 2025",
+        "\"6th IEEE International Conference on Artificial Intelligence Testing\"",
+        "July 21-24, 2025 | Tucson, Arizona, United States"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Virginia Woolf Miscellany #104: Woolf and Failure",
+        "Mary Wilson",
+        "University of Massachusetts Dartmouth"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "CRC Press",
+        "Taylor and Francis",
+        "Call for Chapters (Will be indexed in Scopus)"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Atlanta, GA",
+        "November 6th",
+        "8th, 2025",
+        "Wyndham Atlanta Buckhead Hotel & Conference Center"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "patient relational communication) to business (e.g., employer",
+        "DEI laws and policies",
+        "racist discourses and legislation (i.e., anti",
+        "Black, anti",
+        "Latinx, anti",
+        "Asian)",
+        "LGBTQIA+ discourses",
+        "the influence of religious rhetoric in education policy",
+        "xenophobic discourses",
+        "linguistic hegemony in education",
+        "corporeal and punitive practices in education"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "TECHNICAL SYMPOSIA",
+        "COGNITIVE RADIO AND AI-ENABLED NETWORKS (CFP|EDAS)",
+        "COMMUNICATION AND INFORMATION SYSTEMS SECURITY (CFP|EDAS)",
+        "COMMUNICATION QOS, RELIABILITY AND MODELING (CFP|EDAS)",
+        "COMMUNICATIONS SOFTWARE AND MULTIMEDIA (CFP|EDAS)",
+        "COMMUNICATION THEORY (CFP|EDAS)",
+        "GREEN COMMUNICATIONS SYSTEMS AND NETWORKS (CFP|EDAS)",
+        "IOT AND SENSOR NETWORKS (CFP|EDAS)",
+        "MOBILE AND WIRELESS NETWORKS (CFP|EDAS)",
+        "NEXT-GENERATION NETWORKING AND INTERNET (CFP|EDAS)",
+        "OPTICAL NETWORKS & SYSTEMS (CFP|EDAS)",
+        "SIGNAL PROCESSING FOR COMMUNICATIONS (CFP|EDAS)",
+        "WIRELESS COMMUNICATIONS (CFP|EDAS)",
+        "SELECTED AREAS IN COMMUNICATIONS"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "IEEE WIE Pledge",
+        "Interested in reviewing?",
+        "Sign up here if you\u2019re interested in reviewing ProComm proposals."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "\u200b\u200bPapers (Full Papers, Brief Papers, or Extended Abstracts)",
+        "Panel Proposals",
+        "Workshop Proposals",
+        "Reviewing Practices",
+        "Deadlines"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Call for Papers - IEEE AI Test",
+        "\"6th IEEE International Conference on Artificial Intelligence Testing\"",
+        "July 21-24, 2025 | Tucson, Arizona, United States"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Substantial research papers and empirical studies",
+        "Discussion essays and opinion articles",
+        "Theoretical overviews",
+        "Reviews of scientific books",
+        "Reviews of scientific conferences"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

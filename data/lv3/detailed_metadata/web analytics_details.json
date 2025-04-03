@@ -1,0 +1,1077 @@
+{
+  "level2_term": "web analytics",
+  "all_urls": [
+    "https://learning-analytics.info/",
+    "https://www2025.thewebconf.org/research-tracks",
+    "https://www.iaria.org/conferences2024/CfPWEB24.html",
+    "https://www.sciencedirect.com/journal/information-systems/about/call-for-papers",
+    "https://journal.aastu.edu.et/index.php/jcsda/announcement/view/10",
+    "http://www.wikicfp.com/cfp/call?conference=web",
+    "https://pubsonline.informs.org/page/ijds/calls-for-papers",
+    "https://writinganalytics.colostate.edu/9/",
+    "https://www.tandfonline.com/journals/tjba20",
+    "https://aisnet.org/page/CallsforPapers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Outstanding Senior Reviewer Award",
+        "Outstanding Junior Reviewer Award 2024",
+        "Generative AI and Learning Analytics\n\t\t\t\t\t\t\t\n\t\t\t\t\tPushing Boundaries, Preserving Principles",
+        "Exploring the Potential of Generative AI to Support Non-experts in Learning Analytics Practice",
+        "Assessing Creativity Across Multi-Step Intervention Using Generative AI Models",
+        "AI-Assisted Co-Creation\n\t\t\t\t\t\t\t\n\t\t\t\t\tBridging Skill Gaps in Student-Generated Content",
+        "Qualitative Coding with GPT-4\n\t\t\t\t\t\t\t\n\t\t\t\t\tWhere it Works Better",
+        "Transmodal Analysis",
+        "Charting the Development of Collaboration Skills Through Collaborative Learning Analytics Systems"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Abstract: October 7, 2024",
+        "Full paper: October 14, 2024",
+        "Author and reviewer discussion: December 3-14, 2024",
+        "Notification: January 20, 2025",
+        "Camera-ready: February 2, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Algorithms for Web graph representation, reconstruction, subgraph and motif discovery",
+        "Analysis of heterogeneous, signed, attributed, and annotated graphs",
+        "Succinct data structures for the manipulation of static and dynamic large graphs",
+        "Multi-relational graph analysis",
+        "Querying and indexing algorithms for massive graphs",
+        "Deep learning for Web graphs",
+        "Network representation learning for the Web",
+        "Graph embeddings and GNNs for the Web",
+        "Mining and learning in graphs with missing information and noise"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "Audits of web technologies, standards, platforms, and applications",
+        "Human-perceived consequences of algorithmic deployment on the web",
+        "Machine-in-the-loop, human agency and autonomy",
+        "Social and technical mechanisms of refusal for web technologies and applications",
+        "Consent frameworks and practices on the web",
+        "Algorithmic accountability and transparency on the web",
+        "Ethical and legal aspects of web-scale data analysis, uses and collection practices",
+        "Abusive content such as online harassment, spam, and fake reviews",
+        "Misinformation and disinformation",
+        "Data and user privacy",
+        "Privacy-enhancing technologies for the Web and mobile app ecosystem",
+        "Measurement, analysis, and circumvention of Web censorship",
+        "User consent management"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.15384615384615385,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.23076923076923078
+      }
+    },
+    {
+      "items": [
+        "Applications of cryptography",
+        "Authentication, authorization, and access control",
+        "Blockchains and distributed ledgers",
+        "Browser and end-point security",
+        "Cyber-crime defenses and forensics",
+        "Cryptocurrency and smart contracts",
+        "Data security and privacy",
+        "Data transparency and provenance",
+        "Large-scale security measurements",
+        "Security in web-based applications and services",
+        "Tracking, profiling, and countermeasures against them",
+        "Privacy-enhancing technologies",
+        "Security and privacy of machine learning and AI applications"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.23076923076923078,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07692307692307693
+      }
+    },
+    {
+      "items": [
+        "Social media analysis through the lenses of networks",
+        "Analysis of web-mediated communications, communities, and crowds",
+        "Social mining and social search on the Web",
+        "Socio-technical web-based systems",
+        "Fairness and bias in social network and social media analysis",
+        "Social media addiction and mental health impacts",
+        "Digital identity and self-presentation",
+        "Crisis communication and disaster response",
+        "Generative AI / large language models and their impact on social systems",
+        "Applications and emergent phenomena"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Cloud, edge and content delivery systems for the Web",
+        "Decentralized Web and Fediverse systems",
+        "Applied ML and AI for Web-based mobile applications",
+        "ML and AI systems for Web, mobile and WoT",
+        "Federated Web and WoT systems, including distributed, federated and edge-based data processing.",
+        "Virtualization and resource management in Web systems and infrastructures",
+        "Web performance, measurement, and characterization",
+        "Location- and context-aware Web and WoT applications and services",
+        "Energy management for devices in mobile Web and WoT environments",
+        "Novel mobile and WoT systems, and system-of-systems",
+        "Data management and stream processing for Web, mobile and wireless applications",
+        "Experiences and lessons learnt from Web-based algorithms and system deployments"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "User model development and evaluation",
+        "User modeling and simulation for interactive and conversational systems",
+        "Practical large-scale studies of user experience",
+        "Personalized content ranking and presentation",
+        "ML for personalized search and recommendations",
+        "Social recommender systems and personalization for the social Web",
+        "Psychology-informed user models and recommender systems",
+        "Metrics for user behavior and evaluating success",
+        "Fairness-aware retrieval and ranking",
+        "Explainable and interpretable methods for personalization",
+        "Accountability, Transparency, and Ethics for personalization",
+        "User privacy protection in personalized systems",
+        "Studies of user behavior, including longitudinal effects of personalized systems",
+        "Large Language Models (LLM) for user modeling and recommendation",
+        "Attacks and countermeasures in recommendation systems",
+        "Federated recommendation systems and personalization",
+        "On-Device user modeling, personalization, and recommendation",
+        "User modeling for targeted and personalized online advertising"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05555555555555555
+      }
+    },
+    {
+      "items": [
+        "Web data integration and cleaning",
+        "Web data generation and simulation",
+        "Web data visualization",
+        "Large pretrained models with web data",
+        "Machine learning and data science for the Web",
+        "Robustness and generalizability of Web mining methods",
+        "Normalization, clustering, classification, and summarization of Web text",
+        "Topic discovery and tracking",
+        "Community question answering",
+        "Sentiment analysis and opinion mining",
+        "Content-based information diffusion",
+        "Mining multimedia, multimodal, multilingual, cross-lingual Web data",
+        "Bridging structured and unstructured data",
+        "Web traffic and log analysis",
+        "Web measurements",
+        "Models for Web evolution",
+        "Interdisciplinary science discovery with web data mining",
+        "Web data provenance, reliability, and authenticity",
+        "Web data quality in the era of algorithmically-generated content"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.10526315789473684,
+        "length_consistency": true,
+        "pattern_ratio": 0.05263157894736842,
+        "keyword_ratio": 0.15789473684210525
+      }
+    },
+    {
+      "items": [
+        "Dr. Liane Lewin-Eytan (Technology Innovation Institute )",
+        "Prof. Helen Huang (The University of Queensland, Australia)",
+        "Prof. Elad Yom-Tov (Bar Ilan University, Israel)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Submission Guidelines",
+        "Reviewing Process",
+        "Conflict of Interest (COI) Policy",
+        "Publication and Presentation Policies",
+        "Program Committee Co-Chairs"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "e.g., a dataset or a Web Application Programmer Interface (API) or a social network",
+        "rather than answering a specific Web",
+        "related scientific research challenge, are out of scope and will be desk",
+        "rejected."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "perceived consequences of algorithmic deployment on the web",
+        "loop, human agency and autonomy",
+        "scale data analysis, uses and collection practices",
+        "enhancing technologies for the Web and mobile app ecosystem"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "point security",
+        "crime defenses and forensics",
+        "scale security measurements",
+        "based applications and services",
+        "enhancing technologies"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "available on the web, the (human",
+        "assisted) semantic integration, the enrichment and processing of large, real",
+        "world datasets in a Web context."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "based, structured, reusable, knowledge graphs and ontologies",
+        "structured data, tabular data, text, multimedia (images, sound, videos) and sensor data",
+        "friendly interactions",
+        "interpretable semantics"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "mediated communications, communities, and crowds",
+        "technical web",
+        "based systems",
+        "governance, civic engagement, collective actions via the Web)",
+        "presentation"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "based mobile applications",
+        "based data processing.",
+        "and context",
+        "aware Web and WoT applications and services",
+        "systems",
+        "disciplinary domains and verticals such as mixed reality, smart cities, and digital health.",
+        "based algorithms and system deployments"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "scale studies of user experience",
+        "informed user models and recommender systems",
+        "aware retrieval and ranking",
+        "Device user modeling, personalization, and recommendation"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "based information diffusion",
+        "lingual Web data",
+        "generated content"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "day) or Main Conference (3",
+        "day) registration, at the standard (non",
+        "student) in",
+        "person rate, payment of which must be completed by the camera"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "WEB 2024: Call for Papers",
+        "Tutorials on specific related topics and panels on challenging areas are encouraged.",
+        "All topics and submission formats are open to both research and industry contributions.",
+        "WEB 2024 conference tracks:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Submission",
+        "Notification",
+        "Registration",
+        "Camera ready"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Published by IARIA Press (operated by Xpert Publishing Services)",
+        "Archived in the Open Access IARIA ThinkMind Digital Library",
+        "Prints available at Curran Associates, Inc.",
+        "Authors of selected papers will be invited to submit extended versions to a IARIA Journal",
+        "Indexing Procedure"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Submission",
+        "Notification",
+        "Registration",
+        "Camera ready"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "10 page article",
+        "6 pages covered the by regular registration; max 4 extra pages allowed at additional cost",
+        "oriented, architecture",
+        "oriented, white papers, etc. They will be included in the proceedings, posted in the free",
+        "14 presentation slides are suggested."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "progress contributions are welcome. These contributions represent partial achievements of longer",
+        "term projects. They could be academic or industrial research, survey, white, implementation",
+        "oriented, architecture",
+        "14 presentation slides are suggested."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "10 slide",
+        "only). The slide",
+        "deck will be posted, post",
+        "event, on www.iaria.org.       8"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "14 slide",
+        "only). The slide",
+        "deck will be posted, post",
+        "event, on www.iaria.org.       12",
+        "14 presentation slides are suggested."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Computational models addressing MSRH challenges",
+        "Machine learning techniques for predictive analytics in MSRH",
+        "Handling and analysing large-scale MSRH datasets",
+        "Real-time data processing for MSRH applications",
+        "Visual analytics tools for MSRH data interpretation",
+        "User-friendly interfaces for healthcare professionals",
+        "HPC applications Accelerating MSRH research",
+        "Cloud computing solutions for MSRH data management",
+        "Protecting sensitive MSRH data from cyber threats",
+        "Encryption and secure communication protocols in healthcare",
+        "Data privacy concerns in MSRH analytics",
+        "Compliance with regulations like GDPR and HIPAA in MSRH contexts",
+        "AI-driven diagnostics and treatment planning in MSRH",
+        "Intelligent systems for patient monitoring and care",
+        "Real-world implementations of computational solutions in MSRH",
+        "Analysis of cybersecurity incidents in MSRH settings",
+        "Cross-sector collaborations enhancing MSRH outcomes",
+        "Social and behavioural data analytics in MSRH"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Web\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Web\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "(ordered by deadline)",
+        "Event",
+        "EDUIT 2025",
+        "Jun 21, 2025 - Jun 22, 2025",
+        "InWeS  2025",
+        "Jun 21, 2025 - Jun 22, 2025",
+        "MobiWis 2025",
+        "Aug 11, 2025 - Aug 13, 2025",
+        "CIAWI 2025",
+        "Dec 10, 2025 - Dec 11, 2025",
+        "WEBIST 2025",
+        "Oct 21, 2025 - Oct 23, 2025",
+        "WISE 2025",
+        "Dec 15, 2025 - Dec 17, 2025",
+        "CoopIS 2025",
+        "Oct 20, 2025 - Oct 22, 2025",
+        "Expired CFPs",
+        "WebSci 2025",
+        "May 20, 2025 - May 24, 2025",
+        "WEB 2025",
+        "Mar 9, 2025 - Mar 13, 2025",
+        "CIAWI 2024",
+        "Dec 11, 2024 - Dec 12, 2024",
+        "WWW 2025",
+        "Apr 28, 2025 - May 2, 2025",
+        "AIWDA 2025",
+        "Dec 2, 2024 - Dec 5, 2024",
+        "RW  2024",
+        "Sep 19, 2024 - Sep 22, 2024",
+        "CoopIS 2024",
+        "Nov 19, 2024 - Nov 21, 2024",
+        "CSW 2024",
+        "Aug 19, 2024 - Aug 21, 2024",
+        "IEEE ESAS 2024",
+        "Jul 2, 2024 - Jul 4, 2024",
+        "DWMV 2024",
+        "Jun 3, 2024 - Jun 3, 2024",
+        "TempWeb 2024",
+        "May 14, 2024 - May 14, 2024",
+        "W2GIS 2024",
+        "Jun 17, 2024 - Jun 18, 2024",
+        "WebSci 2024",
+        "May 21, 2024 - May 24, 2024",
+        "first |\t\t\t\n\n\t\t\t\t previous \n\n\t\t\t\t| Page 1 |\n\n        \nnext\n\n\t\t\t| last"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 46,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08695652173913043,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.021739130434782608
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "EDUIT 2025",
+        "Jun 21, 2025 - Jun 22, 2025",
+        "InWeS  2025",
+        "Jun 21, 2025 - Jun 22, 2025",
+        "MobiWis 2025",
+        "Aug 11, 2025 - Aug 13, 2025",
+        "CIAWI 2025",
+        "Dec 10, 2025 - Dec 11, 2025",
+        "WEBIST 2025",
+        "Oct 21, 2025 - Oct 23, 2025",
+        "WISE 2025",
+        "Dec 15, 2025 - Dec 17, 2025",
+        "CoopIS 2025",
+        "Oct 20, 2025 - Oct 22, 2025",
+        "Expired CFPs",
+        "WebSci 2025",
+        "May 20, 2025 - May 24, 2025",
+        "WEB 2025",
+        "Mar 9, 2025 - Mar 13, 2025",
+        "CIAWI 2024",
+        "Dec 11, 2024 - Dec 12, 2024",
+        "WWW 2025",
+        "Apr 28, 2025 - May 2, 2025",
+        "AIWDA 2025",
+        "Dec 2, 2024 - Dec 5, 2024",
+        "RW  2024",
+        "Sep 19, 2024 - Sep 22, 2024",
+        "CoopIS 2024",
+        "Nov 19, 2024 - Nov 21, 2024",
+        "CSW 2024",
+        "Aug 19, 2024 - Aug 21, 2024",
+        "IEEE ESAS 2024",
+        "Jul 2, 2024 - Jul 4, 2024",
+        "DWMV 2024",
+        "Jun 3, 2024 - Jun 3, 2024",
+        "TempWeb 2024",
+        "May 14, 2024 - May 14, 2024",
+        "W2GIS 2024",
+        "Jun 17, 2024 - Jun 18, 2024",
+        "WebSci 2024",
+        "May 21, 2024 - May 24, 2024"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 42,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.023809523809523808
+      }
+    },
+    {
+      "items": [
+        "Journal of Writing Analytics",
+        "North Carolina State University",
+        "The Ohio State University",
+        "University of South Florida (host)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "data has revolutionized the field. While some scholars are studying the effects of text",
+        "down and bottom",
+        "up theories of public opinion have been reinvigorated by a focus on the large",
+        "scale analysis of writing."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "envision how to better support the range of students enrolled in First",
+        "and how writing analytics might benefit from collaborating with two",
+        "year colleges."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Edit This Favorite",
+        "Calls for Papers",
+        "Connect With Us :"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "12 hours agoCareer Services - Exclusively for AIS Members",
+        "13 hours agoAIS Student Chapter Leadership Conference 2025 Sets Record Attendance",
+        "15 hours agoAMCIS 2025: Keynote Speaker; CIO Panel, Paper-a-Thon, and More!",
+        "3/20/2025Vote Today! 2025 AIS Council Election Deadline: March 31| 17:00 EDT New York",
+        "3/20/2025AISWORLD ListServ Upgrade: What You Need to Know"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "WEB 2024: Call for Papers",
+        "Tutorials on specific related topics and panels on challenging areas are encouraged.",
+        "All topics and submission formats are open to both research and industry contributions.",
+        "WEB 2024 conference tracks:"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "data has revolutionized the field. While some scholars are studying the effects of text",
+        "down and bottom",
+        "up theories of public opinion have been reinvigorated by a focus on the large",
+        "scale analysis of writing."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Edit This Favorite",
+        "Calls for Papers",
+        "Connect With Us :"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Submission Guidelines",
+        "Reviewing Process",
+        "Conflict of Interest (COI) Policy",
+        "Publication and Presentation Policies",
+        "Program Committee Co-Chairs"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "10 page article",
+        "6 pages covered the by regular registration; max 4 extra pages allowed at additional cost",
+        "oriented, architecture",
+        "oriented, white papers, etc. They will be included in the proceedings, posted in the free",
+        "14 presentation slides are suggested."
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

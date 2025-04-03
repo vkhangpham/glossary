@@ -1,0 +1,762 @@
+{
+  "level2_term": "applied educational psychology",
+  "all_urls": [
+    "https://www.apa.org/pubs/journals/edu",
+    "https://www.tandfonline.com/journals/wapp20",
+    "http://psychologyandeducation.net/pae/index.php/pae/call_for_papers",
+    "https://www.tandfonline.com/toc/wapp20/current",
+    "https://www.apa.org/pubs/journals/apl",
+    "https://clausiuspress.com/journal/APPEP.html",
+    "https://onlinelibrary.wiley.com/page/journal/10991298/homepage/cfp-social-identity-health",
+    "https://ojs.acad-pub.com/index.php/APR/announcement/view/190",
+    "https://www.siop.org/post/journal-of-applied-psychology-call-for-editorial-fellowship-nominations-for-scholars-from-historically-excluded-groups-2/",
+    "https://hipatiapress.com/hpjournals/index.php/ijep/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Current Issue",
+        "Information",
+        "Announcements"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Read this journal",
+        "Read free articles",
+        "Journal snapshot",
+        "Advertising information"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "individual differences in abilities, personality, and other characteristics;",
+        "testing and personnel selection;",
+        "performance measurement and management;",
+        "training, learning, and skill acquisition;",
+        "work motivation;",
+        "job attitudes, affect, and emotions;",
+        "leadership;",
+        "team development, processes, and effectiveness;",
+        "career development;",
+        "work\u2013family interface;",
+        "work stress, health, and well-being;",
+        "positive and negative work behaviors;",
+        "diversity and cross-cultural differences in work behavior and attitudes;",
+        "technology and work systems;",
+        "expertise and knowledge management;",
+        "creativity, innovation, and adaptation;",
+        "organizational culture and climate; and",
+        "organizational design, change, and interventions."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "degree to which the manuscript fits the mission of the journal as described on the journal website",
+        "significance of the theoretical, practical and/or methodological contributions",
+        "quality of the literature review",
+        "articulation and explication of the conceptual rationale, constructs, and psychological processes",
+        "rigor of the design and execution of the study",
+        "appropriateness of the analysis and interpretation of the results",
+        "discussion of implications for theory, research, and application",
+        "clarity of presentation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Data for this study are not available because they are proprietary.",
+        "Data for this study are not available because they protected under HIPAA.",
+        "Data for this study are not available because they protected under FERPA.",
+        "Materials for this study can be found [in the Appendix; in the online supplement].",
+        "Materials for this study are not available because they are not owned by the authors."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Adobe Photoshop images\n\nColor (RGB, CMYK) images: 2 pixels\nGrayscale images: 4 pixels",
+        "Color (RGB, CMYK) images: 2 pixels",
+        "Grayscale images: 4 pixels",
+        "Adobe Illustrator Images\n\nStroke weight: 0.5 points",
+        "Stroke weight: 0.5 points"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "$900 for one figure",
+        "An additional $600 for the second figure",
+        "An additional $450 for each subsequent figure"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Open Science badges: Not offered",
+        "Public significance statements: Not offered",
+        "Author contribution statements using CRediT: Required",
+        "Registered Reports: Not published",
+        "Replications: Published"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Topics in Psychology",
+        "Publications and Databases",
+        "Research and Practice",
+        "Education and Career",
+        "News and Advocacy",
+        "Journal scope statement",
+        "Equity, diversity, and inclusion",
+        "Open science",
+        "Editor's Choice",
+        "Author and editor spotlights",
+        "Submission",
+        "Author contribution statements using CRediT",
+        "Masked review policy",
+        "Original use of data",
+        "Transparency and openness",
+        "Manuscript preparation",
+        "Methodological reporting guidelines and checklists",
+        "Academic writing and English language editing services",
+        "Submitting supplemental materials",
+        "Abstract and keywords",
+        "References",
+        "Figures",
+        "Permissions",
+        "Publication policies",
+        "Ethical Principles",
+        "Other information",
+        "Editor",
+        "Associate editors",
+        "Editorial fellows",
+        "Editorial fellow mentors",
+        "Contributing editors",
+        "Editorial assistant",
+        "Transparency and Openness Promotion",
+        "Other open science initiatives",
+        "Journal equity, diversity, and inclusion statement",
+        "Inclusive study designs",
+        "Inclusive reporting standards",
+        "Pathways to authorship and editorship",
+        "Other EDI offerings",
+        "Journal Alert",
+        "Subscriptions and access",
+        "Resources",
+        "APA Publishing Insider",
+        "Social media"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 44,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.022727272727272728,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Popular topics",
+        "Highlights",
+        "Publication & Databases",
+        "APA Publishing Resources",
+        "Search APA Databases",
+        "Your growth",
+        "Standards and guidelines",
+        "For members",
+        "Education",
+        "Careers",
+        "Training highlights",
+        "Highlights",
+        "Advocacy",
+        "Information regarding reproducing material from previously published works",
+        "Analytic methods (code)",
+        "Preregistration of studies and analysis plans",
+        "Display equations",
+        "Computer code",
+        "Tables",
+        "Journal article",
+        "Authored book",
+        "Chapter in an edited book",
+        "Data set citation",
+        "Editorial fellowships",
+        "Paper development workshops and other resources",
+        "ORCID reviewer recognition",
+        "Masked peer review",
+        "Announcement",
+        "Editorials",
+        "Editor Spotlight",
+        "From APA Journals Article Spotlight\u00ae"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 31,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.1935483870967742,
+        "length_consistency": true,
+        "pattern_ratio": 0.06451612903225806,
+        "keyword_ratio": 0.22580645161290322
+      }
+    },
+    {
+      "items": [
+        "ISSN: \n0021-9010",
+        "eISSN: \n1939-1854",
+        "Published: \nmonthly",
+        "Impact Factor: \n9.4",
+        "Psychology - Applied: \n3 of\r\n                                113",
+        "5-Year Impact Factor: \n11.8",
+        "Management: \n14 of 401"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Those psychological phenomena can be",
+        "The journal publishes several types of articles, including:",
+        "A nonexhaustive sampling of topics appropriate for the Journal of Applied Psychology includes:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "expand all",
+        "Submission Guidelines",
+        "Editorial Board",
+        "Abstracting & Indexing",
+        "Special Issues",
+        "Open Science",
+        "EDI Efforts",
+        "Author and Editor Spotlights"
+      ],
+      "metadata": {
+        "html_type": "container_section",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "For example:",
+        "For example:",
+        "A\u00a0list of participating journals\u00a0is also available from APA.",
+        "Explore open science at APA\n\t\t\t ."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Calls for Papers",
+        "Access options",
+        "Resources\n\nAPA publishing resources\nEducators and students\nEditor resource center",
+        "Social media"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "For Authors",
+        "Articles",
+        "Archive",
+        "Indexing",
+        "Aims & Scope",
+        "Editorial Board",
+        "Publication Fees"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Advances in Educational Technology and Psychology",
+        "Curriculum and Teaching Methodology",
+        "Transactions on Comparative Education",
+        "Advances in Vocational and Technical Education",
+        "Adult and Higher Education"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Applied & Educational Psychology",
+        "RESOURCES",
+        "JOIN US",
+        "PUBLICATION SERVICES"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Subscription",
+        "E-Mail Alert",
+        "Most popular papers",
+        "Call for Special Issue",
+        "Publication Ethics & OA Statement",
+        "Plagiarism Policy",
+        "Contact Us"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Anxiety, Arousal and competitive performance",
+        "Emotion, moods and performance",
+        "Aggression and violence in sport",
+        "Social psychology of sport (group cohesion, leadership)",
+        "Attention and concentration in sport",
+        "Mental skills training",
+        "Decision-making and memory in sport",
+        "Issues in sport personality research",
+        "Stress and coping during COVID-19 pandemic",
+        "The coach - psychological variables",
+        "Elite athletes",
+        "Minority athletes",
+        "Doping in sports",
+        "Motivation in sport",
+        "Visualisation techniques - the mental road map for success",
+        "Self-talk in sport",
+        "Audience effects on sport performance",
+        "Clinical issues",
+        "Relaxation and energization",
+        "Psychology of sport injury rehabilitation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05
+      }
+    },
+    {
+      "items": [
+        "Skip to main content",
+        "Skip to main navigation menu",
+        "Skip to site footer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Papers are invited on topics related, but not limited to:",
+        "22 May 2025 - Submission of abstracts/Full-paper submission*",
+        "29 May 2025 - Notification of acceptance",
+        "31 May - 4 June 2025 - Conference fee payment **",
+        "The journal will publish the e-book of Abstracts Book of this conference as the publishing partner.",
+        "Address:\u00a0National University of Physical Education and Sports from Bucharest",
+        "Constantin Noica, No. 140, Zip Code 060057 Bucharest, Romania",
+        "email: psyconference@unefs.ro"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Abstract submission (200",
+        "250 words) on the conference platform (for authors who will have an oral presentation) or Full",
+        "see\u00a0Author instructions)"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Related Articles",
+        "Help explore Black women in Human Resources leadership experience with burnout",
+        "Seeking mentors for NSF-supported research project (Psychology Pathways)",
+        "Join Us"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Current Issue",
+        "Make a Submission",
+        "Language",
+        "Current Issue"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "ISSN: 2014-3591",
+        "Make a Submission\n\t\n\n\n\t\t\tMake a Submission",
+        "Language\n\t\n\n\n\n\n\t\t\t\t\t\tEnglish\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tEspa\u00f1ol (Espa\u00f1a)",
+        "Keywords",
+        "Current Issue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Data for this study are not available because they are proprietary.",
+        "Data for this study are not available because they protected under HIPAA.",
+        "Data for this study are not available because they protected under FERPA.",
+        "Materials for this study can be found [in the Appendix; in the online supplement].",
+        "Materials for this study are not available because they are not owned by the authors."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Those psychological phenomena can be",
+        "The journal publishes several types of articles, including:",
+        "A nonexhaustive sampling of topics appropriate for the Journal of Applied Psychology includes:"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Abstract submission (",
+        "250 words) on the conference platform (for authors who will have an oral presentation) or Full",
+        "see Author instructions)"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "degree to which the manuscript fits the mission of the journal as described on the journal website",
+        "significance of the theoretical, practical and/or methodological contributions",
+        "quality of the literature review",
+        "articulation and explication of the conceptual rationale, constructs, and psychological processes",
+        "rigor of the design and execution of the study",
+        "appropriateness of the analysis and interpretation of the results",
+        "discussion of implications for theory, research, and application",
+        "clarity of presentation"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Subscription",
+        "E-Mail Alert",
+        "Most popular papers",
+        "Call for Special Issue",
+        "Publication Ethics & OA Statement",
+        "Plagiarism Policy",
+        "Contact Us"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

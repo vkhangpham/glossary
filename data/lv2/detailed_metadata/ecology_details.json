@@ -1,0 +1,577 @@
+{
+  "level1_term": "ecology",
+  "all_urls": [
+    "https://ecologyandevolution.cornell.edu/block/research-areas",
+    "https://www.unr.edu/eecb/research",
+    "https://cals.ncsu.edu/applied-ecology/research/",
+    "https://ecology.uga.edu/area_of_expertise/",
+    "https://ecoevo.bio.uci.edu/research/",
+    "https://serc.si.edu/research/research-topics/ecosystems-ecology",
+    "https://www.eeb.ucla.edu/faculty-research/",
+    "https://eccb.tamu.edu/research/",
+    "https://eeb.princeton.edu/research",
+    "https://ecologyandevolution.uchicago.edu/research",
+    "https://ecoevoreu.ucdavis.edu/research",
+    "https://eeb.utk.edu/exemplar-research-questions/",
+    "https://evsc.as.virginia.edu/ecology",
+    "https://serc.si.edu/research",
+    "https://ib.oregonstate.edu/research/ecology-research",
+    "https://wec.ifas.ufl.edu/about-wec/research/",
+    "https://evsc.as.virginia.edu/terrestrial-ecology",
+    "https://www.montana.edu/ecology/diane_debinski/research.html",
+    "https://humanecology.rutgers.edu/research/",
+    "https://eeb.princeton.edu/front",
+    "https://ecologyandevolution.cornell.edu/",
+    "https://eccb.tamu.edu/",
+    "https://science.du.edu/biology/ecology-biodiversity-evolutionary-biology",
+    "https://www.bio.fsu.edu/research-eeb.php",
+    "https://www.biology.pitt.edu/research/ecology",
+    "https://www.memphis.edu/erc/",
+    "https://www.kennesaw.edu/csm/research/eeob.php",
+    "https://www.biol.vt.edu/research/Ecology_Evolution_and_Behavior.html",
+    "https://ecology.siu.edu/research/",
+    "https://vancouver.labs.wsu.edu/aquatic-ecology/research/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Agriculture, Nutrition and Veterinary Sciences",
+        "Biochemistry and Molecular Biology",
+        "Biology",
+        "Chemistry",
+        "Division of Earth and Ecosystem Sciences, DRI",
+        "Division of Hydrologic Sciences, DRI",
+        "Geography",
+        "Great Basin Institute",
+        "Natural Resources and Environmental Science"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Cognitive ecology and neuroethology",
+        "Epigenetic effects on behavior",
+        "Evolution of cognitive processes and spatial memory",
+        "Evolution of social behavior",
+        "Evolutionary ecology of behavioral specialization",
+        "Evolutionary ecology of communication, behavioral specialization, and diet choice",
+        "Genetic basis of sleep and metabolism",
+        "Sensory ecology",
+        "Sexual selection"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Chemically mediated trophic interactions",
+        "Metabolomics",
+        "Endocrine disruption",
+        "Contaminant fate",
+        "Chemical ecology of immune response",
+        "Chemically mediated coevolution",
+        "Herbivore sequestration of plant secondary metabolites",
+        "Natural products diversity",
+        "Pharmaceutical applications of chemical ecology",
+        "Synthesis and structure determination of natural products"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Conservation genetics",
+        "Desert ecosystem conservation",
+        "Ecology and conservation of reptiles",
+        "Fire ecology and management",
+        "GIS and spatial modeling",
+        "Habitat fragmentation, metapopulation dynamics, conservation genetics",
+        "Invasive species ecology and management",
+        "Landscape ecology",
+        "Paleoecology and extinction",
+        "Restoration ecology",
+        "Quantifying, describing and preserving tropical biodiversity"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Ecoimmunology",
+        "Effects of disease on threatened or endangered species",
+        "Effects of tick-borne diseases on livestock",
+        "Evolutionary ecology of the insect immune response",
+        "Pathogen interactions",
+        "Wildlife management and disease"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Coevolution between consumers and resources",
+        "Evolution of behavior",
+        "Evolution of plant secondary metabolites",
+        "Evolutionary physiology",
+        "Genetic signatures of adaptive divergence",
+        "Hybridization and speciation",
+        "Molecular evolution",
+        "Phylogenetics and phylogeography",
+        "Population and functional genomics",
+        "Population genetics",
+        "Rapid evolution of native and invasive species",
+        "Sexual selection"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Adaptive evolution",
+        "Coevolution between plants and animals",
+        "Conservation genetics",
+        "Diversification",
+        "Epigenetics",
+        "Functional genomics",
+        "Hybridization",
+        "Population genomics",
+        "Sexual selection"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Biodiversity loss",
+        "Climate change",
+        "Evolutionary ecology of invasive species",
+        "Ecological effects of anthropogenic nutrient pulses",
+        "Fire ecology and global change",
+        "Landscape ecology and global change",
+        "Physiological responses to CO2 and climate change",
+        "Rapid evolutionary adaptation",
+        "Reforestation and restoration ecology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Aquatic invertebrate community structure",
+        "Ecosystem restoration",
+        "Fish conservation biology",
+        "Food web ecology",
+        "Invasive species",
+        "Marine invertebrate ecology",
+        "Metapopulation dynamics",
+        "Trophic dynamics",
+        "Watershed modeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Evolutionary ecology of immunity",
+        "Ecology of infectious disease",
+        "Physiological response of plants and animals to CO2 and climate change",
+        "Physiological mechanisms of ecological interactions",
+        "Ecology and evolution of plant secondary metabolites",
+        "Sleep and metabolism",
+        "Microbial ecology and physiology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chemical ecology",
+        "Ecoimmunology",
+        "Evolution of specialization",
+        "Herbivory",
+        "Interaction biodiversity",
+        "Multi-trophic interactions",
+        "Nutritional ecology",
+        "Pollination biology",
+        "Seed dispersal"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Population dynamics",
+        "Competition and niche theory",
+        "Predation, parasitism, and herbivory",
+        "Neutral theory",
+        "Food webs and networks",
+        "Biodiversity",
+        "Trophic cascades"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2857142857142857,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Microbial ecology and physiology",
+        "Nutrient cycling",
+        "Nutrient pulses",
+        "Interactions between below-ground and above-ground ecology",
+        "Ecology of extreme environments",
+        "Mycorrhizal ecology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nevada Institute for Chemical Ecology",
+        "Conservation Genetics Center",
+        "Nevada Genomics Center",
+        "Valley Road Field Lab",
+        "Museum of Natural History",
+        "Whittell Forest",
+        "Behavioral ecology",
+        "Chemical ecology",
+        "Conservation biology",
+        "Disease ecology",
+        "Evolution",
+        "Genomics and molecular ecology",
+        "Global change",
+        "Limnology and aquatic ecology",
+        "Physiological ecology",
+        "Plant-animal interactions",
+        "Population and community ecology",
+        "Soil ecology"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05555555555555555
+      }
+    },
+    {
+      "items": [
+        "The Science of the Environment",
+        "Research Areas",
+        "Facilities",
+        "Programs and Centers",
+        "Applied Ecologists in Wicked Problems, Wolfpack Solutions",
+        "Connect With Us"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Aquaculture",
+        "Conservation Biology",
+        "Ecology",
+        "Environmental Toxicology",
+        "Fisheries",
+        "Wildlife"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Apr03AGLS TablingHorticulture/Forest Science Building",
+        "Apr03AGLS TablingHorticulture/Forest Science Building",
+        "Apr03Spirited LearningThe Shirley and Joe Swinbank \u201974 AgriLife Center, 556 John Kimbrough Blvd"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Dynamics of Harmful Cyanobacteria Blooms in Vancouver Lake, WA",
+        "Columbia River Estuary Science Education and Outreach (CRESCENDO)",
+        "Biology and ecology of invasive zooplankton in estuaries, rivers and lakes",
+        "Grazing impact of diverse zooplankton taxa on thin layers"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Biological assessment of plankton in Vancouver Lake, WA.",
+        "Plankton and Hydrographic Monitoring in the Columbia River Estuary",
+        "Zooplankton response to environmental variability in the San Francisco Estuary",
+        "Coastal Ocean Processes (CoOP) Program: Wind Events and Shelf Transport (WEST)",
+        "Breach III"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Conservation genetics",
+        "Desert ecosystem conservation",
+        "Ecology and conservation of reptiles",
+        "Fire ecology and management",
+        "GIS and spatial modeling",
+        "Habitat fragmentation, metapopulation dynamics, conservation genetics",
+        "Invasive species ecology and management",
+        "Landscape ecology",
+        "Paleoecology and extinction",
+        "Restoration ecology",
+        "Quantifying, describing and preserving tropical biodiversity"
+      ],
+      "output_list_from_llm": [
+        "Conservation genetics",
+        "Desert ecosystem conservation",
+        "Ecology and conservation of reptiles",
+        "Fire ecology and management",
+        "GIS and spatial modeling",
+        "Habitat fragmentation, metapopulation dynamics, conservation genetics",
+        "Invasive species ecology and management",
+        "Landscape ecology",
+        "Paleoecology and extinction",
+        "Restoration ecology",
+        "Quantifying, describing and preserving tropical biodiversity"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Ecology and conservation of reptiles",
+    "Fire ecology and management",
+    "Invasive species ecology and management",
+    "Landscape ecology",
+    "Paleoecology and extinction",
+    "Restoration ecology",
+    "Desert ecosystem conservation",
+    "Gis and spatial modeling",
+    "Habitat fragmentation, metapopulation dynamics, conservation genetics",
+    "Quantifying, describing and preserving tropical biodiversity"
+  ],
+  "error": null
+}

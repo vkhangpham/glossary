@@ -1,0 +1,802 @@
+{
+  "level1_term": "epidemiology",
+  "all_urls": [
+    "https://hsph.harvard.edu/department/epidemiology/areas-of-research/",
+    "https://epi.washington.edu/research/research-areas/",
+    "https://www.public-health.uiowa.edu/epidemiology-research-interest-areas/",
+    "https://sph.umich.edu/epid/faculty-research/research.html",
+    "https://epibiostat.ucsf.edu/research",
+    "https://med.stanford.edu/epidemiology-dept/research.html",
+    "https://publichealth.jhu.edu/departments/epidemiology/research-and-practice",
+    "https://sph.unc.edu/epid/epidemiology-research/",
+    "https://www.publichealth.pitt.edu/epidemiology/research-practice/epidemiology-faculty-research",
+    "https://epidemiology.sph.brown.edu/research/areas",
+    "https://www.bu.edu/sph/departments/epidemiology/",
+    "https://ysph.yale.edu/public-health-research-and-practice/department-research/epidemiology-of-microbial-diseases/research-themes/",
+    "https://epi.washington.edu/research_area/infectious-diseases/",
+    "https://catalog.upp.pitt.edu/content.php?catoid=73&navoid=10120",
+    "https://www.public-health.uiowa.edu/research-interest-area-infectious-disease-epidemiology/",
+    "https://www.sph.umn.edu/academics/degrees-programs/phd/epidemiology/research/",
+    "https://www.bu.edu/sph/departments/epidemiology/research/research-areas/",
+    "https://public-health.tamu.edu/departments/epi-bio/index.html",
+    "https://publichealth.gwu.edu/epidemiology-departmental-research",
+    "https://publichealth.buffalo.edu/epidemiology-and-environmental-health/research-and-facilities/faculty-research-interests.html",
+    "https://sph.umich.edu/epid/faculty-research/index.html",
+    "https://www.urmc.rochester.edu/education/graduate/phd/epidemiology/research",
+    "https://sph.unc.edu/epid/epidemiology-landing/",
+    "https://med.nyu.edu/departments-institutes/population-health/divisions-sections-centers/epidemiology/epidemiology",
+    "https://www.sph.umn.edu/academics/divisions/epich/research/social-epidemiology/",
+    "https://publichealth.jhu.edu/departments/epidemiology",
+    "https://med.stanford.edu/epidemiology-dept.html",
+    "https://www.ntnu.edu/ism/epidemiology",
+    "https://publichealth.ouhsc.edu/research",
+    "https://ysph.yale.edu/public-health-research-and-practice/department-research/chronic-disease-epidemiology/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Cancer genomics",
+        "Statistical genetics",
+        "Comparative and functional genomics",
+        "Chromatin conformation capture",
+        "Copy-number analysis",
+        "Statistical phylogenetics and metagenomics",
+        "Computational biology",
+        "High-dimensional data analysis"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "Longitudinal data analysis",
+        "Survival analysis",
+        "Statistical genetics",
+        "Permutation tests",
+        "Clinical trial design and analysis",
+        "Medical image reconstruction and analysis",
+        "Correlated data models",
+        "Bayesian statistics",
+        "Spatial statistics",
+        "Statistical computing",
+        "Epidemiologic methods"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.45454545454545453,
+        "keyword_ratio": 0.5454545454545454
+      }
+    },
+    {
+      "items": [
+        "Genetics",
+        "Cancer",
+        "Liver disease",
+        "Women's health",
+        "Infectious diseases",
+        "Osteoarthritis",
+        "Medical imaging",
+        "Complex genetic traits",
+        "Heart disease",
+        "Neurology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Application of clinical epidemiology to emergency medicine",
+        "Cost effectiveness , health care financing, HIV and reproductive health",
+        "Evidence-based pediatrics, particularly newborn care",
+        "Infectious diseases and international health",
+        "Prediction and prevention of cardiovascular disease"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "HIV/AIDS",
+        "Malaria",
+        "Sexually transmitted diseases",
+        "Emerging infectious diseases",
+        "Ebola and other hemorrhagic fever viruses",
+        "Trachoma",
+        "Tuberculosis",
+        "Hepatitis C virus",
+        "Hepatitis B virus",
+        "Vaccine-preventable diseases",
+        "Coccidioidomycosis",
+        "Chagas disease",
+        "Visceral leishmaniasis",
+        "Dengue virus"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Healthcare systems",
+        "Injection drug use",
+        "Mathematical modeling and spatial epidemiology",
+        "Implementation sciences",
+        "Evidence-based medicine and public policy",
+        "Maternal-child health including preterm birth and its consequences"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Classification",
+        "Unsupervised and semi-supervised learning",
+        "Reliable and interpretable machine learning",
+        "Statistical learning theory",
+        "High-dimensional statistics",
+        "Deep learning",
+        "Online learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "both financial and non",
+        "financial",
+        "promote healthy behavior, such as smoking cessation and food choice, among low",
+        "income groups."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Topics",
+        "Methods",
+        "Department of Epidemiology& Population Health"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Aging",
+        "Applied public health",
+        "Cancer",
+        "Cardiovascular and diabetes",
+        "Clinical trials and methods",
+        "Environmental",
+        "Global health",
+        "Infectious disease",
+        "Injury prevention",
+        "Molecular and genetic",
+        "Obesity and nutritional",
+        "Population neuroscience",
+        "Prevention, lifestyle, and physical activity",
+        "Psychiatric",
+        "Reproductive, perinatal, and pediatric",
+        "Social epidemiology and health equity",
+        "Women\u2019s health"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Maternal and child health",
+        "Chronic disease and nutrition",
+        "Interpersonal violence and behavior disorders",
+        "Gun injuries",
+        "Walkability",
+        "Cognition and aging",
+        "EPIDEM 2143 Social Epidemiology (Anthony Fabio\u00a0and\u00a0Dara D. Mendez)",
+        "Health Equity Certificate\u00a0(Emma Barinas-Mitchell, Director)",
+        "MCH Equity Scholars Program\u00a0(Dara D. Mendez, Director)",
+        "Black COVID-19 Equity Coalition\u00a0(Dara D. Mendez\u00a0and\u00a0Tiffany L. Gary-Webb)",
+        "Black Women/Femmes Health Project\u00a0(Dara D. Mendez, PI)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Maternal and child health",
+        "Chronic disease and nutrition",
+        "Interpersonal violence and behavior disorders",
+        "Gun injuries",
+        "Walkability",
+        "Cognition and aging"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "EPIDEM 2143 Social Epidemiology (Anthony Fabio\u00a0and\u00a0Dara D. Mendez)",
+        "Health Equity Certificate\u00a0(Emma Barinas-Mitchell, Director)",
+        "MCH Equity Scholars Program\u00a0(Dara D. Mendez, Director)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Healthy weight and dietary intake as they affect maternal and child health;",
+        "Sleep, physical activity and cardiovascular disease (CVD) in women during and after pregnancy;",
+        "Adverse pregnancy outcomes and the development of CVD outcomes in later life;",
+        "Studies of key outcomes in older women including fractures, CVD, falls, cancer and mortality;",
+        "Study of Women\u2019s health Across the Nation (SWAN);",
+        "Study of Osteoporotic Fractures (SOF);",
+        "The Women\u2019s Health Initiative (WHI);",
+        "Magee Obstetric and Infant database (MOMI);",
+        "Medicare Linkage of our cohorts",
+        "EPIDEM 2709 Epidemiology of Women\u2019s Health",
+        "EPIDEM 2719 Reproductive Epidemiology",
+        "EPIDEM 2340 Pediatric Epidemiology",
+        "EPIDEM 2725 Reproductive Development from Model Organisms to Humans"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.3076923076923077,
+        "keyword_ratio": 0.46153846153846156
+      }
+    },
+    {
+      "items": [
+        "Healthy weight and dietary intake as they affect maternal and child health;",
+        "Sleep, physical activity and cardiovascular disease (CVD) in women during and after pregnancy;",
+        "Adverse pregnancy outcomes and the development of CVD outcomes in later life;",
+        "Studies of key outcomes in older women including fractures, CVD, falls, cancer and mortality;"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Study of Women\u2019s health Across the Nation (SWAN);",
+        "Study of Osteoporotic Fractures (SOF);",
+        "The Women\u2019s Health Initiative (WHI);",
+        "Magee Obstetric and Infant database (MOMI);",
+        "Medicare Linkage of our cohorts"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.4,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "EPIDEM 2709 Epidemiology of Women\u2019s Health",
+        "EPIDEM 2719 Reproductive Epidemiology",
+        "EPIDEM 2340 Pediatric Epidemiology",
+        "EPIDEM 2725 Reproductive Development from Model Organisms to Humans"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "microbiology, immunology, vaccinology, entomology, ecology",
+        "statistical modeling",
+        "global health",
+        "behavioral, environmental health",
+        "pharmacoepidemiology including antimicrobial resistance",
+        "clinical trials"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Wade Aldous, Iowa Department of Public Health, State Hygienic Laboratory",
+        "Maggie Carrel, Department of Geography, College of Liberal Arts and Sciences",
+        "Loreen Herwaldt, Department of Internal Medicine, Carver College of Medicine",
+        "Jesse Hostetter, University of Georgia College of Veterinary Medicine, VPATH",
+        "Andrew Kitchen, Department of Anthropology, College of Liberal Arts and Sciences",
+        "Jeff Meier, Department of Internal Medicine, Carver College of Medicine",
+        "Mary Wilson, Department of Internal Medicine, Carver College of Medicine; and Microbiology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "EPID:6550 Epidemiology of Infectious Diseases",
+        "EPID:5570 Zoonotic Diseases",
+        "EPID:5580 Public Health Laboratory Techniques",
+        "EPID:6570 Infectious Causes of Chronic Diseases",
+        "EPID:5550 Diagnostic Microbiology for Epidemiology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Center for Emerging Infectious Diseases",
+        "CADRE",
+        "Midwest Center for Excellence in Vector Borne Diseases",
+        "National Institute for Antimicrobial Resistance Research and Education",
+        "State Hygienic Laboratory at The University of Iowa"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "course #",
+        "Students interested in infectious disease epidemiology will take the following course:",
+        "EPID:6550",
+        "Infectious Agents, Microbiology, and Diagnostic Evaluation",
+        "EPID:5550",
+        "EPID:6570",
+        "Ecology and Epidemiology of Zoonotic Diseases",
+        "EPID:5570",
+        "MICR:6247",
+        "EPID:6560",
+        "EPID:6900",
+        "GEOG:4150",
+        "MICR:6267",
+        "MICR:6247",
+        "MICR:6259",
+        "EPID:6071",
+        "EPID:6920",
+        "EPID:6910",
+        "STAT:6560"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.05263157894736842,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05263157894736842
+      }
+    },
+    {
+      "items": [
+        "Main Department Contacts",
+        "Academic Coordinators",
+        "Mailing Address",
+        "Department of Epidemiology",
+        "UNC Gillings School of Global Public Health",
+        "135 Dauer Drive",
+        "2101 McGavran-Greenberg Hall, CB #7435",
+        "Chapel Hill, NC 27599-7435",
+        "Our offices are located on the second floor of McGavran-Greenberg Hall."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sustainable Supply Chains: Promoting supply chain sustainability through health-conscious practices.",
+        "Community Engagement: Collaborating with communities to improve overall health and safety.",
+        "Machine Learning for Safety: Leveraging machine learning to enhance occupational safety protocols.",
+        "Environmental Justice Advocacy: Engaging with communities to address environmental disparities."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Study of Women\u2019s health Across the Nation (SWAN);",
+        "Study of Osteoporotic Fractures (SOF);",
+        "The Women\u2019s Health Initiative (WHI);",
+        "Magee Obstetric and Infant database (MOMI);",
+        "Medicare Linkage of our cohorts"
+      ],
+      "output_list_from_llm": [
+        "Study of Women\u2019s health Across the Nation (SWAN);",
+        "Study of Osteoporotic Fractures (SOF);",
+        "The Women\u2019s Health Initiative (WHI);",
+        "Magee Obstetric and Infant database (MOMI);",
+        "Medicare Linkage of our cohorts"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "EPIDEM 2709 Epidemiology of Women\u2019s Health",
+        "EPIDEM 2719 Reproductive Epidemiology",
+        "EPIDEM 2340 Pediatric Epidemiology",
+        "EPIDEM 2725 Reproductive Development from Model Organisms to Humans"
+      ],
+      "output_list_from_llm": [
+        "EPIDEM 2709 Epidemiology of Women\u2019s Health",
+        "EPIDEM 2719 Reproductive Epidemiology",
+        "EPIDEM 2340 Pediatric Epidemiology",
+        "EPIDEM 2725 Reproductive Development from Model Organisms to Humans"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Healthy weight and dietary intake as they affect maternal and child health;",
+        "Sleep, physical activity and cardiovascular disease (CVD) in women during and after pregnancy;",
+        "Adverse pregnancy outcomes and the development of CVD outcomes in later life;",
+        "key outcomes in older women including fractures, CVD, falls, cancer and mortality;",
+        "Study of Women\u2019s health Across the Nation (SWAN);",
+        "Study of Osteoporotic Fractures (SOF);",
+        "The Women\u2019s Health Initiative (WHI);",
+        "Magee Obstetric and Infant database (MOMI);",
+        "Medicare Linkage of our cohorts",
+        "EPIDEM 2709 Epidemiology of Women\u2019s Health",
+        "EPIDEM 2719 Reproductive Epidemiology",
+        "EPIDEM 2340 Pediatric Epidemiology",
+        "EPIDEM 2725 Reproductive Development from Model Organisms to Humans"
+      ],
+      "output_list_from_llm": [
+        "Healthy weight and dietary intake as they affect maternal and child health;",
+        "Sleep, physical activity and cardiovascular disease (CVD) in women during and after pregnancy;",
+        "Adverse pregnancy outcomes and the development of CVD outcomes in later life;",
+        "key outcomes in older women including fractures, CVD, falls, cancer and mortality;",
+        "Study of Women\u2019s health Across the Nation (SWAN);",
+        "Study of Osteoporotic Fractures (SOF);",
+        "The Women\u2019s Health Initiative (WHI);",
+        "Magee Obstetric and Infant database (MOMI);",
+        "Medicare Linkage of our cohorts",
+        "EPIDEM 2709 Epidemiology of Women\u2019s Health",
+        "EPIDEM 2719 Reproductive Epidemiology",
+        "EPIDEM 2340 Pediatric Epidemiology",
+        "EPIDEM 2725 Reproductive Development from Model Organisms to Humans"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Longitudinal data analysis",
+        "Survival analysis",
+        "Statistical genetics",
+        "Permutation tests",
+        "Clinical trial design and analysis",
+        "Medical image reconstruction and analysis",
+        "Correlated data models",
+        "Bayesian statistics",
+        "Spatial statistics",
+        "Statistical computing",
+        "Epidemiologic methods"
+      ],
+      "output_list_from_llm": [
+        "Epidemiologic methods"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Healthcare systems",
+        "Injection drug use",
+        "Mathematical modeling and spatial epidemiology",
+        "Implementation sciences",
+        "Evidence-based medicine and public policy",
+        "Maternal-child health including preterm birth and its consequences"
+      ],
+      "output_list_from_llm": [
+        "Mathematical modeling and spatial epidemiology",
+        "Maternal-child health including preterm birth and its consequences"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "EPID:6550 Epidemiology of Infectious Diseases",
+        "EPID:5570 Zoonotic Diseases",
+        "EPID:5580 Public Health Laboratory Techniques",
+        "EPID:6570 Infectious Causes of Chronic Diseases",
+        "EPID:5550 Diagnostic Microbiology for Epidemiology"
+      ],
+      "output_list_from_llm": [
+        "EPID:6550 Epidemiology of Infectious Diseases",
+        "EPID:5570 Zoonotic Diseases",
+        "EPID:5580 Public Health Laboratory Techniques",
+        "EPID:6570 Infectious Causes of Chronic Diseases",
+        "EPID:5550 Diagnostic Microbiology for Epidemiology"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "EPIDEM 2143 Social Epidemiology (Anthony Fabio and Dara D. Mendez)",
+        "Health Equity Certificate (Emma Barinas-Mitchell, Director)",
+        "MCH Equity Scholars Program (Dara D. Mendez, Director)"
+      ],
+      "output_list_from_llm": [
+        "EPIDEM 2143 Social Epidemiology (Anthony Fabio and Dara D. Mendez)"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Epidem 2709 epidemiology of women\u2019s health",
+    "Epidem 2719 reproductive epidemiology",
+    "Epidem 2340 pediatric epidemiology",
+    "Mathematical modeling and spatial epidemiology",
+    "Epid:6550 epidemiology of infectious diseases",
+    "Epid:5550 diagnostic microbiology for epidemiology",
+    "Epidem 2143 social epidemiology (anthony fabio and dara d. mendez)",
+    "Study of women\u2019s health across the nation (swan);",
+    "Study of osteoporotic fractures (sof);",
+    "The women\u2019s health initiative (whi);",
+    "Magee obstetric and infant database (momi);",
+    "Medicare linkage of our cohorts",
+    "Epidem 2725 reproductive development from model organisms to humans",
+    "Healthy weight and dietary intake as they affect maternal and child health;",
+    "Sleep, physical activity and cardiovascular disease (cvd) in women during and after pregnancy;",
+    "Adverse pregnancy outcomes and the development of cvd outcomes in later life;",
+    "Key outcomes in older women including fractures, cvd, falls, cancer and mortality;",
+    "Epidemiologic methods",
+    "Maternal-child health including preterm birth and its consequences",
+    "Epid:5570 zoonotic diseases",
+    "Epid:5580 public health laboratory techniques",
+    "Epid:6570 infectious causes of chronic diseases"
+  ],
+  "error": null
+}

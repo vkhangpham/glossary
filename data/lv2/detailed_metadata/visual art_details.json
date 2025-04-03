@@ -1,0 +1,2373 @@
+{
+  "level1_term": "visual art",
+  "all_urls": [
+    "https://aahvs.duke.edu/research",
+    "https://libguides.umflint.edu/topics/arts",
+    "https://www.press.uillinois.edu/journals/?id=var",
+    "https://visualart.brown.edu/",
+    "https://art.ku.edu/",
+    "https://art.uga.edu/recent-maed-phd-topics-art-education",
+    "https://www.bu.edu/cfa/visual-arts/arts-based-research/",
+    "https://samfoxschool.washu.edu/collaborations/research-office",
+    "https://dova.uchicago.edu/resources/university-resources-artistic-research",
+    "https://art.asu.edu/research",
+    "https://www.fullerton.edu/arts/art/",
+    "https://steinhardt.nyu.edu/courses/research-visual-arts-administration",
+    "https://www.tc.columbia.edu/visualresearchcenter/courses/",
+    "https://www.fau.edu/artsandletters/vaah/",
+    "https://artsandmedia.ucdenver.edu/cam-areas-of-study/about-visual-arts",
+    "https://www.sandiego.edu/cas/art-architecture-art-history/visual-arts/research.php",
+    "https://aahvs.duke.edu/student-visual-arts-projects",
+    "https://undergradresearch.missouri.edu/vads/",
+    "https://art.umbc.edu/",
+    "https://www.saic.edu/visual-critical-studies",
+    "https://arthistory.cornell.edu/",
+    "https://westminsteru.edu/academics/giovale-library/research-guides/art-research-guide.html",
+    "https://artdesign.uoregon.edu/art",
+    "https://www.press.uillinois.edu/wordpress/visual-arts-research-seeking-submissions/",
+    "https://cvpa.gmu.edu/creative-research",
+    "https://guides.library.newschool.edu/arsvc/research",
+    "https://finearts.utexas.edu/",
+    "https://www.holycross.edu/academics/department/visual-arts",
+    "https://www.vanderbilt.edu/undergraduate-research/creative-arts/",
+    "https://www.cmu.edu/cfa/research-and-creative-practice/index.html"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Secondary Menu",
+        "Main navigation",
+        "Sidebar Navigation",
+        "Student & Faculty Projects",
+        "Faculty Books",
+        "Department of Art, Art History & Visual Studies",
+        "Undergraduate",
+        "Graduate",
+        "Stay Connected"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Visual Arts",
+        "Art History",
+        "Visual & Media Studies",
+        "Related Programs",
+        "Exhibitions"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Picking a Topic",
+        "Area & Interdisciplinary Studies",
+        "ArtsDance TopicsFine Art & Design TopicsMusic TopicsTheater Topics",
+        "Dance Topics",
+        "Fine Art & Design Topics",
+        "Music Topics",
+        "Theater Topics",
+        "Behavioral & Social Sciences",
+        "Business, Economics, & Management",
+        "Current Events and Controversial Issues",
+        "Education & Social Work",
+        "Health Sciences",
+        "Humanities",
+        "Natural and Physical Sciences"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "African dance",
+        "Ailey, Alvin",
+        "Athleticism in dance",
+        "Copeland, Misty",
+        "Dance as meditation",
+        "Dance as ritual",
+        "Disco",
+        "Diversity in dance",
+        "Duncan, Isadora",
+        "Fad dances",
+        "Folk dances",
+        "Gaga movement",
+        "Graham, Martha",
+        "Krump",
+        "Moshing",
+        "Pointe shoes",
+        "Polka",
+        "Praise dance",
+        "Process",
+        "Regional dances",
+        "Square dances",
+        "Tharp, Twyla",
+        "Voguing",
+        "Wacking",
+        "Waltz"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.04
+      }
+    },
+    {
+      "items": [
+        "Abstract Expressionism",
+        "Ai Wei Wei",
+        "Animation",
+        "Anime / Manga",
+        "Art as protest",
+        "Art glass",
+        "Arts & Crafts movement",
+        "Bauhaus",
+        "Censorship",
+        "Comic strips",
+        "Crop art",
+        "Ecology in art",
+        "Dance of Death",
+        "Feng shui",
+        "Fiber art",
+        "Gothic",
+        "Graphic novels",
+        "Harlem Renaissance",
+        "Heidelberg Project",
+        "Interactive art",
+        "Kinetic sculpture",
+        "Minimalism",
+        "Mixed media",
+        "Mosaics",
+        "Multimedia",
+        "Murals",
+        "Neo-romanticism",
+        "Post-modern architecture",
+        "Reverse graffiti",
+        "Rose windows",
+        "Street art",
+        "Street photographers",
+        "Sustainable design",
+        "Textile arts",
+        "Tramp art",
+        "Typography",
+        "Urban sculpture",
+        "Women photographers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 38,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.02631578947368421,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05263157894736842
+      }
+    },
+    {
+      "items": [
+        "Afrobeat",
+        "Artist rights",
+        "Bagpipes",
+        "Beatles, cultural impact",
+        "Bebop",
+        "Bono, activism",
+        "Castrati",
+        "Computer composed music",
+        "Copyright",
+        "Electronic music",
+        "Folk music revival of 1960s",
+        "Harlem Renaissance",
+        "Hip hop",
+        "History of an instrument",
+        "Jazz, contemporary",
+        "Klezmer",
+        "Mashups",
+        "Music festivals",
+        "Musical satire",
+        "Nocturnes",
+        "Opera",
+        "Polyphony",
+        "Rap lyrics",
+        "Sampling",
+        "Saxophone in the symphony",
+        "Therapy and music",
+        "Third Stream music",
+        "Troubadours",
+        "Vocal vibrato"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 29,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.06896551724137931,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Actor's Studio",
+        "Broadway flops",
+        "Butoh",
+        "Colorblind casting",
+        "Harlem Renaissance",
+        "Kabuki",
+        "The Living Theatre",
+        "Method acting",
+        "Mystery plays",
+        "Pop-up performance",
+        "Punch and Judy",
+        "Puppetry",
+        "Regional theaters",
+        "Superstitions in theater",
+        "Theatre in the round",
+        "Theater of the absurd",
+        "Vaudeville",
+        "Yellow face"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.05555555555555555,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05555555555555555
+      }
+    },
+    {
+      "items": [
+        "Related Guides",
+        "Dance Topics",
+        "Fine Art & Design Topics",
+        "Music Topics",
+        "Theater Topics"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "About",
+        "Call for Papers",
+        "Editors",
+        "PDF Policy",
+        "Submissions",
+        "Featured Articles",
+        "Online Access"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sahar Aghasafari, University of South Carolina, Lancaster",
+        "Ilayda Altuntas Nott, The University of Arizona",
+        "Angela Baldus, The University of British Columbia",
+        "Jasmine Begeske, Purdue University",
+        "Joy G. Bertling, University of Tennessee",
+        "Shivani Bhalla, University of Illinois Urbana-Champaign",
+        "Paulina Camacho Valencia, University of Arkansas",
+        "Yichien Cooper, Washington State University",
+        "Kendall Crabbe, The University of Arizona",
+        "Kimberley D'Adamo, University of Nebraska",
+        "Stephanie Danker, Miami University",
+        "Richard Fletcher, The Ohio State University",
+        "Kelly Gross, Northern Illinois University",
+        "Min Gu, California State University, Long Beach",
+        "Christina Hanawalt, University of Georgia",
+        "Emiel Heijnen, Amsterdam University of the Arts",
+        "Catalina Hern\u00e1ndez-Cabal, Virginia Tech University",
+        "Ann Holt, The Pennsylvania State University",
+        "Emily J. Hood, University of Arkansas at Little Rock",
+        "Dana Carlisle Kletchka, The Ohio State University",
+        "Ahran Koo, California State University, Fresno",
+        "Hyunji Kwon, University of South Carolina",
+        "Nicole S. Lee, Nova Scotia College of Art and Design",
+        "Lillian L. Lewis, Virginia Commonwealth University",
+        "Christine Liao, University of North Carolina at Wilmington",
+        "Luke Meeken, Miami University",
+        "David Modler, Shepherd University",
+        "Kaleb Ostraff, Brigham Young University",
+        "Hayon Park, George Mason University",
+        "Samuel H. Peck, University of Massachusetts Dartmouth",
+        "Allison Rowe, University of Iowa",
+        "Sara Scott Shields, Florida State University",
+        "Borim Song, East Carolina University",
+        "Lauren Stetz, University of the Arts",
+        "Jody Stokes-Casey, University of Kentucky",
+        "Juuso Tervo, Aalto University",
+        "Merel Visse, Drew University & University of Humanistic Studies",
+        "Amber Ward, Florida State University",
+        "gloria j. wilson, The Ohio State University",
+        "Kate Wurtzel, Appalachian State University",
+        "Li Xu, University of North Texas",
+        "Ahu Yola\u00e7, Lawrence Technological University",
+        "Gigi Schroeder Yu, University of New Mexico"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 43,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.023255813953488372
+      }
+    },
+    {
+      "items": [
+        "DETAILS",
+        "Indexes",
+        "SUBSCRIPTION RATES",
+        "ONLINE + PRINT ADVERTISING",
+        "Call for Papers",
+        "Editors",
+        "Editorial Board",
+        "PDF Policy",
+        "Submissions",
+        "Featured Articles",
+        "Online Access",
+        "Journals Info",
+        "UIP Journal Titles",
+        "Stay Connected"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Editor: Sarah Travis and Laura Hetrick",
+        "Current Volume: 51 (2025)",
+        "Issued biannually (Summer and Winter)",
+        "ISSN: 0736-0770",
+        "eISSN: 2151-8009"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Subscribe Now",
+        "Access Online",
+        "Individual Access",
+        "Permissions"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "https://doi.org/10.5406/visuartsrese.46.1.000v",
+        "https://doi.org/10.5406/visuartsrese.46.1.0001",
+        "https://doi.org/10.5406/visuartsrese.46.1.0012",
+        "https://doi.org/10.5406/visuartsrese.46.1.0030",
+        "https://doi.org/10.5406/visuartsrese.46.1.0044",
+        "https://doi.org/10.5406/visuartsrese.46.1.0049",
+        "https://doi.org/10.5406/visuartsrese.46.1.0061",
+        "https://doi.org/10.5406/visuartsrese.46.1.0066",
+        "https://doi.org/10.5406/visuartsrese.46.1.0078",
+        "https://doi.org/10.5406/visuartsrese.46.1.0092",
+        "https://muse.jhu.edu/pub/34/article/897684",
+        "https://muse.jhu.edu/pub/34/article/897685",
+        "https://muse.jhu.edu/pub/34/article/897686",
+        "https://muse.jhu.edu/pub/34/article/897687",
+        "https://muse.jhu.edu/pub/34/article/897688",
+        "https://scholarlypublishingcollective.org/uip/var/article/50/1/38/387488/Mis-Archiving-the-Archive"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Individuals:",
+        "Print Only",
+        "Online Only",
+        "Print + Online",
+        "Institutions:",
+        "Print Only",
+        "Online Only",
+        "Print + Online"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Secondary Navigation Navigation",
+        "Site Navigation",
+        "We're Hiring",
+        "Recent News",
+        "Diversity and Inclusion",
+        "Connect with us",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation",
+        "Mobile Secondary Navigation Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Oxford American | Sunny Side Up",
+        "List List | Issue 2/25",
+        "Visual Art at Brown University"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Oxford American\n\n\nOxford American | Sunny Side Up",
+        "March 19, 2024\n\n  Sunny Side Up, Notes from inside the crate, by RaMell Ross\n\n\nRead Article",
+        "Open details for Oxford American | Sunny Side Up"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Facebook",
+        "X/Twitter",
+        "Instagram"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Main Sub Nav",
+        "Search form",
+        "social_media",
+        "Footer Menu 1",
+        "Footer Menu 2",
+        "Footer Meun 4",
+        "Footer 3",
+        "Footer Menu 5",
+        "Footer Submit Menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": true,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pulitzer Arts Foundation",
+        "University City Public Art Series",
+        "The Alberti Program",
+        "Lambert Arts & Culture Initiative",
+        "CityStudioSTL",
+        "Barnes-Jewish Hospital",
+        "NIH Community Engagement Alliance (CEAL)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Race + Ethnicity",
+        "Sustainability + Environmental Resiliency",
+        "Grief",
+        "Capitalism + Colonialism",
+        "Design Futures",
+        "Architectural History",
+        "Gender",
+        "Visual Culture",
+        "Medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Climate Change",
+        "Public Health",
+        "Urban Infrastructure + Ecologies",
+        "Collective Memory",
+        "Women, Sexuality, + Gender",
+        "The Nature of the Body",
+        "Social Justice",
+        "Economies of Urban Decay",
+        "Materiality"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Urban Segregation",
+        "The History of Illustration",
+        "Autonomous + Technological Futures",
+        "American Culture",
+        "Historic Preservation",
+        "Film & Media",
+        "The Cosmos",
+        "Entrepreneurship + Innovation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "The Whitney Biennial",
+        "Crystal Bridges Museum",
+        "MASS MoCA",
+        "Museum of Contemporary Photography",
+        "Philadelphia Museum of Art",
+        "Yerba Buena Center for the Arts",
+        "The New Museum",
+        "Venice Biennale"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Louis I. Kahn, Robert McCarter",
+        "On and By Frank Lloyd Wright, Robert McCarter",
+        "Lina Bo Bardi: Drawings, Zeuler Lima"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Taking Possession: The Politics of Memory in a St. Louis Town House, Heidi Kolk",
+        "The Black Experience in Design, co-authored and edited by Penina Acayo Laker",
+        "Stick Figures: Drawing as Human Practice, D.B. Dowd"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Infrastructural Optimism, Linda Samuels",
+        "Designing the Modern City: Urbanism Since 1850, Eric Mumford",
+        "Modern Architecture and the Lifeworld: Essays in Honor of Kenneth Frampton, Robert McCarter",
+        "Rebuilding the American City, Patty Heyda and Mason White"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Shooting at the Stars, John Hendrix",
+        "Drawing is Magic, John Hendrix",
+        "John Brown and His Fight for Freedom, John Hendrix",
+        "More Than Fluff, Madeline Valentine"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Faithful Spy: Dietrich Bonhoeffer and the Plot to Kill Hitler, John Hendrix",
+        "The Bystander Anthology, co-edited by Shreyas R Krishnan",
+        "Spartan Holiday, D.B. Dowd",
+        "Amazing Facts & Beyond (with Leon Beyond), Dan Zettwoch + Kevin Huizenga"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Black Experience in Design",
+        "Taking Possession: The Politics of Memory in a St. Louis Town Home",
+        "Infrastructural Optimism",
+        "Designing the Modern City: Urbanism Since 1850"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Main navigation",
+        "UChicago Grants & Funding",
+        "Arts, Science + Culture Initiative",
+        "-Volume I\n-Volume II\n-Volume III",
+        "the cclouds",
+        "Gray Center for Arts and Inquiry",
+        "Gray Center's\u00a0Mellon Collaborative Fellowship Program",
+        "Smart Museum of Art",
+        "Neubauer Collegium for Culture and Society",
+        "-My Kingdom for a Title\n-Kleine Welt",
+        "The Franke Institute for the Humanities",
+        "Doc Films",
+        "Doc Films Schedule",
+        "Special Collections Research Center at the Regenstein Library"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.21428571428571427
+      }
+    },
+    {
+      "items": [
+        "Field",
+        "Courses",
+        "Exhibitions",
+        "Calendar"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sculpting Science 2023",
+        "Sculpting Science 2021",
+        "Sculpting Science 2019"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "School of Art research and initiatives with students",
+        "Ellen Messinger & Mark Tebeau",
+        "Erika Lynne Hanson & Katie Parker",
+        "Erika Lynne Hanson & Katie Parker",
+        "Julie Anand, Garth Paine & Sabine Feisst",
+        "Gregory Sale & Julio C\u00e9sar Morales",
+        "Wanesia Misquadace",
+        "Dr. Cala Coats",
+        "Susan Beiner & Robby Roberson",
+        "Shawn Lawson",
+        "Recent stories on our research"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Ellen Messinger & Mark Tebeau",
+        "Click the button below to read the full article by Julia Taylor.",
+        "Photo courtesy of Julia Taylor.",
+        "Full article"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Programs and Degrees",
+        "Study Abroad",
+        "Undergraduate",
+        "Graduate",
+        "Admissions",
+        "Paying for Your Education",
+        "Master's"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Course #\n  \n\n\n  ARVA-GE 2299",
+        "Credits\n  \n\n                      2",
+        "Department\n  \n\n\n  Art and Art Professions"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Visual methodology related courses",
+        "Visual Art and Museum Education",
+        "Multimodality and Education",
+        "Media, Technology & Education"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Secondary Navigation Main",
+        "Section Menu\r\n        \nToggle Tertiary Menu",
+        "Visual Methods and Education",
+        "Visual Arts Research Methods",
+        "Spatial Methodologies",
+        "Qualitative Research Methods in Biobehavioral Sciences",
+        "Qualitative research and evaluation in international education",
+        "Visual explanation",
+        "Museum Ed Issues I",
+        "Processes and Structures in the Visual Arts",
+        "Current Issues and Practices, Art & Education",
+        "Varieties of visual experience: Museums and education",
+        "Museums as resource",
+        "Principles and practices in arts administration: Visual arts",
+        "Social and communicative aspects of the Internet",
+        "Video as art: An explanation",
+        "The history of communication",
+        "Video games in education",
+        "Possibility of virtual worlds",
+        "Educational video production I",
+        "Technology and culture",
+        "Equity, ethical, and social issues in educational technology",
+        "Culture, media, and education",
+        "Technology and school change",
+        "Television and the development of youth",
+        "Hypermedia and education",
+        "Introduction to mobile phone learning",
+        "Digital geographies and virtual spaces",
+        "Theory and programming of interactive media: Part I",
+        "Technology and the emergence of a global curriculum",
+        "Media and gender",
+        "Aesthetics of technology",
+        "Follow Us on Social Media"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 33,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.15151515151515152,
+        "length_consistency": true,
+        "pattern_ratio": 0.15151515151515152,
+        "keyword_ratio": 0.3939393939393939
+      }
+    },
+    {
+      "items": [
+        "BBSR 4002",
+        "A&HA 5005",
+        "A&HW 5199",
+        "BBSR 4001",
+        "ITSF 4092",
+        "HUDK 5030",
+        "A&HA 4090",
+        "A&HA 4087",
+        "A&HA 4086",
+        "A&HA 5085",
+        "A&HA 5804",
+        "A&HG 5174",
+        "MSTU 4200",
+        "MSTU 4102",
+        "MSTU 4016",
+        "MSTU 4039",
+        "MSTU 5000",
+        "MSTU 5191",
+        "MSTU 4028",
+        "MSTU 4005",
+        "MSTU 5002",
+        "MSTU 4001",
+        "MSTU 4024",
+        "MSTU 4036",
+        "MSTU 4040",
+        "MSTU 5004",
+        "MSTU 5003",
+        "MSTU 5555",
+        "A&H 4065",
+        "A&H 4089"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "based multimedia in a hands",
+        "on manner. Examples and mini",
+        "tutorials abound. Theory and design are integrated to ensure that students emerge as authors of well",
+        "designed, educationally",
+        "sound media."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Secondary Menu",
+        "Main navigation",
+        "Sidebar Navigation",
+        "Department of Art, Art History & Visual Studies",
+        "Undergraduate",
+        "Graduate",
+        "Stay Connected"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Division of Undergraduate Studies",
+        "University of Missouri Office of Undergraduate Research",
+        "Columbia Art League",
+        "Sager Reeves Gallery",
+        "University of Missouri Museum of Art and Archaeology",
+        "University of Missouri Libraries"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Chair: Linda Blockus, Undergraduate Research",
+        "Lesleighan Cravens, Plant Sciences",
+        "Katina Bitsicas, Digital Storytelling/Film Studies",
+        "Lee Ann Garrison, Art",
+        "Andrea Heiss, Journalism",
+        "Deborah Huelsbergen, Art",
+        "Sarah Humfeld, Undergraduate Research",
+        "Heather Isherwood, Journalism",
+        "Joe Johnson, Photography",
+        "Nicole Johnston, Textile and Apparel Management",
+        "Desire\u00e9 Moore, Digital Storytelling/Film Studies",
+        "Christian Rozier, Digital Storytelling/Film Studies",
+        "Debora Verniz, Architectural Studies",
+        "Marc Vital, Theatre",
+        "Ric Wilson, Graphic Design"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.13333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Grand Prize: $2,000",
+        "Runner-Up: $1,000",
+        "Awards of Merit (2): $500"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Grand Prize: $2,000",
+        "Runner-Up: $1,000",
+        "Awards of Merit (2): $500"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ragtag Cinema Video Award",
+        "Columbia Art League Award",
+        "Jonathan Asher Award",
+        "MU Libraries Award"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "February 19 by 11 p.m.",
+        "March 7: Students Notified of Acceptance",
+        "TBD: Students Consult with VADS Curator regarding gallery display",
+        "April 2-3: Online Jurying via Zoom",
+        "April 5: Projects installed in Columbia Art League gallery",
+        "April 7: Screening of VADS films and videos",
+        "April 7: Reception for the 2025 VADS Exhibition (open to all)",
+        "April 14: Awards announced",
+        "April 18-19: Projects de-installed"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Photography:\u00a0Includes photojournalism, art photography and digital storytelling",
+        "Art:\u00a0Includes painting, drawing, sculpture, mixed media, etc. (not photography)",
+        "Architectural Studies",
+        "Apparel Design: Fashion and clothing design",
+        "Theatre:\u00a0Includes set, costume and lighting design",
+        "Strategic Communication and Graphic Design"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "MU Libraries \u2013 Jae Cowen, \u201cOur Amazing Planet\u201d (Graphic Design)",
+        "Museum of Art & Archaeology \u2013 Tyler Thomas, \u201cMANifest Destiny\u201d (Photography)",
+        "Columbia Art League \u2013 Hannah Gundlach, \u201cAncestry Revived\u201d (Art)",
+        "Sager Reeves Gallery \u2013 Avery Dixon, \u201cThe Hardest Part\u201d (Art)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Grand Prize ($2,000) \u2013 Jae Cowan, \u201cOur Amazing Planet\u201d (Graphic Design)",
+        "Runner-Up ($1,000) \u2013 Christian Zarrick, \u201cGas City Night Crime\u201d (Video)",
+        "Award of Merit ($500) \u2013 Laila Al-kharabsheh, \u201cHawthorn Architectural University\u201d (Architecture)",
+        "Award of Merit ($500) \u2013 Will Funderburg, \u201cGinger Rogers x 1970 Wearable Decor\u201d (Apparel)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Grand Prize ($2,000) \u2013 Reese Betts, \u201cAll that Remains (and That Which Does Not)\u201d (Open)",
+        "Runner Up ($1,000) \u2013 Avery Dixon, \u201cThe Hardest Part\u201d (Art)",
+        "Award of Merit ($500) -Esra Jackson, \u201cThe Opacity of Grief\u201d (Art)",
+        "Award of Merit ($500) \u2013 Sofia Ortega, \u201cSigo Rezando\u201d (Art)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Visual Art & Design Showcase (VADS)",
+        "Exhibition Awards",
+        "Applied Design Awards",
+        "Artistic Expression Awards",
+        "People\u2019s Choice Award",
+        "Faculty Mentor Awards"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "MU Libraries \u2013 Exhibition Award",
+        "Jack Rintoul \u2013 \u201cLove & Suspense\u201d, graphic design and strategic communication",
+        "Hannah Gundlach \u2013 \u201cSitting Ducks\u201d, art",
+        "Lilyann Hames \u2013 \u201cWear Me Out\u201d, photography",
+        "Brooke McKee \u2013 \u201cTie the Bow\u201d, textile and apparel management",
+        "Sydney Flowers \u2013 \u201cColumbia Performing Art Academy\u201d, architectural studies & interior design",
+        "Danielle Hardy \u2013 \u201cGolden Air\u201d, video",
+        "Kylee Isom \u2013 \u201cMAKE ME FEEL GOOD\u201d, photography",
+        "Mara Fenwick \u2013 \u201cMagic Bubble\u201d, textile and apparel management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Svetlana Wunnenberg for \u2018M(a)notinist\u2018, a video",
+        "Kailyn Hill for \u2018see us\u2018, art",
+        "Marc Chauvin for \u2018Historical Dissonance\u2018, photography",
+        "Danielle Hardy for \u2018Facets of the Black Experience\u2018, photography",
+        "Kylee Isom for \u2018WHERE DRAPES MEET CARPET\u2018, photography",
+        "Katie O\u2019Russa for \u2018Don\u2019t Erase Me\u2018, strategic communication & graphic design",
+        "Svetlana Wunnenberg for \u2018M(a)notinist\u2018, a video",
+        "Kailyn Hill for \u2018see us\u2018, art",
+        "Moy Zhong for \u2018ABC? (American, But Chinese)\u2018, video",
+        "Kylee Isom for \u2018WHERE DRAPES MEET CARPET\u2019, photographyDaniel Roman for \u2018Two Step\u2018, video"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Jessica Tifase for \u2018The Harvest\u2018 \u2013 mentor Joe Johnson",
+        "Sofia Voss for\u00a0\u2018I Think of You Often\u2018 \u2013 mentor Kamau Bilal",
+        "Amy Frisella for \u2018Ellis Library Addition\u2018 \u2013 mentor Robert Walsh",
+        "Kyle Yerby for \u2018personal Protective\u2018 \u2013 mentor Catherine Armbrust",
+        "Lauren Fyle for \u2018Still Lives of My Room\u2018 \u2013 mentor Mark Langeneckert",
+        "Amberlee Gandy & Grace Anderson for \u2018Funeral for One\u2018 \u2013 mentor Lesleighan Cravens",
+        "Maddy Gomez for \u2018Mariposa\u2019 \u2013 mentor Nick Potter",
+        "Jessica Tifase for \u2018The Harvest\u2019 \u2013 mentor Joe Johnson",
+        "Eliza Finck for \u2018I Don\u2019t Know How, But They Found Me\u2019 \u2013 mentor Anna Wehrwein"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Robin Haithcoat and Madessyn Zahn for \u2018Reflections\u2019, a collaborative installation piece",
+        "Roxanne Wan for \u2018Cigarette in Love\u2019, a film",
+        "Amanda Lee and Molly Wainscott for \u2018Fugue\u2019, a dress design",
+        "Tyree Taylor for \u2018False Profits\u2019, a series of paintings",
+        "Tyree Taylor for \u2018False Profits\u2019",
+        "Andy Kreiter for \u2018OTC Aquatics\u2019, an architectural design project",
+        "Jasmyne Tyler for \u2018A to Z Breakfast Cards\u2019, a graphic design project",
+        "Robin Haithcoat and Madessyn Zahn for \u2018Reflections\u2019, a collaborative installation piece",
+        "Jessica Tifase for \u2018Caged Birds\u2019, a photograph series",
+        "Ryan Groom for \u2018Handlebars\u2019, a videoJoe Dino for \u2018Reactions of Reactions\u2019, a mixed media painting"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Jade Thompson for \u2018Who the hell can be me?\u2019, painting",
+        "Marcelese Cooper for \u2018Cauchemar a\u2019Pied\u2019, a video",
+        "Summer Richie for \u2018Boys will be Boys\u2019, mixed media",
+        "Rachel Choma for \u2018God does not play dice\u2019, mixed media",
+        "Hannah Williams for \u2018There are no atheists in foxholes\u2019, photography",
+        "Sabrina Morris for \u2018Blooming Trash\u2019, floral design project",
+        "Jingyi Wu for \u2018The Blue Peony Collection\u2019, a collection of apparel design",
+        "Coulton Becker for \u2018Fairview Community Church\u2019, architectural design",
+        "Marcelese Cooper for \u2018Cauchemar a\u2019Pied\u2019, a video",
+        "Madessyn Zahn for \u2018The Sweetheart\u2019, photography"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3
+      }
+    },
+    {
+      "items": [
+        "Terrance Purdy, Jr. for \u2018R\u00ebx\u2019, Photography",
+        "Taylor Bailey,\u00a0Unreachable, Video",
+        "Noor Khreis,\u00a0Noor\u2019s Mosaics, Digital Prints",
+        "Robin Haithcoat,\u00a0Simulacrum, Photography",
+        "Lindsay Perkins,\u00a0#RealLove, Photography",
+        "Maggie Noble,\u00a0The Apprehension Engine, Animation",
+        "Coulton Becker,\u00a0Child Development Laboratory, Architectural Design",
+        "Olivia Eastman,\u00a0Cracking A World, Apparel DesignNoor Khreis,\u00a0Noor\u2019s Mosaics, Digital Prints",
+        "Nathan Wright,\u00a0Maybe I Wasn\u2019t There, Video",
+        "Lindsay Perkins,\u00a0#RealLove, Photography",
+        "Marcelese Cooper,\u00a0Twenty-Something, PhotographyMeiying Wu,\u00a0Dance In The Water, Video"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Edward Henuber,\u00a0Piles, Digital Prints",
+        "Nathan Wright,\u00a0Death Deferred, Video",
+        "Bill Chlanda,\u00a0A Process of Healing, Photography",
+        "Jessie Donovan,\u00a0Vulnerable and Variable, Printmaking",
+        "Kailey Brooks,\u00a0Persistence, Floral Design",
+        "Catlin Miller,\u00a0Honey Interlude, Apparel Design",
+        "Carina Jimenez,\u00a0Imposition, Paintings"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "\u201cPaper Hearts\u201d, graphic design & strategic communicationDarreon Carbin",
+        "\u201cWhen Day Breaks and Night Falls\u201d, artReese Betts",
+        "\u201cDigital Naivet\u00e9\u201d, videoSummer Parker",
+        "\u201cBook of Fears\u201d, artCaycee Roth",
+        "Ass Greeting Cards\u201d, graphic design & strategic communicationAlonzo Williams",
+        "\u201cRefocus\u201d, video"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Mentee, Danielle Hardy for \u201cGolden Air\u201dKerri McBee",
+        "Black",
+        "Mentee, Brooke McKee for \u201cTie the Bow\u201d"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Art Institute of Chicago",
+        "The Flaxman Library",
+        "The Joan Flasch Artists\u2019 Book Collection",
+        "Ryerson and Burnham Libraries",
+        "Department of Prints and Drawings Study Room",
+        "The Video Data Bank",
+        "Gallery Spaces",
+        "Visiting Artists Program",
+        "Gene Siskel Film Center",
+        "Fashion Resource Center"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3
+      }
+    },
+    {
+      "items": [
+        "Final Undergraduate Application Deadline: April 15",
+        "File Your FAFSA",
+        "Professor Karen Morris Featured in Chicago Reader\u2019s Pride Issue",
+        "Joseph Grigely\u2019s MASS MoCA Exhibition Spotlighted by The New Yorker",
+        "Professor Romi Crawford\u2019s Latest Collaboration Profiled by Chicago Reader",
+        "Learning to Teach LGBTQ+ History",
+        "The New York Times Interviews Joseph Grigely on His Pandemic Practice"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Department of Visual and Critical Studies",
+        "MacLean Center",
+        "112 S. Michigan Ave., suite 601",
+        "Chicago, IL 60603",
+        "Phone: 312.345.3685",
+        "saic-lavcs@saic.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chair\nShawn Smith ssmith8@saic.edu",
+        "Graduate Program Director\nChristina Gomez cgomez3@saic.edu",
+        "BAVCS Director\nKaren Morris kmorris@saic.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Department News",
+        "History of Art 2025 Senior Honors Thesis Symposium",
+        "Pulse of Art History with David Getsy 4/8/2025",
+        "Alumna Elizabeth Giorgis, PhD \u201910, passed away in Sharjah, UAE, on March 16, 2025.",
+        "Hui Yuan, BA '24, Accepted into Harvard Law",
+        "Priscila Dantas de Moraes Accepted at American School of Classical Studies at Athens",
+        "History of art staff member publishes research on face pots",
+        "History of Art Senior Honors Thesis Symposium 3/21/2025",
+        "Visual Culture Colloquium with Ricardo Padr\u00f3n 3/11/25",
+        "Illegitimate Heirs: Queer Artists\u2019 Claims on the Modernist Canon",
+        "Artist\u2019s Visit: Wang Tiande",
+        "Calligraphy Demonstration with Wang Tiande",
+        "A Conversation on Suzi Ferrer",
+        "Suzi Ferrer Exhibition Open House",
+        "Alumni Spotlight",
+        "Derek Murray, PhD \u201905, appointed editor of Art Journal",
+        "Natasha Bissonauth PhD \u201917 joins Emily Carr University as Assistant Professor",
+        "Yasufumi Nakamori, PhD '11, appointed Director of Asia Society Museum",
+        "Land Acknowledgement"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.21052631578947367,
+        "length_consistency": true,
+        "pattern_ratio": 0.05263157894736842,
+        "keyword_ratio": 0.05263157894736842
+      }
+    },
+    {
+      "items": [
+        "Faculty Profiles",
+        "Undergraduate Program",
+        "Graduate Program",
+        "Course Offerings"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Apr\n            \n\n              08",
+        "Tuesday",
+        "04:45 AM"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Apr\n            \n\n              10",
+        "Thursday",
+        "04:00 PM"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Apr\n            \n\n              11",
+        "Friday",
+        "02:30 PM"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Apr\n            \n\n              17",
+        "Thursday",
+        "05:15 PM"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Apr\n            \n\n              18",
+        "Friday",
+        "05:00 PM"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jovencio de la Paz, Assistant Professor of Art",
+        "School of Architecture & Environment",
+        "School of Art + Design",
+        "School of Planning, Public Policy and Management",
+        "Department of the History of Art and Architecture",
+        "College of Design"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Studio Learning",
+        "Workspaces & Tools",
+        "Courses"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "FacebookDepartment of Art",
+        "InstagramMFA in Art Instagram",
+        "InstagramDepartment of Art",
+        "InstagramCenter for Art Research Instagram"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Ester Parteg\u00e0s: Building Blocks",
+        "Mar 31",
+        "510 Oak"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Erin Espelie: \u201cBlue Velvet & Bacteria\u201d",
+        "Apr 3",
+        "Lawrence Hall"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sarah Nance: \"for evaporated seas\"",
+        "Apr 14",
+        "Lawrence Hall"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sarah Nance: \u201cMirages and Archived Landscapes\u201d",
+        "Apr 17",
+        "Lawrence Hall"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Laverne Krause Gallery Reception- Sarah Nance: \"for evaporated seas\"",
+        "Apr 17",
+        "Lawrence Hall"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "UNIVERSITY HOME",
+        "Archives & Special Collections",
+        "Art Collection",
+        "Center for English Language Studies",
+        "Libraries",
+        "University Learning Center"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Design",
+        "Design History",
+        "Design Topics",
+        "Design Management",
+        "Material Culture",
+        "Parsons Journals",
+        "Visual Culture",
+        "Open Access Journals"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Reference Sources",
+        "Books",
+        "Ebooks",
+        "Articles (Interdisciplinary)",
+        "Articles (Art and Design)"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Reference Sources",
+        "Books\nSearch the library catalog for books in New School and consortium collections.",
+        "Ebooks",
+        "Articles (Interdisciplinary)",
+        "Articles (Art and Design)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "You are here:",
+        "Why Study Visual Arts?",
+        "Courses of Study",
+        "Meet Your Department Chair",
+        "News and Stories",
+        "Social",
+        "Footer",
+        "Social",
+        "Site Menu",
+        "Secondary Menu",
+        "Main Menu",
+        "Secondary Menu",
+        "Info For Menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.15384615384615385
+      }
+    },
+    {
+      "items": [
+        "Art History: Major, Minor",
+        "Studio Art: Major, Minor",
+        "Architectural Studies: Major, Minor",
+        "Art Like Me: An Artist's Idea to Make Museums More Inclusive",
+        "All Roads Lead to Rome",
+        "How Architecture Impacts Everyone, Every Day",
+        "Student-Generated Urban Studies Minor Debuts at Holy Cross",
+        "Holy Cross Visual Arts Professor Receives Fred B. Kniffen Book Award",
+        "Baroque Art Meets the 21st Century",
+        "Cantor Art Gallery to Present \u201cGlobal Encounters in Early America\u201d"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Visual methodology related courses",
+        "Visual Art and Museum Education",
+        "Multimodality and Education",
+        "Media, Technology & Education"
+      ],
+      "output_list_from_llm": [
+        "Visual Art and Museum Education"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Visual art and museum education"
+  ],
+  "error": null
+}

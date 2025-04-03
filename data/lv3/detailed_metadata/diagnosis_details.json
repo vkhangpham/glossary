@@ -1,0 +1,2022 @@
+{
+  "level2_term": "diagnosis",
+  "all_urls": [
+    "https://academic.oup.com/jalm/pages/call-for-papers",
+    "https://dx2022.sciencesconf.org/page/call_for_papers",
+    "https://alz-journals.onlinelibrary.wiley.com/hub/journal/23528729/homepage/call-for-papers/ai-novel-research-directions",
+    "https://conf.researchr.org/home/dx-2024",
+    "https://www.nationalacademies.org/our-work/advancing-diagnostic-excellence-a-workshop-series",
+    "https://www.jmdjournal.org/",
+    "https://www.mdpi.com/journal/diagnostics/special_issues",
+    "https://obgyn.onlinelibrary.wiley.com/hub/journal/10970223/call-for-papers",
+    "https://www.embs.org/jbhi/special-issues/",
+    "https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging/call-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Important Dates",
+        "Policy on Multiple Submissions",
+        "Paper Length and Format",
+        "Electronic Submission",
+        "Presentation of Accepted Papers",
+        "Review Process",
+        "DX-2022 Information",
+        "Further Questions"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "2022 is disseminated through the DX",
+        "2022\u00a0website, the\u00a0DX",
+        "2022 mailing list\u00a0and other printed and electronic media. The information published on the DX",
+        "2022 mailing list."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Monitoring, detection, diagnosis, and mitigation of faults, unexpected issues, and change",
+        "Formal theories and symbolic, sub-symbolic, as well as hybrid approaches for diagnosis",
+        "Concept papers on the theory of design and operational resilience",
+        "Designing, developing, and operationalizing resilient systems",
+        "Hard- and software instrumentation, as well as dependable data acquisition and probing",
+        "Diagnosis in resilient, intelligent, and autonomous systems",
+        "Diagnosis in a distributed, hierarchical, system-of-systems, or multi-agent context"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Carlos Alonso-Gonz\u00e1lezUniversity of Valladolid",
+        "Elodie ChantheryLAAS-CNRS",
+        "Alessandro CimattiFondazione Bruno KesslerItaly",
+        "Alexander DiedrichHelmut-Schmidt-Universit\u00e4t / Universit\u00e4t der Bundeswehr Hamburg",
+        "Gerhard FriedrichAlpen-Adria-Universitaet Klagenfurt",
+        "Daniel JungLink\u00f6ping UniversitySweden",
+        "Meir KalechBen Gurion University of the Negev, IsraelIsrael",
+        "Bruno LimaFaculty of Engineering of the University of Porto & University of Maia & LIACCPortugal",
+        "Angelo MontanariUniversity of UdineItaly",
+        "Oliver NiggemannHelmut-Schmidt-Universit\u00e4t / Universit\u00e4t der Bundeswehr Hamburg",
+        "Yannick Pencol\u00e9CNRS-LAAS, Universit\u00e9 de Toulouse",
+        "Ingo PillInstitute of Software Technology, Graz University of Technology\tAustria",
+        "Gregory ProvanUniversity College Cork",
+        "Belarmino PulidoUniversidad de ValladolidSpain",
+        "Pauline RibotLAAS-CNRS",
+        "Patrick RodlerAlpen-Adria Universit\u00e4t Klagenfurt",
+        "Indranil RoychoudhurySchlumberger",
+        "Martin SachenbacherUniversity of L\u00fcbeckGermany",
+        "Anika SchumannIBM Research - Zurich",
+        "Neal SnookeAberystwyth University",
+        "Gerald Steinbauer-WagnerGraz University of Technology",
+        "Peter StrussTechnical University of Munich",
+        "Markus StumptnerUniversity of South Australia",
+        "Anna SztyberWarsaw University of Technology",
+        "Stefano TonettaFondazione Bruno Kessler, Italy",
+        "Gianluca TortaDipartimento di Informatica - Universit\u00e0 di Torino, Italy",
+        "Louise Trav\u00e9-Massuy\u00e8sCNRSFrance",
+        "Franz WotawaGraz University of TechnologyAustria",
+        "Marina ZanellaUniversit\u00e0 di Brescia",
+        "Johan de KleerUnited States"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.03333333333333333
+      }
+    },
+    {
+      "items": [
+        "adaptive control, intelligent decision",
+        "making, explanation and recommendation systems, (re",
+        ")configuration, (re",
+        ")planning, repair, resilient system design and operational resilience. Our focus is application",
+        "or resilient system",
+        "related topic, including:",
+        ")planning, (re",
+        ")configuration, fault tolerance, diagnosability analysis, and system design.",
+        ")planning, system (re",
+        "systems context)",
+        "bounded reasoning, requirements and restrictions related to real",
+        "time environments, and pre",
+        "compilation/pre",
+        "processing techniques.",
+        "based systems to support monitoring, fault diagnosis, resilient design, and operational resilience.",
+        "driven and/or analytic AI",
+        "2024) relevant journal or major conference (A or A"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.058823529411764705,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.17647058823529413
+      }
+    },
+    {
+      "items": [
+        "adaptive control, intelligent decision",
+        "making, explanation and recommendation systems, (re",
+        ")configuration, (re",
+        ")planning, repair, resilient system design and operational resilience. Our focus is application"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Vol.\u00a015\u00a0(2025)",
+        "Vol.\u00a014\u00a0(2024)",
+        "Vol.\u00a013\u00a0(2023)",
+        "Vol.\u00a012\u00a0(2022)",
+        "Vol.\u00a011\u00a0(2021)",
+        "Vol.\u00a010\u00a0(2020)",
+        "Vol.\u00a09\u00a0(2019)",
+        "Vol.\u00a08\u00a0(2018)",
+        "Vol.\u00a07\u00a0(2017)",
+        "Vol.\u00a06\u00a0(2016)",
+        "Vol.\u00a05\u00a0(2015)",
+        "Vol.\u00a04\u00a0(2014)",
+        "Vol.\u00a03\u00a0(2013)",
+        "Vol.\u00a02\u00a0(2012)",
+        "Vol.\u00a01\u00a0(2011)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Aortic Aneurysm Disease: Diagnosis and Management",
+        "edited by\n    Adam W. Akerman and John S Ikonomidis",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Clinical Characteristics of Headache and Diagnosis of Primary and Secondary Headache Disorders",
+        "edited by\n    Elena R. Lebedeva",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advancements in Maternal\u2013Fetal Medicine",
+        "edited by\n    Elena Bernad",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advances in the Diagnosis of Nervous System Diseases\u20142nd Edition",
+        "edited by\n    Vasileios T. Papaliagkas",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Endoscopy and Diagnostic Tools in Hepatobiliary and Pancreatic Diseases",
+        "edited by\n    Stefano Francesco Crin\u00f2",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Insights into Perinatal Medicine and Fetal Medicine",
+        "edited by\n    Paola Quaresima and Ilaria Fantasia",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Recent Advances in Bone and Joint Imaging\u20142nd Edition",
+        "edited by\n    Yuichi Yoshii and Chien-Kuo Wang",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advanced Diagnosis and Treatment Strategies for Bladder Cancer",
+        "edited by\n    Mihai Dorin Vartolomei and Beat Roth",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advances in Oral Diseases Diagnosis and Management: 2nd Edition",
+        "edited by\n    Dimitris Tatsis and Konstantinos Paraskevopoulos",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Urinary Tract Infections: Diagnosis and Management",
+        "edited by\n    Paul Froom",
+        "Submission Open",
+        "(This special issue belongs to the Section Diagnostic Microbiology and Infectious Disease)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Vitamin D as a Biomarker in the Standardization Era: A Clinical Point of View",
+        "edited by\n    Giulia Bivona",
+        "Submission Open",
+        "Keywords: vitamin D; 25(OH)D; biomarker; immune response; standardization",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Diagnosis and Precision in Breast Cancer",
+        "edited by\n    Marko Spasic",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Diagnosis and Management of Reproductive Disorders",
+        "edited by\n    Bogdan Doroftei, Radu Maftei and Ovidiu Dumitru Ilie",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Bogdan Doroftei,",
+        "Radu Maftei and",
+        "Ovidiu Dumitru Ilie"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Low Back Pain: Diagnosis and Management",
+        "edited by\n    Edward Saulicz",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Diagnosis and Management of Liver Diseases and Inflammatory Bowel Diseases",
+        "edited by\n    Milica Stojkovi\u0107-Lalo\u0161evi\u0107 and Sanja Draga\u0161evi\u0107",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advances in Endoscopy",
+        "edited by\n    Emanuele Sinagra and Francesco Vito Mandarino",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "New Advances in Thoracic Surgery: Clinical Diagnosis, Treatment, and Prognosis",
+        "edited by\n    Stefano Elia",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Imaging Diagnosis in Abdomen, 2nd Edition",
+        "edited by\n    Piero Boraschi and Francescamaria Donati",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Diagnosis and Management of Chronic Obstructive Pulmonary Disease (COPD)",
+        "edited by\n    Padukudru Anand Mahesh and Muhammad Adrish",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Novel Biomarkers for Alzheimer\u2019s Disease and Other Neurodegenerative Diseases",
+        "edited by\n    Carlo Gabelli and Mario Plebani",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "AI and Digital Health for Disease Diagnosis and Monitoring",
+        "edited by\n    Mohammad Ali Moni, AKM Azad and Hussain Mohammed Dipu Kabir",
+        "Submission Open"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Mohammad Ali Moni,",
+        "AKM Azad and",
+        "Hussain Mohammed Dipu Kabir"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Clinical Diagnosis of Otorhinolaryngology",
+        "edited by\n    Nina Gale, Primo\u017e Strojan and Robert \u0160ifrer",
+        "Submission Open",
+        "Keywords: head and neck cancer; otorhinolaryngology; symptoms and clinical signs",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Nina Gale,",
+        "Primo\u017e Strojan and",
+        "Robert \u0160ifrer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Diagnosis and Management of Arrhythmias",
+        "edited by\n    Laura Vitali-Serdoz, Martina Nesti and Dirk Bastian",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Laura Vitali-Serdoz,",
+        "Martina Nesti and",
+        "Dirk Bastian"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Imaging for the Diagnosis of Obstetric and Gynecological Diseases",
+        "edited by\n    Nicolae Gica",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advances in the Diagnosis of Eye Diseases",
+        "edited by\n    Ivan Tanev",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advanced Diagnosis and Management of Chronic Musculoskeletal Disorders",
+        "edited by\n    Jin Hyuck Lee",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Clinical Diagnosis and Treatment of Chronic Pain, Second Edition",
+        "edited by\n    Ferran Cuenca-Mart\u00ednez",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Lung Involvement in Connective Tissue Disease: Diagnosis and Management",
+        "edited by\n    Laura Gro\u0219eanu",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "The Future of Diagnostics: Exploring the Role of Artificial Intelligence in Medicine",
+        "edited by\n    Shang-Ming Zhou, Yi Guo, Neil Vaughan and Jiaxiang Zhang",
+        "Submission Open",
+        "Keywords: diagnostics; artificial intelligence; medicine; healthcare; future"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Shang-Ming Zhou,",
+        "Yi Guo,",
+        "Neil Vaughan and",
+        "Jiaxiang Zhang"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Application of Magnetic Resonance Imaging in Neurology",
+        "edited by\n    Agnieszka Sabisz",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Skin and Cutaneous Adnexal Tumors: Diagnosis and Management\u20142nd Edition",
+        "edited by\n    Andreas Manios and Dimitra Koumaki",
+        "Submission Open",
+        "Keywords: cutaneous adnexal tumors; follicular and sebaceous tumors; sweat gland tumors",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Current Issues on Kidney Diseases Diagnosis and Management 2025",
+        "edited by\n    Luis Yu",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Clinical Anatomy and Diagnosis of Peripheral Nervous System",
+        "edited by\n    Alexandra Diana Vrapciu",
+        "Submission Open",
+        "Keywords: anatomy; peripheral nervous system; imaging",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Recent Advances in Clinical Laboratory Immunology",
+        "edited by\n    Jun Zhang",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Laboratory Medicine)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Novel Methods and Devices for Monitoring and Diagnosing in Critical Care",
+        "edited by\n    Zhongheng Zhang",
+        "Submission Open",
+        "(This special issue belongs to the Section Point-of-Care Diagnostics and Devices)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Signatures Underlying Inflammation in the Pathogenesis and Evolution of Chronic Diseases",
+        "edited by\n    Liliana-Georgeta Foia, Maria Alexandra M\u00e2r\u021bu and Minerva Codruta Badescu",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Liliana-Georgeta Foia,",
+        "Maria Alexandra M\u00e2r\u021bu and",
+        "Minerva Codruta Badescu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Advances in Sarcopenia: Predictive Biomarkers, Clinical Characteristics, and Therapeutic Strategies",
+        "edited by\n    Jong Geol Do",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Cardiovascular Imaging",
+        "edited by\n    Lars C. Gormsen and Riemer H.J.A. Slart",
+        "Submission Open",
+        "Keywords: cardiovascular imaging; noninvasive imaging; diagnosis; prognosis; marker",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Gastrointestinal Motility Disorders: Diagnosis and Management",
+        "edited by\n    Mark Noar",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "The Rise of Diagnostics in the Treatment of Chronic Wounds: 3rd Edition",
+        "edited by\n    Thomas E. Serena",
+        "Submission Open",
+        "Keywords: chronic wound; imaging\u00a0 ; biomarker; point-of-care techniques",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Pathology and Diagnosis of Ovarian Cancer",
+        "edited by\n    Antoni Llueca, Gemma Mancebo and Antonio Gil-Moreno",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Antoni Llueca,",
+        "Gemma Mancebo and",
+        "Antonio Gil-Moreno"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Advances in the Diagnosis and Management of Pediatric Autoimmune Diseases\u20142nd Edition",
+        "edited by\n    Dimitri Poddighe and Micol Romano",
+        "Submission Open",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence in the Diagnostics of Dental Diseases, 2nd Edition",
+        "edited by\n    Hakan Turkkahraman",
+        "Submission Open"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "New Trends in the Diagnosis of Gynecological and Obstetric Diseases",
+        "edited by\n    Razvan Socolov and Laurentiu Pirtea",
+        "Submission Open",
+        "Keywords: obstetrics and gynecology diagnostics; screening; artificial intelligence; test accuracy",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "edited by\n    Jacopo M. Legramante",
+        "Submission Open",
+        "Keywords: critical care; emergency medicine; diagnostics",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "edited by\n    Mohamed Abuzaid",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Microbial Infections and Critical Care Medicine: Diagnosis and Management",
+        "edited by\n    Eleni K. Mouloudi, Serafeim Chrysovalantis Kotoulas and Eleni Massa",
+        "Submission Open",
+        "(This special issue belongs to the Section Diagnostic Microbiology and Infectious Disease)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Eleni K. Mouloudi,",
+        "Serafeim Chrysovalantis Kotoulas and",
+        "Eleni Massa"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Radiomics in Oncology",
+        "edited by\n    Damiano Caruso",
+        "Submission Open",
+        "(This special issue belongs to the Section Medical Imaging and Theranostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "New Insights into Emergency Medicine",
+        "edited by\n    Evan Avraham Alpert",
+        "Submission Open",
+        "Keywords: emergency medicine; trauma; sepsis; acute coronary syndrome; mortality",
+        "(This special issue belongs to the Section Pathology and Molecular Diagnostics)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "New Diagnostic Technologies in Urological Care",
+        "edited by\n    Alberto Piana, Enrico Checcucci and Michele Di Dio",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Alberto Piana,",
+        "Enrico Checcucci and",
+        "Michele Di Dio"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IEEE.org\nIEEE Xplore Digital Library\nIEEE Standards\nIEEE Spectrum\nMore Sites",
+        "IEEE.org",
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "embs.org\nIEEE.org",
+        "embs.org",
+        "IEEE.org"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "generation biomedical sensing intelligence, invites cutting",
+        "edge research on data",
+        "and label",
+        "efficient learning methods",
+        "such as self",
+        "supervised, semi",
+        "supervised, and few",
+        "shot learning, as well as efficient training/deployment paradigms for large foundation models"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "generation",
+        "advanced (5G",
+        "A) and sixth",
+        "generation (6G) multi",
+        "R) has recently adopted ISAC among the key usage scenarios for IMT"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "modal agents and large foundation models represents a transformative frontier in healthcare. Multi",
+        "modal agents are designed to process and integrate data from diverse sources",
+        "such as MRI, CT scans, PET images, electronic health records, and even genomic data",
+        "to provide a comprehensive understanding of patient health. Large foundation models, pre",
+        "modal agents with large foundation models lies in their complementary strengths. Multi"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Patient-centered clinical image analysis with image and non-image data analysis",
+        "Domain adaptation techniques for transferring models across different clinical domains",
+        "Deep learning for pathological image analysis using large datasets",
+        "Multi-omics and texture analysis using digital pathology",
+        "Personalized medicine using digital pathology data",
+        "Big Data analytics for image-guided therapies",
+        "Explainable AI techniques for clinical decision-making using foundation models",
+        "Privacy-preserving techniques for using foundation models in clinical image analysis",
+        "Quality assurance and quality control in digital pathology studies",
+        "Ethical AI development in computational pathology",
+        "Usability and co-design study in to enhance computational pathology pipeline"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.45454545454545453
+      }
+    },
+    {
+      "items": [
+        "Developing models for clinical outcomes using large-scale digital pathology datasets",
+        "Efficient fine-tuning methods for clinical applications using foundation models",
+        "Evaluating and benchmarking foundation models for digital pathology image analysis applications",
+        "Developing foundation models for real-time image analysis in clinical settings",
+        "Adapting foundation models for rare disease diagnosis and treatment planning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Novel radionuclides in theranostics",
+        "Emerging imaging technologies in theranostics",
+        "Novel theranostics schemas under development",
+        "Imaging biomarkers for tumor characterization",
+        "Methods to identify therapeutic or diagnostic agents",
+        "Prediction of tumor grade and metastatic potential",
+        "Pre-treatment and post-treatment dosimetry in theranostics",
+        "Theranostics methods for cancer prognosis and monitoring",
+        "Multi-modal data modeling methods using imaging, lab data, and health record data",
+        "Theranostics practical aspects in nuclear medicine clinic"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Current Issue",
+        "All Issues",
+        "Issues in Progress"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "JUMP TO SECTION",
+        "Computational Pathology",
+        "Theranostics",
+        "Advances in Breast Imaging",
+        "Medical Image Perception and Observer Performance",
+        "List of Previously Published Special Sections"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Baowei Fei, PhD\n\nUT Dallas and UT Southwestern, USA Email: bfei@utdallas.edu",
+        "Metin Nafi Gurcan, PhD\n\nWake Forest University School of Medicine, USA Email: mgurcan@wakehealth.edu",
+        "Yuankai Huo, PhD\n\nVanderbilt University, USA Email: yuankai.huo@vanderbilt.edu",
+        "Pinaki Sarder, PhD\n\nUniversity of Florida, USA Email: pinaki.sarder@ufl.edu",
+        "Aaron Ward, PhD\n\nWestern University, Canada Email: aaron.ward@uwo.ca"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Computational pathology algorithms",
+        "Clinical digital pathology image analysis with large-scale deep learning models",
+        "Computational Pathology with advanced computational infrastructures",
+        "Publication is currently in progress in Volume 12 Issue 6."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Darko Pucar, PhD\n\nUS National Institutes of Health",
+        "Heather M. Whitney, PhD\n\nUniversity of Chicago\u00a0 Email: hwhitney@uchicago.edu",
+        "Yan Zhuang, PhD\n\nUS National Institutes of Health Email: yan.zhuang2@nih.gov"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Maryellen Giger, PhD\n\nUniversity of Chicago Email: m-giger@uchicago.edu",
+        "Susan M. Astley, PhD\n\nUniversity of Manchester Email: sue.astley@manchester.ac.uk",
+        "Karen Drukker, PhD\n\nUniversity of Chicago Email: kdrukker@uchicago.edu",
+        "Hui Li, PhD\n\nUniversity of Chicago Email: huili@uchicago.edu",
+        "Andrew Maidment, PhD\n\nUniversity of Pennsylvania\u00a0 Email: Andrew.Maidment@pennmedicine.upenn.edu",
+        "Heather M. Whitney, PhD\n\nUniversity of Chicago Email: hwhitney@uchicago.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "+ Add another field",
+        "Range\n\n\n\n\n\n\nSingle Year",
+        "Clear Form"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Proceedings\n\n\nVolume",
+        "eBooks +",
+        "Field Guide Series\n\nPress Monograph\n\nSpotlight\n\nTutorial Text\n\nOther Press"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Journals +",
+        "Volume",
+        "Issue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Clinical Characteristics of Headache and Diagnosis of Primary and Secondary Headache Disorders",
+        "edited by Elena R. Lebedeva",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "output_list_from_llm": [
+        "Clinical Characteristics of Headache and Diagnosis of Primary and Secondary Headache Disorders"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "New Advances in Thoracic Surgery: Clinical Diagnosis, Treatment, and Prognosis",
+        "edited by Stefano Elia",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "output_list_from_llm": [
+        "New Advances in Thoracic Surgery: Clinical Diagnosis, Treatment, and Prognosis"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Current Issues on Kidney Diseases Diagnosis and Management",
+        "edited by Luis Yu",
+        "Submission Open",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "output_list_from_llm": [
+        "Current Issues on Kidney Diseases Diagnosis and Management"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Monitoring, detection, diagnosis, and mitigation of faults, unexpected issues, and change",
+        "Formal theories and symbolic, sub-symbolic, as well as hybrid approaches for diagnosis",
+        "Concept papers on the theory of design and operational resilience",
+        "Designing, developing, and operationalizing resilient systems",
+        "Hard- and software instrumentation, as well as dependable data acquisition and probing",
+        "Diagnosis in resilient, intelligent, and autonomous systems",
+        "Diagnosis in a distributed, hierarchical, system-of-systems, or multi-agent context"
+      ],
+      "output_list_from_llm": [
+        "Monitoring, detection, diagnosis, and mitigation of faults, unexpected issues, and change",
+        "Formal theories and symbolic, sub-symbolic, as well as hybrid approaches for diagnosis",
+        "Diagnosis in resilient, intelligent, and autonomous systems",
+        "Diagnosis in a distributed, hierarchical, system-of-systems, or multi-agent context"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Clinical Diagnosis of Otorhinolaryngology",
+        "edited by Nina Gale, Primo\u017e Strojan and Robert \u0160ifrer",
+        "Submission Open",
+        "Keywords: head and neck cancer; otorhinolaryngology; symptoms and clinical signs",
+        "(This special issue belongs to the Section Clinical Diagnosis and Prognosis)"
+      ],
+      "output_list_from_llm": [
+        "Clinical Diagnosis of Otorhinolaryngology"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Clinical characteristics of headache and diagnosis of primary and secondary headache disorders",
+    "New advances in thoracic surgery: clinical diagnosis, treatment, and prognosis",
+    "Current issues on kidney diseases diagnosis and management",
+    "Monitoring, detection, diagnosis, and mitigation of faults, unexpected issues, and change",
+    "Formal theories and symbolic, sub-symbolic, as well as hybrid approaches for diagnosis",
+    "Diagnosis in resilient, intelligent, and autonomous systems",
+    "Diagnosis in a distributed, hierarchical, system-of-systems, or multi-agent context",
+    "Clinical diagnosis of otorhinolaryngology"
+  ],
+  "error": null
+}

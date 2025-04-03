@@ -1,0 +1,833 @@
+{
+  "level2_term": "language policy",
+  "all_urls": [
+    "https://link.springer.com/journal/10993",
+    "https://ijls.net/pages/callforpapers.html",
+    "https://www.aaal.org/events/2020-multidisciplinary-approaches-in-language-policy-and-planning",
+    "https://academic.oup.com/jole/pages/call_for_papers",
+    "http://www.wikicfp.com/cfp/call?conference=language",
+    "https://ecll.iafor.org/call-for-papers/",
+    "https://www.mla.org/Events/Planning-a-Convention-Session/Calls-for-Papers",
+    "https://www.sciencedirect.com/journal/journal-of-second-language-writing/about/call-for-papers",
+    "https://immi.se/index.php/intercultural/announcement/view/8",
+    "https://2025.emnlp.org/calls/main-conference-papers/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "ANVUR",
+        "Arts & Humanities Citation Index",
+        "BFI List",
+        "Baidu",
+        "CLOCKSS",
+        "CNPIEC",
+        "Current Contents/Arts and Humanities",
+        "Dimensions",
+        "EBSCO",
+        "ERIH PLUS",
+        "Google Scholar",
+        "MLA International Bibliography",
+        "Naver",
+        "Norwegian Register for Scientific Journals and Series",
+        "OCLC WorldCat Discovery Service",
+        "Portico",
+        "ProQuest",
+        "SCImago",
+        "SCOPUS",
+        "Social Science Citation Index",
+        "TD Net Discovery Service",
+        "Wanfang"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.045454545454545456,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Latest issue",
+        "Latest articles",
+        "Journal updates",
+        "Journal information",
+        "Journal navigation",
+        "Search",
+        "Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Micro language planning and governmentality in \u2018globalisation from below\u2019",
+        "India\u2019s language policy for deaf and hard-of-hearing people",
+        "Interpreting as educational policy: disentangling discourses of language access in schools",
+        "Supporting the Sustainable Developmental Goals",
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Electronic ISSN",
+        "Print ISSN",
+        "Abstracted and indexed in",
+        "Copyright information"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Author Guidelines",
+        "Code of Conduct",
+        "IJLS Editorial Style",
+        "IJLS Style Sheet",
+        "Peer Review Process",
+        "Call for Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Papers in Press",
+        "Latest Issue",
+        "Back Issues",
+        "Special Issues"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "View Articles",
+        "Sample Issue",
+        "Subscription Information",
+        "Contact Us"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Abstracting/Indexing",
+        "Subscription Information",
+        "Rights & Permissions",
+        "Contact Us"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Submit Your Paper",
+        "Track Your Paper",
+        "Code of Conduct",
+        "Open Access Plan"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "IJLS Repository",
+        "RICeST",
+        "EBSCO",
+        "Lulu Press Inc."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Language\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Language\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Language",
+        "(ordered by deadline)",
+        "Event",
+        "ICLCC 2025",
+        "May 16, 2025 - May 18, 2025",
+        "UPD 2025",
+        "Apr 25, 2025 - Apr 27, 2025",
+        "ICLL 2025",
+        "Jul 15, 2025 - Jul 17, 2025",
+        "LCS 2025",
+        "Jul 22, 2025 - Jul 23, 2025",
+        "ICLLL 2025",
+        "Nov 21, 2025 - Nov 23, 2025",
+        "HUSO  2025",
+        "Oct 4, 2025 - Oct 5, 2025",
+        "Expired CFPs",
+        "ICNLP 2025",
+        "Mar 21, 2025 - Mar 23, 2025",
+        "ILL 2024",
+        "Nov 7, 2024 - Nov 8, 2024",
+        "One Hundred Years after Fowler 2024",
+        "ICLLL 2024",
+        "Nov 23, 2024 - Nov 25, 2024",
+        "Telos 2025",
+        "Mar 21, 2025 - Mar 22, 2025",
+        "Enseigner \u00e0 travers la traduction 2024",
+        "Nov 21, 2024 - Nov 22, 2024",
+        "IberSPEECH 2024",
+        "Nov 11, 2024 - Nov 13, 2024",
+        "LLL 2024",
+        "Jul 23, 2024 - Jul 24, 2024",
+        "FDL 2024",
+        "Sep 4, 2024 - Sep 6, 2024",
+        "Call for papers 2024",
+        "ICLLS 2024",
+        "Jun 21, 2024 - Jun 22, 2024",
+        "Q&TP 2024",
+        "Mar 22, 2024 - Mar 23, 2024",
+        "ICEL 2023",
+        "Jul 20, 2023 - Jul 21, 2023",
+        "ICARD 2023",
+        "Sep 12, 2023 - Sep 12, 2023",
+        "first |\t\t\t\n\n\t\t\t\t previous \n\n\t\t\t\t| Page 1 |\n\n        \nnext\n\n\t\t\t| last"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 45,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08888888888888889,
+        "length_consistency": true,
+        "pattern_ratio": 0.022222222222222223,
+        "keyword_ratio": 0.044444444444444446
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "ICLCC 2025",
+        "May 16, 2025 - May 18, 2025",
+        "UPD 2025",
+        "Apr 25, 2025 - Apr 27, 2025",
+        "ICLL 2025",
+        "Jul 15, 2025 - Jul 17, 2025",
+        "LCS 2025",
+        "Jul 22, 2025 - Jul 23, 2025",
+        "ICLLL 2025",
+        "Nov 21, 2025 - Nov 23, 2025",
+        "HUSO  2025",
+        "Oct 4, 2025 - Oct 5, 2025",
+        "Expired CFPs",
+        "ICNLP 2025",
+        "Mar 21, 2025 - Mar 23, 2025",
+        "ILL 2024",
+        "Nov 7, 2024 - Nov 8, 2024",
+        "One Hundred Years after Fowler 2024",
+        "ICLLL 2024",
+        "Nov 23, 2024 - Nov 25, 2024",
+        "Telos 2025",
+        "Mar 21, 2025 - Mar 22, 2025",
+        "Enseigner \u00e0 travers la traduction 2024",
+        "Nov 21, 2024 - Nov 22, 2024",
+        "IberSPEECH 2024",
+        "Nov 11, 2024 - Nov 13, 2024",
+        "LLL 2024",
+        "Jul 23, 2024 - Jul 24, 2024",
+        "FDL 2024",
+        "Sep 4, 2024 - Sep 6, 2024",
+        "Call for papers 2024",
+        "ICLLS 2024",
+        "Jun 21, 2024 - Jun 22, 2024",
+        "Q&TP 2024",
+        "Mar 22, 2024 - Mar 23, 2024",
+        "ICEL 2023",
+        "Jul 20, 2023 - Jul 21, 2023",
+        "ICARD 2023",
+        "Sep 12, 2023 - Sep 12, 2023"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 40,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.025,
+        "keyword_ratio": 0.05
+      }
+    },
+    {
+      "items": [
+        "Submission Streams",
+        "How to Submit Your Abstract",
+        "Presentation Formats",
+        "Review System",
+        "Scheduling Requests",
+        "Conference Proceedings",
+        "Publication & Licensing Issues",
+        "Ethical Conduct",
+        "The Use of Generative AI and AI-assisted Technologies",
+        "IAFOR Global Partners",
+        "Explore the IAFOR Research Archive",
+        "IAFOR Conference Finder",
+        "IAFOR Virtual Presentations",
+        "Recent IAFOR News",
+        "Mailing List",
+        "International, Intercultural, Interdisciplinary"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "IAFOR Journal of Education (Scopus Indexed Journal)",
+        "Culture and Language",
+        "Psychology of the learner",
+        "Intersectionality",
+        "Plurilingualism \u2013 Bilingualism",
+        "Educational Technologies",
+        "Learning environments",
+        "Professional development",
+        "Assessment",
+        "Approaches",
+        "Applied linguistics research",
+        "Disabilities and the language learner",
+        "Educational policy",
+        "Lifelong learning",
+        "Translation and Interpretation",
+        "Submission Status",
+        "Authors as Reviewers: A Reciprocal System"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.11764705882352941,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.17647058823529413
+      }
+    },
+    {
+      "items": [
+        "IAFOR",
+        "The European Conference on Language Learning (ECLL)",
+        "ECLL2024",
+        "Call for Papers"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Events",
+        "Planning a Convention Session",
+        "Calls for Papers"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Events",
+        "Membership",
+        "MLA Style",
+        "Publications",
+        "Resources",
+        "Events",
+        "Membership",
+        "MLA Style",
+        "Publications",
+        "Resources",
+        "Viewing and Responding to Calls for Papers",
+        "Posting Calls for Papers"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "close",
+        "Log in to Modern Language Association",
+        "Recover your username or reset your password."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "JournalImpect",
+        "SidebarMenu",
+        "Announcements",
+        "SJR 2022",
+        "Axial",
+        "LeftColumnStart",
+        "JournalIssue",
+        "SDG Program",
+        "Current Issue"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Dear Authors,",
+        "Why Publish with JIC?",
+        "Recommended Topics:",
+        "Submission Guidelines:",
+        "Sincerely,",
+        "Section Editor, Journal of Intercultural Communication [https://immi.se/intercultural]"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Safety and Alignment in LLMs",
+        "AI/LLM Agents",
+        "Human-AI Interaction/Cooperation",
+        "Retrieval-Augmented Language Models",
+        "Mathematical, Symbolic, and Logical Reasoning in NLP",
+        "Computational Social Science, Cultural Analytics, and NLP for Social Good",
+        "Code Models",
+        "Interpretability, Model Editing, Transparency, and Explainability",
+        "LLM Efficiency",
+        "Generalizability and Transfer",
+        "Dialogue and Interactive Systems",
+        "Discourse, Pragmatics, and Reasoning",
+        "Low-resource Methods for NLP",
+        "Ethics, Bias, and Fairness",
+        "Natural Language Generation",
+        "Information Extraction and Retrieval",
+        "Linguistic theories, Cognitive Modeling and Psycholinguistics",
+        "Machine Translation",
+        "Multilinguality and Language Diversity",
+        "Multimodality and Language Grounding to Vision, Robotics and Beyond",
+        "Neurosymbolic approaches to NLP",
+        "Phonology, Morphology and Word Segmentation",
+        "Question Answering",
+        "Resources and Evaluation",
+        "Semantics: Lexical, Sentence-level Semantics, Textual Inference and Other areas",
+        "Sentiment Analysis, Stylistic Analysis, and Argument Mining",
+        "Speech Processing and Spoken Language Understanding",
+        "Summarization",
+        "Hierarchical Structure Prediction, Syntax, and Parsing",
+        "NLP Applications",
+        "Special Theme: Interdisciplinary Recontextualization of NLP"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 31,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.03225806451612903,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.12903225806451613
+      }
+    },
+    {
+      "items": [
+        "Special Theme Best paper award",
+        "Panel discussion (special submission category)",
+        "Boundary-Spanning Chat sessions (special submission category)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Long Papers (8 pages) and Short Papers (4 pages)",
+        "Instructions for Two-Way Anonymized Review",
+        "Authorship",
+        "Citation and Comparison",
+        "Multiple Submission Policy, Resubmission Policy, and Withdrawal Policy",
+        "Limitations",
+        "Writing Assistance",
+        "Paper Submission and Templates",
+        "Optional Supplementary Materials"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Christos Christodoulopoulos, Amazon",
+        "Tanmoy Chakraborty, Indian Institute of Technology Delhi",
+        "Carolyn Rose, Carnegie Mellon University",
+        "Violet Peng, University of California, Los Angeles"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Paper Submission Information",
+        "Mandatory Reviewing Workload",
+        "Additional Policies",
+        "Submission Topics",
+        "EMNLP 2025 Theme Track: Interdisciplinary Recontextualization of NLP",
+        "Two Stage Review: Submission to ARR, Commitment to EMNLP",
+        "Important Dates for EMNLP 2025",
+        "Paper Submission Details",
+        "Presentation at the Conference"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.7
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Special Theme Best paper award",
+        "Panel discussion (special submission category)",
+        "Boundary-Spanning Chat sessions (special submission category)"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Events",
+        "Planning a Convention Session",
+        "Calls for Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Overview",
+        "Paper Submission Information",
+        "Mandatory Reviewing Workload",
+        "Additional Policies",
+        "Submission Topics",
+        "EMNLP 2025 Theme Track: Interdisciplinary Recontextualization of NLP",
+        "Two Stage Review: Submission to ARR, Commitment to EMNLP",
+        "Important Dates for EMNLP",
+        "Paper Submission Details",
+        "Presentation at the Conference"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Long Papers (8 pages) and Short Papers (4 pages)",
+        "Instructions for Two-Way Anonymized Review",
+        "Authorship",
+        "Citation and Comparison",
+        "Multiple Submission Policy, Resubmission Policy, and Withdrawal Policy",
+        "Limitations",
+        "Writing Assistance",
+        "Paper Submission and Templates",
+        "Optional Supplementary Materials"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "IAFOR",
+        "The European Conference on Language Learning (ECLL)",
+        "ECLL",
+        "Call for Papers"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

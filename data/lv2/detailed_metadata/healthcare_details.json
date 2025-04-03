@@ -1,0 +1,1337 @@
+{
+  "level1_term": "healthcare",
+  "all_urls": [
+    "https://www.cedars-sinai.edu/health-sciences-university/research/topics.html",
+    "https://fcm.ucsf.edu/research-areas",
+    "https://hspop.uw.edu/research/research-projects/",
+    "https://hap.gmu.edu/academics/health-informatics/health-informatics-research",
+    "https://medicine.buffalo.edu/departments/biomedical-informatics/research/areas.html",
+    "https://www.sph.umn.edu/research/projects/",
+    "https://publichealth.ouhsc.edu/research",
+    "https://med.nyu.edu/departments-institutes/medicine/research/research-areas",
+    "https://hspp.sph.brown.edu/research",
+    "https://library.fgcu.edu/healthadmin/research",
+    "https://populationhealth.duke.edu/research",
+    "https://www.bumc.bu.edu/medicine/research/research-topics/",
+    "https://nau.edu/college-health-human-services/research/",
+    "https://school.wakehealth.edu/research/institutes-and-centers/center-for-healthcare-innovation/research",
+    "https://www.publichealth.pitt.edu/academics/forms-handbook/academic-handbook/graduation-information/graduate-research-topics",
+    "https://www.kumc.edu/school-of-medicine/academics/departments/population-health/research/health-services-research.html",
+    "https://uofuhealth.utah.edu/research/areas-initiatives",
+    "https://health.tamu.edu/research/research-areas.html",
+    "https://www.hbs.edu/healthcare/faculty/research/",
+    "https://mhri.rice.edu/research-areas",
+    "https://med.stanford.edu/research.html",
+    "https://publichealth.nyu.edu/research/research-projects",
+    "https://health.ucdavis.edu/family-medicine/research/",
+    "https://www.geisinger.edu/gchs/research",
+    "https://ysph.yale.edu/public-health-research-and-practice/department-research/health-policy-and-management/",
+    "https://chicago.medicine.uic.edu/emergency-medicine/em-research/",
+    "https://medschool.cuanschutz.edu/health-care-policy-and-research",
+    "https://cega.berkeley.edu/organization/national-institutes-of-health/",
+    "https://hhs.purdue.edu/research/",
+    "https://ctsi.wakehealth.edu/about-ctsi/research-at-wake-forest"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Community-Based Research and Interventions",
+        "Cross-Cultural Care and the Clinician-Patient Relationship",
+        "Global Public Health",
+        "Health Policy and Reducing Social Disparities in Health",
+        "Integrative and Psychosocial Medicine",
+        "Medical Education",
+        "Primary Care and Chronic Care Innovations",
+        "Reproductive and Children's Health"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Community-Based Research and Interventions",
+        "Cross-Cultural Care and the Clinician-Patient Relationship",
+        "Global Public Health",
+        "Health Policy and Reducing Social Disparities in Health",
+        "Integrative and Psychosocial Medicine",
+        "Medical Education",
+        "Primary Care and Chronic Care Innovations",
+        "Reproductive and Children's Health",
+        "Research"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "HEART Community Resources",
+        "HEART Projects & Initiatives",
+        "Who is HEART?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "HEART Community Resources",
+        "HEART Projects & Initiatives",
+        "Who is HEART?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "population health informatics",
+        "mobile computing",
+        "ethical issues",
+        "biosurveillance",
+        "ontology-based epidemiology",
+        "ontology-based payment for health services",
+        "public health data standards",
+        "population-based research",
+        "health IT policy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "health systems",
+        "systems engineering",
+        "cognitive informatics",
+        "human factors engineering",
+        "human-centered design",
+        "usability testing",
+        "simulation",
+        "sociotechnical issues in health informatics",
+        "management of health systems",
+        "systems science"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.7
+      }
+    },
+    {
+      "items": [
+        "ActiveGut Study",
+        "COVID-19 Model Code",
+        "Environmental Influences on Child Health Outcomes Minnesota (ECHO MN)",
+        "Equity and Quality in Long-Term Services and Supports (EQuaLS) Projects",
+        "Families and Long-Term Care",
+        "Grocery Assistance Program Study for Families",
+        "Helping American Indian People Quit Smoking",
+        "HIV/STI Intervention & Prevention Studies (HIPS)",
+        "mGlide",
+        "Minnesota Prepared",
+        "Paid Summer Research Program for Undergraduate Students",
+        "PARKS Study",
+        "Project EAT",
+        "Robert L. Kane Endowed Chair in Long-Term Care and Aging",
+        "Stand & Move at Work",
+        "The Infant Development and Environment Study (TIDES)",
+        "The Interdisciplinary Network on Rural Population Health and Aging (INRPHA)",
+        "WONDER Study",
+        "For Students, Faculty, and Staff"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.15789473684210525,
+        "length_consistency": true,
+        "pattern_ratio": 0.05263157894736842,
+        "keyword_ratio": 0.47368421052631576
+      }
+    },
+    {
+      "items": [
+        "Sustainable Supply Chains: Promoting supply chain sustainability through health-conscious practices.",
+        "Community Engagement: Collaborating with communities to improve overall health and safety.",
+        "Machine Learning for Safety: Leveraging machine learning to enhance occupational safety protocols.",
+        "Environmental Justice Advocacy: Engaging with communities to address environmental disparities."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Econometrics",
+        "Survey methods",
+        "Communication analysis and sociolinguistics",
+        "Mathematical modeling/simulation methods",
+        "Implementation science"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Site Navigation",
+        "Sub Navigation",
+        "Fields of Research",
+        "Research Methods",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Library Catalog",
+        "Databases",
+        "Journals",
+        "Videos",
+        "Course Reserves",
+        "Course Reading Lists",
+        "ScholarsCommons"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Labs & Printing",
+        "Loanable Technology",
+        "Data Visualization Wall",
+        "Media Production Studio",
+        "Makerspace",
+        "Remote Access"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Health topic",
+        "Rehabilitation for brain injuries",
+        "Mirror therapy for brain-injured or stroke patients with partial paralysis",
+        "Health benefits of whole grains in one\u2019s diet",
+        "What are the causes of sprains in athletes?",
+        "What are the best treatments for itching (pruritus) in hospitalized patients?",
+        "Health needs of elderly residents in Charlotte County after Hurricane Charley in 2004",
+        "Does exercise improve mental health?",
+        "Pet therapy with a dog for an autistic child, age 5"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research topic",
+        "Rehabilitation for brain injuries",
+        "Health benefits of whole grains in one\u2019s diet",
+        "What are the causes of sprains in athletes?",
+        "What are the best treatments for itching (pruritus) in hospitalized patients?",
+        "Health needs of elderly residents in Charlotte County after Hurricane Charley in 2004",
+        "Does exercise improve mental health?",
+        "Pet therapy with a dog for a 5 year-old autistic child"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Utility",
+        "Main navigation",
+        "Utility",
+        "Sidebar navigation",
+        "Engage With Faculty Experts in"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Addiction Medicine",
+        "Amyloid",
+        "Biomedical Genetics",
+        "Cancer Center",
+        "Cardiovascular Medicine",
+        "Computational Biomedicine",
+        "Endocrinology, Diabetes, and Nutrition",
+        "Gastroenterology",
+        "General Internal Medicine",
+        "Geriatrics",
+        "Hematology and Medical Oncology",
+        "Infectious Disease",
+        "Nephrology",
+        "Nutrition and Metabolism",
+        "Pulmonary, Allergy, Sleep, and Critical Care Medicine",
+        "Preventive Medicine and Epidemiology",
+        "Rheumatology",
+        "Sickle Cell",
+        "Vascular Biology",
+        "Whitaker Cardiovascular Center",
+        "Women\u2019s Health"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.047619047619047616
+      }
+    },
+    {
+      "items": [
+        "Healthcare labs, community clinics, and faculty research",
+        "Faculty research by department",
+        "Communication Sciences and Disorders",
+        "Dental Hygiene",
+        "Health Sciences",
+        "Occupational Therapy",
+        "Physical Therapy and Athletic Training",
+        "Physician Assistant Studies"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Community clinics",
+        "Hearing loss",
+        "Speech and language development",
+        "Adult neurogenic disorders",
+        "Clinical interventions and effectiveness",
+        "Project zero: Elementary-aged Children",
+        "Project zero: Women and Infants",
+        "Veterans Support Program",
+        "Journey for Underrepresented Medical Professionals",
+        "Scholarships for Disadvantaged Students (SDS)",
+        "Physical activity",
+        "Nutrition",
+        "Community-based interventions",
+        "Clinical biomechanics",
+        "Control of movement and rehabilitation after neurological disorders",
+        "Youth sport and concussion",
+        "Additional lines of research"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.17647058823529413,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.4117647058823529
+      }
+    },
+    {
+      "items": [
+        "mediated HIV",
+        "1 trans",
+        "infection\""
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "School of Health Professions",
+        "School of Medicine",
+        "School of Nursing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "University of Kansas",
+        "The University of Kansas Health System",
+        "The University of Kansas Cancer Center"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Analyses of large databases including Medicare and Medicaid",
+        "Comparative effectiveness of therapeutic interventions, particularly pharmaceuticals",
+        "Cost-effectiveness analyses of behavior health interventions",
+        "Adherence to national quality guidelines",
+        "Costs\u00a0and outcomes of particular conditions",
+        "Evaluation and design of state health policies",
+        "Geographic variation in care delivery and outcomes"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "whether basic science, translational, or population",
+        "based",
+        "toward improving the health of people."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tooth development and genetics",
+        "Dentin, bone and cartilage matrix biology",
+        "Temporomandibular joint function, dysfunction and pain",
+        "Implants, bone regeneration devices and devices to move teeth",
+        "Stem cell applications for regenerative strategies and scaffold design",
+        "Use of biomarkers to detect oral cancer"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Brain, behavior, psychiatric and neurological disorders",
+        "Biomedical engineering and regenerative medicine",
+        "Cancer, cell and developmental biology",
+        "Cardiovascular, lymphatic and metabolic disease",
+        "Genetics, genomics and networking biology",
+        "Infection, immunity and inflammation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Forensic nursing",
+        "Health promotion and risk reduction",
+        "Disease management and prevention",
+        "Vulnerable populations",
+        "Health professional education"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cardiovascular diseases",
+        "Cancer",
+        "Clinical trials",
+        "Community health",
+        "Drug design and discovery",
+        "Drug delivery",
+        "Drug abuse",
+        "Health disparities and biomarkers",
+        "Infectious diseases",
+        "Medicinal chemistry",
+        "Neurosciences",
+        "Pharmacokinetics/pharmacodynamics",
+        "Pharmacy education and pedagogy",
+        "Pharmacy services",
+        "Women's health",
+        "Formulation development (FDD)",
+        "Bioavailability/bioequivalence (BA/BE)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.058823529411764705,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.23529411764705882
+      }
+    },
+    {
+      "items": [
+        "Cancer and stem cell biology",
+        "Environmental and genetic medicine",
+        "Infectious and inflammatory diseases",
+        "Translational cancer research"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "College of Dentistry",
+        "School of Medicine",
+        "School of Nursing",
+        "Irma Lerma Rangel School of Pharmacy",
+        "School of Public Health",
+        "Institute of Biosciences and Technology",
+        "Institution",
+        "Information",
+        "Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Facebook",
+        "Twitter",
+        "Instagram",
+        "Linked in",
+        "YouTube"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Robert S. Huckman",
+        "John Beshears",
+        "Amitabh Chandra",
+        "Leemore S. Dafny",
+        "Srikant M. Datar",
+        "Amy C. Edmondson",
+        "Richard G. Hamermesh",
+        "Jonas Heese",
+        "Regina E. Herzlinger",
+        "Leslie K. John",
+        "Rosabeth M. Kanter",
+        "Robert S. Kaplan",
+        "Tarun Khanna",
+        "Karim R. Lakhani",
+        "Gary P. Pisano",
+        "Michael E. Porter",
+        "John A. Quelch",
+        "Raffaella Sadun"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05555555555555555
+      }
+    },
+    {
+      "items": [
+        "Robert S. Huckman\nTechnology and Operations Management",
+        "John Beshears\nNegotiation, Organizations & Markets",
+        "Amitabh Chandra\nTechnology and Operations Management",
+        "Leemore S. Dafny\nGeneral Management",
+        "Srikant M. Datar",
+        "Amy C. Edmondson\nTechnology and Operations Management",
+        "Richard G. Hamermesh",
+        "Jonas Heese\nAccounting and Management",
+        "Regina E. Herzlinger\nGeneral Management",
+        "Leslie K. John\nNegotiation, Organizations & Markets",
+        "Rosabeth M. Kanter\nGeneral Management",
+        "Robert S. Kaplan\nAccounting and Management",
+        "Tarun Khanna\nStrategy",
+        "Karim R. Lakhani\nTechnology and Operations Management",
+        "Gary P. Pisano\nTechnology and Operations Management",
+        "Michael E. Porter",
+        "John A. Quelch",
+        "Raffaella Sadun\nStrategy"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "How can we imagine a future that moves us from reactive medicine to holistic health?",
+        "What does it mean to be a good doctor?",
+        "What does it mean to treat a patient as a person?",
+        "Do the ways we measure health contribute to dehumanization?",
+        "How can we imagine a future vision of health that responds to the demands of climate change?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1. Inclusive engineering, design, and data science for health",
+        "2. Arts in basic, clinical, and public health research",
+        "3. Health communication and clinical care at the bedside",
+        "4. Health professions education"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Cancer",
+        "Cardiovascular health",
+        "Immunology",
+        "Genetics",
+        "Neuroscience",
+        "Stem cells"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Principal investigator",
+        "Principal investigator",
+        "Professional organizations",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator",
+        "Principal investigator"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 35,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Practice-based research and initiatives",
+        "Yale University professor weighs in on proposed Union-Regional merger",
+        "Dean Megan Ranney on the Importance of the Public Health Workforce",
+        "One in Five People with Dementia Receive No Care, Global Study Finds",
+        "What Happens to Your Brain When You Retire?",
+        "Health Systems Reform",
+        "Quality, Efficiency and Equity of Healthcare",
+        "Substance Abuse and Mental Health",
+        "Modeling: Policy, Operations and Disease",
+        "Pharmaceuticals, Vaccines and Medical Devices",
+        "Health and Wellbeing",
+        "Global Health"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.08333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Hypertension",
+        "Cardiac arrest",
+        "Diabetes",
+        "Sickle cell disease",
+        "Ultrasound",
+        "Cancer",
+        "Healthcare worker wellness",
+        "COVID-19",
+        "Chest pain",
+        "Substance use disorders",
+        "Toxicology",
+        "Global emergency medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hypertension",
+        "Cardiac arrest",
+        "Diabetes",
+        "Sickle cell disease",
+        "Ultrasound",
+        "Cancer",
+        "Healthcare worker wellness",
+        "COVID-19",
+        "Chest pain",
+        "Substance use disorders",
+        "Toxicology",
+        "Global emergency medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hypertension",
+        "Cardiac arrest",
+        "Diabetes",
+        "Sickle cell disease",
+        "Ultrasound",
+        "Cancer",
+        "Healthcare worker wellness",
+        "COVID-19",
+        "Chest pain",
+        "Substance use disorders",
+        "Toxicology",
+        "Global emergency medicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mission",
+        "Vision",
+        "Department of Emergency Medicine"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Medicare and Medicaid policies and regulations",
+        "Health outcomes research",
+        "Health insurance benefit design",
+        "Improving patient safety in all settings",
+        "Reducing health care disparities"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Tools & Resources",
+        "CU Campuses",
+        "CU Anschutz Medical Campus",
+        "School of Medicine",
+        "Health Care Policy and Research (SOM)"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Contact Us",
+        "Facebook",
+        "Instagram",
+        "YouTube",
+        "Flickr",
+        "More Social Media from NIH"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Site Menu",
+        "virtual-tour-screenshot-square.jpg",
+        "what-we-do-lymphocyte-attacking-cancer-cell.jpg",
+        "nih-at-a-glance-funding.jpg",
+        "nih-at-a-glance-labs.jpg",
+        "improving-health-collage.jpg",
+        "researcher-holding-petri-dish.jpg",
+        "Connect with Us",
+        "Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Take Charge of Your Health",
+        "75 Years of Advancing Neuroscience",
+        "Interrupted Memories",
+        "Participate in National Drug & Alcohol Facts Week \u00ae",
+        "Eye on the Future Video Contest",
+        "In the News",
+        "NIH at a Glance",
+        "Featured Resources & Initiatives"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Food Allergies\n\r\nFood allergy medication performed better than oral immunotherapy.",
+        "Cardiovascular Health\n\r\nStudy explains worse heart-health outcomes for those in rural communities.",
+        "Pain Receptors\n\r\nExperimental medicine shows promise for treating pain.",
+        "Activity and Cancer Risk\n\r\nEven regular low-intensity activity can reduce cancer incidence."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Econometrics",
+        "Survey methods",
+        "Communication analysis and sociolinguistics",
+        "Mathematical modeling/simulation methods",
+        "Implementation science"
+      ],
+      "output_list_from_llm": [
+        "Implementation science"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "health systems",
+        "systems engineering",
+        "cognitive informatics",
+        "human factors engineering",
+        "human-centered design",
+        "usability testing",
+        "simulation",
+        "sociotechnical issues in health informatics",
+        "management of health systems",
+        "systems science"
+      ],
+      "output_list_from_llm": [
+        "health systems",
+        "management of health systems",
+        "sociotechnical issues in health informatics"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Tooth development and genetics",
+        "Dentin, bone and cartilage matrix biology",
+        "Temporomandibular joint function, dysfunction and pain",
+        "Implants, bone regeneration devices and devices to move teeth",
+        "Stem cell applications for regenerative strategies and scaffold design",
+        "Use of biomarkers to detect oral cancer"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Implementation science",
+    "Management of health systems",
+    "Sociotechnical issues in health informatics"
+  ],
+  "error": null
+}

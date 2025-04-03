@@ -1,0 +1,972 @@
+{
+  "level2_term": "scholarly project evaluation",
+  "all_urls": [
+    "https://www.eval.org/Publications/Publications/American-Journal-of-Evaluation",
+    "https://www.sciencedirect.com/journal/international-journal-of-project-management/about/news/ijpm-invites-special-paper-collections-proposals-2026",
+    "https://journals.sagepub.com/page/pmx/cfp",
+    "https://stfm.org/conferences/annual/callforpresentations/",
+    "https://w2.csun.edu/cod/conference/journal-call-papers",
+    "https://www.ipma-research-conference.world/call-for-papers-2025/",
+    "https://www.quora.com/I-just-had-my-first-academic-paper-accepted-to-a-conference-through-a-call-for-papers-What-do-I-do-What-should-I-expect",
+    "https://www.eval.org/Publications",
+    "https://academia.stackexchange.com/questions/18349/difference-between-conference-paper-and-journal-paper",
+    "https://journals.sagepub.com/page/pmx/call-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "The Garden of Evaluation Approaches",
+        "Addressing the Elephant in the Room: Exploring the Imposter Phenomenon in Evaluation",
+        "The Prevalence of Evaluator Anxiety in Practice: An Empirical Examination",
+        "Rich Pictures: A Visual Method for Sensemaking Amid Complexity",
+        "And more!"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Members Only",
+        "Call for Contributions",
+        "Read Current Issue",
+        "Contribute to the Journal"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Posters",
+        "Preconference Workshop",
+        "Workshop",
+        "Panel Discussion",
+        "Seminar",
+        "Lecture-Discussion",
+        "Completed Project",
+        "Completed Research Project",
+        "Scholarly Topic Roundtable Discussion"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "2025 Call for Presentations Is Now Closed",
+        "Submission Categories",
+        "Tips for Using STFM's AI Assistant"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "1. Avoid Ambiguous Language",
+        "2. Use Specific Terms",
+        "3. Don't Assume the AI Knows Everything",
+        "4. Reset if You Change Topics",
+        "5. Provide Enough Context",
+        "6. Ask One Question at a Time",
+        "Examples of Good vs. Bad Prompts",
+        "Double Check Important Information",
+        "Technical Limitations"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Governance",
+        "Advocacy",
+        "Key Initiatives",
+        "Membership",
+        "Journals",
+        "Other Publications",
+        "CAFM Educational Research Alliance (CERA)",
+        "Research Resources",
+        "Annual Spring Conference",
+        "Conference on Medical Student Education",
+        "Conference on Practice & Quality Improvement",
+        "General Information",
+        "Certificate Programs",
+        "Fellowships",
+        "Online Courses",
+        "Webinars",
+        "Other Faculty Training",
+        "Curriculum",
+        "Topic-Specific Aggregated Resources",
+        "Resources Fundamental to Family Medicine Education",
+        "Preceptor Recruitment and Retention Resources",
+        "Resources For",
+        "Awards",
+        "Scholarships",
+        "Grants",
+        "Questions",
+        "Events",
+        "Due Dates",
+        "Useful Links",
+        "Example:",
+        "Example:",
+        "Example:",
+        "Example:",
+        "Example:",
+        "Bad Prompt",
+        "Good Prompt"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 36,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1388888888888889
+      }
+    },
+    {
+      "items": [
+        "11400 Tomahawk Creek Parkway",
+        "Leawood, KS 66211",
+        "(800) 274-7928",
+        "stfmoffice@stfm.org"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "May 3\u20137, 2025: STFM Annual Spring Conference",
+        "May 5, 2025, 7:30\u201311 pm: STFM Foundation MediPalooza Fundraiser",
+        "May 30, 2025, 12 pm CDT/1 pm EDT: Webinar: Ethical Use of AI in the Family Medicine Clinic",
+        "September 8\u201310, 2025:\u00a0The 2025 STFM Conference on Practice & Quality Improvement"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence (AI) & Machine Learning (ML)",
+        "Augmentative and Alternative Communications (AAC)",
+        "Blind/Low Vision",
+        "Captions & Transcription",
+        "Cognitive & Learning Disabilities",
+        "Deaf and Hard of Hearing",
+        "Design",
+        "Development",
+        "Digital Accessibility",
+        "Education",
+        "Emerging Technologies",
+        "Employment & Workplace",
+        "Engineering",
+        "Evaluation & Remediation",
+        "Gaming & Interactive Entertainment",
+        "Healthcare & Rehabilitation",
+        "Independent Living",
+        "Information & Communications Technology (ICT)",
+        "Law, Compliance, and Policy",
+        "Leadership & Strategy",
+        "Leisure & Travel",
+        "Mobile Technology",
+        "Mobility",
+        "Product Demonstration",
+        "Research",
+        "School-to-Work Transitioning",
+        "Video & Live Streaming",
+        "Virtual Reality (VR), Augmented Reality (AR), Cross/Mixed Reality (XR)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 28,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.10714285714285714,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.10714285714285714
+      }
+    },
+    {
+      "items": [
+        "Microsoft Word Document (DOC, DOCX)",
+        "Adobe Portable Document Format (PDF) Rich-Text Format (RTF)",
+        "UTF-8 or ASCII Text File (TXT)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Microsoft: Make your PowerPoint presentations accessible to people with disabilities",
+        "Adobe PDF Accessibility Overview",
+        "Apple: Create accessible documents, spreadsheets, or presentations with Pages, Numbers, or Keynote",
+        "Prezi: Creating accessible content in Prezi Design"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Product giveaways and or sales are prohibited.",
+        "There is a maximum of five (5) presenters per presentation.",
+        "There are no panel presentations allowed."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Schedule & Timeline",
+        "Topics",
+        "Submission Procedures & Guidelines",
+        "Manuscripts",
+        "Presentation Slides",
+        "Presentations Policies"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "Authors and Presenters",
+        "Paper Title",
+        "Abstract",
+        "Session Objective(s)",
+        "Audience",
+        "Audience Level",
+        "Session Summary",
+        "Topic Areas",
+        "A Note on Final Manuscripts"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Digital-Driven Innovations in Project Management",
+        "Leveraging Chat Bots for Project Management Efficiency",
+        "Business and Digital Transformation Projects",
+        "Digital Tech and Start-Up Projects in Innovative Ecosystem",
+        "Data-Driven Decision Making in Project Management",
+        "Advanced Technologies and Customization"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Project Management Fostering Society 5.0",
+        "Technology Driven Projects for the Smart Cities",
+        "Design of Projects, Programmes, and Portfolios in the Digital Environment",
+        "Interorganizational Project Networks and Knowledge Management",
+        "Governance in Megaprojects",
+        "Project Innovation Ecosystems",
+        "Organizational Change Projects",
+        "Value Chain in Complex Projects",
+        "Project Collaboration Techniques"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Project Supply Chain Resilience and Adaptability",
+        "Project Management in the Era of ESG",
+        "Projects for Social Responsibility",
+        "Industry 5.0 as a Driver for Sustainability, Resilience, and Circularity",
+        "Complexity and Uncertainty in the Global Project Supply Chain",
+        "Green Project Supply Chain"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stakeholder Engagement",
+        "Project Leadership",
+        "Project Management Competencies",
+        "Continuous Learning and Development in Project Environment",
+        "Remote and Distributed Project Teams",
+        "Team Competence and Group Effectiveness",
+        "Ethical Challenges, Team and Consumer Trust"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Topics",
+        "Paper Submissions",
+        "Presentation Template"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "13TH IPMA RESEARCH CONFERENCE",
+        "1. ARTIFICIAL INTELLIGENCE IN PROJECT MANAGEMENT",
+        "2. STRATEGIC VALUE DELIVERY",
+        "3. SUSTAINABLE PROJECT MANAGEMENT",
+        "4. HUMAN-CENTRIC APPROACH TO MANAGING PROJECTS",
+        "5. OTHER, RELATED TO RESEARCH RESONATING WITH PROJECT PRACTICES",
+        "Two types of submission are accepted for the Conference:",
+        "Archives"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Industry 5.0 as a Driver for Sustainability, Resilience & Circularity",
+        "Project Leadership",
+        "Risk Modeling & Management",
+        "Project Management Competencies",
+        "Professional Development for Project Managers",
+        "Swarm Intelligence & Decision Making",
+        "Culture & Change Management",
+        "Leveraging Chat Bots for Project Management Efficiency",
+        "Emerging Use-Cases & Tools in Project Settings",
+        "Business & Digital Transformation Projects",
+        "Creating Team & Consumer Trust",
+        "Project Collaboration Techniques",
+        "Knowledge Acquisition & Representation",
+        "Ethical Challenges in Project Management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07142857142857142
+      }
+    },
+    {
+      "items": [
+        "Project Leadership and Society",
+        "International Journal for Project Managment",
+        "Journal of Management in Engineering",
+        "Organization, Technology and Management in Construction: an International Journal",
+        "European Project Management Journal"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "American Journal of Evaluation",
+        "New Directions for Evaluation",
+        "AEA365",
+        "eLibrary",
+        "Guiding Principles",
+        "AEA Evaluator Competencies",
+        "Joint Committee on Standards for Educational Evaluation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Help identify this very early airplane",
+        "Abbreviations with letters over symbols",
+        "Question of whether grammar in a particular sentence is correct",
+        "How do I write all five word sentences?",
+        "Calculating the mean, not variance, reduces the degrees of freedom?",
+        "How to use \u00ab or \u00bb (other than referring to gold) in mathematics?",
+        "Housing end ferrule fused to frame, how to remove",
+        "Advanced Green's function for the classical forced harmonic oscillator",
+        "Has there been an official version of the Cerberus for D&D?",
+        "How is stim validated",
+        "How can we test a code for an algorithm that is implemented for the first time?",
+        "LEAN: Why is Classical Logic Needed to Prove this?",
+        "Charging for the use of open source software",
+        "Best way to bridge separate laminate sections across doorsills?",
+        "What's the point of rejecting direct negotiations but accepting indirect negotiations?",
+        "Can I raise the collar ties in my 1700s house roof?",
+        "Is pseudonymization using LLM considered as hashing?",
+        "Hashing security question answers for bank account portal activation",
+        "Square root defined as a positive value: why?, when? who?",
+        "KLM changed my booking to a much longer flight",
+        "How plausible is this anecdote about \"toggling in\" an operating system?",
+        "hyperref does not jump correctly to the labeled proof environment"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.13636363636363635,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "current community",
+        "your communities",
+        "more stack exchange communities"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stack Exchange Network",
+        "Linked",
+        "Related",
+        "Hot Network Questions"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "66.1k",
+        "18 gold badges",
+        "200 silver badges",
+        "311 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1,797",
+        "2 gold badges",
+        "16 silver badges",
+        "22 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "badroit",
+        "badroit",
+        "13.9k55 gold badges6464 silver badges8181 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "13.9k",
+        "5 gold badges",
+        "64 silver badges",
+        "81 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mark Meckes",
+        "Mark Meckes",
+        "3,0342020 silver badges2121 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "3,034",
+        "20 silver badges",
+        "21 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pete L. Clark",
+        "Pete L. Clark",
+        "132k2525 gold badges367367 silver badges524524 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "25 gold badges",
+        "367 silver badges",
+        "524 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Start asking to get answers",
+        "Find the answer to your question by asking.",
+        "Ask question"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Explore related questions",
+        "publicationsconference",
+        "See similar questions with these tags."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Topics",
+        "Paper Submissions",
+        "Presentation Template"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Product giveaways and or sales are prohibited.",
+        "There is a maximum of five",
+        "There are no panel presentations allowed."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "2025 Call for Presentations Is Now Closed",
+        "Submission Categories",
+        "Tips for Using STFM's AI Assistant"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Schedule & Timeline",
+        "Topics",
+        "Submission Procedures & Guidelines",
+        "Manuscripts",
+        "Presentation Slides",
+        "Presentations Policies"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Authors and Presenters",
+        "Paper Title",
+        "Abstract",
+        "Session Objective(s)",
+        "Audience",
+        "Audience Level",
+        "Session Summary",
+        "Topic Areas",
+        "A Note on Final Manuscripts"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

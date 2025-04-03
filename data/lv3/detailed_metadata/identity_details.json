@@ -1,0 +1,779 @@
+{
+  "level2_term": "identity",
+  "all_urls": [
+    "http://identityisri.org/news/",
+    "https://www.identitiesjournal.com/call-for-special-issues.html",
+    "http://www.wikicfp.com/cfp/call?conference=identity",
+    "https://spssi.onlinelibrary.wiley.com/hub/journal/15404560/homepage/cfp-safety-cues",
+    "http://identityisri.org/",
+    "https://call-for-papers.sas.upenn.edu/category/ethnicity-and-national-identity?page=8",
+    "https://asen.ac.uk/journals/sen/call-for-papers/",
+    "https://jims.e-migration.ro/Call-for-Papers.php",
+    "https://www.tandfonline.com/journals/hlie20",
+    "https://www.facebook.com/essenglish/posts/call-for-conference-papers-constructions-of-identity-12-conflictlocation-and-dat/1169558898294547/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Recording of the webinar with Dan McAdams",
+        "Recording of the Webinar with Jim Marcia",
+        "Webinar with Jim Marcia",
+        "Important news regarding our journal and two announcements for identity researchers.",
+        "2022 ISRI Pre-Conference in New Orleans on March 2nd"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "January 2025",
+        "October 2024",
+        "September 2024",
+        "June 2023",
+        "January 2022",
+        "October 2019",
+        "August 2018",
+        "August 2017",
+        "November 2016",
+        "June 2016",
+        "March 2016",
+        "January 2016"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "ABOUT",
+        "HISTORY\n\nConference Archive",
+        "Conference Archive",
+        "IDENTITY JOURNAL",
+        "CONTACT",
+        "LISTSERV",
+        "Call For Papers",
+        "Registration",
+        "Pre-conference",
+        "Program",
+        "Presentation Preparation",
+        "Social Events",
+        "Travel Information",
+        "Accommodations",
+        "Awards",
+        "Conference Archive",
+        "MEMBERSHIP"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.23529411764705882,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.17647058823529413
+      }
+    },
+    {
+      "items": [
+        "Recording of the webinar with Dan McAdams",
+        "Recording of the Webinar with Jim Marcia",
+        "Webinar with Jim Marcia",
+        "Important news regarding our journal and two announcements for identity researchers.",
+        "2022 ISRI Pre-Conference in New Orleans on March 2nd",
+        "Job Posting: University of Rhode Island",
+        "JoA Call for Papers \u2013 Special Issue",
+        "2018 Conference",
+        "2017 Conference Archive",
+        "Request for Participation in Multiracial Identity Study"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.3
+      }
+    },
+    {
+      "items": [
+        "New Call for papers \u2013 Identity journal",
+        "International EARA-EASP-EAPP meeting \u201cBuilding Inclusive Identities\u201d",
+        "PhD student recruitment for the ERC project IDENTITIES"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Instructions for Submission",
+        "online Submission Portal",
+        "[email\u00a0protected]"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Identity\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Identity\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Identity",
+        "(ordered by deadline)",
+        "Event",
+        "DIGITAL  2025",
+        "Jul 6, 2025 - Jul 10, 2025",
+        "Expired CFPs",
+        "TRAVELLING 2025",
+        "Feb 13, 2025 - Feb 14, 2025",
+        "FREEDOM 2024",
+        "Aug 22, 2024 - Aug 23, 2024",
+        "Religion 2024",
+        "May 23, 2024 - May 24, 2024",
+        "DREAMS 2023",
+        "Nov 23, 2023 - Nov 24, 2023",
+        "SDIM 2022",
+        "Jun 27, 2022 - Jul 1, 2022",
+        "SDIM 2021",
+        "Jul 12, 2021 - Jul 16, 2021",
+        "Matthew Arnold 2021",
+        "Apr 12, 2021 - Apr 13, 2021",
+        "OID 2021",
+        "Jun 1, 2021 - Jun 2, 2021",
+        "MIGRATION 2020",
+        "Nov 5, 2020 - Nov 6, 2020",
+        "BIMA 2020",
+        "Sep 28, 2020 - Sep 30, 2020",
+        "IEEE COMPSAC-SDIM 2020",
+        "Jul 13, 2020 - Jul 17, 2020",
+        "TraumaNightmare 2020",
+        "Mar 5, 2020 - Mar 6, 2020",
+        "NOSTALGIA 2019",
+        "Dec 9, 2019 - Dec 10, 2019",
+        "Identity, Culture and Law 2019",
+        "Sep 24, 2019 - Sep 24, 2019",
+        "SDIM  2019",
+        "Jul 15, 2019 - Jul 19, 2019",
+        "Sexual Agency 2019",
+        "Oct 12, 2019 - Oct 13, 2019",
+        "SC 2019",
+        "Jun 11, 2019 - Jun 14, 2019",
+        "INTR 2019",
+        "May 3, 2019 - May 4, 2019",
+        "LCIR 2019",
+        "Feb 9, 2019 - Feb 9, 2019",
+        "first |\t\t\t\n\n\t\t\t\t previous \n\n\t\t\t\t| Page 1 |\n\n        \nnext\n\n\t\t\t| last"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 47,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.10638297872340426,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.02127659574468085
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "DIGITAL  2025",
+        "Jul 6, 2025 - Jul 10, 2025",
+        "Expired CFPs",
+        "TRAVELLING 2025",
+        "Feb 13, 2025 - Feb 14, 2025",
+        "FREEDOM 2024",
+        "Aug 22, 2024 - Aug 23, 2024",
+        "Religion 2024",
+        "May 23, 2024 - May 24, 2024",
+        "DREAMS 2023",
+        "Nov 23, 2023 - Nov 24, 2023",
+        "SDIM 2022",
+        "Jun 27, 2022 - Jul 1, 2022",
+        "SDIM 2021",
+        "Jul 12, 2021 - Jul 16, 2021",
+        "Matthew Arnold 2021",
+        "Apr 12, 2021 - Apr 13, 2021",
+        "OID 2021",
+        "Jun 1, 2021 - Jun 2, 2021",
+        "MIGRATION 2020",
+        "Nov 5, 2020 - Nov 6, 2020",
+        "BIMA 2020",
+        "Sep 28, 2020 - Sep 30, 2020",
+        "IEEE COMPSAC-SDIM 2020",
+        "Jul 13, 2020 - Jul 17, 2020",
+        "TraumaNightmare 2020",
+        "Mar 5, 2020 - Mar 6, 2020",
+        "NOSTALGIA 2019",
+        "Dec 9, 2019 - Dec 10, 2019",
+        "Identity, Culture and Law 2019",
+        "Sep 24, 2019 - Sep 24, 2019",
+        "SDIM  2019",
+        "Jul 15, 2019 - Jul 19, 2019",
+        "Sexual Agency 2019",
+        "Oct 12, 2019 - Oct 13, 2019",
+        "SC 2019",
+        "Jun 11, 2019 - Jun 14, 2019",
+        "INTR 2019",
+        "May 3, 2019 - May 4, 2019",
+        "LCIR 2019",
+        "Feb 9, 2019 - Feb 9, 2019"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 42,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.023809523809523808,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.023809523809523808
+      }
+    },
+    {
+      "items": [
+        "ABOUT",
+        "HISTORY\n\nConference Archive",
+        "Conference Archive",
+        "IDENTITY JOURNAL",
+        "CONTACT",
+        "LISTSERV",
+        "Call For Papers",
+        "Registration",
+        "Pre-conference",
+        "Program",
+        "Presentation Preparation",
+        "Social Events",
+        "Travel Information",
+        "Accommodations",
+        "Awards",
+        "Conference Archive",
+        "MEMBERSHIP"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.23529411764705882,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.17647058823529413
+      }
+    },
+    {
+      "items": [
+        "Recording of the webinar with Dan McAdams",
+        "Recording of the Webinar with Jim Marcia",
+        "Webinar with Jim Marcia",
+        "Important news regarding our journal and two announcements for identity researchers."
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "JOIN ISRI",
+        "Conference",
+        "Recent News"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "October 28, 2024 in Uncategorized \nRecording of the Webinar with Jim Marcia",
+        "Webinar with Jim Marcia",
+        "Read More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DEADLINE EXTENDED | CFP in-person conference | The Boundaries of US American Identity",
+        "Travel and Tourism (Mid-Atlantic Popular/American Culture Assn)",
+        "Additional Chapters Sought for Edited Collection on Horror-Comedy Films",
+        "Techno-Orientalism and Genre",
+        "Panel Session:  Early Latinx Literature and the Archive (2024 PAMLA Conference)",
+        "Indian Literatures and Cultures: New Theories and Reflections:",
+        "Death and the Irish Diaspora",
+        "Muslim Who? (Re)Making Gendered Identities",
+        "PJWS Volume \u2013 4, Issue 1, May 2023 - date extended upto June",
+        "The African Presence in Asia: Past and Present",
+        "Gothic in Asian Animation and Sequential Art, a special issue of 'Gothic Studies'",
+        "Neurodivergent Representations and Possibilities",
+        "Special Issue - Breaking Convention: Genre Fiction in a Global Frame",
+        "Literary Musings - Regular Issue July 2024",
+        "Edited Volume Call for Papers on Susheel Kumar Sharma\u2019s Unwinding Self",
+        "CFP: \u201cIs Abundance A Luxury?\u201d Seminar, ASAP/15 Conference",
+        "CFA for L'Histoire Volume 3, Issue 1 on Fluid Borders and Interactions between South and East Asia",
+        "The 2025 Telos Conference: China Keywords / \u4e2d\u56fd\u5173\u952e\u8bcd",
+        "Anne for Everyone: Green Gables, Children of Color, and Global Childhoods",
+        "Historically Black Colleges and Universities: The Past, the Present, and the Future",
+        "2nd Call for Papers: Transcultural Encounters 4: Discourses and Regimes of In(ter)dependence",
+        "War and Trauma Literature"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.13636363636363635,
+        "length_consistency": true,
+        "pattern_ratio": 0.13636363636363635,
+        "keyword_ratio": 0.36363636363636365
+      }
+    },
+    {
+      "items": [
+        "Call for Articles",
+        "L\u2019Histoire: A Social Sciences Magazine,\u00a0Volume 3, Issue 1",
+        "About L'Histoire:\u00a0https://www.voyagesintothepast.com/l-histoire",
+        "Issue Theme: Fluid Borders: Exploring East and South Asian Interactions"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Call For Papers",
+        "ANNE FOR EVERYONE:",
+        "GREEN GABLES, CHILDREN OF COLOR, and GLOBAL CHILDHOODS"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Call for Papers:\u00a0Transitions: Journal of Transient Migration",
+        "View the full call here>>",
+        "https://www.intellectbooks.com/transitions-journal-of-transient-migration#call-for-papers",
+        "Guest editors:\u00a0Dr Vikrant Kishore, Dr Stephen Goulding, Dr Ratan Lal"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "2nd Call for Papers",
+        "Transcultural Encounters 4:",
+        "Discourses and Regimes of In(ter)dependence",
+        "Conference at the University of Oulu",
+        "Monday, August 19 \u2013 Tuesday, August 20, 2024",
+        "Abstracts by e-mail to moussa.pouryaasl@oulu.fi by June 15, 2024.",
+        "Please check updates on conference program and other information at"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Nov. 7",
+        "10, 2024",
+        "PAMLA"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Paul Piccone Institute will culminate the first year of a five",
+        "year program",
+        "the Telos China Initiative",
+        "that has aimed to set Telos on a distinct intellectual course."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "journal",
+        "transient",
+        "migration#call",
+        "papers"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "length write",
+        "emotional, somatic, eco",
+        "trauma in war literature will be undertaken for consideration. The twentieth"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "About Us",
+        "Editorial Board",
+        "Call for Papers",
+        "Review process",
+        "Guidelines for authors",
+        "Contact Us",
+        "2024, JIMS. volume 18, number 1",
+        "2023, JIM, volume 17, number 2",
+        "2023, JIMS, volume 17, number 1",
+        "2022 JIMS, volume 16, number 2",
+        "2022 JIMS, volume 16, number 1",
+        "2021 JIMS, volume 15, number 2",
+        "2021 JIMS, volume 15, number 1",
+        "2020 JIMS, volume 14, number 2",
+        "2020 JIMS, volume 14, number 1",
+        "2019 JIMS, volume 13, number 2",
+        "2019 JIMS, volume 13, number 1",
+        "2018 JIMS, volume 12, number 2",
+        "2018 JIMS, volume 12, number 1",
+        "2017 JIMS, volume 11, number 2",
+        "2017 JIMS, volume 11, number 1",
+        "2016 JIMS, volume 10, number 2",
+        "2016 JIMS, volume 10, number 1",
+        "2015 JIMS, volume 9, number 2",
+        "2015 JIMS, volume 9, number 1",
+        "2014 JIMS, volume 8, number 2",
+        "2014 JIMS, volume 8, number 1",
+        "2013 JIMS, volume 7, number 2",
+        "2013 JIMS, volume 7, number 1",
+        "2012 JIMS, volume 6, number 2",
+        "2012 JIMS, volume 6, number 1",
+        "2011 JIMS, volume 5, number 2",
+        "2011 JIMS, volume 5, number 1",
+        "2010 JIMS, volume 4, number 2",
+        "2010 JIMS, volume 4, number 1",
+        "2009 JIMS, volume 3, number 2",
+        "2009 JIMS, volume 3, number 1",
+        "2008 JIMS, volume 2, number 2",
+        "2008 JIMS, volume 2, number 1",
+        "2007 JIMS, volume 1, number 2",
+        "2007 JIMS, volume 1, number 1",
+        "Indexing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 42,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.023809523809523808,
+        "keyword_ratio": 0.023809523809523808
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "New Call for papers \u2013 Identity journal",
+        "International EARA-EASP-EAPP meeting \u201cBuilding Inclusive Identities\u201d",
+        "PhD student recruitment for the ERC project IDENTITIES"
+      ],
+      "output_list_from_llm": [
+        "International EARA-EASP-EAPP meeting \u201cBuilding Inclusive Identities\u201d"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Call For Papers",
+        "ANNE FOR EVERYONE:",
+        "GREEN GABLES, CHILDREN OF COLOR, and GLOBAL CHILDHOODS"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Instructions for Submission",
+        "online Submission Portal",
+        "[email protected]"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Recording of the webinar with Dan McAdams",
+        "Recording of the Webinar with Jim Marcia",
+        "Webinar with Jim Marcia",
+        "Important news regarding our journal and two announcements for identity researchers.",
+        "2022 ISRI Pre-Conference in New Orleans on March 2nd",
+        "Job Posting: University of Rhode Island",
+        "JoA Call for Papers \u2013 Special Issue",
+        "2018 Conference",
+        "2017 Conference Archive",
+        "Request for Participation in Multiracial Identity Study"
+      ],
+      "output_list_from_llm": [
+        "Request for Participation in Multiracial Identity Study"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Call for Papers: Transitions: Journal of Transient Migration",
+        "View the full call here>>",
+        "Guest editors: Dr Vikrant Kishore, Dr Stephen Goulding, Dr Ratan Lal"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Request for participation in multiracial identity study",
+    "International eara-easp-eapp meeting \u201cbuilding inclusive identities\u201d"
+  ],
+  "error": null
+}

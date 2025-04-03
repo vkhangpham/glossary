@@ -1,0 +1,528 @@
+{
+  "level2_term": "advanced japanese",
+  "all_urls": [
+    "https://www.jsme.or.jp/conference/icmdt2025/call-for-papers.html",
+    "https://www.jadh.org/jadh2025cfp",
+    "https://kyoto-amc.iafor.org/call-for-papers/",
+    "https://ists.ne.jp/the35th/callforpapers/",
+    "https://web.tuat.ac.jp/~deng/ICAMechS2022/icamechs2022sub/call.html",
+    "https://www.asiansil.org/call-for-papers-the-japan-chapter-of-the-asian-society-of-international-laws-16th-annual-conference/",
+    "https://iopscience.iop.org/journal/1347-4065/page/Special%20Issues",
+    "https://journals.jps.jp/page/jpsj/announcements?mobileUi=0",
+    "https://www.spst-photopolymer.org/icpst-photopolymer-conference/call-for-papers-icpst-42-2025/",
+    "https://smartconf.jp/content/gccv5th/paper"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "\u2013 Actuator Systems",
+        "\u2013 Additive Manufacturing",
+        "\u2013 CAD/CAM",
+        "\u2013 Coatings and Surface Modification",
+        "\u2013 Contact Mechanics",
+        "\u2013 Cutting/ Forming/ Grinding/ Polishing",
+        "\u2013 Data Science",
+        "\u2013 Design for Manufacturability (DFM)",
+        "\u2013 Friction and Wear Mechanism",
+        "\u2013 Hydro-dynamic/ Static Lubrication/Lubricants/ Lubrication Failure",
+        "\u2013 Injection Molding/ Mold and Die",
+        "\u2013 Integrated Product and Process Design (IPPD)",
+        "\u2013 Machine Design",
+        "\u2013 Machine Elements",
+        "\u2013 Machining of Advanced Materials",
+        "\u2013 Magnetic Storage System",
+        "\u2013 Manufacturing Systems",
+        "\u2013 MEMS",
+        "\u2013 Micro/Nano Processing and Tribology",
+        "\u2013 Multiphysics",
+        "\u2013 Non-conventional Processing",
+        "\u2013 Printing Technology for Manufacturing/ Rapid Prototyping",
+        "\u2013 Sensors",
+        "\u2013 Sustainable Tribology in Manufacturing and Maintenance",
+        "\u2013 Transmission",
+        "\u2013 Other Topics of Interest"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.038461538461538464,
+        "length_consistency": true,
+        "pattern_ratio": 0.038461538461538464,
+        "keyword_ratio": 0.038461538461538464
+      }
+    },
+    {
+      "items": [
+        "Call for papers",
+        "How to apply for a presentation in ICMDT2025",
+        "Notice",
+        "Topics",
+        "Proceedings",
+        "Journal Publication",
+        "Presentation Method",
+        "Online Submission"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.875
+      }
+    },
+    {
+      "items": [
+        "Manuscript Template",
+        "Start Online Submission",
+        "Clicking the button will take you to an external site for online Submission."
+      ],
+      "metadata": {
+        "html_type": "container_section",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Deadline",
+        "29-11-202427-12-202417-01-2025Closed",
+        "17-01-202507-03-2025",
+        "Jan. 2025Feb. 2025",
+        "23 to 25-4-2025"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Natsuko Nakagawa (Kyushu University, Japan), Co-chair",
+        "Satoru Nakamura (University of Tokyo, Japan), Co-chair",
+        "Naoya Iwata (Nagoya University, Japan), Vice-chair",
+        "Yuho Kitazaki (Osaka University, Japan), Vice-chair",
+        "Paul Arthur (Edith Cowan University, Australia)",
+        "Marcus Bingenheimer (Temple University, USA)",
+        "Elisa Beshero-Bondar (Penn State Erie, The Behrend College, USA)",
+        "James Cummings (Newcastle University, UK)",
+        "J. Stephen Downie (University of Illinois, USA)",
+        "Maciej Eder (Polish Academy of Sciences, Poland)",
+        "\u00d8yvind Eide (University of Cologne, Germany)",
+        "Makoto Goto (National Museum of Japanese History, Japan)",
+        "Yuta Hashimoto (National Museum of Japanese History, Japan)",
+        "Bor Hodo\u0161\u010dek (Osaka University, Japan)",
+        "\u200b\u200bJae-Yon Lee (Ulsan National Institute of Science and Technology, Korea)",
+        "JenJou Hung (Dharma Drum Institute of Liberal Arts, Taiwan)",
+        "Jieh Hsiang (National Taiwan University, Taiwan)",
+        "Akihiro Kawase (Doshisha University, Japan)",
+        "Nobuhiko Kikuchi (National Institute of Japanese Literature, Japan)",
+        "Naoki Kokaze (Chiba University, Japan)",
+        "Chao-Lin Liu (National Chengchi University, Taiwan)",
+        "Hajime Murai (Future University Hakodate, Japan)",
+        "Kiyonori Nagasaki (Keio University / International Institute for Digital Humanities, Japan)",
+        "Chifumi Nishioka (National Institute of Informatics, Japan)",
+        "Ikki Ohmukai (University of Tokyo, Japan)",
+        "Geoffrey Rockwell (University of Alberta, Canada)",
+        "Christof Sch\u00f6ch (Trier University, Germany)",
+        "Martina Scholger (University of Graz, Austria)",
+        "Masahiro Shimoda (Musashino University, Japan)",
+        "Raymond Siemens (University of Victoria, Canada)",
+        "Tomoji Tabata (Osaka University, Japan)",
+        "Toru Tomabechi (International Institute for Digital Humanities, Japan)",
+        "Richard Tzong-Han Tsai (National Central University, Taiwan)",
+        "Ayaka Uesaka (Osaka Seikei University, Japan)",
+        "Raffaele Viglianti (University of Maryland, USA)",
+        "Christian Wittern (Kyoto University, Japan)",
+        "Taizo Yamada (University of Tokyo, Japan)",
+        "Hilofumi Yamamoto (Tokyo Institute of Technology, Japan)",
+        "Hiroyuki Yamauchi (Ritsumeikan University, Japan)",
+        "Natsuko Yoshiga (Osaka University, Japan)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 40,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "announces",
+        "policy",
+        "chatgpt"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Submission Streams",
+        "How to Submit Your Abstract",
+        "Presentation Formats",
+        "Review System",
+        "Scheduling Requests",
+        "Conference Proceedings",
+        "Publication & Licensing Issues",
+        "Ethical Conduct",
+        "The Use of Generative AI and AI-assisted Technologies",
+        "IAFOR Global Partners",
+        "IAFOR Publishing Opportunities",
+        "Explore the IAFOR Research Archive",
+        "IAFOR Conference Finder",
+        "Recent IAFOR News",
+        "Mailing List",
+        "International, Intercultural, Interdisciplinary"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3125
+      }
+    },
+    {
+      "items": [
+        "IAFOR",
+        "The Kyoto Conference on Arts, Media & Culture (KAMC)",
+        "KAMC2025",
+        "Call for Papers"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "The symposium will be held in-person at the venue in Tokushima (no online presentation)",
+        "More details : https://discovertokushima.net/en",
+        "\u25cePlenary Special Programs after the Opening Ceremony",
+        "\u25ceOrganized Sessions (TBD)",
+        "\u25ceTechnical Sessions",
+        "\u25ceStudent Session",
+        "Special prizes will be awarded for meritorious papers.",
+        "\u25cePoster Session",
+        "\u25ceCultural Night (TBD)",
+        "\u25ceSpacecraft Control System Design Contest",
+        "\u203bAwards will be given to the top contestants with outstanding control algorithms."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.5454545454545454,
+        "keyword_ratio": 0.6363636363636364
+      }
+    },
+    {
+      "items": [
+        "Early Registration",
+        "On-site Registration",
+        "Early Student (ID Required)",
+        "On-site Student (ID Required)",
+        "Accompanying Person",
+        "Commendation & Closing Ceremony"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Intelligent mechatronics, robotics, automation, and control systems",
+        "Control system modeling and simulation techniques and methodologies",
+        "Digital human modelling and simulation",
+        "Human behavior modelling and cognitive modelling",
+        "Human performance modelling and human factors",
+        "Developments in the generation of virtual humans",
+        "Artificial intelligence to understand and model human factors",
+        "Biomedical and rehabilitation engineering, prosthetics and artificial organs",
+        "CAD/CAM/CAE/CAP and manufacturing systems, technologies and applications",
+        "Signal and image processing and pattern recognition in mechatronic systems",
+        "Energy, environment and power system (Renewable Energy, Energy Saving)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IJAMechS (\r\n                        http://www.inderscience.com/ijamechs)",
+        "IJMIC (\r\n                        http://www.indeience.com/ijmic)",
+        "IJHFMS(http://www.inderscience.com/ijhfms)."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2. Application procedure",
+        "1) paper title,",
+        "3) your name,",
+        "4) your affiliation and position,",
+        "5) a short biography,",
+        "6) up to three most relevant academic articles/chapters/books, and"
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Advanced Plasma Science and its Applications for Nitrides and Nanomaterials",
+        "Nano Electric Materials and Related Technologies",
+        "Solid State Devices and Materials",
+        "Microprocesses and Nanotechnology",
+        "Flexible and Printed Electronics",
+        "Low Temperature Bonding for 3D Integration",
+        "Ultrasonic Electronics",
+        "Dielectric Thin Films for Future Electron Devices: Science and Technology",
+        "Dry Process",
+        "Advanced Metallization for ULSI Applications",
+        "Microoptics",
+        "Scanning Probe Microscopy",
+        "Memrisitive Materials, Devices and Systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal links",
+        "IOPscience",
+        "IOP Publishing",
+        "Publishing Support"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Creating value in Business",
+        "Creating value through AI and digitalization",
+        "Creating value in Society"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "The symposium will be held in-person at the venue in Tokushima (no online presentation)",
+        "More details :",
+        "\u25cePlenary Special Programs after the Opening Ceremony",
+        "\u25ceOrganized Sessions (TBD)",
+        "\u25ceTechnical Sessions",
+        "\u25ceStudent Session",
+        "Special prizes will be awarded for meritorious papers.",
+        "\u25cePoster Session",
+        "\u25ceCultural Night (TBD)",
+        "\u25ceSpacecraft Control System Design Contest",
+        "\u203bAwards will be given to the top contestants with outstanding control algorithms."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Manuscript Template",
+        "Start Online Submission",
+        "Clicking the button will take you to an external site for online Submission."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Call for papers",
+        "How to apply for a presentation in ICMDT",
+        "Notice",
+        "Topics",
+        "Proceedings",
+        "Journal Publication",
+        "Presentation Method",
+        "Online Submission"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "IAFOR",
+        "The Kyoto Conference on Arts, Media & Culture (KAMC)",
+        "KAMC",
+        "Call for Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "2. Application procedure",
+        "1) paper title,",
+        "3) your name,",
+        "4) your affiliation and position,",
+        "5) a short biography,",
+        "6) up to three most relevant academic articles/chapters/books, and"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

@@ -1,0 +1,71 @@
+{
+  "level2_term": "cardiovascular function",
+  "all_urls": [
+    "https://www.sciencedirect.com/journal/journal-of-cardiovascular-computed-tomography/about/call-for-papers",
+    "https://www.jacc.org/call-for-papers/jacc-advances",
+    "https://physoc.onlinelibrary.wiley.com/hub/journal/14697793/call-for-papers/si-2023-000883",
+    "https://www.sciencedirect.com/journal/journal-of-molecular-and-cellular-cardiology-plus/about/call-for-papers",
+    "https://physoc.onlinelibrary.wiley.com/hub/journal/14697793/call-for-papers/si-2024-000318",
+    "https://www.jscai.org/",
+    "https://www.internationaljournalofcardiology.com/",
+    "https://www.ahajournals.org/jaha/call-for-submissions",
+    "https://onlinejcf.com/",
+    "https://www.nature.com/npjcardiohealth/calls-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Explore articles by subject",
+        "Find a job",
+        "Guide to authors",
+        "Editorial policies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Women\u2019s cardiovascular health through their life course",
+        "Digital Health Technologies: An Evolving Paradigm in the Transformation of Cardiovascular Care",
+        "Intravascular imaging in coronary artery disease",
+        "Quick links",
+        "Discover content",
+        "Publishing policies",
+        "Author & Researcher services",
+        "Libraries & institutions",
+        "Advertising & partnerships",
+        "Professional development",
+        "Regional websites"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    }
+  ],
+  "llm_io_pairs": [],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

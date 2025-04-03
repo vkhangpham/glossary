@@ -1,0 +1,482 @@
+{
+  "level1_term": "immunology",
+  "all_urls": [
+    "https://www.mayo.edu/research/departments-divisions/department-immunology/research",
+    "https://medicine.yale.edu/bbs/tracks/immunology/research-areas/",
+    "https://www.immunology.pitt.edu/research",
+    "https://medicine.iu.edu/microbiology-immunology/research",
+    "https://medicine.yale.edu/immuno/research/",
+    "https://medicine.umich.edu/dept/immunology/research",
+    "https://www.unmc.edu/gradstudies/programs/igpbs/immunology-pathology-infectious-diseases/research-areas.html",
+    "https://med.virginia.edu/mic/research-areas/",
+    "https://www.urmc.rochester.edu/microbiology-immunology/research",
+    "https://publichealth.jhu.edu/departments/molecular-microbiology-and-immunology/research-and-practice/research-areas",
+    "https://www.medschool.umaryland.edu/microbiology/research/immunology/",
+    "https://www.mayo.edu/research/departments-divisions/department-immunology/overview",
+    "https://www.sloankettering.edu/research-programs/immunology",
+    "https://med.nyu.edu/centers-programs/translational-immunology/research",
+    "https://www.pmi.pitt.edu/immunology-research-areas",
+    "https://med.emory.edu/departments/microbiology-immunology/research/index.html",
+    "https://www.upstate.edu/microb/research/index.php",
+    "https://chicago.medicine.uic.edu/microbiology/",
+    "https://immunology.wisc.edu/research-areas/",
+    "https://icahn.mssm.edu/about/departments/medicine/immunology/research",
+    "https://med.umn.edu/research/research-strengths-expertise/immunology-and-infectious-disease",
+    "https://medicine.iu.edu/microbiology-immunology",
+    "https://med.virginia.edu/mic/research-areas/immunology/",
+    "https://med.stanford.edu/microimmuno/research.html",
+    "https://medschool.uci.edu/research/clinical-departments/medicine/divisions/immunology/research",
+    "https://www.bumc.bu.edu/immunology/research/",
+    "https://www.cedars-sinai.edu/health-sciences-university/research/topics/immunology-autoimmunity.html",
+    "https://www.uab.edu/medicine/microbiology/research/programs/immunology",
+    "https://gradschool.duke.edu/academics/programs-degrees/immunology/",
+    "https://biochemmicroimmuno.med.wayne.edu/research"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Basic Immunology",
+        "Host Defense",
+        "Allergy",
+        "Autoimmunity",
+        "Cancer Immunology & Immunotherapy",
+        "Inflammation",
+        "Transplantation"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Allergies",
+        "Autoimmune diseases",
+        "Cancer",
+        "Chronic inflammation",
+        "Infections",
+        "Tissue transplantation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Center for Multiple Sclerosis and Autoimmune Neurology",
+        "Clinical Immunology and Immunotherapeutics Program",
+        "David F. and Margaret T. Grohne Cancer Immunology and Immunotherapy Program",
+        "Mayo Clinic Graduate School of Biomedical Sciences Ph.D. Program \u2014 Immunology Track"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Immunology in health and disease",
+        "Immunology in health and disease",
+        "Immunology in health and disease",
+        "Immunology in health and disease",
+        "Immunology in health and disease",
+        "Overview",
+        "Research",
+        "Education and Training",
+        "Mayo Clinic Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Department of Microbiology and Immunology\n     section navigation",
+        "Emory University School of Medicine",
+        "Research Focus Areas",
+        "Cellular And Molecular Immunology",
+        "Microbial Pathogenesis",
+        "Viral Pathogenesis",
+        "Molecular Biology and Genetics",
+        "Emerging Infectious Diseases",
+        "Development of Novel Vaccines and Therapeutics",
+        "Cancer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Infectivity",
+        "Gene regulation",
+        "DNA replication",
+        "Pathogenesis of human viruses",
+        "Microbes such as tuberculosis",
+        "Some sexually transmitted diseases",
+        "Virus/host interaction",
+        "Animal models of human disease"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Lupus",
+        "Multiple sclerosis",
+        "Allergies",
+        "Chicken pox",
+        "Cancer, including: Leukemia, lymphoma, and oral cancers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Infectious Disease Immunology",
+        "Tumor Immunology",
+        "Autoimmunity, Reproductive, and Transplant Immunology",
+        "Basic Immunology",
+        "Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alexandropoulos Lab",
+        "Berin Lab",
+        "Cunningham-Rundles Laboratory",
+        "Faith Lab",
+        "Lira Lab",
+        "Merad Lab",
+        "Miller Laboratory"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Meet the Director",
+        "Rachel Miller, MD",
+        "PROFESSOR"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Immune deficiencies in children",
+        "Epidemiology and transmission of viral infections including herpes viruses",
+        "Immune suppression caused by HIV",
+        "The role of small RNAs in patients with Lyme disease and tuberculosis."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Department of Microbiology & Immunology",
+        "Center for Immunology",
+        "Infectious Diseases & International Medicine",
+        "Rheumatic & Autoimmune Diseases",
+        "University of Minnesota Institute on Infectious Diseases"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "What processes control the development of immune cells?",
+        "How is self-tolerance established and maintained? How and why does autoimmune disease develop?",
+        "How does the immune system mediate chronic inflammation and tissue repair?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "The Carter Immunology Center",
+        "The Center for Immunity, Inflammation, and Regenerative Medicine",
+        "The Center for Brain Immunology and Glia",
+        "The UVA Comprehensive Cancer Center"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Programs and Centers",
+        "Primary MIC Immunology Faculty members",
+        "Anderson, Kristin",
+        "Criss, Alison K.",
+        "Dudley, Andrew",
+        "Engelhard, Victor H.",
+        "Erickson, Loren D.",
+        "Ewald, Sarah",
+        "Hahn, Young S.",
+        "Rutkowski, Melanie",
+        "Zegarra-Ruiz, Daniel Fernando",
+        "Zong, Hui"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Anderson, Kristin\nEngineering cancer-killing T cells to overcome obstacles in solid tumors",
+        "Criss, Alison K.\nCellular and molecular mechanisms of Neisserial pathogenesis",
+        "Dudley, Andrew\nTumor microenvironment and mechanisms of tumor neovascularization"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Erickson, Loren D.\nImmune mechanisms of pathogenic antibody production in allergy and autoimmunity",
+        "Hahn, Young S.\nImmune regulation for HCV infection and chronic liver inflammation",
+        "Zong, Hui\nEarly detection, cancer prevention, and tumor microenvironment"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "What processes control the development of immune cells?",
+        "How is self-tolerance established and maintained? How and why does autoimmune disease develop?",
+        "How does the immune system mediate chronic inflammation and tissue repair?"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Center for Multiple Sclerosis and Autoimmune Neurology",
+        "Clinical Immunology and Immunotherapeutics Program",
+        "David F. and Margaret T. Grohne Cancer Immunology and Immunotherapy Program",
+        "Mayo Clinic Graduate School of Biomedical Sciences Ph.D. Program \u2014 Immunology Track"
+      ],
+      "output_list_from_llm": [
+        "Clinical Immunology and Immunotherapeutics Program",
+        "David F. and Margaret T. Grohne Cancer Immunology and Immunotherapy Program",
+        "Mayo Clinic Graduate School of Biomedical Sciences Ph.D. Program \u2014 Immunology Track"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Alexandropoulos Lab",
+        "Berin Lab",
+        "Cunningham-Rundles Laboratory",
+        "Faith Lab",
+        "Lira Lab",
+        "Merad Lab",
+        "Miller Laboratory"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Clinical immunology and immunotherapeutics program",
+    "David f. and margaret t. grohne cancer immunology and immunotherapy program",
+    "Mayo clinic graduate school of biomedical sciences ph.d. program \u2014 immunology track"
+  ],
+  "error": null
+}

@@ -1,0 +1,688 @@
+{
+  "level2_term": "operating systems",
+  "all_urls": [
+    "http://www.wikicfp.com/cfp/call?conference=operating%20systems",
+    "https://sigops.org/s/conferences/sosp/2025/cfw.html",
+    "https://www.usenix.org/conference/osdi25/call-for-papers",
+    "https://sigops.org/s/conferences/sosp/2025/",
+    "https://www.asplos-conference.org/asplos2026/cfp/",
+    "https://dl.acm.org/doi/proceedings/10.1145/3593856",
+    "https://www.reddit.com/r/compsci/comments/93ydij/best_resources_to_learn_about_operating_system/",
+    "https://www.quora.com/What-are-the-latest-research-papers-on-operating-systems",
+    "https://www.usenix.org/conference/atc25/call-for-papers",
+    "https://www.reddit.com/r/linux/comments/9loaj/research_topics_on_operating_systemsor_linux/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Operating Systems\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Operating Systems\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Operating Systems",
+        "(ordered by deadline)",
+        "Event",
+        "SOENG 2025",
+        "Jul 26, 2025 - Jul 27, 2025",
+        "Expired CFPs",
+        "HotStorage 2025",
+        "Jul 10, 2025 - Jul 11, 2025",
+        "RTNS 2025",
+        "Nov 5, 2025 - Nov 7, 2025",
+        "HotOS 2025",
+        "May 14, 2025 - May 16, 2025",
+        "HiPEAC 2025",
+        "Jan 1, 2025 - Jan 30, 2025",
+        "APSys 2024",
+        "Sep 4, 2024 - Sep 5, 2024",
+        "MSST Poster 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "OSVS 2024",
+        "Jul 12, 2024 - Jul 12, 2024",
+        "ARCS 2024",
+        "May 14, 2024 - May 16, 2024",
+        "MSST 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "MSST 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "MSST 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "ROSS 2023",
+        "Nov 12, 2023 - Nov 12, 2023",
+        "PLOS 2023",
+        "Oct 23, 2023 - Oct 23, 2023",
+        "ARCS 2023",
+        "Jun 13, 2023 - Jun 15, 2023",
+        "MOBILWARE  2022",
+        "Nov 23, 2022 - Nov 25, 2022",
+        "ROSS 2022",
+        "Nov 13, 2022 - Nov 13, 2022",
+        "ARCS 2022",
+        "Sep 13, 2022 - Sep 15, 2022",
+        "VHPC 2022",
+        "Jun 2, 2022 - Jun 2, 2022",
+        "EAI MOBILWARE 2021",
+        "Oct 22, 2021 - Oct 24, 2021",
+        "first |\t\t\t\n\n\t\t\t\t previous \n\n\t\t\t\t| Page 1 |\n\n        \nnext\n\n\t\t\t| last"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 47,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.10638297872340426,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.02127659574468085
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "SOENG 2025",
+        "Jul 26, 2025 - Jul 27, 2025",
+        "Expired CFPs",
+        "HotStorage 2025",
+        "Jul 10, 2025 - Jul 11, 2025",
+        "RTNS 2025",
+        "Nov 5, 2025 - Nov 7, 2025",
+        "HotOS 2025",
+        "May 14, 2025 - May 16, 2025",
+        "HiPEAC 2025",
+        "Jan 1, 2025 - Jan 30, 2025",
+        "APSys 2024",
+        "Sep 4, 2024 - Sep 5, 2024",
+        "MSST Poster 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "OSVS 2024",
+        "Jul 12, 2024 - Jul 12, 2024",
+        "ARCS 2024",
+        "May 14, 2024 - May 16, 2024",
+        "MSST 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "MSST 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "MSST 2024",
+        "Jun 3, 2024 - Jun 7, 2024",
+        "ROSS 2023",
+        "Nov 12, 2023 - Nov 12, 2023",
+        "PLOS 2023",
+        "Oct 23, 2023 - Oct 23, 2023",
+        "ARCS 2023",
+        "Jun 13, 2023 - Jun 15, 2023",
+        "MOBILWARE  2022",
+        "Nov 23, 2022 - Nov 25, 2022",
+        "ROSS 2022",
+        "Nov 13, 2022 - Nov 13, 2022",
+        "ARCS 2022",
+        "Sep 13, 2022 - Sep 15, 2022",
+        "VHPC 2022",
+        "Jun 2, 2022 - Jun 2, 2022",
+        "EAI MOBILWARE 2021",
+        "Oct 22, 2021 - Oct 24, 2021"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 42,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.023809523809523808,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.023809523809523808
+      }
+    },
+    {
+      "items": [
+        "A link on the SOSP Web site",
+        "Management of registration for participants",
+        "Setup of meeting space and related equipment",
+        "Coffee breaks and lunch arrangements"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Set up and host a webpage for the workshop/tutorial",
+        "Workshop/tutorial publicity, call for papers, and submission and review process",
+        "Provide a brief description of the workshop/tutorial for inclusion on the SOSP Web page",
+        "Scheduling workshop/tutorial activities in collaboration with the SOSP local organizers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "SOSP 2025 Call for Workshops",
+        "Submission information",
+        "Responsibilities",
+        "Important dates"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Event Info",
+        "Deadline to submit a workshop/tutorial proposal",
+        "Notification of acceptance",
+        "Workshops/tutorials"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Abstract registrations due: Tuesday, December 3, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Complete paper submissions due: Tuesday, December 10, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Reviews available: Thursday, March 6, 2025",
+        "Author responses due: Monday, March 10, 2025",
+        "Notification to authors: Tuesday, March 25, 2025",
+        "Final papers due: Thursday, June 5, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "spaced 8.5\" x 11\" pages, including",
+        "point type on 12",
+        "point (single",
+        "spaced)",
+        "column format, Times Roman or a similar font, within a text block 7\" wide x 9\" deep. Accepted papers"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "October 13 \u2013 16, 2025 \u00b7 Lotte Hotel World, Seoul, Republic of Korea",
+        "Abstract Registration: April 10, 2025; 23:59 PT",
+        "Paper Submission: April 17, 2025; 23:59 PT",
+        "Link: HotCRP Submission Site"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Event Info",
+        "Deadline to register abstracts",
+        "Submission deadline (no extensions)",
+        "Reviews available for author response",
+        "Author response due",
+        "Author notification",
+        "Artifact intent registration",
+        "Artifact submission",
+        "Camera ready due",
+        "Workshop/Tutorial Proposals Due",
+        "Workshop/Tutorial Notification of Acceptance",
+        "Workshop",
+        "Conference"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.15384615384615385,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.38461538461538464
+      }
+    },
+    {
+      "items": [
+        "Two submission cycles",
+        "Limit on the number of submissions by the same author",
+        "Explicit assessment of Interdisciplinary research",
+        "Unlimited appendix"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Abstract submission \u2014 March 05, 2025 (11:59pm Eastern)",
+        "Full paper submission \u2014 March 12, 2025",
+        "Author response \u2014 June 09 \u2014 13, 2025",
+        "Notification \u2014 June 24, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Abstract submission \u2014 Aug 13,\u00a0 2025 (11:59pm Eastern)",
+        "Full paper submission \u2014 Aug 20, 2025",
+        "Author response \u2014 Nov 10 \u2014 14, 2025",
+        "Notification \u2014 Nov 24, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Existing, emerging, and nontraditional compute platforms at all scales",
+        "Heterogeneous architectures and accelerators",
+        "Internet services, cloud computing, and datacenters",
+        "Memory, storage, networking, and I/O",
+        "Power, energy, and thermal management",
+        "Profiling, debugging, and testing",
+        "Security, reliability, and availability",
+        "Systems for enabling parallelism and computation on big data",
+        "Virtualization and virtualized systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Synopsis",
+        "Program Chairs",
+        "Important Dates",
+        "Submission Website",
+        "Scope and Expectations",
+        "Explicit assessment of interdisciplinary research",
+        "Resubmissions",
+        "Limit on the number of submissions by the same author",
+        "Major Revisions",
+        "Declaring Areas and Topics",
+        "Anonymization",
+        "Anonymized Supplemental Material and Appendixes",
+        "Declaring Conflicts of Interest",
+        "Declaring Authors",
+        "Originality and Concurrent Submissions",
+        "Ethical and Other Obligations",
+        "Formatting and Editing",
+        "Author Response Period",
+        "Accepted Papers",
+        "Artifact Evaluation",
+        "Poster and Lightning Sessions",
+        "Wild and Crazy Ideas Session",
+        "Best Paper Award",
+        "Program and Registration",
+        "Confidentiality",
+        "Acknowledgement",
+        "Questions?",
+        "Program Committee"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 28,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.17857142857142858,
+        "length_consistency": true,
+        "pattern_ratio": 0.21428571428571427,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Aspect",
+        "file format",
+        "page limit",
+        "paper size",
+        "top margin",
+        "bottom margin",
+        "left margin",
+        "right margin",
+        "column separation",
+        "body font size",
+        "abstract font",
+        "section heading font",
+        "subsection heading font",
+        "space between section heading and text",
+        "caption font",
+        "fonts in figures and tables",
+        "reference entries",
+        "appendices"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05555555555555555
+      }
+    },
+    {
+      "items": [
+        "Emery",
+        "Emmett",
+        "Gernot",
+        "Herbert",
+        "Kevin",
+        "Lieven",
+        "Michael",
+        "Peter",
+        "Rajeev",
+        "T. N."
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "25),\u00a0 Dan Tsafrir and Madan Musuvathi (ASPLOS \u2018",
+        "24), Natalie Enright Jerger and Michael Swift (ASPLOS \u2019",
+        "23), Shan Lu and Thomas Wenisch (ASPLOS \u2019",
+        "22), Emery Berger and Christos Kozyrakis (ASPLOS \u2019",
+        "21), Luis Ceze and Karin Strauss (ASPLOS \u2019",
+        "20), Emmett Witchel and Alvy Lebeck (ASPLOS \u2019",
+        "19), Dahlia Malkhi and Dan Tsafrir (ATC \u2019",
+        "19), Ricardo Bianchini and Vivek Sarkar (ASPLOS \u2019",
+        "18), John Carter (ASPLOS \u2019",
+        "17), Yuanyuan Zhou (ASPLOS \u2019",
+        "16), Sandhya Dwarkadas (ASPLOS \u2019",
+        "15), Sarita Adve (ASPLOS \u2019",
+        "14), Steve Keckler (ISCA \u2019",
+        "14), Margaret Martonosi (ISCA \u2019",
+        "13), Onur Mutlu (MICRO \u2019"
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abstract registrations due: Tuesday, January 7, 2025, 11:59 pm UTC",
+        "Submissions due: Tuesday, January 14, 2025, 11:59 pm UTC",
+        "Authors' response period: Monday, April 7\u2013Wednesday, April 9, 2025, 11:59 pm UTC",
+        "Notification to authors: Friday, April 25, 2025",
+        "Final papers due: Tuesday, June 3, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Sponsored by USENIX, the Advanced Computing Systems Association.",
+        "Download Call for Papers PDF",
+        "There will be an optional artifact evaluation process for accepted papers.",
+        "Go to Submission Instructions"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.75
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Set up and host a webpage for the workshop/tutorial",
+        "Workshop/tutorial publicity, call for papers, and submission and review process",
+        "Provide a brief description of the workshop/tutorial for inclusion on the SOSP Web page",
+        "Scheduling workshop/tutorial activities in collaboration with the SOSP local organizers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Sponsored by USENIX, the Advanced Computing Systems Association.",
+        "Download Call for Papers PDF",
+        "There will be an optional artifact evaluation process for accepted papers.",
+        "Go to Submission Instructions"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Two submission cycles",
+        "Limit on the number of submissions by the same author",
+        "Explicit assessment of Interdisciplinary research",
+        "Unlimited appendix"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Abstract registrations due: Tuesday, December 3, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Complete paper submissions due: Tuesday, December 10, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Reviews available: Thursday, March 6,",
+        "Author responses due: Monday, March 10,",
+        "Notification to authors: Tuesday, March 25,",
+        "Final papers due: Thursday, June 5,"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Abstract registrations due: Tuesday, January 7, 2025, 11:59 pm UTC",
+        "Submissions due: Tuesday, January 14, 2025, 11:59 pm UTC",
+        "Authors' response period: Monday, April 7\u2013Wednesday, April 9, 2025, 11:59 pm UTC",
+        "Notification to authors: Friday, April 25,",
+        "Final papers due: Tuesday, June 3,"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

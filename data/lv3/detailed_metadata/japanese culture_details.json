@@ -1,0 +1,607 @@
+{
+  "level2_term": "japanese culture",
+  "all_urls": [
+    "https://kyoto-amc.iafor.org/call-for-papers/",
+    "https://esil-sedi.eu/call-for-papers-16th-annual-conference-of-the-japan-chapter-of-the-asian-society-of-international-law/",
+    "https://replaying.jp/",
+    "https://www.nichibun.ac.jp/en/publications/announce/jr/",
+    "https://www.jadh.org/jadh2024cfp",
+    "https://eajs.eu/call-for-papers/",
+    "https://www.nichibun.ac.jp/en/",
+    "https://www.asiansil.org/call-for-papers-the-japan-chapter-of-the-asian-society-of-international-laws-16th-annual-conference/",
+    "http://www.japanstudies.org/2023-jsa-conference-in-hawaii.html",
+    "https://gensoken.toyo.ac.jp/japanese-society-and-culture/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Submission Streams",
+        "How to Submit Your Abstract",
+        "Presentation Formats",
+        "Review System",
+        "Scheduling Requests",
+        "Conference Proceedings",
+        "Publication & Licensing Issues",
+        "Ethical Conduct",
+        "The Use of Generative AI and AI-assisted Technologies",
+        "IAFOR Global Partners",
+        "IAFOR Publishing Opportunities",
+        "Explore the IAFOR Research Archive",
+        "IAFOR Conference Finder",
+        "Recent IAFOR News",
+        "Mailing List",
+        "International, Intercultural, Interdisciplinary"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3125
+      }
+    },
+    {
+      "items": [
+        "IAFOR",
+        "The Kyoto Conference on Arts, Media & Culture (KAMC)",
+        "KAMC2025",
+        "Call for Papers"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "ESIL Board Elections in Valencia",
+        "ESIL Board Elections in Valencia",
+        "ESIL Lectures Now Available on Youtube",
+        "Privacy Overview"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "December 10, 2024",
+        "Maria Grazia Dusina",
+        "Members' News"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "April 20, 2012",
+        "admin",
+        "Members' News"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "April 20, 2012",
+        "admin",
+        "Members' News"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "May 14, 2012",
+        "admin",
+        "Members' News"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Type of submission (poster, demonstration, poster & demonstration, lightning talk, paper, or panel):",
+        "Title of submission:",
+        "Name of author(s):",
+        "Affiliation(s):",
+        "Email address(es):"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Cultural Comparison. Gamevironments, #10, Article #10. http://nbn",
+        "resolving.de/urn:nbn:de:gbv:46",
+        "00107541"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Japan Review",
+        "Current, Future and Past issues",
+        "For authors"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Natsuko Yoshiga (Osaka University, Japan), Co-chair",
+        "Satoru Nakamura (University of Tokyo, Japan), Co-chair",
+        "Paul Arthur (Edith Cowan University, Australia)",
+        "Marcus Bingenheimer (Temple University, USA)",
+        "Elisa Beshero-Bondar (Penn State Erie, The Behrend College, USA)",
+        "James Cummings (Newcastle University, UK)",
+        "J. Stephen Downie (University of Illinois, USA)",
+        "Maciej Eder (Polish Academy of Sciences, Poland)",
+        "\u00d8yvind Eide (University of Cologne, Germany)",
+        "Makoto Goto (National Museum of Japanese History, Japan)",
+        "Yuta Hashimoto (National Museum of Japanese History, Japan)",
+        "Bor Hodo\u0161\u010dek (Osaka University, Japan)",
+        "JenJou Hung (Dharma Drum Institute of Liberal Arts, Taiwan)",
+        "Jieh Hsiang (National Taiwan University, Taiwan)",
+        "Akihiro Kawase (Doshisha University, Japan)",
+        "Nobuhiko Kikuchi (National Institute of Japanese Literature, Japan)",
+        "Naoki Kokaze (Chiba University, Japan)",
+        "Chao-Lin Liu (National Chengchi University, Taiwan)",
+        "Yoko Mabuchi (Wayo Women's University, Japan)",
+        "Hajime Murai (Future University Hakodate, Japan)",
+        "Kiyonori Nagasaki (International Institute for Digital Humanities, Japan)",
+        "Chifumi Nishioka (National Institute of Informatics, Japan)",
+        "Ikki Ohmukai (University of Tokyo, Japan)",
+        "Geoffrey Rockwell (University of Alberta, Canada)",
+        "Christof Sch\u00f6ch (Trier University, Germany)",
+        "Martina Scholger (University of Graz, Austria)",
+        "Masahiro Shimoda (Musashino University, Japan)",
+        "Raymond Siemens (University of Victoria, Canada)",
+        "Tomoji Tabata (Osaka University, Japan)",
+        "Ruck Thawonmas (Ritsumeikan University, Japan)",
+        "Toru Tomabechi (International Institute for Digital Humanities, Japan)",
+        "Ayaka Uesaka (Osaka Seikei University, Japan)",
+        "Raffaele Viglianti (University of Maryland, USA)",
+        "Christian Wittern (Kyoto University, Japan)",
+        "Taizo Yamada (University of Tokyo, Japan)",
+        "Hilofumi Yamamoto (Tokyo Institute of Technology, Japan)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 36,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "announces",
+        "policy",
+        "chatgpt"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "For more information visit:",
+        "https://site.unibo.it/lilec-prin2022-distopie/en/congress",
+        "Best regards,",
+        "Anna Specchio"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "International Conference",
+        "13\u201315th November 2025",
+        "In cooperation with the Cluster of Excellence \u201cReligion and Politics\u201d and Asian Studies Centre",
+        "Please note that the deadline for submissions is approaching soon: 31 March"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "futures are predominantly driven by a small group of libertarian techno",
+        "oligarchs who, in spite of reinforcing critical and dystopian counter",
+        "discourses, propound celebratory views of technological progress",
+        "of enhancing, or overcoming the human",
+        "ins disregards or even erases a vast imaginary zone of alternative futures."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Latest News",
+        "Events",
+        "\u56fd\u969b\u65e5\u672c\u6587\u5316\u7814\u7a76\u30bb\u30f3\u30bf\u30fc - International Research Center for Japanese Studies",
+        "Endeavors by Nichibunken- HIGHLIGHTS",
+        "\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9- DATABASES",
+        "\u56f3\u66f8\u9928- Library",
+        "Official Nichibunken YouTube channel",
+        "\u51fa\u7248\u7269- PUBLICATIONS",
+        "Opportunities",
+        "Links"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Online Museum: \"Maternal Health and Images of the Body in Japanese Ukiyo-e\"",
+        "Commemorating the 150th Anniversary of the Iwakura Mission (1871-1873)",
+        "\u201cEmaki as Manga\u201d Project: A Study on Reading Picture Scrolls \u201cEmaki\u201d in a Manga Format",
+        "Akashi Hiroakira and Shimadzu Genz\u014d: Trailblazers of Modern Science and Technology in Kyoto"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Video Introduction to Nichibunken",
+        "Watch on YouTube",
+        "Official Nichibunken YouTube channel"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Job Opportunities",
+        "Call for Papers",
+        "Graduate Education",
+        "Graduate Education",
+        "Call for Papers",
+        "Call for Papers"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "2. Application procedure",
+        "1) paper title,",
+        "3) your name,",
+        "4) your affiliation and position,",
+        "5) a short biography,",
+        "6) up to three most relevant academic articles/chapters/books, and"
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Evolvability",
+        "The Ability to Utilize Artificial Intelligence",
+        "Definition, Validity, and Policy ImplicationsKoichi Kume and Hiroyuki Chuma"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Job Opportunities",
+        "Call for Papers",
+        "Graduate Education",
+        "Graduate Education",
+        "Call for Papers",
+        "Call for Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Type of submission (poster, demonstration, poster & demonstration, lightning talk, paper, or panel):",
+        "Title of submission:",
+        "Name of author(s):",
+        "Affiliation(s):",
+        "Email address(es):"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "IAFOR",
+        "The Kyoto Conference on Arts, Media & Culture (KAMC)",
+        "KAMC",
+        "Call for Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Online Museum: \"Maternal Health and Images of the Body in Japanese Ukiyo-e\"",
+        "Commemorating the 150th Anniversary of the Iwakura Mission (1871-1873)",
+        "\u201cEmaki as Manga\u201d Project: A Study on Reading Picture Scrolls \u201cEmaki\u201d in a Manga Format",
+        "Akashi Hiroakira and Shimadzu Genz\u014d: Trailblazers of Modern Science and Technology in Kyoto"
+      ],
+      "output_list_from_llm": [
+        "Online Museum: \"Maternal Health and Images of the Body in Japanese Ukiyo-e\"",
+        "Commemorating the 150th Anniversary of the Iwakura Mission (1871-1873)",
+        "\u201cEmaki as Manga\u201d Project: A Study on Reading Picture Scrolls \u201cEmaki\u201d in a Manga Format"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "International Conference",
+        "13\u201315th November",
+        "In cooperation with the Cluster of Excellence \u201cReligion and Politics\u201d and Asian Studies Centre",
+        "Please note that the deadline for submissions is approaching soon: 31 March"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Online museum: \"maternal health and images of the body in japanese ukiyo-e\"",
+    "Commemorating the 150th anniversary of the iwakura mission (1871-1873)",
+    "\u201cemaki as manga\u201d project: a study on reading picture scrolls \u201cemaki\u201d in a manga format"
+  ],
+  "error": null
+}

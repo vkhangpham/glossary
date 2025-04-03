@@ -1,0 +1,198 @@
+{
+  "level2_term": "geospatial intelligence",
+  "all_urls": [
+    "https://usgif.org/now-open-call-for-2025-geoint-symposium-training-session-submissions/",
+    "https://usgif.org/event/call-for-training-session-proposals-geoint-symposium-2025/",
+    "https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation/about/call-for-papers",
+    "http://www.wikicfp.com/cfp/call?conference=geo-spatial%20intelligence",
+    "https://onlinelibrary.wiley.com/journal/14679671/homepage/call-for-papers",
+    "https://wwww.easychair.org/cfp/GeoInt360",
+    "https://www.instagram.com/info_callforpaper/p/DDIxf6gh0p7/",
+    "https://www.cyberdefensemagazine.com/event/dgi-defence-geospatial-intelligence-2024/",
+    "https://www.nationalacademies.org/our-work/future-us-workforce-for-geospatial-intelligence",
+    "https://www.napsgfoundation.org/isprs-international-journal-of-geo-information-call-for-papers/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "News, Press Releases",
+        "Now OPEN \u2013 Call for 2025 GEOINT Symposium Training Session Submissions",
+        "August 6, 2024"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "The Submission period is open from August 5 \u2013 September 15, 2024.",
+        "What are Training Sessions?",
+        "There are two training and education categories:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "St. Louis, MO",
+        "April 2025 Event",
+        "10:00 am CST",
+        "Herndon, VA",
+        "May 21, 2025"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "ASGI 2025",
+        "May 23, 2025 - May 25, 2025"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "New-space dimension opportunities and applications",
+        "Signal processing, image processing, computer vision and artificial intelligence",
+        "Cloud and space computing",
+        "Geospatial big data and geo-analytics",
+        "Smart cities, digital twins, GIS, BIM and SIM",
+        "Indoor and outdoor mapping and navigation",
+        "3D modeling, analysis, and visualization, VR and AR",
+        "GNSS/INS/WiFi positioning and navigation",
+        "Aerial photogrammetry and remote sensing",
+        "Technological aspects in climate change and sustainable environments",
+        "Geospatial planning and policies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "companies, scholars, and individuals",
+        "Aviv, Israel, on Dec. 4",
+        "5, 2023."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "The Submission period is open from August 5 \u2013 September 15, 2024.",
+        "What are Training Sessions?",
+        "There are two training and education categories:"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "News, Press Releases",
+        "Now OPEN \u2013 Call for 2025 GEOINT Symposium Training Session Submissions",
+        "August 6,"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

@@ -1,0 +1,1709 @@
+{
+  "level1_term": "geology",
+  "all_urls": [
+    "https://www.stonybrook.edu/commcms/geosciences/research/research_areas",
+    "https://geology.mines.edu/research/",
+    "https://artsci.tamu.edu/geology-geophysics/research/index.html",
+    "https://www.geology.pitt.edu/research",
+    "https://geo.ua.edu/research/",
+    "https://www.k-state.edu/geology/research/",
+    "https://www.unr.edu/geology/research",
+    "https://www.geosc.psu.edu/research-focus-areas",
+    "https://www.geo.wvu.edu/research",
+    "https://earth.utah.edu/research/index.php",
+    "https://epsci.stanford.edu/research-impact",
+    "https://www.colorado.edu/geologicalsciences/research",
+    "https://geology.ufl.edu/research-and-facilities/research/",
+    "https://dornsife.usc.edu/earth/research/",
+    "https://geosciences.princeton.edu/research",
+    "https://ceps.unh.edu/earth-sciences/research/geology-geophysics",
+    "https://www.beg.utexas.edu/research/programs/sustainable-water-resources/research-topics",
+    "https://www.sas.rochester.edu/ees/research/index.html",
+    "https://www.utpb.edu/academics/colleges/arts-sciences/departments/geosciences/research/index",
+    "https://www.ohio.edu/cas/geology/research/geological-sciences-faculty-research",
+    "https://eps.ucdavis.edu/research/group/geology",
+    "https://www.eaps.purdue.edu/research/",
+    "https://www.eas.cornell.edu/eas/research/research-areas",
+    "https://www.k-state.edu/geology/research/faculty_research/",
+    "https://www.geology.pitt.edu/research-areas",
+    "https://www.geo.wvu.edu/research/research-areas",
+    "https://www.geo.arizona.edu/Research",
+    "https://geoearth.charlotte.edu/research/",
+    "https://evsc.as.virginia.edu/geosciences",
+    "https://geology.columbian.gwu.edu/research"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Programs",
+        "Course Descriptions",
+        "Course Schedules",
+        "Apply Now",
+        "Applicant FAQs"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Planetary Geology",
+        "Seismology, Tectonics, and Geophysics",
+        "Mineral and Rock Physics",
+        "Crystal Chemistry and Crystallography",
+        "Geochemistry",
+        "Petrology",
+        "Sedimentary Geology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "based research on planetary analog terrains. Particular emphasis",
+        "built mid",
+        "IR emission spectrometer, (2) a UV",
+        "visible",
+        "FTIR imaging spectrometer, (4) \u00a0a micro",
+        "Raman",
+        "FTIR spectrometer and imager, (6) a micro X",
+        "ray fluorescence",
+        "controlled environmental chamber for infrared spectral",
+        "temperature",
+        "equipped experimental petrology",
+        "infrared spectrometer for field studies, and (11) an image processing"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.08333333333333333,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "1) a custom-built mid-IR emission spectrometer, (",
+        "2) a UV-visible-near-IR",
+        "3) a micro-FTIR imaging spectrometer, (",
+        "4) \u00a0a micro-Raman",
+        "5) a nano-FTIR spectrometer and imager, (",
+        "6) a micro X-ray fluorescence",
+        "7) a pressure and temperature-controlled environmental chamber for infrared spectral",
+        "8) a low-temperature",
+        "9) a fully-equipped experimental petrology",
+        "10) a portable thermal hyperspectral imager, Raman spectrometer and",
+        "11) an image processing"
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "altered synthetic",
+        "ray amorphous sulfates; determining the mid",
+        "scale",
+        "Earth asteroid Ryugu."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "pressure and high",
+        "temperature",
+        "pressure phase relations for constraining models for Earth's mantle",
+        "anvil apparatus for",
+        "ray sources at the NSLS. Complete single",
+        "crystal and powder X",
+        "ray diffraction facilities"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "ray and neutron facilities.",
+        "ray diffraction, with capabilities",
+        "temperature and high",
+        "pressure studies exist. Projects emphasize crystal",
+        "II, and Center Functional Nanomaterials, CFN, provides opportunities",
+        "intensity X",
+        "ray sources. Other projects",
+        "ray absorption spectroscopy to examine local structure in minerals and neutron"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "element geochemistry, aqueous",
+        "temperature aqueous systems to \u00a0 mineral",
+        "melt systems.",
+        "temperature",
+        "related studies focus on marine and continental paleoenvironments and"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.4,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "inlet and elemental analysis",
+        "IRMS and EA",
+        "IRMS), \u00a0 X",
+        "ray diffraction facilities,",
+        "state nuclear magnetic resonance (NMR) spectrometers, and two synthesis and"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "ocean ridge basalt,",
+        "ocean ridge",
+        "poor apatite for structural"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "rock interactions. A",
+        "MS and TIMS mass spectrometry lab, a light stable isotope lab, a",
+        "ray diffraction facilities, and a variety of facilities"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Economic Geology",
+        "Engineering Geology and Geotechnics",
+        "Hydrology",
+        "Petroleum Systems",
+        "Underground Construction and Tunneling",
+        "Center to Advance the Science of Exporation to Reclamation in Mining (CASERM)",
+        "Center for Mineral Resources Science",
+        "Center for Mining Sustainability",
+        "Chevron Center of Research Excellence",
+        "Mudrocks and Tight Oil Characterization Consortium",
+        "Petroleum Technology Transfer Council",
+        "Potential Gas Committee",
+        "Research Partnership to Secure Energy for America",
+        "Sedimentary Analogs Database Research Program"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.21428571428571427,
+        "length_consistency": true,
+        "pattern_ratio": 0.07142857142857142,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "https://cmrs.mines.edu/professional-master-in-mineral-exploration/",
+        "MineralExplorationPM_SEP19",
+        "PMMineralExplorationBrochure_SEP19"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "master",
+        "mineral",
+        "exploration/"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Earth Resources & Resilience",
+        "Ancient Life & Environments",
+        "The Earth System & Other Planetary Bodies",
+        "Environmental & Engineering Geology & Geophysics"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Earth Resources & Resilience",
+        "Ancient Life & Environments",
+        "The Earth System & Other Planetary Bodies",
+        "Environmental & Engineering Geology & Geophysics"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Tectonic, Volcanic and Surface Processes",
+        "Planetary Science and Astrobiology",
+        "Paleoclimate and Environmental Change",
+        "Environmental Geochemistry and Biogeochemistry",
+        "Energy Geosciences",
+        "Hydrologic Processes"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Research Overview",
+        "Energy",
+        "Environmental Geochemistry, Biogeochemistry, Hydrochemistry",
+        "Geophysics, Tectonics, Structural Geology",
+        "High-Temperature Geochemistry and Petrology",
+        "Hydro3",
+        "Paleo3",
+        "Planetary Science"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Department",
+        "A&S Resources",
+        "The University of Alabama"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Energy and Mineral Resources",
+        "Earth Surface Processes and the Environment",
+        "Evolution and Solid Earth"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Climate",
+        "Deep Earth Processes",
+        "Earth Surface Processes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Geological Carbon Storage",
+        "Earthquakes and Volcanoes",
+        "Coastal and Ocean Processes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Oil and Gas Resources",
+        "Water and Soil Resources",
+        "Labs and Facilities"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Research Areas and Topics",
+        "Climate",
+        "Deep Earth Processes",
+        "Earth Surface Processes",
+        "Geological Carbon Storage",
+        "Mineral Resources",
+        "Earthquakes and Volcanoes",
+        "Coastal and Ocean Processes",
+        "Oil and Gas Resources",
+        "Water and Soil Resources"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Earth and planetary surface processes",
+        "Earthquakes and seismology",
+        "Geological engineering",
+        "High-temperature geochemistry and petrology",
+        "Hydrology and hydrogeology",
+        "Low-temperature geochemistry and biogeochemical cycling",
+        "Mineral and energy resources",
+        "Solid earth and tectonic processes",
+        "Reflecting on 15 years working on Mars",
+        "Geophysics at Fly Ranch"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3
+      }
+    },
+    {
+      "items": [
+        "Geodynamics and Geophysics",
+        "Earth History and Paleoenvironments",
+        "Ice, Climate, and Hydrosphere"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Landscape Dynamics",
+        "Paleobiology",
+        "Planetary Geology and Evolution"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Interdisciplinary Collaborations",
+        "Industry Partnerships",
+        "Community Service and Outreach",
+        "West Virginia GIS Technical Center",
+        "Center for Resilient Communities",
+        "Red Map, Blue Map\u00a0With Kenneth C. Martis",
+        "Mapping a Legacy\u00a0with Gregory Elmes",
+        "Caving Culturally with Mar\u00eda P\u00e9rez"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Department of Geology & Geophysics",
+        "Main Navigation",
+        "Geology & Geophysics",
+        "Geological Engineering and Geological Hazards",
+        "Experimental Geophysics and Geochemistry",
+        "Petrology and High Temperature Geochemistry",
+        "Solid Earth and Tectonic Process",
+        "Surface and Hydrologic Processes",
+        "Isotopic Geochemistry and Biogeochemistry",
+        "Paleoclimatology",
+        "Energy Geosciences",
+        "Seismology, Geophysics, and Tectonophysics",
+        "Geodesy",
+        "Paleobiology and Evolution",
+        "Geology & Geophysics",
+        "Stay in Touch",
+        "Quick Links"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.058823529411764705,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.23529411764705882
+      }
+    },
+    {
+      "items": [
+        "ecology",
+        "animal interactions (ammonite functional",
+        "environment interactions (trace fossils; biomineralization"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research Areas",
+        "Geobiology",
+        "Geochemistry & Environmental Chemistry",
+        "Geochronology & Thermochronology",
+        "Surface Processes",
+        "Mineralogy, Materials Science, and Mineral Physics",
+        "Paleontology & Paleobiology",
+        "Petrology & Volcanology",
+        "Planetary Science",
+        "Sedimentary Geology",
+        "Structural Geology & Tectonics, Geomechanics",
+        "Rock Physics & Geomaterials",
+        "Critical Minerals",
+        "Industrial Affiliate Programs",
+        "Planetary Science",
+        "Shared Analytical Facilities and Research Resources",
+        "Computing Resources",
+        "Address",
+        "Quick Links",
+        "Learn more"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Basin and Petroleum System Modeling Group",
+        "Mineral-X",
+        "Stanford Rocks and Geomaterials Project"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Cosmochemistry & Planetary Geology",
+        "Earth Science Education",
+        "Economic & Energy Resources",
+        "Geobiology & Astrobiology",
+        "Geochemistry",
+        "Geochronology, Thermochronology, Geologic Time",
+        "Geodynamics, Geophysics, Remote Sensing",
+        "Geomorphology & Cryosphere",
+        "Global Change",
+        "Hydrology",
+        "Natural Hazards",
+        "Paleoclimate & Paleoceanography",
+        "Paleontology & Paleobiology",
+        "Petrology & Mineralogy",
+        "Sedimentology & Stratigraphy",
+        "Structure & Tectonics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "CIRES",
+        "INSTAAR",
+        "University of Colorado Museum of Natural History"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Undergraduate",
+        "Graduate",
+        "Websites",
+        "Stay Connected"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Earth\u2019s Climate and Environment",
+        "Dynamics and Materials of Earth and Planets",
+        "Geobiology",
+        "Land Use and Environmental Change Institute",
+        "Research at the Florida Museum of Natural History"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Climate Science",
+        "Geobiology",
+        "Geochemistry"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Geophysics",
+        "Tectonics",
+        "Projects"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Darlene Garza",
+        "213-740-6109",
+        "garzadar@usc.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Professor Julien Emile-Geay",
+        "213-740-2945",
+        "julieneg@usc.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Public Video Lectures",
+        "Geosciences Courses",
+        "Graduate Studies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Climate Science",
+        "Geochemistry",
+        "Geology",
+        "Geophysics",
+        "Paleoclimate"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Program in Atmospheric and Oceanic Sciences (AOS)",
+        "The High Meadows Environmental Institute (HMEI)",
+        "Princeton Institute for Computational Science and Engineering (PICSciE)",
+        "Princeton Materials Institute (PMI)",
+        "Geophysical Fluid Dynamics Laboratory (NOAA/GFDL)",
+        "Program in Science, Technology, and Environmental Policy (STEP)",
+        "More information: Public Video Lectures"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "items": [
+        "Global Synthesis of Groundwater Recharge in Semiarid and Arid Regions",
+        "Assessing Controls on Diffuse Groundwater Recharge Using Unsaturated Flow Modeling",
+        "Choosing Appropriate Techniques for Quantifying Groundwater Recharge"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "BEG Primary",
+        "BEG Primary",
+        "Main (SWR)"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Land Use Change Impacts on Water Resources (Ecohydrology)",
+        "Climate Variability/Change Impacts on Water Resources",
+        "Groundwater Surface Water Interactions",
+        "Groundwater Recharge",
+        "Focused and Preferential Flow in Unsaturated Media",
+        "Naturally Occurring Contaminants in Groundwater"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Atmospheric Chemistry and Climate Group",
+        "Biochemical Oceanography Group",
+        "Dirt, Rivers, Ice and Particles (DRIP) Lab",
+        "Early Earth and Experimental Geochemistry Group",
+        "Ice Core and Atmospheric Chemistry Lab",
+        "Ocean BioGeoChemistry Group",
+        "Paleoceanography Research Group",
+        "Paleomagnetic Research Group",
+        "Planetary Science Laboratory",
+        "Seismology and Computational Geophysics",
+        "Structural Geology and Tectonics Group",
+        "Tracking Radioisotopes for Aquatic Chemistry and Environmental Research (TRACER) Lab"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Department of Earth and Environmental Sciences",
+        "Resources for",
+        "Helpful links",
+        "Schools & divisions",
+        "Libraries & collections",
+        "Ever better",
+        "More Rochester"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "History",
+        "Mission",
+        "Earth and Planetary Sciences",
+        "Oceans and Atmosphere",
+        "Research Groups"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Planetary Formation",
+        "Paleomagnetism",
+        "Geochemistry",
+        "Seismology",
+        "Sediment Transport",
+        "Climate and Ice Cores",
+        "Carbon Dynamics",
+        "Biogeochemistry",
+        "Paleoceanography"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Academics",
+        "Colleges",
+        "College of Arts and Sciences",
+        "Departments",
+        "Department of Geosciences",
+        "Geosciences Research"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Faculty",
+        "Miles Henderson, PhD",
+        "Joonghyeok\u00a0Heo, PhD",
+        "Robert Trentham, D.G.S",
+        "Mohamed Zobaa, PhD"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Metamorphic Petrology",
+        "Geochemistry",
+        "Geochronology",
+        "Convergent Margin Tectonics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Contaminant hydrogeology",
+        "Environmental isotope hydrology",
+        "Carbonate-rock hydrogeology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Geology of Mars",
+        "Impact Cratering",
+        "Remote Sensing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Paleoclimate",
+        "Geoarchaeology",
+        "Paleoflood hydrology",
+        "Geomorphic response to climate change",
+        "Bedrock rivers and erosion"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Info for:",
+        "Log In",
+        "Locations",
+        "Connect",
+        "Site-specific navigation",
+        "Info for:",
+        "Log In",
+        "Locations",
+        "Connect",
+        "Breadcrumb",
+        "Site-specific navigation",
+        "Earth and Environmental Geosciences",
+        "College of Arts and Sciences",
+        "Katherine Fornash",
+        "Eung Seok Lee",
+        "Keith Milam",
+        "Gregory S. Springer",
+        "Research Areas by Topic",
+        "Explore",
+        "Resources",
+        "Locations"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.19047619047619047,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.047619047619047616
+      }
+    },
+    {
+      "items": [
+        "Facebook",
+        "Twitter",
+        "Flickr"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Petrology and Geochemistry",
+        "Hydrogeology",
+        "Planetary Geology",
+        "Fluvial and Karst Geomorphology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Eliot Atekwana | Professoreatekwana@ucdavis.edu | 530-752-3690",
+        "Kari Cooper | Professorkmcooper@ucdavis.edu |\u00a0530-754-8826",
+        "Eric Cowgill | Professorescowgill@ucdavis.edu |\u00a0530-754-6574",
+        "Isabel Monta\u00f1ez | Distinguished\u00a0Professoripmontanez@ucdavis.edu |\u00a0530-754-7823",
+        "Michael Oskin | Professormeoskin@ucdavis.edu |\u00a0530-752-3993",
+        "David Osleger | Professor of Teachingdaosleger@ucdavis.edu |\u00a0530-754-7824",
+        "Nicholas Pinter | Professornpinter@ucdavis.edu |\u00a0530-754-1041",
+        "Barbara Ratschbacher | Assistant Professorbratschbacher@ucdavis.edu",
+        "Dawn Sumner| Professordysumner@ucdavis.edu |\u00a0530-752-5353",
+        "Cathy J. Busby | Professor Emeritacjbusby@ucdavis.edu",
+        "Graham Fogg | Professor Emeritusgefogg@ucdavis.edu |\u00a0530-752-6810",
+        "Charles\u00a0Lesher | Professor Emerituscelesher@ucdavis.edu |\u00a0530-752-9779",
+        "Alexandra Navrotsky | Professor Emeritaanavrotsky@ucdavis.edu |\u00a0530-752-3292",
+        "\ufeffSarah M. Roeske | Research Geologist Emeritasmroeske@ucdavis.edu |\u00a0530-752-4933",
+        "Kenneth L. Verosub | Professor Emeritusklverosub@ucdavis.edu |\u00a0530-752-6911",
+        "\ufeffRobert A. Zierenberg | Professor Emeritusrazierenberg@ucdavis.edu |\u00a0530-752-1863"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    },
+    {
+      "items": [
+        "term sustainability of regional groundwater quality; vulnerability of aquifers to non",
+        "point",
+        "source groundwater."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Geophysics and Seismology",
+        "Tectonics and Structural Geology",
+        "Climate and Paleoclimate",
+        "Geochemistry, Petrology, and Volcanology",
+        "Meteorology and Applied Climatology",
+        "Atmospheric Science and Climate",
+        "Paleontology, Sedimentary Basins and Surface Processes",
+        "Biogeochemistry and Climate Interactions",
+        "Earth System Science",
+        "Space and Planetary Sciences",
+        "Natural Hazards",
+        "Ocean Sciences",
+        "Energy, Mineral and Water Resources",
+        "Geophysical Fluid Dynamics"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.07142857142857142,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Research Areas and Topics",
+        "Climate",
+        "Deep Earth Processes",
+        "Earth Surface Processes",
+        "Geological Carbon Storage",
+        "Mineral Resources",
+        "Earthquakes and Volcanoes",
+        "Coastal and Ocean Processes",
+        "Oil and Gas Resources",
+        "Water and Soil Resources"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Soil Biogeochemistry",
+        "Biogeosciences",
+        "Coastal Systems",
+        "Earth and planetary surface processes",
+        "Glaciology",
+        "Amanda Armstrong",
+        "Dimitri Bandou",
+        "Scott Doney",
+        "Alie Lepp",
+        "Ajay B. Limaye",
+        "Stephen A. Macko",
+        "Darren McKee",
+        "Lauren Miller",
+        "Justin Richardson",
+        "Youwei Wang"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.06666666666666667,
+        "keyword_ratio": 0.13333333333333333
+      }
+    },
+    {
+      "items": [
+        "Ecology",
+        "Geosciences",
+        "Hydrology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ecology",
+        "Geosciences",
+        "Hydrology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Global Synthesis of Groundwater Recharge in Semiarid and Arid Regions",
+        "Assessing Controls on Diffuse Groundwater Recharge Using Unsaturated Flow Modeling",
+        "Choosing Appropriate Techniques for Quantifying Groundwater Recharge"
+      ],
+      "output_list_from_llm": [
+        "Global Synthesis of Groundwater Recharge in Semiarid and Arid Regions",
+        "Assessing Controls on Diffuse Groundwater Recharge Using Unsaturated Flow Modeling",
+        "Choosing Appropriate Techniques for Quantifying Groundwater Recharge"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Basin and Petroleum System Modeling Group",
+        "Mineral-X",
+        "Stanford Rocks and Geomaterials Project"
+      ],
+      "output_list_from_llm": [
+        "Basin and Petroleum System Modeling Group",
+        "Stanford Rocks and Geomaterials Project"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Earth Resources & Resilience",
+        "Ancient Life & Environments",
+        "The Earth System & Other Planetary Bodies",
+        "Environmental & Engineering Geology & Geophysics"
+      ],
+      "output_list_from_llm": [
+        "Earth Resources & Resilience",
+        "Ancient Life & Environments",
+        "The Earth System & Other Planetary Bodies",
+        "Environmental & Engineering Geology & Geophysics"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "element geochemistry, aqueous",
+        "temperature aqueous systems to mineral",
+        "melt systems.",
+        "temperature",
+        "related studies focus on marine and continental paleoenvironments and"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Environmental & engineering geology & geophysics",
+    "Global synthesis of groundwater recharge in semiarid and arid regions",
+    "Assessing controls on diffuse groundwater recharge using unsaturated flow modeling",
+    "Choosing appropriate techniques for quantifying groundwater recharge",
+    "Basin and petroleum system modeling group",
+    "Stanford rocks and geomaterials project",
+    "Earth resources & resilience",
+    "Ancient life & environments",
+    "The earth system & other planetary bodies"
+  ],
+  "error": null
+}

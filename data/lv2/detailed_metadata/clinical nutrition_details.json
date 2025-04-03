@@ -1,0 +1,1569 @@
+{
+  "level1_term": "clinical nutrition",
+  "all_urls": [
+    "https://nusc.uconn.edu/research-topics/",
+    "https://hsph.harvard.edu/department/nutrition/research/",
+    "https://hhs.purdue.edu/research/departmental-research/department-of-nutrition-science-research/",
+    "https://guides.skylinecollege.edu/c.php?g=279137&p=1860733",
+    "https://sph.unc.edu/nutr/unc-nutrition/nutr-research/",
+    "https://med.stanford.edu/nutrition.html",
+    "https://www.mayo.edu/research/centers-programs/center-clinical-translational-science/resources/clinical-research-unit/support-services/nutrition-research-unit",
+    "https://hsph.harvard.edu/department/nutrition/",
+    "https://nutrition.tamu.edu/research/",
+    "https://www.monash.edu/medicine/scs/research/clinical-nutrition-research",
+    "https://education.virginia.edu/research-initiatives/research-centers-labs/research-labs/diet-and-nutrition-research-laboratory",
+    "https://www.med.upenn.edu/pennsam/foundational-projects.html",
+    "https://www.chhs.colostate.edu/fshn/research-and-scholarship/current-research-projects/",
+    "https://www.fcs.uga.edu/fdn/research-faculty",
+    "https://www.rushu.rush.edu/research/departmental-research/internal-medicine-research/digestive-diseases-nutrition-research",
+    "https://health.usf.edu/medicine/mdprogram/scp/nsc",
+    "https://shp.rutgers.edu/nutrition-sciences/",
+    "https://fshn.hs.iastate.edu/graduate-students/graduate-programs/diet-and-exercise/research-areas/",
+    "https://sph.umich.edu/ns/faculty-research/index.html",
+    "https://www.depts.ttu.edu/hs/ns/",
+    "https://nutrition.ucdavis.edu/clinical",
+    "https://vbs.psu.edu/research/centers/nutrigenomics/clinical-nutrition",
+    "https://www.iit.edu/fdsn/research/research-centers",
+    "https://ysph.yale.edu/research-profiles/?orgId=109082&publicHealthId=156",
+    "https://hhs.purdue.edu/nutr/",
+    "https://nutrition.ucdavis.edu/news/research",
+    "https://steinhardt.nyu.edu/degree/phd-nutrition-and-dietetics",
+    "https://www.utsouthwestern.edu/education/medical-school/departments/center-human-nutrition/",
+    "https://ches.ua.edu/nhm/clinical/",
+    "https://www.depts.ttu.edu/hs/ns/research/index.php"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Faculty",
+        "Prospective",
+        "Undergraduate",
+        "Graduate",
+        "Scholarships",
+        "Make a Gift"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "and climate",
+        "friendly bioprocessing and biomanufacturing technologies and nature",
+        "based biosystems that can be used to produce all",
+        "natural and low",
+        "carbon food ingredients for more sustainable and nutritious foods."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "evaluation. More recently, the database has expanded to include four environmental impact metrics",
+        "greenhouse gas (GHG) emissions, irrigation water use, nitrogen use, and high",
+        "quality cropland use",
+        "for the many of the food items listed in the FFQ."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Center on Aging and the Life Course (CALC)",
+        "Discovery Park",
+        "Indiana Clinical and Translational Sciences Institute (CTSI)",
+        "Life Sciences at Purdue University",
+        "Military Family Research Institute at Purdue University (MFRI)",
+        "Purdue Institute for Integrative Neuroscience",
+        "Purdue Institute of Inflammation, Immunology and Infectious Diseases (PI4D)",
+        "Purdue University Center for Cancer Research (PUCCR)",
+        "Purdue University Center for Families (CFF)",
+        "Women\u2019s Global Health Institute (WGHI)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Metabolism and Obesity",
+        "Minerals, Vitamin D and Bone Health",
+        "Food, Ingestive Behavior and Population Nutrition",
+        "Carcinogenesis and Cancer Prevention",
+        "Purdue Clinical Research Center",
+        "Ingestive Behavioral Research Center",
+        "Interdisciplinary Centers",
+        "Metabolism and Obesity",
+        "Minerals, Vitamin D and Bone Health",
+        "Food, Ingestive Behavior and Population Nutrition",
+        "Carcinogenesis and Cancer Prevention"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Metabolism and Obesity\nShow More",
+        "Minerals, Vitamin D and Bone Health\nShow More",
+        "Food, Ingestive Behavior and Population Nutrition\nShow More",
+        "Carcinogenesis and Cancer Prevention\nShow More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Shufa Du",
+        "Penny Gordon-Larsen",
+        "Folami Ideraabdullah*",
+        "Elizabeth Mayer-Davis*",
+        "Shu Wen Ng*",
+        "Wimal Pathmasiri",
+        "Barry Popkin",
+        "Susan Sumner*",
+        "Saroja Voruganti*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cynthia Bulik",
+        "Shufa Du",
+        "Penny Gordon-Larsen",
+        "Stephen Hursting",
+        "Folami Ideraabdullah*",
+        "Nobuyo Maeda",
+        "Elizabeth Mayer-Davis*",
+        "Katie Meyer*",
+        "Sandra Mooney*",
+        "Wimal Pathmasiri",
+        "S. Raza Shaikh",
+        "Susan Smith*",
+        "Susan Sumner*",
+        "Saroja Voruganti*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Andrea Azcarate-Peril",
+        "Cynthia Bulik",
+        "Ian Carroll",
+        "Shufa Du",
+        "Penny Gordon-Larsen",
+        "Stephen Hursting",
+        "Elizabeth Mayer-Davis*",
+        "Katie Meyer*",
+        "Sandra Mooney*",
+        "Wimal Pathmasiri",
+        "S. Raza Shaikh",
+        "Susan Smith*",
+        "Susan Sumner*",
+        "Amanda Thompson*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alice Ammerman*",
+        "John Batsis",
+        "Kyle Burger*",
+        "Shufa Du",
+        "Penny Gordon-Larsen",
+        "Stephen Hursting",
+        "Folami Ideraabdullah*",
+        "Anna Kahkoska, MD, PhD*",
+        "Natalia Krupenko*",
+        "Stephanie Martin*",
+        "Elizabeth Mayer-Davis*",
+        "Katie Meyer*",
+        "Sandra Mooney*",
+        "Shu Wen Ng*",
+        "Barry Popkin",
+        "S. Raza Shaikh",
+        "Nipun Saini, PhD*",
+        "Susan Smith*",
+        "Lindsey Smith-Taillie",
+        "Susan Sumner*",
+        "Deborah Tate",
+        "Amanda Thompson*",
+        "Matt Ulgherait*",
+        "Carmina Valle*",
+        "Saroja Voruganti"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Linda Adair",
+        "Alice Ammerman*",
+        "John Batsis",
+        "Penny Gordon-Larsen",
+        "Amanda Holliday",
+        "Stephen Hursting",
+        "Folami Ideraabdullah*",
+        "Stephanie Martin*",
+        "Sandra Mooney*",
+        "Susan Sumner*",
+        "Amanda Thompson*",
+        "Heather Wasser*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Linda Adair",
+        "Kyle Burger",
+        "Penny Gordon-Larsen",
+        "Stephen Hursting",
+        "Katie Meyer*",
+        "Barry Popkin",
+        "Lindsey Smith-Taillie",
+        "Susan Sumner*",
+        "Amanda Thompson*",
+        "Kimberly Truesdale"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alice Ammerman*",
+        "Linda Adair",
+        "Molly Demarco*",
+        "Shufa Du",
+        "Penny Gordon-Larsen*",
+        "Stephanie Martin*",
+        "Shu Wen Ng*",
+        "Barry Popkin",
+        "Susan Smith*",
+        "Lindsey Smith-Taillie",
+        "Jessica Soldavini",
+        "Mirek Styblo",
+        "Susan Sumner*",
+        "Kimberly Truesdale",
+        "Carmina Valle*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ian Carroll",
+        "Anthony Hackney",
+        "Natalia Krupenko*",
+        "Sergey Krupenko",
+        "Nobuyo Maeda",
+        "Elizabeth Mayer-Davis*",
+        "S. Raza Shaikh",
+        "Nipun Saini, PhD*",
+        "Susan Smith *",
+        "Mirek Styblo",
+        "Susan Sumner *",
+        "Matt Ulgherait*",
+        "Saroja Voruganti*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Linda Adair",
+        "Cynthia Bulik",
+        "Kyle Burger",
+        "Ian Carroll",
+        "Anthony Hackney",
+        "Stephen Hursting",
+        "Sergey Krupenko",
+        "Nobuyo Maeda",
+        "Elizabeth Mayer-Davis",
+        "Susan Smith*",
+        "Susan Sumner*",
+        "Matt Ulgherait*",
+        "Saroja Voruganti*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alice Ammerman*",
+        "John Batsis",
+        "Kyle Burger",
+        "Shufa Du",
+        "Penny Gordon-Larsen",
+        "Derek Hales",
+        "Anna Kahkoska, MD, PhD*",
+        "Elizabeth Mayer-Davis*",
+        "Shu Wen Ng*",
+        "Barry Popkin",
+        "Jessica Soldavini",
+        "Lindsey Smith-Taillie",
+        "Susan Sumner*",
+        "Carmina Valle*",
+        "Heather Wasser*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alice Ammerman*",
+        "John Batsis",
+        "Molly Demarco*",
+        "Derek Hales",
+        "Anna Kahkoska, MD, PhD*",
+        "Stephanie Martin*",
+        "Elizabeth Mayer-Davis*",
+        "Shu Wen Ng*",
+        "Carmen Samuel-Hodge",
+        "Lindsey Smith-Taillie*",
+        "Jessica Soldavini",
+        "Mirek Styblo",
+        "Susan Sumner*",
+        "Deborah Tate",
+        "Kimberly Truesdale",
+        "Carmina Valle*",
+        "Heather Wasser*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alice Ammerman*",
+        "Shufa Du",
+        "Penny Gordon-Larsen",
+        "Katie Meyer*",
+        "Barry Popkin",
+        "Jessica Soldavini",
+        "Lindsey Smith-Taillie",
+        "Susan Sumner*",
+        "Shu Wen Ng*",
+        "Heather Wasser*"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Diet and Big Data",
+        "Nutrigenetics and Nutrigenomics",
+        "Diet and Microbiome",
+        "Diet for Health and Disease",
+        "Lifecycle Nutrition",
+        "Diet Phenotyping",
+        "Community and Environmental Exposures",
+        "Nutrition Mechanisms",
+        "Translational and Integrative Nutrition",
+        "Behavioral Studies",
+        "Behavioral Change and Intervention",
+        "Nutrition Policy",
+        "Nutrition Department Faculty Profiles and Research",
+        "Nutrition Research Institute (NRI)",
+        "UNC Nutrition Obesity Research Center (NORC)",
+        "UNC Center for Health Promotion and Disease Prevention",
+        "Carolina Population Center",
+        "Global Food Research Program"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2777777777777778
+      }
+    },
+    {
+      "items": [
+        "Department of Nutrition",
+        "Our offices are located on the second floor of Rosenau Hall.",
+        "Faculty and Staff",
+        "Academic Coordinators",
+        "MPH@UNC (MPH Online) Only:",
+        "Program Coordinator, John Sugg",
+        "135 Dauer Drive",
+        "245 Rosenau Hall, CB # 7461",
+        "Chapel Hill, NC 27599-7461",
+        "(919) 966-7218"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "related effects. Large clinical",
+        "and population",
+        "based studies are often used as they provide inter",
+        "individual variation in exposures and outcomes. Data that captures individual"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "and long",
+        "term nutrition",
+        "related impacts."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "and lifestyle",
+        "related behaviors, including population",
+        "level behaviors as well as individual",
+        "level variation in a wide variety of behavior",
+        "related behaviors."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nutrition Studies Research Group",
+        "Our Work",
+        "Research",
+        "Programs & Initiatives",
+        "Education",
+        "Announcements",
+        "Plant-Based Diet Initiative (PBDI) Seed Grants",
+        "Just Published: FeFiFo-MOMS Methods Paper",
+        "2025 Dietary Guidelines for Americans",
+        "In the News",
+        "Is Fake Meat Better for You Than Real Meat?",
+        "Advancing Nutrition Science",
+        "Stanford School of Medicine"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.23076923076923078,
+        "length_consistency": true,
+        "pattern_ratio": 0.07692307692307693,
+        "keyword_ratio": 0.38461538461538464
+      }
+    },
+    {
+      "items": [
+        "Stanford Scope",
+        "March 13, 2025",
+        "Read the article"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The New York Times",
+        "February 17, 2025",
+        "Read The Article"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The New York Times",
+        "January 9, 2025",
+        "Read the article"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "year seed grants to explore various plant",
+        "based nutrition topics. Individual grant amounts typically range from $3,000",
+        "$5,000 depending on the number of proposals received. Letter of Intent due: May 5, 2025."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Frank B. Hu",
+        "Doctor of Philosophy \u2013 Population Health Sciences",
+        "Obesity Epidemiology and Prevention",
+        "Nutrition and Global Health",
+        "Climate Change and Planetary Health",
+        "The Nutrition Source",
+        "Removing artificial additives from the U.S. food supply",
+        "Beef tallow not a healthier option than seed oils",
+        "Teaching patients how to cook healthy",
+        "Precision Nutrition Forum and PREDIMED Omics Symposium 2025"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Obesity Epidemiology and Prevention",
+        "Nutrition and Global Health",
+        "Climate Change and Planetary Health"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jenna Anding, Ph.D.",
+        "Robert Chapkin, Ph.D.",
+        "Shaodong Guo, Ph.D.",
+        "Bradley Johnston, Ph.D.",
+        "Rebecca Seguin-Fowler, Ph.D.",
+        "Yuxiang Sun, Ph.D.",
+        "Masako Suzuki, D.V.M., Ph.D.",
+        "David Threadgill, Ph.D.",
+        "Heidi Vanden Brink, Ph.D.",
+        "Linglin Xie, Ph.D",
+        "Chaodong Wu, Ph.D.",
+        "Waylon Hastings, Ph.D.",
+        "Jacob S. Szeszulski, Ph.D.",
+        "Chia-Shan \u201cJenny\u201d Wu, Ph.D.",
+        "Sylvie Estrela, Ph.D.",
+        "Stephanie Rogus, Ph.D., R.D.N.",
+        "Chad Rethorst, Ph.D."
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "art tools to study ghrelin in energy sensing/metabolism, immuno",
+        "metabolism, inflamm",
+        "aging and neuro"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "and community",
+        "and community",
+        "based programs, and using community"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "10 Ways to Eat Better, The New York Times",
+        "Body Image: What It Is and How to Improve It, VeryWell Fit",
+        "Green tea may just be the world's healthiest drink, Men's Health",
+        "Professor challenges students on diet culture, UGA Today"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alex Kojo Anderson",
+        "Alison Berg",
+        "Caree Cotwright",
+        "Ginnefer Cox",
+        "Sina Gallo",
+        "Silvia Giraudo",
+        "Arthur Grider",
+        "Sarah Henes",
+        "Emma Laing",
+        "Jung Sun Lee",
+        "Emily Noble",
+        "Michelle Parisi",
+        "Hea Jin Park",
+        "Chad Paton",
+        "Robert Pazdro",
+        "Connie Rogers",
+        "Elisabeth Lilian Pia Sattler, PhD, RPh, FAHA",
+        "Carla Schwan",
+        "People"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ed project, which provides an evidence",
+        "based, culturally tailored, multi",
+        "level nutrition education and obesity prevention intervention to SNAP",
+        "income Georgians using mixed methods."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Ed project, which provides an evidence",
+        "based, culturally tailored, multi",
+        "level nutrition education and obesity prevention intervention to SNAP",
+        "income Georgians using mixed methods."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "chain omega",
+        "6 polyunsaturated fatty acid, it promotes transcriptional activity via nuclear receptor",
+        "DNA interactions and more recently I have found that its ability to induce angiopoietin"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "chain omega",
+        "6 polyunsaturated fatty acid, it promotes transcriptional activity via nuclear receptor",
+        "DNA interactions and more recently I have found that its ability to induce angiopoietin"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Exercise biochemistry",
+        "Endocrinology",
+        "Immunology",
+        "Biomechanics",
+        "Motor control/learning development",
+        "Cardiovascular physiology",
+        "Exercise psychology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Biochemical and molecular nutrition",
+        "Clinical nutrition and dietetics",
+        "Community and international nutrition",
+        "Nutrient bioavailability",
+        "Nutrition physiology and metabolism",
+        "Wellness",
+        "Sport nutrition"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Aging",
+        "Cardiovascular disease",
+        "Cancer",
+        "Overweight/obesity"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "220 Mackay Hall\n2302 Osborn Drive\nAmes, IA 50011-1078",
+        "515-294-6442",
+        "fshngraduate@iastate.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Welcome from the Chair",
+        "Mission Statement",
+        "Nutritional Sciences Degree Options",
+        "B.S. in Nutritional Sciences and Dietetics",
+        "B.S. in Nutrition",
+        "M.S. in Nutritional Sciences",
+        "Online M.S. in Nutritional Sciences",
+        "Online M.S. in Nutrition and Dietetics",
+        "Ph.D. in Nutritional Sciences",
+        "Events",
+        "Follow Texas Tech University"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nutritional Sciences Degree Options",
+        "B.S. in Nutritional Sciences and Dietetics\nOn-Campus",
+        "B.S. in Nutrition\nOn-Campus"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Online M.S. in Nutritional Sciences\nOnline",
+        "Online M.S. in Nutrition and Dietetics\nOnline",
+        "Ph.D. in Nutritional Sciences\nOn-Campus"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Goji Berry Study",
+        "Beef Consumption Study",
+        "Chardonnay Marc and Gut Health Study",
+        "Cocoa and Chardonnay Marc Study",
+        "Honey Yogurt Study",
+        "Fruit and Vegetable Biomarker Study"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Clinical Trials",
+        "Pre-Clinical Trials",
+        "Obesity",
+        "Diabetes",
+        "Satiety",
+        "Claims Validation",
+        "Cardiovascular Disease",
+        "Attitudes and Behavior"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Expertise in determining the health benefits of food and food components",
+        "Cost-effective test designs used in pre-clinical and clinical studies",
+        "Fully integrated analytical chemistry lab and pilot plant capabilities",
+        "Practical data that aligns and validates food safety and nutrition goals",
+        "Facilitated path-to-market strategy through early and ongoing regulatory interaction",
+        "Robust business models that support innovative product designs",
+        "Reduced cost of innovation through industry, government, and academic collaboration"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8571428571428571
+      }
+    },
+    {
+      "items": [
+        "Dietetics/Nutrition, Fitness, and Health",
+        "Nutrition, Fitness, and Health",
+        "Nutrition Science",
+        "Nutrition and Dietetics",
+        "Double Majors in Nutrition Science"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "(765) 494-8228",
+        "(765) 494-0674",
+        "nutrition@purdue.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Angela Zivkovic named an Allen Distinguished Investigator",
+        "Lauren Au, PhD, RD Receives Robert Wood Johnson Foundation Healthy Eating Research grant",
+        "The Right Combo: Getting the Most Health Benefits from Fruit Smoothies",
+        "Christine Stewart Joins ASN Board of Directors",
+        "Reina Engle-Stone Joins Current Developments in Nutrition as an Academic Editor",
+        "Fewer Than 10% of Patients Screened for Food Insecurity During Pandemic",
+        "Researchers Issue Dietary Recommendation for a Food Compound to Support Heart Health",
+        "Finding a Passion for Community Nutrition",
+        "Nutrition for Precision Health"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Programs and Degrees",
+        "Study Abroad",
+        "Undergraduate",
+        "Graduate",
+        "Admissions",
+        "Paying for Your Education",
+        "Master's",
+        "Official Degree Title",
+        "Follow Our Department!"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "Site Navigation",
+        "Center for Human Nutrition",
+        "center-human-nutrition",
+        "Director",
+        "Footer Links"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Institution",
+        "Legal",
+        "State",
+        "Become a fan of UT Southwestern"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jay Horton, M.D. Director, Center for Human Nutrition",
+        "Education: M.D., University of Iowa Hospitals and Clinics",
+        "Residency: Parkland Health & Hospital System, Internal Medicine",
+        "Fellowships: UT\u00a0Southwestern Medical Center"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Assess underlying determinants of health that lead to poor nutrition outcomes",
+        "Develop and evaluate dietary interventions",
+        "Analyze dietary intake data",
+        "Assess arterial stiffness and vasodilation",
+        "Complete twenty-four hour ambulatory blood pressure monitoring",
+        "Assess indirect calorimetry for measurement of resting energy expenditure and substrate utilization"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Goji Berry Study",
+        "Beef Consumption Study",
+        "Chardonnay Marc and Gut Health Study",
+        "Cocoa and Chardonnay Marc Study",
+        "Honey Yogurt Study",
+        "Fruit and Vegetable Biomarker Study"
+      ],
+      "output_list_from_llm": [
+        "Goji Berry Study",
+        "Beef Consumption Study",
+        "Chardonnay Marc and Gut Health Study",
+        "Cocoa and Chardonnay Marc Study",
+        "Honey Yogurt Study",
+        "Fruit and Vegetable Biomarker Study"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Ed project, which provides an evidence",
+        "based, culturally tailored, multi",
+        "level nutrition education and obesity prevention intervention to SNAP",
+        "income Georgians using mixed methods."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Expertise in determining the health benefits of food and food components",
+        "Cost-effective test designs used in pre-clinical and clinical studies",
+        "Fully integrated analytical chemistry lab and pilot plant capabilities",
+        "Practical data that aligns and validates food safety and nutrition goals",
+        "Facilitated path-to-market strategy through early and ongoing regulatory interaction",
+        "Robust business models that support innovative product designs",
+        "Reduced cost of innovation through industry, government, and academic collaboration"
+      ],
+      "output_list_from_llm": [
+        "Expertise in determining the health benefits of food and food components",
+        "Cost-effective test designs used in pre-clinical and clinical studies",
+        "Practical data that aligns and validates food safety and nutrition goals"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Goji berry study",
+    "Beef consumption study",
+    "Chardonnay marc and gut health study",
+    "Cocoa and chardonnay marc study",
+    "Honey yogurt study",
+    "Fruit and vegetable biomarker study",
+    "Expertise in determining the health benefits of food and food components",
+    "Cost-effective test designs used in pre-clinical and clinical studies",
+    "Practical data that aligns and validates food safety and nutrition goals"
+  ],
+  "error": null
+}

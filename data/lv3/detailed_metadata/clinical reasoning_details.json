@@ -1,0 +1,884 @@
+{
+  "level2_term": "clinical reasoning",
+  "all_urls": [
+    "https://www.mdpi.com/journal/healthcare/special_issues/L4A8P0Q522",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5215172/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5004529/",
+    "https://www.sgim.org/publications-resources/journal-of-general-internal-medicine/",
+    "https://www.dovepress.com/enhancing-clinical-reasoning-education-implementing-case-conferences-w-peer-reviewed-fulltext-article-AMEP",
+    "https://journals.lww.com/academicmedicine/fulltext/2020/08000/clinical_reasoning_as_a_core_competency.32.aspx",
+    "https://onlinelibrary.wiley.com/doi/10.1111/jep.13986",
+    "https://www.sciencedirect.com/science/article/pii/S1658361223000975",
+    "https://academic.oup.com/pmj/advance-article/doi/10.1093/postmj/qgae079/7713332?searchresult=1",
+    "https://westjem.com/articles/the-challenging-case-conference-a-gamified-approach-to-clinical-reasoning-in-the-video-conference-era.html"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Vol.\u00a013\u00a0(2025)",
+        "Vol.\u00a012\u00a0(2024)",
+        "Vol.\u00a011\u00a0(2023)",
+        "Vol.\u00a010\u00a0(2022)",
+        "Vol.\u00a09\u00a0(2021)",
+        "Vol.\u00a08\u00a0(2020)",
+        "Vol.\u00a07\u00a0(2019)",
+        "Vol.\u00a06\u00a0(2018)",
+        "Vol.\u00a05\u00a0(2017)",
+        "Vol.\u00a04\u00a0(2016)",
+        "Vol.\u00a03\u00a0(2015)",
+        "Vol.\u00a02\u00a0(2014)",
+        "Vol.\u00a01\u00a0(2013)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "shared decision making",
+        "person-centered care",
+        "patient\u2013healthcare provider relationship",
+        "middle-range theory",
+        "cognitive science",
+        "precepting",
+        "interprofessional collaborative practice",
+        "interprofessional socialization"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share This Special Issue",
+        "Special Issue Editor",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.05555555555555555,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Dr.             Hirotaka Onishi",
+        "E-Mail",
+        "Website"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "SciProfiles",
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1) whole-person care, (",
+        "2) longitudinal care, (",
+        "3) educational strategies, (",
+        "4) contextual learning, (",
+        "5) multimorbidity management, (",
+        "6) interprofessional collaboration, and ("
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "range theories to explain how primary",
+        "care clinical reasoning is cognitively functioning, any educational programs to enhance primary",
+        "care clinical reasoning, any conceptual difference between specialist care and generalist care, etc."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "From the Editor",
+        "Global Health Collection",
+        "Bias Sensitivity in Diagnostic Decision-Making: Comparing ChatGPT with Residents",
+        "Latino Enclaves and Healthcare Accessibility: An Ecologic Study Across Five States",
+        "Global Health Collection",
+        "Becomean SGIM Member"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "February 1, 2025 -  From the Editor",
+        "D. Michael Elnicki MD, Joe Conigliaro MD, MPH & Lenny L\u00f3pez MD, MPH, MDiv",
+        "Welcome to the Journal of General Internal Medicine (JGIM) Global Health Collection.\u2026",
+        "Learn More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "March 1, 2025",
+        "Henk G. Schmidt PhD, Jerome I Rotgans PhD & Silvia Mamede MD, PhD",
+        "Learn More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "March 1, 2025",
+        "Zain Khera BA, Nicholas Illenberger PhD & Scott E. Sherman MD, MPH",
+        "Learn More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Why Publish With Us?",
+        "Editorial Policies",
+        "Author Guidelines",
+        "Peer Review Guidelines",
+        "Open Outlook",
+        "Hot topics",
+        "Podcasts",
+        "Reprints",
+        "Submit New Manuscript"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Fulltext",
+        "Metrics",
+        "Get Permission",
+        "Cite this article"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Moderator: Uses a whiteboard (Figure 1) to organize information and lead discussions",
+        "Learners: Approximately six (medical students, residents, and senior residents)",
+        "Instructor: A supervising physician who selects a suitable case",
+        "Commentators: One to five supervising physicians"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Introduction",
+        "Conference Implementation Method",
+        "Discussion",
+        "Limitation",
+        "Conclusion",
+        "Abbreviations",
+        "Acknowledgments",
+        "Author Contributions",
+        "Funding",
+        "Disclosure",
+        "References"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Conference Overview and Roles",
+        "Set the 1st SQ",
+        "Set the 2nd SQ and Propose a Snap Diagnosis",
+        "Propose Differential Diagnosis",
+        "Set the 3rd SQ"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "100301",
+        "Open Access",
+        "Reprints",
+        "Favored Authors"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Authors Tokushima Y, Hirata R\u00a0, Yamashita S\u00a0, Shikino K\u00a0, Shimizu T\u00a0, Tago M",
+        "Received 26 July 2024",
+        "Accepted for publication 31 October 2024",
+        "DOI https://doi.org/10.2147/AMEP.S486420",
+        "Checked for plagiarism Yes",
+        "Review by Single anonymous peer review",
+        "Peer reviewer comments 2",
+        "Editor who approved publication: \nDr Md Anwarul Azim Majumder"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "DPT, dual-process theory; SQ, semantic qualifier.",
+        "We would like to thank Editage (www.editage.jp) for English language editing.",
+        "There is no funding to report.",
+        "The authors report no conflicts of interest in this work."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "level education in physiotherapy: a commentary to inform post",
+        "COVID",
+        "19 future directions. Med Sci Educ. 2021;31(6):2071",
+        "2083. PMID: 34754600; PMCID: PMC8567978. doi:10.1007/s40670",
+        "01439"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Full-Size",
+        "Email",
+        "+ Favorites",
+        "Export",
+        "View in Gallery"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Clinical Reasoning Assessment Methods: A Scoping Review and Practical Guidance",
+        "Drawing Boundaries: The Difficulty in Defining Clinical Reasoning",
+        "A Universal Model of Diagnostic Reasoning",
+        "The Causes of Errors in Clinical Reasoning: Cognitive Biases, Knowledge...",
+        "Approaches to Clinical Reasoning Assessment"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Abstract",
+        "ACGME Competencies as Drivers of Educational Change",
+        "Making Clinical Reasoning an ACGME Core Competency",
+        "Restructuring the Competencies",
+        "Clinical Reasoning Across the Spectrum of Medical Education",
+        "Conclusion",
+        "References",
+        "Readers Of this Article Also Read"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Secondary Logo",
+        "Journal Logo",
+        "Clinical Reasoning Assessment Methods: A Scoping Review and Practical Guidance",
+        "Drawing Boundaries: The Difficulty in Defining Clinical Reasoning",
+        "A Universal Model of Diagnostic Reasoning",
+        "The Causes of Errors in Clinical Reasoning: Cognitive Biases, Knowledge...",
+        "Approaches to Clinical Reasoning Assessment"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Source",
+        "Never Miss an Issue",
+        "Browse Journal Content",
+        "For Journal Authors",
+        "Customer Service"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Colleague's E-mail is Invalid",
+        "Your Name:",
+        "Colleague's Email:\n\n\n\n\nSeparate multiple e-mails with a (;)."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Funding/Support: None reported.",
+        "Other disclosures: None reported.",
+        "Ethical approval: Reported as not applicable."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Colleague's E-mail is Invalid",
+        "Your Name:",
+        "Colleague's Email:\n\n\n\n\nSeparate multiple e-mails with a (;)."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "End Note",
+        "Procite",
+        "Reference Manager"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1) the revision and expansion of learning objectives that reflected the new competencies; (",
+        "2) novel learning activities focused on competency-based topics; (",
+        "5) expansion of faculty development offerings; ("
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "range theories to explain how primary",
+        "care clinical reasoning is cognitively functioning, any educational programs to enhance primary",
+        "care clinical reasoning, any conceptual difference between specialist care and generalist care, etc."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "1) the revision and expansion of learning objectives that reflected the new competencies; (",
+        "2) novel learning activities focused on competency-based topics; (",
+        "5) expansion of faculty development offerings; ("
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Clinical Reasoning Assessment Methods: A Scoping Review and Practical Guidance",
+        "Drawing Boundaries: The Difficulty in Defining Clinical Reasoning",
+        "A Universal Model of Diagnostic Reasoning",
+        "The Causes of Errors in Clinical Reasoning: Cognitive Biases, Knowledge...",
+        "Approaches to Clinical Reasoning Assessment"
+      ],
+      "output_list_from_llm": [
+        "Clinical Reasoning Assessment Methods: A Scoping Review and Practical Guidance",
+        "Drawing Boundaries: The Difficulty in Defining Clinical Reasoning",
+        "A Universal Model of Diagnostic Reasoning",
+        "The Causes of Errors in Clinical Reasoning: Cognitive Biases, Knowledge...",
+        "Approaches to Clinical Reasoning Assessment"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Secondary Logo",
+        "Journal Logo",
+        "Clinical Reasoning Assessment Methods: A Scoping Review and Practical Guidance",
+        "Drawing Boundaries: The Difficulty in Defining Clinical Reasoning",
+        "A Universal Model of Diagnostic Reasoning",
+        "The Causes of Errors in Clinical Reasoning: Cognitive Biases, Knowledge...",
+        "Approaches to Clinical Reasoning Assessment"
+      ],
+      "output_list_from_llm": [
+        "Clinical Reasoning Assessment Methods: A Scoping Review and Practical Guidance",
+        "Drawing Boundaries: The Difficulty in Defining Clinical Reasoning",
+        "A Universal Model of Diagnostic Reasoning",
+        "The Causes of Errors in Clinical Reasoning: Cognitive Biases, Knowledge...",
+        "Approaches to Clinical Reasoning Assessment"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Clinical reasoning assessment methods: a scoping review and practical guidance",
+    "Drawing boundaries: the difficulty in defining clinical reasoning",
+    "The causes of errors in clinical reasoning: cognitive biases, knowledge...",
+    "Approaches to clinical reasoning assessment",
+    "A universal model of diagnostic reasoning"
+  ],
+  "error": null
+}

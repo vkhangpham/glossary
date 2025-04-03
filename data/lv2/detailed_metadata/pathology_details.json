@@ -1,0 +1,899 @@
+{
+  "level1_term": "pathology",
+  "all_urls": [
+    "https://medicine.yale.edu/pathology/research/",
+    "https://medicine.iu.edu/pathology/research",
+    "https://med.nyu.edu/departments-institutes/pathology/research",
+    "https://med.stanford.edu/pathology/research.html",
+    "https://www.pathology.columbia.edu/research/basic-research",
+    "https://pathology.uchicago.edu/research",
+    "https://case.edu/medicine/pathology/people/research-interest",
+    "https://medicine.missouri.edu/departments/pathology-and-anatomical-sciences/research",
+    "https://www.pathology.columbia.edu/research",
+    "https://pathology.med.upenn.edu/research",
+    "https://www.urmc.rochester.edu/pathology-labs/research-laboratories",
+    "https://research.pathology.wisc.edu/",
+    "https://www.med.uvm.edu/pathology/research/research_overview",
+    "https://dlmp.uw.edu/research",
+    "https://pathology.ucsf.edu/research/pathology",
+    "https://pathology.med.jax.ufl.edu/research/",
+    "https://plantpath.psu.edu/research/areas",
+    "https://www.pathology.med.umich.edu/experimental-pathology",
+    "https://www.med.unc.edu/pathology/residency/research-opportunities/",
+    "https://www.utsouthwestern.edu/education/medical-school/departments/pathology/research/",
+    "https://pathology.duke.edu/research-core-facilities",
+    "https://pathology.vcu.edu/research/",
+    "https://pathology.med.upenn.edu/topic/anatomic-pathology",
+    "https://med.emory.edu/departments/pathology/research/index.html",
+    "https://www.unmc.edu/pathology/research/index.html",
+    "https://www.ohsu.edu/school-of-medicine/pathology/research",
+    "https://medicine.ouhsc.edu/academic-departments/pathology/research",
+    "https://phoenixmed.arizona.edu/pathology/research",
+    "https://health.ucdavis.edu/pathology/research/",
+    "https://www.urmc.rochester.edu/education/graduate/phd/pathology/research"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Amyloid Research",
+        "Cancer Biology and Melanoma",
+        "Computational Pathology",
+        "Neurodegenerative Diseases and Neuropathology",
+        "Industry Sponsored Activities"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "experimental pathology",
+        "immunology",
+        "molecular oncology",
+        "ion channels and transporters in immunity"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Swarnali Acharyya, PhD",
+        "Dritan Agalliu, PhD",
+        "Ottavio Arancio, MD, PhD",
+        "Edmund Au, PhD",
+        "Richard J. Baer, PhD",
+        "Francesca Bartolini, PhD",
+        "Katia Basso, PhD",
+        "Julie Canman, PhD",
+        "Peter D Canoll, MD, PhD",
+        "Helen C. Causton, DPhil",
+        "Eunhee Choi, PhD",
+        "Riccardo Dalla-Favera, MD"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Diagnostic Specialties",
+        "Client and Patient Support",
+        "Research",
+        "Digital and Computational Pathology Lab",
+        "Education",
+        "You are here",
+        "Leadership",
+        "Areas of Interest",
+        "Blood/Iron Biology",
+        "Cancer Biology",
+        "Cell Biology, Cell Structure, and Cell Signaling",
+        "Neurodegenerative Diseases",
+        "Nucleus, Gene Expression, and\u00a0RNA Biology",
+        "Stem Cell Biology",
+        "Faculty",
+        "Columbia University",
+        "Follow Us"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.23529411764705882,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.11764705882352941
+      }
+    },
+    {
+      "items": [
+        "Ronald K. Liem, PhD",
+        "Ulrich Hengst, PhD",
+        "Clarissa Waites, PhD",
+        "Swarnali Acharyya, PhD",
+        "Dritan Agalliu, PhD",
+        "Ottavio Arancio, MD, PhD",
+        "Edmund Au, PhD",
+        "Richard J. Baer, PhD",
+        "Francesca Bartolini, PhD",
+        "Katia Basso, PhD",
+        "Julie Canman, PhD",
+        "Peter D Canoll, MD, PhD",
+        "Helen C. Causton, DPhil",
+        "Eunhee Choi, PhD",
+        "Riccardo Dalla-Favera, MD"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nicole A. Cipriani",
+        "Thomas N. Krausz",
+        "Peter Pytel"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Anna Biernacka",
+        "Jeffrey Mueller",
+        "Husain Sattar"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Godfrey S. Getz",
+        "Aliya Husain",
+        "Ivan Moskowitz",
+        "Christopher Weber"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kiang-Teck Jerry Yeo",
+        "Stephen Meredith",
+        "Xander van Wijk"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tatjana Antic",
+        "Anna Biernacka",
+        "Ricardo R. Lastra",
+        "Jeffrey Mueller",
+        "Ward A. Reeves"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lindsay Alpert",
+        "John Hart",
+        "Namrata Setia",
+        "Christopher R. Weber",
+        "Shu-Yuan Xiao"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Carrie A. Fitzpatrick",
+        "Thomas F. Gajewski",
+        "Megan McNerney",
+        "Ivan Moskowitz",
+        "Scott Andr\u00e9 Oakes",
+        "Hans Schreiber",
+        "Jeremy Segal"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jennifer Bennett",
+        "Thomas N. Krausz",
+        "Ricardo R. Lastra"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Daniel Arber",
+        "Jason X. Cheng",
+        "Sandeep Gurbuxani",
+        "Elizabeth Hyjek",
+        "Megan McNerney",
+        "James W. Vardiman",
+        "Girish Venkataraman"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Albert Bendelac",
+        "Alexander Chervonsky",
+        "Daria Esterhazy",
+        "Barbara Lynne Kee",
+        "Andrew Koh",
+        "Vinay Kumar",
+        "Susana R. Marino",
+        "Cathyrn Nagler",
+        "Eric Pamer",
+        "Peter Savage",
+        "Hans Schreiber"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kathleen G. Beavis",
+        "Angella Charnot-Katsikas",
+        "Eric Pamer",
+        "Arjun Raman",
+        "Vera Tesic"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Fatima Aldarweesh",
+        "Chancey Christenson",
+        "Leon Su",
+        "Geoffrey Wool"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research",
+        "Cancer",
+        "Immunology",
+        "Neuropathology",
+        "Other"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Advances in laboratory medicine sciences",
+        "Clinical pathological correlations of meningiomas",
+        "Computational analysis of genomic data, bioinformatics",
+        "Development and evolution of brain morphology",
+        "Developmental biology and pathobiology",
+        "Diagnostic evaluation of biopsies",
+        "Diagnostic molecular pathology",
+        "Dietary influences on cranial and dental morphology",
+        "DNA methylation and epigenetic regulation of gene expression",
+        "Evolution of the postcranial skeleton",
+        "Evolutionary morphology of the vertebrate skull and feeding complex",
+        "Joint formation, biomechanics and aging",
+        "Molecular mechanisms of redox modulation",
+        "Neurodegenerative diseases",
+        "Pathobiology of cancer (neoplasia), invasion, and metastasis",
+        "Pathology informatics",
+        "Therapeutic approaches to traumatic brain injury",
+        "Therapy of brain tumors with antibody-directed gold nanoconjugates",
+        "Tumor stem cells in gliomas",
+        "Wound repair and angiogenesis, vascular remodeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "The Motor Neuron Center",
+        "The Taub Institute for Research on Alzheimer's Disease and the Aging Brain",
+        "The Institute for Cancer Genetics",
+        "The Herbert Irving Comprehensive Cancer Center",
+        "The Stem Cell Center",
+        "Naomi Berrie Diabetes Center"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "intracellular signaling",
+        "cellular development, such as lymphocyte, melanocyte, and bone development",
+        "endothelial cell and platelet pathobiology",
+        "metastasis and behavior of cells in situ and in three-dimensions",
+        "proteomics and protein modeling",
+        "emerging infectious diseases, including HIV",
+        "neurodegenerative mechanisms",
+        "experimental therapeutics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "In Focus",
+        "Clinical Assay Development",
+        "Stay Connected",
+        "Hot Topics",
+        "Stay Connected",
+        "Department of Pathology and Laboratory Medicine"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "quality projects.\u00a0These can be\u00a0pilot studies, stand",
+        "alone projects, individual pieces of equipment, travel to conferences,",
+        "Docs in P&LM."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Utility Nav",
+        "Utility Nav Lower",
+        "Main navigation",
+        "Breadcrumb",
+        "Major Research Themes",
+        "Footer",
+        "UCSF Footer Menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Pathogens and Immunity",
+        "Cancer",
+        "Neuropathology",
+        "Inflammation and Tissue Injury"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abul K. Abbas, MBBSautoimmunity, T cell biology",
+        "Alexis J. Combes, PhDsystem immunology, oncology",
+        "Matthew K. Krummel, PhDimmune cell interactions, ImmunoX initiative",
+        "Boris Bastian, MDgenetics and biology of melanoma",
+        "Robert Blelloch, MD, PhDmicroRNAs, stem cells, and cancer",
+        "Alexis J. Combes, PhDsystem immunology, oncology",
+        "Jayanta (Jay) Debnath, MDcancer pathogenesis",
+        "Stephen L. Nishimura, MDimmuno-oncology",
+        "Joanna Phillips, MD, PhDglioblastoma and tumor microenvironment",
+        "Matthew D. Stachler, MD, PhDBarrett's esophagus",
+        "Thea Tlsty, PhDcancer progression, genomic instability",
+        "Amber L. Nolan, MD, PhDtraumatic brain injury, neural circuit dysfunction",
+        "Joanna J. Phillips, MD, PhDbrain tumor microenvironment",
+        "Walter Finkbeiner, MD, PhDlung pathology",
+        "Zoltan G. Laszik, MD, PhDgene expression, tissue inflammation, kidney diseases",
+        "Aras N. Mattis, MD, PhDliver diseases",
+        "Stephen L. Nishimura, MDintegrins"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.17647058823529413
+      }
+    },
+    {
+      "items": [
+        "Utility",
+        "Main navigation",
+        "Utility",
+        "Research & Core Facilities",
+        "Sidebar navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "cell, cell",
+        "matrix, and protein",
+        "cell interactions, particularly involving receptor"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Education",
+        "Apply for Residency/Fellowship",
+        "Research",
+        "Clinical Services",
+        "Grand Rounds",
+        "Department of Pathology",
+        "Resources For",
+        "Pathology Divisions"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Skip to navigation",
+        "Skip to content",
+        "Skip to footer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Dr. Danielle Fortuna New Clinical Director of Gross Lab Education and Operations",
+        "Milestone for CNDR Brain Bank",
+        "Soft Tissue/Bone Pathology Fellowship",
+        "New Protocol for Clinical Proteomics",
+        "The Milan System for Reporting Salivary Gland Cytopathology",
+        "Pathologists' Assistant Joseph A. DiRienzi Honored with NDRI Service to Science Award",
+        "Stay Connected",
+        "Hot Topics",
+        "Stay Connected",
+        "Department of Pathology and Laboratory Medicine"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Solid tumors",
+        "Neurobiology",
+        "Hematologic malignancies",
+        "Informatics",
+        "Molecular diagnostics",
+        "Placenta and fetal growth",
+        "Renal pathology",
+        "Medicolegal"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Resources",
+        "Main navigation",
+        "Main menu",
+        "Resources",
+        "Breadcrumb",
+        "Center for Precision Pathology",
+        "Footer Menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Dr. Danielle Fortuna New Clinical Director of Gross Lab Education and Operations",
+        "Milestone for CNDR Brain Bank",
+        "Soft Tissue/Bone Pathology Fellowship",
+        "New Protocol for Clinical Proteomics",
+        "The Milan System for Reporting Salivary Gland Cytopathology",
+        "Pathologists' Assistant Joseph A. DiRienzi Honored with NDRI Service to Science Award",
+        "Stay Connected",
+        "Hot Topics",
+        "Stay Connected",
+        "Department of Pathology and Laboratory Medicine"
+      ],
+      "output_list_from_llm": [
+        "Soft Tissue/Bone Pathology Fellowship",
+        "New Protocol for Clinical Proteomics",
+        "The Milan System for Reporting Salivary Gland Cytopathology"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "quality projects. These can be pilot studies, stand",
+        "alone projects, individual pieces of equipment, travel to conferences,",
+        "Docs in P&LM."
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Soft tissue/bone pathology fellowship",
+    "The milan system for reporting salivary gland cytopathology",
+    "New protocol for clinical proteomics"
+  ],
+  "error": null
+}

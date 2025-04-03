@@ -1,0 +1,841 @@
+{
+  "level2_term": "program implementation",
+  "all_urls": [
+    "https://icis2025.aisconferences.org/submissions/call-for-papers/",
+    "https://www.sciencedirect.com/journal/journal-of-systems-and-software/about/call-for-papers",
+    "https://w2.csun.edu/cod/conference/journal-call-papers",
+    "https://globalimplementation.org/call-for-abstract-submissions-gira-special-issue-practice/",
+    "https://www.usenix.org/conference/osdi25/call-for-papers",
+    "https://pacis2025.aisconferences.org/program/isj-workshop/",
+    "https://academia.stackexchange.com/questions/18349/difference-between-conference-paper-and-journal-paper",
+    "https://academic.oup.com/jamia/pages/call-for-papers",
+    "https://icml.cc/Conferences/2025/CallForPapers",
+    "https://journals.sagepub.com/page/pmx/call-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Benefits of the Conference to Journal Paper Submission Cycle",
+        "Key Dates",
+        "Tracks",
+        "Panels, Professional Development Workshops and Paper-A-Thon",
+        "Best Paper Awards",
+        "Journal Publication Policy"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence (AI) & Machine Learning (ML)",
+        "Augmentative and Alternative Communications (AAC)",
+        "Blind/Low Vision",
+        "Captions & Transcription",
+        "Cognitive & Learning Disabilities",
+        "Deaf and Hard of Hearing",
+        "Design",
+        "Development",
+        "Digital Accessibility",
+        "Education",
+        "Emerging Technologies",
+        "Employment & Workplace",
+        "Engineering",
+        "Evaluation & Remediation",
+        "Gaming & Interactive Entertainment",
+        "Healthcare & Rehabilitation",
+        "Independent Living",
+        "Information & Communications Technology (ICT)",
+        "Law, Compliance, and Policy",
+        "Leadership & Strategy",
+        "Leisure & Travel",
+        "Mobile Technology",
+        "Mobility",
+        "Product Demonstration",
+        "Research",
+        "School-to-Work Transitioning",
+        "Video & Live Streaming",
+        "Virtual Reality (VR), Augmented Reality (AR), Cross/Mixed Reality (XR)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 28,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.10714285714285714,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.10714285714285714
+      }
+    },
+    {
+      "items": [
+        "Microsoft Word Document (DOC, DOCX)",
+        "Adobe Portable Document Format (PDF) Rich-Text Format (RTF)",
+        "UTF-8 or ASCII Text File (TXT)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Microsoft: Make your PowerPoint presentations accessible to people with disabilities",
+        "Adobe PDF Accessibility Overview",
+        "Apple: Create accessible documents, spreadsheets, or presentations with Pages, Numbers, or Keynote",
+        "Prezi: Creating accessible content in Prezi Design"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Product giveaways and or sales are prohibited.",
+        "There is a maximum of five (5) presenters per presentation.",
+        "There are no panel presentations allowed."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Schedule & Timeline",
+        "Topics",
+        "Submission Procedures & Guidelines",
+        "Manuscripts",
+        "Presentation Slides",
+        "Presentations Policies"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "Authors and Presenters",
+        "Paper Title",
+        "Abstract",
+        "Session Objective(s)",
+        "Audience",
+        "Audience Level",
+        "Session Summary",
+        "Topic Areas",
+        "A Note on Final Manuscripts"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "What were the goals of this implementation effort?",
+        "What questions did you hope to answer in this effort?",
+        "How did you go about answering those questions?",
+        "What multiple perspectives and experiences shaped this effort?",
+        "How did you structure your approach to data/evidence collection?",
+        "What implementation theory, evidence, frameworks, or literature informed or focused your efforts?",
+        "What were the results? What did you learn? Are there implications for the field?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Call for Abstract Submissions: GIRA Special Issue \u2013 Practice",
+        "Special Issue: The Practice of Implementation",
+        "Who Should Submit?",
+        "Potential Topics",
+        "Basic Questions Authors Should Consider and May Address",
+        "Author Support Services",
+        "Abstracts May also Propose Manuscripts that:",
+        "Abstract Length and Submission",
+        "GIS News,Resources &Opportunities",
+        "Quick Links"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Special Issue: The Practice of Implementation",
+        "Who Should Submit?",
+        "Potential Topics",
+        "Basic Questions Authors Should Consider and May Address",
+        "Author Support Services",
+        "Abstracts May also Propose Manuscripts that:",
+        "Abstract Length and Submission"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "items": [
+        "https://www.youtube.com/playlist?list=PLUSNakcMp3X8ANFBLKb_EZ8zbFb_iVU9I",
+        "Video 1: What is the Special Issue?",
+        "Video 2: Tips and Tricks for Practitioners to Turn their Experience into a Manuscript",
+        "Video 3: Who Should Submit a Manuscript?",
+        "Video 4: The Goals and Rationale Behind the Special Issue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Abstract registrations due: Tuesday, December 3, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Complete paper submissions due: Tuesday, December 10, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Reviews available: Thursday, March 6, 2025",
+        "Author responses due: Monday, March 10, 2025",
+        "Notification to authors: Tuesday, March 25, 2025",
+        "Final papers due: Thursday, June 5, 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "spaced 8.5\" x 11\" pages, including",
+        "point type on 12",
+        "point (single",
+        "spaced)",
+        "column format, Times Roman or a similar font, within a text block 7\" wide x 9\" deep. Accepted papers"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Suthirtha Chatterjee, University of Nevada, Las Vegas, USA",
+        "Andreas Eckhardt, University of Innsbruck, Austria",
+        "Federico Iannacci, University of Sussex, UK",
+        "Stan Karanasios, University of Queensland, Australia",
+        "Petter Nielsen, University of Oslo, Norway",
+        "M. N. Ravishankar, Queen\u2019s University Belfast, UK",
+        "Manuel Trenz, University of G\u00f6ttingen, Germany",
+        "Zhongyun (Phil) Zhou, Tongji University"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Martin Adam, University of Goettingen, Germany",
+        "Petros Chamakiotis, ESCP Business School, Spain",
+        "Cecil Chua, Missouri University of Science and Technology, USA",
+        "Hameed Chugtai, Lancaster University, UK",
+        "Marco Marabelli, Bentley University, USA",
+        "Philip Wu, Royal Holloway, University of London, UK"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Generative AI and Automation",
+        "Digital transformation",
+        "Social media and digital collaboration for political participation and societal changes",
+        "Implementation and value of big data and machine learning for organizations",
+        "Ethical issues, especially in the uses of big",
+        "data, algorithms, and design",
+        "Consequences of Gig work arrangements on workers and society",
+        "New organizing forms and business models enabled by platforms",
+        "Dark side of technology including addiction, victimization, surveillance",
+        "Social cyberwarfare and cybersecurity",
+        "Implications of blockchain and distributed ledger technology",
+        "Sustainability and IS for a greener society, government, and/or industry",
+        "The role of IS for climate change",
+        "Psychological, and social aspects of human",
+        "computer and human",
+        "robot interactions",
+        "IOT, wearable devices and their impacts",
+        "Designs for wearable, pervasive, and ubiquitous systems and computing"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05555555555555555
+      }
+    },
+    {
+      "items": [
+        "Help identify this very early airplane",
+        "Abbreviations with letters over symbols",
+        "Question of whether grammar in a particular sentence is correct",
+        "How do I write all five word sentences?",
+        "Calculating the mean, not variance, reduces the degrees of freedom?",
+        "How to use \u00ab or \u00bb (other than referring to gold) in mathematics?",
+        "Housing end ferrule fused to frame, how to remove",
+        "Advanced Green's function for the classical forced harmonic oscillator",
+        "Has there been an official version of the Cerberus for D&D?",
+        "How is stim validated",
+        "How can we test a code for an algorithm that is implemented for the first time?",
+        "LEAN: Why is Classical Logic Needed to Prove this?",
+        "Charging for the use of open source software",
+        "Best way to bridge separate laminate sections across doorsills?",
+        "What's the point of rejecting direct negotiations but accepting indirect negotiations?",
+        "Can I raise the collar ties in my 1700s house roof?",
+        "Is pseudonymization using LLM considered as hashing?",
+        "Hashing security question answers for bank account portal activation",
+        "Square root defined as a positive value: why?, when? who?",
+        "KLM changed my booking to a much longer flight",
+        "How plausible is this anecdote about \"toggling in\" an operating system?",
+        "hyperref does not jump correctly to the labeled proof environment"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.13636363636363635,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "current community",
+        "your communities",
+        "more stack exchange communities"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stack Exchange Network",
+        "Linked",
+        "Related",
+        "Hot Network Questions"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "66.1k",
+        "18 gold badges",
+        "200 silver badges",
+        "311 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1,797",
+        "2 gold badges",
+        "16 silver badges",
+        "22 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "badroit",
+        "badroit",
+        "13.9k55 gold badges6464 silver badges8181 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "13.9k",
+        "5 gold badges",
+        "64 silver badges",
+        "81 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mark Meckes",
+        "Mark Meckes",
+        "3,0342020 silver badges2121 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "3,034",
+        "20 silver badges",
+        "21 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pete L. Clark",
+        "Pete L. Clark",
+        "132k2525 gold badges367367 silver badges524524 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "25 gold badges",
+        "367 silver badges",
+        "524 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Start asking to get answers",
+        "Find the answer to your question by asking.",
+        "Ask question"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Explore related questions",
+        "publicationsconference",
+        "See similar questions with these tags."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Deep Learning (architectures, generative models, theory, etc.)",
+        "Evaluation (methodology, meta studies, replicability and validity, human-in-the-loop, etc.)",
+        "Probabilistic Methods (Bayesian methods, graphical models, Monte Carlo methods, etc.)",
+        "Reinforcement Learning (decision and control, planning, hierarchical RL, robotics, etc.)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Deadlines:",
+        "Changes to abstract/title/authorship:",
+        "Reciprocal Reviewing Requirement:",
+        "Double-Blind Review:",
+        "Dual Submission:",
+        "Reviewing Criteria:",
+        "Use of Generative AI:",
+        "Ethical Conduct for Peer Review:",
+        "Impact Statements:",
+        "Lay summaries:"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Product giveaways and or sales are prohibited.",
+        "There is a maximum of five",
+        "There are no panel presentations allowed."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Abstract registrations due: Tuesday, December 3, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Complete paper submissions due: Tuesday, December 10, 2024, 5:59 pm EST (10:59 pm UTC)",
+        "Reviews available: Thursday, March 6,",
+        "Author responses due: Monday, March 10,",
+        "Notification to authors: Tuesday, March 25,",
+        "Final papers due: Thursday, June 5,"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Schedule & Timeline",
+        "Topics",
+        "Submission Procedures & Guidelines",
+        "Manuscripts",
+        "Presentation Slides",
+        "Presentations Policies"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Benefits of the Conference to Journal Paper Submission Cycle",
+        "Key Dates",
+        "Tracks",
+        "Panels, Professional Development Workshops and Paper-A-Thon",
+        "Best Paper Awards",
+        "Journal Publication Policy"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Authors and Presenters",
+        "Paper Title",
+        "Abstract",
+        "Session Objective(s)",
+        "Audience",
+        "Audience Level",
+        "Session Summary",
+        "Topic Areas",
+        "A Note on Final Manuscripts"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

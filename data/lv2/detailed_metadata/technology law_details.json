@@ -1,0 +1,3519 @@
+{
+  "level1_term": "technology law",
+  "all_urls": [
+    "https://law.yale.edu/isp/about/research-areas",
+    "https://law.ucla.edu/academics/centers/institute-technology-law-policy",
+    "https://vcresearch.berkeley.edu/research-unit/berkeley-center-law-and-technology",
+    "https://law.duke.edu/apply/focus/technology",
+    "https://tech.cornell.edu/research/law-policy/",
+    "https://www.law.columbia.edu/areas-of-study/intellectual-property-and-technology",
+    "https://www.law.georgetown.edu/tech-institute/policy/",
+    "https://www.bu.edu/law/faculty-research/centers-institutes/tpri/",
+    "https://michigan.law.umich.edu/academics/areas-interest/law-and-technology",
+    "https://hls.harvard.edu/academics/programs-of-study/law-science-and-technology-program-of-study/",
+    "https://law.asu.edu/emphasis-areas/law-technology",
+    "https://www.law.umaryland.edu/academics/areas-of-study/law-and-technology/",
+    "https://www.law.berkeley.edu/academics/areas-of-study/law-and-technology/",
+    "https://www.law.virginia.edu/academics/program/lawtech-center",
+    "https://law.seattleu.edu/academics/degree-programs/jd/curriculum/tile/",
+    "https://udayton.edu/law/jd_programs/pilt/index.php",
+    "https://www.law.northwestern.edu/academics/curricular-offerings/concentrations/technology/",
+    "https://ogc.umich.edu/practice-areas/research-intellectual-property-technology/",
+    "https://libguides.nova.edu/Law_and_Technology",
+    "https://law.asu.edu/centers/law-science-innovation",
+    "https://www.nyls.edu/academics/specialty-areas/centers-and-institutes/innovation-center-for-law-and-technology/",
+    "https://law.duke.edu/dclt/research",
+    "https://clp.law.harvard.edu/research/research-projects/",
+    "https://www.usafa.edu/research/research-centers/law-technology-and-warfare-research-cell/",
+    "https://www.academia.edu/Documents/in/Information_Technology_Law",
+    "https://law.ucla.edu/academics/areas/technology-law",
+    "https://law.nd.edu/faculty-scholarship/interdisciplinary-studies/program-on-intellectual-property-technology-law/",
+    "https://law.syracuse.edu/academics/centers-institutes/innovation-law-center/",
+    "https://law.yale.edu/justice-collaboratory/our-work/projects",
+    "https://www.law.upenn.edu/institutes/ctic/about-ctic.php"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Access to Knowledge",
+        "Algorithmic Decisionmaking /Artificial Intelligence",
+        "Art Law / Entertainment Law / Media Law",
+        "Big Data / Data Policy",
+        "Civil Rights / Civil Liberties / Human Rights",
+        "Communication / Journalism / Media",
+        "Computer Science",
+        "Corporate Law / Consumer Law",
+        "Cyberlaw / Cybersecurity",
+        "First Amendment / Freedom of Expression",
+        "Government Transparency / Government Accountability",
+        "Health Law / Medical Law / Bioethics",
+        "Intellectual Property",
+        "International Law / Comparative Law",
+        "Internet Governance / Internet Infrastructure",
+        "National Security / Foreign Affairs",
+        "Platforms / Social Networks / Social Media",
+        "Privacy / Surveillance",
+        "Regulating Technology",
+        "Regulating Through Technology",
+        "Reproductive Rights / Reproductive Justice",
+        "Robotics",
+        "Tech Ethics / Social Consequences",
+        "Telecommunications",
+        "Visual Advocacy / Visual Evidence"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.08,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16
+      }
+    },
+    {
+      "items": [
+        "Twitter",
+        "Facebook",
+        "YouTube",
+        "LinkedIn"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Engage With ITLP",
+        "Who We Are",
+        "Get Involved",
+        "Mark McKenna is honored with CLA\u2019s Vanguard Award",
+        "Five professors are recognized for their excellence in legal scholarship"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Intersection of Tech Law and Policy",
+        "Mark McKenna",
+        "John Villasenor",
+        "Alessia Zornetta",
+        "Alex Alben",
+        "Richard L. Hasen",
+        "Jerry Kang",
+        "Neil W. Netanel",
+        "Edward A. Parson",
+        "Laura Pedraza-Fari\u00f1a",
+        "Andrew D. Selbst",
+        "Xiyin Tang",
+        "Sanford S. Williams",
+        "Achuta Kadambi",
+        "Prineha Narang",
+        "Nanyun (Violet) Peng",
+        "Yuan Tian",
+        "Lixia Zhang",
+        "Melodi Dincer",
+        "Nikita Aggarwal",
+        "Courtney Radsch",
+        "Mark Verstraete"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jump to Header",
+        "Jump to Main Content",
+        "Jump to Footer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alex Alben\n\t\t\t\t\n\t\t\t\n\n\t\t\t\t\tLecturer in Law",
+        "Neil W. Netanel\n\t\t\t\t\n\t\t\t\n\n\t\t\t\t\tPete Kameron Professor of Law",
+        "Laura Pedraza-Fari\u00f1a\n\t\t\t\t\n\t\t\t\n\n\t\t\t\t\tProfessor of Law",
+        "Andrew D. Selbst\n\t\t\t\t\n\t\t\t\n\n\t\t\t\t\tProfessor of Law",
+        "Xiyin Tang\n\t\t\t\t\n\t\t\t\n\n\t\t\t\t\tProfessor of Law",
+        "Sanford S. Williams\n\t\t\t\t\n\t\t\t\n\n\t\t\t\t\tLecturer in Law",
+        "Prineha Narang\n      \nProfessor, Electrical and Computer Engineering",
+        "Nanyun (Violet) Peng\n      \nAssociate Professor of Computer Science",
+        "Yuan Tian\n      \nAssociate Professor of Electrical and Computer Engineering and Computer Science",
+        "Lixia Zhang\n      \nDistinguished Professor of Computer Science"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Melodi Dincer",
+        "Nikita Aggarwal",
+        "Courtney Radsch",
+        "Mark Verstraete"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "04\n\n01\n\n\n12:15 PM - 1:15 PM\nLS1327",
+        "Tech Talk with Professor Haochen Sun",
+        "Efficiency vs. Dignity: The Utilitarian Foundation of Data Protection Laws in the U.S. and China",
+        "Read More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "04\n\n15\n\n\n12:15 PM - 1:15 PM\nLS1327",
+        "Tech Talk with Asst. Professor Fanna Gamal",
+        "What is \u201cRacial\u201d Data and How Does the Law Regulate It?",
+        "Read More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Intellectual property protections for software;",
+        "The impact of cloud computing models on transborder government demands for data;",
+        "The rights of artists and other workers in the video game industry;",
+        "The use of machine testimony in the courtroom;",
+        "Management of complex patent cases;",
+        "Values and the governance of artificial intelligence."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Utilities navigation",
+        "Main menu",
+        "Main menu",
+        "Utilities navigation",
+        "In News",
+        "Footer menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "UC Berkeley Summit Tackles AI Governance, Trust and Ethical Technology",
+        "Research Highlights",
+        "Find Expertise",
+        "Research Office",
+        "Secure Funding",
+        "Ensure Compliance",
+        "Locate Facilities",
+        "For VCR Units"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "The Most Comprehensive Instructional Program in Law and Technology",
+        "Supporting a Local, National and Global Community",
+        "Associate Director",
+        "Jann Dudley"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Intellectual Property",
+        "Introduction to Privacy Law and Policy",
+        "Science Law & Policy",
+        "Legal Issues of Cybersecurity and Data Breach Response",
+        "Frontier AI & Robotics: Law & Ethics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Mega Menu",
+        "Technology, Science, and Innovation",
+        "Featured Faculty",
+        "Nita A. Farahany",
+        "More Faculty",
+        "Selected Courses",
+        "270 Intellectual Property",
+        "331 Introduction to Privacy Law and Policy",
+        "333 Science Law & Policy",
+        "550 Legal Issues of Cybersecurity and Data Breach Response",
+        "592 Frontier AI & Robotics: Law & Ethics",
+        "270 Intellectual Property",
+        "331 Introduction to Privacy Law and Policy",
+        "333 Science Law & Policy",
+        "550 Legal Issues of Cybersecurity and Data Breach Response",
+        "592 Frontier AI & Robotics: Law & Ethics",
+        "Start-Up Ventures Clinic",
+        "JD/LLM in Law and Entrepreneurship",
+        "JD/MA in Bioethics and Science Policy",
+        "Meet\u00a0Bennett Wright '20",
+        "Alumni in the Field",
+        "Footer menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.22727272727272727,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.13636363636363635
+      }
+    },
+    {
+      "items": [
+        "Stuart M. BenjaminWilliam Van Alstyne Distinguished Professor of Law",
+        "James BoyleWilliam Neal Reynolds Distinguished Professor of Law",
+        "Christopher BuccafuscoEdward & Ellen Schwarzman Distinguished Professor of Law"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Michael D. Frakes A. Kenneth Pye Distinguished Professor of Law and Professor of Economics",
+        "Laurence R. HelferHarry R. Chadwick, Sr. Distinguished Professor of Law",
+        "Jennifer JenkinsClinical Professor of Law, Director, Center for the Study of the Public Domain"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Image Above Text",
+        "Title\nIan Darrow '15",
+        "Content\nCounsel at Protocol Labs; Co-founder, Archipelago"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Cornell Law School",
+        "Jacobs Technion-Cornell Institute",
+        "New York State Civil Legal Aid Technology Conference",
+        "Technion \u2013 Israel Institute of Technology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Master's Programs",
+        "PHD & Post Doctoral Programs",
+        "Studio",
+        "Campus",
+        "Buildings",
+        "Plan your event",
+        "Tour Campus",
+        "Discover",
+        "Resources",
+        "Connect with us"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "James Grimmelmann is a Professor at Cornell Tech and in the Law School at Cornell University.",
+        "Research focus:\u00a0How laws regulating software affect freedom, wealth, and power",
+        "Website",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Corporate, Business, and Transactional Law",
+        "Intellectual Property and Technology",
+        "Litigation and Dispute Resolution"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Corporate, Business, and Transactional Law",
+        "Intellectual Property and Technology",
+        "Leadership",
+        "Social Justice and Human Rights"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Columbia Antitrust Law and Economics Association",
+        "Legal Tech Association",
+        "Society for Law, Science, and Technology",
+        "Columbia Journal of Law & the Arts",
+        "Columbia Science and Technology Law Review"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Why Columbia?",
+        "Related Links",
+        "Shyamkrishna Balganesh",
+        "Anu Bradford",
+        "Mala Chatterjee",
+        "Jane C. Ginsburg",
+        "Conrad Johnson",
+        "Lina Khan",
+        "Clarisa Long",
+        "Ronald Mann",
+        "Petros C. Mavroidis",
+        "Justin McCrary",
+        "Eben Moglen",
+        "Christopher Morten",
+        "Eric Talley",
+        "Timothy Wu",
+        "Harold S. H. Edgar",
+        "Kernochan Center for Law, Media, and the Arts",
+        "Science, Health, and Information Clinic",
+        "Lawyering in the Digital Age Clinic",
+        "IP/Arts Externships",
+        "Entrepreneurship and Community Development Clinic",
+        "Clinic Succeeds in Pushing FDA on Clinical Trial Transparency",
+        "Silicon Valley Has Gone From \u2018Think Different\u2019 to \u2018Yes, Sir\u2019",
+        "Assessing Europe\u2019s Digital Markets Act One Year In",
+        "\u2018Early Days\u2019 of Establishing AI Copyright Rules Confounding Canada and Other Countries"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.11538461538461539,
+        "length_consistency": true,
+        "pattern_ratio": 0.038461538461538464,
+        "keyword_ratio": 0.07692307692307693
+      }
+    },
+    {
+      "items": [
+        "Shyamkrishna Balganesh\n\n\nSol Goldman Professor of Law",
+        "Anu Bradford\n\n\nHenry L. Moses Professor of Law and International Organization",
+        "Mala Chatterjee\n\n\nAssociate Professor of Law",
+        "Jane C. Ginsburg\n\n\nMorton L. Janklow Professor of Literary and Artistic Property Law",
+        "Conrad Johnson\n\n\nEdward Ross Aranow Clinical Professor of Law",
+        "Lina Khan\n\n\nAssociate Professor of Law",
+        "Clarisa Long\n\n\nMax Mendel Shaye Professor of Intellectual Property Law",
+        "Ronald Mann\n\n\nAlbert E. Cinelli Enterprise Professor of Law",
+        "Petros C. Mavroidis\n\n\nEdwin B. Parker Professor of Foreign & Comparative Law",
+        "Justin McCrary\n\n\nPaul J. Evanson Professor of Law",
+        "Eben Moglen\n\n\nProfessor of Law",
+        "Christopher Morten\n\n\nAssociate Clinical Professor of Law",
+        "Eric Talley\n\n\nIsidor and Seville Sulzbacher Professor of Law",
+        "Timothy Wu\n\n\nJulius Silver Professor of Law, Science and Technology",
+        "Harold S. H. Edgar\n\n\nJulius Silver Professor Emeritus of Law, Science and Technology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.26666666666666666
+      }
+    },
+    {
+      "items": [
+        "Clinic",
+        "Lawyering in the Digital Age Clinic",
+        "Areas of Study\n\nIntellectual Property and Technology\nSocial Justice and Human Rights"
+      ],
+      "metadata": {
+        "html_type": "container_article",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Reports",
+        "Scholarship",
+        "Improving the Civil Justice System",
+        "Promoting Digital Equity and Access",
+        "Technology Education for Policymakers",
+        "Enhancing Innovation",
+        "Advancing Civil Rights and Digital Personhood",
+        "Social Navigation",
+        "Resources For",
+        "Helpful Links",
+        "Main Menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.2727272727272727
+      }
+    },
+    {
+      "items": [
+        "The Women of BU Law",
+        "An Advocate for BU Law\u2019s Externship Program",
+        "Law Without Borders",
+        "Examining Global Investment and Trade Systems",
+        "Faculty & Research",
+        "Also See"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Henry King Ransom Professor of Law",
+        "Co-director, Empirical Legal Studies Center",
+        "Co-director, Program in Law and Economics",
+        "Professor of Economics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Clinical Assistant Professor of Law",
+        "Director, Law and Mobility Program",
+        "Co-director, Zell Entrepreneurship Clinic"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Legal Practice Program",
+        "Moot Courts",
+        "Clinics",
+        "Legal Tech Literacy and Leadership",
+        "Course Catalog"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Fellowship Program at Berkman Klein Center for Internet & Society at Harvard University",
+        "Summer Public Interest Funding",
+        "Winter Term International Travel Grants"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Berkman Klein Center for Internet & Society at Harvard University",
+        "FXB Center for Health & Human Rights at Harvard University",
+        "Harvard Business School Healthcare Initiative",
+        "Harvard Global Health Institute",
+        "The Petrie-Flom Center for Health Law Policy, Biotechnology, and Bioethics at Harvard Law School"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Intellectual Property Law",
+        "Health Law, Biotechnology, and Bioethics",
+        "Internet Law",
+        "Technology and Civil Liberties"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Resources",
+        "Resources",
+        "Resources",
+        "Resources",
+        "Resources",
+        "Resources",
+        "Resources",
+        "Resources",
+        "Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "AI: Law, Ethics and\u00a0Policy",
+        "AI\u00a0in Legal Operations and Innovation",
+        "AI\u00a0Legal Ethics and Professional Responsibility"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Privacy Law",
+        "National Security Law",
+        "Artificial Intelligence Law, Ethics and Policy",
+        "Cyberspace Law"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "eDiscovery and Digital Evidence",
+        "Privacy, Big Data and Emerging Technologies",
+        "Intellectual Property in Cyberspace",
+        "Litigation and Courtroom Technology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Copyright Law",
+        "Patent Law",
+        "Trademark and Unfair Competition",
+        "Entertainment Business Contracts"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "High-Tech Licensing",
+        "Comprehensive Patent Practice",
+        "Real World IP Lawmaking",
+        "Intellectual Property in Cyberspace"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Health Law and Policy",
+        "Genetics and the Law",
+        "Bioethics",
+        "Biotechnology (Licensing and Litigation)",
+        "Health Technologies, Innovation and Law"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Neuroscience Law and Ethics",
+        "Law and Psychology",
+        "Reproduction, Reproductive Technologies and Law",
+        "FDA Regulation",
+        "Healthcare Entrepreneurship"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Center for Law, Science and Innovation",
+        "Degrees offered",
+        "Certificate in Law, Science and Technology",
+        "Student opportunities"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence (AI)",
+        "Data, Privacy and Security",
+        "Intellectual Property",
+        "Life Sciences and Biotechnology"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Advanced Evidence: Forensic Science in Criminal Cases",
+        "Business Law/IP Externship",
+        "Cryptocurrencies",
+        "Cyber Boot Camp \u2013 Tech for Cyber Lawyers",
+        "Cybercrime",
+        "Electronic Evidence and Discovery",
+        "Forensic Defense Clinic",
+        "Foundations of IP Practice",
+        "Information Privacy Law",
+        "IP and Entrepreneurship Clinic \u2013 Patent / Business",
+        "Intellectual Property Law Survey",
+        "International Cybersecurity",
+        "Internet Law",
+        "Law & Policy of Cybersecurity",
+        "Law, AI and Big Data",
+        "Licensing and Technology Transfer Law",
+        "National Security, Electronic Surveillance and the Fourth Amendment",
+        "Patent Law",
+        "Race, Technology, and the Law Seminar",
+        "Regulating Emerging Technologies",
+        "Surveillance, Technology & Forensic Evidence",
+        "Technology in the Practice of Law"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.045454545454545456,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2727272727272727
+      }
+    },
+    {
+      "items": [
+        "Patty Campbell",
+        "Tanya Thomas",
+        "Markus Rauschecker",
+        "Mark Cather",
+        "Chaz Arnet",
+        "Maneka Sinha",
+        "Liza Vertinsky",
+        "Guha Krishnamurthi",
+        "Natalie Ram",
+        "David Gray",
+        "Diane Hoffman",
+        "Donald Tobin",
+        "Jeff Sovern",
+        "Michael Greenberger",
+        "Ben Yelin",
+        "Chris Webster"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Maryland Intellectual Property Legal Resources Center",
+        "Maryland Intellectual Property Program",
+        "University of Maryland Center for Health and Homeland Security",
+        "US Cyber Command Academic Engagement Network",
+        "IAPP Westin Scholars Award Program",
+        "Cybersecurity and Crisis Management Certificate Program,",
+        "JD/MS Dual Degree Program (with UMBC)",
+        "JD Credit Transfer Towards UMBC Master of Science in Cybersecurity"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Intellectual Property",
+        "Privacy",
+        "Artificial Intelligence",
+        "Digital Entertainment",
+        "A Global Perspective"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Seattle University School of Law TILE Program: Community & Networking",
+        "Seattle University School of Law TILE Program: The Importance of Ethics",
+        "Seattle University School of Law TILE Program: Leticia Hern\u00e1ndez Walker"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence",
+        "Cybersecurity",
+        "Internet",
+        "Privacy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ethics of Innovation and Technology",
+        "Law Practice Technology and Ethics",
+        "Representing Entrepreneurs"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Advertising Law",
+        "Antitrust Law",
+        "Artificial Intelligence and Law",
+        "Artificial Intelligence and the Practice of Law",
+        "Aviation and Space Law",
+        "Bioethics and the Law",
+        "Biomedical Law and Policy",
+        "The Business of Intellectual Property",
+        "Contemporary Issues in Sports Law",
+        "Copyright Law",
+        "Cybercrime",
+        "Cybersecurity Planning",
+        "E-Discovery",
+        "Energy Law and Policy",
+        "Entertainment Law",
+        "Ethical Legal Tech Development",
+        "Ethical Legal Tech Innovation",
+        "Externships",
+        "Financial Technology",
+        "Food and Drug Law Seminar",
+        "Foundations of Privacy Law",
+        "Freedom of Expression: Social Media, Technology, and Other Modern Problems",
+        "Global Privacy and Business",
+        "Health Technology Law and Policy",
+        "In-House Counsel: Law and Practice in Intellectual Property"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16,
+        "length_consistency": true,
+        "pattern_ratio": 0.04,
+        "keyword_ratio": 0.24
+      }
+    },
+    {
+      "items": [
+        "Innovating the Built Environment",
+        "Intellectual Property",
+        "International Intellectual Property",
+        "Internet Law and Digital Commerce",
+        "Internet Platforms: Policy and Litigation",
+        "Investing in AI companies: Tech, Business, and Legal Perspectives",
+        "Law Practice Technology and Ethics",
+        "Managing Privacy",
+        "Patent Law",
+        "Practical Skills for Technology and IP Licensing",
+        "Practical Video Game and Interactive Entertainment Lawyering",
+        "Privacy in Practice",
+        "Professional Responsibility Technology Lab",
+        "Right of Publicity",
+        "SJD Dissertation Research and Writing",
+        "SJD Seminar",
+        "Supervised Independent Study",
+        "Technology Law and Public Policy",
+        "Trademark Law",
+        "Visual Litigation and Today\u2019s Technology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.35
+      }
+    },
+    {
+      "items": [
+        "Arts Legal Clinic, in collaboration with Washington Lawyers for the Arts",
+        "Digital Lawyering Clinic",
+        "USPTO-sanctioned Trademark Clinic"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "AeroMech",
+        "AG Antitrust Division",
+        "AG Consumer Protection Division",
+        "Aleut Corporation",
+        "Allen Institute",
+        "Amazon",
+        "Andersen LLC",
+        "Arts Law Center UNIGE",
+        "Attorney General of WA (University of Washington) General Practice Team",
+        "Bioventures for Global Health",
+        "Bloodworks Northwest",
+        "Boeing",
+        "Consumer Financial Protection Bureau",
+        "Costco (LEAD-WA)",
+        "DOJ Civil Division, Torts Branch, Aviation, Space, and Admiralty Litigation",
+        "Doyon Utilities",
+        "Edifecs",
+        "Expedia (LEAD-WA)",
+        "Federal Trade Commission",
+        "Fred Hutchinson Cancer Center",
+        "Fulkrum Inc, UK",
+        "Glowforge, Inc.",
+        "Gusto",
+        "Hagen Resources International",
+        "International Association of Privacy Professionals",
+        "Karat, Inc.",
+        "Lululemon",
+        "Ionic Security",
+        "Macerich",
+        "Microsoft",
+        "NAIOP Washington State, Government Affairs Committee",
+        "NCSOFT",
+        "Neon Rose Agency",
+        "Nintendo (Gregoire Fellows Program)",
+        "Pancreatic Cancer Action Network",
+        "Pfizer (formerly SeaGen)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 36,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.05555555555555555,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.027777777777777776
+      }
+    },
+    {
+      "items": [
+        "Porch Group, Inc.",
+        "Proliance Surgeons",
+        "Pugh Capital Management",
+        "Quest software",
+        "Safari Technologies",
+        "Salesforce (LEAD-WA)",
+        "Screen Actors Guild and the American Federation of Television and Radio Artists",
+        "Seattle Arena Company LLC (Climate Pledge Arena and Seattle Kraken)",
+        "Seattle Art Museum",
+        "Seattle Children\u2019s Hospital",
+        "Seattle Sounders FC",
+        "Seattle Symphony",
+        "Seattle University Office of University Counsel",
+        "Starbucks Coffee Company",
+        "Sub Pop Records",
+        "T-Mobile (LEAD-WA)",
+        "TechTonic Justice",
+        "Thames River Valley AI Hub, UK",
+        "The Romero Institute",
+        "United States Air Force JAG Corps - Joint Base Lewis - McChord Legal Office",
+        "University of Exeter-GLAM E Lab, UK",
+        "University of Washington CoMotion \u2013 Copyright and Trademark",
+        "University of Washington CoMotion \u2013 Patent Team",
+        "Vestas American Wind Technology",
+        "Washington State Patent Law Association \u2013 Intellectual Property Social Media Internship",
+        "Wizards of the Coast",
+        "World Intellectual Property Organization",
+        "Zillow (LEAD-WA)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 28,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.03571428571428571,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07142857142857142
+      }
+    },
+    {
+      "items": [
+        "Activism",
+        "Adobe",
+        "Alaska Air",
+        "Allen Institute",
+        "Amazon",
+        "Amylyx Pharmaceuticals",
+        "Apple",
+        "Axiom",
+        "Banzai International",
+        "Boeing",
+        "Cisco",
+        "Datalogic",
+        "DocuSign",
+        "ElevateBio",
+        "Expedia",
+        "GitHub",
+        "Glassdoor",
+        "GoDaddy",
+        "Google",
+        "Hasbro",
+        "HDT Bio",
+        "Intel",
+        "Meta/Facebook",
+        "Microsoft",
+        "Natera",
+        "Netflix",
+        "Nintendo",
+        "Oracle",
+        "Premera/Blue Cross",
+        "Redfin",
+        "Samsung",
+        "T-Mobile",
+        "TechGC",
+        "TikTok",
+        "Toyota North America",
+        "United States Air Force JAG",
+        "Universal Music Group",
+        "USPTO",
+        "Veritas Technologies",
+        "Vulcan Northwest",
+        "Wizards of the Coast",
+        "Zeevo",
+        "Zillow"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 43,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.023255813953488372
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence Law Society",
+        "Business and Entrepreneurship Law Association",
+        "Entertainment & Sports Law Association",
+        "Health Law Society",
+        "Intellectual Property Law Society",
+        "Privacy Law Student Association",
+        "Space Law Society",
+        "Technology, Media, and Telecommunications Law Association"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Ramsey Al-Salam",
+        "Naser Baseer",
+        "Anne Bayerkohler",
+        "Jake Bernstein",
+        "Bernard Cassidy",
+        "Ronald Clark",
+        "Chuck Cosson",
+        "Robert Cumbow",
+        "Kaustuv Das",
+        "Frank DiMarino",
+        "Jennifer Dumas",
+        "Jenny Goak",
+        "Ryan Harkins",
+        "Ian Harris",
+        "Annette Hayes",
+        "Robert Hedrick"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cassandra Ingram",
+        "Ty Kayam",
+        "Mark Lorbiecki",
+        "Bree Kelly",
+        "Mariah Kennedy",
+        "Christopher Koa",
+        "Tracy Kosa",
+        "Maja Larson",
+        "Kelly Lawton-Abbott",
+        "Katherine McDaniel",
+        "Jane Orenstein",
+        "Edward Pierson",
+        "Melissa Racki",
+        "Kelli Rodriguez"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Eric Schmidt",
+        "Cynthia Scott",
+        "Shayda Schule",
+        "Corinne Smith",
+        "Chad Smith",
+        "Paul Swegle",
+        "Karin Swope",
+        "Ryan Steidl",
+        "Matthew Soskins",
+        "Robert Turner",
+        "Lori Tonnes",
+        "Joe Vincent",
+        "Mark Wittow",
+        "David Zapolsky"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "In this section",
+        "Intellectual Property",
+        "Transformative Technologies",
+        "Ethics and Entrepreneurship",
+        "LLM in Technology and Innovation",
+        "Master of Legal Studies (MLS) in Technology, Innovation, and Entrepreneurship",
+        "Doctor of Juridical Science (SJD)",
+        "Online MLS Compliance & Risk Management Courses",
+        "SITIE Courses",
+        "Seventh Annual Innovation and Technology Conference",
+        "6th Annual Innovation and Technology Law Conference",
+        "Luminaries in Law",
+        "Steven Bender",
+        "Margaret Chon",
+        "LeighAnne Thompson",
+        "Mark Chinen",
+        "John Eason",
+        "Seth Katsuya Endo",
+        "John B. Kirkwood",
+        "Steve Tapia",
+        "Anthony E. Varona"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.047619047619047616,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.19047619047619047
+      }
+    },
+    {
+      "items": [
+        "Next Steps",
+        "Info For:",
+        "Explore More",
+        "School of Law"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "rounded, cutting",
+        "edge education. They are well prepared to handle the legal issues involved in these ever",
+        "expanding areas of law."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Complete Business Associations",
+        "Complete Administrative Law",
+        "Earn an additional 20 credits from among #4 and #5 and the elective courses listed below"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Banking Law and Regulation",
+        "Business, Government, and Public Policy",
+        "Bioethics and the Law",
+        "Data Breach Notification",
+        "Food and Drug Law",
+        "Health Care Law and Policy",
+        "Environmental Law",
+        "Environmental Law Seminar",
+        "Law of Artificial Intelligence and Robotics",
+        "Privacy Law",
+        "Telecommunication and Internet Policy",
+        "Structuring Transactions:\u00a0 Music Industry"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "AI and Legal Reasoning",
+        "In-House Counsel: Modern Corporations (metrics)",
+        "Legal Technology",
+        "Technology Enabled Litigation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Intellectual Property",
+        "Copyright Law",
+        "Patent Law",
+        "Trademarks and Unfair Competition",
+        "Structuring Transactions: Mergers and Acquisitions",
+        "Clinic: Entrepreneurship Law Center*",
+        "Private Equity Transactions",
+        "NUvention: Analytics, Arts, Energy, Impact, Medical, Nano, Therapeutics, or Web & Media*",
+        "Tax Aspects of Private Equity Transactions",
+        "Structuring Transactions: Patent Prosecution",
+        "Structuring Transactions: Venture Capital",
+        "Entrepreneurship Law",
+        "Entrepreneurship Team Project",
+        "Medical Device Commercialization (Kellogg)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Concentration Requirements",
+        "Innovation Regulation and Policy Track",
+        "Legal Practice Technology Track",
+        "Entrepreneurship Track"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Attorneys & Staff",
+        "Practice Areas",
+        "Working With Us",
+        "Attorney-Client Privilege",
+        "Compliance",
+        "Resources",
+        "Clerk & Extern Program"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Information and Data Privacy",
+        "Primary Sources - Federal Statutes",
+        "Getting Started",
+        "Selected Secondary Sources",
+        "Additional Online Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Privacy Law Fundamentals, Sixth Edition (2022)",
+        "Daniel Solove; Paul Schwartz",
+        "Call Number: KF1262 .S665 2022",
+        "ISBN: 9781948771597",
+        "Publication Date: 2022-02-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "U. S. Private-Sector Privacy, Third Edition",
+        "Peter Swire; DeBrae Kennedy-Mayo",
+        "Call Number: KF1263.C65 S93 2020",
+        "ISBN: 9781948771368",
+        "Publication Date: 2020-06-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "A Short and Happy Guide to Privacy and Cybersecurity Law by Jon Garon",
+        "Call Number: KF390.5.C6 G37 2020",
+        "ISBN: 9781684679836",
+        "Publication Date: 2020-07-13"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Privacy Law in a Nutshell by John Soma; Stephen Rynerson; Erica Kitaev",
+        "Call Number: Online (West Academic) only",
+        "ISBN: 9780314289421",
+        "Publication Date: 2014-03-03"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cybersecurity and Privacy Law in a Nutshell by Jay Kesan; Carol Hayes",
+        "Call Number: Online (West Academic) only",
+        "ISBN: 9781634602723",
+        "Publication Date: 2019-05-20"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "An Introduction to Privacy for Technology Professionals",
+        "Travis Breaux (Editor)",
+        "Call Number: QA76.9.A25 I5845 2020",
+        "ISBN: 9781948771900",
+        "Publication Date: 2020-01-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Mireles and Hobaugh's Cybersecurity Law by Michael Mireles; Jack Hobaugh",
+        "Call Number: KF1263.C65 M5745 2022",
+        "ISBN: 9781636590196",
+        "Publication Date: 2021-12-29"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Privacy, Security and Information Management by Andrew Serwin; Peter F. McLaughlin; John Tomaszewski",
+        "Call Number: KF1263.C65 S47 2011",
+        "ISBN: 9781616329778",
+        "Publication Date: 2014-02-07"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Age of Surveillance Capitalism",
+        "Shoshana Zuboff",
+        "Call Number: HF5415.32 .Z83 2020",
+        "ISBN: 9781541758001",
+        "Publication Date: 2020-03-03"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Boundaries of Privacy by Sandra Petronio; Irwin Altman (Foreword by)",
+        "Call Number: BF697.5.S427 P48 2002",
+        "ISBN: 9780791455159",
+        "Publication Date: 2002-10-10"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Breached!",
+        "Daniel J. Solove; Woodrow Hartzog",
+        "Call Number: KF1263.C65 S65 2022",
+        "ISBN: 9780190940553",
+        "Publication Date: 2022-03-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Consumer Privacy and Data Protection",
+        "Daniel J. Solove; Paul M. Schwartz",
+        "Call Number: KF1262 .S65 2021",
+        "ISBN: 9781543832594",
+        "Publication Date: 2020-11-23"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Deepfakes:  The Coming Infocalypse",
+        "Nina Schick",
+        "Call Number: HM851 .S257 2020",
+        "ISBN: 9781538754306",
+        "Publication Date: 2020-08-25"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Delete:  The Virtue of Forgetting in the Digital Age",
+        "Viktor Mayer-Sch\u00f6nberger",
+        "Call Number: BF371 .M375 2009",
+        "ISBN: 9780691138619",
+        "Publication Date: 2009-10-04"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Designing for Privacy and Its Legal Framework",
+        "Aurelia Tam\u00f2-Larrieux",
+        "Call Number: KJE6071 .T36 2018",
+        "ISBN: 9783319986234",
+        "Publication Date: 2018-11-13"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Digital Data Collection and Information Privacy Law",
+        "Mark Burdon",
+        "Call Number: K3264.C65 B87 2020",
+        "ISBN: 9781108417921",
+        "Publication Date: 2020-04-23"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "The Digital Person by Daniel J. Solove",
+        "Call Number: KF1263.C65 S66 2004",
+        "ISBN: 9780814740378",
+        "Publication Date: 2006-09-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Ethics of Information by Luciano Floridi",
+        "Call Number: T58.5 .F577 2013",
+        "ISBN: 9780199641321",
+        "Publication Date: 2013-12-15"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "EU Data Protection and the GDPR",
+        "Daniel J. Solove; Paul M. Schwartz",
+        "Call Number: KJE6071 .S69 2021",
+        "ISBN: 9781543832631",
+        "Publication Date: 2020-11-23"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "The Fight for Privacy",
+        "Danielle Keats Citron",
+        "Call Number: KF1262 .C52 2022",
+        "ISBN: 9780393882315",
+        "Publication Date: 2022-10-04"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Global War for Internet Governance by Laura DeNardis",
+        "Call Number: K4345 .D46 2014",
+        "ISBN: 9780300182118",
+        "Publication Date: 2014-01-14"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Call Number: Online only",
+        "ISBN: 9783030223519",
+        "Publication Date: 2019"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Call Number: KF3827.R4 S85 2020",
+        "ISBN: 9781641055727",
+        "Publication Date: 2020-11-07"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Laws of Image:  Privacy and Publicity in America by Samantha Barbas",
+        "Call Number: KF1262 .B37 2015",
+        "ISBN: 9780804791441",
+        "Publication Date: 2015-09-30"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Owned:  Property, Privacy, and the New Digital Serfdom",
+        "Joshua A. T. Fairfield",
+        "Call Number: KF390.5.C6 F35 2017",
+        "ISBN: 9781316671467",
+        "Publication Date: 2017-06-29"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The Practical Guide to HIPAA Privacy and Security Compliance by Rebecca Herold; Kevin Beaver",
+        "Call Number: KF3827.R4 B43 2014",
+        "ISBN: 9781032098937",
+        "Publication Date: 2021-06-30"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Privacy's Blueprint:  The Battle to Control the Design of New Technologies",
+        "Woodrow Hartzog",
+        "Call Number: KF1262 .H37 2018",
+        "ISBN: 9780674976009",
+        "Publication Date: 2018-04-09"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Privacy and Freedom",
+        "Alan F. Westin; Daniel J. Solove (Introduction by)",
+        "Call Number: KF1262 .W4",
+        "ISBN: 9781935439974",
+        "Publication Date: 2015-11-24"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Privacy Online:  Perspectives on Privacy and Self-Disclosure in the Social Web",
+        "Sabine Trepte (Editor); Leonard Reinecke (Editor)",
+        "Call Number: HM742 .P75 2011",
+        "ISBN: 9783642215209",
+        "Publication Date: 2011-07-21"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Regulating Privacy:  Data Protection and Public Policy in Europe and the United States",
+        "Colin J. Bennett",
+        "Call Number: KJC6071 .B46 1992",
+        "ISBN: 9780801480102",
+        "Publication Date: 1992-06-11"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "The Right to Privacy",
+        "Adam C. Breckenridge",
+        "Call Number: KF1262.Z9 B7",
+        "ISBN: 9780803207028",
+        "Publication Date: 1970-03-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Strategic Privacy by Design, Second Edition",
+        "R. Jason Cronk",
+        "Call Number: QA76.9.A25",
+        "ISBN: 9781948771573",
+        "Publication Date: 2021-12-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Why Privacy Matters",
+        "Neil Richards",
+        "Call Number: K3263 .R534 2022",
+        "ISBN: 9780190939045",
+        "Publication Date: 2021-12-01"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Leach",
+        "Bliley Act (GLBA) of 1999 (15 U.S.C. \u00a7\u00a7 6801",
+        "6809)"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence (AI)",
+        "Data, Privacy and Security",
+        "Intellectual Property",
+        "Life Sciences"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Blockchain and Cryptocurrencies",
+        "Artificial Intelligence and the Law",
+        "Bioethics",
+        "International Coordination",
+        "Privacy and Security",
+        "Pacing Law with Science",
+        "Big Data, Analytics, and the Internet of Things",
+        "Human Enhancement"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Soft Law / Standards",
+        "Technology and Access to Justice",
+        "Human Relationships and Technology",
+        "Technological Unemployment",
+        "Precautionary Principle",
+        "Sustainable Technology Development",
+        "Regulation and Reimbursement"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Kelli Raker",
+        "kelli.raker@law.duke.edu",
+        "Lead Author & Study Coordinator",
+        "Jeff Ward",
+        "ward@law.duke.edu",
+        "Principal Investigator"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Search",
+        "Status\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\t\t\t\tStatus\t\t\t\n\n\n\n\n\t\t\t\t\tOngoing\t\t\t\t\n\n\n\t\t\t\t\tCompleted",
+        "Sort results by titleNoneDESCASC",
+        "Sort results by statusNoneDESCASC"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Project Title",
+        "A2J Lab",
+        "After the JD",
+        "Chief Innovation Officers Survey",
+        "Defining Success in Law Firms",
+        "GLEE Africa",
+        "GLEE China",
+        "Globalization, Lawyers and Emerging Economies (GLEE)",
+        "HLS Black Alumni Study",
+        "Law Department Operations",
+        "Law Departments ESG Survey",
+        "Quality Metrics",
+        "Teamwork and Collaboration",
+        "The Big Four in Law",
+        "Corporate Purchasing Project",
+        "FutureEd Series"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0625,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "The Law of Military Operations in Outer Space",
+        "The Law applicable to Cyber Operations",
+        "Emerging Technologies and the Law of Armed Conflict/International Humanitarian Law"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Newest",
+        "Top papers",
+        "Most cited",
+        "Most downloaded"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IL REGISTRO DELLE IMPRESE CONSERVA I DATI DI AMMINISTRATORI/LIQUIDATORI SALVO ECCEZIONE",
+        "by\u00a0Marta Mariolina Mollicone",
+        "2025, Giurisprudenza Italiana",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Revolutionizing Wills in Nigeria: The Role of Blockchain Technology in Estate Planning",
+        "by\u00a0Femi M . Kolawole",
+        "2025, Revolutionizing Wills in Nigeria: The Role of Blockchain Technology in Estate Planning",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Deepfake Laws in India: The Need for Legal Regulation in the AI Era",
+        "by\u00a0Swanand Bhale",
+        "2025, Ai and Regulations for Deepfake laws in India",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "ENHANCING DATA GOVERNANCE FRAMEWORKS WITH AI/ML: STRATEGIES FOR MODERN ENTERPRISES",
+        "by\u00a0Mylib In",
+        "2025, IAEME PUBLICATION",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "WIPOD -Arbitration and Mediation Matters: Transcript of Episode 7",
+        "by\u00a0Leonid Shmatenko",
+        "2025, WIPOD \u2013 Arbitration and Mediation Matters",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cryptocurrency: Adoption efforts and security challenges in different countries",
+        "by\u00a0Suhag Pandya",
+        "2025, Holistica",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cryptocurrency and the Role of Indonesian Central Bank",
+        "by\u00a0Gunawan Widjaja",
+        "2025, Journal of Legal, Ethical and Regulatory Issues",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Insurtech: \u00bfevoluci\u00f3n o revoluci\u00f3n en la actividad aseguradora?",
+        "by\u00a0Alberto Hidalgo Cerezo",
+        "2025, Retos inminentes de derecho digital",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Why Tax & Risk Compliance Matters In Today's Economy",
+        "by\u00a0belli morko",
+        "2024, Compliance Tax",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Muhammad Kemal Yunus",
+        "Bella Nurfadillah Aprilia",
+        "Asriel Bigtan",
+        "Ade S E P T I A N Ilyas",
+        "Muh. Akbar Fhad Syahril",
+        "Vony Yunita",
+        "Safril Salman",
+        "Andi Rehan"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Os algoritmos de acidente para carros aut\u00f4nomos e o Direito Penal: an\u00e1lises e perspectivas",
+        "by\u00a0Matheus A L M E I D A Caetano",
+        "2024, Revista de Estudos Criminais, Ano XIX, n. 77",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IJFANS Paper",
+        "by\u00a0Dr. Rahul K . Bharati",
+        "2024, IJFANS INTERNATIONAL JOURNAL OF FOOD AND NUTRITIONAL SCIENCES ,Global E Smart Technologies",
+        "descriptionView Paperarrow_downwardDownload"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kommission betreffend die Definition von KI",
+        "Systemen und verbotene Praktiken iSd Art 5 KI",
+        "VO: Eine kompakte rechtliche und ethische Analyse.\""
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "At the Intersection of Emerging Tech and Public Policy",
+        "Our Faculty",
+        "Courses and Clinics",
+        "Mark McKenna is honored with CLA\u2019s Vanguard Award",
+        "Five professors are recognized for their excellence in legal scholarship"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Institute for Technology, Law & Policy",
+        "Program on Understanding Law, Science & Evidence (PULSE)",
+        "Alex Alben",
+        "Mario Biagioli",
+        "Douglas Lichtman",
+        "Timothy Malloy",
+        "Jason Oh",
+        "Edward A. Parson",
+        "Xiyin Tang",
+        "John Villasenor",
+        "Cross-Border Intellectual Property Litigation",
+        "Telecommunications Regulation",
+        "Future Law: Law and Governance under transformative societal trends",
+        "Social Media and the Future of Democracy",
+        "Patent Intensive",
+        "Information Privacy and Data Protection"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1875
+      }
+    },
+    {
+      "items": [
+        "Jump to Header",
+        "Jump to Main Content",
+        "Jump to Footer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alex Alben\n\n\n\t\t\t\tLecturer in Law",
+        "Mario Biagioli\n\n\n\t\t\t\tDistinguished Professor of Law and Communication",
+        "Xiyin Tang\n\n\n\t\t\t\tProfessor of Law"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "04\n\n01\n\n\n12:15 PM - 1:15 PM\nLS1327",
+        "Tech Talk with Professor Haochen Sun",
+        "Efficiency vs. Dignity: The Utilitarian Foundation of Data Protection Laws in the U.S. and China",
+        "Read More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "04\n\n15\n\n\n12:15 PM - 1:15 PM\nLS1327",
+        "Tech Talk with Asst. Professor Fanna Gamal",
+        "What is \u201cRacial\u201d Data and How Does the Law Regulate It?",
+        "Read More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Yale Journal of Law and Technology",
+        "Freedom Reads",
+        "Community Policing and Police Legitimacy: A Field Experiment",
+        "Data Transparency Advisory Group (DTAG)",
+        "Social Media Governance Initiative (SMGI)",
+        "National Initiative for Building Community Trust and Justice",
+        "The Community Study of Procedural Justice and Criminal Justice System Legitimacy",
+        "Workers\u2019 Perspectives Study of Procedural Justice & Criminal Justice System Legitimacy",
+        "Procedural Justice and Juveniles: The School Resource Officer Project",
+        "Criminal Justice Reform Seminar: Theory and Research in Action",
+        "The Social Contagion of Police Misconduct",
+        "American Police and the Danger Imperative",
+        "Deconstructing Ferguson Working Group"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.23076923076923078,
+        "keyword_ratio": 0.6923076923076923
+      }
+    },
+    {
+      "items": [
+        "Amazon.com, Inc.",
+        "AT&T Inc.",
+        "Charter Communications, Inc.",
+        "Comcast Corporation",
+        "Google LLC",
+        "John S. and James L. Knight Foundation",
+        "Meta Platforms, Inc.",
+        "NCTA - The Internet and Television Association",
+        "Penn Global",
+        "UNICEF"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Center for Technology, Innovation & Competition",
+        "2023-2024",
+        "2022-2023",
+        "2021-2022",
+        "2020-2021",
+        "2019-2020",
+        "2018-2019",
+        "2017-2018",
+        "2016-2017",
+        "2015-2016",
+        "2014-2015",
+        "2013-2014",
+        "2012-2013",
+        "2011-2012",
+        "2010-2011",
+        "2007-2010"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Seattle University School of Law TILE Program: Community & Networking",
+        "Seattle University School of Law TILE Program: The Importance of Ethics",
+        "Seattle University School of Law TILE Program: Leticia Hern\u00e1ndez Walker"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Yale Journal of Law and Technology",
+        "Freedom Reads",
+        "Community Policing and Police Legitimacy: A Field Experiment",
+        "Data Transparency Advisory Group (DTAG)",
+        "Social Media Governance Initiative (SMGI)",
+        "National Initiative for Building Community Trust and Justice",
+        "The Community Study of Procedural Justice and Criminal Justice System Legitimacy",
+        "Workers\u2019 Perspectives Study of Procedural Justice & Criminal Justice System Legitimacy",
+        "Procedural Justice and Juveniles: The School Resource Officer Project",
+        "Criminal Justice Reform Seminar: Theory and Research in Action",
+        "The Social Contagion of Police Misconduct",
+        "American Police and the Danger Imperative",
+        "Deconstructing Ferguson Working Group"
+      ],
+      "output_list_from_llm": [
+        "Yale Journal of Law and Technology",
+        "Social Media Governance Initiative (SMGI)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Clinical Assistant Professor of Law",
+        "Director, Law and Mobility Program",
+        "Co-director, Zell Entrepreneurship Clinic"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Michael D. Frakes A. Kenneth Pye Distinguished Professor of Law and Professor of Economics",
+        "Laurence R. HelferHarry R. Chadwick, Sr. Distinguished Professor of Law",
+        "Jennifer JenkinsClinical Professor of Law, Director, Center for the Study of the Public Domain"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Yale journal of law and technology",
+    "Social media governance initiative (smgi)"
+  ],
+  "error": null
+}

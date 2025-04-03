@@ -1,0 +1,736 @@
+{
+  "level2_term": "remote sensing",
+  "all_urls": [
+    "https://www.sciencedirect.com/journal/remote-sensing-of-environment/about/call-for-papers",
+    "https://www.spiedigitallibrary.org/journals/journal-of-applied-remote-sensing/call-for-papers",
+    "https://www.grss-ieee.org/publications/author-resources/call-for-papers/",
+    "https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation/about/call-for-papers",
+    "https://www.tandfonline.com/journals/tres20",
+    "https://www.isprs.org/news/newsletter/2012-02/55_CallforPapersJournalofRemoteSensing.pdf",
+    "https://link.springer.com/journal/11707/updates/18743940",
+    "https://spj.science.org/page/remotesensing/si",
+    "https://www.grss-ieee.org/publications/journal-of-selected-topics-in-applied-earth-observations-and-remote-sensing/",
+    "https://www.2025.ieeeigarss.org/call_for_papers.php"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Machine and deep learning-based algorithms for multi-source data processing",
+        "Multi-source image processing and pattern recognition",
+        "Joint classification and semantic segmentation",
+        "Spectral super-resolution",
+        "Target detection and change detection",
+        "Lightweight deep neural networks",
+        "Domain adaptation, few-shot learning, and meta-learning-based algorithms",
+        "Onboard real-time applications using multi-source datasets"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Data augmentation methods for remote sensing applications",
+        "Domain adaptation approaches to bridge the gap between source and target domains",
+        "Transfer learning and few-shot learning for remote sensing image classification and segmentation",
+        "Synthetic data generation techniques for enhancing limited training datasets",
+        "Self-supervised and unsupervised learning approaches for remote sensing data",
+        "Cross-domain adaptation and multi-source data fusion strategies for robust learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Fusion techniques for multi-source ocean observation and remote sensing data.",
+        "Physics-guided ocean data prediction and forecasting.",
+        "Cognition of ocean processes based on multi-source observation and remote sensing data.",
+        "Ocean color observation and applications.",
+        "Ocean internal wave observation and applications.",
+        "Spectrum recovery from multispectral ocean color data.",
+        "Coastal wetland mapping and monitoring.",
+        "Deep learning techniques for ship performance monitoring.",
+        "Modeling and change analysis of the Arctic.",
+        "Oil spill detection on the ocean via multi-source data."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Current Issue",
+        "All Issues",
+        "Issues in Progress"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "JUMP TO SECTION",
+        "Deep Learning-Based Multi-Source Remote Sensing Data Processing and Applications",
+        "Deep Learning for Remote Sensing Image Analysis with Limited Training Samples",
+        "Multi-Source Ocean Remote Sensing Data Fusion and Applications",
+        "List of Previously Published Special Sections"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "G\u00fclsen Ta\u015fk\u0131n \n\nIstanbul Technical UniversityTurkiyegulsen.taskin@itu.edu.tr",
+        "Silvia Liberata Ullo\n\nUniversity of SannioItalyullo@unisannio.it",
+        "Danfeng Hong\n\nChinese Academy of SciencesChinahongdf@aircas.ac.cn",
+        "Valerio Marsocci\n\nEuropean Space Agency PhiLabFrascati, Italyvalerio.marsocci@esa.int",
+        "Sicong Liu\n\nTongji UniversityShanghai, Chinaliu@tongji.edu.cn",
+        "Deodato Tapete\n\nItalian Space AgencyItalydeodato.tapete@asi.it"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Feng Gao\n\nOcean University of ChinaSchool of Computer Science and TechnologyChinagaofeng@ouc.edu.cn",
+        "Hua Su\n\nFuzhou UniversityThe Academy of Digital ChinaChinasuhua@fzu.edu.cn",
+        "Yibin Ren\n\nInstitute of OceanologyChinese Academy of SciencesChinayibinren@qdio.ac.cn",
+        "Lizhang Zhou\n\nSecond Institute of OceanographyMinistry of Natural ResourcesChinazhoulz@sio.org.cn"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "+ Add another field",
+        "Range\n\n\n\n\n\n\nSingle Year",
+        "Clear Form"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Proceedings\n\n\nVolume",
+        "eBooks +",
+        "Field Guide Series\n\nPress Monograph\n\nSpotlight\n\nTutorial Text\n\nOther Press"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Journals +",
+        "Volume",
+        "Issue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "source data processing and analysis, particularly in classification, super",
+        "scale areas, and other specific issues, all of which make deep learning",
+        "based algorithms more difficult in real",
+        "world applications. Therefore, novel deep neural networks, combined with few",
+        "shot learning, meta",
+        "source data processing."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "source data processing. In particular, it seeks to achieve cross",
+        "oriented articles on topics related to multi",
+        "source data classification, semantic segmentation, detection, spectral super",
+        "resolution, and understanding. These topics include but are not limited to the following:"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Membership",
+        "Society Operations",
+        "More Conferences & Events",
+        "Chapters",
+        "Groups & Initiatives",
+        "Distinguished Lecturers",
+        "Awards",
+        "GRSS Webinar Program",
+        "Educational Resources",
+        "Special issue on \u201cUAV Remote Sensing Monitoring and Applications\u201d",
+        "Special issue on \u201cIEEE\u00a02024\u00a0International\u00a0Geoscience\u00a0and\u00a0Remote\u00a0Sensing\u00a0Symposium\u00a0(IGARSS\u00a02024)\u201d",
+        "Special issue on \u201cDigital Twin and Spatio-temporal Remote Sensing Analysis for Disaster Management\u201d",
+        "Special issue on \u201cAdvanced SAR/InSAR technologies for surface deformation change\u201d",
+        "Special issue on \u201cIntelligent Sensing and Navigation Technologies for 6G\u201d",
+        "Special issue on \u201cEnhancing Remote Sensing of Coastal Areas through Multi-Sensor Data Fusion\u201d",
+        "Special issue on \u201cDeep learning-based techniques for Radar imaging in remote sensing\u00a0applications\u201d",
+        "Special issue on \u201cRemote sensing information processing and dynamic monitoring in agriculture\u201d",
+        "Special issue on \u201cScene Analysis and Understanding in the Intelligent Transportation for Urban Area\u201d",
+        "Special issue on \u201cThe 5th China International SAR Symposium(CISS)\u201d",
+        "Special issue on \u201cDeep Learning\u00a0based Remote Sensing Small Target Detection and Recognition\u201d",
+        "Special issue on \u201cDigital Technologies Facilitate Urban Sustainable Development\u201d",
+        "Special issue on \u201cSynthetic Aperture Radar (SAR) Technology: Innovations and Cutting-Edge Trends\u201d",
+        "Special issue on \u201cAl for Remote Sensing\u201d",
+        "Special issue on \u201cData Quality Issues and Solutions in AI-based Remote Sensing Applications\u201d",
+        "RECENT NEWS",
+        "related information"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.038461538461538464,
+        "keyword_ratio": 0.6153846153846154
+      }
+    },
+    {
+      "items": [
+        "Quantum Earth Science and Technology",
+        "Remote sensing Environment, Analysis and Climate Technologies",
+        "Standards for Earth Observations",
+        "Modeling in Remote Sensing",
+        "Geoscience Spaceborne Imaging Spectroscopy",
+        "Image Analysis and Data Fusion",
+        "Frequency Allocations in Remote Sensing",
+        "Instrumentation and Future Technologies"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Author Resources",
+        "More in Publications",
+        "Call for Papers",
+        "History of Publications"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Optional Code Ocean Submission",
+        "View the most popular JSTARS articles.",
+        "Editorial Board",
+        "Special Issues",
+        "Past Issues",
+        "Peer Review",
+        "Publication Ethics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "items": [
+        "More GRSS Publications",
+        "News\u00bb",
+        "Twitter\u00bb"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Inside Our Latest Issue",
+        "Professional Member Spotlight: Sureka Thiruchittampalam",
+        "IN FOCUS: Why GRSS Standards Matter",
+        "GeoPitch Competition at IGARSS 2025",
+        "Student Member Spotlight: Rufai Balogun"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Membership",
+        "Society Operations",
+        "More Conferences & Events",
+        "Chapters",
+        "Groups & Initiatives",
+        "Distinguished Lecturers",
+        "Awards",
+        "GRSS Webinar Program",
+        "Educational Resources",
+        "GRSS SPONSORED",
+        "FEATURED"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "News\n\n\n\t\t\t\tProfessional Member Spotlight: Sureka Thiruchittampalam",
+        "News\n\n\n\t\t\t\tIN FOCUS: Why GRSS Standards Matter",
+        "News\n\n\n\t\t\t\tGeoPitch Competition at IGARSS 2025",
+        "News\n\n\n\t\t\t\tStudent Member Spotlight: Rufai Balogun"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "sponsored (or technically co",
+        "access J",
+        "STARS."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Imaging and Processing Techniques",
+        "Remote Sensing Data Analysis",
+        "AI and Big Data.",
+        "Electromagnetic Emission and Scattering Modeling",
+        "Remote Sensing Applications to Atmosphere, Cryosphere, Land, or Oceans",
+        "Remote Sensing of Planetary and other Celestial Bodies",
+        "Mission, Platforms and Calibration",
+        "Sensors, Instruments and Calibration",
+        "Education and Policy",
+        "Societal Engagement and Impacts"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Abstract/Manuscript Submission Open: 14 November 2024",
+        "Abstract/Manuscript Submission Deadline: 10 January 2025 17 January 2025",
+        "Notifications of Acceptance to Authors: 15 March 2025 20 March 2025",
+        "Final Paper Submission for Accepted Full Manuscripts: 15 May 2025"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "We encourage submissions that cover a wide range of topics, including but not limited to:",
+        "For more details on paper submission, please visit the paper submission web page.",
+        "We look forward to your valuable contributions and to welcoming you to Brisbane for IGARSS 2025!",
+        "Best regards,",
+        "Jasmeet Judge, Jun Zhou, Dongryeol Ryu, Qiming ZhouIGARSS 2025 Technical Program Committee Co-Chairs"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.8
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Author Resources",
+        "More in Publications",
+        "Call for Papers",
+        "History of Publications"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Data augmentation methods for remote sensing applications",
+        "Domain adaptation approaches to bridge the gap between source and target domains",
+        "Transfer learning and few-shot learning for remote sensing image classification and segmentation",
+        "Synthetic data generation techniques for enhancing limited training datasets",
+        "Self-supervised and unsupervised learning approaches for remote sensing data",
+        "Cross-domain adaptation and multi-source data fusion strategies for robust learning"
+      ],
+      "output_list_from_llm": [
+        "Data augmentation methods for remote sensing applications",
+        "Domain adaptation approaches to bridge the gap between source and target domains",
+        "Transfer learning and few-shot learning for remote sensing image classification and segmentation",
+        "Synthetic data generation techniques for enhancing limited training datasets",
+        "Self-supervised and unsupervised learning approaches for remote sensing data",
+        "Cross-domain adaptation and multi-source data fusion strategies for robust learning"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "We encourage submissions that cover a wide range of topics, including but not limited to:",
+        "For more details on paper submission, please visit the paper submission web page.",
+        "We look forward to your valuable contributions and to welcoming you to Brisbane for IGARSS 2025!",
+        "Best regards,",
+        "Jasmeet Judge, Jun Zhou, Dongryeol Ryu, Qiming ZhouIGARSS 2025 Technical Program Committee Co-Chairs"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Membership",
+        "Society Operations",
+        "More Conferences & Events",
+        "Chapters",
+        "Groups & Initiatives",
+        "Distinguished Lecturers",
+        "Awards",
+        "GRSS Webinar Program",
+        "Educational Resources",
+        "\u201cUAV Remote Sensing Monitoring and Applications\u201d",
+        "\u201cIEEE 2024 International Geoscience and Remote Sensing Symposium (IGARSS 2024)\u201d",
+        "\u201cDigital Twin and Spatio-temporal Remote Sensing Analysis for Disaster Management\u201d",
+        "\u201cAdvanced SAR/InSAR technologies for surface deformation change\u201d",
+        "\u201cIntelligent Sensing and Navigation Technologies for 6G\u201d",
+        "\u201cEnhancing Remote Sensing of Coastal Areas through Multi-Sensor Data Fusion\u201d",
+        "\u201cDeep learning-based techniques for Radar imaging in remote sensing applications\u201d",
+        "\u201cRemote sensing information processing and dynamic monitoring in agriculture\u201d",
+        "\u201cScene Analysis and Understanding in the Intelligent Transportation for Urban Area\u201d",
+        "\u201cThe 5th China International SAR Symposium(CISS)\u201d",
+        "\u201cDeep Learning based Remote Sensing Small Target Detection and Recognition\u201d",
+        "\u201cDigital Technologies Facilitate Urban Sustainable Development\u201d",
+        "\u201cSynthetic Aperture Radar (SAR) Technology: Innovations and Cutting-Edge Trends\u201d",
+        "\u201cAl for Remote Sensing\u201d",
+        "\u201cData Quality Issues and Solutions in AI-based Remote Sensing Applications\u201d",
+        "RECENT NEWS",
+        "related information"
+      ],
+      "output_list_from_llm": [
+        "\u201cUAV Remote Sensing Monitoring and Applications\u201d",
+        "\u201cIEEE 2024 International Geoscience and Remote Sensing Symposium (IGARSS 2024)\u201d",
+        "\u201cDigital Twin and Spatio-temporal Remote Sensing Analysis for Disaster Management\u201d",
+        "\u201cAdvanced SAR/InSAR technologies for surface deformation change\u201d",
+        "\u201cEnhancing Remote Sensing of Coastal Areas through Multi-Sensor Data Fusion\u201d",
+        "\u201cDeep learning-based techniques for Radar imaging in remote sensing applications\u201d",
+        "\u201cRemote sensing information processing and dynamic monitoring in agriculture\u201d",
+        "\u201cDeep Learning based Remote Sensing Small Target Detection and Recognition\u201d",
+        "\u201cSynthetic Aperture Radar (SAR) Technology: Innovations and Cutting-Edge Trends\u201d",
+        "\u201cAl for Remote Sensing\u201d",
+        "\u201cData Quality Issues and Solutions in AI-based Remote Sensing Applications\u201d"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "source data processing. In particular, it seeks to achieve cross",
+        "oriented articles on topics related to multi",
+        "source data classification, semantic segmentation, detection, spectral super",
+        "resolution, and understanding. These topics include but are not limited to the following:"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Data augmentation methods for remote sensing applications",
+    "Transfer learning and few-shot learning for remote sensing image classification and segmentation",
+    "Self-supervised and unsupervised learning approaches for remote sensing data",
+    "\u201cuav remote sensing monitoring and applications\u201d",
+    "\u201cieee 2024 international geoscience and remote sensing symposium (igarss 2024)\u201d",
+    "\u201cdigital twin and spatio-temporal remote sensing analysis for disaster management\u201d",
+    "\u201cenhancing remote sensing of coastal areas through multi-sensor data fusion\u201d",
+    "\u201cdeep learning-based techniques for radar imaging in remote sensing applications\u201d",
+    "\u201cremote sensing information processing and dynamic monitoring in agriculture\u201d",
+    "\u201cdeep learning based remote sensing small target detection and recognition\u201d",
+    "\u201cal for remote sensing\u201d",
+    "\u201cdata quality issues and solutions in ai-based remote sensing applications\u201d",
+    "Domain adaptation approaches to bridge the gap between source and target domains",
+    "Synthetic data generation techniques for enhancing limited training datasets",
+    "Cross-domain adaptation and multi-source data fusion strategies for robust learning",
+    "\u201cadvanced sar/insar technologies for surface deformation change\u201d",
+    "\u201csynthetic aperture radar (sar) technology: innovations and cutting-edge trends\u201d"
+  ],
+  "error": null
+}

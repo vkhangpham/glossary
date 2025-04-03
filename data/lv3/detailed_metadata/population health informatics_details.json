@@ -1,0 +1,671 @@
+{
+  "level2_term": "population health informatics",
+  "all_urls": [
+    "https://ojphi.jmir.org/announcements/397",
+    "https://academic.oup.com/jamia/pages/call-for-papers",
+    "https://journals.sagepub.com/home/jhi",
+    "https://www.sciencedirect.com/journal/journal-of-biomedical-informatics/about/call-for-papers",
+    "https://ojphi.jmir.org/",
+    "https://www.embs.org/jbhi/special-issues/",
+    "https://academic.oup.com/jamia/pages/cfp_cohort_selection_for_clinical_trials",
+    "https://www.sciencedirect.com/journal/international-journal-of-medical-informatics",
+    "https://www.jhidc.org/",
+    "https://amia.org/education-events/amia-2025-clinical-informatics-conference/call-participation"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Resource Centre",
+        "Browse Journal",
+        "Connect With Us",
+        "Get Table of Contents Alerts"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "or a contradiction? Nature. 2022;601:18",
+        "20. doi: 10.1038/d41586",
+        "03819"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Recent Articles",
+        "Preprints Open for Peer-Review",
+        "We are working in partnership with"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Resource Centre",
+        "Browse Journal",
+        "Connect With Us",
+        "Get Table of Contents Alerts"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IEEE.org\nIEEE Xplore Digital Library\nIEEE Standards\nIEEE Spectrum\nMore Sites",
+        "IEEE.org",
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "embs.org\nIEEE.org",
+        "embs.org",
+        "IEEE.org"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "generation biomedical sensing intelligence, invites cutting",
+        "edge research on data",
+        "and label",
+        "efficient learning methods",
+        "such as self",
+        "supervised, semi",
+        "supervised, and few",
+        "shot learning, as well as efficient training/deployment paradigms for large foundation models"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "generation",
+        "advanced (5G",
+        "A) and sixth",
+        "generation (6G) multi",
+        "R) has recently adopted ISAC among the key usage scenarios for IMT"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "modal agents and large foundation models represents a transformative frontier in healthcare. Multi",
+        "modal agents are designed to process and integrate data from diverse sources",
+        "such as MRI, CT scans, PET images, electronic health records, and even genomic data",
+        "to provide a comprehensive understanding of patient health. Large foundation models, pre",
+        "modal agents with large foundation models lies in their complementary strengths. Multi"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Announcements",
+        "Current Issue",
+        "Research Articles",
+        "Make a Submission"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Informatics-Driven Value-Based Healthcare",
+        "Usability, Efficiency, and User Experience",
+        "Clinical Decision Support,\u00a0Analytics and Outcomes",
+        "Innovative Infrastructures, methods, data sets and technologies",
+        "Leadership, Advocacy, and Policy",
+        "Digital Equity",
+        "Medication Safety",
+        "Artificial Intelligence",
+        "Documentation Burden and Clinician wellbeing",
+        "Multi-disciplinary data analytics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Apply evidence- or experience- based models of informatics practices to improve health care.",
+        "Leverage informatics tools to better engage in team-based care.",
+        "Develop core competencies and leadership skills unique to health informatics professionals.",
+        "Assess and improve the application of health IT infrastructure best practices.",
+        "Improve the usability, ease of use, and user acceptance of informatics tools and technology.",
+        "Identify diversity, equity, and inclusion issues through the lens of clinical informatics.",
+        "Expand the reach of health IT beyond acute care and to settings all individuals/patients occupy."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Either 2 hours or 4 hours in length with 15-30 minutes for break.",
+        "No more than 5 presenters",
+        "An indication of the suggested length of the workshop (2 or 4 hours)",
+        "An outline of topics to be covered",
+        "Tool(s) the workshop offers to help attendees achieve this skill",
+        "A description of prerequisites, if any",
+        "Instructor\u2019s experience teaching similar content"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.42857142857142855,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Attendees will have five minutes to talk on a subject accompanied by automatically advancing slides.",
+        "An individual may be the first author of only one submission for an ignite-style talk.",
+        "Describe research, activity, or utilize a case report",
+        "Tell a story",
+        "Promote a new program",
+        "Advocate for a policy initiative",
+        "Illustrate a lesson learned",
+        "Offer a strong opinion",
+        "Provide advice"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Your Ignite talk will contain exactly 20 slides, 15 seconds each, automatically advanced.",
+        "You must use the Ignite PowerPoint slide template provided by AMIA.",
+        "For samples of both how to give an Ignite-style talk and for examples see:\n\t\nVideo 1\nVideo 2",
+        "Video 1",
+        "Video 2",
+        "A description of your presentation and an outline of your talk."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Care Delivery Models",
+        "Coordination Across the Continuum of Care",
+        "Cross-organization Partnerships including Public-private Partnerships",
+        "Data Use in Support of Payer Negotiations and Contracting",
+        "Population Health",
+        "D2C and B2C Strategies",
+        "Innovation in Digital Care",
+        "Patient-Generated Data / Patient Reported Outcomes (PROs)",
+        "Driving Digital Equity",
+        "Connected Care in the Home",
+        "Medication Adherence",
+        "Remote Patient Monitoring",
+        "Secure Communication",
+        "Telemedicine and Telehealth including mHealth, App\u2019s etc",
+        "Social Determinants of Health"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.06666666666666667,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Augmented Reality/Virtual Reality",
+        "Co-production/Co-Design",
+        "Clinical Process Automation",
+        "Clinician Burnout",
+        "Consumer and Patient Engagement",
+        "Cross Setting Collaboration",
+        "Documentation Burden",
+        "EHR Implementation and Optimization",
+        "Human Factors Testing",
+        "Usability and Measuring User Experience",
+        "Workflow Efficiency"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Adaptive Clinical Decision Support",
+        "Algorithmic bias and impacts on Health Equity",
+        "Big Data",
+        "Data Governance",
+        "Data Science",
+        "Data Visualization",
+        "Pharmacovigilance",
+        "Precision Health and Genomics",
+        "Risk Measurement",
+        "Educating on Self Service Analytics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Bridging Analytics, Bedside Care, Clinical Documentation, and Education",
+        "Building Value for Informatics via Education and Training",
+        "Clinical informatics organizational models",
+        "Clinical Content, Informatics, and IT Project Governance",
+        "Environmental Health and the Exposome",
+        "High Reliability Organizations (HRO)/Lean organizations",
+        "Interprofessional Collaboration",
+        "Learning Health System",
+        "Patient Safety",
+        "Public Health Surveillance and Reporting",
+        "Quality Measures and eCQMs / Quality Improvement",
+        "Business Continuity, Information Security, and Downtime Preparedness"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence/Machine Learning",
+        "Cloud Computing and Storage",
+        "Data and Network Security",
+        "Digital Therapeutics",
+        "Disruptive and Innovative Technologies",
+        "Health Information Exchange (HIE)",
+        "Health IT Standards (USCDI, FHIR\u00ae, SMART, etc.)",
+        "HIT Safety/EHR Unintended Consequences",
+        "Information Security/Cybersecurity",
+        "Interoperability",
+        "Internet of Things (IoT)",
+        "Ambient documentation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Affordable Care Act (ACA)",
+        "Alternative Payment Models (APM)",
+        "21st Century Cures (including considerations for special populations such as adolescents)",
+        "CMS Promoting Interoperability Program",
+        "FDA Digital Health and Software as a Medical Device (SaMD)",
+        "Communication Strategies",
+        "Change Management",
+        "Data Privacy and Secondary Use",
+        "Diversity, Equity and Inclusion",
+        "Ethical, Legal, and Social Issues",
+        "Health IT Certification/CEHRT",
+        "HIPAA, PHI, EHI",
+        "Leadership Development for Informatics Trainees and WorkforceSAFER guidelines"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.15384615384615385
+      }
+    },
+    {
+      "items": [
+        "Innovation in Driving Digital Equity and Social Care",
+        "AI and Care Outcomes",
+        "Industry and Commercial Partnership",
+        "Leadership and Governance",
+        "Documentation Burden, Clinician Well-Being and Care Outcomes",
+        "Workshops",
+        "Oral Presentations",
+        "Panels",
+        "Ignite-style Talks",
+        "Posters",
+        "Systems Demonstrations",
+        "Informatics-Driven Value-Based Healthcare",
+        "Usability, Efficiency, and User Experience",
+        "Clinical Decision Support and Analytics",
+        "Organizational Challenges",
+        "Emerging Technology and Technical Infrastructure",
+        "Leadership, Advocacy, and Policy",
+        "Join the AMIA Community"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.05555555555555555,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Proposals",
+        "Programmatic Tracks",
+        "Inclusive Language",
+        "Learning Outcomes",
+        "Submission Categories",
+        "Topics and Keywords",
+        "Industry Submissions",
+        "Submission Process and Deadlines"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.625
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Proposals",
+        "Programmatic Tracks",
+        "Inclusive Language",
+        "Learning Outcomes",
+        "Submission Categories",
+        "Topics and Keywords",
+        "Industry Submissions",
+        "Submission Process and Deadlines"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Either 2 hours or 4 hours in length with 15-30 minutes for break.",
+        "No more than 5 presenters",
+        "An indication of the suggested length of the workshop (2 or 4 hours)",
+        "An outline of topics to be covered",
+        "Tool(s) the workshop offers to help attendees achieve this skill",
+        "A description of prerequisites, if any",
+        "Instructor\u2019s experience teaching similar content"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Recent Articles",
+        "Preprints Open for Peer-Review",
+        "We are working in partnership with"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Your Ignite talk will contain exactly 20 slides, 15 seconds each, automatically advanced.",
+        "You must use the Ignite PowerPoint slide template provided by AMIA.",
+        "For samples of both how to give an Ignite-style talk and for examples see: Video 1 Video",
+        "Video",
+        "Video",
+        "A description of your presentation and an outline of your talk."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Announcements",
+        "Current Issue",
+        "Research Articles",
+        "Make a Submission"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

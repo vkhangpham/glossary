@@ -1,0 +1,1144 @@
+{
+  "level1_term": "geospatial science",
+  "all_urls": [
+    "https://geography.osu.edu/tracks/gis/issues",
+    "https://geography.washington.edu/graduate-research-areas",
+    "https://geography.columbian.gwu.edu/geospatial-science-and-applications",
+    "https://www.geog.ucsb.edu/research/giscience-geoinformatics",
+    "https://geography.humboldt.edu/geospatial-science-technology",
+    "https://www.usafa.edu/academic/geospatial-science/",
+    "https://ess.utah.edu/research/gis-research.php",
+    "https://www.udel.edu/academics/colleges/ceoe/departments/gss/research/",
+    "https://www.slu.edu/geoslu/research.php",
+    "https://sgsup.asu.edu/research/research-areas",
+    "https://geography.wisc.edu/geods/research",
+    "https://geography.arizona.edu/research/geospatial",
+    "https://louisville.edu/geogeo/research"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Population change",
+        "Migration",
+        "Development",
+        "Ocean currents"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Organization",
+        "Symbolization",
+        "Color usage"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Air pollution",
+        "Planning",
+        "Unemployment",
+        "Poverty"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Disease rates",
+        "Elections",
+        "Hazard incidence"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Facilities/site selection",
+        "Mass transit routes",
+        "New construction"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Critical thinking",
+        "Critical writing",
+        "Research",
+        "Strong organizational skills"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Quantitative data analysis",
+        "Graphic communication (including map reading and development)",
+        "Graphics and statistical software packages",
+        "Computer programming"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Ohio State navigation bar",
+        "Issues and topics",
+        "Acquired skill sets",
+        "Career opportunities"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "globalization",
+        "neoliberalism",
+        "cross-border regionalism",
+        "location theory",
+        "labor markets and labor migration (including migrant worker mistreatment and rights)",
+        "resource distribution",
+        "technological change",
+        "the relationship between geoeconomics and geopolitics",
+        "the economic lessons of the global justice movement"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "analytical cartography",
+        "geographic information representation",
+        "map error analysis",
+        "social construction of GIS technology",
+        "spatial database design",
+        "data management approaches and systems configurations",
+        "urban applications",
+        "geographic knowledge structures",
+        "transportation",
+        "environmental analysis",
+        "natural resources",
+        "user cognition and user interface design",
+        "sustainability science",
+        "spatial model coupling to GIS",
+        "collaborative spatial decision making."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.13333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.26666666666666666,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "cultural and political ecology",
+        "health and the environment",
+        "global environmental modeling and GIS methods and applications"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Quick links",
+        "Main menu",
+        "You are here",
+        "Critical Development and Global Health",
+        "Economic Geography",
+        "Geographic Information Systems",
+        "Society and Environment",
+        "Urban, Social and Political Geography"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Somayeh Dodge",
+        "Amy Frazier",
+        "Konstadinos Goulias",
+        "Peter Kedron",
+        "Dan Montello",
+        "Alan Murray",
+        "Clayton Nall",
+        "Trisalyn Nelson",
+        "Dar Roberts"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Professor",
+        "Vice Chair for Academic Personnel",
+        "Yardi Chair in Geography"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Professor",
+        "Department Chair",
+        "Jack and Laura Dangermond Chair of Geography"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Photogrammetrist",
+        "Cartographer",
+        "Geographer",
+        "Remote sensing analyst",
+        "Surveyor",
+        "Demographer",
+        "GIS Programmer/Software Developer",
+        "GIS Analyst",
+        "GIS Specialist",
+        "Geospatial Database Manager"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Why This Program",
+        "Program Concentrations",
+        "Get Involved",
+        "Careers",
+        "Our Facilities",
+        "Tawanda Gara",
+        "James Graham",
+        "Sara Hanna",
+        "Nicolas Malloy",
+        "Nicholas Perdue",
+        "Amy Rock",
+        "Rosemary Sherriff",
+        "Chelsea Teale",
+        "Joan Trejo"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.07142857142857142,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Tawanda Gara \nAssistant Professor\nDepartment of Environmental Science & Management",
+        "James Graham \nAssociate Professor\nDepartment of Environmental Science & Management",
+        "Sara Hanna \nLecturer\nDepartment of Forestry, Fire & Rangeland Management",
+        "Nicolas Malloy \nLecturer\nDepartment of Geography, Environment & Spatial Analysis",
+        "Nicholas Perdue \nAssociate Professor\nDepartment of Geography, Environment & Spatial Analysis",
+        "Amy Rock \nLecturer\nDepartment of Geography, Environment & Spatial Analysis",
+        "Chelsea Teale \nLecturer\nDepartment of Geography, Environment & Spatial Analysis",
+        "Joan Trejo \nLecturer\nDepartment of Geography, Environment & Spatial Analysis"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.625,
+        "keyword_ratio": 0.625
+      }
+    },
+    {
+      "items": [
+        "Simon Brewer",
+        "Associate Professor",
+        "simon.brewer@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tom Cova",
+        "Professor",
+        "cova@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Philip Dennison",
+        "Professor Director, School of Environment, Society, and Sustainability Director, URSA Lab",
+        "dennison@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Tim Edgar",
+        "Associate Professor (Lecturer)",
+        "tim.edgar@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Richard (Rick) Forster",
+        "Professor",
+        "rick.forster@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alexander Hohl",
+        "Assistant Professor",
+        "Geographic Data Science, Spatiotemporal Computing, Machine Learning, Spatial Epidemiology",
+        "alexander.hohl@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Richard Medina",
+        "Associate ProfessorDirector, HATER Lab",
+        "richard.medina@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Kathleen Nicoll",
+        "Professor",
+        "kathleen.nicoll@ess.utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Rachna Reddy",
+        "Assistant Professor of Anthropology",
+        "rachnabreddy@gmail.com"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Neng Wan",
+        "Associate Professor, Director, Utah Geo-Health LabDirector, MSGIS program",
+        "GIS and Spatial Methods in Understanding and Solving Environmental Health Problems",
+        "neng.wan@utah.edu"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Throughout the State of Delaware",
+        "Chester County, PA",
+        "Cecil County, MD"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Focus Areas",
+        "Collaborators",
+        "Facilities and Resources",
+        "Outreach and Extension",
+        "Facebook",
+        "Twitter (X)",
+        "Instagram",
+        "Departments",
+        "EXPLORE",
+        "ACADEMICS",
+        "SERVICES",
+        "CONNECT"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Kyle Davis",
+        "Tracy DeLiberty",
+        "Jing Gao",
+        "Del Levia",
+        "Pinki Mondal"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kyle Davis",
+        "Tracy DeLiberty",
+        "Yao Hu",
+        "Dan Leathers",
+        "Del Levia",
+        "Sara Rauscher"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cristina Archer",
+        "Tracy DeLiberty",
+        "Jing Gao",
+        "Dan Leathers",
+        "Del Levia",
+        "Sara Rauscher",
+        "Dana Veron"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Saleem Ali",
+        "Kyle Davis",
+        "Julie Klinger",
+        "Pinki Mondal",
+        "Lindsay Naylor",
+        "A. R. Siders"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Center for Energy and Environmental Policy (CEEP)",
+        "Data Science Institute",
+        "Delaware Environmental Institute"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Atlantic environment. The station consists of an X",
+        "Band receiver for reception of the MODIS family of satellites which allows for the study of sea",
+        "band receiver allows for the reception of NOAA, MetOP, and Fung"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Computational Spatial Science",
+        "Place, Identities and Culture",
+        "Earth Systems and Climate Science",
+        "Sustainability Science and Studies",
+        "Community Development for Social Equity",
+        "Spatial and Economic Analysis",
+        "Transportation Planning and Policy",
+        "Urban Design and Sustainable Cities"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.375,
+        "keyword_ratio": 0.625
+      }
+    },
+    {
+      "items": [
+        "Research",
+        "Environmental Sciences",
+        "Geospatial Technologies",
+        "Urban Analysis",
+        "Human and Cultural Dynamics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Climate Variability and Change",
+        "Dendrochronology",
+        "Environmental Health",
+        "Land System Changes",
+        "Natural Hazards",
+        "Severe Weather",
+        "Water Resources"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "C. Andrew Day",
+        "Andrea Gaughan",
+        "Jafar Hadizadeh",
+        "Jason Naylor",
+        "Forrest Stevens",
+        "Maegen Rochner"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "C. Andrew Day",
+        "Andrea Gaughan",
+        "Wei Song",
+        "Forrest Stevens",
+        "Charlie Zhang"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Andrea Gaughan",
+        "Wei Song",
+        "Forrest Stevens",
+        "Margath Walker",
+        "Charlie Zhang"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Geopolitics",
+        "Medical Geography",
+        "Race/Racial Inequality and Geography",
+        "Critical Food Studies",
+        "Environmental Policy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research",
+        "Environmental Sciences",
+        "Geospatial Technologies",
+        "Urban Analysis",
+        "Human and Cultural Dynamics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Tawanda Gara Assistant Professor Department of Environmental Science & Management",
+        "James Graham Associate Professor Department of Environmental Science & Management",
+        "Sara Hanna Lecturer Department of Forestry, Fire & Rangeland Management",
+        "Nicolas Malloy Lecturer Department of Geography, Environment & Spatial Analysis",
+        "Nicholas Perdue Associate Professor Department of Geography, Environment & Spatial Analysis",
+        "Amy Rock Lecturer Department of Geography, Environment & Spatial Analysis",
+        "Chelsea Teale Lecturer Department of Geography, Environment & Spatial Analysis",
+        "Joan Trejo Lecturer Department of Geography, Environment & Spatial Analysis"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Quantitative data analysis",
+        "Graphic communication (including map reading and development)",
+        "Graphics and statistical software packages",
+        "Computer programming"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Computational Spatial Science",
+        "Place, Identities and Culture",
+        "Earth Systems and Climate Science",
+        "Sustainability Science and Studies",
+        "Community Development for Social Equity",
+        "Spatial and Economic Analysis",
+        "Transportation Planning and Policy",
+        "Urban Design and Sustainable Cities"
+      ],
+      "output_list_from_llm": [
+        "Computational Spatial Science",
+        "Spatial and Economic Analysis",
+        "Transportation Planning and Policy",
+        "Urban Design and Sustainable Cities"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "analytical cartography",
+        "geographic information representation",
+        "map error analysis",
+        "social construction of GIS technology",
+        "spatial database design",
+        "data management approaches and systems configurations",
+        "urban applications",
+        "geographic knowledge structures",
+        "transportation",
+        "environmental analysis",
+        "natural resources",
+        "user cognition and user interface design",
+        "sustainability science",
+        "spatial model coupling to GIS",
+        "collaborative spatial decision making."
+      ],
+      "output_list_from_llm": [
+        "analytical cartography",
+        "geographic information representation",
+        "map error analysis",
+        "spatial database design",
+        "urban applications",
+        "geographic knowledge structures",
+        "environmental analysis",
+        "natural resources",
+        "spatial model coupling to GIS",
+        "collaborative spatial decision making."
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Atlantic environment. The station consists of an X",
+        "Band receiver for reception of the MODIS family of satellites which allows for the study of sea",
+        "band receiver allows for the reception of NOAA, MetOP, and Fung"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Computational spatial science",
+    "Spatial and economic analysis",
+    "Transportation planning and policy",
+    "Urban design and sustainable cities",
+    "Analytical cartography",
+    "Geographic information representation",
+    "Map error analysis",
+    "Spatial database design",
+    "Urban applications",
+    "Geographic knowledge structures",
+    "Environmental analysis",
+    "Natural resources",
+    "Spatial model coupling to gis",
+    "Collaborative spatial decision making."
+  ],
+  "error": null
+}

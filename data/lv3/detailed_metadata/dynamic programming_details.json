@@ -1,0 +1,3896 @@
+{
+  "level2_term": "dynamic programming",
+  "all_urls": [
+    "https://arlet-workshop.github.io/cfp/",
+    "https://link.springer.com/journal/13235/updates/27691364",
+    "https://www.mdpi.com/journal/mathematics/special_issues/Dyn_Program",
+    "https://dl.acm.org/doi/10.1145/3641554.3701918",
+    "https://pubsonline.informs.org/doi/10.1287/mnsc.2024.Call.V70.n10",
+    "https://siam-web.useast01.umbraco.io/publications/siam-journals/siam-journal-on-control-and-optimization/",
+    "https://2025.cgo.org/track/cgo-2025-papers",
+    "https://stackoverflow.com/questions/2851771/stereo-matching-dynamic-programming",
+    "https://journals.sagepub.com/pb-assets/cmscontent/dms/jdms-special-issue-(J22-4)-1649911672.pdf",
+    "https://aom.org/events/paper-development-workshops"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "MDPs and Dynamic Programming",
+        "Temporal Difference Methods",
+        "Policy Optimization",
+        "Model-based RL and Planning",
+        "Exploration in RL",
+        "Offline RL",
+        "Unsupervised and Intrinsically Motivated RL",
+        "Representation Learning in RL",
+        "Lifelong and Non-stationary RL",
+        "Hierarchical RL",
+        "Partially Observable RL",
+        "Multi-Agent RL",
+        "Multi-Objective RL",
+        "Transfer and Meta RL",
+        "Control",
+        "Deep RL",
+        "Imitation Learning and Inverse RL",
+        "Risk-sensitive and Robust RL",
+        "Real-world applications of RL"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.10526315789473684
+      }
+    },
+    {
+      "items": [
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Vol.\u00a013\u00a0(2025)",
+        "Vol.\u00a012\u00a0(2024)",
+        "Vol.\u00a011\u00a0(2023)",
+        "Vol.\u00a010\u00a0(2022)",
+        "Vol.\u00a09\u00a0(2021)",
+        "Vol.\u00a08\u00a0(2020)",
+        "Vol.\u00a07\u00a0(2019)",
+        "Vol.\u00a06\u00a0(2018)",
+        "Vol.\u00a05\u00a0(2017)",
+        "Vol.\u00a04\u00a0(2016)",
+        "Vol.\u00a03\u00a0(2015)",
+        "Vol.\u00a02\u00a0(2014)",
+        "Vol.\u00a01\u00a0(2013)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "algorithm",
+        "optimization",
+        "computational problem",
+        "mathematical programming",
+        "bottom-up approach",
+        "iterative method",
+        "table lookup"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share This Special Issue",
+        "Special Issue Editor",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers (4 papers)",
+        "Error",
+        "Research",
+        "Error",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.23809523809523808,
+        "length_consistency": true,
+        "pattern_ratio": 0.047619047619047616,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Dr.             Abdullah N. Arslan",
+        "E-Mail",
+        "Website"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "SciProfiles",
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "15 pages,                1183 KiB",
+        "Open AccessArticle",
+        "Identifying All Matches of a Rigid Object in an Input Image Using Visible Triangles",
+        "by\n                    Abdullah N. Arslan",
+        "Mathematics 2025, 13(6), 925; https://doi.org/10.3390/math13060925 - 11 Mar 2025",
+        "(This article belongs to the  Special Issue Dynamic Programming)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "22 pages,                586 KiB",
+        "Open AccessArticle",
+        "A New Alternating Suboptimal Dynamic Programming Algorithm with Applications for Feature Selection",
+        "by\n                    David Podgorelec, Borut \u017dalik, Domen Mongus and Dino Vlahek",
+        "Mathematics 2024, 12(13), 1987; https://doi.org/10.3390/math12131987 - 27 Jun 2024",
+        "Cited by 2",
+        "(This article belongs to the  Special Issue Dynamic Programming)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "David Podgorelec,",
+        "Borut \u017dalik,",
+        "Domen Mongus and",
+        "Dino Vlahek"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "22 pages,                860 KiB",
+        "Open AccessEditor\u2019s ChoiceArticle",
+        "A Dynamic Programming Approach to the Collision Avoidance of Autonomous Ships",
+        "by\n                    Raphael Zaccone",
+        "Mathematics 2024, 12(10), 1546; https://doi.org/10.3390/math12101546 - 15 May 2024",
+        "Cited by 6",
+        "(This article belongs to the  Special Issue Dynamic Programming)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "28 pages,                3084 KiB",
+        "Open AccessFeature PaperArticle",
+        "by\n                    Alexander Bauer, Shinichi Nakajima and Klaus-Robert M\u00fcller",
+        "Mathematics 2023, 11(12), 2628; https://doi.org/10.3390/math11122628 - 8 Jun 2023",
+        "Cited by 2",
+        "(This article belongs to the  Special Issue Dynamic Programming)",
+        "\u25ba\u25bc\n             Show Figures",
+        "Figure 1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Open Access",
+        "Feature Paper",
+        "Article"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Alexander Bauer,",
+        "Shinichi Nakajima and",
+        "Klaus-Robert M\u00fcller"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "problems are solved in an order of increasing problem size, by which solving the next sub",
+        "problem makes use of recorded solutions of sub",
+        "problems encountered earlier. This avoids solving the same sub",
+        "pairs shortest paths), and patterns (e.g., edit distance, sequence alignment). Dynamic",
+        "programming"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hongwei Mei",
+        "Son Luu Nguyen",
+        "George Yin"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mohit Bansil",
+        "Alp\u00e1r R. M\u00e9sz\u00e1ros",
+        "Chenchen Mou"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Aitor Balmaseda",
+        "Davide Lonigro",
+        "Juan Manuel P\u00e9rez-Pardo"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Yiliang Li",
+        "Jun-e Feng",
+        "Yingzhe Jia"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Volume 63 Issue 2",
+        "March 31, 2025",
+        "By \n\nHongwei Mei\nSon Luu Nguyen\nGeorge Yin"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Volume 63 Issue 2",
+        "March 31, 2025",
+        "By \n\nMohit Bansil\nAlp\u00e1r R. M\u00e9sz\u00e1ros\nChenchen Mou"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Volume 63 Issue 2",
+        "March 31, 2025",
+        "By \n\nAitor Balmaseda\nDavide Lonigro\nJuan Manuel P\u00e9rez-Pardo"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Volume 63 Issue 2",
+        "March 28, 2025",
+        "By \n\nMichel C. Delfour"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Volume 63 Issue 2",
+        "March 27, 2025",
+        "By \n\nLa Van Thinh\nHoang The Tuan"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Volume 63 Issue 2",
+        "March 25, 2025",
+        "By \n\nYiliang Li\nJun-e Feng\nYingzhe Jia"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Program",
+        "Accepted Papers",
+        "Submission Information",
+        "Call for Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Paper Submission: May 30, 2024",
+        "Author Rebuttal Period: July 9-11, 2024",
+        "Paper Notification: July 22, 2024"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Paper Submission: September 12, 2024",
+        "Author Rebuttal Period: October 22 - 24, 2024",
+        "Paper Notification: November 4, 2024"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Efficient execution of dynamically typed and higher-level languages",
+        "Dynamic/static, profile-guided, feedback-directed, and machine learning-based optimization",
+        "Program characterization methods",
+        "Profiling and instrumentation techniques; architectural support",
+        "Novel and efficient tools",
+        "Compiler design, practice and experience",
+        "Compiler abstraction and intermediate representations",
+        "Solutions that involve cross-layer (HW/OS/VM/SW) design and integration",
+        "Parallelism, heterogeneity, and reconfigurable architectures",
+        "Optimizations for heterogeneous or specialized targets, GPUs, SoCs, CGRA and Quantum Computers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Hugh LeatherCo-chairFacebook",
+        "Saday SadayappanCo-chairUniversity of Utah, USA",
+        "Andrew AdamsAdobe Research",
+        "Saman AmarasingheMassachusetts Institute of TechnologyUnited States",
+        "Tal Ben-NunLawrence Livermore National LaboratoryUnited States",
+        "Milind ChabbiUber TechnologiesUnited States",
+        "Albert CohenGoogle DeepMindFrance",
+        "Huimin CuiInstitute of Computing Technology, Chinese Academy of SciencesChina",
+        "Maryam Mehri DehnaviUniversity of TorontoCanada",
+        "Christophe DubachMcGill UniversityCanada",
+        "Anderson Faustino da SilvaState University of Maring\u00e1Brazil",
+        "Bj\u00f6rn FrankeUniversity of EdinburghUnited Kingdom",
+        "Laure GonnordUniversit\u00e9 Grenoble-Alpes - Grenoble INP - LCISFrance",
+        "R. GovindarajanIISC",
+        "Rajiv GuptaUniversity of California at Riverside (UCR)United States",
+        "Sebastian HackSaarland University, Saarland Informatics CampusGermany",
+        "Bastian HagedornNVIDIAGermany",
+        "Wei-Chung HsuIntel, USA",
+        "Abhinav JangdaMicrosoft ResearchUnited States",
+        "Shoaib KamilAdobe Research",
+        "Mahmut Taylan KandemirPennsylvania State UniversityUnited States",
+        "Fredrik KjolstadStanford UniversityUnited States",
+        "Martin KongOhio State UniversityUnited States",
+        "Milind KulkarniPurdue UniversityUnited States",
+        "Xu LiuNorth Carolina State UniversityUnited States",
+        "Scott MahlkeUniversity of Michigan",
+        "Vanderson Martins do RosarioCadence Design Systems",
+        "Stephen McCamantUniversity of Minnesota, USA",
+        "Santosh NagarakatteRutgers UniversityUnited States",
+        "Yongjun ParkYonsei University",
+        "Pavlos PetoumenosUniversity of ManchesterUnited Kingdom",
+        "Louis-No\u00ebl PouchetColorado State University, USA",
+        "Isabelle PuautUniversit\u00e9 de Rennes - Inria - CNRS - IRISAFrance",
+        "Bin RenWilliam & MaryUnited States",
+        "Atanas RountevOhio State University",
+        "Volker SeekerMeta AI ResearchUnited States",
+        "Xipeng ShenNorth Carolina State UniversityUnited States",
+        "Tatiana ShpeismanModular",
+        "Aravind Sukumaran-RajamMeta",
+        "Kirshanthan SundararajahVirginia TechUnited States",
+        "Antonino TumeoPacific Northwest National LaboratoryUnited States",
+        "Ramakrishna Upadrasta",
+        "Wenwen WangUniversity of GeorgiaUnited States",
+        "Zheng WangUniversity of Leeds, UK",
+        "Yufan XuUber Technologies",
+        "Jingling XueUNSW SydneyAustralia",
+        "Jidong ZhaiTsinghua University",
+        "Keren ZhouGeorge Mason University",
+        "Oleksandr ZinenkoGoogle DeepMindFrance"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 49,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.12244897959183673,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08163265306122448
+      }
+    },
+    {
+      "items": [
+        "Program Display Configuration",
+        "Information for Participants",
+        "Accepted Papers",
+        "Co-located with PPoPP, HPCA and CC",
+        "First Submission Deadline",
+        "Second Submission Deadline",
+        "Topics",
+        "Call for Tool and Practical Experience Papers",
+        "Geographic Diversity and Inclusion",
+        "Artifact Evaluation",
+        "Distinguished Paper Awards",
+        "Submission Information",
+        "Submission Site",
+        "Submission Guidelines",
+        "CGO 2025"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.13333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.13333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "10:00 - 10:30BreakBreak / Main Conference10:0030mCoffee breakBreakBreak",
+        "12:00 - 13:00LunchBreak / Main Conference12:0060mLunchLunchBreak",
+        "15:00 - 15:30BreakBreak / Main Conference15:0030mCoffee breakBreakBreak"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "10:00 - 10:30BreakBreak / Main Conference10:0030mCoffee breakBreakBreak",
+        "12:00 - 13:00LunchBreak / Main Conference12:0060mLunchLunchBreak",
+        "15:00 - 15:30BreakBreak / Main Conference"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "09:30 - 10:00Break and ReconfigurationBreak / Main Conference",
+        "11:00 - 11:20BreakBreak / Main Conference11:0020mCoffee breakBreakBreak",
+        "12:20 - 14:00LunchBreak / Main Conference12:201h40mLunchLunchBreak",
+        "15:20 - 15:40BreakBreak / Main Conference15:2020mCoffee breakBreakBreak",
+        "16:40 - 17:00BreakBreak / Main Conference16:4020mCoffee breakBreakBreak",
+        "18:00 - 19:30Business MeetingMain Conference at Casuarina Ballroom (Level 2)",
+        "19:30 - 21:00Steering Committee MeetingMain Conference at Casuarina Ballroom (Level 2)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Marcel Ullrich",
+        "Saarland University, Saarland Informatics Campus",
+        "Sebastian Hack",
+        "Saarland University, Saarland Informatics Campus"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alexander Brauckmann",
+        "University of Edinburgh",
+        "Luc Jaulmes",
+        "University of Edinburgh, United Kingdom",
+        "Jos\u00e9 Wesley De Souza Magalh\u00e3es",
+        "University of Edinburgh",
+        "Elizabeth Polgreen",
+        "University of Edinburgh",
+        "Michael F. P. O'Boyle",
+        "University of Edinburgh"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Huanting Wang",
+        "University of Leeds",
+        "Patrick Lenihan",
+        "University of Leeds",
+        "Zheng Wang",
+        "University of Leeds"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Radha Patel",
+        "Massachusetts Institute of Technology",
+        "Willow Ahrens",
+        "Massachusetts Institute of Technology",
+        "Saman Amarasinghe",
+        "Massachusetts Institute of Technology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Joseph W. Cutler",
+        "University of Pennsylvania",
+        "Alexander Collins",
+        "NVIDIA",
+        "Bin Fan",
+        "Nvidia",
+        "Mahesh Ravishankar",
+        "Vinod Grover",
+        "NVIDIA"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Reza Ghanbari",
+        "University of Alberta",
+        "Henry Kao",
+        "Huawei Technologies Canada",
+        "Jo\u00e3o P. L. De Carvalho",
+        "Ehsan Amiri",
+        "Huawei Technologies Canada",
+        "Jose Nelson Amaral",
+        "University of Alberta"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ming Zhong",
+        "SKLP, Institute of Computing Technology, CAS",
+        "Fang Lv",
+        "Institute of Computing Technology, Chinese Academy of Sciences",
+        "Lulin Wang",
+        "SKLP, ICT, CAS Beijing, China",
+        "Lei Qiu",
+        "SKLP, Institute of Computing Technology, CAS; University of Chinese Academy of Sciences",
+        "Yingying Wang",
+        "SKLP, ICT, CAS Beijing, China",
+        "Ying Liu",
+        "Institute of Computing Technology, Chinese Academy of Sciences",
+        "Huimin Cui",
+        "Institute of Computing Technology, Chinese Academy of Sciences",
+        "Xiaobing Feng",
+        "ICT CAS",
+        "Jingling Xue",
+        "UNSW Sydney"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zixuan Ma",
+        "Tsinghua University",
+        "Haojie Wang",
+        "Tsinghua University",
+        "Jingze Xing",
+        "Tsinghua University",
+        "Shuhong Huang",
+        "Tsinghua University",
+        "Liyan Zheng",
+        "Tsinghua University",
+        "Chen Zhang",
+        "Tsinghua University",
+        "Huanqi Cao",
+        "Tsinghua University",
+        "Kezhao Huang",
+        "Tsinghua University",
+        "Mingshu Zhai",
+        "Tsinghua University",
+        "Shizhi Tang",
+        "Tsinghua University",
+        "Penghan Wang",
+        "Tsinghua University",
+        "Jidong Zhai",
+        "Tsinghua University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lazar Milikic",
+        "Oracle Labs",
+        "Milan Cugurovic",
+        "Oracle Labs",
+        "Vojin Jovanovic",
+        "Oracle Labs"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zhanhao Liang",
+        "Wuhan University",
+        "Hanming Sun",
+        "Wuhan University",
+        "wenhan shang",
+        "Wuhan University",
+        "YUAN Mengting",
+        "School of Computer Science, Wuhan University, Wuhan, China",
+        "Jingqin Fu",
+        "Wuhan Broadcasting and Television Station",
+        "Jiang Ma",
+        "OPPO Electronics Corp.",
+        "Jason Xue",
+        "MBZUAI",
+        "Qingan Li",
+        "Wuhan University, China"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alexandre Lopoukhine",
+        "University of Cambridge",
+        "Federico Ficarelli",
+        "Cineca",
+        "Christos Vasiladiotis",
+        "University of Edinburgh",
+        "Anton Lydike",
+        "The University of Edinburgh",
+        "Josse Van Delm",
+        "KU Leuven",
+        "Alban Dutilleul",
+        "ENS Rennes",
+        "Luca Benini",
+        "ETH Zurich, Switzerland",
+        "Marian Verhelst",
+        "KU Leuven",
+        "Tobias Grosser",
+        "University of Cambridge, UK"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mathieu Fehr",
+        "The University of Edinburgh",
+        "Michel Weber",
+        "ETH Zurich",
+        "Christian Ulmann",
+        "ETH Zurich",
+        "Alexandre Lopoukhine",
+        "University of Cambridge",
+        "Martin L\u00fccke",
+        "University of Edinburgh",
+        "Theo Degioanni",
+        "ENS Rennes",
+        "Christos Vasiladiotis",
+        "University of Edinburgh",
+        "Michel Steuwer",
+        "Technische\u00a0Universit\u00e4t Berlin",
+        "Tobias Grosser",
+        "University of Cambridge, UK"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Long Li",
+        "Ant Group",
+        "Jianxin Lai",
+        "Ant Group",
+        "Peng Yuan",
+        "Ant Group",
+        "Tianxiang Sui",
+        "Ant Group",
+        "Yan Liu",
+        "Ant Group",
+        "Qing Zhu",
+        "Ant Group",
+        "Xiaojing Zhang",
+        "Ant Group",
+        "Linjie Xiao",
+        "Ant Group",
+        "Wenguang Chen",
+        "Tsinghua University; Pengcheng Laboratory",
+        "Jingling Xue",
+        "UNSW Sydney"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Yoon Noh Lee",
+        "Yonsei University",
+        "Yongseung Yu",
+        "Yonsei University",
+        "Yongjun Park",
+        "Yonsei University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hyeoncheol Kim",
+        "Yonsei University",
+        "Taehoon Kim",
+        "Rebellions Inc",
+        "Taehyeong Park",
+        "Yonsei University",
+        "Donghyeon Kim",
+        "Hanyang University",
+        "Yongseung Yu",
+        "Yonsei University",
+        "Hanjun Kim",
+        "Yonsei University",
+        "Yongjun Park",
+        "Yonsei University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abd-El-Aziz Zayed",
+        "McGill University",
+        "Christophe Dubach",
+        "McGill University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Andrea Somaini",
+        "Politecnico di Milano",
+        "Filippo Carloni",
+        "Politecnico di Milano",
+        "Giovanni Agosta",
+        "Politecnico di Milano, Italy",
+        "Marco D. Santambrogio",
+        "Politecnico di Milano",
+        "Davide Conficconi",
+        "Politecnico di Milano"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Martin L\u00fccke",
+        "University of Edinburgh",
+        "Michel Steuwer",
+        "Technische\u00a0Universit\u00e4t Berlin",
+        "Albert Cohen",
+        "Google DeepMind",
+        "William S. Moses",
+        "University of Illinois Urbana-Champaign",
+        "Alex Zinenko",
+        "Google DeepMind"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Meisam Tarabkhah",
+        "University of Edinburgh",
+        "Mahshid Delavar",
+        "University of Sheffield",
+        "Mina Doosti",
+        "University of Edinburgh",
+        "Amir Shaikhha",
+        "University of Edinburgh"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "O\u011fuzcan K\u0131rmemi\u015f",
+        "TU Munich",
+        "Francisco Romao",
+        "TU Munich",
+        "Emmanouil Giortamis",
+        "TU Munich",
+        "Pramod Bhatotia",
+        "TU Munich, Germany"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "09:30 - 10:00Break and ReconfigurationBreak / Main Conference",
+        "11:00 - 11:20BreakBreak / Main Conference11:0020mCoffee breakBreakBreak",
+        "12:20 - 14:00LunchBreak / Main Conference12:201h40mLunchLunchBreak",
+        "15:00 - 15:20BreakBreak / Main Conference15:0020mCoffee breakBreakBreak",
+        "17:00 - 20:00ExcursionBreak / Main Conference"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Renato B Hoffmann",
+        "PUC-RS",
+        "Leonardo Gibrowski Fa\u00e9",
+        "PUC-RS",
+        "Dalvan Griebler",
+        "Pontif\u00edcia Universidade Cat\u00f3lica do Rio Grande do Sul - PUCRS",
+        "David Li",
+        "Google",
+        "Fernando Magno Quint\u00e3o Pereira",
+        "Federal University of Minas Gerais"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Wei Li",
+        "Dongjie He",
+        "Chongqing University, China",
+        "Wenguang Chen",
+        "Tsinghua University; Pengcheng Laboratory",
+        "Jingling Xue",
+        "UNSW Sydney"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "David Kozak",
+        "Brno University of Technology & Oracle Labs",
+        "Christian Wimmer",
+        "Amazon Web Services",
+        "Codrut Stancu",
+        "Oracle Labs",
+        "Tomas Vojnar",
+        "Masaryk University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Keyur Joshi",
+        "University of Illinois at Urbana-Champaign",
+        "Rahul Singh",
+        "University of Illinois Urbana-Champaign",
+        "Tommaso Bassetto",
+        "University of Illinois Urbana-Champaign",
+        "Sarita Adve",
+        "University of Illinois at Urbana-Champaign",
+        "Darko Marinov",
+        "University of Illinois at Urbana-Champaign",
+        "Sasa Misailovic",
+        "University of Illinois at Urbana-Champaign"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Huinan Chen",
+        "Wuhan University",
+        "Jiang Ma",
+        "OPPO Electronics Corp.",
+        "Jason Xue",
+        "MBZUAI",
+        "Qingan Li",
+        "Wuhan University, China"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tina Jung",
+        "Saarland Informatics Campus, Saarland University",
+        "Fabian Ritter",
+        "Saarland University, Germany",
+        "Sebastian Hack",
+        "Saarland University, Saarland Informatics Campus"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chaitanya Mamatha Ananda",
+        "University of California Riverside",
+        "Rajiv Gupta",
+        "University of California at Riverside (UCR)",
+        "Sriraman Tallam",
+        "Google Inc.",
+        "Han Shen",
+        "Google Inc",
+        "David Li",
+        "Google"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lukas Tr\u00fcmper",
+        "Daisytuner",
+        "Philipp Schaad",
+        "ETH Zurich",
+        "Berke Ates",
+        "ETH Zurich",
+        "Alexandru Calotoiu",
+        "ETH Zurich",
+        "Marcin Copik",
+        "ETH Zurich",
+        "Torsten Hoefler",
+        "ETH Zurich"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Haoke Xu",
+        "University of Delaware",
+        "Yulin Zhang",
+        "Minzu University of China",
+        "Zitong Cheng",
+        "University of Delaware",
+        "Xiaoming Li",
+        "University of Delaware"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Austin J. Adams",
+        "Georgia Institute of Technology",
+        "Sharjeel Khan",
+        "Google",
+        "Arjun Bhamra",
+        "Georgia Institute of Technology",
+        "Ryan Abusaada",
+        "Georgia Institute of Technology",
+        "Anthony Cabrera",
+        "Oak Ridge National Laboratory",
+        "Cameron Hoechst",
+        "Georgia Institute of Technology",
+        "Travis S. Humble",
+        "Oak Ridge National Laboratory",
+        "Jeffrey Young",
+        "Georgia Institute of Technology",
+        "Thomas Conte",
+        "Georgia Institute of Technology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Enhyeok Jang",
+        "Yonsei University",
+        "Youngmin Kim",
+        "Yonsei University",
+        "Hyungseok Kim",
+        "Yonsei University",
+        "Seungwoo Choi",
+        "Yonsei University",
+        "Yipeng Huang",
+        "Rutgers University",
+        "Won Woo Ro",
+        "Yonsei University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kael Soares Augusto",
+        "Vin\u00edcius Pacheco",
+        "Cadence",
+        "Marcos A. M. Vieira",
+        "Universidade Federal de Minas Gerais",
+        "Rodrigo G. Ribeiro",
+        "Federal University of Ouro Preto",
+        "Fernando Magno Quint\u00e3o Pereira",
+        "Federal University of Minas Gerais"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Naifeng Zhang",
+        "Carnegie Mellon University",
+        "Franz Franchetti",
+        "Carnegie Mellon University, USA"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Guoliang He",
+        "University of Cambridge",
+        "Eiko Yoneki",
+        "U. of Cambridge"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Giorgis Georgakoudis",
+        "Lawrence Livermore National Laboratory",
+        "Konstantinos Parasyris",
+        "Lawrence Livermore National Laboratory",
+        "David Beckingsale",
+        "Lawrence Livermore National Laboratory"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zhang zhongcheng",
+        "Ying Liu",
+        "Institute of Computing Technology, Chinese Academy of Sciences",
+        "Yuyang Zhang",
+        "Zhenchuan Chen",
+        "Institute of Computing Technology, Chinese Academy of Sciences",
+        "Jiacheng Zhao",
+        "Xiaobing Feng",
+        "ICT CAS",
+        "Huimin Cui",
+        "Institute of Computing Technology, Chinese Academy of Sciences",
+        "Jingling Xue",
+        "UNSW Sydney"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Martin Fink",
+        "Technical University of Munich",
+        "Dimitrios Stavrakakis",
+        "TU Munich and University of Edinburgh",
+        "Dennis Sprokholt",
+        "TU Delft",
+        "Soham Chakraborty",
+        "TU Delft",
+        "Jan-Erik Ekberg",
+        "Huawei Technologies LLC",
+        "Pramod Bhatotia",
+        "TU Munich, Germany"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Fangzheng Lin",
+        "Institute of Science Tokyo",
+        "Zhongfa Wang",
+        "Institute of Science Tokyo",
+        "Hiroshi Sasaki",
+        "Institute of Science Tokyo"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mahwish Arif",
+        "University of Cambridge",
+        "Sam Ainsworth",
+        "University of Edinburgh",
+        "Timothy M. Jones",
+        "University of Cambridge"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Boyue Zhang",
+        "University of Cambridge",
+        "Sam Ainsworth",
+        "University of Edinburgh",
+        "Lev Mukhanov",
+        "Queen Mary University London",
+        "Timothy M. Jones",
+        "University of Cambridge"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "09:30 - 10:00Break and ReconfigurationBreak / Main Conference",
+        "11:20 - 12:00BreakBreak / Main Conference11:2040mCoffee breakBreakBreak",
+        "13:00 - 13:30Award SessionMain Conference at Casuarina Ballroom (Level 2)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "enming fan",
+        "Xiaofeng Guan",
+        "Shanghai Jiao Tong University; Shanghai Enflame Technology",
+        "Fan Hu",
+        "Heng Shi",
+        "Enflame Tech Co.",
+        "Hao Zhou",
+        "Enflame Tech Co.",
+        "Jianguo Yao",
+        "Shanghai Jiao Tong University; Shanghai Enflame Technology"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Haolin Pan",
+        "Yuanyu Wei",
+        "Mingjie Xing",
+        "Institute of Software, Chinese Academy of Sciences",
+        "Yanjun Wu",
+        "Institute of Software, Chinese Academy of Sciences",
+        "Chen Zhao",
+        "Institute of Software, Chinese Academy of Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Olivia Hsu",
+        "Stanford University",
+        "Alexander Rucker",
+        "Stanford University",
+        "Tian Zhao",
+        "Stanford University",
+        "Varun Desai",
+        "Stanford University",
+        "Kunle Olukotun",
+        "Stanford University",
+        "Fredrik Kjolstad",
+        "Stanford University"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sourena Naser Moghaddasi",
+        "University of Victoria",
+        "Haris Smajlovi\u0107",
+        "University of Victoria",
+        "Ariya Shajii",
+        "Exaloop",
+        "Ibrahim Numanagi\u0107",
+        "University of Victoria"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Haoran Peng",
+        "University of Science and Technology of China",
+        "Yu Zhang",
+        "University of Science and Technology of China",
+        "Michael D. Ernst",
+        "University of Washington",
+        "Jinbao Chen",
+        "University of Science and Technology of China",
+        "Boyao Ding",
+        "University of Science and Technology of China"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Matteo Basso",
+        "Universit\u00e0 della Svizzera italiana (USI)",
+        "Aleksandar Prokopec",
+        "Oracle Labs",
+        "Andrea Ros\u00e0",
+        "USI Lugano",
+        "Walter Binder",
+        "USI Lugano"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nader Al Awar",
+        "The University of Texas at Austin",
+        "Zijian Yi",
+        "The University of Texas at Austin",
+        "George Biros",
+        "The University of Texas at Austin",
+        "Milos Gligoric",
+        "The University of Texas at Austin"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Information for Participants",
+        "Tue 4 Mar 2025 17:00 - 20:00 - ExcursionInfo for session Food and drink will be provided.",
+        "Close"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Hyeoncheol Kim",
+        "Taehoon Kim",
+        "Taehyeong Park",
+        "Donghyeon Kim",
+        "Yongseung Yu",
+        "Hanjun Kim",
+        "Yongjun Park"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alexandre Lopoukhine",
+        "Federico Ficarelli",
+        "Christos Vasiladiotis",
+        "Anton Lydike",
+        "Josse Van Delm",
+        "Alban Dutilleul",
+        "Luca Benini",
+        "Marian Verhelst",
+        "Tobias Grosser"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Haoke Xu",
+        "Yulin Zhang",
+        "Zitong Cheng",
+        "Xiaoming Li"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Long Li",
+        "Jianxin Lai",
+        "Peng Yuan",
+        "Tianxiang Sui",
+        "Yan Liu",
+        "Qing Zhu",
+        "Xiaojing Zhang",
+        "Linjie Xiao",
+        "Wenguang Chen",
+        "Jingling Xue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lukas Tr\u00fcmper",
+        "Philipp Schaad",
+        "Berke Ates",
+        "Alexandru Calotoiu",
+        "Marcin Copik",
+        "Torsten Hoefler"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Austin J. Adams",
+        "Sharjeel Khan",
+        "Arjun Bhamra",
+        "Ryan Abusaada",
+        "Anthony Cabrera",
+        "Cameron Hoechst",
+        "Travis S. Humble",
+        "Jeffrey Young",
+        "Thomas Conte"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Renato B Hoffmann",
+        "Leonardo Gibrowski Fa\u00e9",
+        "Dalvan Griebler",
+        "David Li",
+        "Fernando Magno Quint\u00e3o Pereira"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Martin Fink",
+        "Dimitrios Stavrakakis",
+        "Dennis Sprokholt",
+        "Soham Chakraborty",
+        "Jan-Erik Ekberg",
+        "Pramod Bhatotia"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zhanhao Liang",
+        "Hanming Sun",
+        "wenhan shang",
+        "YUAN Mengting",
+        "Jingqin Fu",
+        "Jiang Ma",
+        "Jason Xue",
+        "Qingan Li"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Andrea Somaini",
+        "Filippo Carloni",
+        "Giovanni Agosta",
+        "Marco D. Santambrogio",
+        "Davide Conficconi"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tina Jung",
+        "Fabian Ritter",
+        "Sebastian Hack"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Yoon Noh Lee",
+        "Yongseung Yu",
+        "Yongjun Park"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Huanting Wang",
+        "Patrick Lenihan",
+        "Zheng Wang"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Keyur Joshi",
+        "Rahul Singh",
+        "Tommaso Bassetto",
+        "Sarita Adve",
+        "Darko Marinov",
+        "Sasa Misailovic"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Haoran Peng",
+        "Yu Zhang",
+        "Michael D. Ernst",
+        "Jinbao Chen",
+        "Boyao Ding"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lazar Milikic",
+        "Milan Cugurovic",
+        "Vojin Jovanovic"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kael Soares Augusto",
+        "Vin\u00edcius Pacheco",
+        "Marcos A. M. Vieira",
+        "Rodrigo G. Ribeiro",
+        "Fernando Magno Quint\u00e3o Pereira"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Matteo Basso",
+        "Aleksandar Prokopec",
+        "Andrea Ros\u00e0",
+        "Walter Binder"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zixuan Ma",
+        "Haojie Wang",
+        "Jingze Xing",
+        "Shuhong Huang",
+        "Liyan Zheng",
+        "Chen Zhang",
+        "Huanqi Cao",
+        "Kezhao Huang",
+        "Mingshu Zhai",
+        "Shizhi Tang",
+        "Penghan Wang",
+        "Jidong Zhai"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mahwish Arif",
+        "Sam Ainsworth",
+        "Timothy M. Jones"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jubi Taneja",
+        "Avery Laird",
+        "Cong Yan",
+        "Madan Musuvathi",
+        "Shuvendu K. Lahiri"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Huinan Chen",
+        "Jiang Ma",
+        "Jason Xue",
+        "Qingan Li"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Boyue Zhang",
+        "Sam Ainsworth",
+        "Lev Mukhanov",
+        "Timothy M. Jones"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Joseph W. Cutler",
+        "Alexander Collins",
+        "Bin Fan",
+        "Mahesh Ravishankar",
+        "Vinod Grover"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "enming fan",
+        "Xiaofeng Guan",
+        "Fan Hu",
+        "Heng Shi",
+        "Hao Zhou",
+        "Jianguo Yao"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chaitanya Mamatha Ananda",
+        "Rajiv Gupta",
+        "Sriraman Tallam",
+        "Han Shen",
+        "David Li"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Giorgis Georgakoudis",
+        "Konstantinos Parasyris",
+        "David Beckingsale"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Zhang zhongcheng",
+        "Ying Liu",
+        "Yuyang Zhang",
+        "Zhenchuan Chen",
+        "Jiacheng Zhao",
+        "Xiaobing Feng",
+        "Huimin Cui",
+        "Jingling Xue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Enhyeok Jang",
+        "Youngmin Kim",
+        "Hyungseok Kim",
+        "Seungwoo Choi",
+        "Yipeng Huang",
+        "Won Woo Ro"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Reza Ghanbari",
+        "Henry Kao",
+        "Jo\u00e3o P. L. De Carvalho",
+        "Ehsan Amiri",
+        "Jose Nelson Amaral"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "David Kozak",
+        "Christian Wimmer",
+        "Codrut Stancu",
+        "Tomas Vojnar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nader Al Awar",
+        "Zijian Yi",
+        "George Biros",
+        "Milos Gligoric"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Wei Li",
+        "Dongjie He",
+        "Wenguang Chen",
+        "Jingling Xue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Olivia Hsu",
+        "Alexander Rucker",
+        "Tian Zhao",
+        "Varun Desai",
+        "Kunle Olukotun",
+        "Fredrik Kjolstad"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Meisam Tarabkhah",
+        "Mahshid Delavar",
+        "Mina Doosti",
+        "Amir Shaikhha"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Radha Patel",
+        "Willow Ahrens",
+        "Saman Amarasinghe"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Fangzheng Lin",
+        "Zhongfa Wang",
+        "Hiroshi Sasaki"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Alexander Brauckmann",
+        "Luc Jaulmes",
+        "Jos\u00e9 Wesley De Souza Magalh\u00e3es",
+        "Elizabeth Polgreen",
+        "Michael F. P. O'Boyle"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Martin L\u00fccke",
+        "Michel Steuwer",
+        "Albert Cohen",
+        "William S. Moses",
+        "Alex Zinenko"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Haolin Pan",
+        "Yuanyu Wei",
+        "Mingjie Xing",
+        "Yanjun Wu",
+        "Chen Zhao"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Sourena Naser Moghaddasi",
+        "Haris Smajlovi\u0107",
+        "Ariya Shajii",
+        "Ibrahim Numanagi\u0107"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Ming Zhong",
+        "Fang Lv",
+        "Lulin Wang",
+        "Lei Qiu",
+        "Yingying Wang",
+        "Ying Liu",
+        "Huimin Cui",
+        "Xiaobing Feng",
+        "Jingling Xue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "O\u011fuzcan K\u0131rmemi\u015f",
+        "Francisco Romao",
+        "Emmanouil Giortamis",
+        "Pramod Bhatotia"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Mathieu Fehr",
+        "Michel Weber",
+        "Christian Ulmann",
+        "Alexandre Lopoukhine",
+        "Martin L\u00fccke",
+        "Theo Degioanni",
+        "Christos Vasiladiotis",
+        "Michel Steuwer",
+        "Tobias Grosser"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "located with PPoPP, HPCA and CC",
+        "based methods to specific architectural features and support for code generation and optimization.",
+        "11, 2024",
+        "24, 2024",
+        "hleather@meta.com",
+        "University of Utah",
+        "saday@cs.utah.edu",
+        "level languages",
+        "specific languages",
+        "guided, feedback",
+        "directed, and machine learning",
+        "based optimization",
+        "layer (HW/OS/VM/SW) design and integration",
+        "contained without needing to read any material in the Appendix.",
+        "related technologies applied to real",
+        "world problems with scope or characteristics that set them apart from previous solutions.",
+        "site giving documentation and further information about the tool.",
+        "represented countries who are paper authors."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.05555555555555555
+      }
+    },
+    {
+      "items": [
+        "P cmz",
+        "t letter\u201d, and if that is not supported, use \u201c",
+        "t letter\u201d."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "algorithm",
+        "computer-vision",
+        "matching",
+        "dynamic-programming"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "algorithm",
+        "computer-vision",
+        "matching",
+        "dynamic-programming"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "LEAN: Why is Classical Logic Needed to Prove this?",
+        "Difference between internal energy and mechanical energy",
+        "How do you come up with how a character looks?",
+        "How to selectively \\usepackage in style files",
+        "How are these equations classified as nonlinear?",
+        "How do I write all five word sentences?",
+        "Is there any problem with too much precision?",
+        "Can I remove an \"old work\" electrical box?",
+        "Abbreviations with letters over symbols",
+        "Grammar Error in Frank Herbert's Children of Dune?",
+        "Convert from 50 Hz to 60 Hz vintage digital alarm clock",
+        "\"loca table not found\" on an up-to-date texlive",
+        "Brake pad dilemma",
+        "Two Pixel Change",
+        "C++ implementation of Go inspired cancellable context",
+        "Neural network to find errors in training data",
+        "If a metric conserves open spaces, then sequences maintain their limits.",
+        "Help identify this very early airplane",
+        "How does PCIe know which card to use for legacy ISA I/O ports?",
+        "What instruments did the first dashboard include?",
+        "Extracting model coefficients for formula terms",
+        "How do I find the tension *inside* a capstan?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "current community",
+        "your communities",
+        "more stack exchange communities"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1,993",
+        "20 silver badges",
+        "22 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Varun",
+        "Varun",
+        "1711 silver badge22 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Francesco Callari",
+        "Francesco Callari",
+        "11.8k22 gold badges2929 silver badges4444 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "11.8k",
+        "2 gold badges",
+        "29 silver badges",
+        "44 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Joel Hoff",
+        "Joel Hoff",
+        "1,9932020 silver badges2222 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1,993",
+        "20 silver badges",
+        "22 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "ergosys",
+        "ergosys",
+        "49.1k55 gold badges5252 silver badges7272 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "49.1k",
+        "5 gold badges",
+        "52 silver badges",
+        "72 bronze badges"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Start asking to get answers",
+        "Find the answer to your question by asking.",
+        "Ask question"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Explore related questions",
+        "algorithmcomputer-visionmatchingdynamic-programming",
+        "See similar questions with these tags."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Connect@AOM",
+        "Directories",
+        "Divisions and Interest Groups (DIGs)\n\n\nDIG Elections\n\n\nDIG Nominations",
+        "DIG Elections",
+        "DIG Nominations",
+        "Social Media",
+        "Volunteering",
+        "Affiliated and Associated Societies\n\n\nFellows Group\n\n\nPhD Project",
+        "Fellows Group",
+        "PhD Project"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "AOM Perspectives",
+        "Call for Submissions",
+        "Paper Development Workshops"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Research",
+        "Network",
+        "Events",
+        "Membership",
+        "Career Services",
+        "AMJ Paper Development Workshop, Hong Kong",
+        "AMJ Paper Development Workshop, Ho Chi Minh City, Vietnam",
+        "AMLE Paper Development Workshop, Bangalore, India",
+        "AMJ Paper Development Workshop, London, UK",
+        "AMJ Paper Development Workshop, Tallinn, Estonia",
+        "AMP Virtual Paper Development Workshop for Special Issue: Making It Better by Working Together",
+        "AMD \"Space Economy\" Paper Development Workshop, Turin, Italy",
+        "AMD \"Organizational Insights in Health Care\" Paper Development Workshop, Philadelphia, PA",
+        "AMJ Paper Development Workshop, Tokyo, Japan",
+        "AMR Idea Development Workshop, Hong Kong",
+        "AMR Idea Development Workshop, Beijing, China",
+        "AMR Idea Development Workshop, Brisbane, Australia",
+        "AMLE Paper Development Workshop, Belfast, Northern Ireland",
+        "AMLE Paper Development Workshop, Te Herenga Waka, New Zealand"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.05263157894736842,
+        "length_consistency": true,
+        "pattern_ratio": 0.7368421052631579,
+        "keyword_ratio": 0.8421052631578947
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "AOM Perspectives",
+        "Call for Submissions",
+        "Paper Development Workshops"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Program",
+        "Accepted Papers",
+        "Submission Information",
+        "Call for Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Research",
+        "Network",
+        "Events",
+        "Membership",
+        "Career Services",
+        "AMJ Paper Development Workshop, Hong Kong",
+        "AMJ Paper Development Workshop, Ho Chi Minh City, Vietnam",
+        "AMLE Paper Development Workshop, Bangalore, India",
+        "AMJ Paper Development Workshop, London, UK",
+        "AMJ Paper Development Workshop, Tallinn, Estonia",
+        "AMP Virtual Paper Development Workshop for Special Issue: Making It Better by Working Together",
+        "AMD \"Space Economy\" Paper Development Workshop, Turin, Italy",
+        "AMD \"Organizational Insights in Health Care\" Paper Development Workshop, Philadelphia, PA",
+        "AMJ Paper Development Workshop, Tokyo, Japan",
+        "AMR Idea Development Workshop, Hong Kong",
+        "AMR Idea Development Workshop, Beijing, China",
+        "AMR Idea Development Workshop, Brisbane, Australia",
+        "AMLE Paper Development Workshop, Belfast, Northern Ireland",
+        "AMLE Paper Development Workshop, Te Herenga Waka, New Zealand"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Paper Submission: May 30,",
+        "Author Rebuttal Period: July 9-11,",
+        "Paper Notification: July 22,"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

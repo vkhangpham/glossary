@@ -1,0 +1,293 @@
+{
+  "level1_term": "music performance",
+  "all_urls": [
+    "https://music.gatech.edu/research",
+    "https://smtd.umich.edu/research-initiatives/",
+    "https://arts.ucdavis.edu/performance-studies-areas-focus",
+    "https://music.fsu.edu/music-research-centers/center-for-music-research/",
+    "https://www.monash.edu/arts/music-performance/the-sound-collectors-lab/key-research-themes",
+    "https://music.unc.edu/undergraduate/current/research/",
+    "https://musicdancetheatre.asu.edu/research",
+    "https://www.hajim.rochester.edu/ame/research/index.html",
+    "https://music.sas.upenn.edu/graduate/music-studies",
+    "https://music.fas.harvard.edu/undergraduate-thesis/",
+    "https://music.cornell.edu/honors-projects",
+    "https://researchguides.csuohio.edu/MUS440",
+    "https://www.usf.edu/arts/music/research/index.aspx"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "E-mail or username: *",
+        "Password: *",
+        "Remember me",
+        "Request new password"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "The aims of the Center are to:",
+        "Please see:",
+        "ABSTRACT:"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Audio and Music Engineering / Audio Arts and Technology",
+        "Resources for",
+        "Helpful links",
+        "Schools & divisions",
+        "Libraries & collections",
+        "Ever better",
+        "More Rochester"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Main navigation",
+        "Main navigation",
+        "Graduate"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Venue preferences.",
+        "Ensemble instrumentation.",
+        "Stage diagram, including both performers and equipment.",
+        "Audio/visual recording needs.",
+        "Audio amplification needs.",
+        "Visual projection needs.",
+        "Other details as required."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Thesis Categories",
+        "Thesis Pre-Screening",
+        "Thesis Proposal",
+        "Thesis Prospectus",
+        "24-25 Thesis Timeline",
+        "Thesis Production Acknowledgement",
+        "Loeb Music Library Research Support"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Types of Projects",
+        "Requirements and Application Process",
+        "Possible Outcomes of Honors study"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Find Reference Sources",
+        "Find Books & Scores",
+        "Find Articles",
+        "Find Streaming Music & Film",
+        "Find Web Resources",
+        "Orff & Kodaly Resources",
+        "Cite Your Sources (APA)Citation Managers",
+        "Citation Managers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Open Music Theory",
+        "Dance Drummer",
+        "Harmony Explained: Progress Toward a Scientific Theory of Music",
+        "Internet Research Skills: Music"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Africana Studies",
+        "Anthropology",
+        "Arabic and Middle Eastern Studies",
+        "Citing Sources",
+        "Classical & Medieval Studies",
+        "Copyright",
+        "English Language & Literature",
+        "First Year Writing",
+        "Graphic Novels",
+        "History",
+        "International Students",
+        "Music",
+        "Philosophy",
+        "Religious Studies",
+        "Theatre and Dance",
+        "Women's and Gender Studies",
+        "World Languages, Literatures, and Cultures"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.11764705882352941,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Types of Projects",
+        "Requirements and Application Process",
+        "Possible Outcomes of Honors study"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Open Music Theory",
+        "Dance Drummer",
+        "Harmony Explained: Progress Toward a Scientific Theory of Music",
+        "Internet Research Skills: Music"
+      ],
+      "output_list_from_llm": [
+        "Open Music Theory",
+        "Harmony Explained: Progress Toward a Scientific Theory of Music",
+        "Internet Research Skills: Music"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Open music theory",
+    "Harmony explained: progress toward a scientific theory of music",
+    "Internet research skills: music"
+  ],
+  "error": null
+}

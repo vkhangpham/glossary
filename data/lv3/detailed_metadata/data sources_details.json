@@ -1,0 +1,780 @@
+{
+  "level2_term": "data sources",
+  "all_urls": [
+    "https://pubsonline.informs.org/page/ijds/calls-for-papers",
+    "https://www.sciencedirect.com/journal/data-and-knowledge-engineering/about/call-for-papers",
+    "https://eurogoos.eu/current/call-for-papers-international-journal-of-data-science-and-analytics-blue-cloud-2026/",
+    "https://authorservices.taylorandfrancis.com/call-for-papers/",
+    "https://aisnet.org/page/CallsforPapers",
+    "https://academic.oup.com/jamia/pages/call-for-papers",
+    "https://www.emeraldgrouppublishing.com/publish-with-us/calls-for-papers",
+    "https://www.nsta.org/call-papers-special-issue-data-science",
+    "https://codata.org/call-for-papers-data-management-planning-across-disciplines-and-infrastructures/",
+    "https://www.spiedigitallibrary.org/journals/journal-of-applied-remote-sensing/call-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Call for Papers: Special Issue on Data Science and AI in Marine Science and Blue Economy",
+        "Topics",
+        "Submissions"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Categories A-C",
+        "Categories D-G",
+        "Categories H-M",
+        "Categories N-Z",
+        "Order by"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Use our search tool to find call for papers in your subject area, in 2 simple steps.",
+        "Step 1: Select the relevant check box/es and press \u2018Load\u2019.",
+        "Step 2: Explore the results across Taylor & Francis, Routledge, and Cogent journals.",
+        "If you\u2019re looking to publish open access, we\u2019ve got plenty of information here on Author Services."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Area Studies",
+        "Behavioral Sciences",
+        "Bioscience",
+        "Built Environment",
+        "Communication Studies",
+        "Computer Science"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Earth Sciences",
+        "Economics, Finance, Business & Industry",
+        "Education",
+        "Engineering & Technology",
+        "Environment & Agriculture",
+        "Environment and Sustainability",
+        "Food Science & Technology",
+        "Geography",
+        "Global Development"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Health and Social Care",
+        "Humanities",
+        "Information Science",
+        "Language & Literature",
+        "Mathematics, Statistics & Data Science",
+        "Medicine, Dentistry, Nursing & Allied Health",
+        "Museum and Heritage Studies"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Physical Sciences",
+        "Politics & International Relations",
+        "Social Sciences",
+        "Sports and Leisure",
+        "Tourism, Hospitality and Events",
+        "Urban Studies"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Edit This Favorite",
+        "Calls for Papers",
+        "Connect With Us :"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "12 hours agoCareer Services - Exclusively for AIS Members",
+        "13 hours agoAIS Student Chapter Leadership Conference 2025 Sets Record Attendance",
+        "15 hours agoAMCIS 2025: Keynote Speaker; CIO Panel, Paper-a-Thon, and More!",
+        "3/20/2025Vote Today! 2025 AIS Council Election Deadline: March 31| 17:00 EDT New York",
+        "3/20/2025AISWORLD ListServ Upgrade: What You Need to Know"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Utility Menu",
+        "Mega Menu",
+        "Literature Synthesis on Contemporary Service Experiences",
+        "Advancing Sustainable Logistics and Trade in a Digital Era",
+        "The Use of Social Media in Talent Acquisition and Talent Management",
+        "Sustainable Corporate Governance in the Era of Digitalization",
+        "Calls for books",
+        "Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pagination",
+        "Filter by",
+        "Show filter"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Accounting finance & economics",
+        "Business, management & strategy",
+        "Education",
+        "Engineering",
+        "Health & social care",
+        "HR, learning & organisation studies",
+        "Information & knowledge management",
+        "Library & information sciences",
+        "Marketing",
+        "Operations, logistics & quality",
+        "Property management & built environment",
+        "Public policy & environmental management",
+        "Tourism & hospitality management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1 No poverty",
+        "2 Zero hunger",
+        "3 Good health and well-being",
+        "4 Quality education",
+        "5 Gender equality",
+        "6 Clean water & sanitation",
+        "7 Affordable & clean energy",
+        "8 Decent work & economic growth",
+        "9 Industry, innovation & infrastructure",
+        "10 Reduced inequalities",
+        "11 Sustainable cities & communities",
+        "12 Responsible consumption & production",
+        "13 Climate action",
+        "14 Life below water",
+        "15 Life on land",
+        "16 Peace, justice & strong intuitions",
+        "17 Partnerships for the goals"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Accounting finance & economics",
+        "Business, management & strategy",
+        "Education",
+        "Engineering",
+        "Health & social care",
+        "HR, learning & organisation studies",
+        "Information & knowledge management",
+        "Library & information sciences",
+        "Marketing",
+        "Operations, logistics & quality",
+        "Property management & built environment",
+        "Public policy & environmental management",
+        "Tourism & hospitality management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1 No poverty",
+        "2 Zero hunger",
+        "3 Good health and well-being",
+        "4 Quality education",
+        "5 Gender equality",
+        "6 Clean water & sanitation",
+        "7 Affordable & clean energy",
+        "8 Decent work & economic growth",
+        "9 Industry, innovation & infrastructure",
+        "10 Reduced inequalities",
+        "11 Sustainable cities & communities",
+        "12 Responsible consumption & production",
+        "13 Climate action",
+        "14 Life below water",
+        "15 Life on land",
+        "16 Peace, justice & strong intuitions",
+        "17 Partnerships for the goals"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Call for Papers: end of June 2024",
+        "Paper Submissions: January 2025",
+        "Final Decisions: June 2025",
+        "Revisions Due: August 2025",
+        "Full Special Issue to Editor: November 2025",
+        "Special Issue Out: January 2026"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Machine and deep learning-based algorithms for multi-source data processing",
+        "Multi-source image processing and pattern recognition",
+        "Joint classification and semantic segmentation",
+        "Spectral super-resolution",
+        "Target detection and change detection",
+        "Lightweight deep neural networks",
+        "Domain adaptation, few-shot learning, and meta-learning-based algorithms",
+        "Onboard real-time applications using multi-source datasets"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Data augmentation methods for remote sensing applications",
+        "Domain adaptation approaches to bridge the gap between source and target domains",
+        "Transfer learning and few-shot learning for remote sensing image classification and segmentation",
+        "Synthetic data generation techniques for enhancing limited training datasets",
+        "Self-supervised and unsupervised learning approaches for remote sensing data",
+        "Cross-domain adaptation and multi-source data fusion strategies for robust learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Fusion techniques for multi-source ocean observation and remote sensing data.",
+        "Physics-guided ocean data prediction and forecasting.",
+        "Cognition of ocean processes based on multi-source observation and remote sensing data.",
+        "Ocean color observation and applications.",
+        "Ocean internal wave observation and applications.",
+        "Spectrum recovery from multispectral ocean color data.",
+        "Coastal wetland mapping and monitoring.",
+        "Deep learning techniques for ship performance monitoring.",
+        "Modeling and change analysis of the Arctic.",
+        "Oil spill detection on the ocean via multi-source data."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Current Issue",
+        "All Issues",
+        "Issues in Progress"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "JUMP TO SECTION",
+        "Deep Learning-Based Multi-Source Remote Sensing Data Processing and Applications",
+        "Deep Learning for Remote Sensing Image Analysis with Limited Training Samples",
+        "Multi-Source Ocean Remote Sensing Data Fusion and Applications",
+        "List of Previously Published Special Sections"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "G\u00fclsen Ta\u015fk\u0131n \n\nIstanbul Technical UniversityTurkiyegulsen.taskin@itu.edu.tr",
+        "Silvia Liberata Ullo\n\nUniversity of SannioItalyullo@unisannio.it",
+        "Danfeng Hong\n\nChinese Academy of SciencesChinahongdf@aircas.ac.cn",
+        "Valerio Marsocci\n\nEuropean Space Agency PhiLabFrascati, Italyvalerio.marsocci@esa.int",
+        "Sicong Liu\n\nTongji UniversityShanghai, Chinaliu@tongji.edu.cn",
+        "Deodato Tapete\n\nItalian Space AgencyItalydeodato.tapete@asi.it"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Feng Gao\n\nOcean University of ChinaSchool of Computer Science and TechnologyChinagaofeng@ouc.edu.cn",
+        "Hua Su\n\nFuzhou UniversityThe Academy of Digital ChinaChinasuhua@fzu.edu.cn",
+        "Yibin Ren\n\nInstitute of OceanologyChinese Academy of SciencesChinayibinren@qdio.ac.cn",
+        "Lizhang Zhou\n\nSecond Institute of OceanographyMinistry of Natural ResourcesChinazhoulz@sio.org.cn"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "+ Add another field",
+        "Range\n\n\n\n\n\n\nSingle Year",
+        "Clear Form"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Proceedings\n\n\nVolume",
+        "eBooks +",
+        "Field Guide Series\n\nPress Monograph\n\nSpotlight\n\nTutorial Text\n\nOther Press"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Journals +",
+        "Volume",
+        "Issue"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "source data processing and analysis, particularly in classification, super",
+        "scale areas, and other specific issues, all of which make deep learning",
+        "based algorithms more difficult in real",
+        "world applications. Therefore, novel deep neural networks, combined with few",
+        "shot learning, meta",
+        "source data processing."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "source data processing. In particular, it seeks to achieve cross",
+        "oriented articles on topics related to multi",
+        "source data classification, semantic segmentation, detection, spectral super",
+        "resolution, and understanding. These topics include but are not limited to the following:"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.5
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Call for Papers: Special Issue on Data Science and AI in Marine Science and Blue Economy",
+        "Topics",
+        "Submissions"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Call for Papers: end of June",
+        "Paper Submissions: January",
+        "Final Decisions: June",
+        "Revisions Due: August",
+        "Full Special Issue to Editor: November",
+        "Special Issue Out: January"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "source data processing. In particular, it seeks to achieve cross",
+        "oriented articles on topics related to multi",
+        "source data classification, semantic segmentation, detection, spectral super",
+        "resolution, and understanding. These topics include but are not limited to the following:"
+      ],
+      "output_list_from_llm": [
+        "source data classification, semantic segmentation, detection, spectral super"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Edit This Favorite",
+        "Calls for Papers",
+        "Connect With Us :"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Proceedings Volume",
+        "eBooks +",
+        "Field Guide Series Press Monograph Spotlight Tutorial Text Other Press"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Source data classification, semantic segmentation, detection, spectral super"
+  ],
+  "error": null
+}

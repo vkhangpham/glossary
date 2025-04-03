@@ -1,0 +1,732 @@
+{
+  "level2_term": "bayesian methods",
+  "all_urls": [
+    "https://journal.nestat.org/news/Modern_Bayesian_Methods",
+    "https://pubs.aip.org/asa/jel/pages/cfp020725",
+    "https://approximateinference.org/call/",
+    "https://aistats.org/aistats2025//call-for-papers.html",
+    "https://icml.cc/Conferences/2025/CallForPapers",
+    "https://imstat.org/meetings-calendar/bnp-14/",
+    "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety/about/call-for-papers",
+    "https://iclr.cc/Conferences/2025/CallForPapers",
+    "https://projecteuclid.org/journals/bayesian-analysis",
+    "https://www.mdpi.com/journal/mathematics/special_issues/B9V2ZQGCN1"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Proceedings Track",
+        "Workshop Track",
+        "Fast Track"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Key dates",
+        "Paper Submission (Proceedings Track)",
+        "Changes of title/abstract/authorship",
+        "Formatting and Supplementary Material",
+        "Reviewer Nomination",
+        "Anonymization Requirements",
+        "Dual Submissions",
+        "Confidentiality",
+        "Use of Large Language Models and Image Deep Generative Models"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.2222222222222222,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "person in",
+        "5, 2025. At least one author of each accepted paper",
+        "person"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "blind. All submissions must be anonymized",
+        "blind reviewing",
+        "citations are",
+        "citations. Possibilities",
+        "citation, including it but replacing the citation",
+        "is. We",
+        "citations for published or",
+        "known work."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Deep Learning (architectures, generative models, theory, etc.)",
+        "Evaluation (methodology, meta studies, replicability and validity, human-in-the-loop, etc.)",
+        "Probabilistic Methods (Bayesian methods, graphical models, Monte Carlo methods, etc.)",
+        "Reinforcement Learning (decision and control, planning, hierarchical RL, robotics, etc.)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Deadlines:",
+        "Changes to abstract/title/authorship:",
+        "Reciprocal Reviewing Requirement:",
+        "Double-Blind Review:",
+        "Dual Submission:",
+        "Reviewing Criteria:",
+        "Use of Generative AI:",
+        "Ethical Conduct for Peer Review:",
+        "Impact Statements:",
+        "Lay summaries:"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Asymptotic properties and foundational aspects of BNP models",
+        "Applications in economics, finance, biostatistics, environmental science, and health",
+        "Cutting-edge computational techniques and scalable methods",
+        "Predictive inference and robustness",
+        "The use of BNP in machine learning, deep learning, and structured data analysis",
+        "Specialized areas like BNP mixture models, clustering, time series analysis, and random partitioning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "14th International Conference on Bayesian Nonparametrics (BNP 14)",
+        "June 22, 2025 - June 27, 2025",
+        "Los Angeles, California, United States",
+        "Meeting Website",
+        "Co Sponsored"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Contact IMS",
+        "ims@imstat.org",
+        "imswebmaster@imstat.org",
+        "dues.subs@imstat.org"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "unsupervised, self-supervised, semi-supervised, and supervised representation learning",
+        "transfer learning, meta learning, and lifelong learning",
+        "reinforcement learning",
+        "representation learning for computer vision, audio, language, and other modalities",
+        "metric learning, kernel learning, and sparse coding",
+        "probabilistic methods (Bayesian methods, variational inference, sampling, UQ, etc.)",
+        "generative models",
+        "causal reasoning",
+        "optimization",
+        "learning theory",
+        "learning on graphs and other geometries & topologies",
+        "societal considerations including fairness, safety, privacy",
+        "visualization or interpretation of learned representations",
+        "datasets and benchmarks",
+        "infrastructure, software libraries, hardware, etc.",
+        "neurosymbolic & hybrid AI systems (physics-informed, logic & formal reasoning, etc.)",
+        "applications to robotics, autonomy, planning",
+        "applications to neuroscience & cognitive science",
+        "applications to physical sciences (physics, chemistry, biology, etc.)",
+        "general machine learning (i.e., none of the above)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.05,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.15
+      }
+    },
+    {
+      "items": [
+        "Questions can be directed to: program-chairs@iclr.cc",
+        "Key dates",
+        "The planned dates are as follows (all times are UTC-12h, aka \u201cAnywhere on Earth\u201d):",
+        "Subject Areas",
+        "A non-exhaustive list of relevant topics:",
+        "Double blind reviewing",
+        "As in past years, workshops will have their own organization and call for contributions.",
+        "Submission Instructions",
+        "Paper length",
+        "Style files and Templates",
+        "To prepare your submission to ICLR 2025, please use the LaTeX style files provided at:",
+        "https://github.com/ICLR/Master-Template/raw/master/iclr2025.zip",
+        "Reviewing Process",
+        "Reciprocal Reviewing Requirement",
+        "Code of Conduct",
+        "Code of Ethics",
+        "Dual Submission Policy",
+        "The Use of Large Language Models (LLMs)",
+        "Withdrawal Policy"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.15789473684210525,
+        "length_consistency": true,
+        "pattern_ratio": 0.10526315789473684,
+        "keyword_ratio": 0.42105263157894735
+      }
+    },
+    {
+      "items": [
+        "KEYWORDS/PHRASES",
+        "PUBLICATION TITLE:",
+        "PUBLICATION YEARS"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Quick Links",
+        "Information for Librarians",
+        "Information for Publishers",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.9
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Bayesian Quickest Detection of Credit Card Fraud",
+        "Prior Distributions for Objective Bayesian Analysis",
+        "Beta Processes, Stick-Breaking and Power Laws",
+        "The Bayesian elastic net",
+        "Deep Learning: A Bayesian Perspective"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "All Fields are Required",
+        "*\nFirst Name",
+        "*\nLast/Family Name",
+        "*\nEmail",
+        "*\nConfirm Password",
+        "Please wait..."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Bayesian Analysis",
+        "Publisher: International Society for Bayesian Analysis",
+        "Current Issue\n\n\n\n\nAll Issues\n\n\n\n\nAdvance Publication"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Current Issue",
+        "All Issues",
+        "Advance Publication"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "+ Add another field",
+        "All Titles\n\n\n\nChoose Title(s)\n\nSelect a title",
+        "Range\n\n\n\n\n\n\nSingle Year",
+        "Clear Form"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Vol.\u00a013\u00a0(2025)",
+        "Vol.\u00a012\u00a0(2024)",
+        "Vol.\u00a011\u00a0(2023)",
+        "Vol.\u00a010\u00a0(2022)",
+        "Vol.\u00a09\u00a0(2021)",
+        "Vol.\u00a08\u00a0(2020)",
+        "Vol.\u00a07\u00a0(2019)",
+        "Vol.\u00a06\u00a0(2018)",
+        "Vol.\u00a05\u00a0(2017)",
+        "Vol.\u00a04\u00a0(2016)",
+        "Vol.\u00a03\u00a0(2015)",
+        "Vol.\u00a02\u00a0(2014)",
+        "Vol.\u00a01\u00a0(2013)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "Journals",
+        "Topics",
+        "Information",
+        "Author Services",
+        "Initiatives",
+        "Notice",
+        "Notice",
+        "Journal Menu",
+        "Journal Browser",
+        "Need Help?",
+        "Share This Special Issue",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers",
+        "Share Link",
+        "Share"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.05555555555555555,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Dr.             Nilotpal Sanyal",
+        "E-Mail",
+        "Website"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Scilit",
+        "Preprints.org",
+        "Google Scholar"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "check are peer",
+        "blind   peer",
+        "reviewed open access semimonthly journal published by MDPI."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Proceedings Track",
+        "Workshop Track",
+        "Fast Track"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Bayesian Analysis",
+        "Publisher: International Society for Bayesian Analysis",
+        "Current Issue All Issues Advance Publication"
+      ],
+      "output_list_from_llm": [
+        "Bayesian Analysis"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Print Special Issue Flyer",
+        "Special Issue Editors",
+        "Special Issue Information",
+        "Keywords",
+        "Benefits of Publishing in a Special Issue",
+        "Published Papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "KEYWORDS/PHRASES",
+        "PUBLICATION TITLE:",
+        "PUBLICATION YEARS"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Deep Learning (architectures, generative models, theory, etc.)",
+        "Evaluation (methodology, meta studies, replicability and validity, human-in-the-loop, etc.)",
+        "Probabilistic Methods (Bayesian methods, graphical models, Monte Carlo methods, etc.)",
+        "Reinforcement Learning (decision and control, planning, hierarchical RL, robotics, etc.)"
+      ],
+      "output_list_from_llm": [
+        "Probabilistic Methods (Bayesian methods, graphical models, Monte Carlo methods, etc.)"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Probabilistic methods (bayesian methods, graphical models, monte carlo methods, etc.)",
+    "Bayesian analysis"
+  ],
+  "error": null
+}

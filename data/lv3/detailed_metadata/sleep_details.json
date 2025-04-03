@@ -1,0 +1,581 @@
+{
+  "level2_term": "sleep",
+  "all_urls": [
+    "https://academic.oup.com/sleepadvances/pages/calls-for-papers",
+    "https://www.sleephealthjournal.org/",
+    "https://www.sleepmeeting.org/call-for-abstracts/",
+    "https://jcsm.aasm.org/journal/jcsm",
+    "https://academic.oup.com/sleep",
+    "https://www.sciencedirect.com/journal/sleep-medicine",
+    "https://www.apa.org/pubs/journals/tra/sleep-trauma",
+    "https://onlinelibrary.wiley.com/journal/13652869",
+    "https://www.scitechnol.com/callforpapers-sleep-disorders-treatment-care.php",
+    "https://sleepresearchsociety.org/publications/journal-sleep/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Integrated sleep and circadian interventions",
+        "Machine learning, AI, and other emerging technologies in sleep medicine practice",
+        "Management of mild OSA",
+        "Metabolomics, genomics, and proteomic approaches towards an understanding of sleep",
+        "Obesity management: new medications and mechanisms of action"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Orexin pharmacology",
+        "Prescription medication and over-the-counter supplements in pediatric patients",
+        "Sleep health in women",
+        "Sleep, glymphatic system, and neurodegenerative disorders",
+        "Social/structural determinants and sex/gender-related sleep health disparities"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "An individual may be the presenting author on a maximum of two abstracts.",
+        "There can be no more than fifteen (15) authors per abstract.",
+        "Title",
+        "Authors and Institutions",
+        "Introduction",
+        "Methods",
+        "Results",
+        "Conclusion",
+        "Support (if any)",
+        "Brand names may not be used in abstract titles and are limited to one reference within the body.",
+        "References, tables, figures or any other graphics are not permitted."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Title",
+        "Authors and Institutions",
+        "Introduction",
+        "Methods",
+        "Results",
+        "Conclusion",
+        "Support (if any)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Important Deadlines",
+        "SLEEP 2025 Hot Topics",
+        "Abstract Categories",
+        "Additional Submission Information",
+        "Policies, Disclosures, and More",
+        "Embargo Policy",
+        "Questions?"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "View Basic and Translational Sleep and Circadian Science Details",
+        "View Clinical Sleep Science and Practice Details",
+        "Submission Guidelines",
+        "Submission Specifications",
+        "Submission Process",
+        "Copyright Information",
+        "Awards",
+        "Continuing Education",
+        "Accreditation Statement",
+        "Conflict of Interest Policy"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Call for Abstracts",
+        "Andrew Sampson",
+        "2025-03-07T13:49:10-06:00"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "I. Circadian rhythms",
+        "II. Cell and molecular biology and genetics",
+        "III. Neurobiology",
+        "IV. Learning, memory, and cognition",
+        "V. Peripheral physiology",
+        "VI. Emotion, stress, and trauma",
+        "VII. Behavior, performance, and fatigue",
+        "VIII. Sleep deprivation, loss, and extension",
+        "IX. Sleep and chronobiology across the lifespan",
+        "a. Development",
+        "b. Aging",
+        "X. Sleep and circadian disparities",
+        "XI. Human and translational models",
+        "XII. Innovations in technologies",
+        "XIII. Occupations and populations"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "I. Insomnia",
+        "a. Pathophysiology, epidemiology, diagnosis",
+        "b. Treatment",
+        "II.\u00a0 Sleep-related breathing disorders",
+        "a. Pathophysiology",
+        "b. Epidemiology/diagnosis",
+        "c. Treatment",
+        "III.\u00a0 Hypersomnia",
+        "a. Epidemiology and diagnosis",
+        "b. Treatment",
+        "IV. Circadian rhythm sleep-wake disorders",
+        "V. RLS, movement disorders, and parasomnias",
+        "VI. Adults: Sleep and aging, sleep and gender",
+        "VII. Pediatrics",
+        "a. Sleep-related breathing disorders",
+        "b. Insomnia and behavioral sleep problems",
+        "c. Sleep-related movement disorders",
+        "d. Other",
+        "VIII. Sleep and medical disorders",
+        "a. Sleep and cardiovascular comorbidities",
+        "b. Sleep and non-cardiovascular comorbidities",
+        "IX. Sleep and psychiatric disorders",
+        "a. Nightmares, abnormal dreams, and PTSD",
+        "b. Mood and anxiety disorders",
+        "c. Other",
+        "X. Sleep and neurologic disorders",
+        "XI. Healthcare delivery and implementation",
+        "XII. Education",
+        "XIII. Consumer technology",
+        "XIV. COVID-related clinical issues"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "programs/trainee",
+        "investigator",
+        "award/."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Psychological Trauma: Theory, Research, Practice, and Policy",
+        "Read sample articles",
+        "Pricing and subscription info",
+        "Call for papers: Toward a science of healing",
+        "Call for papers: Racial and ethnic trauma"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.4,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Popular topics",
+        "Highlights",
+        "Publication & Databases",
+        "APA Publishing Resources",
+        "Search APA Databases",
+        "Your growth",
+        "Standards and guidelines",
+        "For members",
+        "Education",
+        "Careers",
+        "Training highlights",
+        "Highlights",
+        "Advocacy"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": true,
+        "pattern_ratio": 0.07692307692307693,
+        "keyword_ratio": 0.15384615384615385
+      }
+    },
+    {
+      "items": [
+        "Sleep Apnea",
+        "Types/ Classification",
+        "Types/ Classification",
+        "Causes & Risk Factors",
+        "Diagnosis, Treatment & Management"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Aging and Sleep",
+        "Behavioral Sleep",
+        "Circadian Rhythm Sleep Disorder",
+        "Continuous Positive Airway Pressure",
+        "Delayed Sleep",
+        "Electroencephalogram",
+        "Epilepsy",
+        "Hypersomnia",
+        "Hypopnea Syndrome",
+        "Insomnia",
+        "Narcolepsy",
+        "Night Terrors",
+        "Obstructive Sleep Apnea",
+        "Physiology of Sleep",
+        "Restless Leg Syndrome",
+        "Sleep Apnea",
+        "Sleep Deprivation",
+        "Sleep Medicine",
+        "Sleep Paralysis",
+        "Sleep Snoring",
+        "Sleepwalking"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Track Your Manuscript\n\n\n\n\n\n\n\n\n\n\n\n\n\u00d7\nManuscript Status\n\n\n\nClose",
+        "Awards Nomination",
+        "Journal of Sleep Disorders: Treatment and Care peer review process verified at publons",
+        "Tweets by @\n\n\n\nTweet #AMSR"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Journal <i>SLEEP</i>",
+        "Andrew Sampson",
+        "2025-02-27T13:15:55-06:00"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Psychological Trauma: Theory, Research, Practice, and Policy",
+        "Read sample articles",
+        "Pricing and subscription info",
+        "Call for papers: Toward a science of healing",
+        "Call for papers: Racial and ethnic trauma"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Integrated sleep and circadian interventions",
+        "Machine learning, AI, and other emerging technologies in sleep medicine practice",
+        "Management of mild OSA",
+        "Metabolomics, genomics, and proteomic approaches towards an understanding of sleep",
+        "Obesity management: new medications and mechanisms of action"
+      ],
+      "output_list_from_llm": [
+        "Integrated sleep and circadian interventions",
+        "Machine learning, AI, and other emerging technologies in sleep medicine practice",
+        "Management of mild OSA",
+        "Metabolomics, genomics, and proteomic approaches towards an understanding of sleep"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Aging and Sleep",
+        "Behavioral Sleep",
+        "Circadian Rhythm Sleep Disorder",
+        "Continuous Positive Airway Pressure",
+        "Delayed Sleep",
+        "Electroencephalogram",
+        "Epilepsy",
+        "Hypersomnia",
+        "Hypopnea Syndrome",
+        "Insomnia",
+        "Narcolepsy",
+        "Night Terrors",
+        "Obstructive Sleep Apnea",
+        "Physiology of Sleep",
+        "Restless Leg Syndrome",
+        "Sleep Apnea",
+        "Sleep Deprivation",
+        "Sleep Medicine",
+        "Sleep Paralysis",
+        "Sleep Snoring",
+        "Sleepwalking"
+      ],
+      "output_list_from_llm": [
+        "Aging and Sleep",
+        "Behavioral Sleep",
+        "Circadian Rhythm Sleep Disorder",
+        "Delayed Sleep",
+        "Hypersomnia",
+        "Hypopnea Syndrome",
+        "Insomnia",
+        "Narcolepsy",
+        "Night Terrors",
+        "Obstructive Sleep Apnea",
+        "Physiology of Sleep",
+        "Restless Leg Syndrome",
+        "Sleep Apnea",
+        "Sleep Deprivation",
+        "Sleep Medicine",
+        "Sleep Paralysis",
+        "Sleep Snoring",
+        "Sleepwalking"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "View Basic and Translational Sleep and Circadian Science Details",
+        "View Clinical Sleep Science and Practice Details",
+        "Submission Guidelines",
+        "Submission Specifications",
+        "Submission Process",
+        "Copyright Information",
+        "Awards",
+        "Continuing Education",
+        "Accreditation Statement",
+        "Conflict of Interest Policy"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Orexin pharmacology",
+        "Prescription medication and over-the-counter supplements in pediatric patients",
+        "Sleep health in women",
+        "Sleep, glymphatic system, and neurodegenerative disorders",
+        "Social/structural determinants and sex/gender-related sleep health disparities"
+      ],
+      "output_list_from_llm": [
+        "Orexin pharmacology",
+        "Sleep health in women",
+        "Sleep, glymphatic system, and neurodegenerative disorders",
+        "Social/structural determinants and sex/gender-related sleep health disparities"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Integrated sleep and circadian interventions",
+    "Machine learning, ai, and other emerging technologies in sleep medicine practice",
+    "Metabolomics, genomics, and proteomic approaches towards an understanding of sleep",
+    "Aging and sleep",
+    "Behavioral sleep",
+    "Circadian rhythm sleep disorder",
+    "Delayed sleep",
+    "Obstructive sleep apnea",
+    "Physiology of sleep",
+    "Sleep deprivation",
+    "Sleep paralysis",
+    "Sleep snoring",
+    "Sleepwalking",
+    "Sleep health in women",
+    "Sleep, glymphatic system, and neurodegenerative disorders",
+    "Social/structural determinants and sex/gender-related sleep health disparities",
+    "Management of mild osa",
+    "Hypersomnia",
+    "Hypopnea syndrome",
+    "Insomnia",
+    "Narcolepsy",
+    "Night terrors",
+    "Restless leg syndrome",
+    "Orexin pharmacology"
+  ],
+  "error": null
+}

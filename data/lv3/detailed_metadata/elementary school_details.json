@@ -1,0 +1,1166 @@
+{
+  "level2_term": "elementary school",
+  "all_urls": [
+    "https://www.journals.uchicago.edu/journals/esj/call-for-submissions",
+    "https://www.journals.uchicago.edu/toc/esj/current",
+    "https://academic.oup.com/cs/pages/Call_For_Papers",
+    "https://cdn.ncte.org/nctefiles/sections/elementary/esjcall.pdf",
+    "https://www.teduconf.org/topics/",
+    "https://www.isls.org/wp-content/uploads/2022/04/JLS-SI-2024-Call-for-Papers.pdf",
+    "https://epjournal.org/callforsubmissions/",
+    "https://research.com/journal/elementary-school-journal",
+    "https://w2.csun.edu/cod/conference/journal-call-papers",
+    "https://www.nsta.org/science-and-children"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Issues",
+        "Advance articles",
+        "Author Guidelines",
+        "Submission Site",
+        "Purchase",
+        "Alerts",
+        "About Children & Schools",
+        "About the National Association of Social Workers",
+        "NASW Press",
+        "Editorial Board",
+        "Advertising and Corporate Services",
+        "Journals Career Network",
+        "Self-Archiving Policy",
+        "Dispatch Dates",
+        "Journals on Oxford Academic",
+        "Books on Oxford Academic"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Latest",
+        "Most Read",
+        "Most Cited"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Latest",
+        "Most Read",
+        "Most Cited"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Education Governance",
+        "Educational Leadership",
+        "Policy Analysis in Education",
+        "Education Funding",
+        "Education Reform",
+        "Equity and Access",
+        "International Education Policy",
+        "Educational Administration",
+        "Student Affairs",
+        "Education and Globalization",
+        "Teacher Education",
+        "Education and Management",
+        "Public Education Policy",
+        "Sports Education"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07142857142857142
+      }
+    },
+    {
+      "items": [
+        "Online and Blended Learning",
+        "Learning Management Systems (LMS)",
+        "Educational Apps",
+        "Virtual Reality (VR)",
+        "Augmented Reality (AR)",
+        "Gamification",
+        "Game-Based Learning",
+        "Adaptive Learning Platforms",
+        "E-learning",
+        "Machine Learning",
+        "Online Degree Programs",
+        "MOOCs",
+        "Open Educational Resources (OER)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07692307692307693
+      }
+    },
+    {
+      "items": [
+        "Differentiated Instruction Techniques",
+        "Universal Design for Learning (UDL)",
+        "Assistive Technology",
+        "Special Needs Students",
+        "Individualized Education Programs (IEPs)",
+        "Inclusive Classroom Management",
+        "Gifted and Talented Education (GATE)",
+        "English Language Learners (ELLs)",
+        "Language\u00a0Education /\u00a0ELT/\u00a0FLT",
+        "Learning disabilities",
+        "Learning Psychology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Teacher Training",
+        "Certification Programs",
+        "Mentoring and Coaching",
+        "Peer Observation and Feedback",
+        "Reflective Practice",
+        "Continuing Education",
+        "Leadership Development",
+        "Teacher Wellbeing",
+        "Teaching Talent Training"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "Formative Assessment",
+        "Authentic Assessment",
+        "Rubric Development",
+        "Standardized Testing",
+        "Performance-Based Assessment",
+        "ePortfolios for Assessment",
+        "Data-Driven Decision Making"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Competency-Based Curriculum",
+        "Interdisciplinary Curriculum",
+        "Culturally Responsive Curriculum",
+        "STEAM Education",
+        "Global Citizenship Education",
+        "Environmental Education",
+        "Career and Technical Education (CTE)",
+        "Curriculum, Research and Development"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "University Teaching and Learning",
+        "Graduate Student Teaching",
+        "Higher Education",
+        "Continuing Professional Education (CPE)",
+        "Rural Education",
+        "Continuous Education",
+        "Adult Education",
+        "Early Childhood Education",
+        "Home Education",
+        "Elementary Education",
+        "Primary Education",
+        "Secondary Education"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Science Education",
+        "Social Studies Education",
+        "Business Education",
+        "Music Education",
+        "Art Education",
+        "English as Foreign Language (EFL)",
+        "English as second Language (ESL)",
+        "Mathematics Education",
+        "Health Education"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Comparative Education Studies",
+        "Cross-Cultural Teaching and Learning",
+        "International Student Experiences",
+        "Global Citizenship Education",
+        "Education for Sustainable Development",
+        "Transnational Education Partnerships"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Counselor Education",
+        "Educational Foundations",
+        "Education Practice Trends",
+        "Physical Education",
+        "Teaching Materials",
+        "Courseware Construction",
+        "Education and Research Management"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Inquiry-Based Learning",
+        "Active Learning Strategies",
+        "Flipped Classroom Models",
+        "Experiential Learning Approaches",
+        "Collaborative Learning Techniques",
+        "Problem-Based Learning (PBL)",
+        "Project-Based Learning (PBL)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "16 May 2025",
+        "27 May 2025",
+        "Abstract",
+        "Full Paper",
+        "Poster",
+        "Help & Support",
+        "Online",
+        "Educational Policy and Leadership",
+        "Educational Technology",
+        "Special and Inclusive Education",
+        "Teacher Professional Development",
+        "Assessment and Evaluation",
+        "Curriculum Development",
+        "Lifelong Learning",
+        "Education Disciplines",
+        "Global Perspectives in Education",
+        "Education Theory and Practice",
+        "Pedagogy and Teaching Methods"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.05555555555555555,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "AbstractFormat",
+        "Full PaperFormat",
+        "PosterFormat",
+        "Help & SupportTEDUCONF",
+        "OnlineSubmission"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Educator Perspectives",
+        "Sign up",
+        "Log in",
+        "Copy shortlink",
+        "Report this content",
+        "Manage subscriptions"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Educator Perspectives",
+        "Sign up",
+        "Log in",
+        "Copy shortlink",
+        "Report this content",
+        "Manage subscriptions"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence (AI) & Machine Learning (ML)",
+        "Augmentative and Alternative Communications (AAC)",
+        "Blind/Low Vision",
+        "Captions & Transcription",
+        "Cognitive & Learning Disabilities",
+        "Deaf and Hard of Hearing",
+        "Design",
+        "Development",
+        "Digital Accessibility",
+        "Education",
+        "Emerging Technologies",
+        "Employment & Workplace",
+        "Engineering",
+        "Evaluation & Remediation",
+        "Gaming & Interactive Entertainment",
+        "Healthcare & Rehabilitation",
+        "Independent Living",
+        "Information & Communications Technology (ICT)",
+        "Law, Compliance, and Policy",
+        "Leadership & Strategy",
+        "Leisure & Travel",
+        "Mobile Technology",
+        "Mobility",
+        "Product Demonstration",
+        "Research",
+        "School-to-Work Transitioning",
+        "Video & Live Streaming",
+        "Virtual Reality (VR), Augmented Reality (AR), Cross/Mixed Reality (XR)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 28,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.10714285714285714,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.10714285714285714
+      }
+    },
+    {
+      "items": [
+        "Microsoft Word Document (DOC, DOCX)",
+        "Adobe Portable Document Format (PDF) Rich-Text Format (RTF)",
+        "UTF-8 or ASCII Text File (TXT)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Microsoft: Make your PowerPoint presentations accessible to people with disabilities",
+        "Adobe PDF Accessibility Overview",
+        "Apple: Create accessible documents, spreadsheets, or presentations with Pages, Numbers, or Keynote",
+        "Prezi: Creating accessible content in Prezi Design"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Product giveaways and or sales are prohibited.",
+        "There is a maximum of five (5) presenters per presentation.",
+        "There are no panel presentations allowed."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Schedule & Timeline",
+        "Topics",
+        "Submission Procedures & Guidelines",
+        "Manuscripts",
+        "Presentation Slides",
+        "Presentations Policies"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "Authors and Presenters",
+        "Paper Title",
+        "Abstract",
+        "Session Objective(s)",
+        "Audience",
+        "Audience Level",
+        "Session Summary",
+        "Topic Areas",
+        "A Note on Final Manuscripts"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Human Impacts",
+        "Latest Issues",
+        "Archives",
+        "Recent Issues"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Editorial Board",
+        "Guidelines for Authors",
+        "Manuscript Review Form",
+        "Call for Papers",
+        "Online Supplementary Files 2003-2021",
+        "Advertising in Science and Children",
+        "Library and Institutional Subscriptions"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "March/April 2025\n        Human Impacts",
+        "January/February 2025\n        Hard-to-Teach Concepts",
+        "November/December 2024\n        Expansive Science Teaching Practices",
+        "September/October 2024\n        Phenomenon-Driven Instruction",
+        "July/August 2024\n        Setting the Teacher Mindset",
+        "May/June 2024\n        Connecting Mathematics and Science"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal\nScience and Children\u2014March/April 2025",
+        "Journal\nScience and Children\u2014January/February 2025",
+        "Journal\nScience and Children\u2014November/December 2024",
+        "Journal\nScience and Children\u2014September/October 2024",
+        "Journal\nScience and Children\u2014July/August 2024",
+        "Journal\nScience and Children\u2014May/June 2024",
+        "Journal\nScience and Children\u2014March/April 2024",
+        "Journal\nScience and Children\u2014January/February 2024",
+        "Journal\nScience and Children\u2014Fall 2023\nSpecial Double Issue\u2014Eclipses Across AmericaFall 2023...",
+        "Journal\nScience and Children\u2014July/August 2022\n\r\nVolume 59, Number 6\r\n... Literacy",
+        "Journal\nScience and Children\u2014May/June 2021\n...",
+        "Journal\nScience and Children\u2014March/April 2021\n...",
+        "Journal\nScience and Children\u2014January/February 2021\n\r\nVolume 58, Number 3...",
+        "Journal\nScience and Children\u2014April/May 2020\n\r\nEnvironmental Health Literacy\r\n\r\nVolume 57, No. 8\r\n...",
+        "Journal\nScience and Children\u2014March 2020\n\r\nVolume 57, Number 7\r\n\r\nMindful Modeling\r\n\r\n&nbsp;\r\n...",
+        "Journal\nScience and Children\u2014February 2020\n\r\nVolume 57, Number 6...",
+        "Journal\nScience and Children February 2013"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014Fall 2023",
+        "Special Double Issue\u2014Eclipses Across AmericaFall 2023..."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014July/August 2023",
+        "Biology Evolution Life Science"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014March/April 2023",
+        "Early Childhood Elementary Administration Curriculum NGSS"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014November/December 2022",
+        "Astronomy Earth & Space Science"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014July/August 2022",
+        "Volume 59, Number 6\r\n...",
+        "Literacy"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014May/June 2022",
+        "Volume 59\r\n\r\nIssue 5\r\n\r\nActivities and Investigations\r\n...",
+        "Early Childhood Elementary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014September/October 2021",
+        "Three-Dimensional Learning"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014July/August 2021",
+        "Early Childhood Elementary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014January/February 2021",
+        "Volume 58, Number 3..."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014November/December 2020",
+        "Volume 58, Number 2\r\n\r\nEarth and Space Science for Young Learners\r\n..."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014September/October 2020",
+        "Volume 58, Number 1\r\n\r\nBeyond the Field Trip\r\n...",
+        "Early Childhood Elementary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014July/August 2020",
+        "Volume 57, No. 9\r\n\r\nEngaging Families...",
+        "Early Childhood Elementary"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014April/May 2020",
+        "Environmental Health Literacy\r\n\r\nVolume 57, No. 8\r\n..."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014March 2020",
+        "Volume 57, Number 7\r\n\r\nMindful Modeling\r\n\r\n&nbsp;\r\n..."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal",
+        "Science and Children\u2014February 2020",
+        "Volume 57, Number 6..."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "winning, peer",
+        "reviewed practitioner journal for elementary",
+        "level science teachers, sign up for new article alerts, and more!"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Product giveaways and or sales are prohibited.",
+        "There is a maximum of five",
+        "There are no panel presentations allowed."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Schedule & Timeline",
+        "Topics",
+        "Submission Procedures & Guidelines",
+        "Manuscripts",
+        "Presentation Slides",
+        "Presentations Policies"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Authors and Presenters",
+        "Paper Title",
+        "Abstract",
+        "Session Objective(s)",
+        "Audience",
+        "Audience Level",
+        "Session Summary",
+        "Topic Areas",
+        "A Note on Final Manuscripts"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Microsoft: Make your PowerPoint presentations accessible to people with disabilities",
+        "Adobe PDF Accessibility Overview",
+        "Apple: Create accessible documents, spreadsheets, or presentations with Pages, Numbers, or Keynote",
+        "Prezi: Creating accessible content in Prezi Design"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "winning, peer",
+        "reviewed practitioner journal for elementary",
+        "level science teachers, sign up for new article alerts, and more!"
+      ],
+      "output_list_from_llm": [
+        "reviewed practitioner journal for elementary"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Reviewed practitioner journal for elementary"
+  ],
+  "error": null
+}

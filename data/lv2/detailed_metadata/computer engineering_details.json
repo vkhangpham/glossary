@@ -1,0 +1,506 @@
+{
+  "level1_term": "computer engineering",
+  "all_urls": [
+    "https://www.ece.cornell.edu/ece/research/strategic-research-areas",
+    "https://engineering.tamu.edu/cse/research/areas/index.html",
+    "https://engineering.jhu.edu/ece/research/",
+    "https://eceweb.rice.edu/research/key-research-areas",
+    "https://ece.engineering.gwu.edu/research-areas",
+    "https://ceas.uc.edu/academics/departments/electrical-computer-engineering/research.html",
+    "https://ece.illinois.edu/research/areas",
+    "https://engineering.buffalo.edu/computer-science-engineering/research.html",
+    "https://ece.engin.umich.edu/research/research-areas/",
+    "https://www.ece.rutgers.edu/research",
+    "https://engineering.tamu.edu/ce/research/index.html",
+    "https://compeng.columbia.edu/research-10",
+    "https://www.ece.cmu.edu/research/index.html",
+    "https://ece.umd.edu/research",
+    "https://www.ece.ucr.edu/research",
+    "https://ece.charlotte.edu/research/research-areas/",
+    "https://www.ece.uh.edu/research",
+    "https://minghsiehece.usc.edu/research/",
+    "https://ece.northeastern.edu/coe-research/",
+    "https://engineering.ucsc.edu/departments/computer-science-and-engineering/research/",
+    "https://engineering.purdue.edu/ECE/Research/Areas",
+    "https://www.engr.colostate.edu/ece/research/",
+    "https://www.ece.ucsd.edu/faculty-research/ece-research-areas",
+    "https://www.mccormick.northwestern.edu/computer-science/research/areas/",
+    "https://ece.ncsu.edu/research/",
+    "https://cse.umn.edu/ece/research-ece",
+    "https://engineering.virginia.edu/department/electrical-and-computer-engineering/ece-research",
+    "https://ece.duke.edu/impact/research/",
+    "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering/ece-research-areas",
+    "https://engineering-computer-science.wright.edu/computer-science-and-engineering/areas-of-research"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Acoustics, Language and Speech Processing",
+        "Artificial Intelligence and Data Science",
+        "Computer Engineering and Microelectronics",
+        "Control, Networks and Systems",
+        "Image Processing and Analysis",
+        "Language and Speech Processing",
+        "Solid State Electronics and Photonics",
+        "Sustainable Energy",
+        "Photonics and Optoelectronics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2222222222222222,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Secondary Navigation",
+        "Info For Navigation",
+        "Utility Navigation",
+        "Site Navigation",
+        "Info For Navigation",
+        "You are here:",
+        "Research Navigation",
+        "Research Areas",
+        "Among our research activities...",
+        "Stay Connected",
+        "Department of Electrical and Computer Engineering",
+        "Footer Navigation",
+        "Legal Navigation",
+        "Site Menu",
+        "Site Navigation",
+        "Utility Navigation",
+        "Secondary Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.17647058823529413,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.23529411764705882
+      }
+    },
+    {
+      "items": [
+        "The CRA supports the CSRankings report because its evaluative criteria meet the 'GOTO' standard:",
+        "Good data.\u00a0 Data have been cleaned and curated.",
+        "Open.\u00a0 Data available, regarding attributes measured, at least for verification.",
+        "Transparent.\u00a0 Process and methodologies are entirely transparent.",
+        "Objective.\u00a0 Based on measurable attributes.",
+        "For more details, see Department Rankings, by H.V. Jagadish."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "a multidisciplinary academic",
+        "industrial partnership that's helping to make self",
+        "driving cars safer, cleaner, and more efficient."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Energy",
+        "Health care & quality of life",
+        "Mobile systems",
+        "Smart infrastructure"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Nanotechnology",
+        "Storage systems",
+        "Intelligent physical systems",
+        "Data/network science",
+        "Secure systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "College of Engineering",
+        "Application domains",
+        "Systems & technologies",
+        "Theoretical & technological foundations"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Investigation and development of communication and signal processing theories",
+        "Algorithms and systems for wireless and network communications",
+        "Video and multimedia technologies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Design and implementation of hardware and software systems",
+        "Computer architecture, VLSI design, real-time and embedded systems",
+        "Networked systems from small scales (e.g., Internet of Things) to large scales (e.g., data centers)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Theoretical, computational and experimental investigation of nanostructures",
+        "Development of new bio- and opto-electronic materials, devices and circuits",
+        "MEMS and photonics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Development and demonstration of smart grid applications",
+        "Power system analysis and optimization",
+        "Electricity market design",
+        "Renewable energy integration",
+        "Power system security"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence & Machine Learning",
+        "Metamaterials",
+        "Quantum Computing",
+        "Nanoelectronic Materials & Devices",
+        "Sensing & Imaging",
+        "Trustworthy Computing",
+        "in new research awards",
+        "startups spun-out by Duke ECE faculty",
+        "of our faculty are IEEE Fellows",
+        "Agile Waveform Design",
+        "Athena",
+        "CAMMS",
+        "EURIQA",
+        "Spectator Qubit MURI",
+        "X-ray Diffraction Scanner",
+        "WaSH-AID",
+        "Water is Scarce. How Can We Safely Reuse it?",
+        "Creating a Quantum Computer Network",
+        "Huanqian Loh Selected for 2025 Sloan Research Fellowship",
+        "Reevaluating the Architectures of Measurement",
+        "Co-Designing Tomorrow\u2019s Computers",
+        "Catching Waves",
+        "Higher Efficiency, Longer Lives",
+        "Engineering Systems for Future Computing",
+        "The Intersection of Electrical Engineering and Materials Design",
+        "Duke ECE Newsletter"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.23076923076923078,
+        "length_consistency": true,
+        "pattern_ratio": 0.038461538461538464,
+        "keyword_ratio": 0.2692307692307692
+      }
+    },
+    {
+      "items": [
+        "Athena\n\n\nNSF AI Institute for Edge Computing Leveraging Next-Generation Networks",
+        "ASIC\n\n\nNSF IUCRC for Alternative Sustainable and Intelligent Computing",
+        "CAMMS\n\n\nCoded Aperture Miniature Mass Spectrometer",
+        "CMIP\n\n\nCenter for Metamaterials and Integrated Plasmonics",
+        "DQC\n\n\nDuke Quantum Center",
+        "EURIQA\n\n\nError-corrected Universal Reconfigurable Ion-trap Quantum Archetype",
+        "STAQ\n\n\nSoftware-Tailored Architecture for Quantum Codesign",
+        "Spectator Qubit MURI\n\n\nMultidisciplinary University Research Initiative",
+        "X-ray Diffraction Scanner",
+        "WaSH-AID\n\n\nCenter for Water, Sanitation, Hygiene and Infectious Disease"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "7/26/21\t\t\t\t\t\t\nPratt School of Engineering",
+        "Catching Waves",
+        "Q&A with ECE professor and metamaterials pioneer, Steve Cummer"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "6/21/21\t\t\t\t\t\t\nPratt School of Engineering",
+        "Higher Efficiency, Longer Lives",
+        "A Q&A with Duke ECE professor and computer architecture expert Daniel Sorin"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Design and implementation of hardware and software systems",
+        "Computer architecture, VLSI design, real-time and embedded systems",
+        "Networked systems from small scales (e.g., Internet of Things) to large scales (e.g., data centers)"
+      ],
+      "output_list_from_llm": [
+        "Design and implementation of hardware and software systems",
+        "Computer architecture, VLSI design, real-time and embedded systems",
+        "Networked systems from small scales (e.g., Internet of Things) to large scales (e.g., data centers)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Nanotechnology",
+        "Storage systems",
+        "Intelligent physical systems",
+        "Data/network science",
+        "Secure systems"
+      ],
+      "output_list_from_llm": [
+        "Storage systems",
+        "Intelligent physical systems",
+        "Data/network science",
+        "Secure systems"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Development and demonstration of smart grid applications",
+        "Power system analysis and optimization",
+        "Electricity market design",
+        "Renewable energy integration",
+        "Power system security"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Investigation and development of communication and signal processing theories",
+        "Algorithms and systems for wireless and network communications",
+        "Video and multimedia technologies"
+      ],
+      "output_list_from_llm": [
+        "Investigation and development of communication and signal processing theories",
+        "Algorithms and systems for wireless and network communications",
+        "Video and multimedia technologies"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Theoretical, computational and experimental investigation of nanostructures",
+        "Development of new bio- and opto-electronic materials, devices and circuits",
+        "MEMS and photonics"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Acoustics, Language and Speech Processing",
+        "Artificial Intelligence and Data Science",
+        "Computer Engineering and Microelectronics",
+        "Control, Networks and Systems",
+        "Image Processing and Analysis",
+        "Language and Speech Processing",
+        "Solid State Electronics and Photonics",
+        "Sustainable Energy",
+        "Photonics and Optoelectronics"
+      ],
+      "output_list_from_llm": [
+        "Artificial Intelligence and Data Science",
+        "Computer Engineering and Microelectronics",
+        "Control, Networks and Systems",
+        "Image Processing and Analysis"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Computer engineering and microelectronics",
+    "Design and implementation of hardware and software systems",
+    "Computer architecture, vlsi design, real-time and embedded systems",
+    "Networked systems from small scales (e.g., internet of things) to large scales (e.g., data centers)",
+    "Storage systems",
+    "Intelligent physical systems",
+    "Data/network science",
+    "Secure systems",
+    "Investigation and development of communication and signal processing theories",
+    "Algorithms and systems for wireless and network communications",
+    "Video and multimedia technologies",
+    "Artificial intelligence and data science",
+    "Control, networks and systems",
+    "Image processing and analysis"
+  ],
+  "error": null
+}

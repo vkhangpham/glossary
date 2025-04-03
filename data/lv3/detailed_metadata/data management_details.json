@@ -1,0 +1,1352 @@
+{
+  "level2_term": "data management",
+  "all_urls": [
+    "https://codata.org/call-for-papers-data-management-planning-across-disciplines-and-infrastructures/",
+    "https://dl.acm.org/journal/jdiq/call-for-papers",
+    "http://www.wikicfp.com/cfp/call?conference=data%20management",
+    "https://2024.sigmod.org/calls_papers_sigmod_research.shtml",
+    "https://www.sciencedirect.com/journal/data-and-knowledge-engineering/about/call-for-papers",
+    "https://www.dcc.ac.uk/events/idcc17/call-papers",
+    "https://pubsonline.informs.org/page/ijds/calls-for-papers",
+    "https://sn.committees.comsoc.org/call-for-papers/the-26th-ieee-international-conference-on-mobile-data-management-mdm-2025/",
+    "https://www.emeraldgrouppublishing.com/publish-with-us/calls-for-papers",
+    "https://eurogoos.eu/current/call-for-papers-international-journal-of-data-science-and-analytics-blue-cloud-2026/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Research papers",
+        "Experience papers",
+        "Survey papers",
+        "Challenge papers",
+        "On the Horizon papers",
+        "Special Issue papers"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 1.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Data quality metrics and frameworks",
+        "Data profiling",
+        "Error and anomaly detection",
+        "Synthetic data and data synthesis",
+        "Data provenance",
+        "Probabilistic, incomplete and uncertain data",
+        "Big data quality"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "Data preparation and wrangling",
+        "Entity matching, entity resolution, record linkage",
+        "Data fusion",
+        "Schema and ontology matching",
+        "Data repair, augmentation, and imputation",
+        "Data re-purposing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data mining",
+        "Data quality and machine learning",
+        "Data quality and generative AI",
+        "Data quality and representation learning",
+        "Intelligent systems",
+        "Automated planning and reasoning",
+        "Federated learning",
+        "Data poisoning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.125
+      }
+    },
+    {
+      "items": [
+        "Data quality standardization",
+        "Responsible AI, bias and fairness",
+        "Data quality policies and standards",
+        "Legal aspects of data quality",
+        "Maturity models",
+        "Human-computer interaction",
+        "Behavioral aspects of data quality",
+        "Data privacy and access control",
+        "Security evaluation",
+        "Economics of data quality",
+        "IQ education and curriculum development"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data ecosystems",
+        "Data acquisition",
+        "Metadata management",
+        "Web data management",
+        "Semantic web and ontologies",
+        "Information extraction",
+        "Information foraging",
+        "Multimodal data integration",
+        "Knowledge graphs",
+        "Knowledge representation and reasoning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Laboratory experimentation",
+        "Healthcare and clinical data",
+        "Financial data",
+        "Social media data",
+        "Multimedia and unstructured data",
+        "Sensors and streaming data, IoT",
+        "Robotic process automation",
+        "Business process management",
+        "Process mining"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Relevance to Data and Information Quality.",
+        "Suitable grounding in theory and the current literature",
+        "Appropriate research methods",
+        "Readability and organization of the manuscript"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Title: Mandatory \"Experience:\" prefix in the title.",
+        "Page limit: 10 pages with an option of an online-only supplement.",
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "Does the paper specify the data quality problem clearly?",
+        "Does the paper explore multiple aspects of the current solutions?",
+        "Do the authors provide details of the shortcomings?",
+        "Do the authors provide insights into solutions or do they provide a solution? Is it convincing?",
+        "How generalizable is the problem and solution beyond this specific scenario and domain?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Journal Topics",
+        "Article Types",
+        "Categories",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Data Management\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Data Management\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "Data Management",
+        "(ordered by deadline)",
+        "Event",
+        "ICISPP 2025",
+        "Jul 12, 2025 - Jul 14, 2025",
+        "ICSIP 2025",
+        "Jul 12, 2025 - Jul 14, 2025",
+        "IEEE ICAIBD 2025",
+        "May 23, 2025 - May 26, 2025",
+        "ICISPC 2025",
+        "Jul 11, 2025 - Jul 13, 2025",
+        "AIBC 2025",
+        "Sep 17, 2025 - Sep 19, 2025",
+        "BDE--EI 2025",
+        "Sep 24, 2025 - Sep 26, 2025",
+        "ICIME 2025",
+        "Sep 24, 2025 - Sep 26, 2025",
+        "BIOTC--EI 2025",
+        "Jun 25, 2025 - Jun 27, 2025",
+        "ICTC--SCI 2025",
+        "Aug 22, 2025 - Aug 24, 2025",
+        "ICBCT--EI 2025",
+        "Aug 15, 2025 - Aug 17, 2025",
+        "SSTD 2025",
+        "Aug 25, 2025 - Aug 27, 2025",
+        "ICBDM--EI 2025",
+        "Oct 13, 2025 - Oct 15, 2025",
+        "IDEAS 2025",
+        "Jul 14, 2025 - Jul 6, 2025",
+        "IDEAS 2025",
+        "Jul 14, 2025 - Jul 6, 2025",
+        "SISAP 2025",
+        "Oct 1, 2025 - Oct 3, 2025",
+        "IMMS 2025",
+        "Oct 24, 2025 - Oct 26, 2025",
+        "ICBDE--EI 2025",
+        "Oct 25, 2025 - Oct 27, 2025",
+        "AEIS--EI 2025",
+        "Dec 7, 2025 - Dec 9, 2025",
+        "ICCNS 2025",
+        "Dec 19, 2025 - Dec 21, 2025",
+        "Expired CFPs",
+        "DATA 2025",
+        "Jun 10, 2025 - Jun 12, 2025",
+        "first |\t\t\t\n\n\t\t\t\t previous \n\n\t\t\t\t| Page 1 |\n\n        \nnext\n\n\t\t\t| last"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 47,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0851063829787234,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.02127659574468085
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "ICISPP 2025",
+        "Jul 12, 2025 - Jul 14, 2025",
+        "ICSIP 2025",
+        "Jul 12, 2025 - Jul 14, 2025",
+        "IEEE ICAIBD 2025",
+        "May 23, 2025 - May 26, 2025",
+        "ICISPC 2025",
+        "Jul 11, 2025 - Jul 13, 2025",
+        "AIBC 2025",
+        "Sep 17, 2025 - Sep 19, 2025",
+        "BDE--EI 2025",
+        "Sep 24, 2025 - Sep 26, 2025",
+        "ICIME 2025",
+        "Sep 24, 2025 - Sep 26, 2025",
+        "BIOTC--EI 2025",
+        "Jun 25, 2025 - Jun 27, 2025",
+        "ICTC--SCI 2025",
+        "Aug 22, 2025 - Aug 24, 2025",
+        "ICBCT--EI 2025",
+        "Aug 15, 2025 - Aug 17, 2025",
+        "SSTD 2025",
+        "Aug 25, 2025 - Aug 27, 2025",
+        "ICBDM--EI 2025",
+        "Oct 13, 2025 - Oct 15, 2025",
+        "IDEAS 2025",
+        "Jul 14, 2025 - Jul 6, 2025",
+        "IDEAS 2025",
+        "Jul 14, 2025 - Jul 6, 2025",
+        "SISAP 2025",
+        "Oct 1, 2025 - Oct 3, 2025",
+        "IMMS 2025",
+        "Oct 24, 2025 - Oct 26, 2025",
+        "ICBDE--EI 2025",
+        "Oct 25, 2025 - Oct 27, 2025",
+        "AEIS--EI 2025",
+        "Dec 7, 2025 - Dec 9, 2025",
+        "ICCNS 2025",
+        "Dec 19, 2025 - Dec 21, 2025",
+        "Expired CFPs",
+        "DATA 2025",
+        "Jun 10, 2025 - Jun 12, 2025"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 42,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.023809523809523808
+      }
+    },
+    {
+      "items": [
+        "Homepage",
+        "Reproducibility",
+        "Inclusion and Diversity",
+        "Conference Gallery"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Affiliated Workshops",
+        "New Researcher Symposium",
+        "SIGMOD Programming Contest",
+        "DEI Events",
+        "PODS Special Event",
+        "Sponsor Talks"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Organization",
+        "SIGMOD PC",
+        "PODS PC",
+        "SIGMOD Industry PC",
+        "SIGMOD Demo PC",
+        "SIGMOD Tutorial PC",
+        "Sponsor Opportunities",
+        "ACM SIGMOD Online",
+        "Registrations",
+        "Conference Venue",
+        "Poster Instructions",
+        "Session Chair & Presenter Instructions",
+        "Student Support Scholarships",
+        "Accomodation",
+        "Chilean Visa",
+        "About Chile",
+        "Chile Tourism",
+        "Child Care",
+        "Arrival in Chile",
+        "Banquet"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Detailed Program",
+        "Industrial Papers",
+        "Keynote Talks",
+        "Tutorials",
+        "Demo Papers",
+        "Panel Discussions",
+        "Awards",
+        "Poster Allocation",
+        "SIGMOD Proceedings"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.2222222222222222,
+        "keyword_ratio": 0.7777777777777778
+      }
+    },
+    {
+      "items": [
+        "Detailed Program",
+        "Research Papers",
+        "Keynote Talk",
+        "Invited Tutorials",
+        "Awards",
+        "Gems of PODS",
+        "PODS Special Event",
+        "Poster Allocation",
+        "PODS Proceedings"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "items": [
+        "Tracks",
+        "Topics of Interest",
+        "Importand Dates",
+        "Presentation and Dissemination",
+        "Proceedings Availability",
+        "Submission Guidelines",
+        "Anonymity Requirements",
+        "Artifacts and Reproducibility",
+        "Conflict of Interest (updated in 2024)",
+        "Reviewing Process and Revisions"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Benchmarking, database monitoring, performance tuning, and self-driving databases",
+        "Blockchains and distributed ledgers",
+        "Cloud data management and HPC",
+        "Crowdsourced and collaborative data management",
+        "Data exploration, visualization, query languages, and user interfaces",
+        "Data integration, information extraction, and schema matching",
+        "Data models and semantics",
+        "Data provenance and workflows",
+        "Data quality, data cleaning, and database usability",
+        "Data security, privacy, and access control",
+        "Data sparsity, boosting, simulated data, and digital twins",
+        "Data systems for knowledge discovery, data mining, machine learning, and artificial intelligence",
+        "Data warehousing, OLAP, SQL analytics",
+        "Distributed, decentralized, and parallel data management",
+        "Embedded databases, IoT and Sensor networks",
+        "Emerging hardware for data management",
+        "Graphs, social networks, web data, and semantic web",
+        "Machine learning and artificial intelligence for data management and data systems",
+        "Multimedia and information retrieval",
+        "Natural language processing for databases",
+        "Query processing and optimization",
+        "Responsible data management and data fairness",
+        "Semistructured, partially structured, and unstructured data",
+        "Spatial  and temporal data management",
+        "Storage, indexing, and physical database design",
+        "Streams and complex event processing",
+        "Transaction processing",
+        "Uncertain, probabilistic, and approximate databases",
+        "User-centric and human-in-the-loop data management"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 29,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.06896551724137931,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.10344827586206896
+      }
+    },
+    {
+      "items": [
+        "Authors' names and\naffiliations must not appear on the title page or elsewhere in the submission.",
+        "Funding sources must not be\nacknowledged anywhere in the submission.",
+        "The paper\u2019s file name must not identify\nthe authors of the submission."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "The PC member is a co-author of the paper.",
+        "The PC member has been a co-worker in the same company or university within the past five years.1",
+        "The PC member has been a collaborator within the past five years.2",
+        "The PC member is a relative or close personal friend of the author."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "VENUE MAPS",
+        "Welcome",
+        "Special Events",
+        "Organization",
+        "Participant Information",
+        "PROGRAM OVERVIEW",
+        "SIGMOD Program",
+        "PODS Program",
+        "Calls For Submissions",
+        "NEW IN 2024",
+        "TABLE OF CONTENTS",
+        "TRACKS",
+        "TOPICS OF INTEREST",
+        "IMPORTANT DATES",
+        "PRESENTATION AND DISSEMINATION",
+        "PROCEEDINGS AVAILABILITY",
+        "SUBMISSION GUIDELINES",
+        "DUPLICATE SUBMISSIONS AND NOVELTY REQUIREMENT",
+        "ACM PUBLICATIONS POLICY ON RESEARCH INVOLVING HUMAN PARTICIPANTS\nAND SUBJECTS",
+        "LENGTH, FILE TYPE, AND FORMATTING",
+        "INCLUSION AND DIVERSITY IN WRITING",
+        "ACM POLICY ON AUTHORSHIP REQUIREMENTS",
+        "ANONYMITY REQUIREMENTS FOR ALL RESEARCH TRACK SUBMISSIONS",
+        "ARTIFACTS and REPRODUCIBILITY",
+        "CONFLICTS OF INTEREST (Updated in 2024)",
+        "REVIEWING PROCESS AND REVISIONS"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.19230769230769232,
+        "length_consistency": true,
+        "pattern_ratio": 0.15384615384615385,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "column ACM Proceedings Format, using either the sample",
+        "sigconf.tex or Interim layout.docx template provided at https://www.acm.org/publications/proceedings",
+        "column template available at https://www.overleaf.com/latex/templates/association",
+        "computing",
+        "machinery",
+        "proceedings",
+        "template/bmvfhcdnxfty",
+        "column spacing,",
+        "represented groups (URGs) in computing. Be vigilant",
+        "Please see https://www.acm.org/diversity",
+        "inclusion/words",
+        "matter for inclusive alternatives for some of the terms commonly used in",
+        "anonymity requirement.",
+        "Smith.dvi, your authorship",
+        "publication server, such as arXiv, the authors do not need to remove it before submitting to SIGMOD.",
+        "author of the paper.",
+        "worker in the same company or university within the past five years.1",
+        "doctoral advisor, no matter how long ago.",
+        "doctoral advisor, no matter how long ago."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 19,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.10526315789473684,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3157894736842105
+      }
+    },
+    {
+      "items": [
+        "column spacing,",
+        "represented groups (URGs) in computing. Be vigilant",
+        "Please see https://www.acm.org/diversity",
+        "inclusion/words",
+        "matter for inclusive alternatives for some of the terms commonly used in",
+        "anonymity requirement.",
+        "Smith.dvi, your authorship",
+        "publication server, such as arXiv, the authors do not need to remove it before submitting to SIGMOD.",
+        "author of the paper.",
+        "worker in the same company or university within the past five years.1",
+        "doctoral advisor, no matter how long ago.",
+        "doctoral advisor, no matter how long ago."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Governance principles for curating data as a public good",
+        "Data management and stewardship planning; from compliance to \u2018active DMPs\u2019",
+        "Measuring open data compliance: what metrics, and for what outputs?",
+        "Addressing copyright challenges for text and data mining",
+        "Evaluating data policy: is it delivering the outcomes we want?"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Competence and capability models for open science and data science",
+        "Curriculum development and training initiatives to bridge the data and domain skills gap",
+        "Recognising data and software skills in academic and professional career development"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Managing de-identified data from analysis to archiving",
+        "Providing services for sensitive data at the institutional level",
+        "Ethical challenges of sensitive data in multi-disciplinary settings",
+        "Making sensitive data safely reusable: approaches and lessons learned"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Measuring data value for scholarly, scientific, business or social benefit",
+        "Using citizen participation to inspire reusable digital resources",
+        "Challenges in constructing community data resources and reference collections",
+        "Generic solutions for managing disciplinary metadata"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Metadata for machine actionable service catalogues and discovery",
+        "Supporting users to find data from domains unfamiliar to them",
+        "Skills and rewards in data journals and data journalism",
+        "Challenges of publishing corpora in the humanities and social sciences",
+        "Supporting researchers on data mining and data visualization"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Overview",
+        "Policy harmonisation and monitoring for a joined-up data world",
+        "Capacity development for open science skills and readiness",
+        "Reproducibility and provenance across research workflows",
+        "Sensitivity, ethical data management",
+        "Reusability of digital collections",
+        "Discoverability and data publishing",
+        "Accommodation",
+        "Birds of a Feather (BoFs)",
+        "Call for Papers",
+        "Demonstrations",
+        "News from IDCC 2017",
+        "Posters",
+        "Programme",
+        "Registration",
+        "Research & Practice Papers",
+        "Social Events",
+        "Speakers",
+        "Submission Dates",
+        "Submissions",
+        "Supporters",
+        "Workshop submissions",
+        "Workshops"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 23,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.21739130434782608,
+        "length_consistency": true,
+        "pattern_ratio": 0.13043478260869565,
+        "keyword_ratio": 0.34782608695652173
+      }
+    },
+    {
+      "items": [
+        "Mobile Crowd",
+        "Sourcing and Crowd",
+        "Sensing",
+        "Mobility Simulation",
+        "Indexing, Optimization and Query Processing for Moving Objects/Users",
+        "Data Management for Internet of Things (IoT) and Sensor Systems",
+        "Data Quality: Methodologies, Metrics, Algorithms",
+        "Security and Privacy"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Theoretical Foundations of Data",
+        "intensive Mobile Computing",
+        "Middleware and Tools for Mobile and Pervasive Computing",
+        "Stream Processing in Mobile/Sensor Networks",
+        "Mobile Cloud Computing and Data Management in the Mobile Cloud",
+        "Context",
+        "Aware Computing for Intelligent Mobile Services",
+        "Edge Computing for Mobility Data",
+        "Mobile Recommender Systems and Location",
+        "Based Social Networks"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Spatio",
+        "Temporal Analysis",
+        "Mobility",
+        "Service (MaaS) Analytics",
+        "Behavioral/Activity Sensing and Analytics",
+        "Mobile Data Knowledge Representation",
+        "Learned Indexing, Learned Query Optimisation for Mobile Data",
+        "Visual Analytics",
+        "Responsible AI for Mobile Data: Explainability (XAI), Privacy",
+        "Preserving AI, Ethical Use of AI, Fairness, Interpretability, Safety",
+        "Federated Learning over Mobile Edge Data Sources"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.18181818181818182
+      }
+    },
+    {
+      "items": [
+        "Connected Cars, Intelligent Transportation Systems, Smart Spaces",
+        "Routing, Personalized Routing, Eco",
+        "Routing, Routing for Electrical Vehicles",
+        "Transportation",
+        "Service, Mobility",
+        "Service",
+        "Augmented Reality Systems",
+        "Data Economy, Incentive Mechanisms, Reputation Systems, and Game",
+        "theoretic Approaches",
+        "Connections to other Technologies (e.g., Blockchain) and Domains (e.g., Social Sciences).",
+        "Digital Twins and Industrial Metaverses"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.09090909090909091
+      }
+    },
+    {
+      "items": [
+        "Utility Menu",
+        "Mega Menu",
+        "Literature Synthesis on Contemporary Service Experiences",
+        "Advancing Sustainable Logistics and Trade in a Digital Era",
+        "The Use of Social Media in Talent Acquisition and Talent Management",
+        "Sustainable Corporate Governance in the Era of Digitalization",
+        "Calls for books",
+        "Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pagination",
+        "Filter by",
+        "Show filter"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Accounting finance & economics",
+        "Business, management & strategy",
+        "Education",
+        "Engineering",
+        "Health & social care",
+        "HR, learning & organisation studies",
+        "Information & knowledge management",
+        "Library & information sciences",
+        "Marketing",
+        "Operations, logistics & quality",
+        "Property management & built environment",
+        "Public policy & environmental management",
+        "Tourism & hospitality management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1 No poverty",
+        "2 Zero hunger",
+        "3 Good health and well-being",
+        "4 Quality education",
+        "5 Gender equality",
+        "6 Clean water & sanitation",
+        "7 Affordable & clean energy",
+        "8 Decent work & economic growth",
+        "9 Industry, innovation & infrastructure",
+        "10 Reduced inequalities",
+        "11 Sustainable cities & communities",
+        "12 Responsible consumption & production",
+        "13 Climate action",
+        "14 Life below water",
+        "15 Life on land",
+        "16 Peace, justice & strong intuitions",
+        "17 Partnerships for the goals"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Accounting finance & economics",
+        "Business, management & strategy",
+        "Education",
+        "Engineering",
+        "Health & social care",
+        "HR, learning & organisation studies",
+        "Information & knowledge management",
+        "Library & information sciences",
+        "Marketing",
+        "Operations, logistics & quality",
+        "Property management & built environment",
+        "Public policy & environmental management",
+        "Tourism & hospitality management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1 No poverty",
+        "2 Zero hunger",
+        "3 Good health and well-being",
+        "4 Quality education",
+        "5 Gender equality",
+        "6 Clean water & sanitation",
+        "7 Affordable & clean energy",
+        "8 Decent work & economic growth",
+        "9 Industry, innovation & infrastructure",
+        "10 Reduced inequalities",
+        "11 Sustainable cities & communities",
+        "12 Responsible consumption & production",
+        "13 Climate action",
+        "14 Life below water",
+        "15 Life on land",
+        "16 Peace, justice & strong intuitions",
+        "17 Partnerships for the goals"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Call for Papers: Special Issue on Data Science and AI in Marine Science and Blue Economy",
+        "Topics",
+        "Submissions"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Necessary",
+        "Necessary",
+        "Always Enabled"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Research papers",
+        "Experience papers",
+        "Survey papers",
+        "Challenge papers",
+        "On the Horizon papers",
+        "Special Issue papers"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Call for Papers: Special Issue on Data Science and AI in Marine Science and Blue Economy",
+        "Topics",
+        "Submissions"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Authors' names and affiliations must not appear on the title page or elsewhere in the submission.",
+        "Funding sources must not be acknowledged anywhere in the submission.",
+        "The paper\u2019s file name must not identify the authors of the submission."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Detailed Program",
+        "Industrial Papers",
+        "Keynote Talks",
+        "Tutorials",
+        "Demo Papers",
+        "Panel Discussions",
+        "Awards",
+        "Poster Allocation",
+        "SIGMOD Proceedings"
+      ],
+      "output_list_from_llm": [
+        "SIGMOD Proceedings"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Journal Topics",
+        "Article Types",
+        "Categories",
+        "Connect"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Sigmod proceedings"
+  ],
+  "error": null
+}

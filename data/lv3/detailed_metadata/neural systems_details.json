@@ -1,0 +1,363 @@
+{
+  "level2_term": "neural systems",
+  "all_urls": [
+    "https://neurips.cc/",
+    "https://neurips.cc/Conferences/2025/CallForPapers",
+    "https://2025.ijcnn.org/",
+    "http://www.wikicfp.com/cfp/call?conference=neural%20networks",
+    "https://www.sciencedirect.com/journal/neural-networks",
+    "https://2025.ijcnn.org/authors/call-for-j-2-c-papers",
+    "https://www.worldscientific.com/worldscinet/ijns?srsltid=AfmBOopWHzqd92w021Q3zbzoP0Z7WeopfcVobL0CU9HEfMGHHiR05VBD",
+    "https://www.inns.org/ijcnn-home",
+    "https://www.embs.org/tnsre/for-authors/submission-guidelines/",
+    "https://cis.ieee.org/publications/t-neural-networks-and-learning-systems"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "NeurIPS has releases a LLM policy",
+        "The NeurIPS 2025 Call For Papers is now available",
+        "Hotel Information",
+        "Reviewer Self Nomination"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Registration",
+        "Announcements",
+        "Latest NeurIPS Blog Entries  [ All Entries ]",
+        "Exhibitors",
+        "Mission Statement"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Registration 2025",
+        "Pricing \u00bb",
+        "Cancellation Policy \u00bb"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Apr 02, 2025",
+        "Mar 10, 2025",
+        "Mar 10, 2025",
+        "Dec 13, 2024",
+        "Dec 11, 2024",
+        "Dec 11, 2024",
+        "Dec 11, 2024",
+        "Nov 27, 2024",
+        "Nov 23, 2024",
+        "Nov 18, 2024"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Applications (e.g., vision, language, speech and audio, Creative AI)",
+        "Evaluation (e.g., methodology, meta studies, replicability and validity, human-in-the-loop)",
+        "General machine learning (supervised, unsupervised, online, active, etc.)",
+        "Infrastructure (e.g., libraries, improved implementation and scalability, distributed solutions)",
+        "Machine learning for sciences (e.g. climate, health, life sciences, physics, social sciences)",
+        "Neuroscience and cognitive science (e.g., neural coding, brain-computer interfaces)",
+        "Optimization (e.g., convex and non-convex, stochastic, robust)",
+        "Probabilistic methods (e.g., variational inference, causal inference, Gaussian processes)",
+        "Reinforcement learning (e.g., decision and control, planning, hierarchical RL, robotics)",
+        "Theory (e.g., control theory, learning theory, algorithmic game theory)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "OpenReview",
+        "Abstract Submission",
+        "Paper Formatting Instructions",
+        "Paper Checklist",
+        "Technical Appendices and Supplementary Material",
+        "Use of Large Language Models (LLMs)",
+        "Double-blind Reviewing",
+        "Ethics Review",
+        "Preprints",
+        "Dual Submissions",
+        "Anti-collusion",
+        "Author Responses",
+        "Publication of Accepted Submissions",
+        "Contemporaneous Work",
+        "Other Tracks",
+        "Experiments",
+        "Financial Aid"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.17647058823529413,
+        "keyword_ratio": 0.4117647058823529
+      }
+    },
+    {
+      "items": [
+        "All submissions must be in PDF format, and in a single PDF file include, in this suggested order:",
+        "Please note that a different policy applies to Datasets & Benchmarks papers, as shown here.",
+        "Plagiarism is prohibited by the NeurIPS Code of Conduct."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Neural Networks",
+        "IEEE Computational Intelligence Magazine (CIM)",
+        "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
+        "IEEE Transactions on Fuzzy Systems (TFS)",
+        "IEEE Transactions on Evolutionary Computation (TEVC)",
+        "IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)",
+        "IEEE Transactions on Artificial Intelligence (TAI)",
+        "IEEE Transactions on Cognitive and Developmental Systems (TCDS)",
+        "IEEE Transactions on Games (ToG)",
+        "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+        "IEEE Signal Processing Magazine",
+        "IEEE Transactions on Signal Processing",
+        "IEEE Transactions on Systems, Man and Cybernetics",
+        "IEEE Intelligent Systems",
+        "Neurocomputing",
+        "Pattern Recognition"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.058823529411764705,
+        "keyword_ratio": 0.23529411764705882
+      }
+    },
+    {
+      "items": [
+        "Leadership",
+        "Awards",
+        "HistoryINNS Visuals through the YearsBoG ArchiveVirtual History Interviews",
+        "INNS Visuals through the Years",
+        "BoG Archive",
+        "Virtual History Interviews",
+        "Contact Us",
+        "Bylaws",
+        "EventsIJCNNSponsored EventsWebinar Series",
+        "IJCNN",
+        "Sponsored Events",
+        "Webinar Series",
+        "Membership Benefits",
+        "Membership Application",
+        "Join a Section",
+        "Fellows & Senior Members",
+        "Cooperated Societies",
+        "Membership Resource Center",
+        "PublicationNeural Networks JournalINNS Newsletter",
+        "Neural Networks Journal",
+        "INNS Newsletter",
+        "Member HomeRenew NowMy ProfileFind Other MembersMember Directory",
+        "Renew Now",
+        "My Profile",
+        "Find Other Members",
+        "Member Directory"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.15384615384615385,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.07692307692307693
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "All submissions must be in PDF format, and in a single PDF file include, in this suggested order:",
+        "Please note that a different policy applies to Datasets & Benchmarks papers, as shown here.",
+        "Plagiarism is prohibited by the NeurIPS Code of Conduct."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "OpenReview",
+        "Abstract Submission",
+        "Paper Formatting Instructions",
+        "Paper Checklist",
+        "Technical Appendices and Supplementary Material",
+        "Use of Large Language Models (LLMs)",
+        "Double-blind Reviewing",
+        "Ethics Review",
+        "Preprints",
+        "Dual Submissions",
+        "Anti-collusion",
+        "Author Responses",
+        "Publication of Accepted Submissions",
+        "Contemporaneous Work",
+        "Other Tracks",
+        "Experiments",
+        "Financial Aid"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Neural Networks",
+        "IEEE Computational Intelligence Magazine (CIM)",
+        "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
+        "IEEE Transactions on Fuzzy Systems (TFS)",
+        "IEEE Transactions on Evolutionary Computation (TEVC)",
+        "IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)",
+        "IEEE Transactions on Artificial Intelligence (TAI)",
+        "IEEE Transactions on Cognitive and Developmental Systems (TCDS)",
+        "IEEE Transactions on Games (ToG)",
+        "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+        "IEEE Signal Processing Magazine",
+        "IEEE Transactions on Signal Processing",
+        "IEEE Transactions on Systems, Man and Cybernetics",
+        "IEEE Intelligent Systems",
+        "Neurocomputing",
+        "Pattern Recognition"
+      ],
+      "output_list_from_llm": [
+        "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
+        "Neurocomputing"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "NeurIPS has releases a LLM policy",
+        "The NeurIPS 2025 Call For Papers is now available",
+        "Hotel Information",
+        "Reviewer Self Nomination"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Applications (e.g., vision, language, speech and audio, Creative AI)",
+        "Evaluation (e.g., methodology, meta studies, replicability and validity, human-in-the-loop)",
+        "General machine learning (supervised, unsupervised, online, active, etc.)",
+        "Infrastructure (e.g., libraries, improved implementation and scalability, distributed solutions)",
+        "Machine learning for sciences (e.g. climate, health, life sciences, physics, social sciences)",
+        "Neuroscience and cognitive science (e.g., neural coding, brain-computer interfaces)",
+        "Optimization (e.g., convex and non-convex, stochastic, robust)",
+        "Probabilistic methods (e.g., variational inference, causal inference, Gaussian processes)",
+        "Reinforcement learning (e.g., decision and control, planning, hierarchical RL, robotics)",
+        "Theory (e.g., control theory, learning theory, algorithmic game theory)"
+      ],
+      "output_list_from_llm": [
+        "Neuroscience and cognitive science (e.g., neural coding, brain-computer interfaces)"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Ieee transactions on neural networks and learning systems (tnnls)",
+    "Neurocomputing",
+    "Neuroscience and cognitive science (e.g., neural coding, brain-computer interfaces)"
+  ],
+  "error": null
+}

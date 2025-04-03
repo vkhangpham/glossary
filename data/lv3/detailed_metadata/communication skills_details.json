@@ -1,0 +1,797 @@
+{
+  "level2_term": "communication skills",
+  "all_urls": [
+    "https://academic.oup.com/jpo/pages/call-for-papers-communication-studies",
+    "https://www.comsoc.org/publications/journals/ieee-ojcoms/cfp",
+    "https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518636/homepage/call-for-papers/si-2024-000652",
+    "https://www.comsoc.org/publications/journals/ieee-tnsm/cfp",
+    "https://latincom2024.ieee-latincom.org/call-papers",
+    "https://www.emeraldgrouppublishing.com/publish-with-us/calls-for-papers",
+    "https://www.icahdq.org/page/conf-submission-types",
+    "https://cscw.acm.org/2024/index.php/submit-papers/",
+    "https://jcom.sissa.it/news/27/",
+    "https://journal.lspr.edu/index.php/jcpr/announcement/view/6"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "IEEE Global Menu",
+        "Main navigation dropdown",
+        "Breadcrumb",
+        "Main navigation contextual sidebar",
+        "Special Issue",
+        "Footer Menu"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Cellular systems, 4G/5G/B5G/6G",
+        "Cognitive radio networks",
+        "Device-to-device/machine-to-machine communications",
+        "Green wireless networks",
+        "Large-scale LEO satellite networking",
+        "Opportunistic wireless networks",
+        "Pervasive and wearable computing and networking",
+        "Reconfigurable wireless networks",
+        "Software-defined wireless networks",
+        "Underwater wireless networks",
+        "Vehicular networks",
+        "Wireless network virtualization",
+        "Wireless multimedia networks",
+        "WLAN, WPAN, and other home/personal networking technologies",
+        "Wireless networking techniques based on AI"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.13333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8666666666666667
+      }
+    },
+    {
+      "items": [
+        "Networks and communication systems modeling and performance evaluation",
+        "Reliability of systems and networks",
+        "Traffic measurement, modeling, visualization, and engineering",
+        "Security and trust in network design",
+        "Integration aspects in IoT and Big Data systems",
+        "Design of cloud, edge and other distributed computing networks",
+        "QoS and network efficiency"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.7142857142857143
+      }
+    },
+    {
+      "items": [
+        "AI, ML and data analytics for optical systems and networks",
+        "Elastic, flexible rate and flexi-grid optical networks",
+        "Free-space optical networks",
+        "Optical network control and management",
+        "Optical network survivability and availability",
+        "Optical and wireless convergence",
+        "Routing and spectrum assignment for optical networks",
+        "Software defined optical networks",
+        "Ultraviolet communications and networks",
+        "Underwater optical communications",
+        "Virtualization and slicing in optical networks",
+        "Visible light communications"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Communication theory of ad-hoc and sensor networks",
+        "Communication theory of distributed and edge computing",
+        "Communication theory of networks and cross-layer design",
+        "Multi-antenna, multi-user and multi-node systems",
+        "Radio communications",
+        "Satellite & space communications",
+        "Signal processing for all aspects of communications and networking",
+        "Theoretical aspects of blockchain and ML in networks"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "AI and ML for network slicing, virtualization, and network management",
+        "Big data for all aspects of communications and networking",
+        "Cloud and network data analytics, modeling and visualization",
+        "Cooperative learning for software-defined and virtualized networks",
+        "Data analytics for QoS and traffic classification",
+        "Data analytics for faults and root-cause analysis",
+        "Data-driven network management",
+        "ML based distributed training and learning over-the-air",
+        "Operational analytics and intelligence",
+        "Predictive analytics and real-time analytics"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Blockchain in communications and networks",
+        "Cloud, fog and edge computing",
+        "Internet-of-Things and Internet-of-everything",
+        "New Space applications",
+        "Smart cities and urban computing",
+        "Smart grid communications",
+        "Social networks, crowdsourcing, and crowdsensing",
+        "Tactile Internet",
+        "Carbon-aware networking"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Utility Menu",
+        "Mega Menu",
+        "Literature Synthesis on Contemporary Service Experiences",
+        "Advancing Sustainable Logistics and Trade in a Digital Era",
+        "The Use of Social Media in Talent Acquisition and Talent Management",
+        "Sustainable Corporate Governance in the Era of Digitalization",
+        "Calls for books",
+        "Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pagination",
+        "Filter by",
+        "Show filter"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Accounting finance & economics",
+        "Business, management & strategy",
+        "Education",
+        "Engineering",
+        "Health & social care",
+        "HR, learning & organisation studies",
+        "Information & knowledge management",
+        "Library & information sciences",
+        "Marketing",
+        "Operations, logistics & quality",
+        "Property management & built environment",
+        "Public policy & environmental management",
+        "Tourism & hospitality management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1 No poverty",
+        "2 Zero hunger",
+        "3 Good health and well-being",
+        "4 Quality education",
+        "5 Gender equality",
+        "6 Clean water & sanitation",
+        "7 Affordable & clean energy",
+        "8 Decent work & economic growth",
+        "9 Industry, innovation & infrastructure",
+        "10 Reduced inequalities",
+        "11 Sustainable cities & communities",
+        "12 Responsible consumption & production",
+        "13 Climate action",
+        "14 Life below water",
+        "15 Life on land",
+        "16 Peace, justice & strong intuitions",
+        "17 Partnerships for the goals"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Accounting finance & economics",
+        "Business, management & strategy",
+        "Education",
+        "Engineering",
+        "Health & social care",
+        "HR, learning & organisation studies",
+        "Information & knowledge management",
+        "Library & information sciences",
+        "Marketing",
+        "Operations, logistics & quality",
+        "Property management & built environment",
+        "Public policy & environmental management",
+        "Tourism & hospitality management"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1 No poverty",
+        "2 Zero hunger",
+        "3 Good health and well-being",
+        "4 Quality education",
+        "5 Gender equality",
+        "6 Clean water & sanitation",
+        "7 Affordable & clean energy",
+        "8 Decent work & economic growth",
+        "9 Industry, innovation & infrastructure",
+        "10 Reduced inequalities",
+        "11 Sustainable cities & communities",
+        "12 Responsible consumption & production",
+        "13 Climate action",
+        "14 Life below water",
+        "15 Life on land",
+        "16 Peace, justice & strong intuitions",
+        "17 Partnerships for the goals"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 17,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.058823529411764705
+      }
+    },
+    {
+      "items": [
+        "Submission Guidelines",
+        "Submission Types",
+        "Reviewer Guide",
+        "Conference Code of Conduct"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "M. Jovcheski",
+        "E. Myrczik",
+        "W. LIN",
+        "Z. Tan",
+        "S. Osayi",
+        "S. Shin",
+        "E. Abad",
+        "P. Gloviczki",
+        "Y. Guo",
+        "A. Paloma",
+        "C. Curle",
+        "A. Mukherjee",
+        "C. Wang",
+        "V. Bruzzone",
+        "A. Harrington",
+        "Q. Dai",
+        "P. Szczepanik",
+        "J. Mailland",
+        "D. Taussig",
+        "L. Swan-Potras",
+        "S. Ratzan",
+        "F. Khanam",
+        "B. Perez",
+        "M. Tahboub",
+        "L. Cejkova",
+        "M. Okocha",
+        "P. Kolhep",
+        "O. Oginni",
+        "E. Linnert",
+        "D. Boakye"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Extended Abstract",
+        "Full Paper",
+        "GIFTS; Great Ideas for Teaching Students",
+        "Interactive Paper (Poster) Presentations",
+        "Interdivisional",
+        "Session Paper",
+        "Works in Progress",
+        "Research Escalator Extended Abstract",
+        "Preregistration",
+        "Theme session",
+        "Blue Sky: Big Ideas Session",
+        "Blue Sky: SECAC Skills Workshop",
+        "Blue Sky: Administrator Workshop",
+        "Blue Sky: Professional Development Workshop",
+        "Blue Sky: Pedagogical Workshop",
+        "Corporate Spotlight Session",
+        "Extended Session",
+        "High-Density Paper Session",
+        "High-Density Breakout Session",
+        "Innovative Format",
+        "Interdivisional Panels",
+        "Mixed High-Density Session",
+        "Panel Session",
+        "Partner Panel",
+        "Poster session",
+        "Pre/postconference",
+        "Research Escalator session",
+        "Roundtable discussion",
+        "Standard paper session",
+        "Theme session"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 30,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.6,
+        "keyword_ratio": 0.7666666666666667
+      }
+    },
+    {
+      "items": [
+        "Extended Abstract",
+        "Full Paper",
+        "GIFTS; Great Ideas for Teaching Students",
+        "Interactive Paper (Poster) Presentations",
+        "Interdivisional",
+        "Session Paper",
+        "Works in Progress",
+        "Research Escalator Extended Abstract",
+        "Preregistration",
+        "Theme session"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Blue Sky: Big Ideas Session",
+        "Blue Sky: SECAC Skills Workshop",
+        "Blue Sky: Administrator Workshop",
+        "Blue Sky: Professional Development Workshop",
+        "Blue Sky: Pedagogical Workshop",
+        "Corporate Spotlight Session",
+        "Extended Session",
+        "High-Density Paper Session",
+        "High-Density Breakout Session",
+        "Innovative Format",
+        "Interdivisional Panels",
+        "Mixed High-Density Session",
+        "Panel Session",
+        "Partner Panel",
+        "Poster session",
+        "Pre/postconference",
+        "Research Escalator session",
+        "Roundtable discussion",
+        "Standard paper session",
+        "Theme session"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.15,
+        "length_consistency": true,
+        "pattern_ratio": 0.85,
+        "keyword_ratio": 0.85
+      }
+    },
+    {
+      "items": [
+        "Volumes and Issues",
+        "Special Issues",
+        "All Publications"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Volumes and Issues",
+        "Special Issues",
+        "All Publications"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "science communication theories, concepts, and frameworks;",
+        "institutional practices in public engagement;",
+        "roles and skills of science communication practitioners;",
+        "norms and values of science communication researchers and practitioners;",
+        "modes, styles, and genres of science communication;",
+        "knowledge, attitudes, and values of different publics;",
+        "relationships between science communication and wider society;",
+        "case studies of changing practices in science communication;"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Make a Submission",
+        "Information",
+        "Developed By"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "STATCOUNTER\n\n View MyStat",
+        "MEMBER OF\n\n\u00a0\nIN COLLABORATION WITH\n\n\u00a0\nINDEXED ON",
+        "ISSN ONLINE\n\nISSN PRINT",
+        "RECOMENDED TOOLS",
+        "TEMPLATE DOWNLOAD\n Article Template (English)\n Authenticity Form\nReviewer Form",
+        "Make a Submission\n\t\n\n\n\t\t\tMake a Submission",
+        "Information\n\n\n\n\n\t\t\t\t\t\tFor Readers\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Authors\n\t\t\t\t\t\n\n\n\n\t\t\t\t\t\tFor Librarians",
+        "Developed By\n\t\n\n\n\t\t\tOpen Journal Systems"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Blue Sky: Big Ideas Session",
+        "Blue Sky: SECAC Skills Workshop",
+        "Blue Sky: Administrator Workshop",
+        "Blue Sky: Professional Development Workshop",
+        "Blue Sky: Pedagogical Workshop",
+        "Corporate Spotlight Session",
+        "Extended Session",
+        "High-Density Paper Session",
+        "High-Density Breakout Session",
+        "Innovative Format",
+        "Interdivisional Panels",
+        "Mixed High-Density Session",
+        "Panel Session",
+        "Partner Panel",
+        "Poster session",
+        "Pre/postconference",
+        "Research Escalator session",
+        "Roundtable discussion",
+        "Standard paper session",
+        "Theme session"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Extended Abstract",
+        "Full Paper",
+        "GIFTS; Great Ideas for Teaching Students",
+        "Interactive Paper (Poster) Presentations",
+        "Interdivisional",
+        "Session Paper",
+        "Works in Progress",
+        "Research Escalator Extended Abstract",
+        "Preregistration",
+        "Theme session",
+        "Blue Sky: Big Ideas Session",
+        "Blue Sky: SECAC Skills Workshop",
+        "Blue Sky: Administrator Workshop",
+        "Blue Sky: Professional Development Workshop",
+        "Blue Sky: Pedagogical Workshop",
+        "Corporate Spotlight Session",
+        "Extended Session",
+        "High-Density Paper Session",
+        "High-Density Breakout Session",
+        "Innovative Format",
+        "Interdivisional Panels",
+        "Mixed High-Density Session",
+        "Panel Session",
+        "Partner Panel",
+        "Poster session",
+        "Pre/postconference",
+        "Research Escalator session",
+        "Roundtable discussion",
+        "Standard paper session",
+        "Theme session"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Volumes and Issues",
+        "Special Issues",
+        "All Publications"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "AI, ML and data analytics for optical systems and networks",
+        "Elastic, flexible rate and flexi-grid optical networks",
+        "Free-space optical networks",
+        "Optical network control and management",
+        "Optical network survivability and availability",
+        "Optical and wireless convergence",
+        "Routing and spectrum assignment for optical networks",
+        "Software defined optical networks",
+        "Ultraviolet communications and networks",
+        "Underwater optical communications",
+        "Virtualization and slicing in optical networks",
+        "Visible light communications"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Cellular systems, 4G/5G/B5G/6G",
+        "Cognitive radio networks",
+        "Device-to-device/machine-to-machine communications",
+        "Green wireless networks",
+        "Large-scale LEO satellite networking",
+        "Opportunistic wireless networks",
+        "Pervasive and wearable computing and networking",
+        "Reconfigurable wireless networks",
+        "Software-defined wireless networks",
+        "Underwater wireless networks",
+        "Vehicular networks",
+        "Wireless network virtualization",
+        "Wireless multimedia networks",
+        "WLAN, WPAN, and other home/personal networking technologies",
+        "Wireless networking techniques based on AI"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

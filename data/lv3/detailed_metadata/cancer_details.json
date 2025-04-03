@@ -1,0 +1,634 @@
+{
+  "level2_term": "cancer",
+  "all_urls": [
+    "https://jnccn.org/page/papers/call-for-papers?t:state:client=5B2OWS1bJm2Y3tCo0X0odSGho40=:H4sIAAAAAAAAAH2Sv28TMRTHX1JCf4T+SIWEGJAYmC8TEoipNC059VQiEhYW5Lt7uRh89mG/uyYZULvQgYEFNgYGxv4rjAxsCGaYkJA6YV9L6UkNi2X7ffx9732fj35AY+8SAKwYDTtKJx7LWDRCj1iGhvTktscloZZMeAZ1wSM03qbgKKmH2nBDdrfNUcR9Upol6KeZuLWDky+/rr2Z/358WIe5AJqRSjMlLerHBOvBM1awtmAyafdJc5ncC2Bx6ER2WYov4CXUAljIrNrZeZwR3I2UHPIk1ywUaPcutYNCFU+8Qok8RW5MjgZt2FZzekcqIlg1I7W3EdnqjW+fGoKr59Xamydy1oSWK85zxXn3lRLI5Kebev/z++Ofdag9gUbBRI7jrGZcXeCWOYIrTr7n2pdD5e4aZfgyVKgFR/nGyJJwy1IlvliqaOvxDKDlgIdScIm9POwwmgU2y3ZzGilt/odsxZxmI6spG3eRxXZCHcxodNJYxSLf2pagXv/24ePvg8M71iL/r0Ua1v5xu3kaon519O5G8+3X13WAcWY/XdWe1rQYqCQR2BMswtSOo0xIsPzIf9AdPN0OHve7W52LLA1nWbo8LTrcZIJN+nyKp3rz7juyiCrkGpexTcmIKxlggeJM8foFo46HAZfPZxm34pgBJ4EBC88pLf0BvGDMfm8DAAA=",
+    "https://aacrjournals.org/cancerres/pages/call-for-papers",
+    "https://www.sciencedirect.com/journal/journal-of-the-national-cancer-center/about/call-for-papers",
+    "https://academic.oup.com/jncics/pages/call_for_papers",
+    "https://www.sciencedirect.com/journal/seminars-in-oncology",
+    "https://www.cell.com/trends/cancer/home",
+    "https://www.cancerresgroup.us/journals/global-journal-of-cancer-therapy/call-for-papers",
+    "https://jeccr.biomedcentral.com/",
+    "https://www.cancernetwork.com/oncology-journal/info-authors/call-for-papers",
+    "https://www.nature.com/npjprecisiononcology/calls-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Call for Papers",
+        "Submit a Manuscript",
+        "Information for Authors",
+        "Reprints/Permissions"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Identify patterns and decipher complex biological processes that drive cancer",
+        "Accelerate biological discoveries but also facilitate therapeutic and clinical innovations",
+        "Guide clinical decision-making to improve patient outcomes"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Manuscript title",
+        "List of authors and their affiliations",
+        "Abstract",
+        "Summary of key points",
+        "Anticipated submission date"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Submission Instructions",
+        "Presubmission Inquiries Welcome",
+        "AACR Journals"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Close Modal",
+        "Close Modal",
+        "This Feature Is Available To Subscribers Only\nSign In or Create an Account\n\nClose Modal",
+        "Close Modal"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "edge computational and data",
+        "driven approaches",
+        "including AI, machine learning, and in silico modeling"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Testimonial",
+        "Call For Papers",
+        "Indexing/Archiving",
+        "Editor-in-Chief",
+        "NIH Funded Articles",
+        "Research Articles",
+        "Manuscript Status",
+        "Member Information",
+        "Publication cycle Experience the top-notch services",
+        "Anna Maria",
+        "cantrella caralynn",
+        "Samantha Wyatt",
+        "MUSHTAQ CHALKOO",
+        "Dr Shivaji Jadhav"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.07142857142857142,
+        "keyword_ratio": 0.35714285714285715
+      }
+    },
+    {
+      "items": [
+        "Richard Hogston \nLeeds Beckett University, UK \nArchives of Community Medicine and Public Health",
+        "Emmanouil Magiorkinis \nMetaxas Memorial Anticancer Hospital , Greece \nAnnals of Bone Marrow Research",
+        "Lianbo Yu \nOhio State University, USA \nOpen Journal of Bioinformatics and Biostatistics",
+        "Hermis Iatrou \nUniversity of Athens, Greece \nOpen Journal of  Chemistry",
+        "Chien-Chang Liao \nTaipei Medical University, Taiwan \nArchives of Nursing Practice and Care"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Arghya Narayan Banerjee",
+        "Yeungnam University, South Korea",
+        "International Journal of Nanomaterials, Nanotechnology and Nanomedicine"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Abu-Hussein Muhamad",
+        "University of Athens , Greece",
+        "International Journal of Oral and Craniofacial Science"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Lianbo Yu",
+        "Ohio State University, USA",
+        "Open Journal of Bioinformatics and Biostatistics"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hermis Iatrou",
+        "University of Athens, Greece",
+        "Open Journal of  Chemistry"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Chien-Chang Liao",
+        "Taipei Medical University, Taiwan",
+        "Archives of Nursing Practice and Care"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Endothelial Progenitor Cells in Breast Cancer",
+        "Diabetic Retinopathy: Focus on Minority Populations",
+        "Ethnic Differences in Abstinence Self-Efficacy among Recovering Individuals",
+        "Neural Response During a Mechanically Assisted Spinal Manipulation in an Animal Model: A Pilot Study",
+        "How Anterior Cruciate Ligament Injury was averted during Knee Collapse in a NBA Point Guard",
+        "Validity of Ratings of Perceived Exertion in Patients with Type 2 Diabetes",
+        "Buprenorphine Maintenance for Opioid Dependence in Public Sector Healthcare: Benefits and Barriers"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2857142857142857
+      }
+    },
+    {
+      "items": [
+        "\u00d7\nManuscript Status",
+        "Verify",
+        "Close"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "1) DOI number for every published manuscript;",
+        "2) Augmenting collection of free-to-read publications;",
+        "3) Indexing on reputed platforms;",
+        "4) Stringent peer-review process with eminent scholars;",
+        "5) Reduced processing fees for authors with demonstrated financial needs;"
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Peertechz Publications",
+        "3630 (for International)",
+        "129, Phase: 1 & 2, KPHB Cology, Kukatpally, Hyd",
+        "500072, India"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "o8G-modified circKIAA1797 promotes lung cancer development by inhibiting cuproptosis",
+        "Role of inflammasomes in cancer immunity: mechanisms and therapeutic potential",
+        "RASON promotes KRASG12C-driven tumor progression and immune evasion in non-small cell lung cancer",
+        "Ivermectin reverses the drug resistance in cancer cells through EGFR/ERK/Akt/NF-\u03baB pathway",
+        "Apoptosis in cancer: from pathogenesis to treatment",
+        "High-dose intravenous vitamin C, a promising multi-targeting agent in the treatment of cancer",
+        "Effects of short-term fasting on cancer treatment",
+        "Iron and leukemia: new insights for future treatments",
+        "How was your experience today?",
+        "Annual Journal Metrics",
+        "Follow BMC"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "An image of a cartoon face that is very unhappy.\n The value of this radio input is: Awful",
+        "An image of a cartoon face with a frown.\n The value of this radio input is: Bad",
+        "An image of a cartoon face with a neutral expression.\n The value of this radio input is: OK",
+        "An image of a cartoon face with a smile.\n The value of this radio input is: Good",
+        "An image of a cartoon face with an open mouth grin.\n The value of this radio input is: Great"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Fu Yueh, I",
+        "Tsang Chiang, Yueh",
+        "Shan Weng, Yu",
+        "Chang Liu, Raymond C. B. Wong, Cheng",
+        "Yu Chen, Justin Bo",
+        "Kai Hsu, Long",
+        "Bin Jeng, Woei",
+        "Cherng Shyu and Fei",
+        "Ting Hsu"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Gastrointestinal Cancers",
+        "Breast and Gynecologic Cancers",
+        "Hematologic Malignancies",
+        "Genitourinary Cancers",
+        "Lung Cancers",
+        "Immunotherapy",
+        "Radiation therapy",
+        "Pathology",
+        "Palliative care",
+        "Management of therapy adverse events"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Explore articles by subject",
+        "Find a job",
+        "Guide to authors",
+        "Editorial policies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Artificial intelligence biomarkers in precision oncology",
+        "Emerging adjuvant and neo-adjuvant treatment approaches in solid tumors",
+        "Noninvasive biomarkers: bridging real-world evidence and clinical trial data",
+        "Tumor-type-agnostic biomarkers and treatments in oncology",
+        "AI Approaches in Drug Design",
+        "Antibody-drug conjugates for solid tumors",
+        "Cell-free DNA epigenomics for early cancer and MRD detection",
+        "Applications of Artificial Intelligence in Cancer",
+        "Quick links",
+        "Discover content",
+        "Publishing policies",
+        "Author & Researcher services",
+        "Libraries & institutions",
+        "Advertising & partnerships",
+        "Professional development",
+        "Regional websites"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1875
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Submission Instructions",
+        "Presubmission Inquiries Welcome",
+        "AACR Journals"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Call for Papers",
+        "Submit a Manuscript",
+        "Information for Authors",
+        "Reprints/Permissions"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "1) DOI number for every published manuscript;",
+        "2) Augmenting collection of free-to-read publications;",
+        "3) Indexing on reputed platforms;",
+        "4) Stringent peer-review process with eminent scholars;",
+        "5) Reduced processing fees for authors with demonstrated financial needs;"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Endothelial Progenitor Cells in Breast Cancer",
+        "Diabetic Retinopathy: Focus on Minority Populations",
+        "Ethnic Differences in Abstinence Self-Efficacy among Recovering Individuals",
+        "Neural Response During a Mechanically Assisted Spinal Manipulation in an Animal Model: A Pilot Study",
+        "How Anterior Cruciate Ligament Injury was averted during Knee Collapse in a NBA Point Guard",
+        "Validity of Ratings of Perceived Exertion in Patients with Type 2 Diabetes",
+        "Buprenorphine Maintenance for Opioid Dependence in Public Sector Healthcare: Benefits and Barriers"
+      ],
+      "output_list_from_llm": [
+        "Endothelial Progenitor Cells in Breast Cancer"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Gastrointestinal Cancers",
+        "Breast and Gynecologic Cancers",
+        "Hematologic Malignancies",
+        "Genitourinary Cancers",
+        "Lung Cancers",
+        "Immunotherapy",
+        "Radiation therapy",
+        "Pathology",
+        "Palliative care",
+        "Management of therapy adverse events"
+      ],
+      "output_list_from_llm": [
+        "Gastrointestinal Cancers",
+        "Breast and Gynecologic Cancers",
+        "Hematologic Malignancies",
+        "Genitourinary Cancers",
+        "Lung Cancers"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Endothelial progenitor cells in breast cancer",
+    "Gastrointestinal cancers",
+    "Breast and gynecologic cancers",
+    "Genitourinary cancers",
+    "Lung cancers",
+    "Hematologic malignancies"
+  ],
+  "error": null
+}

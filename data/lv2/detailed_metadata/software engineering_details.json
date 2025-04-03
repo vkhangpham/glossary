@@ -1,0 +1,1803 @@
+{
+  "level1_term": "software engineering",
+  "all_urls": [
+    "https://se-phd.isri.cmu.edu/research/index.html",
+    "https://engineering.tamu.edu/cse/research/areas/index.html",
+    "https://www.monmouth.edu/department-of-csse/research-topics/",
+    "https://researchcomputing.princeton.edu/services/research-software-engineering/rse-projects",
+    "https://cs.utdallas.edu/research/research-areas/",
+    "https://www.eecs.mit.edu/research/explore-all-research-areas/",
+    "https://www.mccormick.northwestern.edu/computer-science/research/areas/",
+    "https://cs.purdue.edu/research/software-engineering.html",
+    "https://cs.utdallas.edu/research/research-activities/",
+    "https://www.cc.gatech.edu/research-areas",
+    "https://www.cs.usc.edu/research/research-areas-labs/",
+    "https://miamioh.edu/cec/departments/computer-science-software-engineering/research.html",
+    "https://www.cmu.edu/scs/s3d/reuse/",
+    "https://www.boisestate.edu/coen-cs/research/faculty-research/",
+    "https://school.eecs.wsu.edu/research/software-engineering/",
+    "https://engineering.ucsc.edu/departments/computer-science-and-engineering/research/",
+    "https://drexel.edu/cci/research/research-areas/programming-systems-and-software-engineering/",
+    "https://cci.charlotte.edu/departments/computer-science-cs/cs-research/",
+    "https://www.cs.purdue.edu/research/index.html",
+    "https://siebelschool.illinois.edu/research",
+    "https://www.sjsu.edu/cmpe/research/",
+    "https://cs.ua.edu/research/",
+    "https://cse.osu.edu/research",
+    "https://www.kennesaw.edu/ccse/research/index.php",
+    "https://www.ece.cornell.edu/ece/research/strategic-research-areas",
+    "https://lcsee.statler.wvu.edu/research",
+    "https://www.cise.ufl.edu/ciseresearch/research-areas/",
+    "https://cse.nd.edu/research/",
+    "https://engineering-computer-science.wright.edu/computer-science-and-engineering/areas-of-research",
+    "https://www.stevens.edu/school-engineering-science/departments/computer-science/research"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Algorithms and Theory",
+        "Artificial Intelligence, Intelligent Systems, Machine Learning, Natural Language Processing",
+        "Bioinformatics, Computational Biology",
+        "Computer Architecture",
+        "Computer Science Education",
+        "Computer Vision",
+        "Cyber-Physical Systems",
+        "Cybersecurity",
+        "Data Science",
+        "Databases, Data Mining, Information Retrieval Systems",
+        "Digital Humanities",
+        "Electronic Design Automation and VLSI",
+        "Embedded Systems",
+        "Gaming",
+        "Graphics, Visualization and Computational Fabrication",
+        "Health",
+        "Human-Centered Systems",
+        "Human-Computer Interaction",
+        "Networks",
+        "Parallel and Distributed Computing",
+        "Programming Languages, Compilers",
+        "Robotics, Human-Robot Interaction",
+        "Software and Software Engineering",
+        "Systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.08333333333333333,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5416666666666666
+      }
+    },
+    {
+      "items": [
+        "Richard Scherl",
+        "Ling Zheng",
+        "Weihao Qu"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Solving real-world GitHub issues with AI: SWE-agent",
+        "Development of ASPIRE Python Package",
+        "HydroGEN",
+        "ProtDomain",
+        "HydroFrame",
+        "ASPIRE - NUFFT",
+        "IBDmix",
+        "Cell Patch Polarity Heatmaps",
+        "INTERSECT RSE Training",
+        "Safely Report",
+        "Line-Segment Tracking",
+        "Learning for Robust OPTimization (LROPT)",
+        "Simons Observatory Project",
+        "Multi-tissue Somatic Mutation Detection",
+        "SPECFEM++ - A modular and portable spectral-element code for seismic wave propagation",
+        "ModECI Model Description Format (MDF)",
+        "PsyNeuLink",
+        "cryoDRGN",
+        "Automatic Speech Transcription via Audio Analysis and Large Language Models",
+        "Geography of Taste",
+        "Gkeyll"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": false,
+        "pattern_ratio": 0.047619047619047616,
+        "keyword_ratio": 0.23809523809523808
+      }
+    },
+    {
+      "items": [
+        "Main Menu",
+        "Search",
+        "Section Menu",
+        "RSE Projects",
+        "Solving real-world GitHub issues with AI: SWE-agent",
+        "Development of ASPIRE Python Package",
+        "HydroGEN",
+        "ProtDomain",
+        "HydroFrame",
+        "ASPIRE - NUFFT",
+        "IBDmix",
+        "Cell Patch Polarity Heatmaps",
+        "INTERSECT RSE Training",
+        "Safely Report",
+        "Line-Segment Tracking",
+        "Learning for Robust OPTimization (LROPT)",
+        "Simons Observatory Project",
+        "Multi-tissue Somatic Mutation Detection",
+        "SPECFEM++ - A modular and portable spectral-element code for seismic wave propagation",
+        "ModECI Model Description Format (MDF)",
+        "PsyNeuLink",
+        "cryoDRGN",
+        "Automatic Speech Transcription via Audio Analysis and Large Language Models",
+        "Gkeyll",
+        "Footer",
+        "Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 26,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.15384615384615385,
+        "length_consistency": false,
+        "pattern_ratio": 0.038461538461538464,
+        "keyword_ratio": 0.23076923076923078
+      }
+    },
+    {
+      "items": [
+        "RSE: Kilian Lieret",
+        "RSE: Josh Carmichael",
+        "RSE: Amy Defnet, Bill Hasling",
+        "RSE: Vineet Bansal",
+        "RSE: George Artavanis,\u00a0Calla E. Chennault (2020-2022)",
+        "RSE: Garrett Wright",
+        "RSE: Troy Comi",
+        "RSE: Abhishek Biswas",
+        "RSE: Ian Cosden",
+        "RSE: Sangyoon Park",
+        "RSE: Andres Rios Tascon",
+        "RSE: Amit Solomon",
+        "RSE: Ioannis Paraskevakos",
+        "RSE: Rob Bierman",
+        "RSE: Rohit Kakodkar",
+        "RSE: Luca Bonaldo",
+        "RSE: David Turner",
+        "RSE: David Turner",
+        "RSE: Michal R. Grzadkowski",
+        "RSE: Junying (Alice) Fang",
+        "RSE: Jonathan Gorard"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "PI:\u00a0Karthik Narasimhan, Department of Computer Science & Princeton Language and Intelligence",
+        "PI:\u00a0Amit Singer, Program in Applied and Computational Mathematics",
+        "PI: Laura Condon (University of Arizona)",
+        "Co-PI: Reed Maxwell, Civil and Environmental Engineering (Princeton University)",
+        "PI: Mona Singh,\u00a0Department of Computer Science (Genomics)",
+        "PI: Reed Maxwell,\u00a0Civil and Environmental Engineering",
+        "PI: Amit Singer,\u00a0Department of Mathematics;\u00a0Alex Barnett,\u00a0Flatiron Institute",
+        "PI: Josh Akey, The Lewis-Sigler Institute of Integrative Genomics",
+        "PI:\u00a0Danelle Davenport, Department of Molecular Biology",
+        "PI: Sylvain Chassang (Princeton University Department of Economics)",
+        "Co-PI: Laura Boudreau (Columbia Business School)",
+        "PI: Peter Elmer, Department of Physics",
+        "PI: Bartolomeo Stellato, Operations Research and Financial Engineerinrg (ORFE) department",
+        "PI: Jo Dunkley (Princeton University, Department of Physics)",
+        "PI: Josh Akey, The Lewis-Sigler Institute of Integrative Genomics",
+        "PI: Prof. Jeroen Tromp (Department of Geosciences)",
+        "PI: Jon Cohen, Princeton Neuroscience Institute; Padraig Gleeson, University College London",
+        "PI: Jon Cohen, Princeton Neuroscience Institute",
+        "PI:\u00a0Ellen D. Zhong, Department of Computer Science",
+        "PI:\u00a0Ammar Hakim, Princeton Plasma Physics Laboratory (PPPL)"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.05,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "agent is a system designed to solve real",
+        "source AI agent to score a non",
+        "negligible score on SWE",
+        "bench, a software engineering benchmark based on more than 2000 real GitHub issues."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "agent is open",
+        "source and available at\u00a0https://github.com/princeton",
+        "nlp/SWE",
+        "agent/"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "source Python library which aims to provide a pipeline for processing cryo",
+        "EM field. This includes contributions to image denoising and correction, particle",
+        "picking, class",
+        "averaging, and 3D volume estimation. Collaboration with the Flatiron Institute on the FINUFFT non"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "dimensional structure from hundreds of thousands of noisy two",
+        "dimensional images",
+        "each representing an unknown orientation of the molecule"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "energy astrophysics. The core of Gkeyll is written in C, with some C++ for GPU support, Lua for high",
+        "level scripting and simulation input, and Python for post",
+        "processing and visualization. Gkeyll uses a mixture of finite volume and high",
+        "resolution shock",
+        "capturing methods for solving multi",
+        "dimensional Vlasov kinetics, to full",
+        "f gyrokinetics, to (relativistic) multi",
+        "fluids, to many others.Thanks to this algorithmic diversity, Gkeyll has been used to run high"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.375,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Skip to Main Content.",
+        "Skip to Main Navigation.",
+        "Skip to Main Footer."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Professor Murat Kantarcioglu and Latifur Khan were named IEEE Fellows.",
+        "Professor B. Prabhakaran was named Editor in Chief of the IEEE Multimedia Journal.",
+        "Professor Shiyi Wei received Distinguished Paper Award at USENIX 2022.",
+        "UT Dallas CS Researchers Apply Power of AI To Forecast Energy Supply, Demand."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Open Source Projects",
+        "Department Software",
+        "Research Focus Areas",
+        "Institutes and Centers",
+        "Reports"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Erik Jonsson School of Engineering and Computer Science",
+        "research",
+        "education",
+        "people",
+        "industry",
+        "community",
+        "ARTIFICIAL INTELLIGENCE / MACHINE LEARNING",
+        "NETWORKS",
+        "COMPUTING THEORY",
+        "COMPUTER SYSTEMS",
+        "CYBER SECURITY",
+        "SOFTWARE ENGINEERING",
+        "ERIK JONSSON SCHOOL OF ENGINEERING AND COMPUTER SCIENCE"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.07692307692307693,
+        "length_consistency": false,
+        "pattern_ratio": 0.15384615384615385,
+        "keyword_ratio": 0.46153846153846156
+      }
+    },
+    {
+      "items": [
+        "Communication",
+        "Campus",
+        "Department Resources",
+        "More Department Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Antonio Bianchi\nAssistant Professor",
+        "Benjamin J. Delaware\nAssistant Professor",
+        "H. E. Dunsmore\nAssociate Professor",
+        "Changhee Jung\nSamuel D. Conte Associate Professor of Computer Science",
+        "Aditya P. Mathur\nProfessor Emeritus",
+        "Vernon J. Rego\nProfessor",
+        "Tiark Rompf\nKevin C. and Susanne L. Kahn New Frontiers Associate Professor",
+        "Eugene H. Spafford\nProfessor",
+        "Lin Tan\nMary J. Elmore New Frontiers Professor of Computer Science",
+        "Tianyi Zhang\nAssistant Professor",
+        "Xiangyu Zhang\nSamuel D. Conte Professor of Computer Science",
+        "Yongle Zhang\nAssistant Professor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Skip to Main Content.",
+        "Skip to Main Navigation.",
+        "Skip to Main Footer."
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Cyber Security",
+        "Computing Theory",
+        "Computer Systems",
+        "Intelligent Systems",
+        "Software Engineering",
+        "Network and Telecommunications"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.5,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Open Source Projects",
+        "Department Software",
+        "Research Focus Areas",
+        "Institutes and Centers",
+        "Reports"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Erik Jonsson School of Engineering and Computer Science",
+        "research",
+        "education",
+        "people",
+        "industry",
+        "community",
+        "RESEARCH AREAS",
+        "INSTITUTES & CENTERS",
+        "TECHNICAL REPORTS",
+        "ERIK JONSSON SCHOOL OF ENGINEERING AND COMPUTER SCIENCE"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Cyber Security",
+        "Computing Theory",
+        "Computer Systems",
+        "Intelligent Systems",
+        "Software Engineering",
+        "Networking",
+        "NSF Net-centric\u00a0&\u00a0Cloud Software & Systems (NCSS) I/UCRC",
+        "Cyber Security Research and Education Institute",
+        "Human Language Technology Research Institute",
+        "Institute for Data Analytics",
+        "Net-Centric Software Center",
+        "Center for Software Testing",
+        "iPerform: Center for Assistive Technology",
+        "Center for CS Education and Outreach",
+        "The Dallas Institute for Interactive and Spatial Computing (UT-DIISC)"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.26666666666666666,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Computer Architecture",
+        "Databases",
+        "Foundations of Artificial Intelligence",
+        "Networks",
+        "Programming Languages & Software Engineering",
+        "Systems",
+        "Theory"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence & Machine Learning",
+        "Cognitive and Learning Sciences",
+        "Computer Graphics",
+        "Data Visualization",
+        "Human-Computer Interaction",
+        "Robotics",
+        "Social Computing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "High-Performance Computing",
+        "Data Science and Visual Analytics",
+        "Scientific Computing and Simulation",
+        "Artificial Intelligence and Machine Learning",
+        "Computational Bioscience and Biomedicine"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Applied and Mathematical\u00a0Cryptography",
+        "Cybersecurity and International Affairs",
+        "Cyber-Physical Systems",
+        "Cybersecurity Policy\u00a0and Law",
+        "Election Security",
+        "Forensics and Attribution",
+        "Hardware Security\u00a0and Sidechannel Analysis",
+        "Malware",
+        "Network and System Security",
+        "Privacy and Data Protection"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.3,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics and HCI"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics, HCI"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics, HCI"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "The Ribarsky Center for Visual Analytics",
+        "Robotics Lab",
+        "KDD Lab",
+        "Wireless Networking and Sensing Lab",
+        "High Performance Computing Architecture and System Lab",
+        "Video and Image Analysis Lab",
+        "Uncertainty Quantification Lab",
+        "Gaming and Mixed Reality Lab"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence, Machine Learning, and Natural Language Processing",
+        "Bioinformatics and Computational Biology",
+        "Computer Architecture",
+        "Computational Science and Engineering",
+        "Databases and Data Mining",
+        "Distributed Systems",
+        "Graphics, Visualization, and Geometric Modeling",
+        "Human-Computer Interaction",
+        "Information Security and Assurance",
+        "Networking and Operating Systems",
+        "Programming Languages and Compilers",
+        "Robotics and Computer Vision",
+        "Software Engineering",
+        "Theory of Computing, Algorithms, and Quantum Computing"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.2857142857142857,
+        "keyword_ratio": 0.7142857142857143
+      }
+    },
+    {
+      "items": [
+        "Communication",
+        "Campus",
+        "Department Resources",
+        "More Department Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "AI-powered tool for cybersecurity earns ACM CCS Distinguished Paper Award",
+        "Peng named ACM Distinguished Member",
+        "One Health: A \u2018digital twin\u2019 model for predicting cancer outcomes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Research Areas",
+        "Project Expos and Theses",
+        "Computer Engineering",
+        "Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Visit Office",
+        "Make a Gift",
+        "Colleges",
+        "Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence and Machine Learning\nDegree Programs: MS AI, MS SE, BS SE",
+        "Data Science and Analytics\nDegree Programs: MS AI, MS SE, BS SE",
+        "Embedded and Computer Systems\nDegree Programs: MS CMPE, BS CMPE",
+        "Autonomous and Robotic Systems\nDegree Programs: MS AI, MS CMPE, BS CMPE",
+        "Computer Networks Security, and Internet-of-Things\nDegree Programs: MS CMPE, MS SE, BS CMPE, BS SE",
+        "Software System and Enterprise Software\nDegree Programs: MS SE, BS SE",
+        "Cloud Computing and Virtualization\nDegree Programs: MS SE, BS SE"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.42857142857142855,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "4150Fax: 408",
+        "4153Email: frontdesk",
+        "computer",
+        "engineering@sjsu.edu"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Algorithms",
+        "Artificial Intelligence",
+        "Complex Systems, Network Science and Computation",
+        "Computer Architecture",
+        "Computer Engineering",
+        "Computer Systems",
+        "Data Mining",
+        "Energy and the Environment",
+        "Rapid Prototyping",
+        "Robotics and Autonomy",
+        "Scientific Computing",
+        "Security",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.13333333333333333,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence",
+        "Computer Systems",
+        "Integrated Circuits",
+        "Power Electronics",
+        "Robotics\u00a0and Autonomy",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Systems and Networking"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.125,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "Artificial Intelligence",
+        "Biotechnology",
+        "Complex Systems, Network Science and Computation",
+        "Computational Science and Engineering",
+        "Energy Systems",
+        "Energy and the Environment",
+        "Image Analysis",
+        "Information Theory and Communications",
+        "Information, Networks, and Decision Systems",
+        "Optimization",
+        "Remote Sensing",
+        "Scientific Computing",
+        "Security",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning",
+        "Systems and Networking"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.3125,
+        "keyword_ratio": 0.625
+      }
+    },
+    {
+      "items": [
+        "Advanced Materials Processing",
+        "Astrophysics, Fusion and Plasma Physics",
+        "High Energy Density, Plasma Physics and Electromagnetics",
+        "Integrated Circuits",
+        "Materials Synthesis and Processing",
+        "Microfluidics and Microsystems",
+        "Nanotechnology",
+        "Photonics and Optoelectronics",
+        "Physical Electronics, Devices, and Plasma Science",
+        "Semiconductor Physics and Devices",
+        "Sensors and Actuators",
+        "Solid State, Electronics, Optoelectronics and MEMs"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Circuits and Electronic Systems",
+        "Computer Architecture",
+        "Computer Engineering",
+        "Computer Systems",
+        "Information Theory and Communications",
+        "Integrated Circuits",
+        "Micro Nano Systems",
+        "Optical Physics and Quantum Information Science",
+        "Power Electronics",
+        "Semiconductor Physics and Devices",
+        "Systems and Networking"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.36363636363636365,
+        "keyword_ratio": 0.5454545454545454
+      }
+    },
+    {
+      "items": [
+        "Algorithms",
+        "Bio-Electrical Engineering",
+        "Biomedical Imaging and Instrumentation",
+        "Biotechnology",
+        "Complex Systems, Network Science and Technology",
+        "Computer-Aided Diagnosis",
+        "Image Analysis",
+        "Microfluidics and Microsystems",
+        "Nanobio Applications",
+        "Nanotechnology",
+        "Neuroscience",
+        "Remote Sensing",
+        "Scientific Computing",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.1875,
+        "keyword_ratio": 0.5625
+      }
+    },
+    {
+      "items": [
+        "Computer Engineering",
+        "Robotics and Autonomy",
+        "Information, Networks, and Decision Systems",
+        "Physical Electronics, Devices, and Plasma Science",
+        "Circuits and Electronic Systems",
+        "Bio-Electrical Engineering",
+        "Connect with us"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.2857142857142857,
+        "keyword_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "items": [
+        "Donald Adjeroh",
+        "Jeremy Dawson",
+        "Gianfranco Doretto",
+        "Nima Karimian",
+        "Natalia Schmid",
+        "Matthew Valenti"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Donald Adjeroh",
+        "Gianfranco Doretto",
+        "Ramana Reddy"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Gianfranco Doretto",
+        "Amr El-Wakeel",
+        "Yu Gu",
+        "Roy Nutter Jr.",
+        "Ramana Reddy",
+        "Brian Woerner"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Donald Adjeroh",
+        "Tom Devine",
+        "Gianfranco Doretto",
+        "Katerina Goseva-Popstojanova",
+        "Don McLaughlin",
+        "Brian Powell",
+        "K. Subramani"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Tom Devine",
+        "Dale Dzielski",
+        "Katerina Goseva-Popstojanova",
+        "Nima Karimian",
+        "David Krovich",
+        "Roy Nutter Jr.",
+        "Sara Tehranipoor"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kevin Bandura",
+        "Jeremy Dawson",
+        "Parviz Famouri",
+        "David Graham",
+        "Yuxin Liu"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Muhammad Choudhry",
+        "Parviz Famouri",
+        "Sarika Khushalani-Solanki",
+        "Jignesh Solanki",
+        "Anurag Srivastava"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Kevin Bandura",
+        "Katerina Goseva-Popstojanova",
+        "Natalia Schmid"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Hany Ammar",
+        "Tom Devine",
+        "Dale Dzielski",
+        "Katerina Goseva-Popstojanova"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Donald Adjeroh",
+        "Tom Devine",
+        "K. Subramani",
+        "Piotr Wojciechowski"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "David Graham",
+        "Mohamed Hefeida",
+        "Natalia Schmid",
+        "Matthew Valenti",
+        "Brian Woerner"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research Areas",
+        "Lane Department of Computer Science and Electrical Engineering",
+        "Benjamin M. Statler College of Engineering and Mineral Resources",
+        "Connect With Us"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "AI, Biometrics/Computer Vision",
+        "AI and Health",
+        "AI, Robotics and Autonomous Vehicles",
+        "Big Data and Visualization",
+        "Cybersecurity and Computer Forensics",
+        "Nanotechnology/Electronics",
+        "Power and Energy Systems",
+        "Radio and Astronomy",
+        "Software Engineering",
+        "Theoretical Computer Science",
+        "Wireless Communications and  Sensor Networks"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.36363636363636365
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Artificial Intelligence and Machine Learning Degree Programs: MS AI, MS SE, BS SE",
+        "Data Science and Analytics Degree Programs: MS AI, MS SE, BS SE",
+        "Embedded and Computer Systems Degree Programs: MS CMPE, BS CMPE",
+        "Autonomous and Robotic Systems Degree Programs: MS AI, MS CMPE, BS CMPE",
+        "Computer Networks Security, and Internet-of-Things Degree Programs: MS CMPE, MS SE, BS CMPE, BS SE",
+        "Software System and Enterprise Software Degree Programs: MS SE, BS SE",
+        "Cloud Computing and Virtualization Degree Programs: MS SE, BS SE"
+      ],
+      "output_list_from_llm": [
+        "Artificial Intelligence and Machine Learning Degree Programs: MS AI, MS SE, BS SE",
+        "Data Science and Analytics Degree Programs: MS AI, MS SE, BS SE",
+        "Computer Networks Security, and Internet-of-Things Degree Programs: MS CMPE, MS SE, BS CMPE, BS SE",
+        "Software System and Enterprise Software Degree Programs: MS SE, BS SE",
+        "Cloud Computing and Virtualization Degree Programs: MS SE, BS SE"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Cyber Security",
+        "Computing Theory",
+        "Computer Systems",
+        "Intelligent Systems",
+        "Software Engineering",
+        "Network and Telecommunications"
+      ],
+      "output_list_from_llm": [
+        "Cyber Security",
+        "Computing Theory",
+        "Intelligent Systems",
+        "Software Engineering"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "The Ribarsky Center for Visual Analytics",
+        "Robotics Lab",
+        "KDD Lab",
+        "Wireless Networking and Sensing Lab",
+        "High Performance Computing Architecture and System Lab",
+        "Video and Image Analysis Lab",
+        "Uncertainty Quantification Lab",
+        "Gaming and Mixed Reality Lab"
+      ],
+      "output_list_from_llm": [
+        "Robotics Lab",
+        "KDD Lab",
+        "Wireless Networking and Sensing Lab",
+        "High Performance Computing Architecture and System Lab",
+        "Video and Image Analysis Lab",
+        "Gaming and Mixed Reality Lab"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Artificial Intelligence, Machine Learning, and Natural Language Processing",
+        "Bioinformatics and Computational Biology",
+        "Computer Architecture",
+        "Computational Science and Engineering",
+        "Databases and Data Mining",
+        "Distributed Systems",
+        "Graphics, Visualization, and Geometric Modeling",
+        "Human-Computer Interaction",
+        "Information Security and Assurance",
+        "Networking and Operating Systems",
+        "Programming Languages and Compilers",
+        "Robotics and Computer Vision",
+        "Software Engineering",
+        "Theory of Computing, Algorithms, and Quantum Computing"
+      ],
+      "output_list_from_llm": [
+        "Artificial Intelligence, Machine Learning, and Natural Language Processing",
+        "Databases and Data Mining",
+        "Distributed Systems",
+        "Human-Computer Interaction",
+        "Information Security and Assurance",
+        "Networking and Operating Systems",
+        "Programming Languages and Compilers",
+        "Robotics and Computer Vision",
+        "Software Engineering",
+        "Theory of Computing, Algorithms, and Quantum Computing"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Artificial Intelligence",
+        "Biotechnology",
+        "Complex Systems, Network Science and Computation",
+        "Computational Science and Engineering",
+        "Energy Systems",
+        "Energy and the Environment",
+        "Image Analysis",
+        "Information Theory and Communications",
+        "Information, Networks, and Decision Systems",
+        "Optimization",
+        "Remote Sensing",
+        "Scientific Computing",
+        "Security",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning",
+        "Systems and Networking"
+      ],
+      "output_list_from_llm": [
+        "Artificial Intelligence",
+        "Complex Systems, Network Science and Computation",
+        "Computational Science and Engineering",
+        "Information Theory and Communications",
+        "Information, Networks, and Decision Systems",
+        "Optimization",
+        "Security",
+        "Statistics and Machine Learning",
+        "Systems and Networking"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "agent is a system designed to solve real",
+        "source AI agent to score a non",
+        "negligible score on SWE",
+        "bench, a software engineering benchmark based on more than 2000 real GitHub issues."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Algorithms",
+        "Bio-Electrical Engineering",
+        "Biomedical Imaging and Instrumentation",
+        "Biotechnology",
+        "Complex Systems, Network Science and Technology",
+        "Computer-Aided Diagnosis",
+        "Image Analysis",
+        "Microfluidics and Microsystems",
+        "Nanobio Applications",
+        "Nanotechnology",
+        "Neuroscience",
+        "Remote Sensing",
+        "Scientific Computing",
+        "Sensors and Actuators",
+        "Signal and Image Processing",
+        "Statistics and Machine Learning"
+      ],
+      "output_list_from_llm": [
+        "Algorithms",
+        "Scientific Computing",
+        "Statistics and Machine Learning"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Circuits and Electronic Systems",
+        "Computer Architecture",
+        "Computer Engineering",
+        "Computer Systems",
+        "Information Theory and Communications",
+        "Integrated Circuits",
+        "Micro Nano Systems",
+        "Optical Physics and Quantum Information Science",
+        "Power Electronics",
+        "Semiconductor Physics and Devices",
+        "Systems and Networking"
+      ],
+      "output_list_from_llm": [
+        "Computer Architecture",
+        "Computer Engineering",
+        "Computer Systems",
+        "Systems and Networking"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Computer Engineering",
+        "Robotics and Autonomy",
+        "Information, Networks, and Decision Systems",
+        "Physical Electronics, Devices, and Plasma Science",
+        "Circuits and Electronic Systems",
+        "Bio-Electrical Engineering",
+        "Connect with us"
+      ],
+      "output_list_from_llm": [
+        "Computer Engineering"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics and HCI"
+      ],
+      "output_list_from_llm": [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Artificial Intelligence, Machine Learning, Privacy/FATE",
+        "Theory and Computation",
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security",
+        "Computer Vision, Robotics, Graphics, HCI"
+      ],
+      "output_list_from_llm": [
+        "Systems, Databases, Software Engineering, Cyber-Physical Systems, Security"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Algorithms and Theory",
+        "Artificial Intelligence, Intelligent Systems, Machine Learning, Natural Language Processing",
+        "Bioinformatics, Computational Biology",
+        "Computer Architecture",
+        "Computer Science Education",
+        "Computer Vision",
+        "Cyber-Physical Systems",
+        "Cybersecurity",
+        "Data Science",
+        "Databases, Data Mining, Information Retrieval Systems",
+        "Digital Humanities",
+        "Electronic Design Automation and VLSI",
+        "Embedded Systems",
+        "Gaming",
+        "Graphics, Visualization and Computational Fabrication",
+        "Health",
+        "Human-Centered Systems",
+        "Human-Computer Interaction",
+        "Networks",
+        "Parallel and Distributed Computing",
+        "Programming Languages, Compilers",
+        "Robotics, Human-Robot Interaction",
+        "Software and Software Engineering",
+        "Systems"
+      ],
+      "output_list_from_llm": [
+        "Software and Software Engineering"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Systems, databases, software engineering, cyber-physical systems, security",
+    "Software and software engineering",
+    "Statistics and machine learning",
+    "Systems and networking",
+    "Computer engineering",
+    "Artificial intelligence and machine learning degree programs: ms ai, ms se, bs se",
+    "Data science and analytics degree programs: ms ai, ms se, bs se",
+    "Computer networks security, and internet-of-things degree programs: ms cmpe, ms se, bs cmpe, bs se",
+    "Software system and enterprise software degree programs: ms se, bs se",
+    "Cyber security",
+    "Computing theory",
+    "Intelligent systems",
+    "Robotics lab",
+    "Kdd lab",
+    "Wireless networking and sensing lab",
+    "High performance computing architecture and system lab",
+    "Video and image analysis lab",
+    "Gaming and mixed reality lab",
+    "Artificial intelligence, machine learning, and natural language processing",
+    "Databases and data mining",
+    "Distributed systems",
+    "Human-computer interaction",
+    "Information security and assurance",
+    "Programming languages and compilers",
+    "Robotics and computer vision",
+    "Theory of computing, algorithms, and quantum computing",
+    "Complex systems, network science and computation",
+    "Computational science and engineering",
+    "Information theory and communications",
+    "Information, networks, and decision systems",
+    "Optimization",
+    "Scientific computing",
+    "Computer architecture",
+    "Computer systems",
+    "Artificial intelligence, machine learning, privacy/fate"
+  ],
+  "error": null
+}

@@ -1,0 +1,768 @@
+{
+  "level1_term": "psychiatry",
+  "all_urls": [
+    "https://psychiatry.uchicago.edu/research-0",
+    "https://med.nyu.edu/departments-institutes/psychiatry/research",
+    "https://www.mayo.edu/research/departments-divisions/department-psychiatry-psychology/focus-areas",
+    "https://www.psychiatry.wisc.edu/research/",
+    "https://medicine.iu.edu/psychiatry/research",
+    "https://medicine.utah.edu/psychiatry/research",
+    "https://med.stanford.edu/psychiatry/research.html",
+    "http://www.med.uvm.edu/psychiatry/research",
+    "https://www.med.unc.edu/psych/research/",
+    "https://research.med.psu.edu/departments/psychiatry/clinical-studies/",
+    "https://medicine.yale.edu/psychiatry/research/",
+    "https://phoenixmed.arizona.edu/department-psychiatry/research",
+    "https://icahn.mssm.edu/about/departments-offices/psychiatry/research",
+    "https://psychiatry.ufl.edu/research/",
+    "https://www.cumc.columbia.edu/dept/pi/research/",
+    "https://psychiatry.ucsf.edu/research",
+    "https://medicine.uky.edu/departments/psychiatry/research",
+    "https://medicine.umich.edu/dept/psychiatry/research",
+    "https://medicine.missouri.edu/departments/psychiatry/research",
+    "https://psychiatry.uw.edu/who-we-are/current-projects/?fwp_project_type=basic-science%2Cclinical-research%2Capplied-research-implementation",
+    "https://www.psychiatry.northwestern.edu/research/index.html",
+    "https://medicine.buffalo.edu/departments/psychiatry/research.html",
+    "https://school.wakehealth.edu/departments/psychiatry-and-behavioral-medicine/psychiatry-and-behavioral-medicine-research",
+    "https://www.utsouthwestern.edu/departments/psychiatry/research/",
+    "https://psychiatry.wustl.edu/research/",
+    "https://renaissance.stonybrookmedicine.edu/psychiatry/research/research_programs",
+    "https://psych.hms.harvard.edu/research",
+    "https://www.psychiatry.pitt.edu/research",
+    "https://www.bcm.edu/departments/psychiatry-and-behavioral-sciences/research",
+    "https://research.med.psu.edu/departments/psychiatry/"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "About Us",
+        "Clinical Services",
+        "Education",
+        "Adult Attention Deficit Hyperactivity Disorder",
+        "Alcohol Use Disorder & Traumatic Stress",
+        "Anxiety, Stress & Prolonged Grief",
+        "Brain Aging & Sleep Center",
+        "Computational",
+        "Decision-Making & Reward",
+        "Dementia",
+        "Epidemiology and Services",
+        "Mood Disorders",
+        "Mood States & Alzheimer\u2019s Disease Risk Program",
+        "Neuroscience",
+        "Obsessive\u2013Compulsive Disorder",
+        "Post-Traumatic Stress Disorder",
+        "Psychedelic Medicine",
+        "Publications",
+        "Research Leadership",
+        "Research Training",
+        "Schizophrenia",
+        "Substance Use Disorder",
+        "Inclusion\u00a0& Health Equity",
+        "Faculty"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 24,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.20833333333333334,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.20833333333333334
+      }
+    },
+    {
+      "items": [
+        "adult attention deficit hyperactivity disorder",
+        "anxiety, stress, and prolonged grief",
+        "alcohol use disorder and traumatic stress",
+        "brain aging and sleep",
+        "computational research",
+        "decision-making and reward",
+        "dementia and neurodegenerative disease",
+        "epidemiology",
+        "mood disorders and cognition",
+        "mood states and Alzheimer\u2019s disease risk",
+        "neuroscience",
+        "obsessive\u2013compulsive disorder",
+        "post-traumatic stress disorder",
+        "psychedelic medicine",
+        "schizophrenia",
+        "substance use disorder"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    },
+    {
+      "items": [
+        "reviewed journals. Our faculty have also contributed to textbooks in the field, such as Post",
+        "Traumatic Stress Disorder, co",
+        "authored by associate professor Emily R. Stern, PhD, in Obsessive",
+        "compulsive Disorder: Phenomenology, Pathophysiology, and Treatment."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Clinical Disorders",
+        "Novel Methods for Understanding",
+        "Medical Diseases Interface with Psychiatry and Psychology",
+        "Science of Health Care Delivery"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Exploring Developmental Disabilities Through Lived Experiences (DDLE) Survey and Interview",
+        "Traumatic Brain Injury",
+        "Child and Adolescent Disorders",
+        "Schizophrenia and Psychotic Disorders",
+        "Substance Use Disorders",
+        "Mood Disorders",
+        "Racial Justice",
+        "Alzheimer\u2019s Disease, Dementia and Cognitive Aging",
+        "Social media"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.1111111111111111
+      }
+    },
+    {
+      "items": [
+        "abuse during adulthood as well as the long",
+        "term consequences of their use and co",
+        "use during adolescence."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Neuroscience",
+        "Substance Abuse",
+        "Child Psychiatry",
+        "Public Psychiatry",
+        "Quick Links"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Seven appointments in the National Academy of Medicine Appointees",
+        "Two appointments in the National Academy of Science",
+        "A total active grant portfolio of $83 million for 2024"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Resources",
+        "Education",
+        "Programs",
+        "Resources",
+        "Research",
+        "Programs",
+        "Resources",
+        "Diversity",
+        "Programs",
+        "Popular Searches",
+        "Explore Topics"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 11,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.18181818181818182,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.36363636363636365
+      }
+    },
+    {
+      "items": [
+        "1 Gustave L. Levy Place",
+        "Box 1230",
+        "New York, NY 10029",
+        "INFO FOR",
+        "EXPLORE",
+        "RESOURCES"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "PROFESSOR | Psychiatry",
+        "PROFESSOR | Neuroscience",
+        "PROFESSOR | Genetics and Genomic Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DEAN | Icahn School of Medicine at Mount Sinai",
+        "PRESIDENT FOR ACADEMIC AFFAIRS, MOUNT SINAI HEALTH SYSTEM",
+        "PROFESSOR | Psychiatry",
+        "PROFESSOR | Neuroscience",
+        "PROFESSOR | Pharmacological Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "DIRECTOR, ADDICTION INSTITUTE AT MOUNT SINAI",
+        "PROFESSOR | Pharmacological Sciences",
+        "PROFESSOR | Neuroscience",
+        "PROFESSOR | Psychiatry",
+        "PROFESSOR | Artificial Intelligence and Human Health"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "PROFESSOR | Artificial Intelligence and Human Health",
+        "PROFESSOR | Neurology",
+        "PROFESSOR | Neurosurgery",
+        "PROFESSOR | Neuroscience",
+        "PROFESSOR | Psychiatry"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DEAN FOR ACADEMIC AFFAIRS",
+        "DIRECTOR FRIEDMAN BRAIN INSTITUTE",
+        "PROFESSOR | Neuroscience",
+        "PROFESSOR | Pharmacological Sciences",
+        "PROFESSOR | Psychiatry",
+        "CHIEF SCIENTIFIC OFFICER"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Child Behavioral Health & Science Center",
+        "Depression and Anxiety Center",
+        "Women\u2019s Mental Health"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "DEI Steering Committee",
+        "Partial Hospitalization Program",
+        "Psychiatric Services"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Center for Addiction Research and Education",
+        "Center for Autism and Neurodevelopment",
+        "Center for Autism and Related Disabilities",
+        "Center for OCD, Anxiety, and Related Disorders",
+        "FRC Pottash Research Initiative",
+        "Neurocognitive Laboratory",
+        "FEAR Lab",
+        "PGENeS Lab",
+        "Introduction",
+        "Points to Remember",
+        "Current Clinical Trials",
+        "Make a Gift"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5833333333333334
+      }
+    },
+    {
+      "items": [
+        "Centers",
+        "Initiatives",
+        "Clinical Trials"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Investigator",
+        "Protocol ID",
+        "Sexes",
+        "Location"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Investigator",
+        "Protocol ID",
+        "Sexes",
+        "Location"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Andrew Krystal, MD, MS",
+        "Daniel Mathalon, PhD, MD",
+        "James McCracken, MD",
+        "Vikaas Sohal, MD, PhD",
+        "Marina Tolou-Shams, PhD"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Annette Garth",
+        "Natalya G Means",
+        "Luu H Le",
+        "Paul K Martin",
+        "Briana R Moore",
+        "Psychiatry",
+        "College of Medicine",
+        "Helpful Links"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1.Trauma",
+        "2.\u00a0HIV",
+        "3.\u00a0Substance use and addiction",
+        "4.\u00a0Suicide prevention",
+        "5.\u00a0Tobacco control"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research Coordinator",
+        "859-562-2356",
+        "annette.garth@uky.edu",
+        "245 Fountain Court, 2nd Floor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Data Management Specialist",
+        "luule2412@uky.edu",
+        "751 Rose Street"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "2014), and a Master of Science from the University of Kentucky (clinical psychology",
+        "2019), and a PhD from the University of Kentucky (clinical psychology",
+        "2022). I completed my clinical psychology internship at the Charleston Consortium",
+        "housed within the Medical University of South Carolina and the Ralph H. Johnson VA Medical Center",
+        "and specialized in evidence",
+        "based approaches to treating traumatic stress."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Alcohol and substance use disorders",
+        "Lifespan behavioral disorders, mood disorders, and eating disorders",
+        "Personality disorders, schizophrenia, and psychotic disorders",
+        "Genetics of neuropsychiatric disorders and dementias",
+        "Behavioral health and medication trials",
+        "Basic neuroscience, neuroimaging"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Baylor College of Medicine",
+        "Departments",
+        "Psychiatry and Behavioral Sciences",
+        "Research"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Clinical Disorders",
+        "Novel Methods for Understanding",
+        "Medical Diseases Interface with Psychiatry and Psychology",
+        "Science of Health Care Delivery"
+      ],
+      "output_list_from_llm": [
+        "Clinical Disorders",
+        "Medical Diseases Interface with Psychiatry and Psychology"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "2014), and a Master of Science from the University of Kentucky (clinical psychology",
+        "2019), and a PhD from the University of Kentucky (clinical psychology",
+        "2022). I completed my clinical psychology internship at the Charleston Consortium",
+        "housed within the Medical University of South Carolina and the Ralph H. Johnson VA Medical Center",
+        "and specialized in evidence",
+        "based approaches to treating traumatic stress."
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Medical diseases interface with psychiatry and psychology",
+    "Clinical disorders"
+  ],
+  "error": null
+}

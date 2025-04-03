@@ -1,0 +1,2890 @@
+{
+  "level1_term": "data science",
+  "all_urls": [
+    "https://datascience.stanford.edu/research/research-areas",
+    "https://www.science.purdue.edu/data-science/research/index.html",
+    "https://hdsr.mitpress.mit.edu/pub/d9j96ne4",
+    "https://www.cmu.edu/dietrich/statistics-datascience/research/index.html",
+    "https://luddy.indiana.edu/research/research-areas/data-science.html",
+    "https://datascience.columbia.edu/research/focus-areas/",
+    "https://ischool.uw.edu/research/areas/data-science",
+    "https://www.saintpeters.edu/academics/graduate-programs/master-of-science-in-data-science/student-and-faculty-research/",
+    "https://www.bu.edu/cise/research-areas/data-science-analytics/",
+    "https://research.gatech.edu/data",
+    "https://stat.mit.edu/research/",
+    "http://ischool.illinois.edu/research/areas/data-science",
+    "https://www.smu.edu/dedman/academics/departments/statistics/research",
+    "https://www.khoury.northeastern.edu/research_areas/data-science/",
+    "https://datascience.ucsd.edu/research/",
+    "https://research.seas.upenn.edu/initiatives/data-science/",
+    "https://www.rit.edu/computing/phd-computing-and-information-sciences/research/data-science",
+    "https://engineering.buffalo.edu/computer-science-engineering/research/research-areas/artificial-intelligence/databases-and-data-science.html",
+    "https://www.memphis.edu/fedex/research/data_science/datascience.php",
+    "https://cs.unc.edu/research/areas/machine-learning-and-data-science/",
+    "https://sds.utsa.edu/research/",
+    "https://www.umassd.edu/data-science/research-and-seminars/",
+    "https://medicine.yale.edu/biomedical-informatics-data-science/research/areas/",
+    "https://www.me.washington.edu/research/research_areas/data-science-machine-learning",
+    "https://www.mccormick.northwestern.edu/industrial/research/research-areas/applied-statistics-statistical-learning.html",
+    "https://www.vanderbilt.edu/datascience/data-science-research/",
+    "https://giesbusiness.illinois.edu/dsrs",
+    "https://infosci.cornell.edu/research/data-science",
+    "https://cds.nyu.edu/",
+    "https://cs.duke.edu/research/interdisciplinary-research-data-science"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Main navigation",
+        "Data Science for Wildland Fire Research",
+        "Data Science for Physics",
+        "Data Science for Economics",
+        "Data Science for Education",
+        "Data Science for Human Health",
+        "Data Science for Humanity",
+        "Data Science for Linguistics",
+        "Data Science for Nature and Sustainability",
+        "Ethics and Data Science",
+        "The Science of Data Science",
+        "Events"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8333333333333334
+      }
+    },
+    {
+      "items": [
+        "Department of Biological Sciences",
+        "Department of Computer Science",
+        "Department of Statistics"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Communication",
+        "Campus",
+        "Departments",
+        "People"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "1. Scientific Understanding of Learning, Especially Deep Learning Algorithms.",
+        "2. Causal Reasoning",
+        "3. Precious Data",
+        "4. Multiple, Heterogeneous Data Sources",
+        "5. Inferring From Noisy and/or Incomplete Data.",
+        "6. Trustworthy AI",
+        "7. Computing Systems for Data-Intensive Applications",
+        "8. Automating Front-End Stages of the Data Life Cycle",
+        "9. Privacy",
+        "10. Ethics"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "noise ratio); or the data set is artisanal",
+        "small, task",
+        "specific, and/or targets a limited audience. A good example of expensive data comes from large, one"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Naini (Eds.), Financial cryptography and data security (pp. 195",
+        "215). Springer. https://doi.org/10.1007/978",
+        "45472"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "us/azure/machine",
+        "learning/concept",
+        "automated"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Dietrich College of Humanities and Social Sciences",
+        "AI-SDM",
+        "Biostatistics & Epidemiology",
+        "Causal Inference",
+        "Computational Finance",
+        "Computational Neuroscience",
+        "CSAFE",
+        "DELPHI",
+        "Foundations of Inference",
+        "Genomics & Genetics",
+        "Graphical Models & Networks",
+        "High-Dimensional Statistics",
+        "Natural Language Processing & Large Language Models",
+        "Nonparametric Methods",
+        "Optimal Transport",
+        "Optimization & Algorithms",
+        "Public Policy & Social Sciences",
+        "Sports Analytics/CMSAC",
+        "STAMPS",
+        "Statistical Machine Learning",
+        "Statistical Pedagogy & Educational Research",
+        "Time Series Forecasting"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.09090909090909091,
+        "length_consistency": true,
+        "pattern_ratio": 0.09090909090909091,
+        "keyword_ratio": 0.36363636363636365
+      }
+    },
+    {
+      "items": [
+        "The Algorithms Group",
+        "Audio Speech and Information REtreival (ASPIRE) Research Group",
+        "Center for Complex Networks and System Research",
+        "Crisis Technologies Innovation Lab",
+        "Cyberinfrastructure for Network Science Center",
+        "Data to Insight Center",
+        "Networks & agents Network (NaN)",
+        "Observatory on Social Media",
+        "Societal Computing Lab"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.2222222222222222,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Twitter",
+        "Facebook",
+        "Instagram",
+        "YouTube",
+        "LinkedIn"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Algorithmic & logical foundations of data science",
+        "Data security & privacy",
+        "Artificial intelligence",
+        "Network science",
+        "Biomedical & health data science",
+        "Social & ethical aspects of data science",
+        "Database & data management/mining & visualization",
+        "Systems for big data analytics"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.125,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Climate",
+        "Health Care",
+        "Social Justice",
+        "Business and Finance",
+        "Foundations of Data Science",
+        "Stay informed. Sign up for our newsletter."
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Data Science Program Webinar",
+        "Data Science Institute \u2013 Research Projects",
+        "Shah Shoib - Patent Analytics",
+        "Spoorthi Kondagadapu - China National Data",
+        "\u00a9 2025 Saint Peter's University | The Jesuit University of New Jersey"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Undergraduate \r\n                            Programs",
+        "Graduate \r\n                            Programs",
+        "Online \r\n                            Programs",
+        "Accelerated \r\n                          Programs",
+        "Colleges & Schools",
+        "Centers & Institutes",
+        "Faculty",
+        "Enrollment \r\n                          Services",
+        "Undergraduate",
+        "Adult \r\n                            Undergraduate",
+        "Graduate",
+        "Transfer \r\n                          Students",
+        "Military & \r\n                            Veterans",
+        "International \r\n                            Students",
+        "Tuition and \r\n                            Financial Aid",
+        "How to \r\n                          Apply",
+        "Campus \r\n                            Life",
+        "Mission Integration & Ministry",
+        "Clubs and \r\n                            Activities",
+        "Success \r\n                            Stories",
+        "Career \r\n                            Engagement",
+        "Alumni \r\n                          Network",
+        "Mission \r\n                            and History",
+        "Jersey City \r\n                            and Beyond",
+        "Jesuit Catholic \r\n                          Tradition",
+        "Advancement",
+        "Rankings and \r\n                            Accolades",
+        "Events",
+        "Student Presentations"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 29,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2413793103448276,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.13793103448275862
+      }
+    },
+    {
+      "items": [
+        "day workshop bringing together computational and experimental researchers who utilize large",
+        "scale models, machine learning, and data",
+        "on technical sessions focused on implementing large",
+        "scale computational and AI",
+        "driven models within the field."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Bertram Lud\u00e4scher\nProfessor and Director, Center for Informatics Research in Science and Scholarship",
+        "Craig Evans\nLecturer",
+        "Dong Wang\nAssociate Professor",
+        "Eunice E. Santos\nProfessor",
+        "Halil Kilicoglu\nAssociate Professor",
+        "Haohan Wang\nAssistant Professor",
+        "Ian Brooks\nResearch Scientist and Director, Center for Health Informatics",
+        "Ismini Lourentzou\nAssistant Professor",
+        "Jiaqi Ma\nAssistant Professor",
+        "Jingrui He\nProfessor and MSIM Program Director",
+        "Junwei Deng",
+        "Kahyun Choi\nAssistant Professor",
+        "Matthew Turk\nAssistant Professor",
+        "Nigel Bosch\nAssistant Professor",
+        "Ted Underwood\nProfessor",
+        "Yang Wang\nProfessor",
+        "Yang Zhang\nTeaching Assistant Professor",
+        "Yaoyao Liu\nAssistant Professor",
+        "Yue Guo\nAssistant Professor",
+        "Zoe LeBlanc\nAssistant Professor"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.05,
+        "keyword_ratio": 0.15
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigators",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigators",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigators",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigators",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigators",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigators",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Time frame",
+        "Investigator",
+        "Total funding to date",
+        "Funding agency"
+      ],
+      "metadata": {
+        "html_type": "dl",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "assisted Deep Learning",
+        "based Disaster Scene Assessment System with Active Human",
+        "AI Interactions"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "documented over centuries. By providing easy access to time",
+        "and place",
+        "specific long",
+        "term environmental data, this project seeks to facilitate\u2026"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "level specialization in Socio",
+        "sets will enable master's graduates to receive first",
+        "prepared for leadership\u2026"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "informed public. This was especially challenging during the COVID",
+        "Assisted Human",
+        "AI Teaming with Explanations,\" has been awarded a three",
+        "year, $599,999 grant from the National Science Foundation (NSF)."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Advances in statistical education",
+        "Analysis and methodology for compositional data",
+        "Bayesian methods and applications",
+        "Causal inference",
+        "Clinical trial design and analysis",
+        "DNA sequence analysis via Fourier transforms and abstraction augmented Markov models",
+        "Dynamic risk prediction triggered by intermediate event",
+        "Complex-valued data analysis",
+        "Geometric and topological data analysis",
+        "Human mobility patterns",
+        "Laplace and Fourier transform inversion",
+        "Machine learning and text sentiment analysis",
+        "Mixed-valued time series analysis",
+        "Multivariate and high-dimensional time series analysis",
+        "Measuring sensitivity to nonignorability",
+        "Nonparametric statistics",
+        "Non-probability sampling",
+        "Order statistics",
+        "Ranking and selection",
+        "Real-time prediction in clinical trials",
+        "Recurrent event analysis",
+        "Saddlepoint approximations and higher-order asymptotic theory",
+        "Scalable Gaussian processes with applications to earth sciences.",
+        "Sports analytics: swimming, diving, track and field",
+        "Stochastic processes, feedback systems and networks",
+        "Stay Connected",
+        "Why Study Here?",
+        "Undergraduate",
+        "Graduate",
+        "Directory",
+        "Research",
+        "Search",
+        "Popular Searches"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 33,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.24242424242424243,
+        "length_consistency": true,
+        "pattern_ratio": 0.3939393939393939,
+        "keyword_ratio": 0.5151515151515151
+      }
+    },
+    {
+      "items": [
+        "temporal analysis of longitudinal and survival data. Currently, we are constructing spatial",
+        "dimensional multi",
+        "type data with block",
+        "wise missing structure."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "valued but rather complex",
+        "they are not. Rather models with complex",
+        "valued functions as a function of complex",
+        "valued parameters and this ensures that they are not complex"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Top Conferences",
+        "ACM Special Interest Groups on Management of Data (SIGMOD)",
+        "ACM Symposium on Principles of Database Systems (PODS)",
+        "Very Large Data Bases Endowment\u00a0 Inc. (VLDB)"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "Associate Professor",
+        "Co-Director of Graduate Studies",
+        "Department of Computer Science and Engineering",
+        "School of Engineering and Applied Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Assistant Professor",
+        "Department of Computer Science and Engineering",
+        "School of Engineering and Applied Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Professor of Teaching",
+        "Department of Computer Science and Engineering",
+        "School of Engineering and Applied Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Katherine Johnson Chair in Artificial Intelligence",
+        "Professor",
+        "Department of Computer Science and Engineering",
+        "School of Engineering and Applied Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Associate Professor",
+        "Department of Computer Science and Engineering",
+        "School of Engineering and Applied Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Assistant Professor",
+        "Department of Computer Science and Engineering",
+        "School of Engineering and Applied Sciences"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "The CRA supports the CSRankings report because its evaluative criteria meet the 'GOTO' standard:",
+        "Good data.\u00a0 Data have been cleaned and curated.",
+        "Open.\u00a0 Data available, regarding attributes measured, at least for verification.",
+        "Transparent.\u00a0 Process and methodologies are entirely transparent.",
+        "Objective.\u00a0 Based on measurable attributes.",
+        "For more details, see Department Rankings, by H.V. Jagadish."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "a multidisciplinary academic",
+        "industrial partnership that's helping to make self",
+        "driving cars safer, cleaner, and more efficient."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "About",
+        "Research Projects\n\n 2019 Projects",
+        "2019 Projects",
+        "Leadership",
+        "Cluster Activity",
+        "Recent Publications",
+        "Recent Presentations",
+        "Memphis Data- A Data Science Conference",
+        "Intro to LLMs Workshop"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "data analysis methods",
+        "data storage solutions",
+        "data warehousing",
+        "data engineering",
+        "databases",
+        "data privacy",
+        "data security",
+        "data visualization",
+        "data provenance",
+        "data quality",
+        "big data - machine learning",
+        "data mining",
+        "economics and business analytics",
+        "data science in education",
+        "machine learning in Economics and Finance",
+        "forecasting",
+        "simulation",
+        "healthcare",
+        "bioinformatics",
+        "data science in government",
+        "ethical aspects of data science"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 21,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.047619047619047616,
+        "keyword_ratio": 0.8095238095238095
+      }
+    },
+    {
+      "items": [
+        "Facebook",
+        "twitter",
+        "Youtube",
+        "LinkedIn"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.7
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Stan Ahalt\n  Professor",
+        "Jay Aikat\n  Vice Dean, School of Data Science and Society",
+        "Mohit Bansal\n  John R. and Louise S. Parker Distinguished Professor",
+        "Gedas Bertasius\n  Assistant Professor",
+        "Snigdha Chaturvedi\n  Associate Professor",
+        "Tianlong Chen\n  Assistant Professor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Zhun Deng\n  Assistant Professor",
+        "Mingyu Ding\n  Assistant Professor",
+        "Neil S. Gaikwad\n  Adjunct Assistant Professor",
+        "Harlin Lee\n  Adjunct Assistant Professor",
+        "Richard Marks\n  Professor of the Practice",
+        "Leonard McMillan\n  Associate Professor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Brent Munsell\n  Teaching Associate Professor",
+        "Marc Niethammer\n  Professor",
+        "Shahriar Nirjon\n  Associate Professor",
+        "Junier Oliva\n  Associate Professor",
+        "Raghavendra Pothukuchi\n  Assistant Professor, Beginning July 2025",
+        "Roni Sengupta\n  Assistant Professor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Jorge Silva\n  Teaching Assistant Professor",
+        "Shashank Srivastava\n  Assistant Professor",
+        "Danielle Szafir\n  Associate Professor",
+        "Huaxiu Yao\n  Assistant Professor"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Research Areas",
+        "Exploring local pandemic effects with data science",
+        "Roadrunner",
+        "Stay Connected to the School of Data Science",
+        "Mission",
+        "Vision"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Bioinformatics and biomedical computing (Firas Khatib)",
+        "Neural computing, multi-agent systems (Haiping Xu)",
+        "Citizen Science and gamification\u00a0(Firas Khatib)",
+        "Computer and information security (Yuchou Chang, Gokhan Kul)",
+        "Data visualization and computer vision (Ming Shao)",
+        "E-commerce (Haiping Xu,\u00a0Shelley Zhang)",
+        "Data privacy and data security in cloud computing (Haiping Xu)",
+        "Cloud-based blockchains for big data storage (Haiping Xu)",
+        "Recommendation Systems (Shelley Zhang)",
+        "Machine/statistical learning, pattern recognition\u00a0(Ming Shao, Iren Valova)",
+        "Data mining and text mining using deep learning (Haiping Xu)",
+        "Neural computing, multi-agent systems (Ramprasad Balasubramanian,\u00a0Iren Valova, Shelley Zhang)",
+        "Decision-support with uncertainty (Shelley Zhang)",
+        "Computational and statistical learning (Donghui Yan)",
+        "Distributed information sharing, inference and learning\u00a0(Donghui Yan)",
+        "Mobile and digital health\u00a0(Donghui Yan)",
+        "Data Science Education (Gary Davis, Saeja Kim)",
+        "Spatial Point Processes\u00a0(Gary Davis)",
+        "Scientific machine learning (Yanlai Chen, Zheng Chen,\u00a0Alfa Heryudono,\u00a0Sigal Gottlieb)",
+        "Physics informed neural networks and universal differential equations (Scott Field, \u00a0Alfa Heryudono)",
+        "Deep matched filtering (Scott Field)",
+        "Undergraduate capstone",
+        "Graduate thesis and practicum",
+        "Projects and hackathons sponsored by the\u00a0BigDataClub",
+        "Data Science Capstone Day\u00a0talks and abstracts"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.24,
+        "length_consistency": true,
+        "pattern_ratio": 0.12,
+        "keyword_ratio": 0.48
+      }
+    },
+    {
+      "items": [
+        "Computational and statistical learning (Donghui Yan)",
+        "Distributed information sharing, inference and learning\u00a0(Donghui Yan)",
+        "Mobile and digital health\u00a0(Donghui Yan)",
+        "Data Science Education (Gary Davis, Saeja Kim)",
+        "Spatial Point Processes\u00a0(Gary Davis)",
+        "Scientific machine learning (Yanlai Chen, Zheng Chen,\u00a0Alfa Heryudono,\u00a0Sigal Gottlieb)",
+        "Physics informed neural networks and universal differential equations (Scott Field, \u00a0Alfa Heryudono)",
+        "Deep matched filtering (Scott Field)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.375
+      }
+    },
+    {
+      "items": [
+        "Undergraduate capstone",
+        "Graduate thesis and practicum",
+        "Projects and hackathons sponsored by the\u00a0BigDataClub",
+        "Data Science Capstone Day\u00a0talks and abstracts"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Autonomous systems",
+        "Diagnostics and prognostics",
+        "Disease detection",
+        "Fault detection in manufacturing",
+        "Human and machine interaction",
+        "Order reduction of dynamical systems",
+        "Supply chain production and process improvement"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2857142857142857,
+        "keyword_ratio": 0.42857142857142855
+      }
+    },
+    {
+      "items": [
+        "Mon, 08/05/2024",
+        "3D pathology and AI for Barrett\u2019s esophagus",
+        "A new project aims to improve early cancer detection for people with a digestive condition."
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Algorithms and analysis of training predictive models on very large data sets",
+        "Statistical methods for the design and analysis of computer simulation experiments",
+        "Text mining for legal analytics",
+        "Mining large industrial databases for discovering root causes of poor quality",
+        "Development and implementation of machine learning algorithms in MapReduce",
+        "Predictive modeling of consumer credit data for strategic risk management"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Prescriptive analytics to focus on trends using simulation and optimization",
+        "Predictive analytics to use statistical tools to predict the future",
+        "Descriptive analytics to enable smart decisions based on data"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.3333333333333333,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Statistical modeling and analysis",
+        "Machine learning",
+        "Design of physical and simulation experiments"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.6666666666666666,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "Bruce Ankenman",
+        "Dan Apley",
+        "Diego Klabjan",
+        "Simge K\u00fc\u00e7\u00fckyavuz",
+        "Yiping Lu",
+        "Ed Malthouse",
+        "Sanjay Mehrotra",
+        "David Morton",
+        "Barry Nelson",
+        "Jorge Nocedal",
+        "Ajit Tamhane",
+        "Zhaoran Wang"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Research Areas",
+        "Financial Engineering",
+        "Healthcare Engineering",
+        "Optimization",
+        "Computational Social Science",
+        "Logistics & Operations",
+        "Stochastic Analysis & Simulation"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.14285714285714285,
+        "keyword_ratio": 0.8571428571428571
+      }
+    },
+    {
+      "items": [
+        "Technical skills development",
+        "Project management",
+        "Industry best practices",
+        "Real-world solution building"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Using Data Science to Investigate Climate Resilient Strategies Along US Inland Waterways (DSI-SRP)",
+        "Modeling Signaling Pathways Using Recurrent Neural Networks (DSI-SRP)",
+        "Can Deep Neural Networks Model Variability in Human Visual Cognition (DSI-SRP)",
+        "Announcing DSSG 2023 Projects: Fostering Classroom Tools and Assistive Technology",
+        "Follow along with AI Summer on the Vanderbilt Data Science YouTube page",
+        "Register now for the upcoming May 17 webinar on \"ChatGPT: The Future of the Classroom\"",
+        "Vanderbilt Data Science's Narrative Arcs Project: Using Deep Learning to Visualize Narratives",
+        "Vanderbilt University's Data Science program hosting AI Summer workshop"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.875
+      }
+    },
+    {
+      "items": [
+        "Using Data Science to Investigate Climate Resilient Strategies Along US Inland Waterways (DSI-SRP)",
+        "Modeling Signaling Pathways Using Recurrent Neural Networks (DSI-SRP)",
+        "Can Deep Neural Networks Model Variability in Human Visual Cognition (DSI-SRP)",
+        "Announcing DSSG 2023 Projects: Fostering Classroom Tools and Assistive Technology",
+        "Follow along with AI Summer on the Vanderbilt Data Science YouTube page",
+        "Register now for the upcoming May 17 webinar on \"ChatGPT: The Future of the Classroom\"",
+        "Vanderbilt Data Science's Narrative Arcs Project: Using Deep Learning to Visualize Narratives",
+        "Vanderbilt University's Data Science program hosting AI Summer workshop"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 8,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.875
+      }
+    },
+    {
+      "items": [
+        "Inferential statistics",
+        "Social media analytics",
+        "Text mining",
+        "Natural language processing",
+        "Machine learning",
+        "Deep learning",
+        "Data visualization",
+        "Dashboard design",
+        "Web scraping"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "items": [
+        "Data storage",
+        "Database usage",
+        "Data cleaning",
+        "Data gathering",
+        "Scalable computing",
+        "Image processing",
+        "App development",
+        "LLM development",
+        "Cloud Computing"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2222222222222222,
+        "keyword_ratio": 0.8888888888888888
+      }
+    },
+    {
+      "items": [
+        "Bloomberg Terminal",
+        "Bureau van Dijk",
+        "Capital IQ",
+        "Gies Consumer and Small Business Credit Panel",
+        "Nielsen",
+        "Wharton Research Data Services"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Data science",
+        "Programming",
+        "Data analysis",
+        "Web development",
+        "Data visualization",
+        "Web scraping",
+        "Text mining"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2857142857142857,
+        "keyword_ratio": 0.7142857142857143
+      }
+    },
+    {
+      "items": [
+        "Let us help you with key data services",
+        "Student interns make an impact",
+        "Frequently Asked Questions",
+        "Explore",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Costs",
+        "Analyses",
+        "Consultations",
+        "Computational capability"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Solon    Barocas",
+        "Ayham    Boucher",
+        "Cristobal     Cheyre",
+        "Morten    Christiansen",
+        "Cristian     Danescu-Niculescu-Mizil",
+        "Nikhil    Garg",
+        "Paul    Ginsparg",
+        "Haym    Hirsh",
+        "Thorsten    Joachims",
+        "Jon    Kleinberg",
+        "Allison    Koenecke",
+        "Lillian    Lee",
+        "Mor     Naaman",
+        "Rajalakshmi    Nandakumar",
+        "Helen     Nissenbaum",
+        "Tapan     Parikh",
+        "Emma    Pierson",
+        "Jeff     Rzeszotarski",
+        "Benjamin    Soltoff",
+        "Fei    Wang",
+        "Angelina    Wang",
+        "Stephen    Wicker",
+        "Matthew    Wilkens",
+        "Qian    Yang",
+        "Yian    Yin"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 25,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "March 31, 2025, 5:30 pm\nMath and Democracy Seminar: Matthew Dahl (Yale University)",
+        "April 3, 2025, 2:00 pm\nMath and Data (MaD) Seminar: Daniel Hsu",
+        "April 10, 2025, 2:00 pm\nMath and Data (MaD) Seminar: Lechao Xiao",
+        "April 17, 2025, 2:00 pm\nMath and Data (MaD) Seminar: Yuqi Gu",
+        "April 24, 2025, 11:00 am\nNLP and Text-as-Data Speaker Series: Jonathan Berant (Tel-Aviv University)"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "Secondary Menu",
+        "Main navigation",
+        "Sidebar Navigation",
+        "Data Science News",
+        "Department of Computer Science",
+        "Undergraduate",
+        "Graduate",
+        "General Information",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2222222222222222,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1111111111111111
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Algorithms and analysis of training predictive models on very large data sets",
+        "Statistical methods for the design and analysis of computer simulation experiments",
+        "Text mining for legal analytics",
+        "Mining large industrial databases for discovering root causes of poor quality",
+        "Development and implementation of machine learning algorithms in MapReduce",
+        "Predictive modeling of consumer credit data for strategic risk management"
+      ],
+      "output_list_from_llm": [
+        "Algorithms and analysis of training predictive models on very large data sets",
+        "Statistical methods for the design and analysis of computer simulation experiments",
+        "Text mining for legal analytics",
+        "Mining large industrial databases for discovering root causes of poor quality",
+        "Development and implementation of machine learning algorithms in MapReduce",
+        "Predictive modeling of consumer credit data for strategic risk management"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Statistical modeling and analysis",
+        "Machine learning",
+        "Design of physical and simulation experiments"
+      ],
+      "output_list_from_llm": [
+        "Statistical modeling and analysis",
+        "Machine learning"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Prescriptive analytics to focus on trends using simulation and optimization",
+        "Predictive analytics to use statistical tools to predict the future",
+        "Descriptive analytics to enable smart decisions based on data"
+      ],
+      "output_list_from_llm": [
+        "Prescriptive analytics to focus on trends using simulation and optimization",
+        "Predictive analytics to use statistical tools to predict the future",
+        "Descriptive analytics to enable smart decisions based on data"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Data science",
+        "Programming",
+        "Data analysis",
+        "Web development",
+        "Data visualization",
+        "Web scraping",
+        "Text mining"
+      ],
+      "output_list_from_llm": [
+        "Data science",
+        "Data analysis",
+        "Data visualization",
+        "Text mining"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Data storage",
+        "Database usage",
+        "Data cleaning",
+        "Data gathering",
+        "Scalable computing",
+        "Image processing",
+        "App development",
+        "LLM development",
+        "Cloud Computing"
+      ],
+      "output_list_from_llm": [
+        "Data storage",
+        "Database usage",
+        "Data cleaning",
+        "Data gathering",
+        "Scalable computing",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Main navigation",
+        "Data Science for Wildland Fire Research",
+        "Data Science for Physics",
+        "Data Science for Economics",
+        "Data Science for Education",
+        "Data Science for Human Health",
+        "Data Science for Humanity",
+        "Data Science for Linguistics",
+        "Data Science for Nature and Sustainability",
+        "Ethics and Data Science",
+        "The Science of Data Science",
+        "Events"
+      ],
+      "output_list_from_llm": [
+        "Data Science for Wildland Fire Research",
+        "Data Science for Physics",
+        "Data Science for Economics",
+        "Data Science for Education",
+        "Data Science for Human Health",
+        "Data Science for Humanity",
+        "Data Science for Linguistics",
+        "Data Science for Nature and Sustainability",
+        "Ethics and Data Science",
+        "The Science of Data Science"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Using Data Science to Investigate Climate Resilient Strategies Along US Inland Waterways (DSI-SRP)",
+        "Modeling Signaling Pathways Using Recurrent Neural Networks (DSI-SRP)",
+        "Can Deep Neural Networks Model Variability in Human Visual Cognition (DSI-SRP)",
+        "Announcing DSSG 2023 Projects: Fostering Classroom Tools and Assistive Technology",
+        "Follow along with AI Summer on the Vanderbilt Data Science YouTube page",
+        "Register now for the upcoming May 17 webinar on \"ChatGPT: The Future of the Classroom\"",
+        "Vanderbilt Data Science's Narrative Arcs Project: Using Deep Learning to Visualize Narratives",
+        "Vanderbilt University's Data Science program hosting AI Summer workshop"
+      ],
+      "output_list_from_llm": [
+        "Using Data Science to Investigate Climate Resilient Strategies Along US Inland Waterways (DSI-SRP)",
+        "Modeling Signaling Pathways Using Recurrent Neural Networks (DSI-SRP)",
+        "Can Deep Neural Networks Model Variability in Human Visual Cognition (DSI-SRP)",
+        "Vanderbilt Data Science's Narrative Arcs Project: Using Deep Learning to Visualize Narratives"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Top Conferences",
+        "ACM Special Interest Groups on Management of Data (SIGMOD)",
+        "ACM Symposium on Principles of Database Systems (PODS)",
+        "Very Large Data Bases Endowment Inc. (VLDB)"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Algorithmic & logical foundations of data science",
+        "Data security & privacy",
+        "Artificial intelligence",
+        "Network science",
+        "Biomedical & health data science",
+        "Social & ethical aspects of data science",
+        "Database & data management/mining & visualization",
+        "Systems for big data analytics"
+      ],
+      "output_list_from_llm": [
+        "Algorithmic & logical foundations of data science",
+        "Data security & privacy",
+        "Artificial intelligence",
+        "Network science",
+        "Biomedical & health data science",
+        "Social & ethical aspects of data science",
+        "Database & data management/mining & visualization",
+        "Systems for big data analytics"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Research Areas",
+        "Financial Engineering",
+        "Healthcare Engineering",
+        "Optimization",
+        "Computational Social Science",
+        "Logistics & Operations",
+        "Stochastic Analysis & Simulation"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "data analysis methods",
+        "data storage solutions",
+        "data warehousing",
+        "data engineering",
+        "databases",
+        "data privacy",
+        "data security",
+        "data visualization",
+        "data provenance",
+        "data quality",
+        "big data - machine learning",
+        "data mining",
+        "economics and business analytics",
+        "data science in education",
+        "machine learning in Economics and Finance",
+        "forecasting",
+        "simulation",
+        "healthcare",
+        "bioinformatics",
+        "data science in government",
+        "ethical aspects of data science"
+      ],
+      "output_list_from_llm": [
+        "data analysis methods",
+        "data storage solutions",
+        "data warehousing",
+        "data engineering",
+        "databases",
+        "data privacy",
+        "data security",
+        "data visualization",
+        "data provenance",
+        "data quality",
+        "big data - machine learning",
+        "data mining",
+        "economics and business analytics",
+        "data science in education",
+        "machine learning in Economics and Finance",
+        "forecasting",
+        "simulation",
+        "data science in government",
+        "ethical aspects of data science"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Technical skills development",
+        "Project management",
+        "Industry best practices",
+        "Real-world solution building"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Autonomous systems",
+        "Diagnostics and prognostics",
+        "Disease detection",
+        "Fault detection in manufacturing",
+        "Human and machine interaction",
+        "Order reduction of dynamical systems",
+        "Supply chain production and process improvement"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Data Science Program Webinar",
+        "Data Science Institute \u2013 Research Projects",
+        "Shah Shoib - Patent Analytics",
+        "Spoorthi Kondagadapu - China National Data",
+        "\u00a9 2025 Saint Peter's University | The Jesuit University of New Jersey"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "March 31, 2025, 5:30 pm Math and Democracy Seminar: Matthew Dahl (Yale University)",
+        "April 3, 2025, 2:00 pm Math and Data (MaD) Seminar: Daniel Hsu",
+        "April 10, 2025, 2:00 pm Math and Data (MaD) Seminar: Lechao Xiao",
+        "April 17, 2025, 2:00 pm Math and Data (MaD) Seminar: Yuqi Gu",
+        "April 24, 2025, 11:00 am NLP and Text-as-Data Speaker Series: Jonathan Berant (Tel-Aviv University)"
+      ],
+      "output_list_from_llm": [
+        "April 3, 2025, 2:00 pm Math and Data (MaD) Seminar: Daniel Hsu",
+        "April 10, 2025, 2:00 pm Math and Data (MaD) Seminar: Lechao Xiao",
+        "April 17, 2025, 2:00 pm Math and Data (MaD) Seminar: Yuqi Gu",
+        "April 24, 2025, 11:00 am NLP and Text-as-Data Speaker Series: Jonathan Berant (Tel-Aviv University)"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "1. Scientific Understanding of Learning, Especially Deep Learning Algorithms.",
+        "2. Causal Reasoning",
+        "3. Precious Data",
+        "4. Multiple, Heterogeneous Data Sources",
+        "5. Inferring From Noisy and/or Incomplete Data.",
+        "6. Trustworthy AI",
+        "7. Computing Systems for Data-Intensive Applications",
+        "8. Automating Front-End Stages of the Data Life Cycle",
+        "9. Privacy",
+        "10. Ethics"
+      ],
+      "output_list_from_llm": [
+        "1. Scientific Understanding of Learning, Especially Deep Learning Algorithms.",
+        "2. Causal Reasoning",
+        "4. Multiple, Heterogeneous Data Sources",
+        "5. Inferring From Noisy and/or Incomplete Data.",
+        "6. Trustworthy AI",
+        "7. Computing Systems for Data-Intensive Applications",
+        "8. Automating Front-End Stages of the Data Life Cycle"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "The Algorithms Group",
+        "Audio Speech and Information REtreival (ASPIRE) Research Group",
+        "Center for Complex Networks and System Research",
+        "Crisis Technologies Innovation Lab",
+        "Cyberinfrastructure for Network Science Center",
+        "Data to Insight Center",
+        "Networks & agents Network (NaN)",
+        "Observatory on Social Media",
+        "Societal Computing Lab"
+      ],
+      "output_list_from_llm": [
+        "The Algorithms Group",
+        "Audio Speech and Information REtreival (ASPIRE) Research Group",
+        "Data to Insight Center",
+        "Observatory on Social Media"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "assisted Deep Learning",
+        "based Disaster Scene Assessment System with Active Human",
+        "AI Interactions"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "noise ratio); or the data set is artisanal",
+        "small, task",
+        "specific, and/or targets a limited audience. A good example of expensive data comes from large, one"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_areas": [
+    "Data science for wildland fire research",
+    "Data science for human health",
+    "Data science for linguistics",
+    "Data science for nature and sustainability",
+    "Ethics and data science",
+    "The science of data science",
+    "Using data science to investigate climate resilient strategies along us inland waterways (dsi-srp)",
+    "Vanderbilt data science's narrative arcs project: using deep learning to visualize narratives",
+    "Algorithmic & logical foundations of data science",
+    "Biomedical & health data science",
+    "Social & ethical aspects of data science",
+    "Data science in government",
+    "Data visualization",
+    "Algorithms and analysis of training predictive models on very large data sets",
+    "Statistical methods for the design and analysis of computer simulation experiments",
+    "Text mining for legal analytics",
+    "Mining large industrial databases for discovering root causes of poor quality",
+    "Development and implementation of machine learning algorithms in mapreduce",
+    "Predictive modeling of consumer credit data for strategic risk management",
+    "Statistical modeling and analysis",
+    "Prescriptive analytics to focus on trends using simulation and optimization",
+    "Predictive analytics to use statistical tools to predict the future",
+    "Descriptive analytics to enable smart decisions based on data",
+    "Database usage",
+    "Data cleaning",
+    "Data gathering",
+    "Scalable computing",
+    "Cloud computing",
+    "Modeling signaling pathways using recurrent neural networks (dsi-srp)",
+    "Can deep neural networks model variability in human visual cognition (dsi-srp)",
+    "Data security & privacy",
+    "Artificial intelligence",
+    "Network science",
+    "Database & data management/mining & visualization",
+    "Systems for big data analytics",
+    "Data analysis methods",
+    "Data storage solutions",
+    "Data warehousing",
+    "Data engineering",
+    "Data privacy",
+    "Data provenance",
+    "Data quality",
+    "Big data - machine learning",
+    "Data mining",
+    "Economics and business analytics",
+    "Machine learning in economics and finance",
+    "Forecasting",
+    "April 10, 2025, 2:00 pm math and data (mad) seminar: lechao xiao",
+    "April 24, 2025, 11:00 am nlp and text-as-data speaker series: jonathan berant (tel-aviv university)",
+    "1. scientific understanding of learning, especially deep learning algorithms.",
+    "2. causal reasoning",
+    "4. multiple, heterogeneous data sources",
+    "5. inferring from noisy and/or incomplete data.",
+    "6. trustworthy ai",
+    "7. computing systems for data-intensive applications",
+    "8. automating front-end stages of the data life cycle",
+    "The algorithms group",
+    "Audio speech and information retreival (aspire) research group",
+    "Data to insight center",
+    "Observatory on social media"
+  ],
+  "error": null
+}

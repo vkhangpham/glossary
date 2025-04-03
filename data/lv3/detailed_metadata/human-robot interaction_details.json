@@ -1,0 +1,731 @@
+{
+  "level2_term": "human-robot interaction",
+  "all_urls": [
+    "https://humanrobotinteraction.org/2025/",
+    "https://dl.acm.org/doi/proceedings/10.5555/3721488?tocHeading=heading19",
+    "http://www.ieee-ras.org/publications/t-ro/special-issues/human-robot-interaction",
+    "http://www.wikicfp.com/cfp/call?conference=HRI",
+    "https://dl.acm.org/journal/thri",
+    "https://journals.sagepub.com/doi/abs/10.1177/0278364915625000",
+    "https://www.springer.com/journal/12369/updates/23641808?srsltid=AfmBOoroqRkwUNdoOeyJ667VQYBLiSWR1QSvhYCV9nuZ8UpD9k7AYnyj",
+    "https://www.human-robot-interaction.org/2023/09/22/the-hri-journal-publishing-guide/",
+    "https://link.springer.com/journal/12369/updates/26088142",
+    "https://www.cs.cmu.edu/~kiesler/publications/2012/2012_welcome-hri.pdf"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "IEEE.org",
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites\n\nMore Sites\n\n\nIEEE Xplore Digital Library\n\n\nIEEE Standards\n\n\nIEEE Spectrum\n\n\nMore Sites",
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "IEEE Xplore Digital Library",
+        "IEEE Standards",
+        "IEEE Spectrum",
+        "More Sites"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Publications",
+        "Special Collections",
+        "Human-Robot Interaction"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Publications",
+        "Subscription Information",
+        "Video Submission Guidelines",
+        "RA Magazine",
+        "T-ASE",
+        "T-MRB",
+        "Information for Authors",
+        "Submission Procedures",
+        "Robot-Assisted Medical Imaging",
+        "Event-based Vision for Robotics",
+        "Tactile Robotics",
+        "Visual SLAM",
+        "Impact-Aware Robotics",
+        "Resilience in Networked Robotic Systems",
+        "Wearable Robots",
+        "Small-Scale Robotics inside the Human Body",
+        "Movement Science for Humans and Humanoids: Methods and Applications",
+        "Nanorobotics",
+        "Visual SLAM 2008",
+        "Robotic Sense of Touch",
+        "Biorobotics",
+        "Human-Robot Interaction",
+        "Information for Reviewers",
+        "List of Reviewers",
+        "Editorial Board",
+        "Information for Associate Editors",
+        "Information for Editors",
+        "T-RO Papers Presented at Conferences",
+        "Tips for Making a Good Robot Video",
+        "IEEE Author Center",
+        "Plagiarism & Ethical Issues",
+        "Young Reviewers Program",
+        "Guidelines for Generative AI Usage",
+        "Rules for the double-anonymous review process"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 34,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.17647058823529413,
+        "length_consistency": true,
+        "pattern_ratio": 0.029411764705882353,
+        "keyword_ratio": 0.17647058823529413
+      }
+    },
+    {
+      "items": [
+        "Information for Authors",
+        "Submission Procedures",
+        "Robot-Assisted Medical Imaging",
+        "Event-based Vision for Robotics",
+        "Tactile Robotics",
+        "Visual SLAM",
+        "Impact-Aware Robotics",
+        "Resilience in Networked Robotic Systems",
+        "Wearable Robots",
+        "Small-Scale Robotics inside the Human Body",
+        "Movement Science for Humans and Humanoids: Methods and Applications",
+        "Nanorobotics",
+        "Visual SLAM 2008",
+        "Robotic Sense of Touch",
+        "Biorobotics",
+        "Human-Robot Interaction",
+        "Information for Reviewers",
+        "List of Reviewers",
+        "Editorial Board",
+        "Information for Associate Editors",
+        "Information for Editors",
+        "T-RO Papers Presented at Conferences"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 22,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.22727272727272727,
+        "length_consistency": true,
+        "pattern_ratio": 0.045454545454545456,
+        "keyword_ratio": 0.13636363636363635
+      }
+    },
+    {
+      "items": [
+        "Important Dates",
+        "Cecilia Laschi",
+        "Cynthia Breazeal",
+        "Yasushi Nakauchi"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Resource Center",
+        "Robotics History",
+        "Join IEEE RAS"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Students\r\n\nStudents are future of robotics and automation.\nLearn more",
+        "CASE 2025\r\n\nIEEE International Conference on Automation Science and Engineering\nLearn more",
+        "IROS 2025\r\n\nIEEE/RSJ International Conference on Intelligent Robots and Systems\nLearn more",
+        "ICRA@40\r\n\nSpecial 40th anniversary celebration of RAS and ICRA\nLearn more",
+        "ICRA 2025\n\nIEEE International conference on Robotics and Automation\n\u00a0\nLearn more",
+        "Volunteer Resources\n\n\u00a0\nLearn more"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Call for Papers30 September 2006",
+        "Paper Submission Deadline28 February 2007",
+        "First Review30 June 2007",
+        "Final ReviewOctober 2007",
+        "Publication"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Categories",
+        "Conf Series",
+        "My List",
+        "My Archive",
+        "On iPhone",
+        "On Android",
+        "2025\n 2026 \n 2025+  \n all"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "HRI\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "HRI\n\t\t\t\n\n\n\n(ordered by deadline)",
+        "(ordered by deadline)",
+        "Event",
+        "Expired CFPs",
+        "Paladyn, Journal of Behavioral Robotics 2022",
+        "ARSO  2022",
+        "May 28, 2022 - May 30, 2022",
+        "Speech&Language4Robots 2014",
+        "HRI 2014",
+        "Mar 3, 2014 - Mar 6, 2014",
+        "EmoRobots 2013",
+        "Mar 3, 2013 - Mar 3, 2013",
+        "HMAC at ALIFE14",
+        "Jul 30, 2014 - Aug 2, 2014",
+        "first |\t\t\t\n\n\t\t\t\t previous \n\n\t\t\t\t| Page 1 |\n\n\t\t\t\t\n\t\t\t\t next \n\n\t\t\t| last"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 16,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0625
+      }
+    },
+    {
+      "items": [
+        "Event",
+        "Expired CFPs",
+        "Paladyn, Journal of Behavioral Robotics 2022",
+        "ARSO  2022",
+        "May 28, 2022 - May 30, 2022",
+        "Speech&Language4Robots 2014",
+        "HRI 2014",
+        "Mar 3, 2014 - Mar 6, 2014",
+        "EmoRobots 2013",
+        "Mar 3, 2013 - Mar 3, 2013",
+        "HMAC at ALIFE14",
+        "Jul 30, 2014 - Aug 2, 2014"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 12,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.08333333333333333
+      }
+    },
+    {
+      "items": [
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "\u00b7 Human-Robot joint action planning and execution",
+        "\u00b7 Supervision systems and error management for HRI",
+        "\u00b7 Human Behavior Modeling for HRI",
+        "\u00b7 Modeling the human's perspective for HRI",
+        "\u00b7 Human-robot collaboration models for autonomous \u201cintelligent\u201d social robots"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "CNRS,\u00a0France  Malcolm Doering,\u00a0Kyoto University, Japan  Aur\u00e9lie Clodic,\u00a0LAAS",
+        "CNRS,\u00a0France  Guillaume Sarthou,\u00a0Institute for Artificial Intelligence, Germany  Rachid Alami,\u00a0LAAS",
+        "enabled \u201cintelligent algorithms\u201d in robots for human",
+        "fields of research: knowledge modeling and reasoning, learning, planning and decision",
+        "robot interaction. In this way, more intelligent robot behaviors for human"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Appointed Assistant Professor at the Human",
+        "driven imitation learning methods for human",
+        "robot interaction from Osaka University in 2019."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "robot collaborative task achievement as well as robotics architecture design (focused on decision",
+        "making and supervision. Her recent contributions involved on",
+        "French"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.6666666666666666
+      }
+    },
+    {
+      "items": [
+        "2007), Bachelor in Psychology (",
+        "6), SAPHARI (FP",
+        "7), MuMMER (H"
+      ],
+      "metadata": {
+        "html_type": "p_numbered",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "2016). He was Assistant Professor of the University of Rijeka, Faculty of Engineering (from 2016",
+        "2020). His research interests include, People",
+        "tracking, Localization, Mobile Robotics and Human",
+        "Robot Interaction."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Publisher",
+        "Founded in",
+        "Acceptance rate",
+        "Average papers are published per year",
+        "Average number of revisions for accepted papers",
+        "Average number of reviewers per submitted paper",
+        "Number of associate editors",
+        "Average duration of peer review",
+        "Peer review type",
+        "Average duration publishing process",
+        "Listed in Scopus",
+        "Publications quartile in Scopus",
+        "CiteScore",
+        "Listed on Web of Science",
+        "Impact Factor",
+        "Ppen access option",
+        "Article Publication Fee",
+        "Pre-publication allowed"
+      ],
+      "metadata": {
+        "html_type": "table",
+        "list_size": 18,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Articles",
+        "For authors",
+        "Journal updates",
+        "Discover content",
+        "Publish with us",
+        "Products and services",
+        "Our brands"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.14285714285714285,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "how is crucial to realize effective robotic services in real",
+        "world ecological environments. In these scenarios, it emerges the necessity to create human",
+        "mediated robotic services in real",
+        "guidelines\u00a0and select article type\u00a0\u201cHuman",
+        "Mediated Robot Autonomy\"."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "autonomous human",
+        "robot interactions with particular attention to the case of brain",
+        "machine interface",
+        "driven robotics devices. She is investigating how to decode high",
+        "robot interaction. Her research interests include human"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "AssistDEM project, SI",
+        "Robotics (Italian MIUR project) and SmarSatCare (ESA funding for Covid",
+        "ACT project where she leads the WP on Stakeholders' co",
+        "design and communication package. Since 2020 she is co"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "ISTC. His research topics cover the development of AI",
+        "based planning and execution techniques in Human",
+        "users, and healthcare professionals) and designing AI",
+        "based services taking into account the different perspectives and needs."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.5
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "robot collaborative task achievement as well as robotics architecture design (focused on decision",
+        "making and supervision. Her recent contributions involved on",
+        "French"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Publications",
+        "Special Collections",
+        "Human-Robot Interaction"
+      ],
+      "output_list_from_llm": [
+        "Human-Robot Interaction"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Call for Papers30 September",
+        "Paper Submission Deadline28 February",
+        "First Review30 June",
+        "Final ReviewOctober",
+        "Publication"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "ISTC. His research topics cover the development of AI",
+        "based planning and execution techniques in Human",
+        "users, and healthcare professionals) and designing AI",
+        "based services taking into account the different perspectives and needs."
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Publisher",
+        "Founded in",
+        "Acceptance rate",
+        "Average papers are published per year",
+        "Average number of revisions for accepted papers",
+        "Average number of reviewers per submitted paper",
+        "Number of associate editors",
+        "Average duration of peer review",
+        "Peer review type",
+        "Average duration publishing process",
+        "Listed in Scopus",
+        "Publications quartile in Scopus",
+        "CiteScore",
+        "Listed on Web of Science",
+        "Impact Factor",
+        "Ppen access option",
+        "Article Publication Fee",
+        "Pre-publication allowed"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [
+    "Human-robot interaction"
+  ],
+  "error": null
+}

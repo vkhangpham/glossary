@@ -1,0 +1,795 @@
+{
+  "level2_term": "pediatric pathology",
+  "all_urls": [
+    "https://journals.sagepub.com/home/pdp",
+    "https://www.spponline.org/",
+    "https://www.jpeds.com/",
+    "https://europathology.pathologyconferences.com/events-list/pediatric-pathology",
+    "https://www.tandfonline.com/journals/ipdp20",
+    "https://cme.uchicago.edu/sites/default/files/course/2023-03/Conference%20Brochure.pdf",
+    "https://www.jscimedcentral.com/journal-info/Archives-of-Paediatric-and-Developmental-Pathology",
+    "https://www.bcm.edu/departments/pathology-and-immunology/education/pediatric-pathology-fellowship",
+    "https://www.spponline.org/publications",
+    "https://www.nature.com/pr/announcements"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Annual Meeting",
+        "Slide Survey Online",
+        "Neuroblastoma Tumor Atlas",
+        "Grand Rounds Webinars",
+        "SPP Forum Networking"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Slide Survey",
+        "Newsletter",
+        "Meetings & Events",
+        "SPP Forum Networking",
+        "Donate"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Benefits of Membership",
+        "Education",
+        "Quick Links",
+        "Upcoming Events",
+        "Society for Pediatric Pathology"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Meetings & Events",
+        "Don\u2019t miss these educational opportunities where connecting",
+        "with your peers is key!"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Advances in Diagnostic Pathology",
+        "Cancer Pathology",
+        "Cardiovascular Pathology",
+        "Clinical and Surgical Pathology",
+        "Dermatopathology",
+        "Digital Pathology and Artificial Intelligence",
+        "Experimental Pathology",
+        "Forensic Pathology",
+        "Gastrointestinal and Liver Pathology",
+        "Hematopathology",
+        "Immunopathology",
+        "Molecular Pathology and Genomic Medicine",
+        "Neuropathology",
+        "Pathology Education and Training",
+        "Pathology in Personalized Medicine",
+        "Pathology of Genetic and Rare Diseases",
+        "Pathology of Infectious Diseases",
+        "Pediatric Pathology",
+        "Renal Pathology",
+        "Reproductive and Gynecological Pathology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 20,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Journal of Clinical & Experimental Pathology",
+        "Journal of Medical & Surgical Pathology",
+        "Journal of Cellular & Molecular Pathology"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "23rd Annual Pathology Congress",
+        "23rd European Pathology Congress",
+        "22nd\u00a0International Conference on Breast Pathology and Cancer Diagnosis",
+        "9th International Conference on Gynecology and Obstetrics Pathology",
+        "6th International Conference on Pathology and Pathological Disorders",
+        "21st International Conference on Laboratory Medicine and Pathology",
+        "USA & Americas",
+        "Asia-Pacific & Middle East",
+        "Europe & UK",
+        "23rd European Pathology Congress",
+        "Purchase Our Past Conferences Materials",
+        "Customised Sponsorship",
+        "Download Call for Webinars",
+        "Follow us"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 14,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.21428571428571427,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "May 19-20, 2025  \r\n                        London, UK",
+        "Pathology: Fusing Laboratory Science, Cutting-edge Technology, and Clinical Insights.",
+        "Pediatric Pathology",
+        "Related Conference of Pediatric Pathology",
+        "Pediatric Pathology Conference Speakers",
+        "Recommended Sessions",
+        "Related Journals",
+        "Are you interested in",
+        "Conferences By Continents",
+        "Medical & Clinical Conferences",
+        "Conferences By Subject",
+        "Mail us at",
+        "Be a member and support us"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 13,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.07692307692307693,
+        "keyword_ratio": 0.15384615384615385
+      }
+    },
+    {
+      "items": [
+        "April 22-23, 2025\n23rd Annual Pathology Congress\nDubai, UAE",
+        "May 19-20, 2025\n23rd European Pathology Congress\nLondon, UK",
+        "June 19-20, 2025\n22nd\u00a0International Conference on Breast Pathology and Cancer Diagnosis\nLondon, UK",
+        "October 28-29, 2025\n6th International Conference on Pathology and Pathological Disorders\nLondon, UK",
+        "October 28-29, 2025\n21st International Conference on Laboratory Medicine and Pathology \nLondon, UK"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Open Access\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 Creative Commons",
+        "Review Process\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 Double Blind",
+        "Online ISSN\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 2641-774X",
+        "JsciMed Central Publisher Id (DOI)\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 10.47739",
+        "Article Formats Available\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 PDF, Fulltext, XML, ePub",
+        "Submit Manuscript\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 submissions@jscimedcentral.com",
+        "Email\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 pritschristine@jscimedcentral.org",
+        "DOI\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 https://doi.org/10.47739/2641-774X/",
+        "Telephone\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 302-261-5000"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 9,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.1111111111111111,
+        "length_consistency": true,
+        "pattern_ratio": 0.1111111111111111,
+        "keyword_ratio": 0.2222222222222222
+      }
+    },
+    {
+      "items": [
+        "For Journal related queries\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 Journal mail id",
+        "For APC queries\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 accounts@jscimedcentral.com",
+        "For Other queries\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 info@jscimedcentral.com",
+        "Telephone (Whatsapp)\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t: \u00a0 302-261-5000"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Archives of Paediatric & Developmental Pathology",
+        "Journal   Profile",
+        "Editor   Spotlight",
+        "Special   Issues",
+        "JSciMed Central",
+        "Recent   Articles"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Subscribe to Newsletters",
+        "JSciMed",
+        "Journals",
+        "Policies",
+        "Resources",
+        "Special Issues"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "Need support? Drop us an email",
+        "Submit Manuscript",
+        "Have a question? call us now",
+        "Available 24/7"
+      ],
+      "metadata": {
+        "html_type": "heading_h4",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": true,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Yiming Zhang1",
+        "Li Fang2,3",
+        "Hongting Nie1",
+        "Haidong Xu2",
+        "Jingwen Weng2",
+        "Jie Deng4*"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "January 10, 2022",
+        "Ectodermal Dysplasia: Series of 8 Cases",
+        "Nesrine KHEDIM1\n Fouzia HALI1\n Soumiya Chiheb1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Nesrine KHEDIM1",
+        "Fouzia HALI1",
+        "Soumiya Chiheb1"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Baylor College of Medicine",
+        "Departments",
+        "Pathology and Immunology",
+        "Education",
+        "Pediatric Pathology Fellowship"
+      ],
+      "metadata": {
+        "html_type": "ol",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Pediatric Grand Rounds (weekly, Friday at 8:30 a.m.)",
+        "Renal Pathology Conference (every other week)",
+        "Liver Pathology Conference (monthly)",
+        "Pulmonary Radiology-Pathology Conference (monthly)",
+        "Heart Transplant Conference (monthly)",
+        "Tumor boards (thyroid, liver, soft tissue)",
+        "M&M conferences"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "General Inquiries",
+        "Mobile Menu",
+        "Mobile Menu Bottom Links",
+        "Department of Pathology & Immunology",
+        "Pediatric Pathology Fellowship",
+        "Related Links",
+        "BCM BeWell Program",
+        "Stipends and Benefits",
+        "Curriculum",
+        "Life in Houston"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.1
+      }
+    },
+    {
+      "items": [
+        "Heading\nStipends and Benefits",
+        "Content\nVisit the Graduate School of Biomedical Sciences page on stipends and benefits for fellows.",
+        "Learn More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": false,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "twin transfusion syndrome, and maternal high",
+        "risk conditions. A wide scope of pediatric, perinatal, and fetal autopsies is available, both in",
+        "house and through our consultative services."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Slide Survey",
+        "Newsletter",
+        "Meetings & Events",
+        "SPP Forum Networking",
+        "Donate"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "SPP Newsletter",
+        "Read More",
+        "Perspectives in Pediatric Pathology",
+        "Read More"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    },
+    {
+      "items": [
+        "Junior Social Media Editor Applications Open",
+        "Annual Review Issue 2026\u00a0- Call for Proposals",
+        "New Manuscript Submission Process",
+        "COVID-19 Call for Papers",
+        "COVID-19 Resources",
+        "Color Figure Charges Waived for Members"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "Title Page (Author List, Institutions and Corresponding Author)",
+        "Impact Statement",
+        "Conflict of Interest Statement",
+        "Financial Disclosure",
+        "IRB/IACUC approval/patient consent",
+        "PRISMA checklist",
+        "RCT registration"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.14285714285714285
+      }
+    },
+    {
+      "items": [
+        "IRB/IACUC approval/patient consent",
+        "PRISMA checklist",
+        "RCT registration"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Don\u2019t Forget the Bubbles (An International Social Media led Community of Practice)",
+        "World Health Organization",
+        "World Health Organization:\u00a0Health System Response Monitor",
+        "American Academy of Pediatrics",
+        "Royal College of Paediatrics and Child Health",
+        "Updates from Italy",
+        "Pediatric Research's COVID-19 Publications",
+        "VIDEO -\u00a0COVID-19: Virology, Immunology and Pathology",
+        "Webinar 1, US Panelists",
+        "Webinar 2, UK/ European Panelists"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.3
+      }
+    },
+    {
+      "items": [
+        "Explore articles by subject",
+        "Find a job",
+        "Guide to authors",
+        "Editorial policies"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.25
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Junior Social Media Editor Applications Open",
+        "Annual Review Issue 2026 - Call for Proposals",
+        "New Manuscript Submission Process",
+        "COVID-19 Call for Papers",
+        "COVID-19 Resources",
+        "Color Figure Charges Waived for Members"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Don\u2019t Forget the Bubbles (An International Social Media led Community of Practice)",
+        "World Health Organization",
+        "World Health Organization: Health System Response Monitor",
+        "American Academy of Pediatrics",
+        "Royal College of Paediatrics and Child Health",
+        "Updates from Italy",
+        "Pediatric Research's COVID-19 Publications",
+        "VIDEO - COVID-19: Virology, Immunology and Pathology",
+        "Webinar 1, US Panelists",
+        "Webinar 2, UK/ European Panelists"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "May 19-20, 2025 London, UK",
+        "Pathology: Fusing Laboratory Science, Cutting-edge Technology, and Clinical Insights.",
+        "Pediatric Pathology",
+        "Related Conference of Pediatric Pathology",
+        "Pediatric Pathology Conference Speakers",
+        "Recommended Sessions",
+        "Related Journals",
+        "Are you interested in",
+        "Conferences By Continents",
+        "Medical & Clinical Conferences",
+        "Conferences By Subject",
+        "Mail us at",
+        "Be a member and support us"
+      ],
+      "output_list_from_llm": [
+        "Pediatric Pathology",
+        "Related Conference of Pediatric Pathology"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Annual Meeting",
+        "Slide Survey Online",
+        "Neuroblastoma Tumor Atlas",
+        "Grand Rounds Webinars",
+        "SPP Forum Networking"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "SPP Newsletter",
+        "Read More",
+        "Perspectives in Pediatric Pathology",
+        "Read More"
+      ],
+      "output_list_from_llm": [
+        "Perspectives in Pediatric Pathology"
+      ]
+    }
+  ],
+  "final_consolidated_topics": [
+    "Related conference of pediatric pathology",
+    "Perspectives in pediatric pathology"
+  ],
+  "error": null
+}

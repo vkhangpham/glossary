@@ -1,0 +1,200 @@
+{
+  "level2_term": "intellectual property",
+  "all_urls": [
+    "https://academic.oup.com/jiplp",
+    "https://www.jipsnluj.com/call-for-papers",
+    "https://lawbhoomi.com/call-for-papers-alliance-journal-of-intellectual-property-law/",
+    "https://omt.aom.org/discussion/jms-call-for-papers-a-world-where-you-own-nothing-a-special-issue-on-property-rights-theory-deadline-30-november-2024-1",
+    "https://knowledgesteez.com/2024/10/call-for-papers-nlua-journal-of-intellectual-property-rights-dpiit-ipr-chair-nlujs/",
+    "https://www.submissionsn.scholasticahq.com/conversation/questions/call-for-submissions-journal-of-intellectual-property-law-vol-30",
+    "https://ijipl.nalsar.ac.in/call-for-papers/",
+    "https://www.theippress.com/call-for-papers-for-ipplr-volume-i-issue-ii-2023/",
+    "https://onlinelibrary.wiley.com/journal/17471796",
+    "https://www.sciencedirect.com/journal/world-patent-information/about/call-for-papers"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Dr. Upankar Chutia: +91-9717132331",
+        "Ms. Malavika Rajeevan: +91-9321055249",
+        "Email: [email\u00a0protected]"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Submission Guidelines",
+        "Last Date of Submission",
+        "Publication Fee",
+        "Submissions Procedure",
+        "Leave a ReplyCancel Reply"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.8
+      }
+    },
+    {
+      "items": [
+        "To know more about the submission guidelines, kindly visit here.",
+        "30th June 2025",
+        "No publication fee",
+        "All submissions should be made to the email of AJIPL \u2013 [email\u00a0protected]"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.25,
+        "keyword_ratio": 0.75
+      }
+    },
+    {
+      "items": [
+        "management",
+        "studies/submission",
+        "guidelines/)"
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.3333333333333333
+      }
+    },
+    {
+      "items": [
+        "By\n\t\t\t\t\t\t\t\t\t\tRupal Dhull",
+        "October 4, 2024",
+        "6:40 pm"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Facebook",
+        "LinkedIn",
+        "WhatsApp",
+        "Telegram"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Facebook",
+        "Linkedin",
+        "Youtube",
+        "Instagram"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "To know more about the submission guidelines, kindly visit here.",
+        "30th June",
+        "No publication fee",
+        "All submissions should be made to the email of AJIPL \u2013 [email protected]"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Submission Guidelines",
+        "Last Date of Submission",
+        "Publication Fee",
+        "Submissions Procedure",
+        "Leave a ReplyCancel Reply"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "management",
+        "studies/submission",
+        "guidelines/)"
+      ],
+      "output_list_from_llm": []
+    }
+  ],
+  "final_consolidated_topics": [],
+  "error": "No lists passed filtering/LLM validation"
+}

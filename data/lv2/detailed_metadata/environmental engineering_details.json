@@ -1,0 +1,564 @@
+{
+  "level1_term": "environmental engineering",
+  "all_urls": [
+    "https://cee.rutgers.edu/research-areas",
+    "https://cee.rice.edu/research/key-research-areas",
+    "https://www.ce.washington.edu/research/areas",
+    "https://publichealth.jhu.edu/departments/environmental-health-and-engineering/research-and-practice/research-areas/environmental-engineering",
+    "https://cee.stanford.edu/research-impact",
+    "https://ceees.nd.edu/research/",
+    "https://engineering.tufts.edu/cee/research",
+    "https://cee.umd.edu/research",
+    "https://engineering.brown.edu/chemical-and-environmental-engineering-research",
+    "https://www.mccormick.northwestern.edu/civil-environmental/research/areas/",
+    "https://ceg.osu.edu/research-overview/environmental-engineering",
+    "https://cee.duke.edu/impact/research/",
+    "https://ce.gatech.edu/explore-our-research",
+    "https://www.cece.ucf.edu/research-areas/",
+    "https://engineering.wisc.edu/departments/civil-environmental-engineering/research/",
+    "https://cee.princeton.edu/research",
+    "https://engineering.tamu.edu/civil/research/index.html",
+    "https://engineering.usu.edu/cee/research/",
+    "https://engineering.msu.edu/about/departments/cee/research",
+    "https://cee.mines.edu/research/",
+    "https://nau.edu/civil-environmental-engineering/research-and-projects/",
+    "https://cee.engin.umich.edu/research/",
+    "https://www.stevens.edu/school-engineering-science/departments/civil-environmental-ocean-engineering/research",
+    "https://ceas.uc.edu/academics/departments/chemical-environmental-engineering/research.html",
+    "https://www.civil.utah.edu/research/environmental/",
+    "https://www1.villanova.edu/university/engineering/academic-programs/departments/civil-environmental/research-facilities.html",
+    "https://engineering.buffalo.edu/civil-structural-environmental/research.html",
+    "https://cee.rice.edu/research",
+    "https://cee.engineering.cmu.edu/research/index.html",
+    "https://cee.engineering.gwu.edu/research-focus-areas"
+  ],
+  "raw_extracted_lists": [
+    {
+      "items": [
+        "Enter a Search Term",
+        "Construction Engineering and Management",
+        "Geotechnical Engineering",
+        "Infrastructure Engineering",
+        "Structural Engineering and Infrastructure Materials",
+        "Transportation Engineering",
+        "Water Resources and Environmental Engineering",
+        "Research and Innovation News",
+        "Site Footer",
+        "Connect"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.7
+      }
+    },
+    {
+      "items": [
+        "Main Nav",
+        "Water Security & Sustainable Water Management",
+        "Resilient Urban Infrastructure",
+        "Multi-Scale Mechanics & Dynamics of Structures",
+        "Climate, Energy & the Environment",
+        "Cities of the Future"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.8
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Collaborate as an Industry Affiliate",
+        "Collaborate with the Doerr School Sustainability Accelerator",
+        "Collaborate with the Doerr School's Institutes"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Climate and energy",
+        "Health and environment",
+        "Extreme events",
+        "Resilient systems",
+        "MS Fields of Study",
+        "PhD Fields of Study"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.16666666666666666,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "items": [
+        "Interdisciplinary, experiential, entrepreneurial, innovative",
+        "Department Research Areas",
+        "Civil Systems",
+        "Disaster Resilience",
+        "Environmental Engineering",
+        "Geotechnical & Pavements",
+        "Project Management",
+        "Structures",
+        "Transportation",
+        "Water Resources"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 10,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": true,
+          "nav_score": 0.5
+        },
+        "non_term_ratio": 0.1,
+        "length_consistency": true,
+        "pattern_ratio": 0.1,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Secondary Navigation Navigation",
+        "Site Navigation",
+        "Sub Navigation",
+        "Recent News",
+        "Suuberg selected 2024 ENFL Distinguished Researcher of American Chemical Society",
+        "Pennell awarded $1.36M for in situ remediation of PFAS-impacted groundwater",
+        "Engineering\u2019s Abriola named AAAS Fellow",
+        "Hurt awarded $1.5M DoD grant",
+        "Brown Engineers Awarded $2.5M for PFAS Research",
+        "Quick Navigation",
+        "Footer Navigation",
+        "Social Navigation",
+        "Mobile Site Navigation",
+        "Mobile Site Navigation",
+        "Mobile Secondary Navigation Navigation"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 15,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.2,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Material Systems",
+        "Ecosystems",
+        "Urban Systems",
+        "Human Systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.75,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Material Systems",
+        "Ecosystems",
+        "Urban Systems",
+        "Human Systems"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.75,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "up VQ Biomedical is developing and commercializing a minimally",
+        "invasive catheter",
+        "based oxygenator."
+      ],
+      "metadata": {
+        "html_type": "p_bullet",
+        "list_size": 3,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "Construction project management",
+        "Green building and infrastructure systems",
+        "Sustainability",
+        "Construction automation",
+        "Simulation of construction operations"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Air quality monitoring",
+        "Coastal engineering",
+        "Wastewater treatment",
+        "Biofilm and corrosion in drinking water",
+        "Water distribution system infrastructure"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Geotechnical earthquake engineering",
+        "Behavior of soils",
+        "Sinkholes, soil erosion and sediment control",
+        "Landslide hazard assessment and mitigation",
+        "Geospatial modeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.6
+      }
+    },
+    {
+      "items": [
+        "Multi-hazard assessment and design",
+        "Seismic connection",
+        "Sensing and monitoring",
+        "Hollow structural sections",
+        "Advanced materials for infrastructure repair and design"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.4
+      }
+    },
+    {
+      "items": [
+        "Transportation planning",
+        "Travel behavior analysis",
+        "Pedestrian and bicycle safety",
+        "Electric vehicle integration",
+        "Sustainable mobility adoption"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Coastal flood risk",
+        "Storm surges",
+        "Sediment transport",
+        "Ecohydraulics",
+        "Groundwater and hydrologic modeling"
+      ],
+      "metadata": {
+        "html_type": "ul",
+        "list_size": 5,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.2,
+        "keyword_ratio": 0.2
+      }
+    },
+    {
+      "items": [
+        "Construction Engineering, Materials & Management",
+        "Environmental Engineering & Science",
+        "Environmental Chemistry & Technology",
+        "Geological Engineering",
+        "Structural Engineering",
+        "Transportation Engineering",
+        "Water Resources Engineering & Science"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 7,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "items": [
+        "Main Menu",
+        "Search",
+        "Section Menu",
+        "Footer"
+      ],
+      "metadata": {
+        "html_type": "heading_h2",
+        "list_size": 4,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 1.0
+        },
+        "non_term_ratio": 0.25,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "items": [
+        "New Grants",
+        "Better Built Environments",
+        "A Sustainable Future",
+        "Smart Infrastructure Finance",
+        "Urban Collaboratory",
+        "The Tools to Excel"
+      ],
+      "metadata": {
+        "html_type": "heading_h3",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": false,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.0
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.0,
+        "keyword_ratio": 0.16666666666666666
+      }
+    },
+    {
+      "items": [
+        "New Grants",
+        "Civil Infrastructure Systems",
+        "Environment and Water Resources",
+        "Smart Infrastructure Finance",
+        "Urban Collaboratory",
+        "Facilities"
+      ],
+      "metadata": {
+        "html_type": "container_div",
+        "list_size": 6,
+        "structure_analysis": {
+          "is_navigation": true,
+          "is_footer": false,
+          "is_sidebar": false,
+          "nav_score": 0.6
+        },
+        "non_term_ratio": 0.0,
+        "length_consistency": true,
+        "pattern_ratio": 0.16666666666666666,
+        "keyword_ratio": 0.3333333333333333
+      }
+    }
+  ],
+  "llm_io_pairs": [
+    {
+      "input_list_to_llm": [
+        "Material Systems",
+        "Ecosystems",
+        "Urban Systems",
+        "Human Systems"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Construction Engineering, Materials & Management",
+        "Environmental Engineering & Science",
+        "Environmental Chemistry & Technology",
+        "Geological Engineering",
+        "Structural Engineering",
+        "Transportation Engineering",
+        "Water Resources Engineering & Science"
+      ],
+      "output_list_from_llm": [
+        "Environmental Engineering & Science",
+        "Environmental Chemistry & Technology",
+        "Water Resources Engineering & Science"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Collaborate as an Industry Affiliate",
+        "Collaborate with the Doerr School Sustainability Accelerator",
+        "Collaborate with the Doerr School's Institutes"
+      ],
+      "output_list_from_llm": []
+    },
+    {
+      "input_list_to_llm": [
+        "Construction project management",
+        "Green building and infrastructure systems",
+        "Sustainability",
+        "Construction automation",
+        "Simulation of construction operations"
+      ],
+      "output_list_from_llm": [
+        "Green building and infrastructure systems",
+        "Sustainability"
+      ]
+    },
+    {
+      "input_list_to_llm": [
+        "Geotechnical earthquake engineering",
+        "Behavior of soils",
+        "Sinkholes, soil erosion and sediment control",
+        "Landslide hazard assessment and mitigation",
+        "Geospatial modeling"
+      ],
+      "output_list_from_llm": [
+        "Sinkholes, soil erosion and sediment control",
+        "Landslide hazard assessment and mitigation"
+      ]
+    }
+  ],
+  "final_consolidated_areas": [
+    "Environmental engineering & science",
+    "Environmental chemistry & technology",
+    "Water resources engineering & science",
+    "Green building and infrastructure systems",
+    "Sustainability",
+    "Sinkholes, soil erosion and sediment control",
+    "Landslide hazard assessment and mitigation"
+  ],
+  "error": null
+}
