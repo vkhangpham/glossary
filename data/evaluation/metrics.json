@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "total_terms": 2213,
+    "total_relationships": 6258,
+    "total_variations": 339
+  },
+  "terms_per_level": {
+    "0": 26,
+    "1": 354,
+    "2": 1833,
+    "3": 0
+  },
+  "orphan_terms": {
+    "2": 7
+  },
+  "branching_factor": {
+    "0": 25.38,
+    "1": 15.81,
+    "2": 0.0
+  },
+  "variation_stats": {
+    "terms_with_variations": {
+      "0": 8,
+      "1": 74,
+      "2": 182
+    },
+    "avg_variations_per_term": {
+      "0": 1.62,
+      "1": 1.55,
+      "2": 1.16
+    }
+  }
+}

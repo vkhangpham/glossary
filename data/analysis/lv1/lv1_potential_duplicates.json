@@ -1,0 +1,401 @@
+{
+  "marine sciences|marine biology": {
+    "term1": "marine sciences",
+    "term2": "marine biology",
+    "parent": "natural sciences",
+    "similarity": 0.7025275826454163,
+    "cond_prob_1_given_2": 0.0,
+    "cond_prob_2_given_1": 0.0,
+    "co_occurrences": 0,
+    "mutual_information": 1.05503330170284e-05,
+    "contingency_table": {
+      "a": 0,
+      "b": 4,
+      "c": 5,
+      "d": 1647,
+      "term1_total": 4,
+      "term2_total": 5,
+      "term1_absent_total": 1652,
+      "term2_absent_total": 1651,
+      "total_docs": 1656
+    }
+  },
+  "biochemistry|biology": {
+    "term1": "biochemistry",
+    "term2": "biology",
+    "parent": "arts",
+    "similarity": 0.7096559405326843,
+    "cond_prob_1_given_2": 0.0,
+    "cond_prob_2_given_1": 0.0,
+    "co_occurrences": 0,
+    "mutual_information": 0.00020774972439732207,
+    "contingency_table": {
+      "a": 0,
+      "b": 15,
+      "c": 26,
+      "d": 1615,
+      "term1_total": 15,
+      "term2_total": 26,
+      "term1_absent_total": 1641,
+      "term2_absent_total": 1630,
+      "total_docs": 1656
+    }
+  },
+  "biochemistry|molecular biology": {
+    "term1": "biochemistry",
+    "term2": "molecular biology",
+    "parent": "medicine",
+    "similarity": 0.7162702083587646,
+    "cond_prob_1_given_2": 0.2,
+    "cond_prob_2_given_1": 0.13333333333333333,
+    "co_occurrences": 2,
+    "mutual_information": 0.004012675823650259,
+    "contingency_table": {
+      "a": 2,
+      "b": 13,
+      "c": 8,
+      "d": 1633,
+      "term1_total": 15,
+      "term2_total": 10,
+      "term1_absent_total": 1641,
+      "term2_absent_total": 1646,
+      "total_docs": 1656
+    }
+  },
+  "communication|mass communications": {
+    "term1": "communication",
+    "term2": "mass communications",
+    "parent": "humanities",
+    "similarity": 0.7070107460021973,
+    "cond_prob_1_given_2": 0.125,
+    "cond_prob_2_given_1": 0.14285714285714285,
+    "co_occurrences": 1,
+    "mutual_information": 0.002223597811617269,
+    "contingency_table": {
+      "a": 1,
+      "b": 6,
+      "c": 7,
+      "d": 1642,
+      "term1_total": 7,
+      "term2_total": 8,
+      "term1_absent_total": 1649,
+      "term2_absent_total": 1648,
+      "total_docs": 1656
+    }
+  },
+  "theatre|performing arts": {
+    "term1": "theatre",
+    "term2": "performing arts",
+    "parent": "arts",
+    "similarity": 0.7761508226394653,
+    "cond_prob_1_given_2": 0.125,
+    "cond_prob_2_given_1": 0.1,
+    "co_occurrences": 1,
+    "mutual_information": 0.0019036594863927054,
+    "contingency_table": {
+      "a": 1,
+      "b": 9,
+      "c": 7,
+      "d": 1639,
+      "term1_total": 10,
+      "term2_total": 8,
+      "term1_absent_total": 1646,
+      "term2_absent_total": 1648,
+      "total_docs": 1656
+    }
+  },
+  "latin|romance languages": {
+    "term1": "latin",
+    "term2": "romance languages",
+    "parent": "arts",
+    "similarity": 0.7620943784713745,
+    "cond_prob_1_given_2": 0.0,
+    "cond_prob_2_given_1": 0.0,
+    "co_occurrences": 0,
+    "mutual_information": 2.2182592830600482e-05,
+    "contingency_table": {
+      "a": 0,
+      "b": 6,
+      "c": 7,
+      "d": 1643,
+      "term1_total": 6,
+      "term2_total": 7,
+      "term1_absent_total": 1650,
+      "term2_absent_total": 1649,
+      "total_docs": 1656
+    }
+  },
+  "asian studies|middle eastern studies": {
+    "term1": "asian studies",
+    "term2": "middle eastern studies",
+    "parent": "social sciences",
+    "similarity": 0.7502044439315796,
+    "cond_prob_1_given_2": 0.16666666666666666,
+    "cond_prob_2_given_1": 0.2,
+    "co_occurrences": 1,
+    "mutual_information": 0.002804017661243099,
+    "contingency_table": {
+      "a": 1,
+      "b": 4,
+      "c": 5,
+      "d": 1646,
+      "term1_total": 5,
+      "term2_total": 6,
+      "term1_absent_total": 1651,
+      "term2_absent_total": 1650,
+      "total_docs": 1656
+    }
+  },
+  "leadership|organizational leadership": {
+    "term1": "leadership",
+    "term2": "organizational leadership",
+    "parent": "education",
+    "similarity": 0.7179328203201294,
+    "cond_prob_1_given_2": 0.1111111111111111,
+    "cond_prob_2_given_1": 0.1,
+    "co_occurrences": 1,
+    "mutual_information": 0.0017992472431636933,
+    "contingency_table": {
+      "a": 1,
+      "b": 9,
+      "c": 8,
+      "d": 1638,
+      "term1_total": 10,
+      "term2_total": 9,
+      "term1_absent_total": 1646,
+      "term2_absent_total": 1647,
+      "total_docs": 1656
+    }
+  },
+  "learning technologies|technology education": {
+    "term1": "learning technologies",
+    "term2": "technology education",
+    "parent": "education",
+    "similarity": 0.865607500076294,
+    "cond_prob_1_given_2": 0.16666666666666666,
+    "cond_prob_2_given_1": 0.2,
+    "co_occurrences": 1,
+    "mutual_information": 0.002804017661243099,
+    "contingency_table": {
+      "a": 1,
+      "b": 4,
+      "c": 5,
+      "d": 1646,
+      "term1_total": 5,
+      "term2_total": 6,
+      "term1_absent_total": 1651,
+      "term2_absent_total": 1650,
+      "total_docs": 1656
+    }
+  },
+  "school psychology|educational psychology": {
+    "term1": "school psychology",
+    "term2": "educational psychology",
+    "parent": "education",
+    "similarity": 0.891294002532959,
+    "cond_prob_1_given_2": 0.18181818181818182,
+    "cond_prob_2_given_1": 0.4,
+    "co_occurrences": 2,
+    "mutual_information": 0.005987368114591206,
+    "contingency_table": {
+      "a": 2,
+      "b": 3,
+      "c": 9,
+      "d": 1642,
+      "term1_total": 5,
+      "term2_total": 11,
+      "term1_absent_total": 1651,
+      "term2_absent_total": 1645,
+      "total_docs": 1656
+    }
+  },
+  "genetics|molecular genetics": {
+    "term1": "genetics",
+    "term2": "molecular genetics",
+    "parent": "medicine",
+    "similarity": 0.7454807758331299,
+    "cond_prob_1_given_2": 0.0,
+    "cond_prob_2_given_1": 0.0,
+    "co_occurrences": 0,
+    "mutual_information": 2.2182592830600482e-05,
+    "contingency_table": {
+      "a": 0,
+      "b": 7,
+      "c": 6,
+      "d": 1643,
+      "term1_total": 7,
+      "term2_total": 6,
+      "term1_absent_total": 1649,
+      "term2_absent_total": 1650,
+      "total_docs": 1656
+    }
+  },
+  "physiology|cellular physiology": {
+    "term1": "physiology",
+    "term2": "cellular physiology",
+    "parent": "medicine",
+    "similarity": 0.7918123006820679,
+    "cond_prob_1_given_2": 0.0,
+    "cond_prob_2_given_1": 0.0,
+    "co_occurrences": 0,
+    "mutual_information": 1.5844720811677625e-05,
+    "contingency_table": {
+      "a": 0,
+      "b": 10,
+      "c": 3,
+      "d": 1643,
+      "term1_total": 10,
+      "term2_total": 3,
+      "term1_absent_total": 1646,
+      "term2_absent_total": 1653,
+      "total_docs": 1656
+    }
+  },
+  "physiology|integrative physiology": {
+    "term1": "physiology",
+    "term2": "integrative physiology",
+    "parent": "medicine",
+    "similarity": 0.8420253992080688,
+    "cond_prob_1_given_2": 0.25,
+    "cond_prob_2_given_1": 0.1,
+    "co_occurrences": 1,
+    "mutual_information": 0.0025509057966220895,
+    "contingency_table": {
+      "a": 1,
+      "b": 9,
+      "c": 3,
+      "d": 1643,
+      "term1_total": 10,
+      "term2_total": 4,
+      "term1_absent_total": 1646,
+      "term2_absent_total": 1652,
+      "total_docs": 1656
+    }
+  },
+  "molecular genetics|molecular biology": {
+    "term1": "molecular genetics",
+    "term2": "molecular biology",
+    "parent": "medicine",
+    "similarity": 0.7228775024414062,
+    "cond_prob_1_given_2": 0.0,
+    "cond_prob_2_given_1": 0.0,
+    "co_occurrences": 0,
+    "mutual_information": 3.1718311638954284e-05,
+    "contingency_table": {
+      "a": 0,
+      "b": 6,
+      "c": 10,
+      "d": 1640,
+      "term1_total": 6,
+      "term2_total": 10,
+      "term1_absent_total": 1650,
+      "term2_absent_total": 1646,
+      "total_docs": 1656
+    }
+  },
+  "corporate law|business law": {
+    "term1": "corporate law",
+    "term2": "business law",
+    "parent": "law",
+    "similarity": 0.7660911083221436,
+    "cond_prob_1_given_2": 0.16666666666666666,
+    "cond_prob_2_given_1": 0.3333333333333333,
+    "co_occurrences": 2,
+    "mutual_information": 0.005432134722993002,
+    "contingency_table": {
+      "a": 2,
+      "b": 4,
+      "c": 10,
+      "d": 1640,
+      "term1_total": 6,
+      "term2_total": 12,
+      "term1_absent_total": 1650,
+      "term2_absent_total": 1644,
+      "total_docs": 1656
+    }
+  },
+  "biomedical engineering|biological engineering": {
+    "term1": "biomedical engineering",
+    "term2": "biological engineering",
+    "parent": "engineering",
+    "similarity": 0.904739260673523,
+    "cond_prob_1_given_2": 0.25,
+    "cond_prob_2_given_1": 0.2222222222222222,
+    "co_occurrences": 2,
+    "mutual_information": 0.005398148746004923,
+    "contingency_table": {
+      "a": 2,
+      "b": 7,
+      "c": 6,
+      "d": 1641,
+      "term1_total": 9,
+      "term2_total": 8,
+      "term1_absent_total": 1647,
+      "term2_absent_total": 1648,
+      "total_docs": 1656
+    }
+  },
+  "industrial engineering|manufacturing engineering": {
+    "term1": "industrial engineering",
+    "term2": "manufacturing engineering",
+    "parent": "engineering",
+    "similarity": 0.7787219882011414,
+    "cond_prob_1_given_2": 0.125,
+    "cond_prob_2_given_1": 0.14285714285714285,
+    "co_occurrences": 1,
+    "mutual_information": 0.002223597811617269,
+    "contingency_table": {
+      "a": 1,
+      "b": 6,
+      "c": 7,
+      "d": 1642,
+      "term1_total": 7,
+      "term2_total": 8,
+      "term1_absent_total": 1649,
+      "term2_absent_total": 1648,
+      "total_docs": 1656
+    }
+  },
+  "computer engineering|computer science": {
+    "term1": "computer engineering",
+    "term2": "computer science",
+    "parent": "engineering",
+    "similarity": 0.707718014717102,
+    "cond_prob_1_given_2": 0.14285714285714285,
+    "cond_prob_2_given_1": 0.16666666666666666,
+    "co_occurrences": 2,
+    "mutual_information": 0.0037997005100171427,
+    "contingency_table": {
+      "a": 2,
+      "b": 10,
+      "c": 12,
+      "d": 1632,
+      "term1_total": 12,
+      "term2_total": 14,
+      "term1_absent_total": 1644,
+      "term2_absent_total": 1642,
+      "total_docs": 1656
+    }
+  },
+  "structural engineering|architectural engineering": {
+    "term1": "structural engineering",
+    "term2": "architectural engineering",
+    "parent": "engineering",
+    "similarity": 0.7494931817054749,
+    "cond_prob_1_given_2": 0.0,
+    "cond_prob_2_given_1": 0.0,
+    "co_occurrences": 0,
+    "mutual_information": 4.444616908325586e-05,
+    "contingency_table": {
+      "a": 0,
+      "b": 7,
+      "c": 12,
+      "d": 1637,
+      "term1_total": 7,
+      "term2_total": 12,
+      "term1_absent_total": 1649,
+      "term2_absent_total": 1644,
+      "total_docs": 1656
+    }
+  }
+}

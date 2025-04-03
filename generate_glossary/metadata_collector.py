@@ -8,8 +8,10 @@ import glob
 from pathlib import Path
 import re
 from typing import Dict, List, Set, Any
+from collections import defaultdict
 
 DATA_DIR = 'data'
+FINAL_DIR = os.path.join(DATA_DIR, 'final')
 
 
 def extract_parent_from_college(college_name):
@@ -289,8 +291,30 @@ def clean_parent_term(parent: str) -> str:
     return parent
 
 
-def collect_metadata(level: int, verbose: bool = False, include_variations: bool = True) -> Dict[str, Dict[str, Any]]:
-    """Collect metadata for a given level."""
+def ensure_final_dirs_exist():
+    """Ensure the final data directory structure exists."""
+    os.makedirs(FINAL_DIR, exist_ok=True)
+    
+    # Create subdirectories for each level
+    for level in range(4):  # Levels 0, 1, 2, 3
+        os.makedirs(os.path.join(FINAL_DIR, f'lv{level}'), exist_ok=True)
+
+
+def collect_metadata(level: int, verbose: bool = False, include_variations: bool = True, merge_variation_metadata: bool = True) -> Dict[str, Dict[str, Any]]:
+    """Collect metadata for a given level.
+    
+    Args:
+        level: The hierarchy level (0, 1, 2, 3)
+        verbose: Whether to print verbose output
+        include_variations: Whether to include variations in the metadata
+        merge_variation_metadata: Whether to merge all metadata from variations into canonical terms
+        
+    Returns:
+        Dictionary of terms and their metadata
+    """
+    # First ensure the final directories exist
+    ensure_final_dirs_exist()
+    
     # Initialize metadata dictionary
     metadata: Dict[str, Dict[str, List[str]]] = {}
     
@@ -437,7 +461,7 @@ def collect_metadata(level: int, verbose: bool = False, include_variations: bool
         if verbose:
             print(f'Adding metadata for {len(variations_metadata)} variations')
         
-        # Process each variation's sources and parents
+        # First, process each variation's sources and parents
         for variation, var_data in variations_metadata.items():
             canonical = var_data['canonical_term']
             
@@ -483,17 +507,44 @@ def collect_metadata(level: int, verbose: bool = False, include_variations: bool
             # Inherit parents from canonical term
             if canonical in metadata:
                 var_data['parents'] = metadata[canonical]['parents'].copy()
+                
+                # Enhanced: If merge_variation_metadata is True, ensure all variation data is fully transferred to canonical term
+                if merge_variation_metadata:
+                    # Add sources from variation to canonical term
+                    for source in var_data.get('sources', []):
+                        if source not in metadata[canonical]['sources']:
+                            metadata[canonical]['sources'].append(source)
+                    
+                    # Add parents from variation to canonical term
+                    if 'parents' in var_data:
+                        for parent in var_data['parents']:
+                            if parent not in metadata[canonical]['parents']:
+                                metadata[canonical]['parents'].append(parent)
         
         # Add variations metadata to the main metadata
         metadata.update(variations_metadata)
     
-    # Save metadata to JSON file
+    # Save metadata to the original location
     output_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_metadata.json')
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
     
+    # Also save to the final directory
+    final_output_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_metadata.json')
+    with open(final_output_file, 'w', encoding='utf-8') as f:
+        json.dump(metadata, f, indent=2, ensure_ascii=False)
+    
+    # Save final.txt with canonical terms only
+    terms = [term for term in metadata if 'canonical_term' not in metadata[term]]
+    final_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_final.txt')
+    with open(final_file, 'w', encoding='utf-8') as f:
+        for term in sorted(terms):
+            f.write(f"{term}\n")
+    
     if verbose:
-        print(f'Metadata collected for {len(metadata)} terms (including {len(metadata) - len(terms)} variations) and saved to {output_file}')
+        print(f'Metadata collected for {len(metadata)} terms (including {len(metadata) - len(terms)} variations)')
+        print(f'Saved to original location: {output_file}')
+        print(f'Saved to final location: {final_output_file}')
     
     return metadata
 
@@ -507,6 +558,9 @@ def collect_resources(level: int, verbose: bool = False, include_variations: boo
     3. Have relevance_score > 0.75
     4. Include only these fields: url, title, processed_content, score, relevance_score
     """
+    # First ensure the final directories exist
+    ensure_final_dirs_exist()
+    
     resources_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_resources.json')
     final_terms_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_final.txt')
     metadata_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_metadata.json')
@@ -627,38 +681,246 @@ def collect_resources(level: int, verbose: bool = False, include_variations: boo
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(filtered_resources, f, indent=2, ensure_ascii=False)
         
+        # Also save to the final directory
+        final_output_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_filtered_resources.json')
+        with open(final_output_file, 'w', encoding='utf-8') as f:
+            json.dump(filtered_resources, f, indent=2, ensure_ascii=False)
+        
         if verbose:
-            print(f"Filtered resources saved to {output_file}")
+            print(f"Filtered resources saved to original location: {output_file}")
+            print(f"Filtered resources saved to final location: {final_output_file}")
             print(f"Collected resources for {len(filtered_resources)} terms")
     
     except Exception as e:
         print(f"Error processing resources file {resources_file}: {str(e)}")
 
 
+def promote_terms_based_on_parents(verbose: bool = False) -> None:
+    """Promote terms between levels based on their parent-child relationships.
+    
+    This function identifies terms that need promotion due to level gaps with their parents:
+    - Level 3 terms with only level 0/1 parents are promoted to level 2
+    - Level 2 terms with only level 0 parents are promoted to level 1
+    - Level 1 terms with no parents might be promoted to level 0 (needs review)
+    
+    The original metadata and resources remain untouched. All changes are written 
+    to the data/final directory structure.
+    """
+    # First ensure the final directories exist
+    ensure_final_dirs_exist()
+    
+    # Load metadata from all levels
+    metadata = {}
+    resources = {}
+    
+    # Load metadata and resources for all levels
+    for level in range(4):  # Levels 0, 1, 2, 3
+        metadata_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_metadata.json')
+        
+        if not os.path.exists(metadata_file):
+            if verbose:
+                print(f"Metadata file not found: {metadata_file}")
+            metadata[level] = {}
+            continue
+        
+        with open(metadata_file, 'r', encoding='utf-8') as f:
+            metadata[level] = json.load(f)
+            
+        if verbose:
+            print(f"Loaded metadata for {len(metadata[level])} terms from level {level}")
+        
+        # Load resources
+        filtered_resources_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_filtered_resources.json')
+        resources_file = os.path.join(DATA_DIR, f'lv{level}', f'lv{level}_resources.json')
+        
+        if os.path.exists(filtered_resources_file):
+            with open(filtered_resources_file, 'r', encoding='utf-8') as f:
+                resources[level] = json.load(f)
+        elif os.path.exists(resources_file):
+            with open(resources_file, 'r', encoding='utf-8') as f:
+                resources[level] = json.load(f)
+        else:
+            resources[level] = {}
+        
+        if verbose and resources[level]:
+            print(f"Loaded resources for {len(resources[level])} terms from level {level}")
+    
+    # Create a working copy of the metadata to modify
+    final_metadata = {}
+    final_resources = {}
+    
+    # First, copy all existing metadata and resources to the final structure
+    for level in range(4):
+        final_metadata[level] = metadata[level].copy() if level in metadata else {}
+        final_resources[level] = resources[level].copy() if level in resources else {}
+    
+    # Find terms that need promotion
+    promotions = {}
+    
+    # Find level 3 terms with only level 0/1 parents
+    if 3 in metadata:
+        for term, term_data in metadata[3].items():
+            # Skip variations
+            if 'canonical_term' in term_data:
+                continue
+                
+            parents = term_data.get('parents', [])
+            if not parents:
+                continue
+                
+            parent_levels = set()
+            
+            # Find levels of the parents
+            for parent in parents:
+                for level in range(3):  # Check levels 0, 1, 2
+                    if parent in metadata[level] and 'canonical_term' not in metadata[level][parent]:
+                        parent_levels.add(level)
+            
+            # If the term only has level 0/1 parents, promote to level 2
+            if parent_levels and max(parent_levels) <= 1:
+                promotions[term] = {
+                    'from_level': 3,
+                    'to_level': 2,
+                    'data': term_data,
+                    'reason': f"Term has only level 0/1 parents: {parents}"
+                }
+    
+    # Find level 2 terms with only level 0 parents
+    if 2 in metadata:
+        for term, term_data in metadata[2].items():
+            # Skip variations
+            if 'canonical_term' in term_data:
+                continue
+                
+            parents = term_data.get('parents', [])
+            if not parents:
+                continue
+                
+            parent_levels = set()
+            
+            # Find levels of the parents
+            for parent in parents:
+                for level in range(2):  # Check levels 0, 1
+                    if parent in metadata[level] and 'canonical_term' not in metadata[level][parent]:
+                        parent_levels.add(level)
+            
+            # If the term only has level 0 parents, promote to level 1
+            if parent_levels and max(parent_levels) == 0:
+                promotions[term] = {
+                    'from_level': 2,
+                    'to_level': 1,
+                    'data': term_data,
+                    'reason': f"Term has only level 0 parents: {parents}"
+                }
+    
+    # Apply promotions to the final metadata and resources
+    if promotions:
+        if verbose:
+            print(f"Found {len(promotions)} terms to promote")
+            
+        # Apply promotions
+        for term, promotion_data in promotions.items():
+            from_level = promotion_data['from_level']
+            to_level = promotion_data['to_level']
+            term_data = promotion_data['data']
+            
+            # Move the term to the new level in final metadata
+            final_metadata[to_level][term] = term_data
+            # Remove from the original level
+            del final_metadata[from_level][term]
+            
+            # Move resources if available
+            if term in final_resources[from_level]:
+                if term not in final_resources[to_level]:
+                    final_resources[to_level][term] = final_resources[from_level][term]
+                del final_resources[from_level][term]
+            
+            if verbose:
+                print(f"Promoted '{term}' from level {from_level} to level {to_level}: {promotion_data['reason']}")
+    
+    # Save the final metadata, terms, and resources to the final directory
+    for level in range(4):
+        if level not in final_metadata:
+            continue
+            
+        # Save metadata
+        metadata_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_metadata.json')
+        with open(metadata_file, 'w', encoding='utf-8') as f:
+            json.dump(final_metadata[level], f, indent=2, ensure_ascii=False)
+        
+        # Generate and save final.txt with canonical terms only
+        terms = [term for term, data in final_metadata[level].items() if 'canonical_term' not in data]
+        final_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_final.txt')
+        with open(final_file, 'w', encoding='utf-8') as f:
+            for term in sorted(terms):
+                f.write(f"{term}\n")
+        
+        # Save resources if they exist
+        if final_resources.get(level, {}):
+            resources_file = os.path.join(FINAL_DIR, f'lv{level}', f'lv{level}_filtered_resources.json')
+            with open(resources_file, 'w', encoding='utf-8') as f:
+                json.dump(final_resources[level], f, indent=2, ensure_ascii=False)
+        
+        if verbose:
+            print(f"Saved level {level} data to {FINAL_DIR}/lv{level}/")
+            print(f"  - {len(terms)} terms in final.txt")
+            print(f"  - {len(final_metadata[level])} entries in metadata")
+            if final_resources.get(level, {}):
+                print(f"  - Resources for {len(final_resources[level])} terms")
+    
+    # Create a promotion log
+    log_file = os.path.join(FINAL_DIR, 'promotion_log.json')
+    with open(log_file, 'w', encoding='utf-8') as f:
+        json.dump({
+            'promoted_terms': {term: data['reason'] for term, data in promotions.items()},
+            'total_promotions': len(promotions),
+            'level_stats': {
+                level: len([t for t, d in final_metadata.get(level, {}).items() if 'canonical_term' not in d])
+                for level in range(4)
+            }
+        }, f, indent=2, ensure_ascii=False)
+    
+    if verbose:
+        print(f"Promotion log saved to {log_file}")
+    
+    return promotions
+
+
 def main():
     """Main function for command-line execution."""
     parser = argparse.ArgumentParser(description='Collect metadata for terms after level completion')
-    parser.add_argument('level', type=int, help='Level number (0, 1, 2, etc.)')
+    parser.add_argument('level', type=int, help='Level number (0, 1, 2, 3, etc.)')
     parser.add_argument('-o', '--output', type=str, default=None, 
                         help='Output file path (default: data/lvX/metadata.json)')
-    parser.add_argument('-r', '--resources', action='store_true',
-                        help='Collect resources in addition to metadata')
+    parser.add_argument('-r', '--resources', action='store_false', dest='skip_resources',
+                        help='Skip collecting resources (default: collect resources)')
     parser.add_argument('-v', '--verbose', action='store_true',
                         help='Enable verbose output')
     parser.add_argument('--no-variations', action='store_true',
                         help='Do not include metadata for variations')
+    parser.add_argument('-p', '--promote', action='store_false', dest='skip_promotion',
+                        help='Skip promoting terms based on parent relationships (default: promote terms)')
     
     args = parser.parse_args()
     
     if args.output is None:
         args.output = f'data/lv{args.level}/metadata.json'
     
-    # Collect metadata
-    collect_metadata(args.level, args.verbose, not args.no_variations)
+    # Ensure final directories exist
+    ensure_final_dirs_exist()
     
-    # Collect resources if requested
-    if args.resources:
+    # Collect metadata
+    collect_metadata(args.level, args.verbose, not args.no_variations, merge_variation_metadata=True)
+    
+    # Collect resources if not skipped
+    if not args.skip_resources:
         collect_resources(args.level, args.verbose, not args.no_variations)
+    
+    # Promote terms if not skipped and we've processed the highest level
+    if not args.skip_promotion and args.level == 3:  # Updated to level 3
+        if args.verbose:
+            print("\nPromoting terms based on parent relationships...")
+        promote_terms_based_on_parents(args.verbose)
 
 
 if __name__ == '__main__':
