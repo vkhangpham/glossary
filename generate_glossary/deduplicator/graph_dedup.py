@@ -16,6 +16,9 @@ from tqdm import tqdm
 from urllib.parse import urlparse
 import asyncio
 from dotenv import load_dotenv
+import numpy as np
+from sentence_transformers import SentenceTransformer
+# from scipy.spatial.distance import cosine # Using numpy implementation instead
 
 from generate_glossary.deduplicator.dedup_utils import (
     normalize_text,
@@ -45,6 +48,27 @@ WebContent = Dict[str, List[Dict[str, Any]]]
 CanonicalMapping = Dict[str, Set[str]]
 DeduplicationResult = Dict[str, Any]
 
+# Define similarity threshold
+# Analysis of hierarchy.json data suggests 0.49 provides optimal F1 score for separating
+# duplicate variations (mean=0.78) from distinct terms (mean=0.15)
+EMBEDDING_SIMILARITY_THRESHOLD = 0.49
+
+
+# Helper function for similarity (assuming embeddings are numpy arrays)
+def calculate_embedding_similarity(embedding1: Optional[np.ndarray], embedding2: Optional[np.ndarray]) -> float:
+    """Calculates cosine similarity between two embedding vectors."""
+    if embedding1 is None or embedding2 is None or not isinstance(embedding1, np.ndarray) or not isinstance(embedding2, np.ndarray):
+        return 0.0
+    # Manual calculation:
+    dot_product = np.dot(embedding1, embedding2)
+    norm1 = np.linalg.norm(embedding1)
+    norm2 = np.linalg.norm(embedding2)
+    if norm1 == 0 or norm2 == 0:
+        return 0.0
+    # Clip to avoid potential floating point issues leading to values slightly outside [-1, 1]
+    similarity = np.clip(dot_product / (norm1 * norm2), -1.0, 1.0)
+    return float(similarity)
+
 
 def init_llm(provider: Optional[str] = None) -> BaseLLM:
     """
@@ -62,7 +86,7 @@ def init_llm(provider: Optional[str] = None) -> BaseLLM:
     return LLMFactory.create_llm(
         provider=provider,
         model=GEMINI_MODELS["default"] if provider == Provider.GEMINI else OPENAI_MODELS["default"],
-        temperature=0.1
+        temperature=0
     )
 
 @timing_decorator
@@ -71,6 +95,8 @@ def deduplicate_graph_based(
     web_content: Optional[Dict[str, List[WebContent]]] = None,
     url_overlap_threshold: int = 2,
     min_relevance_score: float = 0.75,
+    cache_dir: Optional[str] = None,
+    current_level: Optional[int] = None,
 ) -> DeduplicationResult:
     """Graph-based deduplication that combines rule-based and web-based approaches.
 
@@ -89,6 +115,8 @@ def deduplicate_graph_based(
         web_content: Optional dictionary mapping terms to their web content
         url_overlap_threshold: Minimum number of overlapping URLs required (default: 5)
         min_relevance_score: Minimum relevance score for content to be considered relevant
+        cache_dir: Optional directory to cache/load graph data for incremental processing
+        current_level: Optional current level being processed (for incremental processing)
 
     Returns:
         DeduplicationResult with terms and variations, respecting level boundaries
@@ -97,33 +125,158 @@ def deduplicate_graph_based(
         f"Starting graph-based deduplication with {sum(len(terms) for terms in terms_by_level.values())} terms"
     )
 
-    # 1. Build initial graph with all terms
-    G = build_term_graph(terms_by_level)
+    # Figure out current level if not provided explicitly
+    if current_level is None:
+        current_level = max(terms_by_level.keys())
+    
+    # Check if we have cached graph data from previous runs
+    G = None
+    term_embeddings = {}
+    cached_levels = set()
+    
+    if cache_dir:
+        try:
+            import pickle
+            import os
+            
+            # Ensure cache directory exists
+            os.makedirs(cache_dir, exist_ok=True)
+            
+            # Path for cached graph data
+            graph_cache_path = os.path.join(cache_dir, "graph_cache.pickle")
+            embeddings_cache_path = os.path.join(cache_dir, "embeddings_cache.pickle")
+            levels_cache_path = os.path.join(cache_dir, "processed_levels.pickle")
+            
+            # Check if cache files exist
+            if os.path.exists(graph_cache_path) and os.path.exists(embeddings_cache_path) and os.path.exists(levels_cache_path):
+                logging.info("Loading cached graph data from previous runs...")
+                
+                # Load cached graph
+                with open(graph_cache_path, "rb") as f:
+                    G = pickle.load(f)
+                    
+                # Load cached embeddings
+                with open(embeddings_cache_path, "rb") as f:
+                    term_embeddings = pickle.load(f)
+                    
+                # Load cached processed levels
+                with open(levels_cache_path, "rb") as f:
+                    cached_levels = pickle.load(f)
+                    
+                logging.info(f"Loaded cached graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
+                logging.info(f"Loaded embeddings for {len(term_embeddings)} terms")
+                logging.info(f"Previously processed levels: {cached_levels}")
+        except Exception as e:
+            logging.error(f"Error loading cached graph data: {e}. Building new graph from scratch.")
+            G = None
+            term_embeddings = {}
+            cached_levels = set()
 
-    # 2. Add rule-based relationships with level awareness
-    G = add_rule_based_edges(G, terms_by_level)
+    logging.info("Initializing embedding model...")
+    # Ensure you handle model loading appropriately (e.g., download if needed)
+    try:
+        # Example model, choose based on performance/needs
+        embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    except Exception as e:
+        logging.error(f"Failed to load SentenceTransformer model: {e}. Embedding similarity check will be skipped.")
+        embedder = None
 
-    # 3. Add compound term edges
-    all_terms = [term for terms in terms_by_level.values() for term in terms]
-    G = add_compound_term_edges(G, all_terms)
+    # Determine which terms need embeddings
+    all_terms_list = [term for level, terms in terms_by_level.items() 
+                     for term in terms if level not in cached_levels or term not in term_embeddings]
+    
+    if embedder and all_terms_list:
+        logging.info(f"Computing embeddings for {len(all_terms_list)} new terms...")
+        try:
+            embeddings_list = embedder.encode(all_terms_list, show_progress_bar=True, convert_to_numpy=True)
+            # Add new embeddings to existing dictionary
+            for term, emb in zip(all_terms_list, embeddings_list):
+                term_embeddings[term] = emb
+            logging.info("Embeddings computed.")
+        except Exception as e:
+            logging.error(f"Error computing embeddings: {e}. Embedding similarity check will be skipped.")
+            embedder = None # Disable further embedding checks if computation fails
+    else:
+        if not all_terms_list:
+            logging.info("No new terms to compute embeddings for.")
+        else:
+            logging.warning("Embedder not available. Skipping embedding computation and similarity checks.")
 
-    # 4. Add web-based relationships if web content is available
-    if web_content:
-        G = add_web_based_edges(
-            G,
-            terms_by_level,
-            web_content,
-            url_overlap_threshold=url_overlap_threshold,
-            min_relevance_score=min_relevance_score,
-        )
+    # Build initial graph if we don't have a cached one
+    if G is None:
+        # 1. Build initial graph with all terms (pass embeddings)
+        G = build_term_graph(terms_by_level, term_embeddings)
+    else:
+        # If we have a cached graph, just add new terms
+        new_terms_to_add = {}
+        for level, terms in terms_by_level.items():
+            if level not in cached_levels:
+                new_terms_to_add[level] = terms
+        
+        if new_terms_to_add:
+            logging.info(f"Adding {sum(len(terms) for terms in new_terms_to_add.values())} new terms to existing graph")
+            # Add the new terms to the graph
+            for level, terms in new_terms_to_add.items():
+                for term in terms:
+                    # Skip if node already exists
+                    if term in G:
+                        continue
+                    # Add node attributes
+                    G.add_node(
+                        term,
+                        level=level,
+                        has_sciences_suffix=term.endswith(("sciences", "studies")),
+                        word_count=len(term.split()),
+                        embedding=term_embeddings.get(term)
+                    )
 
-    # 5. Add level weighting information
-    G = add_level_weights_to_edges(G, terms_by_level)
+    # Calculate which levels need to be processed
+    levels_to_process = set(terms_by_level.keys()) - cached_levels
+    
+    if not levels_to_process:
+        logging.info("All levels already processed. Using cached graph without further processing.")
+    else:
+        logging.info(f"Processing levels: {levels_to_process}")
+        
+        # 2. Add rule-based relationships with level awareness
+        # Only process terms from levels that haven't been processed yet
+        terms_to_process = {}
+        for level in levels_to_process:
+            if level in terms_by_level:
+                terms_to_process[level] = terms_by_level[level]
+        
+        if terms_to_process:
+            G = add_rule_based_edges(G, terms_to_process)
 
-    # 6. Find and add explicit transitive relationships for the whole graph
-    all_terms = [term for terms in terms_by_level.values() for term in terms]
-    transitive_edges = find_transitive_relationships(G, all_terms)
-    G.add_edges_from(transitive_edges)
+        # 3. Add compound term edges for new terms
+        # Get all terms from all levels for compound term checking
+        all_terms = [term for terms in terms_by_level.values() for term in terms]
+        # But only process the new terms for compound relationships
+        new_terms = [term for level, terms in terms_to_process.items() for term in terms]
+        if new_terms:
+            G = add_compound_term_edges(G, all_terms, new_terms)
+
+        # 4. Add web-based relationships if web content is available
+        if web_content:
+            # For web-based edges, we need to consider terms from all levels
+            # to find relationships between new terms and existing terms
+            G = add_web_based_edges(
+                G,
+                terms_by_level,
+                web_content,
+                url_overlap_threshold=url_overlap_threshold,
+                min_relevance_score=min_relevance_score,
+                levels_to_process=levels_to_process,
+            )
+
+        # 5. Add level weighting information
+        G = add_level_weights_to_edges(G, terms_by_level)
+
+        # 6. Find and add explicit transitive relationships 
+        # Only process transitive relationships involving new terms
+        new_terms_set = set(new_terms)
+        transitive_edges = find_transitive_relationships(G, all_terms, new_terms_set)
+        G.add_edges_from(transitive_edges)
 
     # 7. Select canonical terms for each connected component, respecting level boundaries
     canonical_mapping = select_canonical_terms(G, terms_by_level)
@@ -133,6 +286,37 @@ def deduplicate_graph_based(
 
     # 9. Convert to standard output format
     result = convert_to_deduplication_result(canonical_mapping, terms_by_level, G)
+
+    # Save cache if cache_dir provided
+    if cache_dir:
+        try:
+            import pickle
+            import os
+            
+            # Ensure cache directory exists
+            os.makedirs(cache_dir, exist_ok=True)
+            
+            # Path for cached graph data
+            graph_cache_path = os.path.join(cache_dir, "graph_cache.pickle")
+            embeddings_cache_path = os.path.join(cache_dir, "embeddings_cache.pickle")
+            levels_cache_path = os.path.join(cache_dir, "processed_levels.pickle")
+            
+            # Save graph
+            with open(graph_cache_path, "wb") as f:
+                pickle.dump(G, f)
+                
+            # Save embeddings
+            with open(embeddings_cache_path, "wb") as f:
+                pickle.dump(term_embeddings, f)
+                
+            # Save processed levels (add newly processed levels)
+            cached_levels.update(levels_to_process)
+            with open(levels_cache_path, "wb") as f:
+                pickle.dump(cached_levels, f)
+                
+            logging.info(f"Cached graph data saved to {cache_dir}")
+        except Exception as e:
+            logging.error(f"Error saving cached graph data: {e}")
 
     # Log results with detailed breakdown
     deduplicated_count = len(result["deduplicated_terms"])
@@ -160,12 +344,13 @@ def deduplicate_graph_based(
     return result
 
 
-def build_term_graph(terms_by_level: TermsByLevel) -> nx.Graph:
+def build_term_graph(terms_by_level: TermsByLevel, term_embeddings: Dict[str, np.ndarray]) -> nx.Graph:
     """
     Builds a graph where nodes are terms and edges represent relationships.
 
     Args:
         terms_by_level: Dict mapping level numbers to lists of terms
+        term_embeddings: Dict mapping terms to their embeddings
 
     Returns:
         NetworkX graph with terms as nodes
@@ -181,6 +366,7 @@ def build_term_graph(terms_by_level: TermsByLevel) -> nx.Graph:
                 level=level,
                 has_sciences_suffix=term.endswith(("sciences", "studies")),
                 word_count=len(term.split()),
+                embedding=term_embeddings.get(term) # Add embedding attribute
             )
 
     logging.info(f"Created graph with {G.number_of_nodes()} nodes")
@@ -742,20 +928,25 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
     return G
 
 
-def add_compound_term_edges(G: nx.Graph, terms: List[str]) -> nx.Graph:
+def add_compound_term_edges(G: nx.Graph, terms: List[str], terms_to_process: Optional[List[str]] = None) -> nx.Graph:
     """
     Adds edges for compound terms based on the is_compound_term function.
 
     Args:
         G: NetworkX graph to add edges to
         terms: List of all terms to check for compounds
+        terms_to_process: Optional list of terms to process (if None, process all terms)
 
     Returns:
         Updated graph with compound relationship edges
     """
     initial_edge_count = G.number_of_edges()
+    
+    # If terms_to_process is None, process all terms
+    if terms_to_process is None:
+        terms_to_process = terms
 
-    for term in terms:
+    for term in terms_to_process:
         compound_result = is_compound_term(term, terms)
         if compound_result["is_compound"] and compound_result["should_remove"]:
             # Add edges from this compound term to its atomic components
@@ -879,6 +1070,7 @@ def add_web_based_edges(
     web_content: WebContent,
     url_overlap_threshold: int = 2,  # Default threshold
     min_relevance_score: float = 0.75,  # Default minimum relevance score
+    levels_to_process: Optional[Set[int]] = None,  # Optional set of levels to process
 ) -> nx.Graph:
     """
     Add edges to the graph based on web content overlap.
@@ -895,6 +1087,7 @@ def add_web_based_edges(
         web_content: Dict mapping terms to their web content
         url_overlap_threshold: Minimum number of overlapping URLs required
         min_relevance_score: Minimum relevance score for web content
+        levels_to_process: Optional set of level numbers to process (for incremental processing)
 
     Returns:
         Updated graph with web-based relationship edges
@@ -906,14 +1099,26 @@ def add_web_based_edges(
 
     initial_edge_count = G.number_of_edges()
 
-    # Flatten terms_by_level into a single list
-    all_terms = [term for terms in terms_by_level.values() for term in terms]
+    # Flatten terms_by_level into a single list - only process specified levels if provided
+    all_terms = []
+    terms_to_process = []
+    
+    for level, terms in terms_by_level.items():
+        all_terms.extend(terms)
+        if levels_to_process is None or level in levels_to_process:
+            terms_to_process.extend(terms)
+
+    logging.info(f"Processing web-based relationships for {len(terms_to_process)} terms out of {len(all_terms)} total terms")
 
     # Filter to terms with web content
     terms_with_content = [t for t in all_terms if t in web_content and web_content[t]]
+    terms_to_process_with_content = [t for t in terms_to_process if t in web_content and web_content[t]]
 
     logging.info(
         f"{len(terms_with_content)} out of {len(all_terms)} terms have web content"
+    )
+    logging.info(
+        f"{len(terms_to_process_with_content)} out of {len(terms_to_process)} terms to process have web content"
     )
 
     if not terms_with_content:
@@ -953,11 +1158,6 @@ def add_web_based_edges(
 
             normalized_url = normalize_url(url)
 
-            # Check URL quality
-            # url_quality = assess_url_quality(normalized_url)
-            # if url_quality < 0.4:  # More strict quality threshold
-            #     continue
-
             # Add to collections
             urls.add(normalized_url)
 
@@ -987,11 +1187,11 @@ def add_web_based_edges(
     # Process terms in parallel to find relationships
     logging.info("Finding URL-based relationships between terms")
 
-    # Process chunks of terms in parallel
+    # Process chunks of terms in parallel - only terms_to_process_with_content
     batch_size = 100
     term_batches = [
-        terms_with_content[i : i + batch_size]
-        for i in range(0, len(terms_with_content), batch_size)
+        terms_to_process_with_content[i : i + batch_size]
+        for i in range(0, len(terms_to_process_with_content), batch_size)
     ]
 
     all_edges = []
@@ -1069,24 +1269,48 @@ def add_web_based_edges(
         
         # LLM verification for Wikipedia high relevance edges
         if wiki_high_relevance and needs_llm_verification:
-            logging.info(f"Verifying Wikipedia high relevance with LLM: '{term1}' - '{term2}'")
-            logging.info(f"Shared Wikipedia URLs: {[url for url in shared_urls if 'wikipedia.org' in url]}")
-            llm_verified = verify_edge_with_llm_sync(
-                term1, 
-                term2, 
-                term_relevant_content,
-                list(shared_urls),
-                provider=None
-            )
-            if llm_verified:
-                logging.info(f"LLM VERIFIED Wikipedia edge: '{term1}' - '{term2}'")
-                meets_threshold = True
-                # Keep wiki_high_relevance=True but add verification flag
-                attributes["llm_verified_wiki"] = True
+            # --- Add Embedding Check Here ---
+            embedding_similarity = 0.0
+            term1_embedding = G.nodes[term1].get('embedding')
+            term2_embedding = G.nodes[term2].get('embedding')
+            if term1_embedding is not None and term2_embedding is not None:
+                embedding_similarity = calculate_embedding_similarity(
+                    term1_embedding, term2_embedding
+                )
+            # --- End Embedding Check ---
+
+            if embedding_similarity > EMBEDDING_SIMILARITY_THRESHOLD: # Check threshold
+                # Get the shared Wikipedia URLs
+                shared_wiki_urls = [url for url in shared_urls if 'wikipedia.org' in url]
+                
+                # Only proceed with LLM verification if there's at least one shared Wikipedia URL
+                if shared_wiki_urls:
+                    logging.info(f"Verifying Wikipedia high relevance with LLM: '{term1}' - '{term2}'")
+                    logging.info(f"Shared Wikipedia URLs: {shared_wiki_urls}")
+                    llm_verified = verify_edge_with_llm_sync(
+                        term1, 
+                        term2, 
+                        term_relevant_content,
+                        list(shared_urls),
+                        provider=None
+                    )
+                    if llm_verified:
+                        logging.info(f"LLM VERIFIED Wikipedia edge: '{term1}' - '{term2}'")
+                        meets_threshold = True
+                        # Keep wiki_high_relevance=True but add verification flag
+                        attributes["llm_verified_wiki"] = True
+                    else:
+                        # LLM rejected the Wikipedia match
+                        wiki_high_relevance = False
+                        logging.info(f"LLM REJECTED Wikipedia edge: '{term1}' - '{term2}'")
+                else:
+                    # No shared Wikipedia URLs, so don't verify with LLM
+                    wiki_high_relevance = False
+                    logging.info(f"Skipping LLM verification - no shared Wikipedia URLs for: '{term1}' - '{term2}'")
             else:
-                # LLM rejected the Wikipedia match
-                wiki_high_relevance = False
-                logging.info(f"LLM REJECTED Wikipedia edge: '{term1}' - '{term2}'")
+                # Embedding similarity too low, skip LLM verification for this case
+                wiki_high_relevance = False # Override flag if similarity is low
+                logging.debug(f"Skipping Wiki LLM check for '{term1}' - '{term2}' due to low embedding similarity: {embedding_similarity:.4f}")
         
         # Use LLM to verify other borderline cases
         if is_borderline and not meets_threshold and not wiki_high_relevance:
@@ -1094,23 +1318,47 @@ def add_web_based_edges(
             if is_cross_level:
                 is_borderline = False
             else:
-                logging.info(f"Verifying borderline case with LLM: '{term1}' - '{term2}'")
-                logging.info(f"Borderline evidence: {len(shared_urls)} shared URLs, {quality_adjusted_count:.2f} quality score")
-                llm_verified = verify_edge_with_llm_sync(
-                    term1, 
-                    term2, 
-                    term_relevant_content,
-                    list(shared_urls),
-                    provider=None
-                )
-                if llm_verified:
-                    logging.info(f"LLM VERIFIED borderline edge: '{term1}' - '{term2}'")
-                    meets_threshold = True
-                    # Add LLM verification as the detection method
-                    attributes["detection_method"] = "llm_verified"
-                    attributes["is_llm_verified"] = True
+                # --- Add Embedding Check Here ---
+                embedding_similarity = 0.0
+                term1_embedding = G.nodes[term1].get('embedding')
+                term2_embedding = G.nodes[term2].get('embedding')
+                if term1_embedding is not None and term2_embedding is not None:
+                    embedding_similarity = calculate_embedding_similarity(
+                       term1_embedding, term2_embedding
+                    )
+                # --- End Embedding Check ---
+
+                if embedding_similarity > EMBEDDING_SIMILARITY_THRESHOLD: # Check threshold
+                    # Get the shared Wikipedia URLs
+                    shared_wiki_urls = [url for url in shared_urls if 'wikipedia.org' in url]
+
+                    # Only proceed with LLM verification if there's at least one shared Wikipedia URL
+                    if shared_wiki_urls:
+                        logging.info(f"Verifying borderline case with LLM: '{term1}' - '{term2}'")
+                        logging.info(f"Borderline evidence: {len(shared_urls)} shared URLs, {quality_adjusted_count:.2f} quality score")
+                        llm_verified = verify_edge_with_llm_sync(
+                            term1, 
+                            term2, 
+                            term_relevant_content,
+                            list(shared_urls),
+                            provider=None
+                        )
+                        if llm_verified:
+                            logging.info(f"LLM VERIFIED borderline edge: '{term1}' - '{term2}'")
+                            meets_threshold = True
+                            # Add LLM verification as the detection method
+                            attributes["detection_method"] = "llm_verified"
+                            attributes["is_llm_verified"] = True
+                        else:
+                            logging.info(f"LLM REJECTED borderline edge: '{term1}' - '{term2}'")
+                    else:
+                        # No shared Wikipedia URLs, so don't verify with LLM
+                        logging.info(f"Skipping LLM verification for borderline case - no shared Wikipedia URLs: '{term1}' - '{term2}'")
+                        is_borderline = False
                 else:
-                    logging.info(f"LLM REJECTED borderline edge: '{term1}' - '{term2}'")
+                    # Embedding similarity too low, skip LLM verification for borderline case
+                    is_borderline = False # Do not consider it borderline if similarity is low
+                    logging.debug(f"Skipping Borderline LLM check for '{term1}' - '{term2}' due to low embedding similarity: {embedding_similarity:.4f}")
 
         # Only add edge if it meets threshold or is a Wikipedia high relevance match
         if meets_threshold or wiki_high_relevance:
@@ -1266,14 +1514,14 @@ def process_term_chunk_web_based(
                     # Check term1's relevance for this Wikipedia URL
                     term1_has_high_relevance = False
                     for entry in term_relevant_content.get(term1, []):
-                        if entry.get("url") == url and entry.get("relevance", 0) > 0.7:  # Lowered from 0.82
+                        if entry.get("url") == url and entry.get("relevance", 0) > 0.6:  # Changed from 0.8 to 0.6
                             term1_has_high_relevance = True
                             break
                     
                     # Check term2's relevance for this Wikipedia URL
                     term2_has_high_relevance = False
                     for entry in term_relevant_content.get(term2, []):
-                        if entry.get("url") == url and entry.get("relevance", 0) > 0.7:  # Lowered from 0.82
+                        if entry.get("url") == url and entry.get("relevance", 0) > 0.6:  # Changed from 0.8 to 0.6
                             term2_has_high_relevance = True
                             break
                     
@@ -1791,7 +2039,7 @@ def calculate_term_similarity(info1: Dict[str, Any], info2: Dict[str, Any]) -> f
 
 
 def find_transitive_relationships(
-    G: nx.Graph, terms: List[str]
+    G: nx.Graph, terms: List[str], terms_to_check: Optional[Set[str]] = None
 ) -> List[Tuple[str, str, Dict[str, Any]]]:
     """
     Find terms that are connected via transitive relationships.
@@ -1805,6 +2053,7 @@ def find_transitive_relationships(
     Args:
         G: NetworkX graph with terms and relationships
         terms: List of terms to check for transitive relationships
+        terms_to_check: Optional set of terms to specifically check (for incremental processing)
 
     Returns:
         List of edges to add (term1, term2, attributes)
@@ -1879,15 +2128,35 @@ def find_transitive_relationships(
     # Find potential transitive relationships through common neighbors
     logging.info("Computing common neighbors")
     common_neighbors_dict = {}
-    for term1 in terms:
+    
+    # If terms_to_check is provided, only check those terms for transitive relationships
+    # Otherwise, check all terms
+    if terms_to_check:
+        # For incremental processing, we need to check:
+        # 1. New terms with each other
+        # 2. New terms with existing terms
+        term_pairs = []
+        for term1 in terms:
+            for term2 in terms:
+                if term1 >= term2:  # Skip if already processed or same term
+                    continue
+                # Only include pairs where at least one term is in terms_to_check
+                if term1 in terms_to_check or term2 in terms_to_check:
+                    term_pairs.append((term1, term2))
+        
+        logging.info(f"Checking {len(term_pairs)} term pairs for transitive relationships (incremental)")
+    else:
+        # For full processing, check all term pairs
+        term_pairs = [(term1, term2) for term1 in terms for term2 in terms if term1 < term2]
+        logging.info(f"Checking {len(term_pairs)} term pairs for transitive relationships (full)")
+    
+    # Find common neighbors for each pair
+    for term1, term2 in term_pairs:
         neighbors1 = set(G.neighbors(term1))
-        for term2 in terms:
-            if term1 >= term2:
-                continue
-            neighbors2 = set(G.neighbors(term2))
-            common = neighbors1 & neighbors2
-            if common:
-                common_neighbors_dict[(term1, term2)] = common
+        neighbors2 = set(G.neighbors(term2))
+        common = neighbors1 & neighbors2
+        if common:
+            common_neighbors_dict[(term1, term2)] = common
 
     # Process in parallel
     from concurrent.futures import ProcessPoolExecutor
@@ -2213,14 +2482,18 @@ async def verify_edge_with_llm(
             if "wikipedia.org" in term2_url['url']:
                 wiki_snippets_term2.append(f"- {term2_url['processed_content']}")
             
+        # Prepare snippets outside the f-string to avoid backslash issue
+        snippet1_str = " ".join(wiki_snippets_term1[:1]).replace("\\n", " ")
+        snippet2_str = " ".join(wiki_snippets_term2[:1]).replace("\\n", " ")
+
         wiki_context = f"""
 Here are the Wikipedia snippets for the 2 terms:
 
 {term1}:
-    {" ".join(wiki_snippets_term1[:1]).replace("\n", " ")}
+    {snippet1_str}
 
 {term2}:
-    {" ".join(wiki_snippets_term2[:1]).replace("\n", " ")}
+    {snippet2_str}
         """
         
         system_prompt = f"""You are an expert in academic terminology with deep knowledge of academic disciplines.
@@ -2230,22 +2503,42 @@ Respond with ONLY "YES" or "NO".
 YES = The terms represent the same concept, are variations of each other, or are so closely related they should be considered equivalent.
 NO = The terms represent different concepts, distinct fields, or are not closely related enough to be considered the same.
 
+When determining if terms are duplicates, consider:
+1. Terms are duplicates if their fields of research are so close they can be used interchangeably in academic literature
+2. Terms are duplicates if they represent the same concept with different phrasing or regional variations
+3. Terms are duplicates if one is explicitly stated to be another name for the other in authoritative sources
+4. Terms are duplicates if they cover essentially the same domain of knowledge with only minor differences in emphasis
+
+The Wikipedia snippets provided are extractive summarizations of shared Wikipedia pages. Use them to inform your decision:
+- If the snippets explicitly state that the terms are the same or synonymous, answer YES
+- If the snippets show the terms cover the same subject matter with similar scope, answer YES
+- If one term is described as a subset or specialized version of the other, answer NO
+- If the snippets describe fundamentally different subject areas or approaches, answer NO
 
 Examples of terms that are variations or closely related (YES):
-- "Computer Science" and "Computing Science"
-- "Africana Studies" and "Black Studies"
-- "Media Studies" and "Media Science"
+- "Computer Science" and "Computing Science" (same field with different naming conventions)
+- "Africana Studies" and "Black Studies" (same interdisciplinary field with different naming)
+- "Media Studies" and "Media Science" (same domain with different academic framing)
+- "Cybersecurity" and "Computer Security" (explicitly noted as synonymous in literature)
+- "Machine Learning" and "Statistical Learning" (used interchangeably in many academic contexts)
 
 Examples of terms that are NOT variations or closely related (NO):
-- "Computer Science" and "Computer Engineering"
-- "Biomedical Engineering" and "Biological Engineering"
-- "Applied Statistics" and "Statistics"
+- "Computer Science" and "Computer Engineering" (related but distinct disciplines with different focus)
+- "Biomedical Engineering" and "Biological Engineering" (overlapping but distinct specializations)
+- "Applied Statistics" and "Statistics" (one is a specialized application of the other)
+- "Cognitive Psychology" and "Clinical Psychology" (different branches within psychology)
+- "Financial Economics" and "Macroeconomics" (different areas within economics with distinct focuses)
 """
         
         user_prompt = f"""Are the following two academic terms variations of the same concept or closely related enough to be considered equivalent?
 
 Term 1: {term1}
 Term 2: {term2}
+
+The Wikipedia snippets provided are extractive summarizations from shared Wikipedia pages. Pay careful attention to these snippets:
+- If they explicitly state the terms are synonymous (e.g., "also known as", "also called", "or", terms in parentheses)
+- If they describe the same field of study with similar boundaries and applications
+- If academic literature would generally treat these terms as interchangeable
 
 ---
 {wiki_context}

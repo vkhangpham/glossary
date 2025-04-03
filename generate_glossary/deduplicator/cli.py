@@ -11,7 +11,7 @@ import sys
 import os
 import logging
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Set, Tuple
 from dotenv import load_dotenv
 
 from generate_glossary.deduplicator import deduplication_modes
@@ -29,16 +29,23 @@ DEFAULT_CONFIG = {
     "use_enhanced_linguistics": True,
 }
 
-def setup_logging(log_level: str = "INFO") -> None:
-    """Configure logging with the specified level."""
+def setup_logging(log_level: str = "INFO", log_file: Optional[str] = None) -> None:
+    """Configure logging with the specified level and optional file output."""
     numeric_level = getattr(logging, log_level.upper(), None)
     if not isinstance(numeric_level, int):
         raise ValueError(f"Invalid log level: {log_level}")
-    
-    logging.basicConfig(
-        level=numeric_level,
-        format='%(asctime)s - %(levelname)s - %(message)s'
-    )
+
+    # Basic configuration for console output
+    log_format = '%(asctime)s - %(levelname)s - %(message)s'
+    logging.basicConfig(level=numeric_level, format=log_format, stream=sys.stdout)
+
+    # If a log file is specified, add a file handler
+    if log_file:
+        file_handler = logging.FileHandler(log_file, encoding='utf-8')
+        file_handler.setLevel(numeric_level)
+        file_handler.setFormatter(logging.Formatter(log_format))
+        logging.getLogger().addHandler(file_handler)
+        logging.info(f"Logging to file: {log_file}")
 
 def read_terms(filepath: str) -> List[str]:
     """Read terms from file, one term per line."""
@@ -48,6 +55,90 @@ def read_terms(filepath: str) -> List[str]:
     
     with open(filepath, "r", encoding="utf-8") as f:
         return [line.strip() for line in f if line.strip()]
+
+def read_term_json(filepath: str) -> Dict[str, Any]:
+    """Read deduplication JSON file to extract terms and their variations.
+    
+    This function attempts to read variations data from two possible sources:
+    1. The corresponding .json file with the same base name (e.g., lv0_final.json)
+    2. The metadata file in the same directory (e.g., lv0_metadata.json)
+    """
+    json_path = Path(filepath)
+    
+    # Try the corresponding JSON with the same base name first
+    if json_path.suffix == '.txt':
+        json_path = json_path.with_suffix('.json')
+    
+    result = {"canonicals": [], "variations": {}}
+    
+    # Try reading the json file with the same base name
+    if json_path.exists():
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                
+            canonicals = data.get("deduplicated_terms", [])
+            
+            # Get variations from the variation_reasons dictionary
+            variations = {}
+            variation_reasons = data.get("variation_reasons", {})
+            for variation, details in variation_reasons.items():
+                canonical = details.get("canonical")
+                if canonical:
+                    if canonical not in variations:
+                        variations[canonical] = set()
+                    variations[canonical].add(variation)
+            
+            result["canonicals"] = canonicals
+            result["variations"] = variations
+            return result
+        except Exception as e:
+            logging.warning(f"Error reading JSON file {json_path}: {e}")
+    
+    # If we couldn't read or find the json file, try the metadata file
+    try:
+        # Construct metadata path: data/lvX/lvX_metadata.json
+        dir_path = json_path.parent
+        level_prefix = json_path.stem.split('_')[0]  # Extract lvX part
+        metadata_path = dir_path / f"{level_prefix}_metadata.json"
+        
+        if metadata_path.exists():
+            logging.info(f"Reading variations from metadata file: {metadata_path}")
+            with open(metadata_path, "r", encoding="utf-8") as f:
+                metadata = json.load(f)
+            
+            # Extract terms and their variations from metadata
+            canonicals = []
+            variations = {}
+            
+            # Process each term in the metadata
+            for term, term_info in metadata.items():
+                if "canonical_term" in term_info:
+                    # This is a variation
+                    canonical = term_info["canonical_term"]
+                    if canonical not in variations:
+                        variations[canonical] = set()
+                    variations[canonical].add(term)
+                else:
+                    # This is a canonical term
+                    canonicals.append(term)
+                    
+                    # Check if it has variations
+                    if "variations" in term_info:
+                        if term not in variations:
+                            variations[term] = set()
+                        variations[term].update(term_info["variations"])
+            
+            result["canonicals"] = canonicals
+            result["variations"] = variations
+            return result
+        else:
+            logging.warning(f"Metadata file not found: {metadata_path}")
+    except Exception as e:
+        logging.warning(f"Error reading metadata file: {e}")
+    
+    # Return empty result if neither file was read successfully
+    return result
 
 def read_web_content(filepath: str) -> Dict[str, List[WebContent]]:
     """Read web content from JSON file."""
@@ -178,9 +269,6 @@ def write_results(results: Dict[str, Any], output_path: str, input_terms: List[s
         # Logging for debugging
         logging.debug(f"Found {len(all_variations)} unique terms to exclude from current level")
         
-        # Check for any input term that might be a match with variations
-        input_term_lower_to_original = {term.lower(): term for term in input_term_set}
-        
         # Exclude any input term that's a case-insensitive match with any variation or higher level term
         filtered_terms = []
         for term in deduplicated_terms:
@@ -245,6 +333,10 @@ def main() -> None:
         default=DEFAULT_CONFIG["log_level"],
         help=f"Logging level (default: {DEFAULT_CONFIG['log_level']})"
     )
+    parser.add_argument(
+        "--log-file",
+        help="Path to log file (default: {output}.log)"
+    )
     
     # Advanced arguments (grouped)
     advanced_group = parser.add_argument_group('Advanced Options')
@@ -290,8 +382,18 @@ def main() -> None:
     
     args = parser.parse_args()
     
+    # Determine log file path
+    log_file_path = args.log_file
+    if not log_file_path:
+        # Default log file name based on output path
+        output_dir = Path(args.output).parent
+        output_basename = Path(args.output).stem
+        log_file_path = output_dir / f"{output_basename}.log"
+        # Ensure the directory exists
+        output_dir.mkdir(parents=True, exist_ok=True)
+
     # Configure logging
-    setup_logging(args.log_level)
+    setup_logging(args.log_level, str(log_file_path))
     
     try:
         # Read terms
@@ -303,15 +405,36 @@ def main() -> None:
         
         logging.info(f"Processing {len(terms)} terms with mode: {args.mode}")
         
-        # Read higher level terms if provided
+        # Read higher level terms and their variations if provided
         higher_level_terms = None
+        higher_level_terms_with_variations = None
+        
         if args.higher_level_terms:
             higher_level_terms = {}
+            higher_level_terms_with_variations = {}
+            
             for level_path in args.higher_level_terms:
                 level, path = level_path.split(":")
                 level = int(level)
-                higher_level_terms[level] = read_terms(path)
-                logging.info(f"Read {len(higher_level_terms[level])} terms from level {level}")
+                
+                # Read canonical terms
+                canonical_terms = read_terms(path)
+                higher_level_terms[level] = canonical_terms
+                
+                # Read terms and their variations from the corresponding JSON file
+                term_data = read_term_json(path)
+                
+                # Create comprehensive list of terms (canonicals + variations)
+                all_terms = set(term_data["canonicals"])
+                
+                # Add all variations
+                for canonical, variations in term_data["variations"].items():
+                    all_terms.add(canonical)
+                    all_terms.update(variations)
+                
+                higher_level_terms_with_variations[level] = list(all_terms)
+                
+                logging.info(f"Read {len(canonical_terms)} canonical terms and {len(all_terms) - len(canonical_terms)} variations from level {level}")
         
         # Read web content if needed
         web_content = None
@@ -375,7 +498,7 @@ def main() -> None:
             results = deduplication_modes.deduplicate_graph_based(
                 terms,
                 web_content=web_content,
-                higher_level_terms=higher_level_terms,
+                higher_level_terms=higher_level_terms_with_variations if higher_level_terms_with_variations else higher_level_terms,
                 higher_level_web_content=higher_level_web_content,
                 min_score=args.min_score,
                 min_relevance_score=args.min_relevance_score,

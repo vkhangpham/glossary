@@ -8,8 +8,9 @@ different validation modes.
 import argparse
 import json
 import sys
+import glob
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Set
 
 from generate_glossary.validator.validation_modes import WebContent, DEFAULT_MIN_SCORE, DEFAULT_MIN_RELEVANCE_SCORE
 from generate_glossary.validator import validate
@@ -58,6 +59,42 @@ def read_web_content(filepath: str) -> Dict[str, List[WebContent]]:
         print(f"Error loading web content: {e}", file=sys.stderr)
         return {}
 
+def get_rejected_terms(level: int) -> Dict[str, int]:
+    """
+    Get all terms rejected in previous levels.
+    
+    Args:
+        level: Current level
+        
+    Returns:
+        Dictionary mapping rejected terms to the level they were rejected at
+    """
+    if level is None or level <= 1:
+        return {}  # No previous levels to check
+    
+    rejected_terms = {}
+    
+    # Check all previous levels (from 0 to level-1)
+    for prev_level in range(level):
+        # Look for validation result files in data/lvX/lvX*_valid.json
+        pattern = f"data/lv{prev_level}/lv{prev_level}*_valid.json"
+        result_files = glob.glob(pattern)
+        
+        for result_file in result_files:
+            try:
+                with open(result_file, "r", encoding="utf-8") as f:
+                    results = json.load(f)
+                    
+                    # Add terms that were marked as invalid to the rejected dict
+                    # Only add if not already in the dict (keep earliest rejection level)
+                    for term, result in results.items():
+                        if not result.get("is_valid", True) and term not in rejected_terms:
+                            rejected_terms[term] = prev_level
+            except Exception as e:
+                print(f"Warning: Could not read rejected terms from {result_file}: {e}", file=sys.stderr)
+    
+    return rejected_terms
+
 def write_results(results: Dict[str, Any], output_path: str) -> None:
     """Write validation results to both .txt and .json files.
     
@@ -101,6 +138,13 @@ def main() -> None:
         choices=["rule", "web", "llm"],
         default="rule",
         help="Validation mode to use (default: rule)"
+    )
+    
+    # Level argument
+    parser.add_argument(
+        "-l", "--level",
+        type=int,
+        help="Current validation level (if specified, terms rejected in levels 1 to level-1 will be automatically skipped)"
     )
     
     # Optional arguments
@@ -153,6 +197,19 @@ def main() -> None:
         else:
             terms = [args.terms]
         
+        # Get rejected terms from previous levels if level is specified
+        rejected_terms = get_rejected_terms(args.level) if args.level else {}
+        if rejected_terms:
+            print(f"Found {len(rejected_terms)} terms rejected in previous levels")
+            
+            # Filter out terms that have been rejected in previous levels
+            original_count = len(terms)
+            terms = [term for term in terms if term not in rejected_terms]
+            filtered_count = original_count - len(terms)
+            
+            if filtered_count > 0:
+                print(f"Filtered out {filtered_count} previously rejected terms")
+        
         # Read web content if needed
         web_content = None
         llm_responses = None
@@ -188,7 +245,7 @@ def main() -> None:
         }
         internal_mode = mode_mapping.get(args.mode, args.mode)
         
-        # Run validation
+        # Run validation on filtered terms
         results = validate(
             terms,
             mode=internal_mode,
@@ -198,6 +255,19 @@ def main() -> None:
             min_relevance_score=args.min_relevance_score,
             show_progress=not args.no_progress
         )
+        
+        # Add rejected terms from previous levels with is_valid=False
+        for term, rejection_level in rejected_terms.items():
+            if term not in results:  # Avoid overwriting if somehow the term was still validated
+                results[term] = {
+                    "term": term,
+                    "is_valid": False,
+                    "mode": internal_mode,
+                    "details": {
+                        "reason": f"Rejected in level {rejection_level}",
+                        "level_rejected": rejection_level
+                    }
+                }
         
         # Output results
         if args.output:
