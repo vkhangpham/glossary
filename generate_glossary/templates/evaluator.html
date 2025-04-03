@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchy Quality Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/common-navigation.css">
+    <style>
+        .evaluator-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .metric-card {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #4285F4;
+        }
+        .metric-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .metric-card .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4285F4;
+        }
+        .metric-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .viz-container {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .viz-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .issues-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .issue-item {
+            padding: 8px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        .issue-type {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .issue-count {
+            background-color: #f44336;
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        .nav-link.active {
+            background-color: #4285F4 !important;
+            color: white !important;
+        }
+        #summary-table {
+            width: 100%;
+            margin-top: 15px;
+        }
+        #summary-table th {
+            background-color: #f2f2f2;
+            padding: 8px;
+            text-align: left;
+        }
+        #summary-table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        #summary-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center my-4">Academic Hierarchy Quality Analysis</h1>
+                <p class="text-center text-muted">Comprehensive evaluation of the 4-level academic hierarchy</p>
+            </div>
+        </div>
+
+        <!-- Common Navigation -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <ul class="nav nav-pills" id="main-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" data-path="/">
+                            <i class="bi bi-diagram-3 nav-icon"></i>Hierarchy Visualizer
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quality" data-path="/quality">
+                            <i class="bi bi-bar-chart-line nav-icon"></i>Quality Analysis
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/duplicates" data-path="/duplicates">
+                            <i class="bi bi-intersect nav-icon"></i>Duplicate Analysis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h5 class="mb-3">Navigation</h5>
+                    <ul class="nav nav-pills flex-column mb-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#summary-tab">
+                                <i class="bi bi-graph-up"></i> Summary
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#structure-tab">
+                                <i class="bi bi-diagram-3"></i> Structure Analysis
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#connectivity-tab">
+                                <i class="bi bi-link"></i> Connectivity
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#variations-tab">
+                                <i class="bi bi-shuffle"></i> Variations
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#issues-tab">
+                                <i class="bi bi-exclamation-triangle"></i> Issues
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <h5 class="mb-3">Actions</h5>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-secondary" id="refresh-btn">
+                            <i class="bi bi-arrow-clockwise"></i> Refresh Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <div class="content-container">
+                    <div class="tab-content">
+                        <!-- Summary Tab -->
+                        <div class="tab-pane fade show active" id="summary-tab">
+                            <div class="evaluator-section">
+                                <h2>Summary Statistics</h2>
+                                <div class="metric-row" id="summary-metrics">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading metrics...</p>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="mt-4">Level Summary</h3>
+                                <div id="summary-table-container">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading summary data...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="evaluator-section">
+                                <h2>Hierarchy Overview</h2>
+                                <div class="viz-container" id="terms-per-level-viz">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading visualization...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Structure Analysis Tab -->
+                        <div class="tab-pane fade" id="structure-tab">
+                            <div class="evaluator-section">
+                                <h2>Structure Analysis</h2>
+                                <p>This section analyzes the structural characteristics of the hierarchy, including branching patterns.</p>
+                                
+                                <div class="viz-container" id="branching-viz">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading branching analysis...</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <div class="metric-card">
+                                            <h3>Orphaned Terms</h3>
+                                            <p class="text-muted">Terms without parent relationships</p>
+                                            <div id="orphan-metrics">Loading...</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="metric-card">
+                                            <h3>Terminal Terms</h3>
+                                            <p class="text-muted">Terms without child relationships</p>
+                                            <div id="leaf-metrics">Loading...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Connectivity Tab -->
+                        <div class="tab-pane fade" id="connectivity-tab">
+                            <div class="evaluator-section">
+                                <h2>Level Connectivity</h2>
+                                <p>This section shows how well-connected different levels of the hierarchy are to each other.</p>
+                                
+                                <div class="viz-container" id="connectivity-viz">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading connectivity analysis...</p>
+                                    </div>
+                                </div>
+                                
+                                <div id="connectivity-details" class="mt-4">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading connectivity details...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Variations Tab -->
+                        <div class="tab-pane fade" id="variations-tab">
+                            <div class="evaluator-section">
+                                <h2>Term Variations</h2>
+                                <p>This section analyzes how term variations are distributed and consolidated across levels.</p>
+                                
+                                <div class="viz-container" id="variations-viz">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading variations analysis...</p>
+                                    </div>
+                                </div>
+                                
+                                <div id="variations-details" class="mt-4">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading variation details...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Issues Tab -->
+                        <div class="tab-pane fade" id="issues-tab">
+                            <div class="evaluator-section">
+                                <h2>Potential Issues</h2>
+                                <p>This section highlights potential issues or inconsistencies in the hierarchy structure.</p>
+                                
+                                <div id="issues-container" class="issues-list">
+                                    <div class="loading">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p>Loading issues...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="/static/js/common-navigation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load all data when page loads
+            loadAllData();
+            
+            // Setup refresh button
+            document.getElementById('refresh-btn').addEventListener('click', loadAllData);
+            
+            function loadAllData() {
+                loadSummaryMetrics();
+                loadSummaryTable();
+                loadTermsPerLevelViz();
+                loadBranchingViz();
+                loadConnectivityViz();
+                loadVariationsViz();
+                loadIssues();
+                loadConnectivityDetails();
+                loadVariationDetails();
+            }
+            
+            function loadSummaryMetrics() {
+                const container = document.getElementById('summary-metrics');
+                container.innerHTML = '<div class="loading"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading metrics...</p></div>';
+                
+                fetch('/evaluator/metrics')
+                    .then(response => response.json())
+                    .then(data => {
+                        let html = `
+                            <div class="col-md-4">
+                                <div class="metric-card">
+                                    <h3>Total Terms</h3>
+                                    <div class="value">${data.summary.total_terms}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="metric-card">
+                                    <h3>Total Relationships</h3>
+                                    <div class="value">${data.summary.total_relationships}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="metric-card">
+                                    <h3>Total Variations</h3>
+                                    <div class="value">${data.summary.total_variations}</div>
+                                </div>
+                            </div>
+                        `;
+                        container.innerHTML = html;
+                    })
+                    .catch(error => {
+                        container.innerHTML = '<div class="alert alert-danger">Error loading metrics</div>';
+                        console.error('Error loading metrics:', error);
+                    });
+            }
+            
+            function loadSummaryTable() {
+                const container = document.getElementById('summary-table-container');
+                
+                fetch('/evaluator/summary')
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.length === 0) {
+                            container.innerHTML = '<div class="alert alert-warning">No summary data available</div>';
+                            return;
+                        }
+                        
+                        let html = '<table id="summary-table" class="table table-striped">';
+                        
+                        // Add headers
+                        html += '<thead><tr>';
+                        for (const key in data[0]) {
+                            html += `<th>${key}</th>`;
+                        }
+                        html += '</tr></thead>';
+                        
+                        // Add rows
+                        html += '<tbody>';
+                        for (const row of data) {
+                            html += '<tr>';
+                            for (const key in row) {
+                                html += `<td>${typeof row[key] === 'number' && !Number.isInteger(row[key]) ? row[key].toFixed(2) : row[key]}</td>`;
+                            }
+                            html += '</tr>';
+                        }
+                        html += '</tbody></table>';
+                        
+                        container.innerHTML = html;
+                    })
+                    .catch(error => {
+                        container.innerHTML = '<div class="alert alert-danger">Error loading summary data</div>';
+                        console.error('Error loading summary data:', error);
+                    });
+            }
+            
+            function loadVisualization(visType, containerId) {
+                const container = document.getElementById(containerId);
+                container.innerHTML = '<div class="loading"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading visualization...</p></div>';
+                
+                fetch(`/evaluator/visualization/${visType}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.image) {
+                            container.innerHTML = `<img src="data:image/png;base64,${data.image}" alt="${visType} visualization">`;
+                        } else {
+                            container.innerHTML = '<div class="alert alert-warning">No visualization data available</div>';
+                        }
+                    })
+                    .catch(error => {
+                        container.innerHTML = '<div class="alert alert-danger">Error loading visualization</div>';
+                        console.error(`Error loading ${visType} visualization:`, error);
+                    });
+            }
+            
+            function loadTermsPerLevelViz() {
+                loadVisualization('terms_per_level', 'terms-per-level-viz');
+            }
+            
+            function loadBranchingViz() {
+                loadVisualization('branching', 'branching-viz');
+                
+                // Also load orphan metrics
+                fetch('/evaluator/metrics')
+                    .then(response => response.json())
+                    .then(data => {
+                        let orphanHtml = '<ul class="list-group">';
+                        let totalOrphans = 0;
+                        
+                        for (const level in data.orphan_terms) {
+                            const count = data.orphan_terms[level];
+                            totalOrphans += count;
+                            orphanHtml += `<li class="list-group-item d-flex justify-content-between align-items-center">
+                                Level ${level}
+                                <span class="badge bg-primary rounded-pill">${count}</span>
+                            </li>`;
+                        }
+                        
+                        orphanHtml += '</ul>';
+                        orphanHtml = `<div class="value mb-2">${totalOrphans}</div>` + orphanHtml;
+                        
+                        document.getElementById('orphan-metrics').innerHTML = orphanHtml;
+                        
+                        // TODO: Add leaf metrics when API is available
+                        document.getElementById('leaf-metrics').innerHTML = '<div class="alert alert-info">Coming soon</div>';
+                    })
+                    .catch(error => {
+                        document.getElementById('orphan-metrics').innerHTML = '<div class="alert alert-danger">Error loading data</div>';
+                        console.error('Error loading orphan metrics:', error);
+                    });
+            }
+            
+            function loadConnectivityViz() {
+                loadVisualization('connectivity', 'connectivity-viz');
+            }
+            
+            function loadVariationsViz() {
+                loadVisualization('variations', 'variations-viz');
+            }
+            
+            function loadConnectivityDetails() {
+                const container = document.getElementById('connectivity-details');
+                
+                fetch('/evaluator/connectivity')
+                    .then(response => response.json())
+                    .then(data => {
+                        let html = '<div class="row">';
+                        
+                        for (const key in data) {
+                            const connection = data[key];
+                            const [fromLevel, toLevel] = key.split('_to_');
+                            
+                            html += `
+                                <div class="col-md-6 mb-3">
+                                    <div class="metric-card">
+                                        <h3>Level ${fromLevel} → Level ${toLevel}</h3>
+                                        <p><strong>Source Terms:</strong> ${connection.from_terms_count} (Level ${fromLevel})</p>
+                                        <p><strong>Target Terms:</strong> ${connection.to_terms_count} (Level ${toLevel})</p>
+                                        <p><strong>Connected Source Terms:</strong> ${connection.from_connected_count} (${connection.perc_from_connected.toFixed(1)}%)</p>
+                                        <p><strong>Connected Target Terms:</strong> ${connection.to_connected_count} (${connection.perc_to_connected.toFixed(1)}%)</p>
+                                        <div class="mt-2 small text-muted">
+                                            <p>% Source Connected: Percentage of Level ${fromLevel} terms that have at least one child in Level ${toLevel}.</p>
+                                            <p>% Target Connected: Percentage of Level ${toLevel} terms that have at least one parent in Level ${fromLevel}.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }
+                        
+                        html += '</div>';
+                        container.innerHTML = html;
+                    })
+                    .catch(error => {
+                        container.innerHTML = '<div class="alert alert-danger">Error loading connectivity details</div>';
+                        console.error('Error loading connectivity details:', error);
+                    });
+            }
+            
+            function loadVariationDetails() {
+                const container = document.getElementById('variations-details');
+                
+                fetch('/evaluator/metrics')
+                    .then(response => response.json())
+                    .then(data => {
+                        const variationStats = data.variation_stats;
+                        let html = '<div class="row">';
+                        
+                        for (const level in variationStats.terms_with_variations) {
+                            const termsWithVar = variationStats.terms_with_variations[level];
+                            const avgVar = variationStats.avg_variations_per_term[level];
+                            
+                            html += `
+                                <div class="col-md-3 mb-3">
+                                    <div class="metric-card">
+                                        <h3>Level ${level}</h3>
+                                        <p><strong>Terms with Variations:</strong> ${termsWithVar}</p>
+                                        <p><strong>Avg Variations/Term:</strong> ${avgVar.toFixed(2)}</p>
+                                    </div>
+                                </div>
+                            `;
+                        }
+                        
+                        html += '</div>';
+                        container.innerHTML = html;
+                    })
+                    .catch(error => {
+                        container.innerHTML = '<div class="alert alert-danger">Error loading variation details</div>';
+                        console.error('Error loading variation details:', error);
+                    });
+            }
+            
+            function loadIssues() {
+                const container = document.getElementById('issues-container');
+                
+                fetch('/evaluator/issues')
+                    .then(response => response.json())
+                    .then(data => {
+                        if (Object.keys(data).length === 0) {
+                            container.innerHTML = '<div class="alert alert-success">No significant issues detected</div>';
+                            return;
+                        }
+                        
+                        let html = '';
+                        
+                        for (const issueType in data) {
+                            const issues = data[issueType];
+                            const formattedIssueType = issueType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                            
+                            html += `
+                                <div class="issue-type">
+                                    ${formattedIssueType}
+                                    <span class="issue-count">${issues.length}</span>
+                                </div>
+                                <div class="list-group mb-3">
+                            `;
+                            
+                            for (const issue of issues.slice(0, 10)) {
+                                html += `<div class="issue-item list-group-item">${issue.description}</div>`;
+                            }
+                            
+                            if (issues.length > 10) {
+                                html += `<div class="issue-item list-group-item text-muted">...and ${issues.length - 10} more</div>`;
+                            }
+                            
+                            html += '</div>';
+                        }
+                        
+                        container.innerHTML = html;
+                    })
+                    .catch(error => {
+                        container.innerHTML = '<div class="alert alert-danger">Error loading issues</div>';
+                        console.error('Error loading issues:', error);
+                    });
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -71,6 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
             hierarchyData = data;
             visualization.loadData(data);
             populateTermList(data);
+            
+            // Make visualization available globally for duplicate analysis
+            window.hierarchyVisualization = visualization;
+            window.vizInitialized = true;
+            
+            // Dispatch event that visualization is ready
+            window.dispatchEvent(new CustomEvent('visualizationReady', {
+                detail: { visualization }
+            }));
         })
         .catch(error => console.error('Error loading hierarchy data:', error));
     
@@ -140,23 +149,51 @@ document.addEventListener('DOMContentLoaded', () => {
         const level0Filter = document.getElementById('level-0-filter').checked;
         const level1Filter = document.getElementById('level-1-filter').checked;
         const level2Filter = document.getElementById('level-2-filter').checked;
+        const level3Filter = document.getElementById('level-3-filter').checked;
         
         let html = '';
         
         // Add terms for each level
-        for (let level = 0; level < 3; level++) {
+        for (let level = 0; level < 4; level++) {
             if ((level === 0 && level0Filter) || 
                 (level === 1 && level1Filter) || 
-                (level === 2 && level2Filter)) {
+                (level === 2 && level2Filter) ||
+                (level === 3 && level3Filter)) {
+                
+                // Filter terms that appear in final file (not variations)
+                const allLevelTerms = data.levels[level] || [];
+                const finalFileTerms = allLevelTerms.filter(term => {
+                    const termData = data.terms[term];
+                    
+                    // First check: Term should be in the final file
+                    const inFinalFile = termData && termData.in_final_file !== false;
+                    
+                    // Second check: Term shouldn't be marked as a variation
+                    const notMarkedAsVariation = !termData.is_variation;
+                    
+                    // Third check: Term shouldn't appear in any other term's variations list
+                    let notInVariationsLists = true;
+                    for (const otherTerm in data.terms) {
+                        if (otherTerm !== term && 
+                            data.terms[otherTerm].variations && 
+                            data.terms[otherTerm].variations.includes(term)) {
+                            notInVariationsLists = false;
+                            break;
+                        }
+                    }
+                    
+                    return inFinalFile && notMarkedAsVariation && notInVariationsLists;
+                });
+                
+                console.log(`Level ${level}: Filtered ${finalFileTerms.length} terms from original ${allLevelTerms.length}`);
                 
                 // Get a subset of terms for display
-                const levelTerms = data.levels[level];
-                const displayCount = Math.min(50, levelTerms.length);
-                const termsToDisplay = levelTerms.slice(0, displayCount);
+                const displayCount = Math.min(50, finalFileTerms.length);
+                const termsToDisplay = finalFileTerms.slice(0, displayCount);
                 
                 // Add level header
                 html += `<li class="list-group-item list-group-item-secondary">
-                    Level ${level} (${levelTerms.length} terms)
+                    Level ${level} (${finalFileTerms.length} terms)
                 </li>`;
                 
                 // Add terms to list
@@ -166,9 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </li>`;
                 });
                 
-                if (levelTerms.length > displayCount) {
+                if (finalFileTerms.length > displayCount) {
                     html += `<li class="list-group-item text-muted">
-                        ... and ${levelTerms.length - displayCount} more terms
+                        ... and ${finalFileTerms.length - displayCount} more terms
                     </li>`;
                 }
             }

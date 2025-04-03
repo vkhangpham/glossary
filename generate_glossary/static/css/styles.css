@@ -61,15 +61,19 @@ body {
 }
 
 .legend-level-0 {
-    background-color: #1f77b4;
+    background-color: #4285F4;
 }
 
 .legend-level-1 {
-    background-color: #ff7f0e;
+    background-color: #34A853;
 }
 
 .legend-level-2 {
-    background-color: #2ca02c;
+    background-color: #FBBC05;
+}
+
+.legend-level-3 {
+    background-color: #EA4335;
 }
 
 /* Control panel styles */
@@ -109,11 +113,15 @@ body {
 }
 
 .term-list-level-1 {
-    background-color: #fff8e1;
+    background-color: #e8f5e9;
 }
 
 .term-list-level-2 {
-    background-color: #f1f8e9;
+    background-color: #fff8e1;
+}
+
+.term-list-level-3 {
+    background-color: #ffebee;
 }
 
 .search-results-item {
@@ -150,15 +158,19 @@ body {
 }
 
 .level-0-badge {
-    background-color: #1f77b4;
+    background-color: #4285F4;
 }
 
 .level-1-badge {
-    background-color: #ff7f0e;
+    background-color: #34A853;
 }
 
 .level-2-badge {
-    background-color: #2ca02c;
+    background-color: #FBBC05;
+}
+
+.level-3-badge {
+    background-color: #EA4335;
 }
 
 .resource-card {
@@ -176,15 +188,19 @@ body {
 }
 
 .node-level-0 {
-    fill: #1f77b4;
+    fill: #4285F4;
 }
 
 .node-level-1 {
-    fill: #ff7f0e;
+    fill: #34A853;
 }
 
 .node-level-2 {
-    fill: #2ca02c;
+    fill: #FBBC05;
+}
+
+.node-level-3 {
+    fill: #EA4335;
 }
 
 .link {

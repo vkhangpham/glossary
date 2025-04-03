@@ -1,0 +1,24 @@
+#main-nav {
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#main-nav .nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+
+#main-nav .nav-link.active {
+    background-color: #4285F4;
+    color: white;
+}
+
+#main-nav .nav-link:hover:not(.active) {
+    background-color: #e9ecef;
+}
+
+.nav-icon {
+    margin-right: 5px;
+}

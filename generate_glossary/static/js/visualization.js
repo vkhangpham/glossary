@@ -17,7 +17,7 @@ class HierarchyVisualization {
         
         // New configuration options
         this.treeMode = false;
-        this.maxParents = 5;
+        this.maxParents = 1;
         this.maxSiblings = 5;
         this.maxChildren = 10;
         
@@ -128,26 +128,29 @@ class HierarchyVisualization {
         const level0Filter = document.getElementById('level-0-filter').checked;
         const level1Filter = document.getElementById('level-1-filter').checked;
         const level2Filter = document.getElementById('level-2-filter').checked;
-        const levelFilters = [level0Filter, level1Filter, level2Filter];
+        const level3Filter = document.getElementById('level-3-filter').checked;
+        const levelFilters = [level0Filter, level1Filter, level2Filter, level3Filter];
         
         // Start with the selected term and its immediate neighbors
         const term = this.selectedTerm;
         if (!term || !this.data.terms[term]) {
             // If no term is selected, show a sample of terms from each level
-            for (let level = 0; level < 3; level++) {
+            for (let level = 0; level < 4; level++) {
                 if (levelFilters[level]) {
                     const levelTerms = this.data.levels[level];
-                    const sampleSize = Math.min(10, levelTerms.length);
-                    const sampleTerms = levelTerms.slice(0, sampleSize);
-                    
-                    // Add sample terms to nodes
-                    for (const term of sampleTerms) {
-                        this.nodes.push({
-                            id: term,
-                            level: level,
-                            parents: this.data.terms[term].parents,
-                            children: this.data.terms[term].children
-                        });
+                    if (levelTerms) {
+                        const sampleSize = Math.min(10, levelTerms.length);
+                        const sampleTerms = levelTerms.slice(0, sampleSize);
+                        
+                        // Add sample terms to nodes
+                        for (const term of sampleTerms) {
+                            this.nodes.push({
+                                id: term,
+                                level: level,
+                                parents: this.data.terms[term].parents,
+                                children: this.data.terms[term].children
+                            });
+                        }
                     }
                 }
             }
@@ -429,6 +432,18 @@ class HierarchyVisualization {
                 }
                 return tooltip;
             });
+        
+        // Set node colors based on level
+        this.nodeElements.attr('fill', d => {
+            if (d.selected) return '#ff7700';
+            switch (d.level) {
+                case 0: return '#4285F4'; // Blue
+                case 1: return '#34A853'; // Green
+                case 2: return '#FBBC05'; // Yellow/Orange
+                case 3: return '#EA4335'; // Red
+                default: return '#9AA0A6'; // Gray
+            }
+        });
     }
     
     startSimulation() {
