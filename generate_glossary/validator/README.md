@@ -1,6 +1,10 @@
-# Concept Validator
+# Academic Concept Validator
 
-This module provides tools for validating technical concepts using different validation modes.
+This module provides tools for validating academic concepts across different levels of the glossary hierarchy using multiple validation strategies.
+
+## Overview
+
+The validator ensures that terms in the academic glossary are valid concepts by applying multiple layers of validation, from basic structural checks to content verification and LLM-based analysis.
 
 ## Features
 
@@ -12,6 +16,33 @@ This module provides tools for validating technical concepts using different val
 - Track which level rejected each term
 - Parallel processing with progress bar
 - Customizable score thresholds
+- Web content relevance scoring
+
+## Validation Modes
+
+### Rule-based Validation
+
+This mode performs basic structural validation:
+- Checks term length and format
+- Validates character composition
+- Ensures compliance with naming conventions
+- Performs stopword and common word filtering
+
+### Web-based Validation
+
+This mode validates terms against web content:
+- Verifies term existence in academic web content
+- Scores relevance of web content to terms
+- Requires a minimum number of relevant sources
+- Updates web content with relevance scores for later use
+
+### LLM-based Validation
+
+This mode uses language models to verify terms:
+- Prompts LLM to evaluate term validity as an academic concept
+- Leverages domain knowledge encoded in the model
+- Particularly useful for ambiguous or specialized terms
+- Supports multiple LLM providers (OpenAI, Gemini, etc.)
 
 ## Usage
 
@@ -33,7 +64,7 @@ python -m generate_glossary.validator.cli terms.txt -m llm -p gemini -o results/
 When validating terms across multiple levels, you can use the `-l` or `--level` flag to automatically skip terms that were rejected in previous levels:
 
 ```bash
-0# Level 1 validation
+# Level 1 validation
 python -m generate_glossary.validator.cli terms.txt -m rule -l 1 -o data/lv1/lv1_rule_valid
 
 # Level 2 validation (will skip terms rejected in level 0 and 1)
@@ -45,7 +76,21 @@ python -m generate_glossary.validator.cli terms.txt -m llm -p gemini -l 3 -o dat
 
 The validator will automatically look for previous validation results in the `data/lvX/lvX*_valid.json` files for levels below the specified level.
 
-### Additional Options
+### Web Content Relevance Scoring
+
+When using web-based validation, you can update web content with relevance scores:
+
+```bash
+# Update web content in-place with relevance scores
+python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -o results/web_valid --update-web-content
+
+# Save updated web content to a new file
+python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -o results/web_valid --save-web-content updated_web_content.json
+```
+
+These relevance scores are used by the deduplicator to improve term relationship detection by filtering out irrelevant web content.
+
+### Command-line Options
 
 ```
 usage: cli.py [-h] [-m {rule,web,llm}] [-l LEVEL] [-w WEB_CONTENT] [-s MIN_SCORE]
@@ -127,3 +172,35 @@ The validator outputs two files:
   }
 }
 ```
+
+## Integration with the Pipeline
+
+The validator is typically used in sequence within the glossary pipeline:
+
+1. Generate terms → 2. Mine web content → **3. Validate terms** → 4. Deduplicate terms → 5. Collect metadata
+
+The recommended validation sequence is:
+
+1. **Rule-based validation**: Filter out structurally invalid terms
+2. **Web-based validation**: Verify terms against web content
+3. **LLM-based validation**: Final verification with language models
+
+Each step gets progressively more sophisticated but also more resource-intensive, which is why they're applied in this order.
+
+## Best Practices
+
+1. **Adjust thresholds based on level**:
+   - Lower levels (0-1) may need higher thresholds (0.8+)
+   - Higher levels (2-3) can often use lower thresholds (0.6-0.7)
+
+2. **Use web-content relevance scoring**:
+   - Always update web content with relevance scores using `--update-web-content`
+   - This significantly improves deduplication quality later in the pipeline
+
+3. **Choose appropriate LLM providers**:
+   - For critical levels, consider using more capable models (e.g., OpenAI)
+   - For faster processing, Gemini offers good performance at lower cost
+
+4. **Examine rejection reasons**:
+   - Review the JSON output to understand why terms were rejected
+   - This can help tune parameters for future validation runs

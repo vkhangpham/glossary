@@ -18,6 +18,9 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 # Configure logging
 logger = logging.getLogger(__name__)
+# Simplify the format to just show messages
+for handler in logging.root.handlers:
+    handler.setFormatter(logging.Formatter('%(message)s'))
 
 # Type definitions
 ContentType = TypeVar("ContentType")
