@@ -1,0 +1,1978 @@
+{
+  "timestamp": "2025-04-10T16:40:18.797013",
+  "parameters": {
+    "model_name": "all-MiniLM-L6-v2",
+    "min_resources": 5,
+    "level": 1
+  },
+  "total_ambiguous_terms": 132,
+  "results_by_confidence": {
+    "high": [],
+    "medium": [
+      "behavior analysis",
+      "geography",
+      "urban planning"
+    ],
+    "low": [
+      "accounting",
+      "aerospace engineering",
+      "african american studies",
+      "anthropology",
+      "asian american studies",
+      "asian languages",
+      "asian studies",
+      "audiology",
+      "behavioral health",
+      "biochemistry",
+      "biology",
+      "biomedical engineering",
+      "biostatistics",
+      "black studies",
+      "business administration",
+      "business analytics",
+      "business information systems",
+      "business law",
+      "business management",
+      "cell biology",
+      "chemistry",
+      "chicano studies",
+      "child development",
+      "civil engineering",
+      "classics",
+      "communication",
+      "communication disorders",
+      "community health",
+      "comparative literature",
+      "computer science",
+      "construction management",
+      "counseling",
+      "creative writing",
+      "criminology",
+      "cultural studies",
+      "dance",
+      "data science",
+      "developmental biology",
+      "diaspora studies",
+      "dietetics",
+      "digital humanities",
+      "economics",
+      "english",
+      "entrepreneurship",
+      "environmental health sciences",
+      "epidemiology",
+      "family studies",
+      "film studies",
+      "finance",
+      "fine arts",
+      "francophone studies",
+      "gender studies",
+      "geology",
+      "german studies",
+      "gerontology",
+      "global studies",
+      "health promotion",
+      "healthcare",
+      "history",
+      "indigenous studies",
+      "insurance",
+      "interdisciplinary studies",
+      "international affairs",
+      "international business",
+      "italian studies",
+      "journalism",
+      "kinesiology",
+      "language studies",
+      "latino studies",
+      "leadership",
+      "liberal studies",
+      "linguistics",
+      "marine sciences",
+      "marketing",
+      "mathematics",
+      "mechanics",
+      "media studies",
+      "microbiology",
+      "middle eastern studies",
+      "military science",
+      "modern languages",
+      "molecular biology",
+      "music",
+      "music performance",
+      "neuroscience",
+      "nutrition",
+      "occupational therapy",
+      "oceanography",
+      "operations management",
+      "organizational behavior",
+      "organizational leadership",
+      "paramedicine",
+      "performing arts",
+      "pharmacology",
+      "philosophy",
+      "physical therapy",
+      "physics",
+      "physiology",
+      "plant biology",
+      "politics",
+      "professional writing",
+      "psychology",
+      "public administration",
+      "public affairs",
+      "public policy",
+      "race studies",
+      "real estate",
+      "regional planning",
+      "rehabilitation",
+      "religion",
+      "rhetoric",
+      "risk management",
+      "sexuality studies",
+      "slavic languages",
+      "social work",
+      "sociology",
+      "spanish",
+      "special education",
+      "speech pathology",
+      "sport management",
+      "sport science",
+      "statistics",
+      "supply chain management",
+      "sustainable development",
+      "teacher education",
+      "tesol",
+      "theatre",
+      "women's studies",
+      "writing studies"
+    ]
+  },
+  "detailed_results": {
+    "marketing": {
+      "term": "marketing",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "biology": {
+      "term": "biology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "italian studies": {
+      "term": "italian studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "cell biology": {
+      "term": "cell biology",
+      "detected_by": {
+        "parent_context": false,
+        "dbscan": false,
+        "hdbscan": true
+      },
+      "detection_count": 1,
+      "metrics": {
+        "hdbscan": {
+          "algorithm": "hdbscan",
+          "min_cluster_size": 2,
+          "min_samples": 2,
+          "probabilities": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "outlier_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27134586538706923,
+            0.0,
+            0.0,
+            0.23394175542413795
+          ],
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 2,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 3,
+            "1": 3
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "finance": {
+      "term": "finance",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "communication": {
+      "term": "communication",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "spanish": {
+      "term": "spanish",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "health promotion": {
+      "term": "health promotion",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "environmental health sciences": {
+      "term": "environmental health sciences",
+      "detected_by": {
+        "parent_context": false,
+        "dbscan": true,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.45,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 2,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 2,
+            "1": 3
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "rhetoric": {
+      "term": "rhetoric",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "african american studies": {
+      "term": "african american studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "interdisciplinary studies": {
+      "term": "interdisciplinary studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "language studies": {
+      "term": "language studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "neuroscience": {
+      "term": "neuroscience",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "operations management": {
+      "term": "operations management",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "leadership": {
+      "term": "leadership",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "writing studies": {
+      "term": "writing studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "insurance": {
+      "term": "insurance",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "biostatistics": {
+      "term": "biostatistics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "nutrition": {
+      "term": "nutrition",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "sexuality studies": {
+      "term": "sexuality studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "francophone studies": {
+      "term": "francophone studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "real estate": {
+      "term": "real estate",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "indigenous studies": {
+      "term": "indigenous studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "classics": {
+      "term": "classics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "philosophy": {
+      "term": "philosophy",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "supply chain management": {
+      "term": "supply chain management",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "military science": {
+      "term": "military science",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "data science": {
+      "term": "data science",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "business information systems": {
+      "term": "business information systems",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "chicano studies": {
+      "term": "chicano studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "gerontology": {
+      "term": "gerontology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "speech pathology": {
+      "term": "speech pathology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "asian studies": {
+      "term": "asian studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "journalism": {
+      "term": "journalism",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "special education": {
+      "term": "special education",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "english": {
+      "term": "english",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "teacher education": {
+      "term": "teacher education",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "creative writing": {
+      "term": "creative writing",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "sport management": {
+      "term": "sport management",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "healthcare": {
+      "term": "healthcare",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "aerospace engineering": {
+      "term": "aerospace engineering",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "chemistry": {
+      "term": "chemistry",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "social work": {
+      "term": "social work",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "performing arts": {
+      "term": "performing arts",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "diaspora studies": {
+      "term": "diaspora studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "pharmacology": {
+      "term": "pharmacology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "international affairs": {
+      "term": "international affairs",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "cultural studies": {
+      "term": "cultural studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "organizational leadership": {
+      "term": "organizational leadership",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "behavior analysis": {
+      "term": "behavior analysis",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": true
+      },
+      "detection_count": 2,
+      "metrics": {
+        "hdbscan": {
+          "algorithm": "hdbscan",
+          "min_cluster_size": 2,
+          "min_samples": 2,
+          "probabilities": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.8469958873840944,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "outlier_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.16102571331618165,
+            0.15300411261590563,
+            0.0787948076567763,
+            0.0,
+            0.31974483637525725
+          ],
+          "num_resources": 10,
+          "valid_snippets": 10,
+          "num_clusters": 2,
+          "noise_points": 3,
+          "cluster_sizes": {
+            "0": 3,
+            "1": 4
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.6666666666666666,
+      "confidence_level": "medium"
+    },
+    "music": {
+      "term": "music",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "communication disorders": {
+      "term": "communication disorders",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "fine arts": {
+      "term": "fine arts",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "business law": {
+      "term": "business law",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "business analytics": {
+      "term": "business analytics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "economics": {
+      "term": "economics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "professional writing": {
+      "term": "professional writing",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "construction management": {
+      "term": "construction management",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "psychology": {
+      "term": "psychology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "german studies": {
+      "term": "german studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "music performance": {
+      "term": "music performance",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "regional planning": {
+      "term": "regional planning",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "film studies": {
+      "term": "film studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "oceanography": {
+      "term": "oceanography",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "media studies": {
+      "term": "media studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "organizational behavior": {
+      "term": "organizational behavior",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "history": {
+      "term": "history",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "physics": {
+      "term": "physics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "women's studies": {
+      "term": "women's studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "theatre": {
+      "term": "theatre",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "marine sciences": {
+      "term": "marine sciences",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "epidemiology": {
+      "term": "epidemiology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "kinesiology": {
+      "term": "kinesiology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "geography": {
+      "term": "geography",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": true
+      },
+      "detection_count": 2,
+      "metrics": {
+        "hdbscan": {
+          "algorithm": "hdbscan",
+          "min_cluster_size": 2,
+          "min_samples": 2,
+          "probabilities": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "outlier_scores": [
+            0.0,
+            0.0,
+            0.27979540640861444,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.01759597226058045
+          ],
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 2,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 3,
+            "1": 3
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.6666666666666666,
+      "confidence_level": "medium"
+    },
+    "black studies": {
+      "term": "black studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "physiology": {
+      "term": "physiology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "middle eastern studies": {
+      "term": "middle eastern studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "digital humanities": {
+      "term": "digital humanities",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "accounting": {
+      "term": "accounting",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "community health": {
+      "term": "community health",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "sustainable development": {
+      "term": "sustainable development",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "dietetics": {
+      "term": "dietetics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "computer science": {
+      "term": "computer science",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "dance": {
+      "term": "dance",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "microbiology": {
+      "term": "microbiology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "slavic languages": {
+      "term": "slavic languages",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "public administration": {
+      "term": "public administration",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "audiology": {
+      "term": "audiology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "urban planning": {
+      "term": "urban planning",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": true
+      },
+      "detection_count": 2,
+      "metrics": {
+        "hdbscan": {
+          "algorithm": "hdbscan",
+          "min_cluster_size": 2,
+          "min_samples": 2,
+          "probabilities": [
+            1.0,
+            0.6792624866657156,
+            1.0,
+            1.0,
+            0.6913555692404587,
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "outlier_scores": [
+            0.0,
+            0.32073751333428435,
+            0.0,
+            0.0,
+            0.30864443075954134,
+            0.0,
+            0.0,
+            0.0,
+            0.2226352383102729
+          ],
+          "num_resources": 9,
+          "valid_snippets": 9,
+          "num_clusters": 2,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5,
+            "1": 3
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.6666666666666666,
+      "confidence_level": "medium"
+    },
+    "behavioral health": {
+      "term": "behavioral health",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "counseling": {
+      "term": "counseling",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "asian languages": {
+      "term": "asian languages",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "mechanics": {
+      "term": "mechanics",
+      "detected_by": {
+        "parent_context": false,
+        "dbscan": true,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.45,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 2,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4,
+            "1": 2
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "modern languages": {
+      "term": "modern languages",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "gender studies": {
+      "term": "gender studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "latino studies": {
+      "term": "latino studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "entrepreneurship": {
+      "term": "entrepreneurship",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "biomedical engineering": {
+      "term": "biomedical engineering",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "public policy": {
+      "term": "public policy",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "tesol": {
+      "term": "tesol",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "mathematics": {
+      "term": "mathematics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "family studies": {
+      "term": "family studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "biochemistry": {
+      "term": "biochemistry",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "criminology": {
+      "term": "criminology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "occupational therapy": {
+      "term": "occupational therapy",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "rehabilitation": {
+      "term": "rehabilitation",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "linguistics": {
+      "term": "linguistics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "global studies": {
+      "term": "global studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "physical therapy": {
+      "term": "physical therapy",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "sport science": {
+      "term": "sport science",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "developmental biology": {
+      "term": "developmental biology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "child development": {
+      "term": "child development",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "business management": {
+      "term": "business management",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "paramedicine": {
+      "term": "paramedicine",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "geology": {
+      "term": "geology",
+      "detected_by": {
+        "parent_context": false,
+        "dbscan": false,
+        "hdbscan": true
+      },
+      "detection_count": 1,
+      "metrics": {
+        "hdbscan": {
+          "algorithm": "hdbscan",
+          "min_cluster_size": 2,
+          "min_samples": 2,
+          "probabilities": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "outlier_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 2,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 2,
+            "1": 3
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "plant biology": {
+      "term": "plant biology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "race studies": {
+      "term": "race studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "religion": {
+      "term": "religion",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "international business": {
+      "term": "international business",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "statistics": {
+      "term": "statistics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "anthropology": {
+      "term": "anthropology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "sociology": {
+      "term": "sociology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "asian american studies": {
+      "term": "asian american studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "risk management": {
+      "term": "risk management",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "politics": {
+      "term": "politics",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "business administration": {
+      "term": "business administration",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "comparative literature": {
+      "term": "comparative literature",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "liberal studies": {
+      "term": "liberal studies",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "civil engineering": {
+      "term": "civil engineering",
+      "detected_by": {
+        "parent_context": false,
+        "dbscan": false,
+        "hdbscan": true
+      },
+      "detection_count": 1,
+      "metrics": {
+        "hdbscan": {
+          "algorithm": "hdbscan",
+          "min_cluster_size": 2,
+          "min_samples": 2,
+          "probabilities": [
+            1.0,
+            1.0,
+            1.0,
+            0.9696771937141164,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            0.9791334614535706
+          ],
+          "outlier_scores": [
+            0.0,
+            0.043556537415674286,
+            0.0,
+            0.03032280628588361,
+            0.0,
+            0.0,
+            0.0,
+            0.07424098893134333,
+            0.0,
+            0.020866538546429423
+          ],
+          "num_resources": 10,
+          "valid_snippets": 10,
+          "num_clusters": 2,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 6,
+            "1": 3
+          },
+          "level": 1
+        }
+      },
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "public affairs": {
+      "term": "public affairs",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    },
+    "molecular biology": {
+      "term": "molecular biology",
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "hdbscan": false
+      },
+      "detection_count": 1,
+      "metrics": {},
+      "confidence_score": 0.3333333333333333,
+      "confidence_level": "low"
+    }
+  }
+}

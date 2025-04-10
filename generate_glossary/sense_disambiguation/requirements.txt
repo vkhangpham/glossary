@@ -1,0 +1,6 @@
+sentence-transformers>=2.2.2
+numpy>=1.20.0
+scikit-learn>=1.0.0
+faiss-cpu>=1.7.0
+# Optional for enhanced clustering
+hdbscan>=0.8.29 
