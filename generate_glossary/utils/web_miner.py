@@ -31,7 +31,7 @@ from .verification_utils import (
 )
 import logging
 from dotenv import load_dotenv
-from tools.web_scraper import fetch_page, parse_html
+from generate_glossary.utils.web_scraper import fetch_page, parse_html
 import numpy as np
 from multiprocessing import Pool, cpu_count
 from functools import partial
@@ -42,6 +42,9 @@ load_dotenv()
 
 # Configure logging
 logger = logging.getLogger(__name__)
+# Simplify logging format to just the message
+for handler in logging.root.handlers:
+    handler.setFormatter(logging.Formatter('%(message)s'))
 
 # Constants
 MAX_CONCURRENT_REQUESTS = 10  # Increased from 5
@@ -128,6 +131,47 @@ If no relevant sentences exist in the text, respond with "No relevant informatio
     max_workers: int = Field(default=max(4, cpu_count() - 1))  # CPU workers for parallel processing
     use_cache: bool = Field(default=True)  # Whether to cache LLM results
     use_batch_llm: bool = Field(default=True)  # Whether to use batch processing for LLM requests
+    log_level: str = Field(default="ERROR")  # Logging level to use
+    safe_mode: bool = Field(default=True)  # Whether to use safer thread limits
+    
+    def __init__(self, **data):
+        super().__init__(**data)
+        self._configure_logging()
+        
+    def _configure_logging(self):
+        """Configure logging based on the settings"""
+        levels = {
+            "DEBUG": logging.DEBUG,
+            "INFO": logging.INFO,
+            "WARNING": logging.WARNING,
+            "ERROR": logging.ERROR,
+            "CRITICAL": logging.CRITICAL,
+        }
+        
+        # Get numeric log level with fallback to ERROR
+        numeric_level = levels.get(self.log_level.upper(), logging.ERROR)
+        
+        # Configure root logger if not already configured
+        root_logger = logging.getLogger()
+        if not root_logger.handlers:
+            logging.basicConfig(
+                level=numeric_level,
+                format='%(message)s'  # Simplified format without timestamps and levels
+            )
+        else:
+            # Otherwise just set the level
+            root_logger.setLevel(numeric_level)
+            
+        # Set logging level for our logger
+        logger.setLevel(numeric_level)
+        
+        # Set levels for other modules
+        for module in ["aiohttp", "urllib3", "asyncio", "trafilatura", "transformers"]:
+            logging.getLogger(module).setLevel(logging.ERROR)
+            
+        # Set level for verification utils
+        from .verification_utils import logger as verification_logger
+        verification_logger.setLevel(numeric_level)
 
 def get_domain_priority(url: str) -> float:
     """Get priority score for a domain."""
@@ -162,6 +206,14 @@ def should_skip_domain(url: str) -> bool:
     """Check if a domain should be skipped"""
     domain = urlparse(url).netloc.lower()
     return any(skip_domain in domain for skip_domain in SKIP_DOMAINS)
+
+def is_likely_binary_file(url: str) -> bool:
+    """Check if URL likely points to a binary file that can't be processed as HTML"""
+    # Check file extension
+    path = urlparse(url).path.lower()
+    binary_extensions = ['.pdf', '.doc', '.docx', '.ppt', '.pptx', '.xls', '.xlsx', 
+                         '.zip', '.rar', '.gz', '.tar', '.7z', '.exe', '.bin', '.dat']
+    return any(path.endswith(ext) for ext in binary_extensions)
 
 def is_wikipedia_url(url: str) -> bool:
     """Check if a URL is from Wikipedia"""
@@ -374,7 +426,12 @@ def initialize_trafilatura_executor(max_workers: int = None):
     if trafilatura_executor is None:
         try:
             # Use a conservative number of workers - fewer is safer
-            workers = max_workers or min(4, max(1, cpu_count() // 4))
+            if max_workers is None:
+                # Default to a very conservative number to avoid resource exhaustion
+                max_workers = min(4, max(1, cpu_count() // 4))
+                
+            # Limit to maximum of 4 workers to avoid OpenMP thread issues
+            workers = min(4, max_workers)
             logger.info(f"Initializing trafilatura executor with {workers} workers")
             trafilatura_executor = concurrent.futures.ProcessPoolExecutor(max_workers=workers)
         except Exception as e:
@@ -394,6 +451,11 @@ async def extract_web_content(
 ) -> Optional[str]:
     """Extract content from a webpage using trafilatura with web_scraper as fallback"""
     global trafilatura_executor
+    
+    # Skip known binary file types that can't be parsed as HTML
+    if is_likely_binary_file(url):
+        logger.warning(f"Skipping likely binary file: {url}")
+        return None
     
     # Initialize the executor if not already done
     if trafilatura_executor is None:
@@ -418,8 +480,25 @@ async def extract_web_content(
                 if response.status != 200:
                     logger.warning(f"HTTP error {response.status} for URL: {url}")
                     return None
-
-                html_content = await response.text()
+                
+                # Check content type to avoid binary files
+                content_type = response.headers.get('Content-Type', '').lower()
+                if 'text/html' not in content_type and 'application/json' not in content_type:
+                    if any(binary_type in content_type for binary_type in ['pdf', 'octet-stream', 'binary', 'excel', 'word', 'powerpoint']):
+                        logger.warning(f"Skipping binary content: {url} (Content-Type: {content_type})")
+                        return None
+                
+                try:
+                    # Try to decode with UTF-8 first
+                    html_content = await response.text(encoding='utf-8')
+                except UnicodeDecodeError:
+                    try:
+                        # If UTF-8 fails, try with Latin-1 which accepts any byte value
+                        logger.info(f"UTF-8 decoding failed for {url}, trying latin-1")
+                        html_content = await response.text(encoding='latin-1')
+                    except Exception as e:
+                        logger.warning(f"Failed to decode content from {url}: {e}")
+                        return None
                 
                 # Process with trafilatura in a shared process pool to avoid overhead
                 # of creating a new pool for each URL
@@ -459,6 +538,9 @@ async def extract_web_content(
         except asyncio.TimeoutError:
             logger.warning(f"Timeout error while fetching {url} (connect={CONNECT_TIMEOUT}s, read={READ_TIMEOUT}s)")
             return None
+        except UnicodeDecodeError as e:
+            logger.warning(f"Encoding error for {url}: {str(e)}")
+            return None
         except ClientError as e:
             logger.warning(f"Network error for {url}: {str(e)}")
             return None
@@ -469,7 +551,13 @@ async def extract_web_content(
                 logger.info(f"Trying web_scraper fallback after error for {url}")
                 # Use the same timeout configuration for fallback
                 async with session.get(url, headers=HEADERS, timeout=timeout) as response:
-                    html_content = await response.text()
+                    try:
+                        html_content = await response.text(encoding='utf-8')
+                    except UnicodeDecodeError:
+                        # If UTF-8 fails, try with Latin-1
+                        logger.info(f"Fallback UTF-8 decoding failed for {url}, trying latin-1")
+                        html_content = await response.text(encoding='latin-1')
+                    
                     content = parse_html(html_content)
                     if content:
                         return content
@@ -627,16 +715,17 @@ class NumpyJSONEncoder(json.JSONEncoder):
 # Cache for processed content to avoid duplicate LLM calls
 content_cache = {}
 
-# Define a shared queue for LLM batch processing
-llm_processing_queue = asyncio.Queue()
+# Define a shared queue for LLM batch processing - moved to function-level creation
 MAX_LLM_QUEUE_SIZE = 10  # Maximum batch size for LLM processing
 
-async def batch_llm_processor(llm: BaseLLM, system_prompt: str, use_cache: bool = True):
+async def batch_llm_processor(llm: BaseLLM, system_prompt: str, use_cache: bool = True, queue: asyncio.Queue = None):
     """Process LLM requests in batches to reduce API overhead.
     
     This function should be run as a background task that continuously processes
     the queue of LLM requests.
     """
+    # Queue must be created in the same event loop that's running this processor
+    processing_queue = queue or asyncio.Queue()
     batch = []
     batch_futures = []
     
@@ -644,7 +733,7 @@ async def batch_llm_processor(llm: BaseLLM, system_prompt: str, use_cache: bool 
         try:
             # Get the next item from the queue with a timeout
             try:
-                item = await asyncio.wait_for(llm_processing_queue.get(), timeout=0.5)
+                item = await asyncio.wait_for(processing_queue.get(), timeout=0.5)
                 prompt, cache_key, future = item
                 batch.append((prompt, cache_key, future))
             except asyncio.TimeoutError:
@@ -656,13 +745,13 @@ async def batch_llm_processor(llm: BaseLLM, system_prompt: str, use_cache: bool 
                 continue
             
             # If batch is full or queue is empty, process the batch
-            if len(batch) >= MAX_LLM_QUEUE_SIZE or llm_processing_queue.empty():
+            if len(batch) >= MAX_LLM_QUEUE_SIZE or processing_queue.empty():
                 await process_batch(llm, system_prompt, batch, use_cache)
                 batch = []
                 batch_futures = []
             
             # Mark task as done
-            llm_processing_queue.task_done()
+            processing_queue.task_done()
             
         except Exception as e:
             logger.error(f"Error in batch LLM processor: {e}")
@@ -674,6 +763,8 @@ async def batch_llm_processor(llm: BaseLLM, system_prompt: str, use_cache: bool 
             batch_futures = []
             # Continue processing the queue despite errors
             await asyncio.sleep(1)
+    
+    return processing_queue  # Return queue for use by other functions
 
 async def process_batch(llm: BaseLLM, system_prompt: str, batch, use_cache: bool):
     """Process a batch of LLM requests."""
@@ -739,6 +830,7 @@ async def process_web_content(
     skip_verification: bool = False,
     use_cache: bool = True,
     use_batch_llm: bool = True,
+    llm_queue: asyncio.Queue = None,
     **kwargs
 ) -> Optional[WebContent]:
     """Process web content using LLM"""
@@ -753,15 +845,23 @@ ONLY extract 1-3 of the most relevant sentences from the original text that best
 If no relevant sentences exist in the text, respond with "No relevant information found."
 """
 
-        # Create a cache key based on content hash
-        cache_key = hash(raw_content)
+        # First check the educational score of the raw content
+        raw_edu_score = await get_educational_score_async(raw_content)
+        logger.info(f"Educational score for raw content from {url}: {raw_edu_score:.2f}/5.0")
         
-        # Check cache if enabled
-        if use_cache and cache_key in content_cache:
-            processed_content = content_cache[cache_key]
-        else:
-            # Create the LLM prompt
-            prompt = f"""Extract ONLY the most relevant sentences from this text that directly explain the concept.
+        # Only process with LLM if the score is above threshold (2.0)
+        processed_content = ""
+        if raw_edu_score >= 2.0:
+            # Create a cache key based on content hash
+            cache_key = hash(raw_content)
+            
+            # Check cache if enabled
+            if use_cache and cache_key in content_cache:
+                processed_content = content_cache[cache_key]
+                logger.info(f"Using cached processed content for {url}")
+            else:
+                # Create the LLM prompt
+                prompt = f"""Extract ONLY the most relevant sentences from this text that directly explain the concept.
 
 RULES:
 1. ONLY extract 1-3 sentences from the original text that best define or explain the concept
@@ -778,38 +878,42 @@ Text:
 
 Return ONLY the extracted sentences, with no additional text or commentary."""
 
-            # Use batch processing if enabled
-            if use_batch_llm:
-                # Create a future for the result
-                future = asyncio.Future()
-                
-                # Add to the processing queue
-                await llm_processing_queue.put((prompt, cache_key, future))
-                
-                # Wait for the result
-                try:
-                    processed_content = await future
-                except Exception as e:
-                    logger.error(f"Error in LLM processing for {url}: {e}")
-                    # Fall back to direct processing if batch processing fails
+                # Use batch processing if enabled
+                if use_batch_llm and llm_queue:
+                    # Create a future for the result
+                    future = asyncio.Future()
+                    
+                    # Add to the processing queue
+                    await llm_queue.put((prompt, cache_key, future))
+                    
+                    # Wait for the result
+                    try:
+                        processed_content = await future
+                    except Exception as e:
+                        logger.error(f"Error in LLM processing for {url}: {e}")
+                        # Fall back to direct processing if batch processing fails
+                        response = llm.infer(
+                            prompt=prompt,
+                            system_prompt=system_prompt,
+                            response_model=None
+                        )
+                        processed_content = response.text
+                else:
+                    # Direct processing
                     response = llm.infer(
                         prompt=prompt,
                         system_prompt=system_prompt,
                         response_model=None
                     )
                     processed_content = response.text
-            else:
-                # Direct processing
-                response = llm.infer(
-                    prompt=prompt,
-                    system_prompt=system_prompt,
-                    response_model=None
-                )
-                processed_content = response.text
-                
-            # Cache the result for future use if caching is enabled
-            if use_cache:
-                content_cache[cache_key] = processed_content
+                    
+                # Cache the result for future use if caching is enabled
+                if use_cache:
+                    content_cache[cache_key] = processed_content
+        else:
+            # If the raw content score is below threshold, use the snippet as processed content
+            processed_content = snippet
+            logger.info(f"Using snippet as processed content for {url} (raw edu score: {raw_edu_score:.2f}/5.0)")
         
         # Create WebContent object first without verification
         web_content = WebContent(
@@ -821,12 +925,18 @@ Return ONLY the extracted sentences, with no additional text or commentary."""
             score=score  # Initial score from domain priority
         )
         
-        # Skip verification if requested
-        if skip_verification:
-            # For websites with high domain priority, consider them verified automatically
-            is_verified = True
-            reason = "Verification skipped, content accepted"
-            edu_score = 3.0  # Neutral score
+        # Skip verification if requested or if raw score was below threshold
+        if skip_verification or raw_edu_score < 2.0:
+            # For below-threshold content, always mark as unverified
+            if raw_edu_score < 2.0:
+                is_verified = False
+                reason = f"Content skipped due to low educational quality score: {raw_edu_score:.2f}/5.0"
+                edu_score = raw_edu_score
+            else:
+                # For websites with high domain priority, consider them verified automatically when skipping
+                is_verified = True
+                reason = "Verification skipped, content accepted"
+                edu_score = 3.0  # Neutral score
         else:
             # Verify content quality based on processed content
             is_verified, reason, edu_score = await verify_content_async(url, processed_content, **kwargs)
@@ -871,6 +981,9 @@ async def search_web_content(
     
     # Initialize process pool for trafilatura with conservative worker count
     max_workers = min(settings.max_workers, 4)  # Cap at 4 for safety
+    if settings.safe_mode:
+        # Even more conservative in safe mode
+        max_workers = min(2, max_workers)
     initialize_trafilatura_executor(max_workers)
     
     # Initialize LLM for content processing
@@ -880,10 +993,14 @@ async def search_web_content(
     )
     
     # Start the batch processor task for LLM if batch processing is enabled
+    # Create a queue in the current event loop
     batch_processor_task = None
+    llm_queue = None
     if settings.use_batch_llm:
+        # Create queue in current event loop
+        llm_queue = asyncio.Queue()
         batch_processor_task = asyncio.create_task(
-            batch_llm_processor(llm, settings.system_prompt, settings.use_cache)
+            batch_llm_processor(llm, settings.system_prompt, settings.use_cache, llm_queue)
         )
     
     # Configure connection pool with more conservative limits
@@ -993,7 +1110,8 @@ async def search_web_content(
                                                 show_progress=settings.show_progress,
                                                 skip_verification=settings.skip_verification,
                                                 use_cache=settings.use_cache,
-                                                use_batch_llm=settings.use_batch_llm
+                                                use_batch_llm=settings.use_batch_llm,
+                                                llm_queue=llm_queue,  # Pass the queue created in this event loop
                                             )
                                             content_processing_tasks.append((concept, processing_task))
                                     except Exception as e:

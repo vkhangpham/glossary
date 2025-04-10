@@ -4,7 +4,7 @@ import argparse
 import logging
 from pathlib import Path
 
-from generate_glossary.metadata_collector import collect_metadata, collect_resources, find_step_file, find_final_file, find_step_metadata
+from generate_glossary.utils.metadata_collector import collect_metadata, collect_resources, find_step_file, find_final_file, find_step_metadata
 
 # Setup logging
 logging.basicConfig(
@@ -23,6 +23,8 @@ def main():
                         help='Collect resources in addition to metadata')
     parser.add_argument('-v', '--verbose', action='store_true',
                         help='Enable verbose logging')
+    parser.add_argument('--no-aggregate', action='store_true',
+                        help="Don't aggregate variations - create separate entries for them (not recommended)")
     
     args = parser.parse_args()
     
@@ -92,16 +94,25 @@ def main():
         else:
             logger.info(f"Found resources file: {resources_file}")
     
+    # Log variation handling method
+    if args.no_aggregate:
+        logger.warning("Variations will be included as separate entries in metadata.")
+        logger.warning("This is not recommended as it may cause conflicts.")
+    else:
+        logger.info("Variations will be aggregated with canonical terms.")
+        logger.info("Each term's metadata will include all its variations plus all their sources, parents, and resources.")
+    
     # Collect metadata
     logger.info(f"Collecting metadata for level {args.level}")
     try:
-        collect_metadata(args.level, args.verbose)
+        include_variations_as_entries = args.no_aggregate
+        collect_metadata(args.level, args.verbose, include_variations=include_variations_as_entries)
         logger.info(f"Metadata collection complete. Output saved to {args.output}")
         
         # Collect resources if requested
         if args.resources:
             logger.info(f"Collecting resources for level {args.level}")
-            collect_resources(args.level, args.verbose)
+            collect_resources(args.level, args.verbose, include_variations=(not include_variations_as_entries))
             logger.info(f"Resources collection complete.")
         
         return 0
