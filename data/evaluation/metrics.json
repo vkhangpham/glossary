@@ -1,33 +1,35 @@
 {
   "summary": {
-    "total_terms": 2213,
-    "total_relationships": 6258,
-    "total_variations": 339
+    "total_terms": 6333,
+    "total_relationships": 11697,
+    "total_variations": 936
   },
   "terms_per_level": {
-    "0": 26,
-    "1": 354,
-    "2": 1833,
-    "3": 0
+    "0": 13,
+    "1": 245,
+    "2": 1622,
+    "3": 4453
   },
   "orphan_terms": {
     "2": 7
   },
   "branching_factor": {
-    "0": 25.38,
-    "1": 15.81,
-    "2": 0.0
+    "0": 33.77,
+    "1": 19.53,
+    "2": 3.99
   },
   "variation_stats": {
     "terms_with_variations": {
-      "0": 8,
-      "1": 74,
-      "2": 182
+      "0": 12,
+      "1": 92,
+      "2": 295,
+      "3": 301
     },
     "avg_variations_per_term": {
-      "0": 1.62,
-      "1": 1.55,
-      "2": 1.16
+      "0": 1.92,
+      "1": 1.72,
+      "2": 1.26,
+      "3": 1.27
     }
   }
 }

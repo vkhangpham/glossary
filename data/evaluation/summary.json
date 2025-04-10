@@ -1,42 +1,42 @@
 [
   {
     "Level": 0,
-    "Terms": 26,
+    "Terms": 13,
     "Orphans": 0,
-    "Avg Children": 25.38,
+    "Avg Children": 33.77,
     "Parent-Child Rels": 0,
-    "Terms with Variations": 8,
-    "Avg Variations per Term": 1.62,
-    "Total Variations": 13
+    "Terms with Variations": 12,
+    "Avg Variations per Term": 1.92,
+    "Total Variations": 23
   },
   {
     "Level": 1,
-    "Terms": 354,
+    "Terms": 245,
     "Orphans": 0,
-    "Avg Children": 15.81,
-    "Parent-Child Rels": 660,
-    "Terms with Variations": 74,
-    "Avg Variations per Term": 1.55,
-    "Total Variations": 115
+    "Avg Children": 19.53,
+    "Parent-Child Rels": 439,
+    "Terms with Variations": 92,
+    "Avg Variations per Term": 1.72,
+    "Total Variations": 158
   },
   {
     "Level": 2,
-    "Terms": 1833,
+    "Terms": 1622,
     "Orphans": 7,
-    "Avg Children": 0.0,
-    "Parent-Child Rels": 5598,
-    "Terms with Variations": 182,
-    "Avg Variations per Term": 1.16,
-    "Total Variations": 211
+    "Avg Children": 3.99,
+    "Parent-Child Rels": 4786,
+    "Terms with Variations": 295,
+    "Avg Variations per Term": 1.26,
+    "Total Variations": 373
   },
   {
     "Level": 3,
-    "Terms": 0,
+    "Terms": 4453,
     "Orphans": 0,
     "Avg Children": 0.0,
-    "Parent-Child Rels": 0,
-    "Terms with Variations": 0,
-    "Avg Variations per Term": 0.0,
-    "Total Variations": 0
+    "Parent-Child Rels": 6472,
+    "Terms with Variations": 301,
+    "Avg Variations per Term": 1.27,
+    "Total Variations": 382
   }
 ]

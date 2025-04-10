@@ -39,13 +39,7 @@
   "redundant_paths": [
     {
       "term": "3d printing",
-      "ancestor": "computer science",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "3d printing",
-      "ancestor": "structural engineering",
+      "ancestor": "mechanics",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -57,7 +51,13 @@
     },
     {
       "term": "3d printing",
-      "ancestor": "mechanics",
+      "ancestor": "computer science",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "3d printing",
+      "ancestor": "structural engineering",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -81,6 +81,12 @@
     },
     {
       "term": "academic writing",
+      "ancestor": "writing studies",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "academic writing",
       "ancestor": "english",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
@@ -98,12 +104,6 @@
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
-      "term": "academic writing",
-      "ancestor": "writing studies",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
       "term": "accounting information systems",
       "ancestor": "accounting",
       "level": 2,
@@ -111,7 +111,7 @@
     },
     {
       "term": "acoustic phonetics",
-      "ancestor": "audiology",
+      "ancestor": "speech pathology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -123,25 +123,19 @@
     },
     {
       "term": "acoustic phonetics",
-      "ancestor": "speech pathology",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "action research",
-      "ancestor": "music performance",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "action research",
-      "ancestor": "middle education",
+      "ancestor": "audiology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "action research",
       "ancestor": "elementary education",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "action research",
+      "ancestor": "music performance",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -158,14 +152,14 @@
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
-      "term": "active materials",
-      "ancestor": "manufacturing engineering",
+      "term": "action research",
+      "ancestor": "middle education",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
-      "term": "activism",
-      "ancestor": "social justice",
+      "term": "active materials",
+      "ancestor": "manufacturing engineering",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -177,7 +171,7 @@
     },
     {
       "term": "activism",
-      "ancestor": "gender studies",
+      "ancestor": "social justice",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -190,6 +184,12 @@
     {
       "term": "activism",
       "ancestor": "film studies",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "activism",
+      "ancestor": "gender studies",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -225,13 +225,13 @@
     },
     {
       "term": "administrative law",
-      "ancestor": "intellectual property law",
+      "ancestor": "business law",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "administrative law",
-      "ancestor": "business law",
+      "ancestor": "intellectual property law",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -249,19 +249,31 @@
     },
     {
       "term": "administrative leadership",
-      "ancestor": "organizational leadership",
+      "ancestor": "educational leadership",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "administrative leadership",
-      "ancestor": "educational leadership",
+      "ancestor": "organizational leadership",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "adolescence",
       "ancestor": "audiology",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "adolescence",
+      "ancestor": "family nurse practitioner",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "adolescence",
+      "ancestor": "developmental psychology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -278,38 +290,8 @@
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
-      "term": "adolescence",
-      "ancestor": "developmental psychology",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "adolescence",
-      "ancestor": "family nurse practitioner",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
       "term": "adolescent development",
-      "ancestor": "child development",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "adolescent development",
-      "ancestor": "behavior analysis",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "adolescent development",
-      "ancestor": "educational psychology",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "adolescent development",
-      "ancestor": "k-12 education",
+      "ancestor": "school psychology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -321,19 +303,7 @@
     },
     {
       "term": "adolescent development",
-      "ancestor": "family studies",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "adolescent development",
-      "ancestor": "developmental psychology",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "adolescent development",
-      "ancestor": "secondary education",
+      "ancestor": "child development",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -345,7 +315,37 @@
     },
     {
       "term": "adolescent development",
-      "ancestor": "school psychology",
+      "ancestor": "family studies",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "adolescent development",
+      "ancestor": "k-12 education",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "adolescent development",
+      "ancestor": "developmental psychology",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "adolescent development",
+      "ancestor": "behavior analysis",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "adolescent development",
+      "ancestor": "secondary education",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "adolescent development",
+      "ancestor": "educational psychology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -369,25 +369,19 @@
     },
     {
       "term": "adolescent psychology",
-      "ancestor": "developmental psychology",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "adolescent psychology",
       "ancestor": "secondary education",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "adolescent psychology",
-      "ancestor": "earth science",
+      "ancestor": "developmental psychology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
-      "term": "adult development",
-      "ancestor": "gerontology",
+      "term": "adolescent psychology",
+      "ancestor": "earth science",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -404,8 +398,8 @@
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
-      "term": "adult language disorders",
-      "ancestor": "hearing science",
+      "term": "adult development",
+      "ancestor": "gerontology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -416,8 +410,14 @@
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
+      "term": "adult language disorders",
+      "ancestor": "hearing science",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
       "term": "adult learning",
-      "ancestor": "healthcare",
+      "ancestor": "educational leadership",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -429,19 +429,19 @@
     },
     {
       "term": "adult learning",
-      "ancestor": "educational leadership",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "advanced creative nonfiction",
-      "ancestor": "rhetoric",
+      "ancestor": "healthcare",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "advanced creative nonfiction",
       "ancestor": "writing studies",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "advanced creative nonfiction",
+      "ancestor": "rhetoric",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -513,13 +513,13 @@
     },
     {
       "term": "advanced mathematics",
-      "ancestor": "structural engineering",
+      "ancestor": "biological engineering",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "advanced mathematics",
-      "ancestor": "biological engineering",
+      "ancestor": "structural engineering",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -537,25 +537,25 @@
     },
     {
       "term": "advanced neuroanatomy",
-      "ancestor": "speech pathology",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "advanced neuroanatomy",
       "ancestor": "anatomy",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
-      "term": "advanced nutrition",
-      "ancestor": "dietetics",
+      "term": "advanced neuroanatomy",
+      "ancestor": "speech pathology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "advanced nutrition",
       "ancestor": "clinical nutrition",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "advanced nutrition",
+      "ancestor": "dietetics",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -579,19 +579,25 @@
     },
     {
       "term": "advanced pharmacology",
-      "ancestor": "family nurse practitioner",
+      "ancestor": "physiology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "advanced pharmacology",
-      "ancestor": "physiology",
+      "ancestor": "family nurse practitioner",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
     {
       "term": "advanced physical examination",
       "ancestor": "family nurse practitioner",
+      "level": 2,
+      "issue": "Term has both direct and indirect paths to the same ancestor"
+    },
+    {
+      "term": "advanced physiology",
+      "ancestor": "physiology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -604,12 +610,6 @@
     {
       "term": "advanced physiology",
       "ancestor": "family nurse practitioner",
-      "level": 2,
-      "issue": "Term has both direct and indirect paths to the same ancestor"
-    },
-    {
-      "term": "advanced physiology",
-      "ancestor": "physiology",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     },
@@ -633,297 +633,710 @@
     },
     {
       "term": "advanced research practices",
-      "ancestor": "rhetoric",
+      "ancestor": "writing studies",
       "level": 2,
       "issue": "Term has both direct and indirect paths to the same ancestor"
     }
   ],
   "inconsistent_branching": [
     {
-      "term": "arts",
-      "level": 0,
-      "children_count": 112,
-      "avg_level_children": 25.384615384615383,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "humanities",
-      "level": 0,
-      "children_count": 106,
-      "avg_level_children": 25.384615384615383,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
       "term": "african american studies",
       "level": 1,
       "children_count": 1,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "asian languages",
       "level": 1,
       "children_count": 4,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "asian studies",
+      "level": 1,
+      "children_count": 6,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "astronomy",
       "level": 1,
       "children_count": 1,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "behavioral health",
-      "level": 1,
-      "children_count": 51,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "biochemistry",
       "level": 1,
       "children_count": 1,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "cell biology",
+      "level": 1,
+      "children_count": 6,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "classics",
+      "level": 1,
+      "children_count": 5,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "community health",
       "level": 1,
-      "children_count": 78,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 63,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
-      "term": "computer engineering",
+      "term": "comparative law",
       "level": 1,
-      "children_count": 52,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 6,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
-      "term": "cultural studies",
+      "term": "creative writing",
       "level": 1,
-      "children_count": 49,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "data analysis",
-      "level": 1,
-      "children_count": 62,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "data science",
-      "level": 1,
-      "children_count": 62,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "developmental psychology",
-      "level": 1,
-      "children_count": 49,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 5,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "diaspora studies",
       "level": 1,
       "children_count": 3,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "early childhood education",
-      "level": 1,
-      "children_count": 54,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "educational leadership",
-      "level": 1,
-      "children_count": 52,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "emergency medicine",
       "level": 1,
-      "children_count": 4,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "environmental engineering",
-      "level": 1,
-      "children_count": 52,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "environmental science",
-      "level": 1,
-      "children_count": 49,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 3,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "event management",
       "level": 1,
       "children_count": 3,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "family medicine",
       "level": 1,
       "children_count": 2,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "francophone studies",
       "level": 1,
       "children_count": 4,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "indigenous studies",
       "level": 1,
       "children_count": 5,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "international affairs",
-      "level": 1,
-      "children_count": 61,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "international business",
       "level": 1,
-      "children_count": 5,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 4,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "italian studies",
       "level": 1,
       "children_count": 3,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
-      "term": "manufacturing engineering",
+      "term": "liberal studies",
       "level": 1,
-      "children_count": 56,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 6,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "mediation",
+      "level": 1,
+      "children_count": 6,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "microbiology",
+      "level": 1,
+      "children_count": 6,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "military science",
+      "level": 1,
+      "children_count": 5,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "molecular biology",
       "level": 1,
       "children_count": 5,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "nursing practice",
       "level": 1,
-      "children_count": 2,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 1,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "otolaryngology",
       "level": 1,
       "children_count": 2,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "patient care",
       "level": 1,
       "children_count": 3,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "performing arts",
       "level": 1,
       "children_count": 2,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "public administration",
-      "level": 1,
-      "children_count": 68,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "public affairs",
-      "level": 1,
-      "children_count": 62,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "slavic studies",
       "level": 1,
       "children_count": 1,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "statistics",
-      "level": 1,
-      "children_count": 61,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "structural engineering",
-      "level": 1,
-      "children_count": 49,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "teacher education",
-      "level": 1,
-      "children_count": 48,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "technology education",
-      "level": 1,
-      "children_count": 51,
-      "avg_level_children": 15.813559322033898,
-      "issue": "Term has significantly different number of children than average"
-    },
-    {
-      "term": "tesol",
-      "level": 1,
-      "children_count": 53,
-      "avg_level_children": 15.813559322033898,
+      "avg_level_children": 19.53469387755102,
       "issue": "Term has significantly different number of children than average"
     },
     {
       "term": "theatre",
       "level": 1,
-      "children_count": 5,
-      "avg_level_children": 15.813559322033898,
+      "children_count": 4,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "wellness studies",
+      "level": 1,
+      "children_count": 6,
+      "avg_level_children": 19.53469387755102,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "3d printing",
+      "level": 2,
+      "children_count": 15,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "acoustic phonetics",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "activism",
+      "level": 2,
+      "children_count": 46,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "addiction",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "aerospace systems",
+      "level": 2,
+      "children_count": 89,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "air quality",
+      "level": 2,
+      "children_count": 19,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "american material culture",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "american politics",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "animal behavior",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "applied aerodynamics",
+      "level": 2,
+      "children_count": 58,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "applied mathematics",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "archival appraisal",
+      "level": 2,
+      "children_count": 15,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "asset pricing",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "auditory processing",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "autism spectrum disorder",
+      "level": 2,
+      "children_count": 25,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "autonomous systems",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "bankruptcy law",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "behavioral ecology",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "bilingual",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "bioinorganic chemistry",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "biomechanics",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "blood banking",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "built environment",
+      "level": 2,
+      "children_count": 19,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "business decisions",
+      "level": 2,
+      "children_count": 20,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "business ethics",
+      "level": 2,
+      "children_count": 17,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "cancer biology",
+      "level": 2,
+      "children_count": 13,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "capstone design",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "cardiology",
+      "level": 2,
+      "children_count": 23,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "caribbean literature",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "caribbean studies",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "causal inference",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "cell differentiation",
+      "level": 2,
+      "children_count": 38,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "cell engineering",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "cellular neuroscience",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "ceramics",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "change management",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "chemical ecology",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "child care",
+      "level": 2,
+      "children_count": 24,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "children",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "children's learning",
+      "level": 2,
+      "children_count": 17,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "children's literature",
+      "level": 2,
+      "children_count": 15,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "clinical prevention",
+      "level": 2,
+      "children_count": 14,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "clinical psychology",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "clinical skills",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "collaborative learning",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "collection development",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "college composition",
+      "level": 2,
+      "children_count": 13,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "community corrections",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "comparative studies",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "competitive advantage",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "complex fluids",
+      "level": 2,
+      "children_count": 16,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "comprehensive exam",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "computational biology",
+      "level": 2,
+      "children_count": 46,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "computational modeling",
+      "level": 2,
+      "children_count": 22,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "computer programming",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "computing",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "condensed matter",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "conservation ecology",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "conservation genetics",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "construction methods",
+      "level": 2,
+      "children_count": 13,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "construction planning",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "consumer insights",
+      "level": 2,
+      "children_count": 20,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "corporate social responsibility",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "corpus linguistics",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "couple therapy",
+      "level": 2,
+      "children_count": 24,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "criminal justice management",
+      "level": 2,
+      "children_count": 12,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "criminal procedure",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "cultural humility",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "curriculum design",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
+      "issue": "Term has significantly different number of children than average"
+    },
+    {
+      "term": "curriculum implementation",
+      "level": 2,
+      "children_count": 1,
+      "avg_level_children": 3.9901356350184956,
       "issue": "Term has significantly different number of children than average"
     }
   ],
