@@ -185,3 +185,12 @@ raw_search_results/
 *.zip
 lv2_resources.json
 lv3_resources.json
+data/lv3/resources
+exports/
+.graph_cache/
+data/reports/
+data/concepts_info/
+data/evaluation/
+data/analysis/
+logs/
+vector_store*/
