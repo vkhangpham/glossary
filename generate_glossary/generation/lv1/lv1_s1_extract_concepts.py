@@ -2,26 +2,72 @@ import os
 import sys
 import time
 import json
-import asyncio
 import re
+from numpy.random import choice
+import threading
+import logging
+import argparse
 from concurrent.futures import ProcessPoolExecutor
 from collections import Counter
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Set, Union
+from typing import List, Dict, Any, Optional, Set, Union, Tuple
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 from pydash import chunk
 from tqdm import tqdm
+from functools import lru_cache
 
 # Fix import path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
-from generate_glossary.utils.logger import setup_logger
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM, InferenceResult
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
-# Load environment variables and setup logging
+# Load environment variables
 load_dotenv()
-logger = setup_logger("lv1.s1")
+
+def setup_logging(name: str, log_level: str = "INFO", log_file: Optional[str] = None) -> logging.Logger:
+    """Configure logging with the specified level, name, and optional file output."""
+    # Create logger with the given name
+    logger = logging.getLogger(name)
+    logger.setLevel(getattr(logging, log_level.upper()))
+    
+    # Remove existing handlers to avoid duplicate logs
+    if logger.handlers:
+        logger.handlers.clear()
+    
+    # Create formatter
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    
+    # Create console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+    logger.addHandler(console_handler)
+    
+    # Add file handler if specified
+    if log_file:
+        file_handler = logging.FileHandler(log_file, encoding='utf-8')
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+        logger.info(f"Logging to file: {log_file}")
+    
+    # Silence verbose logs from underlying libraries
+    logging.getLogger("google.api_core").setLevel(logging.WARNING)
+    logging.getLogger("google.cloud.aiplatform").setLevel(logging.WARNING)
+    logging.getLogger('google_genai.models').setLevel(logging.WARNING)
+    logging.getLogger('google_genai').setLevel(logging.WARNING)
+    logging.getLogger("vertexai").setLevel(logging.WARNING)
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("httpcore").setLevel(logging.WARNING)
+    logging.getLogger("openai").setLevel(logging.WARNING)
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
+    
+    return logger
+
+# Initialize logger
+logger = setup_logging("lv1.s1")
+
+# Process-local storage for LLM instances
+_process_local = threading.local()
 
 class Config:
     """Configuration for concept extraction"""
@@ -31,12 +77,20 @@ class Config:
     OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s1_extracted_concepts.txt")
     META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s1_metadata.json")
     BATCH_SIZE = 20
-    NUM_LLM_ATTEMPTS = 1
-    KW_APPEARANCE_THRESH = 1
-    MAX_WORKERS = 4  # Number of parallel workers
+    NUM_LLM_ATTEMPTS = 5
+    CONCEPT_AGREEMENT_THRESH = 3
+    NUM_WORKERS = 8  # Increased number of parallel workers
     CHUNK_SIZE = 100  # Size of chunks for parallel processing
     MIN_DEPT_LENGTH = 5  # Minimum length of a valid department name
     MAX_DEPT_LENGTH = 100  # Maximum length of a valid department name
+    COOLDOWN_PERIOD = 1  # Seconds between batches
+    COOLDOWN_FREQUENCY = 10  # Number of batches before cooldown
+    LOG_LEVEL = "INFO"  # Default log level
+    LOG_FILE = None     # Default to no separate log file
+
+class QuotaExceededError(Exception):
+    """Raised when the API quota is exceeded."""
+    pass
 
 def normalize_department_name(dept_name: str) -> str:
     """
@@ -52,6 +106,32 @@ def normalize_department_name(dept_name: str) -> str:
         # Strip "Department:" prefix and any leading whitespace
         return dept_name[len("Department:"):].strip()
     return dept_name
+
+def get_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
+    """Get or initialize LLM with specified provider (process-local)"""
+    if not hasattr(_process_local, 'llm'):
+        # logger.info(f"Initializing LLM with provider: {provider} for process {os.getpid()}")
+        _process_local.llm = init_llm(provider, model)
+    return _process_local.llm
+
+def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
+    """Initialize LLM with specified provider and model"""
+    if not provider:
+        provider = Provider.OPENAI  # Default to OpenAI
+        
+    selected_model = OPENAI_MODELS[model] if provider == Provider.OPENAI else GEMINI_MODELS[model]
+        
+    return LLMFactory.create_llm(
+        provider=provider,
+        model=selected_model,
+        temperature=0.3
+    )
+
+def get_random_llm_config() -> Tuple[str, str]:
+    """Get a random LLM provider and model configuration"""
+    provider = choice([Provider.OPENAI, Provider.GEMINI], p=[0.5, 0.5], replace=False)
+    model = choice([ "pro", "default", "mini"], p=[0.2, 0.5, 0.3], replace=False)
+    return provider, model
 
 def infer_college_from_department(dept_name: str) -> str:
     """
@@ -104,100 +184,100 @@ class ConceptExtraction(BaseModel):
 class ConceptExtractionList(BaseModel):
     """Model for batch processing results"""
     extractions: List[ConceptExtraction] = Field(description="List of concept extractions")
-    
-    @classmethod
-    def from_json(cls, json_str: str) -> "ConceptExtractionList":
-        """Create model from JSON string with better error handling"""
-        try:
-            # Clean markdown code blocks from the input
-            cleaned_json = json_str.strip()
-            
-            # Remove markdown code block markers if present
-            if cleaned_json.startswith("```"):
-                # Extract content between triple backticks
-                match = re.search(r'```(?:\w+)?\n(.*?)```', cleaned_json, re.DOTALL)
-                if match:
-                    cleaned_json = match.group(1).strip()
-                else:
-                    # Try simpler extraction (just remove starting/ending backticks)
-                    cleaned_json = re.sub(r'^```\w*\n?', '', cleaned_json)
-                    cleaned_json = re.sub(r'```$', '', cleaned_json)
-                    cleaned_json = cleaned_json.strip()
-            
-            # Now parse the cleaned JSON
-            return cls.model_validate_json(cleaned_json)
-        except Exception as e:
-            logger.error(f"Error parsing JSON: {str(e)}")
-            logger.debug(f"Problematic JSON: {json_str}")
-            raise
 
-def init_llm(provider: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider"""
-    if not provider:
-        provider = Provider.OPENAI  # Default to OpenAI
-        
-    # Convert string provider to Provider constant
-    provider_name = provider.lower()
-    if provider_name not in [Provider.OPENAI, Provider.GEMINI]:
-        raise ValueError(f"Unsupported provider: {provider}")
-        
-    return LLMFactory.create_llm(
-        provider=provider_name,
-        model=OPENAI_MODELS["mini"] if provider_name == Provider.OPENAI else GEMINI_MODELS["pro"],
-        temperature=0.3
-    )
+SYSTEM_PROMPT = """You are an expert in academic research classification with deep knowledge of research domains, scientific disciplines, and academic departments. Your task is to extract academic concepts and fields of study from university department names.
 
-SYSTEM_PROMPT = """You are an expert in academic research classification with deep knowledge 
-of research domains, scientific disciplines, and academic departments.
+**CORE TASK:** Extract ONLY well-established, recognized academic disciplines, sub-disciplines, or broad research fields explicitly mentioned in the provided department names.
 
-Your task is to extract research topics and concepts from academic department names.
-IMPORTANT: ONLY extract concepts from entries that are legitimate academic departments or fields of study. 
-IGNORE entries that are not academic departments (such as "Home", "Back", "Links", administrative offices, etc).
+**CRITICAL GUIDELINES:**
 
-Guidelines for extraction:
-1. FIRST determine if the input is an actual academic department or discipline. If not, return an empty list of concepts.
-2. For valid departments, extract specific research domains that represent academic focus areas
-3. Include both broad fields and specialized subfields
-4. Decompose compound terms into individual concepts where appropriate
-5. Ensure each concept is a well-defined academic or research term
+**1. Filter for Legitimacy FIRST:**
+    *   Before extracting, determine if the input string represents a legitimate academic department or field of study.
+    *   **IGNORE and return an empty concept list `[]` for:** Administrative offices ("Dean's Office"), navigation elements ("Home", "Back", "Links"), non-academic services ("Student Loans", "Career Services"), generic placeholders ("100%"), irrelevant text, etc.
 
-DO NOT include:
-- Generic terms (e.g., studies, research)
-- Administrative terms (e.g., department, school)
-- Organizational descriptors (e.g., center, institute)
-- Acronyms or abbreviations
-- Proper nouns or names
-- Location-specific terms
-- Navigation elements (e.g., "Back", "Home", "Links")
-- Administrative units (e.g., "Dean's Office", "Student Services")
-- Non-academic programs (e.g., "Student Loans", "Career Services")
+**2. Focus on Established Academic Fields:**
+    *   **EXTRACT:** Standardized academic disciplines (e.g., "computer science", "molecular biology"), sub-disciplines ("cognitive psychology"), and broad research areas ("machine learning", "quantum physics").
+    *   **DO NOT EXTRACT:**
+        *   Specific, narrow research topics (e.g., "ecological effects of anthropogenic nutrient pulses").
+        *   Course designations/titles (e.g., "accounting workshop", "biology seminar", "chemistry I-IV", "advanced topics in machine learning").
+        *   Degree paths/types (e.g., "B.S. finance", "Ph.D. economics", "master's program", "bachelor's", "master's", "doctoral"). (Extract the *field name* itself if present, e.g., "B.S. in Computer Science" -> "computer science").
+        *   Project or paper titles if too specific.
+        *   Course labels with part numbers or levels ("chemistry I-IV", "physics part 2").
 
-IMPORTANT: When returning JSON, do not wrap it in markdown code blocks with triple backticks. 
-Return only the raw JSON object.
+**3. Strict Explicit Mention Rule:**
+    *   Extract ONLY concepts DIRECTLY and EXPLICITLY mentioned in the input text.
+    *   **DO NOT INFER:** Do not add related concepts, subfields, or specializations that are *not* present verbatim in the text. (e.g., If text says "electrical engineering", do NOT add "electronics" or "power systems").
 
-Example valid departments:
-"college of communication sciences and disorders"
-Valid concepts:
-- communication sciences
-- communication disorders
-- speech pathology
-- audiology
+**4. Clean Administrative Terms:**
+    *   For valid departments, remove administrative qualifiers like "department of", "school of", "college of", "program in" before extracting the core concept(s).
+        *   Example: "Department of Biology" -> "biology"
+        *   Example: "School of Medicine" -> "medicine"
+        *   Example: "Ph.D. Program in Biomedical Engineering" -> "biomedical engineering"
 
-"college of electrical and computer engineering"
-Valid concepts:
-- electrical engineering
-- computer engineering
-- electronics
-- digital systems
+**5. Preserve Exact Terms:**
+    *   Extract the EXACT TERMS as they appear in the cleaned department name. Do not modify or add specializations not directly mentioned.
 
-Example invalid entries (return empty concept list for these):
-"college of back"
-"college of home"
-"college of student loans"
-"college of dean's office"
-"college of 100%"
-"college of academic advisors"
-"college of visit the college"
+**6. MANDATORY Compound Term Decomposition (Split on "and"):**
+    *   If a cleaned department name contains concepts joined by "and", **ALWAYS** split them into separate concepts.
+    *   If the concepts joined by "and" share a common preceding word or phrase (prefix/modifier), repeat that shared prefix/modifier for **EACH** resulting concept after the split. Apply the *most relevant* shared context.
+        *   Example: "department of electrical and computer engineering" -> ["electrical engineering", "computer engineering"] (Shared modifier "engineering" is implied by structure; "electrical" and "computer" are distinct specifiers)
+        *   Example: "school of cognitive and behavioral neuroscience" -> ["cognitive neuroscience", "behavioral neuroscience"] (Shared modifier "neuroscience")
+        *   Example: "college of aerospace sciences and engineering" -> ["aerospace sciences", "aerospace engineering"] (Shared prefix "aerospace")
+        *   Example: "department of biology and chemistry" -> ["biology", "chemistry"] (No shared prefix/modifier immediately preceding 'and' to repeat)
+        *   Example: "school of cognitive and behavioral sciences" -> ["cognitive sciences", "behavioral sciences"] (Shared modifier "sciences")
+        *   Example: "textile engineering, chemistry and science" -> Should be decomposed considering "textile" as a modifier applying across the related terms: ["textile engineering", "textile chemistry", "textile science"]. The goal is to correctly associate the primary subject ("textile") with all relevant sub-fields listed.
+
+**7. Strict Exclusions List - DO NOT EXTRACT ANY OF THESE:**
+    *   **Generic Terms:** "studies", "research", "topics", "areas".
+    *   **Administrative/Organizational Terms:** "department", "school", "college", "center", "institute", "program", "office", "services".
+    *   **Degree Designations:** "B.S.", "M.S.", "M.A.", "Ph.D.", "bachelor's", "master's", "doctoral". (Remove these, but keep the field name if present).
+    *   **Course Identifiers:** "introduction to", "advanced", roman numerals (I, II, III), course numbers, "workshop", "seminar", "laboratory".
+    *   **Acronyms/Abbreviations:** Unless it's the universally standard name for the field.
+    *   **Proper Nouns/Names:** Unless part of the standard field name.
+    *   **Location-Specific Terms.**
+    *   **Navigation/Website Terms:** "Back", "Home", "Links", "Visit", "Apply", "Contact".
+    *   **ANY concepts that do not appear verbatim in the input text after cleaning.**
+
+**EXAMPLES:**
+
+*   **Input:** "college of communication sciences and disorders"
+    *   **Valid Concepts:** `["communication sciences", "communication disorders"]`
+    *   **INVALID:** `["speech pathology", "audiology"]` (Not explicitly mentioned)
+
+*   **Input:** "college of electrical and computer engineering"
+    *   **Valid Concepts:** `["electrical engineering", "computer engineering"]`
+    *   **INVALID:** `["electronics", "digital systems"]` (Not explicitly mentioned)
+
+*   **Input:** "department of biology and chemistry"
+    *   **Valid Concepts:** `["biology", "chemistry"]`
+    *   **INVALID:** `["molecular biology", "organic chemistry"]` (Not explicitly mentioned)
+
+*   **Input:** "school of cognitive and behavioral sciences"
+    *   **Valid Concepts:** `["cognitive sciences", "behavioral sciences"]` (Decomposed shared suffix)
+
+*   **Input:** "Department of B.S. and M.S. Programs in Computer Science"
+    *   **Valid Concepts:** `["computer science"]` (Degree types removed)
+
+*   **Input:** "Ph.D. Program in Biomedical Engineering"
+    *   **Valid Concepts:** `["biomedical engineering"]` (Degree type removed)
+
+*   **Input:** "college of back" -> **Valid Concepts:** `[]` (Invalid department)
+*   **Input:** "college of home" -> **Valid Concepts:** `[]` (Invalid department)
+*   **Input:** "college of student loans" -> **Valid Concepts:** `[]` (Non-academic unit)
+*   **Input:** "college of dean's office" -> **Valid Concepts:** `[]` (Administrative office)
+*   **Input:** "college of academic advisors" -> **Valid Concepts:** `[]` (Administrative unit)
+
+**Output Format:**
+Return the results in the specified JSON format. Make sure the overall output is a valid JSON object. **DO NOT** wrap the JSON in markdown code blocks (triple backticks).
+
+```json
+{
+    "extractions": [
+        {"source": "college of {department_name}", "concepts": ["concept1", "concept2"]},
+        {"source": "college of {another_department}", "concepts": []} // Empty list for non-departments or if no valid concepts found
+    ]
+}
+```
 """
 
 def is_valid_department(dept: str) -> bool:
@@ -233,16 +313,26 @@ def is_valid_department(dept: str) -> bool:
         
     return True
 
+def preprocess_content(content: str) -> str:
+    """Preprocess content to reduce size and improve quality"""
+    # Remove extra whitespace
+    content = " ".join(content.split())
+    return content
+
 def build_prompt(sources: List[Dict[str, str]]) -> str:
     """Build prompt for concept extraction"""
-    sources_str = "\n".join(f"- Department: {source['department']}\n  College: {source['college']}" for source in sources)
+    # Extract college from the first entry - all entries in a batch should have the same college
+    college = sources[0].get('college', 'Unknown') if sources else 'Unknown'
+    
+    # Format list of department names
+    departments_str = "\n".join([f"- Department: {source['department']}" for source in sources])
 
-    return f"""Extract research topics and concepts from these academic department names.
+    return f"""Extract research topics and concepts from these academic department names from the {college}.
 For each department name, FIRST determine if it's an actual academic department or field of study.
 If it's not a legitimate academic department (like administrative offices, navigation elements, etc.), 
 return an empty list of concepts.
 
-Consider the college context when extracting concepts - the concepts should be relevant to both the department and its parent college.
+Consider the college context ({college}) when extracting concepts - the concepts should be relevant to both the department and its parent college.
 
 Return the concepts in this exact JSON format WITHOUT any markdown formatting or code blocks:
 {{
@@ -255,277 +345,317 @@ Return the concepts in this exact JSON format WITHOUT any markdown formatting or
 IMPORTANT: DO NOT use markdown formatting with triple backticks. Return ONLY the raw JSON object.
 
 Departments to process:
-{sources_str}"""
+{departments_str}"""
 
-async def process_batch_async(
-    sources: List[Dict[str, str]], 
-    provider: Optional[str] = None,
-    num_attempts: int = 1
-) -> List[ConceptExtractionList]:
-    """
-    Process a batch of sources asynchronously
-    
-    Args:
-        sources: List of dicts with 'department' and 'college' keys
-        provider: Optional provider name
-        num_attempts: Number of attempts to make
-        
-    Returns:
-        List of ConceptExtractionList objects
-    """
-    llm = init_llm(provider)
-    responses = []
-    
-    for attempt in range(num_attempts):
-        try:
-            # Build prompt with department and college context
-            prompt = build_prompt(sources)
-            
-            # Get response from LLM
-            logger.debug(f"Sending batch of {len(sources)} sources to LLM (attempt {attempt+1}/{num_attempts})")
-            response = llm.infer(
-                prompt=prompt,
-                system_prompt=SYSTEM_PROMPT
-            )
-            
-            # Parse response
-            try:
-                # Use our helper method for better error handling
-                parsed = ConceptExtractionList.from_json(response.text)
-                
-                # Verify that all sources are accounted for and match original departments
-                # Map extraction sources back to original department names
-                original_sources = {s["department"]: s for s in sources}
-                for extraction in parsed.extractions:
-                    # Make sure the source matches one of our original departments
-                    # This maintains the mapping between extracted concepts and original department names
-                    for dept in original_sources:
-                        if extraction.source.lower() == dept.lower():
-                            extraction.source = dept  # Use the original formatting
-                            break
-                
-                responses.append(parsed)
-                logger.info(f"Successfully parsed response with {len(parsed.extractions)} extractions")
-                break  # If successful, no need for further attempts
-            except Exception as e:
-                logger.warning(f"Failed to parse response on attempt {attempt+1}: {str(e)}")
-                
-                # Try fallback parsing on last attempt
-                if attempt == num_attempts - 1:
-                    logger.info("Attempting fallback parsing")
-                    try:
-                        # First try to extract JSON from markdown code blocks
-                        if "```" in response.text:
-                            # Extract content between triple backticks
-                            match = re.search(r'```(?:\w+)?\n(.*?)```', response.text, re.DOTALL)
-                            if match:
-                                json_str = match.group(1).strip()
-                                try:
-                                    data = json.loads(json_str)
-                                    if 'extractions' in data:
-                                        # Map extraction sources back to original department names
-                                        for item in data['extractions']:
-                                            source_text = item.get('source', '')
-                                            for dept in original_sources:
-                                                if source_text.lower() == dept.lower():
-                                                    item['source'] = dept  # Use the original formatting
-                                                    break
-                                        
-                                        parsed = ConceptExtractionList(
-                                            extractions=[
-                                                ConceptExtraction(
-                                                    source=item.get('source', ''),
-                                                    concepts=item.get('concepts', [])
-                                                )
-                                                for item in data['extractions']
-                                            ]
-                                        )
-                                        responses.append(parsed)
-                                        logger.info(f"Markdown JSON parsing successful with {len(parsed.extractions)} extractions")
-                                        break
-                                except Exception as json_error:
-                                    logger.debug(f"Failed to parse extracted markdown JSON: {str(json_error)}")
-                        
-                        # If we get here, try RegEx-based extraction as fallback
-                        # Look for JSON-like patterns
-                        json_pattern = r'\{[\s\S]*?"extractions"[\s\S]*?\}'
-                        json_matches = re.findall(json_pattern, response.text)
-                        
-                        if json_matches:
-                            for json_str in json_matches:
-                                try:
-                                    data = json.loads(json_str)
-                                    if 'extractions' in data:
-                                        # Map extraction sources back to original department names
-                                        for item in data['extractions']:
-                                            source_text = item.get('source', '')
-                                            for dept in original_sources:
-                                                if source_text.lower() == dept.lower():
-                                                    item['source'] = dept  # Use the original formatting
-                                                    break
-                                                    
-                                        parsed = ConceptExtractionList(
-                                            extractions=[
-                                                ConceptExtraction(
-                                                    source=item.get('source', ''),
-                                                    concepts=item.get('concepts', [])
-                                                )
-                                                for item in data['extractions']
-                                            ]
-                                        )
-                                        responses.append(parsed)
-                                        logger.info(f"Regex JSON parsing successful with {len(parsed.extractions)} extractions")
-                                        break
-                                except Exception as json_error:
-                                    logger.debug(f"Failed to parse regex-extracted JSON: {str(json_error)}")
-                                    continue
-                        
-                        # If still no success, try to extract a list of dictionaries
-                        if not responses:
-                            # Look for list-like patterns
-                            list_pattern = r'\[\s*\{[^\[\]]*\}\s*(?:,\s*\{[^\[\]]*\}\s*)*\]'
-                            list_matches = re.findall(list_pattern, response.text)
-                            
-                            if list_matches:
-                                for list_str in list_matches:
-                                    try:
-                                        items = json.loads(list_str)
-                                        if isinstance(items, list) and all('source' in item and 'concepts' in item for item in items):
-                                            # Map extraction sources back to original department names
-                                            for item in items:
-                                                source_text = item.get('source', '')
-                                                for dept in original_sources:
-                                                    if source_text.lower() == dept.lower():
-                                                        item['source'] = dept  # Use the original formatting
-                                                        break
-                                                        
-                                            parsed = ConceptExtractionList(
-                                                extractions=[
-                                                    ConceptExtraction(
-                                                        source=item.get('source', ''),
-                                                        concepts=item.get('concepts', [])
-                                                    )
-                                                    for item in items
-                                                ]
-                                            )
-                                            responses.append(parsed)
-                                            logger.info(f"List extraction parsing successful with {len(parsed.extractions)} extractions")
-                                            break
-                                    except Exception:
-                                        continue
-                    except Exception as fallback_error:
-                        logger.error(f"Fallback parsing failed: {str(fallback_error)}")
-                
-        except Exception as e:
-            logger.warning(f"LLM inference failed on attempt {attempt+1}: {str(e)}")
-            
-    return responses
-
-def process_chunk(chunk_data: tuple[List[Dict[str, str]], str, int]) -> Dict[str, Dict[str, Any]]:
-    """
-    Process a chunk of sources in parallel
-    
-    Args:
-        chunk_data: Tuple of (sources, provider, num_attempts) where sources is a list of dicts with 'department' and 'college' keys
-        
-    Returns:
-        Dictionary mapping department names to their data (concepts and college)
-    """
-    sources, provider, num_attempts = chunk_data
-    source_data = {}
-    
-    # Pre-filter sources to remove obviously invalid departments
-    filtered_sources = [src for src in sources if is_valid_department(src["department"])]
-    logger.debug(f"Pre-filtered from {len(sources)} to {len(filtered_sources)} potential departments")
-    
-    # Create mapping of departments to colleges for this chunk
-    dept_to_college = {}
-    for src in filtered_sources:
-        dept = src["department"]
-        # Store mapping for both original and normalized department names
-        if dept not in dept_to_college:
-            dept_to_college[dept] = []
-        
-        # Add college(s) to the mapping
-        if "all_colleges" in src and src["all_colleges"]:
-            dept_to_college[dept].extend(src["all_colleges"])
-        else:
-            dept_to_college[dept].append(src["college"])
-            
-        # Also add normalized mapping
-        normalized_dept = normalize_department_name(dept)
-        if normalized_dept != dept:
-            if normalized_dept not in dept_to_college:
-                dept_to_college[normalized_dept] = []
-            if "all_colleges" in src and src["all_colleges"]:
-                dept_to_college[normalized_dept].extend(src["all_colleges"])
-            else:
-                dept_to_college[normalized_dept].append(src["college"])
-    
-    # Process batches within the chunk
-    batches = chunk(filtered_sources, Config.BATCH_SIZE)
-    for batch in batches:
-        # Run async batch processing in this process
-        loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(loop)
-        try:
-            responses = loop.run_until_complete(
-                process_batch_async(batch, provider, num_attempts)
-            )
-            
-            # Update source-concept mapping
-            for response in responses:
-                for extraction in response.extractions:
-                    # Skip sources with empty concept lists (non-departments)
-                    if not extraction.concepts:
-                        continue
-                        
-                    # Get department name and college
-                    dept_name = extraction.source
-                    # Also try normalized department name for college lookup
-                    normalized_dept = normalize_department_name(dept_name)
-                    
-                    # Try to find colleges
-                    colleges = dept_to_college.get(dept_name, [])
-                    
-                    # Try with normalized name if original not found
-                    if not colleges and normalized_dept != dept_name:
-                        colleges = dept_to_college.get(normalized_dept, [])
-                    
-                    # If still no college found, try to infer from department name
-                    if not colleges:
-                        inferred_college = infer_college_from_department(dept_name)
-                        if inferred_college != "Unknown":
-                            colleges = [inferred_college]
-                        else:
-                            colleges = ["Unknown"]
-                        
-                    # Use first college as primary
-                    primary_college = colleges[0] if colleges else "Unknown"
-                    
-                    if dept_name not in source_data:
-                        source_data[dept_name] = {
-                            "concepts": set(),
-                            "college": primary_college,
-                            "all_colleges": colleges
-                        }
-                    source_data[dept_name]["concepts"].update(extraction.concepts)
-                    
-        finally:
-            loop.close()
-            
-    return source_data
-
-async def main_async():
-    """Async main execution function"""
+def process_batch_worker(args: tuple) -> List[List[ConceptExtraction]]:
+    """Worker function for parallel processing"""
+    batch, num_attempts = args
     try:
-        # Get provider from command line args
-        provider = None
-        if len(sys.argv) > 1 and sys.argv[1] == "--provider":
-            provider = sys.argv[2]
-            logger.info(f"Using provider: {provider}")
+        prompt = build_prompt(batch)
+        
+        # Run multiple LLM attempts with different providers/models
+        all_extractions = []
+        
+        for attempt in range(num_attempts):
+            provider, model = get_random_llm_config()
+            logger.debug(f"Attempt {attempt+1}/{num_attempts} using {provider}/{model} in process {os.getpid()}")
+            
+            try:
+                # Get process-local LLM instance with specific provider/model
+                llm = init_llm(provider, model)
+                
+                logger.debug(f"Processing batch with {len(batch)} items")
+                
+                try:
+                    logger.debug("Attempting structured extraction with Pydantic model")
+                    response = llm.infer(
+                        prompt=prompt,
+                        system_prompt=SYSTEM_PROMPT,
+                        response_model=ConceptExtractionList,
+                    )
+                    logger.debug(f"Successfully extracted {len(response.text.extractions)} concepts with structured validation")
+                    all_extractions.append(response.text.extractions)
+                    
+                except Exception as e:
+                    if "insufficient_quota" in str(e):
+                        logger.error(f"API quota exceeded for provider {provider}")
+                        raise QuotaExceededError(f"API quota exceeded for provider {provider}")
+                    
+                    # Handle JSON validation errors specifically
+                    if "Invalid JSON" in str(e) or "JSONDecodeError" in str(e) or "model_validate_json" in str(e):
+                        logger.error(f"JSON validation error: {str(e)}")
+                        
+                        # Try a simpler approach without the Pydantic model
+                        try:
+                            logger.debug("Attempting to extract concepts without structured validation")
+                            simple_response = llm.infer(
+                                prompt=prompt,
+                                system_prompt=SYSTEM_PROMPT,
+                            )
+                            
+                            if logger.isEnabledFor(logging.DEBUG):
+                                logger.debug(f"Raw response: {simple_response.text[:200]}...")
+                            
+                            # Try to manually extract the JSON
+                            import json
+                            
+                            # Function to find balanced JSON objects
+                            def find_balanced_json(text):
+                                """Find balanced JSON objects in text"""
+                                results = []
+                                stack = []
+                                start_indices = []
+                                
+                                for i, char in enumerate(text):
+                                    if char == '{':
+                                        if not stack:  # Start of a new object
+                                            start_indices.append(i)
+                                        stack.append('{')
+                                    elif char == '}':
+                                        if stack and stack[-1] == '{':
+                                            stack.pop()
+                                            if not stack:  # End of an object
+                                                start = start_indices.pop()
+                                                results.append(text[start:i+1])
+                                
+                                return results
+                            
+                            # Look for JSON-like structures in the response
+                            matches = find_balanced_json(simple_response.text)
+                            logger.debug(f"Found {len(matches)} potential JSON objects in response")
+                            
+                            for i, match in enumerate(matches):
+                                try:
+                                    if logger.isEnabledFor(logging.DEBUG):
+                                        logger.debug(f"Attempting to parse JSON object {i+1}: {match[:100]}...")
+                                    data = json.loads(match)
+                                    if 'extractions' in data:
+                                        # Convert to ConceptExtraction objects
+                                        extractions = []
+                                        for item in data['extractions']:
+                                            try:
+                                                extraction = ConceptExtraction(
+                                                    source=item.get('source', ''),
+                                                    concepts=item.get('concepts', [])
+                                                )
+                                                extractions.append(extraction)
+                                            except Exception as item_error:
+                                                logger.warning(f"Failed to parse extraction item: {str(item_error)}")
+                                        
+                                        if extractions:
+                                            logger.debug(f"Successfully extracted {len(extractions)} concepts manually")
+                                            all_extractions.append(extractions)
+                                            break
+                                except Exception as json_error:
+                                    logger.debug(f"Failed to parse JSON object {i+1}: {str(json_error)}")
+                                    continue
+                            
+                            # If still unsuccessful, add an empty list for this attempt
+                            if len(all_extractions) <= attempt:
+                                all_extractions.append([])
+                                        
+                        except Exception as manual_error:
+                            logger.error(f"Failed manual extraction attempt: {str(manual_error)}")
+                            # Add an empty list to maintain attempt count
+                            all_extractions.append([])
+                    
+                    # If all attempts fail for this try, add an empty list
+                    if len(all_extractions) <= attempt:
+                        all_extractions.append([])
+            
+            except Exception as e:
+                logger.error(f"LLM run failed: {str(e)}")
+                # Add an empty list to maintain attempt count
+                all_extractions.append([])
+                
+        return all_extractions
+            
+    except Exception as e:
+        logger.error(f"Error in batch processing: {str(e)}")
+        return []
 
-        logger.info("Starting concept extraction")
+def combine_extractions(extractions_list: List[List[ConceptExtraction]]) -> Dict[str, Dict[str, int]]:
+    """
+    Combine extractions from multiple LLM runs and count concept frequencies
+    
+    Args:
+        extractions_list: List of lists of extractions from multiple LLM runs
+        
+    Returns:
+        Dictionary mapping sources to concepts and their occurrence counts
+    """
+    combined_results = {}
+    total_extractions = 0
+    
+    # Process each list of extractions
+    for extractions in extractions_list:
+        # Process each extraction in the list
+        for extraction in extractions:
+            source = extraction.source
+            total_extractions += len(extraction.concepts)
+            
+            # Initialize source in combined results if not present
+            if source not in combined_results:
+                combined_results[source] = {}
+                
+            # Update concept counts for this source
+            for concept in extraction.concepts:
+                concept_lower = concept.lower()
+                if concept_lower not in combined_results[source]:
+                    combined_results[source][concept_lower] = 0
+                combined_results[source][concept_lower] += 1
+    
+    logger.debug(f"Combined {total_extractions} total concept extractions across all LLM runs")
+    return combined_results
+
+def filter_concepts_by_agreement(
+    combined_results: Dict[str, Dict[str, int]], 
+    agreement_threshold: int
+) -> Dict[str, set]:
+    """
+    Filter concepts based on agreement threshold across multiple LLM runs
+    
+    Args:
+        combined_results: Dictionary mapping sources to concepts and their occurrence counts
+        agreement_threshold: Minimum number of times a concept must appear
+        
+    Returns:
+        Dictionary mapping sources to filtered concepts
+    """
+    filtered_results = {}
+    filtered_count = 0
+    total_count = 0
+    
+    for source, concepts in combined_results.items():
+        # Keep only concepts that meet the agreement threshold
+        total_count += len(concepts)
+        filtered_concepts = {
+            concept for concept, count in concepts.items() 
+            if count >= agreement_threshold
+        }
+        filtered_count += len(filtered_concepts)
+        
+        # Add filtered concepts to results
+        if filtered_concepts:
+            filtered_results[source] = filtered_concepts
+    
+    logger.debug(f"Filtered {filtered_count} concepts from {total_count} total (threshold={agreement_threshold})")
+    return filtered_results
+
+def process_batches_parallel(
+    batches: List[List[Dict[str, Any]]],
+    num_attempts: int = Config.NUM_LLM_ATTEMPTS
+) -> Dict[str, Dict[str, Any]]:
+    """Process batches in parallel using ProcessPoolExecutor and filter results"""
+    all_results = {}
+    
+    logger.info(f"Processing {len(batches)} batches using {Config.NUM_WORKERS} workers")
+    
+    with ProcessPoolExecutor(max_workers=Config.NUM_WORKERS) as executor:
+        futures = [
+            executor.submit(process_batch_worker, (batch, num_attempts))
+            for batch in batches
+        ]
+        
+        for i, future in enumerate(tqdm(futures, desc="Processing batches")):
+            try:
+                # Get extractions from all LLM runs for this batch
+                batch_extractions = future.result()
+                
+                if batch_extractions:
+                    # Combine and filter the extractions
+                    combined_results = combine_extractions(batch_extractions)
+                    filtered_results = filter_concepts_by_agreement(
+                        combined_results, Config.CONCEPT_AGREEMENT_THRESH
+                    )
+                    
+                    # Merge into all_results
+                    for source, concepts in filtered_results.items():
+                        if source not in all_results:
+                            all_results[source] = {
+                                "concepts": set(),
+                                "college": ""  # Will be filled later
+                            }
+                        
+                        all_results[source]["concepts"].update(concepts)
+                
+                # Apply cooldown periodically
+                if i > 0 and i % Config.COOLDOWN_FREQUENCY == 0:
+                    logger.debug(f"Applying cooldown for {Config.COOLDOWN_PERIOD} seconds after {i} batches")
+                    time.sleep(Config.COOLDOWN_PERIOD)
+                    
+            except Exception as e:
+                logger.error(f"Error processing batch {i}: {str(e)}")
+                continue
+                
+    logger.info(f"Extracted concepts for {len(all_results)} sources")
+    return all_results
+
+def parse_args():
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(description="Extract academic concepts from department names")
+    
+    # Logging options
+    parser.add_argument("--log-level", type=str, choices=["DEBUG", "INFO", "WARNING", "ERROR"],
+                        default=Config.LOG_LEVEL, help="Set logging level")
+    parser.add_argument("--log-file", type=str, help="Log to specified file")
+    
+    # Processing options
+    parser.add_argument("--workers", type=int, default=Config.NUM_WORKERS,
+                        help="Number of parallel workers")
+    parser.add_argument("--batch-size", type=int, default=Config.BATCH_SIZE,
+                        help="Batch size for processing")
+    parser.add_argument("--attempts", type=int, default=Config.NUM_LLM_ATTEMPTS,
+                        help="Number of LLM attempts per batch")
+    
+    # Input/output options
+    parser.add_argument("--input", type=str, default=Config.INPUT_FILE,
+                        help="Input file with department names")
+    parser.add_argument("--output", type=str, default=Config.OUTPUT_FILE,
+                        help="Output file for extracted concepts")
+    
+    return parser.parse_args()
+
+def main():
+    """Main execution function"""
+    try:
+        # Parse command line arguments
+        args = parse_args()
+        
+        # Update config with command line arguments
+        Config.LOG_LEVEL = args.log_level
+        Config.LOG_FILE = args.log_file
+        Config.NUM_WORKERS = args.workers
+        Config.BATCH_SIZE = args.batch_size
+        Config.NUM_LLM_ATTEMPTS = args.attempts
+        Config.INPUT_FILE = args.input
+        Config.OUTPUT_FILE = args.output
+        
+        # Derive metadata and output file paths based on input path
+        input_path = Path(Config.INPUT_FILE)
+        input_dir = input_path.parent
+        
+        # Update metadata file path
+        if "s0_department_names" in input_path.name:
+            Config.METADATA_FILE = os.path.join(input_dir, "lv1_s0_metadata.json")
+        
+        # Update output file path if necessary
+        if Config.OUTPUT_FILE == os.path.join(Config.BASE_DIR, "data/lv1/raw/lv1_s1_extracted_concepts.txt"):
+            # Using default path, derive from input path
+            output_filename = input_path.name.replace("s0_department_names", "s1_extracted_concepts")
+            Config.OUTPUT_FILE = os.path.join(input_dir, output_filename)
+        
+        # Update metadata output path
+        Config.META_FILE = Config.OUTPUT_FILE.replace("_extracted_concepts.txt", "_metadata.json")
+        
+        # Configure advanced logging if needed
+        if Config.LOG_FILE or Config.LOG_LEVEL != "INFO":
+            global logger
+            logger = setup_logging("lv1.s1", log_level=Config.LOG_LEVEL, log_file=Config.LOG_FILE)
+            
+        logger.info(f"Starting concept extraction with level={Config.LOG_LEVEL}, workers={Config.NUM_WORKERS}")
+        logger.info(f"Input: {Config.INPUT_FILE}")
+        logger.info(f"Output: {Config.OUTPUT_FILE}")
 
         # Read input sources and metadata
         with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
@@ -537,38 +667,46 @@ async def main_async():
             metadata = json.load(f)
         level0_to_departments = metadata.get("level0_to_departments", {})
         
-        # Create department to college mapping
-        # Store a list of colleges for each department to handle multi-college departments
+        # Create mappings:
+        # 1. dept_original_form: maps normalized department names to their original form
+        # 2. department_to_college: maps original department names to colleges
+        # 3. norm_dept_to_college: maps normalized department names to colleges
+        dept_original_form = {}
         department_to_college = {}
+        norm_dept_to_college = {}
+        
+        # First create mappings from original department names to colleges
         for college, departments in level0_to_departments.items():
             for dept in departments:
+                # Store original department to college mapping
                 if dept not in department_to_college:
                     department_to_college[dept] = []
-                department_to_college[dept].append(college)
+                if college not in department_to_college[dept]:
+                    department_to_college[dept].append(college)
+                
+                # Create normalized form mapping
+                norm_dept = normalize_department_name(dept.lower())
+                
+                # Map normalized form to original form (for reference)
+                dept_original_form[norm_dept] = dept
+                
+                # Map normalized department to college
+                if norm_dept not in norm_dept_to_college:
+                    norm_dept_to_college[norm_dept] = []
+                if college not in norm_dept_to_college[norm_dept]:
+                    norm_dept_to_college[norm_dept].append(college)
         
-        # Also create normalized department mappings
-        normalized_department_to_college = {}
-        for dept, colleges in department_to_college.items():
-            norm_dept = normalize_department_name(dept)
-            if norm_dept != dept:
-                if norm_dept not in normalized_department_to_college:
-                    normalized_department_to_college[norm_dept] = []
-                normalized_department_to_college[norm_dept].extend(colleges)
+        logger.info(f"Created college mappings for {len(department_to_college)} departments and {len(norm_dept_to_college)} normalized departments")
         
-        # Merge the normalized mappings back into the main mapping
-        for dept, colleges in normalized_department_to_college.items():
-            if dept not in department_to_college:
-                department_to_college[dept] = []
-            department_to_college[dept].extend(colleges)
-        
-        # Create a mapping from normalized form to original form to keep the best representation
+        # Create a mapping from normalized forms of raw sources to original forms
+        # This helps capture actual department names from the raw input
         normalized_to_original = {}
         for source in raw_sources:
             if not source:  # Skip empty lines
                 continue
                 
-            # Normalize the text
-            norm_source = normalize_text(source)
+            # Normalize and lowercase the source for consistent matching
+            norm_source = normalize_department_name(source.lower())
             
             # If this normalized form already exists, keep the shorter or more readable version
             if norm_source in normalized_to_original:
@@ -583,80 +721,128 @@ async def main_async():
         
         # Get the unique original forms with their college context
         sources = []
-        for dept in normalized_to_original.values():
-            # Try to find college using normalized department name for lookup
-            normalized_dept = normalize_department_name(dept)
-            colleges = None
+        for norm_source, orig_source in normalized_to_original.items():
+            colleges = []
             
-            # First try with original name
-            if dept in department_to_college:
-                colleges = department_to_college[dept]
-            # Then try with normalized name
-            elif normalized_dept in department_to_college:
-                colleges = department_to_college[normalized_dept]
-            else:
-                # Try to infer college from department name
-                inferred_college = infer_college_from_department(dept)
+            # Check if the normalized form exists in our normalized department mapping
+            if norm_source in norm_dept_to_college:
+                colleges = norm_dept_to_college[norm_source]
+                logger.debug(f"Found college mapping for normalized '{norm_source}': {colleges}")
+            
+            # If not found, check if the original form exists in our direct department mapping
+            elif orig_source in department_to_college:
+                colleges = department_to_college[orig_source]
+                logger.debug(f"Found college mapping for original '{orig_source}': {colleges}")
+            
+            # If still not found, check if removing "department of" prefix helps
+            elif norm_source.startswith("department of "):
+                shorter_norm = norm_source[len("department of "):]
+                if shorter_norm in norm_dept_to_college:
+                    colleges = norm_dept_to_college[shorter_norm]
+                    logger.debug(f"Found college mapping for shortened '{shorter_norm}': {colleges}")
+            
+            # If still not found, try to infer from keywords
+            if not colleges:
+                inferred_college = infer_college_from_department(orig_source)
                 if inferred_college != "Unknown":
                     colleges = [inferred_college]
+                    logger.debug(f"Inferred college for '{orig_source}': {inferred_college}")
                 else:
                     colleges = ["Unknown"]
-                
-            # For multiple colleges, use the first one for simplicity
-            # The full list will be preserved in the metadata
+                    logger.debug(f"No college mapping found for '{orig_source}', using 'Unknown'")
+            
+            # For multiple colleges, use the first one for simplicity in processing
+            # The full list is preserved in all_colleges for metadata
             primary_college = colleges[0] if colleges else "Unknown"
             
             sources.append({
-                "department": dept,
+                "department": orig_source,
                 "college": primary_college,
-                "all_colleges": colleges
+                "all_colleges": colleges,
+                "normalized_department": norm_source  # Store normalized form for reference
             })
+        
         logger.info(f"Normalized and deduplicated to {len(sources)} unique department names with college context")
         
-        # Perform initial filtering
+        # Perform initial filtering to remove obviously invalid departments
         pre_filtered = [s for s in sources if is_valid_department(s["department"])]
         logger.info(f"Pre-filtered to {len(pre_filtered)} potential departments (removed {len(sources) - len(pre_filtered)} invalid entries)")
 
-        # Split sources into chunks for parallel processing
-        source_chunks = list(chunk(pre_filtered, Config.CHUNK_SIZE))
-        chunk_data = [(chunk, provider, Config.NUM_LLM_ATTEMPTS) for chunk in source_chunks]
+        # Group entries by college for better context
+        entries_by_college = {}
+        for entry in pre_filtered:
+            college = entry["college"]
+            if college not in entries_by_college:
+                entries_by_college[college] = []
+            entries_by_college[college].append(entry)
         
-        # Process chunks in parallel
-        department_data = {}
-        with ProcessPoolExecutor(max_workers=Config.MAX_WORKERS) as executor:
-            futures = [
-                executor.submit(process_chunk, data)
-                for data in chunk_data
-            ]
-            
-            # Collect results
-            for future in tqdm(futures, desc="Processing chunks"):
-                chunk_results = future.result()
-                department_data.update(chunk_results)
+        # Create batches for each college separately to maintain context
+        batches = []
+        for college, college_entries in entries_by_college.items():
+            college_batches = chunk(college_entries, Config.BATCH_SIZE)
+            batches.extend(college_batches)
+            logger.debug(f"Created {len(college_batches)} batches for college: {college}")
+        
+        logger.info(f"Split into {len(batches)} batches of size up to {Config.BATCH_SIZE}, grouped by college")
+        
+        # Process batches in parallel and get filtered results
+        department_data = process_batches_parallel(batches, Config.NUM_LLM_ATTEMPTS)
+        logger.info(f"Processed {len(department_data)} departments from {len(batches)} batches")
 
-        # Create a clean, consolidated source concept mapping
-        source_concept_mapping = {
-            dept: data["concepts"]
-            for dept, data in department_data.items()
-        }
-        
-        # Make sure we have the correct college for each department
+        # Add college information to department data, ensuring correct mapping
         for dept, data in department_data.items():
-            # Try to find the college using both original and normalized department names
-            normalized_dept = normalize_department_name(dept)
+            # Normalize department name for consistent lookup
+            norm_dept = normalize_department_name(dept.lower())
             
-            if dept in department_to_college:
-                # Use the original mapping if available
-                data["college"] = department_to_college[dept]
-            elif normalized_dept in department_to_college:
-                # Use normalized name for lookup
-                data["college"] = department_to_college[normalized_dept]
-            elif data["college"] == "Unknown":
-                # Try to infer college from department name
+            # Find colleges using multiple lookup strategies
+            colleges = []
+            
+            # First, try to find by looking up the normalized department name
+            if norm_dept in norm_dept_to_college:
+                colleges = norm_dept_to_college[norm_dept]
+                logger.debug(f"Found colleges for '{dept}' using normalized lookup: {colleges}")
+            
+            # Next, try with original department name
+            elif dept in department_to_college:
+                colleges = department_to_college[dept]
+                logger.debug(f"Found colleges for '{dept}' using direct lookup: {colleges}")
+            
+            # Try to find in our sources list (most reliable since it was used for batching)
+            if not colleges:
+                for source in sources:
+                    if source["department"] == dept or source["normalized_department"] == norm_dept:
+                        colleges = source["all_colleges"]
+                        logger.debug(f"Found colleges for '{dept}' in sources list: {colleges}")
+                        break
+            
+            # If still no college found, try with department prefix variations
+            if not colleges and not norm_dept.startswith("department of "):
+                prefixed_norm = "department of " + norm_dept
+                if prefixed_norm in norm_dept_to_college:
+                    colleges = norm_dept_to_college[prefixed_norm]
+                    logger.debug(f"Found colleges for '{dept}' using prefixed lookup: {colleges}")
+            
+            # If still not found, try without department prefix
+            if not colleges and norm_dept.startswith("department of "):
+                unprefixed_norm = norm_dept[len("department of "):]
+                if unprefixed_norm in norm_dept_to_college:
+                    colleges = norm_dept_to_college[unprefixed_norm]
+                    logger.debug(f"Found colleges for '{dept}' using unprefixed lookup: {colleges}")
+            
+            # Last resort - infer from keywords
+            if not colleges:
                 inferred_college = infer_college_from_department(dept)
                 if inferred_college != "Unknown":
-                    data["college"] = inferred_college
-            # Keep existing college value if neither matches
+                    colleges = [inferred_college]
+                    logger.debug(f"Inferred college for '{dept}': {inferred_college}")
+                else:
+                    colleges = ["Unknown"]
+                    logger.debug(f"No college found for '{dept}', using 'Unknown'")
+            
+            # Use first college as primary for data structure
+            primary_college = colleges[0] if colleges else "Unknown"
+            data["college"] = primary_college
+            data["all_colleges"] = colleges
 
         # Extract all concepts and apply frequency threshold
         all_concepts = [
@@ -665,11 +851,7 @@ async def main_async():
             for concept in dept_data["concepts"]
         ]
         concept_counts = Counter(all_concepts)
-        verified_concepts = sorted([
-            concept
-            for concept, count in concept_counts.items()
-            if count >= Config.KW_APPEARANCE_THRESH
-        ])
+        verified_concepts = sorted([concept for concept in concept_counts])
         
         logger.info(f"Extracted {len(verified_concepts)} verified concepts")
         logger.info(f"From {len(department_data)} valid academic departments")
@@ -684,14 +866,20 @@ async def main_async():
             for concept in verified_concepts:
                 f.write(f"{concept}\n")
 
-        # Get LLM info for metadata
-        llm = init_llm(provider)
+        # Create clean, consolidated source concept mapping
+        source_concept_mapping = {
+            dept: sorted(list(data["concepts"]))
+            for dept, data in department_data.items()
+        }
         
-        # Get model name based on provider
-        if provider == Provider.GEMINI:
-            model_name = GEMINI_MODELS["pro"]  # Use the same model name from initialization
-        else:
-            model_name = OPENAI_MODELS["mini"]  # Use the same model name from initialization
+        # Create consistent college names with "college of" prefix
+        def format_college_name(college):
+            if not college:
+                return "Unknown"
+            college_lower = college.lower()
+            if not college_lower.startswith("college of "):
+                return f"college of {college_lower}"
+            return college_lower
         
         with open(Config.META_FILE, "w", encoding="utf-8") as f:
             json.dump(
@@ -703,50 +891,21 @@ async def main_async():
                         "valid_departments_count": len(department_data),
                         "output_count": len(verified_concepts),
                         "batch_size": Config.BATCH_SIZE,
-                        "chunk_size": Config.CHUNK_SIZE,
-                        "num_workers": Config.MAX_WORKERS,
+                        "num_workers": Config.NUM_WORKERS,
                         "llm_attempts": Config.NUM_LLM_ATTEMPTS,
-                        "concept_threshold": Config.KW_APPEARANCE_THRESH,
-                        "provider": provider or Provider.OPENAI,
-                        "model": model_name,
-                        "temperature": llm.temperature,
+                        "concept_agreement_threshold": Config.CONCEPT_AGREEMENT_THRESH,
+                        "providers_and_models": "random selection of OpenAI default/mini and Gemini default/mini",
+                        "temperature": 0.3,
                     },
-                    "source_concept_mapping": {
-                        source: sorted(list(concepts))
-                        for source, concepts in source_concept_mapping.items()
-                    },
+                    "source_concept_mapping": source_concept_mapping,
                     "concept_frequencies": {
                         concept: count 
                         for concept, count in concept_counts.items()
-                        if count >= Config.KW_APPEARANCE_THRESH
                     },
-                    "college_concept_mapping": {
-                        college: sorted(list(set(
-                            concept
-                            for dept, data in department_data.items()
-                            if data["college"] == college  # This assumes college is a string
-                            for concept in data["concepts"]
-                        )))
-                        # Get unique primary colleges as strings (not lists)
-                        for college in set(
-                            data["college"] if isinstance(data["college"], str) else data["college"][0] if data["college"] else "Unknown" 
-                            for data in department_data.values()
-                        )
-                    },
-                    # Add department_to_college mapping to preserve relationship
-                    "department_to_college": {
-                        dept: data["college"] if isinstance(data["college"], str) else data["college"][0] if data["college"] else "Unknown"
-                        for dept, data in department_data.items()
-                    },
-                    # Add full mapping with all colleges
-                    "department_to_all_colleges": {
-                        dept: data.get("all_colleges", [data["college"]]) if isinstance(data.get("all_colleges"), list) else [data["college"]]
-                        for dept, data in department_data.items()
-                    },
-                    # Save full department data with concepts and college
+                    # Save full department data with concepts and colleges
                     "department_data": {
-                        dept: {
-                            "college": data["college"],
+                        normalize_department_name(dept): {
+                            "college": [format_college_name(c) for c in (data["all_colleges"] if isinstance(data["all_colleges"], list) else [data["college"]])],
                             "concepts": sorted(list(data["concepts"]))
                         }
                         for dept, data in department_data.items()
@@ -764,27 +923,38 @@ async def main_async():
                 # Write header
                 f.write("department,college,concept\n")
                 
+                # Create a set to track unique entries and avoid duplicates
+                unique_entries = set()
+                
                 # Write data rows
                 for dept, data in department_data.items():
-                    college = data["college"]
-                    # Make sure college is a string, not a list
-                    if isinstance(college, list):
-                        college = college[0] if college else "Unknown"
+                    normalized_dept = normalize_department_name(dept)
+                    colleges = data["all_colleges"] if "all_colleges" in data else [data["college"]]
                     
-                    for concept in sorted(list(data["concepts"])):
-                        # Escape commas and quotes in fields
-                        dept_str = dept.replace('"', '""')
-                        college_str = college.replace('"', '""')
-                        concept_str = concept.replace('"', '""')
+                    for college in colleges:
+                        # Format college name consistently with "college of" prefix
+                        college_fmt = format_college_name(college)
                         
-                        # Add quotes if the field contains commas
-                        dept_csv = f'"{dept_str}"' if ',' in dept else dept_str
-                        college_csv = f'"{college_str}"' if ',' in college else college_str
-                        concept_csv = f'"{concept_str}"' if ',' in concept else concept_str
-                        
-                        f.write(f"{dept_csv},{college_csv},{concept_csv}\n")
+                        for concept in sorted(list(data["concepts"])):
+                            # Create a unique key to avoid duplicates
+                            entry_key = (normalized_dept, college_fmt, concept)
+                            if entry_key in unique_entries:
+                                continue
+                            unique_entries.add(entry_key)
+                            
+                            # Escape commas and quotes in fields
+                            dept_str = normalized_dept.replace('"', '""')
+                            college_str = college_fmt.replace('"', '""')
+                            concept_str = concept.replace('"', '""')
+                            
+                            # Add quotes if the field contains commas
+                            dept_csv = f'"{dept_str}"' if ',' in dept_str else dept_str
+                            college_csv = f'"{college_str}"' if ',' in college_str else college_str
+                            concept_csv = f'"{concept_str}"' if ',' in concept_str else concept_str
+                            
+                            f.write(f"{dept_csv},{college_csv},{concept_csv}\n")
         
-            logger.info(f"Department-concept-college relationships saved to {csv_file}")
+            logger.info(f"Department-concept-college relationships saved to {csv_file} with {len(unique_entries)} unique entries")
         except Exception as e:
             logger.error(f"Failed to write CSV file: {str(e)}")
 
@@ -793,14 +963,6 @@ async def main_async():
     except Exception as e:
         logger.error(f"An error occurred: {str(e)}", exc_info=True)
         raise
-
-def main():
-    """Main execution function"""
-    loop = asyncio.get_event_loop()
-    try:
-        loop.run_until_complete(main_async())
-    finally:
-        loop.close()
 
 if __name__ == "__main__":
     main()

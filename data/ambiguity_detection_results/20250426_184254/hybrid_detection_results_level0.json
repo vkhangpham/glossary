@@ -1,0 +1,79 @@
+{
+  "timestamp": "2025-04-26T18:43:01.323031",
+  "detector": "HybridAmbiguityDetector (Improved)",
+  "level_filter": 0,
+  "parameters": {
+    "model_name": "all-MiniLM-L6-v2",
+    "min_resources": 3,
+    "use_radial_detector": false,
+    "dbscan_params": {
+      "eps": 0.4,
+      "min_samples": 2
+    },
+    "radial_params": {}
+  },
+  "total_ambiguous_terms": 2,
+  "detailed_results": {
+    "nursing": {
+      "term": "nursing",
+      "level": 0,
+      "detected_by": {
+        "parent_context": false,
+        "dbscan": true,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 2,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 2,
+            "1": 2
+          },
+          "level": 0,
+          "silhouette_score": 0.5039682984352112,
+          "tfidf_confidence": 0.8939126539700463,
+          "is_low_confidence": false
+        }
+      },
+      "confidence": 0.0,
+      "confidence_level": "low"
+    },
+    "law": {
+      "term": "law",
+      "level": 0,
+      "detected_by": {
+        "parent_context": false,
+        "dbscan": true,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 12,
+          "valid_snippets": 12,
+          "num_clusters": 3,
+          "noise_points": 3,
+          "cluster_sizes": {
+            "0": 4,
+            "1": 2,
+            "2": 3
+          },
+          "level": 0,
+          "silhouette_score": 0.6254425048828125,
+          "tfidf_confidence": 0.24473711500596007,
+          "is_low_confidence": false
+        }
+      },
+      "confidence": 0.0,
+      "confidence_level": "low"
+    }
+  }
+}

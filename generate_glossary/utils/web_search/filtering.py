@@ -6,6 +6,8 @@ import ast # Added for safe literal evaluation
 from typing import List, Dict, Any, Optional, Union, Callable, Tuple, Set
 from collections import Counter
 import logging
+import os
+from datetime import datetime
 
 # NLP and Graph Libraries
 import networkx as nx
@@ -61,7 +63,9 @@ class FilterConfig:
                  system_prompt: Optional[str] = None,
                  binary_system_prompt: Optional[str] = None,
                  scoring_fn: Optional[Callable] = None,
-                 clean_item_fn: Optional[Callable] = None):
+                 clean_item_fn: Optional[Callable] = None,
+                 min_score_for_llm: Optional[float] = None, # Minimum heuristic score to send to LLM
+                 model_type: Optional[str] = "default"): # LLM model type (e.g., default, pro)
         self.quality_threshold = quality_threshold
         self.llm_validation_threshold = llm_validation_threshold
         self.pre_filter_threshold = pre_filter_threshold
@@ -73,24 +77,38 @@ class FilterConfig:
         self.binary_system_prompt = binary_system_prompt
         self.scoring_fn = scoring_fn
         self.clean_item_fn = clean_item_fn
+        self.min_score_for_llm = min_score_for_llm # Store the minimum score
+        self.model_type = model_type # Store the model type
 
 
-def init_llm(provider: Optional[str] = None) -> BaseLLM:
+def init_llm(provider: Optional[str] = None, model_type: Optional[str] = "default") -> BaseLLM:
     """
-    Initialize LLM with specified provider
+    Initialize LLM with specified provider and model type.
     
     Args:
-        provider: Optional provider name
+        provider: Optional provider name (e.g., 'gemini', 'openai').
+        model_type: Optional model type (e.g., 'default', 'pro', 'mini', 'nano').
         
     Returns:
-        LLM instance
+        LLM instance.
     """
     if not provider:
         provider = Provider.GEMINI  # Default to Gemini
         
+    # Determine the model dictionary and the requested model
+    if provider == Provider.GEMINI:
+        model_map = GEMINI_MODELS
+    elif provider == Provider.OPENAI:
+        model_map = OPENAI_MODELS
+    else:
+        raise ValueError(f"Unsupported LLM provider: {provider}")
+        
+    # Get the specific model or fall back to default if type is invalid/not found
+    model_name = model_map.get(model_type, model_map["default"])
+    
     return LLMFactory.create_llm(
         provider=provider,
-        model=GEMINI_MODELS["default"] if provider == Provider.GEMINI else OPENAI_MODELS["default"],
+        model=model_name,
         temperature=0.3
     )
 
@@ -121,16 +139,19 @@ async def filter_lists(
     extracted_lists: List[Dict[str, Any]],
     context_term: str,
     config: FilterConfig,
-    logger: Optional[logging.Logger] = None
+    logger: Optional[logging.Logger] = None,
+    save_debug: bool = False  # Set to False by default to avoid memory issues
 ) -> Tuple[List[List[str]], List[Dict[str, Any]], List[List[str]]]:
     """
-    Filter lists using community detection based on shared cleaned content.
+    Improved filtering with minimal processing but some smart heuristics
+    before sending lists to the LLM.
 
     Args:
         extracted_lists: List of dictionaries with items and metadata
         context_term: The related term for context
         config: Filtering configuration
         logger: Optional logger
+        save_debug: Whether to save intermediate results for debugging (default: False)
 
     Returns:
         Tuple containing:
@@ -138,25 +159,49 @@ async def filter_lists(
         - llm_candidates_actual: The subset of lists sent to the LLM.
         - llm_results_processed: The processed results from the LLM for the candidates.
     """
+    # Directory for saving debug information
+    debug_dir = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))), 
+                           "data", "debug", "filtering")
+    
+    # Only create directory if debug saving is enabled
+    if save_debug:
+        os.makedirs(debug_dir, exist_ok=True)
+        # Create timestamp for unique filenames
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
     if not extracted_lists:
-        # Return empty structures matching the new return type
+        # Return empty structures matching the return type
+        if logger:
+            logger.info(f"⚠️ No lists to filter for '{context_term}'")
         return [], [], []
         
     if logger:
-        logger.info(f"Starting filtering for {context_term}. Received {len(extracted_lists)} raw lists.")
+        logger.info(f"🔄 Starting improved filtering for '{context_term}'. Received {len(extracted_lists)} raw lists.")
 
-    # Stage 1: Clean, Score, and Pre-filter
-    scored_cleaned_lists_raw = [] # Store potentially duplicated lists first
+    start_time = time.time()
     
-    for list_data in extracted_lists:
+    # Save raw extracted lists for analysis only if debug enabled
+    if save_debug:
+        raw_lists_file = os.path.join(debug_dir, f"{context_term}_raw_lists_{timestamp}.json")
+        with open(raw_lists_file, 'w') as f:
+            json.dump(extracted_lists, f, indent=2, default=str)
+        if logger:
+            logger.info(f"💾 Saved raw lists to {raw_lists_file}")
+    
+    # Stage 1: Basic Cleaning
+    logger.debug(f"🧹 Stage 1: Cleaning {len(extracted_lists)} raw lists for '{context_term}'")
+    cleaned_lists_raw = [] # Store potentially duplicated lists first
+    
+    for list_idx, list_data in enumerate(extracted_lists):
         original_items = list_data["items"] # Keep original for reference if needed
         metadata = list_data.get("metadata", {})
+        source_url = metadata.get("url", "unknown_url")
         
         # Skip if no items initially
         if not original_items:
             continue
             
-        # Clean items first using the provided clean function
+        # Clean items using the provided clean function or basic cleaning
         cleaned_items = []
         if config.clean_item_fn:
             cleaned_items = [config.clean_item_fn(item) for item in original_items]
@@ -165,9 +210,13 @@ async def filter_lists(
         else:
             # Basic cleaning (apply if no specific function provided)
             for item in original_items:
+                # Remove numbering, URLs, and excessive whitespace
                 item = re.sub(r'\s*\(\d+\).*$', '', item)
+                item = re.sub(r'\s*\d+\.\s*', '', item)
                 item = re.sub(r'\s*\d+\s*$', '', item)
                 item = re.sub(r'http\S+', '', item)
+                # Remove trailing punctuation
+                item = re.sub(r'[,:;]+$', '', item)
                 item = ' '.join(item.split())
                 if item:
                     cleaned_items.append(item)
@@ -175,204 +224,234 @@ async def filter_lists(
         # Skip if too few items remain after cleaning
         if len(cleaned_items) < 3:
             if logger:
-                 logger.debug(f"Skipping list due to < 3 items after cleaning: {original_items}")
+                 logger.debug(f"👎 List {list_idx} skipped: too few items after cleaning ({len(cleaned_items)} < 3)")
             continue
-            
-        # Now, score the *cleaned* list using the provided scoring function or fallback
-        quality_score = 0.0
-        if config.scoring_fn:
-            # Pass cleaned items to the scoring function
-            quality_score = config.scoring_fn(cleaned_items, metadata, context_term)
-        else:
-            # Fallback scoring
-            keyword_ratio = metadata.get("keyword_ratio", 0)
-            pattern_ratio = metadata.get("pattern_ratio", 0)
-            non_term_ratio = metadata.get("non_term_ratio", 1)
-            nav_score = metadata.get("structure_analysis", {}).get("nav_score", 1)
-            quality_score = (keyword_ratio * 0.4 + pattern_ratio * 0.3 + (1 - non_term_ratio) * 0.2 + (1 - nav_score) * 0.1)
-            if logger:
-                 # Change level to DEBUG as it's not a critical error
-                 logger.debug("Using fallback scoring logic. Provide config.scoring_fn for better results.")
         
-        # Store list with quality score and cleaned items temporarily
-        scored_cleaned_lists_raw.append({
+        # Pre-filtering: Identify likely research areas using heuristics
+        is_likely_research_area_list = False
+        
+        # Heuristic 1: List items contain term-specific research keywords
+        context_term_lower = context_term.lower()
+        research_keywords = [
+            f"{context_term_lower}",
+            "research", "theory", "experimental", "applied", "computational",
+            "quantum", "theoretical", "physics", "chemistry", "biology", "science",
+            "engineering", "mathematics", "computer", "technology", "systems"
+        ]
+        
+        term_keywords = []
+        if context_term_lower == "physics":
+            term_keywords = ["quantum", "particle", "nuclear", "astrophysics", "relativity", 
+                            "cosmology", "condensed matter", "optics", "atomic"]
+        elif context_term_lower == "biology":
+            term_keywords = ["molecular", "cellular", "genomics", "ecology", "evolution", 
+                            "microbiology", "genetics", "biochemistry", "neuroscience"]
+        elif context_term_lower == "computer science":
+            term_keywords = ["algorithm", "artificial intelligence", "machine learning", 
+                            "data science", "systems", "networking", "security", "graphics"]
+        
+        research_keywords.extend(term_keywords)
+        
+        # Count keyword matches in the list
+        keyword_matches = 0
+        for item in cleaned_items:
+            item_lower = item.lower()
+            if any(keyword in item_lower for keyword in research_keywords):
+                keyword_matches += 1
+        
+        keyword_ratio = keyword_matches / len(cleaned_items) if cleaned_items else 0
+        
+        # Heuristic 2: Consistent naming patterns (title case, similar lengths)
+        title_case_count = sum(1 for item in cleaned_items if item.istitle() or item.isupper())
+        title_case_ratio = title_case_count / len(cleaned_items) if cleaned_items else 0
+        
+        # Check consistency in item lengths
+        item_lengths = [len(item) for item in cleaned_items]
+        avg_length = sum(item_lengths) / len(item_lengths) if item_lengths else 0
+        length_variance = sum((length - avg_length) ** 2 for length in item_lengths) / len(item_lengths) if item_lengths else 0
+        length_consistency = min(1.0, 100 / (length_variance + 10))  # Normalize to 0-1 range
+        
+        # Heuristic 3: Navigation or UI elements (avoid these)
+        navigation_indicators = ["home", "about", "contact", "login", "sign in", "register", "menu", "site map", "privacy"]
+        nav_matches = sum(1 for item in cleaned_items if any(nav in item.lower() for nav in navigation_indicators))
+        nav_ratio = nav_matches / len(cleaned_items) if cleaned_items else 0
+        
+        # Calculate a simple quality score
+        quality_score = (keyword_ratio * 0.5) + (title_case_ratio * 0.2) + (length_consistency * 0.2) - (nav_ratio * 0.5)
+        
+        # Additional heuristic: Prefer moderate-sized lists (not too short, not too long)
+        size_factor = 0.0
+        if 4 <= len(cleaned_items) <= 20:
+            size_factor = 0.2
+        elif len(cleaned_items) > 20:
+            size_factor = 0.1
+        
+        quality_score += size_factor
+        
+        # Store list with cleaned items and quality score
+        cleaned_lists_raw.append({
             "items": cleaned_items, 
             "original_items": original_items, 
             "metadata": metadata,
+            "source_url": source_url,
             "quality_score": quality_score
         })
 
+    cleaning_time = time.time() - start_time
+    if logger:
+        logger.debug(f"⏱️ Cleaning completed in {cleaning_time:.2f}s")
+    
+    # Save cleaned lists for analysis only if debug enabled
+    if save_debug:
+        cleaned_lists_file = os.path.join(debug_dir, f"{context_term}_cleaned_lists_{timestamp}.json")
+        with open(cleaned_lists_file, 'w') as f:
+            json.dump(cleaned_lists_raw, f, indent=2, default=str)
+        if logger:
+            logger.info(f"💾 Saved cleaned lists to {cleaned_lists_file}")
+    
     # Deduplicate based on cleaned items content (order-insensitive)
+    logger.debug(f"🔍 Deduplicating {len(cleaned_lists_raw)} cleaned lists")
     unique_lists_content = set()
-    scored_cleaned_lists = [] # This will hold the unique lists
-    for list_entry in scored_cleaned_lists_raw:
+    deduplicated_lists = [] # This will hold the unique lists
+    for list_entry in cleaned_lists_raw:
         # Create a unique representation (sorted tuple of items)
         list_tuple = tuple(sorted(list_entry["items"]))
         if list_tuple not in unique_lists_content:
             unique_lists_content.add(list_tuple)
-            scored_cleaned_lists.append(list_entry) # Add the first occurrence
+            deduplicated_lists.append(list_entry) # Add the first occurrence
 
+    dedup_time = time.time() - start_time - cleaning_time
     if logger:
-        logger.debug(f"Scored and cleaned {len(scored_cleaned_lists_raw)} lists.")
-        logger.info(f"Reduced to {len(scored_cleaned_lists)} unique lists after deduplication.")
+        logger.debug(f"⏱️ Deduplication completed in {dedup_time:.2f}s")
+        logger.info(f"📋 After cleaning and deduplication: {len(deduplicated_lists)} unique lists remain")
     
-    if not scored_cleaned_lists:
+    # Save deduplicated lists for analysis only if debug enabled
+    if save_debug:
+        dedup_lists_file = os.path.join(debug_dir, f"{context_term}_dedup_lists_{timestamp}.json")
+        with open(dedup_lists_file, 'w') as f:
+            json.dump(deduplicated_lists, f, indent=2, default=str)
+        if logger:
+            logger.info(f"💾 Saved deduplicated lists to {dedup_lists_file}")
+    
+    if not deduplicated_lists:
+        if logger:
+            logger.warning(f"⚠️ No lists remain after cleaning and deduplication for '{context_term}'")
         return [], [], []
 
-    # --- Community Detection Stage --- 
-
-    # 1. Deep Cleaning for community analysis
-    deep_cleaned_map = {} # index -> set of deeply cleaned tokens
-    for i, list_entry in enumerate(scored_cleaned_lists):
-        # Use the already cleaned items for deeper cleaning
-        deep_cleaned_map[i] = deep_clean_list(list_entry["items"])
-
-    # 2. Community Finding (Graph based on Jaccard Similarity of deep-cleaned tokens)
-    G = nx.Graph()
-    list_indices = list(range(len(scored_cleaned_lists)))
-    G.add_nodes_from(list_indices)
-
-    edges_added = 0
-    for i in range(len(list_indices)):
-        for j in range(i + 1, len(list_indices)):
-            idx1 = list_indices[i]
-            idx2 = list_indices[j]
-            set1 = deep_cleaned_map[idx1]
-            set2 = deep_cleaned_map[idx2]
-            
-            # Calculate Jaccard Similarity if sets are non-empty
-            if set1 and set2:
-                intersection_size = len(set1.intersection(set2))
-                union_size = len(set1.union(set2))
-                if union_size > 0:
-                    jaccard_sim = intersection_size / union_size
-                    # Add edge if similarity exceeds threshold
-                    if jaccard_sim >= JACCARD_THRESHOLD:
-                        G.add_edge(idx1, idx2)
-                        edges_added += 1
-                
-    if logger:
-        # Use the edges_added count for logging
-        logger.debug(f"Built graph with {G.number_of_nodes()} nodes and {edges_added} edges based on Jaccard similarity >= {JACCARD_THRESHOLD}.")
-
-    # Find communities (connected components)
-    raw_components = list(nx.connected_components(G))
-    # Filter for components of size > 1
-    connected_components = [list(c) for c in raw_components if len(c) > 1]
-    num_raw_components = len(raw_components)
-    num_communities = len(connected_components)
-    num_lists_in_communities = sum(len(c) for c in connected_components)
+    # Select candidates for LLM processing based on quality score
+    # Sort by quality score in descending order
+    deduplicated_lists.sort(key=lambda x: x.get("quality_score", 0), reverse=True)
     
-    if logger:
-        logger.debug(f"Found {num_raw_components} raw connected components.")
-        logger.info(f"Found {num_communities} communities (size > 1) involving {num_lists_in_communities} lists.")
-
-    llm_candidates_actual = []
-    if not connected_components:
-        logger.warning("No list communities (size > 1) found. Falling back to top-N scoring on all unique lists.")
-        # --- Refined Fallback Logic --- 
-        # Sort all unique lists by their heuristic score
-        scored_cleaned_lists.sort(key=lambda x: x.get('quality_score', 0.0), reverse=True)
-        # Filter by minimum score threshold
-        fallback_candidates_potential = [
-            l for l in scored_cleaned_lists if l.get('quality_score', 0.0) >= FALLBACK_MIN_SCORE
-        ]
-        # Select the top N lists from the filtered candidates (or fewer)
-        num_to_send = min(len(fallback_candidates_potential), FALLBACK_TOP_N)
-        llm_candidates_actual = fallback_candidates_potential[:num_to_send]
-        logger.info(f"[Fallback] Selected top {len(llm_candidates_actual)} lists (score >= {FALLBACK_MIN_SCORE}) to send to LLM.")
-        # --- End Refined Fallback Logic --- 
-    else:
-        # --- Community Selection Logic --- 
-        # 3. Community Scoring
-        community_scores = []
-        for component_indices in connected_components:
-            component_lists = [scored_cleaned_lists[idx] for idx in component_indices]
-            if not component_lists: continue
-            avg_score = sum(l['quality_score'] for l in component_lists) / len(component_lists)
-            community_scores.append({
-                'score': avg_score, 
-                'lists': component_lists, 
-                'indices': component_indices # Keep track of original indices for logging
-            })
-
-        # 4. Community Selection
-        community_scores.sort(key=lambda x: x['score'], reverse=True)
-        
+    # Define a reasonable maximum for LLM processing
+    max_llm_lists = 50  # Cap at 50 lists to avoid overloading the LLM
+    
+    # Select the top-scoring lists first, up to the maximum
+    llm_candidates_actual = deduplicated_lists[:max_llm_lists]
+    
+    if len(deduplicated_lists) > max_llm_lists:
         if logger:
-            # Log details of top few communities for debugging
-            top_communities_log = []
-            for i, comm in enumerate(community_scores[:5]): # Log top 5
-                top_communities_log.append(f"  #{i+1}: Score={comm['score']:.3f}, Size={len(comm['lists'])}, Indices={comm['indices']}")
-            logger.debug("Top 5 communities (by avg score):\n" + "\n".join(top_communities_log))
+            logger.warning(f"⚠️ Limiting LLM processing to top {max_llm_lists} lists out of {len(deduplicated_lists)} total")
 
-        selected_lists_set = set() # Track selected list items to avoid duplicates
-        
-        # First pass: Ensure minimum
-        for community in community_scores:
-            if len(llm_candidates_actual) >= MIN_LISTS_FOR_LLM:
-                break
-            for list_entry in community['lists']:
-                 # Check if list content already selected to prevent adding same list from lower ranked community
-                 list_tuple = tuple(sorted(list_entry["items"]))
-                 if list_tuple not in selected_lists_set:
-                      if len(llm_candidates_actual) < MAX_LISTS_FOR_LLM: # Still respect overall max
-                           llm_candidates_actual.append(list_entry)
-                           selected_lists_set.add(list_tuple)
-                      else:
-                           break # Stop adding if max reached
-            if len(llm_candidates_actual) >= MAX_LISTS_FOR_LLM: break
-
-        # Second pass: Add more up to max from remaining top communities
-        if len(llm_candidates_actual) < MAX_LISTS_FOR_LLM:
-            for community in community_scores:
-                if len(llm_candidates_actual) >= MAX_LISTS_FOR_LLM:
-                    break
-                for list_entry in community['lists']:
-                    list_tuple = tuple(sorted(list_entry["items"]))
-                    if list_tuple not in selected_lists_set:
-                        if len(llm_candidates_actual) < MAX_LISTS_FOR_LLM:
-                            llm_candidates_actual.append(list_entry)
-                            selected_lists_set.add(list_tuple)
-                        else:
-                            break # Stop adding if max reached
-                if len(llm_candidates_actual) >= MAX_LISTS_FOR_LLM: break
-
-        # Ensure final list count respects MAX (should be handled by checks within loops)
-        llm_candidates_actual = llm_candidates_actual[:MAX_LISTS_FOR_LLM]
-        
+    # Save LLM candidate lists for analysis only if debug enabled
+    if save_debug:
+        llm_candidate_lists_file = os.path.join(debug_dir, f"{context_term}_llm_candidates_{timestamp}.json")
+        with open(llm_candidate_lists_file, 'w') as f:
+            json.dump(llm_candidates_actual, f, indent=2, default=str)
         if logger:
-             logger.info(f"Selected {len(llm_candidates_actual)} lists from top communities for LLM (target {MIN_LISTS_FOR_LLM}-{MAX_LISTS_FOR_LLM}).")
-        # --- End Community Selection Logic --- 
+            logger.info(f"💾 Saved LLM candidate lists to {llm_candidate_lists_file}")
 
-    # Stage 3: LLM Processing (Common for both community and fallback selection)
+    # Stage 3: LLM Processing
+    llm_start_time = time.time()
     final_lists = []
     llm_results_processed = []
     
     if not llm_candidates_actual:
-        logger.info("No candidates selected for LLM processing after filtering/community selection.")
+        logger.warning(f"⚠️ No candidates remain after minimal filtering for '{context_term}'")
         return [], [], []
 
-    # Perform LLM validation/extraction on the selected subset
-    if config.binary_llm_decision: 
-        llm_decisions = await validate_lists_with_llm_binary(
-            [l["items"] for l in llm_candidates_actual], context_term, config, logger
-        )
-        llm_results_processed = llm_decisions
-        for i, decision in enumerate(llm_decisions):
-            if i < len(llm_candidates_actual) and decision.get("is_valid_list", False):
-                final_lists.append(llm_candidates_actual[i]["items"])
-        logger.info(f"LLM binary validation resulted in {len(final_lists)} verified lists.")
+    if llm_candidates_actual:
+        if config.binary_llm_decision:
+            # Use Binary LLM Validation
+            logger.info(f"🧠 Sending {len(llm_candidates_actual)} lists to LLM (model: {config.model_type}) for extraction")
+            llm_extraction_start = time.time()
+            llm_results = await validate_and_extract_lists_with_llm(
+                [cand["items"] for cand in llm_candidates_actual],
+                context_term,
+                config,
+                logger
+            )
+            llm_extraction_time = time.time() - llm_extraction_start
+            logger.debug(f"⏱️ LLM extraction completed in {llm_extraction_time:.2f}s")
+            
+            final_lists = llm_results # The result itself is the list of verified lists
+            llm_results_processed = llm_results # Store the direct output for metadata
+            
+            if logger:
+                verified_count = len(final_lists)
+                total_items = sum(len(lst) for lst in final_lists)
+                logger.info(f"📋 LLM extraction yielded {verified_count} verified lists with {total_items} total items")
+                if verified_count > 0 and len(final_lists[0]) > 0:
+                    logger.debug(f"📋 Sample from first verified list: {final_lists[0][:5]}")
+        else:
+            # Use Non-Binary LLM Validation (List Extraction/Verification)
+            logger.info(f"🧠 Sending {len(llm_candidates_actual)} lists to LLM (model: {config.model_type}) for extraction")
+            llm_extraction_start = time.time()
+            llm_results = await validate_and_extract_lists_with_llm(
+                [cand["items"] for cand in llm_candidates_actual],
+                context_term,
+                config,
+                logger
+            )
+            llm_extraction_time = time.time() - llm_extraction_start
+            logger.debug(f"⏱️ LLM extraction completed in {llm_extraction_time:.2f}s")
+            
+            final_lists = llm_results # The result itself is the list of verified lists
+            llm_results_processed = llm_results # Store the direct output for metadata
+            
+            if logger:
+                verified_count = len(final_lists)
+                total_items = sum(len(lst) for lst in final_lists)
+                logger.info(f"📋 LLM extraction yielded {verified_count} verified lists with {total_items} total items")
+                if verified_count > 0 and len(final_lists[0]) > 0:
+                    logger.debug(f"📋 Sample from first verified list: {final_lists[0][:5]}")
     else:
-        llm_extracted_sublists = await validate_and_extract_lists_with_llm(
-             [l["items"] for l in llm_candidates_actual], context_term, config, logger
-        )
-        llm_results_processed = llm_extracted_sublists
-        for sublist in llm_extracted_sublists:
-             if sublist: 
-                 final_lists.append(sublist)
-        logger.info(f"LLM list extraction returned {len(final_lists)} non-empty verified sub-lists.")
-
+        if logger:
+            logger.warning(f"⚠️ No suitable lists found to send for LLM validation for '{context_term}'")
+        # Ensure return types match even when no LLM call happens
+        final_lists = []
+        llm_results_processed = []
+    
+    # Save final LLM results for analysis only if debug enabled
+    if save_debug:
+        llm_results_file = os.path.join(debug_dir, f"{context_term}_llm_results_{timestamp}.json")
+        with open(llm_results_file, 'w') as f:
+            # Create a paired structure to include both input and output
+            llm_result_pairs = []
+            for idx, result_list in enumerate(llm_results_processed):
+                if idx < len(llm_candidates_actual):
+                    llm_result_pairs.append({
+                        "input_list": llm_candidates_actual[idx].get("items", []),
+                        "output_list": result_list,
+                        "source_url": llm_candidates_actual[idx].get("source_url", "unknown"),
+                        "metadata": llm_candidates_actual[idx].get("metadata", {}),
+                        "quality_score": llm_candidates_actual[idx].get("quality_score", 0)
+                    })
+            json.dump(llm_result_pairs, f, indent=2, default=str)
+        if logger:
+            logger.info(f"💾 Saved LLM results to {llm_results_file}")
+        
+    llm_time = time.time() - llm_start_time
+    total_time = time.time() - start_time
+        
+    if logger:
+        final_item_count = sum(len(lst) for lst in final_lists)
+        logger.info(f"✅ Filtering complete for '{context_term}' in {total_time:.2f}s: {len(final_lists)} final lists, {final_item_count} total items")
+        
+        # Log timing breakdown
+        logger.debug(f"⏱️ Timing breakdown: cleaning {cleaning_time:.2f}s, deduplication {dedup_time:.2f}s, " +
+                     f"LLM processing {llm_time:.2f}s")
+    
+    # Ensure the final return matches the expected Tuple structure
     return final_lists, llm_candidates_actual, llm_results_processed
 
 
@@ -383,7 +462,7 @@ async def validate_lists_with_llm_binary(
     logger: Optional[logging.Logger] = None
 ) -> List[Dict[str, bool]]:
     """
-    Validate lists using LLM with binary (yes/no) decisions
+    Validate lists using LLM with a binary yes/no decision.
     
     Args:
         lists: List of lists to validate
@@ -394,139 +473,46 @@ async def validate_lists_with_llm_binary(
     Returns:
         List of dictionaries with binary validation results
     """
-    if not lists or not config.use_llm_validation:
+    if not lists or not config.binary_system_prompt:
         return []
     
-    llm = init_llm(config.provider)
-    validation_results = []
+    llm = init_llm(config.provider, config.model_type) # Pass model_type
+    results = []
     
-    # Use a default binary system prompt if none provided
-    binary_system_prompt = config.binary_system_prompt or f"""You are an expert in classifying and organizing lists.
-
-Your task is to evaluate whether a provided list contains valid items related to {context_term}.
-
-You must return a clear YES or NO decision for each list.
-- Answer YES if the list primarily contains items related to {context_term}
-- Answer NO if the list contains menu items, website sections, non-relevant content, etc.
-
-THIS IS CRITICAL: Your decision must be binary (YES/NO) with no middle ground or uncertainty."""
+    num_batches = (len(lists) + config.llm_validation_batch_size - 1) // config.llm_validation_batch_size
     
-    # Process in batches to avoid exceeding context limits
-    for batch_start in range(0, len(lists), config.llm_validation_batch_size):
-        batch = lists[batch_start:batch_start + config.llm_validation_batch_size]
+    for i in range(num_batches):
+        batch_lists = lists[i * config.llm_validation_batch_size : (i + 1) * config.llm_validation_batch_size]
+        prompts = []
+        for list_to_validate in batch_lists:
+            # Format list for prompt (e.g., Python list string)
+            list_str = json.dumps(list_to_validate, indent=None) # Compact JSON list
+            prompt = f"{config.binary_system_prompt.format(level0_term=context_term)}\n\nList:\n{list_str}"
+            prompts.append(prompt)
         
-        # Construct prompt for LLM
-        prompt = f"""I need to determine whether these lists contain valid items related to {context_term}.
-
-For each list, provide a binary (YES/NO) decision on whether it contains relevant items.
-
-Please respond with JSON in this format:
-```json
-[
-  {{
-    "list_id": 0,
-    "is_valid_list": true,
-    "explanation": "These are clearly relevant because..."
-  }},
-  {{
-    "list_id": 1,
-    "is_valid_list": false,
-    "explanation": "These appear to be navigation menu items because..."
-  }},
-  ...
-]
-```
-
-Here are the lists to validate:
-
-"""
-        
-        for i, item_list in enumerate(batch):
-            sample_items = item_list[:15]  # Take more items to give LLM better context
-            prompt += f"List {i}:\n" + "\n".join([f"- {item}" for item in sample_items])
-            if len(item_list) > 15:
-                prompt += f"\n... (and {len(item_list) - 15} more items)"
-            prompt += "\n\n"
-        
-        # Add context about what makes a valid list
-        prompt += f"""
-Remember, valid lists for {context_term} will:
-1. Contain items that are specifically related to {context_term}
-2. Use consistent naming patterns
-3. Have appropriate terminology for the field
-
-Invalid lists might contain:
-1. Website navigation items ("Home", "Contact", "About")
-2. Administrative categories
-3. Random website content
-4. Items unrelated to {context_term}
-
-For each list, provide a clear YES or NO decision in the is_valid_list field.
-"""
-        
-        # Call LLM
         try:
-            response = llm.infer(prompt=prompt, system_prompt=binary_system_prompt)
+            if logger:
+                 logger.info(f"Sending batch {i+1}/{num_batches} ({len(batch_lists)} lists) to LLM ({config.provider}, model: {config.model_type}) for binary validation...")
+                 
+            responses = await llm.batch_prompt(prompts)
             
-            # Parse JSON response
-            try:
-                json_str = response.text
-                # Extract JSON if it's wrapped in markdown code blocks
-                if "```json" in json_str:
-                    json_str = json_str.split("```json")[1].split("```")[0].strip()
-                elif "```" in json_str:
-                    json_str = json_str.split("```")[1].split("```")[0].strip()
+            for response_text in responses:
+                # Process response - expect simple 'yes' or 'no' (case-insensitive)
+                decision = response_text.strip().lower()
+                is_valid = (decision == 'yes')
+                results.append({"is_valid": is_valid, "raw_response": response_text})
                 
-                results = json.loads(json_str)
-                
-                # Add validation results
-                for result in results:
-                    list_id = result.get("list_id", 0)
-                    if list_id < len(batch):
-                        validation_results.append({
-                            "list_id": list_id + batch_start,  # Adjust list_id to be relative to all lists
-                            "items": batch[list_id],
-                            "is_valid_list": result.get("is_valid_list", False),
-                            "explanation": result.get("explanation", "")
-                        })
-                        
-                        # Log the decision for debugging
-                        if logger:
-                            decision = "YES" if result.get("is_valid_list", False) else "NO"
-                            logger.debug(f"LLM decision for list {list_id + batch_start}: {decision}")
-            except json.JSONDecodeError as e:
-                if logger:
-                    logger.error(f"Error parsing LLM response: {str(e)}")
-                    logger.error(f"Raw response: {response.text}")
-                
-                # Try to extract decisions from text if JSON parsing fails
-                for i, item_list in enumerate(batch):
-                    list_marker = f"List {i}"
-                    
-                    # Look for decision in text
-                    text_after_list = response.text.split(list_marker)[-1].lower()
-                    if "yes" in text_after_list.split("list")[0]:
-                        validation_results.append({
-                            "list_id": i + batch_start,
-                            "items": batch[i],
-                            "is_valid_list": True,
-                            "explanation": "Extracted from non-JSON response"
-                        })
-                    elif "no" in text_after_list.split("list")[0]:
-                        validation_results.append({
-                            "list_id": i + batch_start,
-                            "items": batch[i],
-                            "is_valid_list": False,
-                            "explanation": "Extracted from non-JSON response"
-                        })
         except Exception as e:
             if logger:
-                logger.error(f"Error calling LLM for list validation: {str(e)}")
-        
-        # Add delay between batches
-        await asyncio.sleep(RATE_LIMIT_DELAY)
-    
-    return validation_results
+                 logger.error(f"LLM binary validation batch failed: {str(e)}")
+            # Add error result for each item in the failed batch
+            results.extend([{"is_valid": False, "error": str(e)} for _ in batch_lists])
+            
+        # Add delay between batches to avoid rate limiting
+        if i < num_batches - 1:
+            await asyncio.sleep(RATE_LIMIT_DELAY)
+            
+    return results
 
 
 async def validate_lists_with_llm(
@@ -550,7 +536,7 @@ async def validate_lists_with_llm(
     if not lists or not config.use_llm_validation:
         return []
     
-    llm = init_llm(config.provider)
+    llm = init_llm(config.provider, config.model_type) # Pass model_type
     validation_results = []
     
     # Use a default system prompt if none provided
@@ -664,110 +650,102 @@ async def validate_and_extract_lists_with_llm(
     logger: Optional[logging.Logger] = None
 ) -> List[List[str]]:
     """
-    Validate lists using LLM and extract verified sub-lists based on the prompt.
-
-    Args:
-        lists: List of lists to validate.
-        context_term: The related term for context.
-        config: Filtering configuration (expects binary_system_prompt to be set for list extraction).
-        logger: Optional logger.
-
-    Returns:
-        List containing the verified sub-lists extracted by the LLM for each input list.
-        If an input list results in no verified items, an empty list is returned for that position.
+    Validate lists using an LLM designed to extract valid items, returning verified sub-lists.
+    Handles potential markdown and JSON formatting in responses.
     """
-    if not lists or not config.use_llm_validation or config.binary_llm_decision:
-        # This function should only be called when list extraction is intended
+    if not lists:
+        return []
+
+    if not config.binary_system_prompt: # Reusing binary_system_prompt as the extraction prompt
+        raise ValueError("System prompt (binary_system_prompt) is required for LLM list extraction.")
+        
+    llm = init_llm(config.provider, config.model_type) # Pass model_type
+    verified_lists = [] # Store the lists of verified items returned by the LLM
+    
+    num_batches = (len(lists) + config.llm_validation_batch_size - 1) // config.llm_validation_batch_size
+
+    for i in range(num_batches):
+        batch_lists = lists[i * config.llm_validation_batch_size : (i + 1) * config.llm_validation_batch_size]
+        
         if logger:
-            logger.warning("validate_and_extract_lists_with_llm called inappropriately. Check FilterConfig.")
-        return [[] for _ in lists] # Return empty lists if called incorrectly
-
-    llm = init_llm(config.provider)
-    all_extracted_sublists = []
-
-    # Ensure the prompt for list extraction is available
-    list_extraction_prompt = config.binary_system_prompt # Reusing binary_system_prompt
-    if not list_extraction_prompt:
-        if logger:
-            logger.error("LLM list extraction requires a system prompt (binary_system_prompt in FilterConfig).")
-        return [[] for _ in lists]
-
-    # Process in batches
-    for batch_start in range(0, len(lists), config.llm_validation_batch_size):
-        batch = lists[batch_start:batch_start + config.llm_validation_batch_size]
-        batch_results = [[] for _ in batch] # Initialize results for this batch
-
-        # Construct prompt for LLM - expecting a list output for each input list
-        prompt = f"Analyze the following lists. For each list, return a Python-style list containing ONLY the items that are directly relevant research areas or courses for The Department of {context_term}. Return an empty list `[]` if no items are relevant.\n\n"
-
-        list_inputs_formatted = []
-        for i, item_list in enumerate(batch):
-            # Limit item count sent to LLM if necessary, but maybe more context is better?
-            sample_items = item_list # Send all items for better context
-            list_str = f"Input List {i}:\n{json.dumps(sample_items, indent=2)}"
-            list_inputs_formatted.append(list_str)
-
-        prompt += "\n\n".join(list_inputs_formatted)
-        prompt += f"\n\nRespond ONLY with the verified lists, one per line, in Python list format. Example:\nOutput for List 0: ['Verified Item 1', 'Verified Item 2']\nOutput for List 1: []\n..."
-
-        try:
-            response = llm.infer(prompt=prompt, system_prompt=list_extraction_prompt)
-            response_text = response.text.strip()
-
-            if logger:
-                 logger.debug(f"LLM response for list extraction (Batch starting {batch_start}):\n{response_text}")
-
-            # Attempt to parse the response - expecting one line per list
-            lines = response_text.splitlines()
-            parsed_count = 0
-            for i, line in enumerate(lines):
-                if i >= len(batch): continue # Shouldn't happen if LLM follows instructions
-
-                line = line.strip()
-                # Try to find the list structure (e.g., "Output for List 0: [...]")
-                match = re.match(r".*Output for List \d+:\s*(.*)", line, re.IGNORECASE)
-                list_str = match.group(1).strip() if match else line
-
-                try:
-                    # Use ast.literal_eval for safer evaluation than eval()
-                    extracted_list = ast.literal_eval(list_str)
-                    if isinstance(extracted_list, list):
-                         # Basic validation: ensure items are strings
-                         validated_list = [str(item).strip() for item in extracted_list if isinstance(item, (str, int, float)) and str(item).strip()]
-                         batch_results[i] = validated_list
-                         parsed_count += 1
-                         if logger:
-                              logger.debug(f"  Successfully parsed list for batch index {i}: {validated_list}")
-                    else:
-                         if logger:
-                              logger.warning(f"  Could not parse line {i+1} as list (wrong type: {type(extracted_list)}): {line}")
-                except (ValueError, SyntaxError, TypeError) as e:
-                    if logger:
-                         logger.warning(f"  Could not parse line {i+1} as list (Error: {e}): {line}")
-
-            if parsed_count != len(batch) and logger:
-                 logger.warning(f"LLM list extraction: Parsed {parsed_count} lists, but expected {len(batch)} for this batch.")
+            logger.info(f"Sending batch {i+1}/{num_batches} ({len(batch_lists)} lists) to LLM ({config.provider}, model: {config.model_type}) for list extraction...")
+        
+        # Process each list individually instead of using batch_prompt
+        responses = []
+        for list_to_validate in batch_lists:
+            # Format list for prompt (e.g., Python list string)
+            # Use json.dumps for robust list representation
+            list_str = json.dumps(list_to_validate, indent=None) 
+            # Use the binary_system_prompt which is now designed for extraction
+            prompt = f"{config.binary_system_prompt.format(level0_term=context_term, level1_term=context_term, level2_term=context_term)}\n\nInput List:\n{list_str}"
             
-            all_extracted_sublists.extend(batch_results)
+            try:
+                # Call LLM for each list individually
+                response = llm.infer(
+                    prompt=prompt,
+                    system_prompt=None  # The system prompt is already included in the prompt
+                )
+                responses.append(response.text)
+                # Small delay between requests to avoid rate limits
+                await asyncio.sleep(0.1)
+            except Exception as e:
+                if logger:
+                    logger.error(f"Error calling LLM for list extraction: {str(e)}")
+                responses.append("")  # Add empty response to maintain index alignment
+            
+        for response_text in responses:
+            extracted_list = []
+            try:
+                # 1. Clean potential markdown code fences (```python ... ```, ```json ... ```, ``` ... ```)
+                cleaned_response = response_text.strip()
+                # Remove leading/trailing ``` optionally followed by language name and newline
+                cleaned_response = re.sub(r'^```[a-z]*\n?', '', cleaned_response)
+                # Remove trailing newline and ```
+                cleaned_response = re.sub(r'\n?```$', '', cleaned_response)
+                # Remove leading/trailing single backticks if present
+                cleaned_response = cleaned_response.strip('`')
+                cleaned_response = cleaned_response.strip()
+                
+                # 2. Attempt to parse as Python list literal or JSON list
+                if cleaned_response.startswith('[') and cleaned_response.endswith(']'):
+                    try:
+                        # Try ast.literal_eval first (safer for Python list syntax)
+                        parsed_list = ast.literal_eval(cleaned_response)
+                        if isinstance(parsed_list, list):
+                            # Ensure all items are strings
+                            extracted_list = [str(item) for item in parsed_list if isinstance(item, (str, int, float))]
+                        else:
+                            if logger:
+                                logger.warning(f"LLM response parsed but is not a list: {cleaned_response[:100]}...")
+                    except (ValueError, SyntaxError, TypeError):
+                        # If ast fails, try json.loads (for JSON list syntax)
+                        try:
+                            parsed_list = json.loads(cleaned_response)
+                            if isinstance(parsed_list, list):
+                                extracted_list = [str(item) for item in parsed_list if isinstance(item, (str, int, float))]
+                            else:
+                                 if logger:
+                                     logger.warning(f"LLM response parsed (JSON) but is not a list: {cleaned_response[:100]}...")
+                        except json.JSONDecodeError as json_err:
+                            if logger:
+                                logger.warning(f"Could not parse LLM response as Python or JSON list: '{cleaned_response[:100]}...'. Error: {json_err}")
+                else:
+                    if logger:
+                         logger.warning(f"LLM response does not appear to be a list: '{cleaned_response[:100]}...'")
+                         
+            except Exception as parse_error:
+                if logger:
+                    logger.error(f"Error processing LLM response: '{response_text[:100]}...'. Error: {parse_error}")
+            
+            # Only add if the extracted list is not empty
+            if extracted_list:
+                verified_lists.append(extracted_list)
+            # else: (implicit) if parsing fails or list is empty, it's skipped
+            
+        if i < num_batches - 1:
+            await asyncio.sleep(RATE_LIMIT_DELAY)
 
-        except Exception as e:
-            if logger:
-                logger.error(f"Error calling LLM for list extraction (Batch starting {batch_start}): {str(e)}", exc_info=True)
-            # Add empty lists for the failed batch
-            all_extracted_sublists.extend([[] for _ in batch])
-
-        # Add delay between batches
-        if batch_start + config.llm_validation_batch_size < len(lists):
-             await asyncio.sleep(RATE_LIMIT_DELAY)
-
-    # Ensure the number of results matches the number of input lists
-    if len(all_extracted_sublists) != len(lists):
-         if logger:
-              logger.error(f"LLM list extraction mismatch: Expected {len(lists)} results, got {len(all_extracted_sublists)}. Padding with empty lists.")
-         # Pad with empty lists if necessary
-         all_extracted_sublists.extend([[] for _ in range(len(lists) - len(all_extracted_sublists))])
-
-    return all_extracted_sublists
+    return verified_lists # Return the lists of verified items
 
 
 def consolidate_lists(all_lists: List[List[str]], 

@@ -8,6 +8,7 @@ from typing import Dict, List, Any, Optional
 from flask import Flask, render_template, jsonify, request
 import time
 import re
+from collections import Counter
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
@@ -15,8 +16,9 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT_DIR, 'data')
 FINAL_DIR = os.path.join(DATA_DIR, 'final')
-HIERARCHY_FILE = os.path.join(DATA_DIR, 'hierarchy.json')
+HIERARCHY_FILE = os.path.join(FINAL_DIR, 'hierarchy.json')
 ANALYSIS_DIR = os.path.join(DATA_DIR, 'analysis')
+MANUAL_EVALUATION_FILE = os.path.join(DATA_DIR, 'manual_evaluations.json')
 
 # Print paths for debugging
 print(f"Root directory: {ROOT_DIR}")
@@ -28,6 +30,7 @@ print(f"Analysis directory: {ANALYSIS_DIR}")
 hierarchy_data = {}
 resources_data = {}
 duplicate_data = {}
+manual_evaluations = {}
 
 
 def load_hierarchy() -> Dict[str, Any]:
@@ -269,146 +272,158 @@ def search():
     return jsonify(results[:50])
 
 
-@app.route('/quality')
-def quality_dashboard():
-    """Render the hierarchy quality evaluation dashboard."""
-    return render_template('evaluator.html')
+@app.route('/manual_evaluation')
+def manual_evaluation_page():
+    """Render the manual evaluation page."""
+    return render_template('manual_evaluation.html', timestamp=int(time.time()))
 
 
-@app.route('/api/find_latest_evaluation')
-def find_latest_evaluation():
-    """Find the most recent evaluation file for a given level."""
-    level = request.args.get('level', '2')
-    try:
-        level = int(level)
-    except ValueError:
-        level = 2  # Default to level 2
-    
-    # Define potential locations to search for evaluation files
-    search_locations = [
-        os.path.join(DATA_DIR, 'evaluation'),
-        os.path.join(DATA_DIR, 'analysis', f'lv{level}'),
-        os.path.join(DATA_DIR, 'analysis'),
-        os.path.join(ROOT_DIR, 'exports')
-    ]
-    
-    # Initialize variables to track the latest file
-    latest_file = None
-    latest_timestamp = None
-    
-    # Search pattern for evaluation files
-    json_pattern = f"duplicate_evaluations_lv{level}_*.json"
-    csv_pattern = f"duplicate_evaluations_lv{level}_*.csv"
-    
-    # Prioritize JSON files over CSV (since they contain more complete data)
-    for location in search_locations:
-        if os.path.exists(location):
-            # First search for JSON files
-            json_files = glob.glob(os.path.join(location, json_pattern))
-            for file_path in json_files:
-                # Extract date from filename (expected format: duplicate_evaluations_lvX_YYYY-MM-DD.json)
-                match = re.search(r'_(\d{4}-\d{2}-\d{2})\.json$', file_path)
-                if match:
-                    file_date = match.group(1)
-                    if latest_timestamp is None or file_date > latest_timestamp:
-                        latest_timestamp = file_date
-                        latest_file = file_path
-                else:
-                    # If no date in filename, use file modification time
-                    file_mtime = os.path.getmtime(file_path)
-                    if latest_timestamp is None or file_mtime > latest_timestamp:
-                        latest_timestamp = file_mtime
-                        latest_file = file_path
-            
-            # If no JSON files found, look for CSV files
-            if latest_file is None:
-                csv_files = glob.glob(os.path.join(location, csv_pattern))
-                for file_path in csv_files:
-                    match = re.search(r'_(\d{4}-\d{2}-\d{2})\.csv$', file_path)
-                    if match:
-                        file_date = match.group(1)
-                        if latest_timestamp is None or file_date > latest_timestamp:
-                            latest_timestamp = file_date
-                            latest_file = file_path
-                    else:
-                        file_mtime = os.path.getmtime(file_path)
-                        if latest_timestamp is None or file_mtime > latest_timestamp:
-                            latest_timestamp = file_mtime
-                            latest_file = file_path
-    
-    if latest_file:
-        # Convert file path to URL path for frontend
-        file_url = f"/static/evaluations/{os.path.basename(latest_file)}"
-        
-        # If the file is not in static directory, copy it there so it can be served
-        static_evaluations_dir = os.path.join(app.static_folder, 'evaluations')
-        os.makedirs(static_evaluations_dir, exist_ok=True)
-        
-        static_file_path = os.path.join(static_evaluations_dir, os.path.basename(latest_file))
-        
-        # Only copy if the file doesn't already exist in static directory
-        if not os.path.exists(static_file_path) or os.path.getmtime(latest_file) > os.path.getmtime(static_file_path):
-            with open(latest_file, 'rb') as src_file:
-                with open(static_file_path, 'wb') as dest_file:
-                    dest_file.write(src_file.read())
-        
-        return jsonify({
-            "success": True,
-            "filePath": file_url,
-            "level": level,
-            "timestamp": latest_timestamp
-        })
+@app.route('/evaluation_stats')
+def evaluation_stats_page():
+    """Render the evaluation statistics page."""
+    return render_template('evaluation_stats.html', timestamp=int(time.time()))
+
+
+@app.route('/api/load_evaluation/<term>')
+def load_evaluation(term: str):
+    """API endpoint to load manual evaluation for a specific term."""
+    evaluation = manual_evaluations.get(term)
+    if evaluation:
+        return jsonify({"success": True, "evaluation": evaluation})
     else:
+        return jsonify({"success": False, "message": "No evaluation found"})
+
+
+@app.route('/api/save_evaluation', methods=['POST'])
+def save_evaluation():
+    """API endpoint to save manual evaluation for a specific term."""
+    data = request.json
+    term = data.get('term')
+    evaluation_data = data.get('evaluation')
+
+    if not term or not evaluation_data:
+        return jsonify({"success": False, "message": "Missing term or evaluation data"}), 400
+
+    # Store the evaluation
+    manual_evaluations[term] = evaluation_data
+    save_manual_evaluations() # Persist to file
+
+    return jsonify({"success": True, "message": "Evaluation saved successfully"})
+
+
+@app.route('/api/evaluation_stats')
+def get_evaluation_stats():
+    """API endpoint to calculate and return aggregate evaluation statistics."""
+    if not manual_evaluations:
         return jsonify({
-            "success": False,
-            "message": f"No evaluation files found for level {level}",
-            "level": level
+            "total_evaluated": 0,
+            "importance_counts": {},
+            "level_correctness_counts": {},
+            "variation_correctness_avg": 0,
+            "parent_correctness_avg": 0
         })
 
+    total_evaluated = len(manual_evaluations)
+    importance_counts = Counter()
+    level_correctness_counts = Counter()
+    level_correctness_aggregated_counts = Counter()
+    total_variations_evaluated = 0
+    correct_variations = 0
+    total_parents_evaluated = 0
+    correct_parents = 0
 
-@app.route('/api/save_evaluation_export', methods=['POST'])
-def save_evaluation_export():
-    """Save an evaluation export file to the server."""
-    if 'file' not in request.files:
-        return jsonify({
-            "success": False,
-            "message": "No file part in the request"
-        }), 400
-    
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({
-            "success": False,
-            "message": "No file selected"
-        }), 400
-    
-    # Define the directory where exports will be saved
-    exports_dir = os.path.join(ROOT_DIR, 'exports')
-    os.makedirs(exports_dir, exist_ok=True)
-    
-    # Also save a copy to the static directory for direct access
-    static_evaluations_dir = os.path.join(app.static_folder, 'evaluations')
-    os.makedirs(static_evaluations_dir, exist_ok=True)
-    
-    # Save the file to both locations
-    file_path = os.path.join(exports_dir, file.filename)
-    file.save(file_path)
-    
-    # Create a copy in the static directory
-    static_file_path = os.path.join(static_evaluations_dir, file.filename)
-    shutil.copy2(file_path, static_file_path)
-    
-    return jsonify({
-        "success": True,
-        "message": "File saved successfully",
-        "filePath": file_path,
-        "fileUrl": f"/static/evaluations/{file.filename}"
-    })
+    for term, evaluation in manual_evaluations.items():
+        if evaluation.get('academic_importance'):
+            importance_counts[evaluation['academic_importance']] += 1
+
+        # Aggregate Level Correctness
+        level_decision = evaluation.get('level_correctness')
+        if level_decision:
+            if level_decision == 'correct':
+                level_correctness_aggregated_counts['Correct'] += 1
+            elif level_decision in ['0', '1', '2', '3']:
+                actual_level = hierarchy_data.get('terms', {}).get(term, {}).get('level')
+                if actual_level is not None:
+                    try:
+                        suggested_level = int(level_decision)
+                        actual_level = int(actual_level)
+                        if suggested_level > actual_level:
+                            level_correctness_aggregated_counts['Higher'] += 1
+                        elif suggested_level < actual_level:
+                            level_correctness_aggregated_counts['Lower'] += 1
+                        else:
+                            # Suggested level is same as actual - treat as Correct
+                            level_correctness_aggregated_counts['Correct'] += 1
+                    except (ValueError, TypeError):
+                        print(f"Warning: Could not compare levels for term '{term}'. Actual: {actual_level}, Suggested: {level_decision}")
+                        # Decide how to handle? Maybe add an 'Error' category or ignore?
+                        # For now, ignore entries where levels aren't comparable integers.
+                else:
+                    print(f"Warning: Could not find actual level for term '{term}' in hierarchy data.")
+            # else: ignore other potential values
+
+        if 'variation_correctness' in evaluation and isinstance(evaluation['variation_correctness'], dict):
+            num_variations = len(evaluation['variation_correctness'])
+            if num_variations > 0:
+                total_variations_evaluated += num_variations
+                correct_variations += sum(1 for v in evaluation['variation_correctness'].values() if v)
+
+        if 'parent_relationships' in evaluation and isinstance(evaluation['parent_relationships'], dict):
+            num_parents = len(evaluation['parent_relationships'])
+            if num_parents > 0:
+                total_parents_evaluated += num_parents
+                correct_parents += sum(1 for p in evaluation['parent_relationships'].values() if p)
+
+    variation_correctness_avg = (correct_variations / total_variations_evaluated * 100) if total_variations_evaluated > 0 else 0
+    parent_correctness_avg = (correct_parents / total_parents_evaluated * 100) if total_parents_evaluated > 0 else 0
+
+    stats = {
+        "total_evaluated": total_evaluated,
+        "importance_counts": dict(importance_counts),
+        "level_correctness_counts": dict(level_correctness_aggregated_counts),
+        "variation_correctness_avg": round(variation_correctness_avg, 2),
+        "parent_correctness_avg": round(parent_correctness_avg, 2),
+        "total_variations_rated": total_variations_evaluated,
+        "correct_variations_count": correct_variations,
+        "total_parents_rated": total_parents_evaluated,
+        "correct_parents_count": correct_parents
+    }
+
+    return jsonify(stats)
+
+
+@app.route('/api/all_evaluations')
+def get_all_evaluated_terms():
+    """API endpoint to get the full dictionary of manual evaluations."""
+    # Return the whole dictionary, not just the keys
+    return jsonify(manual_evaluations)
+
+
+def load_manual_evaluations() -> Dict[str, Any]:
+    """Load manual evaluations from the JSON file."""
+    if not os.path.exists(MANUAL_EVALUATION_FILE):
+        return {}
+    try:
+        with open(MANUAL_EVALUATION_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print(f"Error decoding JSON from {MANUAL_EVALUATION_FILE}. Returning empty evaluations.")
+        return {}
+
+
+def save_manual_evaluations():
+    """Save manual evaluations to the JSON file."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    try:
+        with open(MANUAL_EVALUATION_FILE, 'w', encoding='utf-8') as f:
+            json.dump(manual_evaluations, f, indent=2, ensure_ascii=False)
+    except IOError as e:
+        print(f"Error saving manual evaluations to {MANUAL_EVALUATION_FILE}: {e}")
 
 
 def main():
     """Main function for command-line execution."""
-    global hierarchy_data, resources_data
+    global hierarchy_data, resources_data, manual_evaluations
     
     parser = argparse.ArgumentParser(description='Visualize the academic hierarchy')
     parser.add_argument('-p', '--port', type=int, default=5000,
@@ -431,13 +446,18 @@ def main():
     for level in range(4):  # Levels 0, 1, 2, 3
         resources_data[level] = load_resources(level)
         
-    # Register the evaluator blueprint
-    try:
-        from .hierarchy_evaluator_viz import register_with_app
-        register_with_app(app)
-        print("Hierarchy evaluator integration registered successfully")
-    except ImportError:
-        print("Hierarchy evaluator not available. Quality analysis functions will be disabled.")
+    # Load existing manual evaluations
+    print("Loading manual evaluations...")
+    manual_evaluations = load_manual_evaluations()
+    print(f"Loaded {len(manual_evaluations)} existing manual evaluations.")
+    
+    # Register the evaluator blueprint (Commented out as it's part of the old system)
+    # try:
+    #     from .hierarchy_evaluator_viz import register_with_app
+    #     register_with_app(app)
+    #     print("Hierarchy evaluator integration registered successfully")
+    # except ImportError:
+    #     print("Hierarchy evaluator integration not available or disabled.")
     
     # Run the Flask app
     print(f"Starting server on port {args.port}...")

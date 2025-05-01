@@ -1,365 +1,3134 @@
 {
     "metadata": {
-        "output_count": 332,
-        "normalized_concepts_count": 908,
-        "department_threshold": 2,
+        "output_count": 347,
+        "normalized_concepts_count": 347,
+        "min_college_appearance": 1,
+        "min_college_freq_percent": 1,
         "min_concept_length": 3,
         "max_concept_length": 50,
         "frequency_distribution": {
-            "1": 576,
-            "2": 137,
-            "13": 2,
-            "16": 3,
-            "5": 22,
-            "3": 63,
-            "15": 3,
-            "20": 1,
-            "12": 3,
-            "6": 24,
-            "21": 1,
-            "11": 4,
-            "7": 10,
-            "10": 9,
-            "9": 8,
-            "8": 4,
-            "4": 35,
-            "19": 1,
-            "17": 1,
-            "14": 1
+            "1": 287,
+            "2": 49,
+            "3": 5,
+            "4": 4,
+            "5": 2
         }
     },
-    "concept_frequencies": {
-        "business studies": 2,
-        "school psychology": 2,
-        "special education": 13,
-        "management": 16,
-        "creative writing": 5,
-        "regional planning": 3,
-        "urban planning": 2,
-        "business administration": 15,
-        "real estate": 5,
-        "pharmacology": 3,
-        "health management": 2,
-        "public health": 20,
-        "entrepreneurship": 12,
-        "english": 6,
-        "language": 6,
-        "literature": 21,
-        "liberal studies": 3,
-        "modern languages": 6,
-        "gender studies": 11,
-        "women's studies": 6,
-        "neuroscience": 7,
-        "communication studies": 3,
-        "French": 3,
-        "Italian": 3,
-        "linguistics": 10,
-        "rhetoric": 6,
-        "social work": 9,
-        "business": 2,
-        "marketing": 13,
-        "gynecology": 2,
-        "obstetrics": 2,
-        "health sciences": 10,
-        "speech-language pathology": 3,
-        "ecology": 3,
-        "environment": 5,
-        "music": 8,
-        "educational leadership": 8,
-        "technology": 6,
-        "nursing": 15,
-        "mathematics": 4,
-        "physics": 6,
-        "Asian law": 2,
-        "comparative law": 3,
-        "decision science": 4,
-        "political science": 16,
-        "professional writing": 2,
-        "health education": 3,
-        "counseling": 11,
-        "accounting": 10,
-        "biology": 19,
-        "art history": 5,
-        "kinesiology": 9,
-        "paramedicine": 2,
-        "anatomy": 2,
-        "cell biology": 4,
-        "genetics": 2,
-        "biomedical engineering": 4,
-        "manufacturing engineering": 2,
-        "health studies": 2,
-        "interdisciplinary studies": 6,
-        "urban studies": 2,
-        "biochemistry": 11,
-        "molecular genetics": 2,
-        "environmental science": 7,
-        "global studies": 2,
-        "microbiology": 3,
-        "aerospace engineering": 7,
-        "Asian American studies": 2,
-        "cultural studies": 16,
-        "ethnic studies": 4,
-        "business law": 11,
-        "intellectual property law": 3,
-        "art": 9,
-        "design": 3,
-        "visual art": 3,
-        "dance": 6,
-        "fine arts": 2,
-        "performing arts": 4,
-        "civil engineering": 10,
-        "geotechnical engineering": 2,
-        "structural engineering": 3,
-        "election law": 2,
-        "integrated health sciences": 3,
-        "film studies": 6,
-        "media studies": 5,
-        "molecular biology": 4,
-        "fluid mechanics": 2,
-        "mechanical engineering": 10,
-        "thermodynamics": 2,
-        "Judaic studies": 2,
-        "music education": 4,
-        "music theory": 2,
-        "hearing science": 4,
-        "speech science": 4,
-        "biological engineering": 2,
-        "chemical engineering": 3,
-        "criminal justice": 7,
-        "electrical engineering": 5,
-        "curriculum": 3,
-        "instruction": 3,
-        "anthropology": 9,
-        "teaching": 8,
-        "physiology": 3,
-        "secondary education": 7,
-        "Asian studies": 3,
-        "medicine": 4,
-        "engineering": 6,
-        "public policy": 7,
-        "language studies": 6,
-        "dietetics": 2,
-        "nutrition": 9,
-        "digital humanities": 2,
-        "language education": 3,
-        "K-12 education": 2,
-        "physical education": 3,
-        "medical laboratory science": 2,
-        "exercise science": 10,
-        "materials science": 3,
-        "organizational behavior": 5,
-        "Japanese": 3,
-        "epidemiology": 10,
-        "health policy": 4,
-        "biostatistics": 5,
-        "African American studies": 5,
-        "Black studies": 2,
-        "physical sciences": 3,
-        "international relations": 5,
-        "community health": 2,
-        "architectural engineering": 4,
-        "environmental engineering": 9,
-        "information technology": 2,
-        "management information systems": 3,
-        "music performance": 4,
-        "materials engineering": 2,
-        "learning": 3,
-        "elementary education": 10,
-        "finance": 17,
-        "plant biology": 2,
-        "cellular biology": 2,
-        "developmental biology": 4,
-        "deaf studies": 2,
-        "business intelligence": 2,
-        "Asian languages": 3,
-        "technology law": 2,
-        "geography": 10,
-        "criminology": 3,
-        "licensure": 2,
-        "Greek": 2,
-        "Latin": 2,
-        "classics": 2,
-        "occupational therapy": 4,
-        "race studies": 2,
-        "analytics": 2,
-        "business information systems": 2,
-        "Slavic studies": 2,
-        "medical sciences": 3,
-        "statistics": 3,
-        "economics": 15,
-        "law": 14,
-        "physical therapy": 4,
-        "religion": 3,
-        "biological science": 2,
-        "health promotion": 3,
-        "administration": 5,
-        "rehabilitation": 3,
-        "developmental psychology": 4,
-        "indigenous studies": 3,
-        "mathematics education": 5,
-        "science education": 4,
-        "mechanics": 2,
-        "mediation": 2,
-        "psychology": 9,
-        "communication disorders": 3,
-        "operations management": 4,
-        "supply chain management": 5,
-        "policy": 4,
-        "sustainable development": 2,
-        "child development": 5,
-        "information systems": 8,
-        "human resource management": 3,
-        "Chicana studies": 2,
-        "Chicano studies": 3,
-        "sport management": 5,
-        "mass communications": 2,
-        "respiratory care": 2,
-        "accountancy": 3,
-        "taxation": 2,
-        "philosophy": 12,
-        "business analytics": 7,
-        "conservation": 2,
-        "gerontology": 3,
-        "information science": 3,
-        "sociology": 12,
-        "human movement": 3,
-        "social science education": 2,
-        "business management": 2,
-        "writing studies": 3,
-        "sport science": 6,
-        "computer engineering": 6,
-        "military science": 2,
-        "literacy": 4,
-        "industrial engineering": 3,
-        "systems engineering": 2,
-        "international affairs": 2,
-        "public affairs": 2,
-        "organization": 2,
-        "construction management": 2,
-        "learning technologies": 2,
-        "social justice": 3,
-        "francophone studies": 3,
-        "french studies": 7,
-        "society": 4,
-        "speech pathology": 3,
-        "communication sciences": 5,
-        "otolaryngology": 3,
-        "environmental studies": 4,
-        "behavioral health": 4,
-        "innovation": 7,
-        "leadership": 6,
-        "early childhood education": 6,
-        "cellular physiology": 2,
-        "integrative physiology": 2,
-        "international studies": 2,
-        "professional sales": 2,
-        "middle education": 2,
-        "adult education": 2,
-        "applied linguistics": 3,
-        "culture": 5,
-        "family studies": 2,
-        "politics": 2,
-        "biomedical sciences": 3,
-        "engineering education": 2,
-        "technology education": 2,
-        "immunology": 4,
-        "pathology": 2,
-        "human rights": 2,
-        "chemistry": 6,
-        "theatre": 7,
-        "health": 3,
-        "humanities": 2,
-        "research methodology": 2,
-        "corporate law": 2,
-        "Latino studies": 4,
-        "Spanish studies": 2,
-        "emergency medicine": 2,
-        "communication": 3,
-        "romance languages": 2,
-        "education": 6,
-        "education policy": 4,
-        "spanish": 3,
-        "insurance": 5,
-        "risk management": 6,
-        "family medicine": 3,
-        "geology": 2,
-        "middle eastern studies": 6,
-        "public administration": 4,
-        "nursing practice": 3,
-        "psychiatry": 2,
-        "comparative literature": 5,
-        "educational technology": 2,
-        "library science": 2,
-        "japanese studies": 2,
-        "latin american studies": 4,
-        "educational psychology": 6,
-        "international law": 3,
-        "investments": 2,
-        "cinema studies": 2,
-        "religious studies": 5,
-        "art theory": 2,
-        "legal studies": 4,
-        "marine biology": 2,
-        "marine sciences": 2,
-        "oceanography": 2,
-        "data analysis": 2,
-        "wellness studies": 2,
-        "environmental health sciences": 2,
-        "software engineering": 2,
-        "language sciences": 2,
-        "data science": 3,
-        "food science": 2,
-        "teacher education": 5,
-        "sexuality studies": 5,
-        "construction engineering": 2,
-        "Italian studies": 2,
-        "art education": 3,
-        "German studies": 2,
-        "physician assistant studies": 2,
-        "audiology": 4,
-        "literacy education": 2,
-        "journalism": 3,
-        "Slavic languages": 2,
-        "Africana studies": 4,
-        "social science": 9,
-        "organizational leadership": 2,
-        "medical education": 2,
-        "event management": 2,
-        "hospitality management": 2,
-        "hispanic studies": 2,
-        "international business": 3,
-        "second language acquisition": 2,
-        "computer science": 6,
-        "project management": 2,
-        "TESOL": 4,
-        "history": 6,
-        "human development": 4,
-        "community medicine": 2,
-        "healthcare": 3,
-        "patient care": 2,
-        "sustainability": 2,
-        "educational administration": 3,
-        "astronomy": 2,
-        "family science": 2,
-        "earth science": 6,
-        "justice studies": 2,
-        "environmental law": 2,
-        "tax law": 2,
-        "geological sciences": 2,
-        "clinical nutrition": 2,
-        "health behavior science": 2,
-        "american studies": 2,
-        "behavior analysis": 2,
-        "accelerated nursing programs": 2,
-        "natural sciences": 2,
-        "buddhist studies": 2,
-        "psychological sciences": 2,
-        "aeronautics": 2,
-        "neurology": 2,
-        "geospatial science": 2,
-        "family nurse practitioner": 2,
-        "pediatric nurse practitioner": 2,
-        "educational policy": 2,
-        "diaspora studies": 2
+    "college_statistics": {
+        "college of education": {
+            "total_departments": 54,
+            "total_concepts": 50,
+            "filtered_concepts": 40,
+            "top_concepts": [
+                {
+                    "concept": "special education",
+                    "frequency": 3,
+                    "percentage": 5.555555555555555
+                },
+                {
+                    "concept": "secondary education",
+                    "frequency": 2,
+                    "percentage": 3.7037037037037033
+                },
+                {
+                    "concept": "higher education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "human capital development",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "human capital education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "english education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "culture",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "language",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "literacy",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "school psychology",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "leadership",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "lifelong learning",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "policy",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "elementary education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "curriculum",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "instruction",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "career education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "technical education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "workforce education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "middle level education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "counseling",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "educational psychology",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "social science education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "learning design",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                },
+                {
+                    "concept": "early childhood education",
+                    "frequency": 1,
+                    "percentage": 1.8518518518518516
+                }
+            ]
+        },
+        "college of art": {
+            "total_departments": 19,
+            "total_concepts": 19,
+            "filtered_concepts": 10,
+            "top_concepts": [
+                {
+                    "concept": "graphic design",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "communication",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "creative writing",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "english",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "studio art",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "dance",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "theatre",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "jewish thought",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "art history",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                },
+                {
+                    "concept": "comparative literature",
+                    "frequency": 1,
+                    "percentage": 5.263157894736842
+                }
+            ]
+        },
+        "college of business": {
+            "total_departments": 27,
+            "total_concepts": 18,
+            "filtered_concepts": 12,
+            "top_concepts": [
+                {
+                    "concept": "accounting",
+                    "frequency": 4,
+                    "percentage": 14.814814814814813
+                },
+                {
+                    "concept": "marketing",
+                    "frequency": 3,
+                    "percentage": 11.11111111111111
+                },
+                {
+                    "concept": "finance",
+                    "frequency": 2,
+                    "percentage": 7.4074074074074066
+                },
+                {
+                    "concept": "entrepreneurship",
+                    "frequency": 2,
+                    "percentage": 7.4074074074074066
+                },
+                {
+                    "concept": "management",
+                    "frequency": 2,
+                    "percentage": 7.4074074074074066
+                },
+                {
+                    "concept": "international business",
+                    "frequency": 1,
+                    "percentage": 3.7037037037037033
+                },
+                {
+                    "concept": "hospitality",
+                    "frequency": 1,
+                    "percentage": 3.7037037037037033
+                },
+                {
+                    "concept": "technology",
+                    "frequency": 1,
+                    "percentage": 3.7037037037037033
+                },
+                {
+                    "concept": "human resource management",
+                    "frequency": 1,
+                    "percentage": 3.7037037037037033
+                },
+                {
+                    "concept": "business administration",
+                    "frequency": 1,
+                    "percentage": 3.7037037037037033
+                },
+                {
+                    "concept": "supply chain management",
+                    "frequency": 1,
+                    "percentage": 3.7037037037037033
+                },
+                {
+                    "concept": "general business",
+                    "frequency": 1,
+                    "percentage": 3.7037037037037033
+                }
+            ]
+        },
+        "college of management": {
+            "total_departments": 15,
+            "total_concepts": 14,
+            "filtered_concepts": 10,
+            "top_concepts": [
+                {
+                    "concept": "entrepreneurship",
+                    "frequency": 2,
+                    "percentage": 13.333333333333334
+                },
+                {
+                    "concept": "international business",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "marketing",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "technology",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "decision",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "risk",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "business law",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "society",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "accountancy",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "corporate innovation",
+                    "frequency": 1,
+                    "percentage": 6.666666666666667
+                }
+            ]
+        },
+        "college of medicine": {
+            "total_departments": 95,
+            "total_concepts": 81,
+            "filtered_concepts": 67,
+            "top_concepts": [
+                {
+                    "concept": "immunology",
+                    "frequency": 4,
+                    "percentage": 4.2105263157894735
+                },
+                {
+                    "concept": "gynecology",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "neurology",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "microbiology",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "biochemistry",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "critical care medicine",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "pulmonary medicine",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "pharmacology",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "endocrinology",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "metabolism",
+                    "frequency": 2,
+                    "percentage": 2.1052631578947367
+                },
+                {
+                    "concept": "emergency medicine",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "physical medicine",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "rehabilitation",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "molecular medicine",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "child development",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "radiation medicine",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "anesthesia",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "perioperative medicine",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "laboratory medicine",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "pathology",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "pulmonary disease",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "structural biology",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "gerontology",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "palliative",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                },
+                {
+                    "concept": "classical hematology",
+                    "frequency": 1,
+                    "percentage": 1.0526315789473684
+                }
+            ]
+        },
+        "college of natural scienc": {
+            "total_departments": 2,
+            "total_concepts": 2,
+            "filtered_concepts": 2,
+            "top_concepts": [
+                {
+                    "concept": "biochemistry",
+                    "frequency": 1,
+                    "percentage": 50.0
+                },
+                {
+                    "concept": "molecular biology",
+                    "frequency": 1,
+                    "percentage": 50.0
+                }
+            ]
+        },
+        "college of engineering": {
+            "total_departments": 58,
+            "total_concepts": 46,
+            "filtered_concepts": 33,
+            "top_concepts": [
+                {
+                    "concept": "chemical engineering",
+                    "frequency": 5,
+                    "percentage": 8.620689655172415
+                },
+                {
+                    "concept": "environmental engineering",
+                    "frequency": 3,
+                    "percentage": 5.172413793103448
+                },
+                {
+                    "concept": "industrial engineering",
+                    "frequency": 2,
+                    "percentage": 3.4482758620689653
+                },
+                {
+                    "concept": "biomedical engineering",
+                    "frequency": 2,
+                    "percentage": 3.4482758620689653
+                },
+                {
+                    "concept": "aerospace engineering",
+                    "frequency": 2,
+                    "percentage": 3.4482758620689653
+                },
+                {
+                    "concept": "mechanical engineering",
+                    "frequency": 2,
+                    "percentage": 3.4482758620689653
+                },
+                {
+                    "concept": "civil engineering",
+                    "frequency": 2,
+                    "percentage": 3.4482758620689653
+                },
+                {
+                    "concept": "electrical engineering",
+                    "frequency": 2,
+                    "percentage": 3.4482758620689653
+                },
+                {
+                    "concept": "nuclear engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "engineering technology",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "industrial distribution",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "marine engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "naval architecture",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "textile chemistry",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "textile engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "textile science",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "biomolecular engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "information engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "computer science",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "data science",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "ocean engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "multidisciplinary engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "construction engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                },
+                {
+                    "concept": "macromolecular engineering",
+                    "frequency": 1,
+                    "percentage": 1.7241379310344827
+                }
+            ]
+        },
+        "college of law": {
+            "total_departments": 24,
+            "total_concepts": 24,
+            "filtered_concepts": 20,
+            "top_concepts": [
+                {
+                    "concept": "tax law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "health law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "energy law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "environmental law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "clinical legal education",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "employment law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "labor law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "administrative law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "professional responsibility",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "corporate law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "constitutional law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "criminal law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "comparative law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "international law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "public interest law",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "antitrust",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "intellectual property",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "legal history",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "legal research",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                },
+                {
+                    "concept": "legal writing",
+                    "frequency": 1,
+                    "percentage": 4.166666666666666
+                }
+            ]
+        },
+        "college of language study": {
+            "total_departments": 30,
+            "total_concepts": 27,
+            "filtered_concepts": 14,
+            "top_concepts": [
+                {
+                    "concept": "german",
+                    "frequency": 2,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "french",
+                    "frequency": 2,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "spanish",
+                    "frequency": 2,
+                    "percentage": 6.666666666666667
+                },
+                {
+                    "concept": "american sign language",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "modern foreign language",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "italian",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "russian",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "english",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "arabic",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "chinese",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "japanese",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "comparative literature",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "language teaching",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                },
+                {
+                    "concept": "portuguese",
+                    "frequency": 1,
+                    "percentage": 3.3333333333333335
+                }
+            ]
+        },
+        "college of public health": {
+            "total_departments": 39,
+            "total_concepts": 30,
+            "filtered_concepts": 18,
+            "top_concepts": [
+                {
+                    "concept": "epidemiology",
+                    "frequency": 3,
+                    "percentage": 7.6923076923076925
+                },
+                {
+                    "concept": "global health",
+                    "frequency": 2,
+                    "percentage": 5.128205128205128
+                },
+                {
+                    "concept": "health",
+                    "frequency": 2,
+                    "percentage": 5.128205128205128
+                },
+                {
+                    "concept": "health policy",
+                    "frequency": 2,
+                    "percentage": 5.128205128205128
+                },
+                {
+                    "concept": "environmental health",
+                    "frequency": 2,
+                    "percentage": 5.128205128205128
+                },
+                {
+                    "concept": "health management",
+                    "frequency": 2,
+                    "percentage": 5.128205128205128
+                },
+                {
+                    "concept": "health behavior",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "health promotion",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "nutrition",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "population",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "family health",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "reproductive health",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "international health",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "health administration",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "immunology",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "environmental engineering",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "behavior",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                },
+                {
+                    "concept": "society",
+                    "frequency": 1,
+                    "percentage": 2.564102564102564
+                }
+            ]
+        },
+        "college of social scienc": {
+            "total_departments": 16,
+            "total_concepts": 16,
+            "filtered_concepts": 8,
+            "top_concepts": [
+                {
+                    "concept": "political science",
+                    "frequency": 1,
+                    "percentage": 6.25
+                },
+                {
+                    "concept": "environment",
+                    "frequency": 1,
+                    "percentage": 6.25
+                },
+                {
+                    "concept": "geography",
+                    "frequency": 1,
+                    "percentage": 6.25
+                },
+                {
+                    "concept": "neuroscience",
+                    "frequency": 1,
+                    "percentage": 6.25
+                },
+                {
+                    "concept": "psychology",
+                    "frequency": 1,
+                    "percentage": 6.25
+                },
+                {
+                    "concept": "cognitive science",
+                    "frequency": 1,
+                    "percentage": 6.25
+                },
+                {
+                    "concept": "regional planning",
+                    "frequency": 1,
+                    "percentage": 6.25
+                },
+                {
+                    "concept": "urban planning",
+                    "frequency": 1,
+                    "percentage": 6.25
+                }
+            ]
+        },
+        "college of health scienc": {
+            "total_departments": 44,
+            "total_concepts": 38,
+            "filtered_concepts": 21,
+            "top_concepts": [
+                {
+                    "concept": "public health",
+                    "frequency": 2,
+                    "percentage": 4.545454545454546
+                },
+                {
+                    "concept": "medical laboratory science",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "dental hygiene",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "behavioral health",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "nutrition",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "recreation",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "sport science",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "social health",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "physical therapy",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "applied physiology",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "kinesiology",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "athletic training",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "clinical nutrition",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "nursing",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "occupational science",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                },
+                {
+                    "concept": "occupational therapy",
+                    "frequency": 1,
+                    "percentage": 2.272727272727273
+                }
+            ]
+        },
+        "college of humanity": {
+            "total_departments": 3,
+            "total_concepts": 3,
+            "filtered_concepts": 0,
+            "top_concepts": []
+        }
+    },
+    "concept_college_distribution": {
+        "accountancy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "accounting": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "administrative law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "adolescent medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "aerospace engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "african american studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "african studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "agricultural education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "allergy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "allergy medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "allied health professions": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "american sign language": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "anatomy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "anesthesia": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "antitrust": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "applied physics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "applied physiology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "arabic": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "architectural engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "art history": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "arts management": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "athletic training": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "behavior": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "behavioral health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "behavioral sciences": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of medicine",
+                "college of public health"
+            ]
+        },
+        "biochemistry": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of medicine",
+                "college of natural scienc"
+            ]
+        },
+        "biological engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "biomedical engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "biomolecular engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "biostatistics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "biosystems engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "blood transplantation": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "brain sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "business administration": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "business analytics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "business economics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "business information systems": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "business law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "cardiothoracic surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "career education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "cell biology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "cell systems": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "cellular physiology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "cellular therapies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "chemical biology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "chemical engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "child development": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "chinese": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "civil engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "civil rights": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "classical hematology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "classics": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of art",
+                "college of language study"
+            ]
+        },
+        "climate sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "clinical immunology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "clinical laboratory technologies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "clinical legal education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "clinical nutrition": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "clinical sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "cognitive science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "communication": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "communication disorders": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "communication sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "communicative disorders": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "communicative sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "community health sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "comparative law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "comparative literature": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of art",
+                "college of language study"
+            ]
+        },
+        "computer engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "computer science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "constitutional law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "construction engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "corporate innovation": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "corporate law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "counseling": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "counselor education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "creative writing": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "criminal law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "critical care medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "culture": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "curriculum": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "dance": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "data science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "decision": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "dental hygiene": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "diabetes": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "diagnostic sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "early childhood education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "east asian languages": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "east asian literatures": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "economics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "education systems improvement science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "educational leadership": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "educational measurement": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "educational program development": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "educational psychology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "educational studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "electrical engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "elementary education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "emergency medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "employment law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "endocrinology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "energy law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "engineering physics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "engineering technology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "english": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of art",
+                "college of language study"
+            ]
+        },
+        "english as a second language": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "english education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "entrepreneurship": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of business",
+                "college of management"
+            ]
+        },
+        "environment": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "environmental engineering": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of engineering",
+                "college of public health"
+            ]
+        },
+        "environmental health": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of health scienc",
+                "college of public health"
+            ]
+        },
+        "environmental health sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "environmental law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "epidemiology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "ethnic studies": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of humanity",
+                "college of social scienc"
+            ]
+        },
+        "exceptional education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "exceptional student education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "exercise physiology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "family health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "family medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "film studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "finance": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "food sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "food systems": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "foreign language education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "foreign languages": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "french": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "gastroenterology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "gender studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "general academic pediatrics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "general business": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "general internal medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "general surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "genetic medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "genomic medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "geography": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "geological engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "geriatric medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "geriatrics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "german": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "gerontology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "global health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "graphic design": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "gynecology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "head and neck surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "health administration": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "health behavior": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "health informatics": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of medicine",
+                "college of public health"
+            ]
+        },
+        "health information technology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "health law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "health management": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "health policy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "health promotion": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "health services management": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "health studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "hearing sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "hepatology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "higher education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "hospital medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "hospitality": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "human capital development": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "human capital education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "human health sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "human resource development": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "human resource management": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "human resources management": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "human rights": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "immunology": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of medicine",
+                "college of public health"
+            ]
+        },
+        "indo-pacific languages": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "indo-pacific literatures": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "industrial distribution": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "industrial engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "infectious disease": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "infectious diseases": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of medicine",
+                "college of public health"
+            ]
+        },
+        "information engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "instruction": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "instructional technology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "integrative physiology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "intellectual property": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "interdisciplinary education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "international business": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of business",
+                "college of management"
+            ]
+        },
+        "international health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "international law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "italian": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "japanese": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "jewish thought": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "kinesiology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "labor law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "laboratory medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "language": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "language sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "language teaching": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "latin american studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of humanity"
+            ]
+        },
+        "latino/a studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of humanity"
+            ]
+        },
+        "leadership": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "learning design": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "learning sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "legal ethics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "legal history": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "legal research": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "legal writing": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "lifelong learning": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "linguistic studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "linguistics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "literacy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "logistics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "macromolecular engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "macromolecular science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "management": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "management information systems": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of business",
+                "college of management"
+            ]
+        },
+        "marine engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "marketing": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of business",
+                "college of management"
+            ]
+        },
+        "marrow transplantation": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "materials engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "materials science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "mathematics education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "mathematics teaching": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "mechanical engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "mechanics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "media studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "medical laboratory science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "medical sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "metabolism": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "microbiology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "middle level education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "mining engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "modern foreign language": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "modern languages education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "molecular biology": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of medicine",
+                "college of natural scienc"
+            ]
+        },
+        "molecular genetics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "molecular medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "molecular sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "multidisciplinary engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "naval architecture": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "nephrology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "neurological surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "neurology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "neuroscience": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of medicine",
+                "college of social scienc"
+            ]
+        },
+        "newborn medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "nuclear engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "nursing": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "nutrition": {
+            "total_colleges": 3,
+            "colleges": [
+                "college of health scienc",
+                "college of medicine",
+                "college of public health"
+            ]
+        },
+        "nutrition sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "nutritional sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "obstetrics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "occupational health sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "occupational science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "occupational therapy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "ocean engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "operations": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "operations engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "operations research": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "optical engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "optical sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "organizations": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "orthopaedic surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "orthopaedics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "otolaryngology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "palliative": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "parks": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "pathology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "pediatric surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "performing arts": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "perioperative medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "petroleum engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "pharmacology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "physical education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "physical medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "physical therapy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "plastic surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "policy": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "policy studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "political science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "population": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "population health sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "portuguese": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "professional responsibility": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "psychiatry": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "psychological sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "psychological studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "psychology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "public health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "public health genetics": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "public health sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "public interest law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "pulmonary disease": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "pulmonary medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "radiation medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "radiologic technology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "radiological sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "reconstructive surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "recreation": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "regenerative medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "regional planning": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "rehabilitation": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "reproductive health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "reproductive sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "rheumatology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "risk": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of management"
+            ]
+        },
+        "romance languages": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "romance literatures": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "russian": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "school psychology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "science teaching": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "second language studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "secondary education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "secondary stem education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "securities law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "sexuality studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "sleep medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "social foundations of education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "social health": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "social science education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "social sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of public health"
+            ]
+        },
+        "social work": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "society": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of management",
+                "college of public health"
+            ]
+        },
+        "space engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "space sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "spanish": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "special education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "speech sciences": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "sport science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of health scienc"
+            ]
+        },
+        "structural biology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "student affairs": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "studio art": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "supply chain management": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of business"
+            ]
+        },
+        "surgical oncology": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "systems engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "tax law": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of law"
+            ]
+        },
+        "teacher education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "technical education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "technology": {
+            "total_colleges": 2,
+            "colleges": [
+                "college of business",
+                "college of management"
+            ]
+        },
+        "textile chemistry": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "textile engineering": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "textile science": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of engineering"
+            ]
+        },
+        "theatre": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of art"
+            ]
+        },
+        "transplantation surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "trauma surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "urban planning": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "vascular surgery": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        },
+        "women studies": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of social scienc"
+            ]
+        },
+        "workforce education": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of education"
+            ]
+        },
+        "world cultures": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "world languages": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "world literatures": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of language study"
+            ]
+        },
+        "young adult medicine": {
+            "total_colleges": 1,
+            "colleges": [
+                "college of medicine"
+            ]
+        }
     }
 }

@@ -19,6 +19,9 @@ from dotenv import load_dotenv
 import numpy as np
 from sentence_transformers import SentenceTransformer
 # from scipy.spatial.distance import cosine # Using numpy implementation instead
+import time
+import random
+from numpy.random import choice
 
 from generate_glossary.deduplicator.dedup_utils import (
     normalize_text,
@@ -70,24 +73,36 @@ def calculate_embedding_similarity(embedding1: Optional[np.ndarray], embedding2:
     return float(similarity)
 
 
-def init_llm(provider: Optional[str] = None) -> BaseLLM:
+def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
     """
-    Initialize LLM with specified provider
+    Initialize LLM with specified provider and model
     
     Args:
         provider: Optional provider name
+        model: Optional model name ("default" or "mini")
         
     Returns:
         LLM instance
     """
     if not provider:
         provider = Provider.OPENAI
+    
+    # Choose appropriate model based on parameter
+    if model is None:
+        model = "default"
+    selected_model = GEMINI_MODELS[model] if provider == Provider.GEMINI else OPENAI_MODELS[model]
         
     return LLMFactory.create_llm(
         provider=provider,
-        model=GEMINI_MODELS["default"] if provider == Provider.GEMINI else OPENAI_MODELS["default"],
+        model=selected_model,
         temperature=0
     )
+
+def get_random_llm_config() -> Tuple[str, str]:
+    """Get a random LLM provider and model configuration"""
+    provider = choice([Provider.OPENAI, Provider.GEMINI])
+    model = choice(["pro", "default"], p=[0.4, 0.6])
+    return provider, model
 
 @timing_decorator
 def deduplicate_graph_based(
@@ -98,32 +113,40 @@ def deduplicate_graph_based(
     cache_dir: Optional[str] = None,
     current_level: Optional[int] = None,
 ) -> DeduplicationResult:
-    """Graph-based deduplication that combines rule-based and web-based approaches.
+    """
+    Deduplicate terms using a graph-based approach.
 
-    This function builds a graph where:
-    - Nodes are terms
-    - Edges indicate terms are variations of each other
-    - Edge weights indicate confidence in the relationship
-
-    This implementation adopts a more conservative approach:
-    1. Higher URL overlap thresholds to avoid spurious connections
-    2. Level-aware processing to respect boundaries
-    3. No hierarchical relationships to avoid false positives
+    Builds a graph where nodes are terms and edges represent similarity relationships.
+    Uses a multi-criteria approach to select canonical terms with clear priority rules.
 
     Args:
-        terms_by_level: Dictionary mapping level numbers to lists of terms
-        web_content: Optional dictionary mapping terms to their web content
-        url_overlap_threshold: Minimum number of overlapping URLs required (default: 5)
-        min_relevance_score: Minimum relevance score for content to be considered relevant
-        cache_dir: Optional directory to cache/load graph data for incremental processing
-        current_level: Optional current level being processed (for incremental processing)
+        terms_by_level: Dict mapping level numbers to lists of terms
+        web_content: Optional dict mapping terms to lists of WebContent objects
+        url_overlap_threshold: Minimum number of shared URLs to consider terms related
+        min_relevance_score: Minimum relevance score for content to be considered
+        cache_dir: Optional directory to cache embeddings
+        current_level: Optional specific level to focus on
 
     Returns:
-        DeduplicationResult with terms and variations, respecting level boundaries
+        DeduplicationResult with deduplicated terms and variation info
     """
-    logging.info(
-        f"Starting graph-based deduplication with {sum(len(terms) for terms in terms_by_level.values())} terms"
-    )
+    logging.info("Starting graph-based deduplication")
+
+    # Check for overlapping terms between levels
+    all_terms = set()
+    overlap_terms = set()
+    for level, terms in terms_by_level.items():
+        for term in terms:
+            if term in all_terms:
+                overlap_terms.add(term)
+            else:
+                all_terms.add(term)
+    
+    # Initialize the base NetworkX graph
+    G = nx.Graph()
+    
+    # Determine terms to process in this run
+    terms_to_process = terms_by_level
 
     # Figure out current level if not provided explicitly
     if current_level is None:
@@ -133,6 +156,8 @@ def deduplicate_graph_based(
     G = None
     term_embeddings = {}
     cached_levels = set()
+    cached_had_web_content = False
+    cached_levels_with_web_content = set()  # Track which levels had web content
     
     if cache_dir:
         try:
@@ -146,6 +171,8 @@ def deduplicate_graph_based(
             graph_cache_path = os.path.join(cache_dir, "graph_cache.pickle")
             embeddings_cache_path = os.path.join(cache_dir, "embeddings_cache.pickle")
             levels_cache_path = os.path.join(cache_dir, "processed_levels.pickle")
+            web_content_flag_path = os.path.join(cache_dir, "had_web_content.pickle")
+            web_content_levels_path = os.path.join(cache_dir, "levels_with_web_content.pickle")
             
             # Check if cache files exist
             if os.path.exists(graph_cache_path) and os.path.exists(embeddings_cache_path) and os.path.exists(levels_cache_path):
@@ -163,14 +190,47 @@ def deduplicate_graph_based(
                 with open(levels_cache_path, "rb") as f:
                     cached_levels = pickle.load(f)
                     
+                # Load web content flag if it exists
+                if os.path.exists(web_content_flag_path):
+                    with open(web_content_flag_path, "rb") as f:
+                        cached_had_web_content = pickle.load(f)
+                
+                # Load levels with web content if file exists
+                if os.path.exists(web_content_levels_path):
+                    with open(web_content_levels_path, "rb") as f:
+                        cached_levels_with_web_content = pickle.load(f)
+                
                 logging.info(f"Loaded cached graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
                 logging.info(f"Loaded embeddings for {len(term_embeddings)} terms")
                 logging.info(f"Previously processed levels: {cached_levels}")
+                logging.info(f"Previous run had web content: {cached_had_web_content}")
+                logging.info(f"Previous levels with web content: {cached_levels_with_web_content}")
+                
+                # Determine which levels have web content in the current run
+                current_levels_with_web_content = set()
+                if web_content:
+                    # Check which levels have terms with web content
+                    for level, terms in terms_by_level.items():
+                        for term in terms:
+                            if term in web_content and web_content[term]:
+                                current_levels_with_web_content.add(level)
+                                break
+                
+                logging.info(f"Current levels with web content: {current_levels_with_web_content}")
+                
+                # Force reprocessing for levels where web content is newly available
+                levels_to_reprocess = current_levels_with_web_content - cached_levels_with_web_content
+                if levels_to_reprocess:
+                    logging.info(f"Web content newly available for levels: {levels_to_reprocess}. Will reprocess these levels.")
+                    cached_levels = cached_levels - levels_to_reprocess
+                
         except Exception as e:
             logging.error(f"Error loading cached graph data: {e}. Building new graph from scratch.")
             G = None
             term_embeddings = {}
             cached_levels = set()
+            cached_had_web_content = False
+            cached_levels_with_web_content = set()
 
     logging.info("Initializing embedding model...")
     # Ensure you handle model loading appropriately (e.g., download if needed)
@@ -246,6 +306,7 @@ def deduplicate_graph_based(
                 terms_to_process[level] = terms_by_level[level]
         
         if terms_to_process:
+            logging.info(f"Adding rule-based edges for {sum(len(terms) for terms in terms_to_process.values())} new terms")
             G = add_rule_based_edges(G, terms_to_process)
 
         # 3. Add compound term edges for new terms
@@ -254,20 +315,23 @@ def deduplicate_graph_based(
         # But only process the new terms for compound relationships
         new_terms = [term for level, terms in terms_to_process.items() for term in terms]
         if new_terms:
+            logging.info(f"Adding compound term edges for {len(new_terms)} new terms")
             G = add_compound_term_edges(G, all_terms, new_terms)
 
         # 4. Add web-based relationships if web content is available
         if web_content:
-            # For web-based edges, we need to consider terms from all levels
-            # to find relationships between new terms and existing terms
-            G = add_web_based_edges(
-                G,
-                terms_by_level,
-                web_content,
-                url_overlap_threshold=url_overlap_threshold,
-                min_relevance_score=min_relevance_score,
-                levels_to_process=levels_to_process,
-            )
+            # Check if we actually have web content for any of the new terms
+            new_terms_with_content = [t for t in new_terms if t in web_content and web_content[t]]
+            if new_terms_with_content:
+                logging.info(f"Found web content for {len(new_terms_with_content)} new terms, adding web-based edges")
+                G = add_web_based_edges(
+                    G,
+                    terms_by_level,
+                    web_content,
+                    levels_to_process=levels_to_process,
+                )
+            else:
+                logging.info("No web content found for new terms, skipping web-based edge addition")
 
         # 5. Add level weighting information
         G = add_level_weights_to_edges(G, terms_by_level)
@@ -275,8 +339,13 @@ def deduplicate_graph_based(
         # 6. Find and add explicit transitive relationships 
         # Only process transitive relationships involving new terms
         new_terms_set = set(new_terms)
+        logging.info(f"Finding transitive relationships for {len(new_terms_set)} new terms")
         transitive_edges = find_transitive_relationships(G, all_terms, new_terms_set)
-        G.add_edges_from(transitive_edges)
+        if transitive_edges:
+            logging.info(f"Adding {len(transitive_edges)} transitive edges to graph")
+            G.add_edges_from(transitive_edges)
+        else:
+            logging.info("No transitive edges found")
 
     # 7. Select canonical terms for each connected component, respecting level boundaries
     canonical_mapping = select_canonical_terms(G, terms_by_level)
@@ -300,6 +369,8 @@ def deduplicate_graph_based(
             graph_cache_path = os.path.join(cache_dir, "graph_cache.pickle")
             embeddings_cache_path = os.path.join(cache_dir, "embeddings_cache.pickle")
             levels_cache_path = os.path.join(cache_dir, "processed_levels.pickle")
+            web_content_flag_path = os.path.join(cache_dir, "had_web_content.pickle")
+            web_content_levels_path = os.path.join(cache_dir, "levels_with_web_content.pickle")
             
             # Save graph
             with open(graph_cache_path, "wb") as f:
@@ -314,7 +385,26 @@ def deduplicate_graph_based(
             with open(levels_cache_path, "wb") as f:
                 pickle.dump(cached_levels, f)
                 
+            # Save web content flag
+            with open(web_content_flag_path, "wb") as f:
+                pickle.dump(bool(web_content), f)
+                
+            # Determine which levels have web content in this run
+            current_levels_with_web_content = set()
+            if web_content:
+                # Check which levels have terms with web content
+                for level, terms in terms_by_level.items():
+                    for term in terms:
+                        if term in web_content and web_content[term]:
+                            current_levels_with_web_content.add(level)
+                            break
+            
+            # Save levels with web content
+            with open(web_content_levels_path, "wb") as f:
+                pickle.dump(current_levels_with_web_content, f)
+                
             logging.info(f"Cached graph data saved to {cache_dir}")
+            logging.info(f"Saved levels with web content: {current_levels_with_web_content}")
         except Exception as e:
             logging.error(f"Error saving cached graph data: {e}")
 
@@ -396,7 +486,7 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         Updated graph with rule-based relationship edges
     """
     initial_edge_count = G.number_of_edges()
-
+    
     # Create term to level mapping
     term_to_level = {}
     for level, terms in terms_by_level.items():
@@ -404,7 +494,14 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
             term_to_level[term] = level
 
     all_terms = [term for terms in terms_by_level.values() for term in terms]
-
+    
+    # Create dictionaries to quickly look up terms
+    all_terms_lower = {term.lower(): term for term in all_terms}
+    
+    # OPTIMIZATION: Create indexes for fast lookups
+    # Index terms by their base forms for fast lookup
+    term_base_index = {}
+    
     # Define the academic suffixes to check
     ACADEMIC_SUFFIXES = [
         "studies",
@@ -420,7 +517,7 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         "principles",
     ]
 
-    # Create a mapping of plural/singular forms for the suffixes
+    # Variations of academic suffixes (singular forms, etc.)
     SUFFIX_VARIATIONS = {
         # Plural -> Singular
         "studies": "study",
@@ -437,6 +534,7 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         "science": "sciences",
         "technology": "technologies",
         "technique": "techniques",
+        "system": "systems",
         "algorithm": "algorithms",
         "system": "systems",
         "theory": "theories",
@@ -447,6 +545,9 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         "research": "research",
     }
 
+    # All forms combined for efficient iteration
+    all_suffix_forms = list(ACADEMIC_SUFFIXES) + list(SUFFIX_VARIATIONS.keys())
+
     # Define morphological variants for academic terms
     MORPHOLOGICAL_VARIANTS = {
         # Base form -> Adjectival form
@@ -455,6 +556,8 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         "economics": "economic",
         "biology": "biological",
         "chemistry": "chemical",
+        "health": "healthcare",
+        "health": "health care",
         "history": "historical",
         "geography": "geographical",
         "philosophy": "philosophical",
@@ -482,6 +585,8 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         "economic": "economics",
         "biological": "biology",
         "chemical": "chemistry",
+        "healthcare": "health",
+        "health care": "health",
         "historical": "history",
         "geographical": "geography",
         "philosophical": "philosophy",
@@ -504,427 +609,312 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         "legal": "law",
     }
 
-    # Combine original suffixes with their variations
-    all_suffix_forms = set(ACADEMIC_SUFFIXES + list(SUFFIX_VARIATIONS.keys()))
+    # British/American spelling variations
+    # Note: SPELLING_VARIATIONS is also defined globally, ensure consistency or use one definition
+    LOCAL_SPELLING_VARIATIONS = [
+        ("re", "er"),  # centre/center
+        ("our", "or"),  # colour/color
+        ("ence", "ense"),  # defence/defense
+        ("ogue", "og"),  # dialogue/dialog
+        ("ise", "ize"),  # organise/organize
+        ("yse", "yze"),  # analyse/analyze
+        ("ll", "l"),  # modelling/modeling
+        ("ae", "e"),  # anaemia/anemia
+        ("mme", "m"),  # programme/program
+    ]
 
-    # Pre-compute variations for all terms
-    term_variations = {term: get_term_variations(term) for term in all_terms}
-    plural_variations = {term: get_plural_variations(term) for term in all_terms}
-    spelling_variations = {term: get_spelling_variations(term) for term in all_terms}
-    dash_variations = {term: get_dash_space_variations(term) for term in all_terms}
+    # --- Refactored Plural/Singular Handling using NLTK Lemmatizer ---
+    logging.info("Using NLTK WordNet Lemmatizer for plural/singular detection.")
+    try:
+        from nltk.corpus import wordnet
+        from nltk import pos_tag, word_tokenize # Ensure these are available/imported
+        # Download necessary NLTK data if not present (optional, can be done beforehand)
+        # nltk.download('punkt', quiet=True)
+        # nltk.download('averaged_perceptron_tagger', quiet=True)
+        # nltk.download('wordnet', quiet=True)
+    except ImportError:
+        logging.error("NLTK components (wordnet, pos_tag, word_tokenize) not found. Cannot perform lemmatization.")
+        return G # Cannot proceed without NLTK
 
-    # Create lookup dictionaries for faster matching
-    plural_lookup = {}
-    for term, variations in plural_variations.items():
-        for var in variations:
-            if var not in plural_lookup:
-                plural_lookup[var] = set()
-            plural_lookup[var].add(term)
+    def get_wordnet_pos(treebank_tag):
+        # Map Treebank POS tags to WordNet POS tags for lemmatizer
+        if treebank_tag.startswith('J'):
+            return wordnet.ADJ
+        elif treebank_tag.startswith('V'):
+            return wordnet.VERB
+        elif treebank_tag.startswith('N'):
+            return wordnet.NOUN
+        elif treebank_tag.startswith('R'):
+            return wordnet.ADV
+        else:
+            return wordnet.NOUN # Default to noun if tag is unknown
 
-    spelling_lookup = {}
-    for term, variations in spelling_variations.items():
-        for var in variations:
-            if var not in spelling_lookup:
-                spelling_lookup[var] = set()
-            spelling_lookup[var].add(term)
+    lemmatizer = nltk.WordNetLemmatizer()
+    lemma_to_terms = defaultdict(set)
 
-    dash_lookup = {}
-    for term, variations in dash_variations.items():
-        for var in variations:
-            if var not in dash_lookup:
-                dash_lookup[var] = set()
-            dash_lookup[var].add(term)
+    logging.info("Generating lemmas for terms...")
+    for term in tqdm(all_terms, desc="Lemmatizing"):
+        term_lower = term.lower()
+        tokens = word_tokenize(term_lower)
+        if not tokens:
+            continue # Skip empty terms
+            
+        tagged_tokens = pos_tag(tokens)
+        last_word, last_tag = tagged_tokens[-1]
+        wn_tag = get_wordnet_pos(last_tag)
+        
+        # Lemmatize the last word using its POS tag
+        lemma = lemmatizer.lemmatize(last_word, pos=wn_tag)
 
-    # Process each term for academic suffix variations
+        # Construct the lemma key: use preceding words + lemma of last word
+        lemma_key = " ".join(tokens[:-1] + [lemma]) if len(tokens) > 1 else lemma
+        
+        # Map the constructed lemma key back to the original term
+        lemma_to_terms[lemma_key].add(term)
+
+        # Debugging for specific case
+        if term_lower == 'infectious disease' or term_lower == 'infectious diseases':
+            logging.info(f"LEMMA GEN: Term='{term}', Lemma Key='{lemma_key}', Mapped Terms={lemma_to_terms[lemma_key]}")
+
+    logging.info("Adding edges based on shared lemmas...")
+    edges_added_lemma = 0
+    for lemma, terms_with_lemma in lemma_to_terms.items():
+        if len(terms_with_lemma) > 1:
+            # Add edges between all pairs of terms sharing this lemma
+            for term1, term2 in itertools.combinations(terms_with_lemma, 2):
+                 if not G.has_edge(term1, term2): # Check if edge already exists
+                     level1 = term_to_level.get(term1, float("inf"))
+                     level2 = term_to_level.get(term2, float("inf"))
+                     is_cross_level = level1 != level2
+                     reason = f"Share common lemma based on last word: '{lemma}'"
+                     # Use a helper function for attributes if available, otherwise define dict directly
+                     attrs = {
+                         "relationship_type": "rule",
+                         "detection_method": "lemma_match",
+                         "strength": 1.0,
+                         "is_cross_level": is_cross_level,
+                         "reason": reason,
+                     }
+                     G.add_edge(term1, term2, **attrs)
+                     edges_added_lemma += 1
+                     # Log specific pair addition
+                     if set([term1.lower(), term2.lower()]) == set(['infectious diseases', 'infectious disease']):
+                         logging.info(f"LEMMA ADD: Added edge ('{term1}', '{term2}') based on lemma '{lemma}'")
+                     else:
+                         logging.debug(f"Adding lemma edge: '{term1}' <-> '{term2}' (Lemma: '{lemma}')")
+
+    logging.info(f"Added {edges_added_lemma} lemma-based (plural/singular) edges")
+    # --- End Refactored Plural/Singular Handling ---
+    
+    # --- Keep existing logic for other rule types (Suffix, Spelling, Dash) ---
+
+    # Initialize collections for spelling and dash variations
+    spelling_variations = defaultdict(set)
+    spelling_lookup = defaultdict(set)
+    dash_variations = defaultdict(set)
+    dash_lookup = defaultdict(set)
+    
+    # Populate spelling and dash variations (can be done in the same term loop)
+    logging.info("Processing spelling and dash variations...")
+    for term in tqdm(all_terms, desc="Spelling/Dash Variations"):
+        term_lower = term.lower()
+        
+        # Add spelling variations
+        for british, american in LOCAL_SPELLING_VARIATIONS:
+            if british in term_lower:
+                american_form = term_lower.replace(british, american)
+                if american_form in all_terms_lower: # Check if variation exists
+                    spelling_variations[term].add(all_terms_lower[american_form])
+                    spelling_lookup[all_terms_lower[american_form]].add(term)
+            if american in term_lower:
+                british_form = term_lower.replace(american, british)
+                if british_form in all_terms_lower: # Check if variation exists
+                    spelling_variations[term].add(all_terms_lower[british_form])
+                    spelling_lookup[all_terms_lower[british_form]].add(term)
+        
+        # Add dash-space variations
+        if "-" in term_lower:
+            space_form = term_lower.replace("-", " ")
+            if space_form in all_terms_lower: # Check if variation exists
+                dash_variations[term].add(all_terms_lower[space_form])
+                dash_lookup[all_terms_lower[space_form]].add(term)
+        if " " in term_lower:
+            dash_form = term_lower.replace(" ", "-")
+            if dash_form in all_terms_lower: # Check if variation exists
+                dash_variations[term].add(all_terms_lower[dash_form])
+                dash_lookup[all_terms_lower[dash_form]].add(term)
+
+    # OPTIMIZATION: Process academic suffix variations using indexing
+    logging.info("Processing academic suffix and morphological variations")
+    
+    # First, index terms by their base forms (to quickly find potential matches)
+    # This indexing might need refinement depending on requirements
+    for term in all_terms:
+        term_lower = term.lower()
+        term_base_index[term_lower] = term # Store direct term mapping
+        for suffix in all_suffix_forms:
+            if term_lower.endswith(f" {suffix}"):
+                base = term_lower[:-len(suffix)-1].strip()
+                if base:
+                    # Store mapping from base to term_with_suffix
+                    # This assumes base forms might map to multiple suffixed terms
+                    if base not in term_base_index:
+                        term_base_index[base] = set()
+                    # Ensure we're adding to a set
+                    if isinstance(term_base_index[base], str): # If base existed as a direct term
+                        term_base_index[base] = {term_base_index[base]} # Convert to set
+                    if isinstance(term_base_index[base], set):
+                         term_base_index[base].add(term)
+    
+    # Academic suffix pairs for batch processing
     academic_suffix_pairs = []
 
+    # Process morphological variants more efficiently using the index
     for term1 in all_terms:
-        level1 = term_to_level.get(term1, float("inf"))
         term1_lower = term1.lower()
-
-        # Check if term1 ends with an academic suffix
-        # Using word boundary check to avoid matching within words like "disorders"
-        has_suffix = False
-        matching_suffix = None
-        canonical_suffix = None
-
-        for suffix in all_suffix_forms:
-            # Check if term ends with the suffix as a whole word
-            if term1_lower.endswith(f" {suffix}"):
-                has_suffix = True
-                matching_suffix = suffix
-                # Get the canonical form of the suffix (prefer plural forms)
-                if suffix in SUFFIX_VARIATIONS and not suffix in ACADEMIC_SUFFIXES:
-                    canonical_suffix = SUFFIX_VARIATIONS[suffix]
-                else:
+        level1 = term_to_level.get(term1, float("inf"))
+        
+        # CASE 1: Is term1 a base form that has morphological variants?
+        if term1_lower in MORPHOLOGICAL_VARIANTS:
+            adjectival_form = MORPHOLOGICAL_VARIANTS[term1_lower]
+            for suffix in all_suffix_forms:
+                combined = f"{adjectival_form} {suffix}"
+                if combined in all_terms_lower:
+                    term2 = all_terms_lower[combined]
+                    level2 = term_to_level.get(term2, float("inf"))
                     canonical_suffix = suffix
-                break
-
-        # If term1 has a suffix, extract the base term and look for matches
-        if has_suffix and matching_suffix:
-            # Extract the base term (e.g., "biology" from "biology studies")
-            # Using proper word boundary to extract the exact base term
-            base_term = term1_lower[
-                : -len(matching_suffix) - 1
-            ].strip()  # -1 for the space
-
-            # Look for other terms that match this base term
-            for term2 in all_terms:
-                if term1 == term2:
-                    continue
-
-                level2 = term_to_level.get(term2, float("inf"))
-                is_cross_level = level1 != level2
-
-                # MODIFIED: Allow cross-level connections but track them for later
-
-                term2_lower = term2.lower()
-
-                # Check for direct match with base term
-                if term2_lower == base_term:
-                    # Direct match with base term
+                    if suffix in SUFFIX_VARIATIONS and suffix not in ACADEMIC_SUFFIXES:
+                        canonical_suffix = SUFFIX_VARIATIONS[suffix]
+                    academic_suffix_pairs.append(
+                        (term2, term1, canonical_suffix, level1 == level2, "morphological")
+                    )
+        
+        # CASE 2: Is term1 an adjectival form? (Requires reverse lookup)
+        # This part seems complex and might need MORPHOLOGICAL_VARIANTS to be bidirectional
+        # Assuming MORPHOLOGICAL_VARIANTS maps adj -> base as well for simplicity here
+        if term1_lower in MORPHOLOGICAL_VARIANTS: # Check if term1 is an adjectival form key
+             base_form = MORPHOLOGICAL_VARIANTS[term1_lower] # Get corresponding base
+             for suffix in all_suffix_forms:
+                 combined = f"{base_form} {suffix}"
+                 if combined in all_terms_lower:
+                     term2 = all_terms_lower[combined]
+                     level2 = term_to_level.get(term2, float("inf"))
+                     canonical_suffix = suffix
+                     if suffix in SUFFIX_VARIATIONS and suffix not in ACADEMIC_SUFFIXES:
+                         canonical_suffix = SUFFIX_VARIATIONS[suffix]
+                     academic_suffix_pairs.append(
+                         (term2, term1, canonical_suffix, level1 == level2, "morphological")
+                     )
+        
+        # CASE 3: Is term1 a term with an academic suffix?
+        for suffix in all_suffix_forms:
+            if term1_lower.endswith(f" {suffix}"):
+                base_term = term1_lower[:-len(suffix)-1].strip()
+                if base_term in all_terms_lower:
+                    term2 = all_terms_lower[base_term]
+                    level2 = term_to_level.get(term2, float("inf"))
+                    canonical_suffix = suffix
+                    if suffix in SUFFIX_VARIATIONS and suffix not in ACADEMIC_SUFFIXES:
+                        canonical_suffix = SUFFIX_VARIATIONS[suffix]
                     academic_suffix_pairs.append(
                         (term1, term2, canonical_suffix, level1 == level2)
                     )
-                    continue
-
-                # Check for morphological variants of the base term
-                if base_term in MORPHOLOGICAL_VARIANTS:
-                    adjectival_form = MORPHOLOGICAL_VARIANTS[base_term]
-                    if term2_lower == adjectival_form:
+                # Check if base term has a morphological variant that exists
+                if base_term in MORPHOLOGICAL_VARIANTS: # Is base_term a base that has an adjective form?
+                    morph_variant_adj = MORPHOLOGICAL_VARIANTS[base_term] # Get the adjective form
+                    if morph_variant_adj in all_terms_lower: # Does the adjective form exist as a term?
+                        term2 = all_terms_lower[morph_variant_adj] # The existing adj form term
+                        level2 = term_to_level.get(term2, float("inf"))
+                        canonical_suffix = suffix
+                        if suffix in SUFFIX_VARIATIONS and suffix not in ACADEMIC_SUFFIXES:
+                            canonical_suffix = SUFFIX_VARIATIONS[suffix]
                         academic_suffix_pairs.append(
-                            (
-                                term1,
-                                term2,
-                                canonical_suffix,
-                                level1 == level2,
-                                "morphological",
-                            )
-                        )
-                        continue
-
-                # Check if base_term is an adjectival form with a corresponding base form
-                if base_term in MORPHOLOGICAL_VARIANTS:
-                    base_form = MORPHOLOGICAL_VARIANTS[base_term]
-                    if term2_lower == base_form:
-                        academic_suffix_pairs.append(
-                            (
-                                term1,
-                                term2,
-                                canonical_suffix,
-                                level1 == level2,
-                                "morphological",
-                            )
-                        )
-                        continue
-
-                # FIX: Only match if term2 has another recognized academic suffix
-                elif term2_lower.startswith(f"{base_term} "):
-                    # Only match if the remaining part is another valid academic suffix
-                    remaining_part = term2_lower[len(base_term) :].strip()
-
-                    # Check if the remaining part is a valid academic suffix
-                    is_valid_suffix = False
-                    for other_suffix in all_suffix_forms:
-                        if (
-                            remaining_part == other_suffix
-                            or remaining_part == f"{other_suffix}"
-                        ):
-                            is_valid_suffix = True
-                            break
-
-                    if is_valid_suffix:
-                        academic_suffix_pairs.append(
-                            (term1, term2, canonical_suffix, level1 == level2)
+                            (term1, term2, canonical_suffix, level1 == level2, "morphological")
                         )
 
-        # Check if term1 is a base term that others have suffixes for
-        else:
-            # First, check if this term has a morphological variant (e.g., politics -> political)
-            if term1_lower in MORPHOLOGICAL_VARIANTS:
-                adjectival_form = MORPHOLOGICAL_VARIANTS[term1_lower]
-
-                # Look for terms using the adjectival form with an academic suffix
-                for term2 in all_terms:
-                    if term1 == term2:
-                        continue
-
-                    level2 = term_to_level.get(term2, float("inf"))
-                    is_cross_level = level1 != level2
-                    term2_lower = term2.lower()
-
-                    # Check if term2 starts with the adjectival form and ends with an academic suffix
-                    for suffix in all_suffix_forms:
-                        # Exact match pattern: the term must be exactly "{adjectival_form} {suffix}"
-                        # Not just starting with the adjectival form, to avoid cases like "medical laboratory science"
-                        if term2_lower == f"{adjectival_form} {suffix}":
-                            # Get the canonical form of the suffix
-                            if (
-                                suffix in SUFFIX_VARIATIONS
-                                and not suffix in ACADEMIC_SUFFIXES
-                            ):
-                                canonical_suffix = SUFFIX_VARIATIONS[suffix]
-                            else:
-                                canonical_suffix = suffix
-                            academic_suffix_pairs.append(
-                                (
-                                    term2,
-                                    term1,
-                                    canonical_suffix,
-                                    level1 == level2,
-                                    "morphological",
-                                )
-                            )
-
-            # Also check the regular case where term1 is a base term
-            for term2 in all_terms:
-                if term1 == term2:
-                    continue
-
-                level2 = term_to_level.get(term2, float("inf"))
-                is_cross_level = level1 != level2
-                term2_lower = term2.lower()
-
-                # Check if term1 is the adjectival form of a base that term2 extends
-                if term1_lower in MORPHOLOGICAL_VARIANTS:
-                    base_form = MORPHOLOGICAL_VARIANTS[term1_lower]
-
-                    for suffix in all_suffix_forms:
-                        # Exact match pattern: the term must be exactly "{base_form} {suffix}"
-                        if term2_lower == f"{base_form} {suffix}":
-                            if (
-                                suffix in SUFFIX_VARIATIONS
-                                and not suffix in ACADEMIC_SUFFIXES
-                            ):
-                                canonical_suffix = SUFFIX_VARIATIONS[suffix]
-                            else:
-                                canonical_suffix = suffix
-                            academic_suffix_pairs.append(
-                                (
-                                    term2,
-                                    term1,
-                                    canonical_suffix,
-                                    level1 == level2,
-                                    "morphological",
-                                )
-                            )
-
-                # Check if term2 has an academic suffix and is based on term1
-                for suffix in all_suffix_forms:
-                    if term2_lower.endswith(f" {suffix}"):
-                        # Extract the base term from term2 with proper word boundary
-                        base_term2 = term2_lower[
-                            : -len(suffix) - 1
-                        ].strip()  # -1 for the space
-
-                        # Check direct match
-                        if term1_lower == base_term2:
-                            # Get the canonical form of the suffix (prefer plural forms)
-                            if (
-                                suffix in SUFFIX_VARIATIONS
-                                and not suffix in ACADEMIC_SUFFIXES
-                            ):
-                                canonical_suffix = SUFFIX_VARIATIONS[suffix]
-                            else:
-                                canonical_suffix = suffix
-                            academic_suffix_pairs.append(
-                                (term2, term1, canonical_suffix, level1 == level2)
-                            )
-                            continue
-
-                        # Check if term1 is a morphological variant of base_term2
-                        # IMPORTANT: Only match if base_term2 is exactly the base form, not a compound term
-                        # This prevents matching "medical laboratory" with "medicine" because "medical" is not the whole term
-                        if (
-                            base_term2 in MORPHOLOGICAL_VARIANTS
-                            and term1_lower == MORPHOLOGICAL_VARIANTS[base_term2]
-                        ):
-                            # Additional check - make sure base_term2 is a single word or a known compound
-                            # This prevents matching multi-word terms like "medical laboratory" incorrectly
-                            if " " not in base_term2 or base_term2 in all_terms:
-                                if (
-                                    suffix in SUFFIX_VARIATIONS
-                                    and not suffix in ACADEMIC_SUFFIXES
-                                ):
-                                    canonical_suffix = SUFFIX_VARIATIONS[suffix]
-                                else:
-                                    canonical_suffix = suffix
-                                academic_suffix_pairs.append(
-                                    (
-                                        term2,
-                                        term1,
-                                        canonical_suffix,
-                                        level1 == level2,
-                                        "morphological",
-                                    )
-                                )
-
-    # Process the pairs and add edges
+    # --- Process Suffix/Morphological pairs --- 
+    logging.info(f"Processing {len(academic_suffix_pairs)} academic suffix/morphological pairs")
+    edges_added_suffix = 0
     for pair in academic_suffix_pairs:
-        if len(pair) == 5:
-            term_with_suffix, base_term, suffix, same_level, variant_type = pair
-            is_morphological = True
-        else:
-            term_with_suffix, base_term, suffix, same_level = pair
-            is_morphological = False
-
-        # Skip if we already have an edge
-        if G.has_edge(term_with_suffix, base_term):
-            continue
-
-        # MODIFIED: Add edges for both same-level and cross-level terms
-        level1 = term_to_level.get(term_with_suffix, float("inf"))
-        level2 = term_to_level.get(base_term, float("inf"))
-        is_cross_level = level1 != level2
-
-        # Prefer the term with the suffix as canonical
-        # For cross-level, mark the relationship but it will be handled during canonical selection
+        is_morphological = len(pair) == 5
         if is_morphological:
-            G.add_edge(
-                term_with_suffix,
-                base_term,
-                relationship_type="rule",
-                detection_method="morphological_suffix",
-                strength=1.0,
-                is_cross_level=is_cross_level,
-                reason=f"Morphological variation with suffix: '{suffix}' term preferred",
-            )
+            term_with_suffix, base_term, suffix, _, _ = pair # Unpack carefully
+            method = "morphological_suffix"
+            reason = f"Morphological variation with suffix: '{suffix}'"
         else:
-            G.add_edge(
-                term_with_suffix,
-                base_term,
-                relationship_type="rule",
-                detection_method="academic_suffix",
-                strength=1.0,
-                is_cross_level=is_cross_level,
-                reason=f"Academic suffix variation: '{suffix}' term preferred",
-            )
+            term_with_suffix, base_term, suffix, _ = pair
+            method = "academic_suffix"
+            reason = f"Academic suffix variation: '{suffix}'"
 
-    # Process each term for other variations (plural, spelling, dash)
-    for i, term1 in enumerate(all_terms):
-        level1 = term_to_level.get(term1, float("inf"))
+        if not G.has_edge(term_with_suffix, base_term):
+            level1 = term_to_level.get(term_with_suffix, float("inf"))
+            level2 = term_to_level.get(base_term, float("inf"))
+            is_cross_level = level1 != level2
+            attrs = {
+                "relationship_type": "rule",
+                "detection_method": method,
+                "strength": 1.0,
+                "is_cross_level": is_cross_level,
+                "reason": reason,
+            }
+            G.add_edge(term_with_suffix, base_term, **attrs)
+            edges_added_suffix += 1
+            logging.debug(f"Adding {method} edge: '{term_with_suffix}' <-> '{base_term}'")
+    logging.info(f"Added {edges_added_suffix} academic suffix/morphological edges")
 
-        # Get all variations of term1
-        term1_variations = term_variations[term1]
+    # --- Process Spelling and Dash variations --- 
+    logging.info("Adding edges for spelling and dash variations")
+    edges_added_spelling_dash = 0
+    
+    # Helper function for edge attributes if not defined globally
+    def edge_attrs(reason, method, cross_level):
+        return {
+            "relationship_type": "rule",
+            "detection_method": method,
+            "strength": 1.0,
+            "is_cross_level": cross_level,
+            "reason": reason,
+        }
+        
+    processed_pairs_spelling_dash = set() # Avoid duplicate checks
 
-        # Check for plural/singular variations
-        for var in plural_variations[term1]:
-            if var in plural_lookup:
-                for term2 in plural_lookup[var]:
-                    if term1 >= term2:  # Skip if we've already processed this pair
-                        continue
+    for term1 in all_terms:
+        # Check spelling variations
+        for term2 in spelling_variations.get(term1, set()):
+            pair = tuple(sorted((term1, term2)))
+            if pair in processed_pairs_spelling_dash or G.has_edge(term1, term2):
+                continue
+            processed_pairs_spelling_dash.add(pair)
+            
+            level1 = term_to_level.get(term1, float("inf"))
+            level2 = term_to_level.get(term2, float("inf"))
+            is_cross_level = level1 != level2
+            reason = f"Spelling variation detected"
+            attrs = edge_attrs(reason, "spelling_variation", is_cross_level)
+            G.add_edge(term1, term2, **attrs)
+            edges_added_spelling_dash += 1
+            logging.debug(f"Adding spelling edge: '{term1}' <-> '{term2}'")
 
-                    level2 = term_to_level.get(term2, float("inf"))
-                    is_cross_level = level1 != level2
+        # Check dash variations
+        for term2 in dash_variations.get(term1, set()):
+            pair = tuple(sorted((term1, term2)))
+            if pair in processed_pairs_spelling_dash or G.has_edge(term1, term2):
+                continue
+            processed_pairs_spelling_dash.add(pair)
 
-                    # MODIFIED: Allow cross-level connections but track them for later
+            level1 = term_to_level.get(term1, float("inf"))
+            level2 = term_to_level.get(term2, float("inf"))
+            is_cross_level = level1 != level2
+            reason = f"Dash/space variation detected"
+            attrs = edge_attrs(reason, "dash_space_variation", is_cross_level)
+            G.add_edge(term1, term2, **attrs)
+            edges_added_spelling_dash += 1
+            logging.debug(f"Adding dash/space edge: '{term1}' <-> '{term2}'")
+            
+    logging.info(f"Added {edges_added_spelling_dash} spelling/dash edges")
 
-                    # Determine relationship type based on levels
-                    relationship_type = "rule"
-
-                    # Determine which term should be canonical (prefer plural)
-                    if term1.endswith("s") and not term2.endswith("s"):
-                        G.add_edge(
-                            term1,
-                            term2,
-                            relationship_type=relationship_type,
-                            detection_method="plural_form",
-                            strength=1.0,
-                            is_cross_level=is_cross_level,
-                            reason="Plural form preferred",
-                        )
-                    elif term2.endswith("s") and not term1.endswith("s"):
-                        G.add_edge(
-                            term2,
-                            term1,
-                            relationship_type=relationship_type,
-                            detection_method="plural_form",
-                            strength=1.0,
-                            is_cross_level=is_cross_level,
-                            reason="Plural form preferred",
-                        )
-
-        # Check for spelling variations
-        for var in spelling_variations[term1]:
-            if var in spelling_lookup:
-                for term2 in spelling_lookup[var]:
-                    if term1 >= term2:  # Skip if we've already processed this pair
-                        continue
-
-                    level2 = term_to_level.get(term2, float("inf"))
-                    is_cross_level = level1 != level2
-
-                    # MODIFIED: Allow cross-level connections but track them for later
-
-                    # Determine relationship type based on levels
-                    relationship_type = "rule"
-
-                    # Find which spelling variation matched
-                    for british, american in SPELLING_VARIATIONS.items():
-                        if (british in term1.lower() and american in term2.lower()) or (
-                            american in term1.lower() and british in term2.lower()
-                        ):
-                            # Prefer American spelling as canonical
-                            if american in term2.lower():
-                                G.add_edge(
-                                    term2,
-                                    term1,
-                                    relationship_type=relationship_type,
-                                    detection_method="spelling_variation",
-                                    strength=1.0,
-                                    is_cross_level=is_cross_level,
-                                    reason=f"American spelling preferred: {british} -> {american}",
-                                )
-                            else:
-                                G.add_edge(
-                                    term1,
-                                    term2,
-                                    relationship_type=relationship_type,
-                                    detection_method="spelling_variation",
-                                    strength=1.0,
-                                    is_cross_level=is_cross_level,
-                                    reason=f"American spelling preferred: {british} -> {american}",
-                                )
-                            break
-
-        # Check for dash-space variations
-        for var in dash_variations[term1]:
-            if var in dash_lookup:
-                for term2 in dash_lookup[var]:
-                    if term1 >= term2:  # Skip if we've already processed this pair
-                        continue
-
-                    level2 = term_to_level.get(term2, float("inf"))
-                    is_cross_level = level1 != level2
-
-                    # MODIFIED: Allow cross-level connections but track them for later
-
-                    # Determine relationship type based on levels
-                    relationship_type = "rule"
-
-                    # Prefer the form without dashes
-                    if "-" in term1 and "-" not in term2:
-                        G.add_edge(
-                            term2,
-                            term1,
-                            relationship_type=relationship_type,
-                            detection_method="dash_space_variation",
-                            strength=1.0,
-                            is_cross_level=is_cross_level,
-                            reason="Space preferred over dash",
-                        )
-                    elif "-" in term2 and "-" not in term1:
-                        G.add_edge(
-                            term1,
-                            term2,
-                            relationship_type=relationship_type,
-                            detection_method="dash_space_variation",
-                            strength=1.0,
-                            is_cross_level=is_cross_level,
-                            reason="Space preferred over dash",
-                        )
-
-    logging.info(f"Added {G.number_of_edges() - initial_edge_count} rule-based edges")
+    total_rule_edges = edges_added_lemma + edges_added_suffix + edges_added_spelling_dash
+    logging.info(f"Added {total_rule_edges} total rule-based edges (Lemma: {edges_added_lemma}, Suffix/Morph: {edges_added_suffix}, Spelling/Dash: {edges_added_spelling_dash})")
     return G
 
 
@@ -946,25 +936,136 @@ def add_compound_term_edges(G: nx.Graph, terms: List[str], terms_to_process: Opt
     if terms_to_process is None:
         terms_to_process = terms
 
-    for term in terms_to_process:
-        compound_result = is_compound_term(term, terms)
-        if compound_result["is_compound"] and compound_result["should_remove"]:
-            # Add edges from this compound term to its atomic components
-            for atom in compound_result["atomic_terms"]:
-                # Find the actual term that matches this normalized atomic term
-                for actual_term in terms:
-                    if normalize_text(actual_term) == atom:
-                        G.add_edge(
-                            term,
-                            actual_term,
-                            relationship_type="compound",
-                            detection_method="compound_term",
-                        )
-                        break
+    # OPTIMIZATION: Pre-compute normalized terms for lookup
+    logging.info("Computing normalized terms for compound term detection")
+    normalized_terms = {normalize_text(term): term for term in terms}
+    
+    # Create lookup sets for fast membership checks
+    terms_set = set(terms)
+    normalized_terms_set = set(normalized_terms.keys())
+    
+    # OPTIMIZATION: Batch process terms
+    logging.info(f"Processing {len(terms_to_process)} terms for compound relationships")
+    
+    # Process in batches for logging progress
+    batch_size = 1000
+    term_batches = [terms_to_process[i:i+batch_size] for i in range(0, len(terms_to_process), batch_size)]
+    
+    edges_to_add = []
+    total_compounds = 0
+    
+    # Get the typical length of terms to help with filtering
+    term_lengths = [len(term.split()) for term in terms]
+    avg_term_length = sum(term_lengths) / len(term_lengths) if term_lengths else 3
+    max_common_length = max(2, int(avg_term_length * 0.7))  # Cap the common term length
 
-    logging.info(
-        f"Added {G.number_of_edges() - initial_edge_count} compound term edges"
-    )
+    for batch_idx, batch in enumerate(term_batches):
+        batch_compounds = 0
+        logging.info(f"Processing compound term batch {batch_idx+1}/{len(term_batches)} ({len(batch)} terms)")
+        
+        for term in batch:
+            # Skip terms not in the graph (should not happen, but just in case)
+            if term not in G:
+                continue
+                
+            # Normalize the term
+            term_norm = normalize_text(term)
+            
+            # Check if this is a compound term with "and" or commas
+            if ' and ' not in term_norm and ',' not in term_norm:
+                continue
+                
+            # Extract parts from the compound term
+            parts = []
+            for and_part in term_norm.split(' and '):
+                parts.extend(part.strip() for part in and_part.split(','))
+                
+            # Clean up parts and remove empty ones
+            atomic_terms_normalized = [part.strip() for part in parts if part.strip()]
+            
+            # Skip if no atomic terms found
+            if not atomic_terms_normalized:
+                continue
+            
+            # IMPROVED LOGIC: Filter out potential atomic terms that are too short or general
+            filtered_atomic_terms = []
+            for atom in atomic_terms_normalized:
+                # Skip very short terms (likely not meaningful on their own)
+                if len(atom.split()) < 2 and len(atomic_terms_normalized) > 1:
+                    # For single-word terms, only include if they're relatively uncommon words
+                    # This helps avoid matching general terms like "management", "science", etc.
+                    if atom in ["management", "science", "studies", "analysis", "research", 
+                                "education", "technology", "engineering", "arts", "design"]:
+                        continue
+                
+                # Skip very short substrings of the original compound
+                if len(atom.split()) < max_common_length and len(term_norm.split()) > 5:
+                    # Only include it if it appears as a standalone term
+                    if atom in normalized_terms_set:
+                        filtered_atomic_terms.append(atom)
+                else:
+                    filtered_atomic_terms.append(atom)
+            
+            # Skip if no valid atomic terms remain
+            if not filtered_atomic_terms:
+                continue
+                
+            # Check which atomic terms appear in the term list
+            found_terms_normalized = [atom for atom in filtered_atomic_terms if atom in normalized_terms_set]
+            
+            # IMPROVED LOGIC: Only consider it a valid compound if most atomic terms are found
+            # This helps prevent incorrect matching of general terms
+            if len(found_terms_normalized) < len(filtered_atomic_terms) * 0.5 or not found_terms_normalized:
+                continue
+            
+            # IMPROVED LOGIC: For terms with "and", ensure both sides of the "and" are represented
+            # This prevents cases like "risk analysis and management" -> "management"
+            if ' and ' in term_norm:
+                left_side = term_norm.split(' and ')[0].strip()
+                right_side = term_norm.split(' and ')[1].strip()
+                
+                # Check if at least one term from each side is represented
+                left_represented = any(atom in left_side for atom in found_terms_normalized)
+                right_represented = any(atom in right_side for atom in found_terms_normalized)
+                
+                # Skip if one side is completely unrepresented
+                if not (left_represented and right_represented) and len(found_terms_normalized) < 2:
+                    continue
+                
+            # Add edges from this compound term to its atomic components
+            # OPTIMIZATION: Use normalized_terms dictionary to find the original form
+            for atom_norm in found_terms_normalized:
+                actual_term = normalized_terms[atom_norm]
+                # Add edge
+                edges_to_add.append((
+                    term,
+                    actual_term,
+                    {
+                        "relationship_type": "compound",
+                        "detection_method": "compound_term",
+                        "strength": 0.9,
+                        "reason": f"Contains term as a component: '{actual_term}'"
+                    }
+                ))
+            
+            # Increment counter
+            batch_compounds += 1
+            
+        total_compounds += batch_compounds
+        logging.info(f"Found {batch_compounds} compound terms in batch {batch_idx+1}")
+    
+    # Add all edges at once
+    edges_added_count = 0 # Track actual edges added
+    if edges_to_add:
+        logging.info(f"Processing {len(edges_to_add)} potential compound term edges to graph")
+        for term, actual_term, attrs in edges_to_add:
+             if not G.has_edge(term, actual_term): # Check if edge already exists
+                G.add_edge(term, actual_term, **attrs)
+                edges_added_count += 1
+        # G.add_edges_from(edges_to_add) # Old way - replaced with checked loop
+
+    # logging.info(f"Processed {total_compounds} compound terms, added {G.number_of_edges() - initial_edge_count} edges") # Old log
+    logging.info(f"Processed {total_compounds} potential compound terms, added {edges_added_count} new compound edges") # Updated log
     return G
 
 
@@ -1068,25 +1169,19 @@ def add_web_based_edges(
     G: nx.Graph,
     terms_by_level: TermsByLevel,
     web_content: WebContent,
-    url_overlap_threshold: int = 2,  # Default threshold
-    min_relevance_score: float = 0.75,  # Default minimum relevance score
     levels_to_process: Optional[Set[int]] = None,  # Optional set of levels to process
 ) -> nx.Graph:
     """
-    Add edges to the graph based on web content overlap.
+    Add edges to the graph based on web content overlap and LLM verification.
 
-    Uses a conservative approach that prioritizes:
-    1. Higher URL overlap thresholds
-    2. URL quality assessment
-    3. Domain diversity
-    4. Level-aware relationship detection
+    New simplified logic:
+    1. If two terms share > 50% of their respective URLs, add a direct edge.
+    2. If terms share >= 1 URL but not > 50%, use LLM to verify the relationship based on shared content snippets.
 
     Args:
         G: NetworkX graph to add edges to
         terms_by_level: Dict mapping level numbers to lists of terms
         web_content: Dict mapping terms to their web content
-        url_overlap_threshold: Minimum number of overlapping URLs required
-        min_relevance_score: Minimum relevance score for web content
         levels_to_process: Optional set of level numbers to process (for incremental processing)
 
     Returns:
@@ -1101,28 +1196,26 @@ def add_web_based_edges(
 
     # Flatten terms_by_level into a single list - only process specified levels if provided
     all_terms = []
-    terms_to_process = []
+    terms_to_process_set = set()
     
     for level, terms in terms_by_level.items():
         all_terms.extend(terms)
         if levels_to_process is None or level in levels_to_process:
-            terms_to_process.extend(terms)
+            terms_to_process_set.update(terms)
 
-    logging.info(f"Processing web-based relationships for {len(terms_to_process)} terms out of {len(all_terms)} total terms")
-
-    # Filter to terms with web content
-    terms_with_content = [t for t in all_terms if t in web_content and web_content[t]]
-    terms_to_process_with_content = [t for t in terms_to_process if t in web_content and web_content[t]]
+    # Filter to terms with web content for efficient processing
+    terms_with_content = {t for t in all_terms if t in web_content and web_content[t]}
+    terms_to_process_with_content = list(terms_with_content & terms_to_process_set)
 
     logging.info(
-        f"{len(terms_with_content)} out of {len(all_terms)} terms have web content"
+        f"{len(terms_with_content)} out of {len(all_terms)} total terms have web content"
     )
     logging.info(
-        f"{len(terms_to_process_with_content)} out of {len(terms_to_process)} terms to process have web content"
+        f"Processing web-based relationships for {len(terms_to_process_with_content)} terms out of {len(terms_to_process_set)} specified terms"
     )
 
-    if not terms_with_content:
-        logging.warning("No terms with web content found")
+    if not terms_to_process_with_content:
+        logging.warning("No terms to process with web content found")
         return G
 
     # Create mapping from term to level
@@ -1131,280 +1224,127 @@ def add_web_based_edges(
         for term in terms:
             term_to_level[term] = level
 
-    # Create term URL and domain mappings
+    # --- Precompute URL sets and relevant content --- 
     term_urls = {}
-    term_domains = {}
-    term_relevant_content = {}
-    url_to_terms = defaultdict(set)
+    term_relevant_content = defaultdict(list) # Use defaultdict
 
-    logging.info("Building URL mappings")
-    for term in tqdm(terms_with_content, desc="Processing term URLs"):
-        # Initialize collections for this term
+    logging.info("Building URL mappings and extracting relevant content")
+    for term in tqdm(terms_with_content, desc="Processing term URLs and content"):
         urls = set()
-        domains = defaultdict(bool)
-        relevant_content = []
-
-        # Process each web content entry
-        for entry in web_content[term]:
-            # Skip entries with low relevance if score is present
-            relevance_score = entry.get("relevance_score", 1.0)
-            if relevance_score < min_relevance_score:
-                continue
-
-            # Get URL and normalize it
+        content_list = web_content.get(term, []) # Get content for the term
+        
+        for entry in content_list:
             url = entry.get("url", "")
             if not url:
                 continue
-
             normalized_url = normalize_url(url)
-
-            # Add to collections
             urls.add(normalized_url)
-
-            # Extract domain
-            domain = normalized_url.split("/")[0]
-            domains[domain] = True
-
-            # Track which terms are associated with this URL
-            url_to_terms[normalized_url].add(term)
-
-            # Add to relevant content if it passes all filters
-            relevant_content.append(
-                {
+            
+            # Store relevant content entry keyed by normalized URL
+            # Keep only necessary fields to reduce memory usage
+            processed_content = entry.get("processed_content")
+            if processed_content:
+                 term_relevant_content[term].append({
                     "url": normalized_url,
-                    "quality": entry.get("score", 1.0),
-                    "relevance": relevance_score,
-                    "title": entry.get("title", ""),
-                    "processed_content": entry.get("processed_content", ""),
-                }
-            )
+                    "processed_content": processed_content,
+                 }) # Store by term
 
-        # Store mappings for this term
         term_urls[term] = urls
-        term_domains[term] = domains
-        term_relevant_content[term] = relevant_content
+    # --- End Precomputation ---
 
-    # Process terms in parallel to find relationships
-    logging.info("Finding URL-based relationships between terms")
-
-    # Process chunks of terms in parallel - only terms_to_process_with_content
-    batch_size = 100
-    term_batches = [
-        terms_to_process_with_content[i : i + batch_size]
-        for i in range(0, len(terms_to_process_with_content), batch_size)
-    ]
-
-    all_edges = []
-    for batch in tqdm(term_batches, desc="Finding web-based relationships"):
-        # Process a batch of terms to find relationships
-        edges = process_term_chunk_web_based(
-            batch,
-            term_urls,
-            term_domains,
-            url_to_terms,
-            term_relevant_content,
-            url_overlap_threshold,
-            term_to_level,
-        )
-        all_edges.extend(edges)
-
-    # Add edges to graph, respecting level boundaries
+    # --- Iterate through pairs and apply new logic ---
     edges_added = 0
-    for term1, term2, attributes in all_edges:
-        # Skip if already connected
-        if G.has_edge(term1, term2):
+    llm_verifications = 0
+    high_overlap_edges = 0
+
+    # Use combinations to avoid processing pairs twice
+    term_pairs = list(itertools.combinations(terms_to_process_with_content, 2))
+    
+    logging.info(f"Checking {len(term_pairs)} pairs for web-based relationships")
+    
+    # Process pairs
+    for term1, term2 in tqdm(term_pairs, desc="Finding web relationships"):
+        urls1 = term_urls.get(term1, set())
+        urls2 = term_urls.get(term2, set())
+        
+        if not urls1 or not urls2: # Skip if one term has no URLs
             continue
-
-        # Get levels for both terms
-        level1 = term_to_level.get(term1, float("inf"))
-        level2 = term_to_level.get(term2, float("inf"))
-
-        # Check if this is a cross-level relationship
-        is_cross_level = level1 != level2
-
-        # Get a dynamic threshold based on term levels
-        dynamic_threshold = get_dynamic_threshold(term1, term2, term_to_level)
-
-        # Check if it meets the dynamic threshold
-        shared_urls = set(attributes.get("shared_urls", []))
-
-        # Calculate quality scores for URLs
-        quality_adjusted_count = sum(assess_url_quality(url) for url in shared_urls)
-        edu_urls = sum(1 for url in shared_urls if ".edu" in url)
-        
-        # Simplified threshold logic
-        meets_threshold = (
-            len(shared_urls) >= dynamic_threshold or  # Raw count threshold
-            quality_adjusted_count >= dynamic_threshold * 1.2 or  # Quality-adjusted threshold
-            edu_urls >= max(2, dynamic_threshold * 0.7)  # Educational URLs threshold
-        )
-        
-        # Simplified borderline logic - only check if not already meeting threshold
-        is_borderline = False
-        if not meets_threshold:
-            is_borderline = (
-                len(shared_urls) >= dynamic_threshold * 0.6 or  # Close to raw count
-                quality_adjusted_count >= dynamic_threshold * 0.8 or  # Close to quality threshold
-                edu_urls >= max(1, dynamic_threshold * 0.5)  # Some educational URLs
-            )
             
-        # Check domain diversity - require URLs from at least 2 different domains
-        domain_overlap = set(attributes.get("domain_overlap", []))
-        if len(domain_overlap) < 2:
-            # Without domain diversity, require stronger evidence
-            meets_threshold = meets_threshold and (
-                len(shared_urls) >= dynamic_threshold + 1
-            )
-            # Borderline cases should have at least one domain
-            if is_borderline and len(domain_overlap) < 1:
-                is_borderline = False
+        shared_urls = urls1.intersection(urls2)
+        shared_count = len(shared_urls)
+        
+        # Skip if number of shared URLs is less than 2
+        if shared_count < 2:
+            continue
             
-        # Check if this is a Wikipedia high relevance match
-        wiki_high_relevance = attributes.get("wiki_high_relevance", False)
-        needs_llm_verification = attributes.get("needs_llm_verification", False)
+        # --- High Overlap Check --- 
+        total_urls1 = len(urls1)
+        total_urls2 = len(urls2)
         
-        # For Wikipedia high relevance, ensure terms are at the same level
-        if wiki_high_relevance and is_cross_level:
-            wiki_high_relevance = False  # Disable for cross-level terms
+        is_high_overlap = (shared_count / total_urls1 > 0.75) and (shared_count / total_urls2 > 0.75)
         
-        # LLM verification for Wikipedia high relevance edges
-        if wiki_high_relevance and needs_llm_verification:
-            # --- Add Embedding Check Here ---
-            embedding_similarity = 0.0
-            term1_embedding = G.nodes[term1].get('embedding')
-            term2_embedding = G.nodes[term2].get('embedding')
-            if term1_embedding is not None and term2_embedding is not None:
-                embedding_similarity = calculate_embedding_similarity(
-                    term1_embedding, term2_embedding
-                )
-            # --- End Embedding Check ---
-
-            if embedding_similarity > EMBEDDING_SIMILARITY_THRESHOLD: # Check threshold
-                # Get the shared Wikipedia URLs
-                shared_wiki_urls = [url for url in shared_urls if 'wikipedia.org' in url]
-                
-                # Only proceed with LLM verification if there's at least one shared Wikipedia URL
-                if shared_wiki_urls:
-                    logging.info(f"Verifying Wikipedia high relevance with LLM: '{term1}' - '{term2}'")
-                    logging.info(f"Shared Wikipedia URLs: {shared_wiki_urls}")
-                    llm_verified = verify_edge_with_llm_sync(
-                        term1, 
-                        term2, 
-                        term_relevant_content,
-                        list(shared_urls),
-                        provider=None
-                    )
-                    if llm_verified:
-                        logging.info(f"LLM VERIFIED Wikipedia edge: '{term1}' - '{term2}'")
-                        meets_threshold = True
-                        # Keep wiki_high_relevance=True but add verification flag
-                        attributes["llm_verified_wiki"] = True
-                    else:
-                        # LLM rejected the Wikipedia match
-                        wiki_high_relevance = False
-                        logging.info(f"LLM REJECTED Wikipedia edge: '{term1}' - '{term2}'")
-                else:
-                    # No shared Wikipedia URLs, so don't verify with LLM
-                    wiki_high_relevance = False
-                    logging.info(f"Skipping LLM verification - no shared Wikipedia URLs for: '{term1}' - '{term2}'")
-            else:
-                # Embedding similarity too low, skip LLM verification for this case
-                wiki_high_relevance = False # Override flag if similarity is low
-                logging.debug(f"Skipping Wiki LLM check for '{term1}' - '{term2}' due to low embedding similarity: {embedding_similarity:.4f}")
-        
-        # Use LLM to verify other borderline cases
-        if is_borderline and not meets_threshold and not wiki_high_relevance:
-            # Skip LLM verification for cross-level borderline cases (too aggressive)
-            if is_cross_level:
-                is_borderline = False
-            else:
-                # --- Add Embedding Check Here ---
-                embedding_similarity = 0.0
-                term1_embedding = G.nodes[term1].get('embedding')
-                term2_embedding = G.nodes[term2].get('embedding')
-                if term1_embedding is not None and term2_embedding is not None:
-                    embedding_similarity = calculate_embedding_similarity(
-                       term1_embedding, term2_embedding
-                    )
-                # --- End Embedding Check ---
-
-                if embedding_similarity > EMBEDDING_SIMILARITY_THRESHOLD: # Check threshold
-                    # Get the shared Wikipedia URLs
-                    shared_wiki_urls = [url for url in shared_urls if 'wikipedia.org' in url]
-
-                    # Only proceed with LLM verification if there's at least one shared Wikipedia URL
-                    if shared_wiki_urls:
-                        logging.info(f"Verifying borderline case with LLM: '{term1}' - '{term2}'")
-                        logging.info(f"Borderline evidence: {len(shared_urls)} shared URLs, {quality_adjusted_count:.2f} quality score")
-                        llm_verified = verify_edge_with_llm_sync(
-                            term1, 
-                            term2, 
-                            term_relevant_content,
-                            list(shared_urls),
-                            provider=None
-                        )
-                        if llm_verified:
-                            logging.info(f"LLM VERIFIED borderline edge: '{term1}' - '{term2}'")
-                            meets_threshold = True
-                            # Add LLM verification as the detection method
-                            attributes["detection_method"] = "llm_verified"
-                            attributes["is_llm_verified"] = True
-                        else:
-                            logging.info(f"LLM REJECTED borderline edge: '{term1}' - '{term2}'")
-                    else:
-                        # No shared Wikipedia URLs, so don't verify with LLM
-                        logging.info(f"Skipping LLM verification for borderline case - no shared Wikipedia URLs: '{term1}' - '{term2}'")
-                        is_borderline = False
-                else:
-                    # Embedding similarity too low, skip LLM verification for borderline case
-                    is_borderline = False # Do not consider it borderline if similarity is low
-                    logging.debug(f"Skipping Borderline LLM check for '{term1}' - '{term2}' due to low embedding similarity: {embedding_similarity:.4f}")
-
-        # Only add edge if it meets threshold or is a Wikipedia high relevance match
-        if meets_threshold or wiki_high_relevance:
-            # Calculate relationship strength based on overlap
-            if wiki_high_relevance and attributes.get("llm_verified_wiki", False):
-                # LLM-verified Wikipedia high relevance matches get very high strength
-                strength = 0.95
-                detection_method = "llm_verified_wikipedia"
-            elif wiki_high_relevance:
-                # Wikipedia high relevance matches without LLM verification (shouldn't happen anymore)
-                strength = 0.9
-                detection_method = "wikipedia_high_relevance"
-            elif attributes.get("is_llm_verified", False) or attributes.get("detection_method") == "llm_verified":
-                # LLM verified relationships get high strength
-                strength = 0.85
-                detection_method = "llm_verified"
-            else:
-                # Regular calculation for standard matches
-                base_strength = min(1.0, len(shared_urls) / (dynamic_threshold * 1.5))
-                quality_boost = min(0.3, quality_adjusted_count * 0.1)
-                edu_boost = min(0.2, edu_urls * 0.1)
-                strength = min(1.0, base_strength + quality_boost + edu_boost)
-                detection_method = "url_overlap"
-
-            # Determine relationship type
-            relationship_type = "web"
-
-            # Create full attributes
+        if is_high_overlap:
+            level1 = term_to_level.get(term1, float("inf"))
+            level2 = term_to_level.get(term2, float("inf"))
+            is_cross_level = level1 != level2
+            
             edge_attrs = {
-                **attributes,
-                "relationship_type": relationship_type,
-                "detection_method": detection_method,
+                "relationship_type": "web",
+                "detection_method": "high_url_overlap",
+                "strength": 0.9, # High confidence for significant overlap
                 "is_cross_level": is_cross_level,
-                "strength": strength,
-                "dynamic_threshold": dynamic_threshold,
-                "high_quality_urls": quality_adjusted_count,
-                "edu_urls": edu_urls,
-                "quality_adjusted_count": round(quality_adjusted_count, 2),
-                "shared_url_count": len(shared_urls),
-                "wiki_high_relevance": wiki_high_relevance,
+                "reason": f">75% URL overlap ({shared_count}/{total_urls1} and {shared_count}/{total_urls2})",
+                "shared_url_count": shared_count,
             }
-
             G.add_edge(term1, term2, **edge_attrs)
             edges_added += 1
+            high_overlap_edges += 1
+            logging.debug(f"Added high overlap edge: '{term1}' <-> '{term2}'")
+            continue # Move to next pair
+            
+        # --- LLM Verification for pairs with >= 2 shared URL (but not high overlap) ---
+        llm_verifications += 1
+        logging.debug(f"Checking LLM for: '{term1}' <-> '{term2}' (Shared URLs: {shared_count})")
+    
+        # Gather relevant content snippets for shared URLs
+        # The verify_edge_with_llm function now handles snippet extraction internally
+        
+        llm_verified, votes = verify_edge_with_llm_sync(
+            term1, 
+            term2, 
+            term_relevant_content, # Pass the precomputed content
+            list(shared_urls),
+            provider=None # Use random provider
+        )
+        
+        # Log the concise summary line here
+        logging.info(f"LLM verification for '{term1}' - '{term2}': {llm_verified} (Votes: {votes})")
+        
+        if llm_verified:
+            level1 = term_to_level.get(term1, float("inf"))
+            level2 = term_to_level.get(term2, float("inf"))
+            is_cross_level = level1 != level2
+            
+            edge_attrs = {
+                "relationship_type": "web",
+                "detection_method": "llm_verified_web", 
+                "strength": 0.85, # High confidence if LLM verifies
+                "is_cross_level": is_cross_level,
+                "reason": f"LLM verified based on content from {shared_count} shared URLs (Votes: {votes})",
+                "shared_url_count": shared_count,
+                "llm_votes": votes, # Store votes for analysis
+            }
+            G.add_edge(term1, term2, **edge_attrs)
+            edges_added += 1
+            logging.debug(f"Added LLM-verified edge: '{term1}' <-> '{term2}'")
 
-    logging.info(f"Added {edges_added} web-based edges")
+    logging.info(f"Web-based edge summary:")
+    logging.info(f"- Total pairs checked: {len(term_pairs)}")
+    logging.info(f"- Pairs with shared URLs checked by LLM: {llm_verifications}")
+    logging.info(f"- Edges added via >50% URL overlap: {high_overlap_edges}")
+    logging.info(f"- Edges added via LLM verification: {edges_added - high_overlap_edges}")
+    logging.info(f"- Total web-based edges added in this run: {edges_added}")
+    
     return G
 
 
@@ -1443,266 +1383,6 @@ def extract_domain(url: str) -> str:
     except Exception:
         # In case of parsing errors, return original
         return url
-
-
-def process_term_chunk_web_based(
-    chunk_terms: List[str],
-    term_urls: Dict[str, Set[str]],
-    term_domains: Dict[str, Dict[str, bool]],
-    url_to_terms: Dict[str, Set[str]],
-    term_relevant_content: Dict[str, List[Dict[str, Any]]],
-    url_overlap_threshold: int,
-    term_to_level: Dict[str, int] = None,  # Add term_to_level parameter
-) -> List[Tuple[str, str, Dict[str, Any]]]:
-    """
-    Process a chunk of terms to find web content overlap.
-
-    Uses a more sophisticated approach that considers:
-    1. URL overlap quantity and quality
-    2. Domain diversity
-    3. Content similarity
-
-    Args:
-        chunk_terms: List of terms to process
-        term_urls: Dict mapping terms to their URLs
-        term_domains: Dict mapping terms to their domain presence
-        url_to_terms: Dict mapping URLs to terms that use them
-        term_relevant_content: Dict mapping terms to their relevant content
-        url_overlap_threshold: Minimum number of overlapping URLs required
-        term_to_level: Dict mapping terms to their hierarchical level, used to ensure
-                      Wikipedia high relevance edges are only created between same-level terms
-
-    Returns:
-        List of (term1, term2, attributes) tuples
-    """
-    edges = []
-
-    # Find pairs of terms with URL overlap
-    for i, term1 in enumerate(chunk_terms):
-        urls1 = term_urls.get(term1, set())
-        if not urls1:
-            continue
-
-        domains1 = term_domains.get(term1, {})
-
-        # Get all terms that share at least one URL with term1
-        potential_related_terms = set()
-        for url in urls1:
-            potential_related_terms.update(url_to_terms[url])
-
-        # Process each potential related term
-        for term2 in potential_related_terms:
-            debug = set([term1, term2]) == set(["black studies", "africana studies"])
-            # Skip self and already processed pairs
-            if term1 >= term2:
-                continue
-
-            # Get URLs for term2
-            urls2 = term_urls.get(term2, set())
-            if not urls2:
-                continue
-
-            # Find shared URLs
-            shared_urls = urls1 & urls2
-            shared_wikis = set()
-            wiki_high_relevance = False
-            
-            for url in shared_urls:
-                if "wikipedia.org" in url:
-                    shared_wikis.add(url)
-                    
-                    # Check term1's relevance for this Wikipedia URL
-                    term1_has_high_relevance = False
-                    for entry in term_relevant_content.get(term1, []):
-                        if entry.get("url") == url and entry.get("relevance", 0) > 0.6:  # Changed from 0.8 to 0.6
-                            term1_has_high_relevance = True
-                            break
-                    
-                    # Check term2's relevance for this Wikipedia URL
-                    term2_has_high_relevance = False
-                    for entry in term_relevant_content.get(term2, []):
-                        if entry.get("url") == url and entry.get("relevance", 0) > 0.6:  # Changed from 0.8 to 0.6
-                            term2_has_high_relevance = True
-                            break
-                    
-                    # If both terms have high relevance for this Wikipedia URL
-                    wiki_high_relevance = term1_has_high_relevance and term2_has_high_relevance
-                    
-                    # Debug for specific term pair
-                    if debug:
-                        print(f"URL: {url}")
-                        print(f"Term1 high relevance: {term1_has_high_relevance}")
-                        print(f"Term2 high relevance: {term2_has_high_relevance}")
-                        print(f"Wiki high relevance: {wiki_high_relevance}")
-
-            if debug:
-                print(term1, term2, shared_wikis)
-            
-            # Special case: Add edge if terms share a Wikipedia link with high relevance
-            # But only if they're at the same level
-            if shared_wikis and wiki_high_relevance:
-                # Only process Wikipedia rule for terms at the same level
-                if term_to_level is not None:
-                    level1 = term_to_level.get(term1, float('inf'))
-                    level2 = term_to_level.get(term2, float('inf'))
-                    is_same_level = level1 == level2
-                    if not is_same_level:
-                        # Skip Wikipedia high relevance rule for cross-level terms
-                        pass
-                    else:
-                        # Mark for LLM verification instead of directly adding an edge
-                        wiki_url = next(iter(shared_wikis))
-                        edges.append(
-                            (
-                                term1,
-                                term2,
-                                {
-                                    "shared_urls": list(shared_urls),
-                                    "domain_overlap": [extract_domain(wiki_url)],
-                                    "high_quality_urls": 1,
-                                    "edu_urls": 0,
-                                    "content_similarity": 1.0,
-                                    "quality_adjusted_count": 1.0, 
-                                    "url_quality_scores": {wiki_url: 1.0},
-                                    "wiki_high_relevance": True,
-                                    "is_same_level": True,
-                                    "needs_llm_verification": True,  # Mark for LLM verification
-                                },
-                            )
-                        )
-                        continue
-
-            # More conservative: require at least 2 shared URLs as a minimum filter
-            if len(shared_urls) < 2:
-                continue
-
-            # Early filtering: if it's unlikely to meet threshold after quality adjustments
-            # Use a more conservative pre-filtering
-            if len(shared_urls) < url_overlap_threshold * 0.6:  # Increased from 0.5
-                continue
-                
-            # Calculate domain diversity
-            domains2 = term_domains.get(term2, {})
-            domain_overlap = set(domains1.keys()) & set(domains2.keys())
-
-            # More conservative: require stronger domain diversity
-            if len(domain_overlap) < 2:
-                # Unless we have very strong overlap
-                if len(shared_urls) < url_overlap_threshold + 1:  # Increased by 1
-                    continue
-
-            # Calculate high-quality and educational URLs
-            high_quality_urls = 0
-            edu_urls = 0
-
-            # Track quality metrics for each shared URL
-            url_quality_scores = {}
-
-            for url in shared_urls:
-                # Check if it's a high-quality URL (from a respected domain)
-                is_high_quality = (
-                    domains1.get(extract_domain(url), {}).get("quality", 0) >= 0.4
-                )  # Increased from 0.3
-
-                # Check if it's an educational URL (.edu domain)
-                is_edu = ".edu" in url
-
-                if is_high_quality:
-                    high_quality_urls += 1
-                if is_edu:
-                    edu_urls += 1
-
-                # Store quality score for this URL
-                url_quality_scores[url] = (
-                    1.0 if is_edu else (0.8 if is_high_quality else 0.5)
-                )
-
-            # Calculate content similarity if available
-            content_similarity = 0.0
-            matching_snippets = 0
-
-            content1 = term_relevant_content.get(term1, [])
-            content2 = term_relevant_content.get(term2, [])
-
-            # Compare snippets from shared URLs if content is available
-            if content1 and content2:
-                for entry1 in content1:
-                    url1 = entry1.get("url", "")
-                    if url1 not in shared_urls:
-                        continue
-
-                    relevance1 = entry1.get("relevance", 0)
-                    # Skip low relevance content
-                    if relevance1 < 0.3:  # More conservative relevance threshold
-                        continue
-
-                    snippet1 = entry1.get("processed_content", "").lower()
-                    if not snippet1:
-                        continue
-
-                    for entry2 in content2:
-                        url2 = entry2.get("url", "")
-                        if url1 != url2:
-                            continue
-
-                        relevance2 = entry2.get("relevance", 0)
-                        # Both entries need good relevance
-                        if relevance2 < 0.3:
-                            continue
-
-                        snippet2 = entry2.get("processed_content", "").lower()
-                        if not snippet2:
-                            continue
-
-                        # Enhanced content similarity check
-                        word_overlap = sum(
-                            1 for word in snippet1.split() if word in snippet2.split()
-                        )
-                        if (
-                            snippet1 in snippet2
-                            or snippet2 in snippet1
-                            or word_overlap
-                            >= min(8, max(5, len(snippet1.split()) * 0.3))
-                        ):
-                            matching_snippets += 1
-
-                            # Boost URL quality score for URLs with matching content
-                            url_quality_scores[url1] = min(
-                                1.0, url_quality_scores.get(url1, 0.5) + 0.2
-                            )
-                            break
-
-                # Calculate similarity as ratio of matching snippets to shared URLs
-                if shared_urls:
-                    content_similarity = matching_snippets / len(shared_urls)
-            
-            # Calculate quality-adjusted count (giving more weight to high-quality URLs)
-            quality_adjusted_count = sum(
-                url_quality_scores.get(url, 0.5) for url in shared_urls
-            )
-            
-            # Add "is_llm_verified" field to attributes to handle LLM verification later
-            edges.append(
-                (
-                    term1,
-                    term2,
-                    {
-                        "shared_urls": list(shared_urls),
-                        "domain_overlap": list(domain_overlap),
-                        "high_quality_urls": high_quality_urls,
-                        "edu_urls": edu_urls,
-                        "content_similarity": round(content_similarity, 2),
-                        "quality_adjusted_count": round(quality_adjusted_count, 2),
-                        "url_quality_scores": {
-                            url: round(score, 2)
-                            for url, score in url_quality_scores.items()
-                        },
-                        "is_llm_verified": False,  # Will be set to True if verified by LLM later
-                    },
-                )
-            )
-
-    return edges
 
 
 def add_level_weights_to_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
@@ -1746,7 +1426,7 @@ def select_canonical_terms(
     Select canonical terms for each connected component in the graph.
 
     Uses a clear priority scheme for selecting canonical terms:
-    1. Level (prefer lowest level first)
+    1. Level (prefer lowest level first) - This is the absolute priority
     2. Connectivity (prefer terms with most connections)
     3. Web content (prefer terms with most web content)
     4. Length (prefer shorter terms)
@@ -1784,13 +1464,31 @@ def select_canonical_terms(
 
         # Get terms in this component
         component_terms = list(component)
-
-        # Score each term based on priority criteria
-        term_scores = []
+        
+        # First, group terms by level
+        terms_grouped_by_level = {}
         for term in component_terms:
-            # MODIFIED: Always consider the level, with lower levels preferred
             level = term_to_level.get(term, float("inf"))
-
+            if level not in terms_grouped_by_level:
+                terms_grouped_by_level[level] = []
+            terms_grouped_by_level[level].append(term)
+        
+        # Find the minimum level in this component
+        min_level = min(terms_grouped_by_level.keys())
+        
+        # If there's only one term at the minimum level, it's automatically the canonical form
+        if len(terms_grouped_by_level[min_level]) == 1:
+            canonical_term = terms_grouped_by_level[min_level][0]
+            variations = set(t for t in component_terms if t != canonical_term)
+            canonical_mapping[canonical_term] = variations
+            continue
+            
+        # If there are multiple terms at the minimum level, use secondary criteria
+        candidate_terms = terms_grouped_by_level[min_level]
+        
+        # Score each candidate term based on secondary criteria
+        term_scores = []
+        for term in candidate_terms:
             # Get connectivity (number of edges)
             connectivity = len(list(G.neighbors(term)))
 
@@ -1805,17 +1503,17 @@ def select_canonical_terms(
             # Get term length (shorter is better)
             term_length = len(term)
 
-            # Create score tuple (level, connectivity, url_count, -term_length)
-            # Negative term_length because we want shorter terms to score higher
-            term_scores.append((term, (level, -connectivity, -url_count, term_length)))
+            # Create score tuple (connectivity, url_count, -term_length)
+            term_scores.append((term, (-connectivity, -url_count, term_length)))
 
-        # Sort by score tuple (level, connectivity, url_count, term_length)
-        # This implements a clear, multi-criteria priority scheme
+        # Sort by secondary criteria
         sorted_terms = [term for term, score in sorted(term_scores, key=lambda x: x[1])]
 
         # The first term is our canonical term
         canonical_term = sorted_terms[0]
-        variations = set(sorted_terms[1:])
+        
+        # All other terms in the component are variations
+        variations = set(t for t in component_terms if t != canonical_term)
 
         # Add to canonical mapping
         canonical_mapping[canonical_term] = variations
@@ -2058,10 +1756,25 @@ def find_transitive_relationships(
     Returns:
         List of edges to add (term1, term2, attributes)
     """
-    # Pre-compute term info in the main process
-    logging.info("Pre-computing term info in main process")
+    if not terms_to_check:
+        logging.info("No new terms to check for transitive relationships")
+        return []
+
+    # Pre-compute term info only for terms we need
+    logging.info("Pre-computing term info for new terms")
     term_info = {}
-    for term in terms:
+    
+    # We need info for both new terms and their potential neighbors
+    terms_needing_info = set(terms_to_check)  # Start with new terms
+    
+    # Add neighbors of new terms that might form transitive relationships
+    for term in terms_to_check:
+        if term in G:
+            terms_needing_info.update(G.neighbors(term))
+    
+    logging.info(f"Computing term info for {len(terms_needing_info)} terms (new terms + their neighbors)")
+    
+    for term in terms_needing_info:
         term_lower = term.lower()
         term_words = set(term_lower.split())
 
@@ -2126,37 +1839,58 @@ def find_transitive_relationships(
         term_info[term] = info
 
     # Find potential transitive relationships through common neighbors
-    logging.info("Computing common neighbors")
+    logging.info("Computing common neighbors for new terms")
     common_neighbors_dict = {}
     
-    # If terms_to_check is provided, only check those terms for transitive relationships
-    # Otherwise, check all terms
-    if terms_to_check:
-        # For incremental processing, we need to check:
-        # 1. New terms with each other
-        # 2. New terms with existing terms
-        term_pairs = []
-        for term1 in terms:
-            for term2 in terms:
-                if term1 >= term2:  # Skip if already processed or same term
-                    continue
-                # Only include pairs where at least one term is in terms_to_check
-                if term1 in terms_to_check or term2 in terms_to_check:
-                    term_pairs.append((term1, term2))
-        
-        logging.info(f"Checking {len(term_pairs)} term pairs for transitive relationships (incremental)")
-    else:
-        # For full processing, check all term pairs
-        term_pairs = [(term1, term2) for term1 in terms for term2 in terms if term1 < term2]
-        logging.info(f"Checking {len(term_pairs)} term pairs for transitive relationships (full)")
+    # For incremental processing, we need to check:
+    # 1. New terms with each other
+    # 2. New terms with existing terms that have common neighbors
+    term_pairs = []
+    
+    # Get all existing terms (excluding new terms)
+    existing_terms = set(terms) - terms_to_check
+    
+    # First, check pairs of new terms
+    new_terms_list = list(terms_to_check)
+    for i, term1 in enumerate(new_terms_list):
+        # Check with other new terms
+        for term2 in new_terms_list[i+1:]:
+            term_pairs.append((term1, term2))
+            
+        # Check with existing terms
+        for term2 in existing_terms:
+            if term1 < term2:  # Maintain consistent ordering
+                term_pairs.append((term1, term2))
+            else:
+                term_pairs.append((term2, term1))
+    
+    logging.info(f"Checking {len(term_pairs)} term pairs for transitive relationships")
     
     # Find common neighbors for each pair
+    pairs_processed = 0
+    pairs_with_common = 0
+    total_pairs = len(term_pairs)
+    
     for term1, term2 in term_pairs:
-        neighbors1 = set(G.neighbors(term1))
-        neighbors2 = set(G.neighbors(term2))
-        common = neighbors1 & neighbors2
-        if common:
-            common_neighbors_dict[(term1, term2)] = common
+        if term1 in G and term2 in G:  # Only check if both terms are in graph
+            neighbors1 = set(G.neighbors(term1))
+            neighbors2 = set(G.neighbors(term2))
+            common = neighbors1 & neighbors2
+            if common:
+                common_neighbors_dict[(term1, term2)] = common
+                pairs_with_common += 1
+        pairs_processed += 1
+        
+        # Log progress every 10%
+        if pairs_processed % max(1, total_pairs // 10) == 0:
+            percentage = (pairs_processed / total_pairs) * 100
+            logging.info(f"Processed {pairs_processed}/{total_pairs} pairs ({percentage:.1f}%). Found {pairs_with_common} pairs with common neighbors.")
+
+    if not common_neighbors_dict:
+        logging.info("No pairs with common neighbors found")
+        return []
+
+    logging.info(f"Found {len(common_neighbors_dict)} pairs with common neighbors")
 
     # Process in parallel
     from concurrent.futures import ProcessPoolExecutor
@@ -2170,6 +1904,7 @@ def find_transitive_relationships(
     logging.info(f"Processing {len(chunks)} chunks in parallel")
 
     added_edges = []
+    chunks_processed = 0
     with ProcessPoolExecutor() as executor:
         futures = []
         for chunk in chunks:
@@ -2182,6 +1917,10 @@ def find_transitive_relationships(
             try:
                 edges = future.result()
                 added_edges.extend(edges)
+                chunks_processed += 1
+                if chunks_processed % max(1, len(chunks) // 10) == 0:
+                    percentage = (chunks_processed / len(chunks)) * 100
+                    logging.info(f"Processed {chunks_processed}/{len(chunks)} chunks ({percentage:.1f}%). Found {len(added_edges)} edges so far.")
             except Exception as e:
                 logging.error(f"Error processing chunk: {e}")
 
@@ -2296,6 +2035,40 @@ def convert_to_deduplication_result(
                 edge_data = G.edges[canonical, variation]
                 method = edge_data.get("detection_method", "unknown")
                 reason = edge_data.get("reason", f"Direct relationship via {method}")
+                
+                # Check if the edge direction matches the canonical direction
+                if method == "plural_form":
+                    # If we're dealing with plural form but levels caused a different term to be canonical
+                    if (canonical.endswith("s") and not variation.endswith("s")) or \
+                       (not canonical.endswith("s") and variation.endswith("s")):
+                        # Check which one is the canonical form by level
+                        canonical_level = term_to_level.get(canonical, float("inf"))
+                        variation_level = term_to_level.get(variation, float("inf"))
+                        
+                        if canonical_level < variation_level:
+                            # Level-based selection overrode the plural form preference
+                            if canonical.endswith("s"):
+                                reason = "Level priority: plural form preferred (lower level)"
+                            else:
+                                reason = "Level priority: singular form preferred (lower level)"
+                elif method == "academic_suffix":
+                    # For academic suffix variations, also check if level caused a different term to be canonical
+                    canonical_level = term_to_level.get(canonical, float("inf"))
+                    variation_level = term_to_level.get(variation, float("inf"))
+                    
+                    if canonical_level < variation_level:
+                        # The form from the lower level was chosen as canonical
+                        if "theories" in variation or "theory" in variation:
+                            reason = "Level priority: term chosen from lower level (overriding theory preference)"
+                        elif "education" in variation:
+                            reason = "Level priority: term chosen from lower level (overriding education suffix)"
+                        else:
+                            # Extract the suffix that differs between them for a clearer message
+                            canonical_parts = canonical.split()
+                            variation_parts = variation.split()
+                            reason = "Level priority: term chosen from lower level (overriding academic suffix preference)"
+                
+                # Create the variation reason entry
                 result["variation_reasons"][variation] = {
                     "canonical": canonical,
                     "reason": reason,
@@ -2449,127 +2222,171 @@ async def verify_edge_with_llm(
     provider: Optional[str] = None
 ) -> bool:
     """
-    Use LLM to verify if two academic terms are related enough to create an edge.
+    Use LLM to verify if two academic terms are related enough to create an edge based on shared web content.
+    Calls the LLM 3 times with randomly selected providers and takes the majority decision (at least 2 out of 3).
     
     Args:
         term1: First academic term
         term2: Second academic term
-        term_relevant_content: Dict mapping terms to their relevant content
-        shared_urls: List of shared URLs between the terms
-        provider: Optional LLM provider
+        term_relevant_content: Dict mapping terms to their relevant content, including processed snippets.
+        shared_urls: List of URLs shared between the terms.
+        provider: Optional LLM provider (overridden by random selection if not specified)
         
     Returns:
-        Boolean indicating whether the terms should be connected
+        Tuple containing:
+        - Boolean indicating whether the terms should be connected (majority vote).
+        - List of boolean results from each LLM call.
     """
     try:
-        llm = init_llm(provider)
+        # Extract relevant snippets from shared URLs for both terms
+        snippets_term1 = []
+        snippets_term2 = []
         
-        # Extract Wikipedia snippets for context
-        wiki_snippets_term1 = []
-        wiki_snippets_term2 = []
-        
-        shared_wikis = []
-        
-        for url in shared_urls:
-            if "wikipedia.org" in url:
-                shared_wikis.append(url)
-        
-        for term1_url in term_relevant_content[term1]:
-            if "wikipedia.org" in term1_url['url']:
-                wiki_snippets_term1.append(f"- {term1_url['processed_content']}")
-        
-        for term2_url in term_relevant_content[term2]:
-            if "wikipedia.org" in term2_url['url']:
-                wiki_snippets_term2.append(f"- {term2_url['processed_content']}")
+        # Check if shared_urls and term_relevant_content are available
+        if shared_urls and term_relevant_content:
+            # Limit to a maximum number of snippets to avoid overly long prompts
+            MAX_SNIPPETS_PER_TERM = 3 
             
-        # Prepare snippets outside the f-string to avoid backslash issue
-        snippet1_str = " ".join(wiki_snippets_term1[:1]).replace("\\n", " ")
-        snippet2_str = " ".join(wiki_snippets_term2[:1]).replace("\\n", " ")
+            # Collect snippets for term1 from shared URLs
+            term1_content = term_relevant_content.get(term1, [])
+            for url in shared_urls:
+                if len(snippets_term1) >= MAX_SNIPPETS_PER_TERM:
+                    break
+                for entry in term1_content:
+                    if entry.get("url") == url and entry.get("processed_content"):
+                        # Add snippet, clean up newlines
+                        snippet = entry["processed_content"].replace("\\n", " ").strip()
+                        if snippet:
+                             snippets_term1.append(f"- URL: {url}\n  Snippet: {snippet}")
+                        break # Only take one snippet per URL per term
+                        
+            # Collect snippets for term2 from shared URLs
+            term2_content = term_relevant_content.get(term2, [])
+            for url in shared_urls:
+                if len(snippets_term2) >= MAX_SNIPPETS_PER_TERM:
+                    break
+                for entry in term2_content:
+                    if entry.get("url") == url and entry.get("processed_content"):
+                         # Add snippet, clean up newlines
+                        snippet = entry["processed_content"].replace("\\n", " ").strip()
+                        if snippet:
+                            snippets_term2.append(f"- URL: {url}\n  Snippet: {snippet}")
+                        break # Only take one snippet per URL per term
 
-        wiki_context = f"""
-Here are the Wikipedia snippets for the 2 terms:
+        # Format context for the LLM prompt
+        snippet1_str = "\n".join(snippets_term1) if snippets_term1 else "No relevant snippets found."
+        snippet2_str = "\n".join(snippets_term2) if snippets_term2 else "No relevant snippets found."
 
-{term1}:
-    {snippet1_str}
+        context_str = f"""
+Context for '{term1}':
+{snippet1_str}
 
-{term2}:
-    {snippet2_str}
+Context for '{term2}':
+{snippet2_str}
         """
         
-        system_prompt = f"""You are an expert in academic terminology with deep knowledge of academic disciplines.
-Your task is to determine if two academic terms represent variations of the same concept or are closely related.
-Respond with ONLY "YES" or "NO".
+        system_prompt = f"""**Role:** AI Expert in Academic Terminology
 
-YES = The terms represent the same concept, are variations of each other, or are so closely related they should be considered equivalent.
-NO = The terms represent different concepts, distinct fields, or are not closely related enough to be considered the same.
+**Goal:** Determine if Term 1 and Term 2 are functionally equivalent for deduplication purposes. Equivalence means they are synonyms, represent the identical academic concept/field, or are extremely close variations commonly used interchangeably.
 
-When determining if terms are duplicates, consider:
-1. Terms are duplicates if their fields of research are so close they can be used interchangeably in academic literature
-2. Terms are duplicates if they represent the same concept with different phrasing or regional variations
-3. Terms are duplicates if one is explicitly stated to be another name for the other in authoritative sources
-4. Terms are duplicates if they cover essentially the same domain of knowledge with only minor differences in emphasis
+**Examples of Expected Decisions:**
+*   "Accountancy" vs "Accounting" -> YES (Synonyms/Identical Field)
+*   "Biostatistics" vs "Statistics" -> NO (Subfield/Specialization)
+*   "Computer Science" vs "Computer Engineering" -> NO (Distinct but related fields with different focus)
+*   "Theoretical Physics" vs "Experimental Physics" -> NO (Different approaches within a field)
+*   "Health Care Management" vs "Healthcare Administration" -> YES (Very close variations, often used interchangeably)
+*   "Economics" vs "Political Science" -> NO (Distinct fields)
 
-The Wikipedia snippets provided are extractive summarizations of shared Wikipedia pages. Use them to inform your decision:
-- If the snippets explicitly state that the terms are the same or synonymous, answer YES
-- If the snippets show the terms cover the same subject matter with similar scope, answer YES
-- If one term is described as a subset or specialized version of the other, answer NO
-- If the snippets describe fundamentally different subject areas or approaches, answer NO
+**Inputs:**
+1.  Term 1: [Term String]
+2.  Term 2: [Term String]
+3.  Context Snippets: Text extracted from web pages mentioning both terms.
+4.  Your Internal Knowledge Base: Your understanding of academic fields, concepts, and relationships.
 
-Examples of terms that are variations or closely related (YES):
-- "Computer Science" and "Computing Science" (same field with different naming conventions)
-- "Africana Studies" and "Black Studies" (same interdisciplinary field with different naming)
-- "Media Studies" and "Media Science" (same domain with different academic framing)
-- "Cybersecurity" and "Computer Security" (explicitly noted as synonymous in literature)
-- "Machine Learning" and "Statistical Learning" (used interchangeably in many academic contexts)
+**Process:**
 
-Examples of terms that are NOT variations or closely related (NO):
-- "Computer Science" and "Computer Engineering" (related but distinct disciplines with different focus)
-- "Biomedical Engineering" and "Biological Engineering" (overlapping but distinct specializations)
-- "Applied Statistics" and "Statistics" (one is a specialized application of the other)
-- "Cognitive Psychology" and "Clinical Psychology" (different branches within psychology)
-- "Financial Economics" and "Macroeconomics" (different areas within economics with distinct focuses)
+1.  **Internal Knowledge Assessment:**
+    *   Based SOLELY on your internal knowledge, what is the relationship between Term 1 and Term 2? (e.g., Equivalent, Distinct, Subfield, Related, Unsure).
+
+2.  **Context Snippet Analysis:**
+    *   Analyze the provided Context Snippets. What relationship do they explicitly state or strongly imply?
+    *   Look for: Explicit definitions, synonym indicators ("also known as", "or"), clear interchangeable use for the *exact same* concept, or statements defining a hierarchy/difference (e.g., "X is a branch of Y", "X focuses on ..., while Y focuses on...").
+    *   Evaluate the strength and clarity of the snippet evidence. Is it direct and unambiguous, or vague/contradictory?
+
+3.  **Synthesis & Decision:**
+    *   **If Knowledge & Snippets AGREE (Equivalent):** Output YES.
+    *   **If Knowledge & Snippets AGREE (Distinct/Subfield):** Output NO.
+    *   **If Knowledge says Equivalent, BUT Snippets provide STRONG evidence for Distinct/Subfield:** Trust the strong snippet evidence. Output NO.
+    *   **If Knowledge says Distinct/Subfield, BUT Snippets provide STRONG evidence for Equivalence:** Trust the strong snippet evidence. Output YES.
+    *   **If EITHER Knowledge OR Snippets are Uncertain/Ambiguous/Contradictory/Insufficient:** Default to conservative. Output NO.
+    *   **If Knowledge is Uncertain, but Snippets provide WEAK/UNCLEAR evidence:** Output NO.
+
+**Output:**
+*   Respond with ONLY "YES" or "NO".
 """
         
-        user_prompt = f"""Are the following two academic terms variations of the same concept or closely related enough to be considered equivalent?
+        user_prompt = f"""Term 1: "{term1}"
+Term 2: "{term2}"
 
-Term 1: {term1}
-Term 2: {term2}
+Context Snippets:
+{context_str}
 
-The Wikipedia snippets provided are extractive summarizations from shared Wikipedia pages. Pay careful attention to these snippets:
-- If they explicitly state the terms are synonymous (e.g., "also known as", "also called", "or", terms in parentheses)
-- If they describe the same field of study with similar boundaries and applications
-- If academic literature would generally treat these terms as interchangeable
+Are "{term1}" and "{term2}" equivalent based on the synthesis process defined in the system prompt? (YES/NO)
+"""
 
----
-{wiki_context}
-
----
-
-Answer with ONLY "YES" or "NO"."""
-
-        # print(user_prompt)
-        # assert False
+        # Run 3 LLM calls and collect the results
+        results = []
+        num_attempts = 3
         
-        response = llm.infer(prompt=user_prompt, system_prompt=system_prompt)
+        for attempt in range(num_attempts):
+            try:
+                # Get random provider and model for each attempt
+                random_provider, random_model = get_random_llm_config()
+                
+                # Override with provided provider if specified
+                if provider:
+                    random_provider = provider
+                
+                # Get a fresh LLM instance for each attempt with the random provider/model
+                llm = init_llm(random_provider, random_model)
+                
+                logging.debug(f"LLM verification attempt {attempt+1}/{num_attempts} for '{term1}' and '{term2}' using {random_provider}/{random_model}")
+                
+                response = llm.infer(prompt=user_prompt, system_prompt=system_prompt)
+                
+                # Parse the response - look for YES or NO
+                response_text = response.text.strip().upper()
+                
+                # Log the response for this attempt
+                logging.debug(f"LLM verification attempt {attempt+1} result: {response_text}")
+                
+                # Record the result (True for YES, False for NO)
+                if "YES" in response_text:
+                    results.append(True)
+                elif "NO" in response_text:
+                    results.append(False)
+                else:
+                    # Default to conservative approach (no edge) if response is unclear
+                    logging.debug(f"Unclear LLM verification response for attempt {attempt+1}: {response_text}")
+                    results.append(False)
+            
+            except Exception as e:
+                logging.error(f"Error in LLM edge verification attempt {attempt+1}: {str(e)}")
+                # Default to conservative approach on errors
+                results.append(False)
         
-        # Parse the response - look for YES or NO
-        response_text = response.text.strip().upper()
+        # Count the number of True results
+        true_count = results.count(True)
         
-        # Log the full response
-        logging.info(f"LLM verification for '{term1}' and '{term2}': {response_text}")
+        # Take the majority decision
+        final_result = true_count >= 2
         
-        if "YES" in response_text:
-            return True
-        elif "NO" in response_text:
-            return False
-        else:
-            # Default to conservative approach (no edge) if response is unclear
-            logging.debug(f"Unclear LLM verification response for {term1} and {term2}: {response_text}")
-            return False
+        # Return the final result and the list of individual votes
+        return final_result, results 
             
     except Exception as e:
-        logging.error(f"Error in LLM edge verification for {term1} and {term2}: {str(e)}")
-        return False  # Default to conservative approach on errors
+        logging.error(f"Error preparing LLM edge verification for {term1} and {term2}: {str(e)}")
+        return False, [] # Return a default tuple on error
 
 def verify_edge_with_llm_sync(
     term1: str, 
@@ -2577,7 +2394,7 @@ def verify_edge_with_llm_sync(
     term_relevant_content: Optional[Dict[str, List[Dict[str, Any]]]] = None,
     shared_urls: Optional[List[str]] = None,
     provider: Optional[str] = None
-) -> bool:
+) -> Tuple[bool, List[bool]]: # Updated return type hint
     """
     Synchronous wrapper for verify_edge_with_llm
     
@@ -2589,7 +2406,9 @@ def verify_edge_with_llm_sync(
         provider: Optional LLM provider
         
     Returns:
-        Boolean indicating whether the terms should be connected
+         Tuple containing:
+        - Boolean indicating whether the terms should be connected (majority vote).
+        - List of boolean results from each LLM call.
     """
     try:
         # Log when the synchronous function is called
@@ -2603,7 +2422,7 @@ def verify_edge_with_llm_sync(
             loop = asyncio.new_event_loop()
             asyncio.set_event_loop(loop)
             
-        result = loop.run_until_complete(
+        result_tuple = loop.run_until_complete( # Assign tuple to variable
             verify_edge_with_llm(
                 term1, 
                 term2, 
@@ -2612,8 +2431,8 @@ def verify_edge_with_llm_sync(
                 provider
             )
         )
-        logging.debug(f"LLM verification result for '{term1}' and '{term2}': {result}")
-        return result
+        logging.debug(f"LLM verification result for '{term1}' and '{term2}': {result_tuple[0]} (Votes: {result_tuple[1]})") # Log using tuple elements
+        return result_tuple # Return the complete tuple
     except Exception as e:
         logging.error(f"Error in synchronous LLM edge verification: {str(e)}")
-        return False  # Default to conservative approach on errors
+        return False, [] # Return a default tuple on error

@@ -36,9 +36,7 @@
     ],
     "parents": [],
     "variations": [
-      "art education",
-      "art",
-      "art theory"
+      "arts education"
     ]
   },
   "business": {
@@ -78,10 +76,7 @@
       "university of southern california - arts, technology, business of innovation"
     ],
     "parents": [],
-    "variations": [
-      "business studies",
-      "business education"
-    ]
+    "variations": []
   },
   "education": {
     "sources": [
@@ -120,10 +115,7 @@
       "university of pittsburgh - education"
     ],
     "parents": [],
-    "variations": [
-      "educational technology",
-      "education technology"
-    ]
+    "variations": []
   },
   "engineering": {
     "sources": [
@@ -162,6 +154,7 @@
     ],
     "parents": [],
     "variations": [
+      "engineering systems",
       "engineering education"
     ]
   },
@@ -198,8 +191,13 @@
     ],
     "parents": [],
     "variations": [
+      "health technology",
+      "health systems",
+      "healthcare",
       "health studies",
-      "health education"
+      "health education",
+      "healthcare systems",
+      "health"
     ]
   },
   "humanities": {
@@ -234,8 +232,13 @@
       "arizona state university - new college"
     ],
     "parents": [],
+    "variations": []
+  },
+  "language studies": {
+    "sources": [],
+    "parents": [],
     "variations": [
-      "humanities education"
+      "language"
     ]
   },
   "law": {
@@ -275,10 +278,8 @@
     ],
     "parents": [],
     "variations": [
-      "legal studies",
       "legal theory",
-      "society",
-      "law and society"
+      "legal research"
     ]
   },
   "management": {
@@ -305,9 +306,7 @@
       "university of north carolina at chapel hill - kenan-flagler business school"
     ],
     "parents": [],
-    "variations": [
-      "management education"
-    ]
+    "variations": []
   },
   "medicine": {
     "sources": [
@@ -344,8 +343,7 @@
     "parents": [],
     "variations": [
       "medical sciences",
-      "medical education",
-      "medical systems"
+      "medical education"
     ]
   },
   "natural sciences": {
@@ -372,9 +370,7 @@
       "university of wisconsin–madison"
     ],
     "parents": [],
-    "variations": [
-      "natural systems"
-    ]
+    "variations": []
   },
   "nursing": {
     "sources": [
@@ -405,7 +401,9 @@
       "university of pittsburgh - nursing"
     ],
     "parents": [],
-    "variations": []
+    "variations": [
+      "nursing education"
+    ]
   },
   "public health": {
     "sources": [
@@ -431,7 +429,7 @@
     ],
     "parents": [],
     "variations": [
-      "public health education"
+      "public health sciences"
     ]
   },
   "social sciences": {
@@ -463,9 +461,6 @@
       "university of wisconsin–madison"
     ],
     "parents": [],
-    "variations": [
-      "social science education",
-      "social science"
-    ]
+    "variations": []
   }
 }

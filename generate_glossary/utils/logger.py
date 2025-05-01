@@ -21,10 +21,16 @@ def setup_logger(name: str, level: int = None) -> logging.Logger:
     
     # Create logger
     logger = logging.getLogger(name)
+    
+    # If the logger already has handlers, it's already been configured
+    # so we just return it as is to avoid duplicate logging
+    if logger.handlers:
+        return logger
+        
     logger.setLevel(level)
     
-    # Remove existing handlers
-    logger.handlers.clear()
+    # Disable propagation to the root logger to avoid duplicate logs
+    logger.propagate = False
     
     # Create console handler with the same log level
     console_handler = logging.StreamHandler()

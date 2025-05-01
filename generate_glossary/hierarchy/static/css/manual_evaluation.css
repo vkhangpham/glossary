@@ -1,0 +1,161 @@
+/* Styles for manual_evaluation.html */
+
+/* Sidebar Enhancements */
+.sidebar {
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light background for sidebar */
+    border-right: 1px solid #dee2e6;
+    height: calc(100vh - 56px - 48px - 1.5rem); /* Adjust based on nav height (56px) + H1 margin (my-4 -> 1.5rem*2=48px?) + nav margin (mb-3 -> 1rem) - approximate */
+    overflow-y: auto;
+    position: sticky; /* Make sidebar sticky */
+    top: 0; /* Stick to top */
+}
+
+.search-container,
+.sampling-container,
+.term-list-container {
+    margin-bottom: 1.5rem;
+}
+
+.sampling-container {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+.term-list-container h5 {
+    margin-bottom: 0.75rem; /* More space below title */
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#term-list .list-group-item {
+    cursor: pointer;
+    padding: 0.6rem 0.85rem; /* Adjust padding */
+    border: none; /* Remove default borders */
+    border-bottom: 1px solid #eee; /* Subtle separator */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    font-size: 0.95rem; /* Slightly larger font */
+}
+
+#term-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+#term-list .list-group-item.list-group-item-secondary {
+    background-color: #e9ecef;
+    font-size: 0.9rem;
+    cursor: default;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+#term-list .list-group-item-action:hover,
+#term-list .list-group-item-action:focus {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+#term-list .list-group-item.active {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    border-left: 3px solid #0a58ca;
+    padding-left: calc(0.85rem - 3px); /* Adjust padding to account for border */
+}
+
+#term-list .list-group-item.active .evaluated-icon {
+    color: white !important; /* Make icon white on active blue background */
+}
+
+.evaluated-icon {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #28a745; /* Green color for evaluated icon */
+    opacity: 0.7;
+}
+
+/* Main Content Enhancements */
+.content-container {
+    padding: 1rem 2rem;
+}
+
+#selected-term-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem; /* Increased padding */
+    border-bottom: 2px solid #0d6efd;
+    display: inline-block;
+    color: #212529;
+}
+
+.evaluation-criteria {
+    margin-bottom: 1.75rem; /* More space between criteria */
+    padding: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem; /* Bootstrap's default */
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06); /* Slightly enhanced shadow */
+}
+
+.evaluation-criteria h5 {
+    margin-bottom: 1rem; /* More space below title */
+    color: #0d6efd; /* Use primary color for titles */
+}
+
+.evaluation-criteria p:first-of-type { /* Style the description paragraph */
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.variation-item, .parent-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem; /* Adjust spacing */
+}
+
+.variation-item label,
+.parent-item label {
+    margin-left: 0.75rem; /* More space from checkbox */
+    flex-grow: 1;
+}
+
+.variation-item input[type="checkbox"],
+.parent-item input[type="checkbox"] {
+    margin-top: 0.1rem; /* Align checkbox better */
+}
+
+.evaluation-notes {
+    margin-top: 1rem; /* More space above notes */
+}
+
+#term-details-display {
+    margin-bottom: 2.5rem; /* More space below details */
+    padding: 1.25rem 1.5rem;
+    background-color: #f8f9fa;
+    border: 1px dashed #ced4da; /* Dashed border for visual distinction */
+    border-radius: 0.375rem;
+}
+
+#term-details-display h4 {
+    margin-bottom: 1rem;
+    color: #495057;
+}
+
+#term-details-display dl {
+    margin-bottom: 0;
+}
+
+#term-details-display dt {
+    font-weight: 600; /* Semi-bold definition term */
+    color: #495057;
+}
+
+/* Toast Notification */
+#save-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+} 

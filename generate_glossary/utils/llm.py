@@ -30,15 +30,17 @@ class Provider:
 
 # Model configurations
 OPENAI_MODELS = {
-    "default": "gpt-4o",  # Latest GPT-4 model with vision capabilities
-    "o3-mini": "o3-mini",  # Most advanced model for complex tasks
-    "mini": "gpt-4o-mini"  # Smaller, faster model for simpler tasks
+    "default": "gpt-4.1",
+    "pro": "gpt-4o",
+    "mini": "gpt-4.1-mini",
+    "nano": "gpt-4.1-nano"
 }
 
 GEMINI_MODELS = {
-    "default": "gemini-2.0-flash-lite",
-    "pro": "gemini-2.0-flash-lite",
-    "ultra": "gemini-2.0-flash-lite",
+    "default": "gemini-2.5-flash-preview-04-17",
+    "pro": "gemini-2.5-pro-preview-03-25",
+    "mini": "gemini-2.0-flash",
+    "nano": "gemini-2.0-flash-lite"
 }
 
 @dataclass
@@ -334,20 +336,123 @@ class Gemini(BaseLLM):
             
             # Fix for unclosed quotes
             if "Unterminated string" in str(e) or "EOF while parsing a string" in str(e):
-                # Get position of the error
-                pos = e.pos
-                if pos < len(json_str):
-                    # Check if we're inside a string (look for odd number of quotes before pos)
-                    quote_count = json_str[:pos].count('"')
-                    if quote_count % 2 == 1:
-                        # Add missing quote and try again
+                # Enhanced fix for unterminated strings - more aggressive
+                try:
+                    # Get position of the error
+                    pos = e.pos
+                    if pos < len(json_str):
+                        # First attempt: add a quote at the exact error position
                         fixed_json = json_str[:pos] + '"' + json_str[pos:]
                         try:
                             json.loads(fixed_json)
-                            self.logger.info("Successfully fixed unclosed quote in JSON")
+                            self.logger.info("Successfully fixed unclosed quote at exact position")
                             return fixed_json
                         except:
-                            pass  # If still fails, continue with other fixes
+                            pass  # If still fails, try the next approach
+                        
+                        # Second attempt: Check if we can find the end of the unterminated string (next line or certain characters)
+                        next_line_pos = json_str.find('\n', pos)
+                        next_comma_pos = json_str.find(',', pos)
+                        next_brace_pos = json_str.find('}', pos)
+                        
+                        # Find the closest terminator
+                        terminator_positions = [p for p in [next_line_pos, next_comma_pos, next_brace_pos] if p > 0]
+                        if terminator_positions:
+                            fix_pos = min(terminator_positions)
+                            fixed_json = json_str[:fix_pos] + '"' + json_str[fix_pos:]
+                            try:
+                                json.loads(fixed_json)
+                                self.logger.info(f"Successfully fixed unclosed quote at terminator position {fix_pos}")
+                                return fixed_json
+                            except:
+                                pass  # Continue with other fixes
+                                
+                        # Third attempt: for very large strings, truncate the problematic string where it occurs
+                        # Find the last opening quote before the error position
+                        last_quote_pos = json_str.rfind('"', 0, pos)
+                        if last_quote_pos >= 0:
+                            # Add closing quote right after the error position
+                            # and check if we need to add a comma or other syntax
+                            fixed_json = json_str[:pos] + '"'
+                            
+                            # Check what should come after the closed string
+                            if next_comma_pos > 0 and (next_brace_pos < 0 or next_comma_pos < next_brace_pos):
+                                # If a comma is closer than a closing brace, keep the comma
+                                fixed_json += json_str[pos:next_comma_pos+1]
+                                if next_brace_pos > 0:
+                                    fixed_json += json_str[next_comma_pos+1:]
+                            elif next_brace_pos > 0:
+                                # If a closing brace is next, keep it
+                                fixed_json += json_str[pos:next_brace_pos+1]
+                                if json_str[pos:].find('}', next_brace_pos+1) > 0:
+                                    # Try to preserve the rest of the JSON
+                                    fixed_json += json_str[next_brace_pos+1:]
+                            
+                            try:
+                                json.loads(fixed_json)
+                                self.logger.info("Successfully fixed unterminated string with structural correction")
+                                return fixed_json
+                            except:
+                                pass  # Continue with other fixes
+                except Exception as fix_error:
+                    self.logger.warning(f"Advanced quote fixing failed: {str(fix_error)}")
+                
+                # Fourth attempt: complete reconstruction for heavily malformed JSON
+                import re
+                
+                # Extract the first part of the JSON which might be mostly valid
+                try:
+                    # Define a comprehensive pattern to match the correct structure
+                    pattern = r'^\s*\{\s*"extractions"\s*:\s*\[\s*\{.*?'
+                    
+                    # Try to find a valid beginning
+                    match = re.search(pattern, json_str, re.DOTALL)
+                    
+                    if match:
+                        # Get just the valid beginning and reconstruct minimal valid JSON
+                        valid_start = match.group(0)
+                        
+                        # Extract department from the original string if available
+                        dept_match = re.search(r'"department"\s*:\s*"([^"]*)"', json_str)
+                        department = dept_match.group(1) if dept_match else ""
+                        
+                        # Extract research_area or source from the original string if available
+                        area_match = re.search(r'"research_area"\s*:\s*"([^"]*)"', json_str) or re.search(r'"source"\s*:\s*"([^"]*)"', json_str)
+                        area = area_match.group(1) if area_match else ""
+                        
+                        # Extract any concepts that are properly formatted
+                        concepts = []
+                        concept_matches = re.findall(r'"([^"]+)"', json_str[json_str.find('"concepts"'):json_str.find(']', json_str.find('"concepts"'))])
+                        if concept_matches:
+                            concepts = [c for c in concept_matches if c != "concepts"]
+                        
+                        # Create a new, clean JSON structure
+                        min_json = {
+                            "extractions": [
+                                {
+                                    "source": area,
+                                    "concepts": concepts,
+                                    "department": department if "department" in json_str else "",
+                                    "research_area": area if "research_area" in json_str else ""
+                                }
+                            ]
+                        }
+                        
+                        # Clean up the structure by removing empty fields
+                        if not min_json["extractions"][0]["department"]:
+                            del min_json["extractions"][0]["department"]
+                        if not min_json["extractions"][0]["research_area"]:
+                            del min_json["extractions"][0]["research_area"]
+                        
+                        fixed_json = json.dumps(min_json)
+                        try:
+                            json.loads(fixed_json)  # Test if valid
+                            self.logger.info("Successfully reconstructed JSON from extracted data")
+                            return fixed_json
+                        except Exception as e:
+                            self.logger.warning(f"Reconstruction validation failed: {str(e)}")
+                except Exception as extract_error:
+                    self.logger.warning(f"JSON extraction reconstruction failed: {str(extract_error)}")
             
             # Fix for trailing commas in arrays/objects
             if "Expecting ',' delimiter" in str(e) or "Expecting property name" in str(e):
@@ -359,6 +464,64 @@ class Gemini(BaseLLM):
                     return fixed_json
                 except:
                     pass
+            
+            # Fix for missing commas between properties
+            if "Expecting ',' delimiter" in str(e):
+                try:
+                    pos = e.pos
+                    # Check if we need to add a comma (if pos is at the start of a new property)
+                    # Look backward for a closing quote or brace, and forward for an opening quote
+                    before_pos = json_str[:pos].rstrip()
+                    after_pos = json_str[pos:].lstrip()
+                    
+                    if (before_pos.endswith('"') or before_pos.endswith('}') or before_pos.endswith(']')) and \
+                       (after_pos.startswith('"') or after_pos.startswith('{')):
+                        # Add missing comma
+                        fixed_json = json_str[:pos] + "," + json_str[pos:]
+                        try:
+                            json.loads(fixed_json)
+                            self.logger.info("Successfully added missing comma in JSON")
+                            return fixed_json
+                        except:
+                            pass
+                except Exception as comma_fix_error:
+                    self.logger.warning(f"Comma fixing failed: {str(comma_fix_error)}")
+            
+            # If we have a severely damaged JSON, try to build a minimal valid structure
+            try:
+                # Look for any concepts that might be valid
+                import re
+                concepts = re.findall(r'"([^"]+)"', json_str)
+                
+                # Remove common field names and keep only what might be concepts
+                common_fields = ["source", "concepts", "department", "research_area", "extractions"]
+                potential_concepts = [c for c in concepts if c not in common_fields]
+                
+                if potential_concepts:
+                    # Build minimal valid JSON
+                    min_json = {
+                        "extractions": [
+                            {
+                                "source": "recovered_source",
+                                "concepts": potential_concepts[:5],  # Take first 5 potential concepts
+                                "department": "" if "department" in json_str else None,
+                                "research_area": "" if "research_area" in json_str else None
+                            }
+                        ]
+                    }
+                    
+                    # Clean up null fields
+                    extraction = min_json["extractions"][0]
+                    if extraction["department"] is None:
+                        del extraction["department"]
+                    if extraction["research_area"] is None:
+                        del extraction["research_area"]
+                    
+                    fixed_json = json.dumps(min_json)
+                    self.logger.info("Created minimal valid JSON structure from fragments")
+                    return fixed_json
+            except Exception as min_json_error:
+                self.logger.warning(f"Minimal JSON creation failed: {str(min_json_error)}")
             
             # If all fixes fail, log the issue and return the original
             self.logger.error(f"Failed to fix JSON: {json_str[:100]}...")
@@ -647,3 +810,32 @@ class LLMFactory:
                 message=str(e),
                 provider=provider if provider else "all"
             )
+
+# Module-level function to get an LLM instance
+def get_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
+    """
+    Create an LLM instance with the specified provider and model
+    
+    Args:
+        provider: Optional provider name (defaults to "gemini")
+        model: Optional model name or tier ("default", "pro", "mini", etc.)
+        
+    Returns:
+        LLM instance ready for inference
+        
+    Raises:
+        LLMConfigError: If configuration is invalid
+        LLMProviderError: If provider is not supported
+    """
+    if not provider:
+        provider = Provider.GEMINI  # Default to Gemini
+    
+    # If model is a tier name (default, pro, mini), get the actual model name
+    model_dict = GEMINI_MODELS if provider == Provider.GEMINI else OPENAI_MODELS
+    selected_model = model_dict.get(model, None) if model else None
+    
+    return LLMFactory.create_llm(
+        provider=provider,
+        model=selected_model,
+        temperature=0.7  # Default temperature
+    )

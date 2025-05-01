@@ -1,0 +1,522 @@
+INFO - ================================================================================
+INFO - ================================================================================
+INFO - Starting conference/journal topics extraction using level 2 terms
+INFO - Using optimized web search with dynamically calculated max terms per batch
+INFO - BASE_DIR: /home/khangpham/code/concepts/glossary
+INFO - Starting conference/journal topics extraction using level 2 terms
+INFO - Using optimized web search with dynamically calculated max terms per batch
+INFO - BASE_DIR: /home/khangpham/code/concepts/glossary
+INFO - LV2_INPUT_FILE: /home/khangpham/code/concepts/glossary/data/lv2/lv2_final.txt
+INFO - LV2_INPUT_FILE: /home/khangpham/code/concepts/glossary/data/lv2/lv2_final.txt
+INFO - OUTPUT_FILE: /home/khangpham/code/concepts/glossary/data/lv3/raw/lv3_s0_conference_topics.txt
+INFO - OUTPUT_FILE: /home/khangpham/code/concepts/glossary/data/lv3/raw/lv3_s0_conference_topics.txt
+INFO - META_FILE: /home/khangpham/code/concepts/glossary/data/lv3/raw/lv3_s0_metadata.json
+INFO - META_FILE: /home/khangpham/code/concepts/glossary/data/lv3/raw/lv3_s0_metadata.json
+INFO - CACHE_DIR: /home/khangpham/code/concepts/glossary/data/lv3/cache
+INFO - CACHE_DIR: /home/khangpham/code/concepts/glossary/data/lv3/cache
+INFO - RAW_SEARCH_DIR: /home/khangpham/code/concepts/glossary/data/lv3/raw_search_results
+INFO - RAW_SEARCH_DIR: /home/khangpham/code/concepts/glossary/data/lv3/raw_search_results
+INFO - DETAILED_META_DIR: /home/khangpham/code/concepts/glossary/data/lv3/detailed_metadata
+INFO - DETAILED_META_DIR: /home/khangpham/code/concepts/glossary/data/lv3/detailed_metadata
+INFO - Successfully read 2041 level 2 terms
+INFO - Successfully read 2041 level 2 terms
+INFO - Processing 2041 level 2 terms from '/home/khangpham/code/concepts/glossary/data/lv2/lv2_final.txt'
+INFO - Processing 2041 level 2 terms from '/home/khangpham/code/concepts/glossary/data/lv2/lv2_final.txt'
+INFO - Configuration:
+INFO - Configuration:
+INFO -   - Batch size: 10
+INFO -   - Batch size: 10
+INFO -   - Max concurrent requests: 8
+INFO -   - Max concurrent requests: 8
+INFO -   - LLM provider: auto-select
+INFO -   - LLM provider: auto-select
+INFO -   - LLM attempts: 3
+INFO -   - LLM attempts: 3
+INFO -   - LLM model types: ['default', 'mini', 'nano']
+INFO -   - LLM model types: ['default', 'mini', 'nano']
+INFO -   - Agreement threshold: 2
+INFO -   - Agreement threshold: 2
+INFO -   - Score threshold: 0.65
+INFO -   - Score threshold: 0.65
+INFO -   - Append mode: False
+INFO -   - Append mode: False
+INFO - ================================================================================
+INFO - ================================================================================
+INFO - Using general fetch semaphore limit: 8
+INFO - Using general fetch semaphore limit: 8
+INFO - Using headless browser semaphore limit: 4
+INFO - Using headless browser semaphore limit: 4
+INFO - Attempting to start aiohttp ClientSession...
+INFO - Attempting to start aiohttp ClientSession...
+INFO - Processing batch 1/205
+INFO - Processing batch 1/205
+INFO - Processing batch of 10 level 2 terms
+INFO - Processing batch of 10 level 2 terms
+INFO - Preparing bulk web search task for 10 terms (batch 1)
+INFO - Preparing bulk web search task for 10 terms (batch 1)
+INFO - Performing bulk web search for 10 terms (max 16 per batch, using 3 queries per term)
+INFO - Performing bulk web search for 10 terms (max 16 per batch, using 3 queries per term)
+INFO - Awaiting 1 bulk web search tasks...
+INFO - Awaiting 1 bulk web search tasks...
+INFO - Performing bulk search for 30 queries (attempt 1/5)
+INFO - Performing bulk search for 30 queries (attempt 1/5)
+WARNING - No results for query: (journal of | conference on) abuse of dominance research topics
+WARNING - No results for query: (journal of | conference on) abuse of dominance research topics
+WARNING - No results for query: (journal of | conference on) abuse of dominance call for papers
+WARNING - No results for query: (journal of | conference on) abuse of dominance call for papers
+INFO - Got search results for 10 out of 10 terms
+INFO - Got search results for 10 out of 10 terms
+INFO - Bulk web searches completed.
+INFO - Bulk web searches completed.
+INFO - Awaiting 10 term processing tasks for batch...
+INFO - Awaiting 10 term processing tasks for batch...
+INFO - Processing level 2 term: abortion (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: abortion (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 29 URLs for 'abortion'
+INFO - Found 29 URLs for 'abortion'
+INFO - Processing level 2 term: abuse of dominance (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: abuse of dominance (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 10 URLs for 'abuse of dominance'
+INFO - Found 10 URLs for 'abuse of dominance'
+INFO - Processing level 2 term: accounting information systems (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: accounting information systems (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 28 URLs for 'accounting information systems'
+INFO - Found 28 URLs for 'accounting information systems'
+INFO - Processing level 2 term: accounting policy (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: accounting policy (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 29 URLs for 'accounting policy'
+INFO - Found 29 URLs for 'accounting policy'
+INFO - Processing level 2 term: achilles tendon ruptures (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: achilles tendon ruptures (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 27 URLs for 'achilles tendon ruptures'
+INFO - Found 27 URLs for 'achilles tendon ruptures'
+INFO - Processing level 2 term: acoustic analysis (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: acoustic analysis (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 29 URLs for 'acoustic analysis'
+INFO - Found 29 URLs for 'acoustic analysis'
+INFO - Processing level 2 term: acoustics (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: acoustics (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 30 URLs for 'acoustics'
+INFO - Found 30 URLs for 'acoustics'
+INFO - Processing level 2 term: acquired aphasia (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: acquired aphasia (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 29 URLs for 'acquired aphasia'
+INFO - Found 29 URLs for 'acquired aphasia'
+INFO - Processing level 2 term: acquired apraxia of speech (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: acquired apraxia of speech (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 26 URLs for 'acquired apraxia of speech'
+INFO - Found 26 URLs for 'acquired apraxia of speech'
+INFO - Processing level 2 term: acquired neurogenic communication disorders (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Processing level 2 term: acquired neurogenic communication disorders (LLM Min Score: 0.65, Models: ['default', 'mini', 'nano'], Attempts: 3, Agree: 2)
+INFO - Found 27 URLs for 'acquired neurogenic communication disorders'
+INFO - Found 27 URLs for 'acquired neurogenic communication disorders'
+INFO - ⏳ Starting fetch for term 'abortion': https://pmc.ncbi.nlm.nih.gov/articles/PMC7728127/
+INFO - ⏳ Starting fetch for term 'abortion': https://pmc.ncbi.nlm.nih.gov/articles/PMC7728127/
+INFO - ✅ Using cached content for term 'abortion': https://pmc.ncbi.nlm.nih.gov/articles/PMC7728127
+INFO - ✅ Using cached content for term 'abortion': https://pmc.ncbi.nlm.nih.gov/articles/PMC7728127
+INFO - ⏳ Starting fetch for term 'abortion': https://core.wisc.edu/publications-resources/abortion/
+INFO - ⏳ Starting fetch for term 'abortion': https://core.wisc.edu/publications-resources/abortion/
+INFO - ✅ Using cached content for term 'abortion': https://core.wisc.edu/publications-resources/abortion
+INFO - ✅ Using cached content for term 'abortion': https://core.wisc.edu/publications-resources/abortion
+INFO - ⏳ Starting fetch for term 'abortion': https://www.whijournal.com/article/S1049-3867(23)00101-9/fulltext
+INFO - ⏳ Starting fetch for term 'abortion': https://www.whijournal.com/article/S1049-3867(23)00101-9/fulltext
+INFO - ✅ Using cached content for term 'abortion': https://www.whijournal.com/article/S1049-3867(23)00101-9/fulltext
+INFO - ✅ Using cached content for term 'abortion': https://www.whijournal.com/article/S1049-3867(23)00101-9/fulltext
+INFO - ⏳ Starting fetch for term 'abortion': https://www.biomedcentral.com/collections/abophp
+INFO - ⏳ Starting fetch for term 'abortion': https://www.biomedcentral.com/collections/abophp
+INFO - ✅ Using cached content for term 'abortion': https://www.biomedcentral.com/collections/abophp
+INFO - ✅ Using cached content for term 'abortion': https://www.biomedcentral.com/collections/abophp
+INFO - ⏳ Starting fetch for term 'abortion': https://read.dukeupress.edu/jhppl/article/48/4/463/342857/Introduction-The-Politics-of-Abortion-50-Years
+INFO - ⏳ Starting fetch for term 'abortion': https://read.dukeupress.edu/jhppl/article/48/4/463/342857/Introduction-The-Politics-of-Abortion-50-Years
+INFO - ✅ Using cached content for term 'abortion': https://read.dukeupress.edu/jhppl/article/48/4/463/342857/Introduction-The-Politics-of-Abortion-50-Years
+INFO - ✅ Using cached content for term 'abortion': https://read.dukeupress.edu/jhppl/article/48/4/463/342857/Introduction-The-Politics-of-Abortion-50-Years
+INFO - ⏳ Starting fetch for term 'abortion': https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1322299/full
+INFO - ⏳ Starting fetch for term 'abortion': https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1322299/full
+INFO - ✅ Using cached content for term 'abortion': https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1322299/full
+INFO - ✅ Using cached content for term 'abortion': https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2023.1322299/full
+INFO - ⏳ Starting fetch for term 'abortion': https://infodemiology.jmir.org/2024/1/e49335
+INFO - ⏳ Starting fetch for term 'abortion': https://infodemiology.jmir.org/2024/1/e49335
+INFO - ✅ Using cached content for term 'abortion': https://infodemiology.jmir.org/2024/1/e49335
+INFO - ✅ Using cached content for term 'abortion': https://infodemiology.jmir.org/2024/1/e49335
+INFO - ⏳ Starting fetch for term 'abortion': https://www.guttmacher.org/report/research-on-early-impact-of-dobbs-on-abortion-births-contraception
+INFO - ⏳ Starting fetch for term 'abortion': https://www.guttmacher.org/report/research-on-early-impact-of-dobbs-on-abortion-births-contraception
+INFO - ✅ Using cached content for term 'abortion': https://www.guttmacher.org/report/research-on-early-impact-of-dobbs-on-abortion-births-contraception
+INFO - ✅ Using cached content for term 'abortion': https://www.guttmacher.org/report/research-on-early-impact-of-dobbs-on-abortion-births-contraception
+INFO - ⏳ Starting fetch for term 'abortion': https://libguides.sau.edu/abortion/social
+INFO - ⏳ Starting fetch for term 'abortion': https://libguides.sau.edu/abortion/social
+INFO - ✅ Using cached content for term 'abortion': https://libguides.sau.edu/abortion/social
+INFO - ✅ Using cached content for term 'abortion': https://libguides.sau.edu/abortion/social
+INFO - ⏳ Starting fetch for term 'abortion': https://www.liebertpub.com/doi/10.1089/whr.2024.0041
+INFO - ⏳ Starting fetch for term 'abortion': https://www.liebertpub.com/doi/10.1089/whr.2024.0041
+INFO - ✅ Using cached content for term 'abortion': https://www.liebertpub.com/doi/10.1089/whr.2024.0041
+INFO - ✅ Using cached content for term 'abortion': https://www.liebertpub.com/doi/10.1089/whr.2024.0041
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://bse.eu/executive-education/competition-markets-regulation/abuse-of-dominance
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://bse.eu/executive-education/competition-markets-regulation/abuse-of-dominance
+INFO - ✅ Using cached content for term 'abuse of dominance': https://bse.eu/executive-education/competition-markets-regulation/abuse-of-dominance
+INFO - ✅ Using cached content for term 'abuse of dominance': https://bse.eu/executive-education/competition-markets-regulation/abuse-of-dominance
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://competition-bureau.canada.ca/en/restrictive-trade-practices/abuse-dominance
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://competition-bureau.canada.ca/en/restrictive-trade-practices/abuse-dominance
+INFO - ✅ Using cached content for term 'abuse of dominance': https://competition-bureau.canada.ca/en/restrictive-trade-practices/abuse-dominance
+INFO - ✅ Using cached content for term 'abuse of dominance': https://competition-bureau.canada.ca/en/restrictive-trade-practices/abuse-dominance
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://academic.oup.com/oxrep/article/40/4/776/7990567
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://academic.oup.com/oxrep/article/40/4/776/7990567
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://www.concurrences.com/en/dictionary/abuse-of-dominant-position-en
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://www.concurrences.com/en/dictionary/abuse-of-dominant-position-en
+INFO - ✅ Using cached content for term 'abuse of dominance': https://www.concurrences.com/en/dictionary/abuse-of-dominant-position-en
+INFO - ✅ Using cached content for term 'abuse of dominance': https://www.concurrences.com/en/dictionary/abuse-of-dominant-position-en
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://ecp.crai.com/how-we-can-help/abuse-of-dominance/
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://ecp.crai.com/how-we-can-help/abuse-of-dominance/
+INFO - ✅ Using cached content for term 'abuse of dominance': https://ecp.crai.com/how-we-can-help/abuse-of-dominance
+INFO - ✅ Using cached content for term 'abuse of dominance': https://ecp.crai.com/how-we-can-help/abuse-of-dominance
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://cuts-ccier.org/pdf/Paper-2-Ethopia.pdf
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://cuts-ccier.org/pdf/Paper-2-Ethopia.pdf
+INFO - ✅ Using cached content for term 'abuse of dominance': https://cuts-ccier.org/pdf/Paper-2-Ethopia.pdf
+INFO - ✅ Using cached content for term 'abuse of dominance': https://cuts-ccier.org/pdf/Paper-2-Ethopia.pdf
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://agrudpartners.com/abuse-of-dominant-position/
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://agrudpartners.com/abuse-of-dominant-position/
+INFO - ✅ Using cached content for term 'abuse of dominance': https://agrudpartners.com/abuse-of-dominant-position
+INFO - ✅ Using cached content for term 'abuse of dominance': https://agrudpartners.com/abuse-of-dominant-position
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://competition-bureau.canada.ca/en/how-we-foster-competition/education-and-outreach/abuse-dominance-enforcement-guidelines
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://competition-bureau.canada.ca/en/how-we-foster-competition/education-and-outreach/abuse-dominance-enforcement-guidelines
+INFO - ✅ Using cached content for term 'abuse of dominance': https://competition-bureau.canada.ca/en/how-we-foster-competition/education-and-outreach/abuse-dominance-enforcement-guidelines
+INFO - ✅ Using cached content for term 'abuse of dominance': https://competition-bureau.canada.ca/en/how-we-foster-competition/education-and-outreach/abuse-dominance-enforcement-guidelines
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://complianceconcourse.willkie.com/resources/antitrust-and-merger-control-eu-types-of-abuse/
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://complianceconcourse.willkie.com/resources/antitrust-and-merger-control-eu-types-of-abuse/
+INFO - ✅ Using cached content for term 'abuse of dominance': https://complianceconcourse.willkie.com/resources/antitrust-and-merger-control-eu-types-of-abuse
+INFO - ✅ Using cached content for term 'abuse of dominance': https://complianceconcourse.willkie.com/resources/antitrust-and-merger-control-eu-types-of-abuse
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://www.economicliberties.us/our-work/abuse-of-dominance/
+INFO - ⏳ Starting fetch for term 'abuse of dominance': https://www.economicliberties.us/our-work/abuse-of-dominance/
+INFO - ✅ Using cached content for term 'abuse of dominance': https://www.economicliberties.us/our-work/abuse-of-dominance
+INFO - ✅ Using cached content for term 'abuse of dominance': https://www.economicliberties.us/our-work/abuse-of-dominance
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://aaahq.org/Research/Journals/Journal-of-Information-Systems
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://aaahq.org/Research/Journals/Journal-of-Information-Systems
+INFO - ✅ Using cached content for term 'accounting information systems': https://aaahq.org/Research/Journals/Journal-of-Information-Systems
+INFO - ✅ Using cached content for term 'accounting information systems': https://aaahq.org/Research/Journals/Journal-of-Information-Systems
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://aaahq.org/meetings/2025/Journal-of-Information-Systems-Conference/Submissions
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://aaahq.org/meetings/2025/Journal-of-Information-Systems-Conference/Submissions
+INFO - ✅ Using cached content for term 'accounting information systems': https://aaahq.org/meetings/2025/Journal-of-Information-Systems-Conference/Submissions
+INFO - ✅ Using cached content for term 'accounting information systems': https://aaahq.org/meetings/2025/Journal-of-Information-Systems-Conference/Submissions
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://ideas.repec.org/s/eee/ijoais.html
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://ideas.repec.org/s/eee/ijoais.html
+INFO - ✅ Using cached content for term 'accounting information systems': https://ideas.repec.org/s/eee/ijoais.html
+INFO - ✅ Using cached content for term 'accounting information systems': https://ideas.repec.org/s/eee/ijoais.html
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems/vol/51/suppl/C
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems/vol/51/suppl/C
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems/vol/51/suppl/C
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.sciencedirect.com/journal/international-journal-of-accounting-information-systems/vol/51/suppl/C
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.researchgate.net/topic/Accounting-Information-Systems/publications
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.researchgate.net/topic/Accounting-Information-Systems/publications
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting/
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting/
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ✅ Using cached content for term 'accounting information systems': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ✅ Using cached content for term 'accounting information systems': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.quora.com/What-simple-quantitative-research-topic-for-accounting-information-system-students-can-you-give-me
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://www.quora.com/What-simple-quantitative-research-topic-for-accounting-information-system-students-can-you-give-me
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.quora.com/What-simple-quantitative-research-topic-for-accounting-information-system-students-can-you-give-me
+INFO - ✅ Using cached content for term 'accounting information systems': https://www.quora.com/What-simple-quantitative-research-topic-for-accounting-information-system-students-can-you-give-me
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://guides.emich.edu/c.php?g=187882&p=1241450
+INFO - ⏳ Starting fetch for term 'accounting information systems': https://guides.emich.edu/c.php?g=187882&p=1241450
+INFO - ✅ Using cached content for term 'accounting information systems': https://guides.emich.edu/c.php?g=187882&p=1241450
+INFO - ✅ Using cached content for term 'accounting information systems': https://guides.emich.edu/c.php?g=187882&p=1241450
+INFO - ⏳ Starting fetch for term 'accounting policy': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ⏳ Starting fetch for term 'accounting policy': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ✅ Using cached content for term 'accounting policy': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ✅ Using cached content for term 'accounting policy': https://onlinelibrary.wiley.com/journal/1475679x
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy
+INFO - ✅ Using cached content for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy
+INFO - ✅ Using cached content for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.chicagobooth.edu/research/chookaszian/journal-of-accounting-research
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.chicagobooth.edu/research/chookaszian/journal-of-accounting-research
+INFO - ✅ Using cached content for term 'accounting policy': https://www.chicagobooth.edu/research/chookaszian/journal-of-accounting-research
+INFO - ✅ Using cached content for term 'accounting policy': https://www.chicagobooth.edu/research/chookaszian/journal-of-accounting-research
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.journalofaccountancy.com/topics/
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.journalofaccountancy.com/topics/
+INFO - ✅ Using cached content for term 'accounting policy': https://www.journalofaccountancy.com/topics
+INFO - ✅ Using cached content for term 'accounting policy': https://www.journalofaccountancy.com/topics
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.rhsmith.umd.edu/departments/accounting-information-assurance/japp-conference
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.rhsmith.umd.edu/departments/accounting-information-assurance/japp-conference
+INFO - ✅ Using cached content for term 'accounting policy': https://www.rhsmith.umd.edu/departments/accounting-information-assurance/japp-conference
+INFO - ✅ Using cached content for term 'accounting policy': https://www.rhsmith.umd.edu/departments/accounting-information-assurance/japp-conference
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy/vol/45/suppl/C
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy/vol/45/suppl/C
+INFO - ✅ Using cached content for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy/vol/45/suppl/C
+INFO - ✅ Using cached content for term 'accounting policy': https://www.sciencedirect.com/journal/journal-of-accounting-and-public-policy/vol/45/suppl/C
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting/
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting/
+INFO - ✅ Using cached content for term 'accounting policy': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting
+INFO - ✅ Using cached content for term 'accounting policy': https://www.reddit.com/r/Accounting/comments/13i9wwv/current_hot_topics_in_accounting
+INFO - ⏳ Starting fetch for term 'accounting policy': https://onlinelibrary.wiley.com/loi/1475679x
+INFO - ⏳ Starting fetch for term 'accounting policy': https://onlinelibrary.wiley.com/loi/1475679x
+INFO - ✅ Using cached content for term 'accounting policy': https://onlinelibrary.wiley.com/loi/1475679x
+INFO - ✅ Using cached content for term 'accounting policy': https://onlinelibrary.wiley.com/loi/1475679x
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.researchgate.net/post/Can_any_one_suggest_me_the_latest_topics_of_research_in_accounting_and_finance
+INFO - ⏳ Starting fetch for term 'accounting policy': https://www.researchgate.net/post/Can_any_one_suggest_me_the_latest_topics_of_research_in_accounting_and_finance
+INFO - ⏳ Starting fetch for term 'accounting policy': https://research.com/journal/journal-of-accounting-and-public-policy
+INFO - ⏳ Starting fetch for term 'accounting policy': https://research.com/journal/journal-of-accounting-and-public-policy
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://pmc.ncbi.nlm.nih.gov/articles/PMC10083236/
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://pmc.ncbi.nlm.nih.gov/articles/PMC10083236/
+INFO - ✅ Using cached content for term 'achilles tendon ruptures': https://pmc.ncbi.nlm.nih.gov/articles/PMC10083236
+INFO - ✅ Using cached content for term 'achilles tendon ruptures': https://pmc.ncbi.nlm.nih.gov/articles/PMC10083236
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.ncbi.nlm.nih.gov/books/NBK430844/
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.ncbi.nlm.nih.gov/books/NBK430844/
+INFO - ✅ Using cached content for term 'achilles tendon ruptures': https://www.ncbi.nlm.nih.gov/books/NBK430844
+INFO - ✅ Using cached content for term 'achilles tendon ruptures': https://www.ncbi.nlm.nih.gov/books/NBK430844
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.sciencedirect.com/science/article/pii/S2214031X24001116
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.sciencedirect.com/science/article/pii/S2214031X24001116
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://josr-online.biomedcentral.com/articles/10.1186/s13018-024-04559-5
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://josr-online.biomedcentral.com/articles/10.1186/s13018-024-04559-5
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.nejm.org/doi/full/10.1056/NEJMoa2108447
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.nejm.org/doi/full/10.1056/NEJMoa2108447
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://journals.sagepub.com/doi/10.1177/03000605231205179
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://journals.sagepub.com/doi/10.1177/03000605231205179
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://bmjopensem.bmj.com/content/10/3/e001960
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://bmjopensem.bmj.com/content/10/3/e001960
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.frontiersin.org/journals/surgery/articles/10.3389/fsurg.2024.1483584/full
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.frontiersin.org/journals/surgery/articles/10.3389/fsurg.2024.1483584/full
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.mdpi.com/1648-9144/58/9/1195
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://www.mdpi.com/1648-9144/58/9/1195
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://digitalscholarship.unlv.edu/scholarship_kin/vol5/iss1/10/
+INFO - ⏳ Starting fetch for term 'achilles tendon ruptures': https://digitalscholarship.unlv.edu/scholarship_kin/vol5/iss1/10/
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://pubs.aip.org/asa/jasa
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://pubs.aip.org/asa/jasa
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://pubs.aip.org/asa/jasa/issue/145/1
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://pubs.aip.org/asa/jasa/issue/145/1
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.sciencedirect.com/journal/journal-of-sound-and-vibration
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.sciencedirect.com/journal/journal-of-sound-and-vibration
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://asmedigitalcollection.asme.org/vibrationacoustics
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://asmedigitalcollection.asme.org/vibrationacoustics
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.sciencegate.app/keyword/34183
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.sciencegate.app/keyword/34183
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://acoustics.org/top-journal-articles-of-2023/
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://acoustics.org/top-journal-articles-of-2023/
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.mdpi.com/journal/acoustics
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.mdpi.com/journal/acoustics
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://acousticsresearch.com/acoustics-research/publications-journal/
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://acousticsresearch.com/acoustics-research/publications-journal/
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://pubmed.ncbi.nlm.nih.gov/39121092/
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://pubmed.ncbi.nlm.nih.gov/39121092/
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.sciencedirect.com/journal/applied-acoustics/vol/211/suppl/C
+INFO - ⏳ Starting fetch for term 'acoustic analysis': https://www.sciencedirect.com/journal/applied-acoustics/vol/211/suppl/C
+INFO - ⏳ Starting fetch for term 'acoustics': https://pubs.aip.org/asa/jasa
+INFO - ⏳ Starting fetch for term 'acoustics': https://pubs.aip.org/asa/jasa
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.sciencedirect.com/journal/applied-acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.sciencedirect.com/journal/applied-acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.frontiersin.org/journals/acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.frontiersin.org/journals/acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://pubs.aip.org/asa/poma
+INFO - ⏳ Starting fetch for term 'acoustics': https://pubs.aip.org/asa/poma
+INFO - ⏳ Starting fetch for term 'acoustics': https://acoustics.org/top-journal-articles-of-2023/
+INFO - ⏳ Starting fetch for term 'acoustics': https://acoustics.org/top-journal-articles-of-2023/
+INFO - ⏳ Starting fetch for term 'acoustics': https://asmedigitalcollection.asme.org/vibrationacoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://asmedigitalcollection.asme.org/vibrationacoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.mdpi.com/journal/acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.mdpi.com/journal/acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.nature.com/subjects/acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.nature.com/subjects/acoustics
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.wfae.net/journal.html
+INFO - ⏳ Starting fetch for term 'acoustics': https://www.wfae.net/journal.html
+INFO - ⏳ Starting fetch for term 'acoustics': https://acoustics.ippt.pan.pl/
+INFO - ⏳ Starting fetch for term 'acoustics': https://acoustics.ippt.pan.pl/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://academy.pubs.asha.org/2024/12/highlights-from-the-52nd-clinical-aphasiology-conference/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://academy.pubs.asha.org/2024/12/highlights-from-the-52nd-clinical-aphasiology-conference/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://apps.asha.org/eweb/OLSDynamicPage.aspx?Webcode=olsdetails&title=Select+Papers+from+the+41st+Clinical+Aphasiology+Conference+(Reference)
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://apps.asha.org/eweb/OLSDynamicPage.aspx?Webcode=olsdetails&title=Select+Papers+from+the+41st+Clinical+Aphasiology+Conference+(Reference)
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://pmc.ncbi.nlm.nih.gov/articles/PMC7000861/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://pmc.ncbi.nlm.nih.gov/articles/PMC7000861/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.science.gov/topicpages/a/aphasia+treatment+research.html
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.science.gov/topicpages/a/aphasia+treatment+research.html
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://informationr.net/infres/article/view/814/447
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://informationr.net/infres/article/view/814/447
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://pmc.ncbi.nlm.nih.gov/articles/PMC10213773/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://pmc.ncbi.nlm.nih.gov/articles/PMC10213773/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.aphasiaresearchcenter.org/publications
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.aphasiaresearchcenter.org/publications
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.ebsco.com/sites/g/files/nabnos191/files/acquiadam-assets/Rehabilitation-Reference-Center-Clinical-Review-Aphasia-Acquired-Childhood.pdf
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.ebsco.com/sites/g/files/nabnos191/files/acquiadam-assets/Rehabilitation-Reference-Center-Clinical-Review-Aphasia-Acquired-Childhood.pdf
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://brooksrehab.org/resources/researchers-at-brooks-rehabilitation-and-columbia-university-publish-study-on-effectiveness-of-aphasia-centers/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://brooksrehab.org/resources/researchers-at-brooks-rehabilitation-and-columbia-university-publish-study-on-effectiveness-of-aphasia-centers/
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.tandfonline.com/toc/paph20/32/sup1
+INFO - ⏳ Starting fetch for term 'acquired aphasia': https://www.tandfonline.com/toc/paph20/32/sup1
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.asha.org/practice-portal/clinical-topics/acquired-apraxia-of-speech/?srsltid=AfmBOoodJp-8hKy75f2oNIhMztO2jW5Uqa0R31k7gdZ9mNPq5zWJWxJz
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.asha.org/practice-portal/clinical-topics/acquired-apraxia-of-speech/?srsltid=AfmBOoodJp-8hKy75f2oNIhMztO2jW5Uqa0R31k7gdZ9mNPq5zWJWxJz
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.tandfonline.com/doi/full/10.1080/02687038.2021.1896108
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.tandfonline.com/doi/full/10.1080/02687038.2021.1896108
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://pubs.asha.org/doi/10.1044/2024_JSLHR-24-00196
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://pubs.asha.org/doi/10.1044/2024_JSLHR-24-00196
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.speechpathology.com/articles/research-watch-report-apraxia-of-speech-20355
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.speechpathology.com/articles/research-watch-report-apraxia-of-speech-20355
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://pmc.ncbi.nlm.nih.gov/articles/PMC10629164/
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://pmc.ncbi.nlm.nih.gov/articles/PMC10629164/
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.apraxia-kids.org/differential-diagnosis-of-apraxia-of-speech-in-children-and-adults-a-scoping-review/
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.apraxia-kids.org/differential-diagnosis-of-apraxia-of-speech-in-children-and-adults-a-scoping-review/
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://pmc.ncbi.nlm.nih.gov/articles/PMC5576968/
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://pmc.ncbi.nlm.nih.gov/articles/PMC5576968/
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.pearsonassessments.com/content/dam/school/global/clinical/us/assets/ebp-briefs/EBP_V11A2_1A.pdf?srsltid=AfmBOoru9lA_mL3OxQ9OgcUgp-WKhj2FZEErHuWSY4IZwUA2LJeLkfBW
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.pearsonassessments.com/content/dam/school/global/clinical/us/assets/ebp-briefs/EBP_V11A2_1A.pdf?srsltid=AfmBOoru9lA_mL3OxQ9OgcUgp-WKhj2FZEErHuWSY4IZwUA2LJeLkfBW
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.researchgate.net/publication/215694694_Treatment_Guidelines_for_Acquired_Apraxia_of_Speech_a_Synthesis_and_evaluation_of_the_evidence
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.researchgate.net/publication/215694694_Treatment_Guidelines_for_Acquired_Apraxia_of_Speech_a_Synthesis_and_evaluation_of_the_evidence
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1187399/full
+INFO - ⏳ Starting fetch for term 'acquired apraxia of speech': https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1187399/full
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://pmc.ncbi.nlm.nih.gov/articles/PMC10808624/
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://pmc.ncbi.nlm.nih.gov/articles/PMC10808624/
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://www.pluralpublishing.com/publications/acquired-neurogenic-communication-disorders-an-integrated-clinical-approach?srsltid=AfmBOop6MaBWX7p-Nu4kpN-ffxVm5YbiD5TpAlbChPeo1HepMmfmFvca
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://www.pluralpublishing.com/publications/acquired-neurogenic-communication-disorders-an-integrated-clinical-approach?srsltid=AfmBOop6MaBWX7p-Nu4kpN-ffxVm5YbiD5TpAlbChPeo1HepMmfmFvca
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://www.ancds.org/ancds-authored-reviews
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://www.ancds.org/ancds-authored-reviews
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://academy.pubs.asha.org/2020/03/ajslp-special-issue-highlights-the-48th-annual-clinical-aphasiology-conference/
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://academy.pubs.asha.org/2020/03/ajslp-special-issue-highlights-the-48th-annual-clinical-aphasiology-conference/
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://pubmed.ncbi.nlm.nih.gov/39361024/
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://pubmed.ncbi.nlm.nih.gov/39361024/
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://journals.lww.com/topicsinlanguagedisorders/fulltext/2021/01000/advances_in_discourse_analysis_related_to.2.aspx
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://journals.lww.com/topicsinlanguagedisorders/fulltext/2021/01000/advances_in_discourse_analysis_related_to.2.aspx
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://perspectives.pubs.asha.org/sig2?cookieSet=1
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://perspectives.pubs.asha.org/sig2?cookieSet=1
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://www.wiley.com/en-us/Acquired+Neurogenic+Communication+Disorders%3A+A+Clinical+Perspective-p-x000305318
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://www.wiley.com/en-us/Acquired+Neurogenic+Communication+Disorders%3A+A+Clinical+Perspective-p-x000305318
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://encompass.eku.edu/cgi/viewcontent.cgi?article=1710&context=etd
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://encompass.eku.edu/cgi/viewcontent.cgi?article=1710&context=etd
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://research.com/journal/topics-in-language-disorders
+INFO - ⏳ Starting fetch for term 'acquired neurogenic communication disorders': https://research.com/journal/topics-in-language-disorders
+INFO - Extracted a total of 539 raw lists for 'abortion'. Starting filtering...
+INFO - Extracted a total of 539 raw lists for 'abortion'. Starting filtering...
+INFO - Running multiple LLM extractions (3) for 'abortion'
+INFO - Running multiple LLM extractions (3) for 'abortion'
+INFO - Attempt 1/3 using RANDOM provider: gemini, model type: default
+INFO - Attempt 1/3 using RANDOM provider: gemini, model type: default
+INFO - 🔄 Starting improved filtering for 'abortion'. Received 539 raw lists.
+INFO - 🔄 Starting improved filtering for 'abortion'. Received 539 raw lists.
+INFO - 📋 After cleaning and deduplication: 250 unique lists remain
+INFO - 📋 After cleaning and deduplication: 250 unique lists remain
+WARNING - ⚠️ Limiting LLM processing to top 50 lists out of 250 total
+WARNING - ⚠️ Limiting LLM processing to top 50 lists out of 250 total
+INFO - 🧠 Sending 50 lists to LLM (model: default) for extraction
+INFO - 🧠 Sending 50 lists to LLM (model: default) for extraction
+INFO - Sending batch 1/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 1/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+WARNING - ⚠️ HTTP 403 for term 'abuse of dominance': https://academic.oup.com/oxrep/article/40/4/776/7990567
+WARNING - ⚠️ HTTP 403 for term 'abuse of dominance': https://academic.oup.com/oxrep/article/40/4/776/7990567
+WARNING - ⚠️ HTTP 403 for term 'accounting policy': https://research.com/journal/journal-of-accounting-and-public-policy
+WARNING - ⚠️ HTTP 403 for term 'accounting policy': https://research.com/journal/journal-of-accounting-and-public-policy
+WARNING - ⚠️ HTTP 403 for term 'accounting information systems': https://www.researchgate.net/topic/Accounting-Information-Systems/publications
+WARNING - ⚠️ HTTP 403 for term 'accounting information systems': https://www.researchgate.net/topic/Accounting-Information-Systems/publications
+WARNING - ⚠️ HTTP 403 for term 'accounting policy': https://www.researchgate.net/post/Can_any_one_suggest_me_the_latest_topics_of_research_in_accounting_and_finance
+WARNING - ⚠️ HTTP 403 for term 'accounting policy': https://www.researchgate.net/post/Can_any_one_suggest_me_the_latest_topics_of_research_in_accounting_and_finance
+INFO - Sending batch 2/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 2/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 3/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 3/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 4/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 4/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 5/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 5/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 6/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 6/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 7/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 7/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 8/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 8/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 9/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 9/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 10/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - Sending batch 10/10 (5 lists) to LLM (gemini, model: default) for list extraction...
+INFO - 📋 LLM extraction yielded 12 verified lists with 40 total items
+INFO - 📋 LLM extraction yielded 12 verified lists with 40 total items
+INFO - ✅ Filtering complete for 'abortion' in 234.02s: 12 final lists, 40 total items
+INFO - ✅ Filtering complete for 'abortion' in 234.02s: 12 final lists, 40 total items
+INFO - Processed 12 LLM results to handle markdown formatting
+INFO - Processed 12 LLM results to handle markdown formatting
+INFO - Attempt 1 found 12 verified lists
+INFO - Attempt 1 found 12 verified lists
+INFO - Attempt 2/3 using RANDOM provider: gemini, model type: mini
+INFO - Attempt 2/3 using RANDOM provider: gemini, model type: mini
+INFO - 🔄 Starting improved filtering for 'abortion'. Received 539 raw lists.
+INFO - 🔄 Starting improved filtering for 'abortion'. Received 539 raw lists.
+INFO - 📋 After cleaning and deduplication: 250 unique lists remain
+INFO - 📋 After cleaning and deduplication: 250 unique lists remain
+WARNING - ⚠️ Limiting LLM processing to top 50 lists out of 250 total
+WARNING - ⚠️ Limiting LLM processing to top 50 lists out of 250 total
+INFO - 🧠 Sending 50 lists to LLM (model: mini) for extraction
+INFO - 🧠 Sending 50 lists to LLM (model: mini) for extraction
+INFO - Sending batch 1/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 1/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 2/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 2/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 3/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 3/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 4/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 4/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 5/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 5/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 6/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 6/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 7/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 7/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 8/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 8/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 9/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 9/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 10/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - Sending batch 10/10 (5 lists) to LLM (gemini, model: mini) for list extraction...
+INFO - 📋 LLM extraction yielded 12 verified lists with 45 total items
+INFO - 📋 LLM extraction yielded 12 verified lists with 45 total items
+INFO - ✅ Filtering complete for 'abortion' in 50.43s: 12 final lists, 45 total items
+INFO - ✅ Filtering complete for 'abortion' in 50.43s: 12 final lists, 45 total items
+INFO - Processed 12 LLM results to handle markdown formatting
+INFO - Processed 12 LLM results to handle markdown formatting
+INFO - Attempt 2 found 12 verified lists
+INFO - Attempt 2 found 12 verified lists
+INFO - Attempt 3/3 using RANDOM provider: gemini, model type: nano
+INFO - Attempt 3/3 using RANDOM provider: gemini, model type: nano
+INFO - 🔄 Starting improved filtering for 'abortion'. Received 539 raw lists.
+INFO - 🔄 Starting improved filtering for 'abortion'. Received 539 raw lists.
+INFO - 📋 After cleaning and deduplication: 250 unique lists remain
+INFO - 📋 After cleaning and deduplication: 250 unique lists remain
+WARNING - ⚠️ Limiting LLM processing to top 50 lists out of 250 total
+WARNING - ⚠️ Limiting LLM processing to top 50 lists out of 250 total
+INFO - 🧠 Sending 50 lists to LLM (model: nano) for extraction
+INFO - 🧠 Sending 50 lists to LLM (model: nano) for extraction
+INFO - Sending batch 1/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 1/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 2/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 2/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 3/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 3/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 4/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 4/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 5/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 5/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 6/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 6/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 7/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 7/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 8/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 8/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 9/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 9/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 10/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - Sending batch 10/10 (5 lists) to LLM (gemini, model: nano) for list extraction...
+INFO - 📋 LLM extraction yielded 10 verified lists with 43 total items
+INFO - 📋 LLM extraction yielded 10 verified lists with 43 total items
+INFO - ✅ Filtering complete for 'abortion' in 40.95s: 10 final lists, 43 total items
+INFO - ✅ Filtering complete for 'abortion' in 40.95s: 10 final lists, 43 total items
+INFO - Processed 10 LLM results to handle markdown formatting
+INFO - Processed 10 LLM results to handle markdown formatting
+INFO - Attempt 3 found 10 verified lists
+INFO - Attempt 3 found 10 verified lists
+INFO - Found 43 conference topics that meet the agreement threshold
+INFO - Found 43 conference topics that meet the agreement threshold
+WARNING - Mismatch between LLM candidates (50) and results (34) for abortion. Pairing up to 34.
+WARNING - Mismatch between LLM candidates (50) and results (34) for abortion. Pairing up to 34.
+INFO - After filtering/LLM, 1 lists/sub-lists remain for 'abortion'
+INFO - After filtering/LLM, 1 lists/sub-lists remain for 'abortion'
+INFO - Consolidated to 32 unique conference topics for 'abortion'
+INFO - Consolidated to 32 unique conference topics for 'abortion'

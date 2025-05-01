@@ -19,6 +19,8 @@ from generate_glossary.utils.web_miner import WebContent
 
 load_dotenv('.env')
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 # Default configuration
 DEFAULT_CONFIG = {
     "batch_size": 100,
@@ -91,6 +93,7 @@ def read_term_json(filepath: str) -> Dict[str, Any]:
             
             result["canonicals"] = canonicals
             result["variations"] = variations
+            
             return result
         except Exception as e:
             logging.warning(f"Error reading JSON file {json_path}: {e}")
@@ -131,6 +134,7 @@ def read_term_json(filepath: str) -> Dict[str, Any]:
             
             result["canonicals"] = canonicals
             result["variations"] = variations
+            
             return result
         else:
             logging.warning(f"Metadata file not found: {metadata_path}")
@@ -301,6 +305,11 @@ def main() -> None:
         nargs="+",
         help="Paths to higher level term files for cross-level deduplication. Format: level:path (e.g., 0:lv0.txt 1:lv1.txt)"
     )
+    parser.add_argument(
+        "--current-level",
+        type=int,
+        help="Specify the level number for the current input terms (REQUIRED for graph mode). Lower level numbers have higher priority when selecting canonical forms. For example, if 'arts' is in level 1 and 'art' is in level 2, 'arts' will be selected as the canonical form."
+    )
     
     # Mode selection
     parser.add_argument(
@@ -379,6 +388,10 @@ def main() -> None:
         default=DEFAULT_CONFIG["use_enhanced_linguistics"],
         help="Use enhanced linguistic analysis for better variation detection"
     )
+    advanced_group.add_argument(
+        "--graph-cache-dir",
+        help="Directory to store and load graph cache for incremental deduplication (only for graph mode)"
+    )
     
     args = parser.parse_args()
     
@@ -394,6 +407,18 @@ def main() -> None:
 
     # Configure logging
     setup_logging(args.log_level, str(log_file_path))
+    
+    # Silence verbose logs from underlying libraries
+    logging.getLogger("google.api_core").setLevel(logging.WARNING)
+    logging.getLogger("google.cloud.aiplatform").setLevel(logging.WARNING)
+    logging.getLogger('google_genai.models').setLevel(logging.WARNING)
+    logging.getLogger('google_genai').setLevel(logging.WARNING)
+    logging.getLogger("vertexai").setLevel(logging.WARNING) # Add vertexai logger
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("httpcore").setLevel(logging.WARNING) # httpx uses httpcore
+    logging.getLogger("openai").setLevel(logging.WARNING) # Might also log directly
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
+    # Add other library logger names here if needed
     
     try:
         # Read terms
@@ -495,16 +520,36 @@ def main() -> None:
             )
         elif args.mode == "graph":
             # Graph-based deduplication (recommended)
+            
+            # Validate that current_level is specified when using graph mode
+            if args.current_level is None:
+                logging.error("ERROR: --current-level parameter is required when using graph mode for proper level-based prioritization")
+                logging.error("Please specify the level number for the current input terms using --current-level")
+                sys.exit(1)
+            
+            # Create a filtered version of higher_level_terms that only includes actual canonical terms
+            # This prevents variations from being incorrectly included in higher levels
+            filtered_higher_level_terms = {}
+            if higher_level_terms_with_variations:
+                for level, all_level_terms in higher_level_terms_with_variations.items():
+                    # Only include terms that actually appear in the original canonical files
+                    if level in higher_level_terms:
+                        canonical_set = set(higher_level_terms[level])
+                        filtered_higher_level_terms[level] = higher_level_terms[level]
+                
+            # Use the filtered higher level terms for deduplication
             results = deduplication_modes.deduplicate_graph_based(
                 terms,
                 web_content=web_content,
-                higher_level_terms=higher_level_terms_with_variations if higher_level_terms_with_variations else higher_level_terms,
+                higher_level_terms=filtered_higher_level_terms if filtered_higher_level_terms else higher_level_terms,
                 higher_level_web_content=higher_level_web_content,
                 min_score=args.min_score,
                 min_relevance_score=args.min_relevance_score,
                 batch_size=args.batch_size,
                 max_workers=args.max_workers,
-                use_enhanced_linguistics=args.use_enhanced_linguistics
+                use_enhanced_linguistics=args.use_enhanced_linguistics,
+                current_level=args.current_level,
+                cache_dir=args.graph_cache_dir
             )
         else:
             raise ValueError(f"Invalid deduplication mode: {args.mode}")

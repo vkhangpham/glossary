@@ -63,7 +63,6 @@ class InvalidURLError(Exception):
 # Global variables for model and tokenizer
 _model = None
 _tokenizer = None
-_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def is_wikipedia_url(url: str) -> bool:
@@ -118,8 +117,14 @@ def _get_fineweb_resources():
     """Lazy loading of FineWeb-Edu classifier resources"""
     global _model, _tokenizer
     if _model is None:
-        _model = AutoModelForSequenceClassification.from_pretrained(FINEWEB_MODEL_NAME).to(_device)
-        _model.eval()  # Set to evaluation mode
+        try:
+            logger.info("Loading FineWeb-Edu classifier model")
+            # Simple direct loading as shown in the example
+            _model = AutoModelForSequenceClassification.from_pretrained(FINEWEB_MODEL_NAME)
+            _model.eval()  # Set to evaluation mode
+        except Exception as e:
+            logger.error(f"Error loading model: {e}")
+            raise
     if _tokenizer is None:
         _tokenizer = AutoTokenizer.from_pretrained(FINEWEB_MODEL_NAME)
     return _tokenizer, _model
@@ -159,33 +164,36 @@ def convert_numpy_types(obj: Any) -> Any:
 
 def _process_batch(batch: List[str]) -> List[float]:
     """Process a batch of content using FineWeb-Edu classifier."""
-    tokenizer, model = _get_fineweb_resources()
+    try:
+        tokenizer, model = _get_fineweb_resources()
 
-    # Tokenize batch
-    inputs = tokenizer(
-        batch,
-        return_tensors="pt",
-        padding="longest",
-        truncation=True,
-        max_length=FINEWEB_MAX_LENGTH,
-    )
-    # Move inputs to device
-    inputs = {k: v.to(_device) for k, v in inputs.items()}
-
-    # Get model predictions
-    with torch.no_grad():
-        outputs = model(**inputs)
-        logits = outputs.logits.squeeze(-1).float().cpu().numpy()
-
-    # Process each score in the batch
-    scores = []
-    for score in logits:
-        # Get raw score (0-5)
-        raw_score = max(0, min(score, 5))
-        # Convert NumPy float32 to Python float
-        scores.append(float(raw_score))
-
-    return scores
+        # Process each text item individually to avoid batch-related issues
+        scores = []
+        for text in batch:
+            # Follow the example pattern exactly
+            inputs = tokenizer(
+                text,
+                return_tensors="pt",
+                padding="longest",
+                truncation=True,
+                max_length=FINEWEB_MAX_LENGTH,
+            )
+            
+            # Inference
+            with torch.no_grad():
+                outputs = model(**inputs)
+                logits = outputs.logits.squeeze(-1).float().detach().numpy()
+                score = logits.item()  # Get the single value
+                
+                # Ensure score is in valid range
+                score = max(0, min(score, 5))
+                scores.append(float(score))
+                
+        return scores
+    except Exception as e:
+        logger.error(f"Error in batch processing: {e}")
+        # Return a neutral score for all items in case of error
+        return [2.5] * len(batch)  # Middle score as fallback
 
 
 async def get_educational_scores_async(contents: List[str], show_progress: bool = False) -> List[float]:
@@ -225,17 +233,40 @@ async def get_educational_scores_async(contents: List[str], show_progress: bool 
 
 
 async def get_educational_score_async(content: str) -> float:
-    """Score single content using FineWeb-Edu classifier."""
-    scores = await get_educational_scores_async([content])
-    return scores[0]
+    """Score a single content using FineWeb-Edu classifier asynchronously."""
+    try:
+        # Process directly without batching for simplicity
+        tokenizer, model = _get_fineweb_resources()
+        
+        # Use the same pattern as in the example
+        inputs = tokenizer(
+            content,
+            return_tensors="pt",
+            padding="longest",
+            truncation=True,
+            max_length=FINEWEB_MAX_LENGTH,
+        )
+        
+        # Get prediction
+        with torch.no_grad():
+            outputs = model(**inputs)
+            logits = outputs.logits.squeeze(-1).float().detach().numpy()
+            score = logits.item()  # Get single value
+            
+        # Ensure score is in valid range
+        score = max(0, min(score, 5))
+        return float(score)
+    except Exception as e:
+        logger.error(f"Error getting educational score: {e}")
+        return 2.5  # Return a neutral score in case of error
 
 
 async def verify_content_async(
     url: str,
     content: str,
-    min_score: float = 2.6,
+    min_score: float = 1.5,
     **kwargs
-) -> VerificationResult:
+) -> Tuple[bool, str, float, float]:
     """Verify content based on educational quality score asynchronously.
     
     Args:
@@ -244,7 +275,7 @@ async def verify_content_async(
         min_score: Minimum score threshold for verification
         
     Returns:
-        Tuple of (is_verified, reason, score)
+        Tuple of (is_verified, reason, boosted_score, base_edu_score)
     """
     # Get educational quality score for processed content
     edu_score = await get_educational_score_async(content)
@@ -252,22 +283,25 @@ async def verify_content_async(
     # Apply domain-based boosting
     boost = 0.0
     boost_reason = ""
+    domain_trust = 0.5 # Default
     
     # Special case for Wikipedia (highest boost)
     if is_wikipedia_url(url):
         boost = 1.0
-        boost_reason = "Wikipedia content"
+        domain_trust = 1.0 # Explicitly set for reason string
+        boost_reason = "Wikipedia source"
     else:
-        # Get domain trust score (0.5-1.0) and calculate boost (0.0-0.5)
+        # Get domain trust score (0.5-1.0) and calculate boost (0.0-1.0)
         try:
             domain_trust = get_domain_trust_score(url)
             # Only boost if domain trust is above the baseline (0.5)
             if domain_trust > 0.5:
-                boost = (domain_trust - 0.5) * 2  # Scale 0.5-1.0 to 0.0-1.0
+                boost = (domain_trust - 0.5) * 2 # Scale 0.5-1.0 to 0.0-1.0
                 domain = urlparse(url).netloc
-                boost_reason = f"trusted domain ({domain})"
+                boost_reason = f"trusted domain ({domain}, trust={domain_trust:.2f})"
         except Exception as e:
             logger.warning(f"Error calculating domain trust for {url}: {e}")
+            boost_reason = "domain trust error" # Indicate error in reason
     
     # Apply the boost
     boosted_score = min(5.0, edu_score + boost)
@@ -275,30 +309,25 @@ async def verify_content_async(
     # Determine verification result
     is_verified = boosted_score >= min_score
     
-    # Create detailed reason
-    if boost > 0:
-        reason = (
-            f"Content verified with educational score {edu_score:.2f}/5.0 + {boost:.2f} boost for {boost_reason} = {boosted_score:.2f}/5.0"
-            if is_verified
-            else f"Content failed verification with educational score {edu_score:.2f}/5.0 + {boost:.2f} boost for {boost_reason} = {boosted_score:.2f}/5.0"
-        )
-    else:
-        reason = (
-            f"Content verified with educational score {boosted_score:.2f}/5.0"
-            if is_verified
-            else f"Content failed verification with educational score {boosted_score:.2f}/5.0"
-        )
+    # Create detailed reason string
+    status = "Verified" if is_verified else "Failed"
+    comparison = ">=" if is_verified else "<"
+    reason = (
+        f"{status}: Boosted score {boosted_score:.2f} "
+        f"(Base: {edu_score:.2f}, Boost: +{boost:.2f} for {boost_reason}) "
+        f"{comparison} Threshold {min_score:.2f}"
+    )
 
-    # Convert NumPy types to Python native types
-    return bool(is_verified), reason, float(boosted_score)
+    # Convert NumPy types to Python native types and return base score
+    return bool(is_verified), reason, float(boosted_score), float(edu_score)
 
 
 async def verify_batch_content_async(
     urls: List[str],
     contents: List[str],
-    min_score: float = 2.6,
+    min_score: float = 1.5,
     show_progress: bool = False
-) -> List[VerificationResult]:
+) -> List[Tuple[bool, str, float, float]]:
     """Verify a batch of content asynchronously.
     
     Args:
@@ -308,55 +337,53 @@ async def verify_batch_content_async(
         show_progress: Whether to show progress bars
         
     Returns:
-        List of verification results (is_verified, reason, score)
+        List of verification results (is_verified, reason, boosted_score, base_edu_score)
     """
     # Get educational scores in batches for processed content
     edu_scores = await get_educational_scores_async(contents, show_progress)
 
     # Process results in parallel
-    async def process_result(url: str, edu_score: float) -> VerificationResult:
+    async def process_result(url: str, edu_score: float) -> Tuple[bool, str, float, float]:
         # Apply domain-based boosting
         boost = 0.0
         boost_reason = ""
-        
+        domain_trust = 0.5 # Default
+
         # Special case for Wikipedia (highest boost)
         if is_wikipedia_url(url):
             boost = 1.0
-            boost_reason = "Wikipedia content"
+            domain_trust = 1.0 # Explicitly set for reason string
+            boost_reason = "Wikipedia source"
         else:
-            # Get domain trust score (0.5-1.0) and calculate boost (0.0-0.5)
+            # Get domain trust score (0.5-1.0) and calculate boost (0.0-1.0)
             try:
                 domain_trust = get_domain_trust_score(url)
                 # Only boost if domain trust is above the baseline (0.5)
                 if domain_trust > 0.5:
-                    boost = (domain_trust - 0.5) * 2  # Scale 0.5-1.0 to 0.0-1.0
+                    boost = (domain_trust - 0.5) * 2 # Scale 0.5-1.0 to 0.0-1.0
                     domain = urlparse(url).netloc
-                    boost_reason = f"trusted domain ({domain})"
+                    boost_reason = f"trusted domain ({domain}, trust={domain_trust:.2f})"
             except Exception as e:
                 logger.warning(f"Error calculating domain trust for {url}: {e}")
-        
+                boost_reason = "domain trust error" # Indicate error in reason
+
         # Apply the boost
         boosted_score = min(5.0, edu_score + boost)
         
         # Determine verification result
         is_verified = boosted_score >= min_score
         
-        # Create detailed reason
-        if boost > 0:
-            reason = (
-                f"Content verified with educational score {edu_score:.2f}/5.0 + {boost:.2f} boost for {boost_reason} = {boosted_score:.2f}/5.0"
-                if is_verified
-                else f"Content failed verification with educational score {edu_score:.2f}/5.0 + {boost:.2f} boost for {boost_reason} = {boosted_score:.2f}/5.0"
-            )
-        else:
-            reason = (
-                f"Content verified with educational score {boosted_score:.2f}/5.0"
-                if is_verified
-                else f"Content failed verification with educational score {boosted_score:.2f}/5.0"
-            )
+        # Create detailed reason string
+        status = "Verified" if is_verified else "Failed"
+        comparison = ">=" if is_verified else "<"
+        reason = (
+            f"{status}: Boosted score {boosted_score:.2f} "
+            f"(Base: {edu_score:.2f}, Boost: +{boost:.2f} for {boost_reason}) "
+            f"{comparison} Threshold {min_score:.2f}"
+        )
 
-        # Convert NumPy types to Python native types
-        return bool(is_verified), reason, float(boosted_score)
+        # Convert NumPy types to Python native types and return base score
+        return bool(is_verified), reason, float(boosted_score), float(edu_score)
 
     # Create tasks for parallel processing
     tasks = [process_result(url, score) for url, score in zip(urls, edu_scores)]

@@ -1,0 +1,6673 @@
+{
+  "timestamp": "2025-04-26T18:42:20.085387",
+  "detector": "HybridAmbiguityDetector (Improved)",
+  "level_filter": 3,
+  "parameters": {
+    "model_name": "all-MiniLM-L6-v2",
+    "min_resources": 3,
+    "use_radial_detector": false,
+    "dbscan_params": {
+      "eps": 0.4,
+      "min_samples": 2
+    },
+    "radial_params": {}
+  },
+  "total_ambiguous_terms": 112,
+  "detailed_results": {
+    "classification": {
+      "term": "classification",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "ecology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "plant biology"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "depression": {
+      "term": "depression",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "counseling"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "educational psychology"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "community health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9464666894003442,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "institutions": {
+      "term": "institutions",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "film studies"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "public administration"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "metabolomics": {
+      "term": "metabolomics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "cell biology"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "neurology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6206556391286076,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "automation": {
+      "term": "automation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 9,
+          "valid_snippets": 9,
+          "num_clusters": 1,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 7
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7101745886391437,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "mitigation": {
+      "term": "mitigation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "counseling"
+              ]
+            ],
+            [
+              [
+                "arts"
+              ],
+              [
+                "marine sciences"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "occupational therapy"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "environmental science"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "marine biology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6322455062819153,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "early intervention": {
+      "term": "early intervention",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "early childhood education"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "family studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.4211942793146211,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "metagenomics": {
+      "term": "metagenomics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8104405070494326,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "fairness": {
+      "term": "fairness",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "insurance"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8851813902572758,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "differentiation": {
+      "term": "differentiation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "genetics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 0,
+          "noise_points": 4,
+          "cluster_sizes": {},
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7344959938674487,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "locomotion": {
+      "term": "locomotion",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "teacher education"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "genetics"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "biology"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "physiology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "scheduling": {
+      "term": "scheduling",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "electrical engineering"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "health promotion"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "urban studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "biomarkers": {
+      "term": "biomarkers",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "medicine"
+              ],
+              [
+                "genetics"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "molecular biology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.4889008181867463,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "innovation": {
+      "term": "innovation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "film studies"
+              ]
+            ],
+            [
+              [
+                "arts"
+              ],
+              [
+                "journalism"
+              ]
+            ],
+            [
+              [
+                "business"
+              ],
+              [
+                "analytics"
+              ]
+            ],
+            [
+              [
+                "business"
+              ],
+              [
+                "business management"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "learning technologies"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "human movement"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "occupational therapy"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "election law"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "accounting"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "urban studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.632113578547352,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "proteomics": {
+      "term": "proteomics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "cell biology"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "neurology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9207630881880403,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "atmospheric chemistry": {
+      "term": "atmospheric chemistry",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "earth science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7307954916957801,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "risk": {
+      "term": "risk",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "business management"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "early childhood education"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "chemical engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "structural engineering"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "marketing"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "decision science"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "aeroelasticity": {
+      "term": "aeroelasticity",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aerospace engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "mechanical engineering"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "phonology": {
+      "term": "phonology",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "communication disorders"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "language studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8763396927825733,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "molecular imaging": {
+      "term": "molecular imaging",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "islamic law": {
+      "term": "islamic law",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "international law"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6305489515318025,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "computational chemistry": {
+      "term": "computational chemistry",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "biological engineering"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "chemistry"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.4282129292737895,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "ethnicity": {
+      "term": "ethnicity",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "music performance"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "professional writing"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.46754835621385826,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "pediatrics": {
+      "term": "pediatrics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "educational psychology"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "nutrition"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "health literacy": {
+      "term": "health literacy",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "nutrition"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "community health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.729625409602983,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "reliability": {
+      "term": "reliability",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "industrial engineering"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "sustainability"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7395518146247935,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "gene editing": {
+      "term": "gene editing",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "biological engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "genetics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 8
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.45252003492296566,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "fertility": {
+      "term": "fertility",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "medicine"
+              ],
+              [
+                "gynecology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "biology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 1.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "sustainable agriculture": {
+      "term": "sustainable agriculture",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "adult education"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "biology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 9,
+          "valid_snippets": 9,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 9
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.4371485836346095,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "logistics": {
+      "term": "logistics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "analytics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "manufacturing engineering"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8333978434302367,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "aesthetics": {
+      "term": "aesthetics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "communication"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "black studies"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "immigration": {
+      "term": "immigration",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "humanities"
+              ],
+              [
+                "international affairs"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "accounting"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8902343979057568,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "equality": {
+      "term": "equality",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "professional writing"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "public administration"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 7,
+          "valid_snippets": 7,
+          "num_clusters": 1,
+          "noise_points": 3,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7422566074205987,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "anxiety": {
+      "term": "anxiety",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "counseling"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "educational psychology"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "school psychology"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 1.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "differential equations": {
+      "term": "differential equations",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "mathematics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 7,
+          "valid_snippets": 7,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6920235983286402,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "tourism": {
+      "term": "tourism",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9041254645031349,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "ergonomics": {
+      "term": "ergonomics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "biological engineering"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "environmental science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7993051947355759,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "legislation": {
+      "term": "legislation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "educational leadership"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "nutrition"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "community health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.49266324642538084,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "terrorism": {
+      "term": "terrorism",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "rhetoric"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "chemistry"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 3,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8049445387981011,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "circuits": {
+      "term": "circuits",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "software engineering"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.32330066814911174,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "banking": {
+      "term": "banking",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "data analysis"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "clinical nutrition"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "finance"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "second amendment": {
+      "term": "second amendment",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6308104112335805,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "methodology": {
+      "term": "methodology",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "analytics"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "adult education"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "applied linguistics"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "justice studies"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "environmental health sciences"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6708982718807786,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "occupational health": {
+      "term": "occupational health",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "nutrition"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "community health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 1,
+          "noise_points": 4,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.4719503349359637,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "robotics": {
+      "term": "robotics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "analytics"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "adult education"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aerospace engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "manufacturing engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "software engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "systems engineering"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7349198473147519,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "national security": {
+      "term": "national security",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "electrical engineering"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "international law"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.68715912108892,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "united states": {
+      "term": "united states",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "marine biology"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "black studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6698918844890609,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "blockchain": {
+      "term": "blockchain",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "manufacturing engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "speech science"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "environmental law"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "information science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7063948598710854,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "morphology": {
+      "term": "morphology",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "humanities"
+              ],
+              [
+                "language studies"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "anatomy"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9954196261576613,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "aerodynamics": {
+      "term": "aerodynamics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aerospace engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7541189377754892,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "user interfaces": {
+      "term": "user interfaces",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "management"
+              ],
+              [
+                "information science"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "sustainability"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.412387396454831,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "power electronics": {
+      "term": "power electronics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "middle education"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aerospace engineering"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.815372822137133,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "world history": {
+      "term": "world history",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "humanities"
+              ],
+              [
+                "asian american studies"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "international affairs"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7168068111412502,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "photonics": {
+      "term": "photonics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "manufacturing engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "materials science"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "cellular physiology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "chemistry"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "geometry": {
+      "term": "geometry",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "physics"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "biostatistics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.908794739271074,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "polymers": {
+      "term": "polymers",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "biological engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "software engineering"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.3559467129514753,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "suicide prevention": {
+      "term": "suicide prevention",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "dance"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "medical laboratory science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6592669338873673,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "diplomacy": {
+      "term": "diplomacy",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "communication"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "educational leadership"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "comparative law"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "accounting"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "cultural studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9568517272211332,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "resilience": {
+      "term": "resilience",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "analytics"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "educational psychology"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "accounting"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "family nurse practitioner"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "public administration"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 1.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "governance": {
+      "term": "governance",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "film studies"
+              ]
+            ],
+            [
+              [
+                "business"
+              ],
+              [
+                "project management"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "human development"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "clinical nutrition"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "sport science"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "international law"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "accounting"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "environmental health sciences"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "anthropology"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "public administration"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9695756097789945,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "aerosol": {
+      "term": "aerosol",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "earth science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "reasoning": {
+      "term": "reasoning",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "data science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8228774837771379,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "simulation": {
+      "term": "simulation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "architectural engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "fluid mechanics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "systems engineering"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "construction management"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "data science"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "chemistry"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "environmental science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 12,
+          "valid_snippets": 12,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 12
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6809624997052479,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "information processing": {
+      "term": "information processing",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "communication"
+              ]
+            ],
+            [
+              [
+                "arts"
+              ],
+              [
+                "digital humanities"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "liberal studies"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "ecology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6274472814191279,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "disease": {
+      "term": "disease",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "food science"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "medical laboratory science"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "conservation"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.30157548352918556,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "dynamics": {
+      "term": "dynamics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "mechanics"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "chemistry"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "biostatistics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6315981999902192,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "informatics": {
+      "term": "informatics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "chemical engineering"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "anatomy"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7562855284685596,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "instrumentation": {
+      "term": "instrumentation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "structural engineering"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "cell biology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.984781843835591,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "obesity": {
+      "term": "obesity",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "clinical nutrition"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "paramedicine"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "physician assistant studies"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "family medicine"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "pediatric nurse practitioner"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.5461786290917514,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "gene therapy": {
+      "term": "gene therapy",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "biological engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "chemical engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "communication disorders"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8521734477120917,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "bioinformatics": {
+      "term": "bioinformatics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "research methodology"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "linguistics"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "biochemistry"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "data science"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "biostatistics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8048277930928013,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "estimation": {
+      "term": "estimation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "data analysis"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer engineering"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "biostatistics"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "decision science"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.890791000765114,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "tobacco control": {
+      "term": "tobacco control",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "nutrition"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "community health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7559944385303079,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "acoustics": {
+      "term": "acoustics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "hearing science"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "audiology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6890490345619793,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "pragmatics": {
+      "term": "pragmatics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "humanities"
+              ],
+              [
+                "language studies"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "linguistics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 7,
+          "valid_snippets": 7,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 7
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9463363482851596,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "racial disparities": {
+      "term": "racial disparities",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": true,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "physician assistant studies"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "community health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 9,
+          "valid_snippets": 9,
+          "num_clusters": 2,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 5,
+            "1": 2
+          },
+          "level": 3,
+          "silhouette_score": 0.2946220338344574,
+          "tfidf_confidence": 0.5094473632859519,
+          "is_low_confidence": false
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "neurodegeneration": {
+      "term": "neurodegeneration",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "conservation"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "stigma": {
+      "term": "stigma",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "nursing"
+              ],
+              [
+                "healthcare"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "audiology"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "epidemiology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 7,
+          "valid_snippets": 7,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 7
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 1.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "cities": {
+      "term": "cities",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "law"
+              ],
+              [
+                "environmental law"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "geography"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "combinatorics": {
+      "term": "combinatorics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer science"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "biostatistics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9632444962319002,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "bioethics": {
+      "term": "bioethics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "comparative literature"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "autonomy": {
+      "term": "autonomy",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "film studies"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7956778502665,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "emotion": {
+      "term": "emotion",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "american studies"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "middle education"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "comparative literature"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.4652803879214373,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "development economics": {
+      "term": "development economics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "business management"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "international affairs"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "international law"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.647959791289056,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "comparative genomics": {
+      "term": "comparative genomics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.3773817553643141,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "regulation": {
+      "term": "regulation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "clinical nutrition"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "international law"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "technology law"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "molecular genetics"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "economic history": {
+      "term": "economic history",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "structural engineering"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "accounting"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "child welfare": {
+      "term": "child welfare",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "early childhood education"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "family studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.5787725061756037,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "advocacy": {
+      "term": "advocacy",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "educational leadership"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "middle education"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 7
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6098278220986932,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "sensing": {
+      "term": "sensing",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "architectural engineering"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "sustainability"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6293194006449765,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "peace": {
+      "term": "peace",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "sexuality studies"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "human rights"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 1.0,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "cellular imaging": {
+      "term": "cellular imaging",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 3,
+          "cluster_sizes": {
+            "0": 2
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.45180059182747756,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "transportation": {
+      "term": "transportation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer engineering"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "sustainability"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 3,
+          "valid_snippets": 3,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.5163157362036463,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "violence": {
+      "term": "violence",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "cultural studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 7,
+          "valid_snippets": 7,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8876685124297131,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "biotechnology": {
+      "term": "biotechnology",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "environmental law"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 7
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9477601076678228,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "evolution": {
+      "term": "evolution",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "cellular physiology"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "pharmacology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "biology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "chemistry"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "pediatric nurse practitioner"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 12,
+          "valid_snippets": 12,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 11
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6459432864332261,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "biodiversity": {
+      "term": "biodiversity",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "business management"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "environmental law"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "biology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "conservation"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "ecology"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "environmental health sciences"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 7,
+          "valid_snippets": 7,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 6
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.819056770924693,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "safety": {
+      "term": "safety",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "biological engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "computer science"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "industrial engineering"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "gynecology"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "sustainability"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "trauma": {
+      "term": "trauma",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "arts"
+              ],
+              [
+                "classics"
+              ]
+            ],
+            [
+              [
+                "education"
+              ],
+              [
+                "library science"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "asian american studies"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 10,
+          "valid_snippets": 10,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 10
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6831147074617512,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "flow control": {
+      "term": "flow control",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aeronautics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "geological sciences"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8552216923426539,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "tissue regeneration": {
+      "term": "tissue regeneration",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "biological engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "physician assistant studies"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "integrative physiology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "developmental biology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 7
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.5885646670647475,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "engineering design": {
+      "term": "engineering design",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "behavior analysis"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "industrial engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "manufacturing engineering"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.5189232964612983,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "ecosystems": {
+      "term": "ecosystems",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "biology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "conservation"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "geological sciences"
+              ]
+            ],
+            [
+              [
+                "nursing"
+              ],
+              [
+                "community health"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 9,
+          "valid_snippets": 9,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 9
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.23099047093270453,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "edge computing": {
+      "term": "edge computing",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aerospace engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "chemical engineering"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.8491234246635716,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "characterization": {
+      "term": "characterization",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "data analysis"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "chemical engineering"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "biomedical sciences"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "accounting"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "genetics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 4,
+          "valid_snippets": 4,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 4
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.6538062245440357,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "algebra": {
+      "term": "algebra",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "civil engineering"
+              ]
+            ],
+            [
+              [
+                "public health"
+              ],
+              [
+                "biostatistics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.7955086229006862,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "inflammation": {
+      "term": "inflammation",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "nutrition"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "cellular physiology"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 8,
+          "valid_snippets": 8,
+          "num_clusters": 1,
+          "noise_points": 0,
+          "cluster_sizes": {
+            "0": 8
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.9669409908508415,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "insomnia": {
+      "term": "insomnia",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "neurology"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "geriatric psychiatry": {
+      "term": "geriatric psychiatry",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "educational psychology"
+              ]
+            ],
+            [
+              [
+                "health sciences"
+              ],
+              [
+                "behavioral health"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "uncertainty": {
+      "term": "uncertainty",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "engineering"
+              ],
+              [
+                "electrical engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "environmental engineering"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "industrial engineering"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 6,
+          "valid_snippets": 6,
+          "num_clusters": 1,
+          "noise_points": 1,
+          "cluster_sizes": {
+            "0": 5
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.822546999695602,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "privacy": {
+      "term": "privacy",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "business"
+              ],
+              [
+                "analytics"
+              ]
+            ],
+            [
+              [
+                "engineering"
+              ],
+              [
+                "aerospace engineering"
+              ]
+            ],
+            [
+              [
+                "humanities"
+              ],
+              [
+                "global studies"
+              ]
+            ],
+            [
+              [
+                "law"
+              ],
+              [
+                "business law"
+              ]
+            ],
+            [
+              [
+                "management"
+              ],
+              [
+                "business analytics"
+              ]
+            ],
+            [
+              [
+                "social sciences"
+              ],
+              [
+                "sustainability"
+              ]
+            ]
+          ]
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    },
+    "genomics": {
+      "term": "genomics",
+      "level": 3,
+      "detected_by": {
+        "parent_context": true,
+        "dbscan": false,
+        "radial_polysemy": false
+      },
+      "metrics": {
+        "parent_context": {
+          "divergent": true,
+          "ancestor_contexts": [
+            [
+              [
+                "education"
+              ],
+              [
+                "developmental psychology"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "biochemistry"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "emergency medicine"
+              ]
+            ],
+            [
+              [
+                "medicine"
+              ],
+              [
+                "neurology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "biology"
+              ]
+            ],
+            [
+              [
+                "natural sciences"
+              ],
+              [
+                "conservation"
+              ]
+            ]
+          ]
+        },
+        "dbscan": {
+          "algorithm": "dbscan",
+          "eps": 0.4,
+          "min_samples": 2,
+          "num_resources": 5,
+          "valid_snippets": 5,
+          "num_clusters": 1,
+          "noise_points": 2,
+          "cluster_sizes": {
+            "0": 3
+          },
+          "level": 3,
+          "silhouette_score": null,
+          "tfidf_confidence": 0.31756301117645896,
+          "is_low_confidence": true
+        }
+      },
+      "confidence": 0.3,
+      "confidence_level": "low"
+    }
+  }
+}

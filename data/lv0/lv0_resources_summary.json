@@ -1,80 +1,86 @@
 {
   "arts": {
-    "total_sources": 7,
-    "verified_sources": 4,
-    "wikipedia_sources": 4,
-    "average_score": 2.344951003577028
-  },
-  "business": {
-    "total_sources": 7,
-    "verified_sources": 3,
-    "wikipedia_sources": 3,
-    "average_score": 1.5139741614460946
-  },
-  "education": {
-    "total_sources": 9,
-    "verified_sources": 2,
-    "wikipedia_sources": 3,
-    "average_score": 1.4968786938322916
-  },
-  "engineering": {
-    "total_sources": 9,
-    "verified_sources": 5,
-    "wikipedia_sources": 4,
-    "average_score": 2.0718721750709745
-  },
-  "health sciences": {
     "total_sources": 8,
     "verified_sources": 4,
-    "wikipedia_sources": 4,
-    "average_score": 2.0394717697054148
+    "wikipedia_sources": 7,
+    "average_score": 0.46865041630577275
+  },
+  "business": {
+    "total_sources": 8,
+    "verified_sources": 0,
+    "wikipedia_sources": 3,
+    "average_score": 0.1822794256242987
+  },
+  "education": {
+    "total_sources": 8,
+    "verified_sources": 7,
+    "wikipedia_sources": 3,
+    "average_score": 0.5483237756176635
+  },
+  "engineering": {
+    "total_sources": 8,
+    "verified_sources": 4,
+    "wikipedia_sources": 3,
+    "average_score": 0.4012067937522826
+  },
+  "health sciences": {
+    "total_sources": 7,
+    "verified_sources": 2,
+    "wikipedia_sources": 3,
+    "average_score": 0.36428747700604597
   },
   "humanities": {
-    "total_sources": 9,
-    "verified_sources": 7,
-    "wikipedia_sources": 5,
-    "average_score": 2.5878662986887826
+    "total_sources": 8,
+    "verified_sources": 6,
+    "wikipedia_sources": 2,
+    "average_score": 0.44812669361892155
+  },
+  "language studies": {
+    "total_sources": 8,
+    "verified_sources": 5,
+    "wikipedia_sources": 4,
+    "average_score": 0.44803991100780327
   },
   "law": {
-    "total_sources": 9,
-    "verified_sources": 5,
-    "wikipedia_sources": 5,
-    "average_score": 2.5814439990454248
+    "total_sources": 8,
+    "verified_sources": 7,
+    "wikipedia_sources": 6,
+    "average_score": 0.6290853055706975
   },
   "management": {
     "total_sources": 8,
     "verified_sources": 4,
-    "wikipedia_sources": 5,
-    "average_score": 2.0624339286237956
+    "wikipedia_sources": 3,
+    "average_score": 0.39780480976509647
   },
   "medicine": {
-    "total_sources": 9,
-    "verified_sources": 3,
-    "wikipedia_sources": 4,
-    "average_score": 2.3239455146922006
+    "total_sources": 8,
+    "verified_sources": 5,
+    "wikipedia_sources": 6,
+    "average_score": 0.4955691089790404
   },
   "natural sciences": {
-    "total_sources": 7,
+    "total_sources": 8,
     "verified_sources": 6,
-    "wikipedia_sources": 4,
-    "average_score": 3.119480112833636
+    "wikipedia_sources": 3,
+    "average_score": 0.5323104769149221
   },
   "nursing": {
-    "total_sources": 9,
+    "total_sources": 8,
     "verified_sources": 6,
-    "wikipedia_sources": 5,
-    "average_score": 2.6964042375485104
+    "wikipedia_sources": 1,
+    "average_score": 0.39632358411626895
   },
   "public health": {
     "total_sources": 8,
-    "verified_sources": 6,
-    "wikipedia_sources": 5,
-    "average_score": 2.7965020302683117
+    "verified_sources": 5,
+    "wikipedia_sources": 1,
+    "average_score": 0.4233349649185058
   },
   "social sciences": {
-    "total_sources": 9,
+    "total_sources": 8,
     "verified_sources": 6,
-    "wikipedia_sources": 5,
-    "average_score": 2.621154242257277
+    "wikipedia_sources": 3,
+    "average_score": 0.502549673753351
   }
 }

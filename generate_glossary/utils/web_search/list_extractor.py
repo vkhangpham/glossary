@@ -46,19 +46,35 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
         List of dictionaries containing list items and metadata
     """
     if not html_content:
+        logging.debug("🔍 Empty HTML content provided to list extractor")
         return []
         
     extracted_lists = []
+    stats = {
+        "html_lists": 0,
+        "heading_lists": 0,
+        "container_lists": 0,
+        "table_lists": 0,
+        "dl_lists": 0,
+        "paragraph_lists": 0,
+        "total_raw_elements": 0,
+        "filtered_for_quality": 0
+    }
+    
     try:
         # Initialize BeautifulSoup parser
+        logging.debug("🔄 Parsing HTML content with BeautifulSoup")
         soup = BeautifulSoup(html_content, 'html.parser')
     except Exception as e:
         # Catch potential parsing errors (like AssertionError or others from BS4)
-        logging.error(f"HTML parsing failed: {e}. Skipping list extraction for this content.", exc_info=False) # Log concisely
+        logging.error(f"❌ HTML parsing failed: {e}. Skipping list extraction for this content.", exc_info=False) # Log concisely
         return [] # Return empty list if parsing fails
     
     # 1. Extract standard HTML lists (ul, ol)
     html_lists = soup.find_all(['ul', 'ol'])
+    stats["total_raw_elements"] += len(html_lists)
+    logging.debug(f"🔍 Found {len(html_lists)} standard HTML lists (ul/ol)")
+    
     for list_elem in html_lists:
         items = list_elem.find_all('li')
         if config.min_items <= len(items) <= config.max_items:
@@ -75,11 +91,15 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
                 
                 # If it's clearly navigation, skip this list
                 if structure_analysis["nav_score"] > 0.7:
+                    logging.debug(f"👎 Skipping likely navigation list (nav_score={structure_analysis['nav_score']:.2f}): {filtered_items[:3]}...")
+                    stats["filtered_for_quality"] += 1
                     continue
                     
                 # Check for non-relevant terms ratio
                 non_term_ratio = calculate_non_term_ratio(filtered_items, config.anti_keywords)
                 if non_term_ratio > config.non_term_threshold:
+                    logging.debug(f"👎 Skipping list with high non-term ratio ({non_term_ratio:.2f}): {filtered_items[:3]}...")
+                    stats["filtered_for_quality"] += 1
                     continue
                 
                 # Check for consistent lengths
@@ -96,6 +116,8 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
                 )
                 keyword_ratio = keyword_matches / len(filtered_items) if filtered_items else 0
                 
+                logging.debug(f"👍 Extracted HTML list ({list_elem.name}): {len(filtered_items)} items, pattern ratio={pattern_ratio:.2f}, keyword ratio={keyword_ratio:.2f}")
+                
                 extracted_lists.append({
                     "items": filtered_items,
                     "metadata": {
@@ -108,10 +130,16 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
                         "keyword_ratio": keyword_ratio
                     }
                 })
+                stats["html_lists"] += 1
     
     # 2. Extract heading-based lists (consecutive h2, h3, h4)
     for heading_tag in ['h2', 'h3', 'h4']:
         headings = soup.find_all(heading_tag)
+        stats["total_raw_elements"] += len(headings)
+        
+        if len(headings) > 0:
+            logging.debug(f"🔍 Found {len(headings)} {heading_tag} headings")
+        
         if config.min_items <= len(headings) <= config.max_items:
             heading_texts = [h.get_text().strip() for h in headings]
             # Filter out headings that are too long or short or contain typical non-relevant language
@@ -132,6 +160,8 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
                 # Check for non-relevant terms ratio
                 non_term_ratio = calculate_non_term_ratio(filtered_headings, config.anti_keywords)
                 if non_term_ratio > config.non_term_threshold:
+                    logging.debug(f"👎 Skipping heading list with high non-term ratio ({non_term_ratio:.2f}): {filtered_headings[:3]}...")
+                    stats["filtered_for_quality"] += 1
                     continue
                 
                 # Check for consistent lengths
@@ -148,6 +178,8 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
                 )
                 keyword_ratio = keyword_matches / len(filtered_headings) if filtered_headings else 0
                 
+                logging.debug(f"👍 Extracted heading list ({heading_tag}): {len(filtered_headings)} items, pattern ratio={pattern_ratio:.2f}, keyword ratio={keyword_ratio:.2f}")
+                
                 extracted_lists.append({
                     "items": filtered_headings,
                     "metadata": {
@@ -160,6 +192,7 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
                         "keyword_ratio": keyword_ratio
                     }
                 })
+                stats["heading_lists"] += 1
     
     # 3. Look for div or span elements that might contain lists
     potential_list_containers = soup.find_all(['div', 'section', 'article'])
@@ -424,6 +457,9 @@ def extract_lists_from_html(html_content: str, config: ListExtractionConfig) -> 
                         "keyword_ratio": keyword_ratio
                     }
                 })
+    
+    # Log overall extraction statistics
+    logging.info(f"📊 Extracted {len(extracted_lists)} lists from HTML content: {stats['html_lists']} HTML lists, {stats['heading_lists']} heading lists, {stats['container_lists']} container lists, {stats['table_lists']} table lists, {stats['dl_lists']} definition lists, {stats['paragraph_lists']} paragraph lists. Filtered out {stats['filtered_for_quality']} low-quality lists.")
     
     return extracted_lists
 

@@ -11,15 +11,14 @@ from typing import Dict, Any, Optional, List, Union
 class PersistentVectorStore:
     """A persistent vector store that saves embeddings to disk using FAISS."""
     
-    def __init__(self, dimension: int = 384, persist_dir: str = "./vector_store"):
+    def __init__(self, persist_dir: str = "./vector_store"):
         """
-        Initialize the persistent vector store.
+        Initialize the persistent vector store. The dimension is inferred from the first added embedding.
         
         Args:
-            dimension: Embedding dimension (default: 384 for all-MiniLM-L6-v2)
             persist_dir: Directory to store the index and metadata
         """
-        self.dimension = dimension
+        self.dimension = None # Will be inferred later
         self.persist_dir = Path(persist_dir)
         self.persist_dir.mkdir(exist_ok=True, parents=True)
         
@@ -33,21 +32,23 @@ class PersistentVectorStore:
         self.hits = 0
         self.misses = 0
         
+        self.index = None # Index will be created on first put/put_batch or loaded
+        
         # Load existing index if available
         if self.index_path.exists() and self.metadata_path.exists():
             try:
                 self.index = faiss.read_index(str(self.index_path))
+                self.dimension = self.index.d # Set dimension from loaded index
                 with open(self.metadata_path, 'rb') as f:
                     self.metadata = pickle.load(f)
-                logging.info(f"Loaded vector store with {self.index.ntotal} embeddings from {self.persist_dir}")
+                logging.info(f"Loaded vector store with {self.index.ntotal} embeddings (dim={self.dimension}) from {self.persist_dir}")
             except Exception as e:
-                logging.error(f"Error loading vector store: {e}")
-                self.index = faiss.IndexFlatL2(dimension)
-                logging.info(f"Created new vector store with dimension {dimension}")
+                logging.warning(f"Error loading existing vector store from {self.persist_dir}: {e}. A new store will be created on first write.")
+                # Reset index and metadata in case of partial load failure
+                self.index = None
+                self.metadata = {}
         else:
-            # Create new index
-            self.index = faiss.IndexFlatL2(dimension)
-            logging.info(f"Created new vector store with dimension {dimension}")
+            logging.info(f"No existing vector store found at {self.persist_dir}. It will be created on first write.")
     
     def get(self, text: str) -> Optional[np.ndarray]:
         """
@@ -75,6 +76,10 @@ class PersistentVectorStore:
     
     def _get_vector_by_idx(self, idx: int) -> np.ndarray:
         """Retrieve a vector by its index in the FAISS store."""
+        if self.index is None or self.dimension is None:
+            logging.warning("_get_vector_by_idx called before index was initialized.")
+            return None
+            
         # Create a single-vector array to receive the reconstructed vector
         vector = np.zeros((1, self.dimension), dtype=np.float32)
         
@@ -100,6 +105,16 @@ class PersistentVectorStore:
             embedding: The embedding vector to store
             auxiliary_data: Optional additional metadata
         """
+        # Check if index exists, create if not
+        if self.index is None:
+            self.dimension = embedding.shape[0]
+            self.index = faiss.IndexFlatL2(self.dimension)
+            logging.info(f"Created new FAISS index with dimension {self.dimension}")
+            
+        # Validate embedding dimension
+        if embedding.shape[0] != self.dimension:
+            raise ValueError(f"Embedding dimension mismatch: expected {self.dimension}, got {embedding.shape[0]}")
+            
         text_hash = self._get_hash(text)
         
         # If already exists, just update metadata
@@ -110,6 +125,7 @@ class PersistentVectorStore:
         
         # Add vector to index
         embedding_reshaped = np.array([embedding]).astype('float32')
+        logging.debug(f"[PersistentVectorStore] Adding vector with shape {embedding_reshaped.shape} to index with dimension {self.index.d}")
         idx = self.index.ntotal  # Get current count before adding
         self.index.add(embedding_reshaped)
         
@@ -133,10 +149,23 @@ class PersistentVectorStore:
             auxiliary_data_list: Optional list of additional metadata
         """
         if len(texts) != len(embeddings):
-            raise ValueError(f"Number of texts ({len(texts)}) must match number of embeddings ({len(embeddings)})")
+            raise ValueError(f"Number of texts ({len(texts)}) must match number of embeddings ({len(embeddings)})" )
+        
+        if not texts: # Handle empty batch
+            return
+        
+        # Check if index exists, create if not using the first embedding in the batch
+        if self.index is None:
+            self.dimension = embeddings[0].shape[0]
+            self.index = faiss.IndexFlatL2(self.dimension)
+            logging.info(f"Created new FAISS index with dimension {self.dimension}")
+            
+        # Validate embedding dimensions for the batch
+        if embeddings.shape[1] != self.dimension:
+             raise ValueError(f"Embedding dimension mismatch in batch: expected {self.dimension}, got {embeddings.shape[1]}")
         
         if auxiliary_data_list and len(texts) != len(auxiliary_data_list):
-            raise ValueError(f"Number of texts ({len(texts)}) must match number of auxiliary data items ({len(auxiliary_data_list)})")
+            raise ValueError(f"Number of texts ({len(texts)}) must match number of auxiliary data items ({len(auxiliary_data_list)})" )
         
         # Collect vectors to add (only those not already in store)
         new_vectors = []
@@ -152,7 +181,9 @@ class PersistentVectorStore:
         if new_vectors:
             vectors_array = np.array(new_vectors).astype('float32')
             starting_idx = self.index.ntotal
+            logging.info(f"[PersistentVectorStore] Adding {len(new_vectors)} new vectors to the index (current total: {starting_idx})...")
             self.index.add(vectors_array)
+            logging.info(f"[PersistentVectorStore] Finished adding vectors. Index total: {self.index.ntotal}")
             
             # Update metadata for new vectors
             for j, i in enumerate(new_indices):
@@ -170,10 +201,20 @@ class PersistentVectorStore:
     
     def save(self) -> None:
         """Save the index and metadata to disk."""
+        if self.index is None or self.index.ntotal == 0:
+            logging.info("[PersistentVectorStore] No index data to save.")
+            return
+            
         try:
+            logging.info(f"[PersistentVectorStore] Saving FAISS index with {self.index.ntotal} vectors to {self.index_path}...")
             faiss.write_index(self.index, str(self.index_path))
+            logging.info(f"[PersistentVectorStore] FAISS index saved.")
+            
+            logging.info(f"[PersistentVectorStore] Saving metadata ({len(self.metadata)} entries) to {self.metadata_path}...")
             with open(self.metadata_path, 'wb') as f:
                 pickle.dump(self.metadata, f)
+            logging.info(f"[PersistentVectorStore] Metadata saved.")
+            
             logging.info(f"Saved vector store with {self.index.ntotal} vectors to {self.persist_dir}")
         except Exception as e:
             logging.error(f"Error saving vector store: {e}")
@@ -189,11 +230,23 @@ class PersistentVectorStore:
         Returns:
             Tuple of (distances, indices, metadata)
         """
+        if self.index is None:
+            logging.warning("Search called before index was initialized or populated.")
+            return np.array([]), np.array([]), []
+            
         # Ensure vector is in correct shape and type
         query_vector = np.array([query_vector]).astype('float32')
         
+        # Validate query dimension
+        if query_vector.shape[1] != self.dimension:
+            raise ValueError(f"Query vector dimension mismatch: index is {self.dimension}, query is {query_vector.shape[1]}")
+        
         # Perform search
-        distances, indices = self.index.search(query_vector, k)
+        k_actual = min(k, self.index.ntotal) # Ensure k is not larger than the number of items in index
+        if k_actual <= 0:
+            return np.array([]), np.array([]), []
+        
+        distances, indices = self.index.search(query_vector, k_actual)
         
         # Collect metadata for results
         metadata_results = []

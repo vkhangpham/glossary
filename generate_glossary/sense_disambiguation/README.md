@@ -10,10 +10,11 @@ This is crucial for ensuring the accuracy and utility of the glossary, especiall
 
 ## Components
 
-The package consists of two main components:
+The package consists of three main components:
 
 1. **Detectors** (`detector.py`): Responsible for identifying potentially ambiguous terms in the hierarchy
 2. **Splitter** (`splitter.py`): Analyzes detected terms and proposes splitting them into distinct senses with domain-specific tags
+3. **Global Clustering** (`global_clustering.py`): Clusters all resources together to provide a global view of term relationships
 
 ## 1. Ambiguity Detection (`detector.py`)
 
@@ -112,7 +113,73 @@ The `HybridAmbiguityDetector` combines multiple detection approaches to provide 
 * Prioritization through confidence scoring
 * Detailed diagnostics through integrated metrics
 
-### 1.4 Persistent Vector Storage
+## 1.4 Global Resource Clustering (`global_clustering.py`)
+
+The `GlobalResourceClusterer` takes a different approach from the other detectors by analyzing **all resources together** in a shared embedding space, rather than clustering each term's resources separately.
+
+**Key Differences:**
+
+- **Global Context:** Analyzes all resources in a unified semantic space, providing better context for ambiguity detection
+- **Cross-Term Relationships:** Identifies relationships between terms that might not be apparent when analyzing terms in isolation
+- **Term Distribution Analysis:** Examines how a term's resources are distributed across different semantic clusters
+- **Topic Discovery:** Reveals global patterns in the resource corpus, identifying major topic areas
+
+**Logic:**
+
+1. **Collect All Resources:** Gathers resource content from all terms in the hierarchy
+2. **Content Extraction:** Processes each resource to extract the most informative text
+3. **Embedding Generation:** Converts all resource content to vector embeddings
+4. **Global Clustering:** Clusters all resource embeddings together using DBSCAN or HDBSCAN
+5. **Cluster Analysis:**
+   - Maps terms to clusters based on where their resources appear
+   - Identifies terms that have resources spread across multiple clusters
+   - Extracts representative terms for each cluster
+   - Analyzes hierarchy level distribution within clusters
+
+**Parameters:**
+
+- `clustering_algorithm`: Either 'dbscan' or 'hdbscan'
+- `dbscan_eps`: 0.5 (higher than term-specific clustering)
+- `dbscan_min_samples`: 3 (more strict to find stronger patterns)
+- `hdbscan_min_cluster_size`: 5 (larger clusters for more reliable global patterns)
+
+**Outputs:**
+
+- Comprehensive JSON results with detailed metrics and cluster analyses
+- List of potentially ambiguous terms determined by resource distribution across clusters
+- Cluster maps showing term relationships
+- Summary statistics and visualizations
+- Term-cluster distribution analysis
+
+**Advantages:**
+
+- Finds ambiguity patterns that might be missed by analyzing terms in isolation
+- More consistent clustering across the entire corpus
+- Identifies related terms that might be ambiguous in similar ways
+- Provides global context for ambiguity patterns
+- More efficient for larger hierarchies by avoiding redundant computation
+
+**Usage:**
+
+```bash
+# Using the CLI
+python -m generate_glossary.sense_disambiguation.cli global-cluster --clustering dbscan --dbscan-eps 0.5 --dbscan-min-samples 3
+
+# Programmatically
+from generate_glossary.sense_disambiguation import GlobalResourceClusterer
+
+clusterer = GlobalResourceClusterer(
+    hierarchy_file_path="data/hierarchy.json",
+    final_term_files_pattern="data/final/lv*/lv*_final.txt",
+    clustering_algorithm='dbscan',
+    dbscan_eps=0.5,
+    dbscan_min_samples=3
+)
+
+results = clusterer.run_complete_analysis()
+```
+
+### 1.5 Persistent Vector Storage
 
 The codebase includes a persistent vector storage solution based on FAISS that provides several advantages:
 
@@ -215,37 +282,61 @@ The simplest way to use the sense disambiguation system is through the command-l
 
 ```bash
 # Run hybrid detector (recommended)
-python -m generate_glossary.sense_disambiguation.cli detect --detector hybrid --level 2 --min-confidence 0.6
+python -m generate_glossary.sense_disambiguation.cli detect --clustering-preset standard --min-confidence 0.5
 
-# Run specific detectors if needed
-python -m generate_glossary.sense_disambiguation.cli detect --detector parent-context --level 2
-python -m generate_glossary.sense_disambiguation.cli detect --detector resource-cluster --level 2 --clustering dbscan
+# Use a more sensitive preset to find more potential ambiguities
+python -m generate_glossary.sense_disambiguation.cli detect --clustering-preset sensitive
+
+# Use a more conservative preset for higher precision
+python -m generate_glossary.sense_disambiguation.cli detect --clustering-preset conservative
+
+# Process only a specific level
+python -m generate_glossary.sense_disambiguation.cli detect --level 2 --min-confidence 0.6
+
+# Run without the radial polysemy detector
+python -m generate_glossary.sense_disambiguation.cli detect --no-radial-detector
+
+# Run specific detector type
+python -m generate_glossary.sense_disambiguation.cli detect --detector resource-cluster
+python -m generate_glossary.sense_disambiguation.cli detect --detector parent-context
 ```
-
-**Important Note:** The detection process clusters terms from all hierarchy levels together to ensure accurate semantic grouping, but the results are filtered to only include terms from the specified level. This provides better clustering quality while maintaining level-specific output.
 
 **Key Parameters:**
 
-- `--detector`: Detection method (`hybrid`, `parent-context`, or `resource-cluster`)
+- `--detector`: Detection method (`hybrid`, `resource-cluster`, `parent-context`, or `radial-polysemy`)
+- `--clustering-preset`: Preset configurations for clustering parameters:
+  - `standard`: Balanced default (eps=0.45, min_samples=2)
+  - `sensitive`: Finds more ambiguous terms (eps=0.5, min_samples=2)
+  - `conservative`: Higher precision (eps=0.35, min_samples=3)
+  - `experimental`: Uses HDBSCAN if available
 - `--level`: Hierarchy level to filter results for (0-3)
-- `--min-confidence`: Confidence threshold for hybrid detector (default: 0.5)
-- `--model`: Sentence transformer model to use (default: `all-MiniLM-L6-v2`)
-- `--clustering`: Clustering algorithm (`dbscan` or `hdbscan`)
-- `--min-resources`: Minimum number of resources for a term to be analyzed (default: 5)
+- `--min-confidence`: Minimum confidence threshold for results (default: 0.5)
+- `--min-resources`: Minimum resources required for term analysis (default: 5)
+- `--no-radial-detector`: Disable radial polysemy detection in hybrid analysis
+- `--save-details`: Save detailed clustering information (default: True)
+
+**Important Note:** The detection process clusters terms from all hierarchy levels together to ensure accurate semantic grouping, but the results are filtered to only include terms from the specified level. This provides better clustering quality while maintaining level-specific output.
 
 #### 2. Sense Splitting
 
 ```bash
 # Run splitting on detection results
-python -m generate_glossary.sense_disambiguation.cli split --level 2 --input-file data/ambiguity_detection_results/hybrid_detection_results_level2_[TIMESTAMP].json --use-llm
+python -m generate_glossary.sense_disambiguation.cli split --input-file data/ambiguity_detection_results/20240815_123456/hybrid_detection_results_level2.json
+
+# Run without LLM for tag generation
+python -m generate_glossary.sense_disambiguation.cli split --input-file path/to/results.json --no-llm
+
+# Specify a specific level to process
+python -m generate_glossary.sense_disambiguation.cli split --input-file path/to/results.json --level 2
 ```
 
 **Key Parameters:**
 
-- `--level`: Hierarchy level being processed (0-3)
-- `--input-file`: Path to the detection results JSON file
-- `--use-llm`: Enable LLM for generating sense tags (recommended)
-- `--output-dir`: Directory to save split proposals (optional)
+- `--input-file`: Path to the detection results JSON file (required)
+- `--level`: Hierarchy level to process (0-3)
+- `--no-llm`: Disable LLM for tag generation (not recommended)
+- `--llm-provider`: LLM provider (`openai`, `anthropic`, or `local`)
+- `--llm-model`: Specific LLM model name
 
 ### Running Programmatically
 
@@ -280,6 +371,42 @@ result_path = detector.save_detailed_results("cluster_results.json")
 
 print(f"Found {len(ambiguous_terms)} potentially ambiguous terms.")
 print(f"Detailed results saved to: {result_path}")
+```
+
+#### Running the GlobalResourceClusterer
+
+```python
+from generate_glossary.sense_disambiguation import GlobalResourceClusterer
+
+# Define paths
+hierarchy_file = "data/hierarchy.json"
+final_terms_pattern = "data/final/lv*/lv*_final.txt"
+output_dir = "data/global_clustering_results"
+
+# Initialize global clusterer
+clusterer = GlobalResourceClusterer(
+    hierarchy_file_path=hierarchy_file,
+    final_term_files_pattern=final_terms_pattern,
+    model_name='all-MiniLM-L6-v2',
+    clustering_algorithm='dbscan',
+    dbscan_eps=0.5,
+    dbscan_min_samples=3,
+    output_dir=output_dir
+)
+
+# Run complete analysis pipeline
+results = clusterer.run_complete_analysis()
+
+# Access detailed results
+resource_count = results["resource_count"]
+clustering_metrics = results["clustering_metrics"]
+analysis_results = results["analysis_results"]
+results_file = results["results_file"]
+
+print(f"Processed {resource_count} resources")
+print(f"Found {clustering_metrics['num_clusters']} clusters")
+print(f"Identified {len(analysis_results['potentially_ambiguous_terms'])} potentially ambiguous terms")
+print(f"Results saved to: {results_file}")
 ```
 
 #### Running the HybridAmbiguityDetector
@@ -359,6 +486,15 @@ A: The detector doesn't represent the term itself as a single vector. Instead, i
 2. Each text snippet is converted into a high-dimensional **embedding vector** using a sentence transformer model (e.g., `all-MiniLM-L6-v2`).
 3. Therefore, a term is effectively represented by the **set of embedding vectors** derived from its associated resource content.
 
+**Q: What's the difference between `ResourceClusterDetector` and `GlobalResourceClusterer`?**
+
+A: The key difference is the scope of clustering:
+
+- `ResourceClusterDetector` clusters resources on a **per-term basis**. For each term, it only examines that term's resources and looks for clusters within them.
+- `GlobalResourceClusterer` clusters **all resources from all terms together** in a shared semantic space, then analyzes how each term's resources are distributed across those global clusters.
+
+The global approach can identify patterns that would be missed when analyzing terms in isolation and provides better context for ambiguity detection.
+
 **Q: How does clustering work in the `ResourceClusterDetector`?**
 
 A: Clustering is performed on the **set of embedding vectors** for a term's resources, not on the term name itself.
@@ -373,6 +509,16 @@ A: Clustering is performed on the **set of embedding vectors** for a term's reso
 A: A term is flagged if its associated resource embeddings form **two or more distinct clusters** (ignoring noise points labeled `-1`).
 
 * The rationale is that if the textual resources linked to a single term naturally separate into multiple semantic groups, the term is likely being used with different meanings or in different contexts within those resources. For example, resources for "stress" might form one cluster related to psychology and another related to materials science.
+
+**Q: How does the `GlobalResourceClusterer` identify ambiguous terms?**
+
+A: The global clusterer identifies terms whose resources are **significantly distributed across multiple clusters** in the global embedding space:
+
+1. It first clusters all resources together based on semantic similarity.
+2. Then it analyzes each term's distribution across these clusters.
+3. If a term's resources don't predominantly belong to a single cluster (e.g., less than 70% in the largest cluster), it's flagged as potentially ambiguous.
+
+This approach can identify ambiguity patterns that might be missed when examining terms in isolation.
 
 **Q: What do the `-1` cluster labels mean?**
 

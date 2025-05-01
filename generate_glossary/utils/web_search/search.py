@@ -4,11 +4,14 @@ import time
 import json
 import re
 import logging
+import random
 from typing import List, Dict, Any, Optional, Union
 
 # Constants
-MAX_SEARCH_RESULTS = 10
-MAX_RETRIES = 2
+MAX_SEARCH_RESULTS = 15
+MAX_RETRIES = 5  # Increased from 2 to 5
+BASE_DELAY = 2  # Base delay in seconds
+MAX_DELAY = 30  # Maximum delay in seconds
 RATE_LIMIT_DELAY = 1  # seconds
 
 class WebSearchConfig:
@@ -65,9 +68,29 @@ def web_search_bulk(queries: List[str],
     for attempt in range(MAX_RETRIES):
         try:
             if logger:
-                logger.info(f"Performing bulk search for {len(queries)} queries (attempt {attempt+1})")
+                logger.info(f"Performing bulk search for {len(queries)} queries (attempt {attempt+1}/{MAX_RETRIES})")
             
             response = requests.post(config.web_search_url, json=payload, headers=config.api_headers)
+            
+            # Handle specific HTTP error codes
+            if response.status_code == 503:
+                # Service Unavailable - implement exponential backoff
+                if logger:
+                    logger.warning(f"Service Temporarily Unavailable (503). Retrying with backoff...")
+                if attempt < MAX_RETRIES - 1:
+                    # Calculate exponential backoff with jitter
+                    delay = min(MAX_DELAY, BASE_DELAY * (2 ** attempt)) + random.uniform(0, 1)
+                    if logger:
+                        logger.info(f"Waiting {delay:.2f} seconds before retry {attempt+2}")
+                    time.sleep(delay)
+                    continue
+                else:
+                    # Max retries reached, return empty results
+                    if logger:
+                        logger.error("Maximum retries reached for Service Unavailable error")
+                    return {"data": []}
+            
+            # Handle other error responses
             response.raise_for_status()
             results = response.json()
             
@@ -75,7 +98,9 @@ def web_search_bulk(queries: List[str],
                 if logger:
                     logger.warning("No data in response")
                 if attempt < MAX_RETRIES - 1:
-                    time.sleep(RATE_LIMIT_DELAY)
+                    # Use standard delay for empty results
+                    delay = RATE_LIMIT_DELAY * (attempt + 1)
+                    time.sleep(delay)
                     continue
                 return {"data": []}
                 
@@ -90,11 +115,30 @@ def web_search_bulk(queries: List[str],
             
             return results
             
+        except requests.exceptions.HTTPError as e:
+            if logger:
+                logger.error(f"HTTP error during bulk web search (attempt {attempt+1}): {str(e)}")
+            
+            # Calculate exponential backoff with jitter
+            if attempt < MAX_RETRIES - 1:
+                delay = min(MAX_DELAY, BASE_DELAY * (2 ** attempt)) + random.uniform(0, 1)
+                if logger:
+                    logger.info(f"Waiting {delay:.2f} seconds before retry {attempt+2}")
+                time.sleep(delay)
+            else:
+                if logger:
+                    logger.error(f"All {MAX_RETRIES} attempts failed for queries due to HTTP error: {str(e)}")
+                return {"data": []}
+                
         except Exception as e:
             if logger:
                 logger.error(f"Failed to perform bulk web search (attempt {attempt+1}): {str(e)}")
             if attempt < MAX_RETRIES - 1:
-                time.sleep(RATE_LIMIT_DELAY * (attempt + 1))
+                # Calculate exponential backoff with jitter for general exceptions
+                delay = min(MAX_DELAY, BASE_DELAY * (2 ** attempt)) + random.uniform(0, 1)
+                if logger:
+                    logger.info(f"Waiting {delay:.2f} seconds before retry {attempt+2}")
+                time.sleep(delay)
             else:
                 if logger:
                     logger.error(f"All {MAX_RETRIES} attempts failed for queries: {queries}")

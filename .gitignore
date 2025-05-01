@@ -176,7 +176,7 @@ cython_debug/
 # my files
 cache/
 archive/
-.cursor*generate_glossary/generation/aol/
+.cursor*
 generate_glossary/generation/aol/
 raw_search_results/
 
@@ -187,7 +187,7 @@ lv2_resources.json
 lv3_resources.json
 data/lv3/resources
 exports/
-.graph_cache/
+.dedup_cache/
 data/reports/
 data/concepts_info/
 data/evaluation/

@@ -1,0 +1,3060 @@
+{
+  "agricultural engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:06:47.580Z"
+  },
+  "allergy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:06:50.048Z"
+  },
+  "american sign language": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "language studies": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:06:52.003Z"
+  },
+  "animal science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:06:53.697Z"
+  },
+  "applied physics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "engineering physics": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:06:55.340Z"
+  },
+  "art history": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "arts": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:06:57.930Z"
+  },
+  "astronomy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:00.388Z"
+  },
+  "biochemical engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:03.483Z"
+  },
+  "bioengineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "biological engineering": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:05.576Z"
+  },
+  "biology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "biological sciences": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:07.655Z"
+  },
+  "biomolecular engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:09.679Z"
+  },
+  "biostatistics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "engineering",
+    "timestamp": "2025-04-19T12:07:19.372Z"
+  },
+  "biosystems engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:38.479Z"
+  },
+  "cell biology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "cellular biology": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true
+    },
+    "parent_relationship_notes": "natural sciences",
+    "timestamp": "2025-04-19T12:07:46.678Z"
+  },
+  "civil rights": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:49.771Z"
+  },
+  "climate sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "climate system": true,
+      "climate science": true,
+      "climate": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:52.536Z"
+  },
+  "collaborative piano": {
+    "academic_importance": "subject",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "arts": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:07:58.220Z"
+  },
+  "communication disorders": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "2",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:15.677Z"
+  },
+  "communication sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "communication theory": true,
+      "communication": true,
+      "communication systems": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:03.296Z"
+  },
+  "community health": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "community health sciences": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true,
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:06.313Z"
+  },
+  "community systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "nursing": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:18.568Z"
+  },
+  "computer engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:20.123Z"
+  },
+  "computer science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "computing education": true,
+      "computer science education": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true,
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:22.730Z"
+  },
+  "copyright law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:24.771Z"
+  },
+  "counseling psychology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:28.030Z"
+  },
+  "counselor education": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:29.588Z"
+  },
+  "criminal procedure": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:31.231Z"
+  },
+  "critical care": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true,
+      "nursing": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:34.388Z"
+  },
+  "data science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "data science education": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true,
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:36.288Z"
+  },
+  "disability": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "disability theory": true,
+      "interdisciplinary disability studies": true,
+      "disability studies": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:08:39.385Z"
+  },
+  "earth systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "2",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:06.640Z"
+  },
+  "economics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "social sciences": true,
+      "law": true
+    },
+    "parent_relationship_notes": "business",
+    "timestamp": "2025-04-19T12:09:19.389Z"
+  },
+  "epidemiology of microbial diseases": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "2",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:26.140Z"
+  },
+  "estate planning": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:27.891Z"
+  },
+  "evolutionary biology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:30.434Z"
+  },
+  "exercise physiology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:32.048Z"
+  },
+  "family law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:33.575Z"
+  },
+  "family sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "family": true,
+      "family science": true,
+      "family systems": true,
+      "family studies": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:36.859Z"
+  },
+  "federal courts": {
+    "academic_importance": "subject",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:42.350Z"
+  },
+  "food systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "food science": true,
+      "food technology": true,
+      "food": true,
+      "food studies": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:48.390Z"
+  },
+  "foreign relations law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:54.227Z"
+  },
+  "general business": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "management": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:56.158Z"
+  },
+  "genetics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true,
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:09:58.884Z"
+  },
+  "geography": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "social sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:01.075Z"
+  },
+  "geology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "geological sciences": true,
+      "earth science": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:04.664Z"
+  },
+  "government procurement": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:07.151Z"
+  },
+  "gynecology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:08.408Z"
+  },
+  "health data science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "engineering",
+    "timestamp": "2025-04-19T12:10:16.201Z"
+  },
+  "health education": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:18.282Z"
+  },
+  "health information sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:19.751Z"
+  },
+  "health law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "health care law": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:21.250Z"
+  },
+  "health promotion": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "nursing": true,
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:23.548Z"
+  },
+  "health systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "nursing": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:26.575Z"
+  },
+  "history": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "historical studies": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "arts": false
+    },
+    "parent_relationship_notes": "social sciences",
+    "timestamp": "2025-04-19T12:10:35.976Z"
+  },
+  "hospitality": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "business": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:29.665Z"
+  },
+  "human development": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true,
+      "health sciences": true,
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:39.944Z"
+  },
+  "information systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "management information systems": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "business": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:43.554Z"
+  },
+  "instrumental performance": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "arts": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:45.937Z"
+  },
+  "insurance": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "business": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:47.988Z"
+  },
+  "interdisciplinary studies": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "social sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:10:50.317Z"
+  },
+  "international health": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:11:04.621Z"
+  },
+  "interprofessional practice": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "nursing": true
+    },
+    "parent_relationship_notes": "education\nhealth sciences",
+    "timestamp": "2025-04-19T12:11:54.087Z"
+  },
+  "laboratory medicine": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "medical laboratory science": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:11:55.588Z"
+  },
+  "land development": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:11:58.386Z"
+  },
+  "law of juries": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:11:59.871Z"
+  },
+  "legal analysis": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:01.171Z"
+  },
+  "macromolecular science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:02.887Z"
+  },
+  "marine science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "oceanic sciences": true,
+      "marine science education": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:05.413Z"
+  },
+  "marketing": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "marketing research": true,
+      "marketing technologies": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "business": true,
+      "management": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:08.913Z"
+  },
+  "mathematics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "mathematics education": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:10.756Z"
+  },
+  "mining engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:12.347Z"
+  },
+  "molecular biology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true,
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:14.404Z"
+  },
+  "molecular sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:16.288Z"
+  },
+  "national security": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:20.096Z"
+  },
+  "nutrition": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "nutrition sciences": true,
+      "nutrition education": true,
+      "nutritional science": true,
+      "nutrition science": true,
+      "human nutrition": false
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true,
+      "public health": true,
+      "medicine": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:31.139Z"
+  },
+  "occupational health": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:33.013Z"
+  },
+  "ocean engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "marine engineering": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:40.013Z"
+  },
+  "organizational development": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:42.089Z"
+  },
+  "palliative care": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "nursing": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:45.854Z"
+  },
+  "pathology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:47.621Z"
+  },
+  "performance systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:49.221Z"
+  },
+  "plant biology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:12:50.737Z"
+  },
+  "plasma physics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "2",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:01.945Z"
+  },
+  "political science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "politics": true,
+      "political theory": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "social sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:06.854Z"
+  },
+  "probability": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "probability theory": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "natural sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:09.004Z"
+  },
+  "public health genetics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "public health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:13.446Z"
+  },
+  "public policy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "social sciences": true,
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:15.863Z"
+  },
+  "refugee law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:17.704Z"
+  },
+  "rehabilitation": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "rehabilitation sciences": true,
+      "rehabilitation technology": true,
+      "rehabilitation science": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "medicine": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:22.310Z"
+  },
+  "school psychology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:23.677Z"
+  },
+  "sleep disorders": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "nursing": true
+    },
+    "parent_relationship_notes": "health sciences",
+    "timestamp": "2025-04-19T12:13:29.818Z"
+  },
+  "speech sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "speech science": true,
+      "speech": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health sciences": true
+    },
+    "parent_relationship_notes": "linguistics",
+    "timestamp": "2025-04-19T12:13:56.644Z"
+  },
+  "sport sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:13:59.462Z"
+  },
+  "stem education": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:00.806Z"
+  },
+  "studio art": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "arts": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:02.080Z"
+  },
+  "supply chain": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "business": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:03.634Z"
+  },
+  "sustainable international development": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:05.279Z"
+  },
+  "tax law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:07.603Z"
+  },
+  "tesl": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "language studies": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:09.047Z"
+  },
+  "tourism management": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "business": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:10.305Z"
+  },
+  "american religious history": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "religion": true
+    },
+    "parent_relationship_notes": "history",
+    "timestamp": "2025-04-19T12:14:27.038Z"
+  },
+  "analytical biochemistry": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biochemistry": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:29.047Z"
+  },
+  "antennas": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "electrical engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:31.304Z"
+  },
+  "applied anatomy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "applied physiology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:33.522Z"
+  },
+  "architecture": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "anthropology": true,
+      "software engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:36.735Z"
+  },
+  "atmosphere": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "marine science": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:40.328Z"
+  },
+  "atmospheric dynamics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "climate sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:42.876Z"
+  },
+  "automated manufacturing systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "manufacturing engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:45.652Z"
+  },
+  "aviation": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "aeronautics": true,
+      "stem education": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:48.793Z"
+  },
+  "biomanufacturing": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biomolecular engineering": true,
+      "manufacturing engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:53.646Z"
+  },
+  "child care": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "early childhood": true,
+      "human development": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:55.161Z"
+  },
+  "conflicts of law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "trial advocacy": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:14:56.656Z"
+  },
+  "constitution": {
+    "academic_importance": "subject",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "constitutional law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:02.188Z"
+  },
+  "construction site systems engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "construction management": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:10.278Z"
+  },
+  "contemporary art": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "1",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "studio art": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:20.063Z"
+  },
+  "corporate compliance": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "business law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:14.595Z"
+  },
+  "corporate risk management": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "insurance": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:22.319Z"
+  },
+  "data protection": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "cybersecurity": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:24.402Z"
+  },
+  "deaf theatre": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "american sign language": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:27.487Z"
+  },
+  "design for manufacturing": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "manufacturing engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:33.210Z"
+  },
+  "diabetes": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "epidemiology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:35.070Z"
+  },
+  "diminished capacity defense": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "diminished capacity defenses": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "criminal law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:15:43.261Z"
+  },
+  "economic development": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "economics": true,
+      "global business": true,
+      "sociology": true,
+      "sustainable international development": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:00.462Z"
+  },
+  "economic resources": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:07.736Z"
+  },
+  "energy geosciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geological engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:09.495Z"
+  },
+  "environmental medicine": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "environmental health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:15.847Z"
+  },
+  "environmental microbiology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "environmental health": true,
+      "microbiology": true,
+      "soil sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:22.401Z"
+  },
+  "environmental processes": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "earth sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:24.243Z"
+  },
+  "environmental sociology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "sociology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:25.954Z"
+  },
+  "exercise psychology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "kinesiology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:34.895Z"
+  },
+  "experimental petrology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:38.189Z"
+  },
+  "family justice": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "family law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:39.661Z"
+  },
+  "financial analysis": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "finance": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:42.087Z"
+  },
+  "flow potential": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "petroleum engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:16:43.644Z"
+  },
+  "foreign policy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "foreign relations law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:00.604Z"
+  },
+  "future interests": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "estate planning": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:02.236Z"
+  },
+  "geomatics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "civil engineering": true,
+      "geospatial engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:04.087Z"
+  },
+  "geospatial technology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geography": true,
+      "geospatial engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:06.760Z"
+  },
+  "geotechnical earthquake engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geological engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:09.420Z"
+  },
+  "global history": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "history": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:10.962Z"
+  },
+  "government procurement law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "government procurement": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:12.283Z"
+  },
+  "health programs": {
+    "academic_importance": "not_academic",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health promotion": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:23.660Z"
+  },
+  "historic preservation planning": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "regional planning": true,
+      "urban planning": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:26.318Z"
+  },
+  "human genetics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "genetics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:29.511Z"
+  },
+  "human neuropsychology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "rehabilitation": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:31.029Z"
+  },
+  "humanitarian health": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "international health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:33.422Z"
+  },
+  "insanity defense": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "insanity defenses": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "criminal law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:35.437Z"
+  },
+  "intergalactic medium": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "astronomy": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:37.320Z"
+  },
+  "international political economy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "foreign relations law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:38.877Z"
+  },
+  "islamic studies": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "islamic law": true,
+      "religion": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:42.362Z"
+  },
+  "juvenile justice": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "criminal justice": true,
+      "tribal court": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:44.188Z"
+  },
+  "language acquisition": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "linguistics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:45.920Z"
+  },
+  "learning health systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health services research": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:54.030Z"
+  },
+  "map error analysis": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geography": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:55.587Z"
+  },
+  "media studies": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "film": true,
+      "media study": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:57.603Z"
+  },
+  "medical devices": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "biomedical devices": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biomedical": true,
+      "biomedical engineering": true,
+      "electrical engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:17:59.587Z"
+  },
+  "medical geography": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health systems": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:01.351Z"
+  },
+  "metabolomics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "exercise physiology": true,
+      "molecular biology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:07.612Z"
+  },
+  "microbial genetics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "genetics": true,
+      "genome sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:09.387Z"
+  },
+  "microbial genomics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "epidemiology of microbial diseases": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:11.045Z"
+  },
+  "middle adulthood": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "family sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:12.653Z"
+  },
+  "modeling": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "aeronautics": true,
+      "bioengineering": true,
+      "computational mathematics": true,
+      "data science": true,
+      "engineering management": true,
+      "materials science": true,
+      "mechanical engineering": true,
+      "performance systems": true,
+      "risk management": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:16.486Z"
+  },
+  "movement sciences": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "applied physiology": true,
+      "physical therapy": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:19.263Z"
+  },
+  "multivariate data": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biostatistics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:20.920Z"
+  },
+  "muslim family law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "islamic law": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:22.503Z"
+  },
+  "nanoscale science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "chemical engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:23.804Z"
+  },
+  "national security policy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "national security": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:25.929Z"
+  },
+  "national sovereignty": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geography": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:27.659Z"
+  },
+  "neonatal nurse practitioner": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "family nurse practitioner": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:30.069Z"
+  },
+  "obesity": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "clinical nutrition": true,
+      "epidemiology": true,
+      "nutritional sciences": true,
+      "population health": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:32.411Z"
+  },
+  "occupational epidemiology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "health systems": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:39.987Z"
+  },
+  "organelle genetics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "genome sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:41.435Z"
+  },
+  "organization theory": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "human resource management": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:44.359Z"
+  },
+  "paleontology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:45.718Z"
+  },
+  "peace negotiations": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "alternative dispute resolution": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:47.213Z"
+  },
+  "philosophy": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "1",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "film": true,
+      "interdisciplinary studies": true,
+      "world politics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:54.253Z"
+  },
+  "philosophy of religion": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "religion": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:56.853Z"
+  },
+  "phonology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "communication disorders": true,
+      "linguistics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:18:58.943Z"
+  },
+  "physiology of exercise": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "clinical exercise physiology": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "exercise physiology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:00.334Z"
+  },
+  "plant cell wall biosynthesis": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "molecular sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:01.588Z"
+  },
+  "population genomics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biology": true,
+      "ecology": true,
+      "genetics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:03.161Z"
+  },
+  "population nutrition": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "nutritional sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:06.245Z"
+  },
+  "public law": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "animal law": true,
+      "constitutional law": true,
+      "law enforcement": true,
+      "political science": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:07.984Z"
+  },
+  "resampling techniques": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "probability": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:09.803Z"
+  },
+  "residential construction": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "construction management": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:11.545Z"
+  },
+  "safety interventions": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "patient safety": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:54.352Z"
+  },
+  "sentencing": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "criminal justice": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:57.229Z"
+  },
+  "shale gas": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "chemical engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:19:58.588Z"
+  },
+  "social emotional development": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "human development": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:00.453Z"
+  },
+  "soil microbial genomics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "soil sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:02.302Z"
+  },
+  "statistical genetics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biostatistics": true,
+      "genetics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:04.670Z"
+  },
+  "stochastic calculus": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "operations engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:07.603Z"
+  },
+  "stochastic control": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "stochastic optimal control": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "applied mathematics": true,
+      "probability": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:09.129Z"
+  },
+  "structural engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "civil engineering": true,
+      "multidisciplinary engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:11.836Z"
+  },
+  "surface processes": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "earth surface processes": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "geological engineering": true,
+      "geology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:13.971Z"
+  },
+  "thermal fluids systems": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "mechanical engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:15.461Z"
+  },
+  "transfer tax": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "estate planning": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:16.677Z"
+  },
+  "voluntary disclosure": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "finance": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:18.769Z"
+  },
+  "weight control": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "weight management": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "applied physiology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:19.975Z"
+  },
+  "zoonotic diseases": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "environmental health": true,
+      "epidemiology of microbial diseases": true,
+      "infectious diseases": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:20:22.850Z"
+  },
+  "soil ecology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "soil biology": true
+    },
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "ecology": true,
+      "soil sciences": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:23:07.571Z"
+  },
+  "space science": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "1",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "space sciences": true
+    },
+    "parent_relationship_notes": "should be variation",
+    "timestamp": "2025-04-19T12:23:23.858Z"
+  },
+  "adult-gerontology primary care nurse practitioner": {
+    "academic_importance": "subject",
+    "academic_importance_notes": "",
+    "level_correctness": "3",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "family nurse practitioner": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:40:54.510Z"
+  },
+  "advanced concrete construction": {
+    "academic_importance": "subject",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "construction management": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:41:03.552Z"
+  },
+  "aerospace systems design": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "aerospace engineering": true,
+      "multidisciplinary engineering": false
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:41:14.826Z"
+  },
+  "airway inflammation": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "lung disease": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:41:29.602Z"
+  },
+  "ancient history": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "history": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:41:31.528Z"
+  },
+  "antiracism": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "family health": false
+    },
+    "parent_relationship_notes": "social sciences",
+    "timestamp": "2025-04-19T12:41:45.279Z"
+  },
+  "architectural engineering": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "civil engineering": true,
+      "multidisciplinary engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:41:53.861Z"
+  },
+  "asian history": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "history": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:41:55.552Z"
+  },
+  "astrobiology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "astronomy": true,
+      "geology": true
+    },
+    "parent_relationship_notes": "biology",
+    "timestamp": "2025-04-19T12:42:01.910Z"
+  },
+  "hydroponics": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "food systems": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:43:49.540Z"
+  },
+  "immunohistochemistry": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "histotechnology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:43:53.668Z"
+  },
+  "industrial organization": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "economics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:43:56.101Z"
+  },
+  "inequality": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "family health": true,
+      "public policy": true,
+      "sociology": true,
+      "sustainable international development": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:43:58.006Z"
+  },
+  "inorganic synthesis": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "chemistry": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:03.366Z"
+  },
+  "integrative physiology": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biology": true,
+      "exercise physiology": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:07.167Z"
+  },
+  "international trade": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "economics": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:12.626Z"
+  },
+  "international dietary guidelines": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "clinical nutrition": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:16.476Z"
+  },
+  "jewish studies": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "religion": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:18.464Z"
+  },
+  "land resources": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "biosystems engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:20.615Z"
+  },
+  "latinx studies": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "interdisciplinary studies": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:23.923Z"
+  },
+  "liquid permeability": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "variation_correctness_notes": "",
+    "parent_relationships": {
+      "petroleum engineering": true
+    },
+    "parent_relationship_notes": "",
+    "timestamp": "2025-04-19T12:44:25.580Z"
+  }
+}

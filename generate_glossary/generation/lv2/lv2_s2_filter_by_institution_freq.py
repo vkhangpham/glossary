@@ -3,6 +3,7 @@ from typing import Dict, List, Any, Set, Tuple
 import sys
 import os
 import csv
+import re
 from pathlib import Path
 from collections import Counter, defaultdict
 from tqdm import tqdm
@@ -11,6 +12,7 @@ from functools import partial
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Setup logging
 logger = setup_logger("lv2.s2")
@@ -27,7 +29,8 @@ class Config:
     OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_filtered_concepts.txt")
     OUTPUT_CSV_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_filtered_concepts.csv")
     VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_metadata.json")
-    TOPIC_FREQ_THRESHOLD = 1
+    MIN_DEPT_FREQ_PERCENT = 1  # Concept must appear in at least this % of topics within a department
+    MIN_DEPT_APPEARANCE = 1  # Concept must appear in at least this many departments
     NUM_WORKERS = 4  # Number of parallel workers for processing
     BATCH_SIZE = 1000  # Size of batches for parallel processing
 
@@ -166,6 +169,49 @@ def read_hierarchy_csv(csv_file: str) -> List[Dict[str, str]]:
     return entries
 
 
+def is_concept_same_as_department(concept: str, department: str) -> bool:
+    """
+    Check if a concept is the same as its department name
+    
+    Args:
+        concept: The concept to check
+        department: The department name
+        
+    Returns:
+        Boolean indicating if the concept matches the department name
+    """
+    # Normalize both strings
+    norm_concept = normalize_text(concept)
+    norm_department = normalize_text(department)
+    
+    # Extract department name without prefix/suffix qualifiers (if any)
+    # First try: "department of X" pattern
+    dept_match = re.search(r'department\s+of\s+(.*?)(?:\s+and\s+|\s*$)', norm_department)
+    if dept_match:
+        core_dept = dept_match.group(1).strip()
+        # Check if concept matches core department name
+        if norm_concept == core_dept:
+            return True
+            
+        # Also check individual components of compound department names
+        # e.g. "electrical" in "department of electrical and computer engineering"
+        if ' and ' in core_dept:
+            parts = [p.strip() for p in core_dept.split(' and ')]
+            if norm_concept in parts:
+                return True
+    
+    # Second try: Just match the whole name or significant part
+    if norm_concept == norm_department:
+        return True
+        
+    # Check if concept is a standalone word in department name
+    words = re.findall(r'\b\w+\b', norm_department)
+    if len(words) > 1 and norm_concept in words:
+        return True
+        
+    return False
+
+
 def create_mappings_from_csv(entries: List[Dict[str, str]]) -> Tuple[Dict[str, List[str]], Dict[str, Dict[str, List[str]]]]:
     """
     Create topic-concept and hierarchical mappings from CSV entries
@@ -182,6 +228,9 @@ def create_mappings_from_csv(entries: List[Dict[str, str]]) -> Tuple[Dict[str, L
     # Create hierarchical mapping (topic -> department -> concepts)
     hierarchy_mapping = defaultdict(lambda: defaultdict(list))
     
+    # Track skipped department-concept matches
+    skipped_dept_concepts = set()
+    
     for entry in entries:
         # Get fields
         topic = entry.get('topic', '')
@@ -190,6 +239,11 @@ def create_mappings_from_csv(entries: List[Dict[str, str]]) -> Tuple[Dict[str, L
         
         # Skip entries with missing data
         if not all([topic, department, concept]):
+            continue
+        
+        # Skip if concept matches department name
+        if is_concept_same_as_department(concept, department):
+            skipped_dept_concepts.add((concept, department))
             continue
             
         # Update topic mapping
@@ -211,6 +265,12 @@ def create_mappings_from_csv(entries: List[Dict[str, str]]) -> Tuple[Dict[str, L
         topic: sorted(list(set(concepts)))
         for topic, concepts in topic_mapping.items()
     }
+    
+    # Log skipped concepts
+    if skipped_dept_concepts:
+        logger.info("\nSkipped concepts that match their department names:")
+        for concept, department in sorted(skipped_dept_concepts):
+            logger.info(f"  Skipped '{concept}' from {department}")
     
     return topic_dict, hierarchy_dict
 
@@ -243,10 +303,148 @@ def write_filtered_csv(
         logger.error(f"Error writing filtered CSV: {str(e)}")
 
 
+def analyze_department_distribution(
+    hierarchy_mapping: Dict[str, Dict[str, List[str]]]
+) -> Tuple[Dict[str, Dict[str, int]], Dict[str, Set[str]], Dict[str, int]]:
+    """
+    Analyze concept distribution across departments
+    
+    Args:
+        hierarchy_mapping: Hierarchical mapping of topic -> department -> concepts
+        
+    Returns:
+        Tuple containing:
+        - Department to concept frequency mapping 
+        - Concept to departments mapping
+        - Count of topics per department
+    """
+    # Department -> concept -> count mapping
+    dept_concept_counts = defaultdict(Counter)
+    
+    # Concept -> set of departments mapping
+    concept_departments = defaultdict(set)
+    
+    # Count topics per department
+    dept_topic_counts = Counter()
+    
+    # Process hierarchy mapping
+    for topic, departments in hierarchy_mapping.items():
+        for department, concepts in departments.items():
+            # Count department as having this topic
+            dept_topic_counts[department] += 1
+            
+            # Update concept stats for this department
+            for concept in concepts:
+                dept_concept_counts[department][concept] += 1
+                concept_departments[concept].add(department)
+    
+    return (
+        {dept: dict(counts) for dept, counts in dept_concept_counts.items()},
+        {concept: depts for concept, depts in concept_departments.items()},
+        dict(dept_topic_counts)
+    )
+
+
+def filter_by_department_distribution(
+    concepts: List[str],
+    dept_concept_counts: Dict[str, Dict[str, int]],
+    concept_departments: Dict[str, Set[str]],
+    dept_topic_counts: Dict[str, int]
+) -> List[str]:
+    """
+    Filter concepts based on their distribution across departments
+    
+    Args:
+        concepts: List of concepts to filter
+        dept_concept_counts: Department -> concept -> frequency mapping
+        concept_departments: Concept -> departments mapping
+        dept_topic_counts: Department -> topic count mapping
+        
+    Returns:
+        List of filtered concepts
+    """
+    filtered_concepts = []
+    
+    for concept in tqdm(concepts, desc="Filtering by department distribution"):
+        # Get departments where this concept appears
+        departments = concept_departments.get(concept, set())
+        
+        # Check if concept appears in enough departments
+        if len(departments) >= Config.MIN_DEPT_APPEARANCE:
+            # Check department-level frequencies
+            dept_percentages = []
+            
+            for dept in departments:
+                if dept in dept_topic_counts and dept_topic_counts[dept] > 0:
+                    # Get concept frequency in this department
+                    concept_freq = dept_concept_counts.get(dept, {}).get(concept, 0)
+                    
+                    # Calculate percentage of topics in this department having this concept
+                    percentage = (concept_freq / dept_topic_counts[dept]) * 100
+                    dept_percentages.append(percentage)
+            
+            # Filter based on minimum percentage threshold
+            if any(pct >= Config.MIN_DEPT_FREQ_PERCENT for pct in dept_percentages):
+                filtered_concepts.append(concept)
+    
+    return sorted(filtered_concepts)
+
+
+def write_department_stats(
+    validation_meta_file: str,
+    dept_concept_counts: Dict[str, Dict[str, int]],
+    concept_departments: Dict[str, Set[str]],
+    dept_topic_counts: Dict[str, int],
+    filtered_concepts: List[str]
+) -> None:
+    """
+    Add department distribution statistics to the metadata file
+    
+    Args:
+        validation_meta_file: Path to the metadata file
+        dept_concept_counts: Department -> concept -> frequency mapping
+        concept_departments: Concept -> departments mapping
+        dept_topic_counts: Department -> topic count mapping
+        filtered_concepts: List of filtered concepts
+    """
+    try:
+        # Read existing metadata
+        with open(validation_meta_file, 'r', encoding='utf-8') as f:
+            metadata = json.load(f)
+        
+        # Add department statistics
+        metadata['department_statistics'] = {
+            dept: {
+                'total_topics': dept_topic_counts.get(dept, 0),
+                'total_concepts': len(concepts),
+                'filtered_concepts': sum(1 for c in concepts if c in filtered_concepts)
+            }
+            for dept, concepts in dept_concept_counts.items()
+        }
+        
+        # Add concept distribution across departments
+        metadata['concept_department_distribution'] = {
+            concept: {
+                'total_departments': len(concept_departments.get(concept, [])),
+                'departments': sorted(list(concept_departments.get(concept, [])))
+            }
+            for concept in filtered_concepts
+        }
+        
+        # Write updated metadata
+        with open(validation_meta_file, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f, indent=4, ensure_ascii=False)
+            
+        logger.info("Department statistics added to metadata file")
+        
+    except Exception as e:
+        logger.error(f"Error writing department statistics: {str(e)}")
+
+
 def main():
     """Main execution function"""
     try:
-        logger.info("Starting concept filtering by topic frequency")
+        logger.info("Starting concept filtering by topic and department frequency")
 
         # Create output directories if needed
         for path in [Config.OUTPUT_FILE, Config.VALIDATION_META_FILE, Config.OUTPUT_CSV_FILE]:
@@ -276,16 +474,19 @@ def main():
 
         # Analyze frequency distribution
         freq_dist = analyze_frequency_distribution(concept_frequencies)
+        
+        # Analyze department distribution
+        dept_concept_counts, concept_departments, dept_topic_counts = analyze_department_distribution(hierarchy_mapping)
+        logger.info(f"Analyzed concept distribution across {len(dept_concept_counts)} departments")
 
-        # Filter concepts
-        filtered_concepts = filter_concepts(
+        # Filter concepts by department distribution
+        filtered_concepts = filter_by_department_distribution(
             concepts,
-            concept_frequencies,
-            Config.TOPIC_FREQ_THRESHOLD,
-            num_workers=Config.NUM_WORKERS,
-            batch_size=Config.BATCH_SIZE
+            dept_concept_counts,
+            concept_departments,
+            dept_topic_counts
         )
-        logger.info(f"Filtered to {len(filtered_concepts)} concepts")
+        logger.info(f"Filtered to {len(filtered_concepts)} concepts by department distribution")
 
         # Save filtered concepts
         with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -300,19 +501,28 @@ def main():
             "metadata": {
                 "input_count": len(concepts),
                 "output_count": len(filtered_concepts),
-                "topic_threshold": Config.TOPIC_FREQ_THRESHOLD,
+                "min_dept_appearance": Config.MIN_DEPT_APPEARANCE,
+                "min_dept_freq_percent": Config.MIN_DEPT_FREQ_PERCENT,
                 "num_workers": Config.NUM_WORKERS,
                 "batch_size": Config.BATCH_SIZE,
-                # "frequency_distribution": {str(k): v for k, v in freq_dist.items()},
+                "frequency_distribution": {str(k): v for k, v in freq_dist.items()},
                 "topic_count": len(topic_mapping),
                 "department_count": sum(len(depts) for depts in hierarchy_mapping.values()),
             },
-            # "concept_frequencies": concept_frequencies,
             "hierarchy_mapping": hierarchy_mapping,
         }
 
         with open(Config.VALIDATION_META_FILE, "w", encoding="utf-8") as f:
             json.dump(validation_metadata, f, indent=4, ensure_ascii=False)
+
+        # Write department statistics
+        write_department_stats(
+            Config.VALIDATION_META_FILE, 
+            dept_concept_counts, 
+            concept_departments, 
+            dept_topic_counts, 
+            filtered_concepts
+        )
 
         logger.info("Concept filtering completed successfully")
 

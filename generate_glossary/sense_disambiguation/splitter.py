@@ -6,7 +6,7 @@ import os
 import re
 from sentence_transformers import SentenceTransformer
 import datetime
-from typing import Optional, Dict, List, Tuple, Literal
+from typing import Optional, Dict, List, Tuple, Literal, Any
 import glob
 import sys
 from pydantic import BaseModel, Field
@@ -34,19 +34,24 @@ LEVEL_PARAMS = {
 
 # Level-specific examples for prompting
 LEVEL_EXAMPLES = {
-    0: "Arts and Sciences, Engineering, Medicine, Business",
-    1: "Computer Science, Psychology, Economics, Mechanical Engineering",
-    2: "Machine Learning, Cognitive Psychology, Econometrics, Fluid Dynamics",
-    3: "Natural Language Processing, Behavioral Economics, Computer Vision"
+    # L0: Very broad domains / Colleges
+    0: "Arts and Sciences, Engineering, Medicine, Business, Law, Education, Public Health",
+    # L1: Departments / Major Fields
+    1: "Computer Science, Psychology, Economics, Mechanical Engineering, History, Biology, Political Science",
+    # L2: Research Areas / Specializations
+    2: "Machine Learning, Cognitive Psychology, Econometrics, Fluid Dynamics, Organic Chemistry, International Relations, Human-Computer Interaction",
+    # L3: Specific Topics / Conference Themes
+    3: "Natural Language Processing, Behavioral Economics, Computer Vision, Quantum Computing, Cancer Biology, Climate Modeling, Reinforcement Learning"
 }
 
 # Pydantic models for structured response
 class FieldDistinctnessAnalysis(BaseModel):
     """Structured model for field distinctness analysis"""
+    original_term: str = Field(description="The original term being disambiguated")
     field1: str = Field(description="First academic field being compared")
     field2: str = Field(description="Second academic field being compared")
-    verdict: Literal["DISTINCT", "NOT_DISTINCT"] = Field(description="Final determination of whether fields are distinct")
-    explanation: str = Field(description="Detailed explanation for the verdict, comparing the fields based on core concepts, methodologies, and relationship (e.g., subfield, overlap, distinct domains).")
+    verdict: Literal["DISTINCT", "NOT_DISTINCT"] = Field(description="Final determination of whether fields represent distinct senses of the original term")
+    explanation: str = Field(description="Detailed explanation for the verdict, comparing the fields based on core concepts, methodologies, and relationship (e.g., subfield, overlap, distinct domains) in the context of the original term.")
 
 class SenseSplitter:
     """
@@ -202,19 +207,17 @@ class SenseSplitter:
         logger.info(f"Filtered {len(self.candidate_terms)} candidate terms to {len(filtered_terms)} terms at level {self.level}")
         return filtered_terms
 
-    def _call_llm_for_tag(self, term: str, cluster_id: int, resource_snippets: list[str], parent_context: Optional[List[str]] = None) -> str | None:
+    def _call_llm_for_tag(self, 
+                          term: str, 
+                          cluster_id: int, 
+                          resource_snippets: list[str], 
+                          parent_context_hierarchy: Optional[List[str]] = None, 
+                          parent_context_details: Optional[Dict[str, Any]] = None, 
+                          radial_polysemy_details: Optional[Dict[str, Any]] = None
+                          ) -> str | None:
         """
         Calls the LLM to generate a domain tag for a cluster using our codebase's LLM utilities.
-        Includes level-specific context to improve tag relevance.
-        
-        Args:
-            term: The term string.
-            cluster_id: The cluster ID.
-            resource_snippets: A list of resource content snippets for the cluster.
-            parent_context: Optional list of parent terms for additional context.
-            
-        Returns:
-            A tag string or None if the call failed.
+        Includes level-specific context AND detector metadata to improve tag relevance.
         """
         if not self.using_real_llm or not self._llm:
             logger.warning(f"No LLM available. Using simulation for term '{term}', cluster {cluster_id}")
@@ -222,13 +225,16 @@ class SenseSplitter:
             
         logger.info(f"Calling LLM ({self.llm_provider}) for level {self.level} term '{term}', cluster {cluster_id}")
         
-        SYSTEM_PROMPT = f"""You are an expert academic classification system specializing in categorizing content into specific academic domains.
-Your task is to provide a concise, 1-3 word academic domain label for a term based on contextual information.
-Focus on standard academic classifications rather than creating new or unusual categories.
-Use established terminology from academic taxonomies.
+        # Updated System Prompt for better tag generation
+        SYSTEM_PROMPT = f"""You are an expert academic classification system. Your task is to provide a concise (1-3 words) academic domain label that accurately captures the specific sense or context of a term, based on resource snippets.
 
-You are categorizing a term at hierarchy level {self.level}, which represents a {LEVEL_PARAMS[self.level]['description']}.
-Examples of terms at this level include: {LEVEL_EXAMPLES[self.level]}
+Guidelines:
+- Choose a label representing a recognizable academic field or sub-field.
+- The label should be specific enough to pinpoint the meaning represented by the snippets, distinguishing it from other potential meanings of the term.
+- Avoid overly broad terms (e.g., 'science', 'studies') unless no suitable sub-field applies.
+- Avoid overly niche or obscure terms. Aim for standard academic classifications.
+- The target level is {self.level}, representing a {LEVEL_PARAMS[self.level]['description']}. Examples include: {LEVEL_EXAMPLES[self.level]}
+- Use established academic terminology.
 """
         
         # Take first 5 snippets at most, and truncate each snippet
@@ -243,20 +249,41 @@ Examples of terms at this level include: {LEVEL_EXAMPLES[self.level]}
         
         # Include parent context information if available
         parent_context_str = ""
-        if parent_context and len(parent_context) > 0:
-            parent_context_str = f"\nParent context: This term appears under: {', '.join(parent_context[:5])}"
-            if len(parent_context) > 5:
-                parent_context_str += f" and {len(parent_context) - 5} more"
+        if parent_context_hierarchy and len(parent_context_hierarchy) > 0:
+            parent_context_str = f"\nParent Context (Hierarchy): {', '.join(parent_context_hierarchy[:5])}"
+            if len(parent_context_hierarchy) > 5:
+                parent_context_str += f" and {len(parent_context_hierarchy) - 5} more."
+        if parent_context_details and parent_context_details.get("divergent", False):
+            num_distinct = parent_context_details.get("distinct_ancestor_pairs_count", 0)
+            parent_context_str += f"\nParent Context (Detector): Suggests ambiguity across {num_distinct} distinct parent lineages."
+
+        # Add Radial Polysemy info if available
+        radial_polysemy_str = ""
+        if radial_polysemy_details and radial_polysemy_details.get("polysemy_index", 0.0) > 0.0:
+            score = radial_polysemy_details["polysemy_index"]
+            count = radial_polysemy_details.get("context_count", 0)
+            radial_polysemy_str = f"\nRadial Polysemy Score: {score:.3f} (based on {count} contexts), indicating potential meaning variance."
         
-        prompt = f"""Generate a concise academic domain label (1-3 words) for the term '{term}' based on these resource snippets representing one sense/meaning.
+        # Updated User Prompt focusing on specific sense
+        prompt = f"""Considering the ORIGINAL TERM '{term}', generate a concise academic domain label (1-3 words) that best represents the specific sense or context shown in these resource snippets.
 
-This term is a {LEVEL_PARAMS[self.level]['description']} in the academic hierarchy.
-Terms at this level typically include examples like: {LEVEL_EXAMPLES[self.level]}
+The label should be general enough to be a recognizable field/sub-field, but specific enough to pinpoint this particular meaning.
 
-Resource snippets:
-{formatted_snippets}{parent_context_str}
+Term Context:
+- Original Term: '{term}'
+- Hierarchy Level: {self.level} ({LEVEL_PARAMS[self.level]['description']})
+- Typical Examples at this Level: {LEVEL_EXAMPLES[self.level]}
+{parent_context_str}
 
-Return ONLY the domain label, nothing else. No JSON, no explanation, just the 1-3 word label."""
+Resource Snippets for this specific sense:
+{formatted_snippets}
+
+Example of good balance:
+- If snippets for term 'model' discuss neural networks -> 'neural networks' or 'machine learning'
+- If snippets for term 'stress' discuss material fatigue -> 'materials science' or 'mechanical stress'
+- If snippets for term 'bank' discuss river geography -> 'geography' or 'river systems'
+
+Return ONLY the single, most appropriate domain label (1-3 words), nothing else. Standardize to lowercase_with_underscores."""
         
         # Make multiple attempts in case of failure
         max_attempts = 2
@@ -272,8 +299,10 @@ Return ONLY the domain label, nothing else. No JSON, no explanation, just the 1-
                 if response and hasattr(response, 'text'):
                     # Just use the raw text response
                     tag = response.text.strip()
-                    logger.info(f"LLM generated tag '{tag}' for term '{term}', cluster {cluster_id}")
-                    return tag
+                    # Apply standardization here as requested in the prompt
+                    standardized_tag = self._standardize_tag(tag)
+                    logger.info(f"LLM generated tag '{tag}' -> standardized to '{standardized_tag}' for term '{term}', cluster {cluster_id}")
+                    return standardized_tag # Return the standardized tag
                 else:
                     logger.warning(f"Invalid response format from LLM for term '{term}', cluster {cluster_id}")
                     
@@ -284,6 +313,7 @@ Return ONLY the domain label, nothing else. No JSON, no explanation, just the 1-
                 
         # If all attempts fail, use simulation fallback
         logger.warning(f"All LLM attempts failed for term '{term}', cluster {cluster_id}. Using simulation.")
+        # Simulation should also return a standardized tag if applicable, but sense_N is already standard
         return self._call_simulated_llm_for_tag(term, cluster_id, resource_snippets)
 
     def _call_simulated_llm_for_tag(self, term: str, cluster_id: int, resource_snippets: list[str]) -> str | None:
@@ -481,8 +511,8 @@ Return ONLY the domain label, nothing else. No JSON, no explanation, just the 1-
         if separation_score < min_threshold:
              return False, f"Insufficient separation ({separation_score:.2f} < required min {min_threshold:.2f})"
 
-        # 5. Check tag distinctness
-        tags_distinct, distinctness_reason = self._check_tags_distinctness(sense_tags.values())
+        # 5. Check tag distinctness IN CONTEXT OF ORIGINAL TERM
+        tags_distinct, distinctness_reason = self._check_tags_distinctness(term, sense_tags.values())
 
         # 6. Make final decision
         if tags_distinct:
@@ -493,15 +523,15 @@ Return ONLY the domain label, nothing else. No JSON, no explanation, just the 1-
             if distinctness_reason == "Tags represent distinct academic fields" or \
                distinctness_reason == "Using generic tags" or \
                distinctness_reason.startswith("No LLM available"):
-                return True, f"Valid split: Fields distinct ({tags_info} represent distinct academic fields) and separation sufficient ({separation_score:.2f} >= {min_threshold:.2f})"
+                return True, f"Valid split: Fields distinct ({tags_info} represent distinct meanings of '{term}') and separation sufficient ({separation_score:.2f} >= {min_threshold:.2f})"
             else:
                 return True, f"Valid split: Fields distinct ({distinctness_reason}) and separation sufficient ({separation_score:.2f} >= {min_threshold:.2f})"
         else:
             return False, f"Split rejected: Fields not distinct enough ({distinctness_reason})"
 
-    def _check_tags_distinctness(self, tags: List[str]) -> Tuple[bool, str]:
+    def _check_tags_distinctness(self, original_term: str, tags: List[str]) -> Tuple[bool, str]:
         """
-        Determine if the generated tags represent truly distinct academic fields.
+        Determine if the generated tags represent truly distinct senses of the original term.
         """
         # Convert dict_values to list if necessary
         tags_list = list(tags)
@@ -520,29 +550,30 @@ Return ONLY the domain label, nothing else. No JSON, no explanation, just the 1-
                 
                 # Check exact matches 
                 if tag1 == tag2:
-                    return False, f"Identical tags: '{tag1}' and '{tag2}'"
+                    return False, f"Identical tags for '{original_term}': '{tag1}' and '{tag2}'"
                 
-                # Check parent-child relationship
-                if tag1 in tag2 or tag2 in tag1:
-                    return False, f"Potential parent-child relationship: '{tag1}' and '{tag2}'"
+                # Check parent-child relationship (less relevant now, LLM handles context)
+                # if tag1 in tag2 or tag2 in tag1:
+                #     return False, f"Potential parent-child relationship: '{tag1}' and '{tag2}' for '{original_term}'"
                 
-                # Use LLM to determine if fields are distinct enough
+                # Use LLM to determine if fields are distinct senses of the original term
                 readable_tag1 = readable_tags[i]
                 readable_tag2 = readable_tags[j]
                 
                 # Call the main field distinctness check method (which handles both structured and text responses)
-                are_distinct, reason = self._check_field_distinctness_with_llm(readable_tag1, readable_tag2)
+                are_distinct, reason = self._check_field_distinctness_with_llm(original_term, readable_tag1, readable_tag2)
                 if not are_distinct:
-                    return False, reason
+                    return False, reason # Return LLM reason for non-distinctness
                 elif reason and not reason.startswith("No LLM available") and not reason.startswith("Different concepts:"):
+                    # If LLM confirms distinctness with a good reason, return it
                     return True, reason
         
-        # If we got here, all pairs were checked and no issues found
-        return True, "Tags represent distinct academic fields"
+        # If we got here, all pairs were checked and no issues found, or LLM fallback occurred
+        return True, f"Tags represent distinct academic fields for '{original_term}'"
 
-    def _check_field_distinctness_with_llm(self, field1: str, field2: str) -> Tuple[bool, str]:
+    def _check_field_distinctness_with_llm(self, original_term: str, field1: str, field2: str) -> Tuple[bool, str]:
         """
-        Use LLM to determine if two academic fields are distinct enough to warrant a split.
+        Use LLM to determine if two academic fields represent distinct senses of the original term.
         First attempts a structured response using Pydantic model, then falls back to
         text-based response if needed.
         """
@@ -550,55 +581,51 @@ Return ONLY the domain label, nothing else. No JSON, no explanation, just the 1-
             logger.info(f"No LLM available for field distinctness check: '{field1}' vs '{field2}'")
             return True, "No LLM available for distinctness check"
         
-        # System prompt with clear instructions for both structured and text response
-        system_prompt = """You are an expert taxonomist specializing in academic field classification. Your task is to determine if two academic fields represent GENUINELY DISTINCT CORE MEANINGS that warrant separate glossary entries.
+        # System prompt updated to include original_term context
+        system_prompt = f"""You are an expert taxonomist specializing in academic field classification. Your task is to determine if two proposed academic fields (sense tags) represent GENUINELY DISTINCT CORE MEANINGS of the ORIGINAL TERM: '{original_term}'.
 
-EVALUATION CRITERIA:
-1. TRUE DISTINCTION: Fields represent fundamentally different core concepts with distinct:
-   - Academic foundations and intellectual traditions
-   - Primary research methodologies
-   - Core subject matter and phenomena of study
-   - Levels of analysis (e.g., molecular vs. societal)
+A split is ONLY valid if the fields represent truly different meanings of '{original_term}', not just different aspects or applications.
 
-2. FALSE DISTINCTION (same field): Fields represent the same or highly related concepts with:
-   - Different aspects/applications of the same concept
-   - Different methodological approaches within the same domain
-   - Hierarchical relationship (parent-child, subfield relationship)
-   - Different terminology for the same underlying concepts
-   - Overlapping boundaries with shared core objectives
+EVALUATION CRITERIA (Consider these in the context of '{original_term}'):
+1. TRUE DISTINCTION: The two fields represent fundamentally different core meanings or interpretations of '{original_term}'. Examples include homonyms (bank/finance vs bank/river) or radically different disciplinary interpretations (stress/psychology vs stress/materials).
+
+2. FALSE DISTINCTION (same sense): The two fields represent related concepts under the main meaning of '{original_term}'. Examples include:
+   - Different aspects/applications of '{original_term}' (e.g., '{original_term}' theory vs. application)
+   - Subfields related to '{original_term}' (e.g., for '{original_term}' = AI, senses like 'machine learning' and 'computer vision' are related aspects, not distinct core meanings of AI itself).
+   - Different methodologies used within the context of '{original_term}'.
+   - Overlapping fields where both relate closely to '{original_term}'.
 
 IMPORTANT: Provide your answer in this EXACT FORMAT:
 ```
-EXPLANATION: [Provide a SINGLE SENTENCE explanation for the verdict, comparing the fields based on core concepts, methodologies, and relationship (e.g., subfield, overlap, distinct domains).]
+EXPLANATION: [Provide a SINGLE SENTENCE explanation for the verdict, stating if FIELD 1 and FIELD 2 represent distinct meanings OF THE ORIGINAL TERM '{original_term}', considering the context.]
 VERDICT: [DISTINCT or NOT_DISTINCT]
 ```
 
-DISTINCT means the fields represent fundamentally different core meanings requiring separate entries.
-NOT_DISTINCT means the fields represent different aspects/applications of the same underlying concept."""
+DISTINCT means FIELD 1 and FIELD 2 represent fundamentally different core meanings of '{original_term}'.
+NOT_DISTINCT means FIELD 1 and FIELD 2 represent related aspects/applications/subfields under the primary meaning of '{original_term}'."""
 
-        # User prompt with examples
-        user_prompt = f"""Compare these two academic fields and determine if they represent GENUINELY DIFFERENT CORE MEANINGS:
+        # User prompt updated to focus on the original term
+        user_prompt = f"""ORIGINAL TERM: '{original_term}'
 
+Proposed Sense Fields:
 FIELD 1: {field1}
 FIELD 2: {field2}
 
-EXAMPLES OF TRULY DISTINCT FIELDS (should be separate entries):
-- "cell biology" vs. "prison cell studies" (different core concepts in biology vs. sociology)
-- "mathematical programming" vs. "computer programming" (one is operations research, the other software development)
-- "developmental psychology" vs. "developmental economics" (same qualifier but different domains)
-- "network (sociology)" vs. "network theory in computer science" (same term, different domains)
-- "signal processing" vs. "food processing" (completely unrelated domains that share a term)
+Do FIELD 1 and FIELD 2 represent genuinely distinct core meanings OF THE ORIGINAL TERM '{original_term}', or do they represent related aspects/applications/subfields?
 
-EXAMPLES OF NON-DISTINCT FIELDS (should be single entries):
-- "computational linguistics" vs. "natural language processing" (overlapping fields with shared objectives)
-- "machine learning theory" vs. "machine learning applications" (theory vs. practice of same field)
-- "cognitive neuroscience" vs. "behavioral neuroscience" (subfields of neuroscience)
-- "quantum mechanics" vs. "quantum physics" (essentially the same field with different naming)
-- "psychological stress" vs. "mental stress" (different terminology for same concept)
+EXAMPLES FOR CONTEXT:
+- IF ORIGINAL TERM = "Stress":
+  - DISTINCT: "Psychological Stress" vs. "Material Stress" (Different core meanings)
+  - NOT_DISTINCT: "Acute Stress" vs. "Chronic Stress" (Different aspects of psychological stress)
+- IF ORIGINAL TERM = "Network":
+  - DISTINCT: "Social Network" vs. "Computer Network" (Different domains)
+  - NOT_DISTINCT: "Network Analysis" vs. "Network Theory" (Method vs. Theory within the same domain context)
+- IF ORIGINAL TERM = "Machine Learning":
+  - NOT_DISTINCT: "Supervised Learning" vs. "Reinforcement Learning" (Different types/subfields)
+  - NOT_DISTINCT: "Machine Learning Algorithms" vs. "Machine Learning Applications"
+  - NOT_DISTINCT: "Artificial Intelligence" vs. "Language Acquisition" (Even if tags are distinct fields, "Language Acquisition" here likely refers to applying ML *to* it, not a distinct sense of ML itself).
 
-REMEMBER: Focus on core meaning, not just terminology. Subfields of the same discipline usually warrant a SINGLE entry with qualifiers, while truly different domains warrant SEPARATE entries.
-
-Apply the evaluation criteria and provide your determination in the specified format."""
+Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your determination in the specified format."""
 
         try:
             # First attempt: Try structured response with Pydantic model
@@ -607,12 +634,12 @@ Apply the evaluation criteria and provide your determination in the specified fo
                     prompt=user_prompt, 
                     system_prompt=system_prompt,
                     temperature=0.1,
-                    response_model=FieldDistinctnessAnalysis
+                    response_model=FieldDistinctnessAnalysis # Model needs original_term field added
                 )
                 
                 if response and hasattr(response, 'text'):
                     # Extract the structured response
-                    analysis_result = response.text # Rename for clarity
+                    analysis_result = response.text
                     
                     # Make the decision based on the verdict
                     if analysis_result.verdict == "DISTINCT":
@@ -838,8 +865,11 @@ Apply the evaluation criteria and provide your determination in the specified fo
         sense_tags = {}
         logger.debug(f"Generating tags for term '{term}' with {len(grouped_resources)} clusters.")
         
-        # Get parent context for additional information
-        parent_context = self._get_term_parent_context(term)
+        # Get parent context (hierarchy) and detector-specific metrics
+        parent_context_hierarchy = self._get_term_parent_context(term)
+        term_metrics = self.cluster_metrics.get(term, {})
+        parent_context_details = term_metrics.get("parent_context", {})
+        radial_polysemy_details = term_metrics.get("radial_polysemy", {})
         
         # Get all resources for TF-IDF processing
         all_resources = []
@@ -853,12 +883,15 @@ Apply the evaluation criteria and provide your determination in the specified fo
 
             # 1. Attempt LLM Tagging (Real or Simulated)
             if self.use_llm_for_tags:
-                tag = self._call_llm_for_tag(term, cluster_id, resource_snippets, parent_context)
+                tag = self._call_llm_for_tag(
+                    term,
+                    cluster_id,
+                    resource_snippets,
+                    parent_context_hierarchy=parent_context_hierarchy,
+                    parent_context_details=parent_context_details,
+                    radial_polysemy_details=radial_polysemy_details
+                )
                     
-                if tag:
-                    tag = self._standardize_tag(tag)
-                    logger.info(f"Generated tag '{tag}' for term '{term}', cluster {cluster_id}")
-
             # 2. Attempt TF-IDF Tagging
             if not tag:
                 logger.debug(f"LLM tagging failed/disabled for '{term}' cluster {cluster_id}. Trying TF-IDF.")
@@ -1019,7 +1052,7 @@ Apply the evaluation criteria and provide your determination in the specified fo
             # Step 2: Generate Meaningful Tags
             sense_tags = self._generate_sense_tags(term, grouped_resources)
 
-            # Step 3: Validate the split is justified
+            # Step 3: Validate the split is justified, considering the original term context
             should_split, split_reason = self._validate_split(term, grouped_resources, sense_tags)
             
             # Create a proposal structure regardless of acceptance/rejection
@@ -1131,6 +1164,10 @@ Apply the evaluation criteria and provide your determination in the specified fo
             if "term_clusters" in data:
                 logger.info(f"Detected comprehensive cluster details format in {cluster_results_file}")
                 return self._process_comprehensive_cluster_details(data)
+            # Check for hybrid detector results format
+            elif "detailed_results" in data:
+                logger.info(f"Detected hybrid detector results format in {cluster_results_file}")
+                return self._process_hybrid_detector_results(data)
             else:
                 logger.info(f"Detected standard cluster results format in {cluster_results_file}")
                 
@@ -1222,7 +1259,10 @@ Apply the evaluation criteria and provide your determination in the specified fo
             cluster_results[term] = cluster_label_array
         
         # Update instance variables
-        self.candidate_terms = all_candidate_terms
+        # CHANGE: Do NOT overwrite candidate_terms if it's already populated (e.g., by hybrid results)
+        if not self.candidate_terms:
+            self.candidate_terms = all_candidate_terms
+        # Populate cluster details regardless
         self.cluster_results = cluster_results
         self.cluster_metrics = detailed_metrics
         
@@ -1231,6 +1271,68 @@ Apply the evaluation criteria and provide your determination in the specified fo
         
         logger.info(f"Successfully processed comprehensive cluster details for {len(cluster_results)} terms")
         return True
+
+    def _process_hybrid_detector_results(self, data: dict) -> bool:
+        """
+        Process results from the hybrid detector format.
+        
+        Args:
+            data: The loaded JSON data from hybrid detector
+            
+        Returns:
+            True if processing was successful, False otherwise
+        """
+        if not data or "detailed_results" not in data:
+            logger.error("Invalid hybrid detector results format")
+            return False
+            
+        detailed_results = data["detailed_results"]
+        detection_logic = data.get("detection_logic", "")
+        
+        if "RadialPolysemy used only as confidence booster" in detection_logic:
+            logger.info("Using improved hybrid detection logic: RadialPolysemy as confidence booster only")
+            
+        # Extract candidate terms
+        candidate_terms = list(detailed_results.keys())
+        cluster_results = {}
+        cluster_metrics = {}
+        
+        # Process each term's data to extract metrics if available
+        for term, term_data in detailed_results.items():
+            # Extract dbscan metrics if the term was detected by dbscan
+            term_metrics = {} # Store all metrics for this term
+            if term_data.get("detected_by", {}).get("dbscan", False):
+                if "metrics" in term_data and "dbscan" in term_data["metrics"]:
+                    dbscan_metrics = term_data["metrics"]["dbscan"]
+                    term_metrics["dbscan"] = dbscan_metrics
+                    
+                    # Extract cluster labels only if available (for consistency, though comprehensive file is preferred)
+                    if "cluster_labels" in dbscan_metrics:
+                        cluster_results[term] = dbscan_metrics["cluster_labels"]
+            
+            # Extract parent context metrics if available
+            if term_data.get("detected_by", {}).get("parent_context", False):
+                if "metrics" in term_data and "parent_context" in term_data["metrics"]:
+                    term_metrics["parent_context"] = term_data["metrics"]["parent_context"]
+                    
+            # Extract radial polysemy metrics if available
+            if term_data.get("detected_by", {}).get("radial_polysemy", False):
+                if "metrics" in term_data and "radial_polysemy" in term_data["metrics"]:
+                    term_metrics["radial_polysemy"] = term_data["metrics"]["radial_polysemy"]
+            
+            if term_metrics: # If any metrics were found
+                cluster_metrics[term] = term_metrics
+        
+        # Update instance variables
+        # Only update if candidate_terms is currently empty, allowing comprehensive details to take precedence if loaded first
+        if not self.candidate_terms:
+             self.candidate_terms = candidate_terms
+        # Update cluster_results and metrics, potentially overwriting if loaded after comprehensive
+        self.cluster_results = cluster_results
+        self.cluster_metrics = cluster_metrics
+        
+        logger.info(f"Successfully processed hybrid detector results. Found {len(candidate_terms)} potential candidates.")
+        return True # Return True even if cluster_results is empty, as candidates were found
 
     def run(self, save_output: bool = True, output_filename: Optional[str] = None) -> tuple[list[dict], list[dict], Optional[str]]:
         """

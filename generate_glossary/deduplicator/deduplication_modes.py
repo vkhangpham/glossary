@@ -599,7 +599,9 @@ def deduplicate_graph_based(
     min_relevance_score: float = 0.3,
     batch_size: int = 100,
     max_workers: Optional[int] = None,
-    use_enhanced_linguistics: bool = True
+    use_enhanced_linguistics: bool = True,
+    current_level: Optional[int] = None,
+    cache_dir: Optional[str] = None
 ) -> DeduplicationResult:
     """
     Graph-based deduplication that combines rule-based and web-based approaches.
@@ -619,6 +621,8 @@ def deduplicate_graph_based(
         batch_size: Batch size for parallel processing
         max_workers: Maximum number of worker processes
         use_enhanced_linguistics: Whether to use enhanced linguistic analysis
+        current_level: Explicitly specified level for the current input terms
+        cache_dir: Directory for caching intermediate results
         
     Returns:
         DeduplicationResult: Dictionary containing deduplicated terms and metadata
@@ -626,16 +630,37 @@ def deduplicate_graph_based(
     # Prepare terms by level
     terms_by_level = {}
     
-    # Add current level terms (assume current level is max(higher_level_terms.keys()) + 1 or 0)
-    current_level = 0
-    if higher_level_terms:
-        current_level = max(higher_level_terms.keys()) + 1
-    terms_by_level[current_level] = terms
+    # Add current level terms - use provided current_level if available
+    if current_level is None:
+        # Fall back to calculating based on higher_level_terms
+        current_level = 0
+        if higher_level_terms:
+            current_level = max(higher_level_terms.keys()) + 1
     
-    # Add higher level terms if provided
+    # Log the current level being used
+    logging.info(f"Using level {current_level} for current input terms")
+    
+    # First, add all higher level terms to their respective levels
     if higher_level_terms:
         for level, level_terms in higher_level_terms.items():
-            terms_by_level[level] = level_terms
+            terms_by_level[level] = level_terms.copy()  # Make a copy to avoid modifying the original
+            logging.info(f"Added {len(level_terms)} terms to level {level}")
+    
+    # Create a set of terms already assigned to higher levels for fast lookup
+    higher_level_term_set = set()
+    for level, level_terms in terms_by_level.items():
+        if level < current_level:
+            higher_level_term_set.update(level_terms)
+    
+    # Now add remaining terms to the current level, excluding those already in higher levels
+    current_level_terms = [term for term in terms if term not in higher_level_term_set]
+    terms_by_level[current_level] = current_level_terms
+    logging.info(f"Added {len(current_level_terms)} terms to current level {current_level}")
+    
+    # Log which specific terms from current input were found in higher levels
+    higher_level_matches = [term for term in terms if term in higher_level_term_set]
+    if higher_level_matches:
+        logging.info(f"Found {len(higher_level_matches)} terms from current input that are also in higher levels")
     
     # Prepare web content
     all_web_content = {}
@@ -654,7 +679,8 @@ def deduplicate_graph_based(
         terms_by_level=terms_by_level,
         web_content=all_web_content,
         url_overlap_threshold=2,  # Default value
-        min_relevance_score=min_relevance_score  # Use min_relevance_score parameter
+        min_relevance_score=min_relevance_score,  # Use min_relevance_score parameter
+        cache_dir=cache_dir  # Pass cache_dir parameter
     )
     
     # Add higher level terms and terms_by_level to result for use by the CLI

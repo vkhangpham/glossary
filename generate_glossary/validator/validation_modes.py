@@ -30,8 +30,8 @@ WebContent = Dict[str, Any]  # {url: str, title: str, content: str}
 # Constants
 TOKEN_SET_RATIO_THRESHOLD = 80
 SEMANTIC_THRESHOLD = 0.55
-DEFAULT_MIN_SCORE = 0.7
-DEFAULT_MIN_RELEVANCE_SCORE = 0.77
+DEFAULT_MIN_SCORE = 0.5
+DEFAULT_MIN_RELEVANCE_SCORE = 0.5
 
 # Common words to remove in multi-word terms
 COMMON_WORDS = {

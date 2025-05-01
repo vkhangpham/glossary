@@ -84,6 +84,9 @@ def load_resources(level: int, verbose: bool = False) -> Dict[str, List[Dict[str
 def build_hierarchy(output_file: str = None, 
                     transfer_sources: bool = True, 
                     transfer_resources: bool = True,
+                    rank_parents: bool = False,
+                    min_parent_score: float = 2.0,
+                    max_parents: int = 3,
                     verbose: bool = False) -> Dict[str, Any]:
     """Build a hierarchical data structure from metadata across all levels."""
     # Check if final directory exists
@@ -203,6 +206,24 @@ def build_hierarchy(output_file: str = None,
         
         if verbose:
             print(f"Transferred metadata from {variation_count} variations to their canonical terms")
+    
+    # Apply parent ranking if requested
+    if rank_parents:
+        try:
+            from generate_glossary.hierarchy.parent_ranker import apply_parent_ranking
+            
+            if verbose:
+                print(f"Applying parent ranking (min_score={min_parent_score}, max_parents={max_parents})...")
+                
+            hierarchy = apply_parent_ranking(
+                hierarchy,
+                min_score=min_parent_score,
+                max_parents=max_parents,
+                verbose=verbose
+            )
+        except ImportError as e:
+            print(f"WARNING: Parent ranking requested but could not import parent_ranker module: {e}")
+            print("         Parent ranking will not be applied.")
     
     # Compute additional statistics
     hierarchy["stats"] = {
@@ -351,6 +372,12 @@ def main():
                         help='Disable transferring sources from variations to canonical terms')
     parser.add_argument('--no-transfer-resources', action='store_true',
                         help='Disable transferring resources from variations to canonical terms')
+    parser.add_argument('--rank-parents', action='store_true', default=False,
+                        help='Apply parent ranking to filter and prioritize parent relationships')
+    parser.add_argument('--min-parent-score', type=float, default=2.0,
+                        help='Minimum score for a parent to be included when ranking (default: 2.0)')
+    parser.add_argument('--max-parents', type=int, default=3,
+                        help='Maximum number of parents to keep per term when ranking (default: 3)')
     parser.add_argument('--verbose', action='store_true',
                         help='Enable verbose output')
     
@@ -361,6 +388,9 @@ def main():
         args.output, 
         not args.no_transfer_sources, 
         not args.no_transfer_resources,
+        args.rank_parents,
+        args.min_parent_score,
+        args.max_parents,
         args.verbose
     )
     

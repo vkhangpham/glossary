@@ -1,0 +1,1161 @@
+{
+  "timestamp": "2025-04-26T18:41:50.429113",
+  "parameters": {
+    "model_name": "all-MiniLM-L6-v2",
+    "context_window_size": 10,
+    "min_contexts": 10,
+    "level": null
+  },
+  "scores": {
+    "democracy": {
+      "polysemy_index": 0.2629203926779109,
+      "metrics": {
+        "polysemy_index": 0.2629203926779109,
+        "variance": 0.042953018099069595,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.14736842105263157
+      },
+      "context_count": 16
+    },
+    "journalism": {
+      "polysemy_index": 0.15609001732173566,
+      "metrics": {
+        "polysemy_index": 0.15609001732173566,
+        "variance": 0.04519600048661232,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.6842105263157895
+      },
+      "context_count": 11
+    },
+    "phonology": {
+      "polysemy_index": 0.09691831291042674,
+      "metrics": {
+        "polysemy_index": 0.09691831291042674,
+        "variance": 0.05498887225985527,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.31958762886597936
+      },
+      "context_count": 15
+    },
+    "ergonomics": {
+      "polysemy_index": 0.1033744357510068,
+      "metrics": {
+        "polysemy_index": 0.1033744357510068,
+        "variance": 0.057942185550928116,
+        "peak_count_estimate": 16,
+        "best_peak_position": 0.4077669902912621
+      },
+      "context_count": 10
+    },
+    "migration": {
+      "polysemy_index": 0.2073351707991643,
+      "metrics": {
+        "polysemy_index": 0.2073351707991643,
+        "variance": 0.050518862903118134,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.3142857142857143
+      },
+      "context_count": 12
+    },
+    "pragmatics": {
+      "polysemy_index": 0.09830745093407289,
+      "metrics": {
+        "polysemy_index": 0.09830745093407289,
+        "variance": 0.0517616905272007,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.3364485981308411
+      },
+      "context_count": 15
+    },
+    "culture": {
+      "polysemy_index": 0.09198443629896147,
+      "metrics": {
+        "polysemy_index": 0.09198443629896147,
+        "variance": 0.04999597370624542,
+        "peak_count_estimate": 13,
+        "best_peak_position": 0.9444444444444444
+      },
+      "context_count": 14
+    },
+    "inflammation": {
+      "polysemy_index": 0.09061876314611561,
+      "metrics": {
+        "polysemy_index": 0.09061876314611561,
+        "variance": 0.05118302255868912,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.6888888888888889
+      },
+      "context_count": 19
+    },
+    "violence": {
+      "polysemy_index": 0.10493636541312545,
+      "metrics": {
+        "polysemy_index": 0.10493636541312545,
+        "variance": 0.049050234258174896,
+        "peak_count_estimate": 10,
+        "best_peak_position": 0.5918367346938775
+      },
+      "context_count": 16
+    },
+    "mathematics": {
+      "polysemy_index": 0.1640393826291,
+      "metrics": {
+        "polysemy_index": 0.1640393826291,
+        "variance": 0.047060754150152206,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.9259259259259259
+      },
+      "context_count": 11
+    },
+    "neuroscience": {
+      "polysemy_index": 0.15719074497606067,
+      "metrics": {
+        "polysemy_index": 0.15719074497606067,
+        "variance": 0.04957158491015434,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.13793103448275862
+      },
+      "context_count": 10
+    },
+    "concussion": {
+      "polysemy_index": 0.12910998724106737,
+      "metrics": {
+        "polysemy_index": 0.12910998724106737,
+        "variance": 0.050359126180410385,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.328125
+      },
+      "context_count": 10
+    },
+    "humanities": {
+      "polysemy_index": 0.10353931184385834,
+      "metrics": {
+        "polysemy_index": 0.10353931184385834,
+        "variance": 0.04774289205670357,
+        "peak_count_estimate": 13,
+        "best_peak_position": 0.6444444444444445
+      },
+      "context_count": 17
+    },
+    "petrology": {
+      "polysemy_index": 0.21186026115153922,
+      "metrics": {
+        "polysemy_index": 0.21186026115153922,
+        "variance": 0.051063623279333115,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.31645569620253167
+      },
+      "context_count": 18
+    },
+    "adolescence": {
+      "polysemy_index": 0.17351035862506536,
+      "metrics": {
+        "polysemy_index": 0.17351035862506536,
+        "variance": 0.05033458024263382,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.898989898989899
+      },
+      "context_count": 11
+    },
+    "linguistics": {
+      "polysemy_index": 0.07062777283587851,
+      "metrics": {
+        "polysemy_index": 0.07062777283587851,
+        "variance": 0.05041966214776039,
+        "peak_count_estimate": 20,
+        "best_peak_position": 0.8878504672897196
+      },
+      "context_count": 14
+    },
+    "equity": {
+      "polysemy_index": 0.11275421435045752,
+      "metrics": {
+        "polysemy_index": 0.11275421435045752,
+        "variance": 0.06258980184793472,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.6865671641791045
+      },
+      "context_count": 17
+    },
+    "measurement": {
+      "polysemy_index": 0.1592754552583988,
+      "metrics": {
+        "polysemy_index": 0.1592754552583988,
+        "variance": 0.05139024928212166,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.1095890410958904
+      },
+      "context_count": 12
+    },
+    "sociology": {
+      "polysemy_index": 0.08486546423651853,
+      "metrics": {
+        "polysemy_index": 0.08486546423651853,
+        "variance": 0.04562254995107651,
+        "peak_count_estimate": 17,
+        "best_peak_position": 0.7526881720430108
+      },
+      "context_count": 11
+    },
+    "minerals": {
+      "polysemy_index": 0.1631264224302248,
+      "metrics": {
+        "polysemy_index": 0.1631264224302248,
+        "variance": 0.05405573919415474,
+        "peak_count_estimate": 13,
+        "best_peak_position": 0.8508771929824561
+      },
+      "context_count": 14
+    },
+    "mobility": {
+      "polysemy_index": 0.07479989392631448,
+      "metrics": {
+        "polysemy_index": 0.07479989392631448,
+        "variance": 0.0566965714097023,
+        "peak_count_estimate": 16,
+        "best_peak_position": 0.6153846153846154
+      },
+      "context_count": 15
+    },
+    "geometry": {
+      "polysemy_index": 0.10581555525667408,
+      "metrics": {
+        "polysemy_index": 0.10581555525667408,
+        "variance": 0.045544546097517014,
+        "peak_count_estimate": 17,
+        "best_peak_position": 0.9117647058823529
+      },
+      "context_count": 19
+    },
+    "insolvency": {
+      "polysemy_index": 0.15641480893509063,
+      "metrics": {
+        "polysemy_index": 0.15641480893509063,
+        "variance": 0.059162773191928864,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.7073170731707317
+      },
+      "context_count": 16
+    },
+    "reasoning": {
+      "polysemy_index": 0.11089217706483512,
+      "metrics": {
+        "polysemy_index": 0.11089217706483512,
+        "variance": 0.048169732093811035,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.762962962962963
+      },
+      "context_count": 16
+    },
+    "terrorism": {
+      "polysemy_index": 0.14822247056380744,
+      "metrics": {
+        "polysemy_index": 0.14822247056380744,
+        "variance": 0.05037795007228851,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.17692307692307693
+      },
+      "context_count": 14
+    },
+    "psychiatry": {
+      "polysemy_index": 0.17411792691085193,
+      "metrics": {
+        "polysemy_index": 0.17411792691085193,
+        "variance": 0.05365920811891556,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.9384615384615385
+      },
+      "context_count": 11
+    },
+    "ethics": {
+      "polysemy_index": 0.16718745663645085,
+      "metrics": {
+        "polysemy_index": 0.16718745663645085,
+        "variance": 0.04549100995063782,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.625
+      },
+      "context_count": 12
+    },
+    "banking": {
+      "polysemy_index": 0.2099611788880842,
+      "metrics": {
+        "polysemy_index": 0.2099611788880842,
+        "variance": 0.04884742945432663,
+        "peak_count_estimate": 7,
+        "best_peak_position": 0.19298245614035087
+      },
+      "context_count": 10
+    },
+    "asthma": {
+      "polysemy_index": 0.1234779763072541,
+      "metrics": {
+        "polysemy_index": 0.1234779763072541,
+        "variance": 0.04941650107502937,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.8541666666666666
+      },
+      "context_count": 18
+    },
+    "aerodynamics": {
+      "polysemy_index": 0.24425723040094838,
+      "metrics": {
+        "polysemy_index": 0.24425723040094838,
+        "variance": 0.05210798606276512,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.8
+      },
+      "context_count": 10
+    },
+    "topology": {
+      "polysemy_index": 0.13983666060385103,
+      "metrics": {
+        "polysemy_index": 0.13983666060385103,
+        "variance": 0.051322128623723984,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.7411764705882353
+      },
+      "context_count": 11
+    },
+    "informatics": {
+      "polysemy_index": 0.21128140793442063,
+      "metrics": {
+        "polysemy_index": 0.21128140793442063,
+        "variance": 0.05273236334323883,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.1724137931034483
+      },
+      "context_count": 12
+    },
+    "management": {
+      "polysemy_index": 0.10773615363956657,
+      "metrics": {
+        "polysemy_index": 0.10773615363956657,
+        "variance": 0.05168129876255989,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.44285714285714284
+      },
+      "context_count": 10
+    },
+    "uncertainty": {
+      "polysemy_index": 0.13504448374802336,
+      "metrics": {
+        "polysemy_index": 0.13504448374802336,
+        "variance": 0.05161605030298233,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.8448275862068966
+      },
+      "context_count": 16
+    },
+    "biotechnology": {
+      "polysemy_index": 0.10232376413946909,
+      "metrics": {
+        "polysemy_index": 0.10232376413946909,
+        "variance": 0.050781089812517166,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.45588235294117646
+      },
+      "context_count": 18
+    },
+    "inequality": {
+      "polysemy_index": 0.10454168735852687,
+      "metrics": {
+        "polysemy_index": 0.10454168735852687,
+        "variance": 0.045381978154182434,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.9489795918367347
+      },
+      "context_count": 13
+    },
+    "proteomics": {
+      "polysemy_index": 0.1523012280162913,
+      "metrics": {
+        "polysemy_index": 0.1523012280162913,
+        "variance": 0.05190233141183853,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.95
+      },
+      "context_count": 13
+    },
+    "cosmology": {
+      "polysemy_index": 0.209860340786288,
+      "metrics": {
+        "polysemy_index": 0.209860340786288,
+        "variance": 0.042699724435806274,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.9120879120879121
+      },
+      "context_count": 13
+    },
+    "insurance": {
+      "polysemy_index": 0.08414606420831616,
+      "metrics": {
+        "polysemy_index": 0.08414606420831616,
+        "variance": 0.0503057986497879,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.5701754385964912
+      },
+      "context_count": 19
+    },
+    "metagenomics": {
+      "polysemy_index": 0.08443843398599571,
+      "metrics": {
+        "polysemy_index": 0.08443843398599571,
+        "variance": 0.04997321218252182,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.08108108108108109
+      },
+      "context_count": 12
+    },
+    "combinatorics": {
+      "polysemy_index": 0.09608724226829124,
+      "metrics": {
+        "polysemy_index": 0.09608724226829124,
+        "variance": 0.0513189472258091,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.21052631578947367
+      },
+      "context_count": 12
+    },
+    "sustainability": {
+      "polysemy_index": 0.07359830459828931,
+      "metrics": {
+        "polysemy_index": 0.07359830459828931,
+        "variance": 0.052183981984853745,
+        "peak_count_estimate": 15,
+        "best_peak_position": 0.717948717948718
+      },
+      "context_count": 13
+    },
+    "geography": {
+      "polysemy_index": 0.16017845847552492,
+      "metrics": {
+        "polysemy_index": 0.16017845847552492,
+        "variance": 0.048641059547662735,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.4482758620689655
+      },
+      "context_count": 22
+    },
+    "curriculum": {
+      "polysemy_index": 0.11200604422831806,
+      "metrics": {
+        "polysemy_index": 0.11200604422831806,
+        "variance": 0.054022934287786484,
+        "peak_count_estimate": 15,
+        "best_peak_position": 0.34285714285714286
+      },
+      "context_count": 15
+    },
+    "economics": {
+      "polysemy_index": 0.16267509601713603,
+      "metrics": {
+        "polysemy_index": 0.16267509601713603,
+        "variance": 0.04096214845776558,
+        "peak_count_estimate": 17,
+        "best_peak_position": 0.34
+      },
+      "context_count": 15
+    },
+    "accounting": {
+      "polysemy_index": 0.09157559555699224,
+      "metrics": {
+        "polysemy_index": 0.09157559555699224,
+        "variance": 0.0511321984231472,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.31496062992125984
+      },
+      "context_count": 22
+    },
+    "infertility": {
+      "polysemy_index": 0.11404401038716094,
+      "metrics": {
+        "polysemy_index": 0.11404401038716094,
+        "variance": 0.050292134284973145,
+        "peak_count_estimate": 10,
+        "best_peak_position": 0.44554455445544555
+      },
+      "context_count": 15
+    },
+    "optimization": {
+      "polysemy_index": 0.1241953907699459,
+      "metrics": {
+        "polysemy_index": 0.1241953907699459,
+        "variance": 0.06122395396232605,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.8163265306122449
+      },
+      "context_count": 12
+    },
+    "genetics": {
+      "polysemy_index": 0.3180035315218138,
+      "metrics": {
+        "polysemy_index": 0.3180035315218138,
+        "variance": 0.054864466190338135,
+        "peak_count_estimate": 3,
+        "best_peak_position": 0.825
+      },
+      "context_count": 11
+    },
+    "bioinformatics": {
+      "polysemy_index": 0.19336042659409935,
+      "metrics": {
+        "polysemy_index": 0.19336042659409935,
+        "variance": 0.051590945571660995,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.9550561797752809
+      },
+      "context_count": 10
+    },
+    "thermodynamics": {
+      "polysemy_index": 0.07654786144715597,
+      "metrics": {
+        "polysemy_index": 0.07654786144715597,
+        "variance": 0.051948174834251404,
+        "peak_count_estimate": 15,
+        "best_peak_position": 0.4921875
+      },
+      "context_count": 18
+    },
+    "simulation": {
+      "polysemy_index": 0.09125505754741237,
+      "metrics": {
+        "polysemy_index": 0.09125505754741237,
+        "variance": 0.05178684741258621,
+        "peak_count_estimate": 19,
+        "best_peak_position": 0.75625
+      },
+      "context_count": 26
+    },
+    "anatomy": {
+      "polysemy_index": 0.2456398591320883,
+      "metrics": {
+        "polysemy_index": 0.2456398591320883,
+        "variance": 0.04613489285111427,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.7887323943661971
+      },
+      "context_count": 13
+    },
+    "nursing": {
+      "polysemy_index": 0.08963616370250582,
+      "metrics": {
+        "polysemy_index": 0.08963616370250582,
+        "variance": 0.047824226319789886,
+        "peak_count_estimate": 15,
+        "best_peak_position": 0.4438202247191011
+      },
+      "context_count": 26
+    },
+    "logistics": {
+      "polysemy_index": 0.13508227477828572,
+      "metrics": {
+        "polysemy_index": 0.13508227477828572,
+        "variance": 0.04475971683859825,
+        "peak_count_estimate": 7,
+        "best_peak_position": 0.3707865168539326
+      },
+      "context_count": 10
+    },
+    "law": {
+      "polysemy_index": 0.1247016564096819,
+      "metrics": {
+        "polysemy_index": 0.1247016564096819,
+        "variance": 0.04323989525437355,
+        "peak_count_estimate": 15,
+        "best_peak_position": 0.055944055944055944
+      },
+      "context_count": 14
+    },
+    "anthropology": {
+      "polysemy_index": 0.06459883155282209,
+      "metrics": {
+        "polysemy_index": 0.06459883155282209,
+        "variance": 0.04677498713135719,
+        "peak_count_estimate": 16,
+        "best_peak_position": 0.03816793893129771
+      },
+      "context_count": 22
+    },
+    "mechanics": {
+      "polysemy_index": 0.22760178300049838,
+      "metrics": {
+        "polysemy_index": 0.22760178300049838,
+        "variance": 0.05320071056485176,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.7916666666666666
+      },
+      "context_count": 12
+    },
+    "sociolinguistics": {
+      "polysemy_index": 0.1340782200584274,
+      "metrics": {
+        "polysemy_index": 0.1340782200584274,
+        "variance": 0.05049429461359978,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.7058823529411765
+      },
+      "context_count": 11
+    },
+    "governance": {
+      "polysemy_index": 0.14048502323130807,
+      "metrics": {
+        "polysemy_index": 0.14048502323130807,
+        "variance": 0.049027085304260254,
+        "peak_count_estimate": 7,
+        "best_peak_position": 0.625
+      },
+      "context_count": 10
+    },
+    "spectroscopy": {
+      "polysemy_index": 0.18711403493674628,
+      "metrics": {
+        "polysemy_index": 0.18711403493674628,
+        "variance": 0.04933799058198929,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.7926829268292683
+      },
+      "context_count": 10
+    },
+    "evolution": {
+      "polysemy_index": 0.06878199949633268,
+      "metrics": {
+        "polysemy_index": 0.06878199949633268,
+        "variance": 0.0538506805896759,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.6417910447761194
+      },
+      "context_count": 24
+    },
+    "cancer": {
+      "polysemy_index": 0.14932626752585443,
+      "metrics": {
+        "polysemy_index": 0.14932626752585443,
+        "variance": 0.051653411239385605,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.45977011494252873
+      },
+      "context_count": 12
+    },
+    "epidemiology": {
+      "polysemy_index": 0.22829932513238738,
+      "metrics": {
+        "polysemy_index": 0.22829932513238738,
+        "variance": 0.05468662828207016,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.6704545454545454
+      },
+      "context_count": 11
+    },
+    "criminology": {
+      "polysemy_index": 0.10467130324164498,
+      "metrics": {
+        "polysemy_index": 0.10467130324164498,
+        "variance": 0.04829103872179985,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.6352941176470588
+      },
+      "context_count": 11
+    },
+    "probability": {
+      "polysemy_index": 0.1838246460469447,
+      "metrics": {
+        "polysemy_index": 0.1838246460469447,
+        "variance": 0.05180096998810768,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.18421052631578946
+      },
+      "context_count": 19
+    },
+    "mitigation": {
+      "polysemy_index": 0.20573814981656946,
+      "metrics": {
+        "polysemy_index": 0.20573814981656946,
+        "variance": 0.053212571889162064,
+        "peak_count_estimate": 4,
+        "best_peak_position": 0.7974683544303798
+      },
+      "context_count": 10
+    },
+    "physiology": {
+      "polysemy_index": 0.03566327261037994,
+      "metrics": {
+        "polysemy_index": 0.03566327261037994,
+        "variance": 0.05009324103593826,
+        "peak_count_estimate": 10,
+        "best_peak_position": 0.1625
+      },
+      "context_count": 14
+    },
+    "ecology": {
+      "polysemy_index": 0.24215209160345874,
+      "metrics": {
+        "polysemy_index": 0.24215209160345874,
+        "variance": 0.04899868369102478,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.03278688524590164
+      },
+      "context_count": 13
+    },
+    "population": {
+      "polysemy_index": 0.06852053525326884,
+      "metrics": {
+        "polysemy_index": 0.06852053525326884,
+        "variance": 0.04724295809864998,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.2894736842105263
+      },
+      "context_count": 11
+    },
+    "automation": {
+      "polysemy_index": 0.1748758388022038,
+      "metrics": {
+        "polysemy_index": 0.1748758388022038,
+        "variance": 0.04943123832345009,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.8308823529411765
+      },
+      "context_count": 20
+    },
+    "ultrasound": {
+      "polysemy_index": 0.11185008944029118,
+      "metrics": {
+        "polysemy_index": 0.11185008944029118,
+        "variance": 0.04773131012916565,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.3137254901960784
+      },
+      "context_count": 22
+    },
+    "leadership": {
+      "polysemy_index": 0.10908173208420224,
+      "metrics": {
+        "polysemy_index": 0.10908173208420224,
+        "variance": 0.04632359743118286,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.23076923076923078
+      },
+      "context_count": 11
+    },
+    "poverty": {
+      "polysemy_index": 0.09050367074210652,
+      "metrics": {
+        "polysemy_index": 0.09050367074210652,
+        "variance": 0.04390522465109825,
+        "peak_count_estimate": 16,
+        "best_peak_position": 0.40268456375838924
+      },
+      "context_count": 20
+    },
+    "religion": {
+      "polysemy_index": 0.14173510077338236,
+      "metrics": {
+        "polysemy_index": 0.14173510077338236,
+        "variance": 0.04164500907063484,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.631578947368421
+      },
+      "context_count": 18
+    },
+    "oceanography": {
+      "polysemy_index": 0.20276027138270614,
+      "metrics": {
+        "polysemy_index": 0.20276027138270614,
+        "variance": 0.05532432720065117,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.9358974358974359
+      },
+      "context_count": 15
+    },
+    "psychology": {
+      "polysemy_index": 0.18936828158146735,
+      "metrics": {
+        "polysemy_index": 0.18936828158146735,
+        "variance": 0.04798063263297081,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.5714285714285714
+      },
+      "context_count": 10
+    },
+    "astronomy": {
+      "polysemy_index": 0.20085105877797582,
+      "metrics": {
+        "polysemy_index": 0.20085105877797582,
+        "variance": 0.0588088184595108,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.875
+      },
+      "context_count": 10
+    },
+    "composition": {
+      "polysemy_index": 0.051262394094112596,
+      "metrics": {
+        "polysemy_index": 0.051262394094112596,
+        "variance": 0.05284867063164711,
+        "peak_count_estimate": 16,
+        "best_peak_position": 0.3769230769230769
+      },
+      "context_count": 15
+    },
+    "globalization": {
+      "polysemy_index": 0.15036659226548876,
+      "metrics": {
+        "polysemy_index": 0.15036659226548876,
+        "variance": 0.05467540770769119,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.009523809523809525
+      },
+      "context_count": 13
+    },
+    "arts": {
+      "polysemy_index": 0.13713532679857698,
+      "metrics": {
+        "polysemy_index": 0.13713532679857698,
+        "variance": 0.04561040550470352,
+        "peak_count_estimate": 7,
+        "best_peak_position": 0.5775862068965517
+      },
+      "context_count": 20
+    },
+    "reproduction": {
+      "polysemy_index": 0.19855769069358586,
+      "metrics": {
+        "polysemy_index": 0.19855769069358586,
+        "variance": 0.050750672817230225,
+        "peak_count_estimate": 10,
+        "best_peak_position": 0.889763779527559
+      },
+      "context_count": 26
+    },
+    "inference": {
+      "polysemy_index": 0.2734985679756493,
+      "metrics": {
+        "polysemy_index": 0.2734985679756493,
+        "variance": 0.04844844341278076,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.5533980582524272
+      },
+      "context_count": 13
+    },
+    "cybersecurity": {
+      "polysemy_index": 0.27085386250203436,
+      "metrics": {
+        "polysemy_index": 0.27085386250203436,
+        "variance": 0.05376216769218445,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.7051282051282052
+      },
+      "context_count": 12
+    },
+    "chemistry": {
+      "polysemy_index": 0.2634608137218646,
+      "metrics": {
+        "polysemy_index": 0.2634608137218646,
+        "variance": 0.0540536493062973,
+        "peak_count_estimate": 3,
+        "best_peak_position": 0.7297297297297297
+      },
+      "context_count": 10
+    },
+    "identity": {
+      "polysemy_index": 0.1569926783084229,
+      "metrics": {
+        "polysemy_index": 0.1569926783084229,
+        "variance": 0.05486464872956276,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.42857142857142855
+      },
+      "context_count": 16
+    },
+    "sleep": {
+      "polysemy_index": 0.19353281302038094,
+      "metrics": {
+        "polysemy_index": 0.19353281302038094,
+        "variance": 0.04689105600118637,
+        "peak_count_estimate": 6,
+        "best_peak_position": 0.38461538461538464
+      },
+      "context_count": 17
+    },
+    "depression": {
+      "polysemy_index": 0.17212758666788952,
+      "metrics": {
+        "polysemy_index": 0.17212758666788952,
+        "variance": 0.04617776721715927,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.2835820895522388
+      },
+      "context_count": 11
+    },
+    "rehabilitation": {
+      "polysemy_index": 0.15371527350353575,
+      "metrics": {
+        "polysemy_index": 0.15371527350353575,
+        "variance": 0.047820575535297394,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.1623931623931624
+      },
+      "context_count": 13
+    },
+    "anxiety": {
+      "polysemy_index": 0.05499474914093727,
+      "metrics": {
+        "polysemy_index": 0.05499474914093727,
+        "variance": 0.056248988956213,
+        "peak_count_estimate": 14,
+        "best_peak_position": 0.6086956521739131
+      },
+      "context_count": 20
+    },
+    "resilience": {
+      "polysemy_index": 0.15064014479604126,
+      "metrics": {
+        "polysemy_index": 0.15064014479604126,
+        "variance": 0.049812961369752884,
+        "peak_count_estimate": 13,
+        "best_peak_position": 0.6981132075471698
+      },
+      "context_count": 16
+    },
+    "scheduling": {
+      "polysemy_index": 0.08347238021600245,
+      "metrics": {
+        "polysemy_index": 0.08347238021600245,
+        "variance": 0.05091825872659683,
+        "peak_count_estimate": 10,
+        "best_peak_position": 0.3472222222222222
+      },
+      "context_count": 10
+    },
+    "negotiation": {
+      "polysemy_index": 0.13381833887841665,
+      "metrics": {
+        "polysemy_index": 0.13381833887841665,
+        "variance": 0.05238967388868332,
+        "peak_count_estimate": 7,
+        "best_peak_position": 0.45121951219512196
+      },
+      "context_count": 14
+    },
+    "stigma": {
+      "polysemy_index": 0.08830635662421482,
+      "metrics": {
+        "polysemy_index": 0.08830635662421482,
+        "variance": 0.04763949289917946,
+        "peak_count_estimate": 19,
+        "best_peak_position": 0.4489795918367347
+      },
+      "context_count": 19
+    },
+    "biomechanics": {
+      "polysemy_index": 0.09940890606115738,
+      "metrics": {
+        "polysemy_index": 0.09940890606115738,
+        "variance": 0.0594852976500988,
+        "peak_count_estimate": 13,
+        "best_peak_position": 0.36363636363636365
+      },
+      "context_count": 13
+    },
+    "trauma": {
+      "polysemy_index": 0.07749393290784967,
+      "metrics": {
+        "polysemy_index": 0.07749393290784967,
+        "variance": 0.05123000591993332,
+        "peak_count_estimate": 13,
+        "best_peak_position": 0.9171974522292994
+      },
+      "context_count": 20
+    },
+    "advocacy": {
+      "polysemy_index": 0.11679933938653098,
+      "metrics": {
+        "polysemy_index": 0.11679933938653098,
+        "variance": 0.059001266956329346,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.8048780487804879
+      },
+      "context_count": 10
+    },
+    "morphology": {
+      "polysemy_index": 0.13025923415535012,
+      "metrics": {
+        "polysemy_index": 0.13025923415535012,
+        "variance": 0.05590422824025154,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.5512820512820513
+      },
+      "context_count": 14
+    },
+    "aphasia": {
+      "polysemy_index": 0.0719537943355878,
+      "metrics": {
+        "polysemy_index": 0.0719537943355878,
+        "variance": 0.05148899927735329,
+        "peak_count_estimate": 10,
+        "best_peak_position": 0.6447368421052632
+      },
+      "context_count": 12
+    },
+    "disability": {
+      "polysemy_index": 0.06199219380457044,
+      "metrics": {
+        "polysemy_index": 0.06199219380457044,
+        "variance": 0.05066601559519768,
+        "peak_count_estimate": 10,
+        "best_peak_position": 0.3111111111111111
+      },
+      "context_count": 11
+    },
+    "fairness": {
+      "polysemy_index": 0.09984578496084706,
+      "metrics": {
+        "polysemy_index": 0.09984578496084706,
+        "variance": 0.05031902715563774,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.23232323232323232
+      },
+      "context_count": 12
+    },
+    "marketing": {
+      "polysemy_index": 0.18029276059750343,
+      "metrics": {
+        "polysemy_index": 0.18029276059750343,
+        "variance": 0.0500246100127697,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.4473684210526316
+      },
+      "context_count": 12
+    },
+    "literacy": {
+      "polysemy_index": 0.1639404607813254,
+      "metrics": {
+        "polysemy_index": 0.1639404607813254,
+        "variance": 0.05591829493641853,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.20652173913043478
+      },
+      "context_count": 11
+    },
+    "diabetes": {
+      "polysemy_index": 0.15431142408578957,
+      "metrics": {
+        "polysemy_index": 0.15431142408578957,
+        "variance": 0.04851705580949783,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.958904109589041
+      },
+      "context_count": 13
+    },
+    "metabolism": {
+      "polysemy_index": 0.18206417785919882,
+      "metrics": {
+        "polysemy_index": 0.18206417785919882,
+        "variance": 0.05171413719654083,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.5189873417721519
+      },
+      "context_count": 11
+    },
+    "dementia": {
+      "polysemy_index": 0.1788026061468616,
+      "metrics": {
+        "polysemy_index": 0.1788026061468616,
+        "variance": 0.05475960671901703,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.4666666666666667
+      },
+      "context_count": 14
+    },
+    "fertility": {
+      "polysemy_index": 0.09115953842849878,
+      "metrics": {
+        "polysemy_index": 0.09115953842849878,
+        "variance": 0.05351998284459114,
+        "peak_count_estimate": 12,
+        "best_peak_position": 0.375
+      },
+      "context_count": 14
+    },
+    "erosion": {
+      "polysemy_index": 0.10950911885279668,
+      "metrics": {
+        "polysemy_index": 0.10950911885279668,
+        "variance": 0.050609856843948364,
+        "peak_count_estimate": 16,
+        "best_peak_position": 0.7661290322580645
+      },
+      "context_count": 18
+    },
+    "geology": {
+      "polysemy_index": 0.12859340996328994,
+      "metrics": {
+        "polysemy_index": 0.12859340996328994,
+        "variance": 0.05536086484789848,
+        "peak_count_estimate": 9,
+        "best_peak_position": 0.9253731343283582
+      },
+      "context_count": 11
+    },
+    "biomass": {
+      "polysemy_index": 0.2830914797921371,
+      "metrics": {
+        "polysemy_index": 0.2830914797921371,
+        "variance": 0.053033508360385895,
+        "peak_count_estimate": 5,
+        "best_peak_position": 0.8787878787878788
+      },
+      "context_count": 16
+    },
+    "equality": {
+      "polysemy_index": 0.1454313349030797,
+      "metrics": {
+        "polysemy_index": 0.1454313349030797,
+        "variance": 0.04966823384165764,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.8387096774193549
+      },
+      "context_count": 20
+    },
+    "multiculturalism": {
+      "polysemy_index": 0.06140936791657481,
+      "metrics": {
+        "polysemy_index": 0.06140936791657481,
+        "variance": 0.04960772022604942,
+        "peak_count_estimate": 18,
+        "best_peak_position": 0.7555555555555555
+      },
+      "context_count": 17
+    },
+    "microbiology": {
+      "polysemy_index": 0.11353845808458674,
+      "metrics": {
+        "polysemy_index": 0.11353845808458674,
+        "variance": 0.0549069307744503,
+        "peak_count_estimate": 11,
+        "best_peak_position": 0.23863636363636365
+      },
+      "context_count": 10
+    },
+    "biodiversity": {
+      "polysemy_index": 0.11427681374843268,
+      "metrics": {
+        "polysemy_index": 0.11427681374843268,
+        "variance": 0.05511867627501488,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.7157894736842105
+      },
+      "context_count": 16
+    },
+    "valuation": {
+      "polysemy_index": 0.09131737435492138,
+      "metrics": {
+        "polysemy_index": 0.09131737435492138,
+        "variance": 0.047663185745477676,
+        "peak_count_estimate": 8,
+        "best_peak_position": 0.7910447761194029
+      },
+      "context_count": 13
+    }
+  }
+}

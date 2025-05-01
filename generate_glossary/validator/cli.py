@@ -185,6 +185,7 @@ def main() -> None:
     parser.add_argument(
         "--update-web-content",
         action="store_true",
+        default=True,
         help="Update the input web content file in-place with relevance scores (only for web mode)"
     )
     

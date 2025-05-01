@@ -207,3 +207,19 @@ For detailed documentation on specific components:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Tavily Search Integration
+
+The web content mining tool now supports using Tavily as an alternative search provider. To use this functionality:
+
+1. Install the required dependency: `pip install tavily-python>=0.1.4`
+2. Get a Tavily API key from [Tavily's website](https://tavily.com)
+3. Set the API key as an environment variable: `export TAVILY_API_KEY=tvly-YOUR_API_KEY` or add it to your `.env` file
+
+To use Tavily for mining content:
+
+```bash
+python -m generate_glossary.web_miner_cli -i input_terms.txt -o output_file --search-provider tavily
+```
+
+See the detailed documentation in `generate_glossary/utils/README_TAVILY.md` for more information.

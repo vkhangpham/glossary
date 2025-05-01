@@ -1,214 +1,4 @@
 {
-  "african american studies": {
-    "term": "African American studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "african american studies",
-      "length": 24,
-      "has_letters": true
-    }
-  },
-  "africana studies": {
-    "term": "Africana studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "africana studies",
-      "length": 16,
-      "has_letters": true
-    }
-  },
-  "asian american studies": {
-    "term": "Asian American studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "asian american studies",
-      "length": 22,
-      "has_letters": true
-    }
-  },
-  "asian languages": {
-    "term": "Asian languages",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "asian languages",
-      "length": 15,
-      "has_letters": true
-    }
-  },
-  "asian law": {
-    "term": "Asian law",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "asian law",
-      "length": 9,
-      "has_letters": true
-    }
-  },
-  "asian studies": {
-    "term": "Asian studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "asian studies",
-      "length": 13,
-      "has_letters": true
-    }
-  },
-  "black studies": {
-    "term": "Black studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "black studies",
-      "length": 13,
-      "has_letters": true
-    }
-  },
-  "chicana studies": {
-    "term": "Chicana studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "chicana studies",
-      "length": 15,
-      "has_letters": true
-    }
-  },
-  "chicano studies": {
-    "term": "Chicano studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "chicano studies",
-      "length": 15,
-      "has_letters": true
-    }
-  },
-  "german studies": {
-    "term": "German studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "german studies",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "italian studies": {
-    "term": "Italian studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "italian studies",
-      "length": 15,
-      "has_letters": true
-    }
-  },
-  "japanese": {
-    "term": "Japanese",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "japanese",
-      "length": 8,
-      "has_letters": true
-    }
-  },
-  "judaic studies": {
-    "term": "Judaic studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "judaic studies",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "k-12 education": {
-    "term": "K-12 education",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "k-12 education",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "latin": {
-    "term": "Latin",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "latin",
-      "length": 5,
-      "has_letters": true
-    }
-  },
-  "latino studies": {
-    "term": "Latino studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "latino studies",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "slavic languages": {
-    "term": "Slavic languages",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "slavic languages",
-      "length": 16,
-      "has_letters": true
-    }
-  },
-  "slavic studies": {
-    "term": "Slavic studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "slavic studies",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "spanish studies": {
-    "term": "Spanish studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "spanish studies",
-      "length": 15,
-      "has_letters": true
-    }
-  },
-  "tesol": {
-    "term": "TESOL",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "tesol",
-      "length": 5,
-      "has_letters": true
-    }
-  },
-  "accelerated nursing programs": {
-    "term": "accelerated nursing programs",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "accelerated nursing programs",
-      "length": 28,
-      "has_letters": true
-    }
-  },
   "accountancy": {
     "term": "accountancy",
     "is_valid": true,
@@ -229,23 +19,23 @@
       "has_letters": true
     }
   },
-  "adult education": {
-    "term": "adult education",
+  "administrative law": {
+    "term": "administrative law",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "adult education",
-      "length": 15,
+      "cleaned_term": "administrative law",
+      "length": 18,
       "has_letters": true
     }
   },
-  "aeronautics": {
-    "term": "aeronautics",
+  "adolescent medicine": {
+    "term": "adolescent medicine",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "aeronautics",
-      "length": 11,
+      "cleaned_term": "adolescent medicine",
+      "length": 19,
       "has_letters": true
     }
   },
@@ -259,23 +49,73 @@
       "has_letters": true
     }
   },
-  "american studies": {
-    "term": "american studies",
+  "african american studies": {
+    "term": "african american studies",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "american studies",
+      "cleaned_term": "african american studies",
+      "length": 24,
+      "has_letters": true
+    }
+  },
+  "african studies": {
+    "term": "african studies",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "african studies",
+      "length": 15,
+      "has_letters": true
+    }
+  },
+  "agricultural education": {
+    "term": "agricultural education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "agricultural education",
+      "length": 22,
+      "has_letters": true
+    }
+  },
+  "allergy": {
+    "term": "allergy",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "allergy",
+      "length": 7,
+      "has_letters": true
+    }
+  },
+  "allergy medicine": {
+    "term": "allergy medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "allergy medicine",
       "length": 16,
       "has_letters": true
     }
   },
-  "analytics": {
-    "term": "analytics",
+  "allied health professions": {
+    "term": "allied health professions",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "analytics",
-      "length": 9,
+      "cleaned_term": "allied health professions",
+      "length": 25,
+      "has_letters": true
+    }
+  },
+  "american sign language": {
+    "term": "american sign language",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "american sign language",
+      "length": 22,
       "has_letters": true
     }
   },
@@ -289,23 +129,53 @@
       "has_letters": true
     }
   },
-  "anthropology": {
-    "term": "anthropology",
+  "anesthesia": {
+    "term": "anesthesia",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "anthropology",
-      "length": 12,
+      "cleaned_term": "anesthesia",
+      "length": 10,
       "has_letters": true
     }
   },
-  "applied linguistics": {
-    "term": "applied linguistics",
+  "antitrust": {
+    "term": "antitrust",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "applied linguistics",
-      "length": 19,
+      "cleaned_term": "antitrust",
+      "length": 9,
+      "has_letters": true
+    }
+  },
+  "applied physics": {
+    "term": "applied physics",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "applied physics",
+      "length": 15,
+      "has_letters": true
+    }
+  },
+  "applied physiology": {
+    "term": "applied physiology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "applied physiology",
+      "length": 18,
+      "has_letters": true
+    }
+  },
+  "arabic": {
+    "term": "arabic",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "arabic",
+      "length": 6,
       "has_letters": true
     }
   },
@@ -319,26 +189,6 @@
       "has_letters": true
     }
   },
-  "art": {
-    "term": "art",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "art",
-      "length": 3,
-      "has_letters": true
-    }
-  },
-  "art education": {
-    "term": "art education",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "art education",
-      "length": 13,
-      "has_letters": true
-    }
-  },
   "art history": {
     "term": "art history",
     "is_valid": true,
@@ -349,42 +199,22 @@
       "has_letters": true
     }
   },
-  "art theory": {
-    "term": "art theory",
+  "arts management": {
+    "term": "arts management",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "art theory",
-      "length": 10,
+      "cleaned_term": "arts management",
+      "length": 15,
       "has_letters": true
     }
   },
-  "astronomy": {
-    "term": "astronomy",
+  "athletic training": {
+    "term": "athletic training",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "astronomy",
-      "length": 9,
-      "has_letters": true
-    }
-  },
-  "audiology": {
-    "term": "audiology",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "audiology",
-      "length": 9,
-      "has_letters": true
-    }
-  },
-  "behavior analysis": {
-    "term": "behavior analysis",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "behavior analysis",
+      "cleaned_term": "athletic training",
       "length": 17,
       "has_letters": true
     }
@@ -396,6 +226,16 @@
     "details": {
       "cleaned_term": "behavioral health",
       "length": 17,
+      "has_letters": true
+    }
+  },
+  "behavioral sciences": {
+    "term": "behavioral sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "behavioral sciences",
+      "length": 19,
       "has_letters": true
     }
   },
@@ -419,26 +259,6 @@
       "has_letters": true
     }
   },
-  "biological science": {
-    "term": "biological science",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "biological science",
-      "length": 18,
-      "has_letters": true
-    }
-  },
-  "biology": {
-    "term": "biology",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "biology",
-      "length": 7,
-      "has_letters": true
-    }
-  },
   "biomedical engineering": {
     "term": "biomedical engineering",
     "is_valid": true,
@@ -449,13 +269,13 @@
       "has_letters": true
     }
   },
-  "biomedical sciences": {
-    "term": "biomedical sciences",
+  "biomolecular engineering": {
+    "term": "biomolecular engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "biomedical sciences",
-      "length": 19,
+      "cleaned_term": "biomolecular engineering",
+      "length": 24,
       "has_letters": true
     }
   },
@@ -469,13 +289,33 @@
       "has_letters": true
     }
   },
-  "buddhist studies": {
-    "term": "buddhist studies",
+  "biosystems engineering": {
+    "term": "biosystems engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "buddhist studies",
-      "length": 16,
+      "cleaned_term": "biosystems engineering",
+      "length": 22,
+      "has_letters": true
+    }
+  },
+  "blood transplantation": {
+    "term": "blood transplantation",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "blood transplantation",
+      "length": 21,
+      "has_letters": true
+    }
+  },
+  "brain sciences": {
+    "term": "brain sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "brain sciences",
+      "length": 14,
       "has_letters": true
     }
   },
@@ -499,6 +339,16 @@
       "has_letters": true
     }
   },
+  "business economics": {
+    "term": "business economics",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "business economics",
+      "length": 18,
+      "has_letters": true
+    }
+  },
   "business information systems": {
     "term": "business information systems",
     "is_valid": true,
@@ -506,16 +356,6 @@
     "details": {
       "cleaned_term": "business information systems",
       "length": 28,
-      "has_letters": true
-    }
-  },
-  "business intelligence": {
-    "term": "business intelligence",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "business intelligence",
-      "length": 21,
       "has_letters": true
     }
   },
@@ -529,22 +369,22 @@
       "has_letters": true
     }
   },
-  "business management": {
-    "term": "business management",
+  "cardiothoracic surgery": {
+    "term": "cardiothoracic surgery",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "business management",
-      "length": 19,
+      "cleaned_term": "cardiothoracic surgery",
+      "length": 22,
       "has_letters": true
     }
   },
-  "business studies": {
-    "term": "business studies",
+  "career education": {
+    "term": "career education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "business studies",
+      "cleaned_term": "career education",
       "length": 16,
       "has_letters": true
     }
@@ -559,13 +399,13 @@
       "has_letters": true
     }
   },
-  "cellular biology": {
-    "term": "cellular biology",
+  "cell systems": {
+    "term": "cell systems",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "cellular biology",
-      "length": 16,
+      "cleaned_term": "cell systems",
+      "length": 12,
       "has_letters": true
     }
   },
@@ -579,6 +419,26 @@
       "has_letters": true
     }
   },
+  "cellular therapies": {
+    "term": "cellular therapies",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "cellular therapies",
+      "length": 18,
+      "has_letters": true
+    }
+  },
+  "chemical biology": {
+    "term": "chemical biology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "chemical biology",
+      "length": 16,
+      "has_letters": true
+    }
+  },
   "chemical engineering": {
     "term": "chemical engineering",
     "is_valid": true,
@@ -586,16 +446,6 @@
     "details": {
       "cleaned_term": "chemical engineering",
       "length": 20,
-      "has_letters": true
-    }
-  },
-  "chemistry": {
-    "term": "chemistry",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "chemistry",
-      "length": 9,
       "has_letters": true
     }
   },
@@ -609,16 +459,6 @@
       "has_letters": true
     }
   },
-  "cinema studies": {
-    "term": "cinema studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "cinema studies",
-      "length": 14,
-      "has_letters": true
-    }
-  },
   "civil engineering": {
     "term": "civil engineering",
     "is_valid": true,
@@ -626,6 +466,26 @@
     "details": {
       "cleaned_term": "civil engineering",
       "length": 17,
+      "has_letters": true
+    }
+  },
+  "civil rights": {
+    "term": "civil rights",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "civil rights",
+      "length": 12,
+      "has_letters": true
+    }
+  },
+  "classical hematology": {
+    "term": "classical hematology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "classical hematology",
+      "length": 20,
       "has_letters": true
     }
   },
@@ -639,6 +499,46 @@
       "has_letters": true
     }
   },
+  "climate sciences": {
+    "term": "climate sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "climate sciences",
+      "length": 16,
+      "has_letters": true
+    }
+  },
+  "clinical immunology": {
+    "term": "clinical immunology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "clinical immunology",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "clinical laboratory technologies": {
+    "term": "clinical laboratory technologies",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "clinical laboratory technologies",
+      "length": 32,
+      "has_letters": true
+    }
+  },
+  "clinical legal education": {
+    "term": "clinical legal education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "clinical legal education",
+      "length": 24,
+      "has_letters": true
+    }
+  },
   "clinical nutrition": {
     "term": "clinical nutrition",
     "is_valid": true,
@@ -646,6 +546,26 @@
     "details": {
       "cleaned_term": "clinical nutrition",
       "length": 18,
+      "has_letters": true
+    }
+  },
+  "clinical sciences": {
+    "term": "clinical sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "clinical sciences",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "cognitive science": {
+    "term": "cognitive science",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "cognitive science",
+      "length": 17,
       "has_letters": true
     }
   },
@@ -679,33 +599,33 @@
       "has_letters": true
     }
   },
-  "communication studies": {
-    "term": "communication studies",
+  "communicative disorders": {
+    "term": "communicative disorders",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "communication studies",
-      "length": 21,
+      "cleaned_term": "communicative disorders",
+      "length": 23,
       "has_letters": true
     }
   },
-  "community health": {
-    "term": "community health",
+  "communicative sciences": {
+    "term": "communicative sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "community health",
-      "length": 16,
+      "cleaned_term": "communicative sciences",
+      "length": 22,
       "has_letters": true
     }
   },
-  "community medicine": {
-    "term": "community medicine",
+  "community health sciences": {
+    "term": "community health sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "community medicine",
-      "length": 18,
+      "cleaned_term": "community health sciences",
+      "length": 25,
       "has_letters": true
     }
   },
@@ -749,13 +669,13 @@
       "has_letters": true
     }
   },
-  "conservation": {
-    "term": "conservation",
+  "constitutional law": {
+    "term": "constitutional law",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "conservation",
-      "length": 12,
+      "cleaned_term": "constitutional law",
+      "length": 18,
       "has_letters": true
     }
   },
@@ -769,13 +689,13 @@
       "has_letters": true
     }
   },
-  "construction management": {
-    "term": "construction management",
+  "corporate innovation": {
+    "term": "corporate innovation",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "construction management",
-      "length": 23,
+      "cleaned_term": "corporate innovation",
+      "length": 20,
       "has_letters": true
     }
   },
@@ -799,6 +719,16 @@
       "has_letters": true
     }
   },
+  "counselor education": {
+    "term": "counselor education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "counselor education",
+      "length": 19,
+      "has_letters": true
+    }
+  },
   "creative writing": {
     "term": "creative writing",
     "is_valid": true,
@@ -809,33 +739,43 @@
       "has_letters": true
     }
   },
-  "criminal justice": {
-    "term": "criminal justice",
+  "criminal law": {
+    "term": "criminal law",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "criminal justice",
-      "length": 16,
+      "cleaned_term": "criminal law",
+      "length": 12,
       "has_letters": true
     }
   },
-  "criminology": {
-    "term": "criminology",
+  "critical care medicine": {
+    "term": "critical care medicine",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "criminology",
-      "length": 11,
+      "cleaned_term": "critical care medicine",
+      "length": 22,
       "has_letters": true
     }
   },
-  "cultural studies": {
-    "term": "cultural studies",
+  "culture": {
+    "term": "culture",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "cultural studies",
-      "length": 16,
+      "cleaned_term": "culture",
+      "length": 7,
+      "has_letters": true
+    }
+  },
+  "curriculum": {
+    "term": "curriculum",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "curriculum",
+      "length": 10,
       "has_letters": true
     }
   },
@@ -849,16 +789,6 @@
       "has_letters": true
     }
   },
-  "data analysis": {
-    "term": "data analysis",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "data analysis",
-      "length": 13,
-      "has_letters": true
-    }
-  },
   "data science": {
     "term": "data science",
     "is_valid": true,
@@ -869,73 +799,33 @@
       "has_letters": true
     }
   },
-  "deaf studies": {
-    "term": "deaf studies",
+  "dental hygiene": {
+    "term": "dental hygiene",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "deaf studies",
-      "length": 12,
+      "cleaned_term": "dental hygiene",
+      "length": 14,
       "has_letters": true
     }
   },
-  "decision science": {
-    "term": "decision science",
+  "diabetes": {
+    "term": "diabetes",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "decision science",
-      "length": 16,
+      "cleaned_term": "diabetes",
+      "length": 8,
       "has_letters": true
     }
   },
-  "developmental biology": {
-    "term": "developmental biology",
+  "diagnostic sciences": {
+    "term": "diagnostic sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "developmental biology",
-      "length": 21,
-      "has_letters": true
-    }
-  },
-  "developmental psychology": {
-    "term": "developmental psychology",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "developmental psychology",
-      "length": 24,
-      "has_letters": true
-    }
-  },
-  "diaspora studies": {
-    "term": "diaspora studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "diaspora studies",
-      "length": 16,
-      "has_letters": true
-    }
-  },
-  "dietetics": {
-    "term": "dietetics",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "dietetics",
-      "length": 9,
-      "has_letters": true
-    }
-  },
-  "digital humanities": {
-    "term": "digital humanities",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "digital humanities",
-      "length": 18,
+      "cleaned_term": "diagnostic sciences",
+      "length": 19,
       "has_letters": true
     }
   },
@@ -949,23 +839,23 @@
       "has_letters": true
     }
   },
-  "earth science": {
-    "term": "earth science",
+  "east asian languages": {
+    "term": "east asian languages",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "earth science",
-      "length": 13,
+      "cleaned_term": "east asian languages",
+      "length": 20,
       "has_letters": true
     }
   },
-  "ecology": {
-    "term": "ecology",
+  "east asian literatures": {
+    "term": "east asian literatures",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "ecology",
-      "length": 7,
+      "cleaned_term": "east asian literatures",
+      "length": 22,
       "has_letters": true
     }
   },
@@ -979,33 +869,13 @@
       "has_letters": true
     }
   },
-  "education": {
-    "term": "education",
+  "education systems improvement science": {
+    "term": "education systems improvement science",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "education",
-      "length": 9,
-      "has_letters": true
-    }
-  },
-  "education policy": {
-    "term": "education policy",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "education policy",
-      "length": 16,
-      "has_letters": true
-    }
-  },
-  "educational administration": {
-    "term": "educational administration",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "educational administration",
-      "length": 26,
+      "cleaned_term": "education systems improvement science",
+      "length": 37,
       "has_letters": true
     }
   },
@@ -1019,13 +889,23 @@
       "has_letters": true
     }
   },
-  "educational policy": {
-    "term": "educational policy",
+  "educational measurement": {
+    "term": "educational measurement",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "educational policy",
-      "length": 18,
+      "cleaned_term": "educational measurement",
+      "length": 23,
+      "has_letters": true
+    }
+  },
+  "educational program development": {
+    "term": "educational program development",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "educational program development",
+      "length": 31,
       "has_letters": true
     }
   },
@@ -1039,23 +919,13 @@
       "has_letters": true
     }
   },
-  "educational technology": {
-    "term": "educational technology",
+  "educational studies": {
+    "term": "educational studies",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "educational technology",
-      "length": 22,
-      "has_letters": true
-    }
-  },
-  "election law": {
-    "term": "election law",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "election law",
-      "length": 12,
+      "cleaned_term": "educational studies",
+      "length": 19,
       "has_letters": true
     }
   },
@@ -1089,23 +959,53 @@
       "has_letters": true
     }
   },
-  "engineering": {
-    "term": "engineering",
+  "employment law": {
+    "term": "employment law",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "engineering",
-      "length": 11,
+      "cleaned_term": "employment law",
+      "length": 14,
       "has_letters": true
     }
   },
-  "engineering education": {
-    "term": "engineering education",
+  "endocrinology": {
+    "term": "endocrinology",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "engineering education",
-      "length": 21,
+      "cleaned_term": "endocrinology",
+      "length": 13,
+      "has_letters": true
+    }
+  },
+  "energy law": {
+    "term": "energy law",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "energy law",
+      "length": 10,
+      "has_letters": true
+    }
+  },
+  "engineering physics": {
+    "term": "engineering physics",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "engineering physics",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "engineering technology": {
+    "term": "engineering technology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "engineering technology",
+      "length": 22,
       "has_letters": true
     }
   },
@@ -1116,6 +1016,26 @@
     "details": {
       "cleaned_term": "english",
       "length": 7,
+      "has_letters": true
+    }
+  },
+  "english as a second language": {
+    "term": "english as a second language",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "english as second language",
+      "length": 26,
+      "has_letters": true
+    }
+  },
+  "english education": {
+    "term": "english education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "english education",
+      "length": 17,
       "has_letters": true
     }
   },
@@ -1139,6 +1059,16 @@
       "has_letters": true
     }
   },
+  "environmental health": {
+    "term": "environmental health",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "environmental health",
+      "length": 20,
+      "has_letters": true
+    }
+  },
   "environmental health sciences": {
     "term": "environmental health sciences",
     "is_valid": true,
@@ -1156,26 +1086,6 @@
     "details": {
       "cleaned_term": "environmental law",
       "length": 17,
-      "has_letters": true
-    }
-  },
-  "environmental science": {
-    "term": "environmental science",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "environmental science",
-      "length": 21,
-      "has_letters": true
-    }
-  },
-  "environmental studies": {
-    "term": "environmental studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "environmental studies",
-      "length": 21,
       "has_letters": true
     }
   },
@@ -1199,23 +1109,43 @@
       "has_letters": true
     }
   },
-  "event management": {
-    "term": "event management",
+  "exceptional education": {
+    "term": "exceptional education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "event management",
-      "length": 16,
+      "cleaned_term": "exceptional education",
+      "length": 21,
       "has_letters": true
     }
   },
-  "exercise science": {
-    "term": "exercise science",
+  "exceptional student education": {
+    "term": "exceptional student education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "exercise science",
-      "length": 16,
+      "cleaned_term": "exceptional student education",
+      "length": 29,
+      "has_letters": true
+    }
+  },
+  "exercise physiology": {
+    "term": "exercise physiology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "exercise physiology",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "family health": {
+    "term": "family health",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "family health",
+      "length": 13,
       "has_letters": true
     }
   },
@@ -1226,36 +1156,6 @@
     "details": {
       "cleaned_term": "family medicine",
       "length": 15,
-      "has_letters": true
-    }
-  },
-  "family nurse practitioner": {
-    "term": "family nurse practitioner",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "family nurse practitioner",
-      "length": 25,
-      "has_letters": true
-    }
-  },
-  "family science": {
-    "term": "family science",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "family science",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "family studies": {
-    "term": "family studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "family studies",
-      "length": 14,
       "has_letters": true
     }
   },
@@ -1279,53 +1179,63 @@
       "has_letters": true
     }
   },
-  "fine arts": {
-    "term": "fine arts",
+  "food sciences": {
+    "term": "food sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "fine arts",
-      "length": 9,
+      "cleaned_term": "food sciences",
+      "length": 13,
       "has_letters": true
     }
   },
-  "fluid mechanics": {
-    "term": "fluid mechanics",
+  "food systems": {
+    "term": "food systems",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "fluid mechanics",
-      "length": 15,
-      "has_letters": true
-    }
-  },
-  "food science": {
-    "term": "food science",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "food science",
+      "cleaned_term": "food systems",
       "length": 12,
       "has_letters": true
     }
   },
-  "francophone studies": {
-    "term": "francophone studies",
+  "foreign language education": {
+    "term": "foreign language education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "francophone studies",
-      "length": 19,
+      "cleaned_term": "foreign language education",
+      "length": 26,
       "has_letters": true
     }
   },
-  "french studies": {
-    "term": "french studies",
+  "foreign languages": {
+    "term": "foreign languages",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "french studies",
-      "length": 14,
+      "cleaned_term": "foreign languages",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "french": {
+    "term": "french",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "french",
+      "length": 6,
+      "has_letters": true
+    }
+  },
+  "gastroenterology": {
+    "term": "gastroenterology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "gastroenterology",
+      "length": 16,
       "has_letters": true
     }
   },
@@ -1339,13 +1249,63 @@
       "has_letters": true
     }
   },
-  "genetics": {
-    "term": "genetics",
+  "general academic pediatrics": {
+    "term": "general academic pediatrics",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "genetics",
-      "length": 8,
+      "cleaned_term": "general academic pediatrics",
+      "length": 27,
+      "has_letters": true
+    }
+  },
+  "general business": {
+    "term": "general business",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "general business",
+      "length": 16,
+      "has_letters": true
+    }
+  },
+  "general internal medicine": {
+    "term": "general internal medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "general internal medicine",
+      "length": 25,
+      "has_letters": true
+    }
+  },
+  "general surgery": {
+    "term": "general surgery",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "general surgery",
+      "length": 15,
+      "has_letters": true
+    }
+  },
+  "genetic medicine": {
+    "term": "genetic medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "genetic medicine",
+      "length": 16,
+      "has_letters": true
+    }
+  },
+  "genomic medicine": {
+    "term": "genomic medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "genomic medicine",
+      "length": 16,
       "has_letters": true
     }
   },
@@ -1359,43 +1319,43 @@
       "has_letters": true
     }
   },
-  "geological sciences": {
-    "term": "geological sciences",
+  "geological engineering": {
+    "term": "geological engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "geological sciences",
-      "length": 19,
+      "cleaned_term": "geological engineering",
+      "length": 22,
       "has_letters": true
     }
   },
-  "geology": {
-    "term": "geology",
+  "geriatric medicine": {
+    "term": "geriatric medicine",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "geology",
-      "length": 7,
-      "has_letters": true
-    }
-  },
-  "geospatial science": {
-    "term": "geospatial science",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "geospatial science",
+      "cleaned_term": "geriatric medicine",
       "length": 18,
       "has_letters": true
     }
   },
-  "geotechnical engineering": {
-    "term": "geotechnical engineering",
+  "geriatrics": {
+    "term": "geriatrics",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "geotechnical engineering",
-      "length": 24,
+      "cleaned_term": "geriatrics",
+      "length": 10,
+      "has_letters": true
+    }
+  },
+  "german": {
+    "term": "german",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "german",
+      "length": 6,
       "has_letters": true
     }
   },
@@ -1409,12 +1369,22 @@
       "has_letters": true
     }
   },
-  "global studies": {
-    "term": "global studies",
+  "global health": {
+    "term": "global health",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "global studies",
+      "cleaned_term": "global health",
+      "length": 13,
+      "has_letters": true
+    }
+  },
+  "graphic design": {
+    "term": "graphic design",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "graphic design",
       "length": 14,
       "has_letters": true
     }
@@ -1429,23 +1399,63 @@
       "has_letters": true
     }
   },
-  "health behavior science": {
-    "term": "health behavior science",
+  "head and neck surgery": {
+    "term": "head and neck surgery",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "health behavior science",
-      "length": 23,
+      "cleaned_term": "head neck surgery",
+      "length": 17,
       "has_letters": true
     }
   },
-  "health education": {
-    "term": "health education",
+  "health administration": {
+    "term": "health administration",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "health education",
-      "length": 16,
+      "cleaned_term": "health administration",
+      "length": 21,
+      "has_letters": true
+    }
+  },
+  "health behavior": {
+    "term": "health behavior",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "health behavior",
+      "length": 15,
+      "has_letters": true
+    }
+  },
+  "health informatics": {
+    "term": "health informatics",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "health informatics",
+      "length": 18,
+      "has_letters": true
+    }
+  },
+  "health information technology": {
+    "term": "health information technology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "health information technology",
+      "length": 29,
+      "has_letters": true
+    }
+  },
+  "health law": {
+    "term": "health law",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "health law",
+      "length": 10,
       "has_letters": true
     }
   },
@@ -1479,13 +1489,13 @@
       "has_letters": true
     }
   },
-  "health sciences": {
-    "term": "health sciences",
+  "health services management": {
+    "term": "health services management",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "health sciences",
-      "length": 15,
+      "cleaned_term": "health services management",
+      "length": 26,
       "has_letters": true
     }
   },
@@ -1499,73 +1509,93 @@
       "has_letters": true
     }
   },
-  "healthcare": {
-    "term": "healthcare",
+  "hearing sciences": {
+    "term": "hearing sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "healthcare",
-      "length": 10,
-      "has_letters": true
-    }
-  },
-  "hearing science": {
-    "term": "hearing science",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "hearing science",
-      "length": 15,
-      "has_letters": true
-    }
-  },
-  "hispanic studies": {
-    "term": "hispanic studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "hispanic studies",
+      "cleaned_term": "hearing sciences",
       "length": 16,
       "has_letters": true
     }
   },
-  "history": {
-    "term": "history",
+  "hepatology": {
+    "term": "hepatology",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "history",
-      "length": 7,
+      "cleaned_term": "hepatology",
+      "length": 10,
       "has_letters": true
     }
   },
-  "hospitality management": {
-    "term": "hospitality management",
+  "higher education": {
+    "term": "higher education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "hospitality management",
-      "length": 22,
+      "cleaned_term": "higher education",
+      "length": 16,
       "has_letters": true
     }
   },
-  "human development": {
-    "term": "human development",
+  "hospital medicine": {
+    "term": "hospital medicine",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "human development",
+      "cleaned_term": "hospital medicine",
       "length": 17,
       "has_letters": true
     }
   },
-  "human movement": {
-    "term": "human movement",
+  "hospitality": {
+    "term": "hospitality",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "human movement",
-      "length": 14,
+      "cleaned_term": "hospitality",
+      "length": 11,
+      "has_letters": true
+    }
+  },
+  "human capital development": {
+    "term": "human capital development",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "human capital development",
+      "length": 25,
+      "has_letters": true
+    }
+  },
+  "human capital education": {
+    "term": "human capital education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "human capital education",
+      "length": 23,
+      "has_letters": true
+    }
+  },
+  "human health sciences": {
+    "term": "human health sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "human health sciences",
+      "length": 21,
+      "has_letters": true
+    }
+  },
+  "human resource development": {
+    "term": "human resource development",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "human resource development",
+      "length": 26,
       "has_letters": true
     }
   },
@@ -1579,6 +1609,16 @@
       "has_letters": true
     }
   },
+  "human resources management": {
+    "term": "human resources management",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "human resources management",
+      "length": 26,
+      "has_letters": true
+    }
+  },
   "human rights": {
     "term": "human rights",
     "is_valid": true,
@@ -1586,16 +1626,6 @@
     "details": {
       "cleaned_term": "human rights",
       "length": 12,
-      "has_letters": true
-    }
-  },
-  "humanities": {
-    "term": "humanities",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "humanities",
-      "length": 10,
       "has_letters": true
     }
   },
@@ -1609,13 +1639,33 @@
       "has_letters": true
     }
   },
-  "indigenous studies": {
-    "term": "indigenous studies",
+  "indo-pacific languages": {
+    "term": "indo-pacific languages",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "indigenous studies",
-      "length": 18,
+      "cleaned_term": "indo-pacific languages",
+      "length": 22,
+      "has_letters": true
+    }
+  },
+  "indo-pacific literatures": {
+    "term": "indo-pacific literatures",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "indo-pacific literatures",
+      "length": 24,
+      "has_letters": true
+    }
+  },
+  "industrial distribution": {
+    "term": "industrial distribution",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "industrial distribution",
+      "length": 23,
       "has_letters": true
     }
   },
@@ -1629,53 +1679,53 @@
       "has_letters": true
     }
   },
-  "information science": {
-    "term": "information science",
+  "infectious disease": {
+    "term": "infectious disease",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "information science",
+      "cleaned_term": "infectious disease",
+      "length": 18,
+      "has_letters": true
+    }
+  },
+  "infectious diseases": {
+    "term": "infectious diseases",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "infectious diseases",
       "length": 19,
       "has_letters": true
     }
   },
-  "information systems": {
-    "term": "information systems",
+  "information engineering": {
+    "term": "information engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "information systems",
-      "length": 19,
+      "cleaned_term": "information engineering",
+      "length": 23,
       "has_letters": true
     }
   },
-  "information technology": {
-    "term": "information technology",
+  "instruction": {
+    "term": "instruction",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "information technology",
-      "length": 22,
+      "cleaned_term": "instruction",
+      "length": 11,
       "has_letters": true
     }
   },
-  "insurance": {
-    "term": "insurance",
+  "instructional technology": {
+    "term": "instructional technology",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "insurance",
-      "length": 9,
-      "has_letters": true
-    }
-  },
-  "integrated health sciences": {
-    "term": "integrated health sciences",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "integrated health sciences",
-      "length": 26,
+      "cleaned_term": "instructional technology",
+      "length": 24,
       "has_letters": true
     }
   },
@@ -1689,33 +1739,23 @@
       "has_letters": true
     }
   },
-  "intellectual property law": {
-    "term": "intellectual property law",
+  "intellectual property": {
+    "term": "intellectual property",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "intellectual property law",
-      "length": 25,
-      "has_letters": true
-    }
-  },
-  "interdisciplinary studies": {
-    "term": "interdisciplinary studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "interdisciplinary studies",
-      "length": 25,
-      "has_letters": true
-    }
-  },
-  "international affairs": {
-    "term": "international affairs",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "international affairs",
+      "cleaned_term": "intellectual property",
       "length": 21,
+      "has_letters": true
+    }
+  },
+  "interdisciplinary education": {
+    "term": "interdisciplinary education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "interdisciplinary education",
+      "length": 27,
       "has_letters": true
     }
   },
@@ -1729,6 +1769,16 @@
       "has_letters": true
     }
   },
+  "international health": {
+    "term": "international health",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "international health",
+      "length": 20,
+      "has_letters": true
+    }
+  },
   "international law": {
     "term": "international law",
     "is_valid": true,
@@ -1739,53 +1789,13 @@
       "has_letters": true
     }
   },
-  "international relations": {
-    "term": "international relations",
+  "jewish thought": {
+    "term": "jewish thought",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "international relations",
-      "length": 23,
-      "has_letters": true
-    }
-  },
-  "international studies": {
-    "term": "international studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "international studies",
-      "length": 21,
-      "has_letters": true
-    }
-  },
-  "japanese studies": {
-    "term": "japanese studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "japanese studies",
-      "length": 16,
-      "has_letters": true
-    }
-  },
-  "journalism": {
-    "term": "journalism",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "journalism",
-      "length": 10,
-      "has_letters": true
-    }
-  },
-  "justice studies": {
-    "term": "justice studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "justice studies",
-      "length": 15,
+      "cleaned_term": "jewish thought",
+      "length": 14,
       "has_letters": true
     }
   },
@@ -1799,13 +1809,33 @@
       "has_letters": true
     }
   },
-  "language education": {
-    "term": "language education",
+  "labor law": {
+    "term": "labor law",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "language education",
-      "length": 18,
+      "cleaned_term": "labor law",
+      "length": 9,
+      "has_letters": true
+    }
+  },
+  "laboratory medicine": {
+    "term": "laboratory medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "laboratory medicine",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "language": {
+    "term": "language",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "language",
+      "length": 8,
       "has_letters": true
     }
   },
@@ -1819,13 +1849,13 @@
       "has_letters": true
     }
   },
-  "language studies": {
-    "term": "language studies",
+  "language teaching": {
+    "term": "language teaching",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "language studies",
-      "length": 16,
+      "cleaned_term": "language teaching",
+      "length": 17,
       "has_letters": true
     }
   },
@@ -1839,13 +1869,13 @@
       "has_letters": true
     }
   },
-  "law": {
-    "term": "law",
+  "latino/a studies": {
+    "term": "latino/a studies",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "law",
-      "length": 3,
+      "cleaned_term": "latino studies",
+      "length": 14,
       "has_letters": true
     }
   },
@@ -1859,43 +1889,83 @@
       "has_letters": true
     }
   },
-  "learning technologies": {
-    "term": "learning technologies",
+  "learning design": {
+    "term": "learning design",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "learning technologies",
-      "length": 21,
+      "cleaned_term": "learning design",
+      "length": 15,
       "has_letters": true
     }
   },
-  "legal studies": {
-    "term": "legal studies",
+  "learning sciences": {
+    "term": "learning sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "legal studies",
+      "cleaned_term": "learning sciences",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "legal ethics": {
+    "term": "legal ethics",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "legal ethics",
+      "length": 12,
+      "has_letters": true
+    }
+  },
+  "legal history": {
+    "term": "legal history",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "legal history",
       "length": 13,
       "has_letters": true
     }
   },
-  "liberal studies": {
-    "term": "liberal studies",
+  "legal research": {
+    "term": "legal research",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "liberal studies",
-      "length": 15,
+      "cleaned_term": "legal research",
+      "length": 14,
       "has_letters": true
     }
   },
-  "library science": {
-    "term": "library science",
+  "legal writing": {
+    "term": "legal writing",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "library science",
-      "length": 15,
+      "cleaned_term": "legal writing",
+      "length": 13,
+      "has_letters": true
+    }
+  },
+  "lifelong learning": {
+    "term": "lifelong learning",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "lifelong learning",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "linguistic studies": {
+    "term": "linguistic studies",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "linguistic studies",
+      "length": 18,
       "has_letters": true
     }
   },
@@ -1919,13 +1989,33 @@
       "has_letters": true
     }
   },
-  "literacy education": {
-    "term": "literacy education",
+  "logistics": {
+    "term": "logistics",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "literacy education",
-      "length": 18,
+      "cleaned_term": "logistics",
+      "length": 9,
+      "has_letters": true
+    }
+  },
+  "macromolecular engineering": {
+    "term": "macromolecular engineering",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "macromolecular engineering",
+      "length": 26,
+      "has_letters": true
+    }
+  },
+  "macromolecular science": {
+    "term": "macromolecular science",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "macromolecular science",
+      "length": 22,
       "has_letters": true
     }
   },
@@ -1949,33 +2039,13 @@
       "has_letters": true
     }
   },
-  "manufacturing engineering": {
-    "term": "manufacturing engineering",
+  "marine engineering": {
+    "term": "marine engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "manufacturing engineering",
-      "length": 25,
-      "has_letters": true
-    }
-  },
-  "marine biology": {
-    "term": "marine biology",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "marine biology",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "marine sciences": {
-    "term": "marine sciences",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "marine sciences",
-      "length": 15,
+      "cleaned_term": "marine engineering",
+      "length": 18,
       "has_letters": true
     }
   },
@@ -1989,13 +2059,13 @@
       "has_letters": true
     }
   },
-  "mass communications": {
-    "term": "mass communications",
+  "marrow transplantation": {
+    "term": "marrow transplantation",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "mass communications",
-      "length": 19,
+      "cleaned_term": "marrow transplantation",
+      "length": 22,
       "has_letters": true
     }
   },
@@ -2019,16 +2089,6 @@
       "has_letters": true
     }
   },
-  "mathematics": {
-    "term": "mathematics",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "mathematics",
-      "length": 11,
-      "has_letters": true
-    }
-  },
   "mathematics education": {
     "term": "mathematics education",
     "is_valid": true,
@@ -2036,6 +2096,16 @@
     "details": {
       "cleaned_term": "mathematics education",
       "length": 21,
+      "has_letters": true
+    }
+  },
+  "mathematics teaching": {
+    "term": "mathematics teaching",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "mathematics teaching",
+      "length": 20,
       "has_letters": true
     }
   },
@@ -2069,26 +2139,6 @@
       "has_letters": true
     }
   },
-  "mediation": {
-    "term": "mediation",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "mediation",
-      "length": 9,
-      "has_letters": true
-    }
-  },
-  "medical education": {
-    "term": "medical education",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "medical education",
-      "length": 17,
-      "has_letters": true
-    }
-  },
   "medical laboratory science": {
     "term": "medical laboratory science",
     "is_valid": true,
@@ -2109,13 +2159,13 @@
       "has_letters": true
     }
   },
-  "medicine": {
-    "term": "medicine",
+  "metabolism": {
+    "term": "metabolism",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "medicine",
-      "length": 8,
+      "cleaned_term": "metabolism",
+      "length": 10,
       "has_letters": true
     }
   },
@@ -2129,43 +2179,43 @@
       "has_letters": true
     }
   },
-  "middle eastern studies": {
-    "term": "middle eastern studies",
+  "middle level education": {
+    "term": "middle level education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "middle eastern studies",
+      "cleaned_term": "middle level education",
       "length": 22,
       "has_letters": true
     }
   },
-  "middle education": {
-    "term": "middle education",
+  "mining engineering": {
+    "term": "mining engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "middle education",
-      "length": 16,
+      "cleaned_term": "mining engineering",
+      "length": 18,
       "has_letters": true
     }
   },
-  "military science": {
-    "term": "military science",
+  "modern foreign language": {
+    "term": "modern foreign language",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "military science",
-      "length": 16,
+      "cleaned_term": "modern foreign language",
+      "length": 23,
       "has_letters": true
     }
   },
-  "modern languages": {
-    "term": "modern languages",
+  "modern languages education": {
+    "term": "modern languages education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "modern languages",
-      "length": 16,
+      "cleaned_term": "modern languages education",
+      "length": 26,
       "has_letters": true
     }
   },
@@ -2189,53 +2239,63 @@
       "has_letters": true
     }
   },
-  "music": {
-    "term": "music",
+  "molecular medicine": {
+    "term": "molecular medicine",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "music",
-      "length": 5,
+      "cleaned_term": "molecular medicine",
+      "length": 18,
       "has_letters": true
     }
   },
-  "music education": {
-    "term": "music education",
+  "molecular sciences": {
+    "term": "molecular sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "music education",
-      "length": 15,
+      "cleaned_term": "molecular sciences",
+      "length": 18,
       "has_letters": true
     }
   },
-  "music performance": {
-    "term": "music performance",
+  "multidisciplinary engineering": {
+    "term": "multidisciplinary engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "music performance",
-      "length": 17,
+      "cleaned_term": "multidisciplinary engineering",
+      "length": 29,
       "has_letters": true
     }
   },
-  "music theory": {
-    "term": "music theory",
+  "naval architecture": {
+    "term": "naval architecture",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "music theory",
-      "length": 12,
+      "cleaned_term": "naval architecture",
+      "length": 18,
       "has_letters": true
     }
   },
-  "natural sciences": {
-    "term": "natural sciences",
+  "nephrology": {
+    "term": "nephrology",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "natural sciences",
-      "length": 16,
+      "cleaned_term": "nephrology",
+      "length": 10,
+      "has_letters": true
+    }
+  },
+  "neurological surgery": {
+    "term": "neurological surgery",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "neurological surgery",
+      "length": 20,
       "has_letters": true
     }
   },
@@ -2259,6 +2319,26 @@
       "has_letters": true
     }
   },
+  "newborn medicine": {
+    "term": "newborn medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "newborn medicine",
+      "length": 16,
+      "has_letters": true
+    }
+  },
+  "nuclear engineering": {
+    "term": "nuclear engineering",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "nuclear engineering",
+      "length": 19,
+      "has_letters": true
+    }
+  },
   "nursing": {
     "term": "nursing",
     "is_valid": true,
@@ -2266,16 +2346,6 @@
     "details": {
       "cleaned_term": "nursing",
       "length": 7,
-      "has_letters": true
-    }
-  },
-  "nursing practice": {
-    "term": "nursing practice",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "nursing practice",
-      "length": 16,
       "has_letters": true
     }
   },
@@ -2289,6 +2359,26 @@
       "has_letters": true
     }
   },
+  "nutrition sciences": {
+    "term": "nutrition sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "nutrition sciences",
+      "length": 18,
+      "has_letters": true
+    }
+  },
+  "nutritional sciences": {
+    "term": "nutritional sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "nutritional sciences",
+      "length": 20,
+      "has_letters": true
+    }
+  },
   "obstetrics": {
     "term": "obstetrics",
     "is_valid": true,
@@ -2296,6 +2386,26 @@
     "details": {
       "cleaned_term": "obstetrics",
       "length": 10,
+      "has_letters": true
+    }
+  },
+  "occupational health sciences": {
+    "term": "occupational health sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "occupational health sciences",
+      "length": 28,
+      "has_letters": true
+    }
+  },
+  "occupational science": {
+    "term": "occupational science",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "occupational science",
+      "length": 20,
       "has_letters": true
     }
   },
@@ -2309,43 +2419,73 @@
       "has_letters": true
     }
   },
-  "oceanography": {
-    "term": "oceanography",
+  "ocean engineering": {
+    "term": "ocean engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "oceanography",
+      "cleaned_term": "ocean engineering",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "operations engineering": {
+    "term": "operations engineering",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "operations engineering",
+      "length": 22,
+      "has_letters": true
+    }
+  },
+  "operations research": {
+    "term": "operations research",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "operations research",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "optical engineering": {
+    "term": "optical engineering",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "optical engineering",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "optical sciences": {
+    "term": "optical sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "optical sciences",
+      "length": 16,
+      "has_letters": true
+    }
+  },
+  "orthopaedic surgery": {
+    "term": "orthopaedic surgery",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "orthopaedic surgery",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "orthopaedics": {
+    "term": "orthopaedics",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "orthopaedics",
       "length": 12,
-      "has_letters": true
-    }
-  },
-  "operations management": {
-    "term": "operations management",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "operations management",
-      "length": 21,
-      "has_letters": true
-    }
-  },
-  "organizational behavior": {
-    "term": "organizational behavior",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "organizational behavior",
-      "length": 23,
-      "has_letters": true
-    }
-  },
-  "organizational leadership": {
-    "term": "organizational leadership",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "organizational leadership",
-      "length": 25,
       "has_letters": true
     }
   },
@@ -2359,16 +2499,6 @@
       "has_letters": true
     }
   },
-  "paramedicine": {
-    "term": "paramedicine",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "paramedicine",
-      "length": 12,
-      "has_letters": true
-    }
-  },
   "pathology": {
     "term": "pathology",
     "is_valid": true,
@@ -2379,23 +2509,13 @@
       "has_letters": true
     }
   },
-  "patient care": {
-    "term": "patient care",
+  "pediatric surgery": {
+    "term": "pediatric surgery",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "patient care",
-      "length": 12,
-      "has_letters": true
-    }
-  },
-  "pediatric nurse practitioner": {
-    "term": "pediatric nurse practitioner",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "pediatric nurse practitioner",
-      "length": 28,
+      "cleaned_term": "pediatric surgery",
+      "length": 17,
       "has_letters": true
     }
   },
@@ -2409,6 +2529,26 @@
       "has_letters": true
     }
   },
+  "perioperative medicine": {
+    "term": "perioperative medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "perioperative medicine",
+      "length": 22,
+      "has_letters": true
+    }
+  },
+  "petroleum engineering": {
+    "term": "petroleum engineering",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "petroleum engineering",
+      "length": 21,
+      "has_letters": true
+    }
+  },
   "pharmacology": {
     "term": "pharmacology",
     "is_valid": true,
@@ -2416,16 +2556,6 @@
     "details": {
       "cleaned_term": "pharmacology",
       "length": 12,
-      "has_letters": true
-    }
-  },
-  "philosophy": {
-    "term": "philosophy",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "philosophy",
-      "length": 10,
       "has_letters": true
     }
   },
@@ -2439,12 +2569,12 @@
       "has_letters": true
     }
   },
-  "physical sciences": {
-    "term": "physical sciences",
+  "physical medicine": {
+    "term": "physical medicine",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "physical sciences",
+      "cleaned_term": "physical medicine",
       "length": 17,
       "has_letters": true
     }
@@ -2459,43 +2589,23 @@
       "has_letters": true
     }
   },
-  "physician assistant studies": {
-    "term": "physician assistant studies",
+  "plastic surgery": {
+    "term": "plastic surgery",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "physician assistant studies",
-      "length": 27,
+      "cleaned_term": "plastic surgery",
+      "length": 15,
       "has_letters": true
     }
   },
-  "physics": {
-    "term": "physics",
+  "policy studies": {
+    "term": "policy studies",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "physics",
-      "length": 7,
-      "has_letters": true
-    }
-  },
-  "physiology": {
-    "term": "physiology",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "physiology",
-      "length": 10,
-      "has_letters": true
-    }
-  },
-  "plant biology": {
-    "term": "plant biology",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "plant biology",
-      "length": 13,
+      "cleaned_term": "policy studies",
+      "length": 14,
       "has_letters": true
     }
   },
@@ -2509,43 +2619,33 @@
       "has_letters": true
     }
   },
-  "politics": {
-    "term": "politics",
+  "population": {
+    "term": "population",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "politics",
-      "length": 8,
+      "cleaned_term": "population",
+      "length": 10,
       "has_letters": true
     }
   },
-  "professional sales": {
-    "term": "professional sales",
+  "population health sciences": {
+    "term": "population health sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "professional sales",
-      "length": 18,
+      "cleaned_term": "population health sciences",
+      "length": 26,
       "has_letters": true
     }
   },
-  "professional writing": {
-    "term": "professional writing",
+  "professional responsibility": {
+    "term": "professional responsibility",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "professional writing",
-      "length": 20,
-      "has_letters": true
-    }
-  },
-  "project management": {
-    "term": "project management",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "project management",
-      "length": 18,
+      "cleaned_term": "professional responsibility",
+      "length": 27,
       "has_letters": true
     }
   },
@@ -2569,6 +2669,16 @@
       "has_letters": true
     }
   },
+  "psychological studies": {
+    "term": "psychological studies",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "psychological studies",
+      "length": 21,
+      "has_letters": true
+    }
+  },
   "psychology": {
     "term": "psychology",
     "is_valid": true,
@@ -2576,26 +2686,6 @@
     "details": {
       "cleaned_term": "psychology",
       "length": 10,
-      "has_letters": true
-    }
-  },
-  "public administration": {
-    "term": "public administration",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "public administration",
-      "length": 21,
-      "has_letters": true
-    }
-  },
-  "public affairs": {
-    "term": "public affairs",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "public affairs",
-      "length": 14,
       "has_letters": true
     }
   },
@@ -2609,33 +2699,113 @@
       "has_letters": true
     }
   },
-  "public policy": {
-    "term": "public policy",
+  "public health genetics": {
+    "term": "public health genetics",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "public policy",
-      "length": 13,
+      "cleaned_term": "public health genetics",
+      "length": 22,
       "has_letters": true
     }
   },
-  "race studies": {
-    "term": "race studies",
+  "public health sciences": {
+    "term": "public health sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "race studies",
-      "length": 12,
+      "cleaned_term": "public health sciences",
+      "length": 22,
       "has_letters": true
     }
   },
-  "real estate": {
-    "term": "real estate",
+  "public interest law": {
+    "term": "public interest law",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "real estate",
-      "length": 11,
+      "cleaned_term": "public interest law",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "pulmonary disease": {
+    "term": "pulmonary disease",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "pulmonary disease",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "pulmonary medicine": {
+    "term": "pulmonary medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "pulmonary medicine",
+      "length": 18,
+      "has_letters": true
+    }
+  },
+  "radiation medicine": {
+    "term": "radiation medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "radiation medicine",
+      "length": 18,
+      "has_letters": true
+    }
+  },
+  "radiologic technology": {
+    "term": "radiologic technology",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "radiologic technology",
+      "length": 21,
+      "has_letters": true
+    }
+  },
+  "radiological sciences": {
+    "term": "radiological sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "radiological sciences",
+      "length": 21,
+      "has_letters": true
+    }
+  },
+  "reconstructive surgery": {
+    "term": "reconstructive surgery",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "reconstructive surgery",
+      "length": 22,
+      "has_letters": true
+    }
+  },
+  "recreation": {
+    "term": "recreation",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "recreation",
+      "length": 10,
+      "has_letters": true
+    }
+  },
+  "regenerative medicine": {
+    "term": "regenerative medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "regenerative medicine",
+      "length": 21,
       "has_letters": true
     }
   },
@@ -2659,63 +2829,43 @@
       "has_letters": true
     }
   },
-  "religion": {
-    "term": "religion",
+  "reproductive health": {
+    "term": "reproductive health",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "religion",
-      "length": 8,
+      "cleaned_term": "reproductive health",
+      "length": 19,
       "has_letters": true
     }
   },
-  "religious studies": {
-    "term": "religious studies",
+  "reproductive sciences": {
+    "term": "reproductive sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "religious studies",
-      "length": 17,
+      "cleaned_term": "reproductive sciences",
+      "length": 21,
       "has_letters": true
     }
   },
-  "research methodology": {
-    "term": "research methodology",
+  "rheumatology": {
+    "term": "rheumatology",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "research methodology",
-      "length": 20,
+      "cleaned_term": "rheumatology",
+      "length": 12,
       "has_letters": true
     }
   },
-  "respiratory care": {
-    "term": "respiratory care",
+  "risk": {
+    "term": "risk",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "respiratory care",
-      "length": 16,
-      "has_letters": true
-    }
-  },
-  "rhetoric": {
-    "term": "rhetoric",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "rhetoric",
-      "length": 8,
-      "has_letters": true
-    }
-  },
-  "risk management": {
-    "term": "risk management",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "risk management",
-      "length": 15,
+      "cleaned_term": "risk",
+      "length": 4,
       "has_letters": true
     }
   },
@@ -2729,6 +2879,16 @@
       "has_letters": true
     }
   },
+  "romance literatures": {
+    "term": "romance literatures",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "romance literatures",
+      "length": 19,
+      "has_letters": true
+    }
+  },
   "school psychology": {
     "term": "school psychology",
     "is_valid": true,
@@ -2739,23 +2899,23 @@
       "has_letters": true
     }
   },
-  "science education": {
-    "term": "science education",
+  "science teaching": {
+    "term": "science teaching",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "science education",
-      "length": 17,
+      "cleaned_term": "science teaching",
+      "length": 16,
       "has_letters": true
     }
   },
-  "second language acquisition": {
-    "term": "second language acquisition",
+  "second language studies": {
+    "term": "second language studies",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "second language acquisition",
-      "length": 27,
+      "cleaned_term": "second language studies",
+      "length": 23,
       "has_letters": true
     }
   },
@@ -2769,6 +2929,26 @@
       "has_letters": true
     }
   },
+  "secondary stem education": {
+    "term": "secondary stem education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "secondary stem education",
+      "length": 24,
+      "has_letters": true
+    }
+  },
+  "securities law": {
+    "term": "securities law",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "securities law",
+      "length": 14,
+      "has_letters": true
+    }
+  },
   "sexuality studies": {
     "term": "sexuality studies",
     "is_valid": true,
@@ -2779,23 +2959,33 @@
       "has_letters": true
     }
   },
-  "social justice": {
-    "term": "social justice",
+  "sleep medicine": {
+    "term": "sleep medicine",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "social justice",
+      "cleaned_term": "sleep medicine",
       "length": 14,
       "has_letters": true
     }
   },
-  "social science": {
-    "term": "social science",
+  "social foundations of education": {
+    "term": "social foundations of education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "social science",
-      "length": 14,
+      "cleaned_term": "social foundations education",
+      "length": 28,
+      "has_letters": true
+    }
+  },
+  "social health": {
+    "term": "social health",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "social health",
+      "length": 13,
       "has_letters": true
     }
   },
@@ -2809,6 +2999,16 @@
       "has_letters": true
     }
   },
+  "social sciences": {
+    "term": "social sciences",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "social sciences",
+      "length": 15,
+      "has_letters": true
+    }
+  },
   "social work": {
     "term": "social work",
     "is_valid": true,
@@ -2819,23 +3019,23 @@
       "has_letters": true
     }
   },
-  "sociology": {
-    "term": "sociology",
+  "space engineering": {
+    "term": "space engineering",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "sociology",
-      "length": 9,
+      "cleaned_term": "space engineering",
+      "length": 17,
       "has_letters": true
     }
   },
-  "software engineering": {
-    "term": "software engineering",
+  "space sciences": {
+    "term": "space sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "software engineering",
-      "length": 20,
+      "cleaned_term": "space sciences",
+      "length": 14,
       "has_letters": true
     }
   },
@@ -2859,43 +3059,13 @@
       "has_letters": true
     }
   },
-  "speech pathology": {
-    "term": "speech pathology",
+  "speech sciences": {
+    "term": "speech sciences",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "speech pathology",
-      "length": 16,
-      "has_letters": true
-    }
-  },
-  "speech science": {
-    "term": "speech science",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "speech science",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "speech-language pathology": {
-    "term": "speech-language pathology",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "speech-language pathology",
-      "length": 25,
-      "has_letters": true
-    }
-  },
-  "sport management": {
-    "term": "sport management",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "sport management",
-      "length": 16,
+      "cleaned_term": "speech sciences",
+      "length": 15,
       "has_letters": true
     }
   },
@@ -2909,23 +3079,33 @@
       "has_letters": true
     }
   },
-  "statistics": {
-    "term": "statistics",
+  "structural biology": {
+    "term": "structural biology",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "statistics",
-      "length": 10,
+      "cleaned_term": "structural biology",
+      "length": 18,
       "has_letters": true
     }
   },
-  "structural engineering": {
-    "term": "structural engineering",
+  "student affairs": {
+    "term": "student affairs",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "structural engineering",
-      "length": 22,
+      "cleaned_term": "student affairs",
+      "length": 15,
+      "has_letters": true
+    }
+  },
+  "studio art": {
+    "term": "studio art",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "studio art",
+      "length": 10,
       "has_letters": true
     }
   },
@@ -2939,23 +3119,13 @@
       "has_letters": true
     }
   },
-  "sustainability": {
-    "term": "sustainability",
+  "surgical oncology": {
+    "term": "surgical oncology",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "sustainability",
-      "length": 14,
-      "has_letters": true
-    }
-  },
-  "sustainable development": {
-    "term": "sustainable development",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "sustainable development",
-      "length": 23,
+      "cleaned_term": "surgical oncology",
+      "length": 17,
       "has_letters": true
     }
   },
@@ -2979,16 +3149,6 @@
       "has_letters": true
     }
   },
-  "taxation": {
-    "term": "taxation",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "taxation",
-      "length": 8,
-      "has_letters": true
-    }
-  },
   "teacher education": {
     "term": "teacher education",
     "is_valid": true,
@@ -2999,23 +3159,43 @@
       "has_letters": true
     }
   },
-  "technology education": {
-    "term": "technology education",
+  "technical education": {
+    "term": "technical education",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "technology education",
-      "length": 20,
+      "cleaned_term": "technical education",
+      "length": 19,
       "has_letters": true
     }
   },
-  "technology law": {
-    "term": "technology law",
+  "textile chemistry": {
+    "term": "textile chemistry",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "technology law",
-      "length": 14,
+      "cleaned_term": "textile chemistry",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "textile engineering": {
+    "term": "textile engineering",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "textile engineering",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "textile science": {
+    "term": "textile science",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "textile science",
+      "length": 15,
       "has_letters": true
     }
   },
@@ -3029,12 +3209,22 @@
       "has_letters": true
     }
   },
-  "thermodynamics": {
-    "term": "thermodynamics",
+  "transplantation surgery": {
+    "term": "transplantation surgery",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "thermodynamics",
+      "cleaned_term": "transplantation surgery",
+      "length": 23,
+      "has_letters": true
+    }
+  },
+  "trauma surgery": {
+    "term": "trauma surgery",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "trauma surgery",
       "length": 14,
       "has_letters": true
     }
@@ -3049,53 +3239,73 @@
       "has_letters": true
     }
   },
-  "urban studies": {
-    "term": "urban studies",
+  "vascular surgery": {
+    "term": "vascular surgery",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "urban studies",
-      "length": 13,
-      "has_letters": true
-    }
-  },
-  "visual art": {
-    "term": "visual art",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "visual art",
-      "length": 10,
-      "has_letters": true
-    }
-  },
-  "wellness studies": {
-    "term": "wellness studies",
-    "is_valid": true,
-    "mode": "rules",
-    "details": {
-      "cleaned_term": "wellness studies",
+      "cleaned_term": "vascular surgery",
       "length": 16,
       "has_letters": true
     }
   },
-  "women's studies": {
-    "term": "women's studies",
+  "women studies": {
+    "term": "women studies",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "women s studies",
+      "cleaned_term": "women studies",
+      "length": 13,
+      "has_letters": true
+    }
+  },
+  "workforce education": {
+    "term": "workforce education",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "workforce education",
+      "length": 19,
+      "has_letters": true
+    }
+  },
+  "world cultures": {
+    "term": "world cultures",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "world cultures",
+      "length": 14,
+      "has_letters": true
+    }
+  },
+  "world languages": {
+    "term": "world languages",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "world languages",
       "length": 15,
       "has_letters": true
     }
   },
-  "writing studies": {
-    "term": "writing studies",
+  "world literatures": {
+    "term": "world literatures",
     "is_valid": true,
     "mode": "rules",
     "details": {
-      "cleaned_term": "writing studies",
-      "length": 15,
+      "cleaned_term": "world literatures",
+      "length": 17,
+      "has_letters": true
+    }
+  },
+  "young adult medicine": {
+    "term": "young adult medicine",
+    "is_valid": true,
+    "mode": "rules",
+    "details": {
+      "cleaned_term": "young adult medicine",
+      "length": 20,
       "has_letters": true
     }
   }
