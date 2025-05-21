@@ -7,12 +7,13 @@ import asyncio
 import aiohttp
 import re
 import argparse
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional, Tuple, Set
 from pathlib import Path
 from dotenv import load_dotenv
 from collections import Counter
 import ssl
 import certifi
+import datetime  # For checkpoint timestamps
 
 # Fix import path for utils - Adjust based on the new file location (lv3)
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -31,10 +32,10 @@ logger = setup_logger("lv3.s0") # Changed logger name
 random.seed(42)
 
 # Constants
-MAX_SEARCH_RESULTS = 30
-MAX_CONCURRENT_REQUESTS = 8
+MAX_SEARCH_RESULTS = 5
+MAX_CONCURRENT_REQUESTS = 25
 BATCH_SIZE = 10
-MAX_SEARCH_QUERIES = 50
+MAX_SEARCH_QUERIES = 100
 
 # Conference/Journal-related keywords for enhanced filtering
 CONFERENCE_KEYWORDS = [
@@ -61,7 +62,7 @@ NON_CONFERENCE_KEYWORDS = [
 ]
 
 # Conference/Journal pattern matches for regex matching (less critical but can help)
-CONFERENCE_PATTERNS = [
+JOURNAL_PATTERNS = [
     r"(?:topics|tracks|areas) (?:of|include|cover):?",
     r"(?:call for|submit) papers?",
     r"track [\d\w]+:",
@@ -72,36 +73,36 @@ CONFERENCE_PATTERNS = [
     r"instructions for authors"
 ]
 
-# Search queries - Updated for conferences/journals
+# Search queries - Updated for journals
 SEARCH_QUERIES = [
-    "\"{level2_term}\" (topics | tracks | call for papers | cfp | scope | themes)",
-    "site:.org \"{level2_term}\" (topics | tracks | areas)", # Many conferences/journals use .org
-    "site:.com \"{level2_term}\" (topics | tracks | areas)", # Some use .com
-    "conference \"{level2_term}\" (topics | tracks)",
-    "journal \"{level2_term}\" (scope | topics)",
+    "\"{journal}\" (topics | tracks | call for papers | cfp | scope | themes)",
+    "site:.org \"{journal}\" (topics | tracks | areas)", # Many journals use .org
+    "site:.com \"{journal}\" (topics | tracks | areas)", # Some use .com
+    "conference \"{journal}\" (topics | tracks)",
+    "journal \"{journal}\" (scope | topics)",
 ]
 
-# LLM system prompt template for conference/journal topic validation
-CONFERENCE_TOPIC_VALIDATION_SYSTEM_PROMPT_TEMPLATE = """You are a highly meticulous academic assistant specializing in identifying ONLY the most specific and directly relevant topics, tracks, or themes for academic conferences and journals.
+# LLM system prompt template for journal topic validation
+JOURNAL_TOPIC_VALIDATION_SYSTEM_PROMPT_TEMPLATE = """You are a highly meticulous academic assistant specializing in identifying ONLY the most specific and directly relevant topics, tracks, or themes for academic conferences and journals.
 
-Task: Analyze the provided list and extract ONLY items that are DIRECTLY and UNQUESTIONABLY topics, tracks, themes, or specific subject areas covered by the conference or journal named **{level2_term}**.
+Task: Analyze the provided list and extract ONLY items that are DIRECTLY and UNQUESTIONABLY topics, tracks, themes, or specific subject areas covered by the journal named **{journal}**.
 
-Input: A list of potential topics/tracks/keywords/other text found on a webpage related to the conference/journal.
-Output: A Python-style list `[...]` containing ONLY the items that are DEFINITIVELY and DIRECTLY relevant topics or tracks for **{level2_term}**. Return ONLY the verified items, preserving their original phrasing.
+Input: A list of potential topics/tracks/keywords/other text found on a webpage related to the journal.
+Output: A Python-style list `[...]` containing ONLY the items that are DEFINITIVELY and DIRECTLY relevant topics or tracks for **{journal}**. Return ONLY the verified items, preserving their original phrasing.
 
 EXTREMELY STRICT Exclusion Criteria - DO NOT INCLUDE:
-1. **ANYTHING not clearly a specific topic, track, or theme** for this specific conference/journal ({level2_term}). If there is ANY doubt, EXCLUDE it.
-2. **General academic fields** unless they are explicitly listed as a track or topic for {level2_term}. (e.g., Exclude "Computer Science" unless it's listed as "Track: Computer Science").
+1. **ANYTHING not clearly a specific topic, track, or theme** for this specific journal ({journal}). If there is ANY doubt, EXCLUDE it.
+2. **General academic fields** unless they are explicitly listed as a track or topic for {journal}. (e.g., Exclude "Computer Science" unless it's listed as "Track: Computer Science").
 3. **Organizational or administrative details**: EXCLUDE committee names, submission guidelines (unless they list topics), deadlines, venue information, registration details, sponsor names, keynote speakers, etc.
 4. **Website navigation/meta elements**: EXCLUDE ALL menu items, headers, footers, "Home", "About", "Contact Us", "Past Conferences", "Archives", etc.
-5. **Vague or overly broad terms**: EXCLUDE terms that could apply to many conferences/journals without specific context.
+5. **Vague or overly broad terms**: EXCLUDE terms that could apply to many journals without specific context.
 6. **Instructions or calls to action**: EXCLUDE "Submit Your Paper", "Register Now", "View Program", etc.
 7. **Names of people or organizations**: EXCLUDE author names, committee member names, affiliations, etc.
 8. **Keywords that are too generic**: EXCLUDE single words like "Research", "Paper", "Analysis" unless part of a specific listed topic.
 
 Guidelines:
 - Be EXTREMELY SELECTIVE. When in doubt, EXCLUDE.
-- ONLY include items that represent a specific area of focus, research theme, or session track for **{level2_term}**.
+- ONLY include items that represent a specific area of focus, research theme, or session track for **{journal}**.
 - Preserve the original phrasing and capitalization as much as possible.
 - Return an empty list `[]` if NO items meet these strict criteria.
 - Output ONLY the Python-style list, nothing else.
@@ -114,12 +115,16 @@ Example (Journal: Journal of Fluid Mechanics):
 Input List: ["Fluid Dynamics", "Turbulence", "Contact Editor", "Submit Manuscript", "Aims and Scope", "Computational Fluid Dynamics", "Aerodynamics", "Past Issues", "Editorial Board", "Geophysical Fluid Dynamics"]
 Output: ["Fluid Dynamics", "Turbulence", "Computational Fluid Dynamics", "Aerodynamics", "Geophysical Fluid Dynamics"]
 
-I will ONLY include items that are DEFINITIVELY and DIRECTLY relevant topics or tracks for **{level2_term}**. Any item with even slight uncertainty will be excluded.
+I will ONLY include items that are DEFINITIVELY and DIRECTLY relevant topics or tracks for **{journal}**. Any item with even slight uncertainty will be excluded.
 
 Analyze the following list with EXTREME STRICTNESS:"""
 
-DEFAULT_MIN_SCORE_FOR_LLM = 0.60 # Slightly lower threshold might be okay for topics
-DEFAULT_LLM_MODEL_TYPES = ["default", "mini", "nano"] # Default model types for attempts
+DEFAULT_MIN_SCORE_FOR_LLM = 0.55 # Slightly lower threshold might be okay for topics
+DEFAULT_LLM_MODEL_TYPES = ["pro", "default", "mini"] # Default model types for attempts
+
+# Checkpoint system configuration
+CHECKPOINT_DIR = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")), "data/lv3/checkpoint")
+CHECKPOINT_FILE = os.path.join(CHECKPOINT_DIR, "lv3_s0_checkpoint.json")
 
 class Config:
     """Configuration for conference topic extraction from level 2 terms"""
@@ -140,20 +145,20 @@ class Config:
     NUM_LLM_ATTEMPTS = 3
     AGREEMENT_THRESHOLD = 2
 
-def read_level2_terms(input_path: str) -> List[str]:
-    """Read level 2 terms (conference/journal names) from input file"""
+def read_journals(input_path: str) -> List[str]:
+    """Read journal names (level 2 terms) from input file"""
     try:
         with open(input_path, "r", encoding="utf-8") as file:
             terms = [line.strip() for line in file.readlines() if line.strip()]
-        logger.info(f"Successfully read {len(terms)} level 2 terms (conferences/journals)")
+        logger.info(f"Successfully read {len(terms)} journals (level 2 terms)")
         return terms
     except Exception as e:
-        logger.error(f"Failed to read level 2 terms: {str(e)}", exc_info=True)
+        logger.error(f"Failed to read journals: {str(e)}", exc_info=True)
         raise
 
 
-def clean_conference_topic(item: str) -> str:
-    """Clean a conference topic/track item"""
+def clean_raw_topic(item: str) -> str:
+    """Clean a raw topic item extracted from journal webpage"""
     item = item.strip()
     # Remove common prefixes like "Topic:", "Track:", "Session:"
     item = re.sub(r'^(Topic|Track|Session|Area)[\s:]*', '', item, flags=re.IGNORECASE)
@@ -173,11 +178,11 @@ def clean_conference_topic(item: str) -> str:
     return item
 
 
-def score_conference_topic_list(items: List[str], metadata: Dict[str, Any], context_term: str) -> float:
-    """Score a conference topic list based on various heuristics"""
-    # Adjust weights for conference topics
+def score_raw_topic_list(items: List[str], metadata: Dict[str, Any], context_term: str) -> float:
+    """Score a raw topic list based on various heuristics"""
+    # Adjust weights for raw topics
     weights = {
-        "keyword": 0.40,      # Increased: Presence of conference/topic keywords is crucial
+        "keyword": 0.40,      # Increased: Presence of topic keywords is crucial
         "structure": 0.05,    # Decreased: HTML structure less important than content
         "pattern": 0.20,      # Moderate: Look for patterns like "Track:", "Topic:"
         "non_term": 0.25,     # Increased: Penalty for non-topic terms (registration, venue etc.)
@@ -193,27 +198,19 @@ def score_conference_topic_list(items: List[str], metadata: Dict[str, Any], cont
 
     # Use the common scoring function from list_extractor, passing the adjusted weights and keywords
     try:
-        # from generate_glossary.utils.web_search.list_extractor import score_list # Already imported
-        return score_list(
-            items=items,
-            metadata=metadata,
-            context_term=context_term,
-            keywords=CONFERENCE_KEYWORDS, # Use specific conference keywords
-            scoring_weights=weights
+        score = score_list(
+            items,
+            metadata,
+            context_term,
+            weights=weights,
+            keywords=CONFERENCE_KEYWORDS,
+            anti_keywords=NON_CONFERENCE_KEYWORDS,
+            patterns=JOURNAL_PATTERNS
         )
-    except ImportError:
-        logger.debug("score_list function not found, using fallback metadata scoring.")
-        # Simplified fallback based on metadata only
-        keyword_ratio = metadata.get("keyword_ratio", 0)
-        pattern_ratio = metadata.get("pattern_ratio", 0)
-        non_term_ratio = metadata.get("non_term_ratio", 1)
-        nav_score = metadata.get("structure_analysis", {}).get("nav_score", 1)
-        # Apply weights similar to above
-        score = (keyword_ratio * weights["keyword"] +
-                 pattern_ratio * weights["pattern"] +
-                 (1 - non_term_ratio) * weights["non_term"] +
-                 (1 - nav_score) * weights["structure"]) # Approximation
-        return min(max(score, 0.0), 1.0)
+        return score
+    except Exception as e:
+        logger.error(f"Error scoring list: {str(e)}", exc_info=True)
+        return 0.0
 
 
 async def run_multiple_llm_extractions(
@@ -258,7 +255,7 @@ async def run_multiple_llm_extractions(
             list_dict['metadata'] = {}
 
         # Use the conference topic scoring function
-        score = score_conference_topic_list(list_dict['items'], list_dict.get('metadata', {}), level2_term)
+        score = score_raw_topic_list(list_dict['items'], list_dict.get('metadata', {}), level2_term)
 
         scored_lists.append({
             'index': idx,
@@ -308,13 +305,13 @@ async def run_multiple_llm_extractions(
 
         # Create filter config for this attempt
         current_filter_config = FilterConfig(
-            scoring_fn=score_conference_topic_list, # Use conference scoring
-            clean_item_fn=clean_conference_topic,    # Use conference cleaning
+            scoring_fn=score_raw_topic_list, # Use conference scoring
+            clean_item_fn=clean_raw_topic,    # Use conference cleaning
             provider=current_provider,
             use_llm_validation=True,
             binary_llm_decision=False, # Assuming extraction, not binary decision
              # Use the new conference prompt template
-            binary_system_prompt=CONFERENCE_TOPIC_VALIDATION_SYSTEM_PROMPT_TEMPLATE.format(level2_term=level2_term),
+            binary_system_prompt=JOURNAL_TOPIC_VALIDATION_SYSTEM_PROMPT_TEMPLATE.format(journal=level2_term),
             min_score_for_llm=0.0, # Already filtered
             model_type=current_model_type
         )
@@ -405,15 +402,15 @@ async def process_level2_term(level2_term: str, # Renamed from level1_term
         list_config = ListExtractionConfig(
             keywords=CONFERENCE_KEYWORDS, # Use conference keywords
             anti_keywords=NON_CONFERENCE_KEYWORDS, # Use conference anti-keywords
-            patterns=CONFERENCE_PATTERNS # Use conference patterns
+            patterns=JOURNAL_PATTERNS # Use conference patterns
         )
         filter_config = FilterConfig(
-            scoring_fn=score_conference_topic_list, # Use conference scoring
-            clean_item_fn=clean_conference_topic,    # Use conference cleaning
+            scoring_fn=score_raw_topic_list, # Use conference scoring
+            clean_item_fn=clean_raw_topic,    # Use conference cleaning
             provider=provider,
             use_llm_validation=True,
             binary_llm_decision=False, # Assuming extraction
-            binary_system_prompt=CONFERENCE_TOPIC_VALIDATION_SYSTEM_PROMPT_TEMPLATE.format(level2_term=level2_term), # Use conference prompt
+            binary_system_prompt=JOURNAL_TOPIC_VALIDATION_SYSTEM_PROMPT_TEMPLATE.format(journal=level2_term), # Use conference prompt
             min_score_for_llm=min_score_for_llm,
             # model_type set in run_multiple_llm_extractions
         )
@@ -421,7 +418,7 @@ async def process_level2_term(level2_term: str, # Renamed from level1_term
         search_results = prefetched_search_results
         if search_results is None:
             # Use updated SEARCH_QUERIES
-            queries = [query.format(level2_term=level2_term) for query in SEARCH_QUERIES]
+            queries = [query.format(journal=level2_term) for query in SEARCH_QUERIES]
             logger.info(f"Searching with {len(queries)} queries for '{level2_term}'")
             search_results = web_search_bulk(queries, search_config, logger=logger, limit=MAX_SEARCH_RESULTS)
 
@@ -643,7 +640,7 @@ def perform_bulk_web_search(level2_terms: List[str], search_config: WebSearchCon
     for term in level2_terms:
         start_idx = len(all_queries)
         # Use .format(level2_term=term) for conference queries
-        current_term_queries = [query.format(level2_term=term) for query in queries_per_term]
+        current_term_queries = [query.format(journal=term) for query in queries_per_term]
         all_queries.extend(current_term_queries)
         term_to_query_indices[term] = (start_idx, len(all_queries))
 
@@ -725,7 +722,8 @@ def ensure_dirs_exist():
         Config.RAW_SEARCH_DIR, # Lv3
         Config.DETAILED_META_DIR, # Lv3
         os.path.dirname(Config.OUTPUT_FILE), # Lv3
-        os.path.dirname(Config.META_FILE) # Lv3
+        os.path.dirname(Config.META_FILE), # Lv3
+        CHECKPOINT_DIR  # Add checkpoint directory
     ]
 
     logger.info(f"BASE_DIR: {Config.BASE_DIR}")
@@ -735,6 +733,7 @@ def ensure_dirs_exist():
     logger.info(f"CACHE_DIR: {Config.CACHE_DIR}") # Output is Lv3
     logger.info(f"RAW_SEARCH_DIR: {Config.RAW_SEARCH_DIR}") # Output is Lv3
     logger.info(f"DETAILED_META_DIR: {Config.DETAILED_META_DIR}") # Output is Lv3
+    logger.info(f"CHECKPOINT_DIR: {CHECKPOINT_DIR}")
 
     for directory in dirs_to_create:
         try:
@@ -745,6 +744,42 @@ def ensure_dirs_exist():
             logger.error(f"Failed to create directory {directory}: {str(e)}")
             raise
 
+def save_checkpoint(processed_terms: Set[str], all_results: List[Dict[str, Any]], input_file_path: str):
+    """Save a checkpoint of processed terms and results"""
+    timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    checkpoint_data = {
+        "timestamp": timestamp,
+        "processed_terms": list(processed_terms),
+        "results": all_results,
+        "input_file_path": input_file_path
+    }
+    
+    try:
+        with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
+            json.dump(checkpoint_data, f)
+        logger.info(f"✅ Saved checkpoint with {len(processed_terms)} processed terms")
+    except Exception as e:
+        logger.error(f"❌ Failed to save checkpoint: {e}", exc_info=True)
+
+def load_checkpoint() -> Tuple[Set[str], List[Dict[str, Any]], Optional[str]]:
+    """Load previous checkpoint if it exists"""
+    if not os.path.exists(CHECKPOINT_FILE):
+        logger.info("No checkpoint file found, starting fresh")
+        return set(), [], None
+    
+    try:
+        with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
+            checkpoint_data = json.load(f)
+        
+        processed_terms = set(checkpoint_data.get("processed_terms", []))
+        results = checkpoint_data.get("results", [])
+        input_file_path = checkpoint_data.get("input_file_path")
+        
+        logger.info(f"✅ Loaded checkpoint from {checkpoint_data.get('timestamp', 'unknown')} with {len(processed_terms)} processed terms")
+        return processed_terms, results, input_file_path
+    except Exception as e:
+        logger.error(f"❌ Failed to load checkpoint: {e}", exc_info=True)
+        return set(), [], None
 
 async def main_async():
     """Async main execution function for Lv3 conference topic extraction"""
@@ -760,6 +795,8 @@ async def main_async():
         parser.add_argument("--agreement-threshold", type=int, default=Config.AGREEMENT_THRESHOLD, help=f"Minimum appearances threshold for topics (default: {Config.AGREEMENT_THRESHOLD})")
         parser.add_argument("--min-score-for-llm", type=float, default=DEFAULT_MIN_SCORE_FOR_LLM, help=f"Minimum heuristic score to send a list to LLM (default: {DEFAULT_MIN_SCORE_FOR_LLM})")
         parser.add_argument("--llm-model-types", type=str, default=",".join(DEFAULT_LLM_MODEL_TYPES), help=f"Comma-separated LLM model types for attempts (e.g., default,pro,mini) (default: {','.join(DEFAULT_LLM_MODEL_TYPES)})")
+        parser.add_argument("--resume", action='store_true', help="Resume from last checkpoint")
+        parser.add_argument("--skip-checkpoint", action='store_true', help="Skip checkpoint saving (useful for testing)")
 
         args = parser.parse_args()
 
@@ -772,6 +809,24 @@ async def main_async():
         agreement_threshold = args.agreement_threshold
         min_score_for_llm = args.min_score_for_llm
         llm_model_types = [mt.strip() for mt in args.llm_model_types.split(',') if mt.strip()]
+        resume_from_checkpoint = args.resume
+        skip_checkpoint = args.skip_checkpoint
+
+        # Ensure directories exist before anything else
+        ensure_dirs_exist()
+
+        # Check for and load checkpoint if resuming
+        processed_terms_set = set()
+        all_results = []
+        if resume_from_checkpoint:
+            processed_terms_set, checkpoint_results, checkpoint_input_file = load_checkpoint()
+            if processed_terms_set and checkpoint_results:
+                all_results = checkpoint_results
+                
+                # If the input file from the checkpoint doesn't match the provided one, warn user
+                if checkpoint_input_file and checkpoint_input_file != input_file_path:
+                    logger.warning(f"⚠️ Checkpoint was created with input file '{checkpoint_input_file}' but current input file is '{input_file_path}'")
+                    logger.warning("Continuing with current input file but skipping already processed terms")
 
         # Log settings
         logger.info(f"Starting conference topic extraction using level 2 terms from '{input_file_path}'")
@@ -780,12 +835,20 @@ async def main_async():
         logger.info(f"LLM attempts: {num_llm_attempts}, Agreement threshold: {agreement_threshold}")
         logger.info(f"LLM min score threshold: {min_score_for_llm}, LLM model types: {llm_model_types}")
         if append_mode: logger.info("Append mode enabled.")
+        if resume_from_checkpoint: logger.info(f"Resuming from checkpoint with {len(processed_terms_set)} already processed terms")
+        if skip_checkpoint: logger.info("Checkpoint saving is disabled")
         logger.info(f"Using optimized web search with dynamically calculated max terms per batch")
 
-        ensure_dirs_exist() # Create Lv3 directories
-
         # Read level 2 terms
-        level2_terms = read_level2_terms(input_file_path)
+        level2_terms = read_journals(input_file_path)
+        logger.info(f"Read {len(level2_terms)} level 2 terms from input file")
+        
+        # Filter out already processed terms if resuming
+        if resume_from_checkpoint and processed_terms_set:
+            remaining_terms = [term for term in level2_terms if term not in processed_terms_set]
+            logger.info(f"Filtered out {len(level2_terms) - len(remaining_terms)} already processed terms")
+            level2_terms = remaining_terms
+        
         logger.info(f"Processing {len(level2_terms)} level 2 terms")
 
         output_file = Config.OUTPUT_FILE # Lv3 topics file
@@ -800,11 +863,10 @@ async def main_async():
 
         ssl_context = ssl.create_default_context(cafile=certifi.where())
         connector = TCPConnector(
-            ssl=ssl_context, limit=max_concurrent, limit_per_host=2,
+            ssl=ssl_context, limit=max_concurrent, limit_per_host=3,  # Increased limit_per_host
             force_close=True, enable_cleanup_closed=True
         )
         cookie_jar = CookieJar(unsafe=True)
-        all_results = []
         start_time = time.time()
 
         general_semaphore = asyncio.Semaphore(max_concurrent)
@@ -818,29 +880,53 @@ async def main_async():
         ) as session:
             for i in range(0, len(level2_terms), batch_size):
                 batch = level2_terms[i:i+batch_size]
-                logger.info(f"Processing batch {i//batch_size + 1}/{(len(level2_terms) + batch_size - 1)//batch_size}")
+                batch_num = i//batch_size + 1
+                total_batches = (len(level2_terms) + batch_size - 1)//batch_size
+                logger.info(f"Processing batch {batch_num}/{total_batches}")
 
-                # Use updated batch processor
-                batch_results = await process_level2_terms_batch(
-                    batch,
-                    current_provider,
-                    session,
-                    general_semaphore,
-                    browser_semaphore,
-                    min_score_for_llm,
-                    llm_model_types,
-                    num_llm_attempts,
-                    agreement_threshold
-                )
-                all_results.extend(batch_results)
+                try:
+                    # Use updated batch processor
+                    batch_results = await process_level2_terms_batch(
+                        batch,
+                        current_provider,
+                        session,
+                        general_semaphore,
+                        browser_semaphore,
+                        min_score_for_llm,
+                        llm_model_types,
+                        num_llm_attempts,
+                        agreement_threshold
+                    )
+                    
+                    # Add processed terms to the set and results to the list
+                    processed_terms_set.update(batch)
+                    all_results.extend(batch_results)
 
-                # Log progress
-                elapsed = time.time() - start_time
-                terms_processed = min(i + batch_size, len(level2_terms))
-                terms_per_second = terms_processed / max(1, elapsed)
-                eta_seconds = (len(level2_terms) - terms_processed) / max(0.1, terms_per_second)
-                logger.info(f"Processed {terms_processed}/{len(level2_terms)} terms ({terms_processed/len(level2_terms)*100:.1f}%) in {elapsed:.1f}s ({terms_per_second:.2f} terms/s, ETA: {eta_seconds/60:.1f}m)")
+                    # Log progress
+                    elapsed = time.time() - start_time
+                    terms_processed = min(i + batch_size, len(level2_terms))
+                    if resume_from_checkpoint:
+                        total_processed = len(processed_terms_set)
+                        logger.info(f"Total processed terms (including from checkpoint): {total_processed}")
+                    
+                    terms_per_second = terms_processed / max(1, elapsed)
+                    eta_seconds = (len(level2_terms) - terms_processed) / max(0.1, terms_per_second)
+                    logger.info(f"Processed {terms_processed}/{len(level2_terms)} terms ({terms_processed/len(level2_terms)*100:.1f}%) in {elapsed:.1f}s ({terms_per_second:.2f} terms/s, ETA: {eta_seconds/60:.1f}m)")
+                    
+                    # Save checkpoint after each batch unless disabled
+                    if not skip_checkpoint:
+                        save_checkpoint(processed_terms_set, all_results, input_file_path)
+                    
+                except Exception as batch_error:
+                    logger.error(f"❌ Error processing batch {batch_num}/{total_batches}: {batch_error}", exc_info=True)
+                    # Save checkpoint on error to preserve progress
+                    if not skip_checkpoint:
+                        save_checkpoint(processed_terms_set, all_results, input_file_path)
+                    # Continue with next batch rather than stopping completely
+                    logger.info(f"Continuing with next batch despite error in batch {batch_num}")
+                    continue
 
+                # Small delay between batches
                 await asyncio.sleep(2)
 
         # Aggregation and Saving Logic

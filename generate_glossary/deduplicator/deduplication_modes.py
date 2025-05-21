@@ -601,7 +601,8 @@ def deduplicate_graph_based(
     max_workers: Optional[int] = None,
     use_enhanced_linguistics: bool = True,
     current_level: Optional[int] = None,
-    cache_dir: Optional[str] = None
+    cache_dir: Optional[str] = None,
+    max_workers_transitive: Optional[int] = None
 ) -> DeduplicationResult:
     """
     Graph-based deduplication that combines rule-based and web-based approaches.
@@ -623,6 +624,7 @@ def deduplicate_graph_based(
         use_enhanced_linguistics: Whether to use enhanced linguistic analysis
         current_level: Explicitly specified level for the current input terms
         cache_dir: Directory for caching intermediate results
+        max_workers_transitive: Maximum number of worker processes for transitive closure
         
     Returns:
         DeduplicationResult: Dictionary containing deduplicated terms and metadata
@@ -680,7 +682,9 @@ def deduplicate_graph_based(
         web_content=all_web_content,
         url_overlap_threshold=2,  # Default value
         min_relevance_score=min_relevance_score,  # Use min_relevance_score parameter
-        cache_dir=cache_dir  # Pass cache_dir parameter
+        cache_dir=cache_dir,  # Pass cache_dir parameter
+        current_level=current_level, # Pass current_level from the wrapper
+        max_workers_transitive=max_workers_transitive # Pass the new parameter
     )
     
     # Add higher level terms and terms_by_level to result for use by the CLI

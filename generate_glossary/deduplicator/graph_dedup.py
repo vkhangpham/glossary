@@ -112,6 +112,7 @@ def deduplicate_graph_based(
     min_relevance_score: float = 0.75,
     cache_dir: Optional[str] = None,
     current_level: Optional[int] = None,
+    max_workers_transitive: Optional[int] = None,  # New parameter
 ) -> DeduplicationResult:
     """
     Deduplicate terms using a graph-based approach.
@@ -126,11 +127,25 @@ def deduplicate_graph_based(
         min_relevance_score: Minimum relevance score for content to be considered
         cache_dir: Optional directory to cache embeddings
         current_level: Optional specific level to focus on
+        max_workers_transitive: Optional number of workers for parallel processing
 
     Returns:
         DeduplicationResult with deduplicated terms and variation info
     """
     logging.info("Starting graph-based deduplication")
+
+    # Ensure current_level is provided if cache_dir is used, this should be enforced by CLI
+    if cache_dir and current_level is None:
+        logging.error("Graph caching is enabled, but current_level is not specified. This is required.")
+        raise ValueError("current_level must be specified when using graph_cache_dir")
+    
+    # If no current_level is specified (e.g. first run without cache or single level processing)
+    # and terms_by_level is not empty, default to max level in input.
+    if current_level is None and terms_by_level:
+        current_level = max(terms_by_level.keys())
+    elif current_level is None and not terms_by_level:
+        logging.error("current_level is not specified and terms_by_level is empty.")
+        raise ValueError("Cannot determine current_level with empty terms_by_level.")
 
     # Check for overlapping terms between levels
     all_terms = set()
@@ -190,40 +205,27 @@ def deduplicate_graph_based(
                 with open(levels_cache_path, "rb") as f:
                     cached_levels = pickle.load(f)
                     
-                # Load web content flag if it exists
-                if os.path.exists(web_content_flag_path):
-                    with open(web_content_flag_path, "rb") as f:
-                        cached_had_web_content = pickle.load(f)
+                # Load web content flag if it exists (for saving, not reprocessing)
+                # if os.path.exists(web_content_flag_path):
+                #     with open(web_content_flag_path, "rb") as f:
+                #         cached_had_web_content = pickle.load(f)
                 
-                # Load levels with web content if file exists
-                if os.path.exists(web_content_levels_path):
-                    with open(web_content_levels_path, "rb") as f:
-                        cached_levels_with_web_content = pickle.load(f)
+                # Load levels with web content if file exists (for saving, not reprocessing)
+                # if os.path.exists(web_content_levels_path):
+                #     with open(web_content_levels_path, "rb") as f:
+                #         cached_levels_with_web_content = pickle.load(f)
                 
                 logging.info(f"Loaded cached graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
                 logging.info(f"Loaded embeddings for {len(term_embeddings)} terms")
-                logging.info(f"Previously processed levels: {cached_levels}")
-                logging.info(f"Previous run had web content: {cached_had_web_content}")
-                logging.info(f"Previous levels with web content: {cached_levels_with_web_content}")
+                logging.info(f"Previously processed (cached) levels: {cached_levels}")
+                # logging.info(f"Previous run had web content: {cached_had_web_content}") # Informational
+                # logging.info(f"Previous levels with web content: {cached_levels_with_web_content}") # Informational
                 
-                # Determine which levels have web content in the current run
-                current_levels_with_web_content = set()
-                if web_content:
-                    # Check which levels have terms with web content
-                    for level, terms in terms_by_level.items():
-                        for term in terms:
-                            if term in web_content and web_content[term]:
-                                current_levels_with_web_content.add(level)
-                                break
-                
-                logging.info(f"Current levels with web content: {current_levels_with_web_content}")
-                
-                # Force reprocessing for levels where web content is newly available
-                levels_to_reprocess = current_levels_with_web_content - cached_levels_with_web_content
-                if levels_to_reprocess:
-                    logging.info(f"Web content newly available for levels: {levels_to_reprocess}. Will reprocess these levels.")
-                    cached_levels = cached_levels - levels_to_reprocess
-                
+                # NEW LOGIC: We never reprocess old levels based on web content.
+                # Current level is always reprocessed if cache is used.
+                # Old levels in 'cached_levels' will not have their edges re-calculated by default
+                # in the edge-adding functions.
+                                
         except Exception as e:
             logging.error(f"Error loading cached graph data: {e}. Building new graph from scratch.")
             G = None
@@ -243,7 +245,7 @@ def deduplicate_graph_based(
 
     # Determine which terms need embeddings
     all_terms_list = [term for level, terms in terms_by_level.items() 
-                     for term in terms if level not in cached_levels or term not in term_embeddings]
+                     for term in terms if term not in term_embeddings]
     
     if embedder and all_terms_list:
         logging.info(f"Computing embeddings for {len(all_terms_list)} new terms...")
@@ -266,88 +268,148 @@ def deduplicate_graph_based(
     if G is None:
         # 1. Build initial graph with all terms (pass embeddings)
         G = build_term_graph(terms_by_level, term_embeddings)
-    else:
-        # If we have a cached graph, just add new terms
-        new_terms_to_add = {}
-        for level, terms in terms_by_level.items():
-            if level not in cached_levels:
-                new_terms_to_add[level] = terms
+        terms_to_process_for_edges_map = terms_by_level
+        terms_to_process_for_edges_list = [t for terms in terms_by_level.values() for t in terms]
+        levels_to_process_for_edges_set = set(terms_by_level.keys())
         
-        if new_terms_to_add:
-            logging.info(f"Adding {sum(len(terms) for terms in new_terms_to_add.values())} new terms to existing graph")
-            # Add the new terms to the graph
-            for level, terms in new_terms_to_add.items():
-                for term in terms:
-                    # Skip if node already exists
-                    if term in G:
-                        continue
-                    # Add node attributes
+        contextual_terms_map = terms_by_level # For a full run, input is the full context
+        contextual_terms_list = terms_to_process_for_edges_list
+        
+        is_incremental_processing = False
+        logging.info("Built new graph. All levels will be processed for edges.")
+    else:
+        # If we have a cached graph, add new terms/update existing ones from current input
+        logging.info(f"Using cached graph. Current level for active edge processing: {current_level}")
+        is_incremental_processing = True
+        
+        # Augment G and term_embeddings with terms from the current input (terms_by_level)
+        # This ensures G contains all nodes (cached + current input) and term_embeddings is complete.
+        for level_num, terms_in_level in terms_by_level.items():
+            for term in terms_in_level:
+                # Ensure embedding exists (it should if initial embedding step was comprehensive for terms_by_level)
+                # If a term from terms_by_level was somehow missed by initial embedding, this is a fallback thought.
+                # However, the initial embedding logic `all_terms_list = [t for l, ts in terms_by_level.items() for t in ts if t not in term_embeddings]`
+                # should cover all terms in the current input `terms_by_level`.
+
+                if term not in G:
                     G.add_node(
                         term,
-                        level=level,
+                        level=level_num, 
                         has_sciences_suffix=term.endswith(("sciences", "studies")),
                         word_count=len(term.split()),
                         embedding=term_embeddings.get(term)
                     )
+                else: # Term exists in G (from cache)
+                    # If this term (from cache) is also part of the current input's current_level,
+                    # update its level attribute in G to reflect the current input's designation.
+                    if level_num == current_level:
+                        G.nodes[term]['level'] = current_level
+                    # Update embedding if it was newly computed for this term from terms_by_level
+                    # (e.g., if it was in cache but its embedding was recomputed because it's in current input)
+                    if term_embeddings.get(term) is not None:
+                         G.nodes[term]['embedding'] = term_embeddings.get(term)
+        
+        # Define terms for *active* edge processing (focused on current_level from input)
+        if current_level is not None and current_level in terms_by_level:
+            terms_to_process_for_edges_list = terms_by_level[current_level]
+            levels_to_process_for_edges_set = {current_level}
+            terms_to_process_for_edges_map = {current_level: terms_by_level[current_level]}
+        else:
+            logging.warning(f"Current level {current_level} not found in input terms_by_level or is None. No active edge processing for this specific level.")
+            terms_to_process_for_edges_list = []
+            levels_to_process_for_edges_set = set()
+            terms_to_process_for_edges_map = {}
 
-    # Calculate which levels need to be processed
-    levels_to_process = set(terms_by_level.keys()) - cached_levels
-    
-    if not levels_to_process:
-        logging.info("All levels already processed. Using cached graph without further processing.")
+        # Build comprehensive contextual_terms_map and _list from ALL nodes currently in G.
+        # This includes cached nodes and any nodes added/updated from terms_by_level.
+        contextual_terms_map = defaultdict(list)
+        for term, data in G.nodes(data=True):
+            contextual_terms_map[data['level']].append(term)
+        contextual_terms_list = [term for terms in contextual_terms_map.values() for term in terms]
+        
+        # Ensure term_embeddings has embeddings for all terms in this comprehensive contextual_terms_list.
+        # Terms from cache should have embeddings. Terms from current input also. This is a safeguard.
+        newly_discovered_terms_for_embedding = [t for t in contextual_terms_list if t not in term_embeddings]
+        if embedder and newly_discovered_terms_for_embedding:
+            logging.info(f"Computing embeddings for {len(newly_discovered_terms_for_embedding)} newly discovered contextual terms in G...")
+            try:
+                embeddings_list_ctx = embedder.encode(newly_discovered_terms_for_embedding, show_progress_bar=True, convert_to_numpy=True)
+                for term, emb in zip(newly_discovered_terms_for_embedding, embeddings_list_ctx):
+                    term_embeddings[term] = emb
+                logging.info("Contextual embeddings for newly discovered terms computed.")
+            except Exception as e:
+                logging.error(f"Error computing embeddings for newly discovered contextual terms: {e}.")
+
+    # Collect all terms from the current input for functions that need full context
+    # all_terms_from_input_map = terms_by_level # This was used before, replaced by contextual_terms_map for broader context
+    # all_terms_from_input_list = [t for terms in terms_by_level.values() for t in terms]
+
+    if not terms_to_process_for_edges_list and is_incremental_processing:
+        logging.info(f"Current level {current_level} has no terms or is not being processed for new edges. Skipping edge additions.")
     else:
-        logging.info(f"Processing levels: {levels_to_process}")
+        logging.info(f"Actively processing edges involving {len(terms_to_process_for_edges_list)} terms from level(s): {levels_to_process_for_edges_set}")
         
-        # 2. Add rule-based relationships with level awareness
-        # Only process terms from levels that haven't been processed yet
-        terms_to_process = {}
-        for level in levels_to_process:
-            if level in terms_by_level:
-                terms_to_process[level] = terms_by_level[level]
-        
-        if terms_to_process:
-            logging.info(f"Adding rule-based edges for {sum(len(terms) for terms in terms_to_process.values())} new terms")
-            G = add_rule_based_edges(G, terms_to_process)
+        # 2. Add rule-based relationships
+        # Pass all terms for context, but specify current level terms for focused processing
+        G = add_rule_based_edges(
+            G, 
+            all_terms_map=contextual_terms_map, # Use comprehensive map from G
+            current_processing_level_num=current_level if is_incremental_processing else None,
+            current_processing_terms_list=terms_to_process_for_edges_list if is_incremental_processing else contextual_terms_list # If full, process all
+        )
 
-        # 3. Add compound term edges for new terms
-        # Get all terms from all levels for compound term checking
-        all_terms = [term for terms in terms_by_level.values() for term in terms]
-        # But only process the new terms for compound relationships
-        new_terms = [term for level, terms in terms_to_process.items() for term in terms]
-        if new_terms:
-            logging.info(f"Adding compound term edges for {len(new_terms)} new terms")
-            G = add_compound_term_edges(G, all_terms, new_terms)
+        # 3. Add compound term edges
+        # terms_to_process_for_edges_list here are the compound terms we check (from current level if incremental).
+        # contextual_terms_list provides all known components (from G).
+        G = add_compound_term_edges(G, contextual_terms_list, terms_to_process_for_edges_list)
 
         # 4. Add web-based relationships if web content is available
         if web_content:
-            # Check if we actually have web content for any of the new terms
-            new_terms_with_content = [t for t in new_terms if t in web_content and web_content[t]]
-            if new_terms_with_content:
-                logging.info(f"Found web content for {len(new_terms_with_content)} new terms, adding web-based edges")
+            # terms_to_check_web_content are the "initiating" terms for pair formation
+            terms_to_initiate_web_checks = terms_to_process_for_edges_list if is_incremental_processing else contextual_terms_list
+            # Check if we actually have web content for any of the terms that can initiate checks
+            initiating_terms_with_content = [t for t in terms_to_initiate_web_checks if t in web_content and web_content[t]]
+            
+            if initiating_terms_with_content:
+                logging.info(f"Found web content for {len(initiating_terms_with_content)} terms to initiate web-based edge checks.")
                 G = add_web_based_edges(
                     G,
-                    terms_by_level,
-                    web_content,
-                    levels_to_process=levels_to_process,
+                    all_terms_map=contextual_terms_map, # Comprehensive map from G
+                    web_content=web_content, # Full web_content as passed to function
+                    current_processing_level_num=current_level if is_incremental_processing else None,
+                    current_processing_terms_list=terms_to_process_for_edges_list # Active terms for pairing
                 )
             else:
-                logging.info("No web content found for new terms, skipping web-based edge addition")
+                logging.info("No web content found for terms that would initiate web-based checks, skipping web-based edge addition")
+        else:
+            logging.info("No web content provided, skipping web-based edge addition.")
 
         # 5. Add level weighting information
-        G = add_level_weights_to_edges(G, terms_by_level)
+        # add_level_weights_to_edges should use the canonical source of truth for levels for *this run*,
+        # which is terms_by_level (the input), not necessarily the levels stored in G if they differ.
+        G = add_level_weights_to_edges(G, terms_by_level) 
 
-        # 6. Find and add explicit transitive relationships 
-        # Only process transitive relationships involving new terms
-        new_terms_set = set(new_terms)
-        logging.info(f"Finding transitive relationships for {len(new_terms_set)} new terms")
-        transitive_edges = find_transitive_relationships(G, all_terms, new_terms_set)
-        if transitive_edges:
-            logging.info(f"Adding {len(transitive_edges)} transitive edges to graph")
-            G.add_edges_from(transitive_edges)
+        # 6. Find and add explicit transitive relationships
+        # terms_for_transitive_check should be the terms from the current active processing scope
+        terms_for_transitive_check = set(terms_to_process_for_edges_list if is_incremental_processing else contextual_terms_list)
+        if terms_for_transitive_check:
+            logging.info(f"Finding transitive relationships for {len(terms_for_transitive_check)} terms, using all {len(contextual_terms_list)} terms in G as context.")
+            transitive_edges = find_transitive_relationships(
+                G, 
+                contextual_terms_list, 
+                terms_to_check=terms_for_transitive_check,
+                max_workers=max_workers_transitive  # Pass down the parameter
+            )
+            if transitive_edges:
+                logging.info(f"Adding {len(transitive_edges)} transitive edges to graph")
+                G.add_edges_from(transitive_edges)
+            else:
+                logging.info("No new transitive edges found for the active processing scope")
         else:
-            logging.info("No transitive edges found")
+            logging.info("No terms to check for transitive relationships in the active processing scope.")
 
     # 7. Select canonical terms for each connected component, respecting level boundaries
+    # This uses the full terms_by_level from input to make decisions, as this represents the desired hierarchy for the current run.
     canonical_mapping = select_canonical_terms(G, terms_by_level)
 
     # 8. Clean up the canonical mapping to prevent inappropriate groupings
@@ -381,7 +443,14 @@ def deduplicate_graph_based(
                 pickle.dump(term_embeddings, f)
                 
             # Save processed levels (add newly processed levels)
-            cached_levels.update(levels_to_process)
+            # If it's an incremental run, only current_level was 'actively' processed for new edges
+            # If it's a full run (no cache), all input levels were processed.
+            if is_incremental_processing:
+                if current_level is not None: # Should always be true if incremental
+                    cached_levels.add(current_level)
+            else: # Full run, all input levels were processed
+                 cached_levels.update(terms_by_level.keys())
+
             with open(levels_cache_path, "wb") as f:
                 pickle.dump(cached_levels, f)
                 
@@ -463,7 +532,11 @@ def build_term_graph(terms_by_level: TermsByLevel, term_embeddings: Dict[str, np
     return G
 
 
-def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
+def add_rule_based_edges(G: nx.Graph, 
+                         all_terms_map: TermsByLevel, 
+                         current_processing_level_num: Optional[int] = None,
+                         current_processing_terms_list: Optional[List[str]] = None
+                         ) -> nx.Graph:
     """
     Adds edges to the graph based on rule-based relationships.
 
@@ -480,23 +553,25 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
 
     Args:
         G: NetworkX graph to add edges to
-        terms_by_level: Dict mapping level numbers to lists of terms
+        all_terms_map: Dict mapping level numbers to lists of terms
+        current_processing_level_num: Optional specific level to focus on (for incremental processing)
+        current_processing_terms_list: Optional list of terms to process (for incremental processing)
 
     Returns:
         Updated graph with rule-based relationship edges
     """
     initial_edge_count = G.number_of_edges()
     
-    # Create term to level mapping
+    # Create term to level mapping from the full input (all_terms_map which is contextual_terms_map from G)
     term_to_level = {}
-    for level, terms in terms_by_level.items():
+    for level, terms in all_terms_map.items(): # all_terms_map is contextual_terms_map from G
         for term in terms:
-            term_to_level[term] = level
+            term_to_level[term] = level 
 
-    all_terms = [term for terms in terms_by_level.values() for term in terms]
+    all_terms_list = [term for terms in all_terms_map.values() for term in terms] # all_terms_list is from G
     
     # Create dictionaries to quickly look up terms
-    all_terms_lower = {term.lower(): term for term in all_terms}
+    all_terms_lower = {term.lower(): term for term in all_terms_list}
     
     # OPTIMIZATION: Create indexes for fast lookups
     # Index terms by their base forms for fast lookup
@@ -653,7 +728,7 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
     lemma_to_terms = defaultdict(set)
 
     logging.info("Generating lemmas for terms...")
-    for term in tqdm(all_terms, desc="Lemmatizing"):
+    for term in tqdm(all_terms_list, desc="Lemmatizing"):
         term_lower = term.lower()
         tokens = word_tokenize(term_lower)
         if not tokens:
@@ -716,7 +791,13 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
     
     # Populate spelling and dash variations (can be done in the same term loop)
     logging.info("Processing spelling and dash variations...")
-    for term in tqdm(all_terms, desc="Spelling/Dash Variations"):
+    
+    # Determine terms to iterate over for initiating checks
+    # If incremental, iterate only current_processing_terms_list, check against all_terms_list
+    # If full run, iterate all_terms_list
+    iterating_terms = current_processing_terms_list if current_processing_level_num is not None else all_terms_list
+
+    for term in tqdm(iterating_terms, desc="Spelling/Dash Variations"):
         term_lower = term.lower()
         
         # Add spelling variations
@@ -749,7 +830,7 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
     
     # First, index terms by their base forms (to quickly find potential matches)
     # This indexing might need refinement depending on requirements
-    for term in all_terms:
+    for term in all_terms_list:
         term_lower = term.lower()
         term_base_index[term_lower] = term # Store direct term mapping
         for suffix in all_suffix_forms:
@@ -770,7 +851,10 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
     academic_suffix_pairs = []
 
     # Process morphological variants more efficiently using the index
-    for term1 in all_terms:
+    # Determine terms to iterate for initiating checks
+    iterating_terms_for_morph = current_processing_terms_list if current_processing_level_num is not None else all_terms_list
+
+    for term1 in iterating_terms_for_morph:
         term1_lower = term1.lower()
         level1 = term_to_level.get(term1, float("inf"))
         
@@ -878,38 +962,48 @@ def add_rule_based_edges(G: nx.Graph, terms_by_level: TermsByLevel) -> nx.Graph:
         
     processed_pairs_spelling_dash = set() # Avoid duplicate checks
 
-    for term1 in all_terms:
+    # Iterating terms for spelling/dash are the ones from current_processing_terms_list (if incremental)
+    # or all_terms (if full run).
+    # The spelling_variations and dash_variations dicts were built considering all terms initially.
+    
+    iterating_terms_for_spelling_dash = current_processing_terms_list if current_processing_level_num is not None else all_terms_list
+
+    for term1 in iterating_terms_for_spelling_dash:
         # Check spelling variations
-        for term2 in spelling_variations.get(term1, set()):
-            pair = tuple(sorted((term1, term2)))
-            if pair in processed_pairs_spelling_dash or G.has_edge(term1, term2):
+        for term2_original_case in spelling_variations.get(term1, set()): # term2 is from all_terms
+            # term1 is from current_processing_terms_list (if incremental)
+            # term2_original_case is its variant found among all_terms_list
+            # This pair naturally involves a current term if in incremental mode.
+            pair = tuple(sorted((term1, term2_original_case)))
+            if pair in processed_pairs_spelling_dash or G.has_edge(term1, term2_original_case):
                 continue
             processed_pairs_spelling_dash.add(pair)
             
             level1 = term_to_level.get(term1, float("inf"))
-            level2 = term_to_level.get(term2, float("inf"))
+            level2 = term_to_level.get(term2_original_case, float("inf"))
             is_cross_level = level1 != level2
             reason = f"Spelling variation detected"
             attrs = edge_attrs(reason, "spelling_variation", is_cross_level)
-            G.add_edge(term1, term2, **attrs)
+            G.add_edge(term1, term2_original_case, **attrs)
             edges_added_spelling_dash += 1
-            logging.debug(f"Adding spelling edge: '{term1}' <-> '{term2}'")
+            logging.debug(f"Adding spelling edge: '{term1}' <-> '{term2_original_case}'")
 
         # Check dash variations
-        for term2 in dash_variations.get(term1, set()):
-            pair = tuple(sorted((term1, term2)))
-            if pair in processed_pairs_spelling_dash or G.has_edge(term1, term2):
+        for term2_original_case in dash_variations.get(term1, set()): # term2 is from all_terms
+            # Similar logic as spelling: term1 is current (if incremental), term2 found in all_terms
+            pair = tuple(sorted((term1, term2_original_case)))
+            if pair in processed_pairs_spelling_dash or G.has_edge(term1, term2_original_case):
                 continue
             processed_pairs_spelling_dash.add(pair)
 
             level1 = term_to_level.get(term1, float("inf"))
-            level2 = term_to_level.get(term2, float("inf"))
+            level2 = term_to_level.get(term2_original_case, float("inf"))
             is_cross_level = level1 != level2
             reason = f"Dash/space variation detected"
             attrs = edge_attrs(reason, "dash_space_variation", is_cross_level)
-            G.add_edge(term1, term2, **attrs)
+            G.add_edge(term1, term2_original_case, **attrs)
             edges_added_spelling_dash += 1
-            logging.debug(f"Adding dash/space edge: '{term1}' <-> '{term2}'")
+            logging.debug(f"Adding dash/space edge: '{term1}' <-> '{term2_original_case}'")
             
     logging.info(f"Added {edges_added_spelling_dash} spelling/dash edges")
 
@@ -1167,9 +1261,10 @@ def get_dynamic_threshold(term1: str, term2: str, term_to_level: Dict[str, int])
 
 def add_web_based_edges(
     G: nx.Graph,
-    terms_by_level: TermsByLevel,
+    all_terms_map: TermsByLevel, # Changed from terms_by_level
     web_content: WebContent,
-    levels_to_process: Optional[Set[int]] = None,  # Optional set of levels to process
+    current_processing_level_num: Optional[int] = None, # New
+    current_processing_terms_list: Optional[List[str]] = None # New
 ) -> nx.Graph:
     """
     Add edges to the graph based on web content overlap and LLM verification.
@@ -1180,9 +1275,10 @@ def add_web_based_edges(
 
     Args:
         G: NetworkX graph to add edges to
-        terms_by_level: Dict mapping level numbers to lists of terms
+        all_terms_map: Dict mapping level numbers to lists of terms
         web_content: Dict mapping terms to their web content
-        levels_to_process: Optional set of level numbers to process (for incremental processing)
+        current_processing_level_num: Optional specific level to focus on (for incremental processing)
+        current_processing_terms_list: Optional list of terms to process (for incremental processing)
 
     Returns:
         Updated graph with web-based relationship edges
@@ -1194,34 +1290,55 @@ def add_web_based_edges(
 
     initial_edge_count = G.number_of_edges()
 
-    # Flatten terms_by_level into a single list - only process specified levels if provided
-    all_terms = []
-    terms_to_process_set = set()
+    # Flatten all_terms_map into a single list for general context
+    all_terms_list_from_input = [term for terms in all_terms_map.values() for term in terms]
     
-    for level, terms in terms_by_level.items():
-        all_terms.extend(terms)
-        if levels_to_process is None or level in levels_to_process:
-            terms_to_process_set.update(terms)
-
     # Filter to terms with web content for efficient processing
-    terms_with_content = {t for t in all_terms if t in web_content and web_content[t]}
-    terms_to_process_with_content = list(terms_with_content & terms_to_process_set)
+    terms_with_content_set = {t for t in all_terms_list_from_input if t in web_content and web_content[t]}
 
     logging.info(
-        f"{len(terms_with_content)} out of {len(all_terms)} total terms have web content"
-    )
-    logging.info(
-        f"Processing web-based relationships for {len(terms_to_process_with_content)} terms out of {len(terms_to_process_set)} specified terms"
+        f"{len(terms_with_content_set)} out of {len(all_terms_list_from_input)} total terms have web content"
     )
 
-    if not terms_to_process_with_content:
-        logging.warning("No terms to process with web content found")
+    # Determine the actual set of terms to form pairs for web-based checks
+    # If incremental, pairs must involve at least one term from current_processing_terms_list
+    # If full run, pairs are formed from all terms_with_content_set
+    
+    term_pairs_to_check = []
+
+    if current_processing_level_num is None or not current_processing_terms_list: # Full run or no specific terms to focus on
+        logging.info("Web-based: Processing all pairs from terms with content.")
+        term_pairs_to_check = list(itertools.combinations(list(terms_with_content_set), 2))
+    else:
+        logging.info(f"Web-based: Processing pairs involving current level {current_processing_level_num}.")
+        current_level_terms_with_content = [
+            t for t in current_processing_terms_list if t in terms_with_content_set
+        ]
+        other_level_terms_with_content = [
+            t for t in terms_with_content_set if t not in current_level_terms_with_content
+        ]
+        
+        # Pairs within the current level
+        term_pairs_to_check.extend(
+            itertools.combinations(current_level_terms_with_content, 2)
+        )
+        # Pairs between current level and other levels
+        term_pairs_to_check.extend(
+            itertools.product(current_level_terms_with_content, other_level_terms_with_content)
+        )
+        
+    if not term_pairs_to_check:
+        logging.warning("No term pairs to check for web-based relationships based on current processing scope.")
         return G
-
-    # Create mapping from term to level
+        
+    logging.info(
+        f"Processing web-based relationships for {len(term_pairs_to_check)} pairs."
+    )
+    
+    # Create mapping from term to level using all_terms_map
     term_to_level = {}
-    for level, terms in terms_by_level.items():
-        for term in terms:
+    for level, terms_in_level in all_terms_map.items():
+        for term in terms_in_level:
             term_to_level[term] = level
 
     # --- Precompute URL sets and relevant content --- 
@@ -1229,7 +1346,7 @@ def add_web_based_edges(
     term_relevant_content = defaultdict(list) # Use defaultdict
 
     logging.info("Building URL mappings and extracting relevant content")
-    for term in tqdm(terms_with_content, desc="Processing term URLs and content"):
+    for term in tqdm(terms_with_content_set, desc="Processing term URLs and content"):
         urls = set()
         content_list = web_content.get(term, []) # Get content for the term
         
@@ -1258,12 +1375,16 @@ def add_web_based_edges(
     high_overlap_edges = 0
 
     # Use combinations to avoid processing pairs twice
-    term_pairs = list(itertools.combinations(terms_to_process_with_content, 2))
+    # term_pairs = list(itertools.combinations(terms_to_process_with_content, 2))
     
-    logging.info(f"Checking {len(term_pairs)} pairs for web-based relationships")
+    logging.info(f"Checking {len(term_pairs_to_check)} pairs for web-based relationships")
     
     # Process pairs
-    for term1, term2 in tqdm(term_pairs, desc="Finding web relationships"):
+    for term1, term2 in tqdm(term_pairs_to_check, desc="Finding web relationships"):
+        # Ensure term1 and term2 are ordered to prevent processing (t1,t2) and (t2,t1) if product was used,
+        # though combinations and product into unique pairs should handle this.
+        if term1 > term2:
+            term1, term2 = term2, term1
         urls1 = term_urls.get(term1, set())
         urls2 = term_urls.get(term2, set())
         
@@ -1303,6 +1424,33 @@ def add_web_based_edges(
             continue # Move to next pair
             
         # --- LLM Verification for pairs with >= 2 shared URL (but not high overlap) ---
+        
+        # NEW: Pre-filter with embedding similarity before calling LLM
+        # Ensure both terms exist in the graph and have embeddings
+        if term1 in G.nodes and term2 in G.nodes:
+            embedding1 = G.nodes[term1].get('embedding')
+            embedding2 = G.nodes[term2].get('embedding')
+
+            if embedding1 is not None and embedding2 is not None:
+                similarity = calculate_embedding_similarity(embedding1, embedding2)
+                # EMBEDDING_SIMILARITY_THRESHOLD is defined globally
+                if similarity < EMBEDDING_SIMILARITY_THRESHOLD:
+                    logging.debug(f"Skipping LLM for '{term1}' <-> '{term2}' due to low embedding similarity: {similarity:.2f} < {EMBEDDING_SIMILARITY_THRESHOLD}")
+                    continue # Skip LLM verification for low similarity pairs
+            else:
+                # Log if embeddings are missing for one or both terms, but proceed to LLM if shared_urls condition met.
+                # The LLM check doesn't strictly depend on embeddings, this is just a pre-filter.
+                missing_embeddings_terms = []
+                if embedding1 is None: missing_embeddings_terms.append(f"'{term1}'")
+                if embedding2 is None: missing_embeddings_terms.append(f"'{term2}'")
+                logging.warning(f"Embedding(s) not found for {', '.join(missing_embeddings_terms)}. Cannot use embedding pre-filter for LLM verification of this pair.")
+        else:
+            missing_nodes_terms = []
+            if term1 not in G.nodes: missing_nodes_terms.append(f"'{term1}'")
+            if term2 not in G.nodes: missing_nodes_terms.append(f"'{term2}'")
+            logging.warning(f"Term(s) {', '.join(missing_nodes_terms)} not in graph. Cannot retrieve embeddings for LLM pre-filter.")
+
+
         llm_verifications += 1
         logging.debug(f"Checking LLM for: '{term1}' <-> '{term2}' (Shared URLs: {shared_count})")
     
@@ -1339,7 +1487,7 @@ def add_web_based_edges(
             logging.debug(f"Added LLM-verified edge: '{term1}' <-> '{term2}'")
 
     logging.info(f"Web-based edge summary:")
-    logging.info(f"- Total pairs checked: {len(term_pairs)}")
+    logging.info(f"- Total pairs checked: {len(term_pairs_to_check)}")
     logging.info(f"- Pairs with shared URLs checked by LLM: {llm_verifications}")
     logging.info(f"- Edges added via >50% URL overlap: {high_overlap_edges}")
     logging.info(f"- Edges added via LLM verification: {edges_added - high_overlap_edges}")
@@ -1737,7 +1885,10 @@ def calculate_term_similarity(info1: Dict[str, Any], info2: Dict[str, Any]) -> f
 
 
 def find_transitive_relationships(
-    G: nx.Graph, terms: List[str], terms_to_check: Optional[Set[str]] = None
+    G: nx.Graph, 
+    terms: List[str], 
+    terms_to_check: Optional[Set[str]] = None,
+    max_workers: Optional[int] = None  # New parameter
 ) -> List[Tuple[str, str, Dict[str, Any]]]:
     """
     Find terms that are connected via transitive relationships.
@@ -1752,6 +1903,7 @@ def find_transitive_relationships(
         G: NetworkX graph with terms and relationships
         terms: List of terms to check for transitive relationships
         terms_to_check: Optional set of terms to specifically check (for incremental processing)
+        max_workers: Optional number of workers for parallel processing
 
     Returns:
         List of edges to add (term1, term2, attributes)
@@ -1843,28 +1995,35 @@ def find_transitive_relationships(
     common_neighbors_dict = {}
     
     # For incremental processing, we need to check:
-    # 1. New terms with each other
-    # 2. New terms with existing terms that have common neighbors
+    # 1. New terms (from terms_to_check) with each other
+    # 2. New terms (from terms_to_check) with existing terms in the graph
     term_pairs = []
     
-    # Get all existing terms (excluding new terms)
-    existing_terms = set(terms) - terms_to_check
-    
-    # First, check pairs of new terms
-    new_terms_list = list(terms_to_check)
-    for i, term1 in enumerate(new_terms_list):
-        # Check with other new terms
-        for term2 in new_terms_list[i+1:]:
-            term_pairs.append((term1, term2))
+    # Get all existing terms in the graph (these could be from any previously processed level)
+    # `terms` is contextual_terms_list (all nodes in G)
+    # `terms_to_check` is the set of terms from current_level (if incremental) or all terms (if full run)
+
+    active_terms_list = list(terms_to_check)
+    # Ensure `terms` (contextual_terms_list) is a set for efficient difference calculation
+    all_other_terms_in_G = set(terms) - terms_to_check
+
+    for i, term1 in enumerate(active_terms_list):
+        # Pairs within the active set (terms_to_check)
+        for term2 in active_terms_list[i+1:]:
+            # Ensure a consistent order for pairs to avoid duplicates if G is undirected
+            # and common_neighbors_dict uses ordered tuples as keys.
+            term_pairs.append(tuple(sorted((term1, term2))))
             
-        # Check with existing terms
-        for term2 in existing_terms:
-            if term1 < term2:  # Maintain consistent ordering
-                term_pairs.append((term1, term2))
-            else:
-                term_pairs.append((term2, term1))
+        # Pairs between active set and all other terms in G
+        for term2 in all_other_terms_in_G:
+            term_pairs.append(tuple(sorted((term1, term2))))
     
-    logging.info(f"Checking {len(term_pairs)} term pairs for transitive relationships")
+    # Remove duplicate pairs that might have arisen if terms_to_check had overlap with all_other_terms_in_G (shouldn't happen with set difference)
+    # or if the generation logic produced them (e.g. if term1 > term2 in the second loop without sorting).
+    # Using set of sorted tuples handles this robustly.
+    term_pairs = sorted(list(set(term_pairs))) # Keep a defined order for processing if needed
+
+    logging.info(f"Checking {len(term_pairs)} term pairs for transitive relationships involving terms from current check scope")
     
     # Find common neighbors for each pair
     pairs_processed = 0
@@ -1901,11 +2060,12 @@ def find_transitive_relationships(
     chunk_size = max(100, len(items) // (multiprocessing.cpu_count() * 2))
     chunks = [items[i : i + chunk_size] for i in range(0, len(items), chunk_size)]
 
-    logging.info(f"Processing {len(chunks)} chunks in parallel")
+    logging.info(f"Processing {len(chunks)} chunks in parallel for transitive relationships")
 
     added_edges = []
     chunks_processed = 0
-    with ProcessPoolExecutor() as executor:
+    # Use max_workers if provided, otherwise ProcessPoolExecutor defaults to os.cpu_count()
+    with ProcessPoolExecutor(max_workers=max_workers) as executor:
         futures = []
         for chunk in chunks:
             future = executor.submit(

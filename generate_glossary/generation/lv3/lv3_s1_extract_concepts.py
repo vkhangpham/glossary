@@ -5,7 +5,7 @@ import json
 import random
 from collections import Counter
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional, Tuple, Set
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 from pydash import chunk
@@ -14,58 +14,37 @@ from concurrent.futures import ProcessPoolExecutor
 from functools import lru_cache
 import threading
 
-# Fix import path
+# Fix import path - Adjust based on the new file location (lv3)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
 
 # Load environment variables and setup logging
 load_dotenv()
-logger = setup_logger("lv3.s1")
+logger = setup_logger("lv3.s1") # Changed logger name
 
 # Get the base directory
-BASE_DIR = os.getcwd()  # Get the current working directory, which should be the project root
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
 
 # Process-local storage for LLM instances
 _process_local = threading.local()
 
-def normalize_research_area_name(research_area: str) -> str:
-    """
-    Normalize research area name by stripping common prefixes if present
-    
-    Args:
-        research_area: Research area name to normalize
-        
-    Returns:
-        Normalized research area name
-    """
-    prefixes = [
-        "tracks on ", "topics in ", "track on ", "topic in ", 
-        "workshops on ", "workshop on ", "special issues on ", "special issue on "
-    ]
-    
-    research_area_lower = research_area.lower()
-    for prefix in prefixes:
-        if research_area_lower.startswith(prefix):
-            return research_area[len(prefix):]
-    
-    return research_area
-
 class Config:
-    """Configuration for concept extraction"""
-    # Use the output from step 0
+    """Configuration for Lv3 concept extraction from conference topics"""
+    # Input files from Lv3 Step 0
     INPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_conference_topics.txt")
     META_FILE_STEP0 = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_metadata.json")
+    # Output files for Lv3 Step 1
     OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_extracted_concepts.txt")
     META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_metadata.json")
-    BATCH_SIZE = 10  # Size of batches for processing
-    NUM_WORKERS = 32  # Number of parallel workers
-    NUM_LLM_ATTEMPTS = 3  # Use 3 LLM runs
-    CONCEPT_AGREEMENT_THRESH = 2  # Concepts must appear in at least 2 responses
-    KW_APPEARANCE_THRESH = 1  # Minimum frequency threshold for concepts
-    MAX_CONTENT_WORDS = 10000  # Maximum words per content chunk
+    BATCH_SIZE = 5
+    NUM_WORKERS = 64 # Keep high for now
+    NUM_LLM_ATTEMPTS = 4  # Use multiple LLM runs for robustness
+    CONCEPT_AGREEMENT_THRESH = 3  # Concepts must appear in multiple responses
+    KW_APPEARANCE_THRESH = 1 # Minimum times a concept needs to appear across all results to be kept
+    MAX_CONTENT_WORDS = 100000 # Kept large, unlikely to be hit by topic lists
     COOLDOWN_PERIOD = 1  # Seconds between batches
-    COOLDOWN_FREQUENCY = 10  # Number of batches before cooldown
+    COOLDOWN_FREQUENCY = 10 # Number of batches before cooldown
 
 class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
@@ -74,7 +53,6 @@ class QuotaExceededError(Exception):
 def get_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
     """Get or initialize LLM with specified provider (process-local)"""
     if not hasattr(_process_local, 'llm'):
-        # logger.info(f"Initializing LLM with provider: {provider} for process {os.getpid()}")
         _process_local.llm = init_llm(provider, model)
     return _process_local.llm
 
@@ -82,659 +60,676 @@ def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> Bas
     """Initialize LLM with specified provider and model"""
     if not provider:
         provider = Provider.GEMINI  # Default to Gemini
-        
-    # Choose model based on parameters
-    if model == "default":
-        selected_model = OPENAI_MODELS["default"] if provider == Provider.OPENAI else GEMINI_MODELS["pro"]
-    else:  # mini
-        selected_model = OPENAI_MODELS["mini"] if provider == Provider.OPENAI else GEMINI_MODELS["default"]
-    
+
+    # Use the provided model type string ('pro', 'default', 'mini')
+    selected_model_name = OPENAI_MODELS.get(model, OPENAI_MODELS["default"]) if provider == Provider.OPENAI else GEMINI_MODELS.get(model, GEMINI_MODELS["default"])
+
     return LLMFactory.create_llm(
         provider=provider,
-        model=selected_model,
-        temperature=0.3
+        model=selected_model_name,
+        temperature=0.2 # Slightly lower temp for more deterministic extraction
     )
 
 def get_random_llm_config() -> Tuple[str, str]:
     """Get a random LLM provider and model configuration"""
-    provider = random.choice([Provider.OPENAI, Provider.GEMINI])
-    model = random.choice(["default", "mini"])
+    # provider = random.choice([Provider.OPENAI, Provider.GEMINI])
+    provider = Provider.OPENAI # Keep OpenAI for now
+    model = random.choice(["mini", "nano"])
     return provider, model
 
+# --- Updated Pydantic Models ---
 class ConceptExtraction(BaseModel):
-    """Base model for concept extraction"""
-    source: str = Field(description="Conference/journal topic from which concepts are extracted")
-    concepts: List[str] = Field(description="List of extracted concepts")
-    research_area: str = Field(description="Research area associated with the source topic")
+    """Base model for concept extraction from a journal topic"""
+    raw_topic: str = Field(description="Raw topic from which concepts are extracted")
+    concepts: List[str] = Field(description="List of extracted fundamental academic concepts or fields")
+    journal: str = Field(description="The Lv2 journal associated with the raw topic")
 
 class ConceptExtractionList(BaseModel):
     """Model for batch processing results"""
-    extractions: List[ConceptExtraction] = Field(description="List of concept extractions")
+    extractions: List[ConceptExtraction] = Field(description="List of concept extractions from journal topics")
 
+# --- Updated System Prompt ---
 SYSTEM_PROMPT = """
-You are an expert academic concept extractor specializing in identifying fundamental, standardized academic concepts and research fields from text describing **conference topics, journal special issues, or workshop themes**.
+You are an expert academic concept extractor specializing in identifying the **fundamental, standardized academic concepts, disciplines, or research fields** that are **directly represented** by specific **journal topics**.
 
-**CORE TASK:** Extract ONLY well-established, recognized academic disciplines, sub-disciplines, or research fields explicitly mentioned in the provided text.
+**CORE TASK:** Analyze the provided journal topic names (associated with a specific journal: '{journal}') and extract ONLY the underlying, established academic disciplines, sub-disciplines, or recognized research areas explicitly mentioned or directly implied by the topic's wording.
 
 **CRITICAL EXTRACTION GUIDELINES:**
 
-**1. Focus on Established Academic Fields:**
-    *   **EXTRACT:** Standardized academic disciplines (e.g., "computer science", "molecular biology"), sub-disciplines ("cognitive psychology"), and broad research areas ("machine learning", "quantum physics", "artificial intelligence").
+**1. Focus on Directly Represented Academic Fields:**
+    *   **EXTRACT:** Standardized academic disciplines (e.g., "computer science", "molecular biology"), sub-disciplines ("cognitive psychology"), and recognized research areas ("machine learning", "quantum physics", "condensed matter physics", "economic policy") that are **clearly and directly represented** by the topic name.
     *   **DO NOT EXTRACT:**
-        *   Specific, narrow research topics (e.g., "ecological effects of anthropogenic nutrient pulses"). Extract the *broader field* if mentioned (e.g., "ecology").
-        *   Workshop, session, or track titles if too specific or administrative (e.g., "workshop on advanced accounting", "machine learning track I-IV").
-        *   Degree-related concepts (e.g., "Ph.D. program in data science").
-        *   Project or paper titles if too specific.
+        *   The topic names themselves unless they *are* already a standardized field name (e.g., if a topic is just "Artificial Intelligence", extract "artificial intelligence").
+        *   Fields that are only tangentially related or require excessive inference. Stick closely to what the topic describes. (e.g., For "Novel Photonic Metamaterials", extract "photonics", "metamaterials". Do not jump to just "physics" unless the topic is very broad).
+        *   Organizers, session numbers, dates, or administrative details (e.g., "Track 3", "(Monday)").
+        *   Vague terms like "applications", "theory", "methods", "systems", "issues", "studies", "challenges" unless part of a standardized field name (e.g., "control theory", "systems biology", "security studies").
 
-**2. Strict Explicit Mention Rule:**
-    *   Extract ONLY concepts DIRECTLY and EXPLICITLY mentioned in the input text.
-    *   **DO NOT INFER:** Do not add related concepts, subfields, or specializations that are *not* present verbatim in the text. (e.g., If text says "machine learning", do NOT add "neural networks" or "deep learning").
+**2. Identify Standard Fields Within Topics:**
+    *   Extract the established field names implied by the specific terminology in the topic. The goal is precision based on the topic's focus.
+    *   Example: Topic "Compiler Optimizations for Heterogeneous Architectures" -> Extract: `["compilers", "computer architecture"]` (These fields are directly represented).
+    *   Example: Topic "Deep Reinforcement Learning for Robotic Manipulation" -> Extract: `["deep learning", "reinforcement learning", "robotics", "machine learning"]` (All standard fields mentioned or directly implied).
+    *   Example: Topic "Stellar Astrophysics and Galactic Dynamics" -> Extract: `["astrophysics", "galaxy dynamics"]` (Directly represented fields).
 
 **3. MANDATORY Compound Term Decomposition:**
-    *   **ALWAYS Split on "and":** If two potential concepts are joined by "and", ALWAYS split them into separate concepts.
-        *   Example: "Deep Learning and Natural Language Processing" -> "deep learning", "natural language processing".
-        *   Example: "Explainable AI and Ethics" -> "explainable ai", "ethics".
-        *   Example: "Smart Cities and Internet of Things" -> "smart cities", "internet of things".
-        *   Example: "Blockchain and Supply Chain Management" -> "blockchain", "supply chain management".
-    *   **Handle Shared Prefixes/Modifiers AFTER Splitting:** If terms joined by "and" share a common prefix/modifier, preserve the modifier/prefix for BOTH resulting terms after splitting.
-        *   Example: "Aerospace sciences and engineering" -> "aerospace sciences", "aerospace engineering".
-        *   Example: "Cognitive and behavioral neuroscience" -> "cognitive neuroscience", "behavioral neuroscience".
-        *   Example: "Theoretical and applied physics" -> "theoretical physics", "applied physics".
-        *   Example: "Quantum physics and computing" -> "quantum physics", "quantum computing".
-    *   **Single Concepts:** If a term does *not* contain "and" connecting potential sub-concepts, extract it as a single unit.
-        *   Example: "Quantum Computing" -> "quantum computing".
-        *   Example: "Cognitive Computing" -> "cognitive computing".
+    *   **Split on Conjunctions ("and", "&", "/"):** If a topic explicitly lists multiple fields joined by conjunctions, split them into separate concepts *first*. Then evaluate each resulting term against other rules.
+        *   Example: "Economics and Finance" -> Split "Economics", "Finance". Extract: `["economics", "finance"]`.
+        *   Example: "Signal Processing / Machine Learning" -> Split "Signal Processing", "Machine Learning". Extract: `["signal processing", "machine learning"]`.
+        *   Example: "Condensed Matter & Materials Physics" -> Split "Condensed Matter", "Materials Physics". Extract: `["condensed matter physics", "materials physics"]`.
+        *   Example: "Reproductive justice and abortion rights" -> Split "Reproductive justice", "abortion rights". Extract: `["reproductive justice", "abortion rights"]`.
+        *   Example: "Moral conflict and abortion ethics" -> Split "Moral conflict", "abortion ethics". Extract: `["moral conflict", "abortion ethics"]`.
+    *   **Handle Shared Modifiers:** If terms joined by a conjunction share a common prefix/modifier, preserve the modifier for BOTH resulting terms *if it forms a standard field name for both*. Apply context (Rule 6) after splitting.
+        *   Example: "Computational Fluid Dynamics and Heat Transfer" -> Split "Computational Fluid Dynamics", "Heat Transfer". Extract: `["computational fluid dynamics", "heat transfer"]`.
+        *   Example: "Organic and Biological Chemistry" -> Split "Organic Chemistry", "Biological Chemistry". Extract: `["organic chemistry", "biological chemistry"]`.
+        *   Example: "Environmental Economics and Policy" -> Split "Environmental Economics", "Environmental Policy". Extract: `["environmental economics", "environmental policy"]`.
+    *   **Decomposition within terms:** Identify and extract distinct standard fields packed within a topic name even without explicit conjunctions.
+        *   Example: "Human-Computer Interaction Design" -> Extract: `["human-computer interaction", "interaction design"]`.
+        *   Example: "Software Verification Techniques" -> Extract: `["software verification"]`.
 
 **4. Strict Exclusions List - DO NOT EXTRACT ANY OF THESE:**
-    *   **Conference/Journal/Event Identifiers:** "special issue on", "workshop on", "symposium for", "track on", "session about", "conference on".
-    *   **Administrative/Organizational Terms:** "committee", "presentation", "submission", "review", "deadline", "call for papers", "agenda", "schedule".
-    *   **Generic/Qualitative Terms:** "advances in", "recent developments", "emerging trends", "novel approaches", "state-of-the-art", "introduction to", "advanced", "fundamentals of".
-    *   **Proper Nouns:** Names of people, specific places, journals, or conferences unless they *are* the standardized name of the concept itself.
-    *   **Acronyms:** Unless the acronym is the standard, universally recognized name of the field (e.g., "NLP", "AI" are often acceptable, but prefer full names if available).
-    *   **Action/Process Words:** "understanding", "application", "development", "analysis", "methods".
-    *   **Navigation/Website Terms:** "home", "about", "contact", "back", "next".
-    *   **Degree Designations:** "B.S.", "M.S.", "M.A.", "Ph.D.", "bachelor's", "master's", "doctoral", "certificate".
-    *   **Part/Level Identifiers:** Roman numerals (I, II, III), part numbers.
-    *   **ANY concepts that do not appear verbatim in the input text.**
+    *   General methodological terms (e.g., "analysis", "modeling" unless part of a field like "financial modeling" or disambiguated by Rule 6).
+    *   Administrative/organizational terms: "track", "session", "workshop", "symposium", "conference", "proceedings", "call for papers", "cfp".
+    *   Generic terms: "research", "studies", "topics", "areas", "advances in", "emerging", "applications of", "foundations of", "special", "issues", "aspects", "perspectives".
+    *   Proper nouns (people, places, specific projects) unless they are part of a standard field name (e.g., "Boolean Algebra").
+    *   Acronyms unless universally recognized *as the field name* (e.g., "AI" for "artificial intelligence" is acceptable, but prefer full name if available in the topic).
 
 **5. Output Standardization:**
     *   Output all concepts in **lowercase**.
-    *   Prefer **singular forms** where appropriate (e.g., "algorithm" not "algorithms"), but maintain established plural forms (e.g., "data structures").
+    *   Use **standard, recognized forms** of field names.
+    *   Prefer **singular forms** where appropriate (e.g., "algorithm"), but maintain established plural forms (e.g., "data structures", "complex systems").
+    *   Normalize variations (e.g., "computation" -> "computing" or "computational science"; be consistent).
+
+**6. MANDATORY Contextual Disambiguation:**
+   *   **CRITICAL:** If an extracted concept term (after any splitting in Rule 3) is common and could have different meanings (e.g., "history", "languages", "literature", "policy", "law", "studies", "imaging", "modeling", "development", "memory"), you **MUST** attempt to disambiguate it.
+   *   **Use Context:** Prepend a relevant modifier derived from:
+        1.  **Adjectives/Nouns within the topic itself:** (e.g., Topic "African History" -> "african history").
+        2.  **The Journal (`{journal}`):** If the topic term is generic but the journal provides clear context (e.g., Journal: "Journal of Health Policy", Topic: "Policy Analysis" -> "health policy analysis").
+   *   **No Ambiguity Allowed:** Do **NOT** output ambiguous common terms without context if relevant context is available either in the topic or the journal name.
+   *   **Apply Consistently After Split:** If context is applied to one part of a split term, apply the *same relevant context* to other parts if they also need disambiguation.
+   *   Examples:
+       *   Topic: "Urban Policy and Planning" (Journal: General Social Science Journal) -> Extract: `["urban policy", "urban planning"]` (Context from topic).
+       *   Topic: "Policy Analysis" (Journal: Journal of Health Policy) -> Extract: `["health policy analysis"]` (Context from journal name).
+       *   Topic: "Neural Imaging Techniques" -> Extract: `["neural imaging"]` (Context from topic. "Techniques" excluded by Rule 4).
+       *   Topic: "Development and Aging" (Journal: Neuroscience Journal) -> Split "Development", "Aging". Apply context -> `["neural development", "neural aging"]`.
+       *   Topic: "Literary Theory" (Journal: Journal on East Asian Studies) -> Extract: `["east asian literary theory"]` (or potentially just "literary theory" if "East Asian" isn't standardly prefixed, but good to add context). Prefer `["east asian literature", "literary theory"]`.
+       *   Topic: "History of Science" (Journal: General History Journal) -> Extract: `["history of science"]` (Specific enough).
+       *   Topic: "Memory Studies" (Journal: Journal on Holocaust Studies) -> Extract: `["holocaust memory studies"]` (or `["holocaust studies", "memory studies"]`).
 
 **EXAMPLES:**
 
-1.  **Input:** "Special Issue on Machine Learning for Healthcare"
-    **Concepts:** `["machine learning", "healthcare"]` (Rule 1: Established fields; Rule 4: Exclude identifier)
-    **INVALID:** `["medical informatics"]` (Rule 2: Not explicitly mentioned)
+1.  **Journal:** (Example Journal: General Physics)
+    **Topic:** "Finite and infinite groups"
+    **Concepts:** `["group theory"]` (Standard field encompassing the topic)
 
-2.  **Input:** "Workshop on Explainable AI and Ethics"
-    **Concepts:** `["explainable ai", "ethics"]` (Rule 3: Mandatory split on "and"; Rule 4: Exclude identifier)
-    **INVALID:** `["interpretable machine learning"]` (Rule 2: Not explicitly mentioned)
+2.  **Journal:** (Example Journal: Environmental Science)
+    **Topic:** "Natural resource management and land use"
+    **Concepts:** `["natural resource management", "land use"]` (Split 'and')
 
-3.  **Input:** "Advances in Blockchain for Supply Chain"
-    **Concepts:** `["blockchain", "supply chain"]` (Rule 1: Established fields; Rule 4: Exclude generic term)
-    **INVALID:** `["distributed ledger"]` (Rule 2: Not explicitly mentioned)
+3.  **Journal:** (Example Journal: Nuclear Physics Symposium)
+    **Topic:** "Theory of hot matter and relativistic heavy-ion collisions (thor)"
+    **Concepts:** `["nuclear theory", "heavy-ion collisions"]` (Core fields represented, acronym/jargon excluded)
 
-4.  **Input:** "Cognitive Computing"
-    **Concepts:** `["cognitive computing"]` (Rule 3: Single concept, no "and")
-    **INVALID:** `["artificial intelligence"]` (Rule 2: Not explicitly mentioned)
+4.  **Journal:** (Example Journal: Communications Technology)
+    **Topic:** "Low power wireless networks"
+    **Concepts:** `["wireless networks", "low-power electronics"]` (Directly represented fields)
 
-5.  **Input:** "Smart Cities and Internet of Things"
-    **Concepts:** `["smart cities", "internet of things"]` (Rule 3: Mandatory split on "and")
-    **INVALID:** `["urban computing"]` (Rule 2: Not explicitly mentioned)
+5.  **Journal:** (Example Journal: Civil Engineering Expo)
+    **Topic:** "Structural health monitoring and diagnostics"
+    **Concepts:** `["structural health monitoring", "structural diagnostics"]` (Split 'and', shared modifier applied)
 
-6.  **Input:** "Computational methods in theoretical and applied physics"
-    **Concepts:** `["computational methods", "theoretical physics", "applied physics"]` (Rule 3: Mandatory split + shared modifier)
+6.  **Journal:** (Example Journal: Urban Planning Summit)
+    **Topic:** "Urban design | landscape| planning"
+    **Concepts:** `["urban design", "landscape architecture", "urban planning"]` (Split '|', expanded 'landscape')
 
-7.  **Input:** "Track on Ecological Effects of Anthropogenic Nutrient Pulses"
-    **Concepts:** `["ecology"]` (Rule 1: Too specific topic, extract broader field; Rule 4: Exclude identifier)
+7.  **Journal:** (Example Journal: AI and Language)
+    **Topic:** "Spoken language generation"
+    **Concepts:** `["natural language generation", "speech synthesis"]` (Standard related fields)
 
-8.  **Input:** "Workshop on Advanced Accounting Parts I-IV"
-    **Concepts:** `["accounting"]` (Rule 1: Extract broader field; Rule 4: Exclude identifier, level, parts)
+8.  **Journal:** (Example Journal: Logistics Tech)
+    **Topic:** "Data mining in logistics"
+    **Concepts:** `["data mining", "logistics"]` (Directly mentioned standard fields)
 
-9.  **Input:** "Ph.D. Session on Natural Language Processing Applications"
-    **Concepts:** `["natural language processing"]` (Rule 1 & 4: Exclude degree, session, generic 'applications')
+9.  **Journal:** (Example Journal: Infectious Diseases Update)
+    **Topic:** "Infectious disease mechanisms"
+    **Concepts:** `["infectious diseases"]` ('Mechanisms' is too generic)
+
+10. **Journal:** (Example Journal: Media & Culture Studies)
+    **Topic:** "Ethical issues of fashion journalism and consumer culture"
+    **Concepts:** `["journalism ethics", "fashion studies", "consumer culture"]` (Split, extracted core concepts/ethics)
+
 
 **Output Format:**
 Return ONLY the list of extracted concepts for each source topic in the specified JSON format. If a topic yields no valid concepts based on these strict rules, return an empty list `[]` for its `concepts` field. Ensure the overall output is valid JSON.
 """
 
 def preprocess_content(content: str) -> str:
-    """Preprocess content to reduce size and improve quality"""
-    # Remove extra whitespace
-    content = " ".join(content.split())
-    
-    # Truncate if too long
-    words = content.split()
-    if len(words) > Config.MAX_CONTENT_WORDS:
-        content = " ".join(words[:Config.MAX_CONTENT_WORDS])
-    
+    """Preprocess content (conference topic list)"""
+    # Minimal preprocessing needed for topic lists
+    content = content.strip()
     return content
 
+# --- Updated Prompt Builder ---
 def build_prompt(entries: List[Dict[str, Any]]) -> str:
-    """Build prompt for concept extraction"""
-    # Since entries are now grouped by research area, they should all have the same area
-    # Extract the research area from the first entry
-    research_area = entries[0].get("research_area", "") if entries else ""
+    """Build prompt for concept extraction from journal topics"""
+    # Entries are grouped by journal name
+    journal = entries[0].get("journal", "Unknown Journal") if entries else "Unknown Journal"
 
-    # Format list of conference topics/content
-    entries_str = "\n".join([f"- {entry.get('conference_topic', entry.get('content', ''))}" for entry in entries])
+    # Format list of journal topics, ensuring proper escaping for the f-string
+    topics_str = "\n".join([f"- {entry.get('raw_topic', '')}" for entry in entries if entry.get('raw_topic')])
 
-    return f"""Extract academic concepts and research fields related to the research area of **{research_area}**.
+    # Use a multi-line f-string with triple quotes for clarity
+    prompt = f"""Extract the fundamental academic concepts or research fields represented by the following topics from the journal: **{journal}**.
 
 **Critical Instructions:**
-1.  **Focus on Core Concepts:** Extract ONLY concepts that are core subfields or direct components of the main **{research_area}** discipline. Do NOT extract concepts that belong primarily to *other* disciplines, even if mentioned in a topic.
-    *   Example: If the research area is 'Databases', and a topic mentions 'applying machine learning to query optimization', extract 'query optimization' (if relevant as a database concept) but NOT 'machine learning' itself.
-2.  Follow all extraction rules specified in the initial System Prompt (regarding established fields, explicit mentions, decomposition, exclusions, etc.).
-3.  Output MUST be valid JSON in the specified format.
+1.  **Focus on Underlying Fields:** Identify the core academic disciplines/sub-disciplines/research areas related to each topic. Do *not* simply echo the topic name unless it's already a standard field.
+2.  **Infer Broader Concepts:** Infer the established fields from specific topic names (e.g., "Compiler Optimizations..." -> "compilers", "computer architecture").
+3.  Follow all extraction rules from the System Prompt (decomposition, exclusions, standardization).
+4.  **CRITICAL REMINDER (Rule 6):** Apply contextual modifiers ONLY if an extracted term is highly ambiguous AND the journal name provides clear context (e.g., Topic 'Modeling' from 'Financial Systems Journal' -> 'financial modeling'). Prioritize core field extraction.
+5.  Output MUST be valid JSON in the specified format.
 
 **Output Format:**
+```json
 {{
     "extractions": [
         {{
-            "source": "conference_topic_name_from_list_below",
-            "concepts": ["concept1", "concept2"],
-            "research_area": "{research_area}"
+            "raw_topic": "topic_name_from_list_below",
+            "concepts": ["concept1", "concept2", ...],
+            "journal": "{journal}"
         }}
         # ... one entry for each topic processed
     ]
 }}
+```
 
-**Input Conference Topics/Themes for the Research Area '{research_area}':**
-{entries_str}
+**Input Topics from {journal}:**
+{topics_str}
 
-Provide the JSON output containing the extracted concepts based *only* on the rules and the provided topics for the **{research_area}** research area."""
+Provide the JSON output containing the extracted fundamental concepts based *only* on the rules and the provided topics for **{journal}**. If a topic yields no concepts, return an empty list for its `concepts`.
+"""
+    return prompt
 
+# --- Updated Worker Function ---
 def process_batch_worker(args: tuple) -> List[List[ConceptExtraction]]:
-    """Worker function for parallel processing"""
+    """Worker function for parallel processing conference topics"""
     batch, num_attempts = args
+    if not batch:
+        return []
+
+    # Ensure the batch has entries before proceeding
+    if not any(batch):
+        logger.warning("Received an empty batch, skipping.")
+        return []
+
     try:
+        # Assuming all entries in a batch belong to the same conference/journal
+        journal = batch[0].get("journal", "Unknown Journal")
         prompt = build_prompt(batch)
-        
-        # Run multiple attempts with different providers/models
-        all_extractions = []
-        
+
+        all_attempt_results = [] # Store results from each attempt [[extraction1, extraction2], [extraction1, extraction2], ...]
+
         for attempt in range(num_attempts):
-            provider, model = get_random_llm_config()
-            logger.info(f"Attempt {attempt+1}/{num_attempts} using {provider}/{model} in process {os.getpid()}")
-            
+            provider, model_type = get_random_llm_config()
+            logger.debug(f"Attempt {attempt+1}/{num_attempts} using {provider}/{model_type} for '{journal}' in process {os.getpid()}")
+
             try:
                 # Get process-local LLM instance with specific provider/model
-                llm = init_llm(provider, model)
-                
-                logger.info(f"Processing batch with {len(batch)} items")
-                
+                llm = init_llm(provider, model_type)
+
                 try:
-                    logger.info("Attempting structured extraction with Pydantic model")
                     response = llm.infer(
                         prompt=prompt,
                         system_prompt=SYSTEM_PROMPT,
                         response_model=ConceptExtractionList,
                     )
-                    logger.info(f"Successfully extracted {len(response.text.extractions)} concepts with structured validation")
-                    all_extractions.append(response.text.extractions)
-                    
-                except Exception as e:
-                    if "insufficient_quota" in str(e):
-                        logger.error(f"API quota exceeded for provider {provider}")
-                        raise QuotaExceededError(f"API quota exceeded for provider {provider}")
-                    
-                    # Handle JSON validation errors specifically
-                    if "Invalid JSON" in str(e) or "JSONDecodeError" in str(e) or "model_validate_json" in str(e):
-                        logger.error(f"JSON validation error: {str(e)}")
-                        
-                        # Try a simpler approach without the Pydantic model
-                        try:
-                            logger.info("Attempting to extract concepts without structured validation")
-                            simple_response = llm.infer(
-                                prompt=prompt,
-                                system_prompt=SYSTEM_PROMPT,
-                            )
-                            
-                            logger.debug(f"Raw response: {simple_response.text[:500]}...")
-                            
-                            # Try to manually extract the JSON
-                            import json
-                            
-                            # Function to find balanced JSON objects
-                            def find_balanced_json(text):
-                                """Find balanced JSON objects in text"""
-                                results = []
-                                stack = []
-                                start_indices = []
-                                
-                                for i, char in enumerate(text):
-                                    if char == '{':
-                                        if not stack:  # Start of a new object
-                                            start_indices.append(i)
-                                        stack.append('{')
-                                    elif char == '}':
-                                        if stack and stack[-1] == '{':
-                                            stack.pop()
-                                            if not stack:  # End of an object
-                                                start = start_indices.pop()
-                                                results.append(text[start:i+1])
-                                
-                                return results
-                            
-                            # Look for JSON-like structures in the response
-                            matches = find_balanced_json(simple_response.text)
-                            logger.info(f"Found {len(matches)} potential JSON objects in response")
-                            
-                            for i, match in enumerate(matches):
-                                try:
-                                    logger.debug(f"Attempting to parse JSON object {i+1}: {match[:100]}...")
-                                    data = json.loads(match)
-                                    if 'extractions' in data:
-                                        # Convert to ConceptExtraction objects
-                                        extractions = []
-                                        for item in data['extractions']:
-                                            try:
-                                                extraction = ConceptExtraction(
-                                                    source=item.get('source', ''),
-                                                    concepts=item.get('concepts', []),
-                                                    research_area=item.get('research_area', '')
-                                                )
-                                                extractions.append(extraction)
-                                            except Exception as item_error:
-                                                logger.warning(f"Failed to parse extraction item: {str(item_error)}")
-                                        
-                                        if extractions:
-                                            logger.info(f"Successfully extracted {len(extractions)} concepts manually")
-                                            all_extractions.append(extractions)
-                                            break
-                                except Exception as json_error:
-                                    logger.debug(f"Failed to parse JSON object {i+1}: {str(json_error)}")
-                                    continue
-                                    
-                            # If still unsuccessful, add an empty list for this attempt
-                            if len(all_extractions) <= attempt:
-                                all_extractions.append([])
-                        
-                        except Exception as manual_error:
-                            logger.error(f"Failed manual extraction attempt: {str(manual_error)}")
-                            # Add an empty list to maintain attempt count
-                            all_extractions.append([])
-                    
-                    # If all attempts fail for this try, add an empty list
-                    if len(all_extractions) <= attempt:
-                        all_extractions.append([])
-            
-            except Exception as e:
-                logger.error(f"LLM run failed: {str(e)}")
-                # Add an empty list to maintain attempt count
-                all_extractions.append([])
-        
-        return all_extractions
-            
-    except Exception as e:
-        logger.error(f"Error in batch processing: {str(e)}")
-        return []
+                    # Ensure response.text is the Pydantic model instance
+                    if isinstance(response.text, ConceptExtractionList):
+                        attempt_extractions = response.text.extractions
+                        logger.debug(f"Attempt {attempt+1} succeeded with {len(attempt_extractions)} extractions for '{journal}' using structured parsing.")
+                        all_attempt_results.append(attempt_extractions)
+                    else:
+                         logger.error(f"Attempt {attempt+1} for '{journal}' returned unexpected type: {type(response.text)}. Expected ConceptExtractionList.")
+                         all_attempt_results.append([]) # Add empty list for this failed attempt
 
-def combine_extractions(extractions_list: List[List[ConceptExtraction]]) -> Dict[str, Dict[str, Any]]:
+                except Exception as e:
+                    logger.warning(f"Attempt {attempt+1} failed for '{journal}' with provider {provider}/{model_type}. Error: {str(e)}", exc_info=False) # Less verbose logging for common errors
+                    # Handle specific errors like quota
+                    if "insufficient_quota" in str(e).lower() or "rate limit" in str(e).lower():
+                        logger.error(f"API quota/rate limit exceeded for provider {provider}. Raising error.")
+                        # Optionally raise to stop, or just log and append empty
+                        # raise QuotaExceededError(f"API quota exceeded for provider {provider}")
+                        all_attempt_results.append([])
+                    # Handle JSON parsing/validation errors (might try raw extraction if needed)
+                    elif "model_validate_json" in str(e) or "jsondecodeerror" in str(e).lower():
+                         logger.warning(f"JSON validation/parsing error in attempt {attempt+1} for '{journal}'. Trying raw extraction fallback (not implemented yet).")
+                         # TODO: Implement raw extraction fallback if needed
+                         all_attempt_results.append([]) # Append empty for now
+                    else:
+                        all_attempt_results.append([]) # Append empty list for other errors
+
+            except Exception as llm_init_e:
+                logger.error(f"LLM initialization failed in attempt {attempt+1} for {provider}/{model_type}: {str(llm_init_e)}")
+                all_attempt_results.append([]) # Append empty list if LLM init fails
+
+        return all_attempt_results # Return list of lists of extractions
+
+    except Exception as e:
+        # Log error for the entire batch processing
+        conf_name = batch[0].get("journal", "Unknown Journal") if batch else "Empty Batch"
+        logger.error(f"Error processing batch for '{conf_name}': {str(e)}", exc_info=True)
+        # Return a structure indicating failure for all attempts in this batch run
+        return [[] for _ in range(num_attempts)]
+
+
+# --- Updated Combination and Filtering ---
+def combine_extractions(all_attempt_results: List[List[ConceptExtraction]]) -> Dict[Tuple[str, str], Dict[str, int]]:
     """
-    Combine extractions from multiple LLM runs and count concept frequencies
-    
+    Combine extractions from multiple LLM runs and count concept frequencies per source topic and conference.
+
     Args:
-        extractions_list: List of lists of extractions from multiple LLM runs
-        
+        all_attempt_results: List where each element is a list of ConceptExtraction objects from one LLM attempt.
+                             e.g., [[attempt1_ext1, attempt1_ext2], [attempt2_ext1, attempt2_ext2]]
+
     Returns:
-        Dictionary mapping sources to concepts and their occurrence counts
+        Dictionary mapping (source_topic, conference_name) tuples to concept frequency dictionaries {'concept': count}.
     """
-    combined_results = {}
-    
-    # Process each list of extractions
-    for extractions in extractions_list:
-        # Process each extraction in the list
-        for extraction in extractions:
-            source = extraction.source
-            research_area = extraction.research_area
-            
-            # Initialize source in combined results if not present
-            if source not in combined_results:
-                combined_results[source] = {
-                    "research_area": research_area,
-                    "concepts": {}
-                }
-                
-            # Update concept counts for this source
-            for concept in extraction.concepts:
-                concept_lower = concept.lower()
-                if concept_lower not in combined_results[source]["concepts"]:
-                    combined_results[source]["concepts"][concept_lower] = 0
-                combined_results[source]["concepts"][concept_lower] += 1
-    
-    return combined_results
+    combined_counts = {} # Key: (source_topic, conference_name), Value: {'concept': count}
+
+    for attempt_extractions in all_attempt_results:
+        if not isinstance(attempt_extractions, list):
+             logger.warning(f"Unexpected data type in attempt results: {type(attempt_extractions)}. Skipping this attempt.")
+             continue
+
+        for extraction in attempt_extractions:
+             # Validate extraction object
+             if not isinstance(extraction, ConceptExtraction):
+                  logger.warning(f"Unexpected item type in extraction list: {type(extraction)}. Skipping.")
+                  continue
+
+             raw_topic = extraction.raw_topic
+             conf_name = extraction.journal
+             key = (raw_topic, conf_name)
+
+             if key not in combined_counts:
+                 combined_counts[key] = {} # Initialize concept counter for this source
+
+             for concept in extraction.concepts:
+                 if not isinstance(concept, str) or not concept.strip():
+                      continue # Skip empty or invalid concepts
+                 concept_lower = concept.lower().strip()
+                 combined_counts[key][concept_lower] = combined_counts[key].get(concept_lower, 0) + 1
+
+    return combined_counts
+
 
 def filter_concepts_by_agreement(
-    combined_results: Dict[str, Dict], 
+    combined_counts: Dict[Tuple[str, str], Dict[str, int]],
     agreement_threshold: int
-) -> Dict[str, Dict[str, Any]]:
+) -> Dict[Tuple[str, str], Set[str]]:
     """
-    Filter concepts based on agreement threshold across multiple LLM runs
-    
+    Filter concepts based on agreement threshold across multiple LLM runs.
+
     Args:
-        combined_results: Dictionary mapping sources to research areas and concepts with counts
-        agreement_threshold: Minimum number of times a concept must appear
-        
+        combined_counts: Dictionary from combine_extractions. Key: (source_topic, conf_name), Value: {'concept': count}.
+        agreement_threshold: Minimum number of times a concept must appear for a given source.
+
     Returns:
-        Dictionary mapping sources to filtered data
+        Dictionary mapping (source_topic, conference_name) tuples to sets of agreed-upon concepts.
     """
-    filtered_results = {}
-    
-    for source, data in combined_results.items():
-        research_area = data["research_area"]
-        concepts_with_counts = data["concepts"]
-        
-        # Keep only concepts that meet the agreement threshold
-        filtered_concepts = {
-            concept for concept, count in concepts_with_counts.items() 
+    filtered_results = {} # Key: (source_topic, conf_name), Value: {agreed_concept1, agreed_concept2}
+
+    for key, concept_freq_dict in combined_counts.items():
+        agreed_concepts = {
+            concept for concept, count in concept_freq_dict.items()
             if count >= agreement_threshold
         }
-        
-        # Add filtered concepts to results
-        if filtered_concepts:
-            filtered_results[source] = {
-                "research_area": research_area,
-                "concepts": filtered_concepts
-            }
-    
+        if agreed_concepts: # Only store if there are concepts meeting the threshold
+            filtered_results[key] = agreed_concepts
+
     return filtered_results
 
+
+# --- Updated Parallel Processing Orchestrator ---
 def process_batches_parallel(
     batches: List[List[Dict[str, Any]]],
-    num_attempts: int = Config.NUM_LLM_ATTEMPTS
-) -> Dict[str, Dict[str, Any]]:
-    """Process batches in parallel using ProcessPoolExecutor and filter results"""
-    all_results = {}
-    
+    num_attempts: int = Config.NUM_LLM_ATTEMPTS,
+    agreement_threshold: int = Config.CONCEPT_AGREEMENT_THRESH
+) -> Dict[Tuple[str, str], Set[str]]:
+    """Process batches in parallel using ProcessPoolExecutor and filter results by agreement."""
+    final_agreed_concepts = {} # Key: (source_topic, conf_name), Value: {agreed_concept1, ...}
+
     with ProcessPoolExecutor(max_workers=Config.NUM_WORKERS) as executor:
+        # Map batches to worker function
         futures = [
             executor.submit(process_batch_worker, (batch, num_attempts))
-            for batch in batches
+            for batch in batches if batch # Ensure batch is not empty
         ]
-        
+
+        logger.info(f"Submitted {len(futures)} batch jobs to ProcessPoolExecutor.")
+
         for i, future in enumerate(tqdm(futures, desc="Processing batches")):
             try:
-                # Get extractions from all LLM runs for this batch
-                batch_extractions = future.result()
-                
-                if batch_extractions:
-                    # Combine and filter the extractions
-                    combined_results = combine_extractions(batch_extractions)
-                    filtered_results = filter_concepts_by_agreement(
-                        combined_results, Config.CONCEPT_AGREEMENT_THRESH
+                # result is List[List[ConceptExtraction]]
+                batch_attempt_results = future.result()
+
+                if batch_attempt_results:
+                    # Combine results from multiple attempts for this batch
+                    combined_batch_counts = combine_extractions(batch_attempt_results)
+
+                    # Filter based on agreement threshold
+                    filtered_batch_results = filter_concepts_by_agreement(
+                        combined_batch_counts, agreement_threshold
                     )
-                    
-                    # Merge into all_results
-                    for source, data in filtered_results.items():
-                        research_area = data["research_area"]
-                        concepts = data["concepts"]
-                        
-                        if source not in all_results:
-                            all_results[source] = {
-                                "research_area": research_area,
-                                "concepts": set()
-                            }
-                        
-                        all_results[source]["concepts"].update(concepts)
-                
+
+                    # Merge filtered results into the final dictionary
+                    final_agreed_concepts.update(filtered_batch_results)
+
                 # Apply cooldown periodically
                 if i > 0 and i % Config.COOLDOWN_FREQUENCY == 0:
+                    logger.debug(f"Applying cooldown period of {Config.COOLDOWN_PERIOD}s after batch {i+1}")
                     time.sleep(Config.COOLDOWN_PERIOD)
-                    
-            except Exception as e:
-                logger.error(f"Error processing batch: {str(e)}")
-                continue
-                
-    return all_results
 
-def prepare_entries_from_conference_topics(topics_file: str, metadata_file: str) -> List[Dict[str, Any]]:
+            except Exception as e:
+                logger.error(f"Error processing result from future {i}: {str(e)}", exc_info=True)
+                # Decide whether to continue or stop on error
+                continue
+
+    logger.info(f"Finished processing all batches. Found agreed-upon concepts for {len(final_agreed_concepts)} (topic, conference) pairs.")
+    return final_agreed_concepts
+
+
+# --- Updated Input Preparation ---
+def prepare_entries_from_raw_topics(topics_file: str, metadata_file: str) -> List[Dict[str, Any]]:
     """
-    Prepare entries for concept extraction from conference topics file and metadata
-    
+    Prepare entries for concept extraction from raw topics file and Lv3 metadata.
+
     Args:
-        topics_file: Path to conference topics file
-        metadata_file: Path to metadata file
-        
+        topics_file: Path to the file containing raw topics (lv3_s0_conference_topics.txt).
+        metadata_file: Path to the Lv3 metadata file (lv3_s0_metadata.json).
+
     Returns:
-        List of entries ready for concept extraction
+        List of entries, where each entry represents a raw topic
+        and includes its associated journal name(s).
+        Format: [{"raw_topic": "topic_name", "journal": "journal_name"}, ...]
     """
-    # Read conference topics
-    with open(topics_file, 'r', encoding='utf-8') as f:
-        conference_topics = [line.strip() for line in f if line.strip()]
-    
-    # Read metadata
-    with open(metadata_file, 'r', encoding='utf-8') as f:
-        metadata = json.load(f)
-    
-    # Extract level2_to_conference_topics mapping from metadata
-    level2_to_topics = metadata.get('level2_to_conference_topics_mapping', {})
-    
-    # Create entries that match the expected format
     entries = []
-    
-    for level2_term, topics in level2_to_topics.items():
-        if not topics:
-            continue
-            
-        # Create an entry for EACH conference topic individually to preserve the mapping
-        for topic in topics:
-            entry = {
-                "research_area": level2_term,
-                "content": topic,
-                "conference_topic": topic  # Track the specific conference topic
-            }
-            entries.append(entry)
-    
-    # If there are conference topics without level2 mapping, add them as a general entry
-    unmapped_topics = []
-    for topic in conference_topics:
-        mapped = False
-        for topics_list in level2_to_topics.values():
-            if topic in topics_list:
-                mapped = True
-                break
-        if not mapped:
-            unmapped_topics.append(topic)
-    
-    for topic in unmapped_topics:
-        entry = {
-            "research_area": "Conference Topics",
-            "content": topic,
-            "conference_topic": topic  # Track the specific conference topic
-        }
-        entries.append(entry)
-    
+    try:
+        # Read raw topics
+        with open(topics_file, 'r', encoding='utf-8') as f:
+            raw_topics = {line.strip() for line in f if line.strip()}
+        logger.info(f"Read {len(raw_topics)} unique raw topics from {topics_file}")
+
+        # Read Lv3 metadata
+        with open(metadata_file, 'r', encoding='utf-8') as f:
+            metadata = json.load(f)
+        logger.info(f"Loaded metadata from {metadata_file}")
+
+        # Get the mapping from topic back to its source Lv2 journal(s)
+        # Adjust key based on actual metadata structure from lv3_s0
+        topic_to_journals_mapping = metadata.get('conference_topic_level2_sources', {})
+        if not topic_to_journals_mapping:
+             # Check alternative nesting
+             metadata_nested = metadata.get("metadata", {})
+             topic_to_journals_mapping = metadata_nested.get('conference_topic_level2_sources', {})
+
+        if not topic_to_journals_mapping:
+            logger.warning("Could not find 'conference_topic_level2_sources' mapping in metadata. Cannot link topics to journals.")
+            # Fallback: create entries with unknown journal name
+            for topic in raw_topics:
+                entries.append({
+                    "raw_topic": topic,
+                    "journal": "Unknown Journal"
+                })
+            return entries
+
+        # Create entries, linking each topic to its source journal(s)
+        topics_processed = set()
+        for topic, sources in topic_to_journals_mapping.items():
+            if topic not in raw_topics:
+                continue # Skip topics from metadata not in the main topics file (consistency check)
+
+            if isinstance(sources, list) and sources:
+                # If a topic came from multiple journals, create an entry for each pair
+                for journal in sources:
+                    entries.append({
+                        "raw_topic": topic,
+                        "journal": journal
+                    })
+            elif isinstance(sources, str): # Handle case where source is just a string
+                 entries.append({
+                        "raw_topic": topic,
+                        "journal": sources
+                 })
+            topics_processed.add(topic)
+
+        # Add topics from the file that might not be in the metadata mapping (shouldn't happen ideally)
+        missing_topics = raw_topics - topics_processed
+        if missing_topics:
+             logger.warning(f"Found {len(missing_topics)} topics in {topics_file} that were not in the metadata mapping. Adding with 'Unknown' source.")
+             for topic in missing_topics:
+                  entries.append({
+                       "raw_topic": topic,
+                       "journal": "Unknown Journal"
+                  })
+
+        logger.info(f"Prepared {len(entries)} (topic, journal) pair entries for concept extraction.")
+
+    except FileNotFoundError:
+        logger.error(f"Input file not found: {topics_file} or {metadata_file}")
+        raise
+    except json.JSONDecodeError:
+        logger.error(f"Error decoding JSON from metadata file: {metadata_file}")
+        raise
+    except Exception as e:
+        logger.error(f"Error preparing entries: {e}", exc_info=True)
+        raise
+
     return entries
 
+
+# --- Main Execution Logic ---
 def main():
-    """Main execution function"""
+    """Main execution function for Lv3 Concept Extraction"""
     try:
-        logger.info("Starting concept extraction from conference topics")
-
-        # Prepare input data from the step 0 output
-        entries = prepare_entries_from_conference_topics(Config.INPUT_FILE, Config.META_FILE_STEP0)
-        logger.info(f"Prepared {len(entries)} entries from conference topics")
-
-        # Group entries by research area
-        entries_by_research_area = {}
-        for entry in entries:
-            research_area = entry["research_area"]
-            if research_area not in entries_by_research_area:
-                entries_by_research_area[research_area] = []
-            entries_by_research_area[research_area].append(entry)
-            
-        # Create batches for each research area separately
-        batches = []
-        for research_area, area_entries in entries_by_research_area.items():
-            area_batches = chunk(area_entries, Config.BATCH_SIZE)
-            batches.extend(area_batches)
-        logger.info(f"Split into {len(batches)} batches of size up to {Config.BATCH_SIZE}, grouped by research area")
-        
-        # Process batches in parallel and get filtered results
-        extracted_data = process_batches_parallel(batches, Config.NUM_LLM_ATTEMPTS)
-        
-        # Initialize mappings
-        source_concept_mapping = {}  # Map sources to concepts
-        conference_topic_concept_mapping = {}  # Map conference topics to concepts
-        research_area_conference_topic_mapping = {}  # Map research areas to conference topics
-        research_area_concept_mapping = {}  # Map research areas to concepts
-        
-        # Build mappings from the filtered results
-        for source, data in extracted_data.items():
-            research_area = data["research_area"]
-            concepts = data["concepts"]
-            
-            # Map source to concepts
-            if source not in source_concept_mapping:
-                source_concept_mapping[source] = set()
-            source_concept_mapping[source].update(concepts)
-            
-            # Map conference topic to concepts
-            if source not in conference_topic_concept_mapping:
-                conference_topic_concept_mapping[source] = set()
-            conference_topic_concept_mapping[source].update(concepts)
-            
-            # Map research area to conference topic
-            if research_area not in research_area_conference_topic_mapping:
-                research_area_conference_topic_mapping[research_area] = set()
-            research_area_conference_topic_mapping[research_area].add(source)
-            
-            # Map research area to concepts
-            if research_area not in research_area_concept_mapping:
-                research_area_concept_mapping[research_area] = set()
-            research_area_concept_mapping[research_area].update(concepts)
-
-        # Apply frequency threshold to all concepts
-        all_concepts = [
-            concept.lower()
-            for concepts in source_concept_mapping.values()
-            for concept in concepts
-        ]
-        concept_counts = Counter(all_concepts)
-        verified_concepts = sorted(
-            [
-                concept
-                for concept, count in concept_counts.items()
-                if count >= Config.KW_APPEARANCE_THRESH
-            ]
-        )
-
-        logger.info(f"Extracted {len(verified_concepts)} verified concepts")
+        logger.info("--- Starting Lv3 Concept Extraction from Raw Topics ---")
 
         # Create output directories if needed
         for path in [Config.OUTPUT_FILE, Config.META_FILE]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
-        # Save results
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
-            for concept in verified_concepts:
-                f.write(f"{concept}\n")
-            
-        # Create clean, consolidated mappings for metadata
-        source_concept_mapping_clean = {
-            source: sorted(list(concepts))
-            for source, concepts in source_concept_mapping.items()
-        }
-        
-        conference_topic_concept_mapping_clean = {
-            topic: sorted(list(concepts))
-            for topic, concepts in conference_topic_concept_mapping.items()
-        }
-        
-        research_area_conference_topic_mapping_clean = {
-            area: sorted(list(topics))
-            for area, topics in research_area_conference_topic_mapping.items()
-        }
-        
-        research_area_concept_mapping_clean = {
-            area: sorted(list(concepts))
-            for area, concepts in research_area_concept_mapping.items()
-        }
-        
-        with open(Config.META_FILE, "w", encoding="utf-8") as f:
-            json.dump(
-                {
-                    "metadata": {
-                        "input_count": len(entries),
-                        "output_count": len(verified_concepts),
-                        "batch_size": Config.BATCH_SIZE,
-                        "num_workers": Config.NUM_WORKERS,
-                        "llm_attempts": Config.NUM_LLM_ATTEMPTS,
-                        "concept_agreement_threshold": Config.CONCEPT_AGREEMENT_THRESH,
-                        "concept_frequency_threshold": Config.KW_APPEARANCE_THRESH,
-                        "providers_and_models": "random selection of OpenAI default/mini and Gemini default/mini",
-                        "temperature": 0.3,
-                    },
-                    "source_concept_mapping": source_concept_mapping_clean,
-                    "conference_topic_concept_mapping": conference_topic_concept_mapping_clean,
-                    "research_area_conference_topic_mapping": research_area_conference_topic_mapping_clean,
-                    "research_area_concept_mapping": research_area_concept_mapping_clean,
-                    "concept_frequencies": {
-                        concept: count 
-                        for concept, count in concept_counts.items()
-                        if count >= Config.KW_APPEARANCE_THRESH
-                    }
-                },
-                f,
-                indent=4,
-                ensure_ascii=False,
-            )
+        # Prepare input data: List of {"raw_topic": ..., "journal": ...}
+        entries = prepare_entries_from_raw_topics(Config.INPUT_FILE, Config.META_FILE_STEP0)
+        if not entries:
+            logger.error("No input entries prepared. Exiting.")
+            return
+        logger.info(f"Prepared {len(entries)} (topic, journal) pairs for processing.")
 
-        # Create a CSV file with the complete hierarchy
+        # Group entries by journal name for potentially better contextual batching
+        entries_by_journal = {}
+        for entry in entries:
+            journal = entry["journal"]
+            if journal not in entries_by_journal:
+                entries_by_journal[journal] = []
+            entries_by_journal[journal].append(entry)
+        logger.info(f"Grouped entries by {len(entries_by_journal)} unique journal names.")
+
+        # Create batches, ensuring entries in a batch share the same journal name
+        batches = []
+        for journal, journal_entries in entries_by_journal.items():
+            journal_batches = chunk(journal_entries, Config.BATCH_SIZE)
+            batches.extend(journal_batches)
+        logger.info(f"Split into {len(batches)} batches of max size {Config.BATCH_SIZE}, grouped by journal.")
+
+        # Process batches in parallel and get filtered results
+        # extracted_data: Key: (raw_topic, journal), Value: {agreed_concept1, ...}
+        extracted_data = process_batches_parallel(
+            batches,
+            Config.NUM_LLM_ATTEMPTS,
+            Config.CONCEPT_AGREEMENT_THRESH
+        )
+
+        if not extracted_data:
+            logger.warning("No concepts extracted after parallel processing and filtering. Exiting.")
+            return
+
+        # --- Aggregate and Build Mappings ---
+        all_concepts_found = set()
+        raw_topic_to_concept_mapping = {} # topic -> {concept1, concept2}
+        journal_to_concept_mapping = {} # journal -> {concept1, concept2}
+        concept_to_raw_topic_mapping = {} # concept -> {topic1, topic2}
+        concept_to_journal_mapping = {} # concept -> {journal1, journal2}
+
+        for (topic, journal), concepts in extracted_data.items():
+            all_concepts_found.update(concepts)
+
+            # Topic -> Concept
+            if topic not in raw_topic_to_concept_mapping:
+                raw_topic_to_concept_mapping[topic] = set()
+            raw_topic_to_concept_mapping[topic].update(concepts)
+
+            # Journal -> Concept
+            if journal not in journal_to_concept_mapping:
+                journal_to_concept_mapping[journal] = set()
+            journal_to_concept_mapping[journal].update(concepts)
+
+            # Concept -> Topic & Concept -> Journal
+            for concept in concepts:
+                if concept not in concept_to_raw_topic_mapping:
+                    concept_to_raw_topic_mapping[concept] = set()
+                concept_to_raw_topic_mapping[concept].add(topic)
+
+                if concept not in concept_to_journal_mapping:
+                    concept_to_journal_mapping[concept] = set()
+                concept_to_journal_mapping[concept].add(journal)
+
+        logger.info(f"Aggregated concepts. Found {len(all_concepts_found)} unique concepts initially.")
+
+        # Optional: Apply overall frequency threshold if needed (Config.KW_APPEARANCE_THRESH)
+        if Config.KW_APPEARANCE_THRESH > 1:
+            logger.info(f"Applying overall frequency threshold: {Config.KW_APPEARANCE_THRESH}")
+            # Recalculate concept counts across all sources
+            all_concepts_list = [
+                concept
+                for concepts_set in extracted_data.values()
+                for concept in concepts_set
+            ]
+            concept_counts = Counter(all_concepts_list)
+            verified_concepts_final = {
+                concept for concept, count in concept_counts.items()
+                if count >= Config.KW_APPEARANCE_THRESH
+            }
+            logger.info(f"Filtered concepts by frequency threshold. Keeping {len(verified_concepts_final)} concepts.")
+        else:
+            verified_concepts_final = all_concepts_found
+
+        logger.info(f"Total {len(verified_concepts_final)} unique Lv3 concepts verified.")
+
+        # --- Save Results ---
+
+        # Save unique verified concepts list
+        final_concepts_list_sorted = sorted(list(verified_concepts_final))
+        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+            for concept in final_concepts_list_sorted:
+                f.write(f"{concept}\n")
+        logger.info(f"Saved {len(final_concepts_list_sorted)} verified concepts to {Config.OUTPUT_FILE}")
+
+        # --- Prepare and Save Metadata ---
+
+        # Filter mappings to only include verified concepts
+        def filter_mapping_by_concepts(mapping_dict, verified_set):
+            filtered_map = {}
+            for key, concepts_set in mapping_dict.items():
+                filtered_concepts = concepts_set.intersection(verified_set)
+                if filtered_concepts:
+                    filtered_map[key] = sorted(list(filtered_concepts))
+            return filtered_map
+
+        def filter_reverse_mapping_by_concepts(mapping_dict, verified_set):
+             filtered_map = {}
+             for concept, sources_set in mapping_dict.items():
+                 if concept in verified_set and sources_set:
+                     filtered_map[concept] = sorted(list(sources_set))
+             return filtered_map
+
+        metadata_payload = {
+            "metadata": {
+                "input_topics_count": len({e["raw_topic"] for e in entries}),
+                "input_conference_journal_count": len(entries_by_journal),
+                "input_topic_conference_pairs": len(entries),
+                "output_unique_concepts_count": len(verified_concepts_final),
+                "batch_size": Config.BATCH_SIZE,
+                "num_workers": Config.NUM_WORKERS,
+                "llm_attempts": Config.NUM_LLM_ATTEMPTS,
+                "concept_agreement_threshold": Config.CONCEPT_AGREEMENT_THRESH,
+                "overall_concept_frequency_threshold": Config.KW_APPEARANCE_THRESH,
+                "llm_providers_models": "Random selection from OpenAI/Gemini (pro, default, mini)",
+                "llm_temperature": 0.2,
+            },
+            "conference_topic_to_concept_mapping": filter_mapping_by_concepts(
+                raw_topic_to_concept_mapping, verified_concepts_final
+            ),
+            "conference_journal_to_concept_mapping": filter_mapping_by_concepts(
+                journal_to_concept_mapping, verified_concepts_final
+            ),
+             "concept_to_conference_topic_mapping": filter_reverse_mapping_by_concepts(
+                concept_to_raw_topic_mapping, verified_concepts_final
+            ),
+             "concept_to_conference_journal_mapping": filter_reverse_mapping_by_concepts(
+                concept_to_journal_mapping, verified_concepts_final
+            ),
+            # Add concept frequencies if threshold > 1
+            "final_concept_frequencies": {
+                concept: count for concept, count in concept_counts.items()
+                if concept in verified_concepts_final
+            } if Config.KW_APPEARANCE_THRESH > 1 else "N/A (Threshold = 1)"
+        }
+
+        with open(Config.META_FILE, "w", encoding="utf-8") as f:
+            json.dump(metadata_payload, f, indent=4, ensure_ascii=False)
+        logger.info(f"Metadata saved to {Config.META_FILE}")
+
+
+        # --- Optional: Save Hierarchical CSV ---
         csv_file = os.path.join(Path(Config.META_FILE).parent, "lv3_s1_hierarchical_concepts.csv")
         try:
-            with open(csv_file, "w", encoding="utf-8") as f:
-                # Write header with conference topic, research area, and concept
-                f.write("conference_topic,research_area,concept\n")
-                
-                # Create a set to track unique entries and avoid duplicates
-                unique_entries = set()
-                
-                # Process data to write CSV
-                for source, concepts in source_concept_mapping.items():
-                    # Find research areas for this source
-                    research_areas = []
-                    for area, topics in research_area_conference_topic_mapping.items():
-                        if source in topics:
-                            research_areas.append(area)
-                    
-                    # If no research area found, use "General"
-                    if not research_areas:
-                        research_areas = ["General"]
-                        
-                    for research_area in research_areas:
-                        for concept in concepts:
-                            # Create a unique key to avoid duplicates
-                            entry_key = (source, research_area, concept)
-                            if entry_key in unique_entries:
-                                continue
-                            unique_entries.add(entry_key)
-                            
-                            # Escape commas and quotes in fields
-                            topic_str = source.replace('"', '""')
-                            area_str = research_area.replace('"', '""')
-                            concept_str = concept.replace('"', '""')
-                            
-                            # Add quotes if the field contains commas
-                            topic_csv = f'"{topic_str}"' if ',' in topic_str else topic_str
-                            area_csv = f'"{area_str}"' if ',' in area_str else area_str
-                            concept_csv = f'"{concept_str}"' if ',' in concept_str else concept_str
-                            
-                            f.write(f"{topic_csv},{area_csv},{concept_csv}\n")
-                
-            logger.info(f"Hierarchical concept relationships saved to {csv_file} with {len(unique_entries)} unique entries")
-            
-        except Exception as e:
-            logger.error(f"Failed to write CSV file: {str(e)}")
+            unique_csv_entries = set()
+            with open(csv_file, "w", encoding="utf-8", newline='') as f_csv:
+                 import csv
+                 writer = csv.writer(f_csv)
+                 # Write header
+                 writer.writerow(["conference_journal", "conference_topic", "extracted_concept"])
 
-        logger.info("Concept extraction from conference topics completed successfully")
+                 # Iterate through the original extracted_data before potential frequency filtering
+                 for (topic, conf_name), concepts in extracted_data.items():
+                      for concept in concepts:
+                           # Only write concepts that passed the final verification
+                           if concept in verified_concepts_final:
+                                entry_key = (conf_name, topic, concept)
+                                if entry_key not in unique_csv_entries:
+                                     writer.writerow([conf_name, topic, concept])
+                                     unique_csv_entries.add(entry_key)
+
+            logger.info(f"Hierarchical data saved to {csv_file} with {len(unique_csv_entries)} unique (Conf, Topic, Concept) rows.")
+
+        except Exception as e:
+            logger.error(f"Failed to write hierarchical CSV file: {str(e)}")
+
+
+        logger.info("--- Lv3 Concept Extraction completed successfully ---")
 
     except Exception as e:
-        logger.error(f"An error occurred: {str(e)}", exc_info=True)
+        logger.error(f"An error occurred during Lv3 Concept Extraction: {str(e)}", exc_info=True)
         raise
 
 if __name__ == "__main__":
+    # Apply nest_asyncio if available (might not be needed for ProcessPoolExecutor)
+    try:
+        import nest_asyncio
+        nest_asyncio.apply()
+        logger.info("Applied nest_asyncio patch.")
+    except ImportError:
+        logger.debug("nest_asyncio not found, skipping patch.")
+    except RuntimeError as e:
+         if "cannot apply patch" not in str(e).lower():
+              logger.warning(f"Could not apply nest_asyncio patch: {e}")
+
     main() 

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Hierarchy Evaluation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/common-navigation.css">
+    <link rel="stylesheet" href="/static/css/manual_evaluation.css">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --success-color: #198754;
+            --info-color: #0dcaf0;
+            --warning-color: #ffc107;
+            --light-gray: #f8f9fa;
+            --border-color: #dee2e6;
+            --accent-color: #6f42c1;
+        }
+        
+        body {
+            background-color: #fcfcfc;
+        }
+        
+        .evaluated-icon {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .just-evaluated {
+            background-color: #d1e7dd; /* Light green success background */
+            transition: background-color 1s ease-out; /* Smooth fade-out */
+        }
+        
+        .term-list-container {
+            max-height: 65vh;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            background-color: white;
+        }
+        
+        .term-list-container .list-group-item {
+            border-left: none;
+            border-right: none;
+            padding: 0.6rem 1rem;
+        }
+        
+        .term-list-container .list-group-item.evaluated {
+            border-left: 3px solid var(--success-color);
+        }
+        
+        .term-list-container .list-group-item.active {
+            background-color: rgba(13, 110, 253, 0.1);
+            color: var(--primary-color);
+            border-color: var(--border-color);
+            font-weight: 500;
+        }
+        
+        /* Term details enhancements */
+        #term-details-display {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            border: 1px solid var(--border-color);
+        }
+        
+        #term-details-display h4 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        #term-details-display dt {
+            font-weight: 600;
+            color: #555;
+        }
+        
+        #term-details-display dd {
+            margin-bottom: 0.75rem;
+        }
+        
+        #term-related-concepts-list a {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        /* Main Content Enhancements */
+        .evaluation-criteria {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .evaluation-criteria:hover {
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        }
+        
+        .evaluation-criteria h5 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .evaluation-criteria p {
+            color: #6c757d;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Form controls enhancements */
+        .form-check {
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-check-label {
+            margin-left: 0.25rem;
+        }
+        
+        textarea.evaluation-notes {
+            margin-top: 0.75rem;
+            background-color: #f9f9f9;
+            border-color: #e0e0e0;
+            resize: vertical;
+            min-height: 60px;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+        }
+        
+        textarea.evaluation-notes:focus {
+            background-color: #fff;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+        }
+        
+        /* Improve visual distinction for new elements */
+        #related-concepts-section {
+            background-color: #f8f8ff;
+        }
+        
+        #potential-parents-checklist,
+        #potential-variations-checklist {
+            margin-top: 0.75rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid #e6e6fa;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Navigation */
+        .form-nav {
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            border: 1px solid var(--border-color);
+        }
+        
+        .form-nav-item {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.25rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .form-nav-item:hover, .form-nav-item.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Sidebar improvements */
+        .sidebar {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            border: 1px solid var(--border-color);
+            height: calc(100vh - 150px);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .search-container {
+            margin-bottom: 1rem;
+        }
+        
+        .sampling-container {
+            background-color: #f8f9fa;
+            border-radius: 0.5rem !important;
+        }
+        
+        /* Buttons */
+        .btn-primary, .btn-secondary {
+            padding: 0.5rem 1.25rem;
+            font-weight: 500;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        /* Badges */
+        .badge {
+            font-weight: 500;
+            padding: 0.4em 0.7em;
+        }
+        
+        /* Enhanced form controls */
+        .form-check-input:checked {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .form-check-input:focus {
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+        }
+        
+        .term-badge {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: #333;
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            margin: 0.15rem;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.2s;
+        }
+        
+        .term-badge:hover {
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+        }
+        
+        /* Tooltip styling */
+        .custom-tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+            font-size: 0.85rem;
+        }
+        
+        .custom-tooltip .tooltip-text {
+            visibility: hidden;
+            width: 220px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -110px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .custom-tooltip .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+        }
+        
+        .custom-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        /* Progress indicator */
+        .progress-bar {
+            height: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center my-4">Manual Hierarchy Evaluation</h1>
+            </div>
+        </div>
+
+        <!-- Common Navigation -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <ul class="nav nav-pills" id="main-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" data-path="/">
+                            <i class="bi bi-diagram-3 nav-icon"></i>Hierarchy Visualizer
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/manual_evaluation" data-path="/manual_evaluation">
+                            <i class="bi bi-card-checklist nav-icon"></i>Manual Evaluation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/evaluation_stats" data-path="/evaluation_stats">
+                            <i class="bi bi-bar-chart-line nav-icon"></i>Evaluation Statistics
+                        </a>
+                    </li>
+             <li class="nav-item">
+                <a class="nav-link" href="/duplicates" data-path="/duplicates">
+                    <i class="bi bi-intersect nav-icon"></i>Duplicate Analysis
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Sidebar for Term Selection -->
+    <div class="col-md-3">
+         <div class="sidebar">
+            <div class="search-container mb-3">
+                <input type="text" id="search-input" class="form-control" placeholder="Search terms...">
+                <div id="search-results" class="mt-2"></div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header bg-light">
+                    <h6 class="mb-0"><i class="bi bi-funnel me-1"></i>Filters</h6>
+                </div>
+                <div class="card-body p-3">
+                    <div class="mb-3">
+                        <label for="filter-level-select" class="form-label">Level Filter</label>
+                        <select class="form-select form-select-sm" id="filter-level-select">
+                            <option value="all" selected>All Levels</option>
+                            <option value="0">Level 0</option>
+                            <option value="1">Level 1</option>
+                            <option value="2">Level 2</option>
+                            <option value="3">Level 3</option>
+                        </select>
+                    </div>
+                    <div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" id="show-evaluated-only">
+                        <label class="form-check-label" for="show-evaluated-only">
+                            <i class="bi bi-check2-circle me-1 text-success"></i>Show evaluated terms only
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header bg-light">
+                    <h6 class="mb-0"><i class="bi bi-shuffle me-1"></i>Random Sampling</h6>
+                </div>
+                <div class="card-body p-3">
+                    <div class="mb-3">
+                        <label for="sample-level-select" class="form-label">Sample from Level</label>
+                        <select class="form-select form-select-sm" id="sample-level-select">
+                            <option value="0">Level 0</option>
+                            <option value="1" selected>Level 1</option>
+                            <option value="2">Level 2</option>
+                            <option value="3">Level 3</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary w-100" id="get-random-sample-btn">
+                        <i class="bi bi-shuffle me-1"></i>Get Random Sample (100)
+                    </button>
+                </div>
+            </div>
+
+            <div class="term-list-container flex-grow-1">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="mb-0"><i class="bi bi-list-ul me-1"></i>Terms</h5>
+                    <span id="evaluated-count" class="badge bg-info">0 evaluated</span>
+                </div>
+                <p class="text-muted small">Select a term to evaluate</p>
+                <div class="d-flex mb-3">
+                    <span class="badge bg-success me-2"><i class="bi bi-check-circle-fill me-1"></i>Evaluated</span>
+                    <span class="badge bg-secondary"><i class="bi bi-clock-history me-1"></i>Pending</span>
+                </div>
+                <ul id="term-list" class="list-group list-group-flush"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Evaluation Area -->
+    <div class="col-md-9">
+        <div class="content-container">
+            <h2 id="selected-term-header" class="mb-4">Select a term from the list</h2>
+
+            <!-- Term Details Display -->
+            <div id="term-details-display" style="display: none;">
+                 <h4><i class="bi bi-info-circle me-2"></i>Term Details</h4>
+                 <dl class="row">
+                    <dt class="col-sm-3">Level</dt>
+                    <dd class="col-sm-9">
+                        <span class="badge bg-primary" id="term-level"></span>
+                        <span class="custom-tooltip ms-2">
+                            <i class="bi bi-question-circle text-muted"></i>
+                            <span class="tooltip-text">Level indicates the specificity of the term in the hierarchy.</span>
+                        </span>
+                    </dd>
+                    <dt class="col-sm-3">Parents</dt>
+                    <dd class="col-sm-9" id="term-parents-list"></dd>
+                    <dt class="col-sm-3">Variations</dt>
+                    <dd class="col-sm-9" id="term-variations-list"></dd>
+                 </dl>
+
+                 <div class="mt-3 mb-2">
+                    <span class="fs-6 text-muted me-2">Evaluation Progress:</span>
+                    <div class="progress">
+                        <div id="eval-progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted d-block mt-1">
+                        <span class="custom-tooltip">
+                            <i class="bi bi-info-circle me-1"></i>Fill all sections to complete the evaluation
+                            <span class="tooltip-text">The progress bar shows how many mandatory sections have been completed. It will turn green when all required responses have been provided.</span>
+                        </span>
+                    </small>
+                 </div>
+            </div>
+
+            <!-- Form Navigation -->
+            <div class="form-nav" id="form-nav" style="display: none;">
+                <div class="d-flex flex-wrap">
+                    <a href="#section-1" class="form-nav-item active" data-section="section-1">1. Academic Importance</a>
+                    <a href="#section-2" class="form-nav-item" data-section="section-2">2. Level Correctness</a>
+                    <a href="#section-3" class="form-nav-item" data-section="section-3">3. Variations</a>
+                    <a href="#section-4" class="form-nav-item" data-section="section-4">4. Parents</a>
+                    <a href="#section-5" class="form-nav-item" data-section="section-5">5. Related Concepts</a>
+                </div>
+            </div>
+
+            <!-- Evaluation Form -->
+            <form id="evaluation-form" style="display: none;">
+                <input type="hidden" id="term-name" name="term">
+
+                <!-- 1. Academic Importance -->
+                <div id="section-1" class="evaluation-criteria">
+                    <h5><i class="bi bi-mortarboard me-2"></i>1. Academic Importance</h5>
+                    <p>Is this a real academic concept/field, a subject of research, or just a general term?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="academic_importance" id="importance-field" value="field">
+                        <label class="form-check-label" for="importance-field">Field of Research (e.g., Machine Learning)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="academic_importance" id="importance-subject" value="subject">
+                        <label class="form-check-label" for="importance-subject">Subject of Research (e.g., specific algorithm, dataset)</label>
+                    </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="academic_importance" id="importance-general" value="general">
+                        <label class="form-check-label" for="importance-general">General Term (e.g., 'analysis', 'system')</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="academic_importance" id="importance-not_academic" value="not_academic">
+                        <label class="form-check-label" for="importance-not_academic">Not Academic / Noise</label>
+                    </div>
+                    <textarea class="form-control evaluation-notes" name="academic_importance_notes" placeholder="Optional notes..."></textarea>
+                </div>
+
+                <!-- 2. Level Correctness -->
+                <div id="section-2" class="evaluation-criteria">
+                    <h5><i class="bi bi-layers me-2"></i>2. Level Correctness</h5>
+                    <p>Should this term be at its current level (<span id="current-level-display" class="badge bg-primary">N/A</span>)? If not, which level is more appropriate?</p>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="level_correctness" id="level-correct" value="correct">
+                        <label class="form-check-label" for="level-correct">Current Level is Correct</label>
+                    </div>
+                    <div class="d-flex flex-wrap mt-2 mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level_correctness" id="level-0" value="0">
+                            <label class="form-check-label" for="level-0">Level 0</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level_correctness" id="level-1" value="1">
+                            <label class="form-check-label" for="level-1">Level 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level_correctness" id="level-2" value="2">
+                            <label class="form-check-label" for="level-2">Level 2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level_correctness" id="level-3" value="3">
+                            <label class="form-check-label" for="level-3">Level 3</label>
+                        </div>
+                    </div>
+                    <textarea class="form-control evaluation-notes" name="level_correctness_notes" placeholder="Optional notes..."></textarea>
+                </div>
+
+                <!-- 3. Variation Correctness -->
+                <div id="section-3" class="evaluation-criteria">
+                    <h5><i class="bi bi-translate me-2"></i>3. Variation Correctness</h5>
+                    <p>Are the listed variations appropriate synonyms or related forms of the term?</p>
+                    <div id="variations-checklist" class="mb-3">
+                        <!-- Checkboxes will be populated by JS -->
+                        <p class="text-muted">No variations listed for this term.</p>
+                    </div>
+                    <textarea class="form-control evaluation-notes" name="variation_correctness_notes" placeholder="Optional overall notes on variations..."></textarea>
+                </div>
+
+                <!-- 4. Parent-Child Relationship -->
+                <div id="section-4" class="evaluation-criteria">
+                    <h5><i class="bi bi-diagram-3 me-2"></i>4. Parent Relationship Correctness</h5>
+                    <p>Does the relationship with each parent make sense (is this term a valid sub-concept of the parent)?</p>
+                     <div id="parents-checklist" class="mb-3">
+                        <!-- Checkboxes will be populated by JS -->
+                         <p class="text-muted">No parents listed for this term.</p>
+                    </div>
+                    <textarea class="form-control evaluation-notes" name="parent_relationship_notes" placeholder="Optional overall notes on parent relationships..."></textarea>
+                </div>
+
+                <!-- 5. Related Concepts section will be added dynamically by JS -->
+                <div id="section-5"></div>
+
+                <div class="d-flex justify-content-between mt-4 mb-5">
+                    <button type="button" id="clear-form-btn" class="btn btn-light">
+                        <i class="bi bi-arrow-counterclockwise me-1"></i>Reset Form
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i>Save Evaluation
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+     <!-- Save Notification Toast -->
+    <div id="save-notification" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="bi bi-check-circle me-2"></i>Evaluation saved successfully!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script> <!-- Keep d3 for potential future use, or remove if definitely not needed -->
+    <script src="/static/js/common-navigation.js"></script>
+    <script src="/static/js/manual_evaluation.js"></script>
+</body>
+</html> 

@@ -38,8 +38,8 @@ OPENAI_MODELS = {
 
 GEMINI_MODELS = {
     "default": "gemini-2.5-flash-preview-04-17",
-    "pro": "gemini-2.5-pro-preview-03-25",
-    "mini": "gemini-2.0-flash",
+    "pro": "gemini-2.5-flash-preview-04-17",
+    "mini": "gemini-2.5-flash-preview-04-17",
     "nano": "gemini-2.0-flash-lite"
 }
 

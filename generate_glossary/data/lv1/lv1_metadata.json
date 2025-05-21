@@ -1,0 +1,3062 @@
+{
+  "accounting": {
+    "sources": [
+      "accounting (bs) academic plan",
+      "accounting, finance and economics"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": [
+      "accountancy",
+      "accounting research",
+      "accounting theory",
+      "accounting education"
+    ]
+  },
+  "administrative law": {
+    "sources": [
+      "administrative law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "adolescent medicine": {
+    "sources": [
+      "adolescent and young adult medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "young adult medicine"
+    ]
+  },
+  "aerospace engineering": {
+    "sources": [
+      "aerospace and mechanical engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "aeronautical engineering"
+    ]
+  },
+  "african american studies": {
+    "sources": [
+      "african & african american studies"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": [
+      "black studies",
+      "africana studies"
+    ]
+  },
+  "african studies": {
+    "sources": [
+      "african & african american studies"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "agricultural education": {
+    "sources": [
+      "agricultural education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "allergy": {
+    "sources": [
+      "allergy and immunology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "allergy medicine": {
+    "sources": [
+      "pulmonary, allergy, critical care, and sleep medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "allied health professions": {
+    "sources": [
+      "allied health professions"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "american sign language": {
+    "sources": [
+      "american sign language (asl)"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": []
+  },
+  "anatomy": {
+    "sources": [
+      "cell systems & anatomy"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "anesthesia": {
+    "sources": [
+      "anesthesia and perioperative medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "antitrust": {
+    "sources": [
+      "intellectual property and antitrust"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "antitrust law",
+      "competition law"
+    ]
+  },
+  "applied physics": {
+    "sources": [
+      "applied and engineering physics"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "engineering physics"
+    ]
+  },
+  "applied physiology": {
+    "sources": [
+      "kinesiology & applied physiology"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "arabic": {
+    "sources": [
+      "foreign languages arabic (arbc) chinese (chin) french (fren) japanese (jpns) spanish (span)"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": []
+  },
+  "architectural engineering": {
+    "sources": [
+      "civil and architectural engineering and mechanics"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "art history": {
+    "sources": [
+      "art and art history"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": [
+      "history of art"
+    ]
+  },
+  "arts management": {
+    "sources": [
+      "arts management program"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "athletic training": {
+    "sources": [
+      "athletic training and clinical nutrition"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "behavioral health": {
+    "sources": [
+      "behavioral health & nutrition"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "mental health"
+    ]
+  },
+  "behavioral sciences": {
+    "sources": [
+      "psychiatry and behavioral sciences",
+      "social and behavioral sciences"
+    ],
+    "parents": [
+      "medicine",
+      "public health"
+    ],
+    "variations": [
+      "behavioural science",
+      "behavioral science"
+    ]
+  },
+  "biochemistry": {
+    "sources": [
+      "biochemistry & structural biology",
+      "biochemistry and molecular biology"
+    ],
+    "parents": [
+      "medicine",
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "biomedical engineering": {
+    "sources": [
+      "electrical & biomedical engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "biomolecular engineering": {
+    "sources": [],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "biostatistics": {
+    "sources": [
+      "epidemiology & biostatistics",
+      "epidemiology and biostatistics"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "biosystems engineering": {
+    "sources": [
+      "biosystems engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "biological engineering"
+    ]
+  },
+  "blood transplantation": {
+    "sources": [
+      "blood and marrow transplantation and cellular therapies"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "marrow transplantation"
+    ]
+  },
+  "business administration": {
+    "sources": [
+      "business administration"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "business analytics": {
+    "sources": [],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "business economics": {
+    "sources": [
+      "economics (ba, bs) economics ba economics business economics finance"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "business information systems": {
+    "sources": [
+      "business information systems department"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": [
+      "management information systems"
+    ]
+  },
+  "business law": {
+    "sources": [
+      "business law and society"
+    ],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "cardiothoracic surgery": {
+    "sources": [
+      "cardiothoracic surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "career education": {
+    "sources": [
+      "career and technical/workforce education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "cell biology": {
+    "sources": [
+      "regenerative medicine and cell biology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "cellular biology"
+    ]
+  },
+  "cell systems": {
+    "sources": [
+      "cell systems & anatomy"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "cellular physiology": {
+    "sources": [],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "cell physiology"
+    ]
+  },
+  "cellular therapies": {
+    "sources": [
+      "blood and marrow transplantation and cellular therapies"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "cell therapy",
+      "cellular therapy"
+    ]
+  },
+  "chemical biology": {
+    "sources": [
+      "pharmacology and chemical biology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "chemical engineering": {
+    "sources": [
+      "chemical and environmental engineering",
+      "chemical engineering",
+      "chemical engineering and materials science",
+      "chemical & materials engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "child development": {
+    "sources": [
+      "neurology and child development unit"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "childhood development"
+    ]
+  },
+  "civil engineering": {
+    "sources": [
+      "civil, construction and environmental engineering",
+      "civil and architectural engineering and mechanics"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "civil rights": {
+    "sources": [
+      "civil rights"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "civil rights studies"
+    ]
+  },
+  "classical hematology": {
+    "sources": [
+      "classical hematology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "classics": {
+    "sources": [
+      "classics, department of"
+    ],
+    "parents": [
+      "arts",
+      "language studies"
+    ],
+    "variations": []
+  },
+  "climate sciences": {
+    "sources": [
+      "climate and space sciences & engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "climate science"
+    ]
+  },
+  "clinical immunology": {
+    "sources": [
+      "rheumatology and clinical immunology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "clinical laboratory technologies": {
+    "sources": [
+      "clinical laboratory technologies department"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "clinical legal education": {
+    "sources": [
+      "clinical legal education"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "clinical nutrition": {
+    "sources": [
+      "athletic training and clinical nutrition"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "clinical sciences": {
+    "sources": [
+      "clinical & diagnostic sciences",
+      "health and clinical sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "clinical care",
+      "clinical medicine",
+      "clinical science"
+    ]
+  },
+  "cognitive science": {
+    "sources": [
+      "cognitive science"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "communication": {
+    "sources": [],
+    "parents": [
+      "arts"
+    ],
+    "variations": [
+      "communication sciences",
+      "communication science",
+      "communication theories",
+      "communications",
+      "communication studies",
+      "communication theory",
+      "communication systems"
+    ]
+  },
+  "communicative disorders": {
+    "sources": [
+      "communicative disorders and sciences"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": [
+      "communication disorders"
+    ]
+  },
+  "communicative sciences": {
+    "sources": [
+      "communicative disorders and sciences"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "community health sciences": {
+    "sources": [
+      "community health sciences"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "community health"
+    ]
+  },
+  "comparative law": {
+    "sources": [
+      "international and comparative law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "comparative law theory"
+    ]
+  },
+  "comparative literature": {
+    "sources": [
+      "comparative literature"
+    ],
+    "parents": [
+      "arts",
+      "language studies"
+    ],
+    "variations": []
+  },
+  "computer engineering": {
+    "sources": [
+      "electrical and computer engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "computer science": {
+    "sources": [
+      "computer science& engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "computer science education"
+    ]
+  },
+  "constitutional law": {
+    "sources": [
+      "constitutional law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "federal constitutional law"
+    ]
+  },
+  "construction engineering": {
+    "sources": [
+      "civil, construction and environmental engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "corporate innovation": {
+    "sources": [
+      "entrepreneurship & corporate innovation"
+    ],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "corporate law": {
+    "sources": [
+      "corporate and securities law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "counseling": {
+    "sources": [
+      "educational psychology, counseling, and special education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "counselor education": {
+    "sources": [
+      "counselor education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "creative writing": {
+    "sources": [
+      "english and creative writing"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "criminal law": {
+    "sources": [
+      "criminal law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "critical care medicine": {
+    "sources": [
+      "pulmonary, allergy, critical care, and sleep medicine",
+      "critical care medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "intensive care"
+    ]
+  },
+  "culture": {
+    "sources": [
+      "literacy, language and culture"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "social culture"
+    ]
+  },
+  "curriculum": {
+    "sources": [
+      "curriculum and instruction"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "curriculum theory",
+      "curriculum studies"
+    ]
+  },
+  "dance": {
+    "sources": [
+      "theatre and dance"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": [
+      "dance science",
+      "dance theory",
+      "dance studies",
+      "dance technology",
+      "dance education",
+      "dance techniques"
+    ]
+  },
+  "data science": {
+    "sources": [
+      "data science"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "dental hygiene": {
+    "sources": [
+      "dental hygiene department"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "diabetes": {
+    "sources": [
+      "endocrinology, diabetes and metabolism"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "diabetes mellitus",
+      "diabetes education"
+    ]
+  },
+  "diagnostic sciences": {
+    "sources": [
+      "clinical & diagnostic sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "early childhood education": {
+    "sources": [
+      "early childhood education, b.a."
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "early childhood care"
+    ]
+  },
+  "east asian languages": {
+    "sources": [
+      "east asian languages and literatures"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": []
+  },
+  "east asian literatures": {
+    "sources": [
+      "east asian languages and literatures"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "east asian literature"
+    ]
+  },
+  "economics": {
+    "sources": [
+      "accounting, finance and economics",
+      "economics (ba, bs) economics ba economics business economics finance"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": [
+      "economic systems",
+      "economic theory",
+      "economic studies"
+    ]
+  },
+  "education systems improvement science": {
+    "sources": [
+      "education systems improvement science"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "educational leadership": {
+    "sources": [
+      "educational leadership and policy studies"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "educational measurement": {
+    "sources": [
+      "educational measurement and research"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "educational measurement theory"
+    ]
+  },
+  "educational program development": {
+    "sources": [
+      "educational program development"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "educational psychology": {
+    "sources": [
+      "educational psychology, counseling, and special education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "electrical engineering": {
+    "sources": [
+      "electrical and computer engineering",
+      "electrical & biomedical engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "elementary education": {
+    "sources": [
+      "elementary education, b.a."
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "emergency medicine": {
+    "sources": [
+      "emergency medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "employment law": {
+    "sources": [
+      "labor and employment law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "endocrinology": {
+    "sources": [
+      "endocrinology, diabetes and metabolism",
+      "endocrinology and metabolism"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "energy law": {
+    "sources": [
+      "environmental and energy law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "engineering physics": {
+    "sources": [
+      "applied and engineering physics"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "english": {
+    "sources": [
+      "english and creative writing",
+      "english (engl)"
+    ],
+    "parents": [
+      "arts",
+      "language studies"
+    ],
+    "variations": [
+      "english education"
+    ]
+  },
+  "english as a second language": {
+    "sources": [
+      "english as a second language (esl)"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "teaching english as a second language",
+      "teaching english as a foreign language"
+    ]
+  },
+  "entrepreneurship": {
+    "sources": [
+      "management, entrepreneurship, and technology",
+      "entrepreneurship department",
+      "entrepreneurship & corporate innovation"
+    ],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "environmental engineering": {
+    "sources": [
+      "chemical and environmental engineering",
+      "civil, construction and environmental engineering",
+      "biological and environmental engineering",
+      "environmental health and engineering"
+    ],
+    "parents": [
+      "engineering",
+      "public health"
+    ],
+    "variations": []
+  },
+  "environmental health": {
+    "sources": [
+      "epidemiology & environmental health",
+      "environmental health and engineering",
+      "environmental & public health, administration & medical sciences"
+    ],
+    "parents": [
+      "public health",
+      "health sciences"
+    ],
+    "variations": [
+      "environmental health sciences"
+    ]
+  },
+  "environmental law": {
+    "sources": [
+      "environmental and energy law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "epidemiology": {
+    "sources": [
+      "epidemiology & biostatistics",
+      "epidemiology & environmental health",
+      "epidemiology and biostatistics"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "disease epidemiology",
+      "general epidemiology"
+    ]
+  },
+  "ethnic studies": {
+    "sources": [
+      "ethnic studies"
+    ],
+    "parents": [
+      "humanities",
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "exercise physiology": {
+    "sources": [
+      "exercise physiology"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "family health": {
+    "sources": [
+      "population, family and reproductive health"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "family medicine"
+    ]
+  },
+  "family medicine": {
+    "sources": [
+      "family medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "film studies": {
+    "sources": [
+      "film and media studies"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": [
+      "film"
+    ]
+  },
+  "finance": {
+    "sources": [
+      "accounting, finance and economics",
+      "economics (ba, bs) economics ba economics business economics finance"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "food sciences": {
+    "sources": [
+      "food and nutrition sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "food science"
+    ]
+  },
+  "food systems": {
+    "sources": [
+      "food systems, nutrition, and health"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "foreign language education": {
+    "sources": [
+      "foreign language education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "foreign language instruction"
+    ]
+  },
+  "foreign languages": {
+    "sources": [
+      "foreign languages arabic (arbc) chinese (chin) french (fren) japanese (jpns) spanish (span)"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "modern foreign language"
+    ]
+  },
+  "french": {
+    "sources": [
+      "french and italian, department of",
+      "foreign languages arabic (arbc) chinese (chin) french (fren) japanese (jpns) spanish (span)"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "french studies"
+    ]
+  },
+  "gastroenterology": {
+    "sources": [
+      "gastroenterology, hepatology, and nutrition"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "gender studies": {
+    "sources": [
+      "women, gender and sexuality studies"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": [
+      "gender theory",
+      "gender"
+    ]
+  },
+  "general academic pediatrics": {
+    "sources": [
+      "general academic pediatrics (gap)"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "general business": {
+    "sources": [
+      "management, marketing and general business"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "general internal medicine": {
+    "sources": [
+      "general internal medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "internal medicine"
+    ]
+  },
+  "general surgery": {
+    "sources": [
+      "trauma and general surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "genetic medicine": {
+    "sources": [
+      "genetic and genomic medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "genomic medicine",
+      "clinical genetics"
+    ]
+  },
+  "genomic medicine": {
+    "sources": [
+      "genetic and genomic medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "geography": {
+    "sources": [
+      "geography and environment"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": [
+      "geography education"
+    ]
+  },
+  "geological engineering": {
+    "sources": [
+      "mining and geological engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "geriatrics": {
+    "sources": [
+      "geriatrics, gerontology, & palliative"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "geriatric medicine"
+    ]
+  },
+  "german": {
+    "sources": [
+      "german, department of",
+      "german and russian"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "german studies",
+      "german language"
+    ]
+  },
+  "gerontology": {
+    "sources": [
+      "geriatrics, gerontology, & palliative"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "global health": {
+    "sources": [
+      "public health - global health",
+      "global health and population"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "graphic design": {
+    "sources": [
+      "arts and sciencesart (bfa) graphic design"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "gynecology": {
+    "sources": [
+      "obstetrics, gynecology and reproductive sciences",
+      "obstetrics and gynecology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "head and neck surgery": {
+    "sources": [
+      "otolaryngology-head and neck surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "health administration": {
+    "sources": [
+      "health policy and administration"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "health behavior": {
+    "sources": [
+      "health behavior and health promotion"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "health behaviors"
+    ]
+  },
+  "health informatics": {
+    "sources": [
+      "health informatics",
+      "health management and informatics"
+    ],
+    "parents": [
+      "medicine",
+      "public health"
+    ],
+    "variations": [
+      "medical informatics"
+    ]
+  },
+  "health information technology": {
+    "sources": [
+      "health information technology department"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "health information"
+    ]
+  },
+  "health law": {
+    "sources": [
+      "health law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "healthcare law",
+      "medical law",
+      "health legislation"
+    ]
+  },
+  "health management": {
+    "sources": [
+      "health policy & management",
+      "health management and informatics"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "health care management",
+      "health administration",
+      "health services administration",
+      "healthcare management"
+    ]
+  },
+  "health policy": {
+    "sources": [
+      "health policy and administration",
+      "health policy & management"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "health policies"
+    ]
+  },
+  "health promotion": {
+    "sources": [
+      "health behavior and health promotion"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "health services management": {
+    "sources": [
+      "health services management and policy"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "health studies": {
+    "sources": [
+      "health studies department"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "hearing sciences": {
+    "sources": [
+      "hearing, speech and language sciences",
+      "speech, language & hearing sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "hearing science"
+    ]
+  },
+  "hepatology": {
+    "sources": [
+      "gastroenterology, hepatology, and nutrition"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "higher education": {
+    "sources": [
+      "higher education and student affairs"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "hospital medicine": {
+    "sources": [
+      "hospital medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "hospitality": {
+    "sources": [
+      "marketing, hospitality, and logistics"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": []
+  },
+  "human capital development": {
+    "sources": [
+      "human capital education and development"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "human capital education": {
+    "sources": [
+      "human capital education and development"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "human capital development",
+      "human capital"
+    ]
+  },
+  "human health sciences": {
+    "sources": [],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "human health"
+    ]
+  },
+  "human resource development": {
+    "sources": [
+      "human resource development"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "human resource management": {
+    "sources": [
+      "human resource management"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": [
+      "human resources management",
+      "human resources"
+    ]
+  },
+  "human rights": {
+    "sources": [
+      "human rights"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "global human rights"
+    ]
+  },
+  "immunology": {
+    "sources": [
+      "microbiology, immunology & molecular genetics",
+      "immunology/infectious disease",
+      "allergy and immunology",
+      "pharmacology and immunology",
+      "immunology and infectious diseases"
+    ],
+    "parents": [
+      "medicine",
+      "public health"
+    ],
+    "variations": []
+  },
+  "indo-pacific languages": {
+    "sources": [
+      "indo-pacific languages and literatures"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": []
+  },
+  "indo-pacific literatures": {
+    "sources": [
+      "indo-pacific languages and literatures"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": []
+  },
+  "industrial distribution": {
+    "sources": [
+      "engineering technology and industrial distribution"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "industrial engineering": {
+    "sources": [
+      "industrial and systems engineering",
+      "industrial & operations engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "infectious disease": {
+    "sources": [
+      "immunology/infectious disease"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "infectious diseases",
+      "communicable diseases"
+    ]
+  },
+  "information engineering": {
+    "sources": [
+      "operations research and information engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "instruction": {
+    "sources": [
+      "curriculum and instruction"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "instructional technology": {
+    "sources": [
+      "instructional technology"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "integrative physiology": {
+    "sources": [],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "intellectual property": {
+    "sources": [
+      "intellectual property and antitrust"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "intellectual property rights"
+    ]
+  },
+  "interdisciplinary education": {
+    "sources": [
+      "interdisciplinary education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "international business": {
+    "sources": [
+      "marketing and international business"
+    ],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": []
+  },
+  "international health": {
+    "sources": [
+      "international health"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "international law": {
+    "sources": [
+      "international and comparative law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "public international law"
+    ]
+  },
+  "jewish thought": {
+    "sources": [
+      "jewish thought"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "kinesiology": {
+    "sources": [
+      "kinesiology & applied physiology"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "labor law": {
+    "sources": [
+      "labor and employment law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "employment law"
+    ]
+  },
+  "laboratory medicine": {
+    "sources": [
+      "pathology and laboratory medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "language teaching": {
+    "sources": [
+      "language teaching: tesol/tlote"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "second language studies"
+    ]
+  },
+  "latin american studies": {
+    "sources": [
+      "latin american and latino/a studies"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": []
+  },
+  "latino/a studies": {
+    "sources": [
+      "latin american and latino/a studies"
+    ],
+    "parents": [
+      "humanities"
+    ],
+    "variations": [
+      "latino studies"
+    ]
+  },
+  "leadership": {
+    "sources": [
+      "leadership, policy, and lifelong learning"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "leadership studies",
+      "leadership theory"
+    ]
+  },
+  "learning design": {
+    "sources": [
+      "learning design & technology"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "learning sciences": {
+    "sources": [
+      "learning sciences"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "learning",
+      "learning technologies",
+      "learning theory"
+    ]
+  },
+  "legal ethics": {
+    "sources": [
+      "legal ethics and professional responsibility"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "professional responsibility"
+    ]
+  },
+  "legal history": {
+    "sources": [
+      "legal history"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "legal writing": {
+    "sources": [
+      "legal writing and research"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "lifelong learning": {
+    "sources": [
+      "leadership, policy, and lifelong learning"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "linguistics": {
+    "sources": [
+      "linguistics, department of"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "linguistic studies",
+      "linguistic theory"
+    ]
+  },
+  "literacy": {
+    "sources": [
+      "literacy, language and culture"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "literacy technology",
+      "literacy studies",
+      "literacy education"
+    ]
+  },
+  "logistics": {
+    "sources": [
+      "marketing, hospitality, and logistics"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": [
+      "logistics management",
+      "commercial logistics"
+    ]
+  },
+  "macromolecular engineering": {
+    "sources": [
+      "macromolecular science & engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "macromolecular science": {
+    "sources": [
+      "macromolecular science & engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "macromolecular engineering"
+    ]
+  },
+  "marine engineering": {
+    "sources": [
+      "naval architecture & marine engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "marketing": {
+    "sources": [
+      "marketing and international business",
+      "marketing, hospitality, and logistics",
+      "management, marketing and general business"
+    ],
+    "parents": [
+      "business",
+      "management"
+    ],
+    "variations": [
+      "marketing research"
+    ]
+  },
+  "marrow transplantation": {
+    "sources": [
+      "blood and marrow transplantation and cellular therapies"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "stem cell transplantation",
+      "bone marrow transplantation",
+      "hematopoietic stem cell transplantation"
+    ]
+  },
+  "materials engineering": {
+    "sources": [
+      "chemical & materials engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "materials science": {
+    "sources": [
+      "chemical engineering and materials science"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "material science"
+    ]
+  },
+  "mathematics education": {
+    "sources": [
+      "mathematics education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "mathematics teaching": {
+    "sources": [
+      "mathematics teaching, b.s."
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "mathematics instruction"
+    ]
+  },
+  "mechanical engineering": {
+    "sources": [
+      "aerospace and mechanical engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "mechanics": {
+    "sources": [
+      "civil and architectural engineering and mechanics"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "media studies": {
+    "sources": [
+      "film and media studies"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "medical laboratory science": {
+    "sources": [
+      "medical laboratory science"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "clinical sciences",
+      "laboratory medicine"
+    ]
+  },
+  "metabolism": {
+    "sources": [
+      "endocrinology, diabetes and metabolism",
+      "endocrinology and metabolism"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "cellular metabolism",
+      "metabolic systems",
+      "cell metabolism",
+      "intracellular metabolism"
+    ]
+  },
+  "microbiology": {
+    "sources": [
+      "microbiology, immunology & molecular genetics",
+      "microbiology and molecular genetics"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "middle level education": {
+    "sources": [
+      "middle level education, b.s."
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "mining engineering": {
+    "sources": [
+      "mining and geological engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "geological engineering"
+    ]
+  },
+  "modern languages education": {
+    "sources": [
+      "modern languages education, b.a."
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "molecular biology": {
+    "sources": [
+      "biochemistry and molecular biology"
+    ],
+    "parents": [
+      "medicine",
+      "natural sciences"
+    ],
+    "variations": []
+  },
+  "molecular genetics": {
+    "sources": [
+      "microbiology, immunology & molecular genetics",
+      "microbiology and molecular genetics"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "molecular medicine": {
+    "sources": [
+      "molecular medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "molecular sciences": {
+    "sources": [
+      "medical & molecular sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "multidisciplinary engineering": {
+    "sources": [
+      "multidisciplinary engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "naval architecture": {
+    "sources": [
+      "naval architecture & marine engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "ship design"
+    ]
+  },
+  "nephrology": {
+    "sources": [
+      "nephrology/renal disease"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "neurological surgery": {
+    "sources": [],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "neurosurgery"
+    ]
+  },
+  "neurology": {
+    "sources": [
+      "neurology and child development unit"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "neuroscience": {
+    "sources": [
+      "psychology and neuroscience"
+    ],
+    "parents": [
+      "medicine",
+      "social sciences"
+    ],
+    "variations": [
+      "brain sciences"
+    ]
+  },
+  "newborn medicine": {
+    "sources": [
+      "newborn medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "nuclear engineering": {
+    "sources": [
+      "nuclear engineering & radiological sciences"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "nutrition": {
+    "sources": [
+      "gastroenterology, hepatology, and nutrition",
+      "food systems, nutrition, and health",
+      "behavioral health & nutrition"
+    ],
+    "parents": [
+      "medicine",
+      "public health",
+      "health sciences"
+    ],
+    "variations": [
+      "nutrition sciences",
+      "nutritional sciences",
+      "nutrition education",
+      "nutritional science",
+      "nutrition science"
+    ]
+  },
+  "nutritional sciences": {
+    "sources": [
+      "nutritional sciences"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "obstetrics": {
+    "sources": [
+      "obstetrics, gynecology and reproductive sciences",
+      "obstetrics and gynecology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "gynecology",
+      "obstetrics and gynecology"
+    ]
+  },
+  "occupational health sciences": {
+    "sources": [
+      "environmental and occupational health sciences"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "occupational health"
+    ]
+  },
+  "occupational science": {
+    "sources": [
+      "occupational science & occupational therapy"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "occupational therapy": {
+    "sources": [
+      "occupational science & occupational therapy"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "ocean engineering": {
+    "sources": [
+      "ocean engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "operations engineering": {
+    "sources": [
+      "industrial & operations engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "operations research": {
+    "sources": [
+      "operations research and information engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "optical engineering": {
+    "sources": [
+      "optical sciences and engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "optical sciences": {
+    "sources": [
+      "optical sciences and engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "optics"
+    ]
+  },
+  "orthopaedic surgery": {
+    "sources": [
+      "orthopaedic surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "orthopedic surgery"
+    ]
+  },
+  "orthopaedics": {
+    "sources": [
+      "orthopaedics and physical medicine & rehabilitation"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "orthopaedic surgery",
+      "orthopedics"
+    ]
+  },
+  "otolaryngology": {
+    "sources": [
+      "otolaryngology-head and neck surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "pathology": {
+    "sources": [
+      "pathology and laboratory medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "pediatric surgery": {
+    "sources": [
+      "pediatric surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "performing arts": {
+    "sources": [
+      "performing arts"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "perioperative medicine": {
+    "sources": [
+      "anesthesia and perioperative medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "perioperative care"
+    ]
+  },
+  "petroleum engineering": {
+    "sources": [
+      "petroleum engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "pharmacology": {
+    "sources": [
+      "pharmacology and immunology",
+      "pharmacology and chemical biology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "physical education": {
+    "sources": [
+      "language, literacy, ed.d., exceptional education, and physical education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "physical medicine": {
+    "sources": [
+      "physical medicine and rehabilitation"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "rehabilitation medicine"
+    ]
+  },
+  "physical therapy": {
+    "sources": [
+      "physical therapy"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "plastic surgery": {
+    "sources": [
+      "plastic and reconstructive surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "policy studies": {
+    "sources": [
+      "educational leadership and policy studies"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "political science": {
+    "sources": [
+      "political science"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": [
+      "politics",
+      "political theory"
+    ]
+  },
+  "population": {
+    "sources": [
+      "global health and population"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": [
+      "population education",
+      "population studies"
+    ]
+  },
+  "population health sciences": {
+    "sources": [
+      "population health sciences"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "population health"
+    ]
+  },
+  "psychiatry": {
+    "sources": [
+      "psychiatry and behavioral sciences"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "psychology": {
+    "sources": [
+      "psychology and neuroscience"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": [
+      "psychological studies",
+      "psychological sciences",
+      "psychological science"
+    ]
+  },
+  "public health genetics": {
+    "sources": [
+      "public health genetics"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "public interest law": {
+    "sources": [
+      "public interest law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "pulmonary disease": {
+    "sources": [
+      "pulmonary disease"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "pulmonary medicine": {
+    "sources": [
+      "pulmonary, allergy, critical care, and sleep medicine",
+      "pulmonary medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "respiratory medicine"
+    ]
+  },
+  "radiation medicine": {
+    "sources": [
+      "radiation medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "radiologic technology": {
+    "sources": [
+      "radiologic technology department"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "radiological sciences": {
+    "sources": [
+      "nuclear engineering & radiological sciences"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "reconstructive surgery": {
+    "sources": [
+      "plastic and reconstructive surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "recreation": {
+    "sources": [
+      "parks, recreation, exercise & sport science"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "recreation studies"
+    ]
+  },
+  "regenerative medicine": {
+    "sources": [
+      "regenerative medicine and cell biology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "regional planning": {
+    "sources": [
+      "urban and regional planning"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "rehabilitation": {
+    "sources": [
+      "physical medicine and rehabilitation"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "rehabilitation science",
+      "rehabilitation technology"
+    ]
+  },
+  "reproductive health": {
+    "sources": [
+      "population, family and reproductive health"
+    ],
+    "parents": [
+      "public health"
+    ],
+    "variations": []
+  },
+  "reproductive sciences": {
+    "sources": [
+      "obstetrics, gynecology and reproductive sciences"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "rheumatology": {
+    "sources": [
+      "rheumatology and clinical immunology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "risk": {
+    "sources": [
+      "decision, risk, and operations"
+    ],
+    "parents": [
+      "management"
+    ],
+    "variations": []
+  },
+  "romance languages": {
+    "sources": [
+      "romance languages and literatures"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "romance literatures": {
+    "sources": [
+      "romance languages and literatures"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "school psychology": {
+    "sources": [
+      "school psychology"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "science teaching": {
+    "sources": [
+      "science teaching, b.s./b.a."
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "second language studies": {
+    "sources": [
+      "second language studies"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": []
+  },
+  "secondary education": {
+    "sources": [
+      "secondary education, b.a.",
+      "secondary education, mat"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "secondary stem education": {
+    "sources": [
+      "secondary stem education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "securities law": {
+    "sources": [
+      "corporate and securities law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": [
+      "securities regulation"
+    ]
+  },
+  "sexuality studies": {
+    "sources": [
+      "women, gender and sexuality studies"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": [
+      "sexuality"
+    ]
+  },
+  "sleep medicine": {
+    "sources": [
+      "pulmonary, allergy, critical care, and sleep medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "social foundations of education": {
+    "sources": [
+      "social foundations of education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "social health": {
+    "sources": [
+      "social and public health"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "social science education": {
+    "sources": [
+      "social science education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "social work": {
+    "sources": [
+      "social work"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": []
+  },
+  "space engineering": {
+    "sources": [
+      "climate and space sciences & engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "aerospace engineering"
+    ]
+  },
+  "space sciences": {
+    "sources": [
+      "climate and space sciences & engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": [
+      "space science"
+    ]
+  },
+  "spanish": {
+    "sources": [
+      "foreign languages arabic (arbc) chinese (chin) french (fren) japanese (jpns) spanish (span)",
+      "spanish and portuguese, department of"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "spanish language"
+    ]
+  },
+  "special education": {
+    "sources": [
+      "special education, b.a.",
+      "educational psychology, counseling, and special education",
+      "special education (online)"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": [
+      "exceptional education",
+      "exceptional student education"
+    ]
+  },
+  "speech sciences": {
+    "sources": [
+      "hearing, speech and language sciences",
+      "speech, language & hearing sciences"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "speech technology",
+      "speech"
+    ]
+  },
+  "sport science": {
+    "sources": [
+      "parks, recreation, exercise & sport science"
+    ],
+    "parents": [
+      "health sciences"
+    ],
+    "variations": [
+      "sports science"
+    ]
+  },
+  "structural biology": {
+    "sources": [
+      "biochemistry & structural biology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "student affairs": {
+    "sources": [
+      "higher education and student affairs"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "studio art": {
+    "sources": [
+      "arts and sciencesart (bfa) studio art"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": []
+  },
+  "supply chain management": {
+    "sources": [
+      "supply chain management"
+    ],
+    "parents": [
+      "business"
+    ],
+    "variations": [
+      "supply chain management theory"
+    ]
+  },
+  "surgical oncology": {
+    "sources": [
+      "surgical oncology"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "systems engineering": {
+    "sources": [
+      "industrial and systems engineering"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "tax law": {
+    "sources": [
+      "tax law"
+    ],
+    "parents": [
+      "law"
+    ],
+    "variations": []
+  },
+  "teacher education": {
+    "sources": [
+      "teacher education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "technical education": {
+    "sources": [
+      "career and technical/workforce education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "textile chemistry": {
+    "sources": [
+      "textile engineering, chemistry and science"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "textile engineering": {
+    "sources": [
+      "textile engineering, chemistry and science"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "textile science": {
+    "sources": [
+      "textile engineering, chemistry and science"
+    ],
+    "parents": [
+      "engineering"
+    ],
+    "variations": []
+  },
+  "theatre": {
+    "sources": [
+      "theatre and dance"
+    ],
+    "parents": [
+      "arts"
+    ],
+    "variations": [
+      "theater",
+      "theatre studies"
+    ]
+  },
+  "transplantation surgery": {
+    "sources": [
+      "transplantation surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "organ transplantation"
+    ]
+  },
+  "trauma surgery": {
+    "sources": [
+      "trauma and general surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "urban planning": {
+    "sources": [
+      "urban and regional planning"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": []
+  },
+  "vascular surgery": {
+    "sources": [
+      "vascular surgery"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": []
+  },
+  "women studies": {
+    "sources": [
+      "women, gender and sexuality studies"
+    ],
+    "parents": [
+      "social sciences"
+    ],
+    "variations": [
+      "feminist studies",
+      "women's studies"
+    ]
+  },
+  "workforce education": {
+    "sources": [
+      "career and technical/workforce education"
+    ],
+    "parents": [
+      "education"
+    ],
+    "variations": []
+  },
+  "world cultures": {
+    "sources": [
+      "world languages, literatures, and cultures, division of"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": []
+  },
+  "world languages": {
+    "sources": [
+      "world languages, literatures, and cultures, division of"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "foreign languages"
+    ]
+  },
+  "world literatures": {
+    "sources": [
+      "world languages, literatures, and cultures, division of"
+    ],
+    "parents": [
+      "language studies"
+    ],
+    "variations": [
+      "global literatures",
+      "comparative world literatures",
+      "world literature"
+    ]
+  },
+  "young adult medicine": {
+    "sources": [
+      "adolescent and young adult medicine"
+    ],
+    "parents": [
+      "medicine"
+    ],
+    "variations": [
+      "adolescent medicine",
+      "adolescent health"
+    ]
+  }
+}

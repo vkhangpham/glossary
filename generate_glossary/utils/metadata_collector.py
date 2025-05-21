@@ -515,9 +515,9 @@ def collect_metadata(level: int, verbose: bool = False, include_variations: bool
                 current_source_key = 'topic'
                 parent_source_key = 'department'
             elif level == 3:
-                concept_key = 'concept'
-                current_source_key = 'research_area'  # Level 3 uses research_area as the immediate source
-                parent_source_key = 'conference_topic'  # And conference_topic as a higher-level source
+                concept_key = 'extracted_concept'  # Level 3 concepts are in the extracted_concept column
+                current_source_key = 'conference_topic'  # Level 3 uses conference_topic as the immediate source
+                parent_source_key = 'conference_journal'  # And conference_journal as a potential parent
             else:
                 concept_key = 'concept'
                 current_source_key = 'department'
@@ -544,18 +544,23 @@ def collect_metadata(level: int, verbose: bool = False, include_variations: bool
                             and parent_source not in metadata[concept]['sources']):
                             metadata[concept]['sources'].append(parent_source)
                     
-                    # For level 3, add research_area as a parent if it matches a level 2 term
-                    if level == 3 and current_source_key in row:
-                        potential_parent = row[current_source_key].strip().lower()
+                    # For level 3, only use conference_journal as parent
+                    if level == 3 and parent_source_key in row:
+                        potential_parent = row[parent_source_key].strip().lower()
                         if potential_parent in parent_terms:
                             if potential_parent not in metadata[concept]['parents']:
                                 metadata[concept]['parents'].append(potential_parent)
+                                if verbose:
+                                    print(f"Added conference_journal '{potential_parent}' as parent for L3 term '{concept}'")
                         elif potential_parent in parent_variations_map:
                             canonical_parent = parent_variations_map[potential_parent]
                             if canonical_parent in parent_terms and canonical_parent not in metadata[concept]['parents']:
                                 metadata[concept]['parents'].append(canonical_parent)
                                 if verbose:
-                                    print(f"Parent '{potential_parent}' is a variation of '{canonical_parent}', using canonical parent for '{concept}'")
+                                    print(f"Conference_journal '{potential_parent}' is a variation of '{canonical_parent}', using as parent for '{concept}'")
+                        elif verbose and potential_parent:
+                            print(f"DEBUG: Conference_journal '{potential_parent}' for L3 term '{concept}' not found in L2 terms or variations map.")
+                    
                     # For levels 1 and 2, handle parents based on their specific fields
                     elif level in [1, 2] and parent_source_key in row:
                         parent = clean_parent_term(row[parent_source_key])
@@ -815,19 +820,24 @@ def collect_resources(level: int, verbose: bool = False, include_variations: boo
                         # Check if resource has required fields and meets criteria
                         if (isinstance(resource, dict) and 
                             resource.get('is_verified') is True and 
-                            resource.get('relevance_score', 0) > 0.6 and
+                            resource.get('score', 0) > 0.6 and
                             'url' in resource and 
                             'title' in resource and 
-                            'processed_content' in resource and 
+                            ('processed_content' in resource or 'snippet' in resource) and 
                             'score' in resource):
+                            
+                            # Use snippet as processed_content if processed_content is empty
+                            processed_content = resource.get('processed_content', '')
+                            if not processed_content and 'snippet' in resource:
+                                processed_content = resource['snippet']
                             
                             # Only include specified fields
                             filtered_resource = {
                                 'url': resource['url'],
                                 'title': resource['title'],
-                                'processed_content': resource['processed_content'],
+                                'processed_content': processed_content,
                                 'score': resource['score'],
-                                'relevance_score': resource['relevance_score']
+                                'educational_score': resource.get('educational_score')
                             }
                             filtered_term_resources.append(filtered_resource)
                     
@@ -900,19 +910,24 @@ def collect_resources(level: int, verbose: bool = False, include_variations: boo
                                 # Check if resource has required fields and meets criteria
                                 if (isinstance(resource, dict) and 
                                     resource.get('is_verified') is True and 
-                                    resource.get('relevance_score', 0) > 0.6 and
+                                    resource.get('score', 0) > 0.6 and
                                     'url' in resource and 
                                     'title' in resource and 
-                                    'processed_content' in resource and 
+                                    ('processed_content' in resource or 'snippet' in resource) and 
                                     'score' in resource):
+                                    
+                                    # Use snippet as processed_content if processed_content is empty
+                                    processed_content = resource.get('processed_content', '')
+                                    if not processed_content and 'snippet' in resource:
+                                        processed_content = resource['snippet']
                                     
                                     # Only include specified fields
                                     filtered_resource = {
                                         'url': resource['url'],
                                         'title': resource['title'],
-                                        'processed_content': resource['processed_content'],
+                                        'processed_content': processed_content,
                                         'score': resource['score'],
-                                        'relevance_score': resource['relevance_score']
+                                        'educational_score': resource.get('educational_score')
                                     }
                                     filtered_term_resources.append(filtered_resource)
                             
@@ -1057,9 +1072,19 @@ def promote_terms_based_on_parents(verbose: bool = False) -> None:
             
             # Find levels of the parents
             for parent in parents:
+                parent_level_found = False
                 for level in range(3):  # Check levels 0, 1, 2
                     if parent in metadata[level] and 'canonical_term' not in metadata[level][parent]:
                         parent_levels.add(level)
+                        parent_level_found = True
+                        if verbose:
+                            print(f"DEBUG [Parent Level]: L3 term '{term}' has parent '{parent}' in level {level}")
+                if not parent_level_found and verbose:
+                    print(f"DEBUG [Parent Level]: L3 term '{term}' has parent '{parent}' but parent not found in any level")
+            
+            # Log diagnostic info for terms with no parent levels identified
+            if verbose and not parent_levels and parents:
+                print(f"WARNING: L3 term '{term}' has {len(parents)} parents but none were found in lower levels: {parents}")
             
             # If the term only has level 0/1 parents, promote to level 2
             if parent_levels and max(parent_levels) <= 1:

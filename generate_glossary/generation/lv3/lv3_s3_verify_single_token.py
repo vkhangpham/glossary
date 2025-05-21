@@ -60,26 +60,26 @@ DO NOT accept any of the following:
 
 def build_verification_prompt(
     keyword: str,
-    conferences: List[str]
+    journals: List[str]
 ) -> str:
     """
     Build prompt for keyword verification using metadata
     
     Args:
         keyword: Keyword to verify
-        conferences: List of conferences/journals where this concept appears
+        journals: List of journals where this concept appears
         
     Returns:
         Formatted prompt for LLM
     """
-    # Take up to MAX_EXAMPLES example conferences
-    example_conferences = conferences[:Config.MAX_EXAMPLES]
-    conferences_str = "\n".join(f"- {conf}" for conf in example_conferences)
+    # Take up to MAX_EXAMPLES example journals
+    example_journals = journals[:Config.MAX_EXAMPLES]
+    journals_str = "\n".join(f"- {journal}" for journal in example_journals)
     
     return f"""Analyze whether "{keyword}" is a valid research concept based on the following evidence:
 
-Example Conference Topics / Journal Special Issues where this concept appears:
-{conferences_str}
+Example Journal Topics where this concept appears:
+{journals_str}
 
 Return only a JSON with an is_valid boolean field:
 {{
@@ -88,7 +88,7 @@ Return only a JSON with an is_valid boolean field:
 
 def verify_keyword(
     keyword: str,
-    conferences: List[str],
+    journals: List[str],
     provider: Optional[str] = None
 ) -> bool:
     """
@@ -96,20 +96,20 @@ def verify_keyword(
     
     Args:
         keyword: Keyword to verify
-        conferences: List of conferences/journals where this concept appears
+        journals: List of journals where this concept appears
         provider: Optional LLM provider (openai or gemini)
         
     Returns:
         True if keyword is verified, False otherwise
     """
-    # Skip if no conferences found
-    if not conferences:
-        logger.debug(f"No conferences found for keyword '{keyword}'")
+    # Skip if no journals found
+    if not journals:
+        logger.debug(f"No journals found for keyword '{keyword}'")
         return False
         
     prompt = build_verification_prompt(
         keyword,
-        conferences
+        journals
     )
     
     try:
@@ -134,7 +134,7 @@ def verify_keyword(
 
 def verify_keywords_batch(
     keywords: List[str],
-    concept_conferences: Dict[str, List[str]],
+    concept_journals: Dict[str, List[str]],
     provider: Optional[str] = None,
     batch_size: int = Config.BATCH_SIZE,
     cooldown: int = Config.COOLDOWN_PERIOD,
@@ -145,7 +145,7 @@ def verify_keywords_batch(
     
     Args:
         keywords: List of keywords to verify
-        concept_conferences: Dictionary mapping keywords to their conferences/journals
+        concept_journals: Dictionary mapping keywords to their journals
         provider: Optional LLM provider (openai or gemini)
         batch_size: Number of keywords to process before cooldown
         cooldown: Cooldown period in seconds
@@ -162,11 +162,11 @@ def verify_keywords_batch(
         
         for keyword in batch:
             try:
-                conferences = concept_conferences.get(keyword, [])
-                is_verified = verify_keyword(keyword, conferences, provider)
+                journals = concept_journals.get(keyword, [])
+                is_verified = verify_keyword(keyword, journals, provider)
                 batch_results[keyword] = {
                     "is_verified": is_verified,
-                    "conferences": conferences,
+                    "journals": journals,
                     "provider": provider or Provider.OPENAI,
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }
@@ -174,7 +174,7 @@ def verify_keywords_batch(
                 logger.error(f"Failed to verify '{keyword}': {str(e)}")
                 batch_results[keyword] = {
                     "is_verified": False,
-                    "conferences": [],
+                    "journals": [],
                     "provider": provider or Provider.OPENAI,
                     "error": str(e),
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
@@ -190,148 +190,134 @@ def verify_keywords_batch(
     
     return results
 
-def get_concept_conferences(metadata: Dict[str, Any]) -> Dict[str, List[str]]:
+def get_concept_journals(metadata: Dict[str, Any]) -> Dict[str, List[str]]:
     """
-    Extract conferences for each concept from metadata
+    Extract journals for each concept from metadata
     
     Args:
         metadata: Metadata from s1
         
     Returns:
-        Dictionary mapping concepts to their conferences/journals
+        Dictionary mapping concepts to their source journals
     """
-    concept_conferences = {}
+    # Map concepts to their journals
+    concept_journals = {}
     
-    # Get source->concepts mapping from metadata
-    source_mapping = metadata.get("conference_topic_concept_mapping", {})
+    # Try different possible keys (in case of schema changes)
+    concept_journal_map = metadata.get("concept_to_conference_journal_mapping", {})
+    if not concept_journal_map:
+        concept_journal_map = metadata.get("concept_to_journal_mapping", {})
+        
+    if not concept_journal_map:
+        if "metadata" in metadata:
+            nested_meta = metadata.get("metadata", {})
+            concept_journal_map = nested_meta.get("concept_to_conference_journal_mapping", {})
+            if not concept_journal_map:
+                concept_journal_map = nested_meta.get("concept_to_journal_mapping", {})
     
-    # Invert mapping from source->concepts to concept->sources
-    for source, concepts in source_mapping.items():
-        # Skip sources with empty concept lists
-        if not concepts:
-            continue
+    # If still no mapping found
+    if not concept_journal_map:
+        logger.warning("Could not find concept-journal mapping in metadata.")
+        return {}
+        
+    # Copy journal names for each concept
+    for concept, journals in concept_journal_map.items():
+        if isinstance(journals, list):
+            concept_journals[concept] = journals
+        else:
+            # Handle string or other formats
+            concept_journals[concept] = [str(journals)]
             
-        for concept in concepts:
-            if concept not in concept_conferences:
-                concept_conferences[concept] = []
-            if source not in concept_conferences[concept]:
-                concept_conferences[concept].append(source)
-    
-    return concept_conferences
+    return concept_journals
 
 def is_single_word(keyword: str) -> bool:
     """Check if keyword is a single word (no spaces)"""
     return len(keyword.split()) == 1
 
 def main():
-    """Main execution function"""
+    """Main entry point for concept verification"""
     try:
-        # Get provider from command line args
-        provider = None
-        if len(sys.argv) > 1 and sys.argv[1] == "--provider":
-            provider = sys.argv[2]
-            logger.info(f"Using provider: {provider}")
-            
-        logger.info("Starting single-word concept verification for conference/journal topics by LLM")
+        # Ensure output directory exists
+        os.makedirs(os.path.dirname(Config.OUTPUT_FILE), exist_ok=True)
         
-        # Read input keywords
-        with open(Config.INPUT_FILE, "r", encoding='utf-8') as f:
-            all_keywords = [line.strip() for line in f.readlines()]
-        logger.info(f"Read {len(all_keywords)} total concepts")
+        # Read input concepts
+        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+            concepts = [line.strip() for line in f if line.strip()]
+        logger.info(f"Read {len(concepts)} concepts from input file")
         
-        # Read metadata from s1
-        with open(Config.META_FILE, "r", encoding='utf-8') as f:
+        # Load metadata to get journal sources for each concept
+        with open(Config.META_FILE, "r", encoding="utf-8") as f:
             metadata = json.load(f)
-        concept_conferences = get_concept_conferences(metadata)
-        logger.info(f"Loaded conference/journal data for {len(concept_conferences)} concepts")
+        logger.info(f"Loaded metadata from {Config.META_FILE}")
         
-        # Filter for single-word keywords
-        single_word_keywords = [kw for kw in all_keywords if is_single_word(kw)]
-        multi_word_keywords = [kw for kw in all_keywords if not is_single_word(kw)]
-        logger.info(f"Found {len(single_word_keywords)} single-word concepts to verify")
-        logger.info(f"Found {len(multi_word_keywords)} multi-word concepts to bypass")
+        # Get journals for each concept
+        concept_journals = get_concept_journals(metadata)
+        journals_found = len([c for c, j in concept_journals.items() if j])
+        logger.info(f"Found journal sources for {journals_found}/{len(concepts)} concepts")
         
-        # Verify single-word keywords
-        verification_results = verify_keywords_batch(
-            single_word_keywords,
-            concept_conferences,
-            provider=provider
+        # Focus on single-word concepts that need verification
+        single_word_concepts = [c for c in concepts if is_single_word(c)]
+        logger.info(f"Identified {len(single_word_concepts)} single-word concepts for verification")
+        
+        # Verify concepts
+        results = verify_keywords_batch(
+            single_word_concepts,
+            concept_journals,
+            provider=None,  # Use default provider
+            batch_size=Config.BATCH_SIZE,
+            cooldown=Config.COOLDOWN_PERIOD,
+            cooldown_freq=Config.COOLDOWN_FREQUENCY
         )
-        logger.info(f"Completed verification of {len(verification_results)} single-word concepts")
         
-        # Split into verified and unverified
-        verified_single_words = [
-            k for k, v in verification_results.items() 
-            if v.get("is_verified", False)
-        ]
-        unverified_keywords = [
-            k for k, v in verification_results.items() 
-            if not v.get("is_verified", False)
-        ]
-        logger.info(f"Verified {len(verified_single_words)} single-word concepts")
-        logger.info(f"Rejected {len(unverified_keywords)} single-word concepts")
+        # Filter out unverified concepts
+        verified_concepts = set()
+        unverified_concepts = set()
         
-        # Combine verified single words with multi-word keywords
-        all_verified_keywords = verified_single_words + multi_word_keywords
-        logger.info(f"Total verified concepts before normalization: {len(all_verified_keywords)}")
+        # First add all multi-word concepts (automatically verified)
+        multi_word_concepts = set(concepts) - set(single_word_concepts)
+        verified_concepts.update(multi_word_concepts)
+        logger.info(f"Added {len(multi_word_concepts)} multi-word concepts (automatically verified)")
         
-        # Normalize all verified keywords
-        normalized_keywords = [normalize_text(kw) for kw in all_verified_keywords]
-        # Remove duplicates that normalize to the same text while maintaining order
-        seen = set()
-        final_keywords = []
-        for kw, norm_kw in zip(all_verified_keywords, normalized_keywords):
-            if norm_kw not in seen:
-                seen.add(norm_kw)
-                final_keywords.append(kw)  # Keep original form
+        # Then add verified single-word concepts
+        verified_single_words = set()
+        for concept, result in results.items():
+            if result.get("is_verified", False):
+                verified_concepts.add(concept)
+                verified_single_words.add(concept)
+            else:
+                unverified_concepts.add(concept)
+                
+        logger.info(f"Verified {len(verified_single_words)}/{len(single_word_concepts)} single-word concepts")
+        logger.info(f"Total verified concepts: {len(verified_concepts)}")
+        logger.info(f"Unverified concepts: {len(unverified_concepts)}")
         
-        logger.info(f"Final unique concepts after normalization: {len(final_keywords)}")
+        # Save verified concepts
+        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+            for concept in sorted(verified_concepts):
+                f.write(f"{concept}\n")
+        logger.info(f"Saved {len(verified_concepts)} verified concepts to {Config.OUTPUT_FILE}")
         
-        # Create output directory if needed
-        for path in [Config.OUTPUT_FILE, Config.VALIDATION_META_FILE]:
-            output_path = Path(path)
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-        
-        # Save verified keywords to text file
-        logger.info(f"Saving verified concepts to {Config.OUTPUT_FILE}")
-        with open(Config.OUTPUT_FILE, "w", encoding='utf-8') as f:
-            for kw in sorted(final_keywords):
-                f.write(f"{kw}\n")
-        
-        # Save detailed metadata to JSON file
-        logger.info(f"Saving metadata to {Config.VALIDATION_META_FILE}")
-        metadata = {
+        # Save metadata about the verification process
+        validation_metadata = {
             "metadata": {
-                "total_input_count": len(all_keywords),
-                "single_word_count": len(single_word_keywords),
-                "multi_word_count": len(multi_word_keywords),
-                "verified_single_word_count": len(verified_single_words),
-                "unverified_single_word_count": len(unverified_keywords),
-                "total_verified_count": len(all_verified_keywords),
-                "normalized_output_count": len(final_keywords),
-                "model": init_llm(provider).model,
-                "temperature": init_llm(provider).temperature,
-                "batch_size": Config.BATCH_SIZE,
-                "cooldown_period": Config.COOLDOWN_PERIOD,
-                "cooldown_frequency": Config.COOLDOWN_FREQUENCY,
-                "max_retries": Config.MAX_RETRIES
+                "input_concepts": len(concepts),
+                "single_word_concepts": len(single_word_concepts),
+                "multi_word_concepts": len(multi_word_concepts),
+                "verified_single_word_concepts": len(verified_single_words),
+                "unverified_single_word_concepts": len(single_word_concepts) - len(verified_single_words),
+                "total_verified_concepts": len(verified_concepts),
+                "total_unverified_concepts": len(unverified_concepts)
             },
-            "verification_results": verification_results,
-            "verified_single_words": verified_single_words,
-            "unverified_keywords": unverified_keywords,
-            "multi_word_keywords": multi_word_keywords,
-            "final_keywords": final_keywords
+            "concept_verification_details": results
         }
         
-        with open(Config.VALIDATION_META_FILE, "w", encoding='utf-8') as f:
-            json.dump(metadata, f, indent=4, ensure_ascii=False)
-        
-        logger.info("Conference/journal concept verification completed successfully")
-        logger.info(f"Saved {len(final_keywords)} verified concepts to {Config.OUTPUT_FILE}")
+        with open(Config.VALIDATION_META_FILE, "w", encoding="utf-8") as f:
+            json.dump(validation_metadata, f, indent=2)
+        logger.info(f"Saved validation metadata to {Config.VALIDATION_META_FILE}")
         
     except Exception as e:
-        logger.error(f"An error occurred: {str(e)}", exc_info=True)
-        raise
+        logger.error(f"Error during concept verification: {e}", exc_info=True)
+        sys.exit(1)
 
 if __name__ == "__main__":
     main() 

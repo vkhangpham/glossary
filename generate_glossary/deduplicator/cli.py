@@ -392,6 +392,12 @@ def main() -> None:
         "--graph-cache-dir",
         help="Directory to store and load graph cache for incremental deduplication (only for graph mode)"
     )
+    advanced_group.add_argument(
+        "--max-workers-transitive",
+        type=int,
+        default=None, # Default to None, so graph_dedup uses os.cpu_count()
+        help="Maximum number of worker processes for transitive relationship finding in graph mode (default: auto)"
+    )
     
     args = parser.parse_args()
     
@@ -549,7 +555,8 @@ def main() -> None:
                 max_workers=args.max_workers,
                 use_enhanced_linguistics=args.use_enhanced_linguistics,
                 current_level=args.current_level,
-                cache_dir=args.graph_cache_dir
+                cache_dir=args.graph_cache_dir,
+                max_workers_transitive=args.max_workers_transitive
             )
         else:
             raise ValueError(f"Invalid deduplication mode: {args.mode}")
