@@ -1,0 +1,9 @@
+{
+  "level": 1,
+  "step": "s2",
+  "input_file": "data/lv1/raw/lv1_s1_extracted_concepts.txt",
+  "output_file": "data/lv1/raw/lv1_s2_filtered_concepts.txt",
+  "input_count": 10,
+  "output_count": 5,
+  "status": "completed_simple_version"
+}

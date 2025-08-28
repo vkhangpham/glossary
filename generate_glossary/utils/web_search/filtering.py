@@ -81,13 +81,6 @@ class FilterConfig:
         self.model_type = model_type # Store the model type
 
 
-# init_llm function removed - using direct LLM calls
-        provider=provider,
-        model=model_name,
-        temperature=0.3
-    )
-
-
 def deep_clean_list(items: List[str]) -> Set[str]:
     """Perform deeper cleaning: lowercasing, tokenizing, lemmatizing, removing stopwords."""
     cleaned_tokens = set()
@@ -562,11 +555,11 @@ Here are the lists to validate:
         
         # Call LLM
         try:
-        response = infer_text(
-            provider=provider or "openai",
-            prompt=prompt,
-            system_prompt=SYSTEM_PROMPT
-        )
+            response = infer_text(
+                provider=provider or "openai",
+                prompt=prompt,
+                system_prompt=SYSTEM_PROMPT
+            )
             
             # Parse JSON response
             try:
@@ -660,11 +653,11 @@ async def validate_and_extract_lists_with_llm(
             
             try:
                 # Call LLM for each list individually
-        response = infer_text(
-            provider=provider or "openai",
-            prompt=prompt,
-            system_prompt=SYSTEM_PROMPT
-        )
+                response = infer_text(
+                    provider=provider or "openai",
+                    prompt=prompt,
+                    system_prompt=SYSTEM_PROMPT
+                )
                 responses.append(response.text)
                 # Small delay between requests to avoid rate limits
                 await asyncio.sleep(0.1)

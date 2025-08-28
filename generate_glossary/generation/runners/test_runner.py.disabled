@@ -1,0 +1,198 @@
+#!/usr/bin/env python3
+"""
+Simple test runner to validate the functional consolidation approach.
+
+This module tests the shared utilities with mock data to ensure the 
+refactored architecture works correctly.
+"""
+
+import sys
+import os
+from pathlib import Path
+
+# Add project root to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
+
+from generate_glossary.generation.shared.web_extraction_simple import extract_web_content_simple
+from generate_glossary.generation.shared.concept_extraction import extract_concepts_llm
+from generate_glossary.generation.shared.frequency_filtering import filter_by_frequency
+from generate_glossary.generation.shared.token_verification import verify_single_tokens
+from generate_glossary.generation.shared.level_config import get_level_config
+from generate_glossary.utils.logger import setup_logger
+
+LEVEL = 1
+logger = setup_logger(f"test.lv{LEVEL}")
+
+
+def create_test_input():
+    """Create test input file."""
+    test_input = [
+        "engineering", 
+        "sciences", 
+        "business",
+        "medicine",
+        "arts"
+    ]
+    
+    input_file = f"data/lv{LEVEL-1}/lv{LEVEL-1}_final.txt"
+    os.makedirs(os.path.dirname(input_file), exist_ok=True)
+    
+    with open(input_file, 'w') as f:
+        for term in test_input:
+            f.write(term + '\n')
+    
+    logger.info(f"Created test input file: {input_file}")
+    return input_file
+
+
+def test_step_0():
+    """Test Level 1 Step 0: Web extraction (simplified)."""
+    logger.info("Testing Step 0: Web extraction (simplified)")
+    
+    input_file = f"data/lv{LEVEL-1}/lv{LEVEL-1}_final.txt"
+    output_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s0_department_names.txt"
+    metadata_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s0_metadata.json"
+    
+    result = extract_web_content_simple(input_file, LEVEL, output_file, metadata_file)
+    
+    if result.get('error'):
+        logger.error(f"Step 0 failed: {result['error']}")
+        return False
+    
+    logger.info(f"Step 0 completed: {result}")
+    return True
+
+
+def test_step_1():
+    """Test Level 1 Step 1: Concept extraction."""
+    logger.info("Testing Step 1: Concept extraction")
+    
+    input_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s0_department_names.txt"
+    output_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s1_extracted_concepts.txt"
+    metadata_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s1_metadata.json"
+    
+    # Check if input file exists
+    if not os.path.exists(input_file):
+        logger.error(f"Input file not found: {input_file}")
+        return False
+    
+    try:
+        result = extract_concepts_llm(input_file, LEVEL, output_file, metadata_file, provider="gemini")
+        
+        if result.get('error'):
+            logger.error(f"Step 1 failed: {result['error']}")
+            return False
+        
+        logger.info(f"Step 1 completed: {result}")
+        return True
+        
+    except Exception as e:
+        logger.error(f"Step 1 failed with exception: {str(e)}")
+        return False
+
+
+def test_step_2():
+    """Test Level 1 Step 2: Frequency filtering."""
+    logger.info("Testing Step 2: Frequency filtering")
+    
+    input_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s1_extracted_concepts.txt"
+    output_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s2_filtered_concepts.txt"
+    metadata_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s2_metadata.json"
+    
+    # Check if input file exists
+    if not os.path.exists(input_file):
+        logger.error(f"Input file not found: {input_file}")
+        return False
+    
+    try:
+        result = filter_by_frequency(input_file, LEVEL, output_file, metadata_file)
+        
+        if result.get('error'):
+            logger.error(f"Step 2 failed: {result['error']}")
+            return False
+        
+        logger.info(f"Step 2 completed: {result}")
+        return True
+        
+    except Exception as e:
+        logger.error(f"Step 2 failed with exception: {str(e)}")
+        return False
+
+
+def test_step_3():
+    """Test Level 1 Step 3: Token verification.""" 
+    logger.info("Testing Step 3: Token verification")
+    
+    input_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s2_filtered_concepts.txt"
+    output_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s3_verified_concepts.txt"
+    metadata_file = f"data/lv{LEVEL}/raw/lv{LEVEL}_s3_metadata.json"
+    
+    # Check if input file exists
+    if not os.path.exists(input_file):
+        logger.error(f"Input file not found: {input_file}")
+        return False
+    
+    try:
+        result = verify_single_tokens(input_file, LEVEL, output_file, metadata_file, provider="gemini")
+        
+        if result.get('error'):
+            logger.error(f"Step 3 failed: {result['error']}")
+            return False
+        
+        logger.info(f"Step 3 completed: {result}")
+        return True
+        
+    except Exception as e:
+        logger.error(f"Step 3 failed with exception: {str(e)}")
+        return False
+
+
+def main():
+    """Run all tests."""
+    logger.info("Starting functional consolidation test")
+    
+    # Show configuration
+    config = get_level_config(LEVEL)
+    logger.info(f"Level {LEVEL} config: {config.processing_description}")
+    
+    # Create test input
+    create_test_input()
+    
+    # Run tests
+    tests = [
+        ("Step 0: Web Extraction", test_step_0),
+        ("Step 1: Concept Extraction", test_step_1), 
+        ("Step 2: Frequency Filtering", test_step_2),
+        ("Step 3: Token Verification", test_step_3)
+    ]
+    
+    passed = 0
+    for test_name, test_func in tests:
+        logger.info(f"\n{'='*50}")
+        logger.info(f"Running {test_name}")
+        logger.info(f"{'='*50}")
+        
+        try:
+            if test_func():
+                logger.info(f"✅ {test_name} PASSED")
+                passed += 1
+            else:
+                logger.error(f"❌ {test_name} FAILED")
+        except Exception as e:
+            logger.error(f"❌ {test_name} FAILED with exception: {str(e)}")
+    
+    logger.info(f"\n{'='*50}")
+    logger.info(f"Test Results: {passed}/{len(tests)} passed")
+    logger.info(f"{'='*50}")
+    
+    if passed == len(tests):
+        logger.info("🎉 All tests passed! Functional consolidation working correctly.")
+        return True
+    else:
+        logger.error("❌ Some tests failed. Review the errors above.")
+        return False
+
+
+if __name__ == "__main__":
+    success = main()
+    sys.exit(0 if success else 1)

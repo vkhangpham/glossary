@@ -924,12 +924,12 @@ async def process_batch(llm: BaseLLM, system_prompt: str, batch, use_cache: bool
             # For now, process items individually (in the future, if the LLM API supports batching, use it)
             for prompt, cache_key, future in uncached_batch:
                 try:
-        response = infer_structured(
-            provider=provider or "openai",
-            prompt=prompt,
-            response_model=None,
-            system_prompt=SYSTEM_PROMPT
-        )
+                    response = infer_structured(
+                        provider=provider or "openai",
+                        prompt=prompt,
+                        response_model=None,
+                        system_prompt=SYSTEM_PROMPT
+                    )
                     
                     result = response.text
                     
@@ -1274,21 +1274,21 @@ Return ONLY the abstractive summary about "{term}", with no additional text or c
                     except Exception as e:
                         logger.error(f"Error in LLM processing for {url}: {e}")
                         # Fall back to direct processing if batch processing fails
-        response = infer_structured(
-            provider=provider or "openai",
-            prompt=prompt,
-            response_model=None,
-            system_prompt=SYSTEM_PROMPT
-        )
+                        response = infer_structured(
+                            provider=provider or "openai",
+                            prompt=prompt,
+                            response_model=None,
+                            system_prompt=SYSTEM_PROMPT
+                        )
                         processed_content = response.text
                 else:
                     # Direct processing
-        response = infer_structured(
-            provider=provider or "openai",
-            prompt=prompt,
-            response_model=None,
-            system_prompt=SYSTEM_PROMPT
-        )
+                    response = infer_structured(
+                        provider=provider or "openai",
+                        prompt=prompt,
+                        response_model=None,
+                        system_prompt=SYSTEM_PROMPT
+                    )
                     processed_content = response.text
                     
                 # Cache the result for future use if caching is enabled

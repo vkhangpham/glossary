@@ -19,6 +19,7 @@ from pathlib import Path
 from sense_disambiguation.splitter import SenseSplitter
 
 # Test dataset paths
+test_dir = Path(__file__).parent
 TEST_DATASET_ROOT = test_dir.parent / "data" / "test_dataset"
 HIERARCHY_FILE = TEST_DATASET_ROOT / "hierarchy.json"
 UNIFIED_CONTEXT_FILE = TEST_DATASET_ROOT / "unified_context_ground_truth.json"

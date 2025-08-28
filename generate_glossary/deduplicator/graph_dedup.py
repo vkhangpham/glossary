@@ -74,10 +74,6 @@ def calculate_embedding_similarity(embedding1: Optional[np.ndarray], embedding2:
 
 
 # init_llm function removed - using direct LLM calls
-        provider=provider,
-        model=selected_model,
-        temperature=0
-    )
 
 # get_random_llm_config function removed - using centralized version
 
@@ -2488,11 +2484,11 @@ Are "{term1}" and "{term2}" equivalent based on the synthesis process defined in
                         
                 logging.debug(f"LLM verification attempt {attempt+1}/{num_attempts} for '{term1}' and '{term2}' using {random_provider}/{random_model}")
                 
-        response = infer_text(
-            provider=provider or "openai",
-            prompt=prompt,
-            system_prompt=SYSTEM_PROMPT
-        )
+                response = infer_text(
+                    provider=provider or "openai",
+                    prompt=prompt,
+                    system_prompt=SYSTEM_PROMPT
+                )
                 
                 # Parse the response - look for YES or NO
                 response_text = response.text.strip().upper()
