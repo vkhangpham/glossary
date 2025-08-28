@@ -18,7 +18,7 @@ import threading
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_structured, infer_text, get_random_llm_config
 
 # Load environment variables and setup logging
 load_dotenv()
@@ -48,26 +48,9 @@ def get_llm(provider: Optional[str] = None, model: Optional[str] = None) -> Base
         _process_local.llm = init_llm(provider, model)
     return _process_local.llm
 
-def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider and model"""
-    if not provider:
-        provider = Provider.GEMINI  # Default to Gemini
+# init_llm function removed - using direct LLM calls
 
-    # Use the provided model type string ('pro', 'default', 'mini')
-    selected_model_name = OPENAI_MODELS.get(model, OPENAI_MODELS["default"]) if provider == Provider.OPENAI else GEMINI_MODELS.get(model, GEMINI_MODELS["default"])
-
-    return LLMFactory.create_llm(
-        provider=provider,
-        model=selected_model_name,
-        temperature=0.2 # Slightly lower temp for more deterministic extraction
-    )
-
-def get_random_llm_config() -> Tuple[str, str]:
-    """Get a random LLM provider and model configuration"""
-    # provider = random.choice([Provider.OPENAI, Provider.GEMINI])
-    provider = Provider.OPENAI # Keep OpenAI for now
-    model = random.choice(["mini", "nano"])
-    return provider, model
+# get_random_llm_config function removed - using centralized version
 
 # --- Updated Pydantic Models ---
 class ConceptExtraction(BaseModel):
@@ -264,14 +247,14 @@ def process_batch_worker(args: tuple) -> List[List[ConceptExtraction]]:
 
             try:
                 # Get process-local LLM instance with specific provider/model
-                llm = init_llm(provider, model_type)
-
+        
                 try:
-                    response = llm.infer(
-                        prompt=prompt,
-                        system_prompt=SYSTEM_PROMPT,
-                        response_model=ConceptExtractionList,
-                    )
+        response = infer_structured(
+            provider=provider or "openai",
+            prompt=prompt,
+            response_model=ConceptExtractionList,
+            system_prompt=SYSTEM_PROMPT
+        )
                     # Ensure response.text is the Pydantic model instance
                     if isinstance(response.text, ConceptExtractionList):
                         attempt_extractions = response.text.extractions

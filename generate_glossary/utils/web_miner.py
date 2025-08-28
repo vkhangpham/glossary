@@ -924,11 +924,12 @@ async def process_batch(llm: BaseLLM, system_prompt: str, batch, use_cache: bool
             # For now, process items individually (in the future, if the LLM API supports batching, use it)
             for prompt, cache_key, future in uncached_batch:
                 try:
-                    response = llm.infer(
-                        prompt=prompt,
-                        system_prompt=system_prompt,
-                        response_model=None
-                    )
+        response = infer_structured(
+            provider=provider or "openai",
+            prompt=prompt,
+            response_model=None,
+            system_prompt=SYSTEM_PROMPT
+        )
                     
                     result = response.text
                     
@@ -1273,19 +1274,21 @@ Return ONLY the abstractive summary about "{term}", with no additional text or c
                     except Exception as e:
                         logger.error(f"Error in LLM processing for {url}: {e}")
                         # Fall back to direct processing if batch processing fails
-                        response = llm.infer(
-                            prompt=prompt,
-                            system_prompt=system_prompt,
-                            response_model=None
-                        )
+        response = infer_structured(
+            provider=provider or "openai",
+            prompt=prompt,
+            response_model=None,
+            system_prompt=SYSTEM_PROMPT
+        )
                         processed_content = response.text
                 else:
                     # Direct processing
-                    response = llm.infer(
-                        prompt=prompt,
-                        system_prompt=system_prompt,
-                        response_model=None
-                    )
+        response = infer_structured(
+            provider=provider or "openai",
+            prompt=prompt,
+            response_model=None,
+            system_prompt=SYSTEM_PROMPT
+        )
                     processed_content = response.text
                     
                 # Cache the result for future use if caching is enabled
@@ -1420,8 +1423,8 @@ async def search_web_content(
     logger.info(f"Initialized content extraction with {max_workers} workers")
     
     # Initialize LLM for content processing
-    provider = settings.provider or Provider.GEMINI
-    model = GEMINI_MODELS['default'] if provider == Provider.GEMINI else OPENAI_MODELS['default']
+    provider = settings.provider or "gemini"
+    model = GEMINI_MODELS['default'] if provider == "gemini" else OPENAI_MODELS['default']
     logger.info(f"Initializing LLM with provider: {provider}, model: {model}")
     
     llm = LLMFactory.create_llm(

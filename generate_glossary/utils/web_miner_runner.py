@@ -304,12 +304,12 @@ async def process_term_batch(
                 try:
                     print("Attempting to import get_llm function...")
                     logger.info("Attempting to import get_llm function...")
-                    from generate_glossary.utils.llm import get_llm
+                    from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
                     print(f"Using LLM provider: {settings.provider}")
                     logger.info(f"Using LLM provider: {settings.provider}")
-                    llm = get_llm(settings.provider)
-                    print(f"Successfully initialized LLM: {llm.__class__.__name__}")
-                    logger.info(f"Successfully initialized LLM: {llm.__class__.__name__}")
+                    # LLM is now initialized automatically when needed
+                    print(f"LLM will use provider: {settings.provider}")
+                    logger.info(f"LLM provider configured: {settings.provider}")
                 except (ImportError, AttributeError) as import_err:
                     # Handle the case where get_llm doesn't exist
                     error_msg = f"Could not import get_llm function: {import_err}"

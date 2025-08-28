@@ -33,7 +33,7 @@ from generate_glossary.deduplicator.dedup_utils import (
     get_dash_space_variations,
     SPELLING_VARIATIONS,
 )
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
 
 try:
     from generate_glossary.validator.validation_utils import calculate_relevance_score
@@ -73,36 +73,13 @@ def calculate_embedding_similarity(embedding1: Optional[np.ndarray], embedding2:
     return float(similarity)
 
 
-def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
-    """
-    Initialize LLM with specified provider and model
-    
-    Args:
-        provider: Optional provider name
-        model: Optional model name ("default" or "mini")
-        
-    Returns:
-        LLM instance
-    """
-    if not provider:
-        provider = Provider.OPENAI
-    
-    # Choose appropriate model based on parameter
-    if model is None:
-        model = "default"
-    selected_model = GEMINI_MODELS[model] if provider == Provider.GEMINI else OPENAI_MODELS[model]
-        
-    return LLMFactory.create_llm(
+# init_llm function removed - using direct LLM calls
         provider=provider,
         model=selected_model,
         temperature=0
     )
 
-def get_random_llm_config() -> Tuple[str, str]:
-    """Get a random LLM provider and model configuration"""
-    provider = choice([Provider.OPENAI, Provider.GEMINI])
-    model = choice(["pro", "default"], p=[0.4, 0.6])
-    return provider, model
+# get_random_llm_config function removed - using centralized version
 
 @timing_decorator
 def deduplicate_graph_based(
@@ -2508,11 +2485,14 @@ Are "{term1}" and "{term2}" equivalent based on the synthesis process defined in
                     random_provider = provider
                 
                 # Get a fresh LLM instance for each attempt with the random provider/model
-                llm = init_llm(random_provider, random_model)
-                
+                        
                 logging.debug(f"LLM verification attempt {attempt+1}/{num_attempts} for '{term1}' and '{term2}' using {random_provider}/{random_model}")
                 
-                response = llm.infer(prompt=user_prompt, system_prompt=system_prompt)
+        response = infer_text(
+            provider=provider or "openai",
+            prompt=prompt,
+            system_prompt=SYSTEM_PROMPT
+        )
                 
                 # Parse the response - look for YES or NO
                 response_text = response.text.strip().upper()

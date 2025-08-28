@@ -224,17 +224,19 @@ def main() -> None:
         
         # Generate LLM responses if needed
         if args.mode == "llm":
-            from generate_glossary.utils.llm import LLMFactory
+            from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
             
             print(f"Generating LLM responses using {args.provider}...")
-            llm = LLMFactory.create_llm(args.provider)
             
             llm_responses = {}
             for term in terms:
                 prompt = f"Is '{term}' a valid academic discipline or field of study? Answer with 'yes' or 'no' followed by a brief explanation."
                 try:
-                    response = llm.infer(prompt=prompt).text
-                    llm_responses[term] = response
+                    response = infer_text(
+                        provider=args.provider or "openai",
+                        prompt=prompt
+                    )
+                    llm_responses[term] = response.text
                 except Exception as e:
                     print(f"Error getting LLM response for '{term}': {e}", file=sys.stderr)
                     llm_responses[term] = None

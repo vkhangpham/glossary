@@ -19,7 +19,7 @@ import datetime  # For checkpoint timestamps
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import Provider
+# No longer need Provider import - using direct provider strings
 
 # Import shared web search utilities
 from generate_glossary.utils.web_search.search import WebSearchConfig, web_search_bulk
@@ -287,7 +287,7 @@ async def run_multiple_llm_extractions(
     if len(model_types) < num_attempts:
         model_types = model_types * (num_attempts // len(model_types) + 1)
     current_model_types = model_types[:num_attempts]
-    available_providers = [Provider.GEMINI, Provider.OPENAI]
+    available_providers = ["gemini", "openai"]
 
     for attempt in range(num_attempts):
         current_provider = random.choice(available_providers)
@@ -843,7 +843,7 @@ async def main_async():
 
         output_file = level_config.get_step_output_file(0) # Lv3 topics file
         meta_file = level_config.get_step_metadata_file(0)     # Lv3 meta file
-        current_provider = provider or Provider.GEMINI
+        current_provider = provider or "gemini"
 
         logger.info(f"Using provider: {current_provider} with {num_llm_attempts} LLM attempts (models: {llm_model_types}), agreement threshold {agreement_threshold}, and score threshold {min_score_for_llm}")
 

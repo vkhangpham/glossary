@@ -16,7 +16,7 @@ import sys
 
 # Add parent directory to path to allow imports from utils
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.llm import LLMFactory
+from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
 
 # Try both import paths for WebContent to handle different import structures
 try:
@@ -487,7 +487,7 @@ def deduplicate_llm_based(
     logging.info(f"Starting LLM-based deduplication")
     
     # Initialize LLM
-    llm = LLMFactory.create_llm(provider)
+    # LLM is now initialized automatically when calling infer_text
     
     # If potential_duplicates is provided, use it for verification
     if potential_duplicates:

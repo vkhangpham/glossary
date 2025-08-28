@@ -18,7 +18,7 @@ import threading
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
 
 # Load environment variables and setup logging
 load_dotenv()
@@ -64,24 +64,13 @@ def get_llm(provider: Optional[str] = None, model: Optional[str] = None) -> Base
         _process_local.llm = init_llm(provider, model)
     return _process_local.llm
 
-def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider and model"""
-    if not provider:
-        provider = Provider.GEMINI  # Default to Gemini
-    
-    selected_model = OPENAI_MODELS[model] if provider == Provider.OPENAI else GEMINI_MODELS[model]
-        
-    return LLMFactory.create_llm(
+# init_llm function removed - using direct LLM calls
         provider=provider,
         model=selected_model,
         temperature=0.3
     )
 
-def get_random_llm_config() -> Tuple[str, str]:
-    """Get a random LLM provider and model configuration"""
-    provider = random.choice([Provider.OPENAI, Provider.GEMINI])
-    model = random.choice(["pro", "default", "mini"])
-    return provider, model
+# get_random_llm_config function removed - using centralized version
 
 class ConceptExtraction(BaseModel):
     """Base model for concept extraction"""
@@ -274,17 +263,17 @@ def process_batch_worker(args: tuple) -> List[List[ConceptExtraction]]:
             
             try:
                 # Get process-local LLM instance with specific provider/model
-                llm = init_llm(provider, model)
-                
+                        
                 logger.info(f"Processing batch with {len(batch)} items")
                 
                 try:
                     logger.info("Attempting structured extraction with Pydantic model")
-                    response = llm.infer(
-                        prompt=prompt,
-                        system_prompt=SYSTEM_PROMPT,
-                        response_model=ConceptExtractionList,
-                    )
+        response = infer_structured(
+            provider=provider or "openai",
+            prompt=prompt,
+            response_model=ConceptExtractionList,
+            system_prompt=SYSTEM_PROMPT
+        )
                     logger.info(f"Successfully extracted {len(response.text.extractions)} concepts with structured validation")
                     all_extractions.append(response.text.extractions)
                     
@@ -300,10 +289,11 @@ def process_batch_worker(args: tuple) -> List[List[ConceptExtraction]]:
                         # Try a simpler approach without the Pydantic model
                         try:
                             logger.info("Attempting to extract concepts without structured validation")
-                            simple_response = llm.infer(
-                                prompt=prompt,
-                                system_prompt=SYSTEM_PROMPT,
-                            )
+        response = infer_text(
+            provider=provider or "openai",
+            prompt=prompt,
+            system_prompt=SYSTEM_PROMPT
+        )
                             
                             logger.debug(f"Raw response: {simple_response.text[:500]}...")
                             

@@ -16,7 +16,7 @@ from tqdm import tqdm
 # Package structure now properly configured with pyproject.toml
 
 from generate_glossary.utils.logger import setup_logger
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.resilient_processing import (
     ConceptExtractionProcessor, create_processing_config, get_checkpoint_dir
@@ -43,33 +43,9 @@ class ConceptExtractionList(BaseModel):
     """Model for batch processing results"""
     extractions: List[ConceptExtraction] = Field(description="List of concept extractions")
 
-def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider and model"""
-    if not provider:
-        provider = Provider.OPENAI  # Default to OpenAI
-        
-    # Convert string provider to Provider constant
-    provider_name = provider.lower()
-    if provider_name not in [Provider.OPENAI, Provider.GEMINI]:
-        raise ValueError(f"Unsupported provider: {provider}")
-    
-    # Choose model based on parameters
-    if model == "default":
-        selected_model = OPENAI_MODELS["default"] if provider_name == Provider.OPENAI else GEMINI_MODELS["pro"]
-    else:  # mini
-        selected_model = OPENAI_MODELS["mini"] if provider_name == Provider.OPENAI else GEMINI_MODELS["default"]
-        
-    return LLMFactory.create_llm(
-        provider=provider_name,
-        model=selected_model,
-        temperature=0.3
-    )
+# init_llm function removed - using direct LLM calls
 
-def get_random_llm_config() -> Tuple[str, str]:
-    """Get a random LLM provider and model configuration"""
-    provider = random.choice([Provider.OPENAI, Provider.GEMINI])
-    model = random.choice(["default", "mini"])
-    return provider, model
+# get_random_llm_config function removed - using centralized version
 
 SYSTEM_PROMPT = """You are an expert in academic research classification with deep knowledge 
 of research domains, scientific disciplines, and academic organizational structures.
@@ -145,56 +121,33 @@ async def process_batch_async(
     batch: List[str],
     num_attempts: int = processing_config.llm_attempts
 ) -> List[List[ConceptExtraction]]:
-    """Process a batch of sources using multiple LLM attempts asynchronously with different providers/models"""
+    """Process a batch of sources using multiple LLM attempts - now simplified with LiteLLM/Instructor"""
     llm_responses = []
 
     try:
-        # Get multiple responses for each batch
-        tasks = []
-        llms = []
+        prompt = build_prompt(batch)
         
-        # Create a task for each attempt with a random provider/model combination
+        # Create multiple tasks for parallel processing
+        tasks = []
         for _ in range(num_attempts):
-            provider, model = get_random_llm_config()
-            llm = init_llm(provider, model)
-            llms.append(llm)
-            
+            provider, model = get_random_llm_config(level=0)
             logger.info(f"Running attempt with provider: {provider}, model: {model}")
-            prompt = build_prompt(batch)
             
-            # Use synchronous call for providers without async support
-            if not hasattr(llm, 'infer_async'):
-                response = llm.infer(
+            # Create async task using the simplified API
+            task = asyncio.create_task(
+                asyncio.to_thread(
+                    infer_structured,
+                    provider=provider,
                     prompt=prompt,
-                    system_prompt=SYSTEM_PROMPT,
                     response_model=ConceptExtractionList,
+                    system_prompt=SYSTEM_PROMPT,
+                    model=model
                 )
-                tasks.append(response)
-            else:
-                tasks.append(
-                    asyncio.create_task(
-                        llm.infer_async(
-                            prompt=prompt,
-                            system_prompt=SYSTEM_PROMPT,
-                            response_model=ConceptExtractionList,
-                        )
-                    )
-                )
+            )
+            tasks.append(task)
 
         # Wait for all attempts to complete
-        if not all(hasattr(llm, 'infer_async') for llm in llms):
-            # At least one llm uses synchronous calls
-            responses = []
-            for i, task in enumerate(tasks):
-                if hasattr(llms[i], 'infer_async'):
-                    # This was an async task
-                    responses.append(await task)
-                else:
-                    # This was already a response
-                    responses.append(task)
-        else:
-            # All llms use async calls
-            responses = await asyncio.gather(*tasks, return_exceptions=True)
+        responses = await asyncio.gather(*tasks, return_exceptions=True)
         
         for response in responses:
             if isinstance(response, Exception):

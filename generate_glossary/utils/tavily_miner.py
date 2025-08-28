@@ -460,11 +460,12 @@ Text:
 Return ONLY the abstractive summary about "{term}", with no additional text or commentary."""
 
                     # Direct processing with LLM
-                    response = llm.infer(
-                        prompt=prompt,
-                        system_prompt=system_prompt,
-                        response_model=None
-                    )
+        response = infer_structured(
+            provider=provider or "openai",
+            prompt=prompt,
+            response_model=None,
+            system_prompt=SYSTEM_PROMPT
+        )
                     processed_content = response.text
                     
                     # Cache the result for future use if caching is enabled

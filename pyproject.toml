@@ -7,7 +7,7 @@ name = "glossary-generation"
 version = "0.1.0"
 description = "Academic glossary analysis system with hierarchical concept taxonomies"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 authors = [
     { name = "Cazoodle Research Team" },
 ]
@@ -49,6 +49,8 @@ dependencies = [
     
     # For LLM integration
     "openai",
+    "litellm",
+    "instructor",
     "bs4",
     
     # Web scraping and processing
@@ -131,4 +133,5 @@ dev-dependencies = [
     "isort",
     "flake8",
     "mypy",
+    "pytest-cov>=6.2.1",
 ]

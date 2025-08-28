@@ -15,8 +15,8 @@ import warnings
 
 # Package structure now properly configured with pyproject.toml
 
-# Import our existing LLM implementation
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS
+# Import our simplified LLM implementation
+from generate_glossary.utils.llm_simple import infer_structured, infer_text, get_random_llm_config
 from generate_glossary.utils.logger import setup_logger
 
 # Setup logging
@@ -64,7 +64,7 @@ class SenseSplitter:
                  cluster_results: Optional[dict[str, list[int]]] = None, 
                  embedding_model_name: str = 'all-MiniLM-L6-v2',
                  use_llm_for_tags: bool = True,
-                 llm_provider: str = Provider.OPENAI,
+                 llm_provider: str = "openai",
                  llm_model: Optional[str] = None,
                  level: int = 2,
                  output_dir: Optional[str] = None):
@@ -105,27 +105,8 @@ class SenseSplitter:
         self.level_params = LEVEL_PARAMS[self.level]
         self.term_contexts = {}  # Store the loaded term contexts from unified context file
         
-        # LLM settings
-        self.llm_provider = llm_provider.lower() if llm_provider else Provider.OPENAI
-        if self.llm_provider not in [Provider.OPENAI, Provider.GEMINI]:
-            logger.warning(f"Unsupported provider: {llm_provider}. Falling back to OpenAI.")
-            self.llm_provider = Provider.OPENAI
-            
-        # Set default model based on provider
-        if not llm_model:
-            self.llm_model = OPENAI_MODELS["default"] if self.llm_provider == Provider.OPENAI else GEMINI_MODELS["default"]
-        else:
-            self.llm_model = llm_model
-            
-        # Initialize LLM
-        self._llm = None
-        try:
-            if self.use_llm_for_tags:
-                self._init_llm()
-            self.using_real_llm = self.use_llm_for_tags
-        except Exception as e:
-            logger.warning(f"Failed to initialize LLM: {e}. Will use simulation for tagging.")
-            self.using_real_llm = False
+        # LLM settings - now handled automatically by llm_simple
+        self.using_real_llm = self.use_llm_for_tags
         
         # Caches
         self._parent_context_cache = {}
@@ -143,15 +124,6 @@ class SenseSplitter:
                 stacklevel=2
             )
 
-    def _init_llm(self) -> None:
-        """Initialize the LLM using the factory"""
-        if self._llm is None:
-            self._llm = LLMFactory.create_llm(
-                provider=self.llm_provider,
-                model=self.llm_model,
-                temperature=0.2  # Low temperature for consistent tagging
-            )
-            logger.info(f"Initialized LLM: {self.llm_provider} - {self.llm_model}")
 
     @property
     def embedding_model(self):
@@ -338,9 +310,10 @@ Return ONLY the single most appropriate domain label (1-3 words), standardized t
         for attempt in range(max_attempts):
             try:
                 # Use the LLM directly without pydantic model
-                response = self._llm.infer(
-                    prompt=prompt,
-                    system_prompt=SYSTEM_PROMPT
+                provider, model = get_random_llm_config()
+                response = infer_text(
+                    provider=provider,
+                    prompt=prompt
                 )
                 
                 # Extract and return the tag
@@ -897,11 +870,12 @@ Apply the evaluation criteria focusing specifically on how the TERM '{original_t
         try:
             # First attempt: Try structured response with Pydantic model
             try:
-                response = self._llm.infer(
-                    prompt=user_prompt, 
-                    system_prompt=system_prompt,
-                    temperature=0.1,
-                    response_model=FieldDistinctnessAnalysis
+                provider, model = get_random_llm_config()
+                response = infer_structured(
+                    provider=provider,
+                    prompt=prompt,
+                    response_model=FieldDistinctnessAnalysis,
+                    temperature=0.1
                 )
                 
                 if response and hasattr(response, 'text'):
@@ -919,9 +893,10 @@ Apply the evaluation criteria focusing specifically on how the TERM '{original_t
                 logger.warning(f"Structured response failed: {e}. Falling back to text response.")
             
             # Second attempt: Use text-based response as fallback
-            response = self._llm.infer(
-                prompt=user_prompt, 
-                system_prompt=system_prompt,
+            provider, model = get_random_llm_config()
+            response = infer_text(
+                provider=provider,
+                prompt=prompt,
                 temperature=0.1
             )
             
@@ -2104,7 +2079,7 @@ if __name__ == '__main__':
                 candidate_terms_list=[],  # Will be populated from loaded results
                 cluster_results={},       # Will be populated from loaded results
                 use_llm_for_tags=True,
-                llm_provider=Provider.OPENAI,
+                llm_provider="openai",
                 level=level,
                 output_dir=output_dir
             )

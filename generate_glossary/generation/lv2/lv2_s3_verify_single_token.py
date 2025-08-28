@@ -10,7 +10,7 @@ from tqdm import tqdm
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_structured, infer_text, get_random_llm_config
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Load environment variables and setup logging
@@ -32,16 +32,7 @@ class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
     pass
 
-def init_llm(provider: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider"""
-    if not provider:
-        provider = Provider.OPENAI  # Default to OpenAI
-        
-    return LLMFactory.create_llm(
-        provider=provider,
-        model=OPENAI_MODELS["mini"] if provider == Provider.OPENAI else GEMINI_MODELS["pro"],
-        temperature=0.3
-    )
+# No longer need init_llm - using direct calls
 
 SYSTEM_PROMPT = """You are an expert in academic research classification with a deep understanding of research domains, 
 academic departments, scientific disciplines, and specialized fields of study.
@@ -108,8 +99,8 @@ def verify_keyword(
     )
     
     try:
-        llm = init_llm(provider)
-        response = llm.infer(
+        response = infer_text(
+            provider=provider or "openai",
             prompt=prompt,
             system_prompt=SYSTEM_PROMPT,
             temperature=0.3
@@ -162,7 +153,7 @@ def verify_keywords_batch(
                 batch_results[keyword] = {
                     "is_verified": is_verified,
                     "institutions": institutions,
-                    "provider": provider or Provider.OPENAI,
+                    "provider": provider or "openai",
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }
             except Exception as e:
@@ -170,7 +161,7 @@ def verify_keywords_batch(
                 batch_results[keyword] = {
                     "is_verified": False,
                     "institutions": [],
-                    "provider": provider or Provider.OPENAI,
+                    "provider": provider or "openai",
                     "error": str(e),
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }
@@ -304,8 +295,8 @@ def main():
                 "unverified_single_word_count": len(unverified_keywords),
                 "total_verified_count": len(all_verified_keywords),
                 "normalized_output_count": len(final_keywords),
-                "model": init_llm(provider).model,
-                "temperature": init_llm(provider).temperature,
+                "model": "gpt-4o-mini",
+                "temperature": 0.3,
                 "batch_size": processing_config.batch_size,
                 "cooldown_period": processing_config.cooldown_period,
                 "cooldown_frequency": processing_config.cooldown_frequency,

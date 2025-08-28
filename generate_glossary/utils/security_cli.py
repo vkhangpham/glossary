@@ -17,7 +17,7 @@ from generate_glossary.utils.secure_config import (
     validate_api_keys, key_manager, mask_sensitive_data, APIKeyManager
 )
 from generate_glossary.utils.logger import setup_logger
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS
+from generate_glossary.utils.llm_simple import get_random_llm_config, infer_text
 
 logger = setup_logger("security_cli")
 
@@ -57,8 +57,8 @@ def test_llm_connectivity() -> bool:
     print("\n=== LLM Connectivity Test ===")
     
     providers_to_test = [
-        (Provider.OPENAI, OPENAI_MODELS["mini"]),
-        (Provider.GEMINI, GEMINI_MODELS["default"])
+        ("openai", "gpt-4o-mini"),
+        ("gemini", "gemini-1.5-flash")
     ]
     
     all_working = True
@@ -67,17 +67,12 @@ def test_llm_connectivity() -> bool:
         print(f"\n🧪 Testing {provider.upper()} with {model}...")
         
         try:
-            llm = LLMFactory.create_llm(
-                provider=provider,
-                model=model,
-                temperature=0.1
-            )
             
             # Simple test prompt
             test_prompt = "Respond with exactly: 'Connection test successful'"
-            response = llm.infer(
-                prompt=test_prompt,
-                system_prompt="You are a test system. Follow instructions exactly."
+            response = infer_text(
+                provider=provider,
+                prompt=test_prompt
             )
             
             if response and response.text:

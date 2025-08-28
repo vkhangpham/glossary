@@ -10,11 +10,10 @@ from typing import Optional, Any, Dict, List, Tuple
 # Package structure now properly configured with pyproject.toml
 
 try:
-    from generate_glossary.utils.llm import get_llm, LLMError, LLMConfigError, GEMINI_MODELS
+    from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
 except ImportError as e:
     print(f"Error importing 'generate_glossary' modules: {e}")
     print("Please ensure that 'generate_glossary' is in your PYTHONPATH or structured as a package accessible from the script's location.")
-    print(f"Attempted to add to sys.path: {project_root}")
     sys.exit(1)
 
 # --- Configuration ---
@@ -35,9 +34,7 @@ REQUEST_TIMEOUT = 30
 MAX_CONTEXT_TOKENS = 800000
 MAX_CONTEXT_CHARS = 1600000
 
-# LLM Configuration
-LLM_PROVIDER = "gemini"
-LLM_MODEL_TIER = "default"
+# LLM Configuration - now handled automatically by llm_simple
 
 # Resource context configuration
 MAX_RESOURCES_TO_USE = 3
@@ -300,7 +297,7 @@ def truncate_context(context: str, max_chars: int = MAX_CONTEXT_CHARS) -> str:
     truncated += "\n\n... [Context was truncated due to size limitations] ..."
     return truncated
 
-def generate_definition_for_split_term(llm_client: Any, term: str, context: str, metadata: Dict, use_resource_context: bool = True) -> Optional[str]:
+def generate_definition_for_split_term(term: str, context: str, metadata: Dict, use_resource_context: bool = True) -> Optional[str]:
     """Generate a definition specifically for a split term using context and metadata."""
     # Extract sense information
     original_term = metadata.get("original_term", term.split(" (")[0] if " (" in term else term)
@@ -340,7 +337,13 @@ def generate_definition_for_split_term(llm_client: Any, term: str, context: str,
     logger.debug(f"Generating definition for split term '{term}' with sense '{sense_tag}' (use_resource_context={use_resource_context})...")
     
     try:
-        result = llm_client.infer(prompt=prompt)
+        provider, model = get_random_llm_config()
+        result = infer_structured(
+            provider=provider,
+            prompt=prompt,
+            response_model=None,
+            model=model
+        )
         definition = result.text.strip() if result and result.text else None
         
         if definition:
@@ -366,14 +369,11 @@ def generate_definition_for_split_term(llm_client: Any, term: str, context: str,
         
         return definition
         
-    except LLMError as e:
-        logger.error(f"LLMError for '{term}': {e}")
-        return None
     except Exception as e:
-        logger.error(f"Unexpected error for '{term}': {e}")
+        logger.error(f"Error generating definition for '{term}': {e}")
         return None
 
-def process_split_term(llm_client: Any, term: str, resource_data: Dict, metadata_data: Dict, batch_num: int) -> Tuple[str, Optional[str]]:
+def process_split_term(term: str, resource_data: Dict, metadata_data: Dict, batch_num: int) -> Tuple[str, Optional[str]]:
     """Process a single split term with its specific context."""
     global successful_definitions, failed_definitions
     
@@ -391,7 +391,7 @@ def process_split_term(llm_client: Any, term: str, resource_data: Dict, metadata
         context = extract_context_for_specific_term(resource_data, term, MAX_RESOURCES_TO_USE)
         
         # Generate definition
-        definition = generate_definition_for_split_term(llm_client, term, context, metadata, use_resource_context)
+        definition = generate_definition_for_split_term(term, context, metadata, use_resource_context)
         
         # Update counters
         with counter_lock:
@@ -420,17 +420,8 @@ def main():
     logger.info("Ensure GOOGLE_API_KEY and related environment variables are set.")
     logger.info(f"Config: MAX_WORKERS={MAX_WORKERS}, BATCH_SIZE={BATCH_SIZE}, BATCH_TIMEOUT={BATCH_TIMEOUT}s")
 
-    try:
-        logger.info(f"Initializing LLM ({LLM_PROVIDER}, {GEMINI_MODELS[LLM_MODEL_TIER]})...")
-        llm = get_llm(provider=LLM_PROVIDER, model=GEMINI_MODELS[LLM_MODEL_TIER])
-        logger.info("LLM initialized successfully.")
-    except LLMConfigError as e:
-        logger.error(f"LLM Configuration Error: {e}")
-        return
-    except Exception as e:
-        logger.error(f"Failed to initialize LLM: {e}")
-        return
-
+    # LLM initialization is now handled automatically by llm_simple
+    
     all_definitions = {}
     total_terms_processed = 0
 
@@ -491,7 +482,7 @@ def main():
             
             with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
                 for term in batch_terms:
-                    future = executor.submit(process_split_term, llm, term, resource_data, metadata_data, batch_number)
+                    future = executor.submit(process_split_term, term, resource_data, metadata_data, batch_number)
                     futures.append(future)
                 
                 batch_results = {}

@@ -18,7 +18,7 @@ import certifi
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import Provider
+# No longer need Provider import - using direct provider strings
 
 # Import shared web search utilities
 from generate_glossary.utils.web_search.search import WebSearchConfig, web_search_bulk

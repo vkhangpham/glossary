@@ -31,7 +31,7 @@ except LookupError:
     import nltk
     nltk.download('wordnet', quiet=True)
 
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_structured, infer_text, get_random_llm_config
 
 # Constants
 QUALITY_THRESHOLD = 0.7  # Minimum quality score to consider a list (0-1)
@@ -72,7 +72,7 @@ class FilterConfig:
         self.use_llm_validation = use_llm_validation
         self.binary_llm_decision = binary_llm_decision
         self.llm_validation_batch_size = llm_validation_batch_size
-        self.provider = provider or Provider.GEMINI
+        self.provider = provider or "gemini"
         self.system_prompt = system_prompt
         self.binary_system_prompt = binary_system_prompt
         self.scoring_fn = scoring_fn
@@ -81,32 +81,7 @@ class FilterConfig:
         self.model_type = model_type # Store the model type
 
 
-def init_llm(provider: Optional[str] = None, model_type: Optional[str] = "default") -> BaseLLM:
-    """
-    Initialize LLM with specified provider and model type.
-    
-    Args:
-        provider: Optional provider name (e.g., 'gemini', 'openai').
-        model_type: Optional model type (e.g., 'default', 'pro', 'mini', 'nano').
-        
-    Returns:
-        LLM instance.
-    """
-    if not provider:
-        provider = Provider.GEMINI  # Default to Gemini
-        
-    # Determine the model dictionary and the requested model
-    if provider == Provider.GEMINI:
-        model_map = GEMINI_MODELS
-    elif provider == Provider.OPENAI:
-        model_map = OPENAI_MODELS
-    else:
-        raise ValueError(f"Unsupported LLM provider: {provider}")
-        
-    # Get the specific model or fall back to default if type is invalid/not found
-    model_name = model_map.get(model_type, model_map["default"])
-    
-    return LLMFactory.create_llm(
+# init_llm function removed - using direct LLM calls
         provider=provider,
         model=model_name,
         temperature=0.3
@@ -587,7 +562,11 @@ Here are the lists to validate:
         
         # Call LLM
         try:
-            response = llm.infer(prompt=prompt, system_prompt=system_prompt)
+        response = infer_text(
+            provider=provider or "openai",
+            prompt=prompt,
+            system_prompt=SYSTEM_PROMPT
+        )
             
             # Parse JSON response
             try:
@@ -681,10 +660,11 @@ async def validate_and_extract_lists_with_llm(
             
             try:
                 # Call LLM for each list individually
-                response = llm.infer(
-                    prompt=prompt,
-                    system_prompt=None  # The system prompt is already included in the prompt
-                )
+        response = infer_text(
+            provider=provider or "openai",
+            prompt=prompt,
+            system_prompt=SYSTEM_PROMPT
+        )
                 responses.append(response.text)
                 # Small delay between requests to avoid rate limits
                 await asyncio.sleep(0.1)

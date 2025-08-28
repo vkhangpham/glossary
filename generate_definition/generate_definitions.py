@@ -10,12 +10,11 @@ from typing import Optional, Any, Dict, List, Tuple
 # Package structure now properly configured with pyproject.toml
 
 try:
-    from generate_glossary.utils.llm import get_llm, LLMError, LLMConfigError, GEMINI_MODELS
-    # Assuming logger and exceptions are in the same utils directory and handled by llm.py
+    from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
+    # Import exceptions if needed
 except ImportError as e:
     print(f"Error importing 'generate_glossary' modules: {e}")
     print("Please ensure that 'generate_glossary' is in your PYTHONPATH or structured as a package accessible from the script's location.")
-    print(f"Attempted to add to sys.path: {project_root}") # Added for debugging
     sys.exit(1)
 
 # --- Configuration ---
@@ -37,9 +36,7 @@ REQUEST_TIMEOUT = 30  # Seconds to wait for a single API call before timing out
 MAX_CONTEXT_TOKENS = 800000  # Safe limit to avoid hitting the 1048575 token limit
 MAX_CONTEXT_CHARS = 1600000  # Approximate character count (avg 2 chars per token)
 
-# LLM Configuration
-LLM_PROVIDER = "gemini"
-LLM_MODEL_TIER = "default"  # Corresponds to Gemini 2.5 Flash in llm.py
+# LLM Configuration - now handled automatically by llm_simple
 
 # Resource context configuration
 MAX_RESOURCES_TO_USE = 3  # Number of top resources to include in the context
@@ -196,7 +193,7 @@ def truncate_context(context: str, max_chars: int = MAX_CONTEXT_CHARS) -> str:
     truncated += "\n\n... [Context was truncated due to size limitations] ..."
     return truncated
 
-def generate_definition_for_term(llm_client: Any, term: str, context: str) -> Optional[str]:
+def generate_definition_for_term(term: str, context: str) -> Optional[str]:
     """Generates a definition for a given term using the LLM and context."""
     # Truncate context to avoid token limit errors
     safe_context = truncate_context(context)
@@ -216,7 +213,13 @@ def generate_definition_for_term(llm_client: Any, term: str, context: str) -> Op
     logger.debug(f"Generating definition for '{term}' with improved prompt...")
     
     try:
-        result = llm_client.infer(prompt=prompt)
+        provider, model = get_random_llm_config()
+        result = infer_structured(
+            provider=provider,
+            prompt=prompt,
+            response_model=None,  # Just get text response
+            model=model
+        )
         definition = result.text.strip() if result and result.text else None
         
         if definition:
@@ -255,11 +258,10 @@ def generate_definition_for_term(llm_client: Any, term: str, context: str) -> Op
         logger.error(f"Unexpected error generating definition for '{term}': {e}")
         return None
 
-def process_term(llm_client: Any, term: str, context: str, batch_num: int, level_key: str) -> Tuple[str, Optional[str]]:
+def process_term(term: str, context: str, batch_num: int, level_key: str) -> Tuple[str, Optional[str]]:
     """Process a single term in a thread-safe manner.
     
     Args:
-        llm_client: The LLM client to use
         term: The term to process
         context: The context to use for generation
         batch_num: The batch number this term belongs to (for logging)
@@ -274,7 +276,7 @@ def process_term(llm_client: Any, term: str, context: str, batch_num: int, level
         start_time = time.time()
         
         # Generate definition with timeout
-        definition = generate_definition_for_term(llm_client, term, context)
+        definition = generate_definition_for_term(term, context)
         
         # Update counters in a thread-safe manner
         with global_counter_lock:
@@ -418,16 +420,7 @@ def main():
     logger.info("Starting glossary definition generation process...")
     logger.info(f"Concurrency: MAX_WORKERS={MAX_WORKERS}, BATCH_SIZE={BATCH_SIZE}")
 
-    try:
-        logger.info(f"Initializing LLM ({LLM_PROVIDER} provider, model tier: {GEMINI_MODELS[LLM_MODEL_TIER]})...")
-        llm = get_llm(provider=LLM_PROVIDER, model=GEMINI_MODELS[LLM_MODEL_TIER])
-        logger.info(f"LLM initialized successfully.")
-    except LLMConfigError as e:
-        logger.error(f"LLM Configuration Error: {e}. Please check your API keys and environment setup.")
-        return
-    except Exception as e:
-        logger.error(f"Failed to initialize LLM: {e}")
-        return
+    # LLM configuration is now handled automatically by llm_simple
 
     # This report stores definitions generated *in this specific run*
     run_generated_definitions_report = {} 
@@ -528,7 +521,7 @@ def main():
                             logger.error(f"[{level_key}] CRITICAL: Context for term '{term_in_batch}' missing from cache. Skipping.")
                             with global_counter_lock: global_failed_definitions_in_run += 1
                             continue
-                        futures.append(executor.submit(process_term, llm, term_in_batch, context, batch_num_for_level, level_key))
+                        futures.append(executor.submit(process_term, term_in_batch, context, batch_num_for_level, level_key))
                 
                 # Collect results from this batch
                 for future in concurrent.futures.as_completed(futures):

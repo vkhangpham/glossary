@@ -14,7 +14,7 @@ from collections import Counter
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Load environment variables and setup logging
@@ -46,24 +46,9 @@ class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
     pass
 
-def get_random_llm_config() -> Tuple[str, str]:
-    """Get a random LLM provider and model configuration"""
-    provider = random.choice([Provider.OPENAI, Provider.GEMINI])
-    model = random.choice(["default", "mini"])
-    return provider, model
+# Now using centralized get_random_llm_config from llm_simple
 
-def init_llm(provider: Optional[str] = None, model: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider and model"""
-    if not provider:
-        provider = Provider.OPENAI  # Default to OpenAI
-    
-    # Choose model based on parameters
-    if model == "default":
-        selected_model = OPENAI_MODELS["default"] if provider == Provider.OPENAI else GEMINI_MODELS["pro"]
-    else:  # mini
-        selected_model = OPENAI_MODELS["mini"] if provider == Provider.OPENAI else GEMINI_MODELS["default"]
-        
-    return LLMFactory.create_llm(
+# init_llm function removed - using direct LLM calls
         provider=provider,
         model=selected_model,
         temperature=0.2  # Low temperature for consistency
@@ -171,11 +156,12 @@ def split_term_batch(
     prompt = build_split_prompt(terms)
     
     try:
-        llm = init_llm(provider, model)
-        response = llm.infer(
+        response = infer_structured(
+            provider=provider or "openai",
             prompt=prompt,
             system_prompt=SYSTEM_PROMPT,
-            response_model=SplitResultList
+            response_model=SplitResultList,
+            model=model
         )
         
         return response.text.results

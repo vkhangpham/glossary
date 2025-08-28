@@ -12,7 +12,7 @@ from tqdm import tqdm
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_text
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Load environment variables and setup logging
@@ -31,16 +31,7 @@ class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
     pass
 
-def init_llm(provider: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider"""
-    if not provider:
-        provider = Provider.OPENAI  # Default to OpenAI
-        
-    return LLMFactory.create_llm(
-        provider=provider,
-        model=OPENAI_MODELS["mini"] if provider == Provider.OPENAI else GEMINI_MODELS["pro"],
-        temperature=0.3
-    )
+# No longer need init_llm - using direct calls
 
 SYSTEM_PROMPT = """You are an expert in academic research classification with a deep understanding of research domains, 
 academic departments, scientific disciplines, and specialized fields of study.
@@ -162,16 +153,16 @@ def verify_keyword(
         return False
     
     try:
-        llm = init_llm(provider)
         prompt = build_verification_prompt(keyword, departments)
         logger.debug(f"Verification prompt for '{keyword}':\n{prompt}")
         
         try:
-            response = llm.infer(
-                prompt=prompt,
-                system_prompt=SYSTEM_PROMPT,
-                temperature=0.3
-            )
+        response = infer_text(
+            provider=provider or "openai",
+            prompt=prompt,
+            system_prompt=SYSTEM_PROMPT,
+            temperature=0.3
+        )
             logger.debug(f"Raw response for '{keyword}':\n{response.text}")
             response_json = clean_json_response(response.text)
             logger.debug(f"Cleaned response for '{keyword}':\n{response_json}")

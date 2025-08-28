@@ -10,7 +10,7 @@ from tqdm import tqdm
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.utils.llm_simple import infer_structured, infer_text, get_random_llm_config
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 from generate_glossary.utils.resilient_processing import (
     KeywordVerificationProcessor, create_processing_config, get_checkpoint_dir
@@ -35,16 +35,7 @@ class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
     pass
 
-def init_llm(provider: Optional[str] = None) -> BaseLLM:
-    """Initialize LLM with specified provider"""
-    if not provider:
-        provider = Provider.OPENAI  # Default to OpenAI
-        
-    return LLMFactory.create_llm(
-        provider=provider,
-        model=OPENAI_MODELS["mini"] if provider == Provider.OPENAI else GEMINI_MODELS["pro"],
-        temperature=0.3
-    )
+# No longer need init_llm - using direct calls
 
 SYSTEM_PROMPT = """You are an expert in academic research classification with a deep understanding of research domains, 
 academic conferences, scientific journals, and specialized fields of study.
@@ -113,8 +104,8 @@ def verify_keyword(
     )
     
     try:
-        llm = init_llm(provider)
-        response = llm.infer(
+        response = infer_text(
+            provider=provider or "openai",
             prompt=prompt,
             system_prompt=SYSTEM_PROMPT,
             temperature=0.3
@@ -167,7 +158,7 @@ def verify_keywords_batch(
                 batch_results[keyword] = {
                     "is_verified": is_verified,
                     "journals": journals,
-                    "provider": provider or Provider.OPENAI,
+                    "provider": provider or "openai",
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }
             except Exception as e:
@@ -175,7 +166,7 @@ def verify_keywords_batch(
                 batch_results[keyword] = {
                     "is_verified": False,
                     "journals": [],
-                    "provider": provider or Provider.OPENAI,
+                    "provider": provider or "openai",
                     "error": str(e),
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }
