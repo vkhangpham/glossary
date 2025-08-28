@@ -253,14 +253,20 @@ The generation pipeline uses several shared utilities:
 
 ## Running the Complete Pipeline
 
-Instead of running each step individually, you can use the pipeline scripts to run the complete generation process:
+The generation pipeline is run level-by-level using individual scripts. Each level follows the same 4-step process:
 
 ```bash
-# Run the interactive pipeline for Level 0
-PYTHONPATH=. python -m generate_glossary.run_interactive
+# Example: Complete Level 0 Pipeline
+python -m generate_glossary.generation.lv0.lv0_s0_get_college_names
+python -m generate_glossary.generation.lv0.lv0_s1_extract_concepts --provider openai
+python -m generate_glossary.generation.lv0.lv0_s2_filter_by_institution_freq
+python -m generate_glossary.generation.lv0.lv0_s3_verify_single_token --provider openai
 
-# Or use the command-line interface
-PYTHONPATH=. python -m generate_glossary.run_pipeline --level 0 --provider openai
+# Example: Complete Level 1 Pipeline (uses Level 0 results)
+python -m generate_glossary.generation.lv1.lv1_s0_get_dept_names --input data/lv0/lv0_final.txt
+python -m generate_glossary.generation.lv1.lv1_s1_extract_concepts --provider openai
+python -m generate_glossary.generation.lv1.lv1_s2_filter_by_institution_freq
+python -m generate_glossary.generation.lv1.lv1_s3_verify_single_token --provider openai
 ```
 
 ## Integration with Validation and Deduplication

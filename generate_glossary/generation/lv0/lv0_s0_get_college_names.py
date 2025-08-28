@@ -6,10 +6,7 @@ from collections import Counter
 from typing import Dict, List, Tuple
 import pandas as pd  # Use pandas to get sheet names
 
-# Add the parent directory of the current file to the Python path
-current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(current_dir, "../../../"))
-sys.path.insert(0, project_root)
+# Package structure now properly configured with pyproject.toml
 
 from generate_glossary.utils.logger import setup_logger
 
@@ -216,6 +213,9 @@ if __name__ == "__main__":
         logger.info(f"Successfully wrote metadata to {metadata_path}")
 
     except Exception as e:
+        # TODO: [Reliability] Implement checkpoint restoration for failed pipeline steps
+        # If this step fails after expensive processing, all work is lost
+        # Consider: saving intermediate results, resumable processing, partial state recovery
         logger.error(f"An error occurred: {str(e)}", exc_info=True)
         raise
     

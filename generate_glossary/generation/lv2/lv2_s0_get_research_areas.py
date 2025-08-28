@@ -17,6 +17,7 @@ import certifi
 # Fix import path for utils
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm import Provider
 
 # Import shared web search utilities
@@ -120,22 +121,13 @@ Analyze the following list with EXTREME STRICTNESS:"""
 DEFAULT_MIN_SCORE_FOR_LLM = 0.65 # Default minimum score to send list to LLM (Higher for Lv2)
 DEFAULT_LLM_MODEL_TYPES = ["default", "mini", "nano"] # Default model types for attempts
 
-class Config:
-    """Configuration for research areas extraction from level 1 terms"""
-    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-    DEFAULT_LV1_INPUT_FILE = os.path.join(BASE_DIR, "data/lv1/lv1_final.txt")
-    
-    # Output files
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s0_research_areas.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s0_metadata.json")
-    
-    CACHE_DIR = os.path.join(BASE_DIR, "data/lv2/cache")
-    RAW_SEARCH_DIR = os.path.join(BASE_DIR, "data/lv2/raw_search_results")
-    DETAILED_META_DIR = os.path.join(BASE_DIR, "data/lv2/detailed_metadata")
-    
-    # Configuration for multiple LLM attempts
-    NUM_LLM_ATTEMPTS = 3  # Run the LLM extraction 3 times
-    AGREEMENT_THRESHOLD = 2  # Research areas must appear in at least 2 responses
+# Use centralized configuration
+LEVEL = 2
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 def read_level1_terms(input_path: str) -> List[str]:
     """Read level 1 terms from input file"""
@@ -220,7 +212,7 @@ def score_research_area_list(items: List[str], metadata: Dict[str, Any], context
 #     try:
 #         # Sanitize filename
 #         safe_filename = re.sub(r'[\/:*?"<>|]', '_', level1_term) + "_url_lists.json"
-#         output_path = os.path.join(Config.RAW_SEARCH_DIR, safe_filename)
+#         output_path = os.path.join(level_config.data_dir / "raw_search", safe_filename)
         
 #         # Convert data to a serializable format
 #         serializable_data = {
@@ -244,8 +236,8 @@ async def run_multiple_llm_extractions(
     all_extracted_lists_raw: List[Dict[str, Any]],
     level1_term: str,
     filter_config: FilterConfig,
-    num_attempts: int = Config.NUM_LLM_ATTEMPTS,
-    agreement_threshold: int = Config.AGREEMENT_THRESHOLD,
+    num_attempts: int = processing_config.llm_attempts,
+    agreement_threshold: int = processing_config.concept_agreement_threshold,
     logger: Optional[Any] = None,
     model_types: List[str] = DEFAULT_LLM_MODEL_TYPES
 ) -> Tuple[List[List[str]], List[Dict[str, Any]], List[List[str]]]:
@@ -416,8 +408,8 @@ async def process_level1_term(level1_term: str,
                               browser_semaphore: Optional[asyncio.Semaphore] = None,
                               min_score_for_llm: Optional[float] = DEFAULT_MIN_SCORE_FOR_LLM,
                               model_types: List[str] = DEFAULT_LLM_MODEL_TYPES,
-                              num_llm_attempts: int = Config.NUM_LLM_ATTEMPTS,
-                              agreement_threshold: int = Config.AGREEMENT_THRESHOLD,
+                              num_llm_attempts: int = processing_config.llm_attempts,
+                              agreement_threshold: int = processing_config.concept_agreement_threshold,
                               prefetched_search_results: Optional[Dict[str, Any]] = None
                               ) -> Dict[str, Any]:
     """Process a single level1 term to extract research areas and save detailed metadata"""
@@ -439,12 +431,12 @@ async def process_level1_term(level1_term: str,
     try:
         # Create configurations for the shared utilities
         search_config = WebSearchConfig(
-            base_dir=Config.BASE_DIR,
-            raw_search_dir=Config.RAW_SEARCH_DIR
+            base_dir=str(level_config.data_dir.parent.parent),
+            raw_search_dir=level_config.data_dir / "raw_search"
         )
         
         html_config = HTMLFetchConfig(
-            cache_dir=Config.CACHE_DIR
+            cache_dir=level_config.data_dir / "cache"
         )
         
         list_config = ListExtractionConfig(
@@ -792,10 +784,10 @@ async def process_level1_term(level1_term: str,
 #     try:
 #         # Sanitize filename
 #         safe_filename = re.sub(r'[\/:*?"<>|]', '_', level1_term) + "_details.json"
-#         output_path = os.path.join(Config.DETAILED_META_DIR, safe_filename)
+#         output_path = os.path.join(level_config.data_dir / "detailed_meta", safe_filename)
         
 #         # Ensure the directory exists
-#         os.makedirs(Config.DETAILED_META_DIR, exist_ok=True)
+#         os.makedirs(level_config.data_dir / "detailed_meta", exist_ok=True)
         
 #         with open(output_path, "w", encoding="utf-8") as f:
 #             # Use default handler for non-serializable objects if any slip through (e.g., sets)
@@ -876,8 +868,8 @@ async def process_level1_terms_batch(batch: List[str],
                                    browser_semaphore: Optional[asyncio.Semaphore] = None,
                                    min_score_for_llm: Optional[float] = DEFAULT_MIN_SCORE_FOR_LLM,
                                    model_types: List[str] = DEFAULT_LLM_MODEL_TYPES,
-                                   num_llm_attempts: int = Config.NUM_LLM_ATTEMPTS,
-                                   agreement_threshold: int = Config.AGREEMENT_THRESHOLD
+                                   num_llm_attempts: int = processing_config.llm_attempts,
+                                   agreement_threshold: int = processing_config.concept_agreement_threshold
                                    ) -> List[Dict[str, Any]]:
     """Process a batch of level 1 terms with optimized bulk web searching"""
     if not batch:
@@ -887,8 +879,8 @@ async def process_level1_terms_batch(batch: List[str],
     
     # Create search configuration
     search_config = WebSearchConfig(
-        base_dir=Config.BASE_DIR,
-        raw_search_dir=Config.RAW_SEARCH_DIR
+        base_dir=str(level_config.data_dir.parent.parent),
+        raw_search_dir=level_config.data_dir / "raw_search"
     )
     
     # Use global SEARCH_QUERIES constant for calculation
@@ -933,20 +925,20 @@ async def process_level1_terms_batch(batch: List[str],
 def ensure_dirs_exist():
     """Ensure all required directories exist"""
     dirs_to_create = [
-        Config.CACHE_DIR,
-        Config.RAW_SEARCH_DIR,
-        Config.DETAILED_META_DIR,
-        os.path.dirname(Config.OUTPUT_FILE),
-        os.path.dirname(Config.META_FILE)
+        level_config.data_dir / "cache",
+        level_config.data_dir / "raw_search",
+        level_config.data_dir / "detailed_meta",
+        os.path.dirname(level_config.get_step_output_file(0)),
+        os.path.dirname(level_config.get_step_metadata_file(0))
     ]
     
-    logger.info(f"BASE_DIR: {Config.BASE_DIR}")
-    logger.info(f"LV1_INPUT_FILE: {Config.DEFAULT_LV1_INPUT_FILE}")
-    logger.info(f"OUTPUT_FILE: {Config.OUTPUT_FILE}")
-    logger.info(f"META_FILE: {Config.META_FILE}")
-    logger.info(f"CACHE_DIR: {Config.CACHE_DIR}")
-    logger.info(f"RAW_SEARCH_DIR: {Config.RAW_SEARCH_DIR}")
-    logger.info(f"DETAILED_META_DIR: {Config.DETAILED_META_DIR}")
+    logger.info(f"BASE_DIR: {str(level_config.data_dir.parent.parent)}")
+    logger.info(f"LV1_INPUT_FILE: {str(get_level_config(1).get_final_file())}")
+    logger.info(f"OUTPUT_FILE: {level_config.get_step_output_file(0)}")
+    logger.info(f"META_FILE: {level_config.get_step_metadata_file(0)}")
+    logger.info(f"CACHE_DIR: {level_config.data_dir / "cache"}")
+    logger.info(f"RAW_SEARCH_DIR: {level_config.data_dir / "raw_search"}")
+    logger.info(f"DETAILED_META_DIR: {level_config.data_dir / "detailed_meta"}")
     
     for directory in dirs_to_create:
         try:
@@ -966,10 +958,10 @@ async def main_async():
         parser.add_argument("--provider", help="LLM provider (e.g., gemini, openai)")
         parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Batch size for processing terms (default: {BATCH_SIZE})")
         parser.add_argument("--max-concurrent", type=int, default=MAX_CONCURRENT_REQUESTS, help=f"Max concurrent term processing requests (default: {MAX_CONCURRENT_REQUESTS})")
-        parser.add_argument("--input-file", default=Config.DEFAULT_LV1_INPUT_FILE, help=f"Path to the input file containing level 1 terms (default: {Config.DEFAULT_LV1_INPUT_FILE})")
+        parser.add_argument("--input-file", default=str(get_level_config(1).get_final_file()), help=f"Path to the input file containing level 1 terms (default: {str(get_level_config(1).get_final_file())})")
         parser.add_argument("--append", action='store_true', help="Append results to existing output files instead of overwriting.")
-        parser.add_argument("--llm-attempts", type=int, default=Config.NUM_LLM_ATTEMPTS, help=f"Number of LLM extraction attempts per term (default: {Config.NUM_LLM_ATTEMPTS})")
-        parser.add_argument("--agreement-threshold", type=int, default=Config.AGREEMENT_THRESHOLD, help=f"Minimum appearances threshold for research areas (default: {Config.AGREEMENT_THRESHOLD})")
+        parser.add_argument("--llm-attempts", type=int, default=processing_config.llm_attempts, help=f"Number of LLM extraction attempts per term (default: {processing_config.llm_attempts})")
+        parser.add_argument("--agreement-threshold", type=int, default=processing_config.concept_agreement_threshold, help=f"Minimum appearances threshold for research areas (default: {processing_config.concept_agreement_threshold})")
         parser.add_argument("--min-score-for-llm", type=float, default=DEFAULT_MIN_SCORE_FOR_LLM, help=f"Minimum heuristic score to send a list to LLM (default: {DEFAULT_MIN_SCORE_FOR_LLM})")
         parser.add_argument("--llm-model-types", type=str, default=",".join(DEFAULT_LLM_MODEL_TYPES), help=f"Comma-separated LLM model types for attempts (e.g., default,pro,mini) (default: {','.join(DEFAULT_LLM_MODEL_TYPES)})")
         
@@ -987,8 +979,8 @@ async def main_async():
         
         # Update configuration with command line arguments if provided
         # These are now passed directly to functions, no need to update Config class vars
-        # Config.NUM_LLM_ATTEMPTS = num_llm_attempts 
-        # Config.AGREEMENT_THRESHOLD = agreement_threshold
+        # processing_config.llm_attempts = num_llm_attempts 
+        # processing_config.concept_agreement_threshold = agreement_threshold
         
         if provider:
             logger.info(f"Using provider: {provider}")
@@ -1000,7 +992,7 @@ async def main_async():
             logger.info(f"Using custom LLM score threshold: {min_score_for_llm}")
         if args.llm_model_types != ",".join(DEFAULT_LLM_MODEL_TYPES):
             logger.info(f"Using custom LLM model types: {llm_model_types}")
-        if input_file_path != Config.DEFAULT_LV1_INPUT_FILE:
+        if input_file_path != str(get_level_config(1).get_final_file()):
              logger.info(f"Using custom input file: {input_file_path}")
         if append_mode:
              logger.info("Append mode enabled. Results will be added to existing files.")
@@ -1018,8 +1010,8 @@ async def main_async():
         logger.info(f"Processing {len(level1_terms)} level 1 terms from '{input_file_path}' with batch size {batch_size} and max {max_concurrent} concurrent terms")
         
         # Use single output file and metadata
-        output_file = Config.OUTPUT_FILE
-        meta_file = Config.META_FILE
+        output_file = level_config.get_step_output_file(0)
+        meta_file = level_config.get_step_metadata_file(0)
         current_provider = provider or Provider.GEMINI  # Default to Gemini if not specified
         
         logger.info(f"Using provider: {current_provider} with {num_llm_attempts} LLM attempts (models: {llm_model_types}), agreement threshold {agreement_threshold}, and score threshold {min_score_for_llm}")

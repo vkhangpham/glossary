@@ -18,6 +18,7 @@ import datetime  # For checkpoint timestamps
 # Fix import path for utils - Adjust based on the new file location (lv3)
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm import Provider
 
 # Import shared web search utilities
@@ -126,24 +127,13 @@ DEFAULT_LLM_MODEL_TYPES = ["pro", "default", "mini"] # Default model types for a
 CHECKPOINT_DIR = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")), "data/lv3/checkpoint")
 CHECKPOINT_FILE = os.path.join(CHECKPOINT_DIR, "lv3_s0_checkpoint.json")
 
-class Config:
-    """Configuration for conference topic extraction from level 2 terms"""
-    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-    # Input file is now Level 2
-    DEFAULT_LV2_INPUT_FILE = os.path.join(BASE_DIR, "data/lv2/lv2_final.txt")
+# Use centralized configuration
+LEVEL = 3
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
 
-    # Output files are now Level 3
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_conference_topics.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_metadata.json")
-
-    # Cache and intermediate directories are now Level 3
-    CACHE_DIR = os.path.join(BASE_DIR, "data/lv3/cache")
-    RAW_SEARCH_DIR = os.path.join(BASE_DIR, "data/lv3/raw_search_results")
-    DETAILED_META_DIR = os.path.join(BASE_DIR, "data/lv3/detailed_metadata")
-
-    # Configuration for multiple LLM attempts (remains the same conceptually)
-    NUM_LLM_ATTEMPTS = 3
-    AGREEMENT_THRESHOLD = 2
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 def read_journals(input_path: str) -> List[str]:
     """Read journal names (level 2 terms) from input file"""
@@ -217,8 +207,8 @@ async def run_multiple_llm_extractions(
     all_extracted_lists_raw: List[Dict[str, Any]],
     level2_term: str, # Changed from level1_term
     filter_config: FilterConfig,
-    num_attempts: int = Config.NUM_LLM_ATTEMPTS,
-    agreement_threshold: int = Config.AGREEMENT_THRESHOLD,
+    num_attempts: int = processing_config.llm_attempts,
+    agreement_threshold: int = processing_config.concept_agreement_threshold,
     logger: Optional[Any] = None,
     model_types: List[str] = DEFAULT_LLM_MODEL_TYPES
 ) -> Tuple[List[List[str]], List[Dict[str, Any]], List[List[str]]]:
@@ -374,8 +364,8 @@ async def process_level2_term(level2_term: str, # Renamed from level1_term
                               browser_semaphore: Optional[asyncio.Semaphore] = None,
                               min_score_for_llm: Optional[float] = DEFAULT_MIN_SCORE_FOR_LLM,
                               model_types: List[str] = DEFAULT_LLM_MODEL_TYPES,
-                              num_llm_attempts: int = Config.NUM_LLM_ATTEMPTS,
-                              agreement_threshold: int = Config.AGREEMENT_THRESHOLD,
+                              num_llm_attempts: int = processing_config.llm_attempts,
+                              agreement_threshold: int = processing_config.concept_agreement_threshold,
                               prefetched_search_results: Optional[Dict[str, Any]] = None
                               ) -> Dict[str, Any]:
     """Process a single level2 term (conference/journal) to extract topics/tracks"""
@@ -393,11 +383,11 @@ async def process_level2_term(level2_term: str, # Renamed from level1_term
 
     try:
         search_config = WebSearchConfig(
-            base_dir=Config.BASE_DIR,
-            raw_search_dir=Config.RAW_SEARCH_DIR # Use Lv3 path
+            base_dir=str(level_config.data_dir.parent.parent),
+            raw_search_dir=level_config.data_dir / "raw_search" # Use Lv3 path
         )
         html_config = HTMLFetchConfig(
-            cache_dir=Config.CACHE_DIR # Use Lv3 path
+            cache_dir=level_config.data_dir / "cache" # Use Lv3 path
         )
         list_config = ListExtractionConfig(
             keywords=CONFERENCE_KEYWORDS, # Use conference keywords
@@ -671,8 +661,8 @@ async def process_level2_terms_batch(batch: List[str], # Renamed from level1
                                    browser_semaphore: Optional[asyncio.Semaphore] = None,
                                    min_score_for_llm: Optional[float] = DEFAULT_MIN_SCORE_FOR_LLM,
                                    model_types: List[str] = DEFAULT_LLM_MODEL_TYPES,
-                                   num_llm_attempts: int = Config.NUM_LLM_ATTEMPTS,
-                                   agreement_threshold: int = Config.AGREEMENT_THRESHOLD
+                                   num_llm_attempts: int = processing_config.llm_attempts,
+                                   agreement_threshold: int = processing_config.concept_agreement_threshold
                                    ) -> List[Dict[str, Any]]:
     """Process a batch of level 2 terms with optimized bulk web searching"""
     if not batch:
@@ -681,8 +671,8 @@ async def process_level2_terms_batch(batch: List[str], # Renamed from level1
     logger.info(f"Processing batch of {len(batch)} level 2 terms")
 
     search_config = WebSearchConfig(
-        base_dir=Config.BASE_DIR,
-        raw_search_dir=Config.RAW_SEARCH_DIR # Use Lv3 path
+        base_dir=str(level_config.data_dir.parent.parent),
+        raw_search_dir=level_config.data_dir / "raw_search" # Use Lv3 path
     )
 
     num_queries_per_term = len(SEARCH_QUERIES)
@@ -718,21 +708,21 @@ async def process_level2_terms_batch(batch: List[str], # Renamed from level1
 def ensure_dirs_exist():
     """Ensure all required Lv3 directories exist"""
     dirs_to_create = [
-        Config.CACHE_DIR, # Lv3
-        Config.RAW_SEARCH_DIR, # Lv3
-        Config.DETAILED_META_DIR, # Lv3
-        os.path.dirname(Config.OUTPUT_FILE), # Lv3
-        os.path.dirname(Config.META_FILE), # Lv3
+        level_config.data_dir / "cache", # Lv3
+        level_config.data_dir / "raw_search", # Lv3
+        level_config.data_dir / "detailed_meta", # Lv3
+        os.path.dirname(level_config.get_step_output_file(0)), # Lv3
+        os.path.dirname(level_config.get_step_metadata_file(0)), # Lv3
         CHECKPOINT_DIR  # Add checkpoint directory
     ]
 
-    logger.info(f"BASE_DIR: {Config.BASE_DIR}")
-    logger.info(f"LV2_INPUT_FILE: {Config.DEFAULT_LV2_INPUT_FILE}") # Input is Lv2
-    logger.info(f"OUTPUT_FILE (Topics): {Config.OUTPUT_FILE}") # Output is Lv3
-    logger.info(f"META_FILE: {Config.META_FILE}") # Output is Lv3
-    logger.info(f"CACHE_DIR: {Config.CACHE_DIR}") # Output is Lv3
-    logger.info(f"RAW_SEARCH_DIR: {Config.RAW_SEARCH_DIR}") # Output is Lv3
-    logger.info(f"DETAILED_META_DIR: {Config.DETAILED_META_DIR}") # Output is Lv3
+    logger.info(f"BASE_DIR: {str(level_config.data_dir.parent.parent)}")
+    logger.info(f"LV2_INPUT_FILE: {str(get_level_config(2).get_final_file())}") # Input is Lv2
+    logger.info(f"OUTPUT_FILE (Topics): {level_config.get_step_output_file(0)}") # Output is Lv3
+    logger.info(f"META_FILE: {level_config.get_step_metadata_file(0)}") # Output is Lv3
+    logger.info(f"CACHE_DIR: {level_config.data_dir / "cache"}") # Output is Lv3
+    logger.info(f"RAW_SEARCH_DIR: {level_config.data_dir / "raw_search"}") # Output is Lv3
+    logger.info(f"DETAILED_META_DIR: {level_config.data_dir / "detailed_meta"}") # Output is Lv3
     logger.info(f"CHECKPOINT_DIR: {CHECKPOINT_DIR}")
 
     for directory in dirs_to_create:
@@ -789,10 +779,10 @@ async def main_async():
         parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Batch size for processing terms (default: {BATCH_SIZE})")
         parser.add_argument("--max-concurrent", type=int, default=MAX_CONCURRENT_REQUESTS, help=f"Max concurrent term processing requests (default: {MAX_CONCURRENT_REQUESTS})")
         # Updated input file help text and default
-        parser.add_argument("--input-file", default=Config.DEFAULT_LV2_INPUT_FILE, help=f"Path to the input file containing level 2 terms (conferences/journals) (default: {Config.DEFAULT_LV2_INPUT_FILE})")
+        parser.add_argument("--input-file", default=str(get_level_config(2).get_final_file()), help=f"Path to the input file containing level 2 terms (conferences/journals) (default: {str(get_level_config(2).get_final_file())})")
         parser.add_argument("--append", action='store_true', help="Append results to existing output files instead of overwriting.")
-        parser.add_argument("--llm-attempts", type=int, default=Config.NUM_LLM_ATTEMPTS, help=f"Number of LLM extraction attempts per term (default: {Config.NUM_LLM_ATTEMPTS})")
-        parser.add_argument("--agreement-threshold", type=int, default=Config.AGREEMENT_THRESHOLD, help=f"Minimum appearances threshold for topics (default: {Config.AGREEMENT_THRESHOLD})")
+        parser.add_argument("--llm-attempts", type=int, default=processing_config.llm_attempts, help=f"Number of LLM extraction attempts per term (default: {processing_config.llm_attempts})")
+        parser.add_argument("--agreement-threshold", type=int, default=processing_config.concept_agreement_threshold, help=f"Minimum appearances threshold for topics (default: {processing_config.concept_agreement_threshold})")
         parser.add_argument("--min-score-for-llm", type=float, default=DEFAULT_MIN_SCORE_FOR_LLM, help=f"Minimum heuristic score to send a list to LLM (default: {DEFAULT_MIN_SCORE_FOR_LLM})")
         parser.add_argument("--llm-model-types", type=str, default=",".join(DEFAULT_LLM_MODEL_TYPES), help=f"Comma-separated LLM model types for attempts (e.g., default,pro,mini) (default: {','.join(DEFAULT_LLM_MODEL_TYPES)})")
         parser.add_argument("--resume", action='store_true', help="Resume from last checkpoint")
@@ -851,8 +841,8 @@ async def main_async():
         
         logger.info(f"Processing {len(level2_terms)} level 2 terms")
 
-        output_file = Config.OUTPUT_FILE # Lv3 topics file
-        meta_file = Config.META_FILE     # Lv3 meta file
+        output_file = level_config.get_step_output_file(0) # Lv3 topics file
+        meta_file = level_config.get_step_metadata_file(0)     # Lv3 meta file
         current_provider = provider or Provider.GEMINI
 
         logger.info(f"Using provider: {current_provider} with {num_llm_attempts} LLM attempts (models: {llm_model_types}), agreement threshold {agreement_threshold}, and score threshold {min_score_for_llm}")

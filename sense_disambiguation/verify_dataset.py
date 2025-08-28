@@ -12,10 +12,7 @@ import json
 import sys
 from pathlib import Path
 
-# Add project root to path
-script_dir = Path(__file__).parent
-project_root = script_dir.parent
-sys.path.insert(0, str(project_root))
+# Package structure now properly configured with pyproject.toml
 
 def main():
     print("🔍 Verifying test dataset...")

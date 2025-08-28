@@ -13,30 +13,26 @@ from dotenv import load_dotenv
 from pydash import chunk
 from tqdm import tqdm
 
-# Add the parent directory of the current file to the Python path
-current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(current_dir, "../../../"))
-sys.path.insert(0, project_root)
+# Package structure now properly configured with pyproject.toml
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
+from generate_glossary.utils.resilient_processing import (
+    ConceptExtractionProcessor, create_processing_config, get_checkpoint_dir
+)
 
 # Load environment variables and setup logging
 load_dotenv()
 logger = setup_logger("lv0.s1")
 
-class Config:
-    """Configuration for concept extraction"""
-    INPUT_FILE = "data/lv0/lv0_s0_college_names.txt"
-    OUTPUT_FILE = "data/lv0/lv0_s1_extracted_concepts.txt"
-    META_FILE = "data/lv0/lv0_s1_metadata.json"
-    CSV_FILE = "data/lv0/lv0_s1_college_concepts.csv"  # New CSV file path
-    BATCH_SIZE = 20
-    NUM_LLM_ATTEMPTS = 3  # Updated to 3 attempts
-    CONCEPT_AGREEMENT_THRESH = 2  # Minimum number of models that must agree on a concept
-    KW_APPEARANCE_THRESH = 2
-    MAX_WORKERS = 4  # Number of parallel workers
-    CHUNK_SIZE = 100  # Size of chunks for parallel processing
+# Use centralized configuration
+LEVEL = 0
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 class ConceptExtraction(BaseModel):
     """Base model for concept extraction"""
@@ -147,7 +143,7 @@ College/school/division names to process:
 
 async def process_batch_async(
     batch: List[str],
-    num_attempts: int = Config.NUM_LLM_ATTEMPTS
+    num_attempts: int = processing_config.llm_attempts
 ) -> List[List[ConceptExtraction]]:
     """Process a batch of sources using multiple LLM attempts asynchronously with different providers/models"""
     llm_responses = []
@@ -293,7 +289,7 @@ def process_chunk(chunk_data: tuple[List[str], int]) -> Dict[str, set]:
     source_concepts = {}
     
     # Process batches within the chunk
-    batches = chunk(sources, Config.BATCH_SIZE)
+    batches = chunk(sources, processing_config.batch_size)
     for batch in batches:
         # Run async batch processing in this process
         loop = asyncio.new_event_loop()
@@ -308,7 +304,7 @@ def process_chunk(chunk_data: tuple[List[str], int]) -> Dict[str, set]:
                 # Combine and filter concepts based on agreement threshold
                 combined_results = combine_extractions(multiple_extractions)
                 filtered_results = filter_concepts_by_agreement(
-                    combined_results, Config.CONCEPT_AGREEMENT_THRESH
+                    combined_results, processing_config.concept_agreement_threshold
                 )
                 
                 # Update source-concept mapping
@@ -320,12 +316,12 @@ def process_chunk(chunk_data: tuple[List[str], int]) -> Dict[str, set]:
     return source_concepts
 
 async def main_async():
-    """Async main execution function"""
+    """Async main execution function with checkpoint support"""
     try:
-        logger.info("Starting concept extraction from college names")
+        logger.info("Starting concept extraction from college names with checkpoint support")
 
         # Read input sources
-        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_input_file(1), "r", encoding="utf-8") as f:
             sources = [line.strip() for line in f.readlines()]
         
         # Remove duplicates while preserving order
@@ -333,22 +329,24 @@ async def main_async():
         sources = [s for s in sources if not (s in seen or seen.add(s))]
         logger.info(f"Read {len(sources)} unique sources")
 
-        # Split sources into chunks for parallel processing
-        source_chunks = list(chunk(sources, Config.CHUNK_SIZE))
-        chunk_data = [(chunk, Config.NUM_LLM_ATTEMPTS) for chunk in source_chunks]
+        # Initialize resilient processor with checkpoint support
+        checkpoint_dir = get_checkpoint_dir(level_config)
+        processor = ConceptExtractionProcessor(checkpoint_dir, LEVEL)
         
-        # Process chunks in parallel
-        source_concept_mapping = {}
-        with ProcessPoolExecutor(max_workers=Config.MAX_WORKERS) as executor:
-            futures = [
-                executor.submit(process_chunk, data)
-                for data in chunk_data
-            ]
-            
-            # Collect results
-            for future in tqdm(futures, desc="Processing chunks"):
-                chunk_results = future.result()
-                source_concept_mapping.update(chunk_results)
+        # Create configuration for checkpointing
+        config = create_processing_config(processing_config)
+        
+        # Process sources with automatic checkpointing
+        source_concept_mapping = processor.process_sources(
+            sources=sources,
+            process_chunk_func=process_chunk,
+            batch_size=processing_config.batch_size,
+            chunk_size=processing_config.chunk_size,
+            max_workers=processing_config.max_workers,
+            llm_attempts=processing_config.llm_attempts,
+            config=config,
+            force_restart=False  # Set to True to ignore existing checkpoints
+        )
 
         # Extract all concepts and apply frequency threshold
         all_concepts = [
@@ -360,33 +358,36 @@ async def main_async():
         verified_concepts = sorted([
             concept
             for concept, count in concept_counts.items()
-            if count >= Config.KW_APPEARANCE_THRESH
+            if count >= processing_config.keyword_appearance_threshold
         ])
         
         logger.info(f"Extracted {len(verified_concepts)} verified concepts")
 
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.META_FILE, Config.CSV_FILE]:
+        output_file = level_config.get_step_output_file(1)
+        meta_file = level_config.get_step_metadata_file(1)
+        csv_file = level_config.data_dir / f"lv{LEVEL}_s1_college_concepts.csv"
+        for path in [output_file, meta_file, csv_file]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Save results
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             for concept in verified_concepts:
                 f.write(f"{concept}\n")
 
-        with open(Config.META_FILE, "w", encoding="utf-8") as f:
+        with open(meta_file, "w", encoding="utf-8") as f:
             json.dump(
                 {
                     "metadata": {
                         "input_count": len(sources),
                         "output_count": len(verified_concepts),
-                        "batch_size": Config.BATCH_SIZE,
-                        "chunk_size": Config.CHUNK_SIZE,
-                        "num_workers": Config.MAX_WORKERS,
-                        "llm_attempts": Config.NUM_LLM_ATTEMPTS,
-                        "concept_agreement_threshold": Config.CONCEPT_AGREEMENT_THRESH,
-                        "concept_frequency_threshold": Config.KW_APPEARANCE_THRESH,
+                        "batch_size": processing_config.batch_size,
+                        "chunk_size": processing_config.chunk_size,
+                        "num_workers": processing_config.max_workers,
+                        "llm_attempts": processing_config.llm_attempts,
+                        "concept_agreement_threshold": processing_config.concept_agreement_threshold,
+                        "concept_frequency_threshold": processing_config.keyword_appearance_threshold,
                         "temperature": 0.3,
                         "providers_and_models": "random selection of OpenAI default/mini and Gemini default/mini"
                     },
@@ -397,7 +398,7 @@ async def main_async():
                     "concept_frequencies": {
                         concept: count 
                         for concept, count in concept_counts.items()
-                        if count >= Config.KW_APPEARANCE_THRESH
+                        if count >= processing_config.keyword_appearance_threshold
                     }
                 },
                 f,
@@ -407,7 +408,7 @@ async def main_async():
 
         # Create a CSV file with college-concept relationships
         try:
-            with open(Config.CSV_FILE, "w", encoding="utf-8") as f:
+            with open(csv_file, "w", encoding="utf-8") as f:
                 # Write header
                 f.write("college,concept\n")
                 
@@ -416,7 +417,7 @@ async def main_async():
                     # Only include concepts that meet the threshold
                     filtered_concepts = [
                         concept for concept in concepts 
-                        if concept_counts[concept.lower()] >= Config.KW_APPEARANCE_THRESH
+                        if concept_counts[concept.lower()] >= processing_config.keyword_appearance_threshold
                     ]
                     
                     for concept in sorted(filtered_concepts):
@@ -430,7 +431,7 @@ async def main_async():
                         
                         f.write(f"{college_csv},{concept_csv}\n")
             
-            logger.info(f"College-concept relationships saved to {Config.CSV_FILE}")
+            logger.info(f"College-concept relationships saved to {csv_file}")
         except Exception as e:
             logger.error(f"Failed to write CSV file: {str(e)}")
 

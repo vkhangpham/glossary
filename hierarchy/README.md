@@ -23,10 +23,10 @@ The hierarchy builder creates a comprehensive hierarchical data structure by:
 
 ```bash
 # Build hierarchy with default settings
-python -m generate_glossary.hierarchy_builder
+python -m hierarchy.hierarchy_builder
 
 # Build with custom output path and verbose output
-python -m generate_glossary.hierarchy_builder -o data/custom_hierarchy.json --verbose
+python -m hierarchy.hierarchy_builder -o data/custom_hierarchy.json --verbose
 ```
 
 ### Command-line Arguments
@@ -46,10 +46,10 @@ python -m generate_glossary.hierarchy_builder -o data/custom_hierarchy.json --ve
 
 ```bash
 # Export as GraphML
-python -m generate_glossary.hierarchy_builder --graph data/hierarchy.graphml --format graphml
+python -m hierarchy.hierarchy_builder --graph data/hierarchy.graphml --format graphml
 
 # Create visualization with more nodes
-python -m generate_glossary.hierarchy_builder --visualize data/hierarchy_viz.png --max-nodes 200
+python -m hierarchy.hierarchy_builder --visualize data/hierarchy_viz.png --max-nodes 200
 ```
 
 ## Hierarchy Evaluator
@@ -60,13 +60,13 @@ The hierarchy evaluator analyzes the quality of the constructed hierarchy by cal
 
 ```bash
 # Generate a quick summary
-python -m generate_glossary.hierarchy_evaluator_cli -q
+python -m hierarchy.hierarchy_evaluator_cli -q
 
 # Generate a detailed HTML report with visualizations
-python -m generate_glossary.hierarchy_evaluator_cli -r -v
+python -m hierarchy.hierarchy_evaluator_cli -r -v
 
 # Evaluate a specific hierarchy file
-python -m generate_glossary.hierarchy_evaluator_cli -i path/to/hierarchy.json -r
+python -m hierarchy.hierarchy_evaluator_cli -i path/to/hierarchy.json -r
 ```
 
 ### Key Metrics Evaluated
@@ -109,10 +109,10 @@ The hierarchy visualizer provides an interactive web interface for exploring the
 
 ```bash
 # Start the visualization server on default port
-python -m generate_glossary.hierarchy_visualizer
+python -m hierarchy.hierarchy_visualizer
 
 # Specify a custom port
-python -m generate_glossary.hierarchy_visualizer -p 8080
+python -m hierarchy.hierarchy_visualizer -p 8080
 ```
 
 ### Features
@@ -186,7 +186,7 @@ The recommended workflow for building, evaluating, and visualizing the hierarchy
 ### Step 1: Build the Hierarchy
 
 ```bash
-python -m generate_glossary.hierarchy_builder -o data/hierarchy.json --verbose
+python -m hierarchy.hierarchy_builder -o data/hierarchy.json --verbose
 ```
 
 This will:
@@ -198,7 +198,7 @@ This will:
 ### Step 2: Evaluate the Hierarchy
 
 ```bash
-python -m generate_glossary.hierarchy_evaluator --save-all --verbose
+python -m hierarchy.hierarchy_evaluator_cli --save-all --verbose
 ```
 
 This will:
@@ -211,7 +211,7 @@ This will:
 ### Step 3: Visualize the Hierarchy
 
 ```bash
-python -m generate_glossary.hierarchy_visualizer -p 5000
+python -m hierarchy.hierarchy_visualizer -p 5000
 ```
 
 This will:

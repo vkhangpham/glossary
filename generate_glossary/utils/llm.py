@@ -21,6 +21,7 @@ from .exceptions import (
     LLMProviderError
 )
 from .logger import setup_logger
+from .secure_config import safe_load_api_key, create_secure_logger, mask_sensitive_data
 
 # Provider constants
 class Provider:
@@ -90,7 +91,7 @@ def get_provider_config(provider: str) -> ProviderConfig:
 
 def get_api_key(provider: str) -> str:
     """
-    Get API key for a specific provider
+    Securely get API key for a specific provider
     
     Args:
         provider: Provider name
@@ -99,12 +100,12 @@ def get_api_key(provider: str) -> str:
         API key from environment variables
         
     Raises:
-        ValueError: If API key is not set
+        ValueError: If API key is not set or invalid
     """
     config = get_provider_config(provider)
-    api_key = os.environ.get(config.env_var)
+    api_key = safe_load_api_key(config.env_var, required=True)
     if not api_key:
-        raise ValueError(f"{config.env_var} environment variable not set")
+        raise ValueError(f"{config.env_var} environment variable not set or invalid")
     return api_key
 
 def get_available_models(provider: Optional[str] = None) -> Dict[str, List[str]]:
@@ -151,7 +152,7 @@ class BaseLLM(ABC):
         self.temperature = temperature
         self.max_retries = max_retries
         self.retry_delay = retry_delay
-        self.logger = setup_logger(f"llm.{self.__class__.__name__}")
+        self.logger = create_secure_logger(f"llm.{self.__class__.__name__}")
         self._setup_client()
 
     @abstractmethod
@@ -280,7 +281,7 @@ class ChatGPT(BaseLLM):
             self.logger.exception("Unexpected error during inference")
             raise LLMAPIError(
                 message="Unexpected error during inference",
-                details={"error": str(e)}
+                details={"error": mask_sensitive_data(str(e))}
             )
 
 class Gemini(BaseLLM):
@@ -684,7 +685,7 @@ class Gemini(BaseLLM):
             self.logger.exception("Unexpected error during inference")
             raise LLMAPIError(
                 message="Unexpected error during inference",
-                details={"error": str(e)}
+                details={"error": mask_sensitive_data(str(e))}
             )
 
     async def infer_async(

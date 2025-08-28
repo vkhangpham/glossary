@@ -15,6 +15,7 @@ import argparse
 # Fix import path for utils
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm import Provider
 
 # Import shared web search utilities
@@ -130,21 +131,13 @@ Do not include explanations, introductions, or other text.
 
 Remember: Be SELECTIVE. It is better to exclude a department if there's any doubt about whether it belongs specifically to The College of {term}."""
 
-class Config:
-    """Configuration for department names extraction from level 0 terms"""
-    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-    LV0_INPUT_FILE = os.path.join(BASE_DIR, "data/lv0/lv0_final.txt")
-    
-    # Output files (single run)
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s0_department_names.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s0_metadata.json")
-    
-    CACHE_DIR = os.path.join(BASE_DIR, "data/lv1/cache")
-    RAW_SEARCH_DIR = os.path.join(BASE_DIR, "data/lv1/raw_search_results")
-    RAW_RESULTS_DIR = os.path.join(BASE_DIR, "data/lv1/raw_search_results")
-    
-    # Directory for detailed term metadata
-    DETAILED_META_DIR = os.path.join(RAW_SEARCH_DIR, "detailed_metadata")
+# Use centralized configuration
+LEVEL = 1
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 def read_level0_terms(input_path: str) -> List[str]:
     """Read level 0 terms from input file"""
@@ -199,22 +192,22 @@ def score_department_list(items: List[str], metadata: Dict[str, Any], context_te
 def ensure_dirs_exist():
     """Ensure all required directories exist"""
     dirs_to_create = [
-        Config.CACHE_DIR,
-        Config.RAW_SEARCH_DIR,
-        Config.RAW_RESULTS_DIR,
-        Config.DETAILED_META_DIR,
-        os.path.dirname(Config.OUTPUT_FILE),
-        os.path.dirname(Config.META_FILE)
+        level_config.data_dir / "cache",
+        level_config.data_dir / "raw_search",
+        level_config.data_dir / "raw_results",
+        level_config.data_dir / "detailed_meta",
+        os.path.dirname(level_config.get_step_output_file(0)),
+        os.path.dirname(level_config.get_step_metadata_file(0))
     ]
     
-    logger.info(f"BASE_DIR: {Config.BASE_DIR}")
-    logger.info(f"LV0_INPUT_FILE: {Config.LV0_INPUT_FILE}")
-    logger.info(f"OUTPUT_FILE: {Config.OUTPUT_FILE}")
-    logger.info(f"META_FILE: {Config.META_FILE}")
-    logger.info(f"CACHE_DIR: {Config.CACHE_DIR}")
-    logger.info(f"RAW_SEARCH_DIR: {Config.RAW_SEARCH_DIR}")
-    logger.info(f"RAW_RESULTS_DIR: {Config.RAW_RESULTS_DIR}")
-    logger.info(f"DETAILED_META_DIR: {Config.DETAILED_META_DIR}")
+    logger.info(f"BASE_DIR: {str(level_config.data_dir.parent.parent)}")
+    logger.info(f"LV0_INPUT_FILE: {str(get_level_config(0).get_final_file())}")
+    logger.info(f"OUTPUT_FILE: {level_config.get_step_output_file(0)}")
+    logger.info(f"META_FILE: {level_config.get_step_metadata_file(0)}")
+    logger.info(f"CACHE_DIR: {level_config.data_dir / "cache"}")
+    logger.info(f"RAW_SEARCH_DIR: {level_config.data_dir / "raw_search"}")
+    logger.info(f"RAW_RESULTS_DIR: {level_config.data_dir / "raw_results"}")
+    logger.info(f"DETAILED_META_DIR: {level_config.data_dir / "detailed_meta"}")
     
     for directory in dirs_to_create:
         try:
@@ -236,7 +229,7 @@ def save_raw_url_results(level0_term: str, url_to_lists: Dict[str, List[List[str
     try:
         # Sanitize filename
         safe_filename = re.sub(r'[\/:*?"<>|]', '_', level0_term) + "_url_lists.json"
-        output_path = os.path.join(Config.RAW_RESULTS_DIR, safe_filename)
+        output_path = os.path.join(level_config.data_dir / "raw_results", safe_filename)
         
         # Convert data to a serializable format
         serializable_data = {
@@ -395,12 +388,12 @@ async def process_level0_term(level0_term: str,
     try:
         # Create configurations for the shared utilities
         search_config = WebSearchConfig(
-            base_dir=Config.BASE_DIR,
-            raw_search_dir=Config.RAW_SEARCH_DIR
+            base_dir=str(level_config.data_dir.parent.parent),
+            raw_search_dir=level_config.data_dir / "raw_search"
         )
         
         html_config = HTMLFetchConfig(
-            cache_dir=Config.CACHE_DIR
+            cache_dir=level_config.data_dir / "cache"
         )
         
         list_config = ListExtractionConfig(
@@ -737,11 +730,11 @@ def save_detailed_term_metadata(level0_term: str, data: Dict[str, Any]):
     """Saves the detailed processing metadata for a single level0 term."""
     try:
         # Ensure the detailed metadata directory exists
-        os.makedirs(Config.DETAILED_META_DIR, exist_ok=True)
+        os.makedirs(level_config.data_dir / "detailed_meta", exist_ok=True)
 
         # Sanitize filename
         safe_filename = re.sub(r'[\/:*?"<>|]', '_', level0_term) + "_details.json"
-        output_path = os.path.join(Config.DETAILED_META_DIR, safe_filename)
+        output_path = os.path.join(level_config.data_dir / "detailed_meta", safe_filename)
 
         with open(output_path, "w", encoding="utf-8") as f:
             # Use default handler for non-serializable objects
@@ -831,8 +824,8 @@ async def process_level0_terms_batch(batch: List[str],
     
     # Create search configuration
     search_config = WebSearchConfig(
-        base_dir=Config.BASE_DIR,
-        raw_search_dir=Config.RAW_SEARCH_DIR
+        base_dir=str(level_config.data_dir.parent.parent),
+        raw_search_dir=level_config.data_dir / "raw_search"
     )
     
     # Use global SEARCH_QUERIES constant for calculation
@@ -881,7 +874,7 @@ async def main_async():
         parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help=f"Batch size for processing terms (default: {BATCH_SIZE})")
         parser.add_argument("--max-concurrent", type=int, default=MAX_CONCURRENT_REQUESTS, help=f"Max concurrent term processing requests (default: {MAX_CONCURRENT_REQUESTS})")
         parser.add_argument("--min-score-for-llm", type=float, default=DEFAULT_MIN_SCORE_FOR_LLM, help=f"Minimum heuristic score to send a list to LLM (default: {DEFAULT_MIN_SCORE_FOR_LLM})")
-        parser.add_argument("--input-file", default=Config.LV0_INPUT_FILE, help=f"Path to the input file containing level 0 terms (default: {Config.LV0_INPUT_FILE})")
+        parser.add_argument("--input-file", default=str(get_level_config(0).get_final_file()), help=f"Path to the input file containing level 0 terms (default: {str(get_level_config(0).get_final_file())})")
         parser.add_argument("--append", action='store_true', help="Append results to existing output files instead of overwriting.")
         parser.add_argument("--llm-attempts", type=int, default=NUM_LLM_ATTEMPTS, help=f"Number of LLM extraction attempts per term (default: {NUM_LLM_ATTEMPTS})")
         parser.add_argument("--agreement-threshold", type=int, default=AGREEMENT_THRESHOLD, help=f"Minimum appearances threshold for departments (default: {AGREEMENT_THRESHOLD})")
@@ -915,7 +908,7 @@ async def main_async():
              logger.info(f"Using custom LLM attempts: {num_llm_attempts}")
         if agreement_threshold != AGREEMENT_THRESHOLD:
              logger.info(f"Using custom agreement threshold: {agreement_threshold}")
-        if input_file_path != Config.LV0_INPUT_FILE:
+        if input_file_path != str(get_level_config(0).get_final_file()):
              logger.info(f"Using custom input file: {input_file_path}")
         if append_mode:
              logger.info("Append mode enabled. Results will be added to existing files.")
@@ -933,8 +926,8 @@ async def main_async():
         logger.info(f"Multi-LLM Config: Attempts={num_llm_attempts}, Agreement={agreement_threshold}, Models={llm_model_types}, Score Threshold={min_score_for_llm}")
 
         # --- Single Run Logic ---
-        current_output_file = Config.OUTPUT_FILE
-        current_meta_file = Config.META_FILE
+        current_output_file = level_config.get_step_output_file(0)
+        current_meta_file = level_config.get_step_metadata_file(0)
         
         # Initialize aiohttp session for the run
         from aiohttp import ClientSession, ClientTimeout, TCPConnector, CookieJar
@@ -1084,7 +1077,7 @@ async def main_async():
         final_unique_departments_to_write = sorted(list(final_unique_departments_map.values()), key=str.lower)
         random.shuffle(final_unique_departments_to_write)
         
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(0), "w", encoding="utf-8") as f:
             for dept in final_unique_departments_to_write:
                 f.write(f"{dept}\n")
         
@@ -1203,7 +1196,7 @@ async def main_async():
         logger.info(f"Successfully extracted {len(final_unique_departments_to_write)} unique departments from {verified_terms_count} verified level 0 terms using multi-LLM voting.")
         logger.info(f"Department names saved to {current_output_file}")
         logger.info(f"Metadata saved to {current_meta_file}")
-        logger.info(f"Detailed per-term metadata for this run saved in {Config.DETAILED_META_DIR}")
+        logger.info(f"Detailed per-term metadata for this run saved in {level_config.data_dir / "detailed_meta"}")
 
     except Exception as e:
         logger.error(f"An error occurred in main_async: {str(e)}", exc_info=True)

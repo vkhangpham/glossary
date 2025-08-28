@@ -1,0 +1,134 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "glossary-generation"
+version = "0.1.0"
+description = "Academic glossary analysis system with hierarchical concept taxonomies"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Cazoodle Research Team" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    # Main dependencies
+    "pandas",
+    "numpy",
+    "nltk",
+    "scikit-learn",
+    "scipy",
+    "regex",
+    "openpyxl",
+    
+    # Visualization and duplicate finding
+    "matplotlib",
+    "seaborn",
+    "networkx",
+    "plotly",
+    
+    # File handling and I/O
+    "requests",
+    "tqdm",
+    "pyyaml",
+    "chardet",
+    "aiohttp",
+    
+    # For LLM integration
+    "openai",
+    "bs4",
+    
+    # Web scraping and processing
+    "beautifulsoup4",
+    "trafilatura",
+    "html5lib",
+    "playwright",
+    
+    # NLP and text processing
+    "spacy",
+    "cleantext",
+    "rapidfuzz",
+    "pydantic",
+    "pydash",
+    "transformers",
+    "sentence-transformers",
+    "sentencepiece",
+    "torch",
+    
+    # Additional tools
+    "tavily-python",
+    "google-genai",
+    "python-dotenv",
+    "flask",
+    "polars",
+    "tenacity",
+]
+
+[project.scripts]
+# Level 0 generation commands
+glossary-lv0-s0 = "generate_glossary.generation.lv0.lv0_s0_get_college_names:main"
+glossary-lv0-s1 = "generate_glossary.generation.lv0.lv0_s1_extract_concepts:main"
+glossary-lv0-s2 = "generate_glossary.generation.lv0.lv0_s2_filter_by_institution_freq:main"
+glossary-lv0-s3 = "generate_glossary.generation.lv0.lv0_s3_verify_single_token:main"
+
+# Level 1 generation commands
+glossary-lv1-s0 = "generate_glossary.generation.lv1.lv1_s0_get_dept_names:main"
+glossary-lv1-s1 = "generate_glossary.generation.lv1.lv1_s1_extract_concepts:main"
+glossary-lv1-s2 = "generate_glossary.generation.lv1.lv1_s2_filter_by_institution_freq:main"
+glossary-lv1-s3 = "generate_glossary.generation.lv1.lv1_s3_verify_single_token:main"
+
+# Level 2 generation commands  
+glossary-lv2-s0 = "generate_glossary.generation.lv2.lv2_s0_get_research_areas:main"
+glossary-lv2-s1 = "generate_glossary.generation.lv2.lv2_s1_extract_concepts:main"
+glossary-lv2-s2 = "generate_glossary.generation.lv2.lv2_s2_filter_by_institution_freq:main"
+glossary-lv2-s3 = "generate_glossary.generation.lv2.lv2_s3_verify_single_token:main"
+
+# Level 3 generation commands
+glossary-lv3-s0 = "generate_glossary.generation.lv3.lv3_s0_get_conference_topics:main"
+glossary-lv3-s1 = "generate_glossary.generation.lv3.lv3_s1_extract_concepts:main"
+glossary-lv3-s2 = "generate_glossary.generation.lv3.lv3_s2_filter_by_conference_freq:main"
+glossary-lv3-s3 = "generate_glossary.generation.lv3.lv3_s3_verify_single_token:main"
+
+# Post-processing commands
+glossary-web-miner = "generate_glossary.web_miner_cli:main"
+glossary-validator = "generate_glossary.validator.cli:main"
+glossary-deduplicator = "generate_glossary.deduplicator.cli:main"
+
+# Hierarchy commands
+glossary-hierarchy-build = "hierarchy.hierarchy_builder:main"
+glossary-hierarchy-eval = "hierarchy.hierarchy_evaluator_cli:main"
+glossary-hierarchy-viz = "hierarchy.hierarchy_visualizer:main"
+
+# Definition generation commands
+glossary-generate-definitions = "generate_definition.generate_definitions:main"
+
+# Checkpoint management commands
+glossary-checkpoint = "generate_glossary.utils.checkpoint_cli:main"
+
+# Security management commands
+glossary-security = "generate_glossary.utils.security_cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["generate_glossary", "hierarchy", "sense_disambiguation", "generate_definition"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "black",
+    "isort",
+    "flake8",
+    "mypy",
+]

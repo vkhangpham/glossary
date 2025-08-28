@@ -37,11 +37,11 @@ generate_glossary/
 ├── utils/                  # Shared utilities
 │   ├── web_search/         # Web search and content extraction utilities
 │   └── ...                 # Other utilities
-├── run_pipeline.py         # Command-line pipeline runner
-├── run_interactive.py      # Interactive pipeline runner
-├── hierarchy_builder.py    # Builds term hierarchy
-├── hierarchy_evaluator.py  # Evaluates hierarchy quality
-└── hierarchy_visualizer.py # Visualizes term hierarchy
+<!-- TODO: [Documentation] Remove references to non-existent pipeline scripts -->
+<!-- run_pipeline.py and run_interactive.py do not exist in current codebase -->
+<!-- hierarchy_* scripts are in separate hierarchy/ directory, not generate_glossary/ -->
+├── CLI scripts for each step # Individual generation, validation, deduplication steps
+└── See individual component READMEs for usage examples
 
 data/
 ├── lv0/                    # Level 0 data
@@ -141,21 +141,22 @@ export GEMINI_API_KEY="your-gemini-key"
 
 ### Running the Full Pipeline
 
-For a guided, interactive experience:
+The generation pipeline is run level-by-level using individual scripts. Each level follows the same 4-step process:
 
 ```bash
-# Run the interactive pipeline
-PYTHONPATH=. python -m generate_glossary.run_interactive
-```
+# Level 0 Generation Pipeline
+python -m generate_glossary.generation.lv0.lv0_s0_get_college_names
+python -m generate_glossary.generation.lv0.lv0_s1_extract_concepts --provider openai
+python -m generate_glossary.generation.lv0.lv0_s2_filter_by_institution_freq
+python -m generate_glossary.generation.lv0.lv0_s3_verify_single_token --provider openai
 
-For command-line control:
+# Level 1 Generation Pipeline (uses Level 0 results)
+python -m generate_glossary.generation.lv1.lv1_s0_get_dept_names --input data/lv0/lv0_final.txt
+python -m generate_glossary.generation.lv1.lv1_s1_extract_concepts --provider openai
+python -m generate_glossary.generation.lv1.lv1_s2_filter_by_institution_freq
+python -m generate_glossary.generation.lv1.lv1_s3_verify_single_token --provider openai
 
-```bash
-# Run the pipeline for level 0
-PYTHONPATH=. python -m generate_glossary.run_pipeline --level 0
-
-# Run with custom options
-PYTHONPATH=. python -m generate_glossary.run_pipeline --level 1 --provider openai --dedup-mode graph
+# Similar patterns for Level 2 and Level 3...
 ```
 
 ### Building and Visualizing the Hierarchy
@@ -164,13 +165,13 @@ After processing all levels:
 
 ```bash
 # Build the hierarchy
-python -m generate_glossary.hierarchy_builder -o data/hierarchy.json --verbose
+python -m hierarchy.hierarchy_builder -o data/hierarchy.json --verbose
 
 # Evaluate the hierarchy
-python -m generate_glossary.hierarchy_evaluator --save-all --verbose
+python -m hierarchy.hierarchy_evaluator_cli --save-all --verbose
 
 # Start the visualization server
-python -m generate_glossary.hierarchy_visualizer -p 5000
+python -m hierarchy.hierarchy_visualizer -p 5000
 ```
 
 Then access the visualization at: `http://localhost:5000`
@@ -191,22 +192,13 @@ python duplicate_analyzer.py
 
 For detailed documentation on specific components:
 
+- [Generation Documentation](generate_glossary/generation/README.md)
 - [Validator Documentation](generate_glossary/validator/README.md)
 - [Deduplicator Documentation](generate_glossary/deduplicator/README.md)
-- [Hierarchy Documentation](generate_glossary/hierarchy/README.md)
-- [Pipeline Guide](generate_glossary/GUIDE.md)
+- [Hierarchy Documentation](hierarchy/README.md)
+- [Sense Disambiguation Documentation](sense_disambiguation/README.md)
+- [Changelog](CHANGELOG.md)
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Tavily Search Integration
 

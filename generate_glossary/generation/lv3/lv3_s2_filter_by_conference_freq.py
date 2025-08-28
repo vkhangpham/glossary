@@ -12,6 +12,7 @@ from functools import partial
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Setup logging
@@ -20,21 +21,13 @@ logger = setup_logger("lv3.s2")
 # Get the base directory (project root)
 BASE_DIR = os.getcwd()
 
-class Config:
-    """Configuration for concept filtering"""
+# Use centralized configuration
+LEVEL = 3
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
 
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_extracted_concepts.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_metadata.json")
-    CSV_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_hierarchical_concepts.csv")
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s2_filtered_concepts.txt")
-    OUTPUT_CSV_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s2_filtered_concepts.csv")
-    VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s2_metadata.json")
-    CONFERENCE_FREQ_THRESHOLD = 1  # Minimum number of conference topics a concept must appear in
-    MIN_JOURNAL_APPEARANCE = 1  # Extracted concept must appear in at least this many journals
-    MIN_JOURNAL_FREQ_PERCENT = 1  # Extracted concept must appear in at least this % of topics within a journal
-    NUM_WORKERS = 4  # Number of parallel workers for processing
-    BATCH_SIZE = 1000  # Size of batches for parallel processing
-
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 def read_hierarchy_csv(csv_file: str) -> List[Dict[str, str]]:
     """
@@ -212,7 +205,7 @@ def count_topic_frequencies_worker(
 def count_topic_frequencies(
     conference_mapping: Dict[str, List[str]],
     num_workers: int = Config.NUM_WORKERS,
-    batch_size: int = Config.BATCH_SIZE
+    batch_size: int = processing_config.batch_size
 ) -> Dict[str, int]:
     """Count how many conference topics each concept appears in using parallel processing"""
     # Convert mapping to list of concept lists for parallel processing
@@ -256,7 +249,7 @@ def filter_concepts(
     concept_frequencies: Dict[str, int],
     threshold: int,
     num_workers: int = Config.NUM_WORKERS,
-    batch_size: int = Config.BATCH_SIZE
+    batch_size: int = processing_config.batch_size
 ) -> List[str]:
     """Filter concepts based on their frequency across conference topics using parallel processing"""
     # Split concepts into batches
@@ -483,7 +476,7 @@ def main():
         logger.info("Starting concept filtering by conference topic and research area frequency")
 
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.VALIDATION_META_FILE, Config.OUTPUT_CSV_FILE]:
+        for path in [level_config.get_step_output_file(2), level_config.get_validation_metadata_file(3), Config.OUTPUT_CSV_FILE]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -491,13 +484,13 @@ def main():
         if len(sys.argv) > 1:
             try:
                 threshold = int(sys.argv[1])
-                Config.CONFERENCE_FREQ_THRESHOLD = threshold
+                processing_config.conference_frequency_threshold = threshold
                 logger.info(f"Using conference frequency threshold: {threshold}")
             except ValueError:
-                logger.warning(f"Invalid threshold value: {sys.argv[1]}. Using default: {Config.CONFERENCE_FREQ_THRESHOLD}")
+                logger.warning(f"Invalid threshold value: {sys.argv[1]}. Using default: {processing_config.conference_frequency_threshold}")
         
         # Read input concepts
-        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_input_file(2), "r", encoding="utf-8") as f:
             concepts = [line.strip() for line in f.readlines()]
         logger.info(f"Read {len(concepts)} concepts from input file")
         input_concepts_count = len(concepts)
@@ -514,7 +507,7 @@ def main():
         concept_freq = count_topic_frequencies(
             conference_topic_mapping,
             num_workers=Config.NUM_WORKERS,
-            batch_size=Config.BATCH_SIZE
+            batch_size=processing_config.batch_size
         )
         logger.info(f"Counted frequencies for {len(concept_freq)} unique concepts")
         
@@ -528,9 +521,9 @@ def main():
         filtered_by_freq = filter_concepts(
             concepts,
             concept_freq,
-            Config.CONFERENCE_FREQ_THRESHOLD,
+            processing_config.conference_frequency_threshold,
             Config.NUM_WORKERS,
-            Config.BATCH_SIZE
+            processing_config.batch_size
         )
         logger.info(f"Filtered to {len(filtered_by_freq)} concepts by frequency threshold")
         
@@ -548,8 +541,8 @@ def main():
         write_filtered_csv(Config.OUTPUT_CSV_FILE, csv_entries, set(filtered_concepts))
         
         # Save filtered concepts to file
-        logger.info(f"Saving filtered concepts to {Config.OUTPUT_FILE}")
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        logger.info(f"Saving filtered concepts to {level_config.get_step_output_file(2)}")
+        with open(level_config.get_step_output_file(2), "w", encoding="utf-8") as f:
             for concept in filtered_concepts:
                 f.write(f"{concept}\n")
         
@@ -558,23 +551,23 @@ def main():
             "metadata": {
                 "input_count": len(concepts),
                 "output_count": len(filtered_concepts),
-                "conference_freq_threshold": Config.CONFERENCE_FREQ_THRESHOLD,
+                "conference_freq_threshold": processing_config.conference_frequency_threshold,
                 "min_research_area_appearance": Config.MIN_JOURNAL_APPEARANCE,
                 "min_research_area_freq_percent": Config.MIN_JOURNAL_FREQ_PERCENT,
                 "num_workers": Config.NUM_WORKERS,
-                "batch_size": Config.BATCH_SIZE,
+                "batch_size": processing_config.batch_size,
                 "frequency_distribution": {str(k): v for k, v in freq_dist.items()},
                 "conference_topic_count": len(conference_topic_mapping),
                 "research_area_count": len(area_concept_counts),
             }
         }
         
-        with open(Config.VALIDATION_META_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_validation_metadata_file(3), "w", encoding="utf-8") as f:
             json.dump(validation_metadata, f, indent=4, ensure_ascii=False)
         
         # Write research area statistics
         write_research_area_stats(
-            Config.VALIDATION_META_FILE, 
+            level_config.get_validation_metadata_file(3), 
             area_concept_counts, 
             concept_areas, 
             area_conference_counts, 

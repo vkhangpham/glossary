@@ -13,11 +13,7 @@ from pydantic import BaseModel, Field
 from sklearn.cluster import DBSCAN
 import warnings
 
-# Add the project root to sys.path if needed
-current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(current_dir, "../../../"))
-if project_root not in sys.path:
-    sys.path.insert(0, project_root)
+# Package structure now properly configured with pyproject.toml
 
 # Import our existing LLM implementation
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS

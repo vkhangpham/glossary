@@ -13,6 +13,7 @@ from collections import Counter
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
@@ -23,18 +24,13 @@ logger = setup_logger("lv1.s4")
 # Get the base directory
 BASE_DIR = os.getcwd()
 
-class Config:
-    """Configuration for compound term splitting"""
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s3_verified_concepts.txt")
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s4_split_concepts.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s1_metadata.json")
-    SPLIT_META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s4_metadata.json")
-    BATCH_SIZE = 10
-    COOLDOWN_PERIOD = 1
-    COOLDOWN_FREQUENCY = 10
-    MAX_RETRIES = 3
-    NUM_LLM_ATTEMPTS = 3  # Number of LLM attempts for consensus
-    MIN_CONSENSUS = 2  # Minimum number of identical responses to accept a split
+# Use centralized configuration
+LEVEL = 1
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 class SplitResult(BaseModel):
     """Model for split term results"""
@@ -262,10 +258,10 @@ def get_consensus_split(results: List[List[SplitResult]], min_consensus: int = C
 
 def process_compound_terms(
     terms: List[str],
-    batch_size: int = Config.BATCH_SIZE,
-    num_attempts: int = Config.NUM_LLM_ATTEMPTS,
-    cooldown: int = Config.COOLDOWN_PERIOD,
-    cooldown_freq: int = Config.COOLDOWN_FREQUENCY
+    batch_size: int = processing_config.batch_size,
+    num_attempts: int = processing_config.llm_attempts,
+    cooldown: int = processing_config.cooldown_period,
+    cooldown_freq: int = processing_config.cooldown_frequency
 ) -> Dict[str, SplitResult]:
     """
     Process all compound terms using multiple LLM attempts and consensus
@@ -353,7 +349,7 @@ def main():
         logger.info("Starting compound term splitting process for level 1 concepts")
         
         # Read input concepts
-        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_input_file(4), "r", encoding="utf-8") as f:
             concepts = [line.strip() for line in f if line.strip()]
         logger.info(f"Read {len(concepts)} concepts from input")
         
@@ -369,12 +365,12 @@ def main():
         logger.info(f"Expanded to {len(expanded_concepts)} concepts after splitting")
         
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.SPLIT_META_FILE]:
+        for path in [level_config.get_step_output_file(4), Config.SPLIT_META_FILE]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Save expanded concepts to output file
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(4), "w", encoding="utf-8") as f:
             for concept in expanded_concepts:
                 f.write(f"{concept}\n")
         
@@ -385,10 +381,10 @@ def main():
                 "compound_terms_count": len(split_results),
                 "split_terms_count": split_count,
                 "output_count": len(expanded_concepts),
-                "batch_size": Config.BATCH_SIZE,
-                "cooldown_period": Config.COOLDOWN_PERIOD,
-                "cooldown_frequency": Config.COOLDOWN_FREQUENCY,
-                "llm_attempts": Config.NUM_LLM_ATTEMPTS,
+                "batch_size": processing_config.batch_size,
+                "cooldown_period": processing_config.cooldown_period,
+                "cooldown_frequency": processing_config.cooldown_frequency,
+                "llm_attempts": processing_config.llm_attempts,
                 "min_consensus": Config.MIN_CONSENSUS
             },
             "split_results": {
@@ -403,7 +399,7 @@ def main():
         with open(Config.SPLIT_META_FILE, "w", encoding="utf-8") as f:
             json.dump(metadata, f, indent=4, ensure_ascii=False)
         
-        logger.info(f"Saved {len(expanded_concepts)} processed concepts to {Config.OUTPUT_FILE}")
+        logger.info(f"Saved {len(expanded_concepts)} processed concepts to {level_config.get_step_output_file(4)}")
         logger.info("Compound term splitting for level 1 completed successfully")
         
     except Exception as e:

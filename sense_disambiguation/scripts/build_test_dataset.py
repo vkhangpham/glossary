@@ -18,10 +18,7 @@ from typing import Dict, List, Any, Optional
 from datetime import datetime
 import logging
 
-# Add the project root to sys.path for imports
-script_dir = Path(__file__).parent
-project_root = script_dir.parent.parent
-sys.path.insert(0, str(project_root))
+# Package structure now properly configured with pyproject.toml
 
 try:
     from sense_disambiguation.detector.base import TermContext, EvidenceBlock

@@ -16,11 +16,7 @@ import re
 from datetime import datetime
 from typing import List, Optional, Dict, Any
 
-# Add the parent directory to sys.path if running as a script
-if __name__ == "__main__":
-    # Get the parent directory of the script directory
-    parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    sys.path.insert(0, parent_dir)
+# Package structure now properly configured with pyproject.toml
 
 # Custom logging level for progress updates - must be defined before other imports
 # that might use logging

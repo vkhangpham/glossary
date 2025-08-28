@@ -6,24 +6,21 @@ from pathlib import Path
 from collections import Counter
 from tqdm import tqdm
 
-# Add the parent directory of the current file to the Python path
-current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(current_dir, "../../../"))
-sys.path.insert(0, project_root)
+# Package structure now properly configured with pyproject.toml
 
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 
 # Setup logging
 logger = setup_logger("lv0.s2")
 
-class Config:
-    """Configuration for concept filtering"""
-    INPUT_FILE = "data/lv0/lv0_s1_extracted_concepts.txt"
-    META_FILE = "data/lv0/lv0_s1_metadata.json"
-    METADATA_S0_FILE = "data/lv0/lv0_s0_metadata.json"
-    OUTPUT_FILE = "data/lv0/lv0_s2_filtered_concepts.txt"
-    VALIDATION_META_FILE = "data/lv0/lv0_s2_metadata.json"
-    INSTITUTION_FREQ_THRESHOLD_PERCENT = 60  # Minimum percentage of institutions a concept must appear in
+# Use centralized configuration
+LEVEL = 0
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 def get_institution_from_source(source: str) -> str:
     """
@@ -122,12 +119,12 @@ def main():
         logger.info("Starting concept filtering by institution frequency")
         
         # Read input concepts
-        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_input_file(2), "r", encoding="utf-8") as f:
             concepts = [line.strip() for line in f.readlines()]
         logger.info(f"Read {len(concepts)} concepts from input file")
         
         # Read metadata with source-concept mapping
-        with open(Config.META_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_metadata_file(2), "r", encoding="utf-8") as f:
             metadata = json.load(f)
             
         # Get source-concept mapping from metadata
@@ -135,7 +132,7 @@ def main():
         logger.info(f"Read mappings for {len(source_concept_mapping)} sources")
         
         # Read s0 metadata to get the list of selected institutions
-        with open(Config.METADATA_S0_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_metadata_file(0), "r", encoding="utf-8") as f:
             s0_metadata = json.load(f)
             
         selected_institutions = s0_metadata.get("selected_institutions", [])
@@ -164,12 +161,12 @@ def main():
         logger.info(f"Filtered to {len(filtered_concepts)} concepts")
         
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.VALIDATION_META_FILE]:
+        for path in [level_config.get_step_output_file(2), level_config.get_validation_metadata_file(3)]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Save filtered concepts
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(2), "w", encoding="utf-8") as f:
             for concept in filtered_concepts:
                 f.write(f"{concept}\n")
         
@@ -193,7 +190,7 @@ def main():
             "selected_institutions": selected_institutions
         }
         
-        with open(Config.VALIDATION_META_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_validation_metadata_file(3), "w", encoding="utf-8") as f:
             json.dump(validation_metadata, f, indent=4, ensure_ascii=False)
         
         logger.info("Concept filtering completed successfully")

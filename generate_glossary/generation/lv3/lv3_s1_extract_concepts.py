@@ -17,6 +17,7 @@ import threading
 # Fix import path - Adjust based on the new file location (lv3)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
 
 # Load environment variables and setup logging
@@ -29,22 +30,13 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
 # Process-local storage for LLM instances
 _process_local = threading.local()
 
-class Config:
-    """Configuration for Lv3 concept extraction from conference topics"""
-    # Input files from Lv3 Step 0
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_conference_topics.txt")
-    META_FILE_STEP0 = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s0_metadata.json")
-    # Output files for Lv3 Step 1
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_extracted_concepts.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_metadata.json")
-    BATCH_SIZE = 5
-    NUM_WORKERS = 64 # Keep high for now
-    NUM_LLM_ATTEMPTS = 4  # Use multiple LLM runs for robustness
-    CONCEPT_AGREEMENT_THRESH = 3  # Concepts must appear in multiple responses
-    KW_APPEARANCE_THRESH = 1 # Minimum times a concept needs to appear across all results to be kept
-    MAX_CONTENT_WORDS = 100000 # Kept large, unlikely to be hit by topic lists
-    COOLDOWN_PERIOD = 1  # Seconds between batches
-    COOLDOWN_FREQUENCY = 10 # Number of batches before cooldown
+# Use centralized configuration
+LEVEL = 3
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
@@ -390,8 +382,8 @@ def filter_concepts_by_agreement(
 # --- Updated Parallel Processing Orchestrator ---
 def process_batches_parallel(
     batches: List[List[Dict[str, Any]]],
-    num_attempts: int = Config.NUM_LLM_ATTEMPTS,
-    agreement_threshold: int = Config.CONCEPT_AGREEMENT_THRESH
+    num_attempts: int = processing_config.llm_attempts,
+    agreement_threshold: int = processing_config.concept_agreement_threshold
 ) -> Dict[Tuple[str, str], Set[str]]:
     """Process batches in parallel using ProcessPoolExecutor and filter results by agreement."""
     final_agreed_concepts = {} # Key: (source_topic, conf_name), Value: {agreed_concept1, ...}
@@ -423,9 +415,9 @@ def process_batches_parallel(
                     final_agreed_concepts.update(filtered_batch_results)
 
                 # Apply cooldown periodically
-                if i > 0 and i % Config.COOLDOWN_FREQUENCY == 0:
-                    logger.debug(f"Applying cooldown period of {Config.COOLDOWN_PERIOD}s after batch {i+1}")
-                    time.sleep(Config.COOLDOWN_PERIOD)
+                if i > 0 and i % processing_config.cooldown_frequency == 0:
+                    logger.debug(f"Applying cooldown period of {processing_config.cooldown_period}s after batch {i+1}")
+                    time.sleep(processing_config.cooldown_period)
 
             except Exception as e:
                 logger.error(f"Error processing result from future {i}: {str(e)}", exc_info=True)
@@ -532,12 +524,12 @@ def main():
         logger.info("--- Starting Lv3 Concept Extraction from Raw Topics ---")
 
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.META_FILE]:
+        for path in [level_config.get_step_output_file(1), level_config.get_step_metadata_file(1)]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Prepare input data: List of {"raw_topic": ..., "journal": ...}
-        entries = prepare_entries_from_raw_topics(Config.INPUT_FILE, Config.META_FILE_STEP0)
+        entries = prepare_entries_from_raw_topics(level_config.get_step_input_file(1), level_config.get_step_metadata_file(1)_STEP0)
         if not entries:
             logger.error("No input entries prepared. Exiting.")
             return
@@ -555,16 +547,16 @@ def main():
         # Create batches, ensuring entries in a batch share the same journal name
         batches = []
         for journal, journal_entries in entries_by_journal.items():
-            journal_batches = chunk(journal_entries, Config.BATCH_SIZE)
+            journal_batches = chunk(journal_entries, processing_config.batch_size)
             batches.extend(journal_batches)
-        logger.info(f"Split into {len(batches)} batches of max size {Config.BATCH_SIZE}, grouped by journal.")
+        logger.info(f"Split into {len(batches)} batches of max size {processing_config.batch_size}, grouped by journal.")
 
         # Process batches in parallel and get filtered results
         # extracted_data: Key: (raw_topic, journal), Value: {agreed_concept1, ...}
         extracted_data = process_batches_parallel(
             batches,
-            Config.NUM_LLM_ATTEMPTS,
-            Config.CONCEPT_AGREEMENT_THRESH
+            processing_config.llm_attempts,
+            processing_config.concept_agreement_threshold
         )
 
         if not extracted_data:
@@ -603,9 +595,9 @@ def main():
 
         logger.info(f"Aggregated concepts. Found {len(all_concepts_found)} unique concepts initially.")
 
-        # Optional: Apply overall frequency threshold if needed (Config.KW_APPEARANCE_THRESH)
-        if Config.KW_APPEARANCE_THRESH > 1:
-            logger.info(f"Applying overall frequency threshold: {Config.KW_APPEARANCE_THRESH}")
+        # Optional: Apply overall frequency threshold if needed (processing_config.keyword_appearance_threshold)
+        if processing_config.keyword_appearance_threshold > 1:
+            logger.info(f"Applying overall frequency threshold: {processing_config.keyword_appearance_threshold}")
             # Recalculate concept counts across all sources
             all_concepts_list = [
                 concept
@@ -615,7 +607,7 @@ def main():
             concept_counts = Counter(all_concepts_list)
             verified_concepts_final = {
                 concept for concept, count in concept_counts.items()
-                if count >= Config.KW_APPEARANCE_THRESH
+                if count >= processing_config.keyword_appearance_threshold
             }
             logger.info(f"Filtered concepts by frequency threshold. Keeping {len(verified_concepts_final)} concepts.")
         else:
@@ -627,10 +619,10 @@ def main():
 
         # Save unique verified concepts list
         final_concepts_list_sorted = sorted(list(verified_concepts_final))
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(1), "w", encoding="utf-8") as f:
             for concept in final_concepts_list_sorted:
                 f.write(f"{concept}\n")
-        logger.info(f"Saved {len(final_concepts_list_sorted)} verified concepts to {Config.OUTPUT_FILE}")
+        logger.info(f"Saved {len(final_concepts_list_sorted)} verified concepts to {level_config.get_step_output_file(1)}")
 
         # --- Prepare and Save Metadata ---
 
@@ -656,11 +648,11 @@ def main():
                 "input_conference_journal_count": len(entries_by_journal),
                 "input_topic_conference_pairs": len(entries),
                 "output_unique_concepts_count": len(verified_concepts_final),
-                "batch_size": Config.BATCH_SIZE,
+                "batch_size": processing_config.batch_size,
                 "num_workers": Config.NUM_WORKERS,
-                "llm_attempts": Config.NUM_LLM_ATTEMPTS,
-                "concept_agreement_threshold": Config.CONCEPT_AGREEMENT_THRESH,
-                "overall_concept_frequency_threshold": Config.KW_APPEARANCE_THRESH,
+                "llm_attempts": processing_config.llm_attempts,
+                "concept_agreement_threshold": processing_config.concept_agreement_threshold,
+                "overall_concept_frequency_threshold": processing_config.keyword_appearance_threshold,
                 "llm_providers_models": "Random selection from OpenAI/Gemini (pro, default, mini)",
                 "llm_temperature": 0.2,
             },
@@ -680,16 +672,16 @@ def main():
             "final_concept_frequencies": {
                 concept: count for concept, count in concept_counts.items()
                 if concept in verified_concepts_final
-            } if Config.KW_APPEARANCE_THRESH > 1 else "N/A (Threshold = 1)"
+            } if processing_config.keyword_appearance_threshold > 1 else "N/A (Threshold = 1)"
         }
 
-        with open(Config.META_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_metadata_file(1), "w", encoding="utf-8") as f:
             json.dump(metadata_payload, f, indent=4, ensure_ascii=False)
-        logger.info(f"Metadata saved to {Config.META_FILE}")
+        logger.info(f"Metadata saved to {level_config.get_step_metadata_file(1)}")
 
 
         # --- Optional: Save Hierarchical CSV ---
-        csv_file = os.path.join(Path(Config.META_FILE).parent, "lv3_s1_hierarchical_concepts.csv")
+        csv_file = os.path.join(Path(level_config.get_step_metadata_file(1)).parent, "lv3_s1_hierarchical_concepts.csv")
         try:
             unique_csv_entries = set()
             with open(csv_file, "w", encoding="utf-8", newline='') as f_csv:

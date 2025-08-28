@@ -17,10 +17,12 @@ from pydash import chunk
 from tqdm import tqdm
 from functools import lru_cache
 
+# TODO: [Architecture] Same path manipulation anti-pattern as lv0 scripts
 # Fix import path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM, InferenceResult
 from generate_glossary.deduplicator.dedup_utils import normalize_text
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 
 # Load environment variables
 load_dotenv()
@@ -69,24 +71,13 @@ logger = setup_logging("lv1.s1")
 # Process-local storage for LLM instances
 _process_local = threading.local()
 
-class Config:
-    """Configuration for concept extraction"""
-    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s0_department_names.txt")
-    METADATA_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s0_metadata.json")  # Add metadata file path
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s1_extracted_concepts.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s1_metadata.json")
-    BATCH_SIZE = 20
-    NUM_LLM_ATTEMPTS = 5
-    CONCEPT_AGREEMENT_THRESH = 3
-    NUM_WORKERS = 8  # Increased number of parallel workers
-    CHUNK_SIZE = 100  # Size of chunks for parallel processing
-    MIN_DEPT_LENGTH = 5  # Minimum length of a valid department name
-    MAX_DEPT_LENGTH = 100  # Maximum length of a valid department name
-    COOLDOWN_PERIOD = 1  # Seconds between batches
-    COOLDOWN_FREQUENCY = 10  # Number of batches before cooldown
-    LOG_LEVEL = "INFO"  # Default log level
-    LOG_FILE = None     # Default to no separate log file
+# Use centralized configuration
+LEVEL = 1
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
@@ -544,7 +535,7 @@ def filter_concepts_by_agreement(
 
 def process_batches_parallel(
     batches: List[List[Dict[str, Any]]],
-    num_attempts: int = Config.NUM_LLM_ATTEMPTS
+    num_attempts: int = processing_config.llm_attempts
 ) -> Dict[str, Dict[str, Any]]:
     """Process batches in parallel using ProcessPoolExecutor and filter results"""
     all_results = {}
@@ -566,7 +557,7 @@ def process_batches_parallel(
                     # Combine and filter the extractions
                     combined_results = combine_extractions(batch_extractions)
                     filtered_results = filter_concepts_by_agreement(
-                        combined_results, Config.CONCEPT_AGREEMENT_THRESH
+                        combined_results, processing_config.concept_agreement_threshold
                     )
                     
                     # Merge into all_results
@@ -580,9 +571,9 @@ def process_batches_parallel(
                         all_results[source]["concepts"].update(concepts)
                 
                 # Apply cooldown periodically
-                if i > 0 and i % Config.COOLDOWN_FREQUENCY == 0:
-                    logger.debug(f"Applying cooldown for {Config.COOLDOWN_PERIOD} seconds after {i} batches")
-                    time.sleep(Config.COOLDOWN_PERIOD)
+                if i > 0 and i % processing_config.cooldown_frequency == 0:
+                    logger.debug(f"Applying cooldown for {processing_config.cooldown_period} seconds after {i} batches")
+                    time.sleep(processing_config.cooldown_period)
                     
             except Exception as e:
                 logger.error(f"Error processing batch {i}: {str(e)}")
@@ -603,15 +594,15 @@ def parse_args():
     # Processing options
     parser.add_argument("--workers", type=int, default=Config.NUM_WORKERS,
                         help="Number of parallel workers")
-    parser.add_argument("--batch-size", type=int, default=Config.BATCH_SIZE,
+    parser.add_argument("--batch-size", type=int, default=processing_config.batch_size,
                         help="Batch size for processing")
-    parser.add_argument("--attempts", type=int, default=Config.NUM_LLM_ATTEMPTS,
+    parser.add_argument("--attempts", type=int, default=processing_config.llm_attempts,
                         help="Number of LLM attempts per batch")
     
     # Input/output options
-    parser.add_argument("--input", type=str, default=Config.INPUT_FILE,
+    parser.add_argument("--input", type=str, default=level_config.get_step_input_file(1),
                         help="Input file with department names")
-    parser.add_argument("--output", type=str, default=Config.OUTPUT_FILE,
+    parser.add_argument("--output", type=str, default=level_config.get_step_output_file(1),
                         help="Output file for extracted concepts")
     
     return parser.parse_args()
@@ -626,13 +617,13 @@ def main():
         Config.LOG_LEVEL = args.log_level
         Config.LOG_FILE = args.log_file
         Config.NUM_WORKERS = args.workers
-        Config.BATCH_SIZE = args.batch_size
-        Config.NUM_LLM_ATTEMPTS = args.attempts
-        Config.INPUT_FILE = args.input
-        Config.OUTPUT_FILE = args.output
+        processing_config.batch_size = args.batch_size
+        processing_config.llm_attempts = args.attempts
+        level_config.get_step_input_file(1) = args.input
+        level_config.get_step_output_file(1) = args.output
         
         # Derive metadata and output file paths based on input path
-        input_path = Path(Config.INPUT_FILE)
+        input_path = Path(level_config.get_step_input_file(1))
         input_dir = input_path.parent
         
         # Update metadata file path
@@ -640,13 +631,13 @@ def main():
             Config.METADATA_FILE = os.path.join(input_dir, "lv1_s0_metadata.json")
         
         # Update output file path if necessary
-        if Config.OUTPUT_FILE == os.path.join(Config.BASE_DIR, "data/lv1/raw/lv1_s1_extracted_concepts.txt"):
+        if level_config.get_step_output_file(1) == os.path.join(str(level_config.data_dir.parent.parent), "data/lv1/raw/lv1_s1_extracted_concepts.txt"):
             # Using default path, derive from input path
             output_filename = input_path.name.replace("s0_department_names", "s1_extracted_concepts")
-            Config.OUTPUT_FILE = os.path.join(input_dir, output_filename)
+            level_config.get_step_output_file(1) = os.path.join(input_dir, output_filename)
         
         # Update metadata output path
-        Config.META_FILE = Config.OUTPUT_FILE.replace("_extracted_concepts.txt", "_metadata.json")
+        level_config.get_step_metadata_file(1) = level_config.get_step_output_file(1).replace("_extracted_concepts.txt", "_metadata.json")
         
         # Configure advanced logging if needed
         if Config.LOG_FILE or Config.LOG_LEVEL != "INFO":
@@ -654,11 +645,11 @@ def main():
             logger = setup_logging("lv1.s1", log_level=Config.LOG_LEVEL, log_file=Config.LOG_FILE)
             
         logger.info(f"Starting concept extraction with level={Config.LOG_LEVEL}, workers={Config.NUM_WORKERS}")
-        logger.info(f"Input: {Config.INPUT_FILE}")
-        logger.info(f"Output: {Config.OUTPUT_FILE}")
+        logger.info(f"Input: {level_config.get_step_input_file(1)}")
+        logger.info(f"Output: {level_config.get_step_output_file(1)}")
 
         # Read input sources and metadata
-        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_input_file(1), "r", encoding="utf-8") as f:
             raw_sources = [line.strip() for line in f.readlines()]
         logger.info(f"Read {len(raw_sources)} department names")
         
@@ -779,14 +770,14 @@ def main():
         # Create batches for each college separately to maintain context
         batches = []
         for college, college_entries in entries_by_college.items():
-            college_batches = chunk(college_entries, Config.BATCH_SIZE)
+            college_batches = chunk(college_entries, processing_config.batch_size)
             batches.extend(college_batches)
             logger.debug(f"Created {len(college_batches)} batches for college: {college}")
         
-        logger.info(f"Split into {len(batches)} batches of size up to {Config.BATCH_SIZE}, grouped by college")
+        logger.info(f"Split into {len(batches)} batches of size up to {processing_config.batch_size}, grouped by college")
         
         # Process batches in parallel and get filtered results
-        department_data = process_batches_parallel(batches, Config.NUM_LLM_ATTEMPTS)
+        department_data = process_batches_parallel(batches, processing_config.llm_attempts)
         logger.info(f"Processed {len(department_data)} departments from {len(batches)} batches")
 
         # Add college information to department data, ensuring correct mapping
@@ -857,12 +848,12 @@ def main():
         logger.info(f"From {len(department_data)} valid academic departments")
 
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.META_FILE]:
+        for path in [level_config.get_step_output_file(1), level_config.get_step_metadata_file(1)]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Save results
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(1), "w", encoding="utf-8") as f:
             for concept in verified_concepts:
                 f.write(f"{concept}\n")
 
@@ -881,7 +872,7 @@ def main():
                 return f"college of {college_lower}"
             return college_lower
         
-        with open(Config.META_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_metadata_file(1), "w", encoding="utf-8") as f:
             json.dump(
                 {
                     "metadata": {
@@ -890,10 +881,10 @@ def main():
                         "pre_filtered_count": len(pre_filtered),
                         "valid_departments_count": len(department_data),
                         "output_count": len(verified_concepts),
-                        "batch_size": Config.BATCH_SIZE,
+                        "batch_size": processing_config.batch_size,
                         "num_workers": Config.NUM_WORKERS,
-                        "llm_attempts": Config.NUM_LLM_ATTEMPTS,
-                        "concept_agreement_threshold": Config.CONCEPT_AGREEMENT_THRESH,
+                        "llm_attempts": processing_config.llm_attempts,
+                        "concept_agreement_threshold": processing_config.concept_agreement_threshold,
                         "providers_and_models": "random selection of OpenAI default/mini and Gemini default/mini",
                         "temperature": 0.3,
                     },
@@ -917,7 +908,7 @@ def main():
             )
 
         # Create an additional CSV file with all the department-concept-college relationships
-        csv_file = os.path.join(Path(Config.META_FILE).parent, "lv1_s1_department_concepts.csv")
+        csv_file = os.path.join(Path(level_config.get_step_metadata_file(1)).parent, "lv1_s1_department_concepts.csv")
         try:
             with open(csv_file, "w", encoding="utf-8") as f:
                 # Write header

@@ -14,10 +14,7 @@ import os
 import sys
 from pathlib import Path
 
-# Add the project root to sys.path for imports
-test_dir = Path(__file__).parent
-project_root = test_dir.parent.parent
-sys.path.insert(0, str(project_root))
+# Package structure now properly configured with pyproject.toml
 
 from sense_disambiguation.splitter import SenseSplitter
 

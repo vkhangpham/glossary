@@ -12,6 +12,7 @@ from functools import partial
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Setup logging
@@ -20,20 +21,13 @@ logger = setup_logger("lv2.s2")
 # Get the base directory (project root)
 BASE_DIR = os.getcwd()
 
-class Config:
-    """Configuration for concept filtering"""
+# Use centralized configuration
+LEVEL = 2
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
 
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s1_extracted_concepts.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s1_metadata.json")
-    CSV_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s1_hierarchical_concepts.csv")
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_filtered_concepts.txt")
-    OUTPUT_CSV_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_filtered_concepts.csv")
-    VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv2/raw/lv2_s2_metadata.json")
-    MIN_DEPT_FREQ_PERCENT = 1  # Concept must appear in at least this % of topics within a department
-    MIN_DEPT_APPEARANCE = 1  # Concept must appear in at least this many departments
-    NUM_WORKERS = 4  # Number of parallel workers for processing
-    BATCH_SIZE = 1000  # Size of batches for parallel processing
-
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 def count_topic_frequencies_worker(
     topic_concepts: List[List[str]]
@@ -52,7 +46,7 @@ def count_topic_frequencies_worker(
 def count_topic_frequencies(
     topic_mapping: Dict[str, List[str]],
     num_workers: int = Config.NUM_WORKERS,
-    batch_size: int = Config.BATCH_SIZE
+    batch_size: int = processing_config.batch_size
 ) -> Dict[str, int]:
     """Count how many topics each concept appears in using parallel processing"""
     # Convert mapping to list of concept lists for parallel processing
@@ -96,7 +90,7 @@ def filter_concepts(
     concept_frequencies: Dict[str, int],
     threshold: int,
     num_workers: int = Config.NUM_WORKERS,
-    batch_size: int = Config.BATCH_SIZE
+    batch_size: int = processing_config.batch_size
 ) -> List[str]:
     """Filter concepts based on their frequency across topics using parallel processing"""
     # Split concepts into batches
@@ -447,12 +441,12 @@ def main():
         logger.info("Starting concept filtering by topic and department frequency")
 
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.VALIDATION_META_FILE, Config.OUTPUT_CSV_FILE]:
+        for path in [level_config.get_step_output_file(2), level_config.get_validation_metadata_file(3), Config.OUTPUT_CSV_FILE]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Read input concepts
-        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_input_file(2), "r", encoding="utf-8") as f:
             concepts = [line.strip() for line in f.readlines()]
         logger.info(f"Read {len(concepts)} concepts from input file")
 
@@ -468,7 +462,7 @@ def main():
         concept_frequencies = count_topic_frequencies(
             topic_mapping,
             num_workers=Config.NUM_WORKERS,
-            batch_size=Config.BATCH_SIZE
+            batch_size=processing_config.batch_size
         )
         logger.info(f"Counted frequencies for {len(concept_frequencies)} unique concepts")
 
@@ -489,7 +483,7 @@ def main():
         logger.info(f"Filtered to {len(filtered_concepts)} concepts by department distribution")
 
         # Save filtered concepts
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(2), "w", encoding="utf-8") as f:
             for concept in filtered_concepts:
                 f.write(f"{concept}\n")
                 
@@ -504,7 +498,7 @@ def main():
                 "min_dept_appearance": Config.MIN_DEPT_APPEARANCE,
                 "min_dept_freq_percent": Config.MIN_DEPT_FREQ_PERCENT,
                 "num_workers": Config.NUM_WORKERS,
-                "batch_size": Config.BATCH_SIZE,
+                "batch_size": processing_config.batch_size,
                 "frequency_distribution": {str(k): v for k, v in freq_dist.items()},
                 "topic_count": len(topic_mapping),
                 "department_count": sum(len(depts) for depts in hierarchy_mapping.values()),
@@ -512,12 +506,12 @@ def main():
             "hierarchy_mapping": hierarchy_mapping,
         }
 
-        with open(Config.VALIDATION_META_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_validation_metadata_file(3), "w", encoding="utf-8") as f:
             json.dump(validation_metadata, f, indent=4, ensure_ascii=False)
 
         # Write department statistics
         write_department_stats(
-            Config.VALIDATION_META_FILE, 
+            level_config.get_validation_metadata_file(3), 
             dept_concept_counts, 
             concept_departments, 
             dept_topic_counts, 

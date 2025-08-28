@@ -14,29 +14,19 @@ import numpy as np
 # Fix import path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
 # Setup logging
 logger = setup_logger("lv1.s2")
 
-class Config:
-    """Configuration for concept filtering"""
-    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s1_department_concepts.csv")
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s2_filtered_concepts.txt")
-    VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s2_metadata.json")
-    PLOTS_DIR = os.path.join(BASE_DIR, "data/lv1/raw/plots")
-    
-    # Filtering thresholds
-    MIN_COLLEGE_APPEARANCE = 1  # Concept must appear in at least this many colleges
-    MIN_COLLEGE_FREQ_PERCENT = 1  # Concept must appear in at least this % of departments within a college
-    
-    # Concept validation
-    MIN_CONCEPT_LENGTH = 3  # Minimum length of a valid concept
-    MAX_CONCEPT_LENGTH = 50  # Maximum length of a valid concept
-    
-    # Visualization
-    MAX_CONCEPTS_PER_PLOT = 30  # Maximum number of concepts to show in distribution plots
+# Use centralized configuration
+LEVEL = 1
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 def is_valid_concept(concept: str) -> bool:
     """
@@ -319,8 +309,8 @@ def filter_by_college_distribution(
 def ensure_dirs_exist():
     """Ensure all required directories exist"""
     dirs_to_create = [
-        os.path.dirname(Config.OUTPUT_FILE),
-        os.path.dirname(Config.VALIDATION_META_FILE)
+        os.path.dirname(level_config.get_step_output_file(2)),
+        os.path.dirname(level_config.get_validation_metadata_file(3))
     ]
     
     for directory in dirs_to_create:
@@ -341,7 +331,7 @@ def main():
         ensure_dirs_exist()
         
         # Count concept frequencies across departments and colleges
-        concept_frequencies, normalized_to_original, college_concept_counts, concept_colleges = count_department_frequencies(Config.INPUT_FILE)
+        concept_frequencies, normalized_to_original, college_concept_counts, concept_colleges = count_department_frequencies(level_config.get_step_input_file(2))
         logger.info(f"Counted frequencies for {len(concept_frequencies)} unique normalized concepts")
         
         # Filter concepts based on college distribution
@@ -366,12 +356,12 @@ def main():
         logger.info(f"\nFiltered to {len(filtered_concepts)} concepts")
         
         # Create output directories if needed
-        for path in [Config.OUTPUT_FILE, Config.VALIDATION_META_FILE, Config.PLOTS_DIR]:
+        for path in [level_config.get_step_output_file(2), level_config.get_validation_metadata_file(3), Config.PLOTS_DIR]:
             output_path = Path(path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Save filtered concepts
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(2), "w", encoding="utf-8") as f:
             for concept in filtered_concepts:
                 f.write(f"{concept}\n")
         
@@ -418,7 +408,7 @@ def main():
             }
         }
         
-        with open(Config.VALIDATION_META_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_validation_metadata_file(3), "w", encoding="utf-8") as f:
             json.dump(validation_metadata, f, indent=4, ensure_ascii=False)
 
         logger.info("Concept filtering completed successfully")

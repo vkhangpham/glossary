@@ -9,8 +9,12 @@ from tqdm import tqdm
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
 from generate_glossary.deduplicator.dedup_utils import normalize_text
+from generate_glossary.utils.resilient_processing import (
+    KeywordVerificationProcessor, create_processing_config, get_checkpoint_dir
+)
 
 # Load environment variables and setup logging
 load_dotenv()
@@ -19,17 +23,13 @@ logger = setup_logger("lv3.s3")
 # Get the base directory
 BASE_DIR = os.getcwd()
 
-class Config:
-    """Configuration for concept filtering"""
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s2_filtered_concepts.txt")
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s3_verified_concepts.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s1_metadata.json")
-    VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv3/raw/lv3_s3_metadata.json")
-    BATCH_SIZE = 10
-    COOLDOWN_PERIOD = 1
-    COOLDOWN_FREQUENCY = 10
-    MAX_RETRIES = 3
-    MAX_EXAMPLES = 5  # Maximum number of example conference topics to show in prompt
+# Use centralized configuration
+LEVEL = 3
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
@@ -73,7 +73,7 @@ def build_verification_prompt(
         Formatted prompt for LLM
     """
     # Take up to MAX_EXAMPLES example journals
-    example_journals = journals[:Config.MAX_EXAMPLES]
+    example_journals = journals[:processing_config.max_examples]
     journals_str = "\n".join(f"- {journal}" for journal in example_journals)
     
     return f"""Analyze whether "{keyword}" is a valid research concept based on the following evidence:
@@ -136,9 +136,9 @@ def verify_keywords_batch(
     keywords: List[str],
     concept_journals: Dict[str, List[str]],
     provider: Optional[str] = None,
-    batch_size: int = Config.BATCH_SIZE,
-    cooldown: int = Config.COOLDOWN_PERIOD,
-    cooldown_freq: int = Config.COOLDOWN_FREQUENCY
+    batch_size: int = processing_config.batch_size,
+    cooldown: int = processing_config.cooldown_period,
+    cooldown_freq: int = processing_config.cooldown_frequency
 ) -> Dict[str, Dict[str, Any]]:
     """
     Verify a batch of keywords with rate limiting
@@ -238,17 +238,17 @@ def main():
     """Main entry point for concept verification"""
     try:
         # Ensure output directory exists
-        os.makedirs(os.path.dirname(Config.OUTPUT_FILE), exist_ok=True)
+        os.makedirs(os.path.dirname(level_config.get_step_output_file(3)), exist_ok=True)
         
         # Read input concepts
-        with open(Config.INPUT_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_input_file(3), "r", encoding="utf-8") as f:
             concepts = [line.strip() for line in f if line.strip()]
         logger.info(f"Read {len(concepts)} concepts from input file")
         
         # Load metadata to get journal sources for each concept
-        with open(Config.META_FILE, "r", encoding="utf-8") as f:
+        with open(level_config.get_step_metadata_file(3), "r", encoding="utf-8") as f:
             metadata = json.load(f)
-        logger.info(f"Loaded metadata from {Config.META_FILE}")
+        logger.info(f"Loaded metadata from {level_config.get_step_metadata_file(3)}")
         
         # Get journals for each concept
         concept_journals = get_concept_journals(metadata)
@@ -259,14 +259,24 @@ def main():
         single_word_concepts = [c for c in concepts if is_single_word(c)]
         logger.info(f"Identified {len(single_word_concepts)} single-word concepts for verification")
         
-        # Verify concepts
-        results = verify_keywords_batch(
-            single_word_concepts,
-            concept_journals,
+        # Initialize resilient processor with checkpoint support
+        checkpoint_dir = get_checkpoint_dir(level_config)
+        processor = KeywordVerificationProcessor(checkpoint_dir, LEVEL)
+        
+        # Create configuration for checkpointing
+        config = create_processing_config(processing_config)
+        
+        # Verify concepts with automatic checkpointing
+        results = processor.verify_keywords(
+            keywords=single_word_concepts,
+            concept_journals=concept_journals,
+            verify_func=verify_keyword,
+            batch_size=processing_config.batch_size,
+            cooldown_period=processing_config.cooldown_period,
+            cooldown_frequency=processing_config.cooldown_frequency,
+            config=config,
             provider=None,  # Use default provider
-            batch_size=Config.BATCH_SIZE,
-            cooldown=Config.COOLDOWN_PERIOD,
-            cooldown_freq=Config.COOLDOWN_FREQUENCY
+            force_restart=False  # Set to True to ignore existing checkpoints
         )
         
         # Filter out unverified concepts
@@ -292,10 +302,10 @@ def main():
         logger.info(f"Unverified concepts: {len(unverified_concepts)}")
         
         # Save verified concepts
-        with open(Config.OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_step_output_file(3), "w", encoding="utf-8") as f:
             for concept in sorted(verified_concepts):
                 f.write(f"{concept}\n")
-        logger.info(f"Saved {len(verified_concepts)} verified concepts to {Config.OUTPUT_FILE}")
+        logger.info(f"Saved {len(verified_concepts)} verified concepts to {level_config.get_step_output_file(3)}")
         
         # Save metadata about the verification process
         validation_metadata = {
@@ -311,9 +321,9 @@ def main():
             "concept_verification_details": results
         }
         
-        with open(Config.VALIDATION_META_FILE, "w", encoding="utf-8") as f:
+        with open(level_config.get_validation_metadata_file(3), "w", encoding="utf-8") as f:
             json.dump(validation_metadata, f, indent=2)
-        logger.info(f"Saved validation metadata to {Config.VALIDATION_META_FILE}")
+        logger.info(f"Saved validation metadata to {level_config.get_validation_metadata_file(3)}")
         
     except Exception as e:
         logger.error(f"Error during concept verification: {e}", exc_info=True)

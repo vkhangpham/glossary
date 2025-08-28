@@ -7,10 +7,7 @@ import concurrent.futures
 import threading
 from typing import Optional, Any, Dict, List, Tuple
 
-# Ensure the script can find the generate_glossary module
-current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.dirname(current_dir)
-sys.path.insert(0, project_root)
+# Package structure now properly configured with pyproject.toml
 
 try:
     from generate_glossary.utils.llm import get_llm, LLMError, LLMConfigError, GEMINI_MODELS

@@ -11,6 +11,7 @@ from tqdm import tqdm
 # Fix import path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm import LLMFactory, Provider, OPENAI_MODELS, GEMINI_MODELS, BaseLLM
 from generate_glossary.deduplicator.dedup_utils import normalize_text
 
@@ -18,32 +19,13 @@ from generate_glossary.deduplicator.dedup_utils import normalize_text
 load_dotenv()
 logger = setup_logger("lv1.s3")
 
-class Config:
-    """Configuration for concept filtering"""
-    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-    INPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s2_filtered_concepts.txt")
-    OUTPUT_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s3_verified_concepts.txt")
-    META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s1_metadata.json")
-    VALIDATION_META_FILE = os.path.join(BASE_DIR, "data/lv1/raw/lv1_s3_metadata.json")
-    BATCH_SIZE = 10
-    COOLDOWN_PERIOD = 1
-    COOLDOWN_FREQUENCY = 10
-    MAX_RETRIES = 3
-    MAX_EXAMPLES = 5  # Maximum number of example departments to show in prompt
-    # List of common words that are not academic concepts, even if they appear in department names
-    NON_ACADEMIC_TERMS = [
-        "about", "all", "also", "and", "any", "are", "back", "can", "come", 
-        "could", "day", "even", "first", "for", "from", "get", "give", "have", 
-        "here", "home", "how", "info", "into", "just", "know", "like", "look", 
-        "main", "make", "many", "more", "most", "new", "not", "now", "one", 
-        "only", "our", "out", "over", "page", "part", "site", "some", "such", 
-        "than", "that", "the", "their", "them", "then", "there", "these", 
-        "they", "this", "time", "two", "use", "view", "was", "way", "web", 
-        "well", "what", "when", "which", "will", "with", "would", "year", "you",
-        "next", "click", "link", "links", "menu", "contact", "visit", "see",
-        "faculty", "staff", "student", "students", "office", "list", "directory",
-        "department", "university", "college", "school", "program", "programs"
-    ]
+# Use centralized configuration
+LEVEL = 1
+level_config = get_level_config(LEVEL)
+processing_config = get_processing_config(LEVEL)
+
+# Ensure directories exist
+ensure_directories(LEVEL)
 
 class QuotaExceededError(Exception):
     """Raised when the API quota is exceeded."""
@@ -101,7 +83,7 @@ def is_obviously_invalid(keyword: str) -> bool:
         return True
     
     # Check if it's just a common English word with no academic meaning
-    if keyword.lower() in Config.NON_ACADEMIC_TERMS:
+    if keyword.lower() in processing_config.non_academic_terms:
         return True
     
     # Check if it's just numbers or a single character
@@ -134,7 +116,7 @@ def build_verification_prompt(
         Formatted prompt for LLM
     """
     # Take up to MAX_EXAMPLES example departments
-    example_departments = departments[:Config.MAX_EXAMPLES]
+    example_departments = departments[:processing_config.max_examples]
     departments_str = "\n".join(f"- {dept}" for dept in example_departments)
     
     return f"""Analyze whether "{keyword}" is a valid research concept based on the following criteria:
@@ -224,9 +206,9 @@ def verify_keywords_batch(
     keywords: List[str],
     concept_departments: Dict[str, List[str]],
     provider: Optional[str] = None,
-    batch_size: int = Config.BATCH_SIZE,
-    cooldown: int = Config.COOLDOWN_PERIOD,
-    cooldown_freq: int = Config.COOLDOWN_FREQUENCY
+    batch_size: int = processing_config.batch_size,
+    cooldown: int = processing_config.cooldown_period,
+    cooldown_freq: int = processing_config.cooldown_frequency
 ) -> Dict[str, Dict[str, Any]]:
     """
     Verify a batch of keywords with rate limiting
@@ -318,8 +300,8 @@ def is_single_word(keyword: str) -> bool:
 def ensure_dirs_exist():
     """Ensure all required directories exist"""
     dirs_to_create = [
-        os.path.dirname(Config.OUTPUT_FILE),
-        os.path.dirname(Config.VALIDATION_META_FILE)
+        os.path.dirname(level_config.get_step_output_file(3)),
+        os.path.dirname(level_config.get_validation_metadata_file(3))
     ]
     
     for directory in dirs_to_create:
@@ -346,12 +328,12 @@ def main():
         ensure_dirs_exist()
         
         # Read input keywords
-        with open(Config.INPUT_FILE, "r", encoding='utf-8') as f:
+        with open(level_config.get_step_input_file(3), "r", encoding='utf-8') as f:
             all_keywords = [line.strip() for line in f.readlines()]
         logger.info(f"Read {len(all_keywords)} total research concepts")
         
         # Read metadata from s1
-        with open(Config.META_FILE, "r", encoding='utf-8') as f:
+        with open(level_config.get_step_metadata_file(3), "r", encoding='utf-8') as f:
             metadata = json.load(f)
         concept_departments = get_concept_departments(metadata)
         logger.info(f"Loaded department data for {len(concept_departments)} concepts")
@@ -403,13 +385,13 @@ def main():
         logger.info(f"Final unique concepts after normalization: {len(final_keywords)}")
         
         # Save verified keywords to text file
-        logger.info(f"Saving verified concepts to {Config.OUTPUT_FILE}")
-        with open(Config.OUTPUT_FILE, "w", encoding='utf-8') as f:
+        logger.info(f"Saving verified concepts to {level_config.get_step_output_file(3)}")
+        with open(level_config.get_step_output_file(3), "w", encoding='utf-8') as f:
             for kw in sorted(final_keywords):
                 f.write(f"{kw}\n")
         
         # Save detailed metadata to JSON file
-        logger.info(f"Saving metadata to {Config.VALIDATION_META_FILE}")
+        logger.info(f"Saving metadata to {level_config.get_validation_metadata_file(3)}")
         metadata = {
             "metadata": {
                 "total_input_count": len(all_keywords),
@@ -421,10 +403,10 @@ def main():
                 "total_verified_count": len(all_verified_keywords),
                 "normalized_output_count": len(final_keywords),
                 "provider": provider or Provider.OPENAI,
-                "batch_size": Config.BATCH_SIZE,
-                "cooldown_period": Config.COOLDOWN_PERIOD,
-                "cooldown_frequency": Config.COOLDOWN_FREQUENCY,
-                "max_retries": Config.MAX_RETRIES
+                "batch_size": processing_config.batch_size,
+                "cooldown_period": processing_config.cooldown_period,
+                "cooldown_frequency": processing_config.cooldown_frequency,
+                "max_retries": processing_config.max_retries
             },
             "verification_results": verification_results,
             "verified_single_words": verified_single_words,
@@ -433,11 +415,11 @@ def main():
             "final_keywords": final_keywords
         }
         
-        with open(Config.VALIDATION_META_FILE, "w", encoding='utf-8') as f:
+        with open(level_config.get_validation_metadata_file(3), "w", encoding='utf-8') as f:
             json.dump(metadata, f, indent=4, ensure_ascii=False)
         
         logger.info("Research concept verification completed successfully")
-        logger.info(f"Saved {len(final_keywords)} verified concepts to {Config.OUTPUT_FILE}")
+        logger.info(f"Saved {len(final_keywords)} verified concepts to {level_config.get_step_output_file(3)}")
         
     except Exception as e:
         logger.error(f"An error occurred: {str(e)}", exc_info=True)

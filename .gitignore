@@ -194,3 +194,11 @@ data/evaluation/
 data/analysis/
 logs/
 vector_store*/
+
+# CLAUDE code
+.claude/
+CLAUDE*.md
+implement/
+fix-imports/
+fix-todos/
+refactor/
