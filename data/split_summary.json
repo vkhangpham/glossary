@@ -1,0 +1,1492 @@
+{
+  "timestamp": "2025-05-23T23:54:46.674580",
+  "total_terms_split": 77,
+  "splits_by_level": {
+    "1": 1,
+    "2": 1,
+    "3": 75
+  },
+  "detailed_splits": [
+    {
+      "original_term": "english",
+      "level": 1,
+      "new_terms": [
+        {
+          "term": "english (english literature)",
+          "sense_tag": "english_literature",
+          "display_tag": "english literature",
+          "resource_count": 4
+        },
+        {
+          "term": "english (linguistics)",
+          "sense_tag": "linguistics",
+          "display_tag": "linguistics",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In 'english literature', 'english' refers specifically to the body of literary works produced in the English language or by English authors, whereas in 'linguistics', 'english' denotes the English language itself as a system of grammar, phonology, and semantics, thus representing fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "group theory",
+      "level": 2,
+      "new_terms": [
+        {
+          "term": "group theory (counseling psychology)",
+          "sense_tag": "counseling_psychology",
+          "display_tag": "counseling psychology",
+          "resource_count": 2
+        },
+        {
+          "term": "group theory (abstract algebra)",
+          "sense_tag": "abstract_algebra",
+          "display_tag": "abstract algebra",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In counseling psychology, 'group theory' refers to theoretical frameworks for understanding group dynamics and behavior in therapeutic or social settings, whereas in abstract algebra, 'group theory' is the mathematical study of algebraic structures called groups; these are fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "action recognition",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "action recognition (computer vision)",
+          "sense_tag": "computer_vision",
+          "display_tag": "computer vision",
+          "resource_count": 3
+        },
+        {
+          "term": "action recognition (movement science)",
+          "sense_tag": "movement_science",
+          "display_tag": "movement science",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In computer vision, 'action recognition' refers to the automated identification of human actions from visual data using algorithms, whereas in movement science, it refers to the study and interpretation of human actions and movements from a biomechanical or physiological perspective, making the core meaning and approach to 'action recognition' fundamentally different in each field.) based on parent context"
+    },
+    {
+      "original_term": "adaptation",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "adaptation (climate adaptation)",
+          "sense_tag": "climate_adaptation",
+          "display_tag": "climate adaptation",
+          "resource_count": 4
+        },
+        {
+          "term": "adaptation (evolutionary biology)",
+          "sense_tag": "evolutionary_biology",
+          "display_tag": "evolutionary biology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In climate adaptation, 'adaptation' refers to deliberate human or societal adjustments to reduce vulnerability or exploit opportunities in response to climate change, whereas in evolutionary biology, 'adaptation' denotes a heritable trait shaped by natural selection that increases an organism's fitness in its environment; these are fundamentally different processes—one intentional and social, the other biological and evolutionary—requiring separate explanations and leading to significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "aesthetics",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "aesthetics (art theory)",
+          "sense_tag": "art_theory",
+          "display_tag": "art theory",
+          "resource_count": 6
+        },
+        {
+          "term": "aesthetics (facial plastic surgery)",
+          "sense_tag": "facial_plastic_surgery",
+          "display_tag": "facial plastic surgery",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In art theory, 'aesthetics' refers to the philosophical study of beauty, taste, and the nature of art, while in facial plastic surgery, 'aesthetics' denotes the practical standards and principles of physical attractiveness and harmonious appearance, making the core meaning of the term fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "agency",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "agency (social cognitive psychology)",
+          "sense_tag": "social_cognitive_psychology",
+          "display_tag": "social cognitive psychology",
+          "resource_count": 6
+        },
+        {
+          "term": "agency (feminist philosophy)",
+          "sense_tag": "feminist_philosophy",
+          "display_tag": "feminist philosophy",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In social cognitive psychology, 'agency' refers to an individual's capacity to act intentionally and exert control over their own actions, emphasizing psychological mechanisms of self-regulation and autonomy, whereas in feminist philosophy, 'agency' often centers on the ability to act within and against social structures of power and oppression, focusing on the negotiation of constraints and the reclamation of subjectivity, thus requiring separate explanations due to their fundamentally different emphases and conceptual frameworks.) based on parent context"
+    },
+    {
+      "original_term": "articulation",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "articulation (literacy education)",
+          "sense_tag": "literacy_education",
+          "display_tag": "literacy education",
+          "resource_count": 2
+        },
+        {
+          "term": "articulation (speech science)",
+          "sense_tag": "speech_science",
+          "display_tag": "speech science",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In literacy education, 'articulation' refers to the clear and effective expression of ideas in written or spoken language (i.e., how thoughts are organized and conveyed), whereas in speech science, 'articulation' specifically denotes the physical production of speech sounds by the movement of speech organs, representing fundamentally different core meanings that would require separate explanations and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "clustering",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "clustering (data mining)",
+          "sense_tag": "data_mining",
+          "display_tag": "data mining",
+          "resource_count": 11
+        },
+        {
+          "term": "clustering (nuclear physics)",
+          "sense_tag": "nuclear_physics",
+          "display_tag": "nuclear physics",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In data mining, 'clustering' refers to the process of grouping data points based on similarity in a feature space, while in nuclear physics, 'clustering' describes the phenomenon where nucleons (protons and neutrons) group together within a nucleus to form substructures, representing fundamentally different concepts that would require separate explanations and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "compliance",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "compliance (mechanical engineering)",
+          "sense_tag": "mechanical_engineering",
+          "display_tag": "mechanical engineering",
+          "resource_count": 2
+        },
+        {
+          "term": "compliance (corporate governance)",
+          "sense_tag": "corporate_governance",
+          "display_tag": "corporate governance",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In mechanical engineering, 'compliance' refers to a physical property describing the ability of a material or structure to deform in response to an applied force (inverse of stiffness), whereas in corporate governance, 'compliance' refers to the act of adhering to laws, regulations, and ethical standards, representing fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "composite structures",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "composite structures (structural engineering)",
+          "sense_tag": "structural_engineering",
+          "display_tag": "structural engineering",
+          "resource_count": 3
+        },
+        {
+          "term": "composite structures (speech sciences)",
+          "sense_tag": "speech_sciences",
+          "display_tag": "speech sciences",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In structural engineering, 'composite structures' refers to physical constructions made from two or more different materials combined to achieve superior mechanical properties, while in speech sciences, 'composite structures' refers to complex linguistic or phonetic constructs formed by combining simpler speech units, representing fundamentally different core meanings that would require separate explanations and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "conflict resolution",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "conflict resolution (interpersonal communication)",
+          "sense_tag": "interpersonal_communication",
+          "display_tag": "interpersonal communication",
+          "resource_count": 4
+        },
+        {
+          "term": "conflict resolution (distributed systems)",
+          "sense_tag": "distributed_systems",
+          "display_tag": "distributed systems",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In 'interpersonal communication', 'conflict resolution' refers to the process of managing and resolving disagreements between people through social, emotional, and communicative means, whereas in 'distributed systems', it refers to technical mechanisms for resolving inconsistencies or contention between concurrent processes or data, representing fundamentally different phenomena that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "continual learning",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "continual learning (educational psychology)",
+          "sense_tag": "educational_psychology",
+          "display_tag": "educational psychology",
+          "resource_count": 2
+        },
+        {
+          "term": "continual learning (lifelong deep learning)",
+          "sense_tag": "lifelong_deep_learning",
+          "display_tag": "lifelong deep learning",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In educational psychology, 'continual learning' refers to the ongoing process by which humans acquire knowledge and skills throughout their lives, emphasizing cognitive, social, and developmental aspects, whereas in lifelong deep learning, 'continual learning' specifically denotes an artificial intelligence paradigm where models incrementally learn new tasks without forgetting previous ones, making the core meaning of the term fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "coordination",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "coordination (systems engineering)",
+          "sense_tag": "systems_engineering",
+          "display_tag": "systems engineering",
+          "resource_count": 2
+        },
+        {
+          "term": "coordination (motor control)",
+          "sense_tag": "motor_control",
+          "display_tag": "motor control",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In systems engineering, 'coordination' refers to the organized management and alignment of processes, resources, or subsystems to achieve a common goal within complex engineered systems, whereas in motor control, 'coordination' specifically denotes the neural and physiological integration of muscles and movements to produce smooth, purposeful physical actions; these represent fundamentally different core meanings that would require separate explanations and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "development studies",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "development studies (infrastructure engineering)",
+          "sense_tag": "infrastructure_engineering",
+          "display_tag": "infrastructure engineering",
+          "resource_count": 4
+        },
+        {
+          "term": "development studies (film studies)",
+          "sense_tag": "film_studies",
+          "display_tag": "film studies",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Development studies' in infrastructure engineering refers to the systematic analysis and planning of physical infrastructure projects, while in film studies it would refer to the examination of the creative and production processes involved in developing films; these represent fundamentally different core meanings of the term that would require separate explanations and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "digital humanities",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "digital humanities (digital literary studies)",
+          "sense_tag": "digital_literary_studies",
+          "display_tag": "digital literary studies",
+          "resource_count": 2
+        },
+        {
+          "term": "digital humanities (educational technology)",
+          "sense_tag": "educational_technology",
+          "display_tag": "educational technology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Digital humanities' in the context of digital literary studies refers to the application of computational methods to traditional humanities research (e.g., literary analysis), whereas in educational technology, it is sometimes used to describe the integration of digital tools into humanities teaching and learning, representing fundamentally different core interpretations—one as a research paradigm and the other as a pedagogical approach—thus requiring separate explanations and risking misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "disease management",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "disease management (environmental engineering)",
+          "sense_tag": "environmental_engineering",
+          "display_tag": "environmental engineering",
+          "resource_count": 4
+        },
+        {
+          "term": "disease management (clinical medicine)",
+          "sense_tag": "clinical_medicine",
+          "display_tag": "clinical medicine",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In environmental engineering, 'disease management' refers to the control and mitigation of disease spread through environmental interventions (e.g., water treatment, sanitation, vector control), whereas in clinical medicine, it refers to the diagnosis, treatment, and ongoing care of individual patients with diseases, representing fundamentally different interpretations of the term that would require separate explanations and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "disease modeling",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "disease modeling (genome editing)",
+          "sense_tag": "genome_editing",
+          "display_tag": "genome editing",
+          "resource_count": 2
+        },
+        {
+          "term": "disease modeling (infectious disease modeling)",
+          "sense_tag": "infectious_disease_modeling",
+          "display_tag": "infectious disease modeling",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In genome editing, 'disease modeling' refers to the creation of cellular or animal models with specific genetic modifications to mimic human diseases at the molecular or organismal level, whereas in infectious disease modeling, it refers to the mathematical or computational simulation of disease spread and dynamics in populations, representing fundamentally different interpretations of what it means to 'model' a disease.) based on parent context"
+    },
+    {
+      "original_term": "ecology",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "ecology (ecological sciences)",
+          "sense_tag": "ecological_sciences",
+          "display_tag": "ecological sciences",
+          "resource_count": 10
+        },
+        {
+          "term": "ecology (indigenous studies)",
+          "sense_tag": "indigenous_studies",
+          "display_tag": "indigenous studies",
+          "resource_count": 4
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In ecological sciences, 'ecology' refers to the scientific study of interactions among organisms and their environment based on empirical and theoretical frameworks, whereas in indigenous studies, 'ecology' often embodies traditional, relational, and holistic understandings of the interconnectedness between people, land, and non-human entities, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "equity studies",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "equity studies (critical cultural studies)",
+          "sense_tag": "critical_cultural_studies",
+          "display_tag": "critical cultural studies",
+          "resource_count": 6
+        },
+        {
+          "term": "equity studies (financial accounting)",
+          "sense_tag": "financial_accounting",
+          "display_tag": "financial accounting",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Equity studies' in critical cultural studies refers to the examination of social justice, fairness, and the distribution of power and resources among social groups, whereas in financial accounting, 'equity studies' pertains to the analysis of ownership interests, shareholder equity, and financial value within organizations; these represent fundamentally different core meanings of the term that would require separate explanations and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "fairness",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "fairness (computer systems)",
+          "sense_tag": "computer_systems",
+          "display_tag": "computer systems",
+          "resource_count": 2
+        },
+        {
+          "term": "fairness (language acquisition)",
+          "sense_tag": "language_acquisition",
+          "display_tag": "language acquisition",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In computer systems, 'fairness' typically refers to the equitable allocation of computational resources or opportunities among processes or users (procedural or distributive fairness), whereas in language acquisition, 'fairness' is interpreted in terms of social or moral justice, such as equitable treatment or lack of bias in communication and learning environments, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "financial stability",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "financial stability (domestic violence research)",
+          "sense_tag": "domestic_violence_research",
+          "display_tag": "domestic violence research",
+          "resource_count": 2
+        },
+        {
+          "term": "financial stability (international finance)",
+          "sense_tag": "international_finance",
+          "display_tag": "international finance",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In domestic violence research, 'financial stability' refers to the personal or household ability to maintain consistent income and meet basic needs, often as a factor in individual or family well-being and vulnerability, whereas in international finance, 'financial stability' denotes the resilience and proper functioning of a country's or global financial system, so the term describes fundamentally different phenomena requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "fiscal decentralization",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "fiscal decentralization (public finance)",
+          "sense_tag": "public_finance",
+          "display_tag": "public finance",
+          "resource_count": 4
+        },
+        {
+          "term": "fiscal decentralization (corporate finance)",
+          "sense_tag": "corporate_finance",
+          "display_tag": "corporate finance",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In public finance, 'fiscal decentralization' refers to the transfer of fiscal authority and resources from central to subnational governments, whereas in corporate finance, if used, it would refer to the delegation of financial decision-making from a central corporate office to subsidiary units or divisions, representing fundamentally different entities and processes; thus, the core meaning of the term changes significantly between the two fields.) based on parent context"
+    },
+    {
+      "original_term": "governance",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "governance (urban studies)",
+          "sense_tag": "urban_studies",
+          "display_tag": "urban studies",
+          "resource_count": 8
+        },
+        {
+          "term": "governance (data management)",
+          "sense_tag": "data_management",
+          "display_tag": "data management",
+          "resource_count": 6
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In urban studies, 'governance' refers to the processes, structures, and actors involved in the collective decision-making and administration of cities (i.e., political, social, and institutional arrangements), whereas in data management, 'governance' specifically denotes the policies, standards, and controls for managing data assets within organizations, thus representing fundamentally different core meanings that would require separate encyclopedia entries.) based on parent context"
+    },
+    {
+      "original_term": "health monitoring",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "health monitoring (biomedical engineering)",
+          "sense_tag": "biomedical_engineering",
+          "display_tag": "biomedical engineering",
+          "resource_count": 2
+        },
+        {
+          "term": "health monitoring (structural health monitoring)",
+          "sense_tag": "structural_health_monitoring",
+          "display_tag": "structural health monitoring",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In biomedical engineering, 'health monitoring' refers to the continuous assessment of biological or physiological states in living organisms (typically humans), whereas in structural health monitoring, it refers to the evaluation of the integrity and performance of non-living structures (such as bridges or buildings), representing fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "heuristics",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "heuristics (combinatorial optimization)",
+          "sense_tag": "combinatorial_optimization",
+          "display_tag": "combinatorial optimization",
+          "resource_count": 3
+        },
+        {
+          "term": "heuristics (behavioral economics)",
+          "sense_tag": "behavioral_economics",
+          "display_tag": "behavioral economics",
+          "resource_count": 5
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In combinatorial optimization, 'heuristics' refers to algorithmic strategies or rules of thumb designed to efficiently find approximate solutions to computationally hard problems, whereas in behavioral economics, 'heuristics' denotes cognitive shortcuts or mental rules people use to make decisions under uncertainty, representing fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "history",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "history (african historiography)",
+          "sense_tag": "african_historiography",
+          "display_tag": "african historiography",
+          "resource_count": 25
+        },
+        {
+          "term": "history (virtual reality research)",
+          "sense_tag": "virtual_reality_research",
+          "display_tag": "virtual reality research",
+          "resource_count": 6
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In 'african historiography', 'history' refers to the study and interpretation of past events and narratives specific to Africa, whereas in 'virtual reality research', 'history' typically refers to the record or log of user actions, system states, or interactions within a virtual environment—these are fundamentally different core meanings that would require separate explanations and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "human behavior",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "human behavior (french literary studies)",
+          "sense_tag": "french_literary_studies",
+          "display_tag": "french literary studies",
+          "resource_count": 3
+        },
+        {
+          "term": "human behavior (behavioral psychology)",
+          "sense_tag": "behavioral_psychology",
+          "display_tag": "behavioral psychology",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In French literary studies, 'human behavior' refers to the representation, interpretation, and construction of actions, motives, and social dynamics within texts and cultural narratives, whereas in behavioral psychology, 'human behavior' denotes observable actions and responses of individuals as subjects of empirical scientific study; thus, the term embodies fundamentally different core meanings in each context.) based on parent context"
+    },
+    {
+      "original_term": "identity studies",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "identity studies (intersectionality studies)",
+          "sense_tag": "intersectionality_studies",
+          "display_tag": "intersectionality studies",
+          "resource_count": 13
+        },
+        {
+          "term": "identity studies (memory studies)",
+          "sense_tag": "memory_studies",
+          "display_tag": "memory studies",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Identity studies' in the context of intersectionality studies refers to the analysis of social identities and their interlocking systems of oppression and privilege, whereas in memory studies it refers to the construction and negotiation of identity through collective and individual memory, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "image classification",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "image classification (visual culture studies)",
+          "sense_tag": "visual_culture_studies",
+          "display_tag": "visual culture studies",
+          "resource_count": 2
+        },
+        {
+          "term": "image classification (electrical engineering)",
+          "sense_tag": "electrical_engineering",
+          "display_tag": "electrical engineering",
+          "resource_count": 4
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In visual culture studies, 'image classification' refers to the interpretive and theoretical categorization of images based on cultural, historical, or symbolic meanings, whereas in electrical engineering, it denotes the technical process of assigning digital images to predefined categories using algorithms or hardware, representing fundamentally different core meanings of the term.) based on parent context"
+    },
+    {
+      "original_term": "image recognition",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "image recognition (visual culture studies)",
+          "sense_tag": "visual_culture_studies",
+          "display_tag": "visual culture studies",
+          "resource_count": 2
+        },
+        {
+          "term": "image recognition (computer vision)",
+          "sense_tag": "computer_vision",
+          "display_tag": "computer vision",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In visual culture studies, 'image recognition' refers to the human, cultural, and interpretive processes by which people perceive, identify, and assign meaning to images, whereas in computer vision, it denotes the automated, algorithmic process by which machines detect and classify visual content, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "interpretation studies",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "interpretation studies (medical interpreting)",
+          "sense_tag": "medical_interpreting",
+          "display_tag": "medical interpreting",
+          "resource_count": 4
+        },
+        {
+          "term": "interpretation studies (feminist studies)",
+          "sense_tag": "feminist_studies",
+          "display_tag": "feminist studies",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Interpretation studies' in the context of medical interpreting refers to the academic study of oral language mediation between speakers of different languages in healthcare settings, while in feminist studies it refers to the theoretical analysis of meaning-making, representation, and hermeneutics from a feminist perspective; these represent fundamentally different core meanings of 'interpretation studies' that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "language assessment",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "language assessment (second language acquisition)",
+          "sense_tag": "second_language_acquisition",
+          "display_tag": "second language acquisition",
+          "resource_count": 9
+        },
+        {
+          "term": "language assessment (speech language pathology)",
+          "sense_tag": "speech_language_pathology",
+          "display_tag": "speech language pathology",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In second language acquisition, 'language assessment' refers to evaluating proficiency and development in a non-native language for educational or placement purposes, while in speech language pathology, it refers to diagnosing and characterizing language disorders or impairments, making the core meaning of 'assessment' fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "language modeling",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "language modeling (natural language processing)",
+          "sense_tag": "natural_language_processing",
+          "display_tag": "natural language processing",
+          "resource_count": 3
+        },
+        {
+          "term": "language modeling (theoretical linguistics)",
+          "sense_tag": "theoretical_linguistics",
+          "display_tag": "theoretical linguistics",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In natural language processing, 'language modeling' refers to the computational/statistical task of predicting or generating sequences of words based on learned probabilities, whereas in theoretical linguistics, 'language modeling' refers to the formal or conceptual representation of the structure and rules of language, making the core meaning of the term fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "laser processing",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "laser processing (business administration)",
+          "sense_tag": "business_administration",
+          "display_tag": "business administration",
+          "resource_count": 4
+        },
+        {
+          "term": "laser processing (laser material processing)",
+          "sense_tag": "laser_material_processing",
+          "display_tag": "laser material processing",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In business administration, 'laser processing' is interpreted as an industrial sector, business activity, or market segment involving the use or commercialization of laser-based technologies, whereas in laser material processing, it refers specifically to the physical techniques and scientific principles of using lasers to alter material properties, so the term denotes fundamentally different core concepts in each context.) based on parent context"
+    },
+    {
+      "original_term": "locomotion",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "locomotion (animal biomechanics)",
+          "sense_tag": "animal_biomechanics",
+          "display_tag": "animal biomechanics",
+          "resource_count": 4
+        },
+        {
+          "term": "locomotion (cellular biology)",
+          "sense_tag": "cellular_biology",
+          "display_tag": "cellular biology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In animal biomechanics, 'locomotion' refers to the movement of whole organisms through their environment (e.g., walking, flying, swimming), whereas in cellular biology, 'locomotion' describes the movement of individual cells (e.g., amoeboid movement, chemotaxis), representing fundamentally different scales, mechanisms, and conceptual frameworks that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "measurement standards",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "measurement standards (educational assessment)",
+          "sense_tag": "educational_assessment",
+          "display_tag": "educational assessment",
+          "resource_count": 2
+        },
+        {
+          "term": "measurement standards (electrical engineering)",
+          "sense_tag": "electrical_engineering",
+          "display_tag": "electrical engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In educational assessment, 'measurement standards' refers to benchmarks or criteria for evaluating student performance or learning outcomes, whereas in electrical engineering, it refers to physical reference artifacts or protocols that define units and ensure accuracy in quantitative measurements of electrical quantities; these represent fundamentally different core meanings that would require separate explanations and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "migration",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "migration (business information systems)",
+          "sense_tag": "business_information_systems",
+          "display_tag": "business information systems",
+          "resource_count": 2
+        },
+        {
+          "term": "migration (educational migration)",
+          "sense_tag": "educational_migration",
+          "display_tag": "educational migration",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In business information systems, 'migration' refers to the technical process of transferring data, software, or systems from one computing environment to another, whereas in educational migration, 'migration' refers to the movement of individuals across geographic or institutional boundaries for educational purposes; these represent fundamentally different core meanings—one technical and process-oriented, the other demographic and social—requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "mobility studies",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "mobility studies (wireless networking)",
+          "sense_tag": "wireless_networking",
+          "display_tag": "wireless networking",
+          "resource_count": 2
+        },
+        {
+          "term": "mobility studies (transportation engineering)",
+          "sense_tag": "transportation_engineering",
+          "display_tag": "transportation engineering",
+          "resource_count": 2
+        },
+        {
+          "term": "mobility studies (african american studies)",
+          "sense_tag": "african_american_studies",
+          "display_tag": "african american studies",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Mobility studies' in wireless networking refers to the analysis of movement patterns and connectivity of devices or nodes within a network, whereas in transportation engineering it refers to the study of the movement of people and goods in physical space, so the term addresses fundamentally different phenomena and would require separate explanations to avoid confusion.) based on parent context"
+    },
+    {
+      "original_term": "model analysis",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "model analysis (educational assessment)",
+          "sense_tag": "educational_assessment",
+          "display_tag": "educational assessment",
+          "resource_count": 2
+        },
+        {
+          "term": "model analysis (information engineering)",
+          "sense_tag": "information_engineering",
+          "display_tag": "information engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In educational assessment, 'model analysis' refers to a specialized method for diagnosing student understanding by analyzing cognitive models underlying their responses, whereas in information engineering, 'model analysis' typically means the examination and validation of formal system or data models (such as UML diagrams or database schemas), so the term denotes fundamentally different core activities and would require separate encyclopedia entries to avoid confusion.) based on parent context"
+    },
+    {
+      "original_term": "multimedia mining",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "multimedia mining (data mining)",
+          "sense_tag": "data_mining",
+          "display_tag": "data mining",
+          "resource_count": 4
+        },
+        {
+          "term": "multimedia mining (geological engineering)",
+          "sense_tag": "geological_engineering",
+          "display_tag": "geological engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Multimedia mining' in data mining refers to the computational process of extracting patterns and knowledge from multimedia data (such as images, audio, and video), whereas in geological engineering, if used, it would refer to the physical extraction (mining) of multiple types of geological media (such as minerals, rocks, and ores), thus representing fundamentally different core meanings of the term.) based on parent context"
+    },
+    {
+      "original_term": "narrative studies",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "narrative studies (comparative literature)",
+          "sense_tag": "comparative_literature",
+          "display_tag": "comparative literature",
+          "resource_count": 9
+        },
+        {
+          "term": "narrative studies (narrative psychology)",
+          "sense_tag": "narrative_psychology",
+          "display_tag": "narrative psychology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In comparative literature, 'narrative studies' refers to the analysis of narrative structures, forms, and functions within literary texts and traditions, whereas in narrative psychology, it denotes the study of how individuals construct meaning and identity through personal narratives, making the core meaning of 'narrative studies' fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "natural language generation",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "natural language generation (speech language pathology)",
+          "sense_tag": "speech_language_pathology",
+          "display_tag": "speech language pathology",
+          "resource_count": 6
+        },
+        {
+          "term": "natural language generation (natural language processing)",
+          "sense_tag": "natural_language_processing",
+          "display_tag": "natural language processing",
+          "resource_count": 4
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In speech language pathology, 'natural language generation' refers to the human cognitive and physiological process by which individuals produce spoken or written language, whereas in natural language processing, it refers to the computational task of generating human-like language from machines, making the core meaning of the term fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "navigation",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "navigation (marine navigation)",
+          "sense_tag": "marine_navigation",
+          "display_tag": "marine navigation",
+          "resource_count": 5
+        },
+        {
+          "term": "navigation (cognitive neuroscience)",
+          "sense_tag": "cognitive_neuroscience",
+          "display_tag": "cognitive neuroscience",
+          "resource_count": 2
+        },
+        {
+          "term": "navigation (computer networking)",
+          "sense_tag": "computer_networking",
+          "display_tag": "computer networking",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In marine navigation, 'navigation' refers to the practical process of determining and controlling the movement of vessels across bodies of water using external references and instruments, whereas in cognitive neuroscience, 'navigation' refers to the internal mental processes and neural mechanisms by which organisms perceive, represent, and move through space, making the core meanings fundamentally different and requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "network architecture",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "network architecture (supply chain management)",
+          "sense_tag": "supply_chain_management",
+          "display_tag": "supply chain management",
+          "resource_count": 4
+        },
+        {
+          "term": "network architecture (ocean engineering)",
+          "sense_tag": "ocean_engineering",
+          "display_tag": "ocean engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In supply chain management, 'network architecture' refers to the organizational and logistical structure of interconnected entities (suppliers, manufacturers, distributors) forming a supply network, whereas in ocean engineering, it refers to the physical and technical design of interconnected marine systems (such as sensor networks or communication infrastructures), thus representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "network theory",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "network theory (organizational economics)",
+          "sense_tag": "organizational_economics",
+          "display_tag": "organizational economics",
+          "resource_count": 5
+        },
+        {
+          "term": "network theory (electrical engineering)",
+          "sense_tag": "electrical_engineering",
+          "display_tag": "electrical engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In organizational economics, 'network theory' refers to the study of social or economic relationships and structures among agents or organizations, focusing on patterns of interaction and influence, whereas in electrical engineering, 'network theory' fundamentally means the mathematical analysis of electrical circuits and signal flow in physical networks, so the term describes entirely different core phenomena and would require separate encyclopedia entries.) based on parent context"
+    },
+    {
+      "original_term": "neural networks",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "neural networks (machine learning)",
+          "sense_tag": "machine_learning",
+          "display_tag": "machine learning",
+          "resource_count": 17
+        },
+        {
+          "term": "neural networks (computational neuroscience)",
+          "sense_tag": "computational_neuroscience",
+          "display_tag": "computational neuroscience",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In machine learning, 'neural networks' refers to artificial mathematical models inspired by the brain but implemented as algorithms for data processing and pattern recognition, whereas in computational neuroscience, 'neural networks' denotes actual or simulated biological networks of neurons studied to understand brain function, making the core meaning of the term fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "neurodiversity",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "neurodiversity (disability studies)",
+          "sense_tag": "disability_studies",
+          "display_tag": "disability studies",
+          "resource_count": 7
+        },
+        {
+          "term": "neurodiversity (clinical neuropsychology)",
+          "sense_tag": "clinical_neuropsychology",
+          "display_tag": "clinical neuropsychology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In disability studies, 'neurodiversity' is interpreted as a sociopolitical and cultural concept emphasizing the value and rights of neurological differences as natural human variation, whereas in clinical neuropsychology, it is typically understood in terms of cognitive and neurological differences as diagnostic categories or deviations from a clinical norm, thus representing fundamentally distinct core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "nonlinear control",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "nonlinear control (business management)",
+          "sense_tag": "business_management",
+          "display_tag": "business management",
+          "resource_count": 2
+        },
+        {
+          "term": "nonlinear control (control engineering)",
+          "sense_tag": "control_engineering",
+          "display_tag": "control engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In control engineering, 'nonlinear control' refers specifically to the mathematical analysis and design of feedback systems governed by nonlinear differential equations, whereas in business management, if used at all, 'nonlinear control' would metaphorically describe strategies for managing complex, unpredictable organizational dynamics, making the core meanings fundamentally different and requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "philosophy",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "philosophy (philosophy of mind)",
+          "sense_tag": "philosophy_of_mind",
+          "display_tag": "philosophy of mind",
+          "resource_count": 19
+        },
+        {
+          "term": "philosophy (french literary studies)",
+          "sense_tag": "french_literary_studies",
+          "display_tag": "french literary studies",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Philosophy' in 'philosophy of mind' refers to the academic discipline concerned with fundamental questions about mind and consciousness, whereas in 'french literary studies' the term 'philosophy' (if used at all) would refer to a general worldview or theoretical approach, thus representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "process modeling",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "process modeling (business process management)",
+          "sense_tag": "business_process_management",
+          "display_tag": "business process management",
+          "resource_count": 2
+        },
+        {
+          "term": "process modeling (chemical engineering)",
+          "sense_tag": "chemical_engineering",
+          "display_tag": "chemical engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In business process management, 'process modeling' refers to the conceptual representation and analysis of organizational workflows and activities (often using flowcharts or BPMN), whereas in chemical engineering, it refers to the mathematical and physical modeling of chemical reactions and physical processes within reactors or plants; these are fundamentally different interpretations—one is about abstract organizational procedures, the other about physical/chemical transformations—requiring separate explanations and leading to significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "process monitoring",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "process monitoring (business process management)",
+          "sense_tag": "business_process_management",
+          "display_tag": "business process management",
+          "resource_count": 3
+        },
+        {
+          "term": "process monitoring (optical engineering)",
+          "sense_tag": "optical_engineering",
+          "display_tag": "optical engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In business process management, 'process monitoring' refers to the real-time tracking and analysis of organizational workflows and business activities to ensure efficiency and compliance, whereas in optical engineering, it refers to the observation and measurement of physical or chemical processes (such as manufacturing or material changes) using optical instruments, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "product design",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "product design (industrial design)",
+          "sense_tag": "industrial_design",
+          "display_tag": "industrial design",
+          "resource_count": 7
+        },
+        {
+          "term": "product design (motion graphics)",
+          "sense_tag": "motion_graphics",
+          "display_tag": "motion graphics",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In industrial design, 'product design' refers to the creation and development of physical, tangible products for manufacture and use, whereas in motion graphics, 'product design' (if used at all) would refer to the conceptual and visual development of digital or animated products, representing fundamentally different interpretations of what constitutes a 'product' and thus requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "prosody",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "prosody (film studies)",
+          "sense_tag": "film_studies",
+          "display_tag": "film studies",
+          "resource_count": 6
+        },
+        {
+          "term": "prosody (linguistics)",
+          "sense_tag": "linguistics",
+          "display_tag": "linguistics",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In linguistics, 'prosody' refers to the rhythm, stress, and intonation patterns of spoken language, while in film studies, 'prosody' (when used) typically refers to the rhythmic and tonal qualities of film editing, sound, or visual pacing, making the core meaning of 'prosody' fundamentally different in each field and requiring separate explanations to avoid confusion.) based on parent context"
+    },
+    {
+      "original_term": "reinforcement learning",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "reinforcement learning (educational psychology)",
+          "sense_tag": "educational_psychology",
+          "display_tag": "educational psychology",
+          "resource_count": 6
+        },
+        {
+          "term": "reinforcement learning (computer engineering)",
+          "sense_tag": "computer_engineering",
+          "display_tag": "computer engineering",
+          "resource_count": 6
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In educational psychology, 'reinforcement learning' refers to a behavioral theory describing how humans and animals learn through rewards and punishments, whereas in computer engineering, it denotes a class of machine learning algorithms where artificial agents learn to make decisions via reward signals; these are fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "reproductive justice",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "reproductive justice (reproductive medicine)",
+          "sense_tag": "reproductive_medicine",
+          "display_tag": "reproductive medicine",
+          "resource_count": 2
+        },
+        {
+          "term": "reproductive justice (black feminist studies)",
+          "sense_tag": "black_feminist_studies",
+          "display_tag": "black feminist studies",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In reproductive medicine, 'reproductive justice' is often interpreted as equitable access to reproductive healthcare and technologies, focusing on clinical and policy aspects, whereas in black feminist studies, 'reproductive justice' is a broader sociopolitical framework rooted in the intersection of race, gender, and systemic oppression, emphasizing human rights, bodily autonomy, and social justice; these represent fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "resilience",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "resilience (structural engineering)",
+          "sense_tag": "structural_engineering",
+          "display_tag": "structural engineering",
+          "resource_count": 2
+        },
+        {
+          "term": "resilience (community psychology)",
+          "sense_tag": "community_psychology",
+          "display_tag": "community psychology",
+          "resource_count": 9
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In structural engineering, 'resilience' refers to a material or structure's physical ability to absorb energy and recover its original form after deformation (a mechanical property), whereas in community psychology, 'resilience' describes the psychological and social capacity of individuals or groups to adapt, recover, and thrive after adversity, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "resource management",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "resource management (sustainable manufacturing)",
+          "sense_tag": "sustainable_manufacturing",
+          "display_tag": "sustainable manufacturing",
+          "resource_count": 13
+        },
+        {
+          "term": "resource management (queueing theory)",
+          "sense_tag": "queueing_theory",
+          "display_tag": "queueing theory",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In sustainable manufacturing, 'resource management' refers to the allocation, conservation, and optimization of physical materials, energy, and environmental resources to ensure long-term sustainability, whereas in queueing theory, 'resource management' refers to the mathematical allocation and scheduling of abstract service resources (such as servers or processing units) to optimize system performance, representing fundamentally different core meanings of the term.) based on parent context"
+    },
+    {
+      "original_term": "respiratory distress syndrome",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "respiratory distress syndrome (neonatal medicine)",
+          "sense_tag": "neonatal_medicine",
+          "display_tag": "neonatal medicine",
+          "resource_count": 3
+        },
+        {
+          "term": "respiratory distress syndrome (pulmonary critical care)",
+          "sense_tag": "pulmonary_critical_care",
+          "display_tag": "pulmonary critical care",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In neonatal medicine, 'respiratory distress syndrome' refers specifically to a disease of premature infants caused by surfactant deficiency (neonatal RDS), whereas in pulmonary critical care, it typically refers to acute respiratory distress syndrome (ARDS) in children or adults, which is a distinct clinical entity with different etiology, pathophysiology, and treatment, thus requiring separate encyclopedia entries and representing genuinely distinct core meanings.) based on parent context"
+    },
+    {
+      "original_term": "scheduling",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "scheduling (project management)",
+          "sense_tag": "project_management",
+          "display_tag": "project management",
+          "resource_count": 2
+        },
+        {
+          "term": "scheduling (operating systems)",
+          "sense_tag": "operating_systems",
+          "display_tag": "operating systems",
+          "resource_count": 5
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In project management, 'scheduling' refers to the allocation and sequencing of tasks and resources over time to achieve project goals, while in operating systems, 'scheduling' refers to the algorithmic assignment of computational resources (such as CPU time) to processes or threads, representing fundamentally different core meanings that would require separate explanations and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "sensing",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "sensing (management information systems)",
+          "sense_tag": "management_information_systems",
+          "display_tag": "management information systems",
+          "resource_count": 4
+        },
+        {
+          "term": "sensing (sensor engineering)",
+          "sense_tag": "sensor_engineering",
+          "display_tag": "sensor engineering",
+          "resource_count": 4
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In management information systems, 'sensing' refers to the process of gathering and interpreting business or organizational data (often metaphorically, as in 'environmental sensing'), whereas in sensor engineering, 'sensing' refers to the physical detection and measurement of environmental parameters using hardware devices, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "sensory science",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "sensory science (early childhood education)",
+          "sense_tag": "early_childhood_education",
+          "display_tag": "early childhood education",
+          "resource_count": 4
+        },
+        {
+          "term": "sensory science (food sensory science)",
+          "sense_tag": "food_sensory_science",
+          "display_tag": "food sensory science",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In early childhood education, 'sensory science' refers to the study and facilitation of children's sensory development and learning through sensory experiences, whereas in food sensory science, it denotes the scientific evaluation and measurement of human sensory responses to food products; these represent fundamentally different core meanings of the term that would require separate explanations and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "sensory studies",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "sensory studies (occupational therapy)",
+          "sense_tag": "occupational_therapy",
+          "display_tag": "occupational therapy",
+          "resource_count": 2
+        },
+        {
+          "term": "sensory studies (sensory anthropology)",
+          "sense_tag": "sensory_anthropology",
+          "display_tag": "sensory anthropology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In occupational therapy, 'sensory studies' refers to the clinical and therapeutic investigation of sensory processing and integration in individuals, focusing on functional outcomes and interventions, whereas in sensory anthropology, 'sensory studies' denotes the cultural, social, and ethnographic exploration of how senses are experienced, interpreted, and valued in different societies; these represent fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "sexual development",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "sexual development (clinical endocrinology)",
+          "sense_tag": "clinical_endocrinology",
+          "display_tag": "clinical endocrinology",
+          "resource_count": 4
+        },
+        {
+          "term": "sexual development (developmental psychology)",
+          "sense_tag": "developmental_psychology",
+          "display_tag": "developmental psychology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In clinical endocrinology, 'sexual development' refers to the biological and hormonal processes governing the physical maturation of sexual characteristics, whereas in developmental psychology, it refers to the psychological and social maturation of sexual identity, attitudes, and behaviors, making the core meanings fundamentally different and requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "sexual function",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "sexual function (sexual and reproductive health)",
+          "sense_tag": "sexual_and_reproductive_health",
+          "display_tag": "sexual and reproductive health",
+          "resource_count": 3
+        },
+        {
+          "term": "sexual function (evolutionary biology)",
+          "sense_tag": "evolutionary_biology",
+          "display_tag": "evolutionary biology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In sexual and reproductive health, 'sexual function' refers to the physiological and psychological processes enabling sexual activity and satisfaction in individuals, whereas in evolutionary biology, 'sexual function' denotes the adaptive role or evolutionary purpose of sexual traits or behaviors in promoting reproductive success, representing fundamentally different core meanings that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "solar physics",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "solar physics (heliophysics)",
+          "sense_tag": "heliophysics",
+          "display_tag": "heliophysics",
+          "resource_count": 5
+        },
+        {
+          "term": "solar physics (solar energy conversion)",
+          "sense_tag": "solar_energy_conversion",
+          "display_tag": "solar energy conversion",
+          "resource_count": 4
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Solar physics' in the context of heliophysics refers to the scientific study of the Sun's physical properties and processes as an astronomical object, whereas in the context of solar energy conversion, it refers to the applied study of the Sun's energy for technological use, representing fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "storytelling",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "storytelling (game design)",
+          "sense_tag": "game_design",
+          "display_tag": "game design",
+          "resource_count": 6
+        },
+        {
+          "term": "storytelling (indigenous studies)",
+          "sense_tag": "indigenous_studies",
+          "display_tag": "indigenous studies",
+          "resource_count": 9
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In game design, 'storytelling' refers to the crafting and structuring of narrative experiences within interactive digital or analog games, emphasizing player agency and mechanics, whereas in indigenous studies, 'storytelling' refers to the oral transmission of cultural knowledge, traditions, and values, often with spiritual or communal significance—these are fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "systemic risk",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "systemic risk (financial economics)",
+          "sense_tag": "financial_economics",
+          "display_tag": "financial economics",
+          "resource_count": 5
+        },
+        {
+          "term": "systemic risk (clinical epidemiology)",
+          "sense_tag": "clinical_epidemiology",
+          "display_tag": "clinical epidemiology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In financial economics, 'systemic risk' refers to the potential for the failure of one or more financial institutions to trigger instability or collapse of the entire financial system, whereas in clinical epidemiology, 'systemic risk' refers to risk factors or exposures that affect the entire body or organism rather than a localized area, so the term describes fundamentally different types of systems and risks in each field.) based on parent context"
+    },
+    {
+      "original_term": "topology",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "topology (geometric modeling)",
+          "sense_tag": "geometric_modeling",
+          "display_tag": "geometric modeling",
+          "resource_count": 2
+        },
+        {
+          "term": "topology (electrical engineering)",
+          "sense_tag": "electrical_engineering",
+          "display_tag": "electrical engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In geometric modeling, 'topology' refers to the abstract structure of a geometric object (such as connectivity and adjacency of surfaces and edges), while in electrical engineering, 'topology' refers to the arrangement and interconnection of circuit elements, so the term denotes fundamentally different core concepts in each field that would require separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "tracking",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "tracking (computer vision)",
+          "sense_tag": "computer_vision",
+          "display_tag": "computer vision",
+          "resource_count": 3
+        },
+        {
+          "term": "tracking (public health)",
+          "sense_tag": "public_health",
+          "display_tag": "public health",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In computer vision, 'tracking' refers to the computational process of continuously locating and following the position or movement of objects within visual data, whereas in public health, 'tracking' refers to the systematic collection and monitoring of data about disease cases or health indicators over time and populations; these represent fundamentally different core meanings of 'tracking'—one is about real-time spatial/temporal localization of entities in imagery, the other about longitudinal data surveillance—requiring separate explanations and leading to significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "trauma",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "trauma (addiction psychology)",
+          "sense_tag": "addiction_psychology",
+          "display_tag": "addiction psychology",
+          "resource_count": 6
+        },
+        {
+          "term": "trauma (critical care medicine)",
+          "sense_tag": "critical_care_medicine",
+          "display_tag": "critical care medicine",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In addiction psychology, 'trauma' refers to psychological or emotional injury resulting from distressing experiences, whereas in critical care medicine, 'trauma' denotes physical bodily injury caused by external force, so the term embodies fundamentally different core meanings in each context.) based on parent context"
+    },
+    {
+      "original_term": "uncertainty",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "uncertainty (quantum physics)",
+          "sense_tag": "quantum_physics",
+          "display_tag": "quantum physics",
+          "resource_count": 3
+        },
+        {
+          "term": "uncertainty (knowledge representation)",
+          "sense_tag": "knowledge_representation",
+          "display_tag": "knowledge representation",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In quantum physics, 'uncertainty' refers to an inherent, irreducible property of physical systems (e.g., Heisenberg uncertainty principle), while in knowledge representation, 'uncertainty' denotes a lack of knowledge or incomplete information, making the core meanings fundamentally different and requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "vehicle dynamics",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "vehicle dynamics (mechanical engineering)",
+          "sense_tag": "mechanical_engineering",
+          "display_tag": "mechanical engineering",
+          "resource_count": 2
+        },
+        {
+          "term": "vehicle dynamics (space vehicle dynamics)",
+          "sense_tag": "space_vehicle_dynamics",
+          "display_tag": "space vehicle dynamics",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Vehicle dynamics' in mechanical engineering refers to the study of forces and motions of terrestrial vehicles (such as cars, trucks, and trains) interacting with surfaces, while in space vehicle dynamics it refers to the motion and control of spacecraft in the absence of atmospheric or surface interactions, making the core physical principles, constraints, and interpretations of 'vehicle dynamics' fundamentally different in each context.) based on parent context"
+    },
+    {
+      "original_term": "visual perception",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "visual perception (computer vision)",
+          "sense_tag": "computer_vision",
+          "display_tag": "computer vision",
+          "resource_count": 2
+        },
+        {
+          "term": "visual perception (experimental psychology)",
+          "sense_tag": "experimental_psychology",
+          "display_tag": "experimental psychology",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In computer vision, 'visual perception' refers to the computational processes and algorithms by which machines interpret and analyze visual data, whereas in experimental psychology, it refers to the cognitive and neural mechanisms by which biological organisms (primarily humans) perceive and make sense of visual stimuli; these are fundamentally different interpretations that would require separate encyclopedia entries and could cause significant misunderstanding if conflated.) based on parent context"
+    },
+    {
+      "original_term": "visualization",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "visualization (data visualization)",
+          "sense_tag": "data_visualization",
+          "display_tag": "data visualization",
+          "resource_count": 13
+        },
+        {
+          "term": "visualization (cognitive psychology)",
+          "sense_tag": "cognitive_psychology",
+          "display_tag": "cognitive psychology",
+          "resource_count": 3
+        },
+        {
+          "term": "visualization (biomedical imaging)",
+          "sense_tag": "biomedical_imaging",
+          "display_tag": "biomedical imaging",
+          "resource_count": 3
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In 'data visualization', 'visualization' refers to the external creation and presentation of graphical representations of data to facilitate understanding, whereas in 'cognitive psychology', 'visualization' refers to the internal mental process of forming visual images in the mind, making the core meanings fundamentally different and requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "web mining",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "web mining (data mining)",
+          "sense_tag": "data_mining",
+          "display_tag": "data mining",
+          "resource_count": 4
+        },
+        {
+          "term": "web mining (geotechnical engineering)",
+          "sense_tag": "geotechnical_engineering",
+          "display_tag": "geotechnical engineering",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct ('Web mining' in data mining refers to the automated extraction of information and patterns from the World Wide Web, whereas in geotechnical engineering, 'web mining' would refer to the excavation or extraction of material from the web-like structures in underground mines, representing fundamentally different core meanings that would require separate explanations and could cause significant misunderstanding if confused.) based on parent context"
+    },
+    {
+      "original_term": "well-being",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "well-being (positive psychology)",
+          "sense_tag": "positive_psychology",
+          "display_tag": "positive psychology",
+          "resource_count": 2
+        },
+        {
+          "term": "well-being (indigenous health)",
+          "sense_tag": "indigenous_health",
+          "display_tag": "indigenous health",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In positive psychology, 'well-being' is typically conceptualized as an individual's subjective experience of happiness, life satisfaction, and psychological functioning, whereas in indigenous health, 'well-being' encompasses a holistic, community-oriented, and culturally embedded understanding that integrates physical, spiritual, social, and environmental harmony, making the core meanings fundamentally distinct and requiring separate explanations.) based on parent context"
+    },
+    {
+      "original_term": "word segmentation",
+      "level": 3,
+      "new_terms": [
+        {
+          "term": "word segmentation (natural language processing)",
+          "sense_tag": "natural_language_processing",
+          "display_tag": "natural language processing",
+          "resource_count": 3
+        },
+        {
+          "term": "word segmentation (phonological awareness)",
+          "sense_tag": "phonological_awareness",
+          "display_tag": "phonological awareness",
+          "resource_count": 2
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In natural language processing, 'word segmentation' refers to the computational process of dividing written or spoken language input into discrete word units (often in languages without explicit word boundaries), whereas in phonological awareness, it refers to the cognitive skill of recognizing and isolating individual words within a stream of spoken language, making the core meaning and operationalization of 'word segmentation' fundamentally different in each context.) based on parent context"
+    }
+  ]
+}

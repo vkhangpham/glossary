@@ -10,6 +10,10 @@ import logging
 import datetime
 import json
 from typing import Optional, Dict, List, Any, Tuple, Set
+import warnings
+
+# Import base classes for the unified API
+from .base import EvidenceBuilder, merge_term_contexts, get_detector_version, TermContext
 
 # Import all necessary detectors
 from .parent_context import ParentContextDetector
@@ -115,10 +119,19 @@ class HybridAmbiguityDetector:
         """
         Run all available detectors and combine their results with refined confidence scoring.
         
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to use detect() which returns term contexts conforming
+        to the unified schema.
+        
         Returns:
             Dictionary mapping from term strings to metadata dictionaries with 
             detection info and confidence scores.
         """
+        warnings.warn(
+            "HybridAmbiguityDetector.detect_ambiguous_terms() is deprecated; use detect() instead",
+            DeprecationWarning, 
+            stacklevel=2
+        )
         # Check if we have already run all detectors (without level constraint)
         run_detectors = True
         if self.level is not None and self._all_level_performed:
@@ -263,6 +276,135 @@ class HybridAmbiguityDetector:
         self.results = results # Store final results
         return self.results
 
+    def detect(self) -> Dict[str, TermContext]:
+        """
+        Run all available detectors using the new unified API and merge their evidence.
+        
+        This is the recommended API that returns structured term contexts conforming
+        to the unified schema for the splitter.
+        
+        Returns:
+            Dictionary mapping term strings to TermContext objects containing all evidence.
+        """
+        logger.info("[HybridAmbiguityDetector] Running detectors with unified API...")
+        
+        # List to collect all evidence from all detectors
+        all_evidence: List[EvidenceBuilder] = []
+        
+        # 1. Run ParentContextDetector
+        logger.info("[HybridAmbiguityDetector] Running ParentContextDetector...")
+        parent_context_evidence = self.parent_context_detector.detect()
+        all_evidence.extend(parent_context_evidence)
+        logger.info(f"[HybridAmbiguityDetector] ParentContextDetector found {len(parent_context_evidence)} potential terms")
+        
+        # 2. Run ResourceClusterDetector
+        logger.info("[HybridAmbiguityDetector] Running ResourceClusterDetector...")
+        dbscan_evidence = self.dbscan_detector.detect()
+        all_evidence.extend(dbscan_evidence)
+        logger.info(f"[HybridAmbiguityDetector] ResourceClusterDetector found {len(dbscan_evidence)} potential terms")
+        
+        # 3. Run RadialPolysemyDetector (if enabled)
+        if self.radial_detector:
+            logger.info("[HybridAmbiguityDetector] Running RadialPolysemyDetector...")
+            radial_evidence = self.radial_detector.detect()
+            all_evidence.extend(radial_evidence)
+            logger.info(f"[HybridAmbiguityDetector] RadialPolysemyDetector found {len(radial_evidence)} potential terms")
+        
+        # Merge all evidence to create term contexts
+        logger.info(f"[HybridAmbiguityDetector] Merging {len(all_evidence)} evidence blocks...")
+        term_contexts = merge_term_contexts(*all_evidence)
+        logger.info(f"[HybridAmbiguityDetector] Created {len(term_contexts)} unified term contexts")
+        
+        # Apply level filtering if needed
+        if self.level is not None:
+            filtered_contexts = {
+                term: context for term, context in term_contexts.items()
+                if context.level == self.level
+            }
+            logger.info(f"[HybridAmbiguityDetector] Filtered to {len(filtered_contexts)} terms at level {self.level}")
+            return filtered_contexts
+        
+        return term_contexts
+        
+    def save_unified_context(self, term_contexts: Dict[str, TermContext], filename: Optional[str] = None) -> str:
+        """
+        Save the unified context to a JSON file.
+        
+        Args:
+            term_contexts: Dictionary mapping terms to their TermContext objects
+            filename: Optional custom filename
+            
+        Returns:
+            Path to the saved file, or empty string if error
+        """
+        if not filename:
+            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            level_str = f"_level{self.level}" if self.level is not None else ""
+            filename = f"unified_context{level_str}_{timestamp}.json"
+            
+        filepath = os.path.join(self.output_dir, filename)
+        
+        try:
+            # Ensure the directory exists
+            os.makedirs(self.output_dir, exist_ok=True)
+            
+            # Convert term_contexts to dict for JSON serialization
+            context_dict = {term: context.model_dump() for term, context in term_contexts.items()}
+            
+            # Add metadata
+            output_data = {
+                "schema_version": "v1",
+                "timestamp": datetime.datetime.now().isoformat(),
+                "detector_version": get_detector_version(),
+                "parameters": {
+                    "hierarchy_file": os.path.basename(self.hierarchy_file_path),
+                    "model_name": self.model_name,
+                    "level": self.level,
+                    "use_radial_detector": self.use_radial_detector
+                },
+                "contexts": context_dict
+            }
+            
+            # Convert any remaining numpy types for JSON serialization
+            output_data_serializable = convert_numpy_types(output_data)
+            
+            with open(filepath, 'w') as f:
+                json.dump(output_data_serializable, f, indent=2)
+                
+            logger.info(f"[HybridAmbiguityDetector] Saved unified context to {filepath}")
+            return filepath
+        except Exception as e:
+            logger.error(f"[HybridAmbiguityDetector] Error saving unified context to {filepath}: {e}")
+            return ""
+
+    def detect_and_save(self, min_confidence: float = 0.3) -> Tuple[Dict[str, TermContext], str]:
+        """
+        Run detection and save the unified context to a file.
+        
+        Args:
+            min_confidence: Minimum confidence threshold (0.0-1.0) for including terms
+                           in the unified context file. Default is 0.3.
+        
+        Returns:
+            Tuple of (term_contexts, output_filepath)
+        """
+        # Run detection to get all term contexts
+        term_contexts = self.detect()
+        
+        # Filter out terms with confidence below the threshold
+        filtered_contexts = {
+            term: context for term, context in term_contexts.items()
+            if context.overall_confidence >= min_confidence
+        }
+        
+        # Log filtering results
+        logger.info(f"[HybridAmbiguityDetector] Filtered {len(term_contexts)} terms to {len(filtered_contexts)} "
+                   f"terms with confidence >= {min_confidence}")
+        
+        # Save the filtered contexts
+        output_filepath = self.save_unified_context(filtered_contexts)
+        return filtered_contexts, output_filepath
+
     def _calculate_confidence(self, term: str, detected_by: Dict[str, bool],
                               dbscan_metrics: Dict[str, Any],
                               parent_details: Dict[str, Any],
@@ -368,12 +510,21 @@ class HybridAmbiguityDetector:
         """
         Save the combined detection results and confidence scores to a JSON file.
         
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to use detect() and save_unified_context() instead.
+        
         Args:
             filename: Optional custom filename.
             
         Returns:
             Path to the saved file, or empty string if error.
         """
+        warnings.warn(
+            "HybridAmbiguityDetector.save_results() is deprecated; use detect() and save_unified_context() instead",
+            DeprecationWarning, 
+            stacklevel=2
+        )
+        
         if not filename:
             level_str = f"_level{self.level}" if self.level is not None else "_all_levels"
             filename = f"hybrid_detection_results{level_str}.json" # Consistent naming

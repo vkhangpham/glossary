@@ -569,3 +569,108 @@ Each proposal includes:
 - Number of clusters found
 - Proposed senses with their tags and sample resources
 - Reasoning for accepting or rejecting the split
+
+## New Unified Context API Workflow
+
+The refactored sense disambiguation package introduces a standardized approach for exchange between detectors and the splitter using a unified context schema. This simplifies the workflow and improves maintainability.
+
+### Unified Context Schema
+
+The new approach uses a standardized JSON schema to represent ambiguity evidence from different detectors:
+
+```jsonc
+{
+  "<term1>": {                      // Term string as key
+    "canonical_name": "string",     // Canonical form of the term
+    "level": 2,                     // Hierarchy level (0-3)
+    "overall_confidence": 0.83,     // Aggregated confidence score [0-1]
+    "evidence": [                   // List of evidence blocks from various detectors
+      {
+        "source": "resource_cluster",       // Detector source
+        "detector_version": "2025.05.22",   // Version string
+        "confidence": 0.72,                 // Per-detector confidence [0-1]
+        "metrics": {                        // Numeric metrics (optional)
+          "separation_score": 0.42,
+          "silhouette_score": 0.31
+        },
+        "payload": {                        // Detector-specific data
+          "cluster_labels": [0, 1, 0, -1],  // Resource clustering example
+          "eps": 0.4                        // Additional parameters
+        }
+      }
+    ]
+  }
+}
+```
+
+### Updated CLI Workflow
+
+The CLI has been updated to support the new unified context workflow:
+
+#### 1. Ambiguity Detection (Unified Context Generation)
+
+```bash
+# Run hybrid detector which now produces a unified context file
+python -m sense_disambiguation.cli detect --clustering-preset standard
+
+# Process only a specific level
+python -m sense_disambiguation.cli detect --level 2
+```
+
+This will produce a `unified_context_YYYYMMDD_HHMMSS.json` file in the output directory.
+
+#### 2. Sense Splitting (Using Unified Context)
+
+```bash
+# Using the splitter with the unified context file
+python -m sense_disambiguation.cli split --context-file sense_disambiguation/data/ambiguity_detection_results/20240815_123456/unified_context_20240815_123456.json
+```
+
+### Running Programmatically with New API
+
+#### Using the HybridAmbiguityDetector with Unified Context
+
+```python
+from sense_disambiguation.detector.hybrid import HybridAmbiguityDetector
+
+# Initialize hybrid detector
+detector = HybridAmbiguityDetector(
+    hierarchy_file_path="data/final/hierarchy.json",
+    final_term_files_pattern="data/final/lv*/lv*_final.txt",
+    model_name='all-MiniLM-L6-v2',
+    min_resources=5
+)
+
+# Generate unified context file using the new API
+term_contexts, unified_context_path = detector.detect_and_save()
+
+print(f"Generated unified context with {len(term_contexts)} terms")
+print(f"Saved to: {unified_context_path}")
+```
+
+#### Using the SenseSplitter with Unified Context
+
+```python
+from sense_disambiguation.splitter import SenseSplitter
+
+# Initialize splitter with the unified context file
+splitter = SenseSplitter(
+    hierarchy_file_path="data/final/hierarchy.json",
+    context_file="sense_disambiguation/data/ambiguity_detection_results/unified_context_20240815_123456.json",
+    level=2
+)
+
+# Generate and save split proposals
+accepted, rejected, output_path = splitter.run(save_output=True)
+
+print(f"Generated {len(accepted)} accepted and {len(rejected)} rejected proposals")
+print(f"Results saved to: {output_path}")
+```
+
+### Benefits of the New Unified Context API
+
+- **Standardized Data Exchange**: Establishes a consistent interface between detectors and the splitter
+- **Improved Maintainability**: Decouples components and reduces interdependencies
+- **Comprehensive Evidence Collection**: Aggregates signals from multiple detection strategies
+- **Better Confidence Scoring**: Combines evidence with a principled approach to confidence calculation
+- **Simplified Workflow**: Reduces the number of intermediate files needed for the pipeline

@@ -242,9 +242,15 @@ def setup_splitter_parser(subparsers) -> None:
     
     # Add splitter-specific arguments - simplified
     splitter_parser.add_argument(
-        "--input-file",
+        "--context-file",
         required=True,
-        help="Results file from detector (required)"
+        help="Unified context file from detector (required)"
+    )
+    
+    # For backward compatibility
+    splitter_parser.add_argument(
+        "--input-file",
+        help="DEPRECATED: Results file from detector (use --context-file instead)"
     )
     
     # Basic options
@@ -260,7 +266,7 @@ def setup_splitter_parser(subparsers) -> None:
     advanced_group = splitter_parser.add_argument_group("Advanced options")
     advanced_group.add_argument(
         "--llm-provider",
-        choices=["openai", "anthropic", "local"],
+        choices=["openai", "anthropic", "gemini"],
         default="openai",
         help="LLM provider to use (default: openai)"
     )
@@ -272,10 +278,6 @@ def setup_splitter_parser(subparsers) -> None:
         "--model",
         default="all-MiniLM-L6-v2",
         help="Embedding model to use (default: all-MiniLM-L6-v2)"
-    )
-    advanced_group.add_argument(
-        "--cluster-details-file",
-        help="Path to comprehensive cluster details (optional, enhances analysis)"
     )
     advanced_group.add_argument(
         "--output-dir",
@@ -489,11 +491,15 @@ def run_detector(args: argparse.Namespace) -> None:
         else:
             logger.info("Radial polysemy confidence boosting disabled")
             
-        # Run detection on all levels to populate the cache
-        logger.info("Running initial detection on all terms...")
+        # Use the new unified context API
+        logger.info("Running detection with unified context API...")
+        term_contexts, unified_context_path = detector.detect_and_save(min_confidence=args.min_confidence)
+        
+        # For backward compatibility, also run the legacy method
+        logger.info("Running detection with legacy API for backward compatibility...")
         all_results = detector.detect_ambiguous_terms()
         
-        # Save comprehensive cluster details if requested
+        # Save comprehensive cluster details if requested (for backward compatibility)
         if args.save_details:
             # Save DBSCAN cluster details
             if hasattr(detector, 'dbscan_detector'):
@@ -509,11 +515,12 @@ def run_detector(args: argparse.Namespace) -> None:
         
         all_terms = list(all_results.keys())
         logger.info(f"Found {len(all_terms)} potentially ambiguous terms across all levels")
+        logger.info(f"Saved unified context to {unified_context_path}")
         
-        # Apply confidence threshold and process each level
+        # Apply confidence threshold and process each level for backward compatibility
         logger.info(f"Filtering results for hierarchy levels: {list(levels_to_process)}")
         for level in levels_to_process:
-            logger.info(f"Processing level {level}")
+            logger.info(f"Processing level {level} with legacy API")
             
             # Set the level for filtering
             detector.level = level
@@ -550,6 +557,9 @@ def run_detector(args: argparse.Namespace) -> None:
             logger.info(f"Level {level} results: {len(high_conf)} high confidence, {len(med_conf)} medium confidence")
             logger.info(f"Found {len(min_conf_results)} terms meeting min confidence threshold {args.min_confidence}")
             logger.info(f"Saved results to {output_path} and {detail_path or '[JSON Save Failed]'}")
+            
+        # Add the unified context file to the list of output files
+        all_level_files.append(unified_context_path)
     
     # RADIAL-POLYSEMY DETECTOR
     elif args.detector == "radial-polysemy":
@@ -614,21 +624,30 @@ def run_splitter(args: argparse.Namespace) -> None:
         logging.getLogger().setLevel(PROGRESS)
         logger.progress("Running with standard logging level - use --verbose for more details")
     
-    # Check if the input file exists
-    if not os.path.exists(args.input_file):
-        logger.error(f"Input file not found: {args.input_file}")
+    # Handle context file and fallback to input file for backward compatibility
+    context_file = args.context_file if hasattr(args, 'context_file') else None
+    input_file = args.input_file if hasattr(args, 'input_file') else None
+    
+    # If both are provided, prefer context_file
+    if context_file and input_file:
+        logger.warning("Both --context-file and --input-file provided. Using --context-file.")
+        
+    file_to_use = context_file or input_file
+    
+    # Check if the file exists
+    if not file_to_use:
+        logger.error("No context file or input file provided.")
         sys.exit(1)
         
-    # Check if cluster details file exists, if provided
-    if args.cluster_details_file and not os.path.exists(args.cluster_details_file):
-        logger.error(f"Cluster details file not found: {args.cluster_details_file}")
+    if not os.path.exists(file_to_use):
+        logger.error(f"File not found: {file_to_use}")
         sys.exit(1)
     
     logger.info(f"Starting splitting with embedding model: {args.model}")
     
     # Extract timestamp from input file path (format: path/TIMESTAMP/filename)
     # Used for organizing output in the same timestamp directory
-    input_dir = os.path.dirname(args.input_file)
+    input_dir = os.path.dirname(file_to_use)
     timestamp_dir = os.path.basename(input_dir)
     
     # Create output directory with timestamp if it looks like a timestamp
@@ -645,44 +664,12 @@ def run_splitter(args: argparse.Namespace) -> None:
     os.makedirs(output_subdir, exist_ok=True)
     logger.info(f"Results will be saved to: {output_subdir}")
     
-    # Check if this is a combined results file
-    is_combined_file = False
-    combined_results = {}
-    
-    # Try to load the input file
-    try:
-        with open(args.input_file, 'r') as f:
-            input_data = json.load(f)
-            # Check if it's a combined file
-            if "combined_results" in input_data and isinstance(input_data["combined_results"], dict):
-                is_combined_file = True
-                combined_results = input_data["combined_results"]
-                logger.info(f"Detected combined results file with {len(combined_results)} levels")
-    except json.JSONDecodeError:
-        logger.error(f"Error parsing input file as JSON: {args.input_file}")
-        sys.exit(1)
-    except Exception as e:
-        logger.error(f"Error loading input file: {e}")
-        sys.exit(1)
-    
-    # Determine which levels to process
+    # Set up parameter for level identification
     if args.level is not None:
         levels_to_process = [args.level]
         logger.info(f"Processing specified level: {args.level}")
-    elif is_combined_file:
-        # Extract levels from combined results
-        levels_to_process = []
-        for key in combined_results.keys():
-            if key.startswith("level"):
-                try:
-                    level = int(key[5:])  # Extract number from "level{N}"
-                    levels_to_process.append(level)
-                except ValueError:
-                    logger.warning(f"Skipping invalid level key: {key}")
-        levels_to_process.sort()  # Process in order
-        logger.info(f"Processing levels from combined file: {levels_to_process}")
     else:
-        # Default to all levels
+        # Default to all levels (0-3)
         levels_to_process = range(4)
         logger.info(f"Processing all levels: {list(levels_to_process)}")
     
@@ -690,12 +677,11 @@ def run_splitter(args: argparse.Namespace) -> None:
     for level in levels_to_process:
         logger.info(f"Processing level {level}")
         
-        # Initialize splitter
+        # Initialize splitter with the new API
         splitter = SenseSplitter(
             hierarchy_file_path=args.hierarchy_file,
-            candidate_terms_list=[],  # Will be populated from input file
-            cluster_results={},       # Will be populated from input file
-            embedding_model_name=args.model,  # Model parameter is now guaranteed to exist
+            context_file=file_to_use,     # Use the context file
+            embedding_model_name=args.model,
             use_llm_for_tags=args.use_llm,
             llm_provider=args.llm_provider,
             llm_model=args.llm_model,
@@ -703,54 +689,10 @@ def run_splitter(args: argparse.Namespace) -> None:
             output_dir=output_subdir
         )
         
-        # --- Revised Loading Order ---
-        # 1. Load the main input file first to get the primary candidate list
-        loaded_successfully = False
-        if is_combined_file:
-            # Logic to handle combined file loading (extract level data, create temp file)
-            level_key = f"level{level}"
-            if level_key in combined_results:
-                logger.info(f"Processing combined results for level {level} from main input file first...")
-                level_data = combined_results[level_key]
-                # Create temporary structure compatible with splitter loading
-                temp_data = {
-                    "timestamp": datetime.now().isoformat(),
-                    "parameters": input_data.get("parameters", {}),
-                    "detailed_results": level_data # Pass the level data directly
-                }
-                temp_file = os.path.join(output_subdir, f"temp_level{level}_main_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
-                try:
-                    with open(temp_file, 'w') as f:
-                        json.dump(temp_data, f)
-                    loaded_successfully = splitter._load_cluster_results_from_file(temp_file)
-                    os.remove(temp_file) # Clean up
-                except Exception as e:
-                    logger.error(f"Error processing combined results for level {level}: {e}")
-            else:
-                 logger.warning(f"Level {level} key '{level_key}' not found in combined results.")
-        else:
-            # Load directly from the single input file
-            logger.info(f"Loading main input file: {args.input_file}")
-            loaded_successfully = splitter._load_cluster_results_from_file(args.input_file)
-
-        if not loaded_successfully:
-            logger.error(f"Failed to load initial candidate terms from input file for level {level}")
-            continue # Skip this level if main input fails
-
-        # 2. Load comprehensive cluster details file if provided
-        #    The splitter logic now ensures this doesn't overwrite the candidate list.
-        if args.cluster_details_file:
-            logger.info(f"Loading comprehensive cluster details from: {args.cluster_details_file}")
-            cluster_details_loaded = splitter._load_cluster_results_from_file(args.cluster_details_file)
-            if cluster_details_loaded:
-                logger.info("Successfully loaded and integrated comprehensive cluster details")
-            else:
-                logger.warning("Failed to load comprehensive cluster details, proceeding with data from main input file only")
-        
         # Generate and save split proposals
         accepted, rejected, output_path = splitter.run(
             save_output=True,
-            output_filename=f"split_proposals_level{level}.json"  # Simplified filename without timestamp
+            output_filename=f"split_proposals_level{level}.json"
         )
         
         logger.info(f"Level {level}: Generated {len(accepted)} accepted and {len(rejected)} rejected proposals")

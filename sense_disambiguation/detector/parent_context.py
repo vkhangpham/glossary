@@ -12,9 +12,12 @@ import logging
 import datetime # Added for timestamp
 from collections import defaultdict
 from typing import Optional, List, Set, Tuple, Dict, Any
+import warnings
 
 # Import utility for numpy conversion just in case it's needed later, although unlikely here
 from .utils import convert_numpy_types
+# Import base classes for the new API
+from .base import EvidenceBuilder, get_detector_version
 
 # Setup logger if not already configured by parent module
 logger = logging.getLogger(__name__)
@@ -156,9 +159,18 @@ class ParentContextDetector:
     def detect_ambiguous_terms(self) -> list[str]:
         """Performs the ambiguity detection based on parent contexts.
 
+        DEPRECATED: Use detect() instead which returns EvidenceBuilder objects.
+        This method is maintained for backward compatibility.
+
         Returns:
             A list of canonical term strings identified as potentially ambiguous.
         """
+        warnings.warn(
+            "ParentContextDetector.detect_ambiguous_terms() is deprecated; use detect() instead",
+            DeprecationWarning,
+            stacklevel=2
+        )
+        
         if not self._load_data():
             logging.error("[ParentContextDetector] Failed to load necessary data. Aborting detection.")
             return []
@@ -249,10 +261,70 @@ class ParentContextDetector:
         
         return filtered_ambiguous_terms
 
+    def detect(self) -> List[EvidenceBuilder]:
+        """
+        Detects ambiguous terms based on parent context analysis and returns evidence builders.
+        
+        This is the new preferred API that returns structured evidence blocks for the splitter.
+        
+        Returns:
+            List of EvidenceBuilder objects for detected ambiguous terms.
+        """
+        # First run the original detection logic to populate self.detailed_results
+        # This avoids duplicating the complex detection algorithm
+        detected_terms = self.detect_ambiguous_terms()
+        
+        # Get the detector version
+        version = get_detector_version()
+        
+        # Convert to evidence builders
+        evidence_builders = []
+        for term in detected_terms:
+            # Get the term details
+            term_details = self.detailed_results.get(term, {})
+            level = term_details.get("level")
+            
+            # Calculate confidence based on the number of distinct ancestor pairs
+            # Simple heuristic: min(1.0, distinct_ancestor_pairs/5)
+            ancestor_contexts = term_details.get("ancestor_contexts", [])
+            distinct_ancestor_pairs_count = len(ancestor_contexts)
+            confidence = min(1.0, distinct_ancestor_pairs_count / 5)
+            
+            # Prepare metrics dictionary
+            metrics = {
+                "distinct_ancestor_pairs_count": distinct_ancestor_pairs_count,
+                "parent_count": term_details.get("parent_count", 0)
+            }
+            
+            # Prepare payload dictionary
+            payload = {
+                "divergent": True,  # This detector only returns divergent terms
+                "parents": list(term_details.get("parents_details", {}).keys()),
+                "distinct_ancestors": term_details.get("ancestor_contexts", [])
+            }
+            
+            # Create the evidence builder
+            builder = EvidenceBuilder.create(
+                term=term,
+                level=level,
+                source="parent_context",
+                detector_version=version,
+                confidence=confidence,
+                metrics=metrics,
+                payload=payload
+            )
+            
+            evidence_builders.append(builder)
+        
+        return evidence_builders
+
     def save_detailed_results(self, filename: Optional[str] = None) -> str:
         """
         Saves the detailed ambiguity results (including ancestor contexts) to a JSON file.
         Should be called after detect_ambiguous_terms().
+
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to get evidence blocks via detect() and store them in a unified context file.
         
         Args:
             filename: Optional custom filename. If not provided, uses a default name.
@@ -260,6 +332,11 @@ class ParentContextDetector:
         Returns:
             Path to the saved file, or empty string if error.
         """
+        warnings.warn(
+            "ParentContextDetector.save_detailed_results() is deprecated; direct file writes will be removed in future",
+            DeprecationWarning, 
+            stacklevel=2
+        )
         if not filename:
             level_str = f"_level{self.level}" if self.level is not None else "_all_levels"
             filename = f"parent_context_details{level_str}.json"

@@ -15,6 +15,10 @@ import numpy as np
 from collections import defaultdict
 from typing import Optional, Dict, List, Any, Tuple, Set
 from sentence_transformers import SentenceTransformer
+import warnings
+
+# Import base detector classes
+from .base import EvidenceBuilder, get_detector_version
 
 # Add NLTK for improved tokenization
 try:
@@ -495,12 +499,22 @@ class RadialPolysemyDetector:
         """
         Save detection results to a JSON file.
         
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to get evidence blocks via detect() and store them in a unified context file.
+        
         Args:
             filename: Optional custom filename
             
         Returns:
             Path to the saved file
         """
+        import warnings
+        warnings.warn(
+            "RadialPolysemyDetector.save_results() is deprecated; direct file writes will be removed in future",
+            DeprecationWarning, 
+            stacklevel=2
+        )
+        
         if not filename:
             timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
             level_str = f"_level{self.level}" if self.level is not None else ""
@@ -538,6 +552,9 @@ class RadialPolysemyDetector:
         """
         Saves the final list of ambiguous terms to a simple text file.
         
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to get evidence blocks via detect() and store them in a unified context file.
+        
         Args:
             ambiguous_terms: List of terms identified as ambiguous.
             filename: Optional custom filename. If not provided, uses a default name.
@@ -545,6 +562,13 @@ class RadialPolysemyDetector:
         Returns:
             Path to the saved file, or empty string if error.
         """
+        import warnings
+        warnings.warn(
+            "RadialPolysemyDetector.save_summary_results() is deprecated; direct file writes will be removed in future",
+            DeprecationWarning, 
+            stacklevel=2
+        )
+        
         if not filename:
             level_str = f"_level{self.level}" if self.level is not None else "_all_levels"
             filename = f"radial_polysemy_terms{level_str}.txt"
@@ -564,3 +588,115 @@ class RadialPolysemyDetector:
         except Exception as e:
             logging.error(f"[RadialPolysemyDetector] Error saving summary results to {filepath}: {e}")
             return "" 
+
+    def detect(self) -> List[EvidenceBuilder]:
+        """
+        Detects ambiguous terms based on radial polysemy and returns evidence builders.
+        
+        This is the new preferred API that returns structured evidence blocks for the splitter.
+        
+        Returns:
+            List of EvidenceBuilder objects for detected ambiguous terms.
+        """
+        # Run detection to populate polysemy_scores
+        # This approach maintains backward compatibility while exposing the new API
+        detected_terms = self.detect_ambiguous_terms()
+        
+        # Get the detector version
+        version = get_detector_version()
+        
+        # Number of sample contexts to include (capped)
+        max_sample_contexts = 5
+        max_context_length = 300  # chars per sample context
+        
+        # Convert to evidence builders
+        evidence_builders = []
+        
+        # Process terms with polysemy scores
+        for term, score_data in self.polysemy_scores.items():
+            # Get polysemy metrics
+            polysemy_index = score_data.get("polysemy_index", 0.0)
+            context_count = score_data.get("context_count", 0)
+            metrics = score_data.get("metrics", {})
+            
+            # Skip terms with very low polysemy index
+            if polysemy_index < 0.05:  # Ultra-low confidence threshold for detection
+                continue
+                
+            # Calculate confidence using logistic function on polysemy_index
+            # Uses scaled logistic: 1/(1+e^(-10*(x-0.25))) 
+            # This gives ~0.5 confidence at the threshold of 0.25
+            # and approaches 1.0 as polysemy_index increases
+            confidence = 1.0 / (1.0 + np.exp(-10 * (polysemy_index - 0.25)))
+            
+            # Ensure confidence is in valid range
+            confidence = max(0.0, min(1.0, confidence))
+            
+            # Get the term level
+            level = None
+            if term in self.term_details:
+                level = self.term_details[term].get("level")
+            
+            # Prepare metrics dictionary
+            api_metrics = {
+                "polysemy_index": polysemy_index,
+                "context_count": context_count,
+                "peak_count_estimate": metrics.get("peak_count_estimate", 1),
+                "variance": metrics.get("variance", 0.0)
+            }
+            
+            # Extract contexts for the term to include in payload
+            sample_contexts = []
+            
+            # Re-extract contexts to include in payload
+            # We can't reuse easily because the contexts are processed during detection
+            contexts = self._extract_context_terms(term)
+            
+            # Select a representative subset of contexts
+            # Since we're doing semantic modeling, it's better to take evenly spaced samples
+            # rather than the first N contexts, which might all be from the same resource
+            if contexts and len(contexts) > 0:
+                # Take evenly spaced samples
+                step = max(1, len(contexts) // max_sample_contexts)
+                for i in range(0, len(contexts), step):
+                    if len(sample_contexts) >= max_sample_contexts:
+                        break
+                        
+                    # Convert token list to readable string
+                    context_str = " ".join(contexts[i])
+                    
+                    # Truncate if too long
+                    if len(context_str) > max_context_length:
+                        context_str = context_str[:max_context_length] + "..."
+                        
+                    sample_contexts.append(context_str)
+            
+            # Prepare payload dictionary
+            payload = {
+                "polysemy_index": polysemy_index,
+                "context_count": context_count,
+                "sample_contexts": sample_contexts
+            }
+            
+            # Create the evidence builder
+            builder = EvidenceBuilder.create(
+                term=term,
+                level=level,
+                source="radial_polysemy",
+                detector_version=version,
+                confidence=confidence,
+                metrics=api_metrics,
+                payload=payload
+            )
+            
+            evidence_builders.append(builder)
+        
+        # Mark legacy file writing methods as deprecated
+        warnings.warn(
+            "RadialPolysemyDetector.save_results() and save_summary_results() are deprecated; "
+            "use detect() and unified context files instead",
+            DeprecationWarning, 
+            stacklevel=2
+        )
+        
+        return evidence_builders 

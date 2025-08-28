@@ -1,0 +1,928 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-05-23T08:30:00Z",
+    "description": "Ground truth unified context for test dataset containing 10 positive (ambiguous) and 8 negative (unambiguous) terms",
+    "schema_version": "unified_context_v1",
+    "total_terms": 18,
+    "positive_terms": 10,
+    "negative_terms": 8,
+    "evidence_sources": ["resource_cluster", "parent_context", "radial_polysemy"]
+  },
+  "contexts": {
+    "transformers": {
+      "canonical_name": "transformers",
+      "level": 2,
+      "overall_confidence": 0.85,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.9,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.8,
+            "silhouette_score": 0.75
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0, 1],
+            "cluster_details": {
+              "0": [
+                {"url": "https://github.com/huggingface/transformers", "title": "Transformers: State-of-the-art Machine Learning"},
+                {"url": "https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)", "title": "Transformer ML Model"},
+                {"url": "https://arxiv.org/abs/1706.03762", "title": "Attention Is All You Need"},
+                {"url": "https://openai.com/research/gpt-4", "title": "GPT-4 Technical Report"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Transformer", "title": "Electrical Transformer"},
+                {"url": "https://en.wikipedia.org/wiki/Power_transformer", "title": "Power Transformer"},
+                {"url": "https://www.electrical4u.com/transformer/", "title": "Transformer Theory"},
+                {"url": "https://www.energy.gov/articles/how-does-electrical-grid-work", "title": "Electrical Grid Basics"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0", 
+          "confidence": 0.8,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["machine learning", "power systems"],
+            "distinct_ancestors": [
+              ["machine learning", "computer science", "science"],
+              ["power systems", "electrical engineering", "engineering"]
+            ]
+          }
+        },
+        {
+          "source": "radial_polysemy",
+          "detector_version": "1.0.0",
+          "confidence": 0.7,
+          "metrics": {
+            "polysemy_index": 0.65,
+            "context_count": 8
+          },
+          "payload": {
+            "sample_contexts": [
+              "transformer neural network attention mechanism",
+              "transformer electrical voltage conversion device",
+              "transformer power grid distribution"
+            ]
+          }
+        }
+      ]
+    },
+    "interface": {
+      "canonical_name": "interface",
+      "level": 2,
+      "overall_confidence": 0.82,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.85,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.75,
+            "silhouette_score": 0.70
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0, 1, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Interface_(computing)", "title": "Computing Interface"},
+                {"url": "https://developer.mozilla.org/en-US/docs/Web/API", "title": "Web APIs"},
+                {"url": "https://www.oracle.com/java/technologies/java-se-api-doc.html", "title": "Java API Documentation"},
+                {"url": "https://docs.python.org/3/library/", "title": "Python Standard Library"},
+                {"url": "https://en.wikipedia.org/wiki/Application_programming_interface", "title": "API Definition"}
+              ],
+              "1": [
+                {"url": "https://www.interface.com/", "title": "Interface Inc. Materials"},
+                {"url": "https://en.wikipedia.org/wiki/Interface_(matter)", "title": "Material Interface"},
+                {"url": "https://www.sciencedirect.com/topics/materials-science/interface", "title": "Interface Materials Science"},
+                {"url": "https://pubs.acs.org/doi/10.1021/cr068020s", "title": "Surface Interface Chemistry"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.8,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["software engineering", "materials science"],
+            "distinct_ancestors": [
+              ["software engineering", "computer science", "science"],
+              ["materials science", "chemistry", "science"]
+            ]
+          }
+        }
+      ]
+    },
+    "modeling": {
+      "canonical_name": "modeling",
+      "level": 2,
+      "overall_confidence": 0.88,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.9,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.85,
+            "silhouette_score": 0.80
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0, 1, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Statistical_model", "title": "Statistical Modeling"},
+                {"url": "https://www.statsmodels.org/", "title": "Statistical Models Python"},
+                {"url": "https://scikit-learn.org/stable/supervised_learning.html", "title": "Supervised Learning Models"},
+                {"url": "https://en.wikipedia.org/wiki/Mathematical_model", "title": "Mathematical Modeling"},
+                {"url": "https://www.nature.com/subjects/predictive-models", "title": "Predictive Models"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Model_(person)", "title": "Fashion Model"},
+                {"url": "https://www.modelmanagement.com/", "title": "Model Management"},
+                {"url": "https://www.vogue.com/fashion/models", "title": "Fashion Industry Models"},
+                {"url": "https://www.elle.com/fashion/trend-reports/", "title": "Fashion Trends Modeling"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.85,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["statistics", "fashion studies"],
+            "distinct_ancestors": [
+              ["statistics", "mathematics", "science"],
+              ["fashion studies", "arts", "humanities"]
+            ]
+          }
+        }
+      ]
+    },
+    "fragmentation": {
+      "canonical_name": "fragmentation",
+      "level": 2,
+      "overall_confidence": 0.79,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.8,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.72,
+            "silhouette_score": 0.68
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0, 1],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Fragmentation_(mass_spectrometry)", "title": "Mass Spectrometry Fragmentation"},
+                {"url": "https://www.agilent.com/en/product/mass-spectrometry", "title": "Chemical Analysis Fragmentation"},
+                {"url": "https://pubs.acs.org/doi/10.1021/jasms.0c00425", "title": "Ion Fragmentation Patterns"},
+                {"url": "https://en.wikipedia.org/wiki/Fragmentation_(chemistry)", "title": "Chemical Fragmentation"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Political_fragmentation", "title": "Political Fragmentation"},
+                {"url": "https://www.jstor.org/stable/2111343", "title": "Party System Fragmentation"},
+                {"url": "https://link.springer.com/article/10.1007/s11127-011-9768-z", "title": "Electoral Fragmentation"},
+                {"url": "https://www.cambridge.org/core/journals/government-and-opposition", "title": "Government Fragmentation"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.75,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["organic chemistry", "political science"],
+            "distinct_ancestors": [
+              ["organic chemistry", "chemistry", "science"],
+              ["political science", "social sciences", "humanities"]
+            ]
+          }
+        }
+      ]
+    },
+    "clustering": {
+      "canonical_name": "clustering", 
+      "level": 2,
+      "overall_confidence": 0.83,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.85,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.78,
+            "silhouette_score": 0.73
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Cluster_analysis", "title": "Cluster Analysis"},
+                {"url": "https://scikit-learn.org/stable/modules/clustering.html", "title": "Clustering Algorithms"},
+                {"url": "https://www.geeksforgeeks.org/clustering-in-machine-learning/", "title": "ML Clustering"},
+                {"url": "https://en.wikipedia.org/wiki/K-means_clustering", "title": "K-means Algorithm"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Stellar_cluster", "title": "Star Clusters"},
+                {"url": "https://www.nuclear-power.net/nuclear-engineering/reactor-physics/", "title": "Nuclear Physics Clustering"},
+                {"url": "https://physics.stackexchange.com/questions/tagged/clusters", "title": "Physics Cluster Phenomena"},
+                {"url": "https://en.wikipedia.org/wiki/Galaxy_cluster", "title": "Galaxy Clusters"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.8,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["machine learning", "nuclear physics"],
+            "distinct_ancestors": [
+              ["machine learning", "computer science", "science"],
+              ["nuclear physics", "physics", "science"]
+            ]
+          }
+        }
+      ]
+    },
+    "stress": {
+      "canonical_name": "stress",
+      "level": 2,
+      "overall_confidence": 0.87,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.9,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.82,
+            "silhouette_score": 0.77
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0, 1],
+            "cluster_details": {
+              "0": [
+                {"url": "https://www.mayoclinic.org/healthy-living/stress-management", "title": "Stress Management"},
+                {"url": "https://en.wikipedia.org/wiki/Psychological_stress", "title": "Psychological Stress"},
+                {"url": "https://www.apa.org/science/about/psa/2007/10/stress-tips", "title": "APA Stress Research"},
+                {"url": "https://www.nimh.nih.gov/health/publications/stress", "title": "NIMH Stress Information"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Stress_(mechanics)", "title": "Mechanical Stress"},
+                {"url": "https://www.engineeringtoolbox.com/stress-strain-d_950.html", "title": "Stress-Strain Engineering"},
+                {"url": "https://www.efunda.com/formulae/solid_mechanics/", "title": "Solid Mechanics Stress"},
+                {"url": "https://www.nuclear-power.net/nuclear-engineering/materials/stress-strain/", "title": "Material Stress Analysis"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.85,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["psychology", "materials science"],
+            "distinct_ancestors": [
+              ["psychology", "social sciences", "humanities"],
+              ["materials science", "engineering", "science"]
+            ]
+          }
+        }
+      ]
+    },
+    "regression": {
+      "canonical_name": "regression",
+      "level": 2,
+      "overall_confidence": 0.81,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.83,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.76,
+            "silhouette_score": 0.71
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Regression_analysis", "title": "Statistical Regression"},
+                {"url": "https://scikit-learn.org/stable/supervised_learning.html#supervised-learning", "title": "Regression Models"},
+                {"url": "https://www.statsmodels.org/stable/regression.html", "title": "Linear Regression"},
+                {"url": "https://towardsdatascience.com/regression-analysis-explained", "title": "Regression Analysis Guide"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Regression_(psychology)", "title": "Psychological Regression"},
+                {"url": "https://www.psychologytoday.com/us/basics/regression", "title": "Age Regression Psychology"},
+                {"url": "https://www.verywellmind.com/regression-as-a-defense-mechanism", "title": "Defense Mechanism Regression"},
+                {"url": "https://www.britannica.com/science/regression-psychology", "title": "Regression Britannica"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.78,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["statistics", "psychology"],
+            "distinct_ancestors": [
+              ["statistics", "mathematics", "science"],
+              ["psychology", "social sciences", "humanities"]
+            ]
+          }
+        }
+      ]
+    },
+    "cell": {
+      "canonical_name": "cell",
+      "level": 2,
+      "overall_confidence": 0.84,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.86,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.79,
+            "silhouette_score": 0.74
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Cell_(biology)", "title": "Biological Cell"},
+                {"url": "https://www.britannica.com/science/cell-biology", "title": "Cell Biology Britannica"},
+                {"url": "https://www.nature.com/subjects/cell-biology", "title": "Nature Cell Biology"},
+                {"url": "https://www.ncbi.nlm.nih.gov/books/NBK9841/", "title": "Molecular Biology of the Cell"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Cell_(microprocessor)", "title": "Microprocessor Cell"},
+                {"url": "https://www.3gpp.org/technologies/keywords-acronyms/98-lte", "title": "LTE Cell Technology"},
+                {"url": "https://en.wikipedia.org/wiki/Cellular_network", "title": "Cellular Network"},
+                {"url": "https://www.qualcomm.com/invention/5g/what-is-5g", "title": "5G Cell Technology"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.82,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["molecular biology", "telecommunications engineering"],
+            "distinct_ancestors": [
+              ["molecular biology", "biology", "life science"],
+              ["telecommunications engineering", "electrical engineering", "engineering"]
+            ]
+          }
+        }
+      ]
+    },
+    "network": {
+      "canonical_name": "network", 
+      "level": 2,
+      "overall_confidence": 0.80,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.82,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.74,
+            "silhouette_score": 0.69
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0, 1],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Computer_network", "title": "Computer Networks"},
+                {"url": "https://www.cisco.com/c/en/us/solutions/enterprise-networks/", "title": "Enterprise Networks"},
+                {"url": "https://tools.ietf.org/html/rfc791", "title": "Internet Protocol"},
+                {"url": "https://en.wikipedia.org/wiki/Network_topology", "title": "Network Topology"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Social_network", "title": "Social Networks"},
+                {"url": "https://www.nature.com/subjects/social-networks", "title": "Social Network Analysis"},
+                {"url": "https://journals.sagepub.com/home/sna", "title": "Social Network Journal"},
+                {"url": "https://networkx.org/", "title": "Social Network Python"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.77,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["computer science", "social sciences"],
+            "distinct_ancestors": [
+              ["computer science", "science"],
+              ["social sciences", "humanities"]
+            ]
+          }
+        }
+      ]
+    },
+    "bond": {
+      "canonical_name": "bond",
+      "level": 2,
+      "overall_confidence": 0.86,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.88,
+          "metrics": {
+            "cluster_count": 2,
+            "separation_score": 0.81,
+            "silhouette_score": 0.76
+          },
+          "payload": {
+            "cluster_labels": [0, 1, 0, 1, 0, 1, 0, 1, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Chemical_bond", "title": "Chemical Bonds"},
+                {"url": "https://www.britannica.com/science/chemical-bonding", "title": "Chemical Bonding Britannica"},
+                {"url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_A_Molecular_Approach_(Tro)/09%3A_Chemical_Bonding_I-_Lewis_Theory", "title": "Lewis Bonding Theory"},
+                {"url": "https://www.nature.com/subjects/chemical-bonding", "title": "Nature Chemical Bonding"},
+                {"url": "https://pubs.acs.org/doi/10.1021/ed077p1114", "title": "ACS Bonding Education"}
+              ],
+              "1": [
+                {"url": "https://en.wikipedia.org/wiki/Bond_(finance)", "title": "Financial Bonds"},
+                {"url": "https://www.investopedia.com/terms/b/bond.asp", "title": "Bond Investment Guide"},
+                {"url": "https://www.treasurydirect.gov/indiv/products/prod_bonds_glance.htm", "title": "Treasury Bonds"},
+                {"url": "https://www.sec.gov/investor/pubs/bonds.htm", "title": "SEC Bond Information"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.84,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 2
+          },
+          "payload": {
+            "divergent": true,
+            "parents": ["organic chemistry", "finance"],
+            "distinct_ancestors": [
+              ["organic chemistry", "chemistry", "science"],
+              ["finance", "economics", "social sciences"]
+            ]
+          }
+        }
+      ]
+    },
+    "artificial intelligence": {
+      "canonical_name": "artificial intelligence",
+      "level": 2,
+      "overall_confidence": 0.15,
+      "evidence": [
+        {
+          "source": "resource_cluster", 
+          "detector_version": "1.0.0",
+          "confidence": 0.15,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.10,
+            "silhouette_score": 0.05
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Artificial_intelligence", "title": "Artificial Intelligence"},
+                {"url": "https://www.ibm.com/watson/ai", "title": "IBM AI Solutions"},
+                {"url": "https://ai.google/", "title": "Google AI Research"},
+                {"url": "https://openai.com/", "title": "OpenAI"},
+                {"url": "https://www.nature.com/subjects/machine-learning", "title": "Nature ML Research"},
+                {"url": "https://www.aaai.org/", "title": "AAAI Conference"},
+                {"url": "https://arxiv.org/list/cs.AI/recent", "title": "ArXiv AI Papers"},
+                {"url": "https://www.microsoft.com/en-us/ai", "title": "Microsoft AI"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.10,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["computer science"],
+            "distinct_ancestors": [
+              ["computer science", "science"]
+            ]
+          }
+        },
+        {
+          "source": "radial_polysemy",
+          "detector_version": "1.0.0",
+          "confidence": 0.20,
+          "metrics": {
+            "polysemy_index": 0.15,
+            "context_count": 8
+          },
+          "payload": {
+            "sample_contexts": [
+              "artificial intelligence machine learning algorithms",
+              "artificial intelligence deep learning neural networks",
+              "artificial intelligence computer vision natural language"
+            ]
+          }
+        }
+      ]
+    },
+    "mathematics": {
+      "canonical_name": "mathematics",
+      "level": 2,
+      "overall_confidence": 0.12,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0", 
+          "confidence": 0.12,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.08,
+            "silhouette_score": 0.03
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Mathematics", "title": "Mathematics"},
+                {"url": "https://www.ams.org/", "title": "American Mathematical Society"},
+                {"url": "https://mathworld.wolfram.com/", "title": "Wolfram MathWorld"},
+                {"url": "https://www.nature.com/subjects/mathematics", "title": "Nature Mathematics"},
+                {"url": "https://arxiv.org/list/math/recent", "title": "ArXiv Mathematics"},
+                {"url": "https://www.mathscinet.ams.org/", "title": "MathSciNet"},
+                {"url": "https://www.sciencedirect.com/journal/journal-of-mathematical-analysis-and-applications", "title": "Mathematical Analysis Journal"},
+                {"url": "https://www.springer.com/journal/10958", "title": "Springer Mathematics"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.10,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["science"],
+            "distinct_ancestors": [
+              ["science"]
+            ]
+          }
+        }
+      ]
+    },
+    "engineering": {
+      "canonical_name": "engineering",
+      "level": 2,
+      "overall_confidence": 0.18,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.18,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.12,
+            "silhouette_score": 0.06
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Engineering", "title": "Engineering"},
+                {"url": "https://www.asme.org/", "title": "ASME Engineering Society"},
+                {"url": "https://www.ieee.org/", "title": "IEEE Engineering"},
+                {"url": "https://www.nspe.org/", "title": "National Society of Professional Engineers"},
+                {"url": "https://www.engineeringvillage.com/", "title": "Engineering Village"},
+                {"url": "https://www.nature.com/subjects/engineering", "title": "Nature Engineering"},
+                {"url": "https://www.sciencedirect.com/browse/journals-and-books?contentType=JL&subject=engineering", "title": "Engineering Journals"},
+                {"url": "https://www.abet.org/", "title": "ABET Engineering Accreditation"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.15,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["engineering"],
+            "distinct_ancestors": [
+              ["engineering"]
+            ]
+          }
+        }
+      ]
+    },
+    "geology": {
+      "canonical_name": "geology",
+      "level": 2,
+      "overall_confidence": 0.14,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.14,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.09,
+            "silhouette_score": 0.04
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Geology", "title": "Geology"},
+                {"url": "https://www.usgs.gov/", "title": "US Geological Survey"},
+                {"url": "https://www.geosociety.org/", "title": "Geological Society of America"},
+                {"url": "https://www.nature.com/subjects/geology", "title": "Nature Geology"},
+                {"url": "https://www.sciencedirect.com/journal/earth-and-planetary-science-letters", "title": "Earth Science Letters"},
+                {"url": "https://pubs.geoscienceworld.org/", "title": "GeoScienceWorld"},
+                {"url": "https://www.britannica.com/science/geology", "title": "Britannica Geology"},
+                {"url": "https://geology.com/", "title": "Geology.com"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.12,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["earth science"],
+            "distinct_ancestors": [
+              ["earth science", "science"]
+            ]
+          }
+        }
+      ]
+    },
+    "astrophysics": {
+      "canonical_name": "astrophysics",
+      "level": 2,
+      "overall_confidence": 0.16,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.16,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.11,
+            "silhouette_score": 0.05
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Astrophysics", "title": "Astrophysics"},
+                {"url": "https://www.nasa.gov/", "title": "NASA Astrophysics"},
+                {"url": "https://www.eso.org/", "title": "European Southern Observatory"},
+                {"url": "https://www.nature.com/subjects/astrophysics", "title": "Nature Astrophysics"},
+                {"url": "https://arxiv.org/list/astro-ph/recent", "title": "ArXiv Astrophysics"},
+                {"url": "https://iopscience.iop.org/journal/0004-637X", "title": "Astrophysical Journal"},
+                {"url": "https://www.aanda.org/", "title": "Astronomy & Astrophysics"},
+                {"url": "https://www.space.com/astrophysics", "title": "Space.com Astrophysics"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.13,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["physics"],
+            "distinct_ancestors": [
+              ["physics", "science"]
+            ]
+          }
+        }
+      ]
+    },
+    "botany": {
+      "canonical_name": "botany",
+      "level": 2,
+      "overall_confidence": 0.13,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.13,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.08,
+            "silhouette_score": 0.03
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Botany", "title": "Botany"},
+                {"url": "https://www.botany.org/", "title": "Botanical Society of America"},
+                {"url": "https://www.nature.com/subjects/plant-sciences", "title": "Nature Plant Sciences"},
+                {"url": "https://www.britannica.com/science/botany", "title": "Britannica Botany"},
+                {"url": "https://www.plantphysiol.org/", "title": "Plant Physiology Journal"},
+                {"url": "https://nph.onlinelibrary.wiley.com/", "title": "New Phytologist"},
+                {"url": "https://www.sciencedirect.com/journal/plant-science", "title": "Plant Science Journal"},
+                {"url": "https://link.springer.com/journal/425", "title": "Planta Journal"},
+                {"url": "https://academic.oup.com/aob", "title": "Annals of Botany"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.11,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["life science"],
+            "distinct_ancestors": [
+              ["life science", "science"]
+            ]
+          }
+        }
+      ]
+    },
+    "microbiology": {
+      "canonical_name": "microbiology",
+      "level": 2,
+      "overall_confidence": 0.17,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.17,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.12,
+            "silhouette_score": 0.06
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Microbiology", "title": "Microbiology"},
+                {"url": "https://www.asm.org/", "title": "American Society for Microbiology"},
+                {"url": "https://www.nature.com/subjects/microbiology", "title": "Nature Microbiology"},
+                {"url": "https://www.britannica.com/science/microbiology", "title": "Britannica Microbiology"},
+                {"url": "https://journals.asm.org/journal/jb", "title": "Journal of Bacteriology"},
+                {"url": "https://www.cell.com/microbe/home", "title": "Cell Microbe"},
+                {"url": "https://www.frontiersin.org/journals/microbiology", "title": "Frontiers Microbiology"},
+                {"url": "https://www.sciencedirect.com/journal/current-opinion-in-microbiology", "title": "Current Opinion Microbiology"},
+                {"url": "https://sfamjournals.onlinelibrary.wiley.com/journal/17462991", "title": "Environmental Microbiology"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.14,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["life science"],
+            "distinct_ancestors": [
+              ["life science", "science"]
+            ]
+          }
+        }
+      ]
+    },
+    "cryptography": {
+      "canonical_name": "cryptography", 
+      "level": 2,
+      "overall_confidence": 0.19,
+      "evidence": [
+        {
+          "source": "resource_cluster",
+          "detector_version": "1.0.0",
+          "confidence": 0.19,
+          "metrics": {
+            "cluster_count": 1,
+            "separation_score": 0.13,
+            "silhouette_score": 0.07
+          },
+          "payload": {
+            "cluster_labels": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "cluster_details": {
+              "0": [
+                {"url": "https://en.wikipedia.org/wiki/Cryptography", "title": "Cryptography"},
+                {"url": "https://www.iacr.org/", "title": "International Association for Cryptologic Research"},
+                {"url": "https://csrc.nist.gov/", "title": "NIST Cryptography"},
+                {"url": "https://www.springer.com/journal/145", "title": "Designs Codes and Cryptography"},
+                {"url": "https://link.springer.com/journal/00145", "title": "Journal of Cryptology"},
+                {"url": "https://www.sciencedirect.com/journal/theoretical-computer-science", "title": "Theoretical Computer Science"},
+                {"url": "https://eprint.iacr.org/", "title": "IACR Cryptology ePrint"},
+                {"url": "https://www.rsa.com/en-us/company/labs", "title": "RSA Laboratories"},
+                {"url": "https://crypto.stanford.edu/", "title": "Stanford Cryptography"}
+              ]
+            }
+          }
+        },
+        {
+          "source": "parent_context",
+          "detector_version": "1.0.0",
+          "confidence": 0.16,
+          "metrics": {
+            "distinct_ancestor_pairs_count": 0
+          },
+          "payload": {
+            "divergent": false,
+            "parents": ["computer science"],
+            "distinct_ancestors": [
+              ["computer science", "science"]
+            ]
+          }
+        }
+      ]
+    }
+  }
+} 

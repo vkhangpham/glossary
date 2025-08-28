@@ -28,9 +28,9 @@ except ImportError as e:
 BASE_DATA_PATH = "data/final" # This path is relative to the project root
 RESOURCES_DIR_TEMPLATE = os.path.join(BASE_DATA_PATH, "lv{}")
 RESOURCE_FILE_TEMPLATE = "lv{}_filtered_resources.json"
-OUTPUT_FILE = os.path.join(BASE_DATA_PATH, "generated_definitions.json")
+OUTPUT_FILE = os.path.join(BASE_DATA_PATH, "generated_definitions_output_report.json") # Changed name for clarity
 METADATA_FILE_TEMPLATE = os.path.join(BASE_DATA_PATH, "lv{}", "lv{}_metadata.json")  # Correct format for lvX_metadata.json
-LEVELS_TO_PROCESS = [3] # Process all levels
+LEVELS_TO_PROCESS = [0, 1, 2, 3] # Process all levels
 # LEVELS_TO_PROCESS = [1, 2, 3] # Process all levels
 
 # Multithreading configuration
@@ -55,14 +55,16 @@ PROCESSED_CONTENT_FIELD = "processed_content"  # Field containing the processed 
 # Using a basic logger. If generate_glossary.utils.logger.setup_logger is available
 # and preferred, this can be changed.
 logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    format='%(asctime)s - %(levelname)s - %(threadName)s - %(message)s',
                     handlers=[logging.StreamHandler(sys.stdout)])
 logger = logging.getLogger(__name__)
 
-# Thread-safe counters for tracking progress
-successful_definitions = 0
-failed_definitions = 0
-counter_lock = threading.Lock()
+# --- Global Counters for process_term (as it's run in threads) ---
+# These are for the *entire run* of the script across all levels/batches.
+# They are updated by process_term.
+global_successful_definitions_in_run = 0
+global_failed_definitions_in_run = 0
+global_counter_lock = threading.Lock()
 
 # --- Helper Functions ---
 def load_json_file(file_path: str) -> Optional[Any]:
@@ -121,7 +123,8 @@ def extract_terms_from_resources(resource_data: Any) -> List[str]:
                 terms.extend([t for t in resource_data[key] if isinstance(t, str)])
         
         # If there are no predefined term lists, extract keys as terms
-        if not terms and len(resource_data) > 0:
+        # This should be the primary way terms are identified from resource files
+        if not terms and isinstance(resource_data, dict) and len(resource_data) > 0:
             terms = list(resource_data.keys())
     
     # Remove duplicates while preserving order
@@ -132,55 +135,45 @@ def extract_terms_from_resources(resource_data: Any) -> List[str]:
     
     return unique_terms
 
-def update_metadata_file(metadata_path: str, level_num: int, definitions: Dict[str, str]) -> bool:
-    """Update the metadata file with generated definitions.
+def update_metadata_file(metadata_file_template: str, level_num: int, definitions_to_add: Dict[str, str]) -> bool:
+    if not definitions_to_add:
+        logger.info(f"No new definitions to add to metadata for lv{level_num}.")
+        return True # Nothing to do, so considered successful in a way
+
+    actual_metadata_path_str = metadata_file_template.format(level_num, level_num)
+    logger.info(f"Attempting to update metadata file: {actual_metadata_path_str} with {len(definitions_to_add)} new definitions.")
     
-    Args:
-        metadata_path: Template path for metadata file
-        level_num: Level number (0, 1, 2, 3)
-        definitions: Dictionary of term -> definition pairs
-        
-    Returns:
-        True if update was successful, False otherwise
-    """
-    try:
-        # Format the metadata path with the level number
-        actual_metadata_path = metadata_path.format(level_num, level_num)
-        logger.info(f"Updating metadata file: {actual_metadata_path}")
-        
-        # Load existing metadata file
-        metadata = {}
-        absolute_path = os.path.join(project_root, actual_metadata_path)
-        if os.path.exists(absolute_path):
-            metadata = load_json_file(actual_metadata_path) or {}
-            logger.info(f"Loaded existing metadata file with {len(metadata)} terms")
-        else:
-            logger.warning(f"Metadata file {actual_metadata_path} not found. Will create new file.")
-        
-        # Update the metadata with new definitions
-        terms_updated = 0
-        if isinstance(metadata, dict):
-            for term, definition in definitions.items():
-                if term in metadata:
-                    # Add the definition directly to the term's object
-                    metadata[term]["definition"] = definition
-                    terms_updated += 1
-                    logger.debug(f"Updated definition for existing term: {term}")
-                else:
-                    # If the term doesn't exist, log a warning
-                    logger.warning(f"Term '{term}' not found in metadata file. Skipping.")
-        
-        # Save the updated metadata back to the original file
-        if terms_updated > 0:
-            logger.info(f"Updated {terms_updated} term definitions in metadata")
-            return save_json_file(metadata, actual_metadata_path)
-        else:
-            logger.warning(f"No terms were updated in metadata file")
-            return False
-            
-    except Exception as e:
-        logger.error(f"Error updating metadata file {metadata_path}: {e}")
+    metadata = load_json_file(actual_metadata_path_str)
+    if metadata is None: # File not found or failed to load
+        logger.error(f"Original metadata file {actual_metadata_path_str} could not be loaded. Cannot update.")
+        # Optionally, create a new one if that's desired, but safer to assume it should exist
+        # metadata = {} 
+        # logger.warning(f"Metadata file {actual_metadata_path_str} not found or empty. New definitions will form a new file content.")
         return False
+
+
+    terms_updated_count = 0
+    if isinstance(metadata, dict):
+        for term, definition in definitions_to_add.items():
+            if term in metadata:
+                if not metadata[term].get("definition") or not metadata[term]["definition"].strip(): # Only update if missing/empty
+                    metadata[term]["definition"] = definition
+                    terms_updated_count += 1
+                    logger.debug(f"Added definition for existing term (was missing): {term} in lv{level_num}")
+                else:
+                    logger.info(f"Term '{term}' in lv{level_num} already has a definition. Skipping update for this term.")
+            else:
+                # This case should ideally not happen if terms are sourced from metadata
+                logger.warning(f"Term '{term}' (to be updated) not originally found in lv{level_num} metadata. Adding as new entry.")
+                metadata[term] = {"definition": definition} # Create a new entry for the term
+                terms_updated_count += 1
+    
+    if terms_updated_count > 0:
+        logger.info(f"Saving {terms_updated_count} new/updated definitions to metadata file: {actual_metadata_path_str}")
+        return save_json_file(metadata, actual_metadata_path_str)
+    else:
+        logger.info(f"No definitions were actually added or updated in metadata for lv{level_num} (e.g., all already existed).")
+        return True # No changes made, but process was fine.
 
 def truncate_context(context: str, max_chars: int = MAX_CONTEXT_CHARS) -> str:
     """Truncate context to a safe size to avoid token limit errors.
@@ -268,7 +261,7 @@ def generate_definition_for_term(llm_client: Any, term: str, context: str) -> Op
         logger.error(f"Unexpected error generating definition for '{term}': {e}")
         return None
 
-def process_term(llm_client: Any, term: str, context: str, batch_num: int) -> Tuple[str, Optional[str]]:
+def process_term(llm_client: Any, term: str, context: str, batch_num: int, level_key: str) -> Tuple[str, Optional[str]]:
     """Process a single term in a thread-safe manner.
     
     Args:
@@ -280,34 +273,34 @@ def process_term(llm_client: Any, term: str, context: str, batch_num: int) -> Tu
     Returns:
         Tuple of (term, definition or None if failed)
     """
-    global successful_definitions, failed_definitions
+    global global_successful_definitions_in_run, global_failed_definitions_in_run, global_counter_lock
     
     try:
-        logger.info(f"[Batch {batch_num}] Processing term: '{term}'")
+        logger.info(f"[{level_key} Batch {batch_num}] Processing term: '{term}'")
         start_time = time.time()
         
         # Generate definition with timeout
         definition = generate_definition_for_term(llm_client, term, context)
         
         # Update counters in a thread-safe manner
-        with counter_lock:
+        with global_counter_lock:
             if definition:
-                successful_definitions += 1
-                logger.info(f"[Batch {batch_num}] Completed term '{term}' in {time.time() - start_time:.2f}s - Success: {successful_definitions}, Failed: {failed_definitions}")
+                global_successful_definitions_in_run += 1
+                logger.info(f"[{level_key} Batch {batch_num}] Completed term '{term}' in {time.time() - start_time:.2f}s. (Overall success: {global_successful_definitions_in_run}, fail: {global_failed_definitions_in_run})")
             else:
-                failed_definitions += 1
-                logger.warning(f"[Batch {batch_num}] Failed to generate definition for '{term}' - Success: {successful_definitions}, Failed: {failed_definitions}")
+                global_failed_definitions_in_run += 1
+                logger.warning(f"[{level_key} Batch {batch_num}] Failed definition for '{term}' in {time.time() - start_time:.2f}s. (Overall success: {global_successful_definitions_in_run}, fail: {global_failed_definitions_in_run})")
                 
         # Return the term and its definition (or None if generation failed)
         return (term, definition)
     except Exception as e:
         # Update failed counter in a thread-safe manner
-        with counter_lock:
-            failed_definitions += 1
-            logger.error(f"[Batch {batch_num}] Error processing term '{term}': {e} - Success: {successful_definitions}, Failed: {failed_definitions}")
+        with global_counter_lock:
+            global_failed_definitions_in_run += 1
+            logger.error(f"[{level_key} Batch {batch_num}] Error processing term '{term}': {e} - Success: {global_successful_definitions_in_run}, Failed: {global_failed_definitions_in_run}")
         return (term, None)
 
-def extract_processed_content(resource_data: Any, max_resources: int = MAX_RESOURCES_TO_USE) -> str:
+def extract_processed_content(resource_data: Any, max_resources: int = MAX_RESOURCES_TO_USE) -> Optional[str]:
     """Extract processed_content from the top N resources ranked by score.
     
     Args:
@@ -364,7 +357,7 @@ def extract_processed_content(resource_data: Any, max_resources: int = MAX_RESOU
     
     if not resources_with_content:
         logger.warning(f"No resources with non-empty '{PROCESSED_CONTENT_FIELD}' found in resource data.")
-        return "No processed content available in the resources."
+        return None
     
     # Sort resources by score (higher score first)
     resources_with_content.sort(key=lambda x: x.get("score", 0), reverse=True)
@@ -381,21 +374,60 @@ def extract_processed_content(resource_data: Any, max_resources: int = MAX_RESOU
     
     return result
 
+def get_parent_based_context(term: str, term_attributes: Dict[str, Any], current_level_metadata: Dict[str, Any], level_key: str) -> Optional[str]:
+    """
+    Constructs context from parent definitions for a given term.
+    Args:
+        term: The term for which to find parent context.
+        term_attributes: The metadata attributes of the term itself.
+        current_level_metadata: The entire metadata dictionary for the current level.
+        level_key: The current level being processed (e.g., "lv1") for logging.
+    Returns:
+        A string containing concatenated parent definitions, or None if no suitable parent context.
+    """
+    parent_terms = term_attributes.get("parents")
+    if not isinstance(parent_terms, list) or not parent_terms:
+        logger.debug(f"[{level_key}] No valid parent list for term '{term}'.")
+        return None
+
+    parent_definitions = []
+    logger.debug(f"[{level_key}] Looking for parent definitions for '{term}': {parent_terms}")
+    for parent_term_name in parent_terms:
+        parent_meta = current_level_metadata.get(parent_term_name)
+        if parent_meta:
+            parent_definition = parent_meta.get("definition")
+            if parent_definition and parent_definition.strip():
+                parent_definitions.append(f"Definition of parent term '{parent_term_name}':\n{parent_definition.strip()}")
+            else:
+                logger.debug(f"[{level_key}] Parent '{parent_term_name}' for '{term}' has no definition.")
+        else:
+            logger.debug(f"[{level_key}] Parent '{parent_term_name}' for '{term}' not in metadata.")
+
+    if not parent_definitions:
+        logger.info(f"[{level_key}] No definitions found for any parents of '{term}'.")
+        return None
+
+    context_str = "\n\n---\n\n".join(parent_definitions)
+    preamble = f"Context for '{term}' derived from its parent definitions in {level_key}:\n"
+    full_context = preamble + context_str
+    logger.info(f"[{level_key}] Built parent-based context for '{term}' (length: {len(full_context)} chars).")
+    return full_context
+
 # --- Main Processing Function ---
 def main():
     """Main function to orchestrate the definition generation process."""
-    global successful_definitions, failed_definitions
+    global global_successful_definitions_in_run, global_failed_definitions_in_run, global_counter_lock
+    global_successful_definitions_in_run = 0 # Reset for this run
+    global_failed_definitions_in_run = 0     # Reset for this run
     
-    start_time = time.time()
-    logger.info("Starting glossary definition generation process with multithreading...")
-    
-    logger.info("Reminder: Ensure GOOGLE_API_KEY, GOOGLE_CLOUD_PROJECT, GOOGLE_CLOUD_LOCATION, and GOOGLE_GENAI_USE_VERTEXAI environment variables are set.")
-    logger.info(f"Using concurrency settings: MAX_WORKERS={MAX_WORKERS}, BATCH_SIZE={BATCH_SIZE}, BATCH_TIMEOUT={BATCH_TIMEOUT}s")
+    run_start_time = time.time()
+    logger.info("Starting glossary definition generation process...")
+    logger.info(f"Concurrency: MAX_WORKERS={MAX_WORKERS}, BATCH_SIZE={BATCH_SIZE}")
 
     try:
         logger.info(f"Initializing LLM ({LLM_PROVIDER} provider, model tier: {GEMINI_MODELS[LLM_MODEL_TIER]})...")
         llm = get_llm(provider=LLM_PROVIDER, model=GEMINI_MODELS[LLM_MODEL_TIER])
-        logger.info("LLM initialized successfully.")
+        logger.info(f"LLM initialized successfully.")
     except LLMConfigError as e:
         logger.error(f"LLM Configuration Error: {e}. Please check your API keys and environment setup.")
         return
@@ -403,117 +435,145 @@ def main():
         logger.error(f"Failed to initialize LLM: {e}")
         return
 
-    all_definitions = {}
-    total_terms_processed = 0
-    total_batch_count = 0
+    # This report stores definitions generated *in this specific run*
+    run_generated_definitions_report = {} 
 
     for level_num in LEVELS_TO_PROCESS:
         level_key = f"lv{level_num}"
         level_start_time = time.time()
         logger.info(f"--- Processing Level: {level_key} ---")
 
-        # 1. Read resource file for context
-        resource_dir = RESOURCES_DIR_TEMPLATE.format(level_num)
-        resource_file_path = os.path.join(resource_dir, RESOURCE_FILE_TEMPLATE.format(level_num))
-            
-        # Load resource data for context
-        resource_data = load_json_file(resource_file_path)
-        if resource_data is None:
-            logger.warning(f"Could not load resource data for {level_key}. Skipping this level.")
-            continue
-            
-        # Extract processed content from the top resources instead of using the full JSON
-        try:
-            context_str = extract_processed_content(resource_data, MAX_RESOURCES_TO_USE)
-            context_size = len(context_str)
-            logger.info(f"Successfully prepared context from top {MAX_RESOURCES_TO_USE} resources for {level_key} (length: {context_size:,} chars).")
-            
-            if context_size > MAX_CONTEXT_CHARS:
-                logger.warning(f"Context size ({context_size:,} chars) exceeds recommended limit ({MAX_CONTEXT_CHARS:,}). Will truncate during processing.")
-        except Exception as e:
-            logger.error(f"Error extracting processed content for {level_key}: {e}")
+        resource_file_path = os.path.join(RESOURCES_DIR_TEMPLATE.format(level_num), RESOURCE_FILE_TEMPLATE.format(level_num))
+        resource_map_for_level = load_json_file(resource_file_path) or {} # Term -> List of resource objects
+        
+        metadata_file_path = METADATA_FILE_TEMPLATE.format(level_num, level_num)
+        current_level_metadata = load_json_file(metadata_file_path) or {}
+        if not current_level_metadata:
+            logger.warning(f"Metadata for {level_key} not loaded or empty. Skipping this level.")
             continue
 
-        # 2. Extract terms from resource data
-        terms_to_process = extract_terms_from_resources(resource_data)
-        if not terms_to_process:
-            logger.warning(f"No terms found in resource data for {level_key}. Skipping this level.")
+        terms_needing_defs_in_level = []
+        for term, attributes in current_level_metadata.items():
+            if not (attributes.get('definition') and attributes['definition'].strip()):
+                terms_needing_defs_in_level.append(term)
+        
+        if not terms_needing_defs_in_level:
+            logger.info(f"No terms in {level_key} metadata need definitions. Skipping generation for this level.")
             continue
-            
-        logger.info(f"Found {len(terms_to_process)} terms for {level_key}.")
-        all_definitions[level_key] = []
-        level_definitions = {}
+        logger.info(f"Found {len(terms_needing_defs_in_level)} terms in {level_key} metadata needing definitions.")
+
+        run_generated_definitions_report[level_key] = []
+        definitions_to_update_in_metadata_for_level = {}
         
-        # Reset counters for this level
-        successful_definitions = 0
-        failed_definitions = 0
-        
-        # 3. Process terms in batches using ThreadPoolExecutor
-        batch_number = 0
-        for i in range(0, len(terms_to_process), BATCH_SIZE):
-            batch_number += 1
-            total_batch_count += 1
-            batch_terms = terms_to_process[i:i+BATCH_SIZE]
-            batch_start_time = time.time()
-            
-            logger.info(f"Processing batch {batch_number} with {len(batch_terms)} terms...")
-            futures = []
-            
-            with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-                # Submit tasks for all terms in this batch
-                for term in batch_terms:
-                    future = executor.submit(process_term, llm, term, context_str, batch_number)
-                    futures.append(future)
+        terms_for_batch_processing = []
+        term_to_context_cache = {} # Cache context for terms to pass to threads
+
+        # --- Context Sourcing Loop ---
+        for term in terms_needing_defs_in_level:
+            final_context_for_term = None
+            context_source_type = "none"
+
+            # 1. Try Resource-based context
+            term_specific_resources = resource_map_for_level.get(term) # This is a list for the specific term
+            if term_specific_resources: # If the term exists as a key and has some resource data
+                logger.debug(f"[{level_key}] Attempting resource context for '{term}'.")
+                resource_context = extract_processed_content(term_specific_resources, MAX_RESOURCES_TO_USE)
+                if resource_context:
+                    final_context_for_term = resource_context
+                    context_source_type = "resource"
+                    logger.info(f"[{level_key}] Using RESOURCE context for '{term}'.")
+                else:
+                    logger.info(f"[{level_key}] No usable resource content for '{term}'. Trying parent context.")
+            else:
+                logger.info(f"[{level_key}] No entry/resources for '{term}' in resource map. Trying parent context.")
+
+            # 2. Try Parent-based context if resource context failed or wasn't applicable
+            if not final_context_for_term:
+                term_attributes = current_level_metadata.get(term)
+                if term_attributes: # Should always be true if term is from current_level_metadata keys
+                    logger.debug(f"[{level_key}] Attempting parent context for '{term}'.")
+                    parent_context = get_parent_based_context(term, term_attributes, current_level_metadata, level_key)
+                    if parent_context:
+                        final_context_for_term = parent_context
+                        context_source_type = "parent"
+                        logger.info(f"[{level_key}] Using PARENT context for '{term}'.")
+                    else:
+                        logger.warning(f"[{level_key}] Failed to get parent context for '{term}'.")
+                else: # Should not happen
+                     logger.error(f"[{level_key}] Term '{term}' (needing def) not found in its own metadata. Skipping.")
+
+
+            if final_context_for_term:
+                terms_for_batch_processing.append(term)
+                term_to_context_cache[term] = final_context_for_term
+            else:
+                logger.warning(f"[{level_key}] No context (resource or parent) for term '{term}'. Cannot generate definition.")
+                # This term failed to get context, effectively a failure for this run for this term
+                with global_counter_lock: # Should this be a separate per-level counter for "no context found"?
+                    global_failed_definitions_in_run += 1 
+
+
+        if not terms_for_batch_processing:
+            logger.info(f"No terms in {level_key} have sufficient context for definition generation. Skipping batch processing.")
+            # Log level summary here if needed, but main summary is at the end of level loop
+        else:
+            logger.info(f"Will attempt to generate definitions for {len(terms_for_batch_processing)} terms in {level_key}.")
+            # --- Batch Processing Loop ---
+            batch_num_for_level = 0
+            for i in range(0, len(terms_for_batch_processing), BATCH_SIZE):
+                batch_num_for_level += 1
+                current_batch_terms = terms_for_batch_processing[i:i+BATCH_SIZE]
+                batch_start_time = time.time()
+                logger.info(f"[{level_key}] Starting Batch {batch_num_for_level}/{ (len(terms_for_batch_processing) + BATCH_SIZE - 1)//BATCH_SIZE } with {len(current_batch_terms)} terms.")
                 
-                # Collect results as they complete
-                batch_results = {}
+                futures = []
+                with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS, thread_name_prefix=f"{level_key}_DefGen") as executor:
+                    for term_in_batch in current_batch_terms:
+                        context = term_to_context_cache.get(term_in_batch)
+                        if not context: # Should not happen if logic is correct
+                            logger.error(f"[{level_key}] CRITICAL: Context for term '{term_in_batch}' missing from cache. Skipping.")
+                            with global_counter_lock: global_failed_definitions_in_run += 1
+                            continue
+                        futures.append(executor.submit(process_term, llm, term_in_batch, context, batch_num_for_level, level_key))
+                
+                # Collect results from this batch
                 for future in concurrent.futures.as_completed(futures):
                     try:
-                        term, definition = future.result()
-                        if definition:
-                            batch_results[term] = definition
-                    except Exception as e:
-                        logger.error(f"Error collecting result from future: {e}")
-            
-            # Add batch results to level definitions
-            level_definitions.update(batch_results)
-            
-            # Convert batch results to the format for all_definitions
-            for term, definition in batch_results.items():
-                all_definitions[level_key].append({"term": term, "definition": definition})
-            
-            # Log batch completion
-            batch_duration = time.time() - batch_start_time
-            logger.info(f"Completed batch {batch_number} in {batch_duration:.2f}s - Added {len(batch_results)} definitions")
-            total_terms_processed += len(batch_terms)
-            
-            # Wait between batches to avoid rate limiting, unless it's the last batch
-            if i + BATCH_SIZE < len(terms_to_process):
-                logger.info(f"Waiting {BATCH_TIMEOUT} seconds before next batch...")
-                time.sleep(BATCH_TIMEOUT)
+                        processed_term, new_definition = future.result()
+                        if new_definition:
+                            definitions_to_update_in_metadata_for_level[processed_term] = new_definition
+                            run_generated_definitions_report[level_key].append({"term": processed_term, "definition": new_definition, "level": level_key})
+                        # Failures are already counted by process_term's global counter
+                    except Exception as exc:
+                        logger.error(f"[{level_key}] Batch {batch_num_for_level} - Exception collecting future result: {exc}")
+                        with global_counter_lock: global_failed_definitions_in_run += 1 # Count this as a failure too
 
-        # 4. Update metadata file with definitions
-        if level_definitions:
-            logger.info(f"Updating metadata file for {level_key} with {len(level_definitions)} definitions...")
-            if update_metadata_file(METADATA_FILE_TEMPLATE, level_num, level_definitions):
-                logger.info(f"Successfully updated metadata file for {level_key}.")
-            else:
-                logger.error(f"Failed to update metadata file for {level_key}.")
+                logger.info(f"[{level_key}] Batch {batch_num_for_level} finished in {time.time() - batch_start_time:.2f}s.")
+                if i + BATCH_SIZE < len(terms_for_batch_processing):
+                    logger.info(f"[{level_key}] Waiting {BATCH_TIMEOUT}s before next batch...")
+                    time.sleep(BATCH_TIMEOUT)
 
-        level_duration = time.time() - level_start_time
-        logger.info(f"Finished processing {level_key} in {level_duration:.2f}s. Success: {successful_definitions}, Failed: {failed_definitions}")
+        # --- After all batches for the level ---
+        if definitions_to_update_in_metadata_for_level:
+            logger.info(f"[{level_key}] Attempting to update metadata with {len(definitions_to_update_in_metadata_for_level)} newly generated definitions.")
+            update_metadata_file(METADATA_FILE_TEMPLATE, level_num, definitions_to_update_in_metadata_for_level)
+        else:
+            logger.info(f"[{level_key}] No new definitions were successfully generated in this run to update metadata.")
 
-    total_duration = time.time() - start_time
-    logger.info(f"--- Overall Summary ---")
-    logger.info(f"Processed a total of {total_terms_processed} terms across {len(LEVELS_TO_PROCESS)} levels in {total_duration:.2f}s")
-    logger.info(f"Total batches: {total_batch_count}, Total successful definitions: {successful_definitions}, Total failed: {failed_definitions}")
+        logger.info(f"--- Finished Level {level_key} in {time.time() - level_start_time:.2f}s ---")
+
+    # --- After all levels ---
+    logger.info(f"--- Overall Summary for This Run ---")
+    logger.info(f"Total script duration: {time.time() - run_start_time:.2f}s")
+    logger.info(f"Total definitions successfully generated (across all levels): {global_successful_definitions_in_run}")
+    logger.info(f"Total terms failed or skipped (no context/LLM error): {global_failed_definitions_in_run}")
     
-    if save_json_file(all_definitions, OUTPUT_FILE):
-        logger.info(f"All definitions saved to {OUTPUT_FILE}")
+    if save_json_file(run_generated_definitions_report, OUTPUT_FILE):
+        logger.info(f"Report of definitions generated in this run saved to: {OUTPUT_FILE}")
     else:
-        logger.error(f"Failed to save definitions to {OUTPUT_FILE}")
+        logger.error(f"Failed to save report of definitions generated in this run to {OUTPUT_FILE}")
 
-    logger.info("Glossary definition generation process finished.")
+    logger.info("Glossary definition generation process finished for this run.")
 
 # --- Script Entry Point ---
 if __name__ == "__main__":

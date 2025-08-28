@@ -4,3 +4,12 @@ scikit-learn>=1.0.0
 faiss-cpu>=1.7.0
 # Optional for enhanced clustering
 hdbscan>=0.8.29 
+
+# New dependencies for refactored architecture
+pydantic>=2.7.0
+orjson>=3.9.0  # Optional but recommended for faster JSON processing
+
+# Development dependencies (only needed for CI/testing)
+pytest>=7.0.0
+mypy>=1.0.0
+ruff>=0.1.0 

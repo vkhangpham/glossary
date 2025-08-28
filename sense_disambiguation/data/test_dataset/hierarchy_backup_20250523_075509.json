@@ -1,0 +1,1510 @@
+{
+  "version": "0.1-test-with-resources",
+  "levels": {
+    "0": [
+      "science",
+      "engineering"
+    ],
+    "1": [
+      "computer science",
+      "electrical engineering",
+      "political science",
+      "materials science",
+      "chemistry",
+      "nuclear physics",
+      "fashion studies",
+      "statistics",
+      "power systems",
+      "psychology",
+      "finance",
+      "telecommunications engineering",
+      "earth science",
+      "life science"
+    ]
+  },
+  "terms": {
+    "transformers": {
+      "level": 2,
+      "parents": [
+        "machine learning",
+        "power systems"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Transformers_(film_series)",
+          "title": "Transformers (film series)",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.577974"
+        },
+        {
+          "url": "https://github.com/huggingface/transformers",
+          "title": "Transformers: State-of-the-art Machine Learning for ...",
+          "description": "",
+          "processed_content": "The Hugging Face Transformers library provides access to a vast collection of pretrained models for diverse AI tasks spanning text, vision, audio, and multimodal applications. It simplifies leveraging these state-of-the-art models for inference, training, and fine-tuning, making advanced AI capabilities more accessible.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.577987"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Transformers",
+          "title": "Transformers",
+          "description": "",
+          "processed_content": "Transformers are alien robotic lifeforms, primarily depicted as two warring factions, the heroic Autobots and villainous Decepticons. Their defining characteristic is the ability to transform between their robot forms and alternate modes, such as vehicles or animals. This core concept originated from transforming toy lines and forms the basis of the extensive media franchise.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.577991"
+        },
+        {
+          "url": "https://www.paramountmovies.com/movies/transformers-one",
+          "title": "Watch Transformers One Now on Digital",
+          "description": "",
+          "processed_content": "TRANSFORMERS ONE is the untold origin story of Optimus Prime and Megatron, better known as sworn enemies, but once were friends bonded like brothers who ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.577995"
+        },
+        {
+          "url": "https://tfwiki.net/wiki/Main_Page",
+          "title": "Transformers Wiki - TFWiki.net",
+          "description": "",
+          "processed_content": "TFWiki.net: the Transformers Wiki is the unofficial Transformers knowledge database of 31,674 articles that anyone can edit or add to! For non-Transformer ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.577998"
+        },
+        {
+          "url": "https://transformers.fandom.com/wiki/Main_Page",
+          "title": "The Transformers Wiki - Fandom",
+          "description": "",
+          "processed_content": "Transformers Wiki is a knowledge base devoted to the Transformers franchise, covering the TV series, comic books, Entertainment, real-life people, objects, ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578002"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Transformer",
+          "title": "Transformer",
+          "description": "",
+          "processed_content": "A transformer is a passive electrical component that transfers energy between circuits using electromagnetic induction. It works by using a varying current in one coil (the primary) to create a changing magnetic field in a core, which in turn induces a voltage in another coil (the secondary). This process allows transformers to efficiently change AC voltage levels (step-up or step-down) or provide electrical isolation between circuits without a direct conductive connection.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578005"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Transformers_film_series_cast_and_characters",
+          "title": "List of Transformers film series cast and characters",
+          "description": "",
+          "processed_content": "The following is a list of cast members and characters from the Transformers film series and the tie-in video games. Transformers, written in a metallic ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578012"
+        }
+      ]
+    },
+    "interface": {
+      "level": 2,
+      "parents": [
+        "software engineering",
+        "materials science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Interface_(computing)",
+          "title": "Interface (computing)",
+          "description": "",
+          "processed_content": "In computing, an interface serves as a defined boundary or contract specifying how distinct components, such as hardware, software modules, or users, interact and exchange information. It outlines the methods, protocols, or signals for communication, effectively decoupling components by defining *what* they do rather than *how* they do it. This abstraction allows for flexibility, controlled access to resources, and the ability to substitute implementations while maintaining consistent interaction.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578110"
+        },
+        {
+          "url": "https://www.interface.com/US/en-US.html",
+          "title": "Interface Commercial Carpet Tile & Resilient Flooring | Interface",
+          "description": "",
+          "processed_content": "Interface sets the standard for design, sustainability and performance in commercial carpet tile and hard surface flooring, including LVT and nora rubber ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578120"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/interface",
+          "title": "INTERFACE Definition & Meaning",
+          "description": "",
+          "processed_content": "An interface is fundamentally a boundary or meeting point between two distinct entities, whether physical bodies or independent systems. It serves as the location or the mechanism through which these entities interact or communicate. This concept highlights how separate components connect and exchange information or actions.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578126"
+        },
+        {
+          "url": "https://www.interfaceforce.com/home/",
+          "title": "Interface Force Measurement Solutions",
+          "description": "",
+          "processed_content": "Interface designs and manufactures world-class load cells, torque transducers, multi-axis sensors, instrumentation, force measurement systems and solutions.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578132"
+        },
+        {
+          "url": "https://interfacesystems.com/",
+          "title": "Managed Services for Multi-Location Enterprises | Interface",
+          "description": "",
+          "processed_content": "Interface Systems is a managed services provider offering physical security, business intelligence, network & voice solutions to multi-location enterprises.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578137"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Interface",
+          "title": "Interface",
+          "description": "",
+          "processed_content": "An interface is fundamentally defined as a shared boundary that exists between different system components. This concept applies across various domains, including computing, programming, and physical systems. It serves as the point where distinct parts interact or communicate, facilitating connections between them.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578140"
+        },
+        {
+          "url": "https://www.quora.com/Why-doesnt-Wikipedia-improve-its-user-interface",
+          "title": "Why doesn't Wikipedia improve its user interface?",
+          "description": "",
+          "processed_content": "As others have pointed out, the Wikipedia interface has actually changed a lot since it started in 2001. But it will seem clunky and dated to those who ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578143"
+        },
+        {
+          "url": "https://www.reddit.com/r/wikipedia/comments/10fc9pn/help_post_wikipedia_changed_to_a_new_interface/",
+          "title": "Wikipedia changed to a new interface. How to get the old ...",
+          "description": "",
+          "processed_content": "Here's the way to revert to the previous interface. First you need to access your Preferences: https://en.wikipedia.org/wiki/Special:Preferences#mw-prefsection ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578146"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Interface,_Inc.",
+          "title": "Interface, Inc.",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578153"
+        }
+      ]
+    },
+    "modeling": {
+      "level": 2,
+      "parents": [
+        "statistics",
+        "fashion studies"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Model_(person)",
+          "title": "Model (person)",
+          "description": "",
+          "processed_content": "Modeling, or modelling, fundamentally involves a person using their physical presence to represent or display something, such as commercial products like clothing or serving as a visual reference for artists. This activity centers on embodying an image or showcasing items, requiring the model to utilize their body to convey a concept or product to an audience or creator. Distinct from acting or dancing, modeling typically focuses on presenting a specific appearance or item rather than expressing personal opinions or narrative. Its purpose spans various fields, from fashion and art to promotion and advertising, where the model acts as a living medium.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578214"
+        },
+        {
+          "url": "https://www.modelmanagement.com/",
+          "title": "Models, Modeling Agencies & Photographers",
+          "description": "",
+          "processed_content": "Model Management connects new faces and models with scouts, international modeling agencies and model photographers.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578220"
+        },
+        {
+          "url": "https://www.dictionary.com/browse/modeling",
+          "title": "MODELING Definition & Meaning",
+          "description": "",
+          "processed_content": "Modeling is the process of creating a representation of something, which can range from physical forms and behaviors to complex systems and processes. In technical and academic contexts, this often involves developing mathematical or computational representations to simulate, analyze, or predict the behavior of the subject being modeled. This allows for understanding, testing, or visualizing phenomena through a simplified or abstract depiction.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578224"
+        },
+        {
+          "url": "https://www.best-agencies.com/models/how-to-get-into-modeling/",
+          "title": "How to Get into Modeling",
+          "description": "",
+          "processed_content": "Modeling, as described, is a profession within the fashion and commercial industries where individuals present themselves for purposes like runway, print, or live events. It requires specific physical attributes or a unique \"look\" depending on the genre, alongside professionalism, resilience, and the ability to navigate a competitive business environment involving agents and portfolios.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578227"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/modeling",
+          "title": "MODELING | definition in the Cambridge English Dictionary",
+          "description": "",
+          "processed_content": "Modeling, particularly in mathematical and computing fields, is the practice of using simplified representations or descriptions of systems or processes. This activity serves the purpose of performing calculations or predicting potential future events or behaviors within those systems.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578230"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Model",
+          "title": "Model",
+          "description": "",
+          "processed_content": "Modeling is the process of creating simplified representations, known as models, of real or imagined systems, objects, or concepts. These representations selectively capture relevant attributes of the original, serving as pragmatic tools for specific purposes. The aim is typically to understand, predict, simulate, or illustrate the original, providing a reduced yet informative view for analysis or communication.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578233"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Modeling_and_simulation",
+          "title": "Modeling and simulation",
+          "description": "",
+          "processed_content": "Modeling is defined as the purposeful abstraction of reality, creating formal representations such as mathematical or logical models for systems, entities, or processes. These models capture key parameters, underlying assumptions, and constraints, serving as the conceptual foundation. Essentially, modeling translates real-world concepts into a structured format suitable for analysis and virtual experimentation via simulation.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578236"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Data_modeling",
+          "title": "Data modeling",
+          "description": "",
+          "processed_content": "Modeling, as exemplified by data modeling, is the process of creating structured representations or models to define and analyze aspects of a system or domain. These models capture requirements, organization, and relationships, such as those between data elements. The goal is to understand, manage, and integrate information effectively, often serving as a blueprint for designing systems like databases.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578239"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Modeling",
+          "title": "Category:Modeling",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578242"
+        }
+      ]
+    },
+    "fragmentation": {
+      "level": 2,
+      "parents": [
+        "organic chemistry",
+        "political science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Fragmentation_(reproduction)",
+          "title": "Fragmentation (reproduction)",
+          "description": "",
+          "processed_content": "Fragmentation is a form of asexual reproduction where a multicellular or colonial organism splits into fragments, and each fragment is capable of growing into a new, complete individual. This process can involve specialized structures designed to break off or occur through accidental breakage, provided the resulting pieces can regenerate missing parts. It serves as a common method of propagation across diverse life forms, including plants, fungi, algae, and various invertebrates.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578292"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fragmentation",
+          "title": "FRAGMENTATION definition | Cambridge English Dictionary",
+          "description": "",
+          "processed_content": "Fragmentation describes the process or state where a whole entity, system, or area is broken down or divided into smaller, often disconnected or less cohesive parts. This concept applies across diverse fields, representing the division of political structures, industries, physical areas, or even biological entities into separate components. Such division can lead to reduced continuity, coordination, or overall integrity within the original whole.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578298"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/fragmentation",
+          "title": "FRAGMENTATION Definition & Meaning",
+          "description": "",
+          "processed_content": "Fragmentation describes the process of breaking something into smaller, separate pieces. It also refers to the resulting state of being divided into fragments.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578302"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Fragmentation_(weaponry)",
+          "title": "Fragmentation (weaponry)",
+          "description": "",
+          "processed_content": "Fragmentation in weaponry is the process where the detonation of an explosive charge shatters and disperses the weapon's casing or pre-loaded elements. These resulting high-velocity pieces, known as fragments, are the primary lethal mechanism of such weapons. This method, which propels fragments in all directions by destroying the casing, is distinct from shrapnel shells that expel pre-loaded balls using a smaller charge.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578305"
+        },
+        {
+          "url": "https://www.vocabulary.com/dictionary/fragmentation",
+          "title": "Fragmentation - Definition, Meaning & Synonyms",
+          "description": "",
+          "processed_content": "Fragmentation describes the process or result of something breaking apart into multiple distinct pieces or fragments. It signifies a separation or division, often implying a disruption that divides a whole into smaller components.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578308"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Fragmentation",
+          "title": "Fragmentation",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578311"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Fragmentation_(computing)",
+          "title": "Fragmentation (computing)",
+          "description": "",
+          "processed_content": "Fragmentation in computer storage is a condition where memory or disk space becomes divided into many small, non-contiguous blocks. This occurs as data is allocated and freed over time, making it difficult to find large, continuous areas for new data or processes. Consequently, fragmentation leads to inefficient storage utilization, reduced performance due to scattered data access, and can even cause allocation failures despite sufficient total free space.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578314"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Fragmentation_(economics)",
+          "title": "Fragmentation (economics)",
+          "description": "",
+          "processed_content": "Fragmentation, particularly in economics, describes the process of breaking down the production of goods into distinct stages. These stages are then distributed among different suppliers, often located in various countries, leading to complex global supply chains and trade in components rather than just finished products. This division of labor across borders is a key characteristic of modern globalization.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578317"
+        }
+      ]
+    },
+    "clustering": {
+      "level": 2,
+      "parents": [
+        "machine learning",
+        "nuclear physics"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cluster_analysis",
+          "title": "Cluster analysis",
+          "description": "",
+          "processed_content": "Clustering, or cluster analysis, is a data analysis technique used to group a set of objects into clusters such that items within the same cluster are more similar to each other than to those in other clusters. This exploratory method involves various algorithms, each defining similarity and the structure of a cluster differently, making it an iterative process of knowledge discovery.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578370"
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/clustering-in-machine-learning/",
+          "title": "Clustering in Machine Learning",
+          "description": "",
+          "processed_content": "Clustering is an unsupervised machine learning technique used to group data points into clusters based on their similarity, without relying on predefined categories. The goal is to partition a dataset such that points within the same group are more alike than those in other groups. This process helps uncover hidden patterns and structures in unlabeled data, enabling tasks like market segmentation or anomaly detection. Different methods exist, varying in how they define similarity and form clusters, such as based on distance to a centroid, data density, or connectivity.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578375"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Clustering",
+          "title": "Clustering",
+          "description": "",
+          "processed_content": "Clustering is a concept involving the organization of items into groups or clusters. This process typically aims to place objects that are similar or close to each other within the same group. The idea of forming such concentrations of related entities is applied across diverse domains like data analysis, economics, and computing.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578379"
+        },
+        {
+          "url": "https://scikit-learn.org/stable/modules/clustering.html",
+          "title": "2.3. Clustering",
+          "description": "",
+          "processed_content": "Clustering is a technique in data analysis used to group unlabeled data points into subsets called clusters. The fundamental goal is to partition the dataset such that points within the same cluster are more similar to each other than to points in other clusters. Various algorithms achieve this by employing different criteria, such as minimizing distances between points and cluster centers, identifying dense regions, or building hierarchical structures.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578382"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/K-means_clustering",
+          "title": "K-means clustering",
+          "description": "",
+          "processed_content": "Clustering is a data analysis technique used to group observations into distinct sets, or clusters, based on their similarity. Algorithms like k-means achieve this by iteratively assigning data points to the cluster with the closest central point (centroid) and updating these centers. The goal is to partition the data such that the variation within each cluster is minimized, resulting in groups where points are more similar to each other than to points in other clusters.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578385"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hierarchical_clustering",
+          "title": "Hierarchical clustering",
+          "description": "",
+          "processed_content": "Clustering is a data analysis technique used to group data points based on their similarity. Hierarchical clustering, a specific method discussed, builds a nested structure of these groups by either progressively merging individual points into larger clusters (agglomerative) or recursively splitting a single large cluster (divisive). This process relies on calculating distances between data points or clusters to determine how groups are formed at each step.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578388"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Automatic_clustering_algorithms",
+          "title": "Automatic clustering algorithms",
+          "description": "",
+          "processed_content": "Clustering is a data analysis technique used to group objects into subsets, or \"clusters,\" such that objects within the same cluster are more similar to each other than to those in other clusters. Various algorithms achieve this by considering different criteria, such as distance to central points, proximity to neighboring objects, or the density of data points in a region. The primary goal is to discover inherent structure and patterns within unlabeled data by partitioning it into meaningful groups.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578391"
+        }
+      ]
+    },
+    "stress": {
+      "level": 2,
+      "parents": [
+        "psychology",
+        "materials science"
+      ],
+      "resources": [
+        {
+          "url": "https://my.clevelandclinic.org/health/diseases/11874-stress",
+          "title": "Stress: What It Is, Symptoms, Management & Prevention",
+          "description": "",
+          "processed_content": "Stress is the body's inherent physical and mental response to changes or challenges, known as stressors. While a natural reaction that can sometimes be beneficial, persistent or chronic stress can cause significant wear and tear on the body and mind. This can lead to a range of negative physical, emotional, and behavioral symptoms, highlighting the importance of managing stress despite its unavoidable nature.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578441"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/article/003211.htm",
+          "title": "Stress and your health: MedlinePlus Medical Encyclopedia",
+          "description": "",
+          "processed_content": "Stress is defined as a feeling of tension and the body's physiological reaction to challenges or demands. This reaction involves hormonal changes that prepare the body, which can be beneficial in short bursts for managing immediate situations. However, when stress is prolonged or chronic, this sustained state can lead to various negative health consequences.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578447"
+        },
+        {
+          "url": "https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress-symptoms/art-20050987",
+          "title": "Stress symptoms: Effects on your body and behavior",
+          "description": "",
+          "processed_content": "Stress symptoms can affect your body, your thoughts and feelings, and your behavior. Knowing common stress symptoms can help you manage them. Stress that's not ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578450"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Stress",
+          "title": "Stress",
+          "description": "",
+          "processed_content": "Stress, particularly in biological and psychological contexts, describes an organism's reaction to demanding conditions or stimuli, termed stressors. This reaction often involves a feeling of strain or pressure.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578453"
+        },
+        {
+          "url": "https://en.wiktionary.org/wiki/stress",
+          "title": "stress",
+          "description": "",
+          "processed_content": "Stress fundamentally describes a force, pressure, or challenge that impacts a system, leading to a response or change. This concept applies broadly, encompassing physical forces on materials, biological agents causing organism reactions, and psychological pressure arising from situations perceived as exceeding one's capacity to cope.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578456"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Stress_(biology)",
+          "title": "Stress (biology)",
+          "description": "",
+          "processed_content": "Stress is fundamentally an organism's response to threats or adverse changes in its environment. In humans, this often presents as a feeling of emotional strain and pressure. While minor stress can sometimes be beneficial, excessive or prolonged stress can significantly harm both physical and mental health.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578459"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chronic_stress",
+          "title": "Chronic stress",
+          "description": "",
+          "processed_content": "Stress is the body's natural physiological and psychological reaction to perceived threats or demands. This adaptive system, exemplified by the \"fight or flight\" response, helps navigate challenging environments by triggering responses like hormone release. However, while acute stress is generally harmless, chronic exposure can overwhelm the system, resulting in significant detrimental health effects.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578462"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Stress_management",
+          "title": "Stress management",
+          "description": "",
+          "processed_content": "Stress is a state arising from demands or pressures that trigger various physical and mental symptoms, varying based on individual and situational factors. While historically viewed as a direct reaction to external events, contemporary understanding highlights that an individual's perception, resources, and coping abilities significantly mediate this response. Stress can manifest as short-term (acute) reactions, which may even be beneficial, or as prolonged (chronic) states associated with serious health risks.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578465"
+        }
+      ]
+    },
+    "regression": {
+      "level": 2,
+      "parents": [
+        "statistics",
+        "psychology"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Regression_analysis",
+          "title": "Regression analysis",
+          "description": "",
+          "processed_content": "Regression analysis is a statistical method used to estimate the relationship between a dependent variable and one or more independent variables. The goal is to find a mathematical function that best describes how the dependent variable changes as the independent variables change, often by minimizing the difference between observed and predicted values. This technique is widely applied for purposes such as predicting outcomes or, under specific conditions, inferring potential causal links between variables.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578515"
+        },
+        {
+          "url": "https://www.investopedia.com/terms/r/regression.asp",
+          "title": "Regression: Definition, Analysis, Calculation, and Example",
+          "description": "",
+          "processed_content": "Regression is a statistical method used to analyze and quantify the relationship between a dependent variable and one or more independent variables. It aims to determine the strength and character of these associations within a dataset, often by fitting a model like a line of best fit. This technique helps identify how changes in independent variables are related to changes in the dependent variable, providing insights into observed data patterns.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578521"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Regression_(film)",
+          "title": "Regression (film)",
+          "description": "",
+          "processed_content": "Regression is a 2015 psychological thriller mystery film directed and written by Alejandro Amenábar. The film stars Ethan Hawke and Emma Watson, ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578524"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/regression",
+          "title": "REGRESSION Definition & Meaning",
+          "description": "",
+          "processed_content": "Regression is a statistical concept describing a functional relationship between correlated variables, often determined from data. It is primarily used to model how one variable relates to others, enabling the prediction of values for a dependent variable based on given values of independent variables. Specifically, it seeks a function that represents the mean value of a random variable conditioned on the values of other variables.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578528"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Regression",
+          "title": "Regression",
+          "description": "",
+          "processed_content": "The term \"regression\" encompasses several distinct concepts across different fields. In statistics, regression analysis is a technique used to estimate the relationships between variables. More broadly, the term often refers to a return to a previous state, such as a software bug reappearing or symptoms lessening in medicine.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578530"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Linear_regression",
+          "title": "Linear regression",
+          "description": "",
+          "processed_content": "Regression analysis, as primarily illustrated by linear regression in the text, is a statistical method used to model and estimate the relationship between a dependent variable and one or more independent variables. It focuses on understanding how the dependent variable's distribution changes based on the values of the independent variables, often by fitting a linear function to quantify this relationship for prediction or explanation.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578537"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Regression_(psychology)",
+          "title": "Regression (psychology)",
+          "description": "",
+          "processed_content": "Regression, in psychoanalytic theory, is a defense mechanism where the ego reverts to behaviors and thought processes characteristic of an earlier stage of psychosexual development. This psychological retreat is typically triggered by overwhelming stress or internal conflict. While often viewed as a maladaptive response linked to fixation and neurosis, some perspectives suggest a controlled form can serve the ego, potentially aiding creativity or empathy.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578540"
+        }
+      ]
+    },
+    "cell": {
+      "level": 2,
+      "parents": [
+        "molecular biology",
+        "telecommunications engineering"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cell_(biology)",
+          "title": "Cell (biology)",
+          "description": "",
+          "processed_content": "The cell is the fundamental structural and functional unit of all living organisms, consisting of cytoplasm enclosed by a membrane and often containing specialized organelles. Capable of essential processes like replication and protein synthesis, cells are broadly categorized into prokaryotic types, which lack a nucleus, and eukaryotic types, which possess a nucleus and complex internal compartments. According to cell theory, all life is composed of one or more cells, and all cells arise from pre-existing cells.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578588"
+        },
+        {
+          "url": "https://www.britannica.com/science/cell-biology",
+          "title": "Cell | Definition, Types, Functions, Diagram, Division ...",
+          "description": "",
+          "processed_content": "The cell is the fundamental, membrane-bound unit that forms the basis of all living organisms. Containing the essential molecules of life, each cell functions as a self-contained entity capable of metabolism, growth, and reproduction, either independently or as a specialized component within multicellular structures.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578593"
+        },
+        {
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cell",
+          "title": "Definition of cell - NCI Dictionary of Cancer Terms",
+          "description": "",
+          "processed_content": "In biology, the smallest unit that can live on its own and that makes up all living organisms and the tissues of the body. A cell has three main parts: the ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578596"
+        },
+        {
+          "url": "https://www.nature.com/articles/d41586-024-03754-y",
+          "title": "A 'Wikipedia for cells': researchers get an updated look at ...",
+          "description": "",
+          "processed_content": "According to the text, cells are the fundamental units that make up living organisms. Trillions of these dynamic entities exist in the human body, varying by type and changing over time. Mapping and understanding these cells is vital for advancing knowledge of biology, health, and disease.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578599"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cell_(Dragon_Ball)",
+          "title": "Cell (Dragon Ball)",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578602"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cell",
+          "title": "Cell",
+          "description": "",
+          "processed_content": "In biology, the term \"cell\" refers to the fundamental, functional unit that constitutes all known living organisms. It is considered the basic building block of life, carrying out the essential processes necessary for survival.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578605"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Cell",
+          "title": "Cell - Simple English Wikipedia, the free encyclopedia",
+          "description": "",
+          "processed_content": "The cell is the fundamental unit of structure and function in all living organisms, enclosed by a membrane that separates its internal contents from the environment. Cells contain cytoplasm and, in eukaryotes, specialized organelles like the nucleus, while simpler prokaryotic cells lack these complex internal structures. All cells originate from the division of existing cells.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578609"
+        }
+      ]
+    },
+    "network": {
+      "level": 2,
+      "parents": [
+        "computer science",
+        "social sciences"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Network_(1976_film)",
+          "title": "Network (1976 film)",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578653"
+        },
+        {
+          "url": "https://networklobby.org/",
+          "title": "NETWORK Lobby for Catholic Social Justice",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578659"
+        },
+        {
+          "url": "https://www.comptia.org/certifications/network",
+          "title": "Network+ (Plus) Certification",
+          "description": "",
+          "processed_content": "Based on the text, a network represents a system of interconnected components and technologies, such as appliances, routing, and switching, designed to enable communication and resource sharing. Establishing, maintaining, securing, and troubleshooting these systems are core activities required to ensure their reliable operation.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578662"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/network",
+          "title": "NETWORK Definition & Meaning",
+          "description": "",
+          "processed_content": "A network is fundamentally an interconnected system or structure where multiple components are linked together. This linkage allows for interaction, communication, or shared function among the elements, which can range from physical lines and channels to technological devices or groups of people. It describes a web of connections forming a larger, interrelated whole.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578665"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Network",
+          "title": "Network",
+          "description": "",
+          "processed_content": "A network fundamentally represents a system composed of distinct entities or nodes interconnected by relationships or links. This versatile concept applies across diverse fields, including mathematics, biology, technology, and social sciences. It describes how these linked elements form a larger structure, whether through physical connections, abstract relationships, or functional interactions.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578668"
+        },
+        {
+          "url": "https://snap.stanford.edu/data/wiki-Vote.html",
+          "title": "Network datasets: Wikipedia vote network - SNAP",
+          "description": "",
+          "processed_content": "Based on the provided text, the network is a structured representation of Wikipedia's administrator election voting history. It models the relationships between users involved in these elections. In this network, individual Wikipedia users are depicted as nodes, and a directed connection or edge between two nodes indicates that one user cast a vote for the other.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578671"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Computer_network",
+          "title": "Computer network",
+          "description": "",
+          "processed_content": "A network is fundamentally a collection of interconnected devices, known as nodes, that communicate with each other using established rules called protocols. These connections, which can be physical or wireless, enable the sharing of resources and information among the connected nodes. Networks vary widely in scale, structure (topology), and the underlying technologies employed for communication.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578674"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Networks",
+          "title": "Category:Networks",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578677"
+        }
+      ]
+    },
+    "bond": {
+      "level": 2,
+      "parents": [
+        "organic chemistry",
+        "finance"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bond_(finance)",
+          "title": "Bond (finance)",
+          "description": "",
+          "processed_content": "A bond is a financial security representing a debt obligation where an issuer owes a specified amount (principal) to the holder. The issuer is typically required to make regular interest payments (coupons) to the bondholder and repay the principal amount by a predetermined maturity date. Essentially a form of loan, bonds allow entities like governments or corporations to borrow funds, establishing the bondholder as a creditor.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578721"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/bond",
+          "title": "BOND Definition & Meaning",
+          "description": "",
+          "processed_content": "\"Bond\" is a concept referring to something that connects, ties, or holds things together, whether physically, chemically, or emotionally. It can also represent a binding agreement, obligation, or guarantee, often involving financial or legal commitments.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578727"
+        },
+        {
+          "url": "https://www.007.com/",
+          "title": "James Bond 007: Home",
+          "description": "",
+          "processed_content": "The official website of James Bond 007. We'll keep you fully briefed on the amazing 007 events happening across the globe in 2025 and beyond.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578733"
+        },
+        {
+          "url": "https://bondhome.io/?srsltid=AfmBOop-XlMhgkUhGuciIoAx7_NGtvuGKge6cnEmiFGYf4P_cqTIAoQT",
+          "title": "Bond: Home",
+          "description": "",
+          "processed_content": "Bond Bridge turns most remote-controlled ceiling fans, fireplaces, and shades smart in seconds. There's no complicated installation. Buy now. ×. Sidekick for ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578736"
+        },
+        {
+          "url": "https://www.investopedia.com/terms/b/bond.asp",
+          "title": "Bonds: How They Work and How To Invest",
+          "description": "",
+          "processed_content": "A bond is a fixed-income investment where an individual or entity lends money to a borrower, typically a government or corporation. In return for this loan, the borrower agrees to pay periodic interest payments (coupons) and repay the original principal amount (face value) on a specified maturity date. This mechanism allows borrowers to finance projects and operations while providing lenders with a return on their investment.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578739"
+        },
+        {
+          "url": "https://en.wiktionary.org/wiki/bond",
+          "title": "bond",
+          "description": "",
+          "processed_content": "Fundamentally, a bond signifies a connection or obligation that binds parties or elements together. This concept applies in finance, where a bond is a formal debt obligation requiring the issuer to pay interest and principal to the holder. It also describes the force linking atoms in chemistry or, more broadly, physical ties and emotional connections.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578742"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Bond",
+          "title": "Bond",
+          "description": "",
+          "processed_content": "The term \"bond\" refers to various distinct concepts across different fields. It can describe financial or legal agreements, such as debt securities or guarantees, which represent obligations between parties. Additionally, \"bond\" signifies physical or chemical connections holding atoms or structures together, as well as emotional attachments between individuals or formal agreements like treaties. Fundamentally, \"bond\" often denotes a connection, link, or binding relationship in diverse contexts.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578745"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/James_Bond",
+          "title": "James Bond",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578747"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Bond_(finance)",
+          "title": "Bond (finance) - Simple English Wikipedia, the free ...",
+          "description": "",
+          "processed_content": "A bond is a financial instrument representing a debt agreement where an issuer, such as a government or corporation, borrows funds from investors. In exchange for the loan, the issuer promises to repay the principal amount by a specified maturity date and typically makes regular interest payments. Essentially, it's a formal contract acknowledging the debt and the terms of its repayment.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578750"
+        }
+      ]
+    },
+    "geology": {
+      "level": 2,
+      "parents": [
+        "earth science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Geology",
+          "title": "Geology",
+          "description": "",
+          "processed_content": "Geology is the natural science dedicated to studying the Earth and other celestial bodies, examining their composition, structure, and the processes that have shaped them throughout time. Geologists analyze materials like rocks and minerals to understand planetary history, internal dynamics such as plate tectonics, and phenomena ranging from ancient climates to natural hazards. This field employs diverse methods to reconstruct the past and inform practical applications like resource exploration and engineering.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579074"
+        },
+        {
+          "url": "https://geology.com/",
+          "title": "Geology and Earth Science News, Articles, Photos, Maps and ...",
+          "description": "",
+          "processed_content": "Geology is the scientific study of Earth. It investigates the planet's materials, structures, and the dynamic processes that shape it over time. This field examines everything from rocks and minerals to landforms, volcanoes, and the history of life preserved in the geological record.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579080"
+        },
+        {
+          "url": "https://www.gsi.ie/en-ie/education/what-is-geology/Pages/default.aspx",
+          "title": "What is Geology?",
+          "description": "",
+          "processed_content": "Geology is the primary Earth science, essentially the study of our planet. It investigates the Earth's formation, internal structure, composition, and the dynamic processes that have shaped it over its 4.5-billion-year history. By examining Earth's features, geologists uncover its past and gain insights into its potential future.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579083"
+        },
+        {
+          "url": "https://www.usgs.gov/science/science-explorer/geology",
+          "title": "Geology | U.S. Geological Survey",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579086"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Geology",
+          "title": "Geology - Simple English Wikipedia, the free encyclopedia",
+          "description": "",
+          "processed_content": "Geology is the scientific study of the Earth's solid materials, including rocks, minerals, and soils, and the processes that shape them. It investigates their composition, structure, and the history of the planet through examining events like volcanic activity, earthquakes, and mountain building. This field seeks to understand the Earth's formation, evolution, and the dynamic forces acting upon it over vast timescales.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579089"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Portal:Geology",
+          "title": "Portal:Geology",
+          "description": "",
+          "processed_content": "Geology is a natural science dedicated to studying the Earth and other rocky celestial bodies. It investigates their composition, internal structure, and the dynamic processes that have shaped them over geological time. Through examining rocks, minerals, and landforms, geologists reconstruct planetary history, understand phenomena like plate tectonics, and address practical concerns like resources and hazards.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579092"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Geological_history_of_Earth",
+          "title": "Geological history of Earth",
+          "description": "",
+          "processed_content": "Geology is the scientific study of Earth's physical history, structure, and the dynamic processes that have shaped it over billions of years. This field investigates the planet's formation, the composition and arrangement of its rock layers, and forces like plate tectonics, volcanism, and climate changes to reconstruct Earth's past and understand its ongoing evolution.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579094"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Geology_of_the_United_States",
+          "title": "Geology of the United States",
+          "description": "",
+          "processed_content": "Geology, as illustrated by the varied landscapes of the United States, is the study of Earth's history and the dynamic processes that shape its surface. This includes understanding how forces like plate tectonics, weathering, and erosion interact over millions of years to create features such as mountains, valleys, and plateaus. Geologists analyze rock formations, structures, and phenomena like volcanism and faulting to unravel the complex evolution of different regions.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579103"
+        }
+      ]
+    },
+    "astrophysics": {
+      "level": 2,
+      "parents": [
+        "physics"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Astrophysics",
+          "title": "Astrophysics",
+          "description": "",
+          "processed_content": "Astrophysics is a scientific discipline that applies the principles and methods of physics and chemistry to study astronomical objects and phenomena. It focuses on understanding the nature and properties of celestial bodies, such as their composition, temperature, and evolution, rather than just their positions or motions. By analyzing radiation across the electromagnetic spectrum and employing diverse physics concepts, astrophysicists investigate everything from stars and galaxies to the origin and fate of the universe.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579153"
+        },
+        {
+          "url": "https://science.nasa.gov/astrophysics/",
+          "title": "NASA Astrophysics",
+          "description": "",
+          "processed_content": "Astrophysics is a scientific field dedicated to exploring the universe using advanced space missions and technology. It seeks to understand the cosmos's origins, evolution, and fundamental workings, including phenomena like dark energy and dark matter. Through studying celestial objects and cosmic processes, astrophysics aims to answer fundamental questions about the universe and the potential for life beyond Earth.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579158"
+        },
+        {
+          "url": "https://www.cfa.harvard.edu/",
+          "title": "Center for Astrophysics | Harvard & Smithsonian: Home",
+          "description": "",
+          "processed_content": "Astrophysics is a scientific discipline focused on exploring and understanding the universe by asking fundamental questions about cosmic phenomena. It utilizes advanced tools, including telescopes sensitive across the electromagnetic spectrum, to investigate the cosmos. Through research and technological development, astrophysics aims to expand humanity's knowledge of the universe.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579161"
+        },
+        {
+          "url": "https://www.physics.ox.ac.uk/research/subdepartment/astrophysics",
+          "title": "Astrophysics | University of Oxford Department of Physics",
+          "description": "",
+          "processed_content": "Astrophysics applies the principles of physics to study celestial objects and phenomena across the universe. This includes investigating the origin and evolution of the cosmos, galaxies, stars, and planets, as well as extreme environments like those around black holes and pulsars. The field relies on both theoretical modeling and observational data gathered using advanced astronomical instrumentation.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579164"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Astrophysics",
+          "title": "Category:Astrophysics",
+          "description": "",
+          "processed_content": "Astrophysics is a branch of astronomy that applies the principles of physics to understand the universe. It investigates the physical properties and interactions of celestial objects such as stars, galaxies, and the interstellar medium. This field explores phenomena ranging from the characteristics of individual cosmic bodies to the fundamental physics governing the universe on both its largest scales, like cosmology, and its smallest.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579167"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Astrophysics",
+          "title": "Astrophysics - Simple English Wikipedia, the free ...",
+          "description": "",
+          "processed_content": "Astrophysics is the scientific field that applies the principles of physics and chemistry to understand the nature, behavior, and evolution of celestial objects and phenomena. It investigates everything from stars, planets, and galaxies to the origin and large-scale structure of the entire universe, often combining observational data with theoretical modeling.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579170"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Astronomy_%26_Astrophysics",
+          "title": "Astronomy & Astrophysics",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579172"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Nuclear_astrophysics",
+          "title": "Nuclear astrophysics",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579175"
+        }
+      ]
+    },
+    "botany": {
+      "level": 2,
+      "parents": [
+        "life science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Botany",
+          "title": "Botany",
+          "description": "",
+          "processed_content": "Botany, also known as plant science, is the scientific discipline dedicated to the study of plants. This comprehensive field explores various aspects of plant life, including their structure, function, growth, evolution, classification, and interactions with the environment. From its origins in identifying useful plants, modern botany employs diverse techniques and is vital for understanding ecosystems, agriculture, medicine, and addressing global environmental issues.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579220"
+        },
+        {
+          "url": "https://www.britannica.com/science/botany",
+          "title": "Botany | Definition, History, Branches, & Facts",
+          "description": "",
+          "processed_content": "Botany is the branch of biology dedicated to the scientific study of plants. This field investigates their structure, properties, and biochemical processes, alongside their classification, diseases, and interactions with the environment. Fundamental to understanding life on Earth, botany has historically provided the basis for applied sciences like agriculture and highlights plants' indispensable role in photosynthesis and oxygen production.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579225"
+        },
+        {
+          "url": "https://www.ou.edu/cas/botany-micro/wcidwmib.html",
+          "title": "What can I do with a major in Botany?",
+          "description": "",
+          "processed_content": "Botany is the scientific study of plants, encompassing their structure, function, relationships, distribution, and evolution. This field explores the vast diversity of plant life, from microscopic forms to giant trees, and often includes related organisms like algae and fungi. It examines how plants interact with their environment and their critical importance to ecosystems and human life.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579228"
+        },
+        {
+          "url": "https://duxsomnium.com/pages/botany",
+          "title": "Botany",
+          "description": "",
+          "processed_content": "Botany is a strategy board game where you take on the role of a Victorian Era flower hunter as you explore the world in search of fortune, fame, ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579231"
+        },
+        {
+          "url": "https://www.environmentalscience.org/botany",
+          "title": "Botany: The Original Natural Science",
+          "description": "",
+          "processed_content": "Botany, also known as plant science or plant biology, is one of the world's oldest natural sciences dedicated to the study of plant life. This field encompasses a wide range of organisms, including flowering plants, algae, fungi, ferns, and trees. Botany explores plants from various perspectives, such as their history, interaction with the environment, practical applications in areas like medicine and agriculture, and even their use in forensic science.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579234"
+        },
+        {
+          "url": "https://www.reddit.com/r/botany/comments/rqy9uh/wikipedia_plant_structures/",
+          "title": "Wikipedia plant structures? : r/botany",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579237"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Botany",
+          "title": "Botany - Simple English Wikipedia, the free encyclopedia",
+          "description": "",
+          "processed_content": "Botany, also known as plant biology or phytology, is the scientific study of plants and is a fundamental branch of biology. It encompasses the investigation of plant structure, function, growth, reproduction, evolution, distribution, and their interactions with the environment. Botanists explore diverse aspects of plant life, from microscopic cellular processes to the ecological roles of entire plant communities. Essentially, botany is dedicated to understanding all facets of the plant kingdom.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579239"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Botany",
+          "title": "Category:Botany",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579242"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Outline_of_botany",
+          "title": "Outline of botany",
+          "description": "",
+          "processed_content": "Botany is the biological academic discipline dedicated to the comprehensive study of plants. This field investigates plant life across various levels, including their structure, function, growth, reproduction, evolution, distribution, and classification. It encompasses numerous specialized areas focusing on different plant groups or biological processes, from cellular components like chlorophyll and cell walls to ecological interactions and plant pathology.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579245"
+        }
+      ]
+    },
+    "microbiology": {
+      "level": 2,
+      "parents": [
+        "life science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Microbiology",
+          "title": "Microbiology",
+          "description": "",
+          "processed_content": "Microbiology is the scientific study of microorganisms, which are tiny life forms including bacteria, viruses, fungi, and protists. This field investigates their diverse characteristics, classification, and interactions, utilizing both traditional techniques and modern molecular methods. Microbiology includes various sub-disciplines and has significant applications in areas like health, industry, and environmental science.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579289"
+        },
+        {
+          "url": "https://microbiologysociety.org/why-microbiology-matters/what-is-microbiology.html",
+          "title": "What is microbiology?",
+          "description": "",
+          "processed_content": "Microbiology is the scientific study of microorganisms, which are life forms too small to be seen without magnification, including bacteria, viruses, and others. This field investigates their characteristics, diversity, and ancient history on Earth. Understanding these tiny organisms is crucial for addressing critical issues in health, disease prevention, environmental processes, and various global challenges.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579294"
+        },
+        {
+          "url": "https://www.britannica.com/science/microbiology",
+          "title": "Microbiology | Definition, History, & Microorganisms",
+          "description": "",
+          "processed_content": "Microbiology is the scientific study of microorganisms, a diverse group of minute life forms including bacteria, viruses, fungi, and protozoa. This field investigates their structure, function, and classification, while also exploring ways to utilize or control their significant impacts on everything from human health and ecology to industry and fundamental research.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579297"
+        },
+        {
+          "url": "https://www.biology.pitt.edu/undergraduate/academic-programs/microbiology",
+          "title": "Microbiology | Department of Biological Sciences",
+          "description": "",
+          "processed_content": "Microbiology is the scientific study of microscopic organisms such as bacteria, viruses, fungi, and protozoa, utilizing specialized methods distinct from other biological fields. This discipline investigates their unique biological processes and leverages these capabilities for diverse applications in areas like biotechnology, health, and environmental science.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579300"
+        },
+        {
+          "url": "https://openstax.org/details/books/microbiology",
+          "title": "Microbiology",
+          "description": "",
+          "processed_content": "Study microbiology online free by downloading OpenStax's Microbiology book and using our accompanying online resources including a biology study guide.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579306"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Microbiology",
+          "title": "Microbiology - Simple English Wikipedia, the free ...",
+          "description": "",
+          "processed_content": "Microbiology is a scientific discipline within biology focused on the study of microorganisms, which are tiny life forms not visible to the naked eye. This field investigates the diverse world of microbes, such as bacteria, fungi, viruses, and protozoa, exploring their characteristics, functions, evolution, and roles in various environments and applications. It encompasses numerous specialized areas of study related to these microscopic organisms.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579309"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Microbiology",
+          "title": "Category:Microbiology",
+          "description": "",
+          "processed_content": "Microbiology is the scientific discipline focused on the study of microorganisms, which are tiny life forms often invisible to the naked eye. This field investigates their biology, interactions, and roles in various environments, with modern research frequently incorporating principles from biochemistry and genetics.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579312"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Microbiology_(journal)",
+          "title": "Microbiology (journal)",
+          "description": "",
+          "processed_content": "Microbiology is a scientific field dedicated to studying microorganisms and their viruses. This broad discipline encompasses various aspects, including their biochemistry, cell biology, genetics, evolution, and interactions with other organisms and the environment. Research in microbiology explores areas like pathogenicity, biodiversity, biotechnology, and theoretical concepts related to these microscopic life forms.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579315"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Industrial_microbiology",
+          "title": "Industrial microbiology",
+          "description": "",
+          "processed_content": "Based on this text, microbiology is the scientific field concerned with microorganisms and their practical applications. This field leverages techniques such as fermentation and genetic modification to harness microbes for producing valuable substances. These include pharmaceuticals like antibiotics and vitamins, food products, agricultural aids, and industrial chemicals across various industries.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579317"
+        }
+      ]
+    },
+    "cryptography": {
+      "level": 2,
+      "parents": [
+        "computer science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cryptography",
+          "title": "Cryptography",
+          "description": "",
+          "processed_content": "Cryptography is the practice and study of techniques used to secure communication and data, especially in the presence of potential adversaries. Historically centered on encryption to conceal message content, modern cryptography has expanded to include ensuring data integrity, authenticating identities, and guaranteeing non-repudiation. It employs mathematical principles and computational methods to design algorithms and protocols that make it computationally infeasible for unauthorized parties to access or tamper with information. Essentially, cryptography provides the tools to protect digital information and communications.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579362"
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/cryptography-and-its-types/",
+          "title": "Cryptography and its Types",
+          "description": "",
+          "processed_content": "Cryptography is the technique of securing information and communications by converting data into coded formats using mathematical concepts and algorithms. It employs methods like encryption with cryptographic keys to transform messages, making them unreadable to unauthorized parties. This process ensures essential security features such as confidentiality, integrity, and authentication, protecting sensitive data across various applications.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579368"
+        },
+        {
+          "url": "https://cryptography.io/",
+          "title": "Welcome to pyca/cryptography — Cryptography 46.0.0.dev1 ...",
+          "description": "",
+          "processed_content": "Cryptography is a field that employs various algorithms, such as symmetric ciphers and message digests, to perform secure operations like encrypting and decrypting data. These cryptographic techniques can be applied through high-level, simplified methods or complex, low-level primitives requiring detailed knowledge. Essentially, it involves using mathematical concepts and algorithms to protect information and ensure security.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579371"
+        },
+        {
+          "url": "https://www.fortinet.com/resources/cyberglossary/what-is-cryptography",
+          "title": "What is Cryptography? Definition, Importance, Types",
+          "description": "",
+          "processed_content": "Cryptography is the practice of using mathematical concepts and algorithms to transform information into a coded format, ensuring only the intended recipient can read it. This process is fundamental to securing modern communications and data by providing confidentiality, integrity, and authenticity. It involves techniques like encryption and digital signatures to protect sensitive information from unauthorized access.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579373"
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/cryptography",
+          "title": "What Is Cryptography? | IBM",
+          "description": "",
+          "processed_content": "Cryptography is the practice of securing information by transforming readable data into an unreadable format, known as ciphertext, using coded algorithms and keys. This process ensures that only authorized recipients possessing the correct key can decrypt the data back into its original form. Fundamentally, cryptography serves as an essential tool for protecting digital communications and sensitive information from unauthorized access and ensuring privacy and integrity.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579376"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Cryptography",
+          "title": "Cryptography - Simple English Wikipedia, the free ...",
+          "description": "",
+          "processed_content": "Cryptography is the practice and study of techniques for secure communication in the presence of adversaries, primarily focused on hiding information to keep it secret and safe. It involves transforming readable data into an unreadable format (encryption) using a method and a secret key, which can then be reversed (decryption) by authorized parties possessing the correct key. Modern cryptography, often leveraging mathematics and computing, is essential for protecting data and communications in various applications like online transactions and digital security.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579379"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Cryptography",
+          "title": "Category:Cryptography",
+          "description": "",
+          "processed_content": "Cryptography is the study and practice of converting understandable information into an obscured form, making it unreadable without specific knowledge—a process known as encryption. Initially used to ensure secrecy in sensitive communications, its application has broadened considerably to secure modern digital systems, including electronic commerce and infrastructure, often operating without user awareness.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579382"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Timeline_of_cryptography",
+          "title": "Timeline of cryptography",
+          "description": "",
+          "processed_content": "Cryptography is the practice and study of techniques for secure communication in the presence of adversaries, involving methods to transform information (encryption) to make it unintelligible and techniques to analyze and break such methods (cryptanalysis). Evolving from simple historical ciphers to complex modern algorithms and machines, it has been crucial in areas like warfare, diplomacy, and is now fundamental to digital security.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579385"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cryptography_law",
+          "title": "Cryptography law",
+          "description": "",
+          "processed_content": "Cryptography is defined as the practice and study focused on securing information. This is primarily achieved through encryption, which aims to protect data from unauthorized access.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579387"
+        }
+      ]
+    },
+    "artificial intelligence": {
+      "level": 2,
+      "parents": [
+        "computer science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+          "title": "Artificial intelligence",
+          "description": "",
+          "processed_content": "Artificial intelligence (AI) is a field of computer science dedicated to creating computational systems capable of performing tasks typically requiring human intelligence, such as learning, reasoning, problem-solving, and perception. These systems are designed to sense their environment and use acquired knowledge and intelligence to take actions aimed at achieving defined goals. Essentially, AI seeks to enable machines to exhibit intelligent behavior.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578794"
+        },
+        {
+          "url": "https://www.britannica.com/technology/artificial-intelligence",
+          "title": "Artificial intelligence (AI) | Definition, Examples, Types, ...",
+          "description": "",
+          "processed_content": "Artificial intelligence (AI) refers to the capability of digital computers or robots to perform tasks typically requiring human intelligence, such as reasoning, learning, and problem-solving. It involves developing systems that can exhibit intellectual processes characteristic of humans. While current AI doesn't match full human flexibility across broad domains, it has achieved expert-level performance in specific applications like medical diagnosis, search engines, and recognition systems.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578800"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence",
+          "title": "A.I. Artificial Intelligence",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578803"
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What Is Artificial Intelligence (AI)?",
+          "description": "",
+          "processed_content": "Artificial intelligence (AI) is a technology enabling computers and machines to simulate human cognitive abilities like learning, comprehension, problem-solving, and decision-making. These systems are designed to process information, learn from data, and perform tasks that typically require human intelligence, sometimes acting independently. AI serves as an overarching concept encompassing related fields such as machine learning and deep learning.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578806"
+        },
+        {
+          "url": "https://wikimediafoundation.org/news/2025/04/30/our-new-ai-strategy-puts-wikipedias-humans-first/",
+          "title": "Our new AI strategy puts Wikipedia's humans first",
+          "description": "",
+          "processed_content": "The text portrays artificial intelligence as a technology capable of automating tasks and assisting human workflows, with generative AI noted for excelling in specific applications. It contrasts AI with human capabilities, emphasizing that it cannot replace human judgment, care, or the collaborative creation of reliable knowledge.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578809"
+        },
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/659222/wikipedia-generative-ai",
+          "title": "Wikipedia is using (some) generative AI now",
+          "description": "",
+          "processed_content": "Based on this text, artificial intelligence refers to technology capable of performing tasks that typically require human intelligence, such as research, translation, and analysis. It can assist human workers by handling tedious processes and processing information, while also having the capacity to interact with data autonomously, like bots scraping websites. The concept highlights AI as a tool that can complement human effort by automating specific functions.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578811"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Machine_learning",
+          "title": "Machine learning",
+          "description": "",
+          "processed_content": "Artificial intelligence (AI) is a field dedicated to creating systems capable of performing tasks that typically require human intelligence, such as learning, problem-solving, and decision-making. Machine learning, a major subfield, emerged from this pursuit, focusing on developing algorithms that allow computers to learn from data without explicit programming. The overarching goal of AI is often to enable machines to replicate or even exceed human cognitive abilities in specific areas.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578814"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Artificial_intelligence",
+          "title": "Artificial intelligence - Simple English Wikipedia, the free ...",
+          "description": "",
+          "processed_content": "Artificial intelligence (AI) refers to computer systems or machines designed to perform tasks typically requiring human intelligence. This involves the ability to understand and learn from external data, adapt, and use that knowledge to achieve specific goals or exhibit intelligent behavior. The concept focuses on enabling machines to act intelligently in their environment, drawing on various scientific and technical fields.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578817"
+        }
+      ]
+    },
+    "mathematics": {
+      "level": 2,
+      "parents": [
+        "science"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mathematics",
+          "title": "Mathematics",
+          "description": "",
+          "processed_content": "Mathematics is a field of study focused on discovering and organizing abstract concepts and their relationships. It employs pure reason and rigorous proof, based on foundational axioms, to establish truths about these abstract objects. While developed internally, mathematics is also an essential tool for modeling and understanding phenomena across numerous scientific and practical disciplines.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578863"
+        },
+        {
+          "url": "https://arxiv.org/archive/math",
+          "title": "Mathematics",
+          "description": "",
+          "processed_content": "math.MP is an alias for math-ph. Articles in this category focus on areas of research that illustrate the application of mathematics to problems in physics, ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578869"
+        },
+        {
+          "url": "https://www.britannica.com/science/mathematics",
+          "title": "Mathematics | Definition, History, & Importance",
+          "description": "",
+          "processed_content": "Mathematics is defined as the science of structure, order, and relation, evolving from fundamental practices like counting and measuring. It employs logical reasoning and quantitative calculation, developing through increasing abstraction and idealization. This field, built on axiomatic systems and logical deduction, serves as a crucial tool across numerous scientific and technological disciplines.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578872"
+        },
+        {
+          "url": "https://www.tntech.edu/cas/math/what-is-mathematics.php",
+          "title": "Mathematics - What is Mathematics",
+          "description": "",
+          "processed_content": "Mathematics is the rigorous study of patterns, structure, space, and change, built upon logical deduction from fundamental principles. Evolving from practical origins, it serves as an essential tool across numerous scientific and social disciplines while also being pursued as a pure science for its inherent properties.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578875"
+        },
+        {
+          "url": "https://www.reddit.com/r/math/comments/ex31vc/generally_speaking_is_wikipedia_reliable_for_math/",
+          "title": "Generally speaking, is Wikipedia reliable for math?",
+          "description": "",
+          "processed_content": "Yes. I'd say 90%+ of the things you study in 300/400/500 and even most 600-level math classes have definitions which are pretty straightforward.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578878"
+        },
+        {
+          "url": "https://www.reddit.com/r/math/comments/74ltt3/using_wikipedia_for_mathematics_selfstudy/",
+          "title": "Using Wikipedia for mathematics self-study : r/math",
+          "description": "",
+          "processed_content": "It's a great starting point for writing papers and general concepts in math/other subjects, but that's as far as I'd recommend anyone take it.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578881"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Mathematics",
+          "title": "Mathematics - Simple English Wikipedia, the free ...",
+          "description": "",
+          "processed_content": "Mathematics is the study of numbers, shapes, patterns, structure, and change. It employs rigorous logic, primarily deduction, to discover and prove general rules and theorems. This foundational approach allows mathematics to solve problems, understand relationships, and develop concepts applicable across abstract and real-world domains.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578887"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Mathematics",
+          "title": "Category:Mathematics",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578893"
+        }
+      ]
+    },
+    "engineering": {
+      "level": 2,
+      "parents": [
+        "engineering"
+      ],
+      "resources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Engineering",
+          "title": "Engineering",
+          "description": "",
+          "processed_content": "Engineering is a discipline that creatively applies scientific principles, mathematics, and design processes to solve practical problems and improve systems. It involves designing, developing, constructing, and operating structures, machines, and processes while considering factors like function, efficiency, economics, and safety. Engineers identify constraints, evaluate solutions, and use tools like modeling and testing to ensure their designs are effective and reliable.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578965"
+        },
+        {
+          "url": "https://www.engineering.com/",
+          "title": "Engineering.com",
+          "description": "",
+          "processed_content": "Engineering information and connections for the global community of engineers. Find engineering webinars, research, articles, games, videos, jobs and ...",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578971"
+        },
+        {
+          "url": "https://www.bls.gov/ooh/architecture-and-engineering/",
+          "title": "Architecture and Engineering Occupations",
+          "description": "",
+          "processed_content": "Based on the activities described, engineering involves the practical application of knowledge to design and develop structures, products, and systems. It also includes collecting information for various purposes, such as mapping. Essentially, it's a field focused on creating tangible solutions and gathering data for specific applications.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578974"
+        },
+        {
+          "url": "https://www.olin.edu/",
+          "title": "Olin College of Engineering: Home",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578977"
+        },
+        {
+          "url": "https://engineering.fandom.com/wiki/Engineering_Wiki",
+          "title": "Engineering Wiki | Engineering | Fandom",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578980"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Engineering",
+          "title": "Engineering - Simple English Wikipedia, the free ...",
+          "description": "",
+          "processed_content": "Engineering is a field that applies scientific and mathematical principles to design, build, and innovate solutions. It involves using these skills to create or improve structures, systems, machines, and products across diverse areas like technology, infrastructure, and manufacturing. Engineers solve complex problems, often working collaboratively and considering practical limitations like budget and materials.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578990"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Engineer",
+          "title": "Engineer",
+          "description": "",
+          "processed_content": "Engineering is the discipline that applies scientific and mathematical principles to design, build, and analyze practical solutions like machines, systems, and structures. It bridges the gap between scientific discovery and its application to human needs and problems, while considering real-world constraints such as cost, safety, and practicality.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.578995"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Category:Engineering",
+          "title": "Category:Engineering",
+          "description": "",
+          "processed_content": "No relevant information found.",
+          "verified": false,
+          "source": "webminer",
+          "timestamp": "2025-05-23T07:55:04.579001"
+        }
+      ]
+    }
+  },
+  "last_updated": "2025-05-23T07:55:04.580311",
+  "resource_update_info": {
+    "terms_updated": 18,
+    "total_resources_added": 147,
+    "update_timestamp": "2025-05-23T07:55:04.580317"
+  }
+}

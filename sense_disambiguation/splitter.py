@@ -6,10 +6,12 @@ import os
 import re
 from sentence_transformers import SentenceTransformer
 import datetime
-from typing import Optional, Dict, List, Tuple, Literal, Any
+from typing import Optional, Dict, List, Tuple, Literal, Any, Set
 import glob
 import sys
 from pydantic import BaseModel, Field
+from sklearn.cluster import DBSCAN
+import warnings
 
 # Add the project root to sys.path if needed
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -61,18 +63,34 @@ class SenseSplitter:
 
     def __init__(self,
                  hierarchy_file_path: str,
-                 candidate_terms_list: list[str],
-                 cluster_results: dict[str, list[int]], 
+                 context_file: Optional[str] = None,
+                 candidate_terms_list: Optional[list[str]] = None,
+                 cluster_results: Optional[dict[str, list[int]]] = None, 
                  embedding_model_name: str = 'all-MiniLM-L6-v2',
                  use_llm_for_tags: bool = True,
                  llm_provider: str = Provider.OPENAI,
                  llm_model: Optional[str] = None,
                  level: int = 2,
                  output_dir: Optional[str] = None):
-        """Initialize the SenseSplitter to split ambiguous terms into distinct senses."""
+        """
+        Initialize the SenseSplitter to split ambiguous terms into distinct senses.
+        
+        Args:
+            hierarchy_file_path: Path to the hierarchy.json file.
+            context_file: Path to the unified context file (new API).
+            candidate_terms_list: DEPRECATED - List of candidate terms (legacy API).
+            cluster_results: DEPRECATED - Dict mapping terms to cluster labels (legacy API).
+            embedding_model_name: Name of the embedding model to use.
+            use_llm_for_tags: Whether to use LLM for generating domain tags.
+            llm_provider: LLM provider (openai, gemini).
+            llm_model: Specific LLM model to use (provider-dependent).
+            level: Hierarchy level to process (0-3).
+            output_dir: Directory to save results, default is sense_disambiguation/data/sense_disambiguation_results.
+        """
         self.hierarchy_file_path = hierarchy_file_path
-        self.candidate_terms = candidate_terms_list
-        self.cluster_results = cluster_results
+        self.context_file = context_file
+        self.candidate_terms = candidate_terms_list or []
+        self.cluster_results = cluster_results or {}
         self.embedding_model_name = embedding_model_name
         self.use_llm_for_tags = use_llm_for_tags
         self.level = level
@@ -89,6 +107,7 @@ class SenseSplitter:
         self._loaded = False
         self.detailed_cluster_info = {}
         self.level_params = LEVEL_PARAMS[self.level]
+        self.term_contexts = {}  # Store the loaded term contexts from unified context file
         
         # LLM settings
         self.llm_provider = llm_provider.lower() if llm_provider else Provider.OPENAI
@@ -115,6 +134,18 @@ class SenseSplitter:
         # Caches
         self._parent_context_cache = {}
         self._term_level_cache = {}
+        
+        # Load unified context if provided
+        if self.context_file:
+            self._load_unified_context()
+            
+        # If using legacy API, show deprecation warning
+        if candidate_terms_list or cluster_results:
+            warnings.warn(
+                "Using candidate_terms_list and cluster_results is deprecated; use context_file instead",
+                DeprecationWarning,
+                stacklevel=2
+            )
 
     def _init_llm(self) -> None:
         """Initialize the LLM using the factory"""
@@ -194,6 +225,19 @@ class SenseSplitter:
         Returns:
             A list of candidate terms that match the current level.
         """
+        # If we have unified context data, use it for filtering
+        if self.term_contexts:
+            filtered_terms = []
+            for term, context in self.term_contexts.items():
+                # Get the term level from context data
+                term_level = context.get("level")
+                if term_level == self.level:
+                    filtered_terms.append(term)
+            
+            logger.info(f"Filtered {len(self.term_contexts)} term contexts to {len(filtered_terms)} terms at level {self.level}")
+            return filtered_terms
+        
+        # Otherwise use the legacy method
         if not self._load_hierarchy():
             logger.error("Failed to load hierarchy. Cannot filter terms by level.")
             return []
@@ -225,16 +269,19 @@ class SenseSplitter:
             
         logger.info(f"Calling LLM ({self.llm_provider}) for level {self.level} term '{term}', cluster {cluster_id}")
         
-        # Updated System Prompt for better tag generation
-        SYSTEM_PROMPT = f"""You are an expert academic classification system. Your task is to provide a concise (1-3 words) academic domain label that accurately captures the specific sense or context of a term, based on resource snippets.
+        # Updated System Prompt for better contextual tag generation
+        SYSTEM_PROMPT = f"""You are an expert academic classification system. Your task is to provide a concise (1-3 words) domain label that precisely captures the specific meaning or sense of the term '{term}' in the context represented by the provided snippets.
 
 Guidelines:
-- Choose a label representing a recognizable academic field or sub-field.
-- The label should be specific enough to pinpoint the meaning represented by the snippets, distinguishing it from other potential meanings of the term.
-- Avoid overly broad terms (e.g., 'science', 'studies') unless no suitable sub-field applies.
-- Avoid overly niche or obscure terms. Aim for standard academic classifications.
+- The label should identify the SPECIFIC ACADEMIC FIELD or DOMAIN where '{term}' has this particular meaning
+- The label must help distinguish this sense of '{term}' from other possible meanings in different contexts
+- The label should be specific enough to disambiguate the term, but recognizable as an established field
+- Choose widely recognized academic terminology that scholars would identify with
+- Your label should explicitly capture HOW '{term}' is being interpreted in these specific contexts
 - The target level is {self.level}, representing a {LEVEL_PARAMS[self.level]['description']}. Examples include: {LEVEL_EXAMPLES[self.level]}
-- Use established academic terminology.
+- Return the label in lowercase_with_underscores format
+
+CRITICAL: Focus on identifying the academic domain where '{term}' has THIS SPECIFIC MEANING, not just any field mentioned in the snippets.
 """
         
         # Take first 5 snippets at most, and truncate each snippet
@@ -264,26 +311,31 @@ Guidelines:
             count = radial_polysemy_details.get("context_count", 0)
             radial_polysemy_str = f"\nRadial Polysemy Score: {score:.3f} (based on {count} contexts), indicating potential meaning variance."
         
-        # Updated User Prompt focusing on specific sense
-        prompt = f"""Considering the ORIGINAL TERM '{term}', generate a concise academic domain label (1-3 words) that best represents the specific sense or context shown in these resource snippets.
+        # Updated User Prompt focusing on contextual meaning
+        prompt = f"""TERM TO DISAMBIGUATE: '{term}'
 
-The label should be general enough to be a recognizable field/sub-field, but specific enough to pinpoint this particular meaning.
+In these resource snippets, the term '{term}' is being used with a specific meaning or sense. Your task is to identify the precise academic domain or field where '{term}' has THIS PARTICULAR MEANING.
+
+The snippets below represent ONE SPECIFIC SENSE of '{term}'. What academic field or domain does this particular interpretation of '{term}' belong to?
 
 Term Context:
-- Original Term: '{term}'
 - Hierarchy Level: {self.level} ({LEVEL_PARAMS[self.level]['description']})
-- Typical Examples at this Level: {LEVEL_EXAMPLES[self.level]}
+- Typical fields at this level: {LEVEL_EXAMPLES[self.level]}
 {parent_context_str}
+{radial_polysemy_str}
 
-Resource Snippets for this specific sense:
+Resource Snippets showing this specific sense of '{term}':
 {formatted_snippets}
 
-Example of good balance:
-- If snippets for term 'model' discuss neural networks -> 'neural networks' or 'machine learning'
-- If snippets for term 'stress' discuss material fatigue -> 'materials science' or 'mechanical stress'
-- If snippets for term 'bank' discuss river geography -> 'geography' or 'river systems'
+IMPORTANT EXAMPLES:
+1. If '{term}' = "stress" and snippets discuss psychological pressure → "clinical_psychology" (because this is WHERE "stress" has this mental/emotional meaning)
+2. If '{term}' = "stress" and snippets discuss material forces → "materials_science" (because this is WHERE "stress" has this physical force meaning)
+3. If '{term}' = "regression" and snippets discuss returning to earlier behaviors → "developmental_psychology" 
+4. If '{term}' = "regression" and snippets discuss statistical modeling → "statistical_analysis"
+5. If '{term}' = "model" and snippets discuss mathematical representations → "mathematical_modeling" 
+6. If '{term}' = "model" and snippets discuss fashion runways → "fashion_industry"
 
-Return ONLY the single, most appropriate domain label (1-3 words), nothing else. Standardize to lowercase_with_underscores."""
+Return ONLY the single most appropriate domain label (1-3 words), standardized to lowercase_with_underscores format. The label must precisely identify WHERE THIS SPECIFIC SENSE of '{term}' is used."""
         
         # Make multiple attempts in case of failure
         max_attempts = 2
@@ -483,7 +535,7 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
     def _validate_split(self, term: str, clusters: Dict[int, List[dict]], sense_tags: Dict[int, str]) -> Tuple[bool, str]:
         """
         Determine whether a split is warranted based on multiple signals.
-        Checks separation score before tag distinctness to potentially avoid LLM calls.
+        Uses evidence from resource clustering, parent context, and radial polysemy.
         """
         # 1. Basic validation
         if len(clusters) <= 1:
@@ -497,8 +549,30 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
         # 3. Check if we have strong parent context signal
         parent_context_signal = self._check_parent_context_signal(term)
         
-        # 4. Calculate separation score from resource clustering
-        separation_score = self._calculate_cluster_separation(term, clusters)
+        # 4. Check if we have radial polysemy signal
+        radial_polysemy_signal = False
+        radial_evidence = self._get_radial_polysemy_evidence(term)
+        radial_score = 0.0
+        
+        if radial_evidence and "metrics" in radial_evidence:
+            metrics = radial_evidence["metrics"]
+            radial_score = metrics.get("polysemy_index", 0.0)
+            # Consider it a positive signal if polysemy index is above 0.3
+            if radial_score >= 0.3:
+                radial_polysemy_signal = True
+                logger.info(f"Radial polysemy signal detected for '{term}' with score {radial_score:.2f}")
+        
+        # 5. Get separation score from resource cluster evidence
+        separation_score = 0.0
+        
+        # Try to get separation score from resource cluster evidence
+        resource_evidence = self._get_resource_cluster_evidence(term)
+        if resource_evidence and "metrics" in resource_evidence:
+            metrics = resource_evidence["metrics"]
+            separation_score = metrics.get("separation_score", 0.0)
+        else:
+            # Fall back to calculating separation score from clusters
+            separation_score = self._calculate_cluster_separation(term, clusters)
         
         # Get threshold based on level
         level_thresholds = {
@@ -510,17 +584,26 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
         threshold = level_thresholds[self.level]
         min_threshold = threshold * 0.5
         
-        # If we have strong parent context signal, we can be more lenient with separation score
-        if parent_context_signal and separation_score < min_threshold:
-            if separation_score > 0:  # There's at least some separation
-                logger.info(f"Separation score {separation_score:.2f} is below threshold {min_threshold:.2f} but term '{term}' has strong parent context signal")
+        # Count evidence signals we have
+        evidence_signals = []
+        if separation_score >= min_threshold:
+            evidence_signals.append(f"resource clustering (separation={separation_score:.2f})")
+        if parent_context_signal:
+            evidence_signals.append("parent context")
+        if radial_polysemy_signal:
+            evidence_signals.append(f"radial polysemy (score={radial_score:.2f})")
+        
+        # If we have multiple evidence signals, we can be more lenient with individual thresholds
+        has_multiple_signals = len(evidence_signals) >= 2
+        
+        # If separation is below threshold but we have other signals, still proceed
+        if separation_score < min_threshold:
+            if parent_context_signal or radial_polysemy_signal:
+                logger.info(f"Separation score {separation_score:.2f} is below threshold {min_threshold:.2f} but term '{term}' has other signals: {', '.join(evidence_signals)}")
                 # Proceed with checking tag distinctness
-            else:
-                # No separation evidence at all - rely completely on parent context
-                logger.info(f"No resource cluster separation evidence for '{term}', relying on parent context signal only")
-        # 5. Early exit if separation too low and no parent context signal
-        elif separation_score < min_threshold and not parent_context_signal:
-             return False, f"Insufficient separation ({separation_score:.2f} < required min {min_threshold:.2f}) and no parent context signal"
+            elif not evidence_signals:
+                # No evidence signals at all
+                return False, f"Insufficient evidence for splitting - no strong signals detected"
 
         # 6. Check tag distinctness IN CONTEXT OF ORIGINAL TERM
         tags_distinct, distinctness_reason = self._check_tags_distinctness(term, sense_tags.values())
@@ -530,28 +613,15 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
             tag_list = list(sense_tags.values())
             tags_info = ', '.join(tag_list)
             
-            # Generate appropriate reason including any parent context signal
-            reason_parts = []
-            
-            if separation_score >= min_threshold:
-                reason_parts.append(f"separation sufficient ({separation_score:.2f} >= {min_threshold:.2f})")
-            
-            if parent_context_signal:
-                parent_details = self.cluster_metrics.get(term, {}).get("parent_context", {})
-                if "distinct_ancestor_pairs_count" in parent_details:
-                    count = parent_details["distinct_ancestor_pairs_count"]
-                    reason_parts.append(f"parent context signal detected ({count} distinct parent lineages)")
-                else:
-                    reason_parts.append("parent context signal detected")
-            
-            reasons_text = " and ".join(reason_parts)
+            # Create reason text from all evidence signals
+            reasons_text = " and ".join(evidence_signals) if evidence_signals else "sufficient evidence"
             
             if distinctness_reason == "Tags represent distinct academic fields" or \
                distinctness_reason == "Using generic tags" or \
                distinctness_reason.startswith("No LLM available"):
-                return True, f"Valid split: Fields distinct ({tags_info} represent distinct meanings of '{term}') and {reasons_text}"
+                return True, f"Valid split: Fields distinct ({tags_info} represent distinct meanings of '{term}') based on {reasons_text}"
             else:
-                return True, f"Valid split: Fields distinct ({distinctness_reason}) and {reasons_text}"
+                return True, f"Valid split: Fields distinct ({distinctness_reason}) based on {reasons_text}"
         else:
             return False, f"Split rejected: Fields not distinct enough ({distinctness_reason})"
 
@@ -565,6 +635,30 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
         Returns:
             True if parent context signal indicates ambiguity, False otherwise
         """
+        # First try to get evidence from unified context
+        evidence = self._get_parent_context_evidence(term)
+        if evidence:
+            metrics = evidence.get("metrics", {})
+            payload = evidence.get("payload", {})
+            
+            # Check for divergent flag
+            if payload.get("divergent", False):
+                # For stronger confidence, check if we have distinct ancestor pairs
+                if "distinct_ancestor_pairs_count" in metrics:
+                    count = metrics["distinct_ancestor_pairs_count"]
+                    # Consider a signal strong if at least 2 distinct parent lineages
+                    return count >= 2
+                # If the detector says it's ambiguous but doesn't provide the count, still trust it
+                return True
+            
+            # Check distinct ancestors in payload
+            distinct_ancestors = payload.get("distinct_ancestors", [])
+            if len(distinct_ancestors) >= 2:
+                return True
+                
+            return False
+                
+        # Fall back to legacy approach
         # Check if we have parent context metrics for this term
         if term not in self.cluster_metrics:
             return False
@@ -575,8 +669,8 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
         if not parent_context_metrics:
             return False
             
-        # Check if the term was detected by the parent context detector
-        if parent_context_metrics.get("detected", False):
+        # Accept either legacy 'detected' flag or newer 'divergent' flag produced by hybrid detector
+        if parent_context_metrics.get("detected", False) or parent_context_metrics.get("divergent", False):
             # For stronger confidence, check if we have distinct ancestor pairs
             if "distinct_ancestor_pairs_count" in parent_context_metrics:
                 count = parent_context_metrics["distinct_ancestor_pairs_count"]
@@ -598,87 +692,100 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
         Returns:
             A dictionary mapping synthetic cluster IDs to lists of synthetic resources
         """
-        if not self._load_hierarchy():
-            logger.error("Failed to load hierarchy. Cannot create parent context clusters.")
-            return {}
-            
-        if term not in self.term_details:
-            logger.warning(f"Term '{term}' not found in hierarchy details. Cannot create parent context clusters.")
-            return {}
-            
-        term_data = self.term_details[term]
-        resources = term_data.get('resources', [])
-        if not resources:
-            logger.debug(f"Term '{term}' has no resources. Cannot create parent context clusters.")
-            return {}
-            
-        # Get parent context metrics
-        term_metrics = self.cluster_metrics.get(term, {})
-        parent_context_metrics = term_metrics.get("parent_context", {})
+        # Try to use parent context evidence
+        parent_evidence = self._get_parent_context_evidence(term)
+        distinct_ancestors = None
         
-        if not parent_context_metrics:
-            return {}
-            
-        # Get the distinct parent lineages
-        distinct_ancestors = parent_context_metrics.get("distinct_ancestors", [])
+        if parent_evidence and "payload" in parent_evidence:
+            payload = parent_evidence["payload"]
+            if "distinct_ancestors" in payload:
+                distinct_ancestors = payload["distinct_ancestors"]
         
-        if not distinct_ancestors or len(distinct_ancestors) < 2:
-            return {}
-            
-        # Map resources to their parent lineages
-        resource_to_lineage = {}
-        for r in resources:
-            resource_url = r.get("url", "")
-            # Find the parent containing this resource
-            for parent in term_data.get('parents', []):
-                if parent not in self.term_details:
-                    continue
-                    
-                parent_resources = self.term_details[parent].get('resources', [])
-                parent_urls = [pr.get('url', '') for pr in parent_resources]
+        # If no distinct ancestors from evidence, fall back to getting direct parents
+        if not distinct_ancestors:        
+            if not self._load_hierarchy():
+                logger.error("Failed to load hierarchy. Cannot create parent context clusters.")
+                return {}
                 
-                if resource_url in parent_urls:
-                    # Find which lineage this parent belongs to
-                    for i, lineage in enumerate(distinct_ancestors):
-                        if parent in lineage:
-                            resource_to_lineage[resource_url] = i
-                            break
-        
-        # Group resources by lineage
-        grouped_resources = defaultdict(list)
-        for r in resources:
-            resource_url = r.get("url", "")
-            lineage_id = resource_to_lineage.get(resource_url)
+            if term not in self.term_details:
+                logger.warning(f"Term '{term}' not found in hierarchy details. Cannot create parent context clusters.")
+                return {}
+                
+            term_data = self.term_details[term]
+            direct_parents = term_data.get('parents', [])
             
-            if lineage_id is not None:
-                # Add the resource to its group
-                # Make a copy of the resource dict to avoid modifying the original
-                resource_copy = dict(r)
-                # For tag generation, add processed content if not already there
-                if "processed_content" not in resource_copy:
-                    # Extract a title or short description if possible
-                    title = resource_copy.get("title", "")
-                    description = resource_copy.get("description", "")
-                    content = resource_copy.get("content", "")
+            # Only proceed if we have at least two parents
+            if len(direct_parents) < 2:
+                logger.debug(f"Term '{term}' has fewer than 2 parents. Clustering not needed.")
+            return {}
+            
+            # NEW: Attempt to cluster the parents semantically if we have an embedding model
+            if self.embedding_model and len(direct_parents) >= 2:
+                try:
+                    # Get embeddings for parents
+                    parent_embeddings = self.embedding_model.encode(direct_parents, show_progress_bar=False)
                     
-                    if title:
-                        processed_content = title
-                        if description:
-                            processed_content += " - " + description
-                    elif content:
-                        # Take first 200 chars if no title
-                        processed_content = content[:200] + "..."
-                    else:
-                        processed_content = f"Resource from parent lineage {lineage_id}"
+                    # Set clustering parameters based on level
+                    level_eps = [0.7, 0.6, 0.5, 0.4][min(self.level, 3)]
+                    
+                    # Try to cluster the parents using DBSCAN
+                    from sklearn.cluster import DBSCAN
+                    dbscan = DBSCAN(eps=level_eps, min_samples=1, metric="cosine")
+                    parent_labels = dbscan.fit_predict(parent_embeddings)
+                    
+                    # Group parents by cluster label
+                    parent_clusters = {}
+                    for i, parent in enumerate(direct_parents):
+                        label = parent_labels[i]
+                        if label not in parent_clusters:
+                            parent_clusters[label] = []
+                        parent_clusters[label].append(parent)
+                    
+                    # Only proceed if we have at least 2 clusters
+                    if len(parent_clusters) >= 2:
+                        logger.info(f"Created {len(parent_clusters)} semantic clusters of parents for term '{term}'")
                         
-                    resource_copy["processed_content"] = processed_content
-                    
-                grouped_resources[lineage_id].append(resource_copy)
+                        # Create lineages from parent clusters
+                        distinct_ancestors = [parents for clust_id, parents in parent_clusters.items()]
+                    else:
+                        # If semantic clustering didn't work, use the manual approach
+                        logger.info(f"Parent semantic clustering only produced 1 cluster for '{term}'. Using individual parents.")
+                        distinct_ancestors = [[p] for p in direct_parents]
+                        
+                except Exception as e:
+                    logger.error(f"Error clustering parents semantically: {e}. Using individual parents.")
+                    distinct_ancestors = [[p] for p in direct_parents]
+                else:
+                    # Fallback: treat each parent as its own lineage
+                    distinct_ancestors = [[p] for p in direct_parents]
+                
+        # At this point, either we have distinct_ancestors from evidence, 
+        # or we've created them by clustering the parents or using each parent as its own lineage
         
-        # Only return if we have multiple groups
-        if len(grouped_resources) >= 2:
-            logger.info(f"Created {len(grouped_resources)} synthetic clusters for term '{term}' based on parent context")
-            return dict(grouped_resources)
+        # NEW: Create synthetic resources for each parent cluster WITHOUT requiring actual resources
+        synthetic_clusters = {}
+        for i, parent_cluster in enumerate(distinct_ancestors):
+            # Create a synthetic resource list for this parent cluster
+            synthetic_resources = []
+            
+            # Add one synthetic resource per parent in the cluster
+            for parent in parent_cluster:
+                # Create a synthetic resource that represents this parent
+                synthetic_resource = {
+                    "url": f"synthetic://{parent}/{term}",  # Create a fake URL for identification
+                    "title": f"{term} in the context of {parent}",
+                    "processed_content": f"This represents the term '{term}' as used in the context of {parent}."
+                }
+                synthetic_resources.append(synthetic_resource)
+            
+            # Add the cluster only if it has at least one resource
+            if synthetic_resources:
+                synthetic_clusters[i] = synthetic_resources
+        
+        # Only return if we have multiple non-empty clusters
+        if len(synthetic_clusters) >= 2:
+            logger.info(f"Created {len(synthetic_clusters)} synthetic clusters for term '{term}' based on parent context")
+            return synthetic_clusters
             
         return {}
 
@@ -734,51 +841,62 @@ Return ONLY the single, most appropriate domain label (1-3 words), nothing else.
             logger.info(f"No LLM available for field distinctness check: '{field1}' vs '{field2}'")
             return True, "No LLM available for distinctness check"
         
-        # System prompt updated to include original_term context
-        system_prompt = f"""You are an expert taxonomist specializing in academic field classification. Your task is to determine if two proposed academic fields (sense tags) represent GENUINELY DISTINCT CORE MEANINGS of the ORIGINAL TERM: '{original_term}'.
+        # System prompt focused on contextual differentiation
+        system_prompt = f"""You are an expert taxonomist specializing in academic field classification. Your task is to determine if two proposed academic fields represent GENUINELY DISTINCT SENSES of the TERM '{original_term}' when that term is used in different contexts.
 
-A split is ONLY valid if the fields represent truly different meanings of '{original_term}', not just different aspects or applications.
+Focus on how '{original_term}' itself is INTERPRETED in each context, not just that the fields are different.
 
-EVALUATION CRITERIA (Consider these in the context of '{original_term}'):
-1. TRUE DISTINCTION: The two fields represent fundamentally different core meanings or interpretations of '{original_term}'. Examples include homonyms (bank/finance vs bank/river) or radically different disciplinary interpretations (stress/psychology vs stress/materials).
+A split is VALID (DISTINCT) ONLY if:
+1. The term '{original_term}' has fundamentally different CORE MEANINGS or interpretations when used in these different contexts
+2. These different meanings would require separate encyclopedia entries to explain properly
+3. The semantic difference would cause significant misunderstanding if confused
 
-2. FALSE DISTINCTION (same sense): The two fields represent related concepts under the main meaning of '{original_term}'. Examples include:
-   - Different aspects/applications of '{original_term}' (e.g., '{original_term}' theory vs. application)
-   - Subfields related to '{original_term}' (e.g., for '{original_term}' = AI, senses like 'machine learning' and 'computer vision' are related aspects, not distinct core meanings of AI itself).
-   - Different methodologies used within the context of '{original_term}'.
-   - Overlapping fields where both relate closely to '{original_term}'.
+A split is INVALID (NOT_DISTINCT) if:
+1. The fields simply represent different applications or aspects of the SAME CORE CONCEPT of '{original_term}'
+2. The difference is merely in methodology, scope, or focus while the fundamental meaning of '{original_term}' remains the same
+3. One field is a subfield or specialization of the other with respect to '{original_term}'
+4. The contextual difference is in surrounding concepts but '{original_term}' itself means essentially the same thing
 
 IMPORTANT: Provide your answer in this EXACT FORMAT:
 ```
 EXPLANATION: [Provide a SINGLE SENTENCE explanation for the verdict, stating if FIELD 1 and FIELD 2 represent distinct meanings OF THE ORIGINAL TERM '{original_term}', considering the context.]
 VERDICT: [DISTINCT or NOT_DISTINCT]
-```
+```"""
 
-DISTINCT means FIELD 1 and FIELD 2 represent fundamentally different core meanings of '{original_term}'.
-NOT_DISTINCT means FIELD 1 and FIELD 2 represent related aspects/applications/subfields under the primary meaning of '{original_term}'."""
-
-        # User prompt updated to focus on the original term
+        # User prompt with enhanced contextual examples
         user_prompt = f"""ORIGINAL TERM: '{original_term}'
 
-Proposed Sense Fields:
+Proposed Context Fields:
 FIELD 1: {field1}
 FIELD 2: {field2}
 
-Do FIELD 1 and FIELD 2 represent genuinely distinct core meanings OF THE ORIGINAL TERM '{original_term}', or do they represent related aspects/applications/subfields?
+Do these fields represent genuinely distinct CORE MEANINGS OF THE TERM '{original_term}' itself, or do they merely represent different contexts/applications where the fundamental meaning of '{original_term}' remains essentially the same?
 
-EXAMPLES FOR CONTEXT:
-- IF ORIGINAL TERM = "Stress":
-  - DISTINCT: "Psychological Stress" vs. "Material Stress" (Different core meanings)
-  - NOT_DISTINCT: "Acute Stress" vs. "Chronic Stress" (Different aspects of psychological stress)
-- IF ORIGINAL TERM = "Network":
-  - DISTINCT: "Social Network" vs. "Computer Network" (Different domains)
-  - NOT_DISTINCT: "Network Analysis" vs. "Network Theory" (Method vs. Theory within the same domain context)
-- IF ORIGINAL TERM = "Machine Learning":
-  - NOT_DISTINCT: "Supervised Learning" vs. "Reinforcement Learning" (Different types/subfields)
-  - NOT_DISTINCT: "Machine Learning Algorithms" vs. "Machine Learning Applications"
-  - NOT_DISTINCT: "Artificial Intelligence" vs. "Language Acquisition" (Even if tags are distinct fields, "Language Acquisition" here likely refers to applying ML *to* it, not a distinct sense of ML itself).
+EXAMPLES OF DISTINCT MEANINGS (valid splits):
+1. TERM "stress" in "psychology" vs "materials_science"
+   - In psychology: mental or emotional strain
+   - In materials science: physical force causing deformation
+   - DISTINCT because the term "stress" refers to completely different phenomena
 
-Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your determination in the specified format."""
+2. TERM "model" in "fashion" vs "machine_learning"
+   - In fashion: a person who displays clothing
+   - In machine learning: a mathematical representation of a process
+   - DISTINCT because "model" refers to entirely different concepts
+
+EXAMPLES OF NON-DISTINCT MEANINGS (invalid splits):
+1. TERM "analysis" in "data_analysis" vs "statistical_analysis"
+   - Both refer to examining and interpreting information, just with different methods
+   - NOT_DISTINCT because the core meaning of "analysis" is the same
+
+2. TERM "network" in "neural_network" vs "network_architecture"
+   - Both refer to interconnected systems, just in different implementations
+   - NOT_DISTINCT because "network" fundamentally means the same thing
+
+3. TERM "learning" in "machine_learning" vs "reinforcement_learning"
+   - Reinforcement learning is a subset/type of machine learning
+   - NOT_DISTINCT because "learning" has the same core meaning in both
+
+Apply the evaluation criteria focusing specifically on how the TERM '{original_term}' is understood in each context. Provide your determination in the specified format."""
 
         try:
             # First attempt: Try structured response with Pydantic model
@@ -787,7 +905,7 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
                     prompt=user_prompt, 
                     system_prompt=system_prompt,
                     temperature=0.1,
-                    response_model=FieldDistinctnessAnalysis # Model needs original_term field added
+                    response_model=FieldDistinctnessAnalysis
                 )
                 
                 if response and hasattr(response, 'text'):
@@ -1018,11 +1136,43 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
         sense_tags = {}
         logger.debug(f"Generating tags for term '{term}' with {len(grouped_resources)} clusters.")
         
-        # Get parent context (hierarchy) and detector-specific metrics
+        # Get parent context hierarchy
         parent_context_hierarchy = self._get_term_parent_context(term)
-        term_metrics = self.cluster_metrics.get(term, {})
-        parent_context_details = term_metrics.get("parent_context", {})
-        radial_polysemy_details = term_metrics.get("radial_polysemy", {})
+        
+        # Get detector-specific evidence from unified context
+        parent_context_details = {}
+        radial_polysemy_details = {}
+        
+        # Try to get parent context evidence first
+        parent_evidence = self._get_parent_context_evidence(term)
+        if parent_evidence:
+            parent_context_details = {
+                "divergent": parent_evidence.get("payload", {}).get("divergent", False),
+                "distinct_ancestor_pairs_count": parent_evidence.get("metrics", {}).get("distinct_ancestor_pairs_count", 0),
+                "distinct_ancestors": parent_evidence.get("payload", {}).get("distinct_ancestors", [])
+            }
+            logger.debug(f"Found parent context evidence for '{term}'")
+        
+        # Try to get radial polysemy evidence
+        radial_evidence = self._get_radial_polysemy_evidence(term)
+        if radial_evidence:
+            radial_polysemy_details = {
+                "polysemy_index": radial_evidence.get("metrics", {}).get("polysemy_index", 0.0),
+                "context_count": radial_evidence.get("metrics", {}).get("context_count", 0),
+                "sample_contexts": radial_evidence.get("payload", {}).get("sample_contexts", [])
+            }
+            logger.debug(f"Found radial polysemy evidence for '{term}' with index {radial_polysemy_details['polysemy_index']}")
+        
+        # Fall back to legacy metrics if needed
+        if not parent_context_details and term in self.cluster_metrics:
+            term_metrics = self.cluster_metrics.get(term, {})
+            parent_context_details = term_metrics.get("parent_context", {})
+            logger.debug(f"Using legacy parent context metrics for '{term}'")
+            
+        if not radial_polysemy_details and term in self.cluster_metrics:
+            term_metrics = self.cluster_metrics.get(term, {})
+            radial_polysemy_details = term_metrics.get("radial_polysemy", {})
+            logger.debug(f"Using legacy radial polysemy metrics for '{term}'")
         
         # Get all resources for TF-IDF processing
         all_resources = []
@@ -1085,6 +1235,28 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
             belonging to that cluster. Returns empty dict if term not found, not a candidate,
             has no resources, or no cluster results.
         """
+        # Try to use detailed cluster info from resource cluster evidence
+        resource_evidence = self._get_resource_cluster_evidence(term)
+        if resource_evidence and "payload" in resource_evidence:
+            payload = resource_evidence["payload"]
+            
+            # Check if we have cluster_details in the payload
+            if "cluster_details" in payload:
+                cluster_details = payload["cluster_details"]
+                
+                # Convert string cluster IDs to ints
+                grouped_resources = {}
+                for cluster_id_str, resources in cluster_details.items():
+                    cluster_id = int(cluster_id_str)
+                    if cluster_id >= 0:  # Skip noise cluster
+                        grouped_resources[cluster_id] = resources
+                
+                logger.debug(f"Using detailed cluster info from unified context for '{term}': "
+                           f"Found {len(grouped_resources)} clusters "
+                           f"with {[len(resources) for resources in grouped_resources.values()]} resources each.")
+                return grouped_resources
+        
+        # Fall back to legacy approach
         if term not in self.candidate_terms:
             logger.debug(f"Term '{term}' is not in the candidate list. Skipping grouping.")
             return {}
@@ -1120,19 +1292,54 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
 
         # Retrieve the cluster labels for this term's resources
         resource_cluster_labels = self.cluster_results.get(term)
-        if resource_cluster_labels is None:
-            logger.warning(f"No cluster results found for candidate term '{term}'. Skipping grouping.")
-            return {}
 
-        # Basic check: ensure number of labels matches number of resources
-        # Note: This assumes the detector only provides labels for resources it processed.
-        # A more robust check might be needed depending on how cluster_results is generated.
+        # If no pre-computed cluster results are available, attempt lightweight on-the-fly clustering
+        if resource_cluster_labels is None:
+            logger.warning(f"No cluster results found for candidate term '{term}'. Attempting on-the-fly clustering of its resources.")
+
+            # Only proceed if we have an embedding model and enough resources
+            if self.embedding_model and len(resources) >= max(3, self.level_params["min_samples"]):
+                try:
+                    # Prepare texts for embedding – fall back to title/description if processed_content missing
+                    texts = []
+                    for r in resources:
+                        text = r.get("processed_content") or r.get("title") or r.get("description") or ""
+                        texts.append(text)
+
+                    # Compute embeddings
+                    embeddings = self.embedding_model.encode(texts, show_progress_bar=False)
+
+                    # Cluster with DBSCAN using level-specific parameters
+                    dbscan = DBSCAN(eps=self.level_params["eps"],
+                                    min_samples=self.level_params["min_samples"],
+                                    metric="cosine")
+                    labels = dbscan.fit_predict(embeddings)
+
+                    # If we discovered at least two non-noise clusters, treat them as valid results
+                    unique_clusters = set(int(l) for l in labels if l >= 0)
+                    if len(unique_clusters) >= 2:
+                        resource_cluster_labels = labels.tolist()
+                        # Cache for future look-ups so downstream code can reuse it
+                        self.cluster_results[term] = resource_cluster_labels
+                        logger.info(f"On-the-fly clustering created {len(unique_clusters)} clusters for '{term}'.")
+                    else:
+                        logger.info(f"On-the-fly clustering for '{term}' produced <2 clusters; skipping split.")
+                        resource_cluster_labels = None
+                except Exception as e:
+                    logger.error(f"On-the-fly clustering failed for '{term}': {e}")
+                    resource_cluster_labels = None
+            else:
+                logger.debug(f"Skipping on-the-fly clustering for '{term}': no embedding model or not enough resources.")
+
+            if resource_cluster_labels is None:
+                # Still no labels after attempted fallback – abort grouping for this term
+                return {}
+
+        # Ensure we have label count matching resources
         if len(resource_cluster_labels) != len(resources):
-             logger.warning(f"Mismatch between resource count ({len(resources)}) "
-                             f"and cluster label count ({len(resource_cluster_labels)}) for term '{term}'. Skipping grouping.")
-             # TODO: Decide how to handle mismatches if they can occur.
-             # For now, we skip. Could try aligning based on processed indices if available.
-             return {}
+            logger.warning(
+                f"Mismatch between resource count ({len(resources)}) and cluster label count ({len(resource_cluster_labels)}) for term '{term}'. Skipping grouping.")
+            return {}
 
         grouped_resources = defaultdict(list)
         noise_resources = [] # Keep track of noise points (-1) separately for now
@@ -1164,7 +1371,7 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
     def generate_split_proposals(self) -> tuple[list[dict], list[dict]]:
         """
         Generates proposals for splitting ambiguous terms into distinct senses.
-        Uses both resource clustering and parent context information when available.
+        Uses evidence from all available detectors when making decisions.
         
         Returns:
             Tuple of (accepted_proposals, rejected_proposals)
@@ -1192,31 +1399,78 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
             # Step 1: Try to group resources by cluster from resource clustering results
             grouped_resources = self._group_resources_by_cluster(term)
             
-            # If no resource clusters are available, try using parent context
+            # If no resource clusters are available or only one cluster, check other evidence
             using_parent_context_clusters = False
+            using_radial_polysemy = False
             parent_context_signal = self._check_parent_context_signal(term)
             
-            if (not grouped_resources or len(grouped_resources) <= 1) and parent_context_signal:
-                logger.info(f"No resource clusters for '{term}', but found parent context signal. Creating synthetic clusters.")
-                grouped_resources = self._create_parent_context_clusters(term)
-                using_parent_context_clusters = True
-
-            # Add to rejected proposals if term wasn't clustered into multiple groups by either method
-            if not grouped_resources or len(grouped_resources) <= 1:
-                rejection_reason = "Insufficient evidence for splitting"
+            # Check for radial polysemy evidence
+            radial_polysemy_signal = False
+            radial_evidence = self._get_radial_polysemy_evidence(term)
+            if radial_evidence and "metrics" in radial_evidence:
+                metrics = radial_evidence["metrics"]
+                radial_score = metrics.get("polysemy_index", 0.0)
+                if radial_score >= 0.3:  # Same threshold as in _validate_split
+                    radial_polysemy_signal = True
+                    logger.info(f"Radial polysemy signal detected for '{term}' with score {radial_score:.2f}")
+            
+            # Try to create synthetic clusters if no resource clusters but we have other evidence
+            if (not grouped_resources or len(grouped_resources) <= 1):
                 if parent_context_signal:
-                    rejection_reason += " (parent context signal detected but couldn't create synthetic clusters)"
+                    logger.info(f"No resource clusters for '{term}', but found parent context signal. Creating synthetic clusters.")
+                    grouped_resources = self._create_parent_context_clusters(term)
+                    using_parent_context_clusters = True
+
+                    # If we still don't have enough clusters but have radial polysemy evidence,
+                    # we'll note this as additional evidence
+                    if (not grouped_resources or len(grouped_resources) <= 1) and radial_polysemy_signal:
+                        using_radial_polysemy = True
+                        logger.info(f"Parent context clusters insufficient for '{term}', but radial polysemy evidence supports ambiguity.")
+
+            # Add to rejected proposals if term wasn't clustered into multiple groups by any method
+            if not grouped_resources or len(grouped_resources) <= 1:
+                # Collect all the available evidence for the rejection reason
+                evidence_signals = []
+                if parent_context_signal:
+                    evidence_signals.append("parent context signal")
+                if radial_polysemy_signal:
+                    evidence_signals.append(f"radial polysemy signal (score={radial_score:.2f})")
+                
+                rejection_reason = "Insufficient evidence for splitting"
+                if evidence_signals:
+                    rejection_reason += f" (detected {', '.join(evidence_signals)} but couldn't create multiple clusters)"
+                
                 rejected_proposals.append({
                     "original_term": term,
                     "level": self.level,
                     "rejection_reason": rejection_reason,
                     "cluster_count": len(grouped_resources) if grouped_resources else 0,
-                    "has_parent_context_signal": parent_context_signal
+                    "has_parent_context_signal": parent_context_signal,
+                    "has_radial_polysemy_signal": radial_polysemy_signal
                 })
                 continue
                 
             # Step 2: Generate Meaningful Tags
             sense_tags = self._generate_sense_tags(term, grouped_resources)
+
+            # NEW STEP 2b: Consolidate clusters that are not meaningfully distinct
+            consolidated_resources, consolidated_tags = self._consolidate_clusters(term, grouped_resources, sense_tags)
+            
+            # Replace with consolidated versions for downstream validation and proposal building
+            grouped_resources = consolidated_resources
+            sense_tags = consolidated_tags
+
+            # If consolidation collapses everything into a single group, we no longer split
+            if len(grouped_resources) <= 1:
+                rejected_proposals.append({
+                    "original_term": term,
+                    "level": self.level,
+                    "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+                    "cluster_count": len(grouped_resources),
+                    "has_parent_context_signal": parent_context_signal,
+                    "has_radial_polysemy_signal": radial_polysemy_signal
+                })
+                continue
 
             # Step 3: Validate the split is justified, considering the original term context
             should_split, split_reason = self._validate_split(term, grouped_resources, sense_tags)
@@ -1228,6 +1482,7 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
                 "cluster_count": len(grouped_resources),
                 "using_parent_context_clusters": using_parent_context_clusters,
                 "has_parent_context_signal": parent_context_signal,
+                "has_radial_polysemy_signal": radial_polysemy_signal,
                 "proposed_senses": []
             }
             
@@ -1322,12 +1577,21 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
         Loads pre-computed cluster results from a file.
         Supports both standard results and comprehensive cluster details format.
         
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to use the context_file parameter with the unified context format.
+        
         Args:
             cluster_results_file: Path to the cluster results JSON file
             
         Returns:
             True if loading was successful, False otherwise
         """
+        warnings.warn(
+            "SenseSplitter._load_cluster_results_from_file is deprecated; use the context_file parameter instead",
+            DeprecationWarning,
+            stacklevel=2
+        )
+        
         try:
             with open(cluster_results_file, 'r') as f:
                 data = json.load(f)
@@ -1510,20 +1774,24 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
         """
         Main execution method to generate and save split proposals.
         
-        Two ways to use this class:
-        1. Initialize with pre-computed cluster results and candidate terms
-        2. Initialize with empty lists, then load a comprehensive cluster details file 
-           using _load_cluster_results_from_file() method
-        
-        Example using comprehensive cluster details:
+        This method supports two approaches for initializing the splitter:
+        1. New API: Initialize with context_file that points to a unified context JSON file
+           ```
             splitter = SenseSplitter(
                 hierarchy_file_path="sense_disambiguation/data/hierarchy.json",
-                candidate_terms_list=[],  # Will be populated from the file
-                cluster_results={},       # Will be populated from the file
+               context_file="sense_disambiguation/data/ambiguity_detection_results/unified_context_20250410_123456.json",
                 level=2
             )
-            splitter._load_cluster_results_from_file("sense_disambiguation/data/ambiguity_detection_results/comprehensive_cluster_details_20250410_123456.json")
-            accepted, rejected, output_path = splitter.run()
+           ```
+        
+        2. Legacy API: Initialize with pre-computed cluster results and candidate terms
+           ```
+           splitter = SenseSplitter(
+               hierarchy_file_path="sense_disambiguation/data/hierarchy.json",
+               candidate_terms_list=["term1", "term2"],
+               cluster_results={"term1": [0, 1, 0]}
+           )
+           ```
         
         Args:
             save_output: Whether to save the results to a file.
@@ -1543,6 +1811,254 @@ Apply the evaluation criteria focusing on the ORIGINAL TERM and provide your det
             
         return accepted_proposals, rejected_proposals, output_path
 
+    def _load_unified_context(self) -> bool:
+        """
+        Load and parse the unified context file.
+        
+        Returns:
+            True if loading was successful, False otherwise.
+        """
+        if not self.context_file:
+            logger.error("No context file specified.")
+            return False
+            
+        try:
+            logger.info(f"Loading unified context from {self.context_file}...")
+            with open(self.context_file, 'r') as f:
+                data = json.load(f)
+                
+            # Check if the file has the expected structure
+            if "contexts" not in data:
+                logger.error("Invalid unified context file: 'contexts' key missing.")
+                return False
+                
+            # Use the contexts data directly - it's already in term -> context format
+            contexts = data["contexts"]
+            
+            # Store the whole term contexts dictionary
+            self.term_contexts = contexts
+            
+            # For backward compatibility, extract candidate terms from the contexts
+            self.candidate_terms = list(contexts.keys())
+            
+            # For backward compatibility, extract cluster labels for each term
+            for term, context in contexts.items():
+                if "evidence" not in context:
+                    continue
+                    
+                for evidence in context["evidence"]:
+                    if evidence["source"] == "resource_cluster" and "payload" in evidence:
+                        payload = evidence["payload"]
+                        if "cluster_labels" in payload:
+                            self.cluster_results[term] = payload["cluster_labels"]
+                            
+                            # Also store metrics for use in validation
+                            if "metrics" in evidence:
+                                self.cluster_metrics[term] = evidence["metrics"]
+                                # Old code expects a "dbscan" key
+                                if "dbscan" not in self.cluster_metrics[term]:
+                                    self.cluster_metrics[term]["dbscan"] = evidence["metrics"]
+                            break
+            
+            logger.info(f"Loaded {len(self.term_contexts)} term contexts from unified context file.")
+            return True
+            
+        except FileNotFoundError:
+            logger.error(f"Context file not found: {self.context_file}")
+            return False
+        except json.JSONDecodeError:
+            logger.error(f"Error decoding JSON from {self.context_file}")
+            return False
+        except Exception as e:
+            logger.error(f"Error loading unified context: {e}")
+            return False
+
+    def _get_parent_context_evidence(self, term: str) -> Optional[Dict[str, Any]]:
+        """
+        Get parent context evidence for a term from the unified context.
+        
+        Args:
+            term: The term to get evidence for
+            
+        Returns:
+            Parent context evidence block or None if not available
+        """
+        if not self.term_contexts or term not in self.term_contexts:
+            return None
+            
+        context = self.term_contexts[term]
+        if "evidence" not in context:
+            return None
+            
+        # Find the parent context evidence
+        for evidence in context["evidence"]:
+            if evidence["source"] == "parent_context":
+                return evidence
+                
+        return None
+        
+    def _get_resource_cluster_evidence(self, term: str) -> Optional[Dict[str, Any]]:
+        """
+        Get resource cluster evidence for a term from the unified context.
+        
+        Args:
+            term: The term to get evidence for
+            
+        Returns:
+            Resource cluster evidence block or None if not available
+        """
+        if not self.term_contexts or term not in self.term_contexts:
+            return None
+            
+        context = self.term_contexts[term]
+        if "evidence" not in context:
+            return None
+            
+        # Find the resource cluster evidence
+        for evidence in context["evidence"]:
+            if evidence["source"] == "resource_cluster":
+                return evidence
+                
+        return None
+        
+    def _get_radial_polysemy_evidence(self, term: str) -> Optional[Dict[str, Any]]:
+        """
+        Get radial polysemy evidence for a term from the unified context.
+        
+        Args:
+            term: The term to get evidence for
+            
+        Returns:
+            Radial polysemy evidence block or None if not available
+        """
+        if not self.term_contexts or term not in self.term_contexts:
+            return None
+            
+        context = self.term_contexts[term]
+        if "evidence" not in context:
+            return None
+            
+        # Find the radial polysemy evidence
+        for evidence in context["evidence"]:
+            if evidence["source"] == "radial_polysemy":
+                return evidence
+                
+        return None
+
+    def _consolidate_clusters(self, term: str, grouped_resources: Dict[int, List[dict]], sense_tags: Dict[int, str]) -> Tuple[Dict[int, List[dict]], Dict[int, str]]:
+        """Merge clusters that do not correspond to meaningfully distinct senses.
+
+        The consolidation procedure is:
+        1. Merge clusters that share exactly the same tag.
+        2. Iteratively compare every pair of remaining clusters using the field-distinctness
+           check.  If the two tags are judged *not distinct* for the **original term** we
+           merge their clusters.
+
+        Generic tags that start with "sense_" are assumed to be placeholders and are not
+        merged automatically unless they are identical.  They are treated as distinct
+        senses because we have no basis for determining overlap.
+
+        Parameters
+        ----------
+        term : str
+            The term currently being processed.
+        grouped_resources : Dict[int, List[dict]]
+            Mapping from the *original* cluster id to its resources.
+        sense_tags : Dict[int, str]
+            Mapping from the *original* cluster id to the tag produced for that cluster.
+
+        Returns
+        -------
+        Tuple containing:
+            consolidated_resources : Dict[int, List[dict]] – resources grouped after merging
+            consolidated_tags      : Dict[int, str] – tag for each consolidated group (key
+            aligns with consolidated_resources)
+        """
+        # ---------- Build initial groups ---------- #
+        groups: List[Dict[str, Any]] = []  # each dict has: tag, resources, cluster_ids
+        tag_to_index: Dict[str, int] = {}
+
+        for cid, resources in grouped_resources.items():
+            tag = sense_tags.get(cid, f"sense_{cid+1}")
+            # If we already have a group with this exact tag, just merge directly
+            if tag in tag_to_index:
+                idx = tag_to_index[tag]
+                groups[idx]["cluster_ids"].append(cid)
+                groups[idx]["resources"].extend(resources)
+            else:
+                tag_to_index[tag] = len(groups)
+                groups.append({
+                    "tag": tag,
+                    "cluster_ids": [cid],
+                    "resources": list(resources)  # make a copy
+                })
+
+        # ---------- Helper to merge two group dictionaries ---------- #
+        def _merge_into(base: Dict[str, Any], incoming: Dict[str, Any]):
+            base["cluster_ids"].extend(incoming["cluster_ids"])
+            base["resources"].extend(incoming["resources"])
+
+        # ---------- Iteratively merge semantically non-distinct tags ---------- #
+        changed = True
+        while changed and len(groups) > 1:
+            changed = False
+            outer_len = len(groups)
+            i = 0
+            while i < outer_len - 1:
+                j = i + 1
+                while j < outer_len:
+                    tag_i = groups[i]["tag"]
+                    tag_j = groups[j]["tag"]
+
+                    # Skip if identical tag (already merged earlier) – theoretically shouldn't happen
+                    if tag_i == tag_j:
+                        _merge_into(groups[i], groups[j])
+                        del groups[j]
+                        outer_len -= 1
+                        changed = True
+                        continue  # stay at same j index after deletion
+
+                    # If either tag is generic (sense_) we assume no basis to compare – treat as distinct
+                    if tag_i.startswith("sense_") or tag_j.startswith("sense_"):
+                        j += 1
+                        continue
+
+                    # Use LLM to decide distinctness – graceful degradation if LLM unavailable
+                    are_distinct, _reason = self._check_field_distinctness_with_llm(term, tag_i.replace('_', ' '), tag_j.replace('_', ' '))
+                    if not are_distinct:
+                        # Merge j into i
+                        _merge_into(groups[i], groups[j])
+                        del groups[j]
+                        outer_len -= 1
+                        changed = True
+                        continue  # check new j (same index after deletion)
+
+                    j += 1
+                i += 1
+
+        # ---------- Build consolidated outputs ---------- #
+        consolidated_resources: Dict[int, List[dict]] = {}
+        consolidated_tags: Dict[int, str] = {}
+        for new_id, grp in enumerate(groups):
+            # Deduplicate resources by URL to avoid duplicates, keep order by first occurrence
+            seen_urls: Set[str] = set()
+            deduped_resources: List[dict] = []
+            for res in grp["resources"]:
+                url = res.get("url", "")
+                if url in seen_urls:
+                    continue
+                seen_urls.add(url)
+                deduped_resources.append(res)
+            consolidated_resources[new_id] = deduped_resources
+            consolidated_tags[new_id] = grp["tag"]
+
+        return consolidated_resources, consolidated_tags
+
+
+# --- Example Usage ---
+if __name__ == '__main__':
+    # Setting up paths
+    repo_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 # --- Example Usage ---
 if __name__ == '__main__':

@@ -20,6 +20,10 @@ from sklearn.cluster import DBSCAN
 from sklearn.metrics import silhouette_score
 from typing import Optional, Dict, List, Any, Tuple, Literal, Union
 from sentence_transformers import SentenceTransformer
+import warnings
+
+# Import base detector classes
+from .base import EvidenceBuilder, get_detector_version
 
 # Add NLTK for improved tokenization
 try:
@@ -516,14 +520,25 @@ class ResourceClusterDetector:
         Saves the detailed clustering results to a JSON file.
         Should be called after detect_ambiguous_terms().
         
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to get evidence blocks via detect() and store them in a unified context file.
+        
         Args:
             filename: Optional custom filename. If not provided, generates a default name.
             
         Returns:
             Path to the saved file.
         """
+        warnings.warn(
+            "ResourceClusterDetector.save_detailed_results() is deprecated; direct file writes will be removed in future",
+            DeprecationWarning, 
+            stacklevel=2
+        )
+        
         if not filename:
-            filename = f"cluster_results.json"
+            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            level_str = f"_level{self.level}" if self.level is not None else ""
+            filename = f"cluster_results_eps{self.dbscan_eps}_minsamples{self.dbscan_min_samples}{level_str}_{timestamp}.json"
             
         filepath = os.path.join(self.output_dir, filename)
         
@@ -604,9 +619,18 @@ class ResourceClusterDetector:
         """
         Performs ambiguity detection based on resource content clustering.
         
+        DEPRECATED: Use detect() instead which returns EvidenceBuilder objects.
+        This method is maintained for backward compatibility.
+        
         Returns:
             List of terms identified as potentially ambiguous.
         """
+        warnings.warn(
+            "ResourceClusterDetector.detect_ambiguous_terms() is deprecated; use detect() instead",
+            DeprecationWarning,
+            stacklevel=2
+        )
+        
         if not self.embedding_model:
              logging.error("[ResourceClusterDetector] Sentence transformer model not loaded. Aborting.")
              return []
@@ -884,6 +908,9 @@ class ResourceClusterDetector:
         and their content for each cluster. This is a more detailed version of 
         save_detailed_results that includes full resource information for each cluster.
         
+        DEPRECATED: This method will be removed in a future version.
+        The recommended approach is to get evidence blocks via detect() and store them in a unified context file.
+        
         Should be called after detect_ambiguous_terms().
         
         Args:
@@ -894,6 +921,12 @@ class ResourceClusterDetector:
         Returns:
             Path to the saved file.
         """
+        warnings.warn(
+            "ResourceClusterDetector.save_comprehensive_cluster_details() is deprecated; direct file writes will be removed in future",
+            DeprecationWarning, 
+            stacklevel=2
+        )
+        
         if not filename:
             # Use a stable default name based on the algorithm
             # Don't include timestamp or parameters to avoid creating multiple files
@@ -1209,3 +1242,137 @@ class ResourceClusterDetector:
         except Exception as e:
             logging.error(f"[ResourceClusterDetector] Error calculating TF-IDF confidence: {e}")
             return {} 
+
+    def detect(self) -> List[EvidenceBuilder]:
+        """
+        Detects ambiguous terms based on resource clustering and returns evidence builders.
+        
+        This is the new preferred API that returns structured evidence blocks for the splitter.
+        
+        Returns:
+            List of EvidenceBuilder objects for detected ambiguous terms.
+        """
+        # First run the original detection logic to populate self.cluster_results and self.cluster_metrics
+        # This avoids duplicating the complex detection algorithm
+        detected_terms = self.detect_ambiguous_terms()
+        
+        # Get the detector version
+        version = get_detector_version()
+        
+        # Flag to control inclusion of resource details
+        include_resource_details = False  # TODO: Make this a parameter of the detector
+        max_resources_per_cluster = 50    # Limit resources to avoid overly large JSON files
+        
+        # Convert to evidence builders
+        evidence_builders = []
+        
+        # Process both detected terms and any others with cluster results
+        # This allows the splitter to potentially use terms that have cluster
+        # information but weren't automatically classified as ambiguous
+        for term in self.cluster_results.keys():
+            # Get labels and metrics
+            labels = self.cluster_results.get(term, [])
+            metrics = self.cluster_metrics.get(term, {})
+            
+            # Skip if no clustering information
+            if not labels or not metrics:
+                continue
+                
+            # Get the term level
+            level = metrics.get("level")
+            
+            # Calculate confidence based on separation score and number of clusters
+            separation_score = metrics.get("separation_score", 0.0)
+            silhouette = metrics.get("silhouette_score", 0.0)
+            cluster_count = metrics.get("num_clusters", 0)
+            
+            # Apply heuristic: 0.2 base + 0.6*separation_score + 0.2*silhouette
+            # The 0.2 base ensures even poor clusters get transmitted to splitter
+            base_confidence = 0.2
+            separation_weight = min(0.6, separation_score * 0.8) if separation_score is not None else 0
+            silhouette_weight = min(0.2, max(0, silhouette * 0.4)) if silhouette is not None else 0
+            
+            # Higher confidence for more clusters (diminishing returns)
+            cluster_bonus = min(0.2, (cluster_count - 1) * 0.1) if cluster_count > 1 else 0
+            
+            confidence = min(1.0, base_confidence + separation_weight + silhouette_weight + cluster_bonus)
+            
+            # Add confidence boost from TF-IDF if available 
+            tfidf_confidence = metrics.get("tfidf_confidence", 0.0)
+            if tfidf_confidence > 0.5:
+                tfidf_boost = min(0.2, (tfidf_confidence - 0.5) * 0.4)  # Max boost of 0.2
+                confidence = min(1.0, confidence + tfidf_boost)
+                
+            # Prepare metrics dictionary (clean up unnecessary keys)
+            api_metrics = {
+                "separation_score": separation_score,
+                "silhouette_score": silhouette,
+                "num_clusters": cluster_count,
+                "noise_points": metrics.get("noise_points", 0),
+                "valid_snippets": metrics.get("valid_snippets", 0),
+                "tfidf_confidence": tfidf_confidence
+            }
+            
+            # Prepare payload dictionary
+            payload = {
+                "cluster_labels": labels,
+                "eps": metrics.get("eps", self.dbscan_eps),
+                "min_samples": metrics.get("min_samples", self.dbscan_min_samples)
+            }
+            
+            # Add cluster details (resources) if enabled - cap at max_resources_per_cluster per cluster
+            if include_resource_details:
+                # Use information from self.term_details to get resources
+                term_data = self.term_details.get(term, {})
+                resources = term_data.get('resources', [])
+                
+                # Skip if resource count mismatches label count
+                if len(resources) != len(labels):
+                    continue
+                
+                # Group resources by cluster label
+                cluster_details = defaultdict(list)
+                
+                for i, (resource, label) in enumerate(zip(resources, labels)):
+                    # Skip noise points
+                    if label < 0:
+                        continue
+                        
+                    # Limit resources per cluster for manageable filesize
+                    if len(cluster_details[str(label)]) >= max_resources_per_cluster:
+                        continue
+                    
+                    # Create minimal resource object
+                    r_obj = {
+                        "url": resource.get("url", ""),
+                        "title": resource.get("title", "")
+                    }
+                    
+                    # Include truncated content
+                    content = resource.get("processed_content", "")
+                    if content:
+                        if len(content) > 300:
+                            r_obj["processed_content"] = content[:300] + "..."
+                        else:
+                            r_obj["processed_content"] = content
+                    
+                    # Add to cluster
+                    cluster_details[str(label)].append(r_obj)
+                
+                # Add to payload
+                payload["cluster_details"] = dict(cluster_details)
+            
+            # Create the evidence builder
+            builder = EvidenceBuilder.create(
+                term=term,
+                level=level,
+                source="resource_cluster",
+                detector_version=version,
+                confidence=confidence,
+                metrics=api_metrics,
+                payload=payload
+            )
+            
+            evidence_builders.append(builder)
+        
+        return evidence_builders 

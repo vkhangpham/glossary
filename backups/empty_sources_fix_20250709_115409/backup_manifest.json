@@ -1,0 +1,59 @@
+{
+  "backup_timestamp": "2025-07-09T11:54:09.464893",
+  "backup_reason": "Fix empty sources issue - overly aggressive filtering",
+  "files_backed_up": [
+    "hierarchy_with_splits.json",
+    "metadata_collector.py",
+    "hierarchy.json",
+    "data_final/generated_definitions_output_report.json",
+    "data_final/generated_definitions.json",
+    "data_final/hierarchy.json",
+    "data_final/lv2/lv2_final.txt",
+    "data_final/lv2/lv2_metadata.json",
+    "data_final/lv2/lv2_filtered_resources.json",
+    "data_final/lv3/lv3_final.txt",
+    "data_final/lv3/lv3_metadata.json",
+    "data_final/lv3/lv3_filtered_resources.json",
+    "data_final/lv1/lv1_metadata.json",
+    "data_final/lv1/lv1_final.txt",
+    "data_final/lv1/lv1_filtered_resources.json",
+    "data_final/lv0/lv0_filtered_resources.json",
+    "data_final/lv0/lv0_final.txt",
+    "data_final/lv0/lv0_metadata.json",
+    "data_final/corpus_cache/hierarchy_hash.txt",
+    "data_final/corpus_cache/term_indices.pkl",
+    "data_final/corpus_cache/vectorizer.pkl",
+    "data_final/corpus_cache/tfidf_matrix.npz",
+    "data_final/corpus_cache/corpus.pkl"
+  ],
+  "directories_backed_up": [
+    "data_final",
+    "data_final/lv2",
+    "data_final/lv3",
+    "data_final/lv1",
+    "data_final/lv0",
+    "data_final/corpus_cache"
+  ],
+  "empty_sources_before_fix": {
+    "level_0": {
+      "empty_count": 1,
+      "total_count": 14,
+      "percentage": 7.1
+    },
+    "level_1": {
+      "empty_count": 7,
+      "total_count": 305,
+      "percentage": 2.3
+    },
+    "level_2": {
+      "empty_count": 4,
+      "total_count": 2041,
+      "percentage": 0.2
+    },
+    "level_3": {
+      "empty_count": 17,
+      "total_count": 7927,
+      "percentage": 0.2
+    }
+  }
+}

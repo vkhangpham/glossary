@@ -1,0 +1,274 @@
+{
+  "timestamp": "2025-05-22T10:19:48.320286",
+  "level": 1,
+  "parameters": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "use_llm": true,
+    "llm_provider": "openai",
+    "llm_model": "gpt-4.1",
+    "clustering": {
+      "algorithm": "dbscan",
+      "eps": 0.5,
+      "min_samples": 2
+    }
+  },
+  "signal_sources": {
+    "resource_clusters": true,
+    "parent_context": true
+  },
+  "accepted_proposals": [
+    {
+      "original_term": "english",
+      "level": 1,
+      "cluster_count": 2,
+      "using_parent_context_clusters": false,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false,
+      "proposed_senses": [
+        {
+          "sense_tag": "english_literature",
+          "cluster_id": 0,
+          "resource_count": 4,
+          "sample_resources": [
+            {
+              "url": "https://www.redlands.edu/academics/undergraduate-programs/bachelor-of-arts-in-english-literature",
+              "content": "Studying English literature involves the critical examination and interpretation of various texts such as novels, poems, and plays, while also focusing on language and writing. This academic field int..."
+            },
+            {
+              "url": "https://hss.mnsu.edu/archives/undergraduate23/english-literature-ba/",
+              "content": "The text describes \"English\" as an academic discipline, specifically a Bachelor of Arts program in Literature. This curriculum offers a comprehensive study of British, American, and world literatures,..."
+            },
+            {
+              "url": "https://5minuteenglish.com/the-impact-of-english-on-global-arts/",
+              "content": "The text describes English as a pivotal global force and a bridge connecting diverse cultures across various art forms, including music, literature, film, and visual arts. It serves as the lingua fran..."
+            }
+          ]
+        },
+        {
+          "sense_tag": "linguistics",
+          "cluster_id": 1,
+          "resource_count": 2,
+          "sample_resources": [
+            {
+              "url": "https://www.britannica.com/topic/English-language",
+              "content": "English is a West Germanic language within the Indo-European family, originating from dialects spoken by Germanic settlers in Britain. It is now widely considered the world's lingua franca and is the ..."
+            },
+            {
+              "url": "https://www.thoughtco.com/what-is-the-english-language-1690652",
+              "content": "English is a language that originated from the speech of Germanic tribes in England and has evolved through interaction with various other languages. Today, it is a dominant global language spoken by ..."
+            }
+          ]
+        }
+      ],
+      "split_reason": "Valid split: Fields distinct (In 'english literature', 'english' refers specifically to the body of literary works produced in the English language or by English authors, whereas in 'linguistics', 'english' denotes the English language itself as a system of grammar, phonology, and semantics, thus representing fundamentally different core meanings that would require separate encyclopedia entries and could cause significant misunderstanding if confused.) based on parent context"
+    }
+  ],
+  "rejected_proposals": [
+    {
+      "original_term": "behavioral sciences",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "biochemistry",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "chemical biology",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "classics",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "comparative literature",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "entrepreneurship",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "environmental engineering",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "environmental health",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "ethnic studies",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "health informatics",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "immunology",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "molecular biology",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "neuroscience",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "nutrition",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": true,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "communication",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": false,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "energy law",
+      "level": 1,
+      "cluster_count": 2,
+      "using_parent_context_clusters": false,
+      "has_parent_context_signal": false,
+      "has_radial_polysemy_signal": false,
+      "proposed_senses": [
+        {
+          "sense_tag": "physics",
+          "cluster_id": 0,
+          "resource_count": 2,
+          "sample_resources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/First_law_of_thermodynamics",
+              "content": "The first law of thermodynamics states that energy cannot be created or destroyed, only transformed. It is a principle of conservation of energy. The change in internal energy of a system equals heat ..."
+            },
+            {
+              "url": "https://chem.libretexts.org/Courses/University_of_Wisconsin_Oshkosh/Chem_370:_Physical_Chemistry_1_-_Thermodynamics_(Gutow)/01:_Thermodynamics/1.02:_The_First_Law_of_Thermodynamics",
+              "content": "The first law states that the change in energy (\\(\\Delta U\\)) of a system is equal to the sum of the work done on the system (\\(w\\)) and heat (\\(q\\)) put into the system. We see from Equation \\ref{EQ:..."
+            }
+          ]
+        },
+        {
+          "sense_tag": "law",
+          "cluster_id": 1,
+          "resource_count": 2,
+          "sample_resources": [
+            {
+              "url": "https://law.gwu.libguides.com/energy-intro",
+              "content": "Energy law is a complex field concerned with the management of energy resources, often intersecting with areas like environmental and climate law. While its precise definition is debated, it addresses..."
+            },
+            {
+              "url": "https://news.ku.edu/news/article/keeping-variation-in-definition-of-energy-communities-can-help-transition-to-renewable-energy-law-expert-writes",
+              "content": "Energy law, as presented in the context of energy transitions, involves the legal frameworks and research focused on guiding the shift to renewable energy, particularly considering community-level imp..."
+            }
+          ]
+        }
+      ],
+      "rejection_reason": "Insufficient evidence for splitting - no strong signals detected"
+    },
+    {
+      "original_term": "leadership",
+      "level": 1,
+      "rejection_reason": "Insufficient evidence for splitting",
+      "cluster_count": 0,
+      "has_parent_context_signal": false,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "mechanics",
+      "level": 1,
+      "rejection_reason": "Insufficient evidence for splitting",
+      "cluster_count": 0,
+      "has_parent_context_signal": false,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "pathology",
+      "level": 1,
+      "rejection_reason": "Insufficient evidence for splitting",
+      "cluster_count": 0,
+      "has_parent_context_signal": false,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "population",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": false,
+      "has_radial_polysemy_signal": false
+    },
+    {
+      "original_term": "spanish",
+      "level": 1,
+      "rejection_reason": "After consolidating similar clusters, only one distinct sense remains",
+      "cluster_count": 1,
+      "has_parent_context_signal": false,
+      "has_radial_polysemy_signal": false
+    }
+  ],
+  "counts": {
+    "accepted": 1,
+    "rejected": 21,
+    "total": 22
+  }
+}

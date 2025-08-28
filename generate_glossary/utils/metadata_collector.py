@@ -11,8 +11,8 @@ from typing import Dict, List, Set, Any
 from collections import defaultdict
 
 # Update the DATA_DIR to be relative to the script location or workspace root
-DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data'))
-FINAL_DIR = os.path.join(DATA_DIR, 'final')
+DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'generate_glossary', 'data'))
+FINAL_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data', 'final'))
 
 
 def extract_parent_from_college(college_name):
@@ -373,23 +373,43 @@ def clean_parent_term(parent: str) -> str:
 
 
 def is_department_or_college_source(source: str) -> bool:
-    """Check if a source is a department/college reference that should be excluded from sources."""
+    """Check if a source is a generic department/college reference that should be excluded from sources.
+    
+    Only filters out very generic institutional hierarchy references, not specific named institutions.
+    """
     if not source:
         return False
         
     source_lower = source.lower().strip()
     
-    # Common patterns that indicate a source is actually a parent entity
-    patterns = [
-        "college of ",
-        "department of ",
-        "school of ",
-        "institute of ",
-        "faculty of ",
-        "division of "
+    # Only filter out very generic patterns that are just hierarchical references
+    # Keep specific named institutions even if they contain these patterns
+    generic_patterns = [
+        # Only filter exact matches of generic hierarchy terms
+        "college",
+        "department", 
+        "school",
+        "institute",
+        "faculty",
+        "division",
+        # And very generic combinations
+        "college of engineering",
+        "college of science",
+        "college of arts",
+        "college of business",
+        "college of medicine",
+        "college of health",
+        "college of education",
+        "department of engineering",
+        "department of science",
+        "school of engineering",
+        "school of science",
+        "school of business",
+        "school of medicine"
     ]
     
-    return any(pattern in source_lower for pattern in patterns)
+    # Only filter if the source is exactly one of these generic patterns
+    return source_lower in generic_patterns
 
 
 def ensure_final_dirs_exist():

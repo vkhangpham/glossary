@@ -5036,5 +5036,160 @@
     "potential_variations": {},
     "related_concepts_notes": "",
     "timestamp": "2025-05-17T12:25:50.109Z"
+  },
+  "dance": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "dance science": true,
+      "dance theory": true,
+      "dance studies": true,
+      "dance technology": true,
+      "dance education": true,
+      "dance techniques": true
+    },
+    "parent_relationships": {
+      "arts": true
+    },
+    "potential_parents": {
+      "education": false,
+      "health sciences": false,
+      "humanities": false,
+      "language studies": false,
+      "natural sciences": false,
+      "social sciences": false
+    },
+    "potential_variations": {
+      "arts": false,
+      "education": false,
+      "health sciences": false,
+      "early childhood education": false,
+      "ethnic studies": false,
+      "film studies": false,
+      "choreographic process": false,
+      "choreography": false,
+      "contemporary dance": false
+    },
+    "related_concepts_notes": "",
+    "timestamp": "2025-05-24T02:02:18.668Z"
+  },
+  "english (linguistics)": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "english education": true
+    },
+    "parent_relationships": {
+      "arts": true,
+      "language studies": true
+    },
+    "potential_parents": {
+      "education": false
+    },
+    "potential_variations": {
+      "education": false,
+      "early childhood education": false,
+      "english as a second language": false,
+      "foreign language education": false,
+      "english writing": false,
+      "foreign language teacher education": false,
+      "foreign language writing": false
+    },
+    "related_concepts_notes": "potentially missing linguistics as parent",
+    "timestamp": "2025-05-24T02:03:18.561Z"
+  },
+  "english (english literature)": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "english education": true
+    },
+    "parent_relationships": {
+      "arts": true,
+      "language studies": true
+    },
+    "potential_parents": {
+      "education": true
+    },
+    "potential_variations": {
+      "education": false,
+      "early childhood education": false,
+      "english as a second language": false,
+      "foreign language education": false,
+      "english writing": false,
+      "foreign language teacher education": false,
+      "foreign language writing": false
+    },
+    "related_concepts_notes": "potentially missing linguistics as parent",
+    "timestamp": "2025-05-24T02:03:46.105Z"
+  },
+  "french": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {
+      "french studies": true
+    },
+    "parent_relationships": {
+      "language studies": true
+    },
+    "potential_parents": {
+      "arts": false,
+      "health sciences": false,
+      "humanities": false,
+      "social sciences": false
+    },
+    "potential_variations": {
+      "arts": false,
+      "health sciences": false,
+      "humanities": false,
+      "african american studies": false,
+      "african studies": false,
+      "ethnic studies": false,
+      "european studies": false,
+      "francophone cultures": false,
+      "francophone literature": false
+    },
+    "related_concepts_notes": "potentially missing linguistics as parent",
+    "timestamp": "2025-05-24T02:04:44.969Z"
+  },
+  "adipose tissue": {
+    "academic_importance": "field",
+    "academic_importance_notes": "",
+    "level_correctness": "correct",
+    "level_correctness_notes": "",
+    "variation_correctness": {},
+    "parent_relationships": {
+      "cardiometabolic risk": true
+    },
+    "potential_parents": {
+      "bariatric surgery": false,
+      "body composition": false,
+      "bone matrix biology": false,
+      "metabolic disease": true,
+      "musculoskeletal regenerative engineering": false,
+      "obesity": false,
+      "physiology": true,
+      "skeletal biology": false,
+      "stem cell biology": false,
+      "tissue development": false
+    },
+    "potential_variations": {
+      "bariatric surgery": false,
+      "body composition": false,
+      "bone matrix biology": false,
+      "adipokines": false,
+      "adipose tissue biology": true,
+      "adipose tissue metabolism": false
+    },
+    "related_concepts_notes": "",
+    "timestamp": "2025-05-24T02:06:20.523Z"
   }
 }
