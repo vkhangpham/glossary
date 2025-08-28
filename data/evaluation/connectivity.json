@@ -1,32 +1,3 @@
-{
-  "0_to_1": {
-    "from_level": 0,
-    "to_level": 1,
-    "from_terms_count": 13,
-    "to_terms_count": 245,
-    "from_connected_count": 13,
-    "to_connected_count": 245,
-    "perc_from_connected": 100.0,
-    "perc_to_connected": 100.0
-  },
-  "1_to_2": {
-    "from_level": 1,
-    "to_level": 2,
-    "from_terms_count": 245,
-    "to_terms_count": 1622,
-    "from_connected_count": 235,
-    "to_connected_count": 1615,
-    "perc_from_connected": 95.91836734693877,
-    "perc_to_connected": 99.56843403205919
-  },
-  "2_to_3": {
-    "from_level": 2,
-    "to_level": 3,
-    "from_terms_count": 1622,
-    "to_terms_count": 4453,
-    "from_connected_count": 1020,
-    "to_connected_count": 4453,
-    "perc_from_connected": 62.88532675709001,
-    "perc_to_connected": 100.0
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d490e0014e0d14fbed1854d3ced1dd2b10e2ba3eaa4e93e0d01ebd77ae4d3521
+size 774
