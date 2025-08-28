@@ -180,6 +180,15 @@ archive/
 generate_glossary/generation/aol/
 raw_search_results/
 
+# macOS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
 
 # large files
 *.zip
