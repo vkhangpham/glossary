@@ -1,5 +1,26 @@
 #!/usr/bin/env python
+"""
+COMPATIBILITY SHIM - This file maintains backward compatibility.
+The actual implementation has been moved to generate_glossary.metadata module.
 
+This file will be removed in a future version. Please update imports to use:
+    from generate_glossary.metadata import ...
+"""
+
+import warnings
+
+# Issue deprecation warning
+warnings.warn(
+    "Importing from generate_glossary.utils.metadata_collector is deprecated. "
+    "Please use 'from generate_glossary.metadata import ...' instead.",
+    DeprecationWarning,
+    stacklevel=2
+)
+
+# Import everything from new location for backward compatibility
+from ..metadata import *
+
+# Also keep the original imports for any direct module access
 import argparse
 import csv
 import json
@@ -10,7 +31,7 @@ import re
 from typing import Dict, List, Set, Any
 from collections import defaultdict
 
-# Update the DATA_DIR to be relative to the script location or workspace root
+# Keep original constants for compatibility
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'generate_glossary', 'data'))
 FINAL_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'data', 'final'))
 
