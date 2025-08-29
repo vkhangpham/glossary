@@ -37,13 +37,13 @@ except ImportError:
             is_verified: bool = False
             verification_reason: str = ""
 
-from .dedup_utils import (
+from .utils import (
     normalize_text, get_term_variations, is_compound_term,
     process_in_parallel, timing_decorator,
 )
 
-# Import graph-based deduplication
-from .graph_dedup import deduplicate_graph_based as _deduplicate_graph_based
+# Import new pipeline for graph-based deduplication
+from .pipeline import deduplicate_progressive as _deduplicate_progressive
 
 # Type aliases
 DeduplicationResult = Dict[str, Any]
@@ -676,16 +676,36 @@ def deduplicate_graph_based(
         for level, level_web_content in higher_level_web_content.items():
             all_web_content.update(level_web_content)
     
-    # Call the actual graph-based deduplication function
-    result = _deduplicate_graph_based(
+    # Prepare config for new pipeline
+    config = {
+        "min_text_similarity": 0.85,
+        "min_embedding_similarity": 0.49,
+        "min_url_overlap": 2,
+        "min_relevance_score": min_relevance_score,
+        "use_cross_level": True,
+        "prefer_higher_level": False,
+        "remove_weak_edges": True,
+        "weak_edge_threshold": 0.3
+    }
+    
+    # Call the new progressive deduplication pipeline
+    result = _deduplicate_progressive(
         terms_by_level=terms_by_level,
         web_content=all_web_content,
-        url_overlap_threshold=2,  # Default value
-        min_relevance_score=min_relevance_score,  # Use min_relevance_score parameter
-        cache_dir=cache_dir,  # Pass cache_dir parameter
-        current_level=current_level, # Pass current_level from the wrapper
-        max_workers_transitive=max_workers_transitive # Pass the new parameter
+        embeddings=None,  # TODO: Add embeddings support if available
+        config=config,
+        cache_dir=cache_dir,
+        use_cache=True if cache_dir else False,
+        save_checkpoints=True if cache_dir else False
     )
+    
+    # Convert new result format to match old format for backward compatibility
+    if "variations" in result:
+        # Convert variations dict to old format
+        all_terms = set(result.get("canonical_terms", []))
+        for variations in result["variations"].values():
+            all_terms.update(variations)
+        result["deduplicated_terms"] = sorted(list(all_terms))
     
     # Add higher level terms and terms_by_level to result for use by the CLI
     result["higher_level_terms"] = higher_level_terms
