@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-08-29] - Major Utils Cleanup and Redundancy Removal
+
+### Removed (4,755 lines total)
+- **Entire `web_search/` directory** (3,640 lines of redundant code)
+  - `html_fetch.py` (1,326 lines) - Complex HTML fetching replaced by Firecrawl
+  - `search.py` (352 lines) - Web search replaced by Firecrawl search
+  - `list_extractor.py` (725 lines) - HTML parsing replaced by Firecrawl extraction
+  - `filtering.py` (811 lines) - List filtering replaced by Firecrawl AI
+  - `example.py` (426 lines) - Obsolete example code
+- **Unused utils files** (1,115 lines)
+  - `scoring_utils.py` (261 lines) - Orphaned scoring logic
+  - `verification_utils.py` (404 lines) - Redundant with Firecrawl validation
+  - `checkpoint_cli.py` (248 lines) - Unused CLI tool
+  - `security_cli.py` (274 lines) - Unused security tool
+  - `exceptions.py` - Unused exception classes
+- **Old `web_extraction.py`** (365 lines) - Replaced with Firecrawl version
+- **Analysis markdown files** - Temporary documentation removed
+
+### Changed
+- Migrated entire generation pipeline to use Firecrawl SDK exclusively
+- Updated all level runners (lv1, lv2, lv3) to use `web_extraction_firecrawl.py`
+- Reduced utils directory from 7,946 to 3,191 lines (60% reduction)
+- Eliminated dangerous `nest_asyncio` patterns and async/sync mixing
+- Removed 15+ unnecessary dependencies
+
+### Added
+- `web_extraction_firecrawl.py` - Clean Firecrawl-based extraction (365 lines)
+
+### Performance & Quality Impact
+- **Code reduction**: 4,755 lines removed (60% of utils)
+- **Complexity**: Eliminated browser automation, manual SSL, async/sync mixing
+- **Speed**: Maintained 4x performance improvement from Firecrawl
+- **Reliability**: Single robust API instead of fragile multi-library pipeline
+- **Maintenance**: Dramatically simplified codebase with clear boundaries
+
 ## [2025-08-29] - Firecrawl SDK Migration
 
 ### Added

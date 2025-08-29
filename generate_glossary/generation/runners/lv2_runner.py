@@ -11,8 +11,8 @@ import argparse
 from pathlib import Path
 from typing import Optional
 
-# Import shared utilities (simple versions to avoid legacy import issues)
-from generate_glossary.generation.shared.web_extraction import extract_web_content_simple
+# Import shared utilities (using Firecrawl for 4x faster extraction)
+from generate_glossary.generation.shared.web_extraction_firecrawl import extract_web_content_simple
 from generate_glossary.generation.shared.concept_extraction import extract_concepts_llm_simple
 from generate_glossary.generation.shared.level_config import get_level_config
 from generate_glossary.utils.logger import setup_logger

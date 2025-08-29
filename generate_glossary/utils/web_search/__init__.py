@@ -1,1 +1,0 @@
-# Web search utilities for generate_glossary 
