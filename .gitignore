@@ -211,3 +211,19 @@ implement/
 fix-imports/
 fix-todos/
 refactor/
+
+# Test and temporary files
+*test*.py
+*.disabled
+*.tmp
+*.bak
+*~
+test_results/
+test_output/
+
+# Log files
+*.log
+logs/
+
+# Development artifacts
+requirements.txt

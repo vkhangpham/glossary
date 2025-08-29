@@ -33,32 +33,24 @@ dependencies = [
     "scipy",
     "regex",
     "openpyxl",
-    
     # Visualization and duplicate finding
     "matplotlib",
     "seaborn",
     "networkx",
     "plotly",
-    
     # File handling and I/O
     "requests",
     "tqdm",
     "pyyaml",
     "chardet",
     "aiohttp",
-    
     # For LLM integration
     "openai",
     "litellm",
     "instructor",
     "bs4",
-    
-    # Web scraping and processing
-    "beautifulsoup4",
-    "trafilatura",
-    "html5lib",
-    "playwright",
-    
+    # Web scraping with Firecrawl
+    "firecrawl-py",
     # NLP and text processing
     "spacy",
     "cleantext",
@@ -69,14 +61,13 @@ dependencies = [
     "sentence-transformers",
     "sentencepiece",
     "torch",
-    
     # Additional tools
-    "tavily-python",
     "google-genai",
     "python-dotenv",
     "flask",
     "polars",
     "tenacity",
+    "firecrawl-py>=3.4.0",
 ]
 
 [project.scripts]

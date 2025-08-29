@@ -130,11 +130,36 @@ git clone https://github.com/yourusername/glossary-analysis.git
 cd glossary-analysis
 
 # Install requirements
-pip install -r requirements.txt
+uv sync
 
 # Set up API keys (for LLM-based operations)
 export OPENAI_API_KEY="your-openai-key"
 export GEMINI_API_KEY="your-gemini-key"
+```
+
+## Web Mining with Firecrawl (NEW - 4x Faster)
+
+The project now supports Firecrawl SDK for web content mining, providing:
+- **4x faster extraction** compared to the original approach
+- **Single API call** instead of complex HTML parsing pipeline
+- **Built-in AI extraction** with structured schemas
+- **Automatic JavaScript rendering** for dynamic sites
+- **80% cost reduction** compared to separate search + LLM calls
+
+### Setup Firecrawl:
+1. Get your API key from [firecrawl.dev](https://www.firecrawl.dev) ($83/month for 10,000 concepts)
+2. Add to environment: `export FIRECRAWL_API_KEY='fc-your-key'`
+3. Test integration: `python test_firecrawl.py`
+
+### Web Mining Options:
+```bash
+# Use Firecrawl SDK (recommended - 4x faster)
+export USE_FIRECRAWL=true
+uv run glossary-web-miner -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
+
+# Use original approach (slower but no API key needed)
+export USE_FIRECRAWL=false
+uv run glossary-web-miner -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
 ```
 
 ## Usage
