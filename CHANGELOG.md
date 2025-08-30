@@ -7,6 +7,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-08-29] - Deduplication Module Refactoring
+
+### Changed
+- **Complete refactoring of deduplication module** from monolithic to modular architecture
+  - Replaced 2,574-line `graph_dedup.py` with focused modules
+  - Separated graph building (`main.py`) from querying (`api.py`)
+  - Split edge creation into three specialized modules:
+    - `rule_based_dedup.py` - Text similarity, compound terms, acronyms (326 lines)
+    - `web_based_dedup.py` - URL overlap, domain patterns (457 lines)
+    - `llm_based_dedup.py` - Semantic analysis of web content (292 lines)
+  - Added dedicated modules for canonical selection and graph I/O
+
+### Added
+- **Graph-first architecture** where graph is the genuine output artifact
+- **Corrected LLM deduplication logic**:
+  - Analyzes terms with 1-2 URL overlap (below web-based threshold)
+  - Compares actual web content to determine duplicates
+  - Not just semantic similarity but content-based analysis
+- **Functional programming** throughout - removed all OOP abstractions
+- **Progressive pipeline** support for level-by-level processing
+
+### Removed
+- Old `generate_glossary/deduplicator/` directory (3,878 lines)
+- Redundant CLI file (functionality moved to main.py)
+- OOP abstractions and class-based design
+
+### Technical Improvements
+- Clear separation of concerns with modular structure
+- Graph can be saved, loaded, and extended incrementally
+- Reduced total code from 3,878 to 2,848 lines with better organization
+- Fixed import paths and dependencies
+- Updated pyproject.toml entry point to `generate_glossary.deduplication.main:main`
+
 ## [2025-08-29] - Major Utils Cleanup and Redundancy Removal
 
 ### Removed (4,755 lines total)

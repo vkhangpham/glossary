@@ -33,7 +33,7 @@ generate_glossary/
 │   ├── lv2/                # Level 2 generation scripts (research areas)
 │   └── lv3/                # Level 3 generation scripts (conference topics)
 ├── validator/              # Term validation components
-├── deduplicator/           # Term deduplication components
+├── deduplication/          # Graph-based deduplication module
 ├── utils/                  # Shared utilities
 │   ├── web_search/         # Web search and content extraction utilities
 │   └── ...                 # Other utilities
@@ -97,11 +97,12 @@ After generation, concepts undergo further processing:
    - **Web-based**: Validates against web content with relevance scoring
    - **LLM-based**: Final validation with language models
 
-3. **Deduplication**: Identifies and groups term variations
-   - **Graph** (Recommended): Combines rule-based and web content analysis
-   - **Rule**: Basic linguistic variations (plural/singular, spelling)
-   - **Web**: Uses similarity of web content
-   - **LLM**: Uses language models to determine relationships
+3. **Deduplication**: Graph-based identification and grouping of term variations
+   - **Graph-first architecture**: Terms are nodes, duplicates are connected components
+   - **Three edge creation methods**:
+     - **Rule-based**: Text similarity, compound terms, acronyms
+     - **Web-based**: URL overlap, domain patterns, content similarity
+     - **LLM-based**: Semantic analysis of terms with minimal URL overlap
 
 4. **Metadata Collection**: Consolidates information about each term
    - Sources, parent-child relationships, variations, resources
