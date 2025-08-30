@@ -97,7 +97,7 @@ glossary-lv3-s3 = "generate_glossary.generation.runners.lv3_runner:lv3_s3_main"
 
 # Post-processing commands
 glossary-web-miner = "generate_glossary.web_miner_cli:main"
-glossary-validator = "generate_glossary.validator.cli:main"
+glossary-validator = "generate_glossary.validator.main:main"
 glossary-deduplicator = "generate_glossary.deduplication.main:main"
 
 # Hierarchy commands
