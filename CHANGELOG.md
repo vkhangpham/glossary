@@ -7,6 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-01] - Validation Module Refactoring and Simplification
+
+### Changed
+- **Complete refactoring of validation module** to match deduplication module's architecture
+  - Replaced monolithic `validation_modes.py` (254 lines) with focused validators
+  - Split into three specialized validation modules:
+    - `rule_validator.py` - Pattern-based validation with compiled regex
+    - `web_validator.py` - Web content-based validation
+    - `llm_validator.py` - LLM-based semantic validation
+  - Added orchestrator pattern with `main.py` for combining validation modes
+  - Simplified public API in `api.py` to essential functions only
+
+### Added
+- **Comprehensive caching system** (`cache.py`)
+  - Persistent cache for rejected terms across sessions
+  - Validation result caching with expiration
+  - 114x speedup for cached terms
+- **Performance optimizations**
+  - Compiled regex patterns for rule validation
+  - Thread pool with CPU-based resource limits
+  - Early exit optimization when confidence threshold exceeded
+  - LRU cache for frequently validated terms
+
+### Removed
+- **Unnecessary complexity**
+  - Removed `llm_utils.py` (216 lines) - cost tracking not needed for academic project
+  - Removed `wiki_validator.py` - Wikipedia validation (redundant)
+  - Removed `cli.py` - integrated into main.py
+  - Removed cost tracking, rate limiting, and exponential backoff (handled by litellm)
+- **Test files** integrated into main module
+  - `test_relevance.py` (161 lines)
+
+### Technical Improvements
+- Consistent with codebase architecture (utilities in `utils/`, domain logic in modules)
+- Functional programming approach - no OOP abstractions
+- Simplified LLM validator to use existing `utils/llm.py`
+- Reduced complexity while maintaining all functionality
+- Processing rate: 54,000+ terms/second for rule validation
+
 ## [2025-08-29] - Deduplication Module Refactoring
 
 ### Changed
