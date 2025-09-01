@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-02] - Disambiguation Module Renamed and Restructured
+
+### Changed
+- **Renamed and restructured disambiguation module** for consistency with codebase aesthetics
+  - Renamed module: `sense_disambiguation` → `disambiguation` (shorter, cleaner)
+  - Moved from `generate_glossary/sense_disambiguation/` to `generate_glossary/disambiguation/`
+  - Split monolithic `detector.py` into specialized modules:
+    - `embedding_disambiguator.py` - Semantic embedding clustering detection
+    - `hierarchy_disambiguator.py` - Parent context divergence detection
+    - `global_disambiguator.py` - Global resource clustering detection
+  - Renamed `splitter.py` → `sense_splitter.py` for clarity
+  - Merged CLI into `main.py` following validation module pattern
+  
+### Added
+- **Clean public API** in `api.py`:
+  - `disambiguate_terms()` - Complete pipeline with simple interface
+  - `detect_ambiguous()` - Detection-only functionality
+  - `split_senses()` - Split generation functionality
+- **Consistent function naming**:
+  - `detect_ambiguous_by_embeddings()` instead of `detect_with_embeddings()`
+  - `detect_ambiguous_by_hierarchy()` instead of `detect_with_hierarchy()`
+  - `detect_ambiguous_by_global_clustering()` instead of `detect_with_global_clustering()`
+  - `generate_splits()` instead of `generate_sense_splits()`
+
+### Technical Improvements
+- Module structure now matches validation/deduplication patterns exactly
+- Cleaner separation between detection methods in separate files
+- Simplified imports with shorter module name
+- Better code organization with focused, single-purpose files
+
 ## [2025-09-02] - Sense Disambiguation Module Refactoring
 
 ### Changed

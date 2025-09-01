@@ -114,8 +114,8 @@ glossary-checkpoint = "generate_glossary.utils.checkpoint_cli:main"
 # Security management commands
 glossary-security = "generate_glossary.utils.security_cli:main"
 
-# Sense disambiguation commands
-glossary-disambiguate = "generate_glossary.sense_disambiguation.cli:main"
+# Disambiguation commands
+glossary-disambiguate = "generate_glossary.disambiguation.main:main"
 
 
 [tool.hatch.build.targets.wheel]
