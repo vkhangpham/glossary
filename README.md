@@ -4,13 +4,15 @@ This repository contains tools for generating, validating, analyzing, and visual
 
 ## Hierarchy Structure
 
-The academic glossary is structured in multiple levels:
+## Hierarchy Structure
 
-- **Level 0**: Broad academic domains - corresponds to Colleges of a University
-- **Level 1**: Academic fields - corresponds to Departments of a College
-- **Level 2**: Specialized topics - corresponds to Research Areas of a Department
-- **Level 3**: Conference/journal topics - corresponds to specialized topics discussed in academic conferences and journals
-- **Level 4**: Detailed research concepts - corresponds to concepts from research paper abstracts
+The academic glossary is structured in 5 levels:
+
+- **Level 0**: Broad academic domains - corresponds to Colleges of a University (99% F1 score)
+- **Level 1**: Academic fields - corresponds to Departments of a College (99% F1 score)
+- **Level 2**: Specialized topics - corresponds to Research Areas of a Department (~90-95% F1 score)
+- **Level 3**: Conference/journal topics - corresponds to specialized topics discussed in academic conferences and journals (~90-95% F1 score)
+- **Level 4**: Individual academic papers - corresponds to specific research publications
 
 ## Project Components
 

@@ -7,16 +7,7 @@ based on semantic understanding and domain knowledge.
 
 from typing import List, Dict, Any, Optional
 import logging
-import time
-from functools import lru_cache
 from tqdm import tqdm
-
-from .llm_utils import (
-    exponential_backoff_retry,
-    track_llm_cost,
-    get_cost_summary,
-    RateLimiter
-)
 
 # Default prompt template
 DEFAULT_VALIDATION_PROMPT = """
@@ -82,27 +73,12 @@ def validate_with_llm(
         for term in iterator:
             results[term] = _validate_single_term_llm(term, provider)
     
-    # Log cost summary
-    from .llm_utils import get_cost_summary
-    cost_summary = get_cost_summary()
-    if cost_summary["total_calls"] > 0:
-        logging.info(
-            f"LLM validation costs: ${cost_summary['total_cost_usd']:.4f} "
-            f"for {cost_summary['total_calls']} calls "
-            f"(avg: ${cost_summary['avg_cost_per_call']:.4f}/call)"
-        )
-    
     return results
 
 
-# Global rate limiter
-_rate_limiter = RateLimiter(calls_per_minute=60)
-
-
-@exponential_backoff_retry(max_retries=3, base_delay=1.0)
 def _validate_single_term_llm(term: str, provider: str) -> Dict[str, Any]:
     """
-    Validate a single term using LLM with retry and cost tracking.
+    Validate a single term using LLM.
     
     Args:
         term: Term to validate
@@ -113,9 +89,6 @@ def _validate_single_term_llm(term: str, provider: str) -> Dict[str, Any]:
     """
     try:
         from generate_glossary.utils.llm_simple import infer_text
-        
-        # Rate limiting
-        _rate_limiter.wait_if_needed()
         
         # Generate prompt
         prompt = DEFAULT_VALIDATION_PROMPT.format(term=term)
@@ -130,10 +103,6 @@ def _validate_single_term_llm(term: str, provider: str) -> Dict[str, Any]:
         # Parse response
         response_text = response.text if hasattr(response, 'text') else str(response)
         
-        # Track cost
-        model = getattr(response, 'model', 'unknown')
-        cost = track_llm_cost(provider, model, prompt, response_text)
-        
         # Parse response
         is_valid, confidence, reason = _parse_llm_response(response_text)
         
@@ -145,8 +114,7 @@ def _validate_single_term_llm(term: str, provider: str) -> Dict[str, Any]:
             "details": {
                 "provider": provider,
                 "response": response_text,
-                "reason": reason,
-                "cost_usd": round(cost, 6)
+                "reason": reason
             }
         }
         
