@@ -1,10 +1,10 @@
-# Academic Concept Validator
+# Academic Concept Validation
 
 This module provides tools for validating academic concepts across different levels of the glossary hierarchy using multiple validation strategies.
 
 ## Overview
 
-The validator ensures that terms in the academic glossary are valid concepts by applying multiple layers of validation, from basic structural checks to content verification and LLM-based analysis.
+The validation module ensures that terms in the academic glossary are valid concepts by applying multiple layers of validation, from basic structural checks to content verification and LLM-based analysis.
 
 ## Features
 
@@ -50,13 +50,13 @@ This mode uses language models to verify terms:
 
 ```bash
 # Validate terms using rule-based validation
-python -m generate_glossary.validator.cli terms.txt -m rule -o results/rule_valid
+python -m generate_glossary.validation.cli terms.txt -m rule -o results/rule_valid
 
 # Validate terms using web-based validation
-python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -o results/web_valid
+python -m generate_glossary.validation.cli terms.txt -m web -w web_content.json -o results/web_valid
 
 # Validate terms using LLM-based validation
-python -m generate_glossary.validator.cli terms.txt -m llm -p gemini -o results/llm_valid
+python -m generate_glossary.validation.cli terms.txt -m llm -p gemini -o results/llm_valid
 ```
 
 ### Using Level-Based Validation
@@ -65,16 +65,16 @@ When validating terms across multiple levels, you can use the `-l` or `--level` 
 
 ```bash
 # Level 1 validation
-python -m generate_glossary.validator.cli terms.txt -m rule -l 1 -o data/lv1/lv1_rule_valid
+python -m generate_glossary.validation.cli terms.txt -m rule -l 1 -o data/lv1/lv1_rule_valid
 
 # Level 2 validation (will skip terms rejected in level 0 and 1)
-python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -l 2 -o data/lv2/lv2_web_valid
+python -m generate_glossary.validation.cli terms.txt -m web -w web_content.json -l 2 -o data/lv2/lv2_web_valid
 
 # Level 3 validation (will skip terms rejected in levels 0, 1 and 2)
-python -m generate_glossary.validator.cli terms.txt -m llm -p gemini -l 3 -o data/lv3/lv3_llm_valid
+python -m generate_glossary.validation.cli terms.txt -m llm -p gemini -l 3 -o data/lv3/lv3_llm_valid
 ```
 
-The validator will automatically look for previous validation results in the `data/lvX/lvX*_valid.json` files for levels below the specified level.
+The validation module will automatically look for previous validation results in the `data/lvX/lvX*_valid.json` files for levels below the specified level.
 
 ### Web Content Relevance Scoring
 
@@ -82,10 +82,10 @@ When using web-based validation, you can update web content with relevance score
 
 ```bash
 # Update web content in-place with relevance scores
-python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -o results/web_valid --update-web-content
+python -m generate_glossary.validation.cli terms.txt -m web -w web_content.json -o results/web_valid --update-web-content
 
 # Save updated web content to a new file
-python -m generate_glossary.validator.cli terms.txt -m web -w web_content.json -o results/web_valid --save-web-content updated_web_content.json
+python -m generate_glossary.validation.cli terms.txt -m web -w web_content.json -o results/web_valid --save-web-content updated_web_content.json
 ```
 
 These relevance scores are used by the deduplicator to improve term relationship detection by filtering out irrelevant web content.
@@ -125,7 +125,7 @@ options:
 
 ## Output Format
 
-The validator outputs two files:
+The validation module outputs two files:
 
 - `*.json`: Full validation results including details
 - `*.txt`: List of valid terms only
@@ -175,7 +175,7 @@ The validator outputs two files:
 
 ## Integration with the Pipeline
 
-The validator is typically used in sequence within the glossary pipeline:
+The validation module is typically used in sequence within the glossary pipeline:
 
 1. Generate terms → 2. Mine web content → **3. Validate terms** → 4. Deduplicate terms → 5. Collect metadata
 

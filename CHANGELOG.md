@@ -7,6 +7,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-02] - Sense Disambiguation Module Refactoring
+
+### Changed
+- **Complete refactoring of sense disambiguation module** to functional programming
+  - Moved module from root `sense_disambiguation/` to `generate_glossary/sense_disambiguation/`
+  - Replaced all classes with pure functions:
+    - `ResourceClusterDetector` → `detect_with_embeddings()`
+    - `ParentContextDetector` → `detect_with_hierarchy()`
+    - `GlobalResourceClusterer` → `detect_with_global_clustering()`
+    - `SenseSplitter` → `generate_sense_splits()` and `validate_splits()`
+  - Removed all state management - no instance variables or lazy loading
+  - Follows patterns from deduplication and validation modules
+  
+### Added
+- **Unified orchestration functions**
+  - `detect_ambiguous_terms()` - single entry point for all detection methods
+  - `split_ambiguous_terms()` - handles splitting with validation
+  - `run_disambiguation_pipeline()` - complete pipeline orchestration
+- **Clean CLI interface** (`glossary-disambiguate`)
+  - `detect` command for ambiguity detection
+  - `split` command for generating sense splits
+  - `run` command for complete pipeline
+  
+### Removed
+- **Old OOP-based implementation**
+  - Removed 5 detector classes (replaced with 3 parameterized functions)
+  - Removed complex class hierarchies and inheritance
+  - Removed manual `sys.path` manipulations
+  - Deleted original `sense_disambiguation/` directory at root
+  
+### Renamed
+- **Validator module renamed to Validation**
+  - `generate_glossary/validator/` → `generate_glossary/validation/`
+  - Updated all imports and references
+  - Consistent naming with other modules
+
+### Technical Improvements
+- Single source of truth - no duplicate detector implementations
+- Pure functional programming - no classes except Pydantic models
+- Proper package structure - no path manipulation needed
+- Consistent with project architecture and coding standards
+- Embedding models loaded on-demand, not stored as state
+
 ## [2025-09-01] - Validation Module Refactoring and Simplification
 
 ### Changed
