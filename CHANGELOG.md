@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-02] - Final Utils Cleanup and Refactoring
+
+### Changed
+- **Removed redundant web scraping code from utils**
+  - Deleted old `web_extraction.py` that was replaced by Firecrawl
+  - Cleaned up obsolete scraping utilities no longer needed
+  - All web mining now exclusively uses Firecrawl SDK
+  
+### Fixed  
+- **Updated Firecrawl to v4.3.1**
+  - Resolved duplicate dependency issue with pyproject.toml
+  - Fixed version mismatch between pyproject.toml and requirements
+  - Ensured clean dependency tree
+  
+### Technical Improvements
+- Utils directory now contains only essential utilities
+- Eliminated all redundant web scraping implementations
+- Consistent use of Firecrawl SDK throughout codebase
+- Cleaner module boundaries with no overlapping functionality
+
 ## [2025-09-02] - Firecrawl v2 Features Integration
 
 ### Added

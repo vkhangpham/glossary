@@ -221,10 +221,10 @@ python duplicate_analyzer.py
 For detailed documentation on specific components:
 
 - [Generation Documentation](generate_glossary/generation/README.md)
-- [Validator Documentation](generate_glossary/validator/README.md)
-- [Deduplicator Documentation](generate_glossary/deduplicator/README.md)
+- [Validation Documentation](generate_glossary/validation/README.md)
+- [Deduplication Documentation](generate_glossary/deduplication/README.md)
 - [Hierarchy Documentation](hierarchy/README.md)
-- [Sense Disambiguation Documentation](sense_disambiguation/README.md)
+- [Disambiguation Documentation](generate_glossary/disambiguation/README.md)
 - [Changelog](CHANGELOG.md)
 
 
