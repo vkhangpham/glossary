@@ -14,9 +14,9 @@ import time
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple, Literal
 
-from .embedding_disambiguator import detect_ambiguous_by_embeddings
-from .hierarchy_disambiguator import detect_ambiguous_by_hierarchy  
-from .global_disambiguator import detect_ambiguous_by_global_clustering
+from . import embedding_disambiguator
+from . import hierarchy_disambiguator
+from . import global_disambiguator
 from .sense_splitter import generate_splits, validate_splits, apply_to_hierarchy
 from .utils import (
     load_hierarchy,
@@ -77,7 +77,7 @@ def detect_ambiguous_terms(
     
     # Apply detection method(s)
     if method == "embedding":
-        results = detect_ambiguous_by_embeddings(
+        results = embedding_disambiguator.detect(
             terms=terms,
             web_content=web_content,
             hierarchy=hierarchy,
@@ -89,7 +89,7 @@ def detect_ambiguous_terms(
         )
     
     elif method == "hierarchy":
-        results = detect_ambiguous_by_hierarchy(
+        results = hierarchy_disambiguator.detect(
             terms=terms,
             web_content=web_content,
             hierarchy=hierarchy,
@@ -98,7 +98,7 @@ def detect_ambiguous_terms(
         )
     
     elif method == "global":
-        results = detect_ambiguous_by_global_clustering(
+        results = global_disambiguator.detect(
             terms=terms,
             web_content=web_content,
             hierarchy=hierarchy,
@@ -114,7 +114,7 @@ def detect_ambiguous_terms(
         results = {}
         
         # Embedding-based detection
-        embedding_results = detect_ambiguous_by_embeddings(
+        embedding_results = embedding_disambiguator.detect(
             terms=terms,
             web_content=web_content,
             hierarchy=hierarchy,
@@ -126,7 +126,7 @@ def detect_ambiguous_terms(
         )
         
         # Hierarchy-based detection
-        hierarchy_results = detect_ambiguous_by_hierarchy(
+        hierarchy_results = hierarchy_disambiguator.detect(
             terms=terms,
             web_content=web_content,
             hierarchy=hierarchy,
@@ -135,7 +135,7 @@ def detect_ambiguous_terms(
         )
         
         # Global clustering detection
-        global_results = detect_ambiguous_by_global_clustering(
+        global_results = global_disambiguator.detect(
             terms=terms,
             web_content=web_content,
             hierarchy=hierarchy,

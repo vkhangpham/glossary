@@ -23,6 +23,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed all class definitions except Pydantic models (which are data-only)
 - More consistent with functional programming approach throughout codebase
 
+## [2025-09-02] - Disambiguation Module Simplified to Functional Style
+
+### Changed  
+- **Simplified function names throughout disambiguation module**
+  - `detect_ambiguous_by_embeddings()` → `detect()` in embedding_disambiguator
+  - `detect_ambiguous_by_hierarchy()` → `detect()` in hierarchy_disambiguator
+  - `detect_ambiguous_by_global_clustering()` → `detect()` in global_disambiguator
+  - `_cluster_embeddings()` → `cluster_embeddings()` (removed underscore prefix)
+  - Other helper functions made public by removing underscore prefixes
+- **Removed unnecessary type aliases and complexity**
+  - Simplified type hints to basic Python types
+  - Removed `Literal` type alias for clustering algorithm
+- **Cleaner module imports**
+  - Import modules instead of individual functions
+  - Use `embedding_disambiguator.detect()` pattern
+
+### Technical Improvements
+- More functional style with simpler, focused functions
+- Consistent naming patterns across all disambiguator modules
+- Public helper functions for better reusability
+- Reduced cognitive complexity with shorter names
+
 ## [2025-09-02] - Disambiguation Module Renamed and Restructured
 
 ### Changed

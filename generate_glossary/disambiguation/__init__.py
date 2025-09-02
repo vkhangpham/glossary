@@ -11,9 +11,9 @@ from .api import (
     split_senses
 )
 
-from .embedding_disambiguator import detect_ambiguous_by_embeddings
-from .hierarchy_disambiguator import detect_ambiguous_by_hierarchy
-from .global_disambiguator import detect_ambiguous_by_global_clustering
+from . import embedding_disambiguator
+from . import hierarchy_disambiguator
+from . import global_disambiguator
 
 from .sense_splitter import (
     generate_splits,
@@ -27,10 +27,10 @@ __all__ = [
     "detect_ambiguous",
     "split_senses",
     
-    # Detection functions
-    "detect_ambiguous_by_embeddings",
-    "detect_ambiguous_by_hierarchy",
-    "detect_ambiguous_by_global_clustering",
+    # Detection modules
+    "embedding_disambiguator",
+    "hierarchy_disambiguator",
+    "global_disambiguator",
     
     # Splitting functions  
     "generate_splits",

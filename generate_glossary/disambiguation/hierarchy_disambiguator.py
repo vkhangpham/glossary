@@ -6,25 +6,19 @@ terms in the hierarchy to identify divergent contexts.
 """
 
 import logging
-from typing import Dict, List, Any, Set, Optional
+from typing import Dict, List, Any, Optional
 from collections import defaultdict
 
 from .utils import calculate_confidence_score
 
-# Type aliases
-Terms = List[str]
-WebContent = Dict[str, Any]
-Hierarchy = Dict[str, Any]
-DetectionResults = Dict[str, Dict[str, Any]]
 
-
-def detect_ambiguous_by_hierarchy(
-    terms: Terms,
-    web_content: Optional[WebContent],
-    hierarchy: Hierarchy,
+def detect(
+    terms: List[str],
+    web_content: Optional[Dict[str, Any]],
+    hierarchy: Dict[str, Any],
     min_parent_overlap: float = 0.3,
     max_parent_similarity: float = 0.7
-) -> DetectionResults:
+) -> Dict[str, Dict[str, Any]]:
     """
     Detect ambiguous terms by analyzing parent relationships.
     
@@ -79,7 +73,7 @@ def detect_ambiguous_by_hierarchy(
         # Analyze parent contexts
         parent_contexts = {}
         for parent in parents:
-            context = _extract_parent_context(parent, hierarchy, web_content)
+            context = extract_parent_context(parent, hierarchy, web_content)
             if context:
                 parent_contexts[parent] = context
         
@@ -87,7 +81,7 @@ def detect_ambiguous_by_hierarchy(
             continue
         
         # Check for divergent contexts
-        divergence_evidence = _analyze_context_divergence(
+        divergence_evidence = analyze_context_divergence(
             parent_contexts,
             min_parent_overlap,
             max_parent_similarity
@@ -95,7 +89,7 @@ def detect_ambiguous_by_hierarchy(
         
         if divergence_evidence["is_divergent"]:
             # Calculate confidence
-            confidence = _calculate_hierarchy_confidence(
+            confidence = calculate_hierarchy_confidence(
                 num_parents=len(parents),
                 divergence_score=divergence_evidence["divergence_score"],
                 level=level_map.get(term, -1)
@@ -120,10 +114,10 @@ def detect_ambiguous_by_hierarchy(
     return results
 
 
-def _extract_parent_context(
+def extract_parent_context(
     parent: str,
-    hierarchy: Hierarchy,
-    web_content: Optional[WebContent]
+    hierarchy: Dict[str, Any],
+    web_content: Optional[Dict[str, Any]]
 ) -> Optional[Dict[str, Any]]:
     """
     Extract context information for a parent term.
@@ -190,7 +184,7 @@ def _extract_parent_context(
     return context if context["keywords"] else None
 
 
-def _analyze_context_divergence(
+def analyze_context_divergence(
     parent_contexts: Dict[str, Dict],
     min_overlap: float,
     max_similarity: float
@@ -265,7 +259,7 @@ def _analyze_context_divergence(
     }
 
 
-def _calculate_hierarchy_confidence(
+def calculate_hierarchy_confidence(
     num_parents: int,
     divergence_score: float,
     level: int

@@ -6,7 +6,7 @@ when web content about a term forms distinct semantic groups.
 """
 
 import logging
-from typing import Dict, List, Any, Optional, Literal
+from typing import Dict, List, Any, Optional
 import numpy as np
 from sklearn.cluster import DBSCAN
 from sklearn.metrics import silhouette_score
@@ -17,13 +17,6 @@ from .utils import (
     calculate_confidence_score
 )
 
-# Type aliases
-Terms = List[str]
-WebContent = Dict[str, Any]
-Hierarchy = Dict[str, Any]
-DetectionResults = Dict[str, Dict[str, Any]]
-ClusteringAlgorithm = Literal["dbscan", "hdbscan"]
-
 # Try to import HDBSCAN if available
 try:
     import hdbscan
@@ -33,16 +26,16 @@ except ImportError:
     logging.debug("HDBSCAN not available, using DBSCAN only")
 
 
-def detect_ambiguous_by_embeddings(
-    terms: Terms,
-    web_content: WebContent,
-    hierarchy: Hierarchy,
+def detect(
+    terms: List[str],
+    web_content: Dict[str, Any],
+    hierarchy: Dict[str, Any],
     model_name: str = "all-MiniLM-L6-v2",
-    clustering_algorithm: ClusteringAlgorithm = "dbscan",
+    clustering_algorithm: str = "dbscan",
     eps: float = 0.45,
     min_samples: int = 2,
     min_resources: int = 5
-) -> DetectionResults:
+) -> Dict[str, Dict[str, Any]]:
     """
     Detect ambiguous terms by clustering their resource embeddings.
     
@@ -107,7 +100,7 @@ def detect_ambiguous_by_embeddings(
             continue
         
         # Cluster embeddings
-        clusters, silhouette = _cluster_embeddings(
+        clusters, silhouette = cluster_embeddings(
             embeddings,
             clustering_algorithm,
             eps,
@@ -166,9 +159,9 @@ def detect_ambiguous_by_embeddings(
     return results
 
 
-def _cluster_embeddings(
+def cluster_embeddings(
     embeddings: np.ndarray,
-    algorithm: ClusteringAlgorithm,
+    algorithm: str,
     eps: float,
     min_samples: int
 ) -> tuple[np.ndarray, float]:

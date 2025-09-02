@@ -6,7 +6,7 @@ when resources for a single term belong to different global topics.
 """
 
 import logging
-from typing import Dict, List, Any, Optional, Set
+from typing import Dict, List, Any, Optional
 import numpy as np
 from collections import defaultdict
 from sklearn.cluster import DBSCAN
@@ -18,23 +18,17 @@ from .utils import (
     calculate_confidence_score
 )
 
-# Type aliases
-Terms = List[str]
-WebContent = Dict[str, Any]
-Hierarchy = Dict[str, Any]
-DetectionResults = Dict[str, Dict[str, Any]]
 
-
-def detect_ambiguous_by_global_clustering(
-    terms: Terms,
-    web_content: WebContent,
-    hierarchy: Hierarchy,
+def detect(
+    terms: List[str],
+    web_content: Dict[str, Any],
+    hierarchy: Dict[str, Any],
     model_name: str = "all-MiniLM-L6-v2",
     eps: float = 0.3,
     min_samples: int = 3,
     min_resources: int = 5,
     max_resources_per_term: int = 10
-) -> DetectionResults:
+) -> Dict[str, Dict[str, Any]]:
     """
     Detect ambiguous terms using global resource clustering.
     
@@ -160,7 +154,7 @@ def detect_ambiguous_by_global_clustering(
             cluster_info.sort(key=lambda x: x["resource_count"], reverse=True)
             
             # Calculate confidence
-            confidence = _calculate_global_confidence(
+            confidence = calculate_global_confidence(
                 num_global_clusters=len(cluster_counts),
                 cluster_distribution=cluster_info,
                 global_silhouette=global_silhouette
@@ -186,7 +180,7 @@ def detect_ambiguous_by_global_clustering(
     return results
 
 
-def _calculate_global_confidence(
+def calculate_global_confidence(
     num_global_clusters: int,
     cluster_distribution: List[Dict],
     global_silhouette: float
