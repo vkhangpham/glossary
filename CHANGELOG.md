@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-02] - Deduplication Modes Refactored to Functional Style
+
+### Changed
+- **Removed object-oriented patterns from deduplication_modes.py**
+  - Removed unnecessary WebContent class import and fallback definition
+  - Replaced Pydantic models (TermVariation, TermVariations) with plain dictionaries
+  - Updated LLM processing to use JSON parsing instead of Pydantic model validation
+  - Fixed broken pipeline import by using actual graph builder functions
+  - Cleaned up imports and removed sys.path manipulation
+  
+### Technical Improvements
+- Simpler JSON-based LLM response parsing with fallback regex extraction
+- Direct use of graph_builder and canonical_selector functions
+- Removed all class definitions except Pydantic models (which are data-only)
+- More consistent with functional programming approach throughout codebase
+
 ## [2025-09-02] - Disambiguation Module Renamed and Restructured
 
 ### Changed

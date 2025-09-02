@@ -8,47 +8,25 @@ Module for deduplicating technical concepts using different strategies:
 
 from typing import Dict, List, Set, Tuple, Optional, Any
 from collections import defaultdict
-from pydantic import BaseModel, Field
 import logging
+import json
 
-import os
-import sys
-
-# Add parent directory to path to allow imports from utils
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
-
-# Try both import paths for WebContent to handle different import structures
-try:
-    from utils.web_miner import WebContent
-except ImportError:
-    try:
-        from generate_glossary.utils.web_miner import WebContent
-    except ImportError:
-        logging.error("Could not import WebContent from either utils.web_miner or generate_glossary.utils.web_miner")
-        # Define a minimal version to allow code to run
-        class WebContent:
-            url: str
-            title: str
-            snippet: str
-            raw_content: str
-            processed_content: str
-            score: float = 0.5
-            is_verified: bool = False
-            verification_reason: str = ""
 
 from .utils import (
     normalize_text, get_term_variations, is_compound_term,
     process_in_parallel, timing_decorator,
 )
 
-# Import new pipeline for graph-based deduplication
-from .pipeline import deduplicate_progressive as _deduplicate_progressive
+# Import graph building functions
+from .graph_builder import create_deduplication_graph, add_terms_as_nodes
+from .main import build_graph
 
 # Type aliases
 DeduplicationResult = Dict[str, Any]
 VariationMap = Dict[str, Set[str]]
 
+# Constants for academic variations
 ACADEMIC_VARIATIONS = {
     "plural_forms": {
         "s": "es",
@@ -72,17 +50,8 @@ ACADEMIC_VARIATIONS = {
         "CV": "computer vision",
     }
 }
-# Add Pydantic models for LLM deduplication
-class TermVariation(BaseModel):
-    """Model for a term and its variations"""
-    preferred_term: str = Field(description="The preferred term to use")
-    variations: List[str] = Field(description="List of variations of this term")
 
-class TermVariations(BaseModel):
-    """Model for all term variations"""
-    term_groups: List[TermVariation] = Field(description="Groups of related terms")
-
-# LLM system prompt
+# LLM system prompt for deduplication
 LLM_SYSTEM_PROMPT = """You are an expert in academic terminology and research classification.
 Your task is to identify terms that are variations of each other and choose the most appropriate
 preferred term for each group."""
@@ -548,13 +517,26 @@ Return only YES if they are variations of the same concept, or NO if they are di
                 user_prompt=prompt
             )
             
-            # Parse response
-            variations = TermVariations.parse_raw(response)
+            # Parse JSON response
+            try:
+                data = json.loads(response)
+            except json.JSONDecodeError:
+                # Try to extract JSON from response if wrapped in text
+                import re
+                json_match = re.search(r'\{.*\}', response, re.DOTALL)
+                if json_match:
+                    data = json.loads(json_match.group())
+                else:
+                    logging.error(f"Could not parse JSON from response: {response}")
+                    return {}
             
             # Convert to dictionary format
             batch_variations = {}
-            for group in variations.term_groups:
-                batch_variations[group.preferred_term] = set(group.variations)
+            for group in data.get("term_groups", []):
+                preferred = group.get("preferred_term")
+                variations = group.get("variations", [])
+                if preferred and variations:
+                    batch_variations[preferred] = set(variations)
             
             return batch_variations
             
@@ -688,16 +670,25 @@ def deduplicate_graph_based(
         "weak_edge_threshold": 0.3
     }
     
-    # Call the new progressive deduplication pipeline
-    result = _deduplicate_progressive(
-        terms_by_level=terms_by_level,
+    # Build the deduplication graph using the actual graph builder
+    graph = build_graph(
+        terms=terms,
         web_content=all_web_content,
-        embeddings=None,  # TODO: Add embeddings support if available
-        config=config,
-        cache_dir=cache_dir,
-        use_cache=True if cache_dir else False,
-        save_checkpoints=True if cache_dir else False
+        level=current_level,
+        config=config
     )
+    
+    # Extract canonical terms and variations from the graph
+    from .canonical_selector import select_canonical_terms
+    
+    canonical_terms, variations = select_canonical_terms(graph)
+    
+    # Create result in expected format
+    result = {
+        "canonical_terms": canonical_terms,
+        "variations": variations,
+        "graph": graph
+    }
     
     # Convert new result format to match old format for backward compatibility
     if "variations" in result:
