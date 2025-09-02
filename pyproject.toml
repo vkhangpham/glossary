@@ -49,8 +49,8 @@ dependencies = [
     "litellm",
     "instructor",
     "bs4",
-    # Web scraping with Firecrawl
-    "firecrawl-py",
+    # Web scraping with Firecrawl (v2 features)
+    "firecrawl-py>=1.5.0", # Latest version with v2 API support
     # NLP and text processing
     "spacy",
     "cleantext",
@@ -67,7 +67,6 @@ dependencies = [
     "flask",
     "polars",
     "tenacity",
-    "firecrawl-py>=3.4.0",
 ]
 
 [project.scripts]
