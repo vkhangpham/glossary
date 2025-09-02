@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-02] - Project Cleanup
+
+### Removed
+- **Deleted legacy sense_disambiguation directory**
+  - Removed old `generate_glossary/sense_disambiguation/` directory
+  - This was the pre-refactoring version that has been replaced by `disambiguation/`
+- **Cleaned up Python cache files**
+  - Removed all `__pycache__` directories from codebase
+  - Removed all `.pyc` compiled Python files
+  
+### Technical Improvements
+- Cleaner project structure with no duplicate modules
+- No cached/compiled files in version control
+- Reduced confusion from having both old and new versions
+
 ## [2025-09-02] - Deduplication Modes Refactored to Functional Style
 
 ### Changed
