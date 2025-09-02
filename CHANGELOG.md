@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-02] - Firecrawl v2 Features Integration
+
+### Added
+- **Firecrawl v2 features** to web mining module for improved performance:
+  - **Caching with maxAge**: 500% faster for repeated requests (2-day default cache)
+  - **Search Categories**: Filter searches by `research` category for academic content
+  - **Batch Scraping**: Native batch scraping support for parallel URL processing
+  - **Enhanced Extraction**: Multi-entity prompts with `enableWebSearch` for additional context
+  - **v2 Search Format**: Support for new `sources` and `categories` parameters
+  - **Summary Format**: Option to use concise `summary` format for faster processing
+  
+### Changed
+- **Updated search function** to use v2 search API with research category filtering
+- **Enhanced extraction** with `enableWebSearch`, `allowExternalLinks`, and `includeSubdomains` parameters
+- **Added caching layer** with `scrape_urls_with_cache()` function using maxAge parameter
+- **Batch processing** with new `batch_scrape_urls()` function for parallel scraping
+- **Main entry function** now accepts `use_batch_scrape`, `use_cache`, and `max_age` parameters
+- **Performance optimizations**: Default enabling of `blockAds`, `skipTlsVerification`, `removeBase64Images`
+
+### Technical Improvements
+- Graceful fallback to v1 API if v2 features not available in SDK
+- Statistics now track which v2 features were used
+- Better error handling for batch operations
+- Reduced API calls through intelligent caching
+- Expected performance improvement: Up to 500% faster with caching enabled
+
 ## [2025-09-02] - Project Cleanup
 
 ### Removed

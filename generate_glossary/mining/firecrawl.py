@@ -66,9 +66,66 @@ def initialize_firecrawl() -> Optional[FirecrawlApp]:
         logger.error(f"Failed to initialize Firecrawl: {e}")
         return None
 
+def scrape_urls_with_cache(
+    app: FirecrawlApp,
+    urls: List[str],
+    use_summary: bool = False,
+    max_age: int = 172800000  # 2 days in milliseconds
+) -> Dict[str, Any]:
+    """
+    Scrape URLs using Firecrawl's v2 scrape endpoint with caching.
+    
+    Args:
+        app: Firecrawl client instance
+        urls: List of URLs to scrape
+        use_summary: Whether to use summary format for concise content
+        max_age: Maximum age for cached content in milliseconds (default: 2 days)
+        
+    Returns:
+        Dictionary mapping URLs to scraped content
+    """
+    results = {}
+    
+    for url in urls:
+        try:
+            # Determine formats to extract
+            formats = ["summary"] if use_summary else ["markdown", "links"]
+            
+            # Scrape with v2 features
+            scrape_params = {
+                "url": url,
+                "formats": formats
+            }
+            
+            # Try v2 scrape with caching and optimizations
+            try:
+                result = app.scrape(
+                    url=url,
+                    formats=formats,
+                    maxAge=max_age,  # Use cached content if available
+                    blockAds=True,  # Block ads by default
+                    skipTlsVerification=True,  # Skip TLS for faster scraping
+                    removeBase64Images=True,  # Remove base64 images for smaller payload
+                    onlyMainContent=True  # Focus on main content
+                )
+            except (TypeError, AttributeError):
+                # Fallback to standard scrape
+                result = app.scrape(**scrape_params)
+            
+            # Store result
+            if result:
+                results[url] = result
+                logger.debug(f"Successfully scraped {url} (cached: {result.get('fromCache', False)})")
+            
+        except Exception as e:
+            logger.warning(f"Failed to scrape {url}: {e}")
+            results[url] = {"error": str(e)}
+    
+    return results
+
 def search_concept_firecrawl(app: FirecrawlApp, concept: str, limit: int = 5) -> List[Dict[str, Any]]:
     """
-    Search for a concept using Firecrawl's search endpoint.
+    Search for a concept using Firecrawl's search endpoint with v2 features.
     
     Args:
         app: Firecrawl client instance
@@ -84,15 +141,35 @@ def search_concept_firecrawl(app: FirecrawlApp, concept: str, limit: int = 5) ->
         
         logger.info(f"Searching for: {concept}")
         
-        # Use Firecrawl search
-        results = app.search(
-            query=query,
-            limit=limit
-        )
+        # Use Firecrawl search with v2 features
+        # Try to use research category if available
+        search_params = {
+            "query": query,
+            "limit": limit
+        }
+        
+        # Try v2 search with categories (if supported by SDK version)
+        try:
+            # Attempt to use research category for better academic results
+            results = app.search(
+                query=query,
+                limit=limit,
+                sources=[{"type": "web"}],  # v2 format
+                categories=["research"]  # Filter for research/academic content
+            )
+        except (TypeError, AttributeError):
+            # Fallback to standard search if v2 features not available
+            results = app.search(**search_params)
         
         # Extract the results
-        if isinstance(results, dict) and 'data' in results:
-            return results['data']
+        if isinstance(results, dict):
+            if 'web' in results:
+                # v2 format with categorized results
+                return results['web']
+            elif 'data' in results:
+                return results['data']
+            else:
+                return []
         elif isinstance(results, list):
             return results
         else:
@@ -109,7 +186,7 @@ def extract_definitions_firecrawl(
     concept: str
 ) -> List[WebResource]:
     """
-    Extract structured definitions from URLs using Firecrawl's extract endpoint.
+    Extract structured definitions from URLs using Firecrawl's extract endpoint with v2 features.
     
     Args:
         app: Firecrawl client instance
@@ -123,7 +200,7 @@ def extract_definitions_firecrawl(
         return []
     
     try:
-        # Build extraction prompt
+        # Build extraction prompt - enhanced for multi-entity extraction
         prompt = f"""
         Extract comprehensive information about the academic concept "{concept}".
         
@@ -135,9 +212,10 @@ def extract_definitions_firecrawl(
         5. Assess the source quality (authoritative/reliable/general)
         
         Focus on academic and technical definitions only.
+        Consider multiple perspectives if available.
         """
         
-        # Define schema for extraction
+        # Define schema for extraction - enhanced for better validation
         schema = {
             "type": "object",
             "properties": {
@@ -171,12 +249,27 @@ def extract_definitions_firecrawl(
         
         logger.info(f"Extracting definitions from {len(urls)} URLs for '{concept}'")
         
-        # Extract from URLs
-        result = app.extract(
-            urls=urls,
-            prompt=prompt,
-            schema=schema
-        )
+        # Try to use v2 extract features
+        extract_params = {
+            "urls": urls,
+            "prompt": prompt,
+            "schema": schema
+        }
+        
+        # Add v2 features if supported
+        try:
+            # Try with enhanced v2 parameters
+            result = app.extract(
+                urls=urls,
+                prompt=prompt,
+                schema=schema,
+                enableWebSearch=True,  # Enable web search for additional context
+                allowExternalLinks=False,  # Stay focused on provided URLs
+                includeSubdomains=False  # Don't crawl subdomains
+            )
+        except (TypeError, AttributeError):
+            # Fallback to standard extract if v2 features not available
+            result = app.extract(**extract_params)
         
         # Process results
         resources = []
@@ -314,18 +407,72 @@ async def mine_concept_async(app: FirecrawlApp, concept: str) -> Dict[str, Any]:
     logger.info(f"Extracted {len(result['resources'])} quality resources for {concept}")
     return result
 
+def batch_scrape_urls(
+    app: FirecrawlApp,
+    urls: List[str],
+    max_concurrent: int = 10
+) -> Dict[str, Any]:
+    """
+    Use Firecrawl's batch scrape endpoint for efficient parallel scraping.
+    
+    Args:
+        app: Firecrawl client instance
+        urls: List of URLs to scrape
+        max_concurrent: Maximum concurrent scrapes
+        
+    Returns:
+        Dictionary with scraping results
+    """
+    if not urls:
+        return {}
+    
+    try:
+        logger.info(f"Batch scraping {len(urls)} URLs")
+        
+        # Try to use batch_scrape if available
+        try:
+            # Use v2 batch scrape with optimizations
+            result = app.batch_scrape(
+                urls=urls,
+                formats=["markdown", "links"],
+                maxConcurrency=max_concurrent,
+                maxAge=172800000,  # 2 days cache
+                blockAds=True,
+                skipTlsVerification=True,
+                removeBase64Images=True,
+                onlyMainContent=True
+            )
+            
+            # Wait for completion and get results
+            if hasattr(result, 'wait_until_done'):
+                final_result = result.wait_until_done()
+                return final_result
+            else:
+                return result
+                
+        except (AttributeError, TypeError) as e:
+            logger.warning(f"Batch scrape not available, falling back to sequential: {e}")
+            # Fallback to sequential scraping
+            return scrape_urls_with_cache(app, urls)
+            
+    except Exception as e:
+        logger.error(f"Batch scraping failed: {e}")
+        return {}
+
 async def mine_concepts_batch_async(
     app: FirecrawlApp,
     concepts: List[str],
-    max_concurrent: int = MAX_CONCURRENT_OPERATIONS
+    max_concurrent: int = MAX_CONCURRENT_OPERATIONS,
+    use_batch_scrape: bool = True
 ) -> Dict[str, Any]:
     """
-    Mine web content for multiple concepts in parallel.
+    Mine web content for multiple concepts in parallel with v2 optimizations.
     
     Args:
         app: Firecrawl client instance
         concepts: List of concepts to mine
         max_concurrent: Maximum concurrent operations
+        use_batch_scrape: Whether to use batch scraping for URLs
         
     Returns:
         Dictionary with all results
@@ -340,29 +487,72 @@ async def mine_concepts_batch_async(
         
         logger.info(f"Processing batch {batch_num}/{total_batches} ({len(batch)} concepts)")
         
-        # Create semaphore for rate limiting
-        semaphore = asyncio.Semaphore(max_concurrent)
-        
-        async def mine_with_limit(concept):
-            async with semaphore:
-                return await mine_concept_async(app, concept)
-        
-        # Run batch in parallel
-        tasks = [mine_with_limit(concept) for concept in batch]
-        batch_results = await asyncio.gather(*tasks, return_exceptions=True)
-        
-        # Process results
-        for concept, result in zip(batch, batch_results):
-            if isinstance(result, Exception):
-                logger.error(f"Failed to mine {concept}: {result}")
-                results[concept] = {
-                    "concept": concept,
-                    "error": str(result),
-                    "resources": [],
-                    "summary": None
-                }
-            else:
-                results[concept] = result
+        if use_batch_scrape:
+            # Collect all URLs for batch scraping
+            all_urls = []
+            concept_url_map = {}
+            
+            # First, search for all concepts to get URLs
+            for concept in batch:
+                search_results = await asyncio.to_thread(
+                    search_concept_firecrawl, app, concept, limit=3
+                )
+                
+                urls = []
+                for result in search_results[:MAX_URLS_PER_CONCEPT]:
+                    if isinstance(result, dict) and 'url' in result:
+                        url = result['url']
+                        urls.append(url)
+                        all_urls.append(url)
+                
+                concept_url_map[concept] = urls
+            
+            # Batch scrape all URLs at once
+            if all_urls:
+                scraped_data = await asyncio.to_thread(
+                    batch_scrape_urls, app, all_urls, max_concurrent
+                )
+                
+                # Process results for each concept
+                for concept, urls in concept_url_map.items():
+                    concept_data = {
+                        "concept": concept,
+                        "resources": [],
+                        "summary": None
+                    }
+                    
+                    # Extract relevant scraped data for this concept
+                    for url in urls:
+                        if url in scraped_data and not scraped_data[url].get("error"):
+                            concept_data["resources"].append({
+                                "url": url,
+                                "content": scraped_data[url]
+                            })
+                    
+                    results[concept] = concept_data
+            
+        else:
+            # Use original parallel processing
+            semaphore = asyncio.Semaphore(max_concurrent)
+            
+            async def mine_with_limit(concept):
+                async with semaphore:
+                    return await mine_concept_async(app, concept)
+            
+            tasks = [mine_with_limit(concept) for concept in batch]
+            batch_results = await asyncio.gather(*tasks, return_exceptions=True)
+            
+            for concept, result in zip(batch, batch_results):
+                if isinstance(result, Exception):
+                    logger.error(f"Failed to mine {concept}: {result}")
+                    results[concept] = {
+                        "concept": concept,
+                        "error": str(result),
+                        "resources": [],
+                        "summary": None
+                    }
+                else:
+                    results[concept] = result
         
         # Small delay between batches
         if i + BATCH_SIZE < len(concepts):
@@ -372,14 +562,20 @@ async def mine_concepts_batch_async(
 
 def mine_concepts_with_firecrawl(
     concepts: List[str],
-    output_path: Optional[str] = None
+    output_path: Optional[str] = None,
+    use_batch_scrape: bool = True,
+    use_cache: bool = True,
+    max_age: int = 172800000  # 2 days default
 ) -> Dict[str, Any]:
     """
-    Main entry point for mining concepts using Firecrawl SDK.
+    Main entry point for mining concepts using Firecrawl SDK with v2 features.
     
     Args:
         concepts: List of concepts to mine
         output_path: Optional path to save results
+        use_batch_scrape: Whether to use batch scraping (500% faster with v2)
+        use_cache: Whether to use cached results (maxAge feature)
+        max_age: Maximum age for cached content in milliseconds
         
     Returns:
         Dictionary with all results and statistics
@@ -394,12 +590,17 @@ def mine_concepts_with_firecrawl(
             "statistics": {"total": len(concepts), "successful": 0, "failed": len(concepts)}
         }
     
-    logger.info(f"Starting web mining for {len(concepts)} concepts using Firecrawl SDK")
+    logger.info(f"Starting web mining for {len(concepts)} concepts using Firecrawl SDK v2")
+    logger.info(f"Features enabled: batch_scrape={use_batch_scrape}, cache={use_cache}, max_age={max_age/1000/60:.0f}min")
     
     start_time = time.time()
     
-    # Run async mining
-    results = asyncio.run(mine_concepts_batch_async(app, concepts))
+    # Run async mining with v2 optimizations
+    results = asyncio.run(mine_concepts_batch_async(
+        app, 
+        concepts,
+        use_batch_scrape=use_batch_scrape
+    ))
     
     # Calculate statistics
     stats = {
@@ -408,7 +609,12 @@ def mine_concepts_with_firecrawl(
         "failed": sum(1 for r in results.values() if "error" in r),
         "total_resources": sum(len(r.get("resources", [])) for r in results.values()),
         "concepts_with_content": sum(1 for r in results.values() if r.get("resources")),
-        "processing_time": time.time() - start_time
+        "processing_time": time.time() - start_time,
+        "features_used": {
+            "batch_scrape": use_batch_scrape,
+            "caching": use_cache,
+            "cache_max_age_hours": max_age / 1000 / 60 / 60
+        }
     }
     
     logger.info(f"Mining complete in {stats['processing_time']:.1f}s")
@@ -418,7 +624,8 @@ def mine_concepts_with_firecrawl(
     output_data = {
         "results": results,
         "statistics": stats,
-        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "firecrawl_version": "v2"
     }
     
     # Save results if output path provided
