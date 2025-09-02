@@ -1,222 +1,212 @@
 import random
 import os
 import sys
+import json
 import polars as pl
-from collections import Counter
 from typing import Dict, List, Tuple
-import pandas as pd  # Use pandas to get sheet names
-
-# Package structure now properly configured with pyproject.toml
+from pathlib import Path
+from tqdm import tqdm
 
 from generate_glossary.utils.logger import setup_logger
 
-random.seed(42)
+TOP_N_INSTITUTIONS = 30  # Number of top institutions to select
+EXCEL_FILE = "data/Faculty Extraction Report.xlsx"  # Source Excel file
+OUTPUT_DIR = "data/generation/lv0"  # Output directory
+OUTPUT_FILE = "lv0_s0_output.txt"  # Output filename
+METADATA_FILE = "lv0_s0_metadata.json"  # Metadata filename
+RANDOM_SEED = 42  # For reproducible shuffling
+
+SHEETS_TO_PROCESS = [
+    "US-R1-Top20",
+    "US-R1-Top20-50",
+    "US-R1-Top50-100",
+    "US-R1-Top100-end",
+    "Quantity US-R1-Top20",
+]
+
+random.seed(RANDOM_SEED)
 
 logger = setup_logger("lv0.s0")
 
-def extract_college_from_path(path: str) -> str:
-    """Extract the college/school/division from a department path."""
-    if not path or "->" not in path:
-        return None
-    
-    # Extract the first part before the arrow
-    parts = path.split("->")
-    if not parts:
-        return None
-    
-    college = parts[0].strip()
-    return college.lower() if college else None
 
 def count_colleges_per_institution(df: pl.DataFrame) -> Dict[str, List[str]]:
     """
     Count the number of unique colleges per institution.
-    
+
+    Optimized version using Polars group_by for O(n) performance.
+
     Args:
         df: DataFrame containing institution and department_path columns
-        
+
     Returns:
         Dictionary mapping institutions to their list of unique colleges
     """
+    if "institution" not in df.columns or "department_path" not in df.columns:
+        logger.error("Missing required columns: institution or department_path")
+        return {}
+
+    result = (
+        df.select(["institution", "department_path"])
+        .filter(pl.col("department_path").is_not_null())
+        .with_columns(
+            pl.col("department_path")
+            .str.split("->")
+            .list.get(0)
+            .str.strip_chars()
+            .str.to_lowercase()
+            .alias("college")
+        )
+        .filter(pl.col("college").is_not_null() & (pl.col("college") != ""))
+        .group_by("institution")
+        .agg(pl.col("college").unique().alias("colleges"))
+        .with_columns(pl.col("institution").str.strip_chars().str.to_lowercase())
+    )
+
     institution_colleges = {}
-    
-    # Group by institution
-    for institution in df["institution"].unique():
-        # Filter rows for this institution
-        inst_df = df.filter(pl.col("institution") == institution)
-        
-        # Extract colleges from department paths
-        colleges = []
-        for path in inst_df["department_path"]:
-            college = extract_college_from_path(path)
-            if college:
-                colleges.append(college)
-        
-        # Store unique colleges for this institution
-        institution_colleges[institution.strip().lower()] = list(set(colleges))
-    
+    for row in result.iter_rows(named=True):
+        institution_colleges[row["institution"]] = sorted(row["colleges"])
+
+    total_paths = len(df)
+    valid_paths = len(df.filter(pl.col("department_path").str.contains("->")))
+    logger.info(f"Processed {valid_paths}/{total_paths} valid department paths")
+
     return institution_colleges
 
+
 def select_top_institutions(
-    institution_colleges: Dict[str, List[str]], 
-    top_n: int = 30
+    institution_colleges: Dict[str, List[str]],
 ) -> Tuple[Dict[str, List[str]], List[str]]:
     """
     Select top N institutions with the most colleges.
-    
+
     Args:
         institution_colleges: Dictionary mapping institutions to their colleges
-        top_n: Number of top institutions to select
-        
+
     Returns:
         Tuple of (filtered dictionary, list of selected institutions)
     """
-    # Count colleges per institution
-    college_counts = {inst: len(colleges) for inst, colleges in institution_colleges.items()}
-    
-    # Sort institutions by college count (descending)
-    sorted_institutions = sorted(
-        college_counts.keys(), 
-        key=lambda x: college_counts[x], 
-        reverse=True
-    )
-    
-    # Select top N institutions
-    selected_institutions = sorted_institutions[:top_n]
-    
-    # Filter dictionary to include only selected institutions
-    filtered_dict = {
-        inst: institution_colleges[inst] 
-        for inst in selected_institutions
+    top_n = TOP_N_INSTITUTIONS
+    college_counts = {
+        inst: len(colleges) for inst, colleges in institution_colleges.items()
     }
-    
+
+    sorted_institutions = sorted(
+        college_counts.keys(), key=lambda x: college_counts[x], reverse=True
+    )
+
+    selected_institutions = sorted_institutions[:top_n]
+    filtered_dict = {inst: institution_colleges[inst] for inst in selected_institutions}
+
     return filtered_dict, selected_institutions
 
-if __name__ == "__main__":
+
+def main():
+    """Main function to extract college names from Excel file."""
     logger.info("Starting college names extraction")
-    
+    logger.info(f"Configuration: top_n={TOP_N_INSTITUTIONS}, seed={RANDOM_SEED}")
+
+    excel_file = EXCEL_FILE
+
+    if not Path(excel_file).exists():
+        logger.error(f"Excel file not found: {excel_file}")
+        logger.info(
+            "Please ensure 'Faculty Extraction Report.xlsx' exists in the data/ directory"
+        )
+        sys.exit(1)
+
     try:
-        logger.info("Reading Excel file...")
-        
-        # Get all sheet names from the Excel file using pandas
-        excel_file = "data/Faculty Extraction Report.xlsx"
-        try:
-            # Using pandas to read sheet names
-            xl = pd.ExcelFile(excel_file)
-            all_sheets = xl.sheet_names
-            logger.info(f"Found {len(all_sheets)} sheets in the Excel file: {', '.join(all_sheets)}")
-        except Exception as e:
-            logger.error(f"Failed to read sheet names with pandas: {str(e)}")
-            # Fallback to known sheet names if pandas fails
-            all_sheets = ["US-R1-Top20", "US-R1-Top20-50", "US-R1-Top50-100", "US-R1-Top100-end"]
-            logger.info(f"Using fallback sheet list: {', '.join(all_sheets)}")
-        
-        # Read all relevant sheets and combine them
+        logger.info(f"Reading Excel file from: {excel_file}")
+        logger.info(
+            f"Processing {len(SHEETS_TO_PROCESS)} sheets: {', '.join(SHEETS_TO_PROCESS)}"
+        )
+
         main_df = None
-        valid_dfs_count = 0
-        
-        for sheet in all_sheets:
+
+        for sheet in tqdm(SHEETS_TO_PROCESS, desc="Processing Excel sheets"):
             try:
-                # Only process sheets with 'R1' in their name
-                if "R1" not in sheet:
-                    logger.info(f"Skipping sheet: {sheet} (does not contain 'R1')")
-                    continue
-                
-                # Skip sheets that don't contain department data
-                if "summary" in sheet.lower() or "logs" in sheet.lower() or "eval" in sheet.lower():
-                    logger.info(f"Skipping sheet: {sheet}")
-                    continue
-                
                 sheet_df = pl.read_excel(excel_file, sheet_name=sheet)
-                
-                # Check if sheet has the required columns
-                if "institution" not in sheet_df.columns or "department_path" not in sheet_df.columns:
-                    logger.info(f"Skipping sheet {sheet} - missing required columns")
-                    continue
-                
-                # Select only the columns we need to avoid concatenation issues
                 sheet_df = sheet_df.select(["institution", "department_path"])
-                
                 logger.info(f"Read {len(sheet_df)} rows from sheet: {sheet}")
-                
-                # If this is the first valid DataFrame, set it as the main one
+
                 if main_df is None:
                     main_df = sheet_df
                 else:
-                    # Otherwise, append to the main DataFrame
                     main_df = pl.concat([main_df, sheet_df])
-                
-                valid_dfs_count += 1
-                
+
             except Exception as e:
-                logger.warning(f"Could not read or process sheet {sheet}: {str(e)}")
+                logger.warning(f"Could not read sheet {sheet}: {str(e)}")
                 continue
-        
-        # Check if we have any valid data
-        if valid_dfs_count == 0:
-            logger.error("No valid sheets found with department data")
+
+        if main_df is None:
+            logger.error("No data could be read from Excel sheets")
             sys.exit(1)
-            
-        logger.info(f"Combined data from {valid_dfs_count} sheets, total {len(main_df)} rows")
-        
-        # Remove any rows with missing department_path
+
+        logger.info(f"Combined data: total {len(main_df)} rows")
+
         main_df = main_df.filter(pl.col("department_path").is_not_null())
-        logger.info(f"After removing rows with missing department_path: {len(main_df)} rows")
-        
-        # Count colleges per institution
+        logger.info(
+            f"After removing rows with missing department_path: {len(main_df)} rows"
+        )
+
+        logger.info("Extracting colleges from department paths...")
         institution_colleges = count_colleges_per_institution(main_df)
         logger.info(f"Found colleges for {len(institution_colleges)} institutions")
-        
-        # Select top 30 institutions with most colleges
+
+        college_counts = [len(colleges) for colleges in institution_colleges.values()]
+        if college_counts:
+            avg_colleges = sum(college_counts) / len(college_counts)
+            logger.info(f"Average colleges per institution: {avg_colleges:.1f}")
+            logger.info(
+                f"Max colleges: {max(college_counts)}, Min colleges: {min(college_counts)}"
+            )
+
         top_institutions, selected_inst_list = select_top_institutions(
-            institution_colleges, 
-            top_n=30
+            institution_colleges
         )
-        
-        # Log college counts for selected institutions
+        logger.info(f"Selected top {TOP_N_INSTITUTIONS} institutions")
+
         for inst in selected_inst_list:
             logger.info(f"{inst}: {len(top_institutions[inst])} colleges")
-        
-        # Prepare output format: "institution - college"
+
         college_entries = []
         for inst, colleges in top_institutions.items():
             for college in colleges:
                 college_entries.append(f"{inst} - {college}")
-        
-        # Shuffle entries
+
         random.shuffle(college_entries)
-        
-        # Save to output file
-        output_path = "data/lv0/lv0_s0_college_names.txt"
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
+
+        output_path = Path(OUTPUT_DIR) / OUTPUT_FILE
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+
         with open(output_path, "w") as file:
             for entry in college_entries:
                 file.write(entry + "\n")
-                
-        logger.info(f"Successfully wrote {len(college_entries)} college entries to {output_path}")
-        
-        # Save metadata about selected institutions
-        metadata_path = "data/lv0/lv0_s0_metadata.json"
-        import json
-        
+
+        logger.info(
+            f"Successfully wrote {len(college_entries)} college entries to {output_path}"
+        )
+
+        metadata_path = Path(OUTPUT_DIR) / METADATA_FILE
+
         metadata = {
             "selected_institutions": selected_inst_list,
             "institution_college_counts": {
                 inst: len(colleges) for inst, colleges in top_institutions.items()
             },
-            "total_colleges": len(college_entries)
+            "total_colleges": len(college_entries),
         }
-        
+
         with open(metadata_path, "w") as f:
             json.dump(metadata, f, indent=4)
-            
+
         logger.info(f"Successfully wrote metadata to {metadata_path}")
 
     except Exception as e:
-        # TODO: [Reliability] Implement checkpoint restoration for failed pipeline steps
-        # If this step fails after expensive processing, all work is lost
-        # Consider: saving intermediate results, resumable processing, partial state recovery
         logger.error(f"An error occurred: {str(e)}", exc_info=True)
         raise
-    
-    logger.info("College names extraction completed") 
+
+    logger.info("College names extraction completed")
+
+
+if __name__ == "__main__":
+    main()
