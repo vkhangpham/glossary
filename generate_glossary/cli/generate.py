@@ -20,15 +20,27 @@ logger = setup_logger("cli.generate")
 def run_level_0_step(step: int, **kwargs) -> int:
     """Run a Level 0 generation step."""
     if step == 0:
-        from generate_glossary.generation.lv0.lv0_s0_get_college_names import main
-        logger.info("Running Level 0, Step 0: Get college names from Excel")
-        main()  # Uses default Excel path
+        test_mode = kwargs.get('test', False)
+        if test_mode:
+            from generate_glossary.generation.lv0.lv0_s0_get_college_names import test
+            logger.info("Running Level 0, Step 0: Get college names from Excel [TEST MODE]")
+            test()
+        else:
+            from generate_glossary.generation.lv0.lv0_s0_get_college_names import main
+            logger.info("Running Level 0, Step 0: Get college names from Excel")
+            main()
         return 0
         
     elif step == 1:
-        from generate_glossary.generation.lv0.lv0_s1_extract_concepts import main
-        logger.info("Running Level 0, Step 1: Extract concepts via LLM")
-        main()
+        test_mode = kwargs.get('test', False)
+        if test_mode:
+            from generate_glossary.generation.lv0.lv0_s1_extract_concepts import test
+            logger.info("Running Level 0, Step 1: Extract concepts via LLM [TEST MODE]")
+            test()
+        else:
+            from generate_glossary.generation.lv0.lv0_s1_extract_concepts import main
+            logger.info("Running Level 0, Step 1: Extract concepts via LLM")
+            main()
         return 0
         
     elif step == 2:
@@ -205,6 +217,12 @@ Steps (same for all levels):
         help='Input file for levels 1-3, step 0 (default: previous level final output)'
     )
     
+    parser.add_argument(
+        '--test',
+        action='store_true',
+        help='Run in test mode with 10%% sample (saves to data/generation/tests/)'
+    )
+    
     args = parser.parse_args()
     
     # Dispatch to appropriate level handler
@@ -224,7 +242,8 @@ Steps (same for all levels):
     try:
         kwargs = {
             'provider': args.provider,
-            'input_file': args.input_file
+            'input_file': args.input_file,
+            'test': args.test
         }
         return handler(args.step, **kwargs)
         

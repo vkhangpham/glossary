@@ -1,4 +1,5 @@
 import json
+import asyncio
 from collections import Counter
 from pathlib import Path
 from typing import List, Dict, Tuple
@@ -29,6 +30,13 @@ INPUT_FILE = DATA_DIR / "lv0_s0_output.txt"  # Output from step 0
 OUTPUT_FILE = DATA_DIR / "lv0_s1_output.txt"  # Main output
 META_FILE = DATA_DIR / "lv0_s1_metadata.json"  # Metadata output
 CHECKPOINT_DIR = DATA_DIR / ".checkpoints"
+
+# Test mode paths
+TEST_DATA_DIR = Path("data/generation/tests")
+TEST_INPUT_FILE = TEST_DATA_DIR / "lv0_s0_output.txt"  # Read from test s0 output
+TEST_OUTPUT_FILE = TEST_DATA_DIR / "lv0_s1_output.txt"  # Write test output
+TEST_META_FILE = TEST_DATA_DIR / "lv0_s1_metadata.json"  # Test metadata
+TEST_CHECKPOINT_DIR = TEST_DATA_DIR / ".checkpoints"
 
 
 class ConceptExtraction(BaseModel):
@@ -88,13 +96,15 @@ def extract_concepts_with_consensus(
     messages.append({"role": "user", "content": prompt})
 
     try:
-        # Use the new consensus method to get all responses for analysis
-        consensus, all_responses = structured_completion_consensus(
-            messages=messages,
-            response_model=ConceptExtractionList,
-            model="openai/gpt-4o-mini",
-            num_responses=num_attempts,
-            return_all=True,
+        # Run the async consensus method in a synchronous context
+        consensus, all_responses = asyncio.run(
+            structured_completion_consensus(
+                messages=messages,
+                response_model=ConceptExtractionList,
+                tier="budget",  # Use tier instead of specific model
+                num_responses=num_attempts,
+                return_all=True,
+            )
         )
 
         # Convert to the expected format (list of extractions for each response)
@@ -161,99 +171,75 @@ def load_unique_college_names(input_file: Path) -> List[str]:
     return [s for s in sources if not (s in seen or seen.add(s))]
 
 
-def extract_all_concepts_with_checkpoints(
-    sources: List[str],
-) -> Tuple[Dict[str, set], Counter]:
-    """Extract concepts from all sources with checkpoint recovery support"""
-    checkpoint_file = CHECKPOINT_DIR / "lv0_s1_checkpoint.json"
-
-    # Process with simple checkpointing
-    source_concept_mapping = process_with_checkpoint(
-        items=sources,
-        batch_size=CHUNK_SIZE,  # Process in larger chunks for efficiency
-        checkpoint_file=checkpoint_file,
-        process_batch_func=lambda chunk: process_source_chunk((chunk, LLM_ATTEMPTS)),
-    )
-
-    # Count concept frequencies
-    all_concepts = [
-        concept.lower()
-        for concepts in source_concept_mapping.values()
-        for concept in concepts
-    ]
-
-    return source_concept_mapping, Counter(all_concepts)
+# Removed unused functions - logic is now integrated in main()
 
 
-def save_results(
-    sources: List[str],
-    source_concepts: Dict[str, set],
-    concept_counts: Counter,
-    verified_concepts: List[str],
-) -> None:
-    """Save all results to files"""
-    # Ensure directories exist
+def test():
+    """Test mode: Read from test directory and save to test directory"""
+    global INPUT_FILE, OUTPUT_FILE, META_FILE, CHECKPOINT_DIR
+    
+    # Save original values
+    original_input = INPUT_FILE
+    original_output = OUTPUT_FILE
+    original_meta = META_FILE
+    original_checkpoint = CHECKPOINT_DIR
+    
+    # Set test values
+    INPUT_FILE = TEST_INPUT_FILE
+    OUTPUT_FILE = TEST_OUTPUT_FILE
+    META_FILE = TEST_META_FILE
+    CHECKPOINT_DIR = TEST_CHECKPOINT_DIR
+    
+    # Ensure test directory exists
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-
-    # Save concept list (main output)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        for concept in verified_concepts:
-            f.write(f"{concept}\n")
-    logger.info(f"Saved {len(verified_concepts)} concepts to {OUTPUT_FILE}")
-
-    # Save metadata
-    with open(META_FILE, "w", encoding="utf-8") as f:
-        json.dump(
-            {
-                "metadata": {
-                    "step": "lv0_s1_extract_concepts",
-                    "input_file": str(INPUT_FILE),
-                    "input_count": len(sources),
-                    "output_file": str(OUTPUT_FILE),
-                    "output_count": len(verified_concepts),
-                    "processing_params": {
-                        "batch_size": BATCH_SIZE,
-                        "chunk_size": CHUNK_SIZE,
-                        "max_workers": MAX_WORKERS,
-                        "llm_attempts": LLM_ATTEMPTS,
-                        "concept_agreement_threshold": AGREEMENT_THRESHOLD,
-                        "concept_frequency_threshold": FREQUENCY_THRESHOLD,
-                    },
-                },
-                "source_concept_mapping": {
-                    source: sorted(list(concepts))
-                    for source, concepts in source_concepts.items()
-                },
-                "concept_frequencies": {
-                    concept: count
-                    for concept, count in concept_counts.items()
-                    if count >= FREQUENCY_THRESHOLD
-                },
-            },
-            f,
-            indent=4,
-            ensure_ascii=False,
-        )
-    logger.info(f"Saved metadata to {META_FILE}")
-
-
-# Removed CSV generation - we only need the text file and metadata
+    
+    logger.info("Running in TEST MODE")
+    
+    try:
+        # Run main with test settings
+        main()
+    finally:
+        # Restore original values
+        INPUT_FILE = original_input
+        OUTPUT_FILE = original_output
+        META_FILE = original_meta
+        CHECKPOINT_DIR = original_checkpoint
 
 
 def main():
     """Main execution function"""
     try:
+        input_file = INPUT_FILE
+        output_file = OUTPUT_FILE
+        meta_file = META_FILE
+        checkpoint_dir = CHECKPOINT_DIR
+            
         logger.info("Starting concept extraction from college names")
         logger.info(
             f"Consensus attempts: {LLM_ATTEMPTS}, Agreement threshold: {AGREEMENT_THRESHOLD}"
         )
 
         # Read input
-        sources = load_unique_college_names(INPUT_FILE)
+        sources = load_unique_college_names(input_file)
         logger.info(f"Read {len(sources)} unique sources")
+        
 
-        # Process concepts
-        source_concepts, concept_counts = extract_all_concepts_with_checkpoints(sources)
+        # Process concepts with appropriate checkpoint
+        checkpoint_file = checkpoint_dir / "lv0_s1_checkpoint.json"
+        source_concepts = process_with_checkpoint(
+            items=sources,
+            batch_size=CHUNK_SIZE,
+            checkpoint_file=checkpoint_file,
+            process_batch_func=lambda chunk: process_source_chunk((chunk, LLM_ATTEMPTS)),
+        )
+        
+        # Count concept frequencies
+        all_concepts = [
+            concept.lower()
+            for concepts in source_concepts.values()
+            for concept in concepts
+        ]
+        concept_counts = Counter(all_concepts)
 
         # Filter by frequency threshold
         verified_concepts = sorted(
@@ -265,10 +251,51 @@ def main():
         )
         logger.info(f"Extracted {len(verified_concepts)} verified concepts")
 
-        # Save all results
-        save_results(sources, source_concepts, concept_counts, verified_concepts)
+        # Save all results with appropriate paths
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Save concept list (main output)
+        with open(output_file, "w", encoding="utf-8") as f:
+            for concept in verified_concepts:
+                f.write(f"{concept}\n")
+        logger.info(f"Saved {len(verified_concepts)} concepts to {output_file}")
 
-        logger.info(f"Concept extraction completed: {OUTPUT_FILE}")
+        # Save metadata
+        with open(meta_file, "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "metadata": {
+                        "step": "lv0_s1_extract_concepts",
+                        "input_file": str(input_file),
+                        "input_count": len(sources),
+                        "output_file": str(output_file),
+                        "output_count": len(verified_concepts),
+                        "processing_params": {
+                            "batch_size": BATCH_SIZE,
+                            "chunk_size": CHUNK_SIZE,
+                            "max_workers": MAX_WORKERS,
+                            "llm_attempts": LLM_ATTEMPTS,
+                            "concept_agreement_threshold": AGREEMENT_THRESHOLD,
+                            "concept_frequency_threshold": FREQUENCY_THRESHOLD,
+                        },
+                    },
+                    "source_concept_mapping": {
+                        source: sorted(list(concepts))
+                        for source, concepts in source_concepts.items()
+                    },
+                    "concept_frequencies": {
+                        concept: count
+                        for concept, count in concept_counts.items()
+                        if count >= FREQUENCY_THRESHOLD
+                    },
+                },
+                f,
+                indent=4,
+                ensure_ascii=False,
+            )
+        logger.info(f"Saved metadata to {meta_file}")
+
+        logger.info(f"Concept extraction completed: {output_file}")
 
     except Exception as e:
         logger.error(f"Error in concept extraction: {e}", exc_info=True)

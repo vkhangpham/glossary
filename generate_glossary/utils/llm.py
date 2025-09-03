@@ -10,6 +10,7 @@ Features:
 """
 
 import asyncio
+import json
 import threading
 import random
 import os
@@ -463,7 +464,7 @@ async def structured_completion_consensus(
         )
 
     response_strings = [
-        response.model_dump_json(exclude_none=True, sort_keys=True)
+        json.dumps(response.model_dump(exclude_none=True), sort_keys=True)
         for response in responses
     ]
     response_counter = Counter(response_strings)

@@ -16,6 +16,10 @@ OUTPUT_FILE = "lv0_s0_output.txt"  # Output filename
 METADATA_FILE = "lv0_s0_metadata.json"  # Metadata filename
 RANDOM_SEED = 42  # For reproducible shuffling
 
+# Test mode paths
+TEST_OUTPUT_DIR = "data/generation/tests"  # Test output directory
+TEST_TOP_N = 3  # 10% of 30 institutions for test mode
+
 SHEETS_TO_PROCESS = [
     "US-R1-Top20",
     "US-R1-Top20-50",
@@ -75,17 +79,18 @@ def count_colleges_per_institution(df: pl.DataFrame) -> Dict[str, List[str]]:
 
 def select_top_institutions(
     institution_colleges: Dict[str, List[str]],
+    top_n: int = TOP_N_INSTITUTIONS
 ) -> Tuple[Dict[str, List[str]], List[str]]:
     """
     Select top N institutions with the most colleges.
 
     Args:
         institution_colleges: Dictionary mapping institutions to their colleges
+        top_n: Number of top institutions to select
 
     Returns:
         Tuple of (filtered dictionary, list of selected institutions)
     """
-    top_n = TOP_N_INSTITUTIONS
     college_counts = {
         inst: len(colleges) for inst, colleges in institution_colleges.items()
     }
@@ -98,6 +103,29 @@ def select_top_institutions(
     filtered_dict = {inst: institution_colleges[inst] for inst in selected_institutions}
 
     return filtered_dict, selected_institutions
+
+
+def test():
+    """Test mode: Process 10% of data and save to test directory"""
+    global OUTPUT_DIR, TOP_N_INSTITUTIONS
+    
+    # Save original values
+    original_output_dir = OUTPUT_DIR
+    original_top_n = TOP_N_INSTITUTIONS
+    
+    # Set test values
+    OUTPUT_DIR = TEST_OUTPUT_DIR
+    TOP_N_INSTITUTIONS = TEST_TOP_N
+    
+    logger.info("Running in TEST MODE")
+    
+    try:
+        # Run main with test settings
+        main()
+    finally:
+        # Restore original values
+        OUTPUT_DIR = original_output_dir
+        TOP_N_INSTITUTIONS = original_top_n
 
 
 def main():
@@ -161,7 +189,7 @@ def main():
             )
 
         top_institutions, selected_inst_list = select_top_institutions(
-            institution_colleges
+            institution_colleges, top_n=TOP_N_INSTITUTIONS
         )
         logger.info(f"Selected top {TOP_N_INSTITUTIONS} institutions")
 
