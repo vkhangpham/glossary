@@ -16,12 +16,9 @@ Other functionality has been moved to:
 from .logger import setup_logger
 from .llm import (
     LLMClient,
-    structured_completion,
-    text_completion,
-    async_structured_completion,
+    completion,
+    async_completion,
     structured_completion_consensus,
-    async_structured_completion_consensus,
-    text_completion_consensus
 )
 from .config import (
     Config,
@@ -35,12 +32,9 @@ __all__ = [
     
     # LLM
     'LLMClient',
-    'structured_completion',
-    'text_completion',
-    'async_structured_completion',
+    'completion',
+    'async_completion',
     'structured_completion_consensus',
-    'async_structured_completion_consensus',
-    'text_completion_consensus',
     
     # Config
     'Config',

@@ -1,5 +1,4 @@
 import json
-import os
 from collections import Counter
 from pathlib import Path
 from typing import List, Dict, Tuple
@@ -87,7 +86,7 @@ def extract_concepts_with_consensus(
     if SYSTEM_PROMPT:
         messages.append({"role": "system", "content": SYSTEM_PROMPT})
     messages.append({"role": "user", "content": prompt})
-    
+
     try:
         # Use the new consensus method to get all responses for analysis
         consensus, all_responses = structured_completion_consensus(
@@ -95,15 +94,15 @@ def extract_concepts_with_consensus(
             response_model=ConceptExtractionList,
             model="openai/gpt-4o-mini",
             num_responses=num_attempts,
-            return_all=True
+            return_all=True,
         )
-        
+
         # Convert to the expected format (list of extractions for each response)
         llm_responses = [response.extractions for response in all_responses]
-        
+
         logger.info(f"Generated {len(llm_responses)} responses using consensus method")
         return llm_responses
-        
+
     except Exception as e:
         logger.error(f"Consensus extraction failed: {e}")
         return []
@@ -162,25 +161,27 @@ def load_unique_college_names(input_file: Path) -> List[str]:
     return [s for s in sources if not (s in seen or seen.add(s))]
 
 
-def extract_all_concepts_with_checkpoints(sources: List[str]) -> Tuple[Dict[str, set], Counter]:
+def extract_all_concepts_with_checkpoints(
+    sources: List[str],
+) -> Tuple[Dict[str, set], Counter]:
     """Extract concepts from all sources with checkpoint recovery support"""
     checkpoint_file = CHECKPOINT_DIR / "lv0_s1_checkpoint.json"
-    
+
     # Process with simple checkpointing
     source_concept_mapping = process_with_checkpoint(
         items=sources,
         batch_size=CHUNK_SIZE,  # Process in larger chunks for efficiency
         checkpoint_file=checkpoint_file,
-        process_batch_func=lambda chunk: process_source_chunk((chunk, LLM_ATTEMPTS))
+        process_batch_func=lambda chunk: process_source_chunk((chunk, LLM_ATTEMPTS)),
     )
-    
+
     # Count concept frequencies
     all_concepts = [
         concept.lower()
         for concepts in source_concept_mapping.values()
         for concept in concepts
     ]
-    
+
     return source_concept_mapping, Counter(all_concepts)
 
 
@@ -243,7 +244,9 @@ def main():
     """Main execution function"""
     try:
         logger.info("Starting concept extraction from college names")
-        logger.info(f"Consensus attempts: {LLM_ATTEMPTS}, Agreement threshold: {AGREEMENT_THRESHOLD}")
+        logger.info(
+            f"Consensus attempts: {LLM_ATTEMPTS}, Agreement threshold: {AGREEMENT_THRESHOLD}"
+        )
 
         # Read input
         sources = load_unique_college_names(INPUT_FILE)

@@ -7,7 +7,7 @@ name = "glossary-generation"
 version = "0.1.0"
 description = "Academic glossary analysis system with hierarchical concept taxonomies"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 authors = [
     { name = "Cazoodle Research Team" },
 ]
@@ -16,10 +16,9 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Information Analysis",
     "Topic :: Text Processing :: Linguistic",
 ]
@@ -27,7 +26,7 @@ classifiers = [
 dependencies = [
     # Main dependencies
     "pandas",
-    "numpy",
+    "numpy", 
     "nltk",
     "scikit-learn",
     "scipy",
@@ -35,7 +34,7 @@ dependencies = [
     "openpyxl",
     # Visualization and duplicate finding
     "matplotlib",
-    "seaborn",
+    "seaborn", 
     "networkx",
     "plotly",
     # File handling and I/O
@@ -44,17 +43,17 @@ dependencies = [
     "pyyaml",
     "chardet",
     "aiohttp",
-    # For LLM integration
+    # For LLM integration - latest versions
     "openai",
     "litellm",
     "instructor",
-    "bs4",
-    # Web scraping with Firecrawl (v2 features)
-    "firecrawl-py>=1.5.0", # Latest version with v2 API support
+    "beautifulsoup4",  # Use full name instead of bs4
+    # Web scraping with Firecrawl (latest)
+    "firecrawl-py",
     # NLP and text processing
     "spacy",
     "cleantext",
-    "rapidfuzz",
+    "rapidfuzz", 
     "pydantic",
     "pydash",
     "transformers",
@@ -62,13 +61,13 @@ dependencies = [
     "sentencepiece",
     "torch",
     # Additional tools
-    "google-genai",
+    "google-generativeai",  # Updated package name
     "python-dotenv",
     "flask",
     "polars",
     "tenacity",
-    "fastexcel>=0.15.1",
-    "pyarrow>=21.0.0",
+    "fastexcel",
+    "pyarrow",
 ]
 
 [project.scripts]
@@ -128,9 +127,11 @@ packages = ["generate_glossary", "hierarchy", "generate_definition"]
 [tool.uv]
 dev-dependencies = [
     "pytest",
-    "black",
+    "black", 
     "isort",
     "flake8",
     "mypy",
-    "pytest-cov>=6.2.1",
+    "pytest-cov",
+    "ruff",
+    "pyright",
 ]
