@@ -19,7 +19,6 @@ from collections import Counter
 
 import instructor
 import litellm
-from litellm import completion as litellm_completion, acompletion
 from litellm.exceptions import (
     RateLimitError,
     AuthenticationError,
@@ -89,7 +88,7 @@ class LLMClient:
             with cls._lock:
                 # Double-check locking pattern
                 if cls._sync_client is None:
-                    cls._sync_client = instructor.from_litellm(litellm_completion)
+                    cls._sync_client = instructor.from_litellm(litellm.completion)
         return cls._sync_client
 
     @classmethod
@@ -99,7 +98,7 @@ class LLMClient:
             with cls._lock:
                 # Double-check locking pattern
                 if cls._async_client is None:
-                    cls._async_client = instructor.from_litellm(acompletion)
+                    cls._async_client = instructor.from_litellm(litellm.acompletion)
         return cls._async_client
 
     @classmethod
@@ -121,7 +120,7 @@ class LLMClient:
                 # Double-check locking pattern
                 if model not in cls._providers:
                     # Use regular instructor client with caching
-                    cls._providers[model] = instructor.from_litellm(litellm_completion)
+                    cls._providers[model] = instructor.from_litellm(litellm.completion)
         return cls._providers[model]
 
 
@@ -449,18 +448,25 @@ async def structured_completion_consensus(
     errors = []
     for i, result in enumerate(results):
         if isinstance(result, Exception):
-            sanitized_error = "error"
-            logger.warning(f"Response {i+1}/{num_responses} failed: {sanitized_error}")
-            errors.append((i + 1, type(result).__name__, sanitized_error))
+            # Log the FULL error - no sanitization!
+            model_used = available_models[i % len(available_models)]
+            full_error = str(result)
+            logger.error(
+                f"Error with {model_used}: {type(result).__name__}: {full_error}"
+            )
+            errors.append((i + 1, type(result).__name__, full_error))
         else:
             responses.append(result)
             logger.debug(f"Response {i+1}/{num_responses} succeeded")
 
     successful_responses = len(responses)
     if successful_responses < required_minimum:
+        # Format errors nicely for debugging
+        error_details = "\n".join([f"  - Model {i}: {err_type}: {err_msg}" 
+                                   for i, err_type, err_msg in errors])
         raise RuntimeError(
             f"Insufficient successful responses: {successful_responses}/{num_responses} "
-            f"(minimum {required_minimum} required). Errors: {errors}"
+            f"(minimum {required_minimum} required).\nErrors:\n{error_details}"
         )
 
     response_strings = [
@@ -477,5 +483,3 @@ async def structured_completion_consensus(
     if return_all:
         return consensus, responses
     return consensus
-
-

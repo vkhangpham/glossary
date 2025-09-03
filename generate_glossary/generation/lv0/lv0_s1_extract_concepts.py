@@ -20,9 +20,10 @@ LEVEL = 0
 BATCH_SIZE = 20
 CHUNK_SIZE = 100
 MAX_WORKERS = 4
-LLM_ATTEMPTS = 3
-AGREEMENT_THRESHOLD = 2
-FREQUENCY_THRESHOLD = 2
+LLM_ATTEMPTS = 3  # Number of LLM responses for consensus (majority wins)
+FREQUENCY_THRESHOLD = 2  # Minimum frequency across sources to keep concept
+CACHE_TTL = 3600  # Cache consensus results for 1 hour
+TEMPERATURE = 1.0  # GPT-5 models only support temperature=1
 
 # File paths - explicit and clear
 DATA_DIR = Path("data/generation/lv0")
@@ -63,6 +64,13 @@ Examples:
 - "School of Computer Science" → ["computer science"]
 - "Department of Electrical Engineering" → ["electrical engineering"]"""
 
+# Semantic validation prompt for quality assurance
+SEMANTIC_VALIDATION = """Verify that each extracted concept is:
+1. An academic discipline or field of study
+2. Not a location, person name, or institution name
+3. A meaningful educational or research area
+4. Properly normalized (lowercase, no abbreviations)"""
+
 
 def create_extraction_prompt(sources: List[str]) -> str:
     """Create LLM prompt for concept extraction from college names"""
@@ -85,8 +93,12 @@ College/school/division names to process:
 
 def extract_concepts_with_consensus(
     batch: List[str], num_attempts: int = LLM_ATTEMPTS
-) -> List[List[ConceptExtraction]]:
-    """Extract concepts from a batch using LLM consensus mechanism"""
+) -> List[ConceptExtraction]:
+    """Extract concepts from a batch using LLM consensus mechanism
+
+    Returns the consensus extraction directly - no need for additional aggregation
+    since the API already finds the most agreed-upon response.
+    """
     prompt = create_extraction_prompt(batch)
 
     # Build messages
@@ -97,66 +109,66 @@ def extract_concepts_with_consensus(
 
     try:
         # Run the async consensus method in a synchronous context
-        consensus, all_responses = asyncio.run(
+        # The API returns the consensus - the most common response among all attempts
+        consensus = asyncio.run(
             structured_completion_consensus(
                 messages=messages,
                 response_model=ConceptExtractionList,
                 tier="budget",  # Use tier instead of specific model
                 num_responses=num_attempts,
-                return_all=True,
+                return_all=False,  # We only need consensus, not all responses
+                temperature=TEMPERATURE,  # Control response diversity
+                cache_ttl=CACHE_TTL,  # Cache for 1 hour to speed up re-runs
+                # semantic_validation=SEMANTIC_VALIDATION,  # TODO: Fix semantic validation
             )
         )
 
-        # Convert to the expected format (list of extractions for each response)
-        llm_responses = [response.extractions for response in all_responses]
+        logger.info(f"Consensus extraction completed for batch of {len(batch)}")
+        return consensus.extractions
 
-        logger.info(f"Generated {len(llm_responses)} responses using consensus method")
-        return llm_responses
-
+    except (ConnectionError, TimeoutError) as e:
+        # Critical network errors - re-raise after logging
+        logger.error(
+            f"Network error in consensus extraction for batch of {len(batch)}: {e}"
+        )
+        raise
+    except KeyError as e:
+        # API key or configuration errors - re-raise
+        logger.error(f"Configuration error in consensus extraction: {e}")
+        raise
+    except ValueError as e:
+        # Data validation errors - log but continue with empty result
+        logger.warning(
+            f"Data validation error in consensus extraction for batch of {len(batch)}: {e}"
+        )
+        return []
     except Exception as e:
-        logger.error(f"Consensus extraction failed: {e}")
+        # Unexpected errors - log with full context but don't crash
+        logger.error(
+            f"Unexpected error in consensus extraction for batch of {len(batch)} items: {type(e).__name__}: {e}",
+            exc_info=True,
+        )
         return []
 
 
-def aggregate_by_agreement_threshold(
-    extractions_list: List[List[ConceptExtraction]], agreement_threshold: int
-) -> Dict[str, set]:
-    """Aggregate concepts and filter by agreement threshold across LLM attempts"""
-    concept_counts = {}
-
-    for extractions in extractions_list:
-        for extraction in extractions:
-            source = extraction.source
-            if source not in concept_counts:
-                concept_counts[source] = {}
-
-            for concept in extraction.concepts:
-                concept_lower = concept.lower()
-                concept_counts[source][concept_lower] = (
-                    concept_counts[source].get(concept_lower, 0) + 1
-                )
-
-    # Filter by agreement threshold
-    return {
-        source: {c for c, count in concepts.items() if count >= agreement_threshold}
-        for source, concepts in concept_counts.items()
-        if any(count >= agreement_threshold for count in concepts.values())
-    }
-
-
-def process_source_chunk(chunk_data: Tuple[List[str], int]) -> Dict[str, set]:
+def process_source_chunk(chunk_data: Tuple[List[str], int]) -> Dict[str, List[str]]:
     """Process a chunk of college name sources for concept extraction"""
     sources, num_attempts = chunk_data
     source_concepts = {}
 
     for batch in chunk(sources, BATCH_SIZE):
-        multiple_extractions = extract_concepts_with_consensus(batch, num_attempts)
+        # Get consensus extractions directly from the API
+        consensus_extractions = extract_concepts_with_consensus(batch, num_attempts)
 
-        if multiple_extractions:
-            filtered_results = aggregate_by_agreement_threshold(
-                multiple_extractions, AGREEMENT_THRESHOLD
-            )
-            source_concepts.update(filtered_results)
+        if consensus_extractions:
+            # Convert to the expected format: Dict[source, list of concepts]
+            for extraction in consensus_extractions:
+                source = extraction.source
+                # Use list instead of set for JSON serialization
+                concepts = [concept.lower() for concept in extraction.concepts]
+                # Remove duplicates while preserving order
+                concepts = list(dict.fromkeys(concepts))
+                source_concepts[source] = concepts
 
     return source_concepts
 
@@ -177,24 +189,24 @@ def load_unique_college_names(input_file: Path) -> List[str]:
 def test():
     """Test mode: Read from test directory and save to test directory"""
     global INPUT_FILE, OUTPUT_FILE, META_FILE, CHECKPOINT_DIR
-    
+
     # Save original values
     original_input = INPUT_FILE
     original_output = OUTPUT_FILE
     original_meta = META_FILE
     original_checkpoint = CHECKPOINT_DIR
-    
+
     # Set test values
     INPUT_FILE = TEST_INPUT_FILE
     OUTPUT_FILE = TEST_OUTPUT_FILE
     META_FILE = TEST_META_FILE
     CHECKPOINT_DIR = TEST_CHECKPOINT_DIR
-    
+
     # Ensure test directory exists
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    
+
     logger.info("Running in TEST MODE")
-    
+
     try:
         # Run main with test settings
         main()
@@ -213,16 +225,15 @@ def main():
         output_file = OUTPUT_FILE
         meta_file = META_FILE
         checkpoint_dir = CHECKPOINT_DIR
-            
+
         logger.info("Starting concept extraction from college names")
         logger.info(
-            f"Consensus attempts: {LLM_ATTEMPTS}, Agreement threshold: {AGREEMENT_THRESHOLD}"
+            f"Consensus attempts: {LLM_ATTEMPTS} (majority vote wins), Frequency threshold: {FREQUENCY_THRESHOLD}"
         )
 
         # Read input
         sources = load_unique_college_names(input_file)
         logger.info(f"Read {len(sources)} unique sources")
-        
 
         # Process concepts with appropriate checkpoint
         checkpoint_file = checkpoint_dir / "lv0_s1_checkpoint.json"
@@ -230,9 +241,11 @@ def main():
             items=sources,
             batch_size=CHUNK_SIZE,
             checkpoint_file=checkpoint_file,
-            process_batch_func=lambda chunk: process_source_chunk((chunk, LLM_ATTEMPTS)),
+            process_batch_func=lambda chunk: process_source_chunk(
+                (chunk, LLM_ATTEMPTS)
+            ),
         )
-        
+
         # Count concept frequencies
         all_concepts = [
             concept.lower()
@@ -253,7 +266,7 @@ def main():
 
         # Save all results with appropriate paths
         output_file.parent.mkdir(parents=True, exist_ok=True)
-        
+
         # Save concept list (main output)
         with open(output_file, "w", encoding="utf-8") as f:
             for concept in verified_concepts:
@@ -275,8 +288,10 @@ def main():
                             "chunk_size": CHUNK_SIZE,
                             "max_workers": MAX_WORKERS,
                             "llm_attempts": LLM_ATTEMPTS,
-                            "concept_agreement_threshold": AGREEMENT_THRESHOLD,
+                            "consensus_mode": "majority_vote",
                             "concept_frequency_threshold": FREQUENCY_THRESHOLD,
+                            "temperature": TEMPERATURE,
+                            "cache_ttl": CACHE_TTL,
                         },
                     },
                     "source_concept_mapping": {

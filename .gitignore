@@ -229,3 +229,5 @@ logs/
 
 # Development artifacts
 requirements.txt
+# Test data outputs
+data/generation/tests/

@@ -20,8 +20,8 @@ from tqdm import tqdm
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import ensure_directories
-from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
-from generate_glossary.deduplicator.dedup_utils import normalize_text
+from generate_glossary.utils.llm import structured_completion
+from generate_glossary.deduplication.utils import normalize_text
 from generate_glossary.utils.resilient_processing import (
     ConceptExtractionProcessor, create_processing_config, get_checkpoint_dir
 )
@@ -135,21 +135,19 @@ def process_concept_batch(
     
     prompt = "\n".join(prompt_parts)
     
-    # Get provider configuration
-    if provider:
-        model = None  # Use default for specified provider
-        llm_provider = provider
-    else:
-        llm_provider, model = get_random_llm_config(level)
+    # Build messages for structured completion
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": prompt}
+    ]
     
     try:
-        # Use structured inference for reliable parsing
-        response = infer_structured(
-            provider=llm_provider,
-            prompt=prompt,
+        # Use structured completion for reliable parsing
+        tier = "budget" if level == 0 else "balanced"
+        response = structured_completion(
+            messages=messages,
             response_model=ConceptExtractionList,
-            system_prompt=system_prompt,
-            model=model
+            tier=tier
         )
         
         if response and hasattr(response, 'extractions'):

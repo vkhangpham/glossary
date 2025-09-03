@@ -15,11 +15,11 @@ from collections import Counter
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import ensure_directories
-from generate_glossary.utils.firecrawl_web_miner import (
+from generate_glossary.mining.firecrawl import (
     initialize_firecrawl,
     mine_concepts_with_firecrawl
 )
-from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
+from generate_glossary.utils.llm import completion
 from .level_config import get_level_config
 
 
@@ -102,13 +102,15 @@ def validate_content_with_llm(content_list: List[str], term: str, level: int) ->
     
     for attempt in range(NUM_LLM_ATTEMPTS):
         try:
-            provider, model = get_random_llm_config(level)
+            # Use the tier system for LLM selection
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant that extracts structured information."},
+                {"role": "user", "content": full_prompt}
+            ]
             
-            response = infer_text(
-                provider=provider,
-                prompt=full_prompt,
-                system_prompt="You are a helpful assistant that extracts structured information.",
-                model=model
+            response = completion(
+                messages=messages,
+                tier="budget" if level == 0 else "balanced"
             )
             
             # Try to parse JSON response

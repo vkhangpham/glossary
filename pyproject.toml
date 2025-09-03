@@ -26,7 +26,7 @@ classifiers = [
 dependencies = [
     # Main dependencies
     "pandas",
-    "numpy", 
+    "numpy",
     "nltk",
     "scikit-learn",
     "scipy",
@@ -34,7 +34,7 @@ dependencies = [
     "openpyxl",
     # Visualization and duplicate finding
     "matplotlib",
-    "seaborn", 
+    "seaborn",
     "networkx",
     "plotly",
     # File handling and I/O
@@ -47,13 +47,13 @@ dependencies = [
     "openai",
     "litellm",
     "instructor",
-    "beautifulsoup4",  # Use full name instead of bs4
+    "beautifulsoup4", # Use full name instead of bs4
     # Web scraping with Firecrawl (latest)
     "firecrawl-py",
     # NLP and text processing
     "spacy",
     "cleantext",
-    "rapidfuzz", 
+    "rapidfuzz",
     "pydantic",
     "pydash",
     "transformers",
@@ -61,7 +61,7 @@ dependencies = [
     "sentencepiece",
     "torch",
     # Additional tools
-    "google-generativeai",  # Updated package name
+    "google-generativeai", # Updated package name
     "python-dotenv",
     "flask",
     "polars",
