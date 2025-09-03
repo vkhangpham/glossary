@@ -67,10 +67,15 @@ dependencies = [
     "flask",
     "polars",
     "tenacity",
+    "fastexcel>=0.15.1",
+    "pyarrow>=21.0.0",
 ]
 
 [project.scripts]
-# Level 0 generation commands
+# Unified generation command
+generate = "generate_glossary.cli.generate:main"
+
+# Level 0 generation commands (legacy, kept for compatibility)
 glossary-lv0-s0 = "generate_glossary.generation.lv0.lv0_s0_get_college_names:main"
 glossary-lv0-s1 = "generate_glossary.generation.lv0.lv0_s1_extract_concepts:main"
 glossary-lv0-s2 = "generate_glossary.generation.lv0.lv0_s2_filter_by_institution_freq:main"

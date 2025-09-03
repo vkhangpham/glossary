@@ -1,5 +1,3 @@
-print("Starting lv0_s3_verify_single_token.py script...")
-
 import os
 import sys
 import time
@@ -14,7 +12,7 @@ from tqdm import tqdm
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
 from generate_glossary.utils.llm_simple import infer_text
-from generate_glossary.deduplicator.dedup_utils import normalize_text
+from generate_glossary.deduplication.utils import normalize_text
 
 # Load environment variables and setup logging
 load_dotenv()
@@ -177,7 +175,7 @@ def verify_keywords_batch(
                 batch_results[keyword] = {
                     "is_verified": is_verified,
                     "colleges": colleges,
-                    "provider": provider or Provider.OPENAI,
+                    "provider": provider or "openai",
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }
             except Exception as e:
@@ -185,7 +183,7 @@ def verify_keywords_batch(
                 batch_results[keyword] = {
                     "is_verified": False,
                     "colleges": [],
-                    "provider": provider or Provider.OPENAI,
+                    "provider": provider or "openai",
                     "error": str(e),
                     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
                 }

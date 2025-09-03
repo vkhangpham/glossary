@@ -15,12 +15,13 @@ Other functionality has been moved to:
 
 from .logger import setup_logger
 from .llm import (
-    get_llm_client,
+    LLMClient,
     structured_completion,
     text_completion,
-    infer_structured,
-    infer_text,
-    get_random_llm_config
+    async_structured_completion,
+    structured_completion_consensus,
+    async_structured_completion_consensus,
+    text_completion_consensus
 )
 from .config import (
     Config,
@@ -33,12 +34,13 @@ __all__ = [
     'setup_logger',
     
     # LLM
-    'get_llm_client',
+    'LLMClient',
     'structured_completion',
     'text_completion',
-    'infer_structured',
-    'infer_text',
-    'get_random_llm_config',
+    'async_structured_completion',
+    'structured_completion_consensus',
+    'async_structured_completion_consensus',
+    'text_completion_consensus',
     
     # Config
     'Config',

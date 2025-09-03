@@ -148,7 +148,7 @@ def main():
             concepts,
             concept_frequencies,
             total_institutions,
-            Config.INSTITUTION_FREQ_THRESHOLD_PERCENT
+            processing_config.institution_freq_threshold_percent
         )
         
         # Log frequency distribution
@@ -176,8 +176,8 @@ def main():
                 "input_count": len(concepts),
                 "output_count": len(filtered_concepts),
                 "total_institutions": total_institutions,
-                "institution_threshold_percent": Config.INSTITUTION_FREQ_THRESHOLD_PERCENT,
-                "min_institutions_required": int(total_institutions * Config.INSTITUTION_FREQ_THRESHOLD_PERCENT / 100),
+                "institution_threshold_percent": processing_config.institution_freq_threshold_percent,
+                "min_institutions_required": int(total_institutions * processing_config.institution_freq_threshold_percent / 100),
                 "frequency_distribution": {
                     str(k): v for k, v in freq_dist.items()
                 }
@@ -185,7 +185,7 @@ def main():
             "concept_frequencies": {
                 concept: freq_data
                 for concept, freq_data in concept_frequencies.items()
-                if freq_data["count"] >= int(total_institutions * Config.INSTITUTION_FREQ_THRESHOLD_PERCENT / 100)
+                if freq_data["count"] >= int(total_institutions * processing_config.institution_freq_threshold_percent / 100)
             },
             "selected_institutions": selected_institutions
         }

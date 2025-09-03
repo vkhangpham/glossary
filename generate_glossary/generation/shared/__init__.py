@@ -1,7 +1,21 @@
 """
-Shared functional utilities for generation levels 1-3.
+Shared utilities for generation modules.
 
-This module provides pure functional implementations of the common processing
-steps across levels 1-3, eliminating code duplication while maintaining
-identical functionality.
+This package contains minimal, focused utilities that are actually reused
+across multiple generation steps. No over-engineering, just simple functions
+that solve real problems.
 """
+
+from .checkpoint import (
+    save_checkpoint,
+    load_checkpoint,
+    clear_checkpoint,
+    process_with_checkpoint
+)
+
+__all__ = [
+    'save_checkpoint',
+    'load_checkpoint', 
+    'clear_checkpoint',
+    'process_with_checkpoint'
+]
