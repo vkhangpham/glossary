@@ -9,8 +9,6 @@ Usage:
 
 import sys
 import argparse
-from typing import Optional
-from pathlib import Path
 
 from generate_glossary.utils.logger import setup_logger
 
@@ -19,148 +17,106 @@ logger = setup_logger("cli.generate")
 
 def run_level_0_step(step: int, **kwargs) -> int:
     """Run a Level 0 generation step."""
-    if step == 0:
-        test_mode = kwargs.get('test', False)
-        if test_mode:
-            from generate_glossary.generation.lv0.lv0_s0_get_college_names import test
-            logger.info("Running Level 0, Step 0: Get college names from Excel [TEST MODE]")
-            test()
-        else:
-            from generate_glossary.generation.lv0.lv0_s0_get_college_names import main
-            logger.info("Running Level 0, Step 0: Get college names from Excel")
-            main()
-        return 0
-        
-    elif step == 1:
-        test_mode = kwargs.get('test', False)
-        if test_mode:
-            from generate_glossary.generation.lv0.lv0_s1_extract_concepts import test
-            logger.info("Running Level 0, Step 1: Extract concepts via LLM [TEST MODE]")
-            test()
-        else:
-            from generate_glossary.generation.lv0.lv0_s1_extract_concepts import main
-            logger.info("Running Level 0, Step 1: Extract concepts via LLM")
-            main()
-        return 0
-        
-    elif step == 2:
-        from generate_glossary.generation.lv0.lv0_s2_filter_by_institution_freq import main
-        logger.info("Running Level 0, Step 2: Filter by institution frequency")
-        main()
-        return 0
-        
-    elif step == 3:
-        from generate_glossary.generation.lv0.lv0_s3_verify_single_token import main
-        logger.info("Running Level 0, Step 3: Verify single tokens")
-        main()
-        return 0
-        
-    else:
+
+    steps = {
+        0: ("lv0_s0_get_college_names", "Get college names from Excel"),
+        1: ("lv0_s1_extract_concepts", "Extract concepts via LLM"),
+        2: ("lv0_s2_filter_by_institution_freq", "Filter by institution frequency"),
+        3: ("lv0_s3_verify_single_token", "Verify single tokens"),
+    }
+
+    if step not in steps:
         logger.error(f"Invalid step {step} for Level 0. Valid steps are 0-3.")
         return 1
 
+    module_name, description = steps[step]
+    test_mode = kwargs.get("test", False)
 
-def run_level_1_step(step: int, **kwargs) -> int:
-    """Run a Level 1 generation step."""
-    from generate_glossary.generation.runners.lv1_runner import (
-        run_step_0, run_step_1, run_step_2, run_step_3
+    module = __import__(
+        f"generate_glossary.generation.lv0.{module_name}", fromlist=["test", "main"]
     )
-    
-    # Get input file for step 0 if provided
-    input_file = kwargs.get('input_file', 'data/lv0/lv0_final.txt')
-    provider = kwargs.get('provider')
-    
-    if step == 0:
-        logger.info("Running Level 1, Step 0: Web extraction for departments")
-        run_step_0(input_file)
-        return 0
-        
-    elif step == 1:
-        logger.info("Running Level 1, Step 1: Extract department concepts")
-        run_step_1(provider=provider)
-        return 0
-        
-    elif step == 2:
-        logger.info("Running Level 1, Step 2: Frequency filtering")
-        run_step_2()
-        return 0
-        
-    elif step == 3:
-        logger.info("Running Level 1, Step 3: Token verification")
-        run_step_3(provider=provider)
-        return 0
-        
+
+    if test_mode:
+        logger.info(f"Running Level 0, Step {step}: {description} [TEST MODE]")
+        func = getattr(module, "test")
     else:
-        logger.error(f"Invalid step {step} for Level 1. Valid steps are 0-3.")
+        logger.info(f"Running Level 0, Step {step}: {description}")
+        func = getattr(module, "main")
+
+    # Step 3 needs provider argument
+    if step == 3:
+        provider = kwargs.get("provider")
+        func(provider=provider)
+    else:
+        func()
+
+    return 0
+
+
+def run_generic_level_step(level: int, step: int, **kwargs) -> int:
+    """Run a generic level step using runners."""
+
+    level_configs = {
+        1: {
+            "module": "lv1_runner",
+            "descriptions": {
+                0: "Web extraction for departments",
+                1: "Extract department concepts",
+                2: "Frequency filtering",
+                3: "Token verification",
+            },
+            "default_input": "data/lv0/lv0_final.txt",
+        },
+        2: {
+            "module": "lv2_runner",
+            "descriptions": {
+                0: "Extract research areas",
+                1: "Extract research concepts",
+                2: "Frequency filtering",
+                3: "Token verification",
+            },
+            "default_input": "data/lv1/lv1_final.txt",
+        },
+        3: {
+            "module": "lv3_runner",
+            "descriptions": {
+                0: "Extract conference topics",
+                1: "Extract topic concepts",
+                2: "Frequency filtering",
+                3: "Token verification",
+            },
+            "default_input": "data/lv2/lv2_final.txt",
+        },
+    }
+
+    if level not in level_configs:
+        logger.error(f"Invalid level {level}")
         return 1
 
+    config = level_configs[level]
 
-def run_level_2_step(step: int, **kwargs) -> int:
-    """Run a Level 2 generation step."""
-    from generate_glossary.generation.runners.lv2_runner import (
-        run_step_0, run_step_1, run_step_2, run_step_3
-    )
-    
-    input_file = kwargs.get('input_file', 'data/lv1/lv1_final.txt')
-    provider = kwargs.get('provider')
-    
-    if step == 0:
-        logger.info("Running Level 2, Step 0: Extract research areas")
-        run_step_0(input_file)
-        return 0
-        
-    elif step == 1:
-        logger.info("Running Level 2, Step 1: Extract research concepts")
-        run_step_1(provider=provider)
-        return 0
-        
-    elif step == 2:
-        logger.info("Running Level 2, Step 2: Frequency filtering")
-        run_step_2()
-        return 0
-        
-    elif step == 3:
-        logger.info("Running Level 2, Step 3: Token verification")
-        run_step_3(provider=provider)
-        return 0
-        
-    else:
-        logger.error(f"Invalid step {step} for Level 2. Valid steps are 0-3.")
+    if step not in config["descriptions"]:
+        logger.error(f"Invalid step {step} for Level {level}. Valid steps are 0-3.")
         return 1
 
-
-def run_level_3_step(step: int, **kwargs) -> int:
-    """Run a Level 3 generation step."""
-    from generate_glossary.generation.runners.lv3_runner import (
-        run_step_0, run_step_1, run_step_2, run_step_3
+    module = __import__(
+        f"generate_glossary.generation.runners.{config['module']}",
+        fromlist=[f"run_step_{step}"],
     )
-    
-    input_file = kwargs.get('input_file', 'data/lv2/lv2_final.txt')
-    provider = kwargs.get('provider')
-    
+    run_func = getattr(module, f"run_step_{step}")
+
+    logger.info(f"Running Level {level}, Step {step}: {config['descriptions'][step]}")
+
     if step == 0:
-        logger.info("Running Level 3, Step 0: Extract conference topics")
-        run_step_0(input_file)
-        return 0
-        
-    elif step == 1:
-        logger.info("Running Level 3, Step 1: Extract topic concepts")
-        run_step_1(provider=provider)
-        return 0
-        
-    elif step == 2:
-        logger.info("Running Level 3, Step 2: Frequency filtering")
-        run_step_2()
-        return 0
-        
-    elif step == 3:
-        logger.info("Running Level 3, Step 3: Token verification")
-        run_step_3(provider=provider)
-        return 0
-        
+        input_file = kwargs.get("input_file", config["default_input"])
+        run_func(input_file)
+    elif step in [1, 3]:
+        provider = kwargs.get("provider")
+        run_func(provider=provider)
     else:
-        logger.error(f"Invalid step {step} for Level 3. Valid steps are 0-3.")
-        return 1
+        run_func()
+
+    return 0
 
 
 def main():
@@ -185,68 +141,63 @@ Steps (same for all levels):
   1: LLM concept extraction
   2: Frequency-based filtering
   3: Single-token verification
-        """
+        """,
     )
-    
+
     parser.add_argument(
-        '-l', '--level',
+        "-l",
+        "--level",
         type=int,
         required=True,
         choices=[0, 1, 2, 3],
-        help='Generation level (0-3)'
+        help="Generation level (0-3)",
     )
-    
+
     parser.add_argument(
-        '-s', '--step',
+        "-s",
+        "--step",
         type=int,
         required=True,
         choices=[0, 1, 2, 3],
-        help='Generation step (0-3)'
+        help="Generation step (0-3)",
     )
-    
+
     parser.add_argument(
-        '--provider',
+        "--provider",
         type=str,
-        choices=['openai', 'gemini'],
-        help='LLM provider for steps 1 and 3 (default: openai)'
+        choices=["openai", "gemini"],
+        help="LLM provider for steps 1 and 3 (default: openai)",
     )
-    
+
     parser.add_argument(
-        '--input-file',
+        "--input-file",
         type=str,
-        help='Input file for levels 1-3, step 0 (default: previous level final output)'
+        help="Input file for levels 1-3, step 0 (default: previous level final output)",
     )
-    
+
     parser.add_argument(
-        '--test',
-        action='store_true',
-        help='Run in test mode with 10%% sample (saves to data/generation/tests/)'
+        "--test",
+        action="store_true",
+        help="Run in test mode with 10%% sample (saves to data/generation/tests/)",
     )
-    
+
     args = parser.parse_args()
-    
-    # Dispatch to appropriate level handler
-    level_handlers = {
-        0: run_level_0_step,
-        1: run_level_1_step,
-        2: run_level_2_step,
-        3: run_level_3_step
-    }
-    
-    handler = level_handlers.get(args.level)
-    if not handler:
-        logger.error(f"Invalid level: {args.level}")
-        return 1
-    
-    # Run the step
+
     try:
         kwargs = {
-            'provider': args.provider,
-            'input_file': args.input_file,
-            'test': args.test
+            "provider": args.provider,
+            "input_file": args.input_file,
+            "test": args.test,
         }
-        return handler(args.step, **kwargs)
-        
+
+        if args.level == 0:
+            return run_level_0_step(args.step, **kwargs)
+        elif args.level in [1, 2, 3]:
+            return run_generic_level_step(args.level, args.step, **kwargs)
+        else:
+            logger.error(f"Invalid level: {args.level}. Valid levels are 0-3.")
+            return 1
+
     except Exception as e:
         logger.error(f"Error running Level {args.level}, Step {args.step}: {e}")
         logger.exception("Full traceback:")
