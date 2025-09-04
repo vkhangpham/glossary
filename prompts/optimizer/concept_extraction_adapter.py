@@ -63,7 +63,7 @@ class ConceptExtractionAdapter(GEPAAdapter):
         self.task_model = task_model
         self.num_consensus = num_consensus
         self.temperature = temperature
-        self.cache = {}  # Cache extraction results
+        self.cache: Dict[str, List[str]] = {}  # Cache extraction results
 
     def evaluate(
         self,
@@ -84,7 +84,7 @@ class ConceptExtractionAdapter(GEPAAdapter):
         """
         outputs = []
         scores = []
-        trajectories = [] if capture_traces else None
+        trajectories: Optional[List[Dict[str, Any]]] = [] if capture_traces else None
 
         # Extract prompt components
         system_prompt = candidate.get("system_prompt", "")
@@ -107,7 +107,7 @@ class ConceptExtractionAdapter(GEPAAdapter):
                 outputs.append({"extraction": extraction})
                 scores.append(score)
 
-                if capture_traces:
+                if capture_traces and trajectories is not None:
                     trajectories.append(
                         {
                             "input": input_text,
@@ -123,7 +123,7 @@ class ConceptExtractionAdapter(GEPAAdapter):
                 outputs.append({"extraction": []})
                 scores.append(0.0)
 
-                if capture_traces:
+                if capture_traces and trajectories is not None:
                     trajectories.append(
                         {
                             "input": input_text,
@@ -340,4 +340,3 @@ class ConceptExtractionAdapter(GEPAAdapter):
             feedback_parts.append("Extraction seems reasonable but could be improved.")
 
         return " ".join(feedback_parts)
-
