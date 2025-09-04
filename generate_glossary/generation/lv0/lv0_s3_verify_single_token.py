@@ -1,39 +1,48 @@
-import os
 import sys
-import time
 import json
+import asyncio
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 from dotenv import load_dotenv
-from tqdm import tqdm
-
-# Package structure now properly configured with pyproject.toml
+from pydantic import BaseModel, Field
 
 from generate_glossary.utils.logger import setup_logger
-from generate_glossary.config import get_level_config, get_processing_config, ensure_directories
-from generate_glossary.utils.llm_simple import infer_text
+from generate_glossary.utils.llm import structured_completion_consensus
 from generate_glossary.deduplication.utils import normalize_text
+from generate_glossary.generation.shared import process_with_checkpoint
 
-# Load environment variables and setup logging
 load_dotenv()
 logger = setup_logger("lv0.s3")
 
-# Get the base directory
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# Use centralized configuration
+# Configuration constants - simple and direct
 LEVEL = 0
-level_config = get_level_config(LEVEL)
-processing_config = get_processing_config(LEVEL)
+BATCH_SIZE = 20
+CHUNK_SIZE = 100
+MAX_WORKERS = 4
+LLM_ATTEMPTS = 3  # Number of LLM responses for consensus
+MAX_EXAMPLES = 10  # Maximum number of college examples to show
+CACHE_TTL = 3600  # Cache consensus results for 1 hour
+TEMPERATURE = 0.3  # Lower temperature for verification task
 
-# Ensure directories exist
-ensure_directories(LEVEL)
+# File paths - explicit and clear
+DATA_DIR = Path("data/generation/lv0")
+INPUT_FILE = DATA_DIR / "lv0_s2_output.txt"  # Output from step 2
+INPUT_META_FILE = DATA_DIR / "lv0_s2_metadata.json"  # Metadata from step 2
+OUTPUT_FILE = DATA_DIR / "lv0_s3_output.txt"  # Main output
+META_FILE = DATA_DIR / "lv0_s3_metadata.json"  # Metadata output
+CHECKPOINT_DIR = DATA_DIR / ".checkpoints"
 
-class QuotaExceededError(Exception):
-    """Raised when the API quota is exceeded."""
-    pass
+# Test mode paths
+TEST_DATA_DIR = Path("data/generation/tests")
+TEST_INPUT_FILE = TEST_DATA_DIR / "lv0_s2_output.txt"
+TEST_INPUT_META_FILE = TEST_DATA_DIR / "lv0_s2_metadata.json"
+TEST_OUTPUT_FILE = TEST_DATA_DIR / "lv0_s3_output.txt"
+TEST_META_FILE = TEST_DATA_DIR / "lv0_s3_metadata.json"
+TEST_CHECKPOINT_DIR = TEST_DATA_DIR / ".checkpoints"
 
-# No longer need init_llm - using direct calls
+class VerificationResult(BaseModel):
+    is_valid: bool = Field(description="Whether the term is a valid broad academic discipline")
+
 
 SYSTEM_PROMPT = """You are an expert in academic research classification with a deep understanding of research domains, 
 academic departments, scientific disciplines, and specialized fields of study.
@@ -57,144 +66,67 @@ DO NOT accept:
 - Informal or colloquial terms (e.g., stuff, thing)
 - General English words without specific academic meaning"""
 
-def build_verification_prompt(
-    keyword: str,
-    colleges: List[str]
-) -> str:
-    """
-    Build prompt for keyword verification using metadata
-    
-    Args:
-        keyword: Keyword to verify
-        colleges: List of colleges where this concept appears
-        
-    Returns:
-        Formatted prompt for LLM
-    """
+def create_verification_prompt(keyword: str, colleges: List[str]) -> str:
+    """Create prompt for single keyword verification"""
     # Take up to MAX_EXAMPLES example colleges
-    example_colleges = colleges[:processing_config.max_examples]
+    example_colleges = colleges[:MAX_EXAMPLES]
     colleges_str = "\n".join(f"- {college}" for college in example_colleges)
     
-    return f"""Analyze whether "{keyword}" is a valid broad academic discipline based on the following criteria:
-
-1. Is it a recognized major field of study or broad academic discipline?
-2. Does it represent a major division of knowledge in academia?
-3. Is it broad enough to encompass multiple research areas or subdisciplines?
+    return f"""Analyze whether "{keyword}" is a valid broad academic discipline.
 
 Evidence - Colleges/schools/divisions that mention this concept:
 {colleges_str}
 
 Consider:
-- The academic context where the term appears
-- Its usage in higher education organizational structures
-- Whether it represents a well-defined broad discipline in academia
+1. Is it a recognized major field of study or broad academic discipline?
+2. Does it represent a major division of knowledge in academia?
+3. Is it broad enough to encompass multiple research areas or subdisciplines?
 
-Return only a JSON with an is_valid boolean field:
-{{
-    "is_valid": true/false
-}}"""
+Answer with true if it meets these criteria, false otherwise."""
 
-def clean_json_response(response: str) -> str:
-    """Clean JSON response by removing code block markers"""
-    # Remove code block markers if present
-    response = response.replace('```json\n', '').replace('\n```', '')
-    # Remove any leading/trailing whitespace
-    response = response.strip()
-    return response
 
-def verify_keyword(
-    keyword: str,
-    colleges: List[str],
-    provider: Optional[str] = None
+def verify_keyword_with_consensus(
+    keyword: str, colleges: List[str], num_attempts: int = LLM_ATTEMPTS
 ) -> bool:
-    """Verify if a keyword is a valid academic discipline."""
+    """Verify if a keyword is a valid academic discipline using consensus"""
+    prompt = create_verification_prompt(keyword, colleges)
+    
+    # Build messages
+    messages = []
+    if SYSTEM_PROMPT:
+        messages.append({"role": "system", "content": SYSTEM_PROMPT})
+    messages.append({"role": "user", "content": prompt})
+    
     try:
-        prompt = build_verification_prompt(keyword, colleges)
-        logger.debug(f"Verification prompt for '{keyword}':\n{prompt}")
-        
-        try:
-            response = infer_text(
-                provider=provider or "openai",
-                prompt=prompt,
-                system_prompt=SYSTEM_PROMPT,
-                temperature=0.3
+        # Run the async consensus method
+        consensus = asyncio.run(
+            structured_completion_consensus(
+                messages=messages,
+                response_model=VerificationResult,
+                tier="budget",  # Use budget tier for verification
+                num_responses=num_attempts,
+                return_all=False,  # Only need consensus
+                temperature=TEMPERATURE,
+                cache_ttl=CACHE_TTL,
             )
-            logger.debug(f"Raw response for '{keyword}':\n{response.text}")
-            response_json = clean_json_response(response.text)
-            logger.debug(f"Cleaned response for '{keyword}':\n{response_json}")
-            result = json.loads(response_json)
-            return result.get("is_valid", False)
-        except json.JSONDecodeError as e:
-            logger.error(f"Error parsing response for keyword '{keyword}': {e}")
-            logger.error(f"Raw response: {response}")
-            return False
-        except Exception as e:
-            if "insufficient_quota" in str(e):
-                raise QuotaExceededError(f"API quota exceeded for provider {provider}")
-            logger.error(f"Error verifying keyword '{keyword}': {e}")
-            return False
-    except QuotaExceededError as e:
-        logger.error(str(e))
-        raise  # Re-raise to be handled by caller
+        )
+        
+        return consensus.is_valid
+        
     except Exception as e:
-        logger.error(f"Error initializing LLM: {e}")
+        logger.error(f"Error verifying keyword '{keyword}': {e}")
         return False
 
-def verify_keywords_batch(
-    keywords: List[str],
-    concept_colleges: Dict[str, List[str]],
-    provider: Optional[str] = None,
-    batch_size: int = processing_config.batch_size,
-    cooldown: int = processing_config.cooldown_period,
-    cooldown_freq: int = processing_config.cooldown_frequency
-) -> Dict[str, Dict[str, Any]]:
-    """
-    Verify a batch of keywords with rate limiting
-    
-    Args:
-        keywords: List of keywords to verify
-        concept_colleges: Dictionary mapping keywords to their colleges
-        provider: Optional LLM provider (openai or gemini)
-        batch_size: Number of keywords to process before cooldown
-        cooldown: Cooldown period in seconds
-        cooldown_freq: Number of batches to process before cooling down
-        
-    Returns:
-        Dictionary mapping keywords to their verification results
-    """
+
+def process_keyword_chunk(chunk_data: Tuple[List[Tuple[str, List[str]]], int]) -> Dict[str, bool]:
+    """Process a chunk of keywords for verification"""
+    keyword_colleges_list, num_attempts = chunk_data
     results = {}
     
-    for i in tqdm(range(0, len(keywords), batch_size), desc="Verifying keywords"):
-        batch = keywords[i:i + batch_size]
-        batch_results = {}
-        
-        for keyword in batch:
-            try:
-                colleges = concept_colleges.get(keyword, [])
-                is_verified = verify_keyword(keyword, colleges, provider)
-                batch_results[keyword] = {
-                    "is_verified": is_verified,
-                    "colleges": colleges,
-                    "provider": provider or "openai",
-                    "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-                }
-            except Exception as e:
-                logger.error(f"Failed to verify '{keyword}': {str(e)}")
-                batch_results[keyword] = {
-                    "is_verified": False,
-                    "colleges": [],
-                    "provider": provider or "openai",
-                    "error": str(e),
-                    "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-                }
-        
-        results.update(batch_results)
-        
-        # Apply cooldown every cooldown_freq batches
-        batch_num = i // batch_size
-        if batch_num > 0 and batch_num % cooldown_freq == 0:
-            logger.debug(f"Processed {i + len(batch)}/{len(keywords)} keywords. Cooling down...")
-            time.sleep(cooldown)
+    for keyword, colleges in keyword_colleges_list:
+        is_valid = verify_keyword_with_consensus(keyword, colleges, num_attempts)
+        results[keyword] = is_valid
+        logger.debug(f"Verified '{keyword}': {is_valid}")
     
     return results
 
@@ -231,25 +163,61 @@ def is_single_word(keyword: str) -> bool:
     """Check if keyword is a single word (no spaces)"""
     return len(keyword.split()) == 1
 
+
+def test():
+    """Test mode: Read from test directory and save to test directory"""
+    global INPUT_FILE, INPUT_META_FILE, OUTPUT_FILE, META_FILE, CHECKPOINT_DIR
+    
+    # Save original values
+    original_input = INPUT_FILE
+    original_input_meta = INPUT_META_FILE
+    original_output = OUTPUT_FILE
+    original_meta = META_FILE
+    original_checkpoint = CHECKPOINT_DIR
+    
+    # Set test values
+    INPUT_FILE = TEST_INPUT_FILE
+    INPUT_META_FILE = TEST_INPUT_META_FILE
+    OUTPUT_FILE = TEST_OUTPUT_FILE
+    META_FILE = TEST_META_FILE
+    CHECKPOINT_DIR = TEST_CHECKPOINT_DIR
+    
+    # Ensure test directory exists
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    
+    logger.info("Running in TEST MODE")
+    
+    try:
+        # Run main with test settings
+        main()
+    finally:
+        # Restore original values
+        INPUT_FILE = original_input
+        INPUT_META_FILE = original_input_meta
+        OUTPUT_FILE = original_output
+        META_FILE = original_meta
+        CHECKPOINT_DIR = original_checkpoint
+
+
 def main():
     """Main execution function"""
     try:
-        print("Starting main function of lv0_s3_verify_single_token.py...")
-        # Get provider from command line args
-        provider = None
-        if len(sys.argv) > 1 and sys.argv[1] == "--provider":
-            provider = sys.argv[2]
-            logger.info(f"Using provider: {provider}")
+        input_file = INPUT_FILE
+        input_meta_file = INPUT_META_FILE
+        output_file = OUTPUT_FILE
+        meta_file = META_FILE
+        checkpoint_dir = CHECKPOINT_DIR
         
-        logger.info("Starting single-word academic discipline verification by LLM")
+        logger.info("Starting single-word academic discipline verification")
+        logger.info(f"Consensus attempts: {LLM_ATTEMPTS} (majority vote wins)")
         
         # Read input keywords
-        with open(level_config.get_step_input_file(3), "r", encoding='utf-8') as f:
+        with open(input_file, "r", encoding='utf-8') as f:
             all_keywords = [line.strip() for line in f.readlines()]
         logger.info(f"Read {len(all_keywords)} total academic disciplines")
         
-        # Read metadata from s1
-        with open(level_config.get_step_metadata_file(3), "r", encoding='utf-8') as f:
+        # Read metadata from s2 (was s1, now s2 provides the metadata)
+        with open(input_meta_file, "r", encoding='utf-8') as f:
             metadata = json.load(f)
         concept_colleges = get_concept_colleges(metadata)
         logger.info(f"Loaded college data for {len(concept_colleges)} concepts")
@@ -260,33 +228,42 @@ def main():
         logger.info(f"Found {len(single_word_keywords)} single-word disciplines to verify")
         logger.info(f"Found {len(multi_word_keywords)} multi-word disciplines to bypass")
         
-        # Verify single-word keywords
-        verification_results = verify_keywords_batch(
-            single_word_keywords,
-            concept_colleges,
-            provider=provider
+        # Prepare data for checkpoint processing
+        keyword_colleges_list = [
+            (kw, concept_colleges.get(kw, [])) 
+            for kw in single_word_keywords
+        ]
+        
+        # Process with checkpoint support
+        checkpoint_file = checkpoint_dir / "lv0_s3_checkpoint.json"
+        verification_results = process_with_checkpoint(
+            items=keyword_colleges_list,
+            batch_size=CHUNK_SIZE,
+            checkpoint_file=checkpoint_file,
+            process_batch_func=lambda chunk: process_keyword_chunk(
+                (chunk, LLM_ATTEMPTS)
+            ),
         )
-        logger.info(f"Completed verification of {len(verification_results)} single-word disciplines")
         
         # Split into verified and unverified
         verified_single_words = [
-            k for k, v in verification_results.items() 
-            if v.get("is_verified", False)
+            kw for kw, is_valid in verification_results.items() 
+            if is_valid
         ]
         unverified_keywords = [
-            k for k, v in verification_results.items() 
-            if not v.get("is_verified", False)
+            kw for kw, is_valid in verification_results.items() 
+            if not is_valid
         ]
+        
         logger.info(f"Verified {len(verified_single_words)} single-word disciplines")
         logger.info(f"Rejected {len(unverified_keywords)} single-word disciplines")
         
         # Combine verified single words with multi-word keywords
         all_verified_keywords = verified_single_words + multi_word_keywords
-        logger.info(f"Total verified disciplines before normalization: {len(all_verified_keywords)}")
+        logger.info(f"Total verified disciplines: {len(all_verified_keywords)}")
         
-        # Normalize all verified keywords
+        # Normalize and deduplicate
         normalized_keywords = [normalize_text(kw) for kw in all_verified_keywords]
-        # Remove duplicates that normalize to the same text while maintaining order
         seen = set()
         final_keywords = []
         for kw, norm_kw in zip(all_verified_keywords, normalized_keywords):
@@ -296,46 +273,55 @@ def main():
         
         logger.info(f"Final unique disciplines after normalization: {len(final_keywords)}")
         
-        # Create output directory if needed
-        for path in [level_config.get_step_output_file(3), level_config.get_validation_metadata_file(3)]:
-            output_path = Path(path)
-            output_path.parent.mkdir(parents=True, exist_ok=True)
+        # Save all results
+        output_file.parent.mkdir(parents=True, exist_ok=True)
         
-        # Save verified keywords to text file
-        logger.info(f"Saving verified disciplines to {level_config.get_step_output_file(3)}")
-        with open(level_config.get_step_output_file(3), "w", encoding='utf-8') as f:
+        # Save verified keywords
+        with open(output_file, "w", encoding='utf-8') as f:
             for kw in sorted(final_keywords):
                 f.write(f"{kw}\n")
+        logger.info(f"Saved {len(final_keywords)} disciplines to {output_file}")
         
-        # Save detailed metadata to JSON file
-        logger.info(f"Saving metadata to {level_config.get_validation_metadata_file(3)}")
-        metadata = {
-            "metadata": {
-                "total_input_count": len(all_keywords),
-                "single_word_count": len(single_word_keywords),
-                "multi_word_count": len(multi_word_keywords),
-                "verified_single_word_count": len(verified_single_words),
-                "unverified_single_word_count": len(unverified_keywords),
-                "total_verified_count": len(all_verified_keywords),
-                "normalized_output_count": len(final_keywords),
-                "provider": provider or Provider.OPENAI,
-                "batch_size": processing_config.batch_size,
-                "cooldown_period": processing_config.cooldown_period,
-                "cooldown_frequency": processing_config.cooldown_frequency,
-                "max_retries": processing_config.max_retries
-            },
-            "verification_results": verification_results,
-            "verified_single_words": verified_single_words,
-            "unverified_keywords": unverified_keywords,
-            "multi_word_keywords": multi_word_keywords,
-            "final_keywords": final_keywords
-        }
-        
-        with open(level_config.get_validation_metadata_file(3), "w", encoding='utf-8') as f:
-            json.dump(metadata, f, indent=4, ensure_ascii=False)
+        # Save metadata
+        with open(meta_file, "w", encoding='utf-8') as f:
+            json.dump(
+                {
+                    "metadata": {
+                        "step": "lv0_s3_verify_single_token",
+                        "input_file": str(input_file),
+                        "input_count": len(all_keywords),
+                        "single_word_count": len(single_word_keywords),
+                        "multi_word_count": len(multi_word_keywords),
+                        "verified_single_word_count": len(verified_single_words),
+                        "unverified_single_word_count": len(unverified_keywords),
+                        "output_file": str(output_file),
+                        "output_count": len(final_keywords),
+                        "processing_params": {
+                            "batch_size": BATCH_SIZE,
+                            "chunk_size": CHUNK_SIZE,
+                            "max_workers": MAX_WORKERS,
+                            "llm_attempts": LLM_ATTEMPTS,
+                            "consensus_mode": "majority_vote",
+                            "temperature": TEMPERATURE,
+                            "cache_ttl": CACHE_TTL,
+                        },
+                    },
+                    "verification_results": {
+                        kw: {"is_verified": is_valid}
+                        for kw, is_valid in verification_results.items()
+                    },
+                    "verified_single_words": verified_single_words,
+                    "unverified_keywords": unverified_keywords,
+                    "multi_word_keywords": multi_word_keywords,
+                    "final_keywords": final_keywords,
+                },
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
+        logger.info(f"Saved metadata to {meta_file}")
         
         logger.info("Academic discipline verification completed successfully")
-        logger.info(f"Saved {len(final_keywords)} verified disciplines to {level_config.get_step_output_file(3)}")
         
     except Exception as e:
         logger.error(f"An error occurred: {str(e)}", exc_info=True)

@@ -10,7 +10,7 @@ from typing import List, Optional, Dict, Any, Tuple
 import networkx as nx
 import json
 
-from generate_glossary.utils.llm import text_completion
+from generate_glossary.utils.llm import completion
 
 
 def add_llm_based_edges(
@@ -171,7 +171,7 @@ def evaluate_pairs_with_web_content(
             model = "gemini/gemini-pro" if provider == "gemini" else "openai/gpt-4"
             messages = [{"role": "user", "content": prompt}]
 
-            response = text_completion(model, messages, temperature=0.3)
+            response = completion(model=model, messages=messages, temperature=0.3)
 
             # Parse response
             is_duplicate, confidence, reason = parse_llm_response(response)
