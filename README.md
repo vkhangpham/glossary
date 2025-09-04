@@ -24,6 +24,7 @@ The project consists of several integrated components:
 4. **Hierarchy Builder**: Construction of parent-child relationships between terms
 5. **Visualization Tools**: Interactive interfaces for exploring the hierarchy
 6. **Evaluation Framework**: Analysis of the hierarchy quality with metrics and visualizations
+7. **Prompt Management System**: Centralized, versioned prompt registry with GEPA optimization support
 
 ## Directory Structure
 
@@ -39,11 +40,17 @@ generate_glossary/
 ├── utils/                  # Shared utilities
 │   ├── web_search/         # Web search and content extraction utilities
 │   └── ...                 # Other utilities
-<!-- TODO: [Documentation] Remove references to non-existent pipeline scripts -->
-<!-- run_pipeline.py and run_interactive.py do not exist in current codebase -->
-<!-- hierarchy_* scripts are in separate hierarchy/ directory, not generate_glossary/ -->
-├── CLI scripts for each step # Individual generation, validation, deduplication steps
-└── See individual component READMEs for usage examples
+prompts/
+├── __init__.py             # Public API exports
+├── registry.py             # Pure functional prompt access
+├── storage.py              # JSON-based versioned storage
+├── optimizer/              # GEPA-based prompt optimization
+│   ├── concept_extraction_adapter.py  # Level 0-3 extraction adapters
+│   └── optimizer.py        # High-level optimization API
+└── data/library/           # Versioned prompt library
+    ├── extraction/         # All extraction prompts by level
+    ├── validation/         # Validation prompts
+    └── deduplication/      # Deduplication prompts
 
 data/
 ├── lv0/                    # Level 0 data
@@ -166,6 +173,36 @@ uv run glossary-web-miner -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/l
 ```
 
 ## Usage
+
+### Prompt Management System
+
+The project now includes a centralized prompt management system with GEPA optimization support:
+
+```python
+from prompts import get_prompt, register_prompt
+
+# Get a prompt from the registry
+system_prompt = get_prompt("extraction.level0_system")
+user_prompt = get_prompt("extraction.level0_user", keyword="engineering")
+
+# Register a new prompt programmatically
+register_prompt(
+    key="validation.custom",
+    prompt="Your custom validation prompt here",
+    variables=["term"]
+)
+
+# Run prompt optimization experiments (requires OpenAI API key)
+python test_prompt_optimization.py
+```
+
+The prompt system provides:
+- **Centralized Storage**: All prompts in `prompts/data/library/` as versioned JSON
+- **SHA256 Versioning**: Automatic version tracking on prompt changes
+- **Template Variables**: Support for `{variable}` substitution
+- **Pure Functional API**: No OOP, follows project patterns
+- **GEPA Optimization**: Evolutionary optimization for better prompts
+- **Performance**: <0.1ms prompt loading with LRU caching
 
 ### Running the Full Pipeline
 

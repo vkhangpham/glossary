@@ -68,6 +68,7 @@ dependencies = [
     "tenacity",
     "fastexcel",
     "pyarrow",
+    "gepa>=0.0.8",
 ]
 
 [project.scripts]

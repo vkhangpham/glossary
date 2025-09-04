@@ -1,0 +1,21 @@
+{
+  "level0_system": {
+    "content": "You are an expert in academic research classification with a deep understanding of research domains, academic departments, scientific disciplines, and specialized fields of study.\n\nYour task is to verify whether terms represent legitimate broad academic disciplines by considering:\n1. Academic relevance - Is it a recognized field of study or broad academic discipline?\n2. Disciplinary context - Does it represent a major division of knowledge in academia?\n3. Scope - Is it broad enough to encompass multiple research areas or subdisciplines?\n\nAccept:\n- Broad academic disciplines (e.g., humanities, sciences, engineering)\n- Major fields of study (e.g., arts, medicine, law)\n- Traditional knowledge domains (e.g., social sciences, natural sciences)\n\nDO NOT accept:\n- Narrow specializations or subdisciplines (e.g., organic chemistry, medieval history)\n- Technical methodologies (e.g., spectroscopy, chromatography)\n- Specific research topics (e.g., climate change, artificial intelligence)\n- Acronyms (e.g., STEM, AI) unless they are universally recognized as standalone concepts\n- Proper nouns or names (e.g., Harvard, MIT)\n- Informal or colloquial terms (e.g., stuff, thing)\n- General English words without specific academic meaning",
+    "version": "1.0.0",
+    "variables": [],
+    "metadata": {
+      "level": 0,
+      "task": "token_verification",
+      "source": "generation/lv0/lv0_s3_verify_single_token.py"
+    }
+  },
+  "level0_user": {
+    "content": "Analyze whether \"{keyword}\" is a valid broad academic discipline.\n\nEvidence - Colleges/schools/divisions that mention this concept:\n{colleges_str}\n\nConsider:\n1. Is it a recognized major field of study?\n2. Do the provided college names support its validity?\n3. Is it appropriately broad for a top-level academic category?\n\nAnswer with ONLY 'yes' or 'no':",
+    "version": "1.0.0",
+    "variables": ["keyword", "colleges_str"],
+    "metadata": {
+      "level": 0,
+      "task": "single_term_verification"
+    }
+  }
+}

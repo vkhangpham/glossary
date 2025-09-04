@@ -1,0 +1,15 @@
+{
+  "key": "test.validation",
+  "versions": [
+    {
+      "hash": "70bbee1c572a13c0aca98e392ed72cb2b1106287d4f0e9e8781cd447af1a7f71",
+      "content": "This is a test prompt for validation purposes.",
+      "created_at": "2025-09-04T23:49:26.932815",
+      "metadata": {
+        "description": "Test prompt",
+        "author": "test_script"
+      }
+    }
+  ],
+  "latest": "70bbee1c572a13c0aca98e392ed72cb2b1106287d4f0e9e8781cd447af1a7f71"
+}

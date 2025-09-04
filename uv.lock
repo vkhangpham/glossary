@@ -824,6 +824,15 @@ wheels = [
 ]
 
 [[package]]
+name = "gepa"
+version = "0.0.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0c/19/126e6e897595c0374379dc3d7d34cf60e941e47d278fad3e05b313fc7989/gepa-0.0.8.tar.gz", hash = "sha256:c786bd7eff5547d51930171fb6afb69d6f970807d4dde73f521da08eb36253fe", size = 57149, upload-time = "2025-09-03T01:55:55.724Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/36/bd/9c3adfbe4a903a80c270e186aeca2989c4cf46fce11a872c583b0e5d3308/gepa-0.0.8-py3-none-any.whl", hash = "sha256:086b40ec8923692af3ff2d563c74f31ddd57dfe8443ce214cd4a3628382252c5", size = 62141, upload-time = "2025-09-03T01:55:54.451Z" },
+]
+
+[[package]]
 name = "glossary-generation"
 version = "0.1.0"
 source = { editable = "." }
@@ -835,6 +844,7 @@ dependencies = [
     { name = "fastexcel" },
     { name = "firecrawl-py" },
     { name = "flask" },
+    { name = "gepa" },
     { name = "google-generativeai" },
     { name = "instructor" },
     { name = "litellm" },
@@ -888,6 +898,7 @@ requires-dist = [
     { name = "fastexcel" },
     { name = "firecrawl-py" },
     { name = "flask" },
+    { name = "gepa", specifier = ">=0.0.8" },
     { name = "google-generativeai" },
     { name = "instructor" },
     { name = "litellm" },

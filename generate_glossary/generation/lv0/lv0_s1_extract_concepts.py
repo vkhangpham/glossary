@@ -51,18 +51,11 @@ class ConceptExtractionList(BaseModel):
     )
 
 
-SYSTEM_PROMPT = """Extract academic disciplines from college/school names.
+# Import prompt registry
+from prompts import get_prompt
 
-Rules:
-1. Extract ONLY terms explicitly mentioned in the text
-2. Remove administrative qualifiers (college of, school of, department of)
-3. Keep compound terms intact (e.g., "computer science", "applied mathematics")
-4. Exclude: generic terms, acronyms, proper nouns, locations
-
-Examples:
-- "College of Arts and Sciences" → ["arts", "sciences"]
-- "School of Computer Science" → ["computer science"]
-- "Department of Electrical Engineering" → ["electrical engineering"]"""
+# Load prompts from centralized registry
+SYSTEM_PROMPT = get_prompt("extraction.level0_system")
 
 # Semantic validation prompt for quality assurance
 SEMANTIC_VALIDATION = """Verify that each extracted concept is:
@@ -75,20 +68,9 @@ SEMANTIC_VALIDATION = """Verify that each extracted concept is:
 def create_extraction_prompt(sources: List[str]) -> str:
     """Create LLM prompt for concept extraction from college names"""
     sources_str = "\n".join(f"- {source}" for source in sources)
-
-    return f"""Extract broad academic disciplines and research areas from these college/school/division names.
-For each name, identify the core academic fields and disciplines represented.
-
-Return the concepts in this exact JSON format:
-{{
-    "extractions": [
-        {{"source": "source1", "concepts": ["concept1", "concept2"]}},
-        {{"source": "source2", "concepts": ["concept3", "concept4"]}}
-    ]
-}}
-
-College/school/division names to process:
-{sources_str}"""
+    
+    # Use prompt template from registry
+    return get_prompt("extraction.level0_user_template", sources=sources_str)
 
 
 def extract_concepts_with_consensus(

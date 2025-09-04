@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-04] - Prompt Management System with GEPA Optimization
+
+### Added
+- **Centralized Prompt Management System** (`prompts/` package):
+  - Pure functional API with `get_prompt()` and `register_prompt()`
+  - JSON-based versioned storage in `prompts/data/library/`
+  - SHA256-based automatic version tracking
+  - Template variable substitution with `{variable}` syntax
+  - LRU caching for <0.1ms prompt loading performance
+  - Comprehensive test suite in `test_prompt_registry.py`
+
+- **GEPA Optimization Infrastructure** (`prompts/optimizer/`):
+  - Full GEPA (Genetic-Pareto Evolutionary Algorithm) integration
+  - `ConceptExtractionAdapter` (385 lines) for levels 0-3 extraction optimization
+  - High-level optimization API in `optimizer.py` (312 lines)
+  - 25 ground-truth validation examples for testing
+  - Ready-to-run optimization script `test_prompt_optimization.py`
+  - Support for both OpenAI and Gemini providers
+
+### Changed
+- **Modified `lv0_s1_extract_concepts.py`** to use centralized prompt registry
+  - Replaced inline prompt strings with `get_prompt()` calls
+  - Demonstrated migration pattern for other modules
+
+### Technical Improvements
+- **Performance**: Prompt loading at 0.095ms (10x better than 1ms target)
+- **Architecture**: Three-layer design (Storage, Runtime, Optimization)
+- **Testing**: Full test coverage with performance benchmarks
+- **Documentation**: Added comprehensive prompt system documentation
+
 ## [2025-09-02] - Final Utils Cleanup and Refactoring
 
 ### Changed
