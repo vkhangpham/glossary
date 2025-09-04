@@ -18,7 +18,6 @@ from generate_glossary.utils.logger import setup_logger
 
 logger = setup_logger("prompt_registry")
 
-# Cache for loaded prompts to avoid repeated file I/O
 @lru_cache(maxsize=128)
 def _load_cached_prompt(key: str, version: Optional[str] = None) -> Optional[Dict[str, Any]]:
     """
@@ -35,13 +34,11 @@ def _load_cached_prompt(key: str, version: Optional[str] = None) -> Optional[Dic
     if not data:
         return None
         
-    # Find requested version
     if version is None or version == "latest":
         target_hash = data.get("latest")
     else:
         target_hash = version if len(version) > 8 else None
         if not target_hash:
-            # Try to match short version
             for v in data.get("versions", []):
                 if v["hash"].startswith(version):
                     target_hash = v["hash"]
@@ -51,7 +48,6 @@ def _load_cached_prompt(key: str, version: Optional[str] = None) -> Optional[Dic
         logger.error(f"Version not found for {key}: {version}")
         return None
         
-    # Find version content
     for v in data.get("versions", []):
         if v["hash"] == target_hash:
             return {
@@ -85,18 +81,14 @@ def get_prompt(key: str, version: Optional[str] = None, **kwargs) -> str:
     
     prompt_text = prompt_data["content"]
     
-    # Substitute template variables using simple string replacement
-    # Format: {variable_name} in the prompt text
     for var_name, var_value in kwargs.items():
         placeholder = f"{{{var_name}}}"
         prompt_text = prompt_text.replace(placeholder, str(var_value))
     
-    # Check for any remaining placeholders
     remaining = re.findall(r'\{(\w+)\}', prompt_text)
     if remaining:
         logger.warning(f"Unsubstituted variables in prompt {key}: {remaining}")
     
-    # Track usage for metrics
     track_usage(key, prompt_data["version"])
     
     return prompt_text
@@ -139,7 +131,6 @@ def register_prompt(key: str, content: str, metadata: Optional[Dict] = None) -> 
             "versions": []
         }
     
-    # Add new version
     from datetime import datetime
     new_version = {
         "hash": version_hash,

@@ -48,7 +48,6 @@ def optimize_prompt(
     """
     logger.info(f"Starting optimization for {prompt_key}")
     
-    # Load current prompts as seed
     try:
         system_prompt = get_prompt(f"{prompt_key}_system")
         user_template = get_prompt(f"{prompt_key}_user_template")
@@ -62,9 +61,7 @@ def optimize_prompt(
         "user_template": user_template
     }
     
-    # Prepare data
     if validation_data is None:
-        # Split training data
         split_idx = int(len(training_data) * 0.8)
         train_set = training_data[:split_idx]
         val_set = training_data[split_idx:]
@@ -75,13 +72,11 @@ def optimize_prompt(
     logger.info(f"Training set: {len(train_set)} examples")
     logger.info(f"Validation set: {len(val_set)} examples")
     
-    # Create adapter
     adapter = ConceptExtractionAdapter(
         level=level,
         task_model=task_model
     )
     
-    # Run optimization
     start_time = time.time()
     
     result = gepa.optimize(

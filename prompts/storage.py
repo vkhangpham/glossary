@@ -34,11 +34,9 @@ def load_prompt_file(key: str) -> Optional[Dict[str, Any]]:
     parts = key.split(".")
     file_path = get_library_path()
     
-    # Navigate to the correct directory
     for part in parts[:-1]:
         file_path = file_path / part
     
-    # Add the filename
     file_path = file_path / f"{parts[-1]}.json"
     
     if not file_path.exists():
@@ -69,13 +67,11 @@ def save_prompt_file(key: str, data: Dict[str, Any]) -> bool:
     parts = key.split(".")
     file_path = get_library_path()
     
-    # Create directory structure
     for part in parts[:-1]:
         file_path = file_path / part
     
     file_path.mkdir(parents=True, exist_ok=True)
     
-    # Add the filename
     file_path = file_path / f"{parts[-1]}.json"
     
     try:

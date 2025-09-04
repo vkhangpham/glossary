@@ -9,6 +9,7 @@ A centralized prompt management system that replaces 927+ inline prompt strings 
 ## System Design (via Pólya Framework Analysis)
 
 ### Problem Understanding
+
 - **Unknown**: Optimal prompt management system for glossary project
 - **Data**: 927 files with scattered prompts, functional programming constraint, GEPA available
 - **Conditions**: Must maintain FP paradigm, work with existing pipeline, enable optimization
@@ -35,6 +36,7 @@ A centralized prompt management system that replaces 927+ inline prompt strings 
 ### Core Components
 
 #### 1. Registry (Pure Functional API)
+
 ```python
 def get_prompt(key: str, version: str = "latest", **kwargs) -> str:
     """Get prompt with template substitution"""
@@ -44,6 +46,7 @@ def get_prompt(key: str, version: str = "latest", **kwargs) -> str:
 ```
 
 #### 2. Storage (Versioned JSON)
+
 ```json
 {
   "key": "extraction.level0.system",
@@ -53,13 +56,14 @@ def get_prompt(key: str, version: str = "latest", **kwargs) -> str:
       "hash": "sha256_hash",
       "content": "You are an expert...",
       "created_at": "2025-01-04",
-      "metrics": {"precision": 0.85, "recall": 0.78}
+      "metrics": { "precision": 0.85, "recall": 0.78 }
     }
   ]
 }
 ```
 
 #### 3. Optimizer (GEPA Integration)
+
 ```python
 def optimize_prompt(key: str, training_data: list) -> dict:
     """Offline optimization using GEPA"""
@@ -78,12 +82,14 @@ def optimize_prompt(key: str, training_data: list) -> dict:
 ### Implementation Phases
 
 **Phase 1: Minimal Registry** ✅ COMPLETE
+
 - [x] Create basic registry.py with pure functional API
 - [x] Extract Level 0 prompts to JSON format
 - [x] Update lv0_s1_extract_concepts.py to use registry
 - [x] Verify performance: 0.095ms per load (10x better than target)
 
 **Phase 2: Optimization Infrastructure** ✅ COMPLETE
+
 - [x] Install GEPA package via UV
 - [x] Create ConceptExtractionAdapter (385 lines)
 - [x] Implement high-level optimizer API (312 lines)
@@ -92,7 +98,8 @@ def optimize_prompt(key: str, training_data: list) -> dict:
 - [ ] Run full optimization experiment (pending API key)
 
 **Phase 3: Incremental Migration** 🚧 IN PROGRESS
-- [x] Level 0 prompts migrated and tested
+
+- [ ] Level 0 prompts migrated and tested
 - [ ] Level 1-3 prompts (migrate during refactoring)
 - [ ] Validation prompts (migrate during validation refactor)
 - [ ] Deduplication prompts (migrate during dedup refactor)
@@ -117,6 +124,7 @@ def optimize_prompt(key: str, training_data: list) -> dict:
 ### Implementation Details
 
 #### File Organization
+
 ```
 prompts/
 ├── registry.py          # Pure functional API (get_prompt, register_prompt)
@@ -131,6 +139,7 @@ prompts/
 ```
 
 #### Key APIs
+
 ```python
 # Core retrieval with template substitution
 prompt = get_prompt("extraction.level0_system", keyword="engineering")
@@ -162,6 +171,7 @@ results = compare_prompts(
 ### Migration Strategy
 
 We're using an **incremental migration** approach:
+
 1. Migrate prompts only when refactoring their modules
 2. Ensures prompts always match current code structure
 3. Avoids premature migration that might need rework
@@ -174,4 +184,6 @@ We're using an **incremental migration** approach:
 3. **Long-term**: Full migration across all 927 files
 
 ---
-*Design implemented via Pólya framework - Phase 2 Complete - 2025-09-04*
+
+_Design implemented via Pólya framework - Phase 2 Complete - 2025-09-04_
+
