@@ -328,4 +328,7 @@ def main():
         raise
 
 if __name__ == "__main__":
-    main() 
+    if len(sys.argv) > 1 and sys.argv[1] == "test":
+        test()
+    else:
+        main() 
