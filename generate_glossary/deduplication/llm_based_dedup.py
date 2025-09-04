@@ -48,7 +48,6 @@ def add_llm_based_edges(
 
     edges_added = 0
 
-    # Find term pairs with some URL overlap (but not enough for web-based edges)
     candidate_pairs = find_candidate_pairs_with_overlap(
         terms, web_content, min_url_overlap, max_url_overlap
     )
@@ -57,14 +56,11 @@ def add_llm_based_edges(
         f"Found {len(candidate_pairs)} candidate pairs with URL overlap {min_url_overlap}-{max_url_overlap}"
     )
 
-    # Process in batches
     for i in range(0, len(candidate_pairs), batch_size):
         batch = candidate_pairs[i : i + batch_size]
 
-        # Evaluate batch with LLM using their web content
         results = evaluate_pairs_with_web_content(batch, web_content, provider)
 
-        # Add edges for duplicates
         for (term1, term2), (is_duplicate, confidence, reason) in results.items():
             if is_duplicate and confidence >= confidence_threshold:
                 if (
@@ -132,7 +128,6 @@ def find_candidate_pairs_with_overlap(
             if not urls2:
                 continue
 
-            # Check URL overlap
             overlap = len(urls1 & urls2)
             if min_overlap <= overlap < max_overlap:
                 candidate_pairs.append((term1, term2))
@@ -160,20 +155,16 @@ def evaluate_pairs_with_web_content(
 
     for term1, term2 in term_pairs:
         try:
-            # Get web content for both terms
             content1 = extract_relevant_content(term1, web_content)
             content2 = extract_relevant_content(term2, web_content)
 
-            # Build prompt with web content
             prompt = build_content_comparison_prompt(term1, term2, content1, content2)
 
-            # Get LLM evaluation
             model = "gemini/gemini-pro" if provider == "gemini" else "openai/gpt-4"
             messages = [{"role": "user", "content": prompt}]
 
             response = completion(model=model, messages=messages, temperature=0.3)
 
-            # Parse response
             is_duplicate, confidence, reason = parse_llm_response(response)
             results[(term1, term2)] = (is_duplicate, confidence, reason)
 
@@ -200,7 +191,6 @@ def extract_relevant_content(term: str, web_content: Dict[str, Any]) -> str:
 
     content_parts = []
 
-    # Get top 3 results
     results = web_content[term].get("results", [])[:3]
 
     for result in results:
@@ -234,11 +224,11 @@ Analyze whether these two terms refer to the same concept based on their web con
 
 Term 1: "{term1}"
 Web content for Term 1:
-{content1[:1000]}  # Limit to avoid token overflow
+{content1[:1000]}
 
 Term 2: "{term2}"
 Web content for Term 2:
-{content2[:1000]}  # Limit to avoid token overflow
+{content2[:1000]}
 
 Based on the web content, determine if these terms are duplicates (refer to the same concept).
 
@@ -270,14 +260,12 @@ def parse_llm_response(response: str) -> Tuple[bool, float, str]:
         Tuple of (is_duplicate, confidence, reason)
     """
     try:
-        # Extract JSON from response
         json_str = response
         if "```json" in response:
             json_str = response.split("```json")[1].split("```")[0]
         elif "```" in response:
             json_str = response.split("```")[1].split("```")[0]
 
-        # Parse JSON
         parsed = json.loads(json_str)
 
         verdict = parsed.get("verdict", "different")

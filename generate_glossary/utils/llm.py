@@ -462,8 +462,9 @@ async def structured_completion_consensus(
     successful_responses = len(responses)
     if successful_responses < required_minimum:
         # Format errors nicely for debugging
-        error_details = "\n".join([f"  - Model {i}: {err_type}: {err_msg}" 
-                                   for i, err_type, err_msg in errors])
+        error_details = "\n".join(
+            [f"  - Model {i}: {err_type}: {err_msg}" for i, err_type, err_msg in errors]
+        )
         raise RuntimeError(
             f"Insufficient successful responses: {successful_responses}/{num_responses} "
             f"(minimum {required_minimum} required).\nErrors:\n{error_details}"
