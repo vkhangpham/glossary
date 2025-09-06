@@ -7,6 +7,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025-09-05] - Prompt Optimization Module and Documentation
+
+### Added
+- **Prompt Optimization Module** (`prompt_optimization/`):
+  - GEPA-based prompt optimization using DSPy 3.0.3+
+  - CLI interface with `uv run optimize-prompt` command
+  - Support for light/medium/heavy optimization modes
+  - Batch training matching production usage (configurable 5-20)
+  - Level 0 Step 1 optimizer with 21% improvement in concept extraction
+  - Template for creating new optimizers
+  - Comprehensive troubleshooting guide
+
+- **API Documentation**:
+  - Complete API reference for prompt optimization module
+  - Detailed module documentation for generation package
+  - Function signatures, parameters, and usage examples
+  - Integration patterns with existing pipeline
+
+### Changed
+- **Enhanced `lv0_s1_extract_concepts.py`**:
+  - Added automatic loading of optimized prompts
+  - Integrated with `load_prompt_from_file()` utility
+  - Support for DSPy format extraction
+
+- **Updated `generate_glossary.utils.llm`**:
+  - `load_prompt_from_file()` now handles DSPy signature extraction
+  - Automatic parsing of complex DSPy prompt formats
+
+### Fixed
+- **SQLite Cache Issues**: Disabled problematic disk cache in DSPy
+- **GPT-5 Model Requirements**: Added special handling for temperature=1.0, max_tokens=16000
+- **Training/Production Mismatch**: Aligned batch sizes between optimization and production
+
+### Performance
+- **Optimization Results**: 21% improvement in concept extraction (69 vs 57 concepts)
+- **Better Coverage**: Captured 13 additional valid academic fields
+- **High Precision**: Only 1 concept missed from previous version
+
+### Documentation
+- Created `prompt_optimization/API_REFERENCE.md` with complete module documentation
+- Enhanced `generate_glossary/generation/README.md` with detailed module references
+- Added usage examples, best practices, and error handling guides
+
 ## [2025-09-04] - Prompt Management System with GEPA Optimization
 
 ### Added

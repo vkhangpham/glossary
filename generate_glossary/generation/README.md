@@ -1,6 +1,6 @@
 # Academic Concept Generation
 
-This package provides tools for generating and extracting academic concepts across multiple hierarchy levels, from broad academic domains to specialized conference topics.
+This package provides tools for generating and extracting academic concepts across multiple hierarchy levels, from broad academic domains to specialized conference topics. The pipeline uses advanced LLM consensus mechanisms and supports prompt optimization through GEPA (Genetic-Pareto Evolutionary Algorithm).
 
 ## Overview
 
@@ -287,16 +287,230 @@ See the main [README.md](../../README.md) for details on the complete process.
 - HTML parsing libraries (BeautifulSoup, etc.)
 - Dotenv for environment configuration
 
+## Module API Reference
+
+### Level 0 Modules
+
+#### `lv0_s0_get_college_names.py`
+Extracts college/school names from faculty data files.
+
+**Key Components:**
+- `load_source_data()`: Loads faculty extraction report (Excel file)
+- `extract_college_names()`: Extracts unique college names from faculty data
+- Outputs to: `data/generation/lv0/lv0_s0_output.txt`
+
+#### `lv0_s1_extract_concepts.py`
+Extracts academic concepts from college/school names using LLM consensus.
+
+**Key Components:**
+- `ConceptExtraction`: Pydantic model for concept extraction
+- `extract_concepts_with_consensus()`: Uses parallel LLM calls for consensus
+- `process_source_chunk()`: Processes batches of sources
+- **Prompt Optimization Support**: Automatically loads optimized prompts if available
+- **Configuration:**
+  - `BATCH_SIZE`: 20 institutions per LLM request
+  - `LLM_ATTEMPTS`: 3 consensus attempts
+  - `FREQUENCY_THRESHOLD`: 2 minimum occurrences
+  - `TEMPERATURE`: 1.0 for GPT-5 models
+
+#### `lv0_s2_filter_by_institution_freq.py`
+Filters concepts by frequency across institutions.
+
+**Key Components:**
+- Frequency-based filtering using configurable thresholds
+- Removes rare or spurious concepts
+- Outputs filtered concepts to next stage
+
+#### `lv0_s3_verify_single_token.py`
+Verifies single-word concepts are valid academic terms.
+
+**Key Components:**
+- LLM-based verification of single tokens
+- Multi-word concepts bypass verification
+- Final output: `data/generation/lv0/lv0_s3_output.txt`
+
+### Shared Modules
+
+#### `shared/checkpoint.py`
+Provides checkpoint and recovery functionality for long-running processes.
+
+**Functions:**
+- `process_with_checkpoint()`: Wrapper for processing with automatic checkpointing
+- `load_checkpoint()`: Loads previous checkpoint state
+- `save_checkpoint()`: Saves current processing state
+
+**Usage:**
+```python
+from generate_glossary.generation.shared import process_with_checkpoint
+
+results = process_with_checkpoint(
+    items=sources,
+    batch_size=100,
+    checkpoint_file="checkpoint.json",
+    process_batch_func=process_batch
+)
+```
+
+#### `shared/concept_extraction.py`
+Common concept extraction utilities shared across levels.
+
+**Functions:**
+- `normalize_concept()`: Normalizes academic concepts (lowercase, trim)
+- `split_compound_concepts()`: Handles "and", "&", "/" separators
+- `validate_concept()`: Basic validation rules
+
+#### `shared/frequency_filtering.py`
+Shared frequency filtering logic.
+
+**Functions:**
+- `filter_by_frequency()`: Filters concepts by occurrence count
+- `calculate_frequency_threshold()`: Dynamic threshold calculation
+
+#### `shared/token_verification.py`
+Single-token verification utilities.
+
+**Functions:**
+- `is_single_token()`: Checks if concept is single word
+- `verify_single_tokens()`: Batch verification using LLMs
+
+#### `shared/level_config.py`
+Configuration management for different hierarchy levels.
+
+**Classes:**
+- `LevelConfig`: Configuration dataclass for each level
+  - `level_number`: 0-3
+  - `batch_size`: Processing batch size
+  - `frequency_threshold`: Minimum frequency
+  - `llm_attempts`: Consensus attempts
+
+### Runner Modules
+
+#### `runners/lv1_runner.py`, `runners/lv2_runner.py`, `runners/lv3_runner.py`
+Orchestration scripts for running complete level pipelines.
+
+**Functions:**
+- `run_level()`: Executes all 4 steps for a level
+- `validate_prerequisites()`: Checks previous level completion
+- `generate_report()`: Creates summary report
+
+### Integration with LLM Utils
+
+The generation modules integrate with the centralized LLM utilities:
+
+#### `utils/llm.py` Integration
+
+**Key Functions Used:**
+- `structured_completion_consensus()`: Parallel LLM calls with consensus
+- `load_prompt_from_file()`: Loads optimized prompts (handles DSPy format)
+- `get_llm_provider()`: Returns configured LLM provider
+
+**Consensus Mechanism:**
+```python
+consensus = await structured_completion_consensus(
+    messages=messages,
+    response_model=ConceptExtractionList,
+    tier="budget",  # Uses tier-based model selection
+    num_responses=3,  # Multiple attempts
+    return_all=False,  # Return consensus only
+    temperature=1.0,
+    cache_ttl=3600  # 1-hour cache
+)
+```
+
+## Environment Configuration
+
+Required environment variables:
+
+```bash
+# LLM API Keys
+OPENAI_API_KEY=your-openai-key
+GEMINI_API_KEY=your-gemini-key
+
+# Optional: Override default models
+GLOSSARY_LLM_PROVIDER=openai  # or gemini, anthropic
+GLOSSARY_LLM_MODEL=gpt-4      # specific model
+
+# Web Search (if using Firecrawl)
+FIRECRAWL_API_KEY=fc-your-key
+USE_FIRECRAWL=true  # Enable Firecrawl SDK
+```
+
+## Testing Support
+
+All generation modules support test mode:
+
+```bash
+# Run in test mode (uses test data directory)
+uv run generate -l 0 -s 1 --test
+
+# Test mode features:
+# - Reads from data/generation/tests/
+# - Writes to data/generation/tests/
+# - Preserves production data
+# - Smaller datasets for quick iteration
+```
+
+## Performance Optimization
+
+### Parallel Processing
+- Multiple LLM calls executed in parallel for consensus
+- Batch processing with configurable chunk sizes
+- Asynchronous web requests for search operations
+
+### Caching Strategy
+- LLM responses cached for 1 hour (configurable)
+- Web content cached indefinitely
+- Checkpoint files for recovery from failures
+
+### Resource Management
+- `MAX_WORKERS`: Limits concurrent operations
+- `CHUNK_SIZE`: Controls memory usage
+- `BATCH_SIZE`: Optimizes LLM API calls
+
+## Error Handling
+
+### Checkpoint Recovery
+All long-running operations support checkpoint recovery:
+```python
+# Automatic recovery from last checkpoint
+checkpoint_file = Path(".checkpoints/lv0_s1_checkpoint.json")
+if checkpoint_file.exists():
+    logger.info("Resuming from checkpoint")
+```
+
+### LLM Error Handling
+- Network errors: Automatic retry with exponential backoff
+- API errors: Graceful degradation with logging
+- Validation errors: Continue with partial results
+
+### Data Validation
+- Input validation at each step
+- Output verification before proceeding
+- Metadata tracking for audit trail
+
 ## Best Practices
 
 1. **LLM Provider Selection**:
    - For critical steps, use more capable models (OpenAI)
    - For faster processing, use efficient models (Gemini)
+   - Use tier-based selection for automatic model choice
 
 2. **Web Search Configuration**:
    - Adjust search patterns based on level
    - Use domain-specific keywords for better results
+   - Enable Firecrawl for 4x faster extraction
 
 3. **Caching**:
    - All web content and search results are cached
-   - Use the cached results when possible to avoid redundant requests 
+   - Use the cached results when possible to avoid redundant requests
+   - Clear cache periodically for fresh data
+
+4. **Prompt Optimization**:
+   - Run optimization before production deployment
+   - Match training batch size to production usage
+   - Use appropriate models for task vs reflection
+
+5. **Monitoring**:
+   - Check metadata files for processing statistics
+   - Monitor checkpoint files for recovery points
+   - Review logs for error patterns 

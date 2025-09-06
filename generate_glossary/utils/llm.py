@@ -7,6 +7,7 @@ Features:
 - Async support for batch operations
 - Response validation
 - Centralized configuration
+- Automatic optimized prompt loading
 """
 
 import asyncio
@@ -14,6 +15,7 @@ import json
 import threading
 import random
 import os
+from pathlib import Path
 from typing import Optional, Type, Dict, List, Tuple, Union
 from collections import Counter
 
@@ -218,6 +220,52 @@ def get_model_info(model: str) -> Dict[str, str]:
             return info
 
     raise ValueError(f"Model {resolved_model} not found in any tier")
+
+
+def load_prompt_from_file(filepath: Union[str, Path]) -> Optional[str]:
+    """
+    Load a prompt from a JSON file.
+    
+    Simple utility to load saved prompts. The file should contain
+    a JSON object with a 'content' field. If the content is in DSPy format,
+    extracts the instructions from it.
+    
+    Args:
+        filepath: Path to the prompt JSON file
+        
+    Returns:
+        Prompt content if successful, None otherwise
+    """
+    try:
+        path = Path(filepath)
+        if path.exists():
+            with open(path) as f:
+                data = json.load(f)
+                content = data.get("content")
+                
+                if not content:
+                    return None
+                    
+                # Check if this is DSPy format (contains "instructions=")
+                if "instructions='" in content or 'instructions="' in content:
+                    # Extract instructions from DSPy format
+                    import re
+                    # Match instructions='...' handling escaped quotes and newlines
+                    match = re.search(r"instructions=['\"](.+?)['\"](?=\s*\n\s*\w+\s*=|$)", content, re.DOTALL)
+                    if match:
+                        instructions = match.group(1)
+                        # Unescape the content
+                        instructions = instructions.replace("\\'", "'")
+                        instructions = instructions.replace('\\"', '"')
+                        instructions = instructions.replace("\\n", "\n")
+                        return instructions
+                
+                # Return content as-is if not DSPy format
+                return content
+    except (json.JSONDecodeError, KeyError, IOError) as e:
+        logger.debug(f"Could not load prompt from {filepath}: {e}")
+    
+    return None
 
 
 def completion(

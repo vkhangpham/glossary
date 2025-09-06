@@ -9,13 +9,12 @@ from pydash import chunk
 
 
 from generate_glossary.utils.logger import setup_logger
-from generate_glossary.utils.llm import structured_completion_consensus
+from generate_glossary.utils.llm import structured_completion_consensus, load_prompt_from_file
 from generate_glossary.generation.shared import process_with_checkpoint
 
 load_dotenv()
 logger = setup_logger("lv0.s1")
 
-# Configuration constants - simple and direct
 LEVEL = 0
 BATCH_SIZE = 20
 CHUNK_SIZE = 100
@@ -25,14 +24,12 @@ FREQUENCY_THRESHOLD = 2  # Minimum frequency across sources to keep concept
 CACHE_TTL = 3600  # Cache consensus results for 1 hour
 TEMPERATURE = 1.0  # GPT-5 models only support temperature=1
 
-# File paths - explicit and clear
 DATA_DIR = Path("data/generation/lv0")
 INPUT_FILE = DATA_DIR / "lv0_s0_output.txt"  # Output from step 0
 OUTPUT_FILE = DATA_DIR / "lv0_s1_output.txt"  # Main output
 META_FILE = DATA_DIR / "lv0_s1_metadata.json"  # Metadata output
 CHECKPOINT_DIR = DATA_DIR / ".checkpoints"
 
-# Test mode paths
 TEST_DATA_DIR = Path("data/generation/tests")
 TEST_INPUT_FILE = TEST_DATA_DIR / "lv0_s0_output.txt"  # Read from test s0 output
 TEST_OUTPUT_FILE = TEST_DATA_DIR / "lv0_s1_output.txt"  # Write test output
@@ -51,11 +48,27 @@ class ConceptExtractionList(BaseModel):
     )
 
 
-# Import prompt registry
-from prompts import get_prompt
+# Default prompts - can be overridden by loading from file
+SYSTEM_PROMPT = """You are an expert at extracting academic concepts from institutional names.
+Extract the core academic disciplines and fields of study from the given college/school names.
+Focus on the academic subjects, not the institution type or location."""
 
-# Load prompts from centralized registry
-SYSTEM_PROMPT = get_prompt("extraction.level0_system")
+USER_TEMPLATE = """Extract academic concepts from these institutions:
+
+{sources}
+
+For each institution, identify the core academic fields and disciplines."""
+
+# Try to load optimized prompts if they exist
+optimized_system = load_prompt_from_file("data/prompts/lv0_s1_system_latest.json")
+if optimized_system:
+    SYSTEM_PROMPT = optimized_system
+    logger.info("Loaded optimized system prompt from file")
+
+optimized_user = load_prompt_from_file("data/prompts/lv0_s1_user_latest.json")
+if optimized_user:
+    USER_TEMPLATE = optimized_user
+    logger.info("Loaded optimized user prompt template from file")
 
 # Semantic validation prompt for quality assurance
 SEMANTIC_VALIDATION = """Verify that each extracted concept is:
@@ -68,9 +81,7 @@ SEMANTIC_VALIDATION = """Verify that each extracted concept is:
 def create_extraction_prompt(sources: List[str]) -> str:
     """Create LLM prompt for concept extraction from college names"""
     sources_str = "\n".join(f"- {source}" for source in sources)
-    
-    # Use prompt template from registry
-    return get_prompt("extraction.level0_user_template", sources=sources_str)
+    return USER_TEMPLATE.format(sources=sources_str)
 
 
 def extract_concepts_with_consensus(
@@ -83,7 +94,6 @@ def extract_concepts_with_consensus(
     """
     prompt = create_extraction_prompt(batch)
 
-    # Build messages
     messages = []
     if SYSTEM_PROMPT:
         messages.append({"role": "system", "content": SYSTEM_PROMPT})
@@ -139,16 +149,12 @@ def process_source_chunk(chunk_data: Tuple[List[str], int]) -> Dict[str, List[st
     source_concepts = {}
 
     for batch in chunk(sources, BATCH_SIZE):
-        # Get consensus extractions directly from the API
         consensus_extractions = extract_concepts_with_consensus(batch, num_attempts)
 
         if consensus_extractions:
-            # Convert to the expected format: Dict[source, list of concepts]
             for extraction in consensus_extractions:
                 source = extraction.source
-                # Use list instead of set for JSON serialization
                 concepts = [concept.lower() for concept in extraction.concepts]
-                # Remove duplicates while preserving order
                 concepts = list(dict.fromkeys(concepts))
                 source_concepts[source] = concepts
 
@@ -160,40 +166,32 @@ def load_unique_college_names(input_file: Path) -> List[str]:
     with open(input_file, "r", encoding="utf-8") as f:
         sources = [line.strip() for line in f.readlines()]
 
-    # Remove duplicates while preserving order
     seen = set()
     return [s for s in sources if not (s in seen or seen.add(s))]
 
-
-# Removed unused functions - logic is now integrated in main()
 
 
 def test():
     """Test mode: Read from test directory and save to test directory"""
     global INPUT_FILE, OUTPUT_FILE, META_FILE, CHECKPOINT_DIR
 
-    # Save original values
     original_input = INPUT_FILE
     original_output = OUTPUT_FILE
     original_meta = META_FILE
     original_checkpoint = CHECKPOINT_DIR
 
-    # Set test values
     INPUT_FILE = TEST_INPUT_FILE
     OUTPUT_FILE = TEST_OUTPUT_FILE
     META_FILE = TEST_META_FILE
     CHECKPOINT_DIR = TEST_CHECKPOINT_DIR
 
-    # Ensure test directory exists
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     logger.info("Running in TEST MODE")
 
     try:
-        # Run main with test settings
         main()
     finally:
-        # Restore original values
         INPUT_FILE = original_input
         OUTPUT_FILE = original_output
         META_FILE = original_meta
@@ -213,11 +211,8 @@ def main():
             f"Consensus attempts: {LLM_ATTEMPTS} (majority vote wins), Frequency threshold: {FREQUENCY_THRESHOLD}"
         )
 
-        # Read input
         sources = load_unique_college_names(input_file)
         logger.info(f"Read {len(sources)} unique sources")
-
-        # Process concepts with appropriate checkpoint
         checkpoint_file = checkpoint_dir / "lv0_s1_checkpoint.json"
         source_concepts = process_with_checkpoint(
             items=sources,
@@ -228,15 +223,12 @@ def main():
             ),
         )
 
-        # Count concept frequencies
         all_concepts = [
             concept.lower()
             for concepts in source_concepts.values()
             for concept in concepts
         ]
         concept_counts = Counter(all_concepts)
-
-        # Filter by frequency threshold
         verified_concepts = sorted(
             [
                 concept
@@ -246,16 +238,11 @@ def main():
         )
         logger.info(f"Extracted {len(verified_concepts)} verified concepts")
 
-        # Save all results with appropriate paths
         output_file.parent.mkdir(parents=True, exist_ok=True)
-
-        # Save concept list (main output)
         with open(output_file, "w", encoding="utf-8") as f:
             for concept in verified_concepts:
                 f.write(f"{concept}\n")
         logger.info(f"Saved {len(verified_concepts)} concepts to {output_file}")
-
-        # Save metadata
         with open(meta_file, "w", encoding="utf-8") as f:
             json.dump(
                 {

@@ -192,7 +192,10 @@ register_prompt(
     variables=["term"]
 )
 
-# Run prompt optimization experiments (requires OpenAI API key)
+# Optimize prompts using GEPA (Genetic-Pareto Evolutionary Algorithm)
+uv run optimize-prompt --prompt lv0_s1 --auto medium --batch-size 5
+
+# Test prompt optimization setup
 python test_prompt_optimization.py
 ```
 
@@ -201,8 +204,11 @@ The prompt system provides:
 - **SHA256 Versioning**: Automatic version tracking on prompt changes
 - **Template Variables**: Support for `{variable}` substitution
 - **Pure Functional API**: No OOP, follows project patterns
-- **GEPA Optimization**: Evolutionary optimization for better prompts
+- **GEPA Optimization**: Evolutionary optimization for better prompts via DSPy 3.0+
 - **Performance**: <0.1ms prompt loading with LRU caching
+- **Batch Training**: Matches production usage (batches of 20 institutions)
+
+See `prompt_optimization/README.md` for detailed usage and `prompt_optimization/TROUBLESHOOTING.md` for common issues.
 
 ### Running the Full Pipeline
 
