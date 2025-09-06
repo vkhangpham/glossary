@@ -390,7 +390,7 @@
       "Stanford - Neurobiology",
       "UC San Diego - Neurobiology"
     ],
-    "expected": false
+    "expected": true
   },
   {
     "keyword": "biostatistics",
@@ -697,5 +697,159 @@
       "Delft University of Technology"
     ],
     "expected": true
+  },
+  {
+    "keyword": "informatics",
+    "evidence_colleges": [
+      "Indiana University School of Informatics",
+      "UC Irvine Donald Bren School of Information",
+      "University of Washington Information School",
+      "University of Edinburgh School of Informatics",
+      "Technical University of Munich Informatics",
+      "National University of Singapore School of Computing"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "sustainability",
+    "evidence_colleges": [
+      "Arizona State School of Sustainability",
+      "Columbia Climate School",
+      "Stanford Doerr School of Sustainability",
+      "University of Tokyo Institute for Future Initiatives",
+      "ETH Zurich Environmental Systems Science",
+      "Lund University Centre for Sustainability Studies"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "policy",
+    "evidence_colleges": [
+      "Harvard Kennedy School",
+      "Princeton School of Public and International Affairs",
+      "Georgetown McCourt School of Public Policy",
+      "London School of Economics Public Policy",
+      "Lee Kuan Yew School of Public Policy Singapore",
+      "Australian National University Crawford School"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "topology",
+    "evidence_colleges": [
+      "MIT Topology Seminar",
+      "Princeton Algebraic Topology Group",
+      "University of Chicago Topology",
+      "Oxford Topology Research Group"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "geophysics",
+    "evidence_colleges": [
+      "Stanford Geophysics Department",
+      "MIT Earth Resources Laboratory",
+      "Colorado School of Mines Geophysics",
+      "University of Tokyo Earthquake Research Institute"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "enzymology",
+    "evidence_colleges": [
+      "Harvard Enzyme Chemistry Lab",
+      "Stanford Biochemistry - Enzymology",
+      "Max Planck Institute for Biophysical Chemistry",
+      "Cambridge Department of Biochemistry"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "econometrics",
+    "evidence_colleges": [
+      "MIT Econometrics Laboratory",
+      "Chicago Booth Econometrics",
+      "LSE Econometrics Programme",
+      "Yale Cowles Foundation"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "phonetics",
+    "evidence_colleges": [
+      "MIT Phonetics Laboratory",
+      "UCLA Phonetics Lab",
+      "University of Edinburgh Phonetics",
+      "University College London Speech Sciences"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "biology",
+    "evidence_colleges": [
+      "Santa Monica College Life Sciences",
+      "Northern Virginia Community College Biology",
+      "Miami Dade College Biology Department",
+      "Williams College Biology",
+      "Swarthmore Biology Department",
+      "Amherst College Biology"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "english",
+    "evidence_colleges": [
+      "Community College of Philadelphia English",
+      "Austin Community College English Department",
+      "Oberlin College English",
+      "Pomona College English Department",
+      "Wellesley English Department",
+      "Davidson College English"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "theater",
+    "evidence_colleges": [
+      "Juilliard Drama Division",
+      "Yale School of Drama",
+      "NYU Tisch School of the Arts",
+      "Royal Academy of Dramatic Art London",
+      "Moscow Art Theatre School",
+      "National Institute of Dramatic Art Sydney"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "dance",
+    "evidence_colleges": [
+      "Juilliard Dance Division",
+      "NYU Tisch Dance",
+      "Royal Ballet School",
+      "Paris Opera Ballet School",
+      "Vaganova Academy",
+      "Beijing Dance Academy"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "endocrinology",
+    "evidence_colleges": [
+      "Mayo Clinic Endocrinology",
+      "Johns Hopkins Endocrinology",
+      "Harvard Medical School Endocrine Unit",
+      "UCSF Diabetes and Endocrinology"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "spectroscopy",
+    "evidence_colleges": [
+      "MIT Spectroscopy Laboratory",
+      "Stanford Magnetic Resonance Laboratory",
+      "ETH NMR Spectroscopy",
+      "Max Planck Institute for Chemical Physics"
+    ],
+    "expected": false
   }
 ]
