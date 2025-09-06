@@ -286,9 +286,11 @@
       "Yale University - Economics",
       "University of Chicago - Economics, Kenneth C. Griffin Department of",
       "MIT Department of Economics",
-      "Harvard Department of Economics"
+      "Harvard Department of Economics",
+      "London School of Economics",
+      "UC Berkeley Department of Economics"
     ],
-    "expected": false
+    "expected": true
   },
   {
     "keyword": "genetics",
@@ -417,5 +419,283 @@
       "Slavic Languages and Literatures"
     ],
     "expected": false
+  },
+  {
+    "keyword": "computing",
+    "evidence_colleges": [
+      "MIT Computer Science and Artificial Intelligence Laboratory",
+      "Stanford Department of Computer Science",
+      "Carnegie Mellon School of Computer Science",
+      "UC Berkeley EECS",
+      "University of Illinois Computer Science",
+      "Georgia Tech College of Computing"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "geography",
+    "evidence_colleges": [
+      "UCLA Department of Geography",
+      "UC Berkeley Department of Geography",
+      "University of Wisconsin-Madison Geography",
+      "Penn State Department of Geography",
+      "University of British Columbia Geography",
+      "National University of Singapore Geography"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "education",
+    "evidence_colleges": [
+      "Harvard Graduate School of Education",
+      "Stanford Graduate School of Education",
+      "Teachers College, Columbia University",
+      "UC Berkeley School of Education",
+      "University of Michigan School of Education",
+      "Vanderbilt Peabody College of Education"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "architecture",
+    "evidence_colleges": [
+      "MIT Department of Architecture",
+      "Harvard Graduate School of Design",
+      "Yale School of Architecture",
+      "UC Berkeley College of Environmental Design",
+      "Cornell Architecture",
+      "Rice School of Architecture"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "agriculture",
+    "evidence_colleges": [
+      "UC Davis College of Agricultural Sciences",
+      "Cornell College of Agriculture and Life Sciences",
+      "Iowa State College of Agriculture",
+      "Texas A&M College of Agriculture",
+      "Purdue College of Agriculture",
+      "University of Illinois College of ACES"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "art",
+    "evidence_colleges": [
+      "Rhode Island School of Design",
+      "School of the Art Institute of Chicago",
+      "Parsons School of Design",
+      "California Institute of the Arts",
+      "Pratt Institute",
+      "Maryland Institute College of Art"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "cardiology",
+    "evidence_colleges": [
+      "Mayo Clinic Cardiovascular Medicine",
+      "Cleveland Clinic Heart Institute",
+      "Johns Hopkins Cardiology",
+      "Mount Sinai Cardiology"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "immunology",
+    "evidence_colleges": [
+      "Harvard Immunology Program",
+      "Stanford Immunology",
+      "Yale Immunobiology",
+      "UCSF Immunology"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "dermatology",
+    "evidence_colleges": [
+      "Harvard Dermatology",
+      "Mayo Clinic Dermatology",
+      "UCSF Dermatology",
+      "NYU Dermatology"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "paleontology",
+    "evidence_colleges": [
+      "UC Berkeley Museum of Paleontology",
+      "Yale Peabody Museum",
+      "University of Chicago Paleontology",
+      "University of Michigan Paleontology"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "criminology",
+    "evidence_colleges": [
+      "University of Maryland Criminology",
+      "University of Cincinnati Criminal Justice",
+      "Florida State Criminology",
+      "Penn State Criminology"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "nursing",
+    "evidence_colleges": [
+      "Johns Hopkins School of Nursing",
+      "University of Pennsylvania School of Nursing",
+      "Duke University School of Nursing",
+      "UCSF School of Nursing",
+      "University of Washington School of Nursing",
+      "Karolinska Institute Department of Nursing"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "journalism",
+    "evidence_colleges": [
+      "Columbia Journalism School",
+      "Northwestern Medill School of Journalism",
+      "University of Missouri School of Journalism",
+      "Arizona State Walter Cronkite School",
+      "City University London Journalism",
+      "Sciences Po Paris School of Journalism"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "dentistry",
+    "evidence_colleges": [
+      "Harvard School of Dental Medicine",
+      "UCLA School of Dentistry",
+      "University of Michigan School of Dentistry",
+      "Kings College London Dental Institute",
+      "Tokyo Medical and Dental University",
+      "University of S\u00e3o Paulo School of Dentistry"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "pharmacy",
+    "evidence_colleges": [
+      "UCSF School of Pharmacy",
+      "University of North Carolina Eshelman School of Pharmacy",
+      "University of Michigan College of Pharmacy",
+      "UCL School of Pharmacy",
+      "University of Toronto Faculty of Pharmacy",
+      "Monash University Faculty of Pharmacy"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "theology",
+    "evidence_colleges": [
+      "Harvard Divinity School",
+      "Yale Divinity School",
+      "Duke Divinity School",
+      "Oxford Faculty of Theology",
+      "University of T\u00fcbingen Faculty of Catholic Theology",
+      "Hebrew University Faculty of Humanities - Theology"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "forestry",
+    "evidence_colleges": [
+      "Yale School of Forestry & Environmental Studies",
+      "Oregon State College of Forestry",
+      "University of British Columbia Faculty of Forestry",
+      "Swedish University of Agricultural Sciences - Forest Sciences",
+      "University of Helsinki Department of Forest Sciences",
+      "Australian National University Fenner School - Forestry"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "orthodontics",
+    "evidence_colleges": [
+      "Harvard Orthodontics Program",
+      "UCLA Orthodontics Residency",
+      "University of Pennsylvania Orthodontics",
+      "Kings College London Orthodontics"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "hematology",
+    "evidence_colleges": [
+      "Harvard Hematology Division",
+      "Johns Hopkins Hematology",
+      "Mayo Clinic Hematology",
+      "MD Anderson Hematology"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "virology",
+    "evidence_colleges": [
+      "Harvard Virology Program",
+      "Yale Virology Section",
+      "Institut Pasteur Virology",
+      "CDC Division of Viral Diseases"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "acoustics",
+    "evidence_colleges": [
+      "MIT Acoustics Lab",
+      "Penn State Graduate Program in Acoustics",
+      "Technical University of Denmark Acoustic Technology",
+      "University of Salford Acoustics Research Centre"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "photonics",
+    "evidence_colleges": [
+      "MIT Photonics Center",
+      "University of Rochester Institute of Optics",
+      "EPFL Photonics Laboratory",
+      "University of Southampton Optoelectronics Research Centre"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "robotics",
+    "evidence_colleges": [
+      "MIT CSAIL Robotics",
+      "Carnegie Mellon Robotics Institute",
+      "Stanford Artificial Intelligence Laboratory",
+      "ETH Zurich Autonomous Systems Lab"
+    ],
+    "expected": false
+  },
+  {
+    "keyword": "sciences",
+    "evidence_colleges": [
+      "Indian Institute of Science",
+      "Chinese Academy of Sciences",
+      "Max Planck Institutes",
+      "Australian Academy of Science",
+      "Royal Society London",
+      "National Academy of Sciences USA"
+    ],
+    "expected": true
+  },
+  {
+    "keyword": "technology",
+    "evidence_colleges": [
+      "Indian Institutes of Technology",
+      "Technische Universit\u00e4t M\u00fcnchen",
+      "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+      "Korea Advanced Institute of Science and Technology",
+      "Nanyang Technological University",
+      "Delft University of Technology"
+    ],
+    "expected": true
   }
 ]
