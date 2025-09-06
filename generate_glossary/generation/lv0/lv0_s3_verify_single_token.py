@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 from generate_glossary.utils.logger import setup_logger
-from generate_glossary.utils.llm import structured_completion_consensus
+from generate_glossary.utils.llm import structured_completion_consensus, load_prompt_from_file
 from generate_glossary.deduplication.utils import normalize_text
 from generate_glossary.generation.shared import process_with_checkpoint
 
@@ -44,6 +44,7 @@ class VerificationResult(BaseModel):
     )
 
 
+# Default prompts - can be overridden by loading from file
 SYSTEM_PROMPT = """You are an expert in academic research classification with a deep understanding of research domains, 
 academic departments, scientific disciplines, and specialized fields of study.
 
@@ -66,16 +67,10 @@ DO NOT accept:
 - Informal or colloquial terms (e.g., stuff, thing)
 - General English words without specific academic meaning"""
 
-
-def create_verification_prompt(keyword: str, colleges: List[str]) -> str:
-    """Create prompt for single keyword verification"""
-    example_colleges = colleges[:MAX_EXAMPLES]
-    colleges_str = "\n".join(f"- {college}" for college in example_colleges)
-
-    return f"""Analyze whether "{keyword}" is a valid broad academic discipline.
+USER_TEMPLATE = """Analyze whether "{keyword}" is a valid broad academic discipline.
 
 Evidence - Colleges/schools/divisions that mention this concept:
-{colleges_str}
+{evidence_colleges}
 
 Consider:
 1. Is it a recognized major field of study or broad academic discipline?
@@ -83,6 +78,26 @@ Consider:
 3. Is it broad enough to encompass multiple research areas or subdisciplines?
 
 Answer with true if it meets these criteria, false otherwise."""
+
+# Try to load optimized prompts if they exist
+optimized_system = load_prompt_from_file("data/prompts/lv0_s3_system_latest.json")
+if optimized_system:
+    SYSTEM_PROMPT = optimized_system
+    logger.info("Loaded optimized system prompt from file")
+
+optimized_user = load_prompt_from_file("data/prompts/lv0_s3_user_latest.json")
+if optimized_user:
+    USER_TEMPLATE = optimized_user
+    logger.info("Loaded optimized user prompt template from file")
+
+
+def create_verification_prompt(keyword: str, colleges: List[str]) -> str:
+    """Create prompt for single keyword verification"""
+    example_colleges = colleges[:MAX_EXAMPLES]
+    evidence_colleges = "\n".join(f"- {college}" for college in example_colleges)
+    
+    # Use the template with proper substitution
+    return USER_TEMPLATE.format(keyword=keyword, evidence_colleges=evidence_colleges)
 
 
 def verify_keyword_with_consensus(
