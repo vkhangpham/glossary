@@ -1,203 +1,314 @@
 [
   {
     "input": "College of Engineering",
-    "expected": ["engineering"]
+    "expected": [
+      "engineering"
+    ]
   },
   {
     "input": "School of Medicine",
-    "expected": ["medicine"]
+    "expected": [
+      "medicine"
+    ]
   },
   {
     "input": "School of Art",
-    "expected": ["art"]
+    "expected": [
+      "art"
+    ]
   },
   {
     "input": "College of Arts and Sciences",
-    "expected": ["arts", "sciences"]
+    "expected": [
+      "arts",
+      "sciences"
+    ]
   },
   {
     "input": "School of Business",
-    "expected": ["business"]
+    "expected": [
+      "business"
+    ]
   },
   {
     "input": "School of Law",
-    "expected": ["law"]
+    "expected": [
+      "law"
+    ]
   },
   {
     "input": "Department of Computer Science",
-    "expected": ["computer science"]
+    "expected": [
+      "computer science"
+    ]
   },
   {
     "input": "College of Liberal Arts",
-    "expected": ["liberal arts"]
+    "expected": [
+      "liberal arts"
+    ]
   },
   {
     "input": "School of Public Policy",
-    "expected": ["public policy"]
+    "expected": [
+      "public policy"
+    ]
   },
   {
     "input": "Department of Electrical and Computer Engineering",
-    "expected": ["electrical engineering", "computer engineering"]
+    "expected": [
+      "electrical engineering",
+      "computer engineering"
+    ]
   },
   {
     "input": "School of Journalism and Communication",
-    "expected": ["journalism", "communication"]
+    "expected": [
+      "journalism",
+      "communication"
+    ]
   },
   {
     "input": "College of Natural Sciences",
-    "expected": ["natural sciences"]
+    "expected": [
+      "natural sciences"
+    ]
   },
   {
     "input": "School of Social Sciences",
-    "expected": ["social sciences"]
+    "expected": [
+      "social sciences"
+    ]
   },
   {
     "input": "Department of Physics and Astronomy",
-    "expected": ["physics", "astronomy"]
+    "expected": [
+      "physics",
+      "astronomy"
+    ]
   },
   {
     "input": "School of Environmental Science and Policy",
-    "expected": ["environmental science", "environmental policy"]
+    "expected": [
+      "environmental science",
+      "environmental policy"
+    ]
   },
   {
     "input": "College of Agriculture and Life Sciences",
-    "expected": ["agriculture", "life sciences"]
+    "expected": [
+      "agriculture",
+      "life sciences"
+    ]
   },
   {
     "input": "School of Nursing",
-    "expected": ["nursing"]
+    "expected": [
+      "nursing"
+    ]
   },
   {
     "input": "Department of Mathematics",
-    "expected": ["mathematics"]
+    "expected": [
+      "mathematics"
+    ]
   },
   {
     "input": "School of Education",
-    "expected": ["education"]
+    "expected": [
+      "education"
+    ]
   },
   {
     "input": "College of Pharmacy",
-    "expected": ["pharmacy"]
+    "expected": [
+      "pharmacy"
+    ]
   },
   {
     "input": "Department of Chemistry",
-    "expected": ["chemistry"]
+    "expected": [
+      "chemistry"
+    ]
   },
   {
     "input": "School of Architecture",
-    "expected": ["architecture"]
+    "expected": [
+      "architecture"
+    ]
   },
   {
     "input": "Department of Biology",
-    "expected": ["biology"]
+    "expected": [
+      "biology"
+    ]
   },
   {
     "input": "School of Music",
-    "expected": ["music"]
+    "expected": [
+      "music"
+    ]
   },
   {
     "input": "Department of History",
-    "expected": ["history"]
+    "expected": [
+      "history"
+    ]
   },
   {
     "input": "School of Global Policy and Strategy",
-    "expected": ["global policy", "strategy"]
+    "expected": [
+      "global policy",
+      "strategy"
+    ]
   },
   {
     "input": "Department of Civil and Environmental Engineering",
-    "expected": ["civil engineering", "environmental engineering"]
+    "expected": [
+      "civil engineering",
+      "environmental engineering"
+    ]
   },
   {
     "input": "College of Humanities",
-    "expected": ["humanities"]
+    "expected": [
+      "humanities"
+    ]
   },
   {
     "input": "School of International Affairs",
-    "expected": ["international affairs"]
+    "expected": [
+      "international affairs"
+    ]
   },
   {
     "input": "Department of Psychology",
-    "expected": ["psychology"]
+    "expected": [
+      "psychology"
+    ]
   },
   {
     "input": "School of Business Administration",
-    "expected": ["business administration"]
+    "expected": [
+      "business administration"
+    ]
   },
   {
     "input": "Department of Mechanical Engineering",
-    "expected": ["mechanical engineering"]
+    "expected": [
+      "mechanical engineering"
+    ]
   },
   {
     "input": "College of Fine Arts",
-    "expected": ["fine arts"]
+    "expected": [
+      "fine arts"
+    ]
   },
   {
     "input": "Department of Economics",
-    "expected": ["economics"]
+    "expected": [
+      "economics"
+    ]
   },
   {
     "input": "School of Dental Medicine",
-    "expected": ["dental medicine"]
+    "expected": [
+      "dental medicine"
+    ]
   },
   {
     "input": "Department of Sociology",
-    "expected": ["sociology"]
+    "expected": [
+      "sociology"
+    ]
   },
   {
     "input": "School of Veterinary Medicine",
-    "expected": ["veterinary medicine"]
+    "expected": [
+      "veterinary medicine"
+    ]
   },
   {
     "input": "Department of Philosophy",
-    "expected": ["philosophy"]
+    "expected": [
+      "philosophy"
+    ]
   },
   {
     "input": "College of Natural Resources and Environment",
-    "expected": ["natural resources", "environment"]
+    "expected": [
+      "natural resources",
+      "environment"
+    ]
   },
   {
     "input": "School of Information",
-    "expected": ["information"]
+    "expected": [
+      "information"
+    ]
   },
   {
     "input": "Department of Anthropology",
-    "expected": ["anthropology"]
+    "expected": [
+      "anthropology"
+    ]
   },
   {
     "input": "School of Public Health",
-    "expected": ["public health"]
+    "expected": [
+      "public health"
+    ]
   },
   {
     "input": "Department of Political Science",
-    "expected": ["political science"]
+    "expected": [
+      "political science"
+    ]
   },
   {
     "input": "School of Urban Planning",
-    "expected": ["urban planning"]
+    "expected": [
+      "urban planning"
+    ]
   },
   {
     "input": "Department of Linguistics",
-    "expected": ["linguistics"]
+    "expected": [
+      "linguistics"
+    ]
   },
   {
     "input": "College of Earth and Mineral Sciences",
-    "expected": ["earth sciences", "mineral sciences"]
+    "expected": [
+      "earth sciences",
+      "mineral sciences"
+    ]
   },
   {
     "input": "School of Theatre and Dance",
-    "expected": ["theatre", "dance"]
+    "expected": [
+      "theatre",
+      "dance"
+    ]
   },
   {
     "input": "Department of Biomedical Engineering",
-    "expected": ["biomedical engineering"]
+    "expected": [
+      "biomedical engineering"
+    ]
   },
   {
     "input": "School of Aerospace Engineering",
-    "expected": ["aerospace engineering"]
+    "expected": [
+      "aerospace engineering"
+    ]
   },
   {
     "input": "Department of Statistics",
-    "expected": ["statistics"]
+    "expected": [
+      "statistics"
+    ]
   },
   {
     "input": "Graduate School",
@@ -237,243 +348,367 @@
   },
   {
     "input": "Gerald R. Ford School of Public Policy",
-    "expected": ["public policy"]
+    "expected": [
+      "public policy"
+    ]
   },
   {
     "input": "Stephen M. Ross School of Business",
-    "expected": ["business"]
+    "expected": [
+      "business"
+    ]
   },
   {
     "input": "Taubman College of Architecture and Urban Planning",
-    "expected": ["architecture", "urban planning"]
+    "expected": [
+      "architecture",
+      "urban planning"
+    ]
   },
   {
     "input": "School of Materials Science and Engineering",
-    "expected": ["materials science", "materials engineering"]
+    "expected": [
+      "materials science",
+      "materials engineering"
+    ]
   },
   {
     "input": "Department of History and Philosophy of Science",
-    "expected": ["history of science", "philosophy of science"]
+    "expected": [
+      "history of science",
+      "philosophy of science"
+    ]
   },
   {
     "input": "College of Science",
-    "expected": ["science"]
+    "expected": [
+      "science"
+    ]
   },
   {
     "input": "School of Chemical Engineering",
-    "expected": ["chemical engineering"]
+    "expected": [
+      "chemical engineering"
+    ]
   },
   {
     "input": "Department of English",
-    "expected": ["english"]
+    "expected": [
+      "english"
+    ]
   },
   {
     "input": "School of Kinesiology",
-    "expected": ["kinesiology"]
+    "expected": [
+      "kinesiology"
+    ]
   },
   {
     "input": "Department of Geography",
-    "expected": ["geography"]
+    "expected": [
+      "geography"
+    ]
   },
   {
     "input": "School of Social Work",
-    "expected": ["social work"]
+    "expected": [
+      "social work"
+    ]
   },
   {
     "input": "Department of Art History",
-    "expected": ["art history"]
+    "expected": [
+      "art history"
+    ]
   },
   {
     "input": "School of Film and Television",
-    "expected": ["film", "television"]
+    "expected": [
+      "film",
+      "television"
+    ]
   },
   {
     "input": "Department of Classics",
-    "expected": ["classics"]
+    "expected": [
+      "classics"
+    ]
   },
   {
     "input": "School of Library and Information Science",
-    "expected": ["library science", "information science"]
+    "expected": [
+      "library science",
+      "information science"
+    ]
   },
   {
     "input": "Department of Religious Studies",
-    "expected": ["religious studies"]
+    "expected": [
+      "religious studies"
+    ]
   },
   {
     "input": "School of Earth Sciences",
-    "expected": ["earth sciences"]
+    "expected": [
+      "earth sciences"
+    ]
   },
   {
     "input": "Department of Gender Studies",
-    "expected": ["gender studies"]
+    "expected": [
+      "gender studies"
+    ]
   },
   {
     "input": "School of Marine Science",
-    "expected": ["marine science"]
+    "expected": [
+      "marine science"
+    ]
   },
   {
     "input": "Department of African American Studies",
-    "expected": ["african american studies"]
+    "expected": [
+      "african american studies"
+    ]
   },
   {
     "input": "School of Optometry",
-    "expected": ["optometry"]
+    "expected": [
+      "optometry"
+    ]
   },
   {
     "input": "Department of Asian Studies",
-    "expected": ["asian studies"]
+    "expected": [
+      "asian studies"
+    ]
   },
   {
     "input": "School of Forestry",
-    "expected": ["forestry"]
+    "expected": [
+      "forestry"
+    ]
   },
   {
     "input": "Department of Near Eastern Studies",
-    "expected": ["near eastern studies"]
+    "expected": [
+      "near eastern studies"
+    ]
   },
   {
     "input": "School of Industrial Engineering",
-    "expected": ["industrial engineering"]
+    "expected": [
+      "industrial engineering"
+    ]
   },
   {
     "input": "Department of Neuroscience",
-    "expected": ["neuroscience"]
+    "expected": [
+      "neuroscience"
+    ]
   },
   {
     "input": "School of Atmospheric Sciences",
-    "expected": ["atmospheric sciences"]
+    "expected": [
+      "atmospheric sciences"
+    ]
   },
   {
     "input": "Department of Musicology",
-    "expected": ["musicology"]
+    "expected": [
+      "musicology"
+    ]
   },
   {
     "input": "School of Nuclear Engineering",
-    "expected": ["nuclear engineering"]
+    "expected": [
+      "nuclear engineering"
+    ]
   },
   {
     "input": "Department of Latin American Studies",
-    "expected": ["latin american studies"]
+    "expected": [
+      "latin american studies"
+    ]
   },
   {
     "input": "School of Applied Mathematics",
-    "expected": ["applied mathematics"]
+    "expected": [
+      "applied mathematics"
+    ]
   },
   {
     "input": "Department of Slavic Studies",
-    "expected": ["slavic studies"]
+    "expected": [
+      "slavic studies"
+    ]
   },
   {
     "input": "School of Computational Science",
-    "expected": ["computational science"]
+    "expected": [
+      "computational science"
+    ]
   },
   {
     "input": "Department of Medieval Studies",
-    "expected": ["medieval studies"]
+    "expected": [
+      "medieval studies"
+    ]
   },
   {
     "input": "School of Environmental Engineering",
-    "expected": ["environmental engineering"]
+    "expected": [
+      "environmental engineering"
+    ]
   },
   {
     "input": "Department of Comparative Literature",
-    "expected": ["comparative literature"]
+    "expected": [
+      "comparative literature"
+    ]
   },
   {
     "input": "School of Operations Research",
-    "expected": ["operations research"]
+    "expected": [
+      "operations research"
+    ]
   },
   {
     "input": "Department of Cognitive Science",
-    "expected": ["cognitive science"]
+    "expected": [
+      "cognitive science"
+    ]
   },
   {
     "input": "School of Systems Engineering",
-    "expected": ["systems engineering"]
+    "expected": [
+      "systems engineering"
+    ]
   },
   {
     "input": "Department of European Studies",
-    "expected": ["european studies"]
+    "expected": [
+      "european studies"
+    ]
   },
   {
     "input": "School of Management",
-    "expected": ["management"]
+    "expected": [
+      "management"
+    ]
   },
   {
     "input": "Department of American Studies",
-    "expected": ["american studies"]
+    "expected": [
+      "american studies"
+    ]
   },
   {
     "input": "School of Petroleum Engineering",
-    "expected": ["petroleum engineering"]
+    "expected": [
+      "petroleum engineering"
+    ]
   },
   {
     "input": "Department of French and Italian",
-    "expected": ["french", "italian"]
+    "expected": [
+      "french",
+      "italian"
+    ]
   },
   {
     "input": "School of Occupational Therapy",
-    "expected": ["occupational therapy"]
-  },
-  {
-    "input": "Department of Germanic Languages and Literatures",
-    "expected": ["germanic languages", "germanic literatures"]
+    "expected": [
+      "occupational therapy"
+    ]
   },
   {
     "input": "School of Physical Therapy",
-    "expected": ["physical therapy"]
+    "expected": [
+      "physical therapy"
+    ]
   },
   {
     "input": "Department of Spanish and Portuguese",
-    "expected": ["spanish", "portuguese"]
+    "expected": [
+      "spanish",
+      "portuguese"
+    ]
   },
   {
     "input": "School of Geological Sciences",
-    "expected": ["geological sciences"]
+    "expected": [
+      "geological sciences"
+    ]
   },
   {
     "input": "Department of Russian and East European Studies",
-    "expected": ["russian studies", "east european studies"]
+    "expected": [
+      "russian studies",
+      "east european studies"
+    ]
   },
   {
     "input": "School of Mining Engineering",
-    "expected": ["mining engineering"]
+    "expected": [
+      "mining engineering"
+    ]
   },
   {
     "input": "Department of Celtic Languages and Literatures",
-    "expected": ["celtic languages", "celtic literatures"]
+    "expected": [
+      "celtic languages",
+      "celtic literatures"
+    ]
   },
   {
     "input": "School of Biomedicine",
-    "expected": ["biomedicine"]
+    "expected": [
+      "biomedicine"
+    ]
   },
   {
     "input": "Department of Scandinavian Studies",
-    "expected": ["scandinavian studies"]
+    "expected": [
+      "scandinavian studies"
+    ]
   },
   {
     "input": "School of Agricultural Engineering",
-    "expected": ["agricultural engineering"]
+    "expected": [
+      "agricultural engineering"
+    ]
   },
   {
     "input": "Department of Indigenous Studies",
-    "expected": ["indigenous studies"]
+    "expected": [
+      "indigenous studies"
+    ]
   },
   {
     "input": "School of Podiatric Medicine",
-    "expected": ["podiatric medicine"]
+    "expected": [
+      "podiatric medicine"
+    ]
   },
   {
     "input": "Department of Jewish Studies",
-    "expected": ["jewish studies"]
+    "expected": [
+      "jewish studies"
+    ]
   },
   {
     "input": "School of Speech Pathology and Audiology",
-    "expected": ["speech pathology", "audiology"]
+    "expected": [
+      "speech pathology",
+      "audiology"
+    ]
   },
   {
     "input": "Department of Islamic Studies",
-    "expected": ["islamic studies"]
+    "expected": [
+      "islamic studies"
+    ]
   },
   {
     "input": "School of Technology",
@@ -485,158 +720,398 @@
   },
   {
     "input": "Division of Physical Sciences",
-    "expected": ["physical sciences"]
+    "expected": [
+      "physical sciences"
+    ]
   },
   {
     "input": "Division of Biological Sciences",
-    "expected": ["biological sciences"]
+    "expected": [
+      "biological sciences"
+    ]
   },
   {
     "input": "School of International Business",
-    "expected": ["international business"]
+    "expected": [
+      "international business"
+    ]
   },
   {
     "input": "Department of Food Science and Nutrition",
-    "expected": ["food science", "nutrition"]
+    "expected": [
+      "food science",
+      "nutrition"
+    ]
   },
   {
     "input": "School of Criminology and Criminal Justice",
-    "expected": ["criminology", "criminal justice"]
+    "expected": [
+      "criminology",
+      "criminal justice"
+    ]
   },
   {
     "input": "Department of Urban and Regional Planning",
-    "expected": ["urban planning", "regional planning"]
+    "expected": [
+      "urban planning",
+      "regional planning"
+    ]
   },
   {
     "input": "School of Journalism and Mass Communication",
-    "expected": ["journalism", "mass communication"]
+    "expected": [
+      "journalism",
+      "mass communication"
+    ]
   },
   {
     "input": "Department of Health and Human Performance",
-    "expected": ["health", "human performance"]
+    "expected": [
+      "health",
+      "human performance"
+    ]
   },
   {
     "input": "School of Family and Consumer Sciences",
-    "expected": ["family sciences", "consumer sciences"]
+    "expected": [
+      "family sciences",
+      "consumer sciences"
+    ]
   },
   {
     "input": "Department of Biochemistry and Molecular Biology",
-    "expected": ["biochemistry", "molecular biology"]
+    "expected": [
+      "biochemistry",
+      "molecular biology"
+    ]
   },
   {
     "input": "School of Exercise and Sport Science",
-    "expected": ["exercise science", "sport science"]
-  },
-  {
-    "input": "Department of Ecology and Evolutionary Biology",
-    "expected": ["ecology", "evolutionary biology"]
+    "expected": [
+      "exercise science",
+      "sport science"
+    ]
   },
   {
     "input": "School of Hospitality and Tourism Management",
-    "expected": ["hospitality", "tourism management"]
+    "expected": [
+      "hospitality",
+      "tourism management"
+    ]
   },
   {
     "input": "Department of Molecular and Cellular Biology",
-    "expected": ["molecular biology", "cellular biology"]
+    "expected": [
+      "molecular biology",
+      "cellular biology"
+    ]
   },
   {
     "input": "School of Recreation and Park Management",
-    "expected": ["recreation", "park management"]
-  },
-  {
-    "input": "Department of Genetics and Genomics",
-    "expected": ["genetics", "genomics"]
+    "expected": [
+      "recreation",
+      "park management"
+    ]
   },
   {
     "input": "School of Fashion Design and Merchandising",
-    "expected": ["fashion design", "merchandising"]
+    "expected": [
+      "fashion design",
+      "merchandising"
+    ]
   },
   {
     "input": "Department of Anatomy and Cell Biology",
-    "expected": ["anatomy", "cell biology"]
+    "expected": [
+      "anatomy",
+      "cell biology"
+    ]
   },
   {
     "input": "School of Interior Design",
-    "expected": ["interior design"]
+    "expected": [
+      "interior design"
+    ]
   },
   {
     "input": "Department of Pathology and Laboratory Medicine",
-    "expected": ["pathology", "laboratory medicine"]
+    "expected": [
+      "pathology",
+      "laboratory medicine"
+    ]
   },
   {
     "input": "School of Graphic Design",
-    "expected": ["graphic design"]
+    "expected": [
+      "graphic design"
+    ]
   },
   {
     "input": "Department of Pharmacology and Toxicology",
-    "expected": ["pharmacology", "toxicology"]
+    "expected": [
+      "pharmacology",
+      "toxicology"
+    ]
   },
   {
     "input": "School of Game Design",
-    "expected": ["game design"]
+    "expected": [
+      "game design"
+    ]
   },
   {
     "input": "Department of Physiology and Biophysics",
-    "expected": ["physiology", "biophysics"]
+    "expected": [
+      "physiology",
+      "biophysics"
+    ]
   },
   {
     "input": "School of Product Design",
-    "expected": ["product design"]
+    "expected": [
+      "product design"
+    ]
   },
   {
     "input": "Department of Microbiology and Immunology",
-    "expected": ["microbiology", "immunology"]
+    "expected": [
+      "microbiology",
+      "immunology"
+    ]
   },
   {
     "input": "School of Data Science",
-    "expected": ["data science"]
+    "expected": [
+      "data science"
+    ]
   },
   {
     "input": "Department of Peace and Conflict Studies",
-    "expected": ["peace studies", "conflict studies"]
+    "expected": [
+      "peace studies",
+      "conflict studies"
+    ]
   },
   {
     "input": "School of Robotics Engineering",
-    "expected": ["robotics engineering"]
-  },
-  {
-    "input": "Department of Women's and Gender Studies",
-    "expected": ["women's studies", "gender studies"]
+    "expected": [
+      "robotics engineering"
+    ]
   },
   {
     "input": "School of Actuarial Science",
-    "expected": ["actuarial science"]
+    "expected": [
+      "actuarial science"
+    ]
   },
   {
     "input": "Department of Film Studies",
-    "expected": ["film studies"]
+    "expected": [
+      "film studies"
+    ]
   },
   {
     "input": "School of Human Ecology",
-    "expected": ["human ecology"]
+    "expected": [
+      "human ecology"
+    ]
   },
   {
     "input": "Department of Ethnic Studies",
-    "expected": ["ethnic studies"]
+    "expected": [
+      "ethnic studies"
+    ]
   },
   {
     "input": "School of Emergency Management",
-    "expected": ["emergency management"]
+    "expected": [
+      "emergency management"
+    ]
   },
   {
     "input": "Department of Disability Studies",
-    "expected": ["disability studies"]
+    "expected": [
+      "disability studies"
+    ]
   },
   {
     "input": "School of Supply Chain Management",
-    "expected": ["supply chain management"]
+    "expected": [
+      "supply chain management"
+    ]
   },
   {
     "input": "Department of Digital Arts",
-    "expected": ["digital arts"]
+    "expected": [
+      "digital arts"
+    ]
   },
   {
     "input": "School of Climate Science",
-    "expected": ["climate science"]
+    "expected": [
+      "climate science"
+    ]
+  },
+  {
+    "input": "School of Development, Regeneration, and Stem Cell Biology",
+    "expected": [
+      "developmental biology",
+      "regenerative biology",
+      "stem cell biology"
+    ]
+  },
+  {
+    "input": "Department of Systems, Populations and Leadership",
+    "expected": [
+      "systems science",
+      "population science",
+      "leadership studies"
+    ]
+  },
+  {
+    "input": "College of Molecular, Cellular and Developmental Biology",
+    "expected": [
+      "molecular biology",
+      "cellular biology",
+      "developmental biology"
+    ]
+  },
+  {
+    "input": "School of Ecology and Evolutionary Biology",
+    "expected": [
+      "ecology",
+      "evolutionary biology"
+    ]
+  },
+  {
+    "input": "Department of Genetics and Genomics",
+    "expected": [
+      "genetics",
+      "genomics"
+    ]
+  },
+  {
+    "input": "School of Biochemistry and Molecular Biology",
+    "expected": [
+      "biochemistry",
+      "molecular biology"
+    ]
+  },
+  {
+    "input": "Institute for Comparative Human Development",
+    "expected": [
+      "comparative psychology",
+      "human development"
+    ]
+  },
+  {
+    "input": "Center for International and Development Economics",
+    "expected": [
+      "international economics",
+      "development economics"
+    ]
+  },
+  {
+    "input": "Department of Molecular Biophysics and Biochemistry",
+    "expected": [
+      "molecular biophysics",
+      "biochemistry"
+    ]
+  },
+  {
+    "input": "School of Applied Mathematics and Statistics",
+    "expected": [
+      "applied mathematics",
+      "statistics"
+    ]
+  },
+  {
+    "input": "Department of East Asian Languages and Civilizations",
+    "expected": [
+      "east asian languages",
+      "east asian civilizations"
+    ]
+  },
+  {
+    "input": "School of Near Eastern Languages and Civilizations",
+    "expected": [
+      "near eastern languages",
+      "near eastern civilizations"
+    ]
+  },
+  {
+    "input": "Department of Germanic Languages and Literatures",
+    "expected": [
+      "germanic languages",
+      "germanic literatures"
+    ]
+  },
+  {
+    "input": "School of Slavic Languages and Literatures",
+    "expected": [
+      "slavic languages",
+      "slavic literatures"
+    ]
+  },
+  {
+    "input": "Department of Women's and Gender Studies",
+    "expected": [
+      "women's studies",
+      "gender studies"
+    ]
+  },
+  {
+    "input": "Program in Women's, Gender, and Sexuality Studies",
+    "expected": [
+      "women's studies",
+      "gender studies",
+      "sexuality studies"
+    ]
+  },
+  {
+    "input": "School of Music, Theatre and Dance",
+    "expected": [
+      "music",
+      "theatre",
+      "dance"
+    ]
+  },
+  {
+    "input": "College of Film and Television",
+    "expected": [
+      "film studies",
+      "television studies"
+    ]
+  },
+  {
+    "input": "Committee on Development, Regeneration, and Stem Cell Biology",
+    "expected": [
+      "developmental biology",
+      "regenerative biology",
+      "stem cell biology"
+    ]
+  },
+  {
+    "input": "Department of Molecular, Cellular, and Developmental Biology",
+    "expected": [
+      "molecular biology",
+      "cellular biology",
+      "developmental biology"
+    ]
+  },
+  {
+    "input": "Department of Development and Stem Cell Biology",
+    "expected": [
+      "developmental biology",
+      "stem cell biology"
+    ]
+  },
+  {
+    "input": "School of Music, Theatre & Dance",
+    "expected": [
+      "music",
+      "theatre",
+      "dance"
+    ]
   }
 ]

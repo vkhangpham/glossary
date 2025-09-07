@@ -241,29 +241,60 @@ def load_prompt_from_file(filepath: Union[str, Path]) -> Optional[str]:
         if path.exists():
             with open(path) as f:
                 data = json.load(f)
+                
+                # First check for direct instructions field in metadata
+                if "metadata" in data and "instructions" in data["metadata"]:
+                    return data["metadata"]["instructions"]
+                
+                # Check for direct instructions field at root level
+                if "instructions" in data:
+                    return data["instructions"]
+                
                 content = data.get("content")
                 
                 if not content:
                     return None
                     
                 # Check if this is DSPy format (contains "instructions=")
-                if "instructions='" in content or 'instructions="' in content:
-                    # Extract instructions from DSPy format
+                if "instructions=" in content:
+                    # Extract instructions from DSPy format with more permissive regex
                     import re
-                    # Match instructions='...' handling escaped quotes and newlines
-                    match = re.search(r"instructions=['\"](.+?)['\"](?=\s*\n\s*\w+\s*=|$)", content, re.DOTALL)
-                    if match:
-                        instructions = match.group(1)
-                        # Unescape the content
-                        instructions = instructions.replace("\\'", "'")
-                        instructions = instructions.replace('\\"', '"')
-                        instructions = instructions.replace("\\n", "\n")
-                        return instructions
+                    
+                    # Try multiple regex patterns for different formatting styles
+                    patterns = [
+                        # Standard single/double quoted with lookahead
+                        r"instructions=['\"](.+?)['\"](?=\s*\n\s*\w+\s*=|$)",
+                        # Triple quoted strings
+                        r"instructions='''(.+?)'''",
+                        r'instructions="""(.+?)"""',
+                        # Parenthesis-wrapped strings (for multi-line)
+                        r"instructions=\(['\"](.+?)['\"]\)",
+                        # More permissive pattern without lookahead
+                        r"instructions=['\"]([^'\"]+)['\"]",
+                    ]
+                    
+                    for pattern in patterns:
+                        match = re.search(pattern, content, re.DOTALL)
+                        if match:
+                            instructions = match.group(1)
+                            # Unescape the content
+                            instructions = instructions.replace("\\'", "'")
+                            instructions = instructions.replace('\\"', '"')
+                            instructions = instructions.replace("\\n", "\n")
+                            instructions = instructions.replace("\\\\n", "\n")
+                            instructions = instructions.replace("\\t", "\t")
+                            return instructions
+                    
+                    # If no pattern matched but we know there's instructions=, 
+                    # log a warning for debugging
+                    logger.warning(f"Found 'instructions=' in {filepath} but couldn't extract content")
                 
                 # Return content as-is if not DSPy format
                 return content
     except (json.JSONDecodeError, KeyError, IOError) as e:
         logger.debug(f"Could not load prompt from {filepath}: {e}")
+    except Exception as e:
+        logger.error(f"Unexpected error loading prompt from {filepath}: {e}")
     
     return None
 
@@ -326,6 +357,10 @@ def completion(
         raise ValueError("Model must be in format 'provider/model'")
     if temperature < 0.0 or temperature > 2.0:
         raise ValueError("Temperature must be between 0.0 and 2.0")
+    
+    # Set temperature to 1.0 for GPT-5 models
+    if "gpt-5" in model.lower():
+        temperature = 1.0
 
     kwargs = {
         "temperature": temperature,
@@ -386,6 +421,8 @@ async def async_completion(
 
     All parameters and behavior are identical to completion(). This simply wraps
     the sync function to run in a thread pool for async compatibility.
+    
+    Note: Temperature is automatically set to 1.0 for GPT-5 models.
 
     Examples:
         # Structured output
@@ -478,12 +515,15 @@ async def structured_completion_consensus(
         # Select a different model for each response to get diverse perspectives
         selected_model = random.choice(available_models)
         logger.debug(f"Response {i+1}/{num_responses}: using model '{selected_model}'")
+        
+        # Override temperature for GPT-5 models
+        actual_temperature = 1.0 if "gpt-5" in selected_model.lower() else temperature
 
         task = async_completion(
             messages=messages,
             response_model=response_model,
             model=selected_model,
-            temperature=temperature,
+            temperature=actual_temperature,
             max_tokens=max_tokens,
             max_retries=max_retries,
             cache_ttl=cache_ttl,
