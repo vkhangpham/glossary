@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Level 1 Step 2: Filter Concepts by Institutional Frequency
+Level 3 Step 2: Filter Concepts by Venue Frequency
 
 This script filters extracted concepts based on their frequency across
-different institutions, keeping only those that appear in multiple sources.
+different conference venues, keeping only those that appear in multiple sources.
 """
 
 import sys
@@ -30,27 +30,33 @@ def to_test_path(path: Path) -> Path:
         return path
 
 # Constants
-LEVEL = 1
+LEVEL = 3
 STEP = "s2"
 
 # Setup logger
-logger = setup_logger("lv1.s2")
+logger = setup_logger("lv3.s2")
 
 
 def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold_percent: Optional[float] = None) -> None:
     """
-    Main function to filter concepts by institutional frequency.
+    Main function to filter concepts by venue frequency.
     
     Args:
         test_mode: If True, uses test directories and smaller datasets
         min_frequency: Minimum frequency count (overrides config if provided)
         threshold_percent: Minimum percentage threshold (overrides config if provided)
     """
+    # Store original config to restore later
+    orig_threshold = None
+    
     try:
         logger.info(f"Starting Level {LEVEL} Step 2: Frequency Filtering")
         
         # Get configuration and file paths
         config = get_level_config(LEVEL)
+        # Preserve original threshold before any overrides
+        orig_threshold = config.frequency_threshold
+        
         input_file, output_file, metadata_file = get_step_file_paths(LEVEL, STEP)
         
         # Convert to Path objects
@@ -79,6 +85,7 @@ def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold
         
         if threshold_percent is not None:
             logger.info(f"Overriding threshold percent from config ({config.frequency_threshold}) to {threshold_percent}")
+            logger.info("Threshold override provided; switching from venue-based filtering to percentage-based filtering for this run.")
             import generate_glossary.generation.level_config as lc
             lc.LEVEL_CONFIGS[LEVEL].frequency_threshold = threshold_percent
         elif min_frequency is not None:
@@ -102,23 +109,28 @@ def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold
             if sources_count > 0:
                 # Derive threshold percent and clamp to [0, 1]
                 derived_threshold = min_frequency / sources_count
-                derived_threshold = max(0.0, min(1.0, derived_threshold))
+                
+                # Ensure minimum of 1 source
+                min_required_frac = 1 / sources_count if sources_count > 0 else 1.0
+                derived_threshold = max(min_required_frac, max(0.0, min(1.0, derived_threshold)))
                 
                 logger.info(f"Computed threshold from --min-frequency={min_frequency}:")
-                logger.info(f"  - Found {sources_count} distinct sources")
+                logger.info(f"  - Found {sources_count} distinct venues")
                 logger.info(f"  - Derived threshold: {derived_threshold:.2%}")
+                logger.info(f"  - Minimum required fraction (1 source): {min_required_frac:.2%}")
                 logger.info(f"  - Overriding config threshold ({config.frequency_threshold}) to {derived_threshold}")
+                logger.info("Threshold override provided; switching from venue-based filtering to percentage-based filtering for this run.")
                 
                 import generate_glossary.generation.level_config as lc
                 lc.LEVEL_CONFIGS[LEVEL].frequency_threshold = derived_threshold
             else:
-                logger.warning(f"No sources found in input file, ignoring --min-frequency={min_frequency}")
+                logger.warning(f"No venues found in input file, ignoring --min-frequency={min_frequency}")
         
         # Ensure output directory exists
         output_file.parent.mkdir(parents=True, exist_ok=True)
         
         # Apply frequency filtering
-        logger.info("Applying frequency-based filtering...")
+        logger.info("Applying venue-based frequency filtering...")
         result = filter_by_frequency(
             input_file=str(input_file),
             level=LEVEL,
@@ -151,41 +163,47 @@ def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold
     except Exception as e:
         logger.error(f"Error in Level {LEVEL} Step 2: {str(e)}")
         raise
+    finally:
+        # Restore original threshold if it was preserved
+        if orig_threshold is not None:
+            import generate_glossary.generation.level_config as lc
+            lc.LEVEL_CONFIGS[LEVEL].frequency_threshold = orig_threshold
+            logger.debug(f"Restored original frequency threshold: {orig_threshold}")
 
 
 def test() -> None:
     """
-    Test function for Level 1 Step 2.
+    Test function for Level 3 Step 2.
     Uses test directories and smaller datasets.
     """
     logger.info("=" * 60)
-    logger.info("Running Level 1 Step 2 in TEST mode")
+    logger.info("Running Level 3 Step 2 in TEST mode")
     logger.info("=" * 60)
     
     # Create test directories if needed
     test_dirs = [
-        Path("data/test/lv1/raw"),
-        Path("data/test/lv1/processed"),
+        Path("data/test/lv3/raw"),
+        Path("data/test/lv3/processed"),
     ]
     for dir_path in test_dirs:
         dir_path.mkdir(parents=True, exist_ok=True)
     
     # Create a small test input file if it doesn't exist
-    test_input = Path("data/test/lv1/raw/lv1_s1_extracted_concepts.txt")
+    test_input = Path("data/test/lv3/raw/lv3_s1_extracted_concepts.txt")
     if not test_input.exists():
         logger.info("Creating test input file with sample concepts...")
-        # Create concepts with varying frequencies
+        # Create concepts with varying frequencies across venues
         test_concepts = [
-            "Machine Learning",  # High frequency
-            "Machine Learning",
-            "Machine Learning",
-            "Artificial Intelligence",  # Medium frequency
-            "Artificial Intelligence",
-            "Data Science",  # Medium frequency
-            "Data Science",
-            "Computer Vision",  # Low frequency
-            "Natural Language Processing",  # Low frequency
-            "Robotics",  # Single occurrence
+            "ICML - Deep Learning",  # High frequency
+            "NeurIPS - Deep Learning",
+            "ICLR - Deep Learning",
+            "CVPR - Computer Vision",  # Medium frequency
+            "ICCV - Computer Vision",
+            "ACL - Natural Language Processing",  # Medium frequency
+            "EMNLP - Natural Language Processing",
+            "AAAI - Artificial Intelligence",  # Low frequency
+            "IJCAI - Machine Learning",  # Low frequency
+            "ICRA - Robotics",  # Single occurrence
         ]
         test_input.write_text("\n".join(test_concepts))
         logger.info(f"Created test input with {len(test_concepts)} concept instances")
@@ -194,7 +212,7 @@ def test() -> None:
     main(test_mode=True, min_frequency=2, threshold_percent=0.2)
     
     logger.info("=" * 60)
-    logger.info("Test completed for Level 1 Step 2")
+    logger.info("Test completed for Level 3 Step 2")
     logger.info("=" * 60)
 
 
@@ -202,7 +220,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(
-        description="Level 1 Step 2: Filter Concepts by Institutional Frequency"
+        description="Level 3 Step 2: Filter Concepts by Venue Frequency"
     )
     parser.add_argument(
         "--test",
@@ -217,7 +235,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--threshold-percent",
         type=float,
-        help="Minimum percentage threshold (default: from config)"
+        help="Minimum percentage threshold (default: from config). When provided, switches from venue-based to percentage-based filtering."
     )
     
     args = parser.parse_args()

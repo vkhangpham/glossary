@@ -16,7 +16,7 @@ from pathlib import Path
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import ensure_directories
 from generate_glossary.deduplication.utils import normalize_text
-from .level_config import get_level_config
+from generate_glossary.generation.level_config import get_level_config
 
 
 # Configuration constants
@@ -54,7 +54,6 @@ def is_valid_concept(concept: str) -> bool:
     if concept.lower() in NON_ACADEMIC_TERMS:
         return False
         
-    # Check if concept has more than just punctuation and spaces
     if not any(c.isalnum() for c in concept):
         return False
         
@@ -80,13 +79,11 @@ def load_concept_source_mapping(input_file: str) -> tuple[List[str], Dict[str, L
             if not line:
                 continue
                 
-            # Handle format: "source - concept" or just "concept"
             if ' - ' in line:
                 source, concept = line.split(' - ', 1)
                 source = source.strip()
                 concept = concept.strip()
             else:
-                # No source info, treat as generic
                 source = 'generic'
                 concept = line.strip()
             
@@ -122,15 +119,12 @@ def count_source_frequencies(source_concept_mapping: Dict[str, List[str]]) -> tu
         for concept in concepts:
             normalized = normalize_text(concept)
             
-            # Track original form
             if normalized not in normalized_to_original:
                 normalized_to_original[normalized] = concept
             
-            # Count once per source (avoid double-counting within same source)
             unique_concepts_in_source.add(normalized)
             concept_sources[normalized].add(source)
         
-        # Increment count for each unique concept in this source
         for normalized_concept in unique_concepts_in_source:
             concept_source_count[normalized_concept] += 1
     
@@ -298,7 +292,6 @@ def export_analysis_csv(
     """Export detailed analysis to CSV for manual review."""
     logger = setup_logger(f"lv{level}.s2")
     
-    # Create analysis file
     analysis_file = f"data/lv{level}/raw/lv{level}_s2_analysis.csv"
     
     concept_frequencies, normalized_to_original, concept_sources = count_source_frequencies(
@@ -316,7 +309,7 @@ def export_analysis_csv(
             'concept': concept,
             'normalized': normalized,
             'frequency': frequency,
-            'sources': ', '.join(sources[:5]),  # Limit for readability
+            'sources': ', '.join(sources[:5]),
             'total_sources': len(sources),
             'included': frequency >= statistics.get('minimum_sources_required', 0)
         })
@@ -389,7 +382,6 @@ def filter_by_frequency(
     # Export analysis CSV for manual review
     export_analysis_csv(concepts, source_concept_mapping, statistics, level)
     
-    # Return processing metadata
     return {
         'level': level,
         'step': 's2', 

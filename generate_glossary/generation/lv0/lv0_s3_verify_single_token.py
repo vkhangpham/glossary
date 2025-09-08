@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.utils.llm import structured_completion_consensus, load_prompt_from_file
 from generate_glossary.deduplication.utils import normalize_text
-from generate_glossary.generation.shared import process_with_checkpoint
+from generate_glossary.generation import process_with_checkpoint
 
 load_dotenv()
 logger = setup_logger("lv0.s3")
@@ -116,9 +116,9 @@ def verify_keyword_with_consensus(
             structured_completion_consensus(
                 messages=messages,
                 response_model=VerificationResult,
-                tier="budget",  # Use budget tier for verification
+                tier="budget",
                 num_responses=num_attempts,
-                return_all=False,  # Only need consensus
+                return_all=False,
                 temperature=TEMPERATURE,
                 cache_ttl=CACHE_TTL,
             )

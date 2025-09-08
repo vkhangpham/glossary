@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """
-Level 1 Step 2: Filter Concepts by Institutional Frequency
+Level 2 Step 2: Filter Concepts by Institutional Frequency
 
 This script filters extracted concepts based on their frequency across
 different institutions, keeping only those that appear in multiple sources.
 """
 
-import sys
 from pathlib import Path
-from typing import Optional, Dict, Any
-import json
-from collections import Counter
+from typing import Optional
 
 from generate_glossary.utils.logger import setup_logger
 from ..frequency_filtering import filter_by_frequency
@@ -30,11 +27,11 @@ def to_test_path(path: Path) -> Path:
         return path
 
 # Constants
-LEVEL = 1
+LEVEL = 2
 STEP = "s2"
 
 # Setup logger
-logger = setup_logger("lv1.s2")
+logger = setup_logger("lv2.s2")
 
 
 def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold_percent: Optional[float] = None) -> None:
@@ -70,6 +67,9 @@ def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold
             raise FileNotFoundError(f"Input file not found: {input_file}")
         
         logger.info(f"Reading extracted concepts from: {input_file}")
+        
+        # Store original threshold for restoration
+        original_threshold = config.frequency_threshold
         
         # Apply CLI overrides if provided
         # Handle precedence: threshold_percent takes priority over min_frequency
@@ -113,6 +113,7 @@ def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold
                 lc.LEVEL_CONFIGS[LEVEL].frequency_threshold = derived_threshold
             else:
                 logger.warning(f"No sources found in input file, ignoring --min-frequency={min_frequency}")
+                logger.info("Consider fetching institution count from step metadata or using --threshold-percent instead")
         
         # Ensure output directory exists
         output_file.parent.mkdir(parents=True, exist_ok=True)
@@ -147,43 +148,53 @@ def main(test_mode: bool = False, min_frequency: Optional[int] = None, threshold
                     logger.info(f"  - Frequency {freq}: {count} concepts")
         else:
             logger.warning("No concepts passed frequency filtering")
+        
+        # Restore original threshold to avoid side effects
+        if threshold_percent is not None or min_frequency is not None:
+            import generate_glossary.generation.level_config as lc
+            lc.LEVEL_CONFIGS[LEVEL].frequency_threshold = original_threshold
+            logger.debug(f"Restored original threshold: {original_threshold}")
             
     except Exception as e:
+        # Restore original threshold even on error
+        if threshold_percent is not None or min_frequency is not None:
+            import generate_glossary.generation.level_config as lc
+            lc.LEVEL_CONFIGS[LEVEL].frequency_threshold = original_threshold
         logger.error(f"Error in Level {LEVEL} Step 2: {str(e)}")
         raise
 
 
 def test() -> None:
     """
-    Test function for Level 1 Step 2.
+    Test function for Level 2 Step 2.
     Uses test directories and smaller datasets.
     """
     logger.info("=" * 60)
-    logger.info("Running Level 1 Step 2 in TEST mode")
+    logger.info("Running Level 2 Step 2 in TEST mode")
     logger.info("=" * 60)
     
     # Create test directories if needed
     test_dirs = [
-        Path("data/test/lv1/raw"),
-        Path("data/test/lv1/processed"),
+        Path("data/test/lv2/raw"),
+        Path("data/test/lv2/processed"),
     ]
     for dir_path in test_dirs:
         dir_path.mkdir(parents=True, exist_ok=True)
     
     # Create a small test input file if it doesn't exist
-    test_input = Path("data/test/lv1/raw/lv1_s1_extracted_concepts.txt")
+    test_input = Path("data/test/lv2/raw/lv2_s1_extracted_concepts.txt")
     if not test_input.exists():
         logger.info("Creating test input file with sample concepts...")
         # Create concepts with varying frequencies
         test_concepts = [
-            "Machine Learning",  # High frequency
-            "Machine Learning",
-            "Machine Learning",
-            "Artificial Intelligence",  # Medium frequency
-            "Artificial Intelligence",
-            "Data Science",  # Medium frequency
-            "Data Science",
-            "Computer Vision",  # Low frequency
+            "Deep Learning",  # High frequency
+            "Deep Learning",
+            "Deep Learning",
+            "Neural Networks",  # Medium frequency
+            "Neural Networks",
+            "Computer Vision",  # Medium frequency
+            "Computer Vision",
+            "Reinforcement Learning",  # Low frequency
             "Natural Language Processing",  # Low frequency
             "Robotics",  # Single occurrence
         ]
@@ -194,7 +205,7 @@ def test() -> None:
     main(test_mode=True, min_frequency=2, threshold_percent=0.2)
     
     logger.info("=" * 60)
-    logger.info("Test completed for Level 1 Step 2")
+    logger.info("Test completed for Level 2 Step 2")
     logger.info("=" * 60)
 
 
@@ -202,7 +213,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(
-        description="Level 1 Step 2: Filter Concepts by Institutional Frequency"
+        description="Level 2 Step 2: Filter Concepts by Institutional Frequency"
     )
     parser.add_argument(
         "--test",

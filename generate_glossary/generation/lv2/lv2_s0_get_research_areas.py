@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-Level 1 Step 0: Extract Department Names from College Web Pages
+Level 2 Step 0: Extract Research Areas from Department Web Pages
 
-This script extracts department names from college websites using Firecrawl.
-It processes the colleges from Level 0 and extracts their departments.
+This script extracts research areas from department websites using Firecrawl.
+It processes the departments from Level 1 and extracts their research areas.
 """
 
-import sys
 from pathlib import Path
 from typing import Optional
 
@@ -28,23 +27,25 @@ def to_test_path(path: Path) -> Path:
         return path
 
 # Constants
-LEVEL = 1
+LEVEL = 2
 STEP = "s0"
 
-logger = setup_logger("lv1.s0")
+# Setup logger
+logger = setup_logger("lv2.s0")
 
 
 def main(test_mode: bool = False, input_file: Optional[str] = None) -> None:
     """
-    Main function to extract department names from college websites.
+    Main function to extract research areas from department websites.
     
     Args:
         test_mode: If True, uses test directories and smaller datasets
         input_file: Optional custom input file path
     """
     try:
-        logger.info(f"Starting Level {LEVEL} Step 0: Department Name Extraction")
+        logger.info(f"Starting Level {LEVEL} Step 0: Research Area Extraction")
         
+        # Get configuration and file paths
         config = get_level_config(LEVEL)
         default_input, output_file, metadata_file = get_step_file_paths(LEVEL, STEP)
         
@@ -71,13 +72,13 @@ def main(test_mode: bool = False, input_file: Optional[str] = None) -> None:
         if not input_file.exists():
             raise FileNotFoundError(f"Input file not found: {input_file}")
         
-        logger.info(f"Reading colleges from: {input_file}")
+        logger.info(f"Reading departments from: {input_file}")
         
         # Ensure output directory exists
         output_file.parent.mkdir(parents=True, exist_ok=True)
         
-        # Extract web content for Level 1 (departments)
-        logger.info("Extracting department names from college websites...")
+        # Extract web content for Level 2 (research areas)
+        logger.info("Extracting research areas from department websites...")
         result = extract_web_content(
             input_file=str(input_file),
             level=LEVEL,
@@ -86,13 +87,14 @@ def main(test_mode: bool = False, input_file: Optional[str] = None) -> None:
         )
         
         if result and not result.get('error'):
-            logger.info(f"Successfully extracted {result['extracted_terms_count']} departments")
+            extracted_count = result.get('extracted_terms_count', 0)
+            logger.info(f"Successfully extracted {extracted_count} research areas")
             logger.info(f"Output saved to: {output_file}")
             logger.info(f"Metadata saved to: {metadata_file}")
         elif result and result.get('error'):
-            logger.error(f"Extraction failed: {result['error']}")
+            logger.error(f"Extraction failed: {result.get('error', 'Unknown error')}")
         else:
-            logger.warning("No departments extracted")
+            logger.warning("No research areas extracted")
             
     except Exception as e:
         logger.error(f"Error in Level {LEVEL} Step 0: {str(e)}")
@@ -101,37 +103,39 @@ def main(test_mode: bool = False, input_file: Optional[str] = None) -> None:
 
 def test() -> None:
     """
-    Test function for Level 1 Step 0.
+    Test function for Level 2 Step 0.
     Uses test directories and smaller datasets.
     """
     logger.info("=" * 60)
-    logger.info("Running Level 1 Step 0 in TEST mode")
+    logger.info("Running Level 2 Step 0 in TEST mode")
     logger.info("=" * 60)
     
+    # Create test directories if needed
     test_dirs = [
-        Path("data/test/lv0"),
-        Path("data/test/lv1/raw"),
-        Path("data/test/lv1/processed"),
+        Path("data/test/lv1"),
+        Path("data/test/lv2/raw"),
+        Path("data/test/lv2/processed"),
     ]
     for dir_path in test_dirs:
         dir_path.mkdir(parents=True, exist_ok=True)
     
-    test_input = Path("data/test/lv0/lv0_final.txt")
+    # Create a small test input file if it doesn't exist
+    test_input = Path("data/test/lv1/lv1_final.txt")
     if not test_input.exists():
-        logger.info("Creating test input file with sample colleges...")
-        test_colleges = [
-            "College of Engineering",
-            "School of Medicine",
-            "College of Liberal Arts and Sciences"
+        logger.info("Creating test input file with sample department URLs for Firecrawl...")
+        test_department_urls = [
+            "https://cs.stanford.edu/",
+            "https://www.eecs.berkeley.edu/",
+            "https://me.mit.edu/"
         ]
-        test_input.write_text("\n".join(test_colleges))
-        logger.info(f"Created test input with {len(test_colleges)} colleges")
+        test_input.write_text("\n".join(test_department_urls))
+        logger.info(f"Created test input with {len(test_department_urls)} department URLs")
     
     # Run main in test mode
     main(test_mode=True)
     
     logger.info("=" * 60)
-    logger.info("Test completed for Level 1 Step 0")
+    logger.info("Test completed for Level 2 Step 0")
     logger.info("=" * 60)
 
 
@@ -139,7 +143,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(
-        description="Level 1 Step 0: Extract Department Names from College Web Pages"
+        description="Level 2 Step 0: Extract Research Areas from Department Web Pages"
     )
     parser.add_argument(
         "--test",

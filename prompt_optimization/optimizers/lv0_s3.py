@@ -9,22 +9,21 @@ import sys
 import time
 from typing import List, Dict, Any
 
-# Load environment variables from .env file if it exists
 from dotenv import load_dotenv
 
 load_dotenv()
 
-import dspy  # noqa: E402
-from dspy.teleprompt import GEPA  # noqa: E402
+import dspy
+from dspy.teleprompt import GEPA
 
-from prompt_optimization.core import save_prompt  # noqa: E402
-from prompt_optimization.optimizers.common import (  # noqa: E402
+from prompt_optimization.core import save_prompt
+from prompt_optimization.optimizers.common import (
     load_json_training,
     split_train_val,
     configure_openai_lms,
     extract_optimized_instruction,
 )
-from prompt_optimization.reporter import (  # noqa: E402
+from prompt_optimization.reporter import (
     evaluate_initial_performance,
     create_optimization_report,
 )
@@ -183,7 +182,6 @@ def optimize_prompts():
         "track_best_outputs": True,  # Best practice - helpful for debugging and analysis
     }
 
-    # Set budget parameter (only one should be set)
     if max_metric_calls:
         optimizer_kwargs["max_metric_calls"] = int(max_metric_calls)
         print(f"Using max_metric_calls: {max_metric_calls}")
@@ -201,7 +199,6 @@ def optimize_prompts():
 
     print("\nExtracting optimized prompts...")
 
-    # Define default templates with required placeholders
     DEFAULT_S3_USER = """Analyze whether "{keyword}" is a valid broad academic discipline.\n\n"
         "Evidence - Colleges/schools/divisions that mention this concept:\n{evidence_colleges}\n\n"
         "Consider:\n1. Is it a recognized major field of study or broad academic discipline?\n"

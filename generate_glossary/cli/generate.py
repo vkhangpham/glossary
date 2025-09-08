@@ -9,8 +9,10 @@ Usage:
 
 import sys
 import argparse
+import importlib
 
 from generate_glossary.utils.logger import setup_logger
+from generate_glossary.generation.level_config import get_step_file_paths
 
 logger = setup_logger("cli.generate")
 
@@ -32,9 +34,8 @@ def run_level_0_step(step: int, **kwargs) -> int:
     module_name, description = steps[step]
     test_mode = kwargs.get("test", False)
 
-    module = __import__(
-        f"generate_glossary.generation.lv0.{module_name}", fromlist=["test", "main"]
-    )
+    module_path = f"generate_glossary.generation.lv0.{module_name}"
+    module = importlib.import_module(module_path)
 
     if test_mode:
         logger.info(f"Running Level 0, Step {step}: {description} [TEST MODE]")
@@ -54,38 +55,50 @@ def run_level_0_step(step: int, **kwargs) -> int:
 
 
 def run_generic_level_step(level: int, step: int, **kwargs) -> int:
-    """Run a generic level step using runners."""
+    """Run a generic level step using standalone scripts."""
 
     level_configs = {
         1: {
-            "module": "lv1_runner",
+            "modules": {
+                0: "lv1_s0_get_dept_names",
+                1: "lv1_s1_extract_concepts",
+                2: "lv1_s2_filter_by_freq",
+                3: "lv1_s3_verify_tokens",
+            },
             "descriptions": {
                 0: "Web extraction for departments",
                 1: "Extract department concepts",
                 2: "Frequency filtering",
                 3: "Token verification",
             },
-            "default_input": "data/lv0/lv0_final.txt",
         },
         2: {
-            "module": "lv2_runner",
+            "modules": {
+                0: "lv2_s0_get_research_areas",
+                1: "lv2_s1_extract_concepts",
+                2: "lv2_s2_filter_by_freq",
+                3: "lv2_s3_verify_tokens",
+            },
             "descriptions": {
                 0: "Extract research areas",
                 1: "Extract research concepts",
                 2: "Frequency filtering",
                 3: "Token verification",
             },
-            "default_input": "data/lv1/lv1_final.txt",
         },
         3: {
-            "module": "lv3_runner",
+            "modules": {
+                0: "lv3_s0_get_conference_topics",
+                1: "lv3_s1_extract_concepts",
+                2: "lv3_s2_filter_by_freq",
+                3: "lv3_s3_verify_tokens",
+            },
             "descriptions": {
                 0: "Extract conference topics",
                 1: "Extract topic concepts",
                 2: "Frequency filtering",
                 3: "Token verification",
             },
-            "default_input": "data/lv2/lv2_final.txt",
         },
     }
 
@@ -99,22 +112,41 @@ def run_generic_level_step(level: int, step: int, **kwargs) -> int:
         logger.error(f"Invalid step {step} for Level {level}. Valid steps are 0-3.")
         return 1
 
-    module = __import__(
-        f"generate_glossary.generation.runners.{config['module']}",
-        fromlist=[f"run_step_{step}"],
-    )
-    run_func = getattr(module, f"run_step_{step}")
+    # Import the standalone script module
+    module_name = config["modules"][step]
+    module_path = f"generate_glossary.generation.lv{level}.{module_name}"
+    module = importlib.import_module(module_path)
 
-    logger.info(f"Running Level {level}, Step {step}: {config['descriptions'][step]}")
-
-    if step == 0:
-        input_file = kwargs.get("input_file", config["default_input"])
-        run_func(input_file)
-    elif step in [1, 3]:
-        provider = kwargs.get("provider")
-        run_func(provider=provider)
+    test_mode = kwargs.get("test", False)
+    
+    if test_mode:
+        logger.info(f"Running Level {level}, Step {step}: {config['descriptions'][step]} [TEST MODE]")
+        func = getattr(module, "test", None)
+        if func is None:
+            logger.warning(f"No test function found, using main function instead")
+            func = getattr(module, "main")
     else:
-        run_func()
+        logger.info(f"Running Level {level}, Step {step}: {config['descriptions'][step]}")
+        func = getattr(module, "main")
+
+    # Call the appropriate function with the right arguments
+    if step == 0:
+        # Step 0 needs input file - get default from level_config if not provided
+        input_file = kwargs.get("input_file")
+        if not input_file:
+            # Dynamically get the default input path from level_config
+            default_input_path, _, _ = get_step_file_paths(level, "s0")
+            input_file = default_input_path
+        
+        # All levels now use the same input_file parameter for s0
+        func(input_file=input_file)
+    elif step in [1, 3]:
+        # Steps 1 and 3 need provider
+        provider = kwargs.get("provider", "openai")
+        func(provider=provider)
+    else:
+        # Step 2 doesn't need any parameters
+        func()
 
     return 0
 

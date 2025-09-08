@@ -12,8 +12,8 @@ from typing import Optional, Dict, Any, List
 import json
 
 from generate_glossary.utils.logger import setup_logger
-from ..shared.token_verification import verify_single_tokens
-from ..shared.level_config import get_level_config, get_step_file_paths
+from ..token_verification import verify_single_tokens
+from ..level_config import get_level_config, get_step_file_paths
 
 
 def to_test_path(path: Path) -> Path:

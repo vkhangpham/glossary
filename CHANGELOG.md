@@ -7,12 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Enhanced GEPA Optimization Reporting**:
+  - Comprehensive optimization reports in TXT and JSON formats
+  - Detailed performance metrics and improvement analysis
+  - Automatic report generation in `data/optimization_reports/`
+  - GEPA `detailed_results` tracking with `track_stats=True`
+
+- **GEPA Best Practices Documentation**:
+  - Research-backed configuration guidelines
+  - Reflection model selection strategies
+  - Budget optimization recommendations
+  - Anti-patterns and validation approaches
+
 ### Changed
-- **Simplified Prompt Optimization**:
-  - Removed CLI interface `uv run optimize-prompt` command
-  - Direct script execution via `python prompt_optimization/optimizers/lv0_s1.py`
-  - Simplified architecture removing complex CLI wrapper
-  - See `prompt_optimization/README_SIMPLIFIED.md` for new usage instructions
+- **Improved Generation Package Documentation**:
+  - Enhanced prompt optimization integration details in module docs
+  - Added automatic prompt loading documentation for lv0_s1 and lv0_s3
+  - Updated best practices with specific GEPA configuration
+  - Clarified optimization workflow and fallback behavior
+
+### Fixed
+- **Level 1 Step 1 Provider Handling**:
+  - Fixed provider argument not being passed correctly
+  - Resolved NameError for undefined logger in lv1_s1
+  - Ensured consistent provider configuration across all levels
+
+### Style
+- **Applied Black Formatting**:
+  - Formatted all prompt optimization modules with Black
+  - Consistent code style across optimization codebase
 
 ## [2025-09-05] - Prompt Optimization Module and Documentation
 

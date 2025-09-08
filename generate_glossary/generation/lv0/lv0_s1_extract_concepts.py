@@ -10,7 +10,7 @@ from pydash import chunk
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.utils.llm import structured_completion_consensus, load_prompt_from_file
-from generate_glossary.generation.shared import process_with_checkpoint
+from generate_glossary.generation import process_with_checkpoint
 
 load_dotenv()
 logger = setup_logger("lv0.s1")
@@ -109,9 +109,8 @@ def extract_concepts_with_consensus(
                 tier="budget",  # Use tier instead of specific model
                 num_responses=num_attempts,
                 return_all=False,  # We only need consensus, not all responses
-                temperature=TEMPERATURE,  # Control response diversity
-                cache_ttl=CACHE_TTL,  # Cache for 1 hour to speed up re-runs
-                # semantic_validation=SEMANTIC_VALIDATION,  # TODO: Fix semantic validation
+                temperature=TEMPERATURE,
+                cache_ttl=CACHE_TTL,
             )
         )
 

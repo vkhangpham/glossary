@@ -13,6 +13,22 @@ The concept generation pipeline is designed to build a hierarchical academic glo
 
 Each level builds upon the previous one, creating a parent-child relationship where terms from the level above serve as the context for generating terms at the current level.
 
+### Test Mode
+
+All generation scripts support a test mode for development and debugging:
+
+- **Test mode behavior**: Uses smaller datasets and saves output to `data/test/` directory
+- **Path handling in test mode**: 
+  - Paths under `data/` are automatically redirected to `data/test/`
+  - Custom input files outside `data/` directory are used as-is without redirection
+  - This allows testing with custom datasets while preserving the isolation of test outputs
+- **Running in test mode**: Add `--test` flag to any command:
+  ```bash
+  uv run generate -l 0 -s 0 --test
+  # Or directly:
+  python -m generate_glossary.generation.lv0.lv0_s0_get_college_names --test
+  ```
+
 ## Hierarchical Relationships
 
 The glossary follows a strict hierarchical structure:
@@ -74,7 +90,13 @@ Level 0 represents the highest level in the concept hierarchy, focusing on broad
 ### Usage
 
 ```bash
-# Step 0: Extract college names
+# Using unified CLI
+uv run generate -l 0 -s 0  # Extract college names
+uv run generate -l 0 -s 1 --provider openai  # Extract concepts
+uv run generate -l 0 -s 2  # Filter by frequency
+uv run generate -l 0 -s 3 --provider openai  # Verify tokens
+
+# Or using direct scripts
 python -m generate_glossary.generation.lv0.lv0_s0_get_college_names
 
 # Step 1: Extract concepts from college names
@@ -116,8 +138,14 @@ Level 1 represents academic departments that exist under the umbrella of college
 ### Usage
 
 ```bash
-# Step 0: Extract department names using Level 0 terms
-python -m generate_glossary.generation.lv1.lv1_s0_get_dept_names [--input data/lv0/lv0_final.txt]
+# Using unified CLI
+uv run generate -l 1 -s 0  # Extract department names (default: data/lv0/lv0_final.txt)
+uv run generate -l 1 -s 1 --provider openai  # Extract concepts
+uv run generate -l 1 -s 2  # Filter by frequency
+uv run generate -l 1 -s 3 --provider openai  # Verify tokens
+
+# Or using direct scripts
+python -m generate_glossary.generation.lv1.lv1_s0_get_dept_names [--parent-level-file data/lv0/lv0_final.txt]
 
 # Step 1: Extract concepts from department names
 python -m generate_glossary.generation.lv1.lv1_s1_extract_concepts [--provider openai|gemini]
@@ -150,7 +178,7 @@ Level 2 represents specialized research areas under departments from Level 1. Th
    - Extracts standardized research topics from raw research area names
    - Normalizes terminology across different departments
 
-3. **Frequency Filtering** (`lv2_s2_filter_by_institution_freq.py`):
+3. **Frequency Filtering** (`lv2_s2_filter_by_freq.py`):
    - Filters concepts based on frequency across departments
    - Ensures research areas are representative
 
@@ -166,14 +194,20 @@ Level 2 represents specialized research areas under departments from Level 1. Th
 ### Usage
 
 ```bash
-# Step 0: Extract research areas using Level 1 terms
-python -m generate_glossary.generation.lv2.lv2_s0_get_research_areas [--input data/lv1/lv1_final.txt]
+# Using unified CLI
+uv run generate -l 2 -s 0  # Extract research areas (default: data/lv1/lv1_final.txt)
+uv run generate -l 2 -s 1 --provider openai  # Extract concepts
+uv run generate -l 2 -s 2  # Filter by frequency
+uv run generate -l 2 -s 3 --provider openai  # Verify tokens
+
+# Or using direct scripts
+python -m generate_glossary.generation.lv2.lv2_s0_get_research_areas [--input-file data/lv1/lv1_final.txt]
 
 # Step 1: Extract concepts from research areas
 python -m generate_glossary.generation.lv2.lv2_s1_extract_concepts [--provider openai|gemini]
 
 # Step 2: Filter concepts by department frequency
-python -m generate_glossary.generation.lv2.lv2_s2_filter_by_institution_freq
+python -m generate_glossary.generation.lv2.lv2_s2_filter_by_freq
 
 # Step 3: Verify single-token concepts
 python -m generate_glossary.generation.lv2.lv2_s3_verify_single_token [--provider openai|gemini]
@@ -201,7 +235,7 @@ Level 3 represents the most specialized level, extracting specific topic areas c
    - Extracts standardized venue-specific topics from raw topic names
    - Normalizes terminology across different venues
 
-3. **Frequency Filtering** (`lv3_s2_filter_by_conference_freq.py`):
+3. **Frequency Filtering** (`lv3_s2_filter_by_freq.py`):
    - Filters concepts based on frequency across venues
    - Ensures venue areas are representative
 
@@ -217,14 +251,20 @@ Level 3 represents the most specialized level, extracting specific topic areas c
 ### Usage
 
 ```bash
-# Step 0: Extract venue areas using Level 2 terms
-python -m generate_glossary.generation.lv3.lv3_s0_get_conference_topics [--input data/lv2/lv2_final.txt]
+# Using unified CLI
+uv run generate -l 3 -s 0  # Extract conference topics (default: data/lv2/lv2_final.txt)
+uv run generate -l 3 -s 1 --provider openai  # Extract concepts
+uv run generate -l 3 -s 2  # Filter by frequency
+uv run generate -l 3 -s 3 --provider openai  # Verify tokens
+
+# Or using direct scripts
+python -m generate_glossary.generation.lv3.lv3_s0_get_conference_topics [--input-file data/lv2/lv2_final.txt]
 
 # Step 1: Extract concepts from venue areas
 python -m generate_glossary.generation.lv3.lv3_s1_extract_concepts [--provider openai|gemini]
 
 # Step 2: Filter concepts by venue frequency
-python -m generate_glossary.generation.lv3.lv3_s2_filter_by_conference_freq
+python -m generate_glossary.generation.lv3.lv3_s2_filter_by_freq
 
 # Step 3: Verify single-token concepts
 python -m generate_glossary.generation.lv3.lv3_s3_verify_single_token [--provider openai|gemini]
@@ -253,7 +293,36 @@ The generation pipeline uses several shared utilities:
 
 ## Running the Complete Pipeline
 
-The generation pipeline is run level-by-level using individual scripts. Each level follows the same 4-step process:
+The generation pipeline can be run using either the unified CLI interface or individual scripts. Each level follows the same 4-step process:
+
+### Using the Unified CLI (Recommended)
+
+```bash
+# Example: Complete Level 0 Pipeline
+uv run generate -l 0 -s 0  # Get college names from Excel
+uv run generate -l 0 -s 1 --provider openai  # Extract concepts via LLM
+uv run generate -l 0 -s 2  # Filter by institution frequency  
+uv run generate -l 0 -s 3 --provider openai  # Verify single tokens
+
+# Example: Complete Level 1 Pipeline (uses Level 0 results)
+uv run generate -l 1 -s 0  # Web extraction for departments (default: data/lv0/lv0_final.txt)
+uv run generate -l 1 -s 1 --provider openai  # Extract department concepts
+uv run generate -l 1 -s 2  # Frequency filtering
+uv run generate -l 1 -s 3 --provider openai  # Token verification
+
+# Example: Level 2 with custom input and Gemini provider
+uv run generate -l 2 -s 0 --input-file data/lv1/custom.txt
+uv run generate -l 2 -s 1 --provider gemini
+uv run generate -l 2 -s 2
+uv run generate -l 2 -s 3 --provider gemini
+
+# Test mode (processes 10% sample)
+uv run generate -l 1 -s 1 --provider openai --test
+```
+
+### Using Direct Script Execution
+
+For advanced users who prefer direct script execution:
 
 ```bash
 # Example: Complete Level 0 Pipeline
@@ -263,10 +332,10 @@ python -m generate_glossary.generation.lv0.lv0_s2_filter_by_institution_freq
 python -m generate_glossary.generation.lv0.lv0_s3_verify_single_token --provider openai
 
 # Example: Complete Level 1 Pipeline (uses Level 0 results)
-python -m generate_glossary.generation.lv1.lv1_s0_get_dept_names --input data/lv0/lv0_final.txt
+python -m generate_glossary.generation.lv1.lv1_s0_get_dept_names --parent-level-file data/lv0/lv0_final.txt
 python -m generate_glossary.generation.lv1.lv1_s1_extract_concepts --provider openai
-python -m generate_glossary.generation.lv1.lv1_s2_filter_by_institution_freq
-python -m generate_glossary.generation.lv1.lv1_s3_verify_single_token --provider openai
+python -m generate_glossary.generation.lv1.lv1_s2_filter_by_freq
+python -m generate_glossary.generation.lv1.lv1_s3_verify_tokens --provider openai
 ```
 
 ## Integration with Validation and Deduplication
@@ -300,18 +369,22 @@ Extracts college/school names from faculty data files.
 - Outputs to: `data/generation/lv0/lv0_s0_output.txt`
 
 #### `lv0_s1_extract_concepts.py`
-Extracts academic concepts from college/school names using LLM consensus.
+Extracts academic concepts from college/school names using LLM consensus with automatic prompt optimization support.
 
 **Key Components:**
 - `ConceptExtraction`: Pydantic model for concept extraction
 - `extract_concepts_with_consensus()`: Uses parallel LLM calls for consensus
 - `process_source_chunk()`: Processes batches of sources
-- **Prompt Optimization Support**: Automatically loads optimized prompts if available
+- **Prompt Optimization Support**: 
+  - Automatically loads optimized prompts from `data/prompts/lv0_s1_*_latest.json`
+  - Falls back to default prompts if optimized versions not found
+  - Supports GEPA-optimized prompts with 21% performance improvement
 - **Configuration:**
   - `BATCH_SIZE`: 20 institutions per LLM request
   - `LLM_ATTEMPTS`: 3 consensus attempts
   - `FREQUENCY_THRESHOLD`: 2 minimum occurrences
   - `TEMPERATURE`: 1.0 for GPT-5 models
+  - `PROVIDER`: Configurable via `--provider` flag (openai/gemini)
 
 #### `lv0_s2_filter_by_institution_freq.py`
 Filters concepts by frequency across institutions.
@@ -322,11 +395,16 @@ Filters concepts by frequency across institutions.
 - Outputs filtered concepts to next stage
 
 #### `lv0_s3_verify_single_token.py`
-Verifies single-word concepts are valid academic terms.
+Verifies single-word concepts are valid academic terms using LLM-based binary classification.
 
 **Key Components:**
 - LLM-based verification of single tokens
 - Multi-word concepts bypass verification
+- **Prompt Optimization Support**:
+  - Automatically loads optimized prompts from `data/prompts/lv0_s3_*_latest.json`
+  - Falls back to default prompts if optimized versions not found
+  - GEPA-optimized for high-precision binary classification
+- Binary classification approach with evidence-based reasoning
 - Final output: `data/generation/lv0/lv0_s3_output.txt`
 
 ### Shared Modules
@@ -383,19 +461,9 @@ Configuration management for different hierarchy levels.
   - `frequency_threshold`: Minimum frequency
   - `llm_attempts`: Consensus attempts
 
-### Runner Modules
+### Integration with LLM Utils & Prompt Optimization
 
-#### `runners/lv1_runner.py`, `runners/lv2_runner.py`, `runners/lv3_runner.py`
-Orchestration scripts for running complete level pipelines.
-
-**Functions:**
-- `run_level()`: Executes all 4 steps for a level
-- `validate_prerequisites()`: Checks previous level completion
-- `generate_report()`: Creates summary report
-
-### Integration with LLM Utils
-
-The generation modules integrate with the centralized LLM utilities:
+The generation modules integrate with centralized LLM utilities and prompt optimization:
 
 #### `utils/llm.py` Integration
 
@@ -416,6 +484,24 @@ consensus = await structured_completion_consensus(
     cache_ttl=3600  # 1-hour cache
 )
 ```
+
+#### Prompt Optimization Integration
+
+**Automatic Loading of Optimized Prompts:**
+```python
+# Generation scripts automatically check for optimized prompts
+optimized_prompt = load_prompt_from_file("data/prompts/lv0_s1_system_latest.json")
+if optimized_prompt:
+    system_prompt = optimized_prompt  # Use GEPA-optimized version
+else:
+    system_prompt = DEFAULT_PROMPT    # Fall back to default
+```
+
+**Optimization Workflow:**
+1. Run GEPA optimizer: `uv run optimize-prompt --name lv0_s1`
+2. Prompts saved to: `data/prompts/lv0_s1_*_latest.json`
+3. Generation scripts automatically use optimized versions
+4. Falls back to defaults if optimization not available
 
 ## Environment Configuration
 
@@ -506,9 +592,11 @@ if checkpoint_file.exists():
    - Clear cache periodically for fresh data
 
 4. **Prompt Optimization**:
-   - Run optimization before production deployment
-   - Match training batch size to production usage
-   - Use appropriate models for task vs reflection
+   - Run GEPA optimization for critical prompts: `uv run optimize-prompt --name lv0_s1`
+   - Use `auto="heavy"` for production optimization
+   - Separate task model (gpt-5-nano) from reflection model (gpt-5)
+   - Monitor optimization reports in `data/optimization_reports/`
+   - Optimized prompts automatically loaded by generation scripts
 
 5. **Monitoring**:
    - Check metadata files for processing statistics

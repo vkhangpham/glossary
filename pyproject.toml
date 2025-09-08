@@ -88,17 +88,17 @@ glossary-lv1-s1 = "generate_glossary.generation.lv1.lv1_s1_extract_concepts:main
 glossary-lv1-s2 = "generate_glossary.generation.lv1.lv1_s2_filter_by_freq:main"
 glossary-lv1-s3 = "generate_glossary.generation.lv1.lv1_s3_verify_tokens:main"
 
-# Level 2 generation commands (refactored with shared utilities)
-glossary-lv2-s0 = "generate_glossary.generation.runners.lv2_runner:lv2_s0_main"
-glossary-lv2-s1 = "generate_glossary.generation.runners.lv2_runner:lv2_s1_main"
-glossary-lv2-s2 = "generate_glossary.generation.runners.lv2_runner:lv2_s2_main"
-glossary-lv2-s3 = "generate_glossary.generation.runners.lv2_runner:lv2_s3_main"
+# Level 2 generation commands (using standalone scripts)
+glossary-lv2-s0 = "generate_glossary.generation.lv2.lv2_s0_get_research_areas:main"
+glossary-lv2-s1 = "generate_glossary.generation.lv2.lv2_s1_extract_concepts:main"
+glossary-lv2-s2 = "generate_glossary.generation.lv2.lv2_s2_filter_by_freq:main"
+glossary-lv2-s3 = "generate_glossary.generation.lv2.lv2_s3_verify_tokens:main"
 
-# Level 3 generation commands (refactored with shared utilities)
-glossary-lv3-s0 = "generate_glossary.generation.runners.lv3_runner:lv3_s0_main"
-glossary-lv3-s1 = "generate_glossary.generation.runners.lv3_runner:lv3_s1_main"
-glossary-lv3-s2 = "generate_glossary.generation.runners.lv3_runner:lv3_s2_main"
-glossary-lv3-s3 = "generate_glossary.generation.runners.lv3_runner:lv3_s3_main"
+# Level 3 generation commands (using standalone scripts)
+glossary-lv3-s0 = "generate_glossary.generation.lv3.lv3_s0_get_conference_topics:main"
+glossary-lv3-s1 = "generate_glossary.generation.lv3.lv3_s1_extract_concepts:main"
+glossary-lv3-s2 = "generate_glossary.generation.lv3.lv3_s2_filter_by_freq:main"
+glossary-lv3-s3 = "generate_glossary.generation.lv3.lv3_s3_verify_tokens:main"
 
 # Post-processing commands
 glossary-web-miner = "generate_glossary.web_miner_cli:main"

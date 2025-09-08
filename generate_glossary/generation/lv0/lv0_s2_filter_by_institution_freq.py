@@ -196,7 +196,7 @@ def main():
             if freq_data["count"] >= min_institutions
         },
         "selected_institutions": selected_institutions,
-        "source_concept_mapping": source_concept_mapping,  # Keep original mapping for reference
+        "source_concept_mapping": source_concept_mapping,
     }
 
     with open(META_FILE, "w", encoding="utf-8") as f:

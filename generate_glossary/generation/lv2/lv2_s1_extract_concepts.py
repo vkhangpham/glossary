@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 """
-Level 1 Step 1: Extract Academic Concepts from Department Names
+Level 2 Step 1: Extract Academic Concepts from Research Areas
 
 This script uses LLM-based extraction to identify academic concepts
-from department names collected in Step 0.
+from research areas collected in Step 0.
 """
 
-import sys
 from pathlib import Path
-from typing import Optional, Dict, Any
-import json
 
 from generate_glossary.utils.logger import setup_logger
 from ..concept_extraction import extract_concepts_llm
@@ -29,16 +26,16 @@ def to_test_path(path: Path) -> Path:
         return path
 
 # Constants
-LEVEL = 1
+LEVEL = 2
 STEP = "s1"
 
 # Setup logger
-logger = setup_logger("lv1.s1")
+logger = setup_logger("lv2.s1")
 
 
 def main(test_mode: bool = False, provider: str = "openai") -> None:
     """
-    Main function to extract academic concepts from department names.
+    Main function to extract academic concepts from research areas.
     
     Args:
         test_mode: If True, uses test directories and smaller datasets
@@ -69,13 +66,13 @@ def main(test_mode: bool = False, provider: str = "openai") -> None:
         if not input_file.exists():
             raise FileNotFoundError(f"Input file not found: {input_file}")
         
-        logger.info(f"Reading department names from: {input_file}")
+        logger.info(f"Reading research areas from: {input_file}")
         
         # Ensure output directory exists
         output_file.parent.mkdir(parents=True, exist_ok=True)
         
         # Extract concepts using LLM
-        logger.info("Extracting academic concepts from department names...")
+        logger.info("Extracting academic concepts from research areas...")
         result = extract_concepts_llm(
             input_file=str(input_file),
             level=LEVEL,
@@ -85,14 +82,16 @@ def main(test_mode: bool = False, provider: str = "openai") -> None:
         )
         
         if result and result.get('success'):
-            logger.info(f"Successfully extracted concepts from {result['input_items_count']} departments")
-            logger.info(f"Total concepts extracted: {result['extracted_concepts_count']}")
+            input_items_count = result.get('input_items_count', 0)
+            extracted_concepts_count = result.get('extracted_concepts_count', 0)
+            logger.info(f"Successfully extracted concepts from {input_items_count} research areas")
+            logger.info(f"Total concepts extracted: {extracted_concepts_count}")
             logger.info(f"Output saved to: {output_file}")
             logger.info(f"Metadata saved to: {metadata_file}")
             
             # Report statistics
             logger.info("Extraction Statistics:")
-            logger.info(f"  - Average concepts per department: {result.get('concepts_per_input', 0):.2f}")
+            logger.info(f"  - Average concepts per research area: {result.get('concepts_per_input', 0):.2f}")
             logger.info(f"  - Processing time: {result.get('processing_time_seconds', 0):.2f} seconds")
         else:
             logger.warning("No concepts extracted")
@@ -104,43 +103,43 @@ def main(test_mode: bool = False, provider: str = "openai") -> None:
 
 def test(provider: str = "openai") -> None:
     """
-    Test function for Level 1 Step 1.
+    Test function for Level 2 Step 1.
     Uses test directories and smaller datasets.
     
     Args:
         provider: LLM provider to use for testing
     """
     logger.info("=" * 60)
-    logger.info("Running Level 1 Step 1 in TEST mode")
+    logger.info("Running Level 2 Step 1 in TEST mode")
     logger.info("=" * 60)
     
     # Create test directories if needed
     test_dirs = [
-        Path("data/test/lv1/raw"),
-        Path("data/test/lv1/processed"),
+        Path("data/test/lv2/raw"),
+        Path("data/test/lv2/processed"),
     ]
     for dir_path in test_dirs:
         dir_path.mkdir(parents=True, exist_ok=True)
     
     # Create a small test input file if it doesn't exist
-    test_input = Path("data/test/lv1/raw/lv1_s0_department_names.txt")
+    test_input = Path("data/test/lv2/raw/lv2_s0_research_areas.txt")
     if not test_input.exists():
-        logger.info("Creating test input file with sample department names...")
-        test_depts = [
-            "Computer Science Department",
-            "Department of Electrical Engineering",
-            "Mathematics Department",
-            "Physics Department",
-            "Chemistry Department"
+        logger.info("Creating test input file with sample research areas...")
+        test_areas = [
+            "Machine Learning",
+            "Computer Vision",
+            "Natural Language Processing",
+            "Robotics",
+            "Cybersecurity"
         ]
-        test_input.write_text("\n".join(test_depts))
-        logger.info(f"Created test input with {len(test_depts)} departments")
+        test_input.write_text("\n".join(test_areas))
+        logger.info(f"Created test input with {len(test_areas)} research areas")
     
     # Run main in test mode with specified provider
     main(test_mode=True, provider=provider)
     
     logger.info("=" * 60)
-    logger.info("Test completed for Level 1 Step 1")
+    logger.info("Test completed for Level 2 Step 1")
     logger.info("=" * 60)
 
 
@@ -149,7 +148,7 @@ if __name__ == "__main__":
     import os
     
     parser = argparse.ArgumentParser(
-        description="Level 1 Step 1: Extract Academic Concepts from Department Names"
+        description="Level 2 Step 1: Extract Academic Concepts from Research Areas"
     )
     parser.add_argument(
         "--test",

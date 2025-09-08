@@ -20,7 +20,7 @@ from generate_glossary.mining.firecrawl import (
     mine_concepts_with_firecrawl
 )
 from generate_glossary.utils.llm import completion
-from .level_config import get_level_config
+from generate_glossary.generation.level_config import get_level_config
 
 
 # Processing constants
@@ -132,7 +132,6 @@ def validate_content_with_llm(content_list: List[str], term: str, level: int) ->
                     for line in lines:
                         line = line.strip()
                         if line and not line.startswith(('```', '#', '*', '-')):
-                            # Remove bullet points, numbers, quotes
                             clean_line = line.lstrip('123456789.-*"\'').strip()
                             if clean_line:
                                 all_validated.append(clean_line)
@@ -141,7 +140,6 @@ def validate_content_with_llm(content_list: List[str], term: str, level: int) ->
             logger.warning(f"LLM validation attempt {attempt + 1} failed: {str(e)}")
             continue
     
-    # Return items that appeared in multiple attempts (agreement-based filtering)
     if all_validated:
         item_counts = Counter(all_validated)
         config = get_level_config(level)
@@ -157,7 +155,6 @@ def extract_items_from_firecrawl_results(results: Dict[str, Any], term: str, lev
     config = get_level_config(level)
     extracted_items = []
     
-    # Get resources from the results
     resources = results.get('resources', [])
     
     for resource in resources:
@@ -166,8 +163,6 @@ def extract_items_from_firecrawl_results(results: Dict[str, Any], term: str, lev
         if not content:
             continue
             
-        # Use simple heuristics to extract list-like content
-        # Split by common delimiters and patterns
         lines = content.split('\n')
         potential_items = []
         
@@ -282,7 +277,6 @@ def extract_web_content(
     
     logger.info(f"Starting Level {level} web extraction with Firecrawl: {config.processing_description}")
     
-    # Initialize Firecrawl
     app = initialize_firecrawl()
     if not app:
         logger.error("Failed to initialize Firecrawl. Please set FIRECRAWL_API_KEY.")
@@ -321,7 +315,7 @@ def extract_web_content(
                     # Validate with LLM if we have items
                     if extracted_items:
                         validated_items = validate_content_with_llm(
-                            extracted_items[:MAX_RESULTS_PER_TERM * 5],  # Send more for validation
+                            extracted_items[:MAX_RESULTS_PER_TERM * 5],
                             term,
                             level
                         )
@@ -334,7 +328,6 @@ def extract_web_content(
                     
         except Exception as e:
             logger.error(f"Error processing batch: {str(e)}")
-            # Add empty results for failed terms
             for term in batch:
                 if term not in all_results:
                     all_results[term] = []
@@ -342,7 +335,6 @@ def extract_web_content(
     # Save results
     save_results(all_results, output_file, metadata_file, level)
     
-    # Return processing metadata
     total_extracted = sum(len(items) for items in all_results.values())
     
     return {

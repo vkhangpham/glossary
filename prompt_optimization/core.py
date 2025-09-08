@@ -12,7 +12,6 @@ import json
 from datetime import datetime
 import logging
 
-# Set up logging
 logger = logging.getLogger(__name__)
 
 
@@ -67,11 +66,9 @@ def save_prompt(
     except Exception as e:
         raise IOError(f"Failed to create directory {output_path}: {e}")
 
-    # Create filename with _latest suffix (exact format expected by generation scripts)
     filename = f"{prompt_key}_latest.json"
     filepath = output_path / filename
 
-    # Create simple JSON structure compatible with load_prompt_from_file()
     prompt_data: Dict[str, Any] = {
         "content": prompt_content,
         "metadata": {

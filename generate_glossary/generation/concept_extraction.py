@@ -193,14 +193,10 @@ def process_concept_batches(
     logger = setup_logger(f"lv{level}.s1")
     config = get_level_config(level)
 
-    # Split into batches
     batches = list(chunk(input_data, config.batch_size))
     logger.info(f"Processing {len(batches)} batches of size {config.batch_size}")
 
-    # Process without checkpoint system for now
     # TODO: Re-enable checkpoint system when resilient_processing is available
-
-    # Process batches with checkpointing
     all_extractions = []
 
     for batch_idx, batch in enumerate(tqdm(batches, desc="Processing batches")):
@@ -217,7 +213,6 @@ def process_concept_batches(
             # Combine results from multiple attempts
             batch_extractions = []
             if batch_results:
-                # Create mapping from source to all concepts
                 concept_votes = {}
                 for result in batch_results:
                     for extraction in result:
@@ -342,7 +337,6 @@ def extract_concepts_llm(
         logger.warning("No input data found")
         return {"error": "No input data"}
 
-    # Create level-specific system prompt
     system_prompt = create_system_prompt(level)
 
     # Process concepts with LLM
@@ -385,7 +379,6 @@ def extract_concepts_llm(
         extracted_concepts, output_file, metadata_file, level, processing_stats
     )
 
-    # Return processing metadata
     return {
         "level": level,
         "step": "s1",

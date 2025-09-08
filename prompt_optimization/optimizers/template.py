@@ -72,7 +72,6 @@ def create_training_data():
                 }
             },
         },
-        # Add more examples...
     ]
 
     return training_examples
@@ -96,7 +95,7 @@ def prepare_dspy_examples(training_data: List[Dict]) -> List[Example]:
     return examples
 
 
-def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None):  # type: ignore
+def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None):
     """Metric function for GEPA that evaluates quality with feedback
 
     GEPA requires this specific signature with 5 arguments, but DSPy's evaluate
@@ -121,7 +120,6 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
         else:
             feedback = "Excellent! [What was done well]"
 
-        # Return dspy.Prediction for GEPA compatibility
         return dspy.Prediction(score=score, feedback=feedback)
 
     except Exception as e:
@@ -186,7 +184,6 @@ if __name__ == "__main__":
     if not os.getenv("OPENAI_API_KEY"):
         raise ValueError("Please set OPENAI_API_KEY environment variable")
 
-    # Setup DSPy with OpenAI (v3 uses dspy.LM)
     api_key = os.getenv("OPENAI_API_KEY")
     if api_key:
         os.environ["OPENAI_API_KEY"] = api_key
@@ -219,8 +216,8 @@ if __name__ == "__main__":
 
     # Configure with best practices
     optimizer = GEPA(
-        metric=metric_with_feedback,  # type: ignore
-        auto=auto_level,  # type: ignore  # auto_level is correctly one of "light", "medium", "heavy"
+        metric=metric_with_feedback,
+        auto=auto_level,
         num_threads=4,  # Parallel evaluation for speed
         reflection_minibatch_size=3,  # Good balance of reflection quality
         candidate_selection_strategy="pareto",  # Best strategy for diverse solutions

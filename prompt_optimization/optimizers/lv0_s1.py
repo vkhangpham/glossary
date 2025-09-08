@@ -10,22 +10,21 @@ import sys
 import time
 from typing import Any, Dict, List
 
-# Load environment variables from .env file if it exists
 from dotenv import load_dotenv
 
 load_dotenv()
 
-import dspy  # noqa: E402
-from dspy.teleprompt import GEPA  # noqa: E402
+import dspy
+from dspy.teleprompt import GEPA
 
-from prompt_optimization.core import save_prompt  # noqa: E402
-from prompt_optimization.optimizers.common import (  # noqa: E402
+from prompt_optimization.core import save_prompt
+from prompt_optimization.optimizers.common import (
     configure_openai_lms,
     extract_optimized_instruction,
     load_json_training,
     split_train_val,
 )
-from prompt_optimization.reporter import (  # noqa: E402
+from prompt_optimization.reporter import (
     evaluate_initial_performance,
     create_optimization_report,
 )
@@ -127,7 +126,6 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
 
         # Calculate scores
 
-        # Check if prediction is a list of extractions
         if isinstance(pred_extraction, list):
             pred_concepts = set()
             for ext in pred_extraction:
@@ -135,7 +133,6 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
         else:
             pred_concepts = set(pred_extraction.get("concepts", []))
 
-        # Get gold concepts
         gold_concepts = set()
         for ext in gold_extractions:
             gold_concepts.update(ext.get("concepts", []))
@@ -155,7 +152,6 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
             else 0
         )
 
-        # Generate feedback
         feedback = []
         if f1 < 0.5:
             feedback.append("Low F1 score indicates poor concept extraction.")
@@ -173,7 +169,6 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
                 "No concepts extracted. Ensure you're identifying academic terms."
             )
 
-        # Check for structure
         if not isinstance(pred_extraction, (list, dict)):
             feedback.append("Output should be a valid JSON structure.")
 
@@ -228,7 +223,6 @@ def optimize_prompts():
         "track_best_outputs": True,  # Best practice - helpful for debugging and analysis
     }
 
-    # Set budget parameter (only one should be set)
     if max_metric_calls:
         optimizer_kwargs["max_metric_calls"] = int(max_metric_calls)
         print(f"Using max_metric_calls: {max_metric_calls}")
@@ -239,7 +233,6 @@ def optimize_prompts():
         optimizer_kwargs["auto"] = auto_level
         print(f"Using optimization level: {auto_level}")
 
-    # Define default templates with required placeholders
     DEFAULT_S1_USER = """Extract academic concepts from these institutions:\n\n{sources}\n\n"
         "For each institution, identify the core academic fields and disciplines.\n"
         "Return a JSON array where each object has 'source' (the institution name) and 'concepts' (list of concepts)."""
@@ -268,7 +261,6 @@ def optimize_prompts():
 
     print("\nExtracting optimized prompts...")
 
-    # Extract optimized instruction using common helper
     user_prompt_template = extract_optimized_instruction(optimized, DEFAULT_S1_USER)
 
     print("Saving optimized prompts...")
@@ -279,11 +271,9 @@ def optimize_prompts():
     print(f"Saved system prompt to: {system_path}")
     print(f"Saved user prompt to: {user_path}")
 
-    # Calculate optimization duration
     duration = time.time() - start_time
     duration_str = f"{int(duration // 60)}m {int(duration % 60)}s"
 
-    # Generate comprehensive optimization report
     print("\nGenerating optimization report...")
     try:
         report_paths = create_optimization_report(
