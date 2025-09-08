@@ -1,0 +1,17 @@
+{
+  "level": 1,
+  "step": "s1",
+  "total_source_concept_pairs": 0,
+  "total_unique_concepts": 0,
+  "total_sources_processed": 0,
+  "processing_timestamp": 1757330931.567105,
+  "config_used": {
+    "batch_size": 15,
+    "agreement_threshold": 2
+  },
+  "input_items_count": 2,
+  "extracted_concepts_count": 0,
+  "processing_time_seconds": 2.385976791381836,
+  "concepts_per_input": 0.0,
+  "provider_used": "gemini"
+}

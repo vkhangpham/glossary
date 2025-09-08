@@ -20,7 +20,7 @@ from tqdm import tqdm
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import ensure_directories
-from generate_glossary.utils.llm import completion
+from generate_glossary.utils.llm import completion, get_model_by_tier
 from generate_glossary.deduplication.utils import normalize_text
 # Resilient processing not yet implemented
 # from generate_glossary.utils.resilient_processing import (
@@ -143,12 +143,29 @@ def process_concept_batch(
     ]
     
     try:
+        # Determine model based on provider or tier
+        if provider:
+            # Map provider to a specific model
+            if provider == "openai":
+                model_str = "openai/gpt-4o-mini"
+            elif provider == "anthropic":
+                model_str = "anthropic/claude-3-haiku-20240307"
+            elif provider == "gemini":
+                model_str = "gemini/gemini-1.5-flash"
+            else:
+                # Fallback to tier-based selection
+                tier = "budget" if level == 0 else "balanced"
+                model_str = get_model_by_tier(tier)
+        else:
+            # Use tier-based selection
+            tier = "budget" if level == 0 else "balanced"
+            model_str = get_model_by_tier(tier)
+        
         # Use structured completion for reliable parsing
-        tier = "budget" if level == 0 else "balanced"
         response = completion(
             messages=messages,
             response_model=ConceptExtractionList,
-            tier=tier
+            model=model_str
         )
         
         if response and hasattr(response, 'extractions'):
@@ -333,13 +350,22 @@ def extract_concepts_llm(
         for concept in extraction.concepts:
             unique_concepts.add(normalize_text(concept))
     
+    # Determine which provider was actually used
+    if provider:
+        actual_provider = provider
+    else:
+        # Tier-based selection was used
+        tier = "budget" if level == 0 else "balanced"
+        model_str = get_model_by_tier(tier)
+        actual_provider = model_str.split('/')[0] if '/' in model_str else 'tier_based'
+    
     # Processing statistics
     processing_stats = {
         'input_items_count': len(input_data),
         'extracted_concepts_count': len(unique_concepts),
         'processing_time_seconds': processing_time,
         'concepts_per_input': total_concepts / len(input_data) if input_data else 0,
-        'provider_used': provider or 'random_selection'
+        'provider_used': actual_provider
     }
     
     # Save results

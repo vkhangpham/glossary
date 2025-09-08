@@ -47,7 +47,7 @@ def main(test_mode: bool = False, provider: str = "openai") -> None:
     # Note: model parameter removed as it's not used by the underlying extract_concepts_llm function
     try:
         logger.info(f"Starting Level {LEVEL} Step 1: Concept Extraction")
-        logger.info(f"Using LLM provider: {provider}" + (f" with model: {model}" if model else ""))
+        logger.info(f"Using LLM provider: {provider}")
         
         # Get configuration and file paths
         config = get_level_config(LEVEL)
@@ -102,10 +102,13 @@ def main(test_mode: bool = False, provider: str = "openai") -> None:
         raise
 
 
-def test() -> None:
+def test(provider: str = "openai") -> None:
     """
     Test function for Level 1 Step 1.
     Uses test directories and smaller datasets.
+    
+    Args:
+        provider: LLM provider to use for testing
     """
     logger.info("=" * 60)
     logger.info("Running Level 1 Step 1 in TEST mode")
@@ -133,8 +136,8 @@ def test() -> None:
         test_input.write_text("\n".join(test_depts))
         logger.info(f"Created test input with {len(test_depts)} departments")
     
-    # Run main in test mode with default provider
-    main(test_mode=True, provider="openai")
+    # Run main in test mode with specified provider
+    main(test_mode=True, provider=provider)
     
     logger.info("=" * 60)
     logger.info("Test completed for Level 1 Step 1")
@@ -157,14 +160,12 @@ if __name__ == "__main__":
         "--provider",
         choices=["openai", "anthropic", "gemini"],
         default=os.getenv("GLOSSARY_LLM_PROVIDER", "openai"),
-        help="LLM provider to use (default: openai or GLOSSARY_LLM_PROVIDER env var)"
+        help="LLM provider to use (maps to specific models: openai->gpt-4o-mini, anthropic->claude-3-haiku, gemini->gemini-1.5-flash)"
     )
-    # Note: --model parameter removed as it's not currently used by the underlying functions
-    # The LLM tier system selects models automatically based on provider
     
     args = parser.parse_args()
     
     if args.test:
-        test()
+        test(provider=args.provider)
     else:
         main(provider=args.provider)
