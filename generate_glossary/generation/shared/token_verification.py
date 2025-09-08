@@ -15,11 +15,12 @@ from tqdm import tqdm
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import ensure_directories
-from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
-from generate_glossary.deduplicator.dedup_utils import normalize_text
-from generate_glossary.utils.resilient_processing import (
-    ConceptExtractionProcessor, create_processing_config
-)
+from generate_glossary.utils.llm import completion, get_model_by_tier
+from generate_glossary.deduplication.utils import normalize_text
+# Resilient processing not yet implemented
+# from generate_glossary.utils.resilient_processing import (
+#     ConceptExtractionProcessor, create_processing_config
+# )
 from .level_config import get_level_config
 
 
@@ -164,21 +165,29 @@ Consider the term in the context of {config.processing_description}.
 
 Answer with only "YES" or "NO" followed by a brief justification."""
     
-    # Get provider configuration
+    # Create messages for completion API
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": prompt}
+    ]
+    
+    # Determine model/tier
     if provider:
-        llm_provider = provider
-        model = None
+        # Use specific provider/model if provided
+        model_str = f"{provider}/gpt-4o-mini" if provider == "openai" else None
     else:
-        llm_provider, model = get_random_llm_config(level)
+        # Use tier-based selection
+        tier = "budget" if level == 0 else "balanced"
+        model_str = get_model_by_tier(tier)
     
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            response = infer_text(
-                provider=llm_provider,
-                prompt=prompt,
-                system_prompt=system_prompt,
-                model=model
+            response = completion(
+                messages=messages,
+                model=model_str,
+                temperature=0.3,
+                max_tokens=100
             )
             
             if not response:
@@ -238,38 +247,15 @@ def verify_terms_batch(
     if not terms:
         return []
     
-    # Use checkpoint system for recovery
-    checkpoint_config = create_processing_config(
-        level=level,
-        step="s3",
-        operation="verify_tokens",
-        batch_size=1,  # Verify one term at a time
-        provider=provider or "random"
-    )
-    
-    processor = ConceptExtractionProcessor(
-        config=checkpoint_config,
-        processing_function=lambda term_list: [
-            verify_single_term(term_list[0], level, system_prompt, provider)
-            for _ in range(1)  # Process single term
-        ]
-    )
+    # Process without checkpoint system for now
+    # TODO: Re-enable checkpoint system when resilient_processing is available
     
     verified_terms = []
     
     for idx, term in enumerate(tqdm(terms, desc=f"Verifying terms")):
         try:
-            # Check for existing checkpoint
-            checkpoint_data = processor.load_checkpoint(idx)
-            if checkpoint_data is not None:
-                is_valid = checkpoint_data[0] if checkpoint_data else False
-                logger.debug(f"Resumed from checkpoint for term '{term}': {is_valid}")
-            else:
-                # Verify term
-                is_valid = verify_single_term(term, level, system_prompt, provider)
-                
-                # Save checkpoint
-                processor.save_checkpoint(idx, [is_valid])
+            # Verify term without checkpoint system
+            is_valid = verify_single_term(term, level, system_prompt, provider)
             
             if is_valid:
                 verified_terms.append(term)

@@ -15,7 +15,7 @@ from pathlib import Path
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import ensure_directories
-from generate_glossary.deduplicator.dedup_utils import normalize_text
+from generate_glossary.deduplication.utils import normalize_text
 from .level_config import get_level_config
 
 

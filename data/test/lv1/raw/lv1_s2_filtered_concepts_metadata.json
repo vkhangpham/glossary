@@ -1,0 +1,25 @@
+{
+  "level": 1,
+  "step": "s2",
+  "processing_timestamp": 1757328829.42453,
+  "config_used": {
+    "threshold_percent": 0.5
+  },
+  "statistics": {
+    "total_concepts_before": 5,
+    "total_concepts_after": 5,
+    "total_sources": 3,
+    "minimum_sources_required": 1,
+    "threshold_percent": 0.5,
+    "concepts_removed": 0,
+    "frequency_distribution": {
+      "2": 2,
+      "1": 1
+    },
+    "concept_frequencies": {
+      "Computer Science": 2,
+      "Data Science": 2,
+      "Machine Learning": 1
+    }
+  }
+}

@@ -20,11 +20,12 @@ from tqdm import tqdm
 
 from generate_glossary.utils.logger import setup_logger
 from generate_glossary.config import ensure_directories
-from generate_glossary.utils.llm import structured_completion
+from generate_glossary.utils.llm import completion
 from generate_glossary.deduplication.utils import normalize_text
-from generate_glossary.utils.resilient_processing import (
-    ConceptExtractionProcessor, create_processing_config, get_checkpoint_dir
-)
+# Resilient processing not yet implemented
+# from generate_glossary.utils.resilient_processing import (
+#     ConceptExtractionProcessor, create_processing_config, get_checkpoint_dir
+# )
 from .level_config import get_level_config
 
 
@@ -144,7 +145,7 @@ def process_concept_batch(
     try:
         # Use structured completion for reliable parsing
         tier = "budget" if level == 0 else "balanced"
-        response = structured_completion(
+        response = completion(
             messages=messages,
             response_model=ConceptExtractionList,
             tier=tier
@@ -166,7 +167,7 @@ def process_concept_batches(
     level: int,
     system_prompt: str,
     provider: Optional[str] = None
-) -> List[str]:
+) -> List[ConceptExtraction]:
     """Process all batches with agreement-based filtering."""
     logger = setup_logger(f"lv{level}.s1")
     config = get_level_config(level)
@@ -175,68 +176,50 @@ def process_concept_batches(
     batches = list(chunk(input_data, config.batch_size))
     logger.info(f"Processing {len(batches)} batches of size {config.batch_size}")
     
-    # Use checkpoint system for recovery
-    checkpoint_config = create_processing_config(
-        level=level,
-        step="s1",
-        operation="extract_concepts",
-        batch_size=config.batch_size,
-        provider=provider or "random"
-    )
-    
-    processor = ConceptExtractionProcessor(
-        config=checkpoint_config,
-        processing_function=lambda batch_data: process_concept_batch(
-            batch_data, level, system_prompt, provider
-        )
-    )
+    # Process without checkpoint system for now
+    # TODO: Re-enable checkpoint system when resilient_processing is available
     
     # Process batches with checkpointing
     all_extractions = []
     
     for batch_idx, batch in enumerate(tqdm(batches, desc="Processing batches")):
         try:
-            # Check for existing checkpoint
-            checkpoint_data = processor.load_checkpoint(batch_idx)
-            if checkpoint_data:
-                logger.info(f"Resuming from checkpoint for batch {batch_idx}")
-                batch_extractions = checkpoint_data
-            else:
-                # Process batch multiple times for agreement
-                batch_results = []
-                for attempt in range(config.agreement_threshold + 1):
-                    attempt_extractions = process_concept_batch(batch, level, system_prompt, provider)
-                    if attempt_extractions:
-                        batch_results.append(attempt_extractions)
+            # Process batch multiple times for agreement
+            batch_results = []
+            for attempt in range(config.agreement_threshold + 1):
+                attempt_extractions = process_concept_batch(batch, level, system_prompt, provider)
+                if attempt_extractions:
+                    batch_results.append(attempt_extractions)
+            
+            # Combine results from multiple attempts
+            batch_extractions = []
+            if batch_results:
+                # Create mapping from source to all concepts
+                concept_votes = {}
+                for result in batch_results:
+                    for extraction in result:
+                        source = extraction.source
+                        if source not in concept_votes:
+                            concept_votes[source] = []
+                        concept_votes[source].extend(extraction.concepts)
                 
-                # Combine results from multiple attempts
-                batch_extractions = []
-                if batch_results:
-                    # Create mapping from source to all concepts
-                    concept_votes = {}
-                    for result in batch_results:
-                        for extraction in result:
-                            source = extraction.source
-                            if source not in concept_votes:
-                                concept_votes[source] = []
-                            concept_votes[source].extend(extraction.concepts)
+                # Apply agreement threshold
+                for source, all_concepts in concept_votes.items():
+                    concept_counts = Counter(normalize_text(concept) for concept in all_concepts)
+                    agreed_concepts = [
+                        concept for concept, count in concept_counts.items()
+                        if count >= config.agreement_threshold
+                    ]
                     
-                    # Apply agreement threshold
-                    for source, all_concepts in concept_votes.items():
-                        concept_counts = Counter(normalize_text(concept) for concept in all_concepts)
-                        agreed_concepts = [
-                            concept for concept, count in concept_counts.items()
-                            if count >= config.agreement_threshold
-                        ]
-                        
-                        if agreed_concepts:
-                            batch_extractions.append(ConceptExtraction(
-                                source=source,
-                                concepts=agreed_concepts
-                            ))
+                    if agreed_concepts:
+                        batch_extractions.append(ConceptExtraction(
+                            source=source,
+                            concepts=agreed_concepts
+                        ))
                 
                 # Save checkpoint
-                processor.save_checkpoint(batch_idx, batch_extractions)
+                # Checkpoint saving disabled until resilient_processing is available
+                # processor.save_checkpoint(batch_idx, batch_extractions)
             
             all_extractions.extend(batch_extractions)
             
@@ -244,46 +227,42 @@ def process_concept_batches(
             logger.error(f"Error processing batch {batch_idx}: {str(e)}")
             continue
     
-    # Flatten all concepts
-    all_concepts = []
-    for extraction in all_extractions:
-        for concept in extraction.concepts:
-            all_concepts.append(concept.strip())
-    
-    # Remove duplicates while preserving order
-    unique_concepts = []
-    seen = set()
-    for concept in all_concepts:
-        normalized = normalize_text(concept)
-        if normalized not in seen:
-            seen.add(normalized)
-            unique_concepts.append(concept)
-    
-    logger.info(f"Extracted {len(unique_concepts)} unique concepts from {len(input_data)} inputs")
-    return unique_concepts
+    logger.info(f"Extracted concepts from {len(input_data)} inputs")
+    return all_extractions
 
 
 def save_extraction_results(
-    concepts: List[str],
+    extractions: List[ConceptExtraction],
     output_file: str,
     metadata_file: str,
     level: int,
     processing_stats: Dict[str, Any]
 ):
-    """Save extraction results to files."""
+    """Save extraction results to files with source-concept mapping."""
     logger = setup_logger(f"lv{level}.s1")
     
-    # Save concepts
+    # Save source-concept pairs for s2 frequency filtering
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    total_pairs = 0
     with open(output_file, 'w', encoding='utf-8') as f:
-        for concept in concepts:
-            f.write(concept + '\n')
+        for extraction in extractions:
+            for concept in extraction.concepts:
+                f.write(f"{extraction.source} - {concept}\n")
+                total_pairs += 1
+    
+    # Count unique concepts
+    unique_concepts = set()
+    for extraction in extractions:
+        for concept in extraction.concepts:
+            unique_concepts.add(normalize_text(concept))
     
     # Save metadata
     metadata = {
         'level': level,
         'step': 's1',
-        'total_concepts_extracted': len(concepts),
+        'total_source_concept_pairs': total_pairs,
+        'total_unique_concepts': len(unique_concepts),
+        'total_sources_processed': len(extractions),
         'processing_timestamp': time.time(),
         'config_used': {
             'batch_size': get_level_config(level).batch_size,
@@ -295,7 +274,7 @@ def save_extraction_results(
     with open(metadata_file, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, indent=2)
     
-    logger.info(f"Saved {len(concepts)} concepts to {output_file}")
+    logger.info(f"Saved {total_pairs} source-concept pairs ({len(unique_concepts)} unique concepts) to {output_file}")
 
 
 def extract_concepts_llm(
@@ -347,12 +326,19 @@ def extract_concepts_llm(
     )
     processing_time = time.time() - start_time
     
+    # Calculate statistics from ConceptExtraction objects
+    total_concepts = sum(len(extraction.concepts) for extraction in extracted_concepts)
+    unique_concepts = set()
+    for extraction in extracted_concepts:
+        for concept in extraction.concepts:
+            unique_concepts.add(normalize_text(concept))
+    
     # Processing statistics
     processing_stats = {
         'input_items_count': len(input_data),
-        'extracted_concepts_count': len(extracted_concepts),
+        'extracted_concepts_count': len(unique_concepts),
         'processing_time_seconds': processing_time,
-        'concepts_per_input': len(extracted_concepts) / len(input_data) if input_data else 0,
+        'concepts_per_input': total_concepts / len(input_data) if input_data else 0,
         'provider_used': provider or 'random_selection'
     }
     

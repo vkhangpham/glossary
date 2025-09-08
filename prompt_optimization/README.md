@@ -1,34 +1,39 @@
-# Simplified Prompt Optimization System
+# Prompt Optimization System
 
 ## Overview
 
-This is a simplified prompt optimization workflow using direct Python execution instead of complex CLI commands. The system uses DSPy GEPA for optimization and a straightforward JSON save/load mechanism that integrates seamlessly with generation scripts.
+This is a streamlined prompt optimization system using DSPy GEPA (Gradient-Enhanced Performance Augmentation) for automatic prompt optimization. The system provides both CLI and direct execution methods, with automatic environment variable loading from `.env` files.
 
 ## Quick Start
 
-### 1. Run Optimization
+### 1. Setup Environment
+
+Create a `.env` file in the project root:
+```bash
+OPENAI_API_KEY=your-key-here
+GEPA_GEN_MODEL=gpt-4o-mini      # Optional: defaults to gpt-5-nano
+GEPA_REFLECTION_MODEL=gpt-4o     # Optional: defaults to gpt-5
+```
+
+### 2. Run Optimization
 
 ```bash
-# Direct execution of optimizer scripts
-python prompt_optimization/optimizers/lv0_s1.py
-python prompt_optimization/optimizers/lv0_s3.py
+# Using the CLI (recommended - auto-loads .env)
+uv run optimize-prompt --name lv0_s1
+uv run optimize-prompt --name lv0_s3
 
-# Or use runner scripts
-python run_lv0_s1_optimization.py
-python run_lv0_s3_optimization.py
+# With specific budget controls
+uv run optimize-prompt --name lv0_s1 --max-full-evals 10
+uv run optimize-prompt --name lv0_s1 --auto medium
+
+# Direct execution (also auto-loads .env)
+uv run python prompt_optimization/optimizers/lv0_s1.py
+uv run python prompt_optimization/optimizers/lv0_s3.py
 ```
 
-### 2. Save Optimized Prompt
+Optimized prompts are automatically saved to `data/prompts/` after optimization completes.
 
-```python
-from prompt_optimization.save import save_prompt
-
-# Save the optimized prompt
-save_prompt("lv0_s1_system", optimized_prompt)
-# Creates: data/prompts/lv0_s1_system_latest.json
-```
-
-### 3. Automatic Loading
+### 3. Automatic Loading in Generation Scripts
 
 Generation scripts automatically load optimized prompts:
 
@@ -46,19 +51,23 @@ else:
 ### Project Organization
 ```
 prompt_optimization/
+├── cli.py                   # CLI interface with automatic .env loading
+├── core.py                  # Core save/load functionality
 ├── optimizers/
-│   ├── lv0_s1.py            # Level 0 Step 1 optimizer (direct execution)
-│   ├── lv0_s3.py            # Level 0 Step 3 optimizer (direct execution)
-│   ├── template.py          # Template for new optimizers
-│   └── common.py            # Shared utilities
-├── core.py                  # Core GEPA optimization logic
-└── save.py                  # Simplified save mechanism
+│   ├── lv0_s1.py           # Level 0 Step 1 optimizer
+│   ├── lv0_s3.py           # Level 0 Step 3 optimizer
+│   ├── template.py         # Template for new optimizers
+│   └── common.py           # Shared utilities (LLM config, data loading)
 
-data/prompts/
-├── lv0_s1_system_latest.json    # Level 0 Step 1 system prompt
-├── lv0_s1_user_latest.json      # Level 0 Step 1 user prompt
-├── lv0_s3_system_latest.json    # Level 0 Step 3 system prompt
-└── lv0_s3_user_latest.json      # Level 0 Step 3 user prompt
+data/prompts/                        # Auto-generated optimized prompts
+├── lv0_s1_system_latest.json    
+├── lv0_s1_user_latest.json      
+├── lv0_s3_system_latest.json    
+└── lv0_s3_user_latest.json      
+
+data/prompts_training_data/          # Training data for optimization
+├── lv0_s1.json                  # Training examples for concept extraction
+└── lv0_s3.json                  # Training examples for discipline verification
 ```
 
 ### JSON Format
@@ -76,23 +85,42 @@ data/prompts/
 }
 ```
 
-## Direct Execution Workflow
+## CLI Usage
 
-### Running Optimizers
+### List Available Optimizers
 ```bash
-# Set up environment
-export OPENAI_API_KEY="your-key"
-
-# Run optimizers directly - no CLI needed!
-python prompt_optimization/optimizers/lv0_s1.py
-python prompt_optimization/optimizers/lv0_s3.py
+uv run optimize-prompt --list
 ```
 
-The optimizers:
-1. Load training data from `data/training/`
-2. Run GEPA optimization with DSPy
-3. Save optimized prompts to `data/prompts/`
-4. Generation scripts automatically use the optimized versions
+### Run with Different Budget Controls
+```bash
+# Light optimization (fast, ~5 minutes)
+uv run optimize-prompt --name lv0_s1 --auto light
+
+# Medium optimization (balanced, ~15 minutes)  
+uv run optimize-prompt --name lv0_s1 --auto medium
+
+# Heavy optimization (thorough, ~30+ minutes)
+uv run optimize-prompt --name lv0_s1 --auto heavy
+
+# Specific number of full evaluations
+uv run optimize-prompt --name lv0_s1 --max-full-evals 10
+
+# Specific number of metric calls
+uv run optimize-prompt --name lv0_s1 --max-metric-calls 500
+```
+
+### Override Models
+```bash
+# Use different generation model
+uv run optimize-prompt --name lv0_s1 --model gpt-4o
+
+# Use different reflection model
+uv run optimize-prompt --name lv0_s1 --reflection-model gpt-4o
+
+# Verbose output for debugging
+uv run optimize-prompt --name lv0_s1 --verbose
+```
 
 ### Creating New Optimizers
 ```python
@@ -254,29 +282,52 @@ save_prompt("key", "Valid prompt content")
 
 ## Environment Setup
 
-### Required Environment Variables
+### Using .env File (Recommended)
+Create a `.env` file in the project root:
 ```bash
-# Required for optimization
-export OPENAI_API_KEY="your-key"
+# Required
+OPENAI_API_KEY=sk-your-key-here
 
-# Optional: Override default models
-export GEPA_GEN_MODEL="gpt-4o-mini"      # Generation model
-export GEPA_REFLECTION_MODEL="gpt-4"     # Reflection model (defaults to gen model)
+# Optional model overrides
+GEPA_GEN_MODEL=gpt-4o-mini      # Default: gpt-5-nano
+GEPA_REFLECTION_MODEL=gpt-4o     # Default: gpt-5
 ```
 
+The `.env` file is **automatically loaded** by both the CLI and direct execution methods.
+
+### Manual Export (Alternative)
+```bash
+export OPENAI_API_KEY="your-key"
+export GEPA_GEN_MODEL="gpt-4o-mini"
+export GEPA_REFLECTION_MODEL="gpt-4o"
+```
+
+### Special Model Requirements
+**Note**: OpenAI reasoning models (gpt-5-nano, gpt-5) require:
+- `temperature=1.0`
+- `max_tokens >= 16000`
+
+These are automatically configured when detected.
+
 ### Training Data Format
+
+Training data is stored in `data/prompts_training_data/`:
+
 ```json
-// data/training/lv0_s1.json
+// data/prompts_training_data/lv0_s1.json
 [
   {
     "input": "College of Engineering",
-    "expected_output": [
-      {
-        "source": "College of Engineering",
-        "concepts": ["engineering", "computer science", "mechanical engineering"],
-        "reasoning": "Core academic disciplines in engineering"
-      }
-    ]
+    "expected": ["engineering", "computer science", "mechanical engineering"]
+  }
+]
+
+// data/prompts_training_data/lv0_s3.json  
+[
+  {
+    "keyword": "engineering",
+    "expected": true,
+    "evidence_colleges": ["College of Engineering", "School of Engineering"]
   }
 ]
 ```

@@ -82,11 +82,11 @@ glossary-lv0-s1 = "generate_glossary.generation.lv0.lv0_s1_extract_concepts:main
 glossary-lv0-s2 = "generate_glossary.generation.lv0.lv0_s2_filter_by_institution_freq:main"
 glossary-lv0-s3 = "generate_glossary.generation.lv0.lv0_s3_verify_single_token:main"
 
-# Level 1 generation commands (refactored with shared utilities)
-glossary-lv1-s0 = "generate_glossary.generation.runners.lv1_runner:lv1_s0_main"
-glossary-lv1-s1 = "generate_glossary.generation.runners.lv1_runner:lv1_s1_main" 
-glossary-lv1-s2 = "generate_glossary.generation.runners.lv1_runner:lv1_s2_main"
-glossary-lv1-s3 = "generate_glossary.generation.runners.lv1_runner:lv1_s3_main"
+# Level 1 generation commands (standalone scripts)
+glossary-lv1-s0 = "generate_glossary.generation.lv1.lv1_s0_get_dept_names:main"
+glossary-lv1-s1 = "generate_glossary.generation.lv1.lv1_s1_extract_concepts:main" 
+glossary-lv1-s2 = "generate_glossary.generation.lv1.lv1_s2_filter_by_freq:main"
+glossary-lv1-s3 = "generate_glossary.generation.lv1.lv1_s3_verify_tokens:main"
 
 # Level 2 generation commands (refactored with shared utilities)
 glossary-lv2-s0 = "generate_glossary.generation.runners.lv2_runner:lv2_s0_main"
@@ -122,9 +122,12 @@ glossary-security = "generate_glossary.utils.security_cli:main"
 # Disambiguation commands
 glossary-disambiguate = "generate_glossary.disambiguation.main:main"
 
+# Prompt optimization commands
+optimize-prompt = "prompt_optimization.cli:main"
+
 
 [tool.hatch.build.targets.wheel]
-packages = ["generate_glossary", "hierarchy", "generate_definition"]
+packages = ["generate_glossary", "hierarchy", "generate_definition", "prompt_optimization"]
 
 [tool.uv]
 dev-dependencies = [

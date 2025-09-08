@@ -6,8 +6,8 @@ Usage:
     python run_lv0_s3_optimization.py
     
 Requires:
-    - OPENAI_API_KEY environment variable to be set
-    - Training data in data/training/lv0_s3.json
+    - OPENAI_API_KEY (in .env file or environment variable)
+    - Training data in data/prompts_training_data/lv0_s3.json
     
 Output:
     - Optimized prompts saved to data/prompts/lv0_s3_system_latest.json
@@ -17,6 +17,10 @@ Output:
 import os
 import sys
 from pathlib import Path
+
+# Load environment variables from .env file if it exists
+from dotenv import load_dotenv
+load_dotenv()
 
 # Add project root to path
 project_root = Path(__file__).parent
@@ -31,12 +35,12 @@ def main():
     
     # Check for API key
     if not os.getenv("OPENAI_API_KEY"):
-        print("❌ Error: OPENAI_API_KEY environment variable not set")
-        print("Please set it with: export OPENAI_API_KEY='your-key-here'")
+        print("❌ Error: OPENAI_API_KEY not found")
+        print("Please set it in .env file or with: export OPENAI_API_KEY='your-key-here'")
         sys.exit(1)
     
     # Check for training data
-    training_file = Path("data/training/lv0_s3.json")
+    training_file = Path("data/prompts_training_data/lv0_s3.json")
     if not training_file.exists():
         print(f"❌ Error: Training data not found at {training_file}")
         print("Please ensure training data is available")
