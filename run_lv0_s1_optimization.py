@@ -48,7 +48,7 @@ def main():
     
     try:
         # Import and run the optimizer
-        from prompt_optimization.optimizers.lv0_s1_simple import optimize_prompts
+        from prompt_optimization.optimizers.lv0_s1 import optimize_prompts
         
         print("Starting optimization process...")
         print("This may take several minutes depending on the training data size.")

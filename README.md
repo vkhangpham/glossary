@@ -192,8 +192,11 @@ register_prompt(
     variables=["term"]
 )
 
-# Optimize prompts using GEPA (Genetic-Pareto Evolutionary Algorithm)
-uv run optimize-prompt --prompt lv0_s1 --auto medium --batch-size 5
+# Run prompt optimization directly
+python prompt_optimization/optimizers/lv0_s1.py  # For concept extraction
+python prompt_optimization/optimizers/lv0_s3.py  # For discipline verification
+
+# See prompt_optimization/README_SIMPLIFIED.md for detailed instructions
 
 # Test prompt optimization setup
 python test_prompt_optimization.py

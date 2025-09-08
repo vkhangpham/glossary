@@ -230,6 +230,12 @@ def load_prompt_from_file(filepath: Union[str, Path]) -> Optional[str]:
     a JSON object with a 'content' field. If the content is in DSPy format,
     extracts the instructions from it.
     
+    Supports multiple JSON formats:
+    1. Simplified format: {"content": "prompt text", "metadata": {...}}
+    2. DSPy format: {"content": "ChainOfThought(instructions='...')"}
+    3. Direct instructions: {"instructions": "prompt text"}
+    4. Legacy direct content: "prompt text" (raw string in file)
+    
     Args:
         filepath: Path to the prompt JSON file
         
@@ -238,59 +244,106 @@ def load_prompt_from_file(filepath: Union[str, Path]) -> Optional[str]:
     """
     try:
         path = Path(filepath)
-        if path.exists():
-            with open(path) as f:
+        logger.debug(f"Attempting to load prompt from: {path.absolute()}")
+        
+        if not path.exists():
+            logger.debug(f"Prompt file does not exist: {path}")
+            return None
+            
+        with open(path, 'r', encoding='utf-8') as f:
+            # Try to parse as JSON first
+            try:
                 data = json.load(f)
+                logger.debug(f"Successfully parsed JSON with keys: {list(data.keys()) if isinstance(data, dict) else 'non-dict'}")
+            except json.JSONDecodeError:
+                # If not valid JSON, treat the entire file content as the prompt
+                f.seek(0)
+                content = f.read().strip()
+                if content:
+                    logger.debug(f"Loaded raw text content from {path} (non-JSON format)")
+                    return content
+                logger.warning(f"Empty or invalid content in {path}")
+                return None
+            
+            # Handle different JSON structures
+            if isinstance(data, str):
+                # Direct string content (backward compatibility)
+                logger.debug(f"Loaded direct string content from {path}")
+                return data
                 
-                # First check for direct instructions field in metadata
-                if "metadata" in data and "instructions" in data["metadata"]:
-                    return data["metadata"]["instructions"]
+            if not isinstance(data, dict):
+                logger.warning(f"Unexpected data type in {path}: {type(data)}")
+                return None
                 
-                # Check for direct instructions field at root level
-                if "instructions" in data:
-                    return data["instructions"]
+            # First check for direct instructions field in metadata (highest priority)
+            if "metadata" in data and "instructions" in data["metadata"]:
+                logger.debug(f"Found instructions in metadata for {path}")
+                return data["metadata"]["instructions"]
+            
+            # Check for direct instructions field at root level
+            if "instructions" in data:
+                logger.debug(f"Found instructions at root level for {path}")
+                return data["instructions"]
+            
+            # Check for nested DSPy format (single key with nested instructions)
+            if len(data) == 1:
+                nested = next(iter(data.values()))
+                if isinstance(nested, dict) and 'instructions' in nested:
+                    logger.debug(f"Found nested instructions in single-key DSPy-like format for {path}")
+                    return nested['instructions']
+            
+            # Check for content field (simplified format)
+            content = data.get("content") or data.get("prompt")
+            if content is None:
+                logger.debug(f"No 'content' or 'prompt' field found in {path}")
+                return None
+            if not isinstance(content, str):
+                logger.warning(f"Content field is not a string in {path}; ignoring file")
+                return None
+            if not content.strip():
+                logger.warning(f"Empty content string in {path}")
+                return None
                 
-                content = data.get("content")
+            # Check if this is DSPy format (contains "instructions=")
+            if isinstance(content, str) and "instructions=" in content:
+                logger.debug(f"Detected DSPy format in {path}, extracting instructions")
+                # Extract instructions from DSPy format with more permissive regex
+                import re
                 
-                if not content:
-                    return None
-                    
-                # Check if this is DSPy format (contains "instructions=")
-                if "instructions=" in content:
-                    # Extract instructions from DSPy format with more permissive regex
-                    import re
-                    
-                    # Try multiple regex patterns for different formatting styles
-                    patterns = [
-                        # Standard single/double quoted with lookahead
-                        r"instructions=['\"](.+?)['\"](?=\s*\n\s*\w+\s*=|$)",
-                        # Triple quoted strings
-                        r"instructions='''(.+?)'''",
-                        r'instructions="""(.+?)"""',
-                        # Parenthesis-wrapped strings (for multi-line)
-                        r"instructions=\(['\"](.+?)['\"]\)",
-                        # More permissive pattern without lookahead
-                        r"instructions=['\"]([^'\"]+)['\"]",
-                    ]
-                    
-                    for pattern in patterns:
-                        match = re.search(pattern, content, re.DOTALL)
-                        if match:
-                            instructions = match.group(1)
-                            # Unescape the content
-                            instructions = instructions.replace("\\'", "'")
-                            instructions = instructions.replace('\\"', '"')
-                            instructions = instructions.replace("\\n", "\n")
-                            instructions = instructions.replace("\\\\n", "\n")
-                            instructions = instructions.replace("\\t", "\t")
-                            return instructions
-                    
-                    # If no pattern matched but we know there's instructions=, 
-                    # log a warning for debugging
-                    logger.warning(f"Found 'instructions=' in {filepath} but couldn't extract content")
+                # Try multiple regex patterns for different formatting styles
+                patterns = [
+                    # Standard single/double quoted with lookahead
+                    r"instructions=['\"](.+?)['\"](?=\s*\n\s*\w+\s*=|$)",
+                    # Triple quoted strings
+                    r"instructions='''(.+?)'''",
+                    r'instructions="""(.+?)"""',
+                    # Parenthesis-wrapped strings (for multi-line)
+                    r"instructions=\(['\"](.+?)['\"]\)",
+                    # More permissive pattern without lookahead
+                    r"instructions=['\"]([^'\"]+)['\"]",
+                ]
                 
-                # Return content as-is if not DSPy format
-                return content
+                for pattern in patterns:
+                    match = re.search(pattern, content, re.DOTALL)
+                    if match:
+                        instructions = match.group(1)
+                        # Unescape the content
+                        instructions = instructions.replace("\\'", "'")
+                        instructions = instructions.replace('\\"', '"')
+                        instructions = instructions.replace("\\n", "\n")
+                        instructions = instructions.replace("\\\\n", "\n")
+                        instructions = instructions.replace("\\t", "\t")
+                        logger.debug(f"Successfully extracted DSPy instructions from {path}")
+                        return instructions
+                
+                # If no pattern matched but we know there's instructions=, 
+                # log a warning for debugging
+                logger.warning(f"Found 'instructions=' in {filepath} but couldn't extract content")
+            
+            # Return content as-is if not DSPy format
+            logger.debug(f"Loaded simplified format content from {path}")
+            return content
+            
     except (json.JSONDecodeError, KeyError, IOError) as e:
         logger.debug(f"Could not load prompt from {filepath}: {e}")
     except Exception as e:

@@ -69,16 +69,12 @@ dependencies = [
     "fastexcel",
     "pyarrow",
     "dspy-ai==3.0.3",
-    "click>=8.2.1",
     "dspy>=2.6.27",
 ]
 
 [project.scripts]
 # Unified generation command
 generate = "generate_glossary.cli.generate:main"
-
-# Prompt optimization command
-optimize-prompt = "prompt_optimization.cli:optimize_prompt"
 
 # Level 0 generation commands (legacy, kept for compatibility)
 glossary-lv0-s0 = "generate_glossary.generation.lv0.lv0_s0_get_college_names:main"

@@ -1,330 +1,246 @@
-"""Optimizer for Level 0 Step 1: Concept extraction from college names
+"""Simplified standalone optimizer for lv0_s1 concept extraction using DSPy GEPA.
 
-This module is called by the CLI: uv run optimize-prompt --prompt lv0_s1
+Environment Variables:
+    GEPA_GEN_MODEL: Generation model (default: gpt-4o-mini)
+    GEPA_REFLECTION_MODEL: Reflection model (default: same as GEPA_GEN_MODEL)
 """
 
 import json
-import random
+import sys
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Any
 
 import dspy
-from dspy import Example
-from pydantic import BaseModel, Field
+from dspy.teleprompt import GEPA
 
-from prompt_optimization.core import save_prompt
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+from prompt_optimization.save import save_prompt
+from prompt_optimization.optimizers.common import (
+    load_json_training, split_train_val, configure_openai_lms,
+    get_gepa_params, extract_optimized_instruction
+)
 
-class ConceptExtraction(BaseModel):
-    source: str = Field(description="Source text being processed")
-    concepts: List[str] = Field(description="List of extracted concepts")
-
-
-class ConceptExtractionList(BaseModel):
-    extractions: List[ConceptExtraction] = Field(
-        description="List of concept extractions", default_factory=list
-    )
 
 
 class ExtractConceptsSignature(dspy.Signature):
-    """Extract academic concepts from college/school names.
-
-    Extract the core academic disciplines and fields of study from the given college/school names.
-    Focus on the academic subjects, not the institution type or location."""
-
-    sources: str = dspy.InputField(
-        desc="List of college/school names to extract concepts from"
-    )
-    extractions: ConceptExtractionList = dspy.OutputField(
-        desc="List of extracted academic concepts for each source"
-    )
+    """DSPy signature for concept extraction from academic texts."""
+    instruction = dspy.InputField(desc="System instructions for extraction")
+    text = dspy.InputField(desc="Text to extract concepts from")
+    extraction = dspy.OutputField(desc="JSON object with source, concepts, and reasoning")
 
 
 class ConceptExtractor(dspy.Module):
+    """DSPy module for extracting academic concepts."""
+    
     def __init__(self):
         super().__init__()
-        self.extract = dspy.ChainOfThought(ExtractConceptsSignature)
-
-    def forward(self, sources):
-        return self.extract(sources=sources)
-
-
-def create_training_data(batch_size=5, val_batch_size=None, seed=None, return_split=False):
-    """Load and batch training data to match production usage.
-
-    Production processes 20 institutions per request.
-    Default batch_size=5 for faster training.
+        self.prog = dspy.Predict(ExtractConceptsSignature)
     
-    Args:
-        batch_size: Size of training batches (default: 5)
-        val_batch_size: Size of validation batches (default: same as batch_size)
-        seed: Random seed for shuffling (default: None for non-deterministic)
-        return_split: If True, return (train_examples, val_examples) tuple (default: False)
-    
-    Returns:
-        If return_split=False: Combined list of all examples (shuffled)
-        If return_split=True: Tuple of (train_examples, val_examples)
-    """
-    training_file = Path("data/prompts_training_data/lv0_s1.json")
-    if not training_file.exists():
-        raise FileNotFoundError(f"Training data not found at {training_file}")
-
-    try:
-        with open(training_file, "r") as f:
-            data = json.load(f)
-    except json.JSONDecodeError as e:
-        raise ValueError(f"Invalid JSON in {training_file}: {e}")
-
-    # Validate data structure
-    if not data:
-        raise ValueError(f"Empty training data in {training_file}")
-    
-    for item in data:
-        if not isinstance(item.get("expected", []), list):
-            raise ValueError(f"Invalid 'expected' field in training data: {item}")
-    
-    # Calculate split boundaries
-    n_total = len(data)
-    split_idx = int(n_total * 0.8)
-    
-    # Default validation batch size to training batch size
-    if val_batch_size is None:
-        val_batch_size = batch_size
-    
-    # Create training examples with proper boundary capping
-    train_examples = []
-    for i in range(0, split_idx, batch_size):
-        end = min(i + batch_size, split_idx)  # Cap at split boundary
-        batch = data[i:end]
-        sources = "\n".join(f"- {item['input']}" for item in batch)
-        extractions = [
-            {"source": item["input"], "concepts": item["expected"]} for item in batch
-        ]
-        train_examples.append(
-            {"input": {"sources": sources}, "output": {"extractions": extractions}}
-        )
-    
-    # Create validation examples with batching support
-    val_examples = []
-    for i in range(split_idx, n_total, val_batch_size):
-        end = min(i + val_batch_size, n_total)
-        batch = data[i:end]
-        
-        if val_batch_size == 1:
-            # Single-item validation for backward compatibility
-            for item in batch:
-                val_examples.append(
-                    {
-                        "input": {"sources": f"- {item['input']}"},
-                        "output": {
-                            "extractions": [
-                                {"source": item["input"], "concepts": item["expected"]}
-                            ]
-                        },
-                    }
-                )
-        else:
-            # Batched validation
-            sources = "\n".join(f"- {item['input']}" for item in batch)
-            extractions = [
-                {"source": item["input"], "concepts": item["expected"]} for item in batch
-            ]
-            val_examples.append(
-                {"input": {"sources": sources}, "output": {"extractions": extractions}}
-            )
-    
-    # Apply shuffling with seed if provided
-    if seed is not None:
-        rnd = random.Random(seed)
-        rnd.shuffle(train_examples)
-        rnd.shuffle(val_examples)
-    else:
-        random.shuffle(train_examples)
-        random.shuffle(val_examples)
-    
-    if return_split:
-        return train_examples, val_examples
-    else:
-        # Combine and shuffle for backward compatibility
-        all_examples = train_examples + val_examples
-        if seed is not None:
-            rnd = random.Random(seed)
-            rnd.shuffle(all_examples)
-        else:
-            random.shuffle(all_examples)
-        return all_examples
+    def forward(self, instruction: str, text: str) -> dspy.Prediction:
+        """Extract concepts from text."""
+        return self.prog(instruction=instruction, text=text)
 
 
-def prepare_dspy_examples(training_data: List[Dict]) -> List[Example]:
-    """Convert training data to DSPy Examples"""
-    examples = []
+def load_training_data(file_path: str = "data/training/lv0_s1.json") -> List[Dict[str, Any]]:
+    """Load training data from JSON file."""
+    return load_json_training(file_path)
+
+
+def create_training_data() -> tuple[List[str], List[List[Dict[str, Any]]]]:
+    """Create training data from JSON file."""
+    training_data = load_training_data()
+    
+    inputs = []
+    outputs = []
+    
     for item in training_data:
-        example = Example(
-            sources=item["input"]["sources"],
-            extractions=ConceptExtractionList(
-                extractions=[
-                    ConceptExtraction(**ex) for ex in item["output"]["extractions"]
-                ]
-            ),
-        ).with_inputs("sources")
+        # Input is the text to extract from
+        inputs.append(item["input"])
+        
+        # Output is the expected extractions
+        outputs.append(item["expected_output"])
+    
+    return inputs, outputs
+
+
+def prepare_dspy_examples(inputs: List[str], outputs: List[List[Dict[str, Any]]]) -> List[dspy.Example]:
+    """Convert training data to DSPy examples."""
+    examples = []
+    
+    for text, expected_extractions in zip(inputs, outputs):
+        # Format expected output as JSON string
+        formatted_output = json.dumps(expected_extractions, indent=2)
+        
+        example = dspy.Example(
+            instruction="Extract academic concepts from the given text.",
+            text=text,
+            extraction=formatted_output
+        ).with_inputs("instruction", "text")
+        
         examples.append(example)
+    
     return examples
 
 
-def calculate_f1(gold_concepts, pred_concepts):
-    """Calculate F1 score between two sets of concepts"""
-    if not gold_concepts and not pred_concepts:
-        return 1.0
-    if not pred_concepts or not gold_concepts:
-        return 0.0
-
-    common = gold_concepts.intersection(pred_concepts)
-    precision = len(common) / len(pred_concepts)
-    recall = len(common) / len(gold_concepts)
-
-    if precision + recall == 0:
-        return 0.0
-    return 2 * precision * recall / (precision + recall)
-
-
-def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None):
-    """Evaluate extraction quality with feedback for GEPA optimization."""
-    
-    def _norm(s: str) -> str:
-        """Normalize concept strings for fair comparison"""
-        return s.strip().lower()
-    
+def metric_with_feedback(gold, pred, trace=None):
+    """
+    Metric function for GEPA that evaluates concept extraction quality.
+    Returns (score, feedback) tuple.
+    """
     try:
-        if hasattr(pred, "extractions"):
-            if isinstance(pred.extractions, ConceptExtractionList):
-                pred_extractions = pred.extractions
+        # Parse predicted extraction
+        pred_extraction = json.loads(pred.extraction)
+        
+        # Parse gold extraction
+        if isinstance(gold.extraction, str):
+            gold_extractions = json.loads(gold.extraction)
+        else:
+            gold_extractions = gold.extraction
+        
+        # Calculate scores
+        
+        # Check if prediction is a list of extractions
+        if isinstance(pred_extraction, list):
+            pred_concepts = set()
+            for ext in pred_extraction:
+                pred_concepts.update(ext.get("concepts", []))
+        else:
+            pred_concepts = set(pred_extraction.get("concepts", []))
+        
+        # Get gold concepts
+        gold_concepts = set()
+        for ext in gold_extractions:
+            gold_concepts.update(ext.get("concepts", []))
+        
+        # Calculate metrics
+        if not gold_concepts:
+            return 0.0, "No gold concepts to compare against"
+        
+        matches = pred_concepts & gold_concepts
+        precision = len(matches) / len(pred_concepts) if pred_concepts else 0
+        recall = len(matches) / len(gold_concepts) if gold_concepts else 0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+        
+        # Generate feedback
+        feedback = []
+        if f1 < 0.5:
+            feedback.append("Low F1 score indicates poor concept extraction.")
+            if precision < recall:
+                feedback.append("Missing many expected concepts. Be more comprehensive.")
             else:
-                pred_extractions = ConceptExtractionList(extractions=[])
-        else:
-            pred_extractions = ConceptExtractionList(extractions=[])
+                feedback.append("Extracting too many irrelevant concepts. Be more selective.")
+        
+        if not pred_concepts:
+            feedback.append("No concepts extracted. Ensure you're identifying academic terms.")
+        
+        # Check for structure
+        if not isinstance(pred_extraction, (list, dict)):
+            feedback.append("Output should be a valid JSON structure.")
+        
+        feedback_str = " ".join(feedback) if feedback else "Good extraction quality."
+        
+        return f1, feedback_str
+        
+    except (json.JSONDecodeError, KeyError, TypeError) as e:
+        return 0.0, f"Failed to parse extraction: {str(e)}. Ensure valid JSON output."
 
-        gold_extractions = gold.extractions
 
-        # Normalize concepts in prediction dictionary
-        pred_dict = {
-            ex.source: {_norm(c) for c in ex.concepts} 
-            for ex in pred_extractions.extractions
-        }
+def optimize_prompts():
+    """Run GEPA optimization for concept extraction prompts."""
+    print("Starting lv0_s1 concept extraction prompt optimization...")
+    
+    # Configure language models from common helper
+    lm, reflection_lm = configure_openai_lms()
+    dspy.settings.configure(lm=lm)
+    
+    # Load training data
+    print("Loading training data...")
+    inputs, outputs = create_training_data()
+    examples = prepare_dspy_examples(inputs, outputs)
+    print(f"Loaded {len(examples)} training examples")
+    
+    # Split into train and validation using common helper
+    trainset, valset = split_train_val(examples, 0.8)
+    print(f"Split into {len(trainset)} train and {len(valset)} validation examples")
+    
+    # Create student program
+    student = ConceptExtractor()
+    
+    # Configure GEPA optimizer with appropriate params based on dataset size
+    print("Configuring GEPA optimizer...")
+    gepa_params = get_gepa_params(len(trainset))
+    optimizer = GEPA(
+        metric=metric_with_feedback,
+        max_bootstrapped_demos=gepa_params["max_bootstrapped_demos"],
+        max_labeled_demos=gepa_params["max_labeled_demos"],
+        num_threads=4,
+        auto="light"  # Use light mode for faster optimization
+    )
+    
+    # Set the reflection LM for GEPA
+    optimizer.reflection_lm = reflection_lm
+    
+    # Run optimization
+    print("Running GEPA optimization (this may take a while)...")
+    optimized = optimizer.compile(
+        student,
+        trainset=trainset,
+        valset=valset
+    )
+    
+    # Extract optimized prompts
+    print("\nExtracting optimized prompts...")
+    
+    # Define default templates with required placeholders
+    DEFAULT_S1_USER = (
+        """Extract academic concepts from these institutions:\n\n{sources}\n\n"
+        "For each institution, identify the core academic fields and disciplines."""
+    )
+    
+    # System prompt that clearly specifies the expected output schema
+    system_prompt = (
+        """You are an expert at extracting academic concepts from text.\n"
+        "Your task is to extract, for each provided source, a JSON object with:\n"
+        "- source: the original text\n"
+        "- concepts: list of extracted academic concepts (lowercase, deduplicated)\n"
+        "Return a JSON array named 'extractions' containing these objects."""
+    )
+    
+    # Extract optimized instruction using common helper
+    user_prompt_template = extract_optimized_instruction(optimized, DEFAULT_S1_USER)
+    
+    # Save optimized prompts
+    print("Saving optimized prompts...")
+    
+    system_path = save_prompt("lv0_s1_system", system_prompt)
+    user_path = save_prompt("lv0_s1_user", user_prompt_template)
+    
+    print(f"✓ Saved system prompt to: {system_path}")
+    print(f"✓ Saved user prompt to: {user_path}")
+    
+    # Test the optimized program on a validation example (only if we have examples)
+    if len(valset) + len(trainset) > 0:
+        print("\nTesting optimized program on validation example...")
+        test_example = valset[0] if valset else trainset[0]
+        test_result = optimized(
+            instruction=test_example.instruction,
+            text=test_example.text
+        )
+        print(f"Input text: {test_example.text[:100]}...")
+        print(f"Extracted concepts: {test_result.extraction[:200]}...")
+    else:
+        print("\nWarning: No examples available for testing")
+    
+    print("\n✅ Optimization complete!")
+    
+    return system_prompt, user_prompt_template
 
-        f1_scores = []
-        issues = []
 
-        for gold_ex in gold_extractions.extractions:
-            source = gold_ex.source
-            # Normalize gold concepts
-            gold_concepts = {_norm(c) for c in gold_ex.concepts}
-            pred_concepts = pred_dict.get(source, set())
-
-            f1 = calculate_f1(gold_concepts, pred_concepts)
-            f1_scores.append(f1)
-
-            if f1 < 1.0:
-                if not pred_concepts and gold_concepts:
-                    issues.append(f"Missed: {source}")
-                elif pred_concepts and not gold_concepts:
-                    issues.append(f"Over-extracted: {source}")
-                else:
-                    missing = gold_concepts - pred_concepts
-                    extra = pred_concepts - gold_concepts
-                    if missing:
-                        # Show original case for readability in feedback
-                        missing_original = [c for c in gold_ex.concepts if _norm(c) in missing]
-                        issues.append(f"{source} missing: {','.join(missing_original)}")
-                    if extra:
-                        # Find original case for extra concepts
-                        pred_ex = next((ex for ex in pred_extractions.extractions if ex.source == source), None)
-                        if pred_ex:
-                            extra_original = [c for c in pred_ex.concepts if _norm(c) in extra]
-                            issues.append(f"{source} extra: {','.join(extra_original)}")
-
-        avg_f1 = sum(f1_scores) / len(f1_scores) if f1_scores else 0.0
-        if avg_f1 == 1.0:
-            feedback = "Perfect extraction!"
-        else:
-            feedback = f"F1: {avg_f1:.2f}. "
-            if issues:
-                feedback += " ".join(issues[:3])
-                if len(issues) > 3:
-                    feedback += f" (+{len(issues)-3} more)"
-
-        return dspy.Prediction(score=avg_f1, feedback=feedback)
-
+if __name__ == "__main__":
+    try:
+        optimize_prompts()
     except Exception as e:
-        return dspy.Prediction(score=0.0, feedback=f"Error: {e}")
-
-
-def get_program():
-    """Get the DSPy program to optimize"""
-    return ConceptExtractor()
-
-
-def save_optimized_prompts(
-    optimized_program, trainset, valset, task_model, reflection_model, optimization_mode
-):
-    """Save optimized prompts and program state"""
-    saved_paths = []
-
-    system_prompt = ""
-    if hasattr(optimized_program, "extract"):
-        predictor = optimized_program.extract
-        if hasattr(predictor, "extended_signature"):
-            system_prompt = str(predictor.extended_signature)
-        elif hasattr(predictor, "signature"):
-            system_prompt = str(predictor.signature)
-        else:
-            system_prompt = str(predictor)
-
-    metadata = {
-        "train_size": len(trainset),
-        "val_size": len(valset),
-        "task_model": task_model,
-        "reflection_model": reflection_model,
-        "optimization_mode": optimization_mode,
-        "final_score": getattr(optimized_program, "score", None),
-    }
-
-    saved_paths.append(
-        save_prompt(
-            prompt_key="lv0_s1_system",
-            prompt_content=system_prompt,
-            metadata=metadata,
-        )
-    )
-    user_template = """Extract academic concepts from these institutions:
-
-{sources}
-
-For each institution, identify the core academic fields and disciplines."""
-
-    saved_paths.append(
-        save_prompt(
-            prompt_key="lv0_s1_user",
-            prompt_content=user_template,
-            metadata=metadata,
-        )
-    )
-    program_path = Path("data/prompts") / "lv0_s1_program.json"
-    program_path.parent.mkdir(parents=True, exist_ok=True)
-    optimized_program.save(str(program_path))
-    saved_paths.append(program_path)
-
-    return saved_paths
-
-
-def load_optimized_program(program_path: Path = None):
-    """Load previously optimized program from disk"""
-    if program_path is None:
-        program_path = Path("data/prompts") / "lv0_s1_program.json"
-
-    if not program_path.exists():
-        raise FileNotFoundError(f"No saved program found at {program_path}")
-
-    program = ConceptExtractor()
-    program.load(str(program_path))
-    return program
-
+        print(f"❌ Error during optimization: {e}")
+        sys.exit(1)

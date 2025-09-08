@@ -1,278 +1,228 @@
-"""Optimizer for Level 0 Step 3: Single-word academic discipline verification
+"""Simplified standalone optimizer for lv0_s3 discipline verification using DSPy GEPA.
 
-This module is called by the CLI: uv run optimize-prompt --prompt lv0_s3
+Environment Variables:
+    GEPA_GEN_MODEL: Generation model (default: gpt-4o-mini)
+    GEPA_REFLECTION_MODEL: Reflection model (default: same as GEPA_GEN_MODEL)
 """
 
-import json
-import random
+import sys
 from pathlib import Path
-from typing import List, Dict, Optional
-from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
+from typing import List, Dict, Any
 
 import dspy
-from dspy import Example
-from pydantic import BaseModel, Field
+from dspy.teleprompt import GEPA
 
-from prompt_optimization.core import save_prompt
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-
-class VerificationResult(BaseModel):
-    """Result of academic discipline verification"""
-    is_valid: bool = Field(
-        description="Whether the term is a valid broad academic discipline"
-    )
+from prompt_optimization.save import save_prompt
+from prompt_optimization.optimizers.common import (
+    load_json_training, split_train_val, configure_openai_lms,
+    get_gepa_params, extract_optimized_instruction
+)
 
 
 class AcademicDisciplineVerification(dspy.Signature):
-    """Verify if a term represents a valid broad academic discipline.
-    
-    Analyze whether the keyword is a legitimate broad academic discipline by considering:
-    1. Academic relevance - Is it a recognized field of study or broad academic discipline?
-    2. Disciplinary context - Does it represent a major division of knowledge in academia?
-    3. Scope - Is it broad enough to encompass multiple research areas or subdisciplines?
-    
-    Accept broad disciplines like humanities, sciences, engineering, arts, medicine, law.
-    Reject narrow specializations, technical methodologies, specific research topics."""
-    
-    keyword: str = dspy.InputField(
-        desc="Single word term to verify as academic discipline"
-    )
-    evidence_colleges: str = dspy.InputField(
-        desc="List of colleges/schools/departments that mention this term"
-    )
-    reasoning: str = dspy.OutputField(
-        desc="Step-by-step analysis considering academic relevance, disciplinary context, and scope"
-    )
-    is_valid: VerificationResult = dspy.OutputField(
-        desc="Boolean decision: true if valid broad academic discipline, false otherwise"
-    )
+    """DSPy signature for verifying if a term is an academic discipline."""
+    instruction = dspy.InputField(desc="System instructions for verification")
+    term = dspy.InputField(desc="Term to verify as academic discipline")
+    is_discipline = dspy.OutputField(desc="Boolean indicating if term is an academic discipline")
+    reasoning = dspy.OutputField(desc="Explanation for the decision")
 
 
 class DisciplineVerifier(dspy.Module):
-    """Module for verifying academic disciplines using ChainOfThought reasoning"""
+    """DSPy module for verifying academic disciplines."""
     
     def __init__(self):
         super().__init__()
-        self.verify = dspy.ChainOfThought(AcademicDisciplineVerification)
+        self.prog = dspy.Predict(AcademicDisciplineVerification)
     
-    def forward(self, keyword, evidence_colleges):
-        return self.verify(keyword=keyword, evidence_colleges=evidence_colleges)
+    def forward(self, instruction: str, term: str) -> dspy.Prediction:
+        """Verify if a term is an academic discipline."""
+        return self.prog(instruction=instruction, term=term)
 
 
-def create_training_data() -> List[Dict]:
-    """Load and prepare training data for discipline verification.
-    
-    Returns training data in the format expected by the optimization CLI.
-    """
-    training_file = Path("data/prompts_training_data/lv0_s3.json")
-    if not training_file.exists():
-        raise FileNotFoundError(f"Training data not found at {training_file}")
-    
-    with open(training_file, "r") as f:
-        raw_data = json.load(f)
-    
-    # Convert to the expected format for DSPy optimization
-    training_data = []
-    for item in raw_data:
-        # Format evidence colleges as a string
-        evidence_str = "\n".join(f"- {college}" for college in item["evidence_colleges"])
-        
-        training_data.append({
-            "input": {
-                "keyword": item["keyword"],
-                "evidence_colleges": evidence_str
-            },
-            "output": {
-                "is_valid": item["expected"]
-            }
-        })
-    
-    # Shuffle for better training
-    random.shuffle(training_data)
-    return training_data
+def load_training_data(file_path: str = "data/training/lv0_s3.json") -> List[Dict[str, Any]]:
+    """Load training data from JSON file."""
+    return load_json_training(file_path)
 
 
-def prepare_dspy_examples(training_data: List[Dict]) -> List[Example]:
-    """Convert training data to DSPy Examples with proper formatting"""
-    examples = []
+def create_training_data() -> tuple[List[str], List[Dict[str, Any]]]:
+    """Create training data from JSON file."""
+    training_data = load_training_data()
+    
+    inputs = []
+    outputs = []
     
     for item in training_data:
-        # Extract input and output from the standardized format
-        input_data = item["input"]
-        output_data = item["output"]
+        # Input is the term to verify
+        inputs.append(item["input"])
         
-        # Create the example with proper structure
-        example = Example(
-            keyword=input_data["keyword"],
-            evidence_colleges=input_data["evidence_colleges"],
-            is_valid=VerificationResult(is_valid=output_data["is_valid"])
-        ).with_inputs("keyword", "evidence_colleges")
+        # Output is the expected verification result
+        outputs.append(item["expected_output"])
+    
+    return inputs, outputs
+
+
+def prepare_dspy_examples(inputs: List[str], outputs: List[Dict[str, Any]]) -> List[dspy.Example]:
+    """Convert training data to DSPy examples."""
+    examples = []
+    
+    for term, expected_output in zip(inputs, outputs):
+        example = dspy.Example(
+            instruction="Determine if the term represents an academic discipline.",
+            term=term,
+            is_discipline=str(expected_output["is_discipline"]).lower(),
+            reasoning=expected_output["reasoning"]
+        ).with_inputs("instruction", "term")
         
         examples.append(example)
     
     return examples
 
 
-def calculate_metrics(gold_labels: List[bool], pred_labels: List[bool]) -> Dict[str, float]:
-    """Calculate binary classification metrics"""
-    if not gold_labels or not pred_labels:
-        return {"mcc": 0.0, "balanced_accuracy": 0.0}
-    
-    # Matthews Correlation Coefficient - best for binary classification
-    mcc = matthews_corrcoef(gold_labels, pred_labels)
-    
-    # Balanced accuracy - handles class imbalance
-    balanced_acc = balanced_accuracy_score(gold_labels, pred_labels)
-    
-    return {
-        "mcc": mcc,
-        "balanced_accuracy": balanced_acc
-    }
-
-
-def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None):
-    """Evaluate verification quality with feedback for GEPA optimization.
-    
-    Uses Matthews Correlation Coefficient (MCC) as primary metric for binary classification.
-    MCC ranges from -1 to 1: 1 = perfect, 0 = random, -1 = perfectly wrong.
+def metric_with_feedback(gold, pred, trace=None):
+    """
+    Metric function for GEPA that evaluates discipline verification accuracy.
+    Returns (score, feedback) tuple.
     """
     try:
-        # Extract the boolean values
-        gold_value = gold.is_valid.is_valid if hasattr(gold.is_valid, 'is_valid') else gold.is_valid
+        # Parse predictions
+        pred_is_discipline = pred.is_discipline.lower() in ['true', 'yes', '1']
+        gold_is_discipline = gold.is_discipline.lower() in ['true', 'yes', '1']
         
-        # Handle prediction extraction
-        if hasattr(pred, 'is_valid'):
-            if isinstance(pred.is_valid, VerificationResult):
-                pred_value = pred.is_valid.is_valid
-            elif isinstance(pred.is_valid, bool):
-                pred_value = pred.is_valid
+        # Check if classification is correct
+        correct = pred_is_discipline == gold_is_discipline
+        
+        # Base score on correctness
+        score = 1.0 if correct else 0.0
+        
+        # Evaluate reasoning quality if present
+        if hasattr(pred, 'reasoning') and pred.reasoning:
+            reasoning_len = len(pred.reasoning.strip())
+            if reasoning_len < 20:
+                score *= 0.8
+                feedback = "Reasoning too brief. Provide more detailed explanation."
+            elif reasoning_len > 500:
+                score *= 0.9
+                feedback = "Reasoning too verbose. Be more concise."
             else:
-                pred_value = False
+                feedback = "Good classification with appropriate reasoning."
         else:
-            pred_value = False
+            score *= 0.5
+            feedback = "Missing reasoning. Always explain your decision."
         
-        # Calculate score: 1.0 for correct, 0.0 for incorrect
-        score = 1.0 if gold_value == pred_value else 0.0
+        # Additional feedback for incorrect classifications
+        if not correct:
+            if pred_is_discipline and not gold_is_discipline:
+                feedback = f"False positive: '{gold.term}' is not an academic discipline. Be more selective."
+            else:
+                feedback = f"False negative: '{gold.term}' is an academic discipline. Consider broader academic fields."
         
-        # Generate feedback
-        if score == 1.0:
-            feedback = f"Correct: '{gold.keyword}' -> {pred_value}"
-        else:
-            feedback = f"Wrong: '{gold.keyword}' expected {gold_value}, got {pred_value}"
-            
-            # Add specific feedback for common errors
-            if gold_value and not pred_value:
-                feedback += " (false negative - missed valid discipline)"
-            elif not gold_value and pred_value:
-                feedback += " (false positive - accepted invalid specialization)"
-        
-        return dspy.Prediction(score=score, feedback=feedback)
+        return score, feedback
         
     except Exception as e:
-        return dspy.Prediction(score=0.0, feedback=f"Error evaluating: {e}")
+        return 0.0, f"Error evaluating prediction: {str(e)}. Ensure proper output format."
 
 
-def get_program():
-    """Get the DSPy program to optimize"""
-    return DisciplineVerifier()
-
-
-def save_optimized_prompts(
-    optimized_program, trainset, valset, task_model, reflection_model, optimization_mode
-):
-    """Save optimized prompts and program state"""
-    saved_paths = []
+def optimize_prompts():
+    """Run GEPA optimization for discipline verification prompts."""
+    print("Starting lv0_s3 discipline verification prompt optimization...")
     
-    # Extract the optimized prompt from the program
-    system_prompt = ""
-    if hasattr(optimized_program, "verify"):
-        predictor = optimized_program.verify
-        if hasattr(predictor, "extended_signature"):
-            system_prompt = str(predictor.extended_signature)
-        elif hasattr(predictor, "signature"):
-            system_prompt = str(predictor.signature)
-        else:
-            system_prompt = str(predictor)
+    # Configure language models from common helper
+    lm, reflection_lm = configure_openai_lms()
+    dspy.settings.configure(lm=lm)
     
-    # Calculate final metrics on validation set
-    gold_labels = []
-    pred_labels = []
+    # Load training data
+    print("Loading training data...")
+    inputs, outputs = create_training_data()
+    examples = prepare_dspy_examples(inputs, outputs)
+    print(f"Loaded {len(examples)} training examples")
     
-    for example in valset:
-        try:
-            prediction = optimized_program(
-                keyword=example.keyword,
-                evidence_colleges=example.evidence_colleges
-            )
-            
-            gold_value = example.is_valid.is_valid if hasattr(example.is_valid, 'is_valid') else example.is_valid
-            pred_value = prediction.is_valid.is_valid if hasattr(prediction.is_valid, 'is_valid') else prediction.is_valid
-            
-            gold_labels.append(gold_value)
-            pred_labels.append(pred_value)
-        except:
-            continue
+    # Split into train and validation using common helper
+    trainset, valset = split_train_val(examples, 0.8)
+    print(f"Split into {len(trainset)} train and {len(valset)} validation examples")
     
-    metrics = calculate_metrics(gold_labels, pred_labels) if gold_labels else {"mcc": 0.0, "balanced_accuracy": 0.0}
+    # Create student program
+    student = DisciplineVerifier()
     
-    # Save metadata
-    metadata = {
-        "train_size": len(trainset),
-        "val_size": len(valset),
-        "task_model": task_model,
-        "reflection_model": reflection_model,
-        "optimization_mode": optimization_mode,
-        "final_score": getattr(optimized_program, "score", None),
-        "validation_metrics": metrics
-    }
-    
-    # Save system prompt
-    saved_paths.append(
-        save_prompt(
-            prompt_key="lv0_s3_system",
-            prompt_content=system_prompt,
-            metadata=metadata,
-        )
+    # Configure GEPA optimizer with appropriate params based on dataset size
+    print("Configuring GEPA optimizer...")
+    gepa_params = get_gepa_params(len(trainset))
+    optimizer = GEPA(
+        metric=metric_with_feedback,
+        max_bootstrapped_demos=gepa_params["max_bootstrapped_demos"],
+        max_labeled_demos=gepa_params["max_labeled_demos"],
+        num_threads=4,
+        auto="light"  # Use light mode for faster optimization
     )
     
-    # Save user template for verification
-    user_template = """Analyze whether "{keyword}" is a valid broad academic discipline.
-
-Evidence - Colleges/schools/divisions that mention this concept:
-{evidence_colleges}
-
-Consider:
-1. Is it a recognized major field of study or broad academic discipline?
-2. Does it represent a major division of knowledge in academia?
-3. Is it broad enough to encompass multiple research areas or subdisciplines?
-
-Answer with true if it meets these criteria, false otherwise."""
+    # Set the reflection LM for GEPA
+    optimizer.reflection_lm = reflection_lm
     
-    saved_paths.append(
-        save_prompt(
-            prompt_key="lv0_s3_user",
-            prompt_content=user_template,
-            metadata=metadata,
-        )
+    # Run optimization
+    print("Running GEPA optimization (this may take a while)...")
+    optimized = optimizer.compile(
+        student,
+        trainset=trainset,
+        valset=valset
     )
     
-    # Save the program state
-    program_path = Path("data/prompts") / "lv0_s3_program.json"
-    program_path.parent.mkdir(parents=True, exist_ok=True)
-    optimized_program.save(str(program_path))
-    saved_paths.append(program_path)
+    # Extract optimized prompts
+    print("\nExtracting optimized prompts...")
     
-    return saved_paths
+    # Define default templates with required placeholders
+    DEFAULT_S3_USER = (
+        """Analyze whether "{keyword}" is a valid broad academic discipline.\n\n"
+        "Evidence - Colleges/schools/divisions that mention this concept:\n{evidence_colleges}\n\n"
+        "Consider:\n1. Is it a recognized major field of study or broad academic discipline?\n"
+        "2. Does it represent a major division of knowledge in academia?\n"
+        "3. Is it broad enough to encompass multiple research areas or subdisciplines?\n\n"
+        "Answer with true if it meets these criteria, false otherwise."""
+    )
+    
+    # System prompt that clearly identifies academic disciplines
+    system_prompt = (
+        """You are an expert at identifying academic disciplines and fields of study.\n"
+        "Your task is to determine whether a given term represents a legitimate academic discipline.\n"
+        "Consider established fields taught at universities, research areas, and recognized academic domains.\n"
+        "Be precise and avoid classifying general terms, companies, or non-academic concepts as disciplines."""
+    )
+    
+    # Extract optimized instruction using common helper
+    user_prompt_template = extract_optimized_instruction(optimized, DEFAULT_S3_USER)
+    
+    # Save optimized prompts
+    print("Saving optimized prompts...")
+    
+    system_path = save_prompt("lv0_s3_system", system_prompt)
+    user_path = save_prompt("lv0_s3_user", user_prompt_template)
+    
+    print(f"✓ Saved system prompt to: {system_path}")
+    print(f"✓ Saved user prompt to: {user_path}")
+    
+    # Test the optimized program on a validation example (only if we have examples)
+    if len(valset) + len(trainset) > 0:
+        print("\nTesting optimized program on validation example...")
+        test_example = valset[0] if valset else trainset[0]
+        test_result = optimized(
+            instruction=test_example.instruction,
+            term=test_example.term
+        )
+        print(f"Term: {test_example.term}")
+        print(f"Is discipline: {test_result.is_discipline}")
+        print(f"Reasoning: {test_result.reasoning[:200]}...")
+    else:
+        print("\nWarning: No examples available for testing")
+    
+    print("\n✅ Optimization complete!")
+    
+    return system_prompt, user_prompt_template
 
 
-def load_optimized_program(program_path: Path = None):
-    """Load previously optimized program from disk"""
-    if program_path is None:
-        program_path = Path("data/prompts") / "lv0_s3_program.json"
-    
-    if not program_path.exists():
-        raise FileNotFoundError(f"No saved program found at {program_path}")
-    
-    program = DisciplineVerifier()
-    program.load(str(program_path))
-    return program
+if __name__ == "__main__":
+    try:
+        optimize_prompts()
+    except Exception as e:
+        print(f"❌ Error during optimization: {e}")
+        sys.exit(1)

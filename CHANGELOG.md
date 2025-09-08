@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Simplified Prompt Optimization**:
+  - Removed CLI interface `uv run optimize-prompt` command
+  - Direct script execution via `python prompt_optimization/optimizers/lv0_s1.py`
+  - Simplified architecture removing complex CLI wrapper
+  - See `prompt_optimization/README_SIMPLIFIED.md` for new usage instructions
+
 ## [2025-09-05] - Prompt Optimization Module and Documentation
 
 ### Added
