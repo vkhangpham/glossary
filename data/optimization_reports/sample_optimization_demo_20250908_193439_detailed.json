@@ -1,0 +1,93 @@
+{
+  "program_name": "lv0_s1_concept_extraction",
+  "timestamp": "2025-01-08 10:30:00",
+  "duration": "5m 42s",
+  "training_data": {
+    "source": "data/prompts_training_data/lv0_s1.json",
+    "examples": 50,
+    "train": 40,
+    "validation": 10
+  },
+  "performance": {
+    "initial": {
+      "avg_score": 0.72,
+      "individual_scores": [
+        0.71,
+        0.73,
+        0.7,
+        0.74,
+        0.69,
+        0.75,
+        0.68,
+        0.76,
+        0.71,
+        0.72
+      ]
+    },
+    "optimized": {
+      "avg_score": 0.86,
+      "individual_scores": [
+        0.85,
+        0.87,
+        0.84,
+        0.89,
+        0.81,
+        0.88,
+        0.83,
+        0.9,
+        0.86,
+        0.87
+      ]
+    },
+    "improvement": {
+      "initial_avg": 0.72,
+      "optimized_avg": 0.86,
+      "absolute_improvement": 0.14,
+      "percentage_improvement": 19.4
+    }
+  },
+  "analysis": {
+    "best_validation_scores": [
+      0.85,
+      0.87,
+      0.84,
+      0.89,
+      0.81,
+      0.88,
+      0.83,
+      0.9,
+      0.86,
+      0.87
+    ],
+    "top_improvements": [
+      "Task 7: 0.900",
+      "Task 3: 0.890",
+      "Task 5: 0.880"
+    ],
+    "challenging_tasks": [
+      "Task 4: 0.810",
+      "Task 6: 0.830"
+    ],
+    "insights": [
+      "Average validation score: 0.860",
+      "Best validation score: 0.900",
+      "Worst validation score: 0.810",
+      "Score range: 0.090",
+      "Optimization improved concept coverage by focusing on academic terminology",
+      "Precision gains came from better filtering of non-academic terms",
+      "3 validation tasks showed >20% improvement"
+    ]
+  },
+  "optimizer_config": {
+    "track_stats": true,
+    "max_metric_calls": 100,
+    "candidate_selection_strategy": "pareto",
+    "reflection_minibatch_size": 2,
+    "num_threads": 2,
+    "seed": 42
+  },
+  "files": [
+    "data/prompts/lv0_s1_system_latest.json",
+    "data/prompts/lv0_s1_user_latest.json"
+  ]
+}

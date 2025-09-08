@@ -6,6 +6,7 @@ Environment Variables:
 """
 
 import sys
+import time
 from typing import List, Dict, Any
 
 # Load environment variables from .env file if it exists
@@ -22,6 +23,10 @@ from prompt_optimization.optimizers.common import (  # noqa: E402
     split_train_val,
     configure_openai_lms,
     extract_optimized_instruction,
+)
+from prompt_optimization.reporter import (  # noqa: E402
+    evaluate_initial_performance,
+    create_optimization_report,
 )
 
 # Training data path constant
@@ -164,15 +169,18 @@ def optimize_prompts():
     max_full_evals = os.getenv("GEPA_MAX_FULL_EVALS")
     auto_level = os.getenv("GEPA_AUTO", "light")
 
+    # Configure GEPA following best practices from research paper
     optimizer_kwargs = {
         "metric": metric_with_feedback,
         "reflection_lm": reflection_lm,
-        "num_threads": 2,  # Reduced to avoid concurrent futures errors
-        "reflection_minibatch_size": 2,  # Smaller batch for stability
-        "candidate_selection_strategy": "pareto",  # Best strategy for diverse solutions
+        "num_threads": 8,  # Balanced between performance and stability (best practice: 16-32)
+        "reflection_minibatch_size": 3,  # Best practice efficiency setting
+        "candidate_selection_strategy": "pareto",  # Best practice for diverse solutions
         "skip_perfect_score": True,  # Don't waste time on perfect examples
         "use_merge": False,  # Disable merge to simplify debugging
         "seed": 42,  # Reproducibility
+        "track_stats": True,  # CRITICAL - enables detailed_results for reporting
+        "track_best_outputs": True,  # Best practice - helpful for debugging and analysis
     }
 
     # Set budget parameter (only one should be set)

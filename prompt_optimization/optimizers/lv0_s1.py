@@ -7,6 +7,7 @@ Environment Variables:
 
 import json
 import sys
+import time
 from typing import Any, Dict, List
 
 # Load environment variables from .env file if it exists
@@ -23,6 +24,10 @@ from prompt_optimization.optimizers.common import (  # noqa: E402
     extract_optimized_instruction,
     load_json_training,
     split_train_val,
+)
+from prompt_optimization.reporter import (  # noqa: E402
+    evaluate_initial_performance,
+    create_optimization_report,
 )
 
 # Training data path constant
@@ -186,6 +191,7 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
 def optimize_prompts():
     """Run GEPA optimization for concept extraction prompts."""
     print("Starting lv0_s1 concept extraction prompt optimization...")
+    start_time = time.time()
 
     lm, reflection_lm = configure_openai_lms()
     dspy.settings.configure(lm=lm)
@@ -199,7 +205,7 @@ def optimize_prompts():
     trainset, valset = split_train_val(examples, 0.8)
     print(f"Split into {len(trainset)} train and {len(valset)} validation examples")
 
-    student = ConceptExtractor()
+    concept_extractor = ConceptExtractor()
 
     print("Configuring GEPA optimizer...")
     import os
@@ -208,15 +214,18 @@ def optimize_prompts():
     max_full_evals = os.getenv("GEPA_MAX_FULL_EVALS")
     auto_level = os.getenv("GEPA_AUTO", "light")
 
+    # Configure GEPA following best practices from research paper
     optimizer_kwargs = {
         "metric": metric_with_feedback,
         "reflection_lm": reflection_lm,
-        "num_threads": 2,  # Reduced to avoid concurrent futures errors
-        "reflection_minibatch_size": 2,  # Smaller batch for stability
-        "candidate_selection_strategy": "pareto",  # Best strategy for diverse solutions
+        "num_threads": 8,  # Balanced between performance and stability (best practice: 16-32)
+        "reflection_minibatch_size": 3,  # Best practice efficiency setting
+        "candidate_selection_strategy": "pareto",  # Best practice for diverse solutions
         "skip_perfect_score": True,  # Don't waste time on perfect examples
         "use_merge": False,  # Disable merge to simplify debugging
         "seed": 42,  # Reproducibility
+        "track_stats": True,  # CRITICAL - enables detailed_results for reporting
+        "track_best_outputs": True,  # Best practice - helpful for debugging and analysis
     }
 
     # Set budget parameter (only one should be set)
@@ -230,13 +239,6 @@ def optimize_prompts():
         optimizer_kwargs["auto"] = auto_level
         print(f"Using optimization level: {auto_level}")
 
-    optimizer = GEPA(**optimizer_kwargs)
-
-    print("Running GEPA optimization (this may take a while)...")
-    optimized = optimizer.compile(student, trainset=trainset, valset=valset)
-
-    print("\nExtracting optimized prompts...")
-
     # Define default templates with required placeholders
     DEFAULT_S1_USER = """Extract academic concepts from these institutions:\n\n{sources}\n\n"
         "For each institution, identify the core academic fields and disciplines.\n"
@@ -249,6 +251,23 @@ def optimize_prompts():
         "- concepts: list of extracted academic concepts (lowercase, deduplicated)\n"
         "Return a JSON array named 'extractions' containing these objects."""
 
+    # Evaluate initial performance before optimization
+    print("Evaluating initial performance...")
+    initial_scores = evaluate_initial_performance(
+        examples=valset,
+        system_prompt=system_prompt,
+        user_prompt=DEFAULT_S1_USER,
+        metric_func=metric_with_feedback,
+    )
+    print(f"Initial average score: {initial_scores['avg_score']:.3f}")
+
+    optimizer = GEPA(**optimizer_kwargs)
+
+    print("Running GEPA optimization (this may take a while)...")
+    optimized = optimizer.compile(concept_extractor, trainset=trainset, valset=valset)
+
+    print("\nExtracting optimized prompts...")
+
     # Extract optimized instruction using common helper
     user_prompt_template = extract_optimized_instruction(optimized, DEFAULT_S1_USER)
 
@@ -257,8 +276,41 @@ def optimize_prompts():
     system_path = save_prompt("lv0_s1_system", system_prompt)
     user_path = save_prompt("lv0_s1_user", user_prompt_template)
 
-    print(f"✓ Saved system prompt to: {system_path}")
-    print(f"✓ Saved user prompt to: {user_path}")
+    print(f"Saved system prompt to: {system_path}")
+    print(f"Saved user prompt to: {user_path}")
+
+    # Calculate optimization duration
+    duration = time.time() - start_time
+    duration_str = f"{int(duration // 60)}m {int(duration % 60)}s"
+
+    # Generate comprehensive optimization report
+    print("\nGenerating optimization report...")
+    try:
+        report_paths = create_optimization_report(
+            initial_scores=initial_scores,
+            optimized_program=optimized,
+            detailed_results=getattr(optimized, "detailed_results", None),
+            metadata={
+                "program_name": "lv0_s1_concept_extraction",
+                "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                "duration": duration_str,
+                "training_data": {
+                    "source": TRAINING_DATA_PATH,
+                    "examples": len(examples),
+                    "train": len(trainset),
+                    "validation": len(valset),
+                },
+                "optimizer_config": optimizer_kwargs,
+                "generated_files": [system_path, user_path],
+            },
+        )
+
+        print("\nOptimization report generated:")
+        print(f"  Summary: {report_paths['txt_path']}")
+        print(f"  Details: {report_paths['json_path']}")
+
+    except Exception as e:
+        print(f"Warning: Failed to generate optimization report: {e}")
 
     # Test the optimized program on a validation example (only if we have examples)
     if len(valset) + len(trainset) > 0:
@@ -272,7 +324,7 @@ def optimize_prompts():
     else:
         print("\nWarning: No examples available for testing")
 
-    print("\n✅ Optimization complete!")
+    print(f"\nOptimization complete! (took {duration_str})")
 
     return system_prompt, user_prompt_template
 

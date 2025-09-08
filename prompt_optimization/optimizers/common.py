@@ -81,8 +81,8 @@ def configure_openai_lms(api_key: Optional[str] = None) -> Tuple[Any, Any]:
                 "OpenAI API key not provided and OPENAI_API_KEY env var not set"
             )
 
-    gen_model = os.getenv("GEPA_GEN_MODEL", "gpt-5-nano")
-    ref_model = os.getenv("GEPA_REFLECTION_MODEL", "gpt-5")
+    gen_model = os.getenv("GEPA_GEN_MODEL", "gpt-5-nano")  # Default: efficient task model
+    ref_model = os.getenv("GEPA_REFLECTION_MODEL", "gpt-5")  # Default: strong reflection model (best practice)
 
     os.environ["OPENAI_API_KEY"] = api_key
 
@@ -93,10 +93,13 @@ def configure_openai_lms(api_key: Optional[str] = None) -> Tuple[Any, Any]:
 
     if "gpt-5" in ref_model:
         reflection_lm = dspy.LM(
-            model=f"openai/{ref_model}", temperature=1.0, max_tokens=16000
+            model=f"openai/{ref_model}", temperature=1.0, max_tokens=32000  # Best practice: large context for reflection
         )
     else:
-        reflection_lm = dspy.LM(model=f"openai/{ref_model}", max_tokens=2000)
+        # For non-gpt-5 models, use best practice settings
+        reflection_lm = dspy.LM(
+            model=f"openai/{ref_model}", temperature=1.0, max_tokens=32000  # Best practice for reflection
+        )
 
     return lm, reflection_lm
 

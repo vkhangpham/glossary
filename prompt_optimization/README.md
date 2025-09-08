@@ -11,8 +11,9 @@ This is a streamlined prompt optimization system using DSPy GEPA (Gradient-Enhan
 Create a `.env` file in the project root:
 ```bash
 OPENAI_API_KEY=your-key-here
-GEPA_GEN_MODEL=gpt-4o-mini      # Optional: defaults to gpt-5-nano
-GEPA_REFLECTION_MODEL=gpt-4o     # Optional: defaults to gpt-5
+GEPA_GEN_MODEL=gpt-5-nano        # Optional: defaults to gpt-5-nano (task model)
+GEPA_REFLECTION_MODEL=gpt-5      # Optional: defaults to gpt-5 (strong reflection model - best practice)
+GEPA_AUTO=light                  # Optional: light/medium/heavy (defaults to light for testing)
 ```
 
 ### 2. Run Optimization
@@ -288,9 +289,10 @@ Create a `.env` file in the project root:
 # Required
 OPENAI_API_KEY=sk-your-key-here
 
-# Optional model overrides
-GEPA_GEN_MODEL=gpt-4o-mini      # Default: gpt-5-nano
-GEPA_REFLECTION_MODEL=gpt-4o     # Default: gpt-5
+# Optional model overrides (following best practices)
+GEPA_GEN_MODEL=gpt-5-nano        # Default: gpt-5-nano (efficient task model)
+GEPA_REFLECTION_MODEL=gpt-5      # Default: gpt-5 (strong reflection model)
+GEPA_AUTO=heavy                  # Default: light (use heavy for production)
 ```
 
 The `.env` file is **automatically loaded** by both the CLI and direct execution methods.
@@ -305,7 +307,7 @@ export GEPA_REFLECTION_MODEL="gpt-4o"
 ### Special Model Requirements
 **Note**: OpenAI reasoning models (gpt-5-nano, gpt-5) require:
 - `temperature=1.0`
-- `max_tokens >= 16000`
+- `max_tokens >= 16000` (32000 for reflection models - best practice)
 
 These are automatically configured when detected.
 
@@ -332,13 +334,109 @@ Training data is stored in `data/prompts_training_data/`:
 ]
 ```
 
-## Best Practices
+## GEPA Best Practices
 
+### Core Configuration Principles
+
+#### 1. Budget Configuration (Critical)
+- **For production**: Use `auto="heavy"` for optimal performance
+- **For testing**: Use smaller budgets like `max_full_evals=1-10`
+- **Budget scaling**: GEPA scales with higher budget - more budget = better results
+- **Efficiency**: GEPA uses 35x fewer rollouts than GRPO while achieving better results
+
+#### 2. Reflection Language Model Selection
+- **Use a powerful reflection LM**: Use `gpt-4` or stronger for reflection
+- **Separate from task LM**: Use a stronger model for reflection than the one being optimized
+- **High temperature for reflection**: `temperature=1.0` for diverse reflection
+- **Large context**: `max_tokens=32000` to capture full reflection content
+
+#### 3. Essential Tracking Parameters
+```python
+optimizer = GEPA(
+    track_stats=True,           # CRITICAL - enables detailed_results for reporting
+    track_best_outputs=True,    # Recommended for analysis
+    # ... other params
+)
+```
+
+#### 4. Threading and Performance
+- **Use parallel processing**: `num_threads=16-32` for faster optimization
+- **Balance threads with API limits**: Don't exceed your API rate limits
+- **Reflection minibatch**: `reflection_minibatch_size=3` for efficiency
+
+#### 5. Metric Design (Crucial)
+```python
+def metric_with_feedback(example, prediction, trace=None):
+    # Must return dspy.Prediction with score AND feedback
+    return dspy.Prediction(
+        score=calculated_score,      # Numeric score
+        feedback="Detailed feedback" # Natural language guidance
+    )
+```
+
+### Recommended Configuration Template
+```python
+from dspy import GEPA
+
+# Best practices configuration based on research
+optimizer = GEPA(
+    metric=your_metric_with_feedback,           # Must provide rich feedback
+    reflection_lm=dspy.LM(
+        model="openai/gpt-4",                   # Strong model for reflection
+        temperature=1.0,                        # High temperature for diversity
+        max_tokens=32000,                       # Large context for reflection
+        api_key=api_key
+    ),
+    num_threads=16,                             # Parallel processing
+    track_stats=True,                           # Essential for detailed analysis & reporting
+    track_best_outputs=True,                    # Helpful for debugging
+    auto="heavy",                               # Use for production (vs max_full_evals for testing)
+    reflection_minibatch_size=3,                # Efficiency setting
+    candidate_selection_strategy="pareto",      # Diversity in candidate selection
+)
+```
+
+### Data Preparation
+- **Quality over quantity**: GEPA works with few examples due to rich feedback
+- **Balanced splits**: Use 80/20 train/validation split
+- **Representative examples**: Ensure training data covers key task aspects
+
+### Anti-Patterns to Avoid
+- **Don't use scalar-only metrics** - GEPA needs rich natural language feedback
+- **Don't use weak reflection models** - The reflection LM should be stronger than task LM  
+- **Don't skip tracking** - Always use `track_stats=True` for analysis and reporting
+- **Don't over-constrain budget** - GEPA works efficiently, allow reasonable budget
+
+### Validation and Testing
+- **Start with small budget** for testing (`max_full_evals=1-5`)
+- **Scale up gradually** to `auto="heavy"` for production
+- **Monitor detailed_results** for insights into optimization process
+- **Compare against baselines** to validate improvements
+
+### Key Research Insights
+- GEPA outperforms GRPO by 10% average, up to 20% on some tasks
+- Uses natural language reflection instead of scalar rewards
+- Works with as few as 1-10 evaluations due to rich feedback
+- Builds Pareto frontier of candidates for robust optimization
+- Particularly effective when domain-specific feedback is available
+
+### Optimization Reports
+The system automatically generates comprehensive optimization reports:
+- **TXT reports**: Human-readable summary with key insights
+- **JSON reports**: Detailed data for further analysis
+- **Performance comparisons**: Before vs after optimization metrics
+- **GEPA analysis**: Insights from `detailed_results` with `track_stats=True`
+
+Reports are saved to `data/optimization_reports/` with timestamps.
+
+### General Best Practices
 1. **Always test optimized prompts** before deploying
 2. **Keep backups** of working prompts
 3. **Use descriptive keys** that match the generation script expectations
 4. **Document optimization parameters** in metadata
 5. **Version control** optimized prompts in git
+6. **Monitor optimization reports** for insights and improvements
+7. **Use domain-specific feedback** in metrics for better results
 
 ## Next Steps
 
