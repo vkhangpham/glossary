@@ -9,13 +9,13 @@ import json
 import logging
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Callable, Dict, List
 
 logger = logging.getLogger(__name__)
 
 
 def evaluate_initial_performance(
-    examples: List[Any], system_prompt: str, user_prompt: str, metric_func: callable
+    examples: List[Any], system_prompt: str, user_prompt: str, metric_func: Callable
 ) -> Dict[str, Any]:
     """
     Evaluate performance of initial prompts before optimization.

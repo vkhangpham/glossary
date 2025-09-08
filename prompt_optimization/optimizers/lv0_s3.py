@@ -6,27 +6,21 @@ Environment Variables:
 """
 
 import sys
-import time
-from typing import List, Dict, Any
-
-from dotenv import load_dotenv
-
-load_dotenv()
+from typing import Any, Dict, List
 
 import dspy
+from dotenv import load_dotenv
 from dspy.teleprompt import GEPA
 
 from prompt_optimization.core import save_prompt
 from prompt_optimization.optimizers.common import (
-    load_json_training,
-    split_train_val,
     configure_openai_lms,
     extract_optimized_instruction,
+    load_json_training,
+    split_train_val,
 )
-from prompt_optimization.reporter import (
-    evaluate_initial_performance,
-    create_optimization_report,
-)
+
+load_dotenv()
 
 # Training data path constant
 TRAINING_DATA_PATH = "data/prompts_training_data/lv0_s3.json"

@@ -10,11 +10,8 @@ import sys
 import time
 from typing import Any, Dict, List
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
 import dspy
+from dotenv import load_dotenv
 from dspy.teleprompt import GEPA
 
 from prompt_optimization.core import save_prompt
@@ -25,9 +22,11 @@ from prompt_optimization.optimizers.common import (
     split_train_val,
 )
 from prompt_optimization.reporter import (
-    evaluate_initial_performance,
     create_optimization_report,
+    evaluate_initial_performance,
 )
+
+load_dotenv()
 
 # Training data path constant
 TRAINING_DATA_PATH = "data/prompts_training_data/lv0_s1.json"

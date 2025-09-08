@@ -13,7 +13,7 @@ Usage:
 """
 
 from pathlib import Path
-from typing import List, Dict
+from typing import Dict, List, Literal, cast
 
 import dspy
 from dspy import Example
@@ -213,11 +213,18 @@ if __name__ == "__main__":
 
     auto_level = os.getenv("GEPA_AUTO", "light")
     print(f"Using optimization level: {auto_level}")
+    
+    # Ensure auto_level is one of the valid options
+    if auto_level not in ["light", "medium", "heavy"]:
+        auto_level = "light"
+    
+    # Cast to proper Literal type for type checking
+    auto_typed = cast(Literal["light", "medium", "heavy"], auto_level)
 
     # Configure with best practices
     optimizer = GEPA(
-        metric=metric_with_feedback,
-        auto=auto_level,
+        metric=metric_with_feedback,  # type: ignore[arg-type]
+        auto=auto_typed,
         num_threads=4,  # Parallel evaluation for speed
         reflection_minibatch_size=3,  # Good balance of reflection quality
         candidate_selection_strategy="pareto",  # Best strategy for diverse solutions
