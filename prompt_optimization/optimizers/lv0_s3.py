@@ -26,8 +26,9 @@ TRAINING_DATA_PATH = "data/prompts_training_data/lv0_s3.json"
 
 class AcademicDisciplineVerification(dspy.Signature):
     """You are an expert at verifying academic disciplines.
-Determine if the given term represents a legitimate academic discipline or field of study.
-Consider whether it's taught at universities, has research communities, or represents a recognized field of knowledge."""
+    Determine if the given term represents a legitimate academic discipline or field of study.
+    Consider whether it's taught at universities, has research communities, or represents a recognized field of knowledge.
+    """
 
     term = dspy.InputField(desc="Term to verify as academic discipline")
     is_discipline = dspy.OutputField(
@@ -65,7 +66,6 @@ def create_training_data() -> tuple[List[str], List[Dict[str, Any]]]:
 
     for item in training_data:
         inputs.append(item["keyword"])
-
 
         output = {
             "is_discipline": item["expected"],
@@ -124,24 +124,49 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
         if not correct:
             # Provide specific feedback based on the term and expected answer
             term = gold.term.lower()
-            
+
             if pred_is_discipline and not gold_is_discipline:
                 # False positive - should have said False
-                if term in ['surgery', 'pediatrics', 'neurology', 'radiology', 'ophthalmology', 'gynecology', 'obstetrics']:
+                if term in [
+                    "surgery",
+                    "pediatrics",
+                    "neurology",
+                    "radiology",
+                    "ophthalmology",
+                    "gynecology",
+                    "obstetrics",
+                ]:
                     feedback = f"'{term}' is a medical specialty within medicine, not a top-level discipline."
-                elif term in ['microbiology', 'immunology', 'neurobiology', 'dermatology']:
+                elif term in [
+                    "microbiology",
+                    "immunology",
+                    "neurobiology",
+                    "dermatology",
+                ]:
                     feedback = f"'{term}' is a sub-field of biology/medicine, not a standalone academic discipline."
-                elif term in ['literatures', 'computing']:
+                elif term in ["literatures", "computing"]:
                     feedback = f"'{term}' is too vague - the actual disciplines would be 'literature' or 'computer science'."
-                elif term == 'race':
+                elif term == "race":
                     feedback = f"'{term}' is a social descriptor, not an academic discipline. Related field would be 'ethnic studies'."
                 else:
                     feedback = f"'{term}' is too specific/specialized. Ask: would this have its own college at most universities?"
             else:
                 # False negative - should have said True
-                if term in ['engineering', 'medicine', 'business', 'law', 'humanities', 'mathematics', 'physics']:
+                if term in [
+                    "engineering",
+                    "medicine",
+                    "business",
+                    "law",
+                    "humanities",
+                    "mathematics",
+                    "physics",
+                ]:
                     feedback = f"'{term}' is a fundamental academic discipline with its own colleges at most universities."
-                elif 'science' in term or term in ['psychology', 'sociology', 'anthropology']:
+                elif "science" in term or term in [
+                    "psychology",
+                    "sociology",
+                    "anthropology",
+                ]:
                     feedback = f"'{term}' is a recognized academic field taught as a major discipline."
                 else:
                     feedback = f"'{term}' is a legitimate academic discipline - check if it would have its own college/school."
@@ -153,8 +178,6 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
             score=0.0,
             feedback=f"Error evaluating prediction: {str(e)}. Ensure proper output format.",
         )
-
-
 
 
 # Default prompts - aligned with actual implementation in lv0_s3_verify_single_token.py
