@@ -42,7 +42,6 @@ class YourTaskSignature(dspy.Signature):
     output_field: YourOutputModel = dspy.OutputField(desc="Description of the output")
 
 
-# DSPy program to optimize
 class YourProgram(dspy.Module):
     def __init__(self):
         super().__init__()
@@ -142,7 +141,6 @@ def save_optimized_prompts(
 
     TODO: Update this based on your program structure
     """
-    # Extract the optimized prompt
     # TODO: Update based on your program structure
     optimized_prompt = optimized_program.process.signature.instructions
 
@@ -169,18 +167,15 @@ def save_optimized_prompts(
     return saved_paths
 
 
-# Entry point for direct execution
 if __name__ == "__main__":
     import os
     import dspy
     from dspy.teleprompt import GEPA
 
-    # Load environment variables from .env file if it exists
     from dotenv import load_dotenv
 
     load_dotenv()
 
-    # Configure OpenAI
     if not os.getenv("OPENAI_API_KEY"):
         raise ValueError("Please set OPENAI_API_KEY environment variable")
 
@@ -191,15 +186,12 @@ if __name__ == "__main__":
     lm = dspy.LM(model="openai/gpt-5-nano", temperature=1.0, max_tokens=16000)
     dspy.settings.configure(lm=lm)
 
-    # Create training data
     print("Creating training data...")
     training_data = create_training_data()
 
-    # Prepare DSPy examples
     print("Preparing DSPy examples...")
     examples = prepare_dspy_examples(training_data)
 
-    # Split into train/val
     split_idx = int(len(examples) * 0.8)
     trainset = examples[:split_idx]
     valset = examples[split_idx:]
@@ -207,21 +199,17 @@ if __name__ == "__main__":
     print(f"Training set size: {len(trainset)}")
     print(f"Validation set size: {len(valset)}")
 
-    # Run optimization using GEPA directly
     print("Running GEPA optimization...")
     import os
 
     auto_level = os.getenv("GEPA_AUTO", "light")
     print(f"Using optimization level: {auto_level}")
-    
-    # Ensure auto_level is one of the valid options
+
     if auto_level not in ["light", "medium", "heavy"]:
         auto_level = "light"
-    
-    # Cast to proper Literal type for type checking
+
     auto_typed = cast(Literal["light", "medium", "heavy"], auto_level)
 
-    # Configure with best practices
     optimizer = GEPA(
         metric=metric_with_feedback,  # type: ignore[arg-type]
         auto=auto_typed,
@@ -237,7 +225,6 @@ if __name__ == "__main__":
     student = YourProgram()
     optimized_program = optimizer.compile(student, trainset=trainset, valset=valset)
 
-    # Save optimized prompts
     print("Saving optimized prompts...")
     saved_paths = save_optimized_prompts(
         optimized_program,

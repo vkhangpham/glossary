@@ -1,9 +1,7 @@
 """
 Common helper functions for prompt optimizers.
 
-Environment Variables:
-    GEPA_GEN_MODEL: Generation model (default: gpt-5-nano)
-    GEPA_REFLECTION_MODEL: Reflection model (default: gpt-5)
+Models are provided via CLI arguments and passed through environment variables internally.
 """
 
 import json
@@ -41,7 +39,7 @@ def split_train_val(
     examples: List[Any], ratio: float = 0.8
 ) -> Tuple[List[Any], List[Any]]:
     """
-    Split examples into training and validation sets.
+    Split examples into training and validation sets with random shuffling.
 
     Args:
         examples: List of examples to split (can be dspy.Example or dict)
@@ -50,25 +48,33 @@ def split_train_val(
     Returns:
         Tuple of (trainset, valset)
     """
+    import random
+
     if len(examples) == 0:
         raise ValueError("Cannot split empty dataset")
 
     if len(examples) == 1:
-        # With only one example, use it for both train and val
+
         return examples, examples
 
-    train_size = max(1, int(ratio * len(examples)))
-    trainset = examples[:train_size]
-    valset = examples[train_size:]
+    shuffled = examples.copy()
+    random.seed(42)
+    random.shuffle(shuffled)
+
+    train_size = max(1, int(ratio * len(shuffled)))
+    trainset = shuffled[:train_size]
+    valset = shuffled[train_size:]
 
     return trainset, valset
 
 
-def configure_openai_lms(api_key: Optional[str] = None) -> Tuple[Any, Any]:
+def configure_openai_lms(gen_model: str, ref_model: str, api_key: Optional[str] = None) -> Tuple[Any, Any]:
     """
     Configure OpenAI language models for generation and reflection.
 
     Args:
+        gen_model: Generation model name (e.g., "gpt-5-nano", "gpt-4o-mini")
+        ref_model: Reflection model name (e.g., "gpt-5", "gpt-4o")
         api_key: OpenAI API key (if not provided, uses OPENAI_API_KEY env var)
 
     Returns:
@@ -81,25 +87,36 @@ def configure_openai_lms(api_key: Optional[str] = None) -> Tuple[Any, Any]:
                 "OpenAI API key not provided and OPENAI_API_KEY env var not set"
             )
 
-    gen_model = os.getenv(
-        "GEPA_GEN_MODEL", "gpt-5-nano"
-    )  # Default: efficient task model
-    ref_model = os.getenv(
-        "GEPA_REFLECTION_MODEL", "gpt-5"
-    )  # Default: strong reflection model (best practice)
-
     os.environ["OPENAI_API_KEY"] = api_key
+    
+    # Set up DSPy cache directory to avoid database errors
+    import tempfile
+    cache_dir = tempfile.mkdtemp(prefix="dspy_cache_")
+    os.environ["DSP_CACHEDIR"] = cache_dir
+    # Also try to disable cache
+    os.environ["DSP_DISABLE_CACHE"] = "1"
 
+    # Configure models with proper settings
     if "gpt-5" in gen_model:
-        lm = dspy.LM(model=f"openai/{gen_model}", temperature=1.0, max_tokens=16000)
+        lm = dspy.LM(
+            model=f"openai/{gen_model}", 
+            temperature=1.0, 
+            max_tokens=16000,
+            cache=False  # Disable caching
+        )
     else:
-        lm = dspy.LM(model=f"openai/{gen_model}", max_tokens=2000)
+        lm = dspy.LM(
+            model=f"openai/{gen_model}", 
+            max_tokens=2000,
+            cache=False  # Disable caching
+        )
 
     if "gpt-5" in ref_model:
         reflection_lm = dspy.LM(
             model=f"openai/{ref_model}",
             temperature=1.0,
             max_tokens=32000,  # Best practice: large context for reflection
+            cache=False  # Disable caching
         )
     else:
         # For non-gpt-5 models, use best practice settings
@@ -107,6 +124,7 @@ def configure_openai_lms(api_key: Optional[str] = None) -> Tuple[Any, Any]:
             model=f"openai/{ref_model}",
             temperature=1.0,
             max_tokens=32000,  # Best practice for reflection
+            cache=False  # Disable caching
         )
 
     return lm, reflection_lm
@@ -128,23 +146,310 @@ def get_gepa_params(trainset_size: int) -> Dict[str, int]:
     }
 
 
-def extract_optimized_instruction(optimized: Any, default_fallback: str) -> str:
+def extract_optimized_instruction(optimized: Any) -> str:
     """
     Extract the optimized instruction from a GEPA-optimized object.
 
     Args:
         optimized: The optimized object from GEPA
-        default_fallback: Default template to use if extraction fails
 
     Returns:
-        The extracted instruction or default fallback
+        The extracted instruction
+
+    Raises:
+        ValueError: If no optimized instruction can be extracted
     """
-    raw_instruction = getattr(getattr(optimized, "prog", None), "signature", None)
-    raw_instruction = getattr(raw_instruction, "instruction", None)
+    # Use named_predictors() to access optimized instructions
+    if hasattr(optimized, "named_predictors"):
+        for name, predictor in optimized.named_predictors():
+            if hasattr(predictor, "signature") and hasattr(
+                predictor.signature, "instructions"
+            ):
+                instructions = predictor.signature.instructions
+                if len(instructions) > 100:  # Ensure substantial content
+                    return instructions
 
-    extracted = raw_instruction if isinstance(raw_instruction, str) else None
+    # If no substantial optimized instruction found, this is an error
+    raise ValueError(
+        f"No optimized instruction found in {type(optimized)}. This indicates GEPA optimization failed or was not applied correctly."
+    )
 
-    if not extracted or "InputField(" in str(raw_instruction):
-        return default_fallback
 
-    return f"{extracted}\n\n{default_fallback}"
+def evaluate_initial_performance(
+    valset: List[dspy.Example], metric_func: Any, module: Any
+) -> Dict[str, Any]:
+    """
+    Evaluate performance with default prompts on validation set.
+
+    Args:
+        valset: Validation examples
+        metric_func: Metric function to evaluate predictions
+        module: DSPy module to evaluate
+
+    Returns:
+        Dictionary with average score and individual scores
+    """
+    import logging
+
+    logger = logging.getLogger(__name__)
+
+    print("Evaluating baseline performance with default prompts...")
+    scores = []
+
+    for i, example in enumerate(valset):
+        try:
+            # Extract inputs from example
+            inputs = {k: getattr(example, k) for k in example.inputs()}
+            pred = module(**inputs)
+
+            # Evaluate prediction
+            result = metric_func(example, pred)
+            score = result.score if hasattr(result, "score") else 0.0
+            scores.append(score)
+
+            if (i + 1) % 10 == 0:
+                print(f"  Evaluated {i + 1}/{len(valset)} examples...")
+
+        except Exception as e:
+            logger.warning(f"Failed to evaluate example {i}: {e}")
+            scores.append(0.0)
+
+    avg_score = sum(scores) / len(scores) if scores else 0.0
+
+    return {
+        "avg_score": avg_score,
+        "individual_scores": scores,
+        "total_examples": len(valset),
+    }
+
+
+def get_optimizer_config(auto_level: str = "light") -> Dict[str, Any]:
+    """
+    Get standard GEPA optimizer configuration.
+
+    Args:
+        auto_level: Optimization level ("light", "medium", "heavy")
+
+    Returns:
+        Dictionary of optimizer kwargs
+    """
+    optimizer_kwargs = {
+        "num_threads": 16,  # Balanced between performance and stability
+        "reflection_minibatch_size": 3,  # Best practice efficiency setting
+        "candidate_selection_strategy": "pareto",  # Best practice for diverse solutions
+        "skip_perfect_score": True,  # Don't waste time on perfect examples
+        "use_merge": False,  # Disable merge to simplify debugging
+        "seed": 42,  # Reproducibility
+        "track_stats": True,  # CRITICAL - enables detailed_results for reporting
+        "track_best_outputs": True,  # Best practice - helpful for debugging
+    }
+
+    # Check for environment overrides
+    max_metric_calls = os.getenv("GEPA_MAX_METRIC_CALLS")
+    max_full_evals = os.getenv("GEPA_MAX_FULL_EVALS")
+
+    if max_metric_calls:
+        optimizer_kwargs["max_metric_calls"] = int(max_metric_calls)
+        print(f"Using max_metric_calls: {max_metric_calls}")
+    elif max_full_evals:
+        optimizer_kwargs["max_full_evals"] = int(max_full_evals)
+        print(f"Using max_full_evals: {max_full_evals}")
+    else:
+        optimizer_kwargs["auto"] = auto_level
+        print(f"Using optimization level: {auto_level}")
+
+    return optimizer_kwargs
+
+
+def run_optimization(
+    program_name: str,
+    training_data_path: str,
+    dspy_module: Any,
+    metric_func: Any,
+    prepare_examples_func: Any,
+    default_system_prompt: str,
+    default_user_prompt: str,
+    create_training_data_func: Any,
+) -> Tuple[str, str]:
+    """
+    Run GEPA optimization for a specific prompt optimization task.
+
+    Args:
+        program_name: Name of the program (e.g., "lv0_s1_concept_extraction")
+        training_data_path: Path to training data JSON file
+        dspy_module: DSPy module class to optimize
+        metric_func: Metric function for GEPA
+        prepare_examples_func: Function to prepare DSPy examples
+        default_system_prompt: Default system prompt
+        default_user_prompt: Default user prompt template
+        create_training_data_func: Function to create training data
+
+    Returns:
+        Tuple of (system_prompt, user_prompt_template)
+    """
+    import time
+    import warnings
+    import asyncio
+    from dspy.teleprompt import GEPA
+    from prompt_optimization.core import save_prompt
+    from prompt_optimization.reporter import create_optimization_report
+    
+    # Ensure proper asyncio event loop handling
+    try:
+        loop = asyncio.get_event_loop()
+        if loop.is_closed():
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+    print(f"Starting {program_name} prompt optimization...")
+    start_time = time.time()
+
+    # Configure LMs  
+    gen_model = os.getenv("GEPA_GEN_MODEL")
+    ref_model = os.getenv("GEPA_REFLECTION_MODEL")
+    if not gen_model or not ref_model:
+        raise ValueError("Generation and reflection models must be provided via CLI arguments")
+    
+    lm, reflection_lm = configure_openai_lms(gen_model, ref_model)
+    dspy.settings.configure(
+        lm=lm,
+        trace=None,  # Disable tracing to avoid database issues
+        cache=False  # Explicitly disable caching
+    )
+
+    # Load and prepare data
+    print("Loading training data...")
+    inputs, outputs = create_training_data_func()
+    examples = prepare_examples_func(inputs, outputs)
+    print(f"Loaded {len(examples)} training examples")
+
+    # Split data
+    trainset, valset = split_train_val(examples, 0.8)
+    print(f"Split into {len(trainset)} train and {len(valset)} validation examples")
+
+    # Create module instance
+    module = dspy_module()
+
+    # Evaluate baseline
+    initial_scores = evaluate_initial_performance(valset, metric_func, module)
+    print(f"Baseline average score: {initial_scores['avg_score']:.3f}")
+
+    # Configure optimizer
+    print("Configuring GEPA optimizer...")
+    auto_level = os.getenv("GEPA_AUTO", "light")
+    optimizer_kwargs = get_optimizer_config(auto_level)
+    optimizer_kwargs["metric"] = metric_func
+    optimizer_kwargs["reflection_lm"] = reflection_lm
+
+    optimizer = GEPA(**optimizer_kwargs)
+
+    # Run optimization
+    print("Running GEPA optimization (this may take a while)...")
+    optimized = optimizer.compile(module, trainset=trainset, valset=valset)
+
+    print("\nExtracting optimized prompts...")
+    user_prompt_template = extract_optimized_instruction(optimized)
+
+    # Save prompts
+    print("Saving optimized prompts...")
+    prompt_key_prefix = program_name.replace("_", "_").split("_")[:2]  # e.g., "lv0_s1"
+    prompt_key_prefix = "_".join(prompt_key_prefix)
+
+    system_path = save_prompt(f"{prompt_key_prefix}_system", default_system_prompt)
+    user_path = save_prompt(f"{prompt_key_prefix}_user", user_prompt_template)
+
+    print(f"✓ Saved system prompt to: {system_path}")
+    print(f"✓ Saved user prompt to: {user_path}")
+
+    # Calculate duration
+    duration = time.time() - start_time
+    duration_str = f"{int(duration // 60)}m {int(duration % 60)}s"
+
+    # Generate report
+    print("\nGenerating optimization report...")
+    try:
+        # Clean optimizer_kwargs for JSON serialization - remove functions
+        serializable_config = {
+            k: v
+            for k, v in optimizer_kwargs.items()
+            if not callable(v) and k not in ["metric", "reflection_lm"]
+        }
+        serializable_config["metric_name"] = getattr(
+            metric_func, "__name__", "metric_with_feedback"
+        )
+        serializable_config["reflection_model"] = getattr(
+            reflection_lm, "model", "unknown"
+        )
+
+        # Collect prompt information for the report
+        prompts_info = {
+            "initial_system": default_system_prompt,
+            "initial_user": default_user_prompt,
+            "optimized_system": default_system_prompt,  # System prompt typically doesn't change
+            "optimized_user": user_prompt_template,
+        }
+
+        report_paths = create_optimization_report(
+            initial_scores=initial_scores,
+            optimized_program=optimized,
+            detailed_results=getattr(optimized, "detailed_results", None),
+            prompts=prompts_info,
+            metadata={
+                "program_name": program_name,
+                "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                "duration": duration_str,
+                "training_data": {
+                    "source": training_data_path,
+                    "examples": len(examples),
+                    "train": len(trainset),
+                    "validation": len(valset),
+                },
+                "optimizer_config": serializable_config,
+                "generated_files": [system_path, user_path],
+            },
+        )
+
+        print("\nOptimization report generated:")
+        print(f"  Summary: {report_paths['txt_path']}")
+        print(f"  Details: {report_paths['json_path']}")
+        print(f"  Latest: {report_paths['txt_latest_path']}")
+
+    except Exception as e:
+        print(f"Warning: Failed to generate optimization report: {e}")
+
+    # Test optimized program
+    if len(valset) + len(trainset) > 0:
+        print("\nTesting optimized program on validation example...")
+        test_example = valset[0] if valset else trainset[0]
+        inputs = {k: getattr(test_example, k) for k in test_example.inputs()}
+        test_result = optimized(**inputs)
+
+        # Print test results (customize per task)
+        print(f"Test input: {str(inputs)[:200]}...")
+        print(f"Test output: {str(test_result)[:200]}...")
+    else:
+        print("\nWarning: No examples available for testing")
+
+    print(f"\n✅ Optimization complete! (took {duration_str})")
+    
+    # Clean up event loop to prevent warnings
+    try:
+        loop = asyncio.get_event_loop()
+        if loop.is_running():
+            loop.stop()
+    except Exception:
+        pass  # Ignore cleanup errors
+    
+    # Clean up temp cache directory if it exists
+    try:
+        import shutil
+        cache_dir = os.environ.get("DSP_CACHEDIR", "")
+        if cache_dir and cache_dir.startswith("/tmp/dspy_cache_") and os.path.exists(cache_dir):
+            shutil.rmtree(cache_dir)
+    except Exception:
+        pass  # Ignore cleanup errors
+    
+    return default_system_prompt, user_prompt_template

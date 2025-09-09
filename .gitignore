@@ -201,6 +201,9 @@ data/reports/
 data/concepts_info/
 data/evaluation/
 data/analysis/
+data/optimization_reports/
+!data/optimization_reports/*latest*.txt
+!data/optimization_reports/*latest*.json
 logs/
 vector_store*/
 

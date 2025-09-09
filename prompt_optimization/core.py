@@ -84,7 +84,6 @@ def save_prompt(
     if metadata and isinstance(metadata, dict):
         prompt_data["metadata"].update(metadata)
 
-    # Log what we're about to save
     logger.info(f"Saving prompt '{prompt_key}' to: {filepath}")
     logger.debug(f"Prompt content preview (first 100 chars): {prompt_content[:100]}...")
 

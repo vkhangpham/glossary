@@ -6,38 +6,36 @@ Environment Variables:
 """
 
 import json
+import logging
 import sys
-import time
 from typing import Any, Dict, List
 
 import dspy
 from dotenv import load_dotenv
-from dspy.teleprompt import GEPA
-
-from prompt_optimization.core import save_prompt
 from prompt_optimization.optimizers.common import (
-    configure_openai_lms,
-    extract_optimized_instruction,
     load_json_training,
-    split_train_val,
-)
-from prompt_optimization.reporter import (
-    create_optimization_report,
-    evaluate_initial_performance,
+    run_optimization,
 )
 
 load_dotenv()
 
-# Training data path constant
+logger = logging.getLogger(__name__)
+
+
 TRAINING_DATA_PATH = "data/prompts_training_data/lv0_s1.json"
 
 
 class ExtractConceptsSignature(dspy.Signature):
-    """DSPy signature for concept extraction from academic texts."""
+    """You are an expert at extracting academic concepts from institutional names.
 
-    instruction = dspy.InputField(
-        desc="System instructions for extraction", prefix="Instructions:"
-    )
+Extract the core academic disciplines and fields of study from college/school names following these rules:
+1. Extract only academic subjects (e.g., 'engineering', 'medicine'), not institution types ('college', 'school')
+2. Split conjunctions: 'Arts and Sciences' → ['arts', 'sciences']
+3. Remove person names: 'Gerald R. Ford School of Public Policy' → ['public policy']
+4. Keep multi-word disciplines together: 'computer science' (not 'computer', 'science')
+5. Return empty list [] for generic units like 'Graduate School', 'Honors College'
+6. Always normalize to lowercase"""
+
     text = dspy.InputField(desc="Text to extract concepts from", prefix="Input Text:")
     extraction = dspy.OutputField(
         desc="JSON array of extraction objects, each with 'source' and 'concepts' fields",
@@ -50,11 +48,12 @@ class ConceptExtractor(dspy.Module):
 
     def __init__(self):
         super().__init__()
-        self.prog = dspy.Predict(ExtractConceptsSignature)
+        # Use ChainOfThought for better reasoning and optimization
+        self.prog = dspy.ChainOfThought(ExtractConceptsSignature)
 
-    def forward(self, instruction: str, text: str) -> dspy.Prediction:
+    def forward(self, text: str) -> dspy.Prediction:
         """Extract concepts from text."""
-        return self.prog(instruction=instruction, text=text)
+        return self.prog(text=text)
 
 
 def load_training_data(
@@ -94,14 +93,13 @@ def prepare_dspy_examples(
     examples = []
 
     for text, expected_extractions in zip(inputs, outputs):
-        # Format expected output as JSON string
+
         formatted_output = json.dumps(expected_extractions, indent=2)
 
         example = dspy.Example(
-            instruction="Extract academic concepts from the given text.",
             text=text,
             extraction=formatted_output,
-        ).with_inputs("instruction", "text")
+        ).with_inputs("text")
 
         examples.append(example)
 
@@ -114,16 +112,16 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
     Returns dspy.Prediction with score and feedback.
     """
     try:
-        # Parse predicted extraction
+
         pred_extraction = json.loads(pred.extraction)
 
-        # Parse gold extraction
+
         if isinstance(gold.extraction, str):
             gold_extractions = json.loads(gold.extraction)
         else:
             gold_extractions = gold.extraction
 
-        # Calculate scores
+
 
         if isinstance(pred_extraction, list):
             pred_concepts = set()
@@ -136,11 +134,20 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
         for ext in gold_extractions:
             gold_concepts.update(ext.get("concepts", []))
 
-        # Calculate metrics
+
         if not gold_concepts:
-            return dspy.Prediction(
-                score=0.0, feedback="No gold concepts to compare against"
-            )
+            # Empty gold concepts means NO concepts should be extracted
+            if not pred_concepts:
+                # Both empty - perfect match!
+                return dspy.Prediction(
+                    score=1.0, feedback="Correctly identified no extractable concepts"
+                )
+            else:
+                # Gold is empty but pred extracted something - wrong!
+                return dspy.Prediction(
+                    score=0.0,
+                    feedback=f"Incorrectly extracted {len(pred_concepts)} concepts when none were expected",
+                )
 
         matches = pred_concepts & gold_concepts
         precision = len(matches) / len(pred_concepts) if pred_concepts else 0
@@ -151,27 +158,69 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
             else 0
         )
 
+        # Generate detailed, pattern-based feedback
         feedback = []
-        if f1 < 0.5:
-            feedback.append("Low F1 score indicates poor concept extraction.")
-            if precision < recall:
-                feedback.append(
-                    "Missing many expected concepts. Be more comprehensive."
-                )
-            else:
-                feedback.append(
-                    "Extracting too many irrelevant concepts. Be more selective."
-                )
-
-        if not pred_concepts:
-            feedback.append(
-                "No concepts extracted. Ensure you're identifying academic terms."
-            )
+        
+        # Analyze specific extraction patterns
+        missing = gold_concepts - pred_concepts if gold_concepts else set()
+        extra = pred_concepts - gold_concepts if pred_concepts else set()
+        correct = gold_concepts & pred_concepts if gold_concepts and pred_concepts else set()
+        
+        # Score-based feedback tiers
+        if f1 == 1.0:
+            feedback.append("Perfect extraction! All academic concepts correctly identified.")
+        elif f1 >= 0.8:
+            feedback.append(f"Good extraction (F1: {f1:.2f}).")
+            if missing:
+                # Check for common patterns in what was missed
+                for concept in list(missing)[:2]:
+                    if " and " in gold.text:
+                        feedback.append(f"Missed '{concept}' - remember to split 'and' conjunctions.")
+                    elif len(concept.split()) > 1:
+                        feedback.append(f"Missed multi-word concept '{concept}'.")
+                    else:
+                        feedback.append(f"Missed concept: '{concept}'.")
+        elif f1 >= 0.5:
+            feedback.append(f"Moderate extraction quality (F1: {f1:.2f}).")
+            
+            # Provide pattern-specific guidance
+            if "and" in gold.text.lower() and recall < 0.8:
+                feedback.append("Remember to split 'and' conjunctions (e.g., 'Arts and Sciences' → ['arts', 'sciences']).")
+            
+            if extra:
+                # Check for common incorrect patterns
+                for concept in list(extra)[:2]:
+                    if concept in ["college", "school", "department", "institute"]:
+                        feedback.append(f"Don't extract institution types like '{concept}' - focus on academic disciplines only.")
+                    elif concept[0].isupper():
+                        feedback.append(f"'{concept}' should be lowercase - normalize all concepts.")
+                    else:
+                        feedback.append(f"Incorrectly extracted: '{concept}'.")
+        else:
+            feedback.append(f"Poor extraction quality (F1: {f1:.2f}). Let's analyze the patterns:")
+            
+            # Provide specific examples for poor performance
+            if gold.text:
+                # Check for specific patterns in the input
+                text_lower = gold.text.lower()
+                
+                if "graduate school" in text_lower or "honors college" in text_lower:
+                    feedback.append("Generic administrative units like 'Graduate School' should return empty list [].")
+                elif " and " in text_lower:
+                    feedback.append("Split conjunctions: 'X and Y' should extract both 'x' and 'y' as separate concepts.")
+                elif any(name in gold.text for name in ["Gerald R. Ford", "Stephen M. Ross", "David Geffen"]):
+                    feedback.append("Remove person names from extractions - only keep the academic discipline.")
+                
+                # Show what was expected vs what was extracted
+                if gold_concepts:
+                    feedback.append(f"Expected: {sorted(list(gold_concepts)[:3])}.")
+                    if pred_concepts:
+                        feedback.append(f"Got: {sorted(list(pred_concepts)[:3])}.")
 
         if not isinstance(pred_extraction, (list, dict)):
-            feedback.append("Output should be a valid JSON structure.")
+            feedback.append("Output must be valid JSON array with 'source' and 'concepts' fields.")
 
-        feedback_str = " ".join(feedback) if feedback else "Good extraction quality."
+        feedback_str = " ".join(feedback)
 
         return dspy.Prediction(score=f1, feedback=feedback_str)
 
@@ -182,140 +231,32 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
         )
 
 
+
+
+# Default prompts - aligned with actual implementation in lv0_s1_extract_concepts.py
+DEFAULT_S1_SYSTEM = """You are an expert at extracting academic concepts from institutional names.
+Extract the core academic disciplines and fields of study from the given college/school names.
+Focus on the academic subjects, not the institution type or location."""
+
+DEFAULT_S1_USER = """Extract academic concepts from these institutions:
+
+{sources}
+
+For each institution, identify the core academic fields and disciplines."""
+
+
 def optimize_prompts():
     """Run GEPA optimization for concept extraction prompts."""
-    print("Starting lv0_s1 concept extraction prompt optimization...")
-    start_time = time.time()
-
-    lm, reflection_lm = configure_openai_lms()
-    dspy.settings.configure(lm=lm)
-
-    print("Loading training data...")
-    inputs, outputs = create_training_data()
-    examples = prepare_dspy_examples(inputs, outputs)
-    print(f"Loaded {len(examples)} training examples")
-
-    # Split into train and validation using common helper
-    trainset, valset = split_train_val(examples, 0.8)
-    print(f"Split into {len(trainset)} train and {len(valset)} validation examples")
-
-    concept_extractor = ConceptExtractor()
-
-    print("Configuring GEPA optimizer...")
-    import os
-
-    max_metric_calls = os.getenv("GEPA_MAX_METRIC_CALLS")
-    max_full_evals = os.getenv("GEPA_MAX_FULL_EVALS")
-    auto_level = os.getenv("GEPA_AUTO", "light")
-
-    # Configure GEPA following best practices from research paper
-    optimizer_kwargs = {
-        "metric": metric_with_feedback,
-        "reflection_lm": reflection_lm,
-        "num_threads": 8,  # Balanced between performance and stability (best practice: 16-32)
-        "reflection_minibatch_size": 3,  # Best practice efficiency setting
-        "candidate_selection_strategy": "pareto",  # Best practice for diverse solutions
-        "skip_perfect_score": True,  # Don't waste time on perfect examples
-        "use_merge": False,  # Disable merge to simplify debugging
-        "seed": 42,  # Reproducibility
-        "track_stats": True,  # CRITICAL - enables detailed_results for reporting
-        "track_best_outputs": True,  # Best practice - helpful for debugging and analysis
-    }
-
-    if max_metric_calls:
-        optimizer_kwargs["max_metric_calls"] = int(max_metric_calls)
-        print(f"Using max_metric_calls: {max_metric_calls}")
-    elif max_full_evals:
-        optimizer_kwargs["max_full_evals"] = int(max_full_evals)
-        print(f"Using max_full_evals: {max_full_evals}")
-    else:
-        optimizer_kwargs["auto"] = auto_level
-        print(f"Using optimization level: {auto_level}")
-
-    DEFAULT_S1_USER = """Extract academic concepts from these institutions:\n\n{sources}\n\n"
-        "For each institution, identify the core academic fields and disciplines.\n"
-        "Return a JSON array where each object has 'source' (the institution name) and 'concepts' (list of concepts)."""
-
-    # System prompt that clearly specifies the expected output schema
-    system_prompt = """You are an expert at extracting academic concepts from text.\n"
-        "Your task is to extract, for each provided source, a JSON object with:\n"
-        "- source: the original text\n"
-        "- concepts: list of extracted academic concepts (lowercase, deduplicated)\n"
-        "Return a JSON array named 'extractions' containing these objects."""
-
-    # Evaluate initial performance before optimization
-    print("Evaluating initial performance...")
-    initial_scores = evaluate_initial_performance(
-        examples=valset,
-        system_prompt=system_prompt,
-        user_prompt=DEFAULT_S1_USER,
+    return run_optimization(
+        program_name="lv0_s1_concept_extraction",
+        training_data_path=TRAINING_DATA_PATH,
+        dspy_module=ConceptExtractor,
         metric_func=metric_with_feedback,
+        prepare_examples_func=prepare_dspy_examples,
+        default_system_prompt=DEFAULT_S1_SYSTEM,
+        default_user_prompt=DEFAULT_S1_USER,
+        create_training_data_func=create_training_data,
     )
-    print(f"Initial average score: {initial_scores['avg_score']:.3f}")
-
-    optimizer = GEPA(**optimizer_kwargs)
-
-    print("Running GEPA optimization (this may take a while)...")
-    optimized = optimizer.compile(concept_extractor, trainset=trainset, valset=valset)
-
-    print("\nExtracting optimized prompts...")
-
-    user_prompt_template = extract_optimized_instruction(optimized, DEFAULT_S1_USER)
-
-    print("Saving optimized prompts...")
-
-    system_path = save_prompt("lv0_s1_system", system_prompt)
-    user_path = save_prompt("lv0_s1_user", user_prompt_template)
-
-    print(f"Saved system prompt to: {system_path}")
-    print(f"Saved user prompt to: {user_path}")
-
-    duration = time.time() - start_time
-    duration_str = f"{int(duration // 60)}m {int(duration % 60)}s"
-
-    print("\nGenerating optimization report...")
-    try:
-        report_paths = create_optimization_report(
-            initial_scores=initial_scores,
-            optimized_program=optimized,
-            detailed_results=getattr(optimized, "detailed_results", None),
-            metadata={
-                "program_name": "lv0_s1_concept_extraction",
-                "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
-                "duration": duration_str,
-                "training_data": {
-                    "source": TRAINING_DATA_PATH,
-                    "examples": len(examples),
-                    "train": len(trainset),
-                    "validation": len(valset),
-                },
-                "optimizer_config": optimizer_kwargs,
-                "generated_files": [system_path, user_path],
-            },
-        )
-
-        print("\nOptimization report generated:")
-        print(f"  Summary: {report_paths['txt_path']}")
-        print(f"  Details: {report_paths['json_path']}")
-
-    except Exception as e:
-        print(f"Warning: Failed to generate optimization report: {e}")
-
-    # Test the optimized program on a validation example (only if we have examples)
-    if len(valset) + len(trainset) > 0:
-        print("\nTesting optimized program on validation example...")
-        test_example = valset[0] if valset else trainset[0]
-        test_result = optimized(
-            instruction=test_example.instruction, text=test_example.text
-        )
-        print(f"Input text: {test_example.text[:100]}...")
-        print(f"Extracted concepts: {test_result.extraction[:200]}...")
-    else:
-        print("\nWarning: No examples available for testing")
-
-    print(f"\nOptimization complete! (took {duration_str})")
-
-    return system_prompt, user_prompt_template
 
 
 if __name__ == "__main__":

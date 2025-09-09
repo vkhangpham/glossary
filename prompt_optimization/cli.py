@@ -8,7 +8,6 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-# Load environment variables from .env file if it exists
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -66,8 +65,6 @@ def run_optimizer(
             )
             sys.exit(1)
 
-        # Configure GEPA parameters for the optimization
-        # Only one of auto, max_full_evals, or max_metric_calls should be set
         if max_metric_calls is not None:
             os.environ["GEPA_MAX_METRIC_CALLS"] = str(max_metric_calls)
             if verbose:
@@ -81,7 +78,7 @@ def run_optimizer(
             if verbose:
                 print(f"Using auto level: {auto}")
 
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"Running prompt optimization for: {name}")
         if max_metric_calls is not None:
             print(f"Budget: {max_metric_calls} metric calls")
@@ -89,13 +86,13 @@ def run_optimizer(
             print(f"Budget: {max_full_evals} full evaluations")
         else:
             print(f"Optimization level: {auto}")
-        print(f"{'='*60}\n")
+        print(f"{'=' * 60}\n")
 
         result = module.optimize_prompts()
 
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"✅ Optimization complete for {name}!")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
 
         return result
 
@@ -113,33 +110,47 @@ def run_optimizer(
 
 def main():
     """Main CLI entry point."""
+    # Properly handle asyncio event loop cleanup
+    import asyncio
+    import atexit
+    
+    def cleanup_event_loop():
+        """Clean up any existing event loops to prevent warnings."""
+        try:
+            loop = asyncio.get_event_loop()
+            if loop and not loop.is_closed():
+                loop.close()
+        except RuntimeError:
+            pass  # No event loop exists
+    
+    # Register cleanup function
+    atexit.register(cleanup_event_loop)
+    
     parser = argparse.ArgumentParser(
         description="Optimize prompts using DSPy GEPA",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   # Optimize lv0_s1 prompts (light/fast mode)
-  uv run optimize-prompt --name lv0_s1
+  uv run optimize-prompt --name lv0_s1 --model gpt-5-nano --reflection-model gpt-5
   
   # Optimize lv0_s3 prompts with thorough optimization
-  uv run optimize-prompt --name lv0_s3 --auto heavy
+  uv run optimize-prompt --name lv0_s3 --model gpt-5-nano --reflection-model gpt-5 --auto heavy
   
   # Optimize with exactly 10 full dataset evaluations
-  uv run optimize-prompt --name lv0_s1 --max-full-evals 10
+  uv run optimize-prompt --name lv0_s1 --model gpt-4o-mini --reflection-model gpt-4o --max-full-evals 10
   
   # Optimize with exactly 500 metric calls
-  uv run optimize-prompt --name lv0_s1 --max-metric-calls 500
+  uv run optimize-prompt --name lv0_s1 --model gpt-5-nano --reflection-model gpt-5 --max-metric-calls 500
   
   # Optimize with verbose output and medium optimization
-  uv run optimize-prompt --name lv0_s1 --verbose --auto medium
+  uv run optimize-prompt --name lv0_s1 --model gpt-5-nano --reflection-model gpt-5 --verbose --auto medium
   
   # List available optimizers
   uv run optimize-prompt --list
 
 Environment Variables:
-  OPENAI_API_KEY         - Required: Your OpenAI API key
-  GEPA_GEN_MODEL        - Optional: Generation model (default: gpt-5-nano)
-  GEPA_REFLECTION_MODEL - Optional: Reflection model (default: gpt-5)
+  OPENAI_API_KEY - Required: Your OpenAI API key
         """,
     )
 
@@ -168,14 +179,16 @@ Environment Variables:
         "--model",
         "-m",
         type=str,
-        help="Override the generation model (e.g., gpt-4, gpt-4o-mini)",
+        required=True,
+        help="Generation model (e.g., gpt-5-nano, gpt-4o-mini)",
     )
 
     parser.add_argument(
         "--reflection-model",
         "-r",
         type=str,
-        help="Override the reflection model",
+        required=True,
+        help="Reflection model (e.g., gpt-5, gpt-4o)",
     )
 
     parser.add_argument(
@@ -212,15 +225,13 @@ Environment Variables:
         parser.print_help()
         sys.exit(1)
 
-    if args.model:
-        os.environ["GEPA_GEN_MODEL"] = args.model
-        if args.verbose:
-            print(f"Using generation model: {args.model}")
-
-    if args.reflection_model:
-        os.environ["GEPA_REFLECTION_MODEL"] = args.reflection_model
-        if args.verbose:
-            print(f"Using reflection model: {args.reflection_model}")
+    # Set required model environment variables from CLI args
+    os.environ["GEPA_GEN_MODEL"] = args.model
+    os.environ["GEPA_REFLECTION_MODEL"] = args.reflection_model
+    
+    if args.verbose:
+        print(f"Using generation model: {args.model}")
+        print(f"Using reflection model: {args.reflection_model}")
 
     if args.max_metric_calls and args.max_full_evals:
         print("Error: Cannot specify both --max-metric-calls and --max-full-evals")

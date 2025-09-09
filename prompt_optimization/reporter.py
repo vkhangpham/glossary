@@ -9,50 +9,13 @@ import json
 import logging
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Callable, Dict, List
+from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
 
-def evaluate_initial_performance(
-    examples: List[Any], system_prompt: str, user_prompt: str, metric_func: Callable
-) -> Dict[str, Any]:
-    """
-    Evaluate performance of initial prompts before optimization.
-
-    Args:
-        examples: Validation examples to evaluate on
-        system_prompt: Initial system prompt
-        user_prompt: Initial user prompt template
-        metric_func: Metric function to use for evaluation
-
-    Returns:
-        Dictionary containing initial performance scores
-    """
-    scores = []
-    total_score = 0.0
-
-    for example in examples:
-        # Simple evaluation - would need actual prediction logic
-        # This is a placeholder that should be customized per optimizer
-        mock_prediction = type(
-            "MockPrediction", (), {"extraction": "[]"}  # Mock empty extraction
-        )()
-
-        result = metric_func(example, mock_prediction)
-        score = getattr(result, "score", 0.0)
-        scores.append(score)
-        total_score += score
-
-    avg_score = total_score / len(examples) if examples else 0.0
-
-    return {
-        "avg_score": avg_score,
-        "individual_scores": scores,
-        "total_examples": len(examples),
-        "system_prompt": system_prompt,
-        "user_prompt": user_prompt,
-    }
+# Note: evaluate_initial_performance removed - each optimizer should implement their own
+# See template.py for implementation guidance
 
 
 def analyze_detailed_results(detailed_results: Any) -> Dict[str, Any]:
@@ -78,7 +41,7 @@ def analyze_detailed_results(detailed_results: Any) -> Dict[str, Any]:
         )
         return analysis
 
-    # Extract highest scores per validation task
+
     if hasattr(detailed_results, "highest_score_achieved_per_val_task"):
         highest_scores = detailed_results.highest_score_achieved_per_val_task
         analysis["best_validation_scores"] = highest_scores
@@ -93,12 +56,11 @@ def analyze_detailed_results(detailed_results: Any) -> Dict[str, Any]:
                 f"Task {idx}: {score:.3f}" for idx, score in sorted_scores[:3]
             ]
 
-            # Identify challenging tasks (lowest scores)
             analysis["challenging_tasks"] = [
                 f"Task {idx}: {score:.3f}" for idx, score in sorted_scores[-2:]
             ]
 
-    # Extract best outputs if available
+
     if hasattr(detailed_results, "best_outputs_valset"):
         best_outputs = detailed_results.best_outputs_valset
         if best_outputs:
@@ -106,7 +68,7 @@ def analyze_detailed_results(detailed_results: Any) -> Dict[str, Any]:
                 f"Found {len(best_outputs)} best outputs during optimization"
             )
 
-    # Generate insights based on score patterns
+
     if analysis["best_validation_scores"]:
         scores = analysis["best_validation_scores"]
         avg_score = sum(scores) / len(scores)
@@ -208,10 +170,16 @@ def format_performance_comparison(performance: Dict[str, Any]) -> str:
     optimized = performance.get("optimized", {})
     improvement = performance.get("improvement", {})
 
-    initial_avg = initial.get("avg_score", 0.0)
+    initial_avg = initial.get("avg_score", None)
     optimized_avg = optimized.get("avg_score", 0.0)
-    pct_improvement = improvement.get("percentage_improvement", 0.0)
 
+
+    if initial_avg is None:
+        message = improvement.get("message", "No baseline available")
+        return f"""                BEFORE    AFTER    IMPROVEMENT
+Average Score:  N/A       {optimized_avg:.3f}    {message}"""
+
+    pct_improvement = improvement.get("percentage_improvement", 0.0)
     direction = (
         "up" if pct_improvement > 0 else "down" if pct_improvement < 0 else "same"
     )
@@ -260,6 +228,49 @@ def format_insights(insights: List[str]) -> str:
     return "\n".join(formatted_insights)
 
 
+def format_prompts_section(prompts: Dict[str, Any]) -> str:
+    """Format prompts section for TXT report showing before/after comparison."""
+    if not prompts:
+        return "No prompt information available"
+    
+    initial_system = prompts.get("initial_system", "")
+    initial_user = prompts.get("initial_user", "")
+    optimized_system = prompts.get("optimized_system", "")
+    optimized_user = prompts.get("optimized_user", "")
+    
+    lines = []
+    
+    if initial_system and optimized_system:
+        lines.extend([
+            "SYSTEM PROMPT COMPARISON:",
+            "",
+            "INITIAL SYSTEM PROMPT:",
+            "─" * 50,
+            initial_system,
+            "",
+            "OPTIMIZED SYSTEM PROMPT:",
+            "─" * 50, 
+            optimized_system,
+            "",
+        ])
+    
+    if initial_user and optimized_user:
+        lines.extend([
+            "USER PROMPT COMPARISON:",
+            "",
+            "INITIAL USER PROMPT:",
+            "─" * 50,
+            initial_user,
+            "",
+            "OPTIMIZED USER PROMPT:",
+            "─" * 50,
+            optimized_user,
+            "",
+        ])
+    
+    return "\n".join(lines) if lines else "No prompt comparison available"
+
+
 def format_files_section(files: List[str]) -> str:
     """Format generated files section for TXT report."""
     if not files:
@@ -300,6 +311,8 @@ def generate_txt_report(optimization_data: Dict[str, Any]) -> str:
         optimization_data.get("analysis", {}).get("insights", [])
     )
 
+    prompts_section = format_prompts_section(optimization_data.get("prompts", {}))
+
     files_section = format_files_section(optimization_data.get("files", []))
 
     optimizer_config = optimization_data.get("optimizer_config", {})
@@ -324,6 +337,10 @@ TRAINING DATA
 PERFORMANCE IMPROVEMENT
 ━━━━━━━━━━━━━━━━━━━━━━━
 {performance_section}
+
+PROMPT OPTIMIZATION
+━━━━━━━━━━━━━━━━━━━
+{prompts_section}
 
 DETAILED ANALYSIS (from GEPA detailed_results)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -365,6 +382,8 @@ def save_reports(
 ) -> Dict[str, str]:
     """
     Save both TXT and JSON reports to files.
+    
+    Saves both timestamped versions and "latest" versions that get overwritten.
 
     Args:
         txt_content: Formatted TXT report content
@@ -387,10 +406,15 @@ def save_reports(
     except Exception as e:
         raise IOError(f"Failed to create directory {output_path}: {e}")
 
+    # Timestamped file paths
     txt_path = output_path / f"{report_name}_{timestamp}.txt"
     json_path = output_path / f"{report_name}_{timestamp}_detailed.json"
+    
+    # Latest file paths (will be overwritten)
+    txt_latest_path = output_path / f"{report_name}_latest.txt"
+    json_latest_path = output_path / f"{report_name}_latest_detailed.json"
 
-    # Save TXT report
+    # Save timestamped TXT report
     try:
         with open(txt_path, "w", encoding="utf-8") as f:
             f.write(txt_content)
@@ -398,7 +422,15 @@ def save_reports(
     except Exception as e:
         raise IOError(f"Failed to save TXT report to {txt_path}: {e}")
 
-    # Save JSON report
+    # Save latest TXT report (overwrite)
+    try:
+        with open(txt_latest_path, "w", encoding="utf-8") as f:
+            f.write(txt_content)
+        logger.info(f"Saved latest TXT report to: {txt_latest_path}")
+    except Exception as e:
+        logger.warning(f"Failed to save latest TXT report: {e}")
+
+    # Save timestamped JSON report
     try:
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
@@ -406,37 +438,63 @@ def save_reports(
     except Exception as e:
         raise IOError(f"Failed to save JSON report to {json_path}: {e}")
 
-    return {"txt_path": str(txt_path.resolve()), "json_path": str(json_path.resolve())}
+    # Save latest JSON report (overwrite)
+    try:
+        with open(json_latest_path, "w", encoding="utf-8") as f:
+            json.dump(json_data, f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved latest JSON report to: {json_latest_path}")
+    except Exception as e:
+        logger.warning(f"Failed to save latest JSON report: {e}")
+
+    return {
+        "txt_path": str(txt_path.resolve()),
+        "json_path": str(json_path.resolve()),
+        "txt_latest_path": str(txt_latest_path.resolve()),
+        "json_latest_path": str(json_latest_path.resolve()),
+    }
 
 
 def create_optimization_report(
-    initial_scores: Dict[str, Any],
-    optimized_program: Any,
-    detailed_results: Any,
-    metadata: Dict[str, Any],
+    initial_scores: Optional[Dict[str, Any]] = None,
+    optimized_program: Any = None,
+    detailed_results: Any = None,
+    metadata: Optional[Dict[str, Any]] = None,
+    prompts: Optional[Dict[str, str]] = None,
 ) -> Dict[str, str]:
     """
     Main orchestration function - compose all the pieces to create complete report.
 
     Args:
-        initial_scores: Performance scores before optimization
+        initial_scores: Performance scores before optimization (optional - can be None)
         optimized_program: The optimized DSPy program
         detailed_results: GEPA detailed_results with track_stats=True
         metadata: Additional metadata (program name, config, etc.)
+        prompts: Dictionary containing initial and optimized prompts
 
     Returns:
         Dictionary with paths to saved TXT and JSON report files
     """
-    # Extract optimized performance
+
     optimized_scores = extract_optimized_scores(optimized_program, detailed_results)
 
-    # Calculate improvements
-    improvement = calculate_improvement(initial_scores, optimized_scores)
 
-    # Analyze detailed results
+    if initial_scores:
+        improvement = calculate_improvement(initial_scores, optimized_scores)
+    else:
+        improvement = {
+            "initial_avg": None,
+            "optimized_avg": optimized_scores.get("avg_score", None),
+            "improvement_pct": None,
+            "message": "No baseline available - initial evaluation was skipped",
+        }
+
+
     analysis = analyze_detailed_results(detailed_results)
 
-    # Build complete optimization data
+
+    metadata = metadata or {}
+
+
     optimization_data = {
         "program_name": metadata.get("program_name", "unknown_optimization"),
         "timestamp": metadata.get("timestamp", datetime.now().isoformat()),
@@ -447,21 +505,23 @@ def create_optimization_report(
             "optimized": optimized_scores,
             "improvement": improvement,
         },
+        "prompts": prompts or {},
         "analysis": analysis,
         "optimizer_config": metadata.get("optimizer_config", {}),
         "files": metadata.get("generated_files", []),
     }
 
-    # Generate report content
+
     txt_content = generate_txt_report(optimization_data)
     json_data = generate_json_report(optimization_data)
 
-    # Save reports
-    return save_reports(txt_content, json_data, metadata["program_name"])
+
+    return save_reports(
+        txt_content, json_data, metadata.get("program_name", "unknown_optimization")
+    )
 
 
 __all__ = [
-    "evaluate_initial_performance",
     "analyze_detailed_results",
     "create_optimization_report",
     "generate_txt_report",
