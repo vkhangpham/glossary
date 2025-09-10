@@ -1,7 +1,7 @@
 """Package for generating and managing technical glossaries."""
 
 from .utils import (
-    setup_logger,
+    get_logger,
 )
 
 __version__ = "0.1.0"
@@ -25,5 +25,5 @@ __all__ = [
     
     # Other utilities
     'analyze_content',
-    'setup_logger',
+    'get_logger',
 ] 

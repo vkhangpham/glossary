@@ -14,9 +14,9 @@ from typing import Optional, Dict, Any, List
 from dataclasses import dataclass
 from pathlib import Path
 
-from generate_glossary.utils.logger import setup_logger
+from generate_glossary.utils.logger import get_logger
 
-logger = setup_logger("secure_config")
+logger = get_logger("secure_config")
 
 @dataclass
 class APIKeyInfo:
@@ -336,5 +336,5 @@ def create_secure_logger(name: str):
     Returns:
         SecureLogger instance
     """
-    base_logger = setup_logger(name)
+    base_logger = get_logger(name)
     return SecureLogger(base_logger)

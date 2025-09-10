@@ -70,6 +70,8 @@ dependencies = [
     "pyarrow",
     "dspy-ai==3.0.3",
     "dspy>=2.6.27",
+    # File locking for checkpoint reliability
+    "filelock",
 ]
 
 [project.scripts]

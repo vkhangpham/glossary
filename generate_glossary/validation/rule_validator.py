@@ -40,8 +40,8 @@ BLACKLIST_TERMS = set(
     else DEFAULT_BLACKLIST_TERMS
 )
 
-# Thread pool configuration
-MAX_WORKERS = min(32, (os.cpu_count() or 1) * 2)
+# Configuration is now centralized
+from generate_glossary.config import get_validation_config
 
 
 @lru_cache(maxsize=10000)
@@ -65,7 +65,8 @@ def validate_with_rules(
         Dictionary mapping terms to validation results
     """
     # Use thread pool with resource limits
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    validation_config = get_validation_config()
+    with ThreadPoolExecutor(max_workers=validation_config.max_workers) as executor:
         if show_progress:
             results = list(tqdm(
                 executor.map(_validate_single_term, terms),

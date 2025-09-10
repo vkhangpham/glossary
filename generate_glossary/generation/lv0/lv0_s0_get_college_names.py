@@ -7,7 +7,7 @@ from typing import Dict, List, Tuple
 from pathlib import Path
 from tqdm import tqdm
 
-from generate_glossary.utils.logger import setup_logger
+from generate_glossary.utils.logger import get_logger
 
 TOP_N_INSTITUTIONS = 30  # Number of top institutions to select
 EXCEL_FILE = "data/Faculty Extraction Report.xlsx"  # Source Excel file
@@ -30,7 +30,7 @@ SHEETS_TO_PROCESS = [
 
 random.seed(RANDOM_SEED)
 
-logger = setup_logger("lv0.s0")
+logger = get_logger("lv0.s0")
 
 
 def count_colleges_per_institution(df: pl.DataFrame) -> Dict[str, List[str]]:
@@ -105,7 +105,7 @@ def select_top_institutions(
     return filtered_dict, selected_institutions
 
 
-def test():
+def test(provider="openai", **kwargs):
     """Test mode: Process 10% of data and save to test directory"""
     global OUTPUT_DIR, TOP_N_INSTITUTIONS
     

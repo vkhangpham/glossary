@@ -14,9 +14,9 @@ from typing import Dict, List, Any, Optional, Tuple, Union
 from dataclasses import dataclass, asdict
 from datetime import datetime
 
-from generate_glossary.utils.logger import setup_logger
+from generate_glossary.utils.logger import get_logger
 
-logger = setup_logger("checkpoint")
+logger = get_logger("checkpoint")
 
 @dataclass
 class CheckpointMetadata:

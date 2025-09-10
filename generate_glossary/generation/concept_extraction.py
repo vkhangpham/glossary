@@ -1,8 +1,8 @@
 """
-Shared concept extraction functionality for levels 1-3.
+Shared concept extraction functionality for all levels.
 
 This module provides the generic s1 (LLM concept extraction) logic that can be
-configured for different levels through the level_config module.
+configured for different levels through the centralized config module.
 """
 
 import os
@@ -13,6 +13,11 @@ from typing import List, Dict, Any, Optional
 from collections import Counter
 from pydantic import BaseModel, Field
 
+from generate_glossary.utils.error_handler import (
+    ValidationError, handle_error, processing_context
+)
+from generate_glossary.utils.logger import get_logger, log_processing_step
+
 
 def chunk(items: list, size: int):
     """Simple chunking function to replace pydash.chunk"""
@@ -21,17 +26,20 @@ def chunk(items: list, size: int):
 
 
 from tqdm import tqdm
-
-from generate_glossary.utils.logger import setup_logger
-from generate_glossary.config import ensure_directories
-from generate_glossary.utils.llm import completion, get_model_by_tier
+from generate_glossary.config import (
+    ensure_directories,
+    get_processing_config,
+    get_step_config,
+    get_llm_config
+)
+from generate_glossary.utils.llm import (
+    completion, get_model_by_tier, smart_structured_completion_consensus, 
+    run_async_safely
+)
 from generate_glossary.deduplication.utils import normalize_text
 
-# Resilient processing not yet implemented
-# from generate_glossary.utils.resilient_processing import (
-#     ConceptExtractionProcessor, create_processing_config, get_checkpoint_dir
-# )
-from generate_glossary.generation.level_config import get_level_config
+# Use centralized configuration
+from generate_glossary.config import get_level_config
 
 
 class ConceptExtraction(BaseModel):
@@ -51,11 +59,43 @@ class ConceptExtractionList(BaseModel):
 
 def create_system_prompt(level: int) -> str:
     """Create level-specific system prompt."""
-    config = get_level_config(level)
+    # Use step config from centralized system
+    config = get_step_config(level) or get_level_config(level)  # Fallback for compatibility
 
     base_prompt = """You are an expert in academic research classification with deep knowledge of research domains, scientific disciplines, and academic institutions."""
 
-    if level == 1:
+    if level == 0:
+        return f"""{base_prompt}
+
+Your task is to extract academic disciplines and fields of study from college and school names.
+
+**CORE TASK:** Extract ONLY well-established, recognized academic disciplines or broad fields explicitly mentioned in or directly associated with the provided college/school names.
+
+**CRITICAL GUIDELINES:**
+1. Extract 1-3 core academic disciplines per college/school name
+2. Focus on established academic fields and disciplines
+3. Handle multi-disciplinary colleges by extracting individual fields
+4. Normalize terminology to standard academic language
+5. Exclude administrative terms, locations, or institutional identifiers
+
+**EXAMPLES:**
+- "College of Engineering" → ["engineering"]
+- "School of Medicine" → ["medicine"]
+- "College of Liberal Arts and Sciences" → ["liberal arts", "sciences"]
+- "School of Business" → ["business"]
+
+Return structured JSON with extracted academic disciplines for each input.
+IMPORTANT: Your response must be in this exact format:
+{
+  "extractions": [
+    {
+      "source": "<exact input string>",
+      "concepts": ["concept1", "concept2"]
+    }
+  ]
+}"""
+
+    elif level == 1:
         return f"""{base_prompt}
 
 Your task is to extract academic concepts and fields of study from university department names.
@@ -74,7 +114,16 @@ Your task is to extract academic concepts and fields of study from university de
 - "School of Business Administration" → ["business administration"]
 - "College of Arts and Sciences" → ["arts", "sciences"]
 
-Return structured JSON with extracted concepts for each input."""
+Return structured JSON with extracted concepts for each input.
+IMPORTANT: Your response must be in this exact format:
+{
+  "extractions": [
+    {
+      "source": "<exact input string>",
+      "concepts": ["concept1", "concept2"]
+    }
+  ]
+}"""
 
     elif level == 2:
         return f"""{base_prompt}
@@ -95,7 +144,16 @@ Your task is to extract research areas and specializations from academic departm
 - "Biomedical Engineering Lab" → ["biomedical engineering"]
 - "Computational Biology Center" → ["computational biology"]
 
-Return structured JSON with extracted research areas for each input."""
+Return structured JSON with extracted research areas for each input.
+IMPORTANT: Your response must be in this exact format:
+{
+  "extractions": [
+    {
+      "source": "<exact input string>",
+      "concepts": ["concept1", "concept2"]
+    }
+  ]
+}"""
 
     elif level == 3:
         return f"""{base_prompt}
@@ -116,7 +174,16 @@ Your task is to extract conference topics and themes from research area or confe
 - "Natural Language Processing Conference" → ["natural language processing"] 
 - "Computer Vision and Pattern Recognition" → ["computer vision", "pattern recognition"]
 
-Return structured JSON with extracted conference topics for each input."""
+Return structured JSON with extracted conference topics for each input.
+IMPORTANT: Your response must be in this exact format:
+{
+  "extractions": [
+    {
+      "source": "<exact input string>",
+      "concepts": ["concept1", "concept2"]
+    }
+  ]
+}"""
 
     else:
         raise ValueError(f"Unknown level: {level}")
@@ -131,9 +198,19 @@ def load_input_data(input_file: str) -> List[str]:
 def process_concept_batch(
     batch: List[str], level: int, system_prompt: str, provider: Optional[str] = None
 ) -> List[ConceptExtraction]:
-    """Process a single batch of concepts with LLM."""
-    logger = setup_logger(f"lv{level}.s1")
-    config = get_level_config(level)
+    """Process a single batch of concepts with optimized smart consensus."""
+    logger = get_logger(f"lv{level}.s1")
+    # Get configuration from centralized system
+    step_config = get_step_config(level) or get_level_config(level)
+    processing_config = get_processing_config(level)
+    llm_config = get_llm_config()
+    
+    # Semantic validation for concept extraction quality
+    semantic_validation = f"""Verify that each extracted concept is:
+1. An appropriate {step_config.context_description} term
+2. Not a location, person name, or institution name
+3. A meaningful academic or research term
+4. Properly normalized (lowercase, no abbreviations)"""
 
     # Build prompt for batch
     prompt_parts = ["Extract academic concepts from the following:"]
@@ -149,38 +226,48 @@ def process_concept_batch(
     ]
 
     try:
-        # Determine model based on provider or tier
-        if provider:
-            # Map provider to a specific model
-            if provider == "openai":
-                model_str = "openai/gpt-4o-mini"
-            elif provider == "anthropic":
-                model_str = "anthropic/claude-3-haiku-20240307"
-            elif provider == "gemini":
-                model_str = "gemini/gemini-1.5-flash"
-            else:
-                # Fallback to tier-based selection
-                tier = "budget" if level == 0 else "balanced"
-                model_str = get_model_by_tier(tier)
-        else:
-            # Use tier-based selection
-            tier = "budget" if level == 0 else "balanced"
-            model_str = get_model_by_tier(tier)
-
-        # Use structured completion for reliable parsing
-        response = completion(
-            messages=messages, response_model=ConceptExtractionList, model=model_str
+        # Determine tier based on level
+        tier = "budget" if level == 0 else "balanced"
+        
+        # Use smart consensus for improved accuracy and reduced API calls
+        response = run_async_safely(
+            smart_structured_completion_consensus,
+            messages=messages,
+            response_model=ConceptExtractionList,
+            tier=tier,
+            num_responses=step_config.consensus_attempts,  # Use consensus_attempts instead of agreement_threshold
+            semantic_validation=semantic_validation,  # Add semantic validation
+            use_case="concept_extraction",
+            enable_enhanced_cache=True,
+            enable_smart_consensus=True
         )
 
         if response and hasattr(response, "extractions"):
             return response.extractions
         else:
-            logger.warning("No extractions returned from LLM")
-            return []
+            # Treat empty LLM response as validation error
+            raise ValidationError(
+                "LLM returned empty extractions",
+                invalid_data={
+                    "batch_size": len(batch),
+                    "batch_sample": str(batch[:2]) if batch else "empty",
+                    "provider": provider,
+                    "tier": tier
+                }
+            )
 
     except Exception as e:
-        logger.error(f"Error in concept extraction: {str(e)}")
-        return []
+        # Use handle_error with reraise=True for internal helpers
+        handle_error(
+            e,
+            context={
+                "batch_size": len(batch),
+                "batch_sample": str(batch[:2]) if batch else "empty",
+                "provider": provider
+            },
+            operation="concept_extraction_batch",
+            reraise=True
+        )
 
 
 def process_concept_batches(
@@ -190,65 +277,66 @@ def process_concept_batches(
     provider: Optional[str] = None,
 ) -> List[ConceptExtraction]:
     """Process all batches with agreement-based filtering."""
-    logger = setup_logger(f"lv{level}.s1")
-    config = get_level_config(level)
+    with processing_context(f"concept_batches_lv{level}") as correlation_id:
+        logger = get_logger(f"lv{level}.s1")
+        # Get configuration from centralized system
+        config = get_step_config(level) or get_level_config(level)
+        
+        log_processing_step(
+            logger,
+            f"concept_extraction_lv{level}",
+            "started",
+            {"input_count": len(input_data), "batch_size": config.batch_size}
+        )
 
-    batches = list(chunk(input_data, config.batch_size))
-    logger.info(f"Processing {len(batches)} batches of size {config.batch_size}")
+        batches = list(chunk(input_data, config.batch_size))
+        logger.info(f"Processing {len(batches)} batches of size {config.batch_size}")
 
-    # TODO: Re-enable checkpoint system when resilient_processing is available
-    all_extractions = []
+        # TODO: Re-enable checkpoint system when resilient_processing is available
+        all_extractions = []
 
-    for batch_idx, batch in enumerate(tqdm(batches, desc="Processing batches")):
-        try:
-            # Process batch multiple times for agreement
-            batch_results = []
-            for attempt in range(config.agreement_threshold + 1):
-                attempt_extractions = process_concept_batch(
+        for batch_idx, batch in enumerate(tqdm(batches, desc="Processing batches")):
+            try:
+                # Smart consensus handles agreement internally, so we only need one call per batch
+                batch_extractions = process_concept_batch(
                     batch, level, system_prompt, provider
                 )
-                if attempt_extractions:
-                    batch_results.append(attempt_extractions)
+                
+                if batch_extractions:
+                    all_extractions.extend(batch_extractions)
+                    logger.debug(f"Batch {batch_idx}: extracted {len(batch_extractions)} concept sets")
+                
+                    # Save checkpoint
+                    # Checkpoint saving disabled until resilient_processing is available
+                    # processor.save_checkpoint(batch_idx, batch_extractions)
 
-            # Combine results from multiple attempts
-            batch_extractions = []
-            if batch_results:
-                concept_votes = {}
-                for result in batch_results:
-                    for extraction in result:
-                        source = extraction.source
-                        if source not in concept_votes:
-                            concept_votes[source] = []
-                        concept_votes[source].extend(extraction.concepts)
+            except Exception as e:
+                handle_error(
+                    e,
+                    context={
+                        "batch_idx": batch_idx,
+                        "batch_size": len(batch),
+                        "level": level,
+                        "correlation_id": correlation_id
+                    },
+                    operation=f"concept_batch_processing_lv{level}"
+                )
+                logger.error(f"Error processing batch {batch_idx}: {str(e)}")
+                continue
 
-                # Apply agreement threshold
-                for source, all_concepts in concept_votes.items():
-                    concept_counts = Counter(
-                        normalize_text(concept) for concept in all_concepts
-                    )
-                    agreed_concepts = [
-                        concept
-                        for concept, count in concept_counts.items()
-                        if count >= config.agreement_threshold
-                    ]
-
-                    if agreed_concepts:
-                        batch_extractions.append(
-                            ConceptExtraction(source=source, concepts=agreed_concepts)
-                        )
-
-                # Save checkpoint
-                # Checkpoint saving disabled until resilient_processing is available
-                # processor.save_checkpoint(batch_idx, batch_extractions)
-
-            all_extractions.extend(batch_extractions)
-
-        except Exception as e:
-            logger.error(f"Error processing batch {batch_idx}: {str(e)}")
-            continue
-
-    logger.info(f"Extracted concepts from {len(input_data)} inputs")
-    return all_extractions
+        log_processing_step(
+            logger,
+            f"concept_extraction_lv{level}",
+            "completed",
+            {
+                "total_inputs": len(input_data),
+                "total_extractions": len(all_extractions),
+                "batches_processed": len(batches)
+            }
+        )
+        
+        logger.info(f"Extracted concepts from {len(input_data)} inputs")
+        return all_extractions
 
 
 def save_extraction_results(
@@ -259,7 +347,7 @@ def save_extraction_results(
     processing_stats: Dict[str, Any],
 ):
     """Save extraction results to files with source-concept mapping."""
-    logger = setup_logger(f"lv{level}.s1")
+    logger = get_logger(f"lv{level}.s1")
 
     # Save source-concept pairs for s2 frequency filtering
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -276,7 +364,8 @@ def save_extraction_results(
         for concept in extraction.concepts:
             unique_concepts.add(normalize_text(concept))
 
-    # Save metadata
+    # Save metadata - use centralized config source
+    step_cfg = get_step_config(level) or get_level_config(level)  # Centralized config with fallback
     metadata = {
         "level": level,
         "step": "s1",
@@ -285,8 +374,9 @@ def save_extraction_results(
         "total_sources_processed": len(extractions),
         "processing_timestamp": time.time(),
         "config_used": {
-            "batch_size": get_level_config(level).batch_size,
-            "agreement_threshold": get_level_config(level).agreement_threshold,
+            "batch_size": step_cfg.batch_size,
+            "agreement_threshold": step_cfg.agreement_threshold,
+            "consensus_attempts": step_cfg.consensus_attempts,
         },
         **processing_stats,
     }
@@ -311,7 +401,7 @@ def extract_concepts_llm(
 
     Args:
         input_file: Path to file containing input data
-        level: Generation level (1, 2, or 3)
+        level: Generation level (0, 1, 2, or 3)
         output_file: Path to save extracted concepts
         metadata_file: Path to save processing metadata
         provider: Optional LLM provider override
@@ -319,7 +409,7 @@ def extract_concepts_llm(
     Returns:
         Dictionary containing processing results and metadata
     """
-    logger = setup_logger(f"lv{level}.s1")
+    logger = get_logger(f"lv{level}.s1")
     config = get_level_config(level)
 
     # Ensure directories exist

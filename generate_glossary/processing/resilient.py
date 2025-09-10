@@ -10,10 +10,10 @@ from typing import List, Dict, Any, Optional, Callable
 from pathlib import Path
 from tqdm import tqdm
 
-from generate_glossary.utils.logger import setup_logger
+from generate_glossary.utils.logger import get_logger
 from .checkpoint import CheckpointManager
 
-logger = setup_logger("resilient_processing")
+logger = get_logger("resilient_processing")
 
 
 class ResilientProcessor:

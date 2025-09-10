@@ -1,166 +1,173 @@
 #!/usr/bin/env python3
 """
-Unified CLI command for running generation steps.
+Unified CLI command for running generation steps with dynamic step discovery.
+
+This modernized CLI eliminates hardcoded step mappings and uses dynamic
+discovery to automatically adapt to changes in the step modules.
 
 Usage:
     uv run generate -l 0 -s 0  # Run Level 0, Step 0
     uv run generate -l 1 -s 2  # Run Level 1, Step 2
+    uv run generate --list      # List all available steps
+    uv run generate --validate -l 1  # Validate all Level 1 steps
 """
 
 import sys
 import argparse
-import importlib
 
-from generate_glossary.utils.logger import setup_logger
-from generate_glossary.generation.level_config import get_step_file_paths
+from generate_glossary.utils.logger import get_logger
+from generate_glossary.generation.wrapper_utils import (
+    create_generic_step_runner, 
+    validate_step_dependencies,
+    get_step_parameters
+)
+from generate_glossary.generation.step_discovery import (
+    discover_available_steps,
+    get_step_metadata, 
+    validate_all_steps,
+    get_validation_summary,
+    list_all_steps
+)
 
-logger = setup_logger("cli.generate")
-
-
-def run_level_0_step(step: int, **kwargs) -> int:
-    """Run a Level 0 generation step."""
-
-    steps = {
-        0: ("lv0_s0_get_college_names", "Get college names from Excel"),
-        1: ("lv0_s1_extract_concepts", "Extract concepts via LLM"),
-        2: ("lv0_s2_filter_by_institution_freq", "Filter by institution frequency"),
-        3: ("lv0_s3_verify_single_token", "Verify single tokens"),
-    }
-
-    if step not in steps:
-        logger.error(f"Invalid step {step} for Level 0. Valid steps are 0-3.")
-        return 1
-
-    module_name, description = steps[step]
-    test_mode = kwargs.get("test", False)
-
-    module_path = f"generate_glossary.generation.lv0.{module_name}"
-    module = importlib.import_module(module_path)
-
-    if test_mode:
-        logger.info(f"Running Level 0, Step {step}: {description} [TEST MODE]")
-        func = getattr(module, "test")
-    else:
-        logger.info(f"Running Level 0, Step {step}: {description}")
-        func = getattr(module, "main")
-
-    # Step 3 needs provider argument
-    if step == 3:
-        provider = kwargs.get("provider")
-        func(provider=provider)
-    else:
-        func()
-
-    return 0
+logger = get_logger("cli.generate")
 
 
-def run_generic_level_step(level: int, step: int, **kwargs) -> int:
-    """Run a generic level step using standalone scripts."""
-
-    level_configs = {
-        1: {
-            "modules": {
-                0: "lv1_s0_get_dept_names",
-                1: "lv1_s1_extract_concepts",
-                2: "lv1_s2_filter_by_freq",
-                3: "lv1_s3_verify_tokens",
-            },
-            "descriptions": {
-                0: "Web extraction for departments",
-                1: "Extract department concepts",
-                2: "Frequency filtering",
-                3: "Token verification",
-            },
-        },
-        2: {
-            "modules": {
-                0: "lv2_s0_get_research_areas",
-                1: "lv2_s1_extract_concepts",
-                2: "lv2_s2_filter_by_freq",
-                3: "lv2_s3_verify_tokens",
-            },
-            "descriptions": {
-                0: "Extract research areas",
-                1: "Extract research concepts",
-                2: "Frequency filtering",
-                3: "Token verification",
-            },
-        },
-        3: {
-            "modules": {
-                0: "lv3_s0_get_conference_topics",
-                1: "lv3_s1_extract_concepts",
-                2: "lv3_s2_filter_by_freq",
-                3: "lv3_s3_verify_tokens",
-            },
-            "descriptions": {
-                0: "Extract conference topics",
-                1: "Extract topic concepts",
-                2: "Frequency filtering",
-                3: "Token verification",
-            },
-        },
-    }
-
-    if level not in level_configs:
-        logger.error(f"Invalid level {level}")
-        return 1
-
-    config = level_configs[level]
-
-    if step not in config["descriptions"]:
-        logger.error(f"Invalid step {step} for Level {level}. Valid steps are 0-3.")
-        return 1
-
-    # Import the standalone script module
-    module_name = config["modules"][step]
-    module_path = f"generate_glossary.generation.lv{level}.{module_name}"
-    module = importlib.import_module(module_path)
-
-    test_mode = kwargs.get("test", False)
+def run_step(level: int, step: int, **kwargs) -> int:
+    """
+    Run any generation step using the dynamic step runner.
     
-    if test_mode:
-        logger.info(f"Running Level {level}, Step {step}: {config['descriptions'][step]} [TEST MODE]")
-        func = getattr(module, "test", None)
-        if func is None:
-            logger.warning(f"No test function found, using main function instead")
-            func = getattr(module, "main")
-    else:
-        logger.info(f"Running Level {level}, Step {step}: {config['descriptions'][step]}")
-        func = getattr(module, "main")
-
-    # Call the appropriate function with the right arguments
-    if step == 0:
-        # Step 0 needs input file - get default from level_config if not provided
-        input_file = kwargs.get("input_file")
-        if not input_file:
-            # Dynamically get the default input path from level_config
-            default_input_path, _, _ = get_step_file_paths(level, "s0")
-            input_file = default_input_path
+    This unified function replaces both run_level_0_step and run_generic_level_step
+    with a single implementation that works for all levels and steps.
+    """
+    try:
+        # Get step metadata
+        step_metadata = get_step_metadata(level, step)
+        if 'error' in step_metadata:
+            logger.error(f"Cannot run Level {level} Step {step}: {step_metadata['error']}")
+            return 1
         
-        # All levels now use the same input_file parameter for s0
-        func(input_file=input_file)
-    elif step in [1, 3]:
-        # Steps 1 and 3 need provider
-        provider = kwargs.get("provider", "openai")
-        func(provider=provider)
-    else:
-        # Step 2 doesn't need any parameters
-        func()
+        # Log what we're running
+        description = step_metadata['description']
+        test_mode = kwargs.get('test', False)
+        mode_text = " [TEST MODE]" if test_mode else ""
+        logger.info(f"Running Level {level}, Step {step}: {description}{mode_text}")
+        
+        # Create and run the step
+        step_runner = create_generic_step_runner(level, step)
+        return step_runner(**kwargs)
+        
+    except Exception as e:
+        logger.error(f"Failed to run Level {level} Step {step}: {str(e)}")
+        logger.exception("Full traceback:")
+        return 1
 
-    return 0
+
+def handle_list_command() -> int:
+    """Handle the --list command to show all available steps."""
+    try:
+        all_steps = list_all_steps()
+        
+        print("Available Generation Steps:")
+        print("=" * 50)
+        
+        for level in sorted(all_steps.keys()):
+            level_names = {
+                0: "College/School",
+                1: "Department", 
+                2: "Research Area",
+                3: "Conference Topic"
+            }
+            
+            print(f"\nLevel {level}: {level_names.get(level, f'Level {level}')} Generation")
+            print("-" * 30)
+            
+            for step in sorted(all_steps[level].keys()):
+                description = all_steps[level][step]
+                print(f"  Step {step}: {description}")
+        
+        print("\nUsage Examples:")
+        print("  uv run generate -l 0 -s 0    # Run Level 0, Step 0")
+        print("  uv run generate -l 1 -s 2 --test    # Run Level 1, Step 2 in test mode")
+        print("  uv run generate --validate -l 1     # Validate Level 1 steps")
+        
+        return 0
+        
+    except Exception as e:
+        logger.error(f"Failed to list steps: {str(e)}")
+        return 1
+
+
+def handle_validate_command(level: int = None) -> int:
+    """Handle the --validate command to validate steps."""
+    try:
+        if level is not None:
+            # Validate specific level
+            validation_report = validate_all_steps(level)
+            
+            print(f"Validation Report for Level {level}")
+            print("=" * 40)
+            print(f"Overall Status: {'✅ READY' if validation_report['overall_valid'] else '❌ NOT READY'}")
+            print(f"Valid Steps: {validation_report['summary']['valid_steps']}/{validation_report['summary']['total_steps']}")
+            
+            if validation_report['summary']['steps_with_warnings'] > 0:
+                print(f"Steps with Warnings: {validation_report['summary']['steps_with_warnings']}")
+            
+            print("\nStep Details:")
+            print("-" * 20)
+            
+            for step_num in sorted(validation_report['steps'].keys()):
+                summary = get_validation_summary(level, step_num)
+                print(summary)
+                print()
+            
+            # Show recommendations
+            if validation_report.get('recommendations'):
+                print("Recommendations:")
+                print("-" * 15)
+                for rec in validation_report['recommendations']:
+                    print(f"  • {rec}")
+                print()
+        
+        else:
+            # Validate all levels
+            print("Validation Report for All Levels")
+            print("=" * 35)
+            
+            overall_valid = True
+            for level_num in range(4):
+                validation_report = validate_all_steps(level_num)
+                status = "✅" if validation_report['overall_valid'] else "❌"
+                valid_count = validation_report['summary']['valid_steps']
+                total_count = validation_report['summary']['total_steps']
+                
+                print(f"Level {level_num}: {status} {valid_count}/{total_count} steps ready")
+                
+                if not validation_report['overall_valid']:
+                    overall_valid = False
+            
+            print(f"\nOverall Status: {'✅ ALL READY' if overall_valid else '❌ ISSUES FOUND'}")
+            print("Use --validate -l <level> for detailed validation of specific levels")
+        
+        return 0
+        
+    except Exception as e:
+        logger.error(f"Failed to validate steps: {str(e)}")
+        return 1
 
 
 def main():
-    """Main entry point for the generate command."""
+    """Main entry point for the modernized generate command with dynamic discovery."""
     parser = argparse.ArgumentParser(
-        description="Run glossary generation steps",
+        description="Run glossary generation steps with dynamic discovery",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  uv run generate -l 0 -s 0    # Run Level 0, Step 0
-  uv run generate -l 1 -s 2    # Run Level 1, Step 2
-  uv run generate -l 2 -s 1 --provider gemini  # Use Gemini for LLM
+  uv run generate -l 0 -s 0                    # Run Level 0, Step 0
+  uv run generate -l 1 -s 2 --test             # Run Level 1, Step 2 in test mode
+  uv run generate -l 2 -s 1 --provider gemini  # Use Gemini for LLM steps
+  uv run generate --list                       # List all available steps
+  uv run generate --validate                   # Validate all levels
+  uv run generate --validate -l 1              # Validate only Level 1
   
 Levels:
   0: College/School extraction (from Excel)
@@ -168,7 +175,7 @@ Levels:
   2: Research area extraction (from Level 1)
   3: Conference topic extraction (from Level 2)
   
-Steps (same for all levels):
+Steps (dynamically discovered):
   0: Data extraction (web mining or Excel parsing)
   1: LLM concept extraction
   2: Frequency-based filtering
@@ -176,62 +183,90 @@ Steps (same for all levels):
         """,
     )
 
+    # Special commands group
+    special_group = parser.add_mutually_exclusive_group()
+    special_group.add_argument(
+        "--list",
+        action="store_true",
+        help="List all available generation steps"
+    )
+    special_group.add_argument(
+        "--validate",
+        action="store_true",
+        help="Validate step dependencies and requirements"
+    )
+
+    # Standard execution arguments
     parser.add_argument(
         "-l",
         "--level",
         type=int,
-        required=True,
         choices=[0, 1, 2, 3],
-        help="Generation level (0-3)",
+        help="Generation level (0-3). Required unless using --list"
     )
 
     parser.add_argument(
         "-s",
         "--step",
         type=int,
-        required=True,
         choices=[0, 1, 2, 3],
-        help="Generation step (0-3)",
+        help="Generation step (0-3). Required unless using special commands"
     )
 
     parser.add_argument(
         "--provider",
         type=str,
         choices=["openai", "gemini"],
-        help="LLM provider for steps 1 and 3 (default: openai)",
+        help="LLM provider for steps 1 and 3 (default: openai)"
     )
 
     parser.add_argument(
         "--input-file",
         type=str,
-        help="Input file for levels 1-3, step 0 (default: previous level final output)",
+        help="Input file for step 0 (default: auto-determined from level config)"
     )
 
     parser.add_argument(
         "--test",
         action="store_true",
-        help="Run in test mode with 10%% sample (saves to data/generation/tests/)",
+        help="Run in test mode (uses test data paths)"
     )
 
     args = parser.parse_args()
 
     try:
+        # Handle special commands
+        if args.list:
+            return handle_list_command()
+        
+        if args.validate:
+            return handle_validate_command(args.level)
+        
+        # Validate required arguments for normal execution
+        if args.level is None:
+            parser.error("--level is required unless using --list or --validate")
+        
+        if args.step is None:
+            parser.error("--step is required unless using special commands")
+        
+        # Prepare kwargs for step execution
         kwargs = {
-            "provider": args.provider,
-            "input_file": args.input_file,
-            "test": args.test,
+            "provider": args.provider or "openai",
+            "test": args.test
         }
+        
+        # Handle input file for step 0
+        if args.step == 0 and args.input_file:
+            kwargs["input_file"] = args.input_file
+        
+        # Run the step using the unified runner
+        return run_step(args.level, args.step, **kwargs)
 
-        if args.level == 0:
-            return run_level_0_step(args.step, **kwargs)
-        elif args.level in [1, 2, 3]:
-            return run_generic_level_step(args.level, args.step, **kwargs)
-        else:
-            logger.error(f"Invalid level: {args.level}. Valid levels are 0-3.")
-            return 1
-
+    except KeyboardInterrupt:
+        logger.info("Operation cancelled by user")
+        return 130
     except Exception as e:
-        logger.error(f"Error running Level {args.level}, Step {args.step}: {e}")
+        logger.error(f"Unexpected error: {str(e)}")
         logger.exception("Full traceback:")
         return 1
 

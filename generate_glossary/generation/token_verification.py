@@ -1,5 +1,5 @@
 """
-Shared token verification functionality for levels 1-3.
+Shared token verification functionality for all levels.
 
 This module provides the generic s3 (single token verification) logic that can be
 configured for different levels through the level_config module.
@@ -12,8 +12,12 @@ import re
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 from tqdm import tqdm
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
-from generate_glossary.utils.logger import setup_logger
+from generate_glossary.utils.error_handler import (
+    ProcessingError, ValidationError, handle_error, processing_context
+)
+from generate_glossary.utils.logger import get_logger, log_processing_step
 from generate_glossary.config import ensure_directories
 from generate_glossary.utils.llm import completion, get_model_by_tier
 from generate_glossary.deduplication.utils import normalize_text
@@ -22,7 +26,14 @@ from generate_glossary.deduplication.utils import normalize_text
 # from generate_glossary.utils.resilient_processing import (
 #     ConceptExtractionProcessor, create_processing_config
 # )
-from generate_glossary.generation.level_config import get_level_config
+from generate_glossary.config import get_level_config
+
+# Provider to model mapping for token verification
+MODEL_MAPPING = {
+    "openai": "openai/gpt-4o-mini",
+    "anthropic": "anthropic/claude-3-haiku-20240307", 
+    "gemini": "gemini/gemini-1.5-flash"
+}
 
 
 class QuotaExceededError(Exception):
@@ -36,7 +47,32 @@ def create_verification_system_prompt(level: int) -> str:
     base_prompt = """You are an expert in academic research classification with a deep understanding of research domains, 
 academic departments, scientific disciplines, and specialized fields of study."""
 
-    if level == 1:
+    if level == 0:
+        return f"""{base_prompt}
+
+Your task is to verify whether terms represent legitimate academic disciplines or broad fields of study that would be associated with colleges or schools by considering:
+1. Academic relevance - Is it a recognized academic discipline at the college/school level?
+2. Institutional context - Does it represent a field typically having its own college or school?
+3. Educational scope - Is it broad enough to encompass an entire college or school?
+
+Accept:
+- Broad academic disciplines (e.g., engineering, medicine, business, law)
+- Major academic fields (e.g., sciences, liberal arts, education)
+- Professional schools (e.g., nursing, architecture, pharmacy)
+- Established college-level disciplines (e.g., agriculture, communications)
+- Core academic areas (e.g., humanities, social sciences)
+
+DO NOT accept:
+- Department-level specializations (too narrow for college level)
+- Common English words without specific academic meaning
+- Administrative terms (e.g., college, school, university, campus)
+- Website navigation terms
+- Geographic locations or institution names
+- Terms too specific for college-level organization
+
+Your decision must be especially strict for single-word terms, focusing on broad academic disciplines only."""
+
+    elif level == 1:
         return f"""{base_prompt}
 
 Your task is to verify whether terms represent legitimate academic departments or fields of study by considering:
@@ -154,7 +190,7 @@ def verify_single_term(
     Returns:
         Boolean indicating if term is valid
     """
-    logger = setup_logger(f"lv{level}.s3")
+    logger = get_logger(f"lv{level}.s3")
     config = get_level_config(level)
 
     # Create verification prompt
@@ -170,27 +206,27 @@ Answer with only "YES" or "NO" followed by a brief justification."""
         {"role": "user", "content": prompt},
     ]
 
-    # Determine model/tier
-    if provider:
-        # Use specific provider/model if provided
-        model_str = f"{provider}/gpt-4o-mini" if provider == "openai" else None
+    # Determine model/tier - align with concept_extraction mapping
+    if provider in MODEL_MAPPING:
+        model_str = MODEL_MAPPING[provider]
     else:
-        # Use tier-based selection
+        # Use tier-based selection when provider is None
         tier = "budget" if level == 0 else "balanced"
         model_str = get_model_by_tier(tier)
 
-    max_retries = 3
-    for attempt in range(max_retries):
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=1, max=10),
+        retry=retry_if_exception_type((ConnectionError, TimeoutError))
+    )
+    def _verify_with_retry():
         try:
             response = completion(
                 messages=messages, model=model_str, temperature=0.3, max_tokens=100
             )
 
             if not response:
-                logger.warning(
-                    f"Empty response for term '{term}' (attempt {attempt + 1})"
-                )
-                continue
+                raise ProcessingError(f"Empty response for term '{term}'")
 
             # Parse response
             response_lower = response.lower().strip()
@@ -226,25 +262,48 @@ Answer with only "YES" or "NO" followed by a brief justification."""
                 ):
                     return False
                 else:
-                    logger.warning(
-                        f"Unclear response for term '{term}': {response[:100]}..."
+                    raise ValidationError(
+                        f"Unclear response for term '{term}': {response[:100]}...",
+                        invalid_data={"term": term, "response": response}
                     )
-                    # Default to not valid for unclear responses
-                    return False
-
+                    
+        except QuotaExceededError:
+            # Re-raise quota errors immediately
+            raise
         except Exception as e:
-            logger.warning(
-                f"Error verifying term '{term}' (attempt {attempt + 1}): {str(e)}"
-            )
-            if attempt == max_retries - 1:
-                logger.error(
-                    f"Failed to verify term '{term}' after {max_retries} attempts"
-                )
-                return False  # Default to not valid on error
-
-            time.sleep(1)  # Brief delay before retry
-
-    return False
+            error_msg = str(e)
+            
+            # Check for quota exceeded errors
+            if "quota" in error_msg.lower() or "exceeded" in error_msg.lower():
+                raise QuotaExceededError(f"API quota exceeded: {error_msg}")
+            
+            # Convert other errors to ProcessingError for proper handling
+            if "rate" in error_msg.lower() and "limit" in error_msg.lower():
+                raise ProcessingError(f"Rate limit exceeded for term '{term}': {error_msg}")
+            else:
+                raise ProcessingError(f"Error verifying term '{term}': {error_msg}")
+    
+    try:
+        return _verify_with_retry()
+    except Exception as e:
+        handle_error(
+            e,
+            context={
+                "term": term,
+                "level": level,
+                "provider": provider,
+                "model": model_str
+            },
+            operation="term_verification"
+        )
+        
+        # If quota exceeded, re-raise to stop processing
+        if isinstance(e, QuotaExceededError):
+            raise
+            
+        # For other errors, return False as fallback
+        logger.error(f"Failed to verify term '{term}': {e}")
+        return False
 
 
 def verify_terms_batch(
@@ -262,33 +321,84 @@ def verify_terms_batch(
     Returns:
         List of verified (valid) terms
     """
-    logger = setup_logger(f"lv{level}.s3")
+    with processing_context(f"terms_verification_lv{level}") as correlation_id:
+        logger = get_logger(f"lv{level}.s3")
+        
+        log_processing_step(
+            logger,
+            f"terms_verification_lv{level}",
+            "started",
+            {
+                "terms_count": len(terms),
+                "level": level,
+                "provider": provider
+            }
+        )
+        
+        if not terms:
+            return []
 
-    if not terms:
-        return []
-
-    # Process without checkpoint system for now
-    # TODO: Re-enable checkpoint system when resilient_processing is available
-
-    verified_terms = []
-
-    for idx, term in enumerate(tqdm(terms, desc=f"Verifying terms")):
         try:
-            # Verify term without checkpoint system
-            is_valid = verify_single_term(term, level, system_prompt, provider)
+            # Process without checkpoint system for now
+            # TODO: Re-enable checkpoint system when resilient_processing is available
 
-            if is_valid:
-                verified_terms.append(term)
+            verified_terms = []
 
-        except QuotaExceededError:
-            logger.error("API quota exceeded, stopping verification")
-            break
+            for idx, term in enumerate(tqdm(terms, desc=f"Verifying terms")):
+                try:
+                    # Verify term without checkpoint system
+                    is_valid = verify_single_term(term, level, system_prompt, provider)
+
+                    if is_valid:
+                        verified_terms.append(term)
+                        
+                except QuotaExceededError:
+                    logger.error("API quota exceeded, stopping verification")
+                    break
+                except Exception as e:
+                    # Use handle_error with reraise=False and skip the term
+                    handle_error(
+                        e,
+                        context={
+                            "term": term,
+                            "term_index": idx,
+                            "level": level,
+                            "provider": provider,
+                            "correlation_id": correlation_id
+                        },
+                        operation=f"term_verification_lv{level}",
+                        reraise=False
+                    )
+                    logger.error(f"Error verifying term '{term}': {str(e)}")
+                    # Skip this term and continue with next
+                    continue
+
+            log_processing_step(
+                logger,
+                f"terms_verification_lv{level}",
+                "completed",
+                {
+                    "terms_verified": len(verified_terms),
+                    "terms_total": len(terms),
+                    "verification_rate": len(verified_terms) / len(terms) if terms else 0
+                }
+            )
+            
+            logger.info(f"Verified {len(verified_terms)} out of {len(terms)} terms")
+            return verified_terms
+            
         except Exception as e:
-            logger.error(f"Error verifying term '{term}': {str(e)}")
-            continue
-
-    logger.info(f"Verified {len(verified_terms)} out of {len(terms)} terms")
-    return verified_terms
+            handle_error(
+                e,
+                context={
+                    "terms_count": len(terms),
+                    "level": level,
+                    "provider": provider,
+                    "correlation_id": correlation_id
+                },
+                operation=f"terms_verification_batch_lv{level}",
+                reraise=True
+            )
 
 
 def save_verification_results(
@@ -300,7 +410,7 @@ def save_verification_results(
     verification_stats: Dict[str, Any],
 ):
     """Save verification results to files."""
-    logger = setup_logger(f"lv{level}.s3")
+    logger = get_logger(f"lv{level}.s3")
 
     # Combine verified single-word terms with multi-word terms (auto-pass)
     all_final_terms = verified_terms + multi_word_terms
@@ -351,7 +461,7 @@ def verify_single_tokens(
 
     Args:
         input_file: Path to file containing terms to verify
-        level: Generation level (1, 2, or 3)
+        level: Generation level (0, 1, 2, or 3)
         output_file: Path to save verified terms
         metadata_file: Path to save processing metadata
         provider: Optional LLM provider override
@@ -359,7 +469,7 @@ def verify_single_tokens(
     Returns:
         Dictionary containing processing results and metadata
     """
-    logger = setup_logger(f"lv{level}.s3")
+    logger = get_logger(f"lv{level}.s3")
     config = get_level_config(level)
 
     # Ensure directories exist
@@ -385,6 +495,15 @@ def verify_single_tokens(
 
     # Create level-specific system prompt
     system_prompt = create_verification_system_prompt(level)
+    
+    # Determine actual provider to use
+    if provider:
+        actual_provider = provider
+    else:
+        # Use tier-based selection
+        tier = "budget" if level == 0 else "balanced"
+        model_str = get_model_by_tier(tier)
+        actual_provider = model_str.split("/")[0] if "/" in model_str else "tier_based"
 
     # Verify single-word terms only (multi-word terms auto-pass)
     start_time = time.time()
@@ -406,7 +525,7 @@ def verify_single_tokens(
         "single_word_rejected_count": len(single_word_terms)
         - len(verified_single_word_terms),
         "verification_time_seconds": verification_time,
-        "provider_used": provider or "random_selection",
+        "provider_used": actual_provider,
         "verification_rate": (
             len(verified_single_word_terms) / len(single_word_terms)
             if single_word_terms

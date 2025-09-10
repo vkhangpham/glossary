@@ -12,9 +12,9 @@ import json
 from pathlib import Path
 from typing import Optional
 
-from generate_glossary.utils.logger import setup_logger
+from generate_glossary.utils.logger import get_logger
 from ..web_extraction_firecrawl import extract_web_content
-from ..level_config import get_level_config, get_step_file_paths
+from ...config import get_level_config
 
 
 def to_test_path(path: Path) -> Path:
@@ -34,7 +34,7 @@ LEVEL = 3
 STEP = "s0"
 
 # Setup logger
-logger = setup_logger("lv3.s0")
+logger = get_logger("lv3.s0")
 
 
 def main(test_mode: bool = False, input_file: Optional[str] = None) -> None:
@@ -50,7 +50,9 @@ def main(test_mode: bool = False, input_file: Optional[str] = None) -> None:
         
         # Get configuration and file paths
         config = get_level_config(LEVEL)
-        default_input, output_file, metadata_file = get_step_file_paths(LEVEL, STEP)
+        default_input = str(config.get_step_input_file(0))
+        output_file = str(config.get_step_output_file(0))
+        metadata_file = str(config.get_step_metadata_file(0))
         
         # Use custom input file if provided, otherwise use default
         if input_file:

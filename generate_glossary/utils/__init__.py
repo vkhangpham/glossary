@@ -13,7 +13,7 @@ Other functionality has been moved to:
 - security: API key management
 """
 
-from .logger import setup_logger
+from .logger import get_logger
 from .llm import (
     LLMClient,
     completion,
@@ -28,7 +28,7 @@ from .config import (
 
 __all__ = [
     # Logger
-    'setup_logger',
+    'get_logger',
     
     # LLM
     'LLMClient',

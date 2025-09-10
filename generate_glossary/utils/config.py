@@ -10,9 +10,9 @@ import json
 from pathlib import Path
 from typing import Dict, Any, Optional
 
-from .logger import setup_logger
+from .logger import get_logger
 
-logger = setup_logger("config")
+logger = get_logger("config")
 
 class Config:
     """Central configuration management."""

@@ -1,28 +1,154 @@
 """
 Centralized configuration for the glossary generation system.
 
-This module provides a unified configuration system that eliminates 
-hardcoded values scattered across 12+ generation scripts.
+This module provides a unified configuration system that consolidates all 
+configuration constants from across the codebase. Configuration can be
+overridden via environment variables and is validated at startup.
+
+## Configuration Hierarchy:
+1. Base configuration (defined in this module)
+2. Level-specific overrides
+3. Environment variable overrides (highest priority)
+
+## Environment Variables:
+All configuration can be overridden via environment variables with the
+prefix GLOSSARY_. For example:
+- GLOSSARY_BATCH_SIZE=10
+- GLOSSARY_TEMPERATURE=0.7
+- GLOSSARY_LLM_MODEL_TIER=flagship
 """
 
 import os
+import json
 from pathlib import Path
-from dataclasses import dataclass
-from typing import Dict, Any
+from dataclasses import dataclass, field, asdict
+from typing import Dict, Any, List, Optional, Set, Union
 from dotenv import load_dotenv
+
+from generate_glossary.utils.logger import get_logger
 
 # Load environment variables
 load_dotenv()
+
+# Logger for config module
+logger = get_logger(__name__)
 
 # Base directory - project root
 BASE_DIR = Path(__file__).parent.parent.absolute()
 DATA_DIR = BASE_DIR / "data"
 
 @dataclass
+class StepConfig:
+    """Configuration for generation steps (integrated from level_config.py)."""
+    batch_size: int
+    agreement_threshold: int
+    consensus_attempts: int  # Number of consensus responses to request
+    search_patterns: List[str]
+    quality_keywords: List[str]
+    frequency_threshold: Union[float, str]
+    processing_description: str
+    context_description: str
+
+
+@dataclass
+class LLMConfig:
+    """Configuration for LLM operations."""
+    # Model tiers and selection
+    model_tiers: Dict[str, List[str]] = field(default_factory=dict)
+    model_aliases: Dict[str, str] = field(default_factory=dict)
+    default_tier: str = "budget"
+    
+    # Processing parameters
+    temperature: float = 1.0
+    max_retries: int = 3
+    retry_delay: float = 1.0
+    retry_multiplier: float = 2.0
+    cache_ttl: int = 3600  # Cache TTL in seconds
+    
+    # Performance settings
+    enable_json_validation: bool = True
+    verbose: bool = False
+    experimental_http_handler: bool = True
+    
+    # Smart Consensus Configuration
+    enable_smart_consensus: bool = True
+    confidence_threshold: float = 0.85  # Confidence threshold for early stopping
+    min_responses: int = 2  # Minimum responses before early stopping
+    max_responses: int = 3  # Maximum responses
+    agreement_threshold: float = 0.8  # Agreement threshold for early stopping
+    
+    # Enhanced Caching Configuration
+    enable_enhanced_cache: bool = True
+    semantic_similarity_threshold: float = 0.95  # Similarity threshold for cache hits
+    enable_persistent_cache: bool = True
+    cache_storage_path: str = "data/cache"  # Path for persistent cache storage
+    enable_cache_analytics: bool = True
+    
+    # Flexible Model and Temperature Configuration
+    per_use_case_models: Dict[str, str] = field(default_factory=dict)
+    per_use_case_temperatures: Dict[str, float] = field(default_factory=dict)
+    
+    # Optimization Settings
+    enable_optimization: bool = True
+    optimization_fallback_strategy: str = "conservative"  # "conservative" or "aggressive"
+    performance_tuning_mode: str = "balanced"  # "speed", "quality", or "balanced"
+    
+    def __post_init__(self):
+        if not self.model_tiers:
+            self.model_tiers = {
+                "budget": [
+                    "openai/gpt-5-nano",
+                    "openai/gpt-4o-mini",
+                    "vertex_ai/gemini-2.5-flash",
+                ],
+                "balanced": [
+                    "openai/gpt-5-mini",
+                    "vertex_ai/gemini-2.5-flash",
+                ],
+                "flagship": [
+                    "openai/gpt-5",
+                    "anthropic/claude-4-sonnet",
+                    "vertex_ai/gemini-2.5-pro",
+                ],
+            }
+        
+        if not self.model_aliases:
+            self.model_aliases = {
+                "gpt5nano": "openai/gpt-5-nano",
+                "gpt5mini": "openai/gpt-5-mini",
+                "gpt5": "openai/gpt-5",
+                "gpt4omini": "openai/gpt-4o-mini",
+                "claude4sonnet": "anthropic/claude-4-sonnet",
+                "gemini2.5flash": "vertex_ai/gemini-2.5-flash",
+                "gemini2.5pro": "vertex_ai/gemini-2.5-pro",
+            }
+        
+        # Initialize per-use-case configurations if empty
+        if not self.per_use_case_models:
+            self.per_use_case_models = {
+                "concept_extraction": "openai/gpt-5-nano",
+                "frequency_filtering": "openai/gpt-4o-mini",
+                "token_verification": "openai/gpt-5-mini",
+                "web_extraction": "openai/gpt-5-nano",
+            }
+        
+        if not self.per_use_case_temperatures:
+            self.per_use_case_temperatures = {
+                "concept_extraction": 1.0,
+                "frequency_filtering": 0.7,
+                "token_verification": 0.5,
+                "web_extraction": 0.8,
+            }
+
+
+@dataclass
 class LevelConfig:
     """Configuration for a specific level (0, 1, 2, or 3)"""
     level: int
     name: str  # Human-readable name
+    
+    # Step configuration (integrated from level_config.py)
+    step_config: Optional[StepConfig] = None
     
     # File paths - use Path objects for better path handling
     @property
@@ -43,16 +169,12 @@ class LevelConfig:
     def get_step_input_file(self, step: int) -> Path:
         """Get input file path for a specific step"""
         if step == 0:
-            # Step 0 files have special naming patterns
-            step_0_names = {
-                0: "lv0_s0_college_names.txt",
-                1: "lv1_s0_dept_names.txt", 
-                2: "lv2_s0_research_areas.txt",
-                3: "lv3_s0_conference_topics.txt"
-            }
-            return self.raw_dir / step_0_names[self.level]
+            if self.level == 0:
+                raise NotImplementedError("Step 0 input for level 0 is handled by lv0_s0 script")
+            # For levels 1-3, step 0 input comes from the previous level's final file
+            return DATA_DIR / f"lv{self.level-1}" / f"lv{self.level-1}_final.txt"
         elif step == 1:
-            return self.raw_dir / f"lv{self.level}_s{step-1}_extracted_concepts.txt" if step > 1 else self.get_step_input_file(0)
+            return self.get_step_output_file(0)
         else:
             return self.raw_dir / f"lv{self.level}_s{step-1}_{'filtered' if step == 3 else 'extracted'}_concepts.txt"
     
@@ -77,15 +199,41 @@ class LevelConfig:
     def get_validation_metadata_file(self, step: int) -> Path:
         """Get validation metadata file path for a specific step"""
         return self.raw_dir / f"lv{self.level}_s{step}_validation_metadata.json"
+    
+    # Pass-through properties for StepConfig fields
+    @property
+    def processing_description(self):
+        return self.step_config.processing_description if self.step_config else ""
+    
+    @property
+    def context_description(self):
+        return self.step_config.context_description if self.step_config else ""
+    
+    @property
+    def frequency_threshold(self):
+        return self.step_config.frequency_threshold if self.step_config else 0.6
+    
+    @property
+    def agreement_threshold(self):
+        return self.step_config.agreement_threshold if self.step_config else 2
+    
+    @property
+    def quality_keywords(self):
+        return self.step_config.quality_keywords if self.step_config else []
 
 @dataclass 
 class ProcessingConfig:
-    """Configuration for processing parameters"""
+    """Configuration for processing parameters.
     
-    # LLM settings
+    This consolidates all processing configuration from across the codebase,
+    including constants that were hardcoded in individual modules.
+    """
+    
+    # LLM settings (from lv0_s1_extract_concepts.py and others)
     llm_attempts: int = 3
     concept_agreement_threshold: int = 2
-    temperature: float = 0.3
+    temperature: float = 1.0  # DEPRECATED: Now an alias for LLMConfig.temperature (single source of truth)
+    cache_ttl: int = 3600  # Cache consensus results for 1 hour
     
     # Batch processing
     batch_size: int = 20
@@ -111,12 +259,12 @@ class ProcessingConfig:
     # Validation file paths
     validation_meta_suffix: str = "_validation_metadata.json"
     
-    # Non-academic terms to filter out
-    non_academic_terms: set = None
+    # Non-academic terms to filter out (from frequency_filtering.py)
+    non_academic_terms: Set[str] = field(default_factory=set)
     
-    # Additional configuration constants
-    min_concept_length: int = 3
-    max_concept_length: int = 50
+    # Concept validation (from frequency_filtering.py)
+    min_concept_length: int = 2  # Minimum concept length
+    max_concept_length: int = 100  # Maximum concept length
     min_dept_length: int = 3
     max_dept_length: int = 100
     min_consensus: float = 0.6  # For compound term splitting
@@ -130,18 +278,60 @@ class ProcessingConfig:
     log_level: str = "INFO"
     
     def __post_init__(self):
-        if self.non_academic_terms is None:
+        if not self.non_academic_terms:
+            # Extended list from frequency_filtering.py
             self.non_academic_terms = {
+                # Institutional terms
                 "university", "college", "school", "department", "center", "institute", 
                 "program", "studies", "research", "science", "sciences", "technology",
                 "administration", "management", "development", "international", "public",
                 "general", "applied", "theoretical", "advanced", "basic", "modern",
-                "clinical", "experimental", "social", "human", "natural", "physical"
+                "clinical", "experimental", "social", "human", "natural", "physical",
+                # Web navigation terms (from frequency_filtering.py)
+                "page", "home", "about", "contact", "staff", "faculty", "links",
+                "click", "here", "website", "portal", "login", "apply", "apply now",
+                "register", "registration", "more", "learn more", "read more",
+                "back", "next", "previous", "link", "site", "menu", "navigation"
             }
 
+
 @dataclass
+class WebExtractionConfig:
+    """Configuration for web extraction operations."""
+    
+    # Processing constants (from web_extraction_firecrawl.py)
+    batch_size: int = 25  # Firecrawl handles batching efficiently
+    num_llm_attempts: int = 3
+    max_results_per_term: int = 10
+    
+    # Mining settings
+    max_concurrent_mining: int = 30
+    
+    # Search parameters
+    search_provider: str = "firecrawl"  # Default provider
+
+
+@dataclass
+class MiningConfig:
+    """Configuration for mining operations."""
+    
+    # Processing constants (from mining/firecrawl.py)
+    batch_size: int = 25
+    max_concurrent_operations: int = 5
+    max_urls_per_concept: int = 3
+    
+    # Performance settings
+    request_timeout: int = 30
+    retry_attempts: int = 3
+    retry_delay: float = 1.0
+
+
+@dataclass 
 class ValidationConfig:
     """Configuration for validation and post-processing"""
+    
+    # Rule validation constants (from validation/rule_validator.py)
+    max_workers: int = field(default_factory=lambda: min(32, (os.cpu_count() or 1) * 2))
     
     # Web mining
     search_provider: str = "rapidapi"  # or "tavily"
@@ -159,19 +349,35 @@ class ValidationConfig:
             self.validation_modes = ["web", "rule"]
 
 class GlossaryConfig:
-    """Main configuration class for the entire glossary generation system"""
+    """Main configuration class for the entire glossary generation system.
+    
+    This class consolidates all configuration from across the codebase and
+    provides a unified interface for accessing configuration values.
+    """
     
     def __init__(self):
-        # Level configurations
+        # Initialize step configs (from level_config.py)
+        self._init_step_configs()
+        
+        # Level configurations with integrated step configs
         self.levels = {
-            0: LevelConfig(0, "Colleges/Schools"),
-            1: LevelConfig(1, "Departments"),  
-            2: LevelConfig(2, "Research Areas"),
-            3: LevelConfig(3, "Conference Topics")
+            0: LevelConfig(0, "Colleges/Schools", self.step_configs.get(0)),
+            1: LevelConfig(1, "Departments", self.step_configs.get(1)),
+            2: LevelConfig(2, "Research Areas", self.step_configs.get(2)),
+            3: LevelConfig(3, "Conference Topics", self.step_configs.get(3))
         }
+        
+        # LLM configuration
+        self.llm = LLMConfig()
         
         # Processing configuration - can be overridden per level
         self.processing = ProcessingConfig()
+        
+        # Web extraction configuration
+        self.web_extraction = WebExtractionConfig()
+        
+        # Mining configuration
+        self.mining = MiningConfig()
         
         # Validation configuration
         self.validation = ValidationConfig()
@@ -179,34 +385,199 @@ class GlossaryConfig:
         # Level-specific processing overrides
         self._setup_level_overrides()
         
+        # Apply environment overrides
+        self._apply_environment_overrides()
+    
+    def _init_step_configs(self):
+        """Initialize step configurations for each level (from level_config.py)."""
+        self.step_configs = {
+            # Level 0 configuration (new - was missing from level_config.py)
+            0: StepConfig(
+                batch_size=20,
+                agreement_threshold=2,
+                consensus_attempts=3,  # Number of responses for consensus
+                search_patterns=[
+                    "{term} college site:edu",
+                    "{term} school site:edu",
+                    "{term} academic programs site:edu",
+                ],
+                quality_keywords=["college", "school", "university", "academic", "education"],
+                frequency_threshold=0.6,
+                processing_description="College/School extraction from institutional data",
+                context_description="academic colleges and schools"
+            ),
+            # Level 1 configuration (from level_config.py)
+            1: StepConfig(
+                batch_size=15,
+                agreement_threshold=2,
+                consensus_attempts=3,  # Number of responses for consensus
+                search_patterns=[
+                    "{term} departments site:edu",
+                    "departments {term} university site:edu",
+                    "{term} academic programs site:edu",
+                    "{term} schools site:edu"
+                ],
+                quality_keywords=["department", "school", "program", "college", "faculty", "academic", "research"],
+                frequency_threshold=0.6,
+                processing_description="Department extraction from college contexts",
+                context_description="academic departments and fields of study"
+            ),
+            # Level 2 configuration (from level_config.py)
+            2: StepConfig(
+                batch_size=5,
+                agreement_threshold=3,
+                consensus_attempts=5,  # Higher consensus attempts for more specific levels
+                search_patterns=[
+                    "{term} research areas site:edu",
+                    "{term} research groups site:edu",
+                    "{term} labs site:edu",
+                    "{term} research centers site:edu",
+                    "{term} specializations site:edu"
+                ],
+                quality_keywords=["research", "lab", "group", "center", "institute", "laboratory", "academic", "conference"],
+                frequency_threshold=0.6,
+                processing_description="Research area extraction from department contexts",
+                context_description="research areas and academic specializations"
+            ),
+            # Level 3 configuration (from level_config.py)
+            3: StepConfig(
+                batch_size=5,
+                agreement_threshold=3,
+                consensus_attempts=5,  # Higher consensus attempts for most specific level
+                search_patterns=[
+                    "{term} conference topics",
+                    "{term} call for papers",
+                    "{term} conference tracks",
+                    "{term} special issues",
+                    "{term} workshop topics",
+                    "{term} symposium topics"
+                ],
+                quality_keywords=["conference", "workshop", "symposium", "cfp", "call", "papers", "track", "academic"],
+                frequency_threshold="venue_based",
+                processing_description="Conference topic extraction from research area contexts",
+                context_description="conference topics and academic themes"
+            )
+        }
+        
     def _setup_level_overrides(self):
-        """Setup level-specific processing parameter overrides"""
+        """Setup level-specific processing parameter overrides.
+        
+        These override the base ProcessingConfig values for each level.
+        Values here take precedence over base config but can still be
+        overridden by environment variables.
+        """
         self.level_overrides = {
             # Level 0 - Colleges (broadest, more conservative)
             0: {
                 "batch_size": 20,
                 "concept_agreement_threshold": 2,
                 "keyword_appearance_threshold": 2,
+                "chunk_size": 100,
+                "max_workers": 4,
+                "temperature": 1.0,  # GPT-5 requirement
             },
             # Level 1 - Departments (moderate)  
             1: {
                 "batch_size": 15,
                 "concept_agreement_threshold": 2,
                 "keyword_appearance_threshold": 2,
+                "chunk_size": 100,
             },
             # Level 2 - Research Areas (more specific)
             2: {
                 "batch_size": 5,
                 "concept_agreement_threshold": 3,  # Higher agreement needed
                 "keyword_appearance_threshold": 1,
+                "chunk_size": 50,
             },
             # Level 3 - Conference Topics (most specific)
             3: {
                 "batch_size": 5,
                 "concept_agreement_threshold": 3,
                 "keyword_appearance_threshold": 1,
+                "chunk_size": 50,
             }
         }
+    
+    def _apply_environment_overrides(self):
+        """Apply environment variable overrides to configuration.
+        
+        Environment variables follow the pattern GLOSSARY_<SECTION>_<KEY>.
+        For example:
+        - GLOSSARY_PROCESSING_BATCH_SIZE=10
+        - GLOSSARY_LLM_TEMPERATURE=0.7
+        - GLOSSARY_LLM_DEFAULT_TIER=flagship
+        """
+        def _parse_env(env_value: str, current_value, env_key: str = ""):
+            """Parse environment variable based on the type of current value."""
+            # Check bool before int since bool is a subclass of int
+            if isinstance(current_value, bool):
+                return env_value.lower() in ('true', '1', 'yes', 'y', 'on')
+            if isinstance(current_value, int):
+                return int(env_value)
+            if isinstance(current_value, float):
+                return float(env_value)
+            if isinstance(current_value, (dict, list)):
+                try:
+                    return json.loads(env_value)
+                except json.JSONDecodeError as e:
+                    logger.warning(
+                        f"Failed to parse JSON for environment variable {env_key or 'unknown'}="
+                        f"{env_value!r} (type: {type(current_value).__name__}): {e}. "
+                        f"Using raw string value as fallback."
+                    )
+                    return env_value
+            return env_value
+        
+        # Processing config overrides
+        for key in asdict(self.processing).keys():
+            env_key = f"GLOSSARY_PROCESSING_{key.upper()}"
+            if env_value := os.getenv(env_key):
+                try:
+                    current_value = getattr(self.processing, key)
+                    setattr(self.processing, key, _parse_env(env_value, current_value, env_key))
+                except (ValueError, TypeError):
+                    pass  # Keep default if conversion fails
+        
+        # LLM config overrides
+        for key in asdict(self.llm).keys():
+            env_key = f"GLOSSARY_LLM_{key.upper()}"
+            if env_value := os.getenv(env_key):
+                try:
+                    current_value = getattr(self.llm, key)
+                    setattr(self.llm, key, _parse_env(env_value, current_value, env_key))
+                except (ValueError, TypeError):
+                    pass
+        
+        # Web extraction config overrides
+        for key in asdict(self.web_extraction).keys():
+            env_key = f"GLOSSARY_WEB_EXTRACTION_{key.upper()}"
+            if env_value := os.getenv(env_key):
+                try:
+                    current_value = getattr(self.web_extraction, key)
+                    setattr(self.web_extraction, key, _parse_env(env_value, current_value, env_key))
+                except (ValueError, TypeError):
+                    pass
+        
+        # Mining config overrides
+        for key in asdict(self.mining).keys():
+            env_key = f"GLOSSARY_MINING_{key.upper()}"
+            if env_value := os.getenv(env_key):
+                try:
+                    current_value = getattr(self.mining, key)
+                    setattr(self.mining, key, _parse_env(env_value, current_value, env_key))
+                except (ValueError, TypeError):
+                    pass
+        
+        # Validation config overrides
+        for key in asdict(self.validation).keys():
+            env_key = f"GLOSSARY_VALIDATION_{key.upper()}"
+            if env_value := os.getenv(env_key):
+                try:
+                    current_value = getattr(self.validation, key)
+                    setattr(self.validation, key, _parse_env(env_value, current_value, env_key))
+                except (ValueError, TypeError):
+                    pass
     
     def get_processing_config(self, level: int) -> ProcessingConfig:
         """Get processing configuration for a specific level with overrides applied"""
@@ -218,13 +589,74 @@ class GlossaryConfig:
                 **self.level_overrides.get(level, {})
             }
         )
+        # Apply legacy environment overrides for backward compatibility
+        # Precedence: base config -> level overrides -> new env vars (via _apply_environment_overrides) -> legacy env vars
+        config = EnvConfig.apply_env_overrides(config)
+        # Temperature is now sourced from LLMConfig as single source of truth
+        # ProcessingConfig.temperature is deprecated and acts as an alias
+        config.temperature = self.llm.temperature
         return config
     
     def get_level_config(self, level: int) -> LevelConfig:
-        """Get level configuration"""
+        """Get level configuration."""
         if level not in self.levels:
             raise ValueError(f"Invalid level: {level}. Must be 0, 1, 2, or 3")
         return self.levels[level]
+    
+    def get_step_config(self, level: int) -> Optional[StepConfig]:
+        """Get step configuration for a level.
+        
+        This provides backward compatibility with level_config.py.
+        """
+        return self.step_configs.get(level)
+    
+    def get_llm_config(self) -> LLMConfig:
+        """Get LLM configuration."""
+        return self.llm
+    
+    def get_web_extraction_config(self) -> WebExtractionConfig:
+        """Get web extraction configuration."""
+        return self.web_extraction
+    
+    def get_mining_config(self) -> MiningConfig:
+        """Get mining configuration."""
+        return self.mining
+    
+    def get_validation_config(self) -> ValidationConfig:
+        """Get validation configuration."""
+        return self.validation
+    
+    def validate_configuration(self) -> List[str]:
+        """Validate the current configuration.
+        
+        Returns:
+            List of validation errors (empty if configuration is valid)
+        """
+        errors = []
+        
+        # Validate processing config
+        if self.processing.batch_size <= 0:
+            errors.append("Processing batch_size must be positive")
+        if self.processing.max_workers <= 0:
+            errors.append("Processing max_workers must be positive")
+        if not 0 <= self.processing.temperature <= 2:
+            errors.append("Processing temperature must be between 0 and 2")
+        
+        # Validate LLM config
+        if not self.llm.model_tiers:
+            errors.append("LLM model_tiers cannot be empty")
+        if self.llm.default_tier not in self.llm.model_tiers:
+            errors.append(f"LLM default_tier '{self.llm.default_tier}' not in model_tiers")
+        
+        # Validate level configs
+        for level, config in self.levels.items():
+            if config.step_config:
+                if config.step_config.batch_size <= 0:
+                    errors.append(f"Level {level} batch_size must be positive")
+                if config.step_config.agreement_threshold <= 0:
+                    errors.append(f"Level {level} agreement_threshold must be positive")
+        
+        return errors
         
     def ensure_directories(self, level: int = None):
         """Ensure all required directories exist"""
@@ -244,20 +676,56 @@ config = GlossaryConfig()
 
 # Convenience functions for backward compatibility
 def get_level_config(level: int) -> LevelConfig:
-    """Get configuration for a specific level"""
+    """Get configuration for a specific level."""
     return config.get_level_config(level)
 
 def get_processing_config(level: int) -> ProcessingConfig:
-    """Get processing configuration for a specific level"""
+    """Get processing configuration for a specific level."""
     return config.get_processing_config(level)
 
+def get_step_config(level: int) -> Optional[StepConfig]:
+    """Get step configuration for a specific level.
+    
+    Provides backward compatibility with level_config.py.
+    """
+    return config.get_step_config(level)
+
+def get_llm_config() -> LLMConfig:
+    """Get LLM configuration."""
+    return config.get_llm_config()
+
+def get_web_extraction_config() -> WebExtractionConfig:
+    """Get web extraction configuration."""
+    return config.get_web_extraction_config()
+
+def get_mining_config() -> MiningConfig:
+    """Get mining configuration."""
+    return config.get_mining_config()
+
+def get_validation_config() -> ValidationConfig:
+    """Get validation configuration."""
+    return config.get_validation_config()
+
 def ensure_directories(level: int = None):
-    """Ensure required directories exist"""
+    """Ensure required directories exist."""
     return config.ensure_directories(level)
+
+def validate_configuration() -> List[str]:
+    """Validate the current configuration.
+    
+    Returns:
+        List of validation errors (empty if valid)
+    """
+    return config.validate_configuration()
 
 # Environment variable configuration
 class EnvConfig:
-    """Environment-based configuration"""
+    """Environment-based configuration for API keys and legacy overrides.
+    
+    This class handles API keys and provides backward compatibility for
+    the old environment variable format. New code should use the
+    GLOSSARY_<SECTION>_<KEY> format which is handled in GlossaryConfig.
+    """
     
     # API Keys
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -265,14 +733,18 @@ class EnvConfig:
     TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
     RAPIDAPI_KEY = os.getenv("RAPIDAPI_KEY")
     
-    # Optional overrides from environment
+    # Legacy environment variable support (backward compatibility)
     BATCH_SIZE = os.getenv("GLOSSARY_BATCH_SIZE")
     MAX_WORKERS = os.getenv("GLOSSARY_MAX_WORKERS") 
     CONCEPT_AGREEMENT_THRESHOLD = os.getenv("GLOSSARY_CONCEPT_AGREEMENT_THRESHOLD")
     
     @classmethod
     def apply_env_overrides(cls, processing_config: ProcessingConfig) -> ProcessingConfig:
-        """Apply environment variable overrides to processing configuration"""
+        """Apply legacy environment variable overrides.
+        
+        This method provides backward compatibility for the old environment
+        variable format. New code should use GLOSSARY_PROCESSING_* format.
+        """
         if cls.BATCH_SIZE:
             try:
                 processing_config.batch_size = int(cls.BATCH_SIZE)
@@ -293,7 +765,3 @@ class EnvConfig:
                 
         return processing_config
 
-# Apply environment overrides to global config
-for level in config.levels.keys():
-    level_config = config.get_processing_config(level)
-    EnvConfig.apply_env_overrides(level_config)

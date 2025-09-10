@@ -11,6 +11,7 @@ from typing import Optional, Any, Dict, List, Tuple
 
 try:
     from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
+    from generate_glossary.utils.logger import get_logger
     # Import exceptions if needed
 except ImportError as e:
     print(f"Error importing 'generate_glossary' modules: {e}")
@@ -43,12 +44,7 @@ MAX_RESOURCES_TO_USE = 3  # Number of top resources to include in the context
 PROCESSED_CONTENT_FIELD = "processed_content"  # Field containing the processed text
 
 # --- Logger Setup ---
-# Using a basic logger. If generate_glossary.utils.logger.setup_logger is available
-# and preferred, this can be changed.
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(threadName)s - %(message)s',
-                    handlers=[logging.StreamHandler(sys.stdout)])
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 # --- Global Counters for process_term (as it's run in threads) ---
 # These are for the *entire run* of the script across all levels/batches.
