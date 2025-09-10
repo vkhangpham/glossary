@@ -234,3 +234,7 @@ logs/
 requirements.txt
 # Test data outputs
 data/generation/tests/
+
+# Runtime generated data
+data/failures/
+data/*/raw/
