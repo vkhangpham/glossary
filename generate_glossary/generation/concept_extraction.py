@@ -14,7 +14,9 @@ from collections import Counter
 from pydantic import BaseModel, Field
 
 from generate_glossary.utils.error_handler import (
-    ValidationError, handle_error, processing_context
+    ValidationError,
+    handle_error,
+    processing_context,
 )
 from generate_glossary.utils.logger import get_logger, log_processing_step
 
@@ -26,16 +28,8 @@ def chunk(items: list, size: int):
 
 
 from tqdm import tqdm
-from generate_glossary.config import (
-    ensure_directories,
-    get_processing_config,
-    get_step_config,
-    get_llm_config
-)
-from generate_glossary.utils.llm import (
-    completion, get_model_by_tier, smart_structured_completion_consensus, 
-    run_async_safely
-)
+from generate_glossary.config import ensure_directories, get_step_config
+from generate_glossary.llm import structured_completion
 from generate_glossary.deduplication.utils import normalize_text
 
 # Use centralized configuration
@@ -60,7 +54,9 @@ class ConceptExtractionList(BaseModel):
 def create_system_prompt(level: int) -> str:
     """Create level-specific system prompt."""
     # Use step config from centralized system
-    config = get_step_config(level) or get_level_config(level)  # Fallback for compatibility
+    config = get_step_config(level) or get_level_config(
+        level
+    )  # Fallback for compatibility
 
     base_prompt = """You are an expert in academic research classification with deep knowledge of research domains, scientific disciplines, and academic institutions."""
 
@@ -195,22 +191,52 @@ def load_input_data(input_file: str) -> List[str]:
         return [line.strip() for line in f if line.strip()]
 
 
+def merge_extractions_with_agreement(
+    responses: List[ConceptExtractionList], threshold: int
+) -> List[ConceptExtraction]:
+    """Merge multiple extraction responses using agreement filtering."""
+    if not responses:
+        return []
+
+    if len(responses) == 1:
+        return responses[0].extractions if hasattr(responses[0], "extractions") else []
+
+    # Group by source to merge concepts
+    source_to_concepts = {}
+
+    for response in responses:
+        extractions = response.extractions if hasattr(response, "extractions") else []
+        for extraction in extractions:
+            source = extraction.source
+            if source not in source_to_concepts:
+                source_to_concepts[source] = []
+            source_to_concepts[source].extend(extraction.concepts)
+
+    # Apply agreement filtering: keep concepts that appear in at least threshold responses
+    merged_extractions = []
+    for source, all_concepts in source_to_concepts.items():
+        concept_counts = Counter(normalize_text(concept) for concept in all_concepts)
+        agreed_concepts = [
+            concept
+            for concept in set(all_concepts)
+            if concept_counts[normalize_text(concept)] >= threshold
+        ]
+
+        if agreed_concepts:
+            merged_extractions.append(
+                ConceptExtraction(source=source, concepts=agreed_concepts)
+            )
+
+    return merged_extractions
+
+
 def process_concept_batch(
     batch: List[str], level: int, system_prompt: str, provider: Optional[str] = None
 ) -> List[ConceptExtraction]:
-    """Process a single batch of concepts with optimized smart consensus."""
+    """Process a single batch of concepts with optional consensus."""
     logger = get_logger(f"lv{level}.s1")
     # Get configuration from centralized system
     step_config = get_step_config(level) or get_level_config(level)
-    processing_config = get_processing_config(level)
-    llm_config = get_llm_config()
-    
-    # Semantic validation for concept extraction quality
-    semantic_validation = f"""Verify that each extracted concept is:
-1. An appropriate {step_config.context_description} term
-2. Not a location, person name, or institution name
-3. A meaningful academic or research term
-4. Properly normalized (lowercase, no abbreviations)"""
 
     # Build prompt for batch
     prompt_parts = ["Extract academic concepts from the following:"]
@@ -226,35 +252,61 @@ def process_concept_batch(
     ]
 
     try:
-        # Determine tier based on level
-        tier = "budget" if level == 0 else "balanced"
-        
-        # Use smart consensus for improved accuracy and reduced API calls
-        response = run_async_safely(
-            smart_structured_completion_consensus,
-            messages=messages,
-            response_model=ConceptExtractionList,
-            tier=tier,
-            num_responses=step_config.consensus_attempts,  # Use consensus_attempts instead of agreement_threshold
-            semantic_validation=semantic_validation,  # Add semantic validation
-            use_case="concept_extraction",
-            enable_enhanced_cache=True,
-            enable_smart_consensus=True
-        )
-
-        if response and hasattr(response, "extractions"):
-            return response.extractions
+        # Honor provider override similar to token verification
+        model_kwargs = {}
+        if provider in {"openai", "anthropic", "gemini"}:
+            MODEL_MAPPING = {
+                "openai": "openai/gpt-4o-mini",
+                "anthropic": "anthropic/claude-3-haiku-20240307",
+                "gemini": "gemini/gemini-1.5-flash",
+            }
+            model_kwargs["model"] = MODEL_MAPPING[provider]
         else:
-            # Treat empty LLM response as validation error
+            model_kwargs["tier"] = "budget" if level == 0 else "balanced"
+
+        use_case = f"lv{level}_s1"  # Map level to step name
+
+        # Preserve optional consensus controlled by config
+        attempts = max(1, step_config.consensus_attempts if step_config else 1)
+        responses = []
+
+        for _ in range(attempts):
+            response = structured_completion(
+                messages=messages,
+                response_model=ConceptExtractionList,
+                use_case=use_case,
+                **model_kwargs,
+            )
+            if response:
+                responses.append(response)
+
+        if not responses:
             raise ValidationError(
-                "LLM returned empty extractions",
+                "All LLM attempts returned empty responses",
                 invalid_data={
                     "batch_size": len(batch),
                     "batch_sample": str(batch[:2]) if batch else "empty",
                     "provider": provider,
-                    "tier": tier
-                }
+                    "attempts": attempts,
+                },
             )
+
+        # Merge responses by source, union concepts, and optionally apply agreement filtering
+        agreement_threshold = step_config.agreement_threshold if step_config else 1
+        merged = merge_extractions_with_agreement(
+            responses, min(agreement_threshold, len(responses))
+        )
+
+        if not merged:
+            # Fallback to first response if agreement filtering removes everything
+            first_response = responses[0]
+            merged = (
+                first_response.extractions
+                if hasattr(first_response, "extractions")
+                else []
+            )
+
+        return merged
 
     except Exception as e:
         # Use handle_error with reraise=True for internal helpers
@@ -263,10 +315,10 @@ def process_concept_batch(
             context={
                 "batch_size": len(batch),
                 "batch_sample": str(batch[:2]) if batch else "empty",
-                "provider": provider
+                "provider": provider,
             },
             operation="concept_extraction_batch",
-            reraise=True
+            reraise=True,
         )
 
 
@@ -281,18 +333,17 @@ def process_concept_batches(
         logger = get_logger(f"lv{level}.s1")
         # Get configuration from centralized system
         config = get_step_config(level) or get_level_config(level)
-        
+
         log_processing_step(
             logger,
             f"concept_extraction_lv{level}",
             "started",
-            {"input_count": len(input_data), "batch_size": config.batch_size}
+            {"input_count": len(input_data), "batch_size": config.batch_size},
         )
 
         batches = list(chunk(input_data, config.batch_size))
         logger.info(f"Processing {len(batches)} batches of size {config.batch_size}")
 
-        # TODO: Re-enable checkpoint system when resilient_processing is available
         all_extractions = []
 
         for batch_idx, batch in enumerate(tqdm(batches, desc="Processing batches")):
@@ -301,11 +352,13 @@ def process_concept_batches(
                 batch_extractions = process_concept_batch(
                     batch, level, system_prompt, provider
                 )
-                
+
                 if batch_extractions:
                     all_extractions.extend(batch_extractions)
-                    logger.debug(f"Batch {batch_idx}: extracted {len(batch_extractions)} concept sets")
-                
+                    logger.debug(
+                        f"Batch {batch_idx}: extracted {len(batch_extractions)} concept sets"
+                    )
+
                     # Save checkpoint
                     # Checkpoint saving disabled until resilient_processing is available
                     # processor.save_checkpoint(batch_idx, batch_extractions)
@@ -317,9 +370,9 @@ def process_concept_batches(
                         "batch_idx": batch_idx,
                         "batch_size": len(batch),
                         "level": level,
-                        "correlation_id": correlation_id
+                        "correlation_id": correlation_id,
                     },
-                    operation=f"concept_batch_processing_lv{level}"
+                    operation=f"concept_batch_processing_lv{level}",
                 )
                 logger.error(f"Error processing batch {batch_idx}: {str(e)}")
                 continue
@@ -331,10 +384,10 @@ def process_concept_batches(
             {
                 "total_inputs": len(input_data),
                 "total_extractions": len(all_extractions),
-                "batches_processed": len(batches)
-            }
+                "batches_processed": len(batches),
+            },
         )
-        
+
         logger.info(f"Extracted concepts from {len(input_data)} inputs")
         return all_extractions
 
@@ -365,7 +418,9 @@ def save_extraction_results(
             unique_concepts.add(normalize_text(concept))
 
     # Save metadata - use centralized config source
-    step_cfg = get_step_config(level) or get_level_config(level)  # Centralized config with fallback
+    step_cfg = get_step_config(level) or get_level_config(
+        level
+    )  # Centralized config with fallback
     metadata = {
         "level": level,
         "step": "s1",
@@ -452,8 +507,8 @@ def extract_concepts_llm(
     else:
         # Tier-based selection was used
         tier = "budget" if level == 0 else "balanced"
-        model_str = get_model_by_tier(tier)
-        actual_provider = model_str.split("/")[0] if "/" in model_str else "tier_based"
+        # Remove get_model_by_tier call since DSPy handles this internally
+        actual_provider = f"tier_{tier}"
 
     # Processing statistics
     processing_stats = {
