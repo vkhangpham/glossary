@@ -78,8 +78,7 @@ def count_colleges_per_institution(df: pl.DataFrame) -> Dict[str, List[str]]:
 
 
 def select_top_institutions(
-    institution_colleges: Dict[str, List[str]],
-    top_n: int = TOP_N_INSTITUTIONS
+    institution_colleges: Dict[str, List[str]], top_n: int = TOP_N_INSTITUTIONS
 ) -> Tuple[Dict[str, List[str]], List[str]]:
     """
     Select top N institutions with the most colleges.
@@ -108,17 +107,17 @@ def select_top_institutions(
 def test(provider="openai", **kwargs):
     """Test mode: Process 10% of data and save to test directory"""
     global OUTPUT_DIR, TOP_N_INSTITUTIONS
-    
+
     # Save original values
     original_output_dir = OUTPUT_DIR
     original_top_n = TOP_N_INSTITUTIONS
-    
+
     # Set test values
     OUTPUT_DIR = TEST_OUTPUT_DIR
     TOP_N_INSTITUTIONS = TEST_TOP_N
-    
+
     logger.info("Running in TEST MODE")
-    
+
     try:
         # Run main with test settings
         main()

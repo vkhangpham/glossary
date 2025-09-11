@@ -58,6 +58,10 @@ class LLMConfig:
     model_aliases: Dict[str, str] = field(default_factory=dict)
     default_tier: str = "budget"
     
+    # Provider prefix mappings for model normalization
+    model_provider_prefixes: Dict[str, str] = field(default_factory=dict)
+    openai_model_prefixes: List[str] = field(default_factory=list)
+    
     # Processing parameters
     temperature: float = 1.0
     max_retries: int = 3
@@ -93,6 +97,10 @@ class LLMConfig:
     optimization_fallback_strategy: str = "conservative"  # "conservative" or "aggressive"
     performance_tuning_mode: str = "balanced"  # "speed", "quality", or "balanced"
     
+    # Deterministic model selection
+    deterministic_tier_selection: bool = False  # Enable deterministic tier selection for reproducibility
+    random_seed: Optional[int] = None  # Random seed for deterministic selection
+    
     def __post_init__(self):
         if not self.model_tiers:
             self.model_tiers = {
@@ -121,7 +129,31 @@ class LLMConfig:
                 "claude4sonnet": "anthropic/claude-4-sonnet",
                 "gemini2.5flash": "vertex_ai/gemini-2.5-flash",
                 "gemini2.5pro": "vertex_ai/gemini-2.5-pro",
+                # Special aliases moved from hardcoded logic
+                "sonnet": "anthropic/claude-sonnet-4-20250514",
+                "haiku": "anthropic/claude-3-5-haiku-20241022",
+                "gemini-2.5-flash": "vertex_ai/gemini-2.5-flash",
+                "gemini-2.5-pro": "vertex_ai/gemini-2.5-pro",
             }
+        
+        # Initialize provider prefix mappings with current hardcoded behavior
+        if not self.model_provider_prefixes:
+            self.model_provider_prefixes = {
+                "claude-": "anthropic/",
+                "gemini-": "vertex_ai/",
+            }
+        
+        # Initialize OpenAI model prefixes with current hardcoded patterns
+        if not self.openai_model_prefixes:
+            self.openai_model_prefixes = [
+                "gpt-", "text-", "davinci", "curie", "babbage", "ada",
+                "embedding", "whisper", "tts", "dall-e", "o1-"
+            ]
+        
+        # Validate that provider IDs end with '/' to prevent malformed strings
+        for prefix, provider_id in self.model_provider_prefixes.items():
+            if not provider_id.endswith("/"):
+                self.model_provider_prefixes[prefix] = f"{provider_id}/"
         
         # Initialize per-use-case configurations if empty
         if not self.per_use_case_models:

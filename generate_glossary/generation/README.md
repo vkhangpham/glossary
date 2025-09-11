@@ -1,6 +1,6 @@
 # Academic Concept Generation
 
-This package provides tools for generating and extracting academic concepts across multiple hierarchy levels, from broad academic domains to specialized conference topics. The pipeline uses advanced LLM consensus mechanisms and supports prompt optimization through GEPA (Genetic-Pareto Evolutionary Algorithm).
+This package provides tools for generating and extracting academic concepts across multiple hierarchy levels, from broad academic domains to specialized conference topics. The pipeline uses DSPy-based structured generation and supports prompt optimization through GEPA (Genetic-Pareto Evolutionary Algorithm).
 
 ## Overview
 
@@ -288,7 +288,7 @@ The generation pipeline uses several shared utilities:
 
 ### LLM Integration
 
-- **Provider Interface** (`utils/llm.py`): Abstract interface for different LLM providers
+- **Provider Interface** (`utils/llm/`): Abstract interface for different LLM providers
 - Support for OpenAI, Gemini, and other providers
 
 ## Running the Complete Pipeline
@@ -369,11 +369,11 @@ Extracts college/school names from faculty data files.
 - Outputs to: `data/generation/lv0/lv0_s0_output.txt`
 
 #### `lv0_s1_extract_concepts.py`
-Extracts academic concepts from college/school names using LLM consensus with automatic prompt optimization support.
+Extracts academic concepts from college/school names using DSPy-based structured generation with automatic prompt optimization support.
 
 **Key Components:**
 - `ConceptExtraction`: Pydantic model for concept extraction
-- `extract_concepts_with_consensus()`: Uses parallel LLM calls for consensus
+- `extract_concepts_structured()`: Uses DSPy-based structured completion
 - `process_source_chunk()`: Processes batches of sources
 - **Prompt Optimization Support**: 
   - Automatically loads optimized prompts from `data/prompts/lv0_s1_*_latest.json`
@@ -381,7 +381,7 @@ Extracts academic concepts from college/school names using LLM consensus with au
   - Supports GEPA-optimized prompts with 21% performance improvement
 - **Configuration:**
   - `BATCH_SIZE`: 20 institutions per LLM request
-  - `LLM_ATTEMPTS`: 3 consensus attempts
+  - `MAX_RETRIES`: 3 structured completion attempts
   - `FREQUENCY_THRESHOLD`: 2 minimum occurrences
   - `TEMPERATURE`: 1.0 for GPT-5 models
   - `PROVIDER`: Configurable via `--provider` flag (openai/gemini)
@@ -459,29 +459,31 @@ Configuration management for different hierarchy levels.
   - `level_number`: 0-3
   - `batch_size`: Processing batch size
   - `frequency_threshold`: Minimum frequency
-  - `llm_attempts`: Consensus attempts
+  - `consensus_attempts`: Consensus attempts (configured via `generate_glossary/config.py`)
+
+**Note:** Consensus is implemented in `generate_glossary/generation/concept_extraction.py` and configured via `generate_glossary/config.py`, not in `utils/llm/`.
 
 ### Integration with LLM Utils & Prompt Optimization
 
 The generation modules integrate with centralized LLM utilities and prompt optimization:
 
-#### `utils/llm.py` Integration
+#### `utils/llm/` Integration
 
 **Key Functions Used:**
-- `structured_completion_consensus()`: Parallel LLM calls with consensus
-- `load_prompt_from_file()`: Loads optimized prompts (handles DSPy format)
-- `get_llm_provider()`: Returns configured LLM provider
+- `completion()`: Standard text completion with DSPy-based signatures
+- `structured_completion()`: Structured completion with Pydantic models
+- `async_completion()`: Asynchronous text completion
+- `async_structured_completion()`: Asynchronous structured completion
+- `_try_load_optimized_prompt()`: Loads optimized prompts from registry
 
-**Consensus Mechanism:**
+**DSPy-Based Completion:**
 ```python
-consensus = await structured_completion_consensus(
+result = await async_structured_completion(
     messages=messages,
     response_model=ConceptExtractionList,
-    tier="budget",  # Uses tier-based model selection
-    num_responses=3,  # Multiple attempts
-    return_all=False,  # Return consensus only
+    model_provider="openai",  # Provider-based model selection
     temperature=1.0,
-    cache_ttl=3600  # 1-hour cache
+    max_tokens=4000
 )
 ```
 
@@ -490,11 +492,15 @@ consensus = await structured_completion_consensus(
 **Automatic Loading of Optimized Prompts:**
 ```python
 # Generation scripts automatically check for optimized prompts
-optimized_prompt = load_prompt_from_file("data/prompts/lv0_s1_system_latest.json")
-if optimized_prompt:
-    system_prompt = optimized_prompt  # Use GEPA-optimized version
-else:
-    system_prompt = DEFAULT_PROMPT    # Fall back to default
+from prompt_optimization.core import load_prompt
+
+# Auto-loads optimized prompts via prompt_optimization.core.load_prompt
+system_prompt = load_prompt("lv0_s1_system")  # Loads latest optimized version
+user_prompt = load_prompt("lv0_s1_user")      # Falls back to defaults if not found
+
+# Alternative: Use llm utility function directly
+from generate_glossary.llm import _try_load_optimized_prompt
+system_prompt, user_prompt, metadata = _try_load_optimized_prompt("lv0_s1")
 ```
 
 **Optimization Workflow:**
@@ -539,7 +545,7 @@ uv run generate -l 0 -s 1 --test
 ## Performance Optimization
 
 ### Parallel Processing
-- Multiple LLM calls executed in parallel for consensus
+- Multiple LLM calls executed in parallel for structured completion
 - Batch processing with configurable chunk sizes
 - Asynchronous web requests for search operations
 

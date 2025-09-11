@@ -11,7 +11,8 @@ from collections import defaultdict
 import logging
 import json
 
-from generate_glossary.utils.llm_simple import infer_text, get_random_llm_config
+from generate_glossary.llm import completion
+from generate_glossary.config import get_llm_config
 
 from .utils import (
     normalize_text, get_term_variations, is_compound_term,
