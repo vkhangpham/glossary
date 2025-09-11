@@ -10,7 +10,7 @@ from typing import Dict, List, Any, Optional, Tuple
 from collections import defaultdict
 import re
 
-from generate_glossary.utils.llm_simple import infer_structured, infer_text
+from generate_glossary.llm import completion, structured_completion
 from .utils import (
     extract_keywords,
     calculate_separation_score
@@ -384,7 +384,8 @@ Examples:
 Tag:"""
     
     try:
-        tag = infer_text(prompt, provider=llm_provider, max_tokens=20)
+        messages = [{"role": "user", "content": prompt}]
+        tag = completion(messages, tier="budget", max_tokens=20)
         tag = tag.strip().lower()
         # Clean up tag
         tag = re.sub(r'[^a-z0-9\s\-]', '', tag)
@@ -443,7 +444,8 @@ Format: YES/NO: reason
 """
     
     try:
-        response = infer_text(prompt, provider=llm_provider, max_tokens=100)
+        messages = [{"role": "user", "content": prompt}]
+        response = completion(messages, tier="budget", max_tokens=100)
         response = response.strip()
         
         if response.startswith("YES"):

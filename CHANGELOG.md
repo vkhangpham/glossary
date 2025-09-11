@@ -62,7 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Integrated with `load_prompt_from_file()` utility
   - Support for DSPy format extraction
 
-- **Updated `generate_glossary.utils.llm`**:
+- **Updated `generate_glossary.llm`**:
   - `load_prompt_from_file()` now handles DSPy signature extraction
   - Automatic parsing of complex DSPy prompt formats
 
@@ -318,7 +318,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Technical Improvements
 - Consistent with codebase architecture (utilities in `utils/`, domain logic in modules)
 - Functional programming approach - no OOP abstractions
-- Simplified LLM validator to use existing `utils/llm.py`
+- Simplified LLM validator to use existing `utils/llm/`
 - Reduced complexity while maintaining all functionality
 - Processing rate: 54,000+ terms/second for rule validation
 

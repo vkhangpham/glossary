@@ -166,7 +166,9 @@ def extract_optimized_instruction(optimized: Any) -> str:
                 predictor.signature, "instructions"
             ):
                 instructions = predictor.signature.instructions
-                if len(instructions) > 100:  # Ensure substantial content
+                if len(instructions) > 20 and instructions.strip():  # Relaxed guard with fallback
+                    return instructions
+                elif instructions.strip():  # Accept any non-empty instruction as fallback
                     return instructions
 
     # If no substantial optimized instruction found, this is an error
@@ -261,6 +263,96 @@ def get_optimizer_config(auto_level: str = "light") -> Dict[str, Any]:
     return optimizer_kwargs
 
 
+def extract_signature_metadata(optimized: Any, default_system_prompt: str = "", default_user_prompt: str = "") -> Optional[Dict[str, Any]]:
+    """
+    Extract DSPy signature metadata from GEPA optimization results.
+
+    Args:
+        optimized: The optimized object from GEPA
+        default_system_prompt: Default system prompt to combine with optimized instructions
+        default_user_prompt: Default user prompt to combine with optimized instructions
+
+    Returns:
+        Dictionary containing signature metadata or None if extraction fails
+    """
+    try:
+        if not hasattr(optimized, "named_predictors"):
+            return None
+
+        for name, predictor in optimized.named_predictors():
+            if hasattr(predictor, "signature"):
+                signature = predictor.signature
+                
+                # Extract field information
+                input_fields = {}
+                output_fields = {}
+                
+                if hasattr(signature, "input_fields"):
+                    for field_name, field in signature.input_fields.items():
+                        input_fields[field_name] = getattr(field, "desc", "")
+                        
+                if hasattr(signature, "output_fields"):
+                    for field_name, field in signature.output_fields.items():
+                        output_fields[field_name] = getattr(field, "desc", "")
+
+                # Extract and combine instructions with system prompt context
+                optimized_instructions = getattr(signature, "instructions", "")
+                
+                # Build combined instructions by merging default system prompt and optimized user prompt
+                if default_system_prompt and optimized_instructions:
+                    instructions = f"{default_system_prompt}\n\n{optimized_instructions}"
+                elif default_system_prompt and default_user_prompt:
+                    instructions = f"{default_system_prompt}\n\n{default_user_prompt}"
+                elif optimized_instructions:
+                    instructions = optimized_instructions
+                else:
+                    instructions = default_user_prompt or ""
+                
+                # Build signature string
+                signature_str = str(signature) if hasattr(signature, "__str__") else ""
+                
+                # Determine predictor type by inspecting predictor classes
+                predictor_type = "Predict"  # Default
+                
+                # Check predictor class type directly
+                if isinstance(predictor, dspy.ChainOfThought):
+                    predictor_type = "ChainOfThought"
+                elif hasattr(dspy, 'TypedPredictor') and isinstance(predictor, dspy.TypedPredictor):
+                    predictor_type = "TypedPredictor"
+                else:
+                    # Check if predictor has ChainOfThought characteristics by looking at its module
+                    predictor_module = getattr(predictor, '__module__', '')
+                    predictor_class_name = type(predictor).__name__
+                    
+                    if 'ChainOfThought' in predictor_class_name or 'chainofthought' in predictor_module.lower():
+                        predictor_type = "ChainOfThought"
+                    elif 'TypedPredictor' in predictor_class_name or 'typed' in predictor_module.lower():
+                        predictor_type = "TypedPredictor"
+                    # Fallback: check signature characteristics for reasoning patterns
+                    elif hasattr(signature, "output_fields"):
+                        output_field_names = list(signature.output_fields.keys())
+                        if any("reasoning" in field.lower() or "rationale" in field.lower() for field in output_field_names):
+                            predictor_type = "ChainOfThought"
+                
+                metadata = {
+                    "input_fields": input_fields,
+                    "output_fields": output_fields,
+                    "instructions": instructions,
+                    "signature_str": signature_str,
+                    "predictor_type": predictor_type
+                }
+                
+                return metadata
+                
+        return None
+        
+    except Exception as e:
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.warning(f"Failed to extract signature metadata: {e}")
+        return None
+
+
 def run_optimization(
     program_name: str,
     training_data_path: str,
@@ -353,13 +445,26 @@ def run_optimization(
     print("\nExtracting optimized prompts...")
     user_prompt_template = extract_optimized_instruction(optimized)
 
+    # Extract signature metadata from optimized object
+    print("Extracting signature metadata...")
+    signature_metadata = None
+    try:
+        signature_metadata = extract_signature_metadata(optimized, default_system_prompt, default_user_prompt)
+        if signature_metadata:
+            print("✓ Successfully extracted signature metadata")
+        else:
+            print("⚠ No signature metadata available, falling back to text-only")
+    except Exception as e:
+        print(f"⚠ Failed to extract signature metadata: {e}")
+        # Continue with text-only approach
+
     # Save prompts
     print("Saving optimized prompts...")
     prompt_key_prefix = program_name.replace("_", "_").split("_")[:2]  # e.g., "lv0_s1"
     prompt_key_prefix = "_".join(prompt_key_prefix)
 
-    system_path = save_prompt(f"{prompt_key_prefix}_system", default_system_prompt)
-    user_path = save_prompt(f"{prompt_key_prefix}_user", user_prompt_template)
+    system_path = save_prompt(f"{prompt_key_prefix}_system", default_system_prompt, signature_metadata=signature_metadata)
+    user_path = save_prompt(f"{prompt_key_prefix}_user", user_prompt_template, signature_metadata=signature_metadata)
 
     print(f"✓ Saved system prompt to: {system_path}")
     print(f"✓ Saved user prompt to: {user_path}")
@@ -409,6 +514,7 @@ def run_optimization(
                 },
                 "optimizer_config": serializable_config,
                 "generated_files": [system_path, user_path],
+                "signature_metadata_extracted": signature_metadata is not None,
             },
         )
 

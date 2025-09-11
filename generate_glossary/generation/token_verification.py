@@ -12,27 +12,31 @@ import re
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 from tqdm import tqdm
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_exponential,
+    retry_if_exception_type,
+)
 
 from generate_glossary.utils.error_handler import (
-    ProcessingError, ValidationError, handle_error, processing_context
+    ProcessingError,
+    ValidationError,
+    handle_error,
+    processing_context,
 )
 from generate_glossary.utils.logger import get_logger, log_processing_step
 from generate_glossary.config import ensure_directories
-from generate_glossary.utils.llm import completion, get_model_by_tier
+from generate_glossary.utils import completion
 from generate_glossary.deduplication.utils import normalize_text
 
-# Resilient processing not yet implemented
-# from generate_glossary.utils.resilient_processing import (
-#     ConceptExtractionProcessor, create_processing_config
-# )
 from generate_glossary.config import get_level_config
 
 # Provider to model mapping for token verification
 MODEL_MAPPING = {
     "openai": "openai/gpt-4o-mini",
-    "anthropic": "anthropic/claude-3-haiku-20240307", 
-    "gemini": "gemini/gemini-1.5-flash"
+    "anthropic": "anthropic/claude-3-haiku-20240307",
+    "gemini": "gemini/gemini-1.5-flash",
 }
 
 
@@ -206,24 +210,33 @@ Answer with only "YES" or "NO" followed by a brief justification."""
         {"role": "user", "content": prompt},
     ]
 
-    # Determine model/tier - align with concept_extraction mapping
-    if provider in MODEL_MAPPING:
-        model_str = MODEL_MAPPING[provider]
-    else:
-        # Use tier-based selection when provider is None
-        tier = "budget" if level == 0 else "balanced"
-        model_str = get_model_by_tier(tier)
+    use_case = f"lv{level}_s3"  # Map level to step name
 
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=1, max=10),
-        retry=retry_if_exception_type((ConnectionError, TimeoutError))
+        retry=retry_if_exception_type((ConnectionError, TimeoutError)),
     )
     def _verify_with_retry():
         try:
-            response = completion(
-                messages=messages, model=model_str, temperature=0.3, max_tokens=100
-            )
+            if provider in MODEL_MAPPING:
+                response = completion(
+                    messages=messages,
+                    model=MODEL_MAPPING[provider],
+                    temperature=0.3,
+                    max_tokens=100,
+                    use_case=use_case,
+                )
+            else:
+                # Use tier-based selection
+                tier = "budget" if level == 0 else "balanced"
+                response = completion(
+                    messages=messages,
+                    tier=tier,
+                    temperature=0.3,
+                    max_tokens=100,
+                    use_case=use_case,
+                )
 
             if not response:
                 raise ProcessingError(f"Empty response for term '{term}'")
@@ -264,43 +277,52 @@ Answer with only "YES" or "NO" followed by a brief justification."""
                 else:
                     raise ValidationError(
                         f"Unclear response for term '{term}': {response[:100]}...",
-                        invalid_data={"term": term, "response": response}
+                        invalid_data={"term": term, "response": response},
                     )
-                    
+
         except QuotaExceededError:
             # Re-raise quota errors immediately
             raise
         except Exception as e:
             error_msg = str(e)
-            
+
             # Check for quota exceeded errors
             if "quota" in error_msg.lower() or "exceeded" in error_msg.lower():
                 raise QuotaExceededError(f"API quota exceeded: {error_msg}")
-            
+
             # Convert other errors to ProcessingError for proper handling
             if "rate" in error_msg.lower() and "limit" in error_msg.lower():
-                raise ProcessingError(f"Rate limit exceeded for term '{term}': {error_msg}")
+                raise ProcessingError(
+                    f"Rate limit exceeded for term '{term}': {error_msg}"
+                )
             else:
                 raise ProcessingError(f"Error verifying term '{term}': {error_msg}")
-    
+
     try:
         return _verify_with_retry()
     except Exception as e:
+        # Compute actual model being used for context
+        if provider in MODEL_MAPPING:
+            actual_model = MODEL_MAPPING[provider]
+        else:
+            actual_model = f"tier_{'budget' if level == 0 else 'balanced'}"
+
         handle_error(
             e,
             context={
                 "term": term,
                 "level": level,
                 "provider": provider,
-                "model": model_str
+                "tier": ("budget" if level == 0 else "balanced"),
+                "actual_model": actual_model,
             },
-            operation="term_verification"
+            operation="term_verification",
         )
-        
+
         # If quota exceeded, re-raise to stop processing
         if isinstance(e, QuotaExceededError):
             raise
-            
+
         # For other errors, return False as fallback
         logger.error(f"Failed to verify term '{term}': {e}")
         return False
@@ -323,25 +345,18 @@ def verify_terms_batch(
     """
     with processing_context(f"terms_verification_lv{level}") as correlation_id:
         logger = get_logger(f"lv{level}.s3")
-        
+
         log_processing_step(
             logger,
             f"terms_verification_lv{level}",
             "started",
-            {
-                "terms_count": len(terms),
-                "level": level,
-                "provider": provider
-            }
+            {"terms_count": len(terms), "level": level, "provider": provider},
         )
-        
+
         if not terms:
             return []
 
         try:
-            # Process without checkpoint system for now
-            # TODO: Re-enable checkpoint system when resilient_processing is available
-
             verified_terms = []
 
             for idx, term in enumerate(tqdm(terms, desc=f"Verifying terms")):
@@ -351,7 +366,7 @@ def verify_terms_batch(
 
                     if is_valid:
                         verified_terms.append(term)
-                        
+
                 except QuotaExceededError:
                     logger.error("API quota exceeded, stopping verification")
                     break
@@ -364,10 +379,10 @@ def verify_terms_batch(
                             "term_index": idx,
                             "level": level,
                             "provider": provider,
-                            "correlation_id": correlation_id
+                            "correlation_id": correlation_id,
                         },
                         operation=f"term_verification_lv{level}",
-                        reraise=False
+                        reraise=False,
                     )
                     logger.error(f"Error verifying term '{term}': {str(e)}")
                     # Skip this term and continue with next
@@ -380,13 +395,15 @@ def verify_terms_batch(
                 {
                     "terms_verified": len(verified_terms),
                     "terms_total": len(terms),
-                    "verification_rate": len(verified_terms) / len(terms) if terms else 0
-                }
+                    "verification_rate": (
+                        len(verified_terms) / len(terms) if terms else 0
+                    ),
+                },
             )
-            
+
             logger.info(f"Verified {len(verified_terms)} out of {len(terms)} terms")
             return verified_terms
-            
+
         except Exception as e:
             handle_error(
                 e,
@@ -394,10 +411,10 @@ def verify_terms_batch(
                     "terms_count": len(terms),
                     "level": level,
                     "provider": provider,
-                    "correlation_id": correlation_id
+                    "correlation_id": correlation_id,
                 },
                 operation=f"terms_verification_batch_lv{level}",
-                reraise=True
+                reraise=True,
             )
 
 
@@ -495,15 +512,15 @@ def verify_single_tokens(
 
     # Create level-specific system prompt
     system_prompt = create_verification_system_prompt(level)
-    
+
     # Determine actual provider to use
     if provider:
         actual_provider = provider
     else:
         # Use tier-based selection
         tier = "budget" if level == 0 else "balanced"
-        model_str = get_model_by_tier(tier)
-        actual_provider = model_str.split("/")[0] if "/" in model_str else "tier_based"
+        # Remove get_model_by_tier call since DSPy handles this internally
+        actual_provider = f"tier_{tier}"
 
     # Verify single-word terms only (multi-word terms auto-pass)
     start_time = time.time()

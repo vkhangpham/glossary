@@ -7,7 +7,7 @@ a simpler approach that just saves prompts with basic metadata.
 """
 
 from pathlib import Path
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, Union
 import json
 from datetime import datetime
 import logging
@@ -20,6 +20,7 @@ def save_prompt(
     prompt_content: str,
     output_dir: str = "data/prompts",
     metadata: Optional[Dict[str, Any]] = None,
+    signature_metadata: Optional[Dict[str, Any]] = None,
 ) -> str:
     """
     Save an optimized prompt in simple JSON format compatible with load_prompt_from_file().
@@ -35,6 +36,7 @@ def save_prompt(
         prompt_content: The actual prompt text content
         output_dir: Directory to save prompts (default: "data/prompts")
         metadata: Optional additional metadata to include
+        signature_metadata: Optional DSPy signature metadata for declarative programming
 
     Returns:
         str: Absolute path to the saved file
@@ -69,6 +71,9 @@ def save_prompt(
     filename = f"{prompt_key}_latest.json"
     filepath = output_path / filename
 
+    # Determine version based on signature metadata presence
+    version = "2.0" if signature_metadata else "1.0"
+    
     prompt_data: Dict[str, Any] = {
         "content": prompt_content,
         "metadata": {
@@ -77,9 +82,14 @@ def save_prompt(
             "prompt_key": prompt_key,
             "prompt_type": prompt_type,
             "content_length": len(prompt_content),
-            "version": "1.0",
+            "version": version,
         },
     }
+
+    # Add signature metadata if provided
+    if signature_metadata and isinstance(signature_metadata, dict):
+        prompt_data["signature_metadata"] = signature_metadata
+        logger.debug(f"Added signature metadata for prompt '{prompt_key}'")
 
     if metadata and isinstance(metadata, dict):
         prompt_data["metadata"].update(metadata)
@@ -111,20 +121,30 @@ def save_prompt_batch(
     prompts: Dict[str, str],
     output_dir: str = "data/prompts",
     metadata: Optional[Dict[str, Any]] = None,
+    signature_metadata: Optional[Union[Dict[str, Any], Dict[str, Dict[str, Any]]]] = None,
 ) -> Dict[str, str]:
     """
-    Save multiple prompts at once.
+    Save multiple prompts at once with flexible signature metadata handling.
 
     Args:
         prompts: Dictionary mapping prompt_key to prompt_content
         output_dir: Directory to save prompts
         metadata: Optional metadata to include with all prompts
+        signature_metadata: Optional DSPy signature metadata. Can be:
+            - Dict: Applied to all prompts
+            - Dict[str, Dict]: Mapping from prompt_key to specific metadata
 
     Returns:
-        Dictionary mapping prompt_key to saved file path
+        Dictionary mapping prompt_key to saved file path. In case of partial failures,
+        returns paths for successfully saved prompts only.
 
     Raises:
         ValueError: If prompts is empty or contains invalid data
+        IOError: On complete batch write failures (when no prompts could be saved)
+        
+    Note:
+        Partial failures (some prompts saved, some failed) return successful paths
+        and log errors, but do not raise exceptions. Only complete failures raise IOError.
     """
     if not prompts:
         raise ValueError("No prompts provided to save")
@@ -132,9 +152,37 @@ def save_prompt_batch(
     saved_paths = {}
     errors = []
 
+    # Determine if signature_metadata is per-key mapping or global
+    is_per_key_metadata = False
+    if signature_metadata:
+        # Check if it looks like a per-key mapping by checking if values are dicts
+        # and keys match some of the prompt keys
+        if all(isinstance(v, dict) for v in signature_metadata.values()):
+            # Check if any keys match prompt keys
+            if any(k in prompts for k in signature_metadata.keys()):
+                is_per_key_metadata = True
+                logger.debug("Using per-key signature metadata mapping")
+            else:
+                logger.debug("Signature metadata appears to be a global dict (no key matches)")
+        else:
+            logger.debug("Signature metadata is a global dict (values are not all dicts)")
+
     for prompt_key, prompt_content in prompts.items():
         try:
-            path = save_prompt(prompt_key, prompt_content, output_dir, metadata)
+            # Determine metadata for this specific prompt
+            prompt_signature_metadata = None
+            if signature_metadata:
+                if is_per_key_metadata:
+                    prompt_signature_metadata = signature_metadata.get(prompt_key)
+                    if prompt_signature_metadata:
+                        logger.debug(f"Using specific signature metadata for '{prompt_key}'")
+                    else:
+                        logger.debug(f"No specific signature metadata found for '{prompt_key}'")
+                else:
+                    prompt_signature_metadata = signature_metadata
+                    logger.debug(f"Using global signature metadata for '{prompt_key}'")
+
+            path = save_prompt(prompt_key, prompt_content, output_dir, metadata, prompt_signature_metadata)
             saved_paths[prompt_key] = path
         except Exception as e:
             errors.append(f"{prompt_key}: {e}")
@@ -144,7 +192,7 @@ def save_prompt_batch(
         error_msg = "Failed to save some prompts:\n" + "\n".join(errors)
         logger.error(error_msg)
         if not saved_paths:
-            raise ValueError(error_msg)
+            raise IOError(error_msg)
 
     return saved_paths
 

@@ -22,7 +22,7 @@ from generate_glossary.mining.firecrawl import (
     initialize_firecrawl,
     mine_concepts_with_firecrawl
 )
-from generate_glossary.utils.llm import completion
+from generate_glossary.utils import completion
 from generate_glossary.config import get_level_config, get_web_extraction_config
 
 
@@ -107,9 +107,11 @@ def validate_content_with_llm(content_list: List[str], term: str, level: int) ->
                 {"role": "user", "content": full_prompt}
             ]
             
+            use_case = f"lv{level}_s0"  # Map level to step name for web extraction
             response = completion(
                 messages=messages,
-                tier="budget" if level == 0 else "balanced"
+                tier="budget" if level == 0 else "balanced",
+                use_case=use_case
             )
             
             # Try to parse JSON response

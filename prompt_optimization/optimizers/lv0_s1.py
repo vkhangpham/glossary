@@ -1,4 +1,14 @@
-"""Simplified standalone optimizer for lv0_s1 concept extraction using DSPy GEPA.
+"""Enhanced optimizer for lv0_s1 concept extraction with DSPy 2024-2025 signature metadata support.
+
+This optimizer demonstrates modern prompt optimization with automatic signature metadata
+extraction, enabling declarative DSPy programming and improved runtime integration.
+
+Features:
+- ✅ GEPA optimization with signature metadata extraction
+- ✅ DSPy ChainOfThought predictor for enhanced reasoning
+- ✅ Comprehensive metric-driven development with detailed feedback
+- ✅ Automatic compliance with DSPy 2024-2025 best practices
+- ✅ Enhanced prompt artifacts with declarative programming support
 
 Environment Variables:
     GEPA_GEN_MODEL: Generation model (default: gpt-4o-mini)
@@ -246,7 +256,22 @@ For each institution, identify the core academic fields and disciplines."""
 
 
 def optimize_prompts():
-    """Run GEPA optimization for concept extraction prompts."""
+    """
+    Run GEPA optimization for concept extraction prompts with signature metadata extraction.
+    
+    This function uses the enhanced run_optimization() which automatically:
+    1. Extracts signature metadata from the GEPA optimization results
+    2. Saves prompts with DSPy 2024-2025 compliant signature metadata
+    3. Enables declarative programming for runtime integration
+    4. Supports ChainOfThought predictor type recognition
+    5. Provides metric-driven development with comprehensive feedback
+    
+    The ExtractConceptsSignature will be analyzed to extract:
+    - Input fields: text (description: "Text to extract concepts from")
+    - Output fields: extraction (description: "JSON array of extraction objects...")  
+    - Instructions: Combined system + user prompt instructions
+    - Predictor type: ChainOfThought (detected from ConceptExtractor.prog)
+    """
     return run_optimization(
         program_name="lv0_s1_concept_extraction",
         training_data_path=TRAINING_DATA_PATH,
@@ -260,8 +285,29 @@ def optimize_prompts():
 
 
 if __name__ == "__main__":
+    """
+    Enhanced lv0_s1 concept extraction optimization with DSPy 2024-2025 features.
+    
+    This will generate optimized prompts with signature metadata at:
+    - data/prompts/lv0_s1_system_latest.json (with signature_metadata field)
+    - data/prompts/lv0_s1_user_latest.json (with signature_metadata field)
+    
+    The signature metadata enables:
+    - Declarative DSPy programming at runtime
+    - Automatic predictor type selection (ChainOfThought)
+    - Precise field mapping without text inference
+    - Enhanced modular composition capabilities
+    
+    To validate DSPy compliance after optimization:
+    > from generate_glossary.llm.signatures import validate_dspy_compliance
+    > result = validate_dspy_compliance("lv0_s1")
+    > print(f"DSPy compliance score: {result['overall_score']:.2f}")
+    """
     try:
+        print("🚀 Starting enhanced lv0_s1 optimization with signature metadata extraction...")
         optimize_prompts()
+        print("✅ Optimization complete! Prompts saved with DSPy 2024-2025 signature metadata.")
+        print("📋 Generated files include declarative programming metadata for runtime integration.")
     except Exception as e:
         print(f"❌ Error during optimization: {e}")
         sys.exit(1)

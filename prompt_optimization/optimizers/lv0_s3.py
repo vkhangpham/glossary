@@ -1,4 +1,14 @@
-"""Simplified standalone optimizer for lv0_s3 discipline verification using DSPy GEPA.
+"""Enhanced optimizer for lv0_s3 discipline verification with DSPy 2024-2025 signature metadata support.
+
+This optimizer demonstrates modern prompt optimization with automatic signature metadata
+extraction for verification tasks, enabling declarative DSPy programming and enhanced reasoning.
+
+Features:
+- ✅ GEPA optimization with signature metadata extraction  
+- ✅ DSPy ChainOfThought predictor for enhanced reasoning and verification
+- ✅ Multi-field output with reasoning for comprehensive metric evaluation
+- ✅ Automatic compliance with DSPy 2024-2025 best practices
+- ✅ Enhanced prompt artifacts with declarative programming support
 
 Environment Variables:
     GEPA_GEN_MODEL: Generation model (default: gpt-4o-mini)
@@ -100,8 +110,16 @@ def metric_with_feedback(gold, pred, trace=None, pred_name=None, pred_trace=None
     Returns dspy.Prediction with score and feedback.
     """
     try:
-        pred_is_discipline = pred.is_discipline.lower() in ["true", "yes", "1"]
-        gold_is_discipline = gold.is_discipline.lower() in ["true", "yes", "1"]
+        # Harden boolean conversion with None guarding
+        pred_is_discipline_raw = getattr(pred, 'is_discipline', None)
+        gold_is_discipline_raw = getattr(gold, 'is_discipline', None)
+        
+        # Convert to string and handle None cases
+        pred_is_discipline_str = str(pred_is_discipline_raw).strip().lower() if pred_is_discipline_raw is not None else "false"
+        gold_is_discipline_str = str(gold_is_discipline_raw).strip().lower() if gold_is_discipline_raw is not None else "false"
+        
+        pred_is_discipline = pred_is_discipline_str in ["true", "yes", "1"]
+        gold_is_discipline = gold_is_discipline_str in ["true", "yes", "1"]
 
         correct = pred_is_discipline == gold_is_discipline
 
@@ -217,7 +235,22 @@ Answer with true if it meets these criteria, false otherwise."""
 
 
 def optimize_prompts():
-    """Run GEPA optimization for discipline verification prompts."""
+    """
+    Run GEPA optimization for discipline verification prompts with signature metadata extraction.
+    
+    This function uses the enhanced run_optimization() which automatically:
+    1. Extracts signature metadata from the GEPA optimization results
+    2. Saves prompts with DSPy 2024-2025 compliant signature metadata
+    3. Enables declarative programming for runtime integration
+    4. Supports ChainOfThought predictor type recognition
+    5. Provides metric-driven development with reasoning evaluation
+    
+    The AcademicDisciplineVerification signature will be analyzed to extract:
+    - Input fields: term (description: "Term to verify as academic discipline")
+    - Output fields: is_discipline, reasoning (enabling comprehensive evaluation)
+    - Instructions: Combined system + user prompt instructions
+    - Predictor type: ChainOfThought (detected from DisciplineVerifier.prog)
+    """
     return run_optimization(
         program_name="lv0_s3_discipline_verification",
         training_data_path=TRAINING_DATA_PATH,
@@ -231,8 +264,30 @@ def optimize_prompts():
 
 
 if __name__ == "__main__":
+    """
+    Enhanced lv0_s3 discipline verification optimization with DSPy 2024-2025 features.
+    
+    This will generate optimized prompts with signature metadata at:
+    - data/prompts/lv0_s3_system_latest.json (with signature_metadata field)
+    - data/prompts/lv0_s3_user_latest.json (with signature_metadata field)
+    
+    The signature metadata enables:
+    - Declarative DSPy programming at runtime
+    - Automatic predictor type selection (ChainOfThought)  
+    - Multi-field reasoning evaluation (is_discipline + reasoning)
+    - Enhanced modular composition for verification tasks
+    
+    To validate DSPy compliance after optimization:
+    > from generate_glossary.llm.signatures import validate_dspy_compliance
+    > result = validate_dspy_compliance("lv0_s3")
+    > print(f"DSPy compliance score: {result['overall_score']:.2f}")
+    """
     try:
+        print("🚀 Starting enhanced lv0_s3 optimization with signature metadata extraction...")
         optimize_prompts()
+        print("✅ Optimization complete! Prompts saved with DSPy 2024-2025 signature metadata.")
+        print("📋 Generated files include declarative programming metadata for runtime integration.")
+        print("🔬 Multi-field reasoning support enables comprehensive verification metrics.")
     except Exception as e:
         print(f"❌ Error during optimization: {e}")
         sys.exit(1)

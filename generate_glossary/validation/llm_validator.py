@@ -57,7 +57,7 @@ def validate_with_llm(
         Dictionary mapping terms to validation results
     """
     try:
-        from generate_glossary.utils.llm_simple import infer_text
+        from generate_glossary.llm import completion
     except ImportError:
         logging.error("LLM utilities not available")
         return {term: _create_error_result(term, "LLM not available") for term in terms}
@@ -88,20 +88,17 @@ def _validate_single_term_llm(term: str, provider: str) -> Dict[str, Any]:
         Validation result dictionary
     """
     try:
-        from generate_glossary.utils.llm_simple import infer_text
+        from generate_glossary.llm import completion
         
         # Generate prompt
         prompt = DEFAULT_VALIDATION_PROMPT.format(term=term)
         
         # Get LLM response
-        response = infer_text(
-            provider=provider,
-            prompt=prompt,
-            max_tokens=100
-        )
+        messages = [{"role": "user", "content": prompt}]
+        response = completion(messages, tier="budget", max_tokens=100)
         
         # Parse response
-        response_text = response.text if hasattr(response, 'text') else str(response)
+        response_text = response
         
         # Parse response
         is_valid, confidence, reason = _parse_llm_response(response_text)
@@ -142,7 +139,7 @@ def _validate_batch(
         Dictionary of validation results
     """
     try:
-        from generate_glossary.utils.llm_simple import infer_text
+        from generate_glossary.llm import completion
         import json
     except ImportError:
         return {term: _create_error_result(term, "Dependencies not available") for term in terms}
@@ -159,14 +156,11 @@ def _validate_batch(
             prompt = BATCH_VALIDATION_PROMPT.format(terms_list=terms_list)
             
             # Get LLM response
-            response = infer_text(
-                provider=provider,
-                prompt=prompt,
-                max_tokens=500
-            )
+            messages = [{"role": "user", "content": prompt}]
+            response = completion(messages, tier="budget", max_tokens=500)
             
             # Parse batch response
-            response_text = response.text if hasattr(response, 'text') else str(response)
+            response_text = response
             batch_results = _parse_batch_response(response_text, batch)
             
             # Add to results

@@ -10,7 +10,8 @@ from typing import Optional, Any, Dict, List, Tuple
 # Package structure now properly configured with pyproject.toml
 
 try:
-    from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
+    from generate_glossary.llm import completion
+    from generate_glossary.config import get_llm_config
     from generate_glossary.utils.logger import get_logger
     # Import exceptions if needed
 except ImportError as e:
@@ -209,14 +210,10 @@ def generate_definition_for_term(term: str, context: str) -> Optional[str]:
     logger.debug(f"Generating definition for '{term}' with improved prompt...")
     
     try:
-        provider, model = get_random_llm_config()
-        result = infer_structured(
-            provider=provider,
-            prompt=prompt,
-            response_model=None,  # Just get text response
-            model=model
-        )
-        definition = result.text.strip() if result and result.text else None
+        config = get_llm_config()
+        messages = [{"role": "user", "content": prompt}]
+        result = completion(messages, tier="budget")  # Use budget tier for definition generation
+        definition = result.strip() if result else None
         
         if definition:
             # Ensure definition starts with "term is" 

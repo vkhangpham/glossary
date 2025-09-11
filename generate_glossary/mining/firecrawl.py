@@ -5,7 +5,7 @@ Replaces the complex HTML parsing pipeline with Firecrawl's AI-powered extractio
 
 # Import run_async_safely for handling event loop conflicts
 try:
-    from generate_glossary.utils.llm import run_async_safely
+    from generate_glossary.llm import run_async_safely
 except ImportError:
     # Fallback for standalone execution
     def run_async_safely(async_func, *args, **kwargs):

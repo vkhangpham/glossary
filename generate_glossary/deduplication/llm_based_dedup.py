@@ -6,11 +6,19 @@ for web-based edges) by comparing their web content to determine if they're dupl
 """
 
 import logging
-from typing import List, Optional, Dict, Any, Tuple
+from typing import List, Optional, Dict, Any, Tuple, Literal
 import networkx as nx
 import json
+from pydantic import BaseModel
 
-from generate_glossary.utils.llm import completion
+from generate_glossary.llm import completion, structured_completion
+
+
+class DedupDecision(BaseModel):
+    """Pydantic model for structured deduplication decisions."""
+    verdict: Literal["duplicate", "different"]
+    confidence: float
+    reason: str
 
 
 def add_llm_based_edges(
@@ -22,23 +30,27 @@ def add_llm_based_edges(
     max_url_overlap: int = 2,
     batch_size: int = 5,
     confidence_threshold: float = 0.8,
+    level: Optional[int] = None,
+    use_case: Optional[str] = None,
 ) -> nx.Graph:
     """
-    Add edges based on LLM analysis of shared web content.
+    Add edges based on LLM analysis of shared web content using DSPy framework.
 
     This method focuses on term pairs that have SOME URL overlap (not enough
-    for web-based edges) and uses LLM to analyze their web content to determine
-    if they're duplicates.
+    for web-based edges) and uses LLM with optimized prompts to analyze their 
+    web content to determine if they're duplicates.
 
     Args:
         graph: NetworkX graph to add edges to
         web_content: Web content dictionary for all terms
         terms: Optional list of terms to process (if None, process all)
-        provider: LLM provider to use ("gemini" or "openai")
+        provider: LLM provider to use ("gemini", "openai", or tier-based)
         min_url_overlap: Minimum URL overlap to consider (default: 1)
         max_url_overlap: Maximum URL overlap (below web-based threshold, default: 2)
         batch_size: Number of term pairs to evaluate per LLM call
         confidence_threshold: Minimum confidence for creating edge
+        level: Optional level for use_case mapping (enables optimized prompts)
+        use_case: Optional use_case override (e.g., 'deduplication', 'lv0_s1', 'lv0_s3', 'lv1_s1')
 
     Returns:
         Updated graph with LLM-based edges
@@ -59,7 +71,7 @@ def add_llm_based_edges(
     for i in range(0, len(candidate_pairs), batch_size):
         batch = candidate_pairs[i : i + batch_size]
 
-        results = evaluate_pairs_with_web_content(batch, web_content, provider)
+        results = evaluate_pairs_with_web_content(batch, web_content, provider, level, use_case)
 
         for (term1, term2), (is_duplicate, confidence, reason) in results.items():
             if is_duplicate and confidence >= confidence_threshold:
@@ -139,14 +151,18 @@ def evaluate_pairs_with_web_content(
     term_pairs: List[Tuple[str, str]],
     web_content: Dict[str, Any],
     provider: str = "gemini",
+    level: Optional[int] = None,
+    use_case: Optional[str] = None,
 ) -> Dict[Tuple[str, str], Tuple[bool, float, str]]:
     """
-    Evaluate term pairs using their web content.
+    Evaluate term pairs using their web content with DSPy-based LLM interface.
 
     Args:
         term_pairs: List of (term1, term2) tuples
         web_content: Web content dictionary
-        provider: LLM provider to use
+        provider: LLM provider to use ("gemini", "openai", or tier-based)
+        level: Optional level for use_case mapping (enables optimized prompts)
+        use_case: Optional use_case override (e.g., 'deduplication', 'lv0_s1', 'lv0_s3', 'lv1_s1')
 
     Returns:
         Dictionary mapping term pairs to (is_duplicate, confidence, reason)
@@ -159,14 +175,72 @@ def evaluate_pairs_with_web_content(
             content2 = extract_relevant_content(term2, web_content)
 
             prompt = build_content_comparison_prompt(term1, term2, content1, content2)
-
-            model = "gemini/gemini-pro" if provider == "gemini" else "openai/gpt-4"
+            
             messages = [{"role": "user", "content": prompt}]
-
-            response = completion(model=model, messages=messages, temperature=0.3)
-
-            is_duplicate, confidence, reason = parse_llm_response(response)
-            results[(term1, term2)] = (is_duplicate, confidence, reason)
+            
+            # Determine use_case - prefer explicit use_case over level-based default
+            use_case_final = use_case or (f"lv{level}_s1" if level is not None else "deduplication")
+            
+            try:
+                if provider == "gemini":
+                    obj = structured_completion(
+                        messages=messages,
+                        response_model=DedupDecision,
+                        model="gemini/gemini-pro",
+                        temperature=0.3,
+                        use_case=use_case_final
+                    )
+                elif provider == "openai":
+                    obj = structured_completion(
+                        messages=messages,
+                        response_model=DedupDecision,
+                        model="openai/gpt-4",
+                        temperature=0.3,
+                        use_case=use_case_final
+                    )
+                else:
+                    try:
+                        # Prefer per-use-case model resolution without forcing a tier
+                        obj = structured_completion(
+                            messages=messages,
+                            response_model=DedupDecision,
+                            use_case=use_case_final,
+                            temperature=0.3,
+                        )
+                    except Exception:
+                        logging.warning("Unknown provider '%s'. Falling back to gemini/gemini-pro.", provider)
+                        obj = structured_completion(
+                            messages=messages,
+                            response_model=DedupDecision,
+                            model="gemini/gemini-pro",
+                            temperature=0.3,
+                            use_case=use_case_final,
+                        )
+                
+                results[(term1, term2)] = (obj.verdict == "duplicate", float(obj.confidence), obj.reason)
+            except Exception as inner_e:
+                logging.error(f"Structured completion failed for {term1} vs {term2}: {inner_e}")
+                # Fallback to old parsing method if structured completion fails
+                try:
+                    if provider == "gemini":
+                        response = completion(
+                            messages=messages,
+                            model="gemini/gemini-pro",
+                            temperature=0.3,
+                            use_case=use_case_final
+                        )
+                    else:
+                        response = completion(
+                            messages=messages,
+                            model="gemini/gemini-pro",
+                            temperature=0.3,
+                            use_case=use_case_final
+                        )
+                    is_duplicate, confidence, reason = parse_llm_response(response)
+                    results[(term1, term2)] = (is_duplicate, confidence, reason)
+                except Exception as fallback_e:
+                    logging.error(f"Fallback completion also failed for {term1} vs {term2}: {fallback_e}")
+                    results[(term1, term2)] = (False, 0.0, "Error in evaluation")
 
         except Exception as e:
             logging.error(f"Error evaluating {term1} vs {term2}: {e}")

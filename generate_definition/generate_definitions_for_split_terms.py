@@ -10,7 +10,8 @@ from typing import Optional, Any, Dict, List, Tuple
 # Package structure now properly configured with pyproject.toml
 
 try:
-    from generate_glossary.utils.llm_simple import infer_structured, get_random_llm_config
+    from generate_glossary.llm import completion
+    from generate_glossary.config import get_llm_config
 except ImportError as e:
     print(f"Error importing 'generate_glossary' modules: {e}")
     print("Please ensure that 'generate_glossary' is in your PYTHONPATH or structured as a package accessible from the script's location.")
@@ -337,14 +338,10 @@ def generate_definition_for_split_term(term: str, context: str, metadata: Dict, 
     logger.debug(f"Generating definition for split term '{term}' with sense '{sense_tag}' (use_resource_context={use_resource_context})...")
     
     try:
-        provider, model = get_random_llm_config()
-        result = infer_structured(
-            provider=provider,
-            prompt=prompt,
-            response_model=None,
-            model=model
-        )
-        definition = result.text.strip() if result and result.text else None
+        config = get_llm_config()
+        messages = [{"role": "user", "content": prompt}]
+        result = completion(messages, tier="budget")  # Use budget tier for split term definition generation
+        definition = result.strip() if result else None
         
         if definition:
             # Ensure proper formatting
