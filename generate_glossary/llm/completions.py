@@ -65,66 +65,24 @@ def _create_optimized_predictor(
     """
     Create DSPy predictor from optimized prompts using signature-based approach.
     
-    Args:
-        system_prompt: Optimized system prompt
-        user_prompt: Optimized user prompt template
-        response_model: Optional Pydantic model for structured output
-        use_chain_of_thought: Use ChainOfThought predictor for better reasoning
-        signature_metadata: Optional DSPy signature metadata from optimization
-        
-    Returns:
-        `dspy.Predict`, `dspy.ChainOfThought`, or `dspy.TypedPredictor` (if available).
-        
-    Note:
-        When signature_metadata is provided, it's used directly instead of text inference.
-        `TypedPredictor` may not exist in some DSPy versions; the implementation falls back to `Predict` for structured output.
-        
-    Examples:
-        # Text-based predictor with chain of thought
-        predictor = _create_optimized_predictor(system_prompt, user_prompt)
-        
-        # Structured output predictor
-        predictor = _create_optimized_predictor(
-            system_prompt, user_prompt, response_model=MyModel
-        )
-        
-        # Simple prediction without chain of thought
-        predictor = _create_optimized_predictor(
-            system_prompt, user_prompt, use_chain_of_thought=False
-        )
+    When signature_metadata is provided, it's used directly instead of text inference.
+    TypedPredictor may not exist in some DSPy versions; falls back to Predict for structured output.
     """
     try:
-        # Prioritize signature metadata over text inference when available
         if signature_metadata:
-            logger.debug("Using signature metadata directly (skipping text inference)")
             signature_class = _create_dynamic_signature(signature_metadata, response_model)
-            logger.debug(f"Created dynamic signature from metadata: {signature_metadata.get('signature_str', 'N/A')}")
-            
-            # Use predictor type hint from metadata if available
             recommended_type = signature_metadata.get('predictor_type', 'Predict')
-            
         else:
-            logger.debug("No signature metadata available, using text inference")
-            # Fallback to text-based signature parsing
             signature_info = _parse_signature_from_prompt(system_prompt, user_prompt, signature_metadata)
-            logger.debug(f"Parsed signature info: {signature_info}")
-            
             signature_class = _create_dynamic_signature(signature_info, response_model)
-            logger.debug(f"Created dynamic signature: {signature_info['signature_str']}")
-            
-            recommended_type = 'Predict'  # Default when inferring from text
+            recommended_type = 'Predict'
         
-        # Choose appropriate predictor type
-        # Prioritize signature_metadata['predictor_type'] over response_model presence
         typed_predictor_cls = getattr(dspy, 'TypedPredictor', None)
         
-        # First, check if metadata explicitly specifies ChainOfThought
         if recommended_type == "ChainOfThought":
             if response_model is not None:
-                # Attempt CoT+typed pattern if supported, otherwise log and fall back
                 try:
                     if typed_predictor_cls is not None:
-                        # Try to use ChainOfThought with TypedPredictor features
                         predictor = dspy.ChainOfThought(signature_class)
                         logger.debug("Created ChainOfThought predictor with structured output (CoT+typed pattern)")
                     else:
@@ -134,25 +92,15 @@ def _create_optimized_predictor(
                     logger.warning(f"CoT+typed pattern failed: {e}. Falling back to regular ChainOfThought")
                     predictor = dspy.ChainOfThought(signature_class)
             else:
-                # Use ChainOfThought for better reasoning (from metadata recommendation)
                 predictor = dspy.ChainOfThought(signature_class)
-                logger.debug("Created ChainOfThought predictor (metadata recommendation)")
         elif response_model is not None and typed_predictor_cls is not None:
-            # Use TypedPredictor if available for structured output
             predictor = typed_predictor_cls(signature_class)
-            logger.debug("Created TypedPredictor for structured output")
         elif response_model is not None:
-            # Fallback to regular Predict with custom signature
             predictor = dspy.Predict(signature_class)
-            logger.debug("Created Predict predictor for structured output (TypedPredictor not available)")
         elif use_chain_of_thought:
-            # Use ChainOfThought for better reasoning (from parameter)
             predictor = dspy.ChainOfThought(signature_class)
-            logger.debug("Created ChainOfThought predictor (parameter enabled)")
         else:
-            # Use simple Predict predictor
             predictor = dspy.Predict(signature_class)
-            logger.debug("Created Predict predictor")
         
         return predictor
         
@@ -171,45 +119,18 @@ def _apply_optimized_signature(
     """
     Apply optimized prompts using DSPy signature-based approach.
     
-    This replaces the text-based _apply_optimized_prompts function with a DSPy-native
-    approach that creates proper signatures and predictors.
-    
-    Args:
-        messages: Original messages list
-        system_prompt: Optimized system prompt  
-        user_prompt: Optimized user prompt template
-        response_model: Optional Pydantic model for structured output
-        
-    Returns:
-        Tuple of (predictor, prepared_inputs) where:
-        - predictor: Configured DSPy predictor ready for execution
-        - prepared_inputs: Dictionary mapping signature field names to content
-        
-    Examples:
-        predictor, inputs = _apply_optimized_signature(
-            messages, system_prompt, user_prompt
-        )
-        result = predictor(**inputs)
-        
-        # For structured output
-        predictor, inputs = _apply_optimized_signature(
-            messages, system_prompt, user_prompt, MyModel
-        )
-        result = predictor(**inputs)
+    Returns tuple of (predictor, prepared_inputs) where predictor is configured DSPy predictor
+    ready for execution and prepared_inputs maps signature field names to content.
     """
     try:
-        # Parse signature information
         signature_info = _parse_signature_from_prompt(system_prompt, user_prompt, signature_metadata)
         
-        # Create optimized predictor
         predictor = _create_optimized_predictor(
             system_prompt, user_prompt, response_model, use_chain_of_thought=True, signature_metadata=signature_metadata
         )
         
-        # Extract and prepare input variables from messages
         prepared_inputs = _extract_content_for_signature(messages, signature_info)
         
-        logger.debug(f"Applied optimized signature with inputs: {list(prepared_inputs.keys())}")
         return predictor, prepared_inputs
         
     except Exception as e:

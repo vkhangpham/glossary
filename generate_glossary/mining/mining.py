@@ -146,17 +146,7 @@ def _search_concepts_batch(
     concepts: List[str], 
     max_urls_per_concept: int = 3
 ) -> Dict[str, List[Dict[str, Any]]]:
-    """
-    Search for multiple concepts using Firecrawl's search endpoint with v2 features.
-    
-    Args:
-        app: Firecrawl client instance
-        concepts: List of concepts to search for
-        max_urls_per_concept: Maximum URLs to collect per concept
-        
-    Returns:
-        Dictionary mapping concepts to their search results
-    """
+    """Search for multiple concepts using Firecrawl's search endpoint with v2 features."""
     with processing_context("search_concepts_batch") as correlation_id:
         log_processing_step(
             logger,
@@ -276,19 +266,7 @@ def _batch_scrape_urls(
     use_summary: bool = True,
     summary_prompt: Optional[str] = None
 ) -> Dict[str, Any]:
-    """
-    Use Firecrawl's batch scrape endpoint for 500% performance improvement.
-    
-    Args:
-        app: Firecrawl client instance
-        urls: List of URLs to scrape
-        max_concurrent: Maximum concurrent scrapes
-        max_age: Maximum age for cached content in milliseconds
-        use_summary: Whether to use summary format for optimized content
-        
-    Returns:
-        Dictionary with scraping results
-    """
+    """Use Firecrawl's batch scrape endpoint for 500% performance improvement."""
     with processing_context("batch_scrape_urls") as correlation_id:
         log_processing_step(
             logger,
@@ -474,18 +452,7 @@ def _extract_with_smart_prompts(
     concept: str,
     actions: Optional[List[Dict]] = None
 ) -> List[WebResource]:
-    """
-    Extract structured definitions using Firecrawl's extract endpoint with smart prompts.
-    
-    Args:
-        app: Firecrawl client instance
-        urls: List of URLs to extract from
-        concept: The concept to extract definitions for
-        actions: Optional actions for dynamic content interaction
-        
-    Returns:
-        List of WebResource objects with extracted definitions
-    """
+    """Extract structured definitions using Firecrawl's extract endpoint with smart prompts."""
     with processing_context(f"extract_smart_prompts_{concept}") as correlation_id:
         log_processing_step(
             logger,
@@ -658,16 +625,7 @@ def _extract_with_smart_prompts(
 
 
 def _process_summary_format(scraped_data: Dict[str, Any], use_summary: bool = True) -> Dict[str, Any]:
-    """
-    Process summary format results for optimized content extraction.
-    
-    Args:
-        scraped_data: Raw scraped data from batch scraping
-        use_summary: Whether summary format was used
-        
-    Returns:
-        Processed data optimized for concept extraction
-    """
+    """Process summary format results for optimized content extraction."""
     with processing_context("process_summary_format") as correlation_id:
         log_processing_step(
             logger,

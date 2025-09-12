@@ -174,29 +174,8 @@ def _create_dynamic_signature(
     """
     Create dynamic DSPy signature from signature metadata or parsed prompt information.
     
-    This function prioritizes direct signature metadata over inferred information,
-    supporting both optimization-time metadata and runtime text inference.
-    
-    Args:
-        signature_info: Signature metadata (either from optimization metadata or _parse_signature_from_prompt)
-        response_model: Optional Pydantic model for structured output
-        
-    Returns:
-        Dynamic DSPy signature class
-        
-    Examples:
-        # Direct metadata from optimization (preferred)
-        signature_metadata = {
-            'input_fields': {'text': 'Input text to process'},
-            'output_fields': {'response': 'Generated response'},
-            'instructions': 'Process the input text',
-            'signature_str': 'text -> response'
-        }
-        SignatureClass = _create_dynamic_signature(signature_metadata)
-        
-        # Parsed from text (fallback)
-        signature_info = _parse_signature_from_prompt(system_prompt, user_prompt)
-        SignatureClass = _create_dynamic_signature(signature_info, MyModel)
+    Prioritizes direct signature metadata over inferred information, supporting both
+    optimization-time metadata and runtime text inference.
     """
     # Create signature class dynamically
     class_name = "DynamicSignature"
@@ -265,17 +244,7 @@ def _extract_content_for_signature(
     """
     Extract content from messages for signature input fields.
     
-    Args:
-        messages: Original messages list
-        signature_info: Signature metadata from _parse_signature_from_prompt
-        
-    Returns:
-        Dictionary mapping field names to content values
-        
-    Examples:
-        messages = [{'role': 'user', 'content': 'Analyze this text'}]
-        signature_info = {'input_fields': {'text': 'Input text'}}
-        # Returns: {'text': 'Analyze this text'}
+    Returns dictionary mapping field names to content values.
     """
     field_mapping = {}
     input_fields = signature_info.get('input_fields', {})

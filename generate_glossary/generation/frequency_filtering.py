@@ -28,31 +28,14 @@ from generate_glossary.config import get_level_config
 
 
 def normalize_threshold_percent(threshold: float) -> float:
-    """
-    Normalize threshold percentage to 0-1 range consistently.
-    
-    Args:
-        threshold: Threshold value that may be in 0-1 range or 1-100 range
-        
-    Returns:
-        float: Normalized threshold in 0-1 range
-    """
+    """Normalize threshold percentage to 0-1 range consistently."""
     if threshold > 1:
         return threshold / 100.0
     return threshold
 
 
 def is_valid_concept(concept: str, processing_config) -> bool:
-    """
-    Check if a concept is valid based on basic criteria.
-    
-    Args:
-        concept: The concept string to validate
-        processing_config: ProcessingConfig instance with validation settings
-        
-    Returns:
-        Boolean indicating if the concept is valid
-    """
+    """Check if a concept is valid based on basic criteria."""
     # Check length criteria
     if not concept or len(concept) < processing_config.min_concept_length or len(concept) > processing_config.max_concept_length:
         return False
@@ -72,16 +55,7 @@ def is_valid_concept(concept: str, processing_config) -> bool:
 
 
 def load_concept_source_mapping(input_file: str, processing_config) -> tuple[List[str], Dict[str, List[str]]]:
-    """
-    Load concepts and create source mapping.
-    
-    Args:
-        input_file: Path to input file
-        processing_config: ProcessingConfig instance with validation settings
-        
-    Returns:
-        Tuple of (all_concepts, source_concept_mapping)
-    """
+    """Load concepts and create source mapping."""
     all_concepts = []
     source_concept_mapping = defaultdict(list)
     
@@ -110,18 +84,7 @@ def load_concept_source_mapping(input_file: str, processing_config) -> tuple[Lis
 def count_source_frequencies(source_concept_mapping: Dict[str, List[str]]) -> tuple[
     Dict[str, int], Dict[str, str], Dict[str, Set[str]]
 ]:
-    """
-    Count how many sources each concept appears in.
-    
-    Args:
-        source_concept_mapping: Dictionary mapping sources to their concepts
-        
-    Returns:
-        Tuple containing:
-        - Dictionary mapping concepts to their source frequency
-        - Dictionary mapping normalized forms to original forms  
-        - Dictionary mapping concepts to the set of sources they appear in
-    """
+    """Count how many sources each concept appears in."""
     concept_source_count = Counter()
     normalized_to_original = {}
     concept_sources = defaultdict(set)
@@ -596,20 +559,7 @@ def filter_by_frequency(
     min_frequency: Optional[int] = None,
     threshold_percent: Optional[float] = None
 ) -> Dict[str, Any]:
-    """
-    Generic frequency filtering for any level.
-    
-    Args:
-        input_file: Path to file containing concepts with source mapping
-        level: Generation level (0, 1, 2, or 3)
-        output_file: Path to save filtered concepts
-        metadata_file: Path to save processing metadata
-        min_frequency: Optional minimum absolute number of sources required
-        threshold_percent: Optional override percentage for filtering
-        
-    Returns:
-        Dictionary containing processing results and metadata
-    """
+    """Generic frequency filtering for any level."""
     logger = get_logger(f"lv{level}.s2")
     config = get_level_config(level)
     

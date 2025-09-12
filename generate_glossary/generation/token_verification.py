@@ -182,18 +182,7 @@ def separate_terms_by_length(terms: List[str]) -> tuple[List[str], List[str]]:
 def verify_single_term(
     term: str, level: int, system_prompt: str, provider: Optional[str] = None
 ) -> bool:
-    """
-    Verify a single term using LLM.
-
-    Args:
-        term: Term to verify
-        level: Generation level
-        system_prompt: System prompt for verification
-        provider: Optional LLM provider
-
-    Returns:
-        Boolean indicating if term is valid
-    """
+    """Verify a single term using LLM."""
     logger = get_logger(f"lv{level}.s3")
     config = get_level_config(level)
 
@@ -331,18 +320,7 @@ Answer with only "YES" or "NO" followed by a brief justification."""
 def verify_terms_batch(
     terms: List[str], level: int, system_prompt: str, provider: Optional[str] = None
 ) -> List[str]:
-    """
-    Verify a batch of terms using LLM with checkpointing.
-
-    Args:
-        terms: List of terms to verify
-        level: Generation level
-        system_prompt: System prompt for verification
-        provider: Optional LLM provider
-
-    Returns:
-        List of verified (valid) terms
-    """
+    """Verify a batch of terms using LLM with checkpointing."""
     with processing_context(f"terms_verification_lv{level}") as correlation_id:
         logger = get_logger(f"lv{level}.s3")
 
@@ -473,19 +451,7 @@ def verify_single_tokens(
     metadata_file: str,
     provider: Optional[str] = None,
 ) -> Dict[str, Any]:
-    """
-    Generic single token verification for any level.
-
-    Args:
-        input_file: Path to file containing terms to verify
-        level: Generation level (0, 1, 2, or 3)
-        output_file: Path to save verified terms
-        metadata_file: Path to save processing metadata
-        provider: Optional LLM provider override
-
-    Returns:
-        Dictionary containing processing results and metadata
-    """
+    """Generic single token verification for any level."""
     logger = get_logger(f"lv{level}.s3")
     config = get_level_config(level)
 

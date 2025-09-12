@@ -21,7 +21,6 @@ logger = get_logger("mining.cli")
 
 
 def setup_argument_parser() -> argparse.ArgumentParser:
-    """Setup comprehensive argument parser for the mining CLI."""
     parser = argparse.ArgumentParser(
         description="Mine web content for academic concepts using Firecrawl v2.0",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -130,7 +129,6 @@ Firecrawl v2.0 Features:
 
 
 def load_terms_from_file(file_path: str) -> List[str]:
-    """Load and validate terms from input file."""
     try:
         path = Path(file_path)
         if not path.exists():
@@ -152,7 +150,6 @@ def load_terms_from_file(file_path: str) -> List[str]:
 
 
 def validate_firecrawl_api_key() -> bool:
-    """Validate Firecrawl API key is available."""
     api_key = os.getenv("FIRECRAWL_API_KEY")
     if not api_key:
         print("\n⚠️  FIRECRAWL_API_KEY not set in environment")
@@ -166,7 +163,6 @@ def validate_firecrawl_api_key() -> bool:
 
 
 def configure_logging(args) -> None:
-    """Configure logging based on CLI arguments."""
     if args.quiet:
         level_name = "ERROR"
     elif args.verbose:
@@ -190,7 +186,6 @@ def configure_logging(args) -> None:
 
 
 def main() -> int:
-    """Main CLI entry point."""
     parser = setup_argument_parser()
     args = parser.parse_args()
     

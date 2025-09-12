@@ -69,15 +69,7 @@ def handle_dry_run(dry_run: bool, func: Callable, *args, **kwargs):
 
 
 def validate_input_file(file_path: str) -> bool:
-    """
-    Validate that input file exists.
-    
-    Args:
-        file_path: Path to the input file
-        
-    Returns:
-        True if file exists, False otherwise (with logged error)
-    """
+    """Validate that input file exists."""
     if not Path(file_path).exists():
         logger.error(f"Input file not found: {file_path}")
         return False
@@ -85,16 +77,7 @@ def validate_input_file(file_path: str) -> bool:
 
 
 def get_step_file_paths(level: int, step: int) -> tuple[str, str, str]:
-    """
-    Get the input, output, and metadata file paths for a given level and step.
-    
-    Args:
-        level: Level number (0-3)
-        step: Step number (1-3)
-        
-    Returns:
-        Tuple of (input_path, output_path, metadata_path)
-    """
+    """Get the input, output, and metadata file paths for a given level and step."""
     from ..config import get_level_config
     
     level_config = get_level_config(level)
@@ -106,12 +89,6 @@ def get_step_file_paths(level: int, step: int) -> tuple[str, str, str]:
 
 
 def create_s1_wrapper(level: int):
-    """
-    Create wrapper for step 1 (concept extraction).
-    
-    Returns:
-        Tuple of (main_func, test_func) callables
-    """
     from .concept_extraction import extract_concepts_llm
     
     def main(provider: str = "openai", **kwargs):
@@ -153,12 +130,6 @@ def create_s1_wrapper(level: int):
 
 
 def create_s2_wrapper(level: int):
-    """
-    Create wrapper for step 2 (frequency filtering).
-    
-    Returns:
-        Tuple of (main_func, test_func) callables
-    """
     from .frequency_filtering import filter_by_frequency
     
     def main(**kwargs):
@@ -198,12 +169,6 @@ def create_s2_wrapper(level: int):
 
 
 def create_s3_wrapper(level: int):
-    """
-    Create wrapper for step 3 (token verification).
-    
-    Returns:
-        Tuple of (main_func, test_func) callables
-    """
     from .token_verification import verify_single_tokens
     
     def main(provider: str = None, **kwargs):
@@ -258,15 +223,6 @@ def is_success(result) -> bool:
 
 
 def create_s0_wrapper(level: int):
-    """
-    Create wrapper for step 0 (data extraction).
-    
-    For Level 0: Uses Excel parsing (not web extraction)
-    For other levels: Uses web extraction
-    
-    Returns:
-        Tuple of (main_func, test_func) callables
-    """
     def main(input_file: Optional[str] = None, **kwargs):
         """Main function for step 0."""
         if level == 0:
@@ -355,19 +311,7 @@ def create_s0_wrapper(level: int):
 
 
 def discover_step_function(level: int, step: int) -> Tuple[Callable, Callable]:
-    """
-    Dynamically discover and create appropriate wrapper function for any level/step combination.
-    
-    Args:
-        level: Generation level (0-3)
-        step: Step number (0-3)
-        
-    Returns:
-        Tuple of (main_func, test_func) callables
-        
-    Raises:
-        ValueError: If level or step is invalid
-    """
+    """Dynamically discover and create appropriate wrapper function for any level/step combination."""
     if level not in range(4):
         raise ValueError(f"Invalid level: {level}. Must be 0, 1, 2, or 3")
     if step not in range(4):
@@ -385,18 +329,7 @@ def discover_step_function(level: int, step: int) -> Tuple[Callable, Callable]:
 
 
 def validate_step_dependencies(level: int, step: int, input_file: Optional[str] = None, create_dirs: bool = False) -> Dict[str, Any]:
-    """
-    Validate that all dependencies for a step are met.
-    
-    Args:
-        level: Generation level (0-3)
-        step: Step number (0-3)
-        input_file: Optional override for input file (used for Step 0)
-        create_dirs: Whether to create output directories (default: False for read-only validation)
-        
-    Returns:
-        Dictionary with validation results and details
-    """
+    """Validate that all dependencies for a step are met."""
     from ..config import get_level_config
     
     try:
@@ -464,16 +397,7 @@ def validate_step_dependencies(level: int, step: int, input_file: Optional[str] 
 
 
 def get_step_parameters(level: int, step: int) -> Dict[str, Any]:
-    """
-    Automatically determine what parameters a step needs.
-    
-    Args:
-        level: Generation level (0-3)
-        step: Step number (0-3)
-        
-    Returns:
-        Dictionary of parameter requirements and defaults
-    """
+    """Automatically determine what parameters a step needs."""
     base_params = {
         'level': level,
         'step': step,
@@ -490,16 +414,7 @@ def get_step_parameters(level: int, step: int) -> Dict[str, Any]:
 
 
 def create_generic_step_runner(level: int, step: int) -> Callable:
-    """
-    Create a generic step runner that works for all levels and steps.
-    
-    Args:
-        level: Generation level (0-3)
-        step: Step number (0-3)
-        
-    Returns:
-        Generic step runner function
-    """
+    """Create a generic step runner that works for all levels and steps."""
     def run_step(**kwargs):
         """Generic step runner that handles any level/step combination."""
         # Validate dependencies first (with directory creation enabled)

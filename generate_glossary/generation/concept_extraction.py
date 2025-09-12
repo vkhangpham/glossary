@@ -451,19 +451,7 @@ def extract_concepts_llm(
     metadata_file: str,
     provider: Optional[str] = None,
 ) -> Dict[str, Any]:
-    """
-    Generic LLM concept extraction for any level.
-
-    Args:
-        input_file: Path to file containing input data
-        level: Generation level (0, 1, 2, or 3)
-        output_file: Path to save extracted concepts
-        metadata_file: Path to save processing metadata
-        provider: Optional LLM provider override
-
-    Returns:
-        Dictionary containing processing results and metadata
-    """
+    """Generic LLM concept extraction for any level."""
     logger = get_logger(f"lv{level}.s1")
     config = get_level_config(level)
 

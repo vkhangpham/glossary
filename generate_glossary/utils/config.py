@@ -18,12 +18,6 @@ class Config:
     """Central configuration management."""
     
     def __init__(self, config_file: Optional[Path] = None):
-        """
-        Initialize configuration.
-        
-        Args:
-            config_file: Optional path to configuration file
-        """
         self.config_file = config_file or self._find_config_file()
         self.config = self._load_config()
         
@@ -135,16 +129,7 @@ class Config:
         return env_config
         
     def get(self, key: str, default: Any = None) -> Any:
-        """
-        Get configuration value.
-        
-        Args:
-            key: Configuration key (supports dot notation for nested keys)
-            default: Default value if key not found
-            
-        Returns:
-            Configuration value
-        """
+        """Get configuration value with dot notation support."""
         keys = key.split('.')
         value = self.config
         
@@ -157,13 +142,7 @@ class Config:
         return value
         
     def set(self, key: str, value: Any) -> None:
-        """
-        Set configuration value.
-        
-        Args:
-            key: Configuration key (supports dot notation)
-            value: Value to set
-        """
+        """Set configuration value with dot notation support."""
         keys = key.split('.')
         config = self.config
         
@@ -175,27 +154,14 @@ class Config:
         config[keys[-1]] = value
         
     def get_level_config(self, level: int) -> Dict[str, Any]:
-        """
-        Get configuration for a specific level.
-        
-        Args:
-            level: Hierarchy level (0, 1, 2, 3)
-            
-        Returns:
-            Level-specific configuration
-        """
+        """Get configuration for a specific hierarchy level."""
         base_config = self.config.copy()
         level_config = self.get(f"levels.{level}", {})
         base_config.update(level_config)
         return base_config
         
     def save(self, path: Optional[Path] = None) -> None:
-        """
-        Save configuration to file.
-        
-        Args:
-            path: Optional path to save to (uses default if not provided)
-        """
+        """Save configuration to file."""
         save_path = path or self.config_file
         if not save_path:
             save_path = Path.cwd() / "config.json"
@@ -219,15 +185,7 @@ def get_config() -> Config:
     return _config
 
 def load_config(config_file: Optional[Path] = None) -> Config:
-    """
-    Load configuration from file.
-    
-    Args:
-        config_file: Optional path to configuration file
-        
-    Returns:
-        Configuration instance
-    """
+    """Load configuration from file."""
     global _config
     _config = Config(config_file)
     return _config
