@@ -281,10 +281,11 @@ The generation pipeline uses several shared utilities:
 
 ### Web Search Utilities
 
-- **Search** (`utils/web_search/search.py`): Handles web search operations
-- **HTML Fetch** (`utils/web_search/html_fetch.py`): Fetches and caches web content
-- **List Extractor** (`utils/web_search/list_extractor.py`): Extracts lists from HTML content
-- **Filtering** (`utils/web_search/filtering.py`): Filters and validates extracted lists
+- **Consolidated Mining Module** (`generate_glossary/mining/`): Unified web content extraction (new architecture)
+  - `mining.py`: Core mining functionality with Firecrawl v2.0 integration
+  - `cli.py`: Dedicated CLI interface for mining operations
+  - Replaces old multi-file structure with single source of truth
+- **Web Extraction** (`generate_glossary/generation/web_extraction_firecrawl.py`): Generation-specific extraction utilities
 
 ### LLM Integration
 

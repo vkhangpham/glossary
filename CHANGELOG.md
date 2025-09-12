@@ -21,17 +21,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Anti-patterns and validation approaches
 
 ### Changed
+- **Mining Module Architecture Consolidation** (cd3799d):
+  - Replaced old `firecrawl.py` (1,053 lines) and `runner.py` (240 lines) with unified `mining.py` (1,142 lines)
+  - Added dedicated CLI interface (`cli.py`) for mining operations with 267 lines of focused functionality
+  - Restructured `mining/__init__.py` with cleaner module exports and backward compatibility aliases
+  - Updated `web_extraction_firecrawl.py` to use consolidated mining architecture
+  - Removed deprecated `web_miner_cli.py` (134 lines) and Tavily documentation
+  - Enhanced LLM helpers with better error handling and type hints
+  - **Net result**: Reduced code duplication while maintaining all functionality
+
 - **Improved Generation Package Documentation**:
   - Enhanced prompt optimization integration details in module docs
   - Added automatic prompt loading documentation for lv0_s1 and lv0_s3
   - Updated best practices with specific GEPA configuration
   - Clarified optimization workflow and fallback behavior
 
+### Removed
+- **Deprecated Mining Components**:
+  - `generate_glossary/mining/firecrawl.py` (1,053 lines) - Complex multi-provider implementation
+  - `generate_glossary/mining/runner.py` (240 lines) - Separate runner logic
+  - `generate_glossary/web_miner_cli.py` (134 lines) - Old CLI interface
+  - `generate_glossary/utils/README_TAVILY.md` (94 lines) - Outdated Tavily documentation
+
 ### Fixed
 - **Level 1 Step 1 Provider Handling**:
   - Fixed provider argument not being passed correctly
   - Resolved NameError for undefined logger in lv1_s1
   - Ensured consistent provider configuration across all levels
+
+### Technical Improvements
+- **Mining Module Benefits**:
+  - Single source of truth for web mining functionality
+  - Cleaner separation between mining logic and CLI interfaces
+  - Unified API with comprehensive Firecrawl v2.0 feature support
+  - Simplified import structure with backward compatibility
+  - Reduced maintenance overhead with consolidated codebase
 
 ### Style
 - **Applied Black Formatting**:

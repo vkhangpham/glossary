@@ -167,8 +167,8 @@ The project now supports Firecrawl SDK for web content mining, providing:
 export FIRECRAWL_API_KEY='fc-your-key'
 uv run mine-web -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
 
-# Alternative legacy command (same functionality)
-uv run glossary-web-miner -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
+# Using the consolidated mining module (new in cd3799d)
+python -m generate_glossary.mining.cli -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
 ```
 
 ## Usage
@@ -275,4 +275,11 @@ For detailed documentation on specific components:
 
 ## Web Mining
 
-Web mining uses Firecrawl exclusively. Tavily is currently not supported via the CLI.
+Web mining uses the consolidated `generate_glossary.mining` module with Firecrawl exclusively. The new architecture provides:
+- Unified `mining.py` core module (1,142 lines) replacing old multi-file structure
+- Dedicated CLI interface (`cli.py`) for streamlined operations
+- Backward compatibility with existing commands
+- Enhanced error handling and type hints
+- Single source of truth for all web mining functionality
+
+Tavily is currently not supported via the CLI.
