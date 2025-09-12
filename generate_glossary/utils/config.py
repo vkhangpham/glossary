@@ -81,7 +81,6 @@ class Config:
             "max_tokens": 1000,
             
             # Web mining settings
-            "use_firecrawl": True,
             "max_urls_per_concept": 5,
             "search_timeout": 30,
             
@@ -123,8 +122,7 @@ class Config:
             "GLOSSARY_DATA_DIR": ("data_dir", str),
             "GLOSSARY_OUTPUT_DIR": ("output_dir", str),
             "GLOSSARY_DEFAULT_PROVIDER": ("default_provider", str),
-            "GLOSSARY_TEMPERATURE": ("temperature", float),
-            "GLOSSARY_USE_FIRECRAWL": ("use_firecrawl", lambda x: x.lower() == 'true')
+            "GLOSSARY_TEMPERATURE": ("temperature", float)
         }
         
         for env_var, (config_key, converter) in env_mappings.items():

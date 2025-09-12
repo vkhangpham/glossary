@@ -103,7 +103,10 @@ glossary-lv3-s2 = "generate_glossary.generation.lv3.lv3_s2_filter_by_freq:main"
 glossary-lv3-s3 = "generate_glossary.generation.lv3.lv3_s3_verify_tokens:main"
 
 # Post-processing commands
-glossary-web-miner = "generate_glossary.web_miner_cli:main"
+# Modern web mining command with Firecrawl v2.0 (primary)
+mine-web = "generate_glossary.mining.cli:main"
+# Legacy command name (backward compatibility)
+glossary-web-miner = "generate_glossary.mining.cli:main"
 glossary-validator = "generate_glossary.validation.main:main"
 glossary-deduplicator = "generate_glossary.deduplication.main:main"
 
@@ -115,11 +118,6 @@ glossary-hierarchy-viz = "hierarchy.hierarchy_visualizer:main"
 # Definition generation commands
 glossary-generate-definitions = "generate_definition.generate_definitions:main"
 
-# Checkpoint management commands
-glossary-checkpoint = "generate_glossary.utils.checkpoint_cli:main"
-
-# Security management commands
-glossary-security = "generate_glossary.utils.security_cli:main"
 
 # Disambiguation commands
 glossary-disambiguate = "generate_glossary.disambiguation.main:main"

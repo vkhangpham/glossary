@@ -35,7 +35,7 @@ source .venv/bin/activate  # Linux/macOS
 # Option 1: Direct uv run (recommended)
 uv run glossary-lv0-s0  # Runs Level 0 Step 0
 uv run glossary-lv1-s1  # Runs Level 1 Step 1
-uv run glossary-web-miner --help  # Shows help for web mining
+uv run mine-web --help  # Shows help for web mining
 
 # Option 2: Traditional python -m (still works)
 uv run python -m generate_glossary.generation.lv0.lv0_s0_get_college_names
@@ -116,7 +116,8 @@ All generation pipeline commands are now available as console scripts:
 - `glossary-lv3-s3` - Verify single tokens
 
 ### Post-Processing
-- `glossary-web-miner` - Mine web content for concepts
+- `mine-web` - Mine web content for concepts (primary command)
+- `glossary-web-miner` - Mine web content for concepts (legacy alias)
 - `glossary-validator` - Validate concept relevance
 - `glossary-deduplicator` - Remove duplicate concepts
 

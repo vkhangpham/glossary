@@ -161,14 +161,13 @@ The project now supports Firecrawl SDK for web content mining, providing:
 2. Add to environment: `export FIRECRAWL_API_KEY='fc-your-key'`
 3. Test integration: `python test_firecrawl.py`
 
-### Web Mining Options:
+### Web Mining:
 ```bash
-# Use Firecrawl SDK (recommended - 4x faster)
-export USE_FIRECRAWL=true
-uv run glossary-web-miner -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
+# Modern web mining with Firecrawl (recommended)
+export FIRECRAWL_API_KEY='fc-your-key'
+uv run mine-web -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
 
-# Use original approach (slower but no API key needed)
-export USE_FIRECRAWL=false
+# Alternative legacy command (same functionality)
 uv run glossary-web-miner -i data/lv0/raw/lv0_s3_verified_concepts.txt -o data/lv0/lv0_resources
 ```
 
@@ -274,18 +273,6 @@ For detailed documentation on specific components:
 - [Changelog](CHANGELOG.md)
 
 
-## Tavily Search Integration
+## Web Mining
 
-The web content mining tool now supports using Tavily as an alternative search provider. To use this functionality:
-
-1. Install the required dependency: `pip install tavily-python>=0.1.4`
-2. Get a Tavily API key from [Tavily's website](https://tavily.com)
-3. Set the API key as an environment variable: `export TAVILY_API_KEY=tvly-YOUR_API_KEY` or add it to your `.env` file
-
-To use Tavily for mining content:
-
-```bash
-python -m generate_glossary.web_miner_cli -i input_terms.txt -o output_file --search-provider tavily
-```
-
-See the detailed documentation in `generate_glossary/utils/README_TAVILY.md` for more information.
+Web mining uses Firecrawl exclusively. Tavily is currently not supported via the CLI.

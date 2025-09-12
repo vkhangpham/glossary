@@ -526,7 +526,7 @@ def is_async_context() -> bool:
         return False
 
 
-def run_async_safely(async_func, *args, **kwargs):
+def run_async_safely(async_func, *args, timeout_seconds=None, **kwargs):
     """
     Safely run an async function from sync context without event loop conflicts.
     
@@ -537,22 +537,45 @@ def run_async_safely(async_func, *args, **kwargs):
     Args:
         async_func: The async function to run
         *args: Positional arguments for the async function
+        timeout_seconds: Optional timeout in seconds for the operation
         **kwargs: Keyword arguments for the async function
         
     Returns:
         The result of the async function
         
+    Raises:
+        asyncio.TimeoutError: If timeout_seconds is specified and operation exceeds timeout
+        
     Examples:
         # From sync context without event loop
         result = run_async_safely(my_async_func, arg1, arg2, kwarg1=value1)
         
+        # With timeout
+        result = run_async_safely(my_async_func, arg1, arg2, timeout_seconds=300)
+        
         # From sync context with existing event loop (e.g., Jupyter)
         result = run_async_safely(my_async_func, arg1, arg2)
     """
+    import concurrent.futures
+    
+    async def _run_with_timeout():
+        """Wrapper to apply timeout if specified."""
+        if timeout_seconds is not None:
+            return await asyncio.wait_for(async_func(*args, **kwargs), timeout=timeout_seconds)
+        else:
+            return await async_func(*args, **kwargs)
+    
     if is_async_context():
         # We're in an async context, use singleton thread pool to isolate
-        future = _singleton_executor.submit(asyncio.run, async_func(*args, **kwargs))
-        return future.result()
+        future = _singleton_executor.submit(asyncio.run, _run_with_timeout())
+        try:
+            if timeout_seconds is not None:
+                return future.result(timeout=timeout_seconds + 5)  # Add buffer for thread overhead
+            else:
+                return future.result()
+        except concurrent.futures.TimeoutError:
+            # Convert to asyncio.TimeoutError for consistency
+            raise asyncio.TimeoutError(f"Operation timed out after {timeout_seconds} seconds")
     else:
         # No event loop running, safe to use asyncio.run directly
-        return asyncio.run(async_func(*args, **kwargs))
+        return asyncio.run(_run_with_timeout())

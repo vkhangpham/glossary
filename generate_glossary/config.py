@@ -345,9 +345,9 @@ class WebExtractionConfig:
 
 @dataclass
 class MiningConfig:
-    """Configuration for mining operations."""
+    """Configuration for mining operations with Firecrawl v2.0 features."""
     
-    # Processing constants (from mining/firecrawl.py)
+    # Processing constants (updated for new mining API)
     batch_size: int = 25
     max_concurrent_operations: int = 5
     max_urls_per_concept: int = 3
@@ -356,6 +356,11 @@ class MiningConfig:
     request_timeout: int = 30
     retry_attempts: int = 3
     retry_delay: float = 1.0
+    
+    # Firecrawl v2.0 specific settings
+    max_age: int = 172800000  # 2 days cache in milliseconds
+    use_summary: bool = True  # Enable summary format by default
+    use_batch_scrape: bool = True  # Enable batch scraping by default
 
 
 @dataclass 

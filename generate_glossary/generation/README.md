@@ -522,9 +522,8 @@ GEMINI_API_KEY=your-gemini-key
 GLOSSARY_LLM_PROVIDER=openai  # or gemini, anthropic
 GLOSSARY_LLM_MODEL=gpt-4      # specific model
 
-# Web Search (if using Firecrawl)
+# Web Mining with Firecrawl
 FIRECRAWL_API_KEY=fc-your-key
-USE_FIRECRAWL=true  # Enable Firecrawl SDK
 ```
 
 ## Testing Support
