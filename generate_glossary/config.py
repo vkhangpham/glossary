@@ -39,7 +39,7 @@ DATA_DIR = BASE_DIR / "data"
 
 @dataclass
 class StepConfig:
-    """Configuration for generation steps (integrated from level_config.py)."""
+    """Configuration for generation steps (centralized configuration system)."""
     batch_size: int
     agreement_threshold: int
     consensus_attempts: int  # Number of consensus responses to request
@@ -179,7 +179,7 @@ class LevelConfig:
     level: int
     name: str  # Human-readable name
     
-    # Step configuration (integrated from level_config.py)
+    # Step configuration (centralized configuration system)
     step_config: Optional[StepConfig] = None
     
     # File paths - use Path objects for better path handling
@@ -264,7 +264,7 @@ class ProcessingConfig:
     # LLM settings (from lv0_s1_extract_concepts.py and others)
     llm_attempts: int = 3
     concept_agreement_threshold: int = 2
-    temperature: float = 1.0  # DEPRECATED: Now an alias for LLMConfig.temperature (single source of truth)
+    temperature: float = 1.0  # Alias for LLMConfig.temperature (maintained for compatibility)
     cache_ttl: int = 3600  # Cache consensus results for 1 hour
     
     # Batch processing
@@ -393,7 +393,7 @@ class GlossaryConfig:
     """
     
     def __init__(self):
-        # Initialize step configs (from level_config.py)
+        # Initialize step configs (centralized configuration)
         self._init_step_configs()
         
         # Level configurations with integrated step configs
@@ -426,9 +426,9 @@ class GlossaryConfig:
         self._apply_environment_overrides()
     
     def _init_step_configs(self):
-        """Initialize step configurations for each level (from level_config.py)."""
+        """Initialize step configurations for each level (centralized configuration system)."""
         self.step_configs = {
-            # Level 0 configuration (new - was missing from level_config.py)
+            # Level 0 configuration
             0: StepConfig(
                 batch_size=20,
                 agreement_threshold=2,
@@ -443,7 +443,7 @@ class GlossaryConfig:
                 processing_description="College/School extraction from institutional data",
                 context_description="academic colleges and schools"
             ),
-            # Level 1 configuration (from level_config.py)
+            # Level 1 configuration
             1: StepConfig(
                 batch_size=15,
                 agreement_threshold=2,
@@ -459,7 +459,7 @@ class GlossaryConfig:
                 processing_description="Department extraction from college contexts",
                 context_description="academic departments and fields of study"
             ),
-            # Level 2 configuration (from level_config.py)
+            # Level 2 configuration
             2: StepConfig(
                 batch_size=5,
                 agreement_threshold=3,
@@ -476,7 +476,7 @@ class GlossaryConfig:
                 processing_description="Research area extraction from department contexts",
                 context_description="research areas and academic specializations"
             ),
-            # Level 3 configuration (from level_config.py)
+            # Level 3 configuration
             3: StepConfig(
                 batch_size=5,
                 agreement_threshold=3,
@@ -629,8 +629,8 @@ class GlossaryConfig:
         # Apply legacy environment overrides for backward compatibility
         # Precedence: base config -> level overrides -> new env vars (via _apply_environment_overrides) -> legacy env vars
         config = EnvConfig.apply_env_overrides(config)
-        # Temperature is now sourced from LLMConfig as single source of truth
-        # ProcessingConfig.temperature is deprecated and acts as an alias
+        # Temperature is sourced from LLMConfig as single source of truth
+        # ProcessingConfig.temperature acts as an alias for compatibility
         config.temperature = self.llm.temperature
         return config
     
@@ -643,7 +643,7 @@ class GlossaryConfig:
     def get_step_config(self, level: int) -> Optional[StepConfig]:
         """Get step configuration for a level.
         
-        This provides backward compatibility with level_config.py.
+        This provides access to step-specific configuration.
         """
         return self.step_configs.get(level)
     
@@ -723,7 +723,7 @@ def get_processing_config(level: int) -> ProcessingConfig:
 def get_step_config(level: int) -> Optional[StepConfig]:
     """Get step configuration for a specific level.
     
-    Provides backward compatibility with level_config.py.
+    Get step configuration for a specific level.
     """
     return config.get_step_config(level)
 

@@ -4,7 +4,7 @@ import argparse
 import logging
 from pathlib import Path
 
-from generate_glossary.utils.metadata_collector import collect_metadata, collect_resources, find_step_file, find_final_file, find_step_metadata
+from generate_glossary.metadata import collect_metadata, collect_resources, find_step_file, find_final_file, find_step_metadata
 
 # Setup logging
 logging.basicConfig(

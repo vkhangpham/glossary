@@ -2,7 +2,7 @@
 Shared token verification functionality for all levels.
 
 This module provides the generic s3 (single token verification) logic that can be
-configured for different levels through the level_config module.
+configured for different levels through the centralized config module.
 """
 
 import os
@@ -27,7 +27,7 @@ from generate_glossary.utils.error_handler import (
 )
 from generate_glossary.utils.logger import get_logger, log_processing_step
 from generate_glossary.config import ensure_directories
-from generate_glossary.utils import completion
+from generate_glossary.llm import completion
 from generate_glossary.deduplication.utils import normalize_text
 
 from generate_glossary.config import get_level_config

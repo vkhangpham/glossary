@@ -2,7 +2,7 @@
 Shared frequency filtering functionality for all levels.
 
 This module provides the generic s2 (frequency-based filtering) logic that can be 
-configured for different levels through the level_config module.
+configured for different levels through the centralized config module.
 """
 
 import os

@@ -97,7 +97,7 @@ def build_hierarchy(output_file: str = None,
         print("         This usually means that the metadata collector has not been run with promotion enabled.")
         print("         The hierarchy will be built using the original data files, which may not have")
         print("         the proper term promotion for consistent parent-child relationships.\n")
-        print("         Consider running: python -m generate_glossary.metadata_collector 3 -v\n")
+        print("         Consider running: python -m generate_glossary.metadata_collector_cli 3 -v\n")
     else:
         print(f"Building hierarchy using data from data/final directory")
     
