@@ -7,9 +7,8 @@ without requiring external data sources.
 
 import re
 import os
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Set
 from concurrent.futures import ThreadPoolExecutor
-from functools import lru_cache
 from tqdm import tqdm
 
 from .utils import clean_text, normalize_term
@@ -26,28 +25,56 @@ INVALID_PATTERNS_COMPILED = [
     re.compile(r'^-+$'),  # Only hyphens
 ]
 
-# Common non-academic terms to filter out (configurable)
+# Common non-academic terms to filter out (static default)
 DEFAULT_BLACKLIST_TERMS = {
     'test', 'example', 'sample', 'demo', 'none', 'null', 
     'undefined', 'unknown', 'other', 'misc', 'miscellaneous',
     'page', 'home', 'index', 'about', 'contact'
 }
 
-# Get blacklist from environment or use default
-BLACKLIST_TERMS = set(
-    os.environ.get('VALIDATOR_BLACKLIST', '').split(',') 
-    if os.environ.get('VALIDATOR_BLACKLIST') 
-    else DEFAULT_BLACKLIST_TERMS
-)
 
-# Configuration is now centralized
-from generate_glossary.config import get_validation_config
-
-
-@lru_cache(maxsize=10000)
-def _validate_single_term_cached(term: str) -> Dict[str, Any]:
-    """Cached version of single term validation."""
-    return _validate_single_term(term)
+def rule_validate(
+    terms: List[str],
+    max_workers: int = 4,
+    blacklist_terms: Optional[Set[str]] = None,
+    min_term_length: int = 2,
+    max_term_length: int = 100,
+    show_progress: bool = True
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Pure functional rule-based validation.
+    
+    Args:
+        terms: List of terms to validate
+        max_workers: Maximum number of worker threads
+        blacklist_terms: Set of blacklisted terms (uses DEFAULT_BLACKLIST_TERMS if None)
+        min_term_length: Minimum term length
+        max_term_length: Maximum term length
+        show_progress: Whether to show progress bar
+        
+    Returns:
+        Dictionary mapping terms to validation results
+    """
+    # Set default blacklist if not provided
+    blacklist_terms = blacklist_terms or DEFAULT_BLACKLIST_TERMS
+    
+    # Use thread pool with resource limits
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        validation_fn = lambda term: _validate_single_term_pure(
+            term, blacklist_terms, min_term_length, max_term_length
+        )
+        
+        if show_progress:
+            results = list(tqdm(
+                executor.map(validation_fn, terms),
+                total=len(terms),
+                desc="Rule validation"
+            ))
+        else:
+            results = list(executor.map(validation_fn, terms))
+    
+    # Convert to dictionary
+    return {r["term"]: r for r in results}
 
 
 def validate_with_rules(
@@ -57,6 +84,8 @@ def validate_with_rules(
     """
     Validate terms using structural and linguistic rules.
     
+    Legacy wrapper that maintains backward compatibility.
+    
     Args:
         terms: List of terms to validate
         show_progress: Whether to show progress bar
@@ -64,28 +93,42 @@ def validate_with_rules(
     Returns:
         Dictionary mapping terms to validation results
     """
-    # Use thread pool with resource limits
-    validation_config = get_validation_config()
-    with ThreadPoolExecutor(max_workers=validation_config.max_workers) as executor:
-        if show_progress:
-            results = list(tqdm(
-                executor.map(_validate_single_term, terms),
-                total=len(terms),
-                desc="Rule validation"
-            ))
-        else:
-            results = list(executor.map(_validate_single_term, terms))
+    try:
+        from generate_glossary.config import get_validation_config
+        validation_config = get_validation_config()
+        max_workers = getattr(validation_config, 'max_workers', 4)
+    except (ImportError, AttributeError):
+        max_workers = 4
     
-    # Convert to dictionary
-    return {r["term"]: r for r in results}
+    # Get blacklist from environment if available (legacy behavior)
+    blacklist_terms = set(
+        os.environ.get('VALIDATOR_BLACKLIST', '').split(',') 
+        if os.environ.get('VALIDATOR_BLACKLIST') 
+        else DEFAULT_BLACKLIST_TERMS
+    )
+    
+    return rule_validate(
+        terms, 
+        max_workers=max_workers, 
+        blacklist_terms=blacklist_terms,
+        show_progress=show_progress
+    )
 
 
-def _validate_single_term(term: str) -> Dict[str, Any]:
+def _validate_single_term_pure(
+    term: str, 
+    blacklist_terms: Set[str], 
+    min_term_length: int, 
+    max_term_length: int
+) -> Dict[str, Any]:
     """
-    Validate a single term using rules.
+    Pure functional validation of a single term using rules.
     
     Args:
         term: Term to validate
+        blacklist_terms: Set of blacklisted terms
+        min_term_length: Minimum term length
+        max_term_length: Maximum term length
         
     Returns:
         Validation result dictionary
@@ -96,10 +139,10 @@ def _validate_single_term(term: str) -> Dict[str, Any]:
     
     # Initialize validation checks
     checks = {
-        "has_minimum_length": len(cleaned) >= MIN_TERM_LENGTH,
-        "has_maximum_length": len(cleaned) <= MAX_TERM_LENGTH,
+        "has_minimum_length": len(cleaned) >= min_term_length,
+        "has_maximum_length": len(cleaned) <= max_term_length,
         "has_letters": bool(re.search(r'[a-zA-Z]', cleaned)),
-        "not_blacklisted": normalized not in BLACKLIST_TERMS,
+        "not_blacklisted": normalized not in blacklist_terms,
         "no_invalid_patterns": True,
         "has_valid_structure": True
     }
@@ -111,7 +154,7 @@ def _validate_single_term(term: str) -> Dict[str, Any]:
             break
     
     # Check structure
-    checks["has_valid_structure"] = _check_term_structure(cleaned)
+    checks["has_valid_structure"] = _check_term_structure_pure(cleaned)
     
     # Calculate confidence based on passed checks
     passed_checks = sum(checks.values())
@@ -141,9 +184,24 @@ def _validate_single_term(term: str) -> Dict[str, Any]:
     }
 
 
-def _check_term_structure(term: str) -> bool:
+def _validate_single_term(term: str) -> Dict[str, Any]:
     """
-    Check if term has valid academic/technical structure.
+    Legacy wrapper for backward compatibility.
+    
+    Args:
+        term: Term to validate
+        
+    Returns:
+        Validation result dictionary
+    """
+    return _validate_single_term_pure(
+        term, DEFAULT_BLACKLIST_TERMS, MIN_TERM_LENGTH, MAX_TERM_LENGTH
+    )
+
+
+def _check_term_structure_pure(term: str) -> bool:
+    """
+    Pure function to check if term has valid academic/technical structure.
     
     Args:
         term: Cleaned term to check
@@ -221,3 +279,16 @@ def validate_term_format(term: str) -> Dict[str, Any]:
         result["issues"].append("only_special_chars")
     
     return result
+
+
+def _check_term_structure(term: str) -> bool:
+    """
+    Legacy wrapper for backward compatibility.
+    
+    Args:
+        term: Cleaned term to check
+        
+    Returns:
+        True if structure is valid
+    """
+    return _check_term_structure_pure(term)

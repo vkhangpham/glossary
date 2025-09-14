@@ -197,6 +197,74 @@ Each step gets progressively more sophisticated but also more resource-intensive
    - Always update web content with relevance scores using `--update-web-content`
    - This significantly improves deduplication quality later in the pipeline
 
+## Timeout Handling
+
+The validation system provides timeout support to prevent validators from hanging indefinitely:
+
+### `with_timeout` Function
+
+Adds timeout support to any validator function:
+
+```python
+from generate_glossary.validation.core import with_timeout
+
+# Wrap validator with 30-second timeout
+timeout_validator = with_timeout(validator_function, 30.0)
+results = timeout_validator(terms)
+```
+
+**Exception Handling:**
+- Raises `TimeoutError` if the function exceeds the specified timeout
+- Automatically cancels the function execution
+- Returns clean error information in validation results
+
+### `parallel_validate` Timeout Support
+
+The parallel validation system supports both individual validator timeouts and global timeouts:
+
+```python
+from generate_glossary.validation.core import parallel_validate, create_validator_functions
+
+# Create validators
+validators = create_validator_functions(config)
+
+# Validate with 60-second timeout per validator
+results = parallel_validate(
+    terms_list=["term1", "term2"],
+    validators=validators,
+    config=config,
+    timeout=60.0  # Individual validator timeout
+)
+```
+
+**Timeout Behavior:**
+- **Individual Timeouts**: Each validator gets the specified timeout
+- **Graceful Degradation**: Timed-out validators return empty results instead of failing
+- **Error Logging**: Timeout events are logged with details
+- **Resource Cleanup**: Futures are properly cancelled to free resources
+
+**Recommended Timeouts:**
+- **Rule validation**: 10-30 seconds (usually fast)
+- **Web validation**: 60-120 seconds (network dependent)
+- **LLM validation**: 120-300 seconds (API dependent)
+
+**Example with Custom Pipeline:**
+```python
+config = ValidationConfig(
+    modes=("rule", "web", "llm"),
+    parallel=True
+)
+
+# Create pipeline with timeout
+pipeline = create_validation_pipeline(
+    config=config,
+    timeout=90.0,  # 90 seconds per validator
+    retry_config={"max_retries": 2}
+)
+
+results = pipeline(terms)
+```
+
 3. **Choose appropriate LLM providers**:
    - For critical levels, consider using more capable models (e.g., OpenAI)
    - For faster processing, Gemini offers good performance at lower cost

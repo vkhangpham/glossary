@@ -14,24 +14,32 @@ from .utils import calculate_relevance_score, extract_web_content_fields
 # Default thresholds
 DEFAULT_MIN_SCORE = 0.5
 DEFAULT_MIN_RELEVANCE_SCORE = 0.5
-MIN_VERIFIED_SOURCES = 1
+DEFAULT_MIN_RELEVANT_SOURCES = 1
 
 
-def validate_with_web_content(
+def web_validate(
     terms: List[str],
     web_content: Dict[str, List[Dict[str, Any]]],
-    min_score: float = DEFAULT_MIN_SCORE,
-    min_relevance_score: float = DEFAULT_MIN_RELEVANCE_SCORE,
+    min_score: float = 0.5,
+    min_relevance_score: float = 0.5,
+    min_relevant_sources: int = 1,
+    high_quality_content_threshold: float = 0.7,
+    high_quality_relevance_threshold: float = 0.7,
+    max_workers: int = 4,
     show_progress: bool = True
 ) -> Dict[str, Dict[str, Any]]:
     """
-    Validate terms using their web content.
+    Pure functional web content-based validation.
     
     Args:
         terms: List of terms to validate
         web_content: Dictionary mapping terms to their web content
         min_score: Minimum content score threshold
         min_relevance_score: Minimum relevance score threshold
+        min_relevant_sources: Minimum number of relevant sources required
+        high_quality_content_threshold: Threshold for high quality content
+        high_quality_relevance_threshold: Threshold for high quality relevance
+        max_workers: Maximum number of worker threads
         show_progress: Whether to show progress bar
         
     Returns:
@@ -39,15 +47,18 @@ def validate_with_web_content(
     """
     # Create validation function with fixed parameters
     def validate_term(term):
-        return _validate_single_term_web(
+        return _validate_single_term_web_pure(
             term, 
             web_content.get(term, []),
             min_score,
-            min_relevance_score
+            min_relevance_score,
+            min_relevant_sources,
+            high_quality_content_threshold,
+            high_quality_relevance_threshold
         )
     
     # Use thread pool for parallel validation
-    with ThreadPoolExecutor() as executor:
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
         if show_progress:
             results = list(tqdm(
                 executor.map(validate_term, terms),
@@ -61,20 +72,57 @@ def validate_with_web_content(
     return {r["term"]: r for r in results}
 
 
-def _validate_single_term_web(
+def validate_with_web_content(
+    terms: List[str],
+    web_content: Dict[str, List[Dict[str, Any]]],
+    min_score: float = DEFAULT_MIN_SCORE,
+    min_relevance_score: float = DEFAULT_MIN_RELEVANCE_SCORE,
+    show_progress: bool = True
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Validate terms using their web content.
+    
+    Legacy wrapper that maintains backward compatibility.
+    
+    Args:
+        terms: List of terms to validate
+        web_content: Dictionary mapping terms to their web content
+        min_score: Minimum content score threshold
+        min_relevance_score: Minimum relevance score threshold
+        show_progress: Whether to show progress bar
+        
+    Returns:
+        Dictionary mapping terms to validation results
+    """
+    return web_validate(
+        terms, 
+        web_content, 
+        min_score=min_score,
+        min_relevance_score=min_relevance_score,
+        show_progress=show_progress
+    )
+
+
+def _validate_single_term_web_pure(
     term: str,
     contents: List[Dict[str, Any]],
     min_score: float,
-    min_relevance_score: float
+    min_relevance_score: float,
+    min_relevant_sources: int,
+    high_quality_content_threshold: float,
+    high_quality_relevance_threshold: float
 ) -> Dict[str, Any]:
     """
-    Validate a single term using its web content.
+    Pure functional validation of a single term using its web content.
     
     Args:
         term: Term to validate
         contents: List of web content for the term
-        min_score: Minimum content score
-        min_relevance_score: Minimum relevance score
+        min_score: Minimum content score threshold
+        min_relevance_score: Minimum relevance score threshold
+        min_relevant_sources: Minimum number of relevant sources required
+        high_quality_content_threshold: Threshold for high quality content
+        high_quality_relevance_threshold: Threshold for high quality relevance
         
     Returns:
         Validation result dictionary
@@ -124,7 +172,8 @@ def _validate_single_term_web(
                 relevant_sources.append(source_info)
                 
                 # High quality if both scores are high
-                if score >= 0.7 and relevance_score >= 0.7:
+                if (score >= high_quality_content_threshold and 
+                    relevance_score >= high_quality_relevance_threshold):
                     high_quality_sources.append(source_info)
         
         # Track all scores for statistics
@@ -149,7 +198,7 @@ def _validate_single_term_web(
     )
     
     # Determine validity
-    is_valid = len(relevant_sources) >= MIN_VERIFIED_SOURCES
+    is_valid = len(relevant_sources) >= min_relevant_sources
     
     # Calculate average scores
     avg_content_score = sum(s["content"] for s in all_scores) / len(all_scores) if all_scores else 0
@@ -261,3 +310,32 @@ def analyze_web_coverage(
         )
     
     return coverage_stats
+
+
+def _validate_single_term_web(
+    term: str,
+    contents: List[Dict[str, Any]],
+    min_score: float,
+    min_relevance_score: float
+) -> Dict[str, Any]:
+    """
+    Legacy wrapper for backward compatibility.
+    
+    Args:
+        term: Term to validate
+        contents: List of web content for the term
+        min_score: Minimum content score
+        min_relevance_score: Minimum relevance score
+        
+    Returns:
+        Validation result dictionary
+    """
+    return _validate_single_term_web_pure(
+        term, 
+        contents,
+        min_score,
+        min_relevance_score,
+        DEFAULT_MIN_RELEVANT_SOURCES,
+        0.7,  # high_quality_content_threshold
+        0.7   # high_quality_relevance_threshold
+    )

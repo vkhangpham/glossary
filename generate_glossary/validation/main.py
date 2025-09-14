@@ -3,9 +3,16 @@ Main entry point for term validation.
 
 This module provides the core validation orchestration that combines
 different validation modes into a unified pipeline.
+
+⚠️ DEPRECATION NOTICE:
+The functions in this module are deprecated and will be removed in v4.0.0.
+Please migrate to the new functional validation API for better performance and features.
+
+Migration guide: https://docs.example.com/validation-migration
 """
 
 import logging
+import warnings
 from typing import Dict, List, Any, Optional, Union
 import time
 from functools import lru_cache
@@ -15,11 +22,16 @@ from .web_validator import validate_with_web_content
 from .llm_validator import validate_with_llm
 from .utils import normalize_term
 from .cache import get_cache, filter_cached_terms
+from .core import (
+    ValidationConfig, ValidationResult as CoreValidationResult, validate_terms_functional,
+    validate_terms_with_cache, normalize_terms, get_validation_summary
+)
+from .cache import CacheState, load_cache_from_disk, save_cache_to_disk
 
 # Type aliases
 Terms = Union[str, List[str]]
-ValidationResult = Dict[str, Any]
-ValidationResults = Dict[str, ValidationResult]
+LegacyValidationResult = Dict[str, Any]  # Renamed to avoid shadowing the dataclass
+ValidationResults = Dict[str, LegacyValidationResult]
 WebContent = Dict[str, List[Dict[str, Any]]]
 
 # Default configuration
@@ -46,14 +58,31 @@ def validate_terms(
     config: Optional[Dict[str, Any]] = None,
     existing_results: Optional[ValidationResults] = None,
     show_progress: bool = True,
-    use_cache: bool = True
+    use_cache: bool = True,
+    suppress_warning: bool = False
 ) -> ValidationResults:
     """
     Validate terms using specified validation modes.
-    
-    This is the main entry point for all validation operations.
-    It orchestrates different validation modes and combines their results.
-    
+
+    ⚠️ DEPRECATED: This function is deprecated and will be removed in v4.0.0.
+    Use validate_terms_functional() with configuration profiles instead.
+
+    Migration example:
+        # Old way:
+        results = validate_terms(
+            terms,
+            modes=['rule', 'web'],
+            config={'min_confidence': 0.7}
+        )
+
+        # New way:
+        from generate_glossary.validation import validate_terms_functional, ACADEMIC_PROFILE, override_config, ValidationConfig
+        config = override_config(ACADEMIC_PROFILE, modes=('rule', 'web'), min_confidence=0.7)
+        results = validate_terms_functional(terms, config)
+
+    This function is now a thin wrapper around the functional core that maintains
+    backward compatibility while using the improved functional architecture.
+
     Args:
         terms: Single term or list of terms to validate
         modes: List of validation modes to use (rule, web, llm)
@@ -63,159 +92,341 @@ def validate_terms(
         existing_results: Previous validation results to extend/update
         show_progress: Whether to show progress bar
         use_cache: Whether to use cached validation results
-        
+        suppress_warning: Whether to suppress the deprecation warning
+
     Returns:
-        Dictionary mapping terms to their validation results
+        Dictionary mapping terms to their validation results (legacy format)
     """
+    # Issue deprecation warning unless suppressed
+    if not suppress_warning:
+        warnings.warn(
+            "validate_terms() is deprecated and will be removed in v4.0.0. "
+            "Use validate_terms_functional() with configuration profiles instead. "
+            "Benefits: better performance, immutable results, composition utilities, and type safety. "
+            "See migration guide: https://docs.example.com/validation-migration",
+            DeprecationWarning,
+            stacklevel=2
+        )
     start_time = time.time()
     
-    # Handle single term input
-    if isinstance(terms, str):
-        terms = [terms]
-    
     # Merge config with defaults
-    config = {**DEFAULT_CONFIG, **(config or {})}
+    merged_config = {**DEFAULT_CONFIG, **(config or {})}
+    modes = modes or merged_config.get("modes", ["rule"])
     
-    # Use provided modes or get from config
-    modes = modes or config.get("modes", ["rule"])
+    # Create ValidationConfig for functional core
+    validation_config = ValidationConfig(
+        modes=tuple(modes),
+        confidence_weights=merged_config["confidence_weights"],
+        min_confidence=merged_config["min_confidence"],
+        min_score=merged_config["min_score"],
+        min_relevance_score=merged_config["min_relevance_score"],
+        parallel=merged_config["parallel"],
+        show_progress=show_progress,
+        llm_provider=llm_provider,
+        use_cache=use_cache
+    )
     
-    # Initialize results with existing results if provided
-    results = existing_results.copy() if existing_results else {}
+    # Convert existing results to ValidationResult format if provided
+    existing_functional_results = None
+    if existing_results:
+        existing_functional_results = convert_legacy_to_functional_results(existing_results)
     
-    # Check cache for previously validated terms
+    # Use functional validation with caching
     if use_cache:
-        uncached_terms, cached_results = filter_cached_terms(terms, modes)
-        results.update(cached_results)
-        
-        if cached_results:
-            logging.info(f"Found {len(cached_results)} cached results")
-        
-        # If all terms are cached, return early
-        if not uncached_terms:
-            logging.info("All terms found in cache")
-            return results
-        
-        # Continue with uncached terms
-        terms = uncached_terms
-    
-    # Normalize terms
-    normalized_terms = [normalize_term(term) for term in terms]
-    term_mapping = dict(zip(normalized_terms, terms))  # Map normalized to original
-    
-    logging.info(f"Validating {len(terms)} terms using modes: {modes}")
-    
-    # Run each validation mode
-    mode_results = {}
-    
-    if "rule" in modes:
-        logging.info("Running rule-based validation...")
-        mode_results["rule"] = validate_with_rules(
-            terms,
-            show_progress=show_progress and len(modes) == 1
+        cache_state = load_cache_from_disk()
+        validation_results, updated_cache_state = validate_terms_with_cache(
+            terms, validation_config, web_content, existing_functional_results, cache_state, auto_save=True
+        )
+    else:
+        validation_results = validate_terms_functional(
+            terms, validation_config, web_content, existing_functional_results
         )
     
-    if "web" in modes:
-        if not web_content:
-            logging.warning("Web mode requested but no web content provided")
-        else:
-            logging.info("Running web-based validation...")
-            mode_results["web"] = validate_with_web_content(
-                terms,
-                web_content,
-                min_score=config.get("min_score", 0.5),
-                min_relevance_score=config.get("min_relevance_score", 0.5),
-                show_progress=show_progress and len(modes) == 1
-            )
+    # Convert ValidationResult objects back to legacy format for backward compatibility
+    legacy_results = convert_functional_to_legacy_results(validation_results)
     
-    if "llm" in modes:
-        logging.info(f"Running LLM-based validation with {llm_provider}...")
-        mode_results["llm"] = validate_with_llm(
-            terms,
-            provider=llm_provider,
-            show_progress=show_progress and len(modes) == 1
-        )
-    
-    
-    # Combine results from all modes with early exit optimization
-    for term in terms:
-        term_results = {}
-        validity_votes = []
-        weighted_confidence = 0.0
-        total_weight = 0.0
-        
-        # Early exit check
-        early_exit = False
-        
-        for mode, mode_result in mode_results.items():
-            if term in mode_result:
-                term_results[mode] = mode_result[term]
-                
-                # Get mode weight
-                weight = config["confidence_weights"].get(mode, 0.25)
-                total_weight += weight
-                
-                # Calculate weighted confidence contribution
-                mode_confidence = mode_result[term].get("confidence", 0.5)
-                weighted_confidence += mode_confidence * weight
-                
-                # Track validity votes
-                validity_votes.append(mode_result[term].get("is_valid", False))
-                
-                # Early exit if confidence already exceeds threshold
-                if len(modes) > 1 and total_weight > 0:
-                    current_confidence = weighted_confidence / total_weight
-                    if current_confidence >= config["min_confidence"] * 1.2:  # 20% buffer
-                        early_exit = True
-                        logging.debug(f"Early exit for '{term}' with confidence {current_confidence:.2f}")
-                        break
-        
-        # Calculate overall confidence (normalized by total weight)
-        if total_weight > 0:
-            overall_confidence = weighted_confidence / total_weight
-        else:
-            overall_confidence = 0.0
-        
-        # Determine overall validity
-        # For single mode, use that mode's validity
-        # For multiple modes, use weighted confidence threshold
-        if len(term_results) == 1:
-            is_valid = validity_votes[0] if validity_votes else False
-        else:
-            is_valid = overall_confidence >= config["min_confidence"]
-        
-        # Store combined result
-        result = {
-            "term": term,
-            "is_valid": is_valid,
-            "confidence": round(overall_confidence, 3),
-            "modes_used": list(term_results.keys()),
-            "mode_results": term_results,
-            "timestamp": time.time(),
-            "early_exit": early_exit
-        }
-        
-        results[term] = result
-        
-        # Cache the result
-        if use_cache:
-            cache = get_cache()
-            cache.add_validation_result(term, modes, result)
+    # Merge with existing results if provided
+    if existing_results:
+        final_results = existing_results.copy()
+        final_results.update(legacy_results)
+        legacy_results = final_results
     
     elapsed_time = time.time() - start_time
     logging.info(f"Validation completed in {elapsed_time:.2f} seconds")
     
     # Log summary statistics
-    valid_count = len([r for r in results.values() if r["is_valid"]])
-    logging.info(f"Valid terms: {valid_count}/{len(results)} ({valid_count/len(results)*100:.1f}%)")
+    valid_count = len([r for r in legacy_results.values() if r["is_valid"]])
+    total_count = len(legacy_results)
+    if total_count > 0:
+        logging.info(f"Valid terms: {valid_count}/{total_count} ({valid_count/total_count*100:.1f}%)")
     
-    return results
+    return legacy_results
 
 
+def validate_terms_functional_api(
+    terms: Terms,
+    modes: Optional[List[str]] = None,
+    web_content: Optional[Dict[str, List[Dict[str, Any]]]] = None,
+    llm_provider: str = "gemini",
+    config: Optional[Dict[str, Any]] = None,
+    cache_state: Optional[CacheState] = None,
+    use_cache: bool = True,
+    auto_save_cache: bool = True
+) -> Union[Dict[str, CoreValidationResult], tuple[Dict[str, CoreValidationResult], CacheState]]:
+    """
+    Functional API for term validation with optional caching.
+
+    ⚠️ DEPRECATED: This function is deprecated and will be removed in v4.0.0.
+    Use validate_terms_functional() directly with configuration profiles instead.
+
+    Migration example:
+        # Old way:
+        results = validate_terms_functional_api(
+            terms,
+            modes=['rule', 'web'],
+            config={'min_confidence': 0.7},
+            cache_state=cache_state
+        )
+
+        # New way:
+        from generate_glossary.validation import validate_terms_with_cache, ACADEMIC_PROFILE, override_config, ValidationConfig
+        config = override_config(ACADEMIC_PROFILE, modes=('rule', 'web'), min_confidence=0.7)
+        results, new_cache_state = validate_terms_with_cache(terms, config, cache_state=cache_state)
+
+    This function provides the new functional interface while maintaining
+    backward compatibility. It can operate with or without cache state.
+
+    Args:
+        terms: Single term or list of terms to validate
+        modes: List of validation modes to use (rule, web, llm)
+        web_content: Web content for web-based validation
+        llm_provider: LLM provider for llm-based validation
+        config: Validation configuration (overrides defaults)
+        cache_state: Optional cache state for caching results
+        use_cache: Whether to use caching (only if cache_state provided)
+        auto_save_cache: Whether to automatically save cache to disk
+
+    Returns:
+        If cache_state provided: (validation_results, updated_cache_state)
+        Otherwise: validation_results only
+    """
+    # Issue deprecation warning
+    warnings.warn(
+        "validate_terms_functional_api() is deprecated and will be removed in v4.0.0. "
+        "Use validate_terms_functional() or validate_terms_with_cache() directly. "
+        "Benefits: cleaner API, better type safety, and more consistent behavior. "
+        "See migration guide: https://docs.example.com/validation-migration",
+        DeprecationWarning,
+        stacklevel=2
+    )
+    # Merge config with defaults and create ValidationConfig
+    merged_config = {**DEFAULT_CONFIG, **(config or {})}
+    modes = modes or merged_config.get("modes", ["rule"])
+    
+    validation_config = ValidationConfig(
+        modes=tuple(modes),
+        confidence_weights=merged_config["confidence_weights"],
+        min_confidence=merged_config["min_confidence"],
+        min_score=merged_config["min_score"],
+        min_relevance_score=merged_config["min_relevance_score"],
+        parallel=merged_config["parallel"],
+        show_progress=merged_config["show_progress"],
+        llm_provider=llm_provider,
+        use_cache=use_cache
+    )
+    
+    # Use functional validation with caching if cache_state provided
+    if cache_state is not None and use_cache:
+        validation_results, updated_cache_state = validate_terms_with_cache(
+            terms, validation_config, web_content, None, cache_state, auto_save_cache
+        )
+        return validation_results, updated_cache_state
+    else:
+        # Use regular functional validation
+        validation_results = validate_terms_functional(terms, validation_config, web_content)
+        if cache_state is not None:
+            return validation_results, cache_state
+        else:
+            return validation_results
+
+
+def convert_legacy_to_functional_results(
+    legacy_results: ValidationResults
+) -> Dict[str, CoreValidationResult]:
+    """Convert legacy validation results to functional ValidationResult objects."""
+    functional_results = {}
+    
+    for term, legacy_result in legacy_results.items():
+        # Extract data from legacy format
+        is_valid = legacy_result.get("is_valid", False)
+        confidence = legacy_result.get("confidence", 0.0)
+        score = legacy_result.get("score", confidence)  # Fallback to confidence if no score
+        relevance_score = legacy_result.get("relevance_score")
+        
+        # Extract mode results if available
+        mode_results = legacy_result.get("mode_results", {})
+        rule_result = None
+        web_result = None
+        llm_result = None
+        
+        if "rule" in mode_results:
+            from types import MappingProxyType
+            rule_result = MappingProxyType(mode_results["rule"])
+        if "web" in mode_results:
+            from types import MappingProxyType
+            web_result = MappingProxyType(mode_results["web"])
+        if "llm" in mode_results:
+            from types import MappingProxyType
+            llm_result = MappingProxyType(mode_results["llm"])
+        
+        # Extract errors if available
+        errors = tuple(legacy_result.get("errors", []))
+        
+        functional_results[term] = CoreValidationResult(
+            term=term,
+            is_valid=is_valid,
+            confidence=confidence,
+            score=score,
+            relevance_score=relevance_score,
+            rule_result=rule_result,
+            web_result=web_result,
+            llm_result=llm_result,
+            errors=errors
+        )
+    
+    return functional_results
+
+
+def convert_functional_to_legacy_results(
+    functional_results: Dict[str, CoreValidationResult],
+    preserve_cache_flags: bool = True
+) -> ValidationResults:
+    """Convert functional ValidationResult objects to legacy dictionary format."""
+    legacy_results = {}
+    
+    for term, result in functional_results.items():
+        # Convert ValidationResult to legacy dictionary format
+        mode_results = {}
+        modes_used = []
+        
+        if result.rule_result:
+            mode_results["rule"] = dict(result.rule_result)
+            modes_used.append("rule")
+        if result.web_result:
+            mode_results["web"] = dict(result.web_result)
+            modes_used.append("web")
+        if result.llm_result:
+            mode_results["llm"] = dict(result.llm_result)
+            modes_used.append("llm")
+        
+        legacy_result = {
+            "term": result.term,
+            "is_valid": result.is_valid,
+            "confidence": result.confidence,
+            "score": result.score,
+            "modes_used": modes_used,
+            "mode_results": mode_results,
+            "timestamp": time.time(),
+        }
+        
+        # Add optional fields if they exist
+        if result.relevance_score is not None:
+            legacy_result["relevance_score"] = result.relevance_score
+        if result.errors:
+            legacy_result["errors"] = list(result.errors)
+        
+        # Preserve cached flag if it exists in the original mode_results
+        if preserve_cache_flags and mode_results:
+            for mode_data in mode_results.values():
+                if isinstance(mode_data, dict) and mode_data.get("cached"):
+                    legacy_result["cached"] = True
+                    break
+        
+        legacy_results[term] = legacy_result
+    
+    return legacy_results
+
+
+def validate_with_functional_cache(
+    terms: Terms,
+    modes: Optional[List[str]] = None,
+    web_content: Optional[Dict[str, List[Dict[str, Any]]]] = None,
+    llm_provider: str = "gemini",
+    config: Optional[Dict[str, Any]] = None,
+    cache_dir: Optional[str] = None
+) -> Dict[str, CoreValidationResult]:
+    """
+    Convenience function for functional validation with automatic cache management.
+
+    ⚠️ DEPRECATED: This function is deprecated and will be removed in v4.0.0.
+    Use validate_terms_with_cache() with configuration profiles instead.
+
+    Migration example:
+        # Old way:
+        results = validate_with_functional_cache(
+            terms,
+            modes=['rule', 'web'],
+            config={'min_confidence': 0.7},
+            cache_dir='/path/to/cache'
+        )
+
+        # New way:
+        from generate_glossary.validation import validate_terms_with_cache, ACADEMIC_PROFILE, override_config, ValidationConfig
+        from generate_glossary.validation.cache import load_cache_from_disk
+        config = override_config(ACADEMIC_PROFILE, modes=('rule', 'web'), min_confidence=0.7)
+        cache_state = load_cache_from_disk(Path('/path/to/cache'))
+        results, new_cache_state = validate_terms_with_cache(terms, config, cache_state=cache_state)
+
+    This function handles cache loading and saving automatically, providing a
+    simple interface for functional validation with persistent caching.
+
+    Args:
+        terms: Single term or list of terms to validate
+        modes: List of validation modes to use (rule, web, llm)
+        web_content: Web content for web-based validation
+        llm_provider: LLM provider for llm-based validation
+        config: Validation configuration (overrides defaults)
+        cache_dir: Directory for cache files (uses default if None)
+
+    Returns:
+        Dictionary mapping terms to ValidationResult objects
+    """
+    # Issue deprecation warning
+    warnings.warn(
+        "validate_with_functional_cache() is deprecated and will be removed in v4.0.0. "
+        "Use validate_terms_with_cache() with configuration profiles instead. "
+        "Benefits: explicit cache management, better error handling, and more control. "
+        "See migration guide: https://docs.example.com/validation-migration",
+        DeprecationWarning,
+        stacklevel=2
+    )
+    from pathlib import Path
+    
+    # Load cache state
+    cache_path = Path(cache_dir) if cache_dir else None
+    cache_state = load_cache_from_disk(cache_path)
+    
+    # Perform validation with caching
+    validation_results, updated_cache_state = validate_terms_functional_api(
+        terms, modes, web_content, llm_provider, config, 
+        cache_state, use_cache=True, auto_save_cache=True
+    )
+    
+    return validation_results
 
 
 def main():
     """
     CLI entry point for validation.
+
+    ⚠️ NOTE: This CLI uses the legacy validation API for backward compatibility.
+    For new projects, consider using the functional validation API directly:
+
+    Python example:
+        from generate_glossary.validation import validate_terms_functional, ACADEMIC_PROFILE, ValidationConfig
+        results = validate_terms_functional(terms, ACADEMIC_PROFILE)
+
+    The functional API provides better performance, type safety, and composition utilities.
     """
     import argparse
     import json
@@ -242,6 +453,16 @@ def main():
                        help="Disable progress bar")
     
     args = parser.parse_args()
+
+    # Show migration notice for CLI users
+    print("⚠️ NOTICE: This CLI uses the legacy validation API.", file=sys.stderr)
+    print("   For new projects, consider the functional validation API with better features.", file=sys.stderr)
+    print("   See migration guide: https://docs.example.com/validation-migration\n", file=sys.stderr)
+
+    # Check for edge case: web mode without web_content
+    if args.mode == "web" and not args.web_content:
+        print("Error: Web validation mode requires --web-content argument", file=sys.stderr)
+        sys.exit(2)
     
     try:
         # Load terms
