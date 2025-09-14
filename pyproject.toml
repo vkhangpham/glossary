@@ -72,6 +72,8 @@ dependencies = [
     "dspy>=2.6.27",
     # File locking for checkpoint reliability
     "filelock",
+    "psycopg2-binary>=2.9.10",
+    "google-cloud-aiplatform>=1.113.0",
 ]
 
 [project.scripts]
@@ -132,11 +134,12 @@ packages = ["generate_glossary", "hierarchy", "generate_definition", "prompt_opt
 [tool.uv]
 dev-dependencies = [
     "pytest",
-    "black", 
+    "black",
     "isort",
     "flake8",
     "mypy",
     "pytest-cov",
     "ruff",
     "pyright",
+    "psutil",  # For memory usage tests
 ]

@@ -332,7 +332,7 @@ def deduplicate_web_based(
             if relevance_score is None:
                 try:
                     # Import here to avoid circular imports
-                    from generate_glossary.validation.validation_utils import calculate_relevance_score
+                    from generate_glossary.validation.utils import calculate_relevance_score
                     relevance_score = calculate_relevance_score(term, entry)
                     
                     # Store the calculated score back in the entry for future use

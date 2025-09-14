@@ -35,7 +35,7 @@ generate_glossary/
 │   ├── lv1/                # Level 1 generation scripts (departments) 
 │   ├── lv2/                # Level 2 generation scripts (research areas)
 │   └── lv3/                # Level 3 generation scripts (conference topics)
-├── validator/              # Term validation components
+├── validation/             # Term validation components
 ├── deduplication/          # Graph-based deduplication module
 ├── utils/                  # Shared utilities
 │   ├── web_search/         # Web search and content extraction utilities
@@ -101,10 +101,13 @@ After generation, concepts undergo further processing:
 1. **Web Content Mining**: Searches the web to gather content for each concept
    - Collects definitions, descriptions, and related information
 
-2. **Validation**: Applies multiple validation methods
-   - **Rule-based**: Basic structural checks
+2. **Validation**: Applies multiple validation methods using the functional validation system
+   - **Rule-based**: Basic structural checks (length, format, blacklist)
    - **Web-based**: Validates against web content with relevance scoring
    - **LLM-based**: Final validation with language models
+   - **Functional Architecture**: Pure functional design with immutable data structures
+   - **Configuration Profiles**: Pre-configured validation profiles (academic, strict, fast, etc.)
+   - **Caching**: Persistent caching for performance optimization
 
 3. **Deduplication**: Graph-based identification and grouping of term variations
    - **Graph-first architecture**: Terms are nodes, duplicates are connected components
@@ -263,10 +266,136 @@ python duplicate_analyzer.py
 
 ## Documentation
 
+## Validation System
+
+The project features a modern **functional validation system** with immutable data structures and pure functions:
+
+### Functional Validation API
+
+```python
+from generate_glossary.validation.core import (
+    validate_terms_functional, ValidationConfig, ValidationResult
+)
+from generate_glossary.validation.config import get_profile
+
+# Use pre-configured profiles
+config = get_profile("academic")  # or "strict", "fast", "technical", etc.
+
+# Functional validation with immutable results
+results = validate_terms_functional(
+    ["machine learning", "artificial intelligence", "deep learning"],
+    config=config,
+    web_content=web_content  # Optional web content for web validation
+)
+
+# Results are immutable ValidationResult objects
+for term, result in results.items():
+    print(f"{term}: {'✓' if result.is_valid else '✗'} "
+          f"(confidence: {result.confidence:.2f})")
+```
+
+### Configuration Profiles
+
+The system provides pre-configured profiles for different use cases:
+
+```python
+from generate_glossary.validation.config import (
+    get_profile, get_recommended_profile, list_profiles
+)
+
+# Available profiles
+profiles = list_profiles()  # ['academic', 'strict', 'fast', 'technical', ...]
+
+# Get profile for specific use case
+academic_config = get_profile("academic")      # Balanced for academic terms
+strict_config = get_profile("strict")          # High-quality, comprehensive validation
+fast_config = get_profile("fast")              # Speed-optimized, rule-based only
+technical_config = get_profile("technical")    # Optimized for technical terms
+
+# Smart profile selection
+config = get_recommended_profile("quality")    # Returns comprehensive_profile
+config = get_recommended_profile("speed")      # Returns fast_profile
+```
+
+### Custom Configuration
+
+```python
+from generate_glossary.validation.config import (
+    create_validation_config, create_rule_config, create_web_config
+)
+
+# Create custom configuration
+custom_config = create_validation_config(
+    modes=("rule", "web"),
+    min_confidence=0.8,
+    parallel=True,
+    rule_config=create_rule_config(
+        min_term_length=3,
+        max_term_length=50
+    ),
+    web_config=create_web_config(
+        min_relevant_sources=2,
+        min_score=0.7
+    )
+)
+```
+
+### Caching and Performance
+
+```python
+from generate_glossary.validation.cache import load_cache_from_disk
+from generate_glossary.validation.core import validate_terms_with_cache
+
+# Load cache for performance
+cache_state = load_cache_from_disk()
+
+# Validation with caching
+results, updated_cache = validate_terms_with_cache(
+    terms=["cached_term", "new_term"],
+    config=config,
+    cache_state=cache_state,
+    auto_save=True  # Automatically save cache updates
+)
+```
+
+### Legacy Compatibility
+
+The functional system maintains full backward compatibility:
+
+```python
+from generate_glossary.validation import validate_terms, ValidationModes
+
+# Legacy API still works
+results = validate_terms(
+    ["term1", "term2"],
+    modes=[ValidationModes.RULE, ValidationModes.WEB],
+    min_confidence=0.6
+)
+```
+
+### Migration Guide
+
+For detailed migration instructions from the legacy API to the functional system, see:
+- [Migration Guide](docs/validation-migration-guide.md)
+
+### Performance Improvements
+
+The functional validation system provides:
+
+- **Immutable Data Structures**: Thread-safe, memory-efficient validation results
+- **Pure Functions**: Predictable, testable, composable validation logic
+- **Persistent Caching**: Disk-based caching with automatic expiry management
+- **Parallel Processing**: Optimized concurrent validation across multiple modes
+- **Configuration Profiles**: Pre-tuned settings for different validation scenarios
+- **Functional Composition**: Higher-order functions for custom validation pipelines
+
+## Documentation
+
 For detailed documentation on specific components:
 
 - [Generation Documentation](generate_glossary/generation/README.md)
 - [Validation Documentation](generate_glossary/validation/README.md)
+- [Validation Migration Guide](docs/validation-migration-guide.md)
 - [Deduplication Documentation](generate_glossary/deduplication/README.md)
 - [Hierarchy Documentation](hierarchy/README.md)
 - [Disambiguation Documentation](generate_glossary/disambiguation/README.md)

@@ -33,6 +33,18 @@ load_dotenv()
 # Logger for config module
 logger = get_logger(__name__)
 
+# Import new functional validation config system
+try:
+    from generate_glossary.validation.config import (
+        ValidationConfig as FunctionalValidationConfig,
+        get_profile as get_validation_profile,
+        get_default_config as get_default_validation_config,
+        get_recommended_profile
+    )
+    FUNCTIONAL_VALIDATION_AVAILABLE = True
+except ImportError:
+    FUNCTIONAL_VALIDATION_AVAILABLE = False
+
 # Base directory - project root
 BASE_DIR = Path(__file__).parent.parent.absolute()
 DATA_DIR = BASE_DIR / "data"
@@ -363,24 +375,27 @@ class MiningConfig:
     use_batch_scrape: bool = True  # Enable batch scraping by default
 
 
-@dataclass 
+@dataclass
 class ValidationConfig:
-    """Configuration for validation and post-processing"""
-    
+    """Configuration for validation and post-processing (legacy compatibility)"""
+
     # Rule validation constants (from validation/rule_validator.py)
     max_workers: int = field(default_factory=lambda: min(32, (os.cpu_count() or 1) * 2))
-    
+
     # Web mining
     search_provider: str = "rapidapi"  # or "tavily"
     max_concurrent_mining: int = 30
-    
+
     # Deduplication
-    dedup_method: str = "graph"  # or "fuzzy" 
+    dedup_method: str = "graph"  # or "fuzzy"
     similarity_threshold: float = 0.8
-    
+
     # Validation modes
     validation_modes: list = None
-    
+
+    # New: Integration with functional validation config system
+    validation_profile: str = "academic"  # Default profile
+
     def __post_init__(self):
         if self.validation_modes is None:
             self.validation_modes = ["web", "rule"]
@@ -615,6 +630,123 @@ class GlossaryConfig:
                     setattr(self.validation, key, _parse_env(env_value, current_value, env_key))
                 except (ValueError, TypeError):
                     pass
+
+    def _apply_functional_validation_env_overrides(self, config: 'FunctionalValidationConfig') -> 'FunctionalValidationConfig':
+        """
+        Apply environment variable overrides to functional validation configuration.
+
+        Reads environment variables with GLOSSARY_VALIDATION_ prefix and applies them
+        to the functional validation configuration.
+
+        Args:
+            config: Base functional validation configuration
+
+        Returns:
+            FunctionalValidationConfig with environment overrides applied
+        """
+        if not FUNCTIONAL_VALIDATION_AVAILABLE:
+            return config
+
+        from generate_glossary.validation.config.profiles import (
+            create_rule_config,
+            create_web_config,
+            create_llm_config,
+            override_config
+        )
+
+        # Parse CSV environment variable to tuple
+        def parse_modes(env_value: str) -> tuple:
+            return tuple(mode.strip() for mode in env_value.split(',') if mode.strip())
+
+        # Top-level field overrides
+        top_level_fields = {}
+
+        # Parse modes
+        if modes_env := os.getenv('GLOSSARY_VALIDATION_MODES'):
+            top_level_fields['modes'] = parse_modes(modes_env)
+
+        # Parse numeric thresholds
+        for field, env_var in [
+            ('min_confidence', 'GLOSSARY_VALIDATION_MIN_CONFIDENCE'),
+            ('min_score', 'GLOSSARY_VALIDATION_MIN_SCORE'),
+            ('min_relevance_score', 'GLOSSARY_VALIDATION_MIN_RELEVANCE_SCORE')
+        ]:
+            if env_value := os.getenv(env_var):
+                try:
+                    top_level_fields[field] = float(env_value)
+                except ValueError:
+                    pass
+
+        # Rule validator config overrides
+        rule_overrides = {}
+        for field, env_var in [
+            ('max_workers', 'GLOSSARY_VALIDATION_RULE_MAX_WORKERS'),
+            ('min_term_length', 'GLOSSARY_VALIDATION_RULE_MIN_TERM_LENGTH'),
+            ('max_term_length', 'GLOSSARY_VALIDATION_RULE_MAX_TERM_LENGTH')
+        ]:
+            if env_value := os.getenv(env_var):
+                try:
+                    rule_overrides[field] = int(env_value)
+                except ValueError:
+                    pass
+
+        # Web validator config overrides
+        web_overrides = {}
+        for field, env_var in [
+            ('min_score', 'GLOSSARY_VALIDATION_WEB_MIN_SCORE'),
+            ('min_relevance_score', 'GLOSSARY_VALIDATION_WEB_MIN_RELEVANCE_SCORE'),
+            ('min_relevant_sources', 'GLOSSARY_VALIDATION_WEB_MIN_RELEVANT_SOURCES'),
+            ('max_workers', 'GLOSSARY_VALIDATION_WEB_MAX_WORKERS')
+        ]:
+            if env_value := os.getenv(env_var):
+                try:
+                    if field in ['min_score', 'min_relevance_score']:
+                        web_overrides[field] = float(env_value)
+                    else:
+                        web_overrides[field] = int(env_value)
+                except ValueError:
+                    pass
+
+        # LLM validator config overrides
+        llm_overrides = {}
+        for field, env_var in [
+            ('provider', 'GLOSSARY_VALIDATION_LLM_PROVIDER'),
+            ('batch_size', 'GLOSSARY_VALIDATION_LLM_BATCH_SIZE'),
+            ('max_workers', 'GLOSSARY_VALIDATION_LLM_MAX_WORKERS'),
+            ('tier', 'GLOSSARY_VALIDATION_LLM_TIER'),
+            ('max_tokens', 'GLOSSARY_VALIDATION_LLM_MAX_TOKENS'),
+            ('batch_max_tokens', 'GLOSSARY_VALIDATION_LLM_BATCH_MAX_TOKENS')
+        ]:
+            if env_value := os.getenv(env_var):
+                try:
+                    if field in ['batch_size', 'max_workers', 'max_tokens', 'batch_max_tokens']:
+                        llm_overrides[field] = int(env_value)
+                    else:
+                        llm_overrides[field] = env_value
+                except ValueError:
+                    pass
+
+        # Build per-validator configs with overrides
+        rule_config = config.rule_config
+        if rule_overrides:
+            rule_config = create_rule_config(**{**rule_config.__dict__, **rule_overrides})
+
+        web_config = config.web_config
+        if web_overrides:
+            web_config = create_web_config(**{**web_config.__dict__, **web_overrides})
+
+        llm_config = config.llm_config
+        if llm_overrides:
+            llm_config = create_llm_config(**{**llm_config.__dict__, **llm_overrides})
+
+        # Apply all overrides
+        return override_config(
+            config,
+            **top_level_fields,
+            rule_config=rule_config,
+            web_config=web_config,
+            llm_config=llm_config
+        )
     
     def get_processing_config(self, level: int) -> ProcessingConfig:
         """Get processing configuration for a specific level with overrides applied"""
@@ -660,9 +792,67 @@ class GlossaryConfig:
         return self.mining
     
     def get_validation_config(self) -> ValidationConfig:
-        """Get validation configuration."""
+        """Get validation configuration (legacy)."""
         return self.validation
-    
+
+    def get_functional_validation_config(self, profile: Optional[str] = None) -> Optional['FunctionalValidationConfig']:
+        """
+        Get functional validation configuration.
+
+        Args:
+            profile: Validation profile name (overrides config default)
+
+        Returns:
+            FunctionalValidationConfig if available, None otherwise
+        """
+        if not FUNCTIONAL_VALIDATION_AVAILABLE:
+            logger.warning("Functional validation config not available")
+            return None
+
+        profile_name = profile or self.validation.validation_profile
+        try:
+            base_config = get_validation_profile(profile_name)
+        except ValueError as e:
+            logger.warning(f"Invalid validation profile '{profile_name}': {e}")
+            base_config = get_default_validation_config()
+
+        # Apply environment overrides before returning
+        return self._apply_functional_validation_env_overrides(base_config)
+
+    def get_rule_validation_config(self, profile: Optional[str] = None):
+        """Get rule-specific validation configuration."""
+        functional_config = self.get_functional_validation_config(profile)
+        return functional_config.rule_config if functional_config else None
+
+    def get_web_validation_config(self, profile: Optional[str] = None):
+        """Get web-specific validation configuration."""
+        functional_config = self.get_functional_validation_config(profile)
+        return functional_config.web_config if functional_config else None
+
+    def get_llm_validation_config(self, profile: Optional[str] = None):
+        """Get LLM-specific validation configuration."""
+        functional_config = self.get_functional_validation_config(profile)
+        return functional_config.llm_config if functional_config else None
+
+    def get_validation_profile_for_use_case(self, use_case: str) -> Optional['FunctionalValidationConfig']:
+        """
+        Get recommended validation profile for a specific use case.
+
+        Args:
+            use_case: Use case (speed, quality, academic, technical, strict, permissive)
+
+        Returns:
+            FunctionalValidationConfig if available, None otherwise
+        """
+        if not FUNCTIONAL_VALIDATION_AVAILABLE:
+            return None
+
+        try:
+            return get_recommended_profile(use_case)
+        except ValueError as e:
+            logger.warning(f"Invalid use case '{use_case}': {e}")
+            return get_default_validation_config()
+
     def validate_configuration(self) -> List[str]:
         """Validate the current configuration.
         
