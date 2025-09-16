@@ -83,7 +83,7 @@ from .queue_management import (
 # Re-export URL processing functions
 from .url_processing import (
     map_urls_concurrently,
-    map_urls_fast_enhanced,
+    map_urls_fast_enhanced_bulk,
     classify_domain_type,
     filter_academic_urls,
     deduplicate_and_score_urls,
@@ -148,14 +148,39 @@ _batch_scrape_urls = batch_scrape_urls
 _extract_with_smart_prompts = extract_with_smart_prompts
 
 # Legacy function aliases for compatibility
-def _map_urls_concurrently(*args, **kwargs):
-    """Legacy alias for map_urls_concurrently."""
+def _map_urls_concurrently(domains, limit=None, concurrency=5):
+    """Legacy alias for map_urls_concurrently that injects client and remaps args."""
     import asyncio
-    return asyncio.get_event_loop().run_until_complete(map_urls_concurrently(*args, **kwargs))
+
+    # Resolve client
+    app = get_client()
+
+    # Build the coroutine with injected client
+    coro = map_urls_concurrently(app, domains, limit=limit, concurrency=concurrency)
+
+    # Run it with appropriate event loop handling
+    try:
+        return asyncio.get_event_loop().run_until_complete(coro)
+    except RuntimeError:
+        # Fall back to asyncio.run if no event loop
+        return asyncio.run(coro)
 
 def _map_urls_fast_enhanced(*args, **kwargs):
     """Legacy alias for map_urls_fast_enhanced."""
     return map_urls_fast_enhanced(*args, **kwargs)
+
+def map_urls_fast_enhanced(*args, **kwargs):
+    """Wrapper that handles both single-domain and bulk domain processing.
+
+    If 'domains' is in kwargs, call bulk function.
+    Otherwise, forward to the original single-domain function.
+    """
+    if 'domains' in kwargs:
+        return map_urls_fast_enhanced_bulk(**kwargs)
+    else:
+        # Import the original function from url_processing
+        from .url_processing import map_urls_fast_enhanced as _original_func
+        return _original_func(*args, **kwargs)
 
 def _classify_domain(*args, **kwargs):
     """Legacy alias for classify_domain_type."""
