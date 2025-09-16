@@ -57,10 +57,12 @@ def validate_api_key(api_key: Optional[str] = None) -> bool:
         logger.error("Firecrawl API key not configured")
         return False
 
-    # Basic format validation - Firecrawl keys typically start with 'fc-' and should be at least 20 characters
+    # Relaxed validation - warn for unexpected format but return True if non-empty
+    # This matches get_client_info logic for consistent behavior
     if not api_key.startswith('fc-') or len(api_key) < 20:
         logger.warning("API key format may be invalid (should start with 'fc-' and be at least 20 characters)")
-        return False
+        # Return True for non-empty keys even with unexpected format
+        return len(api_key) > 0
 
     return True
 
@@ -242,11 +244,8 @@ def get_client_info() -> Dict[str, Any]:
     # Additional fields expected by tests
     api_key_present = api_key is not None
     try:
-        # Use validate_api_key without logging for cleaner info retrieval
+        # Use consistent validation logic matching validate_api_key
         api_key_valid = api_key is not None and len(api_key) > 0
-        if api_key:
-            # Simple validation check - just verify it's not empty and has reasonable format
-            api_key_valid = api_key.startswith('fc-') or len(api_key) >= 10
     except Exception:
         api_key_valid = False
     
@@ -329,8 +328,11 @@ def attempt_method(client, method_name: str, *args, **kwargs):
     if hasattr(res, '__await__'):
         try:
             loop = asyncio.get_running_loop()
-            return loop.run_until_complete(res)
+            # If there's a running loop, submit the coroutine to it
+            import concurrent.futures
+            return asyncio.run_coroutine_threadsafe(res, loop).result()
         except RuntimeError:
+            # No running loop, use asyncio.run
             return asyncio.run(res)
     return res
 

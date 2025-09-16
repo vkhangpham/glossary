@@ -8,6 +8,7 @@ content filtering, and performance optimization through caching.
 import time
 import asyncio
 import logging
+import weakref
 from typing import Dict, List, Optional, Tuple, Any
 from urllib.parse import urlparse, parse_qs
 # ThreadPoolExecutor replaced with asyncio.to_thread for better async integration
@@ -25,13 +26,23 @@ logger = get_logger(__name__)
 # Simple in-memory cache for mapping results
 _mapping_cache: Dict[str, Dict[str, Any]] = {}
 
-# Lock for thread-safe Firecrawl client access
-_firecrawl_lock = asyncio.Lock()
+# Per-event-loop lock storage for thread-safe Firecrawl client access
+# Uses WeakKeyDictionary to automatically clean up locks when loops are garbage-collected
+_loop_locks: weakref.WeakKeyDictionary[asyncio.AbstractEventLoop, asyncio.Lock] = weakref.WeakKeyDictionary()
+
+def _get_firecrawl_lock() -> asyncio.Lock:
+    """Get or create the firecrawl lock for the current event loop."""
+    loop = asyncio.get_running_loop()
+
+    if loop not in _loop_locks:
+        _loop_locks[loop] = asyncio.Lock()
+
+    return _loop_locks[loop]
 
 
 async def _map_urls_with_lock(app: FirecrawlApp, domain: str, limit: Optional[int] = None) -> List[str]:
     """Async wrapper for map_urls_fast_enhanced with thread-safe access."""
-    async with _firecrawl_lock:
+    async with _get_firecrawl_lock():
         return await asyncio.to_thread(map_urls_fast_enhanced, app, domain, limit)
 
 
@@ -286,6 +297,41 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
             return []
 
 
+def _run_async_coro(coro):
+    """Execute async coroutine from sync context with proper event loop handling.
+    
+    Args:
+        coro: Async coroutine to execute
+        
+    Returns:
+        Result from executing the coroutine
+        
+    Raises:
+        Exception: Re-raises any exception from coroutine execution
+    """
+    import concurrent.futures
+    
+    try:
+        # Try to get running loop first
+        loop = asyncio.get_running_loop()
+        # If there's a running loop, submit the coroutine to it
+        future = asyncio.run_coroutine_threadsafe(coro, loop)
+        return future.result()
+    except RuntimeError:
+        # No running loop, check if there's an existing loop
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                # Loop is running in another thread, use run_coroutine_threadsafe
+                future = asyncio.run_coroutine_threadsafe(coro, loop)
+                return future.result()
+            else:
+                # Loop exists but not running, use run_until_complete
+                return loop.run_until_complete(coro)
+        except RuntimeError:
+            # No loop exists, use asyncio.run
+            return asyncio.run(coro)
+
 def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 20, use_fast_map: bool = True) -> Dict[str, Any]:
     """High-level bulk mapping API compatible with tests.
     
@@ -311,14 +357,21 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
             "details": {}
         }
     
-    # Call async function from sync context
+    # Call async function from sync context with proper event loop handling
+    async def _async_wrapper():
+        return await map_urls_concurrently(app, domains, limit=max_urls_per_domain)
+
     try:
-        import asyncio
-        result = asyncio.run(map_urls_concurrently(app, domains, limit=max_urls_per_domain))
-    except RuntimeError:
-        # If already in an event loop, use get_event_loop
-        loop = asyncio.get_event_loop()
-        result = loop.run_until_complete(map_urls_concurrently(app, domains, limit=max_urls_per_domain))
+        result = _run_async_coro(_async_wrapper())
+    except Exception as e:
+        # Log error and return empty result
+        logger.error(f"Failed to execute URL mapping: {e}")
+        return {
+            "urls_found": 0,
+            "domains_processed": 0,
+            "processing_time": time.time() - start_time,
+            "details": {}
+        }
     
     # Calculate summary statistics
     total_urls = sum(len(urls) for urls in result.values())

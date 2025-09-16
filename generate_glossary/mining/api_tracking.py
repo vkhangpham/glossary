@@ -404,15 +404,10 @@ def estimate_api_costs(usage_data: Dict[str, Any], performance_metrics: Dict[str
     Returns:
         Dictionary with cost analysis
     """
-    # Rough cost estimates (hypothetical values based on typical API pricing)
-    cost_per_call = {
-        "search_calls": 0.01,
-        "scrape_calls": 0.02,
-        "map_calls": 0.005,  # Cheaper due to 15x performance improvement
-        "batch_scrape_calls": 0.10,  # Higher per-call but much more efficient
-        "extract_calls": 0.03,
-        "queue_status_calls": 0.001  # Very cheap monitoring calls
-    }
+    # Get cost estimates from configuration
+    from generate_glossary.config import get_mining_config
+    mining_config = get_mining_config()
+    cost_per_call = mining_config.api_costs
 
     total_estimated_cost = 0.0
     cost_breakdown = {}

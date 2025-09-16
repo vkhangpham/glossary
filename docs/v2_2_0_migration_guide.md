@@ -9,7 +9,11 @@ Firecrawl v2.2.0 provides 15x performance improvement with full backward compati
 ### 1. Environment Setup
 ```bash
 export FIRECRAWL_API_KEY='fc-your-key'
-python test_execution_script.py  # Validate setup
+
+# Validate setup with test suite
+make test-unit          # Run unit tests (no API key required)
+make test-integration   # Run integration tests (requires API key)
+make test-env-check     # Check environment setup
 ```
 
 ### 2. Code Migration (Optional)
@@ -21,23 +25,27 @@ from generate_glossary.mining import mine_concepts
 results = mine_concepts(["AI", "ML"])
 
 # After (optional enhancements)
+# Configure performance profile separately
+from generate_glossary.mining.performance import configure_performance_profile
+configure_performance_profile("speed")  # Performance optimization
+
 results = mine_concepts(
     concepts=["AI", "ML"],
-    max_pages=10,                # PDF page limit
-    use_queue_monitoring=True,   # Queue analytics
-    use_map_endpoint=True,       # 15x faster URL discovery
-    performance_profile="speed"  # Performance optimization
+    max_pages=10,                 # PDF page limit
+    enable_queue_monitoring=True, # Queue analytics
+    use_fast_map=True,           # 15x faster URL discovery
+    # Note: use_map_endpoint is also supported as legacy alias
 )
 ```
 
 ### 3. CLI Migration (Optional)
 ```bash
 # Before (still works)
-uv run mine-web -i concepts.txt -o results/
+uv run mine-web concepts.txt --output results.json
 
 # After (optional features)
-uv run mine-web -i concepts.txt -o results/ \
-  --max-pages 10 --queue-status --use-map-endpoint --performance-profile speed
+uv run mine-web concepts.txt --output results.json \
+  --max-pages 10 --queue-status --use-map-endpoint
 ```
 
 ## New Features

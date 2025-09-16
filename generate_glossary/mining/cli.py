@@ -52,17 +52,24 @@ Firecrawl v2.2.0 Features:
         """
     )
     
-    # Positional argument
+    # Positional argument with optional alias
     parser.add_argument(
         "terms_file",
         help="Path to file containing terms to mine (one per line)"
     )
-    
+
+    # Optional alias for input file (for backward compatibility)
+    parser.add_argument(
+        "-i", "--input",
+        dest="terms_file_alias",
+        help="Alternative way to specify input file (use positional argument instead)"
+    )
+
     # Required arguments
     parser.add_argument(
         "-o", "--output",
         required=True,
-        help="Output path for results JSON file"
+        help="Output path for results JSON file or directory (will create results.json)"
     )
     
     # Core processing arguments
@@ -308,7 +315,11 @@ def configure_logging(args=None, level: str = None) -> None:
     # Map level name to logging level
     level_obj = getattr(logging, level_name, logging.INFO)
     
-    # Set logger level and handler levels
+    # Configure root logger to ensure consistent logging across the application
+    root_logger = logging.getLogger()
+    root_logger.setLevel(level_obj)
+    
+    # Also configure the specific mining logger
     logger.setLevel(level_obj)
     for handler in logger.handlers:
         if not isinstance(handler, logging.FileHandler):
@@ -334,11 +345,29 @@ def main() -> int:
 
     # Configure logging
     configure_logging(args)
-    
+
+    # Handle -i/--input alias if provided
+    if hasattr(args, 'terms_file_alias') and args.terms_file_alias:
+        if args.terms_file and args.terms_file != args.terms_file_alias:
+            logger.warning("Both positional terms_file and -i/--input provided, using positional argument")
+        else:
+            args.terms_file = args.terms_file_alias
+
+    # Handle directory output (create {output_dir}/results.json)
+    output_path = Path(args.output)
+    if output_path.is_dir() or (not output_path.suffix and not output_path.exists()):
+        # It's a directory, create results.json inside it
+        output_path = output_path / "results.json"
+        args.output = str(output_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+    elif output_path.parent and not output_path.parent.exists():
+        # Create parent directories for file output
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
     # Validate API key
     if not validate_firecrawl_api_key():
         return 1
-    
+
     try:
         # Load terms
         terms = load_terms_from_file(args.terms_file)

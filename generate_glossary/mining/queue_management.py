@@ -456,11 +456,13 @@ async def poll_job_with_adaptive_strategy(app: FirecrawlApp, job_id: str,
             raise
 
 
-async def apply_intelligent_throttling(app: Optional[FirecrawlApp] = None) -> float:
+async def apply_intelligent_throttling(app: Optional[FirecrawlApp] = None,
+                                      current_profile=None) -> float:
     """Apply intelligent throttling based on predictive queue management and load forecasting.
 
     Args:
         app: Firecrawl client, will get default if None
+        current_profile: Performance profile object, will import if None
 
     Returns:
         Optimal delay in seconds before proceeding with batch operations
@@ -489,9 +491,10 @@ async def apply_intelligent_throttling(app: Optional[FirecrawlApp] = None) -> fl
             # Base throttling logic
             throttle_delay = 0.0
 
-            # Get current performance profile to avoid circular dependency
-            from .performance import get_current_profile
-            current_profile = get_current_profile()
+            # Get current performance profile (use parameter or fallback to import)
+            if current_profile is None:
+                from .performance import get_current_profile
+                current_profile = get_current_profile()
 
             if queue_utilization > current_profile.queue_threshold:
                 # Queue approaching or exceeding capacity
@@ -568,8 +571,12 @@ def get_queue_predictor() -> QueuePredictor:
 def set_performance_profile(profile: PerformanceProfile) -> None:
     """Set the performance profile for queue management via performance module."""
     # Set the profile in the performance module to maintain sync
-    import sys
-    sys.modules['generate_glossary.mining.performance']._performance_profile = profile
+    try:
+        from . import performance
+        performance.set_profile(profile)
+    except (ImportError, AttributeError) as e:
+        # Handle case where performance module is not available or setter is missing
+        raise RuntimeError(f"Unable to set performance profile: {e}") from e
 
 
 def reset_queue_state() -> None:

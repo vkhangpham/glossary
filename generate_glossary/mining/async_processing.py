@@ -20,6 +20,83 @@ from generate_glossary.utils.logger import get_logger, log_with_context
 logger = get_logger(__name__)
 
 
+class AdjustableSemaphore:
+    """A thread-safe semaphore wrapper that allows adjusting capacity without race conditions."""
+
+    def __init__(self, value: int = 1):
+        self._semaphore = asyncio.Semaphore(value)
+        self._lock = asyncio.Lock()
+        self._current_capacity = value
+        self._acquired_count = 0
+        self._background_tasks: set = set()
+
+    def _track_task(self, task):
+        """Add task to tracking set and add done callback to remove it."""
+        self._background_tasks.add(task)
+        task.add_done_callback(lambda t: self._background_tasks.discard(t))
+
+    async def acquire(self):
+        """Acquire the semaphore."""
+        await self._semaphore.acquire()
+        async with self._lock:
+            self._acquired_count += 1
+
+    def release(self):
+        """Release the semaphore."""
+        # Use a task to handle the async lock in sync context
+        async def _release():
+            async with self._lock:
+                self._acquired_count = max(0, self._acquired_count - 1)
+
+        # Try to run the task if there's an event loop, otherwise skip the counter update
+        try:
+            loop = asyncio.get_running_loop()
+            task = asyncio.create_task(_release())
+            self._track_task(task)
+        except RuntimeError:
+            # No running loop, just decrement without locking (best effort)
+            self._acquired_count = max(0, self._acquired_count - 1)
+
+        self._semaphore.release()
+
+    async def adjust_capacity(self, new_capacity: int):
+        """Adjust the semaphore capacity safely."""
+        if new_capacity <= 0:
+            raise ValueError("Capacity must be positive")
+
+        async with self._lock:
+            old_capacity = self._current_capacity
+            self._current_capacity = new_capacity
+
+            if new_capacity > old_capacity:
+                # Increase capacity: release additional permits
+                additional_permits = new_capacity - old_capacity
+                for _ in range(additional_permits):
+                    self._semaphore.release()
+            elif new_capacity < old_capacity:
+                # Decrease capacity: acquire permits to reduce availability
+                permits_to_reduce = old_capacity - new_capacity
+                for _ in range(permits_to_reduce):
+                    # Create a task to acquire permits without blocking this function
+                    task = asyncio.create_task(self._semaphore.acquire())
+                    self._track_task(task)
+
+    @property
+    def capacity(self) -> int:
+        """Get current capacity."""
+        return self._current_capacity
+
+    @property
+    def acquired_count(self) -> int:
+        """Get number of currently acquired permits."""
+        return self._acquired_count
+
+    async def cleanup(self):
+        """Wait for all background tasks to complete."""
+        if self._background_tasks:
+            await asyncio.gather(*self._background_tasks, return_exceptions=True)
+
+
 class ConcurrencyManager:
     """Advanced semaphore-based concurrency control for different operation types."""
 
@@ -36,11 +113,11 @@ class ConcurrencyManager:
         }
         self.adaptive_limits = self.resource_limits.copy()
 
-    def get_semaphore(self, operation_type: str) -> asyncio.Semaphore:
+    def get_semaphore(self, operation_type: str) -> AdjustableSemaphore:
         """Get or create semaphore for operation type with adaptive limits."""
         if operation_type not in self.semaphores:
             limit = self.adaptive_limits.get(operation_type, 5)
-            self.semaphores[operation_type] = asyncio.Semaphore(limit)
+            self.semaphores[operation_type] = AdjustableSemaphore(limit)
         return self.semaphores[operation_type]
 
     async def acquire_resource(self, operation_type: str, correlation_id: str = None):
@@ -110,7 +187,7 @@ class ConcurrencyManager:
 
         return stats
 
-    def adapt_limits_based_on_performance(self):
+    async def adapt_limits_based_on_performance(self):
         """Dynamically adjust resource limits based on performance metrics."""
         stats = self.get_performance_stats()
 
@@ -123,15 +200,17 @@ class ConcurrencyManager:
             if utilization > 0.8 and avg_wait_time < 0.5:
                 new_limit = min(current_limit + 2, 25)  # Cap at 25
                 self.adaptive_limits[op_type] = new_limit
-                # Recreate semaphore with new limit
-                self.semaphores[op_type] = asyncio.Semaphore(new_limit)
+                # Safely adjust semaphore capacity
+                semaphore = self.get_semaphore(op_type)
+                await semaphore.adjust_capacity(new_limit)
 
             # Decrease limit if high wait times (resource contention)
             elif avg_wait_time > 2.0:
                 new_limit = max(current_limit - 1, 2)  # Minimum 2
                 self.adaptive_limits[op_type] = new_limit
-                # Recreate semaphore with new limit
-                self.semaphores[op_type] = asyncio.Semaphore(new_limit)
+                # Safely adjust semaphore capacity
+                semaphore = self.get_semaphore(op_type)
+                await semaphore.adjust_capacity(new_limit)
 
     def reset_stats(self):
         """Reset performance statistics."""
@@ -604,6 +683,7 @@ def search_concepts_batch(concepts: List[str], max_results_per_concept: int = 3,
     return _search_batch_core(client, concepts, max_results_per_concept)
 __all__ = [
     'ConcurrencyManager',
+    'AdjustableSemaphore',
     'AsyncResultAggregator',
     'execute_with_resource_management',
     'process_with_streaming',

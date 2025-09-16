@@ -10,6 +10,7 @@ import time
 import hmac
 import hashlib
 import logging
+import collections
 from typing import Optional, Dict, Any, List
 from urllib.parse import urlparse
 from firecrawl import FirecrawlApp
@@ -26,7 +27,8 @@ logger = get_logger(__name__)
 
 # Global webhook state
 _active_webhooks: Dict[str, WebhookConfig] = {}
-_webhook_events: List[Dict[str, Any]] = []
+# Use bounded deque to enforce hard memory limits (max 1000 events)
+_webhook_events: collections.deque[Dict[str, Any]] = collections.deque(maxlen=1000)
 _webhook_stats: Dict[str, Any] = {
     'total_events': 0,
     'successful_events': 0,
@@ -462,11 +464,8 @@ def handle_webhook_event(event_data: Dict[str, Any], webhook_url: str,
                 'data': event_data,
                 'correlation_id': correlation_id
             }
+            # Add to bounded deque (automatically removes oldest when full)
             _webhook_events.append(event_record)
-
-            # Keep only recent events (last 1000)
-            if len(_webhook_events) > 1000:
-                _webhook_events.pop(0)
 
             # Process based on event type
             success = _process_event_by_type(event_type, event_data, correlation_id)

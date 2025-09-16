@@ -53,14 +53,13 @@ results = mine_concepts(
 ### CLI Usage
 ```bash
 # Basic usage
-uv run mine-web -i concepts.txt -o results/
+uv run mine-web concepts.txt --output results.json
 
 # With v2.2.0 features
-uv run mine-web -i concepts.txt -o results/ \
+uv run mine-web concepts.txt --output results.json \
   --max-pages 10 \
   --queue-status \
-  --use-map-endpoint \
-  --performance-profile speed
+  --use-map-endpoint
 ```
 
 ## Module Documentation

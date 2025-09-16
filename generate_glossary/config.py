@@ -358,21 +358,66 @@ class WebExtractionConfig:
 @dataclass
 class MiningConfig:
     """Configuration for mining operations with Firecrawl v2.0 features."""
-    
+
     # Processing constants (updated for new mining API)
     batch_size: int = 25
     max_concurrent_operations: int = 5
     max_urls_per_concept: int = 3
-    
+
     # Performance settings
     request_timeout: int = 30
     retry_attempts: int = 3
     retry_delay: float = 1.0
-    
+
     # Firecrawl v2.0 specific settings
     max_age: int = 172800000  # 2 days cache in milliseconds
     use_summary: bool = True  # Enable summary format by default
     use_batch_scrape: bool = True  # Enable batch scraping by default
+
+    # API Cost Configuration
+    api_costs: Dict[str, float] = field(default_factory=dict)
+
+    def __post_init__(self):
+        """Initialize API costs with default values if not provided."""
+        # Initialize default costs
+        default_costs = {
+            "search_calls": 0.01,
+            "scrape_calls": 0.02,
+            "map_calls": 0.005,
+            "batch_scrape_calls": 0.10,
+            "extract_calls": 0.03,
+            "queue_status_calls": 0.001
+        }
+
+        # Attempt to override defaults with environment variables
+        env_cost_mapping = {
+            "search_calls": "GLOSSARY_MINING_API_COST_SEARCH",
+            "scrape_calls": "GLOSSARY_MINING_API_COST_SCRAPE",
+            "map_calls": "GLOSSARY_MINING_API_COST_MAP",
+            "batch_scrape_calls": "GLOSSARY_MINING_API_COST_BATCH_SCRAPE",
+            "extract_calls": "GLOSSARY_MINING_API_COST_EXTRACT",
+            "queue_status_calls": "GLOSSARY_MINING_API_COST_QUEUE_STATUS"
+        }
+
+        for cost_key, env_key in env_cost_mapping.items():
+            env_value = os.getenv(env_key)
+            if env_value is not None:
+                try:
+                    default_costs[cost_key] = float(env_value)
+                except (ValueError, TypeError):
+                    # Keep the default value if env var is invalid
+                    pass
+
+        # Merge with any provided api_costs, validating numeric types
+        if self.api_costs and isinstance(self.api_costs, dict):
+            for key, value in self.api_costs.items():
+                try:
+                    default_costs[key] = float(value)
+                except (ValueError, TypeError):
+                    # Skip invalid values, keep default
+                    pass
+
+        self.api_costs = default_costs
 
 
 @dataclass

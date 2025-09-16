@@ -62,11 +62,11 @@ Mining module refactored into 9 focused modules:
 ### Usage
 ```bash
 # Basic usage (existing code unchanged)
-uv run mine-web -i concepts.txt -o results/
+uv run mine-web concepts.txt --output results.json
 
 # With v2.2.0 features
-uv run mine-web -i concepts.txt -o results/ \
-  --max-pages 10 --queue-status --use-map-endpoint --performance-profile speed
+uv run mine-web concepts.txt --output results.json \
+  --max-pages 10 --queue-status --use-map-endpoint
 ```
 
 ## Usage

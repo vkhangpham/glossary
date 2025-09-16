@@ -147,23 +147,20 @@ _search_concepts_batch = search_concepts_batch
 _batch_scrape_urls = batch_scrape_urls
 _extract_with_smart_prompts = extract_with_smart_prompts
 
+# Import run_async_safely for loop-safe execution
+from generate_glossary.llm.helpers import run_async_safely
+
 # Legacy function aliases for compatibility
 def _map_urls_concurrently(domains, limit=None, concurrency=5):
     """Legacy alias for map_urls_concurrently that injects client and remaps args."""
-    import asyncio
-
     # Resolve client
     app = get_client()
 
     # Build the coroutine with injected client
     coro = map_urls_concurrently(app, domains, limit=limit, concurrency=concurrency)
 
-    # Run it with appropriate event loop handling
-    try:
-        return asyncio.get_event_loop().run_until_complete(coro)
-    except RuntimeError:
-        # Fall back to asyncio.run if no event loop
-        return asyncio.run(coro)
+    # Run it with loop-safe execution
+    return run_async_safely(coro)
 
 def _map_urls_fast_enhanced(*args, **kwargs):
     """Legacy alias for map_urls_fast_enhanced."""

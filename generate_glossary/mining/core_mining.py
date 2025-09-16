@@ -50,6 +50,32 @@ from generate_glossary.llm import run_async_safely
 logger = get_logger(__name__)
 
 
+def _normalize_legacy_parameters(**kwargs) -> Dict[str, Any]:
+    """Normalize legacy parameter aliases to current parameter names.
+    
+    This centralizes legacy parameter handling to avoid repetition and potential
+    event loop issues with parameter processing across different contexts.
+    
+    Args:
+        **kwargs: Parameters that may include legacy aliases
+        
+    Returns:
+        Dictionary with normalized parameters
+    """
+    normalized = kwargs.copy()
+    
+    # Handle max_pages_per_pdf -> max_pages alias
+    if normalized.get('max_pages') is None and 'max_pages_per_pdf' in normalized:
+        normalized['max_pages'] = normalized.pop('max_pages_per_pdf')
+        logger.debug(f"Normalized legacy parameter max_pages_per_pdf={normalized['max_pages']} to max_pages")
+    
+    # Handle use_map_endpoint -> use_fast_map alias  
+    if 'use_map_endpoint' in normalized:
+        normalized['use_fast_map'] = normalized.pop('use_map_endpoint')
+        logger.debug(f"Normalized legacy parameter use_map_endpoint={normalized['use_fast_map']} to use_fast_map")
+    
+    return normalized
+
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=1, min=2, max=30),
@@ -247,9 +273,12 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
     Returns:
         Dictionary with scraped results
     """
-    # Handle parameter aliasing
-    if max_pages is None and max_pages_per_pdf is not None:
-        max_pages = max_pages_per_pdf
+    # Normalize legacy parameters
+    params = _normalize_legacy_parameters(
+        max_pages=max_pages,
+        max_pages_per_pdf=max_pages_per_pdf
+    )
+    max_pages = params['max_pages']
 
     with processing_context("batch_scrape_urls") as correlation_id:
         log_processing_step(
@@ -274,7 +303,8 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
         try:
             # Apply intelligent throttling based on queue status
             if enable_queue_monitoring:
-                throttle_delay = await apply_intelligent_throttling(app)
+                current_profile = get_current_profile()
+                throttle_delay = await apply_intelligent_throttling(app, current_profile)
                 if throttle_delay > 0:
                     log_with_context(
                         logger,
@@ -303,17 +333,31 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                 "onlyMainContent": True
             }
 
-            # v2.2.0: Add maxPages parameter for PDF control
+            # v2.2.0: Add maxPages parameter for PDF control - support both formats for SDK compatibility
             if max_pages is not None:
-                scrape_params["maxPages"] = max_pages
+                scrape_params["maxPages"] = max_pages  # Top-level format
+                # Also add nested format for newer SDK versions
+                if "pageOptions" not in scrape_params:
+                    scrape_params["pageOptions"] = {}
+                scrape_params["pageOptions"]["pdf"] = {"maxPages": max_pages}
 
             # Execute batch scrape with v2.2.0 enhanced parameters
             try:
                 result = app.batch_scrape(**scrape_params)
 
                 # Handle job-based response (async job submission)
-                if isinstance(result, dict) and "job_id" in result:
-                    job_id = result["job_id"]
+                # Support multiple job ID formats: job_id, jobId, ID, or nested data.jobId
+                job_id = None
+                if isinstance(result, dict):
+                    job_id = (
+                        result.get('job_id') or
+                        result.get('jobId') or
+                        result.get('ID') or
+                        (result.get('data') or {}).get('jobId') or
+                        (result.get('data') or {}).get('job_id')
+                    )
+
+                if job_id:
                     log_with_context(
                         logger,
                         logging.INFO,
@@ -391,6 +435,9 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
 
                         # Add v2.2.0 maxPages parameter under pageOptions for PDF control
                         if max_pages is not None:
+                            # Ensure pageOptions exists before setting pdf parameters
+                            if "pageOptions" not in scrape_params:
+                                scrape_params["pageOptions"] = {}
                             scrape_params["pageOptions"]["pdf"] = {"maxPages": max_pages}
 
                         result = app.scrape(**scrape_params)
@@ -443,9 +490,12 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
     Returns:
         List of WebResource objects with extracted definitions
     """
-    # Handle parameter aliasing
-    if max_pages is None and max_pages_per_pdf is not None:
-        max_pages = max_pages_per_pdf
+    # Normalize legacy parameters
+    params = _normalize_legacy_parameters(
+        max_pages=max_pages,
+        max_pages_per_pdf=max_pages_per_pdf
+    )
+    max_pages = params['max_pages']
 
     with processing_context(f"extract_smart_prompts_{concept}") as correlation_id:
         log_processing_step(
@@ -631,24 +681,14 @@ def mine_concepts(concepts: List[str],
     with processing_context("mine_concepts_unified") as correlation_id:
         start_time = time.time()
 
-        # Legacy parameter normalization
-        if max_pages is None and "max_pages_per_pdf" in kwargs:
-            max_pages = kwargs["max_pages_per_pdf"]
-            log_with_context(
-                logger,
-                logging.DEBUG,
-                f"Normalized legacy parameter max_pages_per_pdf={max_pages} to max_pages",
-                correlation_id=correlation_id
-            )
-
-        if "use_map_endpoint" in kwargs and use_fast_map == True:  # Only override if not explicitly set
-            use_fast_map = bool(kwargs["use_map_endpoint"])
-            log_with_context(
-                logger,
-                logging.DEBUG,
-                f"Normalized legacy parameter use_map_endpoint={use_fast_map} to use_fast_map",
-                correlation_id=correlation_id
-            )
+        # Normalize legacy parameters
+        params = _normalize_legacy_parameters(
+            max_pages=max_pages,
+            use_fast_map=use_fast_map,
+            **kwargs
+        )
+        max_pages = params['max_pages']
+        use_fast_map = params['use_fast_map']
 
         # Setup webhooks if configured
         if webhook_config:
@@ -703,7 +743,14 @@ def mine_concepts(concepts: List[str],
                 "error": error_msg,
                 "concepts_processed": 0,
                 "total_definitions": 0,
-                "processing_time_seconds": 0
+                "processing_time_seconds": 0,
+                "statistics": {
+                    "total_concepts": 0,
+                    "successful": 0,
+                    "total_resources": 0
+                },
+                "v2_2_0_features_used": {},
+                "v2_2_0_features_used_list": []
             }
 
         # Get configuration with performance profile integration
@@ -809,7 +856,14 @@ def mine_concepts(concepts: List[str],
                 "error": str(e),
                 "concepts_processed": 0,
                 "total_definitions": 0,
-                "processing_time_seconds": total_time
+                "processing_time_seconds": total_time,
+                "statistics": {
+                    "total_concepts": 0,
+                    "successful": 0,
+                    "total_resources": 0
+                },
+                "v2_2_0_features_used": {},
+                "v2_2_0_features_used_list": []
             }
 
 
@@ -857,11 +911,41 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
 
         # Stage 2.5: Fast Map and hybrid URL discovery
         if use_fast_map or use_hybrid:
-            # Derive unique base domains from search results
-            domains = list(set(
-                urlparse(url).scheme + "://" + urlparse(url).netloc
-                for url in all_urls if url
-            ))
+            # Derive unique base domains from search results with error handling
+            domains = []
+            skipped_urls = 0
+
+            for url in all_urls:
+                if not url or not url.strip():
+                    continue
+
+                try:
+                    parsed = urlparse(url.strip())
+                    if parsed.scheme and parsed.netloc:
+                        domain = f"{parsed.scheme}://{parsed.netloc}"
+                        domains.append(domain)
+                    else:
+                        skipped_urls += 1
+                except Exception as e:
+                    # Log malformed URL and continue
+                    log_with_context(
+                        logger,
+                        logging.WARNING,
+                        f"Skipped malformed URL during domain extraction: {url!r} - {e}",
+                        correlation_id=correlation_id
+                    )
+                    skipped_urls += 1
+
+            # Remove duplicates
+            domains = list(set(domains))
+
+            if skipped_urls > 0:
+                log_with_context(
+                    logger,
+                    logging.INFO,
+                    f"Skipped {skipped_urls} malformed URLs during domain extraction",
+                    correlation_id=correlation_id
+                )
 
             if domains:
                 # Get domain limits with optimize_url_discovery

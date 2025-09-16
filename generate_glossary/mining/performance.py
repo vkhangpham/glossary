@@ -8,6 +8,7 @@ performance adjustment based on usage patterns and system metrics.
 import time
 import logging
 import statistics
+import threading
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 
@@ -18,10 +19,35 @@ from generate_glossary.utils.logger import get_logger, log_processing_step, log_
 
 logger = get_logger(__name__)
 
+# Module-level variable to track profile changes
+_profile_last_changed: Optional[datetime] = None
+
 # Global performance state
 _performance_profile = PerformanceProfile.balanced()
 _performance_history: List[Dict[str, Any]] = []
+
+# Thread synchronization
+_profile_lock = threading.Lock()
 _tuning_recommendations: List[Dict[str, Any]] = []
+
+
+def set_profile(profile: PerformanceProfile) -> None:
+    """Set the performance profile thread-safely.
+
+    Args:
+        profile: The PerformanceProfile instance to set
+
+    Raises:
+        TypeError: If profile is not a PerformanceProfile instance
+    """
+    if not isinstance(profile, PerformanceProfile):
+        raise TypeError("Profile must be a PerformanceProfile instance")
+
+    global _performance_profile, _profile_last_changed
+
+    with _profile_lock:
+        _performance_profile = profile
+        _profile_last_changed = datetime.now()
 
 
 def configure_performance_profile(profile_name: str = None, custom_settings: Dict[str, Any] = None) -> Dict[str, Any]:
@@ -65,6 +91,10 @@ def configure_performance_profile(profile_name: str = None, custom_settings: Dic
                 _performance_profile = PerformanceProfile(**custom_settings)
             else:
                 raise ValueError(f"Invalid profile_name '{profile_name}' or missing custom_settings")
+
+            # Update profile change timestamp
+            global _profile_last_changed
+            _profile_last_changed = datetime.now()
 
             # Calculate expected performance impact
             performance_impact = _calculate_profile_impact(old_profile_name, _performance_profile.name)
@@ -324,16 +354,23 @@ def _auto_tune_concurrency(performance_metrics: Dict[str, Any]) -> List[Dict[str
     # If error rate is high, reduce concurrency
     if error_rate > 0.1:  # 10% error rate
         global _performance_profile
-        new_concurrent = max(5, int(_performance_profile.max_concurrent * 0.8))
-        if new_concurrent != _performance_profile.max_concurrent:
-            _performance_profile.max_concurrent = new_concurrent
-            optimizations.append({
-                "type": "concurrency_reduction",
-                "reason": f"High error rate ({error_rate:.1%})",
-                "old_value": _performance_profile.max_concurrent,
-                "new_value": new_concurrent,
-                "expected_improvement": "reduced error rate"
-            })
+
+        with _profile_lock:
+            # Capture values while holding the lock
+            old_concurrent = _performance_profile.max_concurrent
+            new_concurrent = max(5, int(old_concurrent * 0.8))
+
+            if new_concurrent != old_concurrent:
+                _performance_profile.max_concurrent = new_concurrent
+
+                # Build optimization entry with captured old value
+                optimizations.append({
+                    "type": "concurrency_reduction",
+                    "reason": f"High error rate ({error_rate:.1%})",
+                    "old_value": old_concurrent,
+                    "new_value": new_concurrent,
+                    "expected_improvement": "reduced error rate"
+                })
 
     return optimizations
 
@@ -522,8 +559,12 @@ def _identify_optimization_opportunities(performance_metrics: Dict[str, Any], qu
 
 def _get_profile_age_minutes() -> int:
     """Get age of current profile in minutes."""
-    # This is a simplified implementation - in real code you'd track profile change time
-    return 30  # Placeholder
+    global _profile_last_changed
+    if _profile_last_changed is None:
+        return 0  # Profile never changed
+
+    time_diff = datetime.now() - _profile_last_changed
+    return max(0, int(time_diff.total_seconds() // 60))
 
 
 def get_current_profile() -> PerformanceProfile:

@@ -38,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `--performance-profile` - Performance optimization
 
 - **Testing and Documentation**:
-  - Comprehensive test execution script
+  - Comprehensive Makefile with test execution targets
   - Mining module documentation
   - API reference guide
   - Migration guide for v2.2.0
@@ -117,6 +117,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `generate_glossary/mining/runner.py` (240 lines) - Separate runner logic
   - `generate_glossary/web_miner_cli.py` (134 lines) - Old CLI interface
   - `generate_glossary/utils/README_TAVILY.md` (94 lines) - Outdated Tavily documentation
+
+### Project Management
+- **Development Workflow**: Used integrated Makefile-based testing instead of separate commit orchestration scripts
+  - `make test-unit` - Fast unit tests for development iteration
+  - `make test-integration` - Integration tests with API validation
+  - `make test-ci` - Complete CI pipeline for automated validation
+  - **Decision Rationale**: Makefile provides better IDE integration, standard tooling, and avoids script proliferation
+  - **Benefits**: Single source of truth for testing, better maintainability, standard Unix tooling
 
 ### Technical Improvements
 - **Mining Module Performance Enhancements**:
