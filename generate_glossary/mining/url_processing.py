@@ -286,6 +286,52 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
             return []
 
 
+def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 20, use_fast_map: bool = True) -> Dict[str, Any]:
+    """High-level bulk mapping API compatible with tests.
+    
+    Args:
+        domains: List of domain URLs to map
+        max_urls_per_domain: Maximum URLs to return per domain
+        use_fast_map: Whether to use fast mapping (ignored, always uses fast mapping)
+    
+    Returns:
+        Dict with keys: urls_found, domains_processed, processing_time, details
+    """
+    import time
+    
+    start_time = time.time()
+    
+    # Resolve client
+    app = get_client()
+    if app is None:
+        return {
+            "urls_found": 0,
+            "domains_processed": 0,
+            "processing_time": time.time() - start_time,
+            "details": {}
+        }
+    
+    # Call async function from sync context
+    try:
+        import asyncio
+        result = asyncio.run(map_urls_concurrently(app, domains, limit=max_urls_per_domain))
+    except RuntimeError:
+        # If already in an event loop, use get_event_loop
+        loop = asyncio.get_event_loop()
+        result = loop.run_until_complete(map_urls_concurrently(app, domains, limit=max_urls_per_domain))
+    
+    # Calculate summary statistics
+    total_urls = sum(len(urls) for urls in result.values())
+    processing_time = time.time() - start_time
+    
+    return {
+        "urls_found": total_urls,
+        "domains_processed": len(result),
+        "processing_time": processing_time,
+        "details": result
+    }
+
+
 def classify_domain_type(url: str) -> str:
     """Classify domain type for specialized mapping strategies.
 
@@ -541,6 +587,7 @@ def optimize_url_discovery(domains: List[str], target_urls_per_domain: int = 20)
 __all__ = [
     'map_urls_concurrently',
     'map_urls_fast_enhanced',
+    'map_urls_fast_enhanced_bulk',
     'classify_domain_type',
     'filter_academic_urls',
     'deduplicate_and_score_urls',

@@ -581,6 +581,27 @@ def reset_concurrency_state():
     _concurrency_manager = ConcurrencyManager()
 
 
+def search_concepts_batch(concepts: List[str], max_results_per_concept: int = 3, **kwargs) -> Dict[str, List[Dict[str, Any]]]:
+    """Search for concepts in batch mode.
+    
+    This function provides an async processing interface to concept search.
+    
+    Args:
+        concepts: List of concepts to search for
+        max_results_per_concept: Maximum results per concept
+        **kwargs: Additional arguments
+        
+    Returns:
+        Dictionary mapping concepts to search results
+    """
+    from .core_mining import search_concepts_batch as _search_batch_core
+    from .client import get_client
+    
+    client = get_client()
+    if not client:
+        return {}
+    
+    return _search_batch_core(client, concepts, max_results_per_concept)
 __all__ = [
     'ConcurrencyManager',
     'AsyncResultAggregator',
@@ -590,5 +611,6 @@ __all__ = [
     'parallel_map',
     'throttled_execution',
     'get_concurrency_manager',
-    'reset_concurrency_state'
+    'reset_concurrency_state',
+    'search_concepts_batch'
 ]

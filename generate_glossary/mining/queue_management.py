@@ -79,11 +79,27 @@ def get_queue_status(app: Optional[FirecrawlApp] = None) -> Optional[QueueStatus
 
             # Parse response into QueueStatus model with enhanced validation
             if isinstance(status_response, dict):
+                # Extract and compute queue status fields
+                jobs_in_queue = status_response.get("jobs_in_queue", 0)
+                active_jobs = status_response.get("active_jobs", 0)
+                waiting_jobs = status_response.get("waiting_jobs", jobs_in_queue)
+                max_concurrency = status_response.get("max_concurrency", 10)
+
+                # Compute derived fields
+                queue_utilization = waiting_jobs / max(1, max_concurrency)
+                estimated_wait_time = int(waiting_jobs * 30)  # Rough estimate: 30 seconds per job
+
                 queue_status = QueueStatus(
-                    jobs_in_queue=status_response.get("jobs_in_queue", 0),
-                    active_jobs=status_response.get("active_jobs", 0),
-                    waiting_jobs=status_response.get("waiting_jobs", 0),
-                    max_concurrency=status_response.get("max_concurrency", 10),
+                    jobs_in_queue=jobs_in_queue,
+                    active_jobs=active_jobs,
+                    waiting_jobs=waiting_jobs,
+                    queued_jobs=waiting_jobs,  # Alias for compatibility
+                    completed_jobs=status_response.get("completed_jobs", 0),
+                    failed_jobs=status_response.get("failed_jobs", 0),
+                    max_concurrency=max_concurrency,
+                    processing_time_avg=status_response.get("processing_time_avg", 0.0),
+                    queue_utilization=status_response.get("queue_utilization", queue_utilization),
+                    estimated_wait_time=status_response.get("estimated_wait_time", estimated_wait_time),
                     most_recent_success=status_response.get("most_recent_success")
                 )
 
