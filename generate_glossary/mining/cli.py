@@ -69,8 +69,8 @@ Firecrawl v2.2.0 Features:
     parser.add_argument(
         "-c", "--max-concurrent",
         type=int,
-        default=5,
-        help="Maximum concurrent operations (default: 5)"
+        default=10,
+        help="Maximum concurrent operations (default: 10)"
     )
     
     # Firecrawl v2.0 feature arguments
@@ -122,18 +122,21 @@ Firecrawl v2.2.0 Features:
         help="Enable queue status monitoring for intelligent throttling"
     )
 
-    parser.add_argument(
+    # Map endpoint mutually exclusive group with default False
+    map_group = parser.add_mutually_exclusive_group()
+    map_group.set_defaults(use_map_endpoint=False)
+    
+    map_group.add_argument(
         "--use-map-endpoint",
-        dest="use_fast_map",
+        dest="use_map_endpoint",
         action="store_true",
         help="Enable the 15x faster Map endpoint for URL discovery"
     )
 
-    parser.add_argument(
+    map_group.add_argument(
         "--no-map-endpoint",
+        dest="use_map_endpoint",
         action="store_false",
-        dest="use_fast_map",
-        default=True,
         help="Disable the 15x faster Map endpoint for URL discovery"
     )
 
@@ -179,6 +182,16 @@ Firecrawl v2.2.0 Features:
     
     return parser
 
+def create_parser() -> argparse.ArgumentParser:
+    """Create and return the argument parser.
+    
+    This is an alias for setup_argument_parser() for test compatibility.
+    
+    Returns:
+        Configured ArgumentParser instance
+    """
+    return setup_argument_parser()
+
 
 def load_terms_from_file(file_path: str) -> List[str]:
     try:
@@ -214,49 +227,92 @@ def validate_firecrawl_api_key() -> bool:
     return True
 
 
-def validate_v220_parameters(args) -> None:
-    """Validate v2.2.0 specific parameters and combinations."""
-    # Validate max_pages is positive
-    if args.max_pages is not None and args.max_pages <= 0:
-        raise ValueError("--max-pages must be a positive integer")
+def validate_v220_parameters(max_pages=None, webhook_url=None, webhook_events=None, queue_status=False) -> bool:
+    """Validate v2.2.0 specific parameters and combinations.
+    
+    Args:
+        max_pages: Maximum pages to process for PDF parsing
+        webhook_url: Webhook URL for notifications
+        webhook_events: Comma-separated webhook events
+        queue_status: Enable queue status monitoring
+        
+    Returns:
+        True if validation passes, False otherwise
+    """
+    try:
+        # Validate max_pages is positive
+        if max_pages is not None and max_pages <= 0:
+            return False
 
-    # Validate queue monitoring requires API key (warning only since early gate already checked)
-    if args.queue_status and not os.getenv("FIRECRAWL_API_KEY"):
-        logger.warning("--queue-status requested but FIRECRAWL_API_KEY validation already handled upstream")
+        # Validate queue monitoring requires API key (warning only since early gate already checked)
+        if queue_status and not os.getenv("FIRECRAWL_API_KEY"):
+            logger.warning("queue_status requested but FIRECRAWL_API_KEY validation already handled upstream")
 
-    # Validate webhook URL format if provided
-    if args.webhook_url:
-        import re
-        url_pattern = re.compile(
-            r'^https?://'  # http:// or https://
-            r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+'  # domain...
-            r'(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'  # host...
-            r'localhost|'  # localhost...
-            r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # ...or ip
-            r'(?::\d+)?'  # optional port
-            r'(?:/?|[/?]\S+)$', re.IGNORECASE)
-        if not url_pattern.match(args.webhook_url):
-            raise ValueError("--webhook-url must be a valid HTTP/HTTPS URL")
+        # Validate webhook URL format if provided
+        if webhook_url:
+            import re
+            url_pattern = re.compile(
+                r'^https?://'  # http:// or https://
+                r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+' # domain...
+                r'(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'  # host...
+                r'localhost|'  # localhost...
+                r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # ...or ip
+                r'(?::\d+)?'  # optional port
+                r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+            if not url_pattern.match(webhook_url):
+                return False
 
-    logger.debug("v2.2.0 parameter validation passed")
+        logger.debug("v2.2.0 parameter validation passed")
+        return True
+    except Exception:
+        return False
+
+def validate_v220_parameters_from_args(args) -> None:
+    """Wrapper that accepts args and forwards to validate_v220_parameters.
+    
+    Raises ValueError if validation fails.
+    """
+    is_valid = validate_v220_parameters(
+        max_pages=getattr(args, 'max_pages', None),
+        webhook_url=getattr(args, 'webhook_url', None),
+        webhook_events=getattr(args, 'webhook_events', None),
+        queue_status=getattr(args, 'queue_status', False)
+    )
+    
+    if not is_valid:
+        raise ValueError("v2.2.0 parameter validation failed")
 
 
-def configure_logging(args) -> None:
-    if args.quiet:
-        level_name = "ERROR"
-    elif args.verbose:
-        level_name = "DEBUG"
+def configure_logging(args=None, level: str = None) -> None:
+    """Configure logging based on args or level string.
+    
+    Args:
+        args: Parsed arguments object with quiet/verbose/log_level attributes
+        level: Log level string (INFO, DEBUG, etc.) - used if args is None
+    """
+    if args is not None:
+        # Derive level from args
+        if args.quiet:
+            level_name = "ERROR"
+        elif args.verbose:
+            level_name = "DEBUG"
+        else:
+            level_name = args.log_level
+    elif level is not None:
+        # Use provided level string
+        level_name = level
     else:
-        level_name = args.log_level
+        # Default fallback
+        level_name = "INFO"
     
     # Map level name to logging level
-    level = getattr(logging, level_name, logging.INFO)
+    level_obj = getattr(logging, level_name, logging.INFO)
     
     # Set logger level and handler levels
-    logger.setLevel(level)
+    logger.setLevel(level_obj)
     for handler in logger.handlers:
         if not isinstance(handler, logging.FileHandler):
-            handler.setLevel(level)
+            handler.setLevel(level_obj)
     
     # Set environment variable for downstream modules
     os.environ['LOGLEVEL'] = level_name
@@ -267,7 +323,15 @@ def configure_logging(args) -> None:
 def main() -> int:
     parser = setup_argument_parser()
     args = parser.parse_args()
-    
+
+    # Handle map endpoint flag mapping
+    if not hasattr(args, 'use_map_endpoint'):
+        args.use_map_endpoint = False  # Default when unspecified
+
+    # Set use_fast_map for backward compatibility
+    if not hasattr(args, 'use_fast_map'):
+        args.use_fast_map = args.use_map_endpoint
+
     # Configure logging
     configure_logging(args)
     
@@ -290,7 +354,7 @@ def main() -> int:
                 return 1
         
         # Validate v2.2.0 parameters
-        validate_v220_parameters(args)
+        validate_v220_parameters_from_args(args)
 
         # Log configuration
         logger.info(f"Mining {len(terms)} concepts with Firecrawl v2.2.0")
