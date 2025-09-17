@@ -6,7 +6,7 @@ using immutable data structures and pure functions. It replicates the patterns
 from the validation system's functional core.
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Dict, List, Any, Optional, Union, Callable, Tuple, Mapping
 from functools import reduce
 from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
@@ -19,7 +19,7 @@ from contextlib import contextmanager
 from .types import DetectionResult, DisambiguationConfig, EmbeddingConfig, HierarchyConfig, GlobalConfig
 from .embedding_disambiguator import detect_embedding_ambiguity, with_embedding_model
 from .hierarchy_disambiguator import detect_hierarchy_ambiguity
-from .global_disambiguator import detect_global_ambiguity
+from .global_disambiguator import detect_global_ambiguity, with_global_embedding_model
 
 
 # Type aliases for functional composition
@@ -132,11 +132,15 @@ def parallel_detect(
 
     with detection_context(f"Parallel detection with {len(detection_functions)} methods"):
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            # Submit all detection tasks
+            # Submit all detection tasks using safe_detect
             future_to_method = {}
             for method, detection_fn in detection_functions.items():
                 try:
-                    future = executor.submit(detection_fn, terms)
+                    if timeout:
+                        wrapped_fn = with_timeout(detection_fn, timeout)
+                        future = executor.submit(safe_detect, wrapped_fn, terms)
+                    else:
+                        future = executor.submit(safe_detect, detection_fn, terms)
                     future_to_method[future] = method
                 except Exception as e:
                     logging.error(f"Failed to submit detector {method}: {e}")
@@ -148,14 +152,17 @@ def parallel_detect(
                     method = future_to_method[future]
                     try:
                         result = future.result(timeout=timeout)
-                        results[method] = Success(result)
-                        logging.debug(f"Detector {method} completed successfully")
+                        results[method] = result  # safe_detect already returns Result
+                        if is_success(result):
+                            logging.debug(f"Detector {method} completed successfully")
+                        else:
+                            logging.warning(f"Detector {method} failed: {get_error(result)}")
                     except TimeoutError:
                         error_msg = f"Detector {method} timed out"
                         logging.warning(error_msg)
                         results[method] = Failure(error_msg)
                     except Exception as e:
-                        error_msg = f"Detector {method} failed: {str(e)}"
+                        error_msg = f"Detector {method} future failed: {str(e)}"
                         logging.error(error_msg)
                         results[method] = Failure(error_msg, e)
             except TimeoutError:
@@ -177,13 +184,8 @@ def sequential_detect(
     """Execute detection functions sequentially and return results."""
     results = {}
     for method, detection_fn in detection_functions.items():
-        try:
-            result = detection_fn(terms)
-            results[method] = Success(result)
-        except Exception as e:
-            error_msg = f"Detector {method} failed: {str(e)}"
-            logging.error(error_msg)
-            results[method] = Failure(error_msg, e)
+        result = safe_detect(detection_fn, terms)
+        results[method] = result
 
     return results
 
@@ -373,31 +375,22 @@ def compose_detectors(
         results = {}
 
         for method, fn in detectors.items():
-            try:
-                if timeout:
-                    wrapped_fn = with_timeout(fn, timeout)
-                    result = wrapped_fn(terms_list)
-                else:
-                    result = fn(terms_list)
-                results[method] = Success(result)
-            except TimeoutError:
-                error_msg = f"Detector {method} timed out after {timeout}s"
-                logging.warning(error_msg)
+            if timeout:
+                wrapped_fn = with_timeout(fn, timeout)
+                result = safe_detect(wrapped_fn, terms_list)
+            else:
+                result = safe_detect(fn, terms_list)
+            
+            # Handle the result based on error strategy
+            if is_failure(result):
                 if error_strategy == "fail":
-                    raise
+                    raise Exception(get_error(result))
                 elif error_strategy == "return_empty":
                     results[method] = Success([])
                 else:  # skip strategy
-                    results[method] = Failure(error_msg)
-            except Exception as e:
-                error_msg = f"Detector {method} failed: {str(e)}"
-                logging.error(error_msg)
-                if error_strategy == "fail":
-                    raise
-                elif error_strategy == "return_empty":
-                    results[method] = Success([])
-                else:  # skip strategy
-                    results[method] = Failure(error_msg, e)
+                    results[method] = result
+            else:
+                results[method] = result
 
         return results
     return composed
@@ -423,11 +416,19 @@ def validate_config_compatibility(config: DisambiguationConfig) -> bool:
 
 def apply_level_specific_params(config: DisambiguationConfig, level: int) -> DisambiguationConfig:
     """Apply level-specific parameters from profiles if available."""
+    # TODO: Implement level-specific parameter override logic
+    # This should use dataclasses.replace to create new config objects
+    # with updated parameters based on level-specific requirements
     if level in config.level_configs:
         level_config = config.level_configs[level]
         # For now, return the config as-is since level-specific overrides
-        # would require creating new config objects with updated parameters
-        # This can be extended based on specific level override requirements
+        # would require implementing the actual override logic with dataclasses.replace
+        # Example implementation would be:
+        # return dataclasses.replace(config, 
+        #     min_confidence=level_config.get('min_confidence', config.min_confidence),
+        #     methods=level_config.get('methods', config.methods),
+        #     parallel_processing=level_config.get('parallel_processing', config.parallel_processing)
+        # )
     return config
 
 
@@ -463,7 +464,7 @@ def create_global_pipeline(
 ) -> DetectionFn:
     """Build global detection pipeline with model injection."""
     # Create model-injected detection function
-    detection_with_model = with_embedding_model(detect_global_ambiguity, config.model_name)
+    detection_with_model = with_global_embedding_model(detect_global_ambiguity, config.model_name)
 
     def pipeline(terms: List[str]) -> List[DetectionResult]:
         return detection_with_model(terms, web_content, config)
@@ -547,32 +548,22 @@ def create_detection_pipeline(
     # Extract method-specific configurations
     embedding_config, hierarchy_config, global_config = extract_method_configs(config)
 
-    # Create detection pipeline based on enabled methods
-    enabled_configs = {}
-    if "embedding" in config.methods:
-        enabled_configs["embedding"] = embedding_config
-    if "hierarchy" in config.methods:
-        enabled_configs["hierarchy"] = hierarchy_config
-    if "global" in config.methods:
-        enabled_configs["global"] = global_config
+    # Create raw detection functions (not composed) for parallel/sequential processing
+    detection_functions = {}
+    
+    if "embedding" in config.methods and embedding_config and web_content:
+        detection_functions["embedding"] = create_embedding_pipeline(embedding_config, web_content)
+    
+    if "hierarchy" in config.methods and hierarchy_config and hierarchy:
+        detection_functions["hierarchy"] = create_hierarchy_pipeline(hierarchy_config, web_content, hierarchy)
+    
+    if "global" in config.methods and global_config and web_content:
+        detection_functions["global"] = create_global_pipeline(global_config, web_content)
 
-    # Create hybrid pipeline
-    pipeline = create_hybrid_pipeline(
-        embedding_config=enabled_configs.get("embedding"),
-        hierarchy_config=enabled_configs.get("hierarchy"),
-        global_config=enabled_configs.get("global"),
-        web_content=web_content,
-        hierarchy=hierarchy
-    )
-
-    # Execute detection pipeline
+    # Execute detection pipeline using appropriate execution mode
     if config.parallel_processing:
-        results_by_method = pipeline(terms_list)
+        results_by_method = parallel_detect(detection_functions, terms_list, config, timeout=timeout)
     else:
-        # Force sequential execution by wrapping in sequential_detect
-        detection_functions = {
-            method: lambda t, m=method: pipeline(t)[m] for method in enabled_configs.keys()
-        }
         results_by_method = sequential_detect(detection_functions, terms_list)
 
     # Combine results from all methods
