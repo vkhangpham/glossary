@@ -10,7 +10,6 @@ from typing import Dict, List, Any, Optional, Union
 from .utils.text import extract_informative_content, extract_keywords
 from .utils.clustering import calculate_separation_score
 from .utils.confidence import calculate_confidence_score
-from .utils.io import load_hierarchy, load_web_content, save_results
 
 # Level-specific parameters
 LEVEL_PARAMS = {
@@ -113,6 +112,9 @@ def filter_terms_by_level(
 # Legacy utility functions for backward compatibility with sense_splitter
 def _create_legacy_llm_function(llm_provider: str = "gemini"):
     """Create legacy LLM function wrapper."""
+    import warnings
+    warnings.warn("Legacy LLM function wrapper is deprecated; please migrate to functional API", DeprecationWarning, stacklevel=2)
+    
     from generate_glossary.llm import completion
 
     def llm_fn(prompt: str, **kwargs) -> str:
@@ -343,14 +345,11 @@ def _convert_detection_results_to_legacy_dict(detection_results: List) -> Dict[s
     for result in detection_results:
         legacy_dict[result.term] = {
             "term": result.term,
+            "level": result.level,
             "confidence": result.confidence,
             "method": result.method,
             "evidence": result.evidence,
-            "level": getattr(result, 'level', None),
-            "cluster_id": getattr(result, 'cluster_id', None),
-            "cluster_size": getattr(result, 'cluster_size', None),
-            "resources": getattr(result, 'resources', []),
-            "parent_contexts": getattr(result, 'parent_contexts', []),
+            "clusters": result.clusters,
             "metadata": result.metadata
         }
         
@@ -371,14 +370,11 @@ __all__ = [
     "get_term_level",
     "filter_terms_by_level",
 
-    # Re-exported utility functions (for backward compatibility)
+    # Pure utility functions (for backward compatibility)
     "extract_informative_content",
     "extract_keywords",
     "calculate_separation_score",
     "calculate_confidence_score",
-    "load_hierarchy",
-    "load_web_content",
-    "save_results",
 
     # Legacy helper functions
     "_create_legacy_llm_function",

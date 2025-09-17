@@ -140,9 +140,13 @@ def split_senses(
     from .main import split_ambiguous_terms
     from .utils import convert_to_legacy_format, convert_from_legacy_format
     
+    # Handle empty detection results
+    if isinstance(detection_results, list) and not detection_results:
+        return [], []
+    
     # Convert immutable detection results to legacy format if needed
     legacy_detection_results = detection_results
-    if isinstance(detection_results, list) and hasattr(detection_results[0], 'term'):
+    if isinstance(detection_results, list) and detection_results and hasattr(detection_results[0], 'term'):
         # Convert DetectionResult objects to legacy format
         legacy_detection_results = convert_to_legacy_format(detection_results)
     
@@ -342,8 +346,12 @@ def split_senses_functional(
     from .main import split_ambiguous_terms
     from .utils import convert_to_legacy_format, convert_from_legacy_format
     
+    # Handle empty detection results
+    if isinstance(detection_results, list) and not detection_results:
+        return [], []
+    
     # Convert immutable detection results to legacy format if needed
-    if isinstance(detection_results, list) and hasattr(detection_results[0], 'term'):
+    if isinstance(detection_results, list) and detection_results and hasattr(detection_results[0], 'term'):
         # Convert DetectionResult objects to legacy format
         legacy_detection_results = convert_to_legacy_format(detection_results)
     else:
