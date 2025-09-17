@@ -1,5 +1,7 @@
 # Academic Glossary Analysis
 
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/vkhangpham/glossary?utm_source=oss&utm_medium=github&utm_campaign=vkhangpham%2Fglossary&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
 This repository contains tools for generating, validating, analyzing, and visualizing an academic glossary across different hierarchy levels.
 
 ## Hierarchy Structure
@@ -47,7 +49,9 @@ Firecrawl v2.2.0 integration with modular architecture provides 15x performance 
 - Performance profiles (speed/accuracy/balanced)
 
 ### Modular Architecture
+
 Mining module refactored into 9 focused modules:
+
 - `models.py` - Data models and validation
 - `client.py` - Firecrawl client management
 - `performance.py` - Performance profiles and auto-tuning
@@ -60,6 +64,7 @@ Mining module refactored into 9 focused modules:
 - `mining.py` - Unified facade (backward compatibility)
 
 ### Usage
+
 ```bash
 # Basic usage (existing code unchanged)
 uv run mine-web concepts.txt --output results.json
@@ -128,3 +133,4 @@ For detailed documentation on specific components:
 ---
 
 This project focuses on academic concept extraction and hierarchy building, follows functional programming principles throughout, and is designed for processing university-level academic structure.
+
