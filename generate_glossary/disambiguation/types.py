@@ -7,7 +7,8 @@ All data structures are immutable (@frozen dataclasses) to support functional pr
 """
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Any, Optional, Tuple
+from typing import Dict, List, Any, Optional, Tuple, Mapping
+import types
 
 
 @dataclass(frozen=True)
@@ -17,9 +18,26 @@ class DetectionResult:
     term: str
     method: str  # "embedding", "hierarchy", "global"
     confidence: float  # 0.0-1.0
-    evidence: Dict[str, Any]
-    clusters: Optional[List[Dict[str, Any]]] = None
-    metadata: Dict[str, Any] = field(default_factory=dict)
+    evidence: Mapping[str, Any]
+    clusters: Optional[Tuple[Mapping[str, Any], ...]] = None
+    metadata: Mapping[str, Any] = field(default_factory=lambda: types.MappingProxyType({}))
+
+    def __post_init__(self):
+        # Convert evidence to immutable mapping if it's a dict
+        if isinstance(self.evidence, dict):
+            object.__setattr__(self, 'evidence', types.MappingProxyType(self.evidence))
+
+        # Convert clusters to immutable tuple of mappings if needed
+        if self.clusters is not None and isinstance(self.clusters, list):
+            immutable_clusters = tuple(
+                types.MappingProxyType(cluster) if isinstance(cluster, dict) else cluster
+                for cluster in self.clusters
+            )
+            object.__setattr__(self, 'clusters', immutable_clusters)
+
+        # Convert metadata to immutable mapping if it's a dict
+        if isinstance(self.metadata, dict):
+            object.__setattr__(self, 'metadata', types.MappingProxyType(self.metadata))
 
 
 @dataclass(frozen=True)
@@ -28,10 +46,23 @@ class SplitProposal:
 
     original_term: str
     level: int  # hierarchy level (0-3)
-    proposed_senses: List[Dict[str, Any]]
+    proposed_senses: Tuple[Mapping[str, Any], ...]
     confidence: float
-    evidence: Dict[str, Any]
+    evidence: Mapping[str, Any]
     validation_status: Optional[str] = None  # "approved", "rejected", "pending"
+
+    def __post_init__(self):
+        # Convert proposed_senses to immutable tuple of mappings if it's a list
+        if isinstance(self.proposed_senses, list):
+            immutable_senses = tuple(
+                types.MappingProxyType(sense) if isinstance(sense, dict) else sense
+                for sense in self.proposed_senses
+            )
+            object.__setattr__(self, 'proposed_senses', immutable_senses)
+
+        # Convert evidence to immutable mapping if it's a dict
+        if isinstance(self.evidence, dict):
+            object.__setattr__(self, 'evidence', types.MappingProxyType(self.evidence))
 
 
 @dataclass(frozen=True)
@@ -78,13 +109,23 @@ class GlobalConfig:
 
 @dataclass(frozen=True)
 class DisambiguationConfig:
-    """Main configuration for the disambiguation system."""
+    """Main configuration for the disambiguation system.
+
+    Note: Method-specific settings are encapsulated in EmbeddingConfig,
+    HierarchyConfig, and GlobalConfig objects rather than as top-level fields.
+    This design provides better modularity and type safety.
+    """
 
     methods: Tuple[str, ...] = ("embedding", "hierarchy", "global")
     min_confidence: float = 0.5
-    level_configs: Dict[int, LevelConfig] = field(default_factory=dict)
+    level_configs: Mapping[int, LevelConfig] = field(default_factory=lambda: types.MappingProxyType({}))
     embedding_config: EmbeddingConfig = field(default_factory=EmbeddingConfig)
     hierarchy_config: HierarchyConfig = field(default_factory=HierarchyConfig)
     global_config: GlobalConfig = field(default_factory=GlobalConfig)
     parallel_processing: bool = True
     use_cache: bool = True
+
+    def __post_init__(self):
+        # Convert level_configs to immutable mapping if it's a dict
+        if isinstance(self.level_configs, dict):
+            object.__setattr__(self, 'level_configs', types.MappingProxyType(self.level_configs))

@@ -5,7 +5,8 @@ This module provides standard configuration profiles for different disambiguatio
 use cases and utility functions for profile management.
 """
 
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Mapping
+import types
 from ..types import (
     DisambiguationConfig,
     EmbeddingConfig,
@@ -16,9 +17,9 @@ from ..types import (
 from ..utils import LEVEL_PARAMS
 
 
-def create_level_configs() -> Dict[int, LevelConfig]:
-    """Create LevelConfig objects from LEVEL_PARAMS."""
-    return {
+def create_level_configs() -> Mapping[int, LevelConfig]:
+    """Create immutable LevelConfig objects from LEVEL_PARAMS."""
+    level_configs_dict = {
         level: LevelConfig(
             eps=params["eps"],
             min_samples=params["min_samples"],
@@ -28,9 +29,14 @@ def create_level_configs() -> Dict[int, LevelConfig]:
         )
         for level, params in LEVEL_PARAMS.items()
     }
+    return types.MappingProxyType(level_configs_dict)
 
 
 # Predefined Profiles
+#
+# Note: These profiles use method-specific configuration objects (EmbeddingConfig,
+# HierarchyConfig, GlobalConfig) rather than flat fields on DisambiguationConfig.
+# This design provides better type safety and modularity.
 
 ACADEMIC_PROFILE = DisambiguationConfig(
     methods=("embedding", "hierarchy", "global"),

@@ -52,6 +52,7 @@ def detect(
     terms: List[str],
     web_content: Dict[str, Any],
     hierarchy: Dict[str, Any],
+    *,
     config: Optional[GlobalConfig] = None,
     model_name: str = "all-MiniLM-L6-v2",
     eps: float = 0.3,
@@ -71,6 +72,7 @@ def detect(
         terms: List of terms to analyze
         web_content: Web resources for each term
         hierarchy: Hierarchy data
+        config: Optional GlobalConfig (keyword-only)
         model_name: Sentence transformer model
         eps: DBSCAN epsilon for tighter global clustering
         min_samples: Minimum samples for global clusters

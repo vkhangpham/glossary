@@ -3,6 +3,30 @@ Configuration module for the disambiguation system.
 
 This module provides access to configuration classes and predefined profiles
 for the disambiguation system.
+
+## Configuration Design Philosophy
+
+The disambiguation system uses method-specific configuration objects rather than
+flat configuration fields. This design provides several benefits:
+
+- **Type Safety**: Each method's parameters are grouped in their respective config objects
+- **Modularity**: Configuration can be easily extended without affecting other methods
+- **Encapsulation**: Related parameters are kept together (e.g., EmbeddingConfig contains
+  model_name, clustering_algorithm, eps, min_samples, min_resources)
+- **Backward Compatibility**: New parameters can be added to method configs without
+  breaking existing code
+
+### Configuration Structure
+
+- `DisambiguationConfig`: Main configuration containing method-specific configs
+- `EmbeddingConfig`: Settings for embedding-based detection
+- `HierarchyConfig`: Settings for hierarchy-based detection
+- `GlobalConfig`: Settings for global clustering detection
+- `LevelConfig`: Level-specific parameters for different hierarchy levels
+
+This structure differs from a flat configuration with top-level fields like
+`embedding_model`, `clustering_algorithm`, etc., which would create a less
+maintainable and type-safe design.
 """
 
 from ..types import (

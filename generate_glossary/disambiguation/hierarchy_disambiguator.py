@@ -45,6 +45,7 @@ def detect(
     terms: List[str],
     web_content: Optional[Dict[str, Any]],
     hierarchy: Dict[str, Any],
+    *,
     config: Optional[HierarchyConfig] = None,
     min_parent_overlap: float = 0.3,
     max_parent_similarity: float = 0.7
@@ -61,6 +62,7 @@ def detect(
         terms: List of terms to analyze
         web_content: Optional web resources for enhanced analysis
         hierarchy: Hierarchy data with parent-child relationships
+        config: Optional HierarchyConfig (keyword-only)
         min_parent_overlap: Minimum keyword overlap to consider parents related
         max_parent_similarity: Maximum similarity to consider contexts different
         
@@ -111,7 +113,7 @@ def detect(
         # Analyze parent contexts
         parent_contexts = {}
         for parent in parents:
-            context = extract_parent_context(parent, hierarchy, web_content)
+            context = extract_parent_context(parent, hierarchy, web_content, enable_web_enhancement)
             if context:
                 parent_contexts[parent] = context
         
@@ -155,7 +157,8 @@ def detect(
 def extract_parent_context(
     parent: str,
     hierarchy: Dict[str, Any],
-    web_content: Optional[Dict[str, Any]]
+    web_content: Optional[Dict[str, Any]],
+    enable_web_enhancement: bool = True
 ) -> Optional[Dict[str, Any]]:
     """
     Extract context information for a parent term.
@@ -164,6 +167,7 @@ def extract_parent_context(
         parent: Parent term to analyze
         hierarchy: Hierarchy data
         web_content: Optional web resources
+        enable_web_enhancement: Whether to use web content for enhancement
         
     Returns:
         Context dictionary with keywords and relationships
@@ -200,8 +204,8 @@ def extract_parent_context(
                 
                 break
     
-    # Enhance with web content if available
-    if web_content and parent in web_content:
+    # Enhance with web content if available and enabled
+    if enable_web_enhancement and web_content and parent in web_content:
         resources = web_content[parent]
         if isinstance(resources, dict):
             resources = resources.get("resources", [])

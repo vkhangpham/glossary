@@ -54,6 +54,7 @@ def detect(
     terms: List[str],
     web_content: Dict[str, Any],
     hierarchy: Dict[str, Any],
+    *,
     config: Optional[EmbeddingConfig] = None,
     model_name: str = "all-MiniLM-L6-v2",
     clustering_algorithm: str = "dbscan",
@@ -74,6 +75,7 @@ def detect(
         terms: List of terms to analyze
         web_content: Web resources for each term
         hierarchy: Hierarchy data with term information
+        config: Optional EmbeddingConfig (keyword-only)
         model_name: Sentence transformer model to use
         clustering_algorithm: Algorithm for clustering ('dbscan' or 'hdbscan')
         eps: DBSCAN epsilon parameter (max distance between samples)
@@ -160,12 +162,11 @@ def detect(
                 })
             
             # Calculate confidence based on clustering quality
-            confidence = calculate_confidence_score({
-                "num_clusters": len(unique_clusters),
-                "silhouette_score": silhouette,
-                "largest_cluster_ratio": max(c["percentage"] for c in cluster_info),
-                "total_resources": len(contents)
-            })
+            confidence = calculate_confidence_score(
+                num_clusters=len(unique_clusters),
+                silhouette=silhouette,
+                num_resources=len(contents)
+            )
             
             results[term] = {
                 "term": term,
@@ -179,7 +180,8 @@ def detect(
                     "clustering_algorithm": clustering_algorithm,
                     "eps": eps,
                     "min_samples": min_samples,
-                    "model": model_name
+                    "model": model_name,
+                    "largest_cluster_ratio": max(c["percentage"] for c in cluster_info)
                 }
             }
             
