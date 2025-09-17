@@ -31,6 +31,18 @@ WebContent = Dict[str, Any]
 Hierarchy = Dict[str, Any]
 DetectionResults = Dict[str, Dict[str, Any]]
 DetectionMethod = Literal["embedding", "hierarchy", "global", "hybrid"]
+# Functional core imports
+from .core import create_detection_pipeline, get_detection_summary
+from .types import (
+    DisambiguationConfig, 
+    EmbeddingConfig, 
+    HierarchyConfig, 
+    GlobalConfig,
+    DetectionResult,
+    LevelConfig
+)
+from .config.profiles import get_profile, ACADEMIC_PROFILE
+from .splitting import generate_split_proposals, validate_split_proposals, apply_splits_to_hierarchy
 
 
 def detect_ambiguous_terms(
@@ -72,90 +84,31 @@ def detect_ambiguous_terms(
         if web_content_path:
             web_content = load_web_content(web_content_path)
     
-    # Get level-specific parameters
-    level_params = get_level_params(level) if level is not None else {}
+    # Convert legacy config to functional config
+    disambiguation_config = _convert_legacy_config(config, method, level)
     
-    # Apply detection method(s)
-    if method == "embedding":
-        results = embedding_disambiguator.detect(
+    # Use functional core for detection
+    try:
+        detection_results = create_detection_pipeline(
             terms=terms,
             web_content=web_content,
             hierarchy=hierarchy,
-            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
-            clustering_algorithm=config.get("clustering_algorithm", "dbscan"),
-            eps=config.get("dbscan_eps", level_params.get("eps", 0.45)),
-            min_samples=config.get("dbscan_min_samples", level_params.get("min_samples", 2)),
-            min_resources=config.get("min_resources", 5)
-        )
-    
-    elif method == "hierarchy":
-        results = hierarchy_disambiguator.detect(
-            terms=terms,
-            web_content=web_content,
-            hierarchy=hierarchy,
-            min_parent_overlap=config.get("min_parent_overlap", 0.3),
-            max_parent_similarity=config.get("max_parent_similarity", 0.7)
-        )
-    
-    elif method == "global":
-        results = global_disambiguator.detect(
-            terms=terms,
-            web_content=web_content,
-            hierarchy=hierarchy,
-            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
-            eps=config.get("global_eps", 0.3),
-            min_samples=config.get("global_min_samples", 3),
-            min_resources=config.get("min_resources", 5),
-            max_resources_per_term=config.get("max_resources_per_term", 10)
-        )
-    
-    elif method == "hybrid":
-        # Run all methods and merge results
-        results = {}
-        
-        # Embedding-based detection
-        embedding_results = embedding_disambiguator.detect(
-            terms=terms,
-            web_content=web_content,
-            hierarchy=hierarchy,
-            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
-            clustering_algorithm=config.get("clustering_algorithm", "dbscan"),
-            eps=config.get("dbscan_eps", level_params.get("eps", 0.45)),
-            min_samples=config.get("dbscan_min_samples", level_params.get("min_samples", 2)),
-            min_resources=config.get("min_resources", 5)
+            config=disambiguation_config,
+            timeout=config.get("timeout", 300),  # 5 minute default timeout
+            combination_strategy=config.get("combination_strategy", "union")
         )
         
-        # Hierarchy-based detection
-        hierarchy_results = hierarchy_disambiguator.detect(
-            terms=terms,
-            web_content=web_content,
-            hierarchy=hierarchy,
-            min_parent_overlap=config.get("min_parent_overlap", 0.3),
-            max_parent_similarity=config.get("max_parent_similarity", 0.7)
-        )
+        # Convert functional results back to legacy format for backward compatibility
+        results = _convert_detection_results_to_legacy_format(detection_results)
         
-        # Global clustering detection
-        global_results = global_disambiguator.detect(
-            terms=terms,
-            web_content=web_content,
-            hierarchy=hierarchy,
-            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
-            eps=config.get("global_eps", 0.3),
-            min_samples=config.get("global_min_samples", 3),
-            min_resources=config.get("min_resources", 5),
-            max_resources_per_term=config.get("max_resources_per_term", 10)
-        )
-        
-        # Merge results
-        results = _merge_detection_results(
-            [embedding_results, hierarchy_results, global_results],
-            min_confidence=config.get("min_confidence", 0.5)
+    except Exception as e:
+        logging.error(f"Functional detection failed, falling back to legacy: {e}")
+        # Fallback to legacy detection for backward compatibility
+        results = _legacy_detect_ambiguous_terms(
+            terms, hierarchy, web_content, method, config, level
         )
     
-    else:
-        raise ValueError(f"Unknown detection method: {method}")
-    
-    # Filter by confidence if specified
+    # Filter by confidence if specified (already done in functional core, but kept for legacy compatibility)
     min_confidence = config.get("min_confidence", 0.0)
     if min_confidence > 0:
         results = {
@@ -196,40 +149,65 @@ def split_ambiguous_terms(
     # Load hierarchy
     hierarchy = load_hierarchy(hierarchy_path)
     
-    # Generate split proposals
-    proposals = generate_splits(
-        detection_results=detection_results,
-        hierarchy=hierarchy,
-        web_content=web_content,
-        use_llm=config.get("use_llm_validation", True),
-        llm_provider=config.get("llm_provider", "gemini")
-    )
-    
-    # Validate proposals
-    accepted, rejected = validate_splits(
-        split_proposals=proposals,
-        hierarchy=hierarchy,
-        web_content=web_content,
-        use_llm=config.get("use_llm_validation", True),
-        llm_provider=config.get("llm_provider", "gemini")
-    )
+    # Try to use functional splitting first
+    try:
+        # Convert legacy detection results to functional format
+        functional_detection_results = _convert_detection_results_to_functional_format(detection_results)
+        
+        # Create LLM function for dependency injection
+        from .utils.llm import get_llm_function
+        llm_function = get_llm_function(
+            provider=config.get("llm_provider", "gemini"),
+            use_llm=config.get("use_llm_validation", True)
+        )
+        
+        # Generate split proposals using functional approach
+        proposals = generate_split_proposals(
+            detection_results=functional_detection_results,
+            hierarchy=hierarchy,
+            web_content=web_content,
+            llm_function=llm_function
+        )
+        
+        # Validate proposals using functional approach
+        validated_proposals = validate_split_proposals(
+            proposals=proposals,
+            hierarchy=hierarchy,
+            web_content=web_content,
+            llm_function=llm_function
+        )
+        
+        # Separate accepted and rejected
+        accepted = [p for p in validated_proposals if p.is_valid]
+        rejected = [p for p in validated_proposals if not p.is_valid]
+        
+        # Convert back to legacy format for backward compatibility
+        accepted_legacy = [_convert_proposal_to_legacy_format(p) for p in accepted]
+        rejected_legacy = [_convert_proposal_to_legacy_format(p) for p in rejected]
+        
+    except Exception as e:
+        logging.error(f"Functional splitting failed, falling back to legacy: {e}")
+        # Fallback to legacy splitting methods
+        accepted_legacy, rejected_legacy = _legacy_split_ambiguous_terms(
+            detection_results, hierarchy, web_content, config
+        )
     
     # Save results if output directory specified
     output_dir = config.get("output_dir")
     if output_dir:
         results = {
-            "accepted": accepted,
-            "rejected": rejected,
+            "accepted": accepted_legacy,
+            "rejected": rejected_legacy,
             "summary": {
-                "total_proposals": len(proposals),
-                "accepted_count": len(accepted),
-                "rejected_count": len(rejected)
+                "total_proposals": len(accepted_legacy) + len(rejected_legacy),
+                "accepted_count": len(accepted_legacy),
+                "rejected_count": len(rejected_legacy)
             }
         }
         output_file = save_results(results, Path(output_dir), "splits")
         logging.info(f"Saved split results to {output_file}")
     
-    return accepted, rejected
+    return accepted_legacy, rejected_legacy
 
 
 def run_disambiguation_pipeline(
@@ -422,6 +400,268 @@ def _merge_detection_results(
 
 
 # CLI functionality
+
+
+# Legacy conversion and compatibility functions
+
+def _convert_legacy_config(
+    config: Dict[str, Any], 
+    method: DetectionMethod, 
+    level: Optional[int] = None
+) -> DisambiguationConfig:
+    """Convert legacy dictionary config to functional DisambiguationConfig."""
+    
+    # Get level-specific parameters if available
+    level_params = get_level_params(level) if level is not None else {}
+    
+    # Create method-specific configurations
+    embedding_config = EmbeddingConfig(
+        model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
+        clustering_algorithm=config.get("clustering_algorithm", "dbscan"),
+        eps=config.get("dbscan_eps", level_params.get("eps", 0.45)),
+        min_samples=config.get("dbscan_min_samples", level_params.get("min_samples", 2)),
+        min_resources=config.get("min_resources", 5),
+        max_resources_per_term=config.get("max_resources_per_term", 20)
+    )
+    
+    hierarchy_config = HierarchyConfig(
+        min_parent_overlap=config.get("min_parent_overlap", 0.3),
+        max_parent_similarity=config.get("max_parent_similarity", 0.7),
+        min_occurrence_ratio=config.get("min_occurrence_ratio", 0.1)
+    )
+    
+    global_config = GlobalConfig(
+        model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
+        eps=config.get("global_eps", 0.3),
+        min_samples=config.get("global_min_samples", 3),
+        min_resources=config.get("min_resources", 5),
+        max_resources_per_term=config.get("max_resources_per_term", 10)
+    )
+    
+    # Determine which methods to enable based on the method parameter
+    if method == "embedding":
+        methods = ("embedding",)
+    elif method == "hierarchy":
+        methods = ("hierarchy",)
+    elif method == "global":
+        methods = ("global",)
+    elif method == "hybrid":
+        methods = ("embedding", "hierarchy", "global")
+    else:
+        methods = ("embedding", "hierarchy", "global")
+    
+    # Create level configs if level is specified
+    level_configs = {}
+    if level is not None and level_params:
+        level_configs[level] = LevelConfig(
+            eps=level_params.get("eps", 0.45),
+            min_samples=level_params.get("min_samples", 2),
+            min_resources=level_params.get("min_resources", 5)
+        )
+    
+    return DisambiguationConfig(
+        methods=methods,
+        min_confidence=config.get("min_confidence", 0.5),
+        level_configs=level_configs,
+        embedding_config=embedding_config,
+        hierarchy_config=hierarchy_config,
+        global_config=global_config,
+        parallel_processing=config.get("parallel_processing", True),
+        use_cache=config.get("use_cache", True)
+    )
+
+
+def _convert_detection_results_to_legacy_format(
+    detection_results: List[DetectionResult]
+) -> DetectionResults:
+    """Convert functional DetectionResult objects to legacy dictionary format."""
+    legacy_results = {}
+    
+    for result in detection_results:
+        legacy_results[result.term] = {
+            "term": result.term,
+            "confidence": result.confidence,
+            "method": result.method,
+            "evidence": result.evidence,
+            "level": getattr(result, 'level', None),
+            "cluster_id": getattr(result, 'cluster_id', None),
+            "cluster_size": getattr(result, 'cluster_size', None),
+            "resources": getattr(result, 'resources', []),
+            "parent_contexts": getattr(result, 'parent_contexts', []),
+            "metadata": result.metadata
+        }
+        
+        # Remove None values for cleaner output
+        legacy_results[result.term] = {
+            k: v for k, v in legacy_results[result.term].items() 
+            if v is not None
+        }
+    
+    return legacy_results
+
+
+def _legacy_detect_ambiguous_terms(
+    terms: Terms,
+    hierarchy: Hierarchy,
+    web_content: Optional[WebContent],
+    method: DetectionMethod,
+    config: Dict[str, Any],
+    level: Optional[int] = None
+) -> DetectionResults:
+    """
+    Fallback to legacy detection methods for backward compatibility.
+    
+    This function preserves the original detection logic when the functional
+    core fails, ensuring the system remains operational during migration.
+    """
+    # Get level-specific parameters
+    level_params = get_level_params(level) if level is not None else {}
+    
+    # Apply detection method(s) using legacy code
+    if method == "embedding":
+        results = embedding_disambiguator.detect(
+            terms=terms,
+            web_content=web_content,
+            hierarchy=hierarchy,
+            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
+            clustering_algorithm=config.get("clustering_algorithm", "dbscan"),
+            eps=config.get("dbscan_eps", level_params.get("eps", 0.45)),
+            min_samples=config.get("dbscan_min_samples", level_params.get("min_samples", 2)),
+            min_resources=config.get("min_resources", 5)
+        )
+    
+    elif method == "hierarchy":
+        results = hierarchy_disambiguator.detect(
+            terms=terms,
+            web_content=web_content,
+            hierarchy=hierarchy,
+            min_parent_overlap=config.get("min_parent_overlap", 0.3),
+            max_parent_similarity=config.get("max_parent_similarity", 0.7)
+        )
+    
+    elif method == "global":
+        results = global_disambiguator.detect(
+            terms=terms,
+            web_content=web_content,
+            hierarchy=hierarchy,
+            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
+            eps=config.get("global_eps", 0.3),
+            min_samples=config.get("global_min_samples", 3),
+            min_resources=config.get("min_resources", 5),
+            max_resources_per_term=config.get("max_resources_per_term", 10)
+        )
+    
+    elif method == "hybrid":
+        # Run all methods and merge results
+        results = {}
+        
+        # Embedding-based detection
+        embedding_results = embedding_disambiguator.detect(
+            terms=terms,
+            web_content=web_content,
+            hierarchy=hierarchy,
+            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
+            clustering_algorithm=config.get("clustering_algorithm", "dbscan"),
+            eps=config.get("dbscan_eps", level_params.get("eps", 0.45)),
+            min_samples=config.get("dbscan_min_samples", level_params.get("min_samples", 2)),
+            min_resources=config.get("min_resources", 5)
+        )
+        
+        # Hierarchy-based detection
+        hierarchy_results = hierarchy_disambiguator.detect(
+            terms=terms,
+            web_content=web_content,
+            hierarchy=hierarchy,
+            min_parent_overlap=config.get("min_parent_overlap", 0.3),
+            max_parent_similarity=config.get("max_parent_similarity", 0.7)
+        )
+        
+        # Global clustering detection
+        global_results = global_disambiguator.detect(
+            terms=terms,
+            web_content=web_content,
+            hierarchy=hierarchy,
+            model_name=config.get("embedding_model", "all-MiniLM-L6-v2"),
+            eps=config.get("global_eps", 0.3),
+            min_samples=config.get("global_min_samples", 3),
+            min_resources=config.get("min_resources", 5),
+            max_resources_per_term=config.get("max_resources_per_term", 10)
+        )
+        
+        # Merge results
+        results = _merge_detection_results(
+            [embedding_results, hierarchy_results, global_results],
+            min_confidence=config.get("min_confidence", 0.5)
+        )
+    
+    else:
+        raise ValueError(f"Unknown detection method: {method}")
+    
+    return results
+
+
+def _convert_detection_results_to_functional_format(
+    legacy_results: DetectionResults
+) -> List[DetectionResult]:
+    """Convert legacy dictionary format to functional DetectionResult objects."""
+    functional_results = []
+    
+    for term, data in legacy_results.items():
+        result = DetectionResult(
+            term=term,
+            confidence=data.get("confidence", 0.5),
+            method=data.get("method", "unknown"),
+            evidence=data.get("evidence", {}),
+            metadata=data.get("metadata", {})
+        )
+        functional_results.append(result)
+    
+    return functional_results
+
+def _convert_proposal_to_legacy_format(proposal) -> Dict[str, Any]:
+    """Convert functional SplitProposal to legacy dictionary format."""
+    return {
+        "term": proposal.term,
+        "senses": proposal.senses,
+        "confidence": proposal.confidence,
+        "evidence": proposal.evidence,
+        "is_valid": proposal.is_valid,
+        "validation_reason": getattr(proposal, 'validation_reason', ''),
+        "metadata": proposal.metadata
+    }
+
+
+def _legacy_split_ambiguous_terms(
+    detection_results: DetectionResults,
+    hierarchy: Hierarchy,
+    web_content: Optional[WebContent],
+    config: Dict[str, Any]
+) -> Tuple[List[Dict], List[Dict]]:
+    """
+    Fallback to legacy splitting methods for backward compatibility.
+    
+    This function preserves the original splitting logic when the functional
+    approach fails, ensuring the system remains operational during migration.
+    """
+    # Generate split proposals using legacy method
+    proposals = generate_splits(
+        detection_results=detection_results,
+        hierarchy=hierarchy,
+        web_content=web_content,
+        use_llm=config.get("use_llm_validation", True),
+        llm_provider=config.get("llm_provider", "gemini")
+    )
+    
+    # Validate proposals using legacy method
+    accepted, rejected = validate_splits(
+        split_proposals=proposals,
+        hierarchy=hierarchy,
+        web_content=web_content,
+        use_llm=config.get("use_llm_validation", True),
+        llm_provider=config.get("llm_provider", "gemini")
+    )
+    
+    return accepted, rejected
 
 def setup_logging(verbose: bool = False):
     """Configure logging based on verbosity."""

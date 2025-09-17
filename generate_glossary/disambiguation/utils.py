@@ -211,6 +211,159 @@ def _convert_legacy_proposals_to_new(proposals):
 
 
 # Export all functions for external use
+def _convert_legacy_detection_config(
+    config_dict: Dict[str, Any], 
+    method: str, 
+    level: Optional[int] = None
+) -> "DisambiguationConfig":
+    """
+    Convert legacy dictionary config to functional DisambiguationConfig.
+    
+    This is a pure function that creates immutable configuration objects
+    from legacy dictionary configurations.
+    """
+    from .types import DisambiguationConfig, EmbeddingConfig, HierarchyConfig, GlobalConfig, LevelConfig
+    
+    # Get level-specific parameters if available
+    level_params = get_level_params(level) if level is not None else {}
+    
+    # Create method-specific configurations
+    embedding_config = EmbeddingConfig(
+        model_name=config_dict.get("embedding_model", "all-MiniLM-L6-v2"),
+        clustering_algorithm=config_dict.get("clustering_algorithm", "dbscan"),
+        eps=config_dict.get("dbscan_eps", level_params.get("eps", 0.45)),
+        min_samples=config_dict.get("dbscan_min_samples", level_params.get("min_samples", 2)),
+        min_resources=config_dict.get("min_resources", 5),
+        max_resources_per_term=config_dict.get("max_resources_per_term", 20)
+    )
+    
+    hierarchy_config = HierarchyConfig(
+        min_parent_overlap=config_dict.get("min_parent_overlap", 0.3),
+        max_parent_similarity=config_dict.get("max_parent_similarity", 0.7),
+        min_occurrence_ratio=config_dict.get("min_occurrence_ratio", 0.1)
+    )
+    
+    global_config = GlobalConfig(
+        model_name=config_dict.get("embedding_model", "all-MiniLM-L6-v2"),
+        eps=config_dict.get("global_eps", 0.3),
+        min_samples=config_dict.get("global_min_samples", 3),
+        min_resources=config_dict.get("min_resources", 5),
+        max_resources_per_term=config_dict.get("max_resources_per_term", 10)
+    )
+    
+    # Determine which methods to enable based on the method parameter
+    if method == "embedding":
+        methods = ("embedding",)
+    elif method == "hierarchy":
+        methods = ("hierarchy",)
+    elif method == "global":
+        methods = ("global",)
+    elif method == "hybrid":
+        methods = ("embedding", "hierarchy", "global")
+    else:
+        methods = ("embedding", "hierarchy", "global")
+    
+    # Create level configs if level is specified
+    level_configs = {}
+    if level is not None and level_params:
+        level_configs[level] = LevelConfig(
+            eps=level_params.get("eps", 0.45),
+            min_samples=level_params.get("min_samples", 2),
+            min_resources=level_params.get("min_resources", 5)
+        )
+    
+    return DisambiguationConfig(
+        methods=methods,
+        min_confidence=config_dict.get("min_confidence", 0.5),
+        level_configs=level_configs,
+        embedding_config=embedding_config,
+        hierarchy_config=hierarchy_config,
+        global_config=global_config,
+        parallel_processing=config_dict.get("parallel_processing", True),
+        use_cache=config_dict.get("use_cache", True)
+    )
+
+
+def convert_to_legacy_format(immutable_objects: Union[List, Dict]) -> Union[List[Dict], Dict]:
+    """
+    Convert immutable objects (DetectionResult, SplitProposal) to legacy format.
+    
+    This is a pure function that converts functional data structures back to
+    legacy dictionary format for backward compatibility.
+    """
+    if isinstance(immutable_objects, list):
+        # Handle list of objects
+        if not immutable_objects:
+            return []
+        
+        # Check type of first object to determine conversion method
+        first_obj = immutable_objects[0]
+        if hasattr(first_obj, 'term') and hasattr(first_obj, 'confidence'):
+            if hasattr(first_obj, 'method'):
+                # DetectionResult objects
+                return _convert_detection_results_to_legacy_dict(immutable_objects)
+            else:
+                # SplitProposal objects
+                return _convert_proposals_to_legacy_format(immutable_objects)
+    
+    # Handle single object or dict
+    return immutable_objects
+
+
+def convert_from_legacy_format(legacy_data: Union[List[Dict], Dict]) -> Union[List, Dict]:
+    """
+    Convert legacy dictionary format to immutable objects.
+    
+    This is a pure function that converts legacy data structures to
+    functional immutable objects.
+    """
+    if isinstance(legacy_data, list):
+        if not legacy_data:
+            return []
+        
+        # Check structure to determine what to convert to
+        first_item = legacy_data[0]
+        if isinstance(first_item, dict):
+            if "method" in first_item or "confidence" in first_item:
+                # Convert to DetectionResult objects
+                return _convert_detection_results_to_list(
+                    {item["term"]: item for item in legacy_data}
+                )
+            elif "proposed_senses" in first_item or "senses" in first_item:
+                # Convert to SplitProposal objects
+                return _convert_legacy_proposals_to_new(legacy_data)
+    
+    return legacy_data
+
+
+def _convert_detection_results_to_legacy_dict(detection_results: List) -> Dict[str, Dict]:
+    """Convert DetectionResult list to legacy dictionary format."""
+    legacy_dict = {}
+    
+    for result in detection_results:
+        legacy_dict[result.term] = {
+            "term": result.term,
+            "confidence": result.confidence,
+            "method": result.method,
+            "evidence": result.evidence,
+            "level": getattr(result, 'level', None),
+            "cluster_id": getattr(result, 'cluster_id', None),
+            "cluster_size": getattr(result, 'cluster_size', None),
+            "resources": getattr(result, 'resources', []),
+            "parent_contexts": getattr(result, 'parent_contexts', []),
+            "metadata": result.metadata
+        }
+        
+        # Remove None values for cleaner output
+        legacy_dict[result.term] = {
+            k: v for k, v in legacy_dict[result.term].items() 
+            if v is not None
+        }
+    
+    return legacy_dict
+
+
+# Export all functions for external use
 __all__ = [
     # Level management
     "LEVEL_PARAMS",
@@ -231,5 +384,11 @@ __all__ = [
     "_create_legacy_llm_function",
     "_convert_detection_results_to_list",
     "_convert_proposals_to_legacy_format",
-    "_convert_legacy_proposals_to_new"
+    "_convert_legacy_proposals_to_new",
+
+    # Enhanced conversion functions
+    "_convert_legacy_detection_config",
+    "convert_to_legacy_format",
+    "convert_from_legacy_format",
+    "_convert_detection_results_to_legacy_dict"
 ]
