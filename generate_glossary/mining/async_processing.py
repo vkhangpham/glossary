@@ -9,6 +9,7 @@ import time
 import asyncio
 import logging
 import threading
+import inspect
 from collections import defaultdict
 from typing import Any, Dict, List, Tuple, Optional, Callable
 from firecrawl import FirecrawlApp
@@ -21,7 +22,7 @@ from generate_glossary.utils.logger import get_logger, log_with_context
 logger = get_logger(__name__)
 
 
-class AdjustableSemaphore:
+class _AdjustableSemaphore:
     """A thread-safe semaphore wrapper that allows adjusting capacity without race conditions.
 
     This semaphore allows dynamic capacity adjustment while maintaining thread safety.
@@ -33,20 +34,30 @@ class AdjustableSemaphore:
     def __init__(self, value: int = 1):
         if value <= 0:
             raise ValueError("Capacity must be >= 1")
-        self._semaphore = asyncio.BoundedSemaphore(value)
-        self._lock = asyncio.Lock()  # Async lock for _acquired_count
+        self._initial_capacity = value
         self._current_capacity = value
+        self._semaphore = None
+        self._lock = None
         self._acquired_count = 0
+
+    async def _ensure_initialized(self):
+        """Lazily initialize asyncio primitives to avoid loop binding at import time."""
+        if self._semaphore is None:
+            self._semaphore = asyncio.BoundedSemaphore(self._initial_capacity)
+        if self._lock is None:
+            self._lock = asyncio.Lock()
 
 
     async def acquire(self):
         """Acquire the semaphore."""
+        await self._ensure_initialized()
         await self._semaphore.acquire()
         async with self._lock:
             self._acquired_count += 1
 
     async def release(self):
         """Release the semaphore."""
+        await self._ensure_initialized()
         async with self._lock:
             self._acquired_count = max(0, self._acquired_count - 1)
         self._semaphore.release()
@@ -62,6 +73,7 @@ class AdjustableSemaphore:
         if new_capacity <= 0:
             raise ValueError("Capacity must be >= 1")
 
+        await self._ensure_initialized()
         async with self._lock:
             old_capacity = self._current_capacity
             self._current_capacity = new_capacity
@@ -78,20 +90,17 @@ class AdjustableSemaphore:
         elif new_capacity < old_capacity:
             # Decrease capacity: acquire permits to reduce availability
             permits_to_reduce = old_capacity - new_capacity
-            acquired_permits = 0
-            try:
-                for i in range(permits_to_reduce):
-                    # Use timeout to avoid indefinite blocking
+            # Directly await semaphore acquires to block until permits are reduced
+            for i in range(permits_to_reduce):
+                try:
                     await asyncio.wait_for(self._semaphore.acquire(), timeout=5.0)
-                    acquired_permits += 1
-            except asyncio.TimeoutError:
-                # Release any partially acquired permits
-                for _ in range(acquired_permits):
-                    self._semaphore.release()
-                raise RuntimeError(
-                    f"Unable to reduce semaphore capacity from {old_capacity} to {new_capacity} "
-                    f"within timeout. {acquired_permits}/{permits_to_reduce} permits acquired before timeout."
-                )
+                except asyncio.TimeoutError:
+                    # If we can't acquire all permits within timeout, this indicates
+                    # that reducing capacity would block indefinitely
+                    raise RuntimeError(
+                        f"Unable to reduce semaphore capacity from {old_capacity} to {new_capacity} "
+                        f"within timeout. Only {i}/{permits_to_reduce} permits could be acquired."
+                    )
 
     @property
     def capacity(self) -> int:
@@ -100,9 +109,14 @@ class AdjustableSemaphore:
 
     @property
     def acquired_count(self) -> int:
-        """Get number of currently acquired permits."""
-        with self._lock:
-            return self._acquired_count
+        """Get number of currently acquired permits.
+
+        Note: This is computed from the semaphore's internal state.
+        """
+        if self._semaphore is None:
+            return 0
+        # Compute from semaphore internal counter for accuracy
+        return self._current_capacity - self._semaphore._value
 
 
 class ConcurrencyManager:
@@ -121,11 +135,11 @@ class ConcurrencyManager:
         }
         self.adaptive_limits = self.resource_limits.copy()
 
-    def get_semaphore(self, operation_type: str) -> AdjustableSemaphore:
+    def get_semaphore(self, operation_type: str) -> _AdjustableSemaphore:
         """Get or create semaphore for operation type with adaptive limits."""
-        # Use setdefault to atomically get or create semaphore
+        # Use setdefault to atomically get or create semaphore to prevent race conditions
         limit = self.adaptive_limits.get(operation_type, 5)
-        return self.semaphores.setdefault(operation_type, AdjustableSemaphore(limit))
+        return self.semaphores.setdefault(operation_type, _AdjustableSemaphore(limit))
 
     async def acquire_resource(self, operation_type: str, correlation_id: str = None):
         """Acquire resource with performance tracking."""
@@ -277,13 +291,16 @@ class AsyncResultAggregator:
         if not self.buffer:
             return
 
+        # Capture buffer length before clearing it
+        buffer_length = len(self.buffer)
+
         # Move buffer to results efficiently
         self.results.extend(self.buffer)
         self.buffer.clear()
         self.last_flush = time.time()
         self.stats['flush_count'] += 1
 
-        logger.debug(f"Flushed {len(self.buffer)} results to aggregator")
+        logger.debug(f"Flushed {buffer_length} results to aggregator")
 
     def get_results(self) -> List[Any]:
         """Get all aggregated results."""
@@ -328,10 +345,12 @@ async def execute_with_resource_management(operation_type: str, operation_func: 
     try:
         start_time = time.time()
 
-        # Handle both async and sync functions
-        if asyncio.iscoroutinefunction(operation_func):
-            result = await operation_func(*args, **kwargs)
+        # Handle both async and sync functions using inspect.isawaitable pattern
+        result = operation_func(*args, **kwargs)
+        if inspect.isawaitable(result):
+            result = await result
         else:
+            # For sync functions, run in thread
             result = await asyncio.to_thread(operation_func, *args, **kwargs)
 
         duration = time.time() - start_time
@@ -477,19 +496,9 @@ async def execute_parallel_pipeline(stages: List[Tuple[str, Callable]],
 
         try:
             # Execute stage with resource management
-            if asyncio.iscoroutinefunction(stage_func):
-                current_data = await execute_with_resource_management(
-                    f"pipeline_{stage_name}", stage_func, api_usage_stats, correlation_id, current_data
-                )
-            else:
-                # Wrap synchronous function
-                current_data = await execute_with_resource_management(
-                    f"pipeline_{stage_name}",
-                    lambda data: stage_func(data),
-                    api_usage_stats,
-                    correlation_id,
-                    current_data
-                )
+            current_data = await execute_with_resource_management(
+                f"pipeline_{stage_name}", stage_func, api_usage_stats, correlation_id, current_data
+            )
 
             stage_duration = time.time() - stage_start_time
             log_with_context(
@@ -609,10 +618,12 @@ async def throttled_execution(operations: List[Callable],
         operation_start = time.time()
 
         try:
-            # Execute operation
-            if asyncio.iscoroutinefunction(operation):
-                result = await operation()
+            # Execute operation using inspect.isawaitable pattern
+            result = operation()
+            if inspect.isawaitable(result):
+                result = await result
             else:
+                # For sync functions, run in thread
                 result = await asyncio.to_thread(operation)
 
             results.append(result)
