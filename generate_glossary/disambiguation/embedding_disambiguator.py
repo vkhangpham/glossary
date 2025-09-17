@@ -12,6 +12,7 @@ from sklearn.cluster import DBSCAN
 from sklearn.metrics import silhouette_score
 from sentence_transformers import SentenceTransformer
 
+from .types import DetectionResult, EmbeddingConfig
 from .utils import (
     extract_informative_content,
     calculate_confidence_score
@@ -26,10 +27,34 @@ except ImportError:
     logging.debug("HDBSCAN not available, using DBSCAN only")
 
 
+def create_detection_result(term: str, clusters: List[Dict[str, Any]], confidence: float, evidence: Dict[str, Any]) -> DetectionResult:
+    """
+    Create a DetectionResult object for embedding-based detection.
+
+    Args:
+        term: The term being analyzed
+        clusters: List of cluster information dictionaries
+        confidence: Confidence score for the detection
+        evidence: Evidence supporting the detection
+
+    Returns:
+        DetectionResult object
+    """
+    return DetectionResult(
+        term=term,
+        method="embedding",
+        confidence=confidence,
+        evidence=evidence,
+        clusters=clusters,
+        metadata={}
+    )
+
+
 def detect(
     terms: List[str],
     web_content: Dict[str, Any],
     hierarchy: Dict[str, Any],
+    config: Optional[EmbeddingConfig] = None,
     model_name: str = "all-MiniLM-L6-v2",
     clustering_algorithm: str = "dbscan",
     eps: float = 0.45,
@@ -59,7 +84,15 @@ def detect(
         Dictionary mapping ambiguous terms to their detection evidence
     """
     logging.info(f"Detecting ambiguity using embeddings for {len(terms)} terms")
-    
+
+    # Handle configuration - use config object if provided, fallback to individual parameters
+    if config is not None:
+        model_name = config.model_name
+        clustering_algorithm = config.clustering_algorithm
+        eps = config.eps
+        min_samples = config.min_samples
+        min_resources = config.min_resources
+
     # Load embedding model
     try:
         model = SentenceTransformer(model_name)

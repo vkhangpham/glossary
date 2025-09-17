@@ -9,13 +9,43 @@ import logging
 from typing import Dict, List, Any, Optional
 from collections import defaultdict
 
+from .types import DetectionResult, HierarchyConfig
 from .utils import calculate_confidence_score
+
+
+def create_hierarchy_detection_result(
+    term: str,
+    parents: List[Dict[str, Any]],
+    divergence_evidence: Dict[str, Any],
+    confidence: float
+) -> DetectionResult:
+    """
+    Create a DetectionResult object for hierarchy-based detection.
+
+    Args:
+        term: The term being analyzed
+        parents: List of parent information
+        divergence_evidence: Evidence of parent context divergence
+        confidence: Confidence score for the detection
+
+    Returns:
+        DetectionResult object
+    """
+    return DetectionResult(
+        term=term,
+        method="hierarchy",
+        confidence=confidence,
+        evidence=divergence_evidence,
+        clusters=None,
+        metadata={"parents": parents}
+    )
 
 
 def detect(
     terms: List[str],
     web_content: Optional[Dict[str, Any]],
     hierarchy: Dict[str, Any],
+    config: Optional[HierarchyConfig] = None,
     min_parent_overlap: float = 0.3,
     max_parent_similarity: float = 0.7
 ) -> Dict[str, Dict[str, Any]]:
@@ -38,7 +68,15 @@ def detect(
         Dictionary mapping ambiguous terms to their detection evidence
     """
     logging.info(f"Detecting ambiguity using hierarchy for {len(terms)} terms")
-    
+
+    # Handle configuration - use config object if provided, fallback to individual parameters
+    if config is not None:
+        min_parent_overlap = config.min_parent_overlap
+        max_parent_similarity = config.max_parent_similarity
+        enable_web_enhancement = config.enable_web_enhancement
+    else:
+        enable_web_enhancement = True  # Default value
+
     results = {}
     
     # Build parent-child mappings

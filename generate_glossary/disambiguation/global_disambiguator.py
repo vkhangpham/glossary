@@ -13,16 +13,46 @@ from sklearn.cluster import DBSCAN
 from sklearn.metrics import silhouette_score
 from sentence_transformers import SentenceTransformer
 
+from .types import DetectionResult, GlobalConfig
 from .utils import (
     extract_informative_content,
     calculate_confidence_score
 )
 
 
+def create_global_detection_result(
+    term: str,
+    cluster_distribution: List[Dict[str, Any]],
+    confidence: float,
+    evidence: Dict[str, Any]
+) -> DetectionResult:
+    """
+    Create a DetectionResult object for global clustering-based detection.
+
+    Args:
+        term: The term being analyzed
+        cluster_distribution: Distribution of term resources across global clusters
+        confidence: Confidence score for the detection
+        evidence: Evidence supporting the detection
+
+    Returns:
+        DetectionResult object
+    """
+    return DetectionResult(
+        term=term,
+        method="global",
+        confidence=confidence,
+        evidence=evidence,
+        clusters=cluster_distribution,
+        metadata={}
+    )
+
+
 def detect(
     terms: List[str],
     web_content: Dict[str, Any],
     hierarchy: Dict[str, Any],
+    config: Optional[GlobalConfig] = None,
     model_name: str = "all-MiniLM-L6-v2",
     eps: float = 0.3,
     min_samples: int = 3,
@@ -51,7 +81,15 @@ def detect(
         Dictionary mapping ambiguous terms to their detection evidence
     """
     logging.info(f"Detecting ambiguity using global clustering for {len(terms)} terms")
-    
+
+    # Handle configuration - use config object if provided, fallback to individual parameters
+    if config is not None:
+        model_name = config.model_name
+        eps = config.eps
+        min_samples = config.min_samples
+        min_resources = config.min_resources
+        max_resources_per_term = config.max_resources_per_term
+
     # Load embedding model
     try:
         model = SentenceTransformer(model_name)
