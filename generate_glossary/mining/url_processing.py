@@ -7,11 +7,12 @@ content filtering, and performance optimization through caching.
 
 import time
 import asyncio
+import concurrent.futures
 import logging
+import threading
 import weakref
 from typing import Dict, List, Optional, Tuple, Any
 from urllib.parse import urlparse, parse_qs
-# ThreadPoolExecutor replaced with asyncio.to_thread for better async integration
 from firecrawl import FirecrawlApp
 
 from .client import get_client
@@ -26,23 +27,33 @@ logger = get_logger(__name__)
 # Simple in-memory cache for mapping results
 _mapping_cache: Dict[str, Dict[str, Any]] = {}
 
+# Thread-safe access to shared objects across threads
+_thread_lock = threading.Lock()
+
 # Per-event-loop lock storage for thread-safe Firecrawl client access
 # Uses WeakKeyDictionary to automatically clean up locks when loops are garbage-collected
 _loop_locks: weakref.WeakKeyDictionary[asyncio.AbstractEventLoop, asyncio.Lock] = weakref.WeakKeyDictionary()
 
 def _get_firecrawl_lock() -> asyncio.Lock:
-    """Get or create the firecrawl lock for the current event loop."""
+    """Get or create the firecrawl lock for the current event loop with thread safety."""
     loop = asyncio.get_running_loop()
 
-    if loop not in _loop_locks:
-        _loop_locks[loop] = asyncio.Lock()
-
-    return _loop_locks[loop]
+    with _thread_lock:
+        if loop not in _loop_locks:
+            _loop_locks[loop] = asyncio.Lock()
+        return _loop_locks[loop]
 
 
 async def _map_urls_with_lock(app: FirecrawlApp, domain: str, limit: Optional[int] = None) -> List[str]:
-    """Async wrapper for map_urls_fast_enhanced with thread-safe access."""
-    async with _get_firecrawl_lock():
+    """Async wrapper for map_urls_fast_enhanced with semaphore-based concurrency control."""
+    # Use semaphore instead of lock to avoid blocking other coroutines
+    # This allows multiple concurrent operations while still limiting resource usage
+    semaphore = getattr(_map_urls_with_lock, '_semaphore', None)
+    if semaphore is None:
+        _map_urls_with_lock._semaphore = asyncio.Semaphore(5)  # Allow 5 concurrent operations
+        semaphore = _map_urls_with_lock._semaphore
+
+    async with semaphore:
         return await asyncio.to_thread(map_urls_fast_enhanced, app, domain, limit)
 
 
@@ -297,56 +308,92 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
             return []
 
 
-def _run_async_coro(coro):
+def _run_async_coro(coro, loop: Optional[asyncio.AbstractEventLoop] = None, timeout: Optional[float] = None):
     """Execute async coroutine from sync context with proper event loop handling.
-    
+
     Args:
         coro: Async coroutine to execute
-        
+        loop: Optional specific event loop to use for scheduling
+        timeout: Optional timeout in seconds for coroutine execution
+
     Returns:
         Result from executing the coroutine
-        
+
     Raises:
+        RuntimeError: If called from within a running event loop without explicit loop parameter
+        asyncio.TimeoutError: If coroutine execution exceeds timeout
         Exception: Re-raises any exception from coroutine execution
     """
-    import concurrent.futures
-    
     try:
-        # Try to get running loop first
-        loop = asyncio.get_running_loop()
-        # If there's a running loop, submit the coroutine to it
-        future = asyncio.run_coroutine_threadsafe(coro, loop)
-        return future.result()
-    except RuntimeError:
-        # No running loop, check if there's an existing loop
-        try:
-            loop = asyncio.get_event_loop()
-            if loop.is_running():
-                # Loop is running in another thread, use run_coroutine_threadsafe
-                future = asyncio.run_coroutine_threadsafe(coro, loop)
-                return future.result()
-            else:
-                # Loop exists but not running, use run_until_complete
-                return loop.run_until_complete(coro)
-        except RuntimeError:
-            # No loop exists, use asyncio.run
-            return asyncio.run(coro)
+        # Check if we're already in a running loop
+        current_loop = asyncio.get_running_loop()
+        if loop is None:
+            # We're in a running loop but no explicit loop provided - this is unsafe
+            raise RuntimeError(
+                "_run_async_coro called from within a running event loop. "
+                "Use explicit loop parameter or run from synchronous context."
+            )
+        elif loop == current_loop:
+            # Trying to schedule on the same loop we're running in - deadlock risk
+            raise RuntimeError(
+                "Cannot schedule coroutine on the same loop that is currently running. "
+                "This would cause a deadlock."
+            )
 
-def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 20, use_fast_map: bool = True) -> Dict[str, Any]:
+        # Apply timeout if specified
+        if timeout is not None:
+            coro = asyncio.wait_for(coro, timeout=timeout)
+
+        # Schedule on the provided loop
+        future = asyncio.run_coroutine_threadsafe(coro, loop)
+        try:
+            return future.result(timeout=timeout)
+        except asyncio.TimeoutError:
+            # Cancel the coroutine on timeout
+            future.cancel()
+            logger.warning(f"Coroutine execution timed out after {timeout}s")
+            raise
+
+    except RuntimeError as e:
+        if "no running event loop" in str(e).lower():
+            # No running loop - safe to use asyncio.run
+            if timeout is not None:
+                coro = asyncio.wait_for(coro, timeout=timeout)
+            try:
+                return asyncio.run(coro)
+            except asyncio.TimeoutError:
+                logger.warning(f"Coroutine execution timed out after {timeout}s")
+                raise
+        else:
+            # Re-raise other RuntimeErrors
+            raise
+
+def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 20, use_fast_map: bool = True,
+                               run_in_new_thread: bool = False, raise_on_running_loop: bool = True) -> Dict[str, Any]:
     """High-level bulk mapping API compatible with tests.
-    
+
     Args:
         domains: List of domain URLs to map
         max_urls_per_domain: Maximum URLs to return per domain
         use_fast_map: Whether to use fast mapping (ignored, always uses fast mapping)
-    
+        run_in_new_thread: Force execution in a new thread to avoid event loop conflicts
+        raise_on_running_loop: Whether to raise error when called from running event loop
+
     Returns:
         Dict with keys: urls_found, domains_processed, processing_time, details
     """
-    import time
-    
     start_time = time.time()
-    
+
+    # Early return for empty input
+    if not domains:
+        logger.debug("Empty domains list provided, returning early")
+        return {
+            "urls_found": 0,
+            "domains_processed": 0,
+            "processing_time": time.time() - start_time,
+            "details": {}
+        }
+
     # Resolve client
     app = get_client()
     if app is None:
@@ -356,13 +403,39 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
             "processing_time": time.time() - start_time,
             "details": {}
         }
-    
+
     # Call async function from sync context with proper event loop handling
     async def _async_wrapper():
         return await map_urls_concurrently(app, domains, limit=max_urls_per_domain)
 
     try:
-        result = _run_async_coro(_async_wrapper())
+        # Handle event loop context based on parameters
+        if run_in_new_thread:
+            # Force execution in new thread
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(lambda: asyncio.run(_async_wrapper()))
+                result = future.result()
+        else:
+            # Use existing event loop handling with timeout
+            result = _run_async_coro(_async_wrapper(), timeout=300.0)  # 5 minute timeout
+
+    except RuntimeError as e:
+        if "running event loop" in str(e).lower() and not raise_on_running_loop:
+            logger.warning(f"Running in event loop context, falling back to new thread: {e}")
+            # Fallback to new thread execution
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(lambda: asyncio.run(_async_wrapper()))
+                result = future.result()
+        else:
+            raise
+    except asyncio.TimeoutError:
+        logger.error("URL mapping operation timed out after 5 minutes")
+        return {
+            "urls_found": 0,
+            "domains_processed": 0,
+            "processing_time": time.time() - start_time,
+            "details": {}
+        }
     except Exception as e:
         # Log error and return empty result
         logger.error(f"Failed to execute URL mapping: {e}")
@@ -372,11 +445,21 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
             "processing_time": time.time() - start_time,
             "details": {}
         }
-    
+
+    # Validate result type
+    if not isinstance(result, dict):
+        logger.warning(f"Expected dict result but got {type(result)}, returning empty result")
+        return {
+            "urls_found": 0,
+            "domains_processed": 0,
+            "processing_time": time.time() - start_time,
+            "details": {}
+        }
+
     # Calculate summary statistics
     total_urls = sum(len(urls) for urls in result.values())
     processing_time = time.time() - start_time
-    
+
     return {
         "urls_found": total_urls,
         "domains_processed": len(result),

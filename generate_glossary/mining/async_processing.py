@@ -8,6 +8,7 @@ and intelligent batching and aggregation for the mining system.
 import time
 import asyncio
 import logging
+import threading
 from collections import defaultdict
 from typing import Any, Dict, List, Tuple, Optional, Callable
 from firecrawl import FirecrawlApp
@@ -21,19 +22,22 @@ logger = get_logger(__name__)
 
 
 class AdjustableSemaphore:
-    """A thread-safe semaphore wrapper that allows adjusting capacity without race conditions."""
+    """A thread-safe semaphore wrapper that allows adjusting capacity without race conditions.
+
+    This semaphore allows dynamic capacity adjustment while maintaining thread safety.
+    When capacity is lowered below current acquisitions, the method will block until
+    enough permits are released to match the new capacity. Existing holders are not
+    affected and can continue their work.
+    """
 
     def __init__(self, value: int = 1):
-        self._semaphore = asyncio.Semaphore(value)
-        self._lock = asyncio.Lock()
+        if value <= 0:
+            raise ValueError("Capacity must be >= 1")
+        self._semaphore = asyncio.BoundedSemaphore(value)
+        self._lock = asyncio.Lock()  # Async lock for _acquired_count
         self._current_capacity = value
         self._acquired_count = 0
-        self._background_tasks: set = set()
 
-    def _track_task(self, task):
-        """Add task to tracking set and add done callback to remove it."""
-        self._background_tasks.add(task)
-        task.add_done_callback(lambda t: self._background_tasks.discard(t))
 
     async def acquire(self):
         """Acquire the semaphore."""
@@ -41,45 +45,53 @@ class AdjustableSemaphore:
         async with self._lock:
             self._acquired_count += 1
 
-    def release(self):
+    async def release(self):
         """Release the semaphore."""
-        # Use a task to handle the async lock in sync context
-        async def _release():
-            async with self._lock:
-                self._acquired_count = max(0, self._acquired_count - 1)
-
-        # Try to run the task if there's an event loop, otherwise skip the counter update
-        try:
-            loop = asyncio.get_running_loop()
-            task = asyncio.create_task(_release())
-            self._track_task(task)
-        except RuntimeError:
-            # No running loop, just decrement without locking (best effort)
+        async with self._lock:
             self._acquired_count = max(0, self._acquired_count - 1)
-
         self._semaphore.release()
 
     async def adjust_capacity(self, new_capacity: int):
-        """Adjust the semaphore capacity safely."""
+        """Adjust the semaphore capacity safely.
+
+        If the new capacity is less than the number of currently acquired permits,
+        this method will block until enough permits are released to reduce availability
+        accordingly. Existing holders are not affected and can continue their work.
+        New acquisitions will be blocked until the capacity constraint is satisfied.
+        """
         if new_capacity <= 0:
-            raise ValueError("Capacity must be positive")
+            raise ValueError("Capacity must be >= 1")
 
         async with self._lock:
             old_capacity = self._current_capacity
             self._current_capacity = new_capacity
 
-            if new_capacity > old_capacity:
-                # Increase capacity: release additional permits
-                additional_permits = new_capacity - old_capacity
-                for _ in range(additional_permits):
+        await self._resize_semaphore(old_capacity, new_capacity)
+
+    async def _resize_semaphore(self, old_capacity: int, new_capacity: int):
+        """Resize the semaphore by adjusting permits."""
+        if new_capacity > old_capacity:
+            # Increase capacity: release additional permits
+            additional_permits = new_capacity - old_capacity
+            for _ in range(additional_permits):
+                self._semaphore.release()
+        elif new_capacity < old_capacity:
+            # Decrease capacity: acquire permits to reduce availability
+            permits_to_reduce = old_capacity - new_capacity
+            acquired_permits = 0
+            try:
+                for i in range(permits_to_reduce):
+                    # Use timeout to avoid indefinite blocking
+                    await asyncio.wait_for(self._semaphore.acquire(), timeout=5.0)
+                    acquired_permits += 1
+            except asyncio.TimeoutError:
+                # Release any partially acquired permits
+                for _ in range(acquired_permits):
                     self._semaphore.release()
-            elif new_capacity < old_capacity:
-                # Decrease capacity: acquire permits to reduce availability
-                permits_to_reduce = old_capacity - new_capacity
-                for _ in range(permits_to_reduce):
-                    # Create a task to acquire permits without blocking this function
-                    task = asyncio.create_task(self._semaphore.acquire())
-                    self._track_task(task)
+                raise RuntimeError(
+                    f"Unable to reduce semaphore capacity from {old_capacity} to {new_capacity} "
+                    f"within timeout. {acquired_permits}/{permits_to_reduce} permits acquired before timeout."
+                )
 
     @property
     def capacity(self) -> int:
@@ -89,12 +101,8 @@ class AdjustableSemaphore:
     @property
     def acquired_count(self) -> int:
         """Get number of currently acquired permits."""
-        return self._acquired_count
-
-    async def cleanup(self):
-        """Wait for all background tasks to complete."""
-        if self._background_tasks:
-            await asyncio.gather(*self._background_tasks, return_exceptions=True)
+        with self._lock:
+            return self._acquired_count
 
 
 class ConcurrencyManager:
@@ -115,10 +123,9 @@ class ConcurrencyManager:
 
     def get_semaphore(self, operation_type: str) -> AdjustableSemaphore:
         """Get or create semaphore for operation type with adaptive limits."""
-        if operation_type not in self.semaphores:
-            limit = self.adaptive_limits.get(operation_type, 5)
-            self.semaphores[operation_type] = AdjustableSemaphore(limit)
-        return self.semaphores[operation_type]
+        # Use setdefault to atomically get or create semaphore
+        limit = self.adaptive_limits.get(operation_type, 5)
+        return self.semaphores.setdefault(operation_type, AdjustableSemaphore(limit))
 
     async def acquire_resource(self, operation_type: str, correlation_id: str = None):
         """Acquire resource with performance tracking."""
@@ -145,11 +152,11 @@ class ConcurrencyManager:
                 correlation_id=correlation_id
             )
 
-    def release_resource(self, operation_type: str, correlation_id: str = None):
+    async def release_resource(self, operation_type: str, correlation_id: str = None):
         """Release resource and update tracking."""
         if operation_type in self.semaphores:
             semaphore = self.semaphores[operation_type]
-            semaphore.release()
+            await semaphore.release()
 
             # Update tracking
             self.active_operations[operation_type] = max(0, self.active_operations[operation_type] - 1)
@@ -341,7 +348,7 @@ async def execute_with_resource_management(operation_type: str, operation_func: 
             api_usage_stats.add_call(operation_type, duration=duration, error=True)
         raise
     finally:
-        _concurrency_manager.release_resource(operation_type, correlation_id)
+        await _concurrency_manager.release_resource(operation_type, correlation_id)
 
 
 async def process_with_streaming(items: List[Any], processor_func: Callable,
@@ -683,7 +690,6 @@ def search_concepts_batch(concepts: List[str], max_results_per_concept: int = 3,
     return _search_batch_core(client, concepts, max_results_per_concept)
 __all__ = [
     'ConcurrencyManager',
-    'AdjustableSemaphore',
     'AsyncResultAggregator',
     'execute_with_resource_management',
     'process_with_streaming',
