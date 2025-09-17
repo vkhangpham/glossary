@@ -7,7 +7,7 @@ All data structures are immutable (@frozen dataclasses) to support functional pr
 """
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Any, Optional, Tuple, Mapping
+from typing import Dict, List, Any, Optional, Tuple, Mapping, Callable
 import types
 
 
@@ -131,3 +131,23 @@ class DisambiguationConfig:
         # Convert level_configs to immutable mapping if it's a dict
         if isinstance(self.level_configs, dict):
             object.__setattr__(self, 'level_configs', types.MappingProxyType(self.level_configs))
+
+
+@dataclass(frozen=True)
+class SplittingConfig:
+    """Configuration for sense splitting operations."""
+
+    use_llm: bool = True
+    llm_provider: str = "gemini"
+    min_cluster_size: int = 2
+    min_separation_score: float = 0.5
+    max_sample_resources: int = 3
+    create_backup: bool = True
+    tag_generation_max_tokens: int = 20
+    validation_max_tokens: int = 100
+
+
+# Type aliases for splitting functions
+LLMFunction = Callable[[List[Dict[str, Any]]], str]
+TagGeneratorFunction = Callable[[str, List[Dict], int], str]
+ValidationFunction = Callable[[str, List[Dict], int], Tuple[bool, str]]
