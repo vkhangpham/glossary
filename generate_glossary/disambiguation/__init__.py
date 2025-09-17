@@ -40,15 +40,13 @@ from generate_glossary.disambiguation import (
 )
 
 # Create detection pipeline with configuration
-pipeline = create_detection_pipeline(
-    config=ACADEMIC_PROFILE,
+results = create_detection_pipeline(
     terms=["machine learning", "AI", "neural networks"],
     web_content=content,
-    hierarchy_data=hierarchy
+    hierarchy=hierarchy,
+    config=ACADEMIC_PROFILE
 )
 
-# Execute with error isolation
-results = parallel_detect(pipeline)
 summary = get_detection_summary(results)
 ```
 
@@ -70,7 +68,7 @@ from typing import Dict, List, Any, Optional
 
 # Legacy API imports (with deprecation path)
 from .api import (
-    disambiguate_terms,
+    disambiguate_terms as _disambiguate_terms_impl,
     detect_ambiguous as _detect_ambiguous_impl,
     split_senses as _split_senses_impl
 )
@@ -174,6 +172,27 @@ from .splitting.applicator import (
 
 
 # Legacy compatibility functions with deprecation warnings
+def disambiguate_terms(*args, **kwargs) -> Dict[str, Any]:
+    """
+    Legacy function for running complete disambiguation pipeline.
+
+    DEPRECATED: Use create_detection_pipeline(), generate_split_proposals(),
+    validate_split_proposals(), or main.run_disambiguation_pipeline() instead.
+
+    The new functional API provides better error handling, configuration,
+    and composability. See module documentation for migration examples.
+    """
+    warnings.warn(
+        "disambiguate_terms() is deprecated. Use create_detection_pipeline(), "
+        "generate_split_proposals(), validate_split_proposals(), or "
+        "main.run_disambiguation_pipeline() from the functional API instead. "
+        "See module documentation for migration examples.",
+        DeprecationWarning,
+        stacklevel=2
+    )
+    return _disambiguate_terms_impl(*args, **kwargs)
+
+
 def detect_ambiguous(*args, **kwargs) -> Dict[str, Any]:
     """
     Legacy function for detecting ambiguous terms.

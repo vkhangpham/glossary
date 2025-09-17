@@ -152,33 +152,38 @@ def split_ambiguous_terms(
     try:
         # Convert legacy detection results to functional format
         functional_detection_results = _convert_detection_results_to_functional_format(detection_results)
-        
-        # Create LLM function for dependency injection
-        from .utils.llm import get_llm_function
-        llm_function = get_llm_function(
-            provider=config.get("llm_provider", "gemini"),
-            use_llm=config.get("use_llm_validation", True)
+
+        # Build SplittingConfig from config
+        from .types import SplittingConfig
+        splitting_config = SplittingConfig(
+            use_llm=config.get("use_llm_validation", True),
+            llm_provider=config.get("llm_provider", "gemini"),
+            min_cluster_size=config.get("min_cluster_size", 2),
+            min_separation_score=config.get("min_separation_score", 0.5),
+            max_sample_resources=config.get("max_sample_resources", 3),
+            create_backup=config.get("create_backup", True),
+            tag_generation_max_tokens=config.get("tag_generation_max_tokens", 20),
+            validation_max_tokens=config.get("validation_max_tokens", 100)
         )
-        
+
+        # Create LLM function for dependency injection
+        llm_fn = with_llm_function(config.get("llm_provider", "gemini"))
+
         # Generate split proposals using functional approach
         proposals = generate_split_proposals(
             detection_results=functional_detection_results,
             hierarchy=hierarchy,
-            web_content=web_content,
-            llm_function=llm_function
+            config=splitting_config,
+            llm_fn=llm_fn
         )
-        
+
         # Validate proposals using functional approach
-        validated_proposals = validate_split_proposals(
+        accepted, rejected = validate_split_proposals(
             proposals=proposals,
             hierarchy=hierarchy,
-            web_content=web_content,
-            llm_function=llm_function
+            config=splitting_config,
+            llm_fn=llm_fn
         )
-        
-        # Separate accepted and rejected
-        accepted = [p for p in validated_proposals if p.validation_status == "approved"]
-        rejected = [p for p in validated_proposals if p.validation_status != "approved"]
         
         # Convert back to legacy format for backward compatibility
         accepted_legacy = [_convert_proposal_to_legacy_format(p) for p in accepted]
@@ -434,14 +439,14 @@ def _convert_legacy_config(
         clustering_algorithm=config.get("clustering_algorithm", "dbscan"),
         eps=config.get("dbscan_eps", level_params.get("eps", 0.45)),
         min_samples=config.get("dbscan_min_samples", level_params.get("min_samples", 2)),
-        min_resources=config.get("min_resources", 5),
-        max_resources_per_term=config.get("max_resources_per_term", 20)
+        min_resources=config.get("min_resources", 5)
     )
     
     hierarchy_config = HierarchyConfig(
         min_parent_overlap=config.get("min_parent_overlap", 0.3),
         max_parent_similarity=config.get("max_parent_similarity", 0.7),
-        min_occurrence_ratio=config.get("min_occurrence_ratio", 0.1)
+        enable_web_enhancement=config.get("enable_web_enhancement", True),
+        max_web_resources_for_keywords=config.get("max_web_resources_for_keywords", 5)
     )
     
     global_config = GlobalConfig(
@@ -449,7 +454,8 @@ def _convert_legacy_config(
         eps=config.get("global_eps", 0.3),
         min_samples=config.get("global_min_samples", 3),
         min_resources=config.get("min_resources", 5),
-        max_resources_per_term=config.get("max_resources_per_term", 10)
+        max_resources_per_term=config.get("max_resources_per_term", 10),
+        min_total_resources=config.get("min_total_resources", 50)
     )
     
     # Determine which methods to enable based on the method parameter
@@ -470,7 +476,9 @@ def _convert_legacy_config(
         level_configs[level] = LevelConfig(
             eps=level_params.get("eps", 0.45),
             min_samples=level_params.get("min_samples", 2),
-            min_resources=level_params.get("min_resources", 5)
+            description=level_params.get("description", f"Level {level} configuration"),
+            separation_threshold=level_params.get("separation_threshold", 0.5),
+            examples=level_params.get("examples", "")
         )
     
     return DisambiguationConfig(
@@ -673,9 +681,8 @@ def _legacy_split_ambiguous_terms(
     
     # Validate proposals using legacy method
     accepted, rejected = validate_splits(
-        split_proposals=proposals,
+        proposals=proposals,
         hierarchy=hierarchy,
-        web_content=web_content,
         use_llm=config.get("use_llm_validation", True),
         llm_provider=config.get("llm_provider", "gemini")
     )
