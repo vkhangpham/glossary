@@ -111,12 +111,12 @@ class _AdjustableSemaphore:
     def acquired_count(self) -> int:
         """Get number of currently acquired permits.
 
-        Note: This is computed from the semaphore's internal state.
+        Note: This uses the explicit counter maintained by the class.
         """
         if self._semaphore is None:
             return 0
-        # Compute from semaphore internal counter for accuracy
-        return self._current_capacity - self._semaphore._value
+        # Use the explicit counter we maintain
+        return self._acquired_count
 
 
 class ConcurrencyManager:
@@ -345,10 +345,9 @@ async def execute_with_resource_management(operation_type: str, operation_func: 
     try:
         start_time = time.time()
 
-        # Handle both async and sync functions using inspect.isawaitable pattern
-        result = operation_func(*args, **kwargs)
-        if inspect.isawaitable(result):
-            result = await result
+        # Handle both async and sync functions by checking if it's a coroutine function
+        if asyncio.iscoroutinefunction(operation_func):
+            result = await operation_func(*args, **kwargs)
         else:
             # For sync functions, run in thread
             result = await asyncio.to_thread(operation_func, *args, **kwargs)
@@ -618,10 +617,9 @@ async def throttled_execution(operations: List[Callable],
         operation_start = time.time()
 
         try:
-            # Execute operation using inspect.isawaitable pattern
-            result = operation()
-            if inspect.isawaitable(result):
-                result = await result
+            # Execute operation by checking if it's a coroutine function
+            if asyncio.iscoroutinefunction(operation):
+                result = await operation()
             else:
                 # For sync functions, run in thread
                 result = await asyncio.to_thread(operation)
