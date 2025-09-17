@@ -94,6 +94,7 @@ class HierarchyConfig:
     min_parent_overlap: float = 0.3
     max_parent_similarity: float = 0.7
     enable_web_enhancement: bool = True
+    max_web_resources_for_keywords: int = 5
 
 
 @dataclass(frozen=True)
@@ -105,6 +106,7 @@ class GlobalConfig:
     min_samples: int = 3
     min_resources: int = 5
     max_resources_per_term: int = 10
+    min_total_resources: int = 50
 
 
 @dataclass(frozen=True)

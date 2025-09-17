@@ -25,7 +25,6 @@ try:
     HDBSCAN_AVAILABLE = True
 except ImportError:
     HDBSCAN_AVAILABLE = False
-    logging.debug("HDBSCAN not available, using DBSCAN only")
 
 
 # Model injection functions
@@ -90,7 +89,7 @@ def create_detection_result(term: str, clusters: List[Dict[str, Any]], confidenc
 
 
 # Pure helper functions
-def _extract_term_contents(terms: List[str], web_content: Dict[str, Any], min_resources: int) -> Dict[str, List[str]]:
+def _extract_term_contents(terms: List[str], web_content: Dict[str, Any], min_resources: int) -> Tuple[Dict[str, List[str]], Dict[str, List[Any]]]:
     """
     Extract content from term resources (pure function).
 
@@ -100,9 +99,12 @@ def _extract_term_contents(terms: List[str], web_content: Dict[str, Any], min_re
         min_resources: Minimum resources required
 
     Returns:
-        Dictionary mapping terms to their content lists
+        Tuple of (term_contents, term_filtered_resources):
+        - term_contents: Dictionary mapping terms to their content lists
+        - term_filtered_resources: Dictionary mapping terms to their filtered resources aligned with contents
     """
     term_contents = {}
+    term_filtered_resources = {}
 
     for term in terms:
         if term not in web_content:
@@ -115,20 +117,23 @@ def _extract_term_contents(terms: List[str], web_content: Dict[str, Any], min_re
         if len(term_resources) < min_resources:
             continue
 
-        # Extract content from resources
+        # Extract content from resources and keep aligned filtered resources
         contents = []
+        filtered_resources = []
         for resource in term_resources:
             content = extract_informative_content(resource)
             if content:
                 contents.append(content)
+                filtered_resources.append(resource)
 
         if len(contents) >= min_resources:
             term_contents[term] = contents
+            term_filtered_resources[term] = filtered_resources
 
-    return term_contents
+    return term_contents, term_filtered_resources
 
 
-def _cluster_embeddings_pure(embeddings: np.ndarray, algorithm: str, eps: float, min_samples: int) -> Tuple[np.ndarray, float]:
+def _cluster_embeddings_pure(embeddings: np.ndarray, algorithm: str, eps: float, min_samples: int) -> Tuple[np.ndarray, float, str]:
     """
     Cluster embeddings using specified algorithm (pure function).
 
@@ -139,7 +144,7 @@ def _cluster_embeddings_pure(embeddings: np.ndarray, algorithm: str, eps: float,
         min_samples: Minimum samples for a cluster
 
     Returns:
-        Tuple of (cluster_labels, silhouette_score)
+        Tuple of (cluster_labels, silhouette_score, algorithm_used)
     """
     if algorithm == "hdbscan" and HDBSCAN_AVAILABLE:
         clusterer = hdbscan.HDBSCAN(
@@ -148,9 +153,11 @@ def _cluster_embeddings_pure(embeddings: np.ndarray, algorithm: str, eps: float,
             cluster_selection_epsilon=eps
         )
         clusters = clusterer.fit_predict(embeddings)
+        algorithm_used = "hdbscan"
     else:
         clusterer = DBSCAN(eps=eps, min_samples=min_samples)
         clusters = clusterer.fit_predict(embeddings)
+        algorithm_used = "dbscan"
 
     # Calculate silhouette score if we have clusters
     silhouette = 0.0
@@ -161,7 +168,7 @@ def _cluster_embeddings_pure(embeddings: np.ndarray, algorithm: str, eps: float,
         except:
             silhouette = 0.0
 
-    return clusters, silhouette
+    return clusters, silhouette, algorithm_used
 
 
 def _analyze_clusters_pure(clusters: np.ndarray, term_resources: List[Any]) -> Tuple[List[Dict[str, Any]], int]:
@@ -178,6 +185,9 @@ def _analyze_clusters_pure(clusters: np.ndarray, term_resources: List[Any]) -> T
     unique_clusters = set(c for c in clusters if c != -1)
     num_unique_clusters = len(unique_clusters)
 
+    # Calculate total clustered points (excluding noise)
+    total_clustered = sum(1 for c in clusters if c != -1)
+
     cluster_info = []
     for cluster_id in unique_clusters:
         cluster_indices = [i for i, c in enumerate(clusters) if c == cluster_id]
@@ -186,10 +196,13 @@ def _analyze_clusters_pure(clusters: np.ndarray, term_resources: List[Any]) -> T
         # Get sample resources from this cluster
         sample_resources = [term_resources[i] for i in cluster_indices[:3]]
 
+        # Use total_clustered as denominator for percentages
+        percentage = cluster_size / total_clustered if total_clustered > 0 else 0
+
         cluster_info.append({
             "cluster_id": int(cluster_id),
             "size": cluster_size,
-            "percentage": cluster_size / len(clusters),
+            "percentage": percentage,
             "sample_resources": sample_resources
         })
 
@@ -220,16 +233,14 @@ def detect_embedding_ambiguity(
     Returns:
         List of DetectionResult objects for ambiguous terms
     """
-    # Extract content for all terms
-    term_contents = _extract_term_contents(terms, web_content, config.min_resources)
+    # Extract content for all terms and get filtered resources aligned with contents
+    term_contents, term_filtered_resources = _extract_term_contents(terms, web_content, config.min_resources)
 
     results = []
 
     for term, contents in term_contents.items():
-        # Get term resources for cluster analysis
-        term_resources = web_content[term]
-        if isinstance(term_resources, dict):
-            term_resources = term_resources.get("resources", [])
+        # Get filtered resources aligned with contents
+        filtered_resources = term_filtered_resources[term]
 
         # Generate embeddings using injected model function
         try:
@@ -239,15 +250,15 @@ def detect_embedding_ambiguity(
             continue
 
         # Cluster embeddings
-        clusters, silhouette = _cluster_embeddings_pure(
+        clusters, silhouette, algorithm_used = _cluster_embeddings_pure(
             embeddings,
             config.clustering_algorithm,
             config.eps,
             config.min_samples
         )
 
-        # Analyze clusters
-        cluster_info, num_unique_clusters = _analyze_clusters_pure(clusters, term_resources)
+        # Analyze clusters with filtered resources
+        cluster_info, num_unique_clusters = _analyze_clusters_pure(clusters, filtered_resources)
 
         # Check if ambiguous (multiple clusters)
         if num_unique_clusters > 1:
@@ -260,7 +271,7 @@ def detect_embedding_ambiguity(
 
             # Create evidence dictionary
             evidence = {
-                "clustering_algorithm": config.clustering_algorithm,
+                "clustering_algorithm": algorithm_used,
                 "eps": config.eps,
                 "min_samples": config.min_samples,
                 "model": config.model_name,
@@ -366,7 +377,6 @@ def detect(
             "evidence": dict(result.evidence)
         }
 
-    logging.info(f"Found {len(results)} ambiguous terms via embeddings")
     return results
 
 
@@ -388,4 +398,5 @@ def cluster_embeddings(
     Returns:
         Tuple of (cluster_labels, silhouette_score)
     """
-    return _cluster_embeddings_pure(embeddings, algorithm, eps, min_samples)
+    clusters, silhouette, _ = _cluster_embeddings_pure(embeddings, algorithm, eps, min_samples)
+    return clusters, silhouette

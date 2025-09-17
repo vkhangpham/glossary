@@ -132,7 +132,7 @@ def _extract_parent_context_pure(
             resources = resources.get("resources", [])
 
         # Extract keywords from resource titles/descriptions
-        for resource in resources[:5]:  # Sample first 5
+        for resource in resources[:config.max_web_resources_for_keywords]:  # Sample first N
             if isinstance(resource, dict):
                 title = resource.get("title", "")
                 description = resource.get("description", "")
@@ -310,10 +310,9 @@ def detect_hierarchy_ambiguity(
                 level=level_map.get(term, -1)
             )
 
-            # Create evidence dictionary
+            # Create evidence dictionary (exclude parent_contexts to avoid JSON serialization issues with sets)
             evidence = {
                 "num_parents": len(parents),
-                "parent_contexts": parent_contexts,
                 "min_overlap": config.min_parent_overlap,
                 "max_similarity": config.max_parent_similarity,
                 "level": level_map.get(term, -1),
@@ -417,7 +416,6 @@ def detect(
             "evidence": dict(result.evidence)
         }
 
-    logging.info(f"Found {len(results)} ambiguous terms via hierarchy")
     return results
 
 

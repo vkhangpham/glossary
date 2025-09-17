@@ -200,11 +200,14 @@ def _analyze_term_distribution_pure(
     total_clustered = sum(cluster_counts.values())
     cluster_info = []
 
+    # Convert to set for O(1) lookup performance
+    term_indices_set = set(term_indices)
+
     for cluster_id, count in cluster_counts.items():
-        # Find topic keywords for this cluster
+        # Find topic keywords for this cluster - iterate only term indices
         cluster_resources = [
-            all_contents[i] for i in range(len(all_contents))
-            if global_clusters[i] == cluster_id and i in term_indices
+            all_contents[i] for i in term_indices_set
+            if global_clusters[i] == cluster_id
         ]
 
         cluster_info.append({
@@ -294,7 +297,7 @@ def detect_global_ambiguity(
         terms, web_content, config
     )
 
-    if len(all_contents) < 50:  # Need enough for meaningful global clustering
+    if len(all_contents) < config.min_total_resources:  # Need enough for meaningful global clustering
         return []
 
     # Generate embeddings for all content using injected model function
@@ -437,7 +440,6 @@ def detect(
             "evidence": dict(result.evidence)
         }
 
-    logging.info(f"Found {len(results)} ambiguous terms via global clustering")
     return results
 
 
