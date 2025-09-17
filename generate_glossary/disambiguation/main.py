@@ -18,12 +18,8 @@ from .detectors import embedding as embedding_disambiguator
 from .detectors import hierarchy as hierarchy_disambiguator
 from .detectors import global_clustering as global_disambiguator
 from .splitting import generate_splits, validate_splits
-from .utils import (
-    load_hierarchy,
-    load_web_content,
-    save_results,
-    get_level_params
-)
+from .utils.io import load_hierarchy, load_web_content, save_results
+from .utils import get_level_params
 
 # Type aliases
 Terms = List[str]
