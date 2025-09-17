@@ -16,6 +16,7 @@ class DetectionResult:
     """Immutable result structure for ambiguity detection methods."""
 
     term: str
+    level: int
     method: str  # "embedding", "hierarchy", "global"
     confidence: float  # 0.0-1.0
     evidence: Mapping[str, Any]

@@ -12,10 +12,9 @@ from typing import Dict, List, Any, Optional, Tuple, Callable
 from collections import defaultdict
 import re
 
-from generate_glossary.llm import completion, structured_completion
+from generate_glossary.llm import completion
 from .utils import (
-    extract_keywords,
-    calculate_separation_score
+    extract_keywords
 )
 from .types import (
     DetectionResult,
@@ -64,8 +63,8 @@ def generate_splits(
     
     logging.info(f"Generating splits for {len(detection_results)} ambiguous terms")
     
-    # Convert legacy format to new format
-    detection_results_list = _convert_detection_results_to_list(detection_results)
+    # Convert legacy format to new format, propagating web_content
+    detection_results_list = _convert_detection_results_to_list(detection_results, web_content)
     
     # Create configuration
     config = SplittingConfig(
@@ -415,7 +414,7 @@ Format: YES/NO: reason
 def create_tag_generator(llm_fn: LLMFunction, config: SplittingConfig) -> TagGeneratorFunction:
     """Create a tag generator function with injected LLM dependency."""
     def tag_generator(term: str, resources: List[Dict], level: int) -> str:
-        return _generate_sense_tags_pure(term, resources, level, llm_fn, config)
+        return _generate_tag_with_llm_pure(term, resources, level, llm_fn, config)
     return tag_generator
 
 
@@ -611,7 +610,7 @@ def _generate_sense_tags_fallback_pure(
     return sense_tags
 
 
-def _generate_sense_tags_pure(
+def _generate_tag_with_llm_pure(
     term: str,
     resources: List[Dict],
     level: int,
@@ -841,8 +840,8 @@ def _safe_llm_validate_pure(
         }
     except Exception as e:
         return {
-            "is_valid": True,  # Default to accepting on error
-            "reason": "LLM validation skipped due to error",
+            "is_valid": False,  # Conservative default when LLM fails
+            "reason": "LLM validation unavailable",
             "error": str(e)
         }
 
@@ -993,7 +992,10 @@ def _apply_single_split_pure(
     senses: List[Dict],
     create_backup: bool
 ) -> Tuple[Dict[str, Any], bool]:
-    """Apply a single split to hierarchy (pure function)."""
+    """Apply a single split to hierarchy (pure function).
+    
+    Note: Mutates the hierarchy argument (which should already be a copy owned by caller).
+    """
     # Find term in hierarchy
     term_location = _find_term_in_hierarchy_pure(term, level, hierarchy)
     if not term_location:
@@ -1008,18 +1010,16 @@ def _apply_single_split_pure(
         create_backup=create_backup
     )
     
-    # Create new hierarchy with splits applied
-    updated_hierarchy = copy.deepcopy(hierarchy)
-    
-    if "levels" in updated_hierarchy:
-        level_data = updated_hierarchy["levels"][level]
+    # Apply splits directly to the hierarchy (which is already a copy)
+    if "levels" in hierarchy:
+        level_data = hierarchy["levels"][level]
         terms = level_data.get("terms", [])
         
         # Replace original term with splits
         terms[level_index:level_index+1] = split_terms
         level_data["terms"] = terms
     
-    return updated_hierarchy, True
+    return hierarchy, True
 
 
 def _find_term_in_hierarchy_pure(
@@ -1104,7 +1104,10 @@ def _create_legacy_llm_function(llm_provider: str = "gemini") -> LLMFunction:
     return llm_function
 
 
-def _convert_detection_results_to_list(detection_results: DetectionResults) -> List[DetectionResult]:
+def _convert_detection_results_to_list(
+    detection_results: DetectionResults, 
+    web_content: Optional[WebContent] = None
+) -> List[DetectionResult]:
     """Convert legacy detection results format to DetectionResult list."""
     converted = []
     
@@ -1113,9 +1116,14 @@ def _convert_detection_results_to_list(detection_results: DetectionResults) -> L
         confidence = evidence.pop("overall_confidence", 0.5)
         level = evidence.pop("level", 2)
         
+        # Inject web_content if provided
+        if web_content and term in web_content:
+            evidence['web_content'] = web_content[term]
+        
         detection_result = DetectionResult(
             term=term,
             level=level,
+            method="legacy",  # Add default method since it's required
             confidence=confidence,
             evidence=evidence
         )
