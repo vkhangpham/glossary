@@ -11,28 +11,40 @@ from .api import (
     split_senses
 )
 
-from . import embedding_disambiguator
-from . import hierarchy_disambiguator
-from . import global_disambiguator
+# Import detection modules from new structure
+from . import detectors
+from .detectors.embedding import detect_embedding_ambiguity, detect as embedding_detect
+from .detectors.hierarchy import detect_hierarchy_ambiguity, detect as hierarchy_detect
+from .detectors.global_clustering import detect_global_ambiguity, detect as global_detect
 
-from .sense_splitter import (
-    generate_splits,
-    validate_splits,
-    apply_to_hierarchy
-)
+# Import splitting functions from new structure
+from .splitting.generator import generate_split_proposals, generate_splits
+from .splitting.validator import validate_split_proposals, validate_splits
+from .splitting.applicator import apply_splits_to_hierarchy, apply_to_hierarchy
 
 __all__ = [
     # Public API
     "disambiguate_terms",
     "detect_ambiguous",
     "split_senses",
-    
-    # Detection modules
-    "embedding_disambiguator",
-    "hierarchy_disambiguator",
-    "global_disambiguator",
-    
-    # Splitting functions  
+
+    # Detection modules (new structure)
+    "detectors",
+    "detect_embedding_ambiguity",
+    "detect_hierarchy_ambiguity",
+    "detect_global_ambiguity",
+
+    # Detection functions with aliases
+    "embedding_detect",
+    "hierarchy_detect",
+    "global_detect",
+
+    # Splitting functions (new functional API)
+    "generate_split_proposals",
+    "validate_split_proposals",
+    "apply_splits_to_hierarchy",
+
+    # Legacy splitting functions
     "generate_splits",
     "validate_splits",
     "apply_to_hierarchy"

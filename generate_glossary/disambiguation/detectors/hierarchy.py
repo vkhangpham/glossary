@@ -10,8 +10,8 @@ import warnings
 from typing import Dict, List, Any, Optional, Tuple
 from collections import defaultdict
 
-from .types import DetectionResult, HierarchyConfig
-from .utils import calculate_confidence_score
+from ..types import DetectionResult, HierarchyConfig
+from ..utils import calculate_confidence_score
 
 
 def create_hierarchy_detection_result(

@@ -14,8 +14,8 @@ from sklearn.cluster import DBSCAN
 from sklearn.metrics import silhouette_score
 from sentence_transformers import SentenceTransformer
 
-from .types import DetectionResult, GlobalConfig
-from .utils import (
+from ..types import DetectionResult, GlobalConfig
+from ..utils import (
     extract_informative_content,
     calculate_confidence_score
 )
