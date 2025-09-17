@@ -9,6 +9,7 @@ detecting and resolving ambiguous academic terms.
 import argparse
 import json
 import logging
+import math
 import sys
 import time
 from pathlib import Path
@@ -17,7 +18,6 @@ from typing import Dict, List, Any, Optional, Tuple, Literal, Union
 from .detectors import embedding as embedding_disambiguator
 from .detectors import hierarchy as hierarchy_disambiguator
 from .detectors import global_clustering as global_disambiguator
-from .splitting import generate_splits, validate_splits
 from .utils.io import load_hierarchy, load_web_content, save_results
 from .utils import get_level_params
 
@@ -27,18 +27,24 @@ WebContent = Dict[str, Any]
 Hierarchy = Dict[str, Any]
 DetectionResults = Dict[str, Dict[str, Any]]
 DetectionMethod = Literal["embedding", "hierarchy", "global", "hybrid"]
+
 # Functional core imports
-from .core import create_detection_pipeline, get_detection_summary
+from .core import create_detection_pipeline
 from .types import (
-    DisambiguationConfig, 
-    EmbeddingConfig, 
-    HierarchyConfig, 
+    DisambiguationConfig,
+    EmbeddingConfig,
+    HierarchyConfig,
     GlobalConfig,
     DetectionResult,
     LevelConfig
 )
-from .config.profiles import get_profile, ACADEMIC_PROFILE
+
+# Functional splitting imports (modern API)
 from .splitting import generate_split_proposals, validate_split_proposals, apply_splits_to_hierarchy
+from .splitting.generator import with_llm_function
+
+# Note: Legacy splitting imports (generate_splits, validate_splits) are imported
+# locally in _legacy_split_ambiguous_terms to reduce import overhead
 
 
 def detect_ambiguous_terms(
@@ -219,13 +225,13 @@ def run_disambiguation_pipeline(
     hierarchy_path: str,
     level: Optional[int] = None,
     web_content_path: Optional[str] = None,
-    output_dir: Optional[str] = None,
+    output_dir: Optional[Union[str, Path]] = None,
     config: Optional[Dict[str, Any]] = None,
     apply_splits: bool = False
 ) -> Dict[str, Any]:
     """
     Run complete disambiguation pipeline.
-    
+
     Args:
         hierarchy_path: Path to hierarchy.json file
         level: Optional specific level to process
@@ -233,20 +239,31 @@ def run_disambiguation_pipeline(
         output_dir: Directory for output files
         config: Pipeline configuration
         apply_splits: Whether to apply splits to hierarchy
-        
+
     Returns:
-        Dictionary with complete pipeline results
+        Dictionary containing pipeline results with keys:
+        - detection_results: Dict mapping terms to detection evidence
+        - accepted_splits: List of validated split proposals
+        - rejected_splits: List of rejected split proposals
+        - detection_file: Optional path to saved detection results
+        - splits_file: Optional path to saved split results
+        - updated_hierarchy_path: Optional path to updated hierarchy (only if apply_splits=True)
+        - elapsed_time: Total pipeline execution time in seconds
+        - config: Copy of configuration used for pipeline
     """
-    config = config or {}
+    # Create shallow copy to prevent mutation of caller's config
+    config = dict(config or {})
     start_time = time.time()
+
+    # Initialize hierarchy update path to None
+    updated_hierarchy_path = None
     
-    # Setup output directory
+    # Setup output directory - ensure consistent Path handling
     if output_dir:
         output_path = Path(output_dir)
-        output_path.mkdir(parents=True, exist_ok=True)
     else:
         output_path = Path("data/disambiguation")
-        output_path.mkdir(parents=True, exist_ok=True)
+    output_path.mkdir(parents=True, exist_ok=True)
     
     # Load web content if provided
     web_content = None
@@ -304,26 +321,35 @@ def run_disambiguation_pipeline(
         splits_file = None
     
     # Step 3: Optionally apply to hierarchy
-    updated_hierarchy_path = None
     if apply_splits and accepted_splits:
         logging.info("=" * 60)
         logging.info("STEP 3: APPLYING SPLITS TO HIERARCHY")
         logging.info("=" * 60)
-        
+
         hierarchy = load_hierarchy(hierarchy_path)
         updated_hierarchy = apply_splits_to_hierarchy(
             accepted_splits=accepted_splits,
             hierarchy=hierarchy,
             create_backup=True
         )
-        
-        # Save updated hierarchy
+
+        # Save updated hierarchy with atomic write
         updated_hierarchy_path = output_path / "hierarchy_with_splits.json"
-        with open(updated_hierarchy_path, 'w') as f:
-            json.dump(updated_hierarchy, f, indent=2)
-        
-        logging.info(f"Saved updated hierarchy to {updated_hierarchy_path}")
-        updated_hierarchy_path = str(updated_hierarchy_path)
+        temp_file = updated_hierarchy_path.with_suffix('.tmp')
+        try:
+            with open(temp_file, 'w', encoding='utf-8') as f:
+                json.dump(updated_hierarchy, f, indent=2)
+            # Atomic replacement
+            temp_file.replace(updated_hierarchy_path)
+            logging.info(f"Saved updated hierarchy to {updated_hierarchy_path}")
+            updated_hierarchy_path = str(updated_hierarchy_path)
+        except Exception as e:
+            # Clean up temp file on error
+            if temp_file.exists():
+                temp_file.unlink()
+            logging.error(f"Failed to save updated hierarchy: {e}")
+            updated_hierarchy_path = None
+            raise
     
     elapsed_time = time.time() - start_time
     
@@ -374,31 +400,38 @@ def _merge_detection_results(
     min_confidence: float = 0.5
 ) -> DetectionResults:
     """Merge detection results from multiple methods."""
-    from functools import reduce
-    from operator import mul
-    
     merged = {}
-    
+
     # Collect all detected terms
     all_terms = set()
     for results in results_list:
         all_terms.update(results.keys())
-    
+
     # Merge evidence for each term
     for term in all_terms:
         term_evidence = []
         methods_detected = []
-        
+
         for results in results_list:
             if term in results:
                 evidence = results[term]
                 term_evidence.append(evidence)
                 methods_detected.append(evidence.get("method", "unknown"))
-        
-        # Calculate combined confidence using noisy-OR
-        confidences = [e.get("confidence", 0.5) for e in term_evidence]
-        combined_confidence = 1.0 - reduce(lambda acc, c: acc * (1.0 - c), confidences, 1.0)
-        
+
+        # Calculate combined confidence using noisy-OR with improved confidence handling
+        confidences = []
+        for e in term_evidence:
+            # Check for overall_confidence first, fallback to confidence
+            conf = e.get("overall_confidence", e.get("confidence", 0.5))
+            # Clamp confidence to valid range [0, 1]
+            conf = max(0.0, min(1.0, conf))
+            confidences.append(conf)
+
+        # Use math.prod for clearer computation of combined non-detection probability
+        non_detection_probs = [1.0 - c for c in confidences]
+        combined_non_detection = math.prod(non_detection_probs)
+        combined_confidence = 1.0 - combined_non_detection
+
         # Only include if above threshold
         if combined_confidence >= min_confidence:
             merged[term] = {
@@ -408,13 +441,13 @@ def _merge_detection_results(
                 "evidence": term_evidence,
                 "overall_confidence": combined_confidence
             }
-            
+
             # Add level if available
             for evidence in term_evidence:
                 if "level" in evidence:
                     merged[term]["level"] = evidence["level"]
                     break
-    
+
     return merged
 
 
@@ -663,13 +696,16 @@ def _legacy_split_ambiguous_terms(
 ) -> Tuple[List[Dict], List[Dict]]:
     """
     Fallback to legacy splitting methods for backward compatibility.
-    
+
     This function preserves the original splitting logic when the functional
     approach fails, ensuring the system remains operational during migration.
     """
     import warnings
     warnings.warn("Legacy splitting is deprecated; please migrate to functional API", DeprecationWarning, stacklevel=2)
-    
+
+    # Local imports of legacy splitting functions to reduce import overhead
+    from .splitting import generate_splits, validate_splits
+
     # Generate split proposals using legacy method
     proposals = generate_splits(
         detection_results=detection_results,
@@ -678,7 +714,7 @@ def _legacy_split_ambiguous_terms(
         use_llm=config.get("use_llm_validation", True),
         llm_provider=config.get("llm_provider", "gemini")
     )
-    
+
     # Validate proposals using legacy method
     accepted, rejected = validate_splits(
         proposals=proposals,
@@ -686,7 +722,7 @@ def _legacy_split_ambiguous_terms(
         use_llm=config.get("use_llm_validation", True),
         llm_provider=config.get("llm_provider", "gemini")
     )
-    
+
     return accepted, rejected
 
 def setup_logging(verbose: bool = False):
@@ -889,5 +925,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import numpy as np  # Import here for CLI usage
     sys.exit(main())
