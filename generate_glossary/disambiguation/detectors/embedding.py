@@ -65,7 +65,7 @@ def with_embedding_model(detection_fn: Callable, model_name: str) -> Callable:
     return wrapped_detection
 
 
-def create_detection_result(term: str, clusters: List[Dict[str, Any]], confidence: float, evidence: Dict[str, Any]) -> DetectionResult:
+def create_detection_result(term: str, clusters: List[Dict[str, Any]], confidence: float, evidence: Dict[str, Any], level: int) -> DetectionResult:
     """
     Create a DetectionResult object for embedding-based detection.
 
@@ -74,12 +74,14 @@ def create_detection_result(term: str, clusters: List[Dict[str, Any]], confidenc
         clusters: List of cluster information dictionaries
         confidence: Confidence score for the detection
         evidence: Evidence supporting the detection
+        level: Hierarchy level of the term
 
     Returns:
         DetectionResult object
     """
     return DetectionResult(
         term=term,
+        level=level,
         method="embedding",
         confidence=confidence,
         evidence=evidence,
@@ -213,7 +215,8 @@ def detect_embedding_ambiguity(
     terms: List[str],
     web_content: Dict[str, Any],
     config: EmbeddingConfig,
-    model_fn: Callable[[List[str]], np.ndarray]
+    model_fn: Callable[[List[str]], np.ndarray],
+    level: int = 2
 ) -> List[DetectionResult]:
     """
     Pure functional detection of ambiguous terms using embedding clustering.
@@ -286,7 +289,8 @@ def detect_embedding_ambiguity(
                 term=term,
                 clusters=cluster_info,
                 confidence=confidence,
-                evidence=evidence
+                evidence=evidence,
+                level=level
             )
 
             results.append(detection_result)

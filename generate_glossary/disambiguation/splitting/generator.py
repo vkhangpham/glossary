@@ -102,15 +102,15 @@ def generate_split_proposals(
 
 def create_tag_generator(llm_fn: LLMFunction, config: SplittingConfig) -> TagGeneratorFunction:
     """Create a tag generator function with given LLM function and config."""
-    def tag_generator(term: str, cluster_resources: Dict[int, List[Dict]], level: int) -> Dict[int, str]:
-        return _generate_sense_tags_with_llm_pure(term, cluster_resources, level, tag_generator)
+    def tag_generator(term: str, resources: List[Dict], level: int) -> str:
+        return _generate_tag_with_llm_pure(term, resources, level, llm_fn, config)
     return tag_generator
 
 
 def with_llm_function(llm_provider: str = "gemini") -> LLMFunction:
     """Create an LLM function wrapper for the given provider."""
-    def llm_fn(prompt: str, **kwargs) -> str:
-        return completion(prompt, model_provider=llm_provider, **kwargs)
+    def llm_fn(messages: List[Dict[str, Any]]) -> str:
+        return completion(messages, model_provider=llm_provider)
     return llm_fn
 
 
@@ -220,12 +220,7 @@ def _generate_sense_tags_with_llm_pure(
 
     for cluster_id, resources in cluster_resources.items():
         try:
-            tag = _generate_tag_with_llm_pure(
-                term=term,
-                resources=resources,
-                level=level,
-                tag_generator_fn=tag_generator_fn
-            )
+            tag = tag_generator_fn(term, resources, level)
             sense_tags[cluster_id] = tag
         except Exception as e:
             logging.warning(f"Failed to generate LLM tag for cluster {cluster_id} of term '{term}': {e}")
@@ -262,7 +257,8 @@ def _generate_tag_with_llm_pure(
     term: str,
     resources: List[Dict],
     level: int,
-    tag_generator_fn: TagGeneratorFunction
+    llm_fn: LLMFunction,
+    config: SplittingConfig
 ) -> str:
     """
     Generate a single semantic tag using LLM (pure function).
@@ -271,7 +267,8 @@ def _generate_tag_with_llm_pure(
         term: The ambiguous term
         resources: Resources for this cluster
         level: Hierarchy level
-        tag_generator_fn: Function to generate tags
+        llm_fn: LLM function for generation
+        config: Configuration for tag generation
 
     Returns:
         Generated semantic tag
@@ -292,7 +289,7 @@ def _generate_tag_with_llm_pure(
     level_name = level_names[level] if level < len(level_names) else "concept"
 
     content_text = " ".join(content_pieces)
-    prompt = f"""Given the following content about "{term}" in the context of {level_name}, generate a concise, descriptive tag that captures the specific meaning or sense of this term.
+    prompt_text = f"""Given the following content about "{term}" in the context of {level_name}, generate a concise, descriptive tag that captures the specific meaning or sense of this term.
 
 Content: {content_text}
 
@@ -300,8 +297,11 @@ Generate a short, descriptive tag (1-3 words) that distinguishes this sense of "
 
 Tag:"""
 
+    # Convert prompt to messages format
+    messages = [{"role": "user", "content": prompt_text}]
+
     try:
-        response = tag_generator_fn(prompt)
+        response = llm_fn(messages)
         # Clean and validate the response
         tag = re.sub(r'[^\w\s-]', '', response.strip())
         tag = re.sub(r'\s+', '_', tag.lower())
@@ -336,21 +336,30 @@ def _create_split_proposal_pure(
     Returns:
         Immutable SplitProposal object
     """
-    # Create sense mappings
-    senses = {}
+    # Create sense mappings for proposed_senses
+    senses = []
     for cluster_id in cluster_resources.keys():
         tag = sense_tags.get(cluster_id, f"{term}_{cluster_id}")
-        senses[cluster_id] = {
+        sense_dict = {
             "tag": tag,
+            "cluster_id": cluster_id,
             "resources": cluster_resources[cluster_id]
         }
+        senses.append(sense_dict)
+
+    # Create evidence dictionary
+    evidence = {
+        "sense_tags": sense_tags,
+        "method": "clustering",
+        "cluster_count": len(cluster_resources)
+    }
 
     return SplitProposal(
-        term=term,
+        original_term=term,
         level=level,
-        senses=senses,
+        proposed_senses=tuple(senses),
         confidence=confidence,
-        method="clustering"
+        evidence=evidence
     )
 
 

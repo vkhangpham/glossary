@@ -63,7 +63,8 @@ def create_global_detection_result(
     term: str,
     cluster_distribution: List[Dict[str, Any]],
     confidence: float,
-    evidence: Dict[str, Any]
+    evidence: Dict[str, Any],
+    level: int = 2
 ) -> DetectionResult:
     """
     Create a DetectionResult object for global clustering-based detection.
@@ -73,12 +74,14 @@ def create_global_detection_result(
         cluster_distribution: Distribution of term resources across global clusters
         confidence: Confidence score for the detection
         evidence: Evidence supporting the detection
+        level: Hierarchy level of the term
 
     Returns:
         DetectionResult object
     """
     return DetectionResult(
         term=term,
+        level=level,
         method="global",
         confidence=confidence,
         evidence=evidence,
@@ -273,7 +276,8 @@ def detect_global_ambiguity(
     terms: List[str],
     web_content: Dict[str, Any],
     config: GlobalConfig,
-    model_fn: Callable[[List[str]], np.ndarray]
+    model_fn: Callable[[List[str]], np.ndarray],
+    level: int = 2
 ) -> List[DetectionResult]:
     """
     Pure functional detection of ambiguous terms using global clustering.
@@ -349,7 +353,8 @@ def detect_global_ambiguity(
                 term=term,
                 cluster_distribution=cluster_info,
                 confidence=confidence,
-                evidence=evidence
+                evidence=evidence,
+                level=level
             )
 
             results.append(detection_result)

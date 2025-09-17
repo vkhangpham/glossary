@@ -48,9 +48,12 @@ def validate_split_proposals(
     rejected = []
 
     for proposal in proposals:
-        term = proposal.term
+        term = proposal.original_term
         level = proposal.level
-        senses = proposal.senses
+        senses = proposal.proposed_senses
+
+        # Convert tuple of senses to dict format for processing
+        senses_dict = {i: sense for i, sense in enumerate(senses)}
 
         # Skip if only one sense
         if len(senses) < 2:
@@ -61,7 +64,7 @@ def validate_split_proposals(
             continue
 
         # Check semantic distinctness
-        tags = [sense_data["tag"] for sense_data in senses.values()]
+        tags = [sense_data["tag"] for sense_data in senses_dict.values()]
         if not _are_tags_distinct_pure(tags):
             rejected_proposal = _create_rejected_proposal_pure(
                 proposal, "Sense tags not semantically distinct"
@@ -70,7 +73,7 @@ def validate_split_proposals(
             continue
 
         # Calculate separation score
-        separation_score = _calculate_separation_score_pure(senses)
+        separation_score = _calculate_separation_score_pure(senses_dict)
         if separation_score < config.min_separation_score:
             rejected_proposal = _create_rejected_proposal_pure(
                 proposal, f"Low separation score: {separation_score:.2f}"
@@ -83,7 +86,7 @@ def validate_split_proposals(
             validator_fn = create_llm_validator(llm_fn, config)
             validation_result = _safe_llm_validate_pure(
                 term=term,
-                senses=senses,
+                senses=senses_dict,
                 level=level,
                 validator_fn=validator_fn
             )
@@ -255,7 +258,7 @@ def _validate_with_llm_pure(
 
     senses_text = "\n".join(sense_descriptions)
 
-    prompt = f"""Given the term "{term}" in the context of {level_name}, evaluate whether the following proposed senses represent truly distinct meanings that would be valuable to separate in an academic glossary:
+    prompt_text = f"""Given the term "{term}" in the context of {level_name}, evaluate whether the following proposed senses represent truly distinct meanings that would be valuable to separate in an academic glossary:
 
 {senses_text}
 
@@ -268,8 +271,11 @@ Respond with either "ACCEPT" or "REJECT" followed by a brief explanation.
 
 Response:"""
 
+    # Convert prompt to messages format
+    messages = [{"role": "user", "content": prompt_text}]
+
     try:
-        response = llm_fn(prompt).strip()
+        response = llm_fn(messages).strip()
 
         # Parse response
         is_valid = response.upper().startswith("ACCEPT")
@@ -299,17 +305,21 @@ def _create_rejected_proposal_pure(
     Returns:
         New SplitProposal marked as rejected
     """
+    # Create new evidence including rejection reason
+    new_evidence = dict(proposal.evidence)
+    new_evidence.update({
+        "validation_status": "rejected",
+        "rejection_reason": reason,
+        "original_confidence": proposal.confidence
+    })
+
     return SplitProposal(
-        term=proposal.term,
+        original_term=proposal.original_term,
         level=proposal.level,
-        senses=proposal.senses,
+        proposed_senses=proposal.proposed_senses,
         confidence=0.0,  # Set confidence to 0 for rejected
-        method=proposal.method,
-        validation_result={
-            "status": "rejected",
-            "reason": reason,
-            "original_confidence": proposal.confidence
-        }
+        evidence=new_evidence,
+        validation_status="rejected"
     )
 
 
@@ -331,17 +341,21 @@ def _create_validated_proposal_pure(
     Returns:
         New SplitProposal with validation results
     """
+    # Create new evidence including validation info
+    new_evidence = dict(proposal.evidence)
+    new_evidence.update({
+        "validation_status": status,
+        "separation_score": separation_score,
+        "validation_method": validation_method
+    })
+
     return SplitProposal(
-        term=proposal.term,
+        original_term=proposal.original_term,
         level=proposal.level,
-        senses=proposal.senses,
+        proposed_senses=proposal.proposed_senses,
         confidence=proposal.confidence,
-        method=proposal.method,
-        validation_result={
-            "status": status,
-            "separation_score": separation_score,
-            "validation_method": validation_method
-        }
+        evidence=new_evidence,
+        validation_status=status
     )
 
 

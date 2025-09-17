@@ -134,8 +134,11 @@ def _convert_detection_results_to_list(detection_results: Dict[str, Dict], web_c
         detection_result = DetectionResult(
             term=term,
             level=result_data.get("level", 2),
+            method=result_data.get("method", "legacy"),
             confidence=result_data.get("confidence", 0.5),
-            evidence=evidence
+            evidence=evidence,
+            clusters=result_data.get("clusters"),
+            metadata=result_data.get("metadata", {})
         )
         result_list.append(detection_result)
 
@@ -148,25 +151,28 @@ def _convert_proposals_to_legacy_format(proposals):
 
     for proposal in proposals:
         legacy_proposal = {
-            "term": proposal.term,
+            "original_term": proposal.original_term,
             "level": proposal.level,
             "confidence": proposal.confidence,
-            "method": proposal.method,
-            "senses": []
+            "proposed_senses": []
         }
 
         # Convert senses to legacy format
-        for cluster_id, sense_data in proposal.senses.items():
+        for sense_data in proposal.proposed_senses:
             legacy_sense = {
                 "sense_tag": sense_data["tag"],
-                "cluster_id": cluster_id,
+                "cluster_id": sense_data.get("cluster_id", 0),
                 "resources": sense_data.get("resources", [])
             }
-            legacy_proposal["senses"].append(legacy_sense)
+            legacy_proposal["proposed_senses"].append(legacy_sense)
 
         # Add validation info if present
-        if hasattr(proposal, 'validation_result'):
-            legacy_proposal["validation"] = proposal.validation_result
+        if proposal.validation_status:
+            legacy_proposal["validation_status"] = proposal.validation_status
+
+        # Add evidence
+        if proposal.evidence:
+            legacy_proposal["evidence"] = proposal.evidence
 
         legacy_proposals.append(legacy_proposal)
 
@@ -181,25 +187,23 @@ def _convert_legacy_proposals_to_new(proposals):
 
     for proposal in proposals:
         # Convert legacy senses format
-        senses = {}
-        for i, sense in enumerate(proposal.get("senses", [])):
-            cluster_id = sense.get("cluster_id", i)
-            senses[cluster_id] = {
+        proposed_senses = []
+        for i, sense in enumerate(proposal.get("proposed_senses", proposal.get("senses", []))):
+            sense_dict = {
                 "tag": sense.get("sense_tag", f"sense_{i}"),
+                "cluster_id": sense.get("cluster_id", i),
                 "resources": sense.get("resources", [])
             }
+            proposed_senses.append(sense_dict)
 
         new_proposal = SplitProposal(
-            term=proposal["term"],
+            original_term=proposal.get("original_term", proposal.get("term")),
             level=proposal.get("level", 2),
-            senses=senses,
+            proposed_senses=tuple(proposed_senses),
             confidence=proposal.get("confidence", 0.5),
-            method=proposal.get("method", "clustering")
+            evidence=proposal.get("evidence", {}),
+            validation_status=proposal.get("validation_status")
         )
-
-        # Add validation result if present
-        if "validation" in proposal:
-            new_proposal.validation_result = proposal["validation"]
 
         new_proposals.append(new_proposal)
 

@@ -38,20 +38,22 @@ def apply_splits_to_hierarchy(
 
     for proposal in proposals:
         # Check if proposal is approved
-        validation_result = getattr(proposal, 'validation_result', {})
-        if validation_result.get('status') != 'approved':
+        if proposal.validation_status != 'approved':
             continue
 
-        term = proposal.term
+        term = proposal.original_term
         level = proposal.level
-        senses = proposal.senses
+        senses = proposal.proposed_senses
+
+        # Convert tuple of senses to dict format for processing
+        senses_dict = {i: sense for i, sense in enumerate(senses)}
 
         # Apply single split
         updated_hierarchy, was_applied = _apply_single_split_pure(
             hierarchy=updated_hierarchy,
             term=term,
             level=level,
-            senses=senses,
+            senses=senses_dict,
             create_backup=config.create_backup if hasattr(config, 'create_backup') else False
         )
 

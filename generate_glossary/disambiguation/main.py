@@ -14,10 +14,10 @@ import time
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple, Literal
 
-from . import embedding_disambiguator
-from . import hierarchy_disambiguator
-from . import global_disambiguator
-from .sense_splitter import generate_splits, validate_splits, apply_to_hierarchy
+from .detectors import embedding as embedding_disambiguator
+from .detectors import hierarchy as hierarchy_disambiguator
+from .detectors import global_clustering as global_disambiguator
+from .splitting import generate_splits, validate_splits, apply_to_hierarchy
 from .utils import (
     load_hierarchy,
     load_web_content,

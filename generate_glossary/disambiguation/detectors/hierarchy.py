@@ -18,7 +18,8 @@ def create_hierarchy_detection_result(
     term: str,
     parents: List[Dict[str, Any]],
     divergence_evidence: Dict[str, Any],
-    confidence: float
+    confidence: float,
+    level_map: Dict[str, int]
 ) -> DetectionResult:
     """
     Create a DetectionResult object for hierarchy-based detection.
@@ -28,12 +29,14 @@ def create_hierarchy_detection_result(
         parents: List of parent information
         divergence_evidence: Evidence of parent context divergence
         confidence: Confidence score for the detection
+        level_map: Mapping from terms to their hierarchy levels
 
     Returns:
         DetectionResult object
     """
     return DetectionResult(
         term=term,
+        level=level_map.get(term, -1),
         method="hierarchy",
         confidence=confidence,
         evidence=divergence_evidence,
@@ -335,7 +338,8 @@ def detect_hierarchy_ambiguity(
                 term=term,
                 parents=parent_info,
                 divergence_evidence=evidence,
-                confidence=confidence
+                confidence=confidence,
+                level_map=level_map
             )
 
             results.append(detection_result)

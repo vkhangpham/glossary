@@ -17,9 +17,9 @@ import time
 from contextlib import contextmanager
 
 from .types import DetectionResult, DisambiguationConfig, EmbeddingConfig, HierarchyConfig, GlobalConfig
-from .embedding_disambiguator import detect_embedding_ambiguity, with_embedding_model
-from .hierarchy_disambiguator import detect_hierarchy_ambiguity
-from .global_disambiguator import detect_global_ambiguity, with_global_embedding_model
+from .detectors.embedding import detect_embedding_ambiguity, with_embedding_model
+from .detectors.hierarchy import detect_hierarchy_ambiguity
+from .detectors.global_clustering import detect_global_ambiguity, with_global_embedding_model
 
 
 # Type aliases for functional composition
