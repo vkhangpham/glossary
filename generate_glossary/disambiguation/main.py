@@ -12,7 +12,7 @@ import logging
 import sys
 import time
 from pathlib import Path
-from typing import Dict, List, Any, Optional, Tuple, Literal
+from typing import Dict, List, Any, Optional, Tuple, Literal, Union
 
 from .detectors import embedding as embedding_disambiguator
 from .detectors import hierarchy as hierarchy_disambiguator
