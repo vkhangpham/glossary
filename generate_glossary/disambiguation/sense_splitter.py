@@ -13,9 +13,6 @@ from collections import defaultdict
 import re
 
 from generate_glossary.llm import completion
-from .utils import (
-    extract_keywords
-)
 from .types import (
     DetectionResult,
     SplitProposal,
@@ -272,77 +269,7 @@ def _group_resources_by_cluster(
     return dict(grouped)
 
 
-def _generate_sense_tags(
-    term: str,
-    cluster_resources: Dict[int, List],
-    level: int,
-    use_llm: bool,
-    llm_provider: str
-) -> Dict[int, str]:
-    """Generate semantic tags for each cluster."""
-    tags = {}
-    
-    for cluster_id, resources in cluster_resources.items():
-        if use_llm:
-            # Use LLM to generate contextual tag
-            tag = _generate_tag_with_llm(
-                term=term,
-                resources=resources[:3],
-                level=level,
-                llm_provider=llm_provider
-            )
-        else:
-            # Extract keywords as tag
-            keywords = extract_keywords(resources)
-            if keywords:
-                tag = keywords[0] if keywords else f"context_{cluster_id}"
-            else:
-                tag = f"context_{cluster_id}"
-        
-        tags[cluster_id] = tag
-    
-    return tags
 
-
-def _generate_tag_with_llm(
-    term: str,
-    resources: List,
-    level: int,
-    llm_provider: str
-) -> str:
-    """Generate a semantic tag using LLM."""
-    # Extract titles and descriptions
-    contexts = []
-    for resource in resources:
-        if isinstance(resource, dict):
-            title = resource.get("title", "")
-            desc = resource.get("description", "")
-            contexts.append(f"{title}: {desc}"[:200])
-    
-    prompt = f"""Given the term "{term}" and these contexts:
-{chr(10).join(contexts)}
-
-Generate a short (1-3 word) semantic tag that distinguishes this specific usage/meaning of the term.
-The tag should be a domain, field, or context identifier.
-
-Examples:
-- For "stress": "psychology" vs "materials"
-- For "model": "fashion" vs "machine learning"
-- For "field": "agriculture" vs "physics"
-
-Tag:"""
-    
-    try:
-        messages = [{"role": "user", "content": prompt}]
-        tag = completion(messages, tier="budget", max_tokens=20)
-        tag = tag.strip().lower()
-        # Clean up tag
-        tag = re.sub(r'[^a-z0-9\s\-]', '', tag)
-        tag = tag.replace(' ', '_')
-        return tag if tag else f"context_{hash(str(resources))%1000}"
-    except Exception as e:
-        logging.warning(f"LLM tag generation failed: {e}")
-        return f"context_{hash(str(resources))%1000}"
 
 
 def _are_tags_distinct(tags: List[str]) -> bool:
@@ -363,48 +290,6 @@ def _are_tags_distinct(tags: List[str]) -> bool:
     return True
 
 
-def _validate_with_llm(
-    term: str,
-    senses: List[Dict],
-    level: int,
-    llm_provider: str
-) -> Tuple[bool, str]:
-    """Validate split proposal using LLM."""
-    sense_descriptions = []
-    for sense in senses:
-        tag = sense["sense_tag"]
-        count = sense["resource_count"]
-        sense_descriptions.append(f"- {tag} ({count} resources)")
-    
-    prompt = f"""Evaluate if this term should be split into multiple senses:
-
-Term: "{term}"
-Level: {level} (0=College, 1=Department, 2=Research Area, 3=Topic)
-Proposed senses:
-{chr(10).join(sense_descriptions)}
-
-Should this term be split into these distinct senses? Consider:
-1. Are these truly different meanings/usages of the same term?
-2. Would splitting improve clarity in an academic glossary?
-3. Are the proposed senses sufficiently distinct?
-
-Answer with YES or NO, followed by a brief reason.
-Format: YES/NO: reason
-"""
-    
-    try:
-        messages = [{"role": "user", "content": prompt}]
-        response = completion(messages, tier="budget", max_tokens=100)
-        response = response.strip()
-        
-        if response.startswith("YES"):
-            return True, "LLM approved split"
-        else:
-            reason = response.split(":", 1)[1] if ":" in response else "LLM rejected split"
-            return False, reason.strip()
-    except Exception as e:
-        logging.warning(f"LLM validation failed: {e}")
-        return True, "LLM validation skipped due to error"
 
 
 # ============================================================================
@@ -890,7 +775,7 @@ Respond with "YES: [brief reason]" if distinct, or "NO: [brief reason]" if not d
         else:
             reason = response.split(":", 1)[1] if ":" in response else "LLM rejected split"
             return False, reason.strip()
-    except Exception as e:
+    except Exception:
         return True, "LLM validation skipped due to error"
 
 
