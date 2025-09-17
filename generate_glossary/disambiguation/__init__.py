@@ -16,6 +16,7 @@ from generate_glossary.disambiguation import (
     create_detection_pipeline,
     parallel_detect,
     combine_detection_results,
+    get_detection_summary,
 
     # Configuration system
     DisambiguationConfig,
