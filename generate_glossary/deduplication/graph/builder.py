@@ -9,6 +9,8 @@ import logging
 from typing import Dict, List, Any, Optional, Tuple
 import networkx as nx
 
+from generate_glossary.deduplication.graph.canonical_selector import select_canonical_from_component
+
 
 def create_deduplication_graph() -> nx.Graph:
     """

@@ -20,8 +20,9 @@ from .utils import (
 )
 
 # Import graph building functions
-from .graph_builder import create_deduplication_graph, add_terms_as_nodes
-from .main import build_graph
+from .graph.builder import create_deduplication_graph, add_terms_as_nodes
+from .core import build_deduplication_graph, is_failure, get_value, get_error
+from .types import DeduplicationConfig
 
 # Type aliases
 DeduplicationResult = Dict[str, Any]
@@ -671,13 +672,21 @@ def deduplicate_graph_based(
         "weak_edge_threshold": 0.3
     }
     
-    # Build the deduplication graph using the actual graph builder
-    graph = build_graph(
-        terms=terms,
-        web_content=all_web_content,
-        level=current_level,
-        config=config
+    # Build the deduplication graph using the functional API
+    dedup_config = DeduplicationConfig(
+        min_text_similarity=config["min_text_similarity"],
+        min_embedding_similarity=config["min_embedding_similarity"],
+        min_url_overlap=config["min_url_overlap"],
+        min_relevance_score=config["min_relevance_score"],
+        use_cross_level=config["use_cross_level"],
+        prefer_higher_level=config["prefer_higher_level"],
+        remove_weak_edges=config["remove_weak_edges"],
+        weak_edge_threshold=config["weak_edge_threshold"]
     )
+    result = build_deduplication_graph(terms_by_level, web_content=all_web_content, config=dedup_config)
+    if is_failure(result):
+        raise RuntimeError(get_error(result))
+    graph = get_value(result)
     
     # Extract canonical terms and variations from the graph
     from .canonical_selector import select_canonical_terms
