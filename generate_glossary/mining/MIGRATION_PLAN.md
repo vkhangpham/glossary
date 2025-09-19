@@ -135,6 +135,76 @@ output:
 2. Remove all legacy function aliases and compatibility layers
 3. Update `__init__.py` to export only essential functions
 
+## API Deprecation Mapping
+
+- **Queue & polling**:
+  - `get_queue_status`, `get_queue_status_async` → call `GET /v2/team/queue-status` directly (wrap a helper only if the SDK version exposes one).
+  - `generate_queue_insights`, `poll_job_with_adaptive_strategy`, `apply_intelligent_throttling`, `get_queue_predictor`, `reset_queue_state` → rely on Firecrawl queue telemetry and remove bespoke predictors.
+- **URL mapping**:
+  - `map_urls_concurrently`, `map_urls_fast_enhanced`, `_map_urls_concurrently`, `_map_urls_fast_enhanced`, `optimize_url_discovery`, `deduplicate_and_score_urls`, `cache_mapping_results`, `get_cached_mapping`, `clear_mapping_cache`, `get_cache_stats` → migrate to `firecrawl.map()` and Firecrawl's deduplication output.
+- **Webhook utilities**:
+  - `setup_webhooks`, `verify_webhook_signature`, `handle_webhook_event`, `get_webhook_stats`, `get_recent_events`, `list_active_webhooks`, `remove_webhook`, `test_webhook_connectivity`, `reset_webhook_state` → replace with per-call `webhook={...}` payloads and Firecrawl signature headers.
+- **API usage & performance**:
+  - `track_api_usage`, `analyze_usage_patterns`, `calculate_feature_impact`, `generate_optimization_recommendations`, `generate_v220_benchmarks`, `estimate_api_costs`, `calculate_usage_efficiency`, `get_api_usage_stats`, `reset_api_tracking`, `get_usage_trends` → consume Firecrawl usage dashboards or endpoints instead of local analytics.
+  - `configure_performance_profile`, `auto_tune_performance`, `get_performance_status`, `get_current_profile`, `set_performance_profile`, `reset_performance_state`, `PerformanceProfile` → rely on Firecrawl-managed throttling and remove local tuners.
+- **Legacy aliases**:
+  - `_search_concepts_batch`, `_batch_scrape_urls`, `_extract_with_smart_prompts`, `_map_urls_*` → delete once the canonical functions exist; avoid exporting duplicates from `__init__.py`.
+
+**Deprecation Timeline**
+- Sprint 0 (design): Mark deprecated symbols in documentation and surface warnings when imported.
+- Sprint 1 (bridge release): Ship wrappers that forward to Firecrawl while logging warnings; publish beta replacements.
+- Sprint 2 (removal): Delete wrappers, shrink `__all__`, and clean downstream imports.
+
+**Communication Plan**
+- Document changes in release notes and the mining module README.
+- Send direct notifications to downstream teams with sample replacement snippets and deadlines.
+- Add CI lint rules to detect deprecated imports and link to this mapping.
+
+## Webhook Transition Strategy
+
+`WebhookConfig` and the `webhook_config` parameter on `mine_concepts()` will be deprecated in favor of per-call `webhook` payloads.
+
+```python
+# Legacy
+mine_concepts(
+    concepts,
+    webhook_config=WebhookConfig(
+        url="https://hooks.internal/mining",
+        events=["started", "page", "completed", "failed"],
+        metadata={"pipeline": "mining"},
+    ),
+)
+
+# Post-migration
+mine_concepts(
+    concepts,
+    webhook={
+        "url": "https://hooks.internal/mining",
+        "events": ["started", "page", "completed", "failed"],
+        "metadata": {"pipeline": "mining"},
+    },
+)
+```
+
+During the bridge release we will translate any provided `WebhookConfig` into the new payload and emit a deprecation warning. Firecrawl signs each delivery; downstream services must continue verifying signatures before acknowledging events.
+
+## Target Public API
+
+Post-migration, `mining/__init__.py` and `mining/mining.py` export only:
+- `mine_concepts`
+- `ConceptDefinition`
+- `WebResource`
+
+All other helpers remain internal or CLI-specific. Collapsing the re-export chain keeps the public surface minimal and prevents new aliases from creeping back into `__all__`.
+
+## Edge Cases & Compatibility
+
+- **Legacy PDF limits**: Convert `max_pages_per_pdf` (and related knobs) into Firecrawl's `maxPages` parameter and clamp to the API's max. Warn when user-supplied values exceed the allowed range.
+- **Map endpoint flags**: Treat `use_map_endpoint` as advisory; when `firecrawl.map()` is unavailable, fall back to sequential `firecrawl.scrape()` with throttling and log the downgrade.
+- **Batch fallback**: If `firecrawl.batch_scrape()` is disabled or returns a non-success status, revert to sequential scraping to preserve functionality and emit telemetry so operators know a fallback triggered.
+- **Missing SDK features**: When the active Firecrawl SDK build lacks `categories` support, omit the parameter, rely on query filters, and surface a warning so teams know category filtering was skipped.
+
+
 ## Phase 4: Benefits and Validation
 
 ### Complexity Reduction

@@ -84,11 +84,7 @@ result = firecrawl.scrape(
 - Custom throttling and adaptive polling strategies
 - Performance profiling integration
 
-**Firecrawl v2.2.0 Native:**
-```python
-queue_status = firecrawl.get_queue_status()
-# Returns native queue information with built-in monitoring
-```
+**Firecrawl v2.2.0 Native:** `GET /v2/team/queue-status` (returns native queue metrics; newer SDK helpers may wrap this route, but consumers should be prepared to call the endpoint directly.)
 
 **Simplification Benefits:**
 - 100% code elimination (300+ lines → 0 lines)
@@ -152,27 +148,17 @@ payload = {
         "url": "https://hooks.internal/mining",
         "metadata": {"pipeline": "mining", "batch_id": batch_id},
         "events": [
-            "crawl.started",
-            "crawl.page",
-            "crawl.completed",
-            "crawl.failed"
+            "started",
+            "page",
+            "completed",
+            "failed"
         ],
     },
 }
 firecrawl.crawl(**payload)
 ```
 
-> Events are namespaced per job (`crawl.started`, `crawl.page`, `crawl.completed`, `crawl.failed`, etc.) and Firecrawl v2.2.0 signs every webhook delivery by default, so consumers must verify signatures before processing payloads.
-
-If you prefer the SDK helper, the same configuration can be expressed as:
-```python
-firecrawl.setup_webhook(
-    url="https://hooks.internal/mining",
-    metadata={"pipeline": "mining"},
-    events=["crawl.started", "crawl.page", "crawl.completed", "crawl.failed"],
-)
-# which produces the equivalent job payload as the inline `webhook` block above.
-```
+> Use per-request webhook payloads; Firecrawl signs every delivery and consumers must verify signatures on receipt before processing events.
 
 **Simplification Benefits:**
 - 100% code elimination (200+ lines → 0 lines)

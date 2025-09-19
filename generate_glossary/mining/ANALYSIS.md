@@ -32,7 +32,7 @@
 
 ### Advanced Features
 - **AsyncFirecrawl**: Native async client support
-- **Queue Management**: Built-in `get_queue_status()` and monitoring
+- **Queue Management**: v2.2.0 exposes `/v2/team/queue-status`; newer SDK helpers may wrap it, but integrations must be ready to call the endpoint directly.
 - **Webhooks**: Native webhook support with signature verification
 - **Structured Extraction**: Built-in JSON schema extraction with Pydantic models
 - **Caching**: Native caching with `maxAge` parameter
@@ -58,7 +58,7 @@
 - `extract_with_smart_prompts()` – Use Firecrawl's native structured extraction
 
 ### Functions to Remove
-- All queue management functions (use Firecrawl native)
+- All queue management functions (replace with direct `GET /v2/team/queue-status` usage; keep a helper only if the SDK version supplies one)
 - All performance profiling functions (use Firecrawl native)
 - All API tracking functions (use Firecrawl native)
 - All webhook management functions (use Firecrawl native)
@@ -97,3 +97,10 @@ mining/
 3. **Performance**: Leverage Firecrawl's optimized batch processing and caching
 4. **Future-proof**: Automatic access to new Firecrawl features
 5. **Simplicity**: Clear, direct API without complex abstractions
+
+## Dependencies
+
+- **External Libraries**: `firecrawl` (requires v2.2.0 feature set), `pydantic` (models), `requests` (HTTP fallbacks and direct endpoint calls)
+- **Internal Modules**: `generate_glossary.mining.core_mining`, `generate_glossary.mining.models`, `generate_glossary.mining.client`, `generate_glossary.utils.failure_tracker`
+- **Environment Variables**: `FIRECRAWL_API_KEY` (mandatory for SDK initialization and direct API calls)
+
