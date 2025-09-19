@@ -12,38 +12,64 @@ import time
 import logging
 from typing import Dict, List, Optional, Any
 from urllib.parse import urlparse
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
-from firecrawl import FirecrawlApp
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_exponential,
+    retry_if_exception_type,
+)
 
 # HTTP timeout exception imports
 try:
-    from requests.exceptions import Timeout as RequestsTimeout, ConnectionError as RequestsConnectionError
+    from requests.exceptions import (
+        Timeout as RequestsTimeout,
+        ConnectionError as RequestsConnectionError,
+    )
 except ImportError:
     RequestsTimeout = TimeoutError
     RequestsConnectionError = ConnectionError
 
 try:
-    from httpx import ReadTimeout as HttpxReadTimeout, ConnectTimeout as HttpxConnectTimeout
+    from httpx import (
+        ReadTimeout as HttpxReadTimeout,
+        ConnectTimeout as HttpxConnectTimeout,
+    )
 except ImportError:
     HttpxReadTimeout = TimeoutError
     HttpxConnectTimeout = ConnectionError
 
 from .models import ConceptDefinition, WebResource, WebhookConfig, ApiUsageStats
-from .client import get_client
+from .config import ConfigError, get_firecrawl_client
 from .performance import get_current_profile
-from .queue_management import get_queue_status_async, apply_intelligent_throttling, poll_job_with_adaptive_strategy
-from .url_processing import map_urls_concurrently, map_urls_fast_enhanced, optimize_url_discovery
+from .queue_management import (
+    get_queue_status_async,
+    apply_intelligent_throttling,
+    poll_job_with_adaptive_strategy,
+)
+from .url_processing import (
+    map_urls_concurrently,
+    map_urls_fast_enhanced,
+    optimize_url_discovery,
+)
 from .api_tracking import get_api_usage_stats
 from .webhooks import setup_webhooks
 from .async_processing import (
-    execute_with_resource_management, process_with_streaming,
-    execute_parallel_pipeline, get_concurrency_manager
+    execute_with_resource_management,
+    process_with_streaming,
+    execute_parallel_pipeline,
+    get_concurrency_manager,
 )
 from generate_glossary.config import get_mining_config
 from generate_glossary.utils.error_handler import (
-    ExternalServiceError, handle_error, processing_context
+    ExternalServiceError,
+    handle_error,
+    processing_context,
 )
-from generate_glossary.utils.logger import get_logger, log_processing_step, log_with_context
+from generate_glossary.utils.logger import (
+    get_logger,
+    log_processing_step,
+    log_with_context,
+)
 from generate_glossary.llm import run_async_safely
 
 
@@ -52,42 +78,81 @@ logger = get_logger(__name__)
 
 def _normalize_legacy_parameters(**kwargs) -> Dict[str, Any]:
     """Normalize legacy parameter aliases to current parameter names.
-    
+
     This centralizes legacy parameter handling to avoid repetition and potential
     event loop issues with parameter processing across different contexts.
-    
+
     Args:
         **kwargs: Parameters that may include legacy aliases
-        
+
     Returns:
         Dictionary with normalized parameters
     """
     normalized = kwargs.copy()
-    
+
     # Handle max_pages_per_pdf -> max_pages alias
-    if normalized.get('max_pages') is None and 'max_pages_per_pdf' in normalized:
-        normalized['max_pages'] = normalized.pop('max_pages_per_pdf')
-        logger.debug(f"Normalized legacy parameter max_pages_per_pdf={normalized['max_pages']} to max_pages")
-    
-    # Handle use_map_endpoint -> use_fast_map alias  
-    if 'use_map_endpoint' in normalized:
-        normalized['use_fast_map'] = normalized.pop('use_map_endpoint')
-        logger.debug(f"Normalized legacy parameter use_map_endpoint={normalized['use_fast_map']} to use_fast_map")
-    
+    if normalized.get("max_pages") is None and "max_pages_per_pdf" in normalized:
+        normalized["max_pages"] = normalized.pop("max_pages_per_pdf")
+        logger.debug(
+            f"Normalized legacy parameter max_pages_per_pdf={normalized['max_pages']} to max_pages"
+        )
+
+    # Handle use_map_endpoint -> use_fast_map alias
+    if "use_map_endpoint" in normalized:
+        normalized["use_fast_map"] = normalized.pop("use_map_endpoint")
+        logger.debug(
+            f"Normalized legacy parameter use_map_endpoint={normalized['use_fast_map']} to use_fast_map"
+        )
+
     return normalized
+
+
+def _resolve_firecrawl_client(
+    app: Optional[Any],
+    operation: str,
+    correlation_id: Optional[str] = None,
+) -> Optional[Any]:
+    """Return an initialized Firecrawl client, handling configuration errors."""
+
+    if app is not None:
+        return app
+
+    try:
+        return get_firecrawl_client()
+    except ConfigError as exc:
+        handle_error(
+            ExternalServiceError(str(exc), service="firecrawl"),
+            context={"operation": operation},
+            operation=operation,
+        )
+        log_with_context(
+            logger,
+            logging.ERROR,
+            f"Unable to acquire Firecrawl client: {exc}",
+            correlation_id=correlation_id,
+        )
+        return None
+
 
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=1, min=2, max=30),
-    retry=retry_if_exception_type((
-        ConnectionError, TimeoutError, OSError,
-        RequestsTimeout, RequestsConnectionError,
-        HttpxReadTimeout, HttpxConnectTimeout
-    )),
-    reraise=True
+    retry=retry_if_exception_type(
+        (
+            ConnectionError,
+            TimeoutError,
+            OSError,
+            RequestsTimeout,
+            RequestsConnectionError,
+            HttpxReadTimeout,
+            HttpxConnectTimeout,
+        )
+    ),
+    reraise=True,
 )
-def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
-                         max_urls_per_concept: int = 3) -> Dict[str, List[Dict[str, Any]]]:
+def search_concepts_batch(
+    app: Any, concepts: List[str], max_urls_per_concept: int = 3
+) -> Dict[str, List[Dict[str, Any]]]:
     """Search for multiple concepts using Firecrawl's search endpoint with v2 features.
 
     Args:
@@ -105,9 +170,9 @@ def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
             "started",
             {
                 "concepts_count": len(concepts),
-                "max_urls_per_concept": max_urls_per_concept
+                "max_urls_per_concept": max_urls_per_concept,
             },
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
         results = {}
@@ -116,19 +181,19 @@ def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
         try:
             for concept in concepts:
                 # Build academic-focused query with proper OR operator handling
-                if ' ' in concept:
+                if " " in concept:
                     # Multi-word concept: quote it and append OR terms outside quotes
-                    escaped_concept = concept.replace('"', '\"')
+                    escaped_concept = concept.replace('"', '"')
                     query = f'"{escaped_concept}" (definition OR explanation OR academic OR wikipedia OR edu OR arxiv)'
                 else:
                     # Single word: no quotes needed
-                    query = f'{concept} (definition OR explanation OR academic OR wikipedia OR edu OR arxiv)'
+                    query = f"{concept} (definition OR explanation OR academic OR wikipedia OR edu OR arxiv)"
 
                 log_with_context(
                     logger,
                     logging.INFO,
                     f"Searching for: {concept}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
 
                 # Track API usage
@@ -140,7 +205,9 @@ def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
                     search_result = app.search(
                         query=query,
                         limit=max_urls_per_concept,
-                        categories=["research"]  # v2.2.0: Filter for research/academic content
+                        categories=[
+                            "research"
+                        ],  # v2.2.0: Filter for research/academic content
                     )
                 except (TypeError, AttributeError):
                     # Fallback to standard search if v2.2.0 features not available
@@ -148,7 +215,7 @@ def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
                         logger,
                         logging.DEBUG,
                         "Search categories parameter unsupported; falling back to basic search",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
                     search_result = app.search(query=query, limit=max_urls_per_concept)
 
@@ -182,11 +249,13 @@ def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
                 for result in search_results:
                     if isinstance(result, dict):
                         normalized_results.append(result)
-                    elif hasattr(result, '__dict__'):
+                    elif hasattr(result, "__dict__"):
                         normalized_results.append(result.__dict__)
                     else:
                         # Convert to dict format
-                        normalized_results.append({"url": str(result), "title": "", "snippet": ""})
+                        normalized_results.append(
+                            {"url": str(result), "title": "", "snippet": ""}
+                        )
 
                 results[concept] = normalized_results
 
@@ -194,20 +263,22 @@ def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
                     logger,
                     logging.DEBUG,
                     f"Found {len(normalized_results)} results for concept: {concept}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
 
         except Exception as e:
             handle_error(
-                ExternalServiceError(f"Concept search batch failed: {e}", service="firecrawl"),
+                ExternalServiceError(
+                    f"Concept search batch failed: {e}", service="firecrawl"
+                ),
                 context={"concepts_count": len(concepts)},
-                operation="search_concepts_batch"
+                operation="search_concepts_batch",
             )
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Batch concept search failed: {e}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return {}
 
@@ -217,43 +288,48 @@ def search_concepts_batch(app: FirecrawlApp, concepts: List[str],
             "completed",
             {
                 "concepts_processed": len(results),
-                "total_urls_found": sum(len(urls) for urls in results.values())
+                "total_urls_found": sum(len(urls) for urls in results.values()),
             },
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
         return results
 
-def search_concepts_batch_clientless(concepts: List[str], max_urls_per_concept: int = 3) -> Dict[str, List[Dict[str, Any]]]:
+
+def search_concepts_batch_clientless(
+    concepts: List[str], max_urls_per_concept: int = 3
+) -> Dict[str, List[Dict[str, Any]]]:
     """Clientless wrapper for search_concepts_batch.
-    
+
     This function automatically gets the client and forwards to search_concepts_batch.
-    
+
     Args:
         concepts: List of concepts to search for
         max_urls_per_concept: Maximum URLs to return per concept
-        
+
     Returns:
         Dictionary mapping concepts to lists of search results
     """
-    from .client import get_client
-    client = get_client()
+    client = _resolve_firecrawl_client(None, "search_concepts_batch_clientless")
     if not client:
         return {}
     return search_concepts_batch(client, concepts, max_urls_per_concept)
 
 
-async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
-                          max_concurrent: int = 10,
-                          max_age: int = 172800000,  # 2 days
-                          use_summary: bool = True,
-                          summary_prompt: Optional[str] = None,
-                          poll_interval: int = 2,
-                          wait_timeout: int = 120,
-                          max_pages: Optional[int] = None,  # v2.2.0: PDF page limit
-                          max_pages_per_pdf: Optional[int] = None,  # Alias for max_pages
-                          enable_queue_monitoring: bool = False,
-                          enable_api_tracking: bool = False) -> Dict[str, Any]:
+async def batch_scrape_urls(
+    app: Any,
+    urls: List[str],
+    max_concurrent: int = 10,
+    max_age: int = 172800000,  # 2 days
+    use_summary: bool = True,
+    summary_prompt: Optional[str] = None,
+    poll_interval: int = 2,
+    wait_timeout: int = 120,
+    max_pages: Optional[int] = None,  # v2.2.0: PDF page limit
+    max_pages_per_pdf: Optional[int] = None,  # Alias for max_pages
+    enable_queue_monitoring: bool = False,
+    enable_api_tracking: bool = False,
+) -> Dict[str, Any]:
     """Use Firecrawl's batch scrape endpoint for 500% performance improvement.
 
     Args:
@@ -275,10 +351,9 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
     """
     # Normalize legacy parameters
     params = _normalize_legacy_parameters(
-        max_pages=max_pages,
-        max_pages_per_pdf=max_pages_per_pdf
+        max_pages=max_pages, max_pages_per_pdf=max_pages_per_pdf
     )
-    max_pages = params['max_pages']
+    max_pages = params["max_pages"]
 
     with processing_context("batch_scrape_urls") as correlation_id:
         log_processing_step(
@@ -290,9 +365,9 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                 "max_concurrent": max_concurrent,
                 "use_summary": use_summary,
                 "max_age_hours": max_age / 1000 / 60 / 60,
-                "max_pages": max_pages  # v2.2.0 feature
+                "max_pages": max_pages,  # v2.2.0 feature
             },
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
         if not urls:
@@ -304,13 +379,15 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
             # Apply intelligent throttling based on queue status
             if enable_queue_monitoring:
                 current_profile = get_current_profile()
-                throttle_delay = await apply_intelligent_throttling(app, current_profile)
+                throttle_delay = await apply_intelligent_throttling(
+                    app, current_profile
+                )
                 if throttle_delay > 0:
                     log_with_context(
                         logger,
                         logging.INFO,
                         f"Applying throttling delay: {throttle_delay:.1f}s",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
                     await asyncio.sleep(throttle_delay)
 
@@ -330,7 +407,7 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                 "urls": urls,
                 "formats": formats,
                 "maxAge": max_age,
-                "onlyMainContent": True
+                "onlyMainContent": True,
             }
 
             # v2.2.0: Add maxPages parameter for PDF control - support both formats for SDK compatibility
@@ -350,11 +427,11 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                 job_id = None
                 if isinstance(result, dict):
                     job_id = (
-                        result.get('job_id') or
-                        result.get('jobId') or
-                        result.get('ID') or
-                        (result.get('data') or {}).get('jobId') or
-                        (result.get('data') or {}).get('job_id')
+                        result.get("job_id")
+                        or result.get("jobId")
+                        or result.get("ID")
+                        or (result.get("data") or {}).get("jobId")
+                        or (result.get("data") or {}).get("job_id")
                     )
 
                 if job_id:
@@ -362,7 +439,7 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                         logger,
                         logging.INFO,
                         f"Batch scrape job submitted: {job_id}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
 
                     # Use adaptive polling strategy
@@ -371,8 +448,10 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                     )
 
                     # Log completion details
-                    items = final_result.get('data') or final_result.get('results') or []
-                    successful = len([r for r in items if not r.get('error')])
+                    items = (
+                        final_result.get("data") or final_result.get("results") or []
+                    )
+                    successful = len([r for r in items if not r.get("error")])
                     log_processing_step(
                         logger,
                         "batch_scrape_urls",
@@ -380,9 +459,9 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                         {
                             "urls_processed": len(urls),
                             "successful_scrapes": successful,
-                            "performance_improvement": "500% faster than sequential"
+                            "performance_improvement": "500% faster than sequential",
                         },
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
 
                     return final_result
@@ -393,11 +472,8 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                         logger,
                         "batch_scrape_urls",
                         "completed",
-                        {
-                            "urls_processed": len(urls),
-                            "result_type": "direct_return"
-                        },
-                        correlation_id=correlation_id
+                        {"urls_processed": len(urls), "result_type": "direct_return"},
+                        correlation_id=correlation_id,
                     )
                     return result
 
@@ -407,15 +483,15 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                     context={
                         "urls_count": len(urls),
                         "max_concurrent": max_concurrent,
-                        "fallback": "sequential_scraping"
+                        "fallback": "sequential_scraping",
                     },
-                    operation="batch_scrape_firecrawl"
+                    operation="batch_scrape_firecrawl",
                 )
                 log_with_context(
                     logger,
                     logging.WARNING,
                     f"Batch scrape not available, falling back to sequential: {e}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
 
                 # Fallback to sequential scraping with v2.2.0 features
@@ -430,7 +506,7 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                             "url": url,
                             "formats": formats,
                             "onlyMainContent": True,
-                            "pageOptions": {"blockAds": True}
+                            "pageOptions": {"blockAds": True},
                         }
 
                         # Add v2.2.0 maxPages parameter under pageOptions for PDF control
@@ -438,7 +514,9 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                             # Ensure pageOptions exists before setting pdf parameters
                             if "pageOptions" not in scrape_params:
                                 scrape_params["pageOptions"] = {}
-                            scrape_params["pageOptions"]["pdf"] = {"maxPages": max_pages}
+                            scrape_params["pageOptions"]["pdf"] = {
+                                "maxPages": max_pages
+                            }
 
                         result = app.scrape(**scrape_params)
                         results[url] = result
@@ -448,7 +526,7 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
                             logger,
                             logging.ERROR,
                             f"Failed to scrape {url}: {scrape_error}",
-                            correlation_id=correlation_id
+                            correlation_id=correlation_id,
                         )
                         results[url] = {"error": str(scrape_error)}
 
@@ -456,27 +534,33 @@ async def batch_scrape_urls(app: FirecrawlApp, urls: List[str],
 
         except Exception as e:
             handle_error(
-                ExternalServiceError(f"Enhanced batch scraping failed: {e}", service="firecrawl"),
+                ExternalServiceError(
+                    f"Enhanced batch scraping failed: {e}", service="firecrawl"
+                ),
                 context={
                     "urls_count": len(urls),
                     "max_concurrent": max_concurrent,
-                    "enable_queue_monitoring": enable_queue_monitoring
+                    "enable_queue_monitoring": enable_queue_monitoring,
                 },
-                operation="batch_scrape_urls"
+                operation="batch_scrape_urls",
             )
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Enhanced batch scraping failed: {e}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return {}
 
 
-def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
-                              actions: Optional[List[Dict]] = None,
-                              max_pages: Optional[int] = None,
-                              max_pages_per_pdf: Optional[int] = None) -> List[WebResource]:
+def extract_with_smart_prompts(
+    app: Any,
+    urls: List[str],
+    concept: str,
+    actions: Optional[List[Dict]] = None,
+    max_pages: Optional[int] = None,
+    max_pages_per_pdf: Optional[int] = None,
+) -> List[WebResource]:
     """Extract structured definitions using Firecrawl's extract endpoint with smart prompts.
 
     Args:
@@ -492,10 +576,9 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
     """
     # Normalize legacy parameters
     params = _normalize_legacy_parameters(
-        max_pages=max_pages,
-        max_pages_per_pdf=max_pages_per_pdf
+        max_pages=max_pages, max_pages_per_pdf=max_pages_per_pdf
     )
-    max_pages = params['max_pages']
+    max_pages = params["max_pages"]
 
     with processing_context(f"extract_smart_prompts_{concept}") as correlation_id:
         log_processing_step(
@@ -506,9 +589,9 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
                 "concept": concept,
                 "urls_count": len(urls),
                 "has_actions": bool(actions),
-                "max_pages": max_pages  # v2.2.0 feature
+                "max_pages": max_pages,  # v2.2.0 feature
             },
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
         if not urls:
@@ -538,7 +621,7 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
                     extract_params = {
                         "url": url,
                         "prompt": prompt,
-                        "schema": ConceptDefinition.model_json_schema()
+                        "schema": ConceptDefinition.model_json_schema(),
                     }
 
                     # v2.2.0: Add actions for dynamic content interaction
@@ -564,7 +647,7 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
                                     logger,
                                     logging.WARNING,
                                     f"Failed to parse extracted data for {url}: {e}",
-                                    correlation_id=correlation_id
+                                    correlation_id=correlation_id,
                                 )
                         elif result:  # Direct data format
                             try:
@@ -575,14 +658,14 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
                                     logger,
                                     logging.WARNING,
                                     f"Failed to parse direct extracted data for {url}: {e}",
-                                    correlation_id=correlation_id
+                                    correlation_id=correlation_id,
                                 )
 
                     # Create WebResource
                     resource = WebResource(
                         url=url,
                         title=f"Extracted content for {concept}",
-                        definitions=definitions
+                        definitions=definitions,
                     )
                     resources.append(resource)
 
@@ -590,7 +673,7 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
                         logger,
                         logging.DEBUG,
                         f"Extracted {len(definitions)} definitions from {url}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
 
                 except Exception as e:
@@ -598,10 +681,12 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
                         logger,
                         logging.ERROR,
                         f"Failed to extract from {url}: {e}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
                     # Create empty resource for failed extraction
-                    resources.append(WebResource(url=url, title=f"Failed extraction for {concept}"))
+                    resources.append(
+                        WebResource(url=url, title=f"Failed extraction for {concept}")
+                    )
 
             log_processing_step(
                 logger,
@@ -611,44 +696,48 @@ def extract_with_smart_prompts(app: FirecrawlApp, urls: List[str], concept: str,
                     "concept": concept,
                     "urls_processed": len(urls),
                     "resources_created": len(resources),
-                    "total_definitions": sum(len(r.definitions) for r in resources)
+                    "total_definitions": sum(len(r.definitions) for r in resources),
                 },
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
 
             return resources
 
         except Exception as e:
             handle_error(
-                ExternalServiceError(f"Smart extraction failed: {e}", service="firecrawl"),
+                ExternalServiceError(
+                    f"Smart extraction failed: {e}", service="firecrawl"
+                ),
                 context={"concept": concept, "urls_count": len(urls)},
-                operation="extract_with_smart_prompts"
+                operation="extract_with_smart_prompts",
             )
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Smart extraction failed for concept {concept}: {e}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return []
 
 
-def mine_concepts(concepts: List[str],
-                 output_path: Optional[str] = None,
-                 max_concurrent: Optional[int] = None,
-                 max_age: int = 172800000,  # 2 days cache
-                 use_summary: bool = True,
-                 use_batch_scrape: bool = True,
-                 actions: Optional[List[Dict]] = None,
-                 summary_prompt: Optional[str] = None,
-                 use_hybrid: bool = False,
-                 timeout_seconds: Optional[int] = None,
-                 # v2.2.0 new parameters
-                 max_pages: Optional[int] = None,  # PDF page limit for better performance
-                 webhook_config: Optional[WebhookConfig] = None,  # Enhanced webhook configuration
-                 enable_queue_monitoring: bool = False,  # Queue status monitoring
-                 use_fast_map: bool = True,  # Use 15x faster Map endpoint
-                 **kwargs) -> Dict[str, Any]:
+def mine_concepts(
+    concepts: List[str],
+    output_path: Optional[str] = None,
+    max_concurrent: Optional[int] = None,
+    max_age: int = 172800000,  # 2 days cache
+    use_summary: bool = True,
+    use_batch_scrape: bool = True,
+    actions: Optional[List[Dict]] = None,
+    summary_prompt: Optional[str] = None,
+    use_hybrid: bool = False,
+    timeout_seconds: Optional[int] = None,
+    # v2.2.0 new parameters
+    max_pages: Optional[int] = None,  # PDF page limit for better performance
+    webhook_config: Optional[WebhookConfig] = None,  # Enhanced webhook configuration
+    enable_queue_monitoring: bool = False,  # Queue status monitoring
+    use_fast_map: bool = True,  # Use 15x faster Map endpoint
+    **kwargs,
+) -> Dict[str, Any]:
     """Mine web content for academic concepts using ALL Firecrawl v2.2.0 features.
 
     This unified function provides a single entry point for web content mining
@@ -683,12 +772,10 @@ def mine_concepts(concepts: List[str],
 
         # Normalize legacy parameters
         params = _normalize_legacy_parameters(
-            max_pages=max_pages,
-            use_fast_map=use_fast_map,
-            **kwargs
+            max_pages=max_pages, use_fast_map=use_fast_map, **kwargs
         )
-        max_pages = params['max_pages']
-        use_fast_map = params['use_fast_map']
+        max_pages = params["max_pages"]
+        use_fast_map = params["use_fast_map"]
 
         # Setup webhooks if configured
         if webhook_config:
@@ -698,7 +785,7 @@ def mine_concepts(concepts: List[str],
                     logger,
                     logging.WARNING,
                     "Webhook setup failed, continuing without webhooks",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
 
         # Log detailed v2.2.0 configuration
@@ -719,25 +806,26 @@ def mine_concepts(concepts: List[str],
                 "enable_queue_monitoring": enable_queue_monitoring,
                 "use_fast_map": use_fast_map,
                 "webhook_enabled": webhook_config is not None,
-                "v2_2_0_features": True
+                "v2_2_0_features": True,
             },
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
-        if enable_queue_monitoring and not get_client():
-            log_with_context(
-                logger,
-                logging.WARNING,
-                "Queue monitoring requested but no Firecrawl API key available",
-                correlation_id=correlation_id
-            )
-            enable_queue_monitoring = False
-
         # Initialize Firecrawl client
-        app = get_client()
+        app = _resolve_firecrawl_client(None, "mine_concepts_unified", correlation_id)
         if not app:
+            if enable_queue_monitoring:
+                log_with_context(
+                    logger,
+                    logging.WARNING,
+                    "Queue monitoring requested but Firecrawl client could not be initialized",
+                    correlation_id=correlation_id,
+                )
+                enable_queue_monitoring = False
             error_msg = "Failed to initialize Firecrawl client"
-            log_with_context(logger, logging.ERROR, error_msg, correlation_id=correlation_id)
+            log_with_context(
+                logger, logging.ERROR, error_msg, correlation_id=correlation_id
+            )
             return {
                 "success": False,
                 "error": error_msg,
@@ -747,10 +835,10 @@ def mine_concepts(concepts: List[str],
                 "statistics": {
                     "total_concepts": 0,
                     "successful": 0,
-                    "total_resources": 0
+                    "total_resources": 0,
                 },
                 "v2_2_0_features_used": {},
-                "v2_2_0_features_used_list": []
+                "v2_2_0_features_used_list": [],
             }
 
         # Get configuration with performance profile integration
@@ -761,21 +849,23 @@ def mine_concepts(concepts: List[str],
 
         try:
             # Execute mining pipeline with async orchestration
-            results = run_async_safely(_execute_mining_pipeline(
-                app=app,
-                concepts=concepts,
-                max_concurrent=max_concurrent,
-                max_age=max_age,
-                use_summary=use_summary,
-                use_batch_scrape=use_batch_scrape,
-                actions=actions,
-                summary_prompt=summary_prompt,
-                use_hybrid=use_hybrid,
-                max_pages=max_pages,
-                enable_queue_monitoring=enable_queue_monitoring,
-                use_fast_map=use_fast_map,
-                correlation_id=correlation_id
-            ))
+            results = run_async_safely(
+                _execute_mining_pipeline(
+                    app=app,
+                    concepts=concepts,
+                    max_concurrent=max_concurrent,
+                    max_age=max_age,
+                    use_summary=use_summary,
+                    use_batch_scrape=use_batch_scrape,
+                    actions=actions,
+                    summary_prompt=summary_prompt,
+                    use_hybrid=use_hybrid,
+                    max_pages=max_pages,
+                    enable_queue_monitoring=enable_queue_monitoring,
+                    use_fast_map=use_fast_map,
+                    correlation_id=correlation_id,
+                )
+            )
 
             # Save results if output path provided
             if output_path and results.get("success"):
@@ -783,7 +873,7 @@ def mine_concepts(concepts: List[str],
                     dirpath = os.path.dirname(output_path)
                     if dirpath:
                         os.makedirs(dirpath, exist_ok=True)
-                    with open(output_path, 'w', encoding='utf-8') as f:
+                    with open(output_path, "w", encoding="utf-8") as f:
                         json.dump(results, f, indent=2, ensure_ascii=False)
                     results["output_saved"] = output_path
                 except Exception as e:
@@ -791,16 +881,20 @@ def mine_concepts(concepts: List[str],
                         logger,
                         logging.WARNING,
                         f"Failed to save results to {output_path}: {e}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
 
             # Add final performance metrics
             total_time = time.time() - start_time
 
             # Calculate statistics
-            total_concepts = len(results.get('results', {}))
-            successful = sum(1 for v in results.get('results', {}).values() if v.get('definitions'))
-            total_resources = sum(v.get('resource_count', 0) for v in results.get('results', {}).values())
+            total_concepts = len(results.get("results", {}))
+            successful = sum(
+                1 for v in results.get("results", {}).values() if v.get("definitions")
+            )
+            total_resources = sum(
+                v.get("resource_count", 0) for v in results.get("results", {}).values()
+            )
 
             # Prepare v2.2.0 features tracking
             v2_2_0_features_used = {
@@ -808,21 +902,25 @@ def mine_concepts(concepts: List[str],
                 "queue_monitoring": enable_queue_monitoring,
                 "fast_mapping": use_fast_map,
                 "pdf_page_limit": max_pages is not None,
-                "webhooks": webhook_config is not None
+                "webhooks": webhook_config is not None,
             }
-            v2_2_0_features_used_list = [k for k, v in v2_2_0_features_used.items() if v]
+            v2_2_0_features_used_list = [
+                k for k, v in v2_2_0_features_used.items() if v
+            ]
 
-            results.update({
-                "processing_time_seconds": total_time,
-                "concepts_processed": successful,
-                "statistics": {
-                    "total_concepts": total_concepts,
-                    "successful": successful,
-                    "total_resources": total_resources
-                },
-                "v2_2_0_features_used": v2_2_0_features_used,
-                "v2_2_0_features_used_list": v2_2_0_features_used_list
-            })
+            results.update(
+                {
+                    "processing_time_seconds": total_time,
+                    "concepts_processed": successful,
+                    "statistics": {
+                        "total_concepts": total_concepts,
+                        "successful": successful,
+                        "total_resources": total_resources,
+                    },
+                    "v2_2_0_features_used": v2_2_0_features_used,
+                    "v2_2_0_features_used_list": v2_2_0_features_used_list,
+                }
+            )
 
             log_processing_step(
                 logger,
@@ -833,9 +931,9 @@ def mine_concepts(concepts: List[str],
                     "concepts_processed": results.get("concepts_processed", 0),
                     "total_definitions": results.get("total_definitions", 0),
                     "processing_time_seconds": total_time,
-                    "performance_improvement": "v2.2.0 optimizations applied"
+                    "performance_improvement": "v2.2.0 optimizations applied",
                 },
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
 
             return results
@@ -843,12 +941,14 @@ def mine_concepts(concepts: List[str],
         except Exception as e:
             total_time = time.time() - start_time
             handle_error(
-                ExternalServiceError(f"Unified mining failed: {e}", service="firecrawl"),
+                ExternalServiceError(
+                    f"Unified mining failed: {e}", service="firecrawl"
+                ),
                 context={
                     "concepts_count": len(concepts),
-                    "processing_time_seconds": total_time
+                    "processing_time_seconds": total_time,
                 },
-                operation="mine_concepts_unified"
+                operation="mine_concepts_unified",
             )
 
             return {
@@ -860,21 +960,28 @@ def mine_concepts(concepts: List[str],
                 "statistics": {
                     "total_concepts": 0,
                     "successful": 0,
-                    "total_resources": 0
+                    "total_resources": 0,
                 },
                 "v2_2_0_features_used": {},
-                "v2_2_0_features_used_list": []
+                "v2_2_0_features_used_list": [],
             }
 
 
-async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
-                                  max_concurrent: int, max_age: int,
-                                  use_summary: bool, use_batch_scrape: bool,
-                                  actions: Optional[List[Dict]],
-                                  summary_prompt: Optional[str],
-                                  use_hybrid: bool, max_pages: Optional[int],
-                                  enable_queue_monitoring: bool, use_fast_map: bool,
-                                  correlation_id: str) -> Dict[str, Any]:
+async def _execute_mining_pipeline(
+    app: Any,
+    concepts: List[str],
+    max_concurrent: int,
+    max_age: int,
+    use_summary: bool,
+    use_batch_scrape: bool,
+    actions: Optional[List[Dict]],
+    summary_prompt: Optional[str],
+    use_hybrid: bool,
+    max_pages: Optional[int],
+    enable_queue_monitoring: bool,
+    use_fast_map: bool,
+    correlation_id: str,
+) -> Dict[str, Any]:
     """Execute the complete mining pipeline asynchronously.
 
     Args:
@@ -897,9 +1004,7 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
     """
     try:
         # Stage 1: Search for concepts
-        search_results = search_concepts_batch(
-            app, concepts, max_urls_per_concept=5
-        )
+        search_results = search_concepts_batch(app, concepts, max_urls_per_concept=5)
 
         # Stage 2: Extract URLs for scraping
         all_urls = []
@@ -932,7 +1037,7 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
                         logger,
                         logging.WARNING,
                         f"Skipped malformed URL during domain extraction: {url!r} - {e}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
                     skipped_urls += 1
 
@@ -944,7 +1049,7 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
                     logger,
                     logging.INFO,
                     f"Skipped {skipped_urls} malformed URLs during domain extraction",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
 
             if domains:
@@ -983,7 +1088,7 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
                 use_summary=use_summary,
                 summary_prompt=summary_prompt,
                 max_pages=max_pages,
-                enable_queue_monitoring=enable_queue_monitoring
+                enable_queue_monitoring=enable_queue_monitoring,
             )
         else:
             scrape_results = {}
@@ -1000,7 +1105,7 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
                     urls=concept_urls,
                     concept=concept,
                     actions=actions,
-                    max_pages=max_pages
+                    max_pages=max_pages,
                 )
 
                 definitions = []
@@ -1010,14 +1115,14 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
                 final_results[concept] = {
                     "definitions": [d.model_dump() for d in definitions],
                     "sources": concept_urls,
-                    "resource_count": len(resources)
+                    "resource_count": len(resources),
                 }
                 total_definitions += len(definitions)
             else:
                 final_results[concept] = {
                     "definitions": [],
                     "sources": [],
-                    "resource_count": 0
+                    "resource_count": 0,
                 }
 
         return {
@@ -1025,7 +1130,7 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
             "results": final_results,
             "total_definitions": total_definitions,
             "urls_processed": len(all_urls),
-            "scrape_results": scrape_results
+            "scrape_results": scrape_results,
         }
 
     except Exception as e:
@@ -1033,20 +1138,20 @@ async def _execute_mining_pipeline(app: FirecrawlApp, concepts: List[str],
             logger,
             logging.ERROR,
             f"Mining pipeline failed: {e}",
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
         return {
             "success": False,
             "error": str(e),
             "results": {},
-            "total_definitions": 0
+            "total_definitions": 0,
         }
 
 
 __all__ = [
-    'search_concepts_batch',
-    'search_concepts_batch_clientless',
-    'batch_scrape_urls',
-    'extract_with_smart_prompts',
-    'mine_concepts'
+    "search_concepts_batch",
+    "search_concepts_batch_clientless",
+    "batch_scrape_urls",
+    "extract_with_smart_prompts",
+    "mine_concepts",
 ]

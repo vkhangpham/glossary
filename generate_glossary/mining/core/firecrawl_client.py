@@ -61,20 +61,31 @@ def _apply_client_config(client: Any, config: FirecrawlConfig) -> None:
             logger.debug("Failed to assign max_retries attribute: %s", exc)
 
 
+def search(client: Any, query: str, **kwargs: Any) -> Any:
+    """Perform a raw Firecrawl search without any query shaping."""
+
+    return client.search(query=query, **kwargs)
+
+
 def search_concepts(
     client: Any,
     query: str,
     limit: int = 5,
     categories: Optional[Iterable[str]] = None,
+    compose_academic_filters: bool = True,
     **kwargs: Any,
 ) -> List[Dict[str, Any]]:
     """Search Firecrawl for academic concepts, returning an empty list on failure."""
 
-    composed_query = f"{query} (definition OR explanation OR academic)"
-    search_kwargs: Dict[str, Any] = {"query": composed_query, "limit": limit}
+    search_query = (
+        f"{query} (definition OR explanation OR academic)"
+        if compose_academic_filters
+        else query
+    )
+    search_kwargs: Dict[str, Any] = {"query": search_query, "limit": limit}
     if categories is not None:
         search_kwargs["categories"] = list(categories)
-    else:
+    elif compose_academic_filters:
         search_kwargs["categories"] = ["research", "academic", "education"]
     search_kwargs.update(kwargs)
 
@@ -83,7 +94,9 @@ def search_concepts(
         return results or []
     except TypeError as exc:
         logger.error(
-            "Search failed for query '%s' due to argument mismatch: %s", query, exc
+            "Search failed for query '%s' due to argument mismatch: %s",
+            search_query,
+            exc,
         )
         fallback_kwargs = {key: search_kwargs[key] for key in ("query", "limit")}
         try:
@@ -91,11 +104,11 @@ def search_concepts(
             return results or []
         except Exception as fallback_exc:  # pragma: no cover - depends on SDK
             logger.error(
-                "Fallback search failed for query '%s': %s", query, fallback_exc
+                "Fallback search failed for query '%s': %s", search_query, fallback_exc
             )
             return []
     except Exception as exc:  # pragma: no cover - depends on SDK
-        logger.error("Search failed for query '%s': %s", query, exc)
+        logger.error("Search failed for query '%s': %s", search_query, exc)
         return []
 
 
@@ -107,7 +120,10 @@ def scrape_url(
 ) -> Dict[str, Any]:
     """Scrape a single URL, returning an empty mapping on failure."""
 
-    scrape_kwargs: Dict[str, Any] = {"url": url, "formats": list(formats or ["markdown"])}
+    scrape_kwargs: Dict[str, Any] = {
+        "url": url,
+        "formats": list(formats or ["markdown"]),
+    }
     scrape_kwargs.update(kwargs)
 
     try:
@@ -136,7 +152,9 @@ def batch_scrape_urls(
         results = client.batch_scrape(**batch_kwargs)
         return results or []
     except Exception as exc:  # pragma: no cover - depends on SDK
-        logger.error("Batch scrape failed for %d URLs: %s", len(batch_kwargs["urls"]), exc)
+        logger.error(
+            "Batch scrape failed for %d URLs: %s", len(batch_kwargs["urls"]), exc
+        )
         return []
 
 
@@ -197,13 +215,19 @@ class AsyncFirecrawlClient:
         query: str,
         limit: int = 5,
         categories: Optional[Iterable[str]] = None,
+        compose_academic_filters: bool = True,
         **kwargs: Any,
     ) -> List[Dict[str, Any]]:
-        composed_query = f"{query} (definition OR explanation OR academic)"
-        search_kwargs: Dict[str, Any] = {"query": composed_query, "limit": limit}
+        search_query = (
+            f"{query} (definition OR explanation OR academic)"
+            if compose_academic_filters
+            else query
+        )
+
+        search_kwargs: Dict[str, Any] = {"query": search_query, "limit": limit}
         if categories is not None:
             search_kwargs["categories"] = list(categories)
-        else:
+        elif compose_academic_filters:
             search_kwargs["categories"] = ["research", "academic", "education"]
         search_kwargs.update(kwargs)
 
@@ -213,7 +237,7 @@ class AsyncFirecrawlClient:
         except TypeError as exc:
             logger.error(
                 "Async search failed for query '%s' due to argument mismatch: %s",
-                query,
+                search_query,
                 exc,
             )
             fallback_kwargs = {key: search_kwargs[key] for key in ("query", "limit")}
@@ -223,12 +247,12 @@ class AsyncFirecrawlClient:
             except Exception as fallback_exc:  # pragma: no cover - depends on SDK
                 logger.error(
                     "Async fallback search failed for query '%s': %s",
-                    query,
+                    search_query,
                     fallback_exc,
                 )
                 return []
         except Exception as exc:  # pragma: no cover - depends on SDK
-            logger.error("Async search failed for query '%s': %s", query, exc)
+            logger.error("Async search failed for query '%s': %s", search_query, exc)
             return []
 
     async def scrape_url(
@@ -237,7 +261,10 @@ class AsyncFirecrawlClient:
         formats: Optional[Iterable[str]] = None,
         **kwargs: Any,
     ) -> Dict[str, Any]:
-        scrape_kwargs: Dict[str, Any] = {"url": url, "formats": list(formats or ["markdown"])}
+        scrape_kwargs: Dict[str, Any] = {
+            "url": url,
+            "formats": list(formats or ["markdown"]),
+        }
         scrape_kwargs.update(kwargs)
 
         try:
@@ -264,7 +291,9 @@ class AsyncFirecrawlClient:
             return results or []
         except Exception as exc:  # pragma: no cover - depends on SDK
             logger.error(
-                "Async batch scrape failed for %d URLs: %s", len(batch_kwargs["urls"]), exc
+                "Async batch scrape failed for %d URLs: %s",
+                len(batch_kwargs["urls"]),
+                exc,
             )
             return []
 

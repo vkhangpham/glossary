@@ -13,13 +13,18 @@ import threading
 import weakref
 from typing import Dict, List, Optional, Tuple, Any
 from urllib.parse import urlparse, parse_qs
-from firecrawl import FirecrawlApp
 
-from .client import get_client
+from .config import ConfigError, get_firecrawl_client
 from generate_glossary.utils.error_handler import (
-    ExternalServiceError, handle_error, processing_context
+    ExternalServiceError,
+    handle_error,
+    processing_context,
 )
-from generate_glossary.utils.logger import get_logger, log_processing_step, log_with_context
+from generate_glossary.utils.logger import (
+    get_logger,
+    log_processing_step,
+    log_with_context,
+)
 
 
 logger = get_logger(__name__)
@@ -32,7 +37,10 @@ _thread_lock = threading.Lock()
 
 # Per-event-loop lock storage for thread-safe Firecrawl client access
 # Uses WeakKeyDictionary to automatically clean up locks when loops are garbage-collected
-_loop_locks: weakref.WeakKeyDictionary[asyncio.AbstractEventLoop, asyncio.Lock] = weakref.WeakKeyDictionary()
+_loop_locks: weakref.WeakKeyDictionary[asyncio.AbstractEventLoop, asyncio.Lock] = (
+    weakref.WeakKeyDictionary()
+)
+
 
 def _get_firecrawl_lock() -> asyncio.Lock:
     """Get or create the firecrawl lock for the current event loop with thread safety."""
@@ -44,21 +52,56 @@ def _get_firecrawl_lock() -> asyncio.Lock:
         return _loop_locks[loop]
 
 
-async def _map_urls_with_lock(app: FirecrawlApp, domain: str, limit: Optional[int] = None) -> List[str]:
+def _resolve_firecrawl_client(
+    app: Optional[Any],
+    operation: str,
+    correlation_id: Optional[str] = None,
+) -> Optional[Any]:
+    """Return an initialized Firecrawl client, handling configuration failures."""
+
+    if app is not None:
+        return app
+
+    try:
+        return get_firecrawl_client()
+    except ConfigError as exc:
+        handle_error(
+            ExternalServiceError(str(exc), service="firecrawl"),
+            context={"operation": operation},
+            operation=operation,
+        )
+        log_with_context(
+            logger,
+            logging.ERROR,
+            f"Unable to acquire Firecrawl client: {exc}",
+            correlation_id=correlation_id,
+        )
+        return None
+
+
+async def _map_urls_with_lock(
+    app: Any, domain: str, limit: Optional[int] = None
+) -> List[str]:
     """Async wrapper for map_urls_fast_enhanced with semaphore-based concurrency control."""
     # Use semaphore instead of lock to avoid blocking other coroutines
     # This allows multiple concurrent operations while still limiting resource usage
-    semaphore = getattr(_map_urls_with_lock, '_semaphore', None)
+    semaphore = getattr(_map_urls_with_lock, "_semaphore", None)
     if semaphore is None:
-        _map_urls_with_lock._semaphore = asyncio.Semaphore(5)  # Allow 5 concurrent operations
+        _map_urls_with_lock._semaphore = asyncio.Semaphore(
+            5
+        )  # Allow 5 concurrent operations
         semaphore = _map_urls_with_lock._semaphore
 
     async with semaphore:
         return await asyncio.to_thread(map_urls_fast_enhanced, app, domain, limit)
 
 
-async def map_urls_concurrently(app: Optional[FirecrawlApp], domains: List[str],
-                               limit: Optional[int] = None, concurrency: int = 5) -> Dict[str, List[str]]:
+async def map_urls_concurrently(
+    app: Optional[Any],
+    domains: List[str],
+    limit: Optional[int] = None,
+    concurrency: int = 5,
+) -> Dict[str, List[str]]:
     """Concurrently map multiple domains using Firecrawl v2.2.0 15x faster Map endpoint.
 
     Enhanced with intelligent batching, concurrent mapping, and academic content filtering.
@@ -72,12 +115,11 @@ async def map_urls_concurrently(app: Optional[FirecrawlApp], domains: List[str],
     Returns:
         Dictionary mapping domain URLs to lists of discovered URLs
     """
-    if app is None:
-        app = get_client()
+    with processing_context("map_urls_concurrent") as correlation_id:
+        app = _resolve_firecrawl_client(app, "map_urls_concurrent", correlation_id)
         if app is None:
             return {}
 
-    with processing_context("map_urls_concurrent") as correlation_id:
         log_processing_step(
             logger,
             "map_urls_concurrent",
@@ -86,9 +128,9 @@ async def map_urls_concurrently(app: Optional[FirecrawlApp], domains: List[str],
                 "domains_count": len(domains),
                 "limit_per_domain": limit,
                 "concurrency": concurrency,
-                "v2.2.0_performance": "15x faster mapping"
+                "v2.2.0_performance": "15x faster mapping",
             },
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
         try:
@@ -96,19 +138,20 @@ async def map_urls_concurrently(app: Optional[FirecrawlApp], domains: List[str],
 
             # Create async tasks with thread-safe Firecrawl access
             async_tasks = [
-                _map_urls_with_lock(app, domain, limit)
-                for domain in domains
+                _map_urls_with_lock(app, domain, limit) for domain in domains
             ]
 
             # Execute all tasks concurrently and gather results
             try:
-                task_results = await asyncio.gather(*async_tasks, return_exceptions=True)
+                task_results = await asyncio.gather(
+                    *async_tasks, return_exceptions=True
+                )
             except Exception as e:
                 log_with_context(
                     logger,
                     logging.ERROR,
                     f"Failed to execute async mapping tasks: {e}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
                 return {}
 
@@ -119,7 +162,7 @@ async def map_urls_concurrently(app: Optional[FirecrawlApp], domains: List[str],
                         logger,
                         logging.ERROR,
                         f"Failed to map {domain}: {task_result}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
                     results[domain] = []
                 else:
@@ -129,7 +172,7 @@ async def map_urls_concurrently(app: Optional[FirecrawlApp], domains: List[str],
                         logger,
                         logging.DEBUG,
                         f"Mapped {len(urls)} URLs from {domain}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
 
             total_urls = sum(len(urls) for urls in results.values())
@@ -140,30 +183,33 @@ async def map_urls_concurrently(app: Optional[FirecrawlApp], domains: List[str],
                 {
                     "domains_processed": len(results),
                     "total_urls_discovered": total_urls,
-                    "avg_urls_per_domain": total_urls / max(1, len(results))
+                    "avg_urls_per_domain": total_urls / max(1, len(results)),
                 },
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
 
             return results
 
         except Exception as e:
             handle_error(
-                ExternalServiceError(f"Concurrent URL mapping failed: {e}", service="firecrawl"),
+                ExternalServiceError(
+                    f"Concurrent URL mapping failed: {e}", service="firecrawl"
+                ),
                 context={"domains_count": len(domains), "concurrency": concurrency},
-                operation="map_urls_concurrent"
+                operation="map_urls_concurrent",
             )
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Concurrent URL mapping failed: {e}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return {}
 
 
-def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
-                          limit: Optional[int] = None, return_raw: bool = False) -> List[str]:
+def map_urls_fast_enhanced(
+    app: Any, base_url: str, limit: Optional[int] = None, return_raw: bool = False
+) -> List[str]:
     """Enhanced version of fast URL mapping with intelligent URL filtering and quality scoring.
 
     Improvements:
@@ -187,7 +233,7 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
             "map_urls_fast_enhanced",
             "started",
             {"base_url": base_url, "limit": limit},
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
         try:
@@ -198,7 +244,7 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
                     logger,
                     logging.DEBUG,
                     f"Using cached mapping for {base_url}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
                 return cached_urls[:limit] if limit else cached_urls
 
@@ -228,21 +274,21 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
                     logger,
                     logging.DEBUG,
                     f"Firecrawl mapping completed in {mapping_duration:.2f}s (15x performance)",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
             except Exception as e:
                 log_with_context(
                     logger,
                     logging.ERROR,
                     f"Firecrawl mapping failed: {e}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
                 return []
 
             # Extract URLs from response
             if isinstance(result, dict) and "links" in result:
                 raw_urls = result["links"]
-            elif hasattr(result, 'links'):
+            elif hasattr(result, "links"):
                 raw_urls = result.links
             else:
                 raw_urls = []
@@ -252,7 +298,7 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
                     logger,
                     logging.WARNING,
                     f"No URLs discovered for {base_url}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
                 return []
 
@@ -286,29 +332,38 @@ def map_urls_fast_enhanced(app: FirecrawlApp, base_url: str,
                     "deduplicated": len(scored_urls),
                     "final_urls": len(final_urls),
                     "domain_type": domain_type,
-                    "mapping_duration_ms": int(mapping_duration * 1000)
+                    "mapping_duration_ms": int(mapping_duration * 1000),
                 },
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
 
             return final_urls
 
         except Exception as e:
             handle_error(
-                ExternalServiceError(f"Enhanced URL mapping failed: {e}", service="firecrawl"),
-                context={"base_url": base_url, "domain_type": classify_domain_type(base_url)},
-                operation="map_urls_fast_enhanced"
+                ExternalServiceError(
+                    f"Enhanced URL mapping failed: {e}", service="firecrawl"
+                ),
+                context={
+                    "base_url": base_url,
+                    "domain_type": classify_domain_type(base_url),
+                },
+                operation="map_urls_fast_enhanced",
             )
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Enhanced URL mapping failed for {base_url}: {e}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return []
 
 
-def _run_async_coro(coro, loop: Optional[asyncio.AbstractEventLoop] = None, timeout: Optional[float] = None):
+def _run_async_coro(
+    coro,
+    loop: Optional[asyncio.AbstractEventLoop] = None,
+    timeout: Optional[float] = None,
+):
     """Execute async coroutine from sync context with proper event loop handling.
 
     Args:
@@ -368,8 +423,14 @@ def _run_async_coro(coro, loop: Optional[asyncio.AbstractEventLoop] = None, time
             # Re-raise other RuntimeErrors
             raise
 
-def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 20, use_fast_map: bool = True,
-                               run_in_new_thread: bool = False, raise_on_running_loop: bool = True) -> Dict[str, Any]:
+
+def map_urls_fast_enhanced_bulk(
+    domains: List[str],
+    max_urls_per_domain: int = 20,
+    use_fast_map: bool = True,
+    run_in_new_thread: bool = False,
+    raise_on_running_loop: bool = True,
+) -> Dict[str, Any]:
     """High-level bulk mapping API compatible with tests.
 
     Args:
@@ -391,17 +452,17 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
             "urls_found": 0,
             "domains_processed": 0,
             "processing_time": time.time() - start_time,
-            "details": {}
+            "details": {},
         }
 
     # Resolve client
-    app = get_client()
+    app = _resolve_firecrawl_client(None, "map_urls_fast_enhanced_bulk")
     if app is None:
         return {
             "urls_found": 0,
             "domains_processed": 0,
             "processing_time": time.time() - start_time,
-            "details": {}
+            "details": {},
         }
 
     # Call async function from sync context with proper event loop handling
@@ -417,11 +478,15 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
                 result = future.result()
         else:
             # Use existing event loop handling with timeout
-            result = _run_async_coro(_async_wrapper(), timeout=300.0)  # 5 minute timeout
+            result = _run_async_coro(
+                _async_wrapper(), timeout=300.0
+            )  # 5 minute timeout
 
     except RuntimeError as e:
         if "running event loop" in str(e).lower() and not raise_on_running_loop:
-            logger.warning(f"Running in event loop context, falling back to new thread: {e}")
+            logger.warning(
+                f"Running in event loop context, falling back to new thread: {e}"
+            )
             # Fallback to new thread execution
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 future = executor.submit(lambda: asyncio.run(_async_wrapper()))
@@ -434,7 +499,7 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
             "urls_found": 0,
             "domains_processed": 0,
             "processing_time": time.time() - start_time,
-            "details": {}
+            "details": {},
         }
     except Exception as e:
         # Log error and return empty result
@@ -443,17 +508,19 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
             "urls_found": 0,
             "domains_processed": 0,
             "processing_time": time.time() - start_time,
-            "details": {}
+            "details": {},
         }
 
     # Validate result type
     if not isinstance(result, dict):
-        logger.warning(f"Expected dict result but got {type(result)}, returning empty result")
+        logger.warning(
+            f"Expected dict result but got {type(result)}, returning empty result"
+        )
         return {
             "urls_found": 0,
             "domains_processed": 0,
             "processing_time": time.time() - start_time,
-            "details": {}
+            "details": {},
         }
 
     # Calculate summary statistics
@@ -464,7 +531,7 @@ def map_urls_fast_enhanced_bulk(domains: List[str], max_urls_per_domain: int = 2
         "urls_found": total_urls,
         "domains_processed": len(result),
         "processing_time": processing_time,
-        "details": result
+        "details": result,
     }
 
 
@@ -481,19 +548,32 @@ def classify_domain_type(url: str) -> str:
         domain = urlparse(url).netloc.lower()
 
         # Academic institutions
-        if '.edu' in domain or '.ac.' in domain or 'university' in domain or 'college' in domain:
+        if (
+            ".edu" in domain
+            or ".ac." in domain
+            or "university" in domain
+            or "college" in domain
+        ):
             return "academic"
 
         # Reference sites
-        if any(ref in domain for ref in ['wikipedia', 'britannica', 'reference', 'encyclopedia']):
+        if any(
+            ref in domain
+            for ref in ["wikipedia", "britannica", "reference", "encyclopedia"]
+        ):
             return "reference"
 
         # Research repositories
-        if any(repo in domain for repo in ['arxiv', 'researchgate', 'scholar', 'pubmed', 'ieee']):
+        if any(
+            repo in domain
+            for repo in ["arxiv", "researchgate", "scholar", "pubmed", "ieee"]
+        ):
             return "research"
 
         # News and media
-        if any(news in domain for news in ['news', 'journal', 'magazine', 'times', 'post']):
+        if any(
+            news in domain for news in ["news", "journal", "magazine", "times", "post"]
+        ):
             return "media"
 
         return "general"
@@ -512,9 +592,21 @@ def filter_academic_urls(urls: List[str], base_domain: str) -> List[str]:
         List of URLs filtered for academic content
     """
     academic_patterns = [
-        'research', 'faculty', 'department', 'paper', 'publication',
-        'journal', 'conference', 'symposium', 'thesis', 'dissertation',
-        'curriculum', 'course', 'academic', 'scholar', 'study'
+        "research",
+        "faculty",
+        "department",
+        "paper",
+        "publication",
+        "journal",
+        "conference",
+        "symposium",
+        "thesis",
+        "dissertation",
+        "curriculum",
+        "course",
+        "academic",
+        "scholar",
+        "study",
     ]
 
     filtered_urls = []
@@ -528,12 +620,12 @@ def filter_academic_urls(urls: List[str], base_domain: str) -> List[str]:
         elif base_domain.lower() in url_lower:
             filtered_urls.append(url)
         # Or if it's a PDF (likely academic content)
-        elif url_lower.endswith('.pdf'):
+        elif url_lower.endswith(".pdf"):
             filtered_urls.append(url)
 
     # If no academic URLs found, return top URLs from original list
     if not filtered_urls and urls:
-        return urls[:min(10, len(urls))]
+        return urls[: min(10, len(urls))]
 
     return filtered_urls
 
@@ -569,7 +661,7 @@ def deduplicate_and_score_urls(urls: List[str], base_domain: str) -> List[str]:
                 score += 10
 
             # Path depth (prefer not too deep, not too shallow)
-            path_depth = len([p for p in parsed.path.split('/') if p])
+            path_depth = len([p for p in parsed.path.split("/") if p])
             if 1 <= path_depth <= 4:
                 score += 5
             elif path_depth > 4:
@@ -577,21 +669,27 @@ def deduplicate_and_score_urls(urls: List[str], base_domain: str) -> List[str]:
 
             # File type preferences
             path_lower = parsed.path.lower()
-            if path_lower.endswith('.pdf'):
+            if path_lower.endswith(".pdf"):
                 score += 8  # PDFs often contain academic content
-            elif path_lower.endswith(('.html', '.htm')):
+            elif path_lower.endswith((".html", ".htm")):
                 score += 3  # Standard web pages
-            elif path_lower.endswith(('.php', '.asp', '.aspx')):
+            elif path_lower.endswith((".php", ".asp", ".aspx")):
                 score += 2  # Dynamic pages
 
             # Academic keywords in path
-            academic_keywords = ['research', 'faculty', 'department', 'course', 'publication']
+            academic_keywords = [
+                "research",
+                "faculty",
+                "department",
+                "course",
+                "publication",
+            ]
             for keyword in academic_keywords:
                 if keyword in path_lower:
                     score += 3
 
             # Avoid certain patterns
-            avoid_patterns = ['admin', 'login', 'search', 'contact', 'privacy']
+            avoid_patterns = ["admin", "login", "search", "contact", "privacy"]
             for pattern in avoid_patterns:
                 if pattern in path_lower:
                     score -= 5
@@ -619,16 +717,17 @@ def cache_mapping_results(base_url: str, urls: List[str]) -> None:
         urls: List of discovered URLs to cache
     """
     _mapping_cache[base_url] = {
-        'urls': urls,
-        'timestamp': time.time(),
-        'ttl': 3600  # 1 hour cache
+        "urls": urls,
+        "timestamp": time.time(),
+        "ttl": 3600,  # 1 hour cache
     }
 
     # Clean old cache entries
     current_time = time.time()
     expired_keys = [
-        key for key, value in _mapping_cache.items()
-        if current_time - value['timestamp'] > value['ttl']
+        key
+        for key, value in _mapping_cache.items()
+        if current_time - value["timestamp"] > value["ttl"]
     ]
     for key in expired_keys:
         del _mapping_cache[key]
@@ -645,8 +744,8 @@ def get_cached_mapping(base_url: str) -> Optional[List[str]]:
     """
     if base_url in _mapping_cache:
         cached = _mapping_cache[base_url]
-        if time.time() - cached['timestamp'] < cached['ttl']:
-            return cached['urls']
+        if time.time() - cached["timestamp"] < cached["ttl"]:
+            return cached["urls"]
         else:
             del _mapping_cache[base_url]
     return None
@@ -670,23 +769,25 @@ def get_cache_stats() -> Dict[str, Any]:
     total_urls = 0
 
     for value in _mapping_cache.values():
-        if current_time - value['timestamp'] < value['ttl']:
+        if current_time - value["timestamp"] < value["ttl"]:
             valid_entries += 1
-            total_urls += len(value['urls'])
+            total_urls += len(value["urls"])
         else:
             expired_entries += 1
 
     return {
-        'total_entries': len(_mapping_cache),
-        'valid_entries': valid_entries,
-        'expired_entries': expired_entries,
-        'total_cached_urls': total_urls,
-        'cache_hit_potential': valid_entries / max(1, len(_mapping_cache)),
-        'avg_urls_per_entry': total_urls / max(1, valid_entries)
+        "total_entries": len(_mapping_cache),
+        "valid_entries": valid_entries,
+        "expired_entries": expired_entries,
+        "total_cached_urls": total_urls,
+        "cache_hit_potential": valid_entries / max(1, len(_mapping_cache)),
+        "avg_urls_per_entry": total_urls / max(1, valid_entries),
     }
 
 
-def optimize_url_discovery(domains: List[str], target_urls_per_domain: int = 20) -> Dict[str, int]:
+def optimize_url_discovery(
+    domains: List[str], target_urls_per_domain: int = 20
+) -> Dict[str, int]:
     """Optimize URL discovery parameters based on domain types.
 
     Args:
@@ -721,15 +822,15 @@ def optimize_url_discovery(domains: List[str], target_urls_per_domain: int = 20)
 
 
 __all__ = [
-    'map_urls_concurrently',
-    'map_urls_fast_enhanced',
-    'map_urls_fast_enhanced_bulk',
-    'classify_domain_type',
-    'filter_academic_urls',
-    'deduplicate_and_score_urls',
-    'cache_mapping_results',
-    'get_cached_mapping',
-    'clear_mapping_cache',
-    'get_cache_stats',
-    'optimize_url_discovery'
+    "map_urls_concurrently",
+    "map_urls_fast_enhanced",
+    "map_urls_fast_enhanced_bulk",
+    "classify_domain_type",
+    "filter_academic_urls",
+    "deduplicate_and_score_urls",
+    "cache_mapping_results",
+    "get_cached_mapping",
+    "clear_mapping_cache",
+    "get_cache_stats",
+    "optimize_url_discovery",
 ]

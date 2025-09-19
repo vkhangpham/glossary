@@ -36,6 +36,59 @@ Usage:
     )
 """
 
+from functools import lru_cache
+from importlib import import_module
+
+
+@lru_cache(maxsize=1)
+def _legacy_client_module():
+    """Lazy loader for the legacy client compatibility module."""
+
+    return import_module("generate_glossary.mining.client")
+
+
+def initialize_firecrawl(*args, **kwargs):
+    """Compatibility wrapper around the legacy initialize_firecrawl helper."""
+
+    return _legacy_client_module().initialize_firecrawl(*args, **kwargs)
+
+
+def get_client(*args, **kwargs):
+    """Return the cached Firecrawl client instance."""
+
+    return _legacy_client_module().get_client(*args, **kwargs)
+
+
+def get_firecrawl_api_key(*args, **kwargs):
+    """Expose the resolved Firecrawl API key."""
+
+    return _legacy_client_module().get_firecrawl_api_key(*args, **kwargs)
+
+
+def validate_api_key(*args, **kwargs):
+    """Validate a Firecrawl API key using legacy heuristics."""
+
+    return _legacy_client_module().validate_api_key(*args, **kwargs)
+
+
+def check_client_health(*args, **kwargs):
+    """Run the legacy client health check."""
+
+    return _legacy_client_module().check_client_health(*args, **kwargs)
+
+
+def reset_client(*args, **kwargs):
+    """Reset cached client state for compatibility."""
+
+    return _legacy_client_module().reset_client(*args, **kwargs)
+
+
+def get_client_info(*args, **kwargs):
+    """Expose legacy client metadata."""
+
+    return _legacy_client_module().get_client_info(*args, **kwargs)
+
+
 # Re-export all models
 from .models import (
     ConceptDefinition,
@@ -44,18 +97,7 @@ from .models import (
     ApiUsageStats,
     WebhookConfig,
     PerformanceProfile,
-    QueuePredictor
-)
-
-# Re-export client functions
-from .client import (
-    initialize_firecrawl,
-    get_client,
-    get_firecrawl_api_key,
-    validate_api_key,
-    check_client_health,
-    reset_client,
-    get_client_info
+    QueuePredictor,
 )
 
 # Re-export performance functions
@@ -64,7 +106,7 @@ from .performance import (
     auto_tune_performance,
     get_performance_status,
     get_current_profile,
-    reset_performance_state
+    reset_performance_state,
 )
 
 # Re-export queue management functions
@@ -77,7 +119,7 @@ from .queue_management import (
     apply_intelligent_throttling,
     get_queue_predictor,
     set_performance_profile,
-    reset_queue_state
+    reset_queue_state,
 )
 
 # Re-export URL processing functions
@@ -91,7 +133,7 @@ from .url_processing import (
     get_cached_mapping,
     clear_mapping_cache,
     get_cache_stats,
-    optimize_url_discovery
+    optimize_url_discovery,
 )
 
 # Re-export API tracking functions
@@ -105,7 +147,7 @@ from .api_tracking import (
     calculate_usage_efficiency,
     get_api_usage_stats,
     reset_api_tracking,
-    get_usage_trends
+    get_usage_trends,
 )
 
 # Re-export webhook functions
@@ -118,7 +160,7 @@ from .webhooks import (
     list_active_webhooks,
     remove_webhook,
     test_webhook_connectivity,
-    reset_webhook_state
+    reset_webhook_state,
 )
 
 # Re-export async processing functions
@@ -131,7 +173,7 @@ from .async_processing import (
     parallel_map,
     throttled_execution,
     get_concurrency_manager,
-    reset_concurrency_state
+    reset_concurrency_state,
 )
 
 # Re-export core mining functions - this is the main API
@@ -139,7 +181,7 @@ from .core_mining import (
     search_concepts_batch,
     batch_scrape_urls,
     extract_with_smart_prompts,
-    mine_concepts  # Main entry point
+    mine_concepts,  # Main entry point
 )
 
 # Maintain backward compatibility aliases
@@ -149,6 +191,7 @@ _extract_with_smart_prompts = extract_with_smart_prompts
 
 # Import run_async_safely for loop-safe execution
 from generate_glossary.llm.helpers import run_async_safely
+
 
 # Legacy function aliases for compatibility
 def _map_urls_concurrently(domains, limit=None, concurrency=5):
@@ -162,9 +205,11 @@ def _map_urls_concurrently(domains, limit=None, concurrency=5):
     # Run it with loop-safe execution
     return run_async_safely(coro)
 
+
 def _map_urls_fast_enhanced(*args, **kwargs):
     """Legacy alias for map_urls_fast_enhanced."""
     return map_urls_fast_enhanced(*args, **kwargs)
+
 
 def map_urls_fast_enhanced(*args, **kwargs):
     """Wrapper that handles both single-domain and bulk domain processing.
@@ -172,52 +217,64 @@ def map_urls_fast_enhanced(*args, **kwargs):
     If 'domains' is in kwargs, call bulk function.
     Otherwise, forward to the original single-domain function.
     """
-    if 'domains' in kwargs:
+    if "domains" in kwargs:
         return map_urls_fast_enhanced_bulk(**kwargs)
     else:
         # Import the original function from url_processing
         from .url_processing import map_urls_fast_enhanced as _original_func
+
         return _original_func(*args, **kwargs)
+
 
 def _classify_domain(*args, **kwargs):
     """Legacy alias for classify_domain_type."""
     return classify_domain_type(*args, **kwargs)
 
+
 def _filter_academic_urls(*args, **kwargs):
     """Legacy alias for filter_academic_urls."""
     return filter_academic_urls(*args, **kwargs)
+
 
 def _deduplicate_and_score_urls(*args, **kwargs):
     """Legacy alias for deduplicate_and_score_urls."""
     return deduplicate_and_score_urls(*args, **kwargs)
 
+
 def _generate_queue_insights(*args, **kwargs):
     """Legacy alias for generate_queue_insights."""
     return generate_queue_insights(*args, **kwargs)
+
 
 def _check_queue_health(*args, **kwargs):
     """Legacy alias for check_queue_health."""
     return check_queue_health(*args, **kwargs)
 
+
 def _analyze_usage_patterns(*args, **kwargs):
     """Legacy alias for analyze_usage_patterns."""
     return analyze_usage_patterns(*args, **kwargs)
+
 
 def _calculate_feature_impact(*args, **kwargs):
     """Legacy alias for calculate_feature_impact."""
     return calculate_feature_impact(*args, **kwargs)
 
+
 def _generate_optimization_recommendations(*args, **kwargs):
     """Legacy alias for generate_optimization_recommendations."""
     return generate_optimization_recommendations(*args, **kwargs)
+
 
 def _generate_v220_benchmarks(*args, **kwargs):
     """Legacy alias for generate_v220_benchmarks."""
     return generate_v220_benchmarks(*args, **kwargs)
 
+
 def _estimate_api_costs(*args, **kwargs):
     """Legacy alias for estimate_api_costs."""
     return estimate_api_costs(*args, **kwargs)
+
 
 # Global state management - create instances from the modules
 _api_usage_stats = get_api_usage_stats()
@@ -227,6 +284,7 @@ _concurrency_manager = get_concurrency_manager()
 
 # Logger setup
 from generate_glossary.utils.logger import get_logger
+
 logger = get_logger(__name__)
 
 # Note: Environment setup and API key validation moved to client.py to avoid import-time side effects
@@ -235,124 +293,117 @@ logger = get_logger(__name__)
 try:
     from generate_glossary.utils.failure_tracker import save_failure
 except ImportError:
-    def save_failure(module, function, error_type, error_message, context=None, failure_dir=None):
+
+    def save_failure(
+        module, function, error_type, error_message, context=None, failure_dir=None
+    ):
         """Fallback implementation that just logs."""
         logger.warning(f"Failure in {module}.{function}: {error_type}: {error_message}")
+
 
 # Main API - the mine_concepts function is already imported from core_mining
 # This serves as the primary entry point for the entire mining system
 
 __all__ = [
     # Core API
-    'mine_concepts',  # Main entry point
-
+    "mine_concepts",  # Main entry point
     # Models
-    'ConceptDefinition',
-    'WebResource',
-    'QueueStatus',
-    'ApiUsageStats',
-    'WebhookConfig',
-    'PerformanceProfile',
-    'QueuePredictor',
-
+    "ConceptDefinition",
+    "WebResource",
+    "QueueStatus",
+    "ApiUsageStats",
+    "WebhookConfig",
+    "PerformanceProfile",
+    "QueuePredictor",
     # Client management
-    'initialize_firecrawl',
-    'get_client',
-    'get_firecrawl_api_key',
-    'validate_api_key',
-    'check_client_health',
-    'reset_client',
-    'get_client_info',
-
+    "initialize_firecrawl",
+    "get_client",
+    "get_firecrawl_api_key",
+    "validate_api_key",
+    "check_client_health",
+    "reset_client",
+    "get_client_info",
     # Performance management
-    'configure_performance_profile',
-    'auto_tune_performance',
-    'get_performance_status',
-    'get_current_profile',
-    'reset_performance_state',
-
+    "configure_performance_profile",
+    "auto_tune_performance",
+    "get_performance_status",
+    "get_current_profile",
+    "reset_performance_state",
     # Queue management
-    'get_queue_status',
-    'get_queue_status_async',
-    'generate_queue_insights',
-    'check_queue_health',
-    'poll_job_with_adaptive_strategy',
-    'apply_intelligent_throttling',
-    'get_queue_predictor',
-    'set_performance_profile',
-    'reset_queue_state',
-
+    "get_queue_status",
+    "get_queue_status_async",
+    "generate_queue_insights",
+    "check_queue_health",
+    "poll_job_with_adaptive_strategy",
+    "apply_intelligent_throttling",
+    "get_queue_predictor",
+    "set_performance_profile",
+    "reset_queue_state",
     # URL processing
-    'map_urls_concurrently',
-    'map_urls_fast_enhanced',
-    'classify_domain_type',
-    'filter_academic_urls',
-    'deduplicate_and_score_urls',
-    'cache_mapping_results',
-    'get_cached_mapping',
-    'clear_mapping_cache',
-    'get_cache_stats',
-    'optimize_url_discovery',
-
+    "map_urls_concurrently",
+    "map_urls_fast_enhanced",
+    "classify_domain_type",
+    "filter_academic_urls",
+    "deduplicate_and_score_urls",
+    "cache_mapping_results",
+    "get_cached_mapping",
+    "clear_mapping_cache",
+    "get_cache_stats",
+    "optimize_url_discovery",
     # API tracking
-    'track_api_usage',
-    'analyze_usage_patterns',
-    'calculate_feature_impact',
-    'generate_optimization_recommendations',
-    'generate_v220_benchmarks',
-    'estimate_api_costs',
-    'calculate_usage_efficiency',
-    'get_api_usage_stats',
-    'reset_api_tracking',
-    'get_usage_trends',
-
+    "track_api_usage",
+    "analyze_usage_patterns",
+    "calculate_feature_impact",
+    "generate_optimization_recommendations",
+    "generate_v220_benchmarks",
+    "estimate_api_costs",
+    "calculate_usage_efficiency",
+    "get_api_usage_stats",
+    "reset_api_tracking",
+    "get_usage_trends",
     # Webhook management
-    'setup_webhooks',
-    'verify_webhook_signature',
-    'handle_webhook_event',
-    'get_webhook_stats',
-    'get_recent_events',
-    'list_active_webhooks',
-    'remove_webhook',
-    'test_webhook_connectivity',
-    'reset_webhook_state',
-
+    "setup_webhooks",
+    "verify_webhook_signature",
+    "handle_webhook_event",
+    "get_webhook_stats",
+    "get_recent_events",
+    "list_active_webhooks",
+    "remove_webhook",
+    "test_webhook_connectivity",
+    "reset_webhook_state",
     # Async processing
-    'ConcurrencyManager',
-    'AsyncResultAggregator',
-    'execute_with_resource_management',
-    'process_with_streaming',
-    'execute_parallel_pipeline',
-    'parallel_map',
-    'throttled_execution',
-    'get_concurrency_manager',
-    'reset_concurrency_state',
-
+    "ConcurrencyManager",
+    "AsyncResultAggregator",
+    "execute_with_resource_management",
+    "process_with_streaming",
+    "execute_parallel_pipeline",
+    "parallel_map",
+    "throttled_execution",
+    "get_concurrency_manager",
+    "reset_concurrency_state",
     # Core mining functions
-    'search_concepts_batch',
-    'batch_scrape_urls',
-    'extract_with_smart_prompts',
-
+    "search_concepts_batch",
+    "batch_scrape_urls",
+    "extract_with_smart_prompts",
     # Legacy compatibility
-    '_search_concepts_batch',
-    '_batch_scrape_urls',
-    '_extract_with_smart_prompts',
-    '_map_urls_concurrently',
-    '_map_urls_fast_enhanced',
-    '_classify_domain',
-    '_filter_academic_urls',
-    '_deduplicate_and_score_urls',
-    '_generate_queue_insights',
-    '_check_queue_health',
-    '_analyze_usage_patterns',
-    '_calculate_feature_impact',
-    '_generate_optimization_recommendations',
-    '_generate_v220_benchmarks',
-    '_estimate_api_costs',
-
+    "_search_concepts_batch",
+    "_batch_scrape_urls",
+    "_extract_with_smart_prompts",
+    "_map_urls_concurrently",
+    "_map_urls_fast_enhanced",
+    "_classify_domain",
+    "_filter_academic_urls",
+    "_deduplicate_and_score_urls",
+    "_generate_queue_insights",
+    "_check_queue_health",
+    "_analyze_usage_patterns",
+    "_calculate_feature_impact",
+    "_generate_optimization_recommendations",
+    "_generate_v220_benchmarks",
+    "_estimate_api_costs",
     # Global state (for compatibility)
-    '_api_usage_stats',
-    '_queue_predictor',
-    '_performance_profile',
-    '_concurrency_manager'
+    "_api_usage_stats",
+    "_queue_predictor",
+    "_performance_profile",
+    "_concurrency_manager",
 ]

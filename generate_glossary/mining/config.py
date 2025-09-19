@@ -11,6 +11,7 @@ import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
+from threading import RLock
 from typing import Any, Dict, Optional
 
 import yaml
@@ -19,6 +20,11 @@ import yaml
 CONFIG_FILE_NAME = "config.yml"
 DEFAULT_CONFIG_PATH = Path(__file__).with_name(CONFIG_FILE_NAME)
 _ENV_PLACEHOLDER = re.compile(r"^\$\{([A-Za-z_][A-Za-z0-9_]*)\}$")
+
+
+_CACHED_DEFAULT_CONFIG: Optional["MiningModuleConfig"] = None
+_CACHED_FIRECRAWL_CLIENT: Optional[Any] = None
+_CACHE_LOCK = RLock()
 
 
 class ConfigError(RuntimeError):
@@ -36,7 +42,9 @@ class FirecrawlConfig:
 @dataclass
 class MiningConfig:
     batch_size: int = 25
-    max_concurrent_operations: int = 5  # Controls parallel scrapes when batch mode is disabled
+    max_concurrent_operations: int = (
+        5  # Controls parallel scrapes when batch mode is disabled
+    )
     max_urls_per_concept: int = 3
     request_timeout: int = 30
     retry_attempts: int = 3
@@ -197,6 +205,16 @@ def load_config(config_path: Optional[str] = None) -> MiningModuleConfig:
     return config
 
 
+def get_cached_config(force_reload: bool = False) -> MiningModuleConfig:
+    """Return the cached default mining configuration, reloading if requested."""
+
+    global _CACHED_DEFAULT_CONFIG
+    with _CACHE_LOCK:
+        if force_reload or _CACHED_DEFAULT_CONFIG is None:
+            _CACHED_DEFAULT_CONFIG = load_config()
+        return _CACHED_DEFAULT_CONFIG
+
+
 def override_with_cli_args(
     config: MiningModuleConfig, args: argparse.Namespace
 ) -> MiningModuleConfig:
@@ -310,15 +328,54 @@ def validate_config(config: MiningModuleConfig) -> None:
         raise ConfigError("output format must be one of: json, jsonl, csv")
 
 
-def get_firecrawl_client(config: FirecrawlConfig):
-    """Instantiate and return a Firecrawl client."""
+def get_firecrawl_client(
+    config: Optional[FirecrawlConfig] = None,
+    *,
+    force_refresh: bool = False,
+) -> Any:
+    """Instantiate and return a Firecrawl client.
+
+    When ``config`` is omitted, a cached default configuration is used. Setting
+    ``force_refresh`` invalidates the cached client and reloads configuration
+    from disk.
+    """
 
     from .core.firecrawl_client import create_firecrawl_client
 
     try:
+        if config is None:
+            with _CACHE_LOCK:
+                resolved_config = get_cached_config(
+                    force_reload=force_refresh
+                ).firecrawl
+
+                global _CACHED_FIRECRAWL_CLIENT
+                if not force_refresh and _CACHED_FIRECRAWL_CLIENT is not None:
+                    return _CACHED_FIRECRAWL_CLIENT
+
+                client = create_firecrawl_client(resolved_config)
+                _CACHED_FIRECRAWL_CLIENT = client
+                return client
+
         return create_firecrawl_client(config)
     except RuntimeError as exc:  # pragma: no cover - defensive
         raise ConfigError(str(exc)) from exc
+
+
+def reset_cached_firecrawl_client() -> None:
+    """Clear cached Firecrawl client and configuration state."""
+
+    global _CACHED_DEFAULT_CONFIG, _CACHED_FIRECRAWL_CLIENT
+    with _CACHE_LOCK:
+        _CACHED_FIRECRAWL_CLIENT = None
+        _CACHED_DEFAULT_CONFIG = None
+
+
+def get_firecrawl_api_key() -> str:
+    """Return the resolved Firecrawl API key from configuration."""
+
+    with _CACHE_LOCK:
+        return get_cached_config().firecrawl.api_key
 
 
 def configure_logging(logging_config: Dict[str, Any]) -> None:

@@ -13,14 +13,19 @@ import logging
 import collections
 from typing import Optional, Dict, Any, List
 from urllib.parse import urlparse
-from firecrawl import FirecrawlApp
 
 from .models import WebhookConfig
-from .client import get_client, get_firecrawl_api_key
+from .config import ConfigError, get_firecrawl_client, get_firecrawl_api_key
 from generate_glossary.utils.error_handler import (
-    ExternalServiceError, handle_error, processing_context
+    ExternalServiceError,
+    handle_error,
+    processing_context,
 )
-from generate_glossary.utils.logger import get_logger, log_processing_step, log_with_context
+from generate_glossary.utils.logger import (
+    get_logger,
+    log_processing_step,
+    log_with_context,
+)
 
 
 logger = get_logger(__name__)
@@ -30,15 +35,42 @@ _active_webhooks: Dict[str, WebhookConfig] = {}
 # Use bounded deque to enforce hard memory limits (max 1000 events)
 _webhook_events: collections.deque[Dict[str, Any]] = collections.deque(maxlen=1000)
 _webhook_stats: Dict[str, Any] = {
-    'total_events': 0,
-    'successful_events': 0,
-    'failed_events': 0,
-    'signature_verifications': 0,
-    'signature_failures': 0
+    "total_events": 0,
+    "successful_events": 0,
+    "failed_events": 0,
+    "signature_verifications": 0,
+    "signature_failures": 0,
 }
 
 
-def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = None) -> bool:
+def _resolve_firecrawl_client(
+    app: Optional[Any],
+    operation: str,
+    correlation_id: Optional[str] = None,
+) -> Optional[Any]:
+    """Return an initialized Firecrawl client, handling configuration failures."""
+
+    if app is not None:
+        return app
+
+    try:
+        return get_firecrawl_client()
+    except ConfigError as exc:
+        handle_error(
+            ExternalServiceError(str(exc), service="firecrawl"),
+            context={"operation": operation},
+            operation=operation,
+        )
+        log_with_context(
+            logger,
+            logging.ERROR,
+            f"Unable to acquire Firecrawl client: {exc}",
+            correlation_id=correlation_id,
+        )
+        return None
+
+
+def setup_webhooks(webhook_config: WebhookConfig, app: Optional[Any] = None) -> bool:
     """Setup enhanced webhooks with signatures for real-time job notifications.
 
     Configures webhooks with v2.2.0 enhancements including:
@@ -49,17 +81,16 @@ def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = 
 
     Args:
         webhook_config: WebhookConfig containing webhook settings
-        app: Optional FirecrawlApp instance for SDK-based registration
+        app: Optional Firecrawl client instance for SDK-based registration
 
     Returns:
         True if webhook setup successful, False otherwise
     """
-    if app is None:
-        app = get_client()
-        if app is None:
+    with processing_context("setup_webhooks") as correlation_id:
+        client = _resolve_firecrawl_client(app, "setup_webhooks", correlation_id)
+        if client is None and app is None:
             return False
 
-    with processing_context("setup_webhooks") as correlation_id:
         log_processing_step(
             logger,
             "setup_webhooks",
@@ -68,9 +99,9 @@ def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = 
                 "webhook_url": webhook_config.url,
                 "events": webhook_config.events,
                 "verify_signature": webhook_config.verify_signature,
-                "has_app": app is not None
+                "has_app": client is not None,
             },
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
 
         try:
@@ -90,7 +121,7 @@ def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = 
                 logger,
                 logging.INFO,
                 f"Setting up webhook for events: {', '.join(webhook_config.events)}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
 
             success = False
@@ -100,13 +131,17 @@ def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = 
             for attempt in range(max_retries):
                 try:
                     # Try SDK-based registration first if app is available
-                    if app:
-                        success = _try_sdk_webhook_registration(app, webhook_config, correlation_id)
+                    if client:
+                        success = _try_sdk_webhook_registration(
+                            client, webhook_config, correlation_id
+                        )
                         if success:
                             break
 
                     # Fallback to direct REST API registration
-                    success = _try_rest_webhook_registration(webhook_config, correlation_id)
+                    success = _try_rest_webhook_registration(
+                        webhook_config, correlation_id
+                    )
                     if success:
                         break
 
@@ -115,16 +150,16 @@ def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = 
                         logger,
                         logging.WARNING,
                         f"Webhook setup attempt {attempt + 1} failed: {e}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
 
                     if attempt < max_retries - 1:
-                        delay = base_delay * (2 ** attempt)
+                        delay = base_delay * (2**attempt)
                         log_with_context(
                             logger,
                             logging.INFO,
                             f"Retrying webhook setup in {delay}s...",
-                            correlation_id=correlation_id
+                            correlation_id=correlation_id,
                         )
                         time.sleep(delay)
 
@@ -139,16 +174,16 @@ def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = 
                     {
                         "webhook_url": webhook_config.url,
                         "events": webhook_config.events,
-                        "registration_method": "sdk" if app else "rest"
+                        "registration_method": "sdk" if client else "rest",
                     },
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
             else:
                 log_with_context(
                     logger,
                     logging.ERROR,
                     f"Failed to setup webhook after {max_retries} attempts",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
 
             return success
@@ -158,21 +193,22 @@ def setup_webhooks(webhook_config: WebhookConfig, app: Optional[FirecrawlApp] = 
                 ExternalServiceError(f"Webhook setup failed: {e}", service="firecrawl"),
                 context={
                     "webhook_url": webhook_config.url,
-                    "events": webhook_config.events
+                    "events": webhook_config.events,
                 },
-                operation="setup_webhooks"
+                operation="setup_webhooks",
             )
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Webhook setup failed: {e}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return False
 
 
-def _try_sdk_webhook_registration(app: FirecrawlApp, webhook_config: WebhookConfig,
-                                  correlation_id: str) -> bool:
+def _try_sdk_webhook_registration(
+    app: Any, webhook_config: WebhookConfig, correlation_id: str
+) -> bool:
     """Try to register webhook using SDK methods.
 
     Args:
@@ -185,29 +221,28 @@ def _try_sdk_webhook_registration(app: FirecrawlApp, webhook_config: WebhookConf
     """
     try:
         # Try to use SDK webhook registration method (if available)
-        if hasattr(app, 'register_webhook'):
+        if hasattr(app, "register_webhook"):
             webhook_response = app.register_webhook(
                 url=webhook_config.url,
                 events=webhook_config.events,
-                secret=webhook_config.secret
+                secret=webhook_config.secret,
             )
             log_with_context(
                 logger,
                 logging.INFO,
                 f"Webhook registered via SDK: {webhook_response}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return True
-        elif hasattr(app, 'set_webhook'):
+        elif hasattr(app, "set_webhook"):
             webhook_response = app.set_webhook(
-                webhook_config.url,
-                events=webhook_config.events
+                webhook_config.url, events=webhook_config.events
             )
             log_with_context(
                 logger,
                 logging.INFO,
                 f"Webhook set via SDK: {webhook_response}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return True
         else:
@@ -215,7 +250,7 @@ def _try_sdk_webhook_registration(app: FirecrawlApp, webhook_config: WebhookConf
                 logger,
                 logging.DEBUG,
                 "SDK webhook methods not available",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return False
 
@@ -224,12 +259,14 @@ def _try_sdk_webhook_registration(app: FirecrawlApp, webhook_config: WebhookConf
             logger,
             logging.WARNING,
             f"SDK webhook registration not available: {sdk_error}",
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
         return False
 
 
-def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id: str) -> bool:
+def _try_rest_webhook_registration(
+    webhook_config: WebhookConfig, correlation_id: str
+) -> bool:
     """Try to register webhook using direct REST API.
 
     Args:
@@ -246,7 +283,7 @@ def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id
             logger,
             logging.ERROR,
             "requests library not available for REST webhook registration",
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
         return False
 
@@ -256,38 +293,29 @@ def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id
             logger,
             logging.ERROR,
             "Firecrawl API key not available for REST webhook registration",
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
         return False
 
-    webhook_payload = {
-        "url": webhook_config.url,
-        "events": webhook_config.events
-    }
+    webhook_payload = {"url": webhook_config.url, "events": webhook_config.events}
 
     if webhook_config.secret:
         webhook_payload["secret"] = webhook_config.secret
 
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
-    }
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
 
     try:
         # Try different potential webhook endpoints
         potential_endpoints = [
             "https://api.firecrawl.dev/v1/webhook/register",
             "https://api.firecrawl.dev/v2/webhook/register",
-            "https://api.firecrawl.dev/webhook/register"
+            "https://api.firecrawl.dev/webhook/register",
         ]
 
         for endpoint in potential_endpoints:
             try:
                 response = requests.post(
-                    endpoint,
-                    json=webhook_payload,
-                    headers=headers,
-                    timeout=30
+                    endpoint, json=webhook_payload, headers=headers, timeout=30
                 )
 
                 if response.status_code in [200, 201]:
@@ -295,7 +323,7 @@ def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id
                         logger,
                         logging.INFO,
                         f"Webhook registered via REST API ({endpoint}): {response.json()}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
                     return True
                 elif response.status_code == 404:
@@ -306,7 +334,7 @@ def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id
                         logger,
                         logging.WARNING,
                         f"Webhook registration failed at {endpoint}: {response.status_code} {response.text}",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
 
             except requests.exceptions.RequestException as e:
@@ -314,7 +342,7 @@ def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id
                     logger,
                     logging.WARNING,
                     f"Request failed for {endpoint}: {e}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
                 continue
 
@@ -322,7 +350,7 @@ def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id
             logger,
             logging.ERROR,
             "All webhook registration endpoints failed",
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
         return False
 
@@ -331,7 +359,7 @@ def _try_rest_webhook_registration(webhook_config: WebhookConfig, correlation_id
             logger,
             logging.ERROR,
             f"REST webhook registration failed: {e}",
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
         return False
 
@@ -347,45 +375,46 @@ def verify_webhook_signature(payload_bytes: bytes, signature: str, secret: str) 
     Returns:
         True if signature is valid, False otherwise
     """
-    _webhook_stats['signature_verifications'] += 1
+    _webhook_stats["signature_verifications"] += 1
 
     if not secret:
         logger.warning("No webhook secret provided for signature verification")
-        _webhook_stats['signature_failures'] += 1
+        _webhook_stats["signature_failures"] += 1
         return False
 
     if not signature:
         logger.warning("No signature provided for verification")
-        _webhook_stats['signature_failures'] += 1
+        _webhook_stats["signature_failures"] += 1
         return False
 
     try:
         expected_signature = hmac.new(
-            secret.encode('utf-8'),
-            payload_bytes,
-            hashlib.sha256
+            secret.encode("utf-8"), payload_bytes, hashlib.sha256
         ).hexdigest()
 
         # Remove 'sha256=' prefix if present
-        clean_signature = signature.replace('sha256=', '')
+        clean_signature = signature.replace("sha256=", "")
 
         is_valid = hmac.compare_digest(expected_signature, clean_signature)
 
         if not is_valid:
-            _webhook_stats['signature_failures'] += 1
+            _webhook_stats["signature_failures"] += 1
             logger.warning("Webhook signature verification failed")
 
         return is_valid
 
     except Exception as e:
         logger.error(f"Webhook signature verification error: {e}")
-        _webhook_stats['signature_failures'] += 1
+        _webhook_stats["signature_failures"] += 1
         return False
 
 
-def handle_webhook_event(event_data: Dict[str, Any], webhook_url: str,
-                        signature: Optional[str] = None,
-                        raw_body: Optional[bytes] = None) -> bool:
+def handle_webhook_event(
+    event_data: Dict[str, Any],
+    webhook_url: str,
+    signature: Optional[str] = None,
+    raw_body: Optional[bytes] = None,
+) -> bool:
     """Handle incoming webhook event.
 
     Args:
@@ -398,7 +427,7 @@ def handle_webhook_event(event_data: Dict[str, Any], webhook_url: str,
         True if event handled successfully, False otherwise
     """
     with processing_context("handle_webhook_event") as correlation_id:
-        _webhook_stats['total_events'] += 1
+        _webhook_stats["total_events"] += 1
 
         try:
             # Get webhook configuration
@@ -408,7 +437,7 @@ def handle_webhook_event(event_data: Dict[str, Any], webhook_url: str,
                     logger,
                     logging.WARNING,
                     f"Received event for unknown webhook: {webhook_url}",
-                    correlation_id=correlation_id
+                    correlation_id=correlation_id,
                 )
                 return False
 
@@ -419,9 +448,9 @@ def handle_webhook_event(event_data: Dict[str, Any], webhook_url: str,
                         logger,
                         logging.ERROR,
                         "Signature required but not provided",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
-                    _webhook_stats['failed_events'] += 1
+                    _webhook_stats["failed_events"] += 1
                     return False
 
                 if not raw_body:
@@ -429,40 +458,42 @@ def handle_webhook_event(event_data: Dict[str, Any], webhook_url: str,
                         logger,
                         logging.ERROR,
                         "Raw body required for signature verification but not provided",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
-                    _webhook_stats['failed_events'] += 1
+                    _webhook_stats["failed_events"] += 1
                     return False
 
-                if not verify_webhook_signature(raw_body, signature, webhook_config.secret):
+                if not verify_webhook_signature(
+                    raw_body, signature, webhook_config.secret
+                ):
                     log_with_context(
                         logger,
                         logging.ERROR,
                         "Webhook signature verification failed",
-                        correlation_id=correlation_id
+                        correlation_id=correlation_id,
                     )
-                    _webhook_stats['failed_events'] += 1
+                    _webhook_stats["failed_events"] += 1
                     return False
 
             # Process the event
-            event_type = event_data.get('type', 'unknown')
-            job_id = event_data.get('job_id', 'unknown')
+            event_type = event_data.get("type", "unknown")
+            job_id = event_data.get("job_id", "unknown")
 
             log_with_context(
                 logger,
                 logging.INFO,
                 f"Processing webhook event: {event_type} for job {job_id}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
 
             # Store event for tracking
             event_record = {
-                'timestamp': time.time(),
-                'webhook_url': webhook_url,
-                'event_type': event_type,
-                'job_id': job_id,
-                'data': event_data,
-                'correlation_id': correlation_id
+                "timestamp": time.time(),
+                "webhook_url": webhook_url,
+                "event_type": event_type,
+                "job_id": job_id,
+                "data": event_data,
+                "correlation_id": correlation_id,
             }
             # Add to bounded deque (automatically removes oldest when full)
             _webhook_events.append(event_record)
@@ -471,26 +502,30 @@ def handle_webhook_event(event_data: Dict[str, Any], webhook_url: str,
             success = _process_event_by_type(event_type, event_data, correlation_id)
 
             if success:
-                _webhook_stats['successful_events'] += 1
+                _webhook_stats["successful_events"] += 1
             else:
-                _webhook_stats['failed_events'] += 1
+                _webhook_stats["failed_events"] += 1
 
             return success
 
         except Exception as e:
             handle_error(
-                ExternalServiceError(f"Webhook event handling failed: {e}", service="webhook"),
+                ExternalServiceError(
+                    f"Webhook event handling failed: {e}", service="webhook"
+                ),
                 context={
                     "webhook_url": webhook_url,
-                    "event_type": event_data.get('type', 'unknown')
+                    "event_type": event_data.get("type", "unknown"),
                 },
-                operation="handle_webhook_event"
+                operation="handle_webhook_event",
             )
-            _webhook_stats['failed_events'] += 1
+            _webhook_stats["failed_events"] += 1
             return False
 
 
-def _process_event_by_type(event_type: str, event_data: Dict[str, Any], correlation_id: str) -> bool:
+def _process_event_by_type(
+    event_type: str, event_data: Dict[str, Any], correlation_id: str
+) -> bool:
     """Process webhook event based on its type.
 
     Args:
@@ -507,47 +542,47 @@ def _process_event_by_type(event_type: str, event_data: Dict[str, Any], correlat
                 logger,
                 logging.INFO,
                 f"Job started: {event_data.get('job_id')}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return True
 
         elif event_type == "page":
-            pages_processed = event_data.get('pages_processed', 0)
+            pages_processed = event_data.get("pages_processed", 0)
             log_with_context(
                 logger,
                 logging.DEBUG,
                 f"Job progress: {event_data.get('job_id')} - {pages_processed} pages processed",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return True
 
         elif event_type == "completed":
-            pages_total = event_data.get('pages_total', 0)
+            pages_total = event_data.get("pages_total", 0)
             log_with_context(
                 logger,
                 logging.INFO,
                 f"Job completed: {event_data.get('job_id')} - {pages_total} pages total",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return True
 
         elif event_type == "failed":
-            error_message = event_data.get('error', 'Unknown error')
+            error_message = event_data.get("error", "Unknown error")
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Job failed: {event_data.get('job_id')} - {error_message}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return True
 
         elif event_type == "error":
-            error_message = event_data.get('error', 'Unknown error')
+            error_message = event_data.get("error", "Unknown error")
             log_with_context(
                 logger,
                 logging.ERROR,
                 f"Job error: {event_data.get('job_id')} - {error_message}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return True
 
@@ -556,7 +591,7 @@ def _process_event_by_type(event_type: str, event_data: Dict[str, Any], correlat
                 logger,
                 logging.WARNING,
                 f"Unknown event type: {event_type}",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
             return False
 
@@ -565,7 +600,7 @@ def _process_event_by_type(event_type: str, event_data: Dict[str, Any], correlat
             logger,
             logging.ERROR,
             f"Event processing failed for {event_type}: {e}",
-            correlation_id=correlation_id
+            correlation_id=correlation_id,
         )
         return False
 
@@ -577,15 +612,23 @@ def get_webhook_stats() -> Dict[str, Any]:
         Dictionary with webhook statistics
     """
     stats = _webhook_stats.copy()
-    stats.update({
-        'active_webhooks': len(_active_webhooks),
-        'recent_events': len(_webhook_events),
-        'success_rate': (stats['successful_events'] / max(1, stats['total_events'])) * 100,
-        'signature_success_rate': (
-            (stats['signature_verifications'] - stats['signature_failures']) /
-            max(1, stats['signature_verifications'])
-        ) * 100 if stats['signature_verifications'] > 0 else 100
-    })
+    stats.update(
+        {
+            "active_webhooks": len(_active_webhooks),
+            "recent_events": len(_webhook_events),
+            "success_rate": (stats["successful_events"] / max(1, stats["total_events"]))
+            * 100,
+            "signature_success_rate": (
+                (
+                    (stats["signature_verifications"] - stats["signature_failures"])
+                    / max(1, stats["signature_verifications"])
+                )
+                * 100
+                if stats["signature_verifications"] > 0
+                else 100
+            ),
+        }
+    )
     return stats
 
 
@@ -648,7 +691,7 @@ def test_webhook_connectivity(webhook_url: str) -> Dict[str, Any]:
         "status": "unknown",
         "response_time": None,
         "status_code": None,
-        "message": ""
+        "message": "",
     }
 
     try:
@@ -659,39 +702,39 @@ def test_webhook_connectivity(webhook_url: str) -> Dict[str, Any]:
             "type": "test",
             "job_id": "test-job-123",
             "timestamp": time.time(),
-            "message": "Webhook connectivity test"
+            "message": "Webhook connectivity test",
         }
 
         response = requests.post(
             webhook_url,
             json=test_payload,
             timeout=10,
-            headers={"Content-Type": "application/json"}
+            headers={"Content-Type": "application/json"},
         )
 
         response_time = time.time() - start_time
-        test_result.update({
-            "status": "success" if response.status_code < 400 else "failed",
-            "response_time": response_time,
-            "status_code": response.status_code,
-            "message": f"Response: {response.text[:200]}"
-        })
+        test_result.update(
+            {
+                "status": "success" if response.status_code < 400 else "failed",
+                "response_time": response_time,
+                "status_code": response.status_code,
+                "message": f"Response: {response.text[:200]}",
+            }
+        )
 
     except requests.exceptions.Timeout:
-        test_result.update({
-            "status": "timeout",
-            "message": "Request timed out after 10 seconds"
-        })
+        test_result.update(
+            {"status": "timeout", "message": "Request timed out after 10 seconds"}
+        )
     except requests.exceptions.ConnectionError:
-        test_result.update({
-            "status": "connection_error",
-            "message": "Failed to connect to webhook URL"
-        })
+        test_result.update(
+            {
+                "status": "connection_error",
+                "message": "Failed to connect to webhook URL",
+            }
+        )
     except Exception as e:
-        test_result.update({
-            "status": "error",
-            "message": f"Test failed: {e}"
-        })
+        test_result.update({"status": "error", "message": f"Test failed: {e}"})
 
     return test_result
 
@@ -702,22 +745,22 @@ def reset_webhook_state() -> None:
     _active_webhooks.clear()
     _webhook_events.clear()
     _webhook_stats = {
-        'total_events': 0,
-        'successful_events': 0,
-        'failed_events': 0,
-        'signature_verifications': 0,
-        'signature_failures': 0
+        "total_events": 0,
+        "successful_events": 0,
+        "failed_events": 0,
+        "signature_verifications": 0,
+        "signature_failures": 0,
     }
 
 
 __all__ = [
-    'setup_webhooks',
-    'verify_webhook_signature',
-    'handle_webhook_event',
-    'get_webhook_stats',
-    'get_recent_events',
-    'list_active_webhooks',
-    'remove_webhook',
-    'test_webhook_connectivity',
-    'reset_webhook_state'
+    "setup_webhooks",
+    "verify_webhook_signature",
+    "handle_webhook_event",
+    "get_webhook_stats",
+    "get_recent_events",
+    "list_active_webhooks",
+    "remove_webhook",
+    "test_webhook_connectivity",
+    "reset_webhook_state",
 ]

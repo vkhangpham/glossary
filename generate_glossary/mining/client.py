@@ -8,25 +8,38 @@ across the mining system.
 import os
 import time
 import logging
+from dataclasses import replace
 from typing import Optional, Dict, Any
-from firecrawl import FirecrawlApp
 
 from generate_glossary.utils.error_handler import (
-    ExternalServiceError, handle_error, processing_context
+    ExternalServiceError,
+    handle_error,
+    processing_context,
 )
-from generate_glossary.utils.logger import get_logger, log_processing_step, log_with_context
+from generate_glossary.utils.logger import (
+    get_logger,
+    log_processing_step,
+    log_with_context,
+)
+from .config import (
+    ConfigError,
+    FirecrawlConfig,
+    get_cached_config,
+    get_firecrawl_client,
+    reset_cached_firecrawl_client,
+)
 
 
 logger = get_logger(__name__)
 
 # Singleton client instance
-_firecrawl_client: Optional[FirecrawlApp] = None
+_firecrawl_client: Optional[Any] = None
 _client_initialized: bool = False
 _client_health_status: Dict[str, Any] = {
-    'last_check': None,
-    'healthy': None,
-    'api_version': None,
-    'error_count': 0
+    "last_check": None,
+    "healthy": None,
+    "api_version": None,
+    "error_count": 0,
 }
 
 
@@ -35,6 +48,7 @@ def get_firecrawl_api_key() -> Optional[str]:
     # Load environment variables on demand to avoid import-time side effects
     try:
         from dotenv import load_dotenv
+
         load_dotenv()
     except ImportError:
         pass  # dotenv not available, rely on system env vars
@@ -59,101 +73,132 @@ def validate_api_key(api_key: Optional[str] = None) -> bool:
 
     # Relaxed validation - warn for unexpected format but return True if non-empty
     # This matches get_client_info logic for consistent behavior
-    if not api_key.startswith('fc-') or len(api_key) < 20:
-        logger.warning("API key format may be invalid (should start with 'fc-' and be at least 20 characters)")
+    if not api_key.startswith("fc-") or len(api_key) < 20:
+        logger.warning(
+            "API key format may be invalid (should start with 'fc-' and be at least 20 characters)"
+        )
         # Return True for non-empty keys even with unexpected format
         return len(api_key) > 0
 
     return True
 
 
-def initialize_firecrawl(api_key: Optional[str] = None, force_reinit: bool = False) -> Optional[FirecrawlApp]:
-    """Initialize Firecrawl client with API key.
+def initialize_firecrawl(
+    api_key: Optional[str] = None,
+    force_reinit: bool = False,
+) -> Optional[Any]:
+    """Initialize the Firecrawl client with optional API key overrides."""
 
-    Uses singleton pattern to reuse client instances across the application.
-
-    Args:
-        api_key: Optional API key override
-        force_reinit: Force reinitialization even if client exists
-
-    Returns:
-        Initialized FirecrawlApp client or None if failed
-    """
     global _firecrawl_client, _client_initialized
 
-    # Return existing client if available and not forcing reinit
-    if _firecrawl_client and _client_initialized and not force_reinit:
+    if (
+        _firecrawl_client
+        and _client_initialized
+        and not force_reinit
+        and api_key is None
+    ):
         return _firecrawl_client
 
     with processing_context("initialize_firecrawl") as correlation_id:
-        if api_key is None:
-            api_key = get_firecrawl_api_key()
+        base_config = get_cached_config(force_reload=force_reinit).firecrawl
+        candidate_key = api_key or get_firecrawl_api_key() or base_config.api_key
 
-        if not validate_api_key(api_key):
+        if not validate_api_key(candidate_key):
             error_msg = "Invalid or missing Firecrawl API key"
             logger.error(error_msg)
             handle_error(
                 ExternalServiceError(error_msg, service="firecrawl"),
                 context={"api_key_provided": api_key is not None},
-                operation="firecrawl_initialization"
+                operation="firecrawl_initialization",
             )
             return None
 
+        key_to_use = (candidate_key or "").strip()
+
         try:
-            _firecrawl_client = FirecrawlApp(api_key=api_key)
+            if key_to_use != base_config.api_key:
+                override_config = replace(base_config, api_key=key_to_use)
+                client = get_firecrawl_client(override_config, force_refresh=True)
+            else:
+                client = get_firecrawl_client(force_refresh=force_reinit)
+
+            _firecrawl_client = client
             _client_initialized = True
-            _client_health_status.update({
-                'last_check': time.time(),
-                'healthy': True,
-                'error_count': 0
-            })
+            _client_health_status.update(
+                {
+                    "last_check": time.time(),
+                    "healthy": True,
+                    "error_count": 0,
+                }
+            )
 
             log_with_context(
                 logger,
                 logging.INFO,
                 "Firecrawl client initialized successfully",
-                correlation_id=correlation_id
+                correlation_id=correlation_id,
             )
 
-            return _firecrawl_client
+            return client
 
-        except Exception as e:
-            _client_health_status.update({
-                'last_check': time.time(),
-                'healthy': False,
-                'error_count': _client_health_status.get('error_count', 0) + 1
-            })
-
+        except ConfigError as exc:
+            _client_health_status.update(
+                {
+                    "last_check": time.time(),
+                    "healthy": False,
+                    "error_count": _client_health_status.get("error_count", 0) + 1,
+                }
+            )
             handle_error(
-                ExternalServiceError(f"Failed to initialize Firecrawl: {e}", service="firecrawl"),
-                context={"error_count": _client_health_status['error_count']},
-                operation="firecrawl_initialization"
+                ExternalServiceError(str(exc), service="firecrawl"),
+                context={"error_count": _client_health_status["error_count"]},
+                operation="firecrawl_initialization",
             )
-
             log_with_context(
                 logger,
                 logging.ERROR,
-                f"Failed to initialize Firecrawl: {e}",
-                correlation_id=correlation_id
+                f"Failed to initialize Firecrawl: {exc}",
+                correlation_id=correlation_id,
             )
-
+            return None
+        except Exception as exc:  # pragma: no cover - defensive
+            _client_health_status.update(
+                {
+                    "last_check": time.time(),
+                    "healthy": False,
+                    "error_count": _client_health_status.get("error_count", 0) + 1,
+                }
+            )
+            handle_error(
+                ExternalServiceError(
+                    f"Failed to initialize Firecrawl: {exc}", service="firecrawl"
+                ),
+                context={"error_count": _client_health_status["error_count"]},
+                operation="firecrawl_initialization",
+            )
+            log_with_context(
+                logger,
+                logging.ERROR,
+                f"Failed to initialize Firecrawl: {exc}",
+                correlation_id=correlation_id,
+            )
             return None
 
 
-def get_client() -> Optional[FirecrawlApp]:
+def get_client() -> Optional[Any]:
     """Get or initialize Firecrawl client.
 
     Convenience function that returns existing client or initializes new one.
 
     Returns:
-        FirecrawlApp client or None if initialization failed
+        Firecrawl client or None if initialization failed
     """
     if _firecrawl_client and _client_initialized:
         return _firecrawl_client
     return initialize_firecrawl()
 
 
-def check_client_health(client: Optional[FirecrawlApp] = None) -> Dict[str, Any]:
+def check_client_health(client: Optional[Any] = None) -> Dict[str, Any]:
     """Check client health and connection status.
 
     Args:
@@ -166,18 +211,17 @@ def check_client_health(client: Optional[FirecrawlApp] = None) -> Dict[str, Any]
         client = get_client()
 
     health_info = {
-        'healthy': False,
-        'last_check': time.time(),
-        'error_message': None,
-        'api_version': None,
-        'response_time': None
+        "healthy": False,
+        "last_check": time.time(),
+        "error_message": None,
+        "api_version": None,
+        "response_time": None,
     }
 
     if not client:
-        health_info.update({
-            'error_message': 'Client not initialized',
-            'healthy': False
-        })
+        health_info.update(
+            {"error_message": "Client not initialized", "healthy": False}
+        )
         return health_info
 
     try:
@@ -188,31 +232,39 @@ def check_client_health(client: Optional[FirecrawlApp] = None) -> Dict[str, Any]
         try:
             # Attempt queue status as health check
             client.get_queue_status()
-            health_info.update({
-                'healthy': True,
-                'response_time': time.time() - start_time,
-                'api_version': 'v2.2.0+'
-            })
+            health_info.update(
+                {
+                    "healthy": True,
+                    "response_time": time.time() - start_time,
+                    "api_version": "v2.2.0+",
+                }
+            )
         except AttributeError:
             # Queue status not available, try alternative health check
-            health_info.update({
-                'healthy': True,
-                'response_time': time.time() - start_time,
-                'api_version': 'v2.1.x'
-            })
+            health_info.update(
+                {
+                    "healthy": True,
+                    "response_time": time.time() - start_time,
+                    "api_version": "v2.1.x",
+                }
+            )
         except Exception as e:
-            health_info.update({
-                'healthy': False,
-                'error_message': str(e),
-                'response_time': time.time() - start_time
-            })
+            health_info.update(
+                {
+                    "healthy": False,
+                    "error_message": str(e),
+                    "response_time": time.time() - start_time,
+                }
+            )
 
     except Exception as e:
-        health_info.update({
-            'healthy': False,
-            'error_message': f"Health check failed: {e}",
-            'response_time': None
-        })
+        health_info.update(
+            {
+                "healthy": False,
+                "error_message": f"Health check failed: {e}",
+                "response_time": None,
+            }
+        )
 
     # Update global health status
     _client_health_status.update(health_info)
@@ -224,12 +276,9 @@ def reset_client() -> None:
     global _firecrawl_client, _client_initialized
     _firecrawl_client = None
     _client_initialized = False
-    _client_health_status.update({
-        'last_check': None,
-        'healthy': None,
-        'api_version': None,
-        'error_count': 0
-    })
+    _client_health_status.update(
+        {"last_check": None, "healthy": None, "api_version": None, "error_count": 0}
+    )
     logger.info("Firecrawl client reset")
 
 
@@ -240,7 +289,7 @@ def get_client_info() -> Dict[str, Any]:
         Dictionary with client status and configuration info
     """
     api_key = get_firecrawl_api_key()
-    
+
     # Additional fields expected by tests
     api_key_present = api_key is not None
     try:
@@ -248,23 +297,23 @@ def get_client_info() -> Dict[str, Any]:
         api_key_valid = api_key is not None and len(api_key) > 0
     except Exception:
         api_key_valid = False
-    
+
     client_initialized = _client_initialized
-    
+
     return {
-        'initialized': client_initialized,
-        'client_exists': _firecrawl_client is not None,
-        'api_key_configured': api_key is not None,
-        'api_key_length': len(api_key) if api_key else 0,
-        'health_status': _client_health_status.copy(),
+        "initialized": client_initialized,
+        "client_exists": _firecrawl_client is not None,
+        "api_key_configured": api_key is not None,
+        "api_key_length": len(api_key) if api_key else 0,
+        "health_status": _client_health_status.copy(),
         # Additional fields for test compatibility
-        'api_key_present': api_key_present,
-        'api_key_valid': api_key_valid,
-        'client_initialized': client_initialized
+        "api_key_present": api_key_present,
+        "api_key_valid": api_key_valid,
+        "client_initialized": client_initialized,
     }
 
 
-async def _attempt_async_method(client: FirecrawlApp, method_name: str, *args, **kwargs):
+async def _attempt_async_method(client: Any, method_name: str, *args, **kwargs):
     """Attempt to call an async method on the Firecrawl client.
 
     This is a utility function for handling potential async methods in future
@@ -286,10 +335,10 @@ async def _attempt_async_method(client: FirecrawlApp, method_name: str, *args, *
             return None
 
         # Check if method is async
-        if hasattr(method, '__call__'):
+        if hasattr(method, "__call__"):
             result = method(*args, **kwargs)
             # If it's a coroutine, await it
-            if hasattr(result, '__await__'):
+            if hasattr(result, "__await__"):
                 return await result
             return result
         else:
@@ -319,17 +368,18 @@ def attempt_method(client, method_name: str, *args, **kwargs):
         AttributeError: If method is not found on client
     """
     import asyncio
-    
+
     result = getattr(client, method_name, None)
     if result is None:
         raise AttributeError(f"Method {method_name} not found")
-    
+
     res = result(*args, **kwargs)
-    if hasattr(res, '__await__'):
+    if hasattr(res, "__await__"):
         try:
             loop = asyncio.get_running_loop()
             # If there's a running loop, submit the coroutine to it
             import concurrent.futures
+
             return asyncio.run_coroutine_threadsafe(res, loop).result()
         except RuntimeError:
             # No running loop, use asyncio.run
@@ -338,12 +388,12 @@ def attempt_method(client, method_name: str, *args, **kwargs):
 
 
 __all__ = [
-    'initialize_firecrawl',
-    'get_client',
-    'get_firecrawl_api_key',
-    'validate_api_key',
-    'check_client_health',
-    'reset_client',
-    'get_client_info',
-    'attempt_method'
+    "initialize_firecrawl",
+    "get_client",
+    "get_firecrawl_api_key",
+    "validate_api_key",
+    "check_client_health",
+    "reset_client",
+    "get_client_info",
+    "attempt_method",
 ]

@@ -87,7 +87,7 @@ print(f"Cost: ${usage.estimated_cost:.2f}")
 
 ### API Key Issues
 ```python
-from generate_glossary.mining.client import validate_api_key
+from generate_glossary.mining import validate_api_key
 
 if not validate_api_key():
     print("Set: export FIRECRAWL_API_KEY='fc-your-key'")

@@ -82,7 +82,7 @@ concept = ConceptDefinition(
 ### client.py
 Firecrawl client management:
 ```python
-from generate_glossary.mining.client import get_client, validate_api_key
+from generate_glossary.mining import get_client, validate_api_key
 
 client = get_client()
 is_valid = validate_api_key("fc-your-key")
