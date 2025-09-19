@@ -1,23 +1,17 @@
-"""Lightweight helpers for interacting with the Firecrawl v2.2.0 SDK.
-
-This module keeps Firecrawl access focused on the essentials: creating
-configured clients and exposing simple wrappers around the core SDK
-operations used by the mining pipeline.
-"""
+"""Minimal helpers that wrap Firecrawl SDK calls directly."""
 
 from __future__ import annotations
 
 import logging
-import inspect
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Dict, List
 
 from ..config import FirecrawlConfig
 
 logger = logging.getLogger(__name__)
 
 
-def create_firecrawl_client(config: FirecrawlConfig):
-    """Instantiate a Firecrawl client using the provided configuration."""
+def create_client(config: FirecrawlConfig):
+    """Create a Firecrawl client using the provided configuration."""
 
     try:
         from firecrawl import Firecrawl
@@ -26,316 +20,95 @@ def create_firecrawl_client(config: FirecrawlConfig):
             "Firecrawl SDK is not installed. Install `firecrawl` to use the mining module."
         ) from exc
 
-    client_kwargs: Dict[str, Any] = {"api_key": config.api_key}
+    kwargs = {"api_key": config.api_key}
     if config.base_url:
-        client_kwargs["base_url"] = config.base_url
-
-    client = Firecrawl(**client_kwargs)
-    _apply_client_config(client, config)
-    return client
+        kwargs["base_url"] = config.base_url
+    return Firecrawl(**kwargs)
 
 
-def _apply_client_config(client: Any, config: FirecrawlConfig) -> None:
-    """Apply timeout and retry settings when the SDK exposes helpers."""
-
-    if hasattr(client, "set_request_timeout"):
-        try:
-            client.set_request_timeout(config.timeout)
-        except Exception as exc:  # pragma: no cover - defensive
-            logger.debug("Failed to set request timeout: %s", exc)
-    elif hasattr(client, "timeout"):
-        try:
-            client.timeout = config.timeout
-        except Exception as exc:  # pragma: no cover - defensive
-            logger.debug("Failed to assign timeout attribute: %s", exc)
-
-    if hasattr(client, "set_max_retries"):
-        try:
-            client.set_max_retries(config.max_retries)
-        except Exception as exc:  # pragma: no cover - defensive
-            logger.debug("Failed to set max retries: %s", exc)
-    elif hasattr(client, "max_retries"):
-        try:
-            client.max_retries = config.max_retries
-        except Exception as exc:  # pragma: no cover - defensive
-            logger.debug("Failed to assign max_retries attribute: %s", exc)
-
-
-def search(client: Any, query: str, **kwargs: Any) -> Any:
-    """Perform a raw Firecrawl search without any query shaping."""
-
-    return client.search(query=query, **kwargs)
-
-
-def search_concepts(
-    client: Any,
-    query: str,
-    limit: int = 5,
-    categories: Optional[Iterable[str]] = None,
-    compose_academic_filters: bool = True,
-    **kwargs: Any,
-) -> List[Dict[str, Any]]:
-    """Search Firecrawl for academic concepts, returning an empty list on failure."""
-
-    search_query = (
-        f"{query} (definition OR explanation OR academic)"
-        if compose_academic_filters
-        else query
-    )
-    search_kwargs: Dict[str, Any] = {"query": search_query, "limit": limit}
-    if categories is not None:
-        search_kwargs["categories"] = list(categories)
-    elif compose_academic_filters:
-        search_kwargs["categories"] = ["research", "academic", "education"]
-    search_kwargs.update(kwargs)
+def create_async_client(config: FirecrawlConfig):
+    """Create an AsyncFirecrawl client using the provided configuration."""
 
     try:
-        results = client.search(**search_kwargs)
-        return results or []
-    except TypeError as exc:
-        logger.error(
-            "Search failed for query '%s' due to argument mismatch: %s",
-            search_query,
-            exc,
+        from firecrawl import AsyncFirecrawl
+    except ImportError as exc:  # pragma: no cover - import guard
+        raise RuntimeError(
+            "Firecrawl SDK is not installed. Install `firecrawl` to use the mining module."
+        ) from exc
+
+    kwargs = {"api_key": config.api_key}
+    if config.base_url:
+        kwargs["base_url"] = config.base_url
+    return AsyncFirecrawl(**kwargs)
+
+
+def search_academic_concepts(client, query: str, limit: int = 5) -> List[Dict]:
+    """Run a Firecrawl search with lightweight academic shaping."""
+
+    try:
+        results = client.search(
+            query=f"{query} (definition OR explanation OR academic)",
+            limit=limit,
+            categories=["research", "academic", "education"],
         )
-        fallback_kwargs = {key: search_kwargs[key] for key in ("query", "limit")}
-        try:
-            results = client.search(**fallback_kwargs)
-            return results or []
-        except Exception as fallback_exc:  # pragma: no cover - depends on SDK
-            logger.error(
-                "Fallback search failed for query '%s': %s", search_query, fallback_exc
-            )
-            return []
     except Exception as exc:  # pragma: no cover - depends on SDK
-        logger.error("Search failed for query '%s': %s", search_query, exc)
+        logger.error("Search failed for query '%s': %s", query, exc)
         return []
 
+    if isinstance(results, dict):
+        return results.get("web", []) or []
+    return results or []
 
-def scrape_url(
-    client: Any,
-    url: str,
-    formats: Optional[Iterable[str]] = None,
-    **kwargs: Any,
-) -> Dict[str, Any]:
-    """Scrape a single URL, returning an empty mapping on failure."""
 
-    scrape_kwargs: Dict[str, Any] = {
-        "url": url,
-        "formats": list(formats or ["markdown"]),
-    }
-    scrape_kwargs.update(kwargs)
+def batch_scrape_urls(client, urls: List[str], use_summary: bool = True) -> List[Dict]:
+    """Scrape multiple URLs using Firecrawl's native batch endpoint."""
+
+    formats = ["markdown"]
+    if use_summary:
+        formats.append("summary")
 
     try:
-        result = client.scrape(**scrape_kwargs)
-        return result or {}
+        job = client.batch_scrape(
+            urls=urls,
+            formats=formats,
+            poll_interval=2,
+            timeout=180,
+        )
+    except Exception as exc:  # pragma: no cover - depends on SDK
+        logger.error("Batch scrape failed for %d URLs: %s", len(urls), exc)
+        return []
+
+    data = getattr(job, "data", job)
+    return data or []
+
+
+def scrape_single_url(client, url: str, use_summary: bool = True) -> Dict:
+    """Scrape a single URL through Firecrawl's scrape helper."""
+
+    formats = ["markdown"]
+    if use_summary:
+        formats.append("summary")
+
+    try:
+        result = client.scrape(url=url, formats=formats)
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Scrape failed for URL '%s': %s", url, exc)
         return {}
 
-
-def batch_scrape_urls(
-    client: Any,
-    urls: Iterable[str],
-    formats: Optional[Iterable[str]] = None,
-    **kwargs: Any,
-) -> List[Dict[str, Any]]:
-    """Batch scrape URLs, returning an empty list on failure."""
-
-    batch_kwargs: Dict[str, Any] = {
-        "urls": list(urls),
-        "formats": list(formats or ["markdown"]),
-    }
-    batch_kwargs.update(kwargs)
-
-    try:
-        results = client.batch_scrape(**batch_kwargs)
-        return results or []
-    except Exception as exc:  # pragma: no cover - depends on SDK
-        logger.error(
-            "Batch scrape failed for %d URLs: %s", len(batch_kwargs["urls"]), exc
-        )
-        return []
+    return result or {}
 
 
-def map_website(client: Any, url: str, **kwargs: Any) -> List[str]:
-    """Discover links from a website using Firecrawl's map API."""
-
-    try:
-        result = client.map(url=url, **kwargs)
-    except Exception as exc:  # pragma: no cover - depends on SDK
-        logger.error("Map failed for URL '%s': %s", url, exc)
-        return []
-
-    if isinstance(result, dict):
-        links = result.get("links") or result.get("data")
-        if isinstance(links, list):
-            return links
-        return []
-    if isinstance(result, list):
-        return result
-    return []
-
-
-def get_queue_status(client: Any, *args: Any, **kwargs: Any) -> Dict[str, Any]:
-    """Retrieve queue status if the SDK exposes the helper; otherwise return an empty dict."""
+def get_queue_status(client) -> Dict:
+    """Return queue status when the Firecrawl client exposes it."""
 
     status_callable = getattr(client, "get_queue_status", None)
     if not callable(status_callable):
-        return {}
+        return {"status": "queue_status_not_available"}
 
     try:
-        status = status_callable(*args, **kwargs)
-        return status or {}
+        status = status_callable()
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Queue status check failed: %s", exc)
-        return {}
+        return {"status": "error", "error": str(exc)}
 
-
-class AsyncFirecrawlClient:
-    """Async wrapper that surfaces the same helpers using AsyncFirecrawl."""
-
-    def __init__(self, config: FirecrawlConfig):
-        try:
-            from firecrawl import AsyncFirecrawl
-        except ImportError as exc:  # pragma: no cover - import guard
-            raise RuntimeError(
-                "Firecrawl SDK is not installed. Install `firecrawl` to use the mining module."
-            ) from exc
-
-        client_kwargs: Dict[str, Any] = {"api_key": config.api_key}
-        if config.base_url:
-            client_kwargs["base_url"] = config.base_url
-
-        self.client = AsyncFirecrawl(**client_kwargs)
-        _apply_client_config(self.client, config)
-
-    async def search_concepts(
-        self,
-        query: str,
-        limit: int = 5,
-        categories: Optional[Iterable[str]] = None,
-        compose_academic_filters: bool = True,
-        **kwargs: Any,
-    ) -> List[Dict[str, Any]]:
-        search_query = (
-            f"{query} (definition OR explanation OR academic)"
-            if compose_academic_filters
-            else query
-        )
-
-        search_kwargs: Dict[str, Any] = {"query": search_query, "limit": limit}
-        if categories is not None:
-            search_kwargs["categories"] = list(categories)
-        elif compose_academic_filters:
-            search_kwargs["categories"] = ["research", "academic", "education"]
-        search_kwargs.update(kwargs)
-
-        try:
-            results = await self.client.search(**search_kwargs)
-            return results or []
-        except TypeError as exc:
-            logger.error(
-                "Async search failed for query '%s' due to argument mismatch: %s",
-                search_query,
-                exc,
-            )
-            fallback_kwargs = {key: search_kwargs[key] for key in ("query", "limit")}
-            try:
-                results = await self.client.search(**fallback_kwargs)
-                return results or []
-            except Exception as fallback_exc:  # pragma: no cover - depends on SDK
-                logger.error(
-                    "Async fallback search failed for query '%s': %s",
-                    search_query,
-                    fallback_exc,
-                )
-                return []
-        except Exception as exc:  # pragma: no cover - depends on SDK
-            logger.error("Async search failed for query '%s': %s", search_query, exc)
-            return []
-
-    async def scrape_url(
-        self,
-        url: str,
-        formats: Optional[Iterable[str]] = None,
-        **kwargs: Any,
-    ) -> Dict[str, Any]:
-        scrape_kwargs: Dict[str, Any] = {
-            "url": url,
-            "formats": list(formats or ["markdown"]),
-        }
-        scrape_kwargs.update(kwargs)
-
-        try:
-            result = await self.client.scrape(**scrape_kwargs)
-            return result or {}
-        except Exception as exc:  # pragma: no cover - depends on SDK
-            logger.error("Async scrape failed for URL '%s': %s", url, exc)
-            return {}
-
-    async def batch_scrape_urls(
-        self,
-        urls: Iterable[str],
-        formats: Optional[Iterable[str]] = None,
-        **kwargs: Any,
-    ) -> List[Dict[str, Any]]:
-        batch_kwargs: Dict[str, Any] = {
-            "urls": list(urls),
-            "formats": list(formats or ["markdown"]),
-        }
-        batch_kwargs.update(kwargs)
-
-        try:
-            results = await self.client.batch_scrape(**batch_kwargs)
-            return results or []
-        except Exception as exc:  # pragma: no cover - depends on SDK
-            logger.error(
-                "Async batch scrape failed for %d URLs: %s",
-                len(batch_kwargs["urls"]),
-                exc,
-            )
-            return []
-
-    async def map_website(self, url: str, **kwargs: Any) -> List[str]:
-        try:
-            result = await self.client.map(url=url, **kwargs)
-        except Exception as exc:  # pragma: no cover - depends on SDK
-            logger.error("Async map failed for URL '%s': %s", url, exc)
-            return []
-
-        if isinstance(result, dict):
-            links = result.get("links") or result.get("data")
-            if isinstance(links, list):
-                return links
-            return []
-        if isinstance(result, list):
-            return result
-        return []
-
-    async def get_queue_status(self, *args: Any, **kwargs: Any) -> Dict[str, Any]:
-        status_callable = getattr(self.client, "get_queue_status", None)
-        if not callable(status_callable):
-            return {}
-        try:
-            result = status_callable(*args, **kwargs)
-            if inspect.isawaitable(result):
-                result = await result
-            return result or {}
-        except Exception as exc:  # pragma: no cover - depends on SDK
-            logger.error("Async queue status check failed: %s", exc)
-            return {}
-
-    async def close(self) -> None:
-        """Close the underlying async client when supported."""
-
-        close_callable = getattr(self.client, "close", None)
-        if not callable(close_callable):
-            return
-
-        try:
-            result = close_callable()
-            if inspect.isawaitable(result):
-                await result
-        except Exception as exc:  # pragma: no cover - depends on SDK
-            logger.debug("Async Firecrawl client close failed: %s", exc)
+    return status or {}

@@ -340,7 +340,7 @@ def get_firecrawl_client(
     from disk.
     """
 
-    from .core.firecrawl_client import create_firecrawl_client
+    from .core.firecrawl_client import create_client
 
     try:
         if config is None:
@@ -353,11 +353,11 @@ def get_firecrawl_client(
                 if not force_refresh and _CACHED_FIRECRAWL_CLIENT is not None:
                     return _CACHED_FIRECRAWL_CLIENT
 
-                client = create_firecrawl_client(resolved_config)
+                client = create_client(resolved_config)
                 _CACHED_FIRECRAWL_CLIENT = client
                 return client
 
-        return create_firecrawl_client(config)
+        return create_client(config)
     except RuntimeError as exc:  # pragma: no cover - defensive
         raise ConfigError(str(exc)) from exc
 
