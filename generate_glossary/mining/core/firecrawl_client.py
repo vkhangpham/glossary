@@ -52,7 +52,7 @@ def search_academic_concepts(
     query: str,
     limit: int = 5,
     scrape_options: dict[str, Any] | None = None,
-) -> Any:
+) -> dict[str, Any] | None:
     """Run a Firecrawl search; callers should shape the query upstream."""
 
     options = scrape_options or {"formats": ["markdown"]}
@@ -65,10 +65,16 @@ def search_academic_concepts(
         )
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Search failed for query '%s': %s", query, exc)
-        return []
+        return None
 
 
-def batch_scrape_urls(client, urls: List[str], use_summary: bool = True) -> List[Dict]:
+def batch_scrape_urls(
+    client,
+    urls: List[str],
+    use_summary: bool = True,
+    poll_interval: int = 2,
+    wait_timeout: int = 180,
+) -> List[Dict]:
     """Return the list emitted by Firecrawl's ``batch_scrape`` for ``urls``."""
 
     formats = ["markdown"]
@@ -79,8 +85,8 @@ def batch_scrape_urls(client, urls: List[str], use_summary: bool = True) -> List
         results = client.batch_scrape(
             urls=urls,
             formats=formats,
-            poll_interval=2,
-            timeout=180,
+            poll_interval=poll_interval,
+            wait_timeout=wait_timeout,
         )
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Batch scrape failed for %d URLs: %s", len(urls), exc)
