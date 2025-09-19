@@ -36,7 +36,7 @@ class FirecrawlConfig:
 @dataclass
 class MiningConfig:
     batch_size: int = 25
-    max_concurrent_operations: int = 5
+    max_concurrent_operations: int = 5  # Planned concurrency limit; not yet enforced
     max_urls_per_concept: int = 3
     request_timeout: int = 30
     retry_attempts: int = 3
@@ -208,6 +208,13 @@ def override_with_cli_args(
     batch_size = _maybe_get("batch_size")
     if batch_size is not None:
         config.mining.batch_size = int(batch_size)
+
+    max_concurrent = _maybe_get("max_concurrent")
+    if max_concurrent is not None:
+        value = int(max_concurrent)
+        if value <= 0:
+            raise ConfigError("max_concurrent must be positive")
+        config.mining.max_concurrent_operations = value
 
     max_urls_per_concept = _maybe_get("max_urls")
     if max_urls_per_concept is not None:

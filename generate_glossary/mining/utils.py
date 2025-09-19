@@ -276,7 +276,9 @@ def save_mining_results(
     resolved_path = generate_output_filename(output_path, config.format)
     path = Path(resolved_path)
 
-    processed_results = _apply_source_policy(results, config.include_source_urls)
+    processed_results = _apply_source_policy(
+        results, config.include_source_urls, config.save_metadata
+    )
 
     if config.format == "json":
         payload = {
@@ -309,24 +311,30 @@ def save_mining_results(
 def _apply_source_policy(
     results: Sequence[Dict[str, Any]],
     include_source_urls: bool,
+    save_metadata: bool,
 ) -> List[Dict[str, Any]]:
-    if include_source_urls:
+    if include_source_urls and save_metadata:
         return [dict(entry) for entry in results]
 
     sanitized: List[Dict[str, Any]] = []
     for entry in results:
         redacted = dict(entry)
-        for key in ("url", "source_url", "sourceUrl", "sourceURL"):
-            redacted.pop(key, None)
 
-        metadata = redacted.get("metadata")
-        if isinstance(metadata, dict):
-            filtered_metadata = {
-                key: value
-                for key, value in metadata.items()
-                if not _metadata_contains_url(key, value)
-            }
-            redacted["metadata"] = filtered_metadata
+        if not include_source_urls:
+            for key in ("url", "source_url", "sourceUrl", "sourceURL"):
+                redacted.pop(key, None)
+
+            metadata = redacted.get("metadata")
+            if isinstance(metadata, dict):
+                filtered_metadata = {
+                    key: value
+                    for key, value in metadata.items()
+                    if not _metadata_contains_url(key, value)
+                }
+                redacted["metadata"] = filtered_metadata
+
+        if not save_metadata:
+            redacted.pop("metadata", None)
 
         sanitized.append(redacted)
     return sanitized
@@ -456,7 +464,11 @@ def score_academic_relevance(content: str, concept: str) -> float:
 
 
 def prepare_firecrawl_params(
-    config: MiningConfig, *, use_snake_case: bool = False, **kwargs: Any
+    config: MiningConfig,
+    *,
+    use_snake_case: bool = False,
+    allowed_keys: Optional[Sequence[str]] = None,
+    **kwargs: Any,
 ) -> Dict[str, Any]:
     params: Dict[str, Any] = {
         "maxAge": config.max_age,
@@ -470,9 +482,10 @@ def prepare_firecrawl_params(
     params.update(kwargs)
 
     if not use_snake_case:
-        return params
+        return _filter_params_by_allowed_keys(params, allowed_keys)
 
-    return _convert_keys_to_snake(params)
+    converted = _convert_keys_to_snake(params)
+    return _filter_params_by_allowed_keys(converted, allowed_keys)
 
 
 def _convert_keys_to_snake(payload: Any) -> Any:
@@ -491,6 +504,40 @@ def _to_snake(name: str) -> str:
         return name
     snake = re.sub(r"(?<!^)(?=[A-Z])", "_", name).lower()
     return snake
+
+
+def _to_camel(name: str) -> str:
+    if not name:
+        return name
+    parts = name.split("_")
+    if len(parts) == 1:
+        return name
+    first, *rest = parts
+    return first + "".join(segment.title() for segment in rest)
+
+
+def _filter_params_by_allowed_keys(
+    params: Dict[str, Any], allowed_keys: Optional[Sequence[str]]
+) -> Dict[str, Any]:
+    if not allowed_keys:
+        return params
+
+    allowed_set = set(allowed_keys)
+    # Always allow formats/webhook because they drive output configuration.
+    allowed_set.update({"formats", "webhook"})
+
+    variants: Dict[str, set[str]] = {}
+    for key in allowed_set:
+        key_variants = {key, _to_snake(key), _to_camel(key)}
+        variants[key] = key_variants
+
+    def _is_allowed(candidate: str) -> bool:
+        for values in variants.values():
+            if candidate in values:
+                return True
+        return False
+
+    return {key: value for key, value in params.items() if _is_allowed(key)}
 
 
 def prioritize_urls_by_domain(
