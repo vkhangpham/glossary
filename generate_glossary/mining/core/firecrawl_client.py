@@ -52,17 +52,25 @@ def search_academic_concepts(
     query: str,
     limit: int = 5,
     scrape_options: dict[str, Any] | None = None,
+    categories: List[str] | None = None,
+    sources: List[str] | None = None,
 ) -> dict[str, Any] | None:
-    """Run a Firecrawl search; callers should shape the query upstream."""
+    """Run a Firecrawl search with optional category and source filters."""
 
     options = scrape_options or {"formats": ["markdown"]}
 
+    search_kwargs = {
+        "query": query,
+        "limit": limit,
+        "scrape_options": options,
+    }
+    if categories:
+        search_kwargs["categories"] = categories
+    if sources:
+        search_kwargs["sources"] = sources
+
     try:
-        return client.search(
-            query=query,
-            limit=limit,
-            scrape_options=options,
-        )
+        return client.search(**search_kwargs)
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Search failed for query '%s': %s", query, exc)
         return None
@@ -74,15 +82,18 @@ def batch_scrape_urls(
     use_summary: bool = True,
     poll_interval: int = 2,
     wait_timeout: int = 180,
-) -> List[Dict]:
-    """Return the list emitted by Firecrawl's ``batch_scrape`` for ``urls``."""
+) -> List[Dict[str, Any]]:
+    """Return batch scrape results as a list of Firecrawl result dictionaries."""
+
+    if not urls:
+        return []
 
     formats = ["markdown"]
     if use_summary:
         formats.append("summary")
 
     try:
-        results = client.batch_scrape(
+        job = client.batch_scrape(
             urls=urls,
             formats=formats,
             poll_interval=poll_interval,
@@ -91,7 +102,12 @@ def batch_scrape_urls(
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Batch scrape failed for %d URLs: %s", len(urls), exc)
         return []
-    return results or []
+
+    if hasattr(job, "data"):
+        return job.data or []
+    if isinstance(job, dict) and "data" in job:
+        return job.get("data") or []
+    return job if isinstance(job, list) else []
 
 
 def scrape_single_url(client, url: str, use_summary: bool = True) -> Dict:
