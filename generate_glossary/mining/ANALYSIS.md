@@ -100,7 +100,6 @@ mining/
 
 ## Dependencies
 
-- **External Libraries**: `firecrawl` (requires v2.2.0 feature set), `pydantic` (models), `requests` (HTTP fallbacks and direct endpoint calls)
-- **Internal Modules**: `generate_glossary.mining.core_mining`, `generate_glossary.mining.models`, `generate_glossary.mining.client`, `generate_glossary.utils.failure_tracker`
+- **External Libraries**: `firecrawl` (Python SDK; uses the `FirecrawlApp` client), `pydantic` v2 (models), `requests` (HTTP fallbacks and direct endpoint calls), `httpx` (async HTTP error handling), `tenacity` (retry policies), `python-dotenv` (optional environment loading)
+- **Internal Modules**: `generate_glossary.mining.core_mining`, `generate_glossary.mining.models`, `generate_glossary.mining.client`, `generate_glossary.utils.failure_tracker`, `generate_glossary.config.get_mining_config`, `generate_glossary.utils.logger`, `generate_glossary.utils.error_handler`, `generate_glossary.llm.helpers.run_async_safely`
 - **Environment Variables**: `FIRECRAWL_API_KEY` (mandatory for SDK initialization and direct API calls)
-
