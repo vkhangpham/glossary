@@ -1,0 +1,29 @@
+firecrawl:
+  api_key: ${FIRECRAWL_API_KEY}
+  timeout: 30
+  max_retries: 3
+  base_url: "https://api.firecrawl.dev"
+
+mining:
+  batch_size: 25
+  max_concurrent_operations: 5
+  max_urls_per_concept: 3
+  request_timeout: 30
+  retry_attempts: 3
+  retry_delay: 1.0
+  max_age: 172800000
+  use_summary: true
+  use_batch_scrape: true
+  max_pages: 10
+  search_categories: ["research", "academic", "education"]
+  academic_domains: ["edu", "org", "gov"]
+
+output:
+  format: "json"
+  save_metadata: true
+  include_source_urls: true
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null
