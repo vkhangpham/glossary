@@ -36,7 +36,7 @@ class FirecrawlConfig:
 @dataclass
 class MiningConfig:
     batch_size: int = 25
-    max_concurrent_operations: int = 5  # Planned concurrency limit; not yet enforced
+    max_concurrent_operations: int = 5  # Controls parallel scrapes when batch mode is disabled
     max_urls_per_concept: int = 3
     request_timeout: int = 30
     retry_attempts: int = 3
