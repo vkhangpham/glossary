@@ -4,6 +4,7 @@ The functions in this module avoid tight coupling with the rest of the system
 and focus on data transformation, validation, and convenience helpers for the
 mining workflow.
 """
+
 from __future__ import annotations
 
 import csv
@@ -32,7 +33,6 @@ class MetricEntry(TypedDict):
     duration_sum: float
 
 
-
 def _metrics_factory() -> MetricEntry:
     return {"success": 0, "failure": 0, "duration_sum": 0.0}
 
@@ -57,6 +57,7 @@ ACADEMIC_KEYWORDS = {
 # ---------------------------------------------------------------------------
 # URL utilities
 # ---------------------------------------------------------------------------
+
 
 def validate_url(url: str) -> bool:
     parsed = urlparse(url.strip())
@@ -92,9 +93,15 @@ def extract_domain_info(url: str) -> Dict[str, str]:
 def is_academic_domain(url: str) -> bool:
     info = extract_domain_info(url)
     academic_suffixes = {"edu", "ac", "org", "gov"}
-    if any(info["hostname"].endswith(f".{suffix}") or info["tld"] == suffix for suffix in academic_suffixes):
+    if any(
+        info["hostname"].endswith(f".{suffix}") or info["tld"] == suffix
+        for suffix in academic_suffixes
+    ):
         return True
-    return any(segment in info["hostname"] for segment in ("university", "college", "institute"))
+    return any(
+        segment in info["hostname"]
+        for segment in ("university", "college", "institute")
+    )
 
 
 def filter_academic_urls(urls: Sequence[str]) -> List[str]:
@@ -111,7 +118,10 @@ def filter_academic_urls(urls: Sequence[str]) -> List[str]:
 # Result processing and formatting
 # ---------------------------------------------------------------------------
 
-def format_concept_results(results: Iterable[Dict[str, Any]]) -> List[ConceptDefinition]:
+
+def format_concept_results(
+    results: Iterable[Dict[str, Any]],
+) -> List[ConceptDefinition]:
     formatted: List[ConceptDefinition] = []
     for result in results:
         concept = result.get("concept") or result.get("term") or "unknown"
@@ -146,7 +156,9 @@ def aggregate_mining_results(results: Sequence[Dict[str, Any]]) -> Dict[str, Any
         "results": formatted,
         "statistics": {
             "total_results": len(formatted),
-            "unique_urls": len({item.get("url") for item in formatted if item.get("url")}),
+            "unique_urls": len(
+                {item.get("url") for item in formatted if item.get("url")}
+            ),
             "avg_quality_score": round(sum(scores) / len(scores), 4) if scores else 0.0,
         },
     }
@@ -177,7 +189,9 @@ def calculate_result_quality_score(result: Dict[str, Any]) -> float:
     length_bonus = min(len(content) / 1000.0, 1.0)
     quality += length_bonus * 0.4
 
-    keyword_matches = sum(1 for keyword in ACADEMIC_KEYWORDS if keyword in content.lower())
+    keyword_matches = sum(
+        1 for keyword in ACADEMIC_KEYWORDS if keyword in content.lower()
+    )
     quality += min(keyword_matches / 5.0, 1.0) * 0.4
 
     if result.get("url") and is_academic_domain(result["url"]):
@@ -190,14 +204,9 @@ def calculate_result_quality_score(result: Dict[str, Any]) -> float:
 # Error handling and logging
 # ---------------------------------------------------------------------------
 
+
 def setup_mining_logger(config: Dict[str, Any]) -> logging.Logger:
-    level_str = config.get("level", "INFO")
-    level = getattr(logging, level_str.upper(), logging.INFO)
-    logging.basicConfig(level=level, format=config.get("format"))
-    if config.get("file"):
-        handler = logging.FileHandler(config["file"])
-        handler.setFormatter(logging.Formatter(config.get("format")))
-        logging.getLogger().addHandler(handler)
+    # Logging configuration is managed centrally via ``configure_logging``.
     return logging.getLogger("generate_glossary.mining")
 
 
@@ -206,11 +215,15 @@ def log_mining_operation(operation: str, details: Dict[str, Any]) -> None:
 
 
 def handle_firecrawl_error(error: Exception, context: Dict[str, Any]) -> Dict[str, Any]:
-    logger.error("Firecrawl error during %s: %s", context.get("operation", "unknown"), error)
+    logger.error(
+        "Firecrawl error during %s: %s", context.get("operation", "unknown"), error
+    )
     return create_error_report(error, context.get("operation", "unknown"), context)
 
 
-def create_error_report(error: Exception, operation: str, context: Dict[str, Any]) -> Dict[str, Any]:
+def create_error_report(
+    error: Exception, operation: str, context: Dict[str, Any]
+) -> Dict[str, Any]:
     return {
         "operation": operation,
         "error_type": error.__class__.__name__,
@@ -223,6 +236,7 @@ def create_error_report(error: Exception, operation: str, context: Dict[str, Any
 # ---------------------------------------------------------------------------
 # File / data management
 # ---------------------------------------------------------------------------
+
 
 def load_terms_from_file(file_path: str) -> List[str]:
     path = Path(file_path)
@@ -255,10 +269,14 @@ def generate_output_filename(base_path: str, format: str) -> str:
     return str(base)
 
 
-def save_mining_results(results: Sequence[Dict[str, Any]], output_path: str, config: OutputConfig) -> str:
+def save_mining_results(
+    results: Sequence[Dict[str, Any]], output_path: str, config: OutputConfig
+) -> str:
     create_output_directory(output_path)
     resolved_path = generate_output_filename(output_path, config.format)
     path = Path(resolved_path)
+
+    processed_results = _apply_source_policy(results, config.include_source_urls)
 
     if config.format == "json":
         payload = {
@@ -267,19 +285,19 @@ def save_mining_results(results: Sequence[Dict[str, Any]], output_path: str, con
                 "include_source_urls": config.include_source_urls,
                 "save_metadata": config.save_metadata,
             },
-            "results": list(results),
+            "results": processed_results,
         }
         path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
     elif config.format == "jsonl":
         with path.open("w", encoding="utf-8") as handle:
-            for entry in results:
+            for entry in processed_results:
                 handle.write(json.dumps(entry, sort_keys=True) + "\n")
     elif config.format == "csv":
-        keys = sorted({key for item in results for key in item.keys()})
+        keys = sorted({key for item in processed_results for key in item.keys()})
         with path.open("w", encoding="utf-8", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=keys)
             writer.writeheader()
-            for entry in results:
+            for entry in processed_results:
                 writer.writerow(entry)
     else:
         raise ValueError(f"Unsupported output format: {config.format}")
@@ -288,9 +306,45 @@ def save_mining_results(results: Sequence[Dict[str, Any]], output_path: str, con
     return str(path)
 
 
+def _apply_source_policy(
+    results: Sequence[Dict[str, Any]],
+    include_source_urls: bool,
+) -> List[Dict[str, Any]]:
+    if include_source_urls:
+        return [dict(entry) for entry in results]
+
+    sanitized: List[Dict[str, Any]] = []
+    for entry in results:
+        redacted = dict(entry)
+        for key in ("url", "source_url", "sourceUrl", "sourceURL"):
+            redacted.pop(key, None)
+
+        metadata = redacted.get("metadata")
+        if isinstance(metadata, dict):
+            filtered_metadata = {
+                key: value
+                for key, value in metadata.items()
+                if not _metadata_contains_url(key, value)
+            }
+            redacted["metadata"] = filtered_metadata
+
+        sanitized.append(redacted)
+    return sanitized
+
+
+def _metadata_contains_url(key: str, value: Any) -> bool:
+    key_lower = key.lower()
+    if "url" in key_lower or "link" in key_lower:
+        return True
+    if isinstance(value, str) and value.startswith(("http://", "https://")):
+        return True
+    return False
+
+
 # ---------------------------------------------------------------------------
 # Performance and monitoring utilities
 # ---------------------------------------------------------------------------
+
 
 def track_mining_metrics(operation: str, duration: float, success: bool) -> None:
     entry = MINING_METRICS[operation]
@@ -311,7 +365,11 @@ def calculate_processing_stats(results: Sequence[Dict[str, Any]]) -> Dict[str, A
         }
 
     scores = [calculate_result_quality_score(result) for result in results]
-    domain_counts = Counter(extract_domain_info(result.get("url", ""))['domain'] for result in results if result.get("url"))
+    domain_counts = Counter(
+        extract_domain_info(result.get("url", ""))["domain"]
+        for result in results
+        if result.get("url")
+    )
     return {
         "count": len(results),
         "avg_score": round(statistics.mean(scores), 4) if scores else 0.0,
@@ -333,7 +391,9 @@ def format_progress_message(completed: int, total: int, elapsed: float) -> str:
     if math.isinf(remaining_seconds):
         remaining_text = "unknown"
     else:
-        remaining_text = time.strftime("%H:%M:%S", time.gmtime(max(remaining_seconds, 0)))
+        remaining_text = time.strftime(
+            "%H:%M:%S", time.gmtime(max(remaining_seconds, 0))
+        )
     return f"Processed {completed}/{total} concepts in {elapsed:.1f}s (ETA {remaining_text})"
 
 
@@ -341,10 +401,13 @@ def format_progress_message(completed: int, total: int, elapsed: float) -> str:
 # Academic content processing
 # ---------------------------------------------------------------------------
 
+
 def extract_academic_keywords(text: str) -> List[str]:
     words = re.findall(r"[A-Za-z]{4,}", text.lower())
     counter = Counter(words)
-    keywords = [word for word, _ in counter.most_common(25) if word in ACADEMIC_KEYWORDS]
+    keywords = [
+        word for word, _ in counter.most_common(25) if word in ACADEMIC_KEYWORDS
+    ]
     return keywords
 
 
@@ -362,7 +425,9 @@ def classify_content_type(content: str) -> str:
 
 
 def extract_citation_info(content: str) -> Dict[str, Optional[str]]:
-    doi_match = re.search(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", content, flags=re.IGNORECASE)
+    doi_match = re.search(
+        r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", content, flags=re.IGNORECASE
+    )
     year_match = re.search(r"(19|20)\d{2}", content)
     return {
         "doi": doi_match.group(0) if doi_match else None,
@@ -389,7 +454,10 @@ def score_academic_relevance(content: str, concept: str) -> float:
 # Firecrawl helpers
 # ---------------------------------------------------------------------------
 
-def prepare_firecrawl_params(config: MiningConfig, **kwargs: Any) -> Dict[str, Any]:
+
+def prepare_firecrawl_params(
+    config: MiningConfig, *, use_snake_case: bool = False, **kwargs: Any
+) -> Dict[str, Any]:
     params: Dict[str, Any] = {
         "maxAge": config.max_age,
         "maxPages": config.max_pages,
@@ -400,7 +468,62 @@ def prepare_firecrawl_params(config: MiningConfig, **kwargs: Any) -> Dict[str, A
         },
     }
     params.update(kwargs)
-    return params
+
+    if not use_snake_case:
+        return params
+
+    return _convert_keys_to_snake(params)
+
+
+def _convert_keys_to_snake(payload: Any) -> Any:
+    if isinstance(payload, dict):
+        converted: Dict[str, Any] = {}
+        for key, value in payload.items():
+            converted[_to_snake(key)] = _convert_keys_to_snake(value)
+        return converted
+    if isinstance(payload, list):
+        return [_convert_keys_to_snake(item) for item in payload]
+    return payload
+
+
+def _to_snake(name: str) -> str:
+    if not name:
+        return name
+    snake = re.sub(r"(?<!^)(?=[A-Z])", "_", name).lower()
+    return snake
+
+
+def prioritize_urls_by_domain(
+    urls: Sequence[str], preferred_domains: Sequence[str]
+) -> List[str]:
+    if not urls:
+        return []
+    if not preferred_domains:
+        return list(dict.fromkeys(urls))
+
+    preferred = [domain.lower() for domain in preferred_domains if domain]
+
+    def sort_key(item: tuple[int, str]) -> tuple[int, int]:
+        index, url = item
+        info = extract_domain_info(url)
+        hostname = info["hostname"]
+        tld = info["tld"]
+        for rank, domain in enumerate(preferred):
+            if hostname.endswith(f".{domain}") or hostname == domain:
+                return rank, index
+            if info["domain"] == domain or tld == domain:
+                return rank, index
+        return len(preferred), index
+
+    ordered = sorted(enumerate(urls), key=sort_key)
+
+    result: List[str] = []
+    seen: set[str] = set()
+    for _, url in ordered:
+        if url not in seen:
+            seen.add(url)
+            result.append(url)
+    return result
 
 
 def handle_batch_scrape_response(response: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -435,11 +558,12 @@ def monitor_queue_status(firecrawl_client: Any, job_id: str) -> Dict[str, Any]:
     raise RuntimeError("Firecrawl client does not support queue monitoring")
 
 
-def setup_webhook_config(webhook_url: Optional[str], events: Optional[Sequence[str]] = None) -> Optional[Dict[str, Any]]:
+def setup_webhook_config(
+    webhook_url: Optional[str], events: Optional[Sequence[str]] = None
+) -> Optional[Dict[str, Any]]:
     if not webhook_url:
         return None
     return {
         "url": webhook_url,
         "events": list(events or ["completed", "failed"]),
     }
-

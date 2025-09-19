@@ -1,4 +1,5 @@
 firecrawl:
+  # Supports environment placeholders like ${FIRECRAWL_API_KEY}
   api_key: ${FIRECRAWL_API_KEY}
   timeout: 30
   max_retries: 3
@@ -16,11 +17,13 @@ mining:
   use_batch_scrape: true
   max_pages: 10
   search_categories: ["research", "academic", "education"]
+  # Preferred domains are ranked first when selecting URLs
   academic_domains: ["edu", "org", "gov"]
 
 output:
   format: "json"
   save_metadata: true
+  # When false, URLs and source-like metadata fields are removed from output
   include_source_urls: true
 
 logging:

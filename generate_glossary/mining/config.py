@@ -2,11 +2,13 @@
 
 This module keeps configuration handling lightweight and explicit.
 """
+
 from __future__ import annotations
 
 import argparse
 import logging
 import os
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -16,6 +18,7 @@ import yaml
 
 CONFIG_FILE_NAME = "config.yml"
 DEFAULT_CONFIG_PATH = Path(__file__).with_name(CONFIG_FILE_NAME)
+_ENV_PLACEHOLDER = re.compile(r"^\$\{([A-Za-z_][A-Za-z0-9_]*)\}$")
 
 
 class ConfigError(RuntimeError):
@@ -83,12 +86,40 @@ def _load_yaml_config(config_path: Path) -> Dict[str, Any]:
     return data
 
 
+def _sub_env(val: Optional[str]) -> Optional[str]:
+    """Substitute environment placeholder values of the form ``${VAR}``."""
+
+    if val is None:
+        return None
+    stripped = str(val).strip()
+    match = _ENV_PLACEHOLDER.match(stripped)
+    if not match:
+        return stripped
+
+    env_name = match.group(1)
+    resolved = os.environ.get(env_name)
+    if resolved is None:
+        return None
+    return resolved.strip() or None
+
+
 def _resolve_api_key(value: Optional[str]) -> str:
-    if os.environ.get("FIRECRAWL_API_KEY"):
-        return os.environ["FIRECRAWL_API_KEY"].strip()
-    if value:
-        return str(value).strip()
-    raise ConfigError("Firecrawl API key must be set via config or FIRECRAWL_API_KEY env var")
+    substituted = _sub_env(value)
+
+    env_override = os.environ.get("FIRECRAWL_API_KEY")
+    resolved = (env_override or substituted or "").strip()
+
+    if "${" in resolved:
+        raise ConfigError(
+            "Firecrawl API key contains an unresolved placeholder after substitution; check config.yml and environment variables."
+        )
+
+    if not resolved:
+        raise ConfigError(
+            "Firecrawl API key must be provided via config.yml or the FIRECRAWL_API_KEY environment variable."
+        )
+
+    return resolved
 
 
 def _prepare_logging_config(raw_logging: Optional[Dict[str, Any]]) -> Dict[str, Any]:
@@ -105,7 +136,7 @@ def _prepare_logging_config(raw_logging: Optional[Dict[str, Any]]) -> Dict[str, 
 
 
 def load_config(config_path: Optional[str] = None) -> MiningModuleConfig:
-    """Load configuration from YAML file and environment variables."""
+    """Load configuration from YAML file, applying environment overrides and placeholders."""
 
     path = Path(config_path) if config_path else DEFAULT_CONFIG_PATH
     raw_config = _load_yaml_config(path)
@@ -114,13 +145,17 @@ def load_config(config_path: Optional[str] = None) -> MiningModuleConfig:
         api_key=_resolve_api_key(raw_config.get("firecrawl", {}).get("api_key")),
         timeout=int(raw_config.get("firecrawl", {}).get("timeout", 30)),
         max_retries=int(raw_config.get("firecrawl", {}).get("max_retries", 3)),
-        base_url=str(raw_config.get("firecrawl", {}).get("base_url", "https://api.firecrawl.dev")),
+        base_url=str(
+            raw_config.get("firecrawl", {}).get("base_url", "https://api.firecrawl.dev")
+        ),
     )
 
     mining_section = raw_config.get("mining", {})
     mining_config = MiningConfig(
         batch_size=int(mining_section.get("batch_size", 25)),
-        max_concurrent_operations=int(mining_section.get("max_concurrent_operations", 5)),
+        max_concurrent_operations=int(
+            mining_section.get("max_concurrent_operations", 5)
+        ),
         max_urls_per_concept=int(mining_section.get("max_urls_per_concept", 3)),
         request_timeout=int(mining_section.get("request_timeout", 30)),
         retry_attempts=int(mining_section.get("retry_attempts", 3)),
@@ -129,12 +164,18 @@ def load_config(config_path: Optional[str] = None) -> MiningModuleConfig:
         use_summary=bool(mining_section.get("use_summary", True)),
         use_batch_scrape=bool(mining_section.get("use_batch_scrape", True)),
         max_pages=int(mining_section.get("max_pages", 10)),
-        search_categories=list(mining_section.get(
-            "search_categories", ["research", "academic", "education"],
-        )),
-        academic_domains=list(mining_section.get(
-            "academic_domains", ["edu", "org", "gov"],
-        )),
+        search_categories=list(
+            mining_section.get(
+                "search_categories",
+                ["research", "academic", "education"],
+            )
+        ),
+        academic_domains=list(
+            mining_section.get(
+                "academic_domains",
+                ["edu", "org", "gov"],
+            )
+        ),
     )
 
     output_section = raw_config.get("output", {})
@@ -148,7 +189,7 @@ def load_config(config_path: Optional[str] = None) -> MiningModuleConfig:
 
     config = MiningModuleConfig(
         firecrawl=firecrawl_config,
-        mining= mining_config,
+        mining=mining_config,
         output=output_config,
         logging=logging_config,
     )
@@ -156,7 +197,9 @@ def load_config(config_path: Optional[str] = None) -> MiningModuleConfig:
     return config
 
 
-def override_with_cli_args(config: MiningModuleConfig, args: argparse.Namespace) -> MiningModuleConfig:
+def override_with_cli_args(
+    config: MiningModuleConfig, args: argparse.Namespace
+) -> MiningModuleConfig:
     """Override configuration values with CLI arguments."""
 
     def _maybe_get(name: str) -> Any:
@@ -205,14 +248,18 @@ def override_with_cli_args(config: MiningModuleConfig, args: argparse.Namespace)
     search_categories = _maybe_get("search_categories")
     if search_categories:
         if isinstance(search_categories, str):
-            config.mining.search_categories = [item.strip() for item in search_categories.split(",") if item.strip()]
+            config.mining.search_categories = [
+                item.strip() for item in search_categories.split(",") if item.strip()
+            ]
         else:
             config.mining.search_categories = list(search_categories)
 
     academic_domains = _maybe_get("academic_domains")
     if academic_domains:
         if isinstance(academic_domains, str):
-            config.mining.academic_domains = [item.strip() for item in academic_domains.split(",") if item.strip()]
+            config.mining.academic_domains = [
+                item.strip() for item in academic_domains.split(",") if item.strip()
+            ]
         else:
             config.mining.academic_domains = list(academic_domains)
 
@@ -286,16 +333,56 @@ def get_firecrawl_client(config: FirecrawlConfig):
 
 
 def configure_logging(logging_config: Dict[str, Any]) -> None:
-    """Configure logging for the mining module."""
+    """Configure logging for the mining module in an idempotent manner."""
 
-    level = logging_config.get("level", "INFO")
-    fmt = logging_config.get("format", "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    level_name = str(logging_config.get("level", "INFO")).upper()
+    level = getattr(logging, level_name, logging.INFO)
+    fmt = logging_config.get(
+        "format", "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
     file_path = logging_config.get("file")
 
-    logging.basicConfig(level=getattr(logging, str(level).upper(), logging.INFO), format=fmt)
+    root_logger = logging.getLogger()
+    root_logger.setLevel(level)
+
+    formatter = logging.Formatter(fmt)
+
+    # Ensure a single stream handler managed by this module.
+    mining_stream_handler = next(
+        (
+            handler
+            for handler in root_logger.handlers
+            if getattr(handler, "_mining_stream", False)
+        ),
+        None,
+    )
+    if mining_stream_handler is None:
+        stream_handler = logging.StreamHandler()
+        stream_handler.setFormatter(formatter)
+        stream_handler.setLevel(level)
+        stream_handler._mining_stream = True  # type: ignore[attr-defined]
+        root_logger.addHandler(stream_handler)
+    else:
+        mining_stream_handler.setFormatter(formatter)
+        mining_stream_handler.setLevel(level)
 
     if file_path:
-        file_handler = logging.FileHandler(file_path)
-        file_handler.setFormatter(logging.Formatter(fmt))
-        logging.getLogger().addHandler(file_handler)
-
+        normalized_path = str(Path(file_path).resolve())
+        existing_file_handler = next(
+            (
+                handler
+                for handler in root_logger.handlers
+                if isinstance(handler, logging.FileHandler)
+                and getattr(handler, "_mining_path", None) == normalized_path
+            ),
+            None,
+        )
+        if existing_file_handler is None:
+            file_handler = logging.FileHandler(file_path)
+            file_handler.setFormatter(formatter)
+            file_handler.setLevel(level)
+            file_handler._mining_path = normalized_path  # type: ignore[attr-defined]
+            root_logger.addHandler(file_handler)
+        else:
+            existing_file_handler.setFormatter(formatter)
+            existing_file_handler.setLevel(level)
