@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import logging
-from typing import Dict, List
+from typing import Any, Dict, List
 
 from ..config import FirecrawlConfig
 
@@ -11,7 +11,12 @@ logger = logging.getLogger(__name__)
 
 
 def create_client(config: FirecrawlConfig):
-    """Create a Firecrawl client using the provided configuration."""
+    """Create a Firecrawl client using the provided configuration.
+
+    The ``timeout`` and ``max_retries`` fields in ``FirecrawlConfig`` are not
+    applied at construction time; pass them via per-call options when supported
+    by the Firecrawl SDK instead.
+    """
 
     try:
         from firecrawl import Firecrawl
@@ -42,33 +47,36 @@ def create_async_client(config: FirecrawlConfig):
     return AsyncFirecrawl(**kwargs)
 
 
-def search_academic_concepts(client, query: str, limit: int = 5) -> List[Dict]:
-    """Run a Firecrawl search with lightweight academic shaping."""
+def search_academic_concepts(
+    client,
+    query: str,
+    limit: int = 5,
+    scrape_options: dict[str, Any] | None = None,
+) -> Any:
+    """Run a Firecrawl search; callers should shape the query upstream."""
+
+    options = scrape_options or {"formats": ["markdown"]}
 
     try:
-        results = client.search(
-            query=f"{query} (definition OR explanation OR academic)",
+        return client.search(
+            query=query,
             limit=limit,
-            categories=["research", "academic", "education"],
+            scrape_options=options,
         )
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Search failed for query '%s': %s", query, exc)
         return []
 
-    if isinstance(results, dict):
-        return results.get("web", []) or []
-    return results or []
-
 
 def batch_scrape_urls(client, urls: List[str], use_summary: bool = True) -> List[Dict]:
-    """Scrape multiple URLs using Firecrawl's native batch endpoint."""
+    """Return the list emitted by Firecrawl's ``batch_scrape`` for ``urls``."""
 
     formats = ["markdown"]
     if use_summary:
         formats.append("summary")
 
     try:
-        job = client.batch_scrape(
+        results = client.batch_scrape(
             urls=urls,
             formats=formats,
             poll_interval=2,
@@ -77,9 +85,7 @@ def batch_scrape_urls(client, urls: List[str], use_summary: bool = True) -> List
     except Exception as exc:  # pragma: no cover - depends on SDK
         logger.error("Batch scrape failed for %d URLs: %s", len(urls), exc)
         return []
-
-    data = getattr(job, "data", job)
-    return data or []
+    return results or []
 
 
 def scrape_single_url(client, url: str, use_summary: bool = True) -> Dict:
