@@ -313,26 +313,12 @@ def validate_config(config: MiningModuleConfig) -> None:
 def get_firecrawl_client(config: FirecrawlConfig):
     """Instantiate and return a Firecrawl client."""
 
+    from .core.firecrawl_client import create_firecrawl_client
+
     try:
-        from firecrawl import Firecrawl
-    except ImportError as exc:  # pragma: no cover - import guard
-        raise ConfigError(
-            "Firecrawl SDK is not installed. Install `firecrawl` to use the mining module."
-        ) from exc
-
-    client_kwargs = {
-        "api_key": config.api_key,
-    }
-    if config.base_url:
-        client_kwargs["base_url"] = config.base_url
-
-    client = Firecrawl(**client_kwargs)
-    if hasattr(client, "set_request_timeout"):
-        client.set_request_timeout(config.timeout)
-    if hasattr(client, "set_max_retries"):
-        client.set_max_retries(config.max_retries)
-
-    return client
+        return create_firecrawl_client(config)
+    except RuntimeError as exc:  # pragma: no cover - defensive
+        raise ConfigError(str(exc)) from exc
 
 
 def configure_logging(logging_config: Dict[str, Any]) -> None:
