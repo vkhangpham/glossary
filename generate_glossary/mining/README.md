@@ -62,6 +62,8 @@ uv run mine-web concepts.txt --output results.json \
   --use-map-endpoint
 ```
 
+CLI concurrency now follows `mining.max_concurrent_operations` from `generate_glossary/mining/config.yml`. The command no longer exposes a `--max-concurrent` flag.
+
 ## Module Documentation
 
 ### models.py

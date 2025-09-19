@@ -209,10 +209,6 @@ def override_with_cli_args(
     if batch_size is not None:
         config.mining.batch_size = int(batch_size)
 
-    max_concurrent = _maybe_get("max_concurrent")
-    if max_concurrent is not None:
-        config.mining.max_concurrent_operations = int(max_concurrent)
-
     max_urls_per_concept = _maybe_get("max_urls")
     if max_urls_per_concept is not None:
         config.mining.max_urls_per_concept = int(max_urls_per_concept)

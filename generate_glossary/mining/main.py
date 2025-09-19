@@ -51,9 +51,6 @@ def build_parser() -> argparse.ArgumentParser:
         "-o", "--output", required=True, help="Output path (file or directory)"
     )
     parser.add_argument(
-        "-c", "--max-concurrent", type=int, help="Maximum concurrent operations"
-    )
-    parser.add_argument(
         "-b", "--batch-size", type=int, help="Number of terms per batch"
     )
     parser.add_argument(

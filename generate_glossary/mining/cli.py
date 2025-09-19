@@ -73,13 +73,6 @@ Firecrawl v2.2.0 Features:
     )
     
     # Core processing arguments
-    parser.add_argument(
-        "-c", "--max-concurrent",
-        type=int,
-        default=10,
-        help="Maximum concurrent operations (default: 10)"
-    )
-    
     # Firecrawl v2.0 feature arguments
     parser.add_argument(
         "--max-age",
@@ -425,7 +418,6 @@ def main() -> int:
         results = mine_concepts(
             concepts=terms,
             output_path=args.output,
-            max_concurrent=args.max_concurrent,
             max_age=args.max_age,
             use_summary=args.use_summary,
             use_batch_scrape=args.use_batch,
