@@ -106,9 +106,9 @@ glossary-lv3-s3 = "generate_glossary.generation.lv3.lv3_s3_verify_tokens:main"
 
 # Post-processing commands
 # Modern web mining command with Firecrawl v2.0 (primary)
-mine-web = "generate_glossary.mining.cli:main"
+mine-web = "generate_glossary.mining.main:main"
 # Legacy command name (backward compatibility)
-glossary-web-miner = "generate_glossary.mining.cli:main"
+glossary-web-miner = "generate_glossary.mining.main:main"
 glossary-validator = "generate_glossary.validation.main:main"
 glossary-deduplicator = "generate_glossary.deduplication.main:main"
 

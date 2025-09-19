@@ -19,7 +19,7 @@ from generate_glossary.utils.error_handler import (
 )
 from generate_glossary.utils.logger import get_logger, log_processing_step
 from generate_glossary.config import ensure_directories
-from generate_glossary.mining import mine_concepts, ConceptDefinition, WebResource
+from generate_glossary.mining import mine_concepts_simple as mine_concepts
 from generate_glossary.config import get_level_config, get_web_extraction_config
 
 
@@ -122,7 +122,7 @@ def process_mining_results(
     """
     Process results from the new mining API into the expected format.
     
-    The new API returns structured ConceptDefinition and WebResource objects,
+    The new API returns structured dictionaries (or Pydantic models),
     which we convert to the simple string format expected by the existing pipeline.
     Supports both dict and Pydantic model inputs with flexible structure handling.
     """
