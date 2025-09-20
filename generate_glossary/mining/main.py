@@ -451,6 +451,91 @@ def _collect_supported_kwargs(client: Any, method_name: str) -> Optional[set[str
     return supported or None
 
 
+def _try_scrape_with_keyword_args(
+    firecrawl_client: Any,
+    url: str,
+    params: Dict[str, Any],
+    snake_case: bool,
+    term: str,
+) -> Tuple[Any, bool]:
+    """Try scraping with keyword URL argument."""
+    response = firecrawl_client.scrape(url=url, **params)
+    return response, snake_case
+
+
+def _try_scrape_with_positional_args(
+    firecrawl_client: Any,
+    url: str,
+    params: Dict[str, Any],
+    snake_case: bool,
+    term: str,
+) -> Tuple[Any, bool]:
+    """Try scraping with positional URL argument."""
+    log_mining_operation(
+        "sdk_mismatch",
+        {
+            "operation": "scrape",
+            "hint": "Retrying with positional URL argument",
+            "term": term,
+            "url": url,
+        },
+    )
+    response = firecrawl_client.scrape(url, **params)
+    return response, snake_case
+
+
+def _try_scrape_with_alternate_casing(
+    firecrawl_client: Any,
+    url: str,
+    mining_config: MiningConfig,
+    extra_kwargs: Dict[str, Any],
+    supported_scrape_kwargs: Optional[set[str]],
+    initial_snake_case: bool,
+    term: str,
+) -> Tuple[Any, bool]:
+    """Try scraping with alternate parameter casing."""
+    log_mining_operation(
+        "sdk_mismatch",
+        {
+            "operation": "scrape",
+            "hint": "Retrying with alternate parameter casing",
+            "term": term,
+            "url": url,
+        },
+    )
+    alternate_case = not initial_snake_case
+    alternate_params = prepare_firecrawl_params(
+        mining_config,
+        use_snake_case=alternate_case,
+        allowed_keys=supported_scrape_kwargs,
+        **extra_kwargs,
+    )
+    response = firecrawl_client.scrape(url, **alternate_params)
+    return response, alternate_case
+
+
+def _try_scrape_with_minimal_kwargs(
+    firecrawl_client: Any,
+    url: str,
+    extra_kwargs: Dict[str, Any],
+    snake_case: bool,
+    term: str,
+) -> Tuple[Any, bool]:
+    """Try scraping with minimal kwargs only."""
+    log_mining_operation(
+        "sdk_mismatch",
+        {
+            "operation": "scrape",
+            "hint": "Retrying with minimal kwargs",
+            "term": term,
+            "url": url,
+        },
+    )
+    minimal_kwargs = dict(extra_kwargs)
+    response = firecrawl_client.scrape(url, **minimal_kwargs)
+    return response, snake_case
+
+
 def _scrape_with_fallbacks(
     firecrawl_client: Any,
     mining_config: MiningConfig,
@@ -460,8 +545,8 @@ def _scrape_with_fallbacks(
     term: str,
     url: str,
 ) -> Tuple[List[Dict[str, Any]], Optional[bool], Optional[Dict[str, Any]]]:
+    """Scrape with multiple fallback strategies for SDK compatibility."""
     op_start = time.time()
-    local_snake_case = initial_snake_case
 
     def _on_success(response: Any, style: bool) -> Tuple[List[Dict[str, Any]], Optional[bool], Optional[Dict[str, Any]]]:
         track_mining_metrics("scrape", time.time() - op_start, True)
@@ -484,82 +569,46 @@ def _scrape_with_fallbacks(
 
     params = prepare_firecrawl_params(
         mining_config,
-        use_snake_case=local_snake_case,
+        use_snake_case=initial_snake_case,
         allowed_keys=supported_scrape_kwargs,
         **extra_kwargs,
     )
-    try:
-        response = firecrawl_client.scrape(url=url, **params)
-        return _on_success(response, local_snake_case)
-    except TypeError as type_error:
-        log_mining_operation(
-            "sdk_mismatch",
-            {
-                "operation": "scrape",
-                "hint": "Retrying with positional URL argument",
-                "error": str(type_error),
-                "term": term,
-                "url": url,
-            },
-        )
+
+    # Define fallback strategies in order of preference
+    fallback_strategies = [
+        lambda: _try_scrape_with_keyword_args(firecrawl_client, url, params, initial_snake_case, term),
+        lambda: _try_scrape_with_positional_args(firecrawl_client, url, params, initial_snake_case, term),
+        lambda: _try_scrape_with_alternate_casing(
+            firecrawl_client, url, mining_config, extra_kwargs, supported_scrape_kwargs, initial_snake_case, term
+        ),
+        lambda: _try_scrape_with_minimal_kwargs(
+            firecrawl_client, url, extra_kwargs, not initial_snake_case, term
+        ),
+    ]
+
+    # Try each strategy until one succeeds
+    for strategy in fallback_strategies:
         try:
-            response = firecrawl_client.scrape(url, **params)
-            return _on_success(response, local_snake_case)
-        except TypeError as positional_error:
-            log_mining_operation(
-                "sdk_mismatch",
-                {
-                    "operation": "scrape",
-                    "hint": "Retrying with alternate parameter casing",
-                    "error": str(positional_error),
-                    "term": term,
-                    "url": url,
-                },
-            )
-            alternate_case = not local_snake_case
-            alternate_params = prepare_firecrawl_params(
-                mining_config,
-                use_snake_case=alternate_case,
-                allowed_keys=supported_scrape_kwargs,
-                **extra_kwargs,
-            )
-            try:
-                response = firecrawl_client.scrape(url, **alternate_params)
-                return _on_success(response, alternate_case)
-            except TypeError as pared_type_error:
-                log_mining_operation(
-                    "sdk_mismatch",
-                    {
-                        "operation": "scrape",
-                        "hint": "Retrying with minimal kwargs",
-                        "error": str(pared_type_error),
-                        "term": term,
-                        "url": url,
-                    },
-                )
-                minimal_kwargs = dict(extra_kwargs)
-                try:
-                    response = firecrawl_client.scrape(url, **minimal_kwargs)
-                    # Minimal payload skips Firecrawl config params, so style preference stays flipped.
-                    return _on_success(response, alternate_case)
-                except Exception as exc:  # pragma: no cover - depends on Firecrawl SDK
-                    log_mining_operation(
-                        "sdk_mismatch",
-                        {
-                            "operation": "scrape",
-                            "hint": "Minimal kwargs retry failed",
-                            "error": str(exc),
-                            "term": term,
-                            "url": url,
-                        },
-                    )
-                    return _on_failure(exc)
-            except Exception as exc:  # pragma: no cover - depends on Firecrawl SDK
-                return _on_failure(exc)
+            response, snake_case = strategy()
+            return _on_success(response, snake_case)
+        except TypeError:
+            continue  # Try next strategy
         except Exception as exc:  # pragma: no cover - depends on Firecrawl SDK
             return _on_failure(exc)
-    except Exception as exc:  # pragma: no cover - depends on Firecrawl SDK
-        return _on_failure(exc)
+
+    # All strategies failed with TypeError - create a final exception
+    final_exc = Exception("All scrape fallback strategies failed with TypeError")
+    log_mining_operation(
+        "sdk_mismatch",
+        {
+            "operation": "scrape",
+            "hint": "All fallback strategies failed",
+            "error": str(final_exc),
+            "term": term,
+            "url": url,
+        },
+    )
+    return _on_failure(final_exc)
 
 def _execute_search(firecrawl_client: Any, **kwargs: Any) -> Any:
     try:
