@@ -50,6 +50,7 @@ from .utils import (
     filter_academic_urls,
     validate_url,
     is_academic_domain,
+    monitor_queue_status,
 )
 
 # Firecrawl client helpers
@@ -84,6 +85,7 @@ __all__ = [
     "filter_academic_urls",
     "validate_url",
     "is_academic_domain",
+    "monitor_queue_status",
 
     # Firecrawl client helpers
     "create_client",

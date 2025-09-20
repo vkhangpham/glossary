@@ -48,6 +48,8 @@ Firecrawl v2.2.0 integration with modular architecture provides 15x performance 
 - Structured extraction with Pydantic schemas
 - Performance profiles (speed/accuracy/balanced)
 
+Queue monitoring helpers: use `monitor_queue_status` for the resilient wrapper that tolerates SDK variations, and `get_queue_status` when you need the raw Firecrawl client response for instrumentation or dashboards.
+
 ### Modular Architecture
 
 Mining module refactored into 9 focused modules:
